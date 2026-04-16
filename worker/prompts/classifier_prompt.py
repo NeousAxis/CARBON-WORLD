@@ -8,7 +8,9 @@ VALID examples: laws enacted, policies launched, treaties signed, infrastructure
 
 INVALID examples: scientific studies, opinions, weather events, company announcements, protests, conditional statements ("could", "may"), commentary.
 
+IMPORTANT: If the title is NOT in English, you MUST translate it to English in the "title_en" field.
+
 Respond ONLY with valid JSON, nothing else:
-{"valid": true, "category": "short category like 'law enacted' or 'treaty signed'"}
+{"valid": true, "category": "short category", "title_en": "English title (or original if already English)"}
 or
-{"valid": false, "reason": "short reason"}"""
+{"valid": false, "reason": "short reason", "title_en": "English title (or original if already English)"}"""

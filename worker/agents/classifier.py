@@ -46,12 +46,18 @@ def classify(article: dict) -> dict:
     is_valid = result.get("valid", False)
     enriched["_valid"] = bool(is_valid)
 
+    # Use English title from classifier if provided
+    title_en = result.get("title_en", "")
+    if title_en and title_en != title:
+        enriched["title"] = title_en
+        logger.info("Translated title: '%s' → '%s'", title[:40], title_en[:40])
+
     if is_valid:
         enriched["_category"] = result.get("category", "unknown")
-        logger.info("VALID [%s] '%s'", enriched["_category"], title[:60])
+        logger.info("VALID [%s] '%s'", enriched["_category"], enriched["title"][:60])
     else:
         enriched["_reason"] = result.get("reason", "unknown")
-        logger.info("INVALID '%s' — %s", title[:60], enriched["_reason"][:100])
+        logger.info("INVALID '%s' — %s", enriched["title"][:60], enriched["_reason"][:100])
 
     return enriched
 
