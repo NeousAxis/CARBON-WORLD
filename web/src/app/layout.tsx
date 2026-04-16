@@ -39,6 +39,13 @@ export default function RootLayout({
             </Link>
             <div className="flex items-center gap-6">
               <Link
+                href="/sources"
+                className="text-sm font-medium hover:opacity-80"
+                style={{ color: "#B8B9B6" }}
+              >
+                Sources
+              </Link>
+              <Link
                 href="/about"
                 className="text-sm font-medium hover:opacity-80"
                 style={{ color: "#B8B9B6" }}

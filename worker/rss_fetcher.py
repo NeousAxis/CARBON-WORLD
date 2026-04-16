@@ -2,7 +2,7 @@
 rss_fetcher.py — Fetches articles from a curated list of worldwide RSS sources.
 
 Strategy:
-- 33 sources covering 6 continents (Americas, Europe, Africa, Asia, Oceania, Middle East)
+- 46 sources covering 6 continents + science/innovation/good news
 - Dead or empty feeds are skipped gracefully
 - Final list is interleaved round-robin so that every source is represented
   even when MAX_ARTICLES_PER_RUN caps the output
@@ -99,6 +99,38 @@ RSS_SOURCES: list[dict] = [
     # Biodiversity / tropical regions (Asia, Africa, LatAm)
     {"url": "https://news.mongabay.com/feed/",
      "name": "Mongabay"},
+
+    # Science / Research
+    {"url": "https://www.nature.com/nature.rss",
+     "name": "Nature News"},
+    {"url": "https://www.science.org/rss/news_current.xml",
+     "name": "Science (AAAS)"},
+    {"url": "https://www.thelancet.com/rssfeed/lancet_current.xml",
+     "name": "The Lancet"},
+    {"url": "https://phys.org/rss-feed/",
+     "name": "Phys.org"},
+    {"url": "https://www.sciencedaily.com/rss/all.xml",
+     "name": "ScienceDaily"},
+    {"url": "https://www.who.int/rss-feeds/news-english.xml",
+     "name": "WHO News"},
+
+    # Technology / Innovation
+    {"url": "https://www.technologyreview.com/feed/",
+     "name": "MIT Technology Review"},
+    {"url": "https://feeds.arstechnica.com/arstechnica/science",
+     "name": "Ars Technica Science"},
+    {"url": "https://www.newscientist.com/section/news/feed/",
+     "name": "New Scientist"},
+    {"url": "https://www.wired.com/feed/category/science/latest/rss",
+     "name": "WIRED Science"},
+
+    # Good news / Solutions
+    {"url": "https://www.positive.news/feed/",
+     "name": "Positive News"},
+    {"url": "https://www.goodnewsnetwork.org/feed/",
+     "name": "Good News Network"},
+    {"url": "https://reasonstobecheerful.world/feed/",
+     "name": "Reasons to be Cheerful"},
 ]
 
 
