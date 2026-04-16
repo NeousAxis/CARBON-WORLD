@@ -13,14 +13,16 @@ export function generateStaticParams() {
 }
 
 function DecisionBadge({ decision }: { decision: string }) {
-  const styles: Record<string, string> = {
-    BURN: "bg-emerald-100 text-emerald-700",
-    MINT: "bg-red-100 text-red-700",
-    NEUTRAL: "bg-gray-100 text-gray-600",
+  const styles: Record<string, { bg: string; color: string }> = {
+    BURN: { bg: "#222924", color: "#B6FFCE" },
+    MINT: { bg: "#24100B", color: "#FF5C33" },
+    NEUTRAL: { bg: "#2E2E2E", color: "#B8B9B6" },
   };
+  const s = styles[decision] ?? styles.NEUTRAL;
   return (
     <span
-      className={`inline-block rounded-full px-4 py-1.5 text-sm font-semibold uppercase ${styles[decision] ?? styles.NEUTRAL}`}
+      className="inline-block px-4 py-1.5 text-sm font-semibold uppercase"
+      style={{ backgroundColor: s.bg, color: s.color }}
     >
       {decision}
     </span>
@@ -41,24 +43,25 @@ export default async function EventPage({
 
   const scoreColor =
     event.final_score >= 6
-      ? "text-emerald-600"
+      ? "#B6FFCE"
       : event.final_score <= 4
-        ? "text-red-600"
-        : "text-gray-600";
+        ? "#FF5C33"
+        : "#B8B9B6";
 
   const amountColor =
     event.decision === "BURN"
-      ? "text-emerald-600"
+      ? "#B6FFCE"
       : event.decision === "MINT"
-        ? "text-red-600"
-        : "text-gray-600";
+        ? "#FF5C33"
+        : "#B8B9B6";
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-12">
+    <div className="mx-auto max-w-3xl px-6 py-12" style={{ backgroundColor: "#111111" }}>
       {/* Back link */}
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900 mb-8"
+        className="inline-flex items-center gap-1 text-sm hover:opacity-80 mb-8"
+        style={{ color: "#B8B9B6" }}
       >
         &larr; Back to all events
       </Link>
@@ -67,48 +70,56 @@ export default async function EventPage({
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <DecisionBadge decision={event.decision} />
-          <span className="text-sm text-gray-500">{event.event_source}</span>
-          <span className="text-sm text-gray-400">
+          <span className="text-sm" style={{ color: "#B8B9B6" }}>{event.event_source}</span>
+          <span className="text-sm" style={{ color: "#B8B9B6" }}>
             {formatDate(event.created_at)}
           </span>
         </div>
-        <h1 className="text-2xl font-bold text-gray-900 leading-snug mb-2">
+        <h1 className="text-2xl font-bold leading-snug mb-2" style={{ color: "#FFFFFF" }}>
           {event.event_title}
         </h1>
         <a
           href={event.event_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-blue-600 hover:underline break-all"
+          className="text-sm hover:underline break-all"
+          style={{ color: "#FF8400" }}
         >
           View original article &rarr;
         </a>
       </div>
 
       {/* Score card */}
-      <div className="rounded-2xl bg-white border border-gray-200 p-6 mb-8">
+      <div
+        className="p-6 mb-8"
+        style={{
+          backgroundColor: "#1A1A1A",
+          border: "1px solid #2E2E2E",
+          boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+        }}
+      >
         <div className="grid grid-cols-3 gap-6 text-center">
           <div>
-            <div className="text-xs font-medium uppercase tracking-wide text-gray-500 mb-1">
+            <div className="text-xs font-medium uppercase tracking-wide mb-1" style={{ color: "#B8B9B6" }}>
               Final score
             </div>
-            <div className={`text-3xl font-bold ${scoreColor}`}>
+            <div className="text-3xl font-bold font-mono" style={{ color: scoreColor }}>
               {event.final_score.toFixed(2)}
             </div>
           </div>
           <div>
-            <div className="text-xs font-medium uppercase tracking-wide text-gray-500 mb-1">
+            <div className="text-xs font-medium uppercase tracking-wide mb-1" style={{ color: "#B8B9B6" }}>
               Confidence
             </div>
-            <div className="text-3xl font-bold text-gray-900">
+            <div className="text-3xl font-bold font-mono" style={{ color: "#FFFFFF" }}>
               {event.confidence}/10
             </div>
           </div>
           <div>
-            <div className="text-xs font-medium uppercase tracking-wide text-gray-500 mb-1">
+            <div className="text-xs font-medium uppercase tracking-wide mb-1" style={{ color: "#B8B9B6" }}>
               Amount
             </div>
-            <div className={`text-3xl font-bold ${amountColor}`}>
+            <div className="text-3xl font-bold font-mono" style={{ color: amountColor }}>
               {formatAmount(event.amount_crbn)}
             </div>
           </div>
@@ -116,18 +127,32 @@ export default async function EventPage({
       </div>
 
       {/* Justification */}
-      <div className="rounded-2xl bg-white border border-gray-200 p-6 mb-8">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">
+      <div
+        className="p-6 mb-8"
+        style={{
+          backgroundColor: "#1A1A1A",
+          border: "1px solid #2E2E2E",
+          boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+        }}
+      >
+        <h2 className="text-sm font-semibold uppercase tracking-wide mb-3" style={{ color: "#B8B9B6" }}>
           AI justification
         </h2>
-        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+        <p className="leading-relaxed whitespace-pre-line" style={{ color: "#B8B9B6" }}>
           {event.justification}
         </p>
       </div>
 
       {/* On-chain status */}
-      <div className="rounded-2xl bg-white border border-gray-200 p-6">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">
+      <div
+        className="p-6"
+        style={{
+          backgroundColor: "#1A1A1A",
+          border: "1px solid #2E2E2E",
+          boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+        }}
+      >
+        <h2 className="text-sm font-semibold uppercase tracking-wide mb-3" style={{ color: "#B8B9B6" }}>
           On-chain transaction
         </h2>
         {event.tx_hash ? (
@@ -135,12 +160,13 @@ export default async function EventPage({
             href={`https://explorer.solana.com/tx/${event.tx_hash}?cluster=devnet`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline font-mono text-sm break-all"
+            className="hover:underline font-mono text-sm break-all"
+            style={{ color: "#FF8400" }}
           >
             {event.tx_hash}
           </a>
         ) : (
-          <p className="text-gray-400 text-sm">
+          <p className="text-sm" style={{ color: "#B8B9B6" }}>
             Pending on-chain &mdash; transaction not yet submitted
           </p>
         )}

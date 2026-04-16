@@ -20,34 +20,35 @@ export default function Home() {
 
   const netSign = stats.netSupplyChange >= 0 ? "+" : "";
   const netColor =
-    stats.netSupplyChange > 0 ? "text-red-500" : "text-emerald-500";
+    stats.netSupplyChange > 0 ? "#FF5C33" : "#B6FFCE";
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#f8fafc" }}>
+    <div className="min-h-screen" style={{ backgroundColor: "#111111" }}>
       {/* Header bar — financial ticker strip */}
-      <div className="border-b border-gray-200 bg-white">
+      <div style={{ backgroundColor: "#1A1A1A", borderBottom: "1px solid #2E2E2E" }}>
         <div className="mx-auto max-w-7xl px-4 py-2.5">
           <div className="flex items-center gap-6 overflow-x-auto text-xs">
             {/* Symbol */}
             <div className="flex items-center gap-2 shrink-0">
-              <span className="text-sm font-bold tracking-tight text-gray-900">
+              <span className="text-sm font-bold tracking-tight" style={{ color: "#FF8400" }}>
                 CBWD
               </span>
-              <span className="text-[10px] text-gray-400 uppercase tracking-wider">
+              <span className="text-[10px] uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
                 Solana
               </span>
             </div>
 
             {/* Divider */}
-            <div className="h-4 w-px bg-gray-200 shrink-0" />
+            <div className="h-4 w-px shrink-0" style={{ backgroundColor: "#2E2E2E" }} />
 
             {/* Net supply */}
             <div className="flex items-center gap-1.5 shrink-0">
-              <span className="text-gray-400 uppercase tracking-wider">
+              <span className="uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
                 Net
               </span>
               <span
-                className={`font-mono font-semibold tabular-nums ${netColor}`}
+                className="font-mono font-semibold tabular-nums"
+                style={{ color: netColor }}
               >
                 {netSign}
                 {formatAmount(Math.abs(stats.netSupplyChange))}
@@ -55,40 +56,40 @@ export default function Home() {
             </div>
 
             {/* Divider */}
-            <div className="h-4 w-px bg-gray-200 shrink-0" />
+            <div className="h-4 w-px shrink-0" style={{ backgroundColor: "#2E2E2E" }} />
 
             {/* Burned */}
             <div className="flex items-center gap-1.5 shrink-0">
-              <span className="text-gray-400 uppercase tracking-wider">
+              <span className="uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
                 Burned
               </span>
-              <span className="font-mono font-semibold tabular-nums text-emerald-500">
+              <span className="font-mono font-semibold tabular-nums" style={{ color: "#B6FFCE" }}>
                 {formatAmount(stats.totalBurned)}
               </span>
             </div>
 
             {/* Divider */}
-            <div className="h-4 w-px bg-gray-200 shrink-0" />
+            <div className="h-4 w-px shrink-0" style={{ backgroundColor: "#2E2E2E" }} />
 
             {/* Minted */}
             <div className="flex items-center gap-1.5 shrink-0">
-              <span className="text-gray-400 uppercase tracking-wider">
+              <span className="uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
                 Minted
               </span>
-              <span className="font-mono font-semibold tabular-nums text-red-500">
+              <span className="font-mono font-semibold tabular-nums" style={{ color: "#FF5C33" }}>
                 {formatAmount(stats.totalMinted)}
               </span>
             </div>
 
             {/* Divider */}
-            <div className="h-4 w-px bg-gray-200 shrink-0" />
+            <div className="h-4 w-px shrink-0" style={{ backgroundColor: "#2E2E2E" }} />
 
             {/* Events count */}
             <div className="flex items-center gap-1.5 shrink-0">
-              <span className="text-gray-400 uppercase tracking-wider">
+              <span className="uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
                 Events
               </span>
-              <span className="font-mono font-semibold tabular-nums text-gray-700">
+              <span className="font-mono font-semibold tabular-nums" style={{ color: "#FFFFFF" }}>
                 {stats.totalEvents}
               </span>
             </div>
@@ -97,7 +98,7 @@ export default function Home() {
             <div className="flex-1" />
 
             {/* Last update */}
-            <div className="flex items-center gap-1.5 shrink-0 text-gray-400">
+            <div className="flex items-center gap-1.5 shrink-0" style={{ color: "#B8B9B6" }}>
               <span className="uppercase tracking-wider">Updated</span>
               <span className="font-mono tabular-nums">
                 {formatLastUpdate(stats.generatedAt)}

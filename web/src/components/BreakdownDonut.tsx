@@ -75,29 +75,29 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
     segments.push({
       label: "Burned (on-chain)",
       value: burnedOnChain,
-      color: "#10B981",
-      textColor: "text-emerald-500",
+      color: "#34D399",
+      textColor: "#34D399",
     });
   if (burnedPending > 0)
     segments.push({
       label: "Burned (pending)",
       value: burnedPending,
       color: "#6EE7B7",
-      textColor: "text-emerald-300",
+      textColor: "#B6FFCE",
     });
   if (mintedOnChain > 0)
     segments.push({
       label: "Minted (on-chain)",
       value: mintedOnChain,
-      color: "#EF4444",
-      textColor: "text-red-500",
+      color: "#FF5C33",
+      textColor: "#FF5C33",
     });
   if (mintedPending > 0)
     segments.push({
       label: "Minted (pending)",
       value: mintedPending,
-      color: "#FCA5A5",
-      textColor: "text-red-300",
+      color: "#FF8400",
+      textColor: "#FF8400",
     });
 
   const total = segments.reduce((s, seg) => s + seg.value, 0);
@@ -117,17 +117,24 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
   });
 
   return (
-    <div className="rounded-2xl bg-white border border-gray-200 p-5">
+    <div
+      className="p-5"
+      style={{
+        backgroundColor: "#1A1A1A",
+        border: "1px solid #2E2E2E",
+        boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+      }}
+    >
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-xs font-medium uppercase tracking-wider text-gray-500">
+        <h3 className="text-xs font-medium uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
           Supply breakdown
         </h3>
       </div>
 
-      <div className="flex items-center gap-8">
+      <div className="flex flex-col items-center gap-4">
         {/* Donut */}
         <div className="shrink-0">
-          <svg width={240} height={240} viewBox="0 0 240 240">
+          <svg width={180} height={180} viewBox="0 0 240 240">
             {arcs.map((arc, i) => (
               <DonutArc
                 key={i}
@@ -144,7 +151,7 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
               x={cx}
               y={cy - 8}
               textAnchor="middle"
-              className="text-xs fill-gray-400"
+              fill="#B8B9B6"
               style={{ fontSize: 11 }}
             >
               TOTAL
@@ -153,8 +160,8 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
               x={cx}
               y={cy + 14}
               textAnchor="middle"
-              className="fill-gray-900"
-              style={{ fontSize: 18, fontWeight: 700, fontFamily: "monospace" }}
+              fill="#FFFFFF"
+              style={{ fontSize: 18, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace" }}
             >
               {formatM(total)}
             </text>
@@ -162,20 +169,20 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
         </div>
 
         {/* Legend */}
-        <div className="flex flex-col gap-3 text-sm">
+        <div className="flex flex-col gap-2 text-sm w-full">
           {arcs.map((seg, i) => {
             const pct = ((seg.value / total) * 100).toFixed(1);
             return (
-              <div key={i} className="flex items-center gap-3">
+              <div key={i} className="flex items-center gap-2">
                 <span
-                  className="w-3 h-3 rounded-sm shrink-0"
+                  className="w-3 h-3 shrink-0"
                   style={{ backgroundColor: seg.color }}
                 />
-                <span className="text-gray-600 min-w-[140px]">{seg.label}</span>
-                <span className={`font-mono tabular-nums font-semibold ${seg.textColor}`}>
+                <span className="flex-1 truncate" style={{ color: "#B8B9B6" }}>{seg.label}</span>
+                <span className="font-mono tabular-nums font-semibold shrink-0" style={{ color: seg.textColor }}>
                   {formatM(seg.value)}
                 </span>
-                <span className="text-gray-400 font-mono tabular-nums text-xs">
+                <span className="font-mono tabular-nums text-xs shrink-0" style={{ color: "#666" }}>
                   {pct}%
                 </span>
               </div>

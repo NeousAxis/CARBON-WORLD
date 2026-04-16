@@ -20,20 +20,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={geist.className}>
-      <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900 antialiased">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col antialiased" style={{ backgroundColor: "#111111", color: "#FFFFFF" }}>
         {/* Navbar */}
-        <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+        <header className="sticky top-0 z-50" style={{ backgroundColor: "#1A1A1A", borderBottom: "1px solid #2E2E2E" }}>
           <nav className="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
             <Link
               href="/"
-              className="text-xl font-bold tracking-tight text-gray-900"
+              className="text-xl font-bold tracking-tight"
+              style={{ color: "#FF8400" }}
             >
               CARBON WORLD
             </Link>
             <div className="flex items-center gap-6">
               <Link
                 href="/about"
-                className="text-sm font-medium text-gray-600 hover:text-gray-900"
+                className="text-sm font-medium hover:opacity-80"
+                style={{ color: "#B8B9B6" }}
               >
                 About
               </Link>
@@ -45,14 +53,15 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
 
         {/* Footer */}
-        <footer className="border-t border-gray-200 bg-white">
-          <div className="mx-auto max-w-5xl px-6 py-6 flex items-center justify-between text-sm text-gray-500">
+        <footer style={{ backgroundColor: "#1A1A1A", borderTop: "1px solid #2E2E2E" }}>
+          <div className="mx-auto max-w-5xl px-6 py-6 flex items-center justify-between text-sm" style={{ color: "#B8B9B6" }}>
             <span>Powered by Carbon World</span>
             <a
               href="https://github.com/NeousAxis/CARBON-WORLD"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-900"
+              className="hover:opacity-80"
+              style={{ color: "#B8B9B6" }}
             >
               GitHub
             </a>

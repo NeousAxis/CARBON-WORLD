@@ -33,29 +33,30 @@ const frameworks = [
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-6 py-12">
+    <div className="mx-auto max-w-3xl px-6 py-12" style={{ backgroundColor: "#111111" }}>
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900 mb-8"
+        className="inline-flex items-center gap-1 text-sm hover:opacity-80 mb-8"
+        style={{ color: "#B8B9B6" }}
       >
         &larr; Back to dashboard
       </Link>
 
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">
+      <h1 className="text-3xl font-bold mb-6" style={{ color: "#FFFFFF" }}>
         About CARBON WORLD
       </h1>
 
       {/* Introduction */}
       <section className="mb-10">
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
           CARBON WORLD is an experimental token on Solana (CBWD) whose supply is
           controlled by a local AI system. The AI monitors real-world government
           and institutional decisions that affect living beings and the
           environment, then adjusts the token supply accordingly.
         </p>
-        <p className="text-gray-700 leading-relaxed">
-          Positive decisions for the planet trigger a <strong className="text-emerald-600">BURN</strong> (reducing
-          supply), while harmful decisions trigger a <strong className="text-red-600">MINT</strong> (increasing
+        <p className="leading-relaxed" style={{ color: "#B8B9B6" }}>
+          Positive decisions for the planet trigger a <strong style={{ color: "#B6FFCE" }}>BURN</strong> (reducing
+          supply), while harmful decisions trigger a <strong style={{ color: "#FF5C33" }}>MINT</strong> (increasing
           supply). The token becomes a living ledger of humanity&apos;s
           collective impact on the world.
         </p>
@@ -63,50 +64,57 @@ export default function AboutPage() {
 
       {/* How scoring works */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "#FFFFFF" }}>
           How the AI scoring works
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
           Every event goes through a multi-step analysis pipeline. First, an AI
           classifier filters for concrete governmental or institutional actions.
           Then, a deeper AI model performs a dual ethical analysis &mdash;
           identifying both positive and negative aspects of each decision across
           7 international ethical frameworks.
         </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
+        <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
           The analysis uses a 4-dimensional temporal framework:
         </p>
-        <div className="rounded-2xl bg-white border border-gray-200 p-6 mb-4">
+        <div
+          className="p-6 mb-4"
+          style={{
+            backgroundColor: "#1A1A1A",
+            border: "1px solid #2E2E2E",
+            boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+          }}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
-              <div className="font-semibold text-gray-900">
+              <div className="font-semibold" style={{ color: "#FFFFFF" }}>
                 Snapshot (25%)
               </div>
-              <div className="text-gray-600">
+              <div style={{ color: "#B8B9B6" }}>
                 Net impact today: positives minus negatives
               </div>
             </div>
             <div>
-              <div className="font-semibold text-gray-900">
+              <div className="font-semibold" style={{ color: "#FFFFFF" }}>
                 Trajectory (20%)
               </div>
-              <div className="text-gray-600">
+              <div style={{ color: "#B8B9B6" }}>
                 Direction of the underlying trend
               </div>
             </div>
             <div>
-              <div className="font-semibold text-gray-900">
+              <div className="font-semibold" style={{ color: "#FFFFFF" }}>
                 Revaluation (15%)
               </div>
-              <div className="text-gray-600">
+              <div style={{ color: "#B8B9B6" }}>
                 Triggers that could flip the judgment
               </div>
             </div>
             <div>
-              <div className="font-semibold text-gray-900">
+              <div className="font-semibold" style={{ color: "#FFFFFF" }}>
                 Prospective (40%)
               </div>
-              <div className="text-gray-600">
+              <div style={{ color: "#B8B9B6" }}>
                 3 future scenarios over 2-30 years
               </div>
             </div>
@@ -116,33 +124,49 @@ export default function AboutPage() {
 
       {/* Score scale */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "#FFFFFF" }}>
           Decision scale
         </h2>
-        <div className="rounded-2xl bg-white border border-gray-200 p-6">
+        <div
+          className="p-6"
+          style={{
+            backgroundColor: "#1A1A1A",
+            border: "1px solid #2E2E2E",
+            boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+          }}
+        >
           <div className="space-y-3 text-sm">
             <div className="flex items-center gap-3">
-              <span className="inline-block w-24 rounded-full bg-emerald-100 text-emerald-700 px-3 py-1 text-center font-semibold text-xs uppercase">
+              <span
+                className="inline-block w-24 px-3 py-1 text-center font-semibold text-xs uppercase"
+                style={{ backgroundColor: "#222924", color: "#B6FFCE" }}
+              >
                 BURN
               </span>
-              <span className="text-gray-700">
+              <span style={{ color: "#B8B9B6" }}>
                 Score &ge; 6 &mdash; Positive for the planet. Token supply
                 decreases.
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="inline-block w-24 rounded-full bg-gray-100 text-gray-600 px-3 py-1 text-center font-semibold text-xs uppercase">
+              <span
+                className="inline-block w-24 px-3 py-1 text-center font-semibold text-xs uppercase"
+                style={{ backgroundColor: "#2E2E2E", color: "#B8B9B6" }}
+              >
                 NEUTRAL
               </span>
-              <span className="text-gray-700">
+              <span style={{ color: "#B8B9B6" }}>
                 Score between 4 and 6 &mdash; Mixed or inconclusive impact.
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="inline-block w-24 rounded-full bg-red-100 text-red-700 px-3 py-1 text-center font-semibold text-xs uppercase">
+              <span
+                className="inline-block w-24 px-3 py-1 text-center font-semibold text-xs uppercase"
+                style={{ backgroundColor: "#24100B", color: "#FF5C33" }}
+              >
                 MINT
               </span>
-              <span className="text-gray-700">
+              <span style={{ color: "#B8B9B6" }}>
                 Score &le; 4 &mdash; Harmful to the planet. Token supply
                 increases.
               </span>
@@ -153,19 +177,24 @@ export default function AboutPage() {
 
       {/* 7 frameworks */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "#FFFFFF" }}>
           7 ethical frameworks
         </h2>
         <div className="space-y-3">
           {frameworks.map((fw, i) => (
             <div
               key={i}
-              className="rounded-2xl bg-white border border-gray-200 p-4"
+              className="p-4"
+              style={{
+                backgroundColor: "#1A1A1A",
+                border: "1px solid #2E2E2E",
+                boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+              }}
             >
-              <div className="font-semibold text-gray-900 text-sm">
+              <div className="font-semibold text-sm" style={{ color: "#FFFFFF" }}>
                 {i + 1}. {fw.name}
               </div>
-              <div className="text-gray-600 text-sm">{fw.description}</div>
+              <div className="text-sm" style={{ color: "#B8B9B6" }}>{fw.description}</div>
             </div>
           ))}
         </div>
@@ -173,30 +202,37 @@ export default function AboutPage() {
 
       {/* Token info */}
       <section>
-        <h2 className="text-xl font-semibold text-gray-900 mb-4">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "#FFFFFF" }}>
           Token details
         </h2>
-        <div className="rounded-2xl bg-white border border-gray-200 p-6 text-sm">
+        <div
+          className="p-6 text-sm"
+          style={{
+            backgroundColor: "#1A1A1A",
+            border: "1px solid #2E2E2E",
+            boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+          }}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <span className="text-gray-500">Name:</span>{" "}
-              <span className="font-medium">Carbon World</span>
+              <span style={{ color: "#B8B9B6" }}>Name:</span>{" "}
+              <span className="font-medium" style={{ color: "#FFFFFF" }}>Carbon World</span>
             </div>
             <div>
-              <span className="text-gray-500">Symbol:</span>{" "}
-              <span className="font-medium">CBWD</span>
+              <span style={{ color: "#B8B9B6" }}>Symbol:</span>{" "}
+              <span className="font-medium" style={{ color: "#FF8400" }}>CBWD</span>
             </div>
             <div>
-              <span className="text-gray-500">Network:</span>{" "}
-              <span className="font-medium">Solana (devnet)</span>
+              <span style={{ color: "#B8B9B6" }}>Network:</span>{" "}
+              <span className="font-medium" style={{ color: "#FFFFFF" }}>Solana (devnet)</span>
             </div>
             <div>
-              <span className="text-gray-500">Decimals:</span>{" "}
-              <span className="font-medium">6</span>
+              <span style={{ color: "#B8B9B6" }}>Decimals:</span>{" "}
+              <span className="font-medium" style={{ color: "#FFFFFF" }}>6</span>
             </div>
             <div className="sm:col-span-2">
-              <span className="text-gray-500">Mint address:</span>{" "}
-              <span className="font-mono text-xs">
+              <span style={{ color: "#B8B9B6" }}>Mint address:</span>{" "}
+              <span className="font-mono text-xs" style={{ color: "#FF8400" }}>
                 HRqmMnbA18VgstcfjCueAuzVZEoHHbLbbu973AqmK3Fs
               </span>
             </div>

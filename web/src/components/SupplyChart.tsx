@@ -34,7 +34,15 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
 
   if (sorted.length === 0) {
     return (
-      <div className="flex items-center justify-center h-[300px] bg-white rounded-lg border border-gray-200 text-sm text-gray-400">
+      <div
+        className="flex items-center justify-center h-[300px] text-sm"
+        style={{
+          backgroundColor: "#1A1A1A",
+          border: "1px solid #2E2E2E",
+          color: "#B8B9B6",
+          boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+        }}
+      >
         No events yet
       </div>
     );
@@ -105,19 +113,30 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     });
   }
 
-  // Determine if cumulative is net positive (red = minted more) or negative (green = burned more)
+  // Line and fill always orange in Lunaris Dark
+  const lineColor = "#FF8400";
+  const fillColor = "rgba(255,132,0,0.12)";
+
+  // Cumulative label color
   const lastCumulative = dataPoints[dataPoints.length - 1].cumulative;
-  const lineColor = lastCumulative > 0 ? "#EF4444" : "#10B981";
-  const fillColor = lastCumulative > 0 ? "rgba(239,68,68,0.08)" : "rgba(16,185,129,0.08)";
+  const cumulativeColor = lastCumulative > 0 ? "#FF5C33" : "#B6FFCE";
 
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-4">
+    <div
+      className="p-4"
+      style={{
+        backgroundColor: "#1A1A1A",
+        border: "1px solid #2E2E2E",
+        boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+      }}
+    >
       <div className="flex items-center justify-between mb-2 px-2">
-        <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+        <span className="text-xs font-medium uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
           Cumulative Supply Change
         </span>
         <span
-          className={`text-sm font-mono font-semibold tabular-nums ${lastCumulative > 0 ? "text-red-500" : "text-emerald-500"}`}
+          className="text-sm font-mono font-semibold tabular-nums"
+          style={{ color: cumulativeColor }}
         >
           {formatCompact(lastCumulative)} CBWD
         </span>
@@ -136,7 +155,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
             y1={scaleY(tick)}
             x2={width - padding.right}
             y2={scaleY(tick)}
-            stroke="#f1f5f9"
+            stroke="#2E2E2E"
             strokeWidth="1"
           />
         ))}
@@ -147,7 +166,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
           y1={zeroY}
           x2={width - padding.right}
           y2={zeroY}
-          stroke="#cbd5e1"
+          stroke="#B8B9B6"
           strokeWidth="1"
           strokeDasharray="4 2"
         />
@@ -162,7 +181,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
         {dataPoints.map((d, i) => {
           const cx = scaleX(i);
           const cy = scaleY(d.cumulative);
-          const dotColor = d.event.decision === "BURN" ? "#10B981" : d.event.decision === "MINT" ? "#EF4444" : "#9CA3AF";
+          const dotColor = d.event.decision === "BURN" ? "#B6FFCE" : d.event.decision === "MINT" ? "#FF5C33" : "#B8B9B6";
           return (
             <g key={i}>
               {/* Invisible larger hit area */}
@@ -178,7 +197,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 cy={cy}
                 r={hoveredIndex === i ? 5 : 3}
                 fill={dotColor}
-                stroke="white"
+                stroke="#1A1A1A"
                 strokeWidth="1.5"
                 style={{ transition: "r 0.15s ease" }}
               />
@@ -194,9 +213,9 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
             y={scaleY(tick)}
             textAnchor="end"
             dominantBaseline="middle"
-            className="fill-gray-400"
+            fill="#B8B9B6"
             fontSize="10"
-            fontFamily="ui-monospace, monospace"
+            fontFamily="'JetBrains Mono', ui-monospace, monospace"
           >
             {formatCompact(tick)}
           </text>
@@ -209,7 +228,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
             x={scaleX(index)}
             y={height - 10}
             textAnchor="middle"
-            className="fill-gray-400"
+            fill="#B8B9B6"
             fontSize="10"
           >
             {label}
@@ -226,7 +245,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
           // Flip tooltip if too close to right edge
           const tooltipX = cx + tooltipW + 10 > width ? cx - tooltipW - 10 : cx + 10;
           const tooltipY = Math.max(padding.top, Math.min(cy - tooltipH / 2, height - padding.bottom - tooltipH));
-          const decColor = d.event.decision === "BURN" ? "#10B981" : "#EF4444";
+          const decColor = d.event.decision === "BURN" ? "#B6FFCE" : "#FF5C33";
 
           return (
             <g>
@@ -236,7 +255,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 y1={padding.top}
                 x2={cx}
                 y2={height - padding.bottom}
-                stroke="#94a3b8"
+                stroke="#B8B9B6"
                 strokeWidth="0.5"
                 strokeDasharray="3 2"
               />
@@ -246,11 +265,11 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 y={tooltipY}
                 width={tooltipW}
                 height={tooltipH}
-                rx="6"
-                fill="white"
-                stroke="#e2e8f0"
+                rx="0"
+                fill="#1A1A1A"
+                stroke="#2E2E2E"
                 strokeWidth="1"
-                filter="drop-shadow(0 1px 3px rgba(0,0,0,0.1))"
+                filter="drop-shadow(0 1px 3px rgba(0,0,0,0.3))"
               />
               {/* Decision badge */}
               <text
@@ -270,7 +289,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 fontWeight="600"
                 fill={decColor}
                 textAnchor="end"
-                fontFamily="ui-monospace, monospace"
+                fontFamily="'JetBrains Mono', ui-monospace, monospace"
               >
                 {formatCompact(d.event.decision === "MINT" ? d.event.amount_crbn : -d.event.amount_crbn)} CBWD
               </text>
@@ -279,7 +298,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 x={tooltipX + 8}
                 y={tooltipY + 32}
                 fontSize="11"
-                fill="#1e293b"
+                fill="#FFFFFF"
                 clipPath={`inset(0 0 0 0)`}
               >
                 {d.event.event_title.length > 38
@@ -291,7 +310,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 x={tooltipX + 8}
                 y={tooltipY + 46}
                 fontSize="9"
-                fill="#94a3b8"
+                fill="#B8B9B6"
               >
                 {formatShortDate(d.event.created_at)} | Cumulative: {formatCompact(d.cumulative)}
               </text>

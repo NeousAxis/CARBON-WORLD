@@ -1,11 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9fafb;
-  --foreground: #111827;
+  --background: #111111;
+  --foreground: #FFFFFF;
+  --card-bg: #1A1A1A;
+  --border: #2E2E2E;
+  --muted: #B8B9B6;
+  --primary: #FF8400;
+  --destructive: #FF5C33;
+  --success-fg: #B6FFCE;
+  --success-bg: #222924;
+  --error-fg: #FF5C33;
+  --error-bg: #24100B;
+  --warning-fg: #FF8400;
+  --warning-bg: #291C0F;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-feature-settings: "ss01", "ss02";
+}
+
+.font-mono, .tabular-nums {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
