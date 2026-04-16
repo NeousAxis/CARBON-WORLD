@@ -17,6 +17,15 @@
 
 ## 📜 Règles absolues
 
+### 0. GIT — RÈGLE NON NÉGOCIABLE
+- Le projet CARBON WORLD a son **propre repo git** à `~/CARBON-WORLD/.git`
+- **CHAQUE sous-agent** DOIT travailler dans le repo `~/CARBON-WORLD/` — JAMAIS dans un autre dossier ou worktree externe
+- **CHAQUE sous-agent** travaille sur sa **propre branche** (ex: `feature/classifier-agent`, `fix/rss-timeout`)
+- L'orchestrateur merge dans `main` après validation
+- **NE JAMAIS utiliser `isolation: "worktree"`** pour les sous-agents — ça crée des worktrees dans d'autres repos et c'est la cause du bug "kernel-earth" (2026-04-16)
+- **NE JAMAIS** laisser un sous-agent travailler dans un repo parent (`~` = home directory) — c'est un repo git géant qui contient d'autres projets
+- Si un sous-agent doit modifier du code, lui passer les chemins ABSOLUS vers `~/CARBON-WORLD/worker/...`
+
 ### 1. NE PAS poser de questions si la réponse est dans les fichiers
 - Lire d'abord : `CLAUDE.md`, `MEMORY.md`, code existant, livre blanc iCloud
 - Si l'info manque **vraiment**, alors poser UNE question précise — pas 4

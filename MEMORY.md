@@ -22,6 +22,14 @@
 
 **Coûts récurrents** : **0 €/mois**.
 
+### 🔴 INCIDENT 2026-04-16 — Sous-agent dans le mauvais repo
+- Un sous-agent Sonnet avec `isolation: "worktree"` implicite a travaillé dans un worktree basé sur le home dir (`~`) qui est un repo git géant
+- Le breadcrumb UI affichait "kernel-earth / Implement Carbone Token functionality" → un autre projet !
+- **Cause** : `~/CARBON-WORLD/` n'avait pas son propre `.git` → héritait du repo parent `~`
+- **Fix** : `git init` dans `~/CARBON-WORLD/`, initial commit (31 fichiers, 2673 lignes)
+- **Règle ajoutée** : NE JAMAIS utiliser `isolation: "worktree"`, NE JAMAIS travailler hors du repo CARBON-WORLD. Sous-agents utilisent des branches dans le repo dédié.
+- **Voir RULES.md Section 0 (GIT)**
+
 **Ce qui reste avant mainnet** :
 1. Premier vrai run production (15-20 min) — à faire demain
 2. Frontend Next.js sur Vercel (Phase 3)
