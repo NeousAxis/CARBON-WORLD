@@ -23,10 +23,20 @@ logger = logging.getLogger("solana_executor")
 
 # ── Constants ────────────────────────────────────────────────────────────────
 
-DEVNET_URL = "https://api.devnet.solana.com"
-MINT_ADDRESS = Pubkey.from_string("HRqmMnbA18VgstcfjCueAuzVZEoHHbLbbu973AqmK3Fs")
-TREASURY_ATA = Pubkey.from_string("2iNtuKTthWRGiDoK4VZYQJ7dC8t4d2DkR1dbLQx5QqFK")
-KEYPAIR_PATH = Path.home() / ".config" / "solana" / "id.json"
+# Network selection via env var: "mainnet" (default) or "devnet"
+import os
+SOLANA_NETWORK = os.getenv("SOLANA_NETWORK", "mainnet")
+
+if SOLANA_NETWORK == "devnet":
+    RPC_URL = "https://api.devnet.solana.com"
+    MINT_ADDRESS = Pubkey.from_string("HRqmMnbA18VgstcfjCueAuzVZEoHHbLbbu973AqmK3Fs")
+    TREASURY_ATA = Pubkey.from_string("2iNtuKTthWRGiDoK4VZYQJ7dC8t4d2DkR1dbLQx5QqFK")
+else:  # mainnet
+    RPC_URL = "https://api.mainnet-beta.solana.com"
+    MINT_ADDRESS = Pubkey.from_string("Ewd57GaqZHx8xN7roqqEr6wz6RGxticPVaWFZneMncLm")
+    TREASURY_ATA = Pubkey.from_string("DZnTxVL5qo7aG8eEUMdLc5i2Ji9S46zZcGDBk2ha3PTq")
+
+KEYPAIR_PATH = Path.home() / ".config" / "solana" / "cbwd.json"
 TOKEN_PROGRAM_ID = Pubkey.from_string("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA")
 DECIMALS = 6
 
@@ -64,8 +74,8 @@ def _load_keypair() -> Keypair:
 
 
 def _get_client() -> Client:
-    """Return a Solana RPC client pointing at devnet."""
-    return Client(DEVNET_URL)
+    """Return a Solana RPC client pointing at the configured network."""
+    return Client(RPC_URL)
 
 
 # ── Public API ───────────────────────────────────────────────────────────────

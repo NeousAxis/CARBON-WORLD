@@ -224,7 +224,7 @@ export default function AboutPage() {
             </div>
             <div>
               <span style={{ color: "#B8B9B6" }}>Network:</span>{" "}
-              <span className="font-medium" style={{ color: "#FFFFFF" }}>Solana (devnet)</span>
+              <span className="font-medium" style={{ color: "#FFFFFF" }}>Solana (mainnet)</span>
             </div>
             <div>
               <span style={{ color: "#B8B9B6" }}>Decimals:</span>{" "}

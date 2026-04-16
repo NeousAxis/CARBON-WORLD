@@ -116,7 +116,7 @@ export default function TransactionsPage() {
                 </span>
                 <span className="w-[340px] text-right">
                   <a
-                    href={`https://explorer.solana.com/tx/${event.tx_hash}?cluster=devnet`}
+                    href={`https://explorer.solana.com/tx/${event.tx_hash}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-mono text-xs hover:underline"

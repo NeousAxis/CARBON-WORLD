@@ -42,10 +42,11 @@ jobs:
           MAX_ARTICLES_PER_RUN: '50'
           MIN_HOURS_BETWEEN_RUNS: '0'
           SOLANA_KEYPAIR: ${{ secrets.SOLANA_KEYPAIR }}
+          SOLANA_NETWORK: mainnet
         run: |
           # Write Solana keypair to temp file for the executor
           mkdir -p ~/.config/solana
-          echo "$SOLANA_KEYPAIR" > ~/.config/solana/id.json
+          echo "$SOLANA_KEYPAIR" > ~/.config/solana/cbwd.json
 
           # Run the pipeline (--force to ignore last_run check)
           python main.py --force

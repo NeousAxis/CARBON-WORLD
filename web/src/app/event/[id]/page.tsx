@@ -157,7 +157,7 @@ export default async function EventPage({
         </h2>
         {event.tx_hash ? (
           <a
-            href={`https://explorer.solana.com/tx/${event.tx_hash}?cluster=devnet`}
+            href={`https://explorer.solana.com/tx/${event.tx_hash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline font-mono text-sm break-all"
