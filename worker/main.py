@@ -1,18 +1,23 @@
 """
-main.py — CARBON WORLD Pipeline Orchestrator.
+main.py — CARBON WORLD Pipeline Orchestrator (8-agent verification edition).
 
-Runs a multi-agent pipeline: Collector → Classifier → Analyst → Scorer → Writer → Reporter.
+Pipeline:
+  Collector -> Classifier -> Analyst A (Qwen3) ┐
+                             Analyst B (Llama) ┘ (parallel)
+             -> Reconciler (Qwen3) -> Sentinel (GPT-OSS-120B)
+             -> Scorer -> Writer (Solana or review_queue) -> Reporter
 
 Usage:
   python main.py            # normal run (respects MIN_HOURS_BETWEEN_RUNS)
   python main.py --force    # ignore minimum delay
-  python main.py --dry-run  # full analysis without writing to DB
+  python main.py --dry-run  # analysis without DB writes / Solana tx
 """
 
 import argparse
 import logging
 import logging.handlers
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -43,7 +48,10 @@ try:
     from state import should_run_now, set_last_run
     from agents.collector import collect
     from agents.classifier import classify_batch
-    from agents.analyst import analyze_batch
+    from agents.analyst import analyze_batch as analyze_batch_a
+    from agents.analyst_b import analyze_batch as analyze_batch_b
+    from agents.reconciler import reconcile_batch
+    from agents.sentinel import sentinel_check
     from agents.scorer import score_batch
     from agents.writer import write_batch
     from agents.reporter import report
@@ -60,11 +68,54 @@ def _parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _run_analysts_parallel(valid_articles: list[dict]) -> tuple[list[dict], list[dict]]:
+    """
+    Run Analyst A and Analyst B concurrently on the same input.
+    Returns (analyst_a_results, analyst_b_results).
+    Each result is a list of {'article', 'analysis'} dicts.
+    """
+    logger.info("Launching Analyst A and Analyst B in parallel (ThreadPoolExecutor)")
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        future_a = pool.submit(analyze_batch_a, valid_articles)
+        future_b = pool.submit(analyze_batch_b, valid_articles)
+        results_a = future_a.result()
+        results_b = future_b.result()
+    logger.info("Analyst A returned %d events, Analyst B returned %d events.", len(results_a), len(results_b))
+    return results_a, results_b
+
+
+def _merge_ab_by_url(results_a: list[dict], results_b: list[dict]) -> list[dict]:
+    """
+    Match Analyst A and Analyst B outputs by article URL.
+    Returns a list of {article, _analyst_a, _analyst_b} dicts, only for articles
+    that BOTH analysts produced a verdict on. Articles analyzed by only one side
+    are logged and skipped (reconciler needs two verdicts).
+    """
+    by_url_b = {r["article"].get("link", ""): r["analysis"] for r in results_b}
+    merged: list[dict] = []
+    for ra in results_a:
+        link = ra["article"].get("link", "")
+        analysis_b = by_url_b.get(link)
+        if analysis_b is None:
+            logger.info(
+                "Skipping '%s': Analyst B did not produce a verdict.",
+                ra["article"].get("title", "")[:60],
+            )
+            continue
+        merged.append({
+            "article": ra["article"],
+            "_analyst_a": ra["analysis"],
+            "_analyst_b": analysis_b,
+        })
+    logger.info("Merged A/B verdicts: %d events with both.", len(merged))
+    return merged
+
+
 def main() -> int:
     args = _parse_args()
 
     logger.info("=" * 60)
-    logger.info("  CARBON WORLD Pipeline started")
+    logger.info("  CARBON WORLD Pipeline started (8-agent verification)")
     logger.info("  Mode: %s", "DRY-RUN" if args.dry_run else "PRODUCTION")
     logger.info("=" * 60)
 
@@ -72,8 +123,8 @@ def main() -> int:
     if not args.force and not should_run_now(MIN_HOURS_BETWEEN_RUNS):
         return 0
 
-    # === Phase 1/6: COLLECTOR ===
-    logger.info("=== Phase 1/6: COLLECTOR ===")
+    # === Phase 1/8: COLLECTOR ===
+    logger.info("=== Phase 1/8: COLLECTOR ===")
     try:
         articles = collect()
     except Exception as exc:
@@ -81,7 +132,7 @@ def main() -> int:
         return 1
     total_collected = len(articles)
 
-    # Filter already-seen articles
+    # Filter already-seen articles (carbon_events OR review_queue)
     new_articles = []
     for article in articles:
         try:
@@ -89,7 +140,7 @@ def main() -> int:
                 continue
             new_articles.append(article)
         except Exception:
-            new_articles.append(article)  # On doubt, process it
+            new_articles.append(article)
     total_new = len(new_articles)
     logger.info(
         "New articles after DB filter: %d (already seen: %d)",
@@ -97,7 +148,6 @@ def main() -> int:
         total_collected - total_new,
     )
 
-    # Cap
     if total_new > MAX_ARTICLES_PER_RUN:
         logger.info("Capping at %d articles.", MAX_ARTICLES_PER_RUN)
         new_articles = new_articles[:MAX_ARTICLES_PER_RUN]
@@ -109,66 +159,90 @@ def main() -> int:
         set_last_run(datetime.now(tz=timezone.utc))
         return 0
 
-    # === Phase 2/6: CLASSIFIER ===
-    logger.info("=== Phase 2/6: CLASSIFIER (%d articles) ===", total_classified)
+    # === Phase 2/8: CLASSIFIER ===
+    logger.info("=== Phase 2/8: CLASSIFIER (%d articles) ===", total_classified)
     valid_articles, invalid_articles = classify_batch(new_articles)
     valid_count = len(valid_articles)
     invalid_count = len(invalid_articles)
 
-    if not valid_articles:
-        logger.info("No valid articles found. Pipeline complete.")
-        report(
-            total_collected=total_collected,
-            total_new=total_new,
-            total_classified=total_classified,
-            valid_count=0,
-            invalid_count=invalid_count,
-            analyzed_count=0,
-            neutral_count=0,
-            scored_count=0,
-            saved_count=0,
-            events=[],
-        )
-        set_last_run(datetime.now(tz=timezone.utc))
-        return 0
-
-    # Dry-run: log classifications and stop before LLM-heavy phases
-    if args.dry_run:
-        logger.info("[DRY-RUN] Stopping after classification (skipping analyst/scorer/writer).")
+    def _empty_report(analyzed=0, neutral=0, scored=0, saved=0, events=None):
         report(
             total_collected=total_collected,
             total_new=total_new,
             total_classified=total_classified,
             valid_count=valid_count,
             invalid_count=invalid_count,
-            analyzed_count=0,
-            neutral_count=0,
-            scored_count=0,
-            saved_count=0,
-            events=[],
+            analyzed_count=analyzed,
+            neutral_count=neutral,
+            scored_count=scored,
+            saved_count=saved,
+            events=events or [],
         )
+
+    if not valid_articles:
+        logger.info("No valid articles found. Pipeline complete.")
+        _empty_report()
+        set_last_run(datetime.now(tz=timezone.utc))
         return 0
 
-    # === Phase 3/6: ANALYST ===
-    logger.info("=== Phase 3/6: ANALYST (%d valid articles) ===", valid_count)
-    analyzed_events = analyze_batch(valid_articles)
-    analyzed_count = len(analyzed_events)
-    neutral_count = valid_count - analyzed_count  # those filtered as NEUTRAL by analyst
+    # Dry-run: stop before LLM-heavy analyst/reconciler/sentinel phases
+    if args.dry_run:
+        logger.info("[DRY-RUN] Stopping after classification (skipping analysts/reconciler/sentinel/writer).")
+        _empty_report()
+        return 0
 
-    # === Phase 4/6: SCORER ===
-    logger.info("=== Phase 4/6: SCORER (%d events) ===", analyzed_count)
-    scored_events = score_batch(analyzed_events)
+    # === Phase 3/8: ANALYST A + ANALYST B (parallel) ===
+    logger.info("=== Phase 3/8: ANALYSTS A+B in parallel (%d valid articles) ===", valid_count)
+    results_a, results_b = _run_analysts_parallel(valid_articles)
+
+    # Merge by URL — both analysts must have spoken
+    ab_pairs = _merge_ab_by_url(results_a, results_b)
+
+    if not ab_pairs:
+        logger.info("No A/B pairs to reconcile. Pipeline complete.")
+        _empty_report()
+        set_last_run(datetime.now(tz=timezone.utc))
+        return 0
+
+    # === Phase 4/8: RECONCILER ===
+    logger.info("=== Phase 4/8: RECONCILER (%d pairs) ===", len(ab_pairs))
+    reconciled_events = reconcile_batch(ab_pairs)
+
+    # Drop NEUTRAL verdicts here (same as old pipeline — the analyst-level NEUTRAL filter)
+    actionable_events = [
+        e for e in reconciled_events
+        if e["analysis"].get("decision", "NEUTRAL") != "NEUTRAL"
+    ]
+    neutral_count = len(reconciled_events) - len(actionable_events)
+    analyzed_count = len(actionable_events)
+    logger.info(
+        "Reconciler output: %d actionable, %d neutral (dropped).",
+        analyzed_count, neutral_count,
+    )
+
+    if not actionable_events:
+        _empty_report(analyzed=0, neutral=neutral_count)
+        set_last_run(datetime.now(tz=timezone.utc))
+        return 0
+
+    # === Phase 5/8: SENTINEL ===
+    logger.info("=== Phase 5/8: SENTINEL (%d events) ===", len(actionable_events))
+    sentinel_events = sentinel_check(actionable_events)
+
+    # === Phase 6/8: SCORER ===
+    logger.info("=== Phase 6/8: SCORER (%d events) ===", len(sentinel_events))
+    scored_events = score_batch(sentinel_events)
     scored_count = len(scored_events)
 
-    # === Phase 5/6: WRITER ===
-    logger.info("=== Phase 5/6: WRITER (%d events) ===", scored_count)
+    # === Phase 7/8: WRITER (routes to Solana or review_queue) ===
+    logger.info("=== Phase 7/8: WRITER (%d events) ===", scored_count)
     saved_count = write_batch(scored_events)
 
     # --- Export JSON for frontend ---
     export_events()
 
-    # === Phase 6/6: REPORTER ===
-    logger.info("=== Phase 6/6: REPORTER ===")
+    # === Phase 8/8: REPORTER ===
+    logger.info("=== Phase 8/8: REPORTER ===")
     report(
         total_collected=total_collected,
         total_new=total_new,

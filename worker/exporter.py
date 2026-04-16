@@ -12,12 +12,15 @@ from pathlib import Path
 import shutil
 
 import config
+from db import count_pending_reviews, get_pending_reviews
 
 logger = logging.getLogger("exporter")
 
 PROJECT_ROOT = Path(__file__).parent.parent
 EXPORT_PATH = Path(config.DB_PATH).parent / "export.json"
 WEB_EXPORT_PATH = PROJECT_ROOT / "web" / "data" / "export.json"
+REVIEW_EXPORT_PATH = Path(config.DB_PATH).parent / "review_queue.json"
+WEB_REVIEW_PATH = PROJECT_ROOT / "web" / "data" / "review_queue.json"
 
 
 def export_events() -> Path:
@@ -49,7 +52,36 @@ def export_events() -> Path:
         logger.info("Copied export to %s", WEB_EXPORT_PATH)
 
     logger.info("Exported %d events to %s", len(events), EXPORT_PATH)
+
+    # Also export pending reviews for the frontend /review page
+    _export_review_queue()
+
     return EXPORT_PATH
+
+
+def _export_review_queue() -> None:
+    """Export pending reviews as JSON for the frontend review page."""
+    try:
+        reviews = get_pending_reviews()
+    except Exception as exc:
+        logger.warning("Could not fetch pending reviews: %s", exc)
+        reviews = []
+
+    payload = {
+        "generated_at": datetime.now(tz=timezone.utc).isoformat(),
+        "total_pending": len(reviews),
+        "reviews": reviews,
+    }
+
+    REVIEW_EXPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    REVIEW_EXPORT_PATH.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+    if WEB_REVIEW_PATH.parent.exists():
+        shutil.copy2(REVIEW_EXPORT_PATH, WEB_REVIEW_PATH)
+
+    logger.info("Exported %d pending reviews", len(reviews))
 
 
 def _write_json(events: list[dict], path: Path) -> None:
@@ -57,11 +89,18 @@ def _write_json(events: list[dict], path: Path) -> None:
     total_burned = sum(e["amount_crbn"] for e in events if e.get("decision") == "BURN")
     total_minted = sum(e["amount_crbn"] for e in events if e.get("decision") == "MINT")
 
+    try:
+        pending_reviews = count_pending_reviews()
+    except Exception as exc:
+        logger.warning("Could not read pending_reviews count: %s", exc)
+        pending_reviews = 0
+
     payload = {
         "generated_at": datetime.now(tz=timezone.utc).isoformat(),
         "total_events": len(events),
         "total_burned": total_burned,
         "total_minted": total_minted,
+        "pending_reviews": pending_reviews,
         "events": events,
     }
 

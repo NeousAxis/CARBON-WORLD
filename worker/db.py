@@ -1,9 +1,11 @@
 """
-db.py — SQLite interactions: event existence check and saving.
+db.py — SQLite interactions: event existence check, saving, review queue, training log.
 """
 
+import json
 import logging
 import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -12,6 +14,9 @@ import config
 logger = logging.getLogger(__name__)
 
 _conn: Optional[sqlite3.Connection] = None
+
+# JSONL file capturing every verdict for offline model training/evaluation
+_TRAINING_DATA_PATH = Path(config.DB_PATH).parent / "training_data.jsonl"
 
 
 def _get_conn() -> sqlite3.Connection:
@@ -29,7 +34,7 @@ def _get_conn() -> sqlite3.Connection:
 
 
 def _init_schema(conn: sqlite3.Connection) -> None:
-    """Create the carbon_events table and indexes if they do not exist."""
+    """Create tables and indexes if they do not exist."""
     conn.executescript("""
         CREATE TABLE IF NOT EXISTS carbon_events (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -46,6 +51,27 @@ def _init_schema(conn: sqlite3.Connection) -> None:
         );
         CREATE INDEX IF NOT EXISTS idx_carbon_events_url ON carbon_events(event_url);
         CREATE INDEX IF NOT EXISTS idx_carbon_events_created ON carbon_events(created_at);
+
+        CREATE TABLE IF NOT EXISTS review_queue (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            event_title TEXT NOT NULL,
+            event_url TEXT NOT NULL UNIQUE,
+            event_source TEXT NOT NULL,
+            analyst_a_verdict TEXT,
+            analyst_b_verdict TEXT,
+            reconciler_verdict TEXT,
+            sentinel_concern TEXT,
+            suggested_decision TEXT,
+            suggested_amount_crbn INTEGER DEFAULT 0,
+            human_verdict TEXT,
+            human_amount INTEGER,
+            human_reason TEXT,
+            status TEXT NOT NULL DEFAULT 'pending',
+            created_at TEXT NOT NULL,
+            resolved_at TEXT
+        );
+        CREATE INDEX IF NOT EXISTS idx_review_queue_status ON review_queue(status);
+        CREATE INDEX IF NOT EXISTS idx_review_queue_url ON review_queue(event_url);
     """)
     conn.commit()
 
@@ -64,13 +90,20 @@ def close_connection() -> None:
 
 def event_exists(link: str) -> bool:
     """
-    Return True if an event with this event_url already exists in the database.
+    Return True if an event with this event_url already exists in carbon_events
+    OR in the review_queue (so we don't re-analyze pending reviews).
     On error, returns False to prefer a potential duplicate over a missed article.
     """
     try:
         conn = _get_conn()
         cursor = conn.execute(
             "SELECT 1 FROM carbon_events WHERE event_url = ? LIMIT 1",
+            (link,),
+        )
+        if cursor.fetchone() is not None:
+            return True
+        cursor = conn.execute(
+            "SELECT 1 FROM review_queue WHERE event_url = ? LIMIT 1",
             (link,),
         )
         return cursor.fetchone() is not None
@@ -80,10 +113,7 @@ def event_exists(link: str) -> bool:
 
 
 def update_tx_hash(event_id: int, tx_hash: str) -> bool:
-    """
-    Update the tx_hash column for a given event row.
-    Returns True on success, False on error.
-    """
+    """Update the tx_hash column for a given event row."""
     try:
         conn = _get_conn()
         conn.execute(
@@ -100,11 +130,7 @@ def update_tx_hash(event_id: int, tx_hash: str) -> bool:
 def save_event(event_data: dict) -> Optional[dict]:
     """
     Insert an event into carbon_events.
-    event_data must contain:
-      event_title, event_url, event_source, decision, amount_crbn,
-      final_score, confidence, justification, tx_hash, created_at
     Returns the inserted row as a dict, or None on error.
-    On duplicate event_url (IntegrityError), logs a warning and returns None.
     """
     try:
         conn = _get_conn()
@@ -155,3 +181,218 @@ def save_event(event_data: dict) -> Optional[dict]:
             exc,
         )
         return None
+
+
+# ── Review queue ────────────────────────────────────────────────────────────
+
+def _json_or_null(value) -> Optional[str]:
+    if value is None:
+        return None
+    try:
+        return json.dumps(value, ensure_ascii=False, default=str)
+    except Exception:
+        return None
+
+
+def add_to_review_queue(data: dict) -> Optional[int]:
+    """
+    Insert a Sentinel-flagged event into the review_queue for human adjudication.
+
+    Expected keys:
+      event_title, event_url, event_source,
+      analyst_a_verdict (dict), analyst_b_verdict (dict),
+      reconciler_verdict (dict), sentinel_concern (str),
+      suggested_decision (str), suggested_amount_crbn (int)
+    Returns the review_queue row id, or None on error.
+    """
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            """
+            INSERT INTO review_queue
+                (event_title, event_url, event_source,
+                 analyst_a_verdict, analyst_b_verdict,
+                 reconciler_verdict, sentinel_concern,
+                 suggested_decision, suggested_amount_crbn,
+                 status, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', ?)
+            """,
+            (
+                data.get("event_title", "")[:500],
+                data.get("event_url", ""),
+                data.get("event_source", ""),
+                _json_or_null(data.get("analyst_a_verdict")),
+                _json_or_null(data.get("analyst_b_verdict")),
+                _json_or_null(data.get("reconciler_verdict")),
+                (data.get("sentinel_concern") or "")[:500],
+                data.get("suggested_decision", ""),
+                int(data.get("suggested_amount_crbn", 0) or 0),
+                datetime.now(tz=timezone.utc).isoformat(),
+            ),
+        )
+        conn.commit()
+        review_id = cursor.lastrowid
+        logger.info(
+            "Queued for review id=%s: [%s %s CBWD] '%s'",
+            review_id,
+            data.get("suggested_decision", "?"),
+            data.get("suggested_amount_crbn", 0),
+            data.get("event_title", "")[:60],
+        )
+        return review_id
+    except sqlite3.IntegrityError:
+        logger.warning(
+            "Review queue duplicate skipped for '%s'",
+            data.get("event_url", "")[:80],
+        )
+        return None
+    except Exception as exc:
+        logger.error("Error adding to review_queue: %s", exc)
+        return None
+
+
+def get_pending_reviews() -> list[dict]:
+    """Return all review_queue rows with status='pending' as a list of dicts."""
+    try:
+        conn = _get_conn()
+        rows = conn.execute(
+            "SELECT * FROM review_queue WHERE status = 'pending' ORDER BY id ASC"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    except Exception as exc:
+        logger.error("Error fetching pending reviews: %s", exc)
+        return []
+
+
+def count_pending_reviews() -> int:
+    """Return the number of pending reviews (for frontend dashboard)."""
+    try:
+        conn = _get_conn()
+        row = conn.execute(
+            "SELECT COUNT(*) AS c FROM review_queue WHERE status = 'pending'"
+        ).fetchone()
+        return int(row["c"]) if row else 0
+    except Exception as exc:
+        logger.warning("Error counting pending reviews: %s", exc)
+        return 0
+
+
+def resolve_review(
+    review_id: int,
+    human_verdict: str,
+    human_amount: Optional[int] = None,
+    human_reason: Optional[str] = None,
+) -> bool:
+    """
+    Mark a review as resolved. If human_verdict is 'approve' or 'reverse' or 'edit',
+    the event is promoted into carbon_events. If 'reject', it is discarded.
+
+    human_verdict values:
+      - 'approve': use suggested_decision + suggested_amount_crbn
+      - 'reverse': flip decision (BURN<->MINT) but keep suggested amount unless human_amount given
+      - 'edit'   : use human_verdict decision override (BURN/MINT) with human_amount
+                   (pass the override in human_reason prefix like 'BURN:<reason>' or supply via another call)
+      - 'reject' : discard the event entirely (no carbon_events row)
+    """
+    try:
+        conn = _get_conn()
+        row = conn.execute(
+            "SELECT * FROM review_queue WHERE id = ?", (review_id,)
+        ).fetchone()
+        if row is None:
+            logger.warning("resolve_review: id=%d not found", review_id)
+            return False
+
+        now = datetime.now(tz=timezone.utc).isoformat()
+
+        if human_verdict == "reject":
+            conn.execute(
+                """UPDATE review_queue SET status='rejected', human_verdict=?,
+                       human_amount=?, human_reason=?, resolved_at=? WHERE id=?""",
+                ("reject", human_amount, human_reason, now, review_id),
+            )
+            conn.commit()
+            logger.info("Review id=%d rejected by human.", review_id)
+            return True
+
+        # Otherwise, promote to carbon_events
+        suggested_decision = row["suggested_decision"] or "NEUTRAL"
+        suggested_amount = int(row["suggested_amount_crbn"] or 0)
+
+        if human_verdict == "reverse":
+            final_decision = "MINT" if suggested_decision == "BURN" else "BURN"
+            final_amount = int(human_amount if human_amount is not None else suggested_amount)
+        elif human_verdict in ("BURN", "MINT", "NEUTRAL"):
+            final_decision = human_verdict
+            final_amount = int(human_amount if human_amount is not None else suggested_amount)
+        else:  # approve / edit-without-override
+            final_decision = suggested_decision
+            final_amount = int(human_amount if human_amount is not None else suggested_amount)
+
+        # Reconstruct justification from reconciler verdict if available
+        justification = (human_reason or "human-approved via review_queue")[:500]
+        recon = row["reconciler_verdict"]
+        if recon:
+            try:
+                recon_obj = json.loads(recon)
+                if recon_obj.get("justification"):
+                    justification = f"{justification} | {recon_obj['justification']}"[:500]
+            except Exception:
+                pass
+
+        event_data = {
+            "event_title": row["event_title"],
+            "event_url": row["event_url"],
+            "event_source": row["event_source"],
+            "decision": final_decision,
+            "amount_crbn": final_amount,
+            "final_score": 0.0,
+            "confidence": 10,
+            "justification": justification,
+            "tx_hash": None,
+            "created_at": now,
+        }
+        saved = save_event(event_data)
+        if saved is None:
+            logger.error("resolve_review: save_event failed for review id=%d", review_id)
+            return False
+
+        conn.execute(
+            """UPDATE review_queue SET status='approved', human_verdict=?,
+                   human_amount=?, human_reason=?, resolved_at=? WHERE id=?""",
+            (human_verdict, human_amount, human_reason, now, review_id),
+        )
+        conn.commit()
+        logger.info(
+            "Review id=%d resolved: %s -> %s %d CBWD (event id=%s)",
+            review_id, human_verdict, final_decision, final_amount, saved.get("id"),
+        )
+        return True
+    except Exception as exc:
+        logger.error("Error resolving review id=%d: %s", review_id, exc)
+        return False
+
+
+# ── Training data logger ─────────────────────────────────────────────────────
+
+def log_training_data(record: dict) -> bool:
+    """
+    Append a JSONL record to data/training_data.jsonl for offline analysis.
+
+    Typical record fields:
+      event_url, event_title, event_source,
+      analyst_a (verdict dict), analyst_b (verdict dict),
+      reconciler (verdict dict), sentinel (dict),
+      final_decision, final_amount, tx_hash, routed_to ('solana' | 'review'),
+      human_verdict (if resolved later), logged_at
+    """
+    try:
+        record = dict(record)
+        record.setdefault("logged_at", datetime.now(tz=timezone.utc).isoformat())
+        _TRAINING_DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with _TRAINING_DATA_PATH.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False, default=str) + "\n")
+        return True
+    except Exception as exc:
+        logger.warning("Error appending training data: %s", exc)
+        return False
