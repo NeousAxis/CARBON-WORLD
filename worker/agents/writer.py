@@ -6,7 +6,8 @@ Pure Python, no LLM required. Uses db.py for actual DB operations.
 import logging
 from datetime import datetime, timezone
 
-from db import save_event, event_exists
+from db import save_event, event_exists, update_tx_hash
+from solana_executor import execute_decision
 
 logger = logging.getLogger("agent.writer")
 
@@ -52,13 +53,26 @@ def write(event: dict) -> bool:
 
     saved = save_event(event_data)
     if saved:
+        event_id = saved.get("id")
         logger.info(
             "Saved: [%s] %d CBWD | '%s' (id=%s)",
             event_data["decision"],
             event_data["amount_crbn"],
             title[:50],
-            saved.get("id", "?"),
+            event_id or "?",
         )
+
+        # Execute on-chain transaction (Phase 4 — Solana devnet)
+        decision = event_data["decision"]
+        amount = event_data["amount_crbn"]
+        try:
+            tx_hash = execute_decision(decision, amount)
+            if tx_hash and event_id:
+                update_tx_hash(event_id, tx_hash)
+                logger.info("Solana tx recorded for event %s: %s", event_id, tx_hash)
+        except Exception as exc:
+            logger.warning("Solana execution failed for event %s: %s", event_id, exc)
+
         return True
     else:
         logger.warning("Failed to save: '%s'", title[:60])

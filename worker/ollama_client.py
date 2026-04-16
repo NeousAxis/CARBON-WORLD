@@ -1,5 +1,6 @@
 """
-ollama_client.py — Shared Ollama client for all agents.
+llm_client.py — Shared LLM client for all agents.
+Supports two providers: Ollama (local) and Groq (cloud).
 Manages two model configurations: fast (classifier) and deep (analyst).
 """
 
@@ -8,17 +9,25 @@ import logging
 import re
 from typing import Optional
 
-import ollama
-
 from config import (
+    LLM_PROVIDER,
     OLLAMA_HOST,
     CLASSIFIER_MODEL,
     ANALYST_MODEL,
     OLLAMA_TIMEOUT_SECONDS,
     OLLAMA_REPEAT_PENALTY,
+    GROQ_API_KEY,
+    GROQ_MODEL,
 )
 
 logger = logging.getLogger(__name__)
+
+
+# ── JSON parsing helpers ─────────────────────────────────────────────────────
+
+def _strip_think_tags(text: str) -> str:
+    """Remove <think>...</think> blocks from Qwen3 responses."""
+    return re.sub(r"<think>[\s\S]*?</think>", "", text).strip()
 
 
 def _strip_markdown_fences(text: str) -> str:
@@ -39,17 +48,18 @@ def _extract_first_json_block(text: str) -> Optional[str]:
 def _parse_json_response(raw: str, context: str) -> Optional[dict]:
     """Try to parse raw text as JSON with fallbacks."""
     if not raw:
-        logger.warning("Empty response from Ollama for %s", context)
+        logger.warning("Empty response from LLM for %s", context)
         return None
 
-    cleaned = _strip_markdown_fences(raw)
+    # Strip thinking tags first (Groq/Qwen3)
+    cleaned = _strip_think_tags(raw)
+    cleaned = _strip_markdown_fences(cleaned)
 
     try:
         return json.loads(cleaned)
     except json.JSONDecodeError:
         pass
 
-    # Fallback: extract first JSON block
     block = _extract_first_json_block(cleaned)
     if block:
         try:
@@ -57,15 +67,59 @@ def _parse_json_response(raw: str, context: str) -> Optional[dict]:
         except json.JSONDecodeError:
             pass
 
-    logger.warning("Invalid JSON from Ollama for %s: %s", context, cleaned[:200])
+    logger.warning("Invalid JSON from LLM for %s: %s", context, cleaned[:200])
     return None
 
 
-def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
-    """
-    Call the fast/small model (classifier). Returns parsed JSON dict or None.
-    Uses lower num_predict and num_ctx for speed.
-    """
+# ── Groq provider ───────────────────────────────────────────────────────────
+
+def _call_groq(system_prompt: str, user_message: str, context: str, max_tokens: int) -> Optional[dict]:
+    """Call Groq cloud API with rate limit handling. Returns parsed JSON dict or None."""
+    import httpx
+    import time
+
+    # Prepend /no_think to disable reasoning output
+    system_with_no_think = f"/no_think\n{system_prompt}"
+
+    # Rate limit: free tier = 30 req/min + 6000 TPM
+    # Classifier calls (~200 tokens) need 2s gap
+    # Analyst calls (~3000 tokens) need 8s gap
+    delay = 8 if max_tokens > 500 else 2
+    time.sleep(delay)
+
+    try:
+        resp = httpx.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": GROQ_MODEL,
+                "messages": [
+                    {"role": "system", "content": system_with_no_think},
+                    {"role": "user", "content": user_message},
+                ],
+                "temperature": 0.1,
+                "max_tokens": max_tokens,
+            },
+            timeout=60,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        raw = data["choices"][0]["message"]["content"]
+        return _parse_json_response(raw, context)
+    except Exception as exc:
+        logger.error("Groq call failed for %s: %s", context, exc)
+        return None
+
+
+# ── Ollama provider ──────────────────────────────────────────────────────────
+
+def _call_ollama_fast(system_prompt: str, user_message: str, context: str) -> Optional[dict]:
+    """Call local Ollama with the fast/small model."""
+    import ollama
+
     try:
         client = ollama.Client(host=OLLAMA_HOST, timeout=60)
         response = client.chat(
@@ -91,11 +145,10 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
     return _parse_json_response(raw, context)
 
 
-def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
-    """
-    Call the deep/large model (analyst). Returns parsed JSON dict or None.
-    Uses full num_predict and num_ctx for complex analysis.
-    """
+def _call_ollama_deep(system_prompt: str, user_message: str, context: str) -> Optional[dict]:
+    """Call local Ollama with the deep/large model."""
+    import ollama
+
     try:
         client = ollama.Client(host=OLLAMA_HOST, timeout=OLLAMA_TIMEOUT_SECONDS)
         response = client.chat(
@@ -119,3 +172,19 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
 
     raw = response.message.content if hasattr(response, "message") else ""
     return _parse_json_response(raw, context)
+
+
+# ── Public API (used by agents) ──────────────────────────────────────────────
+
+def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
+    """Call the fast model (classifier). Routes to Groq or Ollama based on config."""
+    if LLM_PROVIDER == "groq":
+        return _call_groq(system_prompt, user_message, context, max_tokens=200)
+    return _call_ollama_fast(system_prompt, user_message, context)
+
+
+def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
+    """Call the deep model (analyst). Routes to Groq or Ollama based on config."""
+    if LLM_PROVIDER == "groq":
+        return _call_groq(system_prompt, user_message, context, max_tokens=3000)
+    return _call_ollama_deep(system_prompt, user_message, context)

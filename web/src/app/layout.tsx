@@ -32,9 +32,10 @@ export default function RootLayout({
           <nav className="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
             <Link
               href="/"
-              className="text-xl font-bold tracking-tight"
+              className="flex items-center gap-3 text-xl font-bold tracking-tight"
               style={{ color: "#FF8400" }}
             >
+              <img src="/cbwd-logo.png" alt="CBWD" width={72} height={72} className="rounded-full" />
               CARBON WORLD
             </Link>
             <div className="flex items-center gap-6">

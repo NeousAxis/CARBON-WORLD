@@ -79,6 +79,24 @@ def event_exists(link: str) -> bool:
         return False
 
 
+def update_tx_hash(event_id: int, tx_hash: str) -> bool:
+    """
+    Update the tx_hash column for a given event row.
+    Returns True on success, False on error.
+    """
+    try:
+        conn = _get_conn()
+        conn.execute(
+            "UPDATE carbon_events SET tx_hash = ? WHERE id = ?",
+            (tx_hash, event_id),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.error("Error updating tx_hash for event %d: %s", event_id, exc)
+        return False
+
+
 def save_event(event_data: dict) -> Optional[dict]:
     """
     Insert an event into carbon_events.
