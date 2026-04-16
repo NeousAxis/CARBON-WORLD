@@ -47,7 +47,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="border-t border-gray-200 bg-white">
           <div className="mx-auto max-w-5xl px-6 py-6 flex items-center justify-between text-sm text-gray-500">
-            <span>Powered by AI on Solana</span>
+            <span>Powered by Carbon World</span>
             <a
               href="https://github.com/NeousAxis/CARBON-WORLD"
               target="_blank"
