@@ -1,6 +1,7 @@
 import { getEvents, getStats, formatAmount } from "@/lib/data";
 import { LiveTicker } from "@/components/LiveTicker";
 import { SupplyChart } from "@/components/SupplyChart";
+import { BreakdownDonut } from "@/components/BreakdownDonut";
 import { EventsTable } from "@/components/EventsTable";
 
 function formatLastUpdate(iso: string): string {
@@ -108,8 +109,15 @@ export default function Home() {
 
       {/* Main content */}
       <div className="mx-auto max-w-7xl px-4 py-6 space-y-6">
-        {/* Supply chart — full width */}
-        <SupplyChart events={events} />
+        {/* Charts row: supply chart + donut */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="lg:col-span-8">
+            <SupplyChart events={events} />
+          </div>
+          <div className="lg:col-span-4">
+            <BreakdownDonut events={events} />
+          </div>
+        </div>
 
         {/* Two-column layout: LiveTicker | EventsTable */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
