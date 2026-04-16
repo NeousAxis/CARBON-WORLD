@@ -9,11 +9,15 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+import shutil
+
 import config
 
 logger = logging.getLogger("exporter")
 
+PROJECT_ROOT = Path(__file__).parent.parent
 EXPORT_PATH = Path(config.DB_PATH).parent / "export.json"
+WEB_EXPORT_PATH = PROJECT_ROOT / "web" / "data" / "export.json"
 
 
 def export_events() -> Path:
@@ -38,6 +42,11 @@ def export_events() -> Path:
 
     events = [dict(row) for row in rows]
     _write_json(events, EXPORT_PATH)
+
+    # Copy to web/data/ for Vercel builds
+    if WEB_EXPORT_PATH.parent.exists():
+        shutil.copy2(EXPORT_PATH, WEB_EXPORT_PATH)
+        logger.info("Copied export to %s", WEB_EXPORT_PATH)
 
     logger.info("Exported %d events to %s", len(events), EXPORT_PATH)
     return EXPORT_PATH

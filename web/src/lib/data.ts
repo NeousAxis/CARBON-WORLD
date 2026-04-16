@@ -36,7 +36,7 @@ export interface Stats {
 // --- Data loading (build-time only, server components) ---
 
 function loadExport(): ExportData {
-  const filePath = path.join(process.cwd(), "..", "data", "export.json");
+  const filePath = path.join(process.cwd(), "data", "export.json");
   const raw = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(raw) as ExportData;
 }
