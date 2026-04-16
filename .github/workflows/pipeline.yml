@@ -39,7 +39,7 @@ jobs:
           LLM_PROVIDER: groq
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: qwen/qwen3-32b
-          MAX_ARTICLES_PER_RUN: '25'
+          MAX_ARTICLES_PER_RUN: '50'
           MIN_HOURS_BETWEEN_RUNS: '0'
           SOLANA_KEYPAIR: ${{ secrets.SOLANA_KEYPAIR }}
         run: |
