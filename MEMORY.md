@@ -40,20 +40,35 @@
 - **Résultat** : `~/.git` n'existe plus, `~/kernel-earth/` fonctionne indépendamment, `~/CARBON-WORLD/.git` intouché
 - Note : kernel-earth a un rebase interrompu (29 commits) → `git rebase --abort` si besoin
 
-### 2026-04-16 — Pipeline multi-agents construit (non testé)
+### 2026-04-16 — Pipeline multi-agents construit et testé ✅
 - Refonte architecture : monolithique → 6 agents spécialisés
 - Agents créés : collector, classifier, analyst, scorer, writer, reporter
-- 2 modèles LLM : `qwen3:14b` (classifier, rapide ~8s) + `qwen3:32b` (analyst, profond ~60s)
+- 2 modèles LLM : `qwen3:14b` (classifier, rapide ~1s) + `qwen3:32b` (analyst, profond ~48s)
 - Nouveau dossier `agents/` (7 fichiers) et `prompts/` (3 fichiers) + `ollama_client.py`
 - `main.py` réécrit comme orchestrateur pipeline 6 phases
-- **PAS ENCORE TESTÉ** — session interrompue par l'incident kernel-earth
 - Commit initial fait sur `main` (3d27e88) + commit fix rules (aeb52b8)
 
+### 2026-04-16 — Bug Qwen3 "thinking mode" → fix `think=False`
+- **Problème** : `qwen3:14b` ET `qwen3:32b` retournaient des réponses vides (21/25 articles failed)
+- **Cause** : Qwen3 active un mode "thinking" par défaut — le modèle met sa réflexion dans un champ `thinking` séparé et ne produit rien dans `response` si `num_predict` est trop bas
+- **Fix** : ajout de `think=False` aux deux appels `client.chat()` dans `ollama_client.py`
+- **Résultat** : classifier passe de ~7s/article (avec thinking gaspillé) à ~1s/article, 100% de réponses
+
+### 2026-04-16 — Premier run pipeline complet ✅ (DONNÉES RÉELLES)
+- **868 articles** collectés (31/33 sources, DeSmog + Rio Times en HTTP 403)
+- **25 classifiés** par `qwen3:14b` → 2 VALID, 23 INVALID (correct)
+- **1 analysé** en profondeur par `qwen3:32b` (48s) → MINT
+- **1 décision sauvée** en DB :
+  - MINT 1,200,000 CBWD | EU + Member States pledge €811M for Sudan | score=1.96 | conf=7/10
+  - Le scorer a corrigé une incohérence de score prospectif du LLM (2.10 → 1.40 recalculé)
+- **Temps total** : ~2 min 15s (bien sous les 15 min estimées)
+- **20 événements** en DB au total (16 pré-existants des runs launchd + 4 de cette session)
+- DB : `~/CARBON-WORLD/data/carbon.db` — vérifié fonctionnel
+
 ## 📌 Prochaine étape immédiate
-1. Ouvrir Claude Code depuis `~/CARBON-WORLD/` (breadcrumb doit montrer "CARBON-WORLD / main")
-2. Lancer `python main.py --force` pour tester le pipeline multi-agents
-3. Si ça marche → on a de la donnée réelle dans SQLite
-4. Si ça casse → debug et fix
+1. ~~Lancer `python main.py --force`~~ → **FAIT** ✅ (pipeline fonctionne, données réelles en DB)
+2. **Phase 3 frontend** : Next.js sur Vercel, source de données à trancher
+3. Phase 4 Solana : mint/burn réels devnet puis mainnet
 
 **Ce qui reste avant mainnet** :
 1. Premier vrai run production (15-20 min) — à faire demain

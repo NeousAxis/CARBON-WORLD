@@ -47,6 +47,7 @@ try:
     from agents.scorer import score_batch
     from agents.writer import write_batch
     from agents.reporter import report
+    from exporter import export_events
 except EnvironmentError as exc:
     logger.critical("Invalid configuration: %s", exc)
     sys.exit(1)
@@ -104,6 +105,7 @@ def main() -> int:
 
     if not new_articles:
         logger.info("No new articles to process.")
+        export_events()
         set_last_run(datetime.now(tz=timezone.utc))
         return 0
 
@@ -161,6 +163,9 @@ def main() -> int:
     # === Phase 5/6: WRITER ===
     logger.info("=== Phase 5/6: WRITER (%d events) ===", scored_count)
     saved_count = write_batch(scored_events)
+
+    # --- Export JSON for frontend ---
+    export_events()
 
     # === Phase 6/6: REPORTER ===
     logger.info("=== Phase 6/6: REPORTER ===")

@@ -81,6 +81,7 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
                 "repeat_penalty": 1.2,
             },
             format="json",
+            think=False,
         )
     except Exception as exc:
         logger.error("Ollama fast call failed for %s: %s", context, exc)
@@ -110,6 +111,7 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
                 "repeat_penalty": OLLAMA_REPEAT_PENALTY,
             },
             format="json",
+            think=False,
         )
     except Exception as exc:
         logger.error("Ollama deep call failed for %s: %s", context, exc)
