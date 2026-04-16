@@ -203,10 +203,11 @@ Pipeline :
 3. **Phase 4 Solana** : mint/burn réels devnet puis mainnet
 4. **Twitter/X** : soit API Basic $100/mois, soit RSSHub Docker self-hosted
 
-### Pour reprendre demain
-- Tout le contexte est dans `CLAUDE.md` (plan), `MEMORY.md` (journal), `RULES.md` (règles orchestrateur)
+### Pour reprendre
+- **OUVRIR CLAUDE CODE DEPUIS `~/CARBON-WORLD/`** : `cd ~/CARBON-WORLD && claude`
 - Lire `MEMORY.md` en premier — section "Fait" + "Prochaine étape"
-- Le launchd tournera à 08:00 → vérifier `~/CARBON-WORLD/logs/worker.log` au réveil
+- Le launchd tourne à 08:00, 14:00, 20:00 → vérifier `logs/worker.log`
+- Le pipeline multi-agents est construit mais **PAS ENCORE TESTÉ** → première chose à faire
 
 ### Commandes utiles
 ```bash

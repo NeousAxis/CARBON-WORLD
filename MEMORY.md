@@ -30,6 +30,31 @@
 - **Règle ajoutée** : NE JAMAIS utiliser `isolation: "worktree"`, NE JAMAIS travailler hors du repo CARBON-WORLD. Sous-agents utilisent des branches dans le repo dédié.
 - **Voir RULES.md Section 0 (GIT)**
 
+### 2026-04-16 — Fix pollution ~/.git (kernel-earth déplacé)
+- Le home directory `~` était un clone de `github.com/NeousAxis/kernel-earth` → polluait TOUTES les sessions Claude Code
+- Migration effectuée dans une session séparée :
+  - `~/.git` → `~/kernel-earth/.git`
+  - 16 fichiers trackés déplacés (Dockerfile, server.js, api/, src/, frontend/, etc.)
+  - 2 worktrees stales purgés
+  - Remote origin intact
+- **Résultat** : `~/.git` n'existe plus, `~/kernel-earth/` fonctionne indépendamment, `~/CARBON-WORLD/.git` intouché
+- Note : kernel-earth a un rebase interrompu (29 commits) → `git rebase --abort` si besoin
+
+### 2026-04-16 — Pipeline multi-agents construit (non testé)
+- Refonte architecture : monolithique → 6 agents spécialisés
+- Agents créés : collector, classifier, analyst, scorer, writer, reporter
+- 2 modèles LLM : `qwen3:14b` (classifier, rapide ~8s) + `qwen3:32b` (analyst, profond ~60s)
+- Nouveau dossier `agents/` (7 fichiers) et `prompts/` (3 fichiers) + `ollama_client.py`
+- `main.py` réécrit comme orchestrateur pipeline 6 phases
+- **PAS ENCORE TESTÉ** — session interrompue par l'incident kernel-earth
+- Commit initial fait sur `main` (3d27e88) + commit fix rules (aeb52b8)
+
+## 📌 Prochaine étape immédiate
+1. Ouvrir Claude Code depuis `~/CARBON-WORLD/` (breadcrumb doit montrer "CARBON-WORLD / main")
+2. Lancer `python main.py --force` pour tester le pipeline multi-agents
+3. Si ça marche → on a de la donnée réelle dans SQLite
+4. Si ça casse → debug et fix
+
 **Ce qui reste avant mainnet** :
 1. Premier vrai run production (15-20 min) — à faire demain
 2. Frontend Next.js sur Vercel (Phase 3)
