@@ -65,10 +65,83 @@
 - **20 événements** en DB au total (16 pré-existants des runs launchd + 4 de cette session)
 - DB : `~/CARBON-WORLD/data/carbon.db` — vérifié fonctionnel
 
+### 2026-04-16 — Phase 3 Frontend déployé ✅
+- **Stack** : Next.js 16.2.4 + Tailwind CSS v4 + TypeScript
+- **Hébergement** : Vercel (production)
+- **Données** : JSON exporté depuis SQLite → `web/data/export.json` (copié auto par exporter)
+- **Repo GitHub** : https://github.com/NeousAxis/CARBON-WORLD (privé)
+- **4 pages** :
+  - `/` — Dashboard financier : ticker bar, supply chart SVG, donut, live ticker, event log
+  - `/event/[id]` — Détail événement avec justification éthique + lien Solana Explorer
+  - `/about` — Explication du système, 7 référentiels, cadre 4D
+  - `/sources` — Liste des 46 sources avec région, catégorie, langue, statut LIVE/DOWN
+- **Design** : Lunaris Dark (fond #111111, cards #1A1A1A, accent orange #FF8400, JetBrains Mono, corners carrés)
+- **Exporter** : `worker/exporter.py` écrit `data/export.json` + copie dans `web/data/`
+- **Domaine** : `carbon-token.xyz` acheté, pas encore configuré dans Vercel
+
+### 2026-04-16 — 13 sources science/innovation/bonnes nouvelles ajoutées
+- Nature News, Science (AAAS), The Lancet, Phys.org, ScienceDaily, WHO News
+- MIT Technology Review, Ars Technica Science, New Scientist, WIRED Science
+- Positive News, Good News Network, Reasons to be Cheerful
+- **Total : 46 sources (44 actives, 2 down : DeSmog + Rio Times)**
+- Page `/sources` créée sur le frontend pour lister toutes les sources
+
+### 2026-04-16 — Horaires launchd mis à jour
+- Ancien : 08:00, 14:00, 20:00
+- **Nouveau : 08:00, 14:00, 17:00** (jusqu'à passage en live 24/24)
+- Plist rechargé via `launchctl bootstrap`
+
+### 2026-04-16 — Phase 4 Solana TERMINÉE ✅ (devnet)
+- **Libs** : `solana` 0.36.11 + `solders` 0.27.1
+- **Module** : `worker/solana_executor.py`
+  - Instructions SPL Token construites manuellement (pas de dépendance `spl-token`)
+  - `_build_mint_to_ix()` : opcode 7, mint vers treasury ATA
+  - `_build_burn_ix()` : opcode 8, burn depuis treasury ATA
+  - Keypair chargé depuis `~/.config/solana/id.json`
+  - Blockhash `finalized` + `skip_preflight=True` (devnet timing issues)
+- **Wallet** : `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
+  - **C'est le mint authority** du token CBWD
+  - Balance : ~2 SOL devnet
+  - ATA treasury confirmée : `2iNtuKTthWRGiDoK4VZYQJ7dC8t4d2DkR1dbLQx5QqFK`
+- **Tests réussis** :
+  - MINT 1 CBWD → tx `35GDHHJfhQA9yjKExUNRh2GAAzZBiHZpLwFRkM5basqNr9NTmkmUzZq3w53ma7vueGZ72eAX1x1MpUaKChUR2Q8p`
+  - BURN 1 CBWD → tx `2LewaQitwcvJZ29RiLTUVPftwVh1SbSJDvr8Gw74syCj6Uuksw7oTRoQuA6r2RAhH1vRZ4aFx25F7catSmz8M8BJ`
+- **Intégration pipeline** : `writer.py` appelle `execute_decision()` après chaque save, puis `update_tx_hash()` en DB
+- **Conversion** : `amount_crbn` (ex: 1200000) × 10^6 = raw Solana units
+
+### 2026-04-16 — Migration Groq Cloud + GitHub Actions (24x/jour) ✅
+- **Provider LLM** : `LLM_PROVIDER=groq` dans `.env` (bascule Ollama ↔ Groq)
+- **Modèle Groq** : `qwen/qwen3-32b` — même modèle qu'Ollama local, hébergé chez Groq
+- **API key** : `gsk_LJJ...` stockée dans `.env` + GitHub Secret `GROQ_API_KEY`
+- **Rate limiting** : 2s entre appels classifier, 8s entre appels analyst (free tier Groq = 30 req/min + 6000 TPM)
+- **`/no_think`** ajouté au prompt système pour désactiver le thinking mode de Qwen3 sur Groq
+- **`_strip_think_tags()`** dans le client pour nettoyer les `<think>` résiduels
+- **GitHub Actions** : `.github/workflows/pipeline.yml`
+  - Cron : `7 * * * *` (toutes les heures, minute 7)
+  - `workflow_dispatch` pour déclenchement manuel
+  - Python 3.13, pip cache, 15 min timeout
+  - Secrets : `GROQ_API_KEY` + `SOLANA_KEYPAIR`
+  - Auto-commit `export.json` après chaque run
+  - Permission `contents: write` pour le push
+- **Solana keypair** : `~/.config/solana/id.json` → GitHub Secret `SOLANA_KEYPAIR`
+- **Test réussi** : pipeline Groq → MINT 750K CBWD (Tepco Niigata) → Solana TX confirmée
+- **Coût estimé** : ~$1/mois (Groq free tier + GitHub Actions public)
+
+### 2026-04-16 — Token metadata + logo enregistrés on-chain ✅
+- Logo : symbole C abstrait orange sur fond noir (Pillow-generated, 512x512 PNG)
+- Metadata Metaplex : name="Carbon World", symbol="CBWD", URI vers GitHub raw
+- TX création metadata : `4Z8K6tKV...`
+- TX update URI : `4fW6ztbp...`
+- Logo affiché dans la navbar du site
+
 ## 📌 Prochaine étape immédiate
-1. ~~Lancer `python main.py --force`~~ → **FAIT** ✅ (pipeline fonctionne, données réelles en DB)
-2. **Phase 3 frontend** : Next.js sur Vercel, source de données à trancher
-3. Phase 4 Solana : mint/burn réels devnet puis mainnet
+1. ~~Pipeline multi-agents~~ → **FAIT** ✅
+2. ~~Phase 3 frontend~~ → **FAIT** ✅
+3. ~~Phase 4 Solana devnet~~ → **FAIT** ✅
+4. ~~Migration Groq + GitHub Actions~~ → **FAIT** ✅
+5. Configurer le domaine `carbon-token.xyz` dans Vercel (DNS)
+6. Phase 5 : mainnet + liquidité DEX
+4. Phase 4 Solana : mint/burn réels devnet puis mainnet
 
 **Ce qui reste avant mainnet** :
 1. Premier vrai run production (15-20 min) — à faire demain

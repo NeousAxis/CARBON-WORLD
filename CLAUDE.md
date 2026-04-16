@@ -117,18 +117,27 @@ Pipeline :
 │  Résumé run   │  Stats + log structuré
 └──────────────┘
        ↓
-  Solana devnet (Phase 4, pas encore implémenté)
+  Solana devnet ← INTÉGRÉ (Phase 4 terminée)
+       ↓
+  JSON export → web/data/export.json → Vercel
 ```
 
-**Temps estimé** : ~8 min/run (vs ~30 min monolithique)
-- Collector : 30s (33 sources)
-- Classifier : 3 min (25 articles × 8s, qwen3:14b)
-- Analyst : 5 min (~5 VALID × 60s, qwen3:32b)
-- Scorer + Writer + Reporter : <1s
+**Temps estimé** : ~3 min/run
+- Collector : 30s (46 sources)
+- Classifier : 30s (25 articles × ~1s, qwen3:14b avec think=False)
+- Analyst : 1-2 min (~3-5 VALID × 30-60s, qwen3:32b)
+- Scorer + Writer + Solana TX + Export + Reporter : ~10s
 
 **2 modèles Ollama utilisés** :
-- `qwen3:14b` (classifier — rapide, validation simple)
+- `qwen3:14b` (classifier — rapide ~1s/article, validation + traduction titres)
 - `qwen3:32b` (analyst — profond, analyse éthique 4D complète)
+
+**Solana devnet** :
+- Wallet signer : `~/.config/solana/id.json` → `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
+- Ce wallet est le **mint authority** du token CBWD
+- MINT = `mintTo` vers treasury ATA (augmente supply)
+- BURN = `burn` depuis treasury ATA (réduit supply)
+- Chaque tx enregistrée dans SQLite (`tx_hash`) et visible sur Solana Explorer
 
 ---
 
@@ -136,7 +145,7 @@ Pipeline :
 
 ### ✅ Phase 1 — Worker IA (TERMINÉE)
 - [x] Structure Python (venv 3.13, requirements minimal, config .env)
-- [x] Fetcher RSS multi-sources — **33 sources mondiales** round-robin anti-biais
+- [x] Fetcher RSS multi-sources — **46 sources mondiales** round-robin anti-biais
 - [x] Déduplication via SQLite local (UNIQUE constraint + IntegrityError)
 - [x] Client Ollama → `qwen3:32b` (Gemma 4 écarté après échec tests)
 - [x] Prompt système enrichi — analyse duale éthique + 7 référentiels + cadre 4D
@@ -146,31 +155,33 @@ Pipeline :
 - [x] Système `last_run.json` pour rattrapage
 
 ### ✅ Phase 2 — Déclenchement automatique (TERMINÉE)
-- [x] Plist `launchd` : **3×/jour (08:00, 14:00, 20:00 local)** + RunAtLoad
+- [x] Plist `launchd` : **3×/jour (08:00, 14:00, 17:00 local)** + RunAtLoad
 - [x] Script shell `run.sh` (active venv → python main.py → log horodaté)
 - [x] Commande bureau cliquable `~/Desktop/CARBON WORLD - Lancer.command`
 - [x] `MIN_HOURS_BETWEEN_RUNS=5` protège contre double-runs
 - [x] Installation script : `bash install.sh` + `uninstall.sh`
 - [x] Service chargé et testé en conditions réelles
 
-### ⏳ Phase 3 — Frontend `carbon-token.xyz` (à démarrer)
-- [ ] Stack : Next.js **sur Vercel** (Cyril l'utilise déjà)
-- [ ] Source des données : à décider entre :
-  - Export JSON depuis SQLite → GitHub → Vercel lit à chaque build
-  - Migration SQLite → Turso (cloud) → Next.js fetch au runtime
-  - Tunnel Cloudflare depuis le Mac → API locale exposée
-- [ ] Page publique : liste des décisions (BURN/MINT) avec détails
-- [ ] Section "Pourquoi" : ethical_synthesis, aspects positifs/négatifs, SDGs touchés
-- [ ] Graph supply CBWD dans le temps
-- [ ] Lien vers chaque tx Solana Explorer (phase 4)
-- [ ] Bilingue EN/FR
+### ✅ Phase 3 — Frontend (TERMINÉE)
+- [x] Stack : Next.js 16 + Tailwind CSS v4 + TypeScript sur **Vercel**
+- [x] Design : **Lunaris Dark** (fond #111111, accent orange #FF8400, JetBrains Mono)
+- [x] Source données : JSON export auto (`worker/exporter.py` → `web/data/export.json`)
+- [x] Dashboard financier : ticker bar, supply chart SVG, donut breakdown, event log table, live ticker
+- [x] Page `/event/[id]` : détail événement + justification éthique + lien Solana Explorer
+- [x] Page `/about` : explication du système, 7 référentiels, cadre 4D
+- [x] Page `/sources` : liste des 46 sources avec région, catégorie, langue, statut
+- [x] Repo GitHub : `https://github.com/NeousAxis/CARBON-WORLD` (privé)
+- [x] Domaine : `carbon-token.xyz` (acheté, pas encore configuré dans Vercel)
 
-### ⏳ Phase 4 — Intégration Solana (mint/burn réel)
-- [ ] Lib Python `solders` ou `solana-py`
-- [ ] Wallet signer (clé privée chiffrée dans `.env`)
-- [ ] Exécution BURN → transfert treasury → wallet unique dérivé → burn
-- [ ] Exécution MINT → mintTo treasury
-- [ ] Écriture `tx_hash` réel dans SQLite + sur Solana Explorer
+### ✅ Phase 4 — Intégration Solana (TERMINÉE sur devnet)
+- [x] Lib Python `solana` (0.36.11) + `solders` (0.27.1)
+- [x] Module `worker/solana_executor.py` : mint_to + burn via SPL Token instructions manuelles
+- [x] Wallet signer : `~/.config/solana/id.json` → `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
+- [x] Ce wallet = **mint authority** du token CBWD sur devnet
+- [x] MINT testé : `35GDHHJ...` ✅
+- [x] BURN testé : `2LewaQi...` ✅
+- [x] Writer intégré : après chaque save en DB, exécute la tx Solana et écrit le `tx_hash`
+- [x] `db.update_tx_hash()` pour enregistrer le hash après confirmation
 
 ### ⏳ Phase 5 — Mainnet + VPS
 - [ ] Recréation mint sur mainnet
