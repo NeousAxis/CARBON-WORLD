@@ -62,11 +62,11 @@ export default function RootLayout({
               </Link>
               <Link
                 href="/review"
-                className="text-xs font-medium hover:opacity-80"
-                style={{ color: "#666666" }}
-                title="Admin review queue"
+                className="text-sm font-medium hover:opacity-80"
+                style={{ color: "#FF8400" }}
+                title="Human review queue"
               >
-                ·
+                Review
               </Link>
             </div>
           </nav>
