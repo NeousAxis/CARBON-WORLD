@@ -36,7 +36,7 @@ else:  # mainnet
     MINT_ADDRESS = Pubkey.from_string("Ewd57GaqZHx8xN7roqqEr6wz6RGxticPVaWFZneMncLm")
     TREASURY_ATA = Pubkey.from_string("DZnTxVL5qo7aG8eEUMdLc5i2Ji9S46zZcGDBk2ha3PTq")
 
-KEYPAIR_PATH = Path.home() / ".config" / "solana" / "cbwd.json"
+KEYPAIR_PATH = Path.home() / ".config" / "solana" / "id.json"
 TOKEN_PROGRAM_ID = Pubkey.from_string("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA")
 DECIMALS = 6
 
