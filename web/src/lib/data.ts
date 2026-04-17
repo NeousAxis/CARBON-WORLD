@@ -1,39 +1,11 @@
 import fs from "fs";
 import path from "path";
 
-// --- Types ---
+// Re-export shared types from the client-safe types module
+export type { CarbonEvent, ExportData, Stats } from "@/lib/types";
+import type { CarbonEvent, ExportData, Stats } from "@/lib/types";
 
-export interface CarbonEvent {
-  id: number;
-  event_title: string;
-  event_url: string;
-  event_source: string;
-  decision: "BURN" | "MINT" | "NEUTRAL";
-  amount_crbn: number;
-  final_score: number;
-  confidence: number;
-  justification: string;
-  tx_hash: string | null;
-  created_at: string;
-}
-
-export interface ExportData {
-  generated_at: string;
-  total_events: number;
-  total_burned: number;
-  total_minted: number;
-  events: CarbonEvent[];
-}
-
-export interface Stats {
-  totalEvents: number;
-  totalBurned: number;
-  totalMinted: number;
-  netSupplyChange: number;
-  generatedAt: string;
-}
-
-// --- Data loading (build-time only, server components) ---
+// --- Data loading (server components only — uses fs/path) ---
 
 function loadExport(): ExportData {
   const filePath = path.join(process.cwd(), "data", "export.json");
@@ -60,7 +32,7 @@ export function getStats(): Stats {
   };
 }
 
-// --- Formatting helpers ---
+// --- Formatting helpers (pure functions — safe in any context) ---
 
 export function formatAmount(raw: number): string {
   const millions = raw / 1_000_000;

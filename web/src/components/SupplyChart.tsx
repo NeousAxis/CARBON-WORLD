@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { CarbonEvent } from "@/lib/data";
+import type { CarbonEvent } from "@/lib/types";
 
 interface ChartPoint {
   x: number;
@@ -48,8 +48,9 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     );
   }
 
+  // Build cumulative series
   let cumulative = 0;
-  const dataPoints: { event: CarbonEvent; cumulative: number }[] = sorted.map(
+  const rawPoints: { event: CarbonEvent; cumulative: number }[] = sorted.map(
     (event) => {
       if (event.decision === "MINT") {
         cumulative += event.amount_crbn;
@@ -59,6 +60,25 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
       return { event, cumulative };
     }
   );
+
+  // Prepend a synthetic genesis point when there are fewer than 2 real points
+  // so the chart always renders a visible line.
+  const dataPoints =
+    rawPoints.length < 2
+      ? [
+          {
+            event: {
+              ...rawPoints[0].event,
+              // Shift timestamp 1 hour before first real event
+              created_at: new Date(
+                new Date(rawPoints[0].event.created_at).getTime() - 3_600_000
+              ).toISOString(),
+            },
+            cumulative: 0,
+          },
+          ...rawPoints,
+        ]
+      : rawPoints;
 
   // Chart dimensions
   const width = 900;
