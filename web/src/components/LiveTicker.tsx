@@ -90,8 +90,9 @@ export function LiveTicker({
     return () => clearTimeout(timer);
   }, [newEventIds]);
 
-  // Duplicate events for seamless looping
-  const doubled = [...events, ...events];
+  // Duplicate events for seamless looping — only when enough items to make scrolling sensible.
+  // With a small event array, duplication just shows the same items twice which looks buggy.
+  const doubled = events.length >= 10 ? [...events, ...events] : events;
 
   return (
     <div
