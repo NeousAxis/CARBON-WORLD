@@ -282,11 +282,6 @@ function PasskeyLoginUI({ onSuccess }: { onSuccess: () => void }) {
             {errorMsg}
           </p>
         )}
-
-        <p className="mt-4 text-xs" style={{ color: "#666" }}>
-          Uses your device&apos;s built-in authenticator (Touch ID / Face ID / Windows Hello).
-          No password required.
-        </p>
       </div>
     </div>
   );
