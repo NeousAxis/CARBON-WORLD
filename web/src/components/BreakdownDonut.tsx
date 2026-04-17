@@ -135,17 +135,29 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
         {/* Donut */}
         <div className="shrink-0">
           <svg width={180} height={180} viewBox="0 0 240 240">
-            {arcs.map((arc, i) => (
-              <DonutArc
-                key={i}
+            {arcs.length === 1 ? (
+              // Single 100% segment — SVG arc path is degenerate at 360°, use ring
+              <circle
                 cx={cx}
                 cy={cy}
-                r={r}
-                startAngle={arc.start}
-                endAngle={arc.end}
-                color={arc.color}
+                r={r * 0.8}
+                fill="none"
+                stroke={arcs[0].color}
+                strokeWidth={r * 0.4}
               />
-            ))}
+            ) : (
+              arcs.map((arc, i) => (
+                <DonutArc
+                  key={i}
+                  cx={cx}
+                  cy={cy}
+                  r={r}
+                  startAngle={arc.start}
+                  endAngle={arc.end}
+                  color={arc.color}
+                />
+              ))
+            )}
             {/* Center text */}
             <text
               x={cx}
