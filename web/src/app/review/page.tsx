@@ -1,7 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
+import { startAuthentication } from "@simplewebauthn/browser";
+
+// ---------------------------------------------------------------------------
+// Types (matching the review_queue.json shape)
+// ---------------------------------------------------------------------------
 
 interface ReviewItem {
   id: number;
@@ -24,81 +29,9 @@ interface ReviewData {
   reviews: ReviewItem[];
 }
 
-const STORAGE_KEY = "cbwd_review_auth";
-// Simple obfuscated check — not cryptographic security, just keeps casual visitors out.
-// Password: carbon-world-admin-2026
-const PASSWORD_HASH = "carbon-world-admin-2026";
-
-function AuthGate({ onAuth }: { onAuth: () => void }) {
-  const [pw, setPw] = useState("");
-  const [err, setErr] = useState(false);
-
-  return (
-    <div className="min-h-[60vh] flex items-center justify-center px-4">
-      <div
-        className="w-full max-w-md p-8"
-        style={{
-          backgroundColor: "#1A1A1A",
-          border: "1px solid #2E2E2E",
-        }}
-      >
-        <h1
-          className="text-2xl font-bold mb-2"
-          style={{ color: "#FF8400", fontFamily: "'JetBrains Mono', monospace" }}
-        >
-          ADMIN AREA
-        </h1>
-        <p className="text-sm mb-6" style={{ color: "#B8B9B6" }}>
-          Human review queue — restricted access.
-        </p>
-        <input
-          type="password"
-          value={pw}
-          onChange={(e) => setPw(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              if (pw === PASSWORD_HASH) {
-                localStorage.setItem(STORAGE_KEY, "ok");
-                onAuth();
-              } else {
-                setErr(true);
-              }
-            }
-          }}
-          placeholder="Password"
-          className="w-full px-3 py-2 font-mono text-sm"
-          style={{
-            backgroundColor: "#111111",
-            border: "1px solid #2E2E2E",
-            color: "#FFFFFF",
-          }}
-        />
-        <button
-          onClick={() => {
-            if (pw === PASSWORD_HASH) {
-              localStorage.setItem(STORAGE_KEY, "ok");
-              onAuth();
-            } else {
-              setErr(true);
-            }
-          }}
-          className="mt-3 w-full py-2 font-bold text-sm"
-          style={{
-            backgroundColor: "#FF8400",
-            color: "#111111",
-          }}
-        >
-          UNLOCK
-        </button>
-        {err && (
-          <p className="mt-3 text-sm" style={{ color: "#FF5C33" }}>
-            Wrong password.
-          </p>
-        )}
-      </div>
-    </div>
-  );
-}
+// ---------------------------------------------------------------------------
+// ReviewCard — unchanged design from the original password-gated version
+// ---------------------------------------------------------------------------
 
 function ReviewCard({ item }: { item: ReviewItem }) {
   const [expanded, setExpanded] = useState(false);
@@ -135,10 +68,7 @@ function ReviewCard({ item }: { item: ReviewItem }) {
             <span>•</span>
             <span>{new Date(item.created_at).toLocaleString()}</span>
           </div>
-          <h3
-            className="text-base font-medium mb-2"
-            style={{ color: "#FFFFFF" }}
-          >
+          <h3 className="text-base font-medium mb-2" style={{ color: "#FFFFFF" }}>
             {item.event_title}
           </h3>
           <a
@@ -162,7 +92,7 @@ function ReviewCard({ item }: { item: ReviewItem }) {
         </span>
       </div>
 
-      {/* Sentinel concern — the reason it was flagged */}
+      {/* Sentinel concern */}
       <div
         className="p-3 mb-3 text-sm"
         style={{
@@ -260,50 +190,186 @@ function ReviewCard({ item }: { item: ReviewItem }) {
   );
 }
 
-export default function ReviewPage() {
-  const [authed, setAuthed] = useState(false);
-  const [data, setData] = useState<ReviewData | null>(null);
-  const [loading, setLoading] = useState(true);
+// ---------------------------------------------------------------------------
+// PasskeyLoginUI
+// ---------------------------------------------------------------------------
 
+function PasskeyLoginUI({ onSuccess }: { onSuccess: () => void }) {
+  const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleLogin() {
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      // 1. Get challenge from server
+      const challengeRes = await fetch("/api/auth/login/challenge", {
+        method: "POST",
+      });
+
+      if (!challengeRes.ok) {
+        const err = await challengeRes.json().catch(() => ({}));
+        throw new Error((err as { error?: string }).error ?? "Failed to get challenge");
+      }
+
+      const options = await challengeRes.json();
+
+      // 2. Invoke browser WebAuthn (Touch ID / Face ID / Windows Hello)
+      const authResponse = await startAuthentication({ optionsJSON: options });
+
+      // 3. Verify with server
+      const verifyRes = await fetch("/api/auth/login/verify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ response: authResponse }),
+      });
+
+      if (!verifyRes.ok) {
+        const err = await verifyRes.json().catch(() => ({}));
+        throw new Error((err as { error?: string }).error ?? "Verification failed");
+      }
+
+      // Success — session cookie is now set
+      onSuccess();
+    } catch (err) {
+      // User may have cancelled the authenticator dialog — handle gracefully
+      const msg = err instanceof Error ? err.message : String(err);
+      if (msg.toLowerCase().includes("cancel") || msg.toLowerCase().includes("abort")) {
+        setErrorMsg("Authentication cancelled.");
+      } else {
+        setErrorMsg(msg);
+      }
+      setStatus("error");
+    }
+  }
+
+  return (
+    <div className="min-h-[60vh] flex items-center justify-center px-4">
+      <div
+        className="w-full max-w-md p-8"
+        style={{
+          backgroundColor: "#1A1A1A",
+          border: "1px solid #2E2E2E",
+        }}
+      >
+        <h1
+          className="text-2xl font-bold mb-2"
+          style={{ color: "#FF8400", fontFamily: "'JetBrains Mono', monospace" }}
+        >
+          ADMIN AREA
+        </h1>
+        <p className="text-sm mb-6" style={{ color: "#B8B9B6" }}>
+          Human review queue — restricted access.
+        </p>
+
+        <button
+          onClick={handleLogin}
+          disabled={status === "loading"}
+          className="w-full py-3 font-bold text-sm disabled:opacity-50"
+          style={{
+            backgroundColor: "#FF8400",
+            color: "#111111",
+            fontFamily: "'JetBrains Mono', monospace",
+            cursor: status === "loading" ? "wait" : "pointer",
+          }}
+        >
+          {status === "loading" ? "Waiting for authenticator…" : "Sign in with Passkey"}
+        </button>
+
+        {status === "error" && (
+          <p className="mt-3 text-sm" style={{ color: "#FF5C33" }}>
+            {errorMsg}
+          </p>
+        )}
+
+        <p className="mt-4 text-xs" style={{ color: "#666" }}>
+          Uses your device&apos;s built-in authenticator (Touch ID / Face ID / Windows Hello).
+          No password required.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Main ReviewPage
+// ---------------------------------------------------------------------------
+
+type AuthState = "checking" | "unauthenticated" | "authenticated";
+
+export default function ReviewPage() {
+  const [authState, setAuthState] = useState<AuthState>("checking");
+  const [data, setData] = useState<ReviewData | null>(null);
+  const [queueLoading, setQueueLoading] = useState(false);
+  const [queueError, setQueueError] = useState("");
+
+  // Check session on mount
   useEffect(() => {
-    if (localStorage.getItem(STORAGE_KEY) === "ok") {
-      setAuthed(true);
+    fetch("/api/auth/me")
+      .then((r) => {
+        if (r.ok) {
+          setAuthState("authenticated");
+        } else {
+          setAuthState("unauthenticated");
+        }
+      })
+      .catch(() => setAuthState("unauthenticated"));
+  }, []);
+
+  // Fetch queue when authenticated
+  const fetchQueue = useCallback(async () => {
+    setQueueLoading(true);
+    setQueueError("");
+    try {
+      const r = await fetch("/api/review/queue");
+      if (r.status === 401) {
+        setAuthState("unauthenticated");
+        return;
+      }
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const d: ReviewData = await r.json();
+      setData(d);
+    } catch (err) {
+      setQueueError(err instanceof Error ? err.message : "Failed to load queue");
+    } finally {
+      setQueueLoading(false);
     }
   }, []);
 
   useEffect(() => {
-    if (!authed) return;
-    fetch("/data/review_queue.json")
-      .then((r) => r.json())
-      .then((d: ReviewData) => {
-        setData(d);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, [authed]);
+    if (authState === "authenticated") {
+      fetchQueue();
+    }
+  }, [authState, fetchQueue]);
 
-  if (!authed) {
-    return <AuthGate onAuth={() => setAuthed(true)} />;
+  async function handleLogout() {
+    await fetch("/api/auth/logout", { method: "POST" });
+    setAuthState("unauthenticated");
+    setData(null);
+  }
+
+  // ── Render ─────────────────────────────────────────────────────────────
+
+  if (authState === "checking") {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center">
+        <p style={{ color: "#B8B9B6" }}>Checking session…</p>
+      </div>
+    );
+  }
+
+  if (authState === "unauthenticated") {
+    return <PasskeyLoginUI onSuccess={() => setAuthState("authenticated")} />;
   }
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
       <div className="flex items-center justify-between mb-6">
-        <Link
-          href="/"
-          className="text-sm hover:opacity-80"
-          style={{ color: "#FF8400" }}
-        >
+        <Link href="/" className="text-sm hover:opacity-80" style={{ color: "#FF8400" }}>
           ← Back to dashboard
         </Link>
-        <button
-          onClick={() => {
-            localStorage.removeItem(STORAGE_KEY);
-            setAuthed(false);
-          }}
-          className="text-xs"
-          style={{ color: "#B8B9B6" }}
-        >
+        <button onClick={handleLogout} className="text-xs hover:opacity-80" style={{ color: "#B8B9B6" }}>
           Sign out
         </button>
       </div>
@@ -319,9 +385,18 @@ export default function ReviewPage() {
         decision has NOT been executed on-chain — they wait for your review.
       </p>
 
-      {loading && <div style={{ color: "#B8B9B6" }}>Loading…</div>}
+      {queueLoading && <div style={{ color: "#B8B9B6" }}>Loading…</div>}
 
-      {!loading && data && data.total_pending === 0 && (
+      {queueError && (
+        <div
+          className="p-4 mb-4"
+          style={{ backgroundColor: "#24100B", border: "1px solid #FF5C33", color: "#FF5C33" }}
+        >
+          Error loading queue: {queueError}
+        </div>
+      )}
+
+      {!queueLoading && data && data.total_pending === 0 && (
         <div
           className="p-6 text-center"
           style={{ backgroundColor: "#1A1A1A", border: "1px solid #2E2E2E" }}
@@ -335,20 +410,15 @@ export default function ReviewPage() {
         </div>
       )}
 
-      {!loading && data && data.total_pending > 0 && (
+      {!queueLoading && data && data.total_pending > 0 && (
         <>
           <div
             className="mb-6 p-4 flex items-center gap-4"
             style={{ backgroundColor: "#1A1A1A", border: "1px solid #2E2E2E" }}
           >
             <div>
-              <div className="text-xs" style={{ color: "#B8B9B6" }}>
-                PENDING
-              </div>
-              <div
-                className="text-2xl font-bold font-mono"
-                style={{ color: "#FF8400" }}
-              >
+              <div className="text-xs" style={{ color: "#B8B9B6" }}>PENDING</div>
+              <div className="text-2xl font-bold font-mono" style={{ color: "#FF8400" }}>
                 {data.total_pending}
               </div>
             </div>
@@ -361,8 +431,8 @@ export default function ReviewPage() {
             </div>
           </div>
 
-          {data.reviews.map((r) => (
-            <ReviewCard key={r.id} item={r} />
+          {data.reviews.map((item) => (
+            <ReviewCard key={item.id} item={item} />
           ))}
         </>
       )}
