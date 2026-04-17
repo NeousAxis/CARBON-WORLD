@@ -1,6 +1,6 @@
 "use client";
 
-import type { CarbonEvent } from "@/lib/data";
+import type { CarbonEvent } from "@/lib/types";
 
 function formatM(raw: number): string {
   const m = raw / 1_000_000;

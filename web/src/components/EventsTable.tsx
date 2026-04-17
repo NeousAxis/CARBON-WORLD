@@ -1,6 +1,6 @@
 import Link from "next/link";
-import type { CarbonEvent } from "@/lib/data";
-import { formatAmount } from "@/lib/data";
+import type { CarbonEvent } from "@/lib/types";
+import { formatAmount } from "@/lib/format";
 
 function formatCompactDate(iso: string): string {
   const d = new Date(iso);

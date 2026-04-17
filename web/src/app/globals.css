@@ -25,3 +25,33 @@ body {
 .font-mono, .tabular-nums {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
+
+/* Flash animation for new events in LiveTicker */
+@keyframes flashOrange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 132, 0, 0.0);
+    outline: 1px solid rgba(255, 132, 0, 0.0);
+  }
+  10% {
+    box-shadow: 0 0 20px 4px rgba(255, 132, 0, 0.7);
+    outline: 1px solid rgba(255, 132, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 132, 0, 0.0);
+    outline: 1px solid rgba(255, 132, 0, 0.0);
+  }
+}
+
+.animate-flash {
+  animation: flashOrange 3s ease-out forwards;
+}
+
+/* Pulse animation for the LIVE dot */
+@keyframes livePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.8; }
+}
+
+.animate-live-pulse {
+  animation: livePulse 1.5s ease-in-out infinite;
+}
