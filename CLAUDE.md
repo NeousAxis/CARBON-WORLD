@@ -18,10 +18,13 @@
   - User `carbon` (sudo NOPASSWD), Python 3.12 + venv
   - Deploy key GitHub `vps-hetzner-writer` (read-write)
   - Cron 15 min : `~/CARBON-WORLD/launcher/run_vps.sh`
-- **Frontend** : Next.js 16 sur Vercel, passkey auth /review (WebAuthn)
-  - URL prod : `web-neousaxis-neous-axis-projects.vercel.app`
-  - Passkey registré (Touch ID), credential en env var `PASSKEY_CREDENTIAL`
-- **Domaine** : `carbon-token.xyz` (acheté, pas encore pointé vers Vercel)
+- **Frontend** : Next.js 16 **hébergé sur le VPS**, passkey auth /review (WebAuthn)
+  - Service systemd : `carbon-web.service` → `next-server` sur `:3000`
+  - Reverse proxy : **Caddy** (80/443) avec certificat Let's Encrypt auto
+  - URL prod : `https://carbon-token.xyz` (A record Infomaniak → 157.90.250.40)
+  - **Vercel désactivé** (2026-04-17) — GitHub integration débranchée, plus aucun deploy cloud
+  - Passkey registré (Touch ID), env vars `SESSION_SECRET` / `PASSKEY_CREDENTIAL` / `RP_ID=carbon-token.xyz` / `RP_ORIGIN=https://carbon-token.xyz` côté VPS
+- **Domaine** : `carbon-token.xyz` → VPS (A 157.90.250.40, AAAA IPv6). `www` CNAME vercel-dns reliquat à nettoyer.
 - **Livre blanc** : `~/Library/Mobile Documents/com~apple~CloudDocs/CARBON-TOKEN/`
 - **Repo GitHub** : `https://github.com/NeousAxis/CARBON-WORLD` (PUBLIC depuis 2026-04-17)
 
@@ -29,7 +32,8 @@
 - Worker **Python natif** (plus de n8n, plus de Ollama local)
 - IA **cloud Groq** : `qwen/qwen3-32b` via API (classifier + analyst) + `llama-3.3-70b-versatile` (analyst B)
 - Déclenchement **cron 15 min** sur VPS Hetzner (plus de launchd)
-- Data : SQLite local sur VPS + export JSON committé sur GitHub main → Vercel redéploie
+- Data : SQLite local sur VPS + export JSON committé sur GitHub main
+- Le cron VPS détecte les changements dans `web/` (hors `web/data/`) et rebuild Next.js + `systemctl restart carbon-web` automatiquement
 
 ---
 
@@ -123,7 +127,7 @@ Pipeline (8 phases) :
        ↓
   Solana mainnet (mint authority signer)
        ↓
-  git push → GitHub → Vercel redeploy → /api/review/queue (auth-gated)
+  git push → GitHub → VPS cron rebuild Next.js + restart carbon-web → /api/review/queue (auth-gated)
 ```
 
 **Temps estimé** : ~3 min/run (Groq cloud, pas de GPU local)
@@ -168,16 +172,19 @@ Pipeline (8 phases) :
 - [x] Installation script : `bash install.sh` + `uninstall.sh`
 - [x] Service chargé et testé en conditions réelles
 
-### ✅ Phase 3 — Frontend (TERMINÉE)
-- [x] Stack : Next.js 16 + Tailwind CSS v4 + TypeScript sur **Vercel**
+### ✅ Phase 3 — Frontend (TERMINÉE, auto-hébergé sur VPS depuis 2026-04-17)
+- [x] Stack : Next.js 16 + Tailwind CSS v4 + TypeScript
+- [x] Hébergement prod : **VPS Hetzner** (Caddy reverse proxy + systemd `carbon-web.service` sur :3000)
+- [x] Certificat TLS : Let's Encrypt via Caddy (renewal auto)
 - [x] Design : **Lunaris Dark** (fond #111111, accent orange #FF8400, JetBrains Mono)
 - [x] Source données : JSON export auto (`worker/exporter.py` → `web/data/export.json`)
 - [x] Dashboard financier : ticker bar, supply chart SVG, donut breakdown, event log table, live ticker
 - [x] Page `/event/[id]` : détail événement + justification éthique + lien Solana Explorer
 - [x] Page `/about` : explication du système, 7 référentiels, cadre 4D
 - [x] Page `/sources` : liste des 46 sources avec région, catégorie, langue, statut
-- [x] Repo GitHub : `https://github.com/NeousAxis/CARBON-WORLD` (privé)
-- [x] Domaine : `carbon-token.xyz` (acheté, pas encore configuré dans Vercel)
+- [x] Repo GitHub : `https://github.com/NeousAxis/CARBON-WORLD` (public)
+- [x] Domaine : `carbon-token.xyz` A → 157.90.250.40, AAAA → 2a01:4f8:c013:7043::1
+- [x] Vercel désactivé (2026-04-17) — GitHub integration débranchée
 
 ### ✅ Phase 4 — Intégration Solana (TERMINÉE sur devnet)
 - [x] Lib Python `solana` (0.36.11) + `solders` (0.27.1)
@@ -190,11 +197,13 @@ Pipeline (8 phases) :
 - [x] `db.update_tx_hash()` pour enregistrer le hash après confirmation
 
 ### ⏳ Phase 5 — Mainnet + VPS
-- [ ] Recréation mint sur mainnet
-- [ ] Liquidité initiale DEX (Raydium)
-- [ ] Migration worker → VPS Hetzner
+- [x] Recréation mint sur mainnet (2026-04-16)
+- [x] Migration worker → VPS Hetzner (2026-04-17)
+- [x] Migration frontend → VPS Hetzner (2026-04-17)
+- [ ] Liquidité initiale DEX (Raydium) ← next step produit
 - [ ] Monitoring (Uptime Kuma ou similaire)
 - [ ] Ajout Twitter/X via RSSHub Docker OU X API Basic
+- [ ] Fix rate-limit Groq 429 (tier free saturé, prod retourne souvent 0 event)
 
 ---
 
@@ -252,14 +261,20 @@ ssh carbon@157.90.250.40 "crontab -l"
 # --- GITHUB ACTIONS (fallback manuel) ---
 # Si VPS down, déclencher pipeline depuis UI GitHub : Actions → CARBON WORLD Pipeline → Run workflow
 
-# --- FRONTEND VERCEL ---
-# Redéployer manuellement
-cd ~/CARBON-WORLD/web && npx vercel --prod --yes --force
+# --- FRONTEND VPS ---
+# Rebuild manuel du front (normalement fait auto par run_vps.sh si web/ change)
+ssh carbon@157.90.250.40 "cd ~/CARBON-WORLD/web && npm run build && sudo systemctl restart carbon-web"
+
+# Logs du service web
+ssh carbon@157.90.250.40 "sudo journalctl -u carbon-web -n 50 --no-pager"
+
+# Logs Caddy (reverse proxy)
+ssh carbon@157.90.250.40 "sudo journalctl -u caddy -n 50 --no-pager"
 ```
 
 ### Secrets / credentials
-- `~/CARBON-WORLD/.env` (local Mac) — Groq API key, etc.
-- `~/.config/solana/id.json` (local Mac + VPS) — mint authority keypair
-- Vercel env vars (prod) : `SESSION_SECRET`, `PASSKEY_CREDENTIAL`, `RP_ID`, `RP_ORIGIN`
+- `~/CARBON-WORLD/.env` (local Mac + VPS) — Groq API key, etc.
+- `~/.config/solana/id.json` (local Mac + VPS) — mint authority keypair `2LJspF…`
+- VPS env vars passkey (dans l'unit systemd `carbon-web.service` ou `~/CARBON-WORLD/web/.env.production`) : `SESSION_SECRET`, `PASSKEY_CREDENTIAL`, `RP_ID=carbon-token.xyz`, `RP_ORIGIN=https://carbon-token.xyz`
 - GitHub Secrets (fallback) : `GROQ_API_KEY`, `SOLANA_KEYPAIR`
 - VPS SSH key : `~/.ssh/github_deploy` (deploy key write access)

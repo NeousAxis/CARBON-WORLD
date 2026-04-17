@@ -169,6 +169,43 @@
 - Projet isolé des autres projets Hetzner (billing, API token, firewalls séparés)
 - SSH key ed25519 de Cyril ajoutée au projet (nom : "Macbook")
 
+### 2026-04-17 — Session fix pending + migration frontend → VPS ✅
+Contexte : Cyril voit 20.9M CBWD "pending" sur le dashboard, ticker illisible, pas de favicon. Analyse + fix complet.
+
+**Cause racine des 20.9M pending** :
+- Code `solana_executor.py` chargeait le keypair depuis `~/.config/solana/cbwd.json`
+- Mais la convention documentée (CLAUDE.md + MEMORY.md) = `~/.config/solana/id.json`
+- Sur le VPS, `id.json` existait mais contenait un **autre wallet** (`ARKd2g…`, pas le mint authority)
+- `cbwd.json` n'existait pas sur le VPS → chaque run loggait `Keypair file not found` → `tx_hash=None` → events marqués pending
+- Fix : contenu du `cbwd.json` local (authority `2LJspF…`) copié dans `~/.config/solana/id.json` sur VPS, `solana_executor.py` reverted sur `id.json` (convention docs respectée)
+
+**Retro-execute des pending** :
+- 21 events pending dans DB locale Mac + 2 pending dans DB VPS (sans tx) → tous exécutés sur Solana mainnet via script one-shot
+- DB Mac mergée dans DB VPS (23 events total, dedup par `event_url`), VPS est désormais source de vérité unique
+
+**Révélation architecture (loupée par Claude au début)** :
+- `carbon-token.xyz` pointe A 157.90.250.40 → VPS, **pas Vercel**
+- Le site tourne déjà sur le VPS via Caddy (80/443) + systemd `carbon-web.service` + `next-server` sur :3000
+- Vercel servait juste des deploys cloud via `web-neousaxis-…vercel.app` mais **inutilisés en prod**
+- Claude a initialement poussé des deploys Vercel depuis le laptop → inutiles, créaient de la confusion
+- **Action** : GitHub integration Vercel **débranchée** via API, credential Vercel supprimé du VPS
+
+**Améliorations front livrées** :
+- Favicon : `favicon.ico` 32×32 BMP-encoded (le PNG-in-ICO précédent faisait échouer le build Next → fallback triangle Vercel)
+- Ticker RSS : animation marquee 240s → 2400s (10× plus lent, lisible avec 200 items)
+- `icon.png` 512×512 + `apple-icon.png` 180×180 ajoutés
+- `middleware.ts` ajouté : redirige `*.vercel.app` → `carbon-token.xyz` (308) — désormais moot mais resté par sécurité
+
+**Automatisation rebuild** :
+- `launcher/run_vps.sh` patché : détecte tout changement dans `web/` (hors `web/data/`) entre git reset before/after, déclenche `npm install && npm run build && sudo systemctl restart carbon-web` automatiquement
+- Tout push GitHub touchant le front est donc propagé au VPS dans les 15 min
+
+**État final** :
+- 23 events, 23 on-chain, 0 pending
+- 5,950,000 CBWD burned, 29,825,000 CBWD minted (diff +23.9M, cohérent avec `net_cumulative` affiché)
+- Site carbon-token.xyz = VPS Caddy + Next.js, favicon CBWD visible, ticker lisible
+- Plus aucune dépendance Vercel pour la prod
+
 ## 📌 Prochaine étape immédiate
 1. ~~Pipeline multi-agents~~ → **FAIT** ✅
 2. ~~Phase 3 frontend~~ → **FAIT** ✅
@@ -177,10 +214,16 @@
 5. ~~Passkey auth /review~~ → **FAIT** ✅ (2026-04-17)
 6. ~~Migration pipeline → VPS Hetzner~~ → **FAIT** ✅ (2026-04-17)
 7. ~~Repo public~~ → **FAIT** ✅ (2026-04-17)
-8. **Niveau 1 live UX** : frontend polling + animations compteurs + flash new events
-9. Fix chart genesis (ligne 0 → 1.3M cohérente)
-10. Configurer le domaine `carbon-token.xyz` dans Vercel (DNS)
-11. Phase 5 : liquidité DEX mainnet
+8. ~~Migration frontend → VPS (Caddy + systemd)~~ → **FAIT** ✅ (2026-04-17)
+9. ~~Fix 20.9M CBWD pending (keypair mismatch VPS)~~ → **FAIT** ✅ (2026-04-17, 21 txs retro-exec)
+10. ~~Vercel débranché~~ → **FAIT** ✅ (2026-04-17)
+11. **Fix Groq rate-limit 429** : tier free saturé, les logs cron récents montrent ~50% d'échecs → passer au tier payant (~$5/mois) OU rallonger les délais OU failover provider
+12. **Liquidité DEX Raydium** : next step produit (Phase 5) — sans pool, CBWD n'a pas de prix
+13. Niveau 1 live UX : frontend polling + animations compteurs + flash new events
+14. Fix chart genesis (ligne 0 → 1.3M incohérente au démarrage)
+15. Monitoring VPS (Uptime Kuma ou healthcheck Caddy → Telegram)
+16. Twitter/X via RSSHub Docker self-hosted (€0)
+17. Nettoyer DNS : supprimer CNAME `www.carbon-token.xyz` → vercel-dns (reliquat)
 
 **Ce qui reste avant mainnet** :
 1. Premier vrai run production (15-20 min) — à faire demain
