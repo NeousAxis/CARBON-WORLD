@@ -134,14 +134,53 @@
 - TX update URI : `4fW6ztbp...`
 - Logo affiché dans la navbar du site
 
+### 2026-04-17 — Passkey (WebAuthn) auth + API sécurisée pour /review ✅
+- Remplacement du mot de passe localStorage hardcodé par **authentification WebAuthn / Apple Passkeys**
+- Compatible Apple Mots de passe (iCloud Keychain), Touch ID / Face ID
+- Deps ajoutées : `@simplewebauthn/server@13`, `@simplewebauthn/browser@13`, `jose@5`
+- API routes : `/api/auth/{register,login,logout,me}/{challenge,verify}`, `/api/review/queue`
+- Challenges en cookies signés (stateless, 5 min TTL)
+- Session JWT HS256 httpOnly, 24h TTL
+- Credential stocké en env var `PASSKEY_CREDENTIAL` (base64 JSON) en prod
+- Bootstrap : `/review/setup?secret=XXX` gated par `SETUP_SECRET` (à supprimer après registration)
+- Data `review_queue.json` maintenant servie uniquement via API auth-gated (plus de fetch direct)
+- **Bug fix** : `echo | vercel env add` ajoute un `\n` final — remplacé par `printf` (no newline)
+- Passkey prod registré : Touch ID sur `web-neousaxis-neous-axis-projects.vercel.app`
+- Credential backup base64 : voir `.credential.json` local ou env var Vercel
+
+### 2026-04-17 — Migration GitHub Actions → VPS Hetzner ✅
+- **Serveur** : Hetzner CX23, Ubuntu 24.04, Falkenstein (DE)
+  - IPv4 : `157.90.250.40`
+  - 2 vCPU x86, 4GB RAM, 40GB SSD
+  - **Coût : €4.31/mois**
+  - Firewall : SSH 22 + HTTP 80 + HTTPS 443 + ICMP ouverts
+- **User** : `carbon` (sudo NOPASSWD), SSH key ed25519 de Cyril
+- **Setup** : Python 3.12 + venv + requirements.txt (pas besoin de 3.13)
+- **Secrets copiés** : `.env` et `~/.config/solana/id.json` via scp
+- **Deploy key GitHub** : `vps-hetzner-writer` (read-write), ed25519 généré sur le VPS
+- **Script cron** : `~/CARBON-WORLD/launcher/run_vps.sh`
+  - Pull main, run pipeline, commit + push export.json si changement
+  - Logs rotatifs (20 derniers) dans `~/CARBON-WORLD/logs/cron_*.log`
+- **Cron** : `*/15 * * * * /home/carbon/CARBON-WORLD/launcher/run_vps.sh` — **4 runs/heure**
+- **GitHub Actions schedule désactivé** dans `.github/workflows/pipeline.yml` (workflow_dispatch gardé en fallback)
+- **Repo passé en public** pour faciliter les clones publics (pas de secrets trouvés dans l'historique git)
+
+### 2026-04-17 — Nouveau projet Hetzner Cloud dédié "CARBON WORLD"
+- Projet isolé des autres projets Hetzner (billing, API token, firewalls séparés)
+- SSH key ed25519 de Cyril ajoutée au projet (nom : "Macbook")
+
 ## 📌 Prochaine étape immédiate
 1. ~~Pipeline multi-agents~~ → **FAIT** ✅
 2. ~~Phase 3 frontend~~ → **FAIT** ✅
 3. ~~Phase 4 Solana devnet~~ → **FAIT** ✅
 4. ~~Migration Groq + GitHub Actions~~ → **FAIT** ✅
-5. Configurer le domaine `carbon-token.xyz` dans Vercel (DNS)
-6. Phase 5 : mainnet + liquidité DEX
-4. Phase 4 Solana : mint/burn réels devnet puis mainnet
+5. ~~Passkey auth /review~~ → **FAIT** ✅ (2026-04-17)
+6. ~~Migration pipeline → VPS Hetzner~~ → **FAIT** ✅ (2026-04-17)
+7. ~~Repo public~~ → **FAIT** ✅ (2026-04-17)
+8. **Niveau 1 live UX** : frontend polling + animations compteurs + flash new events
+9. Fix chart genesis (ligne 0 → 1.3M cohérente)
+10. Configurer le domaine `carbon-token.xyz` dans Vercel (DNS)
+11. Phase 5 : liquidité DEX mainnet
 
 **Ce qui reste avant mainnet** :
 1. Premier vrai run production (15-20 min) — à faire demain

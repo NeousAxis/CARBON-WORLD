@@ -1,31 +1,35 @@
 # CARBON WORLD — Plan du projet
 
-> **Projet** : Token Solana (CBWD) piloté par une IA locale qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
+> **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Cyril Leger (Neous Axis)
-> **État au 2026-04-14** : Relance du projet après une première tentative ratée sur n8n.
+> **État au 2026-04-17** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public.
 
 ---
 
 ## 🎯 Contexte (NE PAS REDEMANDER)
 
 ### Ce qui existe déjà
-- **Token CBWD** créé sur **Solana devnet** :
-  - Mint : `HRqmMnbA18VgstcfjCueAuzVZEoHHbLbbu973AqmK3Fs`
-  - Treasury ATA : `2iNtuKTthWRGiDoK4VZYQJ7dC8t4d2DkR1dbLQx5QqFK`
+- **Token CBWD** sur **Solana mainnet** (migration 2026-04-16) :
   - Decimals : 6, Symbol : CBWD, Name : Carbon World
-- **Supabase projet** actif : `https://drmlsquvwybixocjwdud.supabase.co`
-  - Table `carbon_events` (event_title, event_url, event_source, decision, amount_crbn, final_score, confidence, justification, tx_hash, created_at)
-- **Domaine** : `carbon-token.xyz` (acheté, pas encore de site)
+  - Mint authority : `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
+- **VPS Hetzner** (projet "CARBON WORLD", Falkenstein) :
+  - IPv4 : `157.90.250.40`
+  - Ubuntu 24.04, CX23 (2 vCPU / 4GB / 40GB), €4.31/mois
+  - User `carbon` (sudo NOPASSWD), Python 3.12 + venv
+  - Deploy key GitHub `vps-hetzner-writer` (read-write)
+  - Cron 15 min : `~/CARBON-WORLD/launcher/run_vps.sh`
+- **Frontend** : Next.js 16 sur Vercel, passkey auth /review (WebAuthn)
+  - URL prod : `web-neousaxis-neous-axis-projects.vercel.app`
+  - Passkey registré (Touch ID), credential en env var `PASSKEY_CREDENTIAL`
+- **Domaine** : `carbon-token.xyz` (acheté, pas encore pointé vers Vercel)
 - **Livre blanc** : `~/Library/Mobile Documents/com~apple~CloudDocs/CARBON-TOKEN/`
-- **Ancienne tentative n8n** : fonctionnait mal → abandonnée
+- **Repo GitHub** : `https://github.com/NeousAxis/CARBON-WORLD` (PUBLIC depuis 2026-04-17)
 
-### Ce qu'on refait en mieux
-- Worker **Python natif** (plus de n8n)
-- IA **locale** : `gemma4:26b` via Ollama (déjà installé, 17 GB)
-- Déclenchement **2× par jour** via `launchd` (équivalent macOS de cron)
-- **Rattrapage automatique** : si le Mac était éteint, le worker s'exécute au réveil ou au prochain lancement
-- **Commande bureau cliquable** pour relancer manuellement
-- Plus tard : migration VPS + mainnet
+### Architecture finale
+- Worker **Python natif** (plus de n8n, plus de Ollama local)
+- IA **cloud Groq** : `qwen/qwen3-32b` via API (classifier + analyst) + `llama-3.3-70b-versatile` (analyst B)
+- Déclenchement **cron 15 min** sur VPS Hetzner (plus de launchd)
+- Data : SQLite local sur VPS + export JSON committé sur GitHub main → Vercel redéploie
 
 ---
 
@@ -75,69 +79,71 @@ Pour CHAQUE événement, identification systématique des aspects positifs ET n�
 
 ---
 
-## 🏗 Architecture technique — Pipeline Multi-Agents
+## 🏗 Architecture technique — Pipeline 8 agents (mainnet)
 
 ```
-launchd (3×/jour + RunAtLoad)
-  → launcher/run.sh
-    → worker/main.py (orchestrateur)
+VPS Hetzner cron (*/15 min)
+  → launcher/run_vps.sh
+    → git pull + worker/main.py + git push export
 
-Pipeline :
+Pipeline (8 phases) :
 ┌──────────────┐
 │  COLLECTOR    │  Pure Python, 0 LLM
-│  33 sources   │  ~30s, round-robin mondial
-│  RSS + dedup  │  
+│  46 sources   │  ~30s, round-robin mondial
+│  RSS + dedup  │
 └──────┬───────┘
        ↓ raw articles
 ┌──────────────┐
-│  CLASSIFIER   │  qwen3:14b (9 GB, rapide)
-│  Triage       │  ~5-8s / article
-│  valid/invalid│  Prompt minimaliste ~500 chars
+│  CLASSIFIER   │  Groq qwen3-32b, think=false
+│  Triage       │  ~2s / article avec rate-limit 2s
+│  valid/invalid│  50 articles cap / run
 └──────┬───────┘
-       ↓ only VALID (~15-20%)
+       ↓ only VALID (~20-30%)
 ┌──────────────┐
-│  ANALYST      │  qwen3:32b (20 GB, profond)
-│  Analyse 4D   │  ~60s / article
-│  7 référentiels│ Prompt complet 6600 chars
+│  ANALYST A    │  Groq qwen3-32b (analyse 4D complète)
+│  ANALYST B    │  Groq llama-3.3-70b-versatile (lecture indépendante)
+│  dual reading │  Prompts 6600 chars, rate-limit 8s
 └──────┬───────┘
-       ↓ scored events
+       ↓ A + B verdicts merged
 ┌──────────────┐
-│  SCORER       │  Pure Python, 0 LLM
-│  Vérifie +    │  Formules + montant CBWD
-│  calcule      │  
-└──────┬───────┘
-       ↓ final events
-┌──────────────┐
-│  WRITER       │  Pure Python → SQLite
-│  Persiste     │  data/carbon.db
+│  RECONCILER   │  Arbitre les désaccords A/B
 └──────┬───────┘
        ↓
 ┌──────────────┐
-│  REPORTER     │  Pure Python (template)
-│  Résumé run   │  Stats + log structuré
+│  SENTINEL     │  Coherence check final (GPT-OSS-120B ou équivalent)
+│  anti-bug     │  Flag scale mismatch, polarity errors, etc.
+└──────┬───────┘
+       ↓ ok → Writer / flagged → review_queue
+┌──────────────┐
+│  SCORER       │  Pure Python, formules + montant CBWD
+│  WRITER       │  SQLite + Solana mainnet TX
+│  EXPORTER     │  export.json (events) + review_queue.json
+│  REPORTER     │  Résumé run, logs structurés
 └──────────────┘
        ↓
-  Solana devnet ← INTÉGRÉ (Phase 4 terminée)
+  Solana mainnet (mint authority signer)
        ↓
-  JSON export → web/data/export.json → Vercel
+  git push → GitHub → Vercel redeploy → /api/review/queue (auth-gated)
 ```
 
-**Temps estimé** : ~3 min/run
-- Collector : 30s (46 sources)
-- Classifier : 30s (25 articles × ~1s, qwen3:14b avec think=False)
-- Analyst : 1-2 min (~3-5 VALID × 30-60s, qwen3:32b)
-- Scorer + Writer + Solana TX + Export + Reporter : ~10s
+**Temps estimé** : ~3 min/run (Groq cloud, pas de GPU local)
 
-**2 modèles Ollama utilisés** :
-- `qwen3:14b` (classifier — rapide ~1s/article, validation + traduction titres)
-- `qwen3:32b` (analyst — profond, analyse éthique 4D complète)
+**Modèles LLM (Groq cloud)** :
+- `qwen/qwen3-32b` : classifier + analyst A
+- `llama-3.3-70b-versatile` : analyst B (bias diversity)
+- Sentinel : plus gros modèle pour coherence check
 
-**Solana devnet** :
-- Wallet signer : `~/.config/solana/id.json` → `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
+**Solana mainnet** :
+- Wallet signer : `~/.config/solana/id.json` sur VPS → `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
 - Ce wallet est le **mint authority** du token CBWD
 - MINT = `mintTo` vers treasury ATA (augmente supply)
 - BURN = `burn` depuis treasury ATA (réduit supply)
 - Chaque tx enregistrée dans SQLite (`tx_hash`) et visible sur Solana Explorer
+
+**Review queue (safety net)** :
+- Events flagués par Sentinel → pas de TX Solana, en attente human review
+- Page `/review` sur frontend, protégée par passkey WebAuthn
+- CLI : `python worker/resolve_review.py <id> <approve|reverse|reject>`
 
 ---
 
@@ -217,26 +223,43 @@ Pipeline :
 ### Pour reprendre
 - **OUVRIR CLAUDE CODE DEPUIS `~/CARBON-WORLD/`** : `cd ~/CARBON-WORLD && claude`
 - Lire `MEMORY.md` en premier — section "Fait" + "Prochaine étape"
-- Le launchd tourne à 08:00, 14:00, 20:00 → vérifier `logs/worker.log`
-- Le pipeline multi-agents est construit mais **PAS ENCORE TESTÉ** → première chose à faire
+- Le pipeline tourne sur le VPS Hetzner `157.90.250.40` (cron 15 min)
+- SSH : `ssh carbon@157.90.250.40`
+- Logs VPS : `~/CARBON-WORLD/logs/cron_*.log` (20 derniers gardés)
 
 ### Commandes utiles
 ```bash
-# Déclenchement manuel (ignore le MIN_HOURS_BETWEEN_RUNS)
-bash ~/CARBON-WORLD/launcher/run.sh --force
+# --- LOCAL MAC ---
+# Pull la dernière data depuis GitHub
+cd ~/CARBON-WORLD && git pull origin main
 
-# Dry-run (analyse sans écriture DB)
-bash ~/CARBON-WORLD/launcher/run.sh --force --dry-run
+# --- VPS HETZNER ---
+# SSH dans le VPS
+ssh carbon@157.90.250.40
 
-# Vérifier que launchd est chargé
-launchctl list | grep carbonworld
+# Run manuel du pipeline sur VPS (force run complet)
+ssh carbon@157.90.250.40 "~/CARBON-WORLD/launcher/run_vps.sh"
 
-# Voir les dernières décisions dans la DB
-sqlite3 ~/CARBON-WORLD/data/carbon.db "SELECT id, decision, amount_crbn, final_score, event_title FROM carbon_events ORDER BY id DESC LIMIT 10;"
+# Dernier log cron VPS
+ssh carbon@157.90.250.40 "ls -t ~/CARBON-WORLD/logs/cron_*.log | head -1 | xargs tail -50"
 
-# Logs live
-tail -f ~/CARBON-WORLD/logs/worker.log
+# Voir la DB sur VPS
+ssh carbon@157.90.250.40 "sqlite3 ~/CARBON-WORLD/data/carbon.db 'SELECT id, decision, amount_crbn, final_score, event_title FROM carbon_events ORDER BY id DESC LIMIT 10;'"
 
-# Désinstaller le launcher (garde le code)
-bash ~/CARBON-WORLD/launcher/uninstall.sh
+# Status cron VPS
+ssh carbon@157.90.250.40 "crontab -l"
+
+# --- GITHUB ACTIONS (fallback manuel) ---
+# Si VPS down, déclencher pipeline depuis UI GitHub : Actions → CARBON WORLD Pipeline → Run workflow
+
+# --- FRONTEND VERCEL ---
+# Redéployer manuellement
+cd ~/CARBON-WORLD/web && npx vercel --prod --yes --force
 ```
+
+### Secrets / credentials
+- `~/CARBON-WORLD/.env` (local Mac) — Groq API key, etc.
+- `~/.config/solana/id.json` (local Mac + VPS) — mint authority keypair
+- Vercel env vars (prod) : `SESSION_SECRET`, `PASSKEY_CREDENTIAL`, `RP_ID`, `RP_ORIGIN`
+- GitHub Secrets (fallback) : `GROQ_API_KEY`, `SOLANA_KEYPAIR`
+- VPS SSH key : `~/.ssh/github_deploy` (deploy key write access)
