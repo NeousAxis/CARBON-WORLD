@@ -1,9 +1,8 @@
 name: CARBON WORLD Pipeline
 
 on:
-  schedule:
-    # Run every hour
-    - cron: '7 * * * *'
+  # Schedule disabled 2026-04-17: pipeline now runs on Hetzner VPS (cron 15min).
+  # Kept workflow_dispatch as emergency fallback only.
   workflow_dispatch:
     # Allow manual trigger from GitHub UI
 
