@@ -55,3 +55,17 @@ body {
 .animate-live-pulse {
   animation: livePulse 1.5s ease-in-out infinite;
 }
+
+/* Horizontal marquee for the raw RSS feed ticker */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marqueeScroll 240s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}

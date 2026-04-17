@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
+import { RawFeedTicker } from "@/components/RawFeedTicker";
 import "./globals.css";
 
 const geist = Geist({
@@ -71,6 +72,9 @@ export default function RootLayout({
             </div>
           </nav>
         </header>
+
+        {/* Raw RSS feed ticker — scrolling proof that the system is reading the world */}
+        <RawFeedTicker />
 
         {/* Main content */}
         <main className="flex-1">{children}</main>
