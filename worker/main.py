@@ -97,17 +97,24 @@ def _merge_ab_by_url(results_a: list[dict], results_b: list[dict]) -> list[dict]
         link = ra["article"].get("link", "")
         analysis_b = by_url_b.get(link)
         if analysis_b is None:
-            logger.info(
-                "Skipping '%s': Analyst B did not produce a verdict.",
+            # B failed (usually Groq 429 on free tier). Fall back to A-only — sentinel
+            # still catches bad outputs downstream. Better to have A's verdict than nothing.
+            logger.warning(
+                "Analyst B failed for '%s' — proceeding with A-only (sentinel still runs).",
                 ra["article"].get("title", "")[:60],
             )
+            merged.append({
+                "article": ra["article"],
+                "_analyst_a": ra["analysis"],
+                "_analyst_b": ra["analysis"],  # duplicate A as B fallback — reconciler returns A
+            })
             continue
         merged.append({
             "article": ra["article"],
             "_analyst_a": ra["analysis"],
             "_analyst_b": analysis_b,
         })
-    logger.info("Merged A/B verdicts: %d events with both.", len(merged))
+    logger.info("Merged A/B verdicts: %d events (A+B or A-only fallback).", len(merged))
     return merged
 
 
