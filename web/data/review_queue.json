@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-17T19:46:46.301290+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-04-17T23:32:04.699620+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 1,
@@ -36,6 +36,24 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-04-17T15:32:17.623295+00:00",
+      "resolved_at": null
+    },
+    {
+      "id": 3,
+      "event_title": "Cuba creates a special migration status for diaspora investors",
+      "event_url": "https://www.lemonde.fr/international/article/2026/04/18/cuba-cree-un-statut-migratoire-special-pour-les-investisseurs-de-la-diaspora_6680961_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Attracting diaspora investment may stimulate economic growth and diversification.\", \"affected_sdgs\": [8, 9, 10], \"magnitude\": 5}, {\"description\": \"Encouraging private sector participation could reduce inequality and promote inclusive economic development.\", \"affected_sdgs\": [10, 8], \"magnitude\": 4}], \"negative_aspects\": [{\"description\": \"The policy may prioritize capital over labor rights, potentially exacerbating inequality and exploitation.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"ILO Core Labor Standards\"], \"magnitude\": 6}, {\"description\": \"Opening the economy to diaspora investors could undermine local control and sovereignty over economic policy.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5}], \"ethical_synthesis\": \"The policy introduces a mixed impact: it may stimulate economic growth and diversification but risks undermining labor rights and local economic sovereignty.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of labor protections for private sector workers\", \"Monitoring of economic inequality trends over the next two years\", \"Assessment of diaspora investment's impact on local industries\"], \"revaluation_checkpoint\": \"2028-04-18\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diaspora investment leads to sustainable growth and improved labor standards.\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Moderate economic growth with uneven benefits and rising inequality.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Investment leads to capital dominance and erosion of local economic control.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -1.45, \"final_score\": -2.05, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"The policy introduces economic opportunities but risks labor rights and local sovereignty.\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Cuba creates special migration status for diaspora investors\", \"affected_sdgs\": [8, 10], \"magnitude\": 7}, {\"description\": \"Measures to attract foreign currency and open economy to private sector\", \"affected_sdgs\": [9, 17], \"magnitude\": 6}], \"negative_aspects\": [{\"description\": \"Economic crisis due to US oil blockade\", \"affected_sdgs\": [1, 7], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 9}], \"ethical_synthesis\": \"Cuba's decision to create a special migration status for diaspora investors is a positive step towards attracting foreign investment and opening up its economy to the private sector, which could help alleviate the country's economic crisis. However, the crisis itself is a result of the US oil blockade, which is a violation of human rights and has severe negative impacts on the Cuban people.\", \"snapshot_score\": 2.5, \"trajectory_score\": 3.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"US blockade lifted\", \"Cuban economy shows significant growth\", \"Private sector investment increases\"], \"revaluation_checkpoint\": \"2028-04-18\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful economic reform and increased investment\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate economic growth and some investment\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Economic crisis deepens and investment declines\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 1.4, \"final_score\": 2.1, \"decision\": \"BURN\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Cuba's economic reform and investment attraction measures are positive steps.\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.97, \"confidence\": 7, \"amount_cbwd\": 500000, \"justification\": \"The policy introduces economic opportunities but risks labor rights and local sovereignty.\", \"disagreement\": true, \"reason\": \"The institutional action is to attract foreign investment, which can be seen as enabling economic growth but may weaken local protections. The MINT direction is chosen as it reflects the enabling aspect of the action.\"}",
+      "sentinel_concern": "Score -0.025 is negligible yet 500,000 CBWD are minted, showing a scale mismatch between impact and token amount.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-04-17T23:32:04.689700+00:00",
       "resolved_at": null
     }
   ]
