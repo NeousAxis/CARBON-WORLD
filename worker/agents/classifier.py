@@ -8,6 +8,7 @@ from typing import Optional
 
 from ollama_client import call_fast
 from prompts.classifier_prompt import CLASSIFIER_PROMPT
+from prompts.sanitize import wrap_article_for_llm
 
 logger = logging.getLogger("agent.classifier")
 
@@ -27,7 +28,12 @@ def classify(article: dict) -> dict:
     description = article.get("description", "")
     source = article.get("source", "")
 
-    user_msg = f"Title: {title}\nSource: {source}\nDescription: {description}"
+    user_msg = wrap_article_for_llm(
+        title=title,
+        source=source,
+        link=article.get("link", ""),
+        description=description,
+    )
 
     result = call_fast(
         system_prompt=CLASSIFIER_PROMPT,

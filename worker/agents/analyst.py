@@ -8,6 +8,7 @@ from typing import Optional
 
 from ollama_client import call_deep
 from prompts.analyst_prompt import ANALYST_PROMPT
+from prompts.sanitize import wrap_article_for_llm
 
 logger = logging.getLogger("agent.analyst")
 
@@ -24,12 +25,11 @@ def analyze(article: dict) -> Optional[dict]:
     source = article.get("source", "")
     link = article.get("link", "")
 
-    user_msg = (
-        f"Title: {title}\n"
-        f"Source: {source}\n"
-        f"URL: {link}\n"
-        f"Description: {description}\n\n"
-        "Analyze."
+    user_msg = wrap_article_for_llm(
+        title=title,
+        source=source,
+        link=link,
+        description=description,
     )
 
     result = call_deep(
