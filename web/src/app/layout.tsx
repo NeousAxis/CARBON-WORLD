@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={geist.className}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
           rel="stylesheet"
@@ -30,40 +31,44 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased" style={{ backgroundColor: "#111111", color: "#FFFFFF" }}>
         {/* Navbar */}
         <header className="sticky top-0 z-50" style={{ backgroundColor: "#1A1A1A", borderBottom: "1px solid #2E2E2E" }}>
-          <nav className="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
+          <nav className="mx-auto max-w-5xl flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 gap-3">
             <Link
               href="/"
-              className="flex items-center gap-3 text-xl font-bold tracking-tight"
+              className="flex items-center gap-2 sm:gap-3 text-base sm:text-xl font-bold tracking-tight shrink-0"
               style={{ color: "#FF8400" }}
             >
-              <img src="/cbwd-logo.png" alt="CBWD" width={72} height={72} className="rounded-full" />
-              CARBON WORLD
+              <img
+                src="/cbwd-logo.png"
+                alt="CBWD"
+                className="rounded-full w-10 h-10 sm:w-[72px] sm:h-[72px]"
+              />
+              <span className="hidden xs:inline sm:inline">CARBON WORLD</span>
             </Link>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm overflow-x-auto">
               <Link
                 href="/transactions"
-                className="text-sm font-medium hover:opacity-80"
+                className="font-medium hover:opacity-80 whitespace-nowrap"
                 style={{ color: "#B8B9B6" }}
               >
                 Transactions
               </Link>
               <Link
                 href="/sources"
-                className="text-sm font-medium hover:opacity-80"
+                className="font-medium hover:opacity-80 whitespace-nowrap"
                 style={{ color: "#B8B9B6" }}
               >
                 Sources
               </Link>
               <Link
                 href="/about"
-                className="text-sm font-medium hover:opacity-80"
+                className="font-medium hover:opacity-80 whitespace-nowrap"
                 style={{ color: "#B8B9B6" }}
               >
                 About
               </Link>
               <Link
                 href="/review"
-                className="text-sm font-medium hover:opacity-80"
+                className="font-medium hover:opacity-80 whitespace-nowrap"
                 style={{ color: "#FF8400" }}
                 title="Human review queue"
               >
@@ -81,7 +86,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer style={{ backgroundColor: "#1A1A1A", borderTop: "1px solid #2E2E2E" }}>
-          <div className="mx-auto max-w-5xl px-6 py-6 flex items-center justify-between text-sm" style={{ color: "#B8B9B6" }}>
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between text-xs sm:text-sm" style={{ color: "#B8B9B6" }}>
             <span>Powered by Carbon World</span>
             <a
               href="https://github.com/NeousAxis/CARBON-WORLD"

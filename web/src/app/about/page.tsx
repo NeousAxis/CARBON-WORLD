@@ -33,16 +33,16 @@ const frameworks = [
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-6 py-12" style={{ backgroundColor: "#111111" }}>
+    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-8 sm:py-12" style={{ backgroundColor: "#111111" }}>
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm hover:opacity-80 mb-8"
+        className="inline-flex items-center gap-1 text-sm hover:opacity-80 mb-6 sm:mb-8"
         style={{ color: "#B8B9B6" }}
       >
         &larr; Back to dashboard
       </Link>
 
-      <h1 className="text-3xl font-bold mb-6" style={{ color: "#FFFFFF" }}>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6" style={{ color: "#FFFFFF" }}>
         About CARBON WORLD
       </h1>
 

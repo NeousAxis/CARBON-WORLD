@@ -29,7 +29,7 @@ export default function TransactionsPage() {
 
       {/* Stats strip */}
       <div
-        className="flex items-center gap-6 mb-8 p-4 text-xs"
+        className="flex flex-wrap items-center gap-3 sm:gap-6 mb-6 sm:mb-8 p-3 sm:p-4 text-xs"
         style={{ backgroundColor: "#1A1A1A", border: "1px solid #2E2E2E" }}
       >
         <div className="flex items-center gap-2">
@@ -56,7 +56,7 @@ export default function TransactionsPage() {
         <div className="flex items-center gap-2">
           <span style={{ color: "#B8B9B6" }}>NETWORK</span>
           <span className="font-mono font-bold" style={{ color: "#FF8400" }}>
-            DEVNET
+            MAINNET
           </span>
         </div>
       </div>

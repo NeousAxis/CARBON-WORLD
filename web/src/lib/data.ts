@@ -51,3 +51,35 @@ export function formatDate(iso: string): string {
     day: "numeric",
   });
 }
+
+// Reversed events carry a "[REVERSED <date>: <reason> | Original <DECISION> tx: <sig> | Offset <DECISION> tx: <sig> | Net supply impact: 0] <original justification>"
+// prefix in their justification. Extract the structured parts for clean rendering.
+export interface ReverseInfo {
+  date: string;
+  reason: string;
+  originalTx: string;
+  reverseTx: string;
+  originalDecision: string;
+  reverseDecision: string;
+}
+
+export function parseJustification(text: string): {
+  reverseInfo: ReverseInfo | null;
+  cleanText: string;
+} {
+  const match = /^\[REVERSED\s+([^:]+):\s+([\s\S]+?)\s+\|\s+Original\s+(MINT|BURN)\s+tx:\s+(\S+)\s+\|\s+Offset\s+(MINT|BURN)\s+tx:\s+(\S+)\s+\|\s+Net supply impact:\s+0\]\s*([\s\S]*)$/.exec(text);
+  if (!match) {
+    return { reverseInfo: null, cleanText: text };
+  }
+  return {
+    reverseInfo: {
+      date: match[1].trim(),
+      reason: match[2].trim(),
+      originalDecision: match[3],
+      originalTx: match[4],
+      reverseDecision: match[5],
+      reverseTx: match[6],
+    },
+    cleanText: match[7].trim(),
+  };
+}
