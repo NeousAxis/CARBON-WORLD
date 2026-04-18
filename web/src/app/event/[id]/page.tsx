@@ -46,7 +46,7 @@ export default async function EventPage({
     notFound();
   }
 
-  const { reverseInfo, cleanText } = parseJustification(event.justification);
+  const { reverseInfo, overrideInfo, cleanText } = parseJustification(event.justification);
 
   const scoreColor =
     event.final_score >= 6
@@ -95,6 +95,32 @@ export default async function EventPage({
           View original article &rarr;
         </a>
       </div>
+
+      {/* Human override banner — event was manually corrected after human review */}
+      {overrideInfo && (
+        <div
+          className="p-4 sm:p-5 mb-6 sm:mb-8"
+          style={{
+            backgroundColor: "#0F2416",
+            border: "1px solid #B6FFCE",
+          }}
+        >
+          <div className="flex items-center gap-2 mb-3">
+            <span
+              className="inline-block px-2 py-0.5 text-xs font-bold uppercase tracking-wide"
+              style={{ backgroundColor: "#B6FFCE", color: "#0F2416" }}
+            >
+              Human-reviewed
+            </span>
+            <span className="text-xs sm:text-sm" style={{ color: "#B8B9B6" }}>
+              {overrideInfo.date}
+            </span>
+          </div>
+          <p className="text-xs sm:text-sm leading-relaxed" style={{ color: "#B8B9B6" }}>
+            {overrideInfo.note}
+          </p>
+        </div>
+      )}
 
       {/* Reversed banner — only when the event has been corrected post-hoc */}
       {reverseInfo && (

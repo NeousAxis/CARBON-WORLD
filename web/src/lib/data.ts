@@ -65,21 +65,43 @@ export interface ReverseInfo {
 
 export function parseJustification(text: string): {
   reverseInfo: ReverseInfo | null;
+  overrideInfo: HumanOverrideInfo | null;
   cleanText: string;
 } {
-  const match = /^\[REVERSED\s+([^:]+):\s+([\s\S]+?)\s+\|\s+Original\s+(MINT|BURN)\s+tx:\s+(\S+)\s+\|\s+Offset\s+(MINT|BURN)\s+tx:\s+(\S+)\s+\|\s+Net supply impact:\s+0\]\s*([\s\S]*)$/.exec(text);
-  if (!match) {
-    return { reverseInfo: null, cleanText: text };
+  // Pattern A — plain reverse (no human override, event ends up NEUTRAL/0)
+  const reverseMatch = /^\[REVERSED\s+([^:]+):\s+([\s\S]+?)\s+\|\s+Original\s+(MINT|BURN)\s+tx:\s+(\S+)\s+\|\s+Offset\s+(MINT|BURN)\s+tx:\s+(\S+)\s+\|\s+Net supply impact:\s+0\]\s*([\s\S]*)$/.exec(text);
+  if (reverseMatch) {
+    return {
+      reverseInfo: {
+        date: reverseMatch[1].trim(),
+        reason: reverseMatch[2].trim(),
+        originalDecision: reverseMatch[3],
+        originalTx: reverseMatch[4],
+        reverseDecision: reverseMatch[5],
+        reverseTx: reverseMatch[6],
+      },
+      overrideInfo: null,
+      cleanText: reverseMatch[7].trim(),
+    };
   }
-  return {
-    reverseInfo: {
-      date: match[1].trim(),
-      reason: match[2].trim(),
-      originalDecision: match[3],
-      originalTx: match[4],
-      reverseDecision: match[5],
-      reverseTx: match[6],
-    },
-    cleanText: match[7].trim(),
-  };
+
+  // Pattern B — human override (event rewritten to a new decision after human review)
+  const overrideMatch = /^\[HUMAN-OVERRIDE\s+([^:]+):\s+([\s\S]+?)\]\s*([\s\S]*)$/.exec(text);
+  if (overrideMatch) {
+    return {
+      reverseInfo: null,
+      overrideInfo: {
+        date: overrideMatch[1].trim(),
+        note: overrideMatch[2].trim(),
+      },
+      cleanText: overrideMatch[3].trim(),
+    };
+  }
+
+  return { reverseInfo: null, overrideInfo: null, cleanText: text };
+}
+
+export interface HumanOverrideInfo {
+  date: string;
+  note: string;
 }

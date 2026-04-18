@@ -182,6 +182,51 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ---
 
+## 🚨 À FAIRE — priorités ouvertes (2026-04-18)
+
+### 1. Élargir les canaux de détection d'actions positives
+
+**Problème identifié** : le pipeline actuel (46 sources RSS institutionnelles/presse) capture surtout les **décisions gouvernementales nationales**. Il rate massivement les **actions positives locales** menées par des communautés, ONG, collectifs citoyens. Exemples concrets mentionnés par Cyril :
+- Sauvetage en cours d'une baleine à bosse échouée en Allemagne (2026-04-18)
+- Centaines d'actions locales aux USA qui contrent les coupes budgétaires de Trump sur l'environnement (communautés, states blue, coalitions d'ONG)
+- Initiatives citoyennes dans le Sud global que les médias occidentaux ne couvrent pas
+
+**Conséquence actuelle** : biais systémique vers le MINT (décisions institutionnelles souvent ambiguës ou régressives) et sous-représentation du BURN (actions positives souvent locales et communautaires, invisibles pour la presse mainstream).
+
+**Pistes** :
+- Sources spécialisées positives (déjà partiellement : Positive News, Good News Network, Reasons to be Cheerful — vérifier activité)
+- Agrégateurs d'actions communautaires : Mongabay local desks, Grist Solutions, Yes Magazine, Shareable, Commons Transition
+- Plateformes d'action collective : campagnes terminées avec succès sur Change.org, Avaaz, WeMove, SumOfUs
+- Rapports d'ONG actives : Greenpeace Reports, WWF Conservation News, ClientEarth legal wins, Sea Shepherd operations, Wild Welfare
+- Plateformes crowdsourcées : Wikinews "Solutions", Pandemic of Love, Trust for Public Land projects
+- Hashtags solutions sur X/Bluesky (#ClimateSolutions, #CommunityAction) via RSSHub self-hosted
+- Adapter le classifier pour **accepter comme VALID** : "community-led action with measurable impact", "successful NGO legal challenge", "local conservation win", pas seulement "government decision"
+
+**Impact attendu** : rééquilibrer le ratio BURN/MINT et rendre la token supply reflétant mieux la réalité — le monde n'est pas unilatéralement négatif, il y a un tissu d'actions positives qu'il faut capter.
+
+### 2. Audit sécurité complet + refonte passkey
+
+**Périmètre audit** :
+- Code worker Python (prompts injection, secrets leakage, eval/exec, désérialisation JSON)
+- VPS Hetzner : firewall, fail2ban, SSH config, Caddy config, TLS cipher suites, en-têtes HTTPS
+- Docker : Uptime Kuma isolation, images à jour
+- Solana keypair : permissions filesystem, process isolation, backup offline
+- DB SQLite : accès filesystem, backups
+- API routes Next.js : CORS, CSP, rate limiting, input validation
+- Secrets : `.env`, GitHub Secrets, rotation
+- Dépendances : npm audit, pip audit, CVE scan des conteneurs Docker
+- Supply chain : lockfiles intégrité, git signed commits
+
+**Refaire passkey WebAuthn** :
+- La passkey actuelle est liée au MacBook de Cyril uniquement
+- Besoins : accès multi-device (iPhone, iPad, backup), credential rotation, procédure de révocation si device perdu
+- Envisager : plusieurs passkeys enregistrées OU upgrade vers Passkey sync via iCloud Keychain (déjà compatible avec l'implémentation `@simplewebauthn/server`)
+- Documenter la procédure "j'ai perdu mon device, comment je me reconnecte"
+- Vérifier que le challenge cookie a une bonne expiration (5 min OK), JWT session HS256 (algo solide)
+- Rejouer le flow bootstrap `/review/setup?secret=XXX` avec `SETUP_SECRET` rotated
+
+---
+
 ## 📋 Phases de livraison
 
 ### ✅ Phase 1 — Worker IA (TERMINÉE)
