@@ -169,6 +169,17 @@
 - Projet isolé des autres projets Hetzner (billing, API token, firewalls séparés)
 - SSH key ed25519 de Cyril ajoutée au projet (nom : "Macbook")
 
+### 2026-04-18 — Décision : multi-providers free tier pour éviter les 429 Groq
+- Problème : free tier Groq = 30 RPM / modèle mais plafond compte global → l'archi parallèle Analyst A || Analyst B (ThreadPoolExecutor) sature en rafale → ~50 % d'échecs en prod.
+- **Le parallèle est intentionnel** : le passage en séquentiel ferait exploser la durée d'un run ×20. Hors de question de toucher à l'archi.
+- **Choix** : répartir la charge sur plusieurs providers free tier plutôt que payer.
+  - **Groq** (clé existante) : classifier, analyst A (qwen3-32b), reconciler, sentinel
+  - **Cerebras** (à configurer) : analyst B (llama-3.3-70b) — 30 RPM dédié, pas de collision avec Groq
+- Extension possible : Gemini 1.5 Flash (15 RPM) ou OpenRouter free pour un 3e bucket.
+- Implémentation prévue : `worker/ollama_client.py` route par agent en fonction des clés présentes dans `.env`. `CEREBRAS_API_KEY` sera ajouté à `.env` local Mac + VPS.
+- Fallback si insuffisant : Groq paid tier (~$3-5/mois, drop-in, pas de changement code).
+- Cyril m'a (à juste titre) engueulé pour ne pas avoir flaggé le quota Groq dès la recommandation initiale — lesson learned : mentionner les contraintes de quota free tier AVANT la reco, pas APRÈS l'incident.
+
 ### 2026-04-17 — Session fix pending + migration frontend → VPS ✅
 Contexte : Cyril voit 20.9M CBWD "pending" sur le dashboard, ticker illisible, pas de favicon. Analyse + fix complet.
 
@@ -217,7 +228,7 @@ Contexte : Cyril voit 20.9M CBWD "pending" sur le dashboard, ticker illisible, p
 8. ~~Migration frontend → VPS (Caddy + systemd)~~ → **FAIT** ✅ (2026-04-17)
 9. ~~Fix 20.9M CBWD pending (keypair mismatch VPS)~~ → **FAIT** ✅ (2026-04-17, 21 txs retro-exec)
 10. ~~Vercel débranché~~ → **FAIT** ✅ (2026-04-17)
-11. **Fix Groq rate-limit 429** : tier free saturé, les logs cron récents montrent ~50% d'échecs → passer au tier payant (~$5/mois) OU rallonger les délais OU failover provider
+11. **Fix Groq rate-limit 429 via multi-providers** (décidé 2026-04-18) : garder Groq pour classifier/analyst A/reconciler/sentinel, basculer Analyst B sur **Cerebras free tier** (llama-3.3-70b, 30 RPM séparés). L'archi multi-agents reste parallèle (A||B) mais les deux voies tapent sur des buckets de quota indépendants → 0 € / mois, plus de collision. Le client `worker/ollama_client.py` route par agent en lisant `GROQ_API_KEY` + `CEREBRAS_API_KEY`. Fallback payant Groq $3-5/mois si insuffisant.
 12. **Liquidité DEX Raydium** : next step produit (Phase 5) — sans pool, CBWD n'a pas de prix
 13. Niveau 1 live UX : frontend polling + animations compteurs + flash new events
 14. Fix chart genesis (ligne 0 → 1.3M incohérente au démarrage)

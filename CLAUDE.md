@@ -132,10 +132,27 @@ Pipeline (8 phases) :
 
 **Temps estimé** : ~3 min/run (Groq cloud, pas de GPU local)
 
-**Modèles LLM (Groq cloud)** :
-- `qwen/qwen3-32b` : classifier + analyst A
-- `llama-3.3-70b-versatile` : analyst B (bias diversity)
-- Sentinel : plus gros modèle pour coherence check
+**Modèles LLM — stratégie multi-providers free tier** :
+
+L'archi multi-agents est **parallèle par design** (Analyst A || Analyst B dans un ThreadPoolExecutor) pour éviter un ralentissement ~20× vs séquentiel. Le free tier Groq (30 RPM par modèle + plafond compte global) sature quand A et B partent en même temps → 429 fréquents en prod.
+
+**Solution : éclater la charge sur plusieurs providers free tier**, un compte/provider par "voie" d'appel, buckets de quota indépendants.
+
+| Agent | Provider | Modèle | RPM free |
+|---|---|---|---|
+| Classifier | **Groq** | `qwen/qwen3-32b` | 30 |
+| Analyst A | **Groq** | `qwen/qwen3-32b` (même compte/modèle que classifier, OK car appels séquentiels après classif) | 30 |
+| Analyst B | **Cerebras** (à configurer) | `llama-3.3-70b` | 30 |
+| Reconciler | **Groq** | `qwen/qwen3-32b` | (ré-utilise quota) |
+| Sentinel | **Groq** | `openai/gpt-oss-120b` (ou équivalent) | 30 |
+
+Extension possible : Gemini free (15 RPM) ou OpenRouter free pour un 3e bucket de failover.
+
+Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`, etc.), le client LLM (`worker/ollama_client.py`) route l'appel en fonction de l'agent appelant.
+
+**Gain attendu** : parallèle A||B sans collision de quota → 0 € / mois, 0 429 en prod.
+
+**Fallback payant si insuffisant** : Groq paid tier ~$3-5 / mois, drop-in (juste upgrade de la clé, pas de changement code).
 
 **Solana mainnet** :
 - Wallet signer : `~/.config/solana/id.json` sur VPS → `2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW`
@@ -203,7 +220,7 @@ Pipeline (8 phases) :
 - [ ] Liquidité initiale DEX (Raydium) ← next step produit
 - [ ] Monitoring (Uptime Kuma ou similaire)
 - [ ] Ajout Twitter/X via RSSHub Docker OU X API Basic
-- [ ] Fix rate-limit Groq 429 (tier free saturé, prod retourne souvent 0 event)
+- [ ] Fix rate-limit Groq 429 via **multi-providers free tier** : Analyst B sur Cerebras (llama-3.3-70b), Groq garde classifier/analyst A/reconciler/sentinel. 0 € / mois, 0 collision de quota.
 
 ---
 
@@ -273,7 +290,7 @@ ssh carbon@157.90.250.40 "sudo journalctl -u caddy -n 50 --no-pager"
 ```
 
 ### Secrets / credentials
-- `~/CARBON-WORLD/.env` (local Mac + VPS) — Groq API key, etc.
+- `~/CARBON-WORLD/.env` (local Mac + VPS) — `GROQ_API_KEY`, `CEREBRAS_API_KEY` (pour Analyst B free tier), etc.
 - `~/.config/solana/id.json` (local Mac + VPS) — mint authority keypair `2LJspF…`
 - VPS env vars passkey (dans l'unit systemd `carbon-web.service` ou `~/CARBON-WORLD/web/.env.production`) : `SESSION_SECRET`, `PASSKEY_CREDENTIAL`, `RP_ID=carbon-token.xyz`, `RP_ORIGIN=https://carbon-token.xyz`
 - GitHub Secrets (fallback) : `GROQ_API_KEY`, `SOLANA_KEYPAIR`
