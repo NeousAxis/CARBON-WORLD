@@ -30,11 +30,27 @@ interface ReviewData {
 }
 
 // ---------------------------------------------------------------------------
-// ReviewCard — unchanged design from the original password-gated version
+// ReviewCard — with inline Approve / Reverse / Reject buttons
 // ---------------------------------------------------------------------------
 
-function ReviewCard({ item }: { item: ReviewItem }) {
+type ResolveVerdict = "approve" | "reverse" | "reject";
+
+interface ResolveResult {
+  kind: "ok" | "err";
+  msg: string;
+}
+
+function ReviewCard({
+  item,
+  onResolved,
+}: {
+  item: ReviewItem;
+  onResolved?: () => void;
+}) {
   const [expanded, setExpanded] = useState(false);
+  const [reason, setReason] = useState("");
+  const [busy, setBusy] = useState<ResolveVerdict | null>(null);
+  const [result, setResult] = useState<ResolveResult | null>(null);
 
   const parseJson = (s: string): Record<string, unknown> => {
     try {
@@ -49,6 +65,49 @@ function ReviewCard({ item }: { item: ReviewItem }) {
   const r = parseJson(item.reconciler_verdict);
 
   const agree = a.decision === b.decision;
+
+  const resolved = result?.kind === "ok";
+
+  async function resolve(verdict: ResolveVerdict) {
+    if (verdict === "reject") {
+      if (
+        !window.confirm(
+          `Reject event #${item.id} definitively? No on-chain transaction will be executed.`
+        )
+      ) {
+        return;
+      }
+    }
+    setBusy(verdict);
+    setResult(null);
+    try {
+      const res = await fetch(`/api/review/resolve/${item.id}`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ verdict, reason }),
+      });
+      const data = await res.json() as Record<string, unknown>;
+      if (res.ok) {
+        setResult({ kind: "ok", msg: "Done" });
+        onResolved?.();
+      } else {
+        const errMsg =
+          typeof data.detail === "string"
+            ? data.detail
+            : typeof data.error === "string"
+            ? data.error
+            : "Unknown error";
+        setResult({ kind: "err", msg: errMsg });
+      }
+    } catch (err) {
+      setResult({
+        kind: "err",
+        msg: err instanceof Error ? err.message : "Network error",
+      });
+    } finally {
+      setBusy(null);
+    }
+  }
 
   return (
     <div
@@ -138,12 +197,87 @@ function ReviewCard({ item }: { item: ReviewItem }) {
         </div>
       )}
 
-      {/* Resolution instructions */}
-      <div className="text-xs" style={{ color: "#B8B9B6" }}>
-        To resolve: run{" "}
-        <code style={{ color: "#FF8400", fontFamily: "'JetBrains Mono', monospace" }}>
-          python worker/resolve_review.py {item.id} &lt;approve|reverse|reject&gt;
-        </code>
+      {/* Resolution actions */}
+      <div className="mt-1">
+        {/* Reason textarea */}
+        <textarea
+          rows={2}
+          placeholder="Reason (optional, for audit trail)"
+          value={reason}
+          onChange={(e) => setReason(e.target.value)}
+          disabled={resolved || busy !== null}
+          className="w-full mb-2 p-2 text-xs"
+          style={{
+            backgroundColor: "#111111",
+            border: "1px solid #2E2E2E",
+            color: "#FFFFFF",
+            fontFamily: "'JetBrains Mono', monospace",
+            resize: "vertical",
+          }}
+        />
+
+        {/* Action buttons */}
+        <div className="flex gap-2">
+          <button
+            onClick={() => resolve("approve")}
+            disabled={resolved || busy !== null}
+            className="px-3 py-2 text-xs font-bold"
+            style={{
+              backgroundColor: resolved || busy !== null ? undefined : "#B6FFCE",
+              color: "#0A1A0E",
+              fontFamily: "'JetBrains Mono', monospace",
+              cursor: busy === "approve" ? "wait" : resolved || busy !== null ? "not-allowed" : "pointer",
+              opacity: resolved || (busy !== null && busy !== "approve") ? 0.5 : 1,
+            }}
+          >
+            {busy === "approve" ? "Executing…" : "APPROVE"}
+          </button>
+
+          <button
+            onClick={() => resolve("reverse")}
+            disabled={resolved || busy !== null}
+            className="px-3 py-2 text-xs font-bold"
+            style={{
+              backgroundColor: resolved || busy !== null ? undefined : "#FF8400",
+              color: "#111111",
+              fontFamily: "'JetBrains Mono', monospace",
+              cursor: busy === "reverse" ? "wait" : resolved || busy !== null ? "not-allowed" : "pointer",
+              opacity: resolved || (busy !== null && busy !== "reverse") ? 0.5 : 1,
+            }}
+          >
+            {busy === "reverse" ? "Executing…" : "REVERSE MINT↔BURN"}
+          </button>
+
+          <button
+            onClick={() => resolve("reject")}
+            disabled={resolved || busy !== null}
+            className="px-3 py-2 text-xs font-bold"
+            style={{
+              backgroundColor: "transparent",
+              border: "1px solid #FF5C33",
+              color: "#FF5C33",
+              fontFamily: "'JetBrains Mono', monospace",
+              cursor: busy === "reject" ? "wait" : resolved || busy !== null ? "not-allowed" : "pointer",
+              opacity: resolved || (busy !== null && busy !== "reject") ? 0.5 : 1,
+            }}
+          >
+            {busy === "reject" ? "Executing…" : "REJECT"}
+          </button>
+        </div>
+
+        {/* Status feedback */}
+        {result && (
+          <div
+            className="mt-2 text-xs px-2 py-1"
+            style={{
+              backgroundColor: result.kind === "ok" ? "#222924" : "#24100B",
+              color: result.kind === "ok" ? "#B6FFCE" : "#FF5C33",
+              fontFamily: "'JetBrains Mono', monospace",
+            }}
+          >
+            {result.kind === "ok" ? "✓ Resolved — refresh to update queue" : `✗ Error: ${result.msg}`}
+          </div>
+        )}
       </div>
 
       {/* Expandable full data */}
@@ -427,7 +561,7 @@ export default function ReviewPage() {
           </div>
 
           {data.reviews.map((item) => (
-            <ReviewCard key={item.id} item={item} />
+            <ReviewCard key={item.id} item={item} onResolved={fetchQueue} />
           ))}
         </>
       )}
