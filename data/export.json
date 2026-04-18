@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-18T06:45:54.370152+00:00",
+  "generated_at": "2026-04-18T07:22:28.427745+00:00",
   "total_events": 29,
-  "total_burned": 5950000,
+  "total_burned": 6100000,
   "total_minted": 36555000,
   "pending_reviews": 3,
   "events": [
@@ -283,12 +283,12 @@
       "event_title": "Après une expérimentation positive, la Seine-Saint-Denis remet sur la table l’option des chèques alimentaires, abandonnée par le gouvernement",
       "event_url": "https://www.lemonde.fr/planete/article/2026/04/16/apres-une-experimentation-positive-la-seine-saint-denis-remet-sur-la-table-l-option-des-cheques-alimentaires-enterree-par-le-gouvernement_6680465_3244.html",
       "event_source": "Le Monde Planete",
-      "decision": "NEUTRAL",
-      "amount_crbn": 0,
-      "final_score": 4.1,
+      "decision": "BURN",
+      "amount_crbn": 150000,
+      "final_score": 4.79,
       "confidence": 7,
-      "justification": "[REVERSED 2026-04-18: LLM magnitude calibration bug (Seine-Saint-Denis food vouchers scored MINT while being a positive local social action) | Original MINT tx: 2NT7pxE9TGTZjWCLFW8Z9QtC6FmBQJAvAynNwerfVQDumpkrf5QzCg1QfBmfXYJtNipw1pgHDaVyUY82TxXhAGxK | Offset BURN tx: 2bKKc6nfLgjBXs6D18q1FD8K63b9F6RtDX2TyFxKaSjtFA6ySiCwDEuwXFbuTjxVUdgGtbVcjV5gkLmo4pbT5L81 | Net supply impact: 0] Impact positif immédiat mais incertitude sur la pérennité et l'équité territoriale | L'initiative présente des bénéfice",
-      "tx_hash": "2NT7pxE9TGTZjWCLFW8Z9QtC6FmBQJAvAynNwerfVQDumpkrf5QzCg1QfBmfXYJtNipw1pgHDaVyUY82TxXhAGxK",
+      "justification": "[HUMAN-OVERRIDE 2026-04-18: Analyst scored NEUTRAL 4.79 but the human reviewer judged this a positive local social action warranting BURN. Correction history: MINT 120k (tx1: 2NT7pxE9…TxXhAGxK), reverse BURN 120k (tx2: 2bKKc6nf…4pbT5L81), final BURN 150k (tx3: 3GUqGUp9…NToh5gS3) = net BURN 150k on-chain. See AGENTS_PROMPT_RULES.md for the background-context co-evaluation bug class that caused the mis-scoring.] The decision by Seine-Saint-Denis to reinstate food checks represents a positive step toward ensuring the right to food and reducing inequalities, particularly for a high-poverty population. While the local action upholds key human rights and SDGs, the national discontinuation of the program reflects a systemic failure to guarantee minimum social protection universally, weakening long-term equity and justice.",
+      "tx_hash": "3GUqGUp94PVec3VysdQ4Qkjb9CsjVTNuhQE1QAk9xYMJLGAP8kHpC7SJ5e7J3ncz646gcygQDTazmWymNToh5gS3",
       "created_at": "2026-04-16T06:30:26.999900+00:00"
     },
     {
