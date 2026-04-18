@@ -180,6 +180,45 @@
 - Fallback si insuffisant : Groq paid tier (~$3-5/mois, drop-in, pas de changement code).
 - Cyril m'a (à juste titre) engueulé pour ne pas avoir flaggé le quota Groq dès la recommandation initiale — lesson learned : mentionner les contraintes de quota free tier AVANT la reco, pas APRÈS l'incident.
 
+### 2026-04-18 — Fix calibration des magnitudes dans analyst_prompt ✅ (déclenché par event #9 Seine-Saint-Denis)
+
+**Contexte** : Cyril a spotté sur `/event/9` un MINT 120K CBWD sur "Seine-Saint-Denis remet sur la table les chèques alimentaires" — une action sociale clairement positive qualifiée de punitive. Investigation.
+
+**Diagnostic en 3 temps** :
+1. Mon premier réflexe : "event pré-scorer, aurait dû être NEUTRAL" → vrai mais incomplet. 2 events historiques (#2 Galapagos BURN 4.69, #9 Seine-Saint-Denis MINT 4.1) ont slip-passé le vieux scorer qui ne cross-checkait pas la décision LLM. Le scorer 8-agents actuel attraperait ces cas.
+2. Mon 2e réflexe : "ajouter une règle 'subsidiarité = pas inégalité'" → Cyril m'a stoppé : règle trop étroite, cassera d'autres cas (son exemple militants condamnés pour résistance civique : règle naïve "punishes wrongdoing → BURN" rate la tension avec le signal moral citoyen).
+3. Diag final (Cyril) : **ce n'est ni un problème éthique ni un manque de contexte, c'est un bug de CALIBRATION des magnitudes**. Le LLM identifie correctement les pros et cons, mais leur donne des magnitudes nivelées → scores s'annulent → décision faussée.
+
+**Fix ciblé, pas de refonte** :
+- `worker/prompts/analyst_prompt.py` : ajout d'une rubrique **MAGNITUDE CALIBRATION** avec échelle ancrée chiffrée
+  - 9-10 massif/irréversible/millions/multi-ODD
+  - 6-8 significatif national/régional 2-3 ODD clairs
+  - 3-5 modéré, portée régionale, effet indirect
+  - 1-2 mineur, spéculatif, 2e ordre
+- Instruction explicite : "éditorial symétrie ≠ éthique symétrie", ne pas niveler par habitude rédactionnelle
+- Règle : une réserve sur pérennité/généralisabilité/cadre institutionnel = **signal de confidence**, pas un negative_aspect de haute magnitude. Les coûts éthiques concrets passent avant les inquiétudes rhétoriques.
+
+**Validation par re-submission** (Cerebras qwen-3-235b, 9.6s) :
+
+| Métrique | Avant | Après | Commentaire |
+|---|---|---|---|
+| positive_aspects | (inconnu) | 2 items, mag 8 (ODD 1,2,3,10) + mag 6 (ODD 16,17) | pros calibrés haut, correct |
+| negative_aspects | (inconnu, probablement mag 5-6) | 1 item, mag 4 (ODD 10) | critique territoriale en magnitude modérée |
+| snapshot | ? | **7.5** | proven pilot, local positif fort |
+| trajectory | ? | **5.0** | aide sociale progressive |
+| prospective | ? | **4.4** | portée locale limite le futur |
+| **final_score** | **4.10** | **5.36** (+1.26) | monte dans la zone NEUTRAL |
+| **decision** | **MINT** ❌ | **NEUTRAL** ✅ | plus de faux MINT |
+| amount_cbwd | 120,000 minted on-chain | 0 (NEUTRAL → dropped) | plus de tx parasite |
+
+Le LLM a toujours identifié le risque de fragmentation territoriale (cohérent — c'est un vrai point de débat), mais en magnitude 4 vs mag 8 pour les positifs, exactement le différentiel attendu. La calibration absorbe le bug sans règle rigide.
+
+**Documentation dédiée créée** : `AGENTS_PROMPT_RULES.md` (source de vérité pour les règles des prompts des agents). Contient les principes de design, la calibration des échelles ancrée, les classes de bugs recensées (§2 : nivellement magnitudes ✅ fixé, hallucination structurelle partiellement absorbée, tension ordre/signal moral à surveiller), les anti-patterns rejetés (§3) et l'historique des modifs (§4). CLAUDE.md garde juste un pointeur vers ce fichier. À lire avant tout futur patch de prompt.
+
+**Principe hérité** : les règles simplistes type checklist créent de nouveaux modes d'échec. Privilégier ancrage quantitatif (magnitude, confidence) + exemples qui enseignent un mode de raisonnement. Pas de règle avant 2-3 occurrences réelles.
+
+**Event #9 on-chain** : 120K CBWD mintés à tort sur mainnet. Reverse possible via un BURN 120K + update DB `decision='NEUTRAL'` + `tx_hash` du reverse. À décider avec Cyril. Event #2 Galapagos BURN 4.69 : direction ok, juste hors zone stricte — probablement laisser.
+
 ### 2026-04-18 — Cerebras branché pour Analyst B ✅ (test local OK, déploiement VPS à faire)
 - **Clé Cerebras** fournie par Cyril, ajoutée à `.env` local (Mac). À scp sur VPS.
 - **Modèle retenu** : `qwen-3-235b-a22b-instruct-2507` (235B params / A22B actif via MoE)

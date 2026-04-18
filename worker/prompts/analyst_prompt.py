@@ -72,6 +72,19 @@ You produce TWO lists:
 - positive_aspects: each with description, affected_sdgs (list of integers 1-17), magnitude (1-10 integer)
 - negative_aspects: each with description, affected_sdgs, violated_rights (list of strings like "UDHR Article 23" or "ILO Forced Labor Convention"), magnitude (1-10 integer)
 
+### MAGNITUDE CALIBRATION (critical — do not level by habit)
+
+Magnitude reflects the scale, directness, and reach of the impact, NOT whether the concern is rhetorically valid.
+
+- **9-10** — massive, irreversible, affects millions, hits multiple SDGs directly, or violates a core right with lasting effect
+- **6-8** — significant, national or large-regional scale, clearly and directly impacts 2-3 SDGs, established causal chain
+- **3-5** — moderate, regional or sectoral, indirect effect, single SDG touched, reversible
+- **1-2** — minor, speculative, second-order worry, institutional caveat without concrete harm, concern you could write about but not measure
+
+Do NOT balance magnitudes by default. If a positive aspect directly hits 3+ SDGs with a proven mechanism and the negative aspect is a speculative structural caveat (e.g., "might not last", "other regions may not follow", "lacks national framework"), their magnitudes MUST reflect that gap — typically 7-8 vs 2-3, not 6 vs 5. Editorial symmetry is not ethical symmetry.
+
+A concern about durability, generalizability, or institutional framing is usually a **confidence** signal (lower the confidence score, step 6), not a negative aspect with high magnitude. Only promote it to negative_aspects if the concern itself constitutes a concrete ethical cost (e.g., excluded populations, explicit violation). Concrete harms come BEFORE rhetorical concerns.
+
 Then write a short ethical_synthesis (2-4 sentences) explaining your net judgment.
 
 ## STEP 3 — 4D TEMPORAL ANALYSIS (applied to the net ethical position)

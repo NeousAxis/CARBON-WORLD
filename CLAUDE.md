@@ -81,6 +81,20 @@ Pour CHAQUE événement, identification systématique des aspects positifs ET n�
 - **Synthesis** : violations systématiques des droits humains et décès l'emportent largement sur les bénéfices
 - **Décision** : MINT (punitif)
 
+### ⚠ Règles d'écriture des prompts & classes de bugs
+
+Le cadre 7 référentiels + 4D est solide, mais le LLM sous-jacent commet des erreurs récurrentes de calibration et de contexte. Source de vérité dédiée : **[AGENTS_PROMPT_RULES.md](AGENTS_PROMPT_RULES.md)**.
+
+Contient :
+- Principes de design (pas de checklists rigides, ancrage quantitatif, règle des 2+ occurrences avant patch)
+- Calibration des échelles (magnitude, confidence, scores 4D) avec ancrages chiffrés
+- Classes de bugs recensées (nivellement magnitudes ✅ fixé 2026-04-18, hallucination structurelle, tension ordre/signal moral)
+- Anti-patterns (règles qu'on a été tenté d'ajouter mais rejetées, avec raison)
+- Historique des modifs de prompt (commit, impact mesuré)
+- Process pour ajouter une nouvelle règle (toujours avec A/B test de score)
+
+**À lire avant tout patch de prompt analyst / classifier / reconciler / sentinel.**
+
 ---
 
 ## 🏗 Architecture technique — Pipeline 8 agents (mainnet)
