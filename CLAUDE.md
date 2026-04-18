@@ -276,10 +276,104 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 - [x] Recréation mint sur mainnet (2026-04-16)
 - [x] Migration worker → VPS Hetzner (2026-04-17)
 - [x] Migration frontend → VPS Hetzner (2026-04-17)
-- [ ] Liquidité initiale DEX (Raydium) ← next step produit
+- [ ] Liquidité initiale DEX — **REPORTÉE** : token reste indicateur scientifique virtuel jusqu'à traction institutionnelle (détails §Stratégie d'activation ci-dessous)
 - [ ] Monitoring (Uptime Kuma ou similaire)
 - [ ] Ajout Twitter/X via RSSHub Docker OU X API Basic
 - [ ] Fix rate-limit Groq 429 via **multi-providers free tier** : Analyst B sur Cerebras (llama-3.3-70b), Groq garde classifier/analyst A/reconciler/sentinel. 0 € / mois, 0 collision de quota.
+
+---
+
+## 🚀 Stratégie d'activation — token indicateur + crédibilité institutionnelle d'abord
+
+**Décision (2026-04-18)** : les deux voies de lancement token (Pump.fun + Raydium manuel) sont **écartées** à ce stade.
+
+**Raisons** :
+- Pump.fun impose de créer le token via leur plateforme → nous perdrions notre Mint Authority actuelle, or elle est indispensable pour **arbitrer les décisions IA hésitantes** (human-override sur events flagués, cas Seine-Saint-Denis / Hormuz / Cuba récents)
+- Raydium manuel sans budget = exposition immédiate aux whales/snipers (pas de fonds pour LP lock ou anti-sniper)
+- Lancer un token sans communauté institutionnelle crédible = rug assuré ou, pire, naming crédibilité brûlée avant même d'exister
+
+### Pivot : CBWD = indicateur scientifique virtuel, PAS un produit financier (pour l'instant)
+
+**Concept** : le token CBWD existe techniquement sur Solana (supply variable via MINT/BURN selon les events), mais **aucun pool DEX public n'est créé**. Sa valeur monétaire sera activée uniquement quand une communauté institutionnelle aura validé la métrique.
+
+**Narratif à tenir partout (site, pitch, réseaux)** :
+> *"CBWD est un indice de mesure de l'impact éthique des décisions mondiales, similaire au CO₂ en ppm ou à la température en °C. C'est un outil scientifique open-source, pas un actif spéculatif. Son activation en marché ouvert n'aura lieu qu'après validation par un réseau de références institutionnelles."*
+
+**Avantages immédiats** :
+- Zéro risque de sniping / rug pull (pas de pool à attaquer)
+- Rassure les institutionnels qui fuient la crypto-spéculation
+- Mint Authority devient un **argument scientifique** (calibration par l'équipe, pas un red flag financier)
+- On continue d'opérer le pipeline IA + mainnet MINT/BURN comme aujourd'hui — c'est une preuve d'intégrité on-chain des analyses, pas un actif tradable
+
+### Plan partenariats — "Cheval de Troie" API gratuite contre logo
+
+**Principe** : accès gratuit au flux JSON/API pour ONG, médias indépendants, think tanks climat. Condition : affichage du logo sur notre page `/partenaires` + citation de CARBON WORLD comme source dans leurs analyses.
+
+**Cibles prioritaires (2026-04-18)** :
+- **Vakita** (média indépendant climat/tech)
+- **The Shift Project** (équipe Jancovici)
+- **IDDRI** (Institut du développement durable et relations internationales)
+- **Reporterre**, **Greenpeace France**, **Fondation GoodPlanet**
+- **Institut Veolia**
+- **GIEC / IPCC** (via chercheur LinkedIn, pas voie institutionnelle directe)
+
+**Pitch type (email / DM LinkedIn)** :
+> *"Je suis le fondateur de CARBON WORLD, une IA open-source qui score éthiquement les décisions climatiques mondiales en temps réel (basée sur 7 référentiels ONU : 17 ODD, UDHR, OIT, CRC, UNDRIP, Animal Rights, Planetary Boundaries). Contrairement aux études statiques, nous fournissons un flux de données vivant et vérifiable.*
+>
+> *Nous offrons un accès API gratuit à [nom de l'organisation] pour enrichir vos analyses. Notre token CBWD existe sur Solana uniquement comme preuve d'intégrité des données — volontairement non-spéculatif. Nous cherchons simplement des partenaires de référence pour valider la métrique. Votre logo sur notre dashboard suffirait."*
+
+**Effet boule de neige attendu** :
+- Un think tank reconnu affiche un graphique CBWD → son audience engagée découvre le projet
+- Crédibilité immédiate transitive ("si Jancovici cite ces données, c'est sérieux")
+- Communauté se crée organiquement sans aucun marketing crypto
+
+### Monétisation (3 pistes complémentaires, sans lancer le token)
+
+**1. API premium pour secteur privé** (cash-flow direct)
+- Gratuit : ONG, médias, think tanks, chercheurs
+- Payant : entreprises RSE, banques, assureurs, lobbyistes, fonds d'impact
+- Pitch : *"Votre département RSE a besoin de scorer vos fournisseurs en temps réel ? Analyser l'impact éthique de vos décisions de lobbying ? API Enterprise 500-2 000 €/mois."*
+- **Un seul client à 500€/mois = salaire de base pour Cyril**. Deux = viabilité.
+
+**2. Grants / subventions** (crédibilité → financement non-dilutif)
+- Dès qu'on a 3-5 logos institutionnels sur `/partenaires`, éligibilité à :
+  - **Horizon Europe** (bourses recherche / innovation, €10k-€100k)
+  - **Fondation de France**, **Fondation GoodPlanet** (projets intérêt général, €5k-€50k)
+  - **NGI (Next Generation Internet)** pour open-source européen
+- On ne vend rien, on demande une bourse pour "maintenir une infrastructure open-source de vérité climatique"
+
+**3. Valorisation future du token** (*long terme, 12+ mois*)
+- Une fois 10-20 institutions utilisent CBWD comme référence, la demande devient réelle
+- ALORS on lance le pool Raydium (avec les SOL accumulés via grants + API premium)
+- LP burn immédiat, prix contrôlé car c'est nous qui posons la liquidité initiale avec une communauté vraiment formée
+- **Mint Authority conservée** jusqu'à ce jour pour garantir la calibration scientifique
+
+### Feuille de route immédiate (Semaine 1)
+
+**Dashboard / site** :
+- [ ] Ajouter page `/partenaires` (ou `/data-feed`) avec liste logos partenaires + conditions d'accès API gratuit
+- [ ] Ajouter section "API & Partenariats" visible en home avec baseline : *"Token CBWD : actif de preuve d'intégrité — non-listé / non-spéculatif à ce jour"*
+- [ ] Générer 3 exemples de rapports PDF propres (graphiques clairs des 27 events, méthodologie 7 référentiels + 4D) pour pitch
+
+**Campagne outreach** :
+- [ ] 10 emails ciblés (Vakita / Shift Project / IDDRI / Reporterre / Greenpeace / GoodPlanet / Veolia / 2-3 chercheurs GIEC-IDDRI)
+- [ ] Objectif : **UN seul "oui, testons votre API"** en 2 semaines
+- [ ] Dès obtention du 1er logo : épingler en gros sur `/` et attendre trafic qualifié
+
+**Infrastructure technique** :
+- [ ] Exposer `/api/v1/events` public, rate-limited (free tier : 100 req/jour par IP ; institutionnel avec token : illimité)
+- [ ] Documenter OpenAPI / Swagger simple
+- [ ] Ajouter `Access-Control-Allow-Origin` pour embed logos/widgets externes
+
+### Règle d'or : ne JAMAIS communiquer CBWD comme "crypto à acheter"
+
+Tant que le pool n'existe pas, toute communication doit positionner CBWD comme :
+- **Indicateur scientifique** (comme °C, ppm, pH océan)
+- **Infrastructure open-source d'intérêt public**
+- **Pas un investissement, pas un actif tradable**
+
+Si un contact demande "comment acheter CBWD ?", la réponse est :
+> *"CBWD n'est pas encore listé en marché public. C'est un choix : nous voulons d'abord faire valider la métrique par la communauté scientifique avant toute activation financière. Vous pouvez rejoindre notre newsletter pour être prévenu du lancement."*
 
 ---
 
