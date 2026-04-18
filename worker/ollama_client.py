@@ -24,6 +24,8 @@ from config import (
     OLLAMA_REPEAT_PENALTY,
     GROQ_API_KEY,
     GROQ_MODEL,
+    CEREBRAS_API_KEY,
+    CEREBRAS_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -112,37 +114,130 @@ def _call_groq(
     # Prepend /no_think to disable reasoning output on Qwen3 family
     system_with_no_think = f"/no_think\n{system_prompt}"
 
-    # Rate limit: free tier = 30 req/min + 6000 TPM
+    # Rate limit: free tier = 30 req/min + 6000 TPM per model
+    # Classifier (max_tokens<=500): 3s gives 20 req/min, safe margin under 30.
+    # Deep calls (max_tokens>500): 8s gives 7.5 req/min, easily under limits.
     if delay is None:
-        delay = 8 if max_tokens > 500 else 2
+        delay = 8 if max_tokens > 500 else 3
     if delay > 0:
         time.sleep(delay)
 
-    try:
-        resp = httpx.post(
-            "https://api.groq.com/openai/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {GROQ_API_KEY}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": target_model,
-                "messages": [
-                    {"role": "system", "content": system_with_no_think},
-                    {"role": "user", "content": user_message},
-                ],
-                "temperature": 0.1,
-                "max_tokens": max_tokens,
-            },
-            timeout=60,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        raw = data["choices"][0]["message"]["content"]
-        return _parse_json_response(raw, context)
-    except Exception as exc:
-        logger.error("Groq call failed for %s (model=%s): %s", context, target_model, exc)
-        return None
+    payload = {
+        "model": target_model,
+        "messages": [
+            {"role": "system", "content": system_with_no_think},
+            {"role": "user", "content": user_message},
+        ],
+        "temperature": 0.1,
+        "max_tokens": max_tokens,
+    }
+    headers = {
+        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+    # Retry up to 3 times on 429, honoring Retry-After header when present.
+    attempt = 0
+    max_attempts = 3
+    while True:
+        attempt += 1
+        try:
+            resp = httpx.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=60,
+            )
+            if resp.status_code == 429 and attempt < max_attempts:
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    backoff = float(retry_after) if retry_after else 20.0 * attempt
+                except ValueError:
+                    backoff = 20.0 * attempt
+                backoff = max(backoff, 5.0)
+                logger.warning(
+                    "Groq 429 for %s (model=%s, attempt %d/%d), backing off %.1fs",
+                    context, target_model, attempt, max_attempts, backoff,
+                )
+                time.sleep(backoff)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            raw = data["choices"][0]["message"]["content"]
+            return _parse_json_response(raw, context)
+        except Exception as exc:
+            logger.error("Groq call failed for %s (model=%s): %s", context, target_model, exc)
+            return None
+
+
+# ── Cerebras provider ────────────────────────────────────────────────────────
+
+def _call_cerebras(
+    system_prompt: str,
+    user_message: str,
+    context: str,
+    max_tokens: int,
+    model: Optional[str] = None,
+    delay: Optional[float] = None,
+) -> Optional[dict]:
+    """
+    Call Cerebras cloud API (OpenAI-compatible) with 429 retry/backoff.
+    Used for Analyst B so that Groq and Cerebras buckets don't collide under parallel A||B.
+    """
+    import httpx
+
+    target_model = model or CEREBRAS_MODEL
+
+    if delay is None:
+        delay = 8 if max_tokens > 500 else 3
+    if delay > 0:
+        time.sleep(delay)
+
+    payload = {
+        "model": target_model,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        "temperature": 0.1,
+        "max_tokens": max_tokens,
+    }
+    headers = {
+        "Authorization": f"Bearer {CEREBRAS_API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+    attempt = 0
+    max_attempts = 3
+    while True:
+        attempt += 1
+        try:
+            resp = httpx.post(
+                "https://api.cerebras.ai/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=60,
+            )
+            if resp.status_code == 429 and attempt < max_attempts:
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    backoff = float(retry_after) if retry_after else 20.0 * attempt
+                except ValueError:
+                    backoff = 20.0 * attempt
+                backoff = max(backoff, 5.0)
+                logger.warning(
+                    "Cerebras 429 for %s (model=%s, attempt %d/%d), backing off %.1fs",
+                    context, target_model, attempt, max_attempts, backoff,
+                )
+                time.sleep(backoff)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            raw = data["choices"][0]["message"]["content"]
+            return _parse_json_response(raw, context)
+        except Exception as exc:
+            logger.error("Cerebras call failed for %s (model=%s): %s", context, target_model, exc)
+            return None
 
 
 # ── Ollama provider ──────────────────────────────────────────────────────────
@@ -228,9 +323,19 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
 
 def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
-    Call Analyst B — an independent deep reading on Llama-3.3-70B-versatile.
-    Falls back to local Ollama deep model when LLM_PROVIDER=ollama.
+    Call Analyst B — independent deep reading on Llama-3.3-70B.
+    Prefers Cerebras when CEREBRAS_API_KEY is set (separate quota bucket from Groq so
+    parallel A||B doesn't collide on the Groq account plafond). Falls back to Groq,
+    then to local Ollama when LLM_PROVIDER=ollama.
     """
+    if CEREBRAS_API_KEY:
+        return _call_cerebras(
+            system_prompt,
+            user_message,
+            context,
+            max_tokens=3000,
+            delay=8,
+        )
     if LLM_PROVIDER == "groq":
         return _call_groq(
             system_prompt,
@@ -240,7 +345,6 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             model=ANALYST_B_MODEL,
             delay=10,
         )
-    # Ollama fallback: reuse local deep model (single-model mode)
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2500)
 
 

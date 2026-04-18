@@ -27,6 +27,10 @@ OLLAMA_TIMEOUT_SECONDS: int = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "240"))
 GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
 GROQ_MODEL: str = os.getenv("GROQ_MODEL", "qwen/qwen3-32b")
 
+# Cerebras settings — separate free-tier quota bucket for Analyst B (parallel A||B without 429 collisions)
+CEREBRAS_API_KEY: str = os.getenv("CEREBRAS_API_KEY", "")
+CEREBRAS_MODEL: str = os.getenv("CEREBRAS_MODEL", "qwen-3-235b-a22b-instruct-2507")
+
 # LLM Models — two-tier system (Ollama model names)
 CLASSIFIER_MODEL: str = os.getenv("CLASSIFIER_MODEL", "qwen3:14b")
 ANALYST_MODEL: str = os.getenv("ANALYST_MODEL", "qwen3:32b")

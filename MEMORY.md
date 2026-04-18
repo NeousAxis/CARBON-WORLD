@@ -180,6 +180,27 @@
 - Fallback si insuffisant : Groq paid tier (~$3-5/mois, drop-in, pas de changement code).
 - Cyril m'a (à juste titre) engueulé pour ne pas avoir flaggé le quota Groq dès la recommandation initiale — lesson learned : mentionner les contraintes de quota free tier AVANT la reco, pas APRÈS l'incident.
 
+### 2026-04-18 — Cerebras branché pour Analyst B ✅ (test local OK, déploiement VPS à faire)
+- **Clé Cerebras** fournie par Cyril, ajoutée à `.env` local (Mac). À scp sur VPS.
+- **Modèle retenu** : `qwen-3-235b-a22b-instruct-2507` (235B params / A22B actif via MoE)
+  - Modèle plan initial `llama-3.3-70b` **plus disponible** sur free tier Cerebras (liste `/v1/models` : llama3.1-8b, qwen-3-235b-a22b, zai-glm-4.7, gpt-oss-120b)
+  - `gpt-oss-120b` et `zai-glm-4.7` → 404 `model_not_found` malgré listing (free tier restreint)
+  - `llama3.1-8b` → trop petit pour deep analyst 4D
+  - `qwen-3-235b-a22b-instruct-2507` : 200 OK, **~1.7s par appel deep analyst**, JSON conforme au schéma 4D complet
+  - Trade-off : même famille Qwen que Analyst A (32B) → indépendance d'archi réduite, mais objectif premier = quota bucket séparé, atteint.
+- **Implémentation** :
+  - `worker/config.py` : expose `CEREBRAS_API_KEY` + `CEREBRAS_MODEL` (default `qwen-3-235b-a22b-instruct-2507`)
+  - `worker/ollama_client.py` : nouvelle fonction `_call_cerebras()` (OpenAI-compatible, retry 3× sur 429 avec `Retry-After` honoré)
+  - `call_analyst_b()` route **Cerebras en priorité** quand `CEREBRAS_API_KEY` est set ; fallback Groq `llama-3.3-70b-versatile` sinon ; fallback Ollama deep en dernier
+- **Test parallèle A||B** (script `/tmp/test_parallel_ab.py`, tracing `httpx.post`) :
+  - Analyst A (`call_deep`) → `api.groq.com` → **429** (quota saturé par les tests répétés, `Retry-After: 529s` !)
+  - Analyst B (`call_analyst_b`) → `api.cerebras.ai` → **200 en ~3s** simultanément
+  - Preuve que les deux buckets de quota sont indépendants : le 429 Groq n'a pas bloqué Cerebras
+- **Quota estimé en prod (VPS cron */15 min, ~8 articles validés/run)** :
+  - Groq : Analyst A (~8 req) + Reconciler (~2 req sur désaccords) + Sentinel (~8 req) ≈ 18 req / 15 min ≈ 1.2 req/min, sous les 30 RPM
+  - Cerebras : Analyst B (~8 req) ≈ 0.5 req/min, très confortable
+- **Restant** : scp `.env` sur VPS + check du prochain cron run.
+
 ### 2026-04-17 — Session fix pending + migration frontend → VPS ✅
 Contexte : Cyril voit 20.9M CBWD "pending" sur le dashboard, ticker illisible, pas de favicon. Analyse + fix complet.
 
