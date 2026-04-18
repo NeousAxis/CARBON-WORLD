@@ -76,6 +76,15 @@ Chaque entrée suit le format : **Symptôme → Cause → Fix / à surveiller �
 - **À surveiller** : si le pattern persiste sur 2-3 cas même après 2.1, envisager d'ajouter une section "identifier le périmètre d'autorité de l'acteur avant de qualifier ses choix d'illégitimes"
 - **Status** : observation continue
 
+### 2.4 Dérive linguistique sur articles non-anglais ✅ FIXÉ (2026-04-18)
+- **Identifié** : event #10 Seine-Saint-Denis — article source en français (Le Monde), le LLM a produit un `justification` en français ("Impact positif immédiat mais incertitude sur la pérennité...")
+- **Symptôme** : les champs texte de sortie (`justification`, `ethical_synthesis`, `description` des aspects, `reason`, scénarios prospectifs) suivent la langue de l'article source au lieu de rester en anglais
+- **Règle violée** : CLAUDE.md "Code : anglais uniquement (variables, logs, prompts IA, schémas JSON)". Le code et les sorties LLM doivent rester en anglais, seul le `event_title` est conservé en langue originale pour fidélité de source
+- **Cause** : le prompt analyst était en anglais mais ne contenait AUCUNE directive explicite sur la langue de sortie. Le LLM suivait la langue de l'input par défaut
+- **Fix** : nouvelle section "LANGUAGE (non-negotiable)" avant "STRICT OUTPUT FORMAT" dans `worker/prompts/analyst_prompt.py`. Énumère explicitement les champs concernés, rappelle que l'anglais est obligatoire même sur des articles FR/ES/PT/ZH/etc., et clarifie que seul `event_title` reste dans sa langue d'origine
+- **Validation** : le prochain run du pipeline avec un article non-anglais doit produire tous les champs texte en anglais. Vérifier sur un event FR du prochain batch VPS.
+- **Frontend** : `web/src/app/event/[id]/page.tsx` cache désormais la section "AI justification" sur les events reversés — le bandeau orange suffit et évite d'exposer le texte buggy historique
+
 ### 2.3 Tension ordre public vs signal moral — À SURVEILLER (pas encore observé en prod)
 - **Exemple théorique** (Cyril, 2026-04-18) : militants condamnés pour action directe contre une entreprise anti-biodiversité. Règle naïve `PUNISHES wrongdoing → BURN` → condamnation positive. Réalité : la condamnation étouffe un signal moral citoyen légitime → net incertain/NEUTRAL
 - **Cause prédite** : les "rule of thumb" des lignes 11-19 du `analyst_prompt.py` poussent à un verdict binaire au lieu d'une analyse de tension
@@ -104,6 +113,7 @@ Chaque entrée suit le format : **Symptôme → Cause → Fix / à surveiller �
 | Date | Fichier | Commit | Classe de bug | Impact mesuré |
 |---|---|---|---|---|
 | 2026-04-18 | `worker/prompts/analyst_prompt.py` | (voir git log) | 2.1 nivellement magnitudes | Seine-Saint-Denis score 4.10→5.36, MINT→NEUTRAL, 120K CBWD évités |
+| 2026-04-18 | `worker/prompts/analyst_prompt.py` | (voir git log) | 2.4 dérive linguistique FR/autres | Directive "LANGUAGE (non-negotiable)" ajoutée, tous champs texte désormais forcés en anglais |
 
 ---
 

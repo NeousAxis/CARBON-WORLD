@@ -182,8 +182,9 @@ export default async function EventPage({
         </div>
       </div>
 
-      {/* Justification */}
-      {cleanText && (
+      {/* Justification — hidden entirely when reversed (the orange banner already explains
+          the correction and the pre-reverse analyst output is no longer authoritative). */}
+      {!reverseInfo && cleanText && (
         <div
           className="p-4 sm:p-6 mb-6 sm:mb-8"
           style={{
