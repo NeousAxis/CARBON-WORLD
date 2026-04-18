@@ -18,3 +18,8 @@ worker/last_run.json
 # OS
 .DS_Store
 DASHBOARD.pen
+
+# Claude Code — commit the shared settings + hooks, ignore local overrides
+!.claude/settings.json
+!.claude/hooks/
+.claude/settings.local.json

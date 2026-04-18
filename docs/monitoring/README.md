@@ -68,13 +68,41 @@ Remplace `<TOKEN>` par le token réel, commit + push.
 
 ## Notifications
 
-Dans **Settings → Notifications** d'Uptime Kuma, ajoute au moins une notification :
+Dans **Settings → Notifications → Add New Notification**.
 
-- **Telegram** (gratuit, recommandé) : crée un bot via [@BotFather](https://t.me/BotFather), récupère le bot token + ton chat ID via [@userinfobot](https://t.me/userinfobot)
-- **Email** (SMTP) : Gmail / Infomaniak / autre
-- **Discord webhook** si tu préfères
+### Option A — Email via Infomaniak (hello@carbon-token.xyz)
 
-Active la notification sur chaque monitor (édite chaque monitor, onglet Notifications).
+C'est la voie retenue pour CARBON WORLD. La mailbox est déjà hébergée chez Infomaniak (MX `mta-gw.infomaniak.ch`).
+
+| Champ Uptime Kuma | Valeur |
+|---|---|
+| Notification Type | **Email (SMTP)** |
+| Friendly Name | `Carbon World email` |
+| Hostname | `mail.infomaniak.com` |
+| Port | `587` |
+| Secure Option / TLS | **STARTTLS** (pas SSL) — le VPS peut sortir sur 587 mais PAS sur 465, c'est Hetzner qui bloque |
+| Ignore TLS Errors | non |
+| Username | `hello@carbon-token.xyz` |
+| Password | (mot de passe de la mailbox Infomaniak) |
+| From Email | `hello@carbon-token.xyz` — DOIT correspondre au username sinon SPF rejette |
+| From Name | `Carbon World Monitoring` |
+| To Email | `hello@carbon-token.xyz` |
+| CC / BCC | (vide) |
+| Subject | laisse le défaut ou customise |
+
+Clique **Test** — Uptime Kuma envoie un email test. Si ça marche, **Save**. Si tu vois "Invalid login", vérifie le mot de passe ou active un "app password" Infomaniak si tu as la 2FA sur le compte.
+
+Active ensuite cette notification sur chacun des 3 monitors (onglet Notifications de chaque monitor).
+
+### Option B — Telegram (gratuit, très fiable, alternative)
+
+1. Crée un bot via [@BotFather](https://t.me/BotFather) → récupère le bot token
+2. Récupère ton chat ID via [@userinfobot](https://t.me/userinfobot)
+3. Dans Uptime Kuma, Notification Type = **Telegram**, colle bot token + chat ID
+
+### Option C — Discord webhook
+
+Utile si tu as un serveur Discord dédié. Génère un webhook dans les paramètres du channel, colle l'URL dans Uptime Kuma.
 
 ## Gérer le container
 
