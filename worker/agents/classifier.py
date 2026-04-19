@@ -1,17 +1,93 @@
 """
 classifier.py — Agent: quick triage of articles (valid actionable decision or not).
 Uses the fast/small LLM model for speed (~5-8s per article).
+
+Supports batch mode (CLASSIFIER_BATCH_SIZE > 1): packs N articles into one LLM
+call, reducing Groq RPM consumption by ~N× at the same quota.  Falls back to
+mono classification if the batch call fails or returns malformed output.
 """
 
+import json
 import logging
+import re
 from typing import Optional
 
 from ollama_client import call_fast
-from prompts.classifier_prompt import CLASSIFIER_PROMPT
-from prompts.sanitize import wrap_article_for_llm
+from prompts.classifier_prompt import CLASSIFIER_PROMPT, CLASSIFIER_BATCH_PROMPT
+from prompts.sanitize import wrap_article_for_llm, wrap_articles_batch_for_llm
+from config import CLASSIFIER_BATCH_SIZE
 
 logger = logging.getLogger("agent.classifier")
 
+
+# ---------------------------------------------------------------------------
+# JSON helpers for batch response (array, not dict)
+# ---------------------------------------------------------------------------
+
+def _strip_think_tags(text: str) -> str:
+    """Remove <think>...</think> blocks from Qwen3 responses."""
+    return re.sub(r"<think>[\s\S]*?</think>", "", text).strip()
+
+
+def _strip_markdown_fences(text: str) -> str:
+    """Remove ```json ... ``` wrappers if present."""
+    text = text.strip()
+    match = re.match(r"^```(?:json)?\s*([\s\S]*?)\s*```$", text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    return text
+
+
+def _extract_first_json_array(text: str) -> Optional[str]:
+    """Fallback: extract the first [...] block via regex."""
+    match = re.search(r"\[[\s\S]*\]", text)
+    return match.group(0) if match else None
+
+
+def _parse_batch_json_response(raw: str, context: str) -> Optional[list]:
+    """
+    Parse a JSON array from the raw LLM response string.
+    Returns a list of dicts or None on failure.
+    Applies the same think-tag and fence stripping as the mono parser.
+    """
+    if not raw:
+        logger.warning("Empty batch response from LLM for %s", context)
+        return None
+
+    cleaned = _strip_think_tags(raw)
+    cleaned = _strip_markdown_fences(cleaned)
+
+    # Direct parse
+    try:
+        parsed = json.loads(cleaned)
+        if isinstance(parsed, list):
+            return parsed
+        # Model might have wrapped the array in an object e.g. {"results": [...]}
+        if isinstance(parsed, dict):
+            for v in parsed.values():
+                if isinstance(v, list):
+                    logger.debug("Unwrapped JSON array from object wrapper for %s", context)
+                    return v
+    except json.JSONDecodeError:
+        pass
+
+    # Regex fallback for embedded array
+    block = _extract_first_json_array(cleaned)
+    if block:
+        try:
+            parsed = json.loads(block)
+            if isinstance(parsed, list):
+                return parsed
+        except json.JSONDecodeError:
+            pass
+
+    logger.warning("Invalid batch JSON from LLM for %s: %s", context, cleaned[:300])
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Mono classification (unchanged path)
+# ---------------------------------------------------------------------------
 
 def classify(article: dict) -> dict:
     """
@@ -68,20 +144,262 @@ def classify(article: dict) -> dict:
     return enriched
 
 
+# ---------------------------------------------------------------------------
+# Batch sub-batch helper
+# ---------------------------------------------------------------------------
+
+def _classify_sub_batch(sub_batch: list[dict]) -> Optional[list[dict]]:
+    """
+    Classify a sub-batch of articles in one LLM call.
+
+    Builds a multi-article prompt, calls call_fast with CLASSIFIER_BATCH_PROMPT,
+    parses the JSON array response, validates it (correct length, valid indices),
+    and returns a list of enriched article dicts in the same order as sub_batch.
+
+    Returns None if the call fails, response is unparseable, or the returned
+    array has wrong length or invalid indices.  Caller must fall back to mono.
+    """
+    n = len(sub_batch)
+    context_hint = f"batch({n}) starting with '{sub_batch[0].get('title', '')[:40]}'"
+
+    user_msg = wrap_articles_batch_for_llm(sub_batch)
+
+    # call_fast returns Optional[dict] via _parse_json_response.
+    # For batch we need a list, so we bypass call_fast and use the underlying
+    # Groq/Ollama call directly — but to keep the diff minimal and avoid
+    # touching ollama_client internals, we instead call call_fast with a special
+    # sentinel trick: we POST the message ourselves, raw, and parse the array.
+    # Practical approach: call_fast wraps JSON as dict. We need raw text.
+    # Solution: use ollama_client._call_groq / _call_cerebras internals via
+    # a thin wrapper that captures the raw string before JSON parsing.
+    # To keep the diff truly minimal, we call `_call_batch_raw` (see below).
+    raw_text = _call_fast_raw(user_msg, context_hint)
+    if raw_text is None:
+        return None
+
+    results = _parse_batch_json_response(raw_text, context_hint)
+    if results is None:
+        return None
+
+    # Validate length
+    if len(results) != n:
+        logger.warning(
+            "Batch response length mismatch for %s: expected %d, got %d",
+            context_hint, n, len(results),
+        )
+        return None
+
+    # Validate indices and build enriched articles
+    enriched_list = []
+    result_by_index = {}
+    for item in results:
+        idx = item.get("index")
+        if not isinstance(idx, int) or idx < 1 or idx > n:
+            logger.warning(
+                "Batch response has invalid index %r for %s", idx, context_hint
+            )
+            return None
+        if idx in result_by_index:
+            logger.warning(
+                "Batch response has duplicate index %d for %s", idx, context_hint
+            )
+            return None
+        result_by_index[idx] = item
+
+    if len(result_by_index) != n:
+        logger.warning(
+            "Batch response index set incomplete for %s: got %s, need 1..%d",
+            context_hint, sorted(result_by_index.keys()), n,
+        )
+        return None
+
+    for position, article in enumerate(sub_batch, start=1):
+        item = result_by_index[position]
+        enriched = {**article, "_classified": True}
+
+        is_valid = bool(item.get("valid", False))
+        enriched["_valid"] = is_valid
+
+        title_en = item.get("title_en", "")
+        orig_title = article.get("title", "")
+        if title_en and title_en != orig_title:
+            enriched["title"] = title_en
+            logger.info(
+                "Translated title (batch): '%s' → '%s'", orig_title[:40], title_en[:40]
+            )
+
+        if is_valid:
+            enriched["_category"] = item.get("category", "unknown")
+            logger.info(
+                "VALID (batch) [%s] '%s'",
+                enriched["_category"], enriched.get("title", orig_title)[:60],
+            )
+        else:
+            enriched["_reason"] = item.get("reason", "unknown")
+            logger.info(
+                "INVALID (batch) '%s' — %s",
+                enriched.get("title", orig_title)[:60], enriched["_reason"][:100],
+            )
+
+        enriched_list.append(enriched)
+
+    return enriched_list
+
+
+def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
+    """
+    Call the fast LLM and return the raw text response (before JSON parsing).
+    This is needed for batch mode where the response is a JSON array, not a dict.
+
+    Replicates the provider routing from ollama_client.call_fast but captures
+    the raw completion string instead of passing it through _parse_json_response.
+    """
+    import time
+    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_MODEL
+
+    if LLM_PROVIDER == "groq":
+        import httpx
+
+        system_with_no_think = f"/no_think\n{CLASSIFIER_BATCH_PROMPT}"
+        # Batch needs more tokens than mono (5 articles × ~50 tokens each + array overhead)
+        max_tokens = 800
+        delay = 3  # same as mono fast calls
+        time.sleep(delay)
+
+        payload = {
+            "model": GROQ_MODEL,
+            "messages": [
+                {"role": "system", "content": system_with_no_think},
+                {"role": "user", "content": user_message},
+            ],
+            "temperature": 0.1,
+            "max_tokens": max_tokens,
+        }
+        headers = {
+            "Authorization": f"Bearer {GROQ_API_KEY}",
+            "Content-Type": "application/json",
+        }
+
+        attempt = 0
+        max_attempts = 3
+        while True:
+            attempt += 1
+            try:
+                resp = httpx.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers=headers,
+                    json=payload,
+                    timeout=60,
+                )
+                if resp.status_code == 429 and attempt < max_attempts:
+                    retry_after = resp.headers.get("Retry-After")
+                    try:
+                        backoff = float(retry_after) if retry_after else 20.0 * attempt
+                    except ValueError:
+                        backoff = 20.0 * attempt
+                    backoff = max(backoff, 5.0)
+                    logger.warning(
+                        "Groq 429 for batch %s (attempt %d/%d), backing off %.1fs",
+                        context, attempt, max_attempts, backoff,
+                    )
+                    time.sleep(backoff)
+                    continue
+                resp.raise_for_status()
+                data = resp.json()
+                return data["choices"][0]["message"]["content"]
+            except Exception as exc:
+                logger.error("Groq batch call failed for %s: %s", context, exc)
+                return None
+
+    else:
+        # Ollama path: call via the ollama library, capture raw text
+        from config import OLLAMA_HOST, CLASSIFIER_MODEL
+        try:
+            import ollama as ollama_lib
+            client = ollama_lib.Client(host=OLLAMA_HOST, timeout=60)
+            response = client.chat(
+                model=CLASSIFIER_MODEL,
+                messages=[
+                    {"role": "system", "content": CLASSIFIER_BATCH_PROMPT},
+                    {"role": "user", "content": user_message},
+                ],
+                options={
+                    "temperature": 0.1,
+                    "num_predict": 800,
+                    "num_ctx": 8192,
+                    "repeat_penalty": 1.2,
+                },
+                think=False,
+            )
+            return response.message.content if hasattr(response, "message") else None
+        except Exception as exc:
+            logger.error("Ollama batch call failed for %s: %s", context, exc)
+            return None
+
+
+# ---------------------------------------------------------------------------
+# Public API
+# ---------------------------------------------------------------------------
+
 def classify_batch(articles: list[dict]) -> tuple[list[dict], list[dict]]:
     """
     Classify a list of articles. Returns (valid_articles, invalid_articles).
+
+    When CLASSIFIER_BATCH_SIZE == 1 (or the env var is set to 1), falls back to
+    legacy mono classify() per article.  Otherwise chunks the list into sub-batches
+    of CLASSIFIER_BATCH_SIZE and sends each sub-batch in one LLM call.
+
+    On any sub-batch failure (None response, malformed JSON, wrong length/indices),
+    that sub-batch is re-classified using mono classify() on each article individually.
     """
-    valid = []
-    invalid = []
-    for article in articles:
-        classified = classify(article)
-        if classified.get("_valid"):
-            valid.append(classified)
-        else:
-            invalid.append(classified)
+    valid: list[dict] = []
+    invalid: list[dict] = []
+
+    batch_size = CLASSIFIER_BATCH_SIZE
+
+    if batch_size <= 1:
+        # Legacy mono path — unchanged behaviour
+        for article in articles:
+            classified = classify(article)
+            (valid if classified.get("_valid") else invalid).append(classified)
+        logger.info(
+            "Classification complete (mono): %d valid, %d invalid out of %d total.",
+            len(valid), len(invalid), len(articles),
+        )
+        return valid, invalid
+
+    # Batch path: chunk into sub-batches
+    chunks = [articles[i: i + batch_size] for i in range(0, len(articles), batch_size)]
     logger.info(
-        "Classification complete: %d valid, %d invalid out of %d total.",
-        len(valid), len(invalid), len(articles),
+        "Starting batch classification: %d articles → %d sub-batches of up to %d.",
+        len(articles), len(chunks), batch_size,
+    )
+
+    for chunk_idx, chunk in enumerate(chunks, start=1):
+        logger.info(
+            "Sub-batch %d/%d: classifying %d articles.", chunk_idx, len(chunks), len(chunk)
+        )
+        enriched_chunk = _classify_sub_batch(chunk)
+
+        if enriched_chunk is None:
+            logger.warning(
+                "Batch classification failed, falling back to mono (%d articles in sub-batch %d).",
+                len(chunk), chunk_idx,
+            )
+            for article in chunk:
+                classified = classify(article)
+                (valid if classified.get("_valid") else invalid).append(classified)
+        else:
+            v_count = sum(1 for a in enriched_chunk if a.get("_valid"))
+            logger.info(
+                "Sub-batch %d/%d result: %d valid, %d invalid.",
+                chunk_idx, len(chunks), v_count, len(enriched_chunk) - v_count,
+            )
+            for classified in enriched_chunk:
+                (valid if classified.get("_valid") else invalid).append(classified)
+
+    logger.info(
+        "Classification complete (batch_size=%d): %d valid, %d invalid out of %d total.",
+        batch_size, len(valid), len(invalid), len(articles),
     )
     return valid, invalid

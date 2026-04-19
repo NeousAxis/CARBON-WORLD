@@ -38,3 +38,8 @@ ANALYST_MODEL: str = os.getenv("ANALYST_MODEL", "qwen3:32b")
 # Run control
 MAX_ARTICLES_PER_RUN: int = int(os.getenv("MAX_ARTICLES_PER_RUN", "25"))
 MIN_HOURS_BETWEEN_RUNS: int = int(os.getenv("MIN_HOURS_BETWEEN_RUNS", "5"))
+
+# Batch classifier: number of articles sent in a single LLM call.
+# Default 5 → x5 throughput on the same Groq RPM quota.
+# Set to 1 to disable batching and use legacy mono-classification (for debugging).
+CLASSIFIER_BATCH_SIZE: int = int(os.getenv("CLASSIFIER_BATCH_SIZE", "5"))
