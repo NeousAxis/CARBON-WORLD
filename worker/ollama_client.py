@@ -308,16 +308,31 @@ def _call_ollama_deep(
 # ── Public API (used by agents) ──────────────────────────────────────────────
 
 def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
-    """Call the fast model (classifier). Routes to Groq or Ollama based on config."""
+    """
+    Call the fast model (classifier). Routes to Groq first; on failure (429 exhausted)
+    and when CEREBRAS_API_KEY is set, falls back to Cerebras (separate quota bucket).
+    This lets the classifier keep working when the Groq free-tier plafond is saturated.
+    """
     if LLM_PROVIDER == "groq":
-        return _call_groq(system_prompt, user_message, context, max_tokens=200)
+        result = _call_groq(system_prompt, user_message, context, max_tokens=200)
+        if result is None and CEREBRAS_API_KEY:
+            logger.info("Groq failed for classifier %s, falling back to Cerebras", context)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=200, delay=3)
+        return result
     return _call_ollama_fast(system_prompt, user_message, context)
 
 
 def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
-    """Call the deep model (analyst A). Routes to Groq or Ollama based on config."""
+    """
+    Call the deep model (analyst A). Routes to Groq first; on failure (429 exhausted)
+    and when CEREBRAS_API_KEY is set, falls back to Cerebras (separate quota bucket).
+    """
     if LLM_PROVIDER == "groq":
-        return _call_groq(system_prompt, user_message, context, max_tokens=3000)
+        result = _call_groq(system_prompt, user_message, context, max_tokens=3000)
+        if result is None and CEREBRAS_API_KEY:
+            logger.info("Groq failed for analyst A %s, falling back to Cerebras", context)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=3000, delay=8)
+        return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2500)
 
 

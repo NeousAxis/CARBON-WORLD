@@ -246,16 +246,77 @@ def _classify_sub_batch(sub_batch: list[dict]) -> Optional[list[dict]]:
     return enriched_list
 
 
+def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
+    """
+    Cerebras fallback for batch classifier. Used when Groq returns 429-exhausted.
+    Returns raw text (same contract as _call_fast_raw).
+    """
+    import time
+    import httpx
+    from config import CEREBRAS_API_KEY, CEREBRAS_MODEL
+
+    if not CEREBRAS_API_KEY:
+        return None
+
+    max_tokens = 800
+    time.sleep(3)
+
+    payload = {
+        "model": CEREBRAS_MODEL,
+        "messages": [
+            {"role": "system", "content": CLASSIFIER_BATCH_PROMPT},
+            {"role": "user", "content": user_message},
+        ],
+        "temperature": 0.1,
+        "max_tokens": max_tokens,
+    }
+    headers = {
+        "Authorization": f"Bearer {CEREBRAS_API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+    attempt = 0
+    max_attempts = 3
+    while True:
+        attempt += 1
+        try:
+            resp = httpx.post(
+                "https://api.cerebras.ai/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=60,
+            )
+            if resp.status_code == 429 and attempt < max_attempts:
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    backoff = float(retry_after) if retry_after else 20.0 * attempt
+                except ValueError:
+                    backoff = 20.0 * attempt
+                backoff = max(backoff, 5.0)
+                logger.warning(
+                    "Cerebras 429 for batch %s (attempt %d/%d), backing off %.1fs",
+                    context, attempt, max_attempts, backoff,
+                )
+                time.sleep(backoff)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            return data["choices"][0]["message"]["content"]
+        except Exception as exc:
+            logger.error("Cerebras batch call failed for %s: %s", context, exc)
+            return None
+
+
 def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
     """
     Call the fast LLM and return the raw text response (before JSON parsing).
     This is needed for batch mode where the response is a JSON array, not a dict.
 
-    Replicates the provider routing from ollama_client.call_fast but captures
-    the raw completion string instead of passing it through _parse_json_response.
+    Routes Groq first; on exhausted failure and CEREBRAS_API_KEY present, falls
+    back to Cerebras so the classifier keeps working when Groq's free tier is saturated.
     """
     import time
-    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_MODEL
+    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_MODEL, CEREBRAS_API_KEY
 
     if LLM_PROVIDER == "groq":
         import httpx
@@ -309,6 +370,10 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
                 return data["choices"][0]["message"]["content"]
             except Exception as exc:
                 logger.error("Groq batch call failed for %s: %s", context, exc)
+                # Fallback to Cerebras if available (separate quota bucket)
+                if CEREBRAS_API_KEY:
+                    logger.info("Falling back to Cerebras for batch %s", context)
+                    return _call_cerebras_batch_raw(user_message, context)
                 return None
 
     else:
