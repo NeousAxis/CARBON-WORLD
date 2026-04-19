@@ -94,6 +94,7 @@ def _call_groq(
     max_tokens: int,
     model: Optional[str] = None,
     delay: Optional[float] = None,
+    max_attempts: int = 3,
 ) -> Optional[dict]:
     """
     Call Groq cloud API with rate limit handling. Returns parsed JSON dict or None.
@@ -106,6 +107,9 @@ def _call_groq(
         model: Override model id; defaults to GROQ_MODEL.
         delay: Seconds to sleep before the call (rate limiting).
                If None, auto-derives from max_tokens (8s for >500, else 2s).
+        max_attempts: Number of retry attempts on 429. Set to 1 to fail fast
+                      (useful when a Cerebras fallback is available and we
+                      don't want to wait on Groq's long backoff, up to 1000s).
     """
     import httpx
 
@@ -136,9 +140,8 @@ def _call_groq(
         "Content-Type": "application/json",
     }
 
-    # Retry up to 3 times on 429, honoring Retry-After header when present.
+    # Retry on 429 (up to max_attempts), honoring Retry-After header when present.
     attempt = 0
-    max_attempts = 3
     while True:
         attempt += 1
         try:
@@ -309,12 +312,15 @@ def _call_ollama_deep(
 
 def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
-    Call the fast model (classifier). Routes to Groq first; on failure (429 exhausted)
-    and when CEREBRAS_API_KEY is set, falls back to Cerebras (separate quota bucket).
-    This lets the classifier keep working when the Groq free-tier plafond is saturated.
+    Call the fast model (classifier). Routes to Groq first; on 429 (fail fast,
+    max_attempts=1) and when CEREBRAS_API_KEY is set, falls back to Cerebras
+    (separate quota bucket). Keeps the classifier responsive when Groq free-tier
+    is saturated — no 1000s+ backoff wait.
     """
     if LLM_PROVIDER == "groq":
-        result = _call_groq(system_prompt, user_message, context, max_tokens=200)
+        # Fail fast if we have a Cerebras fallback, otherwise retry up to 3 times.
+        attempts = 1 if CEREBRAS_API_KEY else 3
+        result = _call_groq(system_prompt, user_message, context, max_tokens=200, max_attempts=attempts)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Groq failed for classifier %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=200, delay=3)
@@ -324,11 +330,13 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
 
 def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
-    Call the deep model (analyst A). Routes to Groq first; on failure (429 exhausted)
-    and when CEREBRAS_API_KEY is set, falls back to Cerebras (separate quota bucket).
+    Call the deep model (analyst A). Routes to Groq first; on 429 (fail fast,
+    max_attempts=1) and when CEREBRAS_API_KEY is set, falls back to Cerebras
+    (separate quota bucket). Avoids 1000s+ Groq backoff blocking the pipeline.
     """
     if LLM_PROVIDER == "groq":
-        result = _call_groq(system_prompt, user_message, context, max_tokens=3000)
+        attempts = 1 if CEREBRAS_API_KEY else 3
+        result = _call_groq(system_prompt, user_message, context, max_tokens=3000, max_attempts=attempts)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Groq failed for analyst A %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=3000, delay=8)

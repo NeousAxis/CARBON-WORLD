@@ -341,8 +341,9 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
             "Content-Type": "application/json",
         }
 
+        # Fail fast on 429 if we have Cerebras fallback, otherwise retry up to 3 times.
+        max_attempts = 1 if CEREBRAS_API_KEY else 3
         attempt = 0
-        max_attempts = 3
         while True:
             attempt += 1
             try:
@@ -369,7 +370,7 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
                 data = resp.json()
                 return data["choices"][0]["message"]["content"]
             except Exception as exc:
-                logger.error("Groq batch call failed for %s: %s", context, exc)
+                logger.warning("Groq batch call failed for %s: %s", context, exc)
                 # Fallback to Cerebras if available (separate quota bucket)
                 if CEREBRAS_API_KEY:
                     logger.info("Falling back to Cerebras for batch %s", context)
