@@ -7,6 +7,14 @@ TS=$(date +%Y%m%d_%H%M%S)
 exec >> "logs/cron_$TS.log" 2>&1
 echo "=== Run started at $(date -Iseconds) ==="
 
+# Lockfile: skip if a previous run is still active (prevents pileup under quota backpressure)
+LOCKFILE="/tmp/carbon-worker.lock"
+exec 200>"$LOCKFILE"
+if ! flock -n 200; then
+  echo "=== SKIP: previous run still active, exiting cleanly at $(date -Iseconds) ==="
+  exit 0
+fi
+
 BEFORE=$(git rev-parse HEAD)
 
 # Pull latest code
