@@ -374,32 +374,48 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
 def call_reconciler(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
     Call Reconciler — Qwen3 merging Analyst A and B verdicts.
-    Falls back to local Ollama deep model when LLM_PROVIDER=ollama.
+    Routes Groq first; on 429 (fail fast when CEREBRAS_API_KEY set) falls back
+    to Cerebras (separate quota bucket). Prevents the pipeline from stalling
+    on long Groq backoffs when reconciling 5-10 events per run.
     """
     if LLM_PROVIDER == "groq":
-        return _call_groq(
+        attempts = 1 if CEREBRAS_API_KEY else 3
+        result = _call_groq(
             system_prompt,
             user_message,
             context,
             max_tokens=2500,
             model=RECONCILER_MODEL,
             delay=8,
+            max_attempts=attempts,
         )
+        if result is None and CEREBRAS_API_KEY:
+            logger.info("Groq failed for reconciler %s, falling back to Cerebras", context)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=2500, delay=8)
+        return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2000)
 
 
 def call_sentinel(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
     Call Sentinel — final coherence check on GPT-OSS-120B.
+    Routes Groq first; on 429 (fail fast when CEREBRAS_API_KEY set) falls back
+    to Cerebras. Prevents pipeline stalls on Sentinel coherence checks.
     Falls back to local Ollama deep model when LLM_PROVIDER=ollama.
     """
     if LLM_PROVIDER == "groq":
-        return _call_groq(
+        attempts = 1 if CEREBRAS_API_KEY else 3
+        result = _call_groq(
             system_prompt,
             user_message,
             context,
             max_tokens=1500,
             model=SENTINEL_MODEL,
             delay=6,
+            max_attempts=attempts,
         )
+        if result is None and CEREBRAS_API_KEY:
+            logger.info("Groq failed for sentinel %s, falling back to Cerebras", context)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=1500, delay=6)
+        return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=1500)
