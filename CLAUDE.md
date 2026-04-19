@@ -2,7 +2,7 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Cyril Leger (Neous Axis)
-> **État au 2026-04-17** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public.
+> **État au 2026-04-19** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public. Cron durci par lockfile anti-empilage (commit 84d0838). Batch classifier (B=5) déployé en code, A/B validation en cours pour lever le bottleneck quota Groq free tier.
 
 ---
 
@@ -182,7 +182,17 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ---
 
-## 🚨 À FAIRE — priorités ouvertes (2026-04-18)
+## 🚨 À FAIRE — priorités ouvertes (2026-04-19)
+
+### 0. Stabiliser le quota classifier (EN COURS — priorité absolue)
+
+**Problème identifié 2026-04-19** : crash silencieux du cron toutes les 15 min. Cause : Groq 429 en cascade (free tier 30 RPM saturé par classifier mono-article + analyst parallèle A||B). Chaque classification prenait 2-5 min (retry + backoff 80-150s), un run dépassait 15 min, le prochain cron démarrait en parallèle → **7 runs empilés en 2h**, 0 event sauvé pendant 18h.
+
+**Fixes appliqués / en cours** :
+- ✅ **Lockfile** dans `launcher/run_vps.sh` (`flock -n /tmp/carbon-worker.lock`, commit 84d0838) : un seul run actif à la fois, les cron suivants skip proprement si busy. Déployé 2026-04-19.
+- ⏳ **Batch classifier** (`CLASSIFIER_BATCH_SIZE=5`, code écrit, A/B validation en cours) : 5 articles / call LLM au lieu d'1 → x5 throughput sur le même quota. Fallback mono si la réponse JSON array est malformée. 18/18 tests unitaires passent.
+
+**Bottleneck restant** : `MAX_ARTICLES_PER_RUN=20` avec 1338 articles fetch/run → on en rate 98 %. Une fois le batch shippé, bumper à 60-100 pour tout classer.
 
 ### 1. Élargir les canaux de détection d'actions positives
 
@@ -276,10 +286,22 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 - [x] Recréation mint sur mainnet (2026-04-16)
 - [x] Migration worker → VPS Hetzner (2026-04-17)
 - [x] Migration frontend → VPS Hetzner (2026-04-17)
+- [x] **Lockfile flock** anti-empilage cron (2026-04-19, commit 84d0838)
+- [ ] **Batch classifier** (code écrit 2026-04-19, A/B validation en cours) — `CLASSIFIER_BATCH_SIZE=5` → x5 throughput classifier, fallback mono si parse JSON array fail, 18/18 tests unitaires OK
 - [ ] Liquidité initiale DEX — **REPORTÉE** : token reste indicateur scientifique virtuel jusqu'à traction institutionnelle (détails §Stratégie d'activation ci-dessous)
 - [ ] Monitoring (Uptime Kuma ou similaire)
 - [ ] Ajout Twitter/X via RSSHub Docker OU X API Basic
-- [ ] Fix rate-limit Groq 429 via **multi-providers free tier** : Analyst B sur Cerebras (llama-3.3-70b), Groq garde classifier/analyst A/reconciler/sentinel. 0 € / mois, 0 collision de quota.
+- [x] Fix rate-limit Groq 429 via **multi-providers free tier** : Analyst B sur Cerebras (qwen-3-235b), Groq garde classifier/analyst A/reconciler/sentinel. 0 € / mois, 0 collision de quota. (2026-04-18, Cerebras branché)
+
+### 🔮 Phase 6 — Enrichissement (backlog, post-stabilisation quota)
+- [ ] **Intégrer DeerFlow 2.0** (ByteDance, 62k★, MIT) comme lib Python modulaire (`DeerFlowClient` in-process, pas migration du core). Use cases ciblés :
+  - **Validation cross-source automatique** : quand Sentinel flag un event douteux, un sub-agent DeerFlow cherche la même news sur 3-5 sources indépendantes et confirme/infirme → renforce crédibilité scientifique (argument partenariat clé)
+  - **Enrichissement review queue** : chaque item pré-accompagné d'un brief research (historique, contexte, acteurs) → décision humaine en 30 s au lieu de 5 min
+  - **Rapports mensuels partenaires** (PDF "CARBON WORLD Q1 2026") : synthèse narrative + graphiques
+  - **Pitch pack outreach** : brief actu + priorités + contacts pour chaque institution ciblée
+- **Ne PAS remplacer le pipeline core** (8 agents Python) : DeerFlow n'a pas de gestion quota, pas de Web3, pas de scheduling natif → zéro gain sur le bottleneck, risque énorme sur stabilité prod
+- [ ] **Bump `MAX_ARTICLES_PER_RUN` 20 → 60-100** une fois le batch classifier validé en prod (ratio 20/1338 actuels = 98 % d'articles ratés)
+- [ ] Agent cross-source verification dédié (si fake news pattern observé 2-3 fois) — voir AGENTS_PROMPT_RULES.md §0.3
 
 ---
 

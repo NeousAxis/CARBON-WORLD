@@ -261,6 +261,64 @@ Le LLM a toujours identifié le risque de fragmentation territoriale (cohérent 
 - M4 procédure rotation SESSION_SECRET (documentation pure)
 - L1 `pip install -U solana solders pydantic...` (test devnet requis avant)
 
+### 2026-04-19 — 🔴 Incident crash silencieux cron + fix lockfile + batch classifier en cours
+
+**Symptôme** : dashboard affiche des events datés du 2026-04-18 (1d+ ago) alors que le cron VPS doit tourner toutes les 15 min. Dernier event sauvé : 2026-04-18 13:32 UTC → **18h sans nouvel event**.
+
+**Diagnostic** (`ssh carbon@157.90.250.40 "ps aux | grep python"`) :
+- **7 runs Python empilés** : 04:15, 04:30, 05:15, 05:30, 05:45, 06:00, 06:15 UTC
+- Le plus ancien tournait depuis 2h+
+- Cause racine : Groq 429 en cascade. Chaque classification mono-article prenait 2-5 min (retry + backoff 80-150s). Un run dépassait les 15 min → le cron suivant démarrait en parallèle → 4-7 runs concurrents qui tapaient sur le même quota Groq saturé → spiral infernale
+
+**Fixes appliqués** :
+
+1. **Kill runs empilés** (manuel) : `kill -9 <pids>` pour les 7 processes Python + scripts parents
+2. **Lockfile `flock`** dans `launcher/run_vps.sh` (commit 84d0838) :
+   ```bash
+   LOCKFILE="/tmp/carbon-worker.lock"
+   exec 200>"$LOCKFILE"
+   if ! flock -n 200; then
+     echo "=== SKIP: previous run still active ==="
+     exit 0
+   fi
+   ```
+   Un seul run actif à la fois. Les cron suivants skip proprement si busy. Testé : flock isolé → `SKIP_OK`.
+3. **Batch classifier** (code écrit, A/B en cours) : `CLASSIFIER_BATCH_SIZE=5` → 5 articles / call LLM au lieu d'1. Fichiers touchés :
+   - `worker/config.py` : nouvelle env var `CLASSIFIER_BATCH_SIZE` (default 5)
+   - `worker/prompts/sanitize.py` : `wrap_articles_batch_for_llm()` avec délimiteurs numérotés `<<<UNTRUSTED_ARTICLE_N_START/END>>>` + escape des injections
+   - `worker/prompts/classifier_prompt.py` : `CLASSIFIER_BATCH_PROMPT` (JSON array par index, classify each INDEPENDENTLY)
+   - `worker/agents/classifier.py` : `_classify_sub_batch()` + `_call_fast_raw()` + parse array, fallback mono si JSON fail / wrong length / indices cassés
+   - `worker/tests/test_classifier_batch.py` : **18/18 tests unitaires passent** (wrap batch, success path, fallback 4 cas, CLASSIFIER_BATCH_SIZE=1 legacy)
+
+**Math quota après batch** : 1338 articles/run / batch=5 = 268 calls/run. Avec 30 RPM Groq = 9 min pour tout classer. Plus de queue.
+
+**Bottleneck restant** : `MAX_ARTICLES_PER_RUN=20` → on rate 98% du fetch. À bumper à 60-100 une fois batch shippé.
+
+**Suite immédiate** : A/B test sur 20 articles réels (mono vs batch B=5), seuil de ship ≥ 95 % agreement. Si OK → commit + push + monitor 2-3 runs.
+
+### 2026-04-19 — Décision : NE PAS migrer vers DeerFlow 2.0 pour le pipeline core, mais l'intégrer modulairement en Phase 6
+
+**Question de Cyril** : est-ce que DeerFlow 2.0 (ByteDance, 62k★) ferait mieux que notre archi ?
+
+**Lecture du vrai README** (gh api + raw.githubusercontent) — DeerFlow 2.0 :
+- "Super agent harness for long-horizon tasks (minutes → hours)"
+- Lead agent + sub-agents parallèles + sandbox Docker/k8s par task
+- Skills : research, reports, slides, dashboards, content
+- Gateway mode + `DeerFlowClient` embarqué (lib Python, pas service standalone)
+- **Pas de scheduling natif** (orchestrateur externe requis)
+- **Pas de gestion quota LLM** (bottleneck Groq 429 non résolu, pire avec deep research)
+- **Pas de Web3 / Solana**
+
+**Verdict** : NON pour le core pipeline. Migrer = 2-3 semaines pour 0 gain sur le bottleneck quota + perte de la calibration fine des prompts (AGENTS_PROMPT_RULES.md).
+
+**Mais** 4 use cases annexes où DeerFlow apporterait vraie valeur (noté Phase 6 dans CLAUDE.md) :
+1. **Validation cross-source automatique** (manquant aujourd'hui) — renforce crédibilité scientifique
+2. **Enrichissement review queue** (brief research par event flaggué)
+3. **Rapports mensuels PDF partenaires** (Vakita / Shift / IDDRI)
+4. **Pitch pack outreach personnalisé** (brief institution cible)
+
+À activer **après stabilisation quota + 2 semaines prod sans incident**. Pas avant.
+
 ### 2026-04-18 — Cerebras branché pour Analyst B ✅ (test local OK, déploiement VPS à faire)
 - **Clé Cerebras** fournie par Cyril, ajoutée à `.env` local (Mac). À scp sur VPS.
 - **Modèle retenu** : `qwen-3-235b-a22b-instruct-2507` (235B params / A22B actif via MoE)
