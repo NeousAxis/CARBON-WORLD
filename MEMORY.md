@@ -228,6 +228,68 @@ Implémenté par sous-agent Sonnet sous spec `PUBLIC_API_PLAN.md`. Livraison ~2h
 
 **Phase B optimisation Collector** (améliorer réactivité dashboard) : timeout feedparser 15s → 5s + parallel fetch via ThreadPoolExecutor(30) → objectif passer Collector de 6-7 min à 1-2 min, rendre cron 5 min viable. À considérer après Tier 2 ou après 1 semaine d'observation Phase 3.
 
+### ✅ Tier 2 API déployée et validée en prod 2026-04-21 — premier POST partenaire réussi
+
+**Déploiement** : commit `d9261f6` pullé sur VPS, rebuild Next.js, restart carbon-web. Migration tables `api_keys` + `api_usage` + `submissions` exécutée par un run Python manuel après un `executescript` silent-fail (la 1re tentative n'avait créé que `api_keys`, la 2e a complété).
+
+**Clé API de test générée** : `9a9wFU5px4tR2T1dvl-kreId_tXHuJBq0a3hOKFsZ5c` (CARBON WORLD Internal Test, partner, 5 writes/day). Révocable via `UPDATE api_keys SET revoked_at = now() WHERE organization = 'CARBON WORLD Internal Test'`.
+
+**Smoke test prod réussi** :
+- POST sans Bearer → 401 ✅
+- POST Bearer invalide → 401 ✅
+- POST payload valide → **202 Accepted** + `submission_id=sub_20260421_carbonworldi_2692d7` + `queue_position=0` + `callback_url` fonctionnel ✅
+- GET `/submissions/:id` → `{status: pending, received_at: 2026-04-21T11:07:23.500Z}` ✅
+
+Au prochain run cron, la submission sera poppée en tête par `collector._collect_pending_submissions()`, passera au classifier + analyst avec `_prior_validation=true`, et sera scorée + TX Solana.
+
+### 🎯 Dashboard home page — 12 indicateurs validés par Cyril 2026-04-21
+
+Demande explicite : ajouter sur la home page des indicateurs de haut niveau. 4 demandés + 8 proposés = 12 validés.
+
+**Tier 1 — 4 demandés par Cyril** :
+1. Top 5 pays MINT (régressions institutionnelles)
+2. Top 5 pays BURN (actions positives concrètes)
+3. Top 5 régions les plus durables (ratio BURN / (BURN+MINT) pondéré)
+4. Top 10 administrations politiques durables
+
+**Tier 2 — temporels** :
+5. Supply net tendance 7 jours (sparkline + variation %)
+6. Event du jour (plus grand |score| des 24 dernières heures)
+7. Streak d'actions positives (plus grande série de BURN consécutifs)
+
+**Tier 3 — cadre éthique (7 référentiels)** :
+8-9. **Framework Activity · 7 Days** — indicateur visuel montré par Cyril (capture Claude Design). Card avec 7 lignes (SDG, UDHR, ILO, CRC, UNDRIP, Animal, PB), chaque ligne = barre 100% stack BURN/MINT + counts `+N / −N` à droite. **Remplace** les 2 indicateurs séparés Top SDG défendus / attaqués. Montre la **photo panoptique** de l'activité éthique mondiale.
+
+**Tier 4 — santé pipeline (transparence scientifique)** :
+10. Diversité des sources (% niche vs mainstream sur 7j)
+11. Cache hit rate Phase 3 (% events semanticement dédupliqués)
+12. Partenaires actifs (orgs ayant soumis via API cette semaine)
+
+**Approche géo validée** : heuristique Python regex (~200 pays + alias ISO + variantes FR/EN/ES/PT). Trade-off 80% précision vs 0 coût LLM. Backfill 56 events existants + extraction auto dans le pipeline (hook après Scorer ou dans Exporter). Colonnes DB à ajouter : `country`, `region`, `administration` (nullables, migration idempotente via `_migrate_schema`).
+
+**Spec pixel-perfect FrameworkBar** (fournie par Cyril via Claude Design) :
+- Composant `FrameworkBar({code, name, positive, negative})` → grid 80px / 1fr / 80px
+- Barre stackée : `(positive / total) * 100%` en vert, reste en rouge
+- Counts mono 11px : `+N` en `--cw-burn`, `−N` en `--cw-mint`
+- Tokens CSS à aligner : `--cw-burn #B6FFCE` (= `--success-fg` existant), `--cw-mint #FF5C33` (= `--destructive` existant), `--cw-bg-2 #222` (pas défini), `--cw-fg-1/3` (pas définis). Décision : ajouter des alias `--cw-*` dans `globals.css` pointant vers les tokens existants pour éviter duplication, ou accepter un bloc dédié.
+
+**Wrapper Card** : titre JetBrains Mono uppercase + meta string à droite (`"+ POSITIVE · − NEGATIVE"`).
+
+**Estimation dev (avec délégation Sonnet parallèle)** :
+- Lot A (4 demandés + tendance + event du jour) : **4-5h wall-clock**
+- Lot B (Framework Activity card) : **3-4h wall-clock**
+- Lot C (pipeline health 3 cards) : **1-2h wall-clock**
+- **Total : 8-11h** si séquentiel, réductible à 4-5h si les 3 lots lancés en parallèle (3 sous-agents Sonnet)
+
+**Prochaine action** (attend validation Cyril sur merge layout strategy) : créer 3 sous-agents Sonnet en parallèle, chacun touchant uniquement son domaine (pas de `page.tsx` modifié par les agents — Opus assemble le layout en fin de session).
+
+**Idées d'extensions FrameworkBar (backlog)** :
+- Largeur basée sur ratio de max-activité (pas 50/50 quand total=0)
+- Tooltip au hover avec le top event cité
+- Variante stacked verticale pour mobile
+- Variante barres divergentes centrées sur zéro
+- Heatmap jour × framework
+
 **Erreurs Claude reconnues lors de la session** :
 - Propositions initiales "plumber-thinking" (chercher plus de robinets LLM) sans intégrer la vraie mission du projet
 - Oubli de la décision 2026-04-18 (token non lancé, pas de communauté) → pitch compute-for-CBWD absurde, flaggé par Cyril

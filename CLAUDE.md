@@ -252,6 +252,25 @@ Analyse Cyril : sur le run 12:00 CEST, 1925 articles → 100 passés au classifi
 
 **Validation run test 2026-04-21 09:33 CEST** : 15 min 30 (vs 18h30 zombie avant), 16 VALID / 30 classifier, **8+ régions géographiques** dans les VALID (UK, Iran, Japon, Chine ×2, Palestine, Brésil ×2, LATAM via COP4 Escazú, Moyen-Orient, Australie) — du jamais vu sur ce pipeline qui capturait avant 2-3 régions US/EU-centric par run.
 
+**Tier 2 API (commit `d9261f6`)** : `POST /api/v1/events` authentifié Bearer, rate-limit 5 writes/jour/clé, CLI `worker/generate_api_key.py`, intégration pipeline complète (submissions en tête de queue avec `trust_weight=1.0` + `_prior_validation=true` en prompt Analyst). Smoke test prod OK : POST → 202 + submission_id, GET submission → pending, POST sans auth → 401. Clé de test active `9a9wFU5px4tR2T1dvl-kreId_tXHuJBq0a3hOKFsZ5c`.
+
+### 📋 Dashboard home — 12 indicateurs validés, implémentation reportée à prochaine session (2026-04-21)
+
+12 indicateurs validés par Cyril pour ajout sur la home page. Voir `MEMORY.md` §"Dashboard home page — 12 indicateurs" pour la liste complète et les specs. Points clés :
+
+- **4 indicateurs demandés par Cyril** : Top pays MINT, Top pays BURN, Top régions durables, Top administrations politiques durables
+- **3 indicateurs temporels** : supply tendance 7j, event du jour, streak BURN
+- **1 card "Framework Activity · 7 Days"** (spec pixel-perfect FrameworkBar fournie par Cyril via Claude Design) couvrant les 7 référentiels (SDG/UDHR/ILO/CRC/UNDRIP/Animal/PB) avec barres stack BURN/MINT + counts `+N / −N`
+- **3 cards pipeline health** : diversité sources, cache hit rate, partenaires actifs
+
+**Approche géo validée** : heuristique regex Python (~200 pays + alias multilingues), backfill 56 events existants, extraction auto dans le pipeline. Migration DB : colonnes `country` + `region` + `administration` (nullables, idempotentes).
+
+**Plan d'exécution prochaine session** (3 lots délégables en parallèle à 3 sous-agents Sonnet, wall-clock 4-5h total) :
+- Lot A : indicateurs géo (4 demandés + tendance + event du jour)
+- Lot B : Framework Activity card (composant FrameworkBar + endpoint agrégation)
+- Lot C : 3 cards pipeline health
+- Opus assemble le layout home en fin de session
+
 ### 1. Élargir les canaux de détection d'actions positives
 
 **Problème identifié** : le pipeline actuel (46 sources RSS institutionnelles/presse) capture surtout les **décisions gouvernementales nationales**. Il rate massivement les **actions positives locales** menées par des communautés, ONG, collectifs citoyens. Exemples concrets mentionnés par Cyril :
