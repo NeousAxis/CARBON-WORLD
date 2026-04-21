@@ -120,6 +120,10 @@ def write(event: dict) -> bool:
         "justification": _build_justification(analysis),
         "tx_hash": None,
         "created_at": datetime.now(tz=timezone.utc).isoformat(),
+        # Carry forward the embedding computed during the classifier pre-check
+        # so it is stored in the DB for future semantic cache lookups.
+        "embedding": article.get("embedding"),
+        "reused_from_event_id": None,
     }
 
     saved = save_event(event_data)

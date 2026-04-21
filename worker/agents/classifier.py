@@ -5,17 +5,30 @@ Uses the fast/small LLM model for speed (~5-8s per article).
 Supports batch mode (CLASSIFIER_BATCH_SIZE > 1): packs N articles into one LLM
 call, reducing Groq RPM consumption by ~N× at the same quota.  Falls back to
 mono classification if the batch call fails or returns malformed output.
+
+Semantic cache pre-check (Phase 3, 2026-04-20):
+  Before sending any article to the LLM, compute its embedding and search
+  carbon_events for a similar scored event in the last 7 days.  Cache hits skip
+  the entire classifier + analyst + sentinel chain — the previous verdict is
+  reused directly.  Cache misses proceed normally through the LLM pipeline.
 """
 
 import json
 import logging
 import re
+import sqlite3
+from datetime import datetime, timezone
 from typing import Optional
 
 from ollama_client import call_fast
 from prompts.classifier_prompt import CLASSIFIER_PROMPT, CLASSIFIER_BATCH_PROMPT
 from prompts.sanitize import wrap_article_for_llm, wrap_articles_batch_for_llm
-from config import CLASSIFIER_BATCH_SIZE
+from config import (
+    CLASSIFIER_BATCH_SIZE,
+    SEMANTIC_CACHE_ENABLED,
+    SEMANTIC_CACHE_DAYS,
+    SEMANTIC_CACHE_THRESHOLD,
+)
 
 logger = logging.getLogger("agent.classifier")
 
@@ -404,22 +417,140 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
 
 
 # ---------------------------------------------------------------------------
+# Semantic cache pre-check (Phase 3)
+# ---------------------------------------------------------------------------
+
+def _build_cache_text(article: dict) -> str:
+    """Build the input text for embedding: title + description (capped at 2000 chars)."""
+    title = article.get("title", "")
+    desc = (article.get("description", "") or "")[:2000]
+    return f"{title} — {desc}" if desc else title
+
+
+def _semantic_cache_precheck(
+    articles: list[dict],
+    conn: sqlite3.Connection,
+) -> tuple[list[dict], list[dict]]:
+    """
+    For each article, compute its embedding and search carbon_events for a similar
+    scored event within the last SEMANTIC_CACHE_DAYS days.
+
+    Returns
+    -------
+    (to_classify, cache_hits)
+        to_classify : articles that need LLM classification (no cache match)
+        cache_hits  : articles where a cache match was found — already enriched with
+                      verdict fields and _cache_hit=True so they can bypass LLM entirely
+
+    Each cache-hit article is enriched with:
+        _classified          : True
+        _valid               : True          (it was scored → it was valid)
+        _cache_hit           : True
+        _cache_source_id     : int           (event_id of the matched event)
+        _cache_cosine        : float
+        decision             : str
+        amount_crbn          : int
+        final_score          : float
+        confidence           : int
+        embedding            : bytes         (to store with the new event row)
+    """
+    from semantic_cache import compute_embedding, find_similar_recent
+
+    to_classify: list[dict] = []
+    cache_hits: list[dict] = []
+
+    for article in articles:
+        text = _build_cache_text(article)
+        try:
+            emb = compute_embedding(text)
+        except Exception as exc:
+            logger.warning(
+                "Embedding failed for '%s': %s — sending to LLM",
+                article.get("title", "")[:60], exc,
+            )
+            to_classify.append(article)
+            continue
+
+        match = find_similar_recent(
+            conn=conn,
+            embedding=emb,
+            days_back=SEMANTIC_CACHE_DAYS,
+            threshold=SEMANTIC_CACHE_THRESHOLD,
+        )
+        if match:
+            logger.info(
+                "Cache hit (cosine=%.3f): reusing verdict from event #%d — %s %s CBWD for '%s'",
+                match["cosine"],
+                match["event_id"],
+                match["decision"],
+                f'{match["amount_crbn"]:,}',
+                article.get("title", "")[:60],
+            )
+            enriched = {
+                **article,
+                "_classified": True,
+                "_valid": True,
+                "_cache_hit": True,
+                "_cache_source_id": match["event_id"],
+                "_cache_cosine": match["cosine"],
+                "decision": match["decision"],
+                "amount_crbn": match["amount_crbn"],
+                "final_score": match["final_score"],
+                "confidence": match["confidence"],
+                "embedding": emb,
+            }
+            cache_hits.append(enriched)
+        else:
+            # Attach embedding so the writer can store it when the event is saved
+            article["embedding"] = emb
+            to_classify.append(article)
+
+    logger.info(
+        "Semantic cache: %d hits (LLM skipped), %d articles forwarded to classifier.",
+        len(cache_hits), len(to_classify),
+    )
+    return to_classify, cache_hits
+
+
+# ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
 
-def classify_batch(articles: list[dict]) -> tuple[list[dict], list[dict]]:
+def classify_batch(
+    articles: list[dict],
+    conn: Optional[sqlite3.Connection] = None,
+) -> tuple[list[dict], list[dict]]:
     """
     Classify a list of articles. Returns (valid_articles, invalid_articles).
 
-    When CLASSIFIER_BATCH_SIZE == 1 (or the env var is set to 1), falls back to
-    legacy mono classify() per article.  Otherwise chunks the list into sub-batches
-    of CLASSIFIER_BATCH_SIZE and sends each sub-batch in one LLM call.
+    Semantic cache pre-check (Phase 3):
+      When SEMANTIC_CACHE_ENABLED=1 and *conn* is provided, each article's
+      embedding is computed and searched against recently scored events before
+      any LLM call.  Cache hits (cosine ≥ SEMANTIC_CACHE_THRESHOLD in the last
+      SEMANTIC_CACHE_DAYS days) are returned directly in *valid* with
+      _cache_hit=True — they never touch Groq/Cerebras quota.
 
-    On any sub-batch failure (None response, malformed JSON, wrong length/indices),
-    that sub-batch is re-classified using mono classify() on each article individually.
+    LLM classification (Phase 2, unchanged):
+      When CLASSIFIER_BATCH_SIZE == 1 (or the env var is set to 1), falls back to
+      legacy mono classify() per article.  Otherwise chunks the list into sub-batches
+      of CLASSIFIER_BATCH_SIZE and sends each sub-batch in one LLM call.
+
+      On any sub-batch failure (None response, malformed JSON, wrong length/indices),
+      that sub-batch is re-classified using mono classify() on each article individually.
     """
     valid: list[dict] = []
     invalid: list[dict] = []
+
+    # --- Semantic cache pre-check ---
+    if SEMANTIC_CACHE_ENABLED and conn is not None:
+        try:
+            articles, cache_hits = _semantic_cache_precheck(articles, conn)
+            valid.extend(cache_hits)
+        except Exception as exc:
+            logger.warning(
+                "Semantic cache pre-check failed (%s) — proceeding without cache.", exc
+            )
+            # articles unchanged — all go to LLM
 
     batch_size = CLASSIFIER_BATCH_SIZE
 
@@ -431,6 +562,14 @@ def classify_batch(articles: list[dict]) -> tuple[list[dict], list[dict]]:
         logger.info(
             "Classification complete (mono): %d valid, %d invalid out of %d total.",
             len(valid), len(invalid), len(articles),
+        )
+        return valid, invalid
+
+    if not articles:
+        # All articles were resolved by the semantic cache — nothing left for LLM
+        logger.info(
+            "Classification complete (all cache hits): %d valid, 0 invalid.",
+            len(valid),
         )
         return valid, invalid
 

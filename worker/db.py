@@ -74,6 +74,27 @@ def _init_schema(conn: sqlite3.Connection) -> None:
         CREATE INDEX IF NOT EXISTS idx_review_queue_url ON review_queue(event_url);
     """)
     conn.commit()
+    _migrate_schema(conn)
+
+
+def _migrate_schema(conn: sqlite3.Connection) -> None:
+    """Apply incremental schema migrations idempotently.
+
+    Each ALTER TABLE is wrapped in a try/except so that re-running on an
+    already-migrated database (VPS + local) is a no-op.
+    """
+    migrations = [
+        # Phase 3 — semantic dedup cache (2026-04-20)
+        "ALTER TABLE carbon_events ADD COLUMN embedding BLOB;",
+        "ALTER TABLE carbon_events ADD COLUMN reused_from_event_id INTEGER REFERENCES carbon_events(id);",
+    ]
+    for sql in migrations:
+        try:
+            conn.execute(sql)
+            conn.commit()
+        except sqlite3.OperationalError:
+            # Column already exists — safe to ignore
+            pass
 
 
 def close_connection() -> None:
@@ -112,6 +133,21 @@ def event_exists(link: str) -> bool:
         return False
 
 
+def update_embedding(event_id: int, embedding: bytes) -> bool:
+    """Store the embedding BLOB for an existing carbon_events row."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            "UPDATE carbon_events SET embedding = ? WHERE id = ?",
+            (embedding, event_id),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.error("Error updating embedding for event %d: %s", event_id, exc)
+        return False
+
+
 def update_tx_hash(event_id: int, tx_hash: str) -> bool:
     """Update the tx_hash column for a given event row."""
     try:
@@ -131,6 +167,10 @@ def save_event(event_data: dict) -> Optional[dict]:
     """
     Insert an event into carbon_events.
     Returns the inserted row as a dict, or None on error.
+
+    Optional keys:
+      embedding (bytes | None)          — 384-dim float32 BLOB for semantic cache
+      reused_from_event_id (int | None) — points to cache source event if this is a cache hit
     """
     try:
         conn = _get_conn()
@@ -139,8 +179,8 @@ def save_event(event_data: dict) -> Optional[dict]:
             INSERT INTO carbon_events
                 (event_title, event_url, event_source, decision,
                  amount_crbn, final_score, confidence, justification,
-                 tx_hash, created_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 tx_hash, created_at, embedding, reused_from_event_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 event_data.get("event_title", ""),
@@ -153,6 +193,8 @@ def save_event(event_data: dict) -> Optional[dict]:
                 event_data.get("justification", ""),
                 event_data.get("tx_hash"),
                 event_data.get("created_at", ""),
+                event_data.get("embedding"),           # bytes or None
+                event_data.get("reused_from_event_id"),  # int or None
             ),
         )
         conn.commit()

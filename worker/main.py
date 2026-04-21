@@ -44,7 +44,8 @@ logger = logging.getLogger("carbon.pipeline")
 try:
     import config  # noqa: F401 — triggers env var validation on import
     from config import MAX_ARTICLES_PER_RUN, MIN_HOURS_BETWEEN_RUNS
-    from db import event_exists
+    from db import event_exists, save_event, update_tx_hash, update_embedding
+    import db as _db_module
     from state import should_run_now, set_last_run
     from agents.collector import collect
     from agents.classifier import classify_batch
@@ -59,6 +60,61 @@ try:
 except EnvironmentError as exc:
     logger.critical("Invalid configuration: %s", exc)
     sys.exit(1)
+
+
+def _write_cache_hits(articles: list[dict]) -> int:
+    """
+    Persist articles that were resolved by the semantic cache without LLM analysis.
+
+    Each article already carries the verdict fields copied from the source event:
+      decision, amount_crbn, final_score, confidence, embedding, _cache_source_id
+
+    The Solana tx is intentionally skipped for cache hits — only genuinely new
+    analyses should trigger on-chain transactions.  The row is saved to carbon_events
+    with reused_from_event_id pointing to the source event for full traceability.
+
+    Returns the number of events successfully written.
+    """
+    count = 0
+    for article in articles:
+        title = article.get("title", "")
+        link = article.get("link", "")
+
+        if event_exists(link):
+            logger.info("Cache hit already in DB, skipping: '%s'", title[:60])
+            continue
+
+        event_data = {
+            "event_title": title[:500],
+            "event_url": link,
+            "event_source": article.get("source", ""),
+            "decision": article.get("decision", "NEUTRAL"),
+            "amount_crbn": article.get("amount_crbn", 0),
+            "final_score": article.get("final_score", 0.0),
+            "confidence": article.get("confidence", 0),
+            "justification": f"Semantic cache reuse (cosine={article.get('_cache_cosine', 0):.3f}) from event #{article.get('_cache_source_id', '?')}",
+            "tx_hash": None,
+            "created_at": datetime.now(tz=timezone.utc).isoformat(),
+            "embedding": article.get("embedding"),
+            "reused_from_event_id": article.get("_cache_source_id"),
+        }
+
+        saved = save_event(event_data)
+        if saved:
+            count += 1
+            logger.info(
+                "Cache-hit saved: [%s] %d CBWD | '%s' (source_event=#%s, cosine=%.3f)",
+                event_data["decision"],
+                event_data["amount_crbn"],
+                title[:50],
+                article.get("_cache_source_id", "?"),
+                article.get("_cache_cosine", 0.0),
+            )
+        else:
+            logger.warning("Cache-hit save failed for '%s'", title[:60])
+
+    logger.info("Cache-hit writer: %d/%d events saved.", count, len(articles))
+    return count
 
 
 def _parse_args() -> argparse.Namespace:
@@ -168,8 +224,18 @@ def main() -> int:
 
     # === Phase 2/8: CLASSIFIER ===
     logger.info("=== Phase 2/8: CLASSIFIER (%d articles) ===", total_classified)
-    valid_articles, invalid_articles = classify_batch(new_articles)
-    valid_count = len(valid_articles)
+    # Pass the DB connection so the semantic cache can search for similar recent events
+    _db_conn = _db_module._get_conn()
+    valid_articles, invalid_articles = classify_batch(new_articles, conn=_db_conn)
+
+    # Separate cache-hit articles (verdict already known) from articles that need LLM analysis
+    cache_hit_articles = [a for a in valid_articles if a.get("_cache_hit")]
+    valid_articles = [a for a in valid_articles if not a.get("_cache_hit")]
+
+    if cache_hit_articles:
+        _write_cache_hits(cache_hit_articles)
+
+    valid_count = len(valid_articles) + len(cache_hit_articles)
     invalid_count = len(invalid_articles)
 
     def _empty_report(analyzed=0, neutral=0, scored=0, saved=0, events=None):

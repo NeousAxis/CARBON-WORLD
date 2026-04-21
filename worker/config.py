@@ -48,3 +48,15 @@ MAX_PER_SOURCE_PER_RUN: int = int(os.getenv("MAX_PER_SOURCE_PER_RUN", "3"))
 # Default 5 → x5 throughput on the same Groq RPM quota.
 # Set to 1 to disable batching and use legacy mono-classification (for debugging).
 CLASSIFIER_BATCH_SIZE: int = int(os.getenv("CLASSIFIER_BATCH_SIZE", "5"))
+
+# Semantic deduplication cache settings.
+# When enabled, articles are embedded with a small CPU sentence-transformer model
+# (all-MiniLM-L6-v2, 25 MB) before the LLM classifier runs.  If a semantically
+# similar article was already scored in the last SEMANTIC_CACHE_DAYS days
+# (cosine similarity ≥ SEMANTIC_CACHE_THRESHOLD), the previous verdict is reused
+# without any LLM call, saving Groq/Cerebras quota on redundant coverage.
+# Set SEMANTIC_CACHE_ENABLED=0 to disable entirely (useful for debugging).
+SEMANTIC_CACHE_ENABLED: bool = os.getenv("SEMANTIC_CACHE_ENABLED", "1") in ("1", "true", "True")
+SEMANTIC_CACHE_DAYS: int = int(os.getenv("SEMANTIC_CACHE_DAYS", "7"))
+SEMANTIC_CACHE_THRESHOLD: float = float(os.getenv("SEMANTIC_CACHE_THRESHOLD", "0.92"))
+SEMANTIC_MODEL_NAME: str = os.getenv("SEMANTIC_MODEL_NAME", "all-MiniLM-L6-v2")
