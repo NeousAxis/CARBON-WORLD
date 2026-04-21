@@ -224,7 +224,7 @@ Implémenté par sous-agent Sonnet sous spec `PUBLIC_API_PLAN.md`. Livraison ~2h
 
 **Outreach vague 1 (attend Cyril)** : 8 emails FR cibles (Vakita, Shift, IDDRI, Reporterre, Greenpeace FR, GoodPlanet, Veolia, Mediapart) avec template FR/EN déjà rédigé dans `PUBLIC_API_PLAN.md` §"Pitch template".
 
-**Page `/partenaires`** sur frontend : à implémenter quand vague 1 produit le 1er logo.
+**Section Partenaires sur la HOME PAGE** (correction Cyril 2026-04-21 : NE PAS créer une page dédiée `/partenaires`, c'est une section sur la home). À implémenter quand vague 1 produit le 1er logo.
 
 **Phase B optimisation Collector** (améliorer réactivité dashboard) : timeout feedparser 15s → 5s + parallel fetch via ThreadPoolExecutor(30) → objectif passer Collector de 6-7 min à 1-2 min, rendre cron 5 min viable. À considérer après Tier 2 ou après 1 semaine d'observation Phase 3.
 

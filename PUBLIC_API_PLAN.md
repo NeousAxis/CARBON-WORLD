@@ -271,7 +271,7 @@ Modifications :
 > - **Lecture** : `GET /api/v1/events` vous donne accès à toutes les décisions scorées (JSON, CSV). Vous pouvez embed un widget sur votre site, citer nos scores dans vos rapports, les réutiliser librement.
 > - **Écriture** (optionnel) : `POST /api/v1/events` vous permet de nous pousser directement vos victoires ou observations terrain — elles entrent dans le pipeline scientifique avec une attribution explicite à [Nom de l'organisation].
 >
-> Contrepartie : logo de [Nom] sur notre page `/partenaires` (visible sur chaque event pertinent) et citation de [Nom] chaque fois que vos soumissions sont scorées.
+> Contrepartie : logo de [Nom] sur notre section Partenaires sur la home page (PAS une page dédiée — correction Cyril 2026-04-21) (visible sur chaque event pertinent) et citation de [Nom] chaque fois que vos soumissions sont scorées.
 >
 > Ce n'est pas un partenariat commercial — c'est un **outil de rayonnement scientifique mutuel**. Vos analyses gagnent en visibilité au-delà de vos cercles habituels, notre indice gagne en diversité et en légitimité.
 >
@@ -366,7 +366,7 @@ Temps de réponse lent attendu (grosses structures). Maintenir la relance à 2 s
 | 5. Implémentation POST /events + table submissions + intégration pipeline | 1 j | dépend 2+3. |
 | 6. Documentation OpenAPI + Swagger UI | 0.5 j | parallèle à 5. |
 | 7. Tests (unit + integration) + déploiement VPS | 0.5 j | dépend 5+6. |
-| 8. Page `/partenaires` sur le frontend | 0.5 j | parallèle à 5-7. |
+| 8. Section Partenaires sur la home page sur le frontend | 0.5 j | parallèle à 5-7. |
 | 9. Envoi vague 1 (8 emails médias+think tanks FR) | 1-2h (écriture + envoi manuel Cyril) | dépend 7+8. |
 | 10. Itération vagues 2 + 3 selon retours vague 1 | — | feedback-dépendant |
 
