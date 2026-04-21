@@ -2,7 +2,15 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Cyril Leger (Neous Axis)
-> **État au 2026-04-19** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public. Cron durci par lockfile anti-empilage (commit 84d0838). Batch classifier (B=5) déployé en code, A/B validation en cours pour lever le bottleneck quota Groq free tier.
+> **État au 2026-04-20** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public.
+> **Stack durci 2026-04-19** : lockfile flock, batch classifier B=5, fail-fast Cerebras sur tous les agents Groq, +20 sources RSS positives, prompt classifier étendu aux structural markers, TZ VPS Europe/Zurich.
+> **Reframe décisif 2026-04-20** : la crise quota n'est PAS un problème de compute, c'est un problème d'**échantillonnage**. Sur 1925 articles bruts du run 12:00 CEST, seuls 6 events finaux → ratio signal/bruit **0.3 %**. 94 % du quota LLM brûlé sur du bruit mainstream redondant (Guardian/BBC/Le Monde/dérivés AFP qui couvrent tous les mêmes décisions institutionnelles). Les signaux recherchés (coopératives, ONG, communautés, Sud global, victoires locales) vivent dans des sources low-volume (Mongabay Brasil, Cultural Survival, Waging Nonviolence, Reporterre) qui sont noyées dans le flux mainstream.
+> **Direction retenue (plan 10h dev)** : retravailler la **pêche**, pas le filet. Trois interventions qui respectent toutes les contraintes (€0, pas de Docker, pas de hardware, pas de Mac, pas de X payant, pas de partenariat, pas de keyword filter) :
+> 1. **Élargir RSS natif** (3-4h) : 66 → ~200 sources via feeds natifs (Reddit sub.rss, Mastodon @user.rss, NGOs, presse Sud, preprints arXiv/bioRxiv) — zéro outil intermédiaire, juste des URLs dans `rss_fetcher.py`
+> 2. **Source-capping** (1-2h) : `MAX_PER_SOURCE_PER_RUN=3` dans `_round_robin_interleave` → Guardian 50/run plafonné à 3, Sea Shepherd 2/run conservé intégral
+> 3. **Semantic dedup** (4-5h) : `sentence-transformers all-MiniLM-L6-v2` (25 MB pip), embeddings SQLite, cosine ≥ 0.92 avec verdict des 7 derniers jours → réutilise sans appel LLM
+>
+> **Options écartées 2026-04-20** (raison en parenthèses) : Groq/Cerebras paid (philosophie zéro coût), upgrade VPS CX42 €18/mois (refus), Mac 24/7 (refus), Schedule Wake (refus), WOL Mac (refus réveil auto + setup box), mini-PC dédié €300 one-time (refus hardware), compute-for-CBWD (crypto non lancée, pas de communauté, décision 2026-04-18), partenariat Infomaniak green cloud (déjà pris par AI-VISIONARY), filtre keyword pre-LLM (**aurait détruit la mission** en éliminant les bonnes nouvelles locales hors vocabulaire climat), mini-LLM CPU sur VPS (trop lent à l'échelle 200+ sources), RSSHub self-hosted (Docker trop lourd), flux X/Twitter (payant).
 
 ---
 
@@ -184,15 +192,55 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ## 🚨 À FAIRE — priorités ouvertes (2026-04-19)
 
-### 0. Stabiliser le quota classifier (EN COURS — priorité absolue)
+### 0. Crise quotas free tier — solution LLM local encore à trouver (priorité absolue)
 
-**Problème identifié 2026-04-19** : crash silencieux du cron toutes les 15 min. Cause : Groq 429 en cascade (free tier 30 RPM saturé par classifier mono-article + analyst parallèle A||B). Chaque classification prenait 2-5 min (retry + backoff 80-150s), un run dépassait 15 min, le prochain cron démarrait en parallèle → **7 runs empilés en 2h**, 0 event sauvé pendant 18h.
+**Contexte matinée 2026-04-19** : crash silencieux du cron (7 runs empilés, 0 event sauvé pendant 18h) → patchs en cascade :
+- ✅ **Lockfile flock** dans `launcher/run_vps.sh` (commit 84d0838)
+- ✅ **Batch classifier** B=5 (commit db2a296) — x5 throughput classifier
+- ✅ **20 nouvelles sources RSS** positives (commit a67a9d9) — NGO/community/solutions
+- ✅ **Cerebras fallback** pour classifier (commit 2fa5424)
+- ✅ **Fail-fast Groq → Cerebras** sur classifier+analyst (commit 1273d41) — plus d'attente 1000s
+- ✅ **Prompt classifier étendu** structural markers (commit 76d9d31) — accepte NGO registered cooperatives, named operations, scientific institutions
+- ✅ **Fail-fast étendu** Reconciler + Sentinel (commit 5d6f944)
+- ✅ **TZ VPS Europe/Zurich** (timedatectl)
+- ✅ `MAX_ARTICLES_PER_RUN=30` (compromis volume vs quota)
 
-**Fixes appliqués / en cours** :
-- ✅ **Lockfile** dans `launcher/run_vps.sh` (`flock -n /tmp/carbon-worker.lock`, commit 84d0838) : un seul run actif à la fois, les cron suivants skip proprement si busy. Déployé 2026-04-19.
-- ⏳ **Batch classifier** (`CLASSIFIER_BATCH_SIZE=5`, code écrit, A/B validation en cours) : 5 articles / call LLM au lieu d'1 → x5 throughput sur le même quota. Fallback mono si la réponse JSON array est malformée. 18/18 tests unitaires passent.
+**Run 12:00 CEST 2026-04-19** : 1er run complet réussi depuis 20h. 37 min, 6 MINT sauvés, commit export `b7b4d46` pushé.
 
-**Bottleneck restant** : `MAX_ARTICLES_PER_RUN=20` avec 1338 articles fetch/run → on en rate 98 %. Une fois le batch shippé, bumper à 60-100 pour tout classer.
+**Crise quotas restante** :
+- **Groq free tier** (30 RPM) : totalement saturé dès qu'on dépasse ~20 articles/run
+- **Cerebras free tier** : email quota à **90% consommé** reçu 2026-04-19 ~12:40 CEST
+- À ce rythme, les 2 providers vont être à sec dans quelques heures
+- **Conséquence** : dashboard ne se mettra pas à jour toutes les 15 min comme voulu
+
+**Options évaluées et décisions** :
+- ❌ **Groq paid tier** (~$3-5/mois, 300 RPM, drop-in) → **REFUSÉ par Cyril** (zéro coût absolu)
+- ❌ **Upgrade VPS Hetzner** CX42 16GB RAM pour Ollama qwen3:14b CPU (~€18/mois) → refusé
+- ❌ **Schedule Wake macOS** (Mac se réveille 2 min avant chaque cron, reste sleep 90% du temps, ~€1/mois d'électricité) → **REFUSÉ** par Cyril
+- ⏳ **Mac Cyril comme serveur LLM via tunnel** (48 GB RAM + qwen3:32b) → **EN RECHERCHE** : Cyril ne veut PAS laisser son Mac allumé H24 ET refuse schedule wake → solution à trouver
+- 💡 **Gemini free** (15 RPM, 1M tokens/jour) comme 3e bucket → pas encore implémenté, pourrait compléter Groq+Cerebras
+
+**✅ RESOLU 2026-04-20 — Reframe : problème d'échantillonnage, pas de compute**
+
+Analyse Cyril : sur le run 12:00 CEST, 1925 articles → 100 passés au classifier → 50 VALID → 6 events finaux. 94 % du quota LLM brûlé sur du bruit mainstream redondant. Le quota n'est pas trop petit, il est **mal dépensé**. Les bonnes nouvelles locales recherchées (coopératives, Sud global, victoires communautaires) vivent dans des sources low-volume noyées dans le flux mainstream.
+
+**Plan d'exécution retenu (3 phases, ~10h dev)** :
+
+1. **Phase 1 (3-4h)** — Élargir `worker/rss_fetcher.py` de 66 à ~200 sources via RSS natifs :
+   - Reddit sub.rss (r/UpliftingNews, r/solarpunk, r/ClimateActionPlan, r/africa, r/environment…)
+   - Mastodon @user.rss (80-100 journalistes climat/justice terrain)
+   - NGOs avec Atom natif (Amazon Watch, Land Rights Now, Survival International, FERN, La Via Campesina, Global Witness, Earthjustice, ClientEarth, Indigenous Environmental Network…)
+   - Presse Sud global (The New Humanitarian, Pacific Media Centre, Sixth Tone, China Dialogue, Efeverde, Mongabay BR/ES/FR, Diálogo Chino, Africa Is a Country, Afrik.com, Al-Monitor)
+   - Victoires citoyennes (Avaaz wins, GlobalGiving updates, ClientEarth legal wins)
+   - Preprints (arXiv q-bio, bioRxiv ecology)
+
+2. **Phase 2 (1-2h)** — Source-capping : nouvelle variable `MAX_PER_SOURCE_PER_RUN=3` dans `.env`, modification de `_round_robin_interleave` pour plafonner par source. Mainstream pondéré, niche 100 % préservé.
+
+3. **Phase 3 (4-5h)** — Semantic dedup : `pip install sentence-transformers` dans venv existant, modèle `all-MiniLM-L6-v2` (25 MB, CPU VPS ~50 ms/article), colonne `embedding BLOB` ajoutée à `carbon_events`, check cosine ≥ 0.92 avant appel classifier, réutilisation du verdict si hit.
+
+**Séquençage** : Phase 1+2 ensemble (effet immédiat diversité + équité), observer 1-2 runs VPS, puis Phase 3.
+
+**Contraintes respectées** : €0 récurrent, zéro hardware, zéro Docker, zéro Mac, pas de partenariat, pas de keyword filter (les bonnes nouvelles locales n'ont pas de vocabulaire climat).
 
 ### 1. Élargir les canaux de détection d'actions positives
 

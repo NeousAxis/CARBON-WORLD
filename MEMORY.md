@@ -4,6 +4,53 @@
 
 ---
 
+## 🎯 2026-04-20 — Reframe décisif : le problème est l'échantillonnage, pas le compute
+
+**Contexte** : après les 24h de patchs techniques 2026-04-19 (batch classifier, fail-fast Cerebras, lockfile, +20 sources, prompt étendu) qui n'avaient fait que retarder la saturation quotas, session d'arbitrage avec Cyril pour trouver une solution stable.
+
+**Analyse Cyril** (diagnostic qui change tout) :
+- Run 12:00 CEST : 1925 articles collectés → 100 classifier → 50 VALID → 6 events finaux
+- **Ratio signal/bruit = 0.3 %**. 94 % du quota LLM brûlé sur du bruit
+- Les 66 sources sont dominées par ~10 mainstream (Guardian, BBC, Le Monde, AFP-dérivés) qui produisent 80 % du volume en racontant tous les mêmes décisions institutionnelles
+- Ces sources mainstream sont **structurellement aveugles** à ce que le projet cherche : coopératives, ONG, communautés, Sud global, victoires locales
+- Les signaux pertinents vivent dans des sources low-volume (Mongabay Brasil, Cultural Survival, Waging Nonviolence, Reporterre) — 2-5 articles/run chacune — noyées dans le flux mainstream
+- **Le quota n'est pas trop petit, il est mal dépensé**
+
+**Options explorées et écartées lors de la session** :
+
+| Option | Statut | Raison |
+|---|---|---|
+| Multi-provider free tier étendu (Gemini + OpenRouter + Mistral) | ❌ | Ne résout pas le biais d'échantillonnage, juste déplace le robinet |
+| Wake-on-LAN Mac à travers NAT domestique | ❌ | Refus réveil auto + setup box/port-forward fragile |
+| Mini-PC dédié Intel N100 32 GB (€300 one-time) | ❌ | Refus hardware à gérer |
+| Cron horaire + cache sémantique | ❌ | Garde refresh 15 min, pas assez ambitieux |
+| VPS intelligent (mini-LLM Qwen2.5-1.5B CPU sur VPS) | ❌ | Trop lent pour la scale visée 200+ sources, rate le vrai problème |
+| Partenariat cloud vert Infomaniak ("Powered by") | ❌ | Infomaniak déjà pris par AI-VISIONARY (autre projet Cyril) |
+| Compute-for-CBWD (WebLLM visiteurs, rémunéré en token) | ❌ | **Crypto non lancée, pas de communauté** (décision 2026-04-18 oubliée par Claude — erreur flaggée) |
+| Filtre regex keyword pre-LLM | ❌ | **Aurait assassiné la mission** : les bonnes nouvelles locales n'ont précisément pas de vocabulaire climat (coopérative mozambicaine, baleine Allemagne, solar Madagascar ne contiennent pas "climate/justice") |
+| RSSHub self-hosted Docker | ❌ | Refus Docker ("trop lourd") |
+| Flux X/Twitter | ❌ | Payant (X API) ou scraping cassé |
+
+**Décision retenue : retravailler la PÊCHE, pas le FILET**.
+
+Trois interventions compatibles avec TOUTES les contraintes (€0, pas de hardware, pas de Docker, pas de X payant, pas de Mac, pas de partenariat, pas de keyword filter) :
+
+1. **Élargir RSS natif** (3-4h) : passer de 66 à ~200 sources via feeds natifs existants (Reddit sub.rss, Mastodon @user.rss, NGOs Atom, presse Sud global, preprints arXiv/bioRxiv). Zéro outil intermédiaire, juste des URLs ajoutées dans `rss_fetcher.py`.
+2. **Source-capping** (1-2h) : `MAX_PER_SOURCE_PER_RUN=3` → Guardian 50/run plafonné à 3, Sea Shepherd 2/run conservé intégral. Équité automatique, signal niche protégé par design. Modification dans `_round_robin_interleave`.
+3. **Semantic dedup** (4-5h) : `sentence-transformers all-MiniLM-L6-v2` (25 MB pip), embeddings stockés SQLite (colonne `embedding BLOB`), cosine ≥ 0.92 avec verdict des 7 derniers jours → réutilise verdict sans appel LLM. 5 sources couvrant la même loi UE → 1 appel au lieu de 5.
+
+**Séquençage validé** : Phase 1+2 ensemble d'abord (effet immédiat diversité + mainstream pondéré), observer 1-2 runs VPS, puis Phase 3. Total ~10h dev.
+
+**Erreurs Claude reconnues lors de la session** :
+- Propositions initiales "plumber-thinking" (chercher plus de robinets LLM) sans intégrer la vraie mission du projet
+- Oubli de la décision 2026-04-18 (token non lancé, pas de communauté) → pitch compute-for-CBWD absurde, flaggé par Cyril
+- Filtre keyword proposé comme "efficacité" sans réaliser qu'il détruisait l'objectif principal du projet (capter les bonnes nouvelles hors vocabulaire conventionnel)
+- Répétition de réponses à cause de non-respect du hook `[Session: <MODEL>]` → perte de tokens Cyril
+
+**Leçon intégrée** : avant toute proposition d'optimisation pipeline, revalider qu'elle n'élimine pas les signaux recherchés par la mission. La mission prime sur l'efficacité.
+
+---
+
 ## 🔖 Résumé de fin de session 2026-04-14
 
 **En une phrase** : Phase 1 (worker IA) et Phase 2 (automation launchd) sont **entièrement terminées et installées**. Le système tournera tout seul 3×/jour demain.
@@ -260,6 +307,78 @@ Le LLM a toujours identifié le risque de fragmentation territoriale (cohérent 
 - M2 sudo whitelist `carbon` (friction UX, décision Cyril)
 - M4 procédure rotation SESSION_SECRET (documentation pure)
 - L1 `pip install -U solana solders pydantic...` (test devnet requis avant)
+
+### 2026-04-19 — 🔴 Crise quota free tier : Cerebras à 90%, Groq saturé, recherche solution LLM local sans Mac 24/7
+
+**Bilan de journée** :
+
+**Matinée** : crash silencieux du cron (7 runs empilés sur 2h, 0 event en DB pendant 18h). Cause = Groq 429 en cascade sur classifier mono-article + analyst parallèle A||B. Voir entry suivante pour le détail des fixes.
+
+**Après-midi** : série de correctifs appliqués en urgence (tous pushés sur main) :
+- `84d0838` — Lockfile flock anti-empilage cron
+- `db2a296` — Batch classifier B=5 (x5 throughput classifier, 18/18 tests OK)
+- `a67a9d9` — +20 sources RSS positives (Anthropocene, Mongabay India/Brasil, Greenpeace, Oceana, Sea Shepherd, Rainforest Trust, Rewilding Europe, 350.org, UCSUSA, Canary Media, Grist Solutions, Yes Magazine, Waging Nonviolence, Shareable, Cultural Survival, IC Magazine, Reporterre, Wikinews, The Revelator) → 46→66 sources
+- `216062e` — MAJ docs CLAUDE.md + MEMORY.md
+- `2fa5424` — Cerebras fallback pour classifier (mono + batch) quand Groq 429-exhausted
+- `1273d41` — Fail-fast Groq→Cerebras (max_attempts=1) sur classifier + analyst A quand Cerebras dispo → élimine les backoffs Groq de 1000s+
+- `76d9d31` — Prompt classifier étendu structural markers (coopératives enregistrées, NGO named operations, scientific expeditions). Résout le cas concret "Mozambican women cooperative" flaggé par Cyril
+- `5d6f944` — Fail-fast étendu Reconciler + Sentinel
+- TZ VPS changé à `Europe/Zurich` (timedatectl)
+- `MAX_ARTICLES_PER_RUN=30` (compromis, était 20 → bumpé à 100 trop agressif → retour à 30)
+
+**Premier run complet post-fix — 12:00 CEST** : pipeline terminé en 37 min (vs 18h d'échec avant). 
+- Collecte 1925 articles (20 nouvelles sources apportent +586 articles/run)
+- Classifier batch : 100 articles en 7 min, 50 VALID / 50 INVALID (ratio 50% vs 20-30% avant → prompt étendu fait son job)
+- Analysts A+B parallèle : 9 events acceptés A, 9 B sur 50 VALID
+- Reconciler : 6 actionnables
+- Sentinel : 5 OK + 1 flaggé (Alpine Ash forests polarity error : protection espèces menacées = BURN mais verdict MINT → review humaine)
+- Writer : 6 events sauvés (dont 1 en review queue)
+- Solana TX + export.json + git push ✅ — commit `b7b4d46`
+
+**Events sauvés (tous MINT, samedi saturé de mauvaises nouvelles + guerre)** :
+| Event | Score | Amount | Source |
+|---|---|---|---|
+| Louisiana Supreme Court oil/gas | -4.22 | 750K CBWD | SCOTUS |
+| EU banned pesticides | -3.11 | 1.5M CBWD | EC |
+| Pará Belo Sun Amazon gold mining | -4.38 | 750K CBWD | Mongabay |
+| Alpine Ash forests (FLAGGÉ Sentinel) | +2.15 | 150K CBWD | ABC AU |
+| Defending Glaciers regression | -4.68 | 750K CBWD | Cultural Survival |
+| **US Strait of Hormuz blockade** | **-6.21** | **5M CBWD** | Al Jazeera |
+
+**Crise quotas émergée en fin de pipeline** :
+- Groq free tier 30 RPM totalement saturé dès qu'on dépasse 20 articles/run — tous les appels reviennent 429
+- Cerebras free tier : **email 90% quota consommé reçu ~12:40 CEST**. Projection : quelques heures avant coupure
+- À ce stade, aucun provider cloud gratuit disponible pour tenir le rythme 96 runs/jour × 30 articles
+
+**Options évaluées et décisions 2026-04-19** :
+
+| Option | Coût | Décision Cyril |
+|---|---|---|
+| Groq paid tier (300 RPM, ~$3-5/mois) | $3-5/mois | ❌ REFUSÉ (philosophie zéro coût) |
+| VPS Hetzner CX42 (16 GB RAM, Ollama qwen3:14b CPU-only) | €18/mois (+€14) | ❌ REFUSÉ (ajouterait ~€14/mois vs VPS actuel) |
+| Mac Cyril (48 GB RAM + qwen3:32b) + cloudflared tunnel, Mac allumé H24 | €0 | ❌ REFUSÉ (ne veut pas laisser Mac allumé en continu) |
+| Schedule Wake macOS (Mac réveillé 2 min avant chaque cron via `pmset`, sleep 90% du temps, ~€1/mois électricité) | ~€1/mois | ❌ REFUSÉ sans argumentaire explicite |
+| Gemini free (15 RPM, 1M tokens/jour) comme 3e bucket cloud | €0 | ⏳ pas encore implémenté, à tenter comme complément |
+
+**Problème ouvert** : comment avoir un LLM qualité (Qwen3:32b ou équivalent) tournant en permanence sans :
+- Coût récurrent
+- Laisser le Mac allumé H24
+- Schedule wake macOS
+- Upgrade VPS payant
+
+**Directions à explorer (session suivante)** :
+1. **Wake-on-LAN via UDP magic packet** : VPS peut envoyer paquet WOL vers l'IP publique du Mac avant chaque cron. Nécessite port-forwarding UDP 9 sur la box Internet + Mac "Wake on Network Access" activé. Fiabilité NAT/Wi-Fi douteuse.
+2. **Webhook-triggered wake via Apple Shortcuts + Raccourci domotique** : impossible à distance sans infra home-automation.
+3. **Serveur low-cost dédié CPU-only 32+ GB RAM** : OVH Kimsufi/SoYouStart ~€20-30/mois — inférence qwen3:32b CPU lente (~1-2 min/call) mais stable.
+4. **Agréger 3-4 providers free tier** (Groq + Cerebras + Gemini + OpenRouter free) avec routing intelligent par bucket disponible. Déjà partiellement fait (Groq+Cerebras), étendre.
+5. **Self-host sur RaspberryPi + GPU USB** (Jetson Nano, TPU Coral) : one-time cost ~€100, puis €0 récurrent, mais limité en taille modèle.
+6. **Self-host sur un vieux laptop laissé à côté du routeur** : "serveur" dédié, consommation ~15-30W, modèle qwen3:8b-14b possible avec 16+ GB RAM. Pas besoin du Mac de Cyril.
+
+**État final fin de journée (à 12:45 CEST)** :
+- Pipeline CODE complet et robuste (batch, fail-fast, prompt étendu, lockfile) — tous tests OK, déployé
+- Pipeline DATA : 1 run complet aujourd'hui (12:00), 6 events, export pushé
+- Pipeline FUTUR : va se dégrader dans quelques heures quand Cerebras tombe à 0 → Groq seul → 429 cascade → pipeline meurt
+- Solution permanente à trouver dans les 24h pour éviter récidive du silence DB
 
 ### 2026-04-19 — 🔴 Incident crash silencieux cron + fix lockfile + batch classifier en cours
 
