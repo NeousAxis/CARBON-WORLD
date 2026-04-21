@@ -157,6 +157,15 @@ def _call_groq(
                     backoff = float(retry_after) if retry_after else 20.0 * attempt
                 except ValueError:
                     backoff = 20.0 * attempt
+                # Cap backoff at 60s to avoid indefinite blocking when daily
+                # quota is exhausted (providers may send Retry-After: 86400 on
+                # daily reset). Better to fail fast and let the next cron try.
+                if backoff > 60.0:
+                    logger.error(
+                        "Groq Retry-After=%ss for %s (likely daily quota exhausted); failing fast.",
+                        int(backoff), context,
+                    )
+                    return None
                 backoff = max(backoff, 5.0)
                 logger.warning(
                     "Groq 429 for %s (model=%s, attempt %d/%d), backing off %.1fs",
@@ -227,6 +236,15 @@ def _call_cerebras(
                     backoff = float(retry_after) if retry_after else 20.0 * attempt
                 except ValueError:
                     backoff = 20.0 * attempt
+                # Cap backoff at 60s to avoid indefinite blocking. Cerebras
+                # sends Retry-After: 86400 when the daily quota is reset;
+                # honoring it literally froze the pipeline for 18h+ on 2026-04-20.
+                if backoff > 60.0:
+                    logger.error(
+                        "Cerebras Retry-After=%ss for %s (likely daily quota exhausted); failing fast.",
+                        int(backoff), context,
+                    )
+                    return None
                 backoff = max(backoff, 5.0)
                 logger.warning(
                     "Cerebras 429 for %s (model=%s, attempt %d/%d), backing off %.1fs",
