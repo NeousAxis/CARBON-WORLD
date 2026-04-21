@@ -14,7 +14,7 @@ from typing import Optional
 import feedparser
 import requests
 
-from worker.config import MAX_PER_SOURCE_PER_RUN
+from config import MAX_PER_SOURCE_PER_RUN
 
 logger = logging.getLogger(__name__)
 

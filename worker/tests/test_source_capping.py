@@ -12,7 +12,7 @@ import os
 from unittest.mock import patch
 
 # Allow importing from worker/ when running pytest from the repo root
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 
 def _make_articles(source_name: str, count: int) -> list[dict]:
@@ -34,7 +34,7 @@ class TestCapAppliedToLargeSource:
 
     def test_large_source_is_truncated(self, monkeypatch):
         """A source returning 50 articles should be capped to MAX_PER_SOURCE_PER_RUN=3."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
 
         # Minimal RSS_SOURCES list: one big source
         fake_sources = [{"url": "http://fake/guardian", "name": "The Guardian"}]
@@ -51,7 +51,7 @@ class TestCapAppliedToLargeSource:
 
     def test_top_articles_are_kept(self, monkeypatch):
         """The first N articles (head) are kept when truncating."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
 
         fake_sources = [{"url": "http://fake/bbc", "name": "BBC"}]
         monkeypatch.setattr(fetcher_mod, "RSS_SOURCES", fake_sources)
@@ -73,7 +73,7 @@ class TestSmallSourceNotAffected:
 
     def test_small_source_keeps_all_articles(self, monkeypatch):
         """Sea Shepherd with 2 articles and cap=3 → all 2 kept."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
 
         fake_sources = [{"url": "http://fake/seashepherd", "name": "Sea Shepherd"}]
         monkeypatch.setattr(fetcher_mod, "RSS_SOURCES", fake_sources)
@@ -89,7 +89,7 @@ class TestSmallSourceNotAffected:
 
     def test_source_exactly_at_cap(self, monkeypatch):
         """Source with exactly MAX_PER_SOURCE_PER_RUN articles keeps all."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
 
         fake_sources = [{"url": "http://fake/mongabay", "name": "Mongabay Brasil"}]
         monkeypatch.setattr(fetcher_mod, "RSS_SOURCES", fake_sources)
@@ -109,7 +109,7 @@ class TestZeroDisablesCapping:
 
     def test_zero_passes_all_articles(self, monkeypatch):
         """With cap=0, a source with 50 articles returns all 50."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
 
         fake_sources = [{"url": "http://fake/guardian", "name": "The Guardian"}]
         monkeypatch.setattr(fetcher_mod, "RSS_SOURCES", fake_sources)
@@ -125,7 +125,7 @@ class TestZeroDisablesCapping:
 
     def test_zero_does_not_log_capping(self, monkeypatch, caplog):
         """With cap=0, no capping log message is emitted."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
         import logging
 
         fake_sources = [{"url": "http://fake/guardian", "name": "The Guardian"}]
@@ -137,7 +137,7 @@ class TestZeroDisablesCapping:
 
         monkeypatch.setattr(fetcher_mod, "_fetch_single_source", fake_fetch_single)
 
-        with caplog.at_level(logging.INFO, logger="worker.rss_fetcher"):
+        with caplog.at_level(logging.INFO, logger="rss_fetcher"):
             fetcher_mod.fetch_all_articles()
 
         assert "Source-capping" not in caplog.text
@@ -148,7 +148,7 @@ class TestMultiSourceInterleaving:
 
     def test_mainstream_capped_niche_preserved(self, monkeypatch):
         """Guardian(50) and SeaShepherd(2) with cap=3 → total 5 (3+2)."""
-        import worker.rss_fetcher as fetcher_mod
+        import rss_fetcher as fetcher_mod
 
         fake_sources = [
             {"url": "http://fake/guardian", "name": "The Guardian"},
