@@ -23,11 +23,12 @@ git reset --hard origin/main --quiet
 
 AFTER=$(git rev-parse HEAD)
 
-# Detect frontend source changes (ignore web/data/ which is just runtime export)
+# Detect frontend or RSS source list changes (ignore web/data/ which is just runtime export)
 if [ "$BEFORE" != "$AFTER" ]; then
-  CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" -- "web/" ":(exclude)web/data/" | head -1)
+  CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" -- "web/" ":(exclude)web/data/" "worker/rss_fetcher.py" | head -1)
   if [ -n "$CHANGED" ]; then
-    echo "Frontend source changed, rebuilding Next.js..."
+    echo "Frontend or RSS source list changed, regenerating sources.json and rebuilding Next.js..."
+    python3 scripts/export_sources.py
     cd web
     npm install --no-audit --no-fund --silent
     npm run build
