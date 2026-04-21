@@ -178,6 +178,56 @@ Le threshold 0.92 est **strict à dessein** — il matche les vraies redondances
 4. Si hit rate < 30% après 1 semaine, envisager de baisser threshold à 0.90
 5. Bump MAX_ARTICLES_PER_RUN de 30 à 60-100 une fois Phase 3 qui absorbe la charge
 
+### ✅ Phase 3 déployée VPS + backfill 2026-04-21 (matin)
+
+**Install VPS** : `pip install sentence-transformers` → 5.4.1 + torch 2.11 + transformers 5.5.4 + cuda-toolkit 13 (inutile sur VPS CPU-only, mais installé par défaut). Disque VPS : 4.5G → 12G (7.5G ajoutés). Model `all-MiniLM-L6-v2` téléchargé au 1er appel.
+
+**Observation initiale** : sur 4 runs Phase 3 consécutifs (10:15, 10:30, 11:00, 11:30), **0 cache hits / 30 articles** — normal car seul 1 event en DB avait un embedding (les events #1 à #49 créés avant Phase 3).
+
+**Backfill 49/49 events** via script one-shot sur VPS (~2 min avec modèle chargé) : pour chaque event sans embedding, concat `event_title + ' — ' + justification[:1800]`, `compute_embedding()`, `UPDATE carbon_events SET embedding = ? WHERE id = ?`. DB state après : **56 events total, 56 avec embedding (100%)**.
+
+**Premier vrai test du cache** attendu au run cron 12:00 CEST (corpus indexé complet, articles entrants risquent de matcher des verdicts historiques : Iran US tensions, Japan whaling, China coal/nuclear…).
+
+### ✅ API publique Tier 1 livrée 2026-04-21
+
+Implémenté par sous-agent Sonnet sous spec `PUBLIC_API_PLAN.md`. Livraison ~2h.
+
+**6 routes GET sur `https://carbon-token.xyz/api/v1/*`** (commit `e38bb4c`) :
+- `GET /events` — liste paginée (limit/offset/decision/since/source filters), exclut `justification`
+- `GET /events/:id` — détail avec justification 4D éthique complète + `link_explorer` Solana
+- `GET /stats` — total events, by_decision counts, total_supply (minted/burned/net), cache_stats
+- `GET /sources` — 157 sources (servies depuis `web/data/sources.json`)
+- `GET /health` — liveness probe, HTTP 503 si DB unreachable (non rate-limité)
+- `GET /openapi.json` — OpenAPI 3.1 spec des 5 routes utilitaires
+
+**Infrastructure** :
+- `better-sqlite3` synchrone read-only, connexion cachée module-level
+- `PRAGMA table_info` check au startup → API **backward-compatible** avec DBs pre- ou post-migration Phase 3 (colonnes `embedding` + `reused_from_event_id` incluses conditionnellement dans SELECT)
+- Rate limiter in-memory sliding-window : **100 req/jour/IP**, purge hourly, headers `X-RateLimit-{Limit,Remaining,Reset}` sur chaque response
+- CORS ouvert (`Access-Control-Allow-Origin: *`) pour embed externe (think tanks, médias)
+- Response helpers avec CORS + rate-limit headers standardisés
+
+**Smoke test prod 2026-04-21** : 10/10 tests passent (health, events list + filter, single event 200 + 404, stats counts, sources 157, openapi valid, CORS, rate-limit).
+
+**Auto-regen `sources.json`** (commit `dc75431`) : nouveau script `scripts/export_sources.py` (produit `web/data/sources.json` à partir de `RSS_SOURCES`), wiré dans `launcher/run_vps.sh` pour régénérer au prochain déploiement touchant `web/` ou `worker/rss_fetcher.py`. Évite la dérive observée (sources.json stale à 66 entries pendant que rss_fetcher en a 157).
+
+### 🎯 Suites directes — Tier 2 API + Outreach vague 1
+
+**Tier 2 Partner Bearer (à implémenter)** :
+- `POST /api/v1/events` avec auth Bearer, rate-limit 5 events/jour/clé
+- `POST /api/v1/events/:id/comment` pour annotations partenaires
+- `POST /api/v1/keys/:id/webhook` pour webhook registrable
+- Tables `api_keys` (tier, quotas, webhook_url, revoked_at), `api_usage` (audit trail), `submissions` (pending → scored)
+- CLI `worker/generate_api_key.py <org> <tier>` — 32 chars urlsafe, SHA-256 en DB, plain affiché 1×
+- Intégration pipeline : `worker/collector.py` pop les submissions pending au démarrage de run, merge avec classifier queue en `source_type="partner_direct"`, `trust_weight=1.0`, `prior_validation=true`
+- Modif `worker/prompts/analyst_prompt.py` : section conditionnelle en user_msg si `prior_validation=true`
+
+**Outreach vague 1 (attend Cyril)** : 8 emails FR cibles (Vakita, Shift, IDDRI, Reporterre, Greenpeace FR, GoodPlanet, Veolia, Mediapart) avec template FR/EN déjà rédigé dans `PUBLIC_API_PLAN.md` §"Pitch template".
+
+**Page `/partenaires`** sur frontend : à implémenter quand vague 1 produit le 1er logo.
+
+**Phase B optimisation Collector** (améliorer réactivité dashboard) : timeout feedparser 15s → 5s + parallel fetch via ThreadPoolExecutor(30) → objectif passer Collector de 6-7 min à 1-2 min, rendre cron 5 min viable. À considérer après Tier 2 ou après 1 semaine d'observation Phase 3.
+
 **Erreurs Claude reconnues lors de la session** :
 - Propositions initiales "plumber-thinking" (chercher plus de robinets LLM) sans intégrer la vraie mission du projet
 - Oubli de la décision 2026-04-18 (token non lancé, pas de communauté) → pitch compute-for-CBWD absurde, flaggé par Cyril

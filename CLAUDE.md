@@ -2,7 +2,7 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Cyril Leger (Neous Axis)
-> **État au 2026-04-20** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public.
+> **État au 2026-04-21** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **Phases 1+2+3 du reframe sampling livrées et validées en prod**, **API publique Tier 1 (6 routes GET) live** sur `https://carbon-token.xyz/api/v1/*`.
 > **Stack durci 2026-04-19** : lockfile flock, batch classifier B=5, fail-fast Cerebras sur tous les agents Groq, +20 sources RSS positives, prompt classifier étendu aux structural markers, TZ VPS Europe/Zurich.
 > **Reframe décisif 2026-04-20** : la crise quota n'est PAS un problème de compute, c'est un problème d'**échantillonnage**. Sur 1925 articles bruts du run 12:00 CEST, seuls 6 events finaux → ratio signal/bruit **0.3 %**. 94 % du quota LLM brûlé sur du bruit mainstream redondant (Guardian/BBC/Le Monde/dérivés AFP qui couvrent tous les mêmes décisions institutionnelles). Les signaux recherchés (coopératives, ONG, communautés, Sud global, victoires locales) vivent dans des sources low-volume (Mongabay Brasil, Cultural Survival, Waging Nonviolence, Reporterre) qui sont noyées dans le flux mainstream.
 > **Direction retenue (plan 10h dev)** : retravailler la **pêche**, pas le filet. Trois interventions qui respectent toutes les contraintes (€0, pas de Docker, pas de hardware, pas de Mac, pas de X payant, pas de partenariat, pas de keyword filter) :
@@ -241,6 +241,16 @@ Analyse Cyril : sur le run 12:00 CEST, 1925 articles → 100 passés au classifi
 **Séquençage** : Phase 1+2 ensemble (effet immédiat diversité + équité), observer 1-2 runs VPS, puis Phase 3.
 
 **Contraintes respectées** : €0 récurrent, zéro hardware, zéro Docker, zéro Mac, pas de partenariat, pas de keyword filter (les bonnes nouvelles locales n'ont pas de vocabulaire climat).
+
+**✅ LIVRÉ 2026-04-21** :
+- Phase 1 (commit `76081b3`) : 157 sources RSS actives, User-Agent fallback Reddit fonctionnel
+- Phase 2 (commit `3453ee9`) : `MAX_PER_SOURCE_PER_RUN=3` en prod, 1925 → 411 articles après cap (÷ 4.7), 139/157 sources cappées sur le run test
+- Phase 3 (commit `5ffacbc`) : `sentence-transformers all-MiniLM-L6-v2` (25 MB) embedding sur VPS, 56 events indexés (49 backfillés + 7 créés post-deploy), cache precheck actif avec cosine ≥ 0.92 sur 7 jours glissants
+- Fix anti-zombie (commit `0b51ef2`) : backoff `Retry-After` cap 60s + fail-fast si > 60s — résout l'incident 18h30 du 2026-04-20 (Cerebras avait envoyé `Retry-After: 86400` = 24h)
+- Fix import convention (commit `bb952fd`) : `from config import` (repo style), pas `from worker.config`
+- **API publique Tier 1** (commits `e38bb4c` + `dc75431`) : routes `GET /api/v1/{events, events/:id, stats, sources, health, openapi.json}` en prod sur `carbon-token.xyz`, rate-limit 100/jour/IP, CORS ouvert, `sources.json` auto-regeneré par `scripts/export_sources.py` dans `run_vps.sh`
+
+**Validation run test 2026-04-21 09:33 CEST** : 15 min 30 (vs 18h30 zombie avant), 16 VALID / 30 classifier, **8+ régions géographiques** dans les VALID (UK, Iran, Japon, Chine ×2, Palestine, Brésil ×2, LATAM via COP4 Escazú, Moyen-Orient, Australie) — du jamais vu sur ce pipeline qui capturait avant 2-3 régions US/EU-centric par run.
 
 ### 1. Élargir les canaux de détection d'actions positives
 
