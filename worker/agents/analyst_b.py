@@ -8,7 +8,7 @@ import logging
 from typing import Optional
 
 from ollama_client import call_analyst_b
-from prompts.analyst_prompt import ANALYST_PROMPT
+from prompts.analyst_prompt import ANALYST_PROMPT, PRIOR_VALIDATION_CONTEXT_TEMPLATE
 
 logger = logging.getLogger("agent.analyst_b")
 
@@ -19,6 +19,9 @@ def analyze(article: dict) -> Optional[dict]:
 
     Returns the analysis result dict (with validation, scores, decision, etc.)
     or None if the LLM call fails or returns unparseable output.
+
+    If the article carries _prior_validation=True (partner submission), injects
+    a context section that relaxes factual skepticism while keeping ethical rigor.
     """
     title = article.get("title", "")
     description = article.get("description", "")
@@ -32,6 +35,12 @@ def analyze(article: dict) -> Optional[dict]:
         f"Description: {description}\n\n"
         "Analyze."
     )
+
+    # Inject prior-validation context for partner-submitted articles
+    if article.get("_prior_validation"):
+        organization = article.get("source", "Partner Organization")
+        prior_ctx = PRIOR_VALIDATION_CONTEXT_TEMPLATE.format(organization=organization)
+        user_msg = prior_ctx.strip() + "\n\n" + user_msg
 
     result = call_analyst_b(
         system_prompt=ANALYST_PROMPT,

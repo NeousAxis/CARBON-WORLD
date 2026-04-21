@@ -44,7 +44,8 @@ logger = logging.getLogger("carbon.pipeline")
 try:
     import config  # noqa: F401 — triggers env var validation on import
     from config import MAX_ARTICLES_PER_RUN, MIN_HOURS_BETWEEN_RUNS
-    from db import event_exists, save_event, update_tx_hash, update_embedding
+    from db import (event_exists, save_event, update_tx_hash, update_embedding,
+                    mark_submission_scored, mark_submission_rejected)
     import db as _db_module
     from state import should_run_now, set_last_run
     from agents.collector import collect
@@ -115,6 +116,48 @@ def _write_cache_hits(articles: list[dict]) -> int:
 
     logger.info("Cache-hit writer: %d/%d events saved.", count, len(articles))
     return count
+
+
+def _update_submission_lifecycle(scored_events: list[dict]) -> None:
+    """
+    After writer phase: mark partner submissions as scored (if event saved to DB)
+    or rejected_invalid (if classifier/analyst rejected them).
+
+    scored_events is a list of {article, analysis, ...} dicts where article may
+    carry _from_submission=True and _submission_id.
+    """
+    for event in scored_events:
+        article = event.get("article", {})
+        if not article.get("_from_submission"):
+            continue
+        sub_id = article.get("_submission_id")
+        if not sub_id:
+            continue
+
+        # Look up the resulting carbon_events id by URL
+        link = article.get("link", "")
+        try:
+            conn = _db_module._get_conn()
+            row = conn.execute(
+                "SELECT id FROM carbon_events WHERE event_url = ? LIMIT 1",
+                (link,),
+            ).fetchone()
+            if row:
+                event_id = row["id"]
+                mark_submission_scored(sub_id, event_id)
+                logger.info("Submission %s scored -> event_id=%d", sub_id, event_id)
+            else:
+                # Writer put it in review_queue (Sentinel-flagged) — leave as classifying
+                logger.info(
+                    "Submission %s not in carbon_events yet (possibly review_queue).", sub_id
+                )
+        except Exception as exc:
+            logger.warning("Could not update submission lifecycle for %s: %s", sub_id, exc)
+
+    # Mark any submissions that went through classifier but were rejected INVALID
+    # We check: any article with _from_submission in invalid_articles can't be retrieved
+    # here since they don't reach scored_events — those are handled during classify_batch
+    # by the classifier itself. This is handled in the post-classifier block below in main().
 
 
 def _parse_args() -> argparse.Namespace:
@@ -189,7 +232,8 @@ def main() -> int:
     # === Phase 1/8: COLLECTOR ===
     logger.info("=== Phase 1/8: COLLECTOR ===")
     try:
-        articles = collect()
+        _db_conn = _db_module._get_conn()
+        articles = collect(conn=_db_conn)
     except Exception as exc:
         logger.critical("Collector failed: %s", exc)
         return 1
@@ -225,12 +269,20 @@ def main() -> int:
     # === Phase 2/8: CLASSIFIER ===
     logger.info("=== Phase 2/8: CLASSIFIER (%d articles) ===", total_classified)
     # Pass the DB connection so the semantic cache can search for similar recent events
-    _db_conn = _db_module._get_conn()
     valid_articles, invalid_articles = classify_batch(new_articles, conn=_db_conn)
 
     # Separate cache-hit articles (verdict already known) from articles that need LLM analysis
     cache_hit_articles = [a for a in valid_articles if a.get("_cache_hit")]
     valid_articles = [a for a in valid_articles if not a.get("_cache_hit")]
+
+    # Mark partner submissions that were rejected by classifier
+    for a in invalid_articles:
+        if a.get("_from_submission") and a.get("_submission_id"):
+            try:
+                mark_submission_rejected(a["_submission_id"], "rejected_invalid")
+                logger.info("Submission %s rejected by classifier.", a["_submission_id"])
+            except Exception as exc:
+                logger.warning("Could not mark submission rejected: %s", exc)
 
     if cache_hit_articles:
         _write_cache_hits(cache_hit_articles)
@@ -310,6 +362,9 @@ def main() -> int:
     # === Phase 7/8: WRITER (routes to Solana or review_queue) ===
     logger.info("=== Phase 7/8: WRITER (%d events) ===", scored_count)
     saved_count = write_batch(scored_events)
+
+    # --- Update submission lifecycle for partner-submitted articles ---
+    _update_submission_lifecycle(scored_events)
 
     # --- Export JSON for frontend ---
     export_events()

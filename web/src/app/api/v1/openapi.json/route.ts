@@ -36,6 +36,13 @@ const SPEC = {
       description: "Local development",
     },
   ],
+  components_security_schemes: {
+    BearerAuth: {
+      type: "http",
+      scheme: "bearer",
+      description: "Tier 2 Partner API key. Obtain via CLI: python3 worker/generate_api_key.py",
+    },
+  },
   paths: {
     "/events": {
       get: {
@@ -87,6 +94,39 @@ const SPEC = {
           },
           "400": { $ref: "#/components/responses/BadRequest" },
           "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+      post: {
+        summary: "Submit an event for scoring",
+        description:
+          "Partner (Tier 2) submission: push a new event to the CARBON WORLD pipeline. " +
+          "The event is queued with source_type=partner_direct, trust_weight=1.0, and scored " +
+          "by the full 8-agent pipeline. Returns a submission_id for polling via /submissions/:id. " +
+          "Rate-limited to write_quota_daily per key (default 5/day).",
+        operationId: "submitEvent",
+        tags: ["Events", "Tier2"],
+        security: [{ BearerAuth: [] }],
+        requestBody: {
+          required: true,
+          content: {
+            "application/json": {
+              schema: { $ref: "#/components/schemas/SubmitEventRequest" },
+            },
+          },
+        },
+        responses: {
+          "202": {
+            description: "Accepted — submission queued",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/SubmitEventResponse" },
+              },
+            },
+          },
+          "401": { $ref: "#/components/responses/Unauthorized" },
+          "422": { $ref: "#/components/responses/ValidationError" },
+          "429": { $ref: "#/components/responses/WriteQuotaExceeded" },
           "500": { $ref: "#/components/responses/InternalError" },
         },
       },
@@ -161,6 +201,135 @@ const SPEC = {
           },
           "429": { $ref: "#/components/responses/RateLimitExceeded" },
           "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/events/{id}/comment": {
+      post: {
+        summary: "Annotate an event",
+        description: "Attach a partner contextual comment to a scored event. Requires Bearer auth (Tier 2).",
+        operationId: "commentEvent",
+        tags: ["Events", "Tier2"],
+        security: [{ BearerAuth: [] }],
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            required: true,
+            schema: { type: "integer" },
+            description: "Event ID",
+          },
+        ],
+        requestBody: {
+          required: true,
+          content: {
+            "application/json": {
+              schema: { $ref: "#/components/schemas/CommentRequest" },
+            },
+          },
+        },
+        responses: {
+          "201": {
+            description: "Comment created",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/CommentResponse" },
+              },
+            },
+          },
+          "401": { $ref: "#/components/responses/Unauthorized" },
+          "404": { $ref: "#/components/responses/NotFound" },
+          "422": { $ref: "#/components/responses/ValidationError" },
+        },
+      },
+    },
+    "/submissions/{id}": {
+      get: {
+        summary: "Get submission status",
+        description:
+          "Polls the status of a partner submission. Public — no auth required. " +
+          "Use the callback_url returned by POST /events.",
+        operationId: "getSubmission",
+        tags: ["Submissions"],
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            required: true,
+            schema: { type: "string" },
+            description: "Submission ID (e.g. sub_20260420_amazonwatch_a1b2c3)",
+          },
+        ],
+        responses: {
+          "200": {
+            description: "Submission found",
+            content: {
+              "application/json": {
+                schema: { $ref: "#/components/schemas/SubmissionStatus" },
+              },
+            },
+          },
+          "404": { $ref: "#/components/responses/NotFound" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/keys/{id}/webhook": {
+      post: {
+        summary: "Register a webhook URL",
+        description:
+          "Set or update the webhook URL for the authenticated key. " +
+          "CARBON WORLD will POST scored/rejected events to this URL. Requires Bearer auth.",
+        operationId: "setWebhook",
+        tags: ["Keys", "Tier2"],
+        security: [{ BearerAuth: [] }],
+        parameters: [
+          {
+            name: "id",
+            in: "path",
+            required: true,
+            schema: { type: "integer" },
+            description: "Key ID (must match authenticated Bearer key)",
+          },
+        ],
+        requestBody: {
+          required: true,
+          content: {
+            "application/json": {
+              schema: {
+                type: "object",
+                required: ["webhook_url"],
+                properties: {
+                  webhook_url: {
+                    type: "string",
+                    format: "uri",
+                    example: "https://myorg.example.com/carbon-webhook",
+                  },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          "200": {
+            description: "Webhook URL updated",
+            content: {
+              "application/json": {
+                schema: {
+                  type: "object",
+                  properties: {
+                    status: { type: "string", example: "updated" },
+                    key_id: { type: "integer" },
+                    webhook_url: { type: "string", format: "uri" },
+                    organization: { type: "string" },
+                  },
+                },
+              },
+            },
+          },
+          "401": { $ref: "#/components/responses/Unauthorized" },
+          "403": { $ref: "#/components/responses/Forbidden" },
+          "422": { $ref: "#/components/responses/ValidationError" },
         },
       },
     },
@@ -353,6 +522,130 @@ const SPEC = {
         description: "Internal server error",
         content: {
           "application/json": { schema: { $ref: "#/components/schemas/Error" } },
+        },
+      },
+      Unauthorized: {
+        description: "Invalid or missing Bearer API key",
+        content: {
+          "application/json": {
+            schema: {
+              type: "object",
+              properties: {
+                error: { type: "string", example: "unauthorized" },
+                message: { type: "string" },
+              },
+            },
+          },
+        },
+      },
+      Forbidden: {
+        description: "Authenticated key does not have permission for this resource",
+        content: {
+          "application/json": {
+            schema: { $ref: "#/components/schemas/Error" },
+          },
+        },
+      },
+      ValidationError: {
+        description: "Request payload failed schema validation",
+        content: {
+          "application/json": {
+            schema: {
+              type: "object",
+              properties: {
+                error: { type: "string", example: "validation_error" },
+                details: {
+                  type: "object",
+                  additionalProperties: {
+                    type: "array",
+                    items: { type: "string" },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      WriteQuotaExceeded: {
+        description: "Write quota exceeded for this key today (UTC)",
+        content: {
+          "application/json": {
+            schema: {
+              type: "object",
+              properties: {
+                error: { type: "string", example: "write_quota_exceeded" },
+                used: { type: "integer" },
+                limit: { type: "integer" },
+                reset_at: { type: "string", format: "date-time" },
+              },
+            },
+          },
+        },
+      },
+    },
+    schemas_tier2: {
+      SubmitEventRequest: {
+        type: "object",
+        required: ["title", "description", "source_url", "published_at", "organization", "event_type"],
+        properties: {
+          title: { type: "string", minLength: 10, maxLength: 500, example: "Court victory halts Belo Sun gold mining in the Amazon" },
+          description: { type: "string", minLength: 100, maxLength: 3000 },
+          source_url: { type: "string", format: "uri" },
+          published_at: { type: "string", format: "date-time" },
+          organization: { type: "string", minLength: 2, maxLength: 200, example: "Amazon Watch" },
+          event_type: {
+            type: "string",
+            enum: [
+              "legal_win", "community_action", "conservation_win",
+              "indigenous_rights", "labor_rights", "policy_influence",
+              "whistleblower", "corporate_regression", "institutional_decision",
+            ],
+          },
+          region: { type: "string", maxLength: 200, example: "BR / Amazon" },
+          sdgs_hint: { type: "array", items: { type: "integer", minimum: 1, maximum: 17 }, maxItems: 17 },
+          evidence_urls: { type: "array", items: { type: "string", format: "uri" }, maxItems: 10 },
+          language: { type: "string", enum: ["en", "fr", "es", "pt", "ar", "zh"] },
+        },
+      },
+      SubmitEventResponse: {
+        type: "object",
+        properties: {
+          status: { type: "string", example: "accepted" },
+          submission_id: { type: "string", example: "sub_20260420_amazonwatch_a1b2c3" },
+          queue_position: { type: "integer" },
+          estimated_scoring_time_seconds: { type: "integer", example: 180 },
+          callback_url: { type: "string", format: "uri" },
+        },
+      },
+      SubmissionStatus: {
+        type: "object",
+        properties: {
+          submission_id: { type: "string" },
+          status: {
+            type: "string",
+            enum: ["pending", "classifying", "scored", "rejected_invalid", "rejected_duplicate"],
+          },
+          received_at: { type: "string", format: "date-time" },
+          processed_at: { type: "string", format: "date-time", nullable: true },
+          resulting_event_id: { type: "integer", nullable: true },
+          resulting_event_url: { type: "string", format: "uri", nullable: true },
+        },
+      },
+      CommentRequest: {
+        type: "object",
+        required: ["comment"],
+        properties: {
+          comment: { type: "string", minLength: 10, maxLength: 1000 },
+        },
+      },
+      CommentResponse: {
+        type: "object",
+        properties: {
+          status: { type: "string", example: "created" },
+          comment_id: { type: "integer" },
+          event_id: { type: "integer" },
+          organization: { type: "string" },
+          created_at: { type: "string", format: "date-time" },
         },
       },
     },

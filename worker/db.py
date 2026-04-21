@@ -96,6 +96,56 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
             # Column already exists — safe to ignore
             pass
 
+    # Phase 5 — Tier 2 Partner API (2026-04-20)
+    # api_keys, api_usage, submissions tables + indexes
+    try:
+        conn.executescript("""
+            CREATE TABLE IF NOT EXISTS api_keys (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                key_hash TEXT NOT NULL UNIQUE,
+                organization TEXT NOT NULL,
+                contact_email TEXT NOT NULL,
+                tier TEXT NOT NULL CHECK (tier IN ('partner', 'enterprise')),
+                read_quota_daily INTEGER NOT NULL DEFAULT 0,
+                write_quota_daily INTEGER NOT NULL DEFAULT 5,
+                webhook_url TEXT,
+                created_at TEXT NOT NULL,
+                last_used_at TEXT,
+                revoked_at TEXT,
+                notes TEXT
+            );
+            CREATE INDEX IF NOT EXISTS idx_api_keys_hash ON api_keys(key_hash);
+
+            CREATE TABLE IF NOT EXISTS api_usage (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                api_key_id INTEGER REFERENCES api_keys(id),
+                ip_address TEXT,
+                endpoint TEXT NOT NULL,
+                method TEXT NOT NULL,
+                status_code INTEGER NOT NULL,
+                timestamp TEXT NOT NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_api_usage_key_date ON api_usage(api_key_id, timestamp);
+            CREATE INDEX IF NOT EXISTS idx_api_usage_ip_date ON api_usage(ip_address, timestamp);
+
+            CREATE TABLE IF NOT EXISTS submissions (
+                id TEXT PRIMARY KEY,
+                api_key_id INTEGER REFERENCES api_keys(id),
+                raw_payload_json TEXT NOT NULL,
+                received_at TEXT NOT NULL,
+                processed_at TEXT,
+                resulting_event_id INTEGER REFERENCES carbon_events(id),
+                status TEXT NOT NULL CHECK (status IN (
+                    'pending', 'classifying', 'scored',
+                    'rejected_invalid', 'rejected_duplicate'
+                ))
+            );
+            CREATE INDEX IF NOT EXISTS idx_submissions_status ON submissions(status, received_at);
+        """)
+        conn.commit()
+    except sqlite3.OperationalError as exc:
+        logger.warning("Migration (Tier 2 tables) partial error (likely already exists): %s", exc)
+
 
 def close_connection() -> None:
     """Close the module-level SQLite connection if open. Safe to call multiple times."""
@@ -412,6 +462,205 @@ def resolve_review(
         return True
     except Exception as exc:
         logger.error("Error resolving review id=%d: %s", review_id, exc)
+        return False
+
+
+# ── Training data logger ─────────────────────────────────────────────────────
+
+# ── Tier 2 Partner API ──────────────────────────────────────────────────────
+
+def insert_submission(
+    submission_id: str,
+    api_key_id: int,
+    raw_payload_json: str,
+    status: str = "pending",
+) -> bool:
+    """Insert a new partner submission into the submissions table."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            """
+            INSERT INTO submissions (id, api_key_id, raw_payload_json, received_at, status)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            (submission_id, api_key_id, raw_payload_json,
+             datetime.now(tz=timezone.utc).isoformat(), status),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.error("Error inserting submission %s: %s", submission_id, exc)
+        return False
+
+
+def get_pending_submissions() -> list[dict]:
+    """Return all submissions with status='pending', ordered by received_at ASC."""
+    try:
+        conn = _get_conn()
+        rows = conn.execute(
+            "SELECT * FROM submissions WHERE status = 'pending' ORDER BY received_at ASC"
+        ).fetchall()
+        return [dict(r) for r in rows]
+    except Exception as exc:
+        logger.error("Error fetching pending submissions: %s", exc)
+        return []
+
+
+def mark_submission_scored(submission_id: str, resulting_event_id: int) -> bool:
+    """Mark a submission as scored and link it to the resulting carbon_events row."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            """
+            UPDATE submissions
+            SET status = 'scored',
+                processed_at = ?,
+                resulting_event_id = ?
+            WHERE id = ?
+            """,
+            (datetime.now(tz=timezone.utc).isoformat(), resulting_event_id, submission_id),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.error("Error marking submission scored %s: %s", submission_id, exc)
+        return False
+
+
+def mark_submission_rejected(submission_id: str, status: str) -> bool:
+    """Mark a submission as rejected. status must be 'rejected_invalid' or 'rejected_duplicate'."""
+    valid_statuses = {"rejected_invalid", "rejected_duplicate"}
+    if status not in valid_statuses:
+        logger.error("Invalid rejection status '%s' for submission %s", status, submission_id)
+        return False
+    try:
+        conn = _get_conn()
+        conn.execute(
+            """
+            UPDATE submissions
+            SET status = ?,
+                processed_at = ?
+            WHERE id = ?
+            """,
+            (status, datetime.now(tz=timezone.utc).isoformat(), submission_id),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.error("Error marking submission rejected %s: %s", submission_id, exc)
+        return False
+
+
+def get_submission(submission_id: str) -> Optional[dict]:
+    """Return a submission row by id, or None if not found."""
+    try:
+        conn = _get_conn()
+        row = conn.execute(
+            "SELECT * FROM submissions WHERE id = ?", (submission_id,)
+        ).fetchone()
+        return dict(row) if row else None
+    except Exception as exc:
+        logger.error("Error fetching submission %s: %s", submission_id, exc)
+        return None
+
+
+def get_api_key(key_hash: str) -> Optional[dict]:
+    """Return the api_keys row for key_hash if not revoked, else None."""
+    try:
+        conn = _get_conn()
+        row = conn.execute(
+            "SELECT * FROM api_keys WHERE key_hash = ? AND revoked_at IS NULL",
+            (key_hash,),
+        ).fetchone()
+        return dict(row) if row else None
+    except Exception as exc:
+        logger.error("Error fetching api_key by hash: %s", exc)
+        return None
+
+
+def log_api_usage(
+    api_key_id: Optional[int],
+    ip: Optional[str],
+    endpoint: str,
+    method: str,
+    status_code: int,
+) -> bool:
+    """Append a row to api_usage for audit trail."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            """
+            INSERT INTO api_usage (api_key_id, ip_address, endpoint, method, status_code, timestamp)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            (api_key_id, ip, endpoint, method, status_code,
+             datetime.now(tz=timezone.utc).isoformat()),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.warning("Error logging api_usage: %s", exc)
+        return False
+
+
+def count_writes_today(api_key_id: int) -> int:
+    """Count submissions made by api_key_id in the current UTC day."""
+    try:
+        conn = _get_conn()
+        today_start = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d")
+        row = conn.execute(
+            """
+            SELECT COUNT(*) AS c FROM submissions
+            WHERE api_key_id = ?
+              AND received_at >= ?
+              AND status NOT IN ('rejected_invalid', 'rejected_duplicate')
+            """,
+            (api_key_id, today_start),
+        ).fetchone()
+        return int(row["c"]) if row else 0
+    except Exception as exc:
+        logger.warning("Error counting writes for key %d: %s", api_key_id, exc)
+        return 0
+
+
+def count_pending_submissions() -> int:
+    """Return total number of pending or classifying submissions (for queue_position)."""
+    try:
+        conn = _get_conn()
+        row = conn.execute(
+            "SELECT COUNT(*) AS c FROM submissions WHERE status IN ('pending', 'classifying')"
+        ).fetchone()
+        return int(row["c"]) if row else 0
+    except Exception as exc:
+        logger.warning("Error counting pending submissions: %s", exc)
+        return 0
+
+
+def update_api_key_last_used(key_id: int) -> None:
+    """Update last_used_at for an api_keys row."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            "UPDATE api_keys SET last_used_at = ? WHERE id = ?",
+            (datetime.now(tz=timezone.utc).isoformat(), key_id),
+        )
+        conn.commit()
+    except Exception as exc:
+        logger.warning("Error updating last_used_at for key %d: %s", key_id, exc)
+
+
+def update_api_key_webhook(key_id: int, webhook_url: str) -> bool:
+    """Update webhook_url for an api_keys row."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            "UPDATE api_keys SET webhook_url = ? WHERE id = ?",
+            (webhook_url, key_id),
+        )
+        conn.commit()
+        return True
+    except Exception as exc:
+        logger.error("Error updating webhook for key %d: %s", key_id, exc)
         return False
 
 
