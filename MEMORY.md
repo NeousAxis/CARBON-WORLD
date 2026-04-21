@@ -41,6 +41,45 @@ Trois interventions compatibles avec TOUTES les contraintes (€0, pas de hardwa
 
 **Séquençage validé** : Phase 1+2 ensemble d'abord (effet immédiat diversité + mainstream pondéré), observer 1-2 runs VPS, puis Phase 3. Total ~10h dev.
 
+**✅ Phase 1 LIVRÉE 2026-04-20** — commit `76081b3` :
+- 66 → **157 sources RSS** dans `worker/rss_fetcher.py`
+- 91 nouvelles sources validées (HTTP + feedparser + recency) par sous-agent Sonnet sur ~310 URLs testées
+- Répartition : 15 Reddit, 3 Mastodon (sur 80+ testés — Mastodon peu adopté côté climat), 17 NGOs, 24 presse Sud global (>cible), 3 legal wins, 7 preprints scientifiques, 22 high-signal extras (Resilience, Truthout, Intercept, Food Tank, Solutions Journalism, WoMin Africa…)
+- User-Agent fix avec fallback `requests` browser UA si HTTP 403 (nécessaire pour Reddit)
+- Smoke test : Reddit 25 articles, UN News 30, The New Humanitarian 10
+- 20+ ONG-cibles ont des feeds RSS **cassés ou disparus** (Global Witness, HRW, WWF, IUCN, Oxfam, ClientEarth, FERN, Survival International, IEN, CBD, Minority Rights Group, Rainforest Action Network, FoE Europe, Sierra Club, WECAN, Amazon Frontlines…) → ces NGOs migrent vers newsletters + social, pas de scraping possible
+
+**✅ Phase 2 LIVRÉE 2026-04-20** — commit `3453ee9` :
+- Nouvelle variable `MAX_PER_SOURCE_PER_RUN=3` dans `worker/config.py` + `.env.example`
+- Cap appliqué dans `fetch_all_articles` AVANT `_round_robin_interleave`
+- Log INFO d'observabilité ("Source-capping: N sources reached MAX_PER_SOURCE_PER_RUN=X")
+- 7/7 tests unitaires passing (`worker/tests/test_source_capping.py`)
+- **Smoke test end-to-end** : 1925 bruts → **411 après cap**, max 3/source, réduction charge LLM **×4.7**
+- `MAX_PER_SOURCE_PER_RUN=0` désactive le cap (future-proofing)
+
+**📄 Plan API publique créé 2026-04-20** — fichier `PUBLIC_API_PLAN.md` :
+- **Note process** : premier draft était mal cadré (NGO-centric uniquement). Cyril a recadré → "ce n'est pas une NGO API mais une API tout court". Claude a relu CLAUDE.md (sections "Cheval de Troie API gratuite contre logo" + "Monétisation API premium" + "Feuille de route Exposer /api/v1/events public rate-limited") et restructuré le document autour de l'**API publique CARBON WORLD comme produit stratégique global**, avec 3 tiers :
+  - **Tier 1 Public free (lecture)** : `GET /api/v1/events`, `/:id`, `/stats`, `/sources`, `/health`, `/openapi.json` — rate-limit 100 req/jour/IP, CORS ouvert, Swagger UI
+  - **Tier 2 Partner Bearer (lecture illimitée + écriture)** : `POST /api/v1/events` (5/jour/clé), `POST /:id/comment`, webhook registrable. Contre logo sur `/partenaires` + citation systématique. Gratuit pour médias, think tanks, ONG, chercheurs
+  - **Tier 3 Enterprise (payant, activé plus tard)** : 500-2 000 €/mois pour entreprises RSE / banques / fonds d'impact. Activation conditionnée à 3-5 logos institutionnels visibles.
+- Spec POST `/events` : event_type énumération fermée (9 valeurs incluant `corporate_regression` et `institutional_decision` pour le cas MINT via partenaire), payload JSON avec title, description, source_url, published_at, organization, region, sdgs_hint, evidence_urls, language
+- Comportement pipeline : pas de bypass classifier (cohérence éthique maintenue), mais `source_type="partner_direct"` + `trust_weight=1.0` + `prior_validation=true` en prompt
+- Infrastructure : routes Next.js sous `web/app/api/v1/`, tables SQLite `api_keys` + `api_usage` + `submissions`, CLI `worker/generate_api_key.py`, modifs `worker/collector.py` et `worker/prompts/analyst_prompt.py`
+- **3 vagues outreach** :
+  - Vague 1 (Semaine 1) — 8 médias + think tanks FR/FR-proches : Vakita, Shift, IDDRI, Reporterre, Greenpeace FR, GoodPlanet, Veolia, Mediapart
+  - Vague 2 (Semaine 2) — 10 ONG internationales litige/terrain (celles aux feeds RSS cassés) : Global Witness, HRW, ClientEarth, Amnesty, Survival, IEN, Amazon Frontlines, WECAN, Third World Network, Minority Rights Group
+  - Vague 3 (Semaines 3-4) — 10 grandes institutions conservation : WWF, IUCN, Oxfam, FERN, Conservation International, RAN, FoE Europe, CBD, Sierra Club, Fairtrade
+- Pitch email FR+EN rédigé, positionnement "outil de rayonnement scientifique mutuel" (pas partenariat commercial)
+- Séquençage : ~4 jours dev (GET d'abord, POST après, Swagger UI en parallèle, tests + déploiement VPS, page /partenaires) puis outreach manuel Cyril
+- **Statut** : en attente de validation Cyril avant code
+
+**Prochaines étapes** :
+1. Cyril valide `PUBLIC_API_PLAN.md` (architecture 3 tiers, routes, rate-limits, pipeline behavior, event_type enum, cibles, pitch, séquençage)
+2. Implémentation routes GET + auth Bearer + rate-limit (Sonnet délégué)
+3. Implémentation POST /events + intégration pipeline (Sonnet délégué)
+4. Phase 3 semantic dedup (parallèle possible avec 2 et 3)
+5. Observation des 2-3 prochains runs VPS post Phase 1+2 pour mesurer l'impact réel sur ratio BURN/MINT et signal/bruit
+
 **Erreurs Claude reconnues lors de la session** :
 - Propositions initiales "plumber-thinking" (chercher plus de robinets LLM) sans intégrer la vraie mission du projet
 - Oubli de la décision 2026-04-18 (token non lancé, pas de communauté) → pitch compute-for-CBWD absurde, flaggé par Cyril
