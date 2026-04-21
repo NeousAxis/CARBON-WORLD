@@ -38,6 +38,11 @@ ANALYST_MODEL: str = os.getenv("ANALYST_MODEL", "qwen3:32b")
 # Run control
 MAX_ARTICLES_PER_RUN: int = int(os.getenv("MAX_ARTICLES_PER_RUN", "25"))
 MIN_HOURS_BETWEEN_RUNS: int = int(os.getenv("MIN_HOURS_BETWEEN_RUNS", "5"))
+# Per-source cap applied BEFORE round-robin interleave.
+# Prevents mainstream sources from dominating the article list.
+# Guardian 50 articles/run -> 3 kept. Niche sources with <3 articles are unaffected.
+# Set to 0 to disable capping entirely.
+MAX_PER_SOURCE_PER_RUN: int = int(os.getenv("MAX_PER_SOURCE_PER_RUN", "3"))
 
 # Batch classifier: number of articles sent in a single LLM call.
 # Default 5 → x5 throughput on the same Groq RPM quota.

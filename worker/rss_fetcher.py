@@ -14,6 +14,8 @@ from typing import Optional
 import feedparser
 import requests
 
+from worker.config import MAX_PER_SOURCE_PER_RUN
+
 logger = logging.getLogger(__name__)
 
 RSS_SOURCES: list[dict] = [
@@ -405,7 +407,21 @@ def fetch_all_articles() -> list[dict]:
     """
     per_source: dict[str, list[dict]] = {}
     for source in RSS_SOURCES:
-        per_source[source["name"]] = _fetch_single_source(source)
+        articles = _fetch_single_source(source)
+        # Cap per source BEFORE interleave so mainstream sources don't dominate
+        if MAX_PER_SOURCE_PER_RUN > 0:
+            articles = articles[:MAX_PER_SOURCE_PER_RUN]
+        per_source[source["name"]] = articles
+
+    capped_count = sum(
+        1 for articles in per_source.values() if len(articles) == MAX_PER_SOURCE_PER_RUN
+    )
+    if MAX_PER_SOURCE_PER_RUN > 0:
+        logger.info(
+            "Source-capping: %d sources reached MAX_PER_SOURCE_PER_RUN=%d",
+            capped_count,
+            MAX_PER_SOURCE_PER_RUN,
+        )
 
     interleaved = _round_robin_interleave(per_source)
 
