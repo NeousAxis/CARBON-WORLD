@@ -31,6 +31,12 @@ export type { TopRegionsSustainableCardProps } from "./TopRegionsSustainableCard
 export { TopAdministrationsCard } from "./TopAdministrationsCard";
 export type { TopAdministrationsCardProps } from "./TopAdministrationsCard";
 
+export { TopInstitutionsCard } from "./TopInstitutionsCard";
+export type { TopInstitutionsCardProps } from "./TopInstitutionsCard";
+
+export { TopSectorsCard } from "./TopSectorsCard";
+export type { TopSectorsCardProps } from "./TopSectorsCard";
+
 export { SupplyTrendCard } from "./SupplyTrendCard";
 export type { SupplyTrendCardProps } from "./SupplyTrendCard";
 

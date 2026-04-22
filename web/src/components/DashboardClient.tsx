@@ -11,14 +11,14 @@ import {
   TopCountriesMintCard,
   TopCountriesBurnCard,
   TopRegionsSustainableCard,
-  TopAdministrationsCard,
+  TopInstitutionsCard,
+  TopSectorsCard,
   SupplyTrendCard,
   EventOfTheDayCard,
   FrameworkActivityCard,
   SourceDiversityCard,
   CacheHitRateCard,
   PartnerActivityCard,
-  PositiveStreakCard,
 } from "@/components/indicators";
 import type { CarbonEvent, ExportData, Stats, Aggregates } from "@/lib/types";
 
@@ -26,7 +26,6 @@ const EMPTY_AGGREGATES: Aggregates = {
   top_countries_mint: [],
   top_countries_burn: [],
   top_regions_sustainable: [],
-  top_administrations_sustainable: [],
   supply_trend_7d: [],
   event_of_the_day: null,
   framework_activity_7d: {
@@ -46,7 +45,8 @@ const EMPTY_AGGREGATES: Aggregates = {
   },
   cache_hit_rate_7d: { hits: 0, total_events: 0, pct: 0 },
   active_partners_7d: [],
-  positive_streak: { current: 0, longest_7d: 0 },
+  top_institutions_7d: [],
+  top_sectors_7d: [],
 };
 
 // CountUp must be client-only (uses useEffect internally)
@@ -306,11 +306,11 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
           <SupplyTrendCard trend={aggregates.supply_trend_7d} />
         </div>
 
-        {/* Geographic indicators row 2: Top regions + administrations + streak */}
+        {/* Geographic indicators row 2: Top regions + institutions + sectors */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <TopRegionsSustainableCard regions={aggregates.top_regions_sustainable} />
-          <TopAdministrationsCard administrations={aggregates.top_administrations_sustainable} />
-          <PositiveStreakCard {...aggregates.positive_streak} />
+          <TopInstitutionsCard institutions={aggregates.top_institutions_7d} />
+          <TopSectorsCard sectors={aggregates.top_sectors_7d} />
         </div>
 
         {/* Framework Activity — full-width panoptic ethical card */}

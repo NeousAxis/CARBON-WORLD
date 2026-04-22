@@ -92,18 +92,25 @@ export interface PositiveStreak {
   longest_7d: number;
 }
 
+export interface TaxonomyEntry {
+  name: string;
+  count: number;
+  burn_count: number;
+  mint_count: number;
+}
+
 export interface Aggregates {
   top_countries_mint: CountryStat[];
   top_countries_burn: CountryStat[];
   top_regions_sustainable: RegionStat[];
-  top_administrations_sustainable: AdministrationStat[];
   supply_trend_7d: SupplyTrendPoint[];
   event_of_the_day: EventOfTheDay | null;
   framework_activity_7d: FrameworkActivityData;
   source_diversity_7d: SourceDiversity;
   cache_hit_rate_7d: CacheHitRate;
   active_partners_7d: PartnerActivity[];
-  positive_streak: PositiveStreak;
+  top_institutions_7d: TaxonomyEntry[];
+  top_sectors_7d: TaxonomyEntry[];
 }
 
 export interface ExportData {

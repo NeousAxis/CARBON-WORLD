@@ -5,6 +5,7 @@ for the frontend to consume at build time.
 
 import json
 import logging
+import re
 import sqlite3
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
@@ -97,14 +98,14 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
         "top_countries_mint": _top_countries(events_7d, "MINT", limit=5) if has_country else [],
         "top_countries_burn": _top_countries(events_7d, "BURN", limit=5) if has_country else [],
         "top_regions_sustainable": _top_regions_sustainable(events_7d) if has_country else [],
-        "top_administrations_sustainable": _top_administrations_sustainable(events_7d) if has_country else [],
         "supply_trend_7d": _supply_trend_7d(all_events),
         "event_of_the_day": _event_of_the_day(events_7d),
         "framework_activity_7d": _framework_activity_7d(events_7d) if has_aspects else _empty_framework(),
         "source_diversity_7d": _source_diversity_7d(events_7d),
         "cache_hit_rate_7d": _cache_hit_rate_7d(events_7d) if has_reused else {"hits": 0, "total_events": len(events_7d), "pct": 0.0},
         "active_partners_7d": _active_partners_7d(conn, cutoff_7d),
-        "positive_streak": _positive_streak(events_7d),
+        "top_institutions_7d": _top_institutions(events_7d),
+        "top_sectors_7d": _top_sectors(events_7d),
     }
 
 
@@ -150,6 +151,62 @@ def _top_regions_sustainable(events: list[dict], limit: int = 5) -> list[dict]:
         })
 
     return sorted(results, key=lambda x: x["burn_ratio"], reverse=True)[:limit]
+
+
+def _top_institutions(events_7d: list[dict], limit: int = 8) -> list[dict]:
+    """Top international institutions by event count across 7d.
+    Returns [{name, count, burn_count, mint_count}] sorted by count desc.
+    """
+    from taxonomy_extractor import extract_institutions
+    from collections import Counter, defaultdict
+
+    counts: Counter = Counter()
+    decision_breakdown: dict = defaultdict(Counter)
+    for ev in events_7d:
+        text_title = ev.get("event_title", "") or ""
+        text_just = ev.get("justification", "") or ""
+        institutions = extract_institutions(text_title, text_just)
+        for inst in institutions:
+            counts[inst] += 1
+            decision_breakdown[inst][ev.get("decision", "NEUTRAL")] += 1
+
+    result = []
+    for name, count in counts.most_common(limit):
+        result.append({
+            "name": name,
+            "count": count,
+            "burn_count": decision_breakdown[name].get("BURN", 0),
+            "mint_count": decision_breakdown[name].get("MINT", 0),
+        })
+    return result
+
+
+def _top_sectors(events_7d: list[dict], limit: int = 8) -> list[dict]:
+    """Top economic sectors by event count across 7d.
+    Returns [{name, count, burn_count, mint_count}] sorted by count desc.
+    """
+    from taxonomy_extractor import extract_sectors
+    from collections import Counter, defaultdict
+
+    counts: Counter = Counter()
+    decision_breakdown: dict = defaultdict(Counter)
+    for ev in events_7d:
+        text_title = ev.get("event_title", "") or ""
+        text_just = ev.get("justification", "") or ""
+        sectors = extract_sectors(text_title, text_just)
+        for sector in sectors:
+            counts[sector] += 1
+            decision_breakdown[sector][ev.get("decision", "NEUTRAL")] += 1
+
+    result = []
+    for name, count in counts.most_common(limit):
+        result.append({
+            "name": name,
+            "count": count,
+            "burn_count": decision_breakdown[name].get("BURN", 0),
+            "mint_count": decision_breakdown[name].get("MINT", 0),
+        })
+    return result
 
 
 def _top_administrations_sustainable(events: list[dict], limit: int = 10) -> list[dict]:
@@ -249,18 +306,64 @@ def _hours_since(iso: str | None, now: datetime) -> float:
 
 _FRAMEWORK_KEYS = ["SDG", "UDHR", "ILO", "CRC", "UNDRIP", "Animal", "PB"]
 
+# Allowed values for the structured `frameworks` field emitted by the LLM.
+_ALLOWED_FRAMEWORKS = frozenset(_FRAMEWORK_KEYS)
+
+# Strict regex patterns for fallback keyword detection (compiled once at import).
+# Word boundaries (\b) prevent partial-word collisions.
+_RE_UDHR = re.compile(
+    r"\bUDHR\b|Universal Declaration of Human Rights", re.IGNORECASE
+)
+_RE_ILO = re.compile(
+    r"\bILO\b|International Labour", re.IGNORECASE
+)
+_RE_CRC = re.compile(
+    r"\bCRC\b|Convention on the Rights of the Child", re.IGNORECASE
+)
+_RE_UNDRIP = re.compile(
+    r"\bUNDRIP\b|Declaration on the Rights of Indigenous", re.IGNORECASE
+)
+_RE_ANIMAL = re.compile(
+    r"Universal Declaration of Animal Rights|\banimal rights\b", re.IGNORECASE
+)
+_RE_PB = re.compile(
+    r"\bPlanetary Boundar\w*\b", re.IGNORECASE
+)
+
 
 def _empty_framework() -> dict:
     return {k: {"positive": 0, "negative": 0} for k in _FRAMEWORK_KEYS}
 
 
 def _detect_frameworks(aspects: list[dict] | None) -> set[str]:
-    """Identify which frameworks are referenced in a list of aspect dicts."""
+    """Identify which frameworks are referenced in a list of aspect dicts.
+
+    Priority:
+    1. Structured `frameworks` field from the LLM (precise, skip keyword scan).
+    2. Strict regex fallback for backward-compatibility with pre-field events.
+
+    The fallback intentionally avoids common false-positive triggers:
+    - "Article" alone does NOT imply UDHR.
+    - "Child" alone does NOT imply CRC.
+    - "Indigenous" alone does NOT imply UNDRIP.
+    - "Animal" alone does NOT imply Animal Rights.
+    - "PB" alone (too ambiguous) does NOT imply Planetary Boundaries.
+    """
     if not aspects:
         return set()
     found: set[str] = set()
     for aspect in aspects:
-        # SDGs — support multiple field name conventions from the LLM
+        # --- Priority 1: structured `frameworks` field ---
+        fw_field = aspect.get("frameworks")
+        if isinstance(fw_field, list) and fw_field:
+            valid = {f for f in fw_field if f in _ALLOWED_FRAMEWORKS}
+            if valid:
+                found.update(valid)
+                continue  # skip fallback for this aspect
+
+        # --- Priority 2: strict fallback (no structured field) ---
+
+        # SDG — presence of any SDG numbers is sufficient
         sdgs = (
             aspect.get("sdgs")
             or aspect.get("sdg_refs")
@@ -271,30 +374,31 @@ def _detect_frameworks(aspects: list[dict] | None) -> set[str]:
         if sdgs:
             found.add("SDG")
 
-        # Build a combined text corpus from all textual fields in the aspect
-        refs = " ".join(str(r) for r in (
+        # Build combined text from refs + description + title for pattern matching
+        refs_list = (
             aspect.get("references")
             or aspect.get("violated_rights")
             or aspect.get("rights_references")
             or []
-        ))
+        )
+        refs = " ".join(str(r) for r in refs_list)
         desc = str(aspect.get("desc") or aspect.get("description") or "")
         title = str(aspect.get("title") or "")
         combined = " ".join([refs, desc, title])
 
-        # Check each framework by keyword
-        if "UDHR" in combined or "Universal Declaration of Human Rights" in combined or "Article" in combined:
+        if _RE_UDHR.search(combined):
             found.add("UDHR")
-        if "ILO" in combined or "International Labour" in combined or "labor standard" in combined.lower():
+        if _RE_ILO.search(combined):
             found.add("ILO")
-        if "CRC" in combined or "Child" in combined or "Convention on the Rights of the Child" in combined:
+        if _RE_CRC.search(combined):
             found.add("CRC")
-        if "UNDRIP" in combined or "Indigenous" in combined or "Declaration on the Rights of Indigenous" in combined:
+        if _RE_UNDRIP.search(combined):
             found.add("UNDRIP")
-        if "Animal" in combined or "Universal Declaration of Animal Rights" in combined or "animal rights" in combined.lower():
+        if _RE_ANIMAL.search(combined):
             found.add("Animal")
-        if "Planetary Boundaries" in combined or "planetary boundaries" in combined.lower() or "PB" in refs:
+        if _RE_PB.search(combined):
             found.add("PB")
+
     return found
 
 
