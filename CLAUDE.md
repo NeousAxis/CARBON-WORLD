@@ -1,7 +1,7 @@
 # CARBON WORLD — Plan du projet
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
-> **Fondateur** : Cyril Leger (Neous Axis)
+> **Fondateur** : Neous Axis
 > **État au 2026-04-21** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **Phases 1+2+3 du reframe sampling livrées et validées en prod**, **API publique Tier 1 (6 routes GET) live** sur `https://carbon-token.xyz/api/v1/*`.
 > **Stack durci 2026-04-19** : lockfile flock, batch classifier B=5, fail-fast Cerebras sur tous les agents Groq, +20 sources RSS positives, prompt classifier étendu aux structural markers, TZ VPS Europe/Zurich.
 > **Reframe décisif 2026-04-20** : la crise quota n'est PAS un problème de compute, c'est un problème d'**échantillonnage**. Sur 1925 articles bruts du run 12:00 CEST, seuls 6 events finaux → ratio signal/bruit **0.3 %**. 94 % du quota LLM brûlé sur du bruit mainstream redondant (Guardian/BBC/Le Monde/dérivés AFP qui couvrent tous les mêmes décisions institutionnelles). Les signaux recherchés (coopératives, ONG, communautés, Sud global, victoires locales) vivent dans des sources low-volume (Mongabay Brasil, Cultural Survival, Waging Nonviolence, Reporterre) qui sont noyées dans le flux mainstream.

@@ -17,7 +17,7 @@ const SPEC = {
       "Animal Rights, Planetary Boundaries) and a 4D analysis model. " +
       "Token CBWD on Solana — scientific instrument, not a speculative asset.",
     contact: {
-      name: "Cyril Leger — CARBON WORLD",
+      name: "Neous Axis — CARBON WORLD",
       email: "hello@carbon-token.xyz",
       url: "https://carbon-token.xyz",
     },
