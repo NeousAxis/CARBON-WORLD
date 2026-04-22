@@ -64,32 +64,13 @@ export function PartnersSection({ partners = PARTNERS }: { partners?: Partner[] 
         borderColor: "var(--border)",
       }}
     >
-      <header className="flex flex-wrap items-baseline justify-between gap-2 pb-4">
-        <div className="flex items-baseline gap-3">
-          <h2
-            className="font-mono text-sm uppercase tracking-wider"
-            style={{ color: "var(--muted)" }}
-          >
-            Partners · Early Supporters
-          </h2>
-          <span
-            className="font-mono text-[10px] uppercase tracking-wider"
-            style={{
-              color: "var(--warning-fg)",
-              backgroundColor: "var(--warning-bg)",
-              border: "1px solid var(--warning-fg)",
-              padding: "2px 6px",
-            }}
-          >
-            Mock · Preview only
-          </span>
-        </div>
-        <p
-          className="font-mono text-xs uppercase tracking-wider"
+      <header className="pb-4">
+        <h2
+          className="font-mono text-sm uppercase tracking-wider"
           style={{ color: "var(--muted)" }}
         >
-          No real partners yet — outreach in progress
-        </p>
+          Partners · Early Supporters
+        </h2>
       </header>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -154,10 +135,10 @@ export function PartnersSection({ partners = PARTNERS }: { partners?: Partner[] 
           className="font-mono text-[11px] uppercase tracking-wider"
           style={{ color: "var(--muted)" }}
         >
-          Media · Think tanks · NGOs — join via neousaxis@gmail.com
+          Media · Think tanks · NGOs — join via hello@carbon-token.xyz
         </p>
         <Link
-          href="mailto:neousaxis@gmail.com?subject=CARBON%20WORLD%20API%20partnership"
+          href="mailto:hello@carbon-token.xyz?subject=CARBON%20WORLD%20API%20partnership"
           className="font-mono text-[11px] uppercase tracking-wider"
           style={{ color: "var(--primary)" }}
         >

@@ -18,7 +18,7 @@ const SPEC = {
       "Token CBWD on Solana — scientific instrument, not a speculative asset.",
     contact: {
       name: "Cyril Leger — CARBON WORLD",
-      email: "neousaxis@gmail.com",
+      email: "hello@carbon-token.xyz",
       url: "https://carbon-token.xyz",
     },
     license: {

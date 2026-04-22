@@ -62,7 +62,7 @@ export function PartnerActivityCard({ partners }: PartnerActivityCardProps) {
             className="text-[10px] font-mono text-center"
             style={{ color: "var(--brand-teal)" }}
           >
-            Contact neousaxis@gmail.com for API access
+            Contact hello@carbon-token.xyz for API access
           </span>
         </div>
       ) : (
