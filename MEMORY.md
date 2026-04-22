@@ -47,6 +47,37 @@ Le mot anglais courant « in » (préposition) matchait India. **Tout** article 
 - Premier draft Partners utilisait Vakita / The Shift Project / IDDRI (vrais noms d'orgs francophones cibles outreach). Cyril m'a (à juste titre) engueulé : afficher de **vrais** noms comme partenaires alors qu'ils ne le sont pas est une fausse représentation. Corrigé immédiatement avec noms inventés + badge MOCK explicite.
 - J'aurais dû relire et tester `geo_extractor.py` avant la première mise en prod. Le bug `\bin\b` → India était grossier et un test sur 1 article anglais l'aurait flagué. Leçon : tests de régression sur cas réels avant ship, pas seulement tests unitaires sur cas synthétiques.
 
+### ✅ 2026-04-22 (fin) — TopAdministrations + PositiveStreak remplacés, Framework Activity fixé structurellement
+
+**Remplacement des deux indicateurs biaisés** (commit `1670ad7`) :
+- **Retirés** du layout : `TopAdministrationsCard` (partis au pouvoir dominent mécaniquement) et `PositiveStreakCard` (pas assez informatif). Composants gardés en tree pour réutilisation future, non rendus.
+- **Ajoutés** : 
+  - `TopInstitutionsCard` — 31 institutions internationales (UN/EU/COP/ICJ/ICC/ECHR/IPCC/IMF/World Bank/OECD/WHO/WTO/NATO/G7/G20/AU/ASEAN/OAS/FAO/ILO/IUCN/CITES/Ramsar/Arab League/UNESCO/UNHCR/UNICEF/UNEP/ECB/…), détection regex EN+FR avec word boundaries strictes (alias courts comme `AU` en long-form-only pour éviter "au cœur" FR)
+  - `TopSectorsCard` — 12 secteurs (Energy/Mining/Agriculture/Tech/Finance/Pharma/Defense/Fishing/Forestry/Transport/Construction/Water) avec patterns multi-mots EN+FR
+- Module `worker/taxonomy_extractor.py` + 55 tests unit
+
+**Résultat prod** (65 events 7j) :
+- Top Institutions : EU×4, UN×1, COP×1, World Bank×1 (volumes modestes mais précis)
+- Top Sectors : Energy×17, Finance×7, Agriculture/Mining/Defense/Construction×3 chacun (Energy hégémonique comme attendu)
+
+**Fix structural Framework Activity** (commit `1670ad7`, 2e partie) :
+
+Cyril a challengé les chiffres de la card Framework Activity. Investigation prod a confirmé 3 bugs :
+1. **Détection keyword trop permissive** : `"Article"` trigger UDHR (articles de presse/loi), `"Child"` trigger CRC, `"Indigenous"` trigger UNDRIP, `"Animal"` trigger Animal Rights. Faux positifs systémiques.
+2. **Limitation structurelle positive_aspects** : le LLM analyst produit uniquement `affected_sdgs` sur les aspects positifs, jamais de référence UDHR/ILO/CRC/UNDRIP/Animal/PB → 6/7 frameworks bloqués à +0 pour toujours.
+3. **Couverture partielle** : 21/65 events 7j sans aspects (data hole).
+
+**Fix** (3 livrables) :
+- `worker/prompts/analyst_prompt.py` : ajout d'un champ structuré `frameworks: ["SDG","UDHR",...]` dans le schema JSON de chaque aspect (positif ET négatif). Instructions conservatives : « only include when the aspect substantively supports/violates it, not loosely ». Backward compat : `affected_sdgs` et `violated_rights` gardés. Note AGENTS_PROMPT_RULES §5 : schema additive, pas de changement de logique de scoring → calibration éthique inchangée.
+- `worker/exporter.py:_detect_frameworks` réécrit : priorité 1 au champ structuré `frameworks`, priorité 2 fallback REGEX STRICT pour rétro-compat (`\bUDHR\b`, `\bUniversal Declaration of Human Rights\b` — plus de "Article" générique ; `\bCRC\b`, `\bConvention on Rights of the Child\b` — plus de "Child" seul ; idem UNDRIP/Animal/PB).
+- `worker/backfill_frameworks.py` : script idempotent parsant les 65 events existants en DB pour injecter le champ `frameworks` sur chaque aspect via fallback strict. Zéro appel LLM. Backfill prod : 20 events re-written, injected 52 SDG pos + 70 SDG neg + 37 UDHR neg + 14 UNDRIP neg + 8 CRC neg + 6 Animal neg + 5 PB neg + 4 ILO neg. Les **positifs non-SDG restent à 0** car les aspects existants n'ont pas de référence textuelle structurée aux 6 autres frameworks — **les nouveaux events post-prompt-fix produiront naturellement des positifs structurés sur les 7 frameworks.**
+
+**Tests** : 189/189 pytest (164 + 25 framework). Build Next.js OK. Smoke test confirmé : anciens faux positifs ne matchent plus ("The article describes children playing with animals in indigenous land. PB." → set() au lieu de 5 frameworks triggered).
+
+**Commits de session fin de journée** : `1670ad7` (institutions+sectors+framework fix), `a248599`/`d41bdfe`/`58010f1`/`612ad45`/`6402b15`/`03aef4d` (livrés plus tôt).
+
+---
+
 ### ⚠ Indicateur « Top Administrations Sustainable » — biais d'échantillonnage non corrigeable, à REMPLACER
 
 **Diagnostic Cyril 2026-04-22** : la card `TopAdministrationsCard` produit mécaniquement les partis au pouvoir en tête (France/Renaissance, USA/Republican, Russia/United Russia, etc.) parce que :
