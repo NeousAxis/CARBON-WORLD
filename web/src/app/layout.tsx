@@ -35,7 +35,7 @@ export default function RootLayout({
             <Link
               href="/"
               className="flex items-center gap-2 sm:gap-3 text-base sm:text-xl font-bold tracking-tight shrink-0"
-              style={{ color: "#FF8400" }}
+              style={{ color: "#B6FFCE" }}
             >
               <img
                 src="/carbon-world-xl.png"
@@ -69,7 +69,7 @@ export default function RootLayout({
               <Link
                 href="/review"
                 className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#FF8400" }}
+                style={{ color: "#B6FFCE" }}
                 title="Human review queue"
               >
                 Review
