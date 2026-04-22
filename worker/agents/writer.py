@@ -3,6 +3,7 @@ writer.py — Agent: routes each event to Solana (happy path) or the human revie
 (if Sentinel flagged incoherence). Also appends every verdict to training_data.jsonl.
 """
 
+import json
 import logging
 from datetime import datetime, timezone
 
@@ -13,6 +14,7 @@ from db import (
     add_to_review_queue,
     log_training_data,
 )
+from geo_extractor import extract_geo
 from solana_executor import execute_decision
 
 logger = logging.getLogger("agent.writer")
@@ -109,6 +111,31 @@ def write(event: dict) -> bool:
         return ok
 
     # --- Happy path: persist to carbon_events + Solana tx ---
+    justification = _build_justification(analysis)
+
+    # Extract geographic metadata (zero LLM cost)
+    geo = extract_geo(
+        title=title,
+        justification=justification,
+        source=article.get("source", ""),
+    )
+
+    # Serialise positive/negative aspects if present in the analysis
+    positive_aspects = analysis.get("positive_aspects")
+    negative_aspects = analysis.get("negative_aspects")
+    positive_aspects_json: str | None = None
+    negative_aspects_json: str | None = None
+    if positive_aspects:
+        try:
+            positive_aspects_json = json.dumps(positive_aspects, ensure_ascii=False)
+        except Exception:
+            pass
+    if negative_aspects:
+        try:
+            negative_aspects_json = json.dumps(negative_aspects, ensure_ascii=False)
+        except Exception:
+            pass
+
     event_data = {
         "event_title": title[:500],
         "event_url": link,
@@ -117,13 +144,20 @@ def write(event: dict) -> bool:
         "amount_crbn": analysis.get("amount_cbwd", 0),
         "final_score": analysis.get("final_score", 0.0),
         "confidence": analysis.get("confidence", 0),
-        "justification": _build_justification(analysis),
+        "justification": justification,
         "tx_hash": None,
         "created_at": datetime.now(tz=timezone.utc).isoformat(),
         # Carry forward the embedding computed during the classifier pre-check
         # so it is stored in the DB for future semantic cache lookups.
         "embedding": article.get("embedding"),
         "reused_from_event_id": None,
+        # Geographic metadata (dashboard indicators)
+        "country": geo.get("country"),
+        "region": geo.get("region"),
+        "administration": geo.get("administration"),
+        # Aspects JSON for FrameworkBar (dashboard)
+        "positive_aspects_json": positive_aspects_json,
+        "negative_aspects_json": negative_aspects_json,
     }
 
     saved = save_event(event_data)

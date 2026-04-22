@@ -87,6 +87,12 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         # Phase 3 — semantic dedup cache (2026-04-20)
         "ALTER TABLE carbon_events ADD COLUMN embedding BLOB;",
         "ALTER TABLE carbon_events ADD COLUMN reused_from_event_id INTEGER REFERENCES carbon_events(id);",
+        # Phase 6 — dashboard indicators (2026-04-22)
+        "ALTER TABLE carbon_events ADD COLUMN country TEXT;",
+        "ALTER TABLE carbon_events ADD COLUMN region TEXT;",
+        "ALTER TABLE carbon_events ADD COLUMN administration TEXT;",
+        "ALTER TABLE carbon_events ADD COLUMN positive_aspects_json TEXT;",
+        "ALTER TABLE carbon_events ADD COLUMN negative_aspects_json TEXT;",
     ]
     for sql in migrations:
         try:
@@ -219,8 +225,13 @@ def save_event(event_data: dict) -> Optional[dict]:
     Returns the inserted row as a dict, or None on error.
 
     Optional keys:
-      embedding (bytes | None)          — 384-dim float32 BLOB for semantic cache
-      reused_from_event_id (int | None) — points to cache source event if this is a cache hit
+      embedding (bytes | None)              — 384-dim float32 BLOB for semantic cache
+      reused_from_event_id (int | None)     — points to cache source event if this is a cache hit
+      country (str | None)                  — extracted country name (dashboard geo)
+      region (str | None)                   — world region (dashboard geo)
+      administration (str | None)           — governing administration label (dashboard geo)
+      positive_aspects_json (str | None)    — JSON-serialised positive_aspects list
+      negative_aspects_json (str | None)    — JSON-serialised negative_aspects list
     """
     try:
         conn = _get_conn()
@@ -229,8 +240,10 @@ def save_event(event_data: dict) -> Optional[dict]:
             INSERT INTO carbon_events
                 (event_title, event_url, event_source, decision,
                  amount_crbn, final_score, confidence, justification,
-                 tx_hash, created_at, embedding, reused_from_event_id)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 tx_hash, created_at, embedding, reused_from_event_id,
+                 country, region, administration,
+                 positive_aspects_json, negative_aspects_json)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 event_data.get("event_title", ""),
@@ -243,8 +256,13 @@ def save_event(event_data: dict) -> Optional[dict]:
                 event_data.get("justification", ""),
                 event_data.get("tx_hash"),
                 event_data.get("created_at", ""),
-                event_data.get("embedding"),           # bytes or None
-                event_data.get("reused_from_event_id"),  # int or None
+                event_data.get("embedding"),               # bytes or None
+                event_data.get("reused_from_event_id"),    # int or None
+                event_data.get("country"),                 # str or None
+                event_data.get("region"),                  # str or None
+                event_data.get("administration"),          # str or None
+                event_data.get("positive_aspects_json"),   # str or None
+                event_data.get("negative_aspects_json"),   # str or None
             ),
         )
         conn.commit()
