@@ -4,6 +4,49 @@
 
 ---
 
+## 🎯 2026-04-22 — Dashboard home : 12 indicateurs livrés en prod
+
+Session orchestration Opus 4.7 → 4 sous-agents Sonnet en 3 vagues.
+
+**Architecture délégation** : Étape 0 (foundations data) + Lot C (santé pipeline, indépendant) lancés en parallèle au démarrage ; une fois Étape 0 livrée, Lot A (géo + temporels) et Lot B (Framework Activity) lancés en parallèle. Opus a assemblé le layout home en fin de session.
+
+**Étape 0 — Foundations data** (Sonnet, commit `a248599`) :
+- DB migrations idempotentes : `country`, `region`, `administration`, `positive_aspects_json`, `negative_aspects_json` sur `carbon_events`
+- `worker/geo_extractor.py` : regex ~160 patterns pays × FR/EN/ES/PT + ISO α-2 fallback, 7 régions, 35 administrations actuelles, 0 coût LLM. 32 tests unit.
+- Hook pipeline dans `worker/agents/writer.py` : `extract_geo()` + sérialisation aspects avant `save_event()`
+- `worker/backfill_indicators.py` : script one-shot idempotent (local Mac : 41 geo + 20 aspects ; VPS : **65 geo + 44 aspects** sur 52 avec training data)
+- `worker/exporter.py` : section `aggregates` avec 11 indicateurs pré-calculés (top_countries_mint/burn, top_regions_sustainable, top_administrations_sustainable, supply_trend_7d, event_of_the_day, framework_activity_7d, source_diversity_7d, cache_hit_rate_7d, active_partners_7d, positive_streak). PRAGMA guard rétro-compatible.
+- 94/94 pytest tests passent.
+
+**Lot A — Géo + temporels** (Sonnet, 6 cards) + **Lot B — Framework Activity** (Sonnet, 2 composants pixel-perfect spec Cyril) + **Lot C — Santé pipeline** (Sonnet, 4 cards) tous livrés dans `web/src/components/indicators/` avec barrel export unique `index.ts`. Server Components, Lunaris Dark strict, aucun émoji, corners carrés, JetBrains Mono UPPERCASE. Tokens `--cw-*` ajoutés comme alias dans `globals.css` (pas de duplication de valeurs).
+
+**Assembly layout** (Opus, commit `d41bdfe`) :
+- `web/src/lib/types.ts` étendu avec `Aggregates` shape complet + backward compat (`aggregates?`)
+- `DashboardClient.tsx` : EventOfTheDay full-width → chart row existant → Geo row 1 (Mint/Burn/Trend) → Geo row 2 (Regions/Admins/Streak) → Framework Activity full-width → Health row → existing LiveTicker + EventsTable. EMPTY_AGGREGATES fallback pour exports stales.
+- `worker/exporter.py` patché : `event_of_the_day` retourne désormais la full CarbonEvent shape attendue par le composant (event_title, amount_crbn, final_score, confidence, region). Fenêtre 24h avec fallback 7j.
+- Preview Next.js dev : 0 erreur TS, 0 console log, 0 warning server. Screenshots pris en desktop 1440×900 confirment le rendu de tous les 12 indicateurs.
+
+**Déploiement prod 2026-04-22 17:00 CEST** :
+- Push origin main (2 commits : `a248599` backend, `d41bdfe` frontend)
+- VPS pull OK
+- `python worker/backfill_indicators.py` exécuté sur VPS → 65 geo + 44 aspects remplis
+- `python -c "import exporter; exporter.export_events()"` → `web/data/export.json` régénéré
+- `npm install && npm run build` OK sur VPS
+- `sudo systemctl restart carbon-web` OK, service `active`
+- `curl https://carbon-token.xyz/` → HTTP/2 200, 10/10 titres indicateurs présents dans le HTML (TOP COUNTRIES, TOP REGIONS, TOP ADMINISTRATIONS, SUPPLY NET, EVENT OF THE DAY, FRAMEWORK ACTIVITY, SOURCE DIVERSITY, CACHE HIT RATE, ACTIVE PARTNERS, POSITIVE STREAK)
+- API Tier 1 toujours fonctionnelle : `/api/v1/stats` retourne `total_events=65`, `/api/v1/health` retourne `db_reachable=true`
+
+**Observations qualité data** :
+- Geo extractor a détecté "India" sur event "Global growth in solar 'the largest ever observed for any source'" (event_of_the_day actuel) — probable faux-positif car mot "India" apparaît dans un contexte de liste mondiale. À affiner si le pattern se répète 2-3 fois (règle AGENTS_PROMPT_RULES.md §0.3).
+- `framework_activity_7d` très asymétrique (SDG +16/−19, UDHR +0/−12, autres majoritairement négatifs) : reflète la réalité actuelle où le classifier accepte beaucoup de régressions institutionnelles et peu de victoires locales. Preuve supplémentaire que le rééquilibrage BURN via sources niche reste à amplifier (CLAUDE.md § "Élargir les canaux de détection d'actions positives").
+
+**Ce qui reste (backlog, non démarré) :
+- Outreach vague 1 (8 emails FR médias/think tanks) — attend Cyril
+- Section Partenaires sur la HOME (pas une page dédiée — correction Cyril 2026-04-21) — à faire après 1er logo
+- Phase B optimisation Collector (fetch parallèle, timeout 15→5s) — après 1 semaine d'obs Phase 3
+
+---
+
 ## 🎯 2026-04-20 — Reframe décisif : le problème est l'échantillonnage, pas le compute
 
 **Contexte** : après les 24h de patchs techniques 2026-04-19 (batch classifier, fail-fast Cerebras, lockfile, +20 sources, prompt étendu) qui n'avaient fait que retarder la saturation quotas, session d'arbitrage avec Cyril pour trouver une solution stable.
