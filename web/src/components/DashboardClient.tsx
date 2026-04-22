@@ -6,7 +6,47 @@ import { LiveTicker } from "@/components/LiveTicker";
 import { SupplyChart } from "@/components/SupplyChart";
 import { BreakdownDonut } from "@/components/BreakdownDonut";
 import { EventsTable } from "@/components/EventsTable";
-import type { CarbonEvent, ExportData, Stats } from "@/lib/types";
+import {
+  TopCountriesMintCard,
+  TopCountriesBurnCard,
+  TopRegionsSustainableCard,
+  TopAdministrationsCard,
+  SupplyTrendCard,
+  EventOfTheDayCard,
+  FrameworkActivityCard,
+  SourceDiversityCard,
+  CacheHitRateCard,
+  PartnerActivityCard,
+  PositiveStreakCard,
+} from "@/components/indicators";
+import type { CarbonEvent, ExportData, Stats, Aggregates } from "@/lib/types";
+
+const EMPTY_AGGREGATES: Aggregates = {
+  top_countries_mint: [],
+  top_countries_burn: [],
+  top_regions_sustainable: [],
+  top_administrations_sustainable: [],
+  supply_trend_7d: [],
+  event_of_the_day: null,
+  framework_activity_7d: {
+    SDG: { positive: 0, negative: 0 },
+    UDHR: { positive: 0, negative: 0 },
+    ILO: { positive: 0, negative: 0 },
+    CRC: { positive: 0, negative: 0 },
+    UNDRIP: { positive: 0, negative: 0 },
+    Animal: { positive: 0, negative: 0 },
+    PB: { positive: 0, negative: 0 },
+  },
+  source_diversity_7d: {
+    niche_pct: 0,
+    mainstream_pct: 0,
+    total_sources_used: 0,
+    articles_processed: 0,
+  },
+  cache_hit_rate_7d: { hits: 0, total_events: 0, pct: 0 },
+  active_partners_7d: [],
+  positive_streak: { current: 0, longest_7d: 0 },
+};
 
 // CountUp must be client-only (uses useEffect internally)
 const CountUp = dynamic(() => import("react-countup"), { ssr: false });
@@ -98,6 +138,7 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
 
   const stats = deriveStats(data);
   const events: CarbonEvent[] = data.events;
+  const aggregates: Aggregates = data.aggregates ?? EMPTY_AGGREGATES;
 
   const netAbs = Math.abs(stats.netSupplyChange);
   const netSign = stats.netSupplyChange >= 0 ? "+" : "-";
@@ -244,7 +285,10 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
 
       {/* Main content */}
       <div className="mx-auto max-w-7xl px-4 py-6 space-y-6">
-        {/* Charts row: supply chart + donut */}
+        {/* Event of the Day — full width featured card */}
+        <EventOfTheDayCard event={aggregates.event_of_the_day} />
+
+        {/* Charts row: supply chart + donut (existing) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           <div className="lg:col-span-8">
             <SupplyChart events={events} />
@@ -254,7 +298,31 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
           </div>
         </div>
 
-        {/* Two-column layout: LiveTicker | EventsTable */}
+        {/* Geographic indicators row 1: Top countries MINT/BURN + Supply trend */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <TopCountriesMintCard countries={aggregates.top_countries_mint} />
+          <TopCountriesBurnCard countries={aggregates.top_countries_burn} />
+          <SupplyTrendCard trend={aggregates.supply_trend_7d} />
+        </div>
+
+        {/* Geographic indicators row 2: Top regions + administrations + streak */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <TopRegionsSustainableCard regions={aggregates.top_regions_sustainable} />
+          <TopAdministrationsCard administrations={aggregates.top_administrations_sustainable} />
+          <PositiveStreakCard {...aggregates.positive_streak} />
+        </div>
+
+        {/* Framework Activity — full-width panoptic ethical card */}
+        <FrameworkActivityCard data={aggregates.framework_activity_7d} />
+
+        {/* Pipeline health row */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <SourceDiversityCard {...aggregates.source_diversity_7d} />
+          <CacheHitRateCard {...aggregates.cache_hit_rate_7d} />
+          <PartnerActivityCard partners={aggregates.active_partners_7d} />
+        </div>
+
+        {/* Two-column layout: LiveTicker | EventsTable (existing) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left — Live ticker */}
           <aside className="lg:col-span-4">

@@ -14,6 +14,13 @@
   --error-bg: #24100B;
   --warning-fg: #FF8400;
   --warning-bg: #291C0F;
+
+  /* Carbon World aliases for indicator components */
+  --cw-burn: var(--success-fg);     /* positive citations — green */
+  --cw-mint: var(--error-fg);       /* negative citations — red   */
+  --cw-bg-2: #222;                  /* bar track, lighter than --card-bg */
+  --cw-fg-1: var(--foreground);     /* primary label text */
+  --cw-fg-3: var(--muted);          /* separator / secondary text */
 }
 
 body {
