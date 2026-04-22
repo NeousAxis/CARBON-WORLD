@@ -184,10 +184,9 @@ class TestAdministration:
 
 
 class TestMultiCountryPriority:
-    def test_first_match_wins(self):
-        # Both France and Germany mentioned — first match in title wins
+    def test_highest_score_wins(self):
+        # Both France and Germany mentioned — France appears first, tie-break alpha = France
         result = extract_geo("France and Germany sign bilateral clean energy treaty")
-        # Should return France (appears first)
         assert result["country"] == "France"
 
     def test_title_priority_over_justification(self):
@@ -196,3 +195,141 @@ class TestMultiCountryPriority:
             justification="Germany had a similar law in 2018.",
         )
         assert result["country"] == "Japan"
+
+    def test_score_frequency_ukraine_over_hungary(self):
+        # Ukraine mentioned twice in title → should beat Hungary mentioned once in body
+        result = extract_geo(
+            "guerre en Ukraine : l'UE approuve le déblocage du prêt de 90 milliards d'euros à l'Ukraine",
+            justification="The EU's decision to approve a 90 billion euro loan to Ukraine and a new sanctions package against Russia reflects strong institutional support.",
+            source="le-monde",
+        )
+        assert result["country"] == "Ukraine"
+        assert result["region"] == "Europe"
+
+    def test_score_frequency_chile_over_colombia(self):
+        # Chile in title → higher title weight wins over Colombia also in title
+        result = extract_geo(
+            "Most read | Impact of salmon farms in protected areas of Chile, violence against defenders in Colombia",
+            justification="The investigation into salmon farming violations in Chile highlights severe environmental harm in its protected areas.",
+            source="dialogo-chino",
+        )
+        # Chile should win: it appears in both title and justification
+        assert result["country"] == "Chile"
+
+
+class TestRegressionFalsePositives:
+    """Regression tests for known false-positive bugs fixed 2026-04-22."""
+
+    def test_maryland_energy_bill_is_usa(self):
+        """Event #51: Maryland is a US state → United States."""
+        result = extract_geo(
+            "Maryland Passes Energy Bill That Delivers Short-Term Relief",
+            justification="The Maryland energy bill provides immediate relief to consumers while funding clean energy projects.",
+            source="inside-climate-news",
+        )
+        assert result["country"] == "United States"
+        assert result["region"] == "North America"
+
+    def test_macron_french_lithium_is_france(self):
+        """Event #60: Macron + French → France, not Italy."""
+        result = extract_geo(
+            "Energy dependence: Emmanuel Macron bets on French lithium",
+            justification="The inauguration of the Échassières lithium mine in France supports energy sovereignty and the clean energy transition.",
+            source="le-monde",
+        )
+        assert result["country"] == "France"
+        assert result["region"] == "Europe"
+
+    def test_ukraine_war_loan_is_ukraine(self):
+        """Event #62: Ukraine mentioned twice in title → Ukraine, not Hungary."""
+        result = extract_geo(
+            "EN DIRECT, guerre en Ukraine : l'UE approuve le déblocage du prêt de 90 milliards d'euros à l'Ukraine",
+            justification="The EU decision to approve a 90 billion euro loan to Ukraine and a new sanctions package against Russia.",
+            source="le-monde",
+        )
+        assert result["country"] == "Ukraine"
+
+    def test_chile_salmon_farms_is_chile(self):
+        """Event #42: Chile in title (tied with Colombia) + justification → Chile wins."""
+        result = extract_geo(
+            "Impact of salmon farms in protected areas of Chile, violence against defenders in Colombia",
+            justification="The investigation into salmon farming violations in Chile highlights environmental harm in its protected coastal areas.",
+            source="dialogo-chino",
+        )
+        assert result["country"] == "Chile"
+
+    def test_global_clean_energy_not_india(self):
+        """Event #48: Global article with no country → should NOT be India."""
+        result = extract_geo(
+            "Clean energy pushes fossil-fuel power into reverse for 'first time ever'",
+            justification="The global shift to renewable energy as the largest electricity source is a major positive step forward for climate action worldwide.",
+            source="iea",
+        )
+        assert result["country"] != "India"
+
+    def test_artificial_neurons_not_india(self):
+        """Event #39: Science article with no country → should NOT be India."""
+        result = extract_geo(
+            "Artificial neurons successfully communicate with living brain cells",
+            justification="Breakthrough in artificial neurons shows strong potential for medical and scientific progress in neurology.",
+            source="nature",
+        )
+        assert result["country"] != "India"
+
+    def test_word_in_does_not_match_india(self):
+        """Core regression: English preposition 'in' must NOT match India."""
+        result = extract_geo(
+            "Solar power expands in Europe and Africa",
+            justification="The expansion in renewable infrastructure across multiple regions is a positive global development.",
+        )
+        assert result["country"] != "India"
+
+    def test_word_it_does_not_match_italy(self):
+        """English pronoun 'it' must NOT match Italy."""
+        result = extract_geo(
+            "It is a major step forward in climate policy",
+            justification="Scientists say it represents a breakthrough in understanding carbon cycles.",
+        )
+        assert result["country"] != "Italy"
+
+    def test_word_de_does_not_match_germany(self):
+        """French/Spanish preposition 'de' must NOT match Germany."""
+        result = extract_geo(
+            "La protection de la forêt amazonniene est essentielle",
+            justification="Le renforcement de la législation de protection de l'environnement est crucial.",
+        )
+        assert result["country"] != "Germany"
+
+    def test_word_au_does_not_match_australia(self):
+        """French word 'au' must NOT match Australia."""
+        result = extract_geo(
+            "La situation au Sahel se détériore rapidement",
+            justification="Au cœur de la crise climatique, les pays du Sahel souffrent le plus.",
+        )
+        # 'au' should NOT match Australia; Sahel has no country, result may be None
+        assert result["country"] != "Australia"
+
+    def test_us_state_california_is_usa(self):
+        """California → United States."""
+        result = extract_geo(
+            "California bans sale of new gas-powered vehicles by 2035",
+            justification="The California Air Resources Board approved the landmark regulation.",
+        )
+        assert result["country"] == "United States"
+        assert result["region"] == "North America"
+
+    def test_us_state_texas_is_usa(self):
+        """Texas → United States."""
+        result = extract_geo(
+            "Texas utility approves record solar capacity expansion",
+            justification="The Texas grid operator ERCOT approved new solar installations.",
+        )
+        assert result["country"] == "United States"
+
+    def test_plastic_waste_plant_not_india(self):
+        """Event #46: 'in' preposition must not trigger India."""
+        result = extract_geo(
+            "As a Plastic Waste Plant Violates Pollution Rules, Residents Suffer",
+            justification="Community members living near the plant in the industrial zone report respiratory issues.",
+        )
+        assert result["country"] != "India"

@@ -2,7 +2,8 @@
 geo_extractor.py — Heuristic regex-based geographic extraction. Zero LLM cost.
 
 Extract country, region, and administration from event title + justification + source.
-Priority: title > source hint > first 500 chars of justification.
+Scoring: title occurrences (weight ×3) + justification occurrences (weight ×1).
+Country with highest weighted score wins; ties broken by title presence, then alpha.
 
 Returns {"country": str|None, "region": str|None, "administration": str|None}.
 """
@@ -10,6 +11,7 @@ Returns {"country": str|None, "region": str|None, "administration": str|None}.
 import re
 import logging
 from typing import Optional
+from collections import defaultdict
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +30,14 @@ OCEANIA = "Oceania"
 # COUNTRIES dict: canonical name -> (canonical_name, region)
 # Keys are all lowercase patterns (EN/FR/ES/PT + aliases + ISO-2).
 # We build the lookup dict in two steps: first the data, then compile regexes.
+#
+# SAFETY RULES for short patterns (≤3 chars):
+#   - ISO α-2 codes removed if they spell common English/French/Spanish words:
+#     \bin\b (in), \bit\b (it), \bde\b (de), \bau\b (au), \bfr\b (fr),
+#     \bes\b (es), \bca\b (ca), \beg\b (eg/e.g.), \btr\b (tr), \bor\b (or)
+#   - Only keep ISO codes that are highly unlikely to appear as common words:
+#     \bjp\b, \bcn\b, \bnz\b, \bza\b, \bmx\b, \bng\b, \bke\b, \bpl\b, \buk\b,
+#     \buae\b, \brsa\b, \bprc\b, \busa\b (already covered by "usa" plain)
 # ---------------------------------------------------------------------------
 # Format: "pattern_lower": ("Canonical Country Name", "Region")
 _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
@@ -43,6 +53,59 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "méxico": ("Mexico", NORTH_AMERICA),
     "mexico": ("Mexico", NORTH_AMERICA),
     "mexique": ("Mexico", NORTH_AMERICA),
+
+    # --- US States (map to United States) ---
+    # Note: these are plain text wrapped in word boundaries automatically
+    "maryland": ("United States", NORTH_AMERICA),
+    "california": ("United States", NORTH_AMERICA),
+    "texas": ("United States", NORTH_AMERICA),
+    "florida": ("United States", NORTH_AMERICA),
+    "new york": ("United States", NORTH_AMERICA),
+    "washington state": ("United States", NORTH_AMERICA),
+    "oregon": ("United States", NORTH_AMERICA),
+    "pennsylvania": ("United States", NORTH_AMERICA),
+    "ohio": ("United States", NORTH_AMERICA),
+    "illinois": ("United States", NORTH_AMERICA),
+    "massachusetts": ("United States", NORTH_AMERICA),
+    "virginia": ("United States", NORTH_AMERICA),
+    "north carolina": ("United States", NORTH_AMERICA),
+    "georgia": ("United States", NORTH_AMERICA),
+    "michigan": ("United States", NORTH_AMERICA),
+    "minnesota": ("United States", NORTH_AMERICA),
+    "wisconsin": ("United States", NORTH_AMERICA),
+    "colorado": ("United States", NORTH_AMERICA),
+    "arizona": ("United States", NORTH_AMERICA),
+    "nevada": ("United States", NORTH_AMERICA),
+    "new mexico": ("United States", NORTH_AMERICA),
+    "utah": ("United States", NORTH_AMERICA),
+    "montana": ("United States", NORTH_AMERICA),
+    "idaho": ("United States", NORTH_AMERICA),
+    "wyoming": ("United States", NORTH_AMERICA),
+    "alaska": ("United States", NORTH_AMERICA),
+    "hawaii": ("United States", NORTH_AMERICA),
+    "maine": ("United States", NORTH_AMERICA),
+    "vermont": ("United States", NORTH_AMERICA),
+    "new hampshire": ("United States", NORTH_AMERICA),
+    "connecticut": ("United States", NORTH_AMERICA),
+    "rhode island": ("United States", NORTH_AMERICA),
+    "delaware": ("United States", NORTH_AMERICA),
+    "new jersey": ("United States", NORTH_AMERICA),
+    "iowa": ("United States", NORTH_AMERICA),
+    "missouri": ("United States", NORTH_AMERICA),
+    "kansas": ("United States", NORTH_AMERICA),
+    "nebraska": ("United States", NORTH_AMERICA),
+    "south dakota": ("United States", NORTH_AMERICA),
+    "north dakota": ("United States", NORTH_AMERICA),
+    "west virginia": ("United States", NORTH_AMERICA),
+    "kentucky": ("United States", NORTH_AMERICA),
+    "tennessee": ("United States", NORTH_AMERICA),
+    "alabama": ("United States", NORTH_AMERICA),
+    "mississippi": ("United States", NORTH_AMERICA),
+    "arkansas": ("United States", NORTH_AMERICA),
+    "louisiana": ("United States", NORTH_AMERICA),
+    "south carolina": ("United States", NORTH_AMERICA),
+    "indiana": ("United States", NORTH_AMERICA),
+    "washington dc": ("United States", NORTH_AMERICA),
 
     # --- Latin America ---
     "brazil": ("Brazil", LATIN_AMERICA),
@@ -67,7 +130,6 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "el salvador": ("El Salvador", LATIN_AMERICA),
     "nicaragua": ("Nicaragua", LATIN_AMERICA),
     "panama": ("Panama", LATIN_AMERICA),
-    "panama": ("Panama", LATIN_AMERICA),
     "haiti": ("Haiti", LATIN_AMERICA),
     "haïti": ("Haiti", LATIN_AMERICA),
     "jamaica": ("Jamaica", LATIN_AMERICA),
@@ -89,15 +151,19 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "wales": ("United Kingdom", EUROPE),
     r"\buk\b": ("United Kingdom", EUROPE),
     "france": ("France", EUROPE),
+    "french": ("France", EUROPE),
     "frankreich": ("France", EUROPE),
     "germany": ("Germany", EUROPE),
     "deutschland": ("Germany", EUROPE),
     "allemagne": ("Germany", EUROPE),
     "alemania": ("Germany", EUROPE),
+    "german": ("Germany", EUROPE),
     "italy": ("Italy", EUROPE),
+    "italian": ("Italy", EUROPE),
     "italie": ("Italy", EUROPE),
     "italia": ("Italy", EUROPE),
     "spain": ("Spain", EUROPE),
+    "spanish": ("Spain", EUROPE),
     "espagne": ("Spain", EUROPE),
     "españa": ("Spain", EUROPE),
     "portugal": ("Portugal", EUROPE),
@@ -143,7 +209,9 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "serbia": ("Serbia", EUROPE),
     "serbie": ("Serbia", EUROPE),
     "ukraine": ("Ukraine", EUROPE),
+    "ukrainian": ("Ukraine", EUROPE),
     "russia": ("Russia", EUROPE),
+    "russian": ("Russia", EUROPE),
     "russie": ("Russia", EUROPE),
     "rusia": ("Russia", EUROPE),
     "belarus": ("Belarus", EUROPE),
@@ -165,12 +233,15 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     # --- MENA ---
     "israel": ("Israel", MENA),
     "israël": ("Israel", MENA),
-    "israel": ("Israel", MENA),
+    "israeli": ("Israel", MENA),
     "palestine": ("Palestine", MENA),
+    "palestinian": ("Palestine", MENA),
     "gaza": ("Palestine", MENA),
     "west bank": ("Palestine", MENA),
     "iran": ("Iran", MENA),
+    "iranian": ("Iran", MENA),
     "iraq": ("Iraq", MENA),
+    "iraqi": ("Iraq", MENA),
     "irak": ("Iraq", MENA),
     "saudi arabia": ("Saudi Arabia", MENA),
     "arabie saoudite": ("Saudi Arabia", MENA),
@@ -189,14 +260,18 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "lebanon": ("Lebanon", MENA),
     "liban": ("Lebanon", MENA),
     "syria": ("Syria", MENA),
+    "syrian": ("Syria", MENA),
     "syrie": ("Syria", MENA),
     "turkey": ("Turkey", MENA),
+    "turkish": ("Turkey", MENA),
     "turquie": ("Turkey", MENA),
     "türkiye": ("Turkey", MENA),
     "egypt": ("Egypt", MENA),
+    "egyptian": ("Egypt", MENA),
     "égypte": ("Egypt", MENA),
     "egipto": ("Egypt", MENA),
     "libya": ("Libya", MENA),
+    "libyan": ("Libya", MENA),
     "libye": ("Libya", MENA),
     "algeria": ("Algeria", MENA),
     "algérie": ("Algeria", MENA),
@@ -204,6 +279,7 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "tunisia": ("Tunisia", MENA),
     "tunisie": ("Tunisia", MENA),
     "morocco": ("Morocco", MENA),
+    "moroccan": ("Morocco", MENA),
     "maroc": ("Morocco", MENA),
     "marruecos": ("Morocco", MENA),
     "sudan": ("Sudan", AFRICA),
@@ -215,8 +291,10 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "sudáfrica": ("South Africa", AFRICA),
     r"\brsa\b": ("South Africa", AFRICA),
     "nigeria": ("Nigeria", AFRICA),
+    "nigerian": ("Nigeria", AFRICA),
     "nigerien": ("Nigeria", AFRICA),
     "kenya": ("Kenya", AFRICA),
+    "kenyan": ("Kenya", AFRICA),
     "ethiopia": ("Ethiopia", AFRICA),
     "éthiopie": ("Ethiopia", AFRICA),
     "ghana": ("Ghana", AFRICA),
@@ -269,9 +347,11 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "chinese": ("China", ASIA),
     r"\bprc\b": ("China", ASIA),
     "japan": ("Japan", ASIA),
+    "japanese": ("Japan", ASIA),
     "japon": ("Japan", ASIA),
     "japón": ("Japan", ASIA),
     "india": ("India", ASIA),
+    "indian": ("India", ASIA),
     "inde": ("India", ASIA),
     "south korea": ("South Korea", ASIA),
     "corée du sud": ("South Korea", ASIA),
@@ -302,7 +382,6 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "afghanistan": ("Afghanistan", ASIA),
     "kazakhstan": ("Kazakhstan", ASIA),
     "uzbekistan": ("Uzbekistan", ASIA),
-    "myanmar": ("Myanmar", ASIA),
     "mongolia": ("Mongolia", ASIA),
     "mongolie": ("Mongolia", ASIA),
     "taiwan": ("Taiwan", ASIA),
@@ -311,6 +390,7 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
 
     # --- Oceania ---
     "australia": ("Australia", OCEANIA),
+    "australian": ("Australia", OCEANIA),
     "australie": ("Australia", OCEANIA),
     "new zealand": ("New Zealand", OCEANIA),
     "nouvelle-zélande": ("New Zealand", OCEANIA),
@@ -325,25 +405,33 @@ _RAW_COUNTRIES: dict[str, tuple[str, str]] = {
     "micronesia": ("Micronesia", OCEANIA),
     "palau": ("Palau", OCEANIA),
 
-    # ISO α-2 codes (used as word boundaries only — single letter codes too noisy)
-    r"\bfr\b": ("France", EUROPE),
-    r"\bde\b": ("Germany", EUROPE),
-    r"\bau\b": ("Australia", OCEANIA),
-    r"\bbr\b": ("Brazil", LATIN_AMERICA),
+    # ---------------------------------------------------------------------------
+    # ISO α-2 codes — ONLY kept if the code is NOT a common English/French/Spanish word.
+    # REMOVED (too ambiguous — common words):
+    #   \bin\b  → India     ("in" is an English preposition — causes mass false positives)
+    #   \bit\b  → Italy     ("it" is an English pronoun)
+    #   \bde\b  → Germany   ("de" is French/Spanish preposition)
+    #   \bau\b  → Australia ("au" is a French word)
+    #   \bfr\b  → France    ("fr" appears in many non-country contexts)
+    #   \bes\b  → Spain     ("es" is Spanish verb "is" / English abbreviation)
+    #   \bca\b  → Canada    ("ca" is common abbreviation for circa/California)
+    #   \beg\b  → Egypt     ("eg" / "e.g." is extremely common)
+    #   \btr\b  → Turkey    ("tr" is a common HTML tag / abbreviation)
+    # KEPT (rare enough as standalone words):
+    # ---------------------------------------------------------------------------
+    r"\buk\b": ("United Kingdom", EUROPE),   # Already in Europe section above, duplicate OK
     r"\bjp\b": ("Japan", ASIA),
     r"\bcn\b": ("China", ASIA),
-    r"\bin\b": ("India", ASIA),
     r"\bnz\b": ("New Zealand", OCEANIA),
     r"\bza\b": ("South Africa", AFRICA),
     r"\bmx\b": ("Mexico", NORTH_AMERICA),
-    r"\bca\b": ("Canada", NORTH_AMERICA),
     r"\bng\b": ("Nigeria", AFRICA),
     r"\bke\b": ("Kenya", AFRICA),
-    r"\bes\b": ("Spain", EUROPE),
-    r"\bit\b": ("Italy", EUROPE),
     r"\bpl\b": ("Poland", EUROPE),
-    r"\btr\b": ("Turkey", MENA),
-    r"\beg\b": ("Egypt", MENA),
+    r"\buae\b": ("UAE", MENA),   # Already above, duplicate OK
+    r"\brsa\b": ("South Africa", AFRICA),  # Already above, duplicate OK
+    r"\bprc\b": ("China", ASIA),  # Already above, duplicate OK
+    r"\bbr\b": ("Brazil", LATIN_AMERICA),
 }
 
 # ---------------------------------------------------------------------------
@@ -439,6 +527,9 @@ _SOURCE_HINTS: dict[str, str] = {
     "smh": "Australia",
     "abc-au": "Australia",
     "the-age": "Australia",
+    "inside-climate-news": "United States",
+    "e360": "United States",
+    "grist": "United States",
 }
 
 # ---------------------------------------------------------------------------
@@ -446,7 +537,12 @@ _SOURCE_HINTS: dict[str, str] = {
 # ---------------------------------------------------------------------------
 def _build_patterns() -> list[tuple[re.Pattern, str, str]]:
     patterns = []
+    seen_keys: set[str] = set()
     for raw_key, (canonical, region) in _RAW_COUNTRIES.items():
+        # Deduplicate (some entries appear multiple times due to ISO + long name)
+        if raw_key in seen_keys:
+            continue
+        seen_keys.add(raw_key)
         try:
             # If the key already contains regex metacharacters (like \b), use as-is
             if r"\b" in raw_key or r"\." in raw_key:
@@ -476,6 +572,15 @@ def extract_geo(
     """
     Extract geographic metadata from event title, justification and source slug.
 
+    Scoring algorithm:
+      1. Count regex matches per (country, region) in title (weight ×3) and
+         justification first 500 chars (weight ×1).
+      2. Source hint adds weight 2 if title+justification returned nothing, else
+         acts as a weak signal (weight 1) in the scoring.
+      3. Winner = country with highest total weighted score.
+      4. Tie-break: title presence wins; then alphabetical order.
+      5. Minimum score threshold: must appear at least once with weight ≥ 1.
+
     Returns:
         {
           "country": str | None,
@@ -483,22 +588,72 @@ def extract_geo(
           "administration": str | None,
         }
     """
+    # Scores: country_canonical -> total weighted score
+    scores: dict[str, int] = defaultdict(int)
+    # Track which countries appear in title (for tie-breaking)
+    in_title: set[str] = set()
+    # Track region per canonical country (take first seen)
+    country_region: dict[str, str] = {}
+
+    # 1. Score title matches (weight ×3)
+    if title:
+        for pattern, canonical, region in _PATTERNS:
+            matches = pattern.findall(title)
+            if matches:
+                scores[canonical] += 3 * len(matches)
+                in_title.add(canonical)
+                if canonical not in country_region:
+                    country_region[canonical] = region
+
+    # 2. Score justification first 500 chars (weight ×1)
+    if justification:
+        jtext = justification[:500]
+        for pattern, canonical, region in _PATTERNS:
+            matches = pattern.findall(jtext)
+            if matches:
+                scores[canonical] += 1 * len(matches)
+                if canonical not in country_region:
+                    country_region[canonical] = region
+
+    # 3. Source hint (weight ×2 added to existing scores, or used standalone)
+    source_country: Optional[str] = None
+    if source:
+        source_country = _match_source(source)
+        if source_country:
+            if scores:
+                # Boost source hint but don't override strong text signals
+                scores[source_country] += 2
+                if source_country not in country_region:
+                    country_region[source_country] = _country_to_region(source_country)
+            else:
+                # No text signal at all — use source as sole signal (weight 4)
+                scores[source_country] += 4
+                if source_country not in country_region:
+                    country_region[source_country] = _country_to_region(source_country)
+
+    # 4. Pick winner
     country: Optional[str] = None
     region: Optional[str] = None
 
-    # 1. Try title match (strongest signal)
-    if title:
-        country, region = _match_text(title)
+    if scores:
+        max_score = max(scores.values())
+        candidates = [c for c, s in scores.items() if s == max_score]
 
-    # 2. Source hint fallback
-    if country is None and source:
-        country = _match_source(source)
-        if country:
-            region = _country_to_region(country)
+        if len(candidates) == 1:
+            country = candidates[0]
+        else:
+            # Tie-break: prefer country appearing in title
+            title_candidates = [c for c in candidates if c in in_title]
+            if len(title_candidates) == 1:
+                country = title_candidates[0]
+            elif title_candidates:
+                # Multiple title candidates — alphabetical
+                country = sorted(title_candidates)[0]
+            else:
+                # No title candidates — alphabetical
+                country = sorted(candidates)[0]
 
-    # 3. Justification first 500 chars
-    if country is None and justification:
-        country, region = _match_text(justification[:500])
+        region = country_region.get(country)
 
     # Derive administration from country
     administration: Optional[str] = None
@@ -515,14 +670,6 @@ def extract_geo(
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
-def _match_text(text: str) -> tuple[Optional[str], Optional[str]]:
-    """Return the first (country, region) match found in text, or (None, None)."""
-    for pattern, canonical, region in _PATTERNS:
-        if pattern.search(text):
-            return canonical, region
-    return None, None
-
 
 def _match_source(source: str) -> Optional[str]:
     """Return a country name from a source slug hint, or None."""
