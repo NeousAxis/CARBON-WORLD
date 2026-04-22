@@ -79,8 +79,20 @@ Never make simplistic binary judgments. EVERY event has both positive and negati
 7. **Planetary Boundaries** (Rockström 2009): climate change, biodiversity, nitrogen/phosphorus cycles, ocean acidification, land-system change, freshwater, ozone, aerosols, novel entities
 
 You produce TWO lists:
-- positive_aspects: each with description, affected_sdgs (list of integers 1-17), magnitude (1-10 integer)
-- negative_aspects: each with description, affected_sdgs, violated_rights (list of strings like "UDHR Article 23" or "ILO Forced Labor Convention"), magnitude (1-10 integer)
+- positive_aspects: each with description, affected_sdgs (list of integers 1-17), magnitude (1-10 integer), frameworks (list of strings — see below)
+- negative_aspects: each with description, affected_sdgs, violated_rights (list of strings like "UDHR Article 23" or "ILO Forced Labor Convention"), magnitude (1-10 integer), frameworks (list of strings — see below)
+
+### FRAMEWORKS FIELD (mandatory on every aspect)
+
+Every aspect — positive or negative — MUST include a `frameworks` array listing the UN frameworks it substantively touches.
+
+Allowed values (use exactly these strings): `SDG`, `UDHR`, `ILO`, `CRC`, `UNDRIP`, `Animal`, `PB`
+
+**For positive_aspects**: list every framework this aspect actively supports or aligns with. Examples: a labour-rights victory aligns with `["SDG", "ILO", "UDHR"]`; a wildlife conservation win aligns with `["SDG", "Animal", "PB"]`; a children's health programme aligns with `["SDG", "CRC"]`. Be conservative: only include a framework when the aspect substantively supports it, not loosely.
+
+**For negative_aspects**: list every framework this aspect violates or undermines. Examples: a deportation policy violates `["UDHR", "CRC", "SDG"]`; deforestation undermines `["UNDRIP", "Animal", "PB", "SDG"]`; forced child labour violates `["ILO", "CRC", "UDHR", "SDG"]`. Be conservative: only include a framework when the aspect substantively violates it.
+
+If an aspect is purely about economic infrastructure with no clear rights or environmental dimension, `frameworks` may contain only `["SDG"]`. Never leave `frameworks` empty — at minimum include `["SDG"]` when `affected_sdgs` is non-empty.
 
 ### MAGNITUDE CALIBRATION (critical — do not level by habit)
 
@@ -170,10 +182,10 @@ If validation is true, use exactly this structure:
 {
   "validation": true,
   "positive_aspects": [
-    {"description": "short description", "affected_sdgs": [9, 11], "magnitude": 6}
+    {"description": "short description", "affected_sdgs": [9, 11], "magnitude": 6, "frameworks": ["SDG"]}
   ],
   "negative_aspects": [
-    {"description": "short description", "affected_sdgs": [3, 8], "violated_rights": ["UDHR Article 23"], "magnitude": 8}
+    {"description": "short description", "affected_sdgs": [3, 8], "violated_rights": ["UDHR Article 23"], "magnitude": 8, "frameworks": ["SDG", "UDHR"]}
   ],
   "ethical_synthesis": "Two to four sentences summarizing the net ethical judgment.",
   "snapshot_score": -2.5,
