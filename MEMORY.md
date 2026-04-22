@@ -4,6 +4,57 @@
 
 ---
 
+## 🚨 2026-04-22 (suite) — Bug critique geo_extractor + section Partners
+
+**Cyril a spotté en prod** : Inde top MINT ET top BURN simultanément, USA absent du top, Russie/Iran/Ukraine 0 events. Investigation DB prod :
+
+**Faux positifs prouvés sur 7 events (sur 65)** :
+- #51 « **Maryland** Passes Energy Bill » → tagué India
+- #48 « Clean energy pushes fossil-fuel power into reverse » → India
+- #39 « Artificial neurons communicate with brain cells » → India
+- #46 « As a Plastic Waste Plant Violates Pollution Rules » → India
+- #60 « **Emmanuel Macron** bets on French lithium » → Italy
+- #62 « guerre en **Ukraine** : l'UE approuve 90 milliards » → Hungary
+- #42 « salmon farms in **Chile**, violence in Colombia » → Colombia
+
+**Root cause unique** (commit `58010f1`) : ligne 335 de `worker/geo_extractor.py`
+```python
+r"\bin\b": ("India", ASIA),
+```
+Le mot anglais courant « in » (préposition) matchait India. **Tout** article anglais contenant « in » devenait India. Le frontend est 100% EN, mais les sources RSS sont multilingues (FR/EN/ES/PT) — donc les titres restent en langue d'origine. Le geo_extractor devait gérer les deux.
+
+**Fix livré par sous-agent Sonnet** :
+- Suppression des 9 alias ISO α-2 ambigus : `\bin\b`, `\bit\b`, `\bde\b`, `\bau\b`, `\bfr\b`, `\bes\b`, `\bca\b`, `\beg\b`, `\btr\b`
+- Conservation des alias non-ambigus : JP, CN, NZ, ZA, MX, NG, KE, PL, BR, UK, UAE, RSA, PRC
+- Ajout des formes adjectivales (« French », « German », « Italian », « Russian », « Ukrainian »…) pour compenser
+- **Algorithme remplacé** : au lieu du premier match, scoring par fréquence avec poids title ×3 + justification ×1 + source hint ×2. Tie-break = title-presence puis alphabétique
+- **Détection 50 états US + DC** → tag United States (Maryland, California, Texas… maintenant correctement résolus)
+- 47/47 tests geo (32 + 15 régressions sur les cas réels), 109/109 full pytest suite
+
+**Backfill VPS post-fix** :
+- Reset SQL des 65 country/region/administration en NULL puis re-backfill
+- Distribution corrigée :
+  - **TOP MINT** : United States 9, China 6, Brazil 4, France 4, UK 3 (vs avant : India 10, France 3, Germany 3, Sudan 2, USA 2)
+  - **TOP BURN** : Cuba, Iran, Colombia, France (1 chacun)
+  - **EVENT OF DAY** : Ecuador (illegal mining + indigenous Chachi), correctement tagué
+  - **India 1 event** sur 65 (vs 12 avant)
+  - **Russie 2, Iran 2, Ukraine 1** maintenant détectés
+  - **9 events sans country** (articles globaux IEA / scientifiques) : c'est le bon comportement
+
+**Section Partners (commit `612ad45`)** : ajout `web/src/components/PartnersSection.tsx` entre la row santé pipeline et la live activity. **3 partenaires 100% inventés** : Helion Watch, Boreal Institute, Mosaic Research Lab. Badge orange `MOCK · PREVIEW ONLY` à côté du titre + meta droite `NO REAL PARTNERS YET — OUTREACH IN PROGRESS` + tagline répétée « Placeholder organisation — replace once a real partner signs in ». Lien `REQUEST ACCESS →` avec mailto neousaxis@gmail.com.
+
+**Erreurs Claude reconnues lors de cette session** :
+- Premier draft Partners utilisait Vakita / The Shift Project / IDDRI (vrais noms d'orgs francophones cibles outreach). Cyril m'a (à juste titre) engueulé : afficher de **vrais** noms comme partenaires alors qu'ils ne le sont pas est une fausse représentation. Corrigé immédiatement avec noms inventés + badge MOCK explicite.
+- J'aurais dû relire et tester `geo_extractor.py` avant la première mise en prod. Le bug `\bin\b` → India était grossier et un test sur 1 article anglais l'aurait flagué. Leçon : tests de régression sur cas réels avant ship, pas seulement tests unitaires sur cas synthétiques.
+
+**État final 17:25 CEST** :
+- 4 commits pushés cette journée : `a248599` foundations, `d41bdfe` 12-indicators, `1369165` MEMORY log, `58010f1` fix geo, `612ad45` Partners
+- Prod carbon-token.xyz à jour, distribution géo réaliste
+- 65 events / 65 backfilled / 56 avec embedding Phase 3
+- Backlog : outreach vague 1 (8 emails FR), Phase B optimisation Collector
+
+---
+
 ## 🎯 2026-04-22 — Dashboard home : 12 indicateurs livrés en prod
 
 Session orchestration Opus 4.7 → 4 sous-agents Sonnet en 3 vagues.
