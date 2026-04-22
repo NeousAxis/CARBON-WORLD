@@ -36,7 +36,7 @@ export function TopRegionsSustainableCard({
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"
-        style={{ color: "var(--border)" }}
+        style={{ color: "var(--brand-teal)" }}
       >
         BURN RATIO WEIGHTED
       </p>

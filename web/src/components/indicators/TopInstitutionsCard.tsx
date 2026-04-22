@@ -30,7 +30,7 @@ export function TopInstitutionsCard({ institutions }: TopInstitutionsCardProps) 
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"
-        style={{ color: "var(--border)" }}
+        style={{ color: "var(--brand-teal)" }}
       >
         INTERNATIONAL BODIES MENTIONED
       </p>

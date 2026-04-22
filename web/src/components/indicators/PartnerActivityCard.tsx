@@ -60,7 +60,7 @@ export function PartnerActivityCard({ partners }: PartnerActivityCardProps) {
           </span>
           <span
             className="text-[10px] font-mono text-center"
-            style={{ color: "var(--border)" }}
+            style={{ color: "var(--brand-teal)" }}
           >
             Contact neousaxis@gmail.com for API access
           </span>

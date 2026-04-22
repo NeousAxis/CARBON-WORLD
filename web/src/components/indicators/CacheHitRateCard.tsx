@@ -64,7 +64,7 @@ export function CacheHitRateCard({
       {/* Info note */}
       <p
         className="text-[10px] font-mono mt-4 text-center"
-        style={{ color: "var(--border)", lineHeight: "1.4" }}
+        style={{ color: "var(--brand-teal)", lineHeight: "1.4" }}
         title="Phase 3 semantic cache reused verdicts for similar events"
       >
         SEMANTIC CACHE · COSINE &ge; 0.92 · 7-DAY WINDOW

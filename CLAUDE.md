@@ -339,7 +339,8 @@ Analyse Cyril : sur le run 12:00 CEST, 1925 articles → 100 passés au classifi
 - [x] Stack : Next.js 16 + Tailwind CSS v4 + TypeScript
 - [x] Hébergement prod : **VPS Hetzner** (Caddy reverse proxy + systemd `carbon-web.service` sur :3000)
 - [x] Certificat TLS : Let's Encrypt via Caddy (renewal auto)
-- [x] Design : **Lunaris Dark** (fond #111111, accent orange #FF8400, JetBrains Mono)
+- [x] Design : **Lunaris Dark** — fond #111111, cards #1A1A1A, border #2E2E2E, accent principal orange #FF8400, accent secondaire teal **#0190A0** (du logo, token CSS `--brand-teal`), positif vert #B6FFCE, négatif rouge #FF5C33, JetBrains Mono, titres UPPERCASE, corners carrés. Titre navbar split : CARBON vert + WORLD teal. SOLANA label en teal. Sous-titres des cards en teal.
+- [x] Logo : `/carbon-world-xl.png` (cercle pointillé multicolore orange/teal/bleu), 60/108 px dans la navbar, favicon/apple-icon auto-générés depuis la même source
 - [x] Source données : JSON export auto (`worker/exporter.py` → `web/data/export.json`)
 - [x] Dashboard financier : ticker bar, supply chart SVG, donut breakdown, event log table, live ticker
 - [x] Page `/event/[id]` : détail événement + justification éthique + lien Solana Explorer

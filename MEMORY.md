@@ -4,6 +4,32 @@
 
 ---
 
+## 🎨 2026-04-22 (soir) — Refresh branding : nouveau logo XL + teal #0190A0 + sous-titres visibles
+
+Itérations logo demandées par Cyril :
+1. `carbon world.png` (sphère orange) — rejeté après preview
+2. `Carbon world-FINAL.png` (sphère géodésique orange) — rejeté
+3. `Carbon world_S.png` (sphère pointillée orange) — rejeté
+4. `Carbon world_X.png` v1 (spirale infinie) — rejeté
+5. `Carbon world_X.png` v2 (cercle pointillé orange/teal) — rejeté trop petit
+6. **`carbon-world-XL.png`** — validé (cercle pointillé multicolore orange/teal/bleu)
+
+À chaque itération : renommage en kebab-case (`Carbon world_X.png` → `carbon-world-xl.png`), favicon + apple-icon + icon.png auto-regénérés via PIL depuis la source 873×938/2000×2000, center-square crop pour les formats carrés. Commits successifs `9818b2a`, `16c544b`, `f527072`, `ffce77c`, `8fe91c4`, `987540f`, `d581a7e`.
+
+**Taille finale logo navbar** : 60/108 px (après "réduis de 25%" — partait de 80/144 px, puis testé 160/288 px = trop gros, puis 80/144 = OK, puis final 60/108).
+
+**Nouveau token CSS `--brand-teal: #0190A0`** (commit `987540f`) ajouté dans `web/src/app/globals.css`. Sert à refléter la couleur secondaire du logo. Cyril a flaggé que je l'avais ajoutée sans l'utiliser nulle part → devenait décoratif.
+
+**Utilisation du teal finalisée** (commits `58f0b42`, `18ec7e2`, `dae39af`) :
+- **Titre navbar** : `CARBON` vert #B6FFCE + `WORLD` teal (split visuel miroir du logo multicolore)
+- **Lien Review** de la nav : vert #B6FFCE (brand positif)
+- **Label SOLANA** du ticker : teal (identifie la chain)
+- **Sous-titres des 8 cards** (INSTITUTIONAL REGRESSIONS, POSITIVE ACTIONS, BURN RATIO WEIGHTED, INTERNATIONAL BODIES MENTIONED, INDUSTRIES IMPACTED, etc.) : teal au lieu de `var(--border)` #2E2E2E qui était quasi invisible sur fond card #1A1A1A
+
+Identité visuelle à jour : orange #FF8400 = accent primaire CBWD, vert #B6FFCE = positif/BURN, rouge #FF5C33 = négatif/MINT, teal #0190A0 = secondaire brand (logo, Solana, sub-labels).
+
+---
+
 ## 🚨 2026-04-22 (suite) — Bug critique geo_extractor + section Partners
 
 **Cyril a spotté en prod** : Inde top MINT ET top BURN simultanément, USA absent du top, Russie/Iran/Ukraine 0 events. Investigation DB prod :

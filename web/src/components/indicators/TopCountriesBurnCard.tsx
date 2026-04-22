@@ -35,7 +35,7 @@ export function TopCountriesBurnCard({ countries }: TopCountriesBurnCardProps) {
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"
-        style={{ color: "var(--border)" }}
+        style={{ color: "var(--brand-teal)" }}
       >
         POSITIVE ACTIONS
       </p>
