@@ -38,8 +38,8 @@ export default function RootLayout({
               style={{ color: "#FF8400" }}
             >
               <img
-                src="/cbwd-logo.png"
-                alt="CBWD"
+                src="/carbon-world.png"
+                alt="Carbon World"
                 className="rounded-full w-10 h-10 sm:w-[72px] sm:h-[72px]"
               />
               <span className="hidden xs:inline sm:inline">CARBON WORLD</span>
