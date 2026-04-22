@@ -47,6 +47,21 @@ Le mot anglais courant « in » (préposition) matchait India. **Tout** article 
 - Premier draft Partners utilisait Vakita / The Shift Project / IDDRI (vrais noms d'orgs francophones cibles outreach). Cyril m'a (à juste titre) engueulé : afficher de **vrais** noms comme partenaires alors qu'ils ne le sont pas est une fausse représentation. Corrigé immédiatement avec noms inventés + badge MOCK explicite.
 - J'aurais dû relire et tester `geo_extractor.py` avant la première mise en prod. Le bug `\bin\b` → India était grossier et un test sur 1 article anglais l'aurait flagué. Leçon : tests de régression sur cas réels avant ship, pas seulement tests unitaires sur cas synthétiques.
 
+### ⚠ Indicateur « Top Administrations Sustainable » — biais d'échantillonnage non corrigeable, à REMPLACER
+
+**Diagnostic Cyril 2026-04-22** : la card `TopAdministrationsCard` produit mécaniquement les partis au pouvoir en tête (France/Renaissance, USA/Republican, Russia/United Russia, etc.) parce que :
+- Le pipeline capte les **décisions visibles** prises par les pouvoirs exécutifs
+- Les partis d'opposition ne prennent pas de décisions structurantes → invisibles
+- Le `burn_ratio` reflète le **volume d'événements captés**, pas la performance éthique
+- Conclusion : l'indicateur ne dit rien de pertinent sur la durabilité d'une administration. Renaissance avec 20% burn ratio n'est pas « plus durable » que LDP à 0%, c'est juste un artefact statistique.
+
+**Décision** : remplacer cet indicateur par un autre qui apporte un vrai signal panoptique. Options proposées (en attente de choix Cyril) :
+1. **Top NGOs / civil society actors** — mesure les contre-pouvoirs (ClientEarth, Amazon Watch, Sea Shepherd, Survival International) actifs sur les 7 derniers jours. Aligné avec la mission de capter les actions positives invisibles dans les médias mainstream.
+2. **Top international institutions** — UN/EU/COP/ICJ/ICC/ECHR/IMF/World Bank/IPCC. Permet de montrer où les vrais arbitrages globaux se jouent.
+3. **Top sectors impacted** — energy / mining / agriculture / tech / finance / pharma. Permet de voir où les régressions se concentrent (et donc où l'action publique manque).
+
+**Status** : indicateur encore visible en prod en attente de remplacement, mais documenté comme « biais d'échantillonnage connu ».
+
 **État final 17:25 CEST** :
 - 4 commits pushés cette journée : `a248599` foundations, `d41bdfe` 12-indicators, `1369165` MEMORY log, `58010f1` fix geo, `612ad45` Partners
 - Prod carbon-token.xyz à jour, distribution géo réaliste
