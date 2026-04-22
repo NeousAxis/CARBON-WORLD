@@ -38,9 +38,9 @@ export default function RootLayout({
               style={{ color: "#FF8400" }}
             >
               <img
-                src="/carbon-world.png"
+                src="/carbon-world-final.png"
                 alt="Carbon World"
-                className="rounded-full w-10 h-10 sm:w-[72px] sm:h-[72px]"
+                className="w-20 h-20 sm:w-[144px] sm:h-[144px]"
               />
               <span className="hidden xs:inline sm:inline">CARBON WORLD</span>
             </Link>
