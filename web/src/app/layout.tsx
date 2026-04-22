@@ -40,7 +40,7 @@ export default function RootLayout({
               <img
                 src="/carbon-world-s.png"
                 alt="Carbon World"
-                className="w-20 h-20 sm:w-[144px] sm:h-[144px]"
+                className="w-[60px] h-[60px] sm:w-[108px] sm:h-[108px]"
               />
               <span className="hidden xs:inline sm:inline">CARBON WORLD</span>
             </Link>
