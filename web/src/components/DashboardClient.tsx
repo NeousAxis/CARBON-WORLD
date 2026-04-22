@@ -6,6 +6,7 @@ import { LiveTicker } from "@/components/LiveTicker";
 import { SupplyChart } from "@/components/SupplyChart";
 import { BreakdownDonut } from "@/components/BreakdownDonut";
 import { EventsTable } from "@/components/EventsTable";
+import { PartnersSection } from "@/components/PartnersSection";
 import {
   TopCountriesMintCard,
   TopCountriesBurnCard,
@@ -321,6 +322,9 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
           <CacheHitRateCard {...aggregates.cache_hit_rate_7d} />
           <PartnerActivityCard partners={aggregates.active_partners_7d} />
         </div>
+
+        {/* Partners section — early supporters with logos */}
+        <PartnersSection />
 
         {/* Two-column layout: LiveTicker | EventsTable (existing) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
