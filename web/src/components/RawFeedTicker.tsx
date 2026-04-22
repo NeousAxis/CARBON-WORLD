@@ -63,7 +63,7 @@ export function RawFeedTicker() {
           >
             <span
               className="uppercase tracking-wider mr-2"
-              style={{ color: "#FF8400", fontWeight: 600 }}
+              style={{ color: "var(--brand-teal)", fontWeight: 600 }}
             >
               {a.source}
             </span>
