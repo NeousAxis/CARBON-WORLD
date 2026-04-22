@@ -42,7 +42,9 @@ export default function RootLayout({
                 alt="Carbon World"
                 className="w-[60px] h-[60px] sm:w-[108px] sm:h-[108px]"
               />
-              <span className="hidden xs:inline sm:inline">CARBON WORLD</span>
+              <span className="hidden xs:inline sm:inline">
+                CARBON <span style={{ color: "var(--brand-teal)" }}>WORLD</span>
+              </span>
             </Link>
             <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm overflow-x-auto">
               <Link

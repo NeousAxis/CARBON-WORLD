@@ -172,7 +172,7 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
               <span className="text-sm font-bold tracking-tight" style={{ color: "#FF8400" }}>
                 CBWD
               </span>
-              <span className="text-[10px] uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
+              <span className="text-[10px] uppercase tracking-wider" style={{ color: "var(--brand-teal)" }}>
                 Solana
               </span>
             </div>
