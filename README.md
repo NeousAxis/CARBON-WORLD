@@ -114,4 +114,4 @@ See `LICENSE` (TBD).
 
 ## Contact
 
-**Cyril Leger / Neous Axis** — neousaxis@gmail.com
+**Cyril Leger / Neous Axis** — hello@carbon-token.xyz

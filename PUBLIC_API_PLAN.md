@@ -279,7 +279,7 @@ Modifications :
 >
 > Bien cordialement,
 > **Cyril Leger** — Fondateur, CARBON WORLD
-> neousaxis@gmail.com | [carbon-token.xyz](https://carbon-token.xyz)
+> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-token.xyz)
 
 ### Version anglaise
 
@@ -304,7 +304,7 @@ Modifications :
 >
 > Best regards,
 > **Cyril Leger** — Founder, CARBON WORLD
-> neousaxis@gmail.com | [carbon-token.xyz](https://carbon-token.xyz)
+> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-token.xyz)
 
 ---
 

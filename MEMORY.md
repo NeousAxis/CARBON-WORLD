@@ -67,7 +67,7 @@ Le mot anglais courant « in » (préposition) matchait India. **Tout** article 
   - **Russie 2, Iran 2, Ukraine 1** maintenant détectés
   - **9 events sans country** (articles globaux IEA / scientifiques) : c'est le bon comportement
 
-**Section Partners (commit `612ad45`)** : ajout `web/src/components/PartnersSection.tsx` entre la row santé pipeline et la live activity. **3 partenaires 100% inventés** : Helion Watch, Boreal Institute, Mosaic Research Lab. Badge orange `MOCK · PREVIEW ONLY` à côté du titre + meta droite `NO REAL PARTNERS YET — OUTREACH IN PROGRESS` + tagline répétée « Placeholder organisation — replace once a real partner signs in ». Lien `REQUEST ACCESS →` avec mailto neousaxis@gmail.com.
+**Section Partners (commit `612ad45`)** : ajout `web/src/components/PartnersSection.tsx` entre la row santé pipeline et la live activity. **3 partenaires 100% inventés** : Helion Watch, Boreal Institute, Mosaic Research Lab. Badge orange `MOCK · PREVIEW ONLY` à côté du titre + meta droite `NO REAL PARTNERS YET — OUTREACH IN PROGRESS` + tagline répétée « Placeholder organisation — replace once a real partner signs in ». Lien `REQUEST ACCESS →` avec mailto hello@carbon-token.xyz.
 
 **Erreurs Claude reconnues lors de cette session** :
 - Premier draft Partners utilisait Vakita / The Shift Project / IDDRI (vrais noms d'orgs francophones cibles outreach). Cyril m'a (à juste titre) engueulé : afficher de **vrais** noms comme partenaires alors qu'ils ne le sont pas est une fausse représentation. Corrigé immédiatement avec noms inventés + badge MOCK explicite.
