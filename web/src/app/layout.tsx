@@ -38,7 +38,7 @@ export default function RootLayout({
               style={{ color: "#FF8400" }}
             >
               <img
-                src="/carbon-world-s.png"
+                src="/carbon-world-x.png"
                 alt="Carbon World"
                 className="w-[60px] h-[60px] sm:w-[108px] sm:h-[108px]"
               />
