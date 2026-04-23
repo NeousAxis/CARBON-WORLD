@@ -1,10 +1,410 @@
 {
-  "generated_at": "2026-04-21T08:14:45.562737+00:00",
-  "total_events": 49,
+  "generated_at": "2026-04-23T15:34:43.230143+00:00",
+  "total_events": 69,
   "total_burned": 9050000,
-  "total_minted": 50915000,
-  "pending_reviews": 3,
+  "total_minted": 65715000,
+  "pending_reviews": 10,
   "events": [
+    {
+      "id": 69,
+      "event_title": "La Paternal: the city government evicts a property occupied by more than 100 squatters",
+      "event_url": "https://www.clarin.com/sociedad/paternal-gobierno-porteno-desaloja-predio-tomado-100-ocupas_0_7eDtgAn9mG.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.84,
+      "confidence": 7,
+      "justification": "Eviction risks homelessness and violates housing rights, outweighing legal enforcement benefits. | The eviction enforces legal property rights and urban order (SDG 16), but displacing over 100 people risks homelessness and violates housing rights (SDG 1, 11; UDHR Article 25). The negative impact on vulnerable populations outweighs the procedural legality.",
+      "tx_hash": "4ZNMiuVLv6RFVJSvDG6ecoBsFQmwPyohL1rpUFFcjpCsEpwCgox8Ma7xQnPJfZTwqoXob6kHUExxLebYKwHMNMYc",
+      "created_at": "2026-04-23T15:34:42.959609+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Eviction enforces legal property rights and urban order.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Displacement of over 100 people risks homelessness and violates housing rights.\", \"affected_sdgs\": [1, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 68,
+      "event_title": "UK: medical data of 500,000 people offered for sale in China",
+      "event_url": "https://www.lemonde.fr/pixels/article/2026/04/23/royaume-uni-les-donnees-medicales-de-500-000-personnes-proposees-a-la-vente-en-chine_6682822_4408996.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -2.92,
+      "confidence": 7,
+      "justification": "Medical data sale raises serious privacy and misuse concerns. | While the anonymization of data reduces direct privacy risks, the sale of medical data to a foreign government raises serious concerns about misuse, lack of transparency, and potential violations of individual rights. The negative impact outweighs the limited positive aspect.",
+      "tx_hash": "4K3D2FzAhL78uTdw9eMoLSzg2wZbVEepXQUUhYDBmKrfSyks7W9vpf4AwoftyrH3SLQEc4BqgQssXttgnqEfjYAP",
+      "created_at": "2026-04-23T15:34:42.836737+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Anonymized data reduces direct privacy risks for individuals.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Massive medical data sale to China raises concerns about data misuse, surveillance, and lack of transparency.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 17\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 67,
+      "event_title": "Ohio Is Where Wind and Solar Projects Go to Die, and Other Findings From New Research on State Permitting",
+      "event_url": "https://insideclimatenews.org/news/23042026/inside-clean-energy-ohio-permit-rejections/",
+      "event_source": "Inside Climate News",
+      "decision": "MINT",
+      "amount_crbn": 460000,
+      "final_score": -2.1,
+      "confidence": 7,
+      "justification": "Ohio's regulatory challenges hinder renewable energy progress, representing a negative trend for climate action. | The situation in Ohio reflects a systemic failure to support renewable energy development, which undermines climate action and clean energy access. While the research raises awareness, the high rejection and withdrawal rates represent a significant setback for sustainable development.",
+      "tx_hash": "2gsDAgZ4H886s7nuZcdAPytojRXTc9WooBBQK9pVELy5kEZ1j4oqNPRYW91Q2yjiQpR9PTSH4Cg4eKZhGxWpuXBW",
+      "created_at": "2026-04-23T15:34:42.730935+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The research highlights the need for improved regulatory frameworks to support renewable energy development.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ohio's high rate of rejected and withdrawn renewable energy projects hinders progress toward clean energy goals.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 66,
+      "event_title": "Republican lawmakers attempt to shield big oil from climate lawsuits in 'alarming' bills",
+      "event_url": "https://www.theguardian.com/us-news/2026/apr/23/republicans-big-oil-climate-lawsuits",
+      "event_source": "The Guardian Climate",
+      "decision": "MINT",
+      "amount_crbn": 2320000,
+      "final_score": -3.25,
+      "confidence": 8,
+      "justification": "Legislation shields big oil from climate accountability, enabling environmental harm. | The proposed bills represent a significant setback for climate accountability and environmental protection. By granting legal immunity to big oil, they enable continued environmental harm and undermine efforts to address climate change, violating key planetary boundaries and SDGs.",
+      "tx_hash": "5wyVouDAQfLKQP9SabgTNc9MV79VWAU3LwqbBftTTMD9shJoeipY9r9YStWEUZ4XNVXd2D38jzWVseDeF7QWc5FX",
+      "created_at": "2026-04-23T15:34:42.597273+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Bills would grant legal immunity to oil and gas companies from climate-related lawsuits and policies.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The proposed legislation could weaken enforcement of climate accountability, enabling continued emissions and environmental degradation.\", \"affected_sdgs\": [13, 6, 11], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]"
+    },
+    {
+      "id": 65,
+      "event_title": "Liberia: War Crimes Court Body Accuses Senior Liberian Officials of Blocking Progress",
+      "event_url": "https://allafrica.com/stories/202604220317.html",
+      "event_source": "AllAfrica Headlines",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.07,
+      "confidence": 7,
+      "justification": "Senior officials blocking justice undermines SDG 16 and violates UDHR rights. | The effort to establish a War and Economic Crimes Court represents a positive step toward justice and accountability (SDG 16). However, the deliberate obstruction by senior officials undermines the rule of law and due process, violating fundamental rights and hindering progress toward peace and justice.",
+      "tx_hash": "3kfK4oWYH6CZ4qB4aFVGHftvoAzB1ZLderci9XhWz7GsRT1QGrikz5ykKdnNieKMXYYQFPve5FVwCpegMR3MnsGD",
+      "created_at": "2026-04-22T14:40:32.682500+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Liberia",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"War Crimes Court body is attempting to establish a legal framework for accountability.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Senior government officials are accused of deliberately blocking progress on justice and accountability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 14\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 64,
+      "event_title": "Extreme heat threatens global agriculture, UN agencies warn",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/04/calor-extremo-ameaca-agricultura-global-alertam-agencias-da-onu.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 3500000,
+      "final_score": -3.08,
+      "confidence": 8,
+      "justification": "Extreme heat threatens food systems and health of over 1 billion people, violating basic rights and SDGs. | The report highlights a critical threat to global food security and human health due to extreme heat, which violates the right to adequate food and health. While raising awareness is a positive step, the underlying harm to billions is severe and urgent.",
+      "tx_hash": "3ePcXVZ7V2WqZFHQ76sjDyh6EvxV6Dt3kEUeLVY6fRp8TwYUZWHeWrLPz1bnZGVHm4ztncPZjd8N283SnQLKoiuL",
+      "created_at": "2026-04-22T14:26:56.740364+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"UN agencies raise awareness about extreme heat's impact on global agriculture\", \"affected_sdgs\": [2, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Extreme heat threatens food systems and livelihoods of over 1 billion people\", \"affected_sdgs\": [2, 3, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 63,
+      "event_title": "Ecuador: illegal mining and armed groups displace hundreds of Chachi indigenous people on the north coast",
+      "event_url": "https://es.mongabay.com/2026/04/ecuador-mineria-ilegal-grupos-armados-desplazan-indigenas-chachi-costa-norte/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -3.91,
+      "confidence": 7,
+      "justification": "Severe human rights and environmental violations with high magnitude and negative trajectory. | The displacement of the Chachi people due to illegal mining and armed group activity represents a severe violation of their rights and environmental degradation. The situation reflects a failure to protect indigenous communities and ecosystems, with high magnitude negative impacts.",
+      "tx_hash": "2J2Pjf64XcEJnE6ZjBwayHR73CLCPP2VbF8bcZS6qNBqgBz5Y99nDSbKCDtmfnUVTEqsGoV6sbzFS31CjB6QvEuQ",
+      "created_at": "2026-04-22T13:26:36.688663+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ecuador",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Indigenous Chachi people are being displaced due to illegal gold mining and violence by armed groups.\", \"affected_sdgs\": [15, 16, 10, 11], \"violated_rights\": [\"UNDRIP Article 10\", \"UDHR Article 1\", \"UDHR Article 2\", \"UDHR Article 17\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Illegal mining operations are causing environmental degradation and threatening biodiversity in the region.\", \"affected_sdgs\": [15, 6, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 62,
+      "event_title": "EN DIRECT, guerre en Ukraine : l’UE approuve le déblocage du prêt de 90 milliards d’euros à l’Ukraine, après la levée du veto de la Hongrie",
+      "event_url": "https://www.lemonde.fr/international/live/2026/04/22/en-direct-guerre-en-ukraine-l-ue-approuve-le-deblocage-du-pret-de-90-milliards-d-euros-a-l-ukraine-apres-la-levee-du-veto-de-la-hongrie_6681322_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": 3.59,
+      "confidence": 8,
+      "justification": "EU action supports Ukraine's resilience and justice against Russian aggression. | The EU's decision to approve a 90 billion euro loan to Ukraine and a new sanctions package against Russia is ethically positive as it supports Ukraine's resilience and justice in the face of aggression. However, the long-term financial implications for Ukraine and the limited effectiveness of sanctions are moderate concerns.",
+      "tx_hash": "4sAvnohKb2THwfiUj4apcvWxHUL44gnWo9CoZBdKDnGKNK6UkRQmPSpN6XpF6CNzRnbY9FgBotpkA4PNf571b8uq",
+      "created_at": "2026-04-22T12:03:43.779047+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"Approval of a 90 billion euro loan to Ukraine supports its economic stability and resilience during the war.\", \"affected_sdgs\": [1, 8, 17], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}, {\"description\": \"The 20th package of sanctions against Russia reinforces international pressure on the aggressor state.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The loan may increase Ukraine’s long-term debt burden and dependency on external financial support.\", \"affected_sdgs\": [8, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"The sanctions may have limited effectiveness if not accompanied by broader international cooperation.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 61,
+      "event_title": "Kenya: KWS DG Faces Prosecution for Access to Information Violations in Snakebite Data Row",
+      "event_url": "https://allafrica.com/stories/202604220322.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 3.56,
+      "confidence": 7,
+      "justification": "Withholding life-saving public health data violates transparency and health rights, warranting MINT for institutional failure. | The failure to release snakebite mortality data violates the public’s right to health and information, posing a direct risk to communities in snake-prone areas. Prosecuting the KWS DG enforces accountability and supports SDG 3 (Good Health) and SDG 16 (Peace, Justice and Strong Institutions). While institutional concerns may exist, they do not outweigh the ethical impe",
+      "tx_hash": "4CWEqjQEAz6gvMupymKoBuBewxWBA95Rnv2nG86LsHY6a7yhLUWXmtiRfxwKLrba64Jv3J5k6H6UQPr7jCgbbHvq",
+      "created_at": "2026-04-22T11:30:45.950810+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Kenya",
+      "region": "Africa",
+      "administration": "Kenya-UDA",
+      "positive_aspects_json": "[{\"description\": \"Potential enforcement of transparency and accountability in public institutions by compelling release of health and wildlife data relevant to public safety.\", \"affected_sdgs\": [3, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Upholding the right to information as a tool for public health improvement, particularly in addressing underreported snakebite mortality.\", \"affected_sdgs\": [3, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Withholding of critical public health data by a government agency undermines preventive healthcare and community preparedness.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Delay or refusal in data sharing may reflect institutional resistance to transparency, risking lives in vulnerable rural communities.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 60,
+      "event_title": "Energy dependence: Emmanuel Macron bets on French lithium",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/info-%C3%A9co/20260422-d%C3%A9pendance-%C3%A9nerg%C3%A9tique-emmanuel-macron-parie-sur-le-lithium-fran%C3%A7ais",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 280000,
+      "final_score": 2.11,
+      "confidence": 7,
+      "justification": "The lithium mine supports energy sovereignty but carries environmental risks. | The inauguration of the Échassières lithium mine supports energy sovereignty and industrial development, aligning with SDGs on industry and climate action. However, it raises environmental concerns due to potential ecological damage and emissions.",
+      "tx_hash": "2176YprzY5MEtejrFG8nQimmVx1tXFBv7V4bBdsq5b3qAM7dm2xJsKtebPnT15CdzfxaAQtrmqvAWtFaxkaM4eUS",
+      "created_at": "2026-04-22T11:04:57.381781+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Supports domestic battery industry and energy sovereignty\", \"affected_sdgs\": [9, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Reduces reliance on foreign energy resources\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Mining activity may cause environmental degradation\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential for increased industrial emissions during extraction and processing\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 59,
+      "event_title": "The government limits the duration of appeals against industrial projects by referring them directly to administrative courts of appeal",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/04/22/le-gouvernement-limite-la-duree-des-recours-contre-les-projets-industriels-en-les-confiant-directement-aux-cours-administratives-d-appel_6682388_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.58,
+      "confidence": 7,
+      "justification": "Policy weakens environmental and social safeguards for industrial projects. | The policy accelerates industrial development, supporting economic goals, but weakens environmental and social protections by limiting legal review time. The net effect tilts toward enabling harmful industrial expansion with reduced accountability.",
+      "tx_hash": "5tfmH44AyExTgJ2LLDvZX4iZCXRsrZVeVXAoCBui9dWJkn52uqgqofbhSTwHjik6qaUuXtA2w9WL38u8fz7qQR1N",
+      "created_at": "2026-04-22T11:04:57.202601+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Faster implementation of industrial projects supports economic growth and job creation.\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reduced appeal duration limits legal oversight and environmental/social safeguards for industrial projects.\", \"affected_sdgs\": [12, 13, 15], \"violated_rights\": [\"UDHR Article 15\", \"UNDRIP Article 10\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]"
+    },
+    {
+      "id": 58,
+      "event_title": "Calls for change to rules after stretch of Thames fails to gain bathing water status",
+      "event_url": "https://www.theguardian.com/environment/2026/apr/22/calls-for-change-to-rules-after-stretch-of-thames-fails-to-gain-bathing-water-status",
+      "event_source": "The Guardian Environment",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": -0.12,
+      "confidence": 7,
+      "justification": "The current poor water quality in the Thames represents a negative impact on public health and environmental standards. | The failure of the River Thames to meet bathing water standards highlights a significant public health and environmental concern. While the call for improved rules is a positive step toward cleaner water and better urban living conditions, the current poor water quality represents a direct violation of the right to health and clean water.",
+      "tx_hash": "9D9XVHAUnSLnyzKggzoiQXT21s3TQZpEXaGKcs7ySf79EcyHyEAfxi1s5fznUkuiLHNZrAb5pr89qxLfpWPUZ5p",
+      "created_at": "2026-04-22T11:04:57.069133+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Campaigners are calling for improved bathing water rules to address pollution in the River Thames.\", \"affected_sdgs\": [6, 11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The stretch of the River Thames failed to meet bathing water quality standards due to poor water quality, posing public health risks.\", \"affected_sdgs\": [3, 6, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 57,
+      "event_title": "Push for solar park in Sri Lanka’s elephant terrain raises concern",
+      "event_url": "https://news.mongabay.com/2026/04/push-for-solar-park-in-sri-lankas-elephant-terrain-raises-concern/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.08,
+      "confidence": 7,
+      "justification": "The project risks significant harm to elephant habitats and biodiversity, outweighing its renewable energy benefits. | The solar park project promotes clean energy (SDG 7 and 13), but its location in a critical elephant habitat raises serious concerns about biodiversity loss and animal rights. The negative impact on wildlife appears more direct and severe than the positive energy benefits.",
+      "tx_hash": "3YF97frPTiZUCKqdZSb589rNn1szdxZMzmHCf1UbfHcnYwPyNfbFxKD1jL4d6Dg8aJKpwLRnEebaVBUoNRnce3hN",
+      "created_at": "2026-04-22T10:30:59.692610+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sri Lanka",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Promotion of renewable energy through solar park development.\", \"affected_sdgs\": [7, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential disruption of elephant habitats and ecosystems.\", \"affected_sdgs\": [15], \"violated_rights\": [\"UNDRIP Article 10\", \"Universal Declaration of Animal Rights\"], \"magnitude\": 7, \"frameworks\": [\"Animal\", \"SDG\", \"UNDRIP\"]}]"
+    },
+    {
+      "id": 56,
+      "event_title": "After three years of conflict, Sudan faces a deeper health crisis",
+      "event_url": "https://www.who.int/news/item/14-04-2026-after-three-years-of-conflict--sudan-faces-a-deeper-health-crisis",
+      "event_source": "WHO News",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -3.25,
+      "confidence": 7,
+      "justification": "Ongoing conflict and deteriorating health services in Sudan represent a significant negative ethical impact. | The health crisis in Sudan is worsening due to ongoing conflict, with millions lacking access to essential services and rising disease and malnutrition. While some areas show signs of improvement, the overall situation remains dire and ethically concerning.",
+      "tx_hash": "3BaitSV2s3eDsAYiCJE1bWpqPcewCTPwiKWUc2wFkyG2qDkAx4wSWbrrmUEfRdaZxnaSnVy51LTr3oJu7rX1Zt4s",
+      "created_at": "2026-04-21T10:14:41.435502+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sudan",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Some areas in Sudan show signs of improvement in health services.\", \"affected_sdgs\": [3, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"34 million people in Sudan require humanitarian aid, with 21 million lacking access to health services.\", \"affected_sdgs\": [3, 2, 6, 11], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 9, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\"]}, {\"description\": \"Health system is being crippled by repeated attacks and ongoing conflict.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\"]}, {\"description\": \"Disease outbreaks and malnutrition are rising in conflict-affected areas.\", \"affected_sdgs\": [2, 3, 15], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\"]}, {\"description\": \"Funding for health services is falling short, limiting response capacity.\", \"affected_sdgs\": [3, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 55,
+      "event_title": "Personalized CRISPR therapies could soon reach thousands — here’s how",
+      "event_url": "https://www.nature.com/articles/d41586-026-01243-y",
+      "event_source": "Nature News",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": 3.89,
+      "confidence": 7,
+      "justification": "Economically viable CRISPR therapies for rare diseases represent a significant ethical and health advancement. | The development of an economically viable approach to CRISPR therapies for rare genetic diseases is a major ethical and scientific advancement, particularly for SDG 3 (Good Health) and SDG 10 (Reduced Inequalities). However, the risk of unequal access remains a concern, especially for vulnerable populations.",
+      "tx_hash": "3wjJoeGgG8Tgkg1aLZB47i1Sh97TJo3hn7jUqngPTR8oSZpURoiMPdH859NmYNWzJSk6biTFDfVzmrEj7DeTBeVe",
+      "created_at": "2026-04-21T10:14:41.328867+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"New approach to CRISPR therapies for rare genetic diseases could make production economically viable, improving access for patients.\", \"affected_sdgs\": [3, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential for high costs and limited access for low-income populations if not regulated or subsidized.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
+    {
+      "id": 54,
+      "event_title": "Japan to invest ¥1 trillion to secure recycled resources",
+      "event_url": "https://www.japantimes.co.jp/news/2026/04/21/japan/recycled-resources-investment-plan/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 3.29,
+      "confidence": 7,
+      "justification": "Investment in recycled resources supports circular economy and waste reduction goals. | The investment in recycled resources supports sustainable industry and waste reduction, aligning with multiple SDGs. While it promotes a circular economy, the focus on reuse may overshadow upstream waste prevention efforts.",
+      "tx_hash": "31e19A7nZkLyTmsCNxwfMo8D3hDkjAL579LP9QLg2JEAvcq4RamWubRue8nE9EuunSgLHJZtyBW9yy4g86jo4NMy",
+      "created_at": "2026-04-21T10:14:41.221432+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Investment in recycling infrastructure reduces reliance on virgin resources and supports circular economy principles.\", \"affected_sdgs\": [12, 9, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Promotion of plastic and metal reuse contributes to pollution reduction and climate action.\", \"affected_sdgs\": [13, 6, 14], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Large-scale investment may divert attention or funding from more systemic waste reduction strategies.\", \"affected_sdgs\": [12], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 53,
+      "event_title": "WA coal miner to cut jobs, citing slowing demand",
+      "event_url": "https://www.abc.net.au/news/2026-04-21/premier-coal-job-losses-collie/106589890",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.71,
+      "confidence": 7,
+      "justification": "Job losses create immediate economic harm, while the environmental benefits are uncertain and long-term. | The decision to cut jobs at the coal mine reflects a trade-off between reducing emissions and harming local employment. While the reduction in coal production supports climate action, the job losses create immediate economic hardship for workers and their families.",
+      "tx_hash": "5xDFs7qn6ZVgNuCpgGu1yYqmcrGbYnWXVfAu2oRANvDo6JjeJBtCyESD3hH7rqGhbDu4e93cdqyqm3NqXPJYEiYZ",
+      "created_at": "2026-04-21T09:47:59.437454+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Reduction in coal mining operations may lead to lower greenhouse gas emissions.\", \"affected_sdgs\": [13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Job losses will negatively impact workers' livelihoods and local economic stability.\", \"affected_sdgs\": [8, 1], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 52,
+      "event_title": "China calls for US 'sincerity' on Iran and warns of Japan's 'dangerous' nuclear ambitions",
+      "event_url": "https://www.scmp.com/news/china/military/article/3350877/china-calls-us-sincerity-iran-and-warns-japans-dangerous-nuclear-ambitions?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.29,
+      "confidence": 7,
+      "justification": "China's warning about Japan's nuclear ambitions could encourage proliferation, while its call for US sincerity is a positive diplomatic signal. | China's call for US sincerity in the Iranian nuclear issue supports diplomatic resolution and international stability (SDG 16). However, its warning about Japan's nuclear ambitions could indirectly encourage nuclear proliferation or regional arms race dynamics, which also undermine SDG 16.",
+      "tx_hash": "5xDFs7qn6ZVgNuCpgGu1yYqmcrGbYnWXVfAu2oRANvDo6JjeJBtCyESD3hH7rqGhbDu4e93cdqyqm3NqXPJYEiYZ",
+      "created_at": "2026-04-21T09:47:59.324016+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"China emphasizes the importance of resolving the Iranian nuclear issue through sincerity and diplomacy.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"China warns about Japan's potential nuclear ambitions, which could destabilize regional security and encourage nuclear proliferation.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 51,
+      "event_title": "Maryland Passes Energy Bill That Delivers Short-Term Relief, Locks Ratepayers into Long-Term Nuclear Subsidy",
+      "event_url": "https://insideclimatenews.org/news/21042026/maryland-ratepayer-energy-bill-nuclear-subsidy/",
+      "event_source": "Inside Climate News",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.62,
+      "confidence": 7,
+      "justification": "The bill locks ratepayers into long-term nuclear subsidies while reducing clean energy funding. | The Maryland energy bill provides immediate relief to ratepayers, which supports economic stability and access to affordable energy. However, it locks in long-term nuclear subsidies and reduces funding for energy efficiency, which could hinder sustainable development and climate action over time.",
+      "tx_hash": "48pqWSNyBcCFKJvje39aM8Y1F3Q8FensrFZmS3fagKbFagWJVjy9TCyGkG4EhR7C6QyXtwyn6EXRd15nkLKW3bWL",
+      "created_at": "2026-04-21T09:47:59.191648+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Short-term relief for ratepayers through reduced surcharge and rebates\", \"affected_sdgs\": [8, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Long-term subsidy for nuclear power, which may lock ratepayers into costly commitments\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Reduction of funding for energy-efficiency programs, potentially slowing progress on clean energy\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]"
+    },
+    {
+      "id": 50,
+      "event_title": "Why China’s decades-long ambition to green the desert could run dry",
+      "event_url": "https://www.rfi.fr/en/environment/20260419-why-china-ambition-to-green-the-desert-may-be-running-dry-taklamakan",
+      "event_source": "RFI EN Environment",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": 0.99,
+      "confidence": 7,
+      "justification": "The project shows environmental benefits but raises significant concerns about water use and replicability. | While the afforestation project in the Taklamakan Desert demonstrates a positive step toward combating desertification and restoring ecosystems, it raises significant concerns about the sustainability of water use and the feasibility of replicating such efforts elsewhere. The environmental benefits are real but must be weighed against the potential for resource depletion and economic inf",
+      "tx_hash": "4YAsBK8vcggdHbFReqGyY1f8H7sHbDUYtdQkAmFQd1SYm92viM9LGW8Y4WbguvZqzyRCwhUXc1QbBb2P5Um2HiGD",
+      "created_at": "2026-04-21T08:29:44.569523+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Afforestation efforts in the Taklamakan Desert show potential for reversing desertification and restoring ecosystems.\", \"affected_sdgs\": [15], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Such projects can serve as a model for other arid regions facing desertification.\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The project may be depleting local water resources, risking long-term sustainability and affecting communities dependent on those resources.\", \"affected_sdgs\": [6, 12], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}, {\"description\": \"The high cost and resource intensity of the project may limit its replicability in other regions with less economic capacity.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
+    },
     {
       "id": 49,
       "event_title": "In major policy shift, Japan scraps limits on lethal arms exports",
@@ -18,7 +418,12 @@
       "tx_hash": "2zsYCRZdvEx6KRu2K67GJfzNV2zDZyv1cofQhxri1R6o715tLZgZ2RuHs9xvoNxkw7EJn49taGxTPnDU6SqgzXk1",
       "created_at": "2026-04-21T08:14:45.437065+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Increased potential for international defense cooperation and economic growth\", \"affected_sdgs\": [9, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk of increased militarization and potential destabilization of regional security\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 29\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"ILO\", \"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 48,
@@ -33,7 +438,12 @@
       "tx_hash": "2qPr1XDC9Y98ets36KryhzLFsP8BryHs1DQQnc8GUmpDQd3dpSCS8GLBCvmoh4hsES4dyPP3zk6hH1BGL3wxFN8X",
       "created_at": "2026-04-21T08:14:45.322409+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Renewable energy overtakes coal as the largest source of electricity globally, marking a significant shift toward clean energy.\", \"affected_sdgs\": [7, 13], \"magnitude\": 9, \"frameworks\": [\"SDG\"]}, {\"description\": \"The transition to clean energy reduces greenhouse gas emissions and supports climate action goals.\", \"affected_sdgs\": [13], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The shift may not be fully inclusive, potentially leaving behind communities reliant on fossil fuel industries.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Some regions may still rely on fossil fuels due to lack of infrastructure or investment in renewable energy.\", \"affected_sdgs\": [7, 11], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 47,
@@ -48,7 +458,12 @@
       "tx_hash": "4BAbnYtLGzpRr4FQCUb44qCtY6qhrKMuvBa67DX5DwiPhJVNxwyg85GK5mfZYnjPCYoimYirYL6Po3GtK1KSTLoP",
       "created_at": "2026-04-21T07:48:34.876162+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Existing SSSIs continue to be managed under current protections, preserving some level of habitat and species conservation.\", \"affected_sdgs\": [15, 13, 6], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Halt in designating new SSSIs since 2023 undermines biodiversity conservation and weakens legal protection against development in ecologically sensitive areas.\", \"affected_sdgs\": [15, 13, 11], \"violated_rights\": [\"Universal Declaration of Animal Rights\", \"Planetary Boundaries\"], \"magnitude\": 9, \"frameworks\": [\"Animal\", \"PB\", \"SDG\"]}, {\"description\": \"Failure to expand protected areas reduces resilience of ecosystems to climate change and increases extinction risk for endangered species.\", \"affected_sdgs\": [13, 15, 6], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 46,
@@ -63,7 +478,12 @@
       "tx_hash": "4FiRknfAFcpW8TX64tKxrVB62xF81QeVwjpuLtAd88hAbwkfpNa7VJP4pRpw4Ssntq3DdeTH2654x3V9vSgdSNyQ",
       "created_at": "2026-04-20T12:55:06.023182+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The plant is processing plastic waste, which could reduce landfill use and promote circular economy principles.\", \"affected_sdgs\": [12, 13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The plant is violating pollution rules and emitting harmful smoke, contributing to air pollution and public health risks.\", \"affected_sdgs\": [3, 13], \"violated_rights\": [\"UDHR Article 25\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"ILO\", \"SDG\", \"UDHR\"]}, {\"description\": \"Plans for a larger facility in Arizona suggest a potential for increased environmental harm and regulatory non-compliance.\", \"affected_sdgs\": [13, 14], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 45,
@@ -78,7 +498,12 @@
       "tx_hash": "4ZbvfmPPQ4oLNs5kdcjupddaVtiyPYkXrZs4cYbtgmA89qKnLWx634VjWEkiBNt2TBLjfbW7eKLwyaMQVGgQmW7o",
       "created_at": "2026-04-20T12:55:05.922745+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Research highlights the climate risks of burning wood for power, potentially leading to policy corrections.\", \"affected_sdgs\": [13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Subsidies for wood-burning power with carbon capture may incentivize a harmful energy source, delaying transition to cleaner alternatives.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 44,
@@ -93,7 +518,12 @@
       "tx_hash": "28crDEyrsCJRL4kSqzmGUFqRkwJRLB1Sd5KN1PCevNpGNqLtFDy6FaPQqkaD2tdf88asPPmka7uF9CbwQw32PRgS",
       "created_at": "2026-04-20T12:43:47.871237+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Ensures fair compensation for truck drivers based on fluctuating fuel prices\", \"affected_sdgs\": [8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Promotes transparency and accountability in subcontractor arrangements\", \"affected_sdgs\": [8, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"May increase operational costs for companies, potentially leading to cost-passing to consumers\", \"affected_sdgs\": [8, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Administrative burden on businesses due to frequent reviews\", \"affected_sdgs\": [9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 43,
@@ -108,7 +538,12 @@
       "tx_hash": "4zdy6E2BbHrT2KsvouLTRrpcgNMUbxsAFa2Mdv2BSJ4W9gbKRCQxrztEM1goDHkCgjjSGFLTjZCYVWv8TRasq4Qf",
       "created_at": "2026-04-20T12:14:03.501186+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Malawi",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Suspension of coal miner's license for river pollution\", \"affected_sdgs\": [6, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential economic impact on local communities reliant on the mine\", \"affected_sdgs\": [8, 1], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 42,
@@ -123,7 +558,12 @@
       "tx_hash": "4S5zMGKHth8HGfF1hczCUEomj5mfd1zdh8XHD5rWxKMQDFr778Jo83pjHYpNAZnPY9uMuN4ojiN6Gafd5PM4MXLw",
       "created_at": "2026-04-20T12:14:03.351690+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Chile",
+      "region": "Latin America",
+      "administration": "Chile-Apruebo Dignidad",
+      "positive_aspects_json": "[{\"description\": \"Investigation reveals environmental violations in Chilean salmon farming\", \"affected_sdgs\": [14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"30% of salmon farming violations occurred in protected areas\", \"affected_sdgs\": [14, 15], \"violated_rights\": [\"UNDRIP Article 29\", \"UNDRIP Article 32\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"2025 was the most violent year for human rights defenders in Colombia\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 12\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 41,
@@ -138,7 +578,12 @@
       "tx_hash": "5Ad3dhcXnRbKvjKyZsVzmUFeC1Mi5agJaxa4G1zefheeNFNs6gQ71YioNE9R89dR9R2sXNmrDULDYPQCLfkxi54C",
       "created_at": "2026-04-20T12:14:03.189502+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"The Netherlands is preparing for potential oil shortages by activating a crisis plan.\", \"affected_sdgs\": [9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The allocation of funds to compensate for rising oil prices may increase dependency on fossil fuels.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 40,
@@ -153,7 +598,12 @@
       "tx_hash": "3w1VYAjYyjnQbE7AqsHvrBKKAP3mv77ZTmGyCekfWxZy5FF5zaxrfPPVv5WXAiyuRDeknwEEVYG8L41okFBwDuF9",
       "created_at": "2026-04-20T11:45:22.012043+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"The report highlights the issue of discrimination against Muslim women, raising awareness and potentially prompting policy or social action.\", \"affected_sdgs\": [5, 10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Systematic discrimination and personal experiences of prejudice indicate a violation of fundamental human rights and gender equality.\", \"affected_sdgs\": [5, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 7\", \"CRC Article 16\"], \"magnitude\": 8, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 39,
@@ -168,7 +618,12 @@
       "tx_hash": "4pd5yFemVBteR1AVqpPBiFxmUQo4DaiQBBo13mFypX9wK4GkJ4u4gVDgxED6RXdkbu9e6FbtigWrKy6Zpo372ZH",
       "created_at": "2026-04-20T11:17:32.745665+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Artificial neurons can communicate with living brain cells, opening new possibilities for brain research and medical treatments.\", \"affected_sdgs\": [3, 9, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential ethical concerns regarding the long-term implications of integrating artificial neurons with biological systems.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 38,
@@ -183,7 +638,12 @@
       "tx_hash": "2zPYpaBAbPTW9zgwqXdyKXWv8q9KWUM7tVXT6T62HZp71vLBgQpWQHwqJkLeV3EReuF4GWj7sYjub9Vm5HdpGFdT",
       "created_at": "2026-04-20T11:17:32.651933+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Mexico",
+      "region": "North America",
+      "administration": "Mexico-Morena",
+      "positive_aspects_json": "[{\"description\": \"Authorities acknowledged the cause of the oil spill, which is a step toward transparency and accountability.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The oil spill caused environmental damage to the Gulf of Mexico, affecting marine ecosystems and biodiversity.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 37,
@@ -198,7 +658,12 @@
       "tx_hash": "4dDM2TQzygSs9fJFH2dYvHL5vnzL3KzorG3Jb3BbLgaGRM3cbPMCYqdra1srTiV4mjeFCnbuhGnYvTuLpUC5sd8j",
       "created_at": "2026-04-19T10:37:39.949418+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential short-term pressure on Iran to return to diplomatic negotiations over nuclear program and regional conduct.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Blockade risks triggering armed conflict in a critical global chokepoint, endangering regional and global peace.\", \"affected_sdgs\": [13, 14, 15, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 21\", \"UNCLOS Article 44\", \"UNDRIP Article 29\"], \"magnitude\": 10, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Disruption of global oil supply through the Strait of Hormuz threatens energy security, increases prices, and harms economies worldwide, especially low-income nations.\", \"affected_sdgs\": [7, 8, 1, 2], \"magnitude\": 9, \"frameworks\": [\"SDG\"]}, {\"description\": \"Unilateral military action without UN mandate undermines international law and multilateral conflict resolution mechanisms.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 36,
@@ -213,7 +678,12 @@
       "tx_hash": "3fH6i7pYdCbzQrz6xLwNo8BRDwdeYmUcWXvTW47Ss4HHc26VHvY4wzmz5EChCWtJzeqDexmWGbj3uK8smQciaN8h",
       "created_at": "2026-04-19T10:37:39.826618+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Original 2010 Glacier Law established strong protections for glaciers and periglacial environments, banning extractive activities and recognizing glaciers as strategic water reserves.\", \"affected_sdgs\": [6, 13, 15, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"2026 reform weakens protection by narrowing the scope of periglacial areas safeguarded and introducing criteria that reduce environmental oversight, increasing risk of mining exploitation.\", \"affected_sdgs\": [6, 13, 15], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP Article 29\", \"Universal Declaration of Animal Rights\", \"Planetary Boundaries: Freshwater, Biodiversity\"], \"magnitude\": 9, \"frameworks\": [\"Animal\", \"PB\", \"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Reform undermines Indigenous Peoples' rights by reducing legal protection in territories where glaciers and periglacial zones are integral to cultural and physical survival.\", \"affected_sdgs\": [10, 11, 16], \"violated_rights\": [\"UNDRIP Article 25\", \"UDHR Article 1\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]"
     },
     {
       "id": 35,
@@ -228,7 +698,12 @@
       "tx_hash": "Y6teUXG17Vp5iaNFEjBtmZ4vg5U32nipoFZevjasN3VBoRgXVyQb6qQi4awQPquwsu49Ys1qtgKHhLu9ZXZMgxr",
       "created_at": "2026-04-19T10:37:39.723471+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Authorization may bring short-term economic activity and jobs to a remote region with limited development\", \"affected_sdgs\": [8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Mining project threatens biodiversity and river ecosystems in a sensitive Amazon region, risking irreversible damage to aquatic and terrestrial life\", \"affected_sdgs\": [6, 14, 15], \"violated_rights\": [\"Universal Declaration of Animal Rights\", \"Planetary Boundaries\"], \"magnitude\": 9, \"frameworks\": [\"Animal\", \"PB\", \"SDG\"]}, {\"description\": \"Project proceeds despite indigenous protests, violating prior consultation rights and threatening cultural survival of local communities\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UNDRIP Article 19\", \"UDHR Article 27\", \"ILO Convention 169\"], \"magnitude\": 10, \"frameworks\": [\"ILO\", \"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Risk of water contamination and deforestation undermines long-term sustainability and health of local populations\", \"affected_sdgs\": [3, 6, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 34,
@@ -243,7 +718,12 @@
       "tx_hash": "3sitze6TLBMUaKR7QuaobamkaEARUNpmuNXDtvvAsxpSjMwDw5G1PnA7pbgaoqx73wpEpZCTM3GpQsKiump1MyfD",
       "created_at": "2026-04-19T10:37:39.635252+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU has banned certain pesticides domestically due to health and environmental risks, reflecting strong internal regulatory standards.\", \"affected_sdgs\": [3, 12, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"A promised law to stop export of banned pesticides indicates intent to align foreign trade with internal health and environmental values.\", \"affected_sdgs\": [12, 13, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Exporting over 122,000 tonnes of banned pesticides in 2024 undermines global health and environmental safety, disproportionately affecting vulnerable populations in importing countries.\", \"affected_sdgs\": [3, 6, 12, 15], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 24\", \"Universal Declaration of Animal Rights\"], \"magnitude\": 9, \"frameworks\": [\"Animal\", \"CRC\", \"SDG\", \"UDHR\"]}, {\"description\": \"Stalled legislation enables ongoing harm and signals double standards in environmental and health policy between domestic and international actions.\", \"affected_sdgs\": [10, 12, 16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]"
     },
     {
       "id": 33,
@@ -258,7 +738,12 @@
       "tx_hash": "Y6teUXG17Vp5iaNFEjBtmZ4vg5U32nipoFZevjasN3VBoRgXVyQb6qQi4awQPquwsu49Ys1qtgKHhLu9ZXZMgxr",
       "created_at": "2026-04-19T10:37:39.486591+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Procedural fairness upheld by ensuring federal court review, reinforcing rule of law in complex environmental litigation.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Delays accountability for oil and gas firms in restoring coastal ecosystems, exacerbating land loss and climate vulnerability in Louisiana.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"Universal Declaration of Animal Rights\"], \"magnitude\": 8, \"frameworks\": [\"Animal\", \"SDG\", \"UDHR\"]}, {\"description\": \"Undermines state-level environmental enforcement and community rights to a healthy environment, particularly impacting frontline communities.\", \"affected_sdgs\": [6, 11, 10], \"violated_rights\": [\"UDHR Article 3\", \"UNDRIP Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]"
     },
     {
       "id": 32,
@@ -273,7 +758,12 @@
       "tx_hash": null,
       "created_at": "2026-04-18T13:32:50.426500+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Cuba",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Attracting diaspora investment may stimulate economic growth and diversification.\", \"affected_sdgs\": [8, 9, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Encouraging private sector participation could reduce inequality and promote inclusive economic development.\", \"affected_sdgs\": [10, 8], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The policy may prioritize capital over labor rights, potentially exacerbating inequality and exploitation.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"ILO Core Labor Standards\"], \"magnitude\": 6, \"frameworks\": [\"ILO\", \"SDG\"]}, {\"description\": \"Opening the economy to diaspora investors could undermine local control and sovereignty over economic policy.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 31,
@@ -288,7 +778,12 @@
       "tx_hash": null,
       "created_at": "2026-04-18T13:28:43.632413+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Abandonment of potentially risky foreign acquisition aligns with US national security priorities.\", \"affected_sdgs\": [9, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deal collapse may hinder international technology collaboration and economic integration.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 30,
@@ -303,7 +798,12 @@
       "tx_hash": null,
       "created_at": "2026-04-18T13:17:14.543148+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": "[{\"description\": \"Iran announces freedom of navigation in the Strait of Hormuz until the end of the ceasefire.\", \"affected_sdgs\": [9, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The ongoing war in the Middle East and the potential for renewed conflict in the strategic Strait of Hormuz.\", \"affected_sdgs\": [16, 8], \"violated_rights\": [\"UDHR Article 26\", \"UNDRIP Article 10\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]"
     },
     {
       "id": 29,
@@ -318,7 +818,12 @@
       "tx_hash": "3a6mGPMx2eL39SNU3FhxLKq5cT3KYau4eCiphvfdRewvkW2yowpNNZ2vQjq1ECeojrMfJgQPZG9RH8snNhan8s9a",
       "created_at": "2026-04-18T03:16:44.000355+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Russian use of ballistic missiles to target Ukrainian water infrastructure\", \"affected_sdgs\": [6, 3, 11], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\", \"UNDRIP Article 10\"], \"magnitude\": 9, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Lack of effective Ukrainian interception systems due to refusal of U.S. to supply Patriot missiles\", \"affected_sdgs\": [16, 3, 11], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 19\", \"UNDRIP Article 10\"], \"magnitude\": 8, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\", \"UNDRIP\"]}]"
     },
     {
       "id": 28,
@@ -333,7 +838,12 @@
       "tx_hash": "MxfyKHmqpjhFB4nrQGXP7wkwZkg6jJQaGBj6NFBfEYAZ2TQB1oufbGjxZ83iCR68Sycj5u1DfFhV4ubjvipabFV",
       "created_at": "2026-04-18T03:01:43.159389+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Strengthening regional security cooperation\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Boosting Japan's defense industry and exports\", \"affected_sdgs\": [9, 8], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increased militarization in the Indo-Pacific region\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 29\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for increased regional tensions and arms race\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 27,
@@ -348,7 +858,12 @@
       "tx_hash": "51UjDUyJvL82HdA1ZiBe7WxD5f2XaY9W7ypQ9Nos361q4Po6HmYmT4t22fjSFx6XJc4ziMxfDXkWf7xrYwJDYzWw",
       "created_at": "2026-04-17T19:46:46.149049+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"Increased water prices may incentivize conservation and investment in infrastructure.\", \"affected_sdgs\": [6, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Price increase disproportionately affects poor households, increasing inequality and reducing access to clean water.\", \"affected_sdgs\": [1, 6, 10], \"violated_rights\": [\"UDHR Article 25\", \"SDG 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"High costs may deter investment in water infrastructure repair and modernization.\", \"affected_sdgs\": [6, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 26,
@@ -363,7 +878,12 @@
       "tx_hash": "3tx28PNocR5y73rcDzSwkNCpsqp75Y9Bu1m37nGFpjEePuZZT4CmDQSisSYmHg4VFTiju6SCNf9H9awyhrYwoEcN",
       "created_at": "2026-04-17T17:17:02.534604+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"The conviction of protesters may deter future illegal demonstrations and uphold legal order.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Severe sentencing of protesters for expressing concerns about minority rights in China may suppress free speech and peaceful assembly.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 25,
@@ -378,7 +898,12 @@
       "tx_hash": "5Josk72EtxJR1jAYWpV8RBjUDf9ouePytZaw6p7YFZoVsN45FWjbUQMrJnkwjcsfhBHYahrY3wKQKMqTHRECsbox",
       "created_at": "2026-04-17T17:02:09.084661+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Previous support for agro-environmental and climate measures helped reduce environmental impact and promote sustainable agriculture.\", \"affected_sdgs\": [12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reduction in the number and duration of agricultural aids undermines progress in environmental protection and climate action.\", \"affected_sdgs\": [12, 13, 15], \"violated_rights\": [\"SDG 13 Climate Action\", \"SDG 15 Life on Land\"], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 24,
@@ -393,7 +918,12 @@
       "tx_hash": "2VqxxtXckZ4BBGGy1Y5Dx98V1CyW2vzsiWoWr6UL9k8X9vtYqj5c4LSTMzzcYr4hv2ep96ZBnBcpKpBbQW6zbiBy",
       "created_at": "2026-04-17T16:32:19.617091+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"India remains committed to climate action despite not hosting COP 33.\", \"affected_sdgs\": [13, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"India's decision to not host COP 33 may reduce global momentum for climate action and regional leadership in climate diplomacy.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]"
     },
     {
       "id": 2,
@@ -408,7 +938,12 @@
       "tx_hash": "3peypjRmVfDq22Dwj1kQsGUvwcgS6E3vQj7cERQSjSVRqMoEu6R6Usmub87UzeFVAn2GuRquehiByaG1jvX7wBu3",
       "created_at": "2026-04-17T13:47:51.372339+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential for increased energy access through expanded fossil fuel support\", \"affected_sdgs\": [7, 8], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Undermining global climate targets and green investment\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"Planetary Boundaries: Climate Change\"], \"magnitude\": 8, \"frameworks\": [\"PB\", \"SDG\", \"UDHR\"]}, {\"description\": \"Risk of locking in high-emission infrastructure in developing countries\", \"affected_sdgs\": [11, 13], \"violated_rights\": [\"UNDRIP Article 10\", \"Planetary Boundaries: Biodiversity Loss\"], \"magnitude\": 7, \"frameworks\": [\"PB\", \"SDG\", \"UNDRIP\"]}]"
     },
     {
       "id": 1,
@@ -423,7 +958,12 @@
       "tx_hash": "2LamHAV1MeJfTXmQDkLQPzzryxfGqFtKSNhRub4HYhmGfX5Qt6wfYcjBkbxRV8tqoknU58JJ7RajqtfXqH2WXy17",
       "created_at": "2026-04-17T13:37:44.954860+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Chile",
+      "region": "Latin America",
+      "administration": "Chile-Apruebo Dignidad",
+      "positive_aspects_json": "[{\"description\": \"Enforcement of immigration laws and border control\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential human rights concerns for migrants during deportation process\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 13\", \"CRC Article 22\"], \"magnitude\": 7, \"frameworks\": [\"CRC\", \"SDG\", \"UDHR\"]}]"
     },
     {
       "id": 23,
@@ -438,7 +978,12 @@
       "tx_hash": "2RjQ4JoeM588Jks4s1jfbfrHVWJfHzoQNR8t1G91sArQ2L9h53QVswzUKiks4RBcBFD7mJpdDrNCo2dE3rWbM1VA",
       "created_at": "2026-04-16T16:20:00.115229+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 22,
@@ -453,7 +998,12 @@
       "tx_hash": "4xrrynHzgnvhvYZ9Kcz7vrw8eV8bn2H8GUikvAFVRh4PFZhJ1AYdqckpvhhKQjELNF7DmpNsj4iwEm4o5PP9rCY8",
       "created_at": "2026-04-16T15:07:34.337569+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 21,
@@ -468,7 +1018,12 @@
       "tx_hash": "3xh8WAUbsjXY5VA45NsiTDrq34JeSPPZkcAofKQ6U9mxFXjDhoi1CQUtXLFEaS8uPPYyYSMgVVqL276VKoVLrwCX",
       "created_at": "2026-04-16T08:12:51.980671+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Sudan",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 20,
@@ -483,7 +1038,12 @@
       "tx_hash": "2SZzNu1PFvg4G5wUJ23wG96j4H2DAUvrQrNULUxTAi4tQxmshBgaFFcWjyLrihp5HZ9XYyaVttUcFBULF2rx6kbu",
       "created_at": "2026-04-16T07:52:50.002416+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 19,
@@ -498,7 +1058,12 @@
       "tx_hash": "3U8bT62pRNh76vg3yJ2dETzB9zS7W6XNybjSLstT3o9ziWpSgnDUt7C31BDwA3Cm2WQXP3NDcHJFxmyWDg6JYrsE",
       "created_at": "2026-04-16T07:51:00.373016+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 18,
@@ -513,7 +1078,12 @@
       "tx_hash": "onyhV54yTwb8SeNDfoUWmUe3YRrxapbx5oZ8aevjB4nvZouyMHj7cAc6SLekDippZjp9LmcRjKt3UfTGcvwQsf5",
       "created_at": "2026-04-16T07:49:08.705351+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 17,
@@ -528,7 +1098,12 @@
       "tx_hash": "w8k7jy9H2KMEjVjZDxaYG19G46heHzZWUbyyS3G83WsnKNfo9ftZvEcmQmRQrd6DeRFzRoVXSc3SuaMUuHPNVc4",
       "created_at": "2026-04-16T07:42:33.334223+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 16,
@@ -543,7 +1118,12 @@
       "tx_hash": "vgeBSTMSRueNDE3xGaxkxoRfWVdKY8HyZtqJSPGb4KJVnMvvpsPAmUbV6HQ8kg1fdDnefRrqB1Gy9kisNTFfqkz",
       "created_at": "2026-04-16T07:38:00.534308+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 15,
@@ -558,7 +1138,12 @@
       "tx_hash": "4GCyzgJ3pRUkrR2AcCnkd5AtKhe2FDBKQg8dKSSQ8WzNR726Z71wWapBb4zyEzoiYKJNG8obcdXKgocXbZJ5haUf",
       "created_at": "2026-04-16T07:30:43.568094+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 14,
@@ -573,7 +1158,12 @@
       "tx_hash": "2MR2y1QDjcJJFfNPnbgA3Lvo41RQQa3ejDbwBWsPCHCm2DVBt7iZwxCgW7PVdQkviXTY9ZRNTdWkdimLpoD8LdEQ",
       "created_at": "2026-04-16T07:16:11.500598+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 13,
@@ -588,7 +1178,12 @@
       "tx_hash": "3puWwoLMDMxwwNZDq37rM3Q7GwqgdeyXgLNydLRbgNFzfKbf8CNGSbXmxQ4zkvZmL2YUM74pAfFmP2aNr22VzWDz",
       "created_at": "2026-04-16T06:42:45.272047+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Colombia",
+      "region": "Latin America",
+      "administration": "Colombia-Pacto Historico",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 12,
@@ -603,7 +1198,12 @@
       "tx_hash": "4j327F9nHA5sQJDZSB146bg68q36YHJepHSzNJXUwE7kZahYK2FEV68Qqpux8t7PXFsdMbx3zcJrd5sxTpFxPikm",
       "created_at": "2026-04-16T06:34:12.139658+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 11,
@@ -618,7 +1218,12 @@
       "tx_hash": "2oSPd41zABAuMHX435JmHjJ4bQTWixRPPwXgKiHjH1Q534LcpqfzLDGrQtWtjo98i8MPPKXpy5Up9TKQJq9Zji6M",
       "created_at": "2026-04-16T06:32:25.333817+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 10,
@@ -633,7 +1238,12 @@
       "tx_hash": "3GUqGUp94PVec3VysdQ4Qkjb9CsjVTNuhQE1QAk9xYMJLGAP8kHpC7SJ5e7J3ncz646gcygQDTazmWymNToh5gS3",
       "created_at": "2026-04-16T06:30:26.999900+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 9,
@@ -648,7 +1258,12 @@
       "tx_hash": "614MvueegYmCvBSCkmqE8EjjsRnGccQy1vsx3KcFDgU1jvToABkFnUQKDmSCQpDCZAibi7NiQTdzMc7tnyJ3tbuz",
       "created_at": "2026-04-16T06:28:32.958759+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 8,
@@ -663,7 +1278,12 @@
       "tx_hash": "2mLoc3kgxsvMuSNWp9fYX3HqQQug4hNZhgifG9J6ZnwExVguYWU3DtdRpfQG1LW8DtXbeQw66m8pYYvsjRMJyD4",
       "created_at": "2026-04-16T06:15:26.102189+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 7,
@@ -678,7 +1298,12 @@
       "tx_hash": "4qLAY6v5Q88MU3aqNxTkZM5SR5inQfdK4YSq2ibndUFHxmiLpkygiRrbiveVVdFfN2K9EW3B7qZ2BMxKRVfeZRRi",
       "created_at": "2026-04-15T07:23:23.432293+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 6,
@@ -693,7 +1318,12 @@
       "tx_hash": "2p7Ljtw3AU9nX9ymTxqthfDaREX7oV4MtrupLdnQTSCcstFfLpJHdNg2jEFe4RaZmSWvm7ki5hTDEKEiu81vMbh4",
       "created_at": "2026-04-15T07:18:15.452543+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 5,
@@ -708,7 +1338,12 @@
       "tx_hash": "5i2Px5DwyNaiokZWrQkXCDCLvLk83YfcPGKMqVV3UYYjpPnSEScc3rvYLy61hQ8tEF1kngyD8oYMdzAoE8W9LWYT",
       "created_at": "2026-04-15T07:12:43.870780+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 4,
@@ -723,7 +1358,12 @@
       "tx_hash": "5HPEj1Y3Mc5YJMtHANwMP3FDnfC7aFPXqXAv6PQqJotoZsUa32HtZssqbDph8htY5Qu6CukPWzaj2tBfg2RmGsU5",
       "created_at": "2026-04-15T07:08:48.921377+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     },
     {
       "id": 3,
@@ -738,7 +1378,251 @@
       "tx_hash": "5mYEJjwLEk8JoSZ5QpkH4KSH7mmHsa9Pxc6JYyfKZTo5hfS8ZJ6W9EX39Syi1khohopmanJSficACqmXbfsyUksi",
       "created_at": "2026-04-15T06:27:08.778290+00:00",
       "embedding": null,
-      "reused_from_event_id": null
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null
     }
-  ]
+  ],
+  "aggregates": {
+    "top_countries_mint": [
+      {
+        "country": "United States",
+        "count": 8,
+        "total_amount": 10080000
+      },
+      {
+        "country": "China",
+        "count": 5,
+        "total_amount": 3020000
+      },
+      {
+        "country": "United Kingdom",
+        "count": 4,
+        "total_amount": 4390000
+      },
+      {
+        "country": "Brazil",
+        "count": 3,
+        "total_amount": 4370000
+      },
+      {
+        "country": "France",
+        "count": 3,
+        "total_amount": 1980000
+      }
+    ],
+    "top_countries_burn": [
+      {
+        "country": "Cuba",
+        "count": 1,
+        "total_amount": 500000
+      },
+      {
+        "country": "Iran",
+        "count": 1,
+        "total_amount": 1250000
+      }
+    ],
+    "top_regions_sustainable": [
+      {
+        "region": "Latin America",
+        "burn_ratio": 0.111,
+        "events": 9
+      },
+      {
+        "region": "Asia",
+        "burn_ratio": 0.0,
+        "events": 10
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.0,
+        "events": 9
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 10
+      },
+      {
+        "region": "Africa",
+        "burn_ratio": 0.0,
+        "events": 5
+      }
+    ],
+    "supply_trend_7d": [
+      {
+        "date": "2026-04-17",
+        "net_minted": 7075000,
+        "net_burned": 0
+      },
+      {
+        "date": "2026-04-18",
+        "net_minted": 2820000,
+        "net_burned": 1750000
+      },
+      {
+        "date": "2026-04-19",
+        "net_minted": 8750000,
+        "net_burned": 0
+      },
+      {
+        "date": "2026-04-20",
+        "net_minted": 4240000,
+        "net_burned": 0
+      },
+      {
+        "date": "2026-04-21",
+        "net_minted": 3970000,
+        "net_burned": 1200000
+      },
+      {
+        "date": "2026-04-22",
+        "net_minted": 7950000,
+        "net_burned": 0
+      },
+      {
+        "date": "2026-04-23",
+        "net_minted": 4130000,
+        "net_burned": 0
+      }
+    ],
+    "event_of_the_day": {
+      "id": 66,
+      "event_title": "Republican lawmakers attempt to shield big oil from climate lawsuits in 'alarming' bills",
+      "decision": "MINT",
+      "amount_crbn": 2320000,
+      "final_score": -3.25,
+      "confidence": 8,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "created_at": "2026-04-23T15:34:42.597273+00:00"
+    },
+    "framework_activity_7d": {
+      "SDG": {
+        "positive": 45,
+        "negative": 48
+      },
+      "UDHR": {
+        "positive": 2,
+        "negative": 28
+      },
+      "ILO": {
+        "positive": 0,
+        "negative": 4
+      },
+      "CRC": {
+        "positive": 0,
+        "negative": 5
+      },
+      "UNDRIP": {
+        "positive": 0,
+        "negative": 12
+      },
+      "Animal": {
+        "positive": 0,
+        "negative": 6
+      },
+      "PB": {
+        "positive": 0,
+        "negative": 5
+      }
+    },
+    "source_diversity_7d": {
+      "niche_pct": 92.3,
+      "mainstream_pct": 7.7,
+      "total_sources_used": 26,
+      "articles_processed": 49
+    },
+    "cache_hit_rate_7d": {
+      "hits": 0,
+      "total_events": 49,
+      "pct": 0.0
+    },
+    "active_partners_7d": [
+      {
+        "organization": "CARBON WORLD Internal Test",
+        "submissions": 1
+      }
+    ],
+    "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3
+      },
+      {
+        "name": "UN",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1
+      },
+      {
+        "name": "COP",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1
+      },
+      {
+        "name": "World Bank",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1
+      }
+    ],
+    "top_sectors_7d": [
+      {
+        "name": "Energy",
+        "count": 16,
+        "burn_count": 1,
+        "mint_count": 15
+      },
+      {
+        "name": "Finance",
+        "count": 5,
+        "burn_count": 1,
+        "mint_count": 4
+      },
+      {
+        "name": "Construction",
+        "count": 3,
+        "burn_count": 1,
+        "mint_count": 2
+      },
+      {
+        "name": "Agriculture",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3
+      },
+      {
+        "name": "Mining",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3
+      },
+      {
+        "name": "Defense",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2
+      },
+      {
+        "name": "Pharma",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1
+      },
+      {
+        "name": "Fishing",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1
+      }
+    ]
+  }
 }
