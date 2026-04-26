@@ -30,9 +30,9 @@ export function EventsTable({ events }: { events: CarbonEvent[] }) {
         </span>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto overflow-y-auto h-[600px]">
         <table className="w-full text-sm">
-          <thead>
+          <thead className="sticky top-0 z-10" style={{ backgroundColor: "#1A1A1A" }}>
             <tr className="text-xs uppercase tracking-wider" style={{ borderBottom: "1px solid #2E2E2E", color: "#B8B9B6" }}>
               <th className="text-left py-2 px-3 font-medium">Date</th>
               <th className="text-left py-2 px-3 font-medium">Decision</th>
