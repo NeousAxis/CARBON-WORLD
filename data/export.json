@@ -1,10 +1,30 @@
 {
-  "generated_at": "2026-04-25T00:11:39.932985+00:00",
-  "total_events": 84,
+  "generated_at": "2026-04-26T01:58:22.607992+00:00",
+  "total_events": 85,
   "total_burned": 9050000,
-  "total_minted": 76913750,
+  "total_minted": 77063750,
   "pending_reviews": 14,
   "events": [
+    {
+      "id": 85,
+      "event_title": "Victoria offers 20pc car rego discount in cost-of-living measure",
+      "event_url": "https://www.abc.net.au/news/2026-04-26/victoria-offers-20pc-car-rego-discount-in-cost-of-living-measure/106606656",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -3.04,
+      "confidence": 7,
+      "justification": "Short-term relief is outweighed by long-term climate and urban sustainability costs. | While the rebate offers tangible short-term relief for cost-of-living pressures, aligning with poverty reduction and economic security goals, it contradicts long-term climate and urban sustainability objectives by reinforcing car dependency. The policy's net ethical impact is negative due to its lock-in effect on emissions-intensive infrastructure and foregone opportunity to invest in equitable, low-carbon alt",
+      "tx_hash": "5r8qgCxhcDJogkV3657hTLwjoSq7gs5s4sNPXZN3crKi6BtBHuHZjwyRvrcFMbmxkba6izciD3AtjnK8Fwvuo2i",
+      "created_at": "2026-04-26T01:58:22.334130+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Provides immediate financial relief to low- and middle-income households struggling with rising living costs, particularly fuel prices.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Incentivizes continued reliance on private vehicles, undermining climate goals and sustainable transport transitions.\", \"affected_sdgs\": [11, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Reduces government revenue that could be directed toward public transit or active transport infrastructure.\", \"affected_sdgs\": [9, 11, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]"
+    },
     {
       "id": 84,
       "event_title": "Could Changes to the U.S. Forest Service Erase a Century of Historical Documents?",
@@ -1690,18 +1710,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 7930000
+        "count": 10,
+        "total_amount": 8080000
       },
       {
         "country": "United Kingdom",
         "count": 7,
         "total_amount": 7040000
-      },
-      {
-        "country": "China",
-        "count": 5,
-        "total_amount": 2970000
       },
       {
         "country": "Argentina",
@@ -1712,40 +1727,34 @@
         "country": "France",
         "count": 4,
         "total_amount": 3780000
-      }
-    ],
-    "top_countries_burn": [
-      {
-        "country": "Cuba",
-        "count": 1,
-        "total_amount": 500000
       },
       {
-        "country": "Iran",
-        "count": 1,
-        "total_amount": 1250000
+        "country": "China",
+        "count": 4,
+        "total_amount": 2850000
       }
     ],
+    "top_countries_burn": [],
     "top_regions_sustainable": [
       {
-        "region": "Latin America",
-        "burn_ratio": 0.091,
+        "region": "North America",
+        "burn_ratio": 0.0,
         "events": 11
       },
       {
-        "region": "North America",
+        "region": "Latin America",
         "burn_ratio": 0.0,
         "events": 10
       },
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 14
+        "events": 13
       },
       {
         "region": "Asia",
         "burn_ratio": 0.0,
-        "events": 10
+        "events": 8
       },
       {
         "region": "Africa",
@@ -1754,11 +1763,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-04-19",
-        "net_minted": 8750000,
-        "net_burned": 0
-      },
       {
         "date": "2026-04-20",
         "net_minted": 4240000,
@@ -1788,39 +1792,44 @@
         "date": "2026-04-25",
         "net_minted": 500000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-04-26",
+        "net_minted": 150000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 80,
-      "event_title": "Officials hugely underestimated impact of AI datacentres on UK carbon emissions",
+      "id": 85,
+      "event_title": "Victoria offers 20pc car rego discount in cost-of-living measure",
       "decision": "MINT",
-      "amount_crbn": 1250000,
-      "final_score": -5.04,
-      "confidence": 8,
-      "country": "United Kingdom",
-      "region": "Europe",
-      "created_at": "2026-04-24T18:49:57.511973+00:00"
+      "amount_crbn": 150000,
+      "final_score": -3.04,
+      "confidence": 7,
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-04-26T01:58:22.334130+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 50,
-        "negative": 57
+        "positive": 47,
+        "negative": 53
       },
       "UDHR": {
-        "positive": 6,
-        "negative": 29
+        "positive": 7,
+        "negative": 25
       },
       "ILO": {
         "positive": 1,
-        "negative": 4
+        "negative": 3
       },
       "CRC": {
         "positive": 2,
-        "negative": 5
+        "negative": 4
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 11
+        "negative": 9
       },
       "Animal": {
         "positive": 0,
@@ -1828,18 +1837,18 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 12
+        "negative": 13
       }
     },
     "source_diversity_7d": {
       "niche_pct": 88.5,
       "mainstream_pct": 11.5,
       "total_sources_used": 26,
-      "articles_processed": 57
+      "articles_processed": 53
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 57,
+      "total_events": 53,
       "pct": 0.0
     },
     "active_partners_7d": [
@@ -1851,9 +1860,9 @@
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4
+        "mint_count": 3
       },
       {
         "name": "G7",
@@ -1888,16 +1897,16 @@
         "mint_count": 5
       },
       {
-        "name": "Defense",
+        "name": "Mining",
         "count": 3,
         "burn_count": 0,
         "mint_count": 3
       },
       {
-        "name": "Mining",
-        "count": 3,
+        "name": "Defense",
+        "count": 2,
         "burn_count": 0,
-        "mint_count": 3
+        "mint_count": 2
       },
       {
         "name": "Agriculture",
