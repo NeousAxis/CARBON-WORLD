@@ -305,6 +305,15 @@ def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
                     backoff = float(retry_after) if retry_after else 20.0 * attempt
                 except ValueError:
                     backoff = 20.0 * attempt
+                # Cap backoff at 60s. Cerebras sends Retry-After: 86400 on
+                # daily quota exhaustion; honoring it froze the pipeline for
+                # 18h+ on 2026-04-20 and again 9h+ on 2026-04-26.
+                if backoff > 60.0:
+                    logger.error(
+                        "Cerebras Retry-After=%ss for batch %s (likely daily quota exhausted); failing fast.",
+                        int(backoff), context,
+                    )
+                    return None
                 backoff = max(backoff, 5.0)
                 logger.warning(
                     "Cerebras 429 for batch %s (attempt %d/%d), backing off %.1fs",
@@ -372,6 +381,15 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
                         backoff = float(retry_after) if retry_after else 20.0 * attempt
                     except ValueError:
                         backoff = 20.0 * attempt
+                    # Cap backoff at 60s — Groq may send long Retry-After on
+                    # daily quota exhaustion. Same protection as Cerebras path.
+                    if backoff > 60.0:
+                        logger.error(
+                            "Groq Retry-After=%ss for batch %s (likely daily quota exhausted); failing fast.",
+                            int(backoff), context,
+                        )
+                        # Fall through to except handler so Cerebras fallback can run
+                        raise RuntimeError(f"Groq daily quota exhausted (Retry-After={int(backoff)}s)")
                     backoff = max(backoff, 5.0)
                     logger.warning(
                         "Groq 429 for batch %s (attempt %d/%d), backing off %.1fs",
