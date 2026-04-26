@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import dynamic from "next/dynamic";
 import { LiveTicker } from "@/components/LiveTicker";
 import { SupplyChart } from "@/components/SupplyChart";
@@ -140,6 +140,13 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
   const stats = deriveStats(data);
   const events: CarbonEvent[] = data.events;
   const aggregates: Aggregates = data.aggregates ?? EMPTY_AGGREGATES;
+
+  // Live ticker shows only events from the last 48h so the feed reflects
+  // genuinely recent pipeline activity, not the full historical window.
+  const recentEvents = useMemo(() => {
+    const cutoff = Date.now() - 48 * 60 * 60 * 1000;
+    return events.filter((e) => new Date(e.created_at).getTime() >= cutoff);
+  }, [events]);
 
   const netAbs = Math.abs(stats.netSupplyChange);
   const netSign = stats.netSupplyChange >= 0 ? "+" : "-";
@@ -330,7 +337,7 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left — Live ticker */}
           <aside className="lg:col-span-4">
-            <LiveTicker events={events} newEventIds={newEventIds} isPolling={isPolling} />
+            <LiveTicker events={recentEvents} newEventIds={newEventIds} isPolling={isPolling} />
           </aside>
 
           {/* Right — Events table */}
