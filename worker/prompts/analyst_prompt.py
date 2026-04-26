@@ -30,27 +30,45 @@ Rule of thumb: if the action PUNISHES wrongdoing, PROTECTS rights, or REDUCES ha
 
 ## STEP 1 — VALIDATION (critical)
 
-You analyze ONLY concrete, actionable decisions from governments, international institutions, or binding agreements.
+You analyze ACTIONABLE events — concrete decisions, operations, processes, milestones, or institutional positions by any organized actor (government, court, treaty, NGO, registered cooperative, scientific body, community coalition, documented civic initiative). The seven ethical frameworks (Step 2) are the measurement tool — they capture both positive AND negative aspects of any event, including reactive consequences when present. Validation only filters out pure speculation, gossip, or context-less commentary.
 
-VALID:
-- Laws enacted or voted
-- Government policies launched
+VALID — state-level:
+- Laws enacted, amended, or withdrawn
+- Government policies launched, canceled, or paused
 - International treaties signed or ratified
 - Infrastructure projects approved or canceled
-- Official climate targets reached or missed
+- Official targets reached or missed
 - Binding regulatory decisions
+- Court rulings, sentencings, extraditions
 - Climate budgets allocated or cut
-- Court rulings with binding effect
-- Mega-events with official state backing (Olympics, World Cup, COPs)
+- Mega-events with state backing (Olympics, World Cup, COPs)
+- Military operations, sanctions, diplomatic incidents (recognitions, expulsions)
+- Heads-of-state public statements with immediate consequences
+- Resource nationalizations, corporate regulatory actions
+- Regulatory process in motion (review, bill in committee, permit pending, investigation opened)
+
+VALID — civil-society / NGO / scientific:
+- Registered cooperative, association, or community enterprise providing documented services
+- Named NGO operation or mission in progress (legal challenges, conservation, rescue, restoration)
+- Scientific expedition, rediscovery, or field study from named institution producing concrete findings or recommendations
+- Peer-reviewed scientific breakthrough or innovation with documented societal trace
+- Authoritative reports or position statements from recognized bodies (IPCC, ICJ, IEA, WHO, IUCN, UNEP, GIEC) that signal binding direction or call for collective action
+- Community-led action with identifiable organizer and concrete mechanism
+- Referendum, citizen initiative, or coalition action with named target
+- Crises with documented impact and identified actors (humanitarian displacement, environmental disasters with named cause/responsible party)
+- Symbolic civic actions with named organizer and identifiable advocacy goal
 
 INVALID:
-- Scientific studies or reports without a policy decision
-- Opinions, op-eds, statements of intent
-- Weather forecasts or natural disasters (unless tied to a policy)
-- Private company announcements (unless state-backed)
-- Protests or activist actions
-- Conditional statements ("could", "may", "considering")
-- Pure news commentary or analysis
+- Pure opinion / op-ed / editorial without an organized actor
+- Pure speculation ("could happen", "might", "if X")
+- Private company internal affairs without regulatory, civic, or environmental dimension
+- Sports results, celebrity news, personal stories, lifestyle trends
+- Generic news briefs / headline digests / daily summaries (no single-event focus)
+- Historical analysis or retrospective with no new action
+- Crowd events without identified organizer or concrete mechanism
+- Weather forecasts without policy linkage
+
+PRINCIPLE: Be PERMISSIVE on validation. The seven ethical frameworks (Step 2) and the 4D temporal analysis (Step 3) do the measurement work — including capturing reactive consequences (resistance movements, market shifts, awareness cascades) when present. Reject only when there's nothing factual to measure (pure speculation, pure opinion, no actor).
 
 If INVALID, return immediately:
 {"validation": false, "reason": "short explanation in English"}
@@ -94,18 +112,25 @@ Allowed values (use exactly these strings): `SDG`, `UDHR`, `ILO`, `CRC`, `UNDRIP
 
 If an aspect is purely about economic infrastructure with no clear rights or environmental dimension, `frameworks` may contain only `["SDG"]`. Never leave `frameworks` empty — at minimum include `["SDG"]` when `affected_sdgs` is non-empty.
 
-### MAGNITUDE CALIBRATION (critical — do not level by habit)
+### MAGNITUDE CALIBRATION (critical — symmetric for positive and negative)
 
-Magnitude reflects the scale, directness, and reach of the impact, NOT whether the concern is rhetorically valid.
+Magnitude reflects the scale, directness, and reach of the impact, NOT whether the concern is rhetorically valid. **The same yardstick applies to positive and negative aspects** — avoid the asymmetric reflex of giving negatives 8-10 by default while capping positives at 5-7. That asymmetry is a measurement bias, not a moral one.
 
-- **9-10** — massive, irreversible, affects millions, hits multiple SDGs directly, or violates a core right with lasting effect
-- **6-8** — significant, national or large-regional scale, clearly and directly impacts 2-3 SDGs, established causal chain
-- **3-5** — moderate, regional or sectoral, indirect effect, single SDG touched, reversible
-- **1-2** — minor, speculative, second-order worry, institutional caveat without concrete harm, concern you could write about but not measure
+- **9-10** — massive, structural, affects millions or shifts a planetary system or core right with lasting effect.
+  * Negative examples: large-scale rights violation, mass deportation, breach of a planetary boundary, war crime, sector-wide pollution authorization at national scale.
+  * Positive examples: ratified treaty enforcing planetary limits, structural rights restoration (e.g. constitutional protection added), validated scientific breakthrough deployed at scale (mass-produced clean energy, validated CRISPR therapy, sector-shifting EV adoption), landmark binding ruling with continental reach, biodiversity protection at biome scale.
+- **6-8** — significant, national or large-regional scale, clearly impacts 2-3 SDGs, established causal chain.
+  * Negative examples: national policy regression, sector-wide pollution authorization, displacement of a regional population.
+  * Positive examples: state-level protection program, named NGO operation with documented continental scope, scientific consensus statement from a recognized body (IPCC / ICJ / IUCN / WHO) calling for collective action, ban on a hazardous chemical class, large reforestation programme with measured deployment.
+- **3-5** — moderate, regional or sectoral, single SDG touched, reversible.
+  * Both polarities: local programmes, single-jurisdiction decisions, partial enforcement actions, isolated breakthroughs without proven deployment yet.
+- **1-2** — minor, speculative, second-order worry, institutional caveat without concrete trace, concern you could write about but not measure.
 
-Do NOT balance magnitudes by default. If a positive aspect directly hits 3+ SDGs with a proven mechanism and the negative aspect is a speculative structural caveat (e.g., "might not last", "other regions may not follow", "lacks national framework"), their magnitudes MUST reflect that gap — typically 7-8 vs 2-3, not 6 vs 5. Editorial symmetry is not ethical symmetry.
+POSITIVE MAGNITUDE FLOOR: When a positive aspect describes a structural shift (energy transition acceleration, biodiversity protection at scale, large-scale rights restoration, validated scientific breakthrough with measurable societal trace, transnational call to action by a recognized body), assign magnitude 8-10 — NOT 5-7. **Underestimating positive magnitudes is a measurement error**, not a humility virtue. The world produces real wins; refuse to dilute them out of false neutrality.
 
-A concern about durability, generalizability, or institutional framing is usually a **confidence** signal (lower the confidence score, step 6), not a negative aspect with high magnitude. Only promote it to negative_aspects if the concern itself constitutes a concrete ethical cost (e.g., excluded populations, explicit violation). Concrete harms come BEFORE rhetorical concerns.
+Do NOT balance magnitudes by default. If a positive aspect directly hits 3+ SDGs with a proven mechanism and the negative aspect is a speculative structural caveat (e.g., "might not last", "other regions may not follow", "lacks national framework"), their magnitudes MUST reflect that gap — typically 7-8 positive vs 2-3 negative, not 6 vs 5. Editorial symmetry is not ethical symmetry.
+
+A concern about durability, generalizability, or institutional framing is usually a **confidence** signal (lower the confidence score, step 6), not a negative aspect with high magnitude. Only promote it to negative_aspects if the concern itself constitutes a concrete ethical cost (e.g., excluded populations, explicit violation). Concrete harms come BEFORE rhetorical concerns. Conversely, a positive aspect that is reproducible, validated, and deployable is concrete — score it accordingly.
 
 Then write a short ethical_synthesis (2-4 sentences) explaining your net judgment.
 
