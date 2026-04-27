@@ -20,6 +20,49 @@ from solana_executor import execute_decision
 logger = logging.getLogger("agent.writer")
 
 
+# Sources whose commentary/analysis is treated as credible educational content
+# for consciousness progress. Same list as backfill_burn_subtype.py — keep
+# them in sync. When Phase 2 expands to auto-detect commentary on these sources,
+# the burn_subtype is automatically tagged 'editorial_consciousness' even
+# without a manual reverse.
+EDITORIAL_CONSCIOUSNESS_SOURCES: frozenset[str] = frozenset({
+    "Mongabay",
+    "Mongabay LATAM",
+    "Mongabay Brasil",
+    "Yale Environment 360",
+    "Inside Climate News",
+    "Reasons to be Cheerful",
+    "Reporterre",
+    "Carbon Brief",
+    "China Dialogue",
+    "Diálogo Chino EN",
+    "Grist",
+    "Grist Solutions",
+    "The New Humanitarian",
+    "Solutions Journalism Network",
+})
+
+
+def _classify_burn_subtype(decision: str, source: str) -> str | None:
+    """
+    Auto-tag the burn_subtype at write time.
+
+    Rules:
+      - decision != BURN     → None (only BURN has a subtype)
+      - source in editorial   → 'editorial_consciousness'
+      - else                  → 'direct_action'
+
+    The asymmetric default is conservative: a BURN from a generic news source
+    is treated as a structural action (the original definition), and only the
+    whitelisted credible-educational sources flip the tag to consciousness.
+    """
+    if decision != "BURN":
+        return None
+    if source in EDITORIAL_CONSCIOUSNESS_SOURCES:
+        return "editorial_consciousness"
+    return "direct_action"
+
+
 def _build_justification(analysis: dict) -> str:
     """Combine justification and ethical_synthesis, truncated to 500 chars."""
     justification = analysis.get("justification", "")
@@ -158,6 +201,11 @@ def write(event: dict) -> bool:
         # Aspects JSON for FrameworkBar (dashboard)
         "positive_aspects_json": positive_aspects_json,
         "negative_aspects_json": negative_aspects_json,
+        # BURN composition tracking (Phase 2 auto-tag at write time)
+        "burn_subtype": _classify_burn_subtype(
+            analysis.get("decision", "NEUTRAL"),
+            article.get("source", ""),
+        ),
     }
 
     saved = save_event(event_data)

@@ -237,6 +237,7 @@ def save_event(event_data: dict) -> Optional[dict]:
       administration (str | None)           — governing administration label (dashboard geo)
       positive_aspects_json (str | None)    — JSON-serialised positive_aspects list
       negative_aspects_json (str | None)    — JSON-serialised negative_aspects list
+      burn_subtype (str | None)             — 'direct_action' / 'editorial_consciousness' / None
     """
     try:
         conn = _get_conn()
@@ -247,8 +248,8 @@ def save_event(event_data: dict) -> Optional[dict]:
                  amount_crbn, final_score, confidence, justification,
                  tx_hash, created_at, embedding, reused_from_event_id,
                  country, region, administration,
-                 positive_aspects_json, negative_aspects_json)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 positive_aspects_json, negative_aspects_json, burn_subtype)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 event_data.get("event_title", ""),
@@ -268,6 +269,7 @@ def save_event(event_data: dict) -> Optional[dict]:
                 event_data.get("administration"),          # str or None
                 event_data.get("positive_aspects_json"),   # str or None
                 event_data.get("negative_aspects_json"),   # str or None
+                event_data.get("burn_subtype"),            # str or None
             ),
         )
         conn.commit()
