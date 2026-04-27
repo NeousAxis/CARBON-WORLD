@@ -60,3 +60,12 @@ SEMANTIC_CACHE_ENABLED: bool = os.getenv("SEMANTIC_CACHE_ENABLED", "1") in ("1",
 SEMANTIC_CACHE_DAYS: int = int(os.getenv("SEMANTIC_CACHE_DAYS", "7"))
 SEMANTIC_CACHE_THRESHOLD: float = float(os.getenv("SEMANTIC_CACHE_THRESHOLD", "0.92"))
 SEMANTIC_MODEL_NAME: str = os.getenv("SEMANTIC_MODEL_NAME", "all-MiniLM-L6-v2")
+
+# Magnitude calibrator (post-LLM Python). Three modes:
+#   - "disabled" : calibrator never runs (default for safety)
+#   - "dry_run"  : calibrator runs and logs every bump it would apply,
+#                  but DOES NOT modify the analyst output. Audit only.
+#   - "active"   : calibrator runs and APPLIES bumps to magnitudes + 4D scores.
+# Validated 2026-04-27: ship in "dry_run" first for 24 h, then flip to "active"
+# after Cyril reviews the structured log written to logs/calibrator_dryrun.jsonl.
+MAGNITUDE_CALIBRATOR_MODE: str = os.getenv("MAGNITUDE_CALIBRATOR_MODE", "disabled").lower()

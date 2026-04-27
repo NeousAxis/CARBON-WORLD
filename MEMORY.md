@@ -4,6 +4,95 @@
 
 ---
 
+## 🛠 2026-04-26 — Session marathonne : Live Activity + Event Log + crise V2 prompt + calibrator Python
+
+### ✅ Livrés en prod
+
+**1. Live Activity 48h filter** (commit `62e5a5a`) — `web/src/components/DashboardClient.tsx`. Le LiveTicker recevait l'historique complet (88 events), donc le ticker scrollait sur du vieux contenu, donnant l'impression de stagnation. Filtre `useMemo` sur les 48h. EventsTable continue de recevoir l'historique complet. Vérifié en prod : 14 events sur 48h × 2 (boucle seamless) = 28 liens dans le ticker.
+
+**2. Event Log scroll + height** (commit `ceee58e`) — `web/src/components/EventsTable.tsx`. Cyril a demandé que le Event Log s'arrête à la même hauteur que Live Activity et que le scroll soit interne. Ajout `h-[600px] overflow-y-auto` sur le wrapper + `sticky top-0 z-10` sur le `<thead>`. Vérifié en preview : LiveTicker 647px = EventsTable 647px (diff 0px), wrapper 600px scrollable (88 events scrollHeight=3358px), thead reste sticky.
+
+**3. Cap 60s sur batch backoff classifier** (commit `b73a71d`) — `worker/agents/classifier.py`. Bug critique : le commit `0b51ef2` du 2026-04-21 avait fixé le cap 60s **uniquement** dans `worker/ollama_client.py`, mais `_call_cerebras_batch_raw` (ligne 262) et le path Groq batch (ligne 369) sont des **fonctions dupliquées** qui n'avaient pas reçu le fix. Conséquence : à 08:07:50 CEST le 2026-04-26, Cerebras a renvoyé `Retry-After: 86400` (24h, quota daily exhausted), le worker a fait `time.sleep(86400)` aveugle, lock détenu 9h+ (08:00 → 17:05 CEST), 8 cron skip de suite, dashboard figé.
+
+### 🚨 Incident gel pipeline 9h+ (08:00-17:05 CEST)
+
+Chronologie :
+```
+08:00 CEST  cron démarre → flock acquis → python3 worker/main.py
+08:07:50    Cerebras 429 attempt 2/3, Retry-After: 86400 → sleep 24h
+            ↓ (BUG : pas de cap 60s)
+08:15-16:45 8 cron skip ("previous run still active")
+            ↓
+~17:05      Cyril alerte "indicateurs gelés", je tue PID 484684/484686/484702
+17:05       Run manuel post-fix → events #89 #90 produits (2 MINT, score -1.65 / -1.55)
+```
+
+Le fix `b73a71d` ajoute le cap 60s + fail-fast sur les deux fonctions dupliquées. Le worker exit cleanly si quota daily exhausted, lock libéré, prochain cron retente.
+
+### ⚠️ Tentative V2 prompt analyst — CASSÉ + REVERTED
+
+Diagnostic du "0 BURN sur 7 jours" :
+- Pipeline 7j : 51 events, 1 seul BURN (1.9% ratio), distribution scores : 50/51 ≤ 4 = MINT, 0/51 dans la zone NEUTRAL [4-6], 1/51 ≥ 6 = BURN. **Cliff nette autour de 4-6**.
+- Top 5 highest-scored 7j : seul #48 "Clean energy displacing fossils" passe BURN (6.04). Les autres bonnes nouvelles évidentes (CRISPR, Indigenous solar, ban PFAS, scientific neurons) scorent 3.5-4.0 et finissent MINT.
+- Smoking gun trouvé dans le log Phase 3 : sur 18 VALID classifier, 16 sont rejetés par l'Analyst avec motif "ongoing initiative, not a concrete actionable decision" / "scientific study, not policy decision" / "call for action, not decision". Le classifier accepte civil-society/NGO/scientific (déjà permissif), mais l'**Analyst Step 1** n'a que `governments, international institutions, or binding agreements` → tue les bonnes nouvelles.
+
+**Patch V2 tenté** (commit `9e0df50`) :
+- Step 1 élargi : ajout des sections civil-society / NGO / scientific (alignées sur classifier_prompt.py)
+- Step 2 : POSITIVE MAGNITUDE FLOOR explicite (8-10 sur structural shifts) + exemples symétriques pos/neg
+
+**Erreur de calcul** : prompt passé de 11722 → 15912 chars (×1.36). Sur ~960 appels Analyst/jour × 2 (A+B), Cerebras free tier daily quota tape à **90% consommé**.
+
+**Revert** (commit `e3d4daa`) — retour à V1 (11722 chars). Cyril a explicitement refusé revert complet de l'innovation et demandé une solution **zéro token** pour garder l'effet V2.
+
+### 🧪 Calibrator Python post-LLM (codé local, NON pushé)
+
+Solution validée par Cyril : faire le travail V2 (validation élargie + magnitude positive floor) **après** réception du JSON Analyst, en Python pur, zéro token additionnel. Architecture en **5 couches défensives** :
+
+1. **Embedding similarity** (sentence-transformers/all-MiniLM-L6-v2 déjà installé sur VPS) vs canonical "structural shift" patterns. Capture sens, pas vocabulaire. Cosine ≥ 0.70.
+2. **Convergence multi-signaux** : embedding match + ≥ 1 autre signal (≥ 2 SDGs, ≥ 2 frameworks, confidence ≥ 7).
+3. **Blacklist negation regex** : "withdrew/cancelled/paused", "but pending/stalled", "on paper only", "without enforcement", "non-binding", "symbolic only".
+4. **Bump capped +2 max** ; pas de bump si magnitude LLM ≥ 8.
+5. **Audit offline + dry-run prod 24h** avant flip actif.
+
+**Fichiers créés (NON pushés, en local)** :
+- `worker/agents/magnitude_calibrator.py` — module standalone, asymétrique (positives only)
+- `worker/audit_calibrator.py` — script audit offline sur export.json
+- `worker/calibration_audit.json` — résultat de l'audit
+- `worker/ab_test_analyst.py` + `worker/ab_test_results.json` — artefacts du test V1 vs V2 (à supprimer ou garder comme outil futur)
+
+**Itération critique pendant l'audit** : la première version bumpait aussi les négatives, ce qui **détruisait deux BURN historiques** (#48 BURN→NEUTRAL, #32 BURN→MINT). Correction : calibrator **asymétrique**, bumpe UNIQUEMENT les positives. Les négatives sont laissées intactes (le LLM les détecte déjà très bien — c'est son biais structurel).
+
+**Résultat audit final** sur 94 events :
+- 7 events bumpés (positives seulement)
+- 0 décisions changées
+- 0 BURN détruits ✅
+- 0 BURN nouveaux ❌
+
+**Diagnostic plus profond** : le calibrator avec params actuels est **sûr mais peu impactant**. Le vrai bottleneck n'est PAS dans les magnitudes mais dans la dimension **Prospective (40% du score)**. Le LLM met Prospective négative pour la plupart des events climat (futur pessimiste). Bumper les magnitudes des aspects ne change pas Prospective.
+
+### 📋 État à la fin de session — décision en attente pour demain
+
+3 options présentées à Cyril :
+- **A. Ship calibrator tel quel** — sûr, peu d'impact (7 bumps positifs sur 94 events, 0 décision changée, 0 BURN détruit)
+- **B. Améliorer canoniques + abaisser threshold 0.70 → 0.60** — ~30 min de dev, plus de positive bumps
+- **C. Étendre calibrator aux scores 4D (notamment Prospective)** — attaque le vrai bottleneck (40% du score), plus ambitieux, plus de risque de faux positifs
+
+Pas de push tant que Cyril n'a pas validé. Calibrator + audit script restent en local.
+
+### 🎓 Leçons brutales de cette session
+
+1. **Code dupliqué = bug futur garanti**. Le commit `0b51ef2` (cap 60s) était "fixé" mais ne couvrait qu'1 des 3 sites d'appel. Quand on fait un fix, **grep tous les sites concernés** (`grep -rn "Retry-After"`) avant de dire "fixé". Cette règle s'ajoute à RULES.md §2.
+
+2. **"Coût quota = 0" doit être prouvé, pas annoncé**. J'ai dit "V2 = coût 0" alors que le prompt passait de 11722 à 15912 chars = ×1.36 input tokens par appel. Toujours **calculer le coût avant de pousser** un patch qui touche un prompt LLM.
+
+3. **L'asymétrie est la vraie réponse**. Le LLM sur-détecte les négatifs (biais structurel des news climat). Tout calibrator post-LLM doit être asymétrique : aider les positives, ne pas accentuer les négatives. La symétrie naïve a détruit 2 BURN dans la première itération.
+
+4. **Le bottleneck "0 BURN" n'est pas dans les magnitudes mais dans Prospective**. La formule `final_score = snapshot×0.25 + trajectory×0.20 + revaluation×0.15 + prospective×0.40` est dominée à 40% par la dimension futur, qui est systématiquement pessimiste sur le climat. Les magnitudes ne touchent pas Prospective.
+
+5. **L'utilisateur n'est pas un buffer Anthropic gratuit**. Cyril a un quota Max et chaque échange coûte. La leçon : **être imaginatif sur la première proposition, pas sur la troisième correction**.
+
+---
+
 ## 🎨 2026-04-22 (soir) — Refresh branding : nouveau logo XL + teal #0190A0 + sous-titres visibles
 
 Itérations logo demandées par Cyril :

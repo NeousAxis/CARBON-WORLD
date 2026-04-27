@@ -2,6 +2,7 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Neous Axis
+> **État au 2026-04-26 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **94 events en DB**, **API publique Tier 1+2 live**. Crise quota Cerebras à 90% (incident gel pipeline 9h+ ce matin résolu via cap 60s commit `b73a71d`). **Calibrator Python post-LLM codé localement, en attente de validation Cyril sur option A/B/C avant push** (voir MEMORY.md §2026-04-26).
 > **État au 2026-04-21** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **Phases 1+2+3 du reframe sampling livrées et validées en prod**, **API publique Tier 1 (6 routes GET) live** sur `https://carbon-token.xyz/api/v1/*`.
 > **Stack durci 2026-04-19** : lockfile flock, batch classifier B=5, fail-fast Cerebras sur tous les agents Groq, +20 sources RSS positives, prompt classifier étendu aux structural markers, TZ VPS Europe/Zurich.
 > **Reframe décisif 2026-04-20** : la crise quota n'est PAS un problème de compute, c'est un problème d'**échantillonnage**. Sur 1925 articles bruts du run 12:00 CEST, seuls 6 events finaux → ratio signal/bruit **0.3 %**. 94 % du quota LLM brûlé sur du bruit mainstream redondant (Guardian/BBC/Le Monde/dérivés AFP qui couvrent tous les mêmes décisions institutionnelles). Les signaux recherchés (coopératives, ONG, communautés, Sud global, victoires locales) vivent dans des sources low-volume (Mongabay Brasil, Cultural Survival, Waging Nonviolence, Reporterre) qui sont noyées dans le flux mainstream.
@@ -190,7 +191,29 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ---
 
-## 🚨 À FAIRE — priorités ouvertes (2026-04-19)
+## 🚨 À FAIRE — priorités ouvertes (2026-04-26)
+
+### -1. PRIORITÉ ABSOLUE 2026-04-27 — Calibrator Python post-LLM (option A/B/C en attente)
+
+**Contexte** : pipeline produit 0 BURN sur 7j (1.9% ratio sur 51 events). Diagnostic : Step 1 du prompt Analyst rejette 16/18 VALID classifier comme "ongoing initiative, not concrete decision" — tue toutes les bonnes nouvelles civil-society / scientific / NGO. Tentative V2 prompt analyst (commit `9e0df50`) avait gonflé le prompt de 11722 → 15912 chars (×1.36 input tokens), Cerebras quota daily à 90% → REVERTED (commit `e3d4daa`).
+
+**Solution validée par Cyril** : calibrator Python post-LLM, zéro token additionnel. **Codé en local, NON pushé** :
+- `worker/agents/magnitude_calibrator.py` — module standalone, asymétrique (positives only)
+- `worker/audit_calibrator.py` — script audit offline
+- `worker/calibration_audit.json` — résultat audit sur 94 events (7 bumps positifs, 0 décision changée, 0 BURN détruit/créé)
+
+**Architecture 5 couches** : embedding similarity (sentence-transformers all-MiniLM-L6-v2) vs canonical patterns + multi-signal convergence + blacklist negation regex + bump capped +2 + audit offline obligatoire.
+
+**Décision en attente Cyril** :
+- **A. Ship calibrator tel quel** — sûr, peu d'impact (3/7 corrects, 1/7 faux positif clair, 3/7 discutables)
+- **B. Améliorer canoniques + abaisser threshold 0.70 → 0.60** — ~30 min de dev
+- **C. Étendre calibrator aux scores 4D (Prospective surtout)** — attaque le vrai bottleneck (40% du score)
+
+**Bottleneck identifié plus profond** : la dimension **Prospective (40% du score)** est systématiquement négative car le LLM voit le futur climat pessimiste. Bumper les magnitudes des aspects ne change PAS Prospective. Pour vraiment faire monter les BURN, calibrator devrait aussi recalibrer Prospective quand un structural shift positif est détecté (option C).
+
+**Reprise 2026-04-27** : démarrer par décision Cyril sur A/B/C, puis exécuter. Audit déjà tourné, les fichiers locaux attendent. Étape 7 du plan = push + dry-run mode + 24h obs + flip actif.
+
+**Artefacts locaux à nettoyer** : `worker/ab_test_analyst.py` + `worker/ab_test_results.json` (test V1 vs V2 prompt) — soit garder comme outil A/B futur, soit supprimer. Cyril décidera.
 
 ### 0. Crise quotas free tier — solution LLM local encore à trouver (priorité absolue)
 
@@ -483,7 +506,29 @@ Si un contact demande "comment acheter CBWD ?", la réponse est :
 - **Docs projet** (CLAUDE/MEMORY/RULES.md) : français (pour Cyril)
 - **Frontend** (phase 3) : bilingue EN/FR
 
-## ✅ Statut actuel — Fin de session 2026-04-14
+## ✅ Statut actuel — Fin de session 2026-04-26 (soir)
+
+### Reprise 2026-04-27 — où on en est
+
+**Pushés et déployés en prod aujourd'hui** :
+- ✅ `62e5a5a` Live Activity ticker filtré sur 48h
+- ✅ `ceee58e` Event Log h-[600px] + scroll interne + sticky thead (aligné Live Activity)
+- ✅ `b73a71d` Cap 60s sur batch backoff (fix le bug Cerebras Retry-After: 86400 qui a gelé le pipeline 9h+ ce matin)
+- ✅ `e3d4daa` Revert du V2 prompt analyst (`9e0df50`) — économie quota immédiate
+
+**En local NON pushé (en attente de décision Cyril)** :
+- ⏳ `worker/agents/magnitude_calibrator.py` — calibrator Python post-LLM, 5 couches, asymétrique (positives only)
+- ⏳ `worker/audit_calibrator.py` — script audit offline
+- ⏳ `worker/calibration_audit.json` — résultat audit (7 bumps, 0 décision changée)
+- ⏳ `worker/ab_test_analyst.py` + `worker/ab_test_results.json` — artefacts test V1 vs V2 prompt (à supprimer ou garder)
+
+**Quota Cerebras** : 90% consommé en fin de journée 2026-04-26. Reset daily attendu vers minuit UTC. Le revert du V2 prompt + le cap 60s vont stabiliser, mais marge mince.
+
+**Première action 2026-04-27** : Cyril décide entre options A/B/C pour le calibrator (voir §-1 ci-dessus). Pas de push avant validation.
+
+---
+
+## ✅ Statut historique — Fin de session 2026-04-14
 
 ### Ce qui fonctionne en production
 - ✅ **Worker Python** (8 fichiers EN) intégré au `launchd` macOS

@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-04-27T15:43:55.284784+00:00",
+  "total_events_examined": 94,
+  "events_with_positive_bump": 11,
+  "events_with_4d_bump_triggered": 5,
+  "events_with_decision_change": 1,
+  "new_burn_events": 0,
+  "new_neutral_events": 1,
+  "new_mint_events": 0,
+  "flipped_burn_lost": 0,
+  "verdict_legend": {
+    "?": "to mark — replace with one of: correct / false_positive / partial / missed",
+    "correct": "the bump was deserved",
+    "false_positive": "the bump was wrong",
+    "partial": "bump was right but magnitude over- or under-shot",
+    "missed": "an event NOT in this list deserved a bump but wasn't flagged"
+  },
+  "settings": {
+    "similarity_threshold": 0.5,
+    "bump_high_threshold": 0.8,
+    "max_bump": 2,
+    "no_bump_above_magnitude": 8,
+    "fourd_trigger_similarity": 0.65,
+    "snapshot_bump": 0.5,
+    "trajectory_bump": 0.5,
+    "revaluation_bump": 0.0,
+    "prospective_bump": 1.0
+  },
+  "audit_entries": [
+    {
+      "event_id": 89,
+      "event_title": "Sewage Is Threatening Coral Reefs Around the World, Even in Marine Protected Areas",
+      "event_source": "Inside Climate News",
+      "decision_before": "MINT",
+      "score_before": -1.65,
+      "decision_after": "MINT",
+      "score_after": -1.65,
+      "decision_changed": false,
+      "fourd_bump_triggered": false,
+      "fourd_bump_reason": null,
+      "positive_bumps": [
+        {
+          "description": "Study highlights the importance of addressing land-based pollution for marine conservation.",
+          "magnitude_before": 6,
+          "magnitude_after": 7,
+          "max_similarity": 0.516,
+          "matched_canonical": "a national environmental regulation aligns with health and ecological protection goals",
+          "signals": [
+            "embedding_similarity=0.516 vs canonical[17]",
+            "sdgs_count=3",
+            "frameworks_count=2",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 82,
+      "event_title": "Indigenous solar projects to tackle diesel shortage concerns and halve power bills",
+      "event_source": "ABC News Australia",
+      "decision_before": "MINT",
+      "score_before": 3.96,
+      "decision_after": "MINT",
+      "score_after": 3.96,
+      "decision_changed": false,
+      "fourd_bump_triggered": false,
+      "fourd_bump_reason": null,
+      "positive_bumps": [
+        {
+          "description": "Funding for solar projects reduces reliance on diesel and lowers energy costs for remote Indigenous communities.",
+          "magnitude_before": 7,
+          "magnitude_after": 8,
+          "max_similarity": 0.61,
+          "matched_canonical": "a national policy reduces reliance on imported or polluting energy sources",
+          "signals": [
+            "embedding_similarity=0.610 vs canonical[25]",
+            "sdgs_count=4",
+            "frameworks_count=3",
+            "llm_confidence=8"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 75,
+      "event_title": "Largest-ever ban on toxic chemicals in EU hit by ‘extremely frustrating’ delays",
+      "event_source": "The Guardian Environment",
+      "decision_before": "MINT",
+      "score_before": -1.45,
+      "decision_after": "MINT",
+      "score_after": -0.82,
+      "decision_changed": false,
+      "fourd_bump_triggered": true,
+      "fourd_bump_reason": "max_positive_similarity=0.745 >= trigger=0.65, 1 positive bumps applied (proxy mode: 4D scores not persisted, +0.625 applied to final_score)",
+      "positive_bumps": [
+        {
+          "description": "EU initiated a large-scale plan to restrict hazardous chemicals in 2022, aiming to remove harmful substances from consumer products.",
+          "magnitude_before": 7,
+          "magnitude_after": 8,
+          "max_similarity": 0.745,
+          "matched_canonical": "a regulatory plan or initiative restricts hazardous chemicals or pollutants",
+          "signals": [
+            "embedding_similarity=0.745 vs canonical[14]",
+            "sdgs_count=5",
+            "frameworks_count=2",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 70,
+      "event_title": "Ban 'forever chemicals' in uniforms and frying pans, MPs urge",
+      "event_source": "BBC Science & Environment",
+      "decision_before": "MINT",
+      "score_before": 3.59,
+      "decision_after": "NEUTRAL",
+      "score_after": 4.21,
+      "decision_changed": true,
+      "fourd_bump_triggered": true,
+      "fourd_bump_reason": "max_positive_similarity=0.689 >= trigger=0.65, 1 positive bumps applied (proxy mode: 4D scores not persisted, +0.625 applied to final_score)",
+      "positive_bumps": [
+        {
+          "description": "Call to ban PFAS chemicals in everyday products aligns with health and environmental protection.",
+          "magnitude_before": 7,
+          "magnitude_after": 8,
+          "max_similarity": 0.689,
+          "matched_canonical": "a recognized authority calls for banning hazardous substances in everyday products",
+          "signals": [
+            "embedding_similarity=0.689 vs canonical[18]",
+            "sdgs_count=4",
+            "frameworks_count=2",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 67,
+      "event_title": "Ohio Is Where Wind and Solar Projects Go to Die, and Other Findings From New Research on State Permitting",
+      "event_source": "Inside Climate News",
+      "decision_before": "MINT",
+      "score_before": -2.1,
+      "decision_after": "MINT",
+      "score_after": -2.1,
+      "decision_changed": false,
+      "fourd_bump_triggered": false,
+      "fourd_bump_reason": null,
+      "positive_bumps": [
+        {
+          "description": "The research highlights the need for improved regulatory frameworks to support renewable energy development.",
+          "magnitude_before": 4,
+          "magnitude_after": 5,
+          "max_similarity": 0.561,
+          "matched_canonical": "promotion of renewable energy through state-backed infrastructure development",
+          "signals": [
+            "embedding_similarity=0.561 vs canonical[27]",
+            "sdgs_count=2",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 60,
+      "event_title": "Energy dependence: Emmanuel Macron bets on French lithium",
+      "event_source": "France 24 FR",
+      "decision_before": "MINT",
+      "score_before": 2.11,
+      "decision_after": "MINT",
+      "score_after": 2.73,
+      "decision_changed": false,
+      "fourd_bump_triggered": true,
+      "fourd_bump_reason": "max_positive_similarity=0.731 >= trigger=0.65, 1 positive bumps applied (proxy mode: 4D scores not persisted, +0.625 applied to final_score)",
+      "positive_bumps": [
+        {
+          "description": "Reduces reliance on foreign energy resources",
+          "magnitude_before": 6,
+          "magnitude_after": 7,
+          "max_similarity": 0.731,
+          "matched_canonical": "a national policy reduces reliance on imported or polluting energy sources",
+          "signals": [
+            "embedding_similarity=0.731 vs canonical[25]",
+            "sdgs_count=3",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 57,
+      "event_title": "Push for solar park in Sri Lanka’s elephant terrain raises concern",
+      "event_source": "Mongabay",
+      "decision_before": "MINT",
+      "score_before": -1.08,
+      "decision_after": "MINT",
+      "score_after": -0.46,
+      "decision_changed": false,
+      "fourd_bump_triggered": true,
+      "fourd_bump_reason": "max_positive_similarity=0.656 >= trigger=0.65, 1 positive bumps applied (proxy mode: 4D scores not persisted, +0.625 applied to final_score)",
+      "positive_bumps": [
+        {
+          "description": "Promotion of renewable energy through solar park development.",
+          "magnitude_before": 6,
+          "magnitude_after": 7,
+          "max_similarity": 0.656,
+          "matched_canonical": "promotion of renewable energy through state-backed infrastructure development",
+          "signals": [
+            "embedding_similarity=0.656 vs canonical[27]",
+            "sdgs_count=2",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 54,
+      "event_title": "Japan to invest ¥1 trillion to secure recycled resources",
+      "event_source": "Japan Times",
+      "decision_before": "MINT",
+      "score_before": 3.29,
+      "decision_after": "MINT",
+      "score_after": 3.29,
+      "decision_changed": false,
+      "fourd_bump_triggered": false,
+      "fourd_bump_reason": null,
+      "positive_bumps": [
+        {
+          "description": "Promotion of plastic and metal reuse contributes to pollution reduction and climate action.",
+          "magnitude_before": 6,
+          "magnitude_after": 7,
+          "max_similarity": 0.527,
+          "matched_canonical": "a national policy reduces reliance on imported or polluting energy sources",
+          "signals": [
+            "embedding_similarity=0.527 vs canonical[25]",
+            "sdgs_count=3",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 34,
+      "event_title": "European Union still exporting banned pesticides despite health risks",
+      "event_source": "RFI EN Environment",
+      "decision_before": "MINT",
+      "score_before": -3.11,
+      "decision_after": "MINT",
+      "score_after": -2.48,
+      "decision_changed": false,
+      "fourd_bump_triggered": true,
+      "fourd_bump_reason": "max_positive_similarity=0.731 >= trigger=0.65, 2 positive bumps applied (proxy mode: 4D scores not persisted, +0.625 applied to final_score)",
+      "positive_bumps": [
+        {
+          "description": "EU has banned certain pesticides domestically due to health and environmental risks, reflecting strong internal regulatory standards.",
+          "magnitude_before": 7,
+          "magnitude_after": 8,
+          "max_similarity": 0.731,
+          "matched_canonical": "a regulatory body authority bans pesticides for health and environmental reasons",
+          "signals": [
+            "embedding_similarity=0.731 vs canonical[16]",
+            "sdgs_count=4",
+            "llm_confidence=8"
+          ]
+        },
+        {
+          "description": "A promised law to stop export of banned pesticides indicates intent to align foreign trade with internal health and environmental values.",
+          "magnitude_before": 5,
+          "magnitude_after": 6,
+          "max_similarity": 0.569,
+          "matched_canonical": "a regulatory body authority bans pesticides for health and environmental reasons",
+          "signals": [
+            "embedding_similarity=0.569 vs canonical[16]",
+            "sdgs_count=3",
+            "llm_confidence=8"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 33,
+      "event_title": "Supreme court sides with oil and gas firms in Louisiana coastal damage fight",
+      "event_source": "The Guardian Climate",
+      "decision_before": "MINT",
+      "score_before": -4.22,
+      "decision_after": "MINT",
+      "score_after": -4.22,
+      "decision_changed": false,
+      "fourd_bump_triggered": false,
+      "fourd_bump_reason": null,
+      "positive_bumps": [
+        {
+          "description": "Procedural fairness upheld by ensuring federal court review, reinforcing rule of law in complex environmental litigation.",
+          "magnitude_before": 5,
+          "magnitude_after": 6,
+          "max_similarity": 0.609,
+          "matched_canonical": "a court ruling or judicial decision protects environmental or human rights",
+          "signals": [
+            "embedding_similarity=0.609 vs canonical[4]",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    },
+    {
+      "event_id": 27,
+      "event_title": "South Africa: Water Prices Jump 68 Percent in Five Years",
+      "event_source": "AllAfrica Environment",
+      "decision_before": "MINT",
+      "score_before": -1.8,
+      "decision_after": "MINT",
+      "score_after": -1.8,
+      "decision_changed": false,
+      "fourd_bump_triggered": false,
+      "fourd_bump_reason": null,
+      "positive_bumps": [
+        {
+          "description": "Increased water prices may incentivize conservation and investment in infrastructure.",
+          "magnitude_before": 5,
+          "magnitude_after": 6,
+          "max_similarity": 0.502,
+          "matched_canonical": "a state-level investment promotes renewable energy infrastructure deployment",
+          "signals": [
+            "embedding_similarity=0.502 vs canonical[24]",
+            "sdgs_count=2",
+            "llm_confidence=7"
+          ]
+        }
+      ],
+      "your_verdict": "?"
+    }
+  ]
+}
