@@ -1,10 +1,30 @@
 {
-  "generated_at": "2026-04-26T17:56:49.272153+00:00",
-  "total_events": 94,
+  "generated_at": "2026-04-27T05:43:23.326239+00:00",
+  "total_events": 95,
   "total_burned": 9050000,
-  "total_minted": 82093750,
+  "total_minted": 82243750,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 95,
+      "event_title": "'We live up here to escape': Residents unhappy with sand dredging proposal",
+      "event_url": "https://www.abc.net.au/news/2026-04-27/community-concern-boskalis-cambridge-gulf-sand-plan/106583022",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.25,
+      "confidence": 7,
+      "justification": "Delayed community engagement undermines transparency and trust. | The decision to delay public meetings violates the right to participation and transparency, but the company's acknowledgment of concerns shows a potential for improvement.",
+      "tx_hash": "67eUvwUG2KVYD2w9h25nZGUPwwTL6MkbJQ1vm4Xc3k9eNDynXfV18bjRQLoK9q86ydhUq81WLZFdVF7zcLQ7kKWr",
+      "created_at": "2026-04-27T05:43:22.956714+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The company acknowledges community concerns and may improve engagement processes.\", \"affected_sdgs\": [11, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Public meetings were not held earlier, undermining community participation and transparency.\", \"affected_sdgs\": [11, 16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]"
+    },
     {
       "id": 94,
       "event_title": "Forest fires spread across Nilgiris; helicopters help battle blaze",
@@ -1890,8 +1910,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 3580000
+        "count": 10,
+        "total_amount": 3730000
       },
       {
         "country": "United Kingdom",
@@ -1917,6 +1937,11 @@
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "North America",
+        "burn_ratio": 0.0,
+        "events": 11
+      },
+      {
         "region": "Asia",
         "burn_ratio": 0.0,
         "events": 11
@@ -1935,19 +1960,9 @@
         "region": "Latin America",
         "burn_ratio": 0.0,
         "events": 10
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.0,
-        "events": 10
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-04-20",
-        "net_minted": 4240000,
-        "net_burned": 0
-      },
       {
         "date": "2026-04-21",
         "net_minted": 3970000,
@@ -1977,6 +1992,11 @@
         "date": "2026-04-26",
         "net_minted": 5180000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-04-27",
+        "net_minted": 150000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -1992,12 +2012,12 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 49,
-        "negative": 57
+        "positive": 50,
+        "negative": 58
       },
       "UDHR": {
-        "positive": 7,
-        "negative": 23
+        "positive": 8,
+        "negative": 24
       },
       "ILO": {
         "positive": 1,
@@ -2024,11 +2044,11 @@
       "niche_pct": 85.2,
       "mainstream_pct": 14.8,
       "total_sources_used": 27,
-      "articles_processed": 57
+      "articles_processed": 58
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 57,
+      "total_events": 58,
       "pct": 0.0
     },
     "active_partners_7d": [
