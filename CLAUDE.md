@@ -26,7 +26,7 @@
   - Ubuntu 24.04, CX23 (2 vCPU / 4GB / 40GB), €4.31/mois
   - User `carbon` (sudo NOPASSWD), Python 3.12 + venv
   - Deploy key GitHub `vps-hetzner-writer` (read-write)
-  - Cron 15 min : `~/CARBON-WORLD/launcher/run_vps.sh`
+  - Cron **30 min** (`*/30`, ajusté 2026-04-27 pour préserver quota Cerebras free tier) : `~/CARBON-WORLD/launcher/run_vps.sh`
 - **Frontend** : Next.js 16 **hébergé sur le VPS**, passkey auth /review (WebAuthn)
   - Service systemd : `carbon-web.service` → `next-server` sur `:3000`
   - Reverse proxy : **Caddy** (80/443) avec certificat Let's Encrypt auto
@@ -40,7 +40,7 @@
 ### Architecture finale
 - Worker **Python natif** (plus de n8n, plus de Ollama local)
 - IA **cloud Groq** : `qwen/qwen3-32b` via API (classifier + analyst) + `llama-3.3-70b-versatile` (analyst B)
-- Déclenchement **cron 15 min** sur VPS Hetzner (plus de launchd)
+- Déclenchement **cron 30 min** sur VPS Hetzner (passé de 15 à 30 min le 2026-04-27 pour économiser quota Cerebras)
 - Data : SQLite local sur VPS + export JSON committé sur GitHub main
 - Le cron VPS détecte les changements dans `web/` (hors `web/data/`) et rebuild Next.js + `systemctl restart carbon-web` automatiquement
 
@@ -109,7 +109,7 @@ Contient :
 ## 🏗 Architecture technique — Pipeline 8 agents (mainnet)
 
 ```
-VPS Hetzner cron (*/15 min)
+VPS Hetzner cron (*/30 min)
   → launcher/run_vps.sh
     → git pull + worker/main.py + git push export
 
