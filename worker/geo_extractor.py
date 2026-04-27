@@ -686,3 +686,23 @@ def _country_to_region(country: str) -> Optional[str]:
         if canonical == country:
             return region
     return None
+
+
+def resolve_country_metadata(country: Optional[str]) -> dict:
+    """
+    Public helper: given an LLM-provided canonical country name, return the
+    matching (region, administration) tuple as a dict. Returns all-None when
+    country is None or not in our table.
+
+    Used by the writer to honour `event_country` from the Analyst output
+    (contextual, LLM-understood) instead of the regex-based extractor.
+    """
+    if not country:
+        return {"country": None, "region": None, "administration": None}
+    region = _country_to_region(country)
+    administration = _ADMINISTRATIONS.get(country)
+    if not region:
+        # Country not in our table — return as-is so Cyril sees the raw LLM
+        # output and can extend the table if it's a legit country we missed.
+        return {"country": country, "region": None, "administration": None}
+    return {"country": country, "region": region, "administration": administration}

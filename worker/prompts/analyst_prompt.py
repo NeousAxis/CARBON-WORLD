@@ -203,7 +203,10 @@ If validation is true, use exactly this structure:
   "decision": "MINT",
   "amount_cbwd": 250000,
   "confidence": 7,
-  "justification": "One sentence (<= 200 chars) summarizing the decision."
+  "justification": "One sentence (<= 200 chars) summarizing the decision.",
+  "event_country": "United States"
 }
+
+`event_country` is the canonical English name of the country whose government, judiciary, or society is the PRIMARY ACTOR of the event (the one performing the action, signing the treaty, ruling, banning, etc.). If the actor is an international institution (EU, UN, ICJ, NATO) or a regional bloc, or if the event is global / multi-country with no single primary actor, return null. Do not use abbreviations or ISO codes — use the full canonical name (e.g. "United States", not "US"; "United Kingdom", not "UK").
 
 Keep text fields short. Prefer arrays of short strings over long paragraphs. Never exceed 2500 output tokens. Always valid JSON."""

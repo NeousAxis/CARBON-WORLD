@@ -14,7 +14,7 @@ from db import (
     add_to_review_queue,
     log_training_data,
 )
-from geo_extractor import extract_geo
+from geo_extractor import extract_geo, resolve_country_metadata
 from solana_executor import execute_decision
 
 logger = logging.getLogger("agent.writer")
@@ -156,12 +156,26 @@ def write(event: dict) -> bool:
     # --- Happy path: persist to carbon_events + Solana tx ---
     justification = _build_justification(analysis)
 
-    # Extract geographic metadata (zero LLM cost)
-    geo = extract_geo(
-        title=title,
-        justification=justification,
-        source=article.get("source", ""),
-    )
+    # Extract geographic metadata.
+    # Priority: the Analyst LLM contextually decides who is the primary actor.
+    # We trust its event_country verdict — including an explicit `null` which
+    # means "no single country actor" (EU plans, UN resolution, multi-country
+    # crisis, etc.). We only fall back to the regex extractor when the field
+    # is ABSENT from the analysis (legacy event without the new schema).
+    if "event_country" in analysis:
+        llm_country = analysis.get("event_country")
+        if llm_country and isinstance(llm_country, str) and llm_country.strip():
+            geo = resolve_country_metadata(llm_country.strip())
+        else:
+            # LLM explicitly returned null — respect its contextual decision
+            geo = {"country": None, "region": None, "administration": None}
+    else:
+        # Field absent — fallback to the regex extractor for backward compat
+        geo = extract_geo(
+            title=title,
+            justification=justification,
+            source=article.get("source", ""),
+        )
 
     # Serialise positive/negative aspects if present in the analysis
     positive_aspects = analysis.get("positive_aspects")
