@@ -4,6 +4,46 @@
 
 ---
 
+## 🌱 2026-04-27 — BURN composition (élargissement + traçabilité)
+
+### Décision philosophique
+
+Cyril : *"Pas d'erreur inverse, il ne faut pas être dogmatique. L'époque est sombre, il nous faut de l'espoir, donc il faut élargir le spectre. Mais on documente chaque BURN par sous-type pour pouvoir détecter l'abus et resserrer si nécessaire."*
+
+**Cas concret déclencheur** : article Mongabay *"What the grim outlook for Alpine Ash forests tell us about forestry dogma — commentary"*. Contenu sombre (forêts qui meurent), mais l'**acte de publier** une critique fondée par un média environnemental crédible = signal positif pour le progrès de conscience humaine. Cyril l'a reversé manuellement de MINT à BURN via `resolve_review.py`.
+
+### Phase 1 livrée (commit `8222bb6`) — Traçabilité
+
+- **DB migration** : nouvelle colonne `carbon_events.burn_subtype` (`direct_action` / `editorial_consciousness` / `NULL`)
+- **Backfill script** `worker/backfill_burn_subtype.py` : tag les BURN historiques. Heuristique = `final_score == 0 + source ∈ whitelist crédible` (signature d'un reverse manuel) → `editorial_consciousness`, sinon `direct_action`. Idempotent.
+- **14 sources éducatives crédibles whitelist** : Mongabay (+ LATAM/Brasil), Yale Environment 360, Inside Climate News, Reasons to be Cheerful, Reporterre, Carbon Brief, China Dialogue, Diálogo Chino EN, Grist (+ Solutions), The New Humanitarian, Solutions Journalism Network.
+- **Exporter** : nouveaux aggregates `burn_composition_7d` et `burn_composition_all_time`. Format `{total_burn, direct_action: {count, pct}, editorial_consciousness: {count, pct}, untyped: {count, pct}}`.
+- **Frontend** `BurnCompositionCard.tsx` : stacked horizontal bar (vert success-fg pour direct, teal pour editorial, muted gris pour untyped) + légende 3-lignes + footer total. 2 cards côte-à-côte (7D + ALL TIME) après FrameworkActivityCard.
+
+**Composition initiale en prod** :
+- 7D : 5 direct (62.5%) + 3 editorial (37.5%) = 8 BURN total
+- ALL TIME : 10 direct (76.9%) + 3 editorial (23.1%) = 13 BURN total
+
+### Phase 2 livrée (commit `55b1bdc`) — Auto-tagging au pipeline
+
+- **`worker/agents/writer.py`** : nouvelle fonction `_classify_burn_subtype(decision, source)` invoquée à chaque `save_event`. Plus aucun BURN ne sort untagged.
+- **`worker/db.py`** : `save_event` INSERT étend avec `burn_subtype`.
+- **`worker/resolve_review.py`** : auto-tag pendant les reverses manuels (le commit `c387d38` permet à un Mongabay reverse de tagguer `editorial_consciousness` automatiquement, sans re-run backfill).
+
+**Effet attendu** : à partir de ce commit, plus aucun event LEGACY (UNTYPED) ne devrait apparaître sur le dashboard. Le backfill reste dans le repo comme safety-net pour migrations futures.
+
+### Observations & garde-fous
+
+- Le backfill et le writer partagent la **même whitelist** `EDITORIAL_CONSCIOUSNESS_SOURCES` — synchronisation manuelle requise si on étend une liste.
+- Carbon Brief, déjà dans la whitelist, → tous nouveaux BURN auto de Carbon Brief seront `editorial_consciousness`. À surveiller : si l'event est une vraie action structurelle (et non un commentary), c'est un faux positif. Cyril ajustera la whitelist si besoin.
+- **Garde-fou abus** : pas encore implémenté. À ajouter en Phase 3 (alerte log si `editorial_consciousness > 50% sur 7j`).
+
+### Calibrator dry-run en prod (rappel)
+
+Le calibrator Python post-LLM (commit `51c91a2`) tourne en `MAGNITUDE_CALIBRATOR_MODE=dry_run` depuis 18:30 CEST. Il logge dans `logs/calibrator_dryrun.jsonl` mais n'altère pas la DB. À évaluer après 24h d'observation, puis flip à `active` si Cyril valide.
+
+---
+
 ## 🛠 2026-04-26 — Session marathonne : Live Activity + Event Log + crise V2 prompt + calibrator Python
 
 ### ✅ Livrés en prod
