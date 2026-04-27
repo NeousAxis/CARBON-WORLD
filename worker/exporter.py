@@ -94,6 +94,8 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
     has_aspects = _has_column(conn, "carbon_events", "positive_aspects_json")
     has_reused = _has_column(conn, "carbon_events", "reused_from_event_id")
 
+    has_burn_subtype = _has_column(conn, "carbon_events", "burn_subtype")
+
     return {
         "top_countries_mint": _top_countries(events_7d, "MINT", limit=5) if has_country else [],
         "top_countries_burn": _top_countries(events_7d, "BURN", limit=5) if has_country else [],
@@ -106,6 +108,45 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
         "active_partners_7d": _active_partners_7d(conn, cutoff_7d),
         "top_institutions_7d": _top_institutions(events_7d),
         "top_sectors_7d": _top_sectors(events_7d),
+        "burn_composition_7d": _burn_composition(events_7d) if has_burn_subtype else _empty_burn_composition(),
+        "burn_composition_all_time": _burn_composition(all_events) if has_burn_subtype else _empty_burn_composition(),
+    }
+
+
+def _burn_composition(events: list[dict]) -> dict:
+    """Breakdown of BURN events by subtype (direct_action vs editorial_consciousness).
+
+    Returns:
+        {
+          "total_burn": N,
+          "direct_action": {"count": X, "pct": XX.X},
+          "editorial_consciousness": {"count": Y, "pct": YY.Y},
+          "untyped": {"count": Z, "pct": ZZ.Z}    # legacy events without subtype
+        }
+    """
+    burn_events = [e for e in events if e.get("decision") == "BURN"]
+    total = len(burn_events)
+    if total == 0:
+        return _empty_burn_composition()
+
+    direct = sum(1 for e in burn_events if (e.get("burn_subtype") or "") == "direct_action")
+    editorial = sum(1 for e in burn_events if (e.get("burn_subtype") or "") == "editorial_consciousness")
+    untyped = total - direct - editorial
+
+    return {
+        "total_burn": total,
+        "direct_action": {"count": direct, "pct": round(100.0 * direct / total, 1)},
+        "editorial_consciousness": {"count": editorial, "pct": round(100.0 * editorial / total, 1)},
+        "untyped": {"count": untyped, "pct": round(100.0 * untyped / total, 1)},
+    }
+
+
+def _empty_burn_composition() -> dict:
+    return {
+        "total_burn": 0,
+        "direct_action": {"count": 0, "pct": 0.0},
+        "editorial_consciousness": {"count": 0, "pct": 0.0},
+        "untyped": {"count": 0, "pct": 0.0},
     }
 
 

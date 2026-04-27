@@ -42,3 +42,6 @@ export type { SupplyTrendCardProps } from "./SupplyTrendCard";
 
 export { EventOfTheDayCard } from "./EventOfTheDayCard";
 export type { EventOfTheDayCardProps, EventOfTheDayEvent } from "./EventOfTheDayCard";
+
+export { BurnCompositionCard } from "./BurnCompositionCard";
+export type { BurnCompositionCardProps } from "./BurnCompositionCard";

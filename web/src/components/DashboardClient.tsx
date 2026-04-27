@@ -10,6 +10,7 @@ import { PartnersSection } from "@/components/PartnersSection";
 import {
   TopCountriesMintCard,
   TopCountriesBurnCard,
+  BurnCompositionCard,
   TopRegionsSustainableCard,
   TopInstitutionsCard,
   TopSectorsCard,
@@ -47,6 +48,18 @@ const EMPTY_AGGREGATES: Aggregates = {
   active_partners_7d: [],
   top_institutions_7d: [],
   top_sectors_7d: [],
+  burn_composition_7d: {
+    total_burn: 0,
+    direct_action: { count: 0, pct: 0 },
+    editorial_consciousness: { count: 0, pct: 0 },
+    untyped: { count: 0, pct: 0 },
+  },
+  burn_composition_all_time: {
+    total_burn: 0,
+    direct_action: { count: 0, pct: 0 },
+    editorial_consciousness: { count: 0, pct: 0 },
+    untyped: { count: 0, pct: 0 },
+  },
 };
 
 // CountUp must be client-only (uses useEffect internally)
@@ -322,6 +335,22 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
 
         {/* Framework Activity — full-width panoptic ethical card */}
         <FrameworkActivityCard data={aggregates.framework_activity_7d} />
+
+        {/* BURN composition — direct actions vs editorial consciousness */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {aggregates.burn_composition_7d && (
+            <BurnCompositionCard
+              composition={aggregates.burn_composition_7d}
+              windowLabel="7D"
+            />
+          )}
+          {aggregates.burn_composition_all_time && (
+            <BurnCompositionCard
+              composition={aggregates.burn_composition_all_time}
+              windowLabel="ALL TIME"
+            />
+          )}
+        </div>
 
         {/* Pipeline health row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

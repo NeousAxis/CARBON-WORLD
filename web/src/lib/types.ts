@@ -99,6 +99,18 @@ export interface TaxonomyEntry {
   mint_count: number;
 }
 
+export interface BurnSubtypeStat {
+  count: number;
+  pct: number;
+}
+
+export interface BurnComposition {
+  total_burn: number;
+  direct_action: BurnSubtypeStat;
+  editorial_consciousness: BurnSubtypeStat;
+  untyped: BurnSubtypeStat;
+}
+
 export interface Aggregates {
   top_countries_mint: CountryStat[];
   top_countries_burn: CountryStat[];
@@ -111,6 +123,8 @@ export interface Aggregates {
   active_partners_7d: PartnerActivity[];
   top_institutions_7d: TaxonomyEntry[];
   top_sectors_7d: TaxonomyEntry[];
+  burn_composition_7d?: BurnComposition;
+  burn_composition_all_time?: BurnComposition;
 }
 
 export interface ExportData {

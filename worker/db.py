@@ -93,6 +93,11 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         "ALTER TABLE carbon_events ADD COLUMN administration TEXT;",
         "ALTER TABLE carbon_events ADD COLUMN positive_aspects_json TEXT;",
         "ALTER TABLE carbon_events ADD COLUMN negative_aspects_json TEXT;",
+        # Phase 8 — BURN composition tracking (2026-04-27)
+        # Allowed values: 'direct_action' (treaty/biome/breakthrough),
+        # 'editorial_consciousness' (credible educational commentary), or NULL
+        # for MINT/NEUTRAL events.
+        "ALTER TABLE carbon_events ADD COLUMN burn_subtype TEXT;",
     ]
     for sql in migrations:
         try:
