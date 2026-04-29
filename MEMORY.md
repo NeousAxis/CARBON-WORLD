@@ -4,6 +4,51 @@
 
 ---
 
+## 🌍 2026-04-27 (soir) — Geo extractor : LLM event_country + cron espacé
+
+### Bug géographique : faux positif Iran sur event #102
+
+Event #102 *"EU plans to cut electricity taxes to shield households from Iran war energy crisis"* tagué `country=Iran` par le `geo_extractor.py` regex. La phrase mentionne Iran comme **contexte/cause** (de la crise énergétique), pas comme acteur. EU est le sujet réel mais EU n'est pas dans la liste country (institution, pas pays).
+
+### Fausse piste rejetée par Cyril
+
+Première tentative : ajouter des règles regex contextuelles (`from X war` → poids réduit, `X's` → poids augmenté, position dans le titre). Cyril a tranché brutalement : *"non tu ne peux pas créer une règle car cela dépend toujours du contexte. Ta règle est en train d'éviter de contextualiser le problème, et ça c'est le problème."*
+
+Patch reverté. Leçon : quand le problème exige de la **compréhension** sémantique, ajouter des regex c'est juste enterrer des fragilités dans le code.
+
+### Solution livrée (commit `08311f4`) — LLM event_country
+
+Le LLM Analyst a déjà tout le contexte (titre + body + aspects). Il sait identifier l'acteur. Solution : ajouter **un seul champ** `event_country` au JSON output schema du prompt analyst. Le LLM le remplit en canonical English, ou `null` quand l'acteur est une institution (EU/UN/ICJ) ou multi-country.
+
+- **`worker/prompts/analyst_prompt.py`** : +1 ligne dans le schema + 1 phrase d'instruction. Total prompt : 11722 → 12270 chars (+548, soit ~140 tokens input/call). Marginal vs +4190 du V2 reverté hier.
+- **`worker/geo_extractor.py`** : nouveau helper public `resolve_country_metadata(country)` qui mappe un nom canonical → `{country, region, administration}` via les tables internes. Le legacy `extract_geo()` regex reste inchangé pour le fallback.
+- **`worker/agents/writer.py`** : priorité `event_country` LLM (présent et non-null) > respect du `null` LLM explicite (= "pas de country acteur") > fallback regex `extract_geo()` si le champ est absent (legacy).
+- **Distinction critique** : `null` explicite (LLM a décidé) ≠ field absent (legacy). On ne fallback PAS sur null explicite — c'est la bonne réponse contextuelle.
+
+### Cron 15 → 30 min (commit `4c13759`)
+
+Cerebras free tier daily quota épuisé à 19:10 CEST le 27/04 — pas par moi (j'avais fait que de l'audit Python local), c'est juste la consommation organique du pipeline (96 cron runs × ~10-20 LLM calls/run × 2 analysts parallèles = ~1500 calls/jour).
+
+Cyril : *"ok mais le Cron à 30 minutes alors"*. Action immédiate :
+- VPS crontab : `*/15` → `*/30`
+- CLAUDE.md mis à jour (3 endroits)
+- Effet : -50% LLM calls/jour, dashboard refresh 30 min au lieu de 15
+
+### État du calibrator dry-run en fin de session
+
+`MAGNITUDE_CALIBRATOR_MODE=dry_run` actif sur VPS depuis 18:30. Wiring vérifié OK. Mais **pas exercé** : sur les 4 derniers cron runs (20:00→21:30), `Analyzed: 0 events` partout — Cerebras 429 fail-fast tue tous les Analyst calls (cap 60s du commit `b73a71d` empêche le freeze, pipeline continue mais ne produit pas de nouveaux events). Aucune erreur côté calibrator. Le dry-run sera réellement exercé dès le reset Cerebras (~2h CEST cette nuit).
+
+### Bug residuel non traité : faux positif Iran #102
+
+L'event historique #102 reste taggué Iran en DB (créé avant le fix LLM event_country). Options pour le résoudre :
+- Laisser sortir du window 7j (~6 jours)
+- UPDATE SQL direct (option 2 proposée à Cyril, pas validée)
+- Re-analyser via LLM (1 call, mais Cerebras saturé)
+
+Pas d'action prise. Les **nouveaux events** dès le reset Cerebras seront propres.
+
+---
+
 ## 🌱 2026-04-27 — BURN composition (élargissement + traçabilité)
 
 ### Décision philosophique

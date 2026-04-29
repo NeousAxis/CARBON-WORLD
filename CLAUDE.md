@@ -2,7 +2,8 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Neous Axis
-> **État au 2026-04-26 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **94 events en DB**, **API publique Tier 1+2 live**. Crise quota Cerebras à 90% (incident gel pipeline 9h+ ce matin résolu via cap 60s commit `b73a71d`). **Calibrator Python post-LLM codé localement, en attente de validation Cyril sur option A/B/C avant push** (voir MEMORY.md §2026-04-26).
+> **État au 2026-04-27 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), cron passé à `*/30` (économie quota -50%), **107 events en DB**, **13 BURN total** (10 direct_action + 3 editorial_consciousness — Mongabay reverses), **dashboard BURN COMPOSITION live**. Calibrator Python en `dry_run` mode sur VPS (pas encore exercé : Cerebras quota daily épuisé à 19:10 CEST, sera observable demain matin). LLM `event_country` ajouté au JSON Analyst pour résoudre les faux positifs géo contextuels. Voir MEMORY.md §2026-04-27.
+> **État au 2026-04-26 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **94 events en DB**, **API publique Tier 1+2 live**. Crise quota Cerebras à 90% (incident gel pipeline 9h+ ce matin résolu via cap 60s commit `b73a71d`).
 > **État au 2026-04-21** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **Phases 1+2+3 du reframe sampling livrées et validées en prod**, **API publique Tier 1 (6 routes GET) live** sur `https://carbon-token.xyz/api/v1/*`.
 > **Stack durci 2026-04-19** : lockfile flock, batch classifier B=5, fail-fast Cerebras sur tous les agents Groq, +20 sources RSS positives, prompt classifier étendu aux structural markers, TZ VPS Europe/Zurich.
 > **Reframe décisif 2026-04-20** : la crise quota n'est PAS un problème de compute, c'est un problème d'**échantillonnage**. Sur 1925 articles bruts du run 12:00 CEST, seuls 6 events finaux → ratio signal/bruit **0.3 %**. 94 % du quota LLM brûlé sur du bruit mainstream redondant (Guardian/BBC/Le Monde/dérivés AFP qui couvrent tous les mêmes décisions institutionnelles). Les signaux recherchés (coopératives, ONG, communautés, Sud global, victoires locales) vivent dans des sources low-volume (Mongabay Brasil, Cultural Survival, Waging Nonviolence, Reporterre) qui sont noyées dans le flux mainstream.
@@ -191,29 +192,41 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ---
 
-## 🚨 À FAIRE — priorités ouvertes (2026-04-26)
+## 🚨 À FAIRE — priorités ouvertes (2026-04-27)
 
-### -1. PRIORITÉ ABSOLUE 2026-04-27 — Calibrator Python post-LLM (option A/B/C en attente)
+### -1. Évaluer le dry-run calibrator + flipper en `active` si OK
 
-**Contexte** : pipeline produit 0 BURN sur 7j (1.9% ratio sur 51 events). Diagnostic : Step 1 du prompt Analyst rejette 16/18 VALID classifier comme "ongoing initiative, not concrete decision" — tue toutes les bonnes nouvelles civil-society / scientific / NGO. Tentative V2 prompt analyst (commit `9e0df50`) avait gonflé le prompt de 11722 → 15912 chars (×1.36 input tokens), Cerebras quota daily à 90% → REVERTED (commit `e3d4daa`).
+Le calibrator Python post-LLM (commit `51c91a2`) a été pushé en `MAGNITUDE_CALIBRATOR_MODE=dry_run` le 2026-04-27. **Pas exercé** ce jour à cause de Cerebras quota daily épuisé. Demain matin :
 
-**Solution validée par Cyril** : calibrator Python post-LLM, zéro token additionnel. **Codé en local, NON pushé** :
-- `worker/agents/magnitude_calibrator.py` — module standalone, asymétrique (positives only)
-- `worker/audit_calibrator.py` — script audit offline
-- `worker/calibration_audit.json` — résultat audit sur 94 events (7 bumps positifs, 0 décision changée, 0 BURN détruit/créé)
+1. Lire `~/CARBON-WORLD/logs/calibrator_dryrun.jsonl` — combien de bumps détectés sur les events de la nuit ?
+2. Pour chaque bump, valider manuellement (correct / false_positive / partial)
+3. Si precision ≥ 80 % → flipper en `active` :
+   ```
+   ssh carbon@157.90.250.40
+   sed -i 's/MAGNITUDE_CALIBRATOR_MODE=dry_run/MAGNITUDE_CALIBRATOR_MODE=active/' ~/CARBON-WORLD/.env
+   ```
+4. Sinon : ajuster les canoniques dans `worker/agents/magnitude_calibrator.py` et re-tester
 
-**Architecture 5 couches** : embedding similarity (sentence-transformers all-MiniLM-L6-v2) vs canonical patterns + multi-signal convergence + blacklist negation regex + bump capped +2 + audit offline obligatoire.
+Calibration livrée (Option C) : `fourd_trigger_similarity=0.65`, `prospective_bump=+1`, `snapshot/trajectory_bump=+0.5`. Cumul effet : +0.625 sur final_score quand triggered. Asymétrique (positives only — ne touche jamais aux negatives).
 
-**Décision en attente Cyril** :
-- **A. Ship calibrator tel quel** — sûr, peu d'impact (3/7 corrects, 1/7 faux positif clair, 3/7 discutables)
-- **B. Améliorer canoniques + abaisser threshold 0.70 → 0.60** — ~30 min de dev
-- **C. Étendre calibrator aux scores 4D (Prospective surtout)** — attaque le vrai bottleneck (40% du score)
+### -1bis. Vérifier que `event_country` LLM corrige les faux positifs géo
 
-**Bottleneck identifié plus profond** : la dimension **Prospective (40% du score)** est systématiquement négative car le LLM voit le futur climat pessimiste. Bumper les magnitudes des aspects ne change PAS Prospective. Pour vraiment faire monter les BURN, calibrator devrait aussi recalibrer Prospective quand un structural shift positif est détecté (option C).
+Commit `08311f4` ajoute `event_country` au JSON Analyst. Demain :
+1. Lire les 5-10 nouveaux events analysés cette nuit dans la DB :
+   ```
+   sqlite3 ~/CARBON-WORLD/data/carbon.db "SELECT id, country, event_source, event_title FROM carbon_events ORDER BY id DESC LIMIT 10;"
+   ```
+2. Vérifier que les pays tagués correspondent au sujet réel de l'event (pas du contexte)
+3. Cas suspects à monitorer : events EU / UN / régionaux → devraient avoir `country=NULL`
 
-**Reprise 2026-04-27** : démarrer par décision Cyril sur A/B/C, puis exécuter. Audit déjà tourné, les fichiers locaux attendent. Étape 7 du plan = push + dry-run mode + 24h obs + flip actif.
+### -1ter. Faux positif Iran sur event #102 — bug résiduel
 
-**Artefacts locaux à nettoyer** : `worker/ab_test_analyst.py` + `worker/ab_test_results.json` (test V1 vs V2 prompt) — soit garder comme outil A/B futur, soit supprimer. Cyril décidera.
+Event #102 *"EU plans to cut electricity taxes...from Iran war energy crisis"* tagué Iran (faux positif legacy). Sortira du window 7j dans ~6 jours. Si tu veux corriger immédiatement :
+```
+ssh carbon@157.90.250.40
+sqlite3 ~/CARBON-WORLD/data/carbon.db "UPDATE carbon_events SET country=NULL, region=NULL, administration=NULL WHERE id=102;"
+python3 -c 'import sys; sys.path.insert(0, "worker"); from exporter import export_events; export_events()'
+```
 
 ### 0. Crise quotas free tier — solution LLM local encore à trouver (priorité absolue)
 
@@ -506,25 +519,44 @@ Si un contact demande "comment acheter CBWD ?", la réponse est :
 - **Docs projet** (CLAUDE/MEMORY/RULES.md) : français (pour Cyril)
 - **Frontend** (phase 3) : bilingue EN/FR
 
-## ✅ Statut actuel — Fin de session 2026-04-26 (soir)
+## ✅ Statut actuel — Fin de session 2026-04-27 (soir)
 
-### Reprise 2026-04-27 — où on en est
+### Reprise 2026-04-28 — où on en est
 
-**Pushés et déployés en prod aujourd'hui** :
+**Livré aujourd'hui en prod** :
+- ✅ `51c91a2` Magnitude calibrator Python (5 couches asymétrique) + scorer integration + env `MAGNITUDE_CALIBRATOR_MODE` (default `disabled`, set à `dry_run` sur VPS)
+- ✅ `8222bb6` Phase 1 BURN composition : DB column `burn_subtype` + backfill 13 BURN historiques + dashboard card
+- ✅ `55b1bdc` Phase 2 BURN composition : auto-tag dans writer + resolve_review (plus aucun LEGACY UNTYPED sur les nouveaux events)
+- ✅ `08311f4` LLM `event_country` au JSON Analyst : remplace les regex contextuelles (rejetées par Cyril). Le LLM décide qui est l'acteur, fallback regex pour legacy events.
+- ✅ `4c13759` Cron `*/15 → */30` : -50% calls Cerebras quotidiens
+
+**Composition BURN à fin de session** :
+- 7D : 5 direct + 3 editorial (62.5% / 37.5%) = 8 BURN total
+- ALL TIME : 10 direct + 3 editorial (76.9% / 23.1%) = 13 BURN total
+
+**Calibrator dry-run** : wiring OK, env var lu, mais **pas encore exercé** car Cerebras quota daily exhausted dès 19:10 CEST → 0 events analysés par les 4 derniers cron runs (20:00→21:30). Dès reset Cerebras (~2h CEST nuit du 27→28), les premiers events de demain rempliront `~/CARBON-WORLD/logs/calibrator_dryrun.jsonl`.
+
+**Bug résiduel non corrigé** : event #102 historique tagué `Iran` (faux positif geo_extractor). Reste 6 jours dans le window 7j puis sort. Les nouveaux events utiliseront `event_country` LLM. Pas d'action urgente.
+
+**Première action 2026-04-28** :
+1. Lire `logs/calibrator_dryrun.jsonl` — combien de bumps détectés en 24h ?
+2. Vérifier que les nouveaux events de la nuit ont bien un `country` correct (via LLM event_country)
+3. Si calibrator dry-run précis (5/5 ou plus de bumps justes) → flipper en `MAGNITUDE_CALIBRATOR_MODE=active`
+4. Continuer ce qui reste
+
+**Quota Cerebras** : ~100% consommé fin de journée 2026-04-27. Avec cron à 30 min + comportement de la nuit, devrait tenir confortablement demain.
+
+---
+
+## 🗂 Historique : Statut fin de session 2026-04-26 (soir)
+
+**Pushés et déployés en prod ce jour** :
 - ✅ `62e5a5a` Live Activity ticker filtré sur 48h
 - ✅ `ceee58e` Event Log h-[600px] + scroll interne + sticky thead (aligné Live Activity)
-- ✅ `b73a71d` Cap 60s sur batch backoff (fix le bug Cerebras Retry-After: 86400 qui a gelé le pipeline 9h+ ce matin)
+- ✅ `b73a71d` Cap 60s sur batch backoff (fix le bug Cerebras Retry-After: 86400 qui a gelé le pipeline 9h+)
 - ✅ `e3d4daa` Revert du V2 prompt analyst (`9e0df50`) — économie quota immédiate
 
-**En local NON pushé (en attente de décision Cyril)** :
-- ⏳ `worker/agents/magnitude_calibrator.py` — calibrator Python post-LLM, 5 couches, asymétrique (positives only)
-- ⏳ `worker/audit_calibrator.py` — script audit offline
-- ⏳ `worker/calibration_audit.json` — résultat audit (7 bumps, 0 décision changée)
-- ⏳ `worker/ab_test_analyst.py` + `worker/ab_test_results.json` — artefacts test V1 vs V2 prompt (à supprimer ou garder)
-
-**Quota Cerebras** : 90% consommé en fin de journée 2026-04-26. Reset daily attendu vers minuit UTC. Le revert du V2 prompt + le cap 60s vont stabiliser, mais marge mince.
-
-**Première action 2026-04-27** : Cyril décide entre options A/B/C pour le calibrator (voir §-1 ci-dessus). Pas de push avant validation.
+**Calibrator codé en local le 26, pushé le 27** (commit `51c91a2`).
 
 ---
 
