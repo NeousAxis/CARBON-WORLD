@@ -48,7 +48,7 @@ def _classify_burn_subtype(decision: str, source: str) -> str | None:
     Auto-tag the burn_subtype at write time.
 
     Rules:
-      - decision != BURN     → None (only BURN has a subtype)
+      - decision != BURN     → None (only BURN has a burn_subtype)
       - source in editorial   → 'editorial_consciousness'
       - else                  → 'direct_action'
 
@@ -60,6 +60,28 @@ def _classify_burn_subtype(decision: str, source: str) -> str | None:
         return None
     if source in EDITORIAL_CONSCIOUSNESS_SOURCES:
         return "editorial_consciousness"
+    return "direct_action"
+
+
+def _classify_mint_subtype(decision: str, source: str) -> str | None:
+    """
+    Auto-tag the mint_subtype at write time. Mirror of _classify_burn_subtype
+    for negative decisions.
+
+    Rules:
+      - decision != MINT     → None (only MINT has a mint_subtype)
+      - source in editorial   → 'editorial_alarm'
+      - else                  → 'direct_action'
+
+    Distinguishes a regression that's a hard government action (a treaty
+    withdrawn, a polluting permit issued) from a credible educational
+    outlet sounding the alarm on a structural decline (Mongabay covering
+    deforestation, Yale E360 covering rights erosion, etc.).
+    """
+    if decision != "MINT":
+        return None
+    if source in EDITORIAL_CONSCIOUSNESS_SOURCES:
+        return "editorial_alarm"
     return "direct_action"
 
 
@@ -217,6 +239,11 @@ def write(event: dict) -> bool:
         "negative_aspects_json": negative_aspects_json,
         # BURN composition tracking (Phase 2 auto-tag at write time)
         "burn_subtype": _classify_burn_subtype(
+            analysis.get("decision", "NEUTRAL"),
+            article.get("source", ""),
+        ),
+        # MINT composition tracking (Phase 9 mirror — same writer-time auto-tag)
+        "mint_subtype": _classify_mint_subtype(
             analysis.get("decision", "NEUTRAL"),
             article.get("source", ""),
         ),

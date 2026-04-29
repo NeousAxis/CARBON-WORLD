@@ -111,6 +111,19 @@ export interface BurnComposition {
   untyped: BurnSubtypeStat;
 }
 
+export interface MintComposition {
+  total_mint: number;
+  direct_action: BurnSubtypeStat;
+  editorial_alarm: BurnSubtypeStat;
+  untyped: BurnSubtypeStat;
+}
+
+export interface DestructiveRegionStat {
+  region: string;
+  mint_ratio: number;
+  events: number;
+}
+
 export interface Aggregates {
   top_countries_mint: CountryStat[];
   top_countries_burn: CountryStat[];
@@ -125,6 +138,9 @@ export interface Aggregates {
   top_sectors_7d: TaxonomyEntry[];
   burn_composition_7d?: BurnComposition;
   burn_composition_all_time?: BurnComposition;
+  mint_composition_7d?: MintComposition;
+  mint_composition_all_time?: MintComposition;
+  top_regions_destructive?: DestructiveRegionStat[];
 }
 
 export interface ExportData {

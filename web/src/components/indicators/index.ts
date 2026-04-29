@@ -45,3 +45,9 @@ export type { EventOfTheDayCardProps, EventOfTheDayEvent } from "./EventOfTheDay
 
 export { BurnCompositionCard } from "./BurnCompositionCard";
 export type { BurnCompositionCardProps } from "./BurnCompositionCard";
+
+export { MintCompositionCard } from "./MintCompositionCard";
+export type { MintCompositionCardProps } from "./MintCompositionCard";
+
+export { TopRegionsDestructiveCard } from "./TopRegionsDestructiveCard";
+export type { TopRegionsDestructiveCardProps } from "./TopRegionsDestructiveCard";

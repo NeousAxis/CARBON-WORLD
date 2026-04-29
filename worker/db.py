@@ -98,6 +98,12 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         # 'editorial_consciousness' (credible educational commentary), or NULL
         # for MINT/NEUTRAL events.
         "ALTER TABLE carbon_events ADD COLUMN burn_subtype TEXT;",
+        # Phase 9 — MINT composition tracking (2026-04-28)
+        # Mirror of burn_subtype for negative decisions:
+        # 'direct_action' (treaty withdrawn, fossil approved, rights repealed),
+        # 'editorial_alarm' (credible educational outlet alerting on regression),
+        # or NULL for BURN/NEUTRAL events.
+        "ALTER TABLE carbon_events ADD COLUMN mint_subtype TEXT;",
     ]
     for sql in migrations:
         try:
@@ -238,6 +244,7 @@ def save_event(event_data: dict) -> Optional[dict]:
       positive_aspects_json (str | None)    — JSON-serialised positive_aspects list
       negative_aspects_json (str | None)    — JSON-serialised negative_aspects list
       burn_subtype (str | None)             — 'direct_action' / 'editorial_consciousness' / None
+      mint_subtype (str | None)             — 'direct_action' / 'editorial_alarm' / None
     """
     try:
         conn = _get_conn()
@@ -248,8 +255,9 @@ def save_event(event_data: dict) -> Optional[dict]:
                  amount_crbn, final_score, confidence, justification,
                  tx_hash, created_at, embedding, reused_from_event_id,
                  country, region, administration,
-                 positive_aspects_json, negative_aspects_json, burn_subtype)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 positive_aspects_json, negative_aspects_json,
+                 burn_subtype, mint_subtype)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 event_data.get("event_title", ""),
@@ -270,6 +278,7 @@ def save_event(event_data: dict) -> Optional[dict]:
                 event_data.get("positive_aspects_json"),   # str or None
                 event_data.get("negative_aspects_json"),   # str or None
                 event_data.get("burn_subtype"),            # str or None
+                event_data.get("mint_subtype"),            # str or None
             ),
         )
         conn.commit()

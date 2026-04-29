@@ -1,20 +1,22 @@
 """
-backfill_burn_subtype.py — One-shot script to tag historical BURN events
-with their subtype.
+backfill_burn_subtype.py — One-shot script to tag historical events with
+their decision subtypes (burn_subtype + mint_subtype).
 
-Run this AFTER the schema migration has added the burn_subtype column.
+Run this AFTER the schema migration has added both subtype columns.
 
-Logic:
-  - Every BURN event is examined.
-  - If it was reversed manually via resolve_review.py (final_score == 0
-    and decision == BURN, which is the signature of a manual override) AND
-    the source is in CREDIBLE_EDUCATIONAL_SOURCES, tag as 'editorial_consciousness'.
-  - Otherwise, tag as 'direct_action' (legacy default for the 5 historical
-    BURN events that were produced by the strict pipeline).
-  - Non-BURN events are left NULL.
+Logic — BURN events:
+  - final_score == 0 + source in CREDIBLE_EDUCATIONAL_SOURCES (signature of a
+    manual reverse) → 'editorial_consciousness'
+  - Otherwise → 'direct_action'
+
+Logic — MINT events (added 2026-04-28, mirror of BURN):
+  - source in CREDIBLE_EDUCATIONAL_SOURCES → 'editorial_alarm'
+  - Otherwise → 'direct_action'
+
+Non-{BURN,MINT} events keep both columns NULL.
 
 Idempotent — re-running the script doesn't re-tag events that already
-have a non-NULL burn_subtype.
+have non-NULL subtypes.
 
 Usage:
     cd ~/CARBON-WORLD
@@ -51,12 +53,9 @@ CREDIBLE_EDUCATIONAL_SOURCES = {
 }
 
 
-def backfill(db_path: str) -> dict:
-    """Tag BURN events with their subtype. Returns counts dict."""
-    conn = sqlite3.connect(db_path)
+def backfill_burn(conn: sqlite3.Connection) -> dict:
+    """Tag BURN events with their burn_subtype. Returns counts dict."""
     cur = conn.cursor()
-
-    # Fetch all BURN events that don't have a subtype yet
     cur.execute("""
         SELECT id, event_title, event_source, final_score
         FROM carbon_events
@@ -67,25 +66,21 @@ def backfill(db_path: str) -> dict:
     direct_count = 0
     editorial_count = 0
     for event_id, title, source, score in rows:
-        # Manual reversal signature: BURN with final_score == 0 AND credible source
         is_manual_reverse = (score == 0.0)
         is_credible = source in CREDIBLE_EDUCATIONAL_SOURCES
-
         if is_manual_reverse and is_credible:
             subtype = "editorial_consciousness"
             editorial_count += 1
         else:
             subtype = "direct_action"
             direct_count += 1
-
         cur.execute(
             "UPDATE carbon_events SET burn_subtype = ? WHERE id = ?",
             (subtype, event_id),
         )
-        print(f"  #{event_id} {source[:25]:25} → {subtype}: {title[:60]}")
+        print(f"  [BURN] #{event_id} {source[:25]:25} → {subtype}: {title[:60]}")
 
     conn.commit()
-    conn.close()
     return {
         "direct_action": direct_count,
         "editorial_consciousness": editorial_count,
@@ -93,17 +88,65 @@ def backfill(db_path: str) -> dict:
     }
 
 
+def backfill_mint(conn: sqlite3.Connection) -> dict:
+    """Tag MINT events with their mint_subtype. Mirror of backfill_burn."""
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT id, event_title, event_source
+        FROM carbon_events
+        WHERE decision = 'MINT' AND mint_subtype IS NULL
+    """)
+    rows = cur.fetchall()
+
+    direct_count = 0
+    editorial_count = 0
+    for event_id, title, source in rows:
+        is_credible = source in CREDIBLE_EDUCATIONAL_SOURCES
+        if is_credible:
+            subtype = "editorial_alarm"
+            editorial_count += 1
+        else:
+            subtype = "direct_action"
+            direct_count += 1
+        cur.execute(
+            "UPDATE carbon_events SET mint_subtype = ? WHERE id = ?",
+            (subtype, event_id),
+        )
+        # Print only every 10th MINT to keep output manageable on large backfills
+        if direct_count + editorial_count <= 10 or (direct_count + editorial_count) % 20 == 0:
+            print(f"  [MINT] #{event_id} {source[:25]:25} → {subtype}: {title[:60]}")
+
+    conn.commit()
+    return {
+        "direct_action": direct_count,
+        "editorial_alarm": editorial_count,
+        "total_mint_tagged": direct_count + editorial_count,
+    }
+
+
 def main():
     print(f"DB: {DB_PATH}\n")
-    print("Tagging BURN events with burn_subtype…\n")
-    counts = backfill(DB_PATH)
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        print("Tagging BURN events with burn_subtype…")
+        burn_counts = backfill_burn(conn)
+        print(f"\nTagging MINT events with mint_subtype…")
+        mint_counts = backfill_mint(conn)
+    finally:
+        conn.close()
+
     print()
     print("=" * 60)
     print("BACKFILL SUMMARY")
     print("=" * 60)
-    print(f"  direct_action          : {counts['direct_action']}")
-    print(f"  editorial_consciousness: {counts['editorial_consciousness']}")
-    print(f"  total BURN tagged      : {counts['total_burn_tagged']}")
+    print(f"BURN:")
+    print(f"  direct_action          : {burn_counts['direct_action']}")
+    print(f"  editorial_consciousness: {burn_counts['editorial_consciousness']}")
+    print(f"  total tagged           : {burn_counts['total_burn_tagged']}")
+    print(f"MINT:")
+    print(f"  direct_action          : {mint_counts['direct_action']}")
+    print(f"  editorial_alarm        : {mint_counts['editorial_alarm']}")
+    print(f"  total tagged           : {mint_counts['total_mint_tagged']}")
 
 
 if __name__ == "__main__":

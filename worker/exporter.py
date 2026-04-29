@@ -95,11 +95,13 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
     has_reused = _has_column(conn, "carbon_events", "reused_from_event_id")
 
     has_burn_subtype = _has_column(conn, "carbon_events", "burn_subtype")
+    has_mint_subtype = _has_column(conn, "carbon_events", "mint_subtype")
 
     return {
         "top_countries_mint": _top_countries(events_7d, "MINT", limit=5) if has_country else [],
         "top_countries_burn": _top_countries(events_7d, "BURN", limit=5) if has_country else [],
         "top_regions_sustainable": _top_regions_sustainable(events_7d) if has_country else [],
+        "top_regions_destructive": _top_regions_destructive(events_7d) if has_country else [],
         "supply_trend_7d": _supply_trend_7d(all_events),
         "event_of_the_day": _event_of_the_day(events_7d),
         "framework_activity_7d": _framework_activity_7d(events_7d) if has_aspects else _empty_framework(),
@@ -110,20 +112,13 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
         "top_sectors_7d": _top_sectors(events_7d),
         "burn_composition_7d": _burn_composition(events_7d) if has_burn_subtype else _empty_burn_composition(),
         "burn_composition_all_time": _burn_composition(all_events) if has_burn_subtype else _empty_burn_composition(),
+        "mint_composition_7d": _mint_composition(events_7d) if has_mint_subtype else _empty_mint_composition(),
+        "mint_composition_all_time": _mint_composition(all_events) if has_mint_subtype else _empty_mint_composition(),
     }
 
 
 def _burn_composition(events: list[dict]) -> dict:
-    """Breakdown of BURN events by subtype (direct_action vs editorial_consciousness).
-
-    Returns:
-        {
-          "total_burn": N,
-          "direct_action": {"count": X, "pct": XX.X},
-          "editorial_consciousness": {"count": Y, "pct": YY.Y},
-          "untyped": {"count": Z, "pct": ZZ.Z}    # legacy events without subtype
-        }
-    """
+    """Breakdown of BURN events by subtype (direct_action vs editorial_consciousness)."""
     burn_events = [e for e in events if e.get("decision") == "BURN"]
     total = len(burn_events)
     if total == 0:
@@ -148,6 +143,62 @@ def _empty_burn_composition() -> dict:
         "editorial_consciousness": {"count": 0, "pct": 0.0},
         "untyped": {"count": 0, "pct": 0.0},
     }
+
+
+def _mint_composition(events: list[dict]) -> dict:
+    """Breakdown of MINT events by subtype (direct_action vs editorial_alarm).
+    Mirror of _burn_composition for negative decisions.
+    """
+    mint_events = [e for e in events if e.get("decision") == "MINT"]
+    total = len(mint_events)
+    if total == 0:
+        return _empty_mint_composition()
+
+    direct = sum(1 for e in mint_events if (e.get("mint_subtype") or "") == "direct_action")
+    editorial = sum(1 for e in mint_events if (e.get("mint_subtype") or "") == "editorial_alarm")
+    untyped = total - direct - editorial
+
+    return {
+        "total_mint": total,
+        "direct_action": {"count": direct, "pct": round(100.0 * direct / total, 1)},
+        "editorial_alarm": {"count": editorial, "pct": round(100.0 * editorial / total, 1)},
+        "untyped": {"count": untyped, "pct": round(100.0 * untyped / total, 1)},
+    }
+
+
+def _empty_mint_composition() -> dict:
+    return {
+        "total_mint": 0,
+        "direct_action": {"count": 0, "pct": 0.0},
+        "editorial_alarm": {"count": 0, "pct": 0.0},
+        "untyped": {"count": 0, "pct": 0.0},
+    }
+
+
+def _top_regions_destructive(events: list[dict], limit: int = 5) -> list[dict]:
+    """Top regions by MINT ratio, minimum 3 events. Mirror of _top_regions_sustainable.
+    Returns regions where harmful events dominate — the "darkest" regions.
+    """
+    region_stats: dict[str, dict] = defaultdict(lambda: {"mint": 0, "total": 0})
+    for e in events:
+        region = e.get("region")
+        if not region:
+            continue
+        region_stats[region]["total"] += 1
+        if e.get("decision") == "MINT":
+            region_stats[region]["mint"] += 1
+
+    results = []
+    for region, stats in region_stats.items():
+        if stats["total"] < 3:
+            continue
+        mint_ratio = round(stats["mint"] / stats["total"], 3)
+        results.append({
+            "region": region,
+            "mint_ratio": mint_ratio,
+            "events": stats["total"],
+        })
+    return sorted(results, key=lambda x: x["mint_ratio"], reverse=True)[:limit]
 
 
 def _top_countries(events: list[dict], decision: str, limit: int = 5) -> list[dict]:

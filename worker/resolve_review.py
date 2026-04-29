@@ -88,7 +88,7 @@ def main() -> int:
 
     # Create the event in carbon_events + execute Solana
     import json
-    from agents.writer import _classify_burn_subtype
+    from agents.writer import _classify_burn_subtype, _classify_mint_subtype
     r_verdict = json.loads(review.get("reconciler_verdict") or "{}")
     event_data = {
         "event_title": review["event_title"][:500],
@@ -101,9 +101,13 @@ def main() -> int:
         "justification": f"[Human review #{args.review_id}: {args.verdict}] {args.reason}"[:500],
         "tx_hash": None,
         "created_at": datetime.now(tz=timezone.utc).isoformat(),
-        # Auto-tag burn_subtype based on the resolved decision and source
-        # (manual reverses from credible-educational sources → editorial_consciousness)
+        # Auto-tag burn_subtype / mint_subtype based on the resolved decision
+        # (manual reverses from credible-educational sources → editorial_*)
         "burn_subtype": _classify_burn_subtype(
+            final_decision,
+            review["event_source"],
+        ),
+        "mint_subtype": _classify_mint_subtype(
             final_decision,
             review["event_source"],
         ),

@@ -50,16 +50,68 @@ export default function AboutPage() {
       <section className="mb-10">
         <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
           CARBON WORLD is an experimental token on Solana (CBWD) whose supply is
-          controlled by a local AI system. The AI monitors real-world government
-          and institutional decisions that affect living beings and the
-          environment, then adjusts the token supply accordingly.
+          controlled by an AI system. The AI monitors real-world decisions
+          &mdash; by governments, international institutions, courts, NGOs,
+          scientific bodies, community coalitions and citizen movements
+          &mdash; that affect living beings and the environment, then adjusts
+          the token supply accordingly.
+        </p>
+        <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
+          Beyond a token, CARBON WORLD is a measurement tool. It surfaces
+          indicators of citizen and community efforts toward sustainability,
+          while also mapping the structural forces that pull humanity backwards
+          &mdash; regulatory rollbacks, fossil expansions, rights erosions,
+          planetary boundary breaches.
         </p>
         <p className="leading-relaxed" style={{ color: "#B8B9B6" }}>
           Positive decisions for the planet trigger a <strong style={{ color: "#B6FFCE" }}>BURN</strong> (reducing
           supply), while harmful decisions trigger a <strong style={{ color: "#FF5C33" }}>MINT</strong> (increasing
-          supply). The token becomes a living ledger of humanity&apos;s
-          collective impact on the world.
+          supply). Every event is open and inspectable, and the supply
+          changes are recorded on Solana mainnet. The token becomes a living,
+          on-chain ledger of humanity&apos;s collective impact on the world.
         </p>
+      </section>
+
+      {/* Mission */}
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "#FFFFFF" }}>
+          Mission &mdash; a tool for sustainability actors
+        </h2>
+        <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
+          The data behind CARBON WORLD is meant to serve sustainability actors
+          &mdash; researchers, NGOs, journalists, policymakers, and citizen
+          organisations &mdash; who need an independent, real-time signal of
+          where the world is moving.
+        </p>
+        <div
+          className="p-6"
+          style={{
+            backgroundColor: "#1A1A1A",
+            border: "1px solid #2E2E2E",
+            boxShadow: "0 1px 1.75px rgba(0,0,0,0.05)",
+          }}
+        >
+          <div className="space-y-3 text-sm" style={{ color: "#B8B9B6" }}>
+            <div>
+              <strong style={{ color: "#B6FFCE" }}>Structural progress.</strong>{" "}
+              Treaties ratified, biomes protected, scientific breakthroughs
+              validated, indigenous rights restored, fossil infrastructure
+              cancelled.
+            </div>
+            <div>
+              <strong style={{ color: "#B6FFCE" }}>Citizen and community efforts.</strong>{" "}
+              Cooperatives, legal challenges, restoration operations, organised
+              civic action, credible educational journalism that lifts
+              collective consciousness.
+            </div>
+            <div>
+              <strong style={{ color: "#FF5C33" }}>Regressions and destructive forces.</strong>{" "}
+              Laws repealed, fossil expansions approved, rights weakened,
+              indigenous territories violated, polluting practices authorised
+              at scale.
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* How scoring works */}
@@ -68,11 +120,13 @@ export default function AboutPage() {
           How the AI scoring works
         </h2>
         <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
-          Every event goes through a multi-step analysis pipeline. First, an AI
-          classifier filters for concrete governmental or institutional actions.
-          Then, a deeper AI model performs a dual ethical analysis &mdash;
-          identifying both positive and negative aspects of each decision across
-          7 international ethical frameworks.
+          Every event passes through a multi-step pipeline. A first AI agent
+          classifies whether the event is a concrete, organised action &mdash;
+          by any state, institution, court, NGO, scientific body, community
+          coalition, or documented civic initiative. A second AI agent performs
+          a dual ethical analysis on each validated event, identifying both
+          positive and negative aspects across 7 international ethical
+          frameworks.
         </p>
         <p className="leading-relaxed mb-4" style={{ color: "#B8B9B6" }}>
           The analysis uses a 4-dimensional temporal framework:

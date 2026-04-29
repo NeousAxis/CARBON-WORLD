@@ -11,6 +11,8 @@ import {
   TopCountriesMintCard,
   TopCountriesBurnCard,
   BurnCompositionCard,
+  MintCompositionCard,
+  TopRegionsDestructiveCard,
   TopRegionsSustainableCard,
   TopInstitutionsCard,
   TopSectorsCard,
@@ -60,6 +62,19 @@ const EMPTY_AGGREGATES: Aggregates = {
     editorial_consciousness: { count: 0, pct: 0 },
     untyped: { count: 0, pct: 0 },
   },
+  mint_composition_7d: {
+    total_mint: 0,
+    direct_action: { count: 0, pct: 0 },
+    editorial_alarm: { count: 0, pct: 0 },
+    untyped: { count: 0, pct: 0 },
+  },
+  mint_composition_all_time: {
+    total_mint: 0,
+    direct_action: { count: 0, pct: 0 },
+    editorial_alarm: { count: 0, pct: 0 },
+    untyped: { count: 0, pct: 0 },
+  },
+  top_regions_destructive: [],
 };
 
 // CountUp must be client-only (uses useEffect internally)
@@ -326,17 +341,23 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
           <SupplyTrendCard trend={aggregates.supply_trend_7d} />
         </div>
 
-        {/* Geographic indicators row 2: Top regions + institutions + sectors */}
+        {/* Geographic indicators row 2: Top regions sustainable + destructive (mirror) + institutions */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <TopRegionsSustainableCard regions={aggregates.top_regions_sustainable} />
+          <TopRegionsDestructiveCard regions={aggregates.top_regions_destructive ?? []} />
           <TopInstitutionsCard institutions={aggregates.top_institutions_7d} />
+        </div>
+
+        {/* Sectors — full row to keep it readable */}
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
           <TopSectorsCard sectors={aggregates.top_sectors_7d} />
         </div>
 
         {/* Framework Activity — full-width panoptic ethical card */}
         <FrameworkActivityCard data={aggregates.framework_activity_7d} />
 
-        {/* BURN composition — direct actions vs editorial consciousness */}
+        {/* Decision composition — BURN (direct actions vs editorial consciousness)
+            and MINT (direct actions vs editorial alarm), 7D + ALL TIME */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {aggregates.burn_composition_7d && (
             <BurnCompositionCard
@@ -347,6 +368,18 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
           {aggregates.burn_composition_all_time && (
             <BurnCompositionCard
               composition={aggregates.burn_composition_all_time}
+              windowLabel="ALL TIME"
+            />
+          )}
+          {aggregates.mint_composition_7d && (
+            <MintCompositionCard
+              composition={aggregates.mint_composition_7d}
+              windowLabel="7D"
+            />
+          )}
+          {aggregates.mint_composition_all_time && (
+            <MintCompositionCard
+              composition={aggregates.mint_composition_all_time}
               windowLabel="ALL TIME"
             />
           )}
