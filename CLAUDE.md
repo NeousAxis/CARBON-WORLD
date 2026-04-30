@@ -2,7 +2,7 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Neous Axis
-> **État au 2026-04-30 (matin)** : Mainnet actif, pipeline sur VPS Hetzner cron `*/30`, **124 events en DB**, **16 BURN total** (13 direct_action + 3 editorial_consciousness) + **101 MINT** (85 direct + 16 editorial_alarm). Dashboard enrichi : **MINT COMPOSITION 7D/ALL** (mirror de BURN), **TOP REGIONS DESTRUCTIVE** (mirror de Sustainable), **About refondue** avec section Mission "tool for sustainability actors". Bug Solana : 18 events avec décision finale mais tx_hash NULL — script `worker/reconcile_tx.py` livré (dry-run par défaut), à exécuter avec `--execute` pour rattraper. Voir MEMORY.md §2026-04-30.
+> **État au 2026-04-30 (midi)** : Mainnet actif, pipeline sur VPS Hetzner cron `*/30`, **124 events en DB**, **16 BURN** (13 direct + 3 editorial) + **101 MINT** (85 direct + 16 editorial alarm). Dashboard enrichi : MINT COMPOSITION + TOP REGIONS DESTRUCTIVE + About refondue. **Bug Solana TX manquantes résolu** : 18 TX rattrapées via `reconcile_tx.py`, garde-fous gratuits installés (sleep 5s pre-TX dans `resolve_review.py` + cron nightly 03:15 CEST `reconcile_tx_nightly.sh`). Pipeline 100 % autonome, zéro coût récurrent, projet bénévole. Voir MEMORY.md §2026-04-30.
 > **État au 2026-04-27 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), cron passé à `*/30` (économie quota -50%), **107 events en DB**, **13 BURN total** (10 direct_action + 3 editorial_consciousness — Mongabay reverses), **dashboard BURN COMPOSITION live**.
 > **État au 2026-04-26 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **94 events en DB**, **API publique Tier 1+2 live**. Crise quota Cerebras à 90% (incident gel pipeline 9h+ ce matin résolu via cap 60s commit `b73a71d`).
 > **État au 2026-04-21** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **Phases 1+2+3 du reframe sampling livrées et validées en prod**, **API publique Tier 1 (6 routes GET) live** sur `https://carbon-token.xyz/api/v1/*`.
@@ -195,19 +195,13 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ## 🚨 À FAIRE — priorités ouvertes (2026-04-30)
 
-### -2. Rejouer les Solana TX manquantes — `worker/reconcile_tx.py`
+### -2. (RÉSOLU) ~~Rejouer les Solana TX manquantes~~
 
-18 events ont `decision IN ('BURN','MINT')` avec `tx_hash IS NULL` (ce sont surtout des reviews approuvées via `/review` dont la TX Solana n'a pas atteint la confirmation). Le donut SUPPLY BREAKDOWN affiche (pending) tant que les TX manquent — c'est le signal voulu par Cyril que des reviews attendent.
+18 TX manquantes rattrapées via `reconcile_tx.py --execute` (sleep 5s entre TX). Garde-fous installés :
+- **Préventif** : `worker/resolve_review.py` fait maintenant `time.sleep(5)` avant chaque `execute_decision()` (évite le rate-limit RPC public quand plusieurs reviews approuvées en rafale).
+- **Curatif** : crontab VPS contient `15 3 * * * /home/carbon/CARBON-WORLD/launcher/reconcile_tx_nightly.sh` qui rattrape automatiquement chaque nuit. Logs rotatifs dans `logs/reconcile_*.log`.
 
-Commande pour rattraper :
-```
-ssh carbon@157.90.250.40
-cd ~/CARBON-WORLD && source venv/bin/activate
-python worker/reconcile_tx.py            # dry-run, liste les 18 events
-python worker/reconcile_tx.py --execute  # fire les TX (~1.5 min, rate-limit 1s)
-```
-
-Le RPC Solana mainnet a été testé (TX en 0.2 s, signature OK). Coût SOL négligeable.
+Plus rien à faire côté Cyril, autonome.
 
 ### -1. Évaluer le dry-run calibrator + flipper en `active` si OK
 

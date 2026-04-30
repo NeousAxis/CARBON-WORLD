@@ -4,6 +4,30 @@
 
 ---
 
+## 🛡 2026-04-30 (suite) — Garde-fous Solana TX (préventif + curatif, gratuit)
+
+Cyril après le replay réussi des 18 TX (sleep 5s nécessaire, sleep 1s avait raté 13/18 par rate-limit RPC public) : *"2 ET 3 ET COMME ÇA ON RESTE EN GRATUIT CAR C'EST UN PROJET D'INTÉRÊT COMMUN ET DONC JE TRAVAILLE SEUL ET BÉNÉVOLEMENT"*. → On évite Helius/QuickNode (RPC payants), on traite la cause racine + on installe un filet.
+
+### Solution 2 — Préventif : rate-limit dans `resolve_review.py` (commit `a562349`)
+
+`time.sleep(5)` avant chaque appel `execute_decision()`. Sur la route web `/api/review/resolve/[id]` qui a un timeout 120s, on reste large. Ajout d'un `logger.warning` quand la TX retourne quand même None — au lieu de l'échec silencieux d'avant.
+
+### Solution 3 — Curatif : cron nightly `reconcile_tx_nightly.sh`
+
+- Nouveau wrapper `launcher/reconcile_tx_nightly.sh` : source venv, run `python worker/reconcile_tx.py --execute --sleep 5`, log dans `logs/reconcile_<ts>.log`, rotation auto (30 derniers gardés).
+- Crontab VPS étendu : `15 3 * * * /home/carbon/CARBON-WORLD/launcher/reconcile_tx_nightly.sh` (03:15 CEST chaque nuit, entre les pipelines `*/30` à 03:00 et 03:30).
+- Idempotent : si rien à réconcilier → exit clean avec "Found pending TX : 0" (confirmé en test live).
+
+### Sécurité empirique
+
+Test 2026-04-30 :
+- `sleep 1s` entre TX → 5/18 succès (rate-limit RPC public)
+- `sleep 5s` → 13/13 succès
+
+Donc 5s = sweet spot validé en conditions réelles. Mais le RPC public reste un point fragile : à terme, **upgrader vers un RPC payant gratuit** (Helius/QuickNode ont des free tiers généreux) reste une option, sans toucher au code.
+
+---
+
 ## 🚀 2026-04-30 — About refondu + MINT composition + Top Regions Destructive + reconcile TX
 
 ### Triple livraison Phase A/B/C (commit `b806887`)
