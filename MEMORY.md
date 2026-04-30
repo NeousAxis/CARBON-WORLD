@@ -4,6 +4,38 @@
 
 ---
 
+## 🚀 2026-04-30 — About refondu + MINT composition + Top Regions Destructive + reconcile TX
+
+### Triple livraison Phase A/B/C (commit `b806887`)
+
+**A. About page refondue** — `web/src/app/about/page.tsx`. Cyril : *"le projet a aussi maintenant une dimension de participation à aider les acteurs de la durabilité à identifier des indicateurs montrant les efforts des citoyens et des communautés mais aussi les forces en actions qui plombent l'humanité"*. L'introduction passe de "government and institutional decisions" à *"governments, international institutions, courts, NGOs, scientific bodies, community coalitions and citizen movements"*. Nouvelle section **Mission** structurée en 3 catégories : Structural progress / Citizen and community efforts / Regressions and destructive forces.
+
+**B. MINT COMPOSITION** — miroir parfait de BURN COMPOSITION livrée le 27/04 :
+- DB : nouvelle colonne `carbon_events.mint_subtype` (`direct_action` / `editorial_alarm` / NULL).
+- Auto-tag : nouvelle fonction `_classify_mint_subtype` dans `worker/agents/writer.py`, miroir de `_classify_burn_subtype`. Source ∈ EDITORIAL_CONSCIOUSNESS_SOURCES (Mongabay, Yale E360, Inside Climate News, Reasons to be Cheerful, Reporterre, Carbon Brief, China Dialogue, Grist, etc.) → `editorial_alarm`. Sinon → `direct_action`.
+- Backfill : `worker/backfill_burn_subtype.py` étendu pour tagger MINT aussi. Run sur VPS = **101 MINT events tagués** (85 direct + 16 editorial_alarm).
+- Exporter : nouveaux aggregates `mint_composition_7d` et `mint_composition_all_time`.
+- Frontend : `MintCompositionCard.tsx` avec stacked bar rouge (#FF5C33 direct) + orange (#FF8400 editorial alarm). Layout : 4 cards en 2×2 (BURN 7D, BURN ALL, MINT 7D, MINT ALL).
+
+**C. Top Regions Destructive** — Cyril : *"Tu indiques les TOP mais il faut aussi indiquer les pires"*. Mirror de `TopRegionsSustainableCard` :
+- `worker/exporter.py` : nouveau `_top_regions_destructive(events)` — top 5 régions par `mint_ratio` (min 3 events).
+- Frontend : `TopRegionsDestructiveCard.tsx` identique au pendant sustainable mais avec barre rouge + label "MINT RATIO WEIGHTED".
+- Layout row 2 : Sustainable | Destructive | Top Institutions. Top Sectors descend sur sa propre row.
+
+### Bug Solana TX manquantes (commit `834d550`)
+
+Cyril : *"pourquoi malgré les REVIEWS je vois toujours Burned (pending) ?"* puis (après mon hack qui fusionnait pending/on-chain) : *"NON je veux voir les pending car cela signifie que j'ai des reviews"*.
+
+**Diagnostic** : 18 events ont `decision IN ('BURN','MINT')` mais `tx_hash IS NULL`. La très grande majorité (16/18) sont des reviews approuvées via `/review` (justification = `human-approved via review_queue`). Le code `resolve_review.py` appelle bien `execute_decision()`, et un test live de la TX Solana mainnet a réussi en **0.2 s** — donc le RPC fonctionne. Cause probable : le timeout 120 s de `execFile` dans la route `/api/review/resolve/[id]/route.ts` SIGTERM le Python avant que la TX ne se confirme, OU `execute_decision` raise et avale silencieusement l'exception.
+
+**Solution livrée — réconciliation** : nouveau script `worker/reconcile_tx.py`. Dry-run par défaut (liste les events sans tx_hash). Avec `--execute`, replay les TX une par une avec rate-limit 1 s. Idempotent (UPDATE sur les seuls events NULL).
+
+**État** : script poussé, **PAS encore exécuté** sur VPS. Cyril doit valider avant qu'on envoie 18 TX réelles sur mainnet (~1.5 min). Tant que `reconcile_tx.py --execute` n'a pas tourné, le donut affiche bien les `(pending)` comme demandé par Cyril (signal qu'il a des reviews).
+
+**Reverse de mon premier patch** (commit `ea2d9c5`) : j'avais fusionné pending+on-chain en une seule catégorie "Burned" + "Minted" pour cacher le pending. Cyril a explicitement refusé : il VEUT voir les pending pour avoir le signal "j'ai des reviews à confirmer". Le revert restaure la donut à 4 segments.
+
+---
+
 ## 🌍 2026-04-27 (soir) — Geo extractor : LLM event_country + cron espacé
 
 ### Bug géographique : faux positif Iran sur event #102

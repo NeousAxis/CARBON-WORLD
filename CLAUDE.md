@@ -2,7 +2,8 @@
 
 > **Projet** : Token Solana (CBWD) piloté par une IA cloud (Groq/Qwen3-32b) qui mesure les décisions humaines affectant le vivant et ajuste le supply en conséquence (BURN = positif, MINT = négatif).
 > **Fondateur** : Neous Axis
-> **État au 2026-04-27 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), cron passé à `*/30` (économie quota -50%), **107 events en DB**, **13 BURN total** (10 direct_action + 3 editorial_consciousness — Mongabay reverses), **dashboard BURN COMPOSITION live**. Calibrator Python en `dry_run` mode sur VPS (pas encore exercé : Cerebras quota daily épuisé à 19:10 CEST, sera observable demain matin). LLM `event_country` ajouté au JSON Analyst pour résoudre les faux positifs géo contextuels. Voir MEMORY.md §2026-04-27.
+> **État au 2026-04-30 (matin)** : Mainnet actif, pipeline sur VPS Hetzner cron `*/30`, **124 events en DB**, **16 BURN total** (13 direct_action + 3 editorial_consciousness) + **101 MINT** (85 direct + 16 editorial_alarm). Dashboard enrichi : **MINT COMPOSITION 7D/ALL** (mirror de BURN), **TOP REGIONS DESTRUCTIVE** (mirror de Sustainable), **About refondue** avec section Mission "tool for sustainability actors". Bug Solana : 18 events avec décision finale mais tx_hash NULL — script `worker/reconcile_tx.py` livré (dry-run par défaut), à exécuter avec `--execute` pour rattraper. Voir MEMORY.md §2026-04-30.
+> **État au 2026-04-27 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), cron passé à `*/30` (économie quota -50%), **107 events en DB**, **13 BURN total** (10 direct_action + 3 editorial_consciousness — Mongabay reverses), **dashboard BURN COMPOSITION live**.
 > **État au 2026-04-26 (soir)** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **94 events en DB**, **API publique Tier 1+2 live**. Crise quota Cerebras à 90% (incident gel pipeline 9h+ ce matin résolu via cap 60s commit `b73a71d`).
 > **État au 2026-04-21** : Mainnet actif, pipeline sur VPS Hetzner (€4.31/mois), passkey auth sur /review, repo public, **Phases 1+2+3 du reframe sampling livrées et validées en prod**, **API publique Tier 1 (6 routes GET) live** sur `https://carbon-token.xyz/api/v1/*`.
 > **Stack durci 2026-04-19** : lockfile flock, batch classifier B=5, fail-fast Cerebras sur tous les agents Groq, +20 sources RSS positives, prompt classifier étendu aux structural markers, TZ VPS Europe/Zurich.
@@ -192,7 +193,21 @@ Chaque provider a sa propre variable `.env` (`GROQ_API_KEY`, `CEREBRAS_API_KEY`,
 
 ---
 
-## 🚨 À FAIRE — priorités ouvertes (2026-04-27)
+## 🚨 À FAIRE — priorités ouvertes (2026-04-30)
+
+### -2. Rejouer les Solana TX manquantes — `worker/reconcile_tx.py`
+
+18 events ont `decision IN ('BURN','MINT')` avec `tx_hash IS NULL` (ce sont surtout des reviews approuvées via `/review` dont la TX Solana n'a pas atteint la confirmation). Le donut SUPPLY BREAKDOWN affiche (pending) tant que les TX manquent — c'est le signal voulu par Cyril que des reviews attendent.
+
+Commande pour rattraper :
+```
+ssh carbon@157.90.250.40
+cd ~/CARBON-WORLD && source venv/bin/activate
+python worker/reconcile_tx.py            # dry-run, liste les 18 events
+python worker/reconcile_tx.py --execute  # fire les TX (~1.5 min, rate-limit 1s)
+```
+
+Le RPC Solana mainnet a été testé (TX en 0.2 s, signature OK). Coût SOL négligeable.
 
 ### -1. Évaluer le dry-run calibrator + flipper en `active` si OK
 
@@ -519,32 +534,51 @@ Si un contact demande "comment acheter CBWD ?", la réponse est :
 - **Docs projet** (CLAUDE/MEMORY/RULES.md) : français (pour Cyril)
 - **Frontend** (phase 3) : bilingue EN/FR
 
-## ✅ Statut actuel — Fin de session 2026-04-27 (soir)
+## ✅ Statut actuel — Fin de session 2026-04-30 (matin)
 
-### Reprise 2026-04-28 — où on en est
+### Livré aujourd'hui en prod
 
-**Livré aujourd'hui en prod** :
-- ✅ `51c91a2` Magnitude calibrator Python (5 couches asymétrique) + scorer integration + env `MAGNITUDE_CALIBRATOR_MODE` (default `disabled`, set à `dry_run` sur VPS)
-- ✅ `8222bb6` Phase 1 BURN composition : DB column `burn_subtype` + backfill 13 BURN historiques + dashboard card
-- ✅ `55b1bdc` Phase 2 BURN composition : auto-tag dans writer + resolve_review (plus aucun LEGACY UNTYPED sur les nouveaux events)
-- ✅ `08311f4` LLM `event_country` au JSON Analyst : remplace les regex contextuelles (rejetées par Cyril). Le LLM décide qui est l'acteur, fallback regex pour legacy events.
-- ✅ `4c13759` Cron `*/15 → */30` : -50% calls Cerebras quotidiens
+- ✅ `b806887` Triple livraison : (A) About refondue avec section Mission, (B) MINT COMPOSITION cards 7D/ALL TIME (miroir BURN), (C) TOP REGIONS DESTRUCTIVE (miroir Sustainable)
+- ✅ Backfill MINT exécuté : 101 MINT events tagués (85 `direct_action` + 16 `editorial_alarm`)
+- ✅ `ea2d9c5` Revert d'un patch hatif (j'avais fusionné pending+on-chain dans le donut) : Cyril veut voir les pending — c'est son signal qu'il a des reviews à valider
+- ✅ `834d550` Script `worker/reconcile_tx.py` pour rattraper les TX Solana manquantes (18 events avec décision mais tx_hash NULL)
 
-**Composition BURN à fin de session** :
-- 7D : 5 direct + 3 editorial (62.5% / 37.5%) = 8 BURN total
-- ALL TIME : 10 direct + 3 editorial (76.9% / 23.1%) = 13 BURN total
+### Action attendue 2026-05-01 (ou quand Cyril revient)
 
-**Calibrator dry-run** : wiring OK, env var lu, mais **pas encore exercé** car Cerebras quota daily exhausted dès 19:10 CEST → 0 events analysés par les 4 derniers cron runs (20:00→21:30). Dès reset Cerebras (~2h CEST nuit du 27→28), les premiers events de demain rempliront `~/CARBON-WORLD/logs/calibrator_dryrun.jsonl`.
+1. **Décider du replay des TX Solana manquantes** :
+   ```
+   ssh carbon@157.90.250.40
+   cd ~/CARBON-WORLD && source venv/bin/activate
+   python worker/reconcile_tx.py            # dry-run pour voir la liste
+   python worker/reconcile_tx.py --execute  # fire les 18 TX (~1.5 min)
+   ```
+   Coût Solana mainnet : ~5 SOL × 0.000005 = négligeable. Test manuel OK (TX a passé en 0.2 s).
+   Après l'execute, le donut SUPPLY BREAKDOWN n'aura plus de "(pending)" — sauf nouvelles reviews approuvées entre-temps.
 
-**Bug résiduel non corrigé** : event #102 historique tagué `Iran` (faux positif geo_extractor). Reste 6 jours dans le window 7j puis sort. Les nouveaux events utiliseront `event_country` LLM. Pas d'action urgente.
+2. **Bug racine /api/review/resolve timeout** : la route web a un `timeout: 120_000 ms` mais la SIGTERM tue le Python avant la confirmation Solana dans certains cas. À investiguer si le replay régulier devient pénible. Solution possible : passer en mode async (queue + worker côté Python) au lieu d'`execFile` synchrone.
 
-**Première action 2026-04-28** :
-1. Lire `logs/calibrator_dryrun.jsonl` — combien de bumps détectés en 24h ?
-2. Vérifier que les nouveaux events de la nuit ont bien un `country` correct (via LLM event_country)
-3. Si calibrator dry-run précis (5/5 ou plus de bumps justes) → flipper en `MAGNITUDE_CALIBRATOR_MODE=active`
-4. Continuer ce qui reste
+3. **Calibrator dry-run** : toujours actif `MAGNITUDE_CALIBRATOR_MODE=dry_run` sur VPS. À évaluer en lisant `~/CARBON-WORLD/logs/calibrator_dryrun.jsonl`. Si OK → flipper en `active` :
+   ```
+   sed -i 's/MAGNITUDE_CALIBRATOR_MODE=dry_run/MAGNITUDE_CALIBRATOR_MODE=active/' ~/CARBON-WORLD/.env
+   ```
 
-**Quota Cerebras** : ~100% consommé fin de journée 2026-04-27. Avec cron à 30 min + comportement de la nuit, devrait tenir confortablement demain.
+### Composition live à fin de session
+
+| Indicateur | 7D | ALL TIME |
+|---|---|---|
+| BURN composition | 7 direct + 3 editorial (70/30) | 13 direct + 3 editorial (81/19) |
+| MINT composition | 43 direct + 8 editorial alarm (84/16) | 85 direct + 16 editorial alarm (84/16) |
+| Top regions destructive | Europe 100%, North America 100%, Africa 100%, Asia 90%, LATAM 85% |
+
+---
+
+## 🗂 Historique : Statut fin de session 2026-04-27 (soir)
+
+**Livré ce soir-là** :
+- `51c91a2` Magnitude calibrator Python + dry_run mode actif sur VPS
+- `8222bb6`/`55b1bdc` BURN composition : DB column + auto-tag + dashboard card
+- `08311f4` LLM `event_country` au JSON Analyst (faux positifs géo contextuels)
+- `4c13759` Cron `*/15 → */30` : économie quota Cerebras -50%
 
 ---
 
