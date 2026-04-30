@@ -20,6 +20,7 @@ Examples:
 import argparse
 import logging
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -122,10 +123,21 @@ def main() -> int:
     event_id = saved.get("id")
     logger.info("Saved event #%s: %s %d CBWD", event_id, final_decision, final_amount)
 
+    # Rate-limit before broadcasting to the public Solana mainnet RPC.
+    # When the user approves several reviews in quick succession, the public
+    # endpoint throttles and execute_decision() returns None silently. A 5 s
+    # gap before each TX prevents that — verified empirically: at sleep=1 s
+    # we got 5/18 success, at sleep=5 s we got 13/13 (2026-04-30).
+    time.sleep(5)
     tx_hash = execute_decision(final_decision, final_amount)
     if tx_hash and event_id:
         update_tx_hash(event_id, tx_hash)
         logger.info("Solana tx: %s", tx_hash)
+    elif event_id:
+        logger.warning(
+            "Solana TX returned no signature for event #%s. The reconcile_tx "
+            "nightly cron will retry.", event_id,
+        )
 
     # Refresh export.json
     export_events()
