@@ -56,35 +56,48 @@ function DonutArc({
 }
 
 export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
-  // Aggregate all BURN / MINT regardless of Solana tx_hash status. The
-  // tx_hash is an implementation detail (whether the on-chain transaction
-  // was executed by the writer at decision time). The decision itself
-  // — confirmed by the AI pipeline or by a human review override —
-  // is what defines the supply impact. Splitting "pending" vs "on-chain"
-  // surfaces a technical artefact that is not meaningful to dashboard
-  // viewers.
-  const burnedTotal = events
-    .filter((e) => e.decision === "BURN")
+  const burnedOnChain = events
+    .filter((e) => e.decision === "BURN" && e.tx_hash)
     .reduce((s, e) => s + e.amount_crbn, 0);
-  const mintedTotal = events
-    .filter((e) => e.decision === "MINT")
+  const burnedPending = events
+    .filter((e) => e.decision === "BURN" && !e.tx_hash)
+    .reduce((s, e) => s + e.amount_crbn, 0);
+  const mintedOnChain = events
+    .filter((e) => e.decision === "MINT" && e.tx_hash)
+    .reduce((s, e) => s + e.amount_crbn, 0);
+  const mintedPending = events
+    .filter((e) => e.decision === "MINT" && !e.tx_hash)
     .reduce((s, e) => s + e.amount_crbn, 0);
 
   const segments: Segment[] = [];
 
-  if (burnedTotal > 0)
+  if (burnedOnChain > 0)
     segments.push({
-      label: "Burned",
-      value: burnedTotal,
+      label: "Burned (on-chain)",
+      value: burnedOnChain,
       color: "#34D399",
+      textColor: "#34D399",
+    });
+  if (burnedPending > 0)
+    segments.push({
+      label: "Burned (pending)",
+      value: burnedPending,
+      color: "#6EE7B7",
       textColor: "#B6FFCE",
     });
-  if (mintedTotal > 0)
+  if (mintedOnChain > 0)
     segments.push({
-      label: "Minted",
-      value: mintedTotal,
+      label: "Minted (on-chain)",
+      value: mintedOnChain,
       color: "#FF5C33",
       textColor: "#FF5C33",
+    });
+  if (mintedPending > 0)
+    segments.push({
+      label: "Minted (pending)",
+      value: mintedPending,
+      color: "#FF8400",
+      textColor: "#FF8400",
     });
 
   const total = segments.reduce((s, seg) => s + seg.value, 0);
