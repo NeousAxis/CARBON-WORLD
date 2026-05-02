@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-01T22:12:35.744311+00:00",
-  "total_events": 126,
+  "generated_at": "2026-05-02T00:12:03.245715+00:00",
+  "total_events": 127,
   "total_burned": 15496000,
-  "total_minted": 91314750,
+  "total_minted": 91439750,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 127,
+      "event_title": "Ni sociologues ni politistes recrutés : le ministère de l’agriculture soupçonné de vouloir réduire la part des sciences sociales dans la formation des agronomes",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/01/ni-sociologues-ni-politistes-recrutes-le-ministere-de-l-agriculture-soupconne-de-vouloir-reduire-la-part-des-sciences-sociales-dans-la-formation-des-agronomes_6684735_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 125000,
+      "final_score": -1.42,
+      "confidence": 7,
+      "justification": "Policy narrows academic focus in agricultural training, risking long-term educational quality. | The decision to stop recruiting sociology and political science researchers in agricultural engineering schools risks undermining interdisciplinary education and critical thinking, which are essential for holistic agricultural policy. While cost efficiency may be a positive, the negative impacts on academic diversity and long-term educational quality are more significant.",
+      "tx_hash": "6SSKUyJ1YzM9MyDEnLB4NQx8eY1M4XrrCg23JcBbo43mdHmUYw8JHCfvi3QozThCKM4XyJP8UDaxkEhtzcTauL6",
+      "created_at": "2026-05-02T00:12:02.995852+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Potential cost reduction and efficiency gains through external partnerships\", \"affected_sdgs\": [9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reduction in academic diversity and interdisciplinary education for agronomes\", \"affected_sdgs\": [4, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Risk of narrowing critical thinking and social understanding in agricultural policy training\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 126,
       "event_title": "Western Lawmakers Move To Weaken Clean Air Act and Shield Fossil Fuel Companies From Climate Lawsuits",
@@ -2782,13 +2804,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 4450000
+        "count": 7,
+        "total_amount": 3800000
       },
       {
         "country": "Brazil",
         "count": 4,
         "total_amount": 1560000
+      },
+      {
+        "country": "France",
+        "count": 2,
+        "total_amount": 245000
       },
       {
         "country": "Mexico",
@@ -2799,11 +2826,6 @@
         "country": "Argentina",
         "count": 2,
         "total_amount": 900000
-      },
-      {
-        "country": "India",
-        "count": 2,
-        "total_amount": 450000
       }
     ],
     "top_countries_burn": [
@@ -2831,8 +2853,8 @@
     "top_regions_sustainable": [
       {
         "region": "MENA",
-        "burn_ratio": 0.25,
-        "events": 4
+        "burn_ratio": 0.333,
+        "events": 3
       },
       {
         "region": "Latin America",
@@ -2845,16 +2867,26 @@
         "events": 6
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 3
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 11
+        "events": 9
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Europe",
+        "mint_ratio": 1.0,
+        "events": 3
+      },
+      {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 9
       },
       {
         "region": "Asia",
@@ -2868,16 +2900,11 @@
       },
       {
         "region": "MENA",
-        "mint_ratio": 0.75,
-        "events": 4
+        "mint_ratio": 0.667,
+        "events": 3
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-04-25",
-        "net_minted": 500000,
-        "net_burned": 0
-      },
       {
         "date": "2026-04-26",
         "net_minted": 5180000,
@@ -2907,6 +2934,11 @@
         "date": "2026-05-01",
         "net_minted": 750000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-05-02",
+        "net_minted": 125000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -2922,15 +2954,15 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 33,
-        "negative": 40
+        "positive": 32,
+        "negative": 38
       },
       "UDHR": {
-        "positive": 9,
-        "negative": 18
+        "positive": 8,
+        "negative": 16
       },
       "ILO": {
-        "positive": 3,
+        "positive": 2,
         "negative": 0
       },
       "CRC": {
@@ -2938,7 +2970,7 @@
         "negative": 5
       },
       "UNDRIP": {
-        "positive": 4,
+        "positive": 3,
         "negative": 4
       },
       "Animal": {
@@ -2946,19 +2978,19 @@
         "negative": 2
       },
       "PB": {
-        "positive": 13,
-        "negative": 17
+        "positive": 12,
+        "negative": 16
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 91.3,
-      "mainstream_pct": 8.7,
-      "total_sources_used": 23,
-      "articles_processed": 45
+      "niche_pct": 91.7,
+      "mainstream_pct": 8.3,
+      "total_sources_used": 24,
+      "articles_processed": 43
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 45,
+      "total_events": 43,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -2991,21 +3023,27 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 9,
+        "count": 8,
         "burn_count": 5,
-        "mint_count": 4
+        "mint_count": 3
       },
       {
         "name": "Forestry",
-        "count": 6,
+        "count": 5,
         "burn_count": 2,
-        "mint_count": 4
+        "mint_count": 3
       },
       {
         "name": "Construction",
         "count": 4,
         "burn_count": 0,
         "mint_count": 4
+      },
+      {
+        "name": "Agriculture",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1
       }
     ],
     "burn_composition_7d": {
@@ -3039,14 +3077,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 33,
+      "total_mint": 31,
       "direct_action": {
-        "count": 27,
-        "pct": 81.8
+        "count": 26,
+        "pct": 83.9
       },
       "editorial_alarm": {
-        "count": 6,
-        "pct": 18.2
+        "count": 5,
+        "pct": 16.1
       },
       "untyped": {
         "count": 0,
@@ -3054,14 +3092,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 108,
+      "total_mint": 109,
       "direct_action": {
-        "count": 90,
-        "pct": 83.3
+        "count": 91,
+        "pct": 83.5
       },
       "editorial_alarm": {
         "count": 18,
-        "pct": 16.7
+        "pct": 16.5
       },
       "untyped": {
         "count": 0,
