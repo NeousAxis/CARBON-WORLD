@@ -27,19 +27,9 @@
   @keyframes cw-ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @keyframes cw-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
 
-  /* Preview banner — V2 is now wired to live /data/export.json */
-  .cw-preview-banner {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
-    background: var(--cw-accent); color: #111; font-family: var(--cw-font-mono);
-    font-size: 11px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.08em; text-align: center; padding: 4px 12px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
-  }
-  body { padding-top: 24px; }
 </style>
 </head>
 <body>
-<div class="cw-preview-banner">Dashboard V2 · Preview · live data — switch back to <a href="/" style="color:#111;text-decoration:underline;">/</a> for the production dashboard</div>
 <div id="root"></div>
 
 <script src="/dashboard-v2/world-countries.js"></script>
