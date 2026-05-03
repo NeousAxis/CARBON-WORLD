@@ -18,7 +18,7 @@ const SPEC = {
       "Token CBWD on Solana — scientific instrument, not a speculative asset.",
     contact: {
       name: "Neous Axis — CARBON WORLD",
-      email: "hello@carbon-token.xyz",
+      email: "hello@carbon-world.xyz",
       url: "https://carbon-world.xyz",
     },
     license: {

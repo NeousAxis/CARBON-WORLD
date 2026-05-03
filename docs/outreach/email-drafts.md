@@ -30,7 +30,7 @@ Si l'idée vous intéresse, je peux préparer un brief technique en 30 minutes o
 
 Cordialement,
 Neous Axis
-hello@carbon-token.xyz
+hello@carbon-world.xyz
 `https://carbon-world.xyz/citizen-actions` — directory en temps réel des actions citoyennes captées
 
 ---
@@ -54,7 +54,7 @@ L'IDDRI me semble particulièrement aligné : votre travail sur la prospective c
 
 Bien cordialement,
 Neous Axis
-hello@carbon-token.xyz
+hello@carbon-world.xyz
 
 ---
 
@@ -77,7 +77,7 @@ Le code est ouvert : `https://github.com/NeousAxis/CARBON-WORLD`. Aucune contrep
 
 Cordialement,
 Neous Axis
-hello@carbon-token.xyz
+hello@carbon-world.xyz
 
 ---
 
@@ -100,7 +100,7 @@ Si ça vous parle, je peux préparer un export sur-mesure pour un sujet précis.
 
 Cordialement,
 Neous Axis
-hello@carbon-token.xyz
+hello@carbon-world.xyz
 
 ---
 
@@ -123,7 +123,7 @@ Je ne demande qu'une chose en contrepartie : votre logo sur la page `/partners` 
 
 Cordialement,
 Neous Axis
-hello@carbon-token.xyz
+hello@carbon-world.xyz
 Code source : `https://github.com/NeousAxis/CARBON-WORLD`
 
 ---

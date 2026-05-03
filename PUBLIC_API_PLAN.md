@@ -279,7 +279,7 @@ Modifications :
 >
 > Bien cordialement,
 > **Neous Axis** — Fondateur, CARBON WORLD
-> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-world.xyz)
+> hello@carbon-world.xyz | [carbon-world.xyz](https://carbon-world.xyz)
 
 ### Version anglaise
 
@@ -304,7 +304,7 @@ Modifications :
 >
 > Best regards,
 > **Neous Axis** — Founder, CARBON WORLD
-> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-world.xyz)
+> hello@carbon-world.xyz | [carbon-world.xyz](https://carbon-world.xyz)
 
 ---
 

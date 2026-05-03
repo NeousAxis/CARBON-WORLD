@@ -135,10 +135,10 @@ export function PartnersSection({ partners = PARTNERS }: { partners?: Partner[] 
           className="font-mono text-[11px] uppercase tracking-wider"
           style={{ color: "var(--muted)" }}
         >
-          Media · Think tanks · NGOs — join via hello@carbon-token.xyz
+          Media · Think tanks · NGOs — join via hello@carbon-world.xyz
         </p>
         <Link
-          href="mailto:hello@carbon-token.xyz?subject=CARBON%20WORLD%20API%20partnership"
+          href="mailto:hello@carbon-world.xyz?subject=CARBON%20WORLD%20API%20partnership"
           className="font-mono text-[11px] uppercase tracking-wider"
           style={{ color: "var(--primary)" }}
         >

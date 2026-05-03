@@ -70,7 +70,7 @@ Remplace `<TOKEN>` par le token réel, commit + push.
 
 Dans **Settings → Notifications → Add New Notification**.
 
-### Option A — Email via Infomaniak (hello@carbon-token.xyz)
+### Option A — Email via Infomaniak (hello@carbon-world.xyz)
 
 C'est la voie retenue pour CARBON WORLD. La mailbox est déjà hébergée chez Infomaniak (MX `mta-gw.infomaniak.ch`).
 
@@ -82,11 +82,11 @@ C'est la voie retenue pour CARBON WORLD. La mailbox est déjà hébergée chez I
 | Port | `587` |
 | Secure Option / TLS | **STARTTLS** (pas SSL) — le VPS peut sortir sur 587 mais PAS sur 465, c'est Hetzner qui bloque |
 | Ignore TLS Errors | non |
-| Username | `hello@carbon-token.xyz` |
+| Username | `hello@carbon-world.xyz` |
 | Password | (mot de passe de la mailbox Infomaniak) |
-| From Email | `hello@carbon-token.xyz` — DOIT correspondre au username sinon SPF rejette |
+| From Email | `hello@carbon-world.xyz` — DOIT correspondre au username sinon SPF rejette |
 | From Name | `Carbon World Monitoring` |
-| To Email | `hello@carbon-token.xyz` |
+| To Email | `hello@carbon-world.xyz` |
 | CC / BCC | (vide) |
 | Subject | laisse le défaut ou customise |
 
