@@ -146,6 +146,14 @@ def main() -> int:
     event_id = saved.get("id")
     logger.info("Saved event #%s: %s %d CBWD", event_id, final_decision, final_amount)
 
+    # Refresh export.json BEFORE the Solana TX. Earlier this was at the end
+    # of the function, but the TX can take > 60 s and the web route's 120 s
+    # execFile timeout may SIGTERM the process before the export runs,
+    # leaving review_queue.json stale and the resolved row visible in /review.
+    # Doing the export first means the UI stays in sync even on TX timeout —
+    # the nightly reconcile_tx cron will rebroadcast the missing tx.
+    export_events()
+
     # Rate-limit before broadcasting to the public Solana mainnet RPC.
     # When the user approves several reviews in quick succession, the public
     # endpoint throttles and execute_decision() returns None silently. A 5 s
@@ -156,14 +164,14 @@ def main() -> int:
     if tx_hash and event_id:
         update_tx_hash(event_id, tx_hash)
         logger.info("Solana tx: %s", tx_hash)
+        # Re-export so the new tx_hash is visible in the dashboard donut.
+        export_events()
     elif event_id:
         logger.warning(
             "Solana TX returned no signature for event #%s. The reconcile_tx "
             "nightly cron will retry.", event_id,
         )
 
-    # Refresh export.json
-    export_events()
     return 0
 
 
