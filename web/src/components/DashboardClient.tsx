@@ -7,6 +7,7 @@ import { SupplyChart } from "@/components/SupplyChart";
 import { BreakdownDonut } from "@/components/BreakdownDonut";
 import { EventsTable } from "@/components/EventsTable";
 import { PartnersSection } from "@/components/PartnersSection";
+import { WorldMap } from "@/components/WorldMap";
 import {
   TopCountriesMintCard,
   TopCountriesBurnCard,
@@ -333,6 +334,9 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
             <BreakdownDonut events={events} />
           </div>
         </div>
+
+        {/* World map — choropleth + pulse rings, MINT-orange / BURN-green dominance */}
+        <WorldMap events={events} windowDays={7} height={460} />
 
         {/* Geographic indicators row 1: Top countries MINT/BURN + Supply trend */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
