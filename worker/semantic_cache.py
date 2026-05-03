@@ -177,3 +177,126 @@ def find_similar_recent(
         "confidence":  _get(best_row, "confidence", 5),
         "cosine":      best_cosine,
     }
+
+
+# ---------------------------------------------------------------------------
+# Human-review feedback retrieval (Phase 10 — 2026-05-03)
+# ---------------------------------------------------------------------------
+
+def find_similar_human_reviews(
+    conn: sqlite3.Connection,
+    embedding: bytes,
+    threshold: float = 0.80,
+    limit: int = 5,
+) -> list[dict]:
+    """
+    Find past human-reviewed events that are semantically close to the new event.
+
+    Used by the analyst pre-call hook to prepend a PRIOR HUMAN REVIEW hint
+    when a new event resembles one Cyril has already corrected via /review.
+    Pure retrieval — no LLM cost, just numpy dot products against
+    review_queue.human_review_embedding entries that have a final_decision.
+
+    Parameters
+    ----------
+    conn        : open sqlite3.Connection
+    embedding   : bytes — result of compute_embedding() for the new event
+    threshold   : float — min cosine similarity (default 0.80)
+    limit       : int   — max number of matches returned (default 5)
+
+    Returns
+    -------
+    list of dicts (newest first), empty list when no match crosses *threshold*:
+        [{
+            'review_id':       int,
+            'event_title':     str,
+            'final_decision':  'BURN' | 'MINT' | 'NEUTRAL',
+            'cosine':          float,
+            'event_source':    str,
+        }, ...]
+    """
+    if embedding is None or len(embedding) != 1536:
+        return []
+
+    query_vec = np.frombuffer(embedding, dtype=np.float32)
+
+    try:
+        cursor = conn.execute(
+            """
+            SELECT id, event_title, event_source, final_decision,
+                   human_review_embedding, resolved_at
+            FROM review_queue
+            WHERE final_decision IS NOT NULL
+              AND human_review_embedding IS NOT NULL
+            ORDER BY resolved_at DESC
+            LIMIT 200
+            """,
+        )
+        rows = cursor.fetchall()
+    except Exception as exc:
+        logger.warning("find_similar_human_reviews: DB query failed: %s", exc)
+        return []
+
+    matches = []
+    for row in rows:
+        raw = row[4] if isinstance(row, tuple) else row["human_review_embedding"]
+        if raw is None or len(raw) != 1536:
+            continue
+        candidate_vec = np.frombuffer(raw, dtype=np.float32)
+        sim = _cosine(query_vec, candidate_vec)
+        if sim < threshold:
+            continue
+        def _get(r, key, idx):
+            try:
+                return r[key]
+            except (IndexError, KeyError, TypeError):
+                return r[idx]
+        matches.append({
+            "review_id":      _get(row, "id", 0),
+            "event_title":    _get(row, "event_title", 1),
+            "event_source":   _get(row, "event_source", 2),
+            "final_decision": _get(row, "final_decision", 3),
+            "cosine":         sim,
+        })
+
+    matches.sort(key=lambda m: m["cosine"], reverse=True)
+    return matches[:limit]
+
+
+def list_resolved_human_reviews(conn: sqlite3.Connection) -> list[dict]:
+    """
+    Return every resolved review_queue row with its embedding bytes.
+    Used by the magnitude calibrator to extend its canonical patterns
+    with concrete examples the human reviewer has already judged.
+    """
+    try:
+        cursor = conn.execute(
+            """
+            SELECT id, event_title, event_source, final_decision,
+                   human_review_embedding
+            FROM review_queue
+            WHERE final_decision IS NOT NULL
+              AND human_review_embedding IS NOT NULL
+            ORDER BY resolved_at DESC
+            """,
+        )
+        rows = cursor.fetchall()
+    except Exception as exc:
+        logger.warning("list_resolved_human_reviews: DB query failed: %s", exc)
+        return []
+
+    out = []
+    for row in rows:
+        def _get(r, key, idx):
+            try:
+                return r[key]
+            except (IndexError, KeyError, TypeError):
+                return r[idx]
+        out.append({
+            "review_id":       _get(row, "id", 0),
+            "event_title":     _get(row, "event_title", 1),
+            "event_source":    _get(row, "event_source", 2),
+            "final_decision":  _get(row, "final_decision", 3),
+            "embedding_bytes": _get(row, "human_review_embedding", 4),
+        })
+    return out

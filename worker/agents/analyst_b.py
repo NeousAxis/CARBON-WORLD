@@ -42,6 +42,17 @@ def analyze(article: dict) -> Optional[dict]:
         prior_ctx = PRIOR_VALIDATION_CONTEXT_TEMPLATE.format(organization=organization)
         user_msg = prior_ctx.strip() + "\n\n" + user_msg
 
+    # Phase 10 — same human-review hint as Analyst A. Both A and B see the
+    # same calibration signal so their independent reads stay aligned on
+    # the human-judged pattern.
+    try:
+        from agents.analyst import _build_human_review_hint
+        hint = _build_human_review_hint(article)
+        if hint:
+            user_msg = hint.strip() + "\n\n" + user_msg
+    except Exception as exc:
+        logger.warning("Analyst B: review-hint inject failed: %s", exc)
+
     result = call_analyst_b(
         system_prompt=ANALYST_PROMPT,
         user_message=user_msg,

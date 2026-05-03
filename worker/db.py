@@ -104,6 +104,17 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         # 'editorial_alarm' (credible educational outlet alerting on regression),
         # or NULL for BURN/NEUTRAL events.
         "ALTER TABLE carbon_events ADD COLUMN mint_subtype TEXT;",
+        # Phase 10 — Human review feedback loop (2026-05-03)
+        # Stores the sentence-transformers embedding of (title + ' — ' + suggested
+        # justification) at resolve time, and the human_verdict (BURN/MINT/NEUTRAL).
+        # Used by:
+        #   - magnitude_calibrator: extend canonicals with patterns the human
+        #     reviewer has explicitly judged (Solution A)
+        #   - analyst pre-call hint: when a new event is semantically close to
+        #     a human-reviewed one, prepend a PRIOR HUMAN REVIEW note to the
+        #     user_message (Solution B)
+        "ALTER TABLE review_queue ADD COLUMN human_review_embedding BLOB;",
+        "ALTER TABLE review_queue ADD COLUMN final_decision TEXT;",
     ]
     for sql in migrations:
         try:

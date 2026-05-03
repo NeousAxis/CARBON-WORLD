@@ -302,17 +302,63 @@ class MagnitudeCalibrator:
         self._embeddings_loaded = False
 
     def _ensure_embeddings(self):
-        """Lazy-load the canonical embeddings once."""
+        """Lazy-load the canonical embeddings once. Also pulls in any
+        human-reviewed patterns from review_queue (Phase 10 — Solution A)
+        so the calibrator learns from /review reverses without any
+        prompt change."""
         if self._embeddings_loaded:
             return
         logger.info(
             "Computing canonical embeddings (%d positive, %d negative)…",
             len(self._pos_canonicals), len(self._neg_canonicals),
         )
-        self._pos_embeddings = np.stack([_encode_normalized(s) for s in self._pos_canonicals])
-        self._neg_embeddings = np.stack([_encode_normalized(s) for s in self._neg_canonicals])
+        pos_embs = [_encode_normalized(s) for s in self._pos_canonicals]
+        neg_embs = [_encode_normalized(s) for s in self._neg_canonicals]
+        pos_texts = list(self._pos_canonicals)
+        neg_texts = list(self._neg_canonicals)
+
+        # Phase 10: extend canonicals with patterns from human-reviewed
+        # events. A reviewed event whose final_decision is BURN becomes a
+        # positive canonical; MINT becomes negative. The text is the
+        # event_title — short, on-topic, exactly the kind of phrasing the
+        # analyst LLM produces in its aspect descriptions.
+        try:
+            from semantic_cache import list_resolved_human_reviews
+            from db import _get_conn
+            conn = _get_conn()
+            human_rows = list_resolved_human_reviews(conn)
+            n_pos = n_neg = 0
+            for r in human_rows:
+                emb_bytes = r.get("embedding_bytes")
+                if not emb_bytes or len(emb_bytes) != 1536:
+                    continue
+                vec = np.frombuffer(emb_bytes, dtype=np.float32)
+                title = r.get("event_title") or ""
+                if r.get("final_decision") == "BURN":
+                    pos_embs.append(vec)
+                    pos_texts.append(f"[human-reviewed BURN] {title}")
+                    n_pos += 1
+                elif r.get("final_decision") == "MINT":
+                    neg_embs.append(vec)
+                    neg_texts.append(f"[human-reviewed MINT] {title}")
+                    n_neg += 1
+            if n_pos or n_neg:
+                logger.info(
+                    "Calibrator absorbed %d human-reviewed positives + %d negatives "
+                    "into its canonical patterns.", n_pos, n_neg,
+                )
+        except Exception as exc:
+            logger.warning("Could not load human-reviewed canonicals: %s", exc)
+
+        self._pos_canonicals = pos_texts
+        self._neg_canonicals = neg_texts
+        self._pos_embeddings = np.stack(pos_embs)
+        self._neg_embeddings = np.stack(neg_embs)
         self._embeddings_loaded = True
-        logger.info("Canonical embeddings ready.")
+        logger.info(
+            "Canonical embeddings ready (final: %d pos, %d neg).",
+            len(self._pos_canonicals), len(self._neg_canonicals),
+        )
 
     # ----- Layer 3: negation context detection -----
 
