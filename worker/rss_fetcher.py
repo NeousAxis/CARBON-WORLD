@@ -310,6 +310,17 @@ RSS_SOURCES: list[dict] = [
     # 6) Reddit additions targeted at citizen actions
     {"url": "https://www.reddit.com/r/MutualAid/new.rss", "name": "Reddit r/MutualAid"},
     {"url": "https://www.reddit.com/r/InventionsAndIdeas/new.rss", "name": "Reddit r/InventionsAndIdeas"},
+    # 7) Health / WHO / medical breakthroughs (added 2026-05-03 after Cyril
+    #    flagged Chile leprosy elimination + Japan stem-cell Parkinson approval)
+    {"url": "https://www.who.int/rss-feeds/news-english.xml", "name": "WHO News (EN)"},
+    {"url": "https://www.who.int/rss-feeds/news-french.xml", "name": "WHO News (FR)"},
+    {"url": "https://www.santemagazine.fr/feed", "name": "Santé Magazine"},
+    {"url": "https://www.lequotidiendumedecin.fr/rss.xml", "name": "Le Quotidien du Médecin"},
+    {"url": "https://www.statnews.com/feed/", "name": "STAT News (medicine)"},
+    {"url": "https://www.medicalnewstoday.com/newsfeeds-rss", "name": "Medical News Today"},
+    # 8) Peer-reviewed scientific breakthroughs (PubMed Central, Nature, Science)
+    {"url": "https://www.nature.com/nature.rss", "name": "Nature"},
+    {"url": "https://www.science.org/rss/news_current.xml", "name": "Science Magazine"},
 ]
 
 
