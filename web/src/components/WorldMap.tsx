@@ -59,6 +59,34 @@ interface WorldCountry {
   d: string;
 }
 
+/**
+ * Compute the visual centroid of an SVG path by averaging every coordinate
+ * pair found in its `d` string. Cheap and good enough for placing a marker:
+ * for a country whose path traces its outline, the average of all outline
+ * points lands inside the country roughly at its visual centre. Much better
+ * than the previous "first M command" shortcut which placed the marker at
+ * an arbitrary corner (Russia → Siberia, US → Maine).
+ */
+function pathCentroid(d: string): { cx: number; cy: number } | null {
+  const numRe = /-?\d+(?:\.\d+)?/g;
+  const nums = d.match(numRe);
+  if (!nums || nums.length < 2) return null;
+  let sx = 0;
+  let sy = 0;
+  let count = 0;
+  for (let i = 0; i + 1 < nums.length; i += 2) {
+    const x = parseFloat(nums[i]);
+    const y = parseFloat(nums[i + 1]);
+    if (Number.isFinite(x) && Number.isFinite(y)) {
+      sx += x;
+      sy += y;
+      count++;
+    }
+  }
+  if (count === 0) return null;
+  return { cx: sx / count, cy: sy / count };
+}
+
 interface CountryStat {
   mint: number;
   burn: number;
@@ -328,15 +356,16 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
           );
         })}
 
-        {/* Pulse rings on active countries */}
+        {/* Pulse rings on active countries — placed at the visual centroid
+            of the country path (average of all coordinates), not at the
+            first M command which gives an arbitrary corner. */}
         {countries &&
           Object.entries(countryStats).map(([iso, s]) => {
             const country = countries.find((c) => NAME_TO_ISO[c.name] === iso);
             if (!country) return null;
-            const m = country.d.match(/M([\d.\-]+),([\d.\-]+)/);
-            if (!m) return null;
-            const cx = parseFloat(m[1]);
-            const cy = parseFloat(m[2]);
+            const ctr = pathCentroid(country.d);
+            if (!ctr) return null;
+            const { cx, cy } = ctr;
             const dom = s.mint > s.burn ? "#FF5C33" : "#B6FFCE";
             const size = Math.min(8, 3 + (s.mint + s.burn) / 30);
             return (
@@ -368,7 +397,10 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
           })}
       </svg>
 
-      {/* Floating tooltip with country name + stats, follows the cursor */}
+      {/* Floating tooltip — country name + stats, follows the cursor.
+          The pulse ring on each active country is centred on the country's
+          visual centroid (NOT a city or region — there is no sub-national
+          data in the pipeline). */}
       {hoverName && tooltip && (
         <div
           style={{
@@ -387,9 +419,15 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
             whiteSpace: "nowrap",
           }}
         >
+          <div
+            className="uppercase tracking-wider"
+            style={{ fontSize: 9, color: "#6E6F6C", marginBottom: 2 }}
+          >
+            COUNTRY
+          </div>
           <div style={{ fontWeight: 600, color: "#F5F5F5" }}>{hoverName}</div>
           {hoverIso && countryStats[hoverIso] ? (
-            <div style={{ color: "#B8B9B6", marginTop: 2 }}>
+            <div style={{ color: "#B8B9B6", marginTop: 4 }}>
               <span style={{ color: "#FF5C33" }}>
                 +{countryStats[hoverIso].mint}K MINT
               </span>
@@ -401,7 +439,7 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
               <span>{countryStats[hoverIso].count} events</span>
             </div>
           ) : (
-            <div style={{ color: "#6E6F6C", marginTop: 2 }}>
+            <div style={{ color: "#6E6F6C", marginTop: 4 }}>
               No activity in this window
             </div>
           )}
