@@ -281,6 +281,35 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.steadystate.org/feed/", "name": "Center for Steady State Economy"},
     {"url": "https://commonslibrary.org/feed/", "name": "Commons Library"},
     {"url": "https://link.springer.com/search.rss?query=climate%20change&search-within=Journal&facet-journal-id=13280", "name": "Springer Nature Climate (journal search)"},
+
+    # ─── H. Citizen actions / inventions / animal welfare (added 2026-05-03) ──
+    # Cyril asked to expand toward citizen-led inventions, makers, neighbour-
+    # hood initiatives and animal welfare reporting. Generalist mainstream is
+    # included on purpose because that's where high-school inventors and
+    # community wins get covered.
+    # 1) Generalist FR with strong "initiatives / solidarité" coverage
+    {"url": "https://www.20minutes.fr/feeds/rss-une.xml", "name": "20 Minutes FR"},
+    {"url": "https://www.ouest-france.fr/rss-en-continu.xml", "name": "Ouest-France"},
+    {"url": "https://www.francebleu.fr/rss/a-la-une.xml", "name": "France Bleu"},
+    # 2) Curated citizen / social inventions
+    {"url": "https://atlasofthefuture.org/feed/", "name": "Atlas of the Future"},
+    {"url": "https://www.springwise.com/feed/", "name": "Springwise (innovations)"},
+    # 3) Makers / inventions / civic tech
+    {"url": "https://hackaday.com/blog/feed/", "name": "Hackaday"},
+    {"url": "https://newatlas.com/index.rss", "name": "New Atlas"},
+    {"url": "https://www.ifixit.com/News/rss", "name": "iFixit News (right to repair)"},
+    # 4) Animal welfare (Cyril flagged 2026-05-03 — Spain 2021 + Switzerland 2023 stories
+    #    came in via wildbeimwild + Le Matin which we didn't have)
+    {"url": "https://wildbeimwild.com/feed/", "name": "Wild beim Wild"},
+    {"url": "https://sentientmedia.org/feed/", "name": "Sentient Media"},
+    {"url": "https://animalequality.org/feed/", "name": "Animal Equality"},
+    # 5) Solutions / French ecological press
+    {"url": "https://www.lematin.ch/rss-articles", "name": "Le Matin (CH)"},
+    {"url": "https://www.letemps.ch/articles.rss", "name": "Le Temps (CH)"},
+    {"url": "https://goodgoodgood.co/feed", "name": "Good Good Good"},
+    # 6) Reddit additions targeted at citizen actions
+    {"url": "https://www.reddit.com/r/MutualAid/new.rss", "name": "Reddit r/MutualAid"},
+    {"url": "https://www.reddit.com/r/InventionsAndIdeas/new.rss", "name": "Reddit r/InventionsAndIdeas"},
 ]
 
 
