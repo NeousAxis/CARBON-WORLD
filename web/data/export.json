@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-03T15:00:14.176071+00:00",
-  "total_events": 139,
-  "total_burned": 15846000,
+  "generated_at": "2026-05-03T15:56:58.971931+00:00",
+  "total_events": 141,
+  "total_burned": 16121000,
   "total_minted": 96658750,
-  "pending_reviews": 2,
+  "pending_reviews": 0,
   "events": [
+    {
+      "id": 141,
+      "event_title": "Fessenheim: green light for complete dismantling of the nuclear power plant, a decisive step in the site's redevelopment",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/03/fessenheim-feu-vert-au-demantelement-total-de-la-centrale-nucleaire-une-etape-decisive-dans-la-reconversion-du-site_6685216_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "BURN",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "human-approved via review_queue | Dismantling is positive but radioactive recycling introduces long-term risks, leading to net negative prospective impact.",
+      "tx_hash": null,
+      "created_at": "2026-05-03T15:02:31.810400+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
+    {
+      "id": 140,
+      "event_title": "Could Santa Marta climate talks mark ground zero in push to ditch fossil fuels?",
+      "event_url": "https://www.theguardian.com/environment/2026/may/01/could-key-climate-talks-mark-ground-zero-in-global-push-to-ditch-fossil-fuels",
+      "event_source": "The Guardian Climate",
+      "decision": "BURN",
+      "amount_crbn": 125000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "human-approved via review_queue | The conference is a positive step but lacks binding commitments and immediate impact.",
+      "tx_hash": null,
+      "created_at": "2026-05-03T15:01:26.313685+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 139,
       "event_title": "Trump's announcement of the withdrawal of 5,000 American soldiers from Germany, a turning point in the relationship between the two countries",
@@ -833,9 +877,9 @@
       "created_at": "2026-04-27T16:36:57.427128+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": "Iran",
-      "region": "MENA",
-      "administration": "Iran-reformist",
+      "country": null,
+      "region": null,
+      "administration": null,
       "positive_aspects_json": "[{\"description\": \"EU plans to cut electricity taxes to reduce energy bills and encourage clean energy adoption.\", \"affected_sdgs\": [7, 13], \"magnitude\": 7}, {\"description\": \"Incentives to phase out fuel-burning cars and boilers could reduce fossil fuel dependence.\", \"affected_sdgs\": [7, 13], \"magnitude\": 6}]",
       "negative_aspects_json": "[{\"description\": \"Tax cuts may reduce government revenue, potentially limiting funding for broader climate initiatives.\", \"affected_sdgs\": [13], \"magnitude\": 4}, {\"description\": \"Short-term relief may delay deeper structural reforms needed for long-term energy transition.\", \"affected_sdgs\": [8, 13], \"magnitude\": 5}]",
       "burn_subtype": "direct_action",
@@ -3068,13 +3112,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 7,
-        "total_amount": 4400000
-      },
-      {
-        "country": "Brazil",
-        "count": 4,
-        "total_amount": 1560000
+        "count": 6,
+        "total_amount": 3150000
       },
       {
         "country": "India",
@@ -3085,6 +3124,11 @@
         "country": "France",
         "count": 3,
         "total_amount": 1745000
+      },
+      {
+        "country": "Brazil",
+        "count": 3,
+        "total_amount": 1410000
       },
       {
         "country": "China",
@@ -3104,11 +3148,6 @@
         "total_amount": 750000
       },
       {
-        "country": "Iran",
-        "count": 1,
-        "total_amount": 1250000
-      },
-      {
         "country": "China",
         "count": 1,
         "total_amount": 750000
@@ -3117,13 +3156,8 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.222,
-        "events": 9
-      },
-      {
-        "region": "MENA",
-        "burn_ratio": 0.2,
-        "events": 5
+        "burn_ratio": 0.25,
+        "events": 8
       },
       {
         "region": "Asia",
@@ -3131,6 +3165,11 @@
         "events": 6
       },
       {
+        "region": "MENA",
+        "burn_ratio": 0.0,
+        "events": 4
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.0,
         "events": 5
@@ -3138,11 +3177,16 @@
       {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 9
+        "events": 8
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 4
+      },
+      {
         "region": "Europe",
         "mint_ratio": 1.0,
         "events": 5
@@ -3150,7 +3194,7 @@
       {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 9
+        "events": 8
       },
       {
         "region": "Asia",
@@ -3158,14 +3202,9 @@
         "events": 6
       },
       {
-        "region": "MENA",
-        "mint_ratio": 0.8,
-        "events": 5
-      },
-      {
         "region": "Latin America",
-        "mint_ratio": 0.778,
-        "events": 9
+        "mint_ratio": 0.75,
+        "events": 8
       }
     ],
     "supply_trend_7d": [
@@ -3202,7 +3241,7 @@
       {
         "date": "2026-05-03",
         "net_minted": 2220000,
-        "net_burned": 350000
+        "net_burned": 625000
       }
     ],
     "event_of_the_day": {
@@ -3218,8 +3257,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 36,
-        "negative": 43
+        "positive": 34,
+        "negative": 41
       },
       "UDHR": {
         "positive": 9,
@@ -3242,8 +3281,8 @@
         "negative": 3
       },
       "PB": {
-        "positive": 13,
-        "negative": 18
+        "positive": 12,
+        "negative": 17
       }
     },
     "source_diversity_7d": {
@@ -3259,12 +3298,6 @@
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
-      {
-        "name": "COP",
-        "count": 2,
-        "burn_count": 1,
-        "mint_count": 1
-      },
       {
         "name": "NATO",
         "count": 1,
@@ -3288,20 +3321,26 @@
         "count": 1,
         "burn_count": 1,
         "mint_count": 0
+      },
+      {
+        "name": "COP",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 11,
-        "burn_count": 5,
+        "count": 12,
+        "burn_count": 6,
         "mint_count": 6
       },
       {
         "name": "Construction",
-        "count": 7,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 7
+        "mint_count": 6
       },
       {
         "name": "Forestry",
@@ -3329,48 +3368,48 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 13,
+      "total_burn": 15,
       "direct_action": {
         "count": 8,
-        "pct": 61.5
+        "pct": 53.3
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 23.1
+        "pct": 20.0
       },
       "untyped": {
-        "count": 2,
-        "pct": 15.4
+        "count": 4,
+        "pct": 26.7
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 19,
+      "total_burn": 21,
       "direct_action": {
         "count": 14,
-        "pct": 73.7
+        "pct": 66.7
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 15.8
+        "pct": 14.3
       },
       "untyped": {
-        "count": 2,
-        "pct": 10.5
+        "count": 4,
+        "pct": 19.0
       }
     },
     "mint_composition_7d": {
-      "total_mint": 38,
+      "total_mint": 36,
       "direct_action": {
-        "count": 30,
-        "pct": 78.9
+        "count": 29,
+        "pct": 80.6
       },
       "editorial_alarm": {
-        "count": 6,
-        "pct": 15.8
+        "count": 5,
+        "pct": 13.9
       },
       "untyped": {
         "count": 2,
-        "pct": 5.3
+        "pct": 5.6
       }
     },
     "mint_composition_all_time": {
