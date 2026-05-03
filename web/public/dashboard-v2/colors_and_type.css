@@ -1,0 +1,301 @@
+/* =========================================================================
+   Carbon World — Design Tokens
+   Colors, Type, Spacing, Radii, Motion
+   All values are canonical; components should reference these vars.
+   ========================================================================= */
+
+/* ---- Fonts (self-hosted, OFL) --------------------------------------------
+   JetBrains Mono and Newsreader. Paths are relative to this file's location;
+   if you import colors_and_type.css from a subdirectory, adjust url() paths
+   or override @font-face in the consuming page.
+   ------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  /* ======================================================================
+     COLORS — near-black greyscale ladder + 3 semantic status accents.
+     No brand color. No gradients. No purple. No blue.
+     ====================================================================== */
+
+  /* Backgrounds — Lunaris Dark */
+  --cw-bg-0:          #111111;   /* page */
+  --cw-bg-1:          #1a1a1a;   /* elevated surface (cards, panels) */
+  --cw-bg-2:          #222222;   /* hover, input background */
+  --cw-bg-3:          #2a2a2a;   /* active, selection */
+
+  /* Hairlines */
+  --cw-line:          #2a2a2a;   /* default 1px rule */
+  --cw-line-bright:   #3a3a3a;   /* emphasized / hover rule */
+  --cw-line-max:      #525252;   /* ASCII borders, spec rules */
+
+  /* Foregrounds */
+  --cw-fg-3:          #6e6f6c;   /* metadata, units, timestamps */
+  --cw-fg-2:          #b8b9b6;   /* labels, captions, secondary (cool grey) */
+  --cw-fg-1:          #d4d4d4;   /* body text */
+  --cw-fg-0:          #f5f5f5;   /* headlines, readings, max */
+
+  /* Brand accent */
+  --cw-accent:        #ff8400;   /* Lunaris orange */
+  --cw-accent-dim:    #3a2405;
+
+  /* Token mechanics */
+  --cw-burn:          #b6ffce;   /* positive verdict — BURN */
+  --cw-burn-dim:      #1f3328;
+  --cw-mint:          #ff5c33;   /* negative verdict — MINT */
+  --cw-mint-dim:      #3d1f16;
+  --cw-neutral:       #b8b9b6;   /* cool grey — pending / neutral */
+
+  /* Legacy status aliases (map to new semantics) */
+  --cw-verified:      var(--cw-burn);
+  --cw-verified-dim:  var(--cw-burn-dim);
+  --cw-review:        var(--cw-accent);
+  --cw-review-dim:    var(--cw-accent-dim);
+  --cw-disputed:      var(--cw-mint);
+  --cw-disputed-dim:  var(--cw-mint-dim);
+
+  /* Grid paper background color */
+  --cw-grid-line:     #1a1a1a;
+
+  /* ======================================================================
+     TYPOGRAPHY
+     Mono for 99% of UI; Newsreader serif for long-form institutional copy.
+     ====================================================================== */
+
+  --cw-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --cw-font-serif: 'Newsreader', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+
+  /* Type scale — use numeric sizes directly; no t-shirt sizing */
+  --cw-t-11: 11px;
+  --cw-t-12: 12px;
+  --cw-t-13: 13px;
+  --cw-t-14: 14px;
+  --cw-t-16: 16px;
+  --cw-t-18: 18px;
+  --cw-t-22: 22px;
+  --cw-t-28: 28px;
+  --cw-t-36: 36px;
+  --cw-t-48: 48px;
+  --cw-t-72: 72px;
+
+  /* Line heights */
+  --cw-lh-reading: 1.0;     /* big numeric readings */
+  --cw-lh-tight:   1.25;    /* mono UI, labels, headings */
+  --cw-lh-body:    1.5;     /* serif long-form */
+
+  /* Letter spacing */
+  --cw-track-label: 0.08em;   /* uppercased mono labels */
+  --cw-track-head:  0.04em;   /* uppercased mono headings */
+  --cw-track-tight: -0.01em;  /* big numeric readings */
+
+  /* ======================================================================
+     SPACING — 4px base unit.
+     ====================================================================== */
+
+  --cw-s-1:   4px;
+  --cw-s-2:   8px;
+  --cw-s-3:   12px;
+  --cw-s-4:   16px;
+  --cw-s-5:   20px;
+  --cw-s-6:   24px;
+  --cw-s-8:   32px;
+  --cw-s-10:  40px;
+  --cw-s-16:  64px;
+  --cw-s-24:  96px;
+
+  /* ======================================================================
+     RADII — zero. Everything is a perfect rectangle.
+     ====================================================================== */
+
+  --cw-radius: 0;
+
+  /* ======================================================================
+     MOTION — minimal. Instrument is still by default.
+     ====================================================================== */
+
+  --cw-ease: linear;                          /* default: linear, no easing */
+  --cw-ease-gentle: cubic-bezier(.4,0,.2,1);  /* only for opacity pulses */
+  --cw-dur-flash: 400ms;                      /* reading update flash */
+  --cw-dur-pulse: 2000ms;                     /* in-review dot pulse */
+
+  /* ======================================================================
+     LAYOUT
+     ====================================================================== */
+
+  --cw-max-width: 1280px;
+  --cw-masthead-h: 48px;
+  --cw-ticker-h: 32px;
+  --cw-gutter: 24px;
+}
+
+/* =========================================================================
+   BASE ELEMENTS
+   Semantic defaults mapped to tokens. Components can rely on these.
+   ========================================================================= */
+
+html, body {
+  background: var(--cw-bg-0);
+  color: var(--cw-fg-1);
+  font-family: var(--cw-font-mono);
+  font-size: var(--cw-t-14);
+  line-height: var(--cw-lh-tight);
+  font-feature-settings: 'ss01' on, 'cv05' on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Headings — default is plain; opt into mono/uppercase via .cw-head */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--cw-font-mono);
+  font-weight: 500;
+  color: var(--cw-fg-0);
+  margin: 0;
+}
+
+.cw-head, h1.cw-head, h2.cw-head, h3.cw-head, h4.cw-head, h5.cw-head, h6.cw-head {
+  text-transform: uppercase;
+  letter-spacing: var(--cw-track-head);
+}
+
+h1 { font-size: var(--cw-t-28); }
+h2 { font-size: var(--cw-t-22); }
+h3 { font-size: var(--cw-t-18); }
+h4 { font-size: var(--cw-t-14); letter-spacing: var(--cw-track-label); }
+h5, h6 { font-size: var(--cw-t-12); letter-spacing: var(--cw-track-label); color: var(--cw-fg-2); }
+
+/* Body — mono by default. Use .cw-serif to opt into Newsreader. */
+p { margin: 0 0 var(--cw-s-4) 0; }
+
+.cw-serif {
+  font-family: var(--cw-font-serif);
+  font-size: var(--cw-t-18);
+  line-height: var(--cw-lh-body);
+  color: var(--cw-fg-1);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* The big reading — the indicator's numeric output */
+.cw-reading {
+  font-family: var(--cw-font-mono);
+  font-weight: 500;
+  font-size: var(--cw-t-72);
+  line-height: var(--cw-lh-reading);
+  letter-spacing: var(--cw-track-tight);
+  color: var(--cw-fg-0);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'ss01' on, 'zero' on, 'cv05' on;
+}
+
+/* Label — the uppercased 11px metadata tag */
+.cw-label {
+  font-family: var(--cw-font-mono);
+  font-size: var(--cw-t-11);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: var(--cw-track-label);
+  color: var(--cw-fg-2);
+}
+
+/* Metadata — timestamps, units, IDs */
+.cw-meta {
+  font-family: var(--cw-font-mono);
+  font-size: var(--cw-t-11);
+  color: var(--cw-fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Links */
+a {
+  color: var(--cw-fg-0);
+  text-decoration: underline;
+  text-decoration-color: var(--cw-line-bright);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  text-decoration-color: var(--cw-fg-0);
+}
+
+/* Code inline */
+code, pre, kbd {
+  font-family: var(--cw-font-mono);
+  font-size: 0.94em;
+  color: var(--cw-fg-0);
+  background: var(--cw-bg-1);
+  padding: 1px 5px;
+  border: 1px solid var(--cw-line);
+  border-radius: 0;
+}
+
+/* Horizontal rule */
+hr {
+  border: 0;
+  border-top: 1px solid var(--cw-line);
+  margin: var(--cw-s-8) 0;
+}
+
+/* Selection */
+::selection {
+  background: var(--cw-bg-3);
+  color: var(--cw-fg-0);
+}
+
+/* Tabular number helper */
+.cw-tnum { font-variant-numeric: tabular-nums; }
+
+/* Status dots */
+.cw-dot { display: inline-block; width: 8px; height: 8px; }
+.cw-dot--verified { background: var(--cw-burn); }
+.cw-dot--review   { background: var(--cw-accent); animation: cw-pulse var(--cw-dur-pulse) var(--cw-ease-gentle) infinite; }
+.cw-dot--disputed { background: var(--cw-mint); }
+.cw-dot--burn     { background: var(--cw-burn); }
+.cw-dot--mint     { background: var(--cw-mint); }
+.cw-dot--accent   { background: var(--cw-accent); }
+.cw-dot--neutral  { background: var(--cw-neutral); }
+
+@keyframes cw-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
+
+/* Grid-paper background utility */
+.cw-grid-bg {
+  background-color: var(--cw-bg-0);
+  background-image:
+    linear-gradient(to right, var(--cw-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--cw-grid-line) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Ticker — continuous horizontal scroll */
+.cw-ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid var(--cw-line);
+  border-bottom: 1px solid var(--cw-line);
+  background: var(--cw-bg-0);
+  height: var(--cw-ticker-h);
+  line-height: var(--cw-ticker-h);
+  font-size: var(--cw-t-12);
+  color: var(--cw-fg-2);
+}
+.cw-ticker__track {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: cw-ticker-scroll 80s linear infinite;
+}
+@keyframes cw-ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 1px solid var(--cw-fg-1);
+  outline-offset: 2px;
+}

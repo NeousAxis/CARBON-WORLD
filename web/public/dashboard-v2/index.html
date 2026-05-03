@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carbon World · Dashboard V2 (preview)</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/dashboard-v2/colors_and_type.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<style>
+  html, body { margin: 0; background: var(--cw-bg-0); min-height: 100vh; }
+  .mono { font-family: var(--cw-font-mono); font-variant-numeric: tabular-nums; }
+  *::-webkit-scrollbar { width: 8px; height: 8px; }
+  *::-webkit-scrollbar-thumb { background: var(--cw-bg-3); }
+  *::-webkit-scrollbar-track { background: var(--cw-bg-0); }
+  button:focus-visible { outline: 1px solid var(--cw-fg-1); outline-offset: 2px; }
+
+  /* Ticker */
+  .cw-ticker {
+    height: 32px; display: flex; align-items: center; overflow: hidden;
+    background: var(--cw-bg-1); border-bottom: 1px solid var(--cw-line);
+    font-family: var(--cw-font-mono); font-size: 12px; white-space: nowrap;
+  }
+  .cw-ticker__track { display: inline-flex; animation: cw-ticker-scroll linear infinite; padding-left: 24px; }
+  @keyframes cw-ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes cw-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+  /* Preview banner so this URL is unmistakably the WIP version */
+  .cw-preview-banner {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+    background: var(--cw-accent); color: #111; font-family: var(--cw-font-mono);
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; text-align: center; padding: 4px 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  }
+  body { padding-top: 24px; }
+</style>
+</head>
+<body>
+<div class="cw-preview-banner">Dashboard V2 · Preview · not connected to live data — go to <a href="/" style="color:#111;text-decoration:underline;">/</a> for the live dashboard</div>
+<div id="root"></div>
+
+<script src="/dashboard-v2/world-countries.js"></script>
+<script type="text/babel" src="/dashboard-v2/dashboard.jsx"></script>
+</body>
+</html>
