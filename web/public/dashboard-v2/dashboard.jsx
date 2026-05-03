@@ -503,49 +503,152 @@ function Ticker({ events, locale }) {
 }
 
 // ============================================================
-// LIVE SIMULATOR HOOK — drives the whole dashboard
+// LIVE DATA HOOK — fetches /data/export.json and polls every 30 s
 // ============================================================
+//
+// Replaces the original simulator with a real-data fetcher tied to the
+// production export.json (the same file the home dashboard reads). When
+// the fetch fails or returns nothing, falls back to SEED_EVENTS so the
+// preview never renders blank during dev.
+//
+// Mapping CarbonEvent (DB) → mockup event shape:
+//   - id              → id
+//   - decision        → verdict ('BURN' / 'MINT' / 'NEUTRAL')
+//   - amount_crbn / 1000 (rounded) → amount  (K CBWD, mockup convention)
+//   - event_title     → title
+//   - event_source    → src
+//   - country (canonical English name) → ISO-2 via NAME_TO_ISO
+//   - frameworks      → flat list of strings from positive+negative aspects
+//   - tx_hash         → 'xxxx…yyyy' truncation, or '—' when null
+//   - created_at      → t (HH:MM UTC)
+
+function timeAgoFromDate(d) {
+  return `${String(d.getUTCHours()).padStart(2,'0')}:${String(d.getUTCMinutes()).padStart(2,'0')}`;
+}
+
+function truncateTx(hash) {
+  if (!hash) return '—';
+  if (hash.length <= 10) return hash;
+  return hash.slice(0, 4) + '…' + hash.slice(-4);
+}
+
+function extractFrameworks(carbonEvent) {
+  const out = new Set();
+  for (const key of ['positive_aspects_json', 'negative_aspects_json']) {
+    const raw = carbonEvent[key];
+    if (!raw) continue;
+    try {
+      const list = JSON.parse(raw);
+      if (Array.isArray(list)) {
+        for (const aspect of list) {
+          if (Array.isArray(aspect.frameworks)) {
+            for (const f of aspect.frameworks) out.add(f);
+          }
+        }
+      }
+    } catch {/* ignore parse errors, leave frameworks empty */}
+  }
+  return Array.from(out);
+}
+
+function mapCarbonEvent(e) {
+  return {
+    id: e.id,
+    ts: new Date(e.created_at).getTime() || 0,
+    verdict: e.decision,
+    amount: Math.max(0, Math.round((e.amount_crbn || 0) / 1000)),
+    title: e.event_title || '',
+    src: e.event_source || '',
+    country: e.country ? (NAME_TO_ISO[e.country] || null) : null,
+    frameworks: extractFrameworks(e),
+    tx: truncateTx(e.tx_hash),
+    flagged: !e.tx_hash,
+    t: timeAgoFromDate(new Date(e.created_at)),
+    _isNew: false,
+  };
+}
+
+function buildSupplySeries(events, totalMinted, totalBurned) {
+  // Build a 180-point cumulative supply curve from the chronological events.
+  // Newest event last. If we have fewer than 180 events, pad the start with
+  // the initial supply so the chart still renders smoothly.
+  const sorted = [...events].sort((a, b) => a.ts - b.ts);
+  const target = (totalMinted - totalBurned) / 1000;
+  const series = [];
+  let v = target;
+  for (let i = sorted.length - 1; i >= 0; i--) {
+    const e = sorted[i];
+    series.unshift(v);
+    const delta = e.verdict === 'MINT' ? e.amount : e.verdict === 'BURN' ? -e.amount : 0;
+    v -= delta;
+  }
+  while (series.length < 180) series.unshift(series[0] ?? target);
+  return series.slice(-180);
+}
+
+async function fetchLiveSnapshot() {
+  const url = `/data/export.json?t=${Date.now()}`;
+  const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) throw new Error(`fetch /data/export.json failed: ${res.status}`);
+  const data = await res.json();
+  const rawEvents = Array.isArray(data.events) ? data.events : [];
+  const mapped = rawEvents.map(mapCarbonEvent).slice(0, 60);
+  const totalMinted = data.total_minted || 0;
+  const totalBurned = data.total_burned || 0;
+  return {
+    events: mapped,
+    supply: Math.round((totalMinted - totalBurned) / 1000),
+    supplySeries: buildSupplySeries(mapped, totalMinted, totalBurned),
+    generatedAt: data.generated_at || null,
+  };
+}
+
 function useLiveSim() {
-  const [events, setEvents] = useState(() => SEED_EVENTS.map((e,i) => ({ ...e, t: timeAgo(i+1), _isNew: false })));
-  const [supply, setSupply] = useState(1248033);
+  // Initial state: empty events; the first fetch populates within 1 frame.
+  // SEED_EVENTS are kept as fallback only if the fetch fails or returns 0.
+  const [events, setEvents] = useState([]);
+  const [supply, setSupply] = useState(0);
   const [supplySeries, setSupplySeries] = useState(() => {
-    const arr = []; let v = 1245000;
-    for (let i = 0; i < 180; i++) { v += Math.sin(i/9)*240 + (Math.random()-.45)*80; arr.push(Math.round(v)); }
-    return arr;
+    // Stub series so charts render before the first fetch lands
+    return Array.from({ length: 180 }, () => 0);
   });
   const [tick, setTick] = useState(0);
 
-  function timeAgo(min) {
-    const now = new Date();
-    const t = new Date(now.getTime() - min*60_000);
-    return `${String(t.getUTCHours()).padStart(2,'0')}:${String(t.getUTCMinutes()).padStart(2,'0')}`;
-  }
-
   useEffect(() => {
-    const id = setInterval(() => {
-      setTick(v => v+1);
-      // Every 5 ticks (~5s), generate a new event
-      const tpl = EVENT_POOL[Math.floor(Math.random() * EVENT_POOL.length)];
-      const newEv = {
-        ...tpl,
-        id: Date.now(),
-        t: timeAgo(0),
-        tx: Math.random().toString(16).slice(2, 6) + '…' + Math.random().toString(16).slice(2, 6),
-        _isNew: true,
-      };
-      setEvents(prev => [newEv, ...prev.map(e => ({ ...e, _isNew:false }))].slice(0, 24));
-      // Update supply
-      setSupply(s => {
-        const delta = newEv.verdict === 'MINT' ? newEv.amount : newEv.verdict === 'BURN' ? -newEv.amount : 0;
-        return s + delta;
-      });
-      setSupplySeries(prev => {
-        const last = prev[prev.length-1];
-        const delta = newEv.verdict === 'MINT' ? newEv.amount : newEv.verdict === 'BURN' ? -newEv.amount : 0;
-        return [...prev.slice(1), last + delta + (Math.random()-0.5)*15];
-      });
-    }, 5000);
-    return () => clearInterval(id);
+    let cancelled = false;
+    let previousTopId = null;
+
+    async function refresh() {
+      try {
+        const snap = await fetchLiveSnapshot();
+        if (cancelled) return;
+        // Mark the very first new event _isNew so the row pulses
+        const newTopId = snap.events[0]?.id;
+        const decoratedEvents = snap.events.map(e => ({
+          ...e,
+          _isNew: previousTopId !== null && e.id === newTopId && newTopId !== previousTopId,
+        }));
+        previousTopId = newTopId ?? previousTopId;
+        setEvents(decoratedEvents);
+        setSupply(snap.supply);
+        setSupplySeries(snap.supplySeries);
+        setTick(v => v + 1);
+      } catch (err) {
+        // Fallback to SEED_EVENTS on first failure so the preview is never blank
+        if (cancelled) return;
+        if (events.length === 0) {
+          const seeded = SEED_EVENTS.map(e => ({ ...e, t: '00:00', _isNew: false }));
+          setEvents(seeded);
+        }
+        // Surface the error in the console for diagnosis but don't break the UI
+        console.warn('[dashboard-v2] live fetch failed, falling back:', err);
+      }
+    }
+
+    refresh(); // initial
+    const id = setInterval(refresh, 30_000); // poll every 30 s (cron is */30 min on VPS)
+    return () => { cancelled = true; clearInterval(id); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { events, supply, supplySeries, tick };
