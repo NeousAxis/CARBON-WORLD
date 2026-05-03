@@ -4,6 +4,65 @@
 
 ---
 
+## 🌍 2026-05-03 — WorldMap + 24 feeds + Phase 10 (apprentissage des reviews) + bug review-queue
+
+### WorldMap sur la home (commits `b448925`, `f1d5355`, `491a94f`)
+
+Cyril a fourni une maquette React standalone dans `dashboard/`. On a :
+1. Tenté un dashboard-v2 isolé connecté à `/api/stats` (dans `web/public/dashboard-v2/`) — Cyril a finalement préféré porter UN seul élément vers la home prod : la map.
+2. **`web/src/components/WorldMap.tsx`** : SVG choropleth + pulse rings sur les 177 pays (Equirectangular, geometry chargée depuis `web/public/world-countries.json`, 165 KB). Couleurs MINT-orange / BURN-vert avec intensité scalée. Centroide géographique correct (moyenne des coords, pas premier M command). Tooltip flottant qui suit le curseur, avec nom complet du pays + MINT/BURN K-CBWD + count events. Zoom à la molette (centré curseur) + drag pan + bouton RESET ZOOM. Footer hint *"SCROLL TO ZOOM · DRAG TO PAN"*.
+3. Intégrée dans `DashboardClient.tsx` juste au-dessus du row "Top countries MINT/BURN".
+
+### +24 sources RSS (commits `74bd636`, `17c22bd`) — section H
+
+Cyril a flaggé que des articles citoyens importants n'apparaissent pas (people.com sur des lycéens du MA, lecourrier.vn / 20minutes.fr sur le filtre anti-plomb, wildbeimwild + lematin.ch sur lois animales, WHO Chile lèpre, Japon Parkinson cellules souches). Diagnostic : (1) plein d'articles trop vieux (2021-2023) → impossibles à voir via flux RSS qui ne servent que les 24-48h récentes ; (2) sources non whitelistées dans `rss_fetcher.py`. Solution : élargir.
+
+Section H ajoutée avec 24 nouveaux feeds (157 → 181 total) :
+- **Citizen / inventions** : 20 Minutes FR, Ouest-France, France Bleu, Atlas of the Future, Springwise, Hackaday, New Atlas, iFixit News, r/MutualAid, r/InventionsAndIdeas
+- **Animal welfare** : Wild beim Wild, Sentient Media, Animal Equality
+- **Solutions / Suisse** : Le Matin CH, Le Temps CH, Good Good Good
+- **Health / WHO / peer-reviewed** : WHO News EN, WHO News FR, Santé Magazine, Le Quotidien du Médecin, STAT News, Medical News Today, Nature, Science Magazine
+
+Le `MAX_PER_SOURCE_PER_RUN=3` empêche un People.com de noyer le pipeline. Le classifier prompt accepte déjà *"Authoritative reports or position statements from recognized bodies (IPCC, ICJ, IEA, WHO, IUCN, UNEP, GIEC)"* donc les press releases WHO passent sans modif supplémentaire.
+
+### Phase 10 — Apprentissage des reviews humaines (commit `62d7fcd`)
+
+Cyril a soulevé : *"est-ce que l'agent apprend de mes REVIEWS ?"*. Réponse honnête : **NON**. `training_data.jsonl` était écrit mais jamais réinjecté. Il a validé "A + B combinés" pour fixer ça. Zéro coût quota.
+
+**Solution A — Calibrator étendu** (`worker/agents/magnitude_calibrator.py`):
+Au boot, `_ensure_embeddings()` pulle toutes les rows résolues de `review_queue` avec `final_decision` BURN/MINT. BURN reviews → étendent `CANONICAL_POSITIVE_SHIFTS` embeddings. MINT reviews → étendent `CANONICAL_NEGATIVE_REGRESSIONS`. Chaque entry est nommée `[human-reviewed BURN/MINT] <title>` pour audit.
+
+**Solution B — Analyst hint** (`worker/agents/analyst.py` + `analyst_b.py`):
+Avant chaque appel LLM, embedding de `(title + description)` + lookup top-3 reviews similaires (cosine ≥ 0.80). Si match, prepend `## PRIOR HUMAN REVIEW CONTEXT` au user_message avec les titres/verdicts trouvés. ~30-60 input tokens **seulement** quand match.
+
+**Storage** :
+- DB migration : `ALTER TABLE review_queue ADD COLUMN human_review_embedding BLOB; ADD COLUMN final_decision TEXT;`
+- `worker/resolve_review.py` : compute embedding de `(title + reason)` au moment de la résolution
+- `worker/semantic_cache.py` : nouveaux helpers `find_similar_human_reviews()` + `list_resolved_human_reviews()`
+- `worker/backfill_review_embeddings.py` : script one-shot, idempotent
+
+**Backfill exécuté** sur VPS : **26 reviews historiques** taggés (15 BURN, 8 MINT, 3 REJECTED).
+
+**Test live** : query *"Mongabay commentary on forestry dogma destroying alpine ash forests"* → match `cos=0.886 [BURN] What the grim outlook for Alpine Ash forests tell us about forestry dogma` → l'analyst recevra le hint et biaisera vers BURN.
+
+### Bug review queue stuck (commits `2030497`, `119c3df`)
+
+Cyril : *"Pourquoi il reste dans les REVIEW"* sur la review #25 Santa Marta. Diagnostic complet :
+1. User clique REVERSE
+2. `resolve_review.py` lance la TX Solana (60-90s sur RPC public)
+3. Web route `execFile` timeout 120s → SIGTERM le Python avant `export_events()`
+4. DB est marquée résolue, mais `web/data/review_queue.json` n'est PAS regen
+5. Frontend voit ancien fichier → row #25 visible
+6. User reclique → Python dit "not found (or already resolved)" → exit 1 → 500
+7. Frontend affiche encore l'erreur → la row reste
+
+**Fix double** :
+- **Backend** : "already resolved" devient un cas normal (logger.info, exit 0). Idempotent.
+- **Frontend** : reconnaît ce message comme un succès + refresh queue ; `onResolved?.()` aussi dans `finally` pour toujours synchroniser.
+- **Structurel** : `export_events()` déplacé **AVANT** la TX Solana dans `resolve_review.py`. Comme ça même si la TX timeout, la queue est à jour.
+
+---
+
 ## 🛡 2026-04-30 (suite) — Garde-fous Solana TX (préventif + curatif, gratuit)
 
 Cyril après le replay réussi des 18 TX (sleep 5s nécessaire, sleep 1s avait raté 13/18 par rate-limit RPC public) : *"2 ET 3 ET COMME ÇA ON RESTE EN GRATUIT CAR C'EST UN PROJET D'INTÉRÊT COMMUN ET DONC JE TRAVAILLE SEUL ET BÉNÉVOLEMENT"*. → On évite Helius/QuickNode (RPC payants), on traite la cause racine + on installe un filet.

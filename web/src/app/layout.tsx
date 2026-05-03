@@ -55,6 +55,14 @@ export default function RootLayout({
                 Transactions
               </Link>
               <Link
+                href="/citizen-actions"
+                className="font-medium hover:opacity-80 whitespace-nowrap"
+                style={{ color: "#B6FFCE" }}
+                title="Directory of citizen-led actions"
+              >
+                Citizen Actions
+              </Link>
+              <Link
                 href="/sources"
                 className="font-medium hover:opacity-80 whitespace-nowrap"
                 style={{ color: "#B8B9B6" }}

@@ -16,6 +16,8 @@ export interface CarbonEvent {
   country?: string | null;
   region?: string | null;
   administration?: string | null;
+  burn_subtype?: string | null;
+  mint_subtype?: string | null;
 }
 
 export interface CountryStat {
