@@ -10,7 +10,6 @@
  *   SMTP_PORT       — port (default 587)
  *   SMTP_USER       — full mailbox address used as auth username AND From
  *   SMTP_PASSWORD   — mailbox password
- *   OTP_RECIPIENT   — where to send OTP codes (default = SMTP_USER)
  */
 
 import nodemailer from "nodemailer";
@@ -42,18 +41,9 @@ function getTransporter(): Transporter {
   return cachedTransporter;
 }
 
-export function getOtpRecipient(): string {
-  const recipient = process.env.OTP_RECIPIENT ?? process.env.SMTP_USER;
-  if (!recipient) {
-    throw new Error("OTP_RECIPIENT (or SMTP_USER fallback) is not configured.");
-  }
-  return recipient;
-}
-
-export async function sendOtpEmail(code: string): Promise<void> {
+export async function sendOtpEmail(to: string, code: string): Promise<void> {
   const transporter = getTransporter();
   const from = process.env.SMTP_USER!;
-  const to = getOtpRecipient();
 
   await transporter.sendMail({
     from: `"CARBON WORLD admin" <${from}>`,

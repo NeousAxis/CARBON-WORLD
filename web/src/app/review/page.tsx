@@ -345,6 +345,7 @@ function OtpLoginUI({ onSuccess }: { onSuccess: () => void }) {
   const [step, setStep] = useState<"request" | "verify">("request");
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [email, setEmail] = useState("");
   const [recipient, setRecipient] = useState("");
   const [code, setCode] = useState("");
 
@@ -352,7 +353,11 @@ function OtpLoginUI({ onSuccess }: { onSuccess: () => void }) {
     setStatus("loading");
     setErrorMsg("");
     try {
-      const r = await fetch("/api/auth/otp/request", { method: "POST" });
+      const r = await fetch("/api/auth/otp/request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+      });
       if (!r.ok) {
         const err = await r.json().catch(() => ({}));
         throw new Error((err as { error?: string }).error ?? `HTTP ${r.status}`);
@@ -407,19 +412,47 @@ function OtpLoginUI({ onSuccess }: { onSuccess: () => void }) {
         </p>
 
         {step === "request" && (
-          <button
-            onClick={handleRequest}
-            disabled={status === "loading"}
-            className="w-full py-3 font-bold text-sm disabled:opacity-50"
-            style={{
-              backgroundColor: "#FF8400",
-              color: "#111111",
-              fontFamily: "'JetBrains Mono', monospace",
-              cursor: status === "loading" ? "wait" : "pointer",
-            }}
-          >
-            {status === "loading" ? "Sending code…" : "Email me a login code"}
-          </button>
+          <>
+            <label
+              className="block text-xs font-mono uppercase tracking-wider mb-2"
+              style={{ color: "#B8B9B6" }}
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              autoFocus
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && email.includes("@")) handleRequest();
+              }}
+              placeholder="you@example.com"
+              className="w-full px-3 py-3 mb-3 text-sm font-mono"
+              style={{
+                backgroundColor: "#111111",
+                border: "1px solid #2E2E2E",
+                color: "#FFFFFF",
+                outline: "none",
+              }}
+            />
+            <button
+              onClick={handleRequest}
+              disabled={status === "loading" || !email.includes("@")}
+              className="w-full py-3 font-bold text-sm disabled:opacity-50"
+              style={{
+                backgroundColor: "#FF8400",
+                color: "#111111",
+                fontFamily: "'JetBrains Mono', monospace",
+                cursor:
+                  status === "loading" || !email.includes("@")
+                    ? "not-allowed"
+                    : "pointer",
+              }}
+            >
+              {status === "loading" ? "Sending code…" : "Send me a login code"}
+            </button>
+          </>
         )}
 
         {step === "verify" && (
