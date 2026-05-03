@@ -259,7 +259,7 @@ export async function POST(request: Request) {
 
     const baseUrl =
       process.env.NEXT_PUBLIC_BASE_URL ||
-      (request.headers.get("origin") ?? "https://carbon-token.xyz");
+      (request.headers.get("origin") ?? "https://carbon-world.xyz");
 
     return new Response(
       JSON.stringify({

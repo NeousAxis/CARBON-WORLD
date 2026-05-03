@@ -141,7 +141,7 @@ Effet : réduit les faux-INVALID sur les events légitimes mais au phrasing non-
   "submission_id": "sub_20260420_amazonwatch_001",
   "queue_position": 3,
   "estimated_scoring_time_seconds": 180,
-  "callback_url": "https://carbon-token.xyz/api/v1/submissions/sub_20260420_amazonwatch_001"
+  "callback_url": "https://carbon-world.xyz/api/v1/submissions/sub_20260420_amazonwatch_001"
 }
 ```
 
@@ -264,7 +264,7 @@ Modifications :
 >
 > Je suis Neous Axis, fondateur de **CARBON WORLD** — un indice scientifique open-source qui score en temps réel l'impact éthique des décisions humaines affectant le vivant, basé sur 7 référentiels des Nations Unies (17 ODD, UDHR, OIT, CRC, UNDRIP, droits des animaux, limites planétaires). Le token CBWD existe sur Solana uniquement comme **preuve cryptographique d'intégrité** des analyses — c'est un outil scientifique, pas un actif spéculatif.
 >
-> Notre pipeline IA lit ~400 articles/jour issus de 157 sources mondiales. Il identifie les décisions à fort impact puis les pondère via un cadre 4D (Snapshot, Trajectoire, Réévaluation, Prospective). Toutes les analyses sont publiques, horodatées on-chain, vérifiables : [carbon-token.xyz](https://carbon-token.xyz).
+> Notre pipeline IA lit ~400 articles/jour issus de 157 sources mondiales. Il identifie les décisions à fort impact puis les pondère via un cadre 4D (Snapshot, Trajectoire, Réévaluation, Prospective). Toutes les analyses sont publiques, horodatées on-chain, vérifiables : [carbon-token.xyz](https://carbon-world.xyz).
 >
 > **Mon offre pour [Nom de l'organisation]** : accès API gratuit et illimité à l'ensemble des events scorés. Concrètement :
 >
@@ -279,7 +279,7 @@ Modifications :
 >
 > Bien cordialement,
 > **Neous Axis** — Fondateur, CARBON WORLD
-> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-token.xyz)
+> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-world.xyz)
 
 ### Version anglaise
 
@@ -289,7 +289,7 @@ Modifications :
 >
 > I'm Neous Axis, founder of **CARBON WORLD** — an open-source scientific index that scores in real time the ethical impact of human decisions affecting the living world, based on seven UN reference frameworks (17 SDGs, UDHR, ILO, CRC, UNDRIP, Animal Rights, Planetary Boundaries). The CBWD token lives on Solana solely as **cryptographic proof of integrity** — it's a scientific instrument, not a speculative asset.
 >
-> Our AI pipeline reads ~400 articles/day from 157 worldwide sources. It flags high-impact decisions and weighs them through a 4D framework (Snapshot, Trajectory, Revaluation, Prospective). All analyses are public, on-chain timestamped, verifiable: [carbon-token.xyz](https://carbon-token.xyz).
+> Our AI pipeline reads ~400 articles/day from 157 worldwide sources. It flags high-impact decisions and weighs them through a 4D framework (Snapshot, Trajectory, Revaluation, Prospective). All analyses are public, on-chain timestamped, verifiable: [carbon-token.xyz](https://carbon-world.xyz).
 >
 > **My offer for [Organization]**: free, unlimited API access to the full scored event stream. In practice:
 >
@@ -304,7 +304,7 @@ Modifications :
 >
 > Best regards,
 > **Neous Axis** — Founder, CARBON WORLD
-> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-token.xyz)
+> hello@carbon-token.xyz | [carbon-token.xyz](https://carbon-world.xyz)
 
 ---
 

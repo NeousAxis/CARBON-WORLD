@@ -77,7 +77,7 @@ export async function GET(
 
     const baseUrl =
       process.env.NEXT_PUBLIC_BASE_URL ||
-      (request.headers.get("origin") ?? "https://carbon-token.xyz");
+      (request.headers.get("origin") ?? "https://carbon-world.xyz");
 
     const resultingEventUrl =
       row.resulting_event_id != null

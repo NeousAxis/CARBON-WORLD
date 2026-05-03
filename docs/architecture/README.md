@@ -23,7 +23,7 @@ flowchart TD
     WRITER --> EXPORTER["EXPORTER<br/>(export.json)"]
     EXPORTER --> GITPUSH["git push main"]
     GITPUSH --> VPS_REBUILD["VPS pulls<br/>rebuild Next.js si web/ change"]
-    VPS_REBUILD --> FRONT["https://carbon-token.xyz<br/>(Caddy + Next.js)"]
+    VPS_REBUILD --> FRONT["https://carbon-world.xyz<br/>(Caddy + Next.js)"]
 ```
 
 Provider LLM par agent : voir [CLAUDE.md](../../CLAUDE.md) section "Architecture technique" et la table multi-providers.

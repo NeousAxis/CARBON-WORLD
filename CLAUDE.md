@@ -33,10 +33,10 @@
 - **Frontend** : Next.js 16 **hébergé sur le VPS**, passkey auth /review (WebAuthn)
   - Service systemd : `carbon-web.service` → `next-server` sur `:3000`
   - Reverse proxy : **Caddy** (80/443) avec certificat Let's Encrypt auto
-  - URL prod : `https://carbon-token.xyz` (A record Infomaniak → 157.90.250.40)
+  - URL prod **principal** : `https://carbon-world.xyz` (depuis 2026-05-03 — Caddy sert les 4 hostnames identiquement pendant la migration ; `carbon-token.xyz` continue de répondre)
   - **Vercel désactivé** (2026-04-17) — GitHub integration débranchée, plus aucun deploy cloud
-  - Passkey registré (Touch ID), env vars `SESSION_SECRET` / `PASSKEY_CREDENTIAL` / `RP_ID=carbon-token.xyz` / `RP_ORIGIN=https://carbon-token.xyz` côté VPS
-- **Domaine** : `carbon-token.xyz` → VPS (A 157.90.250.40, AAAA IPv6). `www` CNAME vercel-dns reliquat à nettoyer.
+  - Passkey registré (Touch ID) toujours sous `RP_ID=carbon-token.xyz` / `RP_ORIGIN=https://carbon-token.xyz` jusqu'à Phase B (re-création passkey sur le nouveau domaine + 301 redirect carbon-token → carbon-world)
+- **Domaines** : `carbon-world.xyz` (nouveau, A→157.90.250.40 chez Infomaniak) **et** `carbon-token.xyz` (legacy, A→157.90.250.40, AAAA IPv6) — les deux servent l'app pendant la migration.
 - **Livre blanc** : `~/Library/Mobile Documents/com~apple~CloudDocs/CARBON-TOKEN/`
 - **Repo GitHub** : `https://github.com/NeousAxis/CARBON-WORLD` (PUBLIC depuis 2026-04-17)
 

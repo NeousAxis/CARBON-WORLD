@@ -96,7 +96,7 @@ carbon-token.xyz, www.carbon-token.xyz {
   reverse_proxy localhost:3000
 }
 ```
-Puis `sudo systemctl reload caddy`. Tester via `curl -I https://carbon-token.xyz` pour confirmer les headers, puis scan [securityheaders.com](https://securityheaders.com) (objectif grade A).
+Puis `sudo systemctl reload caddy`. Tester via `curl -I https://carbon-world.xyz` pour confirmer les headers, puis scan [securityheaders.com](https://securityheaders.com) (objectif grade A).
 **Note** : `unsafe-inline` styles reste nécessaire pour Tailwind JIT (inline CSS). Pour passer à A+ : migrer vers nonces ou hashes, mais pas prioritaire.
 
 ### H4. Pas de rate-limit sur endpoints auth Next.js
@@ -225,7 +225,7 @@ Ensuite GitHub affichera "Verified" sur chaque commit. **Note** : les commits VP
 2. Activer UFW (C1)
 3. Hardening sshd_config.d/99-hardening.conf (C3 + H2 + M6)
 4. Reboot VPS (H1)
-5. Vérifier : `ssh carbon@157.90.250.40` toujours fonctionnel, `curl -I https://carbon-token.xyz` OK, cron VPS reprend.
+5. Vérifier : `ssh carbon@157.90.250.40` toujours fonctionnel, `curl -I https://carbon-world.xyz` OK, cron VPS reprend.
 
 **Session 2 (~30 min)** — edge web + secrets :
 6. Caddy security headers (H3)
@@ -263,7 +263,7 @@ ssh carbon@157.90.250.40 'sudo sshd -T | grep -iE "passwordauth|permitroot|x11|c
 ssh carbon@157.90.250.40 "[ -f /var/run/reboot-required ] && echo PENDING || echo OK"
 
 # H3 — Caddy headers
-curl -sI https://carbon-token.xyz | grep -iE "strict-transport|x-frame|content-security"
+curl -sI https://carbon-world.xyz | grep -iE "strict-transport|x-frame|content-security"
 
 # H5 — SETUP_SECRET retiré
 ssh carbon@157.90.250.40 "grep SETUP_SECRET ~/CARBON-WORLD/web/.env.local || echo OK"

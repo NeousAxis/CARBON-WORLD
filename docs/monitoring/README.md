@@ -30,7 +30,7 @@ alias carbon-monitor='ssh -L 3001:127.0.0.1:3001 carbon@157.90.250.40'
 |---|---|
 | Monitor Type | HTTP(s) |
 | Friendly Name | `carbon-token.xyz` |
-| URL | `https://carbon-token.xyz` |
+| URL | `https://carbon-world.xyz` |
 | Heartbeat Interval | `300` (secondes, = 5 min) |
 | Retries | 2 |
 | Accepted Status Codes | `200-299` |
@@ -41,7 +41,7 @@ alias carbon-monitor='ssh -L 3001:127.0.0.1:3001 carbon@157.90.250.40'
 |---|---|
 | Monitor Type | HTTP(s) - Keyword |
 | Friendly Name | `api/stats` |
-| URL | `https://carbon-token.xyz/api/stats` |
+| URL | `https://carbon-world.xyz/api/stats` |
 | Keyword | `total_events` |
 | Heartbeat Interval | `300` |
 

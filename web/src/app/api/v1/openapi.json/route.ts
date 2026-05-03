@@ -19,7 +19,7 @@ const SPEC = {
     contact: {
       name: "Neous Axis — CARBON WORLD",
       email: "hello@carbon-token.xyz",
-      url: "https://carbon-token.xyz",
+      url: "https://carbon-world.xyz",
     },
     license: {
       name: "MIT",
@@ -28,7 +28,7 @@ const SPEC = {
   },
   servers: [
     {
-      url: "https://carbon-token.xyz/api/v1",
+      url: "https://carbon-world.xyz/api/v1",
       description: "Production",
     },
     {
