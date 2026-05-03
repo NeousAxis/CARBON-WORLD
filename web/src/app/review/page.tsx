@@ -87,16 +87,25 @@ function ReviewCard({
         body: JSON.stringify({ verdict, reason }),
       });
       const data = await res.json() as Record<string, unknown>;
-      if (res.ok) {
-        setResult({ kind: "ok", msg: "Done" });
+      const detail = typeof data.detail === "string" ? data.detail : "";
+      const errMsgRaw = typeof data.error === "string" ? data.error : "";
+
+      // Treat "not found (or already resolved)" as a success: the action
+      // succeeded on a previous click but the UI didn't refresh because the
+      // Solana confirmation outran the 120 s execFile timeout. We refresh
+      // the queue so the row disappears and the user is not confused.
+      const alreadyResolved =
+        /not found.*already resolved/i.test(detail) ||
+        /not found.*already resolved/i.test(errMsgRaw);
+
+      if (res.ok || alreadyResolved) {
+        setResult({
+          kind: "ok",
+          msg: alreadyResolved ? "Already resolved — queue refreshed" : "Done",
+        });
         onResolved?.();
       } else {
-        const errMsg =
-          typeof data.detail === "string"
-            ? data.detail
-            : typeof data.error === "string"
-            ? data.error
-            : "Unknown error";
+        const errMsg = detail || errMsgRaw || "Unknown error";
         setResult({ kind: "err", msg: errMsg });
       }
     } catch (err) {
@@ -106,6 +115,11 @@ function ReviewCard({
       });
     } finally {
       setBusy(null);
+      // Always refresh the queue on action complete — even on errors. If
+      // the Python CLI succeeded but the route timed out (504), the row is
+      // already gone from review_queue server-side and a refresh aligns the
+      // UI with reality.
+      onResolved?.();
     }
   }
 

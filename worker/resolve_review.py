@@ -54,8 +54,13 @@ def main() -> int:
     reviews = get_pending_reviews()
     review = next((r for r in reviews if r["id"] == args.review_id), None)
     if not review:
-        logger.error("Review #%d not found (or already resolved).", args.review_id)
-        return 1
+        # Exit code 0 here: the row is genuinely not pending anymore — most
+        # likely a previous click succeeded server-side while the web route
+        # timed out client-side. Returning 0 means the API returns 200 with
+        # this message, the UI refreshes its queue, and the row disappears.
+        logger.info("Review #%d not found (or already resolved).", args.review_id)
+        print(f"Review #{args.review_id} not found (or already resolved).")
+        return 0
 
     logger.info("Review #%d: %s", review["id"], review["event_title"][:80])
 
