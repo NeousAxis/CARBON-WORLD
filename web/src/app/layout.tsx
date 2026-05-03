@@ -98,6 +98,16 @@ export default function RootLayout({
         <footer style={{ backgroundColor: "#1A1A1A", borderTop: "1px solid #2E2E2E" }}>
           <div className="mx-auto max-w-5xl px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between text-xs sm:text-sm" style={{ color: "#B8B9B6" }}>
             <span>Powered by Carbon World</span>
+            <span
+              className="font-mono uppercase tracking-wider"
+              style={{ color: "#B8B9B6", fontSize: "0.75rem" }}
+              aria-label="Swiss based project"
+            >
+              <span aria-hidden style={{ color: "#FF5C33", marginRight: 6 }}>
+                🇨🇭
+              </span>
+              Swiss based project
+            </span>
             <a
               href="https://github.com/NeousAxis/CARBON-WORLD"
               target="_blank"
