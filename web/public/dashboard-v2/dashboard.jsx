@@ -587,9 +587,12 @@ function buildSupplySeries(events, totalMinted, totalBurned) {
 }
 
 async function fetchLiveSnapshot() {
-  const url = `/data/export.json?t=${Date.now()}`;
+  // /api/stats is the Next.js route that reads web/data/export.json server-side
+  // and serves it as JSON. Public assets under /data/* are NOT served, so we
+  // must go through the API route.
+  const url = `/api/stats?t=${Date.now()}`;
   const res = await fetch(url, { cache: 'no-store' });
-  if (!res.ok) throw new Error(`fetch /data/export.json failed: ${res.status}`);
+  if (!res.ok) throw new Error(`fetch ${url} failed: ${res.status}`);
   const data = await res.json();
   const rawEvents = Array.isArray(data.events) ? data.events : [];
   const mapped = rawEvents.map(mapCarbonEvent).slice(0, 60);
