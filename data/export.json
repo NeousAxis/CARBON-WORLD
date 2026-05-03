@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-02T19:26:22.158166+00:00",
-  "total_events": 133,
+  "generated_at": "2026-05-03T04:45:55.362413+00:00",
+  "total_events": 134,
   "total_burned": 15496000,
-  "total_minted": 94438750,
+  "total_minted": 95188750,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 134,
+      "event_title": "Government announces program to unlock land for oil infrastructure",
+      "event_url": "https://www.abc.net.au/news/2026-05-03/qld-state-land-unlocked-oil-storage-refineries-ports/106635842",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": -4.42,
+      "confidence": 7,
+      "justification": "Expanding oil infrastructure undermines climate goals and planetary boundaries despite short-term economic rationale. | While the program seeks to address energy affordability and infrastructure resilience, it does so by reinforcing fossil fuel systems, directly conflicting with climate commitments and planetary boundaries. The short-term economic benefits are outweighed by long-term environmental degradation, increased emissions, and risks to Indigenous rights. This represents a regressive step",
+      "tx_hash": "k3tBiVxumPef6eUecdyyz5Q898N4PkyfCiEbybrCmjHWwwqhMzy3ecHyWmawHWrS34n4AwCJMZc8tjsCPPVviea",
+      "created_at": "2026-05-03T04:45:55.132149+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Program aims to reduce fuel costs for consumers and improve energy security by expanding infrastructure capacity.\", \"affected_sdgs\": [7, 9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"May enhance short-term economic stability by mitigating fuel price volatility and supporting transport and industry.\", \"affected_sdgs\": [8, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Expanding oil infrastructure increases long-term fossil fuel dependence and undermines climate action goals.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Land conversion for oil facilities risks biodiversity loss, soil degradation, and freshwater contamination.\", \"affected_sdgs\": [6, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}, {\"description\": \"Potential displacement or impact on Indigenous communities if land is taken without free, prior and informed consent.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UNDRIP Article 10\", \"UNDRIP Article 29\"], \"magnitude\": 6, \"frameworks\": [\"UNDRIP\", \"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 133,
       "event_title": "NGT order warns of fines to southern States if clean air funds are not utilised",
@@ -2936,8 +2958,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 8,
-        "total_amount": 4550000
+        "count": 7,
+        "total_amount": 4400000
       },
       {
         "country": "Brazil",
@@ -2995,8 +3017,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.143,
-        "events": 7
+        "burn_ratio": 0.2,
+        "events": 5
       },
       {
         "region": "Europe",
@@ -3006,7 +3028,7 @@
       {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 10
+        "events": 9
       }
     ],
     "top_regions_destructive": [
@@ -3018,12 +3040,12 @@
       {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 10
+        "events": 9
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.857,
-        "events": 7
+        "mint_ratio": 0.8,
+        "events": 5
       },
       {
         "region": "Latin America",
@@ -3037,11 +3059,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-04-26",
-        "net_minted": 5180000,
-        "net_burned": 0
-      },
       {
         "date": "2026-04-27",
         "net_minted": 2650000,
@@ -3071,27 +3088,32 @@
         "date": "2026-05-02",
         "net_minted": 3124000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-05-03",
+        "net_minted": 750000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 132,
-      "event_title": "Imprisoned Iranian Nobel laureate Mohammadi rushed to hospital following cardiac 'crisis'",
+      "id": 134,
+      "event_title": "Government announces program to unlock land for oil infrastructure",
       "decision": "MINT",
-      "amount_crbn": 125000,
-      "final_score": -3.88,
+      "amount_crbn": 750000,
+      "final_score": -4.42,
       "confidence": 7,
-      "country": "Iran",
-      "region": "MENA",
-      "created_at": "2026-05-02T19:26:21.739459+00:00"
+      "country": "Australia",
+      "region": "Oceania",
+      "created_at": "2026-05-03T04:45:55.132149+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 36,
-        "negative": 44
+        "positive": 34,
+        "negative": 41
       },
       "UDHR": {
-        "positive": 8,
-        "negative": 20
+        "positive": 7,
+        "negative": 19
       },
       "ILO": {
         "positive": 2,
@@ -3103,26 +3125,26 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 4
+        "negative": 5
       },
       "Animal": {
         "positive": 1,
-        "negative": 2
+        "negative": 3
       },
       "PB": {
-        "positive": 14,
-        "negative": 17
+        "positive": 13,
+        "negative": 16
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 92.3,
-      "mainstream_pct": 7.7,
-      "total_sources_used": 26,
-      "articles_processed": 49
+      "niche_pct": 91.7,
+      "mainstream_pct": 8.3,
+      "total_sources_used": 24,
+      "articles_processed": 46
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 49,
+      "total_events": 46,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -3155,9 +3177,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 9,
+        "count": 10,
         "burn_count": 5,
-        "mint_count": 4
+        "mint_count": 5
       },
       {
         "name": "Construction",
@@ -3215,14 +3237,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 37,
+      "total_mint": 34,
       "direct_action": {
-        "count": 31,
-        "pct": 83.8
+        "count": 28,
+        "pct": 82.4
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 16.2
+        "pct": 17.6
       },
       "untyped": {
         "count": 0,
@@ -3230,14 +3252,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 115,
+      "total_mint": 116,
       "direct_action": {
-        "count": 96,
-        "pct": 83.5
+        "count": 97,
+        "pct": 83.6
       },
       "editorial_alarm": {
         "count": 19,
-        "pct": 16.5
+        "pct": 16.4
       },
       "untyped": {
         "count": 0,
