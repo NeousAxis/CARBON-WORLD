@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
-import { startAuthentication } from "@simplewebauthn/browser";
 
 // ---------------------------------------------------------------------------
 // Types (matching the review_queue.json shape)
@@ -339,55 +338,51 @@ function ReviewCard({
 }
 
 // ---------------------------------------------------------------------------
-// PasskeyLoginUI
+// OtpLoginUI — email-based 6-digit code (no passkey, no password manager)
 // ---------------------------------------------------------------------------
 
-function PasskeyLoginUI({ onSuccess }: { onSuccess: () => void }) {
+function OtpLoginUI({ onSuccess }: { onSuccess: () => void }) {
+  const [step, setStep] = useState<"request" | "verify">("request");
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [recipient, setRecipient] = useState("");
+  const [code, setCode] = useState("");
 
-  async function handleLogin() {
+  async function handleRequest() {
     setStatus("loading");
     setErrorMsg("");
-
     try {
-      // 1. Get challenge from server
-      const challengeRes = await fetch("/api/auth/login/challenge", {
-        method: "POST",
-      });
-
-      if (!challengeRes.ok) {
-        const err = await challengeRes.json().catch(() => ({}));
-        throw new Error((err as { error?: string }).error ?? "Failed to get challenge");
+      const r = await fetch("/api/auth/otp/request", { method: "POST" });
+      if (!r.ok) {
+        const err = await r.json().catch(() => ({}));
+        throw new Error((err as { error?: string }).error ?? `HTTP ${r.status}`);
       }
+      const { recipient: masked } = (await r.json()) as { recipient?: string };
+      setRecipient(masked ?? "");
+      setStep("verify");
+      setStatus("idle");
+    } catch (err) {
+      setErrorMsg(err instanceof Error ? err.message : String(err));
+      setStatus("error");
+    }
+  }
 
-      const options = await challengeRes.json();
-
-      // 2. Invoke browser WebAuthn (Touch ID / Face ID / Windows Hello)
-      const authResponse = await startAuthentication({ optionsJSON: options });
-
-      // 3. Verify with server
-      const verifyRes = await fetch("/api/auth/login/verify", {
+  async function handleVerify() {
+    setStatus("loading");
+    setErrorMsg("");
+    try {
+      const r = await fetch("/api/auth/otp/verify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ response: authResponse }),
+        body: JSON.stringify({ code: code.trim() }),
       });
-
-      if (!verifyRes.ok) {
-        const err = await verifyRes.json().catch(() => ({}));
+      if (!r.ok) {
+        const err = await r.json().catch(() => ({}));
         throw new Error((err as { error?: string }).error ?? "Verification failed");
       }
-
-      // Success — session cookie is now set
       onSuccess();
     } catch (err) {
-      // User may have cancelled the authenticator dialog — handle gracefully
-      const msg = err instanceof Error ? err.message : String(err);
-      if (msg.toLowerCase().includes("cancel") || msg.toLowerCase().includes("abort")) {
-        setErrorMsg("Authentication cancelled.");
-      } else {
-        setErrorMsg(msg);
-      }
+      setErrorMsg(err instanceof Error ? err.message : String(err));
       setStatus("error");
     }
   }
@@ -411,19 +406,83 @@ function PasskeyLoginUI({ onSuccess }: { onSuccess: () => void }) {
           Human review queue — restricted access.
         </p>
 
-        <button
-          onClick={handleLogin}
-          disabled={status === "loading"}
-          className="w-full py-3 font-bold text-sm disabled:opacity-50"
-          style={{
-            backgroundColor: "#FF8400",
-            color: "#111111",
-            fontFamily: "'JetBrains Mono', monospace",
-            cursor: status === "loading" ? "wait" : "pointer",
-          }}
-        >
-          {status === "loading" ? "Waiting for authenticator…" : "Sign in with Passkey"}
-        </button>
+        {step === "request" && (
+          <button
+            onClick={handleRequest}
+            disabled={status === "loading"}
+            className="w-full py-3 font-bold text-sm disabled:opacity-50"
+            style={{
+              backgroundColor: "#FF8400",
+              color: "#111111",
+              fontFamily: "'JetBrains Mono', monospace",
+              cursor: status === "loading" ? "wait" : "pointer",
+            }}
+          >
+            {status === "loading" ? "Sending code…" : "Email me a login code"}
+          </button>
+        )}
+
+        {step === "verify" && (
+          <>
+            <p className="text-xs font-mono mb-3" style={{ color: "#B8B9B6" }}>
+              Code sent to <span style={{ color: "#B6FFCE" }}>{recipient}</span>.
+              Check your inbox and paste the 6-digit code below.
+            </p>
+            <input
+              type="text"
+              inputMode="numeric"
+              pattern="\d{6}"
+              maxLength={6}
+              autoFocus
+              value={code}
+              onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && code.length === 6) handleVerify();
+              }}
+              placeholder="123456"
+              className="w-full px-3 py-3 mb-3 text-lg font-mono tracking-[0.3em] text-center"
+              style={{
+                backgroundColor: "#111111",
+                border: "1px solid #2E2E2E",
+                color: "#FFFFFF",
+                outline: "none",
+              }}
+            />
+            <button
+              onClick={handleVerify}
+              disabled={status === "loading" || code.length !== 6}
+              className="w-full py-3 font-bold text-sm disabled:opacity-50"
+              style={{
+                backgroundColor: "#FF8400",
+                color: "#111111",
+                fontFamily: "'JetBrains Mono', monospace",
+                cursor:
+                  status === "loading" || code.length !== 6
+                    ? "not-allowed"
+                    : "pointer",
+              }}
+            >
+              {status === "loading" ? "Verifying…" : "Sign in"}
+            </button>
+            <button
+              onClick={() => {
+                setStep("request");
+                setCode("");
+                setErrorMsg("");
+                setStatus("idle");
+              }}
+              className="w-full mt-2 py-2 text-xs font-mono uppercase tracking-wider"
+              style={{
+                backgroundColor: "transparent",
+                color: "#B8B9B6",
+                border: "1px solid #2E2E2E",
+                cursor: "pointer",
+              }}
+            >
+              ← Send a new code
+            </button>
+          </>
+        )}
 
         {status === "error" && (
           <p className="mt-3 text-sm" style={{ color: "#FF5C33" }}>
@@ -503,7 +562,7 @@ export default function ReviewPage() {
   }
 
   if (authState === "unauthenticated") {
-    return <PasskeyLoginUI onSuccess={() => setAuthState("authenticated")} />;
+    return <OtpLoginUI onSuccess={() => setAuthState("authenticated")} />;
   }
 
   return (
