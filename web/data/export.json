@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-03T11:59:20.750644+00:00",
-  "total_events": 134,
+  "generated_at": "2026-05-03T13:35:28.054776+00:00",
+  "total_events": 135,
   "total_burned": 15496000,
-  "total_minted": 95188750,
+  "total_minted": 95938750,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 135,
+      "event_title": "Israel approves purchase of fighter jets from the US",
+      "event_url": "https://www.aljazeera.com/news/2026/5/3/israel-approves-purchase-of-fighter-jets-from-the-us?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": -4.3,
+      "confidence": 7,
+      "justification": "Military escalation and carbon-intensive defense procurement undermine peace and climate goals. | While national defense is a legitimate concern under the right to security, the acquisition of advanced fighter jets escalates regional military competition and locks in high-emission infrastructure. The decision prioritizes short-term military capability over long-term peacebuilding, climate stability, and investment in human development. Given the context of ongoing regional tensions, this move is",
+      "tx_hash": "363oNSg9bSvfZXRRJq5JftMqt6tYXDNotruSHVRPeM72QHDfpLForVi3zKhPZXeLcf96PYWfNZuZEGpeVfHMZS8f",
+      "created_at": "2026-05-03T13:35:27.706835+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Strengthening of defense capabilities may contribute to national security and deterrence, potentially reducing long-term conflict risk if used for defensive stability.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Procurement of advanced combat aircraft increases military escalation risks in a volatile region, potentially undermining regional peace and diverting resources from social and environmental needs.\", \"affected_sdgs\": [1, 2, 3, 4, 6, 7, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"High-carbon military assets contribute to greenhouse gas emissions over decades of operation, conflicting with climate action goals.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 134,
       "event_title": "Government announces program to unlock land for oil infrastructure",
@@ -2977,9 +2999,9 @@
         "total_amount": 1745000
       },
       {
-        "country": "Mexico",
+        "country": "Israel",
         "count": 2,
-        "total_amount": 546000
+        "total_amount": 1950000
       }
     ],
     "top_countries_burn": [
@@ -3006,14 +3028,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "MENA",
-        "burn_ratio": 0.25,
-        "events": 4
-      },
-      {
         "region": "Latin America",
         "burn_ratio": 0.222,
         "events": 9
+      },
+      {
+        "region": "MENA",
+        "burn_ratio": 0.2,
+        "events": 5
       },
       {
         "region": "Asia",
@@ -3043,6 +3065,11 @@
         "events": 9
       },
       {
+        "region": "MENA",
+        "mint_ratio": 0.8,
+        "events": 5
+      },
+      {
         "region": "Asia",
         "mint_ratio": 0.8,
         "events": 5
@@ -3051,11 +3078,6 @@
         "region": "Latin America",
         "mint_ratio": 0.778,
         "events": 9
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 0.75,
-        "events": 4
       }
     ],
     "supply_trend_7d": [
@@ -3091,7 +3113,7 @@
       },
       {
         "date": "2026-05-03",
-        "net_minted": 750000,
+        "net_minted": 1500000,
         "net_burned": 0
       }
     ],
@@ -3108,11 +3130,11 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 34,
-        "negative": 41
+        "positive": 35,
+        "negative": 42
       },
       "UDHR": {
-        "positive": 7,
+        "positive": 8,
         "negative": 19
       },
       "ILO": {
@@ -3133,18 +3155,18 @@
       },
       "PB": {
         "positive": 13,
-        "negative": 16
+        "negative": 17
       }
     },
     "source_diversity_7d": {
       "niche_pct": 91.7,
       "mainstream_pct": 8.3,
       "total_sources_used": 24,
-      "articles_processed": 46
+      "articles_processed": 47
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 46,
+      "total_events": 47,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -3183,9 +3205,9 @@
       },
       {
         "name": "Construction",
-        "count": 5,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 5
+        "mint_count": 6
       },
       {
         "name": "Forestry",
@@ -3195,6 +3217,12 @@
       },
       {
         "name": "Finance",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2
+      },
+      {
+        "name": "Defense",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1
@@ -3237,14 +3265,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 34,
+      "total_mint": 35,
       "direct_action": {
-        "count": 28,
-        "pct": 82.4
+        "count": 29,
+        "pct": 82.9
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 17.6
+        "pct": 17.1
       },
       "untyped": {
         "count": 0,
@@ -3252,14 +3280,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 116,
+      "total_mint": 117,
       "direct_action": {
-        "count": 97,
-        "pct": 83.6
+        "count": 98,
+        "pct": 83.8
       },
       "editorial_alarm": {
         "count": 19,
-        "pct": 16.4
+        "pct": 16.2
       },
       "untyped": {
         "count": 0,
