@@ -196,7 +196,8 @@ export function WorldMap({ events, windowDays = 7, height = 460 }: WorldMapProps
         style={{
           display: "block",
           height: `clamp(220px, 50vw, ${height}px)`,
-          background: "#FFFFFF",
+          // Match Lunaris card bg so the recolored hex grid blends seamlessly.
+          background: "var(--card-bg, #1A1A1A)",
         }}
       >
         {/* Layer 1 — decorative hex grid (Figma asset) */}
