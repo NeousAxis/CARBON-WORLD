@@ -8,10 +8,55 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
+// `metadataBase` is required so Next 16 can resolve relative og:image URLs
+// (the auto-generated /opengraph-image) against the canonical host.
 export const metadata: Metadata = {
-  title: "CARBON WORLD",
+  metadataBase: new URL("https://carbon-world.xyz"),
+  title: {
+    default: "CARBON WORLD — AI-driven Solana ethical impact index",
+    template: "%s · CARBON WORLD",
+  },
   description:
-    "AI-powered ethical scoring of human decisions. CBWD token on Solana.",
+    "An AI-driven Solana token (CBWD) whose supply reflects humanity's measurable impact on the living world. BURN when decisions help life, MINT when they harm it. Swiss-based, open-source, volunteer.",
+  applicationName: "CARBON WORLD",
+  keywords: [
+    "CARBON WORLD",
+    "CBWD",
+    "Solana",
+    "ethics",
+    "SDG",
+    "planetary boundaries",
+    "open-source",
+    "AI",
+    "indicator",
+  ],
+  authors: [{ name: "Neous Axis", url: "https://carbon-world.xyz" }],
+  creator: "Neous Axis",
+  publisher: "Neous Axis",
+  alternates: {
+    canonical: "https://carbon-world.xyz",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "CARBON WORLD",
+    title: "CARBON WORLD — AI-driven Solana ethical impact index",
+    description:
+      "An AI-driven Solana token whose supply reflects humanity's measurable impact on the living world. BURN when decisions help life, MINT when they harm it.",
+    url: "https://carbon-world.xyz",
+    // og:image is auto-injected from src/app/opengraph-image.tsx
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CARBON WORLD — AI-driven Solana ethical impact index",
+    description:
+      "An AI-driven Solana token whose supply reflects humanity's measurable impact on the living world.",
+    // twitter:image is auto-injected from src/app/opengraph-image.tsx
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
