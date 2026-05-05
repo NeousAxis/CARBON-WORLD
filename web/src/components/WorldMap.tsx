@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { CarbonEvent } from "@/lib/types";
 
 /**
@@ -53,6 +54,20 @@ const NAME_TO_ISO: Record<string, string> = {
   "Afghanistan": "AF", "Kazakhstan": "KZ", "Uzbekistan": "UZ",
 };
 
+// Reverse mapping: ISO-2 → canonical event country name (the one stored in
+// `event.country` by the analyst LLM). When the same ISO has multiple
+// aliases (e.g. "United States" vs "United States of America"), pick the
+// shorter one — by convention that's the canonical short form used by the
+// pipeline. This drives the /events?country=… drill-down so the filter
+// hits actual event rows.
+const ISO_TO_CANONICAL: Record<string, string> = (() => {
+  const out: Record<string, string> = {};
+  for (const [name, iso] of Object.entries(NAME_TO_ISO)) {
+    if (!out[iso] || name.length < out[iso].length) out[iso] = name;
+  }
+  return out;
+})();
+
 interface WorldCountry {
   id: string;
   name: string;
@@ -102,10 +117,13 @@ interface WorldMapProps {
 }
 
 export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps) {
+  const router = useRouter();
   const [countries, setCountries] = useState<WorldCountry[] | null>(null);
   const [hoverIso, setHoverIso] = useState<string | null>(null);
   const [hoverName, setHoverName] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number } | null>(null);
+  // Track press start so we don't navigate when the user is panning
+  const pressStart = useRef<{ x: number; y: number } | null>(null);
 
   // Pan + zoom state — operates on the SVG viewBox so the geometry stays crisp
   const W = 1000;
@@ -162,6 +180,7 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
   function handleMouseDown(e: React.MouseEvent<SVGSVGElement>) {
     isDragging.current = true;
     dragStart.current = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y };
+    pressStart.current = { x: e.clientX, y: e.clientY };
   }
   function handleMouseMove(e: React.MouseEvent<SVGSVGElement>) {
     setTooltip({ x: e.clientX, y: e.clientY });
@@ -334,6 +353,7 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
         {countries?.map((c) => {
           const iso = NAME_TO_ISO[c.name];
           const focused = !!c.name && hoverName === c.name;
+          const hasStats = !!iso && !!countryStats[iso];
           return (
             <path
               key={c.id}
@@ -343,6 +363,7 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
               strokeWidth={focused ? 1.2 : 0.4}
               style={{
                 transition: "fill 400ms linear",
+                cursor: hasStats ? "pointer" : "default",
               }}
               onMouseEnter={() => {
                 setHoverName(c.name);
@@ -351,6 +372,20 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
               onMouseLeave={() => {
                 setHoverName(null);
                 setHoverIso(null);
+              }}
+              onClick={(e) => {
+                // Suppress navigation if the user actually panned (drag)
+                // — measured by movement between mousedown and mouseup.
+                if (pressStart.current) {
+                  const dx = e.clientX - pressStart.current.x;
+                  const dy = e.clientY - pressStart.current.y;
+                  if (Math.abs(dx) > 4 || Math.abs(dy) > 4) return;
+                }
+                if (!iso || !hasStats) return;
+                const canonical = ISO_TO_CANONICAL[iso] ?? c.name;
+                router.push(
+                  `/events?country=${encodeURIComponent(canonical)}&since=${windowDays}d`,
+                );
               }}
             />
           );
