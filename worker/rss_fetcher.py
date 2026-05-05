@@ -321,6 +321,44 @@ RSS_SOURCES: list[dict] = [
     # 8) Peer-reviewed scientific breakthroughs (PubMed Central, Nature, Science)
     {"url": "https://www.nature.com/nature.rss", "name": "Nature"},
     {"url": "https://www.science.org/rss/news_current.xml", "name": "Science Magazine"},
+
+    # ─── I. European country-specific (added 2026-05-05) ─────────────────────
+    # Cyril flagged that European decisions on sustainability / society /
+    # education / law are massively under-covered on the WorldMap because
+    # all the active European sources today are FR or UK. This section
+    # adds Germany, Italy, Netherlands, Switzerland (German-speaking),
+    # Austria, Sweden, Denmark, Norway, Finland, Belgium, Poland.
+    # Pure RSS — zero LLM consumption.
+    # Germany
+    {"url": "https://www.thelocal.de/feeds/rss.php", "name": "The Local Germany (EN)"},
+    {"url": "https://www.spiegel.de/international/index.rss", "name": "Spiegel International (Germany)"},
+    {"url": "https://www.tagesschau.de/index~rss2.xml", "name": "Tagesschau (Germany, DE)"},
+    # Italy
+    {"url": "https://www.thelocal.it/feeds/rss.php", "name": "The Local Italy (EN)"},
+    {"url": "https://www.ansa.it/english/english_rss.xml", "name": "ANSA English (Italy)"},
+    # Spain — Efeverde already there; add general policy
+    {"url": "https://www.thelocal.es/feeds/rss.php", "name": "The Local Spain (EN)"},
+    {"url": "https://english.elpais.com/rss/elpais/inenglish.xml", "name": "El País English"},
+    # Netherlands
+    {"url": "https://www.dutchnews.nl/feed/", "name": "DutchNews.nl"},
+    # Belgium / EU
+    {"url": "https://www.brusselstimes.com/feed/", "name": "Brussels Times (Belgium/EU)"},
+    {"url": "https://www.politico.eu/feed/", "name": "Politico Europe (full)"},
+    # Switzerland (German + Italian Swiss)
+    {"url": "https://www.swissinfo.ch/eng/rss", "name": "swissinfo.ch (CH, EN)"},
+    {"url": "https://www.thelocal.ch/feeds/rss.php", "name": "The Local Switzerland (EN)"},
+    # Austria
+    {"url": "https://www.thelocal.at/feeds/rss.php", "name": "The Local Austria (EN)"},
+    # Sweden / Denmark / Norway / Finland
+    {"url": "https://www.thelocal.se/feeds/rss.php", "name": "The Local Sweden (EN)"},
+    {"url": "https://www.thelocal.dk/feeds/rss.php", "name": "The Local Denmark (EN)"},
+    {"url": "https://www.thelocal.no/feeds/rss.php", "name": "The Local Norway (EN)"},
+    {"url": "https://yle.fi/uutiset/osasto/news/rss", "name": "Yle News (Finland, EN)"},
+    # Poland
+    {"url": "https://tvpworld.com/feed", "name": "TVP World (Poland, EN)"},
+    {"url": "https://notesfrompoland.com/feed/", "name": "Notes From Poland (EN)"},
+    # Greece
+    {"url": "https://www.ekathimerini.com/feed/", "name": "Kathimerini (Greece, EN)"},
 ]
 
 
