@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-05T18:42:00.075333+00:00",
-  "total_events": 175,
+  "generated_at": "2026-05-05T19:11:59.063828+00:00",
+  "total_events": 176,
   "total_burned": 58821000,
-  "total_minted": 174758750,
+  "total_minted": 176258750,
   "pending_reviews": 6,
   "events": [
+    {
+      "id": 176,
+      "event_title": "Plastic: supermarkets still addicted to packaging, with increasingly smaller formats and individualized bags",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/05/plastique-les-supermarches-toujours-accros-aux-emballages-avec-des-formats-de-plus-en-plus-petits-et-des-sachets-individualises_6685647_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.83,
+      "confidence": 8,
+      "justification": "Supermarket plastic packaging expansion violates environmental commitments and undermines SDGs 12, 13, 14, 15. | The investigative reporting reveals a stark contradiction between France's legal commitments to eliminate single-use plastics by 2040 and the actual behavior of supermarkets, which are intensifying plastic packaging use. While the journalism itself constitutes a positive consciousness-raising act, the core ethical failure lies with corporate actors undermining environmental and consum",
+      "tx_hash": "2ujsooKzHWuxanKTAou489NfFxRwmZiSCCjP3dJEKEa7JdhjRN95iZNFA8zUuwhfNH1rvaDphhxp6YcZBNsEZLcZ",
+      "created_at": "2026-05-05T19:11:58.775124+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Investigative journalism by Le Monde Planete exposes supermarket reliance on plastic packaging, raising public awareness of regulatory non-compliance and environmental harm\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Collaborative investigation by Que Choisir Ensemble and No Plastic in My Sea demonstrates civil society monitoring of corporate environmental commitments\", \"affected_sdgs\": [12, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Supermarkets continue to increase plastic packaging use through smaller formats and individualized bags despite France's 2040 single-use plastic ban commitment\", \"affected_sdgs\": [12, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25 (right to a standard of living adequate for health)\", \"Animal Rights Article 1 (right to existence)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 175,
       "event_title": "Board interpersonal diversity linked to lower tax avoidance",
@@ -3864,6 +3886,11 @@
         "total_amount": 5850000
       },
       {
+        "country": "France",
+        "count": 3,
+        "total_amount": 3125000
+      },
+      {
         "country": "United Kingdom",
         "count": 3,
         "total_amount": 800000
@@ -3877,11 +3904,6 @@
         "country": "Argentina",
         "count": 2,
         "total_amount": 650000
-      },
-      {
-        "country": "Iran",
-        "count": 2,
-        "total_amount": 9625000
       }
     ],
     "top_countries_burn": [
@@ -3924,8 +3946,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.25,
-        "events": 12
+        "burn_ratio": 0.231,
+        "events": 13
       },
       {
         "region": "North America",
@@ -3956,8 +3978,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.75,
-        "events": 12
+        "mint_ratio": 0.769,
+        "events": 13
       },
       {
         "region": "Asia",
@@ -3998,7 +4020,7 @@
       },
       {
         "date": "2026-05-05",
-        "net_minted": 65600000,
+        "net_minted": 67100000,
         "net_burned": 42700000
       }
     ],
@@ -4016,7 +4038,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 12,
-        "negative": 42,
+        "negative": 43,
         "event_ids_positive": [
           175,
           172,
@@ -4032,6 +4054,7 @@
           117
         ],
         "event_ids_negative": [
+          176,
           174,
           173,
           171,
@@ -4078,7 +4101,7 @@
       },
       "UDHR": {
         "positive": 6,
-        "negative": 28,
+        "negative": 29,
         "event_ids_positive": [
           175,
           172,
@@ -4088,6 +4111,7 @@
           123
         ],
         "event_ids_negative": [
+          176,
           174,
           173,
           171,
@@ -4163,13 +4187,14 @@
       },
       "Animal": {
         "positive": 3,
-        "negative": 4,
+        "negative": 5,
         "event_ids_positive": [
           169,
           148,
           117
         ],
         "event_ids_negative": [
+          176,
           161,
           157,
           154,
@@ -4178,7 +4203,7 @@
       },
       "PB": {
         "positive": 9,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           169,
           165,
@@ -4191,6 +4216,7 @@
           117
         ],
         "event_ids_negative": [
+          176,
           161,
           160,
           157,
@@ -4215,14 +4241,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 90.3,
-      "mainstream_pct": 9.7,
+      "niche_pct": 87.1,
+      "mainstream_pct": 12.9,
       "total_sources_used": 31,
-      "articles_processed": 62
+      "articles_processed": 63
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 62,
+      "total_events": 63,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -4410,29 +4436,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 44,
+      "total_mint": 45,
       "direct_action": {
-        "count": 35,
-        "pct": 79.5
+        "count": 36,
+        "pct": 80.0
       },
       "editorial_alarm": {
         "count": 7,
-        "pct": 15.9
+        "pct": 15.6
       },
       "untyped": {
         "count": 2,
-        "pct": 4.5
+        "pct": 4.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 143,
+      "total_mint": 144,
       "direct_action": {
-        "count": 118,
-        "pct": 82.5
+        "count": 119,
+        "pct": 82.6
       },
       "editorial_alarm": {
         "count": 23,
-        "pct": 16.1
+        "pct": 16.0
       },
       "untyped": {
         "count": 2,
