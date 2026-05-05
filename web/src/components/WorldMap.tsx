@@ -1,56 +1,65 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { CarbonEvent } from "@/lib/types";
 
 /**
- * WorldMap — hexagonal dot-map base + pulse markers per active country.
+ * WorldMap — choropleth + pulse rings showing where decisions land
+ * geographically over the last 7 days.
  *
- * Visual base : /public/world-hex-map.svg (Figma community asset, 2,216
- * decorative hexagons, viewBox 0 0 1440 974).
- * Functional layer : pulse rings at the projected lat/lon of each
- * country that has on-chain events in the chosen window. Clicking a ring
- * navigates to /events?country=<X>&since=<windowDays>d. Hover shows a
- * tooltip with the country name and BURN/MINT counts.
+ * Render strategy (no leaflet, no d3-geo, no extra deps):
+ *   - Static SVG paths for ~177 countries shipped as
+ *     /public/world-countries.json (Equirectangular projection,
+ *     viewBox 0 0 1000 500, generated upstream and copied verbatim from
+ *     the dashboard mockup at /dashboard-v2/world-countries.json).
+ *   - The component fetches the JSON on mount; until it lands, only the
+ *     header + footer render so the card never renders blank-of-empty.
+ *   - Country fill is interpolated between MINT (orange) and BURN (green)
+ *     depending on which dominates for that country's events; intensity
+ *     is normalised against the busiest country so a quiet day still
+ *     produces visible variation.
+ *   - A pulse ring is drawn on top of each active country (centroid
+ *     extracted from the first M command in the path d-string — cheap
+ *     and good-enough for a visual cue).
  *
- * Projection : approximate equirectangular within an empirically-
- * calibrated world bounding box inside the SVG viewBox.
+ * Data source: same `events` array the rest of the dashboard receives,
+ * filtered to the 7-day window for consistency with the other indicators.
  */
 
-// Country canonical name (matches event.country) → ISO-2.
-// Same dictionary as before — keep in sync with the worker tagger.
+// Country canonical name (matches event.country) → ISO-2 used as map key.
+// Same dictionary as the dashboard-v2 mockup. Anything not in this list
+// will simply not be lit up — the path still renders neutral grey.
 const NAME_TO_ISO: Record<string, string> = {
   "France": "FR", "Germany": "DE", "Spain": "ES", "Italy": "IT",
   "Portugal": "PT", "United Kingdom": "GB", "Norway": "NO", "Sweden": "SE",
   "Finland": "FI", "Belgium": "BE", "Netherlands": "NL", "Poland": "PL",
   "Greece": "GR", "Russia": "RU", "Ukraine": "UA", "Turkey": "TR",
-  "Switzerland": "CH", "Austria": "AT", "Denmark": "DK", "Ireland": "IE",
-  "Czech Republic": "CZ", "Hungary": "HU", "Romania": "RO",
   "United States": "US", "United States of America": "US", "Canada": "CA",
   "Mexico": "MX", "Brazil": "BR", "Argentina": "AR", "Colombia": "CO",
   "Chile": "CL", "Peru": "PE", "Venezuela": "VE", "Cuba": "CU",
   "Ecuador": "EC", "Bolivia": "BO", "Paraguay": "PY", "Uruguay": "UY",
   "Costa Rica": "CR", "Guatemala": "GT", "Honduras": "HN", "Panama": "PA",
   "India": "IN", "China": "CN", "Japan": "JP", "South Korea": "KR",
-  "North Korea": "KP",
   "Indonesia": "ID", "Vietnam": "VN", "Thailand": "TH", "Philippines": "PH",
   "Malaysia": "MY", "Pakistan": "PK", "Bangladesh": "BD", "Sri Lanka": "LK",
-  "Singapore": "SG",
   "Australia": "AU", "New Zealand": "NZ",
   "Egypt": "EG", "South Africa": "ZA", "Kenya": "KE", "Nigeria": "NG",
   "Ethiopia": "ET", "Morocco": "MA", "Algeria": "DZ", "Tunisia": "TN",
   "Libya": "LY", "Sudan": "SD", "Tanzania": "TZ", "Uganda": "UG",
   "Ghana": "GH", "Senegal": "SN", "Mali": "ML", "Somalia": "SO",
-  "Zimbabwe": "ZW",
   "Saudi Arabia": "SA", "Iran": "IR", "Iraq": "IQ", "Israel": "IL",
-  "Palestine": "PS",
   "Syria": "SY", "Lebanon": "LB", "Jordan": "JO", "Yemen": "YE",
   "United Arab Emirates": "AE", "Qatar": "QA", "Kuwait": "KW",
   "Afghanistan": "AF", "Kazakhstan": "KZ", "Uzbekistan": "UZ",
 };
 
-// Reverse map: ISO → canonical event-country name (shorter alias wins).
+// Reverse mapping: ISO-2 → canonical event country name (the one stored in
+// `event.country` by the analyst LLM). When the same ISO has multiple
+// aliases (e.g. "United States" vs "United States of America"), pick the
+// shorter one — by convention that's the canonical short form used by the
+// pipeline. This drives the /events?country=… drill-down so the filter
+// hits actual event rows.
 const ISO_TO_CANONICAL: Record<string, string> = (() => {
   const out: Record<string, string> = {};
   for (const [name, iso] of Object.entries(NAME_TO_ISO)) {
@@ -59,62 +68,38 @@ const ISO_TO_CANONICAL: Record<string, string> = (() => {
   return out;
 })();
 
-// Approximate country centroid in lat/lon (capital city or geographic center).
-const ISO_LATLON: Record<string, [number, number]> = {
-  // Europe
-  FR: [46.6, 2.2], DE: [51.2, 10.4], ES: [40.5, -3.7], IT: [42.8, 12.6],
-  PT: [39.4, -8.0], GB: [53.0, -2.0], NO: [62.0, 9.0], SE: [60.5, 16.0],
-  FI: [64.5, 26.0], BE: [50.7, 4.5], NL: [52.2, 5.3], PL: [52.0, 19.5],
-  GR: [39.0, 22.0], RU: [60.0, 90.0], UA: [49.0, 32.0], TR: [39.0, 35.0],
-  CH: [46.8, 8.2], AT: [47.5, 14.5], DK: [56.0, 9.5], IE: [53.4, -8.0],
-  CZ: [49.8, 15.5], HU: [47.2, 19.5], RO: [45.9, 24.9],
-  // North America
-  US: [39.0, -98.0], CA: [60.0, -106.0], MX: [23.6, -102.5],
-  // Latin America
-  BR: [-10.5, -55.5], AR: [-38.0, -65.0], CO: [4.6, -74.0], CL: [-35.5, -71.5],
-  PE: [-9.0, -76.0], VE: [8.0, -66.0], CU: [21.5, -78.0], EC: [-1.5, -78.0],
-  BO: [-16.5, -65.0], PY: [-23.4, -58.5], UY: [-32.5, -55.5],
-  CR: [9.7, -84.0], GT: [15.8, -90.5], HN: [15.0, -86.5], PA: [9.0, -80.0],
-  // Asia
-  IN: [22.0, 78.0], CN: [35.0, 105.0], JP: [36.5, 138.0], KR: [36.5, 127.5],
-  KP: [40.0, 127.0], ID: [-2.0, 118.0], VN: [16.0, 107.0], TH: [15.0, 100.5],
-  PH: [13.0, 122.0], MY: [4.0, 102.0], PK: [30.0, 70.0], BD: [23.7, 90.4],
-  LK: [7.0, 81.0], SG: [1.3, 103.8],
-  // Oceania
-  AU: [-25.0, 134.0], NZ: [-41.0, 172.0],
-  // MENA / Middle East
-  SA: [24.0, 45.0], IR: [32.0, 53.0], IQ: [33.0, 44.0], IL: [31.0, 35.0],
-  PS: [31.9, 35.2], SY: [35.0, 38.0], LB: [33.9, 35.9], JO: [31.0, 36.5],
-  YE: [15.5, 48.0], AE: [24.0, 54.0], QA: [25.3, 51.2], KW: [29.3, 47.5],
-  EG: [27.0, 30.0], MA: [31.8, -7.0], DZ: [28.0, 1.7], TN: [33.9, 9.5],
-  LY: [27.0, 17.0],
-  // Africa
-  ZA: [-29.0, 24.0], KE: [-1.0, 38.0], NG: [9.5, 8.0], ET: [9.0, 38.0],
-  TZ: [-6.4, 35.0], UG: [1.4, 32.5], GH: [7.6, -1.0], SN: [14.5, -14.5],
-  ML: [17.0, -4.0], SO: [5.5, 46.0], SD: [12.0, 30.0], ZW: [-19.0, 29.0],
-  // Central Asia
-  AF: [33.5, 65.0], KZ: [48.0, 68.0], UZ: [41.0, 64.0],
-};
-
-// Hex SVG calibration — eyeballed from the rendered preview at 1440×974.
-const VB_W = 1440;
-const VB_H = 974;
-const WORLD_LEFT = 60;
-const WORLD_RIGHT = 1380;
-const WORLD_TOP = 80;
-const WORLD_BOTTOM = 850;
-
-function project(lat: number, lon: number): { x: number; y: number } {
-  const x = ((lon + 180) / 360) * (WORLD_RIGHT - WORLD_LEFT) + WORLD_LEFT;
-  const y = ((90 - lat) / 180) * (WORLD_BOTTOM - WORLD_TOP) + WORLD_TOP;
-  return { x, y };
+interface WorldCountry {
+  id: string;
+  name: string;
+  d: string;
 }
 
-interface WorldMapProps {
-  events: CarbonEvent[];
-  windowDays?: number;
-  /** Maximum card height in pixels — clamps via CSS for mobile. */
-  height?: number;
+/**
+ * Compute the visual centroid of an SVG path by averaging every coordinate
+ * pair found in its `d` string. Cheap and good enough for placing a marker:
+ * for a country whose path traces its outline, the average of all outline
+ * points lands inside the country roughly at its visual centre. Much better
+ * than the previous "first M command" shortcut which placed the marker at
+ * an arbitrary corner (Russia → Siberia, US → Maine).
+ */
+function pathCentroid(d: string): { cx: number; cy: number } | null {
+  const numRe = /-?\d+(?:\.\d+)?/g;
+  const nums = d.match(numRe);
+  if (!nums || nums.length < 2) return null;
+  let sx = 0;
+  let sy = 0;
+  let count = 0;
+  for (let i = 0; i + 1 < nums.length; i += 2) {
+    const x = parseFloat(nums[i]);
+    const y = parseFloat(nums[i + 1]);
+    if (Number.isFinite(x) && Number.isFinite(y)) {
+      sx += x;
+      sy += y;
+      count++;
+    }
+  }
+  if (count === 0) return null;
+  return { cx: sx / count, cy: sy / count };
 }
 
 interface CountryStat {
@@ -123,11 +108,106 @@ interface CountryStat {
   count: number;
 }
 
-export function WorldMap({ events, windowDays = 7, height = 460 }: WorldMapProps) {
-  const router = useRouter();
-  const [hoverIso, setHoverIso] = useState<string | null>(null);
+interface WorldMapProps {
+  events: CarbonEvent[];
+  /** Visible window in days. Default: 7. */
+  windowDays?: number;
+  /** Card height. Default 440. */
+  height?: number;
+}
 
-  // Aggregate events by ISO over the chosen time window
+export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps) {
+  const router = useRouter();
+  const [countries, setCountries] = useState<WorldCountry[] | null>(null);
+  const [hoverIso, setHoverIso] = useState<string | null>(null);
+  const [hoverName, setHoverName] = useState<string | null>(null);
+  const [tooltip, setTooltip] = useState<{ x: number; y: number } | null>(null);
+  // Track press start so we don't navigate when the user is panning
+  const pressStart = useRef<{ x: number; y: number } | null>(null);
+
+  // Pan + zoom state — operates on the SVG viewBox so the geometry stays crisp
+  const W = 1000;
+  const VIEW_H = 420;
+  const VIEW_Y = 30;
+  const [view, setView] = useState({ x: 0, y: VIEW_Y, w: W, h: VIEW_H });
+  const isDragging = useRef(false);
+  const dragStart = useRef<{ x: number; y: number; vx: number; vy: number } | null>(null);
+  const svgRef = useRef<SVGSVGElement | null>(null);
+
+  // Lazy-load the geometry — 165 KB JSON, fetched once and cached by the browser
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/world-countries.json")
+      .then((r) => r.json())
+      .then((data) => {
+        if (!cancelled) setCountries(data as WorldCountry[]);
+      })
+      .catch((err) => {
+        // eslint-disable-next-line no-console
+        console.warn("[WorldMap] failed to load world-countries.json:", err);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // Wheel zoom centred on the cursor position. Stops the page from scrolling.
+  function handleWheel(e: React.WheelEvent<SVGSVGElement>) {
+    e.preventDefault();
+    const svg = svgRef.current;
+    if (!svg) return;
+    const rect = svg.getBoundingClientRect();
+    // Map cursor to viewBox coordinates
+    const px = (e.clientX - rect.left) / rect.width;
+    const py = (e.clientY - rect.top) / rect.height;
+    const cx = view.x + px * view.w;
+    const cy = view.y + py * view.h;
+    const factor = e.deltaY > 0 ? 1.2 : 1 / 1.2;
+    let newW = Math.min(W, Math.max(150, view.w * factor));
+    let newH = Math.min(VIEW_H, Math.max(150 * (VIEW_H / W), view.h * factor));
+    // Keep aspect ratio aligned with the original viewBox
+    const aspect = W / VIEW_H;
+    if (newW / newH > aspect) newW = newH * aspect;
+    else newH = newW / aspect;
+    let newX = cx - px * newW;
+    let newY = cy - py * newH;
+    // Clamp inside the original world bounds
+    newX = Math.max(0, Math.min(W - newW, newX));
+    newY = Math.max(VIEW_Y, Math.min(VIEW_Y + VIEW_H - newH, newY));
+    setView({ x: newX, y: newY, w: newW, h: newH });
+  }
+
+  function handleMouseDown(e: React.MouseEvent<SVGSVGElement>) {
+    isDragging.current = true;
+    dragStart.current = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y };
+    pressStart.current = { x: e.clientX, y: e.clientY };
+  }
+  function handleMouseMove(e: React.MouseEvent<SVGSVGElement>) {
+    setTooltip({ x: e.clientX, y: e.clientY });
+    if (!isDragging.current || !dragStart.current) return;
+    const svg = svgRef.current;
+    if (!svg) return;
+    const rect = svg.getBoundingClientRect();
+    const dxPx = e.clientX - dragStart.current.x;
+    const dyPx = e.clientY - dragStart.current.y;
+    // Convert pixel delta to viewBox delta
+    const dx = (dxPx / rect.width) * view.w;
+    const dy = (dyPx / rect.height) * view.h;
+    let newX = dragStart.current.vx - dx;
+    let newY = dragStart.current.vy - dy;
+    newX = Math.max(0, Math.min(W - view.w, newX));
+    newY = Math.max(VIEW_Y, Math.min(VIEW_Y + VIEW_H - view.h, newY));
+    setView((v) => ({ ...v, x: newX, y: newY }));
+  }
+  function handleMouseUp() {
+    isDragging.current = false;
+    dragStart.current = null;
+  }
+  function resetZoom() {
+    setView({ x: 0, y: VIEW_Y, w: W, h: VIEW_H });
+  }
+
+  // Aggregate events per ISO over the chosen window
   const countryStats = useMemo<Record<string, CountryStat>>(() => {
     const cutoff = Date.now() - windowDays * 24 * 60 * 60 * 1000;
     const stats: Record<string, CountryStat> = {};
@@ -146,168 +226,336 @@ export function WorldMap({ events, windowDays = 7, height = 460 }: WorldMapProps
     return stats;
   }, [events, windowDays]);
 
-  // Marker size scales with event count (capped to keep the map readable)
-  const maxCount = Math.max(1, ...Object.values(countryStats).map((s) => s.count));
-  function radiusFor(s: CountryStat): number {
-    // 6 to 18 px, square-root scaling for visual balance
-    const t = Math.min(1, Math.sqrt(s.count) / Math.sqrt(Math.max(1, maxCount)));
-    return 6 + 12 * t;
+  // Color scale: intensity = total / max(total)
+  const max = Math.max(
+    1,
+    ...Object.values(countryStats).map((s) => s.mint + s.burn),
+  );
+
+  function colorFor(iso: string | undefined): string {
+    if (!iso) return "#222";
+    const s = countryStats[iso];
+    if (!s || s.mint + s.burn === 0) return "#222";
+    const intensity = Math.min(1, (s.mint + s.burn) / max);
+    const dominant = s.mint > s.burn ? "mint" : "burn";
+    // mint = orange, burn = green
+    const base = dominant === "mint" ? [255, 132, 0] : [182, 255, 206];
+    const factor = 0.35 + intensity * 0.65;
+    const r = Math.round(base[0] * factor);
+    const g = Math.round(base[1] * factor);
+    const b = Math.round(base[2] * factor);
+    return `rgb(${r},${g},${b})`;
   }
 
   const activeCount = Object.keys(countryStats).length;
+  const isZoomed = view.w !== W || view.h !== VIEW_H || view.x !== 0 || view.y !== VIEW_Y;
 
   return (
     <div
       style={{
         backgroundColor: "var(--card-bg)",
         border: "1px solid var(--border)",
-        position: "relative",
-        overflow: "hidden",
       }}
+      className="relative"
     >
-      {/* Header */}
+      {/* Title bar */}
       <div
-        className="px-4 py-3 flex items-center gap-3 flex-wrap"
+        className="px-4 py-3 flex items-center justify-between"
         style={{ borderBottom: "1px solid var(--border)" }}
       >
-        <span
-          className="font-mono text-xs uppercase tracking-wider"
-          style={{ color: "var(--muted)" }}
-        >
-          WORLD MAP · {windowDays}D
-        </span>
-        <span
-          className="font-mono text-[10px] uppercase tracking-wider"
-          style={{ color: "var(--muted)" }}
-        >
-          {activeCount} {activeCount === 1 ? "country" : "countries"} active
-        </span>
-        <div className="flex items-center gap-3 ml-auto text-[10px] font-mono">
-          <span style={{ color: "#FF5C33" }}>● MINT</span>
-          <span style={{ color: "#B6FFCE" }}>● BURN</span>
+        <div>
+          <p
+            className="text-xs uppercase tracking-wider font-mono"
+            style={{ color: "var(--brand-teal)" }}
+          >
+            VERDICTS WORLDWIDE · {windowDays}D
+          </p>
+          <p
+            className="text-[10px] font-mono mt-0.5"
+            style={{ color: "var(--muted)" }}
+          >
+            {activeCount} {activeCount === 1 ? "country" : "countries"} active
+          </p>
+        </div>
+        <div className="flex items-center gap-3">
+          {hoverIso && countryStats[hoverIso] && (
+            <div className="text-xs font-mono" style={{ color: "var(--muted)" }}>
+              <span style={{ color: "var(--foreground)" }}>{hoverIso}</span>
+              <span style={{ color: "#FF5C33", marginLeft: 8 }}>
+                +{countryStats[hoverIso].mint}K
+              </span>
+              <span style={{ color: "var(--muted)", margin: "0 4px" }}>/</span>
+              <span style={{ color: "#B6FFCE" }}>
+                -{countryStats[hoverIso].burn}K
+              </span>
+            </div>
+          )}
+          {isZoomed && (
+            <button
+              onClick={resetZoom}
+              className="text-[10px] font-mono uppercase tracking-wider px-2 py-1"
+              style={{
+                color: "var(--muted)",
+                border: "1px solid var(--border)",
+                background: "transparent",
+                cursor: "pointer",
+              }}
+            >
+              RESET ZOOM
+            </button>
+          )}
         </div>
       </div>
 
-      {/* Map */}
+      {/* SVG world map — wheel-zoom + drag-pan.
+          Mobile-friendly height: clamp the container between 220 px and the
+          requested `height` prop, scaled to viewport width with the same
+          2:1 aspect ratio as the SVG viewBox. Avoids letterboxing on phones
+          and keeps the desktop look intact. */}
       <svg
-        viewBox={`0 0 ${VB_W} ${VB_H}`}
-        preserveAspectRatio="xMidYMid meet"
+        ref={svgRef}
         width="100%"
+        viewBox={`${view.x} ${view.y} ${view.w} ${view.h}`}
+        preserveAspectRatio="xMidYMid meet"
         style={{
           display: "block",
           height: `clamp(220px, 50vw, ${height}px)`,
-          // Match Lunaris card bg so the recolored hex grid blends seamlessly.
-          background: "var(--card-bg, #1A1A1A)",
-          // Prevent iOS double-tap-to-zoom on the map (was zooming the
-          // whole page when the user tapped a marker on mobile).
-          touchAction: "manipulation",
-          WebkitTapHighlightColor: "transparent",
+          background: "#1A1A1A",
+          cursor: isDragging.current ? "grabbing" : "grab",
+          touchAction: "none",
+        }}
+        onWheel={handleWheel}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={() => {
+          handleMouseUp();
+          setTooltip(null);
         }}
       >
-        {/* Layer 1 — decorative hex grid (Figma asset) */}
-        <image href="/world-hex-map.svg" x="0" y="0" width={VB_W} height={VB_H} />
+        <defs>
+          <pattern
+            id="wm-grid"
+            x="0"
+            y="0"
+            width="20"
+            height="20"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M20 0H0V20"
+              stroke="#2E2E2E"
+              strokeWidth="0.5"
+              fill="none"
+              opacity="0.4"
+            />
+          </pattern>
+        </defs>
+        <rect x="0" y={VIEW_Y} width={W} height={VIEW_H} fill="url(#wm-grid)" />
 
-        {/* Layer 2 — pulse markers per active country */}
-        {Object.entries(countryStats).map(([iso, s]) => {
-          const latlon = ISO_LATLON[iso];
-          if (!latlon) return null;
-          const { x, y } = project(latlon[0], latlon[1]);
-          const dom = s.mint > s.burn ? "#FF5C33" : "#B6FFCE";
-          const r = radiusFor(s);
-          const focused = hoverIso === iso;
-          const canonical = ISO_TO_CANONICAL[iso] ?? iso;
-
+        {/* Country paths */}
+        {countries?.map((c) => {
+          const iso = NAME_TO_ISO[c.name];
+          const focused = !!c.name && hoverName === c.name;
+          const hasStats = !!iso && !!countryStats[iso];
           return (
-            <g
-              key={iso}
+            <path
+              key={c.id}
+              d={c.d}
+              fill={colorFor(iso)}
+              stroke={focused ? "#F5F5F5" : "#3A3A3A"}
+              strokeWidth={focused ? 1.2 : 0.4}
               style={{
-                cursor: "pointer",
-                touchAction: "manipulation",
-                WebkitTapHighlightColor: "transparent",
+                transition: "fill 400ms linear",
+                cursor: hasStats ? "pointer" : "default",
               }}
-              onMouseEnter={() => setHoverIso(iso)}
-              onMouseLeave={() => setHoverIso(null)}
-              onClick={() =>
+              onMouseEnter={() => {
+                setHoverName(c.name);
+                if (iso) setHoverIso(iso);
+              }}
+              onMouseLeave={() => {
+                setHoverName(null);
+                setHoverIso(null);
+              }}
+              onClick={(e) => {
+                // Suppress navigation if the user actually panned (drag)
+                // — measured by movement between mousedown and mouseup.
+                if (pressStart.current) {
+                  const dx = e.clientX - pressStart.current.x;
+                  const dy = e.clientY - pressStart.current.y;
+                  if (Math.abs(dx) > 4 || Math.abs(dy) > 4) return;
+                }
+                if (!iso || !hasStats) return;
+                const canonical = ISO_TO_CANONICAL[iso] ?? c.name;
                 router.push(
                   `/events?country=${encodeURIComponent(canonical)}&since=${windowDays}d`,
-                )
-              }
-            >
-              {/* Soft halo */}
-              <circle
-                cx={x}
-                cy={y}
-                r={r * 1.9}
-                fill={dom}
-                opacity={focused ? 0.25 : 0.15}
-              />
-              {/* Outer ring */}
-              <circle
-                cx={x}
-                cy={y}
-                r={r}
-                fill="none"
-                stroke={dom}
-                strokeWidth={focused ? 2.5 : 1.5}
-                opacity="0.85"
-              />
-              {/* Inner dot */}
-              <circle cx={x} cy={y} r={r * 0.45} fill={dom} />
-              {/* Larger transparent hit zone for easier click on mobile */}
-              <circle
-                cx={x}
-                cy={y}
-                r={Math.max(r * 1.6, 14)}
-                fill="transparent"
-              />
-            </g>
+                );
+              }}
+            />
           );
         })}
+
+        {/* Pulse rings on active countries — placed at the visual centroid
+            of the country path (average of all coordinates), not at the
+            first M command which gives an arbitrary corner. */}
+        {countries &&
+          Object.entries(countryStats).map(([iso, s]) => {
+            const country = countries.find((c) => NAME_TO_ISO[c.name] === iso);
+            if (!country) return null;
+            const ctr = pathCentroid(country.d);
+            if (!ctr) return null;
+            const { cx, cy } = ctr;
+            const dom = s.mint > s.burn ? "#FF5C33" : "#B6FFCE";
+            const size = Math.min(8, 3 + (s.mint + s.burn) / 30);
+            return (
+              <g key={iso} pointerEvents="none">
+                <circle cx={cx} cy={cy} r={size} fill={dom} opacity="0.9" />
+                <circle
+                  cx={cx}
+                  cy={cy}
+                  r={size}
+                  fill="none"
+                  stroke={dom}
+                  strokeWidth="1"
+                >
+                  <animate
+                    attributeName="r"
+                    values={`${size};${size * 3};${size}`}
+                    dur="2.2s"
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    values="0.7;0;0.7"
+                    dur="2.2s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </g>
+            );
+          })}
       </svg>
 
-      {/* Floating tooltip — country name + stats */}
-      {hoverIso && countryStats[hoverIso] && (
+      {/* Floating tooltip — country name + stats, follows the cursor.
+          The pulse ring on each active country is centred on the country's
+          visual centroid (NOT a city or region — there is no sub-national
+          data in the pipeline). */}
+      {hoverName && tooltip && (
         <div
           style={{
-            position: "absolute",
-            top: 16,
-            right: 16,
-            zIndex: 10,
-            padding: "8px 12px",
-            backgroundColor: "rgba(15, 20, 19, 0.95)",
-            border: "1px solid var(--border)",
-            color: "var(--foreground)",
-            fontSize: 11,
-            fontFamily: "ui-monospace, monospace",
+            position: "fixed",
+            left: tooltip.x + 14,
+            top: tooltip.y + 14,
             pointerEvents: "none",
+            zIndex: 50,
+            background: "#0a0a0a",
+            border: "1px solid #2E2E2E",
+            padding: "6px 10px",
+            fontFamily: "var(--font-mono, monospace)",
+            fontSize: 11,
+            lineHeight: 1.4,
+            color: "#E5E5E5",
             whiteSpace: "nowrap",
           }}
         >
           <div
-            style={{
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              marginBottom: 4,
-            }}
+            className="uppercase tracking-wider"
+            style={{ fontSize: 9, color: "#6E6F6C", marginBottom: 2 }}
           >
-            {ISO_TO_CANONICAL[hoverIso] ?? hoverIso}
+            COUNTRY
           </div>
-          <div style={{ display: "flex", gap: 12 }}>
-            <span style={{ color: "#FF5C33" }}>
-              +{countryStats[hoverIso].mint}K MINT
-            </span>
-            <span style={{ color: "#B6FFCE" }}>
-              -{countryStats[hoverIso].burn}K BURN
-            </span>
-          </div>
-          <div style={{ color: "var(--muted)", marginTop: 4 }}>
-            {countryStats[hoverIso].count}{" "}
-            {countryStats[hoverIso].count === 1 ? "event" : "events"} · click to drill down
-          </div>
+          <div style={{ fontWeight: 600, color: "#F5F5F5" }}>{hoverName}</div>
+          {hoverIso && countryStats[hoverIso] ? (
+            <div style={{ color: "#B8B9B6", marginTop: 4 }}>
+              <span style={{ color: "#FF5C33" }}>
+                +{countryStats[hoverIso].mint}K MINT
+              </span>
+              <span style={{ color: "#666", margin: "0 6px" }}>·</span>
+              <span style={{ color: "#B6FFCE" }}>
+                -{countryStats[hoverIso].burn}K BURN
+              </span>
+              <span style={{ color: "#666", margin: "0 6px" }}>·</span>
+              <span>{countryStats[hoverIso].count} events</span>
+            </div>
+          ) : (
+            <div style={{ color: "#6E6F6C", marginTop: 4 }}>
+              No activity in this window
+            </div>
+          )}
         </div>
       )}
 
+      {/* Footer legend + zoom hint */}
+      <div
+        className="grid grid-cols-4 text-xs"
+        style={{ borderTop: "1px solid var(--border)" }}
+      >
+        <div
+          className="flex items-center gap-2 px-3 py-2"
+          style={{ borderRight: "1px solid var(--border)" }}
+        >
+          <span
+            style={{
+              width: 10,
+              height: 10,
+              backgroundColor: "#FF5C33",
+              display: "inline-block",
+            }}
+          />
+          <span
+            className="font-mono uppercase tracking-wider"
+            style={{ color: "var(--muted)", fontSize: 10 }}
+          >
+            MINT-DOMINANT
+          </span>
+        </div>
+        <div
+          className="flex items-center gap-2 px-3 py-2"
+          style={{ borderRight: "1px solid var(--border)" }}
+        >
+          <span
+            style={{
+              width: 10,
+              height: 10,
+              backgroundColor: "#B6FFCE",
+              display: "inline-block",
+            }}
+          />
+          <span
+            className="font-mono uppercase tracking-wider"
+            style={{ color: "var(--muted)", fontSize: 10 }}
+          >
+            BURN-DOMINANT
+          </span>
+        </div>
+        <div
+          className="flex items-center gap-2 px-3 py-2"
+          style={{ borderRight: "1px solid var(--border)" }}
+        >
+          <span
+            style={{
+              width: 10,
+              height: 10,
+              backgroundColor: "#222",
+              display: "inline-block",
+            }}
+          />
+          <span
+            className="font-mono uppercase tracking-wider"
+            style={{ color: "var(--muted)", fontSize: 10 }}
+          >
+            INACTIVE
+          </span>
+        </div>
+        <div className="flex items-center gap-2 px-3 py-2 justify-end">
+          <span
+            className="font-mono uppercase tracking-wider"
+            style={{ color: "var(--muted)", fontSize: 10 }}
+          >
+            SCROLL TO ZOOM · DRAG TO PAN
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
