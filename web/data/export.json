@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-05T11:12:30.603367+00:00",
-  "total_events": 152,
+  "generated_at": "2026-05-05T11:41:32.688593+00:00",
+  "total_events": 154,
   "total_burned": 23821000,
-  "total_minted": 131308750,
-  "pending_reviews": 2,
+  "total_minted": 141008750,
+  "pending_reviews": 4,
   "events": [
+    {
+      "id": 154,
+      "event_title": "Facebook is a hub for illegal wildlife trade, and that’s by design, report says",
+      "event_url": "https://news.mongabay.com/2026/05/facebook-is-a-hub-for-illegal-wildlife-trade-and-thats-by-design-report-says/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 8500000,
+      "final_score": -5.2,
+      "confidence": 8,
+      "justification": "Facebook's platform design enables severe environmental and animal rights violations through illegal wildlife trade. | The report reveals Facebook's deliberate facilitation of illegal wildlife trade through its platform design, causing severe environmental and animal rights violations. While investigative journalism raises awareness, the primary ethical failure lies with Facebook's systemic enablement of harm. The magnitude of the violation outweighs the awareness-raising aspect.",
+      "tx_hash": "5oj3R8WYfcRTrSzSHxGvMb8FCdPAYH7Aq8s1vjmVM7gn2zMSeBT1XEtvmgjBL32Xy36EhjxiGxEFTeqAyZFnFxjB",
+      "created_at": "2026-05-05T11:41:32.437110+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Investigative journalism by Mongabay exposes systemic facilitation of illegal wildlife trade on Facebook, raising public awareness and pressuring platforms to act\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Facebook's platform design enables and profits from illegal wildlife trafficking by providing unregulated market access for endangered species and animal products\", \"affected_sdgs\": [12, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"Animal Rights Principle 4\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 153,
+      "event_title": "Q&A: How countries got the global 'net-zero' shipping deal 'back on track'",
+      "event_url": "https://www.carbonbrief.org/qa-how-countries-got-the-global-net-zero-shipping-deal-back-on-track/",
+      "event_source": "Carbon Brief",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": 3.67,
+      "confidence": 8,
+      "justification": "Global progress toward a net-zero shipping framework supports climate action and planetary boundaries. | The renewed momentum toward a global net-zero shipping framework is a positive step for climate action and planetary boundaries. However, the lack of a clear timeline introduces uncertainty about the speed and effectiveness of emissions reductions.",
+      "tx_hash": "3ckw6EHUJtAErb91GCNLbdjCyMM2G3h4ZLdzPyh614dQTdLTTFwNi1FmkR3gDZZBKxqGHeoqU5XwngavTBKrgQDg",
+      "created_at": "2026-05-05T11:41:32.324360+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Countries are moving forward with a global framework to reduce shipping emissions, aligning with climate action goals.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The timeline for implementation remains uncertain, potentially delaying meaningful emissions reductions.\", \"affected_sdgs\": [13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
     {
       "id": 152,
       "event_title": "Joint call by the President of the ICRC, the Director-General of WHO and the International President of MSF",
@@ -3492,7 +3536,7 @@
       },
       {
         "date": "2026-05-05",
-        "net_minted": 22150000,
+        "net_minted": 31850000,
         "net_burned": 7700000
       }
     ],
@@ -3510,7 +3554,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 4,
-        "negative": 27,
+        "negative": 29,
         "event_ids_positive": [
           148,
           145,
@@ -3518,6 +3562,8 @@
           117
         ],
         "event_ids_negative": [
+          154,
+          153,
           152,
           151,
           150,
@@ -3615,18 +3661,19 @@
       },
       "Animal": {
         "positive": 2,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [
           148,
           117
         ],
         "event_ids_negative": [
+          154,
           134
         ]
       },
       "PB": {
         "positive": 4,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [
           148,
           145,
@@ -3634,6 +3681,7 @@
           117
         ],
         "event_ids_negative": [
+          153,
           152,
           146,
           144,
@@ -3654,14 +3702,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.7,
-      "mainstream_pct": 4.3,
-      "total_sources_used": 23,
-      "articles_processed": 39
+      "niche_pct": 96.0,
+      "mainstream_pct": 4.0,
+      "total_sources_used": 25,
+      "articles_processed": 41
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 39,
+      "total_events": 41,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -3767,6 +3815,15 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          153
+        ]
+      },
+      {
         "name": "Fishing",
         "count": 1,
         "burn_count": 0,
@@ -3816,33 +3873,33 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 29,
+      "total_mint": 31,
       "direct_action": {
         "count": 23,
-        "pct": 79.3
+        "pct": 74.2
       },
       "editorial_alarm": {
-        "count": 4,
-        "pct": 13.8
+        "count": 6,
+        "pct": 19.4
       },
       "untyped": {
         "count": 2,
-        "pct": 6.9
+        "pct": 6.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 128,
+      "total_mint": 130,
       "direct_action": {
         "count": 106,
-        "pct": 82.8
+        "pct": 81.5
       },
       "editorial_alarm": {
-        "count": 20,
-        "pct": 15.6
+        "count": 22,
+        "pct": 16.9
       },
       "untyped": {
         "count": 2,
-        "pct": 1.6
+        "pct": 1.5
       }
     }
   }
