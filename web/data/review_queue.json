@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T21:42:30.603703+00:00",
-  "total_pending": 6,
+  "generated_at": "2026-05-05T22:12:52.271225+00:00",
+  "total_pending": 7,
   "reviews": [
     {
       "id": 27,
@@ -118,6 +118,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-05T18:41:59.866433+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 33,
+      "event_title": "EN DIRECT, guerre en Ukraine : plus de 20 morts dans les frappes russes de mardi ; la trêve annoncée par Kiev est censée avoir commencé",
+      "event_url": "https://www.lemonde.fr/international/live/2026/05/05/en-direct-guerre-en-ukraine-plus-de-20-morts-dans-les-frappes-russes-de-mardi-la-treve-annoncee-par-kiev-est-censee-avoir-commence_6684995_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ukrainian government announces a unilateral ceasefire starting at midnight, signaling a temporary halt to hostilities and potential reduction in civilian casualties\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Russian military conducts strikes killing over 20 people on the day before the ceasefire, demonstrating continued active warfare and undermining the truce's effectiveness\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 18\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The Ukrainian ceasefire announcement represents a positive step toward reducing immediate harm and protecting civilian lives, aligning with peace and justice principles. However, the Russian strikes on the eve of the truce highlight ongoing violence and undermine the ceasefire's potential impact, creating a net negative ethical position.\", \"snapshot_score\": -1.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Sustained ceasefire compliance by both sides for 30+ days\", \"Renewal or extension of the truce beyond initial period\", \"Escalation of hostilities despite truce\", \"International mediation success or failure\"], \"revaluation_checkpoint\": \"2028-05-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ceasefire holds for extended period, leading to peace talks and reduced civilian casualties\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Ceasefire collapses within weeks, with sporadic violence continuing\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Full-scale resumption of war with significant civilian casualties and infrastructure destruction\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.05, \"final_score\": -1.81, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Ceasefire announcement undermined by active strikes; net negative impact on peace.\", \"event_country\": \"Ukraine\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ukrainian government announces a unilateral ceasefire starting midnight, demonstrating a commitment to reducing civilian casualties and seeking peace\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Russian military conducts deadly strikes killing over 20 civilians just before the ceasefire begins, violating international humanitarian law and escalating violence\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\"]}, {\"description\": \"Kiev's conditional response to ceasefire violations ('symmetrical response') risks escalating the conflict rather than de-escalating it\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The Ukrainian ceasefire announcement represents a positive ethical step toward peace and civilian protection, aligning with SDG 16 and UDHR principles. However, the Russian strikes and the conditional nature of Ukraine's response undermine this effort, creating a net negative ethical position. The immediate harm from the strikes outweighs the potential long-term benefits of the ceasefire.\", \"snapshot_score\": -5.5, \"trajectory_score\": -3.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Sustained ceasefire holds for 30+ days without major violations\", \"Escalation of Russian strikes despite Ukrainian restraint\", \"International mediation succeeds in extending the truce\", \"Ukrainian 'symmetrical response' triggers large-scale retaliation\"], \"revaluation_checkpoint\": \"2028-05-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ceasefire holds for 6+ months with gradual de-escalation and humanitarian aid access improves\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Ceasefire collapses within 3 months due to violations by both sides, leading to intensified conflict and civilian casualties\", \"probability\": 0.55, \"score\": -7}, {\"name\": \"C\", \"description\": \"Full-scale war resumes with widespread destruction, mass displacement, and international intervention fails to stop the violence\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -5.35, \"final_score\": -5.16, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Russian strikes violate ceasefire intent; Ukrainian response risks escalation despite good-faith effort.\", \"event_country\": \"Ukraine\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.75, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Ukrainian ceasefire is a positive action, but ongoing Russian strikes and conditional response risk escalation.\", \"disagreement\": false, \"reason\": \"Both analysts agree on MINT. The Ukrainian action to announce a ceasefire is a protective measure, but the context of active Russian strikes weakens its impact.\"}",
+      "sentinel_concern": "Polarity error: ceasefire announcement is a positive humanitarian action (should be BURN), but verdict is MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-05T22:12:51.637559+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
