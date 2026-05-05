@@ -70,8 +70,8 @@ A consciousness milestone counts when at least ONE of these is true:
     - International coalition, peer-reviewed breakthrough,       7-9
       indigenous-led legal victory, mass mobilization >10k
 
-INVALID:
-- Pure scientific facts or weather observations with no actor taking action
+INVALID — but with context-aware overrides below:
+- Pure scientific facts with no actor taking action
 - Anonymous opinions, unsigned op-eds with no editorial weight
 - Weather forecasts or natural disasters (unless tied to a policy or
   community response)
@@ -83,9 +83,47 @@ INVALID:
 - Market observations and economic forecasts with no policy or
   community action attached
 
+VALID — context-dependent overrides (CRITICAL — do not skip):
+
+Three of the categories above are NOT auto-INVALID when they evidence
+**diffusion / consciousness impact**. Apply these overrides:
+
+**(1) Speculations / opinions** ("could", "may", "is considering") become
+VALID when the article evidences DIFFUSION: a named voice (politician,
+influencer, columnist, public intellectual, recurring author of an
+outlet) is repeatedly shaping audience belief. Examples:
+- Masculinist influencer with millions of followers issuing repeated
+  misogynist opinions → MINT (downstream UDHR / SDG 5 / CRC harm).
+  Magnitude scales with audience size.
+- Climate-denier op-ed columnist published weekly in a major outlet →
+  MINT (cumulative discourse erosion).
+- Citizen-led recurring podcast or YouTube channel building climate
+  literacy in a community → BURN.
+
+**(2) Pure commentary / op-eds** become VALID when the OUTLET itself is
+the actor with editorial weight, OR when the AUTHOR is named and has
+documented influence. Anonymous blog post → still INVALID. Named NYT,
+Le Monde, El País, Mediapart, Mongabay-bylined op-ed → VALID, the act
+is the publication and the actor is the author + outlet.
+
+**(3) Market observations & economic forecasts** become VALID when they
+describe a SOCIOLOGICAL BEHAVIOR SHIFT, not pure number movement.
+Examples:
+- "Red-meat consumption fell 30% in Germany over five years" → BURN
+  (collective behavior change, SDG 13/15).
+- "Divestment from fossil-fuel funds reaches $X trillion across Y
+  pension funds" → BURN (institutional and individual realignment).
+- "Q1 GDP grew 5.6%" alone → INVALID (pure number, no behavior shift).
+
+For all three overrides, the magnitude reflects **reach × duration ×
+direction**: a one-off op-ed in a niche blog is magnitude 1-2; a
+sustained influencer campaign reaching millions is 6-8; a
+cross-society behavior shift is 7-9.
+
 Default ruling: if you can name the actor AND describe what they DID
-(not just thought, said, or hoped), the article is VALID. Err on the
-side of inclusion for citizen / consciousness acts — magnitudes
+or what they DIFFUSE / EMBODY (action, declaration, content with
+audience, behavior trend), the article is VALID. Err on the side of
+inclusion for citizen / consciousness / diffusion acts — magnitudes
 calibrate the impact.
 
 If INVALID, return immediately:
