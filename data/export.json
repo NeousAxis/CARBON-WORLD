@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-05T17:42:07.529908+00:00",
-  "total_events": 172,
+  "generated_at": "2026-05-05T18:11:29.905224+00:00",
+  "total_events": 173,
   "total_burned": 57321000,
-  "total_minted": 174358750,
+  "total_minted": 174608750,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 173,
+      "event_title": "Romania falls back into political chaos after a no-confidence vote by social democrats and far right",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/05/la-roumanie-retombe-dans-le-chaos-politique-apres-le-vote-d-une-motion-de-censure-par-les-sociaux-democrates-et-l-extreme-droite_6685642_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 250000,
+      "final_score": -1.9,
+      "confidence": 7,
+      "justification": "Political instability undermines democratic governance and institutional trust. | The no-confidence vote has led to political instability, violating democratic governance principles. However, it may open the door for a new pro-European coalition, which could support long-term democratic and institutional reforms.",
+      "tx_hash": "3Z7SUbaawKjqEHSaea25emmbViw9KjiKjHgiqmqcC5fhu7mrZKj5BXMn9xbRbS5msHVYTwJC5s3eFvy6f4BepYux",
+      "created_at": "2026-05-05T18:11:29.613195+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Romania",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Potential for a new pro-European coalition government.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Political instability and government collapse.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 172,
       "event_title": "The Bus That Brings Reproductive Care to Homeless Women",
@@ -3798,6 +3820,11 @@
         "total_amount": 5850000
       },
       {
+        "country": "Romania",
+        "count": 2,
+        "total_amount": 750000
+      },
+      {
         "country": "Argentina",
         "count": 2,
         "total_amount": 650000
@@ -3811,11 +3838,6 @@
         "country": "Israel",
         "count": 2,
         "total_amount": 5750000
-      },
-      {
-        "country": "United Kingdom",
-        "count": 2,
-        "total_amount": 650000
       }
     ],
     "top_countries_burn": [
@@ -3852,14 +3874,14 @@
         "events": 12
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.3,
-        "events": 10
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.286,
         "events": 7
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.273,
+        "events": 11
       },
       {
         "region": "North America",
@@ -3889,14 +3911,14 @@
         "events": 10
       },
       {
+        "region": "Europe",
+        "mint_ratio": 0.727,
+        "events": 11
+      },
+      {
         "region": "Asia",
         "mint_ratio": 0.714,
         "events": 7
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.7,
-        "events": 10
       }
     ],
     "supply_trend_7d": [
@@ -3932,7 +3954,7 @@
       },
       {
         "date": "2026-05-05",
-        "net_minted": 65200000,
+        "net_minted": 65450000,
         "net_burned": 41200000
       }
     ],
@@ -3950,7 +3972,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 11,
-        "negative": 40,
+        "negative": 41,
         "event_ids_positive": [
           172,
           169,
@@ -3965,6 +3987,7 @@
           117
         ],
         "event_ids_negative": [
+          173,
           171,
           170,
           168,
@@ -4009,7 +4032,7 @@
       },
       "UDHR": {
         "positive": 5,
-        "negative": 26,
+        "negative": 27,
         "event_ids_positive": [
           172,
           169,
@@ -4018,6 +4041,7 @@
           123
         ],
         "event_ids_negative": [
+          173,
           171,
           170,
           168,
@@ -4146,11 +4170,11 @@
       "niche_pct": 93.3,
       "mainstream_pct": 6.7,
       "total_sources_used": 30,
-      "articles_processed": 59
+      "articles_processed": 60
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 59,
+      "total_events": 60,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -4337,29 +4361,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 42,
+      "total_mint": 43,
       "direct_action": {
-        "count": 33,
-        "pct": 78.6
+        "count": 34,
+        "pct": 79.1
       },
       "editorial_alarm": {
         "count": 7,
-        "pct": 16.7
+        "pct": 16.3
       },
       "untyped": {
         "count": 2,
-        "pct": 4.8
+        "pct": 4.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 141,
+      "total_mint": 142,
       "direct_action": {
-        "count": 116,
-        "pct": 82.3
+        "count": 117,
+        "pct": 82.4
       },
       "editorial_alarm": {
         "count": 23,
-        "pct": 16.3
+        "pct": 16.2
       },
       "untyped": {
         "count": 2,
