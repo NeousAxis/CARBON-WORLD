@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T17:37:39.690009+00:00",
+  "generated_at": "2026-05-05T08:01:44.057607+00:00",
   "total_events": 143,
   "total_burned": 16121000,
   "total_minted": 102158750,
@@ -3155,14 +3155,14 @@
   "aggregates": {
     "top_countries_mint": [
       {
-        "country": "United States",
-        "count": 4,
-        "total_amount": 2850000
-      },
-      {
         "country": "France",
         "count": 3,
         "total_amount": 1745000
+      },
+      {
+        "country": "United States",
+        "count": 3,
+        "total_amount": 2700000
       },
       {
         "country": "Israel",
@@ -3170,14 +3170,14 @@
         "total_amount": 1950000
       },
       {
-        "country": "Argentina",
-        "count": 2,
-        "total_amount": 900000
-      },
-      {
         "country": "Brazil",
         "count": 2,
         "total_amount": 560000
+      },
+      {
+        "country": "United Kingdom",
+        "count": 1,
+        "total_amount": 500000
       }
     ],
     "top_countries_burn": [
@@ -3195,8 +3195,8 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.2,
-        "events": 5
+        "burn_ratio": 0.25,
+        "events": 4
       },
       {
         "region": "Europe",
@@ -3206,12 +3206,12 @@
       {
         "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 4
+        "events": 3
       },
       {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 5
+        "events": 4
       }
     ],
     "top_regions_destructive": [
@@ -3223,25 +3223,20 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 4
+        "events": 3
       },
       {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 5
+        "events": 4
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.8,
-        "events": 5
+        "mint_ratio": 0.75,
+        "events": 4
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-04-28",
-        "net_minted": 2070000,
-        "net_burned": 0
-      },
       {
         "date": "2026-04-29",
         "net_minted": 1795000,
@@ -3271,6 +3266,11 @@
         "date": "2026-05-04",
         "net_minted": 500000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-05-05",
+        "net_minted": 0,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -3286,43 +3286,140 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 20,
-        "negative": 26
+        "positive": 2,
+        "negative": 23,
+        "event_ids_positive": [
+          123,
+          117
+        ],
+        "event_ids_negative": [
+          143,
+          142,
+          136,
+          135,
+          134,
+          133,
+          132,
+          131,
+          130,
+          129,
+          128,
+          127,
+          126,
+          125,
+          122,
+          121,
+          120,
+          119,
+          118,
+          114,
+          113,
+          112,
+          111
+        ]
       },
       "UDHR": {
-        "positive": 7,
-        "negative": 12
+        "positive": 1,
+        "negative": 13,
+        "event_ids_positive": [
+          123
+        ],
+        "event_ids_negative": [
+          142,
+          136,
+          135,
+          132,
+          131,
+          130,
+          129,
+          126,
+          125,
+          121,
+          120,
+          113,
+          111
+        ]
       },
       "ILO": {
-        "positive": 3,
-        "negative": 0
+        "positive": 0,
+        "negative": 3,
+        "event_ids_positive": [],
+        "event_ids_negative": [
+          143,
+          122,
+          113
+        ]
       },
       "CRC": {
-        "positive": 3,
-        "negative": 5
+        "positive": 1,
+        "negative": 4,
+        "event_ids_positive": [
+          123
+        ],
+        "event_ids_negative": [
+          142,
+          121,
+          118,
+          114
+        ]
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 4
+        "negative": 4,
+        "event_ids_positive": [
+          123
+        ],
+        "event_ids_negative": [
+          142,
+          134,
+          118,
+          113
+        ]
       },
       "Animal": {
         "positive": 1,
-        "negative": 1
+        "negative": 1,
+        "event_ids_positive": [
+          117
+        ],
+        "event_ids_negative": [
+          134
+        ]
       },
       "PB": {
-        "positive": 8,
-        "negative": 11
+        "positive": 2,
+        "negative": 14,
+        "event_ids_positive": [
+          123,
+          117
+        ],
+        "event_ids_negative": [
+          143,
+          142,
+          136,
+          135,
+          134,
+          133,
+          131,
+          128,
+          126,
+          125,
+          119,
+          118,
+          113,
+          112
+        ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.7,
-      "mainstream_pct": 4.3,
+      "niche_pct": 100.0,
+      "mainstream_pct": 0.0,
       "total_sources_used": 23,
-      "articles_processed": 36
+      "articles_processed": 33
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 36,
+      "total_events": 33,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -3331,51 +3428,90 @@
         "name": "NATO",
         "count": 1,
         "burn_count": 0,
-        "mint_count": 1
+        "mint_count": 1,
+        "event_ids": [
+          139
+        ]
       },
       {
         "name": "EU Commission",
         "count": 1,
         "burn_count": 0,
-        "mint_count": 1
+        "mint_count": 1,
+        "event_ids": [
+          114
+        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 9,
+        "count": 8,
         "burn_count": 2,
-        "mint_count": 7
+        "mint_count": 6,
+        "event_ids": [
+          142,
+          141,
+          136,
+          134,
+          128,
+          126,
+          116,
+          112
+        ]
       },
       {
         "name": "Construction",
-        "count": 5,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 5
+        "mint_count": 4,
+        "event_ids": [
+          138,
+          135,
+          134,
+          128
+        ]
       },
       {
         "name": "Defense",
         "count": 3,
         "burn_count": 0,
-        "mint_count": 3
+        "mint_count": 3,
+        "event_ids": [
+          143,
+          139,
+          135
+        ]
       },
       {
         "name": "Forestry",
         "count": 3,
         "burn_count": 1,
-        "mint_count": 2
+        "mint_count": 2,
+        "event_ids": [
+          119,
+          117,
+          113
+        ]
       },
       {
         "name": "Finance",
         "count": 2,
         "burn_count": 0,
-        "mint_count": 2
+        "mint_count": 2,
+        "event_ids": [
+          135,
+          133
+        ]
       },
       {
         "name": "Agriculture",
         "count": 1,
         "burn_count": 0,
-        "mint_count": 1
+        "mint_count": 1,
+        "event_ids": [
+          127
+        ]
       }
     ],
     "burn_composition_7d": {
@@ -3409,18 +3545,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 28,
+      "total_mint": 25,
       "direct_action": {
-        "count": 21,
-        "pct": 75.0
+        "count": 19,
+        "pct": 76.0
       },
       "editorial_alarm": {
-        "count": 5,
-        "pct": 17.9
+        "count": 4,
+        "pct": 16.0
       },
       "untyped": {
         "count": 2,
-        "pct": 7.1
+        "pct": 8.0
       }
     },
     "mint_composition_all_time": {
