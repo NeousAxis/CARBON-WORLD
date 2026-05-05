@@ -26,6 +26,8 @@ from config import (
     GROQ_MODEL,
     CEREBRAS_API_KEY,
     CEREBRAS_MODEL,
+    MISTRAL_API_KEY,
+    MISTRAL_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -261,6 +263,88 @@ def _call_cerebras(
             return None
 
 
+# ── Mistral provider ────────────────────────────────────────────────────────
+
+def _call_mistral(
+    system_prompt: str,
+    user_message: str,
+    context: str,
+    max_tokens: int,
+    model: Optional[str] = None,
+    delay: Optional[float] = None,
+) -> Optional[dict]:
+    """
+    Call Mistral cloud API (OpenAI-compatible) with 429 retry/backoff.
+
+    Used as the *primary* route for Analyst B so the parallel A||B pipeline
+    runs on three independent free-tier buckets (Groq · Cerebras · Mistral).
+    Cerebras becomes the fallback if Mistral 429s. Same fail-fast cap (60 s)
+    as Cerebras to avoid the multi-hour daily-quota stall pattern.
+    """
+    import httpx
+
+    target_model = model or MISTRAL_MODEL
+
+    if delay is None:
+        delay = 8 if max_tokens > 500 else 3
+    if delay > 0:
+        time.sleep(delay)
+
+    payload = {
+        "model": target_model,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        "temperature": 0.1,
+        "max_tokens": max_tokens,
+        # Mistral honors `response_format` for guaranteed JSON output
+        "response_format": {"type": "json_object"},
+    }
+    headers = {
+        "Authorization": f"Bearer {MISTRAL_API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+    attempt = 0
+    max_attempts = 3
+    while True:
+        attempt += 1
+        try:
+            resp = httpx.post(
+                "https://api.mistral.ai/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=60,
+            )
+            if resp.status_code == 429 and attempt < max_attempts:
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    backoff = float(retry_after) if retry_after else 20.0 * attempt
+                except ValueError:
+                    backoff = 20.0 * attempt
+                if backoff > 60.0:
+                    logger.error(
+                        "Mistral Retry-After=%ss for %s (likely daily quota exhausted); failing fast.",
+                        int(backoff), context,
+                    )
+                    return None
+                backoff = max(backoff, 5.0)
+                logger.warning(
+                    "Mistral 429 for %s (model=%s, attempt %d/%d), backing off %.1fs",
+                    context, target_model, attempt, max_attempts, backoff,
+                )
+                time.sleep(backoff)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            raw = data["choices"][0]["message"]["content"]
+            return _parse_json_response(raw, context)
+        except Exception as exc:
+            logger.error("Mistral call failed for %s (model=%s): %s", context, target_model, exc)
+            return None
+
+
 # ── Ollama provider ──────────────────────────────────────────────────────────
 
 def _call_ollama_fast(system_prompt: str, user_message: str, context: str) -> Optional[dict]:
@@ -364,11 +448,29 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
 
 def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
-    Call Analyst B — independent deep reading on Llama-3.3-70B.
-    Prefers Cerebras when CEREBRAS_API_KEY is set (separate quota bucket from Groq so
-    parallel A||B doesn't collide on the Groq account plafond). Falls back to Groq,
-    then to local Ollama when LLM_PROVIDER=ollama.
+    Call Analyst B — independent deep reading.
+
+    Routing (each provider is a separate free-tier bucket):
+      1. Mistral  (mistral-small-latest)  — primary  (added 2026-05-05)
+      2. Cerebras (qwen-3-235b)            — fallback when Mistral fails
+      3. Groq     (llama-3.3-70b)          — last resort
+      4. Ollama local                      — when LLM_PROVIDER=ollama
+
+    The cascade keeps Analyst B running through 429 of any single provider
+    and decouples it from the Groq account ceiling that Analyst A consumes.
     """
+    if MISTRAL_API_KEY:
+        result = _call_mistral(
+            system_prompt,
+            user_message,
+            context,
+            max_tokens=3000,
+            delay=2,
+        )
+        if result is not None:
+            return result
+        logger.info("Mistral failed for analyst B %s, falling back to Cerebras", context)
+
     if CEREBRAS_API_KEY:
         return _call_cerebras(
             system_prompt,

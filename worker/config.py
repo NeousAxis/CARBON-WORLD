@@ -31,6 +31,13 @@ GROQ_MODEL: str = os.getenv("GROQ_MODEL", "qwen/qwen3-32b")
 CEREBRAS_API_KEY: str = os.getenv("CEREBRAS_API_KEY", "")
 CEREBRAS_MODEL: str = os.getenv("CEREBRAS_MODEL", "qwen-3-235b-a22b-instruct-2507")
 
+# Mistral settings — third independent free-tier bucket (added 2026-05-05)
+# Used as the primary route for Analyst B; Cerebras becomes the fallback.
+# Free tier "Experiment" allows ~1 RPS and a generous monthly token budget,
+# zero cost as long as no payment method is added on the Mistral console.
+MISTRAL_API_KEY: str = os.getenv("MISTRAL_API_KEY", "")
+MISTRAL_MODEL: str = os.getenv("MISTRAL_MODEL", "mistral-small-latest")
+
 # LLM Models — two-tier system (Ollama model names)
 CLASSIFIER_MODEL: str = os.getenv("CLASSIFIER_MODEL", "qwen3:14b")
 ANALYST_MODEL: str = os.getenv("ANALYST_MODEL", "qwen3:32b")
