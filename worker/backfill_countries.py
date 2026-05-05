@@ -283,7 +283,9 @@ _RAW_RULES: list[tuple[str, str]] = [
     (r"\bChile(?:an)?\b", "Chile"),
     (r"\bMexic\w*\b", "Mexico"),
     (r"\bCanad\w*\b", "Canada"),
-    (r"\bUnited States\b|\bU\.S\.A?\b|\bAmerican\b(?!\s+(?:Samoa|Eagle))", "United States"),
+    # 'American' alone is too ambiguous (Latin American, Native American,
+    # African American). Restrict to clear US contexts.
+    (r"\bUnited States\b|\bU\.S\.A?\b", "United States"),
     (r"\bUnited Kingdom\b|\bBritish\b|\bBritain\b", "United Kingdom"),
     (r"\bGerman\w*\b|\bGermany\b", "Germany"),
     (r"\bFrench\b|\bFrance\b", "France"),
