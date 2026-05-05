@@ -521,16 +521,35 @@ def _detect_frameworks(aspects: list[dict] | None) -> set[str]:
 
 def _framework_activity_7d(events_7d: list[dict]) -> dict:
     """
-    Count how many aspects (positive/negative) reference each of the 7 frameworks
-    across all events in the 7-day window. Also exports the per-framework,
-    per-polarity event_ids list so the frontend /events drill-down can show the
-    exact same set the count was computed from.
+    Per-framework count of the events whose net decision touched it.
+
+    Semantics (one event ↔ one count per framework):
+      - positive[fw] = BURN events that referenced `fw` in any of their aspects
+                        (positive OR negative — the event "touched" the framework)
+      - negative[fw] = MINT events that referenced `fw` in any of their aspects
+
+    This guarantees positive[fw] ≤ total BURN events and
+    negative[fw] ≤ total MINT events in the window — making the card
+    legible (no "+18 SDG" when there are only 8 BURN events).
+
+    event_ids_positive / event_ids_negative provide the canonical drill-down
+    set so /events shows the exact same events the card counted.
     """
     result = _empty_framework()
 
     for event in events_7d:
+        decision = event.get("decision")
+        if decision not in ("BURN", "MINT"):
+            continue
+        polarity = "positive" if decision == "BURN" else "negative"
+        ids_key = "event_ids_positive" if decision == "BURN" else "event_ids_negative"
         ev_id = int(event["id"])
-        for aspect_key, polarity in (("positive_aspects_json", "positive"), ("negative_aspects_json", "negative")):
+
+        # Aggregate frameworks referenced across BOTH positive and negative
+        # aspects — the event is considered to have "touched" the framework
+        # in either side of its analysis.
+        touched: set[str] = set()
+        for aspect_key in ("positive_aspects_json", "negative_aspects_json"):
             raw = event.get(aspect_key)
             if not raw:
                 continue
@@ -540,13 +559,12 @@ def _framework_activity_7d(events_7d: list[dict]) -> dict:
                 continue
             if not isinstance(aspects, list):
                 continue
-            frameworks = _detect_frameworks(aspects)
-            for fw in frameworks:
-                result[fw][polarity] += 1
-                ids_key = "event_ids_positive" if polarity == "positive" else "event_ids_negative"
-                # de-dup at insert (same event may match same fw multiple times via separate aspects)
-                if ev_id not in result[fw][ids_key]:
-                    result[fw][ids_key].append(ev_id)
+            touched |= _detect_frameworks(aspects)
+
+        for fw in touched:
+            result[fw][polarity] += 1
+            if ev_id not in result[fw][ids_key]:
+                result[fw][ids_key].append(ev_id)
 
     return result
 

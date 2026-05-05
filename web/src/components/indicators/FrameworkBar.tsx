@@ -115,7 +115,7 @@ export function FrameworkBar({
           href={`${baseHref}&framework_polarity=positive`}
           style={{ color: "var(--cw-burn)", textDecoration: "none", cursor: "pointer" }}
           className="hover:opacity-80"
-          title={`See the ${positive} BURN events for ${code}`}
+          title={`See the ${positive} BURN event(s) that touched ${code}`}
         >
           +{positive}
         </Link>
@@ -124,7 +124,7 @@ export function FrameworkBar({
           href={`${baseHref}&framework_polarity=negative`}
           style={{ color: "var(--cw-mint)", textDecoration: "none", cursor: "pointer" }}
           className="hover:opacity-80"
-          title={`See the ${negative} MINT events for ${code}`}
+          title={`See the ${negative} MINT event(s) that touched ${code}`}
         >
           &#x2212;{negative}
         </Link>
