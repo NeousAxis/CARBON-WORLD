@@ -67,8 +67,8 @@
 
 - **Card** : `EventOfTheDayCard.tsx`
 - **Worker** : `_event_of_the_day(events_7d)`
-- **Sémantique** : event du **jour en cours** UTC le plus impactant.
-- **Calcul** : parmi les events on-chain dont `created_at` est ≥ minuit UTC du jour, celui qui maximise `|amount_crbn|`. Si aucun event aujourd'hui → null.
+- **Sémantique** : event le plus impactant de la **fenêtre 24h** glissante. Si aucun event sur les dernières 24h → fallback sur les 7 derniers jours pour ne pas afficher une card vide.
+- **Calcul** : tri par `|final_score|` décroissant (proxy de l'impact). Le top 1 est retourné avec le shape complet `{id, event_title, decision, amount_crbn, final_score, confidence, country, region, created_at}`.
 - **Drill-down** : clic sur la card → `/event/<id>`.
 
 ## 7. FRAMEWORK ACTIVITY · 7 DAYS  *(corrigé 2026-05-05)*
@@ -131,14 +131,18 @@ Avant le 2026-05-05, `positive[fw]` comptait les **aspects positifs** citant le 
   - `untyped`
 - **Champ** : `event.mint_subtype`.
 
-## 12. TOP ADMINISTRATIONS · SUSTAINABLE · 7D
+## 12. TOP ADMINISTRATIONS · SUSTAINABLE · 7D  *(NON BRANCHÉE — code dormant)*
 
-- **Card** : `TopAdministrationsCard.tsx`
-- **Worker** : `_top_administrations_sustainable(events)`
-- **Sémantique** : top 10 administrations politiques par ratio BURN, minimum 2 events.
+- **Card** : `TopAdministrationsCard.tsx` (existe mais **n'est pas rendue** dans `DashboardClient.tsx`)
+- **Worker** : `_top_administrations_sustainable(events)` (définie dans `exporter.py` mais **pas appelée** depuis `_compute_aggregates` → la clé `top_administrations_sustainable` n'existe pas dans `export.json`)
+- **État** : code prêt, à brancher quand on veut l'afficher. Pour l'activer :
+  1. Dans `worker/exporter.py`, ajouter dans le dict de `_compute_aggregates` :  
+     `"top_administrations_sustainable": _top_administrations_sustainable(events_7d) if has_country else [],`
+  2. Dans `web/src/lib/types.ts`, ajouter le champ correspondant à `Aggregates`.
+  3. Dans `web/src/components/DashboardClient.tsx`, importer + rendre la card avec `aggregates.top_administrations_sustainable`.
+- **Sémantique cible** : top 10 administrations politiques par ratio BURN, minimum 2 events.
 - **Champ** : `event.administration` (format `"France-Renaissance"`, extrait par le LLM).
-- **Calcul** : `burn_ratio = burn / total`. Tri décroissant.
-- **Drill-down** : `/events?administration=<X>&since=7d`.
+- **Drill-down (déjà câblé)** : `/events?administration=<X>&since=7d`.
 
 ## 13. SOURCE DIVERSITY · 7D
 
@@ -165,11 +169,12 @@ Avant le 2026-05-05, `positive[fw]` comptait les **aspects positifs** citant le 
 - **Source DB** : table `submissions`.
 - **Pas de drill-down**.
 
-## 16. POSITIVE STREAK *(non encore branchée sur la home)*
+## 16. POSITIVE STREAK  *(NON BRANCHÉE — code dormant)*
 
-- **Card** : `PositiveStreakCard.tsx`
-- **Worker** : section dédiée à venir
-- **Sémantique** : nombre de jours consécutifs avec au moins 1 event BURN.
+- **Card** : `PositiveStreakCard.tsx` (existe mais **n'est pas rendue** dans `DashboardClient.tsx`)
+- **Worker** : la section `_positive_streak` n'est pas encore implémentée → la clé `positive_streak` n'existe pas dans `export.json`.
+- **État cible** : nombre de jours consécutifs avec ≥ 1 event BURN on-chain (current streak + longest sur 7d).
+- **À faire** : (1) implémenter `_positive_streak(onchain_events)` dans `exporter.py`, (2) ajouter la clé dans `_compute_aggregates`, (3) ajouter le champ dans `Aggregates` type, (4) brancher la card dans `DashboardClient.tsx`.
 
 ---
 
@@ -193,7 +198,36 @@ Avant le 2026-05-05, `positive[fw]` comptait les **aspects positifs** citant le 
 
 ---
 
-## Audit pour vérifier en local
+## Audit complet — 2026-05-05 (tous les indicateurs vérifiés)
+
+| # | Indicateur | Card rendue ? | Worker exporte ? | Audit numérique |
+|---|---|---|---|---|
+| - | Top stats (totalEvents/Burned/Minted) | ✓ | ✓ | **PASS** |
+| 1 | TOP COUNTRIES MINT | ✓ | ✓ | **PASS** |
+| 2 | TOP COUNTRIES BURN | ✓ | ✓ | **PASS** |
+| 3 | TOP REGIONS SUSTAINABLE | ✓ | ✓ | **PASS** |
+| 4 | TOP REGIONS DESTRUCTIVE | ✓ | ✓ | **PASS** |
+| 5 | SUPPLY NET 7D | ✓ | ✓ | **PASS** (trend 7 entries) |
+| 6 | EVENT OF THE DAY | ✓ | ✓ | **PASS** (24h → 7d fallback) |
+| 7 | FRAMEWORK ACTIVITY | ✓ | ✓ | **PASS** (post-fix sémantique 2026-05-05) |
+| 8 | TOP INSTITUTIONS | ✓ | ✓ | **PASS** (event_ids canoniques) |
+| 9 | TOP SECTORS | ✓ | ✓ | **PASS** (event_ids canoniques) |
+| 10 | BURN COMPOSITION 7d/ALL | ✓ | ✓ | **PASS** |
+| 11 | MINT COMPOSITION 7d/ALL | ✓ | ✓ | **PASS** |
+| 12 | TOP ADMINISTRATIONS | ✗ | ✗ | **DORMANT** (code prêt, pas branché) |
+| 13 | SOURCE DIVERSITY | ✓ | ✓ | **PASS** |
+| 14 | CACHE HIT RATE | ✓ | ✓ | **PASS** |
+| 15 | ACTIVE PARTNERS | ✓ | ✓ | PASS (DB-side, validable via submissions) |
+| 16 | POSITIVE STREAK | ✗ | ✗ | **DORMANT** |
+
+**14 indicateurs live** sur la home, **2 cards dormantes** (Admin, Streak) — code prêt mais pas branché.
+**Tous les indicateurs live ont passé l'audit numérique** (chiffres recalculés depuis les events bruts on-chain ↔ valeurs exportées par le worker).
+
+Méthodologie de l'audit : reload de `data/export.json`, recalcul indépendant de chaque agrégat depuis la liste `events` filtrée à `tx_hash` non-null + fenêtre 7d. Comparaison point par point. Script complet ci-dessous.
+
+---
+
+## Script d'audit reproductible
 
 ```python
 import json
