@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { TaxonomyEntry } from "@/lib/types";
 
 export interface TopSectorsCardProps {
@@ -47,13 +48,16 @@ export function TopSectorsCard({ sectors }: TopSectorsCardProps) {
       ) : (
         <div className="flex flex-col">
           {items.map((item, i) => (
-            <div
+            <Link
               key={item.name}
-              className="flex items-center gap-3 py-2"
+              href={`/events?sector=${encodeURIComponent(item.name)}&since=7d`}
+              className="flex items-center gap-3 py-2 hover:opacity-80"
               style={{
                 borderBottom:
                   i < items.length - 1 ? "1px solid var(--border)" : "none",
+                cursor: "pointer",
               }}
+              title={`See the ${item.count} events tagged ${item.name}`}
             >
               {/* Rank */}
               <span
@@ -84,7 +88,7 @@ export function TopSectorsCard({ sectors }: TopSectorsCardProps) {
                   ({item.count})
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}

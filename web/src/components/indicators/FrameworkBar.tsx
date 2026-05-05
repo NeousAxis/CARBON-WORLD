@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export interface FrameworkBarProps {
   /** Short code displayed in col 1 — e.g. "SDG", "UDHR", "PB" */
   code: string;
@@ -35,6 +37,10 @@ export function FrameworkBar({
   const posPct = total > 0 ? (positive / total) * 100 : 0;
   const negPct = total > 0 ? 100 - posPct : 0;
 
+  // Three independent links: label+bar → all events for this framework (any
+  // polarity), +N → positive (BURN) only, −N → negative (MINT) only. We keep
+  // them inside a grid and use border-bottom hover to hint clickability.
+  const baseHref = `/events?framework=${encodeURIComponent(code)}&since=7d`;
   return (
     <div
       style={{
@@ -46,22 +52,28 @@ export function FrameworkBar({
         paddingBottom: "8px",
       }}
     >
-      {/* Col 1 — code label */}
-      <span
-        className="font-mono text-xs uppercase"
-        style={{ color: "var(--cw-fg-1)" }}
+      {/* Col 1 — code label (links to all polarities) */}
+      <Link
+        href={baseHref}
+        className="font-mono text-xs uppercase hover:opacity-80"
+        style={{ color: "var(--cw-fg-1)", textDecoration: "none", cursor: "pointer" }}
+        title={`See all events touching ${name}`}
       >
         {code}
-      </span>
+      </Link>
 
-      {/* Col 2 — stacked bar */}
-      <div
-        title={name}
+      {/* Col 2 — stacked bar (links to all polarities) */}
+      <Link
+        href={baseHref}
+        title={`See all events touching ${name}`}
+        className="hover:opacity-80"
         style={{
           position: "relative",
           height: "8px",
-          backgroundColor: total === 0 ? "var(--cw-bg-2)" : "var(--cw-bg-2)",
+          backgroundColor: "var(--cw-bg-2)",
           overflow: "hidden",
+          cursor: "pointer",
+          display: "block",
         }}
       >
         {total > 0 && (
@@ -88,9 +100,9 @@ export function FrameworkBar({
             />
           </>
         )}
-      </div>
+      </Link>
 
-      {/* Col 3 — counts */}
+      {/* Col 3 — counts (each side is its own filtered link) */}
       <div
         className="font-mono tabular-nums"
         style={{
@@ -99,9 +111,23 @@ export function FrameworkBar({
           whiteSpace: "nowrap",
         }}
       >
-        <span style={{ color: "var(--cw-burn)" }}>+{positive}</span>
+        <Link
+          href={`${baseHref}&framework_polarity=positive`}
+          style={{ color: "var(--cw-burn)", textDecoration: "none", cursor: "pointer" }}
+          className="hover:opacity-80"
+          title={`See the ${positive} BURN events for ${code}`}
+        >
+          +{positive}
+        </Link>
         <span style={{ color: "var(--cw-fg-3)" }}> / </span>
-        <span style={{ color: "var(--cw-mint)" }}>&#x2212;{negative}</span>
+        <Link
+          href={`${baseHref}&framework_polarity=negative`}
+          style={{ color: "var(--cw-mint)", textDecoration: "none", cursor: "pointer" }}
+          className="hover:opacity-80"
+          title={`See the ${negative} MINT events for ${code}`}
+        >
+          &#x2212;{negative}
+        </Link>
       </div>
     </div>
   );

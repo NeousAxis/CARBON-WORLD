@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export interface TopRegionsDestructiveCardProps {
   regions: Array<{ region: string; mint_ratio: number; events: number }>;
 }
@@ -53,13 +55,16 @@ export function TopRegionsDestructiveCard({
             const barWidth = Math.min(100, Math.max(0, pct));
 
             return (
-              <div
+              <Link
                 key={item.region}
-                className="py-2"
+                href={`/events?region=${encodeURIComponent(item.region)}&decision=MINT&since=7d`}
+                className="block py-2 hover:opacity-80"
                 style={{
                   borderBottom:
                     i < items.length - 1 ? "1px solid var(--border)" : "none",
+                  cursor: "pointer",
                 }}
+                title={`See the MINT events behind ${item.region}'s ${pct}% destructive ratio`}
               >
                 <div className="flex items-center gap-3">
                   <span
@@ -103,7 +108,7 @@ export function TopRegionsDestructiveCard({
                 >
                   · {item.events} {item.events === 1 ? "event" : "events"}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>

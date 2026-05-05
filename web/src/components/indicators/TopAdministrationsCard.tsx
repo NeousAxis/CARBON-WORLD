@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export interface TopAdministrationsCardProps {
   administrations: Array<{
     administration: string;
@@ -72,13 +74,16 @@ export function TopAdministrationsCard({
             const barWidth = Math.min(100, Math.max(0, pct));
 
             return (
-              <div
+              <Link
                 key={item.administration}
-                className="py-1.5"
+                href={`/events?administration=${encodeURIComponent(item.administration)}&since=7d`}
+                className="block py-1.5 hover:opacity-80"
                 style={{
                   borderBottom:
                     i < items.length - 1 ? "1px solid var(--border)" : "none",
+                  cursor: "pointer",
                 }}
+                title={`See the ${item.events} events tracked under ${formatAdministration(item.administration)}`}
               >
                 {/* Top row */}
                 <div className="flex items-center gap-2">
@@ -130,7 +135,7 @@ export function TopAdministrationsCard({
                     · {item.events}
                   </span>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

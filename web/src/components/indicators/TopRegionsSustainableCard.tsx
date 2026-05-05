@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export interface TopRegionsSustainableCardProps {
   regions: Array<{ region: string; burn_ratio: number; events: number }>;
 }
@@ -57,13 +59,16 @@ export function TopRegionsSustainableCard({
             const barWidth = Math.min(100, Math.max(0, pct));
 
             return (
-              <div
+              <Link
                 key={item.region}
-                className="py-2"
+                href={`/events?region=${encodeURIComponent(item.region)}&decision=BURN&since=7d`}
+                className="block py-2 hover:opacity-80"
                 style={{
                   borderBottom:
                     i < items.length - 1 ? "1px solid var(--border)" : "none",
+                  cursor: "pointer",
                 }}
+                title={`See the BURN events behind ${item.region}'s ${pct}% sustainable ratio`}
               >
                 {/* Top row: rank + name + bar + pct */}
                 <div className="flex items-center gap-3">
@@ -117,7 +122,7 @@ export function TopRegionsSustainableCard({
                 >
                   · {item.events} {item.events === 1 ? "event" : "events"}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>

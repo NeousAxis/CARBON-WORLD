@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { formatAmount } from "./formatAmount";
 
 export interface TopCountriesMintCardProps {
@@ -52,13 +53,16 @@ export function TopCountriesMintCard({ countries }: TopCountriesMintCardProps) {
       ) : (
         <div className="flex flex-col">
           {items.map((item, i) => (
-            <div
+            <Link
               key={item.country}
-              className="flex items-center gap-3 py-2"
+              href={`/events?country=${encodeURIComponent(item.country)}&decision=MINT&since=7d`}
+              className="flex items-center gap-3 py-2 hover:opacity-80"
               style={{
                 borderBottom:
                   i < items.length - 1 ? "1px solid var(--border)" : "none",
+                cursor: "pointer",
               }}
+              title={`See the ${item.count} MINT events from ${item.country}`}
             >
               {/* Rank */}
               <span
@@ -91,7 +95,7 @@ export function TopCountriesMintCard({ countries }: TopCountriesMintCardProps) {
                   {formatAmount(item.total_amount)} CBWD
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}

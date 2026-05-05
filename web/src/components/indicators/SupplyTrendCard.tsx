@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { formatAmount } from "./formatAmount";
 
 export interface SupplyTrendCardProps {
@@ -80,13 +81,18 @@ export function SupplyTrendCard({ trend }: SupplyTrendCardProps) {
     : `+${formatAmount(Math.abs(totalNet))}`;
 
   return (
-    <div
+    <Link
+      href="/events?since=7d"
+      className="block hover:opacity-90"
       style={{
         backgroundColor: "var(--card-bg)",
         border: "1px solid var(--border)",
+        cursor: "pointer",
+        textDecoration: "none",
       }}
-      className="p-4"
+      title="See every event that drove the 7-day supply change"
     >
+     <div className="p-4">
       {/* Title */}
       <p
         className="text-xs uppercase tracking-wider font-mono mb-3"
@@ -180,6 +186,7 @@ export function SupplyTrendCard({ trend }: SupplyTrendCardProps) {
           </div>
         </>
       )}
-    </div>
+     </div>
+    </Link>
   );
 }
