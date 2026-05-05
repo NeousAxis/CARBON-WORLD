@@ -1,5 +1,46 @@
 {
-  "generated_at": "2026-05-05T10:15:00.895064+00:00",
-  "total_pending": 0,
-  "reviews": []
+  "generated_at": "2026-05-05T10:42:10.094311+00:00",
+  "total_pending": 2,
+  "reviews": [
+    {
+      "id": 27,
+      "event_title": "Video message for roundtable discussion on LNG & Shipping organised by CBS Alumni Club and Columbia Global Energy Centre",
+      "event_url": "",
+      "event_source": "European Commission Press",
+      "analyst_a_verdict": "{\"validation\": false, \"reason\": \"The article describes a speech title and context but does not describe a concrete action taken by an identifiable actor. It lacks details of what was decided, enacted, or implemented.\"}",
+      "analyst_b_verdict": null,
+      "reconciler_verdict": null,
+      "sentinel_concern": "Analyst rejected as not-actionable: The article describes a speech title and context but does not describe a concrete action taken by an identifiable actor. It lacks details of what was decided, enacted, or implemented.",
+      "suggested_decision": "REJECT",
+      "suggested_amount_crbn": 0,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-05T10:37:54.572912+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 28,
+      "event_title": "'She needs to go': Calls for Margot McNeill to resign from CIT",
+      "event_url": "https://www.abc.net.au/news/2026-05-05/calls-for-cit-margot-mcneill-to-resign/106642094",
+      "event_source": "ABC News Australia",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"ACT Legislative Assembly released a damning report exposing misconduct by Margot McNeill, demonstrating institutional accountability and transparency\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Margot McNeill, as chief executive, misled the institute's board, violating ethical and professional standards\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 29\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The ACT Legislative Assembly's report exposes institutional misconduct by Margot McNeill, which is a positive step toward accountability and transparency (SDG 16). However, the underlying act of misleading the board is a clear ethical violation, undermining trust and governance. The net judgment balances these two aspects, leaning slightly negative due to the severity of the misconduct.\", \"snapshot_score\": -3.0, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"McNeill's resignation or removal from office\", \"Implementation of stricter governance reforms at CIT\", \"Public or legal consequences for McNeill's actions\"], \"revaluation_checkpoint\": \"2028-05-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"McNeill resigns, reforms are implemented, and institutional trust is restored\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"McNeill remains in position, reforms are delayed, and public trust erodes further\", \"probability\": 0.5, \"score\": -4}, {\"name\": \"C\", \"description\": \"McNeill faces legal or severe professional consequences, leading to systemic governance overhaul\", \"probability\": 0.2, \"score\": 7}], \"prospective_score\": 0.15, \"final_score\": -0.7625, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Misconduct by institutional leader outweighs accountability measures, warranting MINT.\", \"event_country\": \"Australia\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"ACT Legislative Assembly released a damning report exposing misconduct by Margot McNeill, demonstrating institutional accountability and oversight\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Margot McNeill's alleged misconduct as chief executive of Canberra Institute of Technology undermines institutional integrity and public trust\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 29\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The ACT Legislative Assembly's report exposing misconduct at a public institution represents a positive step toward accountability and transparency, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying misconduct itself is a negative ethical event that undermines public trust and institutional integrity.\", \"snapshot_score\": 3.0, \"trajectory_score\": 1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"McNeill's resignation or removal\", \"ACT government's response to the report\", \"institutional reforms implemented by CIT\", \"public or media pressure escalation\"], \"revaluation_checkpoint\": \"2028-05-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"McNeill resigns, ACT government implements robust institutional reforms, and public trust in CIT is restored\", \"probability\": 0.35, \"score\": 8}, {\"name\": \"B\", \"description\": \"McNeill remains in position, reforms are superficial, and public trust erodes further\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"McNeill is removed by force, ACT government faces backlash, and CIT's operations are disrupted\", \"probability\": 0.15, \"score\": -7}], \"prospective_score\": 1.05, \"final_score\": 1.76, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Institutional accountability action outweighs misconduct but remains neutral overall.\", \"event_country\": \"Australia\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.7625, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional accountability action (report exposing misconduct) punishes harm and protects rights.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (accountability via report) as a protective measure (BURN), while Analyst B's NEUTRAL stance misweighed the misconduct against the accountability action. The ACTION (report exposing misconduct) is the focus, not the subject's misconduct.\"}",
+      "sentinel_concern": "Polarity error: accountability action (BURN) vs. misconduct (MINT) confusion",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-05T10:42:09.940273+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    }
+  ]
 }
