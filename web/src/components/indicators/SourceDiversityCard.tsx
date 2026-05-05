@@ -44,7 +44,7 @@ export function SourceDiversityCard({
         style={{ color: "var(--muted)" }}
       >
         SOURCE DIVERSITY · 7D
-        <InfoTooltip text="Diversité du sourcing du pipeline. NICHE = sources avec ≤3 events sur 7j (presse régionale, ONG, blogs). MAINSTREAM = sources avec >3 events (Le Monde, Guardian, etc.). Plus le ratio NICHE est haut, plus le pipeline capte des signaux locaux invisibles aux gros médias." />
+        <InfoTooltip text="Diversity of the pipeline's sourcing. NICHE = sources with ≤3 events over 7 days (regional press, NGOs, blogs). MAINSTREAM = sources with >3 events (Le Monde, The Guardian, etc.). The higher the NICHE share, the more local signals the pipeline picks up that mainstream media miss." />
       </p>
 
       {/* Stacked bar */}

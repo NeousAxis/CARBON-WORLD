@@ -79,7 +79,7 @@ export function EventOfTheDayCard({ event }: EventOfTheDayCardProps) {
         style={{ color: "var(--muted)" }}
       >
         EVENT OF THE DAY · 24H
-        <InfoTooltip text="L'événement le plus impactant des dernières 24h, classé par |score final|. Si aucun event aujourd'hui, fallback sur les 7 derniers jours pour ne pas afficher la card vide. Cliquer = voir l'analyse éthique complète." />
+        <InfoTooltip text="The most impactful event of the last 24 hours, ranked by absolute final score. If no event today, falls back to the last 7 days so the card is never empty. Click to see the full ethical analysis." />
       </p>
 
       {event === null ? (

@@ -34,7 +34,7 @@ export function TopCountriesMintCard({ countries }: TopCountriesMintCardProps) {
         style={{ color: "var(--muted)" }}
       >
         TOP COUNTRIES · MINT · 7D
-        <InfoTooltip text="Les 5 pays avec le plus d'events MINT (régressions institutionnelles, lois fossiles, atteintes aux droits) confirmés on-chain ces 7 derniers jours. Cliquer une ligne = voir tous les events de ce pays." />
+        <InfoTooltip text="Top 5 countries by number of MINT events (institutional regressions, fossil-fuel laws, rights violations) confirmed on-chain over the last 7 days. Click any row to see every event for that country." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

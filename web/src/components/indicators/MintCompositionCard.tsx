@@ -46,7 +46,7 @@ export function MintCompositionCard({
         style={{ color: "var(--brand-teal)" }}
       >
         MINT COMPOSITION · {windowLabel}
-        <InfoTooltip text="Découpage des events MINT par sous-type : DIRECT ACTION (régression institutionnelle directe : décret fossile, atteinte aux droits, etc.) vs EDITORIAL ALARM (article alertant sur un enjeu sans décision concrète) vs UNTYPED (events anciens)." />
+        <InfoTooltip text="Breakdown of MINT events by subtype. DIRECT ACTION = direct institutional regression (fossil-fuel decree, rights violation, etc.). EDITORIAL ALARM = editorial coverage flagging an issue without a concrete decision. UNTYPED = older events with no subtype assigned." />
       </p>
 
       {total_mint === 0 ? (

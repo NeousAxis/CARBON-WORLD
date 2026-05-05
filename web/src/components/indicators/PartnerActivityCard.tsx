@@ -49,7 +49,7 @@ export function PartnerActivityCard({ partners }: PartnerActivityCardProps) {
         style={{ color: "var(--muted)" }}
       >
         ACTIVE PARTNERS · 7D
-        <InfoTooltip text="Organisations partenaires (clé API Tier 2) ayant soumis des events sur 7 jours. Vide tant qu'aucune institution partenaire n'a poussé de submission via l'API publique." />
+        <InfoTooltip text="Partner organizations (Tier 2 API key holders) that have submitted events over the last 7 days. Empty until at least one partner pushes a submission through the public API." />
       </p>
 
       {partners.length === 0 ? (

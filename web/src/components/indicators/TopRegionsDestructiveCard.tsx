@@ -32,7 +32,7 @@ export function TopRegionsDestructiveCard({
         style={{ color: "var(--muted)" }}
       >
         TOP REGIONS · DESTRUCTIVE · 7D
-        <InfoTooltip text="Régions avec le plus haut RATIO d'actions négatives (MINT ÷ total) sur 7 jours. Minimum 3 events on-chain pour figurer. Identifie les zones où les régressions dominent." />
+        <InfoTooltip text="Regions ranked by their MINT ratio (negative actions ÷ total events) over the last 7 days. Minimum 3 on-chain events to qualify. Identifies areas where regressions dominate." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

@@ -29,7 +29,7 @@ export function TopInstitutionsCard({ institutions }: TopInstitutionsCardProps) 
         style={{ color: "var(--muted)" }}
       >
         TOP INSTITUTIONS · 7D
-        <InfoTooltip text="Top 8 institutions internationales (NATO, UN, OMS, GIEC, OMC, UE, OTAN…) mentionnées dans les events on-chain des 7 derniers jours. Détection regex multilingue (FR + EN). +N = mentions BURN, −N = mentions MINT." />
+        <InfoTooltip text="Top 8 international institutions (UN, WHO, IPCC, NATO, EU Commission, WTO…) mentioned in on-chain events over the last 7 days. Multilingual regex detection (EN + FR). +N = BURN mentions, −N = MINT mentions." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

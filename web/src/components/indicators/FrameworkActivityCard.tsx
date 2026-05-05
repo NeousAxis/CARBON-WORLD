@@ -110,7 +110,7 @@ export function FrameworkActivityCard({
           style={{ color: "var(--muted)" }}
         >
           FRAMEWORK ACTIVITY · 7 DAYS
-          <InfoTooltip text="Pour chacun des 7 référentiels universels (ODD, UDHR, OIT, CRC, UNDRIP, Animal Rights, Limites planétaires), nombre d'events on-chain qui l'ont touché : +N = events BURN, −N = events MINT. Cliquer une ligne ou un nombre = voir les events. Borné par le nombre total d'events BURN/MINT 7d." />
+          <InfoTooltip text="For each of the 7 universal reference frameworks (SDGs, UDHR, ILO, CRC, UNDRIP, Animal Rights, Planetary Boundaries), number of on-chain events that touched it: +N = BURN events, −N = MINT events. Click a row or a number to see the events. Bounded by total BURN/MINT count over 7 days." />
         </span>
 
         {/* Legend: "+ POSITIVE · − NEGATIVE" */}

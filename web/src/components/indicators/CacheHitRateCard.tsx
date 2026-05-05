@@ -43,7 +43,7 @@ export function CacheHitRateCard({
         style={{ color: "var(--muted)" }}
       >
         CACHE HIT RATE · 7D
-        <InfoTooltip text="Pourcentage d'articles pour lesquels le pipeline a RÉUTILISÉ un verdict d'analyse passée (similarité sémantique ≥ 92% via embeddings) au lieu de relancer l'IA. Économise le quota LLM. 0% = chaque article est analysé from scratch (pas de doublon récent)." />
+        <InfoTooltip text="Share of articles for which the pipeline REUSED a past analysis verdict (semantic similarity ≥ 92% via embeddings) instead of re-running the AI. Saves LLM quota. 0% = every article is analyzed from scratch (no recent semantic duplicate)." />
       </p>
 
       {/* Big number */}

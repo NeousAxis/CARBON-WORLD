@@ -100,7 +100,7 @@ export function SupplyTrendCard({ trend }: SupplyTrendCardProps) {
         style={{ color: "var(--muted)" }}
       >
         SUPPLY NET · 7D TREND
-        <InfoTooltip text="Évolution journalière du supply net de CBWD ces 7 derniers jours. Vert = BURN dominant (l'offre du token diminue, les bonnes décisions l'emportent). Rouge = MINT dominant (l'offre augmente, les régressions l'emportent). Cliquer = voir tous les events de la semaine." />
+        <InfoTooltip text="Daily change in net CBWD supply over the last 7 days. Green = BURN dominant (token supply decreases, positive decisions outweigh). Red = MINT dominant (supply grows, regressions outweigh). Click the card to see every event of the week." />
       </p>
 
       {!hasData ? (

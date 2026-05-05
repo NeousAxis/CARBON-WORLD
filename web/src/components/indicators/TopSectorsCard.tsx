@@ -29,7 +29,7 @@ export function TopSectorsCard({ sectors }: TopSectorsCardProps) {
         style={{ color: "var(--muted)" }}
       >
         TOP SECTORS · 7D
-        <InfoTooltip text="Top 8 secteurs économiques (Énergie, Mines, Agriculture, Tech, Finance, Pharma, Défense, Pêche, Forêt, Transport, Construction, Eau) impactés par les events on-chain. Détection regex multilingue. +N = events BURN, −N = events MINT." />
+        <InfoTooltip text="Top 8 economic sectors (Energy, Mining, Agriculture, Tech, Finance, Pharma, Defense, Fishing, Forestry, Transport, Construction, Water) impacted by on-chain events. Multilingual regex detection. +N = BURN events, −N = MINT events." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

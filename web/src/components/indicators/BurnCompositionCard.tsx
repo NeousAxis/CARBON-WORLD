@@ -45,7 +45,7 @@ export function BurnCompositionCard({
         style={{ color: "var(--brand-teal)" }}
       >
         BURN COMPOSITION · {windowLabel}
-        <InfoTooltip text="Découpage des events BURN par sous-type : DIRECT ACTION (acte concret terrain : traité signé, biome protégé, victoire citoyenne) vs EDITORIAL CONSCIOUSNESS (article éditorial qui amplifie une prise de conscience, ex. Mongabay) vs UNTYPED (events anciens sans subtype assigné)." />
+        <InfoTooltip text="Breakdown of BURN events by subtype. DIRECT ACTION = concrete on-the-ground act (treaty signed, biome protected, citizen victory). EDITORIAL CONSCIOUSNESS = editorial coverage amplifying public awareness (Mongabay, Yale E360, etc.). UNTYPED = older events with no subtype assigned." />
       </p>
 
       {total_burn === 0 ? (

@@ -34,7 +34,7 @@ export function TopCountriesBurnCard({ countries }: TopCountriesBurnCardProps) {
         style={{ color: "var(--muted)" }}
       >
         TOP COUNTRIES · BURN · 7D
-        <InfoTooltip text="Les 5 pays avec le plus d'events BURN (actions positives — décisions, traités, conservation, victoires citoyennes) confirmés on-chain ces 7 derniers jours. Cliquer une ligne = voir les events." />
+        <InfoTooltip text="Top 5 countries by number of BURN events (positive actions — decisions, treaties, conservation, citizen victories) confirmed on-chain over the last 7 days. Click any row to see every event." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"
