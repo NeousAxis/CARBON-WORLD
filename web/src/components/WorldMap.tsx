@@ -198,6 +198,10 @@ export function WorldMap({ events, windowDays = 7, height = 460 }: WorldMapProps
           height: `clamp(220px, 50vw, ${height}px)`,
           // Match Lunaris card bg so the recolored hex grid blends seamlessly.
           background: "var(--card-bg, #1A1A1A)",
+          // Prevent iOS double-tap-to-zoom on the map (was zooming the
+          // whole page when the user tapped a marker on mobile).
+          touchAction: "manipulation",
+          WebkitTapHighlightColor: "transparent",
         }}
       >
         {/* Layer 1 — decorative hex grid (Figma asset) */}
@@ -216,7 +220,11 @@ export function WorldMap({ events, windowDays = 7, height = 460 }: WorldMapProps
           return (
             <g
               key={iso}
-              style={{ cursor: "pointer" }}
+              style={{
+                cursor: "pointer",
+                touchAction: "manipulation",
+                WebkitTapHighlightColor: "transparent",
+              }}
               onMouseEnter={() => setHoverIso(iso)}
               onMouseLeave={() => setHoverIso(null)}
               onClick={() =>
