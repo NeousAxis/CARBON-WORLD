@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-05T12:12:03.702468+00:00",
-  "total_events": 156,
-  "total_burned": 28821000,
-  "total_minted": 141158750,
+  "generated_at": "2026-05-05T12:41:38.245481+00:00",
+  "total_events": 158,
+  "total_burned": 33821000,
+  "total_minted": 145158750,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 158,
+      "event_title": "Why ban advertising for meat and fossil fuels?",
+      "event_url": "https://www.rfi.fr/fr/podcasts/questions-d-environnement/20260505-pourquoi-interdire-la-publicit%C3%A9-pour-la-viande-et-les-%C3%A9nergies-fossiles",
+      "event_source": "RFI FR Environnement",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.26,
+      "confidence": 8,
+      "justification": "Amsterdam's ban on harmful advertising aligns with climate action and sets a global precedent. | The ban directly targets the promotion of high-emission products, aligning with climate action (SDG 13) and responsible consumption (SDG 12). It also reflects a broader societal shift toward restricting harmful advertising, which undermines planetary boundaries. No significant negative ethical aspects are identified in this action.",
+      "tx_hash": "35spV7DSvvFnPFyZRwYGt4qxWxX5r7M8aQipLXWyzegrGpgRuHwYqSqdU2HJTW1idis2kccVwvP5w1E9XtNJNBLY",
+      "created_at": "2026-05-05T12:41:37.988528+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Amsterdam bans public advertising for meat and fossil fuels, reducing promotion of climate-harmful products and aligning with climate action goals\", \"affected_sdgs\": [12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Fifty cities worldwide adopt similar bans, indicating a growing global movement to restrict harmful advertising and promote sustainable consumption\", \"affected_sdgs\": [12, 13, 17], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 157,
+      "event_title": "Thailand's monkey business: Pharmaceutical labs rely on primate testing",
+      "event_url": "https://www.france24.com/en/tv-shows/focus/20260505-thailand-s-monkey-business-pharmaceutical-labs-rely-on-primate-testing",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 4000000,
+      "final_score": -3.42,
+      "confidence": 8,
+      "justification": "Pharmaceutical primate testing and trafficking violate animal rights and biodiversity, outweighing journalism's positive role. | The article highlights a critical ethical dilemma: investigative journalism exposes harmful industry practices (animal testing and trafficking) while the underlying pharmaceutical reliance on primate testing remains a systemic violation of animal rights and biodiversity. The net ethical position is negative due to the direct harm to animals and potential ecological con",
+      "tx_hash": "3KxdZjqUfHsfTHbgf2Qx8F68LraFRtZJMjiEkxJwKyAVvtAhYjJEvzhHYZzgnFcMBfwcByX2pXaZb87yK8XMQc4M",
+      "created_at": "2026-05-05T12:41:37.889854+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Investigative journalism exposing illegal primate trafficking for pharmaceutical testing, raising public awareness and potential regulatory scrutiny\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Pharmaceutical industry reliance on primate testing for drug and vaccine development, contributing to animal rights violations and potential ecological harm from illegal wildlife trafficking\", \"affected_sdgs\": [3, 15], \"violated_rights\": [\"Universal Declaration of Animal Rights\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 156,
       "event_title": "In London, fire at an old synagogue, following a series of antisemitic attacks",
@@ -3478,6 +3522,11 @@
         "total_amount": 7150000
       },
       {
+        "country": "Netherlands",
+        "count": 1,
+        "total_amount": 5000000
+      },
+      {
         "country": "France",
         "count": 1,
         "total_amount": 150000
@@ -3486,11 +3535,6 @@
         "country": "Colombia",
         "count": 1,
         "total_amount": 125000
-      },
-      {
-        "country": "Australia",
-        "count": 1,
-        "total_amount": 750000
       }
     ],
     "top_regions_sustainable": [
@@ -3500,14 +3544,14 @@
         "events": 7
       },
       {
-        "region": "North America",
+        "region": "Europe",
         "burn_ratio": 0.25,
         "events": 8
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.143,
-        "events": 7
+        "region": "North America",
+        "burn_ratio": 0.25,
+        "events": 8
       },
       {
         "region": "Asia",
@@ -3533,8 +3577,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.857,
-        "events": 7
+        "mint_ratio": 0.75,
+        "events": 8
       },
       {
         "region": "North America",
@@ -3580,8 +3624,8 @@
       },
       {
         "date": "2026-05-05",
-        "net_minted": 32000000,
-        "net_burned": 12700000
+        "net_minted": 36000000,
+        "net_burned": 17700000
       }
     ],
     "event_of_the_day": {
@@ -3597,9 +3641,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 5,
-        "negative": 30,
+        "positive": 6,
+        "negative": 31,
         "event_ids_positive": [
+          158,
           155,
           148,
           145,
@@ -3607,6 +3652,7 @@
           117
         ],
         "event_ids_negative": [
+          157,
           156,
           154,
           153,
@@ -3708,20 +3754,22 @@
       },
       "Animal": {
         "positive": 2,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [
           148,
           117
         ],
         "event_ids_negative": [
+          157,
           154,
           134
         ]
       },
       "PB": {
-        "positive": 5,
-        "negative": 17,
+        "positive": 6,
+        "negative": 18,
         "event_ids_positive": [
+          158,
           155,
           148,
           145,
@@ -3729,6 +3777,7 @@
           117
         ],
         "event_ids_negative": [
+          157,
           153,
           152,
           146,
@@ -3750,14 +3799,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 92.3,
-      "mainstream_pct": 7.7,
-      "total_sources_used": 26,
-      "articles_processed": 43
+      "niche_pct": 92.6,
+      "mainstream_pct": 7.4,
+      "total_sources_used": 27,
+      "articles_processed": 45
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 43,
+      "total_events": 45,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -3864,6 +3913,15 @@
         ]
       },
       {
+        "name": "Pharma",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          157
+        ]
+      },
+      {
         "name": "Mining",
         "count": 1,
         "burn_count": 1,
@@ -3880,71 +3938,62 @@
         "event_ids": [
           153
         ]
-      },
-      {
-        "name": "Fishing",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          144
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 11,
+      "total_burn": 12,
       "direct_action": {
-        "count": 6,
-        "pct": 54.5
+        "count": 7,
+        "pct": 58.3
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 9.1
+        "pct": 8.3
       },
       "untyped": {
         "count": 4,
-        "pct": 36.4
+        "pct": 33.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 24,
+      "total_burn": 25,
       "direct_action": {
-        "count": 16,
-        "pct": 66.7
+        "count": 17,
+        "pct": 68.0
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 16.7
+        "pct": 16.0
       },
       "untyped": {
         "count": 4,
-        "pct": 16.7
+        "pct": 16.0
       }
     },
     "mint_composition_7d": {
-      "total_mint": 32,
+      "total_mint": 33,
       "direct_action": {
-        "count": 24,
-        "pct": 75.0
+        "count": 25,
+        "pct": 75.8
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 18.8
+        "pct": 18.2
       },
       "untyped": {
         "count": 2,
-        "pct": 6.2
+        "pct": 6.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 131,
+      "total_mint": 132,
       "direct_action": {
-        "count": 107,
-        "pct": 81.7
+        "count": 108,
+        "pct": 81.8
       },
       "editorial_alarm": {
         "count": 22,
-        "pct": 16.8
+        "pct": 16.7
       },
       "untyped": {
         "count": 2,
