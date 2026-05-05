@@ -184,7 +184,7 @@ _RAW_RULES: list[tuple[str, str]] = [
 
     # ---- Country names directly mentioned (last-ditch fallback) ----
     # Tighter: "in <Country>", "<Country>'s", or first word "<Country>:"
-    (r"^(France)\b|\bin France\b|\bFrance['']s\b|\bFrench (?:government|president)\b|\bJoue (?:?)\b", "France"),
+    (r"^(France)\b|\bin France\b|\bFrance['']s\b|\bFrench (?:government|president)\b", "France"),
     (r"^(Germany)\b|\bin Germany\b|\bGermany['']s\b", "Germany"),
     (r"^(Italy)\b|\bin Italy\b|\bItaly['']s\b|\bRome\b(?! Statute)|\bMilan\b|\bNaples\b|\bMeloni\b|\bItalian (?:government|prime minister)\b", "Italy"),
     (r"^(Spain)\b|\bin Spain\b|\bSpain['']s\b|\bMadrid\b|\bBarcelona\b|\bSeville\b|\bSpanish (?:government|prime minister)\b|\bS[áa]nchez\b", "Spain"),
