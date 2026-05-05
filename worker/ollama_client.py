@@ -420,11 +420,15 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
     is saturated — no 1000s+ backoff wait.
     """
     if LLM_PROVIDER == "groq":
-        # Fail fast if we have a Cerebras fallback, otherwise retry up to 3 times.
-        attempts = 1 if CEREBRAS_API_KEY else 3
+        # Cascade: Groq → Mistral → Cerebras. Fail fast on each so a single
+        # provider's 429 never freezes the classifier.
+        attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
         result = _call_groq(system_prompt, user_message, context, max_tokens=200, max_attempts=attempts)
+        if result is None and MISTRAL_API_KEY:
+            logger.info("Groq failed for classifier %s, trying Mistral", context)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=200, delay=2)
         if result is None and CEREBRAS_API_KEY:
-            logger.info("Groq failed for classifier %s, falling back to Cerebras", context)
+            logger.info("Mistral failed for classifier %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=200, delay=3)
         return result
     return _call_ollama_fast(system_prompt, user_message, context)
@@ -432,15 +436,19 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
 
 def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
-    Call the deep model (analyst A). Routes to Groq first; on 429 (fail fast,
-    max_attempts=1) and when CEREBRAS_API_KEY is set, falls back to Cerebras
-    (separate quota bucket). Avoids 1000s+ Groq backoff blocking the pipeline.
+    Call the deep model (analyst A).
+    Cascade: Groq → Mistral → Cerebras. Each provider is a separate free-tier
+    bucket; failing fast through them keeps the pipeline moving when one is
+    saturated.
     """
     if LLM_PROVIDER == "groq":
-        attempts = 1 if CEREBRAS_API_KEY else 3
+        attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
         result = _call_groq(system_prompt, user_message, context, max_tokens=3000, max_attempts=attempts)
+        if result is None and MISTRAL_API_KEY:
+            logger.info("Groq failed for analyst A %s, trying Mistral", context)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=3000, delay=4)
         if result is None and CEREBRAS_API_KEY:
-            logger.info("Groq failed for analyst A %s, falling back to Cerebras", context)
+            logger.info("Mistral failed for analyst A %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=3000, delay=8)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2500)
@@ -494,12 +502,10 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
 def call_reconciler(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
     Call Reconciler — Qwen3 merging Analyst A and B verdicts.
-    Routes Groq first; on 429 (fail fast when CEREBRAS_API_KEY set) falls back
-    to Cerebras (separate quota bucket). Prevents the pipeline from stalling
-    on long Groq backoffs when reconciling 5-10 events per run.
+    Cascade: Groq → Mistral → Cerebras. Same fail-fast pattern as Analyst A.
     """
     if LLM_PROVIDER == "groq":
-        attempts = 1 if CEREBRAS_API_KEY else 3
+        attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
         result = _call_groq(
             system_prompt,
             user_message,
@@ -509,8 +515,11 @@ def call_reconciler(system_prompt: str, user_message: str, context: str = "") ->
             delay=8,
             max_attempts=attempts,
         )
+        if result is None and MISTRAL_API_KEY:
+            logger.info("Groq failed for reconciler %s, trying Mistral", context)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=2500, delay=4)
         if result is None and CEREBRAS_API_KEY:
-            logger.info("Groq failed for reconciler %s, falling back to Cerebras", context)
+            logger.info("Mistral failed for reconciler %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=2500, delay=8)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2000)
@@ -519,12 +528,10 @@ def call_reconciler(system_prompt: str, user_message: str, context: str = "") ->
 def call_sentinel(system_prompt: str, user_message: str, context: str = "") -> Optional[dict]:
     """
     Call Sentinel — final coherence check on GPT-OSS-120B.
-    Routes Groq first; on 429 (fail fast when CEREBRAS_API_KEY set) falls back
-    to Cerebras. Prevents pipeline stalls on Sentinel coherence checks.
-    Falls back to local Ollama deep model when LLM_PROVIDER=ollama.
+    Cascade: Groq → Mistral → Cerebras. Same fail-fast pattern.
     """
     if LLM_PROVIDER == "groq":
-        attempts = 1 if CEREBRAS_API_KEY else 3
+        attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
         result = _call_groq(
             system_prompt,
             user_message,
@@ -534,8 +541,11 @@ def call_sentinel(system_prompt: str, user_message: str, context: str = "") -> O
             delay=6,
             max_attempts=attempts,
         )
+        if result is None and MISTRAL_API_KEY:
+            logger.info("Groq failed for sentinel %s, trying Mistral", context)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=1500, delay=4)
         if result is None and CEREBRAS_API_KEY:
-            logger.info("Groq failed for sentinel %s, falling back to Cerebras", context)
+            logger.info("Mistral failed for sentinel %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=1500, delay=6)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=1500)
