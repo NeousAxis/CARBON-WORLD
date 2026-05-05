@@ -64,9 +64,10 @@ export default function TransactionsPage() {
       {/* On-chain transactions */}
       {withTx.length > 0 && (
         <div
-          className="mb-8"
+          className="mb-8 overflow-x-auto"
           style={{ backgroundColor: "#1A1A1A", border: "1px solid #2E2E2E" }}
         >
+         <div className="min-w-[860px]">
           <div
             className="flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wider"
             style={{ backgroundColor: "#2E2E2E", color: "#B8B9B6" }}
@@ -128,12 +129,14 @@ export default function TransactionsPage() {
               </div>
             );
           })}
+         </div>
         </div>
       )}
 
       {/* Pending transactions */}
       {withoutTx.length > 0 && (
-        <div style={{ backgroundColor: "#1A1A1A", border: "1px solid #2E2E2E" }}>
+        <div className="overflow-x-auto" style={{ backgroundColor: "#1A1A1A", border: "1px solid #2E2E2E" }}>
+         <div className="min-w-[860px]">
           <div
             className="flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wider"
             style={{ backgroundColor: "#2E2E2E", color: "#B8B9B6" }}
@@ -190,6 +193,7 @@ export default function TransactionsPage() {
               </div>
             );
           })}
+         </div>
         </div>
       )}
     </div>

@@ -307,7 +307,11 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
         </div>
       </div>
 
-      {/* SVG world map — wheel-zoom + drag-pan */}
+      {/* SVG world map — wheel-zoom + drag-pan.
+          Mobile-friendly height: clamp the container between 220 px and the
+          requested `height` prop, scaled to viewport width with the same
+          2:1 aspect ratio as the SVG viewBox. Avoids letterboxing on phones
+          and keeps the desktop look intact. */}
       <svg
         ref={svgRef}
         width="100%"
@@ -315,7 +319,7 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
         preserveAspectRatio="xMidYMid meet"
         style={{
           display: "block",
-          height,
+          height: `clamp(220px, 50vw, ${height}px)`,
           background: "#1A1A1A",
           cursor: isDragging.current ? "grabbing" : "grab",
           touchAction: "none",

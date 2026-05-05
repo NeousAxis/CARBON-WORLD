@@ -62,9 +62,14 @@ export function InfoTooltip({ text }: InfoTooltipProps) {
           style={{
             position: "absolute",
             bottom: "calc(100% + 8px)",
-            left: 0,
+            // Anchor to the right of the badge instead of the left so the
+            // bubble doesn't overflow off-screen on narrow viewports
+            // (the (?) is always at the end of a card title).
+            right: 0,
             zIndex: 50,
-            width: 280,
+            width: "max-content",
+            // Cap to viewport minus 32px gutters; never wider than 280.
+            maxWidth: "min(280px, calc(100vw - 32px))",
             padding: "10px 12px",
             backgroundColor: "#0F1413",
             border: "1px solid #2E2E2E",
