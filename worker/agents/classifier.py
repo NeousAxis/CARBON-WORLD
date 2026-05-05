@@ -261,8 +261,11 @@ def _classify_sub_batch(sub_batch: list[dict]) -> Optional[list[dict]]:
 
 def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
     """
-    Cerebras fallback for batch classifier. Used when Groq returns 429-exhausted.
-    Returns raw text (same contract as _call_fast_raw).
+    Cerebras tertiary fallback for batch classifier (last bucket in
+    Groq → Mistral → Cerebras cascade).
+
+    max_attempts=1 because the upstream cascade already gives Mistral a
+    shot. No point in retrying Cerebras 3× when Mistral just fail-fast'd.
     """
     import time
     import httpx
@@ -272,7 +275,7 @@ def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
         return None
 
     max_tokens = 800
-    time.sleep(3)
+    time.sleep(2)
 
     payload = {
         "model": CEREBRAS_MODEL,
@@ -289,7 +292,7 @@ def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
     }
 
     attempt = 0
-    max_attempts = 3
+    max_attempts = 1
     while True:
         attempt += 1
         try:
@@ -329,16 +332,62 @@ def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
             return None
 
 
+def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
+    """
+    Mistral primary fallback for batch classifier.
+    Single-attempt fail-fast — the cascade falls through to Cerebras if it fails.
+    """
+    import time
+    import httpx
+    from config import MISTRAL_API_KEY, MISTRAL_MODEL
+
+    if not MISTRAL_API_KEY:
+        return None
+
+    max_tokens = 800
+    time.sleep(2)
+
+    payload = {
+        "model": MISTRAL_MODEL,
+        "messages": [
+            {"role": "system", "content": CLASSIFIER_BATCH_PROMPT},
+            {"role": "user", "content": user_message},
+        ],
+        "temperature": 0.1,
+        "max_tokens": max_tokens,
+        "response_format": {"type": "json_object"},
+    }
+    headers = {
+        "Authorization": f"Bearer {MISTRAL_API_KEY}",
+        "Content-Type": "application/json",
+    }
+    try:
+        resp = httpx.post(
+            "https://api.mistral.ai/v1/chat/completions",
+            headers=headers,
+            json=payload,
+            timeout=60,
+        )
+        if resp.status_code == 429:
+            logger.warning("Mistral 429 for batch %s (single attempt fail-fast)", context)
+            return None
+        resp.raise_for_status()
+        data = resp.json()
+        return data["choices"][0]["message"]["content"]
+    except Exception as exc:
+        logger.warning("Mistral batch call failed for %s: %s", context, exc)
+        return None
+
+
 def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
     """
     Call the fast LLM and return the raw text response (before JSON parsing).
     This is needed for batch mode where the response is a JSON array, not a dict.
 
-    Routes Groq first; on exhausted failure and CEREBRAS_API_KEY present, falls
-    back to Cerebras so the classifier keeps working when Groq's free tier is saturated.
+    Cascade: Groq → Mistral → Cerebras (3 independent free-tier buckets).
     """
     import time
-    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_MODEL, CEREBRAS_API_KEY
+    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_MODEL, CEREBRAS_API_KEY, MISTRAL_API_KEY
 
     if LLM_PROVIDER == "groq":
         import httpx
@@ -402,7 +451,12 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
                 return data["choices"][0]["message"]["content"]
             except Exception as exc:
                 logger.warning("Groq batch call failed for %s: %s", context, exc)
-                # Fallback to Cerebras if available (separate quota bucket)
+                # Cascade: Groq → Mistral → Cerebras (3 buckets, fail-fast each)
+                if MISTRAL_API_KEY:
+                    logger.info("Trying Mistral for batch %s", context)
+                    result = _call_mistral_batch_raw(user_message, context)
+                    if result is not None:
+                        return result
                 if CEREBRAS_API_KEY:
                     logger.info("Falling back to Cerebras for batch %s", context)
                     return _call_cerebras_batch_raw(user_message, context)
