@@ -1,3 +1,5 @@
+import { InfoTooltip } from "../InfoTooltip";
+
 export interface CacheHitRateCardProps {
   /** Number of events served from semantic cache (no LLM call) */
   hits: number;
@@ -41,6 +43,7 @@ export function CacheHitRateCard({
         style={{ color: "var(--muted)" }}
       >
         CACHE HIT RATE · 7D
+        <InfoTooltip text="Pourcentage d'articles pour lesquels le pipeline a RÉUTILISÉ un verdict d'analyse passée (similarité sémantique ≥ 92% via embeddings) au lieu de relancer l'IA. Économise le quota LLM. 0% = chaque article est analysé from scratch (pas de doublon récent)." />
       </p>
 
       {/* Big number */}

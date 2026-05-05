@@ -1,4 +1,5 @@
 import { FrameworkBar } from "./FrameworkBar";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface FrameworkActivity {
   positive: number;
@@ -109,6 +110,7 @@ export function FrameworkActivityCard({
           style={{ color: "var(--muted)" }}
         >
           FRAMEWORK ACTIVITY · 7 DAYS
+          <InfoTooltip text="Pour chacun des 7 référentiels universels (ODD, UDHR, OIT, CRC, UNDRIP, Animal Rights, Limites planétaires), nombre d'events on-chain qui l'ont touché : +N = events BURN, −N = events MINT. Cliquer une ligne ou un nombre = voir les events. Borné par le nombre total d'events BURN/MINT 7d." />
         </span>
 
         {/* Legend: "+ POSITIVE · − NEGATIVE" */}

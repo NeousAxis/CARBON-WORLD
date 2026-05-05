@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface TopRegionsDestructiveCardProps {
   regions: Array<{ region: string; mint_ratio: number; events: number }>;
@@ -31,6 +32,7 @@ export function TopRegionsDestructiveCard({
         style={{ color: "var(--muted)" }}
       >
         TOP REGIONS · DESTRUCTIVE · 7D
+        <InfoTooltip text="Régions avec le plus haut RATIO d'actions négatives (MINT ÷ total) sur 7 jours. Minimum 3 events on-chain pour figurer. Identifie les zones où les régressions dominent." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

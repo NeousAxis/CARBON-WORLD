@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface TopRegionsSustainableCardProps {
   regions: Array<{ region: string; burn_ratio: number; events: number }>;
@@ -35,6 +36,7 @@ export function TopRegionsSustainableCard({
         style={{ color: "var(--muted)" }}
       >
         TOP REGIONS · SUSTAINABLE · 7D
+        <InfoTooltip text="Régions avec le plus haut RATIO d'actions positives (BURN ÷ total) sur 7 jours. Minimum 3 events on-chain pour figurer. Mesure la 'qualité' éthique régionale, pas le volume brut." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

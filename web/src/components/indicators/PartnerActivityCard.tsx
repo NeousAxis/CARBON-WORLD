@@ -1,3 +1,5 @@
+import { InfoTooltip } from "../InfoTooltip";
+
 export interface PartnerEntry {
   organization: string;
   submissions: number;
@@ -47,6 +49,7 @@ export function PartnerActivityCard({ partners }: PartnerActivityCardProps) {
         style={{ color: "var(--muted)" }}
       >
         ACTIVE PARTNERS · 7D
+        <InfoTooltip text="Organisations partenaires (clé API Tier 2) ayant soumis des events sur 7 jours. Vide tant qu'aucune institution partenaire n'a poussé de submission via l'API publique." />
       </p>
 
       {partners.length === 0 ? (

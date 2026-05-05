@@ -1,4 +1,5 @@
 import type { MintComposition } from "@/lib/types";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface MintCompositionCardProps {
   composition: MintComposition;
@@ -45,6 +46,7 @@ export function MintCompositionCard({
         style={{ color: "var(--brand-teal)" }}
       >
         MINT COMPOSITION · {windowLabel}
+        <InfoTooltip text="Découpage des events MINT par sous-type : DIRECT ACTION (régression institutionnelle directe : décret fossile, atteinte aux droits, etc.) vs EDITORIAL ALARM (article alertant sur un enjeu sans décision concrète) vs UNTYPED (events anciens)." />
       </p>
 
       {total_mint === 0 ? (

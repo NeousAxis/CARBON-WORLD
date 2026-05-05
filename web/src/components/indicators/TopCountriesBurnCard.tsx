@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { formatAmount } from "./formatAmount";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface TopCountriesBurnCardProps {
   countries: Array<{ country: string; count: number; total_amount: number }>;
@@ -33,6 +34,7 @@ export function TopCountriesBurnCard({ countries }: TopCountriesBurnCardProps) {
         style={{ color: "var(--muted)" }}
       >
         TOP COUNTRIES · BURN · 7D
+        <InfoTooltip text="Les 5 pays avec le plus d'events BURN (actions positives — décisions, traités, conservation, victoires citoyennes) confirmés on-chain ces 7 derniers jours. Cliquer une ligne = voir les events." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

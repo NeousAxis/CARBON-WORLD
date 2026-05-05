@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { TaxonomyEntry } from "@/lib/types";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface TopInstitutionsCardProps {
   institutions: TaxonomyEntry[];
@@ -28,6 +29,7 @@ export function TopInstitutionsCard({ institutions }: TopInstitutionsCardProps) 
         style={{ color: "var(--muted)" }}
       >
         TOP INSTITUTIONS · 7D
+        <InfoTooltip text="Top 8 institutions internationales (NATO, UN, OMS, GIEC, OMC, UE, OTAN…) mentionnées dans les events on-chain des 7 derniers jours. Détection regex multilingue (FR + EN). +N = mentions BURN, −N = mentions MINT." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

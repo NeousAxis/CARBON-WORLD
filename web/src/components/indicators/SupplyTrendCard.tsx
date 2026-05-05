@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { formatAmount } from "./formatAmount";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface SupplyTrendCardProps {
   /** 7 daily entries ordered oldest → newest */
@@ -99,6 +100,7 @@ export function SupplyTrendCard({ trend }: SupplyTrendCardProps) {
         style={{ color: "var(--muted)" }}
       >
         SUPPLY NET · 7D TREND
+        <InfoTooltip text="Évolution journalière du supply net de CBWD ces 7 derniers jours. Vert = BURN dominant (l'offre du token diminue, les bonnes décisions l'emportent). Rouge = MINT dominant (l'offre augmente, les régressions l'emportent). Cliquer = voir tous les events de la semaine." />
       </p>
 
       {!hasData ? (

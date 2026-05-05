@@ -1,4 +1,5 @@
 import type { BurnComposition } from "@/lib/types";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface BurnCompositionCardProps {
   composition: BurnComposition;
@@ -44,6 +45,7 @@ export function BurnCompositionCard({
         style={{ color: "var(--brand-teal)" }}
       >
         BURN COMPOSITION · {windowLabel}
+        <InfoTooltip text="Découpage des events BURN par sous-type : DIRECT ACTION (acte concret terrain : traité signé, biome protégé, victoire citoyenne) vs EDITORIAL CONSCIOUSNESS (article éditorial qui amplifie une prise de conscience, ex. Mongabay) vs UNTYPED (events anciens sans subtype assigné)." />
       </p>
 
       {total_burn === 0 ? (

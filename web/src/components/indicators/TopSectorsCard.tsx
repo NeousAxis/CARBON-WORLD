@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { TaxonomyEntry } from "@/lib/types";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface TopSectorsCardProps {
   sectors: TaxonomyEntry[];
@@ -28,6 +29,7 @@ export function TopSectorsCard({ sectors }: TopSectorsCardProps) {
         style={{ color: "var(--muted)" }}
       >
         TOP SECTORS · 7D
+        <InfoTooltip text="Top 8 secteurs économiques (Énergie, Mines, Agriculture, Tech, Finance, Pharma, Défense, Pêche, Forêt, Transport, Construction, Eau) impactés par les events on-chain. Détection regex multilingue. +N = events BURN, −N = events MINT." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

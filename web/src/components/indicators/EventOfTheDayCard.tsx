@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { formatAmount } from "./formatAmount";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface EventOfTheDayEvent {
   id: number;
@@ -78,6 +79,7 @@ export function EventOfTheDayCard({ event }: EventOfTheDayCardProps) {
         style={{ color: "var(--muted)" }}
       >
         EVENT OF THE DAY · 24H
+        <InfoTooltip text="L'événement le plus impactant des dernières 24h, classé par |score final|. Si aucun event aujourd'hui, fallback sur les 7 derniers jours pour ne pas afficher la card vide. Cliquer = voir l'analyse éthique complète." />
       </p>
 
       {event === null ? (

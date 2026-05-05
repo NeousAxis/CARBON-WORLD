@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { formatAmount } from "./formatAmount";
+import { InfoTooltip } from "../InfoTooltip";
 
 export interface TopCountriesMintCardProps {
   countries: Array<{ country: string; count: number; total_amount: number }>;
@@ -33,6 +34,7 @@ export function TopCountriesMintCard({ countries }: TopCountriesMintCardProps) {
         style={{ color: "var(--muted)" }}
       >
         TOP COUNTRIES · MINT · 7D
+        <InfoTooltip text="Les 5 pays avec le plus d'events MINT (régressions institutionnelles, lois fossiles, atteintes aux droits) confirmés on-chain ces 7 derniers jours. Cliquer une ligne = voir tous les events de ce pays." />
       </p>
       <p
         className="text-[10px] uppercase tracking-wider font-mono mb-4"

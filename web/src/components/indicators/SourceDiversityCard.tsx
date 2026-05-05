@@ -1,3 +1,5 @@
+import { InfoTooltip } from "../InfoTooltip";
+
 export interface SourceDiversityCardProps {
   /** Percentage of niche/low-volume sources (0-100) */
   niche_pct: number;
@@ -42,6 +44,7 @@ export function SourceDiversityCard({
         style={{ color: "var(--muted)" }}
       >
         SOURCE DIVERSITY · 7D
+        <InfoTooltip text="Diversité du sourcing du pipeline. NICHE = sources avec ≤3 events sur 7j (presse régionale, ONG, blogs). MAINSTREAM = sources avec >3 events (Le Monde, Guardian, etc.). Plus le ratio NICHE est haut, plus le pipeline capte des signaux locaux invisibles aux gros médias." />
       </p>
 
       {/* Stacked bar */}
