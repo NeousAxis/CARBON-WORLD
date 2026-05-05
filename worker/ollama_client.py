@@ -193,10 +193,15 @@ def _call_cerebras(
     max_tokens: int,
     model: Optional[str] = None,
     delay: Optional[float] = None,
+    max_attempts: int = 3,
 ) -> Optional[dict]:
     """
     Call Cerebras cloud API (OpenAI-compatible) with 429 retry/backoff.
-    Used for Analyst B so that Groq and Cerebras buckets don't collide under parallel A||B.
+
+    Used as a tertiary bucket in the Groq → Mistral → Cerebras cascade.
+    `max_attempts=1` is passed when called as a fallback so the cascade
+    truly fails fast (one attempt per provider, no minute-long internal
+    retries that defeat the purpose of having multiple buckets).
     """
     import httpx
 
@@ -222,7 +227,6 @@ def _call_cerebras(
     }
 
     attempt = 0
-    max_attempts = 3
     while True:
         attempt += 1
         try:
@@ -272,6 +276,7 @@ def _call_mistral(
     max_tokens: int,
     model: Optional[str] = None,
     delay: Optional[float] = None,
+    max_attempts: int = 3,
 ) -> Optional[dict]:
     """
     Call Mistral cloud API (OpenAI-compatible) with 429 retry/backoff.
@@ -307,7 +312,6 @@ def _call_mistral(
     }
 
     attempt = 0
-    max_attempts = 3
     while True:
         attempt += 1
         try:
@@ -420,16 +424,16 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
     is saturated — no 1000s+ backoff wait.
     """
     if LLM_PROVIDER == "groq":
-        # Cascade: Groq → Mistral → Cerebras. Fail fast on each so a single
-        # provider's 429 never freezes the classifier.
+        # Cascade: Groq → Mistral → Cerebras. 1 attempt per provider so a
+        # single provider's 429 never freezes the classifier.
         attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
         result = _call_groq(system_prompt, user_message, context, max_tokens=200, max_attempts=attempts)
         if result is None and MISTRAL_API_KEY:
             logger.info("Groq failed for classifier %s, trying Mistral", context)
-            result = _call_mistral(system_prompt, user_message, context, max_tokens=200, delay=2)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=200, delay=1, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Mistral failed for classifier %s, falling back to Cerebras", context)
-            return _call_cerebras(system_prompt, user_message, context, max_tokens=200, delay=3)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=200, delay=2, max_attempts=1)
         return result
     return _call_ollama_fast(system_prompt, user_message, context)
 
@@ -446,10 +450,10 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
         result = _call_groq(system_prompt, user_message, context, max_tokens=3000, max_attempts=attempts)
         if result is None and MISTRAL_API_KEY:
             logger.info("Groq failed for analyst A %s, trying Mistral", context)
-            result = _call_mistral(system_prompt, user_message, context, max_tokens=3000, delay=4)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=3000, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Mistral failed for analyst A %s, falling back to Cerebras", context)
-            return _call_cerebras(system_prompt, user_message, context, max_tokens=3000, delay=8)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=3000, delay=4, max_attempts=1)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2500)
 
@@ -468,12 +472,15 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
     and decouples it from the Groq account ceiling that Analyst A consumes.
     """
     if MISTRAL_API_KEY:
+        # Mistral is primary for Analyst B → 2 attempts (it's our strongest
+        # bucket so worth a retry on transient errors before we cascade)
         result = _call_mistral(
             system_prompt,
             user_message,
             context,
             max_tokens=3000,
             delay=2,
+            max_attempts=2,
         )
         if result is not None:
             return result
@@ -485,7 +492,8 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             user_message,
             context,
             max_tokens=3000,
-            delay=8,
+            delay=4,
+            max_attempts=1,
         )
     if LLM_PROVIDER == "groq":
         return _call_groq(
@@ -517,10 +525,10 @@ def call_reconciler(system_prompt: str, user_message: str, context: str = "") ->
         )
         if result is None and MISTRAL_API_KEY:
             logger.info("Groq failed for reconciler %s, trying Mistral", context)
-            result = _call_mistral(system_prompt, user_message, context, max_tokens=2500, delay=4)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=2500, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Mistral failed for reconciler %s, falling back to Cerebras", context)
-            return _call_cerebras(system_prompt, user_message, context, max_tokens=2500, delay=8)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=2500, delay=4, max_attempts=1)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2000)
 
@@ -543,9 +551,9 @@ def call_sentinel(system_prompt: str, user_message: str, context: str = "") -> O
         )
         if result is None and MISTRAL_API_KEY:
             logger.info("Groq failed for sentinel %s, trying Mistral", context)
-            result = _call_mistral(system_prompt, user_message, context, max_tokens=1500, delay=4)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=1500, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Mistral failed for sentinel %s, falling back to Cerebras", context)
-            return _call_cerebras(system_prompt, user_message, context, max_tokens=1500, delay=6)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=1500, delay=3, max_attempts=1)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=1500)
