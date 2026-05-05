@@ -116,10 +116,30 @@ def analyze(article: dict) -> Optional[dict]:
         logger.warning("Analysis failed for '%s'.", title[:60])
         return None
 
-    # The analyst might still reject as invalid (edge case: classifier said yes, analyst says no)
+    # The analyst might still reject as invalid (edge case: classifier said yes, analyst says no).
+    # Instead of silently dropping these, push them to the review queue so a human
+    # can verify and override if the LLM was over-strict (e.g. "California Battery
+    # Array" is a real infrastructure milestone but might be flagged "no policy
+    # decision" by an over-zealous Analyst). Cyril asked 2026-05-05 for visibility.
     if not result.get("validation", True):
         reason = result.get("reason", "rejected by analyst")
-        logger.info("Analyst rejected '%s': %s", title[:60], reason[:100])
+        logger.info("Analyst rejected '%s': %s — queued for human review", title[:60], reason[:100])
+        try:
+            from db import add_to_review_queue
+            add_to_review_queue({
+                "event_title": title,
+                "event_url": article.get("url", ""),
+                "event_source": article.get("source", ""),
+                "analyst_a_verdict": result,
+                "analyst_b_verdict": None,
+                "reconciler_verdict": None,
+                "sentinel_concern": f"Analyst rejected as not-actionable: {reason[:300]}",
+                "suggested_decision": "REJECT",
+                "suggested_amount_crbn": 0,
+            })
+        except Exception as exc:
+            # Don't let queue-write errors break the pipeline
+            logger.warning("Failed to push analyst-rejected article to review queue: %s", exc)
         return None
 
     decision = result.get("decision", "NEUTRAL")

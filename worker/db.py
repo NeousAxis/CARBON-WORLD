@@ -341,9 +341,21 @@ def add_to_review_queue(data: dict) -> Optional[int]:
       reconciler_verdict (dict), sentinel_concern (str),
       suggested_decision (str), suggested_amount_crbn (int)
     Returns the review_queue row id, or None on error.
+
+    Idempotent on event_url: if the URL already exists in the queue with status
+    'pending', the call is a no-op and returns the existing row id (avoids
+    duplicate review entries when an article hits the analyst-rejected path
+    AND later the sentinel-flag path on a re-classify).
     """
     try:
         conn = _get_conn()
+        # Skip duplicates already pending review
+        existing = conn.execute(
+            "SELECT id FROM review_queue WHERE event_url = ? AND status = 'pending' LIMIT 1",
+            (data.get("event_url", ""),),
+        ).fetchone()
+        if existing is not None:
+            return int(existing[0])
         cursor = conn.execute(
             """
             INSERT INTO review_queue
