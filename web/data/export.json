@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-05T18:11:29.905224+00:00",
-  "total_events": 173,
-  "total_burned": 57321000,
-  "total_minted": 174608750,
-  "pending_reviews": 5,
+  "generated_at": "2026-05-05T18:42:00.075333+00:00",
+  "total_events": 175,
+  "total_burned": 58821000,
+  "total_minted": 174758750,
+  "pending_reviews": 6,
   "events": [
+    {
+      "id": 175,
+      "event_title": "Board interpersonal diversity linked to lower tax avoidance",
+      "event_url": "https://phys.org/news/2026-05-board-interpersonal-diversity-linked-tax.html",
+      "event_source": "Phys.org",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 6.43,
+      "confidence": 8,
+      "justification": "Board diversity research reduces tax avoidance, aligning with ethical governance. | The study highlights a clear positive ethical outcome: board diversity directly contributes to reduced tax avoidance, which aligns with corporate responsibility and ethical governance. There are no identified negative aspects in this action, as the research itself is a constructive contribution to corporate ethics and transparency.",
+      "tx_hash": "5PFXT4PvTs9rFccEj9qHBUwqByti7SsjGo722ZfiwYReFmJATPpQWqNEjTd8JXjTP7VG3iJ2KNTjwiENHEBAhckK",
+      "created_at": "2026-05-05T18:41:59.775742+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Research demonstrates that board interpersonal diversity reduces aggressive tax avoidance, indicating stronger corporate governance and ethical oversight.\", \"affected_sdgs\": [8, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Diversity in corporate leadership fosters new perspectives and strengthens decision-making, aligning with responsible business practices.\", \"affected_sdgs\": [8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 174,
+      "event_title": "UK convicts four Palestine Action activists over break-in at Israeli firm",
+      "event_url": "https://www.aljazeera.com/news/2026/5/5/uk-convicts-four-palestine-action-activists-over-break-in-at-israeli-firm?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.31,
+      "confidence": 7,
+      "justification": "Conviction suppresses protest rights in a conflict context, outweighing enforcement benefits. | The conviction enforces legal order but risks suppressing peaceful protest rights. While property damage is a legitimate concern, the broader context of protest against military-industrial activity in a conflict zone raises significant free expression and assembly issues. The net ethical balance leans negative due to the chilling effect on dissent.",
+      "tx_hash": "3W66oFUc61s2prB9TggNHLh2fAVgY4gcB1UJBxTweuqU8aP3ppSAvGWhiC5LsaRBivAqYkA1Katnzipw6aPyZyhY",
+      "created_at": "2026-05-05T18:41:59.687463+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"UK court convicts Palestine Action activists for breaking into an Israeli defense firm's facility, enforcing legal consequences for disruptive protest actions\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Conviction of activists for property damage during protest against a defense contractor linked to military operations in Gaza, potentially chilling legitimate dissent and civil disobedience\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 173,
       "event_title": "Romania falls back into political chaos after a no-confidence vote by social democrats and far right",
@@ -3820,6 +3864,11 @@
         "total_amount": 5850000
       },
       {
+        "country": "United Kingdom",
+        "count": 3,
+        "total_amount": 800000
+      },
+      {
         "country": "Romania",
         "count": 2,
         "total_amount": 750000
@@ -3833,11 +3882,6 @@
         "country": "Iran",
         "count": 2,
         "total_amount": 9625000
-      },
-      {
-        "country": "Israel",
-        "count": 2,
-        "total_amount": 5750000
       }
     ],
     "top_countries_burn": [
@@ -3880,8 +3924,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.273,
-        "events": 11
+        "burn_ratio": 0.25,
+        "events": 12
       },
       {
         "region": "North America",
@@ -3912,8 +3956,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.727,
-        "events": 11
+        "mint_ratio": 0.75,
+        "events": 12
       },
       {
         "region": "Asia",
@@ -3954,8 +3998,8 @@
       },
       {
         "date": "2026-05-05",
-        "net_minted": 65450000,
-        "net_burned": 41200000
+        "net_minted": 65600000,
+        "net_burned": 42700000
       }
     ],
     "event_of_the_day": {
@@ -3971,9 +4015,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 11,
-        "negative": 41,
+        "positive": 12,
+        "negative": 42,
         "event_ids_positive": [
+          175,
           172,
           169,
           165,
@@ -3987,6 +4032,7 @@
           117
         ],
         "event_ids_negative": [
+          174,
           173,
           171,
           170,
@@ -4031,9 +4077,10 @@
         ]
       },
       "UDHR": {
-        "positive": 5,
-        "negative": 27,
+        "positive": 6,
+        "negative": 28,
         "event_ids_positive": [
+          175,
           172,
           169,
           162,
@@ -4041,6 +4088,7 @@
           123
         ],
         "event_ids_negative": [
+          174,
           173,
           171,
           170,
@@ -4167,14 +4215,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 93.3,
-      "mainstream_pct": 6.7,
-      "total_sources_used": 30,
-      "articles_processed": 60
+      "niche_pct": 90.3,
+      "mainstream_pct": 9.7,
+      "total_sources_used": 31,
+      "articles_processed": 62
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 60,
+      "total_events": 62,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -4269,6 +4317,18 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          174,
+          143,
+          139,
+          135
+        ]
+      },
+      {
         "name": "Finance",
         "count": 4,
         "burn_count": 0,
@@ -4278,17 +4338,6 @@
           163,
           135,
           133
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          143,
-          139,
-          135
         ]
       },
       {
@@ -4331,59 +4380,59 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 17,
+      "total_burn": 18,
       "direct_action": {
-        "count": 10,
-        "pct": 58.8
+        "count": 11,
+        "pct": 61.1
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 17.6
+        "pct": 16.7
       },
       "untyped": {
         "count": 4,
-        "pct": 23.5
+        "pct": 22.2
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 30,
+      "total_burn": 31,
       "direct_action": {
-        "count": 20,
-        "pct": 66.7
+        "count": 21,
+        "pct": 67.7
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 20.0
+        "pct": 19.4
       },
       "untyped": {
         "count": 4,
-        "pct": 13.3
+        "pct": 12.9
       }
     },
     "mint_composition_7d": {
-      "total_mint": 43,
+      "total_mint": 44,
       "direct_action": {
-        "count": 34,
-        "pct": 79.1
+        "count": 35,
+        "pct": 79.5
       },
       "editorial_alarm": {
         "count": 7,
-        "pct": 16.3
+        "pct": 15.9
       },
       "untyped": {
         "count": 2,
-        "pct": 4.7
+        "pct": 4.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 142,
+      "total_mint": 143,
       "direct_action": {
-        "count": 117,
-        "pct": 82.4
+        "count": 118,
+        "pct": 82.5
       },
       "editorial_alarm": {
         "count": 23,
-        "pct": 16.2
+        "pct": 16.1
       },
       "untyped": {
         "count": 2,

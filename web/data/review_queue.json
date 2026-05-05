@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T18:11:29.918183+00:00",
-  "total_pending": 5,
+  "generated_at": "2026-05-05T18:42:00.086975+00:00",
+  "total_pending": 6,
   "reviews": [
     {
       "id": 27,
@@ -98,6 +98,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-05T12:12:03.546914+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 32,
+      "event_title": "Backlash builds over NHS plan to hide source code from AI hacking risk",
+      "event_url": "https://www.newscientist.com/article/2525315-backlash-builds-over-nhs-plan-to-hide-source-code-from-ai-hacking-risk/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=news",
+      "event_source": "New Scientist",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Public backlash against NHS plan to restrict open-source software access, highlighting transparency and efficiency concerns\", \"affected_sdgs\": [9, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"NHS England's decision to withdraw open-source software from public access due to AI hacking risks, reducing transparency and potential efficiency gains\", \"affected_sdgs\": [3, 9], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The NHS's decision to restrict open-source software access raises significant concerns about transparency and public accountability, undermining trust in public institutions. However, the growing public and expert backlash signals a strong defense of open governance and collaborative innovation, aligning with principles of democratic oversight and technological progress.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"NHS reverses decision within 6 months\", \"Independent security audit confirms risks are manageable without withdrawal\", \"Legislative push for open-source transparency in public sector\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"NHS reverses decision, adopts hybrid open-source model with robust security measures, setting a global precedent for transparent AI governance\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"NHS maintains restricted access, but public pressure leads to third-party audits and partial transparency measures\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"NHS fully withdraws software, leading to reduced innovation, legal challenges, and erosion of public trust in AI governance\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.1, \"final_score\": -1.855, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"NHS decision undermines transparency and public accountability despite security concerns.\", \"event_country\": \"United Kingdom\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NHS England's decision to prioritize security by temporarily restricting access to open-source software to mitigate AI-driven hacking risks\", \"affected_sdgs\": [3, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Backlash from transparency advocates and potential efficiency losses due to reduced accessibility of NHS open-source software, undermining public accountability and collaborative innovation\", \"affected_sdgs\": [9, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Criticism that the move may not effectively address security risks, as AI hacking threats remain unmitigated by source code concealment alone\", \"affected_sdgs\": [9, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The NHS's precautionary action to protect healthcare infrastructure from AI-driven cyber threats is ethically justified as a short-term security measure. However, the lack of transparency and potential inefficiencies introduced by restricting open-source access raise concerns about accountability and innovation. The net ethical position is mixed, with security benefits outweighing transparency costs but not conclusively addressing the root problem.\", \"snapshot_score\": 2.5, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"NHS publishes a transparent security audit within 6 months\", \"AI-driven healthcare cyberattacks increase despite source code restriction\", \"Open-source community develops secure alternatives to NHS software\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"NHS implements robust, transparent security measures alongside open-source collaboration, balancing safety and transparency\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"NHS maintains restricted access without addressing underlying AI hacking vulnerabilities, leading to inefficiencies and public distrust\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"AI-driven cyberattacks escalate, exposing NHS vulnerabilities, and forcing a reactive, opaque security overhaul\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.55, \"final_score\": 0.36, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Security precaution vs. transparency trade-off; net neutral impact.\", \"event_country\": \"United Kingdom\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.0, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"NHS action weakens transparency and public trust without clear evidence of improved security.\", \"disagreement\": true, \"reason\": \"The institutional action is to restrict open-source access, which weakens transparency and public accountability without clear evidence of improved security. This aligns with a BURN decision.\"}",
+      "sentinel_concern": "Verdict direction flipped: restricting NHS open-source code harms transparency and public accountability, a negative impact, but labeled BURN (positive). Polarity error and justification mismatch.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-05T18:41:59.866433+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
