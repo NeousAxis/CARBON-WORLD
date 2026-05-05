@@ -59,6 +59,10 @@ export interface EventOfTheDay {
 export interface FrameworkActivityCounts {
   positive: number;
   negative: number;
+  /** event IDs whose positive aspects reference this framework (on-chain only) */
+  event_ids_positive?: number[];
+  /** event IDs whose negative aspects reference this framework (on-chain only) */
+  event_ids_negative?: number[];
 }
 
 export interface FrameworkActivityData {
@@ -99,6 +103,8 @@ export interface TaxonomyEntry {
   count: number;
   burn_count: number;
   mint_count: number;
+  /** event IDs the worker classified under this name (on-chain only) */
+  event_ids?: number[];
 }
 
 export interface BurnSubtypeStat {

@@ -30,14 +30,13 @@ export const dynamic = "force-dynamic";
 // Data loading
 // ---------------------------------------------------------------------------
 
-function loadEvents(): CarbonEvent[] {
+function loadExport(): ExportData | null {
   const filePath = path.join(process.cwd(), "data", "export.json");
   try {
     const raw = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(raw) as ExportData;
-    return data.events ?? [];
+    return JSON.parse(raw) as ExportData;
   } catch {
-    return [];
+    return null;
   }
 }
 
@@ -126,33 +125,93 @@ function matchesInstitution(e: CarbonEvent, keyword: string): boolean {
   return hay.includes(keyword.toLowerCase());
 }
 
-function applyFilters(events: CarbonEvent[], f: Filters): CarbonEvent[] {
+/**
+ * Source-of-truth filtering. We *prefer* the canonical event_ids list the
+ * worker exported (taxonomy_extractor + on-chain-only events) — that
+ * guarantees the drill-down shows exactly the same set the dashboard
+ * counted. Falls back to a regex/keyword heuristic only when the export
+ * lacks the per-name list (older export, sector/institution not in top-N).
+ */
+function applyFilters(
+  events: CarbonEvent[],
+  f: Filters,
+  exportData: ExportData | null,
+): CarbonEvent[] {
   const sinceMs = (() => {
     if (f.since === "all") return 0;
     if (f.since === "30d") return Date.now() - 30 * 86400_000;
     return Date.now() - 7 * 86400_000; // default 7d
   })();
 
+  // Canonical IDs from the worker (only set when the filter matches a known
+  // sector/institution/framework category in the export).
+  let canonicalIds: Set<number> | null = null;
+  const agg = exportData?.aggregates;
+
+  if (f.sector && agg?.top_sectors_7d) {
+    const entry = agg.top_sectors_7d.find(
+      (s) => s.name.toLowerCase() === f.sector!.toLowerCase(),
+    );
+    if (entry?.event_ids) canonicalIds = new Set(entry.event_ids);
+  } else if (f.institution && agg?.top_institutions_7d) {
+    const entry = agg.top_institutions_7d.find(
+      (s) => s.name.toLowerCase() === f.institution!.toLowerCase(),
+    );
+    if (entry?.event_ids) canonicalIds = new Set(entry.event_ids);
+  } else if (f.framework && agg?.framework_activity_7d) {
+    const fw = agg.framework_activity_7d[
+      f.framework as keyof typeof agg.framework_activity_7d
+    ];
+    if (fw) {
+      if (f.frameworkPolarity === "positive" && fw.event_ids_positive) {
+        canonicalIds = new Set(fw.event_ids_positive);
+      } else if (f.frameworkPolarity === "negative" && fw.event_ids_negative) {
+        canonicalIds = new Set(fw.event_ids_negative);
+      } else if (fw.event_ids_positive || fw.event_ids_negative) {
+        canonicalIds = new Set([
+          ...(fw.event_ids_positive ?? []),
+          ...(fw.event_ids_negative ?? []),
+        ]);
+      }
+    }
+  }
+
   return events.filter((e) => {
+    // On-chain only — the source of truth is confirmed Solana TX. Pending
+    // events are excluded so dashboard ↔ drill-down can never diverge.
+    if (!e.tx_hash) return false;
+
     if (sinceMs > 0 && new Date(e.created_at).getTime() < sinceMs) return false;
 
     if (f.country && (e.country ?? "") !== f.country) return false;
     if (f.region && (e.region ?? "") !== f.region) return false;
     if (f.administration && (e.administration ?? "") !== f.administration) return false;
 
-    if (f.decision) {
-      // framework_polarity overrides decision when set
-      if (!f.frameworkPolarity && e.decision !== f.decision) return false;
-    }
+    if (f.decision && !f.frameworkPolarity && e.decision !== f.decision) return false;
 
+    // Framework / sector / institution: prefer canonical IDs from worker,
+    // fall back to heuristic if not available.
     if (f.framework) {
-      if (!matchesFramework(e, f.framework)) return false;
-      if (f.frameworkPolarity === "positive" && e.decision !== "BURN") return false;
-      if (f.frameworkPolarity === "negative" && e.decision !== "MINT") return false;
+      if (canonicalIds) {
+        if (!canonicalIds.has(e.id)) return false;
+      } else {
+        if (!matchesFramework(e, f.framework)) return false;
+        if (f.frameworkPolarity === "positive" && e.decision !== "BURN") return false;
+        if (f.frameworkPolarity === "negative" && e.decision !== "MINT") return false;
+      }
     }
 
-    if (f.sector && !matchesSector(e, f.sector)) return false;
-    if (f.institution && !matchesInstitution(e, f.institution)) return false;
+    if (f.sector) {
+      if (canonicalIds) {
+        if (!canonicalIds.has(e.id)) return false;
+      } else if (!matchesSector(e, f.sector)) return false;
+    }
+
+    if (f.institution) {
+      if (canonicalIds) {
+        if (!canonicalIds.has(e.id)) return false;
+      } else if (!matchesInstitution(e, f.institution)) return false;
+    }
 
     return true;
   });
@@ -186,8 +245,9 @@ export default async function EventsPage({ searchParams }: PageProps) {
     since: ["7d", "30d", "all"].includes(since) ? since : "7d",
   };
 
-  const all = loadEvents();
-  const filtered = applyFilters(all, filters).sort(
+  const exportData = loadExport();
+  const all = exportData?.events ?? [];
+  const filtered = applyFilters(all, filters, exportData).sort(
     (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
   );
 

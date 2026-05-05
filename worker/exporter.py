@@ -83,9 +83,19 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
     now = datetime.now(tz=timezone.utc)
     cutoff_7d = (now - timedelta(days=7)).isoformat()
 
-    # Filter to 7-day window
+    # ──────────────────────────────────────────────────────────────────
+    # Source of truth: on-chain Solana transactions.
+    #
+    # Aggregates count ONLY events whose Solana TX has confirmed
+    # (tx_hash IS NOT NULL). Pending events (timeout, retry, RPC blip)
+    # are excluded so the dashboard can never show a number that is not
+    # backed by an immutable on-chain record. Once their TX confirms via
+    # the nightly reconciler, they re-enter the aggregates automatically.
+    # ──────────────────────────────────────────────────────────────────
+    onchain_events = [e for e in all_events if e.get("tx_hash")]
+
     events_7d = [
-        e for e in all_events
+        e for e in onchain_events
         if (e.get("created_at") or "") >= cutoff_7d
     ]
 
@@ -102,7 +112,7 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
         "top_countries_burn": _top_countries(events_7d, "BURN", limit=5) if has_country else [],
         "top_regions_sustainable": _top_regions_sustainable(events_7d) if has_country else [],
         "top_regions_destructive": _top_regions_destructive(events_7d) if has_country else [],
-        "supply_trend_7d": _supply_trend_7d(all_events),
+        "supply_trend_7d": _supply_trend_7d(onchain_events),
         "event_of_the_day": _event_of_the_day(events_7d),
         "framework_activity_7d": _framework_activity_7d(events_7d) if has_aspects else _empty_framework(),
         "source_diversity_7d": _source_diversity_7d(events_7d),
@@ -111,9 +121,9 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
         "top_institutions_7d": _top_institutions(events_7d),
         "top_sectors_7d": _top_sectors(events_7d),
         "burn_composition_7d": _burn_composition(events_7d) if has_burn_subtype else _empty_burn_composition(),
-        "burn_composition_all_time": _burn_composition(all_events) if has_burn_subtype else _empty_burn_composition(),
+        "burn_composition_all_time": _burn_composition(onchain_events) if has_burn_subtype else _empty_burn_composition(),
         "mint_composition_7d": _mint_composition(events_7d) if has_mint_subtype else _empty_mint_composition(),
-        "mint_composition_all_time": _mint_composition(all_events) if has_mint_subtype else _empty_mint_composition(),
+        "mint_composition_all_time": _mint_composition(onchain_events) if has_mint_subtype else _empty_mint_composition(),
     }
 
 
@@ -247,13 +257,17 @@ def _top_regions_sustainable(events: list[dict], limit: int = 5) -> list[dict]:
 
 def _top_institutions(events_7d: list[dict], limit: int = 8) -> list[dict]:
     """Top international institutions by event count across 7d.
-    Returns [{name, count, burn_count, mint_count}] sorted by count desc.
+    Returns [{name, count, burn_count, mint_count, event_ids}] sorted by count
+    desc. event_ids is the canonical list the frontend uses for drill-down,
+    so the /events page is guaranteed to display the exact same set the
+    aggregate counted.
     """
     from taxonomy_extractor import extract_institutions
     from collections import Counter, defaultdict
 
     counts: Counter = Counter()
     decision_breakdown: dict = defaultdict(Counter)
+    event_ids: dict[str, list[int]] = defaultdict(list)
     for ev in events_7d:
         text_title = ev.get("event_title", "") or ""
         text_just = ev.get("justification", "") or ""
@@ -261,6 +275,7 @@ def _top_institutions(events_7d: list[dict], limit: int = 8) -> list[dict]:
         for inst in institutions:
             counts[inst] += 1
             decision_breakdown[inst][ev.get("decision", "NEUTRAL")] += 1
+            event_ids[inst].append(int(ev["id"]))
 
     result = []
     for name, count in counts.most_common(limit):
@@ -269,19 +284,24 @@ def _top_institutions(events_7d: list[dict], limit: int = 8) -> list[dict]:
             "count": count,
             "burn_count": decision_breakdown[name].get("BURN", 0),
             "mint_count": decision_breakdown[name].get("MINT", 0),
+            "event_ids": event_ids[name],
         })
     return result
 
 
 def _top_sectors(events_7d: list[dict], limit: int = 8) -> list[dict]:
     """Top economic sectors by event count across 7d.
-    Returns [{name, count, burn_count, mint_count}] sorted by count desc.
+    Returns [{name, count, burn_count, mint_count, event_ids}] sorted by count
+    desc. event_ids is the canonical list the frontend uses for drill-down,
+    so the /events page is guaranteed to display the exact same set the
+    aggregate counted.
     """
     from taxonomy_extractor import extract_sectors
     from collections import Counter, defaultdict
 
     counts: Counter = Counter()
     decision_breakdown: dict = defaultdict(Counter)
+    event_ids: dict[str, list[int]] = defaultdict(list)
     for ev in events_7d:
         text_title = ev.get("event_title", "") or ""
         text_just = ev.get("justification", "") or ""
@@ -289,6 +309,7 @@ def _top_sectors(events_7d: list[dict], limit: int = 8) -> list[dict]:
         for sector in sectors:
             counts[sector] += 1
             decision_breakdown[sector][ev.get("decision", "NEUTRAL")] += 1
+            event_ids[sector].append(int(ev["id"]))
 
     result = []
     for name, count in counts.most_common(limit):
@@ -297,6 +318,7 @@ def _top_sectors(events_7d: list[dict], limit: int = 8) -> list[dict]:
             "count": count,
             "burn_count": decision_breakdown[name].get("BURN", 0),
             "mint_count": decision_breakdown[name].get("MINT", 0),
+            "event_ids": event_ids[name],
         })
     return result
 
@@ -424,7 +446,10 @@ _RE_PB = re.compile(
 
 
 def _empty_framework() -> dict:
-    return {k: {"positive": 0, "negative": 0} for k in _FRAMEWORK_KEYS}
+    return {
+        k: {"positive": 0, "negative": 0, "event_ids_positive": [], "event_ids_negative": []}
+        for k in _FRAMEWORK_KEYS
+    }
 
 
 def _detect_frameworks(aspects: list[dict] | None) -> set[str]:
@@ -497,11 +522,14 @@ def _detect_frameworks(aspects: list[dict] | None) -> set[str]:
 def _framework_activity_7d(events_7d: list[dict]) -> dict:
     """
     Count how many aspects (positive/negative) reference each of the 7 frameworks
-    across all events in the 7-day window.
+    across all events in the 7-day window. Also exports the per-framework,
+    per-polarity event_ids list so the frontend /events drill-down can show the
+    exact same set the count was computed from.
     """
     result = _empty_framework()
 
     for event in events_7d:
+        ev_id = int(event["id"])
         for aspect_key, polarity in (("positive_aspects_json", "positive"), ("negative_aspects_json", "negative")):
             raw = event.get(aspect_key)
             if not raw:
@@ -515,6 +543,10 @@ def _framework_activity_7d(events_7d: list[dict]) -> dict:
             frameworks = _detect_frameworks(aspects)
             for fw in frameworks:
                 result[fw][polarity] += 1
+                ids_key = "event_ids_positive" if polarity == "positive" else "event_ids_negative"
+                # de-dup at insert (same event may match same fw multiple times via separate aspects)
+                if ev_id not in result[fw][ids_key]:
+                    result[fw][ids_key].append(ev_id)
 
     return result
 
