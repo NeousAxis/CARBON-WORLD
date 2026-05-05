@@ -102,7 +102,7 @@ export default function RootLayout({
               <Link
                 href="/citizen-actions"
                 className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B6FFCE" }}
+                style={{ color: "#B8B9B6" }}
                 title="Directory of citizen-led actions"
               >
                 Citizen Actions
@@ -124,7 +124,7 @@ export default function RootLayout({
               <Link
                 href="/review"
                 className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B6FFCE" }}
+                style={{ color: "#B8B9B6" }}
                 title="Human review queue"
               >
                 Review
