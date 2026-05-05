@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
 import { RawFeedTicker } from "@/components/RawFeedTicker";
+import { NavLinks } from "@/components/NavLinks";
 import "./globals.css";
 
 const geist = Geist({
@@ -91,45 +92,7 @@ export default function RootLayout({
                 CARBON <span style={{ color: "var(--brand-teal)" }}>WORLD</span>
               </span>
             </Link>
-            <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm overflow-x-auto">
-              <Link
-                href="/transactions"
-                className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B8B9B6" }}
-              >
-                Transactions
-              </Link>
-              <Link
-                href="/citizen-actions"
-                className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B8B9B6" }}
-                title="Directory of citizen-led actions"
-              >
-                Citizen Actions
-              </Link>
-              <Link
-                href="/sources"
-                className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B8B9B6" }}
-              >
-                Sources
-              </Link>
-              <Link
-                href="/about"
-                className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B8B9B6" }}
-              >
-                About
-              </Link>
-              <Link
-                href="/review"
-                className="font-medium hover:opacity-80 whitespace-nowrap"
-                style={{ color: "#B8B9B6" }}
-                title="Human review queue"
-              >
-                Review
-              </Link>
-            </div>
+            <NavLinks />
           </nav>
         </header>
 
