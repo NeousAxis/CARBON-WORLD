@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T11:41:32.700776+00:00",
-  "total_pending": 4,
+  "generated_at": "2026-05-05T12:12:03.715675+00:00",
+  "total_pending": 5,
   "reviews": [
     {
       "id": 27,
@@ -78,6 +78,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-05T11:41:32.434387+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 31,
+      "event_title": "Trump administration cites national security in stalling 165 wind farms",
+      "event_url": "https://arstechnica.com/science/2026/05/trump-administration-cites-national-security-in-stalling-165-wind-farms/",
+      "event_source": "Ars Technica Science",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Trump administration uses national security as a pretext to stall 165 onshore wind farms, blocking renewable energy development and climate action\", \"affected_sdgs\": [7, 13], \"violated_rights\": [\"UDHR Article 25 (right to a standard of living adequate for health and well-being)\", \"UDHR Article 29 (duty to community and environment)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The stalling of 165 wind farms under a national security pretext directly undermines climate action (SDG 13) and clean energy access (SDG 7), violating fundamental rights to health and community well-being. This action prioritizes short-term political rhetoric over long-term environmental and societal stability, with severe and irreversible consequences for planetary boundaries and future generations.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.0, \"revaluation_score\": -7.0, \"revaluation_triggers\": [\"Reversal of policy by a subsequent administration\", \"Legal challenge overturning the national security claim\", \"State-level bypass of federal stalling\", \"Technological breakthrough reducing reliance on wind energy\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Policy reversed by 2028 under new administration, wind farms proceed with accelerated deployment\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Policy partially reversed; some wind farms proceed but with significant delays and reduced capacity\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Policy remains in place, stalling all 165 wind farms for over a decade, locking in fossil fuel dependency\", \"probability\": 0.2, \"score\": -10}], \"prospective_score\": -4.55, \"final_score\": -6.76, \"decision\": \"MINT\", \"amount_cbwd\": 9900000, \"confidence\": 9, \"justification\": \"Federal action blocking renewable energy under false pretenses violates climate and human rights.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Trump administration uses national security claims to stall 165 onshore wind farms, delaying renewable energy deployment and climate action\", \"affected_sdgs\": [7, 13], \"violated_rights\": [\"UDHR Article 25 (right to a standard of living adequate for health and well-being)\", \"UDHR Article 26 (right to education and participation in cultural life)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The administration's action directly undermines SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action) by stalling renewable energy projects under a national security pretext. This violates fundamental human rights to health, well-being, and participation in cultural life, while exacerbating planetary boundary pressures related to climate change and biodiversity loss.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.5, \"revaluation_triggers\": [\"Reversal of policy under new administration\", \"Judicial ruling overturning the national security claim\", \"Congressional action to override the stalling\", \"State-level bypass of federal obstruction\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Policy reversed within 12 months due to legal challenges and public pressure, wind farms proceed\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Policy persists for 2-3 years, causing significant delays but eventual reversal as renewables become politically unavoidable\", \"probability\": 0.5, \"score\": -5}, {\"name\": \"C\", \"description\": \"Policy becomes entrenched, leading to long-term stagnation in wind energy and increased fossil fuel dependence\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.9, \"final_score\": -5.1, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Federal obstruction of renewable energy under false national security claims harms climate action and energy access.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -5.93, \"confidence\": 10, \"amount_cbwd\": 9900000, \"justification\": \"Institutional action punishes harm by blocking false-flag climate obstruction\", \"disagreement\": false, \"reason\": \"Both analysts correctly identified the institutional action as harmful to climate rights; scores averaged for precision.\"}",
+      "sentinel_concern": "Polarity error: blocking 165 wind farms harms climate and energy access, a negative impact. Verdict should be MINT, not BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 9900000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-05T12:12:03.546914+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
