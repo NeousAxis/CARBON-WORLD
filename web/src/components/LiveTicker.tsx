@@ -34,40 +34,61 @@ export function LiveTicker({
   const containerRef = useRef<HTMLDivElement>(null);
   const [highlightedIds, setHighlightedIds] = useState<Set<number>>(new Set());
 
-  // Auto-scroll loop
+  // Auto-scroll loop — robust against pause-without-resume bugs:
+  //  - RAF is ALWAYS running; pause is just a no-op flag.
+  //    Mismatched mouseenter/mouseleave (touch, focus shift, navigation
+  //    interrupt, devtools open) can no longer freeze the ticker forever.
+  //  - Reset threshold uses the full scrollable height when events aren't
+  //    doubled (events.length < 10), so the loop covers the whole list
+  //    instead of cutting off at half.
+  //  - Touch is treated as a tap-pause that auto-resumes after 4s.
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
 
     let animationId: number;
     let scrollPos = 0;
+    let paused = false;
+    let touchResumeTimer: ReturnType<typeof setTimeout> | null = null;
 
     function tick() {
       if (!el) return;
-      scrollPos += 0.5;
-      if (scrollPos >= el.scrollHeight / 2) {
-        scrollPos = 0;
+      if (!paused) {
+        scrollPos += 0.5;
+        // When the list is doubled (events ≥ 10), one copy is half the
+        // scrollHeight. When not doubled, loop on the full overflow.
+        const reset = events.length >= 10
+          ? el.scrollHeight / 2
+          : Math.max(0, el.scrollHeight - el.clientHeight);
+        if (reset > 0 && scrollPos >= reset) {
+          scrollPos = 0;
+        }
+        el.scrollTop = scrollPos;
       }
-      el.scrollTop = scrollPos;
       animationId = requestAnimationFrame(tick);
     }
-
     animationId = requestAnimationFrame(tick);
 
-    const pauseScroll = () => cancelAnimationFrame(animationId);
-    const resumeScroll = () => {
-      animationId = requestAnimationFrame(tick);
+    const pause = () => { paused = true; };
+    const resume = () => { paused = false; };
+    const touchPause = () => {
+      paused = true;
+      if (touchResumeTimer) clearTimeout(touchResumeTimer);
+      touchResumeTimer = setTimeout(() => { paused = false; }, 4000);
     };
 
-    el.addEventListener("mouseenter", pauseScroll);
-    el.addEventListener("mouseleave", resumeScroll);
+    el.addEventListener("mouseenter", pause);
+    el.addEventListener("mouseleave", resume);
+    el.addEventListener("touchstart", touchPause, { passive: true });
 
     return () => {
       cancelAnimationFrame(animationId);
-      el.removeEventListener("mouseenter", pauseScroll);
-      el.removeEventListener("mouseleave", resumeScroll);
+      if (touchResumeTimer) clearTimeout(touchResumeTimer);
+      el.removeEventListener("mouseenter", pause);
+      el.removeEventListener("mouseleave", resume);
+      el.removeEventListener("touchstart", touchPause);
     };
-  }, []);
+  }, [events.length]);
 
   // Flash newly arrived event IDs
   useEffect(() => {
