@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:01:44.057607+00:00",
+  "generated_at": "2026-05-05T08:31:10.639490+00:00",
   "total_events": 143,
   "total_burned": 16121000,
   "total_minted": 102158750,
@@ -63,8 +63,8 @@
       "created_at": "2026-05-03T15:02:31.810400+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "France",
+      "region": "Europe",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -85,8 +85,8 @@
       "created_at": "2026-05-03T15:01:26.313685+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "Colombia",
+      "region": "Latin America",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -107,8 +107,8 @@
       "created_at": "2026-05-03T15:00:14.026378+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "United States",
+      "region": "North America",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -129,8 +129,8 @@
       "created_at": "2026-05-03T14:59:51.657628+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "Kenya",
+      "region": "Africa",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -151,8 +151,8 @@
       "created_at": "2026-05-03T14:58:23.618774+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "Brazil",
+      "region": "Latin America",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -437,8 +437,8 @@
       "created_at": "2026-04-30T08:53:35.952595+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "United States",
+      "region": "North America",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -1251,8 +1251,8 @@
       "created_at": "2026-04-26T04:13:53.649264+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "United States",
+      "region": "North America",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": "[{\"description\": \"Removal of the National Science Board undermines scientific independence and oversight.\", \"affected_sdgs\": [9, 17], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
@@ -3143,8 +3143,8 @@
       "created_at": "2026-04-15T06:27:08.778290+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": null,
-      "region": null,
+      "country": "Ecuador",
+      "region": "Latin America",
       "administration": null,
       "positive_aspects_json": null,
       "negative_aspects_json": null,
@@ -3155,19 +3155,14 @@
   "aggregates": {
     "top_countries_mint": [
       {
+        "country": "United States",
+        "count": 4,
+        "total_amount": 3150000
+      },
+      {
         "country": "France",
         "count": 3,
         "total_amount": 1745000
-      },
-      {
-        "country": "United States",
-        "count": 3,
-        "total_amount": 2700000
-      },
-      {
-        "country": "Israel",
-        "count": 2,
-        "total_amount": 1950000
       },
       {
         "country": "Brazil",
@@ -3178,16 +3173,36 @@
         "country": "United Kingdom",
         "count": 1,
         "total_amount": 500000
+      },
+      {
+        "country": "Kenya",
+        "count": 1,
+        "total_amount": 120000
       }
     ],
     "top_countries_burn": [
       {
-        "country": "Australia",
-        "count": 1,
-        "total_amount": 750000
+        "country": "Brazil",
+        "count": 2,
+        "total_amount": 1100000
       },
       {
-        "country": "Brazil",
+        "country": "France",
+        "count": 1,
+        "total_amount": 150000
+      },
+      {
+        "country": "Colombia",
+        "count": 1,
+        "total_amount": 125000
+      },
+      {
+        "country": "United States",
+        "count": 1,
+        "total_amount": 150000
+      },
+      {
+        "country": "Australia",
         "count": 1,
         "total_amount": 750000
       }
@@ -3195,45 +3210,35 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.25,
-        "events": 4
+        "burn_ratio": 0.5,
+        "events": 6
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.0,
-        "events": 5
-      },
-      {
-        "region": "MENA",
-        "burn_ratio": 0.0,
-        "events": 3
+        "burn_ratio": 0.167,
+        "events": 6
       },
       {
         "region": "North America",
-        "burn_ratio": 0.0,
-        "events": 4
+        "burn_ratio": 0.167,
+        "events": 6
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
-        "mint_ratio": 1.0,
-        "events": 5
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 3
+        "mint_ratio": 0.833,
+        "events": 6
       },
       {
         "region": "North America",
-        "mint_ratio": 1.0,
-        "events": 4
+        "mint_ratio": 0.833,
+        "events": 6
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.75,
-        "events": 4
+        "mint_ratio": 0.5,
+        "events": 6
       }
     ],
     "supply_trend_7d": [
@@ -3287,7 +3292,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 23,
+        "negative": 22,
         "event_ids_positive": [
           123,
           117
@@ -3314,13 +3319,12 @@
           118,
           114,
           113,
-          112,
-          111
+          112
         ]
       },
       "UDHR": {
         "positive": 1,
-        "negative": 13,
+        "negative": 12,
         "event_ids_positive": [
           123
         ],
@@ -3336,8 +3340,7 @@
           125,
           121,
           120,
-          113,
-          111
+          113
         ]
       },
       "ILO": {
@@ -3415,11 +3418,11 @@
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
       "total_sources_used": 23,
-      "articles_processed": 33
+      "articles_processed": 32
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 33,
+      "total_events": 32,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -3545,18 +3548,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 25,
+      "total_mint": 24,
       "direct_action": {
-        "count": 19,
-        "pct": 76.0
+        "count": 18,
+        "pct": 75.0
       },
       "editorial_alarm": {
         "count": 4,
-        "pct": 16.0
+        "pct": 16.7
       },
       "untyped": {
         "count": 2,
-        "pct": 8.0
+        "pct": 8.3
       }
     },
     "mint_composition_all_time": {
