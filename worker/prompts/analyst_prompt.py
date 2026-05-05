@@ -30,27 +30,63 @@ Rule of thumb: if the action PUNISHES wrongdoing, PROTECTS rights, or REDUCES ha
 
 ## STEP 1 — VALIDATION (critical)
 
-You analyze ONLY concrete, actionable decisions from governments, international institutions, or binding agreements.
+CARBON WORLD measures every act that moves consciousness — institutional
+AND citizen-level. You analyze concrete actions taken by ANY identifiable
+actor (government, institution, NGO, scientific body, citizen collective,
+indigenous community, journalist, educator) where a step has been taken,
+not merely opined about.
 
-VALID:
-- Laws enacted or voted
-- Government policies launched
-- International treaties signed or ratified
-- Infrastructure projects approved or canceled
-- Official climate targets reached or missed
-- Binding regulatory decisions
-- Climate budgets allocated or cut
+VALID — institutional & legal:
+- Laws enacted, voted, or repealed
+- Government policies launched or reversed
+- International treaties signed, ratified, or withdrawn
+- Infrastructure projects approved, started, completed, or canceled
+- Official climate targets adopted, reached, or missed
+- Binding regulatory decisions and fines issued
+- Climate / social budgets allocated or cut
 - Court rulings with binding effect
+- Court hearings & legal challenges filed by named NGOs / coalitions
 - Mega-events with official state backing (Olympics, World Cup, COPs)
 
+VALID — citizen & consciousness-raising acts (BURN candidates):
+A consciousness milestone counts when at least ONE of these is true:
+  (a) A named gathering took place (assembly, conference, summit, vigil,
+      strike, public consultation) with an identifiable date and host.
+  (b) A formal declaration, manifesto, open letter, or petition was
+      published with named signatories or a measurable count of supporters.
+  (c) An educational / awareness deliverable was released to the public
+      (documentary, video, broadcast, exhibit, curriculum, peer-reviewed
+      paper, ONG report) by an identifiable author or organization.
+  (d) A community / indigenous / citizen action was completed (rescue,
+      restoration, reforestation, protest with concrete numbers, lawsuit
+      filed, policy submission, scientific breakthrough).
+  (e) A protest with named organizers and measurable participation that
+      directly targets a policy, project, or institution.
+
+  Magnitude calibration for these (apply at step 5):
+    - Local awareness piece, community gathering <100 people:    1-3
+    - Regional campaign, conference, scientific paper:           3-5
+    - National movement, recognized institution publication:     5-7
+    - International coalition, peer-reviewed breakthrough,       7-9
+      indigenous-led legal victory, mass mobilization >10k
+
 INVALID:
-- Scientific studies or reports without a policy decision
-- Opinions, op-eds, statements of intent
-- Weather forecasts or natural disasters (unless tied to a policy)
-- Private company announcements (unless state-backed)
-- Protests or activist actions
-- Conditional statements ("could", "may", "considering")
-- Pure news commentary or analysis
+- Pure scientific facts or weather observations with no actor taking action
+- Anonymous opinions, unsigned op-eds with no editorial weight
+- Weather forecasts or natural disasters (unless tied to a policy or
+  community response)
+- Private company PR / greenwashing announcements (unless state-backed
+  or accompanied by binding regulation)
+- Conditional / speculative statements without an actor: "could", "may",
+  "considering", "is studying"
+- Pure news commentary or aggregation without identifying any actor
+- Market observations and economic forecasts with no policy or
+  community action attached
+
+Default ruling: if you can name the actor AND describe what they DID
+(not just thought, said, or hoped), the article is VALID. Err on the
+side of inclusion for citizen / consciousness acts — magnitudes
+calibrate the impact.
 
 If INVALID, return immediately:
 {"validation": false, "reason": "short explanation in English"}
