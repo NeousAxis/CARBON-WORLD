@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-06T15:41:58.819883+00:00",
-  "total_pending": 11,
+  "generated_at": "2026-05-06T16:11:23.750079+00:00",
+  "total_pending": 12,
   "reviews": [
     {
       "id": 27,
@@ -218,6 +218,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-06T08:40:47.381957+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 38,
+      "event_title": "LIVE, war in the Middle East: the president of the Iranian Parliament claims the US is trying to force Tehran into 'surrender'",
+      "event_url": "https://www.lemonde.fr/international/live/2026/05/06/en-direct-guerre-au-moyen-orient-le-president-du-parlement-iranien-affirme-que-les-etats-unis-cherchent-a-contraindre-teheran-a-la-reddition_6684072_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"US President Donald Trump threatens to escalate military strikes against Iran with greater intensity than before, aiming to force Tehran into surrender, escalating geopolitical tensions and risking large-scale conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 5\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The threat of intensified military action by the US against Iran constitutes a severe violation of international law and human rights, directly undermining peace and security (SDG 16). The escalation risks catastrophic humanitarian consequences, violating core UDHR principles including the prohibition of arbitrary coercion and the right to security. The magnitude reflects the potential for irreversible harm and global destabilization.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.0, \"revaluation_score\": -7.0, \"revaluation_triggers\": [\"Successful diplomatic intervention by UN or third-party mediators\", \"Iranian retaliation leading to broader regional conflict\", \"US domestic political shift altering foreign policy stance\", \"International sanctions or economic measures reducing military escalation risk\"], \"revaluation_checkpoint\": \"2028-05-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic breakthrough prevents further escalation, de-escalation maintained through international pressure\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Limited strikes occur but do not escalate into full-scale war, regional tensions persist\", \"probability\": 0.55, \"score\": -6}, {\"name\": \"C\", \"description\": \"Full-scale military conflict erupts, drawing in regional powers and causing global economic/military instability\", \"probability\": 0.2, \"score\": -10}], \"prospective_score\": -5.75, \"final_score\": -7.56, \"decision\": \"MINT\", \"amount_cbwd\": 9500000, \"confidence\": 9, \"justification\": \"Threat of military escalation violates international law and risks catastrophic harm.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"US President Donald Trump threatens to escalate military strikes against Iran with 'far greater intensity than before', risking civilian casualties and regional destabilization\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Iranian Parliament President claims US is attempting to force Iran into 'surrender', escalating geopolitical tensions and undermining diplomatic solutions\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The event centers on escalatory rhetoric and threats of military action between the US and Iran, both of which undermine peace, security, and diplomatic processes. The threats violate fundamental human rights to security and peace, with high potential for regional and global destabilization. No positive aspects are identified in this immediate action.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Successful diplomatic negotiations between US and Iran\", \"Ceasefire or de-escalation agreement signed\", \"UN Security Council resolution imposing sanctions on escalatory actions\", \"Major regional power (e.g., Saudi Arabia, Turkey) brokers peace talks\"], \"revaluation_checkpoint\": \"2028-05-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic breakthrough leads to de-escalation and regional stability\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Prolonged standoff with periodic skirmishes but no full-scale war\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Full-scale military conflict with significant civilian casualties and global economic disruption\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.15, \"final_score\": -6.03, \"decision\": \"MINT\", \"amount_cbwd\": 8000000, \"confidence\": 9, \"justification\": \"Threats of military escalation violate peace and security, warranting MINT.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -6.8, \"confidence\": 9, \"amount_cbwd\": 9500000, \"justification\": \"Threats of military escalation undermine peace and violate international norms.\", \"disagreement\": false, \"reason\": \"Both analysts agree on MINT due to escalatory rhetoric and threats of military action.\"}",
+      "sentinel_concern": "Score -6.8 is moderate negative but amount_cbwd 9.5M is disproportionately large, indicating a scale mismatch.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 9500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-06T16:11:23.281943+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
