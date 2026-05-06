@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-06T08:12:30.399134+00:00",
-  "total_pending": 10,
+  "generated_at": "2026-05-06T08:40:47.728221+00:00",
+  "total_pending": 11,
   "reviews": [
     {
       "id": 27,
@@ -198,6 +198,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-06T08:12:29.945065+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 37,
+      "event_title": "The government’s plans to bolster Australia’s fuel stores are sensible – but 5 years too late",
+      "event_url": "https://theconversation.com/the-governments-plans-to-bolster-australias-fuel-stores-are-sensible-but-5-years-too-late-282253",
+      "event_source": "The Conversation AU",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Increased public and private fuel reserves can enhance energy security and reduce vulnerability to supply disruptions.\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The delayed implementation of the plan may have left Australia exposed to energy insecurity and price volatility for the past five years.\", \"affected_sdgs\": [7, 8, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The government's decision to increase fuel reserves supports energy security and infrastructure resilience (SDG 7, 9, 13), but the five-year delay undermines its effectiveness and may have caused avoidable economic and social harm.\", \"snapshot_score\": 1.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of the new fuel reserve policy\", \"Impact on energy prices and supply stability over the next two years\", \"Comparison of Australia's energy security with regional peers\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Australia achieves stable energy prices and supply security due to effective reserve management.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Fuel reserves provide moderate stability, but energy prices remain volatile due to global market fluctuations.\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Reserve policies fail to address underlying energy insecurity, leading to continued price shocks and public dissatisfaction.\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.1, \"final_score\": 1.5, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The policy is positive but delayed, causing avoidable harm.\", \"event_country\": \"Australia\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government plans to increase public fuel reserves and private stocks in Australia, enhancing energy security and preparedness for supply disruptions\", \"affected_sdgs\": [7, 9, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Implementation is delayed by 5 years, reducing the effectiveness of the measure in addressing current and near-term energy security risks\", \"affected_sdgs\": [7, 9, 12], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Increased fuel reserves may prolong dependence on fossil fuels, undermining long-term climate goals and transition to renewable energy\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The government's fuel reserve plans are a pragmatic step toward energy security, aligning with SDGs 7 and 9. However, the 5-year delay significantly diminishes their impact, and the measure risks entrenching fossil fuel dependence, conflicting with climate action (SDG 13). The net ethical position is mixed, with moderate positive steps offset by critical timing and sustainability concerns.\", \"snapshot_score\": 2.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Implementation of the fuel reserve plan is completed ahead of schedule\", \"New renewable energy infrastructure reduces reliance on fuel reserves\", \"Global oil supply disruptions occur before full implementation\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Australia accelerates renewable energy transition, reducing fuel reserve dependence and making the plan obsolete but climate-positive\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Fuel reserve plan is implemented but fails to significantly improve energy security due to ongoing fossil fuel dependence and global supply chain issues\", \"probability\": 0.5, \"score\": -1}, {\"name\": \"C\", \"description\": \"Fuel reserve plan is implemented but exacerbates climate risks by locking in fossil fuel infrastructure and delaying renewable energy adoption\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -0.15, \"final_score\": 0.46, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Mixed action: energy security gains offset by delayed implementation and fossil fuel lock-in risks.\", \"event_country\": \"Australia\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 0.89, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Policy action (increasing reserves) supports energy security despite delay, outweighing lock-in risks.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (bolstering reserves) as a protective measure for energy security (BURN-aligned), while Analyst B overemphasized the delay and fossil fuel lock-in risks. The action itself is a positive step toward resilience, even if imperfect.\"}",
+      "sentinel_concern": "Justification praises the fuel reserve increase as beneficial, yet decision is MINT (negative); decision contradicts the stated positive assessment.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-06T08:40:47.381957+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
