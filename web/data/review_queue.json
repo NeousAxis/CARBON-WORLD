@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-05T23:41:32.684027+00:00",
-  "total_pending": 8,
+  "generated_at": "2026-05-06T00:11:03.884956+00:00",
+  "total_pending": 9,
   "reviews": [
     {
       "id": 27,
@@ -158,6 +158,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-05T22:42:16.952774+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 35,
+      "event_title": "China urges US to drop trade probe as key Trump-Xi summit approaches",
+      "event_url": "https://www.scmp.com/news/us/article/3352544/china-urges-us-drop-trade-probe-key-trump-xi-summit-approaches?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"China's state-backed trade body (CCOIC) publicly challenges a US trade probe on legal and procedural grounds, advocating for adherence to multilateral mechanisms\", \"affected_sdgs\": [17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"US Section 301 trade probe into alleged excess capacity, criticized as legally flawed by China, risks escalating trade tensions and undermining multilateral trade frameworks\", \"affected_sdgs\": [17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"China's challenge to the US trade probe represents a procedural defense of multilateralism and legal norms, aligning with SDG 17. However, the underlying US probe itself risks exacerbating trade conflicts and undermining global economic stability. The net ethical position is mixed, with the positive aspect being a defensive action against a potentially harmful policy.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"US-China summit outcome\", \"WTO ruling on Section 301\", \"Domestic US policy reversal on trade probes\", \"China's compliance with WTO rulings\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"US-China summit leads to de-escalation and joint commitment to WTO reforms, reducing trade tensions\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Trade tensions persist with minor escalations, but no major disruptions to global trade\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Trade war escalates with tariffs and retaliatory measures, harming global supply chains and economic growth\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.9, \"final_score\": -2.115, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Trade probe escalates tensions; China's challenge insufficient to offset systemic harm.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"China's state-backed trade body (CCOIC) publicly challenges a US trade probe on legal and procedural grounds, advocating for adherence to multilateral mechanisms\", \"affected_sdgs\": [12, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"US Section 301 trade investigation into alleged excess capacity, which China argues lacks statutory basis and undermines multilateral trade rules\", \"affected_sdgs\": [10, 17], \"violated_rights\": [\"UDHR Article 22 (economic rights)\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"ethical_synthesis\": \"China's challenge to the US trade probe highlights procedural fairness and multilateral adherence, aligning with SDG 12 and 17. However, the underlying US investigation itself risks undermining global trade stability and labor standards, creating a net negative ethical position due to its potential to escalate trade tensions and harm economic equity.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"US election outcome alters trade policy direction\", \"WTO ruling on Section 301 investigations\", \"China's retaliatory measures or concessions\", \"Global supply chain shifts reducing dependency on US-China trade\"], \"revaluation_checkpoint\": \"2026-11-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"US and China reach a negotiated settlement reducing trade barriers and aligning with WTO rules, fostering global economic stability\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Trade tensions escalate with additional tariffs and non-tariff barriers, harming global supply chains and economic growth\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Trade war spirals into broader economic decoupling, triggering global recession and supply chain disruptions\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -3.1, \"final_score\": -2.675, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 7, \"justification\": \"US trade probe undermines multilateralism and risks escalating global trade tensions.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.49, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Trade probe escalates tensions; China's challenge insufficient to offset systemic harm.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "Polarity error: article describes China urging US to drop a trade probe (a de‑escalation step), which is a positive/neutral action, yet verdict is MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-06T00:11:03.485860+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
