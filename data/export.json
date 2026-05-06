@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-06T03:11:10.581685+00:00",
-  "total_events": 213,
+  "generated_at": "2026-05-06T03:40:43.260248+00:00",
+  "total_events": 214,
   "total_burned": 169021000,
-  "total_minted": 213108750,
+  "total_minted": 221108750,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 214,
+      "event_title": "Norway ready to accelerate oil and gas production to help its European neighbors",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/05/06/la-norvege-prete-a-accelerer-la-production-de-gaz-et-de-petrole-pour-aider-ses-voisins-europeens_6685823_3234.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -5.52,
+      "confidence": 9,
+      "justification": "Norway's fossil fuel expansion undermines global climate goals and human rights. | Norway's decision to accelerate oil and gas production directly contradicts global climate goals (SDG 13) and human rights frameworks by prioritizing short-term energy supply over long-term environmental and social stability. The action undermines planetary boundaries and risks locking in decades of fossil fuel dependency, despite Norway's historical role as a leader in renewable energy.",
+      "tx_hash": "2oXRPWxEj72symf2ef3RJaswHd27ZVGwt4Ka5nH2kR8URFNgxtWzRr2xRHCWJvBR5Kb26B49Aq2XUtAuxb7MxnPa",
+      "created_at": "2026-05-06T03:40:42.826685+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Norway",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Norway accelerates oil and gas production by reopening three closed gas fields and offering 70 new exploration blocks, increasing fossil fuel supply and undermining climate action\", \"affected_sdgs\": [7, 13], \"violated_rights\": [\"UDHR Article 25 (right to a standard of living adequate for health and well-being)\", \"UNDRIP (indigenous land rights)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 213,
       "event_title": "Wikimedia Foundation closes Wikinews after 21 years",
@@ -4760,8 +4782,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.316,
-        "events": 19
+        "burn_ratio": 0.3,
+        "events": 20
       },
       {
         "region": "North America",
@@ -4792,8 +4814,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.684,
-        "events": 19
+        "mint_ratio": 0.7,
+        "events": 20
       },
       {
         "region": "Asia",
@@ -4834,7 +4856,7 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 12350000,
+        "net_minted": 20350000,
         "net_burned": 29200000
       }
     ],
@@ -4852,7 +4874,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 61,
+        "negative": 62,
         "event_ids_positive": [
           212,
           211,
@@ -4888,6 +4910,7 @@
           117
         ],
         "event_ids_negative": [
+          214,
           213,
           210,
           208,
@@ -4953,7 +4976,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           209,
           205,
@@ -4972,6 +4995,7 @@
           123
         ],
         "event_ids_negative": [
+          214,
           213,
           210,
           208,
@@ -5047,7 +5071,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 13,
+        "negative": 14,
         "event_ids_positive": [
           212,
           196,
@@ -5057,6 +5081,7 @@
           123
         ],
         "event_ids_negative": [
+          214,
           213,
           210,
           182,
@@ -5100,7 +5125,7 @@
       },
       "PB": {
         "positive": 17,
-        "negative": 24,
+        "negative": 25,
         "event_ids_positive": [
           212,
           211,
@@ -5121,6 +5146,7 @@
           117
         ],
         "event_ids_negative": [
+          214,
           198,
           181,
           176,
@@ -5152,11 +5178,11 @@
       "niche_pct": 80.9,
       "mainstream_pct": 19.1,
       "total_sources_used": 47,
-      "articles_processed": 101
+      "articles_processed": 102
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 101,
+      "total_events": 102,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -5222,10 +5248,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 13,
+        "count": 14,
         "burn_count": 7,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          214,
           190,
           183,
           159,
@@ -5365,29 +5392,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 63,
+      "total_mint": 64,
       "direct_action": {
-        "count": 50,
-        "pct": 79.4
+        "count": 51,
+        "pct": 79.7
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 17.5
+        "pct": 17.2
       },
       "untyped": {
         "count": 2,
-        "pct": 3.2
+        "pct": 3.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 162,
+      "total_mint": 163,
       "direct_action": {
-        "count": 133,
-        "pct": 82.1
+        "count": 134,
+        "pct": 82.2
       },
       "editorial_alarm": {
         "count": 27,
-        "pct": 16.7
+        "pct": 16.6
       },
       "untyped": {
         "count": 2,
