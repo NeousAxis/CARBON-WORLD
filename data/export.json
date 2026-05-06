@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-06T07:10:58.771096+00:00",
-  "total_events": 222,
+  "generated_at": "2026-05-06T07:41:02.850047+00:00",
+  "total_events": 223,
   "total_burned": 179021000,
-  "total_minted": 224923750,
+  "total_minted": 234423750,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 223,
+      "event_title": "North Korea Abandons All References to Reunification with South Korea in Its Constitution and Confirms a More Hostile Line Toward Seoul",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/06/la-coree-du-nord-abandonne-toute-reference-a-la-reunification-avec-la-coree-du-sud-dans-sa-constitution-et-confirme-une-ligne-plus-hostile-envers-seoul_6686012_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -5.89,
+      "confidence": 9,
+      "justification": "Constitutional amendment formalizes hostility, violating peace and human rights. | The amendment represents a deliberate rejection of peaceful coexistence and international cooperation, directly undermining the UN Charter's principles of peace and security. It violates core human rights to self-determination and dignity, while escalating the risk of conflict in a region already strained by geopolitical tensions.",
+      "tx_hash": "4tuxAuKv29MwgVwG6rke6pPfJFPJpUK51w41gSNSYwA45UdFK2GwaBwZTZiSjBj65LQS76gQV1CVGRjGyAbRW3rZ",
+      "created_at": "2026-05-06T07:41:02.384748+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "North Korea",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"North Korea amends its constitution to remove all references to reunification with South Korea and adopts a more hostile stance toward Seoul, escalating regional tensions and undermining peace prospects\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 28\", \"UNDRIP\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 222,
       "event_title": "Colon cancer breakthrough keeps patients cancer-free for nearly 3 years",
@@ -4953,8 +4975,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.333,
-        "events": 12
+        "burn_ratio": 0.308,
+        "events": 13
       },
       {
         "region": "Europe",
@@ -4995,8 +5017,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.667,
-        "events": 12
+        "mint_ratio": 0.692,
+        "events": 13
       }
     ],
     "supply_trend_7d": [
@@ -5032,7 +5054,7 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 24165000,
+        "net_minted": 33665000,
         "net_burned": 39200000
       }
     ],
@@ -5088,6 +5110,7 @@
           117
         ],
         "event_ids_negative": [
+          223,
           220,
           219,
           218,
@@ -5153,13 +5176,12 @@
           121,
           120,
           119,
-          118,
-          114
+          118
         ]
       },
       "UDHR": {
         "positive": 16,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [
           222,
           209,
@@ -5179,6 +5201,7 @@
           123
         ],
         "event_ids_negative": [
+          223,
           220,
           219,
           218,
@@ -5241,7 +5264,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 7,
+        "negative": 6,
         "event_ids_positive": [
           172,
           123
@@ -5252,13 +5275,12 @@
           167,
           142,
           121,
-          118,
-          114
+          118
         ]
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 13,
+        "negative": 14,
         "event_ids_positive": [
           212,
           196,
@@ -5268,6 +5290,7 @@
           123
         ],
         "event_ids_negative": [
+          223,
           214,
           213,
           210,
@@ -5361,9 +5384,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 81.2,
-      "mainstream_pct": 18.8,
-      "total_sources_used": 48,
+      "niche_pct": 80.9,
+      "mainstream_pct": 19.1,
+      "total_sources_used": 47,
       "articles_processed": 109
     },
     "cache_hit_rate_7d": {
@@ -5374,6 +5397,18 @@
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
+        "name": "UN",
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
+        "event_ids": [
+          223,
+          189,
+          177,
+          151
+        ]
+      },
+      {
         "name": "EU",
         "count": 3,
         "burn_count": 0,
@@ -5382,17 +5417,6 @@
           217,
           180,
           163
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 3,
-        "burn_count": 1,
-        "mint_count": 2,
-        "event_ids": [
-          189,
-          177,
-          151
         ]
       },
       {
@@ -5420,15 +5444,6 @@
         "mint_count": 1,
         "event_ids": [
           139
-        ]
-      },
-      {
-        "name": "EU Commission",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          114
         ]
       }
     ],
@@ -5595,14 +5610,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 169,
+      "total_mint": 170,
       "direct_action": {
-        "count": 140,
-        "pct": 82.8
+        "count": 141,
+        "pct": 82.9
       },
       "editorial_alarm": {
         "count": 27,
-        "pct": 16.0
+        "pct": 15.9
       },
       "untyped": {
         "count": 2,
