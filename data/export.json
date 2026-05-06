@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-06T22:40:30.033382+00:00",
-  "total_events": 272,
-  "total_burned": 256021000,
-  "total_minted": 336273750,
+  "generated_at": "2026-05-06T23:11:13.070247+00:00",
+  "total_events": 274,
+  "total_burned": 263021000,
+  "total_minted": 343273750,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 274,
+      "event_title": "Researchers discover a new pathway to building energy-efficient computing chips",
+      "event_url": "https://phys.org/news/2026-05-pathway-energy-efficient-chips.html",
+      "event_source": "Phys.org",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.27,
+      "confidence": 8,
+      "justification": "Breakthrough in energy-efficient computing chips reduces energy demand and supports sustainable tech innovation. | The discovery directly advances SDG 7 (Affordable and Clean Energy) and SDG 9 (Industry, Innovation, and Infrastructure) by enabling energy-efficient computing, reducing electronic waste, and supporting sustainable technological progress. No identifiable negative ethical aspects are present in this action.",
+      "tx_hash": "4auz3qrDxXEpvJ2p9z8y7hE4sZwPqTV9RAWFtLnLwBScwso33yghgt4XSaaiA9bDCgaRfchYMxfRd7YcR8AejDhD",
+      "created_at": "2026-05-06T23:11:12.504260+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Researchers discovered a new pathway to modify electronic properties of a common semiconductor material, enabling faster and lower-power data storage and processing\", \"affected_sdgs\": [7, 9, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 273,
+      "event_title": "Russia warns foreign diplomats to leave Kyiv in case of strike",
+      "event_url": "https://www.france24.com/en/europe/20260506-russia-warns-foreign-diplomats-to-leave-kyiv-in-case-of-strike",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": -6.93,
+      "confidence": 9,
+      "justification": "Threat of retaliatory strikes violates UDHR and escalates conflict risk. | The action constitutes a direct threat of military escalation with potential civilian casualties, violating core human rights and undermining peace and security. While framed as a precautionary measure, the coercive nature and risk of disproportionate response outweigh any speculative protective intent.",
+      "tx_hash": "Tkx2aWdxx9zuTy5ZUGStpWUEHnR28iMD2qRhYW27mATE8h59fJ6vnKdnzsAQ2iLngn8qPJitrMtXw1xDvzeG9nh",
+      "created_at": "2026-05-06T23:11:12.405023+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Russia issues threat to foreign diplomats in Kyiv, warning of retaliatory strikes if Ukraine disrupts commemorations, escalating geopolitical tension and risk of civilian harm\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 272,
       "event_title": "Gut bacteria reveal hidden evolutionary lineages tied to aging and disease",
@@ -6063,8 +6107,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.241,
-        "events": 29
+        "burn_ratio": 0.233,
+        "events": 30
       },
       {
         "region": "North America",
@@ -6090,8 +6134,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.759,
-        "events": 29
+        "mint_ratio": 0.767,
+        "events": 30
       },
       {
         "region": "Latin America",
@@ -6132,8 +6176,8 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 135515000,
-        "net_burned": 116200000
+        "net_minted": 142515000,
+        "net_burned": 123200000
       }
     ],
     "event_of_the_day": {
@@ -6149,9 +6193,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 46,
-        "negative": 101,
+        "positive": 47,
+        "negative": 102,
         "event_ids_positive": [
+          274,
           272,
           271,
           268,
@@ -6200,6 +6245,7 @@
           123
         ],
         "event_ids_negative": [
+          273,
           270,
           269,
           267,
@@ -6305,7 +6351,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 81,
+        "negative": 82,
         "event_ids_positive": [
           239,
           222,
@@ -6326,6 +6372,7 @@
           123
         ],
         "event_ids_negative": [
+          273,
           270,
           269,
           267,
@@ -6569,11 +6616,11 @@
       "niche_pct": 75.5,
       "mainstream_pct": 24.5,
       "total_sources_used": 49,
-      "articles_processed": 153
+      "articles_processed": 155
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 153,
+      "total_events": 155,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -6643,10 +6690,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 19,
-        "burn_count": 10,
+        "count": 20,
+        "burn_count": 11,
         "mint_count": 9,
         "event_ids": [
+          274,
           239,
           236,
           227,
@@ -6670,10 +6718,11 @@
       },
       {
         "name": "Defense",
-        "count": 14,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          273,
           266,
           263,
           247,
@@ -6688,6 +6737,25 @@
           143,
           139,
           135
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 11,
+        "burn_count": 3,
+        "mint_count": 8,
+        "event_ids": [
+          274,
+          240,
+          192,
+          183,
+          182,
+          168,
+          152,
+          138,
+          135,
+          134,
+          128
         ]
       },
       {
@@ -6707,24 +6775,6 @@
           163,
           135,
           133
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 10,
-        "burn_count": 2,
-        "mint_count": 8,
-        "event_ids": [
-          240,
-          192,
-          183,
-          182,
-          168,
-          152,
-          138,
-          135,
-          134,
-          128
         ]
       },
       {
@@ -6772,44 +6822,44 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 50,
+      "total_burn": 51,
       "direct_action": {
-        "count": 41,
-        "pct": 82.0
+        "count": 42,
+        "pct": 82.4
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 10.0
+        "pct": 9.8
       },
       "untyped": {
         "count": 4,
-        "pct": 8.0
+        "pct": 7.8
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 66,
+      "total_burn": 67,
       "direct_action": {
-        "count": 54,
-        "pct": 81.8
+        "count": 55,
+        "pct": 82.1
       },
       "editorial_consciousness": {
         "count": 8,
-        "pct": 12.1
+        "pct": 11.9
       },
       "untyped": {
         "count": 4,
-        "pct": 6.1
+        "pct": 6.0
       }
     },
     "mint_composition_7d": {
-      "total_mint": 103,
+      "total_mint": 104,
       "direct_action": {
-        "count": 90,
-        "pct": 87.4
+        "count": 91,
+        "pct": 87.5
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 10.7
+        "pct": 10.6
       },
       "untyped": {
         "count": 2,
@@ -6817,14 +6867,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 206,
+      "total_mint": 207,
       "direct_action": {
-        "count": 176,
-        "pct": 85.4
+        "count": 177,
+        "pct": 85.5
       },
       "editorial_alarm": {
         "count": 28,
-        "pct": 13.6
+        "pct": 13.5
       },
       "untyped": {
         "count": 2,
