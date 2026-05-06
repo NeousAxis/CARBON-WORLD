@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-06T20:40:43.649244+00:00",
-  "total_events": 268,
+  "generated_at": "2026-05-06T21:11:18.426182+00:00",
+  "total_events": 270,
   "total_burned": 248021000,
-  "total_minted": 323273750,
+  "total_minted": 336273750,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 270,
+      "event_title": "Russia cuts mobile internet in Moscow citing drone security concerns",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/6/russia-cuts-mobile-internet-in-moscow-citing-drone-security-concerns?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -4.61,
+      "confidence": 9,
+      "justification": "Government-imposed internet shutdowns violate digital rights and suppress dissent. | The action constitutes a deliberate restriction of digital rights and freedom of expression, undermining democratic principles and access to information. While framed as a security measure, the lack of transparency and broad scope of the shutdown disproportionately impacts civilians without clear justification.",
+      "tx_hash": "3ogCabGbdsJGBKN7zdzr2RCbnF37LB5Cj9ZWPqtXs7W64GpeWv8Qkg4ddFcgfzdu53qyy15EkNxVGUXXz89owZcF",
+      "created_at": "2026-05-06T21:11:17.783444+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Russian government cuts mobile internet in Moscow and other cities under the pretext of drone security, restricting freedom of expression and access to information\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 269,
+      "event_title": "Tshisekedi hints at possible rule beyond second term",
+      "event_url": "https://www.france24.com/en/tshisekedi-hints-at-possible-rule-beyond-second-term",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -6.46,
+      "confidence": 9,
+      "justification": "Undermines democratic term limits and constitutional order, violating UDHR Article 21. | The action described directly undermines democratic principles by enabling a leader to potentially extend their rule beyond constitutional term limits, violating the right to free and fair elections (UDHR Article 21) and eroding institutional checks on power. While framed as a response to popular demand, the mechanism itself weakens the integrity of democratic governance and sets a dangerous precedent for fu",
+      "tx_hash": "19TsVAFoeiwXjEfpUmbt4ENQHF6STi6dLa21pddjAbmUYNrShwjUw2wKtKR617qYRMZ6T3DjDUb3A7T2AHQHAEU",
+      "created_at": "2026-05-06T21:11:17.673925+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"No positive aspects identified in the described action (hinting at possible rule beyond second term).\", \"affected_sdgs\": [], \"magnitude\": 0, \"frameworks\": []}]",
+      "negative_aspects_json": "[{\"description\": \"President Tshisekedi hints at accepting a third term if the people want it, following a constitutional referendum, which undermines democratic term limits and constitutional order.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The constitutional referendum enabling this possibility may have been conducted without inclusive, transparent, or fair processes, further eroding democratic norms.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 268,
       "event_title": "Astronomers unlock a sharper view from JWST using a 'keyhole' trick",
@@ -5975,8 +6019,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.25,
-        "events": 28
+        "burn_ratio": 0.241,
+        "events": 29
       },
       {
         "region": "North America",
@@ -6002,8 +6046,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.75,
-        "events": 28
+        "mint_ratio": 0.759,
+        "events": 29
       },
       {
         "region": "Latin America",
@@ -6044,7 +6088,7 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 122515000,
+        "net_minted": 135515000,
         "net_burned": 108200000
       }
     ],
@@ -6062,7 +6106,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 44,
-        "negative": 100,
+        "negative": 101,
         "event_ids_positive": [
           268,
           262,
@@ -6110,6 +6154,8 @@
           123
         ],
         "event_ids_negative": [
+          270,
+          269,
           267,
           266,
           265,
@@ -6208,13 +6254,12 @@
           125,
           122,
           121,
-          120,
-          119
+          120
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 79,
+        "negative": 81,
         "event_ids_positive": [
           239,
           222,
@@ -6235,6 +6280,8 @@
           123
         ],
         "event_ids_negative": [
+          270,
+          269,
           267,
           266,
           265,
@@ -6350,7 +6397,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [
           262,
           253,
@@ -6362,6 +6409,7 @@
           123
         ],
         "event_ids_negative": [
+          269,
           259,
           254,
           237,
@@ -6414,7 +6462,7 @@
       },
       "PB": {
         "positive": 24,
-        "negative": 26,
+        "negative": 25,
         "event_ids_positive": [
           258,
           253,
@@ -6466,20 +6514,19 @@
           131,
           128,
           126,
-          125,
-          119
+          125
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 76.0,
-      "mainstream_pct": 24.0,
-      "total_sources_used": 50,
-      "articles_processed": 150
+      "niche_pct": 75.5,
+      "mainstream_pct": 24.5,
+      "total_sources_used": 49,
+      "articles_processed": 151
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 150,
+      "total_events": 151,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -6667,14 +6714,13 @@
         ]
       },
       {
-        "name": "Forestry",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
+        "name": "Pharma",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
         "event_ids": [
-          181,
-          149,
-          119
+          261,
+          157
         ]
       }
     ],
@@ -6709,29 +6755,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 102,
+      "total_mint": 103,
       "direct_action": {
-        "count": 89,
-        "pct": 87.3
+        "count": 90,
+        "pct": 87.4
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 10.8
+        "pct": 10.7
       },
       "untyped": {
         "count": 2,
-        "pct": 2.0
+        "pct": 1.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 204,
+      "total_mint": 206,
       "direct_action": {
-        "count": 174,
-        "pct": 85.3
+        "count": 176,
+        "pct": 85.4
       },
       "editorial_alarm": {
         "count": 28,
-        "pct": 13.7
+        "pct": 13.6
       },
       "untyped": {
         "count": 2,
