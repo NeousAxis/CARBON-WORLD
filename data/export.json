@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-06T02:11:44.542920+00:00",
-  "total_events": 212,
+  "generated_at": "2026-05-06T02:40:39.797161+00:00",
+  "total_events": 213,
   "total_burned": 169021000,
-  "total_minted": 211608750,
+  "total_minted": 213108750,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 213,
+      "event_title": "Wikimedia Foundation closes Wikinews after 21 years",
+      "event_url": "https://en.wikinews.org/wiki/Wikimedia_Foundation_closes_Wikinews_after_21_years",
+      "event_source": "Wikinews",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.63,
+      "confidence": 8,
+      "justification": "Closure of a unique collaborative journalism platform reduces public access to diverse news sources. | The closure of Wikinews represents a pragmatic but ethically mixed decision. While it aligns with sustainability goals and acknowledges the project's limitations, it also removes a valuable platform for collaborative journalism and community-driven news, undermining freedom of expression and cultural representation. The net impact is negative due to the loss of a unique public good, despite the",
+      "tx_hash": "2mFmc3JcRvDjtZM99zGB7oVWNBdfLEBU3PhCFiGmZreJSgoLndo1LjDxcp1tsw6tKWXQJcHJzn6zNoea7oeiSDrZ",
+      "created_at": "2026-05-06T02:40:39.332193+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Wikimedia Foundation acknowledges contributions of Wikinews volunteers and expresses regret over the project's inability to fulfill its original promise, demonstrating institutional accountability and transparency.\", \"affected_sdgs\": [4, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The closure decision reflects a commitment to long-term sustainability and resource allocation, prioritizing projects with higher community engagement and impact.\", \"affected_sdgs\": [9, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The closure of Wikinews eliminates a unique platform for collaborative journalism and citizen-driven news reporting, reducing diversity in news sources and public access to community-generated journalism.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The decision may disproportionately affect smaller language editions of Wikinews, which may have had lower traffic but still served local communities, leading to reduced linguistic and cultural representation in news.\", \"affected_sdgs\": [10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 212,
       "event_title": "Wilder by the Year: European Wildlife Comeback Fund’s 2025 Highlights",
@@ -4674,8 +4696,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 12,
-        "total_amount": 22500000
+        "count": 13,
+        "total_amount": 24000000
       },
       {
         "country": "France",
@@ -4743,8 +4765,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.286,
-        "events": 21
+        "burn_ratio": 0.273,
+        "events": 22
       },
       {
         "region": "Africa",
@@ -4765,8 +4787,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.714,
-        "events": 21
+        "mint_ratio": 0.727,
+        "events": 22
       },
       {
         "region": "Europe",
@@ -4812,7 +4834,7 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 10850000,
+        "net_minted": 12350000,
         "net_burned": 29200000
       }
     ],
@@ -4830,7 +4852,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 60,
+        "negative": 61,
         "event_ids_positive": [
           212,
           211,
@@ -4866,6 +4888,7 @@
           117
         ],
         "event_ids_negative": [
+          213,
           210,
           208,
           207,
@@ -4930,7 +4953,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 40,
+        "negative": 41,
         "event_ids_positive": [
           209,
           205,
@@ -4949,6 +4972,7 @@
           123
         ],
         "event_ids_negative": [
+          213,
           210,
           208,
           207,
@@ -5023,7 +5047,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 12,
+        "negative": 13,
         "event_ids_positive": [
           212,
           196,
@@ -5033,6 +5057,7 @@
           123
         ],
         "event_ids_negative": [
+          213,
           210,
           182,
           181,
@@ -5124,14 +5149,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 80.4,
-      "mainstream_pct": 19.6,
-      "total_sources_used": 46,
-      "articles_processed": 100
+      "niche_pct": 80.9,
+      "mainstream_pct": 19.1,
+      "total_sources_used": 47,
+      "articles_processed": 101
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 100,
+      "total_events": 101,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -5340,14 +5365,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 62,
+      "total_mint": 63,
       "direct_action": {
-        "count": 49,
-        "pct": 79.0
+        "count": 50,
+        "pct": 79.4
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 17.7
+        "pct": 17.5
       },
       "untyped": {
         "count": 2,
@@ -5355,14 +5380,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 161,
+      "total_mint": 162,
       "direct_action": {
-        "count": 132,
-        "pct": 82.0
+        "count": 133,
+        "pct": 82.1
       },
       "editorial_alarm": {
         "count": 27,
-        "pct": 16.8
+        "pct": 16.7
       },
       "untyped": {
         "count": 2,
