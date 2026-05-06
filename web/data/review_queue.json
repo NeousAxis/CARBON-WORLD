@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-06T07:41:02.865645+00:00",
-  "total_pending": 9,
+  "generated_at": "2026-05-06T08:12:30.399134+00:00",
+  "total_pending": 10,
   "reviews": [
     {
       "id": 27,
@@ -178,6 +178,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-06T00:11:03.485860+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 36,
+      "event_title": "Study finds 40% of soil-dependent species threatened or data deficient",
+      "event_url": "https://news.mongabay.com/short-article/2026/05/study-finds-40-of-soil-dependent-species-threatened-or-data-deficient/",
+      "event_source": "Mongabay",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"First-ever assessment of extinction risk for soil-dependent species reveals 40% are threatened or data deficient, raising awareness of an overlooked biodiversity crisis\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"40% of soil-dependent species are threatened or data deficient, indicating severe biodiversity loss and ecosystem service disruption\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The study’s publication is a critical step in recognizing soil biodiversity as a planetary boundary concern, fulfilling SDG 15 and aligning with planetary boundaries. However, the findings themselves reveal a catastrophic loss of soil-dependent life, undermining ecosystem stability and biogeochemical cycles. The net ethical position is negative due to the scale of harm, despite the positive act of raising awareness.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"New conservation policies for soil ecosystems are enacted within 2 years\", \"Global funding for soil biodiversity research exceeds $1B annually\", \"IUCN Red List updates show <20% of soil species threatened by 2028\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Global soil biodiversity protection frameworks are adopted, reversing trends and restoring 30% of degraded soil ecosystems by 2040\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate progress with regional soil conservation policies but continued decline in soil-dependent species due to agricultural expansion\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Accelerated biodiversity collapse in soil ecosystems due to climate change and industrial agriculture, leading to systemic ecosystem failure\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.25, \"final_score\": -6.1625, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Study reveals catastrophic soil biodiversity loss despite awareness-raising act.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"First comprehensive assessment of extinction risk for soil-dependent species, raising global awareness of biodiversity loss in understudied ecosystems\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Study highlights critical role of soil ecosystems in biogeochemical cycles, informing future conservation priorities and policy\", \"affected_sdgs\": [13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"40% of soil-dependent species are threatened or data deficient, indicating severe biodiversity loss and knowledge gaps that hinder effective conservation\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"Universal Declaration of Animal Rights\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The study represents a critical step in recognizing and quantifying the extinction risk of soil-dependent species, which are vital for ecosystem stability. While the findings reveal alarming biodiversity loss, the act of conducting and publishing this research itself constitutes a positive ethical milestone by raising awareness and informing future conservation efforts.\", \"snapshot_score\": 5.5, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"New IUCN Red List assessments for soil species in 2028\", \"Policy responses to the study's findings by national governments\", \"Technological advances in soil biodiversity monitoring\", \"Climate change impacts accelerating soil species decline\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Global policy frameworks and funding prioritize soil biodiversity conservation, leading to measurable recovery of threatened species within 15 years\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate progress with regional conservation initiatives but persistent data gaps and slow policy adoption limit impact\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"Insufficient action due to competing priorities, leading to continued decline of soil-dependent species and ecosystem collapse in critical regions\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.15, \"final_score\": 3.66, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Study raises critical awareness of soil biodiversity loss but does not itself implement conservation action.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -4.85, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"Study reveals catastrophic loss but action is awareness-raising, not protective.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the event as revealing harm (MINT) while Analyst B misclassifies the institutional action (study publication) as neutral/positive. The ACTION (publishing findings) does not punish harm or protect rights—it merely exposes it.\"}",
+      "sentinel_concern": "Verdict flips polarity: publishing a study raises awareness, a positive/neutral action, not a negative impact. Agents judged the threatened species, not the awareness action.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-06T08:12:29.945065+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
