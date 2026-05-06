@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-06T00:41:46.573225+00:00",
-  "total_events": 204,
-  "total_burned": 151321000,
-  "total_minted": 204258750,
+  "generated_at": "2026-05-06T01:11:06.989625+00:00",
+  "total_events": 206,
+  "total_burned": 152021000,
+  "total_minted": 204958750,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 206,
+      "event_title": "Public Broadcasting: 'This Report is an Attack on Environmental Journalists'",
+      "event_url": "https://reporterre.net/Audiovisuel-public-une-dynamique-tres-inquietante-pour-l-information-sur-l-ecologie",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -2.85,
+      "confidence": 8,
+      "justification": "Proposed cuts to public broadcasting weaken climate journalism and public awareness. | The proposed measures directly threaten environmental journalism, a critical pillar for public climate literacy and democratic accountability. While the criticism of these measures by civil society actors (e.g., QuotaClimat) is a positive act of advocacy, the underlying policy proposal itself constitutes a significant setback for climate communication and education.",
+      "tx_hash": "pAQ4QaivoC3cm3DTDooEFJNuZCnANsFxaP3cmbkE8hSCuYUbpozFZTh7b9UJ8rHuHAp7yR5aK5Eova9Wjts8Cnj",
+      "created_at": "2026-05-06T01:11:06.608709+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Public criticism of proposed measures that would weaken environmental journalism in France, highlighting potential harm to climate coverage and public awareness\", \"affected_sdgs\": [4, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed merger of France 2 and France 5 and budget cuts to public broadcasting, which would reduce environmental journalism capacity and weaken climate reporting\", \"affected_sdgs\": [4, 13], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 205,
+      "event_title": "Antisemitism: London police create unit dedicated to protecting the Jewish community",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/06/antisemitisme-la-police-londonienne-cree-une-unite-dediee-a-la-protection-de-la-communaute-juive_6685723_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 6.27,
+      "confidence": 8,
+      "justification": "Institutional protection of a persecuted group aligns with human rights and SDG 16. | The creation of a dedicated police unit to protect a targeted religious community directly upholds human rights (UDHR Article 18) and reduces inequalities (SDG 10). It addresses immediate safety concerns and signals institutional commitment to justice and security for vulnerable groups.",
+      "tx_hash": "hLjFvJoeFQY5MgVK8kWCMqkt4wHnzxUzBLYGQDmoD3D1iGi3xmD7rhiSEc6AEPPteGjZQwz9eLpmbGvRxzZ9BTX",
+      "created_at": "2026-05-06T01:11:06.485407+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"London police establish a dedicated unit of approximately 100 officers to enhance visible protection for the Jewish community amid rising antisemitic attacks\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 204,
       "event_title": "Ripples of change",
@@ -4502,14 +4546,14 @@
         "total_amount": 22350000
       },
       {
+        "country": "France",
+        "count": 5,
+        "total_amount": 5025000
+      },
+      {
         "country": "Argentina",
         "count": 4,
         "total_amount": 1850000
-      },
-      {
-        "country": "France",
-        "count": 4,
-        "total_amount": 4325000
       },
       {
         "country": "Brazil",
@@ -4529,6 +4573,11 @@
         "total_amount": 13650000
       },
       {
+        "country": "United Kingdom",
+        "count": 3,
+        "total_amount": 12700000
+      },
+      {
         "country": "Colombia",
         "count": 3,
         "total_amount": 5875000
@@ -4537,11 +4586,6 @@
         "country": "Brazil",
         "count": 3,
         "total_amount": 1800000
-      },
-      {
-        "country": "United Kingdom",
-        "count": 2,
-        "total_amount": 12000000
       },
       {
         "country": "Indonesia",
@@ -4562,8 +4606,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.294,
-        "events": 17
+        "burn_ratio": 0.316,
+        "events": 19
       },
       {
         "region": "North America",
@@ -4594,8 +4638,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.706,
-        "events": 17
+        "mint_ratio": 0.684,
+        "events": 19
       },
       {
         "region": "Asia",
@@ -4636,8 +4680,8 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 3500000,
-        "net_burned": 11500000
+        "net_minted": 4200000,
+        "net_burned": 12200000
       }
     ],
     "event_of_the_day": {
@@ -4653,9 +4697,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 27,
-        "negative": 55,
+        "positive": 28,
+        "negative": 56,
         "event_ids_positive": [
+          205,
           204,
           203,
           199,
@@ -4685,6 +4730,7 @@
           117
         ],
         "event_ids_negative": [
+          206,
           202,
           201,
           200,
@@ -4743,9 +4789,10 @@
         ]
       },
       "UDHR": {
-        "positive": 13,
-        "negative": 36,
+        "positive": 14,
+        "negative": 37,
         "event_ids_positive": [
+          205,
           203,
           197,
           196,
@@ -4761,6 +4808,7 @@
           123
         ],
         "event_ids_negative": [
+          206,
           202,
           200,
           187,
@@ -4920,14 +4968,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 80.5,
-      "mainstream_pct": 19.5,
-      "total_sources_used": 41,
-      "articles_processed": 90
+      "niche_pct": 81.0,
+      "mainstream_pct": 19.0,
+      "total_sources_used": 42,
+      "articles_processed": 92
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 90,
+      "total_events": 92,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -5103,59 +5151,59 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 33,
+      "total_burn": 34,
       "direct_action": {
-        "count": 25,
-        "pct": 75.8
+        "count": 26,
+        "pct": 76.5
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 12.1
+        "pct": 11.8
       },
       "untyped": {
         "count": 4,
-        "pct": 12.1
+        "pct": 11.8
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 46,
+      "total_burn": 47,
       "direct_action": {
-        "count": 35,
-        "pct": 76.1
+        "count": 36,
+        "pct": 76.6
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 15.2
+        "pct": 14.9
       },
       "untyped": {
         "count": 4,
-        "pct": 8.7
+        "pct": 8.5
       }
     },
     "mint_composition_7d": {
-      "total_mint": 57,
+      "total_mint": 58,
       "direct_action": {
         "count": 47,
-        "pct": 82.5
+        "pct": 81.0
       },
       "editorial_alarm": {
-        "count": 8,
-        "pct": 14.0
+        "count": 9,
+        "pct": 15.5
       },
       "untyped": {
         "count": 2,
-        "pct": 3.5
+        "pct": 3.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 156,
+      "total_mint": 157,
       "direct_action": {
         "count": 130,
-        "pct": 83.3
+        "pct": 82.8
       },
       "editorial_alarm": {
-        "count": 24,
-        "pct": 15.4
+        "count": 25,
+        "pct": 15.9
       },
       "untyped": {
         "count": 2,
