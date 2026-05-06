@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-06T04:41:40.786485+00:00",
-  "total_events": 216,
+  "generated_at": "2026-05-06T05:11:09.204964+00:00",
+  "total_events": 217,
   "total_burned": 169021000,
-  "total_minted": 223108750,
+  "total_minted": 223258750,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 217,
+      "event_title": "Romania’s pro-EU government ousted after no-confidence vote",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/6/romanias-pro-eu-government-ousted-after-no-confidence-vote?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.1,
+      "confidence": 7,
+      "justification": "Democratic process upheld but risks EU alignment loss, net negative impact. | The no-confidence vote demonstrates democratic accountability, a positive aspect under SDG 16. However, the removal of a pro-EU government risks undermining Romania's commitment to EU climate and human rights frameworks, creating a net negative impact on sustainability and governance.",
+      "tx_hash": "2mRAPAdzp8KPjzqAF2Q47Hfh2N97vWjHkHji5fwkxndRh94vjyHgoaRtrTiE5kFbrVezmbpiKEskvs9CM1FyLAj1",
+      "created_at": "2026-05-06T05:11:08.623333+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Romania",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Parliamentary democracy functioning as intended through a no-confidence vote to remove a government\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ousting of a pro-EU government may destabilize Romania's alignment with EU climate and human rights policies\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 216,
       "event_title": "Bali drowning in trash after landfill closed",
@@ -4776,14 +4798,14 @@
         "total_amount": 1850000
       },
       {
+        "country": "Romania",
+        "count": 3,
+        "total_amount": 900000
+      },
+      {
         "country": "Brazil",
         "count": 3,
         "total_amount": 7560000
-      },
-      {
-        "country": "United Kingdom",
-        "count": 3,
-        "total_amount": 800000
       }
     ],
     "top_countries_burn": [
@@ -4826,8 +4848,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.3,
-        "events": 20
+        "burn_ratio": 0.286,
+        "events": 21
       },
       {
         "region": "North America",
@@ -4858,8 +4880,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.7,
-        "events": 20
+        "mint_ratio": 0.714,
+        "events": 21
       },
       {
         "region": "Asia",
@@ -4900,7 +4922,7 @@
       },
       {
         "date": "2026-05-06",
-        "net_minted": 22350000,
+        "net_minted": 22500000,
         "net_burned": 29200000
       }
     ],
@@ -4918,7 +4940,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           212,
           211,
@@ -4954,6 +4976,7 @@
           117
         ],
         "event_ids_negative": [
+          217,
           216,
           215,
           214,
@@ -5022,7 +5045,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           209,
           205,
@@ -5041,6 +5064,7 @@
           123
         ],
         "event_ids_negative": [
+          217,
           215,
           214,
           213,
@@ -5225,15 +5249,26 @@
       "niche_pct": 80.9,
       "mainstream_pct": 19.1,
       "total_sources_used": 47,
-      "articles_processed": 104
+      "articles_processed": 105
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 104,
+      "total_events": 105,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          217,
+          180,
+          163
+        ]
+      },
       {
         "name": "UN",
         "count": 3,
@@ -5243,16 +5278,6 @@
           189,
           177,
           151
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          180,
-          163
         ]
       },
       {
@@ -5440,14 +5465,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 66,
+      "total_mint": 67,
       "direct_action": {
-        "count": 53,
-        "pct": 80.3
+        "count": 54,
+        "pct": 80.6
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 16.7
+        "pct": 16.4
       },
       "untyped": {
         "count": 2,
@@ -5455,14 +5480,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 165,
+      "total_mint": 166,
       "direct_action": {
-        "count": 136,
-        "pct": 82.4
+        "count": 137,
+        "pct": 82.5
       },
       "editorial_alarm": {
         "count": 27,
-        "pct": 16.4
+        "pct": 16.3
       },
       "untyped": {
         "count": 2,
