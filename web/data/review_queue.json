@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T13:41:53.447725+00:00",
-  "total_pending": 21,
+  "generated_at": "2026-05-07T14:11:10.076859+00:00",
+  "total_pending": 22,
   "reviews": [
     {
       "id": 27,
@@ -418,6 +418,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T12:41:41.579317+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 48,
+      "event_title": "EN DIRECT, hantavirus sur un navire de croisière : le risque pour les Européens est « faible », affirme la Commission ; les passagers avec symptômes évacués du navire",
+      "event_url": "https://www.lemonde.fr/sante/live/2026/05/07/en-direct-hantavirus-sur-un-navire-de-croisiere-tous-les-passagers-presentant-des-symptomes-ont-ete-evacues-du-mv-hondius-assure-le-croisieriste_6686093_1651302.html",
+      "event_source": "Le Monde Planete",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Evacuation of symptomatic passengers from a cruise ship with hantavirus cases to prevent further spread and protect public health\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Three passengers died on the MV Hondius cruise ship due to hantavirus, indicating a failure in early detection or prevention measures\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Cruise ship environment may facilitate rapid disease transmission among passengers and crew\", \"affected_sdgs\": [3, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The evacuation of symptomatic passengers demonstrates a proactive public health response to mitigate harm, aligning with SDG 3 (Good Health). However, the deaths of three passengers and the cruise ship's role in facilitating disease spread highlight systemic failures in prevention and early detection, violating fundamental rights to life and health.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Effectiveness of quarantine measures post-evacuation\", \"Number of secondary infections linked to the ship\", \"Implementation of stricter health protocols for cruise ships\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Rapid containment and no further cases linked to the ship; improved global cruise health protocols\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Limited secondary outbreaks but no major public health crisis; moderate policy reforms\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Large-scale outbreak with international spread; systemic failures in global health surveillance\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.65, \"final_score\": -0.81, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Public health failure with proactive mitigation; net negative impact on health rights.\", \"event_country\": \"Netherlands\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Public health authorities and cruise operator acted swiftly to evacuate symptomatic passengers from the MV Hondius, demonstrating a proactive response to a potential disease outbreak.\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Three passengers died from hantavirus on the cruise ship MV Hondius, indicating a failure in early detection or prevention measures.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The event highlights potential risks of disease transmission in confined spaces like cruise ships, raising concerns about public health infrastructure and preparedness.\", \"affected_sdgs\": [3, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The swift evacuation of symptomatic passengers demonstrates a positive public health response, aligning with SDG 3 (Good Health). However, the deaths of three passengers and the outbreak itself reveal systemic gaps in disease prevention and early detection, particularly in high-risk environments like cruise ships. The net ethical position is cautiously positive but underscores the need for stronger preventive measures.\", \"snapshot_score\": 3.0, \"trajectory_score\": 0.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of mandatory hantavirus screening for cruise passengers\", \"Adoption of international health protocols for cruise ships\", \"Publication of a comprehensive report on the outbreak's causes and prevention failures\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"International health protocols are rapidly adopted, and cruise ships implement mandatory screening, reducing future outbreaks.\", \"probability\": 0.35, \"score\": 6}, {\"name\": \"B\", \"description\": \"Limited reforms are implemented, and similar outbreaks occur in other cruise ships within 2 years.\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"No significant reforms are adopted, leading to repeated outbreaks and preventable deaths.\", \"probability\": 0.15, \"score\": -8}], \"prospective_score\": 0.7, \"final_score\": 1.355, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Swift evacuation mitigates harm but outbreak reveals systemic gaps.\", \"event_country\": \"Netherlands\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.81, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Evacuation of symptomatic passengers is a protective public health action; deaths reflect institutional failure.\", \"disagreement\": true, \"reason\": \"The institutional action (evacuation) protects public health rights and mitigates harm, which aligns with a BURN. Analyst A correctly identifies the negative impact of the outbreak and failure in prevention.\"}",
+      "sentinel_concern": "Verdict BURN (positive) contradicts article's overall negative impact: hantavirus outbreak caused deaths; evacuation mitigates but event remains harmful.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T14:11:09.348472+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
