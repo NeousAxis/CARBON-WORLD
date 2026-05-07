@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T22:10:48.275462+00:00",
-  "total_pending": 29,
+  "generated_at": "2026-05-07T22:41:25.977685+00:00",
+  "total_pending": 30,
   "reviews": [
     {
       "id": 27,
@@ -578,6 +578,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T22:10:47.622362+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 56,
+      "event_title": "Why Greenpeace sent a ship to help the Global Sumud Flotilla sail to Gaza, and what’s happened",
+      "event_url": "https://www.greenpeace.org/international/story/82566/greenpeace-global-sumud-flotilla-gaza-arctic-sunrise/",
+      "event_source": "Greenpeace International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace's Arctic Sunrise joined the Global Sumud Flotilla to challenge Israel's blockade on Gaza and demand safe humanitarian access for civilians\", \"affected_sdgs\": [2, 3, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The action represents a peaceful civilian mission to deliver humanitarian aid and raise awareness of the blockade's impact on Gaza\", \"affected_sdgs\": [2, 3, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The action directly supports humanitarian access and challenges a blockade that restricts food, medical supplies, and freedom of movement, aligning with multiple human rights and SDGs. No negative ethical aspects were identified in the described action.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Successful delivery of humanitarian aid to Gaza\", \"Escalation of conflict disrupting the mission\", \"International legal or diplomatic response to the blockade\", \"Sustainability of the flotilla's impact beyond the event\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Flotilla successfully delivers aid and sparks international pressure to lift the blockade, leading to long-term humanitarian improvements\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Flotilla faces obstruction but raises global awareness, leading to partial easing of restrictions and continued advocacy\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Flotilla is blocked or disrupted, with no significant change in the blockade, but the action galvanizes further civil society efforts\", \"probability\": 0.2, \"score\": 3}], \"prospective_score\": 6.45, \"final_score\": 7.36, \"decision\": \"BURN\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Peaceful humanitarian mission challenging a blockade aligns with human rights and SDGs.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace's Arctic Sunrise joined the Global Sumud Flotilla to challenge Israel's blockade on Gaza and demand safe humanitarian access for civilians, aligning with humanitarian and human rights principles.\", \"affected_sdgs\": [1, 2, 3, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The action represents a concrete, non-violent civil society effort to uphold international humanitarian law and protect civilian rights in a conflict zone.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"UDHR\", \"CRC\"]}, {\"description\": \"The flotilla's mission includes delivering humanitarian aid and raising global awareness of the blockade's impact on Gaza's civilian population.\", \"affected_sdgs\": [2, 3, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The action may escalate tensions in an already volatile region, potentially leading to unintended consequences for civilians or security forces.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 29\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The blockade itself is a contested policy, and while the flotilla challenges it, the action does not resolve the underlying geopolitical conflict.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The action aligns with core humanitarian and human rights principles by advocating for civilian safety and humanitarian access in Gaza. While the blockade is a complex geopolitical issue, the non-violent, civil society-led effort to challenge it and deliver aid represents a positive ethical stance. The potential for escalation is a valid concern but does not outweigh the immediate humanitarian benefits.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Successful delivery of humanitarian aid without incident\", \"Escalation of violence or military response\", \"International diplomatic resolution of the blockade\", \"Greenpeace's continued involvement or withdrawal\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The flotilla successfully delivers aid and sparks international pressure to lift the blockade, leading to long-term humanitarian improvements.\", \"probability\": 0.25, \"score\": 9}, {\"name\": \"B\", \"description\": \"The flotilla faces resistance but achieves limited humanitarian impact, with no major escalation or resolution.\", \"probability\": 0.55, \"score\": 4}, {\"name\": \"C\", \"description\": \"The flotilla is blocked or intercepted, leading to violence or further entrenchment of the blockade.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 3.55, \"final_score\": 4.76, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Non-violent humanitarian action with potential for positive impact but uncertain outcomes.\", \"event_country\": \"Israel\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.06, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"Supporting humanitarian access through peaceful means aligns with human rights and SDGs.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action as supporting humanitarian access, which is a BURN. Analyst B's neutrality underestimates the ethical clarity of the action.\"}",
+      "sentinel_concern": "Polarity error: Blockade challenge may violate international law; humanitarian access unclear",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 7000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T22:41:25.328003+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
