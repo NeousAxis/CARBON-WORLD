@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-07T09:41:15.757973+00:00",
-  "total_events": 296,
-  "total_burned": 294021000,
-  "total_minted": 364793750,
+  "generated_at": "2026-05-07T10:15:21.002320+00:00",
+  "total_events": 298,
+  "total_burned": 301021000,
+  "total_minted": 364943750,
   "pending_reviews": 19,
   "events": [
+    {
+      "id": 298,
+      "event_title": "ASEAN ministers vow to strengthen regional energy and food security",
+      "event_url": "https://asia.nikkei.com/politics/international-relations/asean-ministers-vow-to-strengthen-regional-energy-and-food-security",
+      "event_source": "Nikkei Asia",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.2,
+      "confidence": 8,
+      "justification": "Regional cooperation to enhance energy and food security aligns with SDGs 2, 7, 12, and 13. | The ASEAN ministers' vow to strengthen regional energy and food security represents a proactive, collaborative effort to address critical sustainability challenges. By prioritizing resilience and cooperation, the initiative aligns with multiple SDGs, particularly climate action, responsible consumption, and zero hunger. There are no identified negative ethical aspects in this action.",
+      "tx_hash": "2iCNhf3agUZ9XYPovZPWRkEnTN82578QFepvNT79QQzTG79e8NLagwwtpBXss6r3dHhdUPHTwGZdn8bQFHjsupgP",
+      "created_at": "2026-05-07T10:15:20.404988+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"ASEAN ministers commit to strengthening regional energy and food security through coordinated policy actions\", \"affected_sdgs\": [2, 7, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Regional cooperation to enhance energy resilience and reduce dependency on volatile markets\", \"affected_sdgs\": [7, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Collective action to address food security challenges amid global supply chain disruptions\", \"affected_sdgs\": [2, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 297,
+      "event_title": "In Mediterranean fish markets, undersized fish still sold despite ban",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/07/dans-les-criees-de-mediterranee-des-poissons-trop-petits-toujours-commercialises-malgre-l-interdiction_6686540_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.97,
+      "confidence": 8,
+      "justification": "Illegal undersized fish sales undermine marine conservation and fisheries regulations. | The article reveals a systemic failure where illegal undersized fish sales persist despite regulatory bans, directly undermining marine conservation (SDG 14) and animal rights. While scientific observations serve as a consciousness-raising mechanism, the primary ethical concern is the ongoing violation of fisheries laws and ecological harm.",
+      "tx_hash": "2VwDAnpkFod4oPriFiGqWiwirLCEutxMgaQqh1A1rgti4kAaL2aiB4SoYgrzf5AZBhcfmNUknHtDkE73pr77A1fX",
+      "created_at": "2026-05-07T10:15:20.305103+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scientific observations exposing illegal undersized fish sales in Mediterranean markets highlight enforcement gaps in fisheries regulations\", \"affected_sdgs\": [14], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Continued sale of undersized fish (e.g., hake) in Mediterranean markets despite legal bans undermines marine biodiversity and sustainable fisheries management\", \"affected_sdgs\": [14], \"violated_rights\": [\"Animal Rights Principle 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 296,
       "event_title": "Endangered Butterflies Are Thriving Behind Bars",
@@ -6660,8 +6704,8 @@
       },
       {
         "date": "2026-05-07",
-        "net_minted": 21250000,
-        "net_burned": 31000000
+        "net_minted": 21400000,
+        "net_burned": 38000000
       }
     ],
     "event_of_the_day": {
@@ -6677,9 +6721,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 51,
-        "negative": 116,
+        "positive": 52,
+        "negative": 117,
         "event_ids_positive": [
+          298,
           296,
           292,
           289,
@@ -6733,6 +6778,7 @@
           145
         ],
         "event_ids_negative": [
+          297,
           295,
           294,
           293,
@@ -7034,7 +7080,7 @@
       },
       "Animal": {
         "positive": 17,
-        "negative": 9,
+        "negative": 10,
         "event_ids_positive": [
           296,
           283,
@@ -7055,6 +7101,7 @@
           148
         ],
         "event_ids_negative": [
+          297,
           276,
           266,
           246,
@@ -7068,7 +7115,7 @@
       },
       "PB": {
         "positive": 26,
-        "negative": 31,
+        "negative": 32,
         "event_ids_positive": [
           296,
           284,
@@ -7098,6 +7145,7 @@
           145
         ],
         "event_ids_negative": [
+          297,
           294,
           290,
           288,
@@ -7136,11 +7184,11 @@
       "niche_pct": 75.5,
       "mainstream_pct": 24.5,
       "total_sources_used": 49,
-      "articles_processed": 172
+      "articles_processed": 174
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 172,
+      "total_events": 174,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -7178,6 +7226,15 @@
         "event_ids": [
           234,
           152
+        ]
+      },
+      {
+        "name": "ASEAN",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          298
         ]
       },
       {
@@ -7220,10 +7277,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 25,
-        "burn_count": 12,
+        "count": 26,
+        "burn_count": 13,
         "mint_count": 13,
         "event_ids": [
+          298,
           294,
           288,
           287,
@@ -7324,10 +7382,11 @@
       },
       {
         "name": "Fishing",
-        "count": 4,
+        "count": 5,
         "burn_count": 2,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          297,
           276,
           243,
           184,
@@ -7369,44 +7428,44 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 54,
+      "total_burn": 55,
       "direct_action": {
-        "count": 45,
-        "pct": 83.3
+        "count": 46,
+        "pct": 83.6
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 11.1
+        "pct": 10.9
       },
       "untyped": {
         "count": 3,
-        "pct": 5.6
+        "pct": 5.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 72,
+      "total_burn": 73,
       "direct_action": {
-        "count": 59,
-        "pct": 81.9
+        "count": 60,
+        "pct": 82.2
       },
       "editorial_consciousness": {
         "count": 9,
-        "pct": 12.5
+        "pct": 12.3
       },
       "untyped": {
         "count": 4,
-        "pct": 5.6
+        "pct": 5.5
       }
     },
     "mint_composition_7d": {
-      "total_mint": 118,
+      "total_mint": 119,
       "direct_action": {
-        "count": 105,
-        "pct": 89.0
+        "count": 106,
+        "pct": 89.1
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 9.3
+        "pct": 9.2
       },
       "untyped": {
         "count": 2,
@@ -7414,14 +7473,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 224,
+      "total_mint": 225,
       "direct_action": {
-        "count": 194,
-        "pct": 86.6
+        "count": 195,
+        "pct": 86.7
       },
       "editorial_alarm": {
         "count": 28,
-        "pct": 12.5
+        "pct": 12.4
       },
       "untyped": {
         "count": 2,
