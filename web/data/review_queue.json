@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T14:43:09.241318+00:00",
-  "total_pending": 23,
+  "generated_at": "2026-05-07T15:14:06.186224+00:00",
+  "total_pending": 24,
   "reviews": [
     {
       "id": 27,
@@ -458,6 +458,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T14:43:08.573826+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 50,
+      "event_title": "International Olympic Committee recommends ending Belarus restrictions",
+      "event_url": "https://www.aljazeera.com/sports/2026/5/7/international-olympic-committee-recommends-ending-belarus-restrictions?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"IOC recommendation to lift restrictions on Belarusian athletes allows for increased participation in international sports, promoting SDG 3 (Good Health and Well-being) and SDG 16 (Peace, Justice and Strong Institutions) through global unity and inclusion.\", \"affected_sdgs\": [3, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Lifting restrictions without vetting may enable Belarusian athletes to represent their country without addressing potential ties to state-sponsored doping or human rights violations, undermining SDG 16 (Peace, Justice and Strong Institutions) and UDHR principles.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The IOC's recommendation to end restrictions on Belarusian athletes prioritizes global sports participation and unity but risks enabling unchecked representation without accountability for past violations. The net ethical position is mixed, with inclusion benefits outweighed by potential complicity in systemic issues.\", \"snapshot_score\": -1.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Belarusian athletes compete without vetting and no subsequent doping/human rights investigations\", \"IOC reverses stance due to public pressure or new evidence\", \"UN or WADA imposes independent oversight on Belarusian participation\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"IOC maintains restrictions with independent vetting, ensuring accountability while allowing participation.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Belarusian athletes compete without vetting, leading to minor scandals but no systemic change.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Widespread doping or human rights abuses linked to Belarusian athletes emerge, causing major backlash and sanctions.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.95, \"final_score\": -1.76, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 6, \"justification\": \"Recommendation enables unchecked participation, risking complicity in systemic violations.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"IOC recommendation to end restrictions on Belarusian athletes allows for their participation in international sports, promoting inclusivity and athlete rights under SDG 10 (Reduced Inequalities).\", \"affected_sdgs\": [10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Ending restrictions without vetting may enable Belarusian athletes to represent a regime linked to human rights abuses, undermining UDHR Article 1 (freedom from discrimination) and SDG 16 (Peace & Justice).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The IOC's recommendation prioritizes athlete participation and inclusivity, aligning with SDG 10, but risks legitimizing a regime with documented human rights violations. The net ethical judgment is mixed, with the positive aspect of inclusivity outweighed by the potential normalization of a repressive government.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Belarusian government's response to IOC recommendation\", \"Evidence of human rights abuses by Belarusian athletes or officials\", \"IOC's enforcement of vetting protocols post-recommendation\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"IOC enforces strict vetting and Belarusian athletes compete without legitimizing the regime; human rights abuses decrease.\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"IOC lifts restrictions without vetting; Belarusian athletes compete but regime abuses continue unchecked.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"IOC lifts restrictions and Belarusian athletes are used for propaganda; human rights abuses escalate.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.9, \"final_score\": -1.645, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 6, \"justification\": \"Recommendation risks enabling human rights abuses despite promoting inclusivity.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.7, \"confidence\": 7, \"amount_cbwd\": 1500000, \"justification\": \"Recommendation enables unchecked participation, risking complicity in systemic violations.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "Polarity error: Recommendation to end restrictions is MINT (negative) but should be BURN (positive for inclusivity)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T15:14:05.273686+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
