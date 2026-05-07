@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T09:10:32.406776+00:00",
-  "total_pending": 18,
+  "generated_at": "2026-05-07T09:41:15.786569+00:00",
+  "total_pending": 19,
   "reviews": [
     {
       "id": 27,
@@ -358,6 +358,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T08:41:46.079679+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 45,
+      "event_title": "Driver who hit two girls under drug influence freed and rearrested for robbery",
+      "event_url": "https://www.clarin.com/sociedad/atropello-nenas-efectos-drogas-quedo-libre-volvio-caer-robo_0_9O8ddQJj9h.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Re-arrest of a previously convicted individual for a new crime demonstrates enforcement of criminal justice and potential protection of public safety\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The initial release of a driver under drug influence who had previously hit two girls indicates a failure in immediate public safety enforcement and potential negligence in judicial proceedings\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The event highlights a critical failure in judicial enforcement where a dangerous individual was initially freed despite prior convictions and drug influence, undermining public safety and rights to security. The subsequent re-arrest for a new crime partially mitigates the harm but does not erase the initial negligence.\", \"snapshot_score\": -5.5, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Completion of judicial review of the initial release decision\", \"Implementation of stricter bail conditions for repeat offenders under substance influence\", \"Public policy reforms addressing judicial delays in high-risk cases\"], \"revaluation_checkpoint\": \"2027-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Judicial reforms are enacted, stricter enforcement of substance-related offenses is implemented, and public safety is improved\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Minimal reforms occur, with continued gaps in enforcement leading to recurring incidents\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Systemic failures persist, leading to further public safety crises and erosion of trust in judicial institutions\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.5, \"final_score\": -3.275, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Initial judicial failure to detain a high-risk offender under drug influence outweighs subsequent re-arrest, warranting MINT.\", \"event_country\": \"Argentina\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Re-arrest of a repeat offender for a new crime (robbery) demonstrates continued enforcement of criminal law, reinforcing public safety and justice.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Initial release of a driver under drug influence who hit two girls, despite prior convictions, indicates systemic failure in judicial or law enforcement response to impaired driving and repeat offenders.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The event highlights ongoing risks to vulnerable populations (children) from impaired drivers, with potential long-term physical and psychological harm.\", \"affected_sdgs\": [3, 11], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 6\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"CRC\"]}], \"ethical_synthesis\": \"The re-arrest of the offender for a new crime is a positive enforcement of justice, but the initial release of a drug-impaired driver who harmed children reveals a critical failure in public safety and judicial rigor. The net ethical position is negative due to the systemic risk posed to vulnerable groups and the erosion of trust in institutions.\", \"snapshot_score\": -5.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Successful prosecution of the robbery charge\", \"Implementation of stricter impaired driving laws\", \"Judicial review of the initial release decision\", \"Public outcry leading to policy changes\"], \"revaluation_checkpoint\": \"2027-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strict penalties for impaired driving and repeat offenders lead to safer roads and stronger judicial accountability.\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Moderate reforms are implemented but fail to address systemic gaps, leaving vulnerable populations at risk.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"No meaningful reforms occur; impaired driving and judicial leniency persist, leading to further harm.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.1, \"final_score\": -3.0, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Systemic failure to protect vulnerable groups from impaired drivers outweighs the positive re-arrest.\", \"event_country\": \"Argentina\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.48, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Initial judicial failure to detain a high-risk offender under drug influence outweighs subsequent re-arrest, warranting MINT.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "Polarity error: judicial failure + re-arrest scored MINT (should be BURN: harm to vulnerable groups)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T09:41:15.228732+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
