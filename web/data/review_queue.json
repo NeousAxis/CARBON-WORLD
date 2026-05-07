@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T10:15:21.020268+00:00",
-  "total_pending": 19,
+  "generated_at": "2026-05-07T10:41:35.557958+00:00",
+  "total_pending": 20,
   "reviews": [
     {
       "id": 27,
@@ -378,6 +378,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T09:41:15.228732+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 46,
+      "event_title": "South Africa: Floods Smash Gqeberha As 2,000 Flee to Shelters",
+      "event_url": "https://allafrica.com/stories/202605070109.html",
+      "event_source": "AllAfrica Environment",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Provincial health department shut down a flooded clinic to protect patients and staff from unsafe conditions, demonstrating immediate public health action\", \"affected_sdgs\": [3, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Gift of the Givers mobilized emergency response with food and blankets for 2,000 flood victims in 25 shelters, showing rapid humanitarian aid delivery\", \"affected_sdgs\": [1, 2, 3], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Heavy storm water flooding a clinic and displacing 2,000 people to emergency shelters indicates severe infrastructure and climate vulnerability in Gqeberha\", \"affected_sdgs\": [11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The event reveals a clear negative impact from climate-related flooding causing displacement and infrastructure failure. However, the swift public health response and humanitarian aid mitigate harm and demonstrate institutional responsibility and community solidarity.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Sustained flood prevention infrastructure improvements\", \"Climate adaptation policy implementation in Gqeberha\", \"Long-term displacement resolution for affected populations\", \"Recurrence of similar flooding events within 2 years\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Comprehensive climate adaptation and flood prevention infrastructure is implemented, reducing future flood risks and improving resilience\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial mitigation measures are taken, but recurring flooding continues with moderate improvements in emergency response\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"No significant action is taken, leading to repeated flooding, displacement, and worsening public health crises\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.75, \"final_score\": -2.16, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Climate-driven disaster response highlights systemic vulnerability despite effective emergency aid.\", \"event_country\": \"South Africa\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government health department shut down a flooded clinic to protect patients and staff from unsafe conditions, demonstrating immediate public health response\", \"affected_sdgs\": [3, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Gift of the Givers mobilized emergency relief efforts, including food and blankets, for 2,000 displaced individuals in shelters\", \"affected_sdgs\": [1, 2, 3, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Severe flooding in Gqeberha caused displacement of 2,000 people and forced closure of critical healthcare infrastructure\", \"affected_sdgs\": [1, 3, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The event highlights a severe climate-driven disaster causing significant human suffering and infrastructure damage. While immediate emergency responses (health department actions and NGO relief) mitigate harm, the underlying cause—extreme weather—remains unaddressed. The net ethical position is negative due to the scale of suffering and systemic vulnerability exposed.\", \"snapshot_score\": -6.5, \"trajectory_score\": -3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Implementation of climate adaptation infrastructure in Gqeberha\", \"Government funding allocation for flood defenses\", \"Reduction in displacement numbers in next flood season\", \"International aid commitments for disaster resilience\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Climate adaptation infrastructure and early warning systems are rapidly deployed, reducing flood impacts by 80% within 5 years\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Gradual improvements in disaster response and resilience reduce displacement by 30% over 10 years, but climate impacts persist\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Lack of investment in resilience leads to repeated flooding, displacing 5,000+ people annually and eroding trust in institutions\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.95, \"final_score\": -3.86, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Climate disaster exposes systemic vulnerability; emergency responses mitigate but do not resolve harm.\", \"event_country\": \"South Africa\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.83, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Both analysts agree on MINT; the event reflects systemic vulnerability and harm from climate disaster.\", \"disagreement\": false, \"reason\": \"Analysts A and B both identified the event as a climate-driven disaster with significant harm, and both concluded MINT. The synthesis converges toward the average score.\"}",
+      "sentinel_concern": "Polarity error: climate disaster harm should be BURN, not MINT",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T10:41:34.847509+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
