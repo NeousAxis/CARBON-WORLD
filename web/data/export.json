@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-07T04:40:26.931189+00:00",
-  "total_events": 285,
+  "generated_at": "2026-05-07T05:11:10.388917+00:00",
+  "total_events": 286,
   "total_burned": 277021000,
-  "total_minted": 352993750,
+  "total_minted": 353143750,
   "pending_reviews": 17,
   "events": [
+    {
+      "id": 286,
+      "event_title": "Kyle and Jackie O debacle costs ARN Media $26m in lost revenue",
+      "event_url": "https://www.abc.net.au/news/2026-05-07/kyle-and-jackie-o-arn-annual-general-meeting-investor-backlash/106652588",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.64,
+      "confidence": 8,
+      "justification": "ARN Media's content governance failure caused reputational and financial harm, outweighing any market accountability. | The financial loss incurred by ARN Media due to 'brand safety' concerns highlights a positive market correction toward ethical advertising, but it stems from harmful media content that undermines social responsibility. The net effect is mixed, with the positive aspect being indirect and the negative aspect directly tied to the show's content.",
+      "tx_hash": "4W8uX7LDCzazkeEz2HRjUESuFMKpcn1kMdyfYHAqhUFwKVA9MwiTP8saZfN7AwheAc7RiaDYswGda5S6aXe5wJfx",
+      "created_at": "2026-05-07T05:11:09.751683+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"ARN Media's loss of advertising revenue due to 'brand safety' concerns reflects a market-driven response to harmful content, indirectly supporting ethical advertising standards and consumer protection.\", \"affected_sdgs\": [12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The Kyle and Jackie O Show's content, which led to ARN Media's financial losses, likely perpetuates harmful discourse or behavior, undermining social responsibility and ethical media practices.\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 285,
       "event_title": "US says Hezbollah is ‘trying to derail talks’ with Israel",
@@ -6289,14 +6311,14 @@
         "total_amount": 7225000
       },
       {
+        "country": "Australia",
+        "count": 6,
+        "total_amount": 1750000
+      },
+      {
         "country": "Argentina",
         "count": 6,
         "total_amount": 2015000
-      },
-      {
-        "country": "Australia",
-        "count": 5,
-        "total_amount": 1600000
       },
       {
         "country": "Israel",
@@ -6333,14 +6355,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Oceania",
-        "burn_ratio": 0.375,
-        "events": 8
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.368,
         "events": 19
+      },
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.333,
+        "events": 9
       },
       {
         "region": "Latin America",
@@ -6380,9 +6402,9 @@
         "events": 31
       },
       {
-        "region": "Latin America",
+        "region": "Oceania",
         "mint_ratio": 0.667,
-        "events": 21
+        "events": 9
       }
     ],
     "supply_trend_7d": [
@@ -6418,7 +6440,7 @@
       },
       {
         "date": "2026-05-07",
-        "net_minted": 9450000,
+        "net_minted": 9600000,
         "net_burned": 14000000
       }
     ],
@@ -6436,7 +6458,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 49,
-        "negative": 110,
+        "negative": 111,
         "event_ids_positive": [
           284,
           283,
@@ -6489,6 +6511,7 @@
           123
         ],
         "event_ids_negative": [
+          286,
           285,
           282,
           281,
@@ -6603,7 +6626,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 87,
+        "negative": 88,
         "event_ids_positive": [
           239,
           222,
@@ -6624,6 +6647,7 @@
           123
         ],
         "event_ids_negative": [
+          286,
           285,
           282,
           280,
@@ -6880,11 +6904,11 @@
       "niche_pct": 75.5,
       "mainstream_pct": 24.5,
       "total_sources_used": 49,
-      "articles_processed": 165
+      "articles_processed": 166
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 165,
+      "total_events": 166,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -7006,6 +7030,27 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 13,
+        "burn_count": 4,
+        "mint_count": 9,
+        "event_ids": [
+          286,
+          282,
+          242,
+          240,
+          227,
+          212,
+          193,
+          189,
+          188,
+          168,
+          163,
+          135,
+          133
+        ]
+      },
+      {
         "name": "Construction",
         "count": 12,
         "burn_count": 4,
@@ -7023,26 +7068,6 @@
           135,
           134,
           128
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 12,
-        "burn_count": 4,
-        "mint_count": 8,
-        "event_ids": [
-          282,
-          242,
-          240,
-          227,
-          212,
-          193,
-          189,
-          188,
-          168,
-          163,
-          135,
-          133
         ]
       },
       {
@@ -7121,14 +7146,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 112,
+      "total_mint": 113,
       "direct_action": {
-        "count": 99,
-        "pct": 88.4
+        "count": 100,
+        "pct": 88.5
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 9.8
+        "pct": 9.7
       },
       "untyped": {
         "count": 2,
@@ -7136,14 +7161,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 216,
+      "total_mint": 217,
       "direct_action": {
-        "count": 186,
-        "pct": 86.1
+        "count": 187,
+        "pct": 86.2
       },
       "editorial_alarm": {
         "count": 28,
-        "pct": 13.0
+        "pct": 12.9
       },
       "untyped": {
         "count": 2,
