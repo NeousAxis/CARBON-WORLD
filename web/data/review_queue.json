@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T22:41:25.977685+00:00",
-  "total_pending": 30,
+  "generated_at": "2026-05-07T23:09:45.113994+00:00",
+  "total_pending": 31,
   "reviews": [
     {
       "id": 27,
@@ -598,6 +598,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T22:41:25.328003+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 57,
+      "event_title": "French prosecutors seek charges against Musk and X over Grok content",
+      "event_url": "https://www.france24.com/en/technology/20260507-french-prosecutors-seek-charges-against-musk-and-x-over-grok-content",
+      "event_source": "France 24 EN",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French prosecutors opening an investigation into alleged dissemination of harmful content on X (Grok) demonstrates enforcement of legal accountability for digital platforms\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The alleged actions by Elon Musk and X (Grok) involve potential facilitation of child sexual abuse images, deepfakes, disinformation, and denial of crimes against humanity, which constitute severe ethical violations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 19\", \"CRC Article 34\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The investigation by French prosecutors represents a positive step toward accountability for digital platforms enabling harmful content, aligning with justice and human rights frameworks. However, the underlying allegations against Musk and X are deeply concerning, involving severe violations of human dignity and rights. The net ethical judgment balances the enforcement action against the gravity of the alleged harms.\", \"snapshot_score\": -1.5, \"trajectory_score\": 0.5, \"revaluation_score\": -0.5, \"revaluation_triggers\": [\"Dismissal or reduction of charges due to lack of evidence\", \"Implementation of stricter EU digital regulations\", \"Technological advancements in AI content moderation\", \"Public backlash against prosecutorial overreach\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strong regulatory enforcement leads to systemic improvements in platform accountability and AI safety, reducing future harms\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial enforcement with limited impact, harms persist due to loopholes and technological limitations\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Weak enforcement or legal reversal emboldens platforms to prioritize profit over safety, exacerbating harms\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.7, \"final_score\": -0.875, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Investigation is positive but overshadowed by severe alleged platform harms.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French prosecutors opening an investigation into alleged dissemination of harmful content on X (Grok) demonstrates enforcement of legal accountability for digital platforms\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The investigation targets Elon Musk and X over alleged distribution of child sexual abuse images, deepfakes, disinformation, and complicity in denying crimes against humanity, indicating systemic harm facilitated by the platform\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 26\", \"CRC Article 16\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The investigation represents a necessary legal response to systemic failures in content moderation and accountability on X, aligning with justice and human rights frameworks. However, the underlying harm—systemic dissemination of harmful content—remains severe, reflecting a critical ethical tension between enforcement and prevention.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Dismissal or reduction of charges due to lack of evidence\", \"Implementation of robust content moderation reforms by X\", \"Legislative changes in France weakening platform accountability\", \"International legal precedents influencing the case outcome\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"X implements comprehensive content moderation reforms and cooperates fully, leading to accountability and systemic improvements\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial accountability with fines but no structural reforms, ongoing harm persists\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Charges dismissed due to legal loopholes or political interference, enabling continued systemic harm\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.55, \"final_score\": -4.26, \"decision\": \"MINT\", \"amount_cbwd\": 1000000, \"confidence\": 8, \"justification\": \"Legal accountability for systemic digital harm is necessary but insufficient to address underlying platform failures.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.63, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"Legal investigation into platform's harmful content distribution is a positive step but highlights severe underlying ethical issues.\", \"disagreement\": false, \"reason\": \"Both analysts agree on MINT. The institutional action is an investigation into harmful content distribution, which is a positive step but highlights systemic issues.\"}",
+      "sentinel_concern": "Verdict MINT contradicts positive justification and the investigation is a beneficial action (should be BURN). Polarity error and justification mismatch.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T23:09:44.308123+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
