@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-07T12:11:27.920349+00:00",
-  "total_events": 304,
+  "generated_at": "2026-05-07T12:41:42.307614+00:00",
+  "total_events": 306,
   "total_burned": 307521000,
-  "total_minted": 377943750,
-  "pending_reviews": 20,
+  "total_minted": 394443750,
+  "pending_reviews": 21,
   "events": [
+    {
+      "id": 306,
+      "event_title": "MSF accuses Israel of manufacturing a malnutrition crisis in Gaza",
+      "event_url": "https://www.aljazeera.com/news/2026/5/7/msf-accuses-israel-of-manufacturing-a-malnutrition-crisis-in-gaza?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.12,
+      "confidence": 8,
+      "justification": "Severe humanitarian violations with catastrophic child health impacts justify MINT. | The reporting by MSF constitutes a critical consciousness-raising act that exposes severe violations of human and child rights in Gaza. The alleged actions by Israel, if substantiated, represent a grave humanitarian and ethical breach with catastrophic consequences for civilian populations, particularly children. The net ethical judgment is overwhelmingly negative due to the scale of harm and violations documen",
+      "tx_hash": "5RDjUbJkGoWDpQpFu5bCrptg9kwsEcJxQQCXadomPcwaj61CdsyUxX7h5zqdu8k5qofntN54QhHtNSA1PB9mWcUt",
+      "created_at": "2026-05-07T12:41:41.487382+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"MSF (Doctors Without Borders) publicly documenting and reporting malnutrition cases in Gaza, raising global awareness of a humanitarian crisis\", \"affected_sdgs\": [2, 3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Alleged Israeli actions contributing to a manufactured malnutrition crisis in Gaza, violating humanitarian and child rights\", \"affected_sdgs\": [2, 3, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\", \"UDHR Article 5\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 305,
+      "event_title": "Rwanda: an unpublished document mentions the role played by Agathe Habyarimana before the genocide of the Tutsi",
+      "event_url": "https://www.lemonde.fr/afrique/article/2026/05/07/rwanda-un-document-inedit-evoque-le-role-joue-par-agathe-habyarimana-avant-le-genocide-des-tutsi_6686554_3212.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": 2.59,
+      "confidence": 9,
+      "justification": "Institutional action to investigate genocide complicity protects rights and punishes harm. | The investigation by Le Monde International represents a critical step toward accountability for alleged genocide complicity, aligning with SDG 16 (Peace, Justice, and Strong Institutions) and UDHR principles. However, the underlying allegations, if substantiated, would constitute severe violations of human rights and international law. The net ethical judgment is cautiously positive due to the pursuit o",
+      "tx_hash": "3HNMH8YsJHXvaV7egVfukZmM6RjFHZ8x4eH4CVd2KEzBLBHQMxkmDSWE3F5TfzTjgyq7oGa6o7CpumUS8VrrhR6R",
+      "created_at": "2026-05-07T12:41:41.392574+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Rwanda",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Le Monde International's investigation into potential complicity in genocide by Agathe Habyarimana, revealing previously undisclosed evidence (e.g., a handwritten letter from June 1994) to the public and justice system\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential implication of Agathe Habyarimana in genocide complicity, which, if proven, would violate core human rights and international law\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 6\", \"Genocide Convention\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 304,
       "event_title": "AI agents may be skilled researchers—but not always honest ones",
@@ -6717,9 +6761,9 @@
         "total_amount": 6865000
       },
       {
-        "country": "Iran",
+        "country": "Israel",
         "count": 5,
-        "total_amount": 16325000
+        "total_amount": 32250000
       }
     ],
     "top_countries_burn": [
@@ -6780,12 +6824,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 9
+        "events": 10
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.933,
-        "events": 15
+        "mint_ratio": 0.938,
+        "events": 16
       },
       {
         "region": "North America",
@@ -6836,7 +6880,7 @@
       },
       {
         "date": "2026-05-07",
-        "net_minted": 34400000,
+        "net_minted": 50900000,
         "net_burned": 44500000
       }
     ],
@@ -6854,7 +6898,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 54,
-        "negative": 121,
+        "negative": 123,
         "event_ids_positive": [
           302,
           300,
@@ -6912,6 +6956,8 @@
           145
         ],
         "event_ids_negative": [
+          306,
+          305,
           304,
           303,
           301,
@@ -7037,7 +7083,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 94,
+        "negative": 96,
         "event_ids_positive": [
           300,
           296,
@@ -7060,6 +7106,8 @@
           159
         ],
         "event_ids_negative": [
+          306,
+          305,
           304,
           303,
           299,
@@ -7172,11 +7220,13 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 7,
+        "negative": 9,
         "event_ids_positive": [
           172
         ],
         "event_ids_negative": [
+          306,
+          305,
           265,
           231,
           228,
@@ -7331,11 +7381,11 @@
       "niche_pct": 74.5,
       "mainstream_pct": 25.5,
       "total_sources_used": 51,
-      "articles_processed": 180
+      "articles_processed": 182
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 180,
+      "total_events": 182,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -7607,14 +7657,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 123,
+      "total_mint": 125,
       "direct_action": {
-        "count": 110,
-        "pct": 89.4
+        "count": 112,
+        "pct": 89.6
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 8.9
+        "pct": 8.8
       },
       "untyped": {
         "count": 2,
@@ -7622,14 +7672,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 229,
+      "total_mint": 231,
       "direct_action": {
-        "count": 199,
-        "pct": 86.9
+        "count": 201,
+        "pct": 87.0
       },
       "editorial_alarm": {
         "count": 28,
-        "pct": 12.2
+        "pct": 12.1
       },
       "untyped": {
         "count": 2,

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T12:11:27.949076+00:00",
-  "total_pending": 20,
+  "generated_at": "2026-05-07T12:41:42.337491+00:00",
+  "total_pending": 21,
   "reviews": [
     {
       "id": 27,
@@ -398,6 +398,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T10:41:34.847509+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 47,
+      "event_title": "Brazil police seize devices from bird expert in trafficking probe linked to Vantara zoo",
+      "event_url": "https://news.mongabay.com/2026/05/brazil-police-seize-devices-from-bird-expert-in-trafficking-probe-linked-to-vantara-zoo/",
+      "event_source": "Mongabay",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Brazil Federal Police seized devices from renowned bird expert Tony Silva as part of a wildlife trafficking probe linked to the Vantara zoo, potentially disrupting conservation research and lawful activities\", \"affected_sdgs\": [15], \"violated_rights\": [\"UDHR Article 19 (Freedom of Opinion and Expression)\", \"UDHR Article 27 (Cultural Participation)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The seizure of devices from a respected bird expert under a wildlife trafficking probe raises concerns about potential overreach, disproportionate impact on conservation research, and violation of freedom of expression and cultural participation rights. While wildlife trafficking is a serious crime, the action risks undermining legitimate scientific and conservation efforts without clear evidence of wrongdoing.\", \"snapshot_score\": -5.5, \"trajectory_score\": -3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Clear evidence of illegal activity by Tony Silva is publicly presented\", \"Independent review confirms proportionality of seizure\", \"Broader investigation reveals systemic wildlife trafficking at Vantara zoo\", \"Legal challenge by Silva or conservation groups succeeds\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Investigation reveals no wrongdoing by Silva; devices are returned with apologies; conservation research continues unimpeded\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial evidence emerges linking Silva to minor infractions; devices are returned with restrictions; conservation impact is limited\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Strong evidence confirms Silva's involvement in trafficking; devices are permanently seized; conservation research is severely disrupted\", \"probability\": 0.25, \"score\": -8}], \"prospective_score\": -1.75, \"final_score\": -3.31, \"decision\": \"MINT\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Seizure of devices from conservation expert without clear evidence undermines wildlife protection efforts.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Police seizure of devices from a suspected trafficker in a wildlife trafficking probe demonstrates enforcement against illegal wildlife trade, aligning with SDG 15 (Life on Land).\", \"affected_sdgs\": [15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"The seizure targets a named individual (Tony Silva) without a court ruling or public evidence of guilt, raising concerns about due process and potential reputational harm.\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 11 (presumption of innocence)\", \"UDHR Article 12 (privacy)\"], \"magnitude\": 4, \"frameworks\": [\"UDHR\"]}], \"ethical_synthesis\": \"The police action targets wildlife trafficking, a clear violation of biodiversity and animal rights, which is ethically positive. However, the lack of public evidence and potential due process concerns introduce ethical costs. The net judgment is cautiously positive, prioritizing enforcement against trafficking while acknowledging procedural risks.\", \"snapshot_score\": 5.5, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Public release of evidence proving trafficking\", \"Court ruling on charges\", \"Reversal of seizure due to lack of evidence\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strong evidence emerges linking Silva to large-scale trafficking, leading to conviction and strengthened wildlife protection laws.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Insufficient evidence is found, seizure is reversed, and Silva sues for damages, eroding public trust in enforcement.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Silva is exonerated, but the case exposes systemic flaws in Brazil's wildlife trafficking enforcement, leading to reforms.\", \"probability\": 0.2, \"score\": 2}], \"prospective_score\": 1.1, \"final_score\": 2.9, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Enforcement against wildlife trafficking is positive but undermined by due process concerns.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.98, \"confidence\": 9, \"amount_cbwd\": 700000, \"justification\": \"Institutional action targets wildlife trafficking but lacks proportionality and due process, harming conservation efforts.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action's disproportionate impact on conservation research and rights, while Analyst B's neutrality overlooks the harm to legitimate wildlife protection efforts. The seizure of devices from a conservation expert without clear public evidence constitutes an overreach that weakens protections for biodiversity and research rights.\"}",
+      "sentinel_concern": "Polarity error: seizure of devices from wildlife trafficking suspect scored BURN (should be MINT: anti-trafficking action)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 700000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T12:41:41.579317+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
