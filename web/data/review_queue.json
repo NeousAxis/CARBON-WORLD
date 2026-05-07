@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T20:40:41.586606+00:00",
-  "total_pending": 27,
+  "generated_at": "2026-05-07T21:10:41.256901+00:00",
+  "total_pending": 28,
   "reviews": [
     {
       "id": 27,
@@ -538,6 +538,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T18:40:12.806340+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 54,
+      "event_title": "Australian Gas Exporters Will Be Forced to Set Aside Local Supply for Domestic Users",
+      "event_url": "https://theconversation.com/australian-gas-exporters-will-be-forced-to-set-aside-local-supply-for-domestic-users-282366",
+      "event_source": "The Conversation AU",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Domestic gas supply prioritization may reduce energy insecurity for local consumers.\", \"affected_sdgs\": [7, 8, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Forced gas reservation could distort market mechanisms and reduce export competitiveness.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The policy aims to protect domestic energy access, aligning with SDG 7 and 13, but risks economic inefficiencies and reduced international trade cooperation under SDG 17.\", \"snapshot_score\": 1.5, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of the reservation plan\", \"Market response and price stability\", \"Domestic energy security outcomes\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Policy leads to stable domestic supply and improved energy security without significant export losses.\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Policy achieves moderate domestic benefits but causes export market disruptions and economic inefficiencies.\", \"probability\": 0.55, \"score\": 1}, {\"name\": \"C\", \"description\": \"Policy fails to secure domestic supply and causes significant export losses and economic strain.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 0.85, \"final_score\": 1.6, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Policy introduces market distortions and risks export competitiveness despite domestic benefits.\", \"event_country\": \"Australia\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Australian government mandates gas exporters to reserve supply for domestic users, ensuring energy security and affordability for local communities\", \"affected_sdgs\": [7, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Policy aims to prevent energy shortages and price spikes, supporting equitable access to energy resources\", \"affected_sdgs\": [1, 7, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Policy may reduce export revenues for gas companies, potentially impacting investment in new gas projects and economic growth in export-dependent regions\", \"affected_sdgs\": [8, 9], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Critics argue the policy could discourage future energy investment, leading to long-term supply constraints or higher costs for consumers\", \"affected_sdgs\": [7, 9], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The policy prioritizes domestic energy security and affordability, aligning with SDG 7 (Affordable and Clean Energy) and SDG 12 (Responsible Consumption and Production). While it may reduce export revenues and investment incentives, the net ethical benefit leans positive due to its focus on equitable access and preventing energy poverty. The magnitude of positive impact outweighs the speculative economic concerns.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Implementation delays or legal challenges by gas exporters\", \"Evidence of unintended price increases for domestic consumers\", \"Significant reduction in gas export volumes affecting trade balance\", \"New federal government reversal of the policy\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Policy successfully balances domestic supply and export commitments, leading to stable prices and sustained energy security\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Policy achieves moderate success but faces challenges in enforcement and investment, resulting in minor price fluctuations\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Policy fails to prevent energy shortages or leads to significant economic losses, prompting its reversal or major revisions\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.9, \"final_score\": 5.4, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Balances domestic energy security with economic trade-offs; net positive but moderate.\", \"event_country\": \"Australia\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.11, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional action prioritizes domestic rights over market efficiency, aligning with harm prevention.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (forced domestic supply reservation) as a protective measure for domestic energy access, despite market distortions. Analyst B's neutral stance underweighted the ethical priority of preventing energy insecurity harm.\"}",
+      "sentinel_concern": "Polarity error: forced domestic supply reservation is climate-positive (BURN), but Analyst A's MINT is correct; final verdict direction is flipped.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T21:10:40.498737+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
