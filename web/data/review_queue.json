@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T02:40:01.674384+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-05-07T03:11:37.191965+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 27,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-06T23:41:52.253658+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 41,
+      "event_title": "Yen spikes to 10-week high and sparks intervention chatter",
+      "event_url": "https://www.japantimes.co.jp/business/2026/05/07/markets/yen-spikes-intervention-speculation/",
+      "event_source": "Japan Times",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Japan signals readiness to intervene in forex markets to counter speculative moves, potentially undermining market-driven exchange rate adjustments and economic transparency\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The action prioritizes short-term currency stability over market-driven economic mechanisms, which may distort trade and investment flows. While speculative volatility can harm economic stability, state intervention risks undermining market integrity and long-term predictability, creating potential for unintended consequences in global trade and financial systems.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"failure of intervention to stabilize yen\", \"escalation of trade tensions due to forex manipulation allegations\", \"successful alternative policy measures (e.g., capital controls) reducing need for intervention\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Intervention succeeds in stabilizing yen without significant trade or diplomatic fallout, global forex markets adapt to new norms\", \"probability\": 0.25, \"score\": 2}, {\"name\": \"B\", \"description\": \"Intervention temporarily stabilizes yen but triggers retaliatory measures from trading partners, leading to prolonged trade disputes\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Intervention fails, yen volatility worsens, and Japan faces capital flight or financial instability, prompting deeper structural reforms\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -3.65, \"final_score\": -3.16, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"State forex intervention risks undermining market integrity and global trade stability.\", \"event_country\": \"Japan\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Japan signals readiness to intervene in currency markets to curb excessive volatility, potentially stabilizing economic conditions for businesses and consumers\", \"affected_sdgs\": [8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Speculative currency movements driven by market forces may reflect underlying economic imbalances or policy weaknesses, which could be exacerbated by intervention rather than addressed\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Intervention chatter itself may fuel uncertainty and speculative behavior, creating a feedback loop of market instability\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"Japan's willingness to intervene in currency markets aims to stabilize economic conditions, aligning with SDG 8 (Decent Work) and SDG 10 (Reduced Inequalities). However, the speculative nature of the yen's spike and the potential for intervention to exacerbate underlying issues introduce moderate ethical concerns. The net impact is cautiously positive but not transformative.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Effectiveness of intervention in stabilizing the yen over 6-12 months\", \"Broader economic impact on trade and inflation\", \"Market reaction to future intervention signals\"], \"revaluation_checkpoint\": \"2028-05-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful intervention stabilizes the yen, reduces speculative pressure, and supports economic stability without unintended consequences\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Intervention partially stabilizes the yen but triggers retaliatory measures from trading partners or fuels long-term market distrust\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Intervention fails to curb speculation, leading to prolonged market instability and economic disruption\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.0, \"final_score\": 2.25, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Currency intervention aims to stabilize markets but carries speculative risks.\", \"event_country\": \"Japan\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.5, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"State forex intervention to counter speculative moves punishes destabilizing speculation, aligning with market protection.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (forex intervention) as a protective measure against speculative harm, despite Analyst B's neutral stance. The action aims to stabilize markets, which punishes speculative volatility that could harm economic stability.\"}",
+      "sentinel_concern": "Verdict BURN claims a positive impact, but forex intervention is not clearly beneficial to planet, climate, or human rights and may harm market integrity; also score is negative, mismatching justification.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-07T03:11:36.415714+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
