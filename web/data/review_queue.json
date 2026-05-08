@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T05:09:58.965781+00:00",
-  "total_pending": 33,
+  "generated_at": "2026-05-08T05:40:16.269883+00:00",
+  "total_pending": 34,
   "reviews": [
     {
       "id": 27,
@@ -658,6 +658,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-08T01:40:18.163066+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 60,
+      "event_title": "Why has Putin reduced the May 9 parade? Kremlin cites drone threats amid Ukraine tensions",
+      "event_url": "https://www.france24.com/fr/europe/20260508-russie-defile-victoire-moscou-poutine-ukraine-drones-menaces-parade-9-mai",
+      "event_source": "France 24 FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Reduced military parade minimizes potential for escalation and avoids symbolic provocation during heightened tensions.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Decision may signal strategic vulnerability or eroded confidence in military capabilities.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The reduced military parade avoids direct provocation and lowers the risk of escalation, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the decision may be interpreted as a sign of strategic weakness, potentially undermining national confidence and long-term stability.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Ukraine-Russia conflict de-escalation or renewed escalation by 2028\", \"Putin's public approval ratings and political stability by 2028\", \"Russian military posture and parade format in 2028\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"De-escalation leads to diplomatic resolution and reduced militarization\", \"probability\": 0.2, \"score\": 6}, {\"name\": \"B\", \"description\": \"Conflict remains frozen, with periodic tensions and symbolic gestures\", \"probability\": 0.5, \"score\": 0}, {\"name\": \"C\", \"description\": \"Escalation into full-scale war with global consequences\", \"probability\": 0.3, \"score\": -8}], \"prospective_score\": -1.4, \"final_score\": -1.3, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Reduced parade avoids provocation but signals vulnerability amid ongoing conflict.\", \"event_country\": \"Russia\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Reduction of military parade scale in Moscow to mitigate drone threats, reducing fossil fuel consumption and military emissions during the event\", \"affected_sdgs\": [13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Avoidance of large-scale military mobilization that could escalate tensions and human suffering in the context of ongoing conflict\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Use of drone threats as justification for scaling back commemorations, potentially weaponizing security concerns to suppress public remembrance of historical events\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 27\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Reduction of public participation in a historically significant national event, limiting civic engagement and collective memory\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 27\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Potential propaganda use of security threats to justify authoritarian control and suppress dissent under the guise of safety\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The reduction of the May 9 parade due to drone threats presents a mixed ethical picture. While it reduces military emissions and avoids escalation of conflict, the justification and framing of the decision risk undermining civic freedoms, historical remembrance, and transparency. The action aligns with climate goals but conflicts with human rights and democratic participation, creating a net negative ethical outcome.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Reinstatement of full parade scale without credible drone threat\", \"Public protests or criticism over suppression of historical commemorations\", \"International condemnation of security justification as propaganda\", \"Shift in Kremlin rhetoric to acknowledge public participation rights\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Kremlin reverses course and reinstates full parade scale with enhanced security measures, restoring civic participation and historical remembrance\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Parade remains scaled back, but civic engagement in alternative remembrance events increases, partially offsetting suppression of official commemorations\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Security justification is used to permanently suppress public remembrance, leading to long-term erosion of civic freedoms and historical memory\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.95, \"final_score\": -2.11, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Reduction of public commemoration under security pretext undermines civic freedoms and historical memory.\", \"event_country\": \"Russia\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.71, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Reduced parade avoids provocation but signals vulnerability amid ongoing conflict.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "Verdict MINT (negative) mislabels reduction of a militaristic parade as harmful; action likely reduces provocation and militarism, a positive (BURN) impact, so polarity error.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-08T05:40:15.404323+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
