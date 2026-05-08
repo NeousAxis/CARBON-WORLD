@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-08T15:41:17.009567+00:00",
-  "total_events": 377,
-  "total_burned": 416721000,
-  "total_minted": 557943750,
+  "generated_at": "2026-05-08T16:11:45.830919+00:00",
+  "total_events": 379,
+  "total_burned": 421721000,
+  "total_minted": 559193750,
   "pending_reviews": 38,
   "events": [
+    {
+      "id": 379,
+      "event_title": "Lab-evolved cyanobacteria survive minute-by-minute light swings, offering clues to hardier crops",
+      "event_url": "https://phys.org/news/2026-05-lab-evolved-cyanobacteria-survive-minute.html",
+      "event_source": "Phys.org",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.46,
+      "confidence": 8,
+      "justification": "Scientific breakthrough advancing climate-resilient agriculture with high potential impact. | The research directly supports SDG 2 (Zero Hunger) and SDG 13 (Climate Action) by addressing climate-resilient agriculture, while also aligning with planetary boundaries by mitigating land-system change pressures. No ethical violations are identified; the work is purely beneficial for food security and environmental sustainability.",
+      "tx_hash": "L8rWuzt7pWvsiwqRvDxXgmCwLkQXf9zYwN4BzarQehnZWDpFTwM5EtyuRAy66gJDrwEEHUYz9Y9kq1ny1S2KkR9",
+      "created_at": "2026-05-08T16:11:44.880969+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scientific research advancing cyanobacteria adaptation to rapid light fluctuations to improve crop photosynthesis efficiency under climate stress\", \"affected_sdgs\": [2, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 378,
+      "event_title": "Middle East war back on? UAE responds to fresh attacks, US and Iran trade fire",
+      "event_url": "https://www.france24.com/en/middle-east-war-back-on-uae-responds-to-fresh-attacks-us-and-iran-trade-fire",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 1250000,
+      "final_score": -2.73,
+      "confidence": 7,
+      "justification": "Military escalation in the Middle East increases regional instability and undermines peace. | The article describes a military escalation in the Middle East, with missile and drone attacks and retaliatory threats. This increases regional instability and undermines peace and security, violating core human rights and SDG 16.",
+      "tx_hash": "26L5dT33s7PmMnx6YLqKRFd4twk7TPqEYDHsZ6pHNiBF9Sv4ZXuvUm8UrXZvQBzrGcieVxnq3gj2GdPH57FJE1S6",
+      "created_at": "2026-05-08T16:11:44.786497+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Arab Emirates",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Escalation of military tensions between the UAE, US, and Iran increases regional instability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 377,
       "event_title": "Developing countries must hold the pen to script the fossil fuel transition",
@@ -8442,8 +8486,8 @@
       },
       {
         "date": "2026-05-08",
-        "net_minted": 87750000,
-        "net_burned": 45200000
+        "net_minted": 89000000,
+        "net_burned": 50200000
       }
     ],
     "event_of_the_day": {
@@ -8459,9 +8503,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 76,
-        "negative": 170,
+        "positive": 77,
+        "negative": 171,
         "event_ids_positive": [
+          379,
           377,
           367,
           361,
@@ -8540,6 +8585,7 @@
           145
         ],
         "event_ids_negative": [
+          378,
           376,
           375,
           374,
@@ -8714,7 +8760,7 @@
       },
       "UDHR": {
         "positive": 30,
-        "negative": 133,
+        "negative": 134,
         "event_ids_positive": [
           367,
           361,
@@ -8748,6 +8794,7 @@
           159
         ],
         "event_ids_negative": [
+          378,
           374,
           373,
           372,
@@ -9016,9 +9063,10 @@
         ]
       },
       "PB": {
-        "positive": 37,
+        "positive": 38,
         "negative": 39,
         "event_ids_positive": [
+          379,
           360,
           351,
           350,
@@ -9104,11 +9152,11 @@
       "niche_pct": 67.3,
       "mainstream_pct": 32.7,
       "total_sources_used": 52,
-      "articles_processed": 251
+      "articles_processed": 253
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 251,
+      "total_events": 253,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -9251,10 +9299,11 @@
       },
       {
         "name": "Defense",
-        "count": 25,
+        "count": 26,
         "burn_count": 0,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          378,
           371,
           370,
           359,
@@ -9343,6 +9392,19 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 5,
+        "burn_count": 2,
+        "mint_count": 3,
+        "event_ids": [
+          379,
+          311,
+          293,
+          271,
+          127
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 5,
         "burn_count": 1,
@@ -9380,29 +9442,17 @@
           184,
           144
         ]
-      },
-      {
-        "name": "Transport",
-        "count": 4,
-        "burn_count": 1,
-        "mint_count": 3,
-        "event_ids": [
-          368,
-          192,
-          180,
-          153
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 79,
+      "total_burn": 80,
       "direct_action": {
-        "count": 68,
-        "pct": 86.1
+        "count": 69,
+        "pct": 86.2
       },
       "editorial_consciousness": {
         "count": 8,
-        "pct": 10.1
+        "pct": 10.0
       },
       "untyped": {
         "count": 3,
@@ -9410,14 +9460,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 97,
+      "total_burn": 98,
       "direct_action": {
-        "count": 82,
-        "pct": 84.5
+        "count": 83,
+        "pct": 84.7
       },
       "editorial_consciousness": {
         "count": 11,
-        "pct": 11.3
+        "pct": 11.2
       },
       "untyped": {
         "count": 4,
@@ -9425,14 +9475,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 172,
+      "total_mint": 173,
       "direct_action": {
-        "count": 158,
+        "count": 159,
         "pct": 91.9
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 7.0
+        "pct": 6.9
       },
       "untyped": {
         "count": 2,
@@ -9440,9 +9490,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 280,
+      "total_mint": 281,
       "direct_action": {
-        "count": 248,
+        "count": 249,
         "pct": 88.6
       },
       "editorial_alarm": {
@@ -9455,9 +9505,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 89,
-      "institutional": 162,
-      "citizen_ratio": 0.355,
+      "citizen": 90,
+      "institutional": 163,
+      "citizen_ratio": 0.356,
       "daily": [
         {
           "date": "2026-05-02",
@@ -9491,11 +9541,12 @@
         },
         {
           "date": "2026-05-08",
-          "citizen": 10,
-          "institutional": 28
+          "citizen": 11,
+          "institutional": 29
         }
       ],
       "event_ids_citizen": [
+        379,
         374,
         369,
         367,
@@ -9587,6 +9638,7 @@
         128
       ],
       "event_ids_institutional": [
+        378,
         377,
         376,
         375,
