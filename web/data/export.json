@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-08T11:40:49.353761+00:00",
-  "total_events": 371,
+  "generated_at": "2026-05-08T12:11:22.145597+00:00",
+  "total_events": 373,
   "total_burned": 409721000,
-  "total_minted": 542643750,
+  "total_minted": 552293750,
   "pending_reviews": 35,
   "events": [
+    {
+      "id": 373,
+      "event_title": "Myanmar Junta Bans Menstrual Products, Citing Rebel Support",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/actuelles/20260508-contre-les-rebelles-la-junte-birmane-interdit-les-protections-hygi%C3%A9niques",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.85,
+      "confidence": 9,
+      "justification": "Deliberate weaponization of menstrual health to suppress dissent violates core rights and SDGs. | The junta's ban on menstrual products is a deliberate, gendered attack on women's health and autonomy, violating multiple human rights frameworks. It weaponizes a basic necessity to suppress dissent, with severe immediate and long-term consequences for public health and gender equality. The action undermines SDG 3 (Good Health) and SDG 5 (Gender Equality) while violating core UDHR and CRC rights.",
+      "tx_hash": "246d4UhmW5JdQr3qy5trAQuzcxQfCqTn3hpvu5soE6CNw63P4kXFd9hDGy21P2ZAR1XAyeM2SZAphUs62okJba1X",
+      "created_at": "2026-05-08T12:11:21.183784+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Myanmar",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Myanmar junta bans menstrual products under the pretext of supporting rebels, effectively weaponizing menstrual health against women and girls\", \"affected_sdgs\": [3, 5], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"UDHR Article 26\", \"CRC Article 24\", \"CRC Article 27\", \"UNDRIP Article 22\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 372,
+      "event_title": "Cédric Prizzon case: Portugal refuses to hand over former police officer to France, suspected of double femicide",
+      "event_url": "https://www.lemonde.fr/societe/article/2026/05/08/affaire-cedric-prizzon-le-portugal-refuse-de-remettre-a-la-france-l-ancien-policier-soupconne-d-un-double-feminicide_6687056_3224.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.75,
+      "confidence": 7,
+      "justification": "Both analysts agree on MINT; Portugal's sovereignty act conflicts with international justice. | Portugal's decision to reject the European arrest warrant for Cédric Prizzon is ethically ambiguous. While it upholds national sovereignty and legal independence (SDG 16), it risks undermining international justice and the rights to a fair trial and due process (UDHR Articles 9 and 10). The net ethical impact is mixed, with both positive and negative dimensions.",
+      "tx_hash": "2mawe3uu3fzRX9vXjE857zeh1fKNVkUcL33muNa8a4gGL8i1b8YPYauHh241fCBH7WU1nThgyBZPpBj5ViJADmLt",
+      "created_at": "2026-05-08T12:11:21.085294+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Portugal",
+      "region": "Europe",
+      "administration": "Portugal-AD",
+      "positive_aspects_json": "[{\"description\": \"Portugal's refusal to extradite Cédric Prizzon is based on jurisdictional grounds, asserting national sovereignty and legal independence.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The refusal may delay justice for the victims and hinder international cooperation in serious crimes.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 371,
       "event_title": "In Real Time, War in Ukraine: Kiev Attacks One of the Largest Russian Refineries in Yaroslavl",
@@ -8226,13 +8270,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.357,
-        "events": 28
+        "burn_ratio": 0.345,
+        "events": 29
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.295,
-        "events": 44
+        "burn_ratio": 0.289,
+        "events": 45
       },
       {
         "region": "Latin America",
@@ -8310,7 +8354,7 @@
       },
       {
         "date": "2026-05-08",
-        "net_minted": 72450000,
+        "net_minted": 82100000,
         "net_burned": 38200000
       }
     ],
@@ -8328,7 +8372,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 75,
-        "negative": 165,
+        "negative": 167,
         "event_ids_positive": [
           367,
           361,
@@ -8407,6 +8451,8 @@
           145
         ],
         "event_ids_negative": [
+          373,
+          372,
           371,
           370,
           369,
@@ -8576,7 +8622,7 @@
       },
       "UDHR": {
         "positive": 30,
-        "negative": 130,
+        "negative": 132,
         "event_ids_positive": [
           367,
           361,
@@ -8610,6 +8656,8 @@
           159
         ],
         "event_ids_negative": [
+          373,
+          372,
           371,
           370,
           369,
@@ -8761,11 +8809,12 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           172
         ],
         "event_ids_negative": [
+          373,
           369,
           363,
           349,
@@ -8784,7 +8833,7 @@
       },
       "UNDRIP": {
         "positive": 10,
-        "negative": 26,
+        "negative": 27,
         "event_ids_positive": [
           327,
           323,
@@ -8798,6 +8847,7 @@
           189
         ],
         "event_ids_negative": [
+          373,
           354,
           349,
           340,
@@ -8959,11 +9009,11 @@
       "niche_pct": 67.3,
       "mainstream_pct": 32.7,
       "total_sources_used": 52,
-      "articles_processed": 245
+      "articles_processed": 247
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 245,
+      "total_events": 247,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -9278,14 +9328,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 167,
+      "total_mint": 169,
       "direct_action": {
-        "count": 153,
-        "pct": 91.6
+        "count": 155,
+        "pct": 91.7
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 7.2
+        "pct": 7.1
       },
       "untyped": {
         "count": 2,
@@ -9293,14 +9343,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 275,
+      "total_mint": 277,
       "direct_action": {
-        "count": 243,
+        "count": 245,
         "pct": 88.4
       },
       "editorial_alarm": {
         "count": 30,
-        "pct": 10.9
+        "pct": 10.8
       },
       "untyped": {
         "count": 2,
@@ -9309,8 +9359,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 88,
-      "institutional": 157,
-      "citizen_ratio": 0.359,
+      "institutional": 159,
+      "citizen_ratio": 0.356,
       "daily": [
         {
           "date": "2026-05-02",
@@ -9345,7 +9395,7 @@
         {
           "date": "2026-05-08",
           "citizen": 9,
-          "institutional": 23
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -9439,6 +9489,8 @@
         128
       ],
       "event_ids_institutional": [
+        373,
+        372,
         371,
         370,
         368,
