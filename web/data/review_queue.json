@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T21:11:12.386027+00:00",
-  "total_pending": 42,
+  "generated_at": "2026-05-08T22:10:43.603265+00:00",
+  "total_pending": 43,
   "reviews": [
     {
       "id": 27,
@@ -838,6 +838,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-08T20:11:11.698518+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 69,
+      "event_title": "Costa Rica inaugurates right-wing president Laura Fernandez",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/8/costa-rica-inaugurates-right-wing-president-laura-fernandez?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Inauguration of a democratically elected president in Costa Rica, demonstrating peaceful transfer of power and adherence to constitutional processes\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Election of a right-wing president whose stated policies may undermine progressive environmental, social, or labor protections\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}], \"ethical_synthesis\": \"The inauguration itself is a neutral democratic act, but the ideological orientation of the elected leader introduces significant risks to environmental and social progress. The net ethical position depends on the specific policies enacted, which are not detailed in the article. The democratic process is preserved, but potential regressions in climate action and indigenous rights are concerning.\", \"snapshot_score\": 0.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of anti-environmental policies\", \"Rollback of labor protections\", \"Changes to indigenous land rights\", \"Reversal of Costa Rica's climate neutrality commitments\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"President Fernandez pursues moderate policies, maintaining Costa Rica's environmental leadership while addressing economic inequality\", \"probability\": 0.3, \"score\": 3}, {\"name\": \"B\", \"description\": \"President Fernandez enacts regressive environmental and labor policies, undermining Costa Rica's progress\", \"probability\": 0.5, \"score\": -4}, {\"name\": \"C\", \"description\": \"President Fernandez implements radical deregulation, leading to environmental degradation and social unrest\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.7, \"final_score\": -1.025, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Democratic inauguration neutral, but ideological risks outweigh benefits without policy details.\", \"event_country\": \"Costa Rica\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Inauguration of a democratically elected president following constitutional procedures, upholding democratic norms and institutions in Costa Rica\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Inauguration of a right-wing president whose policies may undermine progressive environmental, social, or labor protections based on ideological stance\", \"affected_sdgs\": [5, 8, 13, 15], \"violated_rights\": [\"UDHR Article 25\", \"ILO Core Standards\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"UNDRIP\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The inauguration itself is a neutral democratic act that upholds institutional stability (SDG 16). However, the ideological orientation of the incoming president raises significant concerns about potential rollbacks in environmental protections (SDG 13, 15), labor rights (SDG 8), and social equity (SDG 5), which could violate multiple human and planetary frameworks.\", \"snapshot_score\": -1.5, \"trajectory_score\": -3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Implementation of anti-environmental policies\", \"Rollback of labor protections\", \"Changes to indigenous rights frameworks\", \"Reversal of Costa Rica's climate commitments\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"President Fernandez pursues moderate policies maintaining Costa Rica's progressive environmental and social standards\", \"probability\": 0.25, \"score\": 2}, {\"name\": \"B\", \"description\": \"President Fernandez enacts significant rollbacks in environmental and labor protections, reversing Costa Rica's leadership in sustainability\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"President Fernandez implements extreme right-wing policies leading to constitutional crises, mass protests, and international condemnation\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.25, \"final_score\": -2.96, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Right-wing presidency inauguration risks reversing Costa Rica's progressive policies.\", \"event_country\": \"Costa Rica\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.9925, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action (democratic inauguration) is neutral, but ideological risks justify negative score.\", \"disagreement\": false, \"reason\": \"Both analysts agreed on MINT direction; averaged scores (-1.025 + -2.96)/2 = -1.9925. Democratic process is neutral, but ideological risks of right-wing governance justify negative ethical weight.\"}",
+      "sentinel_concern": "Justification calls inauguration neutral, but verdict is MINT (negative) despite no concrete negative impact on environment, human rights, or justice; speculative ideological risk violates checklist.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-08T22:10:42.566815+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null

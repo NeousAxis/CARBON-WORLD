@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-08T21:11:12.356546+00:00",
-  "total_events": 397,
-  "total_burned": 438921000,
-  "total_minted": 585343750,
-  "pending_reviews": 42,
+  "generated_at": "2026-05-08T22:10:43.579438+00:00",
+  "total_events": 399,
+  "total_burned": 443921000,
+  "total_minted": 593343750,
+  "pending_reviews": 43,
   "events": [
+    {
+      "id": 399,
+      "event_title": "Asteroid Apophis will skim past Earth in 2029, and a new joint mission plans to watch every change",
+      "event_url": "https://phys.org/news/2026-05-asteroid-apophis-skim-earth-joint.html",
+      "event_source": "Phys.org",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.29,
+      "confidence": 9,
+      "justification": "International collaboration to enhance planetary defense and scientific knowledge. | The collaboration between ESA and JAXA to study asteroid Apophis represents a proactive and coordinated effort to enhance planetary defense and scientific understanding of near-Earth objects. This action aligns with SDG 13 (Climate Action) by addressing existential risks to humanity and supports global safety through international cooperation.",
+      "tx_hash": "cpuHQEDVWdAWtAuSqmRNexDXiMkyoYjPmp957Lg62LbAabMpUcddteK9YaPheaE3bJekQ1rK4gJEd1YTbzB4zkK",
+      "created_at": "2026-05-08T22:10:42.571041+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"ESA and JAXA signed a Memorandum of Cooperation to deepen collaboration in planetary defense, including the Rapid Apophis Mission for Space Safety (Ramses) to study near-Earth asteroid Apophis\", \"affected_sdgs\": [13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Joint international mission (Ramses) to observe and analyze asteroid Apophis during its close approach to Earth in 2029, enhancing planetary defense capabilities\", \"affected_sdgs\": [13], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 398,
+      "event_title": "In Niger, the ruling junta suspends a dozen French media outlets, including RFI, AFP and France 24, accused of 'seriously endangering public order'",
+      "event_url": "https://www.lemonde.fr/afrique/article/2026/05/08/au-niger-la-junte-au-pouvoir-suspend-une-dizaine-de-medias-francais-dont-rfi-l-afp-et-france-24-accuses-de-mettre-gravement-en-peril-l-ordre-public_6687112_3212.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -4.96,
+      "confidence": 9,
+      "justification": "Severe violation of press freedom and UDHR rights with high global impact. | The suspension of French media outlets by Niger's junta constitutes a severe violation of press freedom and the right to information, directly undermining UDHR Article 19 and SDG 16 (Peace, Justice, and Strong Institutions). While the junta claims the outlets endangered public order, no evidence of such harm is provided, and the action disproportionately restricts civic space and transparency.",
+      "tx_hash": "2TnWmTYAykNvi4WQ7GY7sQ1UsY11H3QvymeytJEwLQoETEN5HC4bia2dLBW8LMR1u7x5WeNp4kMiETXZbZixRY4u",
+      "created_at": "2026-05-08T22:10:42.458183+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Niger",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Niger's ruling junta suspends French media outlets (RFI, AFP, France 24) accused of 'seriously endangering public order', restricting press freedom and access to independent information\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 19(2)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 397,
       "event_title": "Sustainable aquaculture’s climate fix is growing right next to the fish.",
@@ -8830,8 +8874,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.857,
-        "events": 21
+        "mint_ratio": 0.864,
+        "events": 22
       },
       {
         "region": "Oceania",
@@ -8882,8 +8926,8 @@
       },
       {
         "date": "2026-05-08",
-        "net_minted": 115150000,
-        "net_burned": 67400000
+        "net_minted": 123150000,
+        "net_burned": 72400000
       }
     ],
     "event_of_the_day": {
@@ -8899,9 +8943,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 82,
-        "negative": 184,
+        "positive": 83,
+        "negative": 185,
         "event_ids_positive": [
+          399,
           397,
           396,
           391,
@@ -8986,6 +9031,7 @@
           145
         ],
         "event_ids_negative": [
+          398,
           395,
           394,
           393,
@@ -9174,7 +9220,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 144,
+        "negative": 145,
         "event_ids_positive": [
           396,
           391,
@@ -9211,6 +9257,7 @@
           159
         ],
         "event_ids_negative": [
+          398,
           395,
           394,
           393,
@@ -9598,11 +9645,11 @@
       "niche_pct": 59.6,
       "mainstream_pct": 40.4,
       "total_sources_used": 52,
-      "articles_processed": 271
+      "articles_processed": 273
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 271,
+      "total_events": 273,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -9899,14 +9946,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 85,
+      "total_burn": 86,
       "direct_action": {
-        "count": 73,
-        "pct": 85.9
+        "count": 74,
+        "pct": 86.0
       },
       "editorial_consciousness": {
         "count": 9,
-        "pct": 10.6
+        "pct": 10.5
       },
       "untyped": {
         "count": 3,
@@ -9914,24 +9961,24 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 103,
+      "total_burn": 104,
       "direct_action": {
-        "count": 87,
-        "pct": 84.5
+        "count": 88,
+        "pct": 84.6
       },
       "editorial_consciousness": {
         "count": 12,
-        "pct": 11.7
+        "pct": 11.5
       },
       "untyped": {
         "count": 4,
-        "pct": 3.9
+        "pct": 3.8
       }
     },
     "mint_composition_7d": {
-      "total_mint": 186,
+      "total_mint": 187,
       "direct_action": {
-        "count": 170,
+        "count": 171,
         "pct": 91.4
       },
       "editorial_alarm": {
@@ -9944,14 +9991,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 294,
+      "total_mint": 295,
       "direct_action": {
-        "count": 260,
-        "pct": 88.4
+        "count": 261,
+        "pct": 88.5
       },
       "editorial_alarm": {
         "count": 32,
-        "pct": 10.9
+        "pct": 10.8
       },
       "untyped": {
         "count": 2,
@@ -9960,8 +10007,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 102,
-      "institutional": 169,
-      "citizen_ratio": 0.376,
+      "institutional": 171,
+      "citizen_ratio": 0.374,
       "daily": [
         {
           "date": "2026-05-02",
@@ -9996,7 +10043,7 @@
         {
           "date": "2026-05-08",
           "citizen": 23,
-          "institutional": 35
+          "institutional": 37
         }
       ],
       "event_ids_citizen": [
@@ -10104,6 +10151,8 @@
         128
       ],
       "event_ids_institutional": [
+        399,
+        398,
         393,
         389,
         388,
