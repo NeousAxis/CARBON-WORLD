@@ -13,6 +13,7 @@ import {
   TopCountriesBurnCard,
   BurnCompositionCard,
   MintCompositionCard,
+  CitizenVsInstitutionalCard,
   TopRegionsDestructiveCard,
   TopRegionsSustainableCard,
   TopInstitutionsCard,
@@ -388,6 +389,12 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
             />
           )}
         </div>
+
+        {/* Citizen vs Institutional — tests Cyril's hypothesis 2026-05-05
+            that citizens act more often than governments per day. */}
+        {aggregates.citizen_vs_institutional_7d && (
+          <CitizenVsInstitutionalCard data={aggregates.citizen_vs_institutional_7d} />
+        )}
 
         {/* Pipeline health row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

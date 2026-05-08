@@ -49,5 +49,8 @@ export type { BurnCompositionCardProps } from "./BurnCompositionCard";
 export { MintCompositionCard } from "./MintCompositionCard";
 export type { MintCompositionCardProps } from "./MintCompositionCard";
 
+export { CitizenVsInstitutionalCard } from "./CitizenVsInstitutionalCard";
+export type { CitizenVsInstitutionalCardProps } from "./CitizenVsInstitutionalCard";
+
 export { TopRegionsDestructiveCard } from "./TopRegionsDestructiveCard";
 export type { TopRegionsDestructiveCardProps } from "./TopRegionsDestructiveCard";

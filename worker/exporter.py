@@ -124,6 +124,7 @@ def _compute_aggregates(conn: sqlite3.Connection, all_events: list[dict]) -> dic
         "burn_composition_all_time": _burn_composition(onchain_events) if has_burn_subtype else _empty_burn_composition(),
         "mint_composition_7d": _mint_composition(events_7d) if has_mint_subtype else _empty_mint_composition(),
         "mint_composition_all_time": _mint_composition(onchain_events) if has_mint_subtype else _empty_mint_composition(),
+        "citizen_vs_institutional_7d": _citizen_vs_institutional_7d(events_7d),
     }
 
 
@@ -370,6 +371,113 @@ def _supply_trend_7d(all_events: list[dict]) -> list[dict]:
             days[date_str]["net_burned"] += amount
 
     return list(days.values())
+
+
+# ---------------------------------------------------------------------------
+# Citizen-vs-institutional classification
+# ---------------------------------------------------------------------------
+
+# Outlets whose entire editorial line is citizen / community / NGO / solutions
+# journalism. Mirrors the EDITORIAL_SOURCES list used by /citizen-actions.
+_CITIZEN_SOURCES: set[str] = {
+    "Mongabay", "Mongabay LATAM", "Mongabay Brasil", "Mongabay India",
+    "Yale Environment 360", "Inside Climate News", "Reasons to be Cheerful",
+    "Reporterre", "Carbon Brief", "China Dialogue", "Diálogo Chino EN",
+    "Grist", "Grist Solutions", "The New Humanitarian",
+    "Solutions Journalism Network", "Positive News", "Good News Network",
+    "Yes Magazine", "Good Good Good", "Atlas of the Future",
+    "Springwise (innovations)", "Anthropocene Magazine", "Cultural Survival",
+    "Greenpeace International", "Sea Shepherd", "Rainforest Trust",
+    "Oceana Blog", "Rewilding Europe", "Waging Nonviolence", "Shareable",
+    "Amazon Watch", "La Via Campesina", "350.org", "BirdLife International",
+    "Earthjustice", "Greenpeace UK", "Greenpeace USA", "Greenpeace Canada",
+    "Food & Water Watch", "Sentient Media", "Animal Equality",
+    "WoMin Africa", "IC Magazine",
+}
+
+import re as _cve_re
+_CITIZEN_PATTERNS: list[_cve_re.Pattern] = [
+    _cve_re.compile(p, _cve_re.IGNORECASE) for p in [
+        r"\bvolunteer", r"\bcommunity-led\b", r"\bgrassroots\b",
+        r"\bcitizen[s]?\b", r"\bindigenous\b", r"\bcooperative[s]?\b",
+        r"\bcoalition\b", r"\bNGO\b", r"\bactivist[s]?\b",
+        r"\bstudents\b", r"\bhigh-school\b", r"\binventor[s]?\b",
+        r"\binvention\b", r"\bbreakthrough\b", r"\binitiative[s]?\b",
+        r"\bprotest\b", r"\brestoration\b", r"\brescue\b",
+        r"\bassembly\b", r"\bassemblée\b", r"\bcollectif\b",
+        r"\bmovement\b", r"\bmobilization\b", r"\bmobilisation\b",
+        r"\bpetition\b", r"\bpétition\b", r"\bcrowdfunding\b",
+        r"\bopen-source\b", r"\bdocumentary\b",
+    ]
+]
+
+
+def _is_citizen_event(event: dict) -> bool:
+    """An event is citizen-led when ANY of these holds:
+       - burn_subtype == 'editorial_consciousness' (editorial amplifying
+         a consciousness shift)
+       - source belongs to the citizen / NGO / solutions-journalism
+         outlets allowlist
+       - title or justification matches one of the citizen patterns
+       Otherwise it is classified as institutional (gov / treaty / law /
+       court / corporate-policy / mainstream press neutrally reporting).
+    """
+    if (event.get("burn_subtype") or "") == "editorial_consciousness":
+        return True
+    src = event.get("event_source") or ""
+    if src in _CITIZEN_SOURCES:
+        return True
+    text = f"{event.get('event_title', '') or ''} {event.get('justification', '') or ''}"
+    return any(p.search(text) for p in _CITIZEN_PATTERNS)
+
+
+def _citizen_vs_institutional_7d(events_7d: list[dict]) -> dict:
+    """Compares the volume of citizen / NGO / community-led actions to
+    institutional / governmental decisions on the 7-day window. Cyril
+    asked 2026-05-05 to test the hypothesis that citizen actions
+    outnumber government actions per day.
+
+    Output:
+      {
+        "citizen": int, "institutional": int,
+        "citizen_ratio": float,
+        "daily": [{"date": "YYYY-MM-DD", "citizen": N, "institutional": N}, ...]
+                 (7 entries oldest → newest, gaps filled with zeros)
+      }
+    """
+    citizen = 0
+    institutional = 0
+    daily_buckets: dict[str, dict] = defaultdict(lambda: {"citizen": 0, "institutional": 0})
+    for e in events_7d:
+        date_str = (e.get("created_at") or "")[:10]
+        if _is_citizen_event(e):
+            citizen += 1
+            daily_buckets[date_str]["citizen"] += 1
+        else:
+            institutional += 1
+            daily_buckets[date_str]["institutional"] += 1
+
+    total = citizen + institutional
+    citizen_ratio = round(citizen / total, 3) if total else 0.0
+
+    # Fill 7 days oldest → newest so the daily series is dense
+    now = datetime.now(tz=timezone.utc)
+    daily: list[dict] = []
+    for i in range(6, -1, -1):
+        date_str = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+        bucket = daily_buckets.get(date_str) or {"citizen": 0, "institutional": 0}
+        daily.append({
+            "date": date_str,
+            "citizen": bucket["citizen"],
+            "institutional": bucket["institutional"],
+        })
+
+    return {
+        "citizen": citizen,
+        "institutional": institutional,
+        "citizen_ratio": citizen_ratio,
+        "daily": daily,
+    }
 
 
 def _event_of_the_day(events_7d: list[dict]) -> dict | None:

@@ -132,6 +132,23 @@ export interface DestructiveRegionStat {
   events: number;
 }
 
+export interface CitizenVsInstitutionalDay {
+  date: string;
+  citizen: number;
+  institutional: number;
+}
+
+export interface CitizenVsInstitutional {
+  /** Total citizen-led events on the 7d window (on-chain only). */
+  citizen: number;
+  /** Total institutional / governmental events on the 7d window. */
+  institutional: number;
+  /** citizen / (citizen + institutional), 0..1. */
+  citizen_ratio: number;
+  /** 7 daily buckets oldest → newest (gaps filled with 0/0). */
+  daily: CitizenVsInstitutionalDay[];
+}
+
 export interface Aggregates {
   top_countries_mint: CountryStat[];
   top_countries_burn: CountryStat[];
@@ -149,6 +166,7 @@ export interface Aggregates {
   mint_composition_7d?: MintComposition;
   mint_composition_all_time?: MintComposition;
   top_regions_destructive?: DestructiveRegionStat[];
+  citizen_vs_institutional_7d?: CitizenVsInstitutional;
 }
 
 export interface ExportData {
