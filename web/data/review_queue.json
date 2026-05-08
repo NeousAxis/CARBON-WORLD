@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T01:11:05.814642+00:00",
-  "total_pending": 32,
+  "generated_at": "2026-05-08T01:40:19.025983+00:00",
+  "total_pending": 33,
   "reviews": [
     {
       "id": 27,
@@ -638,6 +638,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-08T00:40:00.224006+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 59,
+      "event_title": "Was China’s ‘fireworks capital’ rushing its July 4 orders when deadly blast hit?",
+      "event_url": "https://www.scmp.com/news/china/politics/article/3352805/was-chinas-fireworks-capital-rushing-its-july-4-orders-when-deadly-blast-hit?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Deadly blast at fireworks factory in Liuyang, Hunan province, killing 26 and injuring 61 during peak production for overseas orders, including July 4 celebrations\", \"affected_sdgs\": [3, 8, 12], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The event represents a severe violation of fundamental human rights, including the right to life, safe working conditions, and freedom from harm. The industrial accident highlights systemic failures in workplace safety and regulatory oversight, directly undermining SDG 3 (Good Health) and SDG 8 (Decent Work). The magnitude of harm is catastrophic, with irreversible loss of life and long-term physical and psychological injuries.\", \"snapshot_score\": -9.5, \"trajectory_score\": -1.5, \"revaluation_score\": -2, \"revaluation_triggers\": [\"Implementation of stricter safety regulations and enforcement\", \"Compensation and support for victims' families\", \"Long-term health monitoring for injured workers\", \"Changes in fireworks production quotas or bans\"], \"revaluation_checkpoint\": \"2026-07-04\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Government imposes nationwide fireworks production moratorium and enacts sweeping safety reforms with independent oversight\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Limited regulatory changes with superficial reforms; continued unsafe practices persist in the industry\", \"probability\": 0.55, \"score\": -7}, {\"name\": \"C\", \"description\": \"No meaningful action taken; industry resumes unsafe practices with minimal accountability\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -6.1, \"final_score\": -7.04, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Catastrophic industrial accident violating human rights and safety standards.\", \"event_country\": \"China\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Mandatory production ban from June to August in Liuyang, Hunan province, aimed at reducing fireworks-related accidents and pollution during peak production season.\", \"affected_sdgs\": [3, 11, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Deadly blast at a fireworks factory in Liuyang, Hunan province, killing 26 and injuring 61, linked to rushed production for overseas orders, including for the July 4 celebrations in the United States.\", \"affected_sdgs\": [3, 8, 12], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 23\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Rushed production of fireworks for international orders, prioritizing economic gains over worker safety and environmental regulations.\", \"affected_sdgs\": [3, 8, 12, 13], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The mandatory production ban reflects a positive step toward worker safety and environmental protection, aligning with SDG 3 (Good Health) and SDG 12 (Responsible Consumption). However, the deadly blast and rushed production for international orders highlight systemic failures in labor rights and safety enforcement, violating UDHR Article 3 and Article 23. The net ethical position is negative due to the immediate harm caused.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of stricter safety regulations and enforcement\", \"Adoption of alternative production methods reducing reliance on fireworks\", \"International pressure leading to cancellation of overseas orders\", \"Technological advancements in fireworks safety\"], \"revaluation_checkpoint\": \"2026-07-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strict enforcement of safety regulations and adoption of safer production methods lead to long-term reduction in accidents and environmental harm.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial improvements in safety and enforcement, but recurring accidents and environmental damage persist due to economic pressures.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Inadequate enforcement and continued prioritization of economic gains result in further deadly incidents and environmental degradation.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.5, \"final_score\": -3.725, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Deadly blast and rushed production violate worker safety and UDHR rights, outweighing the positive ban.\", \"event_country\": \"China\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -4.73, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"Institutional action (production ban) protects rights despite event harm; systemic failures outweigh.\", \"disagreement\": false, \"reason\": \"Both analysts correctly identified the institutional action (mandatory production ban) as protective of worker safety, aligning with ethical frameworks. The event harm (blast) is secondary to the corrective institutional response.\"}",
+      "sentinel_concern": "Verdict direction flipped: article reports deadly blast (negative impact), but final decision is BURN (positive). Should be MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-08T01:40:18.163066+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
