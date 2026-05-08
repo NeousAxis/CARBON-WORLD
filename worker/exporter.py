@@ -448,14 +448,21 @@ def _citizen_vs_institutional_7d(events_7d: list[dict]) -> dict:
     citizen = 0
     institutional = 0
     daily_buckets: dict[str, dict] = defaultdict(lambda: {"citizen": 0, "institutional": 0})
+    event_ids_citizen: list[int] = []
+    event_ids_institutional: list[int] = []
     for e in events_7d:
         date_str = (e.get("created_at") or "")[:10]
+        ev_id = int(e.get("id") or 0)
         if _is_citizen_event(e):
             citizen += 1
             daily_buckets[date_str]["citizen"] += 1
+            if ev_id:
+                event_ids_citizen.append(ev_id)
         else:
             institutional += 1
             daily_buckets[date_str]["institutional"] += 1
+            if ev_id:
+                event_ids_institutional.append(ev_id)
 
     total = citizen + institutional
     citizen_ratio = round(citizen / total, 3) if total else 0.0
@@ -477,6 +484,10 @@ def _citizen_vs_institutional_7d(events_7d: list[dict]) -> dict:
         "institutional": institutional,
         "citizen_ratio": citizen_ratio,
         "daily": daily,
+        # Canonical event IDs for drill-down — guarantees /events shows
+        # exactly the same set the card counted (no regex divergence).
+        "event_ids_citizen": event_ids_citizen,
+        "event_ids_institutional": event_ids_institutional,
     }
 
 

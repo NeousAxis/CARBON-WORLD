@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { CitizenVsInstitutional } from "@/lib/types";
 import { InfoTooltip } from "../InfoTooltip";
 
@@ -61,11 +62,18 @@ export function CitizenVsInstitutionalCard({
         </div>
       ) : (
         <>
-          {/* Two big counters */}
+          {/* Two big counters — each clickable to drill down to /events */}
           <div className="grid grid-cols-2 gap-3 mb-4">
-            <div
-              className="p-3"
-              style={{ backgroundColor: "#111111", border: "1px solid var(--border)" }}
+            <Link
+              href="/events?bucket=citizen&since=7d"
+              className="block p-3 hover:opacity-90"
+              style={{
+                backgroundColor: "#111111",
+                border: "1px solid var(--border)",
+                cursor: "pointer",
+                textDecoration: "none",
+              }}
+              title={`See the ${data.citizen} citizen-led events`}
             >
               <p
                 className="text-[10px] uppercase tracking-wider font-mono mb-1"
@@ -80,12 +88,19 @@ export function CitizenVsInstitutionalCard({
                 {data.citizen}
               </p>
               <p className="text-xs font-mono mt-1" style={{ color: "var(--muted)" }}>
-                {pctCitizen}%
+                {pctCitizen}% · click to see events
               </p>
-            </div>
-            <div
-              className="p-3"
-              style={{ backgroundColor: "#111111", border: "1px solid var(--border)" }}
+            </Link>
+            <Link
+              href="/events?bucket=institutional&since=7d"
+              className="block p-3 hover:opacity-90"
+              style={{
+                backgroundColor: "#111111",
+                border: "1px solid var(--border)",
+                cursor: "pointer",
+                textDecoration: "none",
+              }}
+              title={`See the ${data.institutional} institutional events`}
             >
               <p
                 className="text-[10px] uppercase tracking-wider font-mono mb-1"
@@ -100,9 +115,9 @@ export function CitizenVsInstitutionalCard({
                 {data.institutional}
               </p>
               <p className="text-xs font-mono mt-1" style={{ color: "var(--muted)" }}>
-                {pctInstitutional}%
+                {pctInstitutional}% · click to see events
               </p>
-            </div>
+            </Link>
           </div>
 
           {/* Verdict line — direct answer to the hypothesis */}

@@ -101,6 +101,8 @@ interface Filters {
   institution?: string;
   framework?: string;
   frameworkPolarity?: string;
+  /** Citizen-vs-institutional bucket — drill-down for the dedicated card. */
+  bucket?: "citizen" | "institutional";
   since: "7d" | "30d" | "all";
 }
 
@@ -174,6 +176,12 @@ function applyFilters(
         ]);
       }
     }
+  } else if (f.bucket && agg?.citizen_vs_institutional_7d) {
+    const cvi = agg.citizen_vs_institutional_7d;
+    const ids = f.bucket === "citizen"
+      ? cvi.event_ids_citizen
+      : cvi.event_ids_institutional;
+    if (ids) canonicalIds = new Set(ids);
   }
 
   return events.filter((e) => {
@@ -213,6 +221,11 @@ function applyFilters(
       } else if (!matchesInstitution(e, f.institution)) return false;
     }
 
+    // Citizen-vs-institutional bucket: canonical IDs always available
+    // when the worker exported the aggregate. No regex fallback (the
+    // classification rules are 100% in Python).
+    if (f.bucket && canonicalIds && !canonicalIds.has(e.id)) return false;
+
     return true;
   });
 }
@@ -233,6 +246,9 @@ export default async function EventsPage({ searchParams }: PageProps) {
   };
 
   const since = (get("since") as Filters["since"]) ?? "7d";
+  const bucketRaw = get("bucket");
+  const bucket: Filters["bucket"] | undefined =
+    bucketRaw === "citizen" || bucketRaw === "institutional" ? bucketRaw : undefined;
   const filters: Filters = {
     country: get("country"),
     region: get("region"),
@@ -242,6 +258,7 @@ export default async function EventsPage({ searchParams }: PageProps) {
     institution: get("institution"),
     framework: get("framework"),
     frameworkPolarity: get("framework_polarity"),
+    bucket,
     since: ["7d", "30d", "all"].includes(since) ? since : "7d",
   };
 
@@ -266,6 +283,7 @@ export default async function EventsPage({ searchParams }: PageProps) {
     activeChips.push({ label: "Sector", value: lab });
   }
   if (filters.institution) activeChips.push({ label: "Institution", value: filters.institution });
+  if (filters.bucket) activeChips.push({ label: "Bucket", value: filters.bucket });
   activeChips.push({ label: "Since", value: filters.since });
 
   // Aggregate of the filtered set (mirrors the "number" the user came from)

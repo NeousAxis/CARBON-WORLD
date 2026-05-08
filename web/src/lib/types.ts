@@ -147,6 +147,10 @@ export interface CitizenVsInstitutional {
   citizen_ratio: number;
   /** 7 daily buckets oldest → newest (gaps filled with 0/0). */
   daily: CitizenVsInstitutionalDay[];
+  /** Canonical IDs the worker classified as citizen-led. */
+  event_ids_citizen?: number[];
+  /** Canonical IDs the worker classified as institutional. */
+  event_ids_institutional?: number[];
 }
 
 export interface Aggregates {
