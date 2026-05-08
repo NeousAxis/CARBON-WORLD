@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-08T11:11:02.677664+00:00",
-  "total_events": 370,
+  "generated_at": "2026-05-08T11:40:49.353761+00:00",
+  "total_events": 371,
   "total_burned": 409721000,
-  "total_minted": 541943750,
+  "total_minted": 542643750,
   "pending_reviews": 35,
   "events": [
+    {
+      "id": 371,
+      "event_title": "In Real Time, War in Ukraine: Kiev Attacks One of the Largest Russian Refineries in Yaroslavl",
+      "event_url": "https://www.lemonde.fr/international/live/2026/05/08/en-direct-guerre-en-ukraine-kiev-attaque-une-des-plus-importantes-raffineries-russes-a-iaroslavl_6684995_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -1.88,
+      "confidence": 7,
+      "justification": "Military action reduces emissions but violates human rights and risks escalation. | The attack on the Russian refinery directly reduces fossil fuel infrastructure, aligning with climate action (SDG 13) and planetary boundaries. However, military violence inherently violates human rights (UDHR Articles 3, 25) and risks escalating humanitarian harm. The net ethical balance hinges on the proportionality and necessity of the action within the broader conflict context.",
+      "tx_hash": "3bLKekEKxaYmDu2wWFyKa3taZ4j9cgzevsmM6QaHTkgYgcYwLn376u8TXKUG33KQRPYAQ8cRM5XYW7GkKvLSWBQu",
+      "created_at": "2026-05-08T11:40:48.421811+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"Ukrainian military strike on a major Russian oil refinery, reducing fossil fuel processing capacity and contributing to climate mitigation efforts\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military action causing potential civilian harm, infrastructure damage, and escalation of conflict with geopolitical consequences\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 370,
       "event_title": "Are China and Russia flexing their maritime muscle near Japan?",
@@ -8209,8 +8231,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.302,
-        "events": 43
+        "burn_ratio": 0.295,
+        "events": 44
       },
       {
         "region": "Latin America",
@@ -8288,7 +8310,7 @@
       },
       {
         "date": "2026-05-08",
-        "net_minted": 71750000,
+        "net_minted": 72450000,
         "net_burned": 38200000
       }
     ],
@@ -8306,7 +8328,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 75,
-        "negative": 164,
+        "negative": 165,
         "event_ids_positive": [
           367,
           361,
@@ -8385,6 +8407,7 @@
           145
         ],
         "event_ids_negative": [
+          371,
           370,
           369,
           368,
@@ -8553,7 +8576,7 @@
       },
       "UDHR": {
         "positive": 30,
-        "negative": 129,
+        "negative": 130,
         "event_ids_positive": [
           367,
           361,
@@ -8587,6 +8610,7 @@
           159
         ],
         "event_ids_negative": [
+          371,
           370,
           369,
           366,
@@ -8849,7 +8873,7 @@
       },
       "PB": {
         "positive": 37,
-        "negative": 37,
+        "negative": 38,
         "event_ids_positive": [
           360,
           351,
@@ -8890,6 +8914,7 @@
           145
         ],
         "event_ids_negative": [
+          371,
           368,
           355,
           344,
@@ -8934,11 +8959,11 @@
       "niche_pct": 67.3,
       "mainstream_pct": 32.7,
       "total_sources_used": 52,
-      "articles_processed": 244
+      "articles_processed": 245
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 244,
+      "total_events": 245,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -9034,10 +9059,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 36,
+        "count": 37,
         "burn_count": 19,
-        "mint_count": 17,
+        "mint_count": 18,
         "event_ids": [
+          371,
           355,
           354,
           351,
@@ -9078,10 +9104,11 @@
       },
       {
         "name": "Defense",
-        "count": 24,
+        "count": 25,
         "burn_count": 0,
-        "mint_count": 24,
+        "mint_count": 25,
         "event_ids": [
+          371,
           370,
           359,
           357,
@@ -9142,10 +9169,11 @@
       },
       {
         "name": "Construction",
-        "count": 19,
+        "count": 20,
         "burn_count": 8,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          371,
           355,
           320,
           317,
@@ -9250,9 +9278,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 166,
+      "total_mint": 167,
       "direct_action": {
-        "count": 152,
+        "count": 153,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -9265,10 +9293,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 274,
+      "total_mint": 275,
       "direct_action": {
-        "count": 242,
-        "pct": 88.3
+        "count": 243,
+        "pct": 88.4
       },
       "editorial_alarm": {
         "count": 30,
@@ -9281,8 +9309,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 88,
-      "institutional": 156,
-      "citizen_ratio": 0.361,
+      "institutional": 157,
+      "citizen_ratio": 0.359,
       "daily": [
         {
           "date": "2026-05-02",
@@ -9317,7 +9345,7 @@
         {
           "date": "2026-05-08",
           "citizen": 9,
-          "institutional": 22
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -9411,6 +9439,7 @@
         128
       ],
       "event_ids_institutional": [
+        371,
         370,
         368,
         366,
