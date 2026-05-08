@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-08T02:10:00.022921+00:00",
-  "total_events": 347,
+  "generated_at": "2026-05-08T02:39:40.102544+00:00",
+  "total_events": 349,
   "total_burned": 379521000,
-  "total_minted": 480493750,
+  "total_minted": 482993750,
   "pending_reviews": 33,
   "events": [
+    {
+      "id": 349,
+      "event_title": "Tennessee approves map dismantling majority-Black district",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/8/tennessee-approves-map-dismantling-majority-black-district?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -4.92,
+      "confidence": 9,
+      "justification": "Dismantling majority-Black district violates voting rights and racial equity, warranting MINT with high magnitude. | The approval of a congressional map that dismantles a majority-Black district directly undermines racial equity, voting rights, and democratic representation. This action violates core human rights principles and reverses progress toward inclusive governance, disproportionately harming Black communities in Tennessee.",
+      "tx_hash": "3V4sG1pcS4reitzyzyAqB6Kzsuh16E3zqV7Low7w7cRkDpoq9UPXp85wcvzHic7FpgRkfoKvQgaeUcd1nKtgQzK5",
+      "created_at": "2026-05-08T02:39:39.169119+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Tennessee legislature approves congressional map dismantling a majority-Black district centered on Memphis, reducing Black voting power and representation\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\", \"UNDRIP Article 18\", \"CRC Article 12\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 348,
+      "event_title": "In Venezuela, authorities acknowledge the death of a political prisoner nine months later",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/08/au-venezuela-les-autorites-reconnaissent-la-mort-d-un-prisonnier-politique-neuf-mois-apres_6686781_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.46,
+      "confidence": 8,
+      "justification": "Delayed acknowledgment of political prisoner death violates UDHR and SDG 16. | The delayed acknowledgment of a political prisoner's death by Venezuelan authorities constitutes a severe violation of human rights, including arbitrary detention and denial of due process. While the exhumation may eventually provide closure, the initial concealment and prolonged suffering of the prisoner and their family represent a grave ethical failure.",
+      "tx_hash": "3qkWk2PmNva8hXUXAE5LQVx1jmmyUHzipkMm6KUyZpRQhEVw7QrsgfW3LL2VbNLWj8wf9oFZMvXLgTmMuC2vAqYi",
+      "created_at": "2026-05-08T02:39:39.070869+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Venezuela",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Authorities in Venezuela acknowledged the death of political prisoner Victor Hugo Quero Navas nine months after his death, indicating a delayed admission of wrongful detention and potential human rights violation\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 10\", \"UDHR Article 19\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 347,
       "event_title": "4,000-year-old texts to reach new audiences in digital project",
@@ -7644,8 +7688,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 35,
-        "total_amount": 77950000
+        "count": 36,
+        "total_amount": 78950000
       },
       {
         "country": "Australia",
@@ -7708,8 +7752,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.286,
-        "events": 28
+        "burn_ratio": 0.276,
+        "events": 29
       },
       {
         "region": "Oceania",
@@ -7718,8 +7762,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.224,
-        "events": 49
+        "burn_ratio": 0.22,
+        "events": 50
       }
     ],
     "top_regions_destructive": [
@@ -7735,8 +7779,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.776,
-        "events": 49
+        "mint_ratio": 0.78,
+        "events": 50
       },
       {
         "region": "Oceania",
@@ -7745,8 +7789,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.714,
-        "events": 28
+        "mint_ratio": 0.724,
+        "events": 29
       }
     ],
     "supply_trend_7d": [
@@ -7782,7 +7826,7 @@
       },
       {
         "date": "2026-05-08",
-        "net_minted": 10300000,
+        "net_minted": 12800000,
         "net_burned": 8000000
       }
     ],
@@ -7800,7 +7844,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 68,
-        "negative": 149,
+        "negative": 151,
         "event_ids_positive": [
           347,
           346,
@@ -7872,6 +7916,8 @@
           145
         ],
         "event_ids_negative": [
+          349,
+          348,
           345,
           344,
           342,
@@ -8025,7 +8071,7 @@
       },
       "UDHR": {
         "positive": 26,
-        "negative": 117,
+        "negative": 119,
         "event_ids_positive": [
           347,
           346,
@@ -8055,6 +8101,8 @@
           159
         ],
         "event_ids_negative": [
+          349,
+          348,
           345,
           341,
           340,
@@ -8192,11 +8240,12 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 11,
+        "negative": 12,
         "event_ids_positive": [
           172
         ],
         "event_ids_negative": [
+          349,
           321,
           312,
           306,
@@ -8212,7 +8261,7 @@
       },
       "UNDRIP": {
         "positive": 10,
-        "negative": 24,
+        "negative": 25,
         "event_ids_positive": [
           327,
           323,
@@ -8226,6 +8275,7 @@
           189
         ],
         "event_ids_negative": [
+          349,
           340,
           335,
           316,
@@ -8378,11 +8428,11 @@
       "niche_pct": 69.2,
       "mainstream_pct": 30.8,
       "total_sources_used": 52,
-      "articles_processed": 222
+      "articles_processed": 224
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 222,
+      "total_events": 224,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -8682,14 +8732,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 151,
+      "total_mint": 153,
       "direct_action": {
-        "count": 136,
-        "pct": 90.1
+        "count": 138,
+        "pct": 90.2
       },
       "editorial_alarm": {
         "count": 13,
-        "pct": 8.6
+        "pct": 8.5
       },
       "untyped": {
         "count": 2,
@@ -8697,14 +8747,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 258,
+      "total_mint": 260,
       "direct_action": {
-        "count": 226,
-        "pct": 87.6
+        "count": 228,
+        "pct": 87.7
       },
       "editorial_alarm": {
         "count": 30,
-        "pct": 11.6
+        "pct": 11.5
       },
       "untyped": {
         "count": 2,
