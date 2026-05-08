@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T00:11:13.520132+00:00",
-  "total_pending": 31,
+  "generated_at": "2026-05-08T00:40:01.046924+00:00",
+  "total_pending": 32,
   "reviews": [
     {
       "id": 27,
@@ -618,6 +618,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-07T23:09:44.308123+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 58,
+      "event_title": "The Committee to Protect Journalists calls on the United States to restart the investigation into the death of Shireen Abu Akleh in the West Bank",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/08/le-comite-pour-la-protection-des-journalistes-appelle-les-etats-unis-a-relancer-l-enquete-sur-la-mort-de-shireen-abu-akleh-en-cisjordanie_6686648_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The Committee to Protect Journalists (CPJ) publicly calls on the United States to restart the investigation into the death of Shireen Abu Akleh, a Palestinian-American journalist killed in the West Bank in 2022. This action pressures U.S. authorities to address impunity for violence against journalists, aligning with press freedom and human rights protections.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"The U.S. government's inaction on restarting the investigation into Shireen Abu Akleh's death perpetuates impunity for violence against journalists, undermining press freedom and human rights protections.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The CPJ's call to restart the investigation is a positive step toward accountability and press freedom, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the U.S. government's continued inaction undermines these efforts, creating a net negative ethical position. The lack of progress in addressing impunity for violence against journalists remains a significant concern.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"U.S. government announces restart of investigation within 12 months\", \"CPJ escalates campaign with international coalition\", \"New evidence emerges requiring U.S. action\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"U.S. government restarts investigation and holds accountable those responsible for Abu Akleh's death, setting a precedent for press freedom.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"U.S. government partially addresses the issue but fails to hold anyone accountable, leaving impunity intact.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"U.S. government continues inaction, and impunity for violence against journalists worsens globally.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.35, \"final_score\": -1.63, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"U.S. inaction on journalist's death perpetuates impunity, outweighing CPJ's advocacy.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The Committee to Protect Journalists (CPJ) publicly calls on the United States to restart the investigation into the death of Shireen Abu Akleh, a named act of advocacy by an identifiable NGO with global reach\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The call highlights the impunity surrounding the killing of a journalist, raising public awareness about press freedom and accountability in conflict zones\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The United States has not yet restarted the investigation, maintaining a status quo of impunity for the killing of Shireen Abu Akleh\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The CPJ's call to restart the investigation is a positive act of advocacy that reinforces press freedom and accountability, aligning with SDG 16. However, the continued inaction by the U.S. government perpetuates impunity, violating fundamental rights and undermining the rule of law. The net ethical position is mixed but leans positive due to the proactive advocacy effort.\", \"snapshot_score\": 3.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"U.S. formally restarts investigation by 2028\", \"U.S. rejects CPJ's call without justification\", \"International pressure leads to third-party inquiry\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"U.S. restarts investigation within 12 months, leading to accountability and improved press freedom standards\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"U.S. partially restarts investigation but fails to deliver accountability, maintaining impunity\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"U.S. continues to block or ignore the call, deepening impunity and eroding press freedom norms\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 2.5, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"CPJ's advocacy is a positive step, but U.S. inaction undermines progress.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.06, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"U.S. inaction on journalist's death perpetuates impunity, violating rights and justice.\", \"disagreement\": true, \"reason\": \"The institutional action in question is the U.S. government's inaction, which enables harm and weakens protections for press freedom.\"}",
+      "sentinel_concern": "Verdict direction flipped: article highlights US inaction (negative) but decision is BURN (positive). Justification condemns inaction, yet decision is positive, causing polarity error.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-08T00:40:00.224006+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
