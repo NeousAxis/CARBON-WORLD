@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-09T00:11:10.754610+00:00",
-  "total_events": 404,
+  "generated_at": "2026-05-09T01:11:39.630053+00:00",
+  "total_events": 405,
   "total_burned": 453921000,
-  "total_minted": 604843750,
+  "total_minted": 606343750,
   "pending_reviews": 43,
   "events": [
+    {
+      "id": 405,
+      "event_title": "Ghana seeks to include xenophobic violence on the agenda of the next AU meeting",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20260508-le-ghana-veut-inscrire-les-violences-x%C3%A9nophobes-%C3%A0-l-agenda-de-la-prochaine-r%C3%A9union-de-l-ua",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.5,
+      "confidence": 9,
+      "justification": "Ghana's institutional action to address systemic xenophobic violence aligns with human rights protection. | Ghana's proactive stance in elevating xenophobic violence to the AU agenda and Nigeria's protective repatriation actions are positive steps toward addressing systemic human rights violations. However, South Africa's defensive posture and the ongoing violence represent a severe failure to uphold fundamental rights, with significant humanitarian and ethical costs. The net ethical position is",
+      "tx_hash": "3nTkeQsUhzysDKW6RnpyyvCU2gvSqDkdS6wFgsk8sFBGBe98t4KYpxCwTDDsVssc1ippiArY7kDXAqS7dbWv5swt",
+      "created_at": "2026-05-09T01:11:38.597188+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"Ghana's government formally requests inclusion of xenophobic violence on the AU agenda, demonstrating regional leadership in addressing human rights violations and promoting peace and justice\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Nigeria's decision to repatriate its nationals from South Africa reflects immediate protective action for its citizens, aligning with UDHR Article 13 (freedom of movement) and SDG 10 (reduced inequalities)\", \"affected_sdgs\": [10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"South Africa's government remains defensive in response to xenophobic violence, failing to address systemic failures that enable such acts, undermining UDHR Article 2 (non-discrimination) and SDG 16 (peace and justice)\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 14\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Xenophobic violence in South Africa targets foreign nationals, violating UDHR Article 14 (right to asylum) and SDG 10 (reduced inequalities), with severe humanitarian consequences\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"UDHR Article 2\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 404,
       "event_title": "New report questions Africa’s oil and gas promise",
@@ -8907,14 +8929,14 @@
         "total_amount": 9600000
       },
       {
-        "country": "France",
-        "count": 10,
-        "total_amount": 7875000
-      },
-      {
         "country": "United Kingdom",
         "count": 9,
         "total_amount": 16650000
+      },
+      {
+        "country": "France",
+        "count": 9,
+        "total_amount": 7750000
       },
       {
         "country": "China",
@@ -8957,8 +8979,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.283,
-        "events": 53
+        "burn_ratio": 0.288,
+        "events": 52
       },
       {
         "region": "Latin America",
@@ -8984,8 +9006,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.826,
-        "events": 23
+        "mint_ratio": 0.833,
+        "events": 24
       },
       {
         "region": "Oceania",
@@ -9036,7 +9058,7 @@
       },
       {
         "date": "2026-05-09",
-        "net_minted": 2000000,
+        "net_minted": 3500000,
         "net_burned": 0
       }
     ],
@@ -9143,6 +9165,7 @@
           145
         ],
         "event_ids_negative": [
+          405,
           404,
           403,
           401,
@@ -9329,13 +9352,12 @@
           131,
           130,
           129,
-          128,
-          127
+          128
         ]
       },
       "UDHR": {
         "positive": 33,
-        "negative": 147,
+        "negative": 148,
         "event_ids_positive": [
           396,
           391,
@@ -9372,6 +9394,7 @@
           159
         ],
         "event_ids_negative": [
+          405,
           403,
           401,
           398,
@@ -9568,7 +9591,7 @@
       },
       "UNDRIP": {
         "positive": 13,
-        "negative": 31,
+        "negative": 32,
         "event_ids_positive": [
           402,
           400,
@@ -9585,6 +9608,7 @@
           189
         ],
         "event_ids_negative": [
+          405,
           394,
           387,
           383,
@@ -10041,19 +10065,6 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 5,
-        "burn_count": 2,
-        "mint_count": 3,
-        "event_ids": [
-          379,
-          311,
-          293,
-          271,
-          127
-        ]
-      },
-      {
         "name": "Mining",
         "count": 5,
         "burn_count": 2,
@@ -10064,6 +10075,18 @@
           240,
           183,
           155
+        ]
+      },
+      {
+        "name": "Pharma",
+        "count": 4,
+        "burn_count": 2,
+        "mint_count": 2,
+        "event_ids": [
+          390,
+          321,
+          261,
+          157
         ]
       }
     ],
@@ -10113,14 +10136,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 298,
+      "total_mint": 299,
       "direct_action": {
-        "count": 263,
+        "count": 264,
         "pct": 88.3
       },
       "editorial_alarm": {
         "count": 33,
-        "pct": 11.1
+        "pct": 11.0
       },
       "untyped": {
         "count": 2,
@@ -10165,7 +10188,7 @@
         {
           "date": "2026-05-09",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -10275,6 +10298,7 @@
         128
       ],
       "event_ids_institutional": [
+        405,
         403,
         401,
         400,
@@ -10447,8 +10471,7 @@
         133,
         132,
         130,
-        129,
-        127
+        129
       ]
     }
   }
