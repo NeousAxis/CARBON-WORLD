@@ -84,8 +84,22 @@ def main() -> int:
         final_decision = None
         final_amount = 0
 
-    # Mark as resolved in review_queue
-    resolve_review(args.review_id, args.verdict, final_amount, args.reason)
+    # Mark as resolved in review_queue. resolve_review() returns False if the
+    # update fails (DB lock, missing row, schema error). Don't continue to
+    # Phase 10 / Solana TX in that case — exit non-zero so the web route
+    # returns 500 and the UI surfaces the actual failure instead of showing
+    # "Done" while the row stays pending.
+    if not resolve_review(args.review_id, args.verdict, final_amount, args.reason):
+        logger.error(
+            "resolve_review() returned False for #%d — likely DB contention. Aborting.",
+            args.review_id,
+        )
+        print(
+            f"ERROR: could not mark review #{args.review_id} as {args.verdict} "
+            "(DB write failed — see logs). Re-try in a moment.",
+            file=sys.stderr,
+        )
+        return 1
 
     # Phase 10 — Human review feedback loop. Persist the embedding + final
     # decision on the review_queue row so future events can match against

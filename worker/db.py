@@ -28,6 +28,14 @@ def _get_conn() -> sqlite3.Connection:
         _conn = sqlite3.connect(str(db_path), check_same_thread=False)
         _conn.row_factory = sqlite3.Row
         _conn.execute("PRAGMA journal_mode=WAL")
+        # busy_timeout: when another writer (e.g. the cron pipeline running in
+        # parallel) holds the lock, wait up to 30 s for it to release instead
+        # of failing instantly with "database is locked". The pipeline's write
+        # phases are short (ms) so 30 s is comfortably above worst-case.
+        # Without this, /api/review/resolve calls during pipeline writes were
+        # silently failing and leaving the row pending — the UI would refetch
+        # and the resolved item kept reappearing.
+        _conn.execute("PRAGMA busy_timeout = 30000")
         _conn.commit()
         _init_schema(_conn)
     return _conn
