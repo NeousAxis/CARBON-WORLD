@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T22:10:39.078894+00:00",
-  "total_pending": 57,
+  "generated_at": "2026-05-09T22:43:11.235503+00:00",
+  "total_pending": 58,
   "reviews": [
     {
       "id": 34,
@@ -1138,6 +1138,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T19:42:44.994327+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 91,
+      "event_title": "How river DNA can track fish, frogs, fungi and human feces all at once",
+      "event_url": "https://phys.org/news/2026-05-river-dna-track-fish-frogs.html",
+      "event_source": "Phys.org",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific breakthrough enabling simultaneous environmental DNA (eDNA) tracking of multiple species and pathogens in river ecosystems, providing critical data for biodiversity monitoring and disease surveillance.\", \"affected_sdgs\": [14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"Discovery of the amphibian-killing fungus B. dendrobatidis in Ireland, posing a severe threat to native frog populations and highlighting an emerging ecological crisis.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [\"Animal Rights Article 1\", \"Animal Rights Article 8\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The eDNA method represents a significant advancement in ecological monitoring, aligning with SDG 14 and 15 by enabling proactive conservation efforts. However, the detection of B. dendrobatidis introduces a major ecological threat, undermining biodiversity and violating animal rights. The net ethical position is mixed but leans slightly negative due to the immediate harm posed by the pathogen.\", \"snapshot_score\": -1.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Confirmation of B. dendrobatidis spread beyond initial detection site\", \"Implementation of effective mitigation measures by Irish authorities\", \"Development of rapid-response protocols for amphibian disease outbreaks\", \"Public awareness campaigns reducing human-mediated pathogen transmission\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Rapid containment and eradication of B. dendrobatidis in Ireland, coupled with global adoption of eDNA monitoring for early disease detection.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Partial containment with localized outbreaks, leading to long-term decline in frog populations but no systemic collapse.\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Uncontrolled spread of B. dendrobatidis across Europe, causing catastrophic declines in amphibian populations and ecosystem destabilization.\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.75, \"final_score\": -2.16, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Scientific advancement countered by immediate ecological threat requiring urgent action.\", \"event_country\": \"Ireland\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific breakthrough enabling simultaneous environmental DNA (eDNA) tracking of multiple species and pathogens in river ecosystems, providing critical data for biodiversity monitoring and disease surveillance.\", \"affected_sdgs\": [14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"Discovery of the amphibian-killing fungus B. dendrobatidis in Ireland, posing a severe threat to native frog populations and highlighting an emerging ecological crisis.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [\"Animal Rights Article 1\", \"Animal Rights Article 8\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The eDNA method represents a significant advancement in ecological monitoring, aligning with SDG 14 and 15 by enabling proactive conservation efforts. However, the detection of B. dendrobatidis introduces a major ecological threat, undermining biodiversity and violating animal rights. The net ethical position is mixed but leans slightly negative due to the immediate harm posed by the pathogen.\", \"snapshot_score\": -1.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Confirmation of B. dendrobatidis spread beyond initial detection site\", \"Implementation of effective mitigation measures by Irish authorities\", \"Development of rapid-response protocols for amphibian disease outbreaks\", \"Public awareness campaigns reducing human-mediated pathogen transmission\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Rapid containment and eradication of B. dendrobatidis in Ireland, coupled with global adoption of eDNA monitoring for early disease detection.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Partial containment with localized outbreaks, leading to long-term decline in frog populations but no systemic collapse.\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Uncontrolled spread of B. dendrobatidis across Europe, causing catastrophic declines in amphibian populations and ecosystem destabilization.\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.75, \"final_score\": -2.16, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Scientific advancement countered by immediate ecological threat requiring urgent action.\", \"event_country\": \"Ireland\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.16, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Scientific advancement countered by immediate ecological threat requiring urgent action.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict polarity error: detection of harmful fungus is a positive conservation tool, should be BURN, not MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T22:43:10.160372+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
