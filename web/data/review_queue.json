@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T15:40:04.104665+00:00",
-  "total_pending": 49,
+  "generated_at": "2026-05-09T16:10:05.776363+00:00",
+  "total_pending": 50,
   "reviews": [
     {
       "id": 34,
@@ -978,6 +978,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T15:11:34.213473+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 83,
+      "event_title": "Contact tracing begins after Hantavirus-hit cruise passengers disembark in St. Helena",
+      "event_url": "https://www.france24.com/en/video/20260509-contact-tracing-for-hantavirus",
+      "event_source": "France 24 EN",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Health authorities are conducting contact tracing to prevent further spread of a potential hantavirus outbreak.\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Three deaths have been reported aboard a cruise ship, indicating a severe public health incident.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The contact tracing efforts represent a positive public health response to prevent further spread of the virus, aligning with SDG 3 and UDHR Article 3. However, the reported deaths aboard the cruise ship indicate a significant negative impact on health and life, violating UDHR Article 3 and affecting SDG 3.\", \"snapshot_score\": -2, \"trajectory_score\": -1, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Release of official test results confirming or ruling out hantavirus cases\", \"Implementation of containment measures in affected regions\", \"Public health response effectiveness in preventing further spread\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Effective containment and no further cases reported, leading to improved public health outcomes.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate spread occurs but is managed with additional public health interventions.\", \"probability\": 0.55, \"score\": 0}, {\"name\": \"C\", \"description\": \"Widespread outbreak with significant public health and economic consequences.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.4, \"final_score\": -1.8, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The event involves a public health crisis with potential for further spread.\", \"event_country\": \"Spain\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Health authorities initiated international contact tracing to prevent further spread of hantavirus after cruise ship deaths\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Three deaths aboard a cruise ship linked to suspected hantavirus exposure\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential public health risk from unconfirmed cases in Alicante and Barcelona\", \"affected_sdgs\": [3], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The proactive contact tracing by health authorities is a positive public health action that aligns with SDG 3 (Good Health) and UDHR Article 3 (right to life and security). However, the event is triggered by a serious health crisis involving multiple deaths and potential further spread, which constitutes a significant negative ethical impact.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Resolution of hantavirus cases in all monitored locations\", \"Effectiveness of contact tracing in preventing secondary infections\", \"Public health response adequacy and transparency\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Contact tracing successfully prevents further outbreaks, and hantavirus cases are contained within 6 months\", \"probability\": 0.35, \"score\": 5}, {\"name\": \"B\", \"description\": \"Moderate spread occurs but is controlled through public health measures within 12 months\", \"probability\": 0.5, \"score\": 0}, {\"name\": \"C\", \"description\": \"Widespread outbreak occurs due to delayed response or asymptomatic spread, leading to significant morbidity and mortality\", \"probability\": 0.15, \"score\": -8}], \"prospective_score\": 0.45, \"final_score\": -0.86, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 8, \"justification\": \"Contact tracing mitigates harm but is a response to a severe health crisis.\", \"event_country\": \"Saint Helena\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.74, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional action (contact tracing) protects public health and rights, outweighing crisis severity.\", \"disagreement\": true, \"reason\": \"Analysts agreed on negative impact but disagreed on institutional action. Contact tracing is a protective measure (BURN) despite the crisis context. Analyst A's MINT was incorrect; Analyst B's NEUTRAL was closer but underweighted the action's ethical value.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T16:10:04.627951+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
