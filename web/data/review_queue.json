@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T17:41:03.405864+00:00",
-  "total_pending": 54,
+  "generated_at": "2026-05-09T18:10:43.352071+00:00",
+  "total_pending": 55,
   "reviews": [
     {
       "id": 34,
@@ -1078,6 +1078,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T17:41:02.050694+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 88,
+      "event_title": "French journalist Christophe Gleizes detained in Algeria will receive his first consular visit 'in the coming days'",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/09/christophe-gleizes-journaliste-francais-detenu-en-algerie-recevra-une-premiere-visite-consulaire-dans-les-prochains-jours_6687483_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French consular visit to detained journalist Christophe Gleizes in Algeria signals diplomatic engagement and potential protection of press freedom and consular rights\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Detention of French journalist Christophe Gleizes in Algeria raises concerns about press freedom, arbitrary detention, and potential violations of consular access rights\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 10\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The consular visit represents a positive diplomatic step toward addressing the detention, aligning with human rights and SDG 16. However, the underlying detention itself constitutes a significant negative ethical concern, violating press freedom and consular rights. The net judgment balances these opposing forces.\", \"snapshot_score\": -3.0, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Resolution of Gleizes' detention status\", \"Algerian government's response to consular visit\", \"International media or NGO pressure escalation\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Gleizes is released promptly with no further restrictions, and Algeria improves press freedom standards\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Gleizes is released but faces ongoing surveillance or restrictions, with no systemic press freedom improvements\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Gleizes remains detained or faces additional restrictions, with Algeria tightening press controls\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.15, \"final_score\": -1.51, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Detention of journalist outweighs consular visit in ethical impact.\", \"event_country\": \"Algeria\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French government secures consular access for detained journalist Christophe Gleizes, ensuring diplomatic intervention and potential protection of rights under international law\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Algerian authorities detain French journalist Christophe Gleizes, raising concerns about freedom of expression and due process\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 9\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The detention of Christophe Gleizes by Algerian authorities constitutes a serious violation of freedom of expression and due process, undermining core human rights. However, the French government's proactive consular intervention to secure access and potential protection represents a corrective diplomatic action that aligns with international law and SDG 16 (Peace, Justice, and Strong Institutions). The net ethical position is cautiously positive due to the diplomatic response outweighing the initial harm.\", \"snapshot_score\": -3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Release of Gleizes within 30 days\", \"Algerian government's formal justification for detention\", \"International media or NGO pressure escalates\", \"French government's sustained diplomatic efforts\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Gleizes is released within weeks, diplomatic relations improve, and Algeria commits to media freedom reforms\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Gleizes remains detained but consular access continues, with no further escalation or resolution\", \"probability\": 0.5, \"score\": -1}, {\"name\": \"C\", \"description\": \"Gleizes' detention is prolonged, diplomatic tensions escalate, and media freedom in Algeria deteriorates further\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.4, \"final_score\": -0.54, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Detention violates rights but consular access mitigates harm; net neutral impact.\", \"event_country\": \"Algeria\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.025, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"The detention of a journalist violates press freedom and human rights, while consular access is a mitigating but insufficient corrective.\", \"disagreement\": true, \"reason\": \"The institutional action is the detention of a journalist, which enables harm and weakens protections for press freedom. Consular access is a mitigating factor but does not outweigh the ethical violation.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: detention of journalist harms press freedom (negative), but verdict BURN marks it positive; justification also condemns action, contradicting decision.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T18:10:42.251522+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
