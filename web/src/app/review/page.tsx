@@ -53,6 +53,7 @@ function ReviewCard({
   const [reason, setReason] = useState("");
   const [busy, setBusy] = useState<ResolveVerdict | null>(null);
   const [result, setResult] = useState<ResolveResult | null>(null);
+  const [pendingReject, setPendingReject] = useState(false);
 
   // Defensive parse: the DB columns are nullable, so item.analyst_a_verdict can
   // be null. JSON.parse(null) does NOT throw — it coerces to the string "null"
@@ -85,16 +86,17 @@ function ReviewCard({
 
   const resolved = result?.kind === "ok";
 
-  async function resolve(verdict: ResolveVerdict) {
+  function requestResolve(verdict: ResolveVerdict) {
+    // REJECT is destructive (no on-chain offset, just drops the queued event)
+    // — surface an in-app confirmation step. APPROVE and REVERSE go directly.
     if (verdict === "reject") {
-      if (
-        !window.confirm(
-          `Reject event #${item.id} definitively? No on-chain transaction will be executed.`
-        )
-      ) {
-        return;
-      }
+      setPendingReject(true);
+      return;
     }
+    void executeResolve(verdict);
+  }
+
+  async function executeResolve(verdict: ResolveVerdict) {
     setBusy(verdict);
     setResult(null);
     try {
@@ -250,7 +252,7 @@ function ReviewCard({
         {/* Action buttons */}
         <div className="flex gap-2">
           <button
-            onClick={() => resolve("approve")}
+            onClick={() => requestResolve("approve")}
             disabled={resolved || busy !== null}
             className="px-3 py-2 text-xs font-bold"
             style={{
@@ -265,7 +267,7 @@ function ReviewCard({
           </button>
 
           <button
-            onClick={() => resolve("reverse")}
+            onClick={() => requestResolve("reverse")}
             disabled={resolved || busy !== null}
             className="px-3 py-2 text-xs font-bold"
             style={{
@@ -280,7 +282,7 @@ function ReviewCard({
           </button>
 
           <button
-            onClick={() => resolve("reject")}
+            onClick={() => requestResolve("reject")}
             disabled={resolved || busy !== null}
             className="px-3 py-2 text-xs font-bold"
             style={{
@@ -351,6 +353,133 @@ function ReviewCard({
           </details>
         </div>
       )}
+
+      {pendingReject && (
+        <ConfirmModal
+          title={`Reject event #${item.id}?`}
+          body="The event will be dropped from the review queue. No on-chain transaction will be executed and no offset is applied — this only removes a queued, unconfirmed verdict."
+          confirmLabel="REJECT"
+          confirmTone="danger"
+          onCancel={() => setPendingReject(false)}
+          onConfirm={() => {
+            setPendingReject(false);
+            void executeResolve("reject");
+          }}
+        />
+      )}
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// ConfirmModal — in-app, Lunaris-Dark, replaces window.confirm()
+// ---------------------------------------------------------------------------
+
+function ConfirmModal({
+  title,
+  body,
+  confirmLabel,
+  confirmTone,
+  onConfirm,
+  onCancel,
+}: {
+  title: string;
+  body: string;
+  confirmLabel: string;
+  confirmTone: "danger" | "primary";
+  onConfirm: () => void;
+  onCancel: () => void;
+}) {
+  // ESC closes; backdrop click closes. Body scroll-lock while open.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onCancel();
+    };
+    document.addEventListener("keydown", onKey);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [onCancel]);
+
+  const confirmBg = confirmTone === "danger" ? "#FF5C33" : "#FF8400";
+  const confirmFg = confirmTone === "danger" ? "#FFFFFF" : "#111111";
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="confirm-modal-title"
+      onClick={(e) => {
+        // Backdrop click cancels (only when the click hits the backdrop itself)
+        if (e.target === e.currentTarget) onCancel();
+      }}
+      style={{
+        position: "fixed",
+        inset: 0,
+        backgroundColor: "rgba(0,0,0,0.7)",
+        backdropFilter: "blur(2px)",
+        zIndex: 100,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "1rem",
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "#1A1A1A",
+          border: "1px solid #2E2E2E",
+          borderLeft: `3px solid ${confirmBg}`,
+          maxWidth: 480,
+          width: "100%",
+          padding: "1.25rem",
+          fontFamily: "'JetBrains Mono', monospace",
+        }}
+      >
+        <h2
+          id="confirm-modal-title"
+          className="text-base font-bold mb-3"
+          style={{ color: "#FFFFFF" }}
+        >
+          {title}
+        </h2>
+        <p className="text-sm mb-5" style={{ color: "#B8B9B6", lineHeight: 1.5 }}>
+          {body}
+        </p>
+        <div className="flex justify-end gap-2">
+          <button
+            type="button"
+            onClick={onCancel}
+            autoFocus
+            className="px-4 py-2 text-xs font-bold"
+            style={{
+              backgroundColor: "transparent",
+              color: "#B8B9B6",
+              border: "1px solid #2E2E2E",
+              fontFamily: "'JetBrains Mono', monospace",
+              cursor: "pointer",
+            }}
+          >
+            CANCEL
+          </button>
+          <button
+            type="button"
+            onClick={onConfirm}
+            className="px-4 py-2 text-xs font-bold"
+            style={{
+              backgroundColor: confirmBg,
+              color: confirmFg,
+              fontFamily: "'JetBrains Mono', monospace",
+              cursor: "pointer",
+            }}
+          >
+            {confirmLabel}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
