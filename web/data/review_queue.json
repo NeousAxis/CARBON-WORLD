@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T12:46:49.205920+00:00",
-  "total_pending": 49,
+  "generated_at": "2026-05-09T13:11:41.392556+00:00",
+  "total_pending": 50,
   "reviews": [
     {
       "id": 27,
@@ -978,6 +978,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T12:12:03.474625+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 76,
+      "event_title": "Iran says it will play at 2026 World Cup if hosts address ‘concerns’",
+      "event_url": "https://www.aljazeera.com/sports/2026/5/9/iran-says-it-will-play-at-2026-world-cup-if-hosts-address-concerns?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Iran commits to participating in the 2026 FIFA World Cup if host concerns are addressed, demonstrating diplomatic engagement and potential normalization of international sports participation.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The article implies ongoing geopolitical tensions (US/Israel war on Iran) that could undermine the positive aspects of Iran's participation, raising concerns about safety, fairness, and political neutrality in the event.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Iran's conditional commitment to the 2026 World Cup is a positive step toward international sports diplomacy and could foster dialogue. However, the underlying geopolitical tensions and implied threats to safety and neutrality significantly undermine this action, creating a net negative ethical position.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Resolution of US/Israel-Iran conflict\", \"FIFA's formal response to Iran's conditions\", \"Security guarantees for participating teams\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Geopolitical tensions de-escalate, FIFA addresses Iran's concerns, and Iran participates peacefully, setting a precedent for future sports diplomacy.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Tensions persist, Iran's participation is marred by protests or boycotts, and the event faces significant disruptions.\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Iran withdraws last-minute due to escalating conflict, leading to a major diplomatic and sporting crisis.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.95, \"final_score\": -2.76, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Conditional participation under geopolitical duress undermines ethical integrity.\", \"event_country\": \"Iran\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Iran commits to participating in the 2026 FIFA World Cup if host concerns are addressed, demonstrating diplomatic engagement and potential normalization of international sports participation.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The underlying context involves ongoing geopolitical tensions and military actions involving the US and Israel against Iran, which undermine peace and security.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(4)\", \"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Iran's conditional participation in the 2026 World Cup represents a positive step toward international sports diplomacy and potential de-escalation of tensions. However, the broader geopolitical context of war and aggression between the US, Israel, and Iran significantly undermines global peace and security, overshadowing the positive aspect.\", \"snapshot_score\": 2.0, \"trajectory_score\": -3.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Resolution of US-Israel-Iran hostilities\", \"FIFA's enforcement of neutrality in host selection\", \"Iran's unconditional participation in future tournaments\"], \"revaluation_checkpoint\": \"2028-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Geopolitical tensions de-escalate, Iran participates unconditionally, and FIFA implements strong neutrality policies.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Tensions persist, Iran participates conditionally, and FIFA's neutrality remains weak.\", \"probability\": 0.55, \"score\": 1}, {\"name\": \"C\", \"description\": \"War escalates, Iran withdraws, and FIFA faces severe reputational damage.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.15, \"final_score\": 0.54, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Diplomatic sports engagement is positive but overshadowed by ongoing war and aggression.\", \"event_country\": \"Iran\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.13, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action enables conditional participation despite geopolitical harm, weakening ethical protections.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (conditional participation) as enabling harm by prioritizing sports diplomacy over ethical integrity amid ongoing war. Analyst B's neutrality overlooks the punitive nature of the conditional framework.\"}",
+      "sentinel_concern": "Polarity error: conditional sports participation is not inherently harmful; war context is the harm, not the action.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T13:11:40.299156+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
