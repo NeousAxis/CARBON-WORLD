@@ -85,6 +85,23 @@ Chaque entrée suit le format : **Symptôme → Cause → Fix / à surveiller �
 - **Validation** : le prochain run du pipeline avec un article non-anglais doit produire tous les champs texte en anglais. Vérifier sur un event FR du prochain batch VPS.
 - **Frontend** : `web/src/app/event/[id]/page.tsx` cache désormais la section "AI justification" sur les events reversés — le bandeau orange suffit et évite d'exposer le texte buggy historique
 
+### 2.5 Ambiguous emerging crisis → escalate, not patch ✅ FIXÉ (2026-05-09)
+
+- **Identifié** : cluster Hondius / hantavirus (8 events #234, #241, #338, #352, #385, #391, #418, #427) sur la même histoire (épidémie hantavirus à bord du MV Hondius, Mai 2026), décisions LLM **opposées** : 4 BURN (sur l'angle "réponse institutionnelle / OMS / rapatriement") + 4 MINT (sur l'angle "crise sanitaire / pollution croisière"). Article exemple : *"Live, hantavirus: Five French citizens on board the 'Hondius' will be repatriated 'within twenty-four to forty-eight hours' after the ship arrives in the Canary Islands"* → BURN 700K, score 6.41.
+- **Symptôme** : sur un événement potentiellement majeur (début de crise sanitaire mondiale type COVID), le pipeline produit verdicts contradictoires selon l'angle de la dépêche (réponse autorités vs crise sous-jacente). Sentinel LLM laisse passer car polarité localement cohérente. Net : rien que sur 8 dépêches, **±5M CBWD** émis dans des directions opposées sur les mêmes faits — bruit, pas signal éthique.
+- **Cause** : Sentinel LLM ne voit qu'un event à la fois et n'a pas de notion d'ambiguïté structurelle (verdicts thin, scores fragiles, listes pos/neg manquantes — toutes choses détectables sans LLM).
+- **Anti-pattern écarté** : créer une règle classifier "crisis logistics → INVALID" → trop étroite, écraserait de vrais signaux (lockdowns inadéquats, rapatriements racistes, évacuations climatiques massives). **Une crise émergente est précisément le type d'event où il faut un humain dans la boucle, pas une règle qui force INVALID.** (Cyril, 2026-05-09 — règle générale : "ne pas créer une règle qui nous enferme dans le problème inverse".)
+- **Fix** : couche déterministe ajoutée au Sentinel (`worker/agents/sentinel.py::_structural_flags`). Cinq triggers (any-of) qui forcent `_needs_review = True` indépendamment du verdict LLM Sentinel :
+  1. `missing_positive_aspects` — la liste est vide alors que le prompt Analyst exige des deux côtés
+  2. `missing_negative_aspects` — idem
+  3. `fragile_burn_threshold` — `decision == BURN` et `final_score ∈ [5.5, 6.5]` (seuil 6.0 ± 0.5)
+  4. `fragile_mint_threshold` — `decision == MINT` et `final_score ∈ [3.5, 4.5]` (seuil 4.0 ± 0.5, bord NEUTRAL)
+  5. `analyst_ab_disagreement` — Analyst A et B ont divergé (réinjecté en Sentinel)
+- **Validation** : tests unitaires `worker/tests/test_sentinel_structural.py` (18/18 OK). Régression sur les 8 events Hondius rejouée : 5/8 auraient été escalés en review_queue (events #338, #352, #391, #418, #427) ; les 3 restants (#234, #241, #385) sont des MINT bien formés au score < -1.5, hors zone fragile, avec aspects pos+neg renseignés.
+- **Audit retroactif** : `python worker/audit_event_cluster.py 234,241,338,352,385,391,418,427` produit un markdown READ-ONLY. La décision de reverse reste manuelle, cas par cas, via `worker/reverse_event.py <id>`.
+- **Leçon transverse** : *quand un cluster d'events sur le même fait produit des verdicts opposés, le bon levier n'est jamais une nouvelle règle de classification thématique mais un signal d'escalade générique côté Sentinel.* Les triggers ci-dessus sont thématiquement neutres (pas de mention "crise", "santé", "logistique") — ils détectent une **incertitude structurelle de la sortie LLM**, pas le sujet.
+- **Status** : actif. À surveiller sur 1-2 runs après deploy pour vérifier que le taux de review_queue ne flambe pas (estimé ~10-15% des events post-Reconciler ; si > 30%, recalibrer les bandes fragiles).
+
 ### 2.3 Tension ordre public vs signal moral — À SURVEILLER (pas encore observé en prod)
 - **Exemple théorique** (Cyril, 2026-04-18) : militants condamnés pour action directe contre une entreprise anti-biodiversité. Règle naïve `PUNISHES wrongdoing → BURN` → condamnation positive. Réalité : la condamnation étouffe un signal moral citoyen légitime → net incertain/NEUTRAL
 - **Cause prédite** : les "rule of thumb" des lignes 11-19 du `analyst_prompt.py` poussent à un verdict binaire au lieu d'une analyse de tension

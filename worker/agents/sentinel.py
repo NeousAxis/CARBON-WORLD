@@ -3,6 +3,13 @@ sentinel.py — Agent: final coherence check before on-chain transaction.
 Runs on GPT-OSS-120B to detect incoherence between the verdict and the
 article's real meaning. If incoherent, the event is routed to the human
 review_queue instead of being executed on Solana.
+
+Two layers of escalation:
+  1. Deterministic structural flags (cheap, runs first, no LLM call needed)
+     — see _structural_flags() and AGENTS_PROMPT_RULES.md §2.5.
+  2. LLM coherence check (GPT-OSS-120B reads article + verdict).
+A trigger from EITHER layer routes the event to review_queue. The LLM cannot
+override a structural flag.
 """
 
 import json
@@ -12,6 +19,56 @@ from ollama_client import call_sentinel
 from prompts.sentinel_prompt import SENTINEL_PROMPT
 
 logger = logging.getLogger("agent.sentinel")
+
+# Fragile zones around the BURN/MINT thresholds (final_score 6.0 and 4.0).
+# A verdict whose score falls in these bands sits within ±0.5 of the cut-off
+# — small calibration noise can flip the decision either side, so we hand it
+# to a human rather than commit on-chain.
+_FRAGILE_BURN_BAND = (5.5, 6.5)   # decision == BURN
+_FRAGILE_MINT_BAND = (3.5, 4.5)   # decision == MINT (upper edge near NEUTRAL)
+
+
+def _structural_flags(analysis: dict, disagreement: bool) -> list[str]:
+    """
+    Pure-Python deterministic checks on the merged analysis.
+    Returns the list of triggered flag names (empty = no concern).
+
+    Triggers (any of):
+      - missing_positive_aspects   : positive_aspects list empty/absent
+      - missing_negative_aspects   : negative_aspects list empty/absent
+      - fragile_burn_threshold     : decision==BURN and final_score in [5.5, 6.5]
+      - fragile_mint_threshold     : decision==MINT and final_score in [3.5, 4.5]
+      - analyst_ab_disagreement    : Analyst A and B reached different decisions
+
+    The "EVERY event has both pos and neg aspects" rule is in the Analyst prompt
+    (analyst_prompt.py STEP 2). When the LLM produces an empty list it has
+    violated its own rule, which is itself a signal of low-quality verdict —
+    not a fact about the world. Hence: escalate.
+    """
+    flags: list[str] = []
+
+    positive = analysis.get("positive_aspects") or []
+    negative = analysis.get("negative_aspects") or []
+    if not positive:
+        flags.append("missing_positive_aspects")
+    if not negative:
+        flags.append("missing_negative_aspects")
+
+    decision = (analysis.get("decision") or "NEUTRAL").upper()
+    try:
+        score = float(analysis.get("final_score", 0) or 0)
+    except (TypeError, ValueError):
+        score = 0.0
+
+    if decision == "BURN" and _FRAGILE_BURN_BAND[0] <= score <= _FRAGILE_BURN_BAND[1]:
+        flags.append("fragile_burn_threshold")
+    if decision == "MINT" and _FRAGILE_MINT_BAND[0] <= score <= _FRAGILE_MINT_BAND[1]:
+        flags.append("fragile_mint_threshold")
+
+    if disagreement:
+        flags.append("analyst_ab_disagreement")
+
+    return flags
 
 
 def _compact_verdict(analysis: dict) -> dict:
@@ -38,6 +95,10 @@ def check(event: dict) -> dict:
     analyst_a = event.get("_analyst_a", {})
     analyst_b = event.get("_analyst_b", {})
     title = article.get("title", "")[:60]
+    disagreement = bool(event.get("_disagreement", False))
+
+    # --- Layer 1: deterministic structural flags (cheap, no LLM) ---
+    structural_flags = _structural_flags(analysis, disagreement)
 
     subject_description = (article.get("description", "") or "")[:500]
 
@@ -52,7 +113,8 @@ def check(event: dict) -> dict:
         "analyst_a": _compact_verdict(analyst_a),
         "analyst_b": _compact_verdict(analyst_b),
         "reconciler_reason": event.get("_reconciler_reason", ""),
-        "disagreement": bool(event.get("_disagreement", False)),
+        "disagreement": disagreement,
+        "structural_flags": structural_flags,
     }
 
     user_msg = (
@@ -66,15 +128,34 @@ def check(event: dict) -> dict:
         context=f"S:{title}",
     )
 
-    if result is None:
-        logger.warning("Sentinel failed for '%s' — defaulting to coherent.", title)
-        event["_sentinel"] = {"coherent": True, "concern": "", "_failed": True}
-        return event
+    llm_failed = result is None
+    if llm_failed:
+        logger.warning("Sentinel LLM failed for '%s' — relying on structural flags only.", title)
+        llm_coherent = True
+        llm_concern = ""
+    else:
+        llm_coherent = bool(result.get("coherent", True))
+        llm_concern = (result.get("concern", "") or "")[:300]
 
-    coherent = bool(result.get("coherent", True))
-    concern = (result.get("concern", "") or "")[:300]
+    # --- Layer 2 OR Layer 1: structural flags ALWAYS escalate, LLM cannot override ---
+    coherent = llm_coherent and not structural_flags
 
-    event["_sentinel"] = {"coherent": coherent, "concern": concern}
+    concern_parts: list[str] = []
+    if structural_flags:
+        concern_parts.append("structural: " + ", ".join(structural_flags))
+    if llm_concern:
+        concern_parts.append("llm: " + llm_concern)
+    concern = " | ".join(concern_parts)[:500]
+
+    sentinel_record: dict = {
+        "coherent": coherent,
+        "concern": concern,
+        "structural_flags": structural_flags,
+        "llm_coherent": llm_coherent,
+    }
+    if llm_failed:
+        sentinel_record["_failed"] = True
+    event["_sentinel"] = sentinel_record
 
     if coherent:
         logger.info("Sentinel OK for '%s'", title)
@@ -84,7 +165,7 @@ def check(event: dict) -> dict:
             title,
             analysis.get("decision", "?"),
             analysis.get("final_score", "?"),
-            concern[:150],
+            concern[:200],
         )
         event["_needs_review"] = True
 
