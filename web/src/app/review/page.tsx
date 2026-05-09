@@ -12,9 +12,12 @@ interface ReviewItem {
   event_title: string;
   event_url: string;
   event_source: string;
-  analyst_a_verdict: string;
-  analyst_b_verdict: string;
-  reconciler_verdict: string;
+  // The DB columns are nullable — early review_queue rows (e.g. id 27) were
+  // written before the writer carried Analyst A/B verdicts, so any of these
+  // three fields can come back as null OR a JSON-encoded string.
+  analyst_a_verdict: string | null;
+  analyst_b_verdict: string | null;
+  reconciler_verdict: string | null;
   sentinel_concern: string;
   suggested_decision: string;
   suggested_amount_crbn: number;
@@ -51,9 +54,18 @@ function ReviewCard({
   const [busy, setBusy] = useState<ResolveVerdict | null>(null);
   const [result, setResult] = useState<ResolveResult | null>(null);
 
-  const parseJson = (s: string): Record<string, unknown> => {
+  // Defensive parse: the DB columns are nullable, so item.analyst_a_verdict can
+  // be null. JSON.parse(null) does NOT throw — it coerces to the string "null"
+  // and returns the JSON null value, so a naive try/catch leaves you with a
+  // null reference and the next `.decision` access crashes the whole page.
+  // Guard explicitly: anything that isn't a plain object becomes {}.
+  const parseJson = (s: string | null | undefined): Record<string, unknown> => {
+    if (typeof s !== "string" || s.trim() === "") return {};
     try {
-      return JSON.parse(s);
+      const parsed = JSON.parse(s);
+      return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+        ? (parsed as Record<string, unknown>)
+        : {};
     } catch {
       return {};
     }
@@ -63,7 +75,13 @@ function ReviewCard({
   const b = parseJson(item.analyst_b_verdict);
   const r = parseJson(item.reconciler_verdict);
 
-  const agree = a.decision === b.decision;
+  // Both verdicts must be present AND have a decision field for "agree" to be
+  // meaningful. Missing data should surface as the disagreement banner being
+  // hidden, not as a confident "agree".
+  const agree =
+    a.decision !== undefined &&
+    b.decision !== undefined &&
+    a.decision === b.decision;
 
   const resolved = result?.kind === "ok";
 
