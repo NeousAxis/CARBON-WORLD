@@ -4,6 +4,66 @@
 
 ---
 
+## 🛡 2026-05-09 — Sentinel structural-flag layer + /review crash fix
+
+Session déclenchée par un BURN 700K sur une dépêche logistique : *"Live, hantavirus: Five French citizens on board the 'Hondius' will be repatriated..."* (event #391, score 6.41). Cyril : **"il ne produit pas d'espoir pour le futur et ne contient aucune orientation stratégique qui influence le futur"**.
+
+### A. Diagnostic — c'est un cluster, pas un event isolé
+
+8 events sur la même histoire hantavirus / MV Hondius (#234, #241, #338, #352, #385, #391, #418, #427) avec décisions **opposées** : 4 BURN (angle "réponse institutionnelle / OMS / rapatriement") + 4 MINT (angle "crise sanitaire / pollution croisière"). Le pipeline a produit ±5M CBWD dans des directions opposées sur les mêmes faits → bruit, pas signal éthique. Sur #391 spécifiquement : `negative_aspects=[]` (viole la règle prompt analyst "EVERY event has both"), magnitude 7 sur une opération consulaire de routine, score 6.41 juste au-dessus du seuil 6.0.
+
+### B. Anti-pattern écarté par Cyril (leçon majeure)
+
+Première proposition Claude : ajouter au classifier un INVALID example *"Pure crisis-response logistics (evacuations, repatriations, search-and-rescue) without a policy or strategic-orientation dimension"*.
+
+Cyril a stoppé net : **"ne crée pas une règle qui va à NOUVEAU nous enfermer dans le problème inverse !!! c'est ta spécialité !!!"**. Argument : un hantavirus émergent peut être le début d'une crise mondiale type COVID. La façon dont gouvernements et médias traitent l'info peut elle-même mériter BURN ou MINT. **Une crise émergente est précisément le type d'event où il faut un humain dans la boucle, pas une règle qui force INVALID.**
+
+→ Règle générale (à appliquer aux futurs patches) : *quand un cluster d'events sur le même fait produit des verdicts opposés, le bon levier n'est jamais une nouvelle règle de classification thématique mais un signal d'escalade générique côté Sentinel.*
+
+### C. Fix livré (commit `91d1761`)
+
+Couche déterministe ajoutée dans `worker/agents/sentinel.py::_structural_flags()`. Cinq triggers thématiquement-neutres (any-of) qui forcent `_needs_review = True` indépendamment du verdict LLM Sentinel :
+1. `missing_positive_aspects` — viole la règle prompt analyst
+2. `missing_negative_aspects` — idem
+3. `fragile_burn_threshold` — `decision == BURN` ET `final_score ∈ [5.5, 6.5]`
+4. `fragile_mint_threshold` — `decision == MINT` ET `final_score ∈ [3.5, 4.5]`
+5. `analyst_ab_disagreement` — A et B ont divergé (réinjecté en Sentinel)
+
+Le LLM Sentinel tourne toujours mais ne peut **pas override** un flag structurel. Régression sur les 8 events Hondius : 5/8 (#338, #352, #391, #418, #427) auraient été auto-escalés ; les 3 restants (#234, #241, #385) sont des MINT bien formés au score < -1.5 — Cyril décide cas par cas via `worker/reverse_event.py`.
+
+Tests : 18 tests unitaires dans `worker/tests/test_sentinel_structural.py` (régression #391 + #338), suite complète **207/207 OK**.
+
+### D. Audit retroactif
+
+Nouveau CLI `worker/audit_event_cluster.py` (read-only, jamais d'écriture DB ni de TX Solana). Usage :
+
+```bash
+python worker/audit_event_cluster.py 234,241,338,352,385,391,418,427
+```
+
+Sortie markdown : par event id → décision, score, structural flags rétrocalculés, aspects pos/neg, justification, et la commande `reverse_event.py <id>` à copier/coller si on veut annuler l'effet on-chain. Idempotent (refuse si déjà reversé).
+
+### E. Documentation
+
+`AGENTS_PROMPT_RULES.md §2.5` "Ambiguous emerging crisis → escalate, not patch" : nouvelle classe de bug formellement documentée avec l'anti-pattern écarté en clair, pour que la leçon survive au-delà de la session.
+
+### F. Bug /review "This page couldn't load" (commit `fabc2e5`)
+
+Indépendant mais découvert ce jour. Cyril ne pouvait plus accéder à la review queue depuis ~mi-avril.
+
+- **Cause racine** : item #27 dans `review_queue.json` avait `analyst_b_verdict` et `reconciler_verdict` à `null` (rangée écrite avant que le writer carry les deux verdicts). Le `parseJson` de `web/src/app/review/page.tsx` faisait `try { JSON.parse(s) } catch { return {} }` — sauf que `JSON.parse(null)` ne throw pas, il coerce `null` → `"null"` → JSON null literal. Donc `a/b/r = null`, puis `a.decision` crashait toute l'hydration React → message browser-level "This page couldn't load".
+- **Fix** : `parseJson` rejette explicitement non-string et non-object (retourne `{}`). `agree` ne calcule que si les deux décisions existent. Interface `ReviewItem` typée avec verdicts `string | null` (alignée DB).
+- **Verif** : page chargée dans Chrome MCP → 53 PENDING events affichés correctement, item #27 dégrade en `? 0.00` au lieu de crasher, console sans `TypeError`.
+
+### G. État à fin de session 2026-05-09
+
+- Pipeline VPS : actif, code Sentinel structural-flag déployé. Premier run complet avec la nouvelle garde au prochain cron.
+- Review queue : **53 events pending** depuis longtemps (UI cassée empêchait Cyril de les traiter). Maintenant accessibles.
+- Cluster Hondius : **non touché** automatiquement. Cyril décide cas par cas via `audit_event_cluster.py` puis `reverse_event.py`.
+- Calibrator dry-run : toujours en `MAGNITUDE_CALIBRATOR_MODE=dry_run` sur VPS. Évaluation toujours pendante.
+
+---
+
 ## 🌍 2026-05-05 — Marathon session : auth, drill-down, Mistral, prompt expansion, hex map, mobile, citizen-vs-institutional
 
 Énorme journée. Récap par thème :
