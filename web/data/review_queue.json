@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T11:41:58.250236+00:00",
-  "total_pending": 48,
+  "generated_at": "2026-05-09T12:12:04.741618+00:00",
+  "total_pending": 49,
   "reviews": [
     {
       "id": 27,
@@ -958,6 +958,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T11:41:57.210988+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 75,
+      "event_title": "Rwanda: Rwandan YouTuber Dies of Alleged Overdose On Day of Release From Prison",
+      "event_url": "https://allafrica.com/stories/202605080515.html",
+      "event_source": "AllAfrica Headlines",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Call by the Committee to Protect Journalists (CPJ) for an independent and credible investigation into the death of Rwandan YouTuber Aimable Karasira Uzaramba, aiming to uphold press freedom and accountability for state actions\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Death of a Rwandan YouTuber under suspicious circumstances immediately following release from a five-year prison sentence, raising concerns about state responsibility or negligence\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 19\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Imprisonment of a YouTuber for five years for exercising freedom of expression, violating fundamental rights to speech and dissent\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The imprisonment of Aimable Karasira Uzaramba for five years for exercising freedom of expression is a severe violation of human rights and press freedom, undermining SDG 16. The subsequent death under suspicious circumstances further compounds the ethical harm, demanding urgent accountability. The CPJ's call for an independent investigation is a positive step toward addressing these violations, but the magnitude of the negative aspects far outweighs the positive response.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Completion of independent investigation with transparent findings\", \"Release of official autopsy results\", \"Policy changes in Rwanda addressing press freedom violations\", \"International sanctions or diplomatic pressure in response to findings\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Independent investigation confirms state involvement in the death, leading to international condemnation and policy reforms in Rwanda\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Investigation is inconclusive or whitewashed, with no meaningful accountability or reforms\", \"probability\": 0.55, \"score\": -8}, {\"name\": \"C\", \"description\": \"Investigation is suppressed, and further crackdowns on dissent occur, worsening the situation\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -6.55, \"final_score\": -7.21, \"decision\": \"MINT\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Severe human rights violations and press freedom suppression outweigh accountability calls.\", \"event_country\": \"Rwanda\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Call for an independent and credible investigation into the death of a detained YouTuber by the Committee to Protect Journalists (CPJ)\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Death of a detained YouTuber on the day of scheduled release, raising concerns about state responsibility or negligence\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Five-year imprisonment of a YouTuber for commentary, potentially suppressing freedom of expression\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The death of Aimable Karasira Uzaramba under suspicious circumstances while in state custody is a grave violation of human rights, particularly freedom of expression and the right to life. While the CPJ's call for an independent investigation is a positive step toward accountability, the underlying detention and death remain deeply unethical and systemic failures.\", \"snapshot_score\": -8.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Completion of independent investigation with transparent findings\", \"Release of official autopsy results\", \"Policy reforms addressing arbitrary detentions of journalists\", \"International pressure leading to judicial review\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Independent investigation confirms foul play, leading to international sanctions and domestic reforms\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Investigation is inconclusive or whitewashed, but domestic and international scrutiny increases pressure for change\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"No meaningful investigation occurs, and the case is buried, emboldening further repression\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.55, \"final_score\": -4.76, \"decision\": \"MINT\", \"amount_cbwd\": 750000, \"confidence\": 8, \"justification\": \"State detention leading to death of a commentator and suppression of free speech warrants MINT.\", \"event_country\": \"Rwanda\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -6.0, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"State detention leading to death of a commentator violates rights; accountability is required.\", \"disagreement\": false, \"reason\": \"Both analysts correctly identified the institutional action (imprisonment + death) as a rights violation, warranting BURN. Scores averaged for final decision.\"}",
+      "sentinel_concern": "Polarity error: imprisonment + death of commentator is MINT (rights violation), not BURN",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 7000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T12:12:03.474625+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
