@@ -4,6 +4,132 @@
 
 ---
 
+## 🌍 2026-05-05 — Marathon session : auth, drill-down, Mistral, prompt expansion, hex map, mobile, citizen-vs-institutional
+
+Énorme journée. Récap par thème :
+
+### A. Email / branding migration carbon-token → carbon-world
+
+- `README.md` : nouvelle section **Citizen actions directory**, contact `hello@carbon-world.xyz`, lien public api/v1, Swiss-based subtitle.
+- `docs/outreach/email-drafts.md` : 5 drafts unifiés (The Shift / IDDRI / Reporterre / Vakita / GoodPlanet) — texte plain (zéro markdown), `Cyril Léger AKA Neous Axis`, `blockchain Solana` (au lieu de "Solana" tout court), `volume` (au lieu de "offre"), virgules à la place des em-dash, signature `hello@carbon-world.xyz`.
+- Sweep code : `web/src/components/PartnersSection.tsx`, `PartnerActivityCard.tsx`, `api/v1/openapi.json/route.ts`, `docs/monitoring/README.md`, `PUBLIC_API_PLAN.md` → tous `hello@carbon-world.xyz`.
+- Open Graph + branded preview (commit `1bb4fbf`) : nouvelle route `web/src/app/opengraph-image.tsx` (Next 16 file convention) — 1200×630 hero card avec logo 260px + wordmark `CARBON` (vert) `WORLD` (teal) + tagline. `metadataBase` + complet `openGraph` + `twitter` dans `layout.tsx`. Aperçu nickel sur iMessage / Slack / Twitter / LinkedIn.
+
+### B. Auth saga : WebAuthn → email OTP via Infomaniak
+
+WebAuthn passkey s'est avérée infernale (1Password interceptait avec son master password au lieu du Touch ID). Décision : **drop WebAuthn, basculer en OTP par email**.
+
+- Suppression `@simplewebauthn/{browser,server}`, suppression `/api/auth/{login,register}/{challenge,verify}`, suppression `/review/setup`.
+- Nouveau `worker/.env.local` côté VPS : `SMTP_HOST=mail.infomaniak.com`, `SMTP_PORT=587`, `SMTP_USER=hello@carbon-world.xyz`, `SMTP_PASSWORD=<vrai mdp Infomaniak>`, `ADMIN_EMAIL=hello@carbon-world.xyz`.
+- Backend : `web/src/lib/email.ts` (Nodemailer STARTTLS), `otp-store.ts` (single-active-OTP module-level state, 10 min TTL, max 5 attempts, 30 s cooldown), `/api/auth/otp/{request,verify}` routes.
+- Frontend : `OtpLoginUI` dans `/review/page.tsx` — champ email + bouton "Send code", puis input 6 chiffres + bouton "Sign in". Dans le mail : template HTML Lunaris-Dark avec code en gros JetBrains Mono orange.
+- Allowlist : seul `ADMIN_EMAIL` reçoit le code (autres emails → 200 silent).
+
+### C. Live Activity ticker — fix freeze
+
+`mouseenter` cancelait le RAF, `mouseleave` le recréait. Si `mouseleave` raté (touch device, focus shift, devtools open mid-hover), ticker figé pour de bon. Fix : RAF tourne **toujours**, pause = simple flag `paused`. Mismatched events ne peuvent plus geler. Touch tap = pause 4 s puis auto-resume. Reset de boucle corrigé pour events.length < 10 (avant resetait à mi-liste).
+
+### D. Drill-down /events + indicateurs cliquables
+
+Chaque agrégat de la dashboard pointe maintenant vers les events qui le composent.
+
+- Nouvelle page `/events?country|region|administration|decision|sector|institution|framework|framework_polarity|bucket|since` (commit `30ed176` puis itérations). Filter pipeline applique les filtres + lit les `event_ids` canoniques quand le worker les a exportés.
+- Cards rendues cliquables : TopCountriesMint/Burn, TopRegionsSustainable/Destructive, TopInstitutions, TopSectors, TopAdministrations, FrameworkBar (row + +N + −N), SupplyTrendCard (chart entier).
+- WorldMap : pays cliquables → drill-down `/events?country=X&since=7d` (commit `e3f087a`). `ISO_TO_CANONICAL` reverse map prend l'alias le plus court (`United States` plutôt que `United States of America`).
+
+### E. Source de vérité on-chain + canonical event_ids
+
+Cyril a flaggé : "la source de vérité ce devrait être les transactions". Réponse : oui.
+
+- `worker/exporter.py` : tous les agrégats filtrent désormais à `tx_hash IS NOT NULL` (events pending exclus). Quand le nightly reconcile_tx confirme une TX en attente, l'event ré-entre dans les agrégats automatiquement.
+- Worker exporte `event_ids` par sector/institution/framework × polarity (et plus tard citizen/institutional). Page `/events` lit ces IDs canoniques → impossible que la card et la liste divergent. Plus de regex divergent côté front.
+
+### F. Framework Activity — fix sémantique critique
+
+Avant : SDG affichait `+18 / −23` alors qu'il y avait 8 BURN events on-chain en 7 j. Mathématiquement impossible si on compte par event. Cause : `_framework_activity_7d` comptait par **aspect** (un MINT avec aspect positif citant SDG → +1 SDG positive).
+
+Fix (commit `9d0ad19`) : nouvelle sémantique **par event** :
+- `positive[fw]` = nombre d'events **BURN** qui ont touché ce framework dans n'importe quel aspect
+- `negative[fw]` = nombre d'events **MINT** qui ont touché ce framework
+- Garantie : `positive[fw] ≤ total BURN`, `negative[fw] ≤ total MINT`. Plus jamais de chiffre impossible.
+
+Tooltip FrameworkBar mis à jour : "BURN/MINT event(s) that touched FW" (au lieu de l'ambigu "BURN events for FW").
+
+### G. Audit complet + documentation
+
+`docs/INDICATORS.md` créé avec **les 16 indicateurs** documentés : card file, fonction worker, sémantique, champs DB, formule, drill-down URL, caveats. Plus un script Python d'audit reproductible.
+
+Audit numérique exécuté sur prod (commit `ca6b533`) : **14 indicateurs LIVE → tous PASS** (chiffres recalculés depuis events on-chain == export worker). 2 cards DORMANT (TopAdministrationsCard, PositiveStreakCard) : composants existent mais pas wirés dans `DashboardClient.tsx` ni dans le worker exporter. Instructions de branchement dans la doc.
+
+### H. WorldMap : 4 itérations
+
+1. **Backfill country** (`backfill_countries.py`) : regex multilingue qui rattrape les events où le LLM a laissé `country=NULL` mais où le pays est extractible du titre (Fessenheim → France, BR-319 → Brazil, Arizona → USA, Kenya: Nairobi → Kenya). Premier passage : 8 events corrigés. Patterns élargis pour matcher demonyms et possessifs (Thailand's, Indonesian, Colombia conference) → 5 de plus, dont 2 faux positifs (Latin American → USA ; EU/Iran war → Iran) revertés et patterns affinés. Total : 187 règles regex.
+- 2 faux positifs catalogués : "Latin American" matchait `\bAmerican\b`. Restreint à `\bUnited States\b|\bU\.S\.A?\b`.
+- 8 NULL legitimes restants (multi-pays / global : "57 countries agree...", "Global forest loss...", etc.).
+
+2. **+20 sources RSS européennes** (commit `50a1543`) — section I :
+DE (Spiegel International, Tagesschau, The Local DE), IT (ANSA, The Local IT), ES (El País, The Local ES), NL (DutchNews), BE+EU (Brussels Times, Politico Europe full), CH (swissinfo, The Local CH), AT (The Local AT), Nordic (The Local SE/DK/NO, Yle Finland), PL (TVP World, Notes From Poland), GR (Kathimerini). 6/20 actives au premier run (autres 404/403/timeout silencieux). Total : 201 sources RSS.
+
+3. **Hex dot map (Figma)** (commit `552e68d` puis recoloration `2701a3e`) : tentative de remplacer le choropleth par une hex grid Figma (2216 hexagones, viewBox 1440×974). Recoloré aux teintes Lunaris (gris `#2A2A2A`/`#333333`/`#3A3A3A` au lieu de blanc + violet/orange/rouge), drop-shadow Figma supprimé. Pulse markers cliquables overlay au lat/lon projeté. **Cyril a finalement préféré le choropleth original** → revert (commit `2b5874b`).
+
+4. **Mobile fixes WorldMap** : `clamp(220px, 50vw, 460px)` pour la hauteur, `touch-action: manipulation` + `WebkitTapHighlightColor: transparent` sur SVG et markers (kill iOS double-tap-zoom).
+
+### I. Mistral comme 3e bucket LLM free tier
+
+Cyril : "Gemini m'a pris 200$ de quota payant !". Choix : **Mistral La Plateforme** (free Experiment plan, 1 RPS, ~1 B tokens/mois). Aligne narratif "Swiss-based / EU-friendly".
+
+- `worker/config.py` : `MISTRAL_API_KEY`, `MISTRAL_MODEL=mistral-small-latest`.
+- `worker/ollama_client.py` : `_call_mistral()` (OpenAI-compatible avec `response_format: {type: "json_object"}`), cascade Groq → Mistral → Cerebras pour **les 5 agents** : classifier (mono + batch), analyst A, analyst B (Mistral en primaire), reconciler, sentinel.
+- `worker/agents/classifier.py` : `_call_mistral_batch_raw()` ajouté pour le batch path indépendant.
+- **Fail-fast** : 1 attempt par provider en mode fallback (au lieu de 3 retries internes Cerebras qui faisaient perdre 60-90s par article). Worst case : ~5 s pour cascader les 3 buckets vs 90 s avant.
+- Smoke test sur VPS : Mistral répond 200 OK avec JSON parfait. Run 12:00 a confirmé : Mistral classifié et analysé une dizaine d'articles directement (Jaguar Corumbá BURN 7.51, Margot McNeill NEUTRAL, etc.) après Groq 429.
+
+### J. Analyst rejected → review queue + prompt expansion
+
+Cyril : "le système rejette des avancées citoyennes, l'organisation d'une conférence, etc". Diagnostic : `STEP 1 — VALIDATION` du prompt analyst listait explicitement "Protests or activist actions" en INVALID, et n'autorisait que les décisions gouvernementales/binding.
+
+**Fix prompt** (commits `93ddcf3` + `77f7015`) :
+- VALID élargi à 5 critères pour citizen / consciousness acts : (a) gathering nommé, (b) déclaration / pétition signée, (c) deliverable éducatif, (d) action communautaire complétée, (e) protest avec organisateur + chiffres
+- Magnitudes calibrées 1-9 selon échelle (local <100 → 1-3 ; international coalition / mass mob >10k → 7-9)
+- Context-aware overrides pour 3 catégories ambiguës :
+  - "could/may/considering" devient VALID quand DIFFUSION évidente (influenceur masculiniste avec millions de followers → MINT, podcast climate citoyen → BURN)
+  - Op-eds VALID quand outlet a poids éditorial + auteur nommé (NYT, Le Monde, Mediapart, Mongabay)
+  - Market obs VALID quand shift sociologique (chute -30% viande rouge en Allemagne → BURN)
+- Default ruling : "name the actor AND describe what they DID or DIFFUSE / EMBODY → VALID"
+
+**Fix workflow** : avant, un rejet Analyst était silencieusement droppé. Maintenant (commit `c8c3192`/`31c82b0`), il atterrit dans `/review` avec `sentinel_concern = "Analyst rejected as not-actionable: <reason>"` et `suggested_decision = "REJECT"`. Cyril peut approve / reverse / reject manuellement. `add_to_review_queue` rendu idempotent sur `event_url`.
+
+### K. Mobile / responsive + nav
+
+- **Tooltips InfoTooltip** : `position: fixed` avec `getBoundingClientRect` — la bulle flip above ↔ below si pas de room, clamp ≥ 8 px de chaque bord viewport, ne peut plus être clippée.
+- **NavLinks** : composant client `web/src/components/NavLinks.tsx`. Desktop = inline. Mobile (<sm = 640 px) = hamburger button → drawer fullscreen vertical avec close (×). Page courante en vert (`#B6FFCE`), autres en gris (`#B8B9B6`). `min-w-0` sur container pour débloquer `overflow-x-auto` (bug Flex classique).
+- **Tables** `/transactions` : `overflow-x-auto` + `min-w-[860px]` inner container — desktop intact, mobile scroll horizontal.
+
+### L. Indicator info tooltips (?)
+
+`web/src/components/InfoTooltip.tsx` créé. Petit (?) à côté de chaque titre de card → bulle d'explication 280 px. **14 indicateurs équipés** (TopCountries Mint/Burn, TopRegions Sus/Dest, TopInstitutions, TopSectors, SupplyTrend, EventOfTheDay, FrameworkActivity, Burn/Mint Composition 7d & ALL, SourceDiversity, CacheHitRate, PartnerActivity).
+
+⚠️ Première version FR mais le site est en anglais → traduit en EN tous les 14 tooltips.
+
+### M. Indicateur "Citizen vs Institutional"
+
+Cyril : "il y a chaque jour plus d'actions citoyennes que gouvernementales je veux un indicateur".
+
+Worker (commits `34c75b4` + `d57e96e`) : `_is_citizen_event()` classifie chaque event on-chain comme CITIZEN si :
+- `burn_subtype == 'editorial_consciousness'`
+- source ∈ allowlist 50 outlets citoyens (Mongabay, Reporterre, Yes Magazine, Greenpeace, Sea Shepherd, La Via Campesina, Amazon Watch, 350.org, Earthjustice, etc.)
+- title/justification matche 28 patterns (volunteer, grassroots, indigenous, coalition, NGO, activist, protest, restoration, rescue, assembly, movement, petition, crowdfunding, open-source, documentary, etc.)
+
+Sinon → INSTITUTIONAL.
+
+Output : `{citizen, institutional, citizen_ratio, daily: 7 days, event_ids_citizen, event_ids_institutional}`.
+
+Card placée entre BURN/MINT composition et pipeline-health. 2 gros compteurs cliquables (vert CITIZEN / orange INSTITUTIONAL) → drill-down `/events?bucket=citizen|institutional`. Verdict line ("Citizens lead by N events" / "Institutions lead by N" / "Tied"). Mini-bar chart 7 jours.
+
+**Premier verdict prod** : sur 7 j on-chain, 84 citizen vs 144 institutional (37% citoyen). **Hypothèse de Cyril réfutée** par la donnée — révèle un déficit de **couverture** des actions citoyennes dans les sources captées plutôt qu'un déficit d'actions citoyennes elles-mêmes.
+
+---
+
 ## 🌍 2026-05-03 — WorldMap + 24 feeds + Phase 10 (apprentissage des reviews) + bug review-queue
 
 ### WorldMap sur la home (commits `b448925`, `f1d5355`, `491a94f`)
