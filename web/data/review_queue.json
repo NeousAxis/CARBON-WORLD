@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T07:11:28.124254+00:00",
-  "total_pending": 44,
+  "generated_at": "2026-05-09T07:41:00.236122+00:00",
+  "total_pending": 45,
   "reviews": [
     {
       "id": 27,
@@ -878,6 +878,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T04:12:55.153059+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 71,
+      "event_title": "US sanctions 9 mainland China and Hong Kong entities over alleged Iran military links",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3352980/us-sanctions-9-mainland-china-and-hong-kong-entities-over-alleged-iran-military-links?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US enforcement of sanctions against entities allegedly supporting Iran's military industrial complex, potentially reducing proliferation risks\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Sanctions targeting Chinese and Hong Kong entities may escalate geopolitical tensions and harm economic relations, risking broader diplomatic fallout\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Sanctions may disproportionately affect innocent businesses and individuals in China and Hong Kong, violating economic rights and stability\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The sanctions aim to curb military proliferation, aligning with peace and security goals (SDG 16). However, they risk escalating geopolitical tensions and harming economic rights in China and Hong Kong, creating a net negative ethical balance with moderate to significant negative impacts.\", \"snapshot_score\": -3.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Resolution of sanctions disputes via diplomatic channels\", \"Evidence of unintended civilian harm from sanctions\", \"Policy reversal by US administration\", \"Economic recovery in targeted regions\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic resolution reduces tensions and sanctions are lifted within 12 months, restoring economic stability\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Sanctions remain in place with moderate economic disruption but no major escalation\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Escalation leads to trade war, severe economic harm in China/Hong Kong, and long-term diplomatic rift\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.35, \"final_score\": -2.48, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Sanctions risk geopolitical escalation and economic harm outweighing proliferation control benefits.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US enforcement of sanctions against entities allegedly aiding Iran's military industrial complex, potentially reducing proliferation of weapons technology\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Sanctions targeting Chinese and Hong Kong entities risk escalating geopolitical tensions and harming international trade relations\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Sanctions may disproportionately affect innocent businesses and individuals in China and Hong Kong, violating economic rights and stability\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The sanctions represent a concrete enforcement action against alleged military proliferation, which aligns with international peace and security goals. However, the broad targeting of entities risks collateral economic harm and geopolitical escalation, undermining global cooperation and human rights. The net ethical position is mixed, with enforcement benefits outweighed by potential harms to innocent parties and international relations.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": -1, \"revaluation_triggers\": [\"Resolution of sanctions disputes through diplomatic channels\", \"Evidence of disproportionate harm to non-targeted entities\", \"Escalation of trade restrictions between US and China\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic resolution reduces tensions and sanctions are lifted with minimal economic disruption\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Sanctions remain in place with moderate economic fallout but no major escalation\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Escalation leads to broader trade war and significant economic harm in China and Hong Kong\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.15, \"final_score\": -1.81, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 7, \"justification\": \"Sanctions enforcement harms innocent entities and risks geopolitical escalation.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.15, \"confidence\": 7, \"amount_cbwd\": 500000, \"justification\": \"Sanctions risk geopolitical escalation and economic harm outweighing proliferation control benefits.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "Verdict direction flipped: sanctions curb weapons proliferation (positive/BURN) but marked MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T07:40:59.252782+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
