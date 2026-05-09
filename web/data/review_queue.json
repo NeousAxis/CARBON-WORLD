@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-09T13:11:41.392556+00:00",
-  "total_pending": 50,
+  "generated_at": "2026-05-09T13:41:25.515105+00:00",
+  "total_pending": 51,
   "reviews": [
     {
       "id": 27,
@@ -998,6 +998,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T13:11:40.299156+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 77,
+      "event_title": "New chemical kills 95% of termites without harming humans",
+      "event_url": "https://www.sciencedaily.com/releases/2026/05/260508211025.htm",
+      "event_source": "ScienceDaily",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific breakthrough in termite control using bistrifluron, a chemical that kills 95% of termites without harming humans by disrupting molting, offering a safer alternative to traditional fumigation methods.\", \"affected_sdgs\": [11, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The development of bistrifluron represents a significant advancement in pest control, directly supporting sustainable urban living (SDG 11) and biodiversity protection (SDG 15) by eliminating termites without harming humans or non-target species. The method's specificity and reduced toxicity align with ethical frameworks prioritizing harm reduction and ecological balance.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Regulatory approval delays or rejections\", \"Emergence of termite resistance to bistrifluron\", \"Discovery of unintended ecological impacts in field trials\", \"Scalability challenges in commercial deployment\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Bistrifluron gains widespread adoption, integrates into integrated pest management (IPM) systems globally, and becomes the standard for termite control with no major ecological downsides.\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate adoption with regional variations; minor ecological concerns arise but are manageable, and the method remains a key tool in termite control.\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Widespread resistance develops within 5 years, leading to reduced efficacy and necessitating alternative solutions, with potential ecological disruptions from overuse.\", \"probability\": 0.15, \"score\": -3}], \"prospective_score\": 5.85, \"final_score\": 6.86, \"decision\": \"BURN\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Scientific breakthrough reduces harm to humans and ecosystems while targeting pests effectively.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific breakthrough in pest control using bistrifluron eliminates 95% of termites without harming humans, reducing reliance on toxic fumigation methods\", \"affected_sdgs\": [3, 12, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}, {\"description\": \"Researchers' development of a safer, more effective termite control method supports sustainable urban pest management and biodiversity protection\", \"affected_sdgs\": [11, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Potential ecological risks from introducing a new chemical into ecosystems, including unintended effects on non-target species or long-term resistance development in termites\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"Animal\"]}], \"ethical_synthesis\": \"The development of bistrifluron represents a significant advancement in pest control, aligning with SDGs 3 (Good Health), 12 (Responsible Consumption), and 15 (Life on Land) by reducing toxic chemical use and protecting biodiversity. While the method is promising, the introduction of a new chemical warrants caution due to potential ecological risks and long-term resistance concerns.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Regulatory approval and widespread adoption timeline\", \"Long-term ecological monitoring results\", \"Emergence of termite resistance to bistrifluron\", \"Scalability and cost-effectiveness in diverse climates\"], \"revaluation_checkpoint\": \"2028-05-08\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Bistrifluron becomes the global standard for termite control, reducing pesticide use by 80% and protecting urban biodiversity without resistance issues\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Widespread adoption occurs but resistance develops within 10 years, requiring new chemical solutions and increasing costs\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Ecological side effects emerge, leading to bans in multiple regions and a return to traditional fumigation methods\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 4.35, \"final_score\": 5.96, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Scientific advancement with potential ecological risks; net positive but requires cautious monitoring.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.41, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"The development of bistrifluron represents a net positive for human and ecological safety.\", \"disagreement\": true, \"reason\": \"Analyst A correctly emphasizes the net positive impact of the new chemical, which reduces harm to humans and ecosystems. Analyst B raises valid caution but does not outweigh the clear benefits of the innovation.\"}",
+      "sentinel_concern": "Polarity error: termite control harms biodiversity; BURN is incorrect",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 7000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-09T13:41:24.440866+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
