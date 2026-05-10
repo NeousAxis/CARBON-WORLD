@@ -48,50 +48,128 @@ export function TopSectorsCard({ sectors }: TopSectorsCardProps) {
           </span>
         </div>
       ) : (
-        <div className="flex flex-col">
-          {items.map((item, i) => (
-            <Link
-              key={item.name}
-              href={`/events?sector=${encodeURIComponent(item.name)}&since=7d`}
-              className="flex items-center gap-3 py-2 hover:opacity-80"
-              style={{
-                borderBottom:
-                  i < items.length - 1 ? "1px solid var(--border)" : "none",
-                cursor: "pointer",
-              }}
-              title={`See the ${item.count} events tagged ${item.name}`}
-            >
-              {/* Rank */}
-              <span
-                className="text-xs font-mono tabular-nums shrink-0 w-6"
-                style={{ color: "var(--muted)" }}
-              >
-                {String(i + 1).padStart(2, "0")}.
-              </span>
+        <div>
+          {items.map((item, i) => {
+            const total = item.burn_count + item.mint_count;
+            const posPct = total > 0 ? (item.burn_count / total) * 100 : 0;
+            const negPct = total > 0 ? 100 - posPct : 0;
+            const baseHref = `/events?sector=${encodeURIComponent(item.name)}&since=7d`;
 
-              {/* Sector name */}
-              <span
-                className="text-xs font-mono uppercase tracking-wider flex-1 truncate"
-                style={{ color: "var(--foreground)" }}
+            return (
+              <div
+                key={item.name}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "28px minmax(110px, 130px) 1fr 100px",
+                  alignItems: "center",
+                  gap: "12px",
+                  paddingTop: "8px",
+                  paddingBottom: "8px",
+                  borderBottom:
+                    i < items.length - 1 ? "1px solid var(--border)" : "none",
+                }}
               >
-                {item.name}
-              </span>
+                {/* Col 1 — rank */}
+                <span
+                  className="text-xs font-mono tabular-nums"
+                  style={{ color: "var(--muted)" }}
+                >
+                  {String(i + 1).padStart(2, "0")}.
+                </span>
 
-              {/* BURN / MINT split + total */}
-              <div className="flex items-center gap-1.5 shrink-0 font-mono tabular-nums text-[10px]">
-                <span style={{ color: "var(--success-fg)" }}>
-                  +{item.burn_count}
-                </span>
-                <span style={{ color: "var(--muted)" }}>/</span>
-                <span style={{ color: "var(--error-fg)" }}>
-                  &#8722;{item.mint_count}
-                </span>
-                <span style={{ color: "var(--muted)" }}>
-                  ({item.count})
-                </span>
+                {/* Col 2 — sector name (links to all events for that sector) */}
+                <Link
+                  href={baseHref}
+                  className="text-xs font-mono uppercase tracking-wider truncate hover:opacity-80"
+                  style={{
+                    color: "var(--foreground)",
+                    textDecoration: "none",
+                    cursor: "pointer",
+                  }}
+                  title={`See the ${item.count} events tagged ${item.name}`}
+                >
+                  {item.name}
+                </Link>
+
+                {/* Col 3 — stacked BURN/MINT bar (green left, red right) */}
+                <Link
+                  href={baseHref}
+                  title={`See the ${item.count} events tagged ${item.name}`}
+                  className="hover:opacity-80"
+                  style={{
+                    position: "relative",
+                    height: "8px",
+                    backgroundColor: "var(--cw-bg-2)",
+                    overflow: "hidden",
+                    cursor: "pointer",
+                    display: "block",
+                  }}
+                >
+                  {total > 0 && (
+                    <>
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          bottom: 0,
+                          left: 0,
+                          width: `${posPct}%`,
+                          backgroundColor: "var(--cw-burn)",
+                        }}
+                      />
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          bottom: 0,
+                          right: 0,
+                          width: `${negPct}%`,
+                          backgroundColor: "var(--cw-mint)",
+                        }}
+                      />
+                    </>
+                  )}
+                </Link>
+
+                {/* Col 4 — counts (each side filtered) */}
+                <div
+                  className="font-mono tabular-nums"
+                  style={{
+                    fontSize: "11px",
+                    textAlign: "right",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  <Link
+                    href={`${baseHref}&decision=BURN`}
+                    style={{
+                      color: "var(--cw-burn)",
+                      textDecoration: "none",
+                      cursor: "pointer",
+                    }}
+                    className="hover:opacity-80"
+                    title={`See the ${item.burn_count} BURN event(s) tagged ${item.name}`}
+                  >
+                    +{item.burn_count}
+                  </Link>
+                  <span style={{ color: "var(--muted)" }}> / </span>
+                  <Link
+                    href={`${baseHref}&decision=MINT`}
+                    style={{
+                      color: "var(--cw-mint)",
+                      textDecoration: "none",
+                      cursor: "pointer",
+                    }}
+                    className="hover:opacity-80"
+                    title={`See the ${item.mint_count} MINT event(s) tagged ${item.name}`}
+                  >
+                    &#x2212;{item.mint_count}
+                  </Link>
+                  <span style={{ color: "var(--muted)" }}> ({item.count})</span>
+                </div>
               </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>
