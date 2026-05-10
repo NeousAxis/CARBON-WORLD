@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-09T23:40:05.190282+00:00",
-  "total_events": 450,
+  "generated_at": "2026-05-10T00:10:44.068793+00:00",
+  "total_events": 451,
   "total_burned": 516151000,
-  "total_minted": 686008750,
+  "total_minted": 686508750,
   "pending_reviews": 58,
   "events": [
+    {
+      "id": 451,
+      "event_title": "Chalmers reveals gas tax revenue is up in federal budget",
+      "event_url": "https://www.abc.net.au/news/2026-05-10/gas-tax-revenue-up-in-federal-budget/106663036",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.96,
+      "confidence": 9,
+      "justification": "Both agree on direction; fiscal benefits entrench climate harm despite social spending. | The increased gas tax revenue provides short-term fiscal benefits that could address social inequalities, but it entrenches fossil fuel dependence, directly undermining climate action and long-term sustainability. The net ethical judgment is negative due to the outsized harm to planetary boundaries and climate goals compared to the marginal social benefit.",
+      "tx_hash": "YXec7gsGW3y5vgRbWUxyNBoBH7WGRrsJUDNtHR5WYAoRksy4bN6PVm8iWiX5p9zyzx5b2iZfSrdKentUjY4fj8E",
+      "created_at": "2026-05-10T00:10:42.799388+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Increased tax revenue from offshore gas projects may fund public services or climate-related initiatives, supporting SDG 1 (No Poverty) and SDG 10 (Reduced Inequalities) through potential redistribution.\", \"affected_sdgs\": [1, 10], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Tax revenue from offshore gas projects directly funds and incentivizes fossil fuel extraction, undermining SDG 13 (Climate Action) and violating the planetary boundary for climate change.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Continued reliance on fossil fuel taxation may delay transition to renewable energy, conflicting with SDG 7 (Affordable and Clean Energy) and SDG 12 (Responsible Consumption and Production).\", \"affected_sdgs\": [7, 12], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 450,
       "event_title": "Gold vs water: Argentina opens glaciers to mining but at what cost to world food supplies?",
@@ -9915,8 +9937,8 @@
       },
       {
         "country": "Australia",
-        "count": 11,
-        "total_amount": 9600000
+        "count": 12,
+        "total_amount": 10100000
       },
       {
         "country": "Russia",
@@ -9978,14 +10000,14 @@
         "events": 62
       },
       {
-        "region": "Oceania",
-        "burn_ratio": 0.25,
-        "events": 16
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.239,
         "events": 67
+      },
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.235,
+        "events": 17
       }
     ],
     "top_regions_destructive": [
@@ -10000,14 +10022,14 @@
         "events": 25
       },
       {
+        "region": "Oceania",
+        "mint_ratio": 0.765,
+        "events": 17
+      },
+      {
         "region": "North America",
         "mint_ratio": 0.761,
         "events": 67
-      },
-      {
-        "region": "Oceania",
-        "mint_ratio": 0.75,
-        "events": 16
       },
       {
         "region": "Europe",
@@ -10016,11 +10038,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-05-03",
-        "net_minted": 7220000,
-        "net_burned": 625000
-      },
       {
         "date": "2026-05-04",
         "net_minted": 500000,
@@ -10050,6 +10067,11 @@
         "date": "2026-05-09",
         "net_minted": 72965000,
         "net_burned": 62230000
+      },
+      {
+        "date": "2026-05-10",
+        "net_minted": 500000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -10066,7 +10088,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 99,
-        "negative": 210,
+        "negative": 211,
         "event_ids_positive": [
           437,
           433,
@@ -10169,6 +10191,7 @@
           145
         ],
         "event_ids_negative": [
+          451,
           450,
           449,
           448,
@@ -10764,7 +10787,7 @@
       },
       "PB": {
         "positive": 48,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           437,
           433,
@@ -10816,6 +10839,7 @@
           145
         ],
         "event_ids_negative": [
+          451,
           450,
           422,
           416,
@@ -10866,11 +10890,11 @@
       "niche_pct": 60.4,
       "mainstream_pct": 39.6,
       "total_sources_used": 53,
-      "articles_processed": 314
+      "articles_processed": 315
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 314,
+      "total_events": 315,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -10969,10 +10993,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 45,
+        "count": 46,
         "burn_count": 21,
-        "mint_count": 24,
+        "mint_count": 25,
         "event_ids": [
+          451,
           443,
           436,
           413,
@@ -11217,14 +11242,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 213,
       "direct_action": {
-        "count": 195,
+        "count": 196,
         "pct": 92.0
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.1
+        "pct": 7.0
       },
       "untyped": {
         "count": 2,
@@ -11232,9 +11257,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 327,
+      "total_mint": 328,
       "direct_action": {
-        "count": 291,
+        "count": 292,
         "pct": 89.0
       },
       "editorial_alarm": {
@@ -11248,14 +11273,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 116,
-      "institutional": 198,
-      "citizen_ratio": 0.369,
+      "institutional": 199,
+      "citizen_ratio": 0.368,
       "daily": [
-        {
-          "date": "2026-05-03",
-          "citizen": 2,
-          "institutional": 7
-        },
         {
           "date": "2026-05-04",
           "citizen": 1,
@@ -11285,6 +11305,11 @@
           "date": "2026-05-09",
           "citizen": 15,
           "institutional": 30
+        },
+        {
+          "date": "2026-05-10",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -11406,6 +11431,7 @@
         134
       ],
       "event_ids_institutional": [
+        451,
         450,
         449,
         448,
