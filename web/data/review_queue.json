@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-10T15:09:47.467678+00:00",
-  "total_pending": 40,
+  "generated_at": "2026-05-10T15:39:44.911055+00:00",
+  "total_pending": 41,
   "reviews": [
     {
       "id": 49,
@@ -798,6 +798,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-10T14:10:35.120063+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 111,
+      "event_title": "Argentina Cabinet Chief Adorni Probed Over Hidden Crypto Trades",
+      "event_url": "https://www.riotimesonline.com/argentina-cabinet-chief-adorni-probed-over-hidden-crypto-trades/",
+      "event_source": "The Rio Times (BR EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Investigation into undisclosed crypto trades may lead to accountability and transparency in public office.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Unreported cryptocurrency transactions by a high-ranking official suggest potential corruption and misuse of public trust.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 29\", \"UDHR Article 10\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The investigation into Manuel Adorni's undisclosed crypto trades introduces a positive step toward transparency and accountability (SDG 16), but the potential misuse of public office for personal financial gain undermines trust and violates principles of fair governance.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Outcome of the investigation into Adorni's crypto trades\", \"Legal action or disciplinary measures taken against Adorni\", \"Policy changes in Argentina regarding asset declarations for public officials\"], \"revaluation_checkpoint\": \"2026-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Adorni is cleared of wrongdoing, and the investigation leads to stronger financial transparency laws.\", \"probability\": 0.2, \"score\": 5}, {\"name\": \"B\", \"description\": \"Adorni is found guilty of illicit enrichment, leading to legal consequences and public trust restoration.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"No action is taken, and the case is buried, leading to public disillusionment and no policy change.\", \"probability\": 0.3, \"score\": -6}], \"prospective_score\": -0.7, \"final_score\": -1.2, \"decision\": \"MINT\", \"amount_cbwd\": 120000, \"confidence\": 6, \"justification\": \"Potential corruption by a high-ranking official undermines public trust and governance integrity.\", \"event_country\": \"Argentina\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Federal prosecutor Gerardo Pollicita initiated an investigation into alleged illicit enrichment by Cabinet Chief Manuel Adorni, demonstrating institutional oversight and accountability for potential financial misconduct.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Cabinet Chief Manuel Adorni is under investigation for allegedly concealing cryptocurrency trades worth significant value in his asset declarations, which could indicate illicit enrichment and undermine public trust in government transparency.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 12\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The investigation into Adorni's hidden crypto trades represents a positive institutional action to uphold transparency and accountability (SDG 16). However, the alleged concealment itself constitutes a serious breach of public trust and ethical standards, warranting scrutiny. The net ethical position is negative due to the magnitude of the alleged misconduct and its potential systemic impact on governance integrity.\", \"snapshot_score\": -7.5, \"trajectory_score\": -1.5, \"revaluation_score\": -2, \"revaluation_triggers\": [\"Completion of the investigation with clear findings\", \"Adoption of stricter asset declaration laws\", \"Resignation or removal of Adorni if allegations are substantiated\", \"Public backlash or protests demanding accountability\"], \"revaluation_checkpoint\": \"2026-05-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Investigation concludes with no wrongdoing proven, restoring Adorni's reputation and reinforcing institutional trust.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Investigation finds minor procedural lapses but no illicit enrichment, leading to reforms in asset declaration processes.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Investigation confirms substantial illicit enrichment, resulting in Adorni's resignation and systemic reforms in government transparency.\", \"probability\": 0.25, \"score\": -9}], \"prospective_score\": -3.5, \"final_score\": -4.8, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Alleged concealment of crypto trades by a high-ranking official undermines governance integrity and public trust.\", \"event_country\": \"Argentina\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.77, \"confidence\": 9, \"amount_cbwd\": 120000, \"justification\": \"The concealment of crypto trades by a high-ranking official represents a violation of public trust and ethical governance.\", \"disagreement\": false, \"reason\": \"Both analysts agree on the negative impact of the concealment, but the institutional action (investigation) is not sufficient to offset the harm caused by the alleged misconduct.\"}",
+      "sentinel_concern": "llm: Polarity error: concealment of crypto trades is negative corruption, but verdict is BURN (positive). Justification condemns action yet decision is BURN, mismatched.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 120000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-10T15:39:43.074877+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
