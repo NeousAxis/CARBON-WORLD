@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-10T00:40:41.019253+00:00",
-  "total_pending": 58,
+  "generated_at": "2026-05-10T01:12:31.167198+00:00",
+  "total_pending": 59,
   "reviews": [
     {
       "id": 34,
@@ -1158,6 +1158,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-09T22:43:10.160372+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 92,
+      "event_title": "Live, war in the Middle East: Iran threatens to retaliate against American sites in case of an attack on its oil tankers",
+      "event_url": "https://www.lemonde.fr/international/live/2026/05/10/en-direct-guerre-au-moyen-orient-l-iran-menace-de-riposter-contre-des-sites-americains-en-cas-d-attaque-contre-ses-petroliers_6686485_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Iran threatens retaliation against American sites in response to attacks on its oil tankers, escalating geopolitical tensions and risking broader conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"US attacks on Iranian oil tankers in the Gulf of Oman, risking civilian harm and violating sovereignty\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Israeli airstrikes in Lebanon kill nine people, including a child, violating human rights and escalating regional violence\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The event involves multiple violations of fundamental human rights and international law, including threats of retaliation, attacks on civilian infrastructure, and civilian casualties. These actions undermine peace, security, and the protection of vulnerable populations, directly contravening the UDHR and SDG 16. The escalation of violence poses severe risks to regional stability and human dignity.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.5, \"revaluation_score\": -7, \"revaluation_triggers\": [\"Ceasefire agreement reached\", \"International mediation succeeds\", \"Escalation into full-scale war\", \"UN Security Council imposes binding sanctions\"], \"revaluation_checkpoint\": \"2028-05-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic: Diplomatic resolution achieved within 12 months, de-escalation of tensions, no further civilian casualties\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic: Prolonged low-intensity conflict with sporadic violence, continued civilian harm, but no full-scale war\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Pessimistic: Full-scale regional war erupts, massive civilian casualties, global energy crisis, nuclear threats\", \"probability\": 0.2, \"score\": -10}], \"prospective_score\": -4.75, \"final_score\": -7.26, \"decision\": \"MINT\", \"amount_cbwd\": 9500000, \"confidence\": 9, \"justification\": \"Escalation of violence and human rights violations warrant strong negative signal.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Iran threatens retaliation against American sites in response to attacks on its oil tankers, escalating geopolitical tensions and risking broader conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"US attacks on Iranian oil tankers in the Gulf of Oman, risking civilian casualties and violating sovereignty\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 17\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Israeli airstrikes in Lebanon kill nine people, including a child, violating human rights and escalating regional instability\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 6\", \"CRC Article 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The event involves multiple violations of fundamental human rights and international law, including threats of retaliation, attacks on civilian infrastructure, and civilian casualties. These actions undermine peace, security, and the protection of vulnerable populations, particularly children. The escalation of violence in the region poses severe risks to global stability and adherence to international norms.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Ceasefire agreement signed by all parties\", \"International mediation leads to de-escalation\", \"UN Security Council imposes binding sanctions on aggressors\", \"New regional peace initiative gains traction\"], \"revaluation_checkpoint\": \"2028-05-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where diplomatic efforts succeed, leading to a ceasefire and withdrawal of forces within 12 months\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Realistic scenario where tensions persist but remain contained, with sporadic violence but no full-scale war\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where the conflict escalates into a regional war involving multiple states and non-state actors\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.85, \"final_score\": -5.66, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Escalation of violence and threats violate human rights and international law, warranting MINT.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -6.46, \"confidence\": 9, \"amount_cbwd\": 9500000, \"justification\": \"Both analysts agree on MINT due to escalation of violence and human rights violations.\", \"disagreement\": false, \"reason\": \"Analysts A and B both identified the event as a MINT due to threats of retaliation, attacks on civilian infrastructure, and civilian casualties, which violate international law and human rights.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 9500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-10T01:12:29.959909+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
