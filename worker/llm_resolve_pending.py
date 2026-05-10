@@ -45,25 +45,30 @@ RATE_LIMIT_SLEEP_S = 2  # between LLM calls — Groq free tier 30 RPM
 NON_AUTO_VERDICTS = {"leave_for_human"}
 
 
-SYSTEM_PROMPT = """You are the FINAL JUDGE for the CARBON WORLD review queue. The pipeline's earlier agents (Analyst A, Analyst B, Reconciler, Sentinel) all ran on this event. Sentinel flagged it as needing human review and gave a concern. Your job is to make the final call.
+SYSTEM_PROMPT = """You are an ACTIONABILITY FILTER for the CARBON WORLD review queue. Your ONLY job is to decide whether an event in the queue is a CONCRETE, ACTIONABLE EVENT worth scoring on-chain — or a non-actionable item that should be dropped from the queue.
 
-CARBON WORLD measures the ethical impact of human decisions on the living world via 7 reference frameworks (UN SDGs, UDHR, ILO, Animal Rights, CRC, UNDRIP, Planetary Boundaries) and a 4D temporal analysis (Snapshot/Trajectory/Revaluation/Prospective).
+You DO NOT decide BURN vs MINT. You DO NOT approve or reverse anything. Polarity is not your concern. Only actionability is.
 
-Possible verdicts:
-- "approve"  — the suggested decision (BURN/MINT + amount) is correct as-is
-- "reverse"  — the verdict polarity is wrong; flip BURN ↔ MINT (amount stays)
-- "reject"   — the article is NOT a concrete actionable event (mere news brief, opinion piece, schedule item, logistics dispatch with no policy/strategic dimension)
-- "leave_for_human" — genuinely ambiguous, requires human judgment
+CARBON WORLD measures the ethical impact of CONCRETE decisions affecting the living world: laws enacted/repealed, court rulings, government policies launched/canceled, treaties signed, military operations, regulatory actions, scientific breakthroughs with measurable outcome, named NGO operations, registered cooperative actions, indigenous-led legal victories, peer-reviewed reports.
 
-Decision direction reminders:
-- BURN = positive impact (rights protected, climate action, peace, justice, biodiversity, accountability)
-- MINT = negative impact (rights violated, emissions, war, regression, harm to vulnerable)
-- The article's SUBJECT vs the ACTION: evaluate the action/decision/ruling, not the bad event that triggered it. (E.g. court convicting poachers = BURN, not MINT.)
+NON-ACTIONABLE patterns that should be REJECT:
+- Live news tickers / running blog updates ("Live,", "EN DIRECT,", "In direct,") on a still-unfolding crisis with no decision yet
+- Op-eds, opinion columns, editorials, commentary, "Why has...", "Was X...", "What X..." analytical pieces with no concrete action
+- Pure speculation: "may", "could", "if", "experts warn", scenario analyses with no decision taken
+- Diplomatic meetings / private business meetings with no concrete outcome announced
+- Personal stories, celebrity news, sports results, lifestyle trends
+- Tariff or market commentary with no policy decision
+- Pure technical / scientific announcements without measurable rights/environmental dimension
+- Reports of crimes / disasters / accidents with no institutional response described
+- Schedule items, programme announcements, parade reductions, ceremony details
 
-When unsure, prefer "leave_for_human" over guessing. False on-chain transactions cost real CBWD.
+ACTIONABLE patterns that should be LEAVE_FOR_HUMAN:
+- Anything else — concrete laws, sanctions, court rulings, NGO operations, treaties, structured citizen actions, scientific institutional reports, etc. Even if the polarity is unclear, leave it for human review.
+
+Be CONSERVATIVE. When in doubt, leave_for_human. False rejects lose information about events that mattered. False leave_for_humans only cost a human a 30-second click.
 
 Respond with JSON only:
-{"verdict": "approve|reverse|reject|leave_for_human", "confidence": 1-10, "reason": "<one sentence, max 200 chars>"}"""
+{"verdict": "reject|leave_for_human", "confidence": 1-10, "reason": "<one sentence, max 200 chars>"}"""
 
 
 def _safe_json(s: str | None) -> dict:
@@ -199,15 +204,21 @@ def main() -> int:
             confidence = int(verdict_data.get("confidence", 0) or 0)
             reason = (verdict_data.get("reason") or "")[:200]
 
-            if v in NON_AUTO_VERDICTS or v not in ("approve", "reverse", "reject"):
-                skipped.append((item, f"verdict={v} ({confidence}/10): {reason}"))
-                print(f"     → {v} (conf={confidence}) — leave for human")
-            elif confidence < args.confidence:
-                skipped.append((item, f"low conf {confidence}/10 for {v}: {reason}"))
-                print(f"     → {v} (conf={confidence}) — below threshold, skip")
-            else:
+            # Narrowed to REJECT-or-leave_for_human only. The "approve" /
+            # "reverse" branches were removed because the LLM was demonstrably
+            # unreliable on polarity questions (tested 4/5 verdicts: 2-3
+            # were debatable or wrong). REJECT has zero on-chain effect, so
+            # even a wrong reject is recoverable by re-creating the event;
+            # a wrong approve/reverse fires real CBWD on mainnet.
+            if v == "reject" and confidence >= args.confidence:
                 actions.append((item, {"verdict": v, "confidence": confidence, "reason": reason}))
-                print(f"     → {v} (conf={confidence}): {reason[:80]}")
+                print(f"     → reject (conf={confidence}): {reason[:80]}")
+            elif v == "reject":
+                skipped.append((item, f"low conf {confidence}/10 for reject: {reason}"))
+                print(f"     → reject (conf={confidence}) — below threshold, leave for human")
+            else:
+                skipped.append((item, f"leave_for_human ({confidence}/10): {reason}"))
+                print(f"     → leave_for_human (conf={confidence})")
 
             time.sleep(RATE_LIMIT_SLEEP_S)
 
