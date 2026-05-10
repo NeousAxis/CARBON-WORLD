@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-10T23:10:09.706441+00:00",
-  "total_pending": 48,
+  "generated_at": "2026-05-10T23:39:40.753488+00:00",
+  "total_pending": 49,
   "reviews": [
     {
       "id": 49,
@@ -958,6 +958,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-10T22:39:40.351003+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 119,
+      "event_title": "Nobel Peace Prize laureate Narges Mohammadi released on bail for medical treatment in Tehran, according to her foundation",
+      "event_url": "https://www.france24.com/fr/moyen-orient/20260510-prix-nobel-narges-mohammadi-liberation-sous-caution-soignee-iran-teheran-fondation-sante-prison-hopital-militante",
+      "event_source": "France 24 FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Narges Mohammadi's release on bail allows her access to medical care, addressing her deteriorating health.\", \"affected_sdgs\": [3, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The release is conditional and temporary, with no guarantee of long-term freedom or justice for her activism.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 18\", \"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The conditional release of Narges Mohammadi for medical treatment is a limited positive step for her health and human rights, but it does not address the broader repression of dissent in Iran.\", \"snapshot_score\": 3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Official confirmation of her full release or re-imprisonment\", \"Changes in Iran's human rights policies affecting political prisoners\", \"International pressure or sanctions related to Iran's treatment of activists\"], \"revaluation_checkpoint\": \"2028-05-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Iran implements broader human rights reforms, leading to the release of other political prisoners.\", \"probability\": 0.2, \"score\": 7}, {\"name\": \"B\", \"description\": \"Mohammadi's health stabilizes, but her legal status remains uncertain with no political change.\", \"probability\": 0.6, \"score\": 2}, {\"name\": \"C\", \"description\": \"Repression intensifies, and Mohammadi is re-arrested or denied medical care.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.9, \"final_score\": 2.45, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 6, \"justification\": \"Conditional release for medical reasons is a limited positive, but does not address systemic repression.\", \"event_country\": \"Iran\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Release of imprisoned Nobel Peace laureate Narges Mohammadi on bail for urgent medical treatment, enabling her to receive care outside prison\", \"affected_sdgs\": [3, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Continued detention of a human rights defender under restrictive conditions, indicating ongoing systemic repression in Iran\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 19\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}], \"ethical_synthesis\": \"The release of Narges Mohammadi for medical treatment is a significant positive step that upholds her right to health and freedom from arbitrary detention under UDHR and SDG 3. However, her continued detention under harsh conditions and the systemic repression it represents remain grave ethical violations, particularly of UDHR Article 9 and UNDRIP.\", \"snapshot_score\": 6.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Re-imprisonment of Narges Mohammadi after medical treatment\", \"Escalation of state repression against human rights defenders in Iran\", \"International pressure leading to further releases or continued crackdowns\"], \"revaluation_checkpoint\": \"2028-05-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Sustained international pressure leads to Mohammadi's full release and improved human rights conditions in Iran\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Mohammadi is re-imprisoned after treatment, but international scrutiny limits further abuses\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Iran escalates repression, leading to further detentions and international condemnation\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.55, \"final_score\": 3.81, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Release for medical treatment is a positive step, but systemic repression remains a grave concern.\", \"event_country\": \"Iran\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.31, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Institutional action enables harm by releasing under conditions that do not address systemic repression.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the action as enabling harm (conditional release without systemic change). Analyst B's NEUTRAL stance misattributes the ethical weight to the subject's rights rather than the institutional action's permissiveness of harm.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: releasing a Nobel laureate for medical treatment is a positive human‑rights step, should be BURN, not MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-10T23:39:38.951011+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
