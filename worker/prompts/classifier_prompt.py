@@ -44,11 +44,25 @@ INVALID examples:
 - Generic news briefs / headline digests / daily summaries (no single-event focus)
 - Historical analysis or retrospective with no new action
 
+INVALID — be strict on these even when a state actor or institution is mentioned:
+The presence of police, courts, customs, or any official body in the article does NOT automatically make the article actionable. CARBON WORLD scores systemic decisions, not individual incidents.
+- Routine policing of individuals: arrests for misdemeanors, public-nuisance cases, drunk-and-disorderly, drug-possession, in-flight or in-public misbehaviour, traffic incidents, single-person consumer disputes. Police involvement does not lift a private incident.
+- Single-person / single-family human-interest oddities: eccentric individual profiles, unusual rebuilds, exotic-pet adoption stories, "self-proclaimed X" features. Local authorities being annoyed by them is irrelevant.
+- Live news tickers / running blog updates on a still-unfolding event with NO decision yet — titles starting with "Live,", "EN DIRECT,", "In direct,", "Live updates:" or formatted as a continuous-coverage stream. Wait for a concrete decision in a follow-up article.
+- Threats, ultimatums, warnings, or "says it will" statements with no action taken: "X threatens to retaliate", "X warns of consequences", "X says it will X if Y". These are speculation about future possibilities, not actions.
+- Diplomatic meetings / summits / state visits / phone calls with no concrete announced outcome (the meeting itself is the only news).
+- Analytical / explanatory framing-pieces without a concrete action: titles starting with "Why has X", "Was X", "How X works", "What if X", "Why is X", "How does X". These are journalist-led explainers, not events.
+- Pure technical or scientific announcements with no rights/environmental policy or community-deployment dimension: lab breakthroughs, sensor innovations, methodology improvements, prototype reveals — interesting but not yet actionable.
+- Schedule items, ceremony details, parade reductions, programme announcements.
+- Reports of crimes, deaths, accidents, or disasters with no new institutional response described in this article (the bare incident, not a policy change).
+
+The STRUCTURAL MARKERS rule (named actor + concrete mechanism + outcome) does NOT override these patterns. A police arrest of one person, a single home rebuilt, a scientist's lab announcement — these all have "named actor + mechanism" but they are not what CARBON WORLD measures. The system evaluates decisions affecting people, ecosystems, or governance at scale: laws, rulings with precedent, sanctions, treaties, registered organizations' operations, peer-reviewed reports with policy implications, documented community/citizen actions with measurable participation.
+
 IMPORTANT RULE: Prefer STRUCTURAL MARKERS (named actor + concrete mechanism + implied or documented outcome) over PRECISE FIGURES in the article. A journalist may not always put all chiffres in the lede. If the article names a registered cooperative, a specific NGO operation, or a named scientific institution producing a concrete deliverable, mark it VALID — the Analyst agent will filter further with full 4D + 7-framework evaluation.
 
 IMPORTANT: If the title is NOT in English, you MUST translate it to English in the "title_en" field.
 
-Be PERMISSIVE on state-level and structured civil-society actions: when in doubt, mark as VALID and let the downstream Analyst filter. Be STRICTER on pure opinion/speculation/analysis without an organized actor.
+Be PERMISSIVE on state-level systemic actions and structured civil-society actions: when in doubt about a law, a ruling, an NGO operation, or a community campaign, mark VALID and let the downstream Analyst filter. Be STRICT on the explicit INVALID patterns above — those are not "borderline" cases, they are out-of-scope by design.
 
 Respond ONLY with valid JSON, nothing else:
 {"valid": true, "category": "short category", "title_en": "English title (or original if already English)"}
@@ -104,11 +118,25 @@ INVALID examples:
 - Generic news briefs / headline digests / daily summaries (no single-event focus)
 - Historical analysis or retrospective with no new action
 
+INVALID — be strict on these even when a state actor or institution is mentioned:
+The presence of police, courts, customs, or any official body in the article does NOT automatically make the article actionable. CARBON WORLD scores systemic decisions, not individual incidents.
+- Routine policing of individuals: arrests for misdemeanors, public-nuisance cases, drunk-and-disorderly, drug-possession, in-flight or in-public misbehaviour, traffic incidents, single-person consumer disputes. Police involvement does not lift a private incident.
+- Single-person / single-family human-interest oddities: eccentric individual profiles, unusual rebuilds, exotic-pet adoption stories, "self-proclaimed X" features. Local authorities being annoyed by them is irrelevant.
+- Live news tickers / running blog updates on a still-unfolding event with NO decision yet — titles starting with "Live,", "EN DIRECT,", "In direct,", "Live updates:" or formatted as a continuous-coverage stream. Wait for a concrete decision in a follow-up article.
+- Threats, ultimatums, warnings, or "says it will" statements with no action taken: "X threatens to retaliate", "X warns of consequences", "X says it will X if Y". These are speculation about future possibilities, not actions.
+- Diplomatic meetings / summits / state visits / phone calls with no concrete announced outcome (the meeting itself is the only news).
+- Analytical / explanatory framing-pieces without a concrete action: titles starting with "Why has X", "Was X", "How X works", "What if X", "Why is X", "How does X". These are journalist-led explainers, not events.
+- Pure technical or scientific announcements with no rights/environmental policy or community-deployment dimension: lab breakthroughs, sensor innovations, methodology improvements, prototype reveals — interesting but not yet actionable.
+- Schedule items, ceremony details, parade reductions, programme announcements.
+- Reports of crimes, deaths, accidents, or disasters with no new institutional response described in this article (the bare incident, not a policy change).
+
+The STRUCTURAL MARKERS rule (named actor + concrete mechanism + outcome) does NOT override these patterns. A police arrest of one person, a single home rebuilt, a scientist's lab announcement — these all have "named actor + mechanism" but they are not what CARBON WORLD measures. The system evaluates decisions affecting people, ecosystems, or governance at scale: laws, rulings with precedent, sanctions, treaties, registered organizations' operations, peer-reviewed reports with policy implications, documented community/citizen actions with measurable participation.
+
 IMPORTANT RULE: Prefer STRUCTURAL MARKERS (named actor + concrete mechanism + implied or documented outcome) over PRECISE FIGURES in the article. A journalist may not always put all numbers in the lede. If the article names a registered cooperative, a specific NGO operation, or a named scientific institution producing a concrete deliverable, mark it VALID — the Analyst agent will filter further with the full 4D + 7-framework evaluation.
 
 IMPORTANT: If a title is NOT in English, you MUST translate it to English in the "title_en" field.
 
-Be PERMISSIVE on state-level and structured civil-society actions: when in doubt, mark as VALID and let the downstream Analyst filter. Be STRICTER on pure opinion/speculation/analysis without an organized actor.
+Be PERMISSIVE on state-level systemic actions and structured civil-society actions: when in doubt about a law, a ruling, an NGO operation, or a community campaign, mark VALID and let the downstream Analyst filter. Be STRICT on the explicit INVALID patterns above — those are not "borderline" cases, they are out-of-scope by design.
 
 You MUST respond with a JSON ARRAY — one object per article in INDEX ORDER. The array length MUST equal the number of articles sent. Do not omit any index.
 
