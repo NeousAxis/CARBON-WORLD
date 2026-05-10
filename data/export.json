@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-10T14:39:23.354404+00:00",
-  "total_events": 469,
+  "generated_at": "2026-05-10T15:09:47.441032+00:00",
+  "total_events": 470,
   "total_burned": 510201000,
-  "total_minted": 699658750,
+  "total_minted": 700158750,
   "pending_reviews": 40,
   "events": [
+    {
+      "id": 470,
+      "event_title": "2026 global report shows retailers still falling short on sustainable chocolate",
+      "event_url": "https://phys.org/news/2026-05-global-retailers-falling-short-sustainable.html",
+      "event_source": "Phys.org",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.44,
+      "confidence": 7,
+      "justification": "Widespread failure to ensure ethical cocoa supply chains outweighs minor progress. | The report highlights a systemic failure in the chocolate industry where progress by some companies is overshadowed by widespread non-compliance with sustainable and ethical practices. The lack of transparency and accountability in cocoa supply chains perpetuates poverty, labor exploitation, and environmental degradation, undermining multiple SDGs.",
+      "tx_hash": "2gVse5ph4UUyAtC8U4bsrVSvYTBhXvDZWMafmtsHeGKPP3VXb2DJt7uxca6CTKFXDNXZKkNoExeH2SBsfagisFPK",
+      "created_at": "2026-05-10T15:09:45.612556+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Some companies are improving sustainability practices in the chocolate industry, indicating incremental progress toward responsible sourcing.\", \"affected_sdgs\": [12, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Many retailers are failing to ensure transparent and accountable cocoa supply chains, leaving cocoa farming communities vulnerable to exploitation and environmental harm.\", \"affected_sdgs\": [1, 8, 12, 15], \"violated_rights\": [\"UDHR Article 23\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 469,
       "event_title": "Bolivia in tension: cracks in President Rodrigo Paz’s environmental policy",
@@ -10328,8 +10350,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 50,
-        "total_amount": 113700000
+        "count": 49,
+        "total_amount": 113250000
       },
       {
         "country": "Australia",
@@ -10369,14 +10391,14 @@
         "total_amount": 30900000
       },
       {
-        "country": "Brazil",
-        "count": 5,
-        "total_amount": 21050000
-      },
-      {
         "country": "Canada",
         "count": 4,
         "total_amount": 26000000
+      },
+      {
+        "country": "Brazil",
+        "count": 4,
+        "total_amount": 20700000
       }
     ],
     "top_regions_sustainable": [
@@ -10386,24 +10408,24 @@
         "events": 37
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.263,
-        "events": 38
-      },
-      {
         "region": "Oceania",
         "burn_ratio": 0.25,
         "events": 16
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.238,
-        "events": 63
+        "region": "North America",
+        "burn_ratio": 0.235,
+        "events": 68
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.232,
-        "events": 69
+        "region": "Europe",
+        "burn_ratio": 0.226,
+        "events": 62
+      },
+      {
+        "region": "Latin America",
+        "burn_ratio": 0.222,
+        "events": 36
       }
     ],
     "top_regions_destructive": [
@@ -10414,23 +10436,23 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.8,
-        "events": 25
+        "mint_ratio": 0.792,
+        "events": 24
       },
       {
         "region": "North America",
-        "mint_ratio": 0.768,
-        "events": 69
+        "mint_ratio": 0.765,
+        "events": 68
+      },
+      {
+        "region": "Latin America",
+        "mint_ratio": 0.75,
+        "events": 36
       },
       {
         "region": "Oceania",
         "mint_ratio": 0.75,
         "events": 16
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.711,
-        "events": 38
       }
     ],
     "supply_trend_7d": [
@@ -10466,7 +10488,7 @@
       },
       {
         "date": "2026-05-10",
-        "net_minted": 7500000,
+        "net_minted": 8000000,
         "net_burned": 0
       }
     ],
@@ -10484,7 +10506,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 95,
-        "negative": 211,
+        "negative": 212,
         "event_ids_positive": [
           437,
           433,
@@ -10583,6 +10605,7 @@
           145
         ],
         "event_ids_negative": [
+          470,
           469,
           468,
           467,
@@ -10798,7 +10821,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 168,
+        "negative": 169,
         "event_ids_positive": [
           430,
           415,
@@ -10835,6 +10858,7 @@
           159
         ],
         "event_ids_negative": [
+          470,
           469,
           466,
           464,
@@ -11007,12 +11031,13 @@
       },
       "ILO": {
         "positive": 2,
-        "negative": 9,
+        "negative": 10,
         "event_ids_positive": [
           361,
           193
         ],
         "event_ids_negative": [
+          470,
           387,
           380,
           341,
@@ -11274,14 +11299,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.0,
-      "mainstream_pct": 40.0,
+      "niche_pct": 61.8,
+      "mainstream_pct": 38.2,
       "total_sources_used": 55,
-      "articles_processed": 322
+      "articles_processed": 318
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 322,
+      "total_events": 318,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -11381,8 +11406,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 47,
-        "burn_count": 21,
+        "count": 46,
+        "burn_count": 20,
         "mint_count": 26,
         "event_ids": [
           467,
@@ -11430,15 +11455,14 @@
           155,
           146,
           145,
-          142,
-          141
+          142
         ]
       },
       {
         "name": "Defense",
-        "count": 36,
+        "count": 35,
         "burn_count": 0,
-        "mint_count": 36,
+        "mint_count": 35,
         "event_ids": [
           468,
           464,
@@ -11474,8 +11498,7 @@
           187,
           177,
           174,
-          143,
-          139
+          143
         ]
       },
       {
@@ -11515,9 +11538,9 @@
       },
       {
         "name": "Construction",
-        "count": 21,
+        "count": 20,
         "burn_count": 8,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           465,
           464,
@@ -11538,14 +11561,13 @@
           183,
           182,
           168,
-          152,
-          138
+          152
         ]
       },
       {
         "name": "Tech",
-        "count": 16,
-        "burn_count": 6,
+        "count": 15,
+        "burn_count": 5,
         "mint_count": 10,
         "event_ids": [
           441,
@@ -11562,14 +11584,13 @@
           209,
           203,
           154,
-          142,
-          137
+          142
         ]
       },
       {
         "name": "Transport",
-        "count": 15,
-        "burn_count": 3,
+        "count": 14,
+        "burn_count": 2,
         "mint_count": 8,
         "event_ids": [
           445,
@@ -11585,15 +11606,14 @@
           234,
           180,
           166,
-          155,
-          137
+          155
         ]
       },
       {
         "name": "Water",
-        "count": 13,
+        "count": 12,
         "burn_count": 7,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           450,
           437,
@@ -11606,16 +11626,16 @@
           258,
           253,
           199,
-          144,
-          138
+          144
         ]
       },
       {
         "name": "Agriculture",
-        "count": 8,
+        "count": 9,
         "burn_count": 4,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          470,
           450,
           397,
           379,
@@ -11628,18 +11648,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 98,
+      "total_burn": 95,
       "direct_action": {
         "count": 84,
-        "pct": 85.7
+        "pct": 88.4
       },
       "editorial_consciousness": {
         "count": 11,
-        "pct": 11.2
+        "pct": 11.6
       },
       "untyped": {
-        "count": 3,
-        "pct": 3.1
+        "count": 0,
+        "pct": 0.0
       }
     },
     "burn_composition_all_time": {
@@ -11658,29 +11678,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 216,
+      "total_mint": 215,
       "direct_action": {
-        "count": 196,
-        "pct": 90.7
+        "count": 197,
+        "pct": 91.6
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 6.9
+        "pct": 7.0
       },
       "untyped": {
-        "count": 5,
-        "pct": 2.3
+        "count": 3,
+        "pct": 1.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 334,
+      "total_mint": 335,
       "direct_action": {
-        "count": 295,
-        "pct": 88.3
+        "count": 296,
+        "pct": 88.4
       },
       "editorial_alarm": {
         "count": 34,
-        "pct": 10.2
+        "pct": 10.1
       },
       "untyped": {
         "count": 5,
@@ -11689,8 +11709,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 118,
-      "institutional": 204,
-      "citizen_ratio": 0.366,
+      "institutional": 200,
+      "citizen_ratio": 0.371,
       "daily": [
         {
           "date": "2026-05-04",
@@ -11725,7 +11745,7 @@
         {
           "date": "2026-05-10",
           "citizen": 3,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -11849,6 +11869,7 @@
         142
       ],
       "event_ids_institutional": [
+        470,
         468,
         467,
         466,
@@ -12047,12 +12068,7 @@
         151,
         150,
         148,
-        147,
-        141,
-        140,
-        139,
-        138,
-        137
+        147
       ]
     }
   }
