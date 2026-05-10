@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-10T09:11:27.404694+00:00",
-  "total_events": 463,
+  "generated_at": "2026-05-10T09:39:47.321104+00:00",
+  "total_events": 464,
   "total_burned": 510201000,
-  "total_minted": 693358750,
-  "pending_reviews": 53,
+  "total_minted": 694858750,
+  "pending_reviews": 31,
   "events": [
+    {
+      "id": 464,
+      "event_title": "With Starlink, Elon Musk Has Won the Battle of Satellites",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/10/avec-starlink-elon-musk-a-gagne-la-bataille-des-satellites_6687693_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.32,
+      "confidence": 7,
+      "justification": "Private control of critical satellite infrastructure undermines sovereignty and accountability. | The article highlights a dual ethical landscape: Starlink's integration into military operations creates significant risks to state sovereignty and human rights through private sector control of critical infrastructure, while the European IRIS² initiative represents a positive step toward technological sovereignty and reduced dependence on unaccountable actors. The net ethical position is negative d",
+      "tx_hash": "5MgB8kN5HbSAkcng6hgiXmx5vicdG53qJLH6fKrhpYM3djrJvrtxMSbLCDzcbUHz1cPuM4rZcjDUaSyRn4mFwWgD",
+      "created_at": "2026-05-10T09:39:46.074673+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"European initiative IRIS² aims to develop sovereign satellite infrastructure to counterbalance Starlink's dominance, enhancing technological sovereignty and reducing reliance on private actors in critical infrastructure\", \"affected_sdgs\": [9, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Starlink's military integration in Ukraine and Iran enables private actor control over critical satellite infrastructure, potentially undermining state sovereignty and creating asymmetric power dynamics in conflict zones\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Private sector dominance in space-based infrastructure raises concerns about accountability, transparency, and long-term strategic control over essential communication and surveillance capabilities\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 463,
       "event_title": "Brazil police seize devices from bird expert in trafficking probe linked to Vantara zoo",
@@ -1246,13 +1268,13 @@
       "amount_crbn": 1500000,
       "final_score": -4.09,
       "confidence": 9,
-      "justification": "Public insults against judicial authorities undermine judicial independence and the rule of law. | The act of publicly insulting judicial authorities directly undermines the principles of judicial independence and the rule of law, core to SDG 16. It also constitutes a violation of freedom of expression protections for the judiciary and the public's right to fair legal processes under UDHR Articles 10 and 19.",
-      "tx_hash": "2aXXkfgSFDPSYxjw1JGNHuEYSJ3W5QsURPLy97XNMUS4jWa5girxVPaDdtbX9nP5x2Udz8G2dckZFtD6oMm7sT3z",
+      "justification": "[CORRECTED 2026-05-10: geo reattributed from France to United States. Action scored is Musk insulting French magistrates (US actor). Original MINT for FR was reversed earlier today; this new MINT for US restores the negative supply impact attributed to the correct actor. Reattribution TX: 4bSLTG7iacABiD9xC5qHBJjLntnwshxHGvPM7Wz7Uo5RtPU75PnzJDg7Zpx4C8xrkE4dBBgHBXUEkHsyZyWYigmQ] Public insults against judicial authorities undermine judicial independence and the rule of law.",
+      "tx_hash": "4bSLTG7iacABiD9xC5qHBJjLntnwshxHGvPM7Wz7Uo5RtPU75PnzJDg7Zpx4C8xrkE4dBBgHBXUEkHsyZyWYigmQ",
       "created_at": "2026-05-09T04:12:54.924549+00:00",
       "embedding": null,
       "reused_from_event_id": null,
-      "country": "France",
-      "region": "Europe",
+      "country": "United States",
+      "region": "North America",
       "administration": "France-Renaissance",
       "positive_aspects_json": null,
       "negative_aspects_json": "[{\"description\": \"Elon Musk publicly insults French magistrates investigating potential abuses on his social network X, undermining judicial independence and the rule of law\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
@@ -10196,8 +10218,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 48,
-        "total_amount": 110700000
+        "count": 49,
+        "total_amount": 112200000
       },
       {
         "country": "Australia",
@@ -10210,14 +10232,14 @@
         "total_amount": 43150000
       },
       {
+        "country": "France",
+        "count": 9,
+        "total_amount": 7750000
+      },
+      {
         "country": "Argentina",
         "count": 9,
         "total_amount": 8465000
-      },
-      {
-        "country": "China",
-        "count": 9,
-        "total_amount": 41350000
       }
     ],
     "top_countries_burn": [
@@ -10270,8 +10292,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.239,
-        "events": 67
+        "burn_ratio": 0.235,
+        "events": 68
       }
     ],
     "top_regions_destructive": [
@@ -10287,8 +10309,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.761,
-        "events": 67
+        "mint_ratio": 0.765,
+        "events": 68
       },
       {
         "region": "Oceania",
@@ -10334,7 +10356,7 @@
       },
       {
         "date": "2026-05-10",
-        "net_minted": 1200000,
+        "net_minted": 2700000,
         "net_burned": 0
       }
     ],
@@ -10352,7 +10374,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 95,
-        "negative": 207,
+        "negative": 208,
         "event_ids_positive": [
           437,
           433,
@@ -10451,6 +10473,7 @@
           145
         ],
         "event_ids_negative": [
+          464,
           452,
           451,
           450,
@@ -10662,7 +10685,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 167,
+        "negative": 168,
         "event_ids_positive": [
           430,
           415,
@@ -10699,6 +10722,7 @@
           159
         ],
         "event_ids_negative": [
+          464,
           452,
           450,
           449,
@@ -11136,11 +11160,11 @@
       "niche_pct": 61.8,
       "mainstream_pct": 38.2,
       "total_sources_used": 55,
-      "articles_processed": 318
+      "articles_processed": 319
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 318,
+      "total_events": 319,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -11293,10 +11317,11 @@
       },
       {
         "name": "Defense",
-        "count": 35,
+        "count": 36,
         "burn_count": 0,
-        "mint_count": 35,
+        "mint_count": 36,
         "event_ids": [
+          464,
           445,
           439,
           426,
@@ -11372,10 +11397,11 @@
       },
       {
         "name": "Construction",
-        "count": 20,
+        "count": 21,
         "burn_count": 8,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          464,
           450,
           422,
           371,
@@ -11487,10 +11513,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 213,
       "direct_action": {
-        "count": 193,
-        "pct": 91.0
+        "count": 194,
+        "pct": 91.1
       },
       "editorial_alarm": {
         "count": 14,
@@ -11498,18 +11524,18 @@
       },
       "untyped": {
         "count": 5,
-        "pct": 2.4
+        "pct": 2.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 328,
+      "total_mint": 329,
       "direct_action": {
-        "count": 290,
+        "count": 291,
         "pct": 88.4
       },
       "editorial_alarm": {
         "count": 33,
-        "pct": 10.1
+        "pct": 10.0
       },
       "untyped": {
         "count": 5,
@@ -11517,9 +11543,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 116,
+      "citizen": 117,
       "institutional": 202,
-      "citizen_ratio": 0.365,
+      "citizen_ratio": 0.367,
       "daily": [
         {
           "date": "2026-05-04",
@@ -11553,11 +11579,12 @@
         },
         {
           "date": "2026-05-10",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        464,
         452,
         437,
         436,
