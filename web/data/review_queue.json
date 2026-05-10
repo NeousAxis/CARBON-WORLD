@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-10T17:39:51.088992+00:00",
-  "total_pending": 42,
+  "generated_at": "2026-05-10T18:10:05.188369+00:00",
+  "total_pending": 43,
   "reviews": [
     {
       "id": 49,
@@ -838,6 +838,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-10T16:10:17.532568+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 113,
+      "event_title": "Iran may ‘give assurances on the use of nuclear facilities’",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/10/iran-may-give-assurances-on-the-use-of-nuclear?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Potential diplomatic negotiation on nuclear facilities use may reduce regional tensions and open pathways for future non-proliferation agreements\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Iran's refusal to destroy uranium or allow its removal maintains nuclear material that could be weaponized, undermining non-proliferation efforts and violating international nuclear safeguards\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The potential negotiation represents a tentative step toward diplomatic engagement, which could reduce immediate conflict risks. However, the refusal to dismantle or relocate nuclear material perpetuates a high-risk status quo, prioritizing sovereignty over global non-proliferation norms. The net ethical position is negative due to the unresolved proliferation threat.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Successful negotiation leading to uranium destruction or relocation\", \"Escalation of enrichment activities\", \"International sanctions imposed or lifted\", \"Regional military conflict involving nuclear facilities\"], \"revaluation_checkpoint\": \"2028-05-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic breakthrough leads to partial uranium destruction and IAEA verification, reducing proliferation risk\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Negotiations stall; Iran continues enrichment without IAEA access, risking regional escalation\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Military strike on nuclear facilities triggers regional war and nuclear crisis\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.05, \"final_score\": -2.86, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Negotiation attempt fails to address core proliferation risks, maintaining status quo of high-risk nuclear material.\", \"event_country\": \"Iran\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Potential diplomatic negotiation by Iran to provide assurances on the use of nuclear facilities, reducing immediate proliferation risks\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Iran's refusal to destroy uranium or allow its movement, maintaining nuclear material stockpiles that could pose long-term proliferation risks\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 11 (arbitrary detention risk)\", \"UDHR Article 28 (international order undermined)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The potential negotiation represents a step toward diplomatic engagement and reduced immediate proliferation risks, aligning with peace and justice (SDG 16). However, Iran's refusal to dismantle or relocate uranium stockpiles undermines long-term non-proliferation efforts and global security frameworks, creating a significant ethical tension between short-term diplomacy and long-term risks.\", \"snapshot_score\": 1.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1, \"revaluation_triggers\": [\"Iran destroys uranium stockpiles\", \"International inspections resume without restrictions\", \"New enrichment activities detected\", \"Regional conflict escalates involving nuclear facilities\"], \"revaluation_checkpoint\": \"2028-05-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Iran agrees to full IAEA inspections and dismantles uranium stockpiles, leading to normalized relations and regional de-escalation\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Iran maintains uranium stockpiles but allows limited inspections, resulting in ongoing tensions and sanctions\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Iran resumes unrestricted uranium enrichment, triggering military strikes or severe sanctions with global economic fallout\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -1.45, \"final_score\": -0.11, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Diplomatic gesture balanced by unresolved proliferation risks.\", \"event_country\": \"Iran\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.27, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action enables harm by maintaining high-risk nuclear material status quo.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (negotiation without dismantling) as enabling harm by preserving proliferation risks. Analyst B's neutrality overlooks the action's failure to reduce harm, focusing only on partial benefits.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-10T18:10:03.095581+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
