@@ -86,9 +86,9 @@ def main() -> int:
 
     # Mark as resolved in review_queue. resolve_review() returns False if the
     # update fails (DB lock, missing row, schema error). Don't continue to
-    # Phase 10 / Solana TX in that case — exit non-zero so the web route
-    # returns 500 and the UI surfaces the actual failure instead of showing
-    # "Done" while the row stays pending.
+    # Solana TX in that case — exit non-zero so the web route returns 500
+    # and the UI surfaces the actual failure instead of showing "Done"
+    # while the row stays pending.
     if not resolve_review(args.review_id, args.verdict, final_amount, args.reason):
         logger.error(
             "resolve_review() returned False for #%d — likely DB contention. Aborting.",
@@ -101,23 +101,23 @@ def main() -> int:
         )
         return 1
 
-    # Phase 10 — Human review feedback loop. Persist the embedding + final
-    # decision on the review_queue row so future events can match against
-    # this human-judged sample (calibrator + analyst hint).
+    # Phase 10 — set final_decision now (cheap, just a marker). The embedding
+    # is computed asynchronously by `worker/backfill_review_embeddings.py`
+    # (nightly cron). Doing the embedding inline used to add ~10 s to every
+    # approve/reverse/reject because each invocation cold-loaded the
+    # sentence-transformer model from disk. Embeddings are only consumed by
+    # the analyst's "PRIOR HUMAN REVIEW CONTEXT" lookup on future events,
+    # so being a few hours late is fine.
     try:
-        from semantic_cache import compute_embedding
         from db import _get_conn
-        text_for_embed = f"{review.get('event_title', '')} — {args.reason or ''}".strip()
-        emb = compute_embedding(text_for_embed)
         conn_h = _get_conn()
         conn_h.execute(
-            "UPDATE review_queue SET final_decision = ?, human_review_embedding = ? WHERE id = ?",
-            (final_decision or "REJECTED", emb, args.review_id),
+            "UPDATE review_queue SET final_decision = ? WHERE id = ?",
+            (final_decision or "REJECTED", args.review_id),
         )
         conn_h.commit()
-        logger.info("Persisted human review embedding for #%d (%s)", args.review_id, final_decision or "REJECTED")
     except Exception as exc:
-        logger.warning("Could not persist review embedding: %s", exc)
+        logger.warning("Could not persist final_decision marker for #%d: %s", args.review_id, exc)
 
     if final_decision is None:
         logger.info("Rejected — no on-chain action.")

@@ -1,7 +1,14 @@
 """
-backfill_review_embeddings.py — One-shot script to populate
-review_queue.human_review_embedding + final_decision for rows resolved
-before the Phase 10 schema migration (2026-05-03).
+backfill_review_embeddings.py — Nightly batch + one-shot backfill of the
+Phase 10 embedding column on resolved review_queue rows.
+
+Originally a one-shot to populate rows that pre-dated the Phase 10 schema
+migration (2026-05-03). Since 2026-05-10 it ALSO runs as a nightly cron
+because the inline embedding compute in `worker/resolve_review.py` was
+adding ~10 s to every approve/reverse/reject (cold load of
+sentence-transformer all-MiniLM-L6-v2 per Python invocation). The resolve
+CLI now writes only `final_decision` synchronously and leaves
+`human_review_embedding` NULL; this script fills the gap in batch.
 
 Reconstructs the 'final decision' from the existing fields:
   - human_verdict='approve'  → use suggested_decision (BURN/MINT/NEUTRAL)
@@ -13,11 +20,15 @@ Reconstructs the 'final decision' from the existing fields:
 Embedding text = event_title + ' — ' + (human_reason or '')
 
 Idempotent — only rows with NULL human_review_embedding are processed.
+Loads the sentence-transformer model exactly once per run, so a batch of
+N rows costs roughly 10 s + 0.02 s × N instead of 10 s × N.
 
 Usage:
     cd ~/CARBON-WORLD
     source venv/bin/activate
     python worker/backfill_review_embeddings.py
+
+Wrapped by: launcher/backfill_review_embeddings_nightly.sh (cron 03:20 UTC)
 """
 from __future__ import annotations
 
