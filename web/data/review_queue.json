@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T21:41:50.514623+00:00",
-  "total_pending": 84,
+  "generated_at": "2026-05-11T22:10:18.945548+00:00",
+  "total_pending": 85,
   "reviews": [
     {
       "id": 49,
@@ -1678,6 +1678,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T21:41:48.505699+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 155,
+      "event_title": "Hundreds displaced, medical services suspended amid gang violence in Haiti",
+      "event_url": "https://www.aljazeera.com/news/2026/5/11/hundreds-displaced-medical-services-suspended-amid-gang-violence-in-haiti?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Suspension of medical services by Doctors Without Borders due to gang violence, displacing hundreds and denying critical healthcare access\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 27\", \"CRC Article 24\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The suspension of medical services by a humanitarian organization due to gang violence constitutes a severe violation of fundamental rights to health and life. This action directly undermines SDG 3 (Good Health and Well-being) and the UDHR/CRC rights to medical care and protection from harm, with catastrophic immediate consequences for affected populations.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.0, \"revaluation_score\": -7.0, \"revaluation_triggers\": [\"Restoration of medical services within 30 days\", \"Government intervention securing hospital zones\", \"International humanitarian aid deployment\", \"Gang ceasefire or demobilization agreement\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Rapid international intervention secures medical facilities and restores services within weeks; gang violence subsides due to coordinated security and humanitarian efforts\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Prolonged suspension of services leads to mass casualties and disease outbreaks; international aid is delayed or insufficient\", \"probability\": 0.55, \"score\": -9}, {\"name\": \"C\", \"description\": \"Complete collapse of healthcare infrastructure; widespread famine and preventable deaths; state failure and regional spillover conflict\", \"probability\": 0.2, \"score\": -10}], \"prospective_score\": -8.15, \"final_score\": -8.56, \"decision\": \"MINT\", \"amount_cbwd\": 9500000, \"confidence\": 9, \"justification\": \"Severe humanitarian crisis with immediate, large-scale rights violations and no positive aspects.\", \"event_country\": \"Haiti\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Doctors Without Borders (MSF) suspends hospital operations due to safety concerns, demonstrating prioritization of staff and patient security over service continuation\", \"affected_sdgs\": [3], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Gang violence in Haiti displaces hundreds and suspends critical medical services, directly harming public health and safety\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 6\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Suspension of medical services by MSF due to gang violence exacerbates healthcare access issues for vulnerable populations\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The event highlights severe human rights violations and public health crises driven by gang violence in Haiti. While MSF's decision to suspend operations prioritizes safety, it also underscores the dire consequences of systemic instability and the erosion of basic rights. The net ethical judgment is overwhelmingly negative due to the scale of harm and direct violations of fundamental rights.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Implementation of effective gang disarmament and community safety programs\", \"Restoration of government control and rule of law in affected areas\", \"Reopening of suspended medical facilities with adequate security\", \"International humanitarian aid deployment with long-term stability guarantees\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"International intervention and gang disarmament lead to rapid stabilization, medical services resume within 6 months, and displaced populations return home\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial stabilization occurs, but gang violence persists in pockets, medical services remain suspended in high-risk areas, and displacement continues\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Gang violence escalates, medical services remain suspended indefinitely, and humanitarian crisis deepens with mass displacement and loss of life\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.05, \"final_score\": -6.14, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Gang violence and suspended medical services cause severe, ongoing harm to Haitian civilians.\", \"event_country\": \"Haiti\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -7.35, \"confidence\": 9, \"amount_cbwd\": 9500000, \"justification\": \"Institutional action (MSF suspension) punishes harm by prioritizing safety, but the underlying gang violence requires corrective justice.\", \"disagreement\": false, \"reason\": \"Both analysts agree on MINT, but the institutional action (MSF suspending services) is a protective measure against harm, warranting BURN. Reconciled score averages their final scores.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects | llm: Verdict BURN is opposite; MSF suspension worsens humanitarian crisis, harming rights and health—negative impact, should be MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 9500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T22:10:17.018459+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
