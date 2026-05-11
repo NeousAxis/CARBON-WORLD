@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T23:09:37.523946+00:00",
-  "total_pending": 85,
+  "generated_at": "2026-05-11T23:40:07.317640+00:00",
+  "total_pending": 86,
   "reviews": [
     {
       "id": 49,
@@ -1698,6 +1698,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T22:10:17.018459+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 156,
+      "event_title": "US trial hears witness claims of harassment over Chinese ‘secret police station’",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3353201/us-trial-hears-witness-claims-harassment-over-chinese-secret-police-station?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"A US government witness testified about harassment related to an alleged illegal Chinese police station, supporting transparency and accountability in foreign interference.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The alleged existence of a Chinese police station abroad raises concerns about extraterritorial enforcement and potential violations of host country sovereignty.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The testimony supports transparency and justice (SDG 16) by exposing potential foreign interference, but the alleged actions of the Chinese police station raise serious concerns about sovereignty and human rights.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Outcome of the trial and legal rulings on the station's legality\", \"Further evidence of harassment or foreign interference\", \"Policy changes in the US or China regarding extraterritorial police operations\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The trial results in a conviction and dismantling of the station, leading to stronger international norms against foreign interference.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"The trial ends inconclusively, with no clear resolution on the station's legality or the witness's claims.\", \"probability\": 0.55, \"score\": 0}, {\"name\": \"C\", \"description\": \"The station remains operational, and harassment claims are dismissed, emboldening further extraterritorial enforcement.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.75, \"final_score\": -1.69, \"decision\": \"MINT\", \"amount_cbwd\": 250000, \"confidence\": 6, \"justification\": \"The alleged actions undermine sovereignty and human rights, with uncertain legal resolution.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US government prosecution of an alleged illegal Chinese police station in New York, charging unauthorized foreign agent activity and obstruction of justice\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Witness testimony in a US court about harassment linked to protesting Chinese 'secret police station' activities, demonstrating freedom of expression and assembly\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Alleged establishment of Chinese 'secret police stations' overseas, potentially violating sovereignty and human rights of host countries\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 12\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Harassment of individuals protesting against Chinese police station activities, undermining freedom of expression\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The US prosecution of unauthorized foreign agent activity and obstruction of justice represents a positive enforcement of national sovereignty and rule of law (SDG 16). However, the alleged Chinese 'secret police stations' and associated harassment of protesters constitute serious violations of human rights and sovereignty, with significant ethical concerns.\", \"snapshot_score\": 3.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Dismissal or acquittal of the defendant\", \"International legal challenges to US jurisdiction\", \"Evidence of broader Chinese state involvement in overseas operations\", \"US-China diplomatic escalation\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"US successfully prosecutes the case, deterring similar activities and strengthening rule of law globally\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Case proceeds but with limited impact due to geopolitical tensions and legal complexities\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Case collapses due to lack of evidence or diplomatic pressure, emboldening similar activities\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 2.4, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Prosecution of unauthorized foreign agents aligns with rule of law but does not outweigh sovereignty violations.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.145, \"confidence\": 8, \"amount_cbwd\": 250000, \"justification\": \"The institutional action is the prosecution of unauthorized foreign agent activity, which protects legal sovereignty and justice.\", \"disagreement\": true, \"reason\": \"Both analysts labeled MINT, but the correct evaluation is BURN because the U.S. prosecution is a corrective action against foreign interference.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Score -0.145 is near neutral yet 250,000 CBWD are burned; token amount is wildly disproportionate to impact, violating scale‑mismatch rule.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 250000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T23:40:05.495475+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
