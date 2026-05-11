@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T20:43:04.437733+00:00",
-  "total_pending": 82,
+  "generated_at": "2026-05-11T21:12:52.412927+00:00",
+  "total_pending": 83,
   "reviews": [
     {
       "id": 49,
@@ -1638,6 +1638,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T19:10:15.356801+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 153,
+      "event_title": "How AI can lead to false arrests and wrongful convictions",
+      "event_url": "https://phys.org/news/2026-05-ai-false-wrongful-convictions.html",
+      "event_source": "Phys.org",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"AI-enhanced surveillance system misidentified a Doritos bag as a gun, leading to a 17-year-old student being falsely arrested, handcuffed, and traumatized by police in Baltimore\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 10\", \"CRC Article 37\", \"CRC Article 40\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The incident represents a severe violation of fundamental rights, including freedom from arbitrary detention and the right to a fair trial, with long-term psychological harm to a minor. The use of unproven AI surveillance technology in law enforcement directly undermines justice and child protection frameworks.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.0, \"revaluation_score\": -7.0, \"revaluation_triggers\": [\"State-wide review of AI surveillance policies\", \"Federal legislation on AI bias in policing\", \"Public backlash leading to policy reversal\", \"Technological improvements reducing false positives\"], \"revaluation_checkpoint\": \"2027-10-20\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Comprehensive federal AI regulation bans predictive policing and mandates accountability for false arrests, reducing incidents by 90%\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Patchwork state-level reforms reduce but do not eliminate false arrests, with continued reliance on flawed AI systems\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"No meaningful reform; AI surveillance expands with increased false arrests and systemic discrimination\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.85, \"final_score\": -7.06, \"decision\": \"MINT\", \"amount_cbwd\": 7000000, \"confidence\": 9, \"justification\": \"AI-driven false arrests violate human rights and child protection laws, warranting strong negative token action.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"AI-enhanced surveillance system in Baltimore misidentified a Doritos bag as a gun, leading to a 17-year-old student being falsely arrested at gunpoint, traumatizing him and violating his rights\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 10\", \"CRC Article 37\", \"CRC Article 40\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The incident represents a severe violation of fundamental rights, particularly for a minor, through the deployment of unproven AI surveillance technology. The false arrest and traumatic confrontation highlight systemic risks of AI in law enforcement, undermining justice and safety. The magnitude of harm is high due to the direct physical and psychological impact on the victim and the precedent for future misuse.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.0, \"revaluation_score\": -7.0, \"revaluation_triggers\": [\"Implementation of stricter AI oversight laws in Baltimore\", \"Public backlash leading to policy reversal\", \"Technological improvements reducing false positives\", \"Federal regulations on AI in policing\", \"Successful legal challenges against AI surveillance\"], \"revaluation_checkpoint\": \"2027-10-20\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Baltimore implements robust AI oversight, federal regulations ban unproven AI in policing, and public awareness leads to widespread rejection of such systems\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Partial reforms occur, but AI surveillance continues with improved accuracy, reducing but not eliminating false arrests\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"AI surveillance expands nationwide without oversight, leading to increased false arrests and systemic erosion of civil liberties\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.85, \"final_score\": -6.64, \"decision\": \"MINT\", \"amount_cbwd\": 7000000, \"confidence\": 9, \"justification\": \"AI-driven false arrest violates rights and undermines justice, warranting MINT.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -6.15, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"AI-driven false arrests violate human rights and child protection laws, warranting strong negative token action.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_positive_aspects",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 7000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T21:12:50.511692+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
