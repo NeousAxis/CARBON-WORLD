@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T06:10:10.748912+00:00",
-  "total_pending": 54,
+  "generated_at": "2026-05-11T07:10:38.619186+00:00",
+  "total_pending": 55,
   "reviews": [
     {
       "id": 49,
@@ -1078,6 +1078,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T04:39:07.246029+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 125,
+      "event_title": "Philippine Congress poised to impeach Vice President Sara Duterte",
+      "event_url": "https://www.aljazeera.com/news/2026/5/11/philippine-congress-poised-to-impeach-vice-president-sara-duterte?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Impeachment proceedings signal institutional accountability and potential restoration of public trust in governance.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Impeachment could destabilize political institutions and provoke social polarization if not conducted transparently and fairly.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 14\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The impeachment of Vice President Sara Duterte represents a significant step in upholding institutional accountability and the rule of law, aligning with SDG 16 and UDHR principles. However, the process carries risks of political instability and social division if not managed transparently and impartially.\", \"snapshot_score\": 3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Outcome of the impeachment trial\", \"Public perception of the process's fairness\", \"Impact on political stability and public trust\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Impeachment is ruled unconstitutional or dismissed, leading to political backlash and erosion of institutional trust.\", \"probability\": 0.2, \"score\": -5}, {\"name\": \"B\", \"description\": \"Impeachment is successful and leads to a more transparent and accountable political system.\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Impeachment process is prolonged and politicized, deepening societal divisions and weakening governance.\", \"probability\": 0.3, \"score\": -4}], \"prospective_score\": 0.7, \"final_score\": 2.0, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Impeachment proceedings carry significant risks of political instability and social division.\", \"event_country\": \"Philippines\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Congressional impeachment process against Vice President Sara Duterte for alleged misconduct, demonstrating institutional checks and balances in the Philippines\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Political instability and potential erosion of democratic norms due to impeachment process targeting a high-ranking official\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of weaponized impeachment processes undermining political stability and governance continuity\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The impeachment process represents a critical exercise of democratic accountability, aligning with SDG 16 by reinforcing rule of law and institutional checks. However, the political instability it may generate and the potential for weaponized use of impeachment processes pose risks to democratic stability and governance continuity.\", \"snapshot_score\": 3.5, \"trajectory_score\": 0.5, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Successful impeachment outcome\", \"Judicial review of impeachment process\", \"Public opinion shift\", \"International diplomatic reactions\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Impeachment process concludes with removal of Vice President, strengthening democratic institutions and accountability\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Impeachment process stalls or fails, leading to prolonged political tension but eventual stabilization\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Impeachment process escalates into broader political crisis, undermining democratic norms and governance\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.4, \"final_score\": 2.53, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Impeachment reinforces accountability but risks political instability.\", \"event_country\": \"Philippines\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 0.83, \"confidence\": 8, \"amount_cbwd\": 500000, \"justification\": \"Impeachment targets institutional accountability, punishing potential harm to governance.\", \"disagreement\": true, \"reason\": \"Analysts agreed on direction (MINT) but misapplied ethical lens. Institutional action (impeachment) aims to punish harm/protect rights, warranting BURN. NEUTRAL was incorrect.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T07:10:36.763977+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
