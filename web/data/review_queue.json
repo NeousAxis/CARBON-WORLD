@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T04:10:27.489525+00:00",
-  "total_pending": 53,
+  "generated_at": "2026-05-11T04:39:09.020061+00:00",
+  "total_pending": 54,
   "reviews": [
     {
       "id": 49,
@@ -1058,6 +1058,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T03:39:46.573410+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 124,
+      "event_title": "Thailand’s Thaksin Shinawatra released from prison",
+      "event_url": "https://www.aljazeera.com/news/2026/5/11/thailands-thaksin-shinawatra-released-from-prison?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Release of former Prime Minister Thaksin Shinawatra from prison on parole after serving part of his sentence\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Former leader convicted of serious crimes (corruption, abuse of power) released early, potentially undermining rule of law and public trust in justice system\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The release of Thaksin Shinawatra from prison on parole is a complex event with both positive and negative ethical dimensions. While it may reflect a step toward rehabilitation and reduced overcrowding in prisons, it also raises concerns about the integrity of the justice system and the message it sends about accountability for corruption and abuse of power. The net ethical judgment depends on the context of his conviction and the conditions of his parole.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Reconviction of Thaksin Shinawatra within parole period\", \"Public backlash leading to policy reversal on parole conditions\", \"New evidence emerging that challenges the legitimacy of his original conviction\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Thaksin remains law-abiding during parole, contributes positively to public discourse, and avoids further legal issues\", \"probability\": 0.3, \"score\": 3}, {\"name\": \"B\", \"description\": \"Thaksin complies with parole but faces political backlash, with no significant positive or negative impact on justice system integrity\", \"probability\": 0.5, \"score\": -1}, {\"name\": \"C\", \"description\": \"Thaksin violates parole terms or is implicated in new corruption scandals, further eroding public trust in the justice system\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.3, \"final_score\": -1.225, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Early release of convicted corrupt leader undermines justice and accountability.\", \"event_country\": \"Thailand\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Release of a political prisoner on parole, potentially reducing unjust detention and supporting human rights principles\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Parole release of a controversial figure linked to corruption allegations and political instability, raising concerns about accountability and rule of law\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The release of Thaksin Shinawatra on parole represents a step toward reducing unjust detention and aligns with human rights principles. However, the controversial nature of his case and corruption allegations undermine public trust in justice and accountability, creating a net ethical tension between individual rights and systemic integrity.\", \"snapshot_score\": 1.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Re-arrest or re-imprisonment due to parole violation\", \"New corruption charges or legal proceedings\", \"Political unrest or protests following release\", \"Public opinion shift against the parole decision\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Thaksin remains politically inactive, parole conditions are strictly enforced, and public trust in justice is gradually restored\", \"probability\": 0.3, \"score\": 4}, {\"name\": \"B\", \"description\": \"Thaksin resumes political activity, leading to renewed controversy but no major legal consequences, maintaining a fragile balance\", \"probability\": 0.5, \"score\": 0}, {\"name\": \"C\", \"description\": \"Thaksin's release triggers mass protests, legal challenges, or new corruption investigations, destabilizing Thailand's political landscape\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -0.6, \"final_score\": 0.15, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Parole release balances human rights with accountability concerns, net effect neutral.\", \"event_country\": \"Thailand\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.5375, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Parole release may reflect procedural compliance but risks signaling leniency toward corruption.\", \"disagreement\": true, \"reason\": \"The institutional action is the release of a convicted leader on parole. While it may align with procedural rights, it risks weakening accountability for corruption, thus leaning toward MINT.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T04:39:07.246029+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
