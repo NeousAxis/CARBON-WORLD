@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T03:11:06.787939+00:00",
-  "total_pending": 52,
+  "generated_at": "2026-05-11T03:39:48.319531+00:00",
+  "total_pending": 53,
   "reviews": [
     {
       "id": 49,
@@ -1038,6 +1038,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T03:11:05.031276+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 123,
+      "event_title": "Former Thai Prime Minister Thaksin Shinawatra released from prison",
+      "event_url": "https://www.france24.com/fr/asie-pacifique/20260511-ancien-premier-ministre-thailandais-thaksin-shinawatra-libere-prison-corruption-caution-bracelet-electronique-politique",
+      "event_source": "France 24 FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Thaksin Shinawatra's release from prison may signal a step toward legal rehabilitation and reintegration into society.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Thaksin Shinawatra's release may be perceived as lenient treatment for a high-profile corruption case, potentially undermining public trust in judicial fairness.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Thaksin Shinawatra's release from prison has both rehabilitative potential and risks of undermining judicial credibility. The positive aspect of reintegration is moderate, while the negative aspect of perceived leniency is more significant.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Thaksin Shinawatra's behavior during probation\", \"Public perception of judicial fairness in Thailand\", \"Any new legal developments or political actions taken by Thaksin\"], \"revaluation_checkpoint\": \"2028-09-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Thaksin complies with probation terms and refrains from political activity, leading to public acceptance of the judicial process.\", \"probability\": 0.25, \"score\": 2}, {\"name\": \"B\", \"description\": \"Thaksin re-enters politics and faces renewed legal or public scrutiny, causing political instability.\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Thaksin is re-arrested for new legal violations, further damaging judicial credibility.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -2.35, \"final_score\": -2.34, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 6, \"justification\": \"Thaksin Shinawatra's release raises concerns about judicial fairness and public trust.\", \"event_country\": \"Thailand\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Release of a former head of government from prison after serving a corruption sentence, reducing over-incarceration and allowing reintegration into society\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Use of electronic monitoring (bracelet) as an alternative to further imprisonment, promoting humane penal practices\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Conviction and imprisonment of a former head of government for corruption, reflecting systemic issues in governance and rule of law\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Political context of the conviction and release may reflect ongoing political tensions and selective justice in Thailand\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The release of Thaksin Shinawatra from prison is a positive step toward reducing excessive incarceration and promoting humane penal alternatives. However, the underlying conviction for corruption highlights systemic governance challenges and potential political motivations behind the legal process. The net ethical impact is cautiously positive, given the immediate humanitarian benefit of release outweighs the concerns about the justice system's integrity.\", \"snapshot_score\": 2.5, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Re-arrest or re-imprisonment of Thaksin Shinawatra within probation period\", \"New corruption charges or investigations against Thaksin or associates\", \"Political instability or coup in Thailand affecting judicial independence\", \"Reforms to Thailand's anti-corruption laws or penal system\"], \"revaluation_checkpoint\": \"2028-05-11\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Thaksin remains free, contributes to political stability, and Thailand implements judicial reforms reducing corruption\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Thaksin faces new legal challenges or political interference, but avoids imprisonment\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Thaksin is re-imprisoned or Thailand experiences a democratic backslide, reversing recent gains\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.1, \"final_score\": 1.475, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Release reduces harm but conviction reflects systemic issues; net neutral impact.\", \"event_country\": \"Thailand\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.59, \"confidence\": 8, \"amount_cbwd\": 125000, \"justification\": \"Institutional action enables harm by reducing accountability for corruption conviction.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (release) as undermining judicial fairness, while Analyst B misinterprets the action's ethical weight by overemphasizing systemic issues over the harm of reduced punishment.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict BURN contradicts article; releasing a corrupt leader reduces accountability, a negative impact, should be MINT. Polarity error and justification mismatch.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T03:39:46.573410+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
