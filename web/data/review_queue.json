@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T21:12:52.412927+00:00",
-  "total_pending": 83,
+  "generated_at": "2026-05-11T21:41:50.514623+00:00",
+  "total_pending": 84,
   "reviews": [
     {
       "id": 49,
@@ -1658,6 +1658,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T21:12:50.511692+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 154,
+      "event_title": "Trump to raise Taiwan, Jimmy Lai case when he meets Xi in Beijing this week",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3353197/trump-raise-taiwan-jimmy-lai-case-when-he-meets-xi-beijing-week?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Diplomatic engagement between US and China to discuss regional stability and human rights issues\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential instrumentalization of human rights cases (e.g., Jimmy Lai) as leverage in geopolitical negotiations, risking politicization of justice\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Discussion of Taiwan without clear commitment to sovereignty or democratic principles, risking escalation of tensions\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The meeting between Trump and Xi represents a diplomatic effort to address regional stability and human rights, which aligns with SDG 16. However, the potential politicization of Jimmy Lai's case and the ambiguous stance on Taiwan undermine human rights protections and risk exacerbating geopolitical tensions. The net ethical position is mixed, with significant risks outweighing the benefits.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_triggers\": [\"Release or fair trial of Jimmy Lai confirmed\", \"Clear US commitment to Taiwan's democratic sovereignty\", \"Escalation of military posturing in the Taiwan Strait\", \"Withdrawal of US-China trade or diplomatic agreements\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Constructive dialogue leads to de-escalation and human rights protections for Jimmy Lai\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Status quo persists with no tangible progress on human rights or Taiwan sovereignty\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Geopolitical tensions escalate, with China retaliating against US pressure on Taiwan or Lai's case\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.85, \"final_score\": -2.16, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Diplomatic meeting risks politicizing human rights and escalating tensions.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Diplomatic engagement between US and China leaders to discuss sensitive geopolitical issues\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential use of human rights cases (e.g., Jimmy Lai) as leverage in diplomatic negotiations, risking instrumentalization of justice\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Discussion of Taiwan without clear commitment to sovereignty or democratic principles, risking ambiguity in US-China relations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The diplomatic engagement itself is a positive step toward dialogue and conflict de-escalation, aligning with SDG 16. However, the instrumentalization of human rights cases (e.g., Jimmy Lai) and the ambiguous handling of Taiwan’s sovereignty undermine core UDHR principles, creating a net negative ethical position.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Release or fair trial of Jimmy Lai\", \"Clear US commitment to Taiwan sovereignty\", \"Concrete human rights protections in final agreement\", \"Withdrawal of extradition requests or political pressure on Hong Kong cases\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic breakthrough leads to reduced tensions and human rights protections for Lai and others\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Ambiguous outcomes with no tangible improvements in human rights or Taiwan sovereignty\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Instrumentalization of human rights cases worsens repression in Hong Kong and escalates US-China tensions\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.85, \"final_score\": -2.16, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Diplomatic engagement undermined by instrumentalization of human rights and ambiguous sovereignty stance.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.16, \"confidence\": 7, \"amount_cbwd\": 500000, \"justification\": \"Diplomatic meeting risks politicizing human rights and escalating tensions.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict MINT flips polarity: raising Jimmy Lai and Taiwan issues supports human rights and self‑determination, a positive (BURN) impact, not negative.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-11T21:41:48.505699+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
