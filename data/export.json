@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-11T13:09:46.489668+00:00",
-  "total_events": 479,
+  "generated_at": "2026-05-11T13:41:14.254077+00:00",
+  "total_events": 480,
   "total_burned": 510201000,
-  "total_minted": 729308750,
-  "pending_reviews": 66,
+  "total_minted": 730808750,
+  "pending_reviews": 68,
   "events": [
+    {
+      "id": 480,
+      "event_title": "The National Science Board purge, explained",
+      "event_url": "https://phys.org/news/2026-05-national-science-board-purge.html",
+      "event_source": "Phys.org",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.58,
+      "confidence": 8,
+      "justification": "Politicized dismissal of scientific oversight undermines institutional independence and public trust. | The dismissal of the National Science Board by the White House is a significant setback for scientific independence and governance, violating fundamental rights to scientific advancement. While the NSF itself remains a positive institution for education and innovation, the purge undermines its oversight and could erode public trust in science.",
+      "tx_hash": "3zFg92DSvQ3asiTyUv2wAsTkYGgrgtMBHKPwfSkmZPKD8ozDHq1Rz9rpfs177ua14PwiXwUDexH5PqCUfQ6ZDdUN",
+      "created_at": "2026-05-11T13:41:12.275154+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The National Science Foundation (NSF) is an independent federal agency supporting science and engineering across the U.S., aligning with SDG 4 (Quality Education) and SDG 9 (Industry, Innovation, and Infrastructure).\", \"affected_sdgs\": [4, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The White House dismissed the entire 22-person National Science Board, which oversees the NSF, undermining institutional independence and scientific governance.\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 27 (Right to Share in Scientific Advancement)\"], \"magnitude\": 8, \"frameworks\": [\"UDHR\", \"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 479,
       "event_title": "EU agrees to restore full trade ties with Syria",
@@ -10548,8 +10570,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 51,
-        "total_amount": 116250000
+        "count": 52,
+        "total_amount": 117750000
       },
       {
         "country": "Australia",
@@ -10607,8 +10629,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.225,
-        "events": 71
+        "burn_ratio": 0.222,
+        "events": 72
       },
       {
         "region": "Oceania",
@@ -10638,14 +10660,14 @@
         "events": 24
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.778,
+        "events": 72
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 0.778,
         "events": 18
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.775,
-        "events": 71
       },
       {
         "region": "Latin America",
@@ -10686,7 +10708,7 @@
       },
       {
         "date": "2026-05-11",
-        "net_minted": 25650000,
+        "net_minted": 27150000,
         "net_burned": 0
       }
     ],
@@ -10704,7 +10726,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 95,
-        "negative": 220,
+        "negative": 221,
         "event_ids_positive": [
           437,
           433,
@@ -10803,6 +10825,7 @@
           145
         ],
         "event_ids_negative": [
+          480,
           479,
           478,
           477,
@@ -11027,7 +11050,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 173,
+        "negative": 174,
         "event_ids_positive": [
           430,
           415,
@@ -11064,6 +11087,7 @@
           159
         ],
         "event_ids_negative": [
+          480,
           479,
           475,
           473,
@@ -11515,11 +11539,11 @@
       "niche_pct": 60.0,
       "mainstream_pct": 40.0,
       "total_sources_used": 55,
-      "articles_processed": 337
+      "articles_processed": 338
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 337,
+      "total_events": 338,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -11905,10 +11929,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 224,
+      "total_mint": 225,
       "direct_action": {
-        "count": 205,
-        "pct": 91.5
+        "count": 206,
+        "pct": 91.6
       },
       "editorial_alarm": {
         "count": 15,
@@ -11920,10 +11944,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 345,
+      "total_mint": 346,
       "direct_action": {
-        "count": 304,
-        "pct": 88.1
+        "count": 305,
+        "pct": 88.2
       },
       "editorial_alarm": {
         "count": 35,
@@ -11936,8 +11960,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 121,
-      "institutional": 216,
-      "citizen_ratio": 0.359,
+      "institutional": 217,
+      "citizen_ratio": 0.358,
       "daily": [
         {
           "date": "2026-05-05",
@@ -11972,7 +11996,7 @@
         {
           "date": "2026-05-11",
           "citizen": 1,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -12099,6 +12123,7 @@
         143
       ],
       "event_ids_institutional": [
+        480,
         479,
         478,
         476,
