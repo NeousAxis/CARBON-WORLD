@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-12T18:10:10.533590+00:00",
-  "total_pending": 122,
+  "generated_at": "2026-05-12T18:39:51.122310+00:00",
+  "total_pending": 123,
   "reviews": [
     {
       "id": 49,
@@ -2438,6 +2438,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-12T17:20:34.067868+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 193,
+      "event_title": "The fate of a wolf placed in captivity by the state, in violation of the law, stirs several ministries",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/12/le-sort-d-une-louve-placee-en-captivite-par-l-etat-en-contradiction-avec-le-droit-agite-plusieurs-ministeres_6688279_3244.html",
+      "event_source": "Le Monde Planete",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French ministries are actively engaged in addressing the illegal captivity of a wolf, indicating institutional responsiveness to wildlife law violations\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"A wolf was illegally placed in captivity by the state, violating wildlife protection laws and animal rights\", \"affected_sdgs\": [15], \"violated_rights\": [\"Universal Declaration of Animal Rights\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}], \"ethical_synthesis\": \"The illegal captivity of a wolf by state authorities is a clear violation of wildlife and animal rights, warranting corrective action. However, the subsequent engagement of multiple ministries to address the issue demonstrates institutional accountability and potential for resolution, balancing the ethical scales.\", \"snapshot_score\": -3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Ministries issue a binding ruling to release the wolf\", \"Legal reforms to prevent future violations\", \"Public backlash leads to policy changes\"], \"revaluation_checkpoint\": \"2028-05-12\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ministries successfully order the wolf's release and implement preventive measures\", \"probability\": 0.35, \"score\": 6}, {\"name\": \"B\", \"description\": \"Ministries delay action, leaving the wolf in captivity pending further review\", \"probability\": 0.45, \"score\": -2}, {\"name\": \"C\", \"description\": \"Ministries uphold the illegal captivity, exacerbating the violation\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.15, \"final_score\": -0.46, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Illegal state action against wildlife outweighs institutional response potential.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"State ministries are actively engaging with the illegal captivity of a wolf, indicating potential corrective action and legal enforcement against wildlife law violations\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"The initial act of placing a wolf in captivity by the state violates wildlife protection laws and undermines biodiversity conservation efforts\", \"affected_sdgs\": [15], \"violated_rights\": [\"UDHR Preamble (human responsibility to nature)\", \"Animal Rights Article 1 (right to freedom)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The state's illegal captivity of a wolf is a clear violation of wildlife protection laws and biodiversity principles. However, the subsequent engagement of multiple ministries suggests a potential path toward rectifying the violation, balancing immediate harm with institutional accountability.\", \"snapshot_score\": -3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"State issues a formal apology and corrective order\", \"Wolf is released into a suitable habitat\", \"Legal reforms are proposed to prevent future violations\", \"Public backlash leads to policy changes\", \"Wolf dies in captivity due to neglect\"], \"revaluation_checkpoint\": \"2028-05-12\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"State rectifies the violation by releasing the wolf and implementing legal safeguards, setting a precedent for wildlife protection\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"State delays action, leading to prolonged captivity and public outcry, but eventual release after legal pressure\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"State refuses to act, resulting in the wolf's death in captivity and systemic weakening of wildlife protections\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.7, \"final_score\": -0.45, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"State violation of wildlife law balanced by potential corrective action.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.455, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"The illegal captivity of the wolf by state authorities constitutes a violation of wildlife rights and law. The engagement of multiple ministries indicates a corrective institutional response.\", \"disagreement\": true, \"reason\": \"The illegal action by the state is a BURN, but the corrective institutional response reduces the score. NEUTRAL is insufficient as the violation is clear and actionable.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: illegal state captivity of a wolf harms wildlife, should be MINT (negative), not BURN (positive).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-12T18:39:49.144415+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
