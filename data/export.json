@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-12T10:09:54.553546+00:00",
-  "total_events": 493,
+  "generated_at": "2026-05-12T10:40:06.853068+00:00",
+  "total_events": 494,
   "total_burned": 510201000,
-  "total_minted": 743000750,
-  "pending_reviews": 104,
+  "total_minted": 743500750,
+  "pending_reviews": 105,
   "events": [
+    {
+      "id": 494,
+      "event_title": "European Court of Human Rights dismisses case against France over housing rights",
+      "event_url": "https://www.lemonde.fr/societe/article/2026/05/12/la-cedh-deboute-des-mal-loges-qui-avaient-attaque-la-france-pour-manquement-au-droit-au-logement-opposable_6688230_3224.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.06,
+      "confidence": 8,
+      "justification": "ECtHR ruling weakens housing rights enforcement despite acknowledging systemic failures. | The ECtHR's ruling highlights France's partial progress in addressing housing rights but ultimately fails to enforce justice for mal-logés (poorly housed individuals). The dismissal undermines the enforceability of housing rights as a human right, despite recognizing systemic failures. The net effect is a mixed signal: progress in policy response but a setback in legal accountability.",
+      "tx_hash": "5atEvJR5qfojZD6L4bnm18WxBZe4xAMXZTzYYAQDcQNBrSBC3AhwQVp8qZV7mnWuuYoW3P9wubNqKQuYSgfKm2Ni",
+      "created_at": "2026-05-12T10:40:04.808946+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"European Court of Human Rights acknowledges France's partial compliance with housing rights obligations through 'commencement of execution' of court decisions\", \"affected_sdgs\": [1, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"ECtHR dismisses case against France for housing rights violations despite noting non-execution of justice decisions\", \"affected_sdgs\": [1, 11], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 493,
       "event_title": "Tokyo court rejects refugee's bid for naturalization over limited Japanese skills",
@@ -10866,8 +10888,8 @@
       },
       {
         "country": "France",
-        "count": 11,
-        "total_amount": 9400000
+        "count": 12,
+        "total_amount": 9900000
       },
       {
         "country": "Russia",
@@ -10914,14 +10936,14 @@
         "events": 38
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.219,
-        "events": 64
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.216,
         "events": 74
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.215,
+        "events": 65
       },
       {
         "region": "Africa",
@@ -10994,7 +11016,7 @@
       },
       {
         "date": "2026-05-12",
-        "net_minted": 3567000,
+        "net_minted": 4067000,
         "net_burned": 0
       }
     ],
@@ -11012,7 +11034,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 95,
-        "negative": 233,
+        "negative": 234,
         "event_ids_positive": [
           437,
           433,
@@ -11111,6 +11133,7 @@
           145
         ],
         "event_ids_negative": [
+          494,
           493,
           492,
           491,
@@ -11348,7 +11371,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 182,
+        "negative": 183,
         "event_ids_positive": [
           430,
           415,
@@ -11385,6 +11408,7 @@
           159
         ],
         "event_ids_negative": [
+          494,
           493,
           492,
           487,
@@ -11850,11 +11874,11 @@
       "niche_pct": 60.0,
       "mainstream_pct": 40.0,
       "total_sources_used": 55,
-      "articles_processed": 350
+      "articles_processed": 351
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 350,
+      "total_events": 351,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -11938,21 +11962,21 @@
         ]
       },
       {
+        "name": "ECHR",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          494
+        ]
+      },
+      {
         "name": "ASEAN",
         "count": 1,
         "burn_count": 1,
         "mint_count": 0,
         "event_ids": [
           298
-        ]
-      },
-      {
-        "name": "ICJ",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          254
         ]
       }
     ],
@@ -12102,10 +12126,11 @@
       },
       {
         "name": "Construction",
-        "count": 21,
+        "count": 22,
         "burn_count": 8,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          494,
           482,
           465,
           464,
@@ -12246,14 +12271,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 237,
+      "total_mint": 238,
       "direct_action": {
-        "count": 216,
-        "pct": 91.1
+        "count": 217,
+        "pct": 91.2
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 7.2
+        "pct": 7.1
       },
       "untyped": {
         "count": 4,
@@ -12261,10 +12286,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 359,
+      "total_mint": 360,
       "direct_action": {
-        "count": 316,
-        "pct": 88.0
+        "count": 317,
+        "pct": 88.1
       },
       "editorial_alarm": {
         "count": 37,
@@ -12277,8 +12302,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 124,
-      "institutional": 226,
-      "citizen_ratio": 0.354,
+      "institutional": 227,
+      "citizen_ratio": 0.353,
       "daily": [
         {
           "date": "2026-05-06",
@@ -12313,7 +12338,7 @@
         {
           "date": "2026-05-12",
           "citizen": 0,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -12443,6 +12468,7 @@
         144
       ],
       "event_ids_institutional": [
+        494,
         493,
         492,
         491,
