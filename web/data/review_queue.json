@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-12T07:40:06.809415+00:00",
-  "total_pending": 100,
+  "generated_at": "2026-05-12T08:09:53.984638+00:00",
+  "total_pending": 101,
   "reviews": [
     {
       "id": 49,
@@ -1998,6 +1998,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-12T07:40:04.918600+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 171,
+      "event_title": "In Algeria, Christophe Gleizes received his first visit in prison from a French diplomat",
+      "event_url": "https://www.france24.com/fr/france/20260512-algerie-christophe-gleizes-a-re%C3%A7u-sa-premi%C3%A8re-visite-en-prison-d-un-diplomate-fran%C3%A7ais-rsf",
+      "event_source": "France 24 FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French diplomat visits detained French journalist Christophe Gleizes in Algeria, fulfilling consular obligations under international law\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Algerian government detains French journalist Christophe Gleizes for nearly a year without transparent legal justification\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The consular visit represents a positive step toward accountability and prisoner welfare, aligning with human rights norms. However, the prolonged detention without clear legal basis constitutes a serious violation of freedom of expression and due process, overshadowing the diplomatic gesture.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Release of Gleizes within 30 days\", \"Public disclosure of charges or acquittal\", \"International pressure escalation (UN, EU)\", \"Algerian judicial review completion\"], \"revaluation_checkpoint\": \"2028-05-12\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Gleizes is released following international mediation and Algerian judicial review\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Gleizes remains detained with prolonged trial, international condemnation intensifies\", \"probability\": 0.5, \"score\": -5}, {\"name\": \"C\", \"description\": \"Gleizes is sentenced to additional prison time, diplomatic relations deteriorate\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -3.1, \"final_score\": -2.875, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Prolonged detention without due process outweighs consular visit, signaling systemic rights violation.\", \"event_country\": \"Algeria\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French diplomat's consular visit to detained journalist Christophe Gleizes in Algeria, ensuring consular access and diplomatic engagement for a foreign national\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Detention of journalist Christophe Gleizes in Algeria for nearly a year without prior consular access, raising concerns about due process and freedom of expression\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 9\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The consular visit represents a positive step toward upholding diplomatic norms and the rights of detained foreign nationals, aligning with SDG 16. However, the prolonged detention without prior access underscores serious concerns about due process and press freedom, violating core UDHR articles. The net ethical balance is mixed but leans slightly negative due to the underlying detention conditions.\", \"snapshot_score\": -1.5, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Release or fair trial of Christophe Gleizes within 6 months\", \"Algerian government's response to international pressure\", \"Changes in Algeria's press freedom laws or detention practices\"], \"revaluation_checkpoint\": \"2028-05-12\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Christophe Gleizes is released or granted a fair trial within 6 months, leading to improved diplomatic relations and press freedom in Algeria\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Prolonged detention continues with no significant change, but diplomatic engagement prevents further deterioration\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Detention escalates or Gleizes faces additional charges, severely damaging diplomatic relations and press freedom\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.1, \"final_score\": -1.075, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Consular visit is positive but overshadowed by prolonged detention violating press freedom.\", \"event_country\": \"Algeria\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.975, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Consular visit is a positive institutional action, but prolonged detention without due process remains a serious rights violation.\", \"disagreement\": false, \"reason\": \"Both analysts agree the consular visit is positive, but the prolonged detention without due process remains a serious rights violation. The action of providing consular access supports rights, hence MINT.\"}",
+      "sentinel_concern": "llm: Verdict MINT contradicts positive consular visit; action is supportive of rights, should be BURN. Decision reflects detention violation, not the evaluated action.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-12T08:09:52.103254+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
