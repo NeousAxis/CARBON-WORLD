@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-12T20:11:43.821576+00:00",
-  "total_events": 503,
+  "generated_at": "2026-05-12T20:40:06.156593+00:00",
+  "total_events": 504,
   "total_burned": 510201000,
-  "total_minted": 752250750,
-  "pending_reviews": 125,
+  "total_minted": 752400750,
+  "pending_reviews": 126,
   "events": [
+    {
+      "id": 504,
+      "event_title": "Beijing calls Paraguay leaders willing 'chess pieces' after disputed Taiwan trip",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3353335/beijing-calls-paraguay-leaders-willing-chess-pieces-after-disputed-taiwan-trip?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.07,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; China's condemnation undermines diplomatic sovereignty and escalates tensions. | The Paraguayan president's visit to Taiwan supports international recognition of Taiwan's autonomy, aligning with SDG 16 on peace and justice. However, it risks diplomatic tensions and undermines China's core geopolitical stance, which could have broader negative implications for international stability.",
+      "tx_hash": "4WyLKRJuqeCysusx8h3U9xHDZ3qdbdL4dXCvsbJKXe5k8ygHrQcQHZhcp2Q7rERtqk1oxGeRsnFPbJh1o2YZ8bCB",
+      "created_at": "2026-05-12T20:40:04.149521+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Paraguay",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Paraguay's president visits Taiwan, supporting its de facto autonomy and international engagement.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The visit risks escalating tensions between China and Paraguay, potentially destabilizing diplomatic relations and regional peace.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1, 2\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The visit could be perceived as undermining the one-China principle, which China views as a core national interest.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 503,
       "event_title": "Two skeptics of antidepressant drugs named to NIH mental health council",
@@ -11076,8 +11098,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 54,
-        "total_amount": 118650000
+        "count": 51,
+        "total_amount": 111650000
       },
       {
         "country": "Australia",
@@ -11134,14 +11156,14 @@
         "events": 35
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.217,
+        "events": 69
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.211,
         "events": 57
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.208,
-        "events": 72
       },
       {
         "region": "Africa",
@@ -11171,14 +11193,14 @@
         "events": 22
       },
       {
-        "region": "North America",
-        "mint_ratio": 0.792,
-        "events": 72
-      },
-      {
         "region": "Africa",
         "mint_ratio": 0.792,
         "events": 24
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.783,
+        "events": 69
       }
     ],
     "supply_trend_7d": [
@@ -11214,7 +11236,7 @@
       },
       {
         "date": "2026-05-12",
-        "net_minted": 12817000,
+        "net_minted": 12967000,
         "net_burned": 0
       }
     ],
@@ -11232,7 +11254,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 84,
-        "negative": 219,
+        "negative": 216,
         "event_ids_positive": [
           437,
           433,
@@ -11320,6 +11342,7 @@
           183
         ],
         "event_ids_negative": [
+          504,
           503,
           502,
           501,
@@ -11534,16 +11557,12 @@
           198,
           187,
           186,
-          185,
-          182,
-          181,
-          180,
-          179
+          185
         ]
       },
       "UDHR": {
         "positive": 27,
-        "negative": 170,
+        "negative": 169,
         "event_ids_positive": [
           430,
           415,
@@ -11574,6 +11593,7 @@
           189
         ],
         "event_ids_negative": [
+          504,
           503,
           502,
           501,
@@ -11741,9 +11761,7 @@
           200,
           187,
           186,
-          185,
-          182,
-          179
+          185
         ]
       },
       "ILO": {
@@ -11795,7 +11813,7 @@
       },
       "UNDRIP": {
         "positive": 17,
-        "negative": 34,
+        "negative": 32,
         "event_ids_positive": [
           437,
           419,
@@ -11847,9 +11865,7 @@
           223,
           214,
           213,
-          210,
-          182,
-          181
+          210
         ]
       },
       "Animal": {
@@ -11910,7 +11926,7 @@
       },
       "PB": {
         "positive": 41,
-        "negative": 39,
+        "negative": 38,
         "event_ids_positive": [
           437,
           433,
@@ -11992,8 +12008,7 @@
           228,
           227,
           214,
-          198,
-          181
+          198
         ]
       }
     },
@@ -12001,20 +12016,20 @@
       "niche_pct": 61.1,
       "mainstream_pct": 38.9,
       "total_sources_used": 54,
-      "articles_processed": 325
+      "articles_processed": 322
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 325,
+      "total_events": 322,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 10,
+        "count": 9,
         "burn_count": 1,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           492,
           479,
@@ -12024,8 +12039,7 @@
           333,
           332,
           293,
-          217,
-          180
+          217
         ]
       },
       {
@@ -12242,9 +12256,9 @@
       },
       {
         "name": "Construction",
-        "count": 21,
+        "count": 20,
         "burn_count": 8,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           500,
           494,
@@ -12265,31 +12279,7 @@
           274,
           240,
           192,
-          183,
-          182
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 15,
-        "burn_count": 1,
-        "mint_count": 10,
-        "event_ids": [
-          498,
-          497,
-          496,
-          445,
-          424,
-          418,
-          370,
-          368,
-          352,
-          283,
-          263,
-          252,
-          241,
-          234,
-          180
+          183
         ]
       },
       {
@@ -12313,6 +12303,28 @@
           245,
           209,
           203
+        ]
+      },
+      {
+        "name": "Transport",
+        "count": 14,
+        "burn_count": 1,
+        "mint_count": 9,
+        "event_ids": [
+          498,
+          497,
+          496,
+          445,
+          424,
+          418,
+          370,
+          368,
+          352,
+          283,
+          263,
+          252,
+          241,
+          234
         ]
       },
       {
@@ -12385,14 +12397,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 223,
+      "total_mint": 220,
       "direct_action": {
-        "count": 206,
-        "pct": 92.4
+        "count": 204,
+        "pct": 92.7
       },
       "editorial_alarm": {
-        "count": 13,
-        "pct": 5.8
+        "count": 12,
+        "pct": 5.5
       },
       "untyped": {
         "count": 4,
@@ -12400,10 +12412,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 369,
+      "total_mint": 370,
       "direct_action": {
-        "count": 326,
-        "pct": 88.3
+        "count": 327,
+        "pct": 88.4
       },
       "editorial_alarm": {
         "count": 37,
@@ -12415,9 +12427,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 109,
-      "institutional": 216,
-      "citizen_ratio": 0.335,
+      "citizen": 107,
+      "institutional": 215,
+      "citizen_ratio": 0.332,
       "daily": [
         {
           "date": "2026-05-06",
@@ -12452,7 +12464,7 @@
         {
           "date": "2026-05-12",
           "citizen": 0,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -12562,11 +12574,10 @@
         189,
         188,
         187,
-        184,
-        182,
-        181
+        184
       ],
       "event_ids_institutional": [
+        504,
         503,
         502,
         501,
@@ -12780,9 +12791,7 @@
         197,
         186,
         185,
-        183,
-        180,
-        179
+        183
       ]
     }
   }
