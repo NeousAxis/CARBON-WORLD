@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-12T22:39:55.215487+00:00",
-  "total_events": 508,
+  "generated_at": "2026-05-12T23:39:56.395643+00:00",
+  "total_events": 509,
   "total_burned": 510201000,
-  "total_minted": 753850750,
+  "total_minted": 754000750,
   "pending_reviews": 133,
   "events": [
+    {
+      "id": 509,
+      "event_title": "Virologist accused of starting COVID-19 will fight U.S. ban on funding",
+      "event_url": "https://www.science.org/content/article/virologist-accused-starting-covid-19-will-fight-u-s-ban-funding",
+      "event_source": "Science (AAAS)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.95,
+      "confidence": 7,
+      "justification": "Funding ban reflects accountability but allegations risk undermining scientific trust. | The HHS memo represents a necessary accountability measure to uphold scientific integrity and public trust in health research, aligning with SDG 3 (Good Health) and SDG 16 (Peace and Justice). However, the allegations against Baric, if unproven, risk damaging reputations and eroding confidence in critical scientific work, which could hinder future pandemic preparedness and education (SDG 4).",
+      "tx_hash": "f1rWr8bw2D4i1vsYaTCALGCFNeJ98sZmoM98cYEWYj6pm4FyuJj99ds2s5jP8joXaSv3xLJAZvE5ALAkQYa9q2X",
+      "created_at": "2026-05-12T23:39:54.654691+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"U.S. Department of Health and Human Services (HHS) issues a memo restricting funding due to allegations of deception in virus research funding descriptions\", \"affected_sdgs\": [3, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Allegations against virologist Ralph Baric of a 'pattern of deception' in describing virus studies, which could undermine trust in scientific integrity and public health research\", \"affected_sdgs\": [3, 4], \"violated_rights\": [\"UDHR Article 19 (Freedom of Opinion and Expression)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 508,
       "event_title": "How much UBA professors earn by position and how much the university says the budget has been cut",
@@ -11186,8 +11208,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 50,
-        "total_amount": 103650000
+        "count": 51,
+        "total_amount": 103800000
       },
       {
         "country": "Australia",
@@ -11213,8 +11235,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 11,
-        "total_amount": 41000000
+        "count": 10,
+        "total_amount": 36000000
       },
       {
         "country": "India",
@@ -11223,8 +11245,8 @@
       },
       {
         "country": "United Kingdom",
-        "count": 6,
-        "total_amount": 25900000
+        "count": 5,
+        "total_amount": 18900000
       },
       {
         "country": "Canada",
@@ -11240,13 +11262,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.353,
-        "events": 34
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.221,
-        "events": 68
+        "burn_ratio": 0.333,
+        "events": 33
       },
       {
         "region": "Africa",
@@ -11254,9 +11271,14 @@
         "events": 24
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.206,
+        "events": 68
+      },
+      {
         "region": "Europe",
-        "burn_ratio": 0.196,
-        "events": 56
+        "burn_ratio": 0.182,
+        "events": 55
       },
       {
         "region": "Oceania",
@@ -11281,14 +11303,14 @@
         "events": 23
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.794,
+        "events": 68
+      },
+      {
         "region": "Africa",
         "mint_ratio": 0.792,
         "events": 24
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.779,
-        "events": 68
       }
     ],
     "supply_trend_7d": [
@@ -11324,7 +11346,7 @@
       },
       {
         "date": "2026-05-12",
-        "net_minted": 14417000,
+        "net_minted": 14567000,
         "net_burned": 0
       }
     ],
@@ -11341,8 +11363,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 76,
-        "negative": 217,
+        "positive": 73,
+        "negative": 218,
         "event_ids_positive": [
           437,
           433,
@@ -11416,12 +11438,10 @@
           204,
           203,
           199,
-          197,
-          196,
-          195,
-          194
+          197
         ],
         "event_ids_negative": [
+          509,
           508,
           507,
           506,
@@ -11642,8 +11662,8 @@
         ]
       },
       "UDHR": {
-        "positive": 25,
-        "negative": 166,
+        "positive": 23,
+        "negative": 167,
         "event_ids_positive": [
           430,
           415,
@@ -11667,11 +11687,10 @@
           209,
           205,
           203,
-          197,
-          196,
-          194
+          197
         ],
         "event_ids_negative": [
+          509,
           504,
           503,
           502,
@@ -11887,7 +11906,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 15,
+        "positive": 13,
         "negative": 32,
         "event_ids_positive": [
           437,
@@ -11902,9 +11921,7 @@
           283,
           262,
           253,
-          212,
-          196,
-          195
+          212
         ],
         "event_ids_negative": [
           483,
@@ -11942,7 +11959,7 @@
         ]
       },
       "Animal": {
-        "positive": 27,
+        "positive": 25,
         "negative": 18,
         "event_ids_positive": [
           437,
@@ -11969,9 +11986,7 @@
           212,
           211,
           204,
-          199,
-          196,
-          195
+          199
         ],
         "event_ids_negative": [
           498,
@@ -11995,7 +12010,7 @@
         ]
       },
       "PB": {
-        "positive": 38,
+        "positive": 37,
         "negative": 40,
         "event_ids_positive": [
           437,
@@ -12034,8 +12049,7 @@
           212,
           211,
           204,
-          199,
-          196
+          199
         ],
         "event_ids_negative": [
           506,
@@ -12082,14 +12096,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 61.5,
-      "mainstream_pct": 38.5,
-      "total_sources_used": 52,
-      "articles_processed": 315
+      "niche_pct": 60.8,
+      "mainstream_pct": 39.2,
+      "total_sources_used": 51,
+      "articles_processed": 313
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 315,
+      "total_events": 313,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12287,10 +12301,11 @@
       },
       {
         "name": "Finance",
-        "count": 26,
+        "count": 27,
         "burn_count": 7,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          509,
           508,
           491,
           485,
@@ -12430,18 +12445,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 86,
+      "total_burn": 83,
       "direct_action": {
-        "count": 69,
-        "pct": 80.2
+        "count": 66,
+        "pct": 79.5
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 8.1
+        "pct": 8.4
       },
       "untyped": {
         "count": 10,
-        "pct": 11.6
+        "pct": 12.0
       }
     },
     "burn_composition_all_time": {
@@ -12460,9 +12475,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 221,
+      "total_mint": 222,
       "direct_action": {
-        "count": 205,
+        "count": 206,
         "pct": 92.8
       },
       "editorial_alarm": {
@@ -12475,9 +12490,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 374,
+      "total_mint": 375,
       "direct_action": {
-        "count": 331,
+        "count": 332,
         "pct": 88.5
       },
       "editorial_alarm": {
@@ -12490,9 +12505,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 99,
-      "institutional": 216,
-      "citizen_ratio": 0.314,
+      "citizen": 96,
+      "institutional": 217,
+      "citizen_ratio": 0.307,
       "daily": [
         {
           "date": "2026-05-06",
@@ -12527,7 +12542,7 @@
         {
           "date": "2026-05-12",
           "citizen": 0,
-          "institutional": 19
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
@@ -12626,12 +12641,10 @@
         206,
         204,
         203,
-        199,
-        196,
-        195,
-        194
+        199
       ],
       "event_ids_institutional": [
+        509,
         508,
         507,
         506,
