@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-12T14:40:13.633278+00:00",
-  "total_pending": 116,
+  "generated_at": "2026-05-12T15:10:18.925027+00:00",
+  "total_pending": 117,
   "reviews": [
     {
       "id": 49,
@@ -2318,6 +2318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-12T14:40:11.765198+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 187,
+      "event_title": "Israel passes law establishing military tribunal for October 7 perpetrators",
+      "event_url": "https://www.france24.com/en/israel-passes-law-establishing-military-tribunal-for-october-7-perpetrators",
+      "event_source": "France 24 EN",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Establishment of a legal framework for accountability for the October 7 attack perpetrators.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential violation of fair trial rights and due process for accused individuals.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The law introduces a legal mechanism for accountability, which supports justice and rule of law (SDG 16). However, the lack of due process protections and potential for unfair trials undermines fundamental human rights (UDHR Articles 10 and 11), creating a significant ethical imbalance.\", \"snapshot_score\": -2.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of the tribunal and its adherence to international legal standards\", \"International legal challenges or rulings on the tribunal's legitimacy\", \"Domestic or international pressure for legal reform\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Tribunal operates with international oversight and respects fair trial rights.\", \"probability\": 0.2, \"score\": 4}, {\"name\": \"B\", \"description\": \"Tribunal functions without due process, leading to international condemnation.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Tribunal is used to suppress dissent or political opponents, leading to systemic injustice.\", \"probability\": 0.3, \"score\": -7}], \"prospective_score\": -2.9, \"final_score\": -2.4, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The law introduces a tribunal with potential for injustice and violates fair trial rights.\", \"event_country\": \"Israel\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Establishment of a legal framework to address perpetrators of a violent attack, aiming to restore national order and address trauma\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Creation of a military tribunal with potential death penalty, raising concerns about fair trial rights and due process violations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The law establishes a legal mechanism to address a traumatic national event, which could be seen as a step toward justice and healing. However, the use of a military tribunal with the death penalty risks violating fundamental fair trial rights and due process, undermining the principles of justice it seeks to uphold.\", \"snapshot_score\": -6.5, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Supreme Court ruling on the tribunal's constitutionality\", \"International Court of Justice (ICJ) or International Criminal Court (ICC) intervention\", \"Domestic or international human rights organization reports on trial fairness\", \"Changes in government or policy reversing the tribunal's establishment\"], \"revaluation_checkpoint\": \"2026-10-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Military tribunal operates with procedural safeguards, fair trials upheld, and international scrutiny reduces violations\", \"probability\": 0.25, \"score\": 2}, {\"name\": \"B\", \"description\": \"Tribunal proceeds with significant due process violations, leading to international condemnation and legal challenges\", \"probability\": 0.55, \"score\": -7}, {\"name\": \"C\", \"description\": \"Tribunal is suspended or ruled unconstitutional due to overwhelming domestic or international backlash\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -5.65, \"final_score\": -5.24, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Military tribunal with death penalty risks severe rights violations, outweighing potential justice benefits.\", \"event_country\": \"Israel\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.86, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Military tribunal with death penalty violates fair trial rights, outweighing accountability benefits.\", \"disagreement\": false, \"reason\": \"Both analysts correctly identified the institutional action as enabling harm via rights violations. Consensus on MINT direction, converged toward average score.\"}",
+      "sentinel_concern": "llm: Polarity error: action violates fair trial and imposes death penalty, a human rights harm; should be MINT, not BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-12T15:10:17.093266+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
