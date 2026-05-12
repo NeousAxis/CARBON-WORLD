@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-11T23:40:07.317640+00:00",
-  "total_pending": 86,
+  "generated_at": "2026-05-12T00:10:36.508989+00:00",
+  "total_pending": 87,
   "reviews": [
     {
       "id": 49,
@@ -1718,6 +1718,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-11T23:40:05.495475+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 157,
+      "event_title": "Southern California mayor will plead guilty to acting as agent for Chinese government",
+      "event_url": "https://www.scmp.com/news/world/united-states-canada/article/3353203/southern-california-mayor-will-plead-guilty-acting-agent-chinese-government?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Resignation of a public official charged with acting as an illegal agent of a foreign government, removing potential influence from foreign interference in local governance\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Public official charged with acting as an illegal agent of a foreign government, undermining transparency and trust in local governance\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The resignation of the mayor removes a direct threat to democratic integrity and local governance, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying charge reveals a significant breach of trust and potential foreign interference, violating core democratic principles and UDHR Article 21.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Successful prosecution of the case\", \"Implementation of stricter foreign agent registration laws\", \"Public disclosure of the extent of foreign influence\", \"Changes in local governance policies to prevent future interference\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Case results in strong legal precedent against foreign interference, leading to enhanced national security measures and public trust recovery\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Case proceeds with moderate penalties, but foreign interference concerns persist in local governance\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Case reveals broader systemic foreign interference, eroding public trust and destabilizing local governance\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.15, \"final_score\": -1.1, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Foreign interference in local governance undermines democratic integrity and trust.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Prosecution of a public official for acting as an illegal agent of a foreign government, upholding national security and rule of law\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Resignation of the mayor from her position, removing a potential vector for foreign influence in local governance\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Foreign government interference in local governance through covert influence operations, undermining democratic processes\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential erosion of trust in local institutions and public officials due to foreign influence, impacting civic participation\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The prosecution and resignation of the mayor represent a clear enforcement of national security and democratic integrity, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying issue of foreign interference in local governance remains a significant ethical concern, violating core democratic principles and human rights. The net judgment is positive due to the action taken to address the violation, despite the negative context of the interference itself.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Successful prosecution outcome and sentencing\", \"Implementation of new local governance safeguards against foreign interference\", \"Public disclosure of the full extent of foreign influence operations\", \"Legislative or policy changes at the state or federal level in response to the case\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Comprehensive reforms are enacted at local, state, and federal levels to prevent foreign interference, with strong public oversight and transparency measures\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate reforms are implemented, but gaps remain in local governance, allowing for continued but reduced foreign influence\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Insufficient reforms are enacted, and foreign interference continues or escalates in other jurisdictions\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.9, \"final_score\": 4.2, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Prosecution of foreign interference upholds democratic integrity but reveals systemic vulnerabilities.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.1, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"Prosecution of foreign interference protects democratic integrity and local governance.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (prosecution) as protective of democratic rights, while Analyst B's NEUTRAL stance misapplied the ethical lens by focusing on systemic vulnerabilities rather than the corrective action.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-12T00:10:34.581307+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null

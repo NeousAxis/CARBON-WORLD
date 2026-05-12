@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-11T23:40:07.271259+00:00",
-  "total_events": 489,
+  "generated_at": "2026-05-12T00:10:36.475597+00:00",
+  "total_events": 490,
   "total_burned": 510201000,
-  "total_minted": 739433750,
-  "pending_reviews": 86,
+  "total_minted": 740933750,
+  "pending_reviews": 87,
   "events": [
+    {
+      "id": 490,
+      "event_title": "Darwin company's $50 million plan to make diesel from gas condensate",
+      "event_url": "https://www.abc.net.au/news/2026-05-12/darwin-company-plans-to-make-diesel-from-gas-condensate/106657004",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.6,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; project locks in fossil fuel dependency despite minor efficiency gains. | The project converts gas condensate into diesel, which may reduce waste but primarily locks in fossil fuel dependency. While it supports industrial innovation (SDG 9), it significantly undermines climate action (SDG 13) and responsible consumption (SDG 12) by perpetuating fossil fuel use. The net ethical judgment is negative due to the high climate impact outweighing minor resource efficiency g",
+      "tx_hash": "2aLArVrcWz7ogex8iUHGq6AtMaEkiEWDyAS2hthQSaY4i3iawGh8w9AU2Vi8jo5xemBianv2X32KBVPoj1JFj7Ep",
+      "created_at": "2026-05-12T00:10:34.585563+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Industrial project converting gas condensate into diesel, potentially reducing waste and utilizing existing resources\", \"affected_sdgs\": [7, 9, 12], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Production of diesel from gas condensate increases fossil fuel dependency and greenhouse gas emissions, undermining climate action\", \"affected_sdgs\": [7, 12, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Project may lock in fossil fuel infrastructure, delaying transition to renewable energy\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 489,
       "event_title": "Inland seas may face widespread heat waves by midcentury as warming accelerates",
@@ -10773,8 +10795,8 @@
       },
       {
         "country": "Australia",
-        "count": 15,
-        "total_amount": 11275000
+        "count": 16,
+        "total_amount": 12775000
       },
       {
         "country": "France",
@@ -10854,8 +10876,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.8,
-        "events": 20
+        "mint_ratio": 0.81,
+        "events": 21
       },
       {
         "region": "Africa",
@@ -10874,11 +10896,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-05-05",
-        "net_minted": 98600000,
-        "net_burned": 123700000
-      },
       {
         "date": "2026-05-06",
         "net_minted": 142585000,
@@ -10908,6 +10925,11 @@
         "date": "2026-05-11",
         "net_minted": 35775000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-05-12",
+        "net_minted": 1500000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -10924,7 +10946,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 95,
-        "negative": 229,
+        "negative": 230,
         "event_ids_positive": [
           437,
           433,
@@ -11023,6 +11045,7 @@
           145
         ],
         "event_ids_negative": [
+          490,
           489,
           488,
           487,
@@ -11652,7 +11675,7 @@
       },
       "PB": {
         "positive": 48,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           437,
           433,
@@ -11704,6 +11727,7 @@
           145
         ],
         "event_ids_negative": [
+          490,
           489,
           477,
           472,
@@ -11755,11 +11779,11 @@
       "niche_pct": 60.0,
       "mainstream_pct": 40.0,
       "total_sources_used": 55,
-      "articles_processed": 346
+      "articles_processed": 347
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 346,
+      "total_events": 347,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -11863,10 +11887,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 52,
+        "count": 53,
         "burn_count": 21,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          490,
           488,
           477,
           476,
@@ -12148,9 +12173,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 233,
+      "total_mint": 234,
       "direct_action": {
-        "count": 212,
+        "count": 213,
         "pct": 91.0
       },
       "editorial_alarm": {
@@ -12163,9 +12188,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 355,
+      "total_mint": 356,
       "direct_action": {
-        "count": 312,
+        "count": 313,
         "pct": 87.9
       },
       "editorial_alarm": {
@@ -12179,14 +12204,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 124,
-      "institutional": 222,
-      "citizen_ratio": 0.358,
+      "institutional": 223,
+      "citizen_ratio": 0.357,
       "daily": [
-        {
-          "date": "2026-05-05",
-          "citizen": 28,
-          "institutional": 26
-        },
         {
           "date": "2026-05-06",
           "citizen": 26,
@@ -12216,6 +12236,11 @@
           "date": "2026-05-11",
           "citizen": 5,
           "institutional": 11
+        },
+        {
+          "date": "2026-05-12",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -12345,6 +12370,7 @@
         144
       ],
       "event_ids_institutional": [
+        490,
         489,
         488,
         485,
