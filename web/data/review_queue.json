@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-12T20:40:06.190806+00:00",
-  "total_pending": 126,
+  "generated_at": "2026-05-12T21:10:43.699928+00:00",
+  "total_pending": 127,
   "reviews": [
     {
       "id": 49,
@@ -2518,6 +2518,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-12T20:40:04.273849+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 197,
+      "event_title": "US defence secretary joins Trump on China trip in rare diplomatic move",
+      "event_url": "https://www.scmp.com/news/us/article/3353336/us-defence-secretary-joins-trump-china-trip-rare-diplomatic-move?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"US Defence Secretary joins presidential trip to China, potentially normalizing military-diplomatic engagement with a geopolitical rival without clear climate or human rights benefits\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 1 (freedom from interference)\", \"UDHR Article 28 (right to a social and international order)\"], \"magnitude\": 5, \"frameworks\": [\"UDHR\"]}], \"ethical_synthesis\": \"The act of a US Defence Secretary accompanying a president on a state visit to China lacks clear ethical justification under human rights or sustainability frameworks. While diplomatic engagement is generally positive, this move risks legitimizing a regime with documented human rights abuses and environmental violations without tangible benefits to global governance or climate action. The absence of stated ethical or environmental conditions weakens its positive framing.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Clear human rights or climate commitments attached to the visit\", \"Subsequent policy changes reducing military tensions\", \"Documented progress on environmental or labor standards in China\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Visit leads to de-escalation of military tensions and new climate cooperation frameworks\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Visit normalizes military-diplomatic ties without tangible ethical or environmental outcomes\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Visit emboldens Chinese military expansion and suppresses domestic dissent without addressing environmental issues\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.95, \"final_score\": -2.11, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Military-diplomatic normalization with China without ethical or environmental safeguards.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US Defence Secretary joining a presidential trip to China signals diplomatic engagement and potential reduction in military tensions, which could support SDG 16 (Peace, Justice and Strong Institutions) and SDG 17 (Partnerships for the Goals).\", \"affected_sdgs\": [16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The trip involves a sitting US president known for unpredictable and often adversarial foreign policy, raising concerns about long-term strategic stability and potential undermining of international trust, which could violate UDHR Article 1 (freedom from fear) and UDHR Article 28 (right to a social and international order).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The involvement of a defence secretary in a presidential trip to a geopolitical rival may normalize militarized diplomacy, potentially conflicting with SDG 16's emphasis on peaceful resolution of disputes.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The diplomatic engagement itself is a positive step toward reducing tensions and fostering dialogue, aligning with peace and partnership goals. However, the context of an unpredictable administration and the militarization of diplomacy introduce significant risks to long-term stability and trust, creating a net ethical tension between short-term engagement and potential long-term harm.\", \"snapshot_score\": 2.0, \"trajectory_score\": 0.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Sustained diplomatic breakthroughs or treaties signed\", \"Escalation of military posturing or trade wars\", \"Change in US administration or policy direction\", \"China's response to the visit (e.g., concessions or provocations)\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic breakthrough leads to lasting de-escalation and new trade or security agreements, reducing global tensions.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Limited progress with minor agreements, but no major escalation; status quo maintained with ongoing tensions.\", \"probability\": 0.55, \"score\": 1}, {\"name\": \"C\", \"description\": \"Visit triggers a major diplomatic crisis, renewed trade war, or military posturing, worsening global instability.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.05, \"final_score\": 0.66, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Diplomatic engagement balanced by high geopolitical risk under unpredictable leadership.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.83, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Diplomatic engagement risks legitimizing an abusive regime without safeguards.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (military-diplomatic normalization) as enabling harm by legitimizing a regime with human rights abuses, despite potential diplomatic benefits.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-12T21:10:41.722257+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
