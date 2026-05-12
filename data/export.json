@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-12T22:09:57.020295+00:00",
-  "total_events": 507,
+  "generated_at": "2026-05-12T22:39:55.215487+00:00",
+  "total_events": 508,
   "total_burned": 510201000,
-  "total_minted": 753700750,
-  "pending_reviews": 131,
+  "total_minted": 753850750,
+  "pending_reviews": 133,
   "events": [
+    {
+      "id": 508,
+      "event_title": "How much UBA professors earn by position and how much the university says the budget has been cut",
+      "event_url": "https://www.clarin.com/sociedad/ganan-docentes-uba-cargo-cargo-dice-universidad-presupuesto_0_GwNNCgjdtr.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.88,
+      "confidence": 7,
+      "justification": "Budget cuts undermine educational quality and institutional sustainability. | The article highlights a disparity between professor salaries and institutional financial constraints. While professors earn a substantial monthly income, the university faces significant budget cuts, which may affect educational quality and institutional sustainability.",
+      "tx_hash": "3LxK7njwEZ543C3AzV33Gp6bUYeJDiDg8sgzBrHfhWwhGs7mnVKrBT95A1uvjQn4qUVN8t8o3ANZ1LKXCYmTAsKk",
+      "created_at": "2026-05-12T22:39:53.369693+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"UBA professors earn a monthly salary of 1.5 million pesos for an 8-hour workday.\", \"affected_sdgs\": [8], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The university reports a budget cut of over 45% in the last two and a half years.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 507,
       "event_title": "For the SFR acquisition, revision of EU merger rules will be decisive",
@@ -11184,8 +11206,8 @@
       },
       {
         "country": "Argentina",
-        "count": 9,
-        "total_amount": 9115000
+        "count": 10,
+        "total_amount": 9265000
       }
     ],
     "top_countries_burn": [
@@ -11249,14 +11271,14 @@
         "events": 14
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.829,
+        "events": 35
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 0.826,
         "events": 23
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.824,
-        "events": 34
       },
       {
         "region": "Africa",
@@ -11302,7 +11324,7 @@
       },
       {
         "date": "2026-05-12",
-        "net_minted": 14267000,
+        "net_minted": 14417000,
         "net_burned": 0
       }
     ],
@@ -11319,8 +11341,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 79,
-        "negative": 216,
+        "positive": 76,
+        "negative": 217,
         "event_ids_positive": [
           437,
           433,
@@ -11397,12 +11419,10 @@
           197,
           196,
           195,
-          194,
-          193,
-          192,
-          191
+          194
         ],
         "event_ids_negative": [
+          508,
           507,
           506,
           505,
@@ -11622,7 +11642,7 @@
         ]
       },
       "UDHR": {
-        "positive": 26,
+        "positive": 25,
         "negative": 166,
         "event_ids_positive": [
           430,
@@ -11649,8 +11669,7 @@
           203,
           197,
           196,
-          194,
-          193
+          194
         ],
         "event_ids_negative": [
           504,
@@ -11822,11 +11841,10 @@
         ]
       },
       "ILO": {
-        "positive": 2,
+        "positive": 1,
         "negative": 11,
         "event_ids_positive": [
-          361,
-          193
+          361
         ],
         "event_ids_negative": [
           487,
@@ -11977,7 +11995,7 @@
         ]
       },
       "PB": {
-        "positive": 39,
+        "positive": 38,
         "negative": 40,
         "event_ids_positive": [
           437,
@@ -12017,8 +12035,7 @@
           211,
           204,
           199,
-          196,
-          192
+          196
         ],
         "event_ids_negative": [
           506,
@@ -12065,14 +12082,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.4,
-      "mainstream_pct": 39.6,
-      "total_sources_used": 53,
-      "articles_processed": 317
+      "niche_pct": 61.5,
+      "mainstream_pct": 38.5,
+      "total_sources_used": 52,
+      "articles_processed": 315
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 317,
+      "total_events": 315,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12271,9 +12288,10 @@
       {
         "name": "Finance",
         "count": 26,
-        "burn_count": 8,
-        "mint_count": 18,
+        "burn_count": 7,
+        "mint_count": 19,
         "event_ids": [
+          508,
           491,
           485,
           478,
@@ -12298,14 +12316,13 @@
           242,
           240,
           227,
-          212,
-          193
+          212
         ]
       },
       {
         "name": "Construction",
-        "count": 19,
-        "burn_count": 7,
+        "count": 18,
+        "burn_count": 6,
         "mint_count": 12,
         "event_ids": [
           500,
@@ -12325,8 +12342,7 @@
           289,
           284,
           274,
-          240,
-          192
+          240
         ]
       },
       {
@@ -12414,18 +12430,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 89,
+      "total_burn": 86,
       "direct_action": {
-        "count": 72,
-        "pct": 80.9
+        "count": 69,
+        "pct": 80.2
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 7.9
+        "pct": 8.1
       },
       "untyped": {
         "count": 10,
-        "pct": 11.2
+        "pct": 11.6
       }
     },
     "burn_composition_all_time": {
@@ -12444,14 +12460,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 220,
+      "total_mint": 221,
       "direct_action": {
-        "count": 204,
-        "pct": 92.7
+        "count": 205,
+        "pct": 92.8
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 5.5
+        "pct": 5.4
       },
       "untyped": {
         "count": 4,
@@ -12459,9 +12475,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 373,
+      "total_mint": 374,
       "direct_action": {
-        "count": 330,
+        "count": 331,
         "pct": 88.5
       },
       "editorial_alarm": {
@@ -12474,9 +12490,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 102,
-      "institutional": 215,
-      "citizen_ratio": 0.322,
+      "citizen": 99,
+      "institutional": 216,
+      "citizen_ratio": 0.314,
       "daily": [
         {
           "date": "2026-05-06",
@@ -12511,7 +12527,7 @@
         {
           "date": "2026-05-12",
           "citizen": 0,
-          "institutional": 18
+          "institutional": 19
         }
       ],
       "event_ids_citizen": [
@@ -12613,12 +12629,10 @@
         199,
         196,
         195,
-        194,
-        193,
-        192,
-        191
+        194
       ],
       "event_ids_institutional": [
+        508,
         507,
         506,
         505,
