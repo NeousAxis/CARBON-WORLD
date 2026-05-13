@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T09:10:02.924844+00:00",
-  "total_events": 520,
+  "generated_at": "2026-05-13T09:42:05.919667+00:00",
+  "total_events": 521,
   "total_burned": 517201000,
-  "total_minted": 761675750,
-  "pending_reviews": 147,
+  "total_minted": 762175750,
+  "pending_reviews": 148,
   "events": [
+    {
+      "id": 521,
+      "event_title": "Senate drama hinders impeachment of Philippine Vice President Sara Duterte",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/13/au-senat-philippin-coup-de-theatre-pour-entraver-la-destitution-de-la-vice-presidente-sara-duterte_6688662_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.16,
+      "confidence": 8,
+      "justification": "Institutional obstruction risks entrenching impunity despite initial accountability efforts. | The legislative vote to impeach represents a positive step toward accountability for alleged corruption and human rights violations, aligning with SDG 16 and UDHR principles. However, the risk of obstruction by a Senate majority tied to the accused undermines the integrity of the process and risks entrenching impunity, creating a net ethical tension between institutional action and potential subversion",
+      "tx_hash": "3SY788Cq8F1ySpMrQcu56cHVATjdYySEq68VafjSFnB75BeMPVQVGLM4HGvttn2a1jRLANL4xs1w1ShyAqaBHmjP",
+      "created_at": "2026-05-13T09:42:04.162244+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Philippines",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Legislative assembly votes to impeach Vice President Sara Duterte for alleged illicit enrichment and incitement to murder, demonstrating institutional accountability and adherence to rule of law\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Senate majority controlled by Duterte faction may obstruct impeachment proceedings, undermining democratic checks and balances and enabling potential impunity\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 520,
       "event_title": "Palestinians clash with Israeli soldiers after protest against Pence visit",
@@ -11504,8 +11526,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.333,
-        "events": 33
+        "burn_ratio": 0.324,
+        "events": 34
+      },
+      {
+        "region": "Africa",
+        "burn_ratio": 0.19,
+        "events": 21
       },
       {
         "region": "North America",
@@ -11514,16 +11541,11 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.176,
-        "events": 51
+        "burn_ratio": 0.18,
+        "events": 50
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.174,
-        "events": 23
-      },
-      {
-        "region": "Africa",
         "burn_ratio": 0.174,
         "events": 23
       }
@@ -11540,11 +11562,6 @@
         "events": 23
       },
       {
-        "region": "Africa",
-        "mint_ratio": 0.826,
-        "events": 23
-      },
-      {
         "region": "Latin America",
         "mint_ratio": 0.824,
         "events": 34
@@ -11553,6 +11570,11 @@
         "region": "North America",
         "mint_ratio": 0.817,
         "events": 60
+      },
+      {
+        "region": "Africa",
+        "mint_ratio": 0.81,
+        "events": 21
       }
     ],
     "supply_trend_7d": [
@@ -11588,7 +11610,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 7675000,
+        "net_minted": 8175000,
         "net_burned": 7000000
       }
     ],
@@ -11606,7 +11628,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 63,
-        "negative": 209,
+        "negative": 207,
         "event_ids_positive": [
           515,
           437,
@@ -11673,6 +11695,7 @@
           233
         ],
         "event_ids_negative": [
+          521,
           520,
           519,
           518,
@@ -11878,15 +11901,12 @@
           235,
           232,
           231,
-          230,
-          229,
-          228,
-          227
+          230
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 157,
+        "negative": 155,
         "event_ids_positive": [
           430,
           415,
@@ -11908,6 +11928,7 @@
           239
         ],
         "event_ids_negative": [
+          521,
           520,
           518,
           517,
@@ -12061,10 +12082,7 @@
           235,
           232,
           231,
-          230,
-          229,
-          228,
-          227
+          230
         ]
       },
       "ILO": {
@@ -12089,7 +12107,7 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 16,
+        "negative": 15,
         "event_ids_positive": [
           415
         ],
@@ -12108,13 +12126,12 @@
           306,
           305,
           265,
-          231,
-          228
+          231
         ]
       },
       "UNDRIP": {
         "positive": 12,
-        "negative": 29,
+        "negative": 28,
         "event_ids_positive": [
           437,
           419,
@@ -12157,8 +12174,7 @@
           269,
           259,
           254,
-          237,
-          227
+          237
         ]
       },
       "Animal": {
@@ -12211,7 +12227,7 @@
       },
       "PB": {
         "positive": 32,
-        "negative": 40,
+        "negative": 38,
         "event_ids_positive": [
           515,
           437,
@@ -12284,21 +12300,19 @@
           281,
           276,
           275,
-          240,
-          228,
-          227
+          240
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 55.3,
-      "mainstream_pct": 44.7,
+      "niche_pct": 57.4,
+      "mainstream_pct": 42.6,
       "total_sources_used": 47,
-      "articles_processed": 294
+      "articles_processed": 292
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 294,
+      "total_events": 292,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12395,9 +12409,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 46,
+        "count": 45,
         "burn_count": 14,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           506,
           500,
@@ -12443,8 +12457,7 @@
           281,
           274,
           239,
-          236,
-          227
+          236
         ]
       },
       {
@@ -12489,9 +12502,9 @@
       },
       {
         "name": "Finance",
-        "count": 27,
+        "count": 26,
         "burn_count": 6,
-        "mint_count": 21,
+        "mint_count": 20,
         "event_ids": [
           511,
           509,
@@ -12518,8 +12531,7 @@
           286,
           282,
           242,
-          240,
-          227
+          240
         ]
       },
       {
@@ -12664,9 +12676,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 213,
+      "total_mint": 211,
       "direct_action": {
-        "count": 199,
+        "count": 197,
         "pct": 93.4
       },
       "editorial_alarm": {
@@ -12679,10 +12691,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 385,
+      "total_mint": 386,
       "direct_action": {
-        "count": 342,
-        "pct": 88.8
+        "count": 343,
+        "pct": 88.9
       },
       "editorial_alarm": {
         "count": 37,
@@ -12694,9 +12706,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 86,
-      "institutional": 208,
-      "citizen_ratio": 0.293,
+      "citizen": 85,
+      "institutional": 207,
+      "citizen_ratio": 0.291,
       "daily": [
         {
           "date": "2026-05-07",
@@ -12731,7 +12743,7 @@
         {
           "date": "2026-05-13",
           "citizen": 2,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -12819,10 +12831,10 @@
         250,
         243,
         239,
-        236,
-        227
+        236
       ],
       "event_ids_institutional": [
+        521,
         519,
         518,
         517,
@@ -13028,9 +13040,7 @@
         233,
         232,
         231,
-        230,
-        229,
-        228
+        230
       ]
     }
   }
