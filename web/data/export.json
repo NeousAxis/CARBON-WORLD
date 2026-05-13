@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T02:39:35.828778+00:00",
-  "total_events": 512,
+  "generated_at": "2026-05-13T03:10:04.362654+00:00",
+  "total_events": 513,
   "total_burned": 510201000,
-  "total_minted": 756700750,
+  "total_minted": 757200750,
   "pending_reviews": 135,
   "events": [
+    {
+      "id": 513,
+      "event_title": "Draft of emergency clause for Constitution includes extending lawmakers' terms",
+      "event_url": "https://www.japantimes.co.jp/news/2026/05/13/japan/politics/lower-house-emergency-clause/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.79,
+      "confidence": 8,
+      "justification": "Draft emergency clause risks undemocratic term extensions without safeguards. | The draft emergency clause aims to ensure legislative continuity but omits critical safeguards against indefinite term extensions, undermining democratic principles. While governance stability is a positive goal, the absence of term limits creates a significant risk of power consolidation and rights violations.",
+      "tx_hash": "5hiqzZ7znSHo8UH5uBeLhZM5KYv4v5r8VXFcqbyujwUqtKi6puTB64SExXqeBZj3hBqZ9Vgn3Nj3us5ZAkLCUWuk",
+      "created_at": "2026-05-13T03:10:02.375127+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Draft emergency clause includes provisions for legislative continuity during crises, which can support governance stability and SDG 16 (Peace, Justice, and Strong Institutions)\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Draft lacks an upper limit for extending lawmakers' terms, risking prolonged undemocratic power retention and violating UDHR Article 21 (right to periodic elections)\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 512,
       "event_title": "Federal budget includes $50 million to duplicate Belconnen road",
@@ -11274,8 +11296,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 50,
-        "total_amount": 102850000
+        "count": 49,
+        "total_amount": 101350000
       },
       {
         "country": "Australia",
@@ -11328,13 +11350,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.344,
-        "events": 32
+        "burn_ratio": 0.333,
+        "events": 33
       },
       {
         "region": "North America",
-        "burn_ratio": 0.175,
-        "events": 63
+        "burn_ratio": 0.177,
+        "events": 62
       },
       {
         "region": "Africa",
@@ -11369,14 +11391,14 @@
         "events": 23
       },
       {
-        "region": "North America",
-        "mint_ratio": 0.825,
-        "events": 63
-      },
-      {
         "region": "Latin America",
         "mint_ratio": 0.824,
         "events": 34
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.823,
+        "events": 62
       }
     ],
     "supply_trend_7d": [
@@ -11412,7 +11434,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 2700000,
+        "net_minted": 3200000,
         "net_burned": 0
       }
     ],
@@ -11499,6 +11521,7 @@
           221
         ],
         "event_ids_negative": [
+          513,
           512,
           511,
           510,
@@ -11710,8 +11733,7 @@
           217,
           216,
           215,
-          214,
-          213
+          214
         ]
       },
       "UDHR": {
@@ -11739,6 +11761,7 @@
           222
         ],
         "event_ids_negative": [
+          513,
           511,
           509,
           504,
@@ -11899,8 +11922,7 @@
           218,
           217,
           215,
-          214,
-          213
+          214
         ]
       },
       "ILO": {
@@ -11949,7 +11971,7 @@
       },
       "UNDRIP": {
         "positive": 12,
-        "negative": 31,
+        "negative": 30,
         "event_ids_positive": [
           437,
           419,
@@ -11994,8 +12016,7 @@
           237,
           227,
           223,
-          214,
-          213
+          214
         ]
       },
       "Animal": {
@@ -12128,9 +12149,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 56.5,
-      "mainstream_pct": 43.5,
-      "total_sources_used": 46,
+      "niche_pct": 55.6,
+      "mainstream_pct": 44.4,
+      "total_sources_used": 45,
       "articles_processed": 300
     },
     "cache_hit_rate_7d": {
@@ -12519,10 +12540,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 378,
+      "total_mint": 379,
       "direct_action": {
-        "count": 335,
-        "pct": 88.6
+        "count": 336,
+        "pct": 88.7
       },
       "editorial_alarm": {
         "count": 37,
@@ -12571,7 +12592,7 @@
         {
           "date": "2026-05-13",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -12666,6 +12687,7 @@
         215
       ],
       "event_ids_institutional": [
+        513,
         512,
         510,
         509,
@@ -12875,8 +12897,7 @@
         218,
         217,
         216,
-        214,
-        213
+        214
       ]
     }
   }
