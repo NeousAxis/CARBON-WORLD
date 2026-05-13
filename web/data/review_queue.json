@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T08:11:03.669057+00:00",
-  "total_pending": 145,
+  "generated_at": "2026-05-13T08:41:28.574683+00:00",
+  "total_pending": 146,
   "reviews": [
     {
       "id": 49,
@@ -2898,6 +2898,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-13T08:11:01.765420+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 216,
+      "event_title": "China’s Xi expected to press Trump on Taiwan, tariffs during summit",
+      "event_url": "https://www.aljazeera.com/news/2026/5/13/chinas-xi-to-press-trump-on-taiwan-tariffs-during-summit?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Diplomatic pressure by China on the US to reduce arms sales to Taiwan, potentially undermining Taiwan's security and self-determination\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 15\", \"UNDRIP Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}], \"ethical_synthesis\": \"The reported diplomatic pressure by China on the US to reduce arms sales to Taiwan constitutes a significant ethical concern. It undermines Taiwan's right to self-determination and security, violating core human rights principles and indigenous rights frameworks. The action prioritizes geopolitical interests over fundamental rights, with potential regional destabilization.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Taiwan's formal declaration of independence\", \"US arms sales to Taiwan increase\", \"China's military escalation in the region\", \"International sanctions on China\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic resolution reduces tensions and maintains status quo without military conflict\", \"probability\": 0.3, \"score\": 3}, {\"name\": \"B\", \"description\": \"Ongoing pressure leads to reduced US arms sales but no military escalation\", \"probability\": 0.45, \"score\": -5}, {\"name\": \"C\", \"description\": \"Military conflict erupts due to escalating tensions over Taiwan\", \"probability\": 0.25, \"score\": -9}], \"prospective_score\": -4.2, \"final_score\": -5.155, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Diplomatic pressure undermines Taiwan's sovereignty and security.\", \"event_country\": \"China\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Diplomatic engagement between high-level leaders to address international tensions, potentially reducing risk of conflict escalation\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential pressure to reduce arms sales to Taiwan, which could undermine regional security and violate the principle of self-determination for the Taiwanese people\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Possible concessions on tariffs that could favor Chinese economic interests over fair trade practices, risking global economic imbalances\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The summit represents a delicate balance between diplomatic engagement and potential compromises that could undermine regional security and economic fairness. While dialogue is a positive step, the risk of concessions that weaken Taiwan's autonomy or distort trade norms introduces significant ethical concerns.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Taiwan's response to any concessions\", \"Impact on global trade agreements\", \"Changes in U.S.-China military posture in the region\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Summit leads to de-escalation and stable U.S.-China relations, with no major concessions on Taiwan or tariffs\", \"probability\": 0.3, \"score\": 3}, {\"name\": \"B\", \"description\": \"Summit results in minor concessions on tariffs but no significant change in arms sales to Taiwan, maintaining status quo\", \"probability\": 0.5, \"score\": -1}, {\"name\": \"C\", \"description\": \"Summit leads to major concessions on Taiwan arms sales and tariff reductions favoring China, escalating regional tensions\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.15, \"final_score\": -1.04, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Diplomatic summit risks undermining Taiwan's autonomy and fair trade, outweighing minor benefits of engagement.\", \"event_country\": \"China\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.87, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"Both analysts agree on MINT; consensus on diplomatic pressure undermining Taiwan's sovereignty.\", \"disagreement\": false, \"reason\": \"Converged toward average score as both analysts independently identified the same ethical violation: China's pressure to reduce US arms sales to Taiwan undermines Taiwan's security and self-determination.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-13T08:41:26.965082+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
