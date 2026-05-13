@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T13:40:50.291683+00:00",
-  "total_pending": 166,
+  "generated_at": "2026-05-13T14:09:58.190440+00:00",
+  "total_pending": 167,
   "reviews": [
     {
       "id": 49,
@@ -3318,6 +3318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-13T13:40:48.686456+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 237,
+      "event_title": "Uganda: Kampala Faces Three-Week Planned Power Disruptions",
+      "event_url": "https://allafrica.com/stories/202605130498.html",
+      "event_source": "AllAfrica Headlines",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scheduled maintenance on a key transmission line to improve long-term reliability of the power grid.\", \"affected_sdgs\": [7, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Planned power outages will disrupt daily life and economic activity for consumers in Kampala and surrounding areas.\", \"affected_sdgs\": [8, 11], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The maintenance work supports long-term infrastructure reliability (SDG 7 and 9), but the planned outages cause immediate disruption to economic activity and daily life (SDG 8 and 11). The net ethical position is mixed, with the long-term benefits being outweighed by the short-term negative impact.\", \"snapshot_score\": -3.0, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Completion of maintenance and restoration of full power supply\", \"Public feedback on the impact of the outages\", \"Evaluation of alternative maintenance strategies for future\"], \"revaluation_checkpoint\": \"2025-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Maintenance is completed successfully, leading to improved grid reliability and fewer outages in the future.\", \"probability\": 0.3, \"score\": 4}, {\"name\": \"B\", \"description\": \"Maintenance is completed, but the outages cause significant economic and social disruption, with no noticeable improvement in grid reliability.\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Maintenance is delayed or poorly executed, leading to extended outages and further degradation of public trust in the power sector.\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -1.4, \"final_score\": -2.2, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Planned outages disrupt daily life and economic activity, with uncertain long-term benefits.\", \"event_country\": \"Uganda\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"UETCL's planned maintenance ensures long-term grid reliability and reduces risk of catastrophic outages, indirectly supporting sustainable energy infrastructure and SDG 7 (Affordable and Clean Energy).\", \"affected_sdgs\": [7], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Planned power disruptions for three weeks will cause economic losses, inconvenience, and potential health risks for residents and businesses in Kampala, particularly affecting vulnerable populations.\", \"affected_sdgs\": [8, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"While the maintenance work is necessary for grid reliability and aligns with SDG 7, the short-term disruptions disproportionately impact daily life, economic activity, and public health in Kampala. The net ethical judgment is mixed, with the positive aspect of infrastructure resilience outweighing the negative impacts of inconvenience and economic disruption.\", \"snapshot_score\": -1.5, \"trajectory_score\": 0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Completion of maintenance without major incidents\", \"Public backlash or protests over disruptions\", \"Alternative energy solutions adopted during outages\"], \"revaluation_checkpoint\": \"2026-06-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Maintenance is completed efficiently with minimal disruption, and alternative energy solutions (e.g., solar) are temporarily adopted by businesses and residents.\", \"probability\": 0.3, \"score\": 2}, {\"name\": \"B\", \"description\": \"Disruptions cause moderate economic losses and public dissatisfaction, but no long-term harm to infrastructure or health.\", \"probability\": 0.5, \"score\": -1}, {\"name\": \"C\", \"description\": \"Prolonged disruptions lead to significant economic damage, public health crises, and political backlash against UETCL.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -0.8, \"final_score\": -1.025, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Short-term disruptions outweigh long-term grid benefits; neutral impact on CBWD.\", \"event_country\": \"Uganda\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.6125, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action (maintenance) enables long-term reliability but causes short-term harm via outages.\", \"disagreement\": true, \"reason\": \"Analysts agreed on MINT direction but disagreed on magnitude. The institutional action (UETCL maintenance) is a corrective measure for infrastructure resilience, but the outages directly harm economic activity and daily life. The action itself is neutral-to-positive, but the execution causes harm, warranting MINT.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict MINT wrongly labels routine maintenance outages as negative; action is neutral-to-positive, not harmful to planet or rights.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-13T14:09:56.599727+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
