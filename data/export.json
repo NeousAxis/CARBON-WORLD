@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T00:39:53.639593+00:00",
-  "total_events": 509,
+  "generated_at": "2026-05-13T01:10:12.514345+00:00",
+  "total_events": 510,
   "total_burned": 510201000,
-  "total_minted": 754000750,
+  "total_minted": 754700750,
   "pending_reviews": 135,
   "events": [
+    {
+      "id": 510,
+      "event_title": "Tariffs: Trump administration granted reprieve for new 10% surcharge",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/05/13/droits-de-douane-l-administration-trump-obtient-un-sursis-pour-sa-nouvelle-surtaxe-de-10_6688468_3234.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -1.35,
+      "confidence": 8,
+      "justification": "Both analysts agree on MINT; the reprieve enables harmful protectionist policy. | The judicial suspension of the tariff implementation is a positive check on executive overreach, aligning with SDG 8 (Decent Work) and SDG 12 (Responsible Consumption) by preventing immediate economic harm. However, the administration's successful appeal for a reprieve demonstrates a continued push toward protectionist policies that undermine global trade stability and equity.",
+      "tx_hash": "46nDEHCvtnNNwNLap5HJrEStiGP5DJbC9sfhN5ZuyH97wmeonviAcnUjPpXnkV27FLsfG7nmg7JHCyna2udRbMZn",
+      "created_at": "2026-05-13T01:10:10.751752+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Judicial system temporarily suspends implementation of a harmful tariff policy pending full review, preventing immediate economic harm\", \"affected_sdgs\": [8, 10, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Trump administration secures temporary reprieve for a 10% import surcharge that increases costs on global trade, undermining economic stability and responsible consumption\", \"affected_sdgs\": [8, 10, 12], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 509,
       "event_title": "Virologist accused of starting COVID-19 will fight U.S. ban on funding",
@@ -11209,7 +11231,7 @@
       {
         "country": "United States",
         "count": 51,
-        "total_amount": 103800000
+        "total_amount": 103000000
       },
       {
         "country": "Australia",
@@ -11222,26 +11244,26 @@
         "total_amount": 59150000
       },
       {
-        "country": "Argentina",
-        "count": 10,
-        "total_amount": 9265000
-      },
-      {
         "country": "France",
         "count": 10,
         "total_amount": 7200000
+      },
+      {
+        "country": "Argentina",
+        "count": 9,
+        "total_amount": 8565000
       }
     ],
     "top_countries_burn": [
       {
-        "country": "United States",
-        "count": 10,
-        "total_amount": 36000000
-      },
-      {
         "country": "India",
         "count": 9,
         "total_amount": 39130000
+      },
+      {
+        "country": "United States",
+        "count": 9,
+        "total_amount": 34500000
       },
       {
         "country": "United Kingdom",
@@ -11262,8 +11284,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.333,
-        "events": 33
+        "burn_ratio": 0.344,
+        "events": 32
       },
       {
         "region": "Africa",
@@ -11271,14 +11293,14 @@
         "events": 24
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.194,
-        "events": 67
-      },
-      {
         "region": "Europe",
         "burn_ratio": 0.185,
         "events": 54
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.182,
+        "events": 66
       },
       {
         "region": "Oceania",
@@ -11293,19 +11315,19 @@
         "events": 14
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.829,
-        "events": 35
-      },
-      {
         "region": "Oceania",
         "mint_ratio": 0.826,
         "events": 23
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.824,
+        "events": 34
+      },
+      {
         "region": "North America",
-        "mint_ratio": 0.806,
-        "events": 67
+        "mint_ratio": 0.818,
+        "events": 66
       },
       {
         "region": "Africa",
@@ -11346,7 +11368,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 0,
+        "net_minted": 700000,
         "net_burned": 0
       }
     ],
@@ -11363,8 +11385,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 71,
-        "negative": 217,
+        "positive": 69,
+        "negative": 215,
         "event_ids_positive": [
           437,
           433,
@@ -11434,11 +11456,10 @@
           212,
           211,
           209,
-          205,
-          204,
-          203
+          205
         ],
         "event_ids_negative": [
+          510,
           509,
           508,
           507,
@@ -11652,15 +11673,12 @@
           210,
           208,
           207,
-          206,
-          202,
-          201,
-          200
+          206
         ]
       },
       "UDHR": {
-        "positive": 22,
-        "negative": 167,
+        "positive": 21,
+        "negative": 165,
         "event_ids_positive": [
           430,
           415,
@@ -11682,8 +11700,7 @@
           239,
           222,
           209,
-          205,
-          203
+          205
         ],
         "event_ids_negative": [
           509,
@@ -11850,9 +11867,7 @@
           210,
           208,
           207,
-          206,
-          202,
-          200
+          206
         ]
       },
       "ILO": {
@@ -11877,7 +11892,7 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 17,
+        "negative": 16,
         "event_ids_positive": [
           415
         ],
@@ -11897,8 +11912,7 @@
           265,
           231,
           228,
-          208,
-          202
+          208
         ]
       },
       "UNDRIP": {
@@ -11955,7 +11969,7 @@
         ]
       },
       "Animal": {
-        "positive": 24,
+        "positive": 23,
         "negative": 18,
         "event_ids_positive": [
           437,
@@ -11980,8 +11994,7 @@
           250,
           225,
           212,
-          211,
-          204
+          211
         ],
         "event_ids_negative": [
           498,
@@ -12005,7 +12018,7 @@
         ]
       },
       "PB": {
-        "positive": 36,
+        "positive": 35,
         "negative": 39,
         "event_ids_positive": [
           437,
@@ -12042,8 +12055,7 @@
           225,
           221,
           212,
-          211,
-          204
+          211
         ],
         "event_ids_negative": [
           506,
@@ -12089,14 +12101,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.8,
-      "mainstream_pct": 39.2,
-      "total_sources_used": 51,
-      "articles_processed": 310
+      "niche_pct": 60.0,
+      "mainstream_pct": 40.0,
+      "total_sources_used": 50,
+      "articles_processed": 306
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 310,
+      "total_events": 306,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12253,9 +12265,9 @@
       },
       {
         "name": "Defense",
-        "count": 33,
+        "count": 32,
         "burn_count": 1,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           472,
           468,
@@ -12288,8 +12300,7 @@
           246,
           237,
           231,
-          224,
-          200
+          224
         ]
       },
       {
@@ -12354,29 +12365,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 15,
-        "burn_count": 5,
-        "mint_count": 10,
-        "event_ids": [
-          477,
-          457,
-          441,
-          407,
-          381,
-          380,
-          376,
-          343,
-          327,
-          304,
-          303,
-          294,
-          245,
-          209,
-          203
-        ]
-      },
-      {
         "name": "Transport",
         "count": 14,
         "burn_count": 1,
@@ -12396,6 +12384,28 @@
           252,
           241,
           234
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 14,
+        "burn_count": 4,
+        "mint_count": 10,
+        "event_ids": [
+          477,
+          457,
+          441,
+          407,
+          381,
+          380,
+          376,
+          343,
+          327,
+          304,
+          303,
+          294,
+          245,
+          209
         ]
       },
       {
@@ -12437,18 +12447,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 81,
+      "total_burn": 79,
       "direct_action": {
-        "count": 64,
-        "pct": 79.0
+        "count": 62,
+        "pct": 78.5
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 8.6
+        "pct": 8.9
       },
       "untyped": {
         "count": 10,
-        "pct": 12.3
+        "pct": 12.7
       }
     },
     "burn_composition_all_time": {
@@ -12467,14 +12477,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 221,
+      "total_mint": 219,
       "direct_action": {
-        "count": 205,
-        "pct": 92.8
+        "count": 203,
+        "pct": 92.7
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 5.4
+        "pct": 5.5
       },
       "untyped": {
         "count": 4,
@@ -12482,14 +12492,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 375,
+      "total_mint": 376,
       "direct_action": {
-        "count": 332,
-        "pct": 88.5
+        "count": 333,
+        "pct": 88.6
       },
       "editorial_alarm": {
         "count": 37,
-        "pct": 9.9
+        "pct": 9.8
       },
       "untyped": {
         "count": 6,
@@ -12497,9 +12507,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 95,
-      "institutional": 215,
-      "citizen_ratio": 0.306,
+      "citizen": 93,
+      "institutional": 213,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-07",
@@ -12534,7 +12544,7 @@
         {
           "date": "2026-05-13",
           "citizen": 0,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -12630,11 +12640,10 @@
         211,
         210,
         209,
-        206,
-        204,
-        203
+        206
       ],
       "event_ids_institutional": [
+        510,
         509,
         508,
         507,
@@ -12846,10 +12855,7 @@
         213,
         208,
         207,
-        205,
-        202,
-        201,
-        200
+        205
       ]
     }
   }
