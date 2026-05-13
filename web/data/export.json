@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T20:41:17.301593+00:00",
-  "total_events": 532,
+  "generated_at": "2026-05-13T21:12:17.287295+00:00",
+  "total_events": 533,
   "total_burned": 517201000,
-  "total_minted": 787375750,
-  "pending_reviews": 187,
+  "total_minted": 787525750,
+  "pending_reviews": 188,
   "events": [
+    {
+      "id": 533,
+      "event_title": "Imputan a la falsa médica de Chaco por homicidio y usurpación de título: llegó a atender a 1.232 personas en un año",
+      "event_url": "https://www.clarin.com/sociedad/imputan-falsa-medica-chaco-homicidio-usurpacion-titulo-llego-atender-1232-personas-ano_0_CD7TuOcSlI.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.79,
+      "confidence": 9,
+      "justification": "Institutional action punishes fraud and protects patient rights despite systemic failures. | The judicial action represents a necessary enforcement of public health and legal standards, upholding the right to safe medical care (SDG 3, UDHR Article 25). However, the underlying harm caused by the false practitioner highlights systemic vulnerabilities in credential verification and oversight, requiring structural reforms to prevent future incidents.",
+      "tx_hash": "4XdWFoZwDWbaRCb1d5LCBDXs1rKvEW6LQFscXQKPXsDjW3oYkGQ9rJPZutxPf6MVPqD8icd2uJbBXmo6tLfNzvne",
+      "created_at": "2026-05-13T21:12:15.779830+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Judicial system filing formal charges against an individual for homicide and title usurpation, demonstrating enforcement of medical and legal standards\", \"affected_sdgs\": [3, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"A false medical practitioner caused potential harm to 1,232 patients over a year, including a patient death, indicating systemic failures in healthcare credential verification and oversight\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 532,
       "event_title": "U.S. Senate approves Donald Trump’s nominee Kevin Warsh to lead the Federal Reserve",
@@ -11723,19 +11745,19 @@
         "total_amount": 14492000
       },
       {
+        "country": "Argentina",
+        "count": 9,
+        "total_amount": 10050000
+      },
+      {
         "country": "Russia",
-        "count": 10,
-        "total_amount": 57950000
+        "count": 9,
+        "total_amount": 49950000
       },
       {
         "country": "United Kingdom",
         "count": 8,
         "total_amount": 16700000
-      },
-      {
-        "country": "China",
-        "count": 8,
-        "total_amount": 38500000
       }
     ],
     "top_countries_burn": [
@@ -11778,8 +11800,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.196,
-        "events": 46
+        "burn_ratio": 0.2,
+        "events": 45
       },
       {
         "region": "North America",
@@ -11788,8 +11810,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.125,
-        "events": 32
+        "burn_ratio": 0.121,
+        "events": 33
       }
     ],
     "top_regions_destructive": [
@@ -11805,8 +11827,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.844,
-        "events": 32
+        "mint_ratio": 0.848,
+        "events": 33
       },
       {
         "region": "North America",
@@ -11852,7 +11874,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 33375000,
+        "net_minted": 33525000,
         "net_burned": 7000000
       }
     ],
@@ -11870,7 +11892,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 53,
-        "negative": 191,
+        "negative": 190,
         "event_ids_positive": [
           515,
           437,
@@ -11927,6 +11949,7 @@
           271
         ],
         "event_ids_negative": [
+          533,
           532,
           531,
           530,
@@ -12115,14 +12138,12 @@
           277,
           276,
           275,
-          273,
-          270,
-          269
+          273
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 134,
+        "negative": 133,
         "event_ids_positive": [
           430,
           415,
@@ -12143,6 +12164,7 @@
           289
         ],
         "event_ids_negative": [
+          533,
           532,
           529,
           525,
@@ -12274,18 +12296,17 @@
           279,
           278,
           277,
-          273,
-          270,
-          269
+          273
         ]
       },
       "ILO": {
         "positive": 1,
-        "negative": 9,
+        "negative": 10,
         "event_ids_positive": [
           361
         ],
         "event_ids_negative": [
+          533,
           487,
           473,
           471,
@@ -12322,7 +12343,7 @@
       },
       "UNDRIP": {
         "positive": 10,
-        "negative": 28,
+        "negative": 27,
         "event_ids_positive": [
           437,
           419,
@@ -12362,8 +12383,7 @@
           316,
           312,
           308,
-          301,
-          269
+          301
         ]
       },
       "Animal": {
@@ -12497,11 +12517,11 @@
       "niche_pct": 58.7,
       "mainstream_pct": 41.3,
       "total_sources_used": 46,
-      "articles_processed": 264
+      "articles_processed": 263
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 264,
+      "total_events": 263,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12525,10 +12545,11 @@
       },
       {
         "name": "UN",
-        "count": 4,
+        "count": 5,
         "burn_count": 1,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          533,
           478,
           446,
           314,
@@ -12849,14 +12870,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 195,
+      "total_mint": 194,
       "direct_action": {
-        "count": 180,
+        "count": 179,
         "pct": 92.3
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 5.6
+        "pct": 5.7
       },
       "untyped": {
         "count": 4,
@@ -12864,9 +12885,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 397,
+      "total_mint": 398,
       "direct_action": {
-        "count": 352,
+        "count": 353,
         "pct": 88.7
       },
       "editorial_alarm": {
@@ -12880,8 +12901,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 182,
-      "citizen_ratio": 0.311,
+      "institutional": 181,
+      "citizen_ratio": 0.312,
       "daily": [
         {
           "date": "2026-05-07",
@@ -12916,7 +12937,7 @@
         {
           "date": "2026-05-13",
           "citizen": 9,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -13004,6 +13025,7 @@
         271
       ],
       "event_ids_institutional": [
+        533,
         532,
         531,
         526,
@@ -13183,9 +13205,7 @@
         279,
         276,
         275,
-        273,
-        270,
-        269
+        273
       ]
     }
   }
