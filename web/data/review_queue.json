@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T12:11:52.817836+00:00",
-  "total_pending": 162,
+  "generated_at": "2026-05-13T12:40:22.698863+00:00",
+  "total_pending": 163,
   "reviews": [
     {
       "id": 49,
@@ -3238,6 +3238,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-13T12:11:51.096254+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 233,
+      "event_title": "Key Zelenskyy aides under corruption cloud: What are they accused of?",
+      "event_url": "https://www.aljazeera.com/news/2026/5/13/key-zelenskyy-aides-under-corruption-cloud-what-are-they-accused-of?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ukrainian judicial system initiates corruption investigation against high-ranking officials, demonstrating institutional accountability and rule of law enforcement\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Alleged embezzlement of $10.5 million in public funds for a luxury real estate project near Kyiv, undermining public trust and diverting resources from critical wartime needs\", \"affected_sdgs\": [1, 10, 16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The investigation into corruption allegations against Zelenskyy's aides represents a positive enforcement of anti-corruption norms and judicial independence, aligning with SDG 16. However, the alleged embezzlement of $10.5 million in public funds for a luxury project during wartime constitutes a severe violation of public trust and resource allocation, directly undermining SDG 1 and 10. The net ethical position is mixed but leans negative due to the scale of the alleged financial misconduct.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Completion of judicial proceedings with convictions\", \"Public release of audit findings\", \"Implementation of anti-corruption reforms\", \"Impact on wartime resource allocation\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Full accountability with convictions and systemic anti-corruption reforms implemented, restoring public trust\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Partial accountability with limited convictions but continued institutional erosion of trust\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"No meaningful accountability, systemic corruption persists, diverting critical wartime resources\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.15, \"final_score\": -2.36, \"decision\": \"MINT\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Corruption allegations against high officials during wartime undermine public trust and resource allocation.\", \"event_country\": \"Ukraine\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ukrainian judicial system initiates corruption charges against high-ranking officials, demonstrating institutional accountability and rule of law enforcement\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public exposure of alleged corruption involving government aides increases transparency and may deter future misconduct\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Alleged corruption by senior government officials undermines public trust, diverts resources, and may hinder Ukraine's recovery and EU accession efforts\", \"affected_sdgs\": [1, 8, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Corruption allegations involving luxury real estate projects raise concerns about misuse of public funds and potential environmental or social harm from unregulated development\", \"affected_sdgs\": [11, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The initiation of corruption charges against high-ranking officials represents a positive step toward accountability and rule of law, aligning with SDG 16. However, the alleged corruption itself constitutes a significant ethical violation, undermining public trust and potentially diverting resources from critical needs. The net judgment balances institutional integrity against the harm caused by the alleged misconduct.\", \"snapshot_score\": 3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Successful prosecution of accused officials\", \"Dismissal of charges due to lack of evidence\", \"Public backlash or protests over perceived politicization\", \"Impact on Ukraine's EU accession negotiations\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Charges are substantiated with clear evidence, leading to convictions and systemic anti-corruption reforms that strengthen Ukraine's institutions\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Charges are partially substantiated, resulting in some convictions but leaving systemic corruption largely intact, with limited institutional impact\", \"probability\": 0.55, \"score\": 1}, {\"name\": \"C\", \"description\": \"Charges are dismissed or deemed politically motivated, eroding public trust in institutions and enabling further corruption\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 0.65, \"final_score\": 1.06, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Corruption allegations against officials balance institutional accountability against systemic harm.\", \"event_country\": \"Ukraine\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.53, \"confidence\": 9, \"amount_cbwd\": 700000, \"justification\": \"Corruption charges against high-ranking officials signal institutional accountability and justice.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (prosecution of corruption) as a BURN, while Analyst B misjudges the direction by treating it as neutral.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: Corruption charges against officials should be MINT (undermines justice), not BURN",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 700000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-13T12:40:21.069700+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
