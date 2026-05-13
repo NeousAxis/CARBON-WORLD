@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T03:10:04.395069+00:00",
-  "total_pending": 135,
+  "generated_at": "2026-05-13T03:39:21.772766+00:00",
+  "total_pending": 136,
   "reviews": [
     {
       "id": 49,
@@ -2698,6 +2698,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-13T00:39:51.967235+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 206,
+      "event_title": "Study: Researchers link colorectal tumors in young people to previously deemed safe pesticide",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/13/cancer-des-chercheurs-mettent-en-evidence-un-lien-entre-les-tumeurs-colorectales-chez-les-jeunes-et-un-pesticide-juge-sans-risque_6688612_3244.html",
+      "event_source": "Le Monde Planete",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific research identifies a link between a previously deemed safe pesticide and colorectal tumors in young people, challenging regulatory protocols and pesticide surveillance\", \"affected_sdgs\": [3, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Regulatory protocols for pesticide approval and surveillance failed to detect the carcinogenic risk, leading to potential harm to public health\", \"affected_sdgs\": [3, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The study exposes a critical failure in regulatory oversight, undermining public health protections and violating the right to health (UDHR Article 25). However, the scientific breakthrough itself represents a positive step toward correcting these failures and improving future safety standards.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Regulatory reforms implemented within 2 years\", \"New pesticide bans or restrictions enacted\", \"Follow-up studies confirm or refute the findings\", \"Public health campaigns reduce exposure\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Regulatory bodies rapidly reform pesticide approval processes and ban the implicated chemical, leading to long-term public health improvements\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial reforms occur, but loopholes remain, leading to continued exposure and slow public health response\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Regulatory capture persists, no meaningful reforms are implemented, and exposure continues unabated\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.75, \"final_score\": -2.1625, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Regulatory failure and public health risk outweigh scientific progress in ethical balance.\", \"event_country\": \"Spain\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific research identifying a link between a previously deemed safe pesticide and colorectal tumors in young people, challenging regulatory protocols and pesticide surveillance\", \"affected_sdgs\": [3, 12], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Regulatory failure to detect or act on the pesticide's risks, enabling continued use despite potential harm to public health\", \"affected_sdgs\": [3, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The study represents a critical positive step by exposing a regulatory and public health failure, directly supporting SDG 3 (Good Health) and SDG 12 (Responsible Consumption). However, the underlying issue—regulatory negligence—undermines trust in institutions and violates fundamental rights to health and safety. The net ethical judgment is cautiously positive due to the proactive scientific intervention, despite the systemic failure it reveals.\", \"snapshot_score\": 6.5, \"trajectory_score\": 7.0, \"revaluation_score\": 5.0, \"revaluation_triggers\": [\"Regulatory reforms implemented within 24 months\", \"Pesticide banned or restricted globally\", \"Follow-up studies confirm or refute the link\", \"Public backlash leads to policy changes\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Regulatory bodies rapidly reform protocols, pesticide is banned, and global health outcomes improve significantly\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial reforms occur, pesticide use is reduced but not eliminated, and health risks persist at lower levels\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Regulatory inertia persists, pesticide remains in use, and health impacts worsen, leading to widespread public distrust\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 3.7, \"final_score\": 5.1, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Scientific breakthrough challenges regulatory failure but systemic risks remain.\", \"event_country\": \"Spain\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.83, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"The institutional failure to protect public health from a previously deemed safe pesticide constitutes a violation of rights and ethical oversight.\", \"disagreement\": true, \"reason\": \"The event centers on institutional negligence in pesticide regulation, which harms public health. The action of failing to protect rights and allowing harm aligns with BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict direction flipped: article reports harmful pesticide link and regulatory failure (negative impact), but decision is BURN (positive). Should be MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-13T03:39:20.073797+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
