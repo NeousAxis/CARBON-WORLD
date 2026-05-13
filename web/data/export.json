@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T19:10:27.276079+00:00",
-  "total_events": 531,
+  "generated_at": "2026-05-13T19:43:26.032180+00:00",
+  "total_events": 532,
   "total_burned": 517201000,
-  "total_minted": 786875750,
-  "pending_reviews": 180,
+  "total_minted": 787375750,
+  "pending_reviews": 182,
   "events": [
+    {
+      "id": 532,
+      "event_title": "U.S. Senate approves Donald Trump’s nominee Kevin Warsh to lead the Federal Reserve",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/13/le-senat-americain-approuve-la-nomination-du-candidat-de-donald-trump-kevin-warsh-a-la-tete-de-la-fed_6688750_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -0.49,
+      "confidence": 8,
+      "justification": "Both analysts agree on MINT; average score applied. Institutional action prioritizes deregulation over climate protections. | The Senate’s confirmation of Kevin Warsh to lead the Federal Reserve is procedurally legitimate and maintains institutional stability, which is a positive governance outcome. However, given Warsh’s alignment with deregulatory and climate-agnostic policies, the appointment risks undermining future monetary policy support for climate action and financial stability, creating",
+      "tx_hash": "3GQPYaTrJgDaYNsbdezRsh9mhPNoyz2KB7MDrnW65sBtFmdE5Y9V1grPfb3FGFEhYU5jNCKCtzy5GBM4J4ma4qr",
+      "created_at": "2026-05-13T19:43:24.483605+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Senate confirmation of a Federal Reserve chair ensures institutional continuity and democratic legitimacy for monetary policy governance\", \"affected_sdgs\": [8, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Appointment of a nominee aligned with a president known for deregulatory and climate-agnostic policies may weaken future monetary policy support for climate action and financial stability\", \"affected_sdgs\": [13, 12], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 531,
       "event_title": "OPEC Raises Brazil Oil Forecast to 4.7M Barrels a Day for 2026",
@@ -11693,7 +11715,7 @@
       {
         "country": "United States",
         "count": 49,
-        "total_amount": 100350000
+        "total_amount": 100700000
       },
       {
         "country": "Australia",
@@ -11745,14 +11767,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Asia",
-        "burn_ratio": 0.267,
-        "events": 30
-      },
-      {
         "region": "Africa",
         "burn_ratio": 0.25,
         "events": 16
+      },
+      {
+        "region": "Asia",
+        "burn_ratio": 0.241,
+        "events": 29
       },
       {
         "region": "Europe",
@@ -11765,9 +11787,9 @@
         "events": 61
       },
       {
-        "region": "Oceania",
-        "burn_ratio": 0.136,
-        "events": 22
+        "region": "Latin America",
+        "burn_ratio": 0.121,
+        "events": 33
       }
     ],
     "top_regions_destructive": [
@@ -11778,8 +11800,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.864,
-        "events": 22
+        "mint_ratio": 0.905,
+        "events": 21
       },
       {
         "region": "Latin America",
@@ -11792,9 +11814,9 @@
         "events": 61
       },
       {
-        "region": "Africa",
-        "mint_ratio": 0.75,
-        "events": 16
+        "region": "Asia",
+        "mint_ratio": 0.759,
+        "events": 29
       }
     ],
     "supply_trend_7d": [
@@ -11830,7 +11852,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 32875000,
+        "net_minted": 33375000,
         "net_burned": 7000000
       }
     ],
@@ -11847,7 +11869,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 56,
+        "positive": 54,
         "negative": 196,
         "event_ids_positive": [
           515,
@@ -11903,11 +11925,10 @@
           274,
           272,
           271,
-          268,
-          262,
-          261
+          268
         ],
         "event_ids_negative": [
+          532,
           531,
           530,
           529,
@@ -12102,8 +12123,7 @@
           266,
           265,
           264,
-          263,
-          260
+          263
         ]
       },
       "UDHR": {
@@ -12129,6 +12149,7 @@
           289
         ],
         "event_ids_negative": [
+          532,
           529,
           525,
           524,
@@ -12266,8 +12287,7 @@
           266,
           265,
           264,
-          263,
-          260
+          263
         ]
       },
       "ILO": {
@@ -12313,7 +12333,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 11,
+        "positive": 10,
         "negative": 28,
         "event_ids_positive": [
           437,
@@ -12325,8 +12345,7 @@
           377,
           327,
           323,
-          283,
-          262
+          283
         ],
         "event_ids_negative": [
           530,
@@ -12409,7 +12428,7 @@
       },
       "PB": {
         "positive": 26,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           515,
           437,
@@ -12439,6 +12458,7 @@
           271
         ],
         "event_ids_negative": [
+          532,
           531,
           529,
           528,
@@ -12490,11 +12510,11 @@
       "niche_pct": 58.7,
       "mainstream_pct": 41.3,
       "total_sources_used": 46,
-      "articles_processed": 272
+      "articles_processed": 270
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 272,
+      "total_events": 270,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12677,10 +12697,11 @@
       },
       {
         "name": "Finance",
-        "count": 25,
+        "count": 26,
         "burn_count": 6,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          532,
           526,
           511,
           509,
@@ -12815,18 +12836,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 66,
+      "total_burn": 64,
       "direct_action": {
-        "count": 50,
-        "pct": 75.8
+        "count": 48,
+        "pct": 75.0
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 9.1
+        "pct": 9.4
       },
       "untyped": {
         "count": 10,
-        "pct": 15.2
+        "pct": 15.6
       }
     },
     "burn_composition_all_time": {
@@ -12860,10 +12881,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 396,
+      "total_mint": 397,
       "direct_action": {
-        "count": 351,
-        "pct": 88.6
+        "count": 352,
+        "pct": 88.7
       },
       "editorial_alarm": {
         "count": 39,
@@ -12875,9 +12896,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 83,
-      "institutional": 189,
-      "citizen_ratio": 0.305,
+      "citizen": 82,
+      "institutional": 188,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-07",
@@ -12912,7 +12933,7 @@
         {
           "date": "2026-05-13",
           "citizen": 9,
-          "institutional": 13
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -12997,10 +13018,10 @@
         277,
         274,
         272,
-        271,
-        261
+        271
       ],
       "event_ids_institutional": [
+        532,
         531,
         526,
         522,
@@ -13187,9 +13208,7 @@
         266,
         265,
         264,
-        263,
-        262,
-        260
+        263
       ]
     }
   }
