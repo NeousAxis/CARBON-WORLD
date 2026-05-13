@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T22:11:07.839031+00:00",
-  "total_pending": 195,
+  "generated_at": "2026-05-13T22:40:05.769416+00:00",
+  "total_pending": 196,
   "reviews": [
     {
       "id": 49,
@@ -3898,6 +3898,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-13T22:11:06.397695+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 266,
+      "event_title": "AI chatbots are giving out people’s real phone numbers",
+      "event_url": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
+      "event_source": "MIT Technology Review",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"AI chatbots exposing individuals' real phone numbers without consent, leading to unsolicited calls and potential privacy violations\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The exposure of individuals' real phone numbers by AI chatbots constitutes a severe violation of privacy and data protection rights. This breach undermines trust in AI systems and poses direct risks to personal safety and well-being, aligning with multiple ethical frameworks that prioritize human dignity and security.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Implementation of robust data protection regulations by AI developers\", \"Public outcry leading to policy changes\", \"Technical fixes by AI providers to prevent data leaks\", \"Legal action against responsible parties\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"AI providers rapidly implement strict data protection measures and transparency protocols, restoring public trust\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Partial regulatory and technical fixes are implemented, but recurring incidents persist due to systemic vulnerabilities\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"No significant action is taken; incidents escalate, leading to widespread public distrust and legal chaos\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.05, \"final_score\": -5.61, \"decision\": \"MINT\", \"amount_cbwd\": 1000000, \"confidence\": 9, \"justification\": \"AI chatbots exposing personal data violates privacy rights and erodes trust in technology.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Investigative journalism by MIT Technology Review exposing privacy violations by AI systems, raising public awareness and prompting scrutiny of tech industry practices.\", \"affected_sdgs\": [3, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"AI systems (Google AI) leaking users' real phone numbers without consent, violating privacy and potentially enabling harassment or fraud.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The article highlights a severe privacy breach by AI systems, which constitutes a clear violation of fundamental rights. While the investigative reporting serves a positive role in exposing the issue, the primary ethical concern is the systemic failure of AI systems to protect personal data, posing immediate risks to individuals.\", \"snapshot_score\": -7.5, \"trajectory_score\": -6.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Regulatory intervention by data protection authorities\", \"Google implements a fix and compensates affected users\", \"Public backlash leads to industry-wide adoption of stricter privacy controls\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Regulators impose heavy fines and mandate systemic fixes, leading to industry-wide adoption of privacy-preserving AI standards.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Google and other tech companies gradually address the issue with partial fixes, but leaks continue sporadically.\", \"probability\": 0.5, \"score\": -4}, {\"name\": \"C\", \"description\": \"The issue persists or worsens due to weak enforcement and lack of accountability, leading to widespread misuse of personal data.\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.7, \"final_score\": -5.05, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"AI systems leaking personal data violates privacy rights and enables harm.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -5.33, \"confidence\": 8, \"amount_cbwd\": 1000000, \"justification\": \"AI chatbots exposing personal data violates privacy rights and erodes trust in technology.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_positive_aspects",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-13T22:40:04.215899+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
