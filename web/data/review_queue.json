@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-13T04:10:30.487104+00:00",
-  "total_pending": 137,
+  "generated_at": "2026-05-13T04:40:35.650022+00:00",
+  "total_pending": 138,
   "reviews": [
     {
       "id": 49,
@@ -2738,6 +2738,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-13T04:10:28.779254+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 208,
+      "event_title": "Op-ed: Threatened with dismantling, France’s ecological transition agency faces fallacious attacks",
+      "event_url": "https://www.lemonde.fr/idees/article/2026/05/13/menacee-de-demantelement-l-agence-de-la-transition-ecologique-fait-l-objet-d-attaques-fallacieuses-proches-de-la-desinformation_6688619_3232.html",
+      "event_source": "Le Monde Planete",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Collective of scientists, economists, and former ministers publish an op-ed opposing the dismantling of France's ecological transition agency (Ademe), highlighting its contributions to environmental protection, purchasing power, security, and sovereignty.\", \"affected_sdgs\": [7, 11, 12, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Proposed law to dismantle Ademe, which would weaken environmental governance and climate action in France.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The op-ed represents a collective defense of environmental governance and institutional climate action, aligning with multiple SDGs. However, the proposed law to dismantle Ademe poses a significant threat to climate policy and environmental protection, undermining France's commitments to sustainability and human rights.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Adoption or rejection of the proposed law by parliament\", \"Public mobilization or counter-proposals from civil society\", \"EU-level climate policy developments affecting France\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Parliament rejects the dismantling proposal, preserving Ademe's role and strengthening France's climate governance.\", \"probability\": 0.35, \"score\": 6}, {\"name\": \"B\", \"description\": \"Parliament partially dismantles Ademe, reducing its capacity but maintaining some functions.\", \"probability\": 0.45, \"score\": -2}, {\"name\": \"C\", \"description\": \"Parliament fully dismantles Ademe, leading to weakened environmental governance and increased emissions.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.1, \"final_score\": -1.8, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Proposed dismantling of Ademe undermines climate governance and environmental protection.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Collective of scientists, economists, and former ministers publicly opposes dismantling of France’s ecological transition agency (ADEME), highlighting its contributions to environmental protection, purchasing power, security, and sovereignty.\", \"affected_sdgs\": [7, 11, 12, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Publication of a named op-ed in a major outlet (Le Monde) by a recognized collective, amplifying awareness and mobilizing opposition to a policy that weakens environmental governance.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Proposed law to dismantle or reframe France’s ecological transition agency (ADEME), which would weaken environmental protection, climate action, and public accountability mechanisms.\", \"affected_sdgs\": [7, 12, 13, 15], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The op-ed represents a significant act of civic engagement and scientific advocacy, opposing a policy that would dismantle a key environmental institution. However, the underlying policy proposal itself undermines climate action, environmental protection, and public welfare. The net ethical judgment is negative due to the high magnitude of harm from the proposed dismantling, despite the positive consciousness-raising effort.\", \"snapshot_score\": -6.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Parliamentary vote outcome on the law\", \"Public backlash or protests against dismantling\", \"Alternative policy proposals preserving ADEME's mandate\", \"EU-level legal challenges to the reform\"], \"revaluation_checkpoint\": \"2028-05-13\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Parliament rejects the dismantling law, ADEME is strengthened, and France accelerates its ecological transition with broad public support.\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Partial dismantling occurs, ADEME’s mandate is reduced but not eliminated, leading to weakened climate action and public disillusionment.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Full dismantling proceeds, environmental protections collapse, and France faces EU infringement proceedings and domestic unrest.\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -1.85, \"final_score\": -3.54, \"decision\": \"MINT\", \"amount_cbwd\": 750000, \"confidence\": 8, \"justification\": \"Dismantling ADEME undermines climate action and public welfare; op-ed opposes but does not reverse the harm.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.51, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"The proposed dismantling of Ademe weakens institutional climate action and environmental governance.\", \"disagreement\": false, \"reason\": \"Both analysts agree the policy proposal is harmful, but I re-evaluated the institutional action and confirmed it weakens protections, thus it is a BURN.\"}",
+      "sentinel_concern": "llm: Polarity error: dismantling ADEME harms climate action, should be MINT, but verdict is BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-13T04:40:33.922375+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
