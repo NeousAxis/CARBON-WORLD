@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T01:10:12.514345+00:00",
-  "total_events": 510,
+  "generated_at": "2026-05-13T01:40:13.081335+00:00",
+  "total_events": 511,
   "total_burned": 510201000,
-  "total_minted": 754700750,
+  "total_minted": 756200750,
   "pending_reviews": 135,
   "events": [
+    {
+      "id": 511,
+      "event_title": "In Argentina, tens of thousands protest against budget cuts to public universities",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/13/en-argentine-des-dizaines-de-milliers-de-personnes-manifestent-contre-les-coupes-budgetaires-visant-l-universite-publique_6688502_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.04,
+      "confidence": 9,
+      "justification": "Government action violates legal and ethical education funding obligations, outweighing the protest's positive impact. | The protest represents a positive civic action defending the right to education (SDG 4, UDHR Article 26), while the government's refusal to comply with legal obligations undermines educational equity and institutional integrity. The magnitude of the violation outweighs the positive aspect due to the direct harm to access to education.",
+      "tx_hash": "nenHkm3N8kpWYkeoA9mrQMsg97kNit8p1PjB6qLeG6q8J2CfH37dUm9VoZvgvoxAxxEksffjDe57BewZkoJEjRN",
+      "created_at": "2026-05-13T01:40:11.350870+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Mass protest by tens of thousands against budget cuts to public universities, demonstrating civic engagement for education rights\", \"affected_sdgs\": [4], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Government refuses to index university funding to inflation as mandated by law, undermining educational access and quality\", \"affected_sdgs\": [4, 8], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 510,
       "event_title": "Tariffs: Trump administration granted reprieve for new 10% surcharge",
@@ -11244,14 +11266,14 @@
         "total_amount": 59150000
       },
       {
-        "country": "France",
+        "country": "Argentina",
         "count": 10,
-        "total_amount": 7200000
+        "total_amount": 10065000
       },
       {
-        "country": "Argentina",
+        "country": "France",
         "count": 9,
-        "total_amount": 8565000
+        "total_amount": 6500000
       }
     ],
     "top_countries_burn": [
@@ -11267,8 +11289,8 @@
       },
       {
         "country": "United Kingdom",
-        "count": 5,
-        "total_amount": 18900000
+        "count": 4,
+        "total_amount": 18200000
       },
       {
         "country": "Australia",
@@ -11293,11 +11315,6 @@
         "events": 24
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.185,
-        "events": 54
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.182,
         "events": 66
@@ -11306,6 +11323,11 @@
         "region": "Oceania",
         "burn_ratio": 0.174,
         "events": 23
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.173,
+        "events": 52
       }
     ],
     "top_regions_destructive": [
@@ -11315,14 +11337,14 @@
         "events": 14
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.829,
+        "events": 35
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 0.826,
         "events": 23
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.824,
-        "events": 34
       },
       {
         "region": "North America",
@@ -11368,7 +11390,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 700000,
+        "net_minted": 2200000,
         "net_burned": 0
       }
     ],
@@ -11385,7 +11407,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 69,
+        "positive": 68,
         "negative": 215,
         "event_ids_positive": [
           437,
@@ -11455,10 +11477,10 @@
           221,
           212,
           211,
-          209,
-          205
+          209
         ],
         "event_ids_negative": [
+          511,
           510,
           509,
           508,
@@ -11672,12 +11694,11 @@
           213,
           210,
           208,
-          207,
-          206
+          207
         ]
       },
       "UDHR": {
-        "positive": 21,
+        "positive": 20,
         "negative": 165,
         "event_ids_positive": [
           430,
@@ -11699,10 +11720,10 @@
           289,
           239,
           222,
-          209,
-          205
+          209
         ],
         "event_ids_negative": [
+          511,
           509,
           504,
           503,
@@ -11866,8 +11887,7 @@
           213,
           210,
           208,
-          207,
-          206
+          207
         ]
       },
       "ILO": {
@@ -12101,14 +12121,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.0,
-      "mainstream_pct": 40.0,
-      "total_sources_used": 50,
-      "articles_processed": 306
+      "niche_pct": 59.2,
+      "mainstream_pct": 40.8,
+      "total_sources_used": 49,
+      "articles_processed": 305
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 306,
+      "total_events": 305,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12305,10 +12325,11 @@
       },
       {
         "name": "Finance",
-        "count": 27,
+        "count": 28,
         "burn_count": 7,
-        "mint_count": 20,
+        "mint_count": 21,
         "event_ids": [
+          511,
           509,
           508,
           491,
@@ -12447,18 +12468,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 79,
+      "total_burn": 78,
       "direct_action": {
-        "count": 62,
-        "pct": 78.5
+        "count": 61,
+        "pct": 78.2
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 8.9
+        "pct": 9.0
       },
       "untyped": {
         "count": 10,
-        "pct": 12.7
+        "pct": 12.8
       }
     },
     "burn_composition_all_time": {
@@ -12479,12 +12500,12 @@
     "mint_composition_7d": {
       "total_mint": 219,
       "direct_action": {
-        "count": 203,
-        "pct": 92.7
+        "count": 204,
+        "pct": 93.2
       },
       "editorial_alarm": {
-        "count": 12,
-        "pct": 5.5
+        "count": 11,
+        "pct": 5.0
       },
       "untyped": {
         "count": 4,
@@ -12492,9 +12513,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 376,
+      "total_mint": 377,
       "direct_action": {
-        "count": 333,
+        "count": 334,
         "pct": 88.6
       },
       "editorial_alarm": {
@@ -12508,8 +12529,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 93,
-      "institutional": 213,
-      "citizen_ratio": 0.304,
+      "institutional": 212,
+      "citizen_ratio": 0.305,
       "daily": [
         {
           "date": "2026-05-07",
@@ -12543,11 +12564,12 @@
         },
         {
           "date": "2026-05-13",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        511,
         487,
         486,
         483,
@@ -12639,8 +12661,7 @@
         212,
         211,
         210,
-        209,
-        206
+        209
       ],
       "event_ids_institutional": [
         510,
@@ -12854,8 +12875,7 @@
         214,
         213,
         208,
-        207,
-        205
+        207
       ]
     }
   }
