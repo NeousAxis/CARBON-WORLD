@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-13T01:40:13.081335+00:00",
-  "total_events": 511,
+  "generated_at": "2026-05-13T02:10:39.185121+00:00",
+  "total_events": 512,
   "total_burned": 510201000,
-  "total_minted": 756200750,
+  "total_minted": 756700750,
   "pending_reviews": 135,
   "events": [
+    {
+      "id": 512,
+      "event_title": "Federal budget includes $50 million to duplicate Belconnen road",
+      "event_url": "https://www.abc.net.au/news/2026-05-13/federal-budget-act-funding-rspca-roads-moad/106673310",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.36,
+      "confidence": 8,
+      "justification": "Road duplication project increases emissions and urban sprawl, conflicting with climate and sustainability goals. | The budget allocation for cultural preservation is a positive step toward preserving heritage and education. However, the $50 million road duplication project directly conflicts with climate and sustainable urban development goals by promoting car-centric infrastructure, which will likely increase emissions and urban sprawl.",
+      "tx_hash": "5JoojzAM8FxAY9MLqFYGCsUcSoJStqTpeZAEvK2KuaLa22Zn3UJQ26Ajt7fN2yJwwXa2hiMwu9t8TaQ9GHf6X8fw",
+      "created_at": "2026-05-13T02:10:37.374636+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Federal budget allocation of $10 million to the National Film and Sound Archive supports cultural preservation and public access to heritage materials, aligning with SDG 4 (Quality Education) and SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [4, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Federal budget allocation of $50 million to duplicate Drake Brockman Drive in West Belconnen increases road capacity, likely exacerbating car dependency, urban sprawl, and carbon emissions, undermining SDG 11 (Sustainable Cities and Communities) and SDG 13 (Climate Action).\", \"affected_sdgs\": [11, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 511,
       "event_title": "In Argentina, tens of thousands protest against budget cuts to public universities",
@@ -11252,13 +11274,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 51,
-        "total_amount": 103000000
+        "count": 50,
+        "total_amount": 102850000
       },
       {
         "country": "Australia",
-        "count": 18,
-        "total_amount": 14192000
+        "count": 19,
+        "total_amount": 14692000
       },
       {
         "country": "Russia",
@@ -11284,8 +11306,8 @@
       },
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 34500000
+        "count": 8,
+        "total_amount": 29500000
       },
       {
         "country": "United Kingdom",
@@ -11316,18 +11338,18 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.182,
-        "events": 66
-      },
-      {
-        "region": "Oceania",
-        "burn_ratio": 0.174,
-        "events": 23
+        "burn_ratio": 0.175,
+        "events": 63
       },
       {
         "region": "Europe",
         "burn_ratio": 0.173,
         "events": 52
+      },
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.167,
+        "events": 24
       }
     ],
     "top_regions_destructive": [
@@ -11337,19 +11359,19 @@
         "events": 14
       },
       {
+        "region": "Oceania",
+        "mint_ratio": 0.833,
+        "events": 24
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 0.829,
         "events": 35
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 0.826,
-        "events": 23
-      },
-      {
         "region": "North America",
-        "mint_ratio": 0.818,
-        "events": 66
+        "mint_ratio": 0.825,
+        "events": 63
       },
       {
         "region": "Africa",
@@ -11390,7 +11412,7 @@
       },
       {
         "date": "2026-05-13",
-        "net_minted": 2200000,
+        "net_minted": 2700000,
         "net_burned": 0
       }
     ],
@@ -11407,8 +11429,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 68,
-        "negative": 215,
+        "positive": 67,
+        "negative": 214,
         "event_ids_positive": [
           437,
           433,
@@ -11476,10 +11498,10 @@
           222,
           221,
           212,
-          211,
-          209
+          211
         ],
         "event_ids_negative": [
+          512,
           511,
           510,
           509,
@@ -11692,14 +11714,12 @@
           215,
           214,
           213,
-          210,
-          208,
-          207
+          210
         ]
       },
       "UDHR": {
-        "positive": 20,
-        "negative": 165,
+        "positive": 19,
+        "negative": 163,
         "event_ids_positive": [
           430,
           415,
@@ -11719,8 +11739,7 @@
           296,
           289,
           239,
-          222,
-          209
+          222
         ],
         "event_ids_negative": [
           511,
@@ -11885,9 +11904,7 @@
           215,
           214,
           213,
-          210,
-          208,
-          207
+          210
         ]
       },
       "ILO": {
@@ -11912,7 +11929,7 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 16,
+        "negative": 15,
         "event_ids_positive": [
           415
         ],
@@ -11931,8 +11948,7 @@
           305,
           265,
           231,
-          228,
-          208
+          228
         ]
       },
       "UNDRIP": {
@@ -12039,7 +12055,7 @@
       },
       "PB": {
         "positive": 35,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [
           437,
           433,
@@ -12078,6 +12094,7 @@
           211
         ],
         "event_ids_negative": [
+          512,
           506,
           505,
           500,
@@ -12121,14 +12138,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 59.2,
-      "mainstream_pct": 40.8,
-      "total_sources_used": 49,
-      "articles_processed": 305
+      "niche_pct": 58.3,
+      "mainstream_pct": 41.7,
+      "total_sources_used": 48,
+      "articles_processed": 303
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 305,
+      "total_events": 303,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -12361,10 +12378,11 @@
       },
       {
         "name": "Construction",
-        "count": 18,
+        "count": 19,
         "burn_count": 6,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          512,
           500,
           494,
           482,
@@ -12409,8 +12427,8 @@
       },
       {
         "name": "Tech",
-        "count": 14,
-        "burn_count": 4,
+        "count": 13,
+        "burn_count": 3,
         "mint_count": 10,
         "event_ids": [
           477,
@@ -12425,8 +12443,7 @@
           304,
           303,
           294,
-          245,
-          209
+          245
         ]
       },
       {
@@ -12468,18 +12485,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 78,
+      "total_burn": 77,
       "direct_action": {
-        "count": 61,
-        "pct": 78.2
+        "count": 60,
+        "pct": 77.9
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 9.0
+        "pct": 9.1
       },
       "untyped": {
         "count": 10,
-        "pct": 12.8
+        "pct": 13.0
       }
     },
     "burn_composition_all_time": {
@@ -12498,10 +12515,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 219,
+      "total_mint": 218,
       "direct_action": {
-        "count": 204,
-        "pct": 93.2
+        "count": 203,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 11,
@@ -12513,9 +12530,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 377,
+      "total_mint": 378,
       "direct_action": {
-        "count": 334,
+        "count": 335,
         "pct": 88.6
       },
       "editorial_alarm": {
@@ -12528,9 +12545,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 93,
-      "institutional": 212,
-      "citizen_ratio": 0.305,
+      "citizen": 92,
+      "institutional": 211,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-07",
@@ -12565,7 +12582,7 @@
         {
           "date": "2026-05-13",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -12660,10 +12677,10 @@
         215,
         212,
         211,
-        210,
-        209
+        210
       ],
       "event_ids_institutional": [
+        512,
         510,
         509,
         508,
@@ -12873,9 +12890,7 @@
         217,
         216,
         214,
-        213,
-        208,
-        207
+        213
       ]
     }
   }
