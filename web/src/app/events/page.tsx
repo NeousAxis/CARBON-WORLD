@@ -15,6 +15,10 @@
  *   framework=<code>          — SDG|UDHR|ILO|CRC|UNDRIP|Animal|PB (justification text match)
  *   framework_polarity=positive|negative
  *                             — when paired with framework, also forces decision=BURN/MINT
+ *   category=<slug>           — thematic event category (good-news, pandemic,
+ *                             earthquake, conflict, climate, indigenous,
+ *                             animal-welfare, justice, energy, pollution).
+ *                             Keyword/regex match on title + justification.
  *   since=7d|30d|all          — default 7d
  */
 
@@ -78,6 +82,108 @@ const SECTOR_RULES: Array<{ id: string; label: string; patterns: RegExp[] }> = [
   },
 ];
 
+// Thematic event categories — narrative/journalistic angle on top of the
+// analytical sector taxonomy. Keywords are intentionally permissive (~80%
+// recall) so the user can browse trends. A canonical LLM-tagged column on
+// carbon_events would give 100%, but costs a full re-analysis pass.
+const CATEGORY_RULES: Array<{ id: string; label: string; patterns: RegExp[] }> = [
+  {
+    id: "good-news",
+    label: "Good news",
+    patterns: [
+      /\bwins?\b/i, /\bwon\b/i, /\bvictor/i, /\brestor/i, /\bsaved\b/i,
+      /\bmilestone\b/i, /\bpreserv/i, /\bprotect/i, /\bfreed\b/i, /\breleased\b/i,
+      /\bagreement signed\b/i, /\bratif/i, /\bbreakthrough\b/i, /\brecover/i,
+      /\bsuccessful\b/i, /\brewild/i, /\bconservation\b/i, /\bcoalition\b/i,
+    ],
+  },
+  {
+    id: "pandemic",
+    label: "Pandemic",
+    patterns: [
+      /\bpandemic\b/i, /\bepidemic\b/i, /\boutbreak\b/i, /\bvirus(es)?\b/i,
+      /\bvaccin/i, /\bhantavirus\b/i, /\bcorona/i, /\bcovid\b/i, /\bdisease\b/i,
+      /\binfect/i, /\bcontagi/i, /\bquarantine\b/i, /\bWHO\b/, /\bMPOX\b/,
+    ],
+  },
+  {
+    id: "earthquake",
+    label: "Natural disaster",
+    patterns: [
+      /\bearthquake\b/i, /\btsunami\b/i, /\btornado\b/i, /\bhurricane\b/i,
+      /\bcyclone\b/i, /\btyphoon\b/i, /\bvolcan/i, /\beruption\b/i,
+      /\bflood/i, /\blandslide\b/i, /\bwildfire\b/i, /\bdrought\b/i,
+      /\bsinkhole\b/i, /\bavalanche\b/i,
+    ],
+  },
+  {
+    id: "conflict",
+    label: "Conflict / war",
+    patterns: [
+      /\bwar\b/i, /\bmilitar/i, /\bmissile\b/i, /\bdrone strike\b/i,
+      /\bcease ?fire\b/i, /\bsoldier/i, /\binvasion\b/i, /\boccupation\b/i,
+      /\bsanctions?\s+(imposed|lifted)\b/i, /\bbombard/i, /\bkilled\b/i,
+      /\bjihadist\b/i, /\binsurgent\b/i, /\bcombat/i,
+    ],
+  },
+  {
+    id: "climate",
+    label: "Climate action",
+    patterns: [
+      /\bclimate\b/i, /\bCOP\d*\b/, /\bemission/i, /\bcarbon\b/i,
+      /\b(green ?)?house ?gas\b/i, /\bnet ?zero\b/i, /\bparis agreement\b/i,
+      /\b1\.5\s*°?C\b/i, /\bglobal warming\b/i, /\bdecarbon/i, /\bIPCC\b/,
+    ],
+  },
+  {
+    id: "indigenous",
+    label: "Indigenous",
+    patterns: [
+      /\bindigenous\b/i, /\btribal\b/i, /\baboriginal\b/i, /\bfirst nations?\b/i,
+      /\bnative (land|peoples?)\b/i, /\bUNDRIP\b/, /\bquilombola\b/i,
+      /\bguarani\b/i, /\byanomami\b/i, /\bsami\b/i, /\binuit\b/i,
+    ],
+  },
+  {
+    id: "animal-welfare",
+    label: "Animal welfare",
+    patterns: [
+      /\banimal[s]?\b/i, /\bwildlife\b/i, /\bspecies\b/i, /\bpoach/i,
+      /\bextinct/i, /\bendangered\b/i, /\bvaquita\b/i, /\bcetacean/i,
+      /\bwhale/i, /\bdolphin/i, /\bzoo\b/i, /\bsanctuary\b/i, /\baquaculture\b/i,
+    ],
+  },
+  {
+    id: "justice",
+    label: "Justice / legal",
+    patterns: [
+      /\bcourt\b/i, /\bruling\b/i, /\bsentence/i, /\bverdict\b/i, /\bjudges?\b/i,
+      /\blawsuit\b/i, /\bappeal\b/i, /\bconvict/i, /\btrial\b/i, /\bprosecut/i,
+      /\bjudic/i, /\binjunction\b/i, /\bplaintiff\b/i, /\bclass action\b/i,
+    ],
+  },
+  {
+    id: "energy",
+    label: "Energy transition",
+    patterns: [
+      /\bsolar\b/i, /\bwind (farm|turbine|power)\b/i, /\brenewable/i,
+      /\bphotovoltaic\b/i, /\bgeothermal\b/i, /\bhydrogen\b/i, /\bbattery\b/i,
+      /\bfossil fuel/i, /\bcoal\b/i, /\boil pipeline\b/i, /\bnatural gas\b/i,
+      /\bnuclear\b/i, /\benergy transition\b/i, /\bgrid\b/i,
+    ],
+  },
+  {
+    id: "pollution",
+    label: "Pollution",
+    patterns: [
+      /\bpollut/i, /\btoxic\b/i, /\bcontaminat/i, /\bplastic[s]?\b/i,
+      /\bmicroplastic/i, /\bPFAS\b/i, /\bmercury\b/i, /\bchemical spill\b/i,
+      /\boil spill\b/i, /\bsmog\b/i, /\bair quality\b/i, /\be-?waste\b/i,
+      /\btailings?\b/i,
+    ],
+  },
+];
+
 const FRAMEWORK_PATTERNS: Record<string, RegExp> = {
   SDG: /\bSDG[s]?\s*\d*\b|sustainable development goal/i,
   UDHR: /UDHR|universal declaration of human rights/i,
@@ -101,9 +207,20 @@ interface Filters {
   institution?: string;
   framework?: string;
   frameworkPolarity?: string;
+  /** Thematic narrative category (good-news, pandemic, earthquake, ...). */
+  category?: string;
   /** Citizen-vs-institutional bucket — drill-down for the dedicated card. */
   bucket?: "citizen" | "institutional";
   since: "7d" | "30d" | "all";
+}
+
+function matchesCategory(e: CarbonEvent, categoryId: string): boolean {
+  const rule = CATEGORY_RULES.find(
+    (r) => r.id.toLowerCase() === categoryId.toLowerCase(),
+  );
+  if (!rule) return false;
+  const hay = `${e.event_title ?? ""} ${e.justification ?? ""}`;
+  return rule.patterns.some((re) => re.test(hay));
 }
 
 function matchesSector(e: CarbonEvent, sectorId: string): boolean {
@@ -226,6 +343,10 @@ function applyFilters(
     // classification rules are 100% in Python).
     if (f.bucket && canonicalIds && !canonicalIds.has(e.id)) return false;
 
+    // Thematic category: keyword/regex heuristic, no canonical IDs (no
+    // worker-side aggregate yet — would require an LLM tag pass).
+    if (f.category && !matchesCategory(e, f.category)) return false;
+
     return true;
   });
 }
@@ -258,6 +379,7 @@ export default async function EventsPage({ searchParams }: PageProps) {
     institution: get("institution"),
     framework: get("framework"),
     frameworkPolarity: get("framework_polarity"),
+    category: get("category"),
     bucket,
     since: ["7d", "30d", "all"].includes(since) ? since : "7d",
   };
@@ -283,6 +405,11 @@ export default async function EventsPage({ searchParams }: PageProps) {
     activeChips.push({ label: "Sector", value: lab });
   }
   if (filters.institution) activeChips.push({ label: "Institution", value: filters.institution });
+  if (filters.category) {
+    const catLabel =
+      CATEGORY_RULES.find((c) => c.id === filters.category)?.label ?? filters.category;
+    activeChips.push({ label: "Category", value: catLabel });
+  }
   if (filters.bucket) activeChips.push({ label: "Bucket", value: filters.bucket });
   activeChips.push({ label: "Since", value: filters.since });
 
@@ -309,6 +436,44 @@ export default async function EventsPage({ searchParams }: PageProps) {
         Click any title to open its full ethical analysis (the 7-framework breakdown,
         the 4D scoring, the on-chain transaction).
       </p>
+
+      {/* Thematic category selector — narrative drill-down across all events */}
+      <div className="mb-4">
+        <div
+          className="font-mono text-xs uppercase tracking-wider mb-2"
+          style={{ color: "#666" }}
+        >
+          Browse by theme
+        </div>
+        <div className="flex flex-wrap items-center gap-2">
+          {CATEGORY_RULES.map((cat) => {
+            const active = filters.category === cat.id;
+            // Preserve other filters (since, country, etc.) when switching theme
+            const params = new URLSearchParams();
+            if (filters.since !== "7d") params.set("since", filters.since);
+            if (filters.country) params.set("country", filters.country);
+            if (filters.region) params.set("region", filters.region);
+            if (!active) params.set("category", cat.id);
+            const href = "/events" + (params.toString() ? `?${params.toString()}` : "");
+            return (
+              <Link
+                key={cat.id}
+                href={href}
+                className="font-mono text-xs px-3 py-1.5 uppercase tracking-wider"
+                style={{
+                  backgroundColor: active ? "#FF8400" : "transparent",
+                  border: `1px solid ${active ? "#FF8400" : "#2E2E2E"}`,
+                  color: active ? "#111111" : "#B8B9B6",
+                  textDecoration: "none",
+                  transition: "all 120ms",
+                }}
+              >
+                {cat.label}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Active filter chips */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
