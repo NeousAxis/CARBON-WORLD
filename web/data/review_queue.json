@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T02:39:57.227374+00:00",
-  "total_pending": 206,
+  "generated_at": "2026-05-14T03:10:56.218201+00:00",
+  "total_pending": 207,
   "reviews": [
     {
       "id": 49,
@@ -4118,6 +4118,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-14T02:09:47.139536+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 277,
+      "event_title": "Japan's top court seeks judge's dismissal over his suspected online gambling",
+      "event_url": "https://www.japantimes.co.jp/news/2026/05/14/japan/crime-legal/judge-dismissal-online-gambling/",
+      "event_source": "Japan Times",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"A judge in Japan was indicted for suspected online gambling, including accessing an online casino site over 60,000 times and gambling from April to September 2023, raising concerns about judicial integrity and ethical violations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The indictment of a judge for serious ethical violations undermines public trust in the judiciary and violates core principles of judicial integrity and impartiality. While the legal system is taking action to address misconduct, the act itself represents a significant breach of professional and ethical standards, warranting a negative assessment.\", \"snapshot_score\": -7.5, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Judge's conviction or acquittal outcome\", \"Implementation of stricter judicial ethics reforms\", \"Public trust in judiciary metrics\", \"Media coverage of similar cases\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Judge is convicted, leading to systemic judicial ethics reforms and heightened public trust\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Judge is acquitted or receives lenient punishment, eroding public confidence in judicial accountability\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Widespread judicial misconduct scandals emerge, triggering a national crisis of trust in the legal system\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.35, \"final_score\": -5.11, \"decision\": \"MINT\", \"amount_cbwd\": 700000, \"confidence\": 9, \"justification\": \"Judicial misconduct undermines rule of law and public trust, warranting MINT.\", \"event_country\": \"Japan\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Judicial system initiates disciplinary action against a judge for suspected misconduct involving online gambling, demonstrating institutional accountability and adherence to ethical standards\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Suspected online gambling by a judge undermines public trust in the judiciary and may indicate systemic failures in oversight or ethical enforcement within the legal system\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The judicial system's action to investigate and potentially dismiss a judge for suspected online gambling reflects a commitment to integrity and rule of law, aligning with SDG 16. However, the underlying misconduct itself represents a significant breach of public trust and ethical standards, warranting scrutiny and corrective measures.\", \"snapshot_score\": 3.0, \"trajectory_score\": 0.5, \"revaluation_score\": 0.0, \"revaluation_triggers\": [\"Completion of disciplinary proceedings\", \"Implementation of systemic oversight reforms\", \"Public trust metrics post-resolution\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Disciplinary action is swift and transparent, restoring public trust and leading to systemic reforms in judicial oversight\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Proceedings drag on, public trust erodes further, but minor reforms are implemented\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Case is mishandled, scandal deepens, and systemic failures in judicial ethics are exposed\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.3, \"final_score\": 1.825, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 8, \"justification\": \"Institutional accountability balances ethical breach; net neutral impact.\", \"event_country\": \"Japan\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.9, \"confidence\": 10, \"amount_cbwd\": 700000, \"justification\": \"Institutional action punishes judicial misconduct, protecting rule of law integrity.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (indictment/dismissal) as a protective measure against judicial misconduct, which punishes harm to public trust. Analyst B's NEUTRAL stance misapplied the ethical lens by focusing on the breach rather than the corrective action.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects, analyst_ab_disagreement | llm: Polarity error: judicial misconduct punished should be BURN, but article describes harm (gambling) not protection.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 700000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-14T03:10:54.694729+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
