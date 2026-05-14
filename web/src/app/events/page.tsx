@@ -31,6 +31,7 @@ import Link from "next/link";
 import type { CarbonEvent, ExportData } from "@/lib/types";
 import { formatAmount } from "@/components/indicators/formatAmount";
 import { SDG_META, sdgIconId } from "@/lib/sdg-meta";
+import { PB_META } from "@/lib/pb-meta";
 
 export const dynamic = "force-dynamic";
 
@@ -215,6 +216,8 @@ interface Filters {
   category?: string;
   /** UN SDG number 1..17 — exact match against affected_sdgs in aspects. */
   sdg?: number;
+  /** Planetary Boundary slug — regex match on aspect descriptions. */
+  pb?: string;
   /** Citizen-vs-institutional bucket — drill-down for the dedicated card. */
   bucket?: "citizen" | "institutional";
   since: "7d" | "30d" | "all";
@@ -227,6 +230,29 @@ function matchesCategory(e: CarbonEvent, categoryId: string): boolean {
   if (!rule) return false;
   const hay = `${e.event_title ?? ""} ${e.justification ?? ""}`;
   return rule.patterns.some((re) => re.test(hay));
+}
+
+/**
+ * PB match — keyword regex against aspect descriptions for the matching side
+ * (positive_aspects for BURN, negative_aspects for MINT). Approximate ~80 %.
+ */
+function matchesPB(e: CarbonEvent, slug: string): boolean {
+  const pb = PB_META.find((p) => p.slug === slug);
+  if (!pb) return false;
+  const raw = e.decision === "BURN" ? e.positive_aspects_json : e.negative_aspects_json;
+  if (!raw) return false;
+  try {
+    const arr = JSON.parse(raw);
+    if (!Array.isArray(arr)) return false;
+    for (const a of arr) {
+      const text = (a as { description?: string })?.description ?? "";
+      if (!text) continue;
+      if (pb.patterns.some((re) => re.test(text))) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
 }
 
 /**
@@ -378,6 +404,9 @@ function applyFilters(
     // SDG: exact match against Analyst-tagged affected_sdgs in aspects.
     if (f.sdg && !matchesSDG(e, f.sdg)) return false;
 
+    // PB: regex keyword match on aspect descriptions.
+    if (f.pb && !matchesPB(e, f.pb)) return false;
+
     return true;
   });
 }
@@ -417,6 +446,7 @@ export default async function EventsPage({ searchParams }: PageProps) {
       const n = parseInt(v, 10);
       return n >= 1 && n <= 17 ? n : undefined;
     })(),
+    pb: get("pb"),
     bucket,
     since: ["7d", "30d", "all"].includes(since) ? since : "7d",
   };
@@ -452,6 +482,13 @@ export default async function EventsPage({ searchParams }: PageProps) {
     activeChips.push({
       label: "SDG",
       value: `${filters.sdg.toString().padStart(2, "0")} ${meta?.label ?? ""}`.trim(),
+    });
+  }
+  if (filters.pb) {
+    const meta = PB_META.find((p) => p.slug === filters.pb);
+    activeChips.push({
+      label: "Planetary boundary",
+      value: meta?.label ?? filters.pb,
     });
   }
   if (filters.bucket) activeChips.push({ label: "Bucket", value: filters.bucket });

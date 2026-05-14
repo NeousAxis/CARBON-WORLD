@@ -8,6 +8,7 @@ import { BreakdownDonut } from "@/components/BreakdownDonut";
 import { EventsTable } from "@/components/EventsTable";
 import { PartnersSection } from "@/components/PartnersSection";
 import { SDGNavCard } from "@/components/SDGNavCard";
+import { PBNavCard } from "@/components/PBNavCard";
 import { WorldMap } from "@/components/WorldMap";
 import {
   TopCountriesMintCard,
@@ -332,6 +333,12 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
             with the canonical international framework already used by the
             Analyst agents (100 % precision via affected_sdgs in aspects). */}
         <SDGNavCard events={events} />
+
+        {/* Browse by Planetary Boundary — 9 Rockström boundaries (Stockholm
+            Resilience Centre 2023 update). Approximative (~80 % recall) since
+            the Analyst only tags PB at the framework level, not boundary-by-
+            boundary. Status colours: red=transgressed, yellow=at_limit, green=safe. */}
+        <PBNavCard events={events} />
 
         {/* Charts row: supply chart + donut (existing) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
