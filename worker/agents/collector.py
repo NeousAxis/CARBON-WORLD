@@ -9,7 +9,8 @@ import logging
 import os
 import sqlite3
 from datetime import datetime, timezone
-from rss_fetcher import fetch_all_articles
+from rss_fetcher import fetch_all_articles, get_next_source_offset
+from state import get_source_offset, set_source_offset
 
 logger = logging.getLogger("agent.collector")
 
@@ -149,8 +150,19 @@ def collect(conn: sqlite3.Connection | None = None) -> list[dict]:
     if conn is not None:
         submission_articles = _collect_pending_submissions(conn)
 
-    rss_articles = fetch_all_articles()
-    logger.info("Collector agent done: %d RSS articles collected.", len(rss_articles))
+    # Rotate the RSS source list across runs so every source eventually gets its
+    # position-0 turn in the round-robin interleave, even when the downstream cap
+    # (MAX_ARTICLES_PER_RUN) is smaller than the source count.
+    start_offset = get_source_offset()
+    rss_articles = fetch_all_articles(start_offset=start_offset)
+    new_offset = get_next_source_offset(start_offset)
+    set_source_offset(new_offset)
+    logger.info(
+        "Collector agent done: %d RSS articles collected (source offset %d -> %d).",
+        len(rss_articles),
+        start_offset,
+        new_offset,
+    )
 
     # Submissions go first; RSS articles follow
     articles = submission_articles + rss_articles

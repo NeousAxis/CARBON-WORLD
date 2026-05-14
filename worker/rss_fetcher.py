@@ -2,7 +2,7 @@
 rss_fetcher.py — Fetches articles from a curated list of worldwide RSS sources.
 
 Strategy:
-- 157 sources worldwide: mainstream press + civic/NGO wins + Global South press + Mastodon scientists + Reddit communities + scientific preprints
+- 175 sources worldwide: mainstream press + civic/NGO wins + Global South press + Mastodon scientists + Reddit communities + scientific preprints
 - Dead or empty feeds are skipped gracefully
 - Final list is interleaved round-robin so that every source is represented
   even when MAX_ARTICLES_PER_RUN caps the output
@@ -14,7 +14,7 @@ from typing import Optional
 import feedparser
 import requests
 
-from config import MAX_PER_SOURCE_PER_RUN
+from config import MAX_ARTICLES_PER_RUN, MAX_PER_SOURCE_PER_RUN
 
 logger = logging.getLogger(__name__)
 
@@ -174,8 +174,6 @@ RSS_SOURCES: list[dict] = [
      "name": "Sea Shepherd"},
     {"url": "https://blog.ucsusa.org/feed/",
      "name": "Union of Concerned Scientists"},
-    {"url": "https://en.wikinews.org/w/index.php?title=Special:NewsFeed&feed=rss",
-     "name": "Wikinews"},
 
     # ─── A. Reddit sub.rss ───────────────────────────────────────────────────
     {"url": "https://www.reddit.com/r/UpliftingNews/new.rss", "name": "Reddit r/UpliftingNews"},
@@ -206,16 +204,12 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.nrdc.org/stories/rss.xml", "name": "NRDC Stories"},
     {"url": "https://www.birdlife.org/feed/", "name": "BirdLife International"},
     {"url": "https://earthjustice.org/feed", "name": "Earthjustice"},
-    {"url": "https://earthjustice.org/blog/feed", "name": "Earthjustice Blog"},
     {"url": "https://www.greenpeace.org.uk/feed/", "name": "Greenpeace UK"},
     {"url": "https://www.greenpeace.org/usa/feed/", "name": "Greenpeace USA"},
     {"url": "https://www.greenpeace.org/canada/en/feed/", "name": "Greenpeace Canada"},
     {"url": "https://viacampesina.org/en/feed/", "name": "La Via Campesina"},
     {"url": "https://amazonwatch.org/feed", "name": "Amazon Watch"},
     {"url": "https://www.foodandwaterwatch.org/feed/", "name": "Food & Water Watch"},
-    {"url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/feed", "name": "Cultural Survival Quarterly"},
-    {"url": "https://friendsoftheearth.uk/news/feed", "name": "Friends of the Earth UK"},
-    {"url": "https://slowfood.com/en/news/feed/", "name": "Slow Food International"},
     {"url": "https://www.rightlivelihoodfoundation.org/feed/", "name": "Right Livelihood Award"},
 
     # ─── D. Global South press ───────────────────────────────────────────────
@@ -225,15 +219,12 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://dialogochino.net/en/feed/", "name": "Diálogo Chino EN"},
     {"url": "https://www.efeverde.com/feed/", "name": "Efeverde (Spain eco)"},
     {"url": "https://africaisacountry.com/feed", "name": "Africa Is a Country"},
-    {"url": "https://www.afrik21.africa/en/feed/", "name": "Afrik21 EN"},
-    {"url": "https://www.afrik21.africa/feed/", "name": "Afrik21 FR"},
     {"url": "https://www.al-monitor.com/rss", "name": "Al-Monitor (Middle East)"},
     {"url": "https://theconversation.com/africa/articles.atom", "name": "The Conversation Africa"},
     {"url": "https://theconversation.com/global/articles.atom", "name": "The Conversation Global"},
     {"url": "https://theconversation.com/us/articles.atom", "name": "The Conversation US"},
     {"url": "https://www.rnz.co.nz/rss/world.xml", "name": "RNZ Pacific (Radio NZ)"},
     {"url": "https://www.rnz.co.nz/rss/news.xml", "name": "RNZ News NZ"},
-    {"url": "https://pulitzercenter.org/rss.xml", "name": "Pulitzer Center"},
     {"url": "https://www.dailymaverick.co.za/rss/", "name": "Daily Maverick (South Africa)"},
     {"url": "https://mg.co.za/feed/", "name": "Mail & Guardian (South Africa)"},
     {"url": "https://rss.dw.com/rdf/rss-en-world", "name": "Deutsche Welle World"},
@@ -261,10 +252,6 @@ RSS_SOURCES: list[dict] = [
     # ─── G. Additional high-signal sources ───────────────────────────────────
     {"url": "https://www.resilience.org/feed/", "name": "Resilience.org"},
     {"url": "https://www.ecologistasenaccion.org/feed/", "name": "Ecologistas en Acción (Spain)"},
-    {"url": "https://www.theecologist.org/feed/", "name": "The Ecologist"},
-    {"url": "https://www.euractiv.com/section/climate-environment/feed/", "name": "Euractiv Climate"},
-    {"url": "https://www.euractiv.com/section/agriculture-food/feed/", "name": "Euractiv Agriculture"},
-    {"url": "https://www.euractiv.com/section/energy/feed/", "name": "Euractiv Energy"},
     {"url": "https://www.politico.eu/section/energy/feed/", "name": "Politico EU Energy"},
     {"url": "https://neweconomics.org/feed", "name": "New Economics Foundation"},
     {"url": "https://www.greeneuropeanjournal.eu/feed/", "name": "Green European Journal"},
@@ -273,10 +260,8 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.resilientcitiesnetwork.org/feed/", "name": "Resilient Cities Network"},
     {"url": "https://womin.africa/feed/", "name": "WoMin Africa"},
     {"url": "https://www.foodtank.com/feed/", "name": "Food Tank"},
-    {"url": "https://www.solutionsjournalism.org/feed", "name": "Solutions Journalism Network"},
     {"url": "https://www.renewableenergyworld.com/feed/", "name": "Renewable Energy World"},
     {"url": "https://www.pv-tech.org/feed/", "name": "PV Tech (Solar)"},
-    {"url": "https://ecosia.org/blog/rss.xml", "name": "Ecosia Blog"},
     {"url": "https://localfutures.org/feed/", "name": "Local Futures"},
     {"url": "https://www.steadystate.org/feed/", "name": "Center for Steady State Economy"},
     {"url": "https://commonslibrary.org/feed/", "name": "Commons Library"},
@@ -293,7 +278,6 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.francebleu.fr/rss/a-la-une.xml", "name": "France Bleu"},
     # 2) Curated citizen / social inventions
     {"url": "https://atlasofthefuture.org/feed/", "name": "Atlas of the Future"},
-    {"url": "https://www.springwise.com/feed/", "name": "Springwise (innovations)"},
     # 3) Makers / inventions / civic tech
     {"url": "https://hackaday.com/blog/feed/", "name": "Hackaday"},
     {"url": "https://newatlas.com/index.rss", "name": "New Atlas"},
@@ -304,7 +288,6 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://sentientmedia.org/feed/", "name": "Sentient Media"},
     {"url": "https://animalequality.org/feed/", "name": "Animal Equality"},
     # 5) Solutions / French ecological press
-    {"url": "https://www.lematin.ch/rss-articles", "name": "Le Matin (CH)"},
     {"url": "https://www.letemps.ch/articles.rss", "name": "Le Temps (CH)"},
     {"url": "https://goodgoodgood.co/feed", "name": "Good Good Good"},
     # 6) Reddit additions targeted at citizen actions
@@ -312,15 +295,9 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.reddit.com/r/InventionsAndIdeas/new.rss", "name": "Reddit r/InventionsAndIdeas"},
     # 7) Health / WHO / medical breakthroughs (added 2026-05-03 after Cyril
     #    flagged Chile leprosy elimination + Japan stem-cell Parkinson approval)
-    {"url": "https://www.who.int/rss-feeds/news-english.xml", "name": "WHO News (EN)"},
     {"url": "https://www.who.int/rss-feeds/news-french.xml", "name": "WHO News (FR)"},
-    {"url": "https://www.santemagazine.fr/feed", "name": "Santé Magazine"},
     {"url": "https://www.lequotidiendumedecin.fr/rss.xml", "name": "Le Quotidien du Médecin"},
     {"url": "https://www.statnews.com/feed/", "name": "STAT News (medicine)"},
-    {"url": "https://www.medicalnewstoday.com/newsfeeds-rss", "name": "Medical News Today"},
-    # 8) Peer-reviewed scientific breakthroughs (PubMed Central, Nature, Science)
-    {"url": "https://www.nature.com/nature.rss", "name": "Nature"},
-    {"url": "https://www.science.org/rss/news_current.xml", "name": "Science Magazine"},
 
     # ─── I. European country-specific (added 2026-05-05) ─────────────────────
     # Cyril flagged that European decisions on sustainability / society /
@@ -338,14 +315,11 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.ansa.it/english/english_rss.xml", "name": "ANSA English (Italy)"},
     # Spain — Efeverde already there; add general policy
     {"url": "https://www.thelocal.es/feeds/rss.php", "name": "The Local Spain (EN)"},
-    {"url": "https://english.elpais.com/rss/elpais/inenglish.xml", "name": "El País English"},
     # Netherlands
     {"url": "https://www.dutchnews.nl/feed/", "name": "DutchNews.nl"},
     # Belgium / EU
-    {"url": "https://www.brusselstimes.com/feed/", "name": "Brussels Times (Belgium/EU)"},
     {"url": "https://www.politico.eu/feed/", "name": "Politico Europe (full)"},
     # Switzerland (German + Italian Swiss)
-    {"url": "https://www.swissinfo.ch/eng/rss", "name": "swissinfo.ch (CH, EN)"},
     {"url": "https://www.thelocal.ch/feeds/rss.php", "name": "The Local Switzerland (EN)"},
     # Austria
     {"url": "https://www.thelocal.at/feeds/rss.php", "name": "The Local Austria (EN)"},
@@ -353,9 +327,7 @@ RSS_SOURCES: list[dict] = [
     {"url": "https://www.thelocal.se/feeds/rss.php", "name": "The Local Sweden (EN)"},
     {"url": "https://www.thelocal.dk/feeds/rss.php", "name": "The Local Denmark (EN)"},
     {"url": "https://www.thelocal.no/feeds/rss.php", "name": "The Local Norway (EN)"},
-    {"url": "https://yle.fi/uutiset/osasto/news/rss", "name": "Yle News (Finland, EN)"},
     # Poland
-    {"url": "https://tvpworld.com/feed", "name": "TVP World (Poland, EN)"},
     {"url": "https://notesfrompoland.com/feed/", "name": "Notes From Poland (EN)"},
     # Greece
     {"url": "https://www.ekathimerini.com/feed/", "name": "Kathimerini (Greece, EN)"},
@@ -478,13 +450,42 @@ def _round_robin_interleave(per_source: dict) -> list[dict]:
     return result
 
 
-def fetch_all_articles() -> list[dict]:
+def get_next_source_offset(start_offset: int = 0) -> int:
+    """
+    Compute the next rotation cursor for RSS_SOURCES.
+
+    Each run consumes roughly MAX_ARTICLES_PER_RUN position-0 slots from the
+    rotated source list. Advancing the cursor by that step guarantees that
+    every source gets its turn within ceil(N_sources / MAX_ARTICLES_PER_RUN)
+    runs — typically ~3 hours with cron */30 and 175 sources / cap 25.
+    """
+    n = len(RSS_SOURCES)
+    if n == 0:
+        return 0
+    step = MAX_ARTICLES_PER_RUN if MAX_ARTICLES_PER_RUN > 0 else n
+    return (start_offset + step) % n
+
+
+def fetch_all_articles(start_offset: int = 0) -> list[dict]:
     """
     Fetch every RSS source, deduplicate by link, and return an interleaved
     (round-robin by source) list so diversity is preserved when capped.
+
+    The source list is rotated by ``start_offset`` before fetching, so that
+    sources further down the declaration order also get their position-0 slot
+    across runs (without this, sources past index MAX_ARTICLES_PER_RUN are
+    almost never sampled when the downstream cap is smaller than the source
+    count).
     """
+    n = len(RSS_SOURCES)
+    if n > 0:
+        start_offset = start_offset % n
+        rotated = RSS_SOURCES[start_offset:] + RSS_SOURCES[:start_offset]
+    else:
+        rotated = []
+
     per_source: dict[str, list[dict]] = {}
-    for source in RSS_SOURCES:
+    for source in rotated:
         articles = _fetch_single_source(source)
         # Cap per source BEFORE interleave so mainstream sources don't dominate
         if MAX_PER_SOURCE_PER_RUN > 0:

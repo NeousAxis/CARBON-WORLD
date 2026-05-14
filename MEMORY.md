@@ -4,6 +4,81 @@
 
 ---
 
+## 🎣 2026-05-14 — RSS sources audit + cleanup + rotation cursor
+
+Session déclenchée par une question sur observe.earth : "peut-on s'en inspirer pour élargir les sources ?". Après analyse, les feeds d'observe.earth (GDACS / ACLED / FIRMS) sont biaisés négatif/désastre par design — l'inverse de la mission CARBON WORLD. **Pivot** : audit des sources existantes avant d'en ajouter (principe "retravailler la pêche, pas le filet", reframe 2026-04-20). Branche `feat/clientearth-feed-test`.
+
+### A. Audit complet des 198 URLs uniques (déclarées : 201 — 3 doublons)
+
+Test parallèle HTTP + croisement avec `data/export.json` (537 events on-chain). Résultat :
+
+```
+✅  57 productives (≥1 event)         28.8%   ← portent 100 % de la prod
+⚠️  93 live mais 0 event              47.0%
+       ├── 29 récentes (sections H/I)         ← chance pas encore eue
+       └── 64 anciennes                       ← vrais zombies
+❌  41 cassées (HTTP 4xx / timeout)    20.7%
+❌   7 HTML vides (200 mais pas RSS)    3.5%
+```
+
+Concentration alarmante : **top 10 sources = 54.6 %** des 537 events. Les 188 autres se partagent les miettes.
+
+### B. Hypothèse écartée : "le prompt classifier filtre trop dur"
+
+Lecture des prompts → **les deux sont déjà permissifs**. Le classifier liste explicitement Sea Shepherd, ClientEarth, etc. comme exemples VALID. L'analyst a un step 1 dédié `citizen & consciousness-raising acts (BURN candidates)` qui accepte (a) gatherings, (b) declarations, (c) deliverables (ONG report, peer-reviewed paper), (d) community actions, (e) protests with named organizers. **Cyril confirme : la permissivité est intentionnelle, c'est un choix mission pour capter les actes citoyens qui aident la communauté humaine à comprendre les enjeux.** Donc le bottleneck n'est PAS les prompts.
+
+### C. Vrai bottleneck identifié : sampling biaisé
+
+```
+175 sources × MAX_PER_SOURCE_PER_RUN=3  →  ~500 articles candidats
+   round-robin par position : src0_p0, src1_p0, ..., src174_p0, src0_p1, ...
+   cap MAX_ARTICLES_PER_RUN=25  →  on garde les 25 PREMIÈRES sources × position-0
+   145+ sources jamais vues à chaque run, toujours les mêmes
+```
+
+Sea Shepherd position ~67, Earthjustice ~88, Greenpeace UK/USA/Canada ~91-93, La Via Campesina ~94, Amazon Watch ~95, Cultural Survival ~96, Mastodon @rahmstorf ~80. Mécaniquement, leurs articles n'arrivent jamais au classifier — leurs prompts permissifs ne servent à rien.
+
+### D. Fix livré : rotation cursor `source_offset` persisté
+
+Choix entre 3 options (shuffle aléatoire vs round-robin pondéré par section vs rotation cursor) → **rotation cursor** retenue : déterministe pour les logs, garantie d'équité sur le temps long, zéro arbitraire de pondération.
+
+- `worker/state.py` : étendu pour stocker `source_offset` dans `last_run.json` (backward compat — `last_run` préservé). Ajout `get_source_offset()` / `set_source_offset()`.
+- `worker/rss_fetcher.py` : `fetch_all_articles(start_offset=0)` rotate `RSS_SOURCES` par offset avant fetch. Helper `get_next_source_offset(start_offset)` = `(start + MAX_ARTICLES_PER_RUN) % N`. Backward compat : default `start_offset=0` reproduit l'ancien comportement (tests existants verts).
+- `worker/agents/collector.py` : `collect()` lit l'offset, appelle `fetch_all_articles(start_offset=offset)`, calcule + persiste le suivant.
+
+Simulation 8 runs successifs (cron */30) — chaque run commence sur une source différente, **cycle complet en 7 runs = 3h30** :
+
+```
+Run 1: UN News Climate         (mainstream)
+Run 2: Clarin Sociedad AR      (LatAm)
+Run 3: Mongabay Brasil         (Global South biodiv)
+Run 4: Reddit r/Permaculture   (citizen community)
+Run 5: Efeverde Spain          (regional eco press)
+Run 6: bioRxiv Evol. Biology   (peer-reviewed science)
+Run 7: Wild beim Wild          (animal welfare CH)
+Run 8: ← retour début cycle
+```
+
+### E. Cleanup 26 entrées mortes (201 → 175 sources)
+
+- **16 définitivement mortes** (404/410, supprimées) : Cultural Survival Quarterly, Earthjustice Blog, Ecosia Blog, El País English, Friends of the Earth UK, Le Matin (CH), Medical News Today, Pulitzer Center, Santé Magazine, Slow Food International, Solutions Journalism Network, TVP World (Poland), The Ecologist, Wikinews, Yle News (Finland), swissinfo.ch.
+- **7 endpoints HTML / RSS désactivés** (supprimés) : Afrik21 EN/FR, Brussels Times, Euractiv ×3 (Agriculture/Climate/Energy), Springwise.
+- **3 doublons dédupliqués** : Nature (déclaré 2× — gardé "Nature News"), Science (gardé "Science (AAAS)"), WHO News (gardé "WHO News").
+- **Différé pour investigation** : 15 Reddit 403 + DeSmog/NRDC Stories/Kathimerini/The New Humanitarian alt (peut-être problème UA spécifique, fix séparé) + 4 timeouts (Africa Is a Country, China Dialogue, Climate Litigation Tracker, Right Livelihood — peut-être congestion).
+
+### F. Tests
+
+`worker/tests/test_source_rotation.py` créé — **14 nouveaux tests verts** (5 fetch rotation + 4 next-offset + 5 state persistence). Suite complète 212/212 avec PYTHONPATH correct (2 "échecs" préexistants dans `test_sanitize.py` sont des erreurs PYTHONPATH du worktree, sans rapport avec ces modifs — confirmés en relançant depuis la racine).
+
+### G. À faire après merge
+
+1. `git push` sur la branche, MR vers main si comportement validé en prod.
+2. Côté VPS : `git pull` après merge — le cron `*/30` reprend immédiatement avec rotation active. Surveiller `~/CARBON-WORLD/last_run.json` pour voir `source_offset` augmenter.
+3. **Observer 1-2 cycles complets (7-14 runs ≈ 3h30 à 7h)** avant de juger : on doit voir apparaître des events Sea Shepherd, Earthjustice, Greenpeace, La Via Campesina, Mongabay Brasil/Indonesia, arXiv/bioRxiv dans la DB.
+4. **Investigation Reddit 403** (séparée) : tester si l'UA `python-requests/X` ou un UA browser propre permet de récupérer les RSS Reddit. Si non, déposer.
+
+---
+
 ## 🛡 2026-05-09 — Sentinel structural-flag layer + /review crash fix
 
 Session déclenchée par un BURN 700K sur une dépêche logistique : *"Live, hantavirus: Five French citizens on board the 'Hondius' will be repatriated..."* (event #391, score 6.41). Cyril : **"il ne produit pas d'espoir pour le futur et ne contient aucune orientation stratégique qui influence le futur"**.
