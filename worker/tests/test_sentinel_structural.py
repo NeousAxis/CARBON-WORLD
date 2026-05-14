@@ -18,7 +18,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "prompts"))
 
-from agents.sentinel import _structural_flags  # noqa: E402
+from agents.sentinel import _structural_flags, _should_escalate  # noqa: E402
 
 
 def _well_formed_burn() -> dict:
@@ -203,3 +203,58 @@ def test_neutral_decision_never_in_fragile_band():
     flags = _structural_flags(a, disagreement=False)
     assert "fragile_burn_threshold" not in flags
     assert "fragile_mint_threshold" not in flags
+
+
+# --- _should_escalate: soft-only flags do NOT escalate, substantive flags do ---
+
+
+def test_should_escalate_empty_list_false():
+    assert _should_escalate([]) is False
+
+
+def test_should_escalate_missing_positive_only_false():
+    """Missing positive aspects alone is an editorial oversight, not a verdict issue."""
+    assert _should_escalate(["missing_positive_aspects"]) is False
+
+
+def test_should_escalate_missing_negative_only_false():
+    assert _should_escalate(["missing_negative_aspects"]) is False
+
+
+def test_should_escalate_both_missing_only_false():
+    """Both aspects missing but no other flag → still editorial, not escalated."""
+    assert _should_escalate(
+        ["missing_positive_aspects", "missing_negative_aspects"]
+    ) is False
+
+
+def test_should_escalate_fragile_burn_alone_true():
+    assert _should_escalate(["fragile_burn_threshold"]) is True
+
+
+def test_should_escalate_fragile_mint_alone_true():
+    assert _should_escalate(["fragile_mint_threshold"]) is True
+
+
+def test_should_escalate_analyst_disagreement_alone_true():
+    assert _should_escalate(["analyst_ab_disagreement"]) is True
+
+
+def test_should_escalate_missing_plus_fragile_burn_true():
+    """Hondius event #391 pattern: missing_negative + fragile_burn → escalate."""
+    assert _should_escalate(
+        ["missing_negative_aspects", "fragile_burn_threshold"]
+    ) is True
+
+
+def test_should_escalate_missing_plus_fragile_mint_true():
+    """Hondius event #338 pattern: missing_negative + fragile_mint → escalate."""
+    assert _should_escalate(
+        ["missing_negative_aspects", "fragile_mint_threshold"]
+    ) is True
+
+
+def test_should_escalate_missing_plus_disagreement_true():
+    assert _should_escalate(
+        ["missing_positive_aspects", "analyst_ab_disagreement"]
+    ) is True

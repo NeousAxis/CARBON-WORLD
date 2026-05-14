@@ -27,6 +27,33 @@ logger = logging.getLogger("agent.sentinel")
 _FRAGILE_BURN_BAND = (5.5, 6.5)   # decision == BURN
 _FRAGILE_MINT_BAND = (3.5, 4.5)   # decision == MINT (upper edge near NEUTRAL)
 
+# A "soft" flag is an editorial-quality signal — the Analyst forgot to fill one
+# side of the pos/neg aspect list — that does NOT prove the verdict-on-fact is
+# wrong. Empirically (2026-05-14 backlog audit) 51 % of structurally-escalated
+# items were unanimous (A == B == suggested) and only flagged because of a soft
+# flag; auto-applying their suggested decision matched manual review. So a soft
+# flag alone is not enough to escalate — at least one "substantive" flag (real
+# polarity signal: fragile band or analyst A/B disagreement) must accompany it.
+_SOFT_FLAGS = frozenset({"missing_positive_aspects", "missing_negative_aspects"})
+
+
+def _should_escalate(flags: list[str]) -> bool:
+    """
+    Decide whether the structural flags warrant routing to the human review_queue.
+
+    Rule: empty list -> never escalate. List containing only soft flags
+    (missing_positive_aspects, missing_negative_aspects) -> do NOT escalate;
+    those are editorial oversights that the unanimous downstream verdict
+    already resolved. Otherwise -> escalate.
+
+    Any "substantive" flag — fragile_burn_threshold, fragile_mint_threshold,
+    or analyst_ab_disagreement — by itself or combined with a soft flag, is
+    enough to escalate.
+    """
+    if not flags:
+        return False
+    return not set(flags).issubset(_SOFT_FLAGS)
+
 
 def _structural_flags(analysis: dict, disagreement: bool) -> list[str]:
     """
@@ -137,8 +164,9 @@ def check(event: dict) -> dict:
         llm_coherent = bool(result.get("coherent", True))
         llm_concern = (result.get("concern", "") or "")[:300]
 
-    # --- Layer 2 OR Layer 1: structural flags ALWAYS escalate, LLM cannot override ---
-    coherent = llm_coherent and not structural_flags
+    # --- Layer 2 OR Layer 1: structural flags escalate per _should_escalate()
+    # (soft flags alone are editorial — they don't override a unanimous LLM verdict)
+    coherent = llm_coherent and not _should_escalate(structural_flags)
 
     concern_parts: list[str] = []
     if structural_flags:
