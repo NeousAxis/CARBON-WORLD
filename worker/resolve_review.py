@@ -128,6 +128,17 @@ def main() -> int:
     import json
     from agents.writer import _classify_burn_subtype, _classify_mint_subtype
     r_verdict = json.loads(review.get("reconciler_verdict") or "{}")
+    # Propagate the per-aspect taxonomy (affected_sdgs + frameworks + magnitudes)
+    # the Analyst already produced. Without this copy, every event resolved via
+    # /review or auto_approve_* scripts arrives in carbon_events with empty
+    # aspects_json columns, leaving the SDG/PB dashboard cards blind to them.
+    # Reconciler verdicts don't carry the aspect lists — only the merged final
+    # score / decision — so we fall back to Analyst A (always present) and
+    # then Analyst B if A is missing for some reason.
+    a_verdict = json.loads(review.get("analyst_a_verdict") or "{}")
+    b_verdict = json.loads(review.get("analyst_b_verdict") or "{}")
+    positive_aspects = a_verdict.get("positive_aspects") or b_verdict.get("positive_aspects") or []
+    negative_aspects = a_verdict.get("negative_aspects") or b_verdict.get("negative_aspects") or []
     event_data = {
         "event_title": review["event_title"][:500],
         "event_url": review["event_url"],
@@ -149,6 +160,8 @@ def main() -> int:
             final_decision,
             review["event_source"],
         ),
+        "positive_aspects_json": json.dumps(positive_aspects, ensure_ascii=False) if positive_aspects else None,
+        "negative_aspects_json": json.dumps(negative_aspects, ensure_ascii=False) if negative_aspects else None,
     }
 
     saved = save_event(event_data)
