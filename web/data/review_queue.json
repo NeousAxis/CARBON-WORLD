@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T01:39:35.269385+00:00",
-  "total_pending": 205,
+  "generated_at": "2026-05-14T02:09:48.521449+00:00",
+  "total_pending": 206,
   "reviews": [
     {
       "id": 49,
@@ -4098,6 +4098,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-14T01:39:33.860784+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 276,
+      "event_title": "Syria: Amnesty International Calls for Investigation into Possible War Crimes by Israeli Military",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/14/syrie-amnesty-international-appelle-a-enqueter-sur-de-possibles-crimes-de-guerre-commis-par-l-armee-israelienne_6688893_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Amnesty International calls for investigation into alleged war crimes by Israeli military in Syria, demanding accountability for destruction of civilian homes and forced displacement\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"Alleged deliberate destruction of civilian homes and forced displacement of population by Israeli military in Syria, potentially constituting war crimes\", \"affected_sdgs\": [1, 11, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 25\", \"Geneva Conventions\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\"]}], \"ethical_synthesis\": \"The action by Amnesty International to demand accountability for alleged war crimes represents a positive enforcement of human rights and international law. However, the underlying allegations of deliberate civilian harm and forced displacement by the Israeli military constitute severe violations of fundamental rights and humanitarian law, with catastrophic humanitarian consequences.\", \"snapshot_score\": -8.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Completion of independent investigation confirming or denying allegations\", \"International court rulings on jurisdiction and accountability\", \"Changes in regional military dynamics affecting civilian safety\", \"Syrian government's response to displaced populations\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Independent investigation confirms war crimes; international legal action follows with reparations and protections for civilians\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Investigation remains inconclusive; geopolitical tensions prevent accountability; ongoing civilian suffering\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Investigation confirms war crimes but no action taken; escalation of violence and further displacement\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.85, \"final_score\": -5.23, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Alleged war crimes with severe humanitarian impact outweigh accountability demand's positive enforcement.\", \"event_country\": \"Israel\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Amnesty International calls for investigation into alleged war crimes by Israeli military, potentially holding perpetrators accountable and deterring future violations\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"Alleged deliberate destruction of civilian homes and forced displacement of populations in Syria by Israeli military forces\", \"affected_sdgs\": [1, 11, 16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 17\", \"UDHR Article 25\", \"CRC Article 6\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"Animal\"]}], \"ethical_synthesis\": \"The call for investigation by Amnesty International represents a positive step toward accountability and justice for potential war crimes, aligning with human rights frameworks. However, the alleged actions by the Israeli military—deliberate destruction of civilian homes and forced displacement—constitute severe violations of international law, including human rights and children's rights, with catastrophic humanitarian consequences.\", \"snapshot_score\": -8.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Completion of formal investigation with binding outcomes\", \"International court rulings on jurisdiction and admissibility\", \"Changes in regional geopolitical alliances affecting accountability\", \"Evidence of reparations or restitution for affected populations\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"International investigation leads to accountability, reparations, and deterrence of future violations\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Investigation stalls due to geopolitical pressures, no meaningful accountability achieved\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Investigation escalates into broader conflict, exacerbating humanitarian crisis\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.35, \"final_score\": -5.01, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Alleged war crimes outweigh accountability efforts; severe humanitarian impact.\", \"event_country\": \"Israel\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.67, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Alleged war crimes with severe humanitarian impact outweigh accountability demand's positive enforcement.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: calling for war crimes investigation is a positive accountability action (BURN), but verdict is MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-14T02:09:47.139536+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
