@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T21:34:08.187807+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-05-14T22:06:33.632180+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 290,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-14T09:37:27.094721+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 303,
+      "event_title": "Hegseth again stuns Pentagon with Poland troop withdrawal",
+      "event_url": "https://www.politico.com/news/2026/05/14/poland-pentagon-hegseth-troop-withdrawl-surprise-00922169?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Defense Secretary's decision to withdraw troops from Poland avoids potential escalation of military tensions, reducing risk of conflict and aligning with diplomatic de-escalation efforts\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Withdrawal of troops from a NATO ally without clear justification undermines alliance commitments and may signal unpredictability in defense policy, potentially weakening regional security\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of transparency in the decision-making process raises concerns about accountability and democratic oversight in military deployments\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The decision to withdraw troops from Poland has mixed ethical implications. While it reduces immediate military risks and aligns with de-escalation goals, it also undermines alliance reliability and transparency, creating potential long-term security vulnerabilities. The net ethical position is cautiously negative due to the balance of risks and the lack of clear justification.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Clarification of withdrawal rationale by Pentagon\", \"NATO response to the decision\", \"Impact on Poland's security posture\", \"Congressional oversight hearings\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Withdrawal is reversed with clear justification, restoring alliance trust and regional stability\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Withdrawal stands but NATO adapts with alternative security arrangements, maintaining stability\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Withdrawal triggers NATO crisis, leading to regional instability and weakened collective defense\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.15, \"final_score\": -2.32, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Troop withdrawal without justification undermines alliance reliability and transparency.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Secretary of Defense issues order to withdraw troops from a routine mission, reducing military footprint and potential geopolitical tensions\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Order issued without clear justification, potentially undermining alliance trust and strategic stability in Eastern Europe\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(3)\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The withdrawal of troops from a routine mission reduces military engagement and potential harm, aligning with peace and justice goals. However, the lack of transparency and justification undermines trust in alliances and could destabilize regional security, violating principles of international cooperation and accountability.\", \"snapshot_score\": 2.0, \"trajectory_score\": -1.5, \"revaluation_score\": -0.5, \"revaluation_triggers\": [\"Public justification released by Pentagon within 6 months\", \"NATO or EU response to withdrawal\", \"Impact on Poland's security posture assessed\", \"Alternative diplomatic or military measures announced\"], \"revaluation_checkpoint\": \"2028-11-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Order leads to strengthened diplomatic ties and reduced regional tensions, with clear justification provided\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Order remains unexplained, causing minor erosion in alliance trust but no major conflict\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Order triggers NATO-EU rift, emboldens adversarial actions in Eastern Europe\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.85, \"final_score\": -0.21, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Troop withdrawal reduces harm but lacks transparency, creating uncertainty in alliances.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.265, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"The institutional action of unexplained troop withdrawal weakens alliance trust and regional stability.\", \"disagreement\": true, \"reason\": \"The action of unexplained troop withdrawal from a 'model ally' weakens institutional trust and regional security, aligning with MINT.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: troop withdrawal from a 'model ally' scored MINT (should be BURN if reducing military presence is positive for stability)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-14T22:06:31.288281+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
