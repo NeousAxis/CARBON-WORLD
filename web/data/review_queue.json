@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T17:06:32.013306+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-05-14T17:36:35.337761+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 290,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-14T09:37:27.094721+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 298,
+      "event_title": "Out of Pocket: Pollution Premiums – the real cost of fossil fuels on our insurance bills",
+      "event_url": "https://350.org/out-of-pocket-pollution-premiums-the-real-cost-of-fossil-fuels-on-our-insurance-bills/",
+      "event_source": "350.org",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Raising public awareness about the financial burden of fossil fuels on insurance costs.\", \"affected_sdgs\": [13, 12, 7], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Promoting momentum for clean energy transition and holding polluters accountable.\", \"affected_sdgs\": [7, 13, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Highlighting the increasing unaffordability of insurance due to fossil fuel pollution, which disproportionately affects vulnerable populations.\", \"affected_sdgs\": [1, 10, 13], \"violated_rights\": [\"UDHR Article 22\", \"SDG 10.1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The article raises awareness about the financial and social costs of fossil fuels, particularly on insurance affordability and climate vulnerability. While it highlights a growing problem, it also points to positive momentum for clean energy and accountability. The net ethical position is mixed but leans toward constructive awareness-raising.\", \"snapshot_score\": -3.5, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of new clean energy policies in major emitting countries\", \"Insurance industry shifts in pricing models to reflect climate risk\", \"Global adoption of carbon pricing mechanisms\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Global transition to clean energy accelerates, reducing climate risk and insurance costs.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate progress on clean energy and climate adaptation, with continued financial strain on insurance systems.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Fossil fuel dependence continues, leading to catastrophic climate events and unmanageable insurance costs.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.05, \"final_score\": -1.84, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The article highlights negative impacts of fossil fuels on insurance costs and vulnerable populations.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"350.org publishes a report exposing the financial burden of fossil fuel pollution on insurance premiums, raising public awareness and advocating for polluters to pay\", \"affected_sdgs\": [12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Momentum building for clean energy transition as a response to the report's findings, indicating potential systemic shift away from fossil fuels\", \"affected_sdgs\": [7, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Fossil fuel pollution increases insurance premiums, exposing individuals to financial ruin and systemic economic harm\", \"affected_sdgs\": [1, 10, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The report by 350.org highlights a critical negative externality of fossil fuel dependence—rising insurance costs—while catalyzing momentum toward clean energy solutions. The ethical tension lies between the immediate harm caused by pollution and the long-term potential of systemic change. The report's role in raising awareness and advocating for accountability is a net positive, despite the underlying systemic issue it exposes.\", \"snapshot_score\": -3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Widespread adoption of clean energy policies in key markets\", \"Regulatory action forcing polluters to internalize costs\", \"Technological breakthroughs reducing clean energy costs\", \"Backlash from fossil fuel industries delaying transition\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Rapid global transition to clean energy with strong regulatory enforcement, polluters pay full costs, insurance premiums stabilize\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial transition with uneven regulatory enforcement, some progress but persistent financial burdens in high-pollution regions\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Stagnation in clean energy transition, fossil fuel industries resist change, insurance premiums continue rising, financial ruin widespread\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.7, \"final_score\": 0.425, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Report raises critical awareness and catalyzes momentum for clean energy transition despite exposing systemic harm.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.73, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Event exposes systemic harm from fossil fuels; institutional action (insurance cost burden) punishes vulnerable groups.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the punitive nature of fossil fuel impacts on insurance affordability. Analyst B's neutrality overlooked the immediate harm to vulnerable populations despite noting systemic benefits.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict direction flipped: article highlights negative impact of fossil fuels on insurance affordability, so should be MINT, not BURN; justification mismatches decision.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-14T17:36:32.873822+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
