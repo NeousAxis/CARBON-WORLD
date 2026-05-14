@@ -7,6 +7,7 @@ import { SupplyChart } from "@/components/SupplyChart";
 import { BreakdownDonut } from "@/components/BreakdownDonut";
 import { EventsTable } from "@/components/EventsTable";
 import { PartnersSection } from "@/components/PartnersSection";
+import { ThemesNavCard } from "@/components/ThemesNavCard";
 import { WorldMap } from "@/components/WorldMap";
 import {
   TopCountriesMintCard,
@@ -325,6 +326,10 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
       <div className="mx-auto max-w-7xl px-4 py-6 space-y-6">
         {/* Event of the Day — full width featured card */}
         <EventOfTheDayCard event={aggregates.event_of_the_day} />
+
+        {/* Browse by theme — 10 narrative categories, visible right after the
+            event-of-the-day, links into /events?category=<slug> drill-down */}
+        <ThemesNavCard />
 
         {/* Charts row: supply chart + donut (existing) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
