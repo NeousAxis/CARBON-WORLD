@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-14T07:40:16.329027+00:00",
-  "total_events": 737,
+  "generated_at": "2026-05-14T08:06:21.181760+00:00",
+  "total_events": 738,
   "total_burned": 829301000,
-  "total_minted": 1093335750,
-  "pending_reviews": 11,
+  "total_minted": 1098335750,
+  "pending_reviews": 13,
   "events": [
+    {
+      "id": 738,
+      "event_title": "Gaza: Peace Council warns of 'status quo' threatening population survival",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/14/gaza-le-conseil-de-la-paix-s-inquiete-du-statu-quo-pour-la-survie-de-la-population_6689048_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -4.92,
+      "confidence": 8,
+      "justification": "Military actions and conditional aid policies cause severe humanitarian harm outweighing diplomatic warnings. | The warning by the UN Peace Council representative highlights critical humanitarian concerns in Gaza, aligning with multiple human rights frameworks. However, the ongoing military actions and conditional approach to humanitarian aid create severe violations of fundamental rights, particularly for children and vulnerable populations. The net ethical position is negative due to the immed",
+      "tx_hash": "5h9WpfsA2yNkVLkbV46VmXTfCndraRUWTQoDSnBdCFW7XMVq59eWey2kNCu176w2kbBJnjsggXBd8HuBbN5k5Trx",
+      "created_at": "2026-05-14T08:06:19.712521+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"International diplomatic actor (UN Peace Council representative) publicly warns about humanitarian crisis in Gaza, raising global awareness of population survival threats\", \"affected_sdgs\": [1, 2, 3, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ongoing military actions by Israeli forces in Gaza causing daily strikes and humanitarian crisis\", \"affected_sdgs\": [1, 2, 3, 11, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 6\", \"CRC Article 24\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Conditioning peace process on Hamas disarmament before humanitarian relief, potentially delaying critical aid to civilian population\", \"affected_sdgs\": [1, 2, 3, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 737,
       "event_title": "Florida to Close Alligator Alcatraz, News Report Says",
@@ -16238,14 +16260,14 @@
         "total_amount": 10050000
       },
       {
-        "country": "United Kingdom",
-        "count": 8,
-        "total_amount": 16700000
-      },
-      {
         "country": "China",
         "count": 8,
         "total_amount": 38500000
+      },
+      {
+        "country": "Russia",
+        "count": 8,
+        "total_amount": 42950000
       }
     ],
     "top_countries_burn": [
@@ -16278,8 +16300,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.267,
-        "events": 15
+        "burn_ratio": 0.286,
+        "events": 14
       },
       {
         "region": "Asia",
@@ -16288,8 +16310,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.209,
-        "events": 43
+        "burn_ratio": 0.195,
+        "events": 41
       },
       {
         "region": "North America",
@@ -16306,7 +16328,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 12
       },
       {
         "region": "Oceania",
@@ -16362,7 +16384,7 @@
       },
       {
         "date": "2026-05-14",
-        "net_minted": 850000,
+        "net_minted": 5850000,
         "net_burned": 0
       }
     ],
@@ -16379,8 +16401,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 47,
-        "negative": 180,
+        "positive": 46,
+        "negative": 179,
         "event_ids_positive": [
           515,
           437,
@@ -16427,10 +16449,10 @@
           302,
           300,
           298,
-          296,
-          292
+          296
         ],
         "event_ids_negative": [
+          738,
           537,
           535,
           534,
@@ -16608,14 +16630,12 @@
           297,
           295,
           294,
-          293,
-          291,
-          290
+          293
         ]
       },
       "UDHR": {
         "positive": 16,
-        "negative": 126,
+        "negative": 125,
         "event_ids_positive": [
           430,
           415,
@@ -16635,6 +16655,7 @@
           296
         ],
         "event_ids_negative": [
+          738,
           537,
           535,
           533,
@@ -16758,9 +16779,7 @@
           304,
           303,
           299,
-          295,
-          291,
-          290
+          295
         ]
       },
       "ILO": {
@@ -16783,11 +16802,12 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           415
         ],
         "event_ids_negative": [
+          738,
           524,
           517,
           496,
@@ -16895,7 +16915,7 @@
       },
       "PB": {
         "positive": 24,
-        "negative": 42,
+        "negative": 41,
         "event_ids_positive": [
           515,
           437,
@@ -16963,20 +16983,19 @@
           330,
           301,
           297,
-          294,
-          290
+          294
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.9,
-      "mainstream_pct": 39.1,
-      "total_sources_used": 46,
-      "articles_processed": 247
+      "niche_pct": 62.2,
+      "mainstream_pct": 37.8,
+      "total_sources_used": 45,
+      "articles_processed": 245
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 247,
+      "total_events": 245,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -17000,10 +17019,11 @@
       },
       {
         "name": "UN",
-        "count": 5,
+        "count": 6,
         "burn_count": 1,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          738,
           533,
           478,
           446,
@@ -17117,6 +17137,39 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 25,
+        "burn_count": 1,
+        "mint_count": 24,
+        "event_ids": [
+          738,
+          514,
+          472,
+          468,
+          464,
+          456,
+          445,
+          439,
+          426,
+          422,
+          421,
+          417,
+          412,
+          410,
+          401,
+          378,
+          371,
+          370,
+          359,
+          357,
+          339,
+          324,
+          311,
+          308,
+          295
+        ]
+      },
+      {
         "name": "Finance",
         "count": 25,
         "burn_count": 6,
@@ -17147,39 +17200,6 @@
           310,
           294,
           293
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 25,
-        "burn_count": 1,
-        "mint_count": 24,
-        "event_ids": [
-          514,
-          472,
-          468,
-          464,
-          456,
-          445,
-          439,
-          426,
-          422,
-          421,
-          417,
-          412,
-          410,
-          401,
-          378,
-          371,
-          370,
-          359,
-          357,
-          339,
-          324,
-          311,
-          308,
-          295,
-          291
         ]
       },
       {
@@ -17281,18 +17301,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 57,
+      "total_burn": 56,
       "direct_action": {
-        "count": 41,
-        "pct": 71.9
+        "count": 40,
+        "pct": 71.4
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 10.5
+        "pct": 10.7
       },
       "untyped": {
         "count": 10,
-        "pct": 17.5
+        "pct": 17.9
       }
     },
     "burn_composition_all_time": {
@@ -17311,9 +17331,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 184,
+      "total_mint": 183,
       "direct_action": {
-        "count": 169,
+        "count": 168,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -17326,9 +17346,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 401,
+      "total_mint": 402,
       "direct_action": {
-        "count": 356,
+        "count": 357,
         "pct": 88.8
       },
       "editorial_alarm": {
@@ -17341,9 +17361,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 74,
-      "institutional": 173,
-      "citizen_ratio": 0.3,
+      "citizen": 73,
+      "institutional": 172,
+      "citizen_ratio": 0.298,
       "daily": [
         {
           "date": "2026-05-08",
@@ -17378,7 +17398,7 @@
         {
           "date": "2026-05-14",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -17454,10 +17474,10 @@
         313,
         301,
         298,
-        296,
-        292
+        296
       ],
       "event_ids_institutional": [
+        738,
         537,
         535,
         534,
@@ -17628,9 +17648,7 @@
         297,
         295,
         294,
-        293,
-        291,
-        290
+        293
       ]
     }
   }
