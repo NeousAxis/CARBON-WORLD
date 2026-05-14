@@ -15,10 +15,13 @@
  *   framework=<code>          — SDG|UDHR|ILO|CRC|UNDRIP|Animal|PB (justification text match)
  *   framework_polarity=positive|negative
  *                             — when paired with framework, also forces decision=BURN/MINT
- *   category=<slug>           — thematic event category (good-news, pandemic,
- *                             earthquake, conflict, climate, indigenous,
- *                             animal-welfare, justice, energy, pollution).
- *                             Keyword/regex match on title + justification.
+ *   sdg=<1-17>                — UN Sustainable Development Goal number.
+ *                             Exact match against affected_sdgs in each
+ *                             event's positive_aspects_json (for BURN) or
+ *                             negative_aspects_json (for MINT). 100 % precision
+ *                             via Analyst-tagged metadata.
+ *   category=<slug>           — DEPRECATED narrative tag, kept for legacy URLs.
+ *                             Use sdg= for new links.
  *   since=7d|30d|all          — default 7d
  */
 
@@ -27,6 +30,7 @@ import path from "node:path";
 import Link from "next/link";
 import type { CarbonEvent, ExportData } from "@/lib/types";
 import { formatAmount } from "@/components/indicators/formatAmount";
+import { SDG_META, sdgIconId } from "@/lib/sdg-meta";
 
 export const dynamic = "force-dynamic";
 
@@ -207,8 +211,10 @@ interface Filters {
   institution?: string;
   framework?: string;
   frameworkPolarity?: string;
-  /** Thematic narrative category (good-news, pandemic, earthquake, ...). */
+  /** Thematic narrative category (legacy slug filter). */
   category?: string;
+  /** UN SDG number 1..17 — exact match against affected_sdgs in aspects. */
+  sdg?: number;
   /** Citizen-vs-institutional bucket — drill-down for the dedicated card. */
   bucket?: "citizen" | "institutional";
   since: "7d" | "30d" | "all";
@@ -221,6 +227,28 @@ function matchesCategory(e: CarbonEvent, categoryId: string): boolean {
   if (!rule) return false;
   const hay = `${e.event_title ?? ""} ${e.justification ?? ""}`;
   return rule.patterns.some((re) => re.test(hay));
+}
+
+/**
+ * SDG match — exact lookup in the Analyst-tagged affected_sdgs of each aspect.
+ * For BURN, look at positive_aspects (the SDG the action advances).
+ * For MINT, look at negative_aspects (the SDG the action undermines).
+ * NEUTRAL events are not on-chain, so they are filtered out earlier.
+ */
+function matchesSDG(e: CarbonEvent, sdgNum: number): boolean {
+  const raw = e.decision === "BURN" ? e.positive_aspects_json : e.negative_aspects_json;
+  if (!raw) return false;
+  try {
+    const arr = JSON.parse(raw);
+    if (!Array.isArray(arr)) return false;
+    for (const a of arr) {
+      const list: unknown = a?.affected_sdgs ?? a?.sdgs ?? [];
+      if (Array.isArray(list) && list.includes(sdgNum)) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
 }
 
 function matchesSector(e: CarbonEvent, sectorId: string): boolean {
@@ -347,6 +375,9 @@ function applyFilters(
     // worker-side aggregate yet — would require an LLM tag pass).
     if (f.category && !matchesCategory(e, f.category)) return false;
 
+    // SDG: exact match against Analyst-tagged affected_sdgs in aspects.
+    if (f.sdg && !matchesSDG(e, f.sdg)) return false;
+
     return true;
   });
 }
@@ -380,6 +411,12 @@ export default async function EventsPage({ searchParams }: PageProps) {
     framework: get("framework"),
     frameworkPolarity: get("framework_polarity"),
     category: get("category"),
+    sdg: (() => {
+      const v = get("sdg");
+      if (!v) return undefined;
+      const n = parseInt(v, 10);
+      return n >= 1 && n <= 17 ? n : undefined;
+    })(),
     bucket,
     since: ["7d", "30d", "all"].includes(since) ? since : "7d",
   };
@@ -410,6 +447,13 @@ export default async function EventsPage({ searchParams }: PageProps) {
       CATEGORY_RULES.find((c) => c.id === filters.category)?.label ?? filters.category;
     activeChips.push({ label: "Category", value: catLabel });
   }
+  if (filters.sdg) {
+    const meta = SDG_META.find((s) => s.num === filters.sdg);
+    activeChips.push({
+      label: "SDG",
+      value: `${filters.sdg.toString().padStart(2, "0")} ${meta?.label ?? ""}`.trim(),
+    });
+  }
   if (filters.bucket) activeChips.push({ label: "Bucket", value: filters.bucket });
   activeChips.push({ label: "Since", value: filters.since });
 
@@ -437,38 +481,40 @@ export default async function EventsPage({ searchParams }: PageProps) {
         the 4D scoring, the on-chain transaction).
       </p>
 
-      {/* Thematic category selector — narrative drill-down across all events */}
+      {/* Browse by SDG — compact row of the 17 UN Sustainable Development
+          Goals. The home page hosts the full grid with icons + counters;
+          here we provide a quick switcher for users already inside /events. */}
       <div className="mb-4">
         <div
           className="font-mono text-xs uppercase tracking-wider mb-2"
           style={{ color: "#666" }}
         >
-          Browse by theme
+          Browse by SDG
         </div>
-        <div className="flex flex-wrap items-center gap-2">
-          {CATEGORY_RULES.map((cat) => {
-            const active = filters.category === cat.id;
-            // Preserve other filters (since, country, etc.) when switching theme
+        <div className="flex flex-wrap items-center gap-1">
+          {SDG_META.map((sdg) => {
+            const active = filters.sdg === sdg.num;
             const params = new URLSearchParams();
             if (filters.since !== "7d") params.set("since", filters.since);
             if (filters.country) params.set("country", filters.country);
             if (filters.region) params.set("region", filters.region);
-            if (!active) params.set("category", cat.id);
+            if (!active) params.set("sdg", String(sdg.num));
             const href = "/events" + (params.toString() ? `?${params.toString()}` : "");
             return (
               <Link
-                key={cat.id}
+                key={sdg.num}
                 href={href}
-                className="font-mono text-xs px-3 py-1.5 uppercase tracking-wider"
+                title={`SDG ${sdg.num} — ${sdg.fullName}`}
+                className="font-mono text-xs px-2 py-1 uppercase tracking-wider"
                 style={{
-                  backgroundColor: active ? "#FF8400" : "transparent",
-                  border: `1px solid ${active ? "#FF8400" : "#2E2E2E"}`,
-                  color: active ? "#111111" : "#B8B9B6",
+                  backgroundColor: active ? sdg.color : "transparent",
+                  border: `1px solid ${active ? sdg.color : "#2E2E2E"}`,
+                  color: active ? "#FFFFFF" : "#B8B9B6",
                   textDecoration: "none",
                   transition: "all 120ms",
                 }}
               >
-                {cat.label}
+                {sdg.num.toString().padStart(2, "0")} {sdg.label}
               </Link>
             );
           })}

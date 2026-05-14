@@ -18,6 +18,9 @@ export interface CarbonEvent {
   administration?: string | null;
   burn_subtype?: string | null;
   mint_subtype?: string | null;
+  /** JSON string: array of {description, affected_sdgs, magnitude, ...}. */
+  positive_aspects_json?: string | null;
+  negative_aspects_json?: string | null;
 }
 
 export interface CountryStat {
