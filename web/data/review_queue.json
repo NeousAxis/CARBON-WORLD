@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-14T00:40:39.719658+00:00",
-  "total_pending": 203,
+  "generated_at": "2026-05-14T01:09:49.064249+00:00",
+  "total_pending": 204,
   "reviews": [
     {
       "id": 49,
@@ -4058,6 +4058,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-14T00:10:27.322990+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 274,
+      "event_title": "Peru Leftist Roberto Sanchez Advances to Runoff in Presidential Race",
+      "event_url": "https://www.france24.com/en/americas/20260514-peru-leftist-roberto-sanchez-advances-to-runoff-in-presidential-race-election",
+      "event_source": "France 24 EN",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Leftist candidate Roberto Sanchez advances to runoff in Peru's presidential race, reflecting democratic participation and electoral process integrity\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Prosecutors indict leftist presidential candidate Roberto Sanchez on campaign finance charges and seek over five years in prison, raising concerns about political persecution and judicial overreach\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The advancement of Roberto Sanchez to the runoff reflects a functioning democratic process and citizen participation (SDG 16), a positive aspect. However, the indictment and severe penalty sought against him, perceived as politically motivated, undermine electoral fairness and freedom of expression (UDHR Articles 19, 21), creating a significant ethical conflict.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Dismissal or reduction of charges against Sanchez\", \"Independent judicial review of the indictment\", \"Public backlash against perceived political interference in elections\", \"International observation reports on the fairness of the electoral process\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Charges against Sanchez are dismissed or significantly reduced, restoring confidence in electoral integrity and judicial independence\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Charges proceed with moderate penalties, leading to prolonged legal uncertainty but no systemic damage to democracy\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Severe penalties are imposed, triggering mass protests, international condemnation, and a crisis of democratic legitimacy\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.75, \"final_score\": -1.56, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Politically motivated judicial action undermines democratic integrity despite electoral participation.\", \"event_country\": \"Peru\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Leftist candidate Roberto Sanchez advances to runoff in Peru's presidential race, reflecting democratic participation and voter choice\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Prosecutors indict Roberto Sanchez on campaign finance charges and seek over five years in prison, raising concerns about political persecution and due process\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The advancement of Roberto Sanchez to the runoff represents a democratic milestone, aligning with SDG 16 by upholding electoral participation. However, the indictment and severe penalty sought against him introduce significant ethical concerns, including potential political interference and violations of due process rights. The net judgment balances democratic progress against institutional overreach.\", \"snapshot_score\": 1.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1, \"revaluation_triggers\": [\"Resolution of Sanchez's legal case\", \"Impact of runoff on policy direction\", \"Public reaction to indictment\", \"Media coverage of proceedings\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Sanchez wins runoff and governs without further legal interference, implementing progressive policies aligned with SDGs\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Sanchez wins but faces ongoing legal challenges, policy implementation is constrained by institutional resistance\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Sanchez loses runoff and legal case escalates, leading to political instability and erosion of democratic norms\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.6, \"final_score\": 1.3, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Democratic advancement balanced by legal overreach; net neutral impact pending resolution.\", \"event_country\": \"Peru\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.95, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Prosecutorial action punishes political participation, undermining democratic integrity.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (prosecutorial overreach) as punishing harm to democratic rights, while Analyst B's neutrality ignores the punitive nature of the indictment against electoral participation.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict BURN (positive) contradicts justification that prosecutorial action harms democracy; the action is negative for human rights, so should be MINT. Polarity error and justification mismatch.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-14T01:09:47.621146+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
