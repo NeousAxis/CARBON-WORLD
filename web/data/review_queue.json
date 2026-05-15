@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T14:35:33.098106+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-15T15:06:11.168820+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 290,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-15T08:06:42.561246+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 327,
+      "event_title": "China goes electric, but can it get off coal?",
+      "event_url": "https://www.dw.com/en/china-goes-electric-but-can-it-get-off-coal/a-77147566?maca=en-rss-en-environment-4553-rdf",
+      "event_source": "Deutsche Welle Environment",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"China is electrifying its economy with increasing use of renewable energy sources.\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"China remains the world's largest emitter of CO2 and continues to rely heavily on coal-fired power.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"China's shift toward renewable energy supports climate action and clean energy goals, but its continued reliance on coal undermines global climate efforts and environmental sustainability.\", \"snapshot_score\": -1.5, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"China's coal consumption in 2025\", \"Renewable energy capacity additions by 2026\", \"International climate commitments at COP29 in 2029\"], \"revaluation_checkpoint\": \"2028-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"China transitions rapidly to renewables and reduces coal use significantly.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"China maintains a mixed energy strategy with gradual coal reduction.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"China increases coal use to meet energy demands, slowing climate progress.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.55, \"final_score\": -1.39, \"decision\": \"MINT\", \"amount_cbwd\": 2500000, \"confidence\": 7, \"justification\": \"China's coal reliance outweighs its renewable progress in the short term.\", \"event_country\": \"China\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"China's transition toward electrification and increased renewable energy adoption signals a structural shift away from coal dependence, reducing long-term CO2 emissions.\", \"affected_sdgs\": [7, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Peak coal usage in China's energy mix represents a critical inflection point in global decarbonization efforts, aligning with international climate commitments.\", \"affected_sdgs\": [13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Electrification of the economy (transport, industry, heating) enables integration of renewables and reduces reliance on fossil fuels, supporting SDG 7 (Affordable and Clean Energy).\", \"affected_sdgs\": [7], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Despite progress, China remains the world's largest CO2 emitter, with coal still dominating its energy mix, undermining global climate goals.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Coal phase-out remains uncertain due to energy security concerns, infrastructure lock-in, and economic dependencies, posing risks to long-term climate targets.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"China's electrification and renewable energy expansion are significant positive steps toward decarbonization, aligning with SDG 7 and planetary boundaries. However, the persistence of coal dominance and high CO2 emissions create substantial negative impacts on climate action (SDG 13). The net ethical position is cautiously positive due to the structural shift, but the magnitude of harm from ongoing coal use tempers the overall judgment.\", \"snapshot_score\": 3.5, \"trajectory_score\": 5.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Coal phase-out timeline acceleration or delay\", \"Renewable energy deployment rate vs. coal capacity additions\", \"Policy reversals due to energy security crises\", \"Global climate commitments and international pressure\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"China successfully phases out coal by 2035, achieving net-zero emissions by 2050, with global climate benefits.\", \"probability\": 0.25, \"score\": 9}, {\"name\": \"B\", \"description\": \"China reduces coal share but retains significant capacity, achieving net-zero by 2060 with moderate global impact.\", \"probability\": 0.55, \"score\": 4}, {\"name\": \"C\", \"description\": \"Coal dependence persists due to energy crises or policy reversals, delaying net-zero beyond 2060 and worsening global emissions.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.95, \"final_score\": 3.36, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"China's energy transition is a net positive but insufficient to offset coal dominance.\", \"event_country\": \"China\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.46, \"confidence\": 9, \"amount_cbwd\": 2500000, \"justification\": \"Institutional action prioritizes coal over renewables, enabling harm despite progress.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (coal reliance) as enabling environmental harm, outweighing renewable progress. Analyst B's NEUTRAL stance misinterprets the net effect by overemphasizing renewable gains.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 2500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-15T15:06:08.669961+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
