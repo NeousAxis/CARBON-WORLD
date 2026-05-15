@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T04:37:21.994281+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-15T05:04:03.276351+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 290,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-15T04:37:19.633844+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 315,
+      "event_title": "US jury awards family of Boeing 737 MAX crash victim $49.5 million",
+      "event_url": "https://www.reddit.com/r/goodnews/comments/1tdkrty/us_jury_awards_family_of_boeing_737_max_crash/",
+      "event_source": "Reddit r/GoodNews",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Jury awards compensation to family of crash victim, acknowledging harm and providing redress.\", \"affected_sdgs\": [10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Boeing's design flaw in 737 MAX contributed to crash, resulting in loss of life and systemic safety failures.\", \"affected_sdgs\": [3, 8, 12], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The jury's award provides justice and compensation to the family, aligning with SDG 10 and 16 and UDHR Article 3. However, the crash itself reflects systemic failures in safety and corporate accountability, violating core human rights and SDGs related to health, decent work, and responsible consumption.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Boeing's implementation of safety reforms\", \"Regulatory response to 737 MAX design flaws\", \"Future legal settlements or criminal actions against Boeing\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Boeing implements comprehensive safety reforms and is held fully accountable, leading to improved aviation safety standards.\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Boeing makes partial reforms but avoids major accountability, leading to ongoing safety concerns and public distrust.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"No meaningful reforms and further accidents occur, leading to systemic failures in aviation safety and corporate accountability.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -2.85, \"final_score\": -2.94, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The crash reflects systemic corporate negligence and safety failures, with limited long-term accountability.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US jury awards $49.5 million to the family of a Boeing 737 MAX crash victim, holding the corporation accountable for negligence and providing financial justice to the affected family.\", \"affected_sdgs\": [1, 3, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"The award highlights systemic failures in aviation safety and corporate accountability, suggesting prior negligence by Boeing and regulatory bodies that led to the crash.\", \"affected_sdgs\": [8, 9, 12], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The jury's award represents a significant step toward justice for the victim's family and reinforces corporate accountability for negligence, aligning with human rights and SDG 16 (Peace, Justice, and Strong Institutions). However, the award underscores prior systemic failures in aviation safety and corporate oversight, which remain unresolved and require broader systemic reforms.\", \"snapshot_score\": 6.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Implementation of new aviation safety regulations by FAA\", \"Boeing's compliance with court-ordered reforms\", \"Public release of full crash investigation findings\", \"Congressional hearings on corporate accountability\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Boeing implements comprehensive safety reforms, FAA strengthens oversight, and similar cases are resolved swiftly with full accountability.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial reforms are implemented, but systemic issues persist, leading to future incidents and delayed justice.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Boeing avoids full accountability, regulatory capture persists, and future crashes occur due to unaddressed systemic failures.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 3.955, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Accountability ruling balances justice for victims with systemic failures in aviation safety.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.44, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"The jury's award addresses corporate negligence and upholds justice for victims, aligning with ethical and human rights standards.\", \"disagreement\": true, \"reason\": \"The institutional action is the jury award, which punishes corporate negligence and protects rights. This supports a BURN decision.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-15T05:04:00.669854+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
