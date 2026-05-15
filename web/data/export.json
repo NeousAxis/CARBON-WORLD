@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-15T06:34:53.239394+00:00",
-  "total_events": 865,
+  "generated_at": "2026-05-15T07:05:50.848938+00:00",
+  "total_events": 866,
   "total_burned": 1066241000,
-  "total_minted": 1228905750,
-  "pending_reviews": 1,
+  "total_minted": 1229405750,
+  "pending_reviews": 2,
   "events": [
+    {
+      "id": 866,
+      "event_title": "'Don't swim' at 12 of 14 river bathing sites, as more locations announced",
+      "event_url": "https://www.bbc.com/news/articles/cvgzvqq9345o?at_medium=RSS&at_campaign=rss",
+      "event_source": "BBC Science & Environment",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -4.23,
+      "confidence": 8,
+      "justification": "Faecal bacteria contamination at river bathing sites violates public health and environmental rights, outweighing the advisory's positive impact. | The public health advisory itself is a positive action that raises awareness and protects human health (SDG 3, SDG 6) by informing the public of contamination risks. However, the underlying issue—severe faecal bacteria pollution—represents a significant violation of public health and environmental rights, undermining SDGs 3, 6, and 14. The net ethica",
+      "tx_hash": "2Rb49sAURwuBUyisLGYWAZT5Sp6GYRwXu5vwNohQ6SoM3EXkeafWPpWrY15HhBttm4w1HukqtDtwwtYzz3xLvGJu",
+      "created_at": "2026-05-15T07:05:48.471560+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Public health advisory issued by BBC Science & Environment warning about faecal bacteria contamination at 12 of 14 designated river bathing sites in England\", \"affected_sdgs\": [3, 6, 14], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Faecal bacteria contamination at 12 of 14 designated river bathing sites in England, posing health risks to swimmers and aquatic ecosystems\", \"affected_sdgs\": [3, 6, 14], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 865,
       "event_title": "Swiss households to pay '635 francs more a year' if anti-immigration proposal wins",
@@ -19050,13 +19072,13 @@
       },
       {
         "country": "United Kingdom",
-        "count": 10,
-        "total_amount": 17050000
+        "count": 11,
+        "total_amount": 17550000
       },
       {
         "country": "Russia",
-        "count": 9,
-        "total_amount": 47950000
+        "count": 8,
+        "total_amount": 42950000
       },
       {
         "country": "Argentina",
@@ -19178,7 +19200,7 @@
       },
       {
         "date": "2026-05-15",
-        "net_minted": 6600000,
+        "net_minted": 7100000,
         "net_burned": 37150000
       }
     ],
@@ -19345,6 +19367,7 @@
           356
         ],
         "event_ids_negative": [
+          866,
           865,
           860,
           857,
@@ -19683,8 +19706,7 @@
           358,
           357,
           355,
-          354,
-          353
+          354
         ]
       },
       "UDHR": {
@@ -19748,6 +19770,7 @@
           356
         ],
         "event_ids_negative": [
+          866,
           865,
           857,
           853,
@@ -19993,8 +20016,7 @@
           362,
           359,
           357,
-          354,
-          353
+          354
         ]
       },
       "ILO": {
@@ -20894,9 +20916,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 608,
+      "total_mint": 609,
       "direct_action": {
-        "count": 398,
+        "count": 399,
         "pct": 65.5
       },
       "editorial_alarm": {
@@ -20905,7 +20927,7 @@
       },
       "untyped": {
         "count": 170,
-        "pct": 28.0
+        "pct": 27.9
       }
     },
     "citizen_vs_institutional_7d": {
@@ -20946,7 +20968,7 @@
         {
           "date": "2026-05-15",
           "citizen": 2,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -21101,6 +21123,7 @@
         354
       ],
       "event_ids_institutional": [
+        866,
         865,
         862,
         861,
@@ -21453,8 +21476,7 @@
         358,
         357,
         356,
-        355,
-        353
+        355
       ]
     }
   }
