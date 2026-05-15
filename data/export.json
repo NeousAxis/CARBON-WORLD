@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-15T07:05:50.848938+00:00",
-  "total_events": 866,
-  "total_burned": 1066241000,
-  "total_minted": 1229405750,
-  "pending_reviews": 2,
+  "generated_at": "2026-05-15T07:35:43.095563+00:00",
+  "total_events": 868,
+  "total_burned": 1071241000,
+  "total_minted": 1230655750,
+  "pending_reviews": 1,
   "events": [
+    {
+      "id": 868,
+      "event_title": "What went right this week: the good news that matters",
+      "event_url": "https://www.positive.news/society/good-news-stories-from-week-20-of-2026/",
+      "event_source": "Positive News",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Three concrete positive actions advancing health, environment, and climate. | The actions described—malaria vaccine rollout, ocean protection court victory, and electric truck adoption—directly advance global health, environmental sustainability, and climate action. These are concrete, measurable steps with positive ethical implications across multiple frameworks, outweighing any minor caveats.",
+      "tx_hash": "3ob3oGq46NkkgPkRhucoiTMe3RuZedKrocxvxhE5NxfG5rvYEcf7Q6ih7g7zFceUsyNoHMNnrLgX6NPDE3pGT2RG",
+      "created_at": "2026-05-15T07:35:40.773262+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Malaria vaccine implementation reduced child deaths, demonstrating progress in global health and SDG 3 (Good Health and Well-being).\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Ocean defenders achieved a court victory, likely protecting marine ecosystems and aligning with SDG 14 (Life Below Water).\", \"affected_sdgs\": [14], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Electric trucks gained traction, indicating a shift toward sustainable transport and SDG 11 (Sustainable Cities and Communities) and SDG 13 (Climate Action).\", \"affected_sdgs\": [11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 867,
+      "event_title": "Tropical forests still under pressure despite slowdown in losses",
+      "event_url": "https://www.rfi.fr/en/environment/20260515-tropical-forests-still-under-pressure-despite-slowdown-in-losses",
+      "event_source": "RFI EN Environment",
+      "decision": "MINT",
+      "amount_crbn": 1250000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Both analysts agree on net negative impact despite slowdown; final score averages their verdicts.",
+      "tx_hash": null,
+      "created_at": "2026-05-15T07:17:01.937331+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 866,
       "event_title": "'Don't swim' at 12 of 14 river bathing sites, as more locations announced",
@@ -19067,8 +19111,8 @@
       },
       {
         "country": "Australia",
-        "count": 14,
-        "total_amount": 9707000
+        "count": 13,
+        "total_amount": 8207000
       },
       {
         "country": "United Kingdom",
@@ -19126,8 +19170,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.273,
-        "events": 22
+        "burn_ratio": 0.286,
+        "events": 21
       },
       {
         "region": "Latin America",
@@ -19163,8 +19207,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.727,
-        "events": 22
+        "mint_ratio": 0.714,
+        "events": 21
       }
     ],
     "supply_trend_7d": [
@@ -19201,7 +19245,7 @@
       {
         "date": "2026-05-15",
         "net_minted": 7100000,
-        "net_burned": 37150000
+        "net_burned": 42150000
       }
     ],
     "event_of_the_day": {
@@ -19217,9 +19261,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 145,
-        "negative": 340,
+        "positive": 146,
+        "negative": 339,
         "event_ids_positive": [
+          868,
           862,
           861,
           852,
@@ -19705,14 +19750,14 @@
           359,
           358,
           357,
-          355,
-          354
+          355
         ]
       },
       "UDHR": {
-        "positive": 55,
-        "negative": 247,
+        "positive": 56,
+        "negative": 246,
         "event_ids_positive": [
+          868,
           861,
           849,
           841,
@@ -20015,8 +20060,7 @@
           363,
           362,
           359,
-          357,
-          354
+          357
         ]
       },
       "ILO": {
@@ -20105,9 +20149,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 33,
-        "negative": 61,
+        "positive": 34,
+        "negative": 60,
         "event_ids_positive": [
+          868,
           841,
           836,
           830,
@@ -20202,8 +20247,7 @@
           387,
           383,
           380,
-          373,
-          354
+          373
         ]
       },
       "Animal": {
@@ -20571,9 +20615,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 56,
+        "count": 55,
         "burn_count": 16,
-        "mint_count": 40,
+        "mint_count": 39,
         "event_ids": [
           862,
           851,
@@ -20629,15 +20673,14 @@
           377,
           375,
           371,
-          355,
-          354
+          355
         ]
       },
       {
         "name": "Finance",
-        "count": 44,
+        "count": 43,
         "burn_count": 16,
-        "mint_count": 28,
+        "mint_count": 27,
         "event_ids": [
           865,
           844,
@@ -20681,8 +20724,7 @@
           411,
           395,
           361,
-          356,
-          354
+          356
         ]
       },
       {
@@ -20825,6 +20867,29 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 15,
+        "burn_count": 1,
+        "mint_count": 13,
+        "event_ids": [
+          868,
+          781,
+          754,
+          690,
+          613,
+          595,
+          516,
+          498,
+          497,
+          496,
+          445,
+          424,
+          418,
+          370,
+          368
+        ]
+      },
+      {
         "name": "Mining",
         "count": 15,
         "burn_count": 4,
@@ -20846,35 +20911,13 @@
           450,
           437
         ]
-      },
-      {
-        "name": "Transport",
-        "count": 14,
-        "burn_count": 0,
-        "mint_count": 13,
-        "event_ids": [
-          781,
-          754,
-          690,
-          613,
-          595,
-          516,
-          498,
-          497,
-          496,
-          445,
-          424,
-          418,
-          370,
-          368
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 148,
+      "total_burn": 149,
       "direct_action": {
-        "count": 62,
-        "pct": 41.9
+        "count": 63,
+        "pct": 42.3
       },
       "editorial_consciousness": {
         "count": 7,
@@ -20882,14 +20925,14 @@
       },
       "untyped": {
         "count": 79,
-        "pct": 53.4
+        "pct": 53.0
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 239,
+      "total_burn": 240,
       "direct_action": {
-        "count": 139,
-        "pct": 58.2
+        "count": 140,
+        "pct": 58.3
       },
       "editorial_consciousness": {
         "count": 17,
@@ -20897,22 +20940,22 @@
       },
       "untyped": {
         "count": 83,
-        "pct": 34.7
+        "pct": 34.6
       }
     },
     "mint_composition_7d": {
-      "total_mint": 351,
+      "total_mint": 350,
       "direct_action": {
-        "count": 173,
-        "pct": 49.3
+        "count": 172,
+        "pct": 49.1
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 2.8
+        "pct": 2.9
       },
       "untyped": {
         "count": 168,
-        "pct": 47.9
+        "pct": 48.0
       }
     },
     "mint_composition_all_time": {
@@ -20967,11 +21010,12 @@
         },
         {
           "date": "2026-05-15",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 12
         }
       ],
       "event_ids_citizen": [
+        868,
         860,
         849,
         839,
@@ -21119,8 +21163,7 @@
         369,
         367,
         363,
-        360,
-        354
+        360
       ],
       "event_ids_institutional": [
         866,
