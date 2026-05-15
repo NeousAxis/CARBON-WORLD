@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T15:35:24.097580+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-15T16:07:51.534347+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 290,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-15T08:06:42.561246+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 328,
+      "event_title": "Government increases national park entry fees: new prices and discounts",
+      "event_url": "https://www.clarin.com/sociedad/gobierno-aumento-entradas-parques-nacionales-quedan-valores-descuento_0_yPtW8EJsGV.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Increased revenue from park fees may support conservation and maintenance of national parks.\", \"affected_sdgs\": [15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Higher entry fees may reduce public access to national parks, disproportionately affecting lower-income groups.\", \"affected_sdgs\": [10, 11], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The fee increase has potential benefits for conservation but risks reducing equitable access to public natural spaces.\", \"snapshot_score\": -1.0, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of access subsidies for low-income groups\", \"Monitoring of park visitation rates by income level\", \"Publication of revenue allocation reports for park maintenance\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Revenue is effectively used for park preservation and access subsidies are introduced, improving equity.\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Revenue is used for maintenance but access disparities persist, leading to moderate public dissatisfaction.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Revenue is mismanaged and access barriers grow, leading to reduced public engagement and environmental degradation.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -1.35, \"final_score\": -1.69, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Fee increase risks inequitable access to public parks and may undermine conservation goals.\", \"event_country\": \"Argentina\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government publishes new national park entry fees with average 85% increase, potentially increasing conservation funding and reducing overcrowding\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"85% average increase in national park entry fees may disproportionately burden low-income visitors, reducing public access to natural heritage and violating principles of equitable access to nature\", \"affected_sdgs\": [1, 10, 11], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 27\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The fee increase generates conservation funding (positive for SDGs 11, 13, 15) but risks excluding economically vulnerable populations from accessing national parks, undermining social equity (SDGs 1, 10) and human rights (UDHR Articles 25, 27). The net impact depends on implementation of discounts and alternative funding mechanisms.\", \"snapshot_score\": 1.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1, \"revaluation_triggers\": [\"Implementation of equitable discount systems\", \"Public backlash leading to policy reversal\", \"Alternative funding mechanisms introduced\", \"Visitor numbers decline significantly\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Fee increase successfully funds conservation while maintaining equitable access through robust discount systems and alternative funding\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Fee increase leads to moderate decline in visitor numbers but funds conservation adequately with partial discount implementation\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Fee increase disproportionately excludes low-income visitors, reduces biodiversity protection effectiveness due to visitor decline, and triggers public backlash\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.65, \"final_score\": 1.26, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Conservation funding vs. equitable access trade-off with uncertain net impact\", \"event_country\": \"Argentina\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.57, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Fee increase prioritizes conservation funding over equitable access, enabling potential exclusion of vulnerable groups.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (fee increase) as enabling harm by risking inequitable access, despite conservation benefits. Analyst B's neutrality overlooks the punitive effect on marginalized groups.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-15T16:07:49.027786+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
