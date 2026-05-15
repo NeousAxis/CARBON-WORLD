@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T07:35:43.148777+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-05-15T08:06:44.811275+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 290,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-14T09:37:27.094721+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 319,
+      "event_title": "Protect Jackie & Shadow’s home",
+      "event_url": "https://www.reddit.com/r/conservation/comments/1tdb2v4/protect_jackie_shadows_home/",
+      "event_source": "Reddit r/conservation",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led conservation campaign to protect federally protected wildlife habitat and shoreline ecosystem in Big Bear Valley, inspired by Sandy's legacy of environmental advocacy.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"UNDRIP\"]}, {\"description\": \"Public mobilization through a named Reddit community (r/conservation) with measurable engagement (submitted by user, comments section) to advocate for environmental transparency and habitat protection.\", \"affected_sdgs\": [13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The campaign represents a proactive, citizen-driven effort to protect federally protected wildlife and a fragile shoreline ecosystem, aligning with climate action, biodiversity, and indigenous rights frameworks. The action is rooted in honoring a legacy of environmental stewardship and seeks to prevent habitat destruction from residential development. No significant ethical downsides are identified in the described action.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Local government approval of the 50-home and 55-dock development project\", \"Failure to secure environmental impact assessments or transparency\", \"Legal challenges or regulatory enforcement against the development\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Development is halted or significantly modified to protect habitat, with full environmental transparency and community oversight implemented.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial protections are secured, but development proceeds with some habitat mitigation measures.\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Development proceeds unchecked, leading to habitat destruction and loss of federally protected species' nesting grounds.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 4.15, \"final_score\": 5.86, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Citizen-led conservation action protecting federally protected wildlife habitat and shoreline ecosystem.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led conservation campaign to protect federally protected wildlife habitat and shoreline ecosystem, invoking legacy of environmental advocate Sandy\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Community mobilization to demand environmental transparency and thoughtful growth in development planning\", \"affected_sdgs\": [11, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Public awareness campaign raising consciousness about ecological balance and sacred ground preservation\", \"affected_sdgs\": [4, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The campaign represents a proactive citizen action to protect federally protected wildlife habitat and shoreline ecosystems, aligning with climate action, biodiversity conservation, and planetary boundaries. It demonstrates community responsibility and environmental stewardship, with no identified ethical violations. The magnitude reflects regional conservation impact and public engagement.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Local government approval of development plans without environmental safeguards\", \"Legal challenge by developers against conservation measures\", \"New scientific evidence of habitat fragility\", \"Change in local political leadership opposing conservation\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful community-led conservation efforts lead to permanent habitat protection and inspire regional conservation policies\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial compromise achieved with reduced development footprint and enhanced environmental monitoring\", \"probability\": 0.45, \"score\": 5}, {\"name\": \"C\", \"description\": \"Development proceeds with minimal environmental safeguards, leading to habitat degradation and loss of biodiversity\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 4.45, \"final_score\": 5.36, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Community conservation action with measurable regional impact and no ethical violations\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.87, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Citizen-led conservation action protecting federally protected wildlife habitat and shoreline ecosystem.\", \"disagreement\": true, \"reason\": \"Analyst A correctly emphasizes the institutional action of protecting federally protected wildlife and habitat, which aligns with BURN criteria. Analyst B's NEUTRAL stance overlooks the ethical imperative to defend environmental protections.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-15T08:06:42.561246+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
