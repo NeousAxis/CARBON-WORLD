@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T16:36:06.412320+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-05-15T17:05:41.051302+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 290,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-15T16:36:03.614672+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 330,
+      "event_title": "Dubai opens 24-hour women-only beach as part of £610m coastline project",
+      "event_url": "https://www.reddit.com/r/goodnews/comments/1te1qw4/dubai_opens_24hour_womenonly_beach_as_part_of/",
+      "event_source": "Reddit r/GoodNews",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Dubai opens a 24-hour women-only beach as part of a £610m coastline project, promoting gender-inclusive public space access and safety for women\", \"affected_sdgs\": [5, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The initiative advances gender equality (SDG 5) by providing safe, accessible public space for women in Dubai, aligning with UDHR principles of non-discrimination and equal opportunity. While the exclusivity of the space may raise questions about broader inclusivity, the action itself represents a concrete step toward addressing gender-specific safety concerns in urban environments.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Expansion of the beach to include other marginalized groups\", \"Sustained funding and maintenance of the project\", \"Public feedback on inclusivity and accessibility\", \"Broader adoption of similar initiatives in other regions\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The women-only beach becomes a model for inclusive urban planning globally, inspiring similar projects in other cities and enhancing gender safety standards\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"The project remains a localized success in Dubai but does not scale, with limited impact on broader gender equality or urban planning policies\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"The initiative faces backlash or is scaled back due to political or cultural resistance, reducing its long-term impact\", \"probability\": 0.2, \"score\": 3}], \"prospective_score\": 6.6, \"final_score\": 6.825, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Promotes gender equality and safe public space access in Dubai.\", \"event_country\": \"United Arab Emirates\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Dubai opens a 24-hour women-only beach as part of a £610m coastline project, providing safe public space and recreational access for women\", \"affected_sdgs\": [5, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The initiative directly advances gender equality by creating a safe, accessible public space for women, aligning with SDG 5 (Gender Equality) and UDHR Article 25 (right to rest and leisure). While the exclusivity could be debated, the primary action is a positive step toward women's empowerment and public space inclusivity.\", \"snapshot_score\": 7.0, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Expansion of similar initiatives to other public spaces\", \"Policy changes limiting women's access to other beaches\", \"Public backlash or legal challenges against the initiative\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The initiative inspires regional adoption of women-only public spaces, enhancing gender equality across the Middle East\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"The initiative remains localized but sets a precedent for future inclusive public space policies\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"The initiative faces backlash, leading to restrictions or reversals in women's public space access\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 5.1, \"final_score\": 5.95, \"decision\": \"BURN\", \"amount_cbwd\": 1000000, \"confidence\": 8, \"justification\": \"Positive action advancing gender equality and public space inclusivity\", \"event_country\": \"United Arab Emirates\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.39, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Promotes gender equality and safe public space access in Dubai.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold | llm: Hidden violations: women-only space may exclude transgender individuals, violating UDHR Article 2",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-15T17:05:38.578686+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
