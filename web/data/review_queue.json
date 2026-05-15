@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T17:36:50.752093+00:00",
-  "total_pending": 4,
+  "generated_at": "2026-05-15T18:04:40.812145+00:00",
+  "total_pending": 5,
   "reviews": [
     {
       "id": 290,
@@ -78,6 +78,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-15T17:36:48.337347+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 333,
+      "event_title": "In December, deforestation in the Amazon was 58% lower compared to the previous year; Cerrado increased 6%",
+      "event_url": "https://amazonia.org.br/2025/01/em-dezembro-desmatamento-na-amazonia-foi-58-menor-em-relacao-ao-ano-anterior-cerrado-aumento-6/",
+      "event_source": "Amazonia.org.br",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Deforestation in the Brazilian Amazon Legal region decreased by 58% year-on-year in December 2024, indicating stronger forest protection and progress toward climate and biodiversity goals.\", \"affected_sdgs\": [13, 15, 6, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"Deforestation in the Cerrado biome increased by 6%, threatening biodiversity, carbon sinks, and indigenous and local communities' lands.\", \"affected_sdgs\": [15, 13, 6], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\", \"UNDRIP\"]}], \"ethical_synthesis\": \"The significant reduction in Amazon deforestation reflects positive enforcement of environmental protections and aligns with climate and ecosystem integrity goals. However, the rise in Cerrado deforestation suggests displacement of destructive activities and uneven conservation efforts, undermining overall ecological stability and long-term sustainability commitments.\", \"snapshot_score\": 5.5, \"trajectory_score\": 3.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Sustained 12-month decline in Amazon deforestation\", \"Cerrado deforestation rates reverse trend and decrease for three consecutive months\", \"New government policies targeting Cerrado protection are enacted\", \"Satellite data confirms reforestation or restoration efforts in either biome\", \"Change in federal environmental enforcement capacity or budget\"], \"revaluation_checkpoint\": \"2027-01-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Brazil maintains strong enforcement in the Amazon while expanding protections to the Cerrado, leading to systemic reduction in biome destruction and global leadership in tropical forest conservation.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Amazon deforestation remains low but Cerrado loss continues at elevated rates, resulting in net ecological degradation and partial failure to meet climate and biodiversity targets.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Political or economic shifts weaken environmental enforcement, causing resurgence in Amazon deforestation and accelerating Cerrado destruction, leading to irreversible ecological tipping points.\", \"probability\": 0.25, \"score\": -6}], \"prospective_score\": 1.5, \"final_score\": 2.925, \"decision\": \"MINT\", \"amount_cbwd\": 438750, \"confidence\": 7, \"justification\": \"Reduction in Amazon deforestation is positive but offset by Cerrado increase; net ecological risk remains high.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Deforestation in the Brazilian Amazon Legal decreased by 58% in December 2024 compared to December 2023, indicating significant progress in climate action and biodiversity protection.\", \"affected_sdgs\": [13, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"The reduction in Amazon deforestation aligns with global climate goals and supports indigenous rights by preserving critical habitats.\", \"affected_sdgs\": [13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Deforestation in the Cerrado biome increased by 6% in December 2024, indicating ongoing environmental degradation in another critical ecosystem.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The 58% reduction in Amazon deforestation is a major positive step for climate action, biodiversity, and indigenous rights, aligning with multiple SDGs and planetary boundaries. However, the 6% increase in Cerrado deforestation highlights a concerning regional imbalance that requires urgent attention to avoid undermining overall conservation efforts.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Sustained reversal of Cerrado deforestation trends\", \"Policy changes reversing Amazon protections\", \"Climate policy shifts under new administrations\", \"Economic pressures reversing conservation gains\"], \"revaluation_checkpoint\": \"2027-01-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where Amazon deforestation continues to decline and Cerrado trends reverse, supported by strong policy enforcement and international cooperation.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Realistic scenario where Amazon deforestation stabilizes at reduced levels but Cerrado degradation persists, requiring targeted interventions.\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where political shifts or economic pressures reverse Amazon gains and accelerate Cerrado deforestation.\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 4.75, \"final_score\": 5.81, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Major climate and biodiversity win with regional caveat.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.58, \"confidence\": 8, \"amount_cbwd\": 438750, \"justification\": \"Significant reduction in Amazon deforestation is a major environmental win, despite a smaller increase in Cerrado.\", \"disagreement\": true, \"reason\": \"The reduction in Amazon deforestation is a clear institutional action protecting rights and ecosystems, which aligns with BURN criteria. The Cerrado increase is a concern but does not outweigh the positive impact.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 438750,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-15T18:04:38.329903+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
