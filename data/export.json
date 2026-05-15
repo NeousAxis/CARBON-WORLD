@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-05-15T06:05:55.805882+00:00",
-  "total_events": 862,
-  "total_burned": 1061241000,
-  "total_minted": 1227555750,
-  "pending_reviews": 3,
+  "generated_at": "2026-05-15T06:34:53.239394+00:00",
+  "total_events": 865,
+  "total_burned": 1066241000,
+  "total_minted": 1228905750,
+  "pending_reviews": 1,
   "events": [
+    {
+      "id": 865,
+      "event_title": "Swiss households to pay '635 francs more a year' if anti-immigration proposal wins",
+      "event_url": "https://www.thelocal.ch/20260513/swiss-households-to-pay-635-francs-more-a-year-if-anti-immigration-proposal-wins",
+      "event_source": "The Local Switzerland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.22,
+      "confidence": 8,
+      "justification": "Anti-immigration policy imposes regressive financial burden; opposition is positive but insufficient to outweigh harm. | The article describes a proposed policy that would impose a regressive financial burden on households while sparking public opposition. The policy undermines economic equity and social cohesion, violating fundamental rights, but the opposition itself represents a positive act of civic engagement and awareness-raising.",
+      "tx_hash": "35TxNnqTVffoMk8Ema3CUX6r8WXvhfmuNNMRY9SCUGhahRfmGNpZAgopfXW8avswEoNfLB521A4YnKe8ZyzCi49H",
+      "created_at": "2026-05-15T06:34:50.905099+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Public debate and opposition to a far-right anti-immigration initiative, raising awareness of potential societal and economic harms\", \"affected_sdgs\": [10, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed anti-immigration policy that would increase financial burden on Swiss households by 635 francs annually, likely reducing economic equity and social cohesion\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 864,
+      "event_title": "Indian PM seeks trade, energy stability on UAE-Europe tour",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/indian-pm-seeks-trade-energy-stability-uae-europe-tour",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Geopolitical instability and energy insecurity outweigh diplomatic efforts to diversify partnerships.",
+      "tx_hash": null,
+      "created_at": "2026-05-15T06:17:05.211889+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
+    {
+      "id": 863,
+      "event_title": "Global support for Warriors for the Amazon galvanizes technical working groups on the Mecheros judgment",
+      "event_url": "https://www.amnesty.org/en/documents/amr28/0995/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Mass citizen-led environmental justice action with institutional engagement and strong ethical alignment.",
+      "tx_hash": null,
+      "created_at": "2026-05-15T06:17:01.426025+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 862,
       "event_title": "Construction begins on AU$72 million solar-powered green hydrogen hub in New South Wales, Australia",
@@ -19006,8 +19072,8 @@
       },
       {
         "country": "United Kingdom",
-        "count": 6,
-        "total_amount": 27550000
+        "count": 5,
+        "total_amount": 26350000
       },
       {
         "country": "Brazil",
@@ -19042,12 +19108,12 @@
         "events": 22
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.226,
-        "events": 53
+        "region": "Latin America",
+        "burn_ratio": 0.214,
+        "events": 28
       },
       {
-        "region": "Latin America",
+        "region": "Asia",
         "burn_ratio": 0.214,
         "events": 28
       }
@@ -19064,14 +19130,14 @@
         "events": 28
       },
       {
+        "region": "Europe",
+        "mint_ratio": 0.755,
+        "events": 53
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 0.75,
         "events": 28
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.736,
-        "events": 53
       },
       {
         "region": "Oceania",
@@ -19112,7 +19178,7 @@
       },
       {
         "date": "2026-05-15",
-        "net_minted": 6450000,
+        "net_minted": 6600000,
         "net_burned": 37150000
       }
     ],
@@ -19129,8 +19195,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 146,
-        "negative": 339,
+        "positive": 145,
+        "negative": 340,
         "event_ids_positive": [
           862,
           861,
@@ -19276,10 +19342,10 @@
           367,
           361,
           360,
-          356,
-          351
+          356
         ],
         "event_ids_negative": [
+          865,
           860,
           857,
           853,
@@ -19623,7 +19689,7 @@
       },
       "UDHR": {
         "positive": 55,
-        "negative": 246,
+        "negative": 247,
         "event_ids_positive": [
           861,
           849,
@@ -19682,6 +19748,7 @@
           356
         ],
         "event_ids_negative": [
+          865,
           857,
           853,
           842,
@@ -20212,7 +20279,7 @@
         ]
       },
       "PB": {
-        "positive": 68,
+        "positive": 67,
         "negative": 76,
         "event_ids_positive": [
           862,
@@ -20281,8 +20348,7 @@
           397,
           381,
           379,
-          360,
-          351
+          360
         ],
         "event_ids_negative": [
           831,
@@ -20365,14 +20431,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.5,
-      "mainstream_pct": 29.5,
-      "total_sources_used": 105,
-      "articles_processed": 504
+      "niche_pct": 70.8,
+      "mainstream_pct": 29.2,
+      "total_sources_used": 106,
+      "articles_processed": 503
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 504,
+      "total_events": 503,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -20414,7 +20480,7 @@
       },
       {
         "name": "WHO",
-        "count": 7,
+        "count": 6,
         "burn_count": 2,
         "mint_count": 4,
         "event_ids": [
@@ -20423,8 +20489,7 @@
           774,
           690,
           580,
-          366,
-          352
+          366
         ]
       },
       {
@@ -20484,8 +20549,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 57,
-        "burn_count": 17,
+        "count": 56,
+        "burn_count": 16,
         "mint_count": 40,
         "event_ids": [
           862,
@@ -20543,16 +20608,16 @@
           375,
           371,
           355,
-          354,
-          351
+          354
         ]
       },
       {
         "name": "Finance",
-        "count": 43,
+        "count": 44,
         "burn_count": 16,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          865,
           844,
           832,
           831,
@@ -20762,7 +20827,7 @@
       },
       {
         "name": "Transport",
-        "count": 15,
+        "count": 14,
         "burn_count": 0,
         "mint_count": 13,
         "event_ids": [
@@ -20779,24 +20844,23 @@
           424,
           418,
           370,
-          368,
-          352
+          368
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 149,
+      "total_burn": 148,
       "direct_action": {
         "count": 62,
-        "pct": 41.6
+        "pct": 41.9
       },
       "editorial_consciousness": {
-        "count": 8,
-        "pct": 5.4
+        "count": 7,
+        "pct": 4.7
       },
       "untyped": {
         "count": 79,
-        "pct": 53.0
+        "pct": 53.4
       }
     },
     "burn_composition_all_time": {
@@ -20815,25 +20879,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 350,
+      "total_mint": 351,
       "direct_action": {
-        "count": 172,
-        "pct": 49.1
+        "count": 173,
+        "pct": 49.3
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 2.9
+        "pct": 2.8
       },
       "untyped": {
         "count": 168,
-        "pct": 48.0
+        "pct": 47.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 607,
+      "total_mint": 608,
       "direct_action": {
-        "count": 397,
-        "pct": 65.4
+        "count": 398,
+        "pct": 65.5
       },
       "editorial_alarm": {
         "count": 40,
@@ -20845,9 +20909,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 150,
+      "citizen": 149,
       "institutional": 354,
-      "citizen_ratio": 0.298,
+      "citizen_ratio": 0.296,
       "daily": [
         {
           "date": "2026-05-09",
@@ -20882,7 +20946,7 @@
         {
           "date": "2026-05-15",
           "citizen": 2,
-          "institutional": 10
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -21034,10 +21098,10 @@
         367,
         363,
         360,
-        354,
-        351
+        354
       ],
       "event_ids_institutional": [
+        865,
         862,
         861,
         857,
@@ -21390,8 +21454,7 @@
         357,
         356,
         355,
-        353,
-        352
+        353
       ]
     }
   }
