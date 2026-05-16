@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-16T15:36:05.366471+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-16T16:04:45.908195+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 344,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-16T15:36:02.679421+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 346,
+      "event_title": "WHO warns nicotine pouch brands targeting youth as sales surge",
+      "event_url": "https://www.who.int/news/item/15-05-2026-who-warns-nicotine-pouch-brands-targeting-youth-as-sales-surge",
+      "event_source": "WHO News",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"WHO issues public health warning about nicotine pouch marketing targeting youth, urging regulatory action to prevent addiction and protect young people\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Rapid growth and aggressive marketing of nicotine pouches targeting youth, posing significant health risks and limited regulation worldwide\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The WHO's warning represents a proactive public health intervention to address a growing youth-targeted addiction risk, aligning with SDG 3 (Good Health). However, the underlying surge in nicotine pouch marketing and lack of regulation constitutes a severe violation of health rights, particularly for children and adolescents.\", \"snapshot_score\": 5.5, \"trajectory_score\": -3.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of global regulatory standards by 2028\", \"Evidence of reduced youth nicotine pouch use due to WHO measures\", \"Emergence of safer alternatives or market collapse\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"WHO successfully coordinates global regulatory framework with measurable reduction in youth exposure and addiction rates\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial regulatory adoption with uneven enforcement, leading to continued youth targeting but slower growth\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Regulatory failure with nicotine pouch industry expanding unchecked, leading to epidemic youth addiction\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": 1.7, \"final_score\": 2.5, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"WHO warning mitigates harm but industry surge outweighs regulatory action in ethical balance.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"WHO issues a public health warning and urges governments to implement strong regulatory measures against nicotine pouches targeting youth, aligning with global health protection efforts.\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Aggressive marketing of nicotine pouches by brands, particularly targeting youth, poses significant health risks and potential addiction, undermining public health and child protection.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The WHO's warning and call for regulation represent a proactive public health measure to protect youth from nicotine addiction, aligning with SDG 3. However, the aggressive marketing of nicotine pouches by brands directly undermines child health and rights, creating a significant ethical tension between corporate behavior and public health advocacy.\", \"snapshot_score\": 3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of strong regulatory measures by governments\", \"Reduction in youth-targeted marketing campaigns\", \"Increase in public awareness and education on nicotine risks\", \"Shift in corporate marketing strategies away from youth\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Governments worldwide implement strict regulations, banning youth-targeted marketing and reducing nicotine pouch sales among youth by 50% within 5 years.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial regulations are enacted in some countries, but loopholes and weak enforcement allow continued youth targeting, leading to a 20% reduction in sales among youth over 5 years.\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Minimal regulatory action is taken, and aggressive marketing continues unchecked, leading to a 30% increase in youth nicotine pouch use over 5 years.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 0.55, \"final_score\": 1.06, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1000000, \"confidence\": 8, \"justification\": \"WHO's warning and call for regulation are positive but insufficient to counter aggressive youth-targeted marketing.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.78, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"WHO's warning highlights institutional failure to protect youth from nicotine harm; marketing targeting youth is ethically harmful.\", \"disagreement\": true, \"reason\": \"The institutional action in question is the aggressive marketing of nicotine pouches targeting youth, which constitutes harm. WHO's warning is a corrective action, but the primary ethical violation lies in the marketing strategy itself.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Decision BURN contradicts justification that highlights ethical harm; the article describes a negative action (youth-targeted nicotine marketing) so verdict should be MINT, not BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-16T16:04:43.577869+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
