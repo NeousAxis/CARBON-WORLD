@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-16T03:34:39.860422+00:00",
-  "total_pending": 4,
+  "generated_at": "2026-05-16T04:05:42.669304+00:00",
+  "total_pending": 5,
   "reviews": [
     {
       "id": 290,
@@ -78,6 +78,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-15T23:08:09.560866+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 338,
+      "event_title": "Wine waste could replace antibiotics on chicken farms",
+      "event_url": "https://www.anthropocenemagazine.org/2026/05/heres-a-wild-circular-solution-wine-waste-could-replace-antibiotics-on-chicken-farms/?utm_source=rss&utm_medium=rss&utm_campaign=heres-a-wild-circular-solution-wine-waste-could-replace-antibiotics-on-chicken-farms",
+      "event_source": "Anthropocene Magazine",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Grape pomace use in chicken farming reduces reliance on antibiotics.\", \"affected_sdgs\": [12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Circular economy application reduces agricultural waste and promotes sustainable resource use.\", \"affected_sdgs\": [12, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Potential environmental impact of grape pomace production and transportation not addressed.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The use of grape pomace as an alternative to antibiotics in chicken farming shows promise for reducing antibiotic overuse and promoting circular economy principles. However, the environmental impact of grape pomace production and transportation remains a moderate concern.\", \"snapshot_score\": 4.0, \"trajectory_score\": 3.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Publication of long-term health and environmental impact studies on grape pomace use\", \"Adoption rate of grape pomace in commercial chicken farming\", \"Regulatory changes regarding the use of agricultural byproducts in livestock feed\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Grape pomace becomes a widely adopted alternative to antibiotics, significantly reducing antibiotic resistance and environmental waste.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Grape pomace is moderately adopted, providing some benefits but not fully replacing antibiotics or solving waste issues.\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Grape pomace adoption fails due to logistical or health concerns, leading to continued reliance on antibiotics.\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 2.35, \"final_score\": 3.39, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Grape pomace shows potential as an antibiotic alternative but lacks full environmental impact analysis.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific study demonstrating that grape pomace can replace antibiotics in poultry farming, reducing antibiotic resistance and promoting circular economy principles\", \"affected_sdgs\": [2, 3, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\"]}, {\"description\": \"Innovation in sustainable agriculture through waste valorization, reducing environmental pollution from winemaking byproducts\", \"affected_sdgs\": [12, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The study presents a clear positive ethical outcome by addressing antibiotic resistance in livestock (SDG 3) while advancing circular economy principles (SDG 12) and reducing environmental harm (SDG 13, 15). The innovation also supports animal welfare (Animal Rights) without violating any frameworks. No significant negative aspects were identified.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Large-scale adoption by poultry industry\", \"Regulatory approval for commercial use\", \"Peer-reviewed replication studies\", \"Economic feasibility for small farmers\", \"Potential unintended ecological effects\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Widespread adoption of grape pomace as antibiotic alternative in global poultry industry, reducing antibiotic resistance and environmental pollution\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate adoption with regional variations, limited by cost barriers and regulatory hurdles\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Minimal adoption due to industry resistance, lack of incentives, or unforeseen health risks in poultry\", \"probability\": 0.15, \"score\": 2}], \"prospective_score\": 6.75, \"final_score\": 7.34, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Innovative circular economy solution reducing antibiotic resistance and environmental harm.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.54, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Both analysts agree on potential benefits but differ on scope; reconciled toward average.\", \"disagreement\": true, \"reason\": \"Analyst B overstates environmental benefits without full lifecycle analysis; Analyst A's caution on environmental impact is justified.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict direction flipped: article describes a positive circular solution reducing antibiotics, should be BURN, not MINT (polarity error).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-16T04:05:40.237348+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
