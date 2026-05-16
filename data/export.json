@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-16T15:05:20.572691+00:00",
-  "total_events": 977,
-  "total_burned": 1297099750,
-  "total_minted": 1359510750,
-  "pending_reviews": 1,
+  "generated_at": "2026-05-16T15:36:05.311490+00:00",
+  "total_events": 979,
+  "total_burned": 1302099750,
+  "total_minted": 1361010750,
+  "pending_reviews": 2,
   "events": [
+    {
+      "id": 979,
+      "event_title": "Old Oil and Gas Wells Could Find Second Life Producing Clean Energy",
+      "event_url": "https://www.wired.com/story/oil-wells-second-life-clean-energy/",
+      "event_source": "WIRED Science",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.17,
+      "confidence": 8,
+      "justification": "Transforms pollution sources into clean energy assets with measurable climate and SDG benefits. | The conversion of abandoned oil and gas wells into clean energy hubs represents a significant ethical win by transforming environmental liabilities into assets. It directly advances SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action) while reducing land-use impacts and pollution. No substantive negative aspects were identified in the described action.",
+      "tx_hash": "2Jvmz3JPCbjTUUdwPaJ8vdAbn3GGFT5KmMbT8BPd1fAPASPZ7bxs6LtjcyFazND6h7QMzv32ZyG3MKxaaDsGP8q5",
+      "created_at": "2026-05-16T15:36:02.682935+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US states converting decommissioned oil and gas wells into clean energy production sites, reducing pollution and repurposing infrastructure\", \"affected_sdgs\": [7, 11, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Policy shift from fossil fuel dependency to renewable energy integration through existing infrastructure\", \"affected_sdgs\": [7, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 978,
+      "event_title": "World Health Organization Must Prioritize Workers, Experts Say",
+      "event_url": "https://insideclimatenews.org/news/16052026/world-health-organization-worker-safety/",
+      "event_source": "Inside Climate News",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | WHO's inaction on worker safety amid climate risks constitutes harm; corrective action is needed.",
+      "tx_hash": null,
+      "created_at": "2026-05-16T15:17:02.240312+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 977,
       "event_title": "Israel strikes south Lebanon day after ceasefire extension",
@@ -21531,8 +21575,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 16,
-        "total_amount": 75600000
+        "count": 17,
+        "total_amount": 80600000
       },
       {
         "country": "United Kingdom",
@@ -21558,8 +21602,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.426,
-        "events": 54
+        "burn_ratio": 0.434,
+        "events": 53
       },
       {
         "region": "Africa",
@@ -21578,8 +21622,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.25,
-        "events": 72
+        "burn_ratio": 0.26,
+        "events": 73
       }
     ],
     "top_regions_destructive": [
@@ -21595,8 +21639,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.75,
-        "events": 72
+        "mint_ratio": 0.74,
+        "events": 73
       },
       {
         "region": "Asia",
@@ -21643,7 +21687,7 @@
       {
         "date": "2026-05-16",
         "net_minted": 26375000,
-        "net_burned": 36000000
+        "net_burned": 41000000
       }
     ],
     "event_of_the_day": {
@@ -21659,9 +21703,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 158,
-        "negative": 332,
+        "positive": 159,
+        "negative": 328,
         "event_ids_positive": [
+          979,
           968,
           966,
           965,
@@ -22149,16 +22194,12 @@
           446,
           445,
           444,
-          443,
-          442,
-          441,
-          440,
-          439
+          443
         ]
       },
       "UDHR": {
         "positive": 64,
-        "negative": 238,
+        "negative": 234,
         "event_ids_positive": [
           966,
           961,
@@ -22459,11 +22500,7 @@
           447,
           446,
           445,
-          444,
-          442,
-          441,
-          440,
-          439
+          444
         ]
       },
       "ILO": {
@@ -22748,9 +22785,10 @@
         ]
       },
       "PB": {
-        "positive": 71,
-        "negative": 79,
+        "positive": 72,
+        "negative": 78,
         "event_ids_positive": [
+          979,
           968,
           964,
           947,
@@ -22901,20 +22939,19 @@
           466,
           465,
           451,
-          450,
-          440
+          450
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.1,
-      "mainstream_pct": 33.9,
+      "niche_pct": 67.0,
+      "mainstream_pct": 33.0,
       "total_sources_used": 115,
-      "articles_processed": 529
+      "articles_processed": 526
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 529,
+      "total_events": 526,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23027,9 +23064,10 @@
       {
         "name": "Energy",
         "count": 71,
-        "burn_count": 24,
-        "mint_count": 47,
+        "burn_count": 25,
+        "mint_count": 46,
         "event_ids": [
+          979,
           964,
           962,
           950,
@@ -23099,8 +23137,7 @@
           465,
           455,
           451,
-          443,
-          440
+          443
         ]
       },
       {
@@ -23207,9 +23244,9 @@
       },
       {
         "name": "Defense",
-        "count": 25,
+        "count": 24,
         "burn_count": 1,
-        "mint_count": 24,
+        "mint_count": 23,
         "event_ids": [
           967,
           937,
@@ -23234,15 +23271,14 @@
           468,
           464,
           456,
-          445,
-          439
+          445
         ]
       },
       {
         "name": "Tech",
-        "count": 22,
+        "count": 21,
         "burn_count": 8,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           964,
           936,
@@ -23264,8 +23300,7 @@
           541,
           522,
           477,
-          457,
-          441
+          457
         ]
       },
       {
@@ -23346,48 +23381,48 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 169,
+      "total_burn": 170,
       "direct_action": {
-        "count": 77,
-        "pct": 45.6
+        "count": 78,
+        "pct": 45.9
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 3.0
+        "pct": 2.9
       },
       "untyped": {
         "count": 87,
-        "pct": 51.5
+        "pct": 51.2
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 285,
+      "total_burn": 286,
       "direct_action": {
-        "count": 175,
-        "pct": 61.4
+        "count": 176,
+        "pct": 61.5
       },
       "editorial_consciousness": {
         "count": 19,
-        "pct": 6.7
+        "pct": 6.6
       },
       "untyped": {
         "count": 91,
-        "pct": 31.9
+        "pct": 31.8
       }
     },
     "mint_composition_7d": {
-      "total_mint": 360,
+      "total_mint": 356,
       "direct_action": {
-        "count": 161,
-        "pct": 44.7
+        "count": 160,
+        "pct": 44.9
       },
       "editorial_alarm": {
         "count": 14,
         "pct": 3.9
       },
       "untyped": {
-        "count": 185,
-        "pct": 51.4
+        "count": 182,
+        "pct": 51.1
       }
     },
     "mint_composition_all_time": {
@@ -23407,8 +23442,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 156,
-      "institutional": 373,
-      "citizen_ratio": 0.295,
+      "institutional": 370,
+      "citizen_ratio": 0.297,
       "daily": [
         {
           "date": "2026-05-10",
@@ -23443,7 +23478,7 @@
         {
           "date": "2026-05-16",
           "citizen": 6,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -23605,6 +23640,7 @@
         452
       ],
       "event_ids_institutional": [
+        979,
         977,
         976,
         975,
@@ -23973,11 +24009,7 @@
         446,
         445,
         444,
-        443,
-        442,
-        441,
-        440,
-        439
+        443
       ]
     }
   }
