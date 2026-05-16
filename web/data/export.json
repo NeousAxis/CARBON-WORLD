@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-16T02:06:03.672256+00:00",
-  "total_events": 952,
+  "generated_at": "2026-05-16T03:34:39.803908+00:00",
+  "total_events": 954,
   "total_burned": 1253511000,
-  "total_minted": 1333390750,
-  "pending_reviews": 5,
+  "total_minted": 1334690750,
+  "pending_reviews": 4,
   "events": [
+    {
+      "id": 954,
+      "event_title": "U.S. Supreme Court Deals Another Blow to Democrats on Electoral Redistricting in Virginia",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/16/aux-etats-unis-la-cour-supreme-inflige-un-nouveau-revers-au-redecoupage-electoral-favorable-aux-democrates-en-virginie_6689569_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 800000,
+      "final_score": -4.5,
+      "confidence": 8,
+      "justification": "Supreme Court ruling entrenches partisan gerrymandering, violating democratic rights and SDGs. | The ruling entrenches partisan electoral manipulation, directly violating democratic principles of fair representation (SDG 10, 16) and fundamental rights to political participation (UDHR Article 21). While framed as a legal decision, it entrenches systemic harm to electoral integrity and minority representation, with no offsetting positive ethical aspects.",
+      "tx_hash": "5eRsjUHmr8Yy8S3DKPHzV77m9yJFZ77wCP1bFyUtmhLJH9FMi5yGNmurmwejmMwuiLRuPQoMyUFt458eUX4QitPo",
+      "created_at": "2026-05-16T03:34:37.276983+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"U.S. Supreme Court rejects Democratic appeal to block Republican-favoring electoral redistricting in Virginia, reinforcing partisan gerrymandering that undermines democratic representation and electoral fairness\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 953,
+      "event_title": "El Niño phenomenon arrives earlier in Colombia and is expected to be 'strong or very strong'",
+      "event_url": "https://efeverde.com/fenomeno-de-el-nino-adelanta-su-llegada-a-colombia-y-preven-que-sera-fuerte-o-muy-fuerte/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | El Niño's severe climate impacts outweigh the positive awareness action, warranting MINT.",
+      "tx_hash": null,
+      "created_at": "2026-05-16T02:17:01.353066+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 952,
       "event_title": "Washington Announces Arrest of Iraqi Militia Leader Accused of Planning Attacks",
@@ -20954,8 +20998,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 50,
-        "total_amount": 100185000
+        "count": 51,
+        "total_amount": 100985000
       },
       {
         "country": "Australia",
@@ -20985,14 +21029,14 @@
         "total_amount": 75600000
       },
       {
-        "country": "India",
-        "count": 8,
-        "total_amount": 35980000
-      },
-      {
         "country": "United Kingdom",
         "count": 8,
         "total_amount": 40050000
+      },
+      {
+        "country": "India",
+        "count": 7,
+        "total_amount": 35630000
       },
       {
         "country": "Brazil",
@@ -21012,14 +21056,14 @@
         "events": 60
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.345,
-        "events": 29
-      },
-      {
         "region": "Africa",
         "burn_ratio": 0.333,
         "events": 15
+      },
+      {
+        "region": "Asia",
+        "burn_ratio": 0.321,
+        "events": 28
       },
       {
         "region": "Latin America",
@@ -21040,8 +21084,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.74,
-        "events": 73
+        "mint_ratio": 0.743,
+        "events": 74
       },
       {
         "region": "Oceania",
@@ -21049,14 +21093,14 @@
         "events": 22
       },
       {
+        "region": "Asia",
+        "mint_ratio": 0.679,
+        "events": 28
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 0.677,
         "events": 31
-      },
-      {
-        "region": "Africa",
-        "mint_ratio": 0.667,
-        "events": 15
       }
     ],
     "supply_trend_7d": [
@@ -21092,7 +21136,7 @@
       },
       {
         "date": "2026-05-16",
-        "net_minted": 2225000,
+        "net_minted": 3025000,
         "net_burned": 0
       }
     ],
@@ -21109,8 +21153,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 164,
-        "negative": 341,
+        "positive": 163,
+        "negative": 342,
         "event_ids_positive": [
           947,
           943,
@@ -21274,10 +21318,10 @@
           414,
           413,
           411,
-          409,
-          406
+          409
         ],
         "event_ids_negative": [
+          954,
           951,
           950,
           949,
@@ -21623,7 +21667,7 @@
       },
       "UDHR": {
         "positive": 63,
-        "negative": 249,
+        "negative": 250,
         "event_ids_positive": [
           942,
           931,
@@ -21690,6 +21734,7 @@
           415
         ],
         "event_ids_negative": [
+          954,
           951,
           949,
           948,
@@ -22131,7 +22176,7 @@
         ]
       },
       "Animal": {
-        "positive": 58,
+        "positive": 57,
         "negative": 36,
         "event_ids_positive": [
           930,
@@ -22190,8 +22235,7 @@
           431,
           428,
           419,
-          409,
-          406
+          409
         ],
         "event_ids_negative": [
           905,
@@ -22233,7 +22277,7 @@
         ]
       },
       "PB": {
-        "positive": 77,
+        "positive": 76,
         "negative": 79,
         "event_ids_positive": [
           947,
@@ -22311,8 +22355,7 @@
           428,
           419,
           413,
-          409,
-          406
+          409
         ],
         "event_ids_negative": [
           941,
@@ -22843,10 +22886,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 175,
+      "total_burn": 174,
       "direct_action": {
-        "count": 81,
-        "pct": 46.3
+        "count": 80,
+        "pct": 46.0
       },
       "editorial_consciousness": {
         "count": 7,
@@ -22854,7 +22897,7 @@
       },
       "untyped": {
         "count": 87,
-        "pct": 49.7
+        "pct": 50.0
       }
     },
     "burn_composition_all_time": {
@@ -22873,10 +22916,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 369,
+      "total_mint": 370,
       "direct_action": {
-        "count": 170,
-        "pct": 46.1
+        "count": 171,
+        "pct": 46.2
       },
       "editorial_alarm": {
         "count": 14,
@@ -22884,14 +22927,14 @@
       },
       "untyped": {
         "count": 185,
-        "pct": 50.1
+        "pct": 50.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 664,
+      "total_mint": 665,
       "direct_action": {
-        "count": 431,
-        "pct": 64.9
+        "count": 432,
+        "pct": 65.0
       },
       "editorial_alarm": {
         "count": 46,
@@ -22899,13 +22942,13 @@
       },
       "untyped": {
         "count": 187,
-        "pct": 28.2
+        "pct": 28.1
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 165,
-      "institutional": 381,
-      "citizen_ratio": 0.302,
+      "citizen": 164,
+      "institutional": 382,
+      "citizen_ratio": 0.3,
       "daily": [
         {
           "date": "2026-05-10",
@@ -22940,7 +22983,7 @@
         {
           "date": "2026-05-16",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -23107,10 +23150,10 @@
         414,
         412,
         411,
-        409,
-        406
+        409
       ],
       "event_ids_institutional": [
+        954,
         951,
         949,
         948,
