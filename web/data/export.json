@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-16T08:34:34.676337+00:00",
-  "total_events": 966,
+  "generated_at": "2026-05-16T09:04:52.743592+00:00",
+  "total_events": 967,
   "total_burned": 1287099750,
-  "total_minted": 1336490750,
+  "total_minted": 1345990750,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 967,
+      "event_title": "Middle East war: Israeli army announces strikes against Hezbollah in southern Lebanon",
+      "event_url": "https://www.ouest-france.fr/monde/liban/guerre-au-moyen-orient-larmee-israelienne-annonce-mener-des-frappes-contre-le-hezbollah-dans-le-sud-du-liban-46d6e034-5102-11f1-bdc7-d41f8cb55a03?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.87,
+      "confidence": 9,
+      "justification": "Military escalation violates human rights and SDG 16, risking long-term regional instability. | The Israeli military strikes against Hezbollah in southern Lebanon constitute a direct escalation of armed conflict, violating fundamental human rights to life, security, and peace. This action undermines SDG 16 (Peace, Justice, and Strong Institutions) and poses severe risks to civilian populations, including children, in violation of core UDHR and CRC provisions.",
+      "tx_hash": "CMsgMpwMFPS6Cb9WRRuQdWdwEzsc56FcsTEGXf8uzo1x6hBjUwDiBo9xpFYhjcSvKvdDq2TLRHm5u2a8qLY1L1B",
+      "created_at": "2026-05-16T09:04:50.349807+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli military strikes against Hezbollah in southern Lebanon, escalating armed conflict and risking civilian casualties\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\", \"CRC Article 6\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 966,
       "event_title": "“There are very few campaigns dedicated to men’s health”: The Distinguished Gentleman’s Ride serves prevention",
@@ -21271,11 +21293,6 @@
         "total_amount": 7932000
       },
       {
-        "country": "Russia",
-        "count": 8,
-        "total_amount": 39150000
-      },
-      {
         "country": "France",
         "count": 8,
         "total_amount": 6500000
@@ -21284,6 +21301,11 @@
         "country": "Argentina",
         "count": 8,
         "total_amount": 5050000
+      },
+      {
+        "country": "Israel",
+        "count": 7,
+        "total_amount": 26275000
       }
     ],
     "top_countries_burn": [
@@ -21316,13 +21338,13 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.393,
-        "events": 61
+        "burn_ratio": 0.4,
+        "events": 60
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 15
+        "burn_ratio": 0.357,
+        "events": 14
       },
       {
         "region": "Asia",
@@ -21343,8 +21365,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.846,
-        "events": 13
+        "mint_ratio": 0.857,
+        "events": 14
       },
       {
         "region": "Oceania",
@@ -21362,9 +21384,9 @@
         "events": 25
       },
       {
-        "region": "Africa",
-        "mint_ratio": 0.667,
-        "events": 15
+        "region": "Latin America",
+        "mint_ratio": 0.656,
+        "events": 32
       }
     ],
     "supply_trend_7d": [
@@ -21400,7 +21422,7 @@
       },
       {
         "date": "2026-05-16",
-        "net_minted": 4825000,
+        "net_minted": 14325000,
         "net_burned": 31000000
       }
     ],
@@ -21418,7 +21440,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 162,
-        "negative": 339,
+        "negative": 338,
         "event_ids_positive": [
           966,
           965,
@@ -21584,6 +21606,7 @@
           428
         ],
         "event_ids_negative": [
+          967,
           963,
           962,
           955,
@@ -21920,9 +21943,7 @@
           425,
           424,
           423,
-          422,
-          421,
-          420
+          422
         ]
       },
       "UDHR": {
@@ -21996,6 +22017,7 @@
           430
         ],
         "event_ids_negative": [
+          967,
           954,
           951,
           949,
@@ -22239,8 +22261,7 @@
           425,
           424,
           423,
-          422,
-          421
+          422
         ]
       },
       "ILO": {
@@ -22271,7 +22292,7 @@
       },
       "CRC": {
         "positive": 12,
-        "negative": 40,
+        "negative": 41,
         "event_ids_positive": [
           960,
           906,
@@ -22287,6 +22308,7 @@
           564
         ],
         "event_ids_negative": [
+          967,
           946,
           938,
           937,
@@ -22698,11 +22720,11 @@
       "niche_pct": 67.8,
       "mainstream_pct": 32.2,
       "total_sources_used": 115,
-      "articles_processed": 541
+      "articles_processed": 540
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 541,
+      "total_events": 540,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23005,6 +23027,7 @@
         "burn_count": 1,
         "mint_count": 26,
         "event_ids": [
+          967,
           937,
           877,
           857,
@@ -23030,8 +23053,7 @@
           445,
           439,
           426,
-          422,
-          421
+          422
         ]
       },
       {
@@ -23174,10 +23196,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 367,
+      "total_mint": 366,
       "direct_action": {
-        "count": 167,
-        "pct": 45.5
+        "count": 166,
+        "pct": 45.4
       },
       "editorial_alarm": {
         "count": 15,
@@ -23185,13 +23207,13 @@
       },
       "untyped": {
         "count": 185,
-        "pct": 50.4
+        "pct": 50.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 668,
+      "total_mint": 669,
       "direct_action": {
-        "count": 434,
+        "count": 435,
         "pct": 65.0
       },
       "editorial_alarm": {
@@ -23205,8 +23227,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 164,
-      "institutional": 377,
-      "citizen_ratio": 0.303,
+      "institutional": 376,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-10",
@@ -23241,7 +23263,7 @@
         {
           "date": "2026-05-16",
           "citizen": 6,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -23411,6 +23433,7 @@
         423
       ],
       "event_ids_institutional": [
+        967,
         966,
         962,
         961,
@@ -23785,9 +23808,7 @@
         426,
         425,
         424,
-        422,
-        421,
-        420
+        422
       ]
     }
   }
