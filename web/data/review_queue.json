@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-17T16:33:58.777997+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-05-17T17:04:47.784567+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 349,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-16T21:05:06.095484+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 358,
+      "event_title": "Norway court blocks extradition of migrant activist to Greece",
+      "event_url": "https://www.thelocal.no/20260517/norway-court-blocks-extradition-of-migrant-activist-to-greece",
+      "event_source": "The Local Norway (EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Norwegian court protects a human rights activist from extradition, safeguarding his right to defend migrants.\", \"affected_sdgs\": [16, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The activist is accused of human smuggling, which could undermine legal frameworks against organized crime.\", \"affected_sdgs\": [16, 8], \"violated_rights\": [\"UDHR Article 3\", \"ILO Core Labor Standards\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"ethical_synthesis\": \"The court's decision protects the rights of a human rights defender and promotes justice, but the accusations of smuggling raise concerns about organized crime and labor rights.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Outcome of the legal appeal in Greece\", \"New evidence or testimony regarding the smuggling allegations\", \"Changes in international cooperation on migration and extradition\"], \"revaluation_checkpoint\": \"2028-05-17\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The activist is cleared of all charges, reinforcing protections for human rights defenders.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"The case remains unresolved, with ongoing legal and ethical tensions.\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"The activist is convicted, weakening protections for migrant rights advocates.\", \"probability\": 0.25, \"score\": -5}], \"prospective_score\": 1.5, \"final_score\": 2.0, \"decision\": \"MINT\", \"amount_cbwd\": 200000, \"confidence\": 6, \"justification\": \"Court decision protects activist but accusations of smuggling raise ethical concerns.\", \"event_country\": \"Norway\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Norwegian court blocks extradition of a migrant activist to Greece, preventing potential human rights violations and upholding the right to asylum and fair trial\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The court's decision protects the rights of a migrant activist and aligns with international human rights frameworks, particularly UDHR Article 14 (right to asylum) and CRC Article 3 (best interests of the child). It also supports SDG 10 (reduced inequalities) and SDG 16 (peace, justice, and strong institutions) by preventing extradition to a country where the activist faces charges that may violate due process.\", \"snapshot_score\": 8.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Greek government challenges the ruling and seeks new extradition request\", \"Norwegian government reverses policy on extraditions to Greece\", \"Activist's human rights work is suppressed despite the ruling\"], \"revaluation_checkpoint\": \"2028-05-17\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Greece accepts the ruling and refrains from further extradition requests, allowing the activist to continue human rights work safely\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Greece escalates legal pressure, but Norway maintains its stance, setting a precedent for future cases\", \"probability\": 0.5, \"score\": 7}, {\"name\": \"C\", \"description\": \"Political shifts in Norway or Greece lead to the ruling being overturned or ignored, undermining the decision's impact\", \"probability\": 0.15, \"score\": -5}], \"prospective_score\": 6.25, \"final_score\": 7.01, \"decision\": \"BURN\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Court blocks extradition, upholding human rights and asylum principles.\", \"event_country\": \"Norway\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.75, \"confidence\": 9, \"amount_cbwd\": 200000, \"justification\": \"Institutional action protects rights by blocking extradition of activist, aligning with human rights frameworks.\", \"disagreement\": true, \"reason\": \"Analyst B correctly identified the institutional action (court blocking extradition) as protective of rights, despite activist's alleged involvement in smuggling. The action itself punishes harm by preventing extradition to a system with potential rights violations.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 200000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-17T17:04:45.222200+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
