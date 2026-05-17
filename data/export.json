@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-17T08:34:58.013083+00:00",
-  "total_events": 1005,
+  "generated_at": "2026-05-17T09:05:52.056972+00:00",
+  "total_events": 1007,
   "total_burned": 1362099750,
-  "total_minted": 1383510750,
+  "total_minted": 1392630750,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 1007,
+      "event_title": "Andean Cat, Ghost Dog, and Devil Ray: The Science Behind Tracking Elusive Animals",
+      "event_url": "https://es.mongabay.com/2026/05/gato-andino-perro-fantasma-raya-animales-esquivos/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": 3.19,
+      "confidence": 10,
+      "justification": "Both analysts agree on BURN; consensus on scientific conservation benefits. | The article describes a scientific effort to monitor elusive wildlife species using modern tracking methods. This supports biodiversity conservation and contributes to climate and ocean health by improving understanding of these species' ecological roles.",
+      "tx_hash": "2fA1TdmM8Vb2Dj1G7xcfrXpbgLPFUgP337ESADegmfzs4mMRXBCGU944E6228szFs5Zjy4bWgRwVMvRLn6tdnTeP",
+      "created_at": "2026-05-17T09:05:49.698492+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Researchers are using camera traps and social media image tracking to monitor elusive species such as the Andean cat, ghost dog, and devil ray.\", \"affected_sdgs\": [15, 14, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 1006,
+      "event_title": "Middle East: Israel attacks south Lebanon day after ceasefire extension",
+      "event_url": "https://www.france24.com/en/middle-east-israel-attacks-south-lebanon-day-after-ceasefire-extension",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 9000000,
+      "final_score": -5.98,
+      "confidence": 9,
+      "justification": "Violent escalation despite ceasefire undermines peace and human rights. | The airstrikes constitute a clear violation of international peace and security norms, directly contravening the extended ceasefire and undermining efforts to reduce conflict. This action exacerbates humanitarian suffering and destabilizes the region, with no discernible positive ethical justification.",
+      "tx_hash": "v5LmqFewUyAGMggrGwMK6tpKJNgcDLLPN9GSgZk7AXt6mLY9vnSBZhC3HjgnEe4v4vnSQFN9wQbmCroqnLbnzyG",
+      "created_at": "2026-05-17T09:05:49.609791+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israel launched airstrikes on southern Lebanon despite an extended ceasefire, escalating violence and undermining peace efforts\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1005,
       "event_title": "UNICEF study finds Germany underperforming in child welfare",
@@ -22135,8 +22179,8 @@
       },
       {
         "country": "Israel",
-        "count": 7,
-        "total_amount": 30775000
+        "count": 8,
+        "total_amount": 39775000
       },
       {
         "country": "United Kingdom",
@@ -22201,8 +22245,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.8,
-        "events": 10
+        "mint_ratio": 0.818,
+        "events": 11
       },
       {
         "region": "Oceania",
@@ -22258,25 +22302,25 @@
       },
       {
         "date": "2026-05-17",
-        "net_minted": 5000000,
+        "net_minted": 14120000,
         "net_burned": 17000000
       }
     ],
     "event_of_the_day": {
-      "id": 967,
-      "event_title": "Middle East war: Israeli army announces strikes against Hezbollah in southern Lebanon",
-      "decision": "MINT",
-      "amount_crbn": 9500000,
-      "final_score": -6.87,
-      "confidence": 9,
-      "country": "Israel",
-      "region": "MENA",
-      "created_at": "2026-05-16T09:04:50.349807+00:00"
+      "id": 990,
+      "event_title": "Gérald Darmanin in favor of imprescriptibility of crimes against children",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.73,
+      "confidence": 8,
+      "country": "France",
+      "region": "Europe",
+      "created_at": "2026-05-16T23:04:03.973417+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 155,
-        "negative": 328,
+        "negative": 330,
         "event_ids_positive": [
           1004,
           1003,
@@ -22435,6 +22479,8 @@
           515
         ],
         "event_ids_negative": [
+          1007,
+          1006,
           1005,
           1001,
           999,
@@ -22767,7 +22813,7 @@
       },
       "UDHR": {
         "positive": 62,
-        "negative": 232,
+        "negative": 233,
         "event_ids_positive": [
           1004,
           990,
@@ -22833,6 +22879,7 @@
           564
         ],
         "event_ids_negative": [
+          1006,
           1001,
           999,
           998,
@@ -23260,7 +23307,7 @@
       },
       "Animal": {
         "positive": 51,
-        "negative": 35,
+        "negative": 36,
         "event_ids_positive": [
           988,
           964,
@@ -23315,6 +23362,7 @@
           515
         ],
         "event_ids_negative": [
+          1007,
           989,
           963,
           905,
@@ -23354,7 +23402,7 @@
       },
       "PB": {
         "positive": 71,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           988,
           979,
@@ -23429,6 +23477,7 @@
           515
         ],
         "event_ids_negative": [
+          1007,
           1001,
           999,
           996,
@@ -23515,11 +23564,11 @@
       "niche_pct": 66.7,
       "mainstream_pct": 33.3,
       "total_sources_used": 120,
-      "articles_processed": 538
+      "articles_processed": 540
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 538,
+      "total_events": 540,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23979,29 +24028,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 366,
+      "total_mint": 368,
       "direct_action": {
-        "count": 160,
-        "pct": 43.7
+        "count": 161,
+        "pct": 43.8
       },
       "editorial_alarm": {
-        "count": 15,
-        "pct": 4.1
+        "count": 16,
+        "pct": 4.3
       },
       "untyped": {
         "count": 191,
-        "pct": 52.2
+        "pct": 51.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 695,
+      "total_mint": 697,
       "direct_action": {
-        "count": 450,
+        "count": 451,
         "pct": 64.7
       },
       "editorial_alarm": {
-        "count": 48,
-        "pct": 6.9
+        "count": 49,
+        "pct": 7.0
       },
       "untyped": {
         "count": 197,
@@ -24009,8 +24058,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 165,
-      "institutional": 373,
+      "citizen": 166,
+      "institutional": 374,
       "citizen_ratio": 0.307,
       "daily": [
         {
@@ -24045,11 +24094,12 @@
         },
         {
           "date": "2026-05-17",
-          "citizen": 5,
-          "institutional": 6
+          "citizen": 6,
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
+        1007,
         1004,
         1003,
         1001,
@@ -24217,6 +24267,7 @@
         464
       ],
       "event_ids_institutional": [
+        1006,
         1005,
         999,
         996,
