@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-17T05:34:09.743974+00:00",
-  "total_events": 998,
+  "generated_at": "2026-05-17T06:05:56.728598+00:00",
+  "total_events": 999,
   "total_burned": 1345099750,
-  "total_minted": 1375610750,
-  "pending_reviews": 1,
+  "total_minted": 1377110750,
+  "pending_reviews": 2,
   "events": [
+    {
+      "id": 999,
+      "event_title": "Middle East live: USS Ford returns from Iran war after longest deployment since Vietnam",
+      "event_url": "https://www.france24.com/en/middle-east/20260517-middle-east-live-uss-ford-returns-from-iran-war-after-longest-deployment-since-vietnam",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.78,
+      "confidence": 8,
+      "justification": "Prolonged military deployment and associated actions escalate conflict and undermine regional stability. | The return of the USS Ford may signal a reduction in active conflict, but its deployment and associated military actions likely caused significant harm to regional stability, human rights, and the environment.",
+      "tx_hash": "53XJxFvR2peWwiWHWM5RdPJvtPQLJN977kLLE2mkDbUeXtWtAAfZTewSGsuxBN27UnJgYNvwdLwCZNzcaRVp7ZMR",
+      "created_at": "2026-05-17T06:05:54.273357+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The return of the USS Gerald R. Ford after a long deployment may signal a reduction in active military operations in the region, potentially decreasing civilian harm and conflict-related suffering.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The deployment and military operations associated with the USS Ford likely contributed to regional instability, potential civilian casualties, and environmental damage from military activity.\", \"affected_sdgs\": [13, 15, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"The capture of a political figure like Nicolas Maduro raises concerns about due process and the potential for increased political repression and human rights violations.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 998,
       "event_title": "June 14 vote on '10 million': Risk for peripheral regions",
@@ -21966,8 +21988,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 49,
-        "total_amount": 96735000
+        "count": 50,
+        "total_amount": 98235000
       },
       {
         "country": "Australia",
@@ -22035,8 +22057,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.28,
-        "events": 75
+        "burn_ratio": 0.276,
+        "events": 76
       },
       {
         "region": "Asia",
@@ -22062,8 +22084,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.72,
-        "events": 75
+        "mint_ratio": 0.724,
+        "events": 76
       },
       {
         "region": "Latin America",
@@ -22104,7 +22126,7 @@
       },
       {
         "date": "2026-05-17",
-        "net_minted": 2100000,
+        "net_minted": 3600000,
         "net_burned": 5000000
       }
     ],
@@ -22122,7 +22144,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 163,
-        "negative": 326,
+        "negative": 327,
         "event_ids_positive": [
           991,
           990,
@@ -22289,6 +22311,7 @@
           453
         ],
         "event_ids_negative": [
+          999,
           998,
           997,
           996,
@@ -22619,7 +22642,7 @@
       },
       "UDHR": {
         "positive": 66,
-        "negative": 230,
+        "negative": 231,
         "event_ids_positive": [
           990,
           983,
@@ -22689,6 +22712,7 @@
           456
         ],
         "event_ids_negative": [
+          999,
           998,
           994,
           987,
@@ -23207,7 +23231,7 @@
       },
       "PB": {
         "positive": 73,
-        "negative": 77,
+        "negative": 78,
         "event_ids_positive": [
           988,
           979,
@@ -23284,6 +23308,7 @@
           454
         ],
         "event_ids_negative": [
+          999,
           996,
           962,
           955,
@@ -23368,11 +23393,11 @@
       "niche_pct": 66.4,
       "mainstream_pct": 33.6,
       "total_sources_used": 119,
-      "articles_processed": 544
+      "articles_processed": 545
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 544,
+      "total_events": 545,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23663,6 +23688,39 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 25,
+        "burn_count": 1,
+        "mint_count": 24,
+        "event_ids": [
+          999,
+          987,
+          967,
+          937,
+          877,
+          857,
+          842,
+          775,
+          738,
+          724,
+          691,
+          680,
+          641,
+          639,
+          636,
+          631,
+          615,
+          614,
+          586,
+          547,
+          514,
+          472,
+          468,
+          464,
+          456
+        ]
+      },
+      {
         "name": "Tech",
         "count": 24,
         "burn_count": 10,
@@ -23692,38 +23750,6 @@
           522,
           477,
           457
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 24,
-        "burn_count": 1,
-        "mint_count": 23,
-        "event_ids": [
-          987,
-          967,
-          937,
-          877,
-          857,
-          842,
-          775,
-          738,
-          724,
-          691,
-          680,
-          641,
-          639,
-          636,
-          631,
-          615,
-          614,
-          586,
-          547,
-          514,
-          472,
-          468,
-          464,
-          456
         ]
       },
       {
@@ -23833,10 +23859,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 364,
+      "total_mint": 365,
       "direct_action": {
-        "count": 158,
-        "pct": 43.4
+        "count": 159,
+        "pct": 43.6
       },
       "editorial_alarm": {
         "count": 14,
@@ -23844,14 +23870,14 @@
       },
       "untyped": {
         "count": 192,
-        "pct": 52.7
+        "pct": 52.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 692,
+      "total_mint": 693,
       "direct_action": {
-        "count": 448,
-        "pct": 64.7
+        "count": 449,
+        "pct": 64.8
       },
       "editorial_alarm": {
         "count": 47,
@@ -23859,12 +23885,12 @@
       },
       "untyped": {
         "count": 197,
-        "pct": 28.5
+        "pct": 28.4
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 165,
-      "institutional": 379,
+      "institutional": 380,
       "citizen_ratio": 0.303,
       "daily": [
         {
@@ -23900,7 +23926,7 @@
         {
           "date": "2026-05-17",
           "citizen": 2,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -24071,6 +24097,7 @@
         454
       ],
       "event_ids_institutional": [
+        999,
         996,
         994,
         993,
