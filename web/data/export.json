@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-17T07:34:08.304119+00:00",
-  "total_events": 1003,
-  "total_burned": 1357099750,
-  "total_minted": 1382810750,
+  "generated_at": "2026-05-17T08:34:58.013083+00:00",
+  "total_events": 1005,
+  "total_burned": 1362099750,
+  "total_minted": 1383510750,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 1005,
+      "event_title": "UNICEF study finds Germany underperforming in child welfare",
+      "event_url": "https://www.tagesschau.de/inland/gesellschaft/unicef-kindeswohl-laendervergleich-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -2.83,
+      "confidence": 8,
+      "justification": "UNICEF study exposes systemic child welfare failures in Germany violating CRC and SDGs. | The UNICEF study serves as a critical diagnostic tool exposing systemic gaps in Germany's child welfare system, violating multiple CRC articles and SDGs. While the study itself is a neutral data collection act, its publication by a reputable international body (UNICEF) constitutes a consciousness-raising event that pressures institutional accountability. The net ethical position is negative due to the docum",
+      "tx_hash": "2WGDRbNxH43NGNERV85jTJBuT83JnLBnxH9V2AJZLPySgC1citd4tpgBA9nGpopxRzCTAyaUa9Amg5k9z6t4nvb1",
+      "created_at": "2026-05-17T08:34:55.507428+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"UNICEF's international comparative study on child welfare highlights Germany's underperformance, raising public awareness and prompting potential policy responses\", \"affected_sdgs\": [1, 3, 4, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Germany's poor performance in child welfare indicators (child poverty, reading competence, health) as measured by UNICEF's international comparison\", \"affected_sdgs\": [1, 3, 4, 10], \"violated_rights\": [\"CRC Article 27\", \"CRC Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1004,
+      "event_title": "2026 Mutual Aid Meetings",
+      "event_url": "https://www.reddit.com/r/MutualAid/comments/1r6wnze/2026_mutual_aid_meetings/",
+      "event_source": "Reddit r/MutualAid",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.1,
+      "confidence": 8,
+      "justification": "Grassroots mutual aid networks directly reduce poverty and inequality through collective action. | The Reddit r/MutualAid platform actively enables grassroots community organizing to address poverty, hunger, health, and inequality through structured local meetings. This directly supports multiple SDGs and UDHR principles by empowering citizens to create tangible support systems without external dependencies.",
+      "tx_hash": "3mUrm7FWckSozpEsR3tNufXVGqvmDDsAM4pX7GQP2AbfB2aQasCFoGujZUMyxMgXcLXt2AXL1zwQWWxxmcY1wQYu",
+      "created_at": "2026-05-17T08:34:55.403557+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Citizen-led platform facilitating organized mutual aid meetings to address local community needs and foster collective support networks\", \"affected_sdgs\": [1, 2, 3, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 1003,
       "event_title": "Efforts by Manggarai Women to Achieve Food Sovereignty and Land Conservation",
@@ -22130,8 +22174,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.429,
-        "events": 56
+        "burn_ratio": 0.421,
+        "events": 57
       },
       {
         "region": "Africa",
@@ -22214,8 +22258,8 @@
       },
       {
         "date": "2026-05-17",
-        "net_minted": 4300000,
-        "net_burned": 12000000
+        "net_minted": 5000000,
+        "net_burned": 17000000
       }
     ],
     "event_of_the_day": {
@@ -22231,9 +22275,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 164,
+        "positive": 155,
         "negative": 328,
         "event_ids_positive": [
+          1004,
           1003,
           991,
           990,
@@ -22387,19 +22432,10 @@
           557,
           556,
           554,
-          515,
-          463,
-          462,
-          461,
-          460,
-          459,
-          458,
-          456,
-          455,
-          454,
-          453
+          515
         ],
         "event_ids_negative": [
+          1005,
           1001,
           999,
           998,
@@ -22726,14 +22762,14 @@
           467,
           466,
           465,
-          464,
-          457
+          464
         ]
       },
       "UDHR": {
-        "positive": 66,
+        "positive": 62,
         "negative": 232,
         "event_ids_positive": [
+          1004,
           990,
           983,
           966,
@@ -22794,12 +22830,7 @@
           583,
           573,
           572,
-          564,
-          463,
-          462,
-          461,
-          460,
-          456
+          564
         ],
         "event_ids_negative": [
           1001,
@@ -23064,7 +23095,7 @@
       },
       "CRC": {
         "positive": 14,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           990,
           983,
@@ -23082,6 +23113,7 @@
           564
         ],
         "event_ids_negative": [
+          1005,
           971,
           967,
           946,
@@ -23227,7 +23259,7 @@
         ]
       },
       "Animal": {
-        "positive": 53,
+        "positive": 51,
         "negative": 35,
         "event_ids_positive": [
           988,
@@ -23280,9 +23312,7 @@
           578,
           566,
           554,
-          515,
-          463,
-          454
+          515
         ],
         "event_ids_negative": [
           989,
@@ -23323,7 +23353,7 @@
         ]
       },
       "PB": {
-        "positive": 73,
+        "positive": 71,
         "negative": 79,
         "event_ids_positive": [
           988,
@@ -23396,9 +23426,7 @@
           562,
           557,
           554,
-          515,
-          462,
-          454
+          515
         ],
         "event_ids_negative": [
           1001,
@@ -23484,14 +23512,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.4,
-      "mainstream_pct": 33.6,
-      "total_sources_used": 119,
-      "articles_processed": 547
+      "niche_pct": 66.7,
+      "mainstream_pct": 33.3,
+      "total_sources_used": 120,
+      "articles_processed": 538
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 547,
+      "total_events": 538,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23574,6 +23602,15 @@
         ]
       },
       {
+        "name": "UNICEF",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          1005
+        ]
+      },
+      {
         "name": "NATO",
         "count": 1,
         "burn_count": 0,
@@ -23590,22 +23627,13 @@
         "event_ids": [
           750
         ]
-      },
-      {
-        "name": "ICJ",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          740
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 70,
-        "burn_count": 26,
+        "count": 69,
+        "burn_count": 25,
         "mint_count": 44,
         "event_ids": [
           991,
@@ -23676,8 +23704,7 @@
           473,
           472,
           467,
-          465,
-          455
+          465
         ]
       },
       {
@@ -23782,9 +23809,41 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 24,
+        "burn_count": 11,
+        "mint_count": 13,
+        "event_ids": [
+          1004,
+          991,
+          981,
+          964,
+          958,
+          936,
+          931,
+          904,
+          869,
+          863,
+          824,
+          817,
+          780,
+          769,
+          676,
+          651,
+          636,
+          628,
+          611,
+          599,
+          589,
+          541,
+          522,
+          477
+        ]
+      },
+      {
         "name": "Defense",
-        "count": 25,
-        "burn_count": 1,
+        "count": 24,
+        "burn_count": 0,
         "mint_count": 24,
         "event_ids": [
           999,
@@ -23810,40 +23869,7 @@
           514,
           472,
           468,
-          464,
-          456
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 24,
-        "burn_count": 10,
-        "mint_count": 14,
-        "event_ids": [
-          991,
-          981,
-          964,
-          958,
-          936,
-          931,
-          904,
-          869,
-          863,
-          824,
-          817,
-          780,
-          769,
-          676,
-          651,
-          636,
-          628,
-          611,
-          599,
-          589,
-          541,
-          522,
-          477,
-          457
+          464
         ]
       },
       {
@@ -23875,8 +23901,8 @@
       },
       {
         "name": "Water",
-        "count": 18,
-        "burn_count": 10,
+        "count": 17,
+        "burn_count": 9,
         "mint_count": 8,
         "event_ids": [
           996,
@@ -23895,8 +23921,7 @@
           744,
           610,
           548,
-          522,
-          462
+          522
         ]
       },
       {
@@ -23924,25 +23949,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 181,
+      "total_burn": 172,
       "direct_action": {
-        "count": 83,
-        "pct": 45.9
+        "count": 84,
+        "pct": 48.8
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 2.8
+        "pct": 2.9
       },
       "untyped": {
-        "count": 93,
-        "pct": 51.4
+        "count": 83,
+        "pct": 48.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 297,
+      "total_burn": 298,
       "direct_action": {
-        "count": 181,
-        "pct": 60.9
+        "count": 182,
+        "pct": 61.1
       },
       "editorial_consciousness": {
         "count": 19,
@@ -23950,28 +23975,28 @@
       },
       "untyped": {
         "count": 97,
-        "pct": 32.7
+        "pct": 32.6
       }
     },
     "mint_composition_7d": {
       "total_mint": 366,
       "direct_action": {
-        "count": 159,
-        "pct": 43.4
+        "count": 160,
+        "pct": 43.7
       },
       "editorial_alarm": {
         "count": 15,
         "pct": 4.1
       },
       "untyped": {
-        "count": 192,
-        "pct": 52.5
+        "count": 191,
+        "pct": 52.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 694,
+      "total_mint": 695,
       "direct_action": {
-        "count": 449,
+        "count": 450,
         "pct": 64.7
       },
       "editorial_alarm": {
@@ -23980,13 +24005,13 @@
       },
       "untyped": {
         "count": 197,
-        "pct": 28.4
+        "pct": 28.3
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 167,
-      "institutional": 380,
-      "citizen_ratio": 0.305,
+      "citizen": 165,
+      "institutional": 373,
+      "citizen_ratio": 0.307,
       "daily": [
         {
           "date": "2026-05-11",
@@ -24020,11 +24045,12 @@
         },
         {
           "date": "2026-05-17",
-          "citizen": 4,
-          "institutional": 5
+          "citizen": 5,
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
+        1004,
         1003,
         1001,
         998,
@@ -24188,12 +24214,10 @@
         481,
         477,
         469,
-        464,
-        463,
-        457,
-        454
+        464
       ],
       "event_ids_institutional": [
+        1005,
         999,
         996,
         994,
@@ -24565,15 +24589,7 @@
         468,
         467,
         466,
-        465,
-        462,
-        461,
-        460,
-        459,
-        458,
-        456,
-        455,
-        453
+        465
       ]
     }
   }
