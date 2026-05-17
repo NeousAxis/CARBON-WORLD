@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-17T03:06:17.969936+00:00",
-  "total_events": 994,
-  "total_burned": 1338099750,
-  "total_minted": 1374840750,
-  "pending_reviews": 2,
+  "generated_at": "2026-05-17T03:35:18.742594+00:00",
+  "total_events": 996,
+  "total_burned": 1345099750,
+  "total_minted": 1374960750,
+  "pending_reviews": 1,
   "events": [
+    {
+      "id": 996,
+      "event_title": "Future big droughts may be worse than we think – NZ’s past shows why",
+      "event_url": "https://theconversation.com/future-big-droughts-may-be-worse-than-we-think-nzs-past-shows-why-282259",
+      "event_source": "The Conversation AU",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": -0.83,
+      "confidence": 7,
+      "justification": "Study highlights underestimated drought risks, potentially leading to inadequate preparedness. | The study contributes to climate awareness and scientific understanding (SDG 13, PB), but raises concerns about underestimating future drought risks and their potential impact on water security (SDG 6).",
+      "tx_hash": "3SaiCpo85dUx1FGHJmovUVx9Fnvijt37hXFpd2oSGTmi4euq6gQxfiWa4je964cyH81ULFkygGnHqh6tPdrYDUkN",
+      "created_at": "2026-05-17T03:35:16.327861+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scientific analysis of historical drought patterns in New Zealand provides a more comprehensive understanding of future climate risks.\", \"affected_sdgs\": [13, 6], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The study highlights that recent drought experiences may underestimate future risks, potentially leading to inadequate preparedness and policy responses.\", \"affected_sdgs\": [6, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 995,
+      "event_title": "Venezuela: Alex Saab, a close ally of Maduro, expelled to the United States",
+      "event_url": "https://www.ouest-france.fr/monde/venezuela/venezuela-alex-saab-un-proche-de-maduro-expulse-vers-les-etats-unis-49dd636c-5188-11f1-bdc7-d41f8cb55a03?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Expulsion of a corrupt official supports justice and anti-corruption, despite sovereignty concerns.",
+      "tx_hash": null,
+      "created_at": "2026-05-17T03:17:01.563060+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 994,
       "event_title": "Major outbreak of rare Ebola virus species in northern Congo alarms scientists",
@@ -21964,8 +22008,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.762,
-        "events": 21
+        "mint_ratio": 0.773,
+        "events": 22
       },
       {
         "region": "Asia",
@@ -22016,7 +22060,7 @@
       },
       {
         "date": "2026-05-17",
-        "net_minted": 1330000,
+        "net_minted": 1450000,
         "net_burned": 5000000
       }
     ],
@@ -22034,7 +22078,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 163,
-        "negative": 324,
+        "negative": 325,
         "event_ids_positive": [
           991,
           990,
@@ -22201,6 +22245,7 @@
           453
         ],
         "event_ids_negative": [
+          996,
           994,
           993,
           989,
@@ -23117,7 +23162,7 @@
       },
       "PB": {
         "positive": 73,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           988,
           979,
@@ -23194,6 +23239,7 @@
           454
         ],
         "event_ids_negative": [
+          996,
           962,
           955,
           941,
@@ -23277,11 +23323,11 @@
       "niche_pct": 66.4,
       "mainstream_pct": 33.6,
       "total_sources_used": 119,
-      "articles_processed": 542
+      "articles_processed": 543
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 542,
+      "total_events": 543,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23636,6 +23682,32 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 18,
+        "burn_count": 10,
+        "mint_count": 8,
+        "event_ids": [
+          996,
+          991,
+          976,
+          962,
+          955,
+          933,
+          898,
+          892,
+          890,
+          885,
+          869,
+          772,
+          762,
+          744,
+          610,
+          548,
+          522,
+          462
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 18,
         "burn_count": 9,
@@ -23659,31 +23731,6 @@
           515,
           483,
           470
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 17,
-        "burn_count": 10,
-        "mint_count": 7,
-        "event_ids": [
-          991,
-          976,
-          962,
-          955,
-          933,
-          898,
-          892,
-          890,
-          885,
-          869,
-          772,
-          762,
-          744,
-          610,
-          548,
-          522,
-          462
         ]
       },
       {
@@ -23741,10 +23788,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 362,
+      "total_mint": 363,
       "direct_action": {
-        "count": 156,
-        "pct": 43.1
+        "count": 157,
+        "pct": 43.3
       },
       "editorial_alarm": {
         "count": 14,
@@ -23752,13 +23799,13 @@
       },
       "untyped": {
         "count": 192,
-        "pct": 53.0
+        "pct": 52.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 689,
+      "total_mint": 690,
       "direct_action": {
-        "count": 445,
+        "count": 446,
         "pct": 64.6
       },
       "editorial_alarm": {
@@ -23772,8 +23819,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 164,
-      "institutional": 378,
-      "citizen_ratio": 0.303,
+      "institutional": 379,
+      "citizen_ratio": 0.302,
       "daily": [
         {
           "date": "2026-05-11",
@@ -23808,7 +23855,7 @@
         {
           "date": "2026-05-17",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -23978,6 +24025,7 @@
         452
       ],
       "event_ids_institutional": [
+        996,
         994,
         993,
         991,
