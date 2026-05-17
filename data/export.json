@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-17T07:05:01.279549+00:00",
-  "total_events": 1001,
-  "total_burned": 1350099750,
-  "total_minted": 1377810750,
-  "pending_reviews": 2,
+  "generated_at": "2026-05-17T07:34:08.304119+00:00",
+  "total_events": 1003,
+  "total_burned": 1357099750,
+  "total_minted": 1382810750,
+  "pending_reviews": 1,
   "events": [
+    {
+      "id": 1003,
+      "event_title": "Efforts by Manggarai Women to Achieve Food Sovereignty and Land Conservation",
+      "event_url": "https://mongabay.co.id/2026/05/17/upaya-mama-mama-manggarai-berdaulat-pangan-sampai-konservasi-lahan/",
+      "event_source": "Mongabay Indonesia",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Indigenous women-led food sovereignty and land conservation initiative advances SDGs 2, 5, 12, 15 with high ethical alignment. | The actions by Manggarai women directly advance food sovereignty (SDG 2) and biodiversity conservation (SDG 15) while upholding indigenous rights (UNDRIP). The community-led initiative demonstrates a positive ethical alignment with planetary boundaries and gender equality, with no identified negative aspects in this context.",
+      "tx_hash": "35w5GtZWx4JyifmrqbL96qc3gvRG7e6rHR8Xpw7h7LDF5XN9xWktaFhvF2NRMktZcMUKQKW6k7QaNNbJau9kMHRF",
+      "created_at": "2026-05-17T07:34:05.808789+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Indigenous Manggarai women in West Manggarai, Indonesia, established a 200 m² food sovereignty garden with bamboo terracing, integrating rice and horticultural crops to enhance local food security and land conservation.\", \"affected_sdgs\": [2, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Formation of the Perempuan Wela Nara women's group as an organized collective action for sustainable agriculture and land stewardship, demonstrating community-led conservation.\", \"affected_sdgs\": [5, 12, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Implementation of traditional bamboo terracing techniques to prevent soil erosion and promote sustainable land use, aligning with indigenous ecological knowledge.\", \"affected_sdgs\": [12, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1002,
+      "event_title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
+      "event_url": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
+      "event_source": "WHO News",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | WHO's declaration enables global response to a severe public health crisis.",
+      "tx_hash": null,
+      "created_at": "2026-05-17T07:17:02.221046+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1001,
       "event_title": "In Provence, lavender fields are being torn out to raise laying hens",
@@ -22100,14 +22144,14 @@
         "events": 28
       },
       {
+        "region": "Asia",
+        "burn_ratio": 0.304,
+        "events": 23
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.276,
         "events": 76
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.273,
-        "events": 22
       }
     ],
     "top_regions_destructive": [
@@ -22122,14 +22166,14 @@
         "events": 22
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.727,
-        "events": 22
-      },
-      {
         "region": "North America",
         "mint_ratio": 0.724,
         "events": 76
+      },
+      {
+        "region": "Asia",
+        "mint_ratio": 0.696,
+        "events": 23
       },
       {
         "region": "Latin America",
@@ -22171,25 +22215,26 @@
       {
         "date": "2026-05-17",
         "net_minted": 4300000,
-        "net_burned": 5000000
+        "net_burned": 12000000
       }
     ],
     "event_of_the_day": {
-      "id": 964,
-      "event_title": "Uncontacted Amazon tribes' landmark legal victory puts Ecuador under growing global pressure to stop oil drilling in the world's most biodiverse rainforest",
-      "decision": "BURN",
-      "amount_crbn": 7000000,
-      "final_score": 7.01,
+      "id": 967,
+      "event_title": "Middle East war: Israeli army announces strikes against Hezbollah in southern Lebanon",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.87,
       "confidence": 9,
-      "country": "Ecuador",
-      "region": "Latin America",
-      "created_at": "2026-05-16T07:05:19.161457+00:00"
+      "country": "Israel",
+      "region": "MENA",
+      "created_at": "2026-05-16T09:04:50.349807+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 163,
+        "positive": 164,
         "negative": 328,
         "event_ids_positive": [
+          1003,
           991,
           990,
           988,
@@ -23081,9 +23126,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 35,
+        "positive": 36,
         "negative": 57,
         "event_ids_positive": [
+          1003,
           965,
           964,
           960,
@@ -23441,11 +23487,11 @@
       "niche_pct": 66.4,
       "mainstream_pct": 33.6,
       "total_sources_used": 119,
-      "articles_processed": 546
+      "articles_processed": 547
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 546,
+      "total_events": 547,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -23878,10 +23924,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 180,
+      "total_burn": 181,
       "direct_action": {
-        "count": 82,
-        "pct": 45.6
+        "count": 83,
+        "pct": 45.9
       },
       "editorial_consciousness": {
         "count": 5,
@@ -23889,14 +23935,14 @@
       },
       "untyped": {
         "count": 93,
-        "pct": 51.7
+        "pct": 51.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 296,
+      "total_burn": 297,
       "direct_action": {
-        "count": 180,
-        "pct": 60.8
+        "count": 181,
+        "pct": 60.9
       },
       "editorial_consciousness": {
         "count": 19,
@@ -23904,7 +23950,7 @@
       },
       "untyped": {
         "count": 97,
-        "pct": 32.8
+        "pct": 32.7
       }
     },
     "mint_composition_7d": {
@@ -23938,9 +23984,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 166,
+      "citizen": 167,
       "institutional": 380,
-      "citizen_ratio": 0.304,
+      "citizen_ratio": 0.305,
       "daily": [
         {
           "date": "2026-05-11",
@@ -23974,11 +24020,12 @@
         },
         {
           "date": "2026-05-17",
-          "citizen": 3,
+          "citizen": 4,
           "institutional": 5
         }
       ],
       "event_ids_citizen": [
+        1003,
         1001,
         998,
         997,
