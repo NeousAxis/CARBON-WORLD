@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-18T01:35:07.536813+00:00",
-  "total_events": 1058,
-  "total_burned": 1457599750,
-  "total_minted": 1464530750,
+  "generated_at": "2026-05-18T02:35:18.302342+00:00",
+  "total_events": 1060,
+  "total_burned": 1461799750,
+  "total_minted": 1471530750,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 1060,
+      "event_title": "A record motorcycle caravan rode through Buenos Aires to raise awareness about men's health issues",
+      "event_url": "https://www.clarin.com/sociedad/caravana-record-motos-recorrio-buenos-aires-concientizar-problemas-salud-varones_0_vJMGN6Z3as.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "BURN",
+      "amount_crbn": 4200000,
+      "final_score": 6.19,
+      "confidence": 8,
+      "justification": "Large-scale public health awareness event with measurable impact and global scalability. | The event directly advances SDG 3 (Good Health and Well-being) by raising public awareness and funding research for critical men's health issues. It mobilizes a large, named community (6,000 participants) in a public, consciousness-raising act, aligning with ethical frameworks for health and human rights.",
+      "tx_hash": "4rLtAyHcm6eHbMiFrCcmiW6rDPkjWvoUK8d7R6afifie7f9nCP6RLZk341cuMX3p9KJnc7SN9p4vidhNKHAS5wCc",
+      "created_at": "2026-05-18T02:35:15.647121+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"A record motorcycle caravan with 6,000 participants rode through Buenos Aires to raise awareness about men's health issues, including testicular and prostate cancer, and mental health, while fundraising for research.\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1059,
+      "event_title": "Amnesty International announces highest number of executions worldwide since 1981",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/18/amnesty-international-annonce-un-nombre-d-executions-dans-le-monde-au-plus-haut-depuis-1981_6690410_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": -5.79,
+      "confidence": 9,
+      "justification": "Record executions violate UDHR rights and undermine SDG 16 | The surge in global executions represents a severe violation of fundamental human rights, particularly the right to life and fair trial. This trend undermines global progress toward peace and justice (SDG 16) and directly contravenes core UDHR principles. The magnitude of harm is severe and widespread, affecting thousands of individuals and their families.",
+      "tx_hash": "35Q7LDgmxkw8aYZXpbe8eUojTTcnVZRekV2XN9YaCJsVvRN33LhLFmcpSsjPvCHnZtUyKmnP3FebCWPe6CCtMpuo",
+      "created_at": "2026-05-18T02:35:15.543146+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Amnesty International reports a record 2,707 executions worldwide in 2025, a 78% increase from previous years, with Iran's executions more than doubling\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1058,
       "event_title": "Live, Middle East – Islamic Jihad leader killed in Israeli airstrikes in Lebanon",
@@ -23349,14 +23393,14 @@
         "events": 25
       },
       {
+        "region": "Latin America",
+        "burn_ratio": 0.367,
+        "events": 30
+      },
+      {
         "region": "Africa",
         "burn_ratio": 0.35,
         "events": 20
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.345,
-        "events": 29
       },
       {
         "region": "North America",
@@ -23381,14 +23425,14 @@
         "events": 80
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.655,
-        "events": 29
-      },
-      {
         "region": "Africa",
         "mint_ratio": 0.65,
         "events": 20
+      },
+      {
+        "region": "Latin America",
+        "mint_ratio": 0.633,
+        "events": 30
       }
     ],
     "supply_trend_7d": [
@@ -23424,8 +23468,8 @@
       },
       {
         "date": "2026-05-18",
-        "net_minted": 15900000,
-        "net_burned": 15500000
+        "net_minted": 22900000,
+        "net_burned": 19700000
       }
     ],
     "event_of_the_day": {
@@ -23441,9 +23485,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 176,
-        "negative": 343,
+        "positive": 177,
+        "negative": 344,
         "event_ids_positive": [
+          1060,
           1056,
           1053,
           1052,
@@ -23622,6 +23667,7 @@
           515
         ],
         "event_ids_negative": [
+          1059,
           1058,
           1057,
           1055,
@@ -23968,9 +24014,10 @@
         ]
       },
       "UDHR": {
-        "positive": 72,
-        "negative": 243,
+        "positive": 73,
+        "negative": 244,
         "event_ids_positive": [
+          1060,
           1052,
           1050,
           1029,
@@ -24045,6 +24092,7 @@
           564
         ],
         "event_ids_negative": [
+          1059,
           1058,
           1057,
           1055,
@@ -24775,11 +24823,11 @@
       "niche_pct": 61.1,
       "mainstream_pct": 38.9,
       "total_sources_used": 126,
-      "articles_processed": 584
+      "articles_processed": 586
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 584,
+      "total_events": 586,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -24979,10 +25027,11 @@
       },
       {
         "name": "Finance",
-        "count": 48,
-        "burn_count": 17,
+        "count": 49,
+        "burn_count": 18,
         "mint_count": 31,
         "event_ids": [
+          1060,
           1049,
           1047,
           1022,
@@ -25234,10 +25283,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 197,
+      "total_burn": 198,
       "direct_action": {
-        "count": 105,
-        "pct": 53.3
+        "count": 106,
+        "pct": 53.5
       },
       "editorial_consciousness": {
         "count": 5,
@@ -25245,14 +25294,14 @@
       },
       "untyped": {
         "count": 87,
-        "pct": 44.2
+        "pct": 43.9
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 323,
+      "total_burn": 324,
       "direct_action": {
-        "count": 203,
-        "pct": 62.8
+        "count": 204,
+        "pct": 63.0
       },
       "editorial_consciousness": {
         "count": 19,
@@ -25260,14 +25309,14 @@
       },
       "untyped": {
         "count": 101,
-        "pct": 31.3
+        "pct": 31.2
       }
     },
     "mint_composition_7d": {
-      "total_mint": 387,
+      "total_mint": 388,
       "direct_action": {
-        "count": 174,
-        "pct": 45.0
+        "count": 175,
+        "pct": 45.1
       },
       "editorial_alarm": {
         "count": 16,
@@ -25275,13 +25324,13 @@
       },
       "untyped": {
         "count": 197,
-        "pct": 50.9
+        "pct": 50.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 727,
+      "total_mint": 728,
       "direct_action": {
-        "count": 474,
+        "count": 475,
         "pct": 65.2
       },
       "editorial_alarm": {
@@ -25295,8 +25344,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 180,
-      "institutional": 404,
-      "citizen_ratio": 0.308,
+      "institutional": 406,
+      "citizen_ratio": 0.307,
       "daily": [
         {
           "date": "2026-05-12",
@@ -25331,7 +25380,7 @@
         {
           "date": "2026-05-18",
           "citizen": 1,
-          "institutional": 6
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -25517,6 +25566,8 @@
         477
       ],
       "event_ids_institutional": [
+        1060,
+        1059,
         1058,
         1057,
         1055,
