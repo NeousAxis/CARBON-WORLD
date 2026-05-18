@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-18T02:35:18.368819+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-05-18T03:04:18.598371+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 349,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-17T18:36:03.826923+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 361,
+      "event_title": "Musk v. Altman week 3: Elon Musk and Sam Altman traded blows over each other’s credibility. Now the jury will pick a side.",
+      "event_url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
+      "event_source": "MIT Technology Review",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Legal proceedings exposing alleged unethical behavior (lying, self-dealing) by a named CEO (Sam Altman) in a high-profile tech dispute\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 29\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Legal scrutiny of corporate governance and accountability in AI development, highlighting potential conflicts of interest\", \"affected_sdgs\": [9, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The trial exposes systemic issues in corporate governance and ethical accountability in AI development, with both parties accused of unethical conduct. While the legal process itself is a mechanism for accountability, the underlying behaviors (alleged lying, self-dealing, power-seeking) undermine trust in institutional integrity and corporate ethics.\", \"snapshot_score\": -4.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Clear evidence of wrongdoing by either party\", \"Regulatory intervention or sanctions imposed\", \"Public trust in AI governance significantly recovers or collapses\", \"Major policy reforms in AI ethics and corporate accountability\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Regulatory bodies impose strict governance reforms and sanctions, restoring public trust in AI ethics\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"No meaningful reforms occur; public skepticism about AI governance deepens, but no catastrophic collapse\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Scandals escalate, leading to a systemic crisis in AI governance and loss of investor confidence\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.75, \"final_score\": -3.26, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Legal exposure of unethical corporate behavior in AI governance undermines trust and accountability.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Legal proceedings exposing alleged unethical behavior (lying, self-dealing) by OpenAI CEO Sam Altman in dealings with companies associated with OpenAI\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Elon Musk's portrayal as a power-seeker aiming to control OpenAI's development, raising concerns about corporate governance and accountability\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The trial highlights systemic issues in corporate governance and ethical accountability within influential tech organizations. While the legal process itself is a mechanism for accountability, the allegations of unethical behavior by key figures in OpenAI and Musk's pursuit of control undermine trust in institutional leadership. The net ethical position is negative due to the gravity of the allegations and their potential to erode public confidence in tech governance.\", \"snapshot_score\": -5.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Clear evidence of wrongdoing by either party is substantiated or refuted\", \"Regulatory bodies impose penalties or reforms on OpenAI or Musk-affiliated entities\", \"Public trust in OpenAI or Musk's ventures significantly recovers or declines\", \"Major institutional investors or partners distance themselves from either party\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Both parties face severe legal and reputational consequences, leading to systemic reforms in AI governance and corporate accountability\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Partial accountability with minor reforms, but core issues of power and ethics persist in the tech industry\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"No meaningful accountability, with both parties retaining influence and the tech industry continuing unchecked power dynamics\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.95, \"final_score\": -3.84, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Legal exposure of unethical behavior in tech leadership undermines trust and accountability.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.47, \"confidence\": 8, \"amount_cbwd\": 500000, \"justification\": \"Legal exposure of unethical corporate behavior in AI governance undermines trust and accountability.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_positive_aspects | llm: Verdict MINT treats exposing unethical AI governance as negative, but such exposure supports justice/accountability, a BURN scenario; polarity error.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-18T03:04:15.738407+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
