@@ -151,18 +151,29 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
     };
   }, []);
 
-  // Wheel zoom centred on the cursor position. Stops the page from scrolling.
+  // Wheel zoom centred on the cursor position.
+  // Zoom only fires while Ctrl / Cmd is held — a plain wheel scroll passes
+  // straight through so the page keeps scrolling normally even when the
+  // cursor crosses the map (reported by Cyril 2026-05-14: the map used to
+  // zoom to its extremes the moment you scrolled past it). This mirrors the
+  // Google Maps / Mapbox embed convention.
   function handleWheel(e: React.WheelEvent<SVGSVGElement>) {
+    if (!e.ctrlKey && !e.metaKey) return; // let the page scroll
     e.preventDefault();
     const svg = svgRef.current;
     if (!svg) return;
     const rect = svg.getBoundingClientRect();
+    // Guard: if the SVG has no layout box yet (width/height 0), the cursor
+    // mapping below would divide by zero and poison the viewBox with NaN.
+    if (rect.width <= 0 || rect.height <= 0) return;
     // Map cursor to viewBox coordinates
     const px = (e.clientX - rect.left) / rect.width;
     const py = (e.clientY - rect.top) / rect.height;
     const cx = view.x + px * view.w;
     const cy = view.y + py * view.h;
-    const factor = e.deltaY > 0 ? 1.2 : 1 / 1.2;
+    // Gentler step than before (1.2) so a deliberate Ctrl+scroll zoom
+    // doesn't jump the view too far per wheel tick.
+    const factor = e.deltaY > 0 ? 1.12 : 1 / 1.12;
     let newW = Math.min(W, Math.max(150, view.w * factor));
     let newH = Math.min(VIEW_H, Math.max(150 * (VIEW_H / W), view.h * factor));
     // Keep aspect ratio aligned with the original viewBox
@@ -174,6 +185,8 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
     // Clamp inside the original world bounds
     newX = Math.max(0, Math.min(W - newW, newX));
     newY = Math.max(VIEW_Y, Math.min(VIEW_Y + VIEW_H - newH, newY));
+    // Final NaN guard — never write a non-finite value into the viewBox.
+    if (![newX, newY, newW, newH].every(Number.isFinite)) return;
     setView({ x: newX, y: newY, w: newW, h: newH });
   }
 
@@ -289,6 +302,14 @@ export function WorldMap({ events, windowDays = 7, height = 440 }: WorldMapProps
                 -{countryStats[hoverIso].burn}K
               </span>
             </div>
+          )}
+          {!isZoomed && (
+            <span
+              className="hidden sm:inline text-[10px] font-mono uppercase tracking-wider"
+              style={{ color: "var(--muted)" }}
+            >
+              ⌘/Ctrl + scroll to zoom
+            </span>
           )}
           {isZoomed && (
             <button
