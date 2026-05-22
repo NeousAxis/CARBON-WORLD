@@ -177,7 +177,14 @@ export function DashboardClient({ initialData }: DashboardClientProps) {
   // genuinely recent pipeline activity, not the full historical window.
   const recentEvents = useMemo(() => {
     const cutoff = Date.now() - 48 * 60 * 60 * 1000;
-    return events.filter((e) => new Date(e.created_at).getTime() >= cutoff);
+    const within48h = events.filter((e) => new Date(e.created_at).getTime() >= cutoff);
+    // Fallback: when the pipeline slows down and nothing landed in the last
+    // 48 h, show the most recent events anyway so the "Live activity" panel is
+    // never blank (the timeAgo label stays honest — it will read "4d ago").
+    if (within48h.length >= 5) return within48h;
+    return [...events]
+      .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+      .slice(0, 30);
   }, [events]);
 
   const netAbs = Math.abs(stats.netSupplyChange);
