@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T09:37:18.490324+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-22T10:07:04.129704+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 368,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-22T09:37:16.537992+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 370,
+      "event_title": "Greenpeace campaign against EU fossil gas imports from the US",
+      "event_url": "https://mastodon.social/@greenpeace/116617294742010038",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace launches an international campaign to raise awareness about fossil gas dependency and promote renewable energy security in the EU\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public petition launched with measurable goal to stop fossil gas imports, demonstrating citizen-led collective action\", \"affected_sdgs\": [13, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"EU's continued reliance on fossil gas imports from the US under Trump's administration, increasing energy dependency and undermining climate goals\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The Greenpeace campaign represents a positive consciousness-raising effort to shift energy policy toward renewables and reduce fossil fuel dependency, aligning with climate action and energy security. However, the underlying EU energy policy enabling fossil gas imports from the US remains a significant negative driver of climate harm and energy insecurity, outweighing the campaign's immediate impact.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"EU adopts binding renewable energy targets by 2030\", \"US reverses fossil gas export policies\", \"Greenpeace campaign achieves 1M+ petition signatures\", \"New EU-US energy trade agreements signed\"], \"revaluation_checkpoint\": \"2027-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"EU rapidly transitions to renewables, Greenpeace campaign gains widespread public support, and US fossil gas exports collapse due to market shifts\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"EU maintains mixed energy policy with slow renewable adoption, Greenpeace campaign has moderate impact but fossil gas imports persist\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"EU doubles down on fossil gas imports from US, Greenpeace campaign fails to gain traction, and climate targets are missed\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.65, \"final_score\": -2.06, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"EU fossil gas dependency from US undermines climate action despite Greenpeace's awareness campaign.\", \"event_country\": \"European Union\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace launches an international campaign to stop fossil gas imports from the US to the EU, aiming to reduce dependency on fossil fuels and promote renewable energy security\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Europe's continued reliance on fossil gas imports from the US, increasing energy dependency and undermining climate goals\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The Greenpeace campaign represents a proactive civil society effort to shift energy policy toward renewables and reduce fossil fuel dependency, aligning with climate action and energy security goals. However, the underlying issue of Europe's continued fossil gas imports from the US highlights a systemic failure to transition away from fossil fuels, posing significant climate and energy security risks.\", \"snapshot_score\": 5.5, \"trajectory_score\": 4.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"EU adopts binding renewable energy targets exceeding 50% by 2030\", \"US fossil gas exports to EU drop below 30% of total imports\", \"Greenpeace campaign gains formal EU policy traction (e.g., hearings, legislative proposals)\", \"Major geopolitical shift (e.g., US changes energy export policies or EU accelerates LNG terminal decommissioning)\"], \"revaluation_checkpoint\": \"2027-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"EU rapidly phases out fossil gas imports from the US, accelerates renewable energy deployment, and Greenpeace campaign achieves policy impact; global climate targets met\", \"probability\": 0.25, \"score\": 9}, {\"name\": \"B\", \"description\": \"EU reduces but does not eliminate fossil gas imports from the US; Greenpeace campaign raises awareness but limited policy change; moderate progress on renewables\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"EU remains heavily dependent on US fossil gas imports; Greenpeace campaign fails to gain traction; climate targets missed, energy security worsens\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.15, \"final_score\": 3.81, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Civil society climate action is positive but undermined by systemic fossil fuel dependency.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.13, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Greenpeace's campaign raises awareness but EU's fossil gas imports from the US undermine climate action.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the systemic issue of EU fossil gas dependency as harmful. While Analyst B notes the positive intent of Greenpeace, the institutional action (EU importing fossil gas) enables harm.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict polarity error: campaign against fossil gas imports is climate-positive, should be BURN, not MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-22T10:07:02.155730+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
