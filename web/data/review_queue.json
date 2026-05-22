@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T09:06:25.282008+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-05-22T09:37:18.490324+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 368,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-22T08:38:22.545450+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 369,
+      "event_title": "Organized crime already affects 32% of indigenous areas in the Amazon, study says",
+      "event_url": "https://brasil.mongabay.com/2026/05/crime-organizado-ja-afeta-32-de-areas-indigenas-da-amazonia-diz-estudo/",
+      "event_source": "Mongabay Brasil",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Organized crime affects 32% of indigenous areas in the Amazon, threatening indigenous communities and their rights\", \"affected_sdgs\": [15, 16], \"violated_rights\": [\"UNDRIP Article 7\", \"UNDRIP Article 8\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}, {\"description\": \"State militarized responses to organized crime further threaten indigenous communities and their territories\", \"affected_sdgs\": [16], \"violated_rights\": [\"UNDRIP Article 30\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}], \"ethical_synthesis\": \"The study documents severe and widespread harm to indigenous communities in the Amazon, where organized crime and militarized state responses jointly undermine indigenous rights, territorial integrity, and safety. These violations directly contravene UNDRIP and UDHR, with systemic and irreversible consequences for biodiversity and human rights.\", \"snapshot_score\": -9.5, \"trajectory_score\": -8.0, \"revaluation_score\": -7.0, \"revaluation_triggers\": [\"Effective protection measures implemented by indigenous communities or government\", \"Reduction in organized crime presence in indigenous territories\", \"Policy changes addressing militarization and land invasions\", \"International pressure leading to accountability\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"International and national policies effectively protect indigenous territories, reducing organized crime presence and militarization impacts\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Partial but insufficient protection measures lead to continued but slowed degradation of indigenous rights and territories\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Escalation of organized crime and militarization results in irreversible loss of indigenous territories and rights\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.05, \"final_score\": -7.14, \"decision\": \"MINT\", \"amount_cbwd\": 7000000, \"confidence\": 9, \"justification\": \"Severe and systemic violation of indigenous rights and UNDRIP/UDHR in Amazon territories.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Publication of a named report by Amazon Watch documenting criminal threats to indigenous lands in the Amazon, raising awareness and informing policy\", \"affected_sdgs\": [15, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Criminal organizations affecting 32% of indigenous areas in the Amazon, with militarized state responses causing deep impacts on indigenous communities\", \"affected_sdgs\": [15, 16], \"violated_rights\": [\"UNDRIP Article 7\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}], \"ethical_synthesis\": \"The report by Amazon Watch is a consciousness-raising act that documents severe threats to indigenous rights and biodiversity in the Amazon. However, the underlying issue—organized crime and militarized responses—constitutes a grave violation of indigenous rights and environmental integrity, with systemic and irreversible impacts.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Effectiveness of indigenous-led security initiatives\", \"Implementation of UNDRIP-aligned policies by Amazon basin countries\", \"Reduction in organized crime presence in indigenous territories\", \"International funding and support for indigenous land protection\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where indigenous communities secure legal land titles, international support increases, and organized crime is significantly reduced through coordinated action\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic scenario where partial progress is made, but organized crime adapts and continues to threaten indigenous lands, with ongoing militarization causing harm\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where organized crime expands control, militarization intensifies, and indigenous communities face severe displacement and violence\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.55, \"final_score\": -5.76, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Report raises awareness but documents severe ongoing violations of indigenous rights and environmental harm.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -6.45, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"Systemic harm to indigenous rights and environmental integrity caused by organized crime and militarized state responses.\", \"disagreement\": true, \"reason\": \"The event describes institutional failure and active harm to indigenous communities. Analyst A correctly identifies this as a BURN due to rights violations. Analyst B's NEUTRAL stance overlooks the active role of harmful institutional actions.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects, analyst_ab_disagreement | llm: Polarity error: article reports harmful organized crime and militarized state actions harming indigenous rights and environment, but verdict is BURN (positive) instead of MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 7000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-22T09:37:16.537992+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
