@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-22T21:36:16.196264+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-05-22T22:04:57.812939+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 373,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-22T18:36:01.468817+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 386,
+      "event_title": "Pro-Palestinian activist Mahmoud Khalil to appeal to US Supreme Court to avoid re-arrest",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/pro-palestinian-activist-mahmoud-khalil-appeal-us-supreme-court-avoid-re-arrest",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Legal challenge by a named lawyer to appeal a federal appeals court ruling, seeking to prevent re-arrest and deportation of a pro-Palestinian activist\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Federal appeals court ruling that opens the door to re-arrest and deportation of a pro-Palestinian activist under a presidential administration\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14 (asylum)\", \"UDHR Article 19 (freedom of expression)\", \"UDHR Article 20 (freedom of peaceful assembly)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The legal appeal represents a positive step toward protecting freedom of expression and preventing arbitrary detention, aligning with human rights frameworks. However, the underlying federal ruling enabling potential re-arrest and deportation undermines these rights, creating a net negative ethical position that prioritizes state authority over individual freedoms.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Supreme Court ruling on appeal\", \"Policy changes under new administration\", \"Broader legal precedents set by similar cases\", \"Public and international response to the case\"], \"revaluation_checkpoint\": \"2028-05-22\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Supreme Court rules in favor of Khalil, setting a precedent protecting activists from deportation for political speech\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Supreme Court upholds the appeals court ruling, enabling deportation and setting a chilling precedent for activism\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Supreme Court issues a narrow ruling that avoids setting a broad precedent, leaving the issue unresolved\", \"probability\": 0.2, \"score\": -2}], \"prospective_score\": -2.05, \"final_score\": -2.21, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Federal ruling enabling deportation of activist outweighs appeal's protective intent.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Legal challenge filed by a named lawyer to protect a pro-Palestinian activist from re-arrest and deportation, seeking Supreme Court review\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Federal appeals court ruling enables potential re-arrest and deportation of a pro-Palestinian activist under Trump administration policy\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The legal challenge represents a positive effort to uphold human rights and due process, while the underlying court ruling enables state action that risks violating fundamental freedoms. The net ethical position is mixed, with the positive aspect being a proactive defense of rights and the negative aspect representing a systemic risk to civil liberties.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Supreme Court decision outcome\", \"Policy changes under new administration\", \"Broader immigration enforcement trends\", \"Public and legal backlash against deportation policies\"], \"revaluation_checkpoint\": \"2028-05-22\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Supreme Court rules in favor of activist, setting precedent against politically motivated deportations\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Supreme Court upholds lower court, enabling deportation but sparking widespread protests and legal reforms\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Supreme Court rules against activist, leading to immediate deportation and erosion of asylum protections\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.15, \"final_score\": -1.07, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Legal challenge counters deportation risk but systemic policy enables harm.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.64, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Federal ruling enabling deportation of activist outweighs appeal's protective intent.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict MINT contradicts the positive human‑rights impact of the activist's appeal; the action protects rights and should be BURN, not MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-22T22:04:56.209621+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
