@@ -4,6 +4,56 @@
 
 ---
 
+## 🧭 2026-05-22 — Dashboard ODD/PB + WorldMap scroll + pipeline zombie ressuscité
+
+Branche `feat/clientearth-feed-test` (poussée sur main au fil de l'eau via fast-forward).
+
+### A. Module "Browse by SDG" (17 ODD ONU) sur la home
+
+Cyril voulait un module de sélection thématique. Première version (10 catégories narratives keyword-regex : good-news, pandemic, earthquake…) jugée trop "Buzzfeed". **Pivot vers les 17 ODD ONU** — cadre scientifique déjà utilisé par les analystes (`affected_sdgs` dans chaque aspect) → match exact, pas regex.
+
+- `web/src/lib/sdg-meta.ts` : 17 ODD (num, label, nom officiel, couleur Pantone ONU)
+- `web/public/sdg/01..17.png` : icônes officielles ONU (un.org, libres de droit)
+- `web/src/components/SDGNavCard.tsx` : grille 17 cards, icône sur fond couleur ODD + compteur live ▲ BURN / ▽ MINT (7j on-chain). Footer "UN 2015 · sdgs.un.org".
+- `/events?sdg=N` : filtre exact sur `affected_sdgs` (BURN→positive_aspects, MINT→negative_aspects). Cohérence dashboard↔drill-down vérifiée (SDG 13 = 34/55 partout).
+- L'ancien `ThemesNavCard` supprimé ; `?category=` legacy conservé.
+
+### B. Module "Browse by Planetary Boundary" (9 PB) sur la home
+
+- `web/src/lib/pb-meta.ts` + `web/src/components/PBNavCard.tsx` : 9 PB (Rockström 2009 / Richardson 2023). Statut 2023 coloré (6 transgressed rouge, 1 at-limit jaune, 2 safe vert). Compteur regex (~80%) car l'analyste ne tague que `frameworks:["PB"]` (binaire), pas le PB#. `/events?pb=<slug>` filtre. Footer SRC.
+
+### C. Bug aspects manquants → 30% des events invisibles dans la grille ODD
+
+`resolve_review.py` n'écrivait PAS `positive/negative_aspects_json` dans carbon_events (le reconciler_verdict ne porte pas les aspects, seulement le verdict final). Tous les events approuvés via /review ou auto_approve_* arrivaient sans taxonomie → 232 events (dont mes 200 auto-batches) invisibles.
+
+- **Fix** : `resolve_review.py` copie désormais positive/negative_aspects depuis `analyst_a_verdict` (fallback B).
+- **Backfill** : `worker/backfill_aspects.py` (lit review_queue.analyst_a_verdict par event_url, COALESCE update) → 241 events réparés.
+- **Reliquat** : ~204 events 7j sans un côté d'aspect = events où l'analyste n'a honnêtement trouvé qu'un seul côté (writer fait `if positive_aspects:` qui skip les `[]`). Pas un bug — les compteurs ODD sont des minima corrects.
+
+### D. WorldMap — scroll trop sensible (commit `3676acf`)
+
+`handleWheel` faisait `preventDefault()` à chaque molette dès survol → la page ne scrollait plus, la map zoomait à fond. **Fix** : zoom seulement avec **Ctrl/Cmd + scroll** (convention Google Maps), molette simple = scroll page. Step adouci 1.2→1.12. + 2 garde-fous NaN (rect.width 0 → division par zéro poisonnait le viewBox). Hint "⌘/Ctrl + scroll to zoom" dans l'en-tête.
+
+### E. ⚠️ INCIDENT MAJEUR — pipeline gelé 4 jours (zombie flock)
+
+**Symptôme** : "Live activity cassé" (ticker vide). **Cause** : un `worker/main.py` lancé le **2026-05-18 08:30** bloqué sur un fetch RSS qui ne répondait jamais — `feedparser.parse()` n'a **pas de timeout socket**. Ce process tenait le flock cron → tous les runs `*/30` faisaient "SKIP: previous run still active" pendant 4 jours. Zéro event produit, dashboard figé (dernier event 2026-05-18).
+
+**Récupération** : kill du zombie (PID 2132893 + arbre), `rm /tmp/carbon-worker.lock`, run manuel → Phase 8/8 OK, 4 events frais (#1075-1078).
+
+**Garde-fous (commit `0c046e9`)** :
+1. `worker/rss_fetcher.py` : `socket.setdefaulttimeout(20)` à l'import → feedparser fail-fast, le run skip le mauvais feed et continue.
+2. `launcher/run_vps.sh` : `timeout --signal=KILL 1500 python3 worker/main.py` (25 min < cron 30 min) → auto-guérison, le lock ne peut plus être tenu indéfiniment.
+
+**Fix UI (commit `9e63a9c`)** : `DashboardClient.recentEvents` — si < 5 events dans les 48h, fallback sur les 30 events les plus récents → "Live activity" jamais vide même si le pipeline ralentit (label "Nd ago" reste honnête).
+
+### F. À surveiller
+
+- La rotation cursor (commit antérieur) fonctionne : le run du 22/05 a enfin visité Reddit r/MutualAid, WHO FR, The Local DE/IT/ES, Mongabay Brasil — sources jamais atteintes avant.
+- Vérifier au prochain cron `*/30` que le pipeline tourne bien avec les garde-fous (plus de SKIP en chaîne).
+- Le lockfile `/tmp/carbon-worker.lock` (fichier vide) persiste après run — normal, flock libère le verrou à la mort du process, le fichier reste.
+
+---
+
 ## 🚰 2026-05-14 (après-midi) — Review queue drainage + Sentinel softening
 
 Session déclenchée par Cyril : *"j'en suis à 210 events en pending, je ne peux pas traiter toutes les demandes, c'est pour ça qu'on crée des agents et moi je dois faire le boulot d'un agent ça n'a pas de sens"*.
