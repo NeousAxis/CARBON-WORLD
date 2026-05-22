@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-22T11:05:42.592038+00:00",
-  "total_events": 1116,
+  "generated_at": "2026-05-22T11:36:55.737400+00:00",
+  "total_events": 1117,
   "total_burned": 1532965870,
-  "total_minted": 1573755750,
-  "pending_reviews": 1,
+  "total_minted": 1573905750,
+  "pending_reviews": 2,
   "events": [
+    {
+      "id": 1117,
+      "event_title": "Remigration: Why Austrian far-right leader is under fire over 'mass deportation' rhetoric",
+      "event_url": "https://www.thelocal.at/20260522/remigration-why-austrian-far-right-leader-is-under-fire-over-mass-deportation-rhetoric",
+      "event_source": "The Local Austria (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.4,
+      "confidence": 8,
+      "justification": "Far-right rhetoric promoting mass deportation violates human rights and undermines social cohesion. | The use of 'remigration' rhetoric by a far-right political leader in Austria undermines human rights and promotes discriminatory policies, violating principles of equality and non-discrimination.",
+      "tx_hash": "3nzQ1pnUbkmZiSZoyjmoKwTQDQWkFr7H5k6JujU7yKvVPkPY9hR4KyNgCpm9UYyawhj9kjbGNvcfaweiX9f1nmY5",
+      "created_at": "2026-05-22T11:36:54.176528+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Austria",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Use of 'remigration' rhetoric by Austrian far-right leader promotes mass deportation of migrants.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"UDHR Article 7\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1116,
       "event_title": "Swedish government exempts 27 jobs from work permit salary threshold",
@@ -24603,14 +24625,14 @@
         "total_amount": 25000000
       },
       {
-        "country": "Spain",
-        "count": 4,
-        "total_amount": 16770000
-      },
-      {
         "country": "United Kingdom",
         "count": 4,
         "total_amount": 17700000
+      },
+      {
+        "country": "Spain",
+        "count": 3,
+        "total_amount": 15500000
       }
     ],
     "top_regions_sustainable": [
@@ -24621,13 +24643,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.512,
+        "burn_ratio": 0.488,
         "events": 41
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.462,
-        "events": 13
+        "burn_ratio": 0.417,
+        "events": 12
       },
       {
         "region": "Africa",
@@ -24663,8 +24685,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.538,
-        "events": 13
+        "mint_ratio": 0.583,
+        "events": 12
       }
     ],
     "supply_trend_7d": [
@@ -24700,7 +24722,7 @@
       },
       {
         "date": "2026-05-22",
-        "net_minted": 63545000,
+        "net_minted": 63695000,
         "net_burned": 43600000
       }
     ],
@@ -24717,7 +24739,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 70,
+        "positive": 65,
         "negative": 111,
         "event_ids_positive": [
           1115,
@@ -24784,14 +24806,10 @@
           897,
           892,
           890,
-          889,
-          887,
-          885,
-          883,
-          882,
-          881
+          889
         ],
         "event_ids_negative": [
+          1117,
           1116,
           1114,
           1111,
@@ -24901,13 +24919,12 @@
           901,
           900,
           896,
-          891,
-          886
+          891
         ]
       },
       "UDHR": {
-        "positive": 29,
-        "negative": 78,
+        "positive": 28,
+        "negative": 79,
         "event_ids_positive": [
           1097,
           1064,
@@ -24936,10 +24953,10 @@
           899,
           897,
           892,
-          889,
-          883
+          889
         ],
         "event_ids_negative": [
+          1117,
           1116,
           1114,
           1110,
@@ -25063,7 +25080,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 17,
+        "positive": 14,
         "negative": 21,
         "event_ids_positive": [
           1105,
@@ -25079,10 +25096,7 @@
           964,
           960,
           920,
-          914,
-          887,
-          885,
-          883
+          914
         ],
         "event_ids_negative": [
           1107,
@@ -25152,8 +25166,8 @@
         ]
       },
       "PB": {
-        "positive": 32,
-        "negative": 34,
+        "positive": 30,
+        "negative": 33,
         "event_ids_positive": [
           1115,
           1109,
@@ -25184,9 +25198,7 @@
           915,
           907,
           904,
-          898,
-          887,
-          881
+          898
         ],
         "event_ids_negative": [
           1111,
@@ -25221,21 +25233,20 @@
           918,
           911,
           905,
-          903,
-          886
+          903
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 86.7,
-      "mainstream_pct": 13.3,
-      "total_sources_used": 105,
-      "articles_processed": 226
+      "niche_pct": 86.4,
+      "mainstream_pct": 13.6,
+      "total_sources_used": 103,
+      "articles_processed": 220
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 226,
-      "pct": 0.4
+      "total_events": 220,
+      "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -25307,9 +25318,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 41,
-        "burn_count": 18,
-        "mint_count": 23,
+        "count": 39,
+        "burn_count": 17,
+        "mint_count": 22,
         "event_ids": [
           1115,
           1114,
@@ -25349,16 +25360,14 @@
           907,
           903,
           902,
-          891,
-          886,
-          881
+          891
         ]
       },
       {
         "name": "Construction",
-        "count": 22,
+        "count": 21,
         "burn_count": 6,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           1102,
           1098,
@@ -25380,30 +25389,7 @@
           942,
           937,
           936,
-          916,
-          886
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 14,
-        "burn_count": 7,
-        "mint_count": 7,
-        "event_ids": [
-          1099,
-          1087,
-          1029,
-          1014,
-          996,
-          991,
-          976,
-          962,
-          955,
-          933,
-          898,
-          892,
-          890,
-          885
+          916
         ]
       },
       {
@@ -25425,6 +25411,27 @@
           914,
           899,
           896
+        ]
+      },
+      {
+        "name": "Water",
+        "count": 13,
+        "burn_count": 6,
+        "mint_count": 7,
+        "event_ids": [
+          1099,
+          1087,
+          1029,
+          1014,
+          996,
+          991,
+          976,
+          962,
+          955,
+          933,
+          898,
+          892,
+          890
         ]
       },
       {
@@ -25495,18 +25502,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 87,
+      "total_burn": 82,
       "direct_action": {
-        "count": 68,
-        "pct": 78.2
+        "count": 63,
+        "pct": 76.8
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 2.3
+        "pct": 2.4
       },
       "untyped": {
         "count": 17,
-        "pct": 19.5
+        "pct": 20.7
       }
     },
     "burn_composition_all_time": {
@@ -25525,25 +25532,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 139,
+      "total_mint": 138,
       "direct_action": {
         "count": 97,
-        "pct": 69.8
+        "pct": 70.3
       },
       "editorial_alarm": {
         "count": 14,
         "pct": 10.1
       },
       "untyped": {
-        "count": 28,
-        "pct": 20.1
+        "count": 27,
+        "pct": 19.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 762,
+      "total_mint": 763,
       "direct_action": {
-        "count": 501,
-        "pct": 65.7
+        "count": 502,
+        "pct": 65.8
       },
       "editorial_alarm": {
         "count": 55,
@@ -25555,9 +25562,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 90,
-      "institutional": 136,
-      "citizen_ratio": 0.398,
+      "citizen": 85,
+      "institutional": 135,
+      "citizen_ratio": 0.386,
       "daily": [
         {
           "date": "2026-05-16",
@@ -25592,7 +25599,7 @@
         {
           "date": "2026-05-22",
           "citizen": 17,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -25680,14 +25687,10 @@
         899,
         898,
         897,
-        894,
-        887,
-        885,
-        884,
-        883,
-        882
+        894
       ],
       "event_ids_institutional": [
+        1117,
         1116,
         1115,
         1114,
@@ -25821,9 +25824,7 @@
         891,
         890,
         889,
-        888,
-        886,
-        881
+        888
       ]
     }
   }
