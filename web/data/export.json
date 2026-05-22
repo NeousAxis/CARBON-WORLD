@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-22T19:05:44.802521+00:00",
-  "total_events": 1156,
+  "generated_at": "2026-05-22T19:34:53.377557+00:00",
+  "total_events": 1158,
   "total_burned": 1614165870,
-  "total_minted": 1609180750,
+  "total_minted": 1614330750,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 1158,
+      "event_title": "In Switzerland and Europe, Meta, TikTok, and Google Accused of Complicity in Fraud via Massive Spread of Deceptive Ads",
+      "event_url": "https://www.letemps.ch/articles/en-suisse-et-en-europe-meta-tiktok-et-google-sont-accuses-de-complicite-d-escroquerie-via-la-diffusion-massive-de-publicites-trompeuses",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -3.02,
+      "confidence": 8,
+      "justification": "Platforms' systemic failure to address deceptive ads enables mass consumer fraud, outweighing consumer advocacy efforts. | The exposure of deceptive advertising practices by consumer unions is a positive act of accountability and awareness-raising, aligning with consumer protection and human rights frameworks. However, the platforms' systemic failure to address these violations—enabling financial fraud at scale—constitutes a severe ethical breach with massive consumer harm. The net judgment is n",
+      "tx_hash": "4HupZaUq3k3cxkK331rV5K7i2WyWx4v5zUgu4eAC9HoDhkSm8nT31gvLSH2mj9FL2wCKMC3dEmz7h5fda4Z54Uw6",
+      "created_at": "2026-05-22T19:34:51.926965+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"European consumer unions (BEUC and FRC) publicly exposed and condemned deceptive advertising practices on major platforms, demanding regulatory action\", \"affected_sdgs\": [12, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Publication of an investigative report documenting 900 deceptive ads and platform inaction, raising awareness of consumer rights violations\", \"affected_sdgs\": [12, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Meta, TikTok, and Google failed to adequately remove or address 73% of reported deceptive ads, enabling financial fraud and consumer harm across Europe\", \"affected_sdgs\": [12, 16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 29\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Platforms' systemic inaction (53% of reports ignored/rejected) demonstrates complicity in widespread consumer deception affecting over 200 million Europeans monthly\", \"affected_sdgs\": [12, 16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 29\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1157,
+      "event_title": "Leaving Home: She left after the fire; a Chilean community’s struggle to stay",
+      "event_url": "https://dialogue.earth/en/forests/she-left-after-the-fire-a-chilean-communitys-struggle-to-stay/",
+      "event_source": "China Dialogue",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | The institutional failure to prevent forest fires and protect communities constitutes harm, warranting a BURN.",
+      "tx_hash": null,
+      "created_at": "2026-05-22T19:17:02.332825+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1156,
       "event_title": "A pathway to work",
@@ -25456,14 +25500,14 @@
         "total_amount": 37200000
       },
       {
+        "country": "Switzerland",
+        "count": 4,
+        "total_amount": 6800000
+      },
+      {
         "country": "South Africa",
         "count": 4,
         "total_amount": 15100000
-      },
-      {
-        "country": "France",
-        "count": 4,
-        "total_amount": 3020000
       }
     ],
     "top_countries_burn": [
@@ -25501,8 +25545,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.463,
-        "events": 41
+        "burn_ratio": 0.452,
+        "events": 42
       },
       {
         "region": "Latin America",
@@ -25580,7 +25624,7 @@
       },
       {
         "date": "2026-05-22",
-        "net_minted": 94645000,
+        "net_minted": 99645000,
         "net_burned": 118600000
       }
     ],
@@ -25598,7 +25642,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 62,
-        "negative": 109,
+        "negative": 110,
         "event_ids_positive": [
           1156,
           1154,
@@ -25664,6 +25708,7 @@
           934
         ],
         "event_ids_negative": [
+          1158,
           1155,
           1153,
           1148,
@@ -25777,7 +25822,7 @@
       },
       "UDHR": {
         "positive": 27,
-        "negative": 74,
+        "negative": 75,
         "event_ids_positive": [
           1156,
           1151,
@@ -25808,6 +25853,7 @@
           942
         ],
         "event_ids_negative": [
+          1158,
           1148,
           1144,
           1142,
@@ -26085,14 +26131,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 87.9,
-      "mainstream_pct": 12.1,
+      "niche_pct": 86.9,
+      "mainstream_pct": 13.1,
       "total_sources_used": 99,
-      "articles_processed": 204
+      "articles_processed": 205
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 204,
+      "total_events": 205,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -26235,6 +26281,28 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 14,
+        "burn_count": 6,
+        "mint_count": 8,
+        "event_ids": [
+          1158,
+          1148,
+          1121,
+          1118,
+          1078,
+          1062,
+          1031,
+          1009,
+          1004,
+          991,
+          981,
+          964,
+          958,
+          936
+        ]
+      },
+      {
         "name": "Defense",
         "count": 14,
         "burn_count": 0,
@@ -26257,24 +26325,21 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 13,
-        "burn_count": 6,
+        "name": "Finance",
+        "count": 10,
+        "burn_count": 3,
         "mint_count": 7,
         "event_ids": [
-          1148,
-          1121,
-          1118,
-          1078,
-          1062,
-          1031,
-          1009,
-          1004,
-          991,
-          981,
-          964,
-          958,
-          936
+          1158,
+          1144,
+          1099,
+          1064,
+          1060,
+          1049,
+          1047,
+          1022,
+          961,
+          955
         ]
       },
       {
@@ -26293,23 +26358,6 @@
           962,
           955,
           933
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 9,
-        "burn_count": 3,
-        "mint_count": 6,
-        "event_ids": [
-          1144,
-          1099,
-          1064,
-          1060,
-          1049,
-          1047,
-          1022,
-          961,
-          955
         ]
       },
       {
@@ -26373,10 +26421,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 128,
+      "total_mint": 129,
       "direct_action": {
-        "count": 95,
-        "pct": 74.2
+        "count": 96,
+        "pct": 74.4
       },
       "editorial_alarm": {
         "count": 14,
@@ -26384,13 +26432,13 @@
       },
       "untyped": {
         "count": 19,
-        "pct": 14.8
+        "pct": 14.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 777,
+      "total_mint": 778,
       "direct_action": {
-        "count": 514,
+        "count": 515,
         "pct": 66.2
       },
       "editorial_alarm": {
@@ -26404,8 +26452,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 122,
-      "citizen_ratio": 0.402,
+      "institutional": 123,
+      "citizen_ratio": 0.4,
       "daily": [
         {
           "date": "2026-05-16",
@@ -26440,7 +26488,7 @@
         {
           "date": "2026-05-22",
           "citizen": 31,
-          "institutional": 30
+          "institutional": 31
         }
       ],
       "event_ids_citizen": [
@@ -26528,6 +26576,7 @@
         933
       ],
       "event_ids_institutional": [
+        1158,
         1155,
         1154,
         1144,
