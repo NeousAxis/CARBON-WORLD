@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-22T10:35:02.461820+00:00",
-  "total_events": 1115,
+  "generated_at": "2026-05-22T11:05:42.592038+00:00",
+  "total_events": 1116,
   "total_burned": 1532965870,
-  "total_minted": 1573605750,
+  "total_minted": 1573755750,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 1116,
+      "event_title": "Swedish government exempts 27 jobs from work permit salary threshold",
+      "event_url": "https://www.thelocal.se/20260522/swedish-government-exempts-27-professions-from-work-permit-salary-threshold",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.0,
+      "confidence": 7,
+      "justification": "Restrictive migration policy undermines labor rights and reduces economic inclusivity. | The Swedish government's decision to exempt only 27 professions from a higher work permit salary threshold prioritizes restrictive migration policy over labor market inclusivity. While it may align with short-term economic caution, it risks undermining decent work opportunities and reducing inequalities by limiting skilled migrant access to the labor market.",
+      "tx_hash": "4KVVgDbTU4QQCCQPthZX1BF4QRtJcbHgnzGPrM9Nicz5dkNTQQne4nAJytcpsyc2M28Sj6eJULyhLS5abKDAodhb",
+      "created_at": "2026-05-22T11:05:41.078707+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Government maintains a restrictive but selective exemption list for work permit salary thresholds, potentially balancing labor market needs with migration control\", \"affected_sdgs\": [8, 10], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Exempting only 27 professions from a higher salary threshold for work permits may restrict labor market access for skilled migrants, undermining SDG 8 (Decent Work) and SDG 10 (Reduced Inequalities)\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1115,
       "event_title": "SAEL commissions 600MW solar projects in Andhra Pradesh, India",
@@ -24540,8 +24562,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 35,
-        "total_amount": 72235000
+        "count": 34,
+        "total_amount": 72085000
       },
       {
         "country": "Brazil",
@@ -24559,9 +24581,9 @@
         "total_amount": 1670000
       },
       {
-        "country": "India",
+        "country": "Ukraine",
         "count": 4,
-        "total_amount": 15400000
+        "total_amount": 5425000
       }
     ],
     "top_countries_burn": [
@@ -24594,12 +24616,12 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.571,
-        "events": 14
+        "burn_ratio": 0.615,
+        "events": 13
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.537,
+        "burn_ratio": 0.512,
         "events": 41
       },
       {
@@ -24614,8 +24636,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.224,
-        "events": 49
+        "burn_ratio": 0.229,
+        "events": 48
       }
     ],
     "top_regions_destructive": [
@@ -24626,13 +24648,13 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.857,
-        "events": 7
+        "mint_ratio": 0.833,
+        "events": 6
       },
       {
         "region": "North America",
-        "mint_ratio": 0.776,
-        "events": 49
+        "mint_ratio": 0.771,
+        "events": 48
       },
       {
         "region": "Africa",
@@ -24678,7 +24700,7 @@
       },
       {
         "date": "2026-05-22",
-        "net_minted": 63395000,
+        "net_minted": 63545000,
         "net_burned": 43600000
       }
     ],
@@ -24695,8 +24717,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 71,
-        "negative": 113,
+        "positive": 70,
+        "negative": 111,
         "event_ids_positive": [
           1115,
           1109,
@@ -24767,10 +24789,10 @@
           885,
           883,
           882,
-          881,
-          880
+          881
         ],
         "event_ids_negative": [
+          1116,
           1114,
           1111,
           1110,
@@ -24880,15 +24902,12 @@
           900,
           896,
           891,
-          886,
-          879,
-          878,
-          877
+          886
         ]
       },
       "UDHR": {
-        "positive": 30,
-        "negative": 80,
+        "positive": 29,
+        "negative": 78,
         "event_ids_positive": [
           1097,
           1064,
@@ -24918,10 +24937,10 @@
           897,
           892,
           889,
-          883,
-          880
+          883
         ],
         "event_ids_negative": [
+          1116,
           1114,
           1110,
           1107,
@@ -24998,10 +25017,7 @@
           903,
           900,
           896,
-          891,
-          879,
-          878,
-          877
+          891
         ]
       },
       "ILO": {
@@ -25094,7 +25110,7 @@
       },
       "Animal": {
         "positive": 20,
-        "negative": 16,
+        "negative": 15,
         "event_ids_positive": [
           1109,
           1085,
@@ -25132,13 +25148,12 @@
           963,
           905,
           903,
-          901,
-          878
+          901
         ]
       },
       "PB": {
         "positive": 32,
-        "negative": 35,
+        "negative": 34,
         "event_ids_positive": [
           1115,
           1109,
@@ -25207,20 +25222,19 @@
           911,
           905,
           903,
-          886,
-          878
+          886
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 84.8,
-      "mainstream_pct": 15.2,
+      "niche_pct": 86.7,
+      "mainstream_pct": 13.3,
       "total_sources_used": 105,
-      "articles_processed": 229
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 229,
+      "total_events": 226,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -25293,9 +25307,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 43,
+        "count": 41,
         "burn_count": 18,
-        "mint_count": 25,
+        "mint_count": 23,
         "event_ids": [
           1115,
           1114,
@@ -25337,16 +25351,14 @@
           902,
           891,
           886,
-          881,
-          879,
-          877
+          881
         ]
       },
       {
         "name": "Construction",
-        "count": 23,
+        "count": 22,
         "burn_count": 6,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           1102,
           1098,
@@ -25369,30 +25381,7 @@
           937,
           936,
           916,
-          886,
-          878
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 14,
-        "burn_count": 6,
-        "mint_count": 8,
-        "event_ids": [
-          1099,
-          1064,
-          1060,
-          1049,
-          1047,
-          1022,
-          961,
-          955,
-          924,
-          917,
-          914,
-          899,
-          896,
-          879
+          886
         ]
       },
       {
@@ -25418,6 +25407,27 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 13,
+        "burn_count": 6,
+        "mint_count": 7,
+        "event_ids": [
+          1099,
+          1064,
+          1060,
+          1049,
+          1047,
+          1022,
+          961,
+          955,
+          924,
+          917,
+          914,
+          899,
+          896
+        ]
+      },
+      {
         "name": "Tech",
         "count": 12,
         "burn_count": 7,
@@ -25439,9 +25449,9 @@
       },
       {
         "name": "Defense",
-        "count": 12,
+        "count": 11,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           1075,
           1045,
@@ -25453,23 +25463,21 @@
           999,
           987,
           967,
-          937,
-          877
+          937
         ]
       },
       {
         "name": "Transport",
-        "count": 7,
+        "count": 6,
         "burn_count": 2,
-        "mint_count": 5,
+        "mint_count": 4,
         "event_ids": [
           1078,
           1042,
           1011,
           1008,
           970,
-          936,
-          877
+          936
         ]
       },
       {
@@ -25487,10 +25495,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 88,
+      "total_burn": 87,
       "direct_action": {
-        "count": 69,
-        "pct": 78.4
+        "count": 68,
+        "pct": 78.2
       },
       "editorial_consciousness": {
         "count": 2,
@@ -25498,7 +25506,7 @@
       },
       "untyped": {
         "count": 17,
-        "pct": 19.3
+        "pct": 19.5
       }
     },
     "burn_composition_all_time": {
@@ -25517,24 +25525,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 141,
+      "total_mint": 139,
       "direct_action": {
-        "count": 99,
-        "pct": 70.2
+        "count": 97,
+        "pct": 69.8
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 9.9
+        "pct": 10.1
       },
       "untyped": {
         "count": 28,
-        "pct": 19.9
+        "pct": 20.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 761,
+      "total_mint": 762,
       "direct_action": {
-        "count": 500,
+        "count": 501,
         "pct": 65.7
       },
       "editorial_alarm": {
@@ -25543,13 +25551,13 @@
       },
       "untyped": {
         "count": 206,
-        "pct": 27.1
+        "pct": 27.0
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 92,
-      "institutional": 137,
-      "citizen_ratio": 0.402,
+      "citizen": 90,
+      "institutional": 136,
+      "citizen_ratio": 0.398,
       "daily": [
         {
           "date": "2026-05-16",
@@ -25584,7 +25592,7 @@
         {
           "date": "2026-05-22",
           "citizen": 17,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -25677,11 +25685,10 @@
         885,
         884,
         883,
-        882,
-        880,
-        879
+        882
       ],
       "event_ids_institutional": [
+        1116,
         1115,
         1114,
         1111,
@@ -25816,9 +25823,7 @@
         889,
         888,
         886,
-        881,
-        878,
-        877
+        881
       ]
     }
   }
