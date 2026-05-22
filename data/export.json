@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-22T20:06:16.110655+00:00",
-  "total_events": 1163,
-  "total_burned": 1624165870,
-  "total_minted": 1617045750,
-  "pending_reviews": 4,
+  "generated_at": "2026-05-22T20:35:31.622791+00:00",
+  "total_events": 1165,
+  "total_burned": 1631165870,
+  "total_minted": 1617545750,
+  "pending_reviews": 3,
   "events": [
+    {
+      "id": 1165,
+      "event_title": "AI Used to Pinpoint Whale Heat Signatures to Prevent Ship Collisions in San Francisco Bay",
+      "event_url": "https://www.goodnewsnetwork.org/ai-employed-to-pinpoint-whale-heat-signatures-in-san-francisco-bay-to-prevent-ship-collisions/",
+      "event_source": "Good News Network",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.19,
+      "confidence": 8,
+      "justification": "AI-driven conservation action with measurable marine biodiversity protection | The deployment of AI technology to detect whale heat signatures in San Francisco Bay directly advances SDG 13 (Climate Action), SDG 14 (Life Below Water), and SDG 15 (Life on Land) by preventing ship-whale collisions. It aligns with the Universal Declaration of Animal Rights and planetary boundaries by reducing human-induced threats to marine biodiversity.",
+      "tx_hash": "3dzAPHKHC7WcCsyA5MkykrJPbdLSMS7i5PW2xAMDsn9Sc6pok33jNtKdQ4j945UA81kUrGv1gWFXYC3DwxYTiYM1",
+      "created_at": "2026-05-22T20:35:29.976846+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Scientists in California deploy AI heat-sensing technology to detect grey whale heat signatures in San Francisco Bay, reducing risk of ship collisions and protecting marine life\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1164,
+      "event_title": "Banned trap maims fox: A hobby hunter had to shoot the animal",
+      "event_url": "https://wildbeimwild.com/verbotene-falle-zerfetzt-fuchs-den-hinterlauf-ein-hobby-jaeger-musste-das-tier-erschiessen/",
+      "event_source": "Wild beim Wild",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | The illegal use of banned traps caused severe harm, violating animal rights and protections.",
+      "tx_hash": null,
+      "created_at": "2026-05-22T20:17:02.254877+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1163,
       "event_title": "US intelligence chief Tulsi Gabbard announces resignation",
@@ -25596,8 +25640,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 34,
-        "total_amount": 78640000
+        "count": 31,
+        "total_amount": 75490000
       },
       {
         "country": "Brazil",
@@ -25623,8 +25667,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 45500000
+        "count": 10,
+        "total_amount": 52500000
       },
       {
         "country": "France",
@@ -25655,8 +25699,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.465,
-        "events": 43
+        "burn_ratio": 0.476,
+        "events": 42
       },
       {
         "region": "Latin America",
@@ -25682,8 +25726,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.804,
-        "events": 46
+        "mint_ratio": 0.773,
+        "events": 44
       },
       {
         "region": "Africa",
@@ -25735,7 +25779,7 @@
       {
         "date": "2026-05-22",
         "net_minted": 102360000,
-        "net_burned": 128600000
+        "net_burned": 135600000
       }
     ],
     "event_of_the_day": {
@@ -25752,8 +25796,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 64,
-        "negative": 113,
+        "negative": 109,
         "event_ids_positive": [
+          1165,
           1161,
           1160,
           1156,
@@ -25816,8 +25861,7 @@
           960,
           947,
           943,
-          942,
-          934
+          942
         ],
         "event_ids_negative": [
           1163,
@@ -25928,16 +25972,12 @@
           940,
           939,
           938,
-          937,
-          936,
-          935,
-          933,
-          932
+          937
         ]
       },
       "UDHR": {
         "positive": 28,
-        "negative": 76,
+        "negative": 74,
         "event_ids_positive": [
           1161,
           1156,
@@ -26042,9 +26082,7 @@
           940,
           939,
           938,
-          937,
-          935,
-          932
+          937
         ]
       },
       "ILO": {
@@ -26136,9 +26174,10 @@
         ]
       },
       "Animal": {
-        "positive": 18,
+        "positive": 19,
         "negative": 14,
         "event_ids_positive": [
+          1165,
           1160,
           1152,
           1139,
@@ -26177,8 +26216,9 @@
       },
       "PB": {
         "positive": 30,
-        "negative": 36,
+        "negative": 35,
         "event_ids_positive": [
+          1165,
           1160,
           1154,
           1152,
@@ -26207,8 +26247,7 @@
           968,
           964,
           947,
-          943,
-          934
+          943
         ],
         "event_ids_negative": [
           1155,
@@ -26245,20 +26284,19 @@
           996,
           962,
           955,
-          941,
-          936
+          941
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 85.0,
-      "mainstream_pct": 15.0,
-      "total_sources_used": 100,
-      "articles_processed": 210
+      "niche_pct": 84.8,
+      "mainstream_pct": 15.2,
+      "total_sources_used": 99,
+      "articles_processed": 206
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 210,
+      "total_events": 206,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -26331,9 +26369,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 34,
+        "count": 33,
         "burn_count": 16,
-        "mint_count": 18,
+        "mint_count": 17,
         "event_ids": [
           1154,
           1153,
@@ -26367,15 +26405,14 @@
           943,
           942,
           941,
-          939,
-          936
+          939
         ]
       },
       {
         "name": "Construction",
-        "count": 22,
+        "count": 21,
         "burn_count": 7,
-        "mint_count": 15,
+        "mint_count": 14,
         "event_ids": [
           1161,
           1137,
@@ -26397,8 +26434,7 @@
           950,
           947,
           942,
-          937,
-          936
+          937
         ]
       },
       {
@@ -26427,9 +26463,10 @@
       {
         "name": "Tech",
         "count": 14,
-        "burn_count": 6,
-        "mint_count": 8,
+        "burn_count": 7,
+        "mint_count": 7,
         "event_ids": [
+          1165,
           1158,
           1148,
           1121,
@@ -26442,8 +26479,7 @@
           991,
           981,
           964,
-          958,
-          936
+          958
         ]
       },
       {
@@ -26468,9 +26504,9 @@
       },
       {
         "name": "Water",
-        "count": 11,
+        "count": 10,
         "burn_count": 4,
-        "mint_count": 7,
+        "mint_count": 6,
         "event_ids": [
           1160,
           1099,
@@ -26481,23 +26517,21 @@
           991,
           976,
           962,
-          955,
-          933
+          955
         ]
       },
       {
         "name": "Transport",
-        "count": 7,
+        "count": 6,
         "burn_count": 3,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           1154,
           1078,
           1042,
           1011,
           1008,
-          970,
-          936
+          970
         ]
       },
       {
@@ -26531,10 +26565,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 352,
+      "total_burn": 353,
       "direct_action": {
-        "count": 226,
-        "pct": 64.2
+        "count": 227,
+        "pct": 64.3
       },
       "editorial_consciousness": {
         "count": 22,
@@ -26546,18 +26580,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 132,
+      "total_mint": 128,
       "direct_action": {
-        "count": 99,
-        "pct": 75.0
+        "count": 95,
+        "pct": 74.2
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 10.6
+        "pct": 10.9
       },
       "untyped": {
         "count": 19,
-        "pct": 14.4
+        "pct": 14.8
       }
     },
     "mint_composition_all_time": {
@@ -26577,8 +26611,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 84,
-      "institutional": 126,
-      "citizen_ratio": 0.4,
+      "institutional": 122,
+      "citizen_ratio": 0.408,
       "daily": [
         {
           "date": "2026-05-16",
@@ -26612,11 +26646,12 @@
         },
         {
           "date": "2026-05-22",
-          "citizen": 33,
+          "citizen": 34,
           "institutional": 34
         }
       ],
       "event_ids_citizen": [
+        1165,
         1160,
         1159,
         1156,
@@ -26699,8 +26734,7 @@
         942,
         941,
         940,
-        939,
-        933
+        939
       ],
       "event_ids_institutional": [
         1163,
@@ -26824,11 +26858,7 @@
         946,
         943,
         938,
-        937,
-        936,
-        935,
-        934,
-        932
+        937
       ]
     }
   }
