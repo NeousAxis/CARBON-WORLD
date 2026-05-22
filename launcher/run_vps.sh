@@ -39,8 +39,14 @@ if [ "$BEFORE" != "$AFTER" ]; then
   fi
 fi
 
-# Run pipeline
-python3 worker/main.py
+# Run pipeline — hard wall-clock cap so a hung network call can never hold
+# the flock forever. On 2026-05-18 a feedparser fetch with no socket timeout
+# froze the run for 4 days; every subsequent cron SKIP'd on the held lock and
+# the dashboard went stale. 25 min < the 30 min cron interval, and a healthy
+# run is ~3-15 min, so this only fires on a genuine hang.
+if ! timeout --signal=KILL 1500 python3 worker/main.py; then
+  echo "=== WARNING: pipeline timed out (>25 min) or exited non-zero at $(date -Iseconds) ==="
+fi
 
 # Commit and push updated exports if changed
 if git diff --quiet -- data/export.json web/data/export.json web/data/review_queue.json; then

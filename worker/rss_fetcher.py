@@ -9,6 +9,7 @@ Strategy:
 """
 
 import logging
+import socket
 from typing import Optional
 
 import feedparser
@@ -17,6 +18,16 @@ import requests
 from config import MAX_ARTICLES_PER_RUN, MAX_PER_SOURCE_PER_RUN
 
 logger = logging.getLogger(__name__)
+
+# feedparser.parse() uses urllib under the hood with NO socket timeout, so a
+# server that accepts the TCP connection but never sends a response makes the
+# call block forever — this froze the whole pipeline for 4 days on 2026-05-18
+# (one bad RSS source held the cron flock, every subsequent run SKIP'd).
+# A global default socket timeout makes every urllib (and thus feedparser)
+# network operation fail fast instead of hanging. The per-source try/except
+# in _fetch_single_source then just skips that feed and the run continues.
+_SOCKET_TIMEOUT_S = 20
+socket.setdefaulttimeout(_SOCKET_TIMEOUT_S)
 
 RSS_SOURCES: list[dict] = [
     # International / Multilateral
