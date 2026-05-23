@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-23T11:35:43.825168+00:00",
-  "total_events": 1202,
-  "total_burned": 1689665870,
-  "total_minted": 1648225750,
+  "generated_at": "2026-05-23T12:06:29.262738+00:00",
+  "total_events": 1204,
+  "total_burned": 1691165870,
+  "total_minted": 1648375750,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 1204,
+      "event_title": "Whale strike risk rises as shipping surges off SA coast",
+      "event_url": "https://mg.co.za/the-green-guardian/2026-05-23-whale-strike-risk-rises-as-shipping-surges-off-sa-coast/",
+      "event_source": "Mail & Guardian (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.54,
+      "confidence": 7,
+      "justification": "Increased shipping traffic raises whale strike risk, undermining marine conservation and SDG 14. | The surge in shipping traffic near South Africa's coast increases the risk of whale strikes, which threatens marine biodiversity and ecosystem integrity. This undermines conservation efforts and the protection of marine life, aligning with negative impacts on SDG 14 and planetary boundaries.",
+      "tx_hash": "NrQ2gN6tXQBFa4Jf9E3F9UgXTpZSXSLbB2W8qjLNjXn18K75cKtjygNzh8A78uwNYBxaAyJepdFXbCGoBo9at9X",
+      "created_at": "2026-05-23T12:06:27.926927+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Increased shipping traffic raises risk of whale strikes, threatening marine biodiversity and ecosystem health.\", \"affected_sdgs\": [14, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1203,
+      "event_title": "Above an Australian Highway, a Bridge reconnects wilderness for Quolls, Koalas and other animals",
+      "event_url": "https://www.reddit.com/r/conservation/comments/1tldny4/above_an_australian_highway_a_bridge_reconnects/",
+      "event_source": "Reddit r/conservation",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 6.23,
+      "confidence": 8,
+      "justification": "Wildlife overpass restores critical habitat connectivity with measurable ecological benefits. | The construction of a wildlife overpass bridge directly addresses habitat fragmentation and biodiversity loss, aligning with SDGs 11, 13, and 15. It represents a concrete, institutional action to mitigate human-wildlife conflict and restore ecological connectivity, with measurable benefits for multiple species. No significant negative aspects are identified.",
+      "tx_hash": "4JDiawcZS7wC4wL7vcUP4UJ4aBEJk9zE2QCD4DJNjcRq5sf6wo7cU6zVZLB6SbR3qRktVNDqRMnZ1SxqcFj7BXRr",
+      "created_at": "2026-05-23T12:06:27.784998+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Construction of a wildlife overpass bridge above an Australian highway to reconnect fragmented habitats for quolls, koalas, and other wildlife\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Institutional action by a government or conservation authority to fund and implement wildlife infrastructure\", \"affected_sdgs\": [11, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 1202,
       "event_title": "Senegal’s President Faye sacks PM Sonko and dissolves government",
@@ -26463,6 +26507,11 @@
         "total_amount": 21160000
       },
       {
+        "country": "South Africa",
+        "count": 5,
+        "total_amount": 15250000
+      },
+      {
         "country": "Israel",
         "count": 5,
         "total_amount": 30200000
@@ -26471,11 +26520,6 @@
         "country": "Senegal",
         "count": 4,
         "total_amount": 1050000
-      },
-      {
-        "country": "Turkey",
-        "count": 4,
-        "total_amount": 14950000
       }
     ],
     "top_countries_burn": [
@@ -26501,15 +26545,15 @@
       },
       {
         "country": "Australia",
-        "count": 2,
-        "total_amount": 10000000
+        "count": 3,
+        "total_amount": 11500000
       }
     ],
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.571,
-        "events": 7
+        "burn_ratio": 0.625,
+        "events": 8
       },
       {
         "region": "Asia",
@@ -26540,8 +26584,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.8,
-        "events": 15
+        "mint_ratio": 0.812,
+        "events": 16
       },
       {
         "region": "Latin America",
@@ -26592,8 +26636,8 @@
       },
       {
         "date": "2026-05-23",
-        "net_minted": 25700000,
-        "net_burned": 39500000
+        "net_minted": 25850000,
+        "net_burned": 41000000
       }
     ],
     "event_of_the_day": {
@@ -26609,9 +26653,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 66,
+        "positive": 67,
         "negative": 114,
         "event_ids_positive": [
+          1203,
           1201,
           1196,
           1190,
@@ -26680,6 +26725,7 @@
           979
         ],
         "event_ids_negative": [
+          1204,
           1202,
           1200,
           1199,
@@ -26792,13 +26838,12 @@
           984,
           977,
           976,
-          975,
-          974
+          975
         ]
       },
       "UDHR": {
         "positive": 28,
-        "negative": 77,
+        "negative": 76,
         "event_ids_positive": [
           1196,
           1185,
@@ -26905,8 +26950,7 @@
           987,
           984,
           977,
-          975,
-          974
+          975
         ]
       },
       "ILO": {
@@ -26994,9 +27038,10 @@
         ]
       },
       "Animal": {
-        "positive": 19,
-        "negative": 15,
+        "positive": 20,
+        "negative": 16,
         "event_ids_positive": [
+          1203,
           1165,
           1160,
           1152,
@@ -27018,6 +27063,7 @@
           988
         ],
         "event_ids_negative": [
+          1204,
           1200,
           1191,
           1159,
@@ -27036,9 +27082,10 @@
         ]
       },
       "PB": {
-        "positive": 33,
-        "negative": 41,
+        "positive": 34,
+        "negative": 42,
         "event_ids_positive": [
+          1203,
           1190,
           1189,
           1185,
@@ -27074,6 +27121,7 @@
           979
         ],
         "event_ids_negative": [
+          1204,
           1200,
           1197,
           1191,
@@ -27122,11 +27170,11 @@
       "niche_pct": 88.1,
       "mainstream_pct": 11.9,
       "total_sources_used": 109,
-      "articles_processed": 224
+      "articles_processed": 225
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 224,
+      "total_events": 225,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -27253,10 +27301,11 @@
       },
       {
         "name": "Construction",
-        "count": 18,
-        "burn_count": 7,
+        "count": 19,
+        "burn_count": 8,
         "mint_count": 11,
         "event_ids": [
+          1203,
           1190,
           1185,
           1169,
@@ -27378,10 +27427,11 @@
       },
       {
         "name": "Transport",
-        "count": 6,
-        "burn_count": 3,
+        "count": 7,
+        "burn_count": 4,
         "mint_count": 3,
         "event_ids": [
+          1203,
           1169,
           1154,
           1078,
@@ -27392,24 +27442,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 77,
+      "total_burn": 78,
       "direct_action": {
-        "count": 63,
-        "pct": 81.8
+        "count": 64,
+        "pct": 82.1
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 3.9
+        "pct": 3.8
       },
       "untyped": {
         "count": 11,
-        "pct": 14.3
+        "pct": 14.1
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 367,
+      "total_burn": 368,
       "direct_action": {
-        "count": 238,
+        "count": 239,
         "pct": 64.9
       },
       "editorial_consciousness": {
@@ -27418,7 +27468,7 @@
       },
       "untyped": {
         "count": 107,
-        "pct": 29.2
+        "pct": 29.1
       }
     },
     "mint_composition_7d": {
@@ -27437,24 +27487,24 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 822,
+      "total_mint": 823,
       "direct_action": {
-        "count": 539,
+        "count": 540,
         "pct": 65.6
       },
       "editorial_alarm": {
         "count": 58,
-        "pct": 7.1
+        "pct": 7.0
       },
       "untyped": {
         "count": 225,
-        "pct": 27.4
+        "pct": 27.3
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 89,
-      "institutional": 135,
-      "citizen_ratio": 0.397,
+      "institutional": 136,
+      "citizen_ratio": 0.396,
       "daily": [
         {
           "date": "2026-05-17",
@@ -27489,7 +27539,7 @@
         {
           "date": "2026-05-23",
           "citizen": 8,
-          "institutional": 18
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
@@ -27584,6 +27634,8 @@
         978
       ],
       "event_ids_institutional": [
+        1204,
+        1203,
         1202,
         1199,
         1196,
@@ -27717,8 +27769,7 @@
         979,
         977,
         976,
-        975,
-        974
+        975
       ]
     }
   }
