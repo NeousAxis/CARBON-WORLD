@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T13:05:18.811896+00:00",
-  "total_pending": 8,
+  "generated_at": "2026-05-23T13:36:56.006063+00:00",
+  "total_pending": 9,
   "reviews": [
     {
       "id": 373,
@@ -158,6 +158,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T12:35:23.666328+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 400,
+      "event_title": "German Court Convicts Three Over Plot to Overthrow Government",
+      "event_url": "https://www.thelocal.de/20260523/german-court-convicts-three-over-plot-to-overthrow-govt",
+      "event_source": "The Local Germany (EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Conviction of individuals for plotting to overthrow the government\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Existence of an extremist group planning civil unrest and government overthrow\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 29\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The conviction of the three individuals represents a positive enforcement of the rule of law and protection of democratic governance. However, the existence of the extremist plot itself is a serious threat to peace and stability, violating fundamental rights and undermining SDG 16.\", \"snapshot_score\": 2.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Reassessment of the group's remaining influence\", \"Monitoring of related extremist activity in Germany\", \"Follow-up on the rehabilitation and reintegration of the convicted individuals\"], \"revaluation_checkpoint\": \"2030-05-23\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful dismantling of the extremist group and long-term stability in Germany\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate success in countering extremism, with residual threats remaining\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Escalation of extremist activity and potential civil unrest\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.85, \"final_score\": 1.39, \"decision\": \"BURN\", \"amount_cbwd\": 125000, \"confidence\": 8, \"justification\": \"Conviction of extremists supports democratic governance and rule of law.\", \"event_country\": \"Germany\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"German court convicts extremists for plotting to overthrow the government, upholding constitutional order and rule of law\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Extremist plot to provoke civil war and overthrow government, undermining democratic institutions and peace\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The court's conviction strengthens democratic governance and the rule of law, aligning with SDG 16 and UDHR principles. However, the underlying extremist plot represents a severe threat to societal stability and human rights, warranting strong judicial response. The net ethical judgment favors the conviction as a protective measure for democracy.\", \"snapshot_score\": 6.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1, \"revaluation_triggers\": [\"Reversal of convictions on appeal\", \"Emergence of new evidence challenging the verdict\", \"Escalation of extremist activity despite convictions\", \"Policy changes weakening judicial independence\"], \"revaluation_checkpoint\": \"2028-05-23\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Extremist threat dissipates, convictions upheld, strengthening democratic resilience\", \"probability\": 0.35, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate ongoing extremist activity, convictions upheld but new threats emerge\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Extremist movement grows, convictions overturned or undermined, democratic backsliding\", \"probability\": 0.15, \"score\": -7}], \"prospective_score\": 4.15, \"final_score\": 4.96, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Conviction upholds democracy but stems from severe extremist threat; net neutral impact.\", \"event_country\": \"Germany\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 0.78, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Institutional action punishes harm to democratic governance and upholds rule of law.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (conviction) as protective of democratic governance and rule of law, aligning with ethical frameworks. Analyst B's NEUTRAL stance misapplied net impact by overemphasizing the extremist threat rather than the corrective justice of the conviction.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-23T13:36:54.571725+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
