@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T02:35:10.124017+00:00",
-  "total_pending": 7,
+  "generated_at": "2026-05-23T03:06:26.738303+00:00",
+  "total_pending": 8,
   "reviews": [
     {
       "id": 373,
@@ -138,6 +138,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T02:35:08.402433+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 395,
+      "event_title": "New study shows cleaning up air pollution could weaken vital AMOC ocean current",
+      "event_url": "https://fediscience.org/@rahmstorf/116603558296661686",
+      "event_source": "Mastodon @rahmstorf (Prof. Stefan Rahmstorf)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The study highlights the importance of understanding the complex interactions between air pollution and climate systems, which supports informed climate policy.\", \"affected_sdgs\": [13, 14], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The study suggests that reducing air pollution could unintentionally weaken the AMOC, which could have negative consequences for global climate stability.\", \"affected_sdgs\": [13, 14], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The study reveals a potential unintended consequence of reducing air pollution, which could impact the AMOC and global climate stability. While the research supports climate science understanding (SDG 13, PB), it also raises concerns about the broader environmental impacts of pollution reduction.\", \"snapshot_score\": -1.0, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Publication of follow-up studies confirming or refuting the findings\", \"Implementation of new air pollution reduction policies\", \"Observation of AMOC changes over the next decade\"], \"revaluation_checkpoint\": \"2034-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where AMOC remains stable despite pollution reduction efforts.\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Realistic scenario where AMOC weakens slightly but remains within manageable limits.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where AMOC weakens significantly, leading to major climate disruptions.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -1.45, \"final_score\": -1.14, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Study suggests reducing air pollution could weaken AMOC, a critical climate system.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The study highlights the importance of understanding the complex interactions between air pollution and climate systems, which supports informed climate policy.\", \"affected_sdgs\": [13, 14], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The study suggests that reducing air pollution could unintentionally weaken the AMOC, which could have negative consequences for global climate stability.\", \"affected_sdgs\": [13, 14], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The study reveals a potential unintended consequence of reducing air pollution, which could impact the AMOC and global climate stability. While the research supports climate science understanding (SDG 13, PB), it also raises concerns about the broader environmental impacts of pollution reduction.\", \"snapshot_score\": -1.0, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Publication of follow-up studies confirming or refuting the findings\", \"Implementation of new air pollution reduction policies\", \"Observation of AMOC changes over the next decade\"], \"revaluation_checkpoint\": \"2034-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where AMOC remains stable despite pollution reduction efforts.\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Realistic scenario where AMOC weakens slightly but remains within manageable limits.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where AMOC weakens significantly, leading to major climate disruptions.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -1.45, \"final_score\": -1.14, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Study suggests reducing air pollution could weaken AMOC, a critical climate system.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.14, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Study suggests reducing air pollution could weaken AMOC, a critical climate system.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: cleaning up air pollution is generally positive (BURN), but verdict is MINT despite article reporting a potential downside.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-23T03:06:24.986837+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
