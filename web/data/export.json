@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-23T16:05:33.959549+00:00",
-  "total_events": 1211,
+  "generated_at": "2026-05-23T16:36:06.684120+00:00",
+  "total_events": 1213,
   "total_burned": 1713165870,
-  "total_minted": 1648740750,
+  "total_minted": 1649040750,
   "pending_reviews": 11,
   "events": [
+    {
+      "id": 1213,
+      "event_title": "In Senegal, President Bassirou Diomaye Faye Dismisses Longtime Ally Ousmane Sonko, Plunging Country into Political Instability",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/23/au-senegal-le-president-bassirou-diomaye-faye-limoge-son-allie-de-toujours-ousmane-sonko-et-plonge-le-pays-dans-l-instabilite-politique_6692773_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.26,
+      "confidence": 7,
+      "justification": "Political instability and democratic erosion outweigh potential institutional benefits. | The dismissal of Ousmane Sonko by President Faye reflects institutional accountability but simultaneously risks destabilizing Senegal's political landscape. While the action may align with constitutional processes, the immediate consequence of political instability undermines democratic governance and social cohesion, creating a net negative ethical outcome.",
+      "tx_hash": "59W6ddFFGsNc8pLXSy2wLobNVPPvRjhEiAW6g2jQCfJajnwAswS6b7yL4JGot4UMtnMAtFAVJrXo4pcrdfxU5BLY",
+      "created_at": "2026-05-23T16:36:05.477081+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Senegal",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Senegalese President Bassirou Diomaye Faye dismisses longtime ally Ousmane Sonko, demonstrating institutional accountability and adherence to constitutional processes in political leadership transitions.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Dismissal of a key political ally plunges Senegal into political instability, risking governance disruptions, social unrest, and potential erosion of democratic norms.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1212,
+      "event_title": "EU reportedly nixes UK pitch for single market in goods",
+      "event_url": "https://www.politico.eu/article/eu-rejects-uk-single-market-proposal-trade-talks-brexit-relations/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | EU's rejection of UK proposal undermines economic cooperation and trade integration, enabling harm to sustainable development.",
+      "tx_hash": null,
+      "created_at": "2026-05-23T16:17:02.020475+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1211,
       "event_title": "British Army mounts massive gun on tiny truck for a speedy punch",
@@ -26661,6 +26705,11 @@
         "total_amount": 21160000
       },
       {
+        "country": "Senegal",
+        "count": 5,
+        "total_amount": 1200000
+      },
+      {
         "country": "France",
         "count": 5,
         "total_amount": 3145000
@@ -26669,18 +26718,13 @@
         "country": "South Africa",
         "count": 5,
         "total_amount": 15250000
-      },
-      {
-        "country": "Senegal",
-        "count": 4,
-        "total_amount": 1050000
       }
     ],
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 13,
-        "total_amount": 71500000
+        "count": 12,
+        "total_amount": 66500000
       },
       {
         "country": "France",
@@ -26721,8 +26765,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.342,
-        "events": 38
+        "burn_ratio": 0.324,
+        "events": 37
       },
       {
         "region": "Latin America",
@@ -26738,8 +26782,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.812,
-        "events": 16
+        "mint_ratio": 0.824,
+        "events": 17
       },
       {
         "region": "Latin America",
@@ -26748,8 +26792,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.658,
-        "events": 38
+        "mint_ratio": 0.676,
+        "events": 37
       },
       {
         "region": "Europe",
@@ -26790,7 +26834,7 @@
       },
       {
         "date": "2026-05-23",
-        "net_minted": 26095000,
+        "net_minted": 26245000,
         "net_burned": 63000000
       }
     ],
@@ -26807,8 +26851,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 70,
-        "negative": 113,
+        "positive": 69,
+        "negative": 114,
         "event_ids_positive": [
           1209,
           1208,
@@ -26878,10 +26922,10 @@
           1003,
           991,
           990,
-          988,
-          983
+          988
         ],
         "event_ids_negative": [
+          1213,
           1211,
           1210,
           1204,
@@ -26998,8 +27042,8 @@
         ]
       },
       "UDHR": {
-        "positive": 30,
-        "negative": 74,
+        "positive": 29,
+        "negative": 75,
         "event_ids_positive": [
           1209,
           1206,
@@ -27029,10 +27073,10 @@
           1010,
           1009,
           1004,
-          990,
-          983
+          990
         ],
         "event_ids_negative": [
+          1213,
           1202,
           1199,
           1198,
@@ -27122,7 +27166,7 @@
         ]
       },
       "CRC": {
-        "positive": 10,
+        "positive": 9,
         "negative": 8,
         "event_ids_positive": [
           1209,
@@ -27133,8 +27177,7 @@
           1026,
           1015,
           1010,
-          990,
-          983
+          990
         ],
         "event_ids_negative": [
           1179,
@@ -27332,20 +27375,20 @@
       "niche_pct": 88.2,
       "mainstream_pct": 11.8,
       "total_sources_used": 110,
-      "articles_processed": 226
+      "articles_processed": 223
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 226,
+      "total_events": 223,
       "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "WHO",
-        "count": 9,
+        "count": 8,
         "burn_count": 5,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           1196,
           1096,
@@ -27354,8 +27397,7 @@
           1025,
           1018,
           1012,
-          1002,
-          982
+          1002
         ]
       },
       {
@@ -27488,9 +27530,9 @@
       },
       {
         "name": "Tech",
-        "count": 16,
+        "count": 15,
         "burn_count": 5,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           1200,
           1169,
@@ -27506,8 +27548,7 @@
           1031,
           1009,
           1004,
-          991,
-          981
+          991
         ]
       },
       {
@@ -27604,18 +27645,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 81,
+      "total_burn": 80,
       "direct_action": {
-        "count": 66,
-        "pct": 81.5
+        "count": 65,
+        "pct": 81.2
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 4.9
+        "pct": 5.0
       },
       "untyped": {
         "count": 11,
-        "pct": 13.6
+        "pct": 13.8
       }
     },
     "burn_composition_all_time": {
@@ -27634,39 +27675,39 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 145,
+      "total_mint": 143,
       "direct_action": {
-        "count": 101,
-        "pct": 69.7
+        "count": 102,
+        "pct": 71.3
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 8.3
+        "pct": 8.4
       },
       "untyped": {
-        "count": 32,
-        "pct": 22.1
+        "count": 29,
+        "pct": 20.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 825,
+      "total_mint": 826,
       "direct_action": {
-        "count": 541,
+        "count": 542,
         "pct": 65.6
       },
       "editorial_alarm": {
         "count": 59,
-        "pct": 7.2
+        "pct": 7.1
       },
       "untyped": {
         "count": 225,
-        "pct": 27.3
+        "pct": 27.2
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 93,
-      "institutional": 133,
-      "citizen_ratio": 0.412,
+      "institutional": 130,
+      "citizen_ratio": 0.417,
       "daily": [
         {
           "date": "2026-05-17",
@@ -27701,7 +27742,7 @@
         {
           "date": "2026-05-23",
           "citizen": 13,
-          "institutional": 21
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -27800,6 +27841,7 @@
         986
       ],
       "event_ids_institutional": [
+        1213,
         1211,
         1204,
         1203,
@@ -27928,11 +27970,7 @@
         990,
         987,
         985,
-        984,
-        983,
-        982,
-        981,
-        980
+        984
       ]
     }
   }
