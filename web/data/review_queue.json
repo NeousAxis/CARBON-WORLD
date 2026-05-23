@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T23:04:18.367306+00:00",
-  "total_pending": 11,
+  "generated_at": "2026-05-23T23:34:30.707678+00:00",
+  "total_pending": 12,
   "reviews": [
     {
       "id": 373,
@@ -218,6 +218,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T18:35:05.151785+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 409,
+      "event_title": "Hudson Valley Residents Rally Against Massive Data Center Proposal in East Fishkill",
+      "event_url": "https://www.foodandwaterwatch.org/2026/05/22/hudson-valley-residents-rally-against-massive-data-center-proposal-in-east-fishkill/",
+      "event_source": "Food & Water Watch",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Community mobilization against environmentally harmful infrastructure\", \"affected_sdgs\": [11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Potential approval of a large data center with high energy and environmental costs\", \"affected_sdgs\": [11, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The community's mobilization represents a positive step toward environmental accountability, but the proposed data center poses significant environmental risks.\", \"snapshot_score\": -1.0, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Decision on data center approval\", \"Community-led legal or policy challenges\", \"Energy and environmental impact assessments\"], \"revaluation_checkpoint\": \"2028-05-22\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Data center rejected due to community pressure and environmental concerns\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Data center approved with limited environmental safeguards\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Data center approved with significant environmental harm\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -2.75, \"final_score\": -2.19, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The potential approval of a harmful data center outweighs the current community mobilization.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led rally in Hudson Valley opposing a massive data center proposal, urging local and state moratoria on new data centers\", \"affected_sdgs\": [11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The rally represents a concrete citizen action opposing environmentally harmful infrastructure, aligning with climate action (SDG 13) and sustainable cities (SDG 11). While the data center's environmental impact is not detailed, the collective opposition demonstrates community-driven environmental protection and participatory governance.\", \"snapshot_score\": 7.0, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"State moratoria passed or rejected\", \"Data center proposal modified or withdrawn\", \"New scientific evidence on data center environmental impact\", \"Broader regional movement gains traction\"], \"revaluation_checkpoint\": \"2028-05-22\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"State-wide moratoria on data centers passed, setting a national precedent for environmental protection\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Local moratoria passed in Hudson Valley, but state-level action stalls due to industry lobbying\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Moratoria efforts fail, data center proceeds with minimal environmental safeguards\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 5.7, \"final_score\": 6.345, \"decision\": \"BURN\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Community-led environmental opposition with measurable impact potential.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.97, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Community action opposing harmful infrastructure aligns with environmental protection.\", \"disagreement\": true, \"reason\": \"The institutional action in question is the potential approval of the data center. However, the event focuses on community-led opposition, which aligns with protecting environmental rights and public health. This constitutes a BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-23T23:34:28.841279+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
