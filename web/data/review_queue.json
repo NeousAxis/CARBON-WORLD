@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T13:36:56.006063+00:00",
-  "total_pending": 9,
+  "generated_at": "2026-05-23T14:06:11.606542+00:00",
+  "total_pending": 10,
   "reviews": [
     {
       "id": 373,
@@ -178,6 +178,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T13:36:54.571725+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 401,
+      "event_title": "Protect This Place: The Florida Panhandle vs. Petrochemicals",
+      "event_url": "https://therevelator.org/protect-florida-panhandle/",
+      "event_source": "The Revelator",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led efforts to protect the Florida Panhandle from petrochemical development\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Public awareness and advocacy for biodiversity conservation in a critical ecological region\", \"affected_sdgs\": [14, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Petrochemical development threatens biodiversity and environmental health in the Florida Panhandle\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The article highlights a positive citizen-led movement to protect the Florida Panhandle from harmful petrochemical development, which aligns with climate and biodiversity goals. However, the proposed development itself poses a significant threat to environmental integrity.\", \"snapshot_score\": 1.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Approval or rejection of new petrochemical projects in the region\", \"Outcome of legal or policy challenges by local communities\", \"Changes in public policy or funding for environmental protection in Florida\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful legal and policy interventions halt petrochemical expansion, leading to stronger environmental protections.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate progress with partial restrictions on development and increased public awareness.\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Petrochemical projects proceed with minimal oversight, causing long-term ecological damage.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.05, \"final_score\": 2.01, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The threat of petrochemical development outweighs current citizen efforts, with significant environmental risks.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Community-led effort to stop petrochemical expansion in Florida's biodiversity hotspot, raising awareness and mobilizing action\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The action represents a citizen-led movement to protect a biodiversity hotspot from petrochemical threats, aligning with climate action, responsible consumption, and life on land/water goals. It directly challenges industrial harm to ecosystems and communities, embodying environmental justice and planetary boundary protection.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"State regulatory approval of petrochemical projects\", \"Federal policy shifts favoring fossil fuel expansion\", \"Lack of sustained funding for community campaigns\", \"Corporate legal challenges to community actions\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Community succeeds in blocking petrochemical projects, inspiring regional conservation movements\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial success with some projects blocked but others approved, ongoing local resistance\", \"probability\": 0.45, \"score\": 5}, {\"name\": \"C\", \"description\": \"Petrochemical projects proceed with minimal community opposition due to regulatory capture\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.85, \"final_score\": 6.06, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Community-led conservation action protecting biodiversity hotspot from petrochemical threats.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.47, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Community-led action to protect biodiversity from petrochemical threats aligns with environmental justice and conservation goals.\", \"disagreement\": true, \"reason\": \"Analyst B correctly identifies the institutional action as community-led protection against harmful development, which aligns with BURN criteria.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-23T14:06:10.173440+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
