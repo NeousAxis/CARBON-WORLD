@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T15:05:36.890983+00:00",
-  "total_pending": 10,
+  "generated_at": "2026-05-23T15:35:10.873809+00:00",
+  "total_pending": 11,
   "reviews": [
     {
       "id": 373,
@@ -198,6 +198,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T14:06:10.173440+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 402,
+      "event_title": "EU reportedly nixes UK pitch for single market in goods",
+      "event_url": "https://www.politico.eu/article/eu-rejects-uk-single-market-proposal-trade-talks-brexit-relations/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"EU rejects UK proposal for a single market in goods, potentially limiting trade integration and economic cooperation between the EU and UK\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The EU's rejection of the UK's proposal for a single market in goods primarily undermines economic cooperation and trade integration, which could negatively impact employment and sustainable development goals. While the action does not directly violate human rights or environmental frameworks, it represents a setback for economic partnership and mutual prosperity.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"UK-EU trade agreement renegotiation outcomes\", \"UK domestic policy shifts on EU relations\", \"EU internal market policy changes\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"UK and EU reach a new comprehensive trade agreement with significant market integration\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Limited trade cooperation persists with minor adjustments, no major breakthroughs\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Trade relations deteriorate further, leading to significant economic losses for both sides\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.1, \"final_score\": -1.655, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"EU's rejection of UK trade proposal undermines economic cooperation and sustainable development.\", \"event_country\": \"European Union\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"EU maintains the integrity of the single market by rejecting a proposal that could fragment or dilute its standards and rules\", \"affected_sdgs\": [8, 9, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Rejection of UK proposal may deepen trade and political tensions, potentially undermining regional cooperation and economic stability\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The EU's rejection of the UK's single market proposal prioritizes the preservation of a unified regulatory framework, which supports economic stability and responsible consumption. However, it risks exacerbating political and trade divisions, which could hinder long-term regional cooperation and reduce inequalities.\", \"snapshot_score\": 3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"UK-EU trade agreement progress or collapse\", \"UK domestic political stability changes\", \"EU internal market reforms or expansions\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"UK and EU reach a comprehensive trade deal with minimal friction, fostering regional economic integration and stability\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Prolonged trade tensions lead to partial decoupling, with moderate economic and political costs for both sides\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Severe breakdown in relations results in significant trade barriers, economic contraction, and geopolitical realignment\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.2, \"final_score\": 1.15, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"EU's action preserves market integrity but risks regional fragmentation.\", \"event_country\": \"European Union\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.655, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"EU's rejection of UK proposal undermines economic cooperation and trade integration, enabling harm to sustainable development.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (rejection) as enabling harm to economic cooperation and sustainable development, despite Analyst B's neutral stance. The action weakens protections for regional economic stability.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects, analyst_ab_disagreement | llm: Polarity error: rejection of trade barrier is BURN (positive), not MINT (negative)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-23T15:35:09.117603+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
