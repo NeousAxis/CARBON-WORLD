@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T11:06:35.113221+00:00",
-  "total_pending": 7,
+  "generated_at": "2026-05-23T11:35:43.889038+00:00",
+  "total_pending": 8,
   "reviews": [
     {
       "id": 373,
@@ -138,6 +138,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T02:35:08.402433+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 398,
+      "event_title": "The governor of Utah declared a state of emergency Thursday as worsening drought threatens a broader water crisis affecting public safety, agriculture, power generation, ecosystems and daily life",
+      "event_url": "https://www.reddit.com/r/environment/comments/1tldqkt/the_governor_of_utah_declared_a_state_of/",
+      "event_source": "Reddit r/environment",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Governor of Utah declares a state of emergency to address worsening drought and water crisis, signaling proactive governance and public safety prioritization.\", \"affected_sdgs\": [6, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The declaration highlights a severe and worsening drought, which threatens ecosystems, agriculture, and public safety, indicating systemic environmental degradation.\", \"affected_sdgs\": [6, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The declaration of a state of emergency in Utah reflects a necessary and timely response to a worsening drought, but the crisis itself represents a significant environmental and societal threat. The action is a positive step toward addressing the issue, though the underlying water scarcity remains a critical challenge.\", \"snapshot_score\": -3.5, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of water conservation measures\", \"Availability of long-term water supply solutions\", \"Impact of climate change on future water availability\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Effective water conservation and infrastructure investments reduce long-term water scarcity risks.\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Moderate progress in water management, but ongoing climate impacts limit long-term stability.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Worsening drought and climate impacts lead to prolonged water shortages and ecological collapse.\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -1.85, \"final_score\": -2.43, \"decision\": \"MINT\", \"amount_cbwd\": 120000, \"confidence\": 6, \"justification\": \"The drought declaration highlights a worsening crisis, with limited evidence of long-term solutions.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Governor of Utah declares a state of emergency in response to worsening drought, acknowledging a broad water crisis affecting public safety, agriculture, power generation, ecosystems, and daily life\", \"affected_sdgs\": [6, 7, 11, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The declaration highlights a severe drought crisis, indicating systemic environmental degradation and potential long-term harm to ecosystems, agriculture, and public infrastructure\", \"affected_sdgs\": [2, 6, 7, 11, 13, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The declaration is a proactive acknowledgment of a critical environmental crisis, aligning with SDG 6 (Clean Water) and SDG 13 (Climate Action) by recognizing the urgency of the drought. However, it underscores the severity of the underlying environmental degradation, which violates fundamental rights to health, food, and sustainable livelihoods. The net ethical position is cautiously positive due to the institutional response but deeply concerned by the crisis itself.\", \"snapshot_score\": 3.0, \"trajectory_score\": -4.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Failure to implement effective water management policies within 12 months\", \"Escalation of drought conditions beyond current projections\", \"Lack of federal or regional coordination in addressing the crisis\", \"Public health or agricultural collapse due to water shortages\"], \"revaluation_checkpoint\": \"2026-05-22\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where aggressive water conservation, technological innovation, and regional cooperation lead to stabilization and recovery within 5 years\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic scenario where partial mitigation occurs but long-term water scarcity persists, requiring sustained adaptation measures\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where drought worsens, leading to severe ecological collapse, agricultural failure, and public health crises\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.75, \"final_score\": 1.34, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Declaration acknowledges crisis but reflects systemic environmental failure.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.57, \"confidence\": 7, \"amount_cbwd\": 120000, \"justification\": \"The declaration is a protective action in response to a worsening crisis, prioritizing public safety and resource management.\", \"disagreement\": true, \"reason\": \"The institutional action (declaring a state of emergency) is a protective measure against harm caused by the drought. This aligns with BURN criteria as it aims to mitigate risk and protect rights.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 120000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-23T11:35:42.297798+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
