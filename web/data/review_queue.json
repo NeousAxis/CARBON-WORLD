@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-24T11:35:35.717949+00:00",
-  "total_pending": 12,
+  "generated_at": "2026-05-24T12:04:31.170174+00:00",
+  "total_pending": 13,
   "reviews": [
     {
       "id": 373,
@@ -238,6 +238,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T23:34:28.841279+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 417,
+      "event_title": "Judge Sanctioned Private Prison Giant for Destroying Evidence in ICE Death Suit",
+      "event_url": "https://theintercept.com/2026/05/24/ice-corecivic-death-private-prison-judge/",
+      "event_source": "The Intercept",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Judge sanctioned private prison company for destroying evidence in a wrongful death case involving an ICE detainee.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The destruction of evidence by CoreCivic undermines due process and accountability in the case of a deceased ICE detainee.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 14\", \"UDHR Article 7\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The judge's sanction of CoreCivic for evidence destruction is a positive step toward accountability and justice, but the act of destroying evidence itself represents a serious violation of due process and human rights.\", \"snapshot_score\": -1.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Outcome of any appeals against the sanction\", \"Whether CoreCivic implements systemic reforms to prevent future evidence tampering\", \"Impact on broader legal accountability for private prison companies\"], \"revaluation_checkpoint\": \"2030-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"CoreCivic reforms its practices and faces increased legal consequences for evidence tampering, leading to improved accountability in private prisons.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"The sanction is upheld, but CoreCivic continues to operate with minimal systemic change, and similar cases remain under-enforced.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"The sanction is overturned on appeal, emboldening private prison companies to continue evading accountability, with long-term harm to due process and human rights.\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -1.15, \"final_score\": -0.83, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 7, \"justification\": \"Sanctioning a private prison company for evidence destruction is positive, but the act itself represents a serious violation of due process.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Judge sanctions CoreCivic for destroying evidence in an ICE detainee death case, enforcing accountability for corporate misconduct and protecting due process rights.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The judicial sanction against CoreCivic for evidence destruction represents a clear enforcement of legal and ethical standards, upholding justice and accountability in a case involving a vulnerable detainee. This action reinforces the rule of law and deters future corporate misconduct, aligning with SDG 16 (Peace, Justice, and Strong Institutions) and UDHR principles of due process and accountability.\", \"snapshot_score\": 8.5, \"trajectory_score\": 1.5, \"revaluation_score\": 0.5, \"revaluation_triggers\": [\"CoreCivic appeals the sanction and succeeds in overturning it\", \"Congress passes legislation limiting judicial sanctions against private prisons\", \"CoreCivic implements systemic changes to prevent future evidence destruction\"], \"revaluation_checkpoint\": \"2028-05-24\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"CoreCivic complies with sanctions and implements robust evidence retention policies, setting a precedent for industry-wide accountability.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"CoreCivic challenges the sanction in higher courts, delaying enforcement but not overturning the ruling, with mixed industry impact.\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"CoreCivic successfully overturns the sanction, emboldening similar corporations to evade accountability in future cases.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 5.45, \"final_score\": 6.34, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Judicial sanction enforces corporate accountability for evidence destruction in a vulnerable detainee case.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.05, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Judicial sanction enforces accountability for evidence destruction, protecting due process rights.\", \"disagreement\": true, \"reason\": \"Analyst B correctly identified the institutional action (sanction) as punitive against harm (evidence destruction), while Analyst A conflated the subject (evidence destruction) with the action (sanction). The sanction itself protects rights by penalizing misconduct.\"}",
+      "sentinel_concern": "structural: fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-24T12:04:29.365040+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
