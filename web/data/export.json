@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-05-24T20:35:04.192159+00:00",
-  "total_events": 1262,
+  "generated_at": "2026-05-24T21:34:41.585137+00:00",
+  "total_events": 1265,
   "total_burned": 1783065870,
-  "total_minted": 1731307000,
-  "pending_reviews": 14,
+  "total_minted": 1733657000,
+  "pending_reviews": 13,
   "events": [
+    {
+      "id": 1265,
+      "event_title": "Senegal parliament speaker El Malick Ndiaye steps down as political crisis deepens",
+      "event_url": "https://www.france24.com/en/africa/20260524-senegal-parliament-speaker-steps-down-in-political-crisis",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -4.27,
+      "confidence": 8,
+      "justification": "Political crisis with democratic backsliding and opposition suppression outweighs procedural resignation. | The resignation of the parliamentary speaker is a procedural step that may reduce immediate gridlock, but it occurs within a broader context of democratic erosion. The sacking of opposition leader Sonko and the deepening political crisis outweigh the procedural benefit, indicating a net negative ethical outcome.",
+      "tx_hash": "3j5NBD9gCKJ1LaBt6fkH4aoUhvjaSqdVmhdW48fbbpqQDEcG1ZHC6GiyinGnHmRdKuTCvkkD5fb63qbW4pxjtACF",
+      "created_at": "2026-05-24T21:34:39.960328+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Senegal",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Parliamentary speaker resignation reduces institutional gridlock and allows democratic process to proceed\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Political crisis deepens with sacking of opposition leader Ousmane Sonko, undermining democratic norms and potentially destabilizing governance\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1264,
+      "event_title": "EN DIRECT, war in Ukraine: Volodymyr Zelensky calls on allies for more support after massive Russian bombings",
+      "event_url": "https://www.lemonde.fr/international/live/2026/05/24/en-direct-guerre-en-ukraine-volodymyr-zelensky-appelle-les-allies-a-plus-d-appui-apres-des-bombardements-massifs-russes_6693162_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.93,
+      "confidence": 8,
+      "justification": "War escalation and humanitarian crisis outweigh Zelensky's defensive call; MINT reflects ongoing harm. | Zelensky's call for concrete support to defend against aggression aligns with the right to self-defense and protection of civilians (SDG 16). However, the underlying cause is the ongoing Russian military aggression, which violates fundamental human rights and causes severe humanitarian harm. The positive action is Zelensky's leadership in seeking defensive measures, while the negative aspect ",
+      "tx_hash": "5bbazE9XHzPLvMHsppwxG417jaBJHwa7URV8gGpD1ycJ7wY29Tvk6pfR6e6EqD85vTs7dcRG24CwnifYzEumaU5p",
+      "created_at": "2026-05-24T21:34:39.829583+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"Ukrainian President Volodymyr Zelensky publicly calls for concrete military support from allies, specifically requesting uninterrupted missile deliveries to strengthen air defense amid massive Russian bombings\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Intensified Russian bombings causing civilian casualties and infrastructure damage in Ukraine\", \"affected_sdgs\": [1, 3, 11, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1263,
+      "event_title": "Former Labour minister Stuart Nash switches to NZ First",
+      "event_url": "https://www.rnz.co.nz/news/political/596231/former-labour-minister-stuart-nash-switches-to-nz-first",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Joining a party with a history of undermining equality and human rights warrants a MINT decision.",
+      "tx_hash": null,
+      "created_at": "2026-05-24T21:17:01.986146+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1262,
       "event_title": "Former Education Ministry staffer lodges formal complaint over school curriculum rewrite",
@@ -27774,13 +27840,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 23,
-        "total_amount": 35440000
+        "count": 22,
+        "total_amount": 35290000
       },
       {
         "country": "Brazil",
         "count": 8,
         "total_amount": 21030000
+      },
+      {
+        "country": "Senegal",
+        "count": 6,
+        "total_amount": 1900000
       },
       {
         "country": "Turkey",
@@ -27791,18 +27862,13 @@
         "country": "France",
         "count": 5,
         "total_amount": 9945000
-      },
-      {
-        "country": "Senegal",
-        "count": 5,
-        "total_amount": 1200000
       }
     ],
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 11,
-        "total_amount": 59500000
+        "count": 10,
+        "total_amount": 54500000
       },
       {
         "country": "United Kingdom",
@@ -27828,8 +27894,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.714,
-        "events": 7
+        "burn_ratio": 0.833,
+        "events": 6
       },
       {
         "region": "Europe",
@@ -27843,8 +27909,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.324,
-        "events": 34
+        "burn_ratio": 0.312,
+        "events": 32
       },
       {
         "region": "Latin America",
@@ -27860,8 +27926,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.923,
-        "events": 13
+        "mint_ratio": 0.929,
+        "events": 14
       },
       {
         "region": "Latin America",
@@ -27870,8 +27936,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.676,
-        "events": 34
+        "mint_ratio": 0.688,
+        "events": 32
       },
       {
         "region": "Asia",
@@ -27912,7 +27978,7 @@
       },
       {
         "date": "2026-05-24",
-        "net_minted": 69471250,
+        "net_minted": 71671250,
         "net_burned": 51700000
       }
     ],
@@ -27929,8 +27995,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 59,
-        "negative": 108,
+        "positive": 58,
+        "negative": 106,
         "event_ids_positive": [
           1260,
           1259,
@@ -27989,10 +28055,11 @@
           1056,
           1053,
           1052,
-          1050,
-          1048
+          1050
         ],
         "event_ids_negative": [
+          1265,
+          1264,
           1257,
           1256,
           1254,
@@ -28096,11 +28163,7 @@
           1055,
           1054,
           1051,
-          1049,
-          1047,
-          1046,
-          1045,
-          1044
+          1049
         ]
       },
       "UDHR": {
@@ -28134,6 +28197,8 @@
           1050
         ],
         "event_ids_negative": [
+          1265,
+          1264,
           1257,
           1256,
           1254,
@@ -28205,9 +28270,7 @@
           1057,
           1055,
           1054,
-          1049,
-          1047,
-          1046
+          1049
         ]
       },
       "ILO": {
@@ -28251,8 +28314,8 @@
         ]
       },
       "UNDRIP": {
-        "positive": 18,
-        "negative": 19,
+        "positive": 17,
+        "negative": 18,
         "event_ids_positive": [
           1259,
           1255,
@@ -28270,8 +28333,7 @@
           1097,
           1093,
           1092,
-          1085,
-          1048
+          1085
         ],
         "event_ids_negative": [
           1251,
@@ -28291,12 +28353,11 @@
           1084,
           1078,
           1070,
-          1055,
-          1044
+          1055
         ]
       },
       "Animal": {
-        "positive": 18,
+        "positive": 17,
         "negative": 13,
         "event_ids_positive": [
           1259,
@@ -28315,8 +28376,7 @@
           1076,
           1063,
           1056,
-          1053,
-          1048
+          1053
         ],
         "event_ids_negative": [
           1240,
@@ -28335,7 +28395,7 @@
         ]
       },
       "PB": {
-        "positive": 32,
+        "positive": 31,
         "negative": 37,
         "event_ids_positive": [
           1260,
@@ -28368,8 +28428,7 @@
           1076,
           1063,
           1056,
-          1053,
-          1048
+          1053
         ],
         "event_ids_negative": [
           1245,
@@ -28413,14 +28472,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 87.0,
-      "mainstream_pct": 13.0,
-      "total_sources_used": 108,
-      "articles_processed": 207
+      "niche_pct": 87.9,
+      "mainstream_pct": 12.1,
+      "total_sources_used": 107,
+      "articles_processed": 204
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 207,
+      "total_events": 204,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -28497,9 +28556,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 24,
+        "count": 23,
         "burn_count": 11,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           1260,
           1244,
@@ -28523,8 +28582,7 @@
           1088,
           1068,
           1063,
-          1051,
-          1046
+          1051
         ]
       },
       {
@@ -28553,9 +28611,9 @@
       },
       {
         "name": "Finance",
-        "count": 14,
+        "count": 13,
         "burn_count": 6,
-        "mint_count": 8,
+        "mint_count": 7,
         "event_ids": [
           1255,
           1243,
@@ -28569,8 +28627,7 @@
           1099,
           1064,
           1060,
-          1049,
-          1047
+          1049
         ]
       },
       {
@@ -28599,6 +28656,7 @@
         "burn_count": 0,
         "mint_count": 9,
         "event_ids": [
+          1264,
           1245,
           1223,
           1211,
@@ -28606,8 +28664,7 @@
           1144,
           1140,
           1123,
-          1075,
-          1045
+          1075
         ]
       },
       {
@@ -28657,18 +28714,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 68,
+      "total_burn": 67,
       "direct_action": {
-        "count": 54,
-        "pct": 79.4
+        "count": 53,
+        "pct": 79.1
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 7.4
+        "pct": 7.5
       },
       "untyped": {
         "count": 9,
-        "pct": 13.2
+        "pct": 13.4
       }
     },
     "burn_composition_all_time": {
@@ -28687,25 +28744,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 139,
+      "total_mint": 137,
       "direct_action": {
-        "count": 96,
-        "pct": 69.1
+        "count": 94,
+        "pct": 68.6
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 8.6
+        "pct": 8.8
       },
       "untyped": {
         "count": 31,
-        "pct": 22.3
+        "pct": 22.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 856,
+      "total_mint": 858,
       "direct_action": {
-        "count": 560,
-        "pct": 65.4
+        "count": 562,
+        "pct": 65.5
       },
       "editorial_alarm": {
         "count": 62,
@@ -28717,9 +28774,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 91,
-      "institutional": 116,
-      "citizen_ratio": 0.44,
+      "citizen": 90,
+      "institutional": 114,
+      "citizen_ratio": 0.441,
       "daily": [
         {
           "date": "2026-05-18",
@@ -28754,7 +28811,7 @@
         {
           "date": "2026-05-24",
           "citizen": 15,
-          "institutional": 12
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -28847,10 +28904,11 @@
         1063,
         1061,
         1056,
-        1050,
-        1044
+        1050
       ],
       "event_ids_institutional": [
+        1265,
+        1264,
         1260,
         1259,
         1257,
@@ -28962,11 +29020,7 @@
         1053,
         1052,
         1051,
-        1049,
-        1048,
-        1047,
-        1046,
-        1045
+        1049
       ]
     }
   }
