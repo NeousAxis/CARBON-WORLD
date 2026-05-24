@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-24T18:05:19.155656+00:00",
-  "total_pending": 13,
+  "generated_at": "2026-05-24T18:34:36.010422+00:00",
+  "total_pending": 14,
   "reviews": [
     {
       "id": 373,
@@ -258,6 +258,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-24T12:04:29.365040+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 420,
+      "event_title": "Efficiency demands on public services compared to political promises as six-billion-euro hospital investment announced",
+      "event_url": "http://www.lequotidiendumedecin.fr/cest-vous-qui-le-dites/attendre-de-lefficience-dun-service-public-cest-comme-attendre-dun-politicien-quil-tienne-ses",
+      "event_source": "Le Quotidien du Médecin",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French government announces a six-billion-euro investment over ten years to support regional hospital projects, signaling commitment to healthcare infrastructure and public service improvement.\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The announcement ties funding to increased efficiency demands on public hospitals, which may pressure under-resourced services and risk compromising care quality or staff welfare.\", \"affected_sdgs\": [3, 8], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The six-billion-euro hospital investment is a significant positive step toward improving public health infrastructure (SDG 3). However, the conditional demand for increased efficiency risks overburdening hospital staff and potentially degrading service quality, raising ethical concerns about labor rights and equitable healthcare access.\", \"snapshot_score\": 4.5, \"trajectory_score\": 1.0, \"revaluation_score\": 0.5, \"revaluation_triggers\": [\"Implementation delays or cost overruns in hospital projects\", \"Evidence of reduced staffing or service cuts due to efficiency demands\", \"Public backlash or legal challenges from healthcare workers or unions\", \"New government policy reversing or modifying the investment plan\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Efficiency demands are balanced with adequate funding and staffing, leading to improved healthcare outcomes and reduced wait times.\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Efficiency demands result in staff burnout and service reductions, but overall infrastructure improvements partially offset negative impacts.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Efficiency demands lead to severe underfunding, widespread service cuts, and public health crises, overshadowing infrastructure gains.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.15, \"final_score\": 2.66, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 7, \"justification\": \"Large healthcare investment is positive but conditional efficiency demands risk harming labor rights and service quality.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government announces a six-billion-euro investment over ten years to support regional hospital projects, demonstrating commitment to healthcare infrastructure and public service improvement\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Minister demands increased efficiency and cooperation from the hospital sector as a condition for funding, which may impose unrealistic performance targets on public healthcare workers\", \"affected_sdgs\": [3, 8], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"ethical_synthesis\": \"The six-billion-euro hospital investment is a significant positive step toward improving public health infrastructure (SDG 3). However, the conditional demand for efficiency and cooperation risks undermining workers' rights and the quality of care, creating a tension between fiscal responsibility and ethical labor standards.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Implementation delays or cost overruns in hospital projects\", \"Public backlash against efficiency demands leading to strikes or service disruptions\", \"New government policies reversing or modifying the investment plan\", \"Evidence of reduced quality of care due to efficiency pressures\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Investment successfully improves healthcare infrastructure and efficiency without compromising care quality, setting a national benchmark for public service reform\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate success with some efficiency gains but persistent underfunding and worker dissatisfaction lead to partial service degradation\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Efficiency demands result in severe understaffing, burnout, and reduced care quality, leading to public outcry and policy reversal\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 3.0, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Large investment in healthcare is positive but conditional efficiency demands risk harming workers and care quality.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.26, \"confidence\": 7, \"amount_cbwd\": 1500000, \"justification\": \"Large healthcare investment is positive but conditional efficiency demands risk harming labor rights and service quality.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict MINT contradicts positive nature of large healthcare investment; justification praises it yet decision is negative – polarity error and mismatch.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-24T18:34:34.554449+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
