@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-24T15:04:26.822715+00:00",
-  "total_events": 1247,
+  "generated_at": "2026-05-24T15:35:48.818907+00:00",
+  "total_events": 1248,
   "total_burned": 1756065870,
-  "total_minted": 1696807000,
+  "total_minted": 1704807000,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 1248,
+      "event_title": "Police storm offices of Turkish opposition party CHP",
+      "event_url": "https://www.tagesschau.de/ausland/asien/ankara-opposition-chp-polizei-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -6.95,
+      "confidence": 9,
+      "justification": "Severe violation of democratic rights and political freedoms with high global relevance. | The court's removal of the CHP leader and subsequent police raid on party offices constitute a severe violation of democratic rights and freedoms. These actions undermine political pluralism, suppress opposition voices, and contravene multiple international human rights frameworks, particularly UDHR Articles 19, 20, and 21, as well as UNDRIP principles protecting political participation.",
+      "tx_hash": "Qf6cy9yzYtcAwDmvWMfx5h7o42y2Yh5vKCzgoLbfUBnVS5vy9gNzbHVVg2KKYjNMkS7T4i9oqNxYaUMfigse4YE",
+      "created_at": "2026-05-24T15:35:47.275811+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Turkish court removes leader of opposition party CHP, enabling state intervention against democratic institution\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 20\", \"UNDRIP\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Police storm CHP party offices with tear gas, escalating authoritarian suppression of political opposition\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1247,
       "event_title": "New Chinese surveillance leaves foreigners nowhere to hide",
@@ -27454,8 +27476,8 @@
       },
       {
         "country": "Turkey",
-        "count": 5,
-        "total_amount": 22950000
+        "count": 6,
+        "total_amount": 30950000
       },
       {
         "country": "France",
@@ -27525,8 +27547,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.929,
-        "events": 14
+        "mint_ratio": 0.933,
+        "events": 15
       },
       {
         "region": "Africa",
@@ -27582,7 +27604,7 @@
       },
       {
         "date": "2026-05-24",
-        "net_minted": 37221250,
+        "net_minted": 45221250,
         "net_burned": 29700000
       }
     ],
@@ -27599,8 +27621,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 57,
-        "negative": 110,
+        "positive": 56,
+        "negative": 111,
         "event_ids_positive": [
           1243,
           1234,
@@ -27657,10 +27679,10 @@
           1052,
           1050,
           1048,
-          1032,
-          1030
+          1032
         ],
         "event_ids_negative": [
+          1248,
           1247,
           1245,
           1244,
@@ -27775,7 +27797,7 @@
       },
       "UDHR": {
         "positive": 22,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           1233,
           1227,
@@ -27801,6 +27823,7 @@
           1050
         ],
         "event_ids_negative": [
+          1248,
           1247,
           1245,
           1242,
@@ -27915,7 +27938,7 @@
       },
       "UNDRIP": {
         "positive": 17,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           1243,
           1234,
@@ -27936,6 +27959,7 @@
           1032
         ],
         "event_ids_negative": [
+          1248,
           1236,
           1200,
           1191,
@@ -28077,14 +28101,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 85.8,
-      "mainstream_pct": 14.2,
+      "niche_pct": 86.8,
+      "mainstream_pct": 13.2,
       "total_sources_used": 106,
-      "articles_processed": 210
+      "articles_processed": 209
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 210,
+      "total_events": 209,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -28241,27 +28265,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 13,
-        "burn_count": 3,
-        "mint_count": 10,
-        "event_ids": [
-          1221,
-          1200,
-          1169,
-          1165,
-          1158,
-          1148,
-          1121,
-          1118,
-          1112,
-          1081,
-          1078,
-          1062,
-          1031
-        ]
-      },
-      {
         "name": "Defense",
         "count": 12,
         "burn_count": 0,
@@ -28279,6 +28282,26 @@
           1041,
           1039,
           1037
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 12,
+        "burn_count": 3,
+        "mint_count": 9,
+        "event_ids": [
+          1221,
+          1200,
+          1169,
+          1165,
+          1158,
+          1148,
+          1121,
+          1118,
+          1112,
+          1081,
+          1078,
+          1062
         ]
       },
       {
@@ -28329,18 +28352,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 66,
+      "total_burn": 65,
       "direct_action": {
-        "count": 52,
-        "pct": 78.8
+        "count": 51,
+        "pct": 78.5
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 7.6
+        "pct": 7.7
       },
       "untyped": {
         "count": 9,
-        "pct": 13.6
+        "pct": 13.8
       }
     },
     "burn_composition_all_time": {
@@ -28361,22 +28384,22 @@
     "mint_composition_7d": {
       "total_mint": 144,
       "direct_action": {
-        "count": 98,
-        "pct": 68.1
+        "count": 99,
+        "pct": 68.8
       },
       "editorial_alarm": {
         "count": 12,
         "pct": 8.3
       },
       "untyped": {
-        "count": 34,
-        "pct": 23.6
+        "count": 33,
+        "pct": 22.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 849,
+      "total_mint": 850,
       "direct_action": {
-        "count": 554,
+        "count": 555,
         "pct": 65.3
       },
       "editorial_alarm": {
@@ -28385,13 +28408,13 @@
       },
       "untyped": {
         "count": 234,
-        "pct": 27.6
+        "pct": 27.5
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 91,
-      "institutional": 119,
-      "citizen_ratio": 0.433,
+      "citizen": 89,
+      "institutional": 120,
+      "citizen_ratio": 0.426,
       "daily": [
         {
           "date": "2026-05-18",
@@ -28426,7 +28449,7 @@
         {
           "date": "2026-05-24",
           "citizen": 11,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -28518,11 +28541,10 @@
         1050,
         1044,
         1037,
-        1032,
-        1031,
-        1030
+        1032
       ],
       "event_ids_institutional": [
+        1248,
         1245,
         1242,
         1241,
