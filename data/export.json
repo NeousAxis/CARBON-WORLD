@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-24T10:34:29.001907+00:00",
-  "total_events": 1240,
+  "generated_at": "2026-05-24T11:35:35.644636+00:00",
+  "total_events": 1242,
   "total_burned": 1749065870,
-  "total_minted": 1676857000,
+  "total_minted": 1685357000,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 1242,
+      "event_title": "Turkey orders police to evict ousted opposition leadership from headquarters",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/turkey-orders-police-evict-ousted-opposition-leadership-headquarters",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -5.2,
+      "confidence": 9,
+      "justification": "State-enforced eviction of opposition leadership violates democratic rights and institutional stability. | The eviction order represents a direct violation of democratic rights and freedom of association, undermining political pluralism and institutional stability. While the court ruling may have legal standing, its enforcement through police action disproportionately suppresses opposition voices and risks deepening political polarization. The magnitude of harm is significant due to the scale of",
+      "tx_hash": "4hHnPLva2Qe1vWuBEGdPpqCfB1T4o4TSN9z2D5nui1ZbWpDRNRNwT29piVx6Zb7CcxYcyjGupUUXHoXvq38j9YJM",
+      "created_at": "2026-05-24T11:35:34.091864+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Turkish authorities ordered police to evict opposition CHP leadership from headquarters, enforcing a court ruling that reinstated an ousted leader, fueling a political crisis and potentially undermining democratic processes and freedom of association\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\", \"UDHR Article 22\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1241,
+      "event_title": "Attacks on Ebola centres intensify in eastern DRC amid outbreak fears",
+      "event_url": "https://www.reddit.com/r/Africa/comments/1tm7gpg/attacks_on_ebola_centres_intensify_in_eastern_drc/",
+      "event_source": "Reddit r/africa",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.21,
+      "confidence": 8,
+      "justification": "Violent attacks on healthcare facilities during a public health crisis warrant a MINT decision. | The attacks on Ebola treatment centres in eastern DRC directly undermine public health efforts and violate fundamental rights to health and safety. While MSF's humanitarian presence represents a positive effort to deliver care, the violent actions by local residents pose severe risks to disease control and community trust.",
+      "tx_hash": "546zQLMT3iqajSG4Vg7SXWN3T9vNP6yDcTLdHtuk5DtzbtquRmpsiS5ZDBu1yBPMzCELfPS3QwNvRXc2J5UrocVg",
+      "created_at": "2026-05-24T11:35:33.969075+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Doctors Without Borders (MSF) presence and tent provision at Mongbwalu hospital indicates humanitarian aid delivery despite hostile conditions\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Attacks on Ebola treatment centres by local residents, including storming a health centre and setting MSF tents on fire, endanger public health and undermine disease control efforts\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Violence against healthcare workers and facilities during a public health crisis exacerbates distrust and hampers outbreak response\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1240,
       "event_title": "Bündner Patentjäger: Tarzisius Caviezel goes, Wolf-Kurs remains",
@@ -27299,6 +27343,11 @@
         "total_amount": 21030000
       },
       {
+        "country": "Turkey",
+        "count": 5,
+        "total_amount": 22950000
+      },
+      {
         "country": "France",
         "count": 5,
         "total_amount": 9945000
@@ -27307,11 +27356,6 @@
         "country": "Senegal",
         "count": 5,
         "total_amount": 1200000
-      },
-      {
-        "country": "South Africa",
-        "count": 5,
-        "total_amount": 15250000
       }
     ],
     "top_countries_burn": [
@@ -27376,8 +27420,8 @@
       },
       {
         "region": "MENA",
-        "mint_ratio": 0.857,
-        "events": 14
+        "mint_ratio": 0.867,
+        "events": 15
       },
       {
         "region": "Latin America",
@@ -27428,7 +27472,7 @@
       },
       {
         "date": "2026-05-24",
-        "net_minted": 17421250,
+        "net_minted": 25921250,
         "net_burned": 22700000
       }
     ],
@@ -27446,7 +27490,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 66,
-        "negative": 110,
+        "negative": 112,
         "event_ids_positive": [
           1234,
           1233,
@@ -27516,6 +27560,8 @@
           1012
         ],
         "event_ids_negative": [
+          1242,
+          1241,
           1240,
           1237,
           1236,
@@ -27630,7 +27676,7 @@
       },
       "UDHR": {
         "positive": 28,
-        "negative": 73,
+        "negative": 75,
         "event_ids_positive": [
           1233,
           1227,
@@ -27662,6 +27708,8 @@
           1012
         ],
         "event_ids_negative": [
+          1242,
+          1241,
           1236,
           1235,
           1226,
@@ -27953,12 +28001,12 @@
       "niche_pct": 84.3,
       "mainstream_pct": 15.7,
       "total_sources_used": 108,
-      "articles_processed": 222
+      "articles_processed": 224
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 222,
-      "pct": 0.5
+      "total_events": 224,
+      "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -28241,24 +28289,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 146,
+      "total_mint": 148,
       "direct_action": {
-        "count": 99,
-        "pct": 67.8
+        "count": 101,
+        "pct": 68.2
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 7.5
+        "pct": 7.4
       },
       "untyped": {
         "count": 36,
-        "pct": 24.7
+        "pct": 24.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 844,
+      "total_mint": 846,
       "direct_action": {
-        "count": 550,
+        "count": 552,
         "pct": 65.2
       },
       "editorial_alarm": {
@@ -28272,8 +28320,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 93,
-      "institutional": 129,
-      "citizen_ratio": 0.419,
+      "institutional": 131,
+      "citizen_ratio": 0.415,
       "daily": [
         {
           "date": "2026-05-18",
@@ -28308,7 +28356,7 @@
         {
           "date": "2026-05-24",
           "citizen": 8,
-          "institutional": 2
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -28407,6 +28455,8 @@
         1016
       ],
       "event_ids_institutional": [
+        1242,
+        1241,
         1240,
         1235,
         1223,
