@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-24T01:04:38.359864+00:00",
-  "total_pending": 12,
+  "generated_at": "2026-05-24T02:05:08.458338+00:00",
+  "total_pending": 13,
   "reviews": [
     {
       "id": 373,
@@ -238,6 +238,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-23T23:34:28.841279+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 410,
+      "event_title": "How NGOs are bringing India’s informal waste collectors into the system",
+      "event_url": "https://india.mongabay.com/2026/05/how-ngos-are-bringing-indias-informal-waste-collectors-into-the-system/",
+      "event_source": "Mongabay India",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NGOs are working to formalize the roles of informal waste collectors, improving their working conditions and integrating them into the waste management system.\", \"affected_sdgs\": [8, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\"]}, {\"description\": \"The inclusion of informal waste collectors into the system can lead to better waste segregation and recycling, contributing to environmental sustainability.\", \"affected_sdgs\": [11, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Informal waste collectors often work in hazardous conditions without legal protections or fair wages, violating labor rights.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"ILO Core Labor Standards\", \"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"The informal nature of their work makes them vulnerable to exploitation and exclusion from social security systems.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 22\", \"ILO Core Labor Standards\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}], \"ethical_synthesis\": \"The article highlights a positive effort by NGOs to integrate informal waste collectors into the formal system, which supports labor rights and environmental sustainability. However, the current informal status of these workers continues to violate labor rights and perpetuate inequality.\", \"snapshot_score\": 1.5, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Formalization of waste collector roles by 2030\", \"Implementation of legal protections for informal workers\", \"Adoption of national policy supporting waste management integration\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"NGO efforts lead to nationwide formalization of waste collection roles, improving labor conditions and environmental outcomes.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Partial integration of informal workers into the system with limited policy support, resulting in moderate improvements.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"NGO efforts stall due to lack of government support and continued exploitation of informal workers.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.8, \"final_score\": 2.4, \"decision\": \"MINT\", \"amount_cbwd\": 120000, \"confidence\": 7, \"justification\": \"NGO efforts to formalize informal waste collection show promise but current conditions violate labor rights.\", \"event_country\": \"India\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NGOs are working to formalize the roles of informal waste collectors, improving their working conditions and integrating them into the waste management system.\", \"affected_sdgs\": [8, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\"]}, {\"description\": \"The inclusion of informal waste collectors into the system can lead to better waste segregation and recycling, contributing to environmental sustainability.\", \"affected_sdgs\": [11, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Informal waste collectors often work in hazardous conditions without legal protections or fair wages, violating labor rights.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"ILO Core Labor Standards\", \"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"The informal nature of their work makes them vulnerable to exploitation and exclusion from social security systems.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 22\", \"ILO Core Labor Standards\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}], \"ethical_synthesis\": \"The article highlights a positive effort by NGOs to integrate informal waste collectors into the formal system, which supports labor rights and environmental sustainability. However, the current informal status of these workers continues to violate labor rights and perpetuate inequality.\", \"snapshot_score\": 1.5, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Formalization of waste collector roles by 2030\", \"Implementation of legal protections for informal workers\", \"Adoption of national policy supporting waste management integration\"], \"revaluation_checkpoint\": \"2028-05-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"NGO efforts lead to nationwide formalization of waste collection roles, improving labor conditions and environmental outcomes.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Partial integration of informal workers into the system with limited policy support, resulting in moderate improvements.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"NGO efforts stall due to lack of government support and continued exploitation of informal workers.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.8, \"final_score\": 2.4, \"decision\": \"MINT\", \"amount_cbwd\": 120000, \"confidence\": 7, \"justification\": \"NGO efforts to formalize informal waste collection show promise but current conditions violate labor rights.\", \"event_country\": \"India\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.4, \"confidence\": 7, \"amount_cbwd\": 120000, \"justification\": \"NGO efforts to formalize informal waste collection show promise but current conditions violate labor rights.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict MINT contradicts article's overall positive impact of formalizing informal waste collectors; polarity error – should be BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 120000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-24T02:05:06.715526+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
