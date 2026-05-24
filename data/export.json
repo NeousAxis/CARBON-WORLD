@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-24T18:34:35.911759+00:00",
-  "total_events": 1257,
+  "generated_at": "2026-05-24T19:34:47.191477+00:00",
+  "total_events": 1258,
   "total_burned": 1771065870,
-  "total_minted": 1729057000,
-  "pending_reviews": 14,
+  "total_minted": 1730557000,
+  "pending_reviews": 13,
   "events": [
+    {
+      "id": 1258,
+      "event_title": "Efficiency demands on public services compared to political promises as six-billion-euro hospital investment announced",
+      "event_url": "http://www.lequotidiendumedecin.fr/cest-vous-qui-le-dites/attendre-de-lefficience-dun-service-public-cest-comme-attendre-dun-politicien-quil-tienne-ses",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Large healthcare investment is positive but conditional efficiency demands risk harming labor rights and service quality.",
+      "tx_hash": null,
+      "created_at": "2026-05-24T19:17:01.764930+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1257,
       "event_title": "Poland must be “defended from pathological spread of homosexuality”, says opposition leader Kaczyński",
@@ -27718,13 +27740,13 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.625,
-        "events": 8
+        "burn_ratio": 0.714,
+        "events": 7
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.357,
-        "events": 42
+        "burn_ratio": 0.366,
+        "events": 41
       },
       {
         "region": "Asia",
@@ -27750,8 +27772,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.929,
-        "events": 14
+        "mint_ratio": 0.923,
+        "events": 13
       },
       {
         "region": "Latin America",
@@ -27820,7 +27842,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 57,
-        "negative": 112,
+        "negative": 108,
         "event_ids_positive": [
           1255,
           1249,
@@ -27988,16 +28010,12 @@
           1047,
           1046,
           1045,
-          1044,
-          1043,
-          1042,
-          1040,
-          1039
+          1044
         ]
       },
       "UDHR": {
         "positive": 24,
-        "negative": 77,
+        "negative": 74,
         "event_ids_positive": [
           1255,
           1249,
@@ -28098,10 +28116,7 @@
           1054,
           1049,
           1047,
-          1046,
-          1043,
-          1040,
-          1039
+          1046
         ]
       },
       "ILO": {
@@ -28228,7 +28243,7 @@
       },
       "PB": {
         "positive": 30,
-        "negative": 38,
+        "negative": 37,
         "event_ids_positive": [
           1249,
           1243,
@@ -28298,21 +28313,20 @@
           1077,
           1071,
           1070,
-          1068,
-          1043
+          1068
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 86.1,
-      "mainstream_pct": 13.9,
+      "niche_pct": 87.0,
+      "mainstream_pct": 13.0,
       "total_sources_used": 108,
-      "articles_processed": 210
+      "articles_processed": 205
     },
     "cache_hit_rate_7d": {
-      "hits": 1,
-      "total_events": 210,
-      "pct": 0.5
+      "hits": 0,
+      "total_events": 205,
+      "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -28388,9 +28402,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 24,
+        "count": 23,
         "burn_count": 10,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           1244,
           1237,
@@ -28414,8 +28428,7 @@
           1068,
           1063,
           1051,
-          1046,
-          1043
+          1046
         ]
       },
       {
@@ -28486,9 +28499,9 @@
       },
       {
         "name": "Defense",
-        "count": 11,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 9,
         "event_ids": [
           1245,
           1223,
@@ -28498,9 +28511,7 @@
           1140,
           1123,
           1075,
-          1045,
-          1041,
-          1039
+          1045
         ]
       },
       {
@@ -28521,21 +28532,6 @@
         ]
       },
       {
-        "name": "Transport",
-        "count": 7,
-        "burn_count": 2,
-        "mint_count": 5,
-        "event_ids": [
-          1218,
-          1211,
-          1203,
-          1169,
-          1154,
-          1078,
-          1042
-        ]
-      },
-      {
         "name": "Water",
         "count": 6,
         "burn_count": 3,
@@ -28547,6 +28543,20 @@
           1160,
           1099,
           1087
+        ]
+      },
+      {
+        "name": "Transport",
+        "count": 6,
+        "burn_count": 2,
+        "mint_count": 4,
+        "event_ids": [
+          1218,
+          1211,
+          1203,
+          1169,
+          1154,
+          1078
         ]
       }
     ],
@@ -28581,18 +28591,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 144,
+      "total_mint": 139,
       "direct_action": {
-        "count": 100,
-        "pct": 69.4
+        "count": 96,
+        "pct": 69.1
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 8.3
+        "pct": 8.6
       },
       "untyped": {
-        "count": 32,
-        "pct": 22.2
+        "count": 31,
+        "pct": 22.3
       }
     },
     "mint_composition_all_time": {
@@ -28612,8 +28622,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 91,
-      "institutional": 119,
-      "citizen_ratio": 0.433,
+      "institutional": 114,
+      "citizen_ratio": 0.444,
       "daily": [
         {
           "date": "2026-05-18",
@@ -28858,12 +28868,7 @@
         1048,
         1047,
         1046,
-        1045,
-        1043,
-        1042,
-        1041,
-        1040,
-        1039
+        1045
       ]
     }
   }
