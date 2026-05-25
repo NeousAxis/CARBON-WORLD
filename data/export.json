@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-05-25T14:06:45.062292+00:00",
-  "total_events": 1300,
+  "generated_at": "2026-05-25T14:37:11.438331+00:00",
+  "total_events": 1303,
   "total_burned": 1843065870,
-  "total_minted": 1779277000,
-  "pending_reviews": 19,
+  "total_minted": 1780827000,
+  "pending_reviews": 18,
   "events": [
+    {
+      "id": 1303,
+      "event_title": "Ten Countries at Risk, Over 900 Cases: How the 'Horrible' Ebola Spread Since April",
+      "event_url": "https://www.letemps.ch/articles/dix-pays-a-risque-plus-de-900-malades-les-failles-par-lesquelles-l-effroyable-ebola-se-propage-depuis-avril",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 1250000,
+      "final_score": -2.18,
+      "confidence": 7,
+      "justification": "The spread of Ebola across multiple African countries poses significant public health and gender equality risks. | The article highlights the ongoing spread of Ebola across multiple African countries, with significant negative impacts on public health and gender equality. While international bodies are monitoring the situation, the slow response and systemic failures in healthcare infrastructure are undermining containment efforts.",
+      "tx_hash": "5ei285U97TRp1hfbKkmjbp331QMFxi1KPx8bPh7XfyUS3PMg28J7UNp5gGxV1oyMoK1EchnqKEh4aYH9BpmFbZmR",
+      "created_at": "2026-05-25T14:37:09.741906+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The World Health Organization (WHO) and the African Union are monitoring the spread of Ebola and identifying at-risk countries.\", \"affected_sdgs\": [3, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ebola is spreading across multiple African countries, with over 900 cases reported, and the disease disproportionately affects women who care for the sick.\", \"affected_sdgs\": [3, 5, 10], \"violated_rights\": [\"UDHR Article 12\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The slow response to the outbreak and systemic failures in healthcare infrastructure have hindered containment efforts.\", \"affected_sdgs\": [3, 11, 17], \"violated_rights\": [\"UDHR Article 12\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1302,
+      "event_title": "Tulsi Gabbard Exit Marks Fourth Woman to Leave Trump Cabinet",
+      "event_url": "https://truthout.org/articles/tulsi-gabbard-exit-marks-fourth-woman-to-leave-trump-cabinet/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.96,
+      "confidence": 8,
+      "justification": "Consensus on MINT; systemic reduction in gender representation undermines equality. | While Gabbard's individual resignation may reduce a specific imbalance, the systemic pattern of women leaving Trump's Cabinet exacerbates gender underrepresentation in executive leadership. This trend risks weakening institutional commitments to gender equality and social justice, despite the nominal positive of one high-profile departure.",
+      "tx_hash": "27LwiETsuw92oR3ezrGa1DHubh8tZBoBfBuuXmVwT4bZ4nW4qtNgD416cX4VRmVbLLb3PZwMYTbwZfnhF5G3jFzR",
+      "created_at": "2026-05-25T14:37:09.604562+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Tulsi Gabbard's resignation from Trump's Cabinet reduces the gender diversity deficit in the administration, aligning with SDG 5 (Gender Equality) by removing a high-profile figure from a male-dominated executive body.\", \"affected_sdgs\": [5], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The broader trend of women leaving Trump's Cabinet further narrows gender diversity, undermining representation and potentially weakening policies addressing gender equality and social justice.\", \"affected_sdgs\": [5, 10], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1301,
+      "event_title": "Manamela’s digital bet: Can SA’s higher education system survive the revolution under way?",
+      "event_url": "https://mg.co.za/education/2026-05-25-manamelas-digital-bet-can-sas-higher-education-system-survive-the-revolution-under-way/",
+      "event_source": "Mail & Guardian (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Digital education reform has potential but risks deepening inequality without equitable implementation.",
+      "tx_hash": null,
+      "created_at": "2026-05-25T14:17:01.805704+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1300,
       "event_title": "Twenty new arrests in Greece in a case of fraud involving European agricultural subsidies",
@@ -28610,8 +28676,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 22,
-        "total_amount": 35290000
+        "count": 23,
+        "total_amount": 35440000
       },
       {
         "country": "Turkey",
@@ -28674,8 +28740,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.353,
-        "events": 34
+        "burn_ratio": 0.343,
+        "events": 35
       },
       {
         "region": "Europe",
@@ -28711,8 +28777,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.647,
-        "events": 34
+        "mint_ratio": 0.657,
+        "events": 35
       }
     ],
     "supply_trend_7d": [
@@ -28748,7 +28814,7 @@
       },
       {
         "date": "2026-05-25",
-        "net_minted": 39880000,
+        "net_minted": 41280000,
         "net_burned": 55000000
       }
     ],
@@ -28766,7 +28832,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 61,
-        "negative": 110,
+        "negative": 112,
         "event_ids_positive": [
           1299,
           1298,
@@ -28831,6 +28897,8 @@
           1076
         ],
         "event_ids_negative": [
+          1303,
+          1302,
           1297,
           1295,
           1294,
@@ -28945,7 +29013,7 @@
       },
       "UDHR": {
         "positive": 25,
-        "negative": 78,
+        "negative": 80,
         "event_ids_positive": [
           1296,
           1293,
@@ -28974,6 +29042,8 @@
           1097
         ],
         "event_ids_negative": [
+          1303,
+          1302,
           1297,
           1294,
           1289,
@@ -29072,7 +29142,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 10,
+        "negative": 11,
         "event_ids_positive": [
           1290,
           1227,
@@ -29081,6 +29151,7 @@
           1105
         ],
         "event_ids_negative": [
+          1303,
           1283,
           1257,
           1256,
@@ -29257,14 +29328,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 88.2,
-      "mainstream_pct": 11.8,
+      "niche_pct": 87.3,
+      "mainstream_pct": 12.7,
       "total_sources_used": 110,
-      "articles_processed": 224
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 224,
+      "total_events": 226,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -29378,10 +29449,11 @@
       },
       {
         "name": "Construction",
-        "count": 20,
+        "count": 21,
         "burn_count": 11,
-        "mint_count": 9,
+        "mint_count": 10,
         "event_ids": [
+          1303,
           1295,
           1291,
           1290,
@@ -29548,25 +29620,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 151,
+      "total_mint": 153,
       "direct_action": {
-        "count": 98,
-        "pct": 64.9
+        "count": 100,
+        "pct": 65.4
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 7.9
+        "pct": 7.8
       },
       "untyped": {
         "count": 41,
-        "pct": 27.2
+        "pct": 26.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 888,
+      "total_mint": 890,
       "direct_action": {
-        "count": 578,
-        "pct": 65.1
+        "count": 580,
+        "pct": 65.2
       },
       "editorial_alarm": {
         "count": 63,
@@ -29579,8 +29651,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 92,
-      "institutional": 132,
-      "citizen_ratio": 0.411,
+      "institutional": 134,
+      "citizen_ratio": 0.407,
       "daily": [
         {
           "date": "2026-05-19",
@@ -29615,7 +29687,7 @@
         {
           "date": "2026-05-25",
           "citizen": 8,
-          "institutional": 20
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -29713,6 +29785,8 @@
         1073
       ],
       "event_ids_institutional": [
+        1303,
+        1302,
         1297,
         1296,
         1295,
