@@ -127,7 +127,23 @@ def main() -> int:
     # Create the event in carbon_events + execute Solana
     import json
     from agents.writer import _classify_burn_subtype, _classify_mint_subtype
-    r_verdict = json.loads(review.get("reconciler_verdict") or "{}")
+
+    def _safe_verdict(raw: object) -> dict:
+        """Parse a stored verdict to a dict, tolerating None, the JSON literal
+        "null" (json.loads -> None), arrays, or malformed text. A non-dict here
+        must never abort the resolve: the review is already marked resolved at
+        this point, so a crash would leave the row stuck in review_queue.json
+        and the /review item would never disappear (the exact symptom reported
+        2026-05-25)."""
+        if not isinstance(raw, str) or not raw:
+            return {}
+        try:
+            v = json.loads(raw)
+        except (json.JSONDecodeError, TypeError):
+            return {}
+        return v if isinstance(v, dict) else {}
+
+    r_verdict = _safe_verdict(review.get("reconciler_verdict"))
     # Propagate the per-aspect taxonomy (affected_sdgs + frameworks + magnitudes)
     # the Analyst already produced. Without this copy, every event resolved via
     # /review or auto_approve_* scripts arrives in carbon_events with empty
@@ -135,8 +151,8 @@ def main() -> int:
     # Reconciler verdicts don't carry the aspect lists — only the merged final
     # score / decision — so we fall back to Analyst A (always present) and
     # then Analyst B if A is missing for some reason.
-    a_verdict = json.loads(review.get("analyst_a_verdict") or "{}")
-    b_verdict = json.loads(review.get("analyst_b_verdict") or "{}")
+    a_verdict = _safe_verdict(review.get("analyst_a_verdict"))
+    b_verdict = _safe_verdict(review.get("analyst_b_verdict"))
     positive_aspects = a_verdict.get("positive_aspects") or b_verdict.get("positive_aspects") or []
     negative_aspects = a_verdict.get("negative_aspects") or b_verdict.get("negative_aspects") or []
     event_data = {
