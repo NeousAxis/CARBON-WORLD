@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-25T03:04:13.370546+00:00",
-  "total_events": 1272,
+  "generated_at": "2026-05-25T03:34:52.522070+00:00",
+  "total_events": 1274,
   "total_burned": 1793065870,
-  "total_minted": 1745097000,
-  "pending_reviews": 15,
+  "total_minted": 1750597000,
+  "pending_reviews": 14,
   "events": [
+    {
+      "id": 1274,
+      "event_title": "In Turkey, Erdogan backs down from closing a university amid crackdown on main opposition party",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/25/en-turquie-erdogan-renonce-a-fermer-une-universite-sur-fond-d-assaut-du-pouvoir-contre-le-principal-parti-d-opposition_6693458_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.76,
+      "confidence": 9,
+      "justification": "While the reversal of the university closure is positive, the broader repression of opposition and democratic institutions dominates the ethical evaluation. | The blocking of the university closure is a positive check on executive overreach and a defense of academic freedom, aligning with SDG 4 and UDHR Article 19. However, the simultaneous crackdown on the opposition party and imprisonment of elected officials represent severe violations of democratic rights (UDHR Articles 20-21) and SDGs 10 an",
+      "tx_hash": "5sTyW2WuT5V2RC3nPvUjqoVMosUft2y4WGNZecWPVkMfupcY63FyYakaiVgayDZcSEq7QwRs1NSWB22zptBKshNz",
+      "created_at": "2026-05-25T03:34:50.892491+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": "[{\"description\": \"Turkish judiciary or oversight body intervened to block the closure of Istanbul Bilgi University, a liberal institution known for social sciences, preventing a government overreach against academic freedom\", \"affected_sdgs\": [4], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Turkish government escalated crackdown on main opposition party CHP, including police raids on party offices and imprisonment of Istanbul mayor, undermining democratic institutions and political rights\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Government decree to close Istanbul Bilgi University, a reputable liberal institution, reflects authoritarian overreach in higher education policy\", \"affected_sdgs\": [4], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1273,
+      "event_title": "Detainees take control of a prison in western Venezuela to denounce 'tortures'",
+      "event_url": "https://www.letemps.ch/articles/des-detenus-prennent-le-controle-d-une-prison-dans-l-ouest-du-venezuela-pour-fustiger-les-tortures",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Systemic prison abuses violate core human rights despite prisoner protest revealing the issue.",
+      "tx_hash": null,
+      "created_at": "2026-05-25T03:17:01.612565+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1272,
       "event_title": "DRC in 'climate of uncertainty and fear' Ebola outbreak spreads",
@@ -27998,14 +28042,14 @@
         "total_amount": 35290000
       },
       {
+        "country": "Turkey",
+        "count": 8,
+        "total_amount": 40950000
+      },
+      {
         "country": "Brazil",
         "count": 8,
         "total_amount": 21030000
-      },
-      {
-        "country": "Turkey",
-        "count": 7,
-        "total_amount": 40450000
       },
       {
         "country": "Senegal",
@@ -28052,14 +28096,14 @@
         "events": 7
       },
       {
+        "region": "Asia",
+        "burn_ratio": 0.364,
+        "events": 11
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.342,
         "events": 38
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.333,
-        "events": 12
       },
       {
         "region": "North America",
@@ -28075,8 +28119,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.923,
-        "events": 13
+        "mint_ratio": 0.929,
+        "events": 14
       },
       {
         "region": "Africa",
@@ -28094,9 +28138,9 @@
         "events": 32
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.667,
-        "events": 12
+        "region": "Europe",
+        "mint_ratio": 0.658,
+        "events": 38
       }
     ],
     "supply_trend_7d": [
@@ -28132,7 +28176,7 @@
       },
       {
         "date": "2026-05-25",
-        "net_minted": 11300000,
+        "net_minted": 11800000,
         "net_burned": 5000000
       }
     ],
@@ -28208,6 +28252,7 @@
           1063
         ],
         "event_ids_negative": [
+          1274,
           1272,
           1270,
           1268,
@@ -28308,8 +28353,7 @@
           1070,
           1068,
           1067,
-          1065,
-          1061
+          1065
         ]
       },
       "UDHR": {
@@ -28340,6 +28384,7 @@
           1064
         ],
         "event_ids_negative": [
+          1274,
           1272,
           1270,
           1268,
@@ -28409,13 +28454,12 @@
           1075,
           1070,
           1067,
-          1065,
-          1061
+          1065
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 2,
+        "negative": 1,
         "event_ids_positive": [
           1249,
           1227,
@@ -28423,8 +28467,7 @@
           1156
         ],
         "event_ids_negative": [
-          1125,
-          1061
+          1125
         ]
       },
       "CRC": {
@@ -28604,14 +28647,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 88.0,
-      "mainstream_pct": 12.0,
-      "total_sources_used": 108,
-      "articles_processed": 212
+      "niche_pct": 87.9,
+      "mainstream_pct": 12.1,
+      "total_sources_used": 107,
+      "articles_processed": 211
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 212,
+      "total_events": 211,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -28768,9 +28811,9 @@
       },
       {
         "name": "Tech",
-        "count": 13,
+        "count": 12,
         "burn_count": 3,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           1228,
           1221,
@@ -28783,8 +28826,7 @@
           1118,
           1112,
           1081,
-          1078,
-          1062
+          1078
         ]
       },
       {
@@ -28883,25 +28925,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 146,
+      "total_mint": 145,
       "direct_action": {
         "count": 90,
-        "pct": 61.6
+        "pct": 62.1
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 8.2
+        "pct": 8.3
       },
       "untyped": {
-        "count": 44,
-        "pct": 30.1
+        "count": 43,
+        "pct": 29.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 874,
+      "total_mint": 875,
       "direct_action": {
-        "count": 565,
-        "pct": 64.6
+        "count": 566,
+        "pct": 64.7
       },
       "editorial_alarm": {
         "count": 62,
@@ -28909,13 +28951,13 @@
       },
       "untyped": {
         "count": 247,
-        "pct": 28.3
+        "pct": 28.2
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 89,
+      "citizen": 88,
       "institutional": 123,
-      "citizen_ratio": 0.42,
+      "citizen_ratio": 0.417,
       "daily": [
         {
           "date": "2026-05-19",
@@ -28950,7 +28992,7 @@
         {
           "date": "2026-05-25",
           "citizen": 0,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -29041,10 +29083,10 @@
         1071,
         1070,
         1064,
-        1063,
-        1061
+        1063
       ],
       "event_ids_institutional": [
+        1274,
         1272,
         1271,
         1270,
@@ -29166,8 +29208,7 @@
         1068,
         1067,
         1066,
-        1065,
-        1062
+        1065
       ]
     }
   }
