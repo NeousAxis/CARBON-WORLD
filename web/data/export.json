@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-25T15:06:36.182750+00:00",
-  "total_events": 1304,
-  "total_burned": 1848065870,
-  "total_minted": 1780827000,
-  "pending_reviews": 19,
+  "generated_at": "2026-05-25T15:36:10.797899+00:00",
+  "total_events": 1306,
+  "total_burned": 1855065870,
+  "total_minted": 1781527000,
+  "pending_reviews": 18,
   "events": [
+    {
+      "id": 1306,
+      "event_title": "Revealed: Floods have forced at least 67 closures at NHS hospitals since 2021",
+      "event_url": "https://www.carbonbrief.org/revealed-floods-have-forced-at-least-67-closures-at-nhs-hospitals-since-2021/",
+      "event_source": "Carbon Brief",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.67,
+      "confidence": 8,
+      "justification": "Systemic failure to protect critical healthcare infrastructure from climate impacts violates health rights and SDGs. | The repeated flooding of NHS hospital sites constitutes a direct violation of the right to health (SDG 3) and undermines the stability of essential public infrastructure (SDG 11). While the floods themselves are natural events, the systemic failure to protect critical healthcare facilities from climate impacts reflects a governance and adaptation deficit that disproportionately ",
+      "tx_hash": "3bUNw6se3FzG3SrzzKE47S6E4DUbetfL7qq9hcpx5ZMwgxcUk5KstP4FpADmvAeJTmpszWSt7qFPgBuzQrSuy93D",
+      "created_at": "2026-05-25T15:36:08.877192+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Floods have forced at least 67 closures at NHS hospitals in the UK since 2021, disrupting healthcare services and potentially compromising patient care and safety\", \"affected_sdgs\": [3, 11, 13], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 1305,
+      "event_title": "Eli Lilly says Verve’s gene editor lowers cholesterol levels in early study",
+      "event_url": "https://www.statnews.com/2026/05/25/eli-lilly-verv-102-gene-editing-cholesterol-phase-1-trial-data/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Breakthrough gene-editing therapy shows significant cholesterol reduction, supporting public health and SDG 3.",
+      "tx_hash": null,
+      "created_at": "2026-05-25T15:17:02.216064+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1304,
       "event_title": "Pope Leo XIV acknowledges Church's delay in condemning slavery",
@@ -28767,8 +28811,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.333,
-        "events": 42
+        "burn_ratio": 0.326,
+        "events": 43
       },
       {
         "region": "Africa",
@@ -28794,8 +28838,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.667,
-        "events": 42
+        "mint_ratio": 0.674,
+        "events": 43
       },
       {
         "region": "North America",
@@ -28836,7 +28880,7 @@
       },
       {
         "date": "2026-05-25",
-        "net_minted": 41280000,
+        "net_minted": 41980000,
         "net_burned": 60000000
       }
     ],
@@ -28854,7 +28898,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 62,
-        "negative": 112,
+        "negative": 113,
         "event_ids_positive": [
           1304,
           1299,
@@ -28920,6 +28964,7 @@
           1076
         ],
         "event_ids_negative": [
+          1306,
           1303,
           1302,
           1297,
@@ -29036,7 +29081,7 @@
       },
       "UDHR": {
         "positive": 26,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           1304,
           1296,
@@ -29066,6 +29111,7 @@
           1097
         ],
         "event_ids_negative": [
+          1306,
           1303,
           1302,
           1297,
@@ -29356,11 +29402,11 @@
       "niche_pct": 87.2,
       "mainstream_pct": 12.8,
       "total_sources_used": 109,
-      "articles_processed": 224
+      "articles_processed": 225
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 224,
+      "total_events": 225,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -29473,10 +29519,11 @@
       },
       {
         "name": "Construction",
-        "count": 21,
+        "count": 22,
         "burn_count": 11,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          1306,
           1303,
           1295,
           1291,
@@ -29545,6 +29592,24 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 10,
+        "burn_count": 4,
+        "mint_count": 6,
+        "event_ids": [
+          1306,
+          1291,
+          1278,
+          1230,
+          1229,
+          1205,
+          1166,
+          1160,
+          1099,
+          1087
+        ]
+      },
+      {
         "name": "Transport",
         "count": 9,
         "burn_count": 3,
@@ -29559,23 +29624,6 @@
           1169,
           1154,
           1078
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 9,
-        "burn_count": 4,
-        "mint_count": 5,
-        "event_ids": [
-          1291,
-          1278,
-          1230,
-          1229,
-          1205,
-          1166,
-          1160,
-          1099,
-          1087
         ]
       },
       {
@@ -29644,39 +29692,39 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 153,
+      "total_mint": 154,
       "direct_action": {
         "count": 100,
-        "pct": 65.4
+        "pct": 64.9
       },
       "editorial_alarm": {
-        "count": 12,
-        "pct": 7.8
+        "count": 13,
+        "pct": 8.4
       },
       "untyped": {
         "count": 41,
-        "pct": 26.8
+        "pct": 26.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 890,
+      "total_mint": 891,
       "direct_action": {
         "count": 580,
-        "pct": 65.2
+        "pct": 65.1
       },
       "editorial_alarm": {
-        "count": 63,
-        "pct": 7.1
+        "count": 64,
+        "pct": 7.2
       },
       "untyped": {
         "count": 247,
-        "pct": 27.8
+        "pct": 27.7
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 90,
+      "citizen": 91,
       "institutional": 134,
-      "citizen_ratio": 0.402,
+      "citizen_ratio": 0.404,
       "daily": [
         {
           "date": "2026-05-19",
@@ -29710,11 +29758,12 @@
         },
         {
           "date": "2026-05-25",
-          "citizen": 8,
+          "citizen": 9,
           "institutional": 23
         }
       ],
       "event_ids_citizen": [
+        1306,
         1299,
         1298,
         1287,

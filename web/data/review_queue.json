@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-25T15:06:36.265314+00:00",
-  "total_pending": 19,
+  "generated_at": "2026-05-25T15:36:10.877389+00:00",
+  "total_pending": 18,
   "reviews": [
     {
       "id": 373,
@@ -358,26 +358,6 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T12:35:48.687379+00:00",
-      "resolved_at": null,
-      "human_review_embedding": null,
-      "final_decision": null
-    },
-    {
-      "id": 438,
-      "event_title": "Eli Lilly says Verve’s gene editor lowers cholesterol levels in early study",
-      "event_url": "https://www.statnews.com/2026/05/25/eli-lilly-verv-102-gene-editing-cholesterol-phase-1-trial-data/?utm_campaign=rss",
-      "event_source": "STAT News (medicine)",
-      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Eli Lilly reports a 62% reduction in cholesterol levels in a Phase 1 gene-editing therapy trial, demonstrating significant progress in medical innovation for cardiovascular health\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The advancement in gene-editing therapy for cholesterol reduction represents a major breakthrough in public health, directly supporting SDG 3 (Good Health and Well-being). The high efficacy rate (62%) suggests a transformative potential for cardiovascular disease prevention, with no identified ethical violations in this action.\", \"snapshot_score\": 9.0, \"trajectory_score\": 8.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Long-term safety data from Phase 2/3 trials\", \"Regulatory approval timelines and conditions\", \"Scalability and cost of therapy\", \"Ethical concerns over germline editing\"], \"revaluation_checkpoint\": \"2028-05-25\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Gene-editing therapy achieves FDA/EMA approval with strong post-market safety data and broad insurance coverage, leading to global adoption and significant reduction in cardiovascular mortality\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Therapy gains conditional approval but faces safety concerns in Phase 4 trials, limiting adoption to high-risk populations and slowing mainstream use\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Major safety issues emerge (e.g., off-target effects, long-term risks), leading to regulatory bans and halting further development\", \"probability\": 0.15, \"score\": -8}], \"prospective_score\": 5.75, \"final_score\": 7.21, \"decision\": \"BURN\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Gene-editing therapy breakthrough with 62% cholesterol reduction advances SDG 3 significantly.\", \"event_country\": \"United States\"}",
-      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Eli Lilly reports a 62% reduction in cholesterol levels in a Phase 1 gene-editing therapy trial, demonstrating potential for significant cardiovascular health improvements.\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Gene-editing therapies may introduce unknown long-term risks, ethical concerns about germline modifications, and potential inequities in access to advanced treatments.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The trial's cholesterol reduction is a significant positive step for public health (SDG 3), but gene-editing raises ethical and equity concerns. The net benefit is positive given the magnitude of health improvement, though long-term risks and access disparities must be addressed.\", \"snapshot_score\": 7.5, \"trajectory_score\": 8.0, \"revaluation_score\": 5.0, \"revaluation_triggers\": [\"Long-term safety data from Phase 2/3 trials\", \"Regulatory approval timelines and conditions\", \"Public and scientific consensus on gene-editing ethics\", \"Equitable access frameworks for the therapy\"], \"revaluation_checkpoint\": \"2028-05-25\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Gene-editing therapy gains FDA/EMA approval with strong safety data and equitable access policies, leading to widespread adoption and significant public health impact.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Therapy approved but with restrictive access due to cost or regulatory hurdles, limiting impact to wealthy populations and raising ethical concerns.\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Long-term safety issues emerge, halting development or leading to recalls, and public backlash delays or blocks approval.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 3.4, \"final_score\": 5.4, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Gene-editing therapy shows strong health benefits but requires careful ethical and equity oversight.\", \"event_country\": \"United States\"}",
-      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.3, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"Breakthrough gene-editing therapy shows significant cholesterol reduction, supporting public health and SDG 3.\", \"disagreement\": true, \"reason\": \"Analyst A correctly emphasizes the transformative public health benefit of the therapy, which aligns with SDG 3. While Analyst B raises valid equity concerns, the institutional action here is the advancement of a life-saving medical treatment, which supports BURN.\"}",
-      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement | llm: Score 6.3 but 7M CBWD is disproportionate; early trial benefits are limited and ethical/equity concerns are omitted, making BURN decision unjustified.",
-      "suggested_decision": "BURN",
-      "suggested_amount_crbn": 7000000,
-      "human_verdict": null,
-      "human_amount": null,
-      "human_reason": null,
-      "status": "pending",
-      "created_at": "2026-05-25T15:06:34.517746+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
