@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-25T06:04:56.956139+00:00",
-  "total_events": 1277,
+  "generated_at": "2026-05-25T07:05:41.517627+00:00",
+  "total_events": 1279,
   "total_burned": 1798565870,
-  "total_minted": 1752247000,
+  "total_minted": 1754227000,
   "pending_reviews": 16,
   "events": [
+    {
+      "id": 1279,
+      "event_title": "Government bails out Rex's multi-million-dollar debt to regional airports",
+      "event_url": "https://www.abc.net.au/news/2026-05-25/government-bails-out-rex-debts-owed-to-regional-airports/106638756",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 480000,
+      "final_score": -1.03,
+      "confidence": 7,
+      "justification": "Public funds bail out private debt, creating moral hazard and market distortion despite infrastructure protection. | The bailout prevents immediate harm to regional aviation infrastructure and supports SDG 9 (Industry & Infrastructure) and SDG 11 (Sustainable Cities), but it also enables moral hazard by subsidizing a private entity's debt, undermining SDG 8 (Decent Work) and SDG 12 (Responsible Consumption). The net ethical balance is mixed, with the positive infrastructure protection outweighed",
+      "tx_hash": "2vdYqJ4dQPsp7mCe5JFJq5DnKWaakoQvvfwmmjBKasBQGGPmtqk8k7yh27eohwwiRAjUFDiyx6G9mtxUcJH5j9nZ",
+      "created_at": "2026-05-25T07:05:39.963158+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Federal government allocates $4.8 million to bail out council-owned airports' debts owed by Rex, preventing financial collapse of regional aviation infrastructure\", \"affected_sdgs\": [9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Bailout of a private airline (Rex) with multi-million-dollar debt using public funds, potentially rewarding poor financial management and distorting market competition\", \"affected_sdgs\": [8, 12], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1278,
+      "event_title": "Africa: Africa's Water Crisis Draining Billions, Leaders Warn",
+      "event_url": "https://allafrica.com/stories/202605250018.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.42,
+      "confidence": 8,
+      "justification": "Systemic failure to provide clean water causes massive human suffering and economic loss despite awareness. | The warning by African leaders highlights a critical systemic failure with severe human and economic consequences, violating fundamental rights to health, water, and dignity. While the act of raising awareness is a positive step toward addressing the crisis, the underlying conditions remain deeply harmful and require urgent structural intervention.",
+      "tx_hash": "5xNeyw5GRCYVRuNFj2yLQ9jFFYX2FCLhktWCrm1sBK4RZd8ke82tzokPiBJHYjhkmjT73tGXQMYz4KPvfMLr7jw4",
+      "created_at": "2026-05-25T07:05:39.818773+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Africa",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"African leaders publicly warned about the economic and social costs of poor water access, raising awareness and framing the issue as a continental priority\", \"affected_sdgs\": [1, 3, 6, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Poor access to clean water and sanitation continues to cause economic losses, poverty, disease, and inequality across Africa\", \"affected_sdgs\": [1, 3, 6, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1277,
       "event_title": "Fortescue starts construction on Western Australia’s ‘largest solar PV power plant’",
@@ -28158,8 +28202,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.857,
-        "events": 7
+        "burn_ratio": 0.75,
+        "events": 8
       },
       {
         "region": "Europe",
@@ -28242,7 +28286,7 @@
       },
       {
         "date": "2026-05-25",
-        "net_minted": 13300000,
+        "net_minted": 15280000,
         "net_burned": 10500000
       }
     ],
@@ -28260,7 +28304,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 53,
-        "negative": 98,
+        "negative": 100,
         "event_ids_positive": [
           1277,
           1271,
@@ -28317,6 +28361,8 @@
           1076
         ],
         "event_ids_negative": [
+          1279,
+          1278,
           1276,
           1274,
           1272,
@@ -28419,7 +28465,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 69,
+        "negative": 70,
         "event_ids_positive": [
           1259,
           1255,
@@ -28444,6 +28490,7 @@
           1097
         ],
         "event_ids_negative": [
+          1278,
           1276,
           1274,
           1272,
@@ -28699,14 +28746,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 89.7,
-      "mainstream_pct": 10.3,
-      "total_sources_used": 107,
-      "articles_processed": 204
+      "niche_pct": 89.9,
+      "mainstream_pct": 10.1,
+      "total_sources_used": 109,
+      "articles_processed": 206
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 204,
+      "total_events": 206,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -28815,10 +28862,11 @@
       },
       {
         "name": "Construction",
-        "count": 16,
+        "count": 17,
         "burn_count": 9,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          1279,
           1277,
           1271,
           1233,
@@ -28839,10 +28887,11 @@
       },
       {
         "name": "Finance",
-        "count": 12,
+        "count": 13,
         "burn_count": 4,
-        "mint_count": 8,
+        "mint_count": 9,
         "event_ids": [
+          1279,
           1258,
           1255,
           1243,
@@ -28913,10 +28962,11 @@
       },
       {
         "name": "Transport",
-        "count": 7,
+        "count": 8,
         "burn_count": 3,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          1279,
           1271,
           1218,
           1211,
@@ -28928,10 +28978,11 @@
       },
       {
         "name": "Water",
-        "count": 7,
+        "count": 8,
         "burn_count": 3,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          1278,
           1230,
           1229,
           1205,
@@ -28973,25 +29024,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 139,
+      "total_mint": 141,
       "direct_action": {
-        "count": 87,
-        "pct": 62.6
+        "count": 89,
+        "pct": 63.1
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 7.9
+        "pct": 7.8
       },
       "untyped": {
         "count": 41,
-        "pct": 29.5
+        "pct": 29.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 876,
+      "total_mint": 878,
       "direct_action": {
-        "count": 567,
-        "pct": 64.7
+        "count": 569,
+        "pct": 64.8
       },
       "editorial_alarm": {
         "count": 62,
@@ -28999,13 +29050,13 @@
       },
       "untyped": {
         "count": 247,
-        "pct": 28.2
+        "pct": 28.1
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 84,
-      "institutional": 120,
-      "citizen_ratio": 0.412,
+      "institutional": 122,
+      "citizen_ratio": 0.408,
       "daily": [
         {
           "date": "2026-05-19",
@@ -29040,7 +29091,7 @@
         {
           "date": "2026-05-25",
           "citizen": 0,
-          "institutional": 8
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -29130,6 +29181,8 @@
         1073
       ],
       "event_ids_institutional": [
+        1279,
+        1278,
         1277,
         1276,
         1274,
