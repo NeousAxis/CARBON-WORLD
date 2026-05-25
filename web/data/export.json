@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-25T12:05:07.677024+00:00",
-  "total_events": 1295,
-  "total_burned": 1826065870,
-  "total_minted": 1778977000,
-  "pending_reviews": 17,
+  "generated_at": "2026-05-25T12:35:50.302654+00:00",
+  "total_events": 1297,
+  "total_burned": 1831065870,
+  "total_minted": 1779127000,
+  "pending_reviews": 19,
   "events": [
+    {
+      "id": 1297,
+      "event_title": "At a Tehran press conference, we asked the regime directly 'will there be tolls'",
+      "event_url": "https://www.abc.net.au/news/2026-05-25/iran-discusses-strait-of-hormuz-toll-says-everything-costs-money/106720158",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.98,
+      "confidence": 7,
+      "justification": "Ambiguous coercion on a global chokepoint undermines stability and maritime freedom. | The journalistic act of seeking transparency is a positive step toward accountability, but the Iranian regime's vague and potentially coercive stance on the Strait of Hormuz poses significant risks to global trade and maritime freedom. The net ethical judgment is negative due to the regime's demonstrated willingness to leverage critical chokepoints for economic leverage, undermining stability and international",
+      "tx_hash": "PRdM2qpbcyFEqwhb8JvjZQrE6PpKsnrddFSmvKWHAhaDJ5NzZpD5uYxhnLbXi7WAeZn1PCke3NwrGGdPiZvNYuJ",
+      "created_at": "2026-05-25T12:35:48.696089+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": "[{\"description\": \"Journalistic inquiry by ABC News Australia into Iran's Strait of Hormuz policy, demonstrating transparency and public accountability in reporting on geopolitical matters.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Iranian regime's ambiguous signaling regarding potential tolls on the Strait of Hormuz, which could disrupt global maritime trade and violate freedom of navigation principles.\", \"affected_sdgs\": [8, 9, 14], \"violated_rights\": [\"UDHR Article 13\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1296,
+      "event_title": "Incredible milestone reached as Sweden becomes a smoke-free country",
+      "event_url": "https://www.thelocal.se/20260525/incredible-milestone-reached-as-sweden-becomes-a-smoke-free-country",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 7.02,
+      "confidence": 9,
+      "justification": "Sweden's smoke-free milestone advances public health and sets global precedent. | Sweden's achievement of smoke-free status represents a significant public health victory, directly advancing SDG 3 (Good Health and Well-being) and demonstrating effective policy implementation. The milestone reflects long-term commitment to tobacco control and measurable societal benefit with no identified ethical downsides in this action.",
+      "tx_hash": "2JbpqP43kDLXjyhbuDdXcAqDaagA3BadNf4etLv7StvbnfWaXGni9CpM93FbE7Cky1u5jX7DHM9ZEMzfLQxangbb",
+      "created_at": "2026-05-25T12:35:48.580785+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Sweden achieves smoke-free status with fewer than 5% of the population smoking regularly, demonstrating successful public health policy implementation\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Reduction in smoking aligns with global tobacco control efforts and improves population health outcomes\", \"affected_sdgs\": [3, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 1295,
       "event_title": "The BHP files: World’s biggest miner BHP backtracks on climate action with key projects put on ice, leaked documents reveal",
@@ -28563,14 +28607,14 @@
         "events": 13
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.333,
+        "events": 42
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.333,
         "events": 33
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.317,
-        "events": 41
       },
       {
         "region": "Africa",
@@ -28581,8 +28625,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.929,
-        "events": 14
+        "mint_ratio": 0.933,
+        "events": 15
       },
       {
         "region": "Africa",
@@ -28596,8 +28640,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.683,
-        "events": 41
+        "mint_ratio": 0.667,
+        "events": 42
       },
       {
         "region": "North America",
@@ -28638,8 +28682,8 @@
       },
       {
         "date": "2026-05-25",
-        "net_minted": 39730000,
-        "net_burned": 38000000
+        "net_minted": 39880000,
+        "net_burned": 43000000
       }
     ],
     "event_of_the_day": {
@@ -28655,9 +28699,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 58,
-        "negative": 109,
+        "positive": 59,
+        "negative": 110,
         "event_ids_positive": [
+          1296,
           1293,
           1291,
           1290,
@@ -28718,6 +28763,7 @@
           1076
         ],
         "event_ids_negative": [
+          1297,
           1295,
           1294,
           1289,
@@ -28830,9 +28876,10 @@
         ]
       },
       "UDHR": {
-        "positive": 24,
-        "negative": 77,
+        "positive": 25,
+        "negative": 78,
         "event_ids_positive": [
+          1296,
           1293,
           1290,
           1285,
@@ -28859,6 +28906,7 @@
           1097
         ],
         "event_ids_negative": [
+          1297,
           1294,
           1289,
           1288,
@@ -29142,11 +29190,11 @@
       "niche_pct": 88.2,
       "mainstream_pct": 11.8,
       "total_sources_used": 110,
-      "articles_processed": 220
+      "articles_processed": 222
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 220,
+      "total_events": 222,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -29331,6 +29379,23 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 9,
+        "burn_count": 3,
+        "mint_count": 6,
+        "event_ids": [
+          1297,
+          1279,
+          1271,
+          1218,
+          1211,
+          1203,
+          1169,
+          1154,
+          1078
+        ]
+      },
+      {
         "name": "Water",
         "count": 9,
         "burn_count": 4,
@@ -29380,48 +29445,32 @@
           1139,
           1103
         ]
-      },
-      {
-        "name": "Transport",
-        "count": 8,
-        "burn_count": 3,
-        "mint_count": 5,
-        "event_ids": [
-          1279,
-          1271,
-          1218,
-          1211,
-          1203,
-          1169,
-          1154,
-          1078
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 70,
+      "total_burn": 71,
       "direct_action": {
-        "count": 53,
-        "pct": 75.7
+        "count": 54,
+        "pct": 76.1
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 7.1
+        "pct": 7.0
       },
       "untyped": {
         "count": 12,
-        "pct": 17.1
+        "pct": 16.9
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 396,
+      "total_burn": 397,
       "direct_action": {
-        "count": 259,
-        "pct": 65.4
+        "count": 260,
+        "pct": 65.5
       },
       "editorial_consciousness": {
         "count": 24,
-        "pct": 6.1
+        "pct": 6.0
       },
       "untyped": {
         "count": 113,
@@ -29429,24 +29478,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 150,
+      "total_mint": 151,
       "direct_action": {
-        "count": 97,
-        "pct": 64.7
+        "count": 98,
+        "pct": 64.9
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 8.0
+        "pct": 7.9
       },
       "untyped": {
         "count": 41,
-        "pct": 27.3
+        "pct": 27.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 887,
+      "total_mint": 888,
       "direct_action": {
-        "count": 577,
+        "count": 578,
         "pct": 65.1
       },
       "editorial_alarm": {
@@ -29460,8 +29509,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 130,
-      "citizen_ratio": 0.409,
+      "institutional": 132,
+      "citizen_ratio": 0.405,
       "daily": [
         {
           "date": "2026-05-19",
@@ -29496,7 +29545,7 @@
         {
           "date": "2026-05-25",
           "citizen": 6,
-          "institutional": 18
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
@@ -29592,6 +29641,8 @@
         1073
       ],
       "event_ids_institutional": [
+        1297,
+        1296,
         1295,
         1294,
         1293,
