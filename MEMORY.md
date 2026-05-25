@@ -4,6 +4,20 @@
 
 ---
 
+## 🔧 2026-05-25 — /review : items qui ne disparaissent pas après décision
+
+Cyril : "les 6 derniers articles ne veulent pas s'effacer après avoir cliqué ma décision".
+
+**Cause racine** : conséquence directe du zombie worker (incident 2026-05-22). Le `worker/main.py` bloqué 4 jours tenait un **lock SQLite** → les écritures de `resolve_review.py` échouaient ("database is locked") → `resolve_review()` retournait False → route web 500 → l'item restait pending dans review_queue.json. **Tuer le zombie a restauré le resolve** (vérifié : reject #441 + approve #430 retirent bien les items).
+
+**Diagnostic mené** : CLI resolve OK, verdicts pending tous valides+dicts, les 2 `review_queue.json` (data/ et web/data/) en sync, carbon-web cwd=web/ lit le bon fichier, frontend `onResolved={fetchQueue}` correct. Tout sain une fois le zombie mort.
+
+**Durcissement (commit `52169cf`)** : `resolve_review.py::_safe_verdict()` coerce None / `"null"` / arrays / texte malformé → `{}` pour reconciler/analyst_a/analyst_b verdicts. Évite qu'un verdict `"null"` (json.loads→None, puis None.get()→AttributeError) abort le resolve APRÈS le marquage resolved (même piège que l'item #27 côté front, 2026-05-09). Defense-in-depth.
+
+**Fragilité notée (non corrigée)** : `git reset --hard origin/main` (dans run_vps.sh + déploiements) restaure review_queue.json/export.json à la version committée, qui peut être plus ancienne que la DB → divergence transitoire. Self-heal au prochain run/resolve (export régénéré depuis la DB = source de vérité). Si ça gêne un jour : .gitignore les exports ou régénérer après reset.
+
+---
+
 ## 🧭 2026-05-22 — Dashboard ODD/PB + WorldMap scroll + pipeline zombie ressuscité
 
 Branche `feat/clientearth-feed-test` (poussée sur main au fil de l'eau via fast-forward).
