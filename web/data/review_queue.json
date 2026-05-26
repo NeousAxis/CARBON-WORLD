@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T18:34:57.968811+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-26T19:04:54.216104+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 444,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T20:35:09.039399+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 461,
+      "event_title": "Ramaphosa takes Phala Phala report to court in bid to block impeachment process",
+      "event_url": "https://mg.co.za/news/2026-05-26-ramaphosa-takes-phala-phala-report-to-court-in-bid-to-block-impeachment-process/",
+      "event_source": "Mail & Guardian (South Africa)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ramaphosa's legal action could set a precedent for accountability and due process in governance.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The legal challenge may delay the impeachment process, potentially undermining parliamentary accountability and public trust in democratic institutions.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Ramaphosa's legal challenge introduces a procedural safeguard for due process (positive), but risks delaying accountability mechanisms (negative). The net ethical impact is mixed, with the potential for both strengthening and weakening democratic governance.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Court ruling on the Phala Phala report's validity\", \"Parliament's response to the court decision\", \"Public trust in the impeachment process\"], \"revaluation_checkpoint\": \"2028-05-26\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court upholds the report, leading to a fair and transparent impeachment process.\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Court delays or invalidates the report, leading to prolonged political uncertainty.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Court rules in favor of Ramaphosa, enabling political evasion of accountability.\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -2.45, \"final_score\": -2.39, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Legal challenge risks delaying accountability and undermines democratic process.\", \"event_country\": \"South Africa\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Judicial review of a parliamentary impeachment process to ensure constitutional compliance and prevent potential abuse of power\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Use of legal institutions to uphold separation of powers and prevent arbitrary political action\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Attempt to obstruct a legitimate constitutional impeachment process, potentially undermining accountability for alleged misconduct\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Erosion of public trust in institutions if the legal challenge is perceived as an attempt to evade accountability\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The judicial intervention upholds constitutional principles and separation of powers, which are critical for democratic governance. However, the attempt to block an impeachment process raises concerns about accountability and the potential misuse of legal mechanisms to avoid scrutiny. The net ethical position is mixed, with the positive aspects of institutional checks and balances outweighing the negative concerns about evasion of accountability.\", \"snapshot_score\": 3.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1, \"revaluation_triggers\": [\"Constitutional Court ruling on the matter\", \"Outcome of the impeachment process\", \"Public perception and trust in institutions post-ruling\", \"Potential legislative reforms to clarify impeachment procedures\"], \"revaluation_checkpoint\": \"2028-05-26\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Constitutional Court rules in favor of Ramaphosa, setting a precedent that strengthens judicial oversight of parliamentary processes, leading to long-term institutional resilience\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Court upholds impeachment process, reinforcing accountability but creating short-term political instability; public trust in institutions remains stable\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Legal challenge backfires, accelerating impeachment and triggering broader institutional crisis, damaging democratic norms\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.1, \"final_score\": 1.6, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Judicial intervention balances constitutional principles with accountability concerns.\", \"event_country\": \"South Africa\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.17, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action seeks to delay accountability through legal means, undermining democratic process.\", \"disagreement\": true, \"reason\": \"The action involves using legal mechanisms to block an impeachment process, which risks undermining accountability and democratic governance.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict BURN is opposite; action undermines accountability and democratic governance, a negative (MINT) impact.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-26T19:04:52.000259+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
