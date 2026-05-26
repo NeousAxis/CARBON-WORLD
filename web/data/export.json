@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-26T14:36:53.050334+00:00",
-  "total_events": 1390,
-  "total_burned": 1976600870,
-  "total_minted": 1924382000,
+  "generated_at": "2026-05-26T15:05:07.049305+00:00",
+  "total_events": 1392,
+  "total_burned": 1981600870,
+  "total_minted": 1925182000,
   "pending_reviews": 6,
   "events": [
+    {
+      "id": 1392,
+      "event_title": "Facing Desertification, Man’s Campaign Draws 30,000 Volunteers to Plant 1 Million Trees in his County",
+      "event_url": "https://www.goodnewsnetwork.org/30000-volunteers-respond-to-countys-call-to-help-combat-desertification-and-plant-1-million-trees/",
+      "event_source": "Good News Network",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Large-scale citizen-led ecological restoration with measurable environmental impact and high potential for replication. | The campaign represents a significant positive action against desertification, aligning with climate action (SDG 13) and life on land (SDG 15) by mobilizing a large-scale, citizen-led ecological restoration effort. The cross-regional volunteerism also strengthens community bonds and environmental consciousness, with no evident ethical downsides in the provided data.",
+      "tx_hash": "61T6K9c9FNfCmRppsQvyUS5BYvB9UfGn5sqB6L1aKVfCWuBGtXbR16o2amzpndx7VtUVLmPuPs4pQgQ8Uqi4eBGi",
+      "created_at": "2026-05-26T15:05:04.840753+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"A social media campaign 'Plant a Tree in Minqin' mobilized 30,000 volunteers to plant 1 million trees in Minqin County, China, directly addressing desertification and environmental degradation.\", \"affected_sdgs\": [13, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The campaign demonstrates cross-regional collaboration, with urban volunteers traveling to rural areas to participate in ecological restoration, fostering community engagement and environmental awareness.\", \"affected_sdgs\": [11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1391,
+      "event_title": "Iran’s president praises military after US strikes",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/26/irans-president-praises-military-after-us-strikes?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 800000,
+      "final_score": -4.05,
+      "confidence": 9,
+      "justification": "Both parties' militaristic actions and rhetoric escalate regional tensions and violate international peace and human rights norms. | The act of praising military capabilities in response to armed conflict directly undermines peace and justice (SDG 16) and violates the universal right to a peaceful and inclusive society (UDHR Article 28). The magnitude is high due to the risk of escalation and normalization of militaristic rhetoric.",
+      "tx_hash": "44ndAoJu2eVDvpex3NBXfLjFhYKtHyiu5wQWXarzj7tipA8SuVjnR4ZQXEow4vsnxerREFzq3FsQu7SUYDNZr6TZ",
+      "created_at": "2026-05-26T15:05:04.712945+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Iran's president praises military capabilities following US strikes, potentially escalating regional tensions and undermining diplomatic efforts for peace\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1390,
       "event_title": "Starbucks faces South Korean backlash following campaign echoing 1987 massacre",
@@ -30648,14 +30692,14 @@
         "events": 12
       },
       {
+        "region": "Asia",
+        "burn_ratio": 0.429,
+        "events": 21
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.413,
         "events": 46
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.4,
-        "events": 20
       },
       {
         "region": "Europe",
@@ -30671,8 +30715,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.952,
-        "events": 21
+        "mint_ratio": 0.955,
+        "events": 22
       },
       {
         "region": "Africa",
@@ -30690,9 +30734,9 @@
         "events": 59
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.6,
-        "events": 20
+        "region": "North America",
+        "mint_ratio": 0.587,
+        "events": 46
       }
     ],
     "supply_trend_7d": [
@@ -30728,8 +30772,8 @@
       },
       {
         "date": "2026-05-26",
-        "net_minted": 41035000,
-        "net_burned": 84900000
+        "net_minted": 41835000,
+        "net_burned": 89900000
       }
     ],
     "event_of_the_day": {
@@ -30745,9 +30789,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 84,
-        "negative": 144,
+        "positive": 85,
+        "negative": 145,
         "event_ids_positive": [
+          1392,
           1387,
           1386,
           1385,
@@ -30834,6 +30879,7 @@
           1076
         ],
         "event_ids_negative": [
+          1391,
           1390,
           1389,
           1379,
@@ -30982,7 +31028,7 @@
       },
       "UDHR": {
         "positive": 32,
-        "negative": 107,
+        "negative": 108,
         "event_ids_positive": [
           1385,
           1377,
@@ -31018,6 +31064,7 @@
           1097
         ],
         "event_ids_negative": [
+          1391,
           1390,
           1389,
           1379,
@@ -31289,9 +31336,10 @@
         ]
       },
       "PB": {
-        "positive": 41,
+        "positive": 42,
         "negative": 42,
         "event_ids_positive": [
+          1392,
           1387,
           1386,
           1384,
@@ -31384,11 +31432,11 @@
       "niche_pct": 73.5,
       "mainstream_pct": 26.5,
       "total_sources_used": 117,
-      "articles_processed": 308
+      "articles_processed": 310
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 308,
+      "total_events": 310,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -31557,6 +31605,31 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 17,
+        "burn_count": 0,
+        "mint_count": 17,
+        "event_ids": [
+          1391,
+          1363,
+          1360,
+          1356,
+          1355,
+          1352,
+          1342,
+          1337,
+          1264,
+          1245,
+          1223,
+          1211,
+          1163,
+          1144,
+          1140,
+          1123,
+          1075
+        ]
+      },
+      {
         "name": "Tech",
         "count": 16,
         "burn_count": 6,
@@ -31578,30 +31651,6 @@
           1112,
           1081,
           1078
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 16,
-        "burn_count": 0,
-        "mint_count": 16,
-        "event_ids": [
-          1363,
-          1360,
-          1356,
-          1355,
-          1352,
-          1342,
-          1337,
-          1264,
-          1245,
-          1223,
-          1211,
-          1163,
-          1144,
-          1140,
-          1123,
-          1075
         ]
       },
       {
@@ -31694,25 +31743,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 112,
+      "total_burn": 113,
       "direct_action": {
-        "count": 78,
-        "pct": 69.6
+        "count": 79,
+        "pct": 69.9
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 5.4
+        "pct": 5.3
       },
       "untyped": {
         "count": 28,
-        "pct": 25.0
+        "pct": 24.8
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 441,
+      "total_burn": 442,
       "direct_action": {
-        "count": 284,
-        "pct": 64.4
+        "count": 285,
+        "pct": 64.5
       },
       "editorial_consciousness": {
         "count": 25,
@@ -31724,24 +31773,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 196,
+      "total_mint": 197,
       "direct_action": {
-        "count": 129,
-        "pct": 65.8
+        "count": 130,
+        "pct": 66.0
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.7
+        "pct": 7.6
       },
       "untyped": {
         "count": 52,
-        "pct": 26.5
+        "pct": 26.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 933,
+      "total_mint": 934,
       "direct_action": {
-        "count": 609,
+        "count": 610,
         "pct": 65.3
       },
       "editorial_alarm": {
@@ -31750,13 +31799,13 @@
       },
       "untyped": {
         "count": 258,
-        "pct": 27.7
+        "pct": 27.6
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 119,
-      "institutional": 189,
-      "citizen_ratio": 0.386,
+      "citizen": 120,
+      "institutional": 190,
+      "citizen_ratio": 0.387,
       "daily": [
         {
           "date": "2026-05-20",
@@ -31790,11 +31839,12 @@
         },
         {
           "date": "2026-05-26",
-          "citizen": 11,
-          "institutional": 26
+          "citizen": 12,
+          "institutional": 27
         }
       ],
       "event_ids_citizen": [
+        1392,
         1386,
         1379,
         1377,
@@ -31916,6 +31966,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1391,
         1390,
         1389,
         1387,
