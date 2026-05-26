@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-26T11:36:51.355923+00:00",
-  "total_events": 1378,
+  "generated_at": "2026-05-26T12:05:58.836852+00:00",
+  "total_events": 1379,
   "total_burned": 1935600870,
-  "total_minted": 1921932000,
+  "total_minted": 1923432000,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 1379,
+      "event_title": "Libyan forces detain Gaza land convoy activists at Sirte checkpoint",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/26/libyan-forces-detain-gaza-land-convoy-activists-at-sirte-checkpoint?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.21,
+      "confidence": 8,
+      "justification": "Detention of humanitarian aid activists violates core human rights and humanitarian principles. | The detention of Gaza land convoy activists by Libyan forces constitutes a clear violation of humanitarian principles and human rights, obstructing aid delivery to a population in need. While the action itself is negative, the broader context underscores systemic failures in humanitarian access and the rule of law.",
+      "tx_hash": "2qVh9MKCPTaXukS4PgvmgZZFZSyJ1iASdUmHzsQv1SYUnorqjmLAhk8Lbkgpy62bGRm7L8H5WJRbFDFqQkPKDZM7",
+      "created_at": "2026-05-26T12:05:56.806769+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Libya",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Detention of activists attempting to deliver humanitarian aid to Gaza highlights the obstruction of aid delivery, which undermines humanitarian principles and international law.\", \"affected_sdgs\": [1, 2, 3, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Libyan forces loyal to Khalifa Haftar detained activists attempting to deliver humanitarian aid to Gaza, violating freedom of movement, humanitarian access, and potentially UDHR Article 13 (freedom of movement) and Article 25 (right to adequate standard of living).\", \"affected_sdgs\": [1, 2, 3, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1378,
       "event_title": "Swedish government to slash welfare payments to large families",
@@ -30407,8 +30429,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.95,
-        "events": 20
+        "mint_ratio": 0.952,
+        "events": 21
       },
       {
         "region": "Africa",
@@ -30464,7 +30486,7 @@
       },
       {
         "date": "2026-05-26",
-        "net_minted": 38885000,
+        "net_minted": 40385000,
         "net_burned": 43900000
       }
     ],
@@ -30482,7 +30504,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 77,
-        "negative": 141,
+        "negative": 142,
         "event_ids_positive": [
           1377,
           1375,
@@ -30563,6 +30585,7 @@
           1076
         ],
         "event_ids_negative": [
+          1379,
           1378,
           1376,
           1373,
@@ -30708,7 +30731,7 @@
       },
       "UDHR": {
         "positive": 31,
-        "negative": 104,
+        "negative": 105,
         "event_ids_positive": [
           1377,
           1362,
@@ -30743,6 +30766,7 @@
           1097
         ],
         "event_ids_negative": [
+          1379,
           1378,
           1376,
           1372,
@@ -30868,7 +30892,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 19,
+        "negative": 20,
         "event_ids_positive": [
           1357,
           1290,
@@ -30878,6 +30902,7 @@
           1105
         ],
         "event_ids_negative": [
+          1379,
           1378,
           1376,
           1369,
@@ -31098,11 +31123,11 @@
       "niche_pct": 75.2,
       "mainstream_pct": 24.8,
       "total_sources_used": 117,
-      "articles_processed": 298
+      "articles_processed": 299
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 298,
+      "total_events": 299,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -31428,24 +31453,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 193,
+      "total_mint": 194,
       "direct_action": {
-        "count": 126,
-        "pct": 65.3
+        "count": 127,
+        "pct": 65.5
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.8
+        "pct": 7.7
       },
       "untyped": {
         "count": 52,
-        "pct": 26.9
+        "pct": 26.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 930,
+      "total_mint": 931,
       "direct_action": {
-        "count": 606,
+        "count": 607,
         "pct": 65.2
       },
       "editorial_alarm": {
@@ -31458,9 +31483,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 117,
+      "citizen": 118,
       "institutional": 181,
-      "citizen_ratio": 0.393,
+      "citizen_ratio": 0.395,
       "daily": [
         {
           "date": "2026-05-20",
@@ -31494,11 +31519,12 @@
         },
         {
           "date": "2026-05-26",
-          "citizen": 9,
+          "citizen": 10,
           "institutional": 18
         }
       ],
       "event_ids_citizen": [
+        1379,
         1377,
         1371,
         1369,
