@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T20:04:55.698492+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-26T20:35:29.600376+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 444,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T20:35:09.039399+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 462,
+      "event_title": "Wiradjuri slam energy company's 'inexcusable' damage to rock shelter",
+      "event_url": "https://www.abc.net.au/news/2026-05-27/wiradjuri-community-say-acerez-shelter-destruction-inexcusable/106722794",
+      "event_source": "ABC News Australia",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Wiradjuri community members publicly condemned the destruction of a culturally significant rock shelter, demonstrating active cultural preservation and community voice against harmful development.\", \"affected_sdgs\": [11, 15], \"magnitude\": 5, \"frameworks\": [\"UNDRIP\", \"SDG\"]}], \"negative_aspects\": [{\"description\": \"Energy company destroyed a culturally significant Wiradjuri rock shelter to advance a renewable energy project, causing irreversible cultural and ecological harm.\", \"affected_sdgs\": [7, 11, 15], \"violated_rights\": [\"UNDRIP Article 8\", \"UNDRIP Article 11\"], \"magnitude\": 9, \"frameworks\": [\"UNDRIP\", \"SDG\", \"Animal\"]}], \"ethical_synthesis\": \"The destruction of a culturally significant Wiradjuri rock shelter by an energy company for a renewable energy project represents a severe violation of indigenous rights and cultural heritage. While the community's vocal opposition demonstrates active cultural preservation efforts, the act itself undermines indigenous rights and planetary boundaries related to cultural and biological heritage.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Completion of legal proceedings by Wiradjuri community\", \"Implementation of stronger indigenous heritage protections by NSW government\", \"Public backlash leading to policy changes in renewable energy siting\", \"Technological advances reducing need for large-scale infrastructure\"], \"revaluation_checkpoint\": \"2028-05-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Legal victory for Wiradjuri community leads to stronger heritage protections and renewable energy projects incorporating indigenous consultation, reversing the trajectory.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial legal remedy with symbolic reparations but no systemic change; renewable energy expansion continues with minimal indigenous consultation.\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"No meaningful legal or policy response; continued destruction of indigenous sites for renewable energy projects accelerates.\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.85, \"final_score\": -5.89, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Irreversible cultural destruction by energy company outweighs community opposition.\", \"event_country\": \"Australia\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Wiradjuri community members publicly condemned the destruction of a culturally significant rock shelter, demonstrating active assertion of Indigenous rights and cultural heritage protection.\", \"affected_sdgs\": [11, 15], \"magnitude\": 5, \"frameworks\": [\"UNDRIP\", \"SDG\"]}, {\"description\": \"The community's vocal opposition highlights the importance of Indigenous consultation and consent in development projects, aligning with UNDRIP principles.\", \"affected_sdgs\": [10, 16], \"magnitude\": 4, \"frameworks\": [\"UNDRIP\", \"SDG\"]}], \"negative_aspects\": [{\"description\": \"An energy company destroyed a culturally significant Wiradjuri rock shelter to advance a renewable energy project, violating Indigenous rights and cultural heritage.\", \"affected_sdgs\": [7, 11, 15], \"violated_rights\": [\"UNDRIP Article 11\", \"UNDRIP Article 26\"], \"magnitude\": 8, \"frameworks\": [\"UNDRIP\", \"SDG\", \"Animal\"]}], \"ethical_synthesis\": \"The Wiradjuri community's condemnation of the rock shelter's destruction represents a positive assertion of Indigenous rights and cultural preservation. However, the energy company's action directly undermines these rights and harms biodiversity and cultural heritage, creating a net negative ethical outcome.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Energy company faces legal consequences or reparations\", \"Wiradjuri community secures legal protection for cultural sites\", \"Renewable energy project is halted or redesigned to avoid further damage\", \"Government strengthens Indigenous consultation laws\"], \"revaluation_checkpoint\": \"2028-05-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Energy company is held legally accountable, Wiradjuri cultural heritage is protected, and renewable energy projects incorporate Indigenous consultation frameworks.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Legal battles continue without resolution, cultural damage is acknowledged but unaddressed, and renewable energy projects proceed with minimal Indigenous input.\", \"probability\": 0.5, \"score\": -4}, {\"name\": \"C\", \"description\": \"Wiradjuri community secures landmark legal victory, setting a precedent for Indigenous rights in development projects, but broader systemic change is slow.\", \"probability\": 0.2, \"score\": 5}], \"prospective_score\": 0.4, \"final_score\": -2.85, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Destruction of Indigenous cultural heritage for renewable energy undermines ethical and legal frameworks.\", \"event_country\": \"Australia\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -4.98, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"Destruction of Indigenous cultural heritage violates rights and ethical norms.\", \"disagreement\": false, \"reason\": \"Both analysts agree the destruction of the rock shelter is ethically negative. The action of destroying a culturally significant site for a renewable energy project harms Indigenous rights and heritage, warranting a BURN.\"}",
+      "sentinel_concern": "llm: Verdict polarity error: destruction of Indigenous heritage is negative, should be MINT. Decision BURN contradicts justification and reality.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-26T20:35:27.275491+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
