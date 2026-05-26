@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-26T02:04:35.739400+00:00",
-  "total_events": 1350,
+  "generated_at": "2026-05-26T02:34:45.754664+00:00",
+  "total_events": 1352,
   "total_burned": 1893200870,
-  "total_minted": 1887547000,
-  "pending_reviews": 3,
+  "total_minted": 1893047000,
+  "pending_reviews": 2,
   "events": [
+    {
+      "id": 1352,
+      "event_title": "USA strikes missile sites and boats in Iran",
+      "event_url": "https://www.tagesschau.de/ausland/asien/iran-usa-202.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.6,
+      "confidence": 8,
+      "justification": "Unilateral military strike violates international law and escalates conflict. | The US military action constitutes a clear violation of international law and human rights frameworks, undermining peace and sovereignty. While framed as self-defense, the unilateral strike escalates conflict without proven imminent threat, violating core principles of the UN Charter and UDHR. The magnitude of harm is high due to the potential for regional destabilization and civilian impact.",
+      "tx_hash": "3queTpqfKMpyS8pzCdDnyHSpDsVg3KD5kbuxzdhmgb4dkaQ5aZgkrJnPcpJ2Esv5CcDdx941bjVhNaZq9jctddfi",
+      "created_at": "2026-05-26T02:34:43.614873+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US military strikes missile sites and boats in Iran under the guise of self-defense, escalating regional tensions and violating international norms of sovereignty and proportionality\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 22\", \"UNDRIP Article 3\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1351,
+      "event_title": "Canada's Carney calls treatment of Gaza flotilla activists 'unacceptable'",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/canadas-carney-calls-treatment-gaza-flotilla-activists-unacceptable",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | State-sanctioned mistreatment and dehumanizing rhetoric by Israeli officials represent institutional harm.",
+      "tx_hash": null,
+      "created_at": "2026-05-26T02:17:01.790039+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1350,
       "event_title": "Afghanistan's crisis deepens hidden violence against women",
@@ -29710,8 +29754,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 23,
-        "total_amount": 35440000
+        "count": 24,
+        "total_amount": 40440000
       },
       {
         "country": "Turkey",
@@ -29774,8 +29818,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.361,
-        "events": 36
+        "burn_ratio": 0.351,
+        "events": 37
       },
       {
         "region": "Europe",
@@ -29811,8 +29855,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.639,
-        "events": 36
+        "mint_ratio": 0.649,
+        "events": 37
       }
     ],
     "supply_trend_7d": [
@@ -29848,7 +29892,7 @@
       },
       {
         "date": "2026-05-26",
-        "net_minted": 7650000,
+        "net_minted": 12650000,
         "net_burned": 2200000
       }
     ],
@@ -29866,7 +29910,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 68,
-        "negative": 128,
+        "negative": 129,
         "event_ids_positive": [
           1349,
           1348,
@@ -29938,6 +29982,7 @@
           1076
         ],
         "event_ids_negative": [
+          1352,
           1350,
           1346,
           1345,
@@ -30070,7 +30115,7 @@
       },
       "UDHR": {
         "positive": 28,
-        "negative": 93,
+        "negative": 94,
         "event_ids_positive": [
           1311,
           1308,
@@ -30102,6 +30147,7 @@
           1097
         ],
         "event_ids_negative": [
+          1352,
           1350,
           1345,
           1344,
@@ -30242,7 +30288,7 @@
       },
       "UNDRIP": {
         "positive": 25,
-        "negative": 26,
+        "negative": 27,
         "event_ids_positive": [
           1349,
           1334,
@@ -30271,6 +30317,7 @@
           1085
         ],
         "event_ids_negative": [
+          1352,
           1350,
           1346,
           1342,
@@ -30423,11 +30470,11 @@
       "niche_pct": 79.3,
       "mainstream_pct": 20.7,
       "total_sources_used": 116,
-      "articles_processed": 276
+      "articles_processed": 277
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 276,
+      "total_events": 277,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -30448,6 +30495,20 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 6,
+        "burn_count": 4,
+        "mint_count": 2,
+        "event_ids": [
+          1352,
+          1187,
+          1175,
+          1133,
+          1120,
+          1101
+        ]
+      },
+      {
         "name": "WHO",
         "count": 6,
         "burn_count": 2,
@@ -30459,19 +30520,6 @@
           1196,
           1096,
           1093
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 5,
-        "burn_count": 4,
-        "mint_count": 1,
-        "event_ids": [
-          1187,
-          1175,
-          1133,
-          1120,
-          1101
         ]
       },
       {
@@ -30632,10 +30680,11 @@
       },
       {
         "name": "Defense",
-        "count": 11,
+        "count": 12,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          1352,
           1342,
           1337,
           1264,
@@ -30736,24 +30785,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 180,
+      "total_mint": 181,
       "direct_action": {
-        "count": 114,
-        "pct": 63.3
+        "count": 115,
+        "pct": 63.5
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 7.8
+        "pct": 7.7
       },
       "untyped": {
         "count": 52,
-        "pct": 28.9
+        "pct": 28.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 917,
+      "total_mint": 918,
       "direct_action": {
-        "count": 594,
+        "count": 595,
         "pct": 64.8
       },
       "editorial_alarm": {
@@ -30767,8 +30816,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 109,
-      "institutional": 167,
-      "citizen_ratio": 0.395,
+      "institutional": 168,
+      "citizen_ratio": 0.394,
       "daily": [
         {
           "date": "2026-05-20",
@@ -30803,7 +30852,7 @@
         {
           "date": "2026-05-26",
           "citizen": 1,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -30918,6 +30967,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1352,
         1350,
         1348,
         1347,
