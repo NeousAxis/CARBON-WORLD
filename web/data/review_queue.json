@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T16:34:54.032723+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-26T17:05:01.666922+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 444,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T20:35:09.039399+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 460,
+      "event_title": "China’s Shark Finning Could Lead to U.S. Seafood Sanctions",
+      "event_url": "https://sentientmedia.org/chinas-shark-finning-could-lead-to-seafood-sanctions/",
+      "event_source": "Sentient Media",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"U.S. government petitioned to impose sanctions on Chinese seafood imports due to illegal shark finning practices by China\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The petition represents a concrete action to address illegal shark finning, a practice that severely harms marine biodiversity and violates animal rights. By targeting seafood imports, the U.S. could enforce global pressure on China to curb these activities, aligning with SDGs 12, 13, 14, and 15, as well as planetary boundaries for biodiversity and ocean health.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 6.0, \"revaluation_triggers\": [\"U.S. sanctions are implemented and enforced\", \"China responds with countermeasures or reforms\", \"Global seafood market shifts away from Chinese imports\", \"Scientific evidence of shark population recovery emerges\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"U.S. imposes sanctions, China reforms shark finning laws, global seafood markets shift toward sustainable practices\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"U.S. imposes partial sanctions, China makes minor reforms, global impact is limited but positive\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"U.S. sanctions fail to materialize, China continues shark finning, marine biodiversity declines further\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 5.45, \"final_score\": 6.83, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Petition to sanction illegal shark finning aligns with marine conservation and animal rights.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"U.S. government petition to sanction Chinese seafood imports due to illegal shark finning, aiming to reduce wildlife trafficking and protect marine biodiversity\", \"affected_sdgs\": [12, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"China’s ongoing illegal shark fin trade and potential U.S. sanctions could escalate trade tensions and harm economic relations between the two nations\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The petition represents a proactive step to enforce wildlife protection laws and aligns with SDGs 12, 14, and 15 by targeting illegal shark finning. However, the underlying issue of China’s shark fin trade remains unresolved, and sanctions risk broader geopolitical and economic consequences.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Effectiveness of sanctions in reducing shark finning\", \"China’s policy changes or enforcement improvements\", \"U.S. economic retaliation or trade war escalation\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Sanctions successfully reduce shark finning and prompt China to enforce stricter wildlife protection laws\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Sanctions have limited impact on shark finning, and trade tensions escalate without resolving the core issue\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Sanctions trigger a trade war, harming global seafood markets and biodiversity conservation efforts\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 4.1, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Petition advances wildlife protection but risks geopolitical harm.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.31, \"confidence\": 8, \"amount_cbwd\": 5000000, \"justification\": \"Petition to sanction illegal shark finning supports marine conservation and animal rights.\", \"disagreement\": true, \"reason\": \"The institutional action is a petition to impose sanctions on illegal shark finning, which protects marine biodiversity and animal rights. Analyst A correctly identifies this as a BURN action. While Analyst B raises valid geopolitical concerns, the ethical evaluation focuses on the action's alignment with conservation and rights protection.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-26T17:04:58.968020+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
