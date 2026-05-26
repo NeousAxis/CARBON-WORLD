@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-26T11:05:17.036667+00:00",
-  "total_events": 1376,
-  "total_burned": 1934100870,
-  "total_minted": 1921182000,
-  "pending_reviews": 2,
+  "generated_at": "2026-05-26T11:36:51.355923+00:00",
+  "total_events": 1378,
+  "total_burned": 1935600870,
+  "total_minted": 1921932000,
+  "pending_reviews": 3,
   "events": [
+    {
+      "id": 1378,
+      "event_title": "Swedish government to slash welfare payments to large families",
+      "event_url": "https://www.thelocal.se/20250918/government-proposes-cutting-welfare-to-large-families",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": -4.01,
+      "confidence": 8,
+      "justification": "Welfare cuts to large families violate child rights and risk systemic harm. | The proposal aims to incentivize work but risks deepening poverty and violating children's rights to adequate living standards. The policy's negative impacts on family welfare and child development outweigh its potential economic benefits, particularly given Sweden's historically strong social safety nets.",
+      "tx_hash": "56RandDPJPdLJ8C7aZQrubCe2ACwDwZ6X9RPw7QiDDx2XgG11d6oesE5kkwepBnYJAG2wUgKhC7DB8TJMfAJ9BKP",
+      "created_at": "2026-05-26T11:36:49.234990+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Government proposal to incentivize employment among large families, potentially reducing long-term welfare dependency\", \"affected_sdgs\": [1, 8], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Slashing welfare payments to large families risks increasing child poverty and undermining family stability\", \"affected_sdgs\": [1, 2, 3], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Policy disproportionately targets vulnerable households, exacerbating inequality\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1377,
+      "event_title": "Netherlands blocks US takeover of vital digital supplier",
+      "event_url": "https://www.politico.eu/article/netherlands-blocks-us-takeover-vital-digital-supplier/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 6.19,
+      "confidence": 8,
+      "justification": "Dutch government protects digital sovereignty and citizen data by blocking foreign takeover of critical infrastructure. | The Dutch government's action protects national digital infrastructure and citizen privacy by blocking a foreign takeover of a critical digital supplier. This aligns with SDG 9 (industry and infrastructure) and SDG 16 (peace and justice) by safeguarding data security and institutional autonomy. No significant negative aspects were identified in this action.",
+      "tx_hash": "61sRrVSZZugceNfTNhEAeN3nbNzjntU4v7bAND5jHyCb7vooSoHMoPMsohQkopEWojHEWkQ9RnbvMWteDk1N4uvh",
+      "created_at": "2026-05-26T11:36:49.091183+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Dutch government blocks a US-based company's acquisition of Solvinity, a key digital supplier for the national DigiD authentication platform, protecting national digital sovereignty and citizen data security\", \"affected_sdgs\": [9, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Prevents potential foreign control over critical digital infrastructure, reducing risks of data exploitation or misuse by external entities\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 1376,
       "event_title": "Psychiatrists criticize new law extending administrative detention and creating psychiatric examinations for irregular migrants",
@@ -30345,14 +30389,14 @@
         "events": 19
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.345,
+        "events": 58
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.341,
         "events": 41
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.339,
-        "events": 56
       },
       {
         "region": "Latin America",
@@ -30377,14 +30421,14 @@
         "events": 14
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.661,
-        "events": 56
-      },
-      {
         "region": "North America",
         "mint_ratio": 0.659,
         "events": 41
+      },
+      {
+        "region": "Europe",
+        "mint_ratio": 0.655,
+        "events": 58
       }
     ],
     "supply_trend_7d": [
@@ -30420,8 +30464,8 @@
       },
       {
         "date": "2026-05-26",
-        "net_minted": 38135000,
-        "net_burned": 42400000
+        "net_minted": 38885000,
+        "net_burned": 43900000
       }
     ],
     "event_of_the_day": {
@@ -30437,9 +30481,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 76,
-        "negative": 140,
+        "positive": 77,
+        "negative": 141,
         "event_ids_positive": [
+          1377,
           1375,
           1374,
           1371,
@@ -30518,6 +30563,7 @@
           1076
         ],
         "event_ids_negative": [
+          1378,
           1376,
           1373,
           1372,
@@ -30661,9 +30707,10 @@
         ]
       },
       "UDHR": {
-        "positive": 30,
-        "negative": 103,
+        "positive": 31,
+        "negative": 104,
         "event_ids_positive": [
+          1377,
           1362,
           1357,
           1311,
@@ -30696,6 +30743,7 @@
           1097
         ],
         "event_ids_negative": [
+          1378,
           1376,
           1372,
           1369,
@@ -30820,7 +30868,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           1357,
           1290,
@@ -30830,6 +30878,7 @@
           1105
         ],
         "event_ids_negative": [
+          1378,
           1376,
           1369,
           1364,
@@ -31046,14 +31095,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 76.1,
-      "mainstream_pct": 23.9,
+      "niche_pct": 75.2,
+      "mainstream_pct": 24.8,
       "total_sources_used": 117,
-      "articles_processed": 296
+      "articles_processed": 298
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 296,
+      "total_events": 298,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -31182,10 +31231,11 @@
       },
       {
         "name": "Construction",
-        "count": 27,
-        "burn_count": 14,
+        "count": 28,
+        "burn_count": 15,
         "mint_count": 13,
         "event_ids": [
+          1377,
           1375,
           1373,
           1353,
@@ -31348,25 +31398,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 104,
+      "total_burn": 105,
       "direct_action": {
-        "count": 70,
-        "pct": 67.3
+        "count": 71,
+        "pct": 67.6
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 5.8
+        "pct": 5.7
       },
       "untyped": {
         "count": 28,
-        "pct": 26.9
+        "pct": 26.7
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 433,
+      "total_burn": 434,
       "direct_action": {
-        "count": 276,
-        "pct": 63.7
+        "count": 277,
+        "pct": 63.8
       },
       "editorial_consciousness": {
         "count": 25,
@@ -31374,14 +31424,14 @@
       },
       "untyped": {
         "count": 132,
-        "pct": 30.5
+        "pct": 30.4
       }
     },
     "mint_composition_7d": {
-      "total_mint": 192,
+      "total_mint": 193,
       "direct_action": {
-        "count": 125,
-        "pct": 65.1
+        "count": 126,
+        "pct": 65.3
       },
       "editorial_alarm": {
         "count": 15,
@@ -31389,14 +31439,14 @@
       },
       "untyped": {
         "count": 52,
-        "pct": 27.1
+        "pct": 26.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 929,
+      "total_mint": 930,
       "direct_action": {
-        "count": 605,
-        "pct": 65.1
+        "count": 606,
+        "pct": 65.2
       },
       "editorial_alarm": {
         "count": 66,
@@ -31404,13 +31454,13 @@
       },
       "untyped": {
         "count": 258,
-        "pct": 27.8
+        "pct": 27.7
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 116,
-      "institutional": 180,
-      "citizen_ratio": 0.392,
+      "citizen": 117,
+      "institutional": 181,
+      "citizen_ratio": 0.393,
       "daily": [
         {
           "date": "2026-05-20",
@@ -31444,11 +31494,12 @@
         },
         {
           "date": "2026-05-26",
-          "citizen": 8,
-          "institutional": 17
+          "citizen": 9,
+          "institutional": 18
         }
       ],
       "event_ids_citizen": [
+        1377,
         1371,
         1369,
         1367,
@@ -31567,6 +31618,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1378,
         1376,
         1375,
         1374,
