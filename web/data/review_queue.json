@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T07:35:06.274935+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-26T08:06:00.464143+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 444,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T20:35:09.039399+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 451,
+      "event_title": "Ecologistas en Acción warns of 'political manipulation' in the evaluation of the Iberian wolf's status",
+      "event_url": "https://www.ecologistasenaccion.org/370070/ecologistas-en-accion-alerta-de-manipulacion-politica-en-la-evaluacion-del-estado-del-lobo-iberico/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ecologistas en Acción files formal objections to a government report, demonstrating active civil society oversight and legal challenge against political manipulation of wildlife policy\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"Regional governments (Galicia, Asturias, Cantabria, Castilla y León) attempt to include scientifically flawed, methodologically deficient, and legally weak provisions in a sexennial report to justify continued wolf culls\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UDHR Article 18 (freedom of thought/conscience)\", \"Animal Rights Declaration Article 3 (right to life)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The filing of formal objections by Ecologistas en Acción represents a positive act of environmental and animal rights advocacy, aligning with SDG 13 and 15 and UNDRIP principles. However, the regional governments' attempt to manipulate scientific and legal standards to justify wolf culls undermines biodiversity protection (Planetary Boundary for biodiversity) and violates animal rights, posing a significant ethical and ecological harm.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Regional governments withdraw flawed provisions from the report\", \"Independent scientific review validates the objections\", \"EU Commission intervenes to enforce Habitats Directive compliance\", \"Wolf population recovery metrics meet or exceed targets\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"EU Commission forces compliance with Habitats Directive, halting wolf culls and enforcing evidence-based policy\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Regional governments persist with flawed report, leading to prolonged legal battles and continued culls\", \"probability\": 0.5, \"score\": -5}, {\"name\": \"C\", \"description\": \"Political pressure leads to watered-down compromise, allowing limited culls under weak scientific justification\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -2.6, \"final_score\": -2.715, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Regional manipulation of wildlife policy to enable culls outweighs civil society objections.\", \"event_country\": \"Spain\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ecologistas en Acción files formal objections to a government report, exposing alleged political manipulation in the evaluation of the Iberian wolf's conservation status\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"Regional governments (Galicia, Asturias, Cantabria, Castilla y León) allegedly attempt to include severe scientific, methodological, and legal deficiencies in a sexennial report to maintain wolf culls\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UDHR Article 18 (freedom of thought/conscience)\", \"Animal Rights (right to life)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"UNDRIP\"]}], \"ethical_synthesis\": \"The action by Ecologistas en Acción constitutes a positive step toward protecting biodiversity and animal rights by challenging politically motivated distortions in conservation policy. However, the alleged actions by regional governments to weaken protections for the Iberian wolf represent a significant ethical violation, undermining climate action and biodiversity goals.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Adoption of corrected scientific standards in the report\", \"Legal enforcement of wolf protections by national courts\", \"Reversal of regional cull policies\", \"EU intervention in the matter\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"EU and national courts force adoption of rigorous scientific standards, halting regional culls and restoring protections\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial reforms are implemented, but regional governments continue to exploit loopholes to maintain culls\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Regional governments succeed in weakening protections, leading to increased wolf killings and biodiversity loss\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.6, \"final_score\": -1.55, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Regional governments' alleged manipulation to enable wolf culls undermines biodiversity and animal rights.\", \"event_country\": \"Spain\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.13, \"confidence\": 8, \"amount_cbwd\": 500000, \"justification\": \"Regional manipulation of wildlife policy to enable culls outweighs civil society objections.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: enabling wolf culls is negative (MINT), but article opposes manipulation to allow culls (should be BURN)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-26T08:05:58.246278+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
