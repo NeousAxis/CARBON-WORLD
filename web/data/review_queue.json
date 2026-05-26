@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T21:33:56.172026+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-05-26T22:35:31.040000+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 444,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-26T21:33:53.805741+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 464,
+      "event_title": "The tug-of-war over agrotoxins threatening the health of Parana residents",
+      "event_url": "https://oeco.org.br/podcast/o-cabo-de-guerra-dos-agrotoxicos-que-ameaca-a-saude-dos-paranaenses/",
+      "event_source": "O Eco (Brazil env)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"O Eco's investigative journalism exposes the health risks of agrotoxins in Paraná's water supply, raising public awareness and holding authorities accountable.\", \"affected_sdgs\": [3, 6, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Paraná's high pesticide consumption and state agencies' dismissal of research on water contamination undermine public health and environmental safety.\", \"affected_sdgs\": [3, 6, 12, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}], \"ethical_synthesis\": \"The article highlights a critical conflict between industrial agriculture practices and public health in Paraná. While investigative journalism by O Eco serves as a positive force for transparency and awareness, the systemic issue of agrotoxin overuse and regulatory failure poses severe risks to human and ecological health.\", \"snapshot_score\": -5.5, \"trajectory_score\": -3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Implementation of stricter pesticide regulations in Paraná\", \"Public health studies confirming long-term contamination effects\", \"Shift in state policy toward sustainable agriculture\", \"Legal action by affected communities\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where Paraná enacts strong pesticide regulations and shifts to agroecology, reducing contamination and improving public health.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Realistic scenario where incremental improvements occur but contamination persists due to industry resistance.\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where agrotoxin use intensifies, leading to severe health crises and ecological damage.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.15, \"final_score\": -3.41, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"State failure to regulate agrotoxins and dismissive response to contamination evidence warrants negative token action.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Publication of investigative journalism exposing agrotoxin risks to public health in Paraná, raising awareness and informing citizens\", \"affected_sdgs\": [3, 6, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"State agencies disputing scientific data on agrotoxin contamination in water supplies, potentially undermining public health protections and regulatory action\", \"affected_sdgs\": [3, 6, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The investigative journalism act (positive) enhances public awareness and health rights (SDG 3, 6, 12) by exposing agrotoxin risks. However, state agencies' rejection of scientific evidence (negative) directly threatens public health and environmental safety, violating UDHR Article 25. The net ethical position is mixed but leans negative due to the high magnitude of institutional obstruction of health protections.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"State agencies reverse stance and accept scientific findings\", \"Independent federal investigation confirms contamination levels\", \"Public pressure forces regulatory action on agrotoxins\", \"New governor implements agrotoxin restrictions\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"State agencies accept evidence and implement agrotoxin restrictions, leading to measurable health improvements\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Prolonged institutional denial delays action, leading to worsening contamination and health crises\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Federal intervention overrides state agencies, imposing agrotoxin bans with rapid health benefits\", \"probability\": 0.2, \"score\": 8}], \"prospective_score\": -0.95, \"final_score\": -1.81, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"State obstruction of health protections outweighs awareness-raising journalism.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.61, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"State obstruction of health protections and dismissal of contamination evidence outweighs awareness-raising journalism.\", \"disagreement\": false, \"reason\": \"Both analysts agreed on MINT, but the institutional action (state agencies rejecting scientific evidence) is the dominant ethical factor. This action enables harm by weakening protections, warranting BURN despite journalism's positive role.\"}",
+      "sentinel_concern": "llm: Verdict direction flipped: state obstruction of pesticide regulation harms health and environment, should be MINT (negative), not BURN (positive).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-26T22:35:28.632002+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
