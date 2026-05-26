@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-26T03:05:51.439991+00:00",
-  "total_events": 1353,
+  "generated_at": "2026-05-26T03:34:18.444468+00:00",
+  "total_events": 1355,
   "total_burned": 1901200870,
-  "total_minted": 1893047000,
-  "pending_reviews": 3,
+  "total_minted": 1901547000,
+  "pending_reviews": 2,
   "events": [
+    {
+      "id": 1355,
+      "event_title": "Netanyahu vows to ‘smite’ Hezbollah with ‘overwhelming’ force",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/5/26/netanyahu-vows-to-smite-hezbollah-with-overwhelming-force?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": -6.33,
+      "confidence": 9,
+      "justification": "Threat of disproportionate military force violates human rights and escalates conflict. | The vow to use overwhelming force against Hezbollah represents a clear escalation of military rhetoric and potential violence, violating fundamental human rights to security, freedom from torture, and freedom from arbitrary detention. This action undermines peace and justice (SDG 16) and poses severe risks to civilian populations in the region.",
+      "tx_hash": "54ASBnAYRqx76wdrebTq2PCr3UWkznTR31nDNh7AvHrarZuGFPGiL7YxgysPVhrgugagjHuRpTibDxN5fMojrNEX",
+      "created_at": "2026-05-26T03:34:16.715537+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli Prime Minister Benjamin Netanyahu's vow to use 'overwhelming' force against Hezbollah, which constitutes a threat of disproportionate military action and escalation of violence\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1354,
+      "event_title": "Brazil has protected much of the Amazon. It now has to pay for it.",
+      "event_url": "https://news.mongabay.com/2026/05/brazil-has-protected-much-of-the-amazon-it-now-has-to-pay-for-it/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Legal protection without funding undermines conservation efforts, creating net negative impact.",
+      "tx_hash": null,
+      "created_at": "2026-05-26T03:17:02.409524+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1353,
       "event_title": "170m chimneys come crashing down as power station demolition begins",
@@ -29791,8 +29835,8 @@
       },
       {
         "country": "Israel",
-        "count": 6,
-        "total_amount": 34000000
+        "count": 7,
+        "total_amount": 41000000
       },
       {
         "country": "France",
@@ -29857,8 +29901,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.944,
-        "events": 18
+        "mint_ratio": 0.947,
+        "events": 19
       },
       {
         "region": "Africa",
@@ -29914,7 +29958,7 @@
       },
       {
         "date": "2026-05-26",
-        "net_minted": 12650000,
+        "net_minted": 19650000,
         "net_burned": 10200000
       }
     ],
@@ -29932,7 +29976,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 69,
-        "negative": 129,
+        "negative": 130,
         "event_ids_positive": [
           1353,
           1349,
@@ -30005,6 +30049,7 @@
           1076
         ],
         "event_ids_negative": [
+          1355,
           1352,
           1350,
           1346,
@@ -30138,7 +30183,7 @@
       },
       "UDHR": {
         "positive": 28,
-        "negative": 94,
+        "negative": 95,
         "event_ids_positive": [
           1311,
           1308,
@@ -30170,6 +30215,7 @@
           1097
         ],
         "event_ids_negative": [
+          1355,
           1352,
           1350,
           1345,
@@ -30494,11 +30540,11 @@
       "niche_pct": 78.4,
       "mainstream_pct": 21.6,
       "total_sources_used": 116,
-      "articles_processed": 278
+      "articles_processed": 279
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 278,
+      "total_events": 279,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -30706,10 +30752,11 @@
       },
       {
         "name": "Defense",
-        "count": 12,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          1355,
           1352,
           1342,
           1337,
@@ -30811,10 +30858,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 181,
+      "total_mint": 182,
       "direct_action": {
-        "count": 115,
-        "pct": 63.5
+        "count": 116,
+        "pct": 63.7
       },
       "editorial_alarm": {
         "count": 14,
@@ -30822,14 +30869,14 @@
       },
       "untyped": {
         "count": 52,
-        "pct": 28.7
+        "pct": 28.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 918,
+      "total_mint": 919,
       "direct_action": {
-        "count": 595,
-        "pct": 64.8
+        "count": 596,
+        "pct": 64.9
       },
       "editorial_alarm": {
         "count": 65,
@@ -30842,8 +30889,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 109,
-      "institutional": 169,
-      "citizen_ratio": 0.392,
+      "institutional": 170,
+      "citizen_ratio": 0.391,
       "daily": [
         {
           "date": "2026-05-20",
@@ -30878,7 +30925,7 @@
         {
           "date": "2026-05-26",
           "citizen": 1,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -30993,6 +31040,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1355,
         1353,
         1352,
         1350,
