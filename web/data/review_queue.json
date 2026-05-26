@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T13:04:49.698951+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-05-26T13:36:31.308901+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 444,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T20:35:09.039399+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 454,
+      "event_title": "The Silent Ecological Risk of the Vale do Ribeira",
+      "event_url": "https://oeco.org.br/colunas/o-risco-ecologico-silencioso-do-vale-do-ribeira/",
+      "event_source": "O Eco (Brazil env)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The article highlights the ecological risks of transferring water from Vale do Ribeira, a highly preserved region, to address São Paulo's water crisis, raising awareness about environmental justice and the need for sustainable water management.\", \"affected_sdgs\": [6, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"The article critiques the policy of transferring water volumes from Vale do Ribeira to São Paulo, which could exacerbate environmental pressure on a highly preserved region without solving the root causes of São Paulo's water crisis.\", \"affected_sdgs\": [6, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The article serves as a consciousness-raising piece by exposing the ecological risks of a water transfer policy that shifts environmental pressure to a preserved region. While it does not directly enact harm, it critiques a policy that could undermine long-term sustainability and indigenous/ecological rights in Vale do Ribeira.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of the water transfer policy with measurable ecological impact in Vale do Ribeira\", \"Legal challenges or indigenous land demarcation actions in response to the policy\", \"Alternative water management solutions adopted by São Paulo state\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"São Paulo adopts alternative water management solutions, reducing reliance on Vale do Ribeira transfers and preserving ecological integrity.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Water transfer policy proceeds with minimal ecological safeguards, leading to gradual degradation in Vale do Ribeira.\", \"probability\": 0.5, \"score\": -4}, {\"name\": \"C\", \"description\": \"Legal and indigenous actions halt the water transfer policy, but ecological damage is already significant.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -2.55, \"final_score\": -2.61, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Critique of a policy that risks shifting environmental harm to a preserved region without solving systemic issues.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Government and institutional plans to transfer increasing water volumes from Vale do Ribeira to São Paulo's Metropolitan Region, displacing environmental pressure to one of Brazil's most preserved areas\", \"affected_sdgs\": [6, 15], \"violated_rights\": [\"UNDRIP\", \"Animal\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The proposed water transfer from Vale do Ribeira to São Paulo exacerbates environmental pressure on a highly preserved region, undermining biodiversity and indigenous rights. While it may temporarily address São Paulo's water crisis, it shifts harm rather than resolving systemic issues, violating UNDRIP and planetary boundaries.\", \"snapshot_score\": -7.5, \"trajectory_score\": -6.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Implementation of the water transfer project begins\", \"Legal challenges filed by indigenous communities or environmental NGOs\", \"Scientific studies confirm irreversible biodiversity loss in Vale do Ribeira\", \"Alternative water management policies adopted in São Paulo\", \"Public backlash forces project cancellation\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Project is blocked by legal action and public pressure, alternative sustainable water policies are implemented in São Paulo\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Project proceeds with minimal environmental safeguards, leading to gradual but irreversible ecological damage in Vale do Ribeira\", \"probability\": 0.55, \"score\": -8}, {\"name\": \"C\", \"description\": \"Project accelerates with full force, causing catastrophic biodiversity collapse and displacement of indigenous communities\", \"probability\": 0.2, \"score\": -10}], \"prospective_score\": -6.85, \"final_score\": -6.78, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Water transfer project displaces environmental harm to a preserved region, violating indigenous rights and biodiversity.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.69, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"The policy shifts environmental harm to a preserved region, violating ecological and indigenous rights.\", \"disagreement\": true, \"reason\": \"The institutional action (water transfer policy) enables environmental harm and weakens protections for a preserved region and indigenous communities. This constitutes a BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: the water transfer harms a preserved region and indigenous rights, a negative impact, but verdict is BURN (positive). Decision should be MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-26T13:36:29.173829+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
