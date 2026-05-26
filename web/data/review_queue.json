@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T12:05:58.920700+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-05-26T12:35:53.674703+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 444,
@@ -38,26 +38,6 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-25T20:35:09.039399+00:00",
-      "resolved_at": null,
-      "human_review_embedding": null,
-      "final_decision": null
-    },
-    {
-      "id": 453,
-      "event_title": "Nigeria: Jonathan Eligible to Recontest for President, Court Rules",
-      "event_url": "https://allafrica.com/stories/202605260283.html",
-      "event_source": "AllAfrica Headlines",
-      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Judicial ruling upholding constitutional eligibility for recontesting the presidency, reinforcing democratic norms and rule of law\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Awarding a disproportionately large fine against the plaintiff challenging the ruling, potentially discouraging future legal challenges to constitutional matters\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 19 (Freedom of Expression)\", \"UDHR Article 10 (Right to a Fair Trial)\"], \"magnitude\": 4, \"frameworks\": [\"UDHR\"]}], \"ethical_synthesis\": \"The court's ruling upholds democratic principles by allowing a former president to recontest under constitutional provisions, which supports SDG 16 (Peace, Justice, and Strong Institutions). However, the excessive fine imposed on the plaintiff risks chilling future legal challenges to constitutional interpretations, undermining freedom of expression and access to justice.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Reversal of the fine by a higher court within 24 months\", \"Legislative reform limiting excessive fines in constitutional challenges\", \"Increased public backlash or international criticism over the fine's disproportionateness\"], \"revaluation_checkpoint\": \"2028-05-26\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Higher court overturns the fine, setting a precedent for proportional penalties in constitutional challenges\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Fine remains in place but does not deter future constitutional challenges, maintaining democratic stability\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Fine deters future challenges, leading to erosion of judicial oversight and democratic backsliding\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.7, \"final_score\": 2.1, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Judicial ruling supports democracy but excessive fine undermines free expression and access to justice.\", \"event_country\": \"Nigeria\"}",
-      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Court ruling upholding constitutional eligibility for recontesting presidency, reinforcing democratic norms and institutional stability\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Court imposes excessive fine (N21 million) against plaintiff challenging eligibility, potentially deterring future legal challenges to constitutional matters\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The ruling strengthens democratic institutions by upholding constitutional eligibility, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the excessive fine against the plaintiff risks chilling future legal challenges, undermining transparency and accountability. The net impact is positive but tempered by the punitive measure.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Reversal of the fine by higher court\", \"Legislative reform limiting excessive fines in constitutional cases\", \"Increased public backlash against judicial overreach\"], \"revaluation_checkpoint\": \"2028-05-26\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Higher court overturns the fine, setting a precedent for balanced judicial review in constitutional matters\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Fine remains in place but is not enforced, with no further chilling effect on legal challenges\", \"probability\": 0.45, \"score\": 3}, {\"name\": \"C\", \"description\": \"Fine is enforced, deterring future challenges and eroding public trust in judicial independence\", \"probability\": 0.25, \"score\": -5}], \"prospective_score\": 2.65, \"final_score\": 3.26, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Upholds democratic norms but risks chilling legal challenges via excessive fine.\", \"event_country\": \"Nigeria\"}",
-      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.98, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action enables harm by chilling legal challenges despite upholding democratic norms.\", \"disagreement\": true, \"reason\": \"Both analysts agree the fine chills legal challenges (harm), but Analyst A correctly identifies the institutional action (fine) as enabling harm, outweighing the democratic benefit of the ruling.\"}",
-      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: judicial ruling enabling harm scored MINT (should be BURN for upholding democratic norms)",
-      "suggested_decision": "MINT",
-      "suggested_amount_crbn": 150000,
-      "human_verdict": null,
-      "human_amount": null,
-      "human_reason": null,
-      "status": "pending",
-      "created_at": "2026-05-26T11:36:49.336835+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
