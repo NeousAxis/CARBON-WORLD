@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-27T08:06:41.567070+00:00",
-  "total_events": 1449,
-  "total_burned": 2065800870,
-  "total_minted": 1982197000,
-  "pending_reviews": 6,
+  "generated_at": "2026-05-27T08:35:45.843049+00:00",
+  "total_events": 1451,
+  "total_burned": 2070800870,
+  "total_minted": 1987197000,
+  "pending_reviews": 5,
   "events": [
+    {
+      "id": 1451,
+      "event_title": "Brazil: deforestation decreases and reaches its lowest level since 2019",
+      "event_url": "https://www.france24.com/fr/am%C3%A9riques/20260527-bresil-deforestation-amazonie-sous-un-seuil-historique-en-2025",
+      "event_source": "France 24 FR",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.58,
+      "confidence": 8,
+      "justification": "Significant reduction in deforestation with measurable impact on climate and biodiversity. | The 20.6% reduction in deforestation represents a significant positive step toward protecting biodiversity and addressing climate change, aligning with SDG 13 and 15. However, the continued loss of nearly 1 million hectares underscores the persistent scale of environmental degradation requiring further action.",
+      "tx_hash": "4NxzUzaUXqzkXrpFrWhVqJZ4aLhw5LnyQiDMUjiDe7BhfFiNjL7YmhXZeUZrhaLqGRyRHf8RhL5BBPsgDkrAqJYf",
+      "created_at": "2026-05-27T08:35:43.195095+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Brazil's deforestation in 2025 decreased by 20.6% compared to 2024, reaching the lowest level since 2019, as reported by MapBiomas.\", \"affected_sdgs\": [13, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Despite the reduction, nearly 985,000 hectares of forest were still deforested in 2025, indicating ongoing significant environmental harm.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1450,
+      "event_title": "One dead in US strike against alleged drug-trafficking boat in the Pacific",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/27/un-mort-dans-une-frappe-americaine-contre-un-bateau-de-narcotrafiquants-presumes_6694174_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Institutional action (military strike) punishes without verifiable evidence, violating human rights.",
+      "tx_hash": null,
+      "created_at": "2026-05-27T08:17:01.583428+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1449,
       "event_title": "Africa: Wars and Geopolitical Divisions Constitute 'Dangerous Erosion' of World Order, Warns UN Chief",
@@ -31962,8 +32006,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.143,
-        "events": 21
+        "burn_ratio": 0.182,
+        "events": 22
       }
     ],
     "top_regions_destructive": [
@@ -31979,8 +32023,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.857,
-        "events": 21
+        "mint_ratio": 0.818,
+        "events": 22
       },
       {
         "region": "Europe",
@@ -32027,7 +32071,7 @@
       {
         "date": "2026-05-27",
         "net_minted": 24600000,
-        "net_burned": 24000000
+        "net_burned": 29000000
       }
     ],
     "event_of_the_day": {
@@ -32043,9 +32087,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 98,
+        "positive": 99,
         "negative": 176,
         "event_ids_positive": [
+          1451,
           1442,
           1437,
           1432,
@@ -32626,9 +32671,10 @@
         ]
       },
       "Animal": {
-        "positive": 22,
+        "positive": 23,
         "negative": 20,
         "event_ids_positive": [
+          1451,
           1442,
           1437,
           1432,
@@ -32676,9 +32722,10 @@
         ]
       },
       "PB": {
-        "positive": 48,
+        "positive": 49,
         "negative": 51,
         "event_ids_positive": [
+          1451,
           1442,
           1437,
           1432,
@@ -32787,11 +32834,11 @@
       "niche_pct": 69.4,
       "mainstream_pct": 30.6,
       "total_sources_used": 124,
-      "articles_processed": 371
+      "articles_processed": 372
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 371,
+      "total_events": 372,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -33143,25 +33190,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 130,
+      "total_burn": 131,
       "direct_action": {
-        "count": 91,
-        "pct": 70.0
+        "count": 92,
+        "pct": 70.2
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 5.4
+        "pct": 5.3
       },
       "untyped": {
         "count": 32,
-        "pct": 24.6
+        "pct": 24.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 459,
+      "total_burn": 460,
       "direct_action": {
-        "count": 297,
-        "pct": 64.7
+        "count": 298,
+        "pct": 64.8
       },
       "editorial_consciousness": {
         "count": 26,
@@ -33204,8 +33251,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 144,
-      "institutional": 227,
-      "citizen_ratio": 0.388,
+      "institutional": 228,
+      "citizen_ratio": 0.387,
       "daily": [
         {
           "date": "2026-05-21",
@@ -33240,7 +33287,7 @@
         {
           "date": "2026-05-27",
           "citizen": 3,
-          "institutional": 12
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -33390,6 +33437,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1451,
         1449,
         1445,
         1444,
