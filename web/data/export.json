@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-27T11:05:48.979816+00:00",
-  "total_events": 1461,
-  "total_burned": 2082800870,
-  "total_minted": 1993897000,
-  "pending_reviews": 5,
+  "generated_at": "2026-05-27T11:36:11.477651+00:00",
+  "total_events": 1463,
+  "total_burned": 2089800870,
+  "total_minted": 2001397000,
+  "pending_reviews": 7,
   "events": [
+    {
+      "id": 1463,
+      "event_title": "Greenpeace underwater robot sets record for the world’s deepest banner protest from Arctic seabed",
+      "event_url": "https://www.greenpeace.org/international/press-release/83755/greenpeace-underwater-robot-record-worlds-deepest-banner-protest-arctic-seabed/",
+      "event_source": "Greenpeace International",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.11,
+      "confidence": 8,
+      "justification": "Landmark underwater protest advancing Arctic and marine conservation awareness. | This action directly advances climate and biodiversity awareness by leveraging innovative technology to reach a previously inaccessible environment. It aligns with multiple SDGs by highlighting the urgency of protecting marine ecosystems and the Arctic, while also demonstrating the potential of creative activism to influence public consciousness and policy.",
+      "tx_hash": "2hrdm3MR2PegbzPF8q54JGB4upWKcyZKJLxjVyQH8PA3TQA2tJXiuDPPUXSMeAyKTKYbo5ChtKVrrJ1aojfkfXky",
+      "created_at": "2026-05-27T11:36:08.884343+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Greenpeace deployed an underwater robot to conduct the world's deepest banner protest from the Arctic seabed, raising awareness of environmental issues at extreme depths.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1462,
+      "event_title": "AI is massively increasing China’s new weapon development speed: scientists",
+      "event_url": "https://www.scmp.com/news/china/science/article/3354989/ai-massively-increasing-chinas-new-weapon-development-speed-scientists?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 7500000,
+      "final_score": -7.43,
+      "confidence": 8,
+      "justification": "AI military integration accelerates weapon development, violating human rights and global security. | The publication of AI-driven industrial innovation represents a technological advancement with potential societal benefits, but its application in military manufacturing significantly undermines global security and violates fundamental human rights to peace and life. The net ethical judgment is overwhelmingly negative due to the severe risks posed by autonomous weapon systems and the acceleratio",
+      "tx_hash": "3hXPmfoa3qHq9mWAVx4QxjzTqBiYinAto5imL7xVtHm5EMs5ZxyNcajgb1wvRnuQrQ1E6gaQ6eN6q7ud3wQESZgW",
+      "created_at": "2026-05-27T11:36:08.774668+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Scientific publication of AI-driven industrial innovation in China, demonstrating technological advancement and potential for efficiency gains in manufacturing\", \"affected_sdgs\": [9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"AI integration into military-industrial manufacturing accelerates weapon development capabilities, increasing global security risks and potential for arms race escalation\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 26 (right to peace)\", \"UNDRIP (indigenous rights to security)\"], \"magnitude\": 9, \"frameworks\": [\"UDHR\", \"UNDRIP\"]}, {\"description\": \"Autonomous AI systems in weapon components reduce human oversight, increasing risk of unintended escalation or loss of control in military engagements\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 3 (right to life)\", \"CRC Article 38 (protection in armed conflict)\"], \"magnitude\": 8, \"frameworks\": [\"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1461,
       "event_title": "Spain's PM sees 'no reason' to condemn corruption-accused predecessor",
@@ -32211,8 +32255,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.462,
-        "events": 26
+        "burn_ratio": 0.444,
+        "events": 27
       },
       {
         "region": "North America",
@@ -32290,8 +32334,8 @@
       },
       {
         "date": "2026-05-27",
-        "net_minted": 30800000,
-        "net_burned": 41000000
+        "net_minted": 38300000,
+        "net_burned": 48000000
       }
     ],
     "event_of_the_day": {
@@ -32307,9 +32351,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 101,
-        "negative": 183,
+        "positive": 102,
+        "negative": 184,
         "event_ids_positive": [
+          1463,
           1458,
           1452,
           1451,
@@ -32413,6 +32458,7 @@
           1076
         ],
         "event_ids_negative": [
+          1462,
           1461,
           1460,
           1459,
@@ -32600,7 +32646,7 @@
       },
       "UDHR": {
         "positive": 37,
-        "negative": 135,
+        "negative": 136,
         "event_ids_positive": [
           1431,
           1421,
@@ -32641,6 +32687,7 @@
           1097
         ],
         "event_ids_negative": [
+          1462,
           1461,
           1460,
           1459,
@@ -32798,7 +32845,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 25,
+        "negative": 26,
         "event_ids_positive": [
           1357,
           1290,
@@ -32808,6 +32855,7 @@
           1105
         ],
         "event_ids_negative": [
+          1462,
           1444,
           1441,
           1433,
@@ -32837,7 +32885,7 @@
       },
       "UNDRIP": {
         "positive": 30,
-        "negative": 34,
+        "negative": 35,
         "event_ids_positive": [
           1420,
           1415,
@@ -32871,6 +32919,7 @@
           1085
         ],
         "event_ids_negative": [
+          1462,
           1453,
           1443,
           1412,
@@ -32908,9 +32957,10 @@
         ]
       },
       "Animal": {
-        "positive": 23,
+        "positive": 24,
         "negative": 21,
         "event_ids_positive": [
+          1463,
           1451,
           1442,
           1437,
@@ -32960,9 +33010,10 @@
         ]
       },
       "PB": {
-        "positive": 51,
+        "positive": 52,
         "negative": 51,
         "event_ids_positive": [
+          1463,
           1458,
           1452,
           1451,
@@ -33071,14 +33122,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 69.6,
-      "mainstream_pct": 30.4,
+      "niche_pct": 68.8,
+      "mainstream_pct": 31.2,
       "total_sources_used": 125,
-      "articles_processed": 381
+      "articles_processed": 383
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 381,
+      "total_events": 383,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -33280,10 +33331,11 @@
       },
       {
         "name": "Defense",
-        "count": 23,
+        "count": 24,
         "burn_count": 0,
-        "mint_count": 23,
+        "mint_count": 24,
         "event_ids": [
+          1462,
           1441,
           1435,
           1433,
@@ -33311,10 +33363,11 @@
       },
       {
         "name": "Tech",
-        "count": 20,
+        "count": 21,
         "burn_count": 8,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          1462,
           1431,
           1413,
           1404,
@@ -33437,10 +33490,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 133,
+      "total_burn": 134,
       "direct_action": {
-        "count": 93,
-        "pct": 69.9
+        "count": 94,
+        "pct": 70.1
       },
       "editorial_consciousness": {
         "count": 8,
@@ -33448,14 +33501,14 @@
       },
       "untyped": {
         "count": 32,
-        "pct": 24.1
+        "pct": 23.9
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 462,
+      "total_burn": 463,
       "direct_action": {
-        "count": 299,
-        "pct": 64.7
+        "count": 300,
+        "pct": 64.8
       },
       "editorial_consciousness": {
         "count": 27,
@@ -33467,24 +33520,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 248,
+      "total_mint": 249,
       "direct_action": {
-        "count": 166,
-        "pct": 66.9
+        "count": 167,
+        "pct": 67.1
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 6.9
+        "pct": 6.8
       },
       "untyped": {
         "count": 65,
-        "pct": 26.2
+        "pct": 26.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 985,
+      "total_mint": 986,
       "direct_action": {
-        "count": 646,
+        "count": 647,
         "pct": 65.6
       },
       "editorial_alarm": {
@@ -33497,9 +33550,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 146,
-      "institutional": 235,
-      "citizen_ratio": 0.383,
+      "citizen": 147,
+      "institutional": 236,
+      "citizen_ratio": 0.384,
       "daily": [
         {
           "date": "2026-05-21",
@@ -33533,11 +33586,12 @@
         },
         {
           "date": "2026-05-27",
-          "citizen": 5,
-          "institutional": 20
+          "citizen": 6,
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
+        1463,
         1453,
         1452,
         1443,
@@ -33686,6 +33740,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1462,
         1461,
         1460,
         1459,
