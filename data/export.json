@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-27T13:35:03.507781+00:00",
-  "total_events": 1471,
-  "total_burned": 2103300870,
-  "total_minted": 2003847000,
-  "pending_reviews": 6,
+  "generated_at": "2026-05-27T14:05:39.504032+00:00",
+  "total_events": 1473,
+  "total_burned": 2110300870,
+  "total_minted": 2008847000,
+  "pending_reviews": 7,
   "events": [
+    {
+      "id": 1473,
+      "event_title": "Brazil's deforestation reaches lowest level since 2019, according to MapBiomas",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/05/desmatamento-no-brasil-atinge-o-menor-nivel-desde-2019-segundo-mapbiomas.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.79,
+      "confidence": 9,
+      "justification": "Major climate and biodiversity win with national-scale impact. | The significant reduction in deforestation in Brazil represents a major positive step toward climate action and biodiversity conservation. It aligns with multiple SDGs, particularly SDG 13 (Climate Action) and SDG 15 (Life on Land), while also supporting planetary boundaries related to biodiversity and land-system change.",
+      "tx_hash": "3WyaZcwisXHoxquerYfWJm1MFvW6gdXCbAfocgaL4ssMiuKYzBhLY8PHX2WtjWXjbK4S2KJYR46YwSgP7gZAirQo",
+      "created_at": "2026-05-27T14:05:37.261405+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Brazil's deforestation reached its lowest level since 2019, dropping below 1 million hectares lost for the first time, as reported by the MapBiomas monitoring network.\", \"affected_sdgs\": [13, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1472,
+      "event_title": "DR Congo facing 'catastrophic collision' of Ebola and war, WHO chief warns",
+      "event_url": "https://www.france24.com/en/africa/20260527-dr-congo-facing-catastrophic-collision-of-ebola-and-war-who-chief-warns",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.06,
+      "confidence": 8,
+      "justification": "Conflict-driven humanitarian crisis with severe public health consequences. | The WHO's warning highlights a critical humanitarian crisis where conflict directly undermines public health efforts, violating fundamental rights to health and security. While the warning itself is a positive act of consciousness-raising, the underlying conflict and its consequences represent a severe ethical failure with massive, immediate harm.",
+      "tx_hash": "4eanaJafxbBBK9opLs8xZ64JKLNCMVH1mzREhRBToGiMX7XTtqvGXpicbZe9fLZ5QdgvJyXncqtQwrjQuPxX7dUi",
+      "created_at": "2026-05-27T14:05:37.162464+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"WHO Secretary-General Tedros Adhanom Ghebreyesus publicly warns about the humanitarian crisis in DR Congo, raising global awareness of the Ebola outbreak and conflict\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ongoing armed conflict in eastern DR Congo exacerbates the Ebola outbreak by hindering health workers' ability to contain the disease\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1471,
       "event_title": "Four months after its launch, Donald Trump's 'Peace Council' has received no funding",
@@ -32446,8 +32490,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.174,
-        "events": 23
+        "burn_ratio": 0.208,
+        "events": 24
       }
     ],
     "top_regions_destructive": [
@@ -32463,8 +32507,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.826,
-        "events": 23
+        "mint_ratio": 0.792,
+        "events": 24
       },
       {
         "region": "Europe",
@@ -32510,8 +32554,8 @@
       },
       {
         "date": "2026-05-27",
-        "net_minted": 40450000,
-        "net_burned": 60000000
+        "net_minted": 45450000,
+        "net_burned": 67000000
       }
     ],
     "event_of_the_day": {
@@ -32527,9 +32571,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 104,
-        "negative": 187,
+        "positive": 105,
+        "negative": 188,
         "event_ids_positive": [
+          1473,
           1469,
           1464,
           1463,
@@ -32636,6 +32681,7 @@
           1076
         ],
         "event_ids_negative": [
+          1472,
           1471,
           1468,
           1467,
@@ -32827,7 +32873,7 @@
       },
       "UDHR": {
         "positive": 37,
-        "negative": 139,
+        "negative": 140,
         "event_ids_positive": [
           1431,
           1421,
@@ -32868,6 +32914,7 @@
           1097
         ],
         "event_ids_negative": [
+          1472,
           1471,
           1468,
           1467,
@@ -33143,9 +33190,10 @@
         ]
       },
       "Animal": {
-        "positive": 24,
+        "positive": 25,
         "negative": 21,
         "event_ids_positive": [
+          1473,
           1463,
           1451,
           1442,
@@ -33196,9 +33244,10 @@
         ]
       },
       "PB": {
-        "positive": 53,
-        "negative": 51,
+        "positive": 54,
+        "negative": 52,
         "event_ids_positive": [
+          1473,
           1469,
           1463,
           1458,
@@ -33254,6 +33303,7 @@
           1076
         ],
         "event_ids_negative": [
+          1472,
           1440,
           1436,
           1426,
@@ -33312,11 +33362,11 @@
       "niche_pct": 68.8,
       "mainstream_pct": 31.2,
       "total_sources_used": 125,
-      "articles_processed": 388
+      "articles_processed": 390
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 388,
+      "total_events": 390,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -33340,6 +33390,22 @@
         ]
       },
       {
+        "name": "WHO",
+        "count": 8,
+        "burn_count": 2,
+        "mint_count": 6,
+        "event_ids": [
+          1472,
+          1406,
+          1286,
+          1272,
+          1253,
+          1196,
+          1096,
+          1093
+        ]
+      },
+      {
         "name": "UN",
         "count": 7,
         "burn_count": 4,
@@ -33352,21 +33418,6 @@
           1133,
           1120,
           1101
-        ]
-      },
-      {
-        "name": "WHO",
-        "count": 7,
-        "burn_count": 2,
-        "mint_count": 5,
-        "event_ids": [
-          1406,
-          1286,
-          1272,
-          1253,
-          1196,
-          1096,
-          1093
         ]
       },
       {
@@ -33681,25 +33732,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 136,
+      "total_burn": 137,
       "direct_action": {
-        "count": 96,
-        "pct": 70.6
+        "count": 97,
+        "pct": 70.8
       },
       "editorial_consciousness": {
         "count": 8,
-        "pct": 5.9
+        "pct": 5.8
       },
       "untyped": {
         "count": 32,
-        "pct": 23.5
+        "pct": 23.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 465,
+      "total_burn": 466,
       "direct_action": {
-        "count": 302,
-        "pct": 64.9
+        "count": 303,
+        "pct": 65.0
       },
       "editorial_consciousness": {
         "count": 27,
@@ -33711,10 +33762,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 252,
+      "total_mint": 253,
       "direct_action": {
-        "count": 170,
-        "pct": 67.5
+        "count": 171,
+        "pct": 67.6
       },
       "editorial_alarm": {
         "count": 17,
@@ -33722,14 +33773,14 @@
       },
       "untyped": {
         "count": 65,
-        "pct": 25.8
+        "pct": 25.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 989,
+      "total_mint": 990,
       "direct_action": {
-        "count": 650,
-        "pct": 65.7
+        "count": 651,
+        "pct": 65.8
       },
       "editorial_alarm": {
         "count": 68,
@@ -33742,8 +33793,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 149,
-      "institutional": 239,
-      "citizen_ratio": 0.384,
+      "institutional": 241,
+      "citizen_ratio": 0.382,
       "daily": [
         {
           "date": "2026-05-21",
@@ -33778,7 +33829,7 @@
         {
           "date": "2026-05-27",
           "citizen": 8,
-          "institutional": 24
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
@@ -33933,6 +33984,8 @@
         1076
       ],
       "event_ids_institutional": [
+        1473,
+        1472,
         1469,
         1468,
         1467,
