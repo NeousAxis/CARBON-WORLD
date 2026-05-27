@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-27T06:04:14.101019+00:00",
-  "total_events": 1442,
+  "generated_at": "2026-05-27T06:35:49.796612+00:00",
+  "total_events": 1444,
   "total_burned": 2065800870,
-  "total_minted": 1965747000,
-  "pending_reviews": 5,
+  "total_minted": 1975247000,
+  "pending_reviews": 7,
   "events": [
+    {
+      "id": 1444,
+      "event_title": "Iran medicine shortages worsened by war",
+      "event_url": "https://www.dw.com/en/iran-medicine-shortages-worsened-by-war/a-77297190?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -4.9,
+      "confidence": 9,
+      "justification": "War-driven disruption of essential medicine imports violates health rights and SDG 3 at massive scale. | The war-driven disruption of Iran's medicine supply chains directly undermines the right to health (SDG 3) and violates fundamental human rights to life and well-being. This is a concrete, large-scale harm with immediate and severe consequences for vulnerable populations, including children, making it a clear ethical violation.",
+      "tx_hash": "2RjwouT6fyeFCdetvEYeqd6eL8pZ5E6ULiynAz1fr4Bex1iv3YBVEVdxC97nC58bvPtPABQKoR456AKV2g17cdXQ",
+      "created_at": "2026-05-27T06:35:47.255779+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Disruption of essential medicine imports and payment systems in Iran due to war-related factors, worsening shortages and threatening public health\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1443,
+      "event_title": "Investigative report finds UAE-controlled subsidiaries received over €71 million in EU CAP payments",
+      "event_url": "https://viacampesina.org/en/2026/05/europe-investigative-report-finds-uae-controlled-subsidiaries-received-over-e71-million-in-eu-cap-payments/",
+      "event_source": "La Via Campesina",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.38,
+      "confidence": 8,
+      "justification": "Misallocation of €71M in EU CAP funds to foreign entities undermines agricultural justice and policy integrity. | The investigative report reveals a significant ethical failure in EU agricultural policy, where subsidies were misallocated to foreign-controlled entities, undermining the intended support for European farmers and sustainable land use. While the journalism itself is a positive act of transparency and accountability, the underlying policy failure it exposes is a major negative, with s",
+      "tx_hash": "41Q6WpCRrjwmZm5aE3asf2D7hdFpF4K4vtTsE5fuHoJdC5Q4uvAynNSGtJZ9Cavg2bgvkk9MLMWkNBzMbfjCJGbY",
+      "created_at": "2026-05-27T06:35:47.076992+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Investigative journalism exposing misuse of EU Common Agricultural Policy (CAP) funds by UAE-controlled entities, highlighting systemic flaws in subsidy distribution based on land area rather than need or sustainability.\", \"affected_sdgs\": [1, 2, 12, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"EU CAP payments totaling €71 million directed to UAE-controlled subsidiaries, enabling potential misallocation of agricultural subsidies away from European farmers and undermining fair distribution mechanisms.\", \"affected_sdgs\": [1, 2, 8, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1442,
       "event_title": "Reintroduced platypus population ‘tracking well’ in Australia’s oldest national park",
@@ -31815,8 +31859,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.96,
-        "events": 25
+        "mint_ratio": 0.962,
+        "events": 26
       },
       {
         "region": "Africa",
@@ -31872,7 +31916,7 @@
       },
       {
         "date": "2026-05-27",
-        "net_minted": 9950000,
+        "net_minted": 19450000,
         "net_burned": 24000000
       }
     ],
@@ -31890,7 +31934,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 98,
-        "negative": 172,
+        "negative": 174,
         "event_ids_positive": [
           1442,
           1437,
@@ -31992,6 +32036,8 @@
           1076
         ],
         "event_ids_negative": [
+          1444,
+          1443,
           1441,
           1440,
           1439,
@@ -32168,7 +32214,7 @@
       },
       "UDHR": {
         "positive": 37,
-        "negative": 126,
+        "negative": 128,
         "event_ids_positive": [
           1431,
           1421,
@@ -32209,6 +32255,8 @@
           1097
         ],
         "event_ids_negative": [
+          1444,
+          1443,
           1441,
           1440,
           1436,
@@ -32356,7 +32404,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 24,
+        "negative": 25,
         "event_ids_positive": [
           1357,
           1290,
@@ -32366,6 +32414,7 @@
           1105
         ],
         "event_ids_negative": [
+          1444,
           1441,
           1433,
           1406,
@@ -32394,7 +32443,7 @@
       },
       "UNDRIP": {
         "positive": 30,
-        "negative": 32,
+        "negative": 33,
         "event_ids_positive": [
           1420,
           1415,
@@ -32428,6 +32477,7 @@
           1085
         ],
         "event_ids_negative": [
+          1443,
           1412,
           1400,
           1399,
@@ -32624,21 +32674,22 @@
       "niche_pct": 69.4,
       "mainstream_pct": 30.6,
       "total_sources_used": 124,
-      "articles_processed": 367
+      "articles_processed": 369
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 367,
+      "total_events": 369,
       "pct": 0.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 9,
+        "count": 10,
         "burn_count": 2,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          1443,
           1393,
           1385,
           1324,
@@ -32881,10 +32932,11 @@
       },
       {
         "name": "Finance",
-        "count": 18,
+        "count": 19,
         "burn_count": 4,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          1443,
           1434,
           1354,
           1340,
@@ -32907,10 +32959,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 15,
+        "count": 16,
         "burn_count": 7,
-        "mint_count": 8,
+        "mint_count": 9,
         "event_ids": [
+          1443,
           1420,
           1374,
           1371,
@@ -33004,25 +33057,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 237,
+      "total_mint": 239,
       "direct_action": {
-        "count": 156,
-        "pct": 65.8
+        "count": 158,
+        "pct": 66.1
       },
       "editorial_alarm": {
         "count": 16,
-        "pct": 6.8
+        "pct": 6.7
       },
       "untyped": {
         "count": 65,
-        "pct": 27.4
+        "pct": 27.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 974,
+      "total_mint": 976,
       "direct_action": {
-        "count": 636,
-        "pct": 65.3
+        "count": 638,
+        "pct": 65.4
       },
       "editorial_alarm": {
         "count": 67,
@@ -33034,8 +33087,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 143,
-      "institutional": 224,
+      "citizen": 144,
+      "institutional": 225,
       "citizen_ratio": 0.39,
       "daily": [
         {
@@ -33070,11 +33123,12 @@
         },
         {
           "date": "2026-05-27",
-          "citizen": 2,
-          "institutional": 9
+          "citizen": 3,
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        1443,
         1442,
         1437,
         1428,
@@ -33220,6 +33274,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1444,
         1441,
         1440,
         1439,
