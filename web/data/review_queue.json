@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-27T07:34:30.858740+00:00",
-  "total_pending": 5,
+  "generated_at": "2026-05-27T08:06:41.692820+00:00",
+  "total_pending": 6,
   "reviews": [
     {
       "id": 444,
@@ -98,6 +98,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-27T05:35:57.295464+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 471,
+      "event_title": "One dead in US strike against alleged drug-trafficking boat in the Pacific",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/27/un-mort-dans-une-frappe-americaine-contre-un-bateau-de-narcotrafiquants-presumes_6694174_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"US military strike against alleged drug-trafficking boat in the Pacific without verifiable evidence of drug trafficking, resulting in one death\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 6\", \"UDHR Article 9\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The US military action under 'Southern Spear' targets alleged drug trafficking without providing verifiable evidence, violating fundamental human rights to life, liberty, and security. The lack of transparency and accountability undermines trust in institutional actions and sets a dangerous precedent for extraterritorial military operations.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Public release of verifiable evidence of drug trafficking by targeted vessels\", \"Independent investigation confirming or refuting the strike's legitimacy\", \"Policy change requiring judicial oversight for such operations\", \"International condemnation or legal challenges at the UN or ICC\"], \"revaluation_checkpoint\": \"2028-05-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"International investigation confirms lack of evidence and leads to policy reforms restricting unilateral military strikes\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"No accountability, continued strikes without evidence, escalating regional tensions\", \"probability\": 0.55, \"score\": -9}, {\"name\": \"C\", \"description\": \"Escalation into broader conflict or civilian casualties triggering global condemnation\", \"probability\": 0.2, \"score\": -10}], \"prospective_score\": -7.85, \"final_score\": -7.66, \"decision\": \"MINT\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Unverified military strike violates human rights and undermines accountability.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US government conducts military operation against alleged drug trafficking in the Pacific\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"US strike results in death of an individual without verified evidence of drug trafficking involvement\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 6\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of transparency from US administration regarding evidence of drug trafficking by targeted vessels\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The US military action targets alleged drug trafficking but lacks verifiable evidence and results in a fatality, violating fundamental human rights to life and freedom of expression. While the stated goal aligns with SDG 16 (Peace and Justice), the absence of transparency and the loss of life undermine its ethical justification.\", \"snapshot_score\": -5.5, \"trajectory_score\": -3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Release of verifiable evidence confirming drug trafficking by targeted vessels\", \"Independent investigation into the strike and its casualties\", \"Policy change requiring judicial oversight for military operations in civilian contexts\"], \"revaluation_checkpoint\": \"2028-05-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"US administration provides conclusive evidence of drug trafficking and implements stricter oversight protocols\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Ongoing lack of transparency leads to further civilian casualties and international condemnation\", \"probability\": 0.55, \"score\": -7}, {\"name\": \"C\", \"description\": \"Escalation of military operations without accountability, resulting in regional instability\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -5.15, \"final_score\": -4.98, \"decision\": \"MINT\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Military strike without verifiable evidence and resulting in death violates human rights and undermines justice.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -6.32, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"Institutional action (military strike) punishes without verifiable evidence, violating human rights.\", \"disagreement\": false, \"reason\": \"Both analysts correctly identified the institutional action as violating human rights by punishing without evidence. Converged toward average score.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects | llm: Verdict direction flipped: a lethal, unverified military strike violates human rights (negative), but decision is BURN (positive).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-27T08:06:38.954402+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
