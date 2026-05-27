@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-27T02:04:33.351097+00:00",
-  "total_events": 1434,
+  "generated_at": "2026-05-27T02:36:37.831615+00:00",
+  "total_events": 1436,
   "total_burned": 2053800870,
-  "total_minted": 1957347000,
-  "pending_reviews": 4,
+  "total_minted": 1958947000,
+  "pending_reviews": 5,
   "events": [
+    {
+      "id": 1436,
+      "event_title": "Breaking: Preferred bidder announced for troubled Liberty Bell Bay smelter",
+      "event_url": "https://www.abc.net.au/news/2026-05-27/tas-liberty-bell-bay-sale-update/106726106",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -3.36,
+      "confidence": 7,
+      "justification": "Smelter sale enables continued high-emission industrial activity despite worker support pledge. | The $5 million worker support pledge is a positive short-term measure addressing economic hardship, but the announcement of a preferred bidder for the smelter risks locking in continued high-emission industrial activity. The net ethical position is negative due to the long-term environmental harm outweighing the immediate social benefit.",
+      "tx_hash": "Ev747pBdoJ7tFz6a9Gct2T9JvATufyHNRntRVLRRnNuJesFchzGQjFM9caJfeFEkPNSscjJ51s7f1HPRHb1ioqA",
+      "created_at": "2026-05-27T02:36:35.559782+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Federal and state governments pledge $5 million to support workers at the Liberty Bell Bay smelter during transition\", \"affected_sdgs\": [8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Preferred bidder announced for Liberty Bell Bay smelter, risking continued or expanded smelter operations with high emissions and environmental impact\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1435,
+      "event_title": "North Korea tests new multi-purpose missile system",
+      "event_url": "https://www.france24.com/fr/asie-pacifique/20260527-coree-du-nord-teste-nouveau-systeme-lance-missile-polyvalent-nucleaire",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -3.92,
+      "confidence": 8,
+      "justification": "North Korea's missile test increases global security risks and undermines SDG 16. | The test of a new missile system by North Korea represents a significant escalation in military capabilities and regional tensions, undermining global peace and security.",
+      "tx_hash": "2HkN1trL3LfszDm4vK5g5FATamUYA23hpkjgE5rUEwSk9MH92UcrFEyxL51q7gRJGWkGByvxdT4HwAsc8K1Pu9id",
+      "created_at": "2026-05-27T02:36:35.442753+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "North Korea",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"North Korea tested a new multi-purpose missile system, increasing regional and global security risks.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1434,
       "event_title": "Reduced aid funds complicate fight against Ebola",
@@ -31612,13 +31656,13 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.538,
-        "events": 13
+        "burn_ratio": 0.5,
+        "events": 14
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.5,
-        "events": 24
+        "burn_ratio": 0.48,
+        "events": 25
       },
       {
         "region": "North America",
@@ -31696,7 +31740,7 @@
       },
       {
         "date": "2026-05-27",
-        "net_minted": 1700000,
+        "net_minted": 3300000,
         "net_burned": 12000000
       }
     ],
@@ -31714,7 +31758,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 96,
-        "negative": 167,
+        "negative": 169,
         "event_ids_positive": [
           1432,
           1431,
@@ -31814,6 +31858,8 @@
           1076
         ],
         "event_ids_negative": [
+          1436,
+          1435,
           1434,
           1433,
           1430,
@@ -31985,7 +32031,7 @@
       },
       "UDHR": {
         "positive": 37,
-        "negative": 123,
+        "negative": 124,
         "event_ids_positive": [
           1431,
           1421,
@@ -32026,6 +32072,7 @@
           1097
         ],
         "event_ids_negative": [
+          1436,
           1434,
           1433,
           1430,
@@ -32325,7 +32372,7 @@
       },
       "PB": {
         "positive": 46,
-        "negative": 49,
+        "negative": 50,
         "event_ids_positive": [
           1432,
           1416,
@@ -32375,6 +32422,7 @@
           1076
         ],
         "event_ids_negative": [
+          1436,
           1426,
           1423,
           1419,
@@ -32431,11 +32479,11 @@
       "niche_pct": 69.4,
       "mainstream_pct": 30.6,
       "total_sources_used": 124,
-      "articles_processed": 360
+      "articles_processed": 362
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 360,
+      "total_events": 362,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -32627,10 +32675,11 @@
       },
       {
         "name": "Defense",
-        "count": 21,
+        "count": 22,
         "burn_count": 0,
-        "mint_count": 21,
+        "mint_count": 22,
         "event_ids": [
+          1435,
           1433,
           1430,
           1429,
@@ -32806,25 +32855,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 232,
+      "total_mint": 234,
       "direct_action": {
-        "count": 151,
-        "pct": 65.1
+        "count": 153,
+        "pct": 65.4
       },
       "editorial_alarm": {
         "count": 16,
-        "pct": 6.9
+        "pct": 6.8
       },
       "untyped": {
         "count": 65,
-        "pct": 28.0
+        "pct": 27.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 969,
+      "total_mint": 971,
       "direct_action": {
-        "count": 631,
-        "pct": 65.1
+        "count": 633,
+        "pct": 65.2
       },
       "editorial_alarm": {
         "count": 67,
@@ -32832,13 +32881,13 @@
       },
       "untyped": {
         "count": 271,
-        "pct": 28.0
+        "pct": 27.9
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 141,
-      "institutional": 219,
-      "citizen_ratio": 0.392,
+      "institutional": 221,
+      "citizen_ratio": 0.39,
       "daily": [
         {
           "date": "2026-05-21",
@@ -32873,7 +32922,7 @@
         {
           "date": "2026-05-27",
           "citizen": 0,
-          "institutional": 4
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -33020,6 +33069,8 @@
         1076
       ],
       "event_ids_institutional": [
+        1436,
+        1435,
         1434,
         1433,
         1432,
