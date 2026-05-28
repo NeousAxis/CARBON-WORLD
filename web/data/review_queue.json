@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-28T05:05:11.406444+00:00",
-  "total_pending": 6,
+  "generated_at": "2026-05-28T05:35:59.965703+00:00",
+  "total_pending": 7,
   "reviews": [
     {
       "id": 444,
@@ -118,6 +118,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-27T15:35:23.809271+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 497,
+      "event_title": "FDA approves first-ever gene therapy for inherited deafness",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1tpqkj5/a_landmark_moment_for_the_field_fda_approves/",
+      "event_source": "Reddit r/UpliftingNews",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"FDA approves first gene therapy for inherited deafness, offering a potential cure for a previously untreatable condition.\", \"affected_sdgs\": [3, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"High cost of gene therapy may limit access to only the wealthiest individuals, exacerbating health disparities.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The FDA's approval of the first gene therapy for inherited deafness marks a major medical breakthrough with strong support for SDG 3 and CRC, but its high cost risks violating UDHR Article 25 and deepening health inequities.\", \"snapshot_score\": 6.0, \"trajectory_score\": 4.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of cost-reduction strategies or public funding for the therapy\", \"Adoption of the therapy in low-income countries\", \"Long-term health outcomes for patients\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Widespread public funding and global adoption of the therapy, leading to significant health equity improvements.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate adoption with some cost barriers remaining, resulting in partial health equity gains.\", \"probability\": 0.55, \"score\": 5}, {\"name\": \"C\", \"description\": \"Limited access due to high costs and lack of public funding, leading to persistent health disparities.\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 5.15, \"final_score\": 5.31, \"decision\": \"BURN\", \"amount_cbwd\": 125000, \"confidence\": 7, \"justification\": \"FDA approval of gene therapy for deafness is a major medical breakthrough with strong ethical implications.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"FDA approves first-ever gene therapy for inherited deafness, enabling treatment for a previously untreatable genetic condition\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Landmark medical advancement that could improve quality of life for thousands with genetic deafness and set precedent for future gene therapies\", \"affected_sdgs\": [3, 4], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential long-term unknowns regarding gene therapy safety, accessibility, and equitable distribution across socioeconomic groups\", \"affected_sdgs\": [3, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The FDA's approval of the first gene therapy for inherited deafness is a groundbreaking medical advancement that directly improves health outcomes (SDG 3) and aligns with human rights to health and scientific progress. While concerns about long-term safety and equitable access exist, these are secondary to the transformative potential of the therapy for affected individuals.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Long-term safety data from first recipients\", \"Pricing and insurance coverage decisions\", \"Regulatory guidance updates for similar therapies\", \"Emergence of alternative treatments\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Gene therapy becomes widely accessible, with strong safety record and global adoption leading to significant reduction in hereditary deafness cases\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate adoption with some safety concerns emerging, but therapy remains available for most who need it\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Safety issues arise, limiting adoption, and equitable access becomes a major barrier due to high costs\", \"probability\": 0.2, \"score\": 2}], \"prospective_score\": 6.3, \"final_score\": 7.1, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"FDA approval of first gene therapy for inherited deafness advances SDG 3 and UDHR health rights.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.96, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Both analysts agree on BURN direction; consensus on medical advancement aligning with health rights.\", \"disagreement\": false, \"reason\": \"Unanimous agreement on BURN due to FDA action advancing health rights (SDG 3, UDHR Article 25).\"}",
+      "sentinel_concern": "structural: fragile_burn_threshold",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-28T05:35:56.655467+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
