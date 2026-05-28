@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-05-28T13:07:53.286238+00:00",
-  "total_events": 1561,
+  "generated_at": "2026-05-28T13:35:42.319571+00:00",
+  "total_events": 1564,
   "total_burned": 2212200870,
-  "total_minted": 2131102000,
-  "pending_reviews": 12,
+  "total_minted": 2133452000,
+  "pending_reviews": 11,
   "events": [
+    {
+      "id": 1564,
+      "event_title": "Taiwan suspects Nvidia chips smuggled to China via Japan",
+      "event_url": "https://www.japantimes.co.jp/business/2026/05/28/taiwan-china-nvidia-smuggle/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -3.22,
+      "confidence": 7,
+      "justification": "Unauthorized transfer of advanced AI chips to China undermines global security and non-proliferation efforts. | The article documents a negative action (smuggling of advanced AI chips to China) that undermines international security and non-proliferation efforts. While the article itself highlights enforcement concerns, the core event is the unauthorized transfer, which poses significant risks to global stability and aligns with actions that weaken international norms.",
+      "tx_hash": "4XbGLQUMwF8q3ShNyzv2LoXvtPqm6VxKfUcTzP3Zb4BcW4V1C7uvZJJBabyWdY4FEZbpukRLHyNh3buLgSYkPk8d",
+      "created_at": "2026-05-28T13:35:39.168601+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Article highlights enforcement of export controls against unauthorized transfer of advanced AI chips to China, which aligns with international efforts to prevent military diversion and protect global security frameworks.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The smuggling of Nvidia AI chips to China via Japan undermines international export controls, enabling unauthorized access to advanced technology that could be used for military or surveillance purposes, violating global non-proliferation norms.\", \"affected_sdgs\": [], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1563,
+      "event_title": "Taylor Swift concert attack accused to be sentenced in Austria",
+      "event_url": "https://www.thelocal.at/20260528/taylor-swift-concert-attack-accused-to-be-sentenced-in-austria",
+      "event_source": "The Local Austria (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Legal sentencing of a foiled attack plot punishes harm and protects public safety.",
+      "tx_hash": null,
+      "created_at": "2026-05-28T13:17:06.693173+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
+    {
+      "id": 1562,
+      "event_title": "MP Michela Brambilla probed over her TV show about animals",
+      "event_url": "https://www.ansa.it/english/news/politics/2026/05/28/mp-michela-brambilla-probed-over-her-tv-show-about-animals_eb206716-f982-467a-877c-dea9afd68f16.html",
+      "event_source": "ANSA English (Italy)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Both analysts agree on MINT; convergence toward average score.",
+      "tx_hash": null,
+      "created_at": "2026-05-28T13:17:02.174759+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1561,
       "event_title": "Pressure mounts on Spain's PM as brother begins corruption trial",
@@ -34411,8 +34477,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.394,
-        "events": 33
+        "burn_ratio": 0.382,
+        "events": 34
       },
       {
         "region": "North America",
@@ -34490,7 +34556,7 @@
       },
       {
         "date": "2026-05-28",
-        "net_minted": 56375000,
+        "net_minted": 57875000,
         "net_burned": 51700000
       }
     ],
@@ -34508,7 +34574,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 124,
-        "negative": 234,
+        "negative": 235,
         "event_ids_positive": [
           1560,
           1557,
@@ -34636,6 +34702,7 @@
           1076
         ],
         "event_ids_negative": [
+          1564,
           1561,
           1559,
           1558,
@@ -35462,14 +35529,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 59.8,
-      "mainstream_pct": 40.2,
+      "niche_pct": 59.1,
+      "mainstream_pct": 40.9,
       "total_sources_used": 127,
-      "articles_processed": 481
+      "articles_processed": 482
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 481,
+      "total_events": 482,
       "pct": 0.2
     },
     "active_partners_7d": [],
@@ -35707,6 +35774,47 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 33,
+        "burn_count": 13,
+        "mint_count": 20,
+        "event_ids": [
+          1564,
+          1553,
+          1551,
+          1532,
+          1531,
+          1530,
+          1528,
+          1508,
+          1487,
+          1485,
+          1483,
+          1469,
+          1462,
+          1431,
+          1413,
+          1404,
+          1385,
+          1354,
+          1323,
+          1307,
+          1293,
+          1228,
+          1221,
+          1200,
+          1169,
+          1165,
+          1158,
+          1148,
+          1121,
+          1118,
+          1112,
+          1081,
+          1078
+        ]
+      },
+      {
         "name": "Defense",
         "count": 33,
         "burn_count": 1,
@@ -35745,46 +35853,6 @@
           1140,
           1123,
           1075
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 32,
-        "burn_count": 13,
-        "mint_count": 19,
-        "event_ids": [
-          1553,
-          1551,
-          1532,
-          1531,
-          1530,
-          1528,
-          1508,
-          1487,
-          1485,
-          1483,
-          1469,
-          1462,
-          1431,
-          1413,
-          1404,
-          1385,
-          1354,
-          1323,
-          1307,
-          1293,
-          1228,
-          1221,
-          1200,
-          1169,
-          1165,
-          1158,
-          1148,
-          1121,
-          1118,
-          1112,
-          1081,
-          1078
         ]
       },
       {
@@ -35936,10 +36004,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 321,
+      "total_mint": 322,
       "direct_action": {
-        "count": 213,
-        "pct": 66.4
+        "count": 214,
+        "pct": 66.5
       },
       "editorial_alarm": {
         "count": 21,
@@ -35947,13 +36015,13 @@
       },
       "untyped": {
         "count": 87,
-        "pct": 27.1
+        "pct": 27.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1058,
+      "total_mint": 1059,
       "direct_action": {
-        "count": 693,
+        "count": 694,
         "pct": 65.5
       },
       "editorial_alarm": {
@@ -35967,8 +36035,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 178,
-      "institutional": 303,
-      "citizen_ratio": 0.37,
+      "institutional": 304,
+      "citizen_ratio": 0.369,
       "daily": [
         {
           "date": "2026-05-22",
@@ -36003,7 +36071,7 @@
         {
           "date": "2026-05-28",
           "citizen": 14,
-          "institutional": 24
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -36187,6 +36255,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1564,
         1561,
         1560,
         1559,
