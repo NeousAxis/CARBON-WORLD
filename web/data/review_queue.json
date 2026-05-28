@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-28T14:35:28.510310+00:00",
-  "total_pending": 11,
+  "generated_at": "2026-05-28T15:06:45.368116+00:00",
+  "total_pending": 12,
   "reviews": [
     {
       "id": 444,
@@ -218,6 +218,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-28T14:35:25.190773+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 508,
+      "event_title": "US and Iran reach deal but need Trump's final approval, Axios reports",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/us-and-iran-reach-deal-need-trumps-final-approval-axios-reports",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US and Iran reach a 60-day memorandum of understanding to extend ceasefire and initiate nuclear program negotiations, reducing immediate risk of conflict escalation\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Final approval by President Donald Trump is required, introducing uncertainty and potential reversal of the agreement based on political considerations\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The agreement between the US and Iran to extend a ceasefire and begin nuclear negotiations represents a significant step toward reducing immediate conflict risks and advancing peace (SDG 16). However, the dependency on a single political figure's approval introduces fragility and potential for reversal, undermining long-term stability.\", \"snapshot_score\": 6.5, \"trajectory_score\": 4.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Trump's approval or rejection of the deal\", \"Iranian domestic political shifts affecting negotiations\", \"Regional geopolitical developments (e.g., Saudi-Israel relations)\", \"International sanctions or incentives altering Iran's stance\"], \"revaluation_checkpoint\": \"2028-05-28\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Trump approves the deal, negotiations proceed smoothly, and a long-term framework is established, reducing regional tensions and advancing SDG 16\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Trump rejects the deal, negotiations collapse, and tensions escalate, risking renewed conflict and violating SDG 16\", \"probability\": 0.5, \"score\": -5}, {\"name\": \"C\", \"description\": \"Trump approves the deal but imposes conditional terms that Iran rejects, leading to a stalemate and prolonged uncertainty\", \"probability\": 0.2, \"score\": -2}], \"prospective_score\": 0.15, \"final_score\": 3.36, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Agreement reduces immediate conflict risk but hinges on political approval, creating fragility.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US and Iran reach a 60-day memorandum of understanding to extend the ceasefire and initiate negotiations on Iran's nuclear program, signaling a potential reduction in geopolitical tensions and military conflict risk.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The agreement remains contingent on final approval by President Donald Trump, introducing uncertainty and potential reversal risk due to political volatility.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"The deal does not address underlying structural issues in US-Iran relations, leaving long-term stability unresolved.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The memorandum of understanding represents a concrete step toward de-escalation and dialogue, aligning with SDG 16 (Peace, Justice, and Strong Institutions) by reducing immediate conflict risk. However, the conditional nature of Trump's approval and the lack of structural resolution introduce significant uncertainty and potential for reversal, tempering the ethical weight of the action.\", \"snapshot_score\": 5.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Trump's final approval or rejection of the deal\", \"Renewal or collapse of the 60-day ceasefire\", \"Escalation of regional proxy conflicts involving Iran or US allies\", \"New sanctions or military actions by either party\"], \"revaluation_checkpoint\": \"2028-05-28\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Trump approves the deal, leading to sustained negotiations, reduced tensions, and a pathway to long-term diplomatic resolution.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Trump rejects the deal, tensions escalate, and the ceasefire collapses, reigniting conflict and nuclear proliferation risks.\", \"probability\": 0.5, \"score\": -5}, {\"name\": \"C\", \"description\": \"The deal is approved but fails to address core issues, leading to a fragile and temporary de-escalation with recurring crises.\", \"probability\": 0.2, \"score\": 2}], \"prospective_score\": 1.1, \"final_score\": 3.075, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Deal reduces immediate conflict risk but remains fragile and politically contingent.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.67, \"confidence\": 7, \"amount_cbwd\": 500000, \"justification\": \"The agreement reduces immediate conflict risk and promotes dialogue, though its political fragility limits impact.\", \"disagreement\": true, \"reason\": \"Analyst A leans toward MINT due to the positive step toward peace, while Analyst B remains neutral due to fragility. The institutional action (ceasefire extension and negotiation) supports MINT.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: peace deal should be BURN, not MINT",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-28T15:06:42.476718+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
