@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-28T03:06:01.714080+00:00",
-  "total_events": 1526,
+  "generated_at": "2026-05-28T03:35:54.566190+00:00",
+  "total_events": 1528,
   "total_burned": 2167500870,
-  "total_minted": 2082527000,
-  "pending_reviews": 7,
+  "total_minted": 2082827000,
+  "pending_reviews": 6,
   "events": [
+    {
+      "id": 1528,
+      "event_title": "Greenpeace warns AI data centre rollout threatens to derail Australia’s clean energy transition",
+      "event_url": "https://www.pv-tech.org/greenpeace-warns-ai-data-centre-rollout-threatens-to-derail-australias-clean-energy-transition/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.3,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; Greenpeace's warning highlights systemic harm from AI expansion outweighing awareness act. | The publication of the report by Greenpeace Australia is a positive act of raising awareness about a critical environmental threat (BURN). However, the underlying issue—unregulated AI data centre expansion—poses a significant risk to Australia's clean energy transition and climate goals (MINT). The net ethical position is mixed but leans slightly negative due to the severity ",
+      "tx_hash": "5Pajjofw4sSmR6MChmyXxCMYJjKP3BQMHxSk8b2BxMqiZbsWqqarj1VxBe49gnxyL8yhxMex9NxG85qFJozxLg7o",
+      "created_at": "2026-05-28T03:35:51.791164+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Greenpeace Australia published a report warning about the environmental risks of AI data centre expansion, raising public awareness of energy transition challenges\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rapid expansion of AI data centres threatens to derail Australia's clean energy transition by increasing energy demand and potentially locking in fossil fuel infrastructure\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1527,
+      "event_title": "Methane leaks detected on 2 out of 3 gas sites in France",
+      "event_url": "https://reporterre.net/Des-fuites-de-methane-ont-ete-detecte-sur-deux-sites-gaziers-sur-trois-en-France",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Methane leaks from gas infrastructure cause severe climate harm; institutional inaction or failure to address them constitutes a BURN.",
+      "tx_hash": null,
+      "created_at": "2026-05-28T03:17:01.801777+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1526,
       "event_title": "US adds Persian Gulf Strait Authority to sanctions list, Treasury website shows",
@@ -33636,8 +33680,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.471,
-        "events": 17
+        "burn_ratio": 0.444,
+        "events": 18
       },
       {
         "region": "Asia",
@@ -33720,7 +33764,7 @@
       },
       {
         "date": "2026-05-28",
-        "net_minted": 9100000,
+        "net_minted": 9250000,
         "net_burned": 8500000
       }
     ],
@@ -33738,7 +33782,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 116,
-        "negative": 212,
+        "negative": 213,
         "event_ids_positive": [
           1525,
           1518,
@@ -33858,6 +33902,7 @@
           1076
         ],
         "event_ids_negative": [
+          1528,
           1526,
           1523,
           1522,
@@ -34618,11 +34663,11 @@
       "niche_pct": 62.7,
       "mainstream_pct": 37.3,
       "total_sources_used": 126,
-      "articles_processed": 451
+      "articles_processed": 452
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 451,
+      "total_events": 452,
       "pct": 0.2
     },
     "active_partners_7d": [],
@@ -34732,10 +34777,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 58,
+        "count": 59,
         "burn_count": 32,
-        "mint_count": 26,
+        "mint_count": 27,
         "event_ids": [
+          1528,
           1521,
           1514,
           1504,
@@ -34889,10 +34935,11 @@
       },
       {
         "name": "Tech",
-        "count": 26,
+        "count": 27,
         "burn_count": 11,
-        "mint_count": 15,
+        "mint_count": 16,
         "event_ids": [
+          1528,
           1508,
           1487,
           1485,
@@ -35062,10 +35109,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 299,
+      "total_mint": 300,
       "direct_action": {
-        "count": 191,
-        "pct": 63.9
+        "count": 192,
+        "pct": 64.0
       },
       "editorial_alarm": {
         "count": 21,
@@ -35073,13 +35120,13 @@
       },
       "untyped": {
         "count": 87,
-        "pct": 29.1
+        "pct": 29.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1036,
+      "total_mint": 1037,
       "direct_action": {
-        "count": 671,
+        "count": 672,
         "pct": 64.8
       },
       "editorial_alarm": {
@@ -35093,8 +35140,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 169,
-      "institutional": 282,
-      "citizen_ratio": 0.375,
+      "institutional": 283,
+      "citizen_ratio": 0.374,
       "daily": [
         {
           "date": "2026-05-22",
@@ -35129,7 +35176,7 @@
         {
           "date": "2026-05-28",
           "citizen": 5,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -35304,6 +35351,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1528,
         1526,
         1522,
         1521,
