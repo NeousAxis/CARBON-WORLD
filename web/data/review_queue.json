@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-27T23:35:08.788194+00:00",
-  "total_pending": 6,
+  "generated_at": "2026-05-28T00:05:56.829251+00:00",
+  "total_pending": 7,
   "reviews": [
     {
       "id": 444,
@@ -118,6 +118,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-27T15:35:23.809271+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 493,
+      "event_title": "Justice still on the horizon for fishermen suing Bumble Bee in forced labor case, despite setback",
+      "event_url": "https://www.greenpeace.org/usa/justice-still-on-the-horizon-for-fishermen-suing-bumble-bee-in-forced-labor-case-despite-setback/",
+      "event_source": "Greenpeace USA",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Fishermen are taking legal action against Bumble Bee for alleged forced labor in their supply chains.\", \"affected_sdgs\": [8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"The lawsuit highlights the need for stronger labor protections in seafood supply chains.\", \"affected_sdgs\": [8, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"The legal setback indicates that justice for the fishermen is delayed, potentially allowing forced labor to continue.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"ILO Forced Labour Convention\", \"UDHR Article 23\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"The lack of immediate action by Bumble Bee suggests a failure to uphold ethical labor standards.\", \"affected_sdgs\": [8, 12], \"violated_rights\": [\"ILO Freedom of Association\", \"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}], \"ethical_synthesis\": \"The lawsuit represents a positive step toward holding corporations accountable for forced labor in supply chains, but the legal setback and lack of immediate action by Bumble Bee undermine labor rights and ethical business practices.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Court ruling on the fishermen's case\", \"Bumble Bee's public response and policy changes\", \"Industry-wide reforms in seafood labor practices\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Fishermen win the case, leading to stronger labor protections in the seafood industry.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"The case is dismissed or delayed further, with no meaningful change in labor practices.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"The legal battle is lost, and forced labor continues unchecked in the supply chain.\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": -1.35, \"final_score\": -1.46, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Legal setbacks and lack of corporate action enable forced labor in supply chains.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace USA's public advocacy for forced labor accountability in seafood supply chains, highlighting systemic corporate responsibility gaps\", \"affected_sdgs\": [8, 12, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Legal action by fishermen against Bumble Bee Foods for forced labor violations, demonstrating worker-led pursuit of justice\", \"affected_sdgs\": [8, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"Court setback in the forced labor case against Bumble Bee Foods, delaying justice for exploited fishermen\", \"affected_sdgs\": [8, 16], \"violated_rights\": [\"UDHR Article 4 (Freedom from Slavery)\", \"ILO Forced Labour Convention\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"ethical_synthesis\": \"The article highlights both a positive push for corporate accountability and worker justice through legal action and advocacy, and a negative judicial setback that delays redress for forced labor victims. The net ethical position is cautiously positive, as the pursuit of justice and systemic change outweighs the temporary procedural delay.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Court ruling on the forced labor case\", \"Bumble Bee Foods' response to allegations\", \"Broader industry reforms in seafood supply chains\", \"Greenpeace USA's continued campaign pressure\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Forced labor case succeeds, leading to systemic supply chain reforms and industry-wide accountability\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Case partially succeeds with limited reforms, but systemic issues persist in the seafood industry\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Case fails, emboldening exploitative practices and weakening worker protections\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 3.1, \"final_score\": 2.7, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Legal pursuit of forced labor accountability outweighs setback, but systemic change remains uncertain.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.7, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Legal setback and corporate inaction enable forced labor, violating labor rights.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (legal setback + corporate inaction) as enabling harm, while Analyst B misapplied the ethical lens by focusing on the pursuit of justice rather than the institutional failure to protect rights.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict BURN is opposite; article describes forced labor setback, a negative impact, should be MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-28T00:05:53.765078+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
