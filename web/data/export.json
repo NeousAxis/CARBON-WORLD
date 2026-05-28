@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-28T01:34:15.565863+00:00",
-  "total_events": 1521,
+  "generated_at": "2026-05-28T02:05:07.958420+00:00",
+  "total_events": 1523,
   "total_burned": 2166000870,
-  "total_minted": 2079577000,
+  "total_minted": 2081327000,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 1523,
+      "event_title": "European Commission linked leather to deforestation, then ignored it",
+      "event_url": "https://news.mongabay.com/2026/05/european-commission-linked-leather-to-deforestation-then-ignored-it/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -5.38,
+      "confidence": 8,
+      "justification": "EU backtracks on evidence-based deforestation regulation for leather, enabling environmental harm. | The EU's initial inclusion of leather in the Deforestation Regulation was a positive step toward protecting forests and biodiversity, aligning with planetary boundaries and responsible consumption. However, the subsequent proposal to exclude leather despite clear evidence of deforestation links represents a significant ethical failure, undermining climate action and environmental justice. The net",
+      "tx_hash": "5nm6VyxdbDQv8DR43mvnAcVf8JEAGhu6UNjX9fg32epw2pae3jK5NSG9bXg6Af1kP5HwsmLkpQk1NZvG9QSuten3",
+      "created_at": "2026-05-28T02:05:04.870900+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU Deforestation Regulation (EUDR) proposal initially included leather, hides, and skins as deforestation-linked products, demonstrating alignment with SDG 15 (Life on Land) and SDG 12 (Responsible Consumption)\", \"affected_sdgs\": [12, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"EU Commission's own research confirmed the link between leather production and deforestation, providing evidence-based justification for regulatory action\", \"affected_sdgs\": [12, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"EU Commission proposed removing leather, hides, and skins from EUDR despite evidence of deforestation links, undermining environmental protection and climate action\", \"affected_sdgs\": [12, 13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Institutional backtracking on evidence-based policy weakens public trust in EU regulatory processes and environmental governance\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 1522,
+      "event_title": "Australia’s old environment laws were a box-ticking exercise. Sadly, the new ones could be too",
+      "event_url": "https://theconversation.com/australias-old-environment-laws-were-a-box-ticking-exercise-sadly-the-new-ones-could-be-too-283069",
+      "event_source": "The Conversation AU",
+      "decision": "MINT",
+      "amount_crbn": 250000,
+      "final_score": -0.75,
+      "confidence": 7,
+      "justification": "The new laws may lack meaningful environmental impact, aligning with a negative trajectory. | The passage of new environment laws represents a procedural step forward for environmental governance, but the article raises concerns that these laws may not lead to meaningful environmental protection, undermining their ethical value.",
+      "tx_hash": "2yUka5CiVL5Fny9R7xiYyQXU4Wwz8ToHZFwcL6XeURGo94rA2jdvuhQufR7dhs4j3X9c5EpWmxckMqhGQ7HXzCax",
+      "created_at": "2026-05-28T02:05:04.756904+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"New environment laws were passed after a long delay, indicating a formal commitment to environmental governance.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The article suggests the new laws may be a continuation of the previous 'box-ticking' approach, implying weak enforcement and limited real-world impact.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1521,
       "event_title": "Norway joins France’s nuclear deterrence club",
@@ -33526,8 +33570,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.5,
-        "events": 16
+        "burn_ratio": 0.471,
+        "events": 17
       },
       {
         "region": "Asia",
@@ -33610,7 +33654,7 @@
       },
       {
         "date": "2026-05-28",
-        "net_minted": 6650000,
+        "net_minted": 8400000,
         "net_burned": 7000000
       }
     ],
@@ -33628,7 +33672,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 115,
-        "negative": 209,
+        "negative": 211,
         "event_ids_positive": [
           1518,
           1515,
@@ -33747,6 +33791,8 @@
           1076
         ],
         "event_ids_negative": [
+          1523,
+          1522,
           1521,
           1519,
           1514,
@@ -34369,7 +34415,7 @@
       },
       "PB": {
         "positive": 61,
-        "negative": 58,
+        "negative": 60,
         "event_ids_positive": [
           1515,
           1510,
@@ -34434,6 +34480,8 @@
           1076
         ],
         "event_ids_negative": [
+          1523,
+          1522,
           1505,
           1501,
           1487,
@@ -34496,24 +34544,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 63.2,
-      "mainstream_pct": 36.8,
+      "niche_pct": 62.4,
+      "mainstream_pct": 37.6,
       "total_sources_used": 125,
-      "articles_processed": 447
+      "articles_processed": 449
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 447,
+      "total_events": 449,
       "pct": 0.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 11,
+        "count": 12,
         "burn_count": 2,
-        "mint_count": 9,
+        "mint_count": 10,
         "event_ids": [
+          1523,
           1475,
           1443,
           1393,
@@ -34591,21 +34640,21 @@
         ]
       },
       {
+        "name": "EU Commission",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          1523
+        ]
+      },
+      {
         "name": "COP",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
           1509
-        ]
-      },
-      {
-        "name": "ICJ",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          1101
         ]
       }
     ],
@@ -34941,38 +34990,38 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 296,
+      "total_mint": 298,
       "direct_action": {
-        "count": 189,
-        "pct": 63.9
+        "count": 190,
+        "pct": 63.8
       },
       "editorial_alarm": {
-        "count": 20,
-        "pct": 6.8
+        "count": 21,
+        "pct": 7.0
       },
       "untyped": {
         "count": 87,
-        "pct": 29.4
+        "pct": 29.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1033,
+      "total_mint": 1035,
       "direct_action": {
-        "count": 669,
-        "pct": 64.8
+        "count": 670,
+        "pct": 64.7
       },
       "editorial_alarm": {
-        "count": 71,
-        "pct": 6.9
+        "count": 72,
+        "pct": 7.0
       },
       "untyped": {
         "count": 293,
-        "pct": 28.4
+        "pct": 28.3
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 167,
-      "institutional": 280,
+      "citizen": 168,
+      "institutional": 281,
       "citizen_ratio": 0.374,
       "daily": [
         {
@@ -35007,11 +35056,12 @@
         },
         {
           "date": "2026-05-28",
-          "citizen": 3,
-          "institutional": 1
+          "citizen": 4,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        1523,
         1520,
         1519,
         1518,
@@ -35181,6 +35231,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1522,
         1521,
         1517,
         1516,
