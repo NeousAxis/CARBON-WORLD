@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-28T01:04:27.375407+00:00",
-  "total_pending": 6,
+  "generated_at": "2026-05-28T01:34:15.699700+00:00",
+  "total_pending": 7,
   "reviews": [
     {
       "id": 444,
@@ -118,6 +118,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-27T15:35:23.809271+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 494,
+      "event_title": "Starmer and Tusk sign UK–Poland defence pact amid warnings over Russian threats",
+      "event_url": "https://www.france24.com/en/europe/20260527-starmer-and-tusk-sign-uk%E2%80%93poland-defence-pact-amid-warnings-over-russian-threats",
+      "event_source": "France 24 EN",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"UK and Poland sign a bilateral defence pact to strengthen NATO military and security cooperation, including cyber defence and joint capabilities, in response to Russian aggression threats\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The pact may escalate regional tensions and contribute to an arms race dynamic, increasing military expenditures and potential for conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The defence pact enhances collective security and aligns with NATO commitments, supporting peace and stability (SDG 16). However, it risks escalating geopolitical tensions and diverting resources from social and environmental priorities, creating a net ethical tension between security and sustainable development.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Escalation of Russian military actions in Europe\", \"Failure of diplomatic de-escalation efforts\", \"Increased military spending displacing social/environmental budgets\", \"Successful alternative security frameworks emerging\"], \"revaluation_checkpoint\": \"2028-05-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Pact successfully deters aggression and fosters broader European security cooperation, reducing conflict risk\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Pact maintains status quo with no significant escalation or de-escalation, moderate resource diversion\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Pact triggers arms race, diverts critical resources, and exacerbates regional instability\", \"probability\": 0.2, \"score\": -6}], \"prospective_score\": 1.9, \"final_score\": 2.6, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Enhances security but risks escalating tensions and diverting resources from sustainable development.\", \"event_country\": \"United Kingdom\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"UK and Poland sign a defence pact to strengthen NATO military and security cooperation, including cyber defence, in response to Russian aggression threats\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Enhanced joint capabilities and coordination between NATO allies to deter aggression and protect regional stability\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Increased military spending and defence pact may escalate regional tensions, particularly with Russia, potentially undermining diplomatic efforts for peace\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Focus on military solutions could divert resources from social and environmental priorities, such as climate action or poverty reduction\", \"affected_sdgs\": [1, 13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The defence pact strengthens NATO cohesion and deterrence against aggression, aligning with SDG 16 (Peace, Justice, and Strong Institutions) and UDHR principles of collective security. However, the militarization of security risks escalating tensions and diverting resources from critical social and environmental goals, creating a net ethical trade-off.\", \"snapshot_score\": 3.5, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Escalation of military conflict in Eastern Europe\", \"Failure to achieve diplomatic breakthroughs with Russia\", \"Shift in UK or Polish government policy toward de-escalation\", \"New evidence of cyber attacks or hybrid warfare reducing trust in military solutions\"], \"revaluation_checkpoint\": \"2028-05-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic breakthroughs reduce tensions; pact becomes a framework for regional stability and crisis management\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Pact maintains deterrence but does not escalate tensions; resources remain balanced between military and social priorities\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"Military escalation occurs; pact accelerates arms race and diverts critical resources from climate and social goals\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.15, \"final_score\": 2.26, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Strengthens NATO cohesion but risks escalation and resource diversion; net neutral impact.\", \"event_country\": \"United Kingdom\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.43, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"Strengthening NATO cohesion and collective security supports peace and stability, aligning with ethical frameworks.\", \"disagreement\": true, \"reason\": \"The institutional action (defence pact) supports collective security and peace (BURN), but the militarization risks escalation and resource diversion (MINT). Overall, the action leans toward MINT due to its net impact on geopolitical dynamics.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Justification praises the defence pact as supporting peace, yet decision is MINT (negative), creating a mismatch between rationale and verdict.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-28T01:34:12.367965+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
