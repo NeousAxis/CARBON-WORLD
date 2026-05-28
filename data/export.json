@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-28T22:07:04.906087+00:00",
-  "total_events": 1618,
-  "total_burned": 2316500870,
-  "total_minted": 2185662000,
+  "generated_at": "2026-05-28T22:35:36.071081+00:00",
+  "total_events": 1620,
+  "total_burned": 2321500870,
+  "total_minted": 2186162000,
   "pending_reviews": 11,
   "events": [
+    {
+      "id": 1620,
+      "event_title": "‘World’s deepest banner protest’ launched at the bottom of the sea",
+      "event_url": "https://news.mongabay.com/short-article/2026/05/worlds-deepest-banner-protest-launched-at-the-bottom-of-the-sea/",
+      "event_source": "Mongabay",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.06,
+      "confidence": 8,
+      "justification": "Innovative underwater protest amplifies climate science communication with global reach. | This action directly amplifies climate science communication in a novel, high-impact venue, aligning with SDG 13 (Climate Action) and SDG 14 (Life Below Water). The symbolic protest at extreme depth demonstrates commitment to environmental advocacy, with potential to influence public perception and policy through innovative consciousness-raising.",
+      "tx_hash": "56hzuSW6VVg2aYb6WynLKUQ2wovgdiTcg9PUPWgER8cJSAUCz2ALcCHzDuErtgpRnpuk9zyPF3n17LLsTQs6tgUd",
+      "created_at": "2026-05-28T22:35:32.407434+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Greenpeace deployed a remotely operated vehicle to unfurl a protest banner at 2,300 meters depth in the Norwegian Sea, delivering a climate science message to an unprecedented underwater audience.\", \"affected_sdgs\": [13, 14], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null
+    },
+    {
+      "id": 1619,
+      "event_title": "Controversial Sunshine Coast housing development gets federal approval",
+      "event_url": "https://www.abc.net.au/news/2026-05-29/stockland-aura-south-federal-government-approval/106731014",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.94,
+      "confidence": 7,
+      "justification": "Large-scale housing approval without verified sustainability measures increases environmental harm risk. | The federal approval of the Aura South development addresses urgent housing needs (SDG 11) but raises significant concerns about long-term environmental sustainability, biodiversity loss, and climate resilience. The net ethical judgment hinges on whether the development includes robust sustainability measures and community consultation.",
+      "tx_hash": "bxNUNkGsua6PM51YFH7m2RyiDfYLq4CZTPMfBoykJpFmx4pGtavNsMbpQuiCiNzyWYB61T4w2pnt4VYXe1cADx3",
+      "created_at": "2026-05-28T22:35:32.292435+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Federal government approval of a large-scale housing development that could provide up to 12,000 homes, addressing housing shortages and urban sprawl pressures in the Sunshine Coast region\", \"affected_sdgs\": [11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Approval of a large-scale housing development in a fast-growing region without clear evidence of sustainable planning, biodiversity impact assessments, or alignment with climate resilience goals\", \"affected_sdgs\": [11, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1618,
       "event_title": "How Utility Companies and States Shaped America’s Clean Energy Transition",
@@ -35660,8 +35704,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.5,
-        "events": 20
+        "burn_ratio": 0.476,
+        "events": 21
       },
       {
         "region": "Asia",
@@ -35744,8 +35788,8 @@
       },
       {
         "date": "2026-05-28",
-        "net_minted": 103935000,
-        "net_burned": 140350000
+        "net_minted": 104435000,
+        "net_burned": 145350000
       }
     ],
     "event_of_the_day": {
@@ -35761,9 +35805,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 141,
-        "negative": 253,
+        "positive": 142,
+        "negative": 254,
         "event_ids_positive": [
+          1620,
           1618,
           1607,
           1602,
@@ -35907,6 +35952,7 @@
           1076
         ],
         "event_ids_negative": [
+          1619,
           1617,
           1616,
           1615,
@@ -36579,9 +36625,10 @@
         ]
       },
       "Animal": {
-        "positive": 40,
+        "positive": 41,
         "negative": 30,
         "event_ids_positive": [
+          1620,
           1595,
           1589,
           1588,
@@ -36658,7 +36705,7 @@
       },
       "PB": {
         "positive": 76,
-        "negative": 72,
+        "negative": 73,
         "event_ids_positive": [
           1618,
           1607,
@@ -36738,6 +36785,7 @@
           1076
         ],
         "event_ids_negative": [
+          1619,
           1616,
           1605,
           1604,
@@ -36817,11 +36865,11 @@
       "niche_pct": 55.8,
       "mainstream_pct": 44.2,
       "total_sources_used": 129,
-      "articles_processed": 517
+      "articles_processed": 519
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 517,
+      "total_events": 519,
       "pct": 0.2
     },
     "active_partners_7d": [],
@@ -37012,10 +37060,11 @@
       },
       {
         "name": "Construction",
-        "count": 55,
+        "count": 56,
         "burn_count": 26,
-        "mint_count": 29,
+        "mint_count": 30,
         "event_ids": [
+          1619,
           1607,
           1602,
           1580,
@@ -37286,55 +37335,55 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 177,
+      "total_burn": 178,
       "direct_action": {
         "count": 126,
-        "pct": 71.2
+        "pct": 70.8
       },
       "editorial_consciousness": {
-        "count": 15,
-        "pct": 8.5
+        "count": 16,
+        "pct": 9.0
       },
       "untyped": {
         "count": 36,
-        "pct": 20.3
+        "pct": 20.2
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 506,
+      "total_burn": 507,
       "direct_action": {
         "count": 332,
-        "pct": 65.6
+        "pct": 65.5
       },
       "editorial_consciousness": {
-        "count": 34,
-        "pct": 6.7
+        "count": 35,
+        "pct": 6.9
       },
       "untyped": {
         "count": 140,
-        "pct": 27.7
+        "pct": 27.6
       }
     },
     "mint_composition_7d": {
-      "total_mint": 340,
+      "total_mint": 341,
       "direct_action": {
-        "count": 230,
-        "pct": 67.6
+        "count": 231,
+        "pct": 67.7
       },
       "editorial_alarm": {
         "count": 23,
-        "pct": 6.8
+        "pct": 6.7
       },
       "untyped": {
         "count": 87,
-        "pct": 25.6
+        "pct": 25.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1077,
+      "total_mint": 1078,
       "direct_action": {
-        "count": 710,
-        "pct": 65.9
+        "count": 711,
+        "pct": 66.0
       },
       "editorial_alarm": {
         "count": 74,
@@ -37346,9 +37395,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 196,
-      "institutional": 321,
-      "citizen_ratio": 0.379,
+      "citizen": 197,
+      "institutional": 322,
+      "citizen_ratio": 0.38,
       "daily": [
         {
           "date": "2026-05-22",
@@ -37382,11 +37431,12 @@
         },
         {
           "date": "2026-05-28",
-          "citizen": 32,
-          "institutional": 42
+          "citizen": 33,
+          "institutional": 43
         }
       ],
       "event_ids_citizen": [
+        1620,
         1618,
         1616,
         1615,
@@ -37585,6 +37635,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1619,
         1617,
         1608,
         1603,
