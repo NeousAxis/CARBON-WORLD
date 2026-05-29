@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T09:37:39.478353+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-05-29T10:06:19.106608+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 444,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-29T09:37:35.617903+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 536,
+      "event_title": "High-voltage aerial line in Camargue: NGOs call on the state to abandon the project",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/05/29/ligne-aerienne-a-tres-haute-tension-en-camargue-des-ong-appellent-l-etat-a-l-abandon-du-projet_6694726_3244.html",
+      "event_source": "Le Monde Planete",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NGOs publicly calling on the state to abandon a high-impact infrastructure project to protect local ecosystems and biodiversity in the Camargue region\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"French state advancing a 400,000-volt high-voltage aerial line project in the Camargue, prioritizing energy infrastructure over environmental protection despite NGO opposition\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [\"UNDRIP Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}], \"ethical_synthesis\": \"The state's push for a high-voltage line in the Camargue prioritizes energy infrastructure over biodiversity and indigenous rights, while NGOs' opposition represents a legitimate environmental and rights-based challenge. The project risks irreversible ecological damage to a UNESCO-listed wetland, undermining SDGs 13, 14, and 15, despite its claimed role in energy transition.\", \"snapshot_score\": -4.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Project cancellation or significant redesign by 2028\", \"Legal injunctions halting construction\", \"New scientific evidence of severe biodiversity impact\", \"Government policy shift toward underground cables or renewable alternatives\"], \"revaluation_checkpoint\": \"2028-05-29\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Project is abandoned or redesigned to avoid Camargue, replaced with renewable energy solutions and underground cables\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Project proceeds with minimal modifications, causing moderate but manageable ecological damage\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Project is completed as planned, leading to severe biodiversity loss and legal challenges from NGOs and indigenous groups\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.7, \"final_score\": -2.855, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"State-backed high-voltage line project undermines biodiversity and indigenous rights despite NGO opposition.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NGOs publicly calling on the state to abandon a high-voltage power line project in Camargue, demonstrating active civil society engagement in environmental protection\", \"affected_sdgs\": [7, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}, {\"description\": \"Media coverage of the NGO campaign increases public awareness of environmental and biodiversity impacts of high-voltage infrastructure\", \"affected_sdgs\": [13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"State-backed project to construct a 400,000-volt aerial power line in Camargue, a biodiverse wetland region, with a deadline of 2029\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [\"UDHR Article 25 (right to a healthy environment)\", \"UNDRIP Article 29 (environmental protection)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The state's push for a high-voltage power line in a protected wetland contradicts environmental and indigenous rights frameworks, while NGO opposition represents a positive civil society response to ecological harm. The project risks irreversible biodiversity loss and violates planetary boundaries, outweighing the claimed benefits of energy infrastructure.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Project cancellation by 2028\", \"Legal injunction halting construction\", \"Scientific study confirming severe biodiversity impact\", \"Government reversal of 2029 deadline\"], \"revaluation_checkpoint\": \"2028-05-29\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Project abandoned due to legal challenges and public pressure, leading to alternative renewable energy solutions\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Project proceeds with modifications to reduce environmental impact but still causes significant harm\", \"probability\": 0.5, \"score\": -5}, {\"name\": \"C\", \"description\": \"Project completed as planned, causing irreversible damage to Camargue's ecosystem and violating indigenous rights\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.3, \"final_score\": -5.1, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"State-backed high-voltage line in biodiverse wetland violates environmental rights despite NGO opposition.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.35, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"State action enabling ecological harm in protected wetland overrides NGO opposition.\", \"disagreement\": false, \"reason\": \"Both analysts correctly identified the institutional action (state-backed project) as enabling harm to biodiversity and rights, despite NGO opposition. The action violates environmental protections.\"}",
+      "sentinel_concern": "llm: Polarity error: Final verdict BURN contradicts justification (enabling ecological harm should be MINT)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-29T10:06:15.737638+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
