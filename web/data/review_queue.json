@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T07:34:29.315703+00:00",
-  "total_pending": 11,
+  "generated_at": "2026-05-29T08:06:49.994294+00:00",
+  "total_pending": 12,
   "reviews": [
     {
       "id": 444,
@@ -218,6 +218,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-28T15:36:47.854026+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 532,
+      "event_title": "UN to Place Israel on Sexual Violence in Conflict Blacklist",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/un-place-israel-sexual-violence-conflict-blacklist-israeli-envoy-says",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"UN mechanism to document and address sexual violence in conflict zones, potentially triggering accountability and protection measures for victims\", \"affected_sdgs\": [5, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Alleged political decision by UN to include Israel on a sexual violence blacklist without verified evidence, risking reputational harm and undermining trust in UN mechanisms\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 11\", \"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The UN's action to place Israel on a sexual violence blacklist, if politically motivated and unverified, risks undermining the integrity of UN mechanisms designed to protect victims. However, the mechanism itself is a positive step toward addressing sexual violence in conflict zones, provided it is evidence-based and fair.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Publication of the UN report with verifiable evidence\", \"Independent verification of allegations by credible third parties\", \"Israel's formal response and legal challenge to the listing\"], \"revaluation_checkpoint\": \"2028-05-29\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"UN report provides clear, verifiable evidence of sexual violence by Israeli forces, leading to accountability and protection measures\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"UN report lacks sufficient evidence, listing is withdrawn or revised, restoring trust in UN mechanisms\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"UN report is politically motivated, listing remains despite lack of evidence, damaging UN credibility and enabling impunity\", \"probability\": 0.25, \"score\": -7}], \"prospective_score\": 0.45, \"final_score\": -0.66, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Politically motivated listing risks undermining UN accountability mechanisms.\", \"event_country\": \"Switzerland\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"UN places Israel on sexual violence in conflict blacklist alongside Hamas, signaling accountability for alleged war crimes and reinforcing international norms against sexual violence in conflict zones\", \"affected_sdgs\": [5, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Israel's ambassador dismisses the blacklist as a 'political decision' disconnected from facts, potentially undermining the legitimacy of the UN's investigative process and international accountability mechanisms\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The UN's action to place Israel on the sexual violence blacklist represents a significant step toward accountability for alleged war crimes, aligning with SDG 5 (Gender Equality) and SDG 16 (Peace & Justice). However, the Israeli government's dismissal of the decision as politically motivated risks eroding trust in international institutions and could hinder future accountability efforts.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"UN report publication and subsequent evidence review\", \"Israel's formal response and potential legal challenges\", \"International reactions and diplomatic shifts\", \"Impact on future UN investigations into conflict-related sexual violence\"], \"revaluation_checkpoint\": \"2028-05-29\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"UN report provides overwhelming evidence, leading to global consensus on accountability and strengthened international norms against sexual violence in conflict\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"UN report faces scrutiny, evidence is contested, and the blacklist becomes a polarizing issue without clear resolution\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"UN report is discredited, Israel avoids accountability, and the blacklist undermines future UN investigations into sexual violence in conflict\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 3.0, \"final_score\": 5.125, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1000000, \"confidence\": 8, \"justification\": \"UN accountability action outweighs political dismissal, but uncertainty remains.\", \"event_country\": \"Israel\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.07, \"confidence\": 7, \"amount_cbwd\": 500000, \"justification\": \"UN action aims to hold Israel accountable for alleged sexual violence in conflict.\", \"disagreement\": true, \"reason\": \"The institutional action is the UN's decision to place Israel on a blacklist for sexual violence in conflict. This action seeks to hold an actor accountable for potential human rights violations, which aligns with BURN criteria.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: accountability action (UN blacklist) scored BURN, but UN action is positive (holds violators accountable).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-29T08:06:46.104496+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
