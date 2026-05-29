@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-29T01:35:04.574296+00:00",
-  "total_events": 1628,
-  "total_burned": 2333500870,
+  "generated_at": "2026-05-29T02:04:39.283485+00:00",
+  "total_events": 1630,
+  "total_burned": 2343500870,
   "total_minted": 2196612000,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 1630,
+      "event_title": "Greenpeace launches 'Supply Change' campaign",
+      "event_url": "https://mastodon.social/@greenpeace/116655329795333285",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Global institutional action to reduce corporate environmental harm via supply chain reform. | The 'Supply Change' campaign by Greenpeace represents a significant institutional action to address corporate environmental responsibility, directly aligning with multiple SDGs and planetary boundaries. It targets systemic supply chain issues, which have far-reaching impacts on climate, biodiversity, and sustainable consumption.",
+      "tx_hash": "2BwvUy5uA9CbbyBQ32BAQM6es7PVPS8qeR7tSkLWfV51uckev4y9xK9ZBKLvF7LSZ5uRTbKBkLzKpX3Vi2FK1dQf",
+      "created_at": "2026-05-29T02:04:35.956373+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Greenpeace launches 'Supply Change' campaign, a named global initiative targeting corporate supply chains to reduce environmental harm and promote sustainable practices.\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1629,
+      "event_title": "70% Drop in Levels of Forever Chemicals Observed in Seabird Eggs Tracks Regulatory Success",
+      "event_url": "https://www.reddit.com/r/goodnews/comments/1tqn6jm/70_drop_in_levels_of_forever_chemicals_observed/",
+      "event_source": "Reddit r/GoodNews",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.31,
+      "confidence": 9,
+      "justification": "Semantic cache reuse (cosine=0.999) from event #1503",
+      "tx_hash": null,
+      "created_at": "2026-05-29T02:03:36.261596+00:00",
+      "embedding": null,
+      "reused_from_event_id": 1503,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1628,
       "event_title": "US classifies two Brazilian criminal groups, Comando Vermelho and PCC, as 'terrorist organizations'",
@@ -35965,7 +36009,7 @@
       {
         "date": "2026-05-29",
         "net_minted": 1650000,
-        "net_burned": 7000000
+        "net_burned": 12000000
       }
     ],
     "event_of_the_day": {
@@ -35981,9 +36025,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 145,
+        "positive": 146,
         "negative": 258,
         "event_ids_positive": [
+          1630,
           1624,
           1622,
           1620,
@@ -36894,9 +36939,10 @@
         ]
       },
       "PB": {
-        "positive": 77,
+        "positive": 78,
         "negative": 73,
         "event_ids_positive": [
+          1630,
           1622,
           1618,
           1607,
@@ -37056,11 +37102,11 @@
       "niche_pct": 53.4,
       "mainstream_pct": 46.6,
       "total_sources_used": 131,
-      "articles_processed": 552
+      "articles_processed": 553
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 552,
+      "total_events": 553,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -37489,6 +37535,34 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 20,
+        "burn_count": 7,
+        "mint_count": 13,
+        "event_ids": [
+          1630,
+          1615,
+          1526,
+          1496,
+          1459,
+          1448,
+          1439,
+          1416,
+          1383,
+          1382,
+          1363,
+          1297,
+          1279,
+          1271,
+          1218,
+          1211,
+          1203,
+          1169,
+          1154,
+          1078
+        ]
+      },
+      {
         "name": "Water",
         "count": 20,
         "burn_count": 10,
@@ -37515,40 +37589,13 @@
           1099,
           1087
         ]
-      },
-      {
-        "name": "Transport",
-        "count": 19,
-        "burn_count": 6,
-        "mint_count": 13,
-        "event_ids": [
-          1615,
-          1526,
-          1496,
-          1459,
-          1448,
-          1439,
-          1416,
-          1383,
-          1382,
-          1363,
-          1297,
-          1279,
-          1271,
-          1218,
-          1211,
-          1203,
-          1169,
-          1154,
-          1078
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 185,
+      "total_burn": 186,
       "direct_action": {
-        "count": 129,
-        "pct": 69.7
+        "count": 130,
+        "pct": 69.9
       },
       "editorial_consciousness": {
         "count": 16,
@@ -37556,13 +37603,13 @@
       },
       "untyped": {
         "count": 40,
-        "pct": 21.6
+        "pct": 21.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 514,
+      "total_burn": 515,
       "direct_action": {
-        "count": 335,
+        "count": 336,
         "pct": 65.2
       },
       "editorial_consciousness": {
@@ -37606,8 +37653,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 204,
-      "institutional": 348,
-      "citizen_ratio": 0.37,
+      "institutional": 349,
+      "citizen_ratio": 0.369,
       "daily": [
         {
           "date": "2026-05-23",
@@ -37642,7 +37689,7 @@
         {
           "date": "2026-05-29",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -37852,6 +37899,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1630,
         1626,
         1625,
         1624,
