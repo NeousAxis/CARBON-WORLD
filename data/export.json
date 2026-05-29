@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-29T03:04:59.573330+00:00",
-  "total_events": 1632,
-  "total_burned": 2345000870,
-  "total_minted": 2197112000,
-  "pending_reviews": 12,
+  "generated_at": "2026-05-29T03:34:42.052253+00:00",
+  "total_events": 1634,
+  "total_burned": 2352000870,
+  "total_minted": 2202112000,
+  "pending_reviews": 11,
   "events": [
+    {
+      "id": 1634,
+      "event_title": "War in Ukraine: a Russian drone strikes Romania, the UN warns of escalation... The point on the night",
+      "event_url": "https://www.ouest-france.fr/europe/ukraine/guerre-en-ukraine-un-drone-russe-frappe-la-roumanie-lonu-alerte-sur-une-escalade-le-point-sur-la-nuit-53d4c21c-5b00-11f1-b2c7-21f7efea5d61?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.28,
+      "confidence": 9,
+      "justification": "Russian aggression violates sovereignty and international law, outweighing diplomatic efforts. | The UN's call for a ceasefire and the EU's unified stance represent positive steps toward de-escalation and upholding international law. However, the Russian drone strike on Romanian soil constitutes a severe violation of sovereignty and international peace, overshadowing these efforts with a direct act of aggression.",
+      "tx_hash": "DpB6cbn1R7Bn1rx5dbYCyf73TiBjtbRuZzscPgQiN4FQCPKE9yHp2p5bCDCGXSufqqdWKiDojtiA5atzP5EUV7r",
+      "created_at": "2026-05-29T03:34:38.521068+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Romania",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"UN warns of escalation and calls for ceasefire in Ukraine conflict\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"EU attempts to present a unified position against Moscow's actions\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Russian drone strikes Romanian territory, violating sovereignty and international law\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 2(4)\", \"UN Charter Article 2(4)\"], \"magnitude\": 9, \"frameworks\": [\"UDHR\", \"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1633,
+      "event_title": "European bison in Thal: Semi-freedom to proceed despite resistance",
+      "event_url": "https://wildbeimwild.com/wisente-im-thal-halbfreiheit-kommt-trotz-widerstand/",
+      "event_source": "Wild beim Wild",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | NGO-led biodiversity restoration with strong ecological and climate benefits despite local resistance.",
+      "tx_hash": null,
+      "created_at": "2026-05-29T03:17:01.531747+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1632,
       "event_title": "This Florida drag queen doubles as a marine animal conservationist: 'Steve Irwin was my biggest inspiration growing up'",
@@ -35988,8 +36032,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.333,
-        "events": 93
+        "burn_ratio": 0.33,
+        "events": 94
       }
     ],
     "top_regions_destructive": [
@@ -36005,8 +36049,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.667,
-        "events": 93
+        "mint_ratio": 0.67,
+        "events": 94
       },
       {
         "region": "North America",
@@ -36052,7 +36096,7 @@
       },
       {
         "date": "2026-05-29",
-        "net_minted": 1650000,
+        "net_minted": 6650000,
         "net_burned": 13500000
       }
     ],
@@ -36070,7 +36114,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 147,
-        "negative": 258,
+        "negative": 259,
         "event_ids_positive": [
           1632,
           1630,
@@ -36221,6 +36265,7 @@
           1076
         ],
         "event_ids_negative": [
+          1634,
           1626,
           1623,
           1621,
@@ -36483,7 +36528,7 @@
       },
       "UDHR": {
         "positive": 50,
-        "negative": 192,
+        "negative": 193,
         "event_ids_positive": [
           1632,
           1624,
@@ -36537,6 +36582,7 @@
           1097
         ],
         "event_ids_negative": [
+          1634,
           1626,
           1623,
           1621,
@@ -37147,24 +37193,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 53.4,
-      "mainstream_pct": 46.6,
+      "niche_pct": 52.7,
+      "mainstream_pct": 47.3,
       "total_sources_used": 131,
-      "articles_processed": 554
+      "articles_processed": 555
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 554,
+      "total_events": 555,
       "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 13,
+        "count": 14,
         "burn_count": 2,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          1634,
           1584,
           1523,
           1475,
@@ -37182,10 +37229,11 @@
       },
       {
         "name": "UN",
-        "count": 10,
+        "count": 11,
         "burn_count": 4,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          1634,
           1593,
           1535,
           1519,
@@ -37670,24 +37718,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 367,
+      "total_mint": 368,
       "direct_action": {
-        "count": 235,
-        "pct": 64.0
+        "count": 236,
+        "pct": 64.1
       },
       "editorial_alarm": {
         "count": 23,
-        "pct": 6.3
+        "pct": 6.2
       },
       "untyped": {
         "count": 109,
-        "pct": 29.7
+        "pct": 29.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1104,
+      "total_mint": 1105,
       "direct_action": {
-        "count": 715,
+        "count": 716,
         "pct": 64.8
       },
       "editorial_alarm": {
@@ -37701,8 +37749,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 205,
-      "institutional": 349,
-      "citizen_ratio": 0.37,
+      "institutional": 350,
+      "citizen_ratio": 0.369,
       "daily": [
         {
           "date": "2026-05-23",
@@ -37737,7 +37785,7 @@
         {
           "date": "2026-05-29",
           "citizen": 1,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -37948,6 +37996,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1634,
         1630,
         1626,
         1625,
