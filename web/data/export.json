@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-29T04:05:57.771015+00:00",
-  "total_events": 1636,
-  "total_burned": 2352000870,
-  "total_minted": 2208612000,
+  "generated_at": "2026-05-29T04:35:24.232558+00:00",
+  "total_events": 1638,
+  "total_burned": 2357000870,
+  "total_minted": 2209312000,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 1638,
+      "event_title": "Major winemaker threatens to move business overseas if tax changes go through",
+      "event_url": "https://www.abc.net.au/news/2026-05-29/taylors-wines-threatens-to-move-overseas-tax-changes-sa/106736510",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -4.24,
+      "confidence": 8,
+      "justification": "Business coercion to avoid tax reform undermines economic stability and workers' rights. | The threat to relocate a major business overseas undermines domestic economic resilience, employment, and sustainable industrialization (SDG 8, 9, 10). While the tax changes may have legitimate policy goals, the coercive response by the winemaker directly harms workers' rights and national economic cohesion, outweighing any potential benefits of the tax reform itself.",
+      "tx_hash": "41pEaj1X1nee3kgUy9LofmXXznLDRaNzvycrjCkMTLY5ZaMLLf4VjFWiqWsvtFMDnRpZV5ivcydz3zs4qDq9JMEZ",
+      "created_at": "2026-05-29T04:35:20.544272+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Major winemaker threatens to relocate business overseas in response to proposed tax changes, potentially undermining domestic economic stability and employment\", \"affected_sdgs\": [8, 9, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1637,
+      "event_title": "China is growing giant wheat-rye hybrids in its western deserts. Here’s why",
+      "event_url": "https://www.scmp.com/news/china/science/article/3355172/china-growing-giant-wheat-rye-hybrids-its-western-deserts-heres-why?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Scientific innovation with strong food security and climate resilience benefits, with manageable ecological risks.",
+      "tx_hash": null,
+      "created_at": "2026-05-29T04:17:02.235332+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1636,
       "event_title": "Mitsui seeks LNG investments as data centers boost power demand",
@@ -36056,8 +36100,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.476,
-        "events": 21
+        "burn_ratio": 0.455,
+        "events": 22
       },
       {
         "region": "Asia",
@@ -36140,7 +36184,7 @@
       },
       {
         "date": "2026-05-29",
-        "net_minted": 13150000,
+        "net_minted": 13850000,
         "net_burned": 13500000
       }
     ],
@@ -36158,7 +36202,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 147,
-        "negative": 261,
+        "negative": 262,
         "event_ids_positive": [
           1632,
           1630,
@@ -36309,6 +36353,7 @@
           1076
         ],
         "event_ids_negative": [
+          1638,
           1636,
           1635,
           1634,
@@ -36574,7 +36619,7 @@
       },
       "UDHR": {
         "positive": 50,
-        "negative": 194,
+        "negative": 195,
         "event_ids_positive": [
           1632,
           1624,
@@ -36628,6 +36673,7 @@
           1097
         ],
         "event_ids_negative": [
+          1638,
           1635,
           1634,
           1626,
@@ -37245,11 +37291,11 @@
       "niche_pct": 51.9,
       "mainstream_pct": 48.1,
       "total_sources_used": 131,
-      "articles_processed": 557
+      "articles_processed": 558
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 557,
+      "total_events": 558,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -37772,10 +37818,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 370,
+      "total_mint": 371,
       "direct_action": {
-        "count": 238,
-        "pct": 64.3
+        "count": 239,
+        "pct": 64.4
       },
       "editorial_alarm": {
         "count": 23,
@@ -37783,13 +37829,13 @@
       },
       "untyped": {
         "count": 109,
-        "pct": 29.5
+        "pct": 29.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1107,
+      "total_mint": 1108,
       "direct_action": {
-        "count": 718,
+        "count": 719,
         "pct": 64.9
       },
       "editorial_alarm": {
@@ -37798,13 +37844,13 @@
       },
       "untyped": {
         "count": 315,
-        "pct": 28.5
+        "pct": 28.4
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 205,
-      "institutional": 352,
-      "citizen_ratio": 0.368,
+      "institutional": 353,
+      "citizen_ratio": 0.367,
       "daily": [
         {
           "date": "2026-05-23",
@@ -37839,7 +37885,7 @@
         {
           "date": "2026-05-29",
           "citizen": 1,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -38050,6 +38096,7 @@
         1076
       ],
       "event_ids_institutional": [
+        1638,
         1636,
         1635,
         1634,
