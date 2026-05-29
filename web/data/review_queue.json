@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T15:37:37.730882+00:00",
-  "total_pending": 17,
+  "generated_at": "2026-05-29T16:06:40.379583+00:00",
+  "total_pending": 18,
   "reviews": [
     {
       "id": 444,
@@ -338,6 +338,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-29T15:37:33.956049+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 553,
+      "event_title": "Six Biggest Brazilian Banks to Backstop Bailout of Capital’s Lender",
+      "event_url": "https://www.riotimesonline.com/six-biggest-brazilian-banks-to-backstop-bailout-of-capitals-lender/",
+      "event_source": "The Rio Times (BR EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Six major Brazilian banks agreed to guarantee a federal-district loan to recapitalize Banco de Brasília, preventing potential financial collapse and systemic risk.\", \"affected_sdgs\": [8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The bailout may entrench moral hazard by rewarding mismanagement of Banco de Brasília, potentially encouraging future risky behavior in the banking sector.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The bailout prevents immediate financial instability and systemic risk, aligning with SDG 8 (Decent Work) and SDG 10 (Reduced Inequalities) by stabilizing employment and economic access. However, it risks reinforcing moral hazard, which could undermine long-term financial discipline and accountability in the banking sector.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Implementation of stricter regulatory oversight post-bailout\", \"Evidence of increased risk-taking by other banks\", \"Public backlash leading to policy reversals\", \"Effectiveness of recapitalization in restoring Banco de Brasília's solvency\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Bailout succeeds in stabilizing Banco de Brasília without moral hazard spillovers; regulatory reforms strengthen banking sector resilience.\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Bailout stabilizes Banco de Brasília but leads to increased risk-taking by other banks, requiring future interventions.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Bailout fails to prevent Banco de Brasília's collapse; systemic financial crisis triggers broader economic downturn.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 1.15, \"final_score\": 2.54, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Bailout stabilizes short-term financial stability but risks moral hazard and systemic risk.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Supreme Federal Tribunal homologated the bailout deal, ensuring judicial oversight and legal legitimacy of the recapitalization process for Banco de Brasília\", \"affected_sdgs\": [8, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Six major banks (Itaú Unibanco, Bradesco, Santander Brasil, BTG Pactual, Banco do Brasil, Caixa) collectively backstopping the bailout demonstrates systemic financial stability and coordinated crisis response\", \"affected_sdgs\": [8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Bailout of a regional lender (Banco de Brasília) may incentivize moral hazard by rewarding poor financial management and delaying necessary structural reforms in Brazil's banking sector\", \"affected_sdgs\": [8, 12], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Taxpayer funds or public resources may be indirectly implicated in the bailout, diverting resources from social programs or environmental initiatives\", \"affected_sdgs\": [1, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The judicial homologation and coordinated bank backing provide legal and systemic stability, aligning with SDG 8 (Decent Work) and SDG 16 (Peace & Justice). However, the bailout risks moral hazard and potential misallocation of public resources, creating a net moderate-positive ethical outcome with significant caveats.\", \"snapshot_score\": 3.5, \"trajectory_score\": 0.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Failure of Banco de Brasília to stabilize post-bailout\", \"Public backlash or corruption investigations into the bailout process\", \"Regulatory reforms addressing moral hazard in Brazilian banking\", \"Economic downturn increasing bailout costs\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Bailout succeeds in stabilizing Banco de Brasília without moral hazard, triggering broader banking sector reforms and improving financial resilience\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Bailout stabilizes the lender but fails to address systemic risks, leading to future crises and public distrust in financial institutions\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Bailout triggers a financial crisis due to moral hazard, requiring larger public intervention and deepening economic inequality\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.4, \"final_score\": 2.3, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Bailout stabilizes a regional lender but risks moral hazard and resource misallocation.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.54, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Bailout stabilizes financial system but risks moral hazard; institutional action enables harm mitigation.\", \"disagreement\": true, \"reason\": \"Both analysts agree bailout stabilizes short-term stability (MINT direction). Analyst A's higher confidence and score reflect deeper moral hazard critique. Institutional action (judicial homologation + bank syndicate backing) is a corrective measure to prevent systemic harm, thus MINT is justified despite risks.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict flips polarity: bailout stabilizes economy, protecting vulnerable populations, which aligns with BURN (positive), not MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-29T16:06:37.179426+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
