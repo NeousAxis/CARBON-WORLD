@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-29T03:34:42.052253+00:00",
-  "total_events": 1634,
+  "generated_at": "2026-05-29T04:05:57.771015+00:00",
+  "total_events": 1636,
   "total_burned": 2352000870,
-  "total_minted": 2202112000,
-  "pending_reviews": 11,
+  "total_minted": 2208612000,
+  "pending_reviews": 12,
   "events": [
+    {
+      "id": 1636,
+      "event_title": "Mitsui seeks LNG investments as data centers boost power demand",
+      "event_url": "https://www.japantimes.co.jp/business/2026/05/29/companies/mitsui-ceo-lng-investments/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.08,
+      "confidence": 8,
+      "justification": "Corporate investment in LNG undermines climate goals despite awareness of clean energy needs. | While Mitsui's CEO highlights the importance of clean energy for AI infrastructure, the company's primary action involves seeking investments in LNG, a fossil fuel. This creates a net negative impact by perpetuating reliance on carbon-intensive energy sources despite awareness of climate goals.",
+      "tx_hash": "3SbFv6tt7ZmZJi1QBatu3RS19j6VkPpzwfj5QnryjqrjSHdpf8yzZK2vVGk5QBP38rcquGyogbEeNSWnHBQUimNX",
+      "created_at": "2026-05-29T04:05:53.950755+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Mitsui's CEO acknowledges the need for clean energy to power AI infrastructure, signaling corporate recognition of climate-conscious energy transitions\", \"affected_sdgs\": [7, 13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Mitsui seeks investments in LNG (liquefied natural gas), a fossil fuel contributing to greenhouse gas emissions and climate change\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1635,
+      "event_title": "Global heating is making hajj ever more dangerous, report finds",
+      "event_url": "https://www.theguardian.com/environment/2026/may/29/global-heating-hajj-muslim-pilgrimage-saudi-arabia-dangerous",
+      "event_source": "The Guardian Climate",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.03,
+      "confidence": 9,
+      "justification": "Fossil fuel emissions endanger pilgrims' health and lives; systemic failure outweighs awareness-raising. | The report exposes a critical ethical failure: fossil fuel emissions are directly endangering the lives and health of millions of pilgrims during hajj. While the scientific analysis itself is a positive act of awareness-raising, the underlying systemic issue—fossil fuel dependence—remains unaddressed, creating a net negative ethical outcome with severe health and climate justice implication",
+      "tx_hash": "3N1UrtE2fvvLcy5gNc7Grmjq4JyJ4TcbPLfWiLfqV4xLhzs5ZtHwGYqesUv4Jsn5fjwhv13FkvZxypdE9gGxERYB",
+      "created_at": "2026-05-29T04:05:53.836283+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": "[{\"description\": \"Scientific report highlighting the dangers of global heating to hajj pilgrims, raising public awareness and urgency for climate action\", \"affected_sdgs\": [3, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Global heating driven by fossil fuel emissions is making the hajj pilgrimage increasingly dangerous due to extreme heat, posing health risks to millions of pilgrims\", \"affected_sdgs\": [3, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1634,
       "event_title": "War in Ukraine: a Russian drone strikes Romania, the UN warns of escalation... The point on the night",
@@ -36017,8 +36061,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.405,
-        "events": 37
+        "burn_ratio": 0.395,
+        "events": 38
       },
       {
         "region": "Latin America",
@@ -36040,7 +36084,7 @@
       {
         "region": "MENA",
         "mint_ratio": 0.971,
-        "events": 34
+        "events": 35
       },
       {
         "region": "Africa",
@@ -36096,7 +36140,7 @@
       },
       {
         "date": "2026-05-29",
-        "net_minted": 6650000,
+        "net_minted": 13150000,
         "net_burned": 13500000
       }
     ],
@@ -36114,7 +36158,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 147,
-        "negative": 259,
+        "negative": 261,
         "event_ids_positive": [
           1632,
           1630,
@@ -36265,6 +36309,8 @@
           1076
         ],
         "event_ids_negative": [
+          1636,
+          1635,
           1634,
           1626,
           1623,
@@ -36528,7 +36574,7 @@
       },
       "UDHR": {
         "positive": 50,
-        "negative": 193,
+        "negative": 194,
         "event_ids_positive": [
           1632,
           1624,
@@ -36582,6 +36628,7 @@
           1097
         ],
         "event_ids_negative": [
+          1635,
           1634,
           1626,
           1623,
@@ -37034,7 +37081,7 @@
       },
       "PB": {
         "positive": 78,
-        "negative": 73,
+        "negative": 75,
         "event_ids_positive": [
           1630,
           1622,
@@ -37116,6 +37163,8 @@
           1076
         ],
         "event_ids_negative": [
+          1636,
+          1635,
           1619,
           1616,
           1605,
@@ -37193,14 +37242,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 52.7,
-      "mainstream_pct": 47.3,
+      "niche_pct": 51.9,
+      "mainstream_pct": 48.1,
       "total_sources_used": 131,
-      "articles_processed": 555
+      "articles_processed": 557
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 555,
+      "total_events": 557,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -37318,10 +37367,12 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 72,
+        "count": 74,
         "burn_count": 39,
-        "mint_count": 33,
+        "mint_count": 35,
         "event_ids": [
+          1636,
+          1635,
           1618,
           1614,
           1612,
@@ -37398,10 +37449,11 @@
       },
       {
         "name": "Construction",
-        "count": 60,
+        "count": 61,
         "burn_count": 26,
-        "mint_count": 34,
+        "mint_count": 35,
         "event_ids": [
+          1636,
           1619,
           1613,
           1607,
@@ -37466,10 +37518,11 @@
       },
       {
         "name": "Tech",
-        "count": 41,
+        "count": 42,
         "burn_count": 16,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          1636,
           1613,
           1607,
           1604,
@@ -37561,10 +37614,11 @@
       },
       {
         "name": "Finance",
-        "count": 30,
+        "count": 31,
         "burn_count": 4,
-        "mint_count": 26,
+        "mint_count": 27,
         "event_ids": [
+          1636,
           1612,
           1596,
           1594,
@@ -37718,10 +37772,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 368,
+      "total_mint": 370,
       "direct_action": {
-        "count": 236,
-        "pct": 64.1
+        "count": 238,
+        "pct": 64.3
       },
       "editorial_alarm": {
         "count": 23,
@@ -37729,14 +37783,14 @@
       },
       "untyped": {
         "count": 109,
-        "pct": 29.6
+        "pct": 29.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1105,
+      "total_mint": 1107,
       "direct_action": {
-        "count": 716,
-        "pct": 64.8
+        "count": 718,
+        "pct": 64.9
       },
       "editorial_alarm": {
         "count": 74,
@@ -37749,8 +37803,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 205,
-      "institutional": 350,
-      "citizen_ratio": 0.369,
+      "institutional": 352,
+      "citizen_ratio": 0.368,
       "daily": [
         {
           "date": "2026-05-23",
@@ -37785,7 +37839,7 @@
         {
           "date": "2026-05-29",
           "citizen": 1,
-          "institutional": 5
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -37996,6 +38050,8 @@
         1076
       ],
       "event_ids_institutional": [
+        1636,
+        1635,
         1634,
         1630,
         1626,
