@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T16:34:59.702745+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-05-29T17:06:17.974015+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 444,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-29T13:35:38.565022+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 554,
+      "event_title": "Trump says now making 'final determination' on Iran deal",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/trump-says-now-making-final-determination-iran-deal",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Proposal to lift naval blockade of Iran, reducing geopolitical tensions and potential humanitarian harm\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Condition of opening Strait of Hormuz and nuclear disarmament as prerequisites may escalate conflict and violate sovereignty\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Threat of military action or coercive diplomacy undermines peace and stability in the region\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The proposed action to lift the naval blockade is a positive step toward reducing geopolitical tensions and potential humanitarian harm. However, the conditional demands imposed on Iran, including opening the Strait of Hormutz and nuclear disarmament, are coercive and violate sovereignty, risking escalation and undermining peace. The net ethical position is negative due to the high risk of conflict and violation of international norms.\", \"snapshot_score\": -5.5, \"trajectory_score\": -3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Successful negotiation of a revised deal without coercive conditions\", \"Escalation of military threats or actions by either side\", \"International mediation leading to de-escalation\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where negotiations lead to a peaceful resolution and lifting of the blockade without further coercion\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic scenario where conditional demands lead to stalled negotiations and heightened tensions\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where coercive demands trigger military action or severe sanctions\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.45, \"final_score\": -4.11, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Coercive diplomacy and conditional demands risk escalation and violate sovereignty.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Proposal to lift naval blockade on Iran, reducing immediate geopolitical tensions and potential for military conflict\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Condition requiring Iran to never develop nuclear weapons, aligning with non-proliferation goals and global security frameworks\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Demand for Iran to open the Strait of Hormuz under coercive conditions, which could escalate regional tensions and violate sovereignty\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UNDRIP Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Unilateral US action without multilateral consensus or binding international process, undermining diplomatic norms and trust\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The proposed deal includes a conditional lifting of the naval blockade, which is a positive step toward reducing immediate conflict risks. However, the coercive demand to open the Strait of Hormuz and the unilateral nature of the process undermine sovereignty and diplomatic norms, creating significant ethical concerns. The net effect is mixed, with potential for both de-escalation and escalation depending on implementation.\", \"snapshot_score\": 1.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Successful negotiation of a binding multilateral agreement\", \"Escalation of military posturing or conflict\", \"International sanctions relief or reimposition\", \"Domestic political shifts in the US or Iran\"], \"revaluation_checkpoint\": \"2028-05-15\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where the deal leads to sustained de-escalation, regional stability, and multilateral trust-building\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Realistic scenario where the deal partially holds but faces implementation challenges and regional resistance\", \"probability\": 0.55, \"score\": 1}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where the deal collapses, leading to renewed sanctions, military posturing, and potential conflict\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.15, \"final_score\": 0.26, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Mixed geopolitical action with conditional de-escalation but coercive demands and unilateralism.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.27, \"confidence\": 8, \"amount_cbwd\": 500000, \"justification\": \"Lifting blockade reduces harm, but coercive demands violate sovereignty and risk escalation.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (lifting blockade) as reducing harm, but both analysts agree the conditional demands (opening Strait, nuclear disarmament) are coercive and sovereignty-violating. The institutional action is net positive, but the conditions undermine it.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: lifting blockade is BURN (positive), but decision is MINT (negative).",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-29T17:06:14.896489+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
