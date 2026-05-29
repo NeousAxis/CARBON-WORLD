@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-29T12:36:53.867486+00:00",
-  "total_pending": 16,
+  "generated_at": "2026-05-29T13:05:35.913763+00:00",
+  "total_pending": 17,
   "reviews": [
     {
       "id": 444,
@@ -318,6 +318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-29T12:36:50.587115+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 545,
+      "event_title": "Brazilian Marines Sell Light Tanks as Scrap, Wait for Replacements",
+      "event_url": "https://www.riotimesonline.com/brazilian-marines-sell-light-tanks-as-scrap-wait-for-replacements/",
+      "event_source": "The Rio Times (BR EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Decommissioning of outdated military hardware reduces environmental pollution from hazardous materials and waste, aligning with SDG 12 (Responsible Consumption and Production) and SDG 15 (Life on Land).\", \"affected_sdgs\": [12, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Disposal of functional military assets as scrap exposes a critical gap in Brazil's armored capabilities, potentially weakening national defense and regional security, undermining SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"The auctioning of decommissioned military equipment as scrap may contribute to the global arms trade or improper disposal, raising concerns about secondary markets and environmental contamination.\", \"affected_sdgs\": [12, 16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The decommissioning of outdated light tanks reduces environmental harm from hazardous waste, which is a positive step for sustainability. However, the disposal of functional military assets as scrap highlights a critical institutional failure, weakening national defense and raising security concerns. The net ethical judgment is mixed, with environmental benefits outweighed by institutional and security drawbacks.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Replacement of decommissioned tanks with modernized or new armored vehicles\", \"Implementation of a sustainable disposal program for military scrap\", \"Regional security assessments confirming no immediate threat from the gap\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Brazil successfully replaces decommissioned tanks with modernized armored vehicles, closing the security gap and maintaining environmental compliance.\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Brazil partially replaces tanks but faces delays, leaving a persistent security gap while environmental benefits from decommissioning persist.\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Brazil fails to replace tanks, exacerbating the security gap and leading to potential regional instability, while environmental benefits from decommissioning remain.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.4, \"final_score\": -2.125, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Decommissioning functional military assets as scrap undermines security and institutional capacity, outweighing minor environmental benefits.\", \"event_country\": \"Brazil\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Decommissioning of outdated military hardware reduces environmental and safety risks from obsolete equipment storage and potential leaks\", \"affected_sdgs\": [12, 13, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Disposal of functional military assets as scrap represents a waste of resources and undermines defense readiness, creating a capability gap\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Failure to replace decommissioned tanks with modern, environmentally compliant alternatives may lead to continued reliance on outdated, less efficient systems\", \"affected_sdgs\": [9, 12], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The decommissioning of outdated military hardware has minor environmental benefits but primarily represents a failure to maintain defense capabilities and resource efficiency. The action lacks proactive planning for replacements, raising concerns about long-term security and sustainability. The net ethical judgment is negative due to the waste of resources and potential weakening of institutional readiness.\", \"snapshot_score\": -4.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Replacement procurement announced within 12 months\", \"Environmental audit of scrap process reveals significant pollution\", \"New defense budget allocation for modernized equipment\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Brazil secures funding and acquires modern, eco-friendly armored vehicles within 2 years, closing the capability gap sustainably\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Brazil partially replaces tanks but faces delays and budget constraints, leaving a persistent capability gap\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Brazil fails to replace tanks, exacerbating the armored gap and relying on outdated, inefficient systems for years\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -2.35, \"final_score\": -2.91, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Decommissioning functional military assets without replacement undermines resource efficiency and defense readiness.\", \"event_country\": \"Brazil\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.61, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"Decommissioning functional military assets as scrap undermines security and institutional capacity, outweighing minor environmental benefits.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict MINT contradicts likely positive environmental impact of recycling tanks and reduced militarization; action is more BURN than MINT.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-29T13:05:32.437881+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
