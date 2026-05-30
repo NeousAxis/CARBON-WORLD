@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T05:35:11.846385+00:00",
-  "total_pending": 16,
+  "generated_at": "2026-05-30T06:07:01.129533+00:00",
+  "total_pending": 17,
   "reviews": [
     {
       "id": 444,
@@ -318,6 +318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T05:35:07.914526+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 566,
+      "event_title": "Japan used record $73.6 billion to support yen over past month",
+      "event_url": "https://www.japantimes.co.jp/business/2026/05/30/markets/yen-intervention-japan/",
+      "event_source": "Japan Times",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Japan's foreign exchange intervention to stabilize the yen demonstrates proactive monetary policy aimed at reducing economic volatility and protecting domestic financial stability.\", \"affected_sdgs\": [8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Large-scale currency intervention using $73.6 billion may signal underlying economic weaknesses, such as low inflation or export competitiveness issues, and could encourage speculative attacks on the yen.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Excessive reliance on foreign exchange reserves for stabilization may delay necessary structural reforms in Japan's economy, such as fiscal adjustments or productivity improvements.\", \"affected_sdgs\": [8, 9], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"Japan's yen intervention is a short-term stabilization measure with mixed ethical implications. While it aims to protect economic stability and reduce volatility, the scale of spending suggests underlying structural issues and potential delays in necessary reforms. The action is ethically neutral to mildly negative due to its reactive nature and opportunity cost.\", \"snapshot_score\": -1.5, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Further yen depreciation beyond 170 JPY/USD\", \"Bank of Japan raises interest rates significantly\", \"New structural reform legislation passed\", \"Global financial crisis triggers coordinated intervention\"], \"revaluation_checkpoint\": \"2028-05-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Japan implements structural reforms and achieves stable inflation, reducing need for large interventions; yen strengthens to 140 JPY/USD.\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Japan continues periodic interventions but avoids crisis; yen stabilizes around 155 JPY/USD with moderate economic adjustments.\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"Japan faces prolonged yen weakness, triggers capital controls or debt crisis; global financial contagion ensues.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.45, \"final_score\": -1.41, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Large-scale currency intervention signals economic stress and potential delays in structural reforms.\", \"event_country\": \"Japan\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Japan's intervention to stabilize the yen prevents sudden currency depreciation that could trigger capital flight, import inflation spikes, and economic instability, indirectly supporting SDG 8 (Decent Work) and SDG 10 (Reduced Inequalities) by maintaining economic predictability for businesses and workers.\", \"affected_sdgs\": [8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Massive currency intervention using $73.6 billion risks distorting global forex markets, encouraging competitive devaluations, and undermining SDG 17 (Partnerships) by creating trade tensions. It also diverts public funds from climate or social programs, indirectly undermining SDG 13 (Climate Action) and SDG 3 (Good Health).\", \"affected_sdgs\": [3, 13, 17], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"Japan's yen intervention stabilizes short-term economic conditions but does so at a high fiscal cost and with potential global market distortions. The action prioritizes domestic stability over international cooperation and long-term systemic health, creating a net negative ethical balance despite its immediate stabilizing effects.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Sustained yen depreciation beyond 20% triggers further interventions exceeding $100 billion\", \"G7 or IMF formally criticizes Japan's forex policy as competitive devaluation\", \"Japan's public debt-to-GDP ratio exceeds 260%, forcing fiscal consolidation that reduces intervention capacity\"], \"revaluation_checkpoint\": \"2028-05-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Japan successfully stabilizes yen with coordinated G7 support, avoiding further interventions and reducing global trade tensions; fiscal discipline improves without social cuts.\", \"probability\": 0.25, \"score\": 3}, {\"name\": \"B\", \"description\": \"Japan continues ad-hoc interventions totaling $150-200 billion over 12 months, triggering retaliatory measures from major trading partners and accelerating capital controls in emerging markets.\", \"probability\": 0.55, \"score\": -5}, {\"name\": \"C\", \"description\": \"Japan's interventions fail to stabilize yen, leading to a currency crisis, capital flight, and a sovereign debt downgrade that forces emergency austerity measures with severe social impacts.\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -4.45, \"final_score\": -3.36, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Massive forex intervention distorts global markets and diverts funds from critical needs.\", \"event_country\": \"Japan\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.35, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Large-scale yen intervention reflects fiscal overreach and potential market distortion.\", \"disagreement\": false, \"reason\": \"Both analysts agree on MINT. The intervention represents a significant fiscal action that may destabilize global markets and delay structural reforms.\"}",
+      "sentinel_concern": "llm: Polarity error: MINT for yen intervention ignores market distortion harm",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-30T06:06:57.824500+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
