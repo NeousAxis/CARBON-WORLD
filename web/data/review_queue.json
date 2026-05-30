@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T15:34:53.280871+00:00",
-  "total_pending": 16,
+  "generated_at": "2026-05-30T16:05:39.755321+00:00",
+  "total_pending": 17,
   "reviews": [
     {
       "id": 444,
@@ -318,6 +318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T07:04:24.280869+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 575,
+      "event_title": "Ousted Turkish opposition leader Ozel draws thousands in Ankara protest",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/ousted-turkish-opposition-leader-ozel-draws-thousands-ankara-protest",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Mass public protest led by ousted opposition leader Ozgur Ozel in Ankara, demonstrating strong civic engagement and political resilience against a court ruling that removed him from office.\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Court ruling removing opposition leader Ozgur Ozel from office, undermining democratic processes and political pluralism in Turkey.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The mass protest demonstrates robust civic engagement and commitment to democratic principles, aligning with SDG 10 (Reduced Inequalities) and UDHR Article 21 (right to political participation). However, the court ruling that removed the opposition leader from office directly undermines democratic governance and political rights, violating core human rights frameworks. The net ethical position is mixed but leans slightly negative due to the institutional undermining of democratic norms.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Reinstatement of Ozel or reversal of court ruling\", \"Escalation of protests into broader political crisis\", \"International condemnation or sanctions over democratic backsliding\", \"New elections or constitutional reforms restoring pluralism\"], \"revaluation_checkpoint\": \"2028-05-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court ruling is reversed, opposition regains legitimacy, and democratic institutions are strengthened through reforms.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Protests continue but fail to reverse the ruling; Turkey experiences gradual democratic erosion with periodic unrest.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Mass protests escalate into political crisis, leading to authoritarian crackdowns or military intervention.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.75, \"final_score\": -1.61, \"decision\": \"MINT\", \"amount_cbwd\": 700000, \"confidence\": 7, \"justification\": \"Court ruling undermines democratic norms despite civic resilience; institutional erosion outweighs protest impact.\", \"event_country\": \"Turkey\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Mass public protest led by ousted opposition leader Ozgur Ozel in Ankara, demonstrating strong civic engagement and political mobilization against a court ruling perceived as unjust.\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public assembly and collective expression of political dissent, reinforcing democratic participation and freedom of assembly.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"UDHR\", \"SDG\"]}], \"negative_aspects\": [{\"description\": \"Court ruling removing opposition leader Ozgur Ozel from office, which undermines political pluralism and democratic processes in Turkey.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The protest demonstrates strong civic engagement and democratic resilience, aligning with human rights and SDG 16. However, the court ruling that removed the opposition leader undermines democratic pluralism and political rights, creating a significant ethical tension. The net impact is mixed but leans toward the positive due to the scale of civic mobilization.\", \"snapshot_score\": 3.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Reversal of the court ruling within 12 months\", \"Escalation of state repression against protestors\", \"International condemnation or sanctions against the ruling\", \"Sustained opposition mobilization beyond 6 months\"], \"revaluation_checkpoint\": \"2028-05-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court ruling is reversed, opposition regains legitimacy, and democratic institutions strengthen with broad public support.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Protest momentum fades, ruling stands, but opposition adapts and continues to challenge the decision through legal and political means.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"State repression intensifies, protests are violently suppressed, and democratic backsliding accelerates.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.7, \"final_score\": 2.3, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Mass protest counters anti-democratic ruling but court decision remains a significant setback.\", \"event_country\": \"Turkey\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.95, \"confidence\": 9, \"amount_cbwd\": 700000, \"justification\": \"Institutional action (court ruling) undermines democratic norms; protest counters but doesn't override harm.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (court ruling) as anti-democratic and punishing dissent, while Analyst B's neutrality overlooks the severity of the harm. The ACTION (court removal) is the ethical focus, not the protest response.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: court removal of opposition leader is anti-democratic (MINT), but verdict is BURN",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 700000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-30T16:05:35.559083+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
