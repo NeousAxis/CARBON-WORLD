@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T07:34:38.431421+00:00",
-  "total_pending": 16,
+  "generated_at": "2026-05-30T08:06:02.824574+00:00",
+  "total_pending": 17,
   "reviews": [
     {
       "id": 444,
@@ -318,6 +318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T07:04:24.280869+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 569,
+      "event_title": "France’s After-School Care Scandal: Chronicle of an Announced Catastrophe",
+      "event_url": "https://www.letemps.ch/articles/scandale-du-periscolaire-en-france-chronique-d-une-catastrophe-annoncee",
+      "event_source": "Le Temps (CH)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led marches and conventions organized nationwide to raise awareness and demand accountability for child protection failures\", \"affected_sdgs\": [4, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Systemic failures in France's after-school care system enabling widespread child abuse by staff, with 78 agents suspended including 31 for suspected sexual violence\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 19\", \"CRC Article 34\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}], \"ethical_synthesis\": \"The systemic abuse of children in France's after-school care system represents a severe violation of fundamental rights and child protection norms. While citizen-led mobilization demonstrates growing societal demand for accountability, the scale of institutional failure and harm inflicted on vulnerable children dominates the ethical balance, resulting in a net negative outcome.\", \"snapshot_score\": -8.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.5, \"revaluation_triggers\": [\"Implementation of comprehensive child protection reforms\", \"Successful prosecution of perpetrators\", \"Sustained reduction in reported abuse cases\", \"Public release of independent audit results\"], \"revaluation_checkpoint\": \"2026-06-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Comprehensive reforms implemented with strong oversight and prevention measures leading to systemic improvement\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial reforms with continued institutional resistance and sporadic abuse cases\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Institutional inertia persists, abuse continues with new cases emerging\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.85, \"final_score\": -4.91, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 9, \"justification\": \"Systemic child abuse enabled by institutional failure outweighs citizen mobilization impact.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led convention and marches organized in response to systemic failures in after-school care, demonstrating public mobilization and demand for accountability\", \"affected_sdgs\": [4, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Mayor of Paris Emmanuel Grégoire launches a convention to 'remake from scratch' the after-school care system, signaling institutional responsiveness to public outrage\", \"affected_sdgs\": [4, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Systemic failures in after-school care allowed adults to target children, resulting in 78 suspended agents including 31 for suspected sexual violence and multiple ongoing investigations\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 19\", \"CRC Article 34\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Structural flaws in national childcare systems created conditions enabling abuse, representing a systemic violation of child protection rights\", \"affected_sdgs\": [4, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 3\", \"CRC Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The scandal reveals severe systemic failures in child protection within France's after-school care system, violating multiple human rights frameworks. However, the public response—including citizen conventions and marches—demonstrates a strong societal demand for accountability and systemic reform. The institutional response from Paris's mayor signals potential for corrective action, though the scale of harm already inflicted remains catastrophic.\", \"snapshot_score\": -8.5, \"trajectory_score\": -2.0, \"revaluation_score\": -3.0, \"revaluation_triggers\": [\"Completion of investigations with convictions\", \"Implementation of systemic reforms in childcare oversight\", \"Public accountability measures (e.g., resignations, policy changes)\", \"Sustainability of citizen-led initiatives beyond initial mobilization\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Systemic reforms are implemented with robust oversight, convictions lead to deterrence, and citizen initiatives sustain pressure for cultural change\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial reforms are enacted but fail to address root causes; abuse continues in other sectors; public trust erodes further\", \"probability\": 0.5, \"score\": -4}, {\"name\": \"C\", \"description\": \"No meaningful reforms occur; abuse cases escalate; institutional cover-ups persist; public outrage leads to political instability\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.7, \"final_score\": -5.1, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Systemic child abuse enabled by institutional failures outweighs citizen mobilization in ethical weight.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.53, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Systemic child abuse enabled by institutional failure outweighs citizen mobilization impact.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: child abuse scandal should be MINT (negative), but justification praises citizen action as outweighing harm",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-30T08:05:59.012637+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
