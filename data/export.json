@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-30T12:35:36.858770+00:00",
-  "total_events": 1765,
-  "total_burned": 2537100870,
-  "total_minted": 2361882000,
+  "generated_at": "2026-05-30T13:05:16.869824+00:00",
+  "total_events": 1767,
+  "total_burned": 2544100870,
+  "total_minted": 2366882000,
   "pending_reviews": 17,
   "events": [
+    {
+      "id": 1767,
+      "event_title": "Israel launches more south Lebanon strikes after warnings",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/israel-launches-more-south-lebanon-strikes-after-warnings",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.88,
+      "confidence": 8,
+      "justification": "Military escalation violates peace and human rights, outweighing any potential diplomatic context. | The escalation of military strikes in south Lebanon constitutes a clear violation of fundamental human rights and international peace frameworks. The actions undermine ongoing diplomatic efforts and risk further destabilization in the region, with disproportionate harm to civilian and military personnel alike.",
+      "tx_hash": "4fwPji6MEvd8mfsvZ1ym5X7oE6Gqp3pG1MNia52hE4HwdoopxiFiQk1PHbEMvg3uY1QnC7DSAwLZXNxBXSaWDkVN",
+      "created_at": "2026-05-30T13:05:13.480673+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israel launches military strikes across south Lebanon, escalating violence and risking civilian casualties\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Israeli strikes wound Lebanese soldiers, increasing regional instability and undermining peace negotiations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1766,
+      "event_title": "EU saved over €50 billion in 2025 by lowering fossil fuel imports as solar leads the way",
+      "event_url": "https://www.reddit.com/r/RenewableEnergy/comments/1trt1vs/eu_saved_over_50_billion_in_2025_by_lowering/",
+      "event_source": "Reddit r/renewableenergy",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.21,
+      "confidence": 8,
+      "justification": "EU's €50B fossil fuel import reduction via solar energy is a strong positive climate and economic action. | The EU's reduction in fossil fuel imports through solar energy adoption directly advances SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action) with substantial economic and environmental benefits. No negative aspects are identified in this action, as it represents a clear positive shift toward sustainability and energy independence.",
+      "tx_hash": "5LGsMjoPvTttkrT5XfmEmLcysdp9hry2nF1pApW8VMotSSiuHfiPFjvGm9DMkBaLYhmK6bCyNndYrwZxKZArHVXV",
+      "created_at": "2026-05-30T13:05:13.362645+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU reduced fossil fuel imports by over €50 billion in 2025 through accelerated solar energy adoption, demonstrating significant economic and climate benefits from renewable energy transition\", \"affected_sdgs\": [7, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 1765,
       "event_title": "Egypt warns Israel that dangerous Gaza escalations threaten ceasefire",
@@ -38845,8 +38889,8 @@
       },
       {
         "country": "Israel",
-        "count": 18,
-        "total_amount": 81650000
+        "count": 19,
+        "total_amount": 86650000
       },
       {
         "country": "France",
@@ -38921,8 +38965,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.969,
-        "events": 32
+        "mint_ratio": 0.97,
+        "events": 33
       },
       {
         "region": "Africa",
@@ -38978,8 +39022,8 @@
       },
       {
         "date": "2026-05-30",
-        "net_minted": 66425000,
-        "net_burned": 48000000
+        "net_minted": 71425000,
+        "net_burned": 55000000
       }
     ],
     "event_of_the_day": {
@@ -38995,9 +39039,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 142,
-        "negative": 252,
+        "positive": 143,
+        "negative": 253,
         "event_ids_positive": [
+          1766,
           1763,
           1757,
           1756,
@@ -39142,6 +39187,7 @@
           1206
         ],
         "event_ids_negative": [
+          1767,
           1765,
           1762,
           1761,
@@ -39398,7 +39444,7 @@
       },
       "UDHR": {
         "positive": 50,
-        "negative": 192,
+        "negative": 193,
         "event_ids_positive": [
           1763,
           1757,
@@ -39452,6 +39498,7 @@
           1206
         ],
         "event_ids_negative": [
+          1767,
           1765,
           1760,
           1758,
@@ -39895,9 +39942,10 @@
         ]
       },
       "PB": {
-        "positive": 73,
+        "positive": 74,
         "negative": 58,
         "event_ids_positive": [
+          1766,
           1756,
           1755,
           1733,
@@ -40035,24 +40083,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 54.3,
-      "mainstream_pct": 45.7,
+      "niche_pct": 53.5,
+      "mainstream_pct": 46.5,
       "total_sources_used": 129,
-      "articles_processed": 553
+      "articles_processed": 555
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 553,
+      "total_events": 555,
       "pct": 0.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 16,
-        "burn_count": 1,
+        "count": 17,
+        "burn_count": 2,
         "mint_count": 15,
         "event_ids": [
+          1766,
           1758,
           1694,
           1687,
@@ -40162,10 +40211,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 74,
-        "burn_count": 35,
+        "count": 75,
+        "burn_count": 36,
         "mint_count": 39,
         "event_ids": [
+          1766,
           1760,
           1755,
           1753,
@@ -40310,10 +40360,11 @@
       },
       {
         "name": "Defense",
-        "count": 45,
+        "count": 46,
         "burn_count": 2,
-        "mint_count": 43,
+        "mint_count": 44,
         "event_ids": [
+          1767,
           1765,
           1760,
           1752,
@@ -40535,10 +40586,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 188,
+      "total_burn": 189,
       "direct_action": {
-        "count": 128,
-        "pct": 68.1
+        "count": 129,
+        "pct": 68.3
       },
       "editorial_consciousness": {
         "count": 14,
@@ -40546,13 +40597,13 @@
       },
       "untyped": {
         "count": 46,
-        "pct": 24.5
+        "pct": 24.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 557,
+      "total_burn": 558,
       "direct_action": {
-        "count": 367,
+        "count": 368,
         "pct": 65.9
       },
       "editorial_consciousness": {
@@ -40565,10 +40616,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 365,
+      "total_mint": 366,
       "direct_action": {
-        "count": 229,
-        "pct": 62.7
+        "count": 230,
+        "pct": 62.8
       },
       "editorial_alarm": {
         "count": 23,
@@ -40576,13 +40627,13 @@
       },
       "untyped": {
         "count": 113,
-        "pct": 31.0
+        "pct": 30.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1193,
+      "total_mint": 1194,
       "direct_action": {
-        "count": 769,
+        "count": 770,
         "pct": 64.5
       },
       "editorial_alarm": {
@@ -40591,13 +40642,13 @@
       },
       "untyped": {
         "count": 343,
-        "pct": 28.8
+        "pct": 28.7
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 183,
-      "institutional": 370,
-      "citizen_ratio": 0.331,
+      "institutional": 372,
+      "citizen_ratio": 0.33,
       "daily": [
         {
           "date": "2026-05-24",
@@ -40632,7 +40683,7 @@
         {
           "date": "2026-05-30",
           "citizen": 7,
-          "institutional": 26
+          "institutional": 28
         }
       ],
       "event_ids_citizen": [
@@ -40821,6 +40872,8 @@
         1206
       ],
       "event_ids_institutional": [
+        1767,
+        1766,
         1765,
         1763,
         1762,
