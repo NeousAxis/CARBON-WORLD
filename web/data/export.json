@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-30T12:06:32.718885+00:00",
-  "total_events": 1763,
+  "generated_at": "2026-05-30T12:35:36.858770+00:00",
+  "total_events": 1765,
   "total_burned": 2537100870,
-  "total_minted": 2360982000,
+  "total_minted": 2361882000,
   "pending_reviews": 17,
   "events": [
+    {
+      "id": 1765,
+      "event_title": "Egypt warns Israel that dangerous Gaza escalations threaten ceasefire",
+      "event_url": "https://www.aljazeera.com/news/2026/5/30/egypt-warns-israel-that-dangerous-gaza-escalations-threaten-ceasefire?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": -3.21,
+      "confidence": 8,
+      "justification": "Military escalations and displacement threats in Gaza outweigh diplomatic efforts to salvage ceasefire. | Egypt's diplomatic effort to preserve the Gaza ceasefire represents a positive action aligned with peace and human rights (SDG 16). However, the underlying military escalations by Israel and threats of displacement constitute severe violations of fundamental human rights, including rights to security and freedom from arbitrary displacement. The net ethical position is negative due to the ove",
+      "tx_hash": "3T8gekHHBPAm3f6eiKFVuD7JEKWAqsHisfD9XietVp2GDEptKD3y7EU11V8MUMJ2mBu1ZqgTGbuD51YPHh81N1nr",
+      "created_at": "2026-05-30T12:35:33.535174+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Egypt's diplomatic intervention to salvage the Gaza ceasefire, aiming to prevent further escalation and civilian harm\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Israeli military actions and threats of displacement in Gaza that endanger civilians and undermine ceasefire efforts\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1764,
+      "event_title": "Xenophobic tensions push hundreds of Ghanaians to leave South Africa",
+      "event_url": "https://www.lemonde.fr/afrique/article/2026/05/30/les-tensions-xenophobes-poussent-des-centaines-de-ghaneens-a-quitter-l-afrique-du-sud_6695244_3212.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Both analysts agree on MINT; repatriation is a reactive measure to protect rights amid xenophobic violence.",
+      "tx_hash": null,
+      "created_at": "2026-05-30T12:17:02.465703+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1763,
       "event_title": "Benin: Benin Teaching How It Should Be Done Without Coups!",
@@ -38801,8 +38845,8 @@
       },
       {
         "country": "Israel",
-        "count": 17,
-        "total_amount": 80900000
+        "count": 18,
+        "total_amount": 81650000
       },
       {
         "country": "France",
@@ -38877,8 +38921,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.968,
-        "events": 31
+        "mint_ratio": 0.969,
+        "events": 32
       },
       {
         "region": "Africa",
@@ -38934,7 +38978,7 @@
       },
       {
         "date": "2026-05-30",
-        "net_minted": 65675000,
+        "net_minted": 66425000,
         "net_burned": 48000000
       }
     ],
@@ -38952,7 +38996,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 142,
-        "negative": 251,
+        "negative": 252,
         "event_ids_positive": [
           1763,
           1757,
@@ -39098,6 +39142,7 @@
           1206
         ],
         "event_ids_negative": [
+          1765,
           1762,
           1761,
           1760,
@@ -39353,7 +39398,7 @@
       },
       "UDHR": {
         "positive": 50,
-        "negative": 191,
+        "negative": 192,
         "event_ids_positive": [
           1763,
           1757,
@@ -39407,6 +39452,7 @@
           1206
         ],
         "event_ids_negative": [
+          1765,
           1760,
           1758,
           1753,
@@ -40264,10 +40310,11 @@
       },
       {
         "name": "Defense",
-        "count": 44,
+        "count": 45,
         "burn_count": 2,
-        "mint_count": 42,
+        "mint_count": 43,
         "event_ids": [
+          1765,
           1760,
           1752,
           1741,
@@ -40402,9 +40449,9 @@
       },
       {
         "name": "Agriculture",
-        "count": 24,
+        "count": 23,
         "burn_count": 12,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           1716,
           1667,
@@ -40428,36 +40475,7 @@
           1300,
           1282,
           1243,
-          1234,
-          1205
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 20,
-        "burn_count": 11,
-        "mint_count": 9,
-        "event_ids": [
-          1761,
-          1755,
-          1721,
-          1665,
-          1559,
-          1542,
-          1503,
-          1501,
-          1453,
-          1452,
-          1383,
-          1382,
-          1361,
-          1332,
-          1306,
-          1291,
-          1278,
-          1230,
-          1229,
-          1205
+          1234
         ]
       },
       {
@@ -40486,6 +40504,33 @@
           1271,
           1218,
           1211
+        ]
+      },
+      {
+        "name": "Water",
+        "count": 19,
+        "burn_count": 11,
+        "mint_count": 8,
+        "event_ids": [
+          1761,
+          1755,
+          1721,
+          1665,
+          1559,
+          1542,
+          1503,
+          1501,
+          1453,
+          1452,
+          1383,
+          1382,
+          1361,
+          1332,
+          1306,
+          1291,
+          1278,
+          1230,
+          1229
         ]
       }
     ],
@@ -40522,23 +40567,23 @@
     "mint_composition_7d": {
       "total_mint": 365,
       "direct_action": {
-        "count": 228,
-        "pct": 62.5
+        "count": 229,
+        "pct": 62.7
       },
       "editorial_alarm": {
         "count": 23,
         "pct": 6.3
       },
       "untyped": {
-        "count": 114,
-        "pct": 31.2
+        "count": 113,
+        "pct": 31.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1192,
+      "total_mint": 1193,
       "direct_action": {
-        "count": 768,
-        "pct": 64.4
+        "count": 769,
+        "pct": 64.5
       },
       "editorial_alarm": {
         "count": 81,
@@ -40587,7 +40632,7 @@
         {
           "date": "2026-05-30",
           "citizen": 7,
-          "institutional": 25
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
@@ -40776,6 +40821,7 @@
         1206
       ],
       "event_ids_institutional": [
+        1765,
         1763,
         1762,
         1761,
@@ -41144,8 +41190,7 @@
         1214,
         1213,
         1212,
-        1211,
-        1205
+        1211
       ]
     }
   }
