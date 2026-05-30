@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-30T08:06:02.681706+00:00",
-  "total_events": 1749,
+  "generated_at": "2026-05-30T08:34:44.943111+00:00",
+  "total_events": 1751,
   "total_burned": 2520600870,
-  "total_minted": 2340357000,
-  "pending_reviews": 17,
+  "total_minted": 2342557000,
+  "pending_reviews": 16,
   "events": [
+    {
+      "id": 1751,
+      "event_title": "US consulate contractor accused of exploiting Indian workers in Italy",
+      "event_url": "https://www.thelocal.it/20260530/us-consulate-contractor-accused-of-exploiting-indian-workers-in-italy",
+      "event_source": "The Local Italy (EN)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.42,
+      "confidence": 8,
+      "justification": "Legal action against exploitation is positive, but underlying systemic violations warrant MINT. | The legal action by Italian prosecutors against labor exploitation represents a positive enforcement of labor rights and accountability. However, the underlying exploitation of Indian workers by a US consulate contractor constitutes a severe violation of human rights and labor standards, with significant ethical and systemic implications.",
+      "tx_hash": "4XTqM5AJuZMRmX8NSWeAYXKf62uVwiSc7w6MHzrRtjUpk8hW8nCTT1FVGxJisGMdw5MNfQ1YvcJ6gytj2fmWQ3uK",
+      "created_at": "2026-05-30T08:34:41.502871+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": "[{\"description\": \"Italian prosecutors have initiated legal action against a contractor accused of labor exploitation, demonstrating enforcement of labor rights and accountability for violations\", \"affected_sdgs\": [8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Contractor for US consulate in Milan allegedly exploited Indian workers with poverty-level wages for excessive hours, violating labor standards and human rights\", \"affected_sdgs\": [1, 8], \"violated_rights\": [\"UDHR Article 23\", \"ILO Forced Labor Convention\", \"ILO Freedom of Association\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1750,
+      "event_title": "France’s After-School Care Scandal: Chronicle of an Announced Catastrophe",
+      "event_url": "https://www.letemps.ch/articles/scandale-du-periscolaire-en-france-chronique-d-une-catastrophe-annoncee",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Systemic child abuse enabled by institutional failure outweighs citizen mobilization impact.",
+      "tx_hash": null,
+      "created_at": "2026-05-30T08:17:01.609872+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1749,
       "event_title": "Women Guardians of the Environment Amidst Livelihood Crisis",
@@ -38493,8 +38537,8 @@
       },
       {
         "country": "Israel",
-        "count": 17,
-        "total_amount": 73900000
+        "count": 16,
+        "total_amount": 71400000
       },
       {
         "country": "France",
@@ -38515,8 +38559,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 33,
-        "total_amount": 167700000
+        "count": 32,
+        "total_amount": 160700000
       },
       {
         "country": "Brazil",
@@ -38552,8 +38596,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.383,
-        "events": 94
+        "burn_ratio": 0.376,
+        "events": 93
       },
       {
         "region": "Asia",
@@ -38569,13 +38613,13 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.969,
-        "events": 32
+        "mint_ratio": 0.968,
+        "events": 31
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.9,
-        "events": 20
+        "mint_ratio": 0.895,
+        "events": 19
       },
       {
         "region": "Europe",
@@ -38589,8 +38633,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.617,
-        "events": 94
+        "mint_ratio": 0.624,
+        "events": 93
       }
     ],
     "supply_trend_7d": [
@@ -38626,7 +38670,7 @@
       },
       {
         "date": "2026-05-30",
-        "net_minted": 46675000,
+        "net_minted": 47375000,
         "net_burned": 31500000
       }
     ],
@@ -38643,8 +38687,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 141,
-        "negative": 251,
+        "positive": 140,
+        "negative": 249,
         "event_ids_positive": [
           1749,
           1746,
@@ -38785,10 +38829,10 @@
           1207,
           1206,
           1203,
-          1201,
-          1196
+          1201
         ],
         "event_ids_negative": [
+          1751,
           1748,
           1745,
           1742,
@@ -39036,15 +39080,12 @@
           1202,
           1200,
           1199,
-          1198,
-          1197,
-          1195,
-          1194
+          1198
         ]
       },
       "UDHR": {
-        "positive": 49,
-        "negative": 191,
+        "positive": 48,
+        "negative": 190,
         "event_ids_positive": [
           1749,
           1746,
@@ -39093,10 +39134,10 @@
           1227,
           1224,
           1209,
-          1206,
-          1196
+          1206
         ],
         "event_ids_negative": [
+          1751,
           1748,
           1745,
           1742,
@@ -39285,14 +39326,12 @@
           1213,
           1202,
           1199,
-          1198,
-          1195,
-          1194
+          1198
         ]
       },
       "ILO": {
         "positive": 6,
-        "negative": 5,
+        "negative": 6,
         "event_ids_positive": [
           1670,
           1667,
@@ -39302,6 +39341,7 @@
           1227
         ],
         "event_ids_negative": [
+          1751,
           1597,
           1455,
           1376,
@@ -39538,7 +39578,7 @@
       },
       "PB": {
         "positive": 72,
-        "negative": 59,
+        "negative": 58,
         "event_ids_positive": [
           1733,
           1732,
@@ -39671,20 +39711,19 @@
           1214,
           1210,
           1204,
-          1200,
-          1197
+          1200
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 54.7,
-      "mainstream_pct": 45.3,
-      "total_sources_used": 128,
-      "articles_processed": 552
+      "niche_pct": 53.5,
+      "mainstream_pct": 46.5,
+      "total_sources_used": 127,
+      "articles_processed": 549
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 552,
+      "total_events": 549,
       "pct": 0.7
     },
     "active_partners_7d": [],
@@ -39713,24 +39752,6 @@
         ]
       },
       {
-        "name": "WHO",
-        "count": 10,
-        "burn_count": 4,
-        "mint_count": 6,
-        "event_ids": [
-          1728,
-          1725,
-          1676,
-          1675,
-          1472,
-          1406,
-          1286,
-          1272,
-          1253,
-          1196
-        ]
-      },
-      {
         "name": "UN",
         "count": 10,
         "burn_count": 1,
@@ -39746,6 +39767,23 @@
           1519,
           1449,
           1352
+        ]
+      },
+      {
+        "name": "WHO",
+        "count": 9,
+        "burn_count": 3,
+        "mint_count": 6,
+        "event_ids": [
+          1728,
+          1725,
+          1676,
+          1675,
+          1472,
+          1406,
+          1286,
+          1272,
+          1253
         ]
       },
       {
@@ -40170,10 +40208,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 187,
+      "total_burn": 186,
       "direct_action": {
-        "count": 127,
-        "pct": 67.9
+        "count": 126,
+        "pct": 67.7
       },
       "editorial_consciousness": {
         "count": 14,
@@ -40181,7 +40219,7 @@
       },
       "untyped": {
         "count": 46,
-        "pct": 24.6
+        "pct": 24.7
       }
     },
     "burn_composition_all_time": {
@@ -40200,10 +40238,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 365,
+      "total_mint": 363,
       "direct_action": {
-        "count": 228,
-        "pct": 62.5
+        "count": 226,
+        "pct": 62.3
       },
       "editorial_alarm": {
         "count": 23,
@@ -40211,13 +40249,13 @@
       },
       "untyped": {
         "count": 114,
-        "pct": 31.2
+        "pct": 31.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1184,
+      "total_mint": 1185,
       "direct_action": {
-        "count": 760,
+        "count": 761,
         "pct": 64.2
       },
       "editorial_alarm": {
@@ -40226,12 +40264,12 @@
       },
       "untyped": {
         "count": 343,
-        "pct": 29.0
+        "pct": 28.9
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 184,
-      "institutional": 368,
+      "citizen": 183,
+      "institutional": 366,
       "citizen_ratio": 0.333,
       "daily": [
         {
@@ -40267,7 +40305,7 @@
         {
           "date": "2026-05-30",
           "citizen": 4,
-          "institutional": 16
+          "institutional": 17
         }
       ],
       "event_ids_citizen": [
@@ -40453,10 +40491,10 @@
         1206,
         1201,
         1200,
-        1198,
-        1197
+        1198
       ],
       "event_ids_institutional": [
+        1751,
         1748,
         1746,
         1745,
@@ -40821,10 +40859,7 @@
         1204,
         1203,
         1202,
-        1199,
-        1196,
-        1195,
-        1194
+        1199
       ]
     }
   }
