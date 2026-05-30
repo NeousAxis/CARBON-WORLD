@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-05-30T22:06:14.835411+00:00",
-  "total_events": 1793,
-  "total_burned": 2629100870,
-  "total_minted": 2373582000,
-  "pending_reviews": 20,
+  "generated_at": "2026-05-30T23:04:57.802336+00:00",
+  "total_events": 1796,
+  "total_burned": 2630600870,
+  "total_minted": 2380732000,
+  "pending_reviews": 18,
   "events": [
+    {
+      "id": 1796,
+      "event_title": "Lotus backtracks on EV-only future with 1,000-hp hybrid V8 supercar",
+      "event_url": "https://newatlas.com/automotive/lotus-1-000-hp-hybrid-v8-supercar/",
+      "event_source": "New Atlas",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.67,
+      "confidence": 7,
+      "justification": "Lotus's shift from all-electric to hybrid supercars hinders climate progress and sustainable innovation. | Lotus's decision to backtrack on its all-electric roadmap represents a missed opportunity for climate action, though its pivot to hybrid technology may serve as a transitional step. The shift undermines progress toward clean energy goals.",
+      "tx_hash": "4Pvbv8GZVNqQ1rk6S3cCXZTm5cWn4wdexm2kJQcUAyyySY3nnVikCzKtJi1QS78ob9d5WS9vSCYviDunedzNRhrS",
+      "created_at": "2026-05-30T23:04:54.010470+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Lotus is shifting toward hybrid technology, which may offer a transitional step toward sustainable performance vehicles.\", \"affected_sdgs\": [7, 13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Lotus has abandoned its commitment to an all-electric future, which may delay progress toward reducing emissions in the automotive sector.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1795,
+      "event_title": "US military says it turned away blockade runner trying to reach Iranian port",
+      "event_url": "https://www.al-monitor.com/originals/2026/05/us-military-says-it-turned-away-blockade-runner-trying-reach-iranian-port",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | The U.S. military action protected international sanctions and deterred potential harm by enforcing a legal blockade.",
+      "tx_hash": null,
+      "created_at": "2026-05-30T22:17:07.204562+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
+    {
+      "id": 1794,
+      "event_title": "",
+      "event_url": "https://mastodon.social/@greenpeace/116659043838319865",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Global awareness campaign supporting Indigenous territorial rights and ecological protection.",
+      "tx_hash": null,
+      "created_at": "2026-05-30T22:17:01.967316+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1793,
       "event_title": "Papua New Guinea will protect 200,000 km² in the Bismarck Sea from fishing and all other destructive human activity, sheltering an extraordinary breadth of life: coral reefs, seabirds, sharks, dolphins, whales, and deep-sea species, all threatened by global warming, overfishing and plastic pollution",
@@ -39525,13 +39591,13 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.368,
-        "events": 38
+        "burn_ratio": 0.378,
+        "events": 37
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.317,
-        "events": 101
+        "burn_ratio": 0.314,
+        "events": 102
       }
     ],
     "top_regions_destructive": [
@@ -39547,18 +39613,18 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.683,
-        "events": 101
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 0.632,
-        "events": 38
+        "mint_ratio": 0.686,
+        "events": 102
       },
       {
         "region": "North America",
         "mint_ratio": 0.622,
         "events": 98
+      },
+      {
+        "region": "Asia",
+        "mint_ratio": 0.622,
+        "events": 37
       }
     ],
     "supply_trend_7d": [
@@ -39594,7 +39660,7 @@
       },
       {
         "date": "2026-05-30",
-        "net_minted": 76075000,
+        "net_minted": 76225000,
         "net_burned": 105000000
       }
     ],
@@ -39764,6 +39830,7 @@
           1224
         ],
         "event_ids_negative": [
+          1796,
           1791,
           1789,
           1781,
@@ -40016,13 +40083,12 @@
           1237,
           1236,
           1235,
-          1226,
-          1223
+          1226
         ]
       },
       "UDHR": {
         "positive": 54,
-        "negative": 195,
+        "negative": 194,
         "event_ids_positive": [
           1788,
           1787,
@@ -40273,8 +40339,7 @@
           1241,
           1236,
           1235,
-          1226,
-          1223
+          1226
         ]
       },
       "ILO": {
@@ -40667,11 +40732,11 @@
       "niche_pct": 51.6,
       "mainstream_pct": 48.4,
       "total_sources_used": 128,
-      "articles_processed": 558
+      "articles_processed": 555
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 558,
+      "total_events": 555,
       "pct": 0.7
     },
     "active_partners_7d": [],
@@ -40792,10 +40857,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 74,
+        "count": 75,
         "burn_count": 35,
-        "mint_count": 39,
+        "mint_count": 40,
         "event_ids": [
+          1796,
           1790,
           1766,
           1760,
@@ -40940,9 +41006,9 @@
       },
       {
         "name": "Defense",
-        "count": 46,
+        "count": 45,
         "burn_count": 2,
-        "mint_count": 44,
+        "mint_count": 43,
         "event_ids": [
           1772,
           1767,
@@ -40988,14 +41054,13 @@
           1342,
           1337,
           1264,
-          1245,
-          1223
+          1245
         ]
       },
       {
         "name": "Tech",
-        "count": 36,
-        "burn_count": 16,
+        "count": 35,
+        "burn_count": 15,
         "mint_count": 20,
         "event_ids": [
           1742,
@@ -41032,8 +41097,7 @@
           1323,
           1307,
           1293,
-          1228,
-          1221
+          1228
         ]
       },
       {
@@ -41167,18 +41231,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 194,
+      "total_burn": 192,
       "direct_action": {
         "count": 134,
-        "pct": 69.1
+        "pct": 69.8
       },
       "editorial_consciousness": {
         "count": 14,
-        "pct": 7.2
+        "pct": 7.3
       },
       "untyped": {
-        "count": 46,
-        "pct": 23.7
+        "count": 44,
+        "pct": 22.9
       }
     },
     "burn_composition_all_time": {
@@ -41197,24 +41261,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 364,
+      "total_mint": 363,
       "direct_action": {
         "count": 232,
-        "pct": 63.7
+        "pct": 63.9
       },
       "editorial_alarm": {
         "count": 22,
-        "pct": 6.0
+        "pct": 6.1
       },
       "untyped": {
-        "count": 110,
-        "pct": 30.2
+        "count": 109,
+        "pct": 30.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1201,
+      "total_mint": 1202,
       "direct_action": {
-        "count": 776,
+        "count": 777,
         "pct": 64.6
       },
       "editorial_alarm": {
@@ -41223,12 +41287,12 @@
       },
       "untyped": {
         "count": 343,
-        "pct": 28.6
+        "pct": 28.5
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 184,
-      "institutional": 374,
+      "citizen": 183,
+      "institutional": 372,
       "citizen_ratio": 0.33,
       "daily": [
         {
@@ -41264,7 +41328,7 @@
         {
           "date": "2026-05-30",
           "citizen": 15,
-          "institutional": 37
+          "institutional": 38
         }
       ],
       "event_ids_citizen": [
@@ -41450,10 +41514,10 @@
         1227,
         1226,
         1225,
-        1224,
-        1221
+        1224
       ],
       "event_ids_institutional": [
+        1796,
         1791,
         1790,
         1789,
@@ -41824,10 +41888,7 @@
         1232,
         1231,
         1230,
-        1228,
-        1223,
-        1222,
-        1220
+        1228
       ]
     }
   }
