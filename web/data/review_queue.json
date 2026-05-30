@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T02:34:31.617428+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-05-30T03:05:01.795096+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 444,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-29T13:35:38.565022+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 563,
+      "event_title": "South Africa: President Ramaphosa to Address Official Launch of Kruger National Park Centenary",
+      "event_url": "https://allafrica.com/stories/202605290453.html",
+      "event_source": "AllAfrica Environment",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Official launch of Kruger National Park's centenary commemorations, highlighting conservation efforts and biodiversity protection.\", \"affected_sdgs\": [15, 11, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The official launch of Kruger National Park's centenary is a positive step for conservation and environmental awareness, aligning with biodiversity protection and sustainable tourism goals.\", \"snapshot_score\": 5.0, \"trajectory_score\": 4.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of centenary-related conservation projects\", \"Public engagement and educational outcomes from the event\", \"Long-term funding and policy support for Kruger National Park\"], \"revaluation_checkpoint\": \"2028-05-29\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The centenary event leads to increased public and international support for conservation, resulting in long-term funding and policy improvements.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"The event raises awareness but does not lead to significant policy or funding changes, maintaining the status quo in conservation efforts.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"The event fails to generate meaningful engagement or support, leading to stagnation or decline in conservation efforts.\", \"probability\": 0.2, \"score\": -2}], \"prospective_score\": 3.45, \"final_score\": 4.65, \"decision\": \"BURN\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Official launch of Kruger National Park's centenary highlights conservation and biodiversity protection.\", \"event_country\": \"South Africa\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Official launch of Kruger National Park's centenary commemorations, highlighting conservation and biodiversity protection\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Presidential address at a national event, raising public awareness and institutional commitment to environmental conservation\", \"affected_sdgs\": [4, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The centenary launch of Kruger National Park represents a significant institutional commitment to biodiversity conservation and climate action, aligning with multiple SDGs and planetary boundaries. The event also serves as a consciousness-raising moment, reinforcing public and governmental support for environmental protection. No discernible negative ethical aspects were identified in this action.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Failure to allocate sufficient long-term funding for park management\", \"Policy reversal under future administrations reducing conservation priorities\", \"Climate change impacts (droughts, fires) undermining park sustainability despite centenary efforts\"], \"revaluation_checkpoint\": \"2028-05-29\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Sustained national and international support leads to expanded conservation programs, biodiversity recovery, and climate resilience in the park\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate success with partial funding and policy continuity, but challenges from climate change and budget constraints persist\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Policy neglect, budget cuts, and climate disasters lead to significant degradation of the park's ecosystems and loss of biodiversity\", \"probability\": 0.15, \"score\": -5}], \"prospective_score\": 5.75, \"final_score\": 6.86, \"decision\": \"BURN\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Official centenary event for Kruger National Park advances conservation and public awareness.\", \"event_country\": \"South Africa\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.43, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Both analysts agree that the centenary launch promotes conservation and environmental awareness.\", \"disagreement\": false, \"reason\": \"The event is an institutional action that supports conservation and public awareness, aligning with environmental protection goals.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-30T03:04:58.372104+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
