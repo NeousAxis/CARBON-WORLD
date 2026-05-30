@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-30T06:36:20.606383+00:00",
-  "total_pending": 16,
+  "generated_at": "2026-05-30T07:04:27.712744+00:00",
+  "total_pending": 17,
   "reviews": [
     {
       "id": 444,
@@ -318,6 +318,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T06:36:16.675004+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 568,
+      "event_title": "Greenpeace confronts NVIDIA CEO in Taipei with call for supply chain decarbonization",
+      "event_url": "https://www.greenpeace.org/international/press-release/83801/greenpeace-confronts-nvidia-ceo-in-taipei-with-call-for-supply-chain-decarbonization/",
+      "event_source": "Greenpeace International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace activists directly confronted NVIDIA CEO to demand supply chain decarbonization, raising public awareness and pressuring a major tech company to address climate impact.\", \"affected_sdgs\": [7, 13, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The action by Greenpeace East Asia represents a direct and public call for corporate accountability in reducing environmental impact. It supports climate action and responsible consumption by holding a major tech company to account for its supply chain emissions.\", \"snapshot_score\": 6.0, \"trajectory_score\": 4.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"NVIDIA's public response and commitment to supply chain decarbonization\", \"Implementation of measurable emissions reduction targets\", \"Greenpeace's follow-up actions or public reports on NVIDIA's progress\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"NVIDIA adopts aggressive decarbonization goals and implements supply chain reforms, leading to measurable emissions reductions.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"NVIDIA makes moderate progress in reducing emissions but lacks transparency or binding targets.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"NVIDIA fails to act meaningfully, leading to continued environmental harm and public backlash.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 3.05, \"final_score\": 5.01, \"decision\": \"BURN\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Greenpeace's public confrontation with NVIDIA CEO raises awareness and pressures the company to decarbonize its supply chain.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace East Asia activists directly confronted NVIDIA CEO Jensen Huang in Taipei to demand supply chain decarbonization, raising public awareness and pressuring a major tech corporation to address climate impacts.\", \"affected_sdgs\": [7, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The action by Greenpeace East Asia constitutes a legitimate and impactful citizen-led effort to hold a powerful corporation accountable for its climate footprint. It aligns with multiple SDGs, particularly climate action and responsible consumption, while leveraging public pressure to drive systemic change. No significant ethical downsides are identified in the described action.\", \"snapshot_score\": 7.0, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"NVIDIA commits to measurable decarbonization targets within 12 months\", \"Taiwanese government enacts binding supply chain emissions regulations\", \"Greenpeace campaign gains sustained media coverage beyond 6 months\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"NVIDIA announces ambitious supply chain decarbonization plan with third-party verification, triggering industry-wide adoption.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"NVIDIA makes incremental commitments but fails to meet Greenpeace demands, with limited industry impact.\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"NVIDIA dismisses demands, Greenpeace escalates campaign with legal challenges and sustained protests, leading to reputational damage.\", \"probability\": 0.2, \"score\": 2}], \"prospective_score\": 5.5, \"final_score\": 6.15, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Citizen-led pressure on a major corporation to decarbonize its supply chain aligns with climate action and corporate accountability.\", \"event_country\": \"Taiwan\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.52, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Greenpeace's public confrontation with NVIDIA CEO raises awareness and pressures the company to decarbonize its supply chain.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-30T07:04:24.280869+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
