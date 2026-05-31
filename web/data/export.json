@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-05-31T10:36:12.876423+00:00",
-  "total_events": 1823,
+  "generated_at": "2026-05-31T11:05:32.950471+00:00",
+  "total_events": 1824,
   "total_burned": 2664600870,
-  "total_minted": 2428022000,
-  "pending_reviews": 18,
+  "total_minted": 2435022000,
+  "pending_reviews": 19,
   "events": [
+    {
+      "id": 1824,
+      "event_title": "Live coverage, Middle East war: Israel announces seizing Beaufort fortress and planting its flag",
+      "event_url": "https://www.lemonde.fr/international/live/2026/05/31/en-direct-guerre-au-moyen-orient-l-armee-israelienne-annonce-des-frappes-sur-tyr-et-d-autres-sites-du-sud-du-liban-apres-un-appel-a-evacuer-la-zone-au-sud-du-fleuve-zahrani_6694380_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": -6.26,
+      "confidence": 9,
+      "justification": "Military seizure violates sovereignty and escalates conflict, warranting negative token action. | The seizure of the Beaufort fortress constitutes a clear violation of international law and territorial sovereignty, undermining peace and justice (SDG 16) and violating core human rights principles including freedom from arbitrary interference (UDHR Article 12) and the right to self-determination (UNDRIP). The action escalates regional conflict and threatens civilian security in both Lebanon and Is",
+      "tx_hash": "px9VUHoaneFjq1bcffzHR8jstK11sQToVefaEzuAipthZZZGriaYgbJTaphChb4o25Y3uwvWCBigQGKUfNSPx67",
+      "created_at": "2026-05-31T11:05:29.164707+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli military seizure of Beaufort fortress in Lebanon, expanding operations across the Litani River and occupying strategic territory\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 13(2)\", \"UDHR Article 28\", \"UNDRIP Article 8\", \"UNDRIP Article 10\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1823,
       "event_title": "Israel reports capture of Beaufort Castle in southern Lebanon",
@@ -40121,8 +40143,8 @@
       },
       {
         "country": "Israel",
-        "count": 23,
-        "total_amount": 114150000
+        "count": 24,
+        "total_amount": 121150000
       },
       {
         "country": "France",
@@ -40198,7 +40220,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 37
+        "events": 38
       },
       {
         "region": "Africa",
@@ -40254,25 +40276,25 @@
       },
       {
         "date": "2026-05-31",
-        "net_minted": 41520000,
+        "net_minted": 48520000,
         "net_burned": 29000000
       }
     ],
     "event_of_the_day": {
-      "id": 1757,
-      "event_title": "Kruger returns to its owners",
-      "decision": "BURN",
+      "id": 1823,
+      "event_title": "Israel reports capture of Beaufort Castle in southern Lebanon",
+      "decision": "MINT",
       "amount_crbn": 5000000,
-      "final_score": 7.69,
+      "final_score": -7.43,
       "confidence": 9,
-      "country": "South Africa",
-      "region": "Africa",
-      "created_at": "2026-05-30T10:36:45.864742+00:00"
+      "country": "Israel",
+      "region": "MENA",
+      "created_at": "2026-05-31T10:36:08.891706+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 150,
-        "negative": 264,
+        "negative": 265,
         "event_ids_positive": [
           1820,
           1816,
@@ -40426,6 +40448,7 @@
           1243
         ],
         "event_ids_negative": [
+          1824,
           1823,
           1822,
           1821,
@@ -40694,7 +40717,7 @@
       },
       "UDHR": {
         "positive": 51,
-        "negative": 200,
+        "negative": 201,
         "event_ids_positive": [
           1788,
           1787,
@@ -40749,6 +40772,7 @@
           1249
         ],
         "event_ids_negative": [
+          1824,
           1823,
           1821,
           1818,
@@ -41035,7 +41059,7 @@
       },
       "UNDRIP": {
         "positive": 35,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           1782,
           1770,
@@ -41074,6 +41098,7 @@
           1243
         ],
         "event_ids_negative": [
+          1824,
           1823,
           1815,
           1811,
@@ -41357,11 +41382,11 @@
       "niche_pct": 51.9,
       "mainstream_pct": 48.1,
       "total_sources_used": 129,
-      "articles_processed": 578
+      "articles_processed": 579
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 578,
+      "total_events": 579,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -41635,10 +41660,11 @@
       },
       {
         "name": "Defense",
-        "count": 50,
+        "count": 51,
         "burn_count": 2,
-        "mint_count": 48,
+        "mint_count": 49,
         "event_ids": [
+          1824,
           1823,
           1817,
           1815,
@@ -41897,10 +41923,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 377,
+      "total_mint": 378,
       "direct_action": {
-        "count": 242,
-        "pct": 64.2
+        "count": 243,
+        "pct": 64.3
       },
       "editorial_alarm": {
         "count": 22,
@@ -41908,14 +41934,14 @@
       },
       "untyped": {
         "count": 113,
-        "pct": 30.0
+        "pct": 29.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1227,
+      "total_mint": 1228,
       "direct_action": {
-        "count": 792,
-        "pct": 64.5
+        "count": 793,
+        "pct": 64.6
       },
       "editorial_alarm": {
         "count": 82,
@@ -41923,12 +41949,12 @@
       },
       "untyped": {
         "count": 353,
-        "pct": 28.8
+        "pct": 28.7
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 185,
-      "institutional": 393,
+      "institutional": 394,
       "citizen_ratio": 0.32,
       "daily": [
         {
@@ -41964,7 +41990,7 @@
         {
           "date": "2026-05-31",
           "citizen": 6,
-          "institutional": 16
+          "institutional": 17
         }
       ],
       "event_ids_citizen": [
@@ -42155,6 +42181,7 @@
         1243
       ],
       "event_ids_institutional": [
+        1824,
         1822,
         1821,
         1820,
