@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-31T23:05:02.786567+00:00",
-  "total_events": 1851,
-  "total_burned": 2694750870,
-  "total_minted": 2488897000,
-  "pending_reviews": 21,
+  "generated_at": "2026-05-31T23:34:41.462831+00:00",
+  "total_events": 1853,
+  "total_burned": 2701750870,
+  "total_minted": 2489047000,
+  "pending_reviews": 20,
   "events": [
+    {
+      "id": 1853,
+      "event_title": "Louisville Restaurant Donates All Profits, Raises $100K for Nonprofits in Year One",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1tta8v3/louisville_restaurant_donates_all_profits_raises/",
+      "event_source": "Reddit r/UpliftingNews",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.86,
+      "confidence": 8,
+      "justification": "Restaurant's profit-sharing model directly benefits communities and aligns with ethical consumption. | The restaurant's action directly advances multiple SDGs by redistributing wealth to vulnerable populations, supporting local nonprofits, and promoting responsible consumption. There are no identifiable negative ethical aspects in this action, as it aligns with both economic justice and community welfare without evident harm.",
+      "tx_hash": "axNAe3eSM1JBNZDWb2aquhcnJXLxQMg4q125fJr1fLaE5FuyoeF63qvVYR9fpJsgubWgEY2ySfzBir2dq5eJXiE",
+      "created_at": "2026-05-31T23:34:37.700130+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"A Louisville restaurant donated all profits and raised $100,000 for nonprofits in its first year of operation, demonstrating a concrete business model aligned with social responsibility and community support.\", \"affected_sdgs\": [1, 2, 3, 8, 10, 11, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1852,
+      "event_title": "Guinea: voters head to the polls for legislative and municipal elections",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20260531-guin%C3%A9e-les-%C3%A9lecteurs-appel%C3%A9s-aux-urnes-pour-des-%C3%A9lections-l%C3%A9gislatives-et-communales",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Elections represent institutional action to restore constitutional order, a positive democratic step.",
+      "tx_hash": null,
+      "created_at": "2026-05-31T23:17:01.552717+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1851,
       "event_title": "Nicaragua confirms death in custody of Indigenous leader Brooklyn Rivera",
@@ -40759,8 +40803,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 31,
-        "total_amount": 152200000
+        "count": 32,
+        "total_amount": 159200000
       },
       {
         "country": "Brazil",
@@ -40801,8 +40845,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.361,
-        "events": 97
+        "burn_ratio": 0.367,
+        "events": 98
       },
       {
         "region": "Europe",
@@ -40828,8 +40872,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.639,
-        "events": 97
+        "mint_ratio": 0.633,
+        "events": 98
       },
       {
         "region": "Asia",
@@ -40871,7 +40915,7 @@
       {
         "date": "2026-05-31",
         "net_minted": 96020000,
-        "net_burned": 54150000
+        "net_burned": 61150000
       }
     ],
     "event_of_the_day": {
@@ -40887,9 +40931,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 152,
+        "positive": 153,
         "negative": 264,
         "event_ids_positive": [
+          1853,
           1849,
           1846,
           1842,
@@ -41311,9 +41356,10 @@
         ]
       },
       "UDHR": {
-        "positive": 51,
+        "positive": 52,
         "negative": 199,
         "event_ids_positive": [
+          1853,
           1849,
           1831,
           1830,
@@ -41973,14 +42019,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 52.8,
-      "mainstream_pct": 47.2,
+      "niche_pct": 52.0,
+      "mainstream_pct": 48.0,
       "total_sources_used": 127,
-      "articles_processed": 574
+      "articles_processed": 573
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 574,
+      "total_events": 573,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -42489,23 +42535,23 @@
     "burn_composition_7d": {
       "total_burn": 202,
       "direct_action": {
-        "count": 138,
-        "pct": 68.3
+        "count": 139,
+        "pct": 68.8
       },
       "editorial_consciousness": {
         "count": 14,
         "pct": 6.9
       },
       "untyped": {
-        "count": 50,
-        "pct": 24.8
+        "count": 49,
+        "pct": 24.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 590,
+      "total_burn": 591,
       "direct_action": {
-        "count": 390,
-        "pct": 66.1
+        "count": 391,
+        "pct": 66.2
       },
       "editorial_consciousness": {
         "count": 38,
@@ -42513,22 +42559,22 @@
       },
       "untyped": {
         "count": 162,
-        "pct": 27.5
+        "pct": 27.4
       }
     },
     "mint_composition_7d": {
-      "total_mint": 372,
+      "total_mint": 371,
       "direct_action": {
         "count": 244,
-        "pct": 65.6
+        "pct": 65.8
       },
       "editorial_alarm": {
         "count": 20,
         "pct": 5.4
       },
       "untyped": {
-        "count": 108,
-        "pct": 29.0
+        "count": 107,
+        "pct": 28.8
       }
     },
     "mint_composition_all_time": {
@@ -42548,8 +42594,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 185,
-      "institutional": 389,
-      "citizen_ratio": 0.322,
+      "institutional": 388,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-05-25",
@@ -42584,7 +42630,7 @@
         {
           "date": "2026-05-31",
           "citizen": 13,
-          "institutional": 30
+          "institutional": 31
         }
       ],
       "event_ids_citizen": [
@@ -42775,6 +42821,7 @@
         1273
       ],
       "event_ids_institutional": [
+        1853,
         1850,
         1849,
         1847,
@@ -43161,9 +43208,7 @@
         1271,
         1270,
         1269,
-        1268,
-        1267,
-        1266
+        1268
       ]
     }
   }
