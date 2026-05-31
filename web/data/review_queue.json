@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-31T07:05:47.824057+00:00",
-  "total_pending": 19,
+  "generated_at": "2026-05-31T07:34:40.588633+00:00",
+  "total_pending": 18,
   "reviews": [
     {
       "id": 444,
@@ -358,26 +358,6 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T21:04:36.313021+00:00",
-      "resolved_at": null,
-      "human_review_embedding": null,
-      "final_decision": null
-    },
-    {
-      "id": 587,
-      "event_title": "HIV in South Africa: why rolling out a groundbreaking new shot will miss a critical group of men",
-      "event_url": "https://theconversation.com/hiv-in-south-africa-why-rolling-out-a-groundbreaking-new-shot-will-miss-a-critical-group-of-men-282618",
-      "event_source": "The Conversation Africa",
-      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Rolling out a groundbreaking new HIV treatment represents progress in public health innovation.\", \"affected_sdgs\": [3, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"The rollout may miss a critical group of men who move around for work, potentially excluding them from life-saving treatment.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"While the rollout of a groundbreaking HIV treatment is a positive step for public health, the exclusion of a critical group of men due to their mobility undermines equitable access and violates the right to health. This exclusion disproportionately affects vulnerable populations and hinders progress toward SDG 3 and SDG 10.\", \"snapshot_score\": -1.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of targeted outreach programs for mobile men\", \"Monitoring and evaluation of treatment access among mobile populations\", \"Policy adjustments to ensure inclusive healthcare delivery\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Inclusive outreach and mobile health services ensure equitable treatment access for all men.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Moderate improvements in access for mobile men, but disparities persist.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"Treatment rollout remains exclusive, leading to continued health disparities.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 3.4, \"final_score\": 2.1, \"decision\": \"MINT\", \"amount_cbwd\": 120000, \"confidence\": 6, \"justification\": \"The rollout of a new HIV treatment misses a critical group of men, violating equitable access and health rights.\", \"event_country\": \"South Africa\"}",
-      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"South Africa's rollout of a groundbreaking new HIV/AIDS treatment injection aims to improve public health outcomes and reduce transmission rates\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The rollout strategy excludes a critical group of mobile men, potentially undermining the intervention's effectiveness and perpetuating health disparities\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The rollout of a new HIV/AIDS treatment injection in South Africa is a significant public health advancement that aligns with SDG 3 (Good Health and Well-being). However, the exclusion of mobile men from this initiative creates a critical gap, risking incomplete coverage and reinforcing inequalities in healthcare access.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Inclusion of mobile men in the rollout within 12 months\", \"Evidence of increased HIV transmission among excluded groups\", \"Policy revision to address access gaps\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Mobile men are included in the rollout within a year, leading to improved coverage and reduced transmission rates\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial inclusion occurs but gaps persist, requiring additional interventions to address disparities\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"No inclusion of mobile men, leading to sustained transmission and health disparities\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 2.755, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"New HIV treatment rollout is positive but undermined by exclusion of critical group.\", \"event_country\": \"South Africa\"}",
-      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.11, \"confidence\": 8, \"amount_cbwd\": 120000, \"justification\": \"Exclusion of mobile men violates health equity and rights, requiring corrective action.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (rollout exclusion) as violating rights, while Analyst B's NEUTRAL stance understates the harm. The ACTION (excluding a group) punishes health access, warranting BURN.\"}",
-      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: Excluding mobile men from HIV shot rollout harms health equity and rights, a negative impact; should be MINT, not BURN.",
-      "suggested_decision": "MINT",
-      "suggested_amount_crbn": 120000,
-      "human_verdict": null,
-      "human_amount": null,
-      "human_reason": null,
-      "status": "pending",
-      "created_at": "2026-05-31T07:05:44.111420+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
