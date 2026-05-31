@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-31T21:35:49.956660+00:00",
-  "total_pending": 20,
+  "generated_at": "2026-05-31T22:05:15.070154+00:00",
+  "total_pending": 21,
   "reviews": [
     {
       "id": 444,
@@ -398,6 +398,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-31T18:35:02.509781+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 597,
+      "event_title": "The town council of Castilleja de la Cuesta contradicts itself by removing a century-old araucaria",
+      "event_url": "https://www.ecologistasenaccion.org/370446/el-ayuntamiento-de-castilleja-de-la-cuesta-se-contradice-eliminando-una-araucaria-centenaria/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"The town council removed a century-old araucaria tree, contradicting its own environmental commitments.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The removal of a century-old araucaria tree by the town council undermines biodiversity and environmental protection, violating the principles of sustainable land use and conservation. This action contradicts the council's environmental commitments and negatively impacts local ecological heritage.\", \"snapshot_score\": -4.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of new environmental policies by the town council\", \"Public protests or legal challenges against the removal\", \"Scientific evaluation of the ecological impact of the tree's removal\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The town council reverses its decision and implements a conservation plan for the remaining araucarias.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"The town council continues its current trajectory, leading to further environmental degradation.\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Public pressure and legal action lead to a complete reversal of the decision and restoration of the tree.\", \"probability\": 0.2, \"score\": 8}], \"prospective_score\": 0.65, \"final_score\": -0.85, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 7, \"justification\": \"The town council's decision to remove a century-old tree undermines environmental protection and biodiversity.\", \"event_country\": \"Spain\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Local NGO (Ecologistas en Acción) calls for citizen vigilance and activism to protect remaining araucarias in Castilleja de la Cuesta, raising environmental consciousness and mobilizing community action.\", \"affected_sdgs\": [11, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"Town council of Castilleja de la Cuesta removes a century-old araucaria, contradicting its own environmental commitments and undermining biodiversity protection.\", \"affected_sdgs\": [11, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}], \"ethical_synthesis\": \"The town council's action directly harms biodiversity and local ecosystems by removing a protected, century-old araucaria, undermining sustainability goals. However, the local NGO's call for citizen vigilance and activism represents a positive step toward raising environmental awareness and mobilizing community action to protect remaining araucarias.\", \"snapshot_score\": -5.0, \"trajectory_score\": -1.5, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Town council reverses decision and commits to protecting all remaining araucarias\", \"Local government adopts a formal biodiversity protection policy for araucarias\", \"Citizen-led campaign successfully pressures council to halt further removals\", \"New scientific assessment confirms araucarias' ecological importance\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where citizen pressure and NGO advocacy lead to a reversal of the decision, with the council adopting a biodiversity protection policy for araucarias.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic scenario where the council maintains its decision but faces ongoing citizen protests and legal challenges, with no further removals but no policy change.\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where the council continues removing araucarias despite protests, leading to the loss of multiple specimens and eroding local trust in environmental governance.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.5, \"final_score\": -3.125, \"decision\": \"MINT\", \"amount_cbwd\": 15000, \"confidence\": 8, \"justification\": \"Town council's removal of protected araucaria outweighs NGO's activism; net negative impact on biodiversity.\", \"event_country\": \"Spain\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.85, \"confidence\": 6, \"amount_cbwd\": 125000, \"justification\": \"The removal of a protected, century-old tree by the town council harms biodiversity and environmental heritage.\", \"disagreement\": false, \"reason\": \"Both analysts agree the action is harmful, but the final decision aligns with the lesser negative impact and institutional responsibility.\"}",
+      "sentinel_concern": "structural: missing_positive_aspects | llm: Verdict polarity error: removal of a protected century‑old tree harms biodiversity, a negative impact, should be MINT, but decision is BURN; justification also contradicts decision.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-31T22:05:10.827053+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
