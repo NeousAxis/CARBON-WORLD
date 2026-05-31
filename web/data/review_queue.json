@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-31T22:34:23.874826+00:00",
-  "total_pending": 20,
+  "generated_at": "2026-05-31T23:05:02.960184+00:00",
+  "total_pending": 21,
   "reviews": [
     {
       "id": 444,
@@ -398,6 +398,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-31T18:35:02.509781+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 598,
+      "event_title": "Guinea: voters head to the polls for legislative and municipal elections",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20260531-guin%C3%A9e-les-%C3%A9lecteurs-appel%C3%A9s-aux-urnes-pour-des-%C3%A9lections-l%C3%A9gislatives-et-communales",
+      "event_source": "France 24 FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Legislative and municipal elections held in Guinea to restore constitutional order after a 2021 coup, marking a step toward democratic normalization\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Opposition parties called for a boycott of the elections, indicating political division and potential disenfranchisement of voters\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The elections represent a positive step toward restoring constitutional order and democratic processes in Guinea, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the opposition boycott highlights significant political fragmentation and risks undermining inclusivity and representation.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Successful transition of power post-election\", \"Sustained opposition participation in future elections\", \"Reduction in political violence or repression\", \"Implementation of electoral reforms\"], \"revaluation_checkpoint\": \"2028-05-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Elections lead to a stable, inclusive government with reduced political tensions and improved democratic governance\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Elections result in a fragile coalition with ongoing opposition boycotts and sporadic unrest\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Elections trigger widespread protests, violence, or a return to authoritarian rule\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.75, \"final_score\": 2.64, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Elections restore constitutional order but face boycott risks, limiting inclusivity.\", \"event_country\": \"Guinea\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Conducting legislative and municipal elections in Guinea restores constitutional order and democratic processes after the 2021 coup, demonstrating institutional resilience and adherence to democratic norms.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The electoral process engages nearly 7 million voters, reflecting broad civic participation and a commitment to inclusive governance despite opposition boycotts.\", \"affected_sdgs\": [10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Opposition parties' boycott of the elections undermines political inclusivity and may deepen divisions, reducing the legitimacy of the electoral outcome.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The elections occur in a context of recent political instability, raising concerns about the fairness, transparency, and security of the voting process.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The restoration of constitutional order through elections is a significant positive step toward democratic governance and aligns with SDG 16. However, the opposition boycott and ongoing political instability introduce risks to inclusivity and legitimacy, tempering the overall ethical impact.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Successful transition of power post-election without violence\", \"Evidence of electoral fraud or irregularities\", \"Opposition participation in future elections\", \"International observers' reports on fairness\"], \"revaluation_checkpoint\": \"2028-05-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Elections proceed smoothly with high turnout, opposition re-engages, and a peaceful transition of power occurs, strengthening democratic institutions.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Elections face minor irregularities but are generally accepted as legitimate; opposition remains marginalized but does not escalate conflict.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Elections are marred by fraud, violence, or boycott, leading to prolonged instability and erosion of democratic gains.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.55, \"final_score\": 3.11, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Restoration of democracy outweighs boycott risks but remains fragile.\", \"event_country\": \"Guinea\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.87, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Elections represent institutional action to restore constitutional order, a positive democratic step.\", \"disagreement\": true, \"reason\": \"The event involves an institutional action (elections) aimed at restoring constitutional order, which is a positive democratic step. While boycotts pose risks, the action itself supports democratic governance.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: elections restore constitutional order, a positive democratic step, should be BURN, but verdict is MINT; justification praises action yet decision is negative.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-31T23:04:58.461856+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
