@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-05-31T08:05:30.591347+00:00",
-  "total_events": 1811,
-  "total_burned": 2649600870,
-  "total_minted": 2398722000,
-  "pending_reviews": 19,
+  "generated_at": "2026-05-31T08:36:05.806544+00:00",
+  "total_events": 1814,
+  "total_burned": 2654600870,
+  "total_minted": 2399372000,
+  "pending_reviews": 18,
   "events": [
+    {
+      "id": 1814,
+      "event_title": "Australia will only receive three used US nuclear submarines under AUKUS",
+      "event_url": "https://www.france24.com/fr/asie-pacifique/20260531-aukus-australie-trois-sous-marins-nucleaires-americains-occasion-france",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.61,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; convergence toward average score. | The decision to accept used nuclear submarines under AUKUS presents a trade-off between short-term fiscal prudence and long-term strategic, environmental, and non-proliferation risks. While it may reduce immediate costs, the move normalizes nuclear submarine transfers, undermines global non-proliferation efforts, and introduces potential environmental hazards, outweighing the limited positive aspects.",
+      "tx_hash": "3dzkwMHgji4hVrmFJxE3Sd3oycGSebxRd5fUdkinDwz8hM8FLr6JEhys6QqY4kKPSXwCFQMVqvVgUC4stZtxCoqp",
+      "created_at": "2026-05-31T08:36:01.839715+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Australia's adjustment to receive used nuclear submarines under AUKUS may reduce immediate financial burden and accelerate fleet deployment timelines, potentially freeing resources for other defense or civilian priorities.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The shift to used nuclear submarines under AUKUS undermines non-proliferation norms by normalizing the transfer of nuclear-powered vessels, increasing risks of nuclear material diversion and escalating regional arms races.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"The decision prioritizes cost-efficiency over long-term strategic stability and environmental safety, as used nuclear submarines may pose higher risks of accidents or radioactive leaks.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1813,
+      "event_title": "Australia to receive only used nuclear submarines from US in amended defence deal",
+      "event_url": "https://www.france24.com/en/australia/20260531-australia-to-receive-only-used-nuclear-submarines-from-us-in-amended-defence-deal",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.29,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; consensus on high-risk nuclear transfer outweighing benefits. | The deal provides Australia with enhanced defense capabilities, supporting SDG 16. However, the use of used nuclear submarines introduces environmental risks and potential regional tensions, undermining SDGs 13, 14, 15, and 16.",
+      "tx_hash": "2h9JLGSFjrK9iBRZLmpv1xb6cZWavfBYzLG3koMmppGo6toLiNYrXPUWBWrBpckuYzFD9BpzHEcHKaVBvepDt5jY",
+      "created_at": "2026-05-31T08:36:01.724683+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Australia receives nuclear submarines to enhance national defense capabilities.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Use of used nuclear submarines raises environmental and safety concerns due to potential radioactive waste and decommissioning risks.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The deal may undermine regional stability and increase militarization in the Indo-Pacific.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1812,
+      "event_title": "NSDAP archive: How DER SPIEGEL processed the data from the Nazi card file",
+      "event_url": "https://www.spiegel.de/international/germany/nsdap-archive-how-der-spiegel-processed-the-data-from-the-nsdap-membership-card-file-a-c2d916be-b6d1-4b39-bab9-debdc9c45f7e#ref=rss",
+      "event_source": "Spiegel International (Germany)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Media outlet's disclosure of Nazi-era data promotes historical accountability and justice.",
+      "tx_hash": null,
+      "created_at": "2026-05-31T08:17:01.551677+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1811,
       "event_title": "Astrée, the Interior Ministry's AI for immigration procedures, is just the tip of the iceberg",
@@ -39866,14 +39932,14 @@
         "total_amount": 14665000
       },
       {
+        "country": "Australia",
+        "count": 11,
+        "total_amount": 59130000
+      },
+      {
         "country": "Spain",
         "count": 10,
         "total_amount": 8691250
-      },
-      {
-        "country": "South Africa",
-        "count": 10,
-        "total_amount": 4200000
       }
     ],
     "top_countries_burn": [
@@ -39911,8 +39977,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.409,
-        "events": 22
+        "burn_ratio": 0.391,
+        "events": 23
       },
       {
         "region": "Asia",
@@ -39926,8 +39992,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.29,
-        "events": 100
+        "burn_ratio": 0.293,
+        "events": 99
       }
     ],
     "top_regions_destructive": [
@@ -39943,8 +40009,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.71,
-        "events": 100
+        "mint_ratio": 0.707,
+        "events": 99
       },
       {
         "region": "North America",
@@ -39990,7 +40056,7 @@
       },
       {
         "date": "2026-05-31",
-        "net_minted": 12220000,
+        "net_minted": 12870000,
         "net_burned": 19000000
       }
     ],
@@ -40160,6 +40226,8 @@
           1243
         ],
         "event_ids_negative": [
+          1814,
+          1813,
           1811,
           1810,
           1809,
@@ -40416,14 +40484,12 @@
           1242,
           1241,
           1240,
-          1237,
-          1236,
-          1235
+          1237
         ]
       },
       "UDHR": {
         "positive": 51,
-        "negative": 197,
+        "negative": 195,
         "event_ids_positive": [
           1788,
           1787,
@@ -40672,9 +40738,7 @@
           1247,
           1245,
           1242,
-          1241,
-          1236,
-          1235
+          1241
         ]
       },
       "ILO": {
@@ -40698,7 +40762,7 @@
       },
       "CRC": {
         "positive": 7,
-        "negative": 46,
+        "negative": 45,
         "event_ids_positive": [
           1667,
           1632,
@@ -40753,13 +40817,12 @@
           1303,
           1283,
           1257,
-          1256,
-          1236
+          1256
         ]
       },
       "UNDRIP": {
         "positive": 35,
-        "negative": 46,
+        "negative": 45,
         "event_ids_positive": [
           1782,
           1770,
@@ -40842,8 +40905,7 @@
           1283,
           1280,
           1251,
-          1248,
-          1236
+          1248
         ]
       },
       "Animal": {
@@ -40926,7 +40988,7 @@
       },
       "PB": {
         "positive": 77,
-        "negative": 59,
+        "negative": 61,
         "event_ids_positive": [
           1808,
           1805,
@@ -41007,6 +41069,8 @@
           1243
         ],
         "event_ids_negative": [
+          1814,
+          1813,
           1797,
           1791,
           1771,
@@ -41202,10 +41266,12 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 76,
+        "count": 78,
         "burn_count": 36,
-        "mint_count": 40,
+        "mint_count": 42,
         "event_ids": [
+          1814,
+          1813,
           1805,
           1799,
           1796,
@@ -41623,9 +41689,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1218,
+      "total_mint": 1220,
       "direct_action": {
-        "count": 783,
+        "count": 785,
         "pct": 64.3
       },
       "editorial_alarm": {
@@ -41634,13 +41700,13 @@
       },
       "untyped": {
         "count": 353,
-        "pct": 29.0
+        "pct": 28.9
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 185,
-      "institutional": 388,
-      "citizen_ratio": 0.323,
+      "citizen": 184,
+      "institutional": 389,
+      "citizen_ratio": 0.321,
       "daily": [
         {
           "date": "2026-05-25",
@@ -41675,7 +41741,7 @@
         {
           "date": "2026-05-31",
           "citizen": 4,
-          "institutional": 7
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -41862,10 +41928,11 @@
         1247,
         1244,
         1243,
-        1237,
-        1236
+        1237
       ],
       "event_ids_institutional": [
+        1814,
+        1813,
         1811,
         1810,
         1809,
@@ -42252,8 +42319,7 @@
         1241,
         1240,
         1239,
-        1238,
-        1235
+        1238
       ]
     }
   }
