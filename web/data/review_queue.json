@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-31T04:34:23.727273+00:00",
-  "total_pending": 18,
+  "generated_at": "2026-05-31T05:04:39.382824+00:00",
+  "total_pending": 19,
   "reviews": [
     {
       "id": 444,
@@ -358,6 +358,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T21:04:36.313021+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 585,
+      "event_title": "In Finland's vast swamp forests, 50 kilometers from the Russian border, NATO troops train to counter incursions",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/31/dans-l-immensite-des-forets-marecageuses-de-finlande-a-50-kilometres-de-la-frontiere-avec-la-russie-les-troupes-de-l-otan-s-entrainent-a-contrer-les-incursions_6695543_3210.html",
+      "event_source": "Le Monde International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NATO troops conducting defensive military exercises near Russia-Finland border to deter incursions and enhance regional security\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Military escalation and troop deployment near international border increases regional tension and risks armed conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(4)\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Environmental impact of large-scale military exercises in sensitive swamp forest ecosystems\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The NATO exercises aim to deter incursions and uphold regional security (SDG 16), but they simultaneously escalate military tensions and risk environmental harm in fragile ecosystems. The net ethical position is mixed, with security benefits offset by risks of conflict escalation and ecological damage.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Resolution of border disputes without military escalation\", \"Successful de-escalation agreements with Russia\", \"Environmental impact assessments and mitigation measures implemented\", \"Reduction in military exercises in sensitive areas\"], \"revaluation_checkpoint\": \"2028-05-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"De-escalation through diplomatic channels leads to reduced military presence and sustainable border management\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Prolonged military standoff with periodic skirmishes but no full-scale conflict, environmental damage contained\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Full-scale conflict erupts, severe environmental destruction in border regions, long-term regional instability\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.35, \"final_score\": -2.51, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Military escalation outweighs security benefits; risks of conflict and environmental harm dominate.\", \"event_country\": \"Finland\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NATO troop training in Finland to counter incursions near the Russian border, enhancing regional security and deterrence\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Military exercises near sensitive border regions may escalate tensions and increase risk of conflict escalation\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Large-scale military presence in pristine swamp forests could cause environmental degradation and disrupt local ecosystems\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The NATO training exercises in Finland aim to strengthen regional security and deter potential incursions, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the military presence risks escalating geopolitical tensions and may cause environmental harm to fragile ecosystems. The net ethical judgment is mixed, with security benefits outweighing environmental concerns but not without significant risks.\", \"snapshot_score\": 3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Escalation of military activity near the border\", \"Environmental impact assessments revealing significant damage\", \"Diplomatic breakthrough reducing tensions\"], \"revaluation_checkpoint\": \"2028-05-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Diplomatic de-escalation occurs, reducing need for military presence and allowing environmental recovery\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Tensions remain stable, military exercises continue at current scale with minimal environmental impact\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Military escalation leads to conflict or significant environmental damage\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 1.4, \"final_score\": 1.755, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Military training enhances security but risks escalation and environmental harm.\", \"event_country\": \"Finland\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.96, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"The institutional action of NATO training in Finland aims to protect national security and deter incursions, which aligns with protecting rights and preventing harm.\", \"disagreement\": true, \"reason\": \"The action (NATO training) is a defensive measure to protect against incursions, which aligns with protecting rights and preventing harm. This justifies a BURN rating.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict BURN mislabels NATO training as positive; military exercises harm environment and raise conflict risk, so impact is negative (MINT). Polarity error.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-31T05:04:35.339693+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
