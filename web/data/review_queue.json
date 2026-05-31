@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-31T12:35:01.550825+00:00",
-  "total_pending": 18,
+  "generated_at": "2026-05-31T13:05:38.829972+00:00",
+  "total_pending": 19,
   "reviews": [
     {
       "id": 444,
@@ -358,6 +358,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-05-30T21:04:36.313021+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 590,
+      "event_title": "Berlin gives the OK for tougher trade action on China",
+      "event_url": "https://www.politico.eu/article/germany-gives-ok-for-tougher-trade-action-china/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Germany signals openness to stronger trade defense measures, potentially promoting fair trade practices.\", \"affected_sdgs\": [8, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Potential escalation in trade tensions could disrupt global supply chains and economic cooperation.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"Germany's openness to stronger trade defense measures against China reflects a desire for fair trade practices, but could also risk economic tensions and disruptions in global cooperation.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Formal EU trade policy decisions on China\", \"Trade negotiations outcomes between EU and China\", \"Economic impact assessments on global supply chains\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Trade tensions escalate, leading to economic fragmentation and reduced cooperation.\", \"probability\": 0.25, \"score\": -6}, {\"name\": \"B\", \"description\": \"Trade measures remain moderate, with limited impact on global cooperation.\", \"probability\": 0.55, \"score\": 0}, {\"name\": \"C\", \"description\": \"Trade tensions de-escalate, leading to renewed cooperation and fairer trade practices.\", \"probability\": 0.2, \"score\": 4}], \"prospective_score\": -1.15, \"final_score\": -1.54, \"decision\": \"MINT\", \"amount_cbwd\": 250000, \"confidence\": 6, \"justification\": \"Germany's openness to stronger trade defense measures against China risks economic tensions and disruptions.\", \"event_country\": \"Germany\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Germany's openness to discussing stronger trade defense measures against China signals alignment with EU trade policy and potential enforcement of fair trade practices, supporting SDG 8 (Decent Work and Economic Growth) and SDG 12 (Responsible Consumption and Production).\", \"affected_sdgs\": [8, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Stronger trade defense measures could escalate trade tensions, harm economic relations, and potentially violate WTO rules or UDHR Article 22 (right to social security and economic well-being), undermining SDG 1 (No Poverty) and SDG 10 (Reduced Inequalities).\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Germany's move to consider tougher trade action against China reflects a balancing act between enforcing fair trade and avoiding economic harm. While it may support responsible economic practices, the risk of escalating tensions and violating economic rights introduces significant ethical concerns. The net impact is moderate but leans slightly negative due to potential systemic risks.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"EU-WTO agreement on trade measures\", \"China's retaliatory economic actions\", \"German public opinion shift on trade policy\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"EU and China reach a negotiated settlement, reducing trade tensions and aligning policies with WTO rules.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Trade measures are implemented but remain within WTO-compliant frameworks, avoiding major escalation.\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Trade war escalates, leading to significant economic damage in both regions and violating multiple economic rights.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 0.1, \"final_score\": -0.46, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Trade policy shift with uncertain outcomes; moderate risks outweigh benefits.\", \"event_country\": \"Germany\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.0, \"confidence\": 8, \"amount_cbwd\": 250000, \"justification\": \"Institutional action to enforce fair trade protects rights; risks are secondary.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (tougher trade defense) as protective of fair trade rights, despite potential tensions. Analyst B's neutrality overlooked the ethical framing of the action itself.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict BURN mislabels tougher trade action on China as positive for planet/humanity; likely negative (MINT) due to trade tensions and no clear environmental/rights benefit.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 250000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-05-31T13:05:34.872883+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
