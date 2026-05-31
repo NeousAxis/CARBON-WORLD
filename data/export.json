@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-05-31T05:04:39.240714+00:00",
-  "total_events": 1803,
-  "total_burned": 2639600870,
-  "total_minted": 2383332000,
+  "generated_at": "2026-05-31T05:34:39.146661+00:00",
+  "total_events": 1805,
+  "total_burned": 2644600870,
+  "total_minted": 2383482000,
   "pending_reviews": 19,
   "events": [
+    {
+      "id": 1805,
+      "event_title": "Taiwan collects carbon levies from major emitters for first time",
+      "event_url": "https://asia.nikkei.com/spotlight/environment/climate-change/taiwan-collects-carbon-levies-from-major-emitters-for-first-time",
+      "event_source": "Nikkei Asia",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.15,
+      "confidence": 9,
+      "justification": "First-time carbon levy on major emitters sets strong climate precedent. | Taiwan's first-time carbon levy on major emitters is a significant step toward climate action, directly supporting SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action). It aligns with planetary boundaries by reducing emissions and sets a precedent for regional climate policy. No notable negative aspects were identified in this action.",
+      "tx_hash": "5KjbC14ymSGfnXg8qeyQSyxyb4XukHGsDvSYuUgT7VpKRNKGRHof1UBit1PzTChQxXGrS9Ft4SUYE9wr7x51Xpsc",
+      "created_at": "2026-05-31T05:34:34.739118+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Taiwan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Taiwan implements carbon levies on major emitters for the first time, establishing a market-based mechanism to reduce greenhouse gas emissions and incentivize low-carbon practices.\", \"affected_sdgs\": [7, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 1804,
+      "event_title": "In Finland's vast swamp forests, 50 kilometers from the Russian border, NATO troops train to counter incursions",
+      "event_url": "https://www.lemonde.fr/international/article/2026/05/31/dans-l-immensite-des-forets-marecageuses-de-finlande-a-50-kilometres-de-la-frontiere-avec-la-russie-les-troupes-de-l-otan-s-entrainent-a-contrer-les-incursions_6695543_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | The institutional action of NATO training in Finland aims to protect national security and deter incursions, which aligns with protecting rights and preventing harm.",
+      "tx_hash": null,
+      "created_at": "2026-05-31T05:17:02.027008+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1803,
       "event_title": "Ukraine: IAEA seeks access to Zaporizhzhia nuclear plant after reported drone strike",
@@ -39739,14 +39783,14 @@
         "events": 22
       },
       {
+        "region": "Asia",
+        "burn_ratio": 0.368,
+        "events": 38
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.367,
         "events": 98
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.351,
-        "events": 37
       },
       {
         "region": "Europe",
@@ -39771,14 +39815,14 @@
         "events": 100
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.649,
-        "events": 37
-      },
-      {
         "region": "North America",
         "mint_ratio": 0.633,
         "events": 98
+      },
+      {
+        "region": "Asia",
+        "mint_ratio": 0.632,
+        "events": 38
       }
     ],
     "supply_trend_7d": [
@@ -39815,7 +39859,7 @@
       {
         "date": "2026-05-31",
         "net_minted": 2100000,
-        "net_burned": 9000000
+        "net_burned": 14000000
       }
     ],
     "event_of_the_day": {
@@ -39831,9 +39875,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 148,
+        "positive": 149,
         "negative": 256,
         "event_ids_positive": [
+          1805,
           1802,
           1800,
           1799,
@@ -40741,9 +40786,10 @@
         ]
       },
       "PB": {
-        "positive": 75,
+        "positive": 76,
         "negative": 59,
         "event_ids_positive": [
+          1805,
           1802,
           1800,
           1799,
@@ -40884,9 +40930,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 51.6,
-      "mainstream_pct": 48.4,
-      "total_sources_used": 128,
+      "niche_pct": 51.9,
+      "mainstream_pct": 48.1,
+      "total_sources_used": 129,
       "articles_processed": 573
     },
     "cache_hit_rate_7d": {
@@ -41016,10 +41062,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 76,
-        "burn_count": 36,
+        "count": 77,
+        "burn_count": 37,
         "mint_count": 40,
         "event_ids": [
+          1805,
           1799,
           1796,
           1790,
@@ -41100,9 +41147,9 @@
       },
       {
         "name": "Construction",
-        "count": 58,
+        "count": 57,
         "burn_count": 24,
-        "mint_count": 34,
+        "mint_count": 33,
         "event_ids": [
           1760,
           1739,
@@ -41160,8 +41207,7 @@
           1277,
           1271,
           1233,
-          1231,
-          1230
+          1231
         ]
       },
       {
@@ -41339,34 +41385,6 @@
         ]
       },
       {
-        "name": "Water",
-        "count": 20,
-        "burn_count": 11,
-        "mint_count": 9,
-        "event_ids": [
-          1802,
-          1771,
-          1761,
-          1755,
-          1721,
-          1665,
-          1559,
-          1542,
-          1503,
-          1501,
-          1453,
-          1452,
-          1383,
-          1382,
-          1361,
-          1332,
-          1306,
-          1291,
-          1278,
-          1230
-        ]
-      },
-      {
         "name": "Transport",
         "count": 20,
         "burn_count": 6,
@@ -41393,13 +41411,40 @@
           1279,
           1271
         ]
+      },
+      {
+        "name": "Water",
+        "count": 19,
+        "burn_count": 11,
+        "mint_count": 8,
+        "event_ids": [
+          1802,
+          1771,
+          1761,
+          1755,
+          1721,
+          1665,
+          1559,
+          1542,
+          1503,
+          1501,
+          1453,
+          1452,
+          1383,
+          1382,
+          1361,
+          1332,
+          1306,
+          1291,
+          1278
+        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 200,
+      "total_burn": 201,
       "direct_action": {
-        "count": 133,
-        "pct": 66.5
+        "count": 134,
+        "pct": 66.7
       },
       "editorial_consciousness": {
         "count": 15,
@@ -41407,13 +41452,13 @@
       },
       "untyped": {
         "count": 52,
-        "pct": 26.0
+        "pct": 25.9
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 579,
+      "total_burn": 580,
       "direct_action": {
-        "count": 379,
+        "count": 380,
         "pct": 65.5
       },
       "editorial_consciousness": {
@@ -41422,22 +41467,22 @@
       },
       "untyped": {
         "count": 162,
-        "pct": 28.0
+        "pct": 27.9
       }
     },
     "mint_composition_7d": {
-      "total_mint": 373,
+      "total_mint": 372,
       "direct_action": {
         "count": 234,
-        "pct": 62.7
+        "pct": 62.9
       },
       "editorial_alarm": {
         "count": 22,
         "pct": 5.9
       },
       "untyped": {
-        "count": 117,
-        "pct": 31.4
+        "count": 116,
+        "pct": 31.2
       }
     },
     "mint_composition_all_time": {
@@ -41493,7 +41538,7 @@
         {
           "date": "2026-05-31",
           "citizen": 3,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -41685,6 +41730,7 @@
         1233
       ],
       "event_ids_institutional": [
+        1805,
         1801,
         1798,
         1797,
@@ -42070,8 +42116,7 @@
         1238,
         1235,
         1232,
-        1231,
-        1230
+        1231
       ]
     }
   }
