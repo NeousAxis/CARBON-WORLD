@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01T10:37:57.115732+00:00",
-  "total_pending": 23,
+  "generated_at": "2026-06-01T11:06:50.098499+00:00",
+  "total_pending": 24,
   "reviews": [
     {
       "id": 444,
@@ -458,6 +458,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-01T10:37:53.540724+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 603,
+      "event_title": "‘Sexual Chocolate’ Faces Recalls After FDA Tests Reveal Undisclosed Viagra",
+      "event_url": "https://www.wired.com/story/sexual-chocolate-recalls-fda-undisclosed-viagra/",
+      "event_source": "WIRED Science",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Voluntary product recalls prevent consumer harm from undisclosed pharmaceuticals.\", \"affected_sdgs\": [3, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Products marketed as 'chocolate' or confectionery contained undisclosed pharmaceuticals, posing health risks to consumers.\", \"affected_sdgs\": [3, 12], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The voluntary recalls of products like 'Boner Bears' and 'DTF' address a significant health risk by removing undisclosed pharmaceuticals from the market, aligning with consumer safety and transparency goals. However, the initial sale of these products violated consumer rights and public health protections.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"FDA publishes updated guidelines on dietary supplements and confectionery products\", \"New cases of consumer harm reported from similar products\", \"Industry compliance with FDA regulations improves or declines\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"FDA enforces stricter regulations and public awareness increases, reducing similar incidents.\", \"probability\": 0.25, \"score\": 4}, {\"name\": \"B\", \"description\": \"Moderate enforcement and consumer education lead to partial reduction in unsafe products.\", \"probability\": 0.55, \"score\": 0}, {\"name\": \"C\", \"description\": \"Weak enforcement and continued market loopholes allow unsafe products to persist.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -0.85, \"final_score\": -1.14, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 7, \"justification\": \"Products sold with misleading labels containing undisclosed pharmaceuticals pose health risks and violate consumer rights.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"FDA testing and subsequent voluntary recalls of products containing undisclosed pharmaceutical ingredients, demonstrating regulatory enforcement against unsafe consumer products\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Sale and distribution of adulterated food products with undisclosed pharmaceuticals, posing health risks to consumers\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The FDA's regulatory action to enforce recalls of adulterated products is a clear positive step for consumer safety and public health, aligning with SDG 3. However, the underlying issue of unsafe products entering the market reflects a significant ethical failure, violating fundamental rights to health and safety.\", \"snapshot_score\": 5.0, \"trajectory_score\": 1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Sustained FDA enforcement actions\", \"Legislative changes to strengthen penalties\", \"Consumer education campaigns reducing demand\", \"Emergence of new adulterated products\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"FDA strengthens regulatory frameworks and consumer protections, leading to a sustained decline in adulterated products\", \"probability\": 0.35, \"score\": 7}, {\"name\": \"B\", \"description\": \"Regulatory gaps persist, with periodic outbreaks of adulterated products but no systemic improvement\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Regulatory enforcement weakens, leading to increased adulteration and public health crises\", \"probability\": 0.15, \"score\": -5}], \"prospective_score\": 2.45, \"final_score\": 3.36, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 9, \"justification\": \"Regulatory enforcement is positive but insufficient to offset systemic risks of adulterated products.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.47, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Recalls correct consumer harm by removing adulterated products; action aligns with protection.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (recalls) as protective, while Analyst B conflated systemic risks with the action itself. The recall is a clear BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-01T11:06:45.917053+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
