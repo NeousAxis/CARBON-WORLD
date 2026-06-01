@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-01T19:36:27.332987+00:00",
-  "total_events": 1924,
+  "generated_at": "2026-06-01T20:06:20.354100+00:00",
+  "total_events": 1926,
   "total_burned": 2827450870,
-  "total_minted": 2606987000,
-  "pending_reviews": 24,
+  "total_minted": 2607787000,
+  "pending_reviews": 25,
   "events": [
+    {
+      "id": 1926,
+      "event_title": "California makes controversial change to cap-and-invest program",
+      "event_url": "https://www.canarymedia.com/articles/emissions-reduction/california-controversial-cap-and-invest-program",
+      "event_source": "Canary Media",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.0,
+      "confidence": 8,
+      "justification": "Both analysts agree on MINT; Analyst A's justification is more precise about enabling harm. | The decision introduces a potential pathway for emissions reduction through investment, but risks enabling continued pollution by allowing industries to earn free allowances, which could weaken the integrity of the cap-and-invest system.",
+      "tx_hash": "3WcHiVYTnY6PxTVA5U5nkkSDuFdT4yxe9u9oYS3ZxzbbqujvhYfYiwLRXVy6fZYbqJdmpZy2LS7n9KcEGoPRnsb1",
+      "created_at": "2026-06-01T20:06:16.972425+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The decision includes a mechanism for industries to invest in decarbonization, potentially reducing emissions in the long term.\", \"affected_sdgs\": [13, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The approval of free emissions allowances for polluting industries could undermine climate action by enabling continued emissions under the guise of investment.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1925,
+      "event_title": "Former election clerk Tina Peters released after Trump pressure campaign",
+      "event_url": "https://www.aljazeera.com/news/2026/6/1/former-election-clerk-tina-peters-released-after-trump-pressure-campaign?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.17,
+      "confidence": 9,
+      "justification": "Political interference in judicial proceedings undermines rule of law and election integrity. | The judicial ruling in Colorado represents a strong positive action to protect electoral integrity and uphold the rule of law, directly supporting SDG 16 (Peace, Justice, and Strong Institutions). However, the external political pressure that led to Peters' release undermines democratic norms and public trust, violating fundamental rights to free and fair elections.",
+      "tx_hash": "28sXFPrdX1dzwicwFmJ4vhaPZ5vL8m3X8Vb2gBHFmzHnKZeYVrFtMoEUsfCJExKvuKF2GUxnpTuGm7K6CpFseR4P",
+      "created_at": "2026-06-01T20:06:16.841722+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Judicial system in Colorado upheld election integrity by sentencing Tina Peters to nine years in prison for allowing unauthorized access to voting machines, demonstrating enforcement of electoral security laws\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Former President Trump's pressure campaign contributed to the release of Tina Peters, undermining election security and public trust in democratic institutions\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1924,
       "event_title": "Brazil’s Government Agencies Purchase Thousands of Tons of Shark Meat for Public Institutions",
@@ -42338,8 +42382,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 67,
-        "total_amount": 196770000
+        "count": 69,
+        "total_amount": 197570000
       },
       {
         "country": "Israel",
@@ -42406,14 +42450,14 @@
         "events": 44
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.337,
-        "events": 101
-      },
-      {
         "region": "Europe",
         "burn_ratio": 0.333,
         "events": 102
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.33,
+        "events": 103
       }
     ],
     "top_regions_destructive": [
@@ -42428,14 +42472,14 @@
         "events": 21
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.67,
+        "events": 103
+      },
+      {
         "region": "Europe",
         "mint_ratio": 0.667,
         "events": 102
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.663,
-        "events": 101
       },
       {
         "region": "Asia",
@@ -42476,7 +42520,7 @@
       },
       {
         "date": "2026-06-01",
-        "net_minted": 109745000,
+        "net_minted": 110545000,
         "net_burned": 101700000
       }
     ],
@@ -42494,7 +42538,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 156,
-        "negative": 278,
+        "negative": 280,
         "event_ids_positive": [
           1920,
           1919,
@@ -42654,6 +42698,8 @@
           1348
         ],
         "event_ids_negative": [
+          1926,
+          1925,
           1924,
           1923,
           1922,
@@ -42936,7 +42982,7 @@
       },
       "UDHR": {
         "positive": 53,
-        "negative": 206,
+        "negative": 207,
         "event_ids_positive": [
           1919,
           1914,
@@ -42993,6 +43039,7 @@
           1357
         ],
         "event_ids_negative": [
+          1925,
           1923,
           1922,
           1916,
@@ -43463,7 +43510,7 @@
       },
       "PB": {
         "positive": 83,
-        "negative": 67,
+        "negative": 68,
         "event_ids_positive": [
           1908,
           1907,
@@ -43550,6 +43597,7 @@
           1353
         ],
         "event_ids_negative": [
+          1926,
           1924,
           1923,
           1892,
@@ -43621,14 +43669,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 53.5,
-      "mainstream_pct": 46.5,
+      "niche_pct": 52.7,
+      "mainstream_pct": 47.3,
       "total_sources_used": 129,
-      "articles_processed": 575
+      "articles_processed": 577
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 575,
+      "total_events": 577,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -43970,10 +44018,11 @@
       },
       {
         "name": "Finance",
-        "count": 38,
+        "count": 39,
         "burn_count": 9,
-        "mint_count": 29,
+        "mint_count": 30,
         "event_ids": [
+          1926,
           1922,
           1919,
           1914,
@@ -44173,10 +44222,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 386,
+      "total_mint": 388,
       "direct_action": {
-        "count": 257,
-        "pct": 66.6
+        "count": 259,
+        "pct": 66.8
       },
       "editorial_alarm": {
         "count": 21,
@@ -44184,28 +44233,28 @@
       },
       "untyped": {
         "count": 108,
-        "pct": 28.0
+        "pct": 27.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1293,
+      "total_mint": 1295,
       "direct_action": {
-        "count": 843,
-        "pct": 65.2
+        "count": 845,
+        "pct": 65.3
       },
       "editorial_alarm": {
         "count": 86,
-        "pct": 6.7
+        "pct": 6.6
       },
       "untyped": {
         "count": 364,
-        "pct": 28.2
+        "pct": 28.1
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 176,
-      "institutional": 399,
-      "citizen_ratio": 0.306,
+      "institutional": 401,
+      "citizen_ratio": 0.305,
       "daily": [
         {
           "date": "2026-05-26",
@@ -44240,7 +44289,7 @@
         {
           "date": "2026-06-01",
           "citizen": 14,
-          "institutional": 46
+          "institutional": 48
         }
       ],
       "event_ids_citizen": [
@@ -44422,6 +44471,8 @@
         1349
       ],
       "event_ids_institutional": [
+        1926,
+        1925,
         1923,
         1921,
         1920,
