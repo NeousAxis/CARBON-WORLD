@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01T12:36:17.788765+00:00",
-  "total_pending": 22,
+  "generated_at": "2026-06-01T13:06:28.861008+00:00",
+  "total_pending": 23,
   "reviews": [
     {
       "id": 444,
@@ -438,6 +438,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-01T12:36:13.524169+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 606,
+      "event_title": "Sweden's government announces proposed solution for teen deportations",
+      "event_url": "https://www.thelocal.se/20260601/swedens-government-announces-relief-measure-law-for-teen-deportations",
+      "event_source": "The Local Sweden (EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Sweden's government announces a proposed law to address and provide relief for teen deportations, aligning with child protection and human rights standards\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The proposed law represents a significant step toward protecting the rights of vulnerable minors, directly aligning with the UN Convention on the Rights of the Child and human rights frameworks. It addresses systemic injustices in deportation policies, offering a concrete solution to a pressing humanitarian issue.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Legislative passage and implementation timeline\", \"Public backlash or legal challenges delaying enforcement\", \"Impact assessment on deportation rates for minors within 2 years\", \"Political shifts altering enforcement priorities\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Law is swiftly passed and effectively implemented, drastically reducing teen deportations and setting a regional precedent for child protection\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Law passes but faces bureaucratic delays and partial implementation, reducing deportations but not eliminating the issue\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Law is watered down or blocked by political opposition, resulting in minimal impact on deportation practices\", \"probability\": 0.15, \"score\": 2}], \"prospective_score\": 6.55, \"final_score\": 7.24, \"decision\": \"BURN\", \"amount_cbwd\": 7000000, \"confidence\": 8, \"justification\": \"Government action to protect vulnerable minors from deportation aligns with child rights and human dignity.\", \"event_country\": \"Sweden\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Sweden's government proposes a relief measure law to address teen deportations, reducing harm to vulnerable youth and aligning with child protection standards\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}, {\"description\": \"Campaigners' efforts to turn the plight of teen deportees into a political issue led to a concrete policy response, demonstrating effective citizen advocacy\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The proposal is framed as a 'solution' but may still involve deportations for some teens, leaving potential for continued harm to a subset of vulnerable youth\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"CRC Article 3\", \"UDHR Article 14\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}], \"ethical_synthesis\": \"The government's proposal represents a significant step toward protecting vulnerable youth from deportation, aligning with child rights frameworks and reducing systemic harm. However, the measure may not fully eliminate deportations for all teens, leaving room for continued ethical concerns. The campaigners' role in driving this policy shift underscores the power of citizen advocacy in shaping protective legislation.\", \"snapshot_score\": 6.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Implementation details reveal exclusions or loopholes for certain teen groups\", \"Political opposition challenges the law's enforcement or scope\", \"New data shows persistent deportations despite the law\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The law is fully implemented with robust safeguards, reducing teen deportations by 90% and setting a regional precedent for child protection\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"The law is implemented but with significant loopholes, reducing deportations by 50% while leaving some teens vulnerable\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Political backlash leads to weakened enforcement, and deportations continue at near-previous levels\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.35, \"final_score\": 5.16, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Protects vulnerable youth but leaves potential for continued harm; net positive with room for improvement.\", \"event_country\": \"Sweden\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.15, \"confidence\": 9, \"amount_cbwd\": 7000000, \"justification\": \"Government action protects vulnerable minors from deportation, aligning with child rights and UN Convention.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action as protective of rights (BURN). Analyst B's NEUTRAL stance is overly cautious; the action punishes harm by preventing deportations, fulfilling ethical obligations.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 7000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-01T13:06:25.130239+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
