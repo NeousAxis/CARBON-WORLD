@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01T20:35:48.534309+00:00",
-  "total_pending": 23,
+  "generated_at": "2026-06-01T21:07:23.234375+00:00",
+  "total_pending": 24,
   "reviews": [
     {
       "id": 444,
@@ -458,6 +458,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-01T16:07:36.138525+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 615,
+      "event_title": "Hezbollah accepts U.S. proposal for mutual halt to attacks with Israel, Lebanese embassy says",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/hezbollah-accepts-us-proposal-mutual-halt-attacks-israel-lebanese-embassy-says",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Hezbollah accepts U.S. proposal for mutual halt to attacks with Israel\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The mutual cessation of hostilities between Hezbollah and Israel, as proposed by the U.S., represents a positive step toward reducing violence and promoting peace in the region. It aligns with SDG 16 (Peace, Justice, and Strong Institutions) and supports the broader goal of minimizing conflict-related harm.\", \"snapshot_score\": 6.0, \"trajectory_score\": 4.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of the mutual ceasefire\", \"Verification of compliance by both parties\", \"Response of regional actors to the agreement\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful implementation of the ceasefire leads to broader regional peace and normalization of relations.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Ceasefire holds but does not lead to lasting peace; tensions remain unresolved.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"Ceasefire collapses, leading to renewed conflict and increased regional instability.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.85, \"final_score\": 5.1, \"decision\": \"BURN\", \"amount_cbwd\": 1275000, \"confidence\": 7, \"justification\": \"Mutual ceasefire reduces violence and supports peace and justice.\", \"event_country\": \"Lebanon\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Hezbollah's acceptance of a U.S.-proposed mutual halt to attacks with Israel, reducing immediate violence and potential civilian harm in Lebanon and Israel\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Lebanese government's diplomatic engagement in facilitating the proposal, demonstrating regional conflict de-escalation efforts\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The proposal's reliance on a non-state actor (Hezbollah) and its acceptance of a temporary ceasefire rather than a permanent peace agreement, leaving structural tensions unresolved\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential for future violations or breakdown of the ceasefire, given historical precedents of such agreements in the region\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The acceptance of a mutual halt to attacks represents a significant reduction in immediate harm and civilian suffering, aligning with peace and justice goals. However, the temporary nature of the ceasefire and the involvement of a non-state actor introduce uncertainty about long-term stability. The net ethical judgment is cautiously positive, prioritizing the immediate reduction of violence over unresolved structural issues.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Sustained ceasefire beyond 6 months\", \"Renewal or expansion of the agreement to include other armed groups\", \"Breakdown of the ceasefire leading to renewed hostilities\", \"International mediation efforts to formalize a permanent peace agreement\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ceasefire holds and expands to include broader regional de-escalation, leading to long-term peace and reduced civilian harm\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Ceasefire holds temporarily but collapses within 12-18 months, leading to renewed violence and civilian casualties\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Ceasefire fails immediately or within weeks, triggering a larger regional conflict with significant civilian harm\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.1, \"final_score\": 4.1, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Temporary reduction in violence but uncertain long-term stability.\", \"event_country\": \"Lebanon\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.2, \"confidence\": 9, \"amount_cbwd\": 1275000, \"justification\": \"Mutual ceasefire reduces violence and protects civilian rights.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (U.S.-brokered ceasefire) as punishing harm by reducing violence. Analyst B's neutrality overlooked the action's protective intent.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement | llm: Polarity error: Ceasefire reduces violence but is not a corrective action against harm; it's a pause in conflict, not a BURN-positive event.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1275000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-01T21:07:18.745999+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
