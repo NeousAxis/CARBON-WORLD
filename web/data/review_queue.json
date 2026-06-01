@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01T15:36:24.007425+00:00",
-  "total_pending": 23,
+  "generated_at": "2026-06-01T16:07:40.751609+00:00",
+  "total_pending": 24,
   "reviews": [
     {
       "id": 444,
@@ -458,6 +458,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-01T15:36:20.040358+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 611,
+      "event_title": "Dutch government to help students with visas travel from Gaza",
+      "event_url": "https://www.dutchnews.nl/2026/06/dutch-government-to-help-students-with-visas-travel-from-gaza/",
+      "event_source": "DutchNews.nl",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The Dutch government is facilitating the safe travel of 47 Palestinian students from Gaza with work or study visas.\", \"affected_sdgs\": [10, 4, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The situation in Gaza remains highly volatile, and the logistics of extracting individuals from a conflict zone carry inherent risks.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The Dutch government's action supports educational access and international mobility for vulnerable individuals, aligning with SDG 4 and UDHR protections. However, the ongoing conflict in Gaza introduces risks and limitations to the effectiveness of this humanitarian effort.\", \"snapshot_score\": 5.0, \"trajectory_score\": 3.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Successful safe arrival of all students in the Netherlands\", \"Escalation or de-escalation of conflict in Gaza\", \"Implementation of long-term educational support for the students\"], \"revaluation_checkpoint\": \"2028-06-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The students successfully integrate into Dutch academic and professional systems, contributing to international cooperation and peacebuilding.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"The students arrive safely but face integration challenges, with limited long-term impact on their educational or career outcomes.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"The conflict in Gaza escalates, leading to further humanitarian crises and limiting the effectiveness of such individual interventions.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.8, \"final_score\": 4.4, \"decision\": \"BURN\", \"amount_cbwd\": 120000, \"confidence\": 7, \"justification\": \"Supporting educational access and safe travel for vulnerable individuals aligns with positive ethical frameworks.\", \"event_country\": \"Netherlands\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Dutch government commits to assisting 47 Palestinian students with visas to travel from Gaza, enabling access to education and work opportunities abroad\", \"affected_sdgs\": [1, 4, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The Dutch government's action directly upholds the right to education and work for vulnerable students, aligning with multiple SDGs and human rights frameworks. While the scale is limited to 47 individuals, the symbolic and practical support for displaced students represents a significant ethical commitment to humanitarian and educational equity.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Number of students successfully relocated exceeds 40\", \"Dutch policy becomes a model for other EU states\", \"Funding or logistical challenges arise\", \"Political backlash or legal challenges delay implementation\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Dutch initiative succeeds, becomes a blueprint for EU-wide student relocation programs, and inspires similar policies globally\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate success with some delays and logistical hurdles, but the program continues and expands to other conflict zones\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Program faces significant political or legal obstacles, fails to relocate most students, and is abandoned within two years\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 5.7, \"final_score\": 6.8, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Government action enabling education access for displaced students is a clear ethical win.\", \"event_country\": \"Netherlands\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.97, \"confidence\": 9, \"amount_cbwd\": 120000, \"justification\": \"Both analysts agree on BURN; consensus on ethical alignment with rights protection.\", \"disagreement\": false, \"reason\": \"Unanimous agreement on institutional action that supports educational access and mobility for vulnerable individuals, aligning with ethical frameworks.\"}",
+      "sentinel_concern": "structural: fragile_burn_threshold",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 120000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-01T16:07:36.138525+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
