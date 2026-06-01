@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-01T21:36:35.971638+00:00",
-  "total_events": 1935,
+  "generated_at": "2026-06-01T22:05:46.772519+00:00",
+  "total_events": 1937,
   "total_burned": 2857450870,
-  "total_minted": 2624037000,
-  "pending_reviews": 24,
+  "total_minted": 2629187000,
+  "pending_reviews": 25,
   "events": [
+    {
+      "id": 1937,
+      "event_title": "European Union paves the way for migrant return centers outside its borders",
+      "event_url": "https://www.lemonde.fr/international/article/2026/06/01/l-union-europeenne-ouvre-la-voie-a-des-centres-de-retour-de-migrants-en-dehors-de-ses-frontieres_6696025_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.94,
+      "confidence": 9,
+      "justification": "EU policy enables systemic rights violations by externalizing asylum responsibilities. | The EU's legislation to create migrant return centers outside its borders directly undermines the right to asylum and exposes vulnerable populations to arbitrary detention and deportation. This action violates core human rights frameworks and risks severe humanitarian consequences, outweighing any potential administrative efficiency gains.",
+      "tx_hash": "52GrvL2hdZjRqAMgKRxsLzxgX1gieouqnoj9SuevkQjpgVZpNzB6H9np6Sj4MyoHe1YHfF7V7woWBby52yTghCqe",
+      "created_at": "2026-06-01T22:05:42.494664+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"EU legislation enabling the establishment of migrant return centers outside its borders, facilitating accelerated expulsions of asylum-seekers denied protection\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14 (Right to Asylum)\", \"UDHR Article 9 (Freedom from Arbitrary Detention)\", \"CRC Article 22 (Protection of Refugee Children)\", \"UNDRIP (Indigenous Rights, if centers affect indigenous lands)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1936,
+      "event_title": "STAT+: Eli Lilly warns hospitals to submit claims data in the next five days or lose their 340B drug discounts",
+      "event_url": "https://www.statnews.com/pharmalot/2026/06/01/lilly-warns-hospitals-submit-claims-data-or-lose-340b-drug-discounts/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.14,
+      "confidence": 7,
+      "justification": "Enforcement action risks harming healthcare access despite program integrity goals. | While Eli Lilly's enforcement of the 340B program aims to ensure compliance and transparency, the short deadline and potential loss of drug discounts for non-compliant hospitals risk undermining healthcare access for low-income patients. The action balances program integrity with the risk of unintended harm to vulnerable populations.",
+      "tx_hash": "FUc2v1DRk6mYbunm4Maf2tHaEpJvaBQfoq92RR8y1n2Vszc1awewVQfEMWJYu97XnpmoNzHJXj8Fd3CUD1xwkCU",
+      "created_at": "2026-06-01T22:05:42.371119+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Eli Lilly's enforcement of 340B drug discount program compliance ensures hospitals submit claims data, maintaining transparency and accountability in the program designed to provide discounted drugs to eligible healthcare providers serving low-income patients.\", \"affected_sdgs\": [3], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The ultimatum to hospitals to submit claims data within five days or lose critical drug discounts may create operational strain, reduce access to affordable medications for vulnerable patients, and disproportionately impact smaller or resource-limited hospitals.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1935,
       "event_title": "EU negotiators agree new migrant return law",
@@ -42580,8 +42624,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 70,
-        "total_amount": 198320000
+        "count": 71,
+        "total_amount": 198470000
       },
       {
         "country": "Israel",
@@ -42654,8 +42698,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.327,
-        "events": 104
+        "burn_ratio": 0.324,
+        "events": 105
       }
     ],
     "top_regions_destructive": [
@@ -42671,8 +42715,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.673,
-        "events": 104
+        "mint_ratio": 0.676,
+        "events": 105
       },
       {
         "region": "Europe",
@@ -42718,7 +42762,7 @@
       },
       {
         "date": "2026-06-01",
-        "net_minted": 125295000,
+        "net_minted": 130445000,
         "net_burned": 126700000
       }
     ],
@@ -42736,7 +42780,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 160,
-        "negative": 281,
+        "negative": 283,
         "event_ids_positive": [
           1933,
           1932,
@@ -42900,6 +42944,8 @@
           1348
         ],
         "event_ids_negative": [
+          1937,
+          1936,
           1935,
           1934,
           1930,
@@ -43185,7 +43231,7 @@
       },
       "UDHR": {
         "positive": 54,
-        "negative": 207,
+        "negative": 209,
         "event_ids_positive": [
           1933,
           1919,
@@ -43243,6 +43289,8 @@
           1357
         ],
         "event_ids_negative": [
+          1937,
+          1936,
           1935,
           1934,
           1925,
@@ -43472,7 +43520,7 @@
       },
       "CRC": {
         "positive": 7,
-        "negative": 54,
+        "negative": 55,
         "event_ids_positive": [
           1874,
           1667,
@@ -43483,6 +43531,7 @@
           1357
         ],
         "event_ids_negative": [
+          1937,
           1935,
           1934,
           1910,
@@ -43541,7 +43590,7 @@
       },
       "UNDRIP": {
         "positive": 29,
-        "negative": 52,
+        "negative": 53,
         "event_ids_positive": [
           1918,
           1914,
@@ -43574,6 +43623,7 @@
           1349
         ],
         "event_ids_negative": [
+          1937,
           1935,
           1934,
           1916,
@@ -43884,21 +43934,22 @@
       "niche_pct": 51.2,
       "mainstream_pct": 48.8,
       "total_sources_used": 129,
-      "articles_processed": 581
+      "articles_processed": 583
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 581,
+      "total_events": 583,
       "pct": 1.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 25,
+        "count": 26,
         "burn_count": 7,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          1937,
           1935,
           1934,
           1900,
@@ -44441,10 +44492,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 388,
+      "total_mint": 390,
       "direct_action": {
-        "count": 260,
-        "pct": 67.0
+        "count": 262,
+        "pct": 67.2
       },
       "editorial_alarm": {
         "count": 21,
@@ -44452,14 +44503,14 @@
       },
       "untyped": {
         "count": 107,
-        "pct": 27.6
+        "pct": 27.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1298,
+      "total_mint": 1300,
       "direct_action": {
-        "count": 848,
-        "pct": 65.3
+        "count": 850,
+        "pct": 65.4
       },
       "editorial_alarm": {
         "count": 86,
@@ -44472,8 +44523,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 177,
-      "institutional": 404,
-      "citizen_ratio": 0.305,
+      "institutional": 406,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-26",
@@ -44508,7 +44559,7 @@
         {
           "date": "2026-06-01",
           "citizen": 15,
-          "institutional": 54
+          "institutional": 56
         }
       ],
       "event_ids_citizen": [
@@ -44691,6 +44742,8 @@
         1349
       ],
       "event_ids_institutional": [
+        1937,
+        1936,
         1935,
         1933,
         1932,
