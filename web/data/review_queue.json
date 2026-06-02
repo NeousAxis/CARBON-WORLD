@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T23:05:06.153606+00:00",
-  "total_pending": 27,
+  "generated_at": "2026-06-02T23:34:32.466675+00:00",
+  "total_pending": 28,
   "reviews": [
     {
       "id": 444,
@@ -538,6 +538,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T20:36:02.683640+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 648,
+      "event_title": "PNM seeks approval for 240MW solar and 610MW storage in New Mexico resource plan",
+      "event_url": "https://www.pv-tech.org/pnm-seeks-approval-for-240mw-solar-and-610mw-storage-in-new-mexico-resource-plan/",
+      "event_source": "PV Tech (Solar)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Public Service Company of New Mexico (PNM) files a resource plan seeking approval for 240MW of solar energy and 610MW of energy storage capacity, significantly increasing renewable energy and grid resilience in New Mexico.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"PNM's resource plan represents a substantial commitment to renewable energy and storage, directly advancing SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action). The plan also supports SDG 11 (Sustainable Cities and Communities) by enhancing grid reliability. No significant negative ethical aspects are identified in this action.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Regulatory approval or denial by NMPRC\", \"Completion of 25% of planned capacity within 24 months\", \"Emergence of significant technical or economic barriers\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Full approval and rapid deployment of solar and storage capacity, accelerating New Mexico's transition to 100% clean energy by 2045.\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial approval with delays, but steady progress toward renewable energy targets.\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Regulatory rejection or major setbacks due to cost or technical challenges, stalling progress.\", \"probability\": 0.15, \"score\": -3}], \"prospective_score\": 6.15, \"final_score\": 7.06, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Major renewable energy expansion with strong climate and energy SDG alignment.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Public Service Company of New Mexico (PNM) seeks approval for 240MW of solar and 610MW of energy storage, significantly increasing renewable capacity and grid resilience in New Mexico.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The plan includes a substantial shift toward clean energy infrastructure, reducing reliance on fossil fuels and aligning with state and federal climate goals.\", \"affected_sdgs\": [7, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The plan still includes 840MW of unspecified new generation capacity, which may include fossil fuel-based sources, potentially undermining the overall climate benefits.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Approval process may face delays or modifications that could dilute the renewable energy commitments, depending on regulatory outcomes.\", \"affected_sdgs\": [], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"PNM's proposal to expand solar and storage capacity is a significant step toward decarbonization and aligns with SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action). However, the inclusion of unspecified new generation capacity introduces uncertainty about the full transition to renewables. The net ethical position is positive but tempered by potential fossil fuel dependencies.\", \"snapshot_score\": 6.5, \"trajectory_score\": 7.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Regulatory approval of the full 1.69GW capacity without fossil fuel components\", \"Implementation delays or reductions in renewable commitments\", \"Addition of fossil fuel-based generation in the unspecified 840MW capacity\", \"State or federal policy changes incentivizing or mandating 100% renewable energy\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Full approval of the plan with 100% renewable energy capacity, accelerating New Mexico's transition to clean energy and setting a regional precedent.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial approval with some fossil fuel components retained, but significant renewable expansion still achieved, reducing emissions moderately.\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Approval delayed or denied, with fossil fuel-heavy alternatives pursued, leading to stagnation in renewable energy progress.\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 4.75, \"final_score\": 5.81, \"decision\": \"BURN\", \"amount_cbwd\": 750000, \"confidence\": 8, \"justification\": \"Major renewable energy expansion with potential for full decarbonization, outweighing minor uncertainties.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.43, \"confidence\": 8, \"amount_cbwd\": 5000000, \"justification\": \"Major renewable energy expansion with strong climate and energy SDG alignment.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-02T23:34:28.118198+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
