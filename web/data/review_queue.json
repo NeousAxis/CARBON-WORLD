@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T05:35:22.797190+00:00",
-  "total_pending": 25,
+  "generated_at": "2026-06-02T06:04:45.537504+00:00",
+  "total_pending": 26,
   "reviews": [
     {
       "id": 444,
@@ -498,6 +498,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T00:35:31.365792+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 627,
+      "event_title": "Abuse Network: How Epstein Trapped Women in Europe",
+      "event_url": "https://www.tagesschau.de/investigativ/ndr-wdr/epstein-missbrauch-modellbranche-europa-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Exposure of a criminal network that exploited women through the modeling industry\", \"affected_sdgs\": [5, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Systematic sexual abuse and exploitation of at least 19 European women by Jeffrey Epstein\", \"affected_sdgs\": [5, 16], \"violated_rights\": [\"UDHR Article 2, 3, 5, 16\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Use of the modeling industry as a recruitment tool for underage and vulnerable women\", \"affected_sdgs\": [5, 16], \"violated_rights\": [\"CRC Article 19, 34\", \"UDHR Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}], \"ethical_synthesis\": \"The article reveals a deeply unethical and criminal system of sexual exploitation facilitated by Jeffrey Epstein through the modeling industry. While the exposure of this network is a positive step toward justice and accountability, the harm inflicted on the victims is severe and violates multiple human rights and SDGs.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Legal proceedings against remaining accomplices\", \"Support and compensation for victims\", \"Reforms in the modeling industry to prevent exploitation\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Legal accountability for all accomplices and systemic reforms in the modeling industry\", \"probability\": 0.2, \"score\": 4}, {\"name\": \"B\", \"description\": \"Partial legal accountability and limited reforms, with ongoing risks of exploitation\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"No legal accountability and continued exploitation in the modeling industry\", \"probability\": 0.3, \"score\": -8}], \"prospective_score\": -3.8, \"final_score\": -4.8, \"decision\": \"MINT\", \"amount_cbwd\": 1200000, \"confidence\": 8, \"justification\": \"Exposure of a criminal network exploiting women through the modeling industry\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Investigative journalism by NDR, WDR, and SZ exposes systemic abuse facilitated by the modeling industry in Europe, raising public awareness and potential accountability\", \"affected_sdgs\": [5, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Systematic exploitation of vulnerable women in the European modeling industry by Jeffrey Epstein, enabled by industry practices and lack of oversight\", \"affected_sdgs\": [5, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 34\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The investigative reporting constitutes a positive act of consciousness-raising and potential justice by exposing systemic abuse, aligning with SDG 5 (Gender Equality) and SDG 16 (Peace & Justice). However, the underlying event—systematic exploitation of women in the modeling industry—represents a severe violation of human rights and child protection norms, with profound ethical and legal implications.\", \"snapshot_score\": -8.5, \"trajectory_score\": -7.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Adoption of EU-wide modeling industry regulations\", \"Conviction of industry facilitators\", \"Implementation of survivor support programs\", \"Public backlash leading to industry reforms\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"EU enacts strict modeling industry regulations, survivor support programs are established, and industry practices are reformed within 5 years\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate reforms are implemented, but systemic exploitation continues in unregulated markets\", \"probability\": 0.5, \"score\": -3}, {\"name\": \"C\", \"description\": \"No meaningful reforms occur; exploitation persists or worsens due to lack of enforcement\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -2.1, \"final_score\": -5.325, \"decision\": \"MINT\", \"amount_cbwd\": 1000000, \"confidence\": 9, \"justification\": \"Exposure of systemic abuse outweighs journalism's positive impact due to severity of violations.\", \"event_country\": \"Germany\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.52, \"confidence\": 8, \"amount_cbwd\": 1200000, \"justification\": \"Exposure of a criminal network exploiting women through the modeling industry\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Verdict polarity error: exposing a criminal sexual abuse network is a positive human‑rights impact and should be BURN, but decision is MINT; justification praises exposure yet decision is negative.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1200000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-02T06:04:42.055183+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
