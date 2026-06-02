@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-02T20:06:23.544574+00:00",
-  "total_events": 2042,
-  "total_burned": 3048450870,
-  "total_minted": 2795082000,
-  "pending_reviews": 26,
+  "generated_at": "2026-06-02T20:36:06.812534+00:00",
+  "total_events": 2044,
+  "total_burned": 3049950870,
+  "total_minted": 2800082000,
+  "pending_reviews": 27,
   "events": [
+    {
+      "id": 2044,
+      "event_title": "IAEA Denounces Targeted Attack on Nuclear Plant in UAE",
+      "event_url": "https://www.ouest-france.fr/monde/emirats-arabes-unis/laiea-denonce-lattaque-ciblee-contre-une-centrale-nucleaire-aux-emirats-arabes-unis-03e279fb-0f87-414f-93ef-db9cb51f12d0?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -4.75,
+      "confidence": 9,
+      "justification": "Attack on nuclear plant violates safety and human rights; IAEA denunciation insufficient to offset existential risks. | The IAEA's denunciation of the attack serves as a critical consciousness-raising act about nuclear safety, aligning with SDG 7 (clean energy) and SDG 16 (peace and justice). However, the underlying attack itself represents a severe violation of human rights and planetary boundaries, posing existential risks to health, safety, and the environment.",
+      "tx_hash": "4dH8DgwYmihYxD8vbVBBzK3kT9acq3GkFR2diHhbgacxzFJ71rMtJKjUoHDXD3nhpyjshyvHaGp4j7Ho3WKyGS65",
+      "created_at": "2026-06-02T20:36:02.806653+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Arab Emirates",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"IAEA publicly denounces a targeted attack on a nuclear plant, raising global awareness of nuclear safety risks and potential catastrophic consequences\", \"affected_sdgs\": [7, 11, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Targeted attack on a nuclear plant risks catastrophic safety failure, environmental contamination, and loss of life\", \"affected_sdgs\": [3, 7, 11, 13, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2043,
+      "event_title": "Two good news about visitation to Brazilian national parks",
+      "event_url": "https://oeco.org.br/colunas/duas-boas-noticias-sobre-visitacao-a-parques-nacionais-brasileiros/",
+      "event_source": "O Eco (Brazil env)",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 6.56,
+      "confidence": 8,
+      "justification": "Record visitation and reduced concentration in top parks signal strong public support for conservation. | The increase in national park visitation reflects heightened public awareness and engagement with biodiversity conservation, aligning with SDGs 11, 13, and 15. The more even distribution of visitors reduces ecological pressure on overvisited sites, further supporting planetary boundaries for biodiversity and land-system change.",
+      "tx_hash": "m2qFHJZdUyfFoNVuEuyZiaWiKE2qteEzjLftcYEifswAqnju4wLPCQtcK1fhAYXNfUjmYZxbXFdDAWeyMpEJzAX",
+      "created_at": "2026-06-02T20:36:02.689181+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Visitation to Brazilian national parks increased by 8.3% to a record 13.6 million, indicating growing public engagement with protected natural areas and potential support for conservation efforts.\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}, {\"description\": \"Concentration of visits in the top 5 parks reached the lowest historical level, suggesting a more even distribution of visitors across parks and reduced pressure on overvisited sites.\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 2042,
       "event_title": "A lot of ‘recycled’ plastic is being burned overseas – and causing widespread pollution linked to health problems",
@@ -44966,8 +45010,8 @@
       },
       {
         "country": "Brazil",
-        "count": 14,
-        "total_amount": 80500000
+        "count": 15,
+        "total_amount": 82000000
       },
       {
         "country": "France",
@@ -44987,14 +45031,14 @@
     ],
     "top_regions_sustainable": [
       {
+        "region": "Latin America",
+        "burn_ratio": 0.526,
+        "events": 38
+      },
+      {
         "region": "Oceania",
         "burn_ratio": 0.522,
         "events": 23
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.514,
-        "events": 37
       },
       {
         "region": "Africa",
@@ -45072,8 +45116,8 @@
       },
       {
         "date": "2026-06-02",
-        "net_minted": 141450000,
-        "net_burned": 148000000
+        "net_minted": 146450000,
+        "net_burned": 149500000
       }
     ],
     "event_of_the_day": {
@@ -45089,9 +45133,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 162,
-        "negative": 293,
+        "positive": 163,
+        "negative": 294,
         "event_ids_positive": [
+          2043,
           2036,
           2034,
           2033,
@@ -45256,6 +45301,7 @@
           1431
         ],
         "event_ids_negative": [
+          2044,
           2042,
           2041,
           2040,
@@ -45553,7 +45599,7 @@
       },
       "UDHR": {
         "positive": 61,
-        "negative": 219,
+        "negative": 220,
         "event_ids_positive": [
           2036,
           2033,
@@ -45618,6 +45664,7 @@
           1431
         ],
         "event_ids_negative": [
+          2044,
           2042,
           2041,
           2040,
@@ -45937,9 +45984,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 29,
+        "positive": 30,
         "negative": 53,
         "event_ids_positive": [
+          2043,
           2025,
           2004,
           1988,
@@ -46118,9 +46166,10 @@
         ]
       },
       "PB": {
-        "positive": 81,
-        "negative": 71,
+        "positive": 82,
+        "negative": 72,
         "event_ids_positive": [
+          2043,
           2012,
           2011,
           2010,
@@ -46204,6 +46253,7 @@
           1432
         ],
         "event_ids_negative": [
+          2044,
           2042,
           2026,
           2002,
@@ -46282,11 +46332,11 @@
       "niche_pct": 51.6,
       "mainstream_pct": 48.4,
       "total_sources_used": 126,
-      "articles_processed": 596
+      "articles_processed": 598
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 596,
+      "total_events": 598,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -46424,10 +46474,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 83,
+        "count": 84,
         "burn_count": 41,
-        "mint_count": 42,
+        "mint_count": 43,
         "event_ids": [
+          2044,
           2026,
           2012,
           2011,
@@ -46820,10 +46871,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 197,
+      "total_burn": 198,
       "direct_action": {
-        "count": 149,
-        "pct": 75.6
+        "count": 150,
+        "pct": 75.8
       },
       "editorial_consciousness": {
         "count": 13,
@@ -46831,14 +46882,14 @@
       },
       "untyped": {
         "count": 35,
-        "pct": 17.8
+        "pct": 17.7
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 652,
+      "total_burn": 653,
       "direct_action": {
-        "count": 443,
-        "pct": 67.9
+        "count": 444,
+        "pct": 68.0
       },
       "editorial_consciousness": {
         "count": 38,
@@ -46850,24 +46901,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 399,
+      "total_mint": 400,
       "direct_action": {
-        "count": 268,
+        "count": 269,
         "pct": 67.2
       },
       "editorial_alarm": {
         "count": 25,
-        "pct": 6.3
+        "pct": 6.2
       },
       "untyped": {
         "count": 106,
-        "pct": 26.6
+        "pct": 26.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1358,
+      "total_mint": 1359,
       "direct_action": {
-        "count": 891,
+        "count": 892,
         "pct": 65.6
       },
       "editorial_alarm": {
@@ -46881,8 +46932,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 183,
-      "institutional": 413,
-      "citizen_ratio": 0.307,
+      "institutional": 415,
+      "citizen_ratio": 0.306,
       "daily": [
         {
           "date": "2026-05-27",
@@ -46917,7 +46968,7 @@
         {
           "date": "2026-06-02",
           "citizen": 32,
-          "institutional": 43
+          "institutional": 45
         }
       ],
       "event_ids_citizen": [
@@ -47106,6 +47157,8 @@
         1424
       ],
       "event_ids_institutional": [
+        2044,
+        2043,
         2042,
         2041,
         2032,
