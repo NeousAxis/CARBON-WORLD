@@ -1,10 +1,98 @@
 {
-  "generated_at": "2026-06-02T12:05:04.320963+00:00",
-  "total_events": 1992,
+  "generated_at": "2026-06-02T12:36:49.133559+00:00",
+  "total_events": 1996,
   "total_burned": 2954950870,
-  "total_minted": 2694907000,
-  "pending_reviews": 27,
+  "total_minted": 2696707000,
+  "pending_reviews": 26,
   "events": [
+    {
+      "id": 1996,
+      "event_title": "Swedish government announces stricter requirements for family immigration",
+      "event_url": "https://www.thelocal.se/20260602/swedish-government-announces-stricter-requirements-for-family-immigration",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 200000,
+      "final_score": -1.54,
+      "confidence": 9,
+      "justification": "Both analysts agree on direction; consensus on rights violations outweighing minor benefits. | The proposed stricter family immigration requirements may reduce public resource strain but risk undermining fundamental human rights and social cohesion.",
+      "tx_hash": "4dp8M44inmPZZUoqxm45himu9zvt1VJV5pzgCoJP2mDmuTUrhiKwBYQVn2EbgVau72RC7WTJkVJMcJUaHH7xw8Le",
+      "created_at": "2026-06-02T12:36:44.711764+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Potential reduction in strain on public resources and integration systems.\", \"affected_sdgs\": [10, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Restricting family reunification may violate the right to family life and social inclusion.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 16\", \"UDHR Article 23\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1995,
+      "event_title": "Spain stands firm as only EU country to oppose new deportation centre deal",
+      "event_url": "https://www.thelocal.es/20260602/eu-reaches-deal-on-return-hubs-migration-reform-that-spain-opposes",
+      "event_source": "The Local Spain (EN)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -0.86,
+      "confidence": 9,
+      "justification": "EU's institutional action enables systemic harm by facilitating deportation hubs, despite Spain's principled opposition. | Spain's stance aligns with human rights and refugee protections by opposing a policy that risks enabling mass deportations and undermining international law. However, the EU's adoption of the deal represents a significant step backward, prioritizing restrictive migration policies over the rights and dignity of vulnerable populations.",
+      "tx_hash": "aThPdF71Fgd8AsDxHSezSzbGvvX2bu3tHDnyRAU4xGAVd6rPfUqXRhLAmAyLY4tmb4jHzPpTS2c9cHzDsRZzzt7",
+      "created_at": "2026-06-02T12:36:44.583497+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Spain's opposition to the EU's deportation centre deal, resisting measures that could enable mass deportations and undermine human rights protections\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"EU's adoption of a deal allowing 'return hubs' outside the bloc to facilitate deportations, potentially violating human rights and refugee protections\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"CRC Article 22\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1994,
+      "event_title": "Emergency room wait times have increased by nearly an hour in ten years",
+      "event_url": "http://www.lequotidiendumedecin.fr/hopital/urgences/la-duree-de-passage-aux-urgences-bondi-de-pres-dune-heure-en-dix-ans",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Systemic healthcare degradation violates UDHR Article 25 and SDG 3, warranting MINT.",
+      "tx_hash": null,
+      "created_at": "2026-06-02T12:17:07.243345+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
+    {
+      "id": 1993,
+      "event_title": "Persistent illegal dumping denounced in Arroyomolinos",
+      "event_url": "https://www.ecologistasenaccion.org/370601/denuncian-vertido-ilegal-persistente-en-arroyomolinos/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Denunciation is positive but overshadowed by persistent environmental harm requiring urgent action.",
+      "tx_hash": null,
+      "created_at": "2026-06-02T12:17:01.741484+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1992,
       "event_title": "New E-Library Expands Access to Global Coffee Agroforestry Research",
@@ -43848,21 +43936,21 @@
         "total_amount": 13115000
       },
       {
+        "country": "European Union",
+        "count": 10,
+        "total_amount": 42700000
+      },
+      {
         "country": "Australia",
         "count": 10,
         "total_amount": 6050000
-      },
-      {
-        "country": "Brazil",
-        "count": 9,
-        "total_amount": 38050000
       }
     ],
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 33,
-        "total_amount": 164200000
+        "count": 31,
+        "total_amount": 152200000
       },
       {
         "country": "Brazil",
@@ -43903,20 +43991,20 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.333,
-        "events": 108
+        "burn_ratio": 0.321,
+        "events": 106
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.321,
-        "events": 106
+        "burn_ratio": 0.318,
+        "events": 107
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 36
+        "events": 35
       },
       {
         "region": "Africa",
@@ -43925,13 +44013,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.679,
-        "events": 106
+        "mint_ratio": 0.682,
+        "events": 107
       },
       {
         "region": "North America",
-        "mint_ratio": 0.667,
-        "events": 108
+        "mint_ratio": 0.679,
+        "events": 106
       },
       {
         "region": "Asia",
@@ -43972,7 +44060,7 @@
       },
       {
         "date": "2026-06-02",
-        "net_minted": 49600000,
+        "net_minted": 50500000,
         "net_burned": 78500000
       }
     ],
@@ -43989,8 +44077,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 164,
-        "negative": 288,
+        "positive": 161,
+        "negative": 289,
         "event_ids_positive": [
           1992,
           1991,
@@ -44152,12 +44240,11 @@
           1387,
           1386,
           1385,
-          1384,
-          1383,
-          1382,
-          1381
+          1384
         ],
         "event_ids_negative": [
+          1996,
+          1995,
           1990,
           1989,
           1987,
@@ -44444,13 +44531,12 @@
           1398,
           1391,
           1390,
-          1389,
-          1379
+          1389
         ]
       },
       "UDHR": {
         "positive": 58,
-        "negative": 212,
+        "negative": 213,
         "event_ids_positive": [
           1986,
           1978,
@@ -44512,6 +44598,8 @@
           1385
         ],
         "event_ids_negative": [
+          1996,
+          1995,
           1990,
           1989,
           1987,
@@ -44722,8 +44810,7 @@
           1398,
           1391,
           1390,
-          1389,
-          1379
+          1389
         ]
       },
       "ILO": {
@@ -44757,6 +44844,7 @@
           1518
         ],
         "event_ids_negative": [
+          1995,
           1989,
           1981,
           1970,
@@ -44808,8 +44896,7 @@
           1441,
           1433,
           1406,
-          1389,
-          1379
+          1389
         ]
       },
       "UNDRIP": {
@@ -44904,7 +44991,7 @@
         ]
       },
       "Animal": {
-        "positive": 56,
+        "positive": 54,
         "negative": 27,
         "event_ids_positive": [
           1963,
@@ -44960,9 +45047,7 @@
           1451,
           1442,
           1437,
-          1432,
-          1383,
-          1382
+          1432
         ],
         "event_ids_negative": [
           1987,
@@ -44995,7 +45080,7 @@
         ]
       },
       "PB": {
-        "positive": 85,
+        "positive": 84,
         "negative": 72,
         "event_ids_positive": [
           1978,
@@ -45081,8 +45166,7 @@
           1392,
           1387,
           1386,
-          1384,
-          1382
+          1384
         ],
         "event_ids_negative": [
           1987,
@@ -45164,21 +45248,22 @@
       "niche_pct": 50.0,
       "mainstream_pct": 50.0,
       "total_sources_used": 128,
-      "articles_processed": 602
+      "articles_processed": 599
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 602,
+      "total_events": 599,
       "pct": 0.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 30,
+        "count": 31,
         "burn_count": 7,
-        "mint_count": 23,
+        "mint_count": 24,
         "event_ids": [
+          1995,
           1955,
           1947,
           1941,
@@ -45655,8 +45740,8 @@
       },
       {
         "name": "Transport",
-        "count": 21,
-        "burn_count": 6,
+        "count": 19,
+        "burn_count": 4,
         "mint_count": 15,
         "event_ids": [
           1968,
@@ -45677,9 +45762,7 @@
           1459,
           1448,
           1439,
-          1416,
-          1383,
-          1382
+          1416
         ]
       },
       {
@@ -45710,18 +45793,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 202,
+      "total_burn": 199,
       "direct_action": {
-        "count": 151,
-        "pct": 74.8
+        "count": 148,
+        "pct": 74.4
       },
       "editorial_consciousness": {
         "count": 13,
-        "pct": 6.4
+        "pct": 6.5
       },
       "untyped": {
         "count": 38,
-        "pct": 18.8
+        "pct": 19.1
       }
     },
     "burn_composition_all_time": {
@@ -45742,23 +45825,23 @@
     "mint_composition_7d": {
       "total_mint": 400,
       "direct_action": {
-        "count": 266,
-        "pct": 66.5
+        "count": 267,
+        "pct": 66.8
       },
       "editorial_alarm": {
         "count": 22,
         "pct": 5.5
       },
       "untyped": {
-        "count": 112,
-        "pct": 28.0
+        "count": 111,
+        "pct": 27.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1335,
+      "total_mint": 1337,
       "direct_action": {
-        "count": 872,
-        "pct": 65.3
+        "count": 874,
+        "pct": 65.4
       },
       "editorial_alarm": {
         "count": 88,
@@ -45766,12 +45849,12 @@
       },
       "untyped": {
         "count": 375,
-        "pct": 28.1
+        "pct": 28.0
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 188,
-      "institutional": 414,
+      "citizen": 187,
+      "institutional": 412,
       "citizen_ratio": 0.312,
       "daily": [
         {
@@ -45807,7 +45890,7 @@
         {
           "date": "2026-06-02",
           "citizen": 18,
-          "institutional": 19
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -45997,10 +46080,11 @@
         1394,
         1392,
         1388,
-        1386,
-        1379
+        1386
       ],
       "event_ids_institutional": [
+        1996,
+        1995,
         1992,
         1991,
         1989,
@@ -46410,11 +46494,7 @@
         1389,
         1387,
         1385,
-        1384,
-        1383,
-        1382,
-        1381,
-        1380
+        1384
       ]
     }
   }
