@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T11:07:12.753223+00:00",
-  "total_pending": 25,
+  "generated_at": "2026-06-02T11:36:31.922127+00:00",
+  "total_pending": 26,
   "reviews": [
     {
       "id": 444,
@@ -498,6 +498,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T00:35:31.365792+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 633,
+      "event_title": "Persistent illegal dumping denounced in Arroyomolinos",
+      "event_url": "https://www.ecologistasenaccion.org/370601/denuncian-vertido-ilegal-persistente-en-arroyomolinos/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Environmental NGO (Ecologistas en Acción) publicly denounces persistent illegal dumping in Arroyomolinos, demanding prevention measures to protect natural heritage and public funds\", \"affected_sdgs\": [11, 12, 13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Persistent illegal dumping in Arroyomolinos causing ongoing damage to natural heritage and public funds\", \"affected_sdgs\": [11, 12, 13, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The denunciation by Ecologistas en Acción represents a positive act of environmental protection and public accountability, aligning with SDGs 11, 12, 13, and 15. However, the underlying issue of persistent illegal dumping itself constitutes a significant environmental harm, undermining biodiversity and public resources.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of prevention measures by local authorities\", \"Legal action against dumping perpetrators\", \"Public awareness campaigns reducing illegal dumping incidents\", \"Government funding allocated to cleanup and monitoring\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Local authorities implement robust prevention measures, legal action succeeds, and public awareness reduces dumping incidents significantly\", \"probability\": 0.3, \"score\": 5}, {\"name\": \"B\", \"description\": \"Moderate progress with partial prevention measures and inconsistent enforcement, dumping continues at reduced but persistent levels\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Inadequate response from authorities, dumping persists or worsens due to lack of enforcement and public apathy\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -1.15, \"final_score\": -1.71, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Denunciation is positive but overshadowed by persistent environmental harm requiring urgent action.\", \"event_country\": \"Spain\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"NGO denounces persistent illegal dumping to authorities, demanding preventive measures to protect natural heritage and public funds\", \"affected_sdgs\": [11, 12, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"Persistent illegal dumping causing environmental damage and financial loss to public resources\", \"affected_sdgs\": [11, 12, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The denunciation by Ecologistas en Acción highlights a concrete environmental harm (illegal dumping) and calls for preventive action, aligning with SDGs 11, 12, and 15. While the denunciation itself is a positive act of environmental protection, the underlying issue reflects ongoing harm to natural heritage and public funds.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of preventive measures by local authorities\", \"Increase in illegal dumping incidents despite denunciation\", \"Public pressure leading to policy changes\", \"Legal action against responsible parties\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Local authorities implement effective preventive measures, reducing illegal dumping by 80% within two years\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Moderate progress with partial measures reducing dumping by 30%, but persistent issues remain\", \"probability\": 0.55, \"score\": -1}, {\"name\": \"C\", \"description\": \"No action taken, illegal dumping continues unabated, worsening environmental and financial damage\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -0.95, \"final_score\": -1.61, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Denunciation of environmental harm without immediate corrective action remains a negative signal.\", \"event_country\": \"Spain\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.66, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Denunciation is positive but overshadowed by persistent environmental harm requiring urgent action.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: denunciation of illegal dumping (harm) scored MINT (should be BURN for accountability)",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-02T11:36:27.618703+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
