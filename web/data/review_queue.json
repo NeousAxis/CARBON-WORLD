@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T17:37:18.946288+00:00",
-  "total_pending": 26,
+  "generated_at": "2026-06-02T18:06:22.945674+00:00",
+  "total_pending": 27,
   "reviews": [
     {
       "id": 444,
@@ -518,6 +518,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T12:36:44.820268+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 642,
+      "event_title": "US isn’t offering upfront sanctions relief to reopen Hormuz, Rubio says",
+      "event_url": "https://www.politico.com/news/2026/06/02/us-sanctions-relief-iran-hormuz-rubio-00946412?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US Secretary of State Marco Rubio's stance ties sanctions relief for Iran to nuclear concessions, reinforcing non-proliferation efforts and aligning with SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Conditioning sanctions relief on nuclear concessions risks prolonging regional tensions and undermines potential diplomatic pathways to reduce conflict in the Strait of Hormuz, violating SDG 16 and UDHR Article 1.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The US policy ties sanctions relief to nuclear concessions, which strengthens non-proliferation but risks entrenching geopolitical stalemates. The net effect is mixed: positive for nuclear safeguards but negative for regional stability and human security. The ethical balance leans slightly negative due to the potential for prolonged conflict and human suffering.\", \"snapshot_score\": -1.5, \"trajectory_score\": -0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Successful nuclear negotiations between Iran and P5+1\", \"Escalation of military tensions in the Strait of Hormuz\", \"US policy shift under new administration\", \"Regional humanitarian crisis triggered by sanctions\"], \"revaluation_checkpoint\": \"2028-06-02\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic: Diplomatic breakthrough leads to sanctions relief and regional de-escalation, reducing tensions and improving human security.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Realistic: Stalemate persists, sanctions relief remains conditional, and regional tensions remain high but do not escalate into direct conflict.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Pessimistic: Military escalation occurs, sanctions relief is withheld, and humanitarian crises worsen in the region.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.65, \"final_score\": -1.46, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"US policy ties sanctions relief to nuclear concessions, risking prolonged regional instability.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US maintains pressure on Iran to curb nuclear ambitions through conditional sanctions relief tied to verifiable concessions\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Withholding sanctions relief delays potential diplomatic normalization and economic engagement with Iran, limiting regional stability and humanitarian trade access\", \"affected_sdgs\": [1, 2, 3, 8, 16], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The US policy conditions sanctions relief on nuclear concessions, which may prevent nuclear proliferation (positive) but simultaneously prolongs economic hardship and regional instability in Iran (negative). The net effect is a mixed ethical outcome with significant humanitarian and rights concerns outweighing the non-proliferation benefits.\", \"snapshot_score\": -3.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Iran agrees to verifiable nuclear concessions within 12 months\", \"Humanitarian crises in Iran escalate to UN Security Council attention\", \"US administration changes policy stance post-election\"], \"revaluation_checkpoint\": \"2028-06-02\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Iran accepts US demands, sanctions relief granted, regional stability improves, nuclear program curbed\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Stalemate persists, sanctions remain, humanitarian suffering increases, no nuclear breakthrough\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Escalation leads to military conflict, severe regional destabilization, global energy market disruption\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.25, \"final_score\": -2.96, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"US sanctions policy risks worsening humanitarian conditions in Iran without guaranteed nuclear progress.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.85, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"US policy ties sanctions relief to nuclear concessions, risking prolonged regional instability.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: sanctions relief tied to concessions is climate-positive (reduces tension) but scored MINT",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-02T18:06:18.551166+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
