@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-02T09:07:01.579550+00:00",
-  "total_events": 1979,
+  "generated_at": "2026-06-02T09:37:41.917601+00:00",
+  "total_events": 1981,
   "total_burned": 2936450870,
-  "total_minted": 2677857000,
-  "pending_reviews": 26,
+  "total_minted": 2678757000,
+  "pending_reviews": 25,
   "events": [
+    {
+      "id": 1981,
+      "event_title": "Swedish opposition parties warn new law means 21-year-olds risk being deported",
+      "event_url": "https://www.thelocal.se/20260602/swedish-opposition-warns-new-law-means-21-year-olds-risk-being-deported-instead",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": -3.64,
+      "confidence": 8,
+      "justification": "The law expands deportation risks to 21-year-olds, violating family rights and protections. | The article describes a proposed law that expands deportation risks to a new age group, violating fundamental rights to family unity and non-discrimination. While opposition parties' warnings raise awareness of potential harm, the core action being evaluated is the law itself, which undermines human rights protections.",
+      "tx_hash": "2JmrAWeTVcG3FC8BTg3oesC2NAWgwEr6atDcvcGsSijT1it3PBtvUivCCGvXT9HKQ3thUpq1ukv6zMxLWwHp36cY",
+      "created_at": "2026-06-02T09:37:38.164051+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Opposition parties raising awareness of potential human rights violations under new immigration law\", \"affected_sdgs\": [10, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"New Swedish law risks deporting 21-year-olds under controversial teen deportation framework\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"CRC Article 9\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 1980,
+      "event_title": "Israel, Hezbollah exchange fire after Trump announcement",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/israel-hezbollah-exchange-fire-after-trump-announcement",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Institutional action (US-backed ceasefire proposal) is undermined by active conflict, enabling harm despite intent.",
+      "tx_hash": null,
+      "created_at": "2026-06-02T09:17:01.768924+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 1979,
       "event_title": "From Zofingen to the World: JagdSchweiz as a Factory of Misinformation",
@@ -43616,14 +43660,14 @@
         "events": 44
       },
       {
-        "region": "Europe",
+        "region": "North America",
         "burn_ratio": 0.327,
         "events": 107
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.327,
-        "events": 107
+        "region": "Europe",
+        "burn_ratio": 0.324,
+        "events": 108
       }
     ],
     "top_regions_destructive": [
@@ -43639,8 +43683,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.673,
-        "events": 107
+        "mint_ratio": 0.676,
+        "events": 108
       },
       {
         "region": "North America",
@@ -43686,7 +43730,7 @@
       },
       {
         "date": "2026-06-02",
-        "net_minted": 33200000,
+        "net_minted": 33950000,
         "net_burned": 60000000
       }
     ],
@@ -43704,7 +43748,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 164,
-        "negative": 285,
+        "negative": 286,
         "event_ids_positive": [
           1978,
           1977,
@@ -43872,6 +43916,7 @@
           1371
         ],
         "event_ids_negative": [
+          1981,
           1979,
           1972,
           1971,
@@ -44161,7 +44206,7 @@
       },
       "UDHR": {
         "positive": 58,
-        "negative": 208,
+        "negative": 209,
         "event_ids_positive": [
           1978,
           1977,
@@ -44223,6 +44268,7 @@
           1377
         ],
         "event_ids_negative": [
+          1981,
           1971,
           1970,
           1968,
@@ -44454,7 +44500,7 @@
       },
       "CRC": {
         "positive": 7,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           1977,
           1874,
@@ -44465,6 +44511,7 @@
           1518
         ],
         "event_ids_negative": [
+          1981,
           1970,
           1965,
           1947,
@@ -45455,23 +45502,23 @@
     "mint_composition_7d": {
       "total_mint": 398,
       "direct_action": {
-        "count": 263,
-        "pct": 66.1
+        "count": 264,
+        "pct": 66.3
       },
       "editorial_alarm": {
         "count": 22,
         "pct": 5.5
       },
       "untyped": {
-        "count": 113,
-        "pct": 28.4
+        "count": 112,
+        "pct": 28.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1328,
+      "total_mint": 1329,
       "direct_action": {
-        "count": 865,
-        "pct": 65.1
+        "count": 866,
+        "pct": 65.2
       },
       "editorial_alarm": {
         "count": 88,
@@ -45520,7 +45567,7 @@
         {
           "date": "2026-06-02",
           "citizen": 14,
-          "institutional": 12
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -45712,6 +45759,7 @@
         1371
       ],
       "event_ids_institutional": [
+        1981,
         1979,
         1978,
         1970,
@@ -46124,8 +46172,7 @@
         1375,
         1374,
         1373,
-        1372,
-        1370
+        1372
       ]
     }
   }

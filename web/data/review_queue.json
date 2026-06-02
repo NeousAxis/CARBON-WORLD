@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T09:07:01.769497+00:00",
-  "total_pending": 26,
+  "generated_at": "2026-06-02T09:37:42.052435+00:00",
+  "total_pending": 25,
   "reviews": [
     {
       "id": 444,
@@ -498,26 +498,6 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T00:35:31.365792+00:00",
-      "resolved_at": null,
-      "human_review_embedding": null,
-      "final_decision": null
-    },
-    {
-      "id": 631,
-      "event_title": "Israel, Hezbollah exchange fire after Trump announcement",
-      "event_url": "https://www.al-monitor.com/originals/2026/06/israel-hezbollah-exchange-fire-after-trump-announcement",
-      "event_source": "Al-Monitor (Middle East)",
-      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"A proposed agreement aims to halt cross-border attacks between Israel and Hezbollah.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Exchange of fire between Israel and Hezbollah occurred, resulting in potential civilian harm and escalation of conflict.\", \"affected_sdgs\": [16, 3], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The proposed agreement represents a positive step toward de-escalation and peace (SDG 16), but the actual exchange of fire and potential civilian harm undermine human rights and safety (UDHR Article 3, CRC Article 19). The net ethical impact is mixed, with the immediate negative consequences outweighing the tentative positive step.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Whether the proposed agreement is formally accepted by both sides.\", \"Whether there is a measurable reduction in cross-border attacks.\", \"Whether civilian casualties or infrastructure damage increases or decreases.\"], \"revaluation_checkpoint\": \"2028-06-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Agreement is accepted and implemented, leading to a significant reduction in violence and improved regional stability.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Agreement remains unimplemented, with sporadic violence continuing but not escalating significantly.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Conflict escalates into full-scale war, with significant regional and global consequences.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.55, \"final_score\": -2.89, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Exchange of fire and lack of formal agreement acceptance indicate ongoing conflict and harm.\", \"event_country\": \"Israel\"}",
-      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Potential ceasefire agreement between Israel and Hezbollah mediated by the US, aiming to halt cross-border attacks and reduce civilian casualties\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Reduction in military strikes targeting civilian areas in south Lebanon and northern Israel, potentially decreasing immediate harm to non-combatants\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Escalation of violence with active exchange of fire preceding the announcement, causing potential civilian casualties and displacement\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Uncertainty and lack of public acceptance of the agreement by both parties, raising risks of further violations and instability\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"US involvement in brokering the agreement, which may reflect geopolitical interests rather than purely humanitarian or rights-based motives\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The ceasefire announcement represents a potential reduction in immediate harm and civilian casualties, aligning with peace and justice goals (SDG 16). However, the preceding violence and uncertainty around the agreement's acceptance undermine its stability and ethical weight. The US role introduces geopolitical ambiguity, complicating the assessment of the action's ethical purity.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Sustained ceasefire for 6 months with verified compliance\", \"Renewal or collapse of the agreement within 12 months\", \"Escalation of violence despite the agreement\", \"International verification mechanisms established or failed\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ceasefire holds with gradual de-escalation, humanitarian conditions improve, and trust-building measures are implemented\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Ceasefire partially holds but sporadic violations continue, with periodic escalations and persistent humanitarian concerns\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Ceasefire collapses within 6 months, leading to renewed large-scale conflict and civilian displacement\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 1.5, \"final_score\": 1.85, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 6, \"justification\": \"Ceasefire reduces harm but lacks stability and public acceptance; geopolitical motives complicate ethical assessment.\", \"event_country\": \"Israel\"}",
-      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.5, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Institutional action (US-backed ceasefire proposal) is undermined by active conflict, enabling harm despite intent.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (ceasefire proposal) as positive but notes its failure due to ongoing violence. Analyst B's neutrality overlooks the contradiction between the proposed agreement and the active exchange of fire, which constitutes the dominant institutional action.\"}",
-      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: ceasefire proposal (positive intent) scored MINT due to failure, ignoring dominant institutional action.",
-      "suggested_decision": "MINT",
-      "suggested_amount_crbn": 150000,
-      "human_verdict": null,
-      "human_amount": null,
-      "human_reason": null,
-      "status": "pending",
-      "created_at": "2026-06-02T08:37:18.322545+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
