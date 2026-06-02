@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-02T00:05:17.617220+00:00",
-  "total_events": 1944,
+  "generated_at": "2026-06-02T00:35:35.400359+00:00",
+  "total_events": 1945,
   "total_burned": 2874450870,
-  "total_minted": 2635307000,
-  "pending_reviews": 24,
+  "total_minted": 2636307000,
+  "pending_reviews": 25,
   "events": [
+    {
+      "id": 1945,
+      "event_title": "Trump administration releases rules for new Medicaid work requirements",
+      "event_url": "https://www.statnews.com/2026/06/01/trump-medicaid-work-requirement-rules-verification-eligibility/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -4.41,
+      "confidence": 8,
+      "justification": "Federal policy enabling state-level healthcare restrictions violates human rights and SDGs. | The rule enables states to condition Medicaid eligibility on work requirements, directly undermining the right to health (UDHR Article 25) and the right to social security (UDHR Article 23). This policy disproportionately harms low-income populations, violating core human rights and SDG 1 (No Poverty) and SDG 3 (Good Health). The magnitude is high due to systemic impact on vulnerable groups.",
+      "tx_hash": "2NHmuvk1HVmQFaC8EmuAod4cYDtfLDk3Wi9gHyuY5aTwYof8xRGWaHzqfkHyq6hvB63UvZLW1pB2C1XaNt63dWbY",
+      "created_at": "2026-06-02T00:35:31.371249+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Trump administration releases federal rules enabling states to impose work requirements on Medicaid recipients, potentially restricting access to healthcare for low-income individuals\", \"affected_sdgs\": [1, 3], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 23\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 1944,
       "event_title": "Rediscovery of the eucerine bee Xenoglossa cressoniana in Texas",
@@ -42778,8 +42800,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 72,
-        "total_amount": 198970000
+        "count": 73,
+        "total_amount": 199970000
       },
       {
         "country": "Israel",
@@ -42847,13 +42869,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.35,
-        "events": 103
+        "burn_ratio": 0.353,
+        "events": 102
       },
       {
         "region": "North America",
-        "burn_ratio": 0.327,
-        "events": 107
+        "burn_ratio": 0.324,
+        "events": 108
       }
     ],
     "top_regions_destructive": [
@@ -42869,13 +42891,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.673,
-        "events": 107
+        "mint_ratio": 0.676,
+        "events": 108
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.65,
-        "events": 103
+        "mint_ratio": 0.647,
+        "events": 102
       },
       {
         "region": "Asia",
@@ -42916,7 +42938,7 @@
       },
       {
         "date": "2026-06-02",
-        "net_minted": 0,
+        "net_minted": 1000000,
         "net_burned": 5000000
       }
     ],
@@ -43100,6 +43122,7 @@
           1348
         ],
         "event_ids_negative": [
+          1945,
           1939,
           1937,
           1936,
@@ -43378,13 +43401,12 @@
           1356,
           1355,
           1352,
-          1350,
-          1346
+          1350
         ]
       },
       "UDHR": {
         "positive": 54,
-        "negative": 205,
+        "negative": 206,
         "event_ids_positive": [
           1933,
           1919,
@@ -43442,6 +43464,7 @@
           1357
         ],
         "event_ids_negative": [
+          1945,
           1937,
           1936,
           1935,
@@ -43738,7 +43761,7 @@
       },
       "UNDRIP": {
         "positive": 30,
-        "negative": 52,
+        "negative": 51,
         "event_ids_positive": [
           1943,
           1918,
@@ -43822,13 +43845,12 @@
           1373,
           1372,
           1352,
-          1350,
-          1346
+          1350
         ]
       },
       "Animal": {
         "positive": 57,
-        "negative": 25,
+        "negative": 24,
         "event_ids_positive": [
           1944,
           1931,
@@ -43912,8 +43934,7 @@
           1453,
           1426,
           1412,
-          1373,
-          1346
+          1373
         ]
       },
       "PB": {
@@ -44081,14 +44102,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 51.2,
-      "mainstream_pct": 48.8,
+      "niche_pct": 51.9,
+      "mainstream_pct": 48.1,
       "total_sources_used": 129,
-      "articles_processed": 582
+      "articles_processed": 581
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 582,
+      "total_events": 581,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -44642,24 +44663,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 387,
+      "total_mint": 386,
       "direct_action": {
         "count": 259,
-        "pct": 66.9
+        "pct": 67.1
       },
       "editorial_alarm": {
         "count": 21,
         "pct": 5.4
       },
       "untyped": {
-        "count": 107,
-        "pct": 27.6
+        "count": 106,
+        "pct": 27.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1301,
+      "total_mint": 1302,
       "direct_action": {
-        "count": 851,
+        "count": 852,
         "pct": 65.4
       },
       "editorial_alarm": {
@@ -44673,8 +44694,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 177,
-      "institutional": 405,
-      "citizen_ratio": 0.304,
+      "institutional": 404,
+      "citizen_ratio": 0.305,
       "daily": [
         {
           "date": "2026-05-27",
@@ -44709,7 +44730,7 @@
         {
           "date": "2026-06-02",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -44892,6 +44913,7 @@
         1349
       ],
       "event_ids_institutional": [
+        1945,
         1944,
         1943,
         1939,
@@ -45294,9 +45316,7 @@
         1353,
         1352,
         1350,
-        1348,
-        1347,
-        1346
+        1348
       ]
     }
   }
