@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T03:35:01.876905+00:00",
-  "total_pending": 25,
+  "generated_at": "2026-06-02T04:05:43.206896+00:00",
+  "total_pending": 26,
   "reviews": [
     {
       "id": 444,
@@ -498,6 +498,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T00:35:31.365792+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 625,
+      "event_title": "US says Israel and Hezbollah agree to dial back fighting as tensions escalate",
+      "event_url": "https://www.france24.com/en/middle-east/20260602-us-says-israel-and-hezbollah-agree-to-dial-back-fighting-as-tensions-escalate",
+      "event_source": "France 24 EN",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US diplomatic intervention leading to a de-escalation agreement between Israel and Hezbollah to reduce fighting\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Ongoing conflict between Israel and Hezbollah with escalating tensions prior to the agreement\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"US involvement in geopolitical negotiations that may prioritize strategic interests over long-term peace\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The US-mediated agreement to dial back fighting between Israel and Hezbollah represents a significant positive step toward reducing immediate violence and potential civilian harm, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying conflict and US strategic interests introduce ethical concerns about sustainability and deeper peacebuilding. The net judgment is cautiously positive but tempered by unresolved tensions.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Sustained ceasefire for 12+ months\", \"Renewed diplomatic efforts toward a lasting peace agreement\", \"Escalation of violence despite the agreement\", \"US withdrawal from mediation role\"], \"revaluation_checkpoint\": \"2028-06-02\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Sustained de-escalation leads to long-term peace and regional stability\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Tensions persist with periodic flare-ups but no full-scale war\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Agreement collapses, leading to full-scale conflict with significant civilian casualties\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": 1.7, \"final_score\": 2.8, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 6, \"justification\": \"Diplomatic de-escalation is positive but overshadowed by unresolved conflict and strategic interests.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US-mediated diplomatic agreement to de-escalate hostilities between Israel and Hezbollah, reducing immediate human suffering and potential regional conflict escalation\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Ongoing geopolitical tensions and proxy conflict dynamics between Israel and Hezbollah remain unresolved, with underlying grievances unaddressed\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The US-brokered agreement to dial back fighting between Israel and Hezbollah represents a significant step toward reducing immediate violence and human suffering, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the unresolved tensions and proxy conflict dynamics leave long-term risks unaddressed, creating a fragile peace that could easily unravel.\", \"snapshot_score\": 6.5, \"trajectory_score\": 4.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Renewed hostilities within 12 months\", \"Failure to address underlying grievances in 24 months\", \"Shift in US diplomatic engagement or regional alliances\", \"Escalation of other proxy conflicts in the region\"], \"revaluation_checkpoint\": \"2028-06-02\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Sustained de-escalation with formal ceasefire and diplomatic negotiations leading to long-term stability\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Fragile peace with periodic flare-ups but no full-scale war, maintaining status quo\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Full-scale conflict resumes due to unresolved grievances or external triggers\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.5, \"final_score\": 4.2, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Diplomatic de-escalation reduces immediate harm but leaves systemic risks unresolved.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.71, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"The US-mediated agreement to reduce fighting is a protective action that reduces immediate harm and civilian suffering.\", \"disagreement\": true, \"reason\": \"The institutional action is the US brokering a de-escalation agreement. This action protects rights and reduces harm, so it should be BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-02T04:05:38.735870+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
