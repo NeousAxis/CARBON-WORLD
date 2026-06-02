@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T11:36:31.922127+00:00",
-  "total_pending": 26,
+  "generated_at": "2026-06-02T12:05:04.493006+00:00",
+  "total_pending": 27,
   "reviews": [
     {
       "id": 444,
@@ -518,6 +518,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T11:36:27.618703+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 634,
+      "event_title": "Emergency room wait times have increased by nearly an hour in ten years",
+      "event_url": "http://www.lequotidiendumedecin.fr/hopital/urgences/la-duree-de-passage-aux-urgences-bondi-de-pres-dune-heure-en-dix-ans",
+      "event_source": "Le Quotidien du Médecin",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Increased emergency room wait times by nearly an hour over ten years, indicating systemic strain on healthcare infrastructure and reduced access to timely medical care\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The prolonged emergency room wait times represent a clear violation of the right to timely healthcare under UDHR Article 25 and SDG 3. The systemic nature of the issue, affecting all patient types over a decade, underscores a significant negative impact on public health infrastructure and equity in access to care.\", \"snapshot_score\": -7.5, \"trajectory_score\": -6.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Implementation of targeted healthcare reforms reducing wait times by 20% within 2 years\", \"National healthcare budget allocation increases by 15% in next fiscal year\", \"Adoption of digital triage systems improving patient flow efficiency\", \"Significant reduction in emergency department overcrowding due to staffing increases\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where healthcare reforms and increased funding reduce wait times by 30% within 5 years, improving patient outcomes and system efficiency\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic scenario where moderate improvements occur but systemic issues persist, with wait times stabilizing at 2h45 but not returning to 2013 levels\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where healthcare system continues to deteriorate due to underfunding and staffing shortages, leading to wait times exceeding 4 hours\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.75, \"final_score\": -5.06, \"decision\": \"MINT\", \"amount_cbwd\": 750000, \"confidence\": 8, \"justification\": \"Systemic healthcare degradation violates UDHR Article 25 and SDG 3, warranting MINT.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [], \"negative_aspects\": [{\"description\": \"Increased emergency room wait times by nearly an hour over ten years, indicating systemic strain on healthcare infrastructure and reduced access to timely medical care\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The prolonged emergency room wait times represent a clear violation of the right to timely healthcare under UDHR Article 25 and SDG 3. The systemic nature of the issue, affecting all patient types over a decade, underscores a significant negative impact on public health infrastructure and equity in access to care.\", \"snapshot_score\": -7.5, \"trajectory_score\": -6.0, \"revaluation_score\": -5.0, \"revaluation_triggers\": [\"Implementation of targeted healthcare reforms reducing wait times by 20% within 2 years\", \"National healthcare budget allocation increases by 15% in next fiscal year\", \"Adoption of digital triage systems improving patient flow efficiency\", \"Significant reduction in emergency department overcrowding due to staffing increases\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic scenario where healthcare reforms and increased funding reduce wait times by 30% within 5 years, improving patient outcomes and system efficiency\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Realistic scenario where moderate improvements occur but systemic issues persist, with wait times stabilizing at 2h45 but not returning to 2013 levels\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Pessimistic scenario where healthcare system continues to deteriorate due to underfunding and staffing shortages, leading to wait times exceeding 4 hours\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.75, \"final_score\": -5.06, \"decision\": \"MINT\", \"amount_cbwd\": 750000, \"confidence\": 8, \"justification\": \"Systemic healthcare degradation violates UDHR Article 25 and SDG 3, warranting MINT.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -4.53, \"confidence\": 8, \"amount_cbwd\": 750000, \"justification\": \"Systemic healthcare degradation violates UDHR Article 25 and SDG 3, warranting MINT.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: missing_positive_aspects | llm: Polarity error: healthcare degradation should BURN, not MINT",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 750000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-02T12:04:59.819155+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
