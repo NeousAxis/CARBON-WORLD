@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T06:35:56.131990+00:00",
-  "total_pending": 27,
+  "generated_at": "2026-06-03T07:05:45.516259+00:00",
+  "total_pending": 28,
   "reviews": [
     {
       "id": 444,
@@ -538,6 +538,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-02T20:36:02.683640+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 652,
+      "event_title": "7 states sue to stop Trump’s offshore wind deal with TotalEnergies",
+      "event_url": "https://www.canarymedia.com/articles/offshore-wind/7-states-sue-trump-offshore-wind-deal",
+      "event_source": "Canary Media",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"States are taking legal action to protect offshore wind development, supporting clean energy transition.\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The Trump administration's deal with TotalEnergies could undermine offshore wind development and climate goals.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The legal challenge by seven states represents a positive effort to uphold clean energy goals and climate action, while the Trump administration's deal with TotalEnergies poses a threat to these objectives.\", \"snapshot_score\": -2.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Court ruling on the lawsuit\", \"New offshore wind projects approved or canceled\", \"Change in federal administration and policy direction\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court rules in favor of states, leading to stronger offshore wind development and climate action.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Court rules in favor of the Trump administration, slowing offshore wind development.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Deal with TotalEnergies leads to long-term abandonment of offshore wind projects.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": -1.15, \"final_score\": -1.39, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"The Trump administration's offshore wind deal with TotalEnergies undermines climate action and clean energy goals.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Seven Democratic-led states file a lawsuit to block the Trump administration's offshore wind deal with TotalEnergies, opposing a policy that would pay private firms to abandon offshore wind projects in the U.S.\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Legal action by states to challenge federal policy that undermines renewable energy development and climate action commitments.\", \"affected_sdgs\": [7, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Trump administration's agreement with TotalEnergies to pay firms to abandon offshore wind projects, undermining renewable energy progress and climate goals.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [\"UDHR Article 25 (right to a standard of living adequate for health and well-being)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The lawsuit by seven states represents a proactive defense of renewable energy and climate action against a federal policy that seeks to undermine offshore wind development. While the Trump administration's deal with TotalEnergies directly conflicts with SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action), the states' legal challenge aligns with these goals and human rights frameworks. The action reflects a tension between short-term political interests and long-term environmental sustainability.\", \"snapshot_score\": 6.5, \"trajectory_score\": 4.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Federal court ruling on the lawsuit within 12 months\", \"Congressional or state-level policy changes supporting offshore wind\", \"Technological or economic viability of offshore wind projects in the U.S.\", \"Public opinion shifts favoring renewable energy post-election\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Federal court rules in favor of states, blocking the deal and setting a precedent for renewable energy policy, accelerating offshore wind development.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Court rules partially in favor of states but allows some aspects of the deal to proceed, leading to mixed outcomes for offshore wind.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Court upholds the Trump administration's deal, leading to significant setbacks for offshore wind and climate goals.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.8, \"final_score\": 4.5, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Legal challenge to undermine anti-renewable policy aligns with climate action but outcome uncertain.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.39, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"Institutional action (lawsuit) protects climate action and clean energy rights against harmful federal policy.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (lawsuit) as protective of climate goals, while Analyst B's NEUTRAL stance overlooked the punitive nature of the legal challenge against harmful policy.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-03T07:05:41.075172+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
