@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-03T20:35:34.539096+00:00",
-  "total_events": 2145,
+  "generated_at": "2026-06-03T21:06:47.804852+00:00",
+  "total_events": 2147,
   "total_burned": 3174650870,
-  "total_minted": 2967787000,
+  "total_minted": 2976287000,
   "pending_reviews": 31,
   "events": [
+    {
+      "id": 2147,
+      "event_title": "China, EU slam proposed US tariffs, reject forced labour allegations",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3355882/china-eu-slam-proposed-us-tariffs-reject-forced-labour-allegations?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.83,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; US tariffs under forced-labour guise are protectionist and harmful. | The joint rejection by China and the EU of US tariffs and forced labour allegations represents a positive diplomatic stance against unilateral trade measures, aligning with global labour rights and SDG 8 and 10. However, the US proposal of tariffs under the guise of forced-labour investigations introduces significant ethical concerns, including potential violations of UDHR rights and escalation of ",
+      "tx_hash": "4ypSwCHiqt5neb7R8p813odXf3sCTcpqNDsHWfCP9WEec46LBBVaD7BcL8eydRCzktgmxg7J3vLvAozLhvsXd2ua",
+      "created_at": "2026-06-03T21:06:43.923893+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"China and the EU jointly reject US tariffs and forced labour allegations, demonstrating international diplomatic coordination against unilateral trade measures\", \"affected_sdgs\": [10, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Rejection of forced labour allegations aligns with global commitments to eliminate coercive labour practices and uphold worker rights\", \"affected_sdgs\": [8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US proposal of new tariffs (up to 12.5%) on imports from China and 59 other economies using forced-labour investigations as justification, which may escalate trade tensions and harm global economic stability\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Use of forced-labour allegations as a tool for advancing tariff regimes undermines trust in international trade mechanisms and may set a precedent for protectionist policies\", \"affected_sdgs\": [10, 17], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2146,
+      "event_title": "Former Somali Prime Minister Hassan Ali Khaire says he was targeted by government forces",
+      "event_url": "https://www.lemonde.fr/international/article/2026/06/03/en-somalie-l-ancien-premier-ministre-hassan-ali-khaire-affirme-avoir-ete-vise-par-une-attaque-des-forces-gouvernementales_6696666_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -6.36,
+      "confidence": 8,
+      "justification": "Government forces targeting a political opponent violates democratic norms and human rights. | The alleged targeting of a former Prime Minister by government forces represents a severe violation of democratic principles and human rights, undermining political participation and freedom of expression. This action directly contradicts SDG 16 (Peace, Justice, and Strong Institutions) and core UDHR rights, warranting strong condemnation.",
+      "tx_hash": "5KQYvBnZf2otJoKxPEaQ7DCBV2JFej6cFkfG4VMpy3E988soZFnN6f7NSPR7FMR7fpwHZqhuvCcQsh1R3qV9uxAe",
+      "created_at": "2026-06-03T21:06:43.816007+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Somalia",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Somali government forces allegedly targeted former Prime Minister Hassan Ali Khaire, indicating a potential violation of political rights and democratic norms\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2145,
       "event_title": "French agriculture minister invites BASF to seek approval for an endocrine-disrupting herbicide using alternative evaluation methods",
@@ -47200,8 +47244,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 88,
-        "total_amount": 274680000
+        "count": 85,
+        "total_amount": 256180000
       },
       {
         "country": "France",
@@ -47227,8 +47271,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 28,
-        "total_amount": 130700000
+        "count": 27,
+        "total_amount": 125700000
       },
       {
         "country": "France",
@@ -47264,18 +47308,18 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.455,
-        "events": 22
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.37,
-        "events": 119
+        "burn_ratio": 0.435,
+        "events": 23
       },
       {
         "region": "Asia",
         "burn_ratio": 0.366,
         "events": 41
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.364,
+        "events": 118
       }
     ],
     "top_regions_destructive": [
@@ -47287,7 +47331,12 @@
       {
         "region": "North America",
         "mint_ratio": 0.744,
-        "events": 121
+        "events": 117
+      },
+      {
+        "region": "Europe",
+        "mint_ratio": 0.636,
+        "events": 118
       },
       {
         "region": "Asia",
@@ -47295,14 +47344,9 @@
         "events": 41
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.63,
-        "events": 119
-      },
-      {
         "region": "Africa",
-        "mint_ratio": 0.545,
-        "events": 22
+        "mint_ratio": 0.565,
+        "events": 23
       }
     ],
     "supply_trend_7d": [
@@ -47338,7 +47382,7 @@
       },
       {
         "date": "2026-06-03",
-        "net_minted": 127160000,
+        "net_minted": 135660000,
         "net_burned": 85500000
       }
     ],
@@ -47355,8 +47399,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 169,
-        "negative": 307,
+        "positive": 166,
+        "negative": 305,
         "event_ids_positive": [
           2142,
           2138,
@@ -47523,12 +47567,11 @@
           1525,
           1518,
           1515,
-          1510,
-          1504,
-          1503,
-          1502
+          1510
         ],
         "event_ids_negative": [
+          2147,
+          2146,
           2145,
           2143,
           2141,
@@ -47831,16 +47874,12 @@
           1514,
           1512,
           1511,
-          1509,
-          1507,
-          1506,
-          1505,
-          1501
+          1509
         ]
       },
       "UDHR": {
         "positive": 70,
-        "negative": 233,
+        "negative": 231,
         "event_ids_positive": [
           2142,
           2136,
@@ -47914,6 +47953,8 @@
           1518
         ],
         "event_ids_negative": [
+          2147,
+          2146,
           2145,
           2143,
           2141,
@@ -48142,16 +48183,12 @@
           1514,
           1512,
           1511,
-          1509,
-          1507,
-          1506,
-          1505,
-          1501
+          1509
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 7,
+        "negative": 8,
         "event_ids_positive": [
           1958,
           1933,
@@ -48160,6 +48197,7 @@
           1592
         ],
         "event_ids_negative": [
+          2147,
           2076,
           2067,
           2046,
@@ -48171,7 +48209,7 @@
       },
       "CRC": {
         "positive": 15,
-        "negative": 58,
+        "negative": 56,
         "event_ids_positive": [
           2091,
           2086,
@@ -48245,14 +48283,12 @@
           1545,
           1541,
           1535,
-          1533,
-          1507,
-          1505
+          1533
         ]
       },
       "UNDRIP": {
-        "positive": 32,
-        "negative": 57,
+        "positive": 31,
+        "negative": 55,
         "event_ids_positive": [
           2119,
           2075,
@@ -48284,8 +48320,7 @@
           1587,
           1569,
           1551,
-          1546,
-          1502
+          1546
         ],
         "event_ids_negative": [
           2139,
@@ -48342,14 +48377,12 @@
           1547,
           1537,
           1526,
-          1514,
-          1506,
-          1501
+          1514
         ]
       },
       "Animal": {
-        "positive": 50,
-        "negative": 34,
+        "positive": 49,
+        "negative": 33,
         "event_ids_positive": [
           2116,
           2048,
@@ -48399,8 +48432,7 @@
           1551,
           1548,
           1530,
-          1515,
-          1503
+          1515
         ],
         "event_ids_negative": [
           2145,
@@ -48435,13 +48467,12 @@
           1590,
           1576,
           1539,
-          1533,
-          1501
+          1533
         ]
       },
       "PB": {
-        "positive": 80,
-        "negative": 75,
+        "positive": 78,
+        "negative": 73,
         "event_ids_positive": [
           2138,
           2116,
@@ -48520,9 +48551,7 @@
           1548,
           1530,
           1515,
-          1510,
-          1504,
-          1503
+          1510
         ],
         "event_ids_negative": [
           2141,
@@ -48597,31 +48626,30 @@
           1536,
           1534,
           1523,
-          1522,
-          1505,
-          1501
+          1522
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 47.6,
-      "mainstream_pct": 52.4,
+      "niche_pct": 49.2,
+      "mainstream_pct": 50.8,
       "total_sources_used": 126,
-      "articles_processed": 620
+      "articles_processed": 615
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 620,
+      "total_events": 615,
       "pct": 0.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 34,
+        "count": 35,
         "burn_count": 9,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          2147,
           2113,
           2112,
           2108,
@@ -48756,8 +48784,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 89,
-        "burn_count": 46,
+        "count": 88,
+        "burn_count": 45,
         "mint_count": 43,
         "event_ids": [
           2138,
@@ -48847,8 +48875,7 @@
           1528,
           1527,
           1521,
-          1514,
-          1504
+          1514
         ]
       },
       {
@@ -48969,9 +48996,9 @@
       },
       {
         "name": "Defense",
-        "count": 48,
+        "count": 47,
         "burn_count": 2,
-        "mint_count": 46,
+        "mint_count": 45,
         "event_ids": [
           2100,
           2090,
@@ -49019,8 +49046,7 @@
           1535,
           1533,
           1521,
-          1515,
-          1506
+          1515
         ]
       },
       {
@@ -49127,41 +49153,41 @@
         ]
       },
       {
-        "name": "Water",
+        "name": "Forestry",
         "count": 14,
         "burn_count": 5,
         "mint_count": 9,
         "event_ids": [
-          2141,
-          1924,
-          1888,
-          1867,
-          1802,
-          1771,
-          1761,
-          1755,
-          1721,
-          1665,
-          1559,
-          1542,
-          1503,
-          1501
+          2075,
+          1938,
+          1912,
+          1860,
+          1819,
+          1732,
+          1725,
+          1691,
+          1666,
+          1613,
+          1604,
+          1595,
+          1523,
+          1515
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 209,
+      "total_burn": 206,
       "direct_action": {
-        "count": 154,
-        "pct": 73.7
+        "count": 151,
+        "pct": 73.3
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 7.2
+        "pct": 7.3
       },
       "untyped": {
         "count": 40,
-        "pct": 19.1
+        "pct": 19.4
       }
     },
     "burn_composition_all_time": {
@@ -49180,25 +49206,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 411,
+      "total_mint": 409,
       "direct_action": {
-        "count": 281,
-        "pct": 68.4
+        "count": 280,
+        "pct": 68.5
       },
       "editorial_alarm": {
-        "count": 26,
-        "pct": 6.3
+        "count": 25,
+        "pct": 6.1
       },
       "untyped": {
         "count": 104,
-        "pct": 25.3
+        "pct": 25.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1430,
+      "total_mint": 1432,
       "direct_action": {
-        "count": 941,
-        "pct": 65.8
+        "count": 943,
+        "pct": 65.9
       },
       "editorial_alarm": {
         "count": 96,
@@ -49206,13 +49232,13 @@
       },
       "untyped": {
         "count": 393,
-        "pct": 27.5
+        "pct": 27.4
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 190,
-      "institutional": 430,
-      "citizen_ratio": 0.306,
+      "citizen": 187,
+      "institutional": 428,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-28",
@@ -49247,7 +49273,7 @@
         {
           "date": "2026-06-03",
           "citizen": 17,
-          "institutional": 47
+          "institutional": 49
         }
       ],
       "event_ids_citizen": [
@@ -49437,12 +49463,11 @@
         1519,
         1518,
         1514,
-        1508,
-        1507,
-        1502,
-        1501
+        1508
       ],
       "event_ids_institutional": [
+        2147,
+        2146,
         2145,
         2141,
         2139,
@@ -49868,11 +49893,7 @@
         1512,
         1511,
         1510,
-        1509,
-        1506,
-        1505,
-        1504,
-        1503
+        1509
       ]
     }
   }
