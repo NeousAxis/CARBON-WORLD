@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T12:37:35.599720+00:00",
-  "total_pending": 29,
+  "generated_at": "2026-06-03T13:04:57.068073+00:00",
+  "total_pending": 30,
   "reviews": [
     {
       "id": 444,
@@ -578,6 +578,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-03T12:37:31.158757+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 660,
+      "event_title": "Scientists discovered a 5.5-million-bee underground colony in an Ithaca cemetery and launched a global citizen science initiative",
+      "event_url": "https://www.reddit.com/r/conservation/comments/1tvnz7s/scientists_discovered_a_55millionbee_underground/",
+      "event_source": "Reddit r/conservation",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientists discovered a massive underground bee colony and initiated a global citizen science initiative to study and protect it.\", \"affected_sdgs\": [13, 15, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The citizen science initiative promotes public engagement and education in biodiversity conservation.\", \"affected_sdgs\": [4, 11, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The discovery and study of the bee colony may involve some level of disturbance to the ecosystem.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The discovery of a massive underground bee colony and the launch of a global citizen science initiative represent a significant positive step for biodiversity conservation and public engagement. While there may be minor ecological disturbances, the overall impact is strongly aligned with climate action, life on land, and partnerships for the goals.\", \"snapshot_score\": 6.0, \"trajectory_score\": 4.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Publication of scientific findings from the bee colony study\", \"Measurable increase in public participation in the citizen science initiative\", \"Long-term monitoring of the bee colony's health and ecosystem impact\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The citizen science initiative leads to widespread public engagement and policy changes supporting pollinator conservation.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"The initiative achieves moderate success in raising awareness and supporting bee conservation, but lacks long-term impact.\", \"probability\": 0.55, \"score\": 5}, {\"name\": \"C\", \"description\": \"The initiative fails to gain traction, and bee populations continue to decline due to lack of broader conservation efforts.\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.85, \"final_score\": 5.69, \"decision\": \"BURN\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Discovery of a massive bee colony and global citizen science initiative support biodiversity and public engagement.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Discovery of a 5.5-million-bee underground colony in Ithaca, demonstrating long-term biodiversity persistence and ecological resilience\", \"affected_sdgs\": [15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Launch of a global citizen science initiative to identify and protect similar bee colonies threatened by development\", \"affected_sdgs\": [15, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Scientific breakthrough enabling large-scale biodiversity monitoring and conservation through public participation\", \"affected_sdgs\": [4, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The discovery and citizen science initiative directly advance biodiversity conservation (SDG 15) and planetary boundaries (biodiversity) by identifying and protecting a critical bee colony. The global citizen science component amplifies impact through public engagement and education (SDG 4), with no identified ethical downsides in this action.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Failure to secure funding for the citizen science initiative within 12 months\", \"Regulatory barriers preventing site protection\", \"Lack of international participation in the initiative\", \"Discovery of similar colonies without conservation action\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Global citizen science initiative successfully identifies and protects 50+ similar colonies within 5 years, leading to policy changes and biodiversity recovery\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate success with 10-20 colonies protected, but limited policy impact due to development pressures and funding constraints\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Minimal impact due to lack of funding, regulatory hurdles, and development encroachment on critical sites\", \"probability\": 0.2, \"score\": 1}], \"prospective_score\": 5.6, \"final_score\": 6.855, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Global biodiversity conservation action with measurable citizen engagement and long-term ecological benefits.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.96, \"confidence\": 8, \"amount_cbwd\": 150000, \"justification\": \"Discovery of a massive bee colony and global citizen science initiative support biodiversity and public engagement.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "structural: fragile_burn_threshold",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-03T13:04:53.383148+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
