@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-06-03T09:07:18.770725+00:00",
-  "total_events": 2087,
+  "generated_at": "2026-06-03T09:37:40.229458+00:00",
+  "total_events": 2090,
   "total_burned": 3112650870,
-  "total_minted": 2884662000,
+  "total_minted": 2885812000,
   "pending_reviews": 28,
   "events": [
+    {
+      "id": 2090,
+      "event_title": "Hezbollah video shows attack on Israeli troops at Lebanon’s Beaufort Castle",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/6/3/hezbollah-video-shows-attack-on-israeli-troops-at-lebanons-beaufort-castle?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.69,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; consensus on violation of sovereignty and escalation risks. | The event involves a military action with potential deterrent effects but also risks escalating violence and violating sovereignty. The documentation of the attack serves a dual purpose: raising awareness of resistance efforts while potentially fueling propaganda. The net ethical judgment is mixed, with the negative aspects outweighing the positive due to the high magnitude of harm from the attack itself.",
+      "tx_hash": "5M2kaUjUZnFGo6RcoWFT33nbsoQTeP1ptMes2UpxQ3EoBUBmdB6mGKQ6q7B4v9eRTYTMDpX5JfkvZcKrM8JpRu41",
+      "created_at": "2026-06-03T09:37:35.814791+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Lebanon",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Hezbollah's release of drone footage documenting attacks on Israeli forces at Beaufort Castle constitutes a public declaration of military action, which may deter further aggression and reduce civilian harm in the region.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The attack itself targets military personnel, which, while a legitimate act of resistance under international law, risks escalating violence and violating the sovereignty of Lebanon.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(4)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The use of drone footage for propaganda purposes may contribute to misinformation and further entrench conflict narratives.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2089,
+      "event_title": "Noted Surrey colony of at-risk swifts destroyed during nesting season",
+      "event_url": "https://www.theguardian.com/environment/2026/jun/03/noted-surrey-colony-of-at-risk-swifts-destroyed-during-nesting-season",
+      "event_source": "The Guardian Environment",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.21,
+      "confidence": 9,
+      "justification": "Demolition of protected wildlife site during breeding season violates biodiversity and animal rights frameworks. | The demolition of a protected swift nesting site during breeding season constitutes a clear violation of wildlife protection norms and biodiversity frameworks. While campaigners and media are raising awareness of this failure, the primary action—demolition—is ethically negative due to its direct harm to an endangered species and weak enforcement of existing protections.",
+      "tx_hash": "2XbNrSBf5pEBasfXNwPJFN2E5AF3mZz4KTt9Xh97GD3U4wmSvC5aV6EyQQM9x1Nyq8hPyxmZBcQwn71hgaUw5k74",
+      "created_at": "2026-06-03T09:37:35.686696+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Campaigners and media outlet reporting on the destruction of a swift nesting site, raising public awareness of wildlife protection failures\", \"affected_sdgs\": [15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Demolition of a known swift nesting site during breeding season by Hill Group contractors, violating wildlife protection laws and causing direct harm to an at-risk bird species\", \"affected_sdgs\": [15], \"violated_rights\": [\"UDHR Preamble (dignity of life)\", \"Animal Rights Article 1 (right to existence)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2088,
+      "event_title": "Hundreds of thousands of EU jobs at risk, Commission to warn",
+      "event_url": "https://www.politico.eu/article/eu-jobs-risk-energy-industry-green-transition-economy/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | EU's assessment risks enabling harm by prioritizing short-term job security over climate action without guaranteed transition solutions.",
+      "tx_hash": null,
+      "created_at": "2026-06-03T09:17:02.106257+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2087,
       "event_title": "Q&A: How UK’s seventh carbon budget will deliver ‘£865bn’ in economic benefits",
@@ -45983,8 +46049,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.48,
-        "events": 25
+        "burn_ratio": 0.5,
+        "events": 24
       },
       {
         "region": "Africa",
@@ -45993,20 +46059,20 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.354,
-        "events": 113
+        "burn_ratio": 0.351,
+        "events": 114
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.341,
-        "events": 44
+        "burn_ratio": 0.349,
+        "events": 43
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 34
+        "events": 35
       },
       {
         "region": "North America",
@@ -46015,13 +46081,13 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.659,
-        "events": 44
+        "mint_ratio": 0.651,
+        "events": 43
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.646,
-        "events": 113
+        "mint_ratio": 0.649,
+        "events": 114
       },
       {
         "region": "Africa",
@@ -46062,7 +46128,7 @@
       },
       {
         "date": "2026-06-03",
-        "net_minted": 63410000,
+        "net_minted": 64410000,
         "net_burned": 40000000
       }
     ],
@@ -46253,6 +46319,8 @@
           1458
         ],
         "event_ids_negative": [
+          2090,
+          2089,
           2085,
           2084,
           2083,
@@ -46551,9 +46619,7 @@
           1461,
           1460,
           1459,
-          1457,
-          1456,
-          1455
+          1457
         ]
       },
       "UDHR": {
@@ -46627,6 +46693,7 @@
           1518
         ],
         "event_ids_negative": [
+          2090,
           2085,
           2084,
           2083,
@@ -46852,13 +46919,12 @@
           1461,
           1460,
           1459,
-          1457,
-          1455
+          1457
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 8,
+        "negative": 7,
         "event_ids_positive": [
           1958,
           1933,
@@ -46873,8 +46939,7 @@
           1856,
           1855,
           1751,
-          1597,
-          1455
+          1597
         ]
       },
       "CRC": {
@@ -47054,7 +47119,7 @@
       },
       "Animal": {
         "positive": 53,
-        "negative": 30,
+        "negative": 31,
         "event_ids_positive": [
           2048,
           2021,
@@ -47111,6 +47176,7 @@
           1463
         ],
         "event_ids_negative": [
+          2089,
           2084,
           2081,
           2078,
@@ -47145,7 +47211,7 @@
       },
       "PB": {
         "positive": 83,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           2087,
           2071,
@@ -47232,6 +47298,7 @@
           1458
         ],
         "event_ids_negative": [
+          2089,
           2085,
           2081,
           2078,
@@ -47309,14 +47376,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 50.4,
-      "mainstream_pct": 49.6,
+      "niche_pct": 51.2,
+      "mainstream_pct": 48.8,
       "total_sources_used": 127,
-      "articles_processed": 630
+      "articles_processed": 629
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 630,
+      "total_events": 629,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -47554,9 +47621,9 @@
       },
       {
         "name": "Construction",
-        "count": 52,
+        "count": 51,
         "burn_count": 21,
-        "mint_count": 31,
+        "mint_count": 30,
         "event_ids": [
           2081,
           2058,
@@ -47608,16 +47675,16 @@
           1494,
           1487,
           1477,
-          1458,
-          1454
+          1458
         ]
       },
       {
         "name": "Defense",
-        "count": 49,
+        "count": 50,
         "burn_count": 2,
-        "mint_count": 47,
+        "mint_count": 48,
         "event_ids": [
+          2090,
           2085,
           2074,
           2069,
@@ -47893,24 +47960,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 418,
+      "total_mint": 417,
       "direct_action": {
         "count": 275,
-        "pct": 65.8
+        "pct": 65.9
       },
       "editorial_alarm": {
         "count": 26,
         "pct": 6.2
       },
       "untyped": {
-        "count": 117,
-        "pct": 28.0
+        "count": 116,
+        "pct": 27.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1402,
+      "total_mint": 1404,
       "direct_action": {
-        "count": 915,
+        "count": 917,
         "pct": 65.3
       },
       "editorial_alarm": {
@@ -47923,9 +47990,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 193,
+      "citizen": 192,
       "institutional": 437,
-      "citizen_ratio": 0.306,
+      "citizen_ratio": 0.305,
       "daily": [
         {
           "date": "2026-05-28",
@@ -47960,7 +48027,7 @@
         {
           "date": "2026-06-03",
           "citizen": 7,
-          "institutional": 20
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -48155,10 +48222,11 @@
         1471,
         1470,
         1464,
-        1463,
-        1454
+        1463
       ],
       "event_ids_institutional": [
+        2090,
+        2089,
         2086,
         2085,
         2084,
@@ -48593,9 +48661,7 @@
         1460,
         1459,
         1458,
-        1457,
-        1456,
-        1455
+        1457
       ]
     }
   }
