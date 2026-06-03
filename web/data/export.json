@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-03T20:06:45.267710+00:00",
-  "total_events": 2143,
-  "total_burned": 3173150870,
-  "total_minted": 2967637000,
+  "generated_at": "2026-06-03T20:35:34.539096+00:00",
+  "total_events": 2145,
+  "total_burned": 3174650870,
+  "total_minted": 2967787000,
   "pending_reviews": 31,
   "events": [
+    {
+      "id": 2145,
+      "event_title": "French agriculture minister invites BASF to seek approval for an endocrine-disrupting herbicide using alternative evaluation methods",
+      "event_url": "https://www.lemonde.fr/politique/article/2026/06/03/quand-annie-genevard-ministre-de-l-agriculture-invite-basf-a-faire-blanchir-l-un-de-ses-herbicides_6696665_823448.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.67,
+      "confidence": 8,
+      "justification": "The institutional action enables approval of a harmful herbicide by promoting alternative evaluation methods, prioritizing industry interests over public health. | The action risks normalizing weaker safety standards for a known endocrine disruptor, prioritizing industry flexibility over public health and environmental protection. While the call for alternative methods could theoretically improve assessment rigor, the context of a harmful herbicide suggests a regulatory loophole rather than a ge",
+      "tx_hash": "57DiCcfGhJ7VNvXpGCR3LosjZC3tUqPt1ifrG7tMibdKGmJhz55dMxFJ31y7J7mgJwoZWzWdWqqnMXr2goU8jyUd",
+      "created_at": "2026-06-03T20:35:30.605078+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"French Agriculture Minister encourages submission of alternative evaluation methods for herbicide approval, potentially opening pathways for stricter or more innovative safety assessments\", \"affected_sdgs\": [2, 3, 12, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Encouragement to use alternative evaluation methods for an endocrine-disrupting herbicide may undermine existing precautionary principles and weaken regulatory safeguards against harmful chemicals\", \"affected_sdgs\": [3, 12, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2144,
+      "event_title": "CANAL+ listing on JSE a historic moment for the bourse",
+      "event_url": "https://mg.co.za/business/2026-06-03-canal-listing-on-jse-a-historic-moment-for-the-bourse/",
+      "event_source": "Mail & Guardian (South Africa)",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | The listing of CANAL+ on the JSE marks a historic step in financial integration and economic development, with positive implications for market diversification and capital flow.",
+      "tx_hash": null,
+      "created_at": "2026-06-03T20:17:01.715837+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2143,
       "event_title": "The Meat Industry Is Funding Studies That Claim Meat Is Good For You",
@@ -47160,14 +47204,14 @@
         "total_amount": 274680000
       },
       {
+        "country": "France",
+        "count": 23,
+        "total_amount": 15950000
+      },
+      {
         "country": "Israel",
         "count": 23,
         "total_amount": 117250000
-      },
-      {
-        "country": "France",
-        "count": 22,
-        "total_amount": 15800000
       },
       {
         "country": "European Union",
@@ -47225,8 +47269,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.373,
-        "events": 118
+        "burn_ratio": 0.37,
+        "events": 119
       },
       {
         "region": "Asia",
@@ -47252,8 +47296,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.627,
-        "events": 118
+        "mint_ratio": 0.63,
+        "events": 119
       },
       {
         "region": "Africa",
@@ -47294,7 +47338,7 @@
       },
       {
         "date": "2026-06-03",
-        "net_minted": 127010000,
+        "net_minted": 127160000,
         "net_burned": 85500000
       }
     ],
@@ -47312,7 +47356,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 169,
-        "negative": 306,
+        "negative": 307,
         "event_ids_positive": [
           2142,
           2138,
@@ -47485,6 +47529,7 @@
           1502
         ],
         "event_ids_negative": [
+          2145,
           2143,
           2141,
           2139,
@@ -47795,7 +47840,7 @@
       },
       "UDHR": {
         "positive": 70,
-        "negative": 232,
+        "negative": 233,
         "event_ids_positive": [
           2142,
           2136,
@@ -47869,6 +47914,7 @@
           1518
         ],
         "event_ids_negative": [
+          2145,
           2143,
           2141,
           2139,
@@ -48303,7 +48349,7 @@
       },
       "Animal": {
         "positive": 50,
-        "negative": 33,
+        "negative": 34,
         "event_ids_positive": [
           2116,
           2048,
@@ -48357,6 +48403,7 @@
           1503
         ],
         "event_ids_negative": [
+          2145,
           2141,
           2135,
           2132,
@@ -48557,14 +48604,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 46.8,
-      "mainstream_pct": 53.2,
+      "niche_pct": 47.6,
+      "mainstream_pct": 52.4,
       "total_sources_used": 126,
-      "articles_processed": 622
+      "articles_processed": 620
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 622,
+      "total_events": 620,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -48806,9 +48853,9 @@
       },
       {
         "name": "Finance",
-        "count": 52,
+        "count": 51,
         "burn_count": 15,
-        "mint_count": 37,
+        "mint_count": 36,
         "event_ids": [
           2143,
           2112,
@@ -48860,15 +48907,14 @@
           1549,
           1544,
           1529,
-          1511,
-          1499
+          1511
         ]
       },
       {
         "name": "Construction",
-        "count": 50,
+        "count": 49,
         "burn_count": 21,
-        "mint_count": 29,
+        "mint_count": 28,
         "event_ids": [
           2139,
           2130,
@@ -48918,8 +48964,7 @@
           1547,
           1533,
           1527,
-          1514,
-          1500
+          1514
         ]
       },
       {
@@ -49024,10 +49069,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 24,
+        "count": 25,
         "burn_count": 14,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          2145,
           2036,
           2009,
           1992,
@@ -49134,24 +49180,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 413,
+      "total_mint": 411,
       "direct_action": {
-        "count": 280,
-        "pct": 67.8
+        "count": 281,
+        "pct": 68.4
       },
       "editorial_alarm": {
         "count": 26,
         "pct": 6.3
       },
       "untyped": {
-        "count": 107,
-        "pct": 25.9
+        "count": 104,
+        "pct": 25.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1429,
+      "total_mint": 1430,
       "direct_action": {
-        "count": 940,
+        "count": 941,
         "pct": 65.8
       },
       "editorial_alarm": {
@@ -49165,8 +49211,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 190,
-      "institutional": 432,
-      "citizen_ratio": 0.305,
+      "institutional": 430,
+      "citizen_ratio": 0.306,
       "daily": [
         {
           "date": "2026-05-28",
@@ -49201,7 +49247,7 @@
         {
           "date": "2026-06-03",
           "citizen": 17,
-          "institutional": 46
+          "institutional": 47
         }
       ],
       "event_ids_citizen": [
@@ -49397,6 +49443,7 @@
         1501
       ],
       "event_ids_institutional": [
+        2145,
         2141,
         2139,
         2138,
@@ -49825,10 +49872,7 @@
         1506,
         1505,
         1504,
-        1503,
-        1500,
-        1499,
-        1498
+        1503
       ]
     }
   }
