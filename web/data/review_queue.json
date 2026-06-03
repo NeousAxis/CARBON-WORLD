@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T21:35:20.155912+00:00",
-  "total_pending": 30,
+  "generated_at": "2026-06-03T22:07:40.791735+00:00",
+  "total_pending": 31,
   "reviews": [
     {
       "id": 444,
@@ -598,6 +598,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-03T19:36:00.572076+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 676,
+      "event_title": "US House passes war powers resolution to curb president’s authority in Iran",
+      "event_url": "https://www.reddit.com/r/goodnews/comments/1tw3w1u/us_house_passes_war_powers_resolution_to_curb/",
+      "event_source": "Reddit r/GoodNews",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US House of Representatives passes a war powers resolution to limit presidential authority to initiate military action in Iran without congressional approval\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The US House's passage of a war powers resolution to curb presidential authority in Iran represents a significant institutional check on executive overreach, aligning with SDG 16 (Peace, Justice, and Strong Institutions) and UDHR principles by reducing the risk of unilateral military action. This action reinforces democratic accountability and reduces potential harm to civilians in conflict zones.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Senate approval or rejection of the resolution\", \"Presidential veto or signing into law\", \"Implementation delays or legal challenges\", \"Geopolitical escalation in Iran\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Resolution becomes law, significantly curbing presidential war powers and setting a precedent for future congressional oversight\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Resolution passes House but stalls in Senate or faces presidential veto, limiting immediate impact but maintaining momentum for future reforms\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Resolution fails entirely due to political opposition or geopolitical pressures, reinforcing executive authority and increasing risk of unilateral military action\", \"probability\": 0.15, \"score\": -5}], \"prospective_score\": 5.75, \"final_score\": 6.86, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"Institutional check on executive power reduces risk of unauthorized military action.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"US House of Representatives passes a war powers resolution to limit presidential authority to initiate military action in Iran without congressional approval\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The resolution strengthens democratic checks on executive power, aligning with peace and justice principles (SDG 16) and human rights frameworks (UDHR). It reduces the risk of unilateral military escalation, which could violate rights and undermine stability. The action reflects a positive institutional shift toward accountability and restraint in foreign policy.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Senate approval or rejection of the resolution\", \"Presidential veto or signing into law\", \"Implementation challenges or legal challenges\", \"Geopolitical response from Iran or allies\"], \"revaluation_checkpoint\": \"2028-06-03\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Resolution becomes law, significantly reducing unilateral military authority and setting a precedent for future conflicts\", \"probability\": 0.35, \"score\": 8}, {\"name\": \"B\", \"description\": \"Resolution passes but is weakened by amendments or executive reinterpretation, limiting its impact\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Resolution fails in the Senate or is vetoed, reinforcing executive authority and increasing risk of unilateral action\", \"probability\": 0.15, \"score\": -5}], \"prospective_score\": 4.15, \"final_score\": 5.36, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Strengthens democratic oversight of military action, reducing unilateral risks.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.11, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"Institutional action limits executive overreach and reduces risk of unauthorized military escalation.\", \"disagreement\": true, \"reason\": \"Analyst B's neutral stance overlooks the clear institutional action of limiting executive power. The resolution actively protects democratic checks and reduces potential harm, which aligns with BURN criteria.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-03T22:07:36.697040+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
