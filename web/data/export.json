@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-03T21:06:47.804852+00:00",
-  "total_events": 2147,
-  "total_burned": 3174650870,
-  "total_minted": 2976287000,
-  "pending_reviews": 31,
+  "generated_at": "2026-06-03T21:35:20.022016+00:00",
+  "total_events": 2149,
+  "total_burned": 3182510870,
+  "total_minted": 2976437000,
+  "pending_reviews": 30,
   "events": [
+    {
+      "id": 2149,
+      "event_title": "US Nonprofit Again Wipes Out Millions in Hospital Bills–This Time for 97,000 Residents of Connecticut",
+      "event_url": "https://www.goodnewsnetwork.org/us-nonprofit-again-wipes-out-millions-in-hospital-bills-this-time-for-97000-residents-of-connecticut/",
+      "event_source": "Good News Network",
+      "decision": "BURN",
+      "amount_crbn": 7860000,
+      "final_score": 6.63,
+      "confidence": 9,
+      "justification": "Nonprofit debt relief action directly reduces poverty and improves health outcomes. | The action directly alleviates severe financial distress for tens of thousands of individuals, aligning with core human rights and SDG 1 (No Poverty) and SDG 3 (Good Health). No significant negative ethical aspects are identified; the program's impact is overwhelmingly positive.",
+      "tx_hash": "44s6RCsfgXKpTogCbwq4LLPpNNsie8onFaxf6kLyD1Q8vpLueJykkVcxaXaHnLvX71jBhMS5QDpGxjYQ7pn8yhng",
+      "created_at": "2026-06-03T21:35:15.822853+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Nonprofit organization (Undue Medical Debt) eliminated $6.5 million in unpaid medical bills for 97,000 Connecticut residents, directly reducing financial hardship and improving access to healthcare.\", \"affected_sdgs\": [1, 3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2148,
+      "event_title": "Reactions to Germany's Failure in UN Election",
+      "event_url": "https://www.tagesschau.de/ausland/amerika/un-sicherheitsrat-reaktionen-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Germany's failure to secure a UN Security Council seat weakens its diplomatic influence and multilateral engagement.",
+      "tx_hash": null,
+      "created_at": "2026-06-03T21:17:02.074385+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2147,
       "event_title": "China, EU slam proposed US tariffs, reject forced labour allegations",
@@ -47271,8 +47315,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 27,
-        "total_amount": 125700000
+        "count": 28,
+        "total_amount": 133560000
       },
       {
         "country": "France",
@@ -47330,8 +47374,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.744,
-        "events": 117
+        "mint_ratio": 0.737,
+        "events": 118
       },
       {
         "region": "Europe",
@@ -47383,7 +47427,7 @@
       {
         "date": "2026-06-03",
         "net_minted": 135660000,
-        "net_burned": 85500000
+        "net_burned": 93360000
       }
     ],
     "event_of_the_day": {
@@ -47399,9 +47443,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 166,
+        "positive": 167,
         "negative": 305,
         "event_ids_positive": [
+          2149,
           2142,
           2138,
           2136,
@@ -47878,9 +47923,10 @@
         ]
       },
       "UDHR": {
-        "positive": 70,
+        "positive": 71,
         "negative": 231,
         "event_ids_positive": [
+          2149,
           2142,
           2136,
           2119,
@@ -48880,10 +48926,11 @@
       },
       {
         "name": "Finance",
-        "count": 51,
-        "burn_count": 15,
+        "count": 52,
+        "burn_count": 16,
         "mint_count": 36,
         "event_ids": [
+          2149,
           2143,
           2112,
           2107,
@@ -49051,9 +49098,9 @@
       },
       {
         "name": "Tech",
-        "count": 36,
+        "count": 35,
         "burn_count": 12,
-        "mint_count": 24,
+        "mint_count": 23,
         "event_ids": [
           2108,
           2055,
@@ -49089,8 +49136,7 @@
           1531,
           1530,
           1529,
-          1528,
-          1508
+          1528
         ]
       },
       {
@@ -49176,29 +49222,29 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 206,
+      "total_burn": 207,
       "direct_action": {
-        "count": 151,
-        "pct": 73.3
+        "count": 152,
+        "pct": 73.4
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 7.3
+        "pct": 7.2
       },
       "untyped": {
         "count": 40,
-        "pct": 19.4
+        "pct": 19.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 682,
+      "total_burn": 683,
       "direct_action": {
-        "count": 461,
+        "count": 462,
         "pct": 67.6
       },
       "editorial_consciousness": {
         "count": 42,
-        "pct": 6.2
+        "pct": 6.1
       },
       "untyped": {
         "count": 179,
@@ -49206,18 +49252,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 409,
+      "total_mint": 408,
       "direct_action": {
         "count": 280,
-        "pct": 68.5
+        "pct": 68.6
       },
       "editorial_alarm": {
         "count": 25,
         "pct": 6.1
       },
       "untyped": {
-        "count": 104,
-        "pct": 25.4
+        "count": 103,
+        "pct": 25.2
       }
     },
     "mint_composition_all_time": {
@@ -49272,11 +49318,12 @@
         },
         {
           "date": "2026-06-03",
-          "citizen": 17,
+          "citizen": 18,
           "institutional": 49
         }
       ],
       "event_ids_citizen": [
+        2149,
         2143,
         2142,
         2137,
@@ -49462,8 +49509,7 @@
         1520,
         1519,
         1518,
-        1514,
-        1508
+        1514
       ],
       "event_ids_institutional": [
         2147,
