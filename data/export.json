@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-03T02:04:33.266268+00:00",
-  "total_events": 2068,
-  "total_burned": 3084150870,
-  "total_minted": 2849362000,
-  "pending_reviews": 27,
+  "generated_at": "2026-06-03T02:35:33.637244+00:00",
+  "total_events": 2070,
+  "total_burned": 3089150870,
+  "total_minted": 2858862000,
+  "pending_reviews": 28,
   "events": [
+    {
+      "id": 2070,
+      "event_title": "FDA approves pill that cuts COVID risk nearly 70%",
+      "event_url": "https://refractor.io/infectious-diseases/fda-approves-covid-19-ensitrelvir/",
+      "event_source": "New Atlas",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.19,
+      "confidence": 8,
+      "justification": "FDA approval of highly effective COVID-19 prophylaxis advances global health and reduces suffering. | The FDA's approval of ensitrelvir represents a significant public health advancement by providing an effective tool to reduce COVID-19 transmission, directly supporting SDG 3 (Good Health and Well-being). The drug's high efficacy in post-exposure prophylaxis addresses a critical gap in pandemic preparedness and aligns with universal human rights to health and safety.",
+      "tx_hash": "3S5rLo4eUobgUPq9taogvA4ntPX2MzH1Anyh362WtZgayKLuCD5w8ttxYQBgg5hJhkBmvwXLgfZGccD8VmzbrfwH",
+      "created_at": "2026-06-03T02:35:29.440801+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FDA approval of ensitrelvir, an oral COVID-19 post-exposure prophylaxis pill, reducing transmission risk by nearly 70% in Phase III trials\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2069,
+      "event_title": "Middle East War: Despite Talks in the US, Israel Continues Strikes on Lebanon",
+      "event_url": "https://www.20minutes.fr/monde/etats-unis/4226897-20260603-guerre-moyen-orient-malgre-pourparlers-etats-unis-israel-continue-frapper-liban?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.83,
+      "confidence": 8,
+      "justification": "Continued military strikes violate peace and human rights despite diplomatic efforts. | The continuation of military strikes on Lebanon by Israel, despite active US-led peace negotiations, constitutes a severe violation of international peace and human rights frameworks. This action undermines diplomatic efforts, escalates regional instability, and directly contravenes the principles of the UN Charter and UDHR, particularly the right to peace and security.",
+      "tx_hash": "EC6tS91uSm84pCp825mjKc4s2B6hzMZ5f4uypWp5W4UQW6xsm6sUY8nDrksKpWgoqMmCjV7iujfasWGMUKa8dyg",
+      "created_at": "2026-06-03T02:35:29.302909+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israel continues military strikes on Lebanon despite ongoing US-mediated peace talks aimed at de-escalation\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2068,
       "event_title": "WESTERN CAPE MAYHEM: Murder and violence in Mossel Bay as anti-foreigner-inspired attacks spread",
@@ -45511,8 +45555,8 @@
       },
       {
         "country": "Israel",
-        "count": 23,
-        "total_amount": 117250000
+        "count": 24,
+        "total_amount": 126750000
       },
       {
         "country": "France",
@@ -45533,8 +45577,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 29,
-        "total_amount": 134700000
+        "count": 30,
+        "total_amount": 139700000
       },
       {
         "country": "Brazil",
@@ -45588,12 +45632,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 35
+        "events": 36
       },
       {
         "region": "North America",
-        "mint_ratio": 0.726,
-        "events": 117
+        "mint_ratio": 0.72,
+        "events": 118
       },
       {
         "region": "Asia",
@@ -45644,8 +45688,8 @@
       },
       {
         "date": "2026-06-03",
-        "net_minted": 35910000,
-        "net_burned": 11500000
+        "net_minted": 45410000,
+        "net_burned": 16500000
       }
     ],
     "event_of_the_day": {
@@ -45661,9 +45705,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 167,
+        "positive": 168,
         "negative": 303,
         "event_ids_positive": [
+          2070,
           2066,
           2063,
           2053,
@@ -45833,6 +45878,7 @@
           1437
         ],
         "event_ids_negative": [
+          2069,
           2068,
           2067,
           2065,
@@ -46134,14 +46180,14 @@
           1440,
           1439,
           1436,
-          1435,
-          1434
+          1435
         ]
       },
       "UDHR": {
-        "positive": 62,
+        "positive": 63,
         "negative": 227,
         "event_ids_positive": [
+          2070,
           2053,
           2049,
           2036,
@@ -46206,6 +46252,7 @@
           1518
         ],
         "event_ids_negative": [
+          2069,
           2068,
           2067,
           2065,
@@ -46431,8 +46478,7 @@
           1443,
           1441,
           1440,
-          1436,
-          1434
+          1436
         ]
       },
       "ILO": {
@@ -46888,14 +46934,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 49.2,
-      "mainstream_pct": 50.8,
+      "niche_pct": 48.4,
+      "mainstream_pct": 51.6,
       "total_sources_used": 128,
-      "articles_processed": 635
+      "articles_processed": 636
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 635,
+      "total_events": 636,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -46943,10 +46989,11 @@
       },
       {
         "name": "UN",
-        "count": 15,
+        "count": 16,
         "burn_count": 2,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          2069,
           2037,
           2005,
           1984,
@@ -47193,10 +47240,68 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 50,
+        "burn_count": 2,
+        "mint_count": 48,
+        "event_ids": [
+          2069,
+          2062,
+          2061,
+          2018,
+          1989,
+          1901,
+          1900,
+          1880,
+          1868,
+          1859,
+          1841,
+          1833,
+          1827,
+          1824,
+          1823,
+          1817,
+          1815,
+          1798,
+          1795,
+          1772,
+          1767,
+          1765,
+          1760,
+          1752,
+          1741,
+          1740,
+          1735,
+          1713,
+          1706,
+          1682,
+          1679,
+          1677,
+          1656,
+          1626,
+          1621,
+          1612,
+          1603,
+          1575,
+          1543,
+          1535,
+          1533,
+          1521,
+          1515,
+          1506,
+          1495,
+          1494,
+          1462,
+          1450,
+          1441,
+          1435
+        ]
+      },
+      {
         "name": "Finance",
-        "count": 51,
+        "count": 50,
         "burn_count": 14,
-        "mint_count": 37,
+        "mint_count": 36,
         "event_ids": [
           2064,
           2057,
@@ -47247,65 +47352,7 @@
           1511,
           1499,
           1471,
-          1443,
-          1434
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 49,
-        "burn_count": 2,
-        "mint_count": 47,
-        "event_ids": [
-          2062,
-          2061,
-          2018,
-          1989,
-          1901,
-          1900,
-          1880,
-          1868,
-          1859,
-          1841,
-          1833,
-          1827,
-          1824,
-          1823,
-          1817,
-          1815,
-          1798,
-          1795,
-          1772,
-          1767,
-          1765,
-          1760,
-          1752,
-          1741,
-          1740,
-          1735,
-          1713,
-          1706,
-          1682,
-          1679,
-          1677,
-          1656,
-          1626,
-          1621,
-          1612,
-          1603,
-          1575,
-          1543,
-          1535,
-          1533,
-          1521,
-          1515,
-          1506,
-          1495,
-          1494,
-          1462,
-          1450,
-          1441,
-          1435
+          1443
         ]
       },
       {
@@ -47448,10 +47495,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 210,
+      "total_burn": 211,
       "direct_action": {
-        "count": 152,
-        "pct": 72.4
+        "count": 153,
+        "pct": 72.5
       },
       "editorial_consciousness": {
         "count": 15,
@@ -47459,13 +47506,13 @@
       },
       "untyped": {
         "count": 43,
-        "pct": 20.5
+        "pct": 20.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 667,
+      "total_burn": 668,
       "direct_action": {
-        "count": 448,
+        "count": 449,
         "pct": 67.2
       },
       "editorial_consciousness": {
@@ -47493,9 +47540,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1393,
+      "total_mint": 1394,
       "direct_action": {
-        "count": 908,
+        "count": 909,
         "pct": 65.2
       },
       "editorial_alarm": {
@@ -47509,8 +47556,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 193,
-      "institutional": 442,
-      "citizen_ratio": 0.304,
+      "institutional": 443,
+      "citizen_ratio": 0.303,
       "daily": [
         {
           "date": "2026-05-28",
@@ -47545,7 +47592,7 @@
         {
           "date": "2026-06-03",
           "citizen": 2,
-          "institutional": 10
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -47744,6 +47791,8 @@
         1437
       ],
       "event_ids_institutional": [
+        2070,
+        2069,
         2068,
         2067,
         2066,
@@ -48184,8 +48233,7 @@
         1439,
         1438,
         1436,
-        1435,
-        1434
+        1435
       ]
     }
   }
