@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-03T18:36:54.048643+00:00",
-  "total_events": 2137,
-  "total_burned": 3166650870,
-  "total_minted": 2963937000,
-  "pending_reviews": 29,
+  "generated_at": "2026-06-03T19:04:33.119253+00:00",
+  "total_events": 2139,
+  "total_burned": 3168150870,
+  "total_minted": 2964437000,
+  "pending_reviews": 30,
   "events": [
+    {
+      "id": 2139,
+      "event_title": "Greece: Concerns Over Plans to Forcibly Evict 400 Residents of the Prosfygika Housing Complex",
+      "event_url": "https://www.amnesty.org/en/documents/eur25/1101/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.62,
+      "confidence": 9,
+      "justification": "Forced eviction of 400 vulnerable individuals violates human rights and exacerbates marginalization. | The forced eviction plan directly violates the housing and dignity rights of 400 vulnerable individuals, including refugees and marginalized groups, constituting a severe ethical breach. Amnesty International's documentation of this risk serves as a critical awareness-raising act that aligns with human rights frameworks, but the primary action (eviction plan) remains a grave negative ethical ev",
+      "tx_hash": "5m7DW9QrieZ5tWFEshAWnMG79GYksLEmAgAj8AKP7z6JbZWUHS99kE35vXH2dbsKfYmx52t8W1ktQbrBhSpNaiYf",
+      "created_at": "2026-06-03T19:04:28.995541+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Greece",
+      "region": "Europe",
+      "administration": "Greece-ND",
+      "positive_aspects_json": "[{\"description\": \"Amnesty International's public documentation of forced eviction risks highlights human rights violations and raises global awareness\", \"affected_sdgs\": [1, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Planned forced eviction of 400 vulnerable residents (refugees, homeless individuals, and those in drug rehabilitation) violates housing rights and exacerbates marginalization\", \"affected_sdgs\": [1, 3, 10, 11], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 22\", \"ICCPR Article 11\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2138,
+      "event_title": "House passes bipartisan measures to speed geothermal energy projects",
+      "event_url": "https://www.canarymedia.com/articles/geothermal/house-passes-bipartisan-measures-speed-geothermal",
+      "event_source": "Canary Media",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 6.49,
+      "confidence": 8,
+      "justification": "Bipartisan acceleration of geothermal energy advances clean energy transition and climate goals. | The bipartisan passage of H.R. 5631 represents a significant step toward accelerating clean energy deployment, directly supporting SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action). Geothermal energy expansion reduces reliance on fossil fuels and aligns with planetary boundaries by lowering greenhouse gas emissions. No notable ethical violations or negative consequences are identified",
+      "tx_hash": "3p1SepNNmFLsND2gD9kbFEitw75RPEc16VpqjMF4bQVX7ZjJt1xW8wL69q7AmodvMhgq8Ts3SXVxegpEe5zokDjc",
+      "created_at": "2026-06-03T19:04:28.840075+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"U.S. House passes bipartisan Geothermal Energy Advancement Act (H.R. 5631) to accelerate geothermal energy projects, aiming to increase around-the-clock clean electricity supply\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 2137,
       "event_title": "Proposed Reform to Landmark Law Threatens Indigenous Land Rights in Chile",
@@ -47051,8 +47095,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 27,
-        "total_amount": 129200000
+        "count": 28,
+        "total_amount": 130700000
       },
       {
         "country": "Brazil",
@@ -47093,8 +47137,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.376,
-        "events": 117
+        "burn_ratio": 0.373,
+        "events": 118
       },
       {
         "region": "Asia",
@@ -47110,8 +47154,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.75,
-        "events": 120
+        "mint_ratio": 0.744,
+        "events": 121
       },
       {
         "region": "Asia",
@@ -47120,8 +47164,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.624,
-        "events": 117
+        "mint_ratio": 0.627,
+        "events": 118
       },
       {
         "region": "Africa",
@@ -47162,8 +47206,8 @@
       },
       {
         "date": "2026-06-03",
-        "net_minted": 124510000,
-        "net_burned": 79000000
+        "net_minted": 125010000,
+        "net_burned": 80500000
       }
     ],
     "event_of_the_day": {
@@ -47179,9 +47223,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 168,
-        "negative": 306,
+        "positive": 169,
+        "negative": 307,
         "event_ids_positive": [
+          2138,
           2136,
           2119,
           2116,
@@ -47352,6 +47397,7 @@
           1497
         ],
         "event_ids_negative": [
+          2139,
           2137,
           2135,
           2132,
@@ -47662,7 +47708,7 @@
       },
       "UDHR": {
         "positive": 69,
-        "negative": 232,
+        "negative": 233,
         "event_ids_positive": [
           2136,
           2119,
@@ -47735,6 +47781,7 @@
           1518
         ],
         "event_ids_negative": [
+          2139,
           2137,
           2132,
           2131,
@@ -48074,7 +48121,7 @@
       },
       "UNDRIP": {
         "positive": 32,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           2119,
           2075,
@@ -48110,6 +48157,7 @@
           1502
         ],
         "event_ids_negative": [
+          2139,
           2137,
           2107,
           2103,
@@ -48260,9 +48308,10 @@
         ]
       },
       "PB": {
-        "positive": 80,
+        "positive": 81,
         "negative": 74,
         "event_ids_positive": [
+          2138,
           2116,
           2096,
           2093,
@@ -48426,11 +48475,11 @@
       "niche_pct": 47.2,
       "mainstream_pct": 52.8,
       "total_sources_used": 127,
-      "articles_processed": 625
+      "articles_processed": 627
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 625,
+      "total_events": 627,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -48575,10 +48624,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 89,
-        "burn_count": 46,
+        "count": 90,
+        "burn_count": 47,
         "mint_count": 43,
         "event_ids": [
+          2138,
           2136,
           2101,
           2096,
@@ -48671,6 +48721,65 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 51,
+        "burn_count": 21,
+        "mint_count": 30,
+        "event_ids": [
+          2139,
+          2130,
+          2093,
+          2081,
+          2058,
+          2028,
+          2024,
+          2014,
+          2011,
+          1998,
+          1958,
+          1949,
+          1929,
+          1919,
+          1911,
+          1908,
+          1906,
+          1891,
+          1874,
+          1866,
+          1864,
+          1842,
+          1839,
+          1818,
+          1760,
+          1739,
+          1731,
+          1718,
+          1705,
+          1704,
+          1680,
+          1662,
+          1636,
+          1619,
+          1613,
+          1607,
+          1602,
+          1582,
+          1580,
+          1579,
+          1577,
+          1567,
+          1560,
+          1553,
+          1549,
+          1547,
+          1533,
+          1527,
+          1514,
+          1500,
+          1494
+        ]
+      },
+      {
         "name": "Finance",
         "count": 51,
         "burn_count": 15,
@@ -48727,64 +48836,6 @@
           1529,
           1511,
           1499
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 50,
-        "burn_count": 21,
-        "mint_count": 29,
-        "event_ids": [
-          2130,
-          2093,
-          2081,
-          2058,
-          2028,
-          2024,
-          2014,
-          2011,
-          1998,
-          1958,
-          1949,
-          1929,
-          1919,
-          1911,
-          1908,
-          1906,
-          1891,
-          1874,
-          1866,
-          1864,
-          1842,
-          1839,
-          1818,
-          1760,
-          1739,
-          1731,
-          1718,
-          1705,
-          1704,
-          1680,
-          1662,
-          1636,
-          1619,
-          1613,
-          1607,
-          1602,
-          1582,
-          1580,
-          1579,
-          1577,
-          1567,
-          1560,
-          1553,
-          1549,
-          1547,
-          1533,
-          1527,
-          1514,
-          1500,
-          1494
         ]
       },
       {
@@ -48973,24 +49024,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 209,
+      "total_burn": 210,
       "direct_action": {
-        "count": 153,
-        "pct": 73.2
+        "count": 154,
+        "pct": 73.3
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 7.2
+        "pct": 7.1
       },
       "untyped": {
         "count": 41,
-        "pct": 19.6
+        "pct": 19.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 680,
+      "total_burn": 681,
       "direct_action": {
-        "count": 459,
+        "count": 460,
         "pct": 67.5
       },
       "editorial_consciousness": {
@@ -49003,10 +49054,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 416,
+      "total_mint": 417,
       "direct_action": {
-        "count": 280,
-        "pct": 67.3
+        "count": 281,
+        "pct": 67.4
       },
       "editorial_alarm": {
         "count": 26,
@@ -49018,9 +49069,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1426,
+      "total_mint": 1427,
       "direct_action": {
-        "count": 937,
+        "count": 938,
         "pct": 65.7
       },
       "editorial_alarm": {
@@ -49029,13 +49080,13 @@
       },
       "untyped": {
         "count": 393,
-        "pct": 27.6
+        "pct": 27.5
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 189,
-      "institutional": 436,
-      "citizen_ratio": 0.302,
+      "institutional": 438,
+      "citizen_ratio": 0.301,
       "daily": [
         {
           "date": "2026-05-28",
@@ -49070,7 +49121,7 @@
         {
           "date": "2026-06-03",
           "citizen": 15,
-          "institutional": 43
+          "institutional": 45
         }
       ],
       "event_ids_citizen": [
@@ -49265,6 +49316,8 @@
         1490
       ],
       "event_ids_institutional": [
+        2139,
+        2138,
         2132,
         2130,
         2129,
