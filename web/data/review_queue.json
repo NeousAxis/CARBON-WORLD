@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T10:36:39.459315+00:00",
-  "total_pending": 28,
+  "generated_at": "2026-06-03T11:05:32.833878+00:00",
+  "total_pending": 29,
   "reviews": [
     {
       "id": 444,
@@ -558,6 +558,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-03T10:36:34.692338+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 656,
+      "event_title": "EU slams Trump’s forced labor tariff as ‘unjustified’",
+      "event_url": "https://www.politico.eu/article/european-commission-slams-donald-trump-forced-labor-tariffs-as-unjustified/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"EU Commission publicly criticizes a proposed tariff that could enable forced labor practices, framing it as unjustified and threatening transatlantic trade stability\", \"affected_sdgs\": [8, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"Proposed 10% tariff by Trump administration risks enabling forced labor by potentially shielding or incentivizing labor exploitation practices\", \"affected_sdgs\": [8], \"violated_rights\": [\"UDHR Article 4\", \"ILO Forced Labor Convention\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"ethical_synthesis\": \"The EU's criticism of the proposed tariff highlights a commitment to ethical labor standards and human rights, aligning with SDG 8 and UDHR Article 4. However, the tariff itself, if implemented, could undermine these standards by potentially enabling forced labor practices, creating a conflict between trade policy and human rights enforcement.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"EU legal challenge against the tariff is filed and upheld\", \"Evidence of forced labor in targeted supply chains is confirmed\", \"US administration reverses the tariff proposal\", \"WTO rules against the tariff on forced labor grounds\"], \"revaluation_checkpoint\": \"2026-06-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Tariff is blocked by US courts or WTO, EU and US reach a labor-rights-aligned trade agreement, and forced labor enforcement strengthens globally\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Tariff is implemented with weak enforcement, leading to limited impact on forced labor but straining transatlantic relations and eroding labor standards\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Tariff is implemented and expanded, exacerbating forced labor in supply chains, provoking global backlash, and triggering retaliatory trade wars\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.7, \"final_score\": -2.075, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"EU criticism of tariff is positive but outweighed by risk of enabling forced labor.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"EU Commission publicly criticizes a protectionist tariff policy that could undermine labor rights and trade stability\", \"affected_sdgs\": [8, 10, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Proposed 10% tariff by the US under the guise of addressing forced labor risks undermining international trade cooperation and could exacerbate global economic inequalities\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The EU's criticism of the US tariff policy highlights concerns over protectionism and potential harm to labor rights, aligning with SDG 8 (Decent Work) and SDG 10 (Reduced Inequalities). However, the underlying tariff itself, framed as addressing forced labor, risks violating core human rights by destabilizing trade and economic stability, particularly for vulnerable populations.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"US policy reversal or modification of the tariff\", \"EU countermeasures or retaliatory actions\", \"WTO ruling on the tariff's legality\", \"Evidence of actual forced labor in targeted supply chains\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"US reverses the tariff after EU pressure and evidence of minimal forced labor in targeted supply chains\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Tariff remains in place with minor adjustments, leading to prolonged trade tensions but no severe economic disruption\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Tariff escalates into a full trade war, causing significant economic harm and undermining global labor standards\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.15, \"final_score\": -2.23, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"EU criticism insufficient to offset the negative global trade and labor impacts of the tariff.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.37, \"confidence\": 7, \"amount_cbwd\": 150000, \"justification\": \"EU criticism of tariff is positive but outweighed by risk of enabling forced labor.\", \"disagreement\": false, \"reason\": \"consensus\"}",
+      "sentinel_concern": "llm: Polarity error: EU criticism of forced labor tariff is BURN-worthy, not MINT",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-03T11:05:28.686281+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
