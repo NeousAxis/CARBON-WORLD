@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-03T13:04:56.938088+00:00",
-  "total_events": 2105,
+  "generated_at": "2026-06-03T13:35:55.098074+00:00",
+  "total_events": 2107,
   "total_burned": 3129650870,
-  "total_minted": 2925112000,
+  "total_minted": 2931112000,
   "pending_reviews": 30,
   "events": [
+    {
+      "id": 2107,
+      "event_title": "Israel plans big West Bank settlement push many see as illegal",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/israel-plans-big-west-bank-settlement-push-many-see-illegal",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.52,
+      "confidence": 9,
+      "justification": "Government-backed illegal settlement expansion violates core human rights and international law. | The approval of 2,000+ settlement homes in the occupied West Bank directly violates international law, Palestinian rights to self-determination, and multiple human rights frameworks. It entrenches occupation, undermines peace prospects, and exacerbates inequality, representing a severe ethical breach with long-term regional consequences.",
+      "tx_hash": "3K5FL5oD5PY2t2deEvihJEVhDBdcfkzrB4tktvosvEvck3UvLuJ7MgtcFZcBvSCC9fRPdrzBAxCvU1AtQS5Q3kqV",
+      "created_at": "2026-06-03T13:35:50.921054+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israel's government approves expansion of over 2,000 homes in West Bank settlements, which are widely considered illegal under international law and undermine Palestinian territorial integrity and self-determination\", \"affected_sdgs\": [10, 11, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 17\", \"UNDRIP Articles 25-26\", \"CRC Article 3\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2106,
+      "event_title": "A hidden pollutant is changing how the world's forests breathe",
+      "event_url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
+      "event_source": "ScienceDaily",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Scientific discovery of nitrogen pollution's ecosystem impact enables future mitigation but highlights current harm.",
+      "tx_hash": null,
+      "created_at": "2026-06-03T13:17:02.192274+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2105,
       "event_title": "Why the world's most common disease has the least coverage from private insurers and social works",
@@ -46320,13 +46364,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 88,
-        "total_amount": 272180000
+        "count": 87,
+        "total_amount": 270680000
       },
       {
         "country": "Israel",
-        "count": 24,
-        "total_amount": 126750000
+        "count": 25,
+        "total_amount": 131750000
       },
       {
         "country": "France",
@@ -46347,8 +46391,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 29,
-        "total_amount": 134700000
+        "count": 28,
+        "total_amount": 129700000
       },
       {
         "country": "Brazil",
@@ -46384,8 +46428,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.372,
-        "events": 113
+        "burn_ratio": 0.375,
+        "events": 112
       },
       {
         "region": "Africa",
@@ -46402,12 +46446,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 35
+        "events": 36
       },
       {
         "region": "North America",
-        "mint_ratio": 0.736,
-        "events": 121
+        "mint_ratio": 0.739,
+        "events": 119
       },
       {
         "region": "Asia",
@@ -46421,8 +46465,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.628,
-        "events": 113
+        "mint_ratio": 0.625,
+        "events": 112
       }
     ],
     "supply_trend_7d": [
@@ -46458,7 +46502,7 @@
       },
       {
         "date": "2026-06-03",
-        "net_minted": 94060000,
+        "net_minted": 99060000,
         "net_burned": 57000000
       }
     ],
@@ -46475,8 +46519,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 169,
-        "negative": 303,
+        "positive": 168,
+        "negative": 302,
         "event_ids_positive": [
           2096,
           2093,
@@ -46645,10 +46689,10 @@
           1489,
           1485,
           1476,
-          1473,
-          1469
+          1473
         ],
         "event_ids_negative": [
+          2107,
           2105,
           2104,
           2103,
@@ -46949,14 +46993,12 @@
           1480,
           1479,
           1477,
-          1472,
-          1471,
-          1468
+          1472
         ]
       },
       "UDHR": {
         "positive": 66,
-        "negative": 228,
+        "negative": 227,
         "event_ids_positive": [
           2091,
           2086,
@@ -47026,6 +47068,7 @@
           1518
         ],
         "event_ids_negative": [
+          2107,
           2105,
           2104,
           2103,
@@ -47251,9 +47294,7 @@
           1481,
           1480,
           1479,
-          1472,
-          1471,
-          1468
+          1472
         ]
       },
       "ILO": {
@@ -47297,6 +47338,7 @@
           1518
         ],
         "event_ids_negative": [
+          2107,
           2104,
           2083,
           2045,
@@ -47352,13 +47394,12 @@
           1507,
           1505,
           1495,
-          1494,
-          1468
+          1494
         ]
       },
       "UNDRIP": {
         "positive": 31,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           2075,
           2053,
@@ -47393,6 +47434,7 @@
           1502
         ],
         "event_ids_negative": [
+          2107,
           2103,
           2078,
           2074,
@@ -47543,7 +47585,7 @@
         ]
       },
       "PB": {
-        "positive": 83,
+        "positive": 82,
         "negative": 76,
         "event_ids_positive": [
           2096,
@@ -47627,8 +47669,7 @@
           1497,
           1489,
           1476,
-          1473,
-          1469
+          1473
         ],
         "event_ids_negative": [
           2103,
@@ -47714,11 +47755,11 @@
       "niche_pct": 48.8,
       "mainstream_pct": 51.2,
       "total_sources_used": 127,
-      "articles_processed": 629
+      "articles_processed": 626
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 629,
+      "total_events": 626,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -47861,8 +47902,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 92,
-        "burn_count": 47,
+        "count": 91,
+        "burn_count": 46,
         "mint_count": 45,
         "event_ids": [
           2101,
@@ -47955,8 +47996,7 @@
           1491,
           1486,
           1485,
-          1481,
-          1469
+          1481
         ]
       },
       {
@@ -48019,6 +48059,64 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 50,
+        "burn_count": 15,
+        "mint_count": 35,
+        "event_ids": [
+          2107,
+          2096,
+          2064,
+          2057,
+          2051,
+          2045,
+          2029,
+          2013,
+          2012,
+          2011,
+          1982,
+          1970,
+          1969,
+          1964,
+          1958,
+          1933,
+          1926,
+          1922,
+          1919,
+          1914,
+          1901,
+          1884,
+          1863,
+          1849,
+          1839,
+          1788,
+          1784,
+          1774,
+          1773,
+          1762,
+          1729,
+          1719,
+          1695,
+          1690,
+          1687,
+          1686,
+          1658,
+          1648,
+          1646,
+          1636,
+          1612,
+          1596,
+          1594,
+          1571,
+          1570,
+          1549,
+          1544,
+          1529,
+          1511,
+          1499
+        ]
+      },
+      {
         "name": "Defense",
         "count": 50,
         "burn_count": 2,
@@ -48077,67 +48175,9 @@
         ]
       },
       {
-        "name": "Finance",
-        "count": 50,
-        "burn_count": 15,
-        "mint_count": 35,
-        "event_ids": [
-          2096,
-          2064,
-          2057,
-          2051,
-          2045,
-          2029,
-          2013,
-          2012,
-          2011,
-          1982,
-          1970,
-          1969,
-          1964,
-          1958,
-          1933,
-          1926,
-          1922,
-          1919,
-          1914,
-          1901,
-          1884,
-          1863,
-          1849,
-          1839,
-          1788,
-          1784,
-          1774,
-          1773,
-          1762,
-          1729,
-          1719,
-          1695,
-          1690,
-          1687,
-          1686,
-          1658,
-          1648,
-          1646,
-          1636,
-          1612,
-          1596,
-          1594,
-          1571,
-          1570,
-          1549,
-          1544,
-          1529,
-          1511,
-          1499,
-          1471
-        ]
-      },
-      {
         "name": "Tech",
-        "count": 39,
-        "burn_count": 15,
+        "count": 38,
+        "burn_count": 14,
         "mint_count": 24,
         "event_ids": [
           2055,
@@ -48177,15 +48217,14 @@
           1508,
           1487,
           1485,
-          1483,
-          1469
+          1483
         ]
       },
       {
         "name": "Agriculture",
-        "count": 26,
+        "count": 25,
         "burn_count": 14,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           2036,
           2009,
@@ -48211,8 +48250,7 @@
           1541,
           1536,
           1510,
-          1494,
-          1468
+          1494
         ]
       },
       {
@@ -48269,10 +48307,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 211,
+      "total_burn": 210,
       "direct_action": {
-        "count": 154,
-        "pct": 73.0
+        "count": 153,
+        "pct": 72.9
       },
       "editorial_consciousness": {
         "count": 15,
@@ -48280,7 +48318,7 @@
       },
       "untyped": {
         "count": 42,
-        "pct": 19.9
+        "pct": 20.0
       }
     },
     "burn_composition_all_time": {
@@ -48299,9 +48337,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 418,
+      "total_mint": 416,
       "direct_action": {
-        "count": 277,
+        "count": 276,
         "pct": 66.3
       },
       "editorial_alarm": {
@@ -48309,14 +48347,14 @@
         "pct": 6.2
       },
       "untyped": {
-        "count": 115,
-        "pct": 27.5
+        "count": 114,
+        "pct": 27.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1412,
+      "total_mint": 1413,
       "direct_action": {
-        "count": 925,
+        "count": 926,
         "pct": 65.5
       },
       "editorial_alarm": {
@@ -48329,9 +48367,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 192,
-      "institutional": 437,
-      "citizen_ratio": 0.305,
+      "citizen": 190,
+      "institutional": 436,
+      "citizen_ratio": 0.304,
       "daily": [
         {
           "date": "2026-05-28",
@@ -48366,7 +48404,7 @@
         {
           "date": "2026-06-03",
           "citizen": 9,
-          "institutional": 31
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
@@ -48559,11 +48597,10 @@
         1485,
         1484,
         1481,
-        1477,
-        1471,
-        1470
+        1477
       ],
       "event_ids_institutional": [
+        2107,
         2105,
         2104,
         2101,
@@ -48998,9 +49035,7 @@
         1475,
         1474,
         1473,
-        1472,
-        1469,
-        1468
+        1472
       ]
     }
   }
