@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-04T07:35:58.345562+00:00",
-  "total_events": 2202,
+  "generated_at": "2026-06-04T08:05:44.153306+00:00",
+  "total_events": 2203,
   "total_burned": 3284210870,
-  "total_minted": 3062407000,
-  "pending_reviews": 30,
+  "total_minted": 3062557000,
+  "pending_reviews": 31,
   "events": [
+    {
+      "id": 2203,
+      "event_title": "Germany Shut Out of UN Security Council in Diplomatic Blow",
+      "event_url": "https://www.thelocal.de/20260604/germany-shut-out-of-un-security-council-in-diplomatic-blow",
+      "event_source": "The Local Germany (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.4,
+      "confidence": 7,
+      "justification": "Diplomatic exclusion weakens institutional influence and global governance capacity. | Germany's exclusion from the UN Security Council is a negative diplomatic outcome that weakens its institutional influence in global governance. While it may spur diplomatic improvements elsewhere, the immediate impact on Germany's ability to advance peace, justice, and climate action is a net loss for international cooperation.",
+      "tx_hash": "32niJBF8ibgAQQhK5E1wvsFVKHcserG9abpBxMTG31RNJxkudkXya11EdZ9LD32DkY1u62ocgq8Rxv8m9gERaabd",
+      "created_at": "2026-06-04T08:05:39.412099+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Germany's exclusion from the UN Security Council highlights the competitive nature of international diplomacy, encouraging other nations to strengthen their own diplomatic efforts and global engagement.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"The competitive process for Security Council seats may incentivize nations to improve their foreign policy frameworks and international cooperation, indirectly supporting SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Germany's exclusion from the UN Security Council represents a diplomatic setback, potentially weakening its influence in global peacekeeping and conflict resolution efforts.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"The loss of a Security Council seat may reduce Germany's ability to advocate for international norms, human rights, and climate action within the UN framework.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2202,
       "event_title": "US Army Backs Stealthy Robotic Trucks to Transform Military Logistics",
@@ -48528,8 +48550,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.312,
-        "events": 48
+        "burn_ratio": 0.319,
+        "events": 47
       }
     ],
     "top_regions_destructive": [
@@ -48545,8 +48567,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.688,
-        "events": 48
+        "mint_ratio": 0.681,
+        "events": 47
       },
       {
         "region": "Europe",
@@ -48592,7 +48614,7 @@
       },
       {
         "date": "2026-06-04",
-        "net_minted": 74620000,
+        "net_minted": 74770000,
         "net_burned": 50200000
       }
     ],
@@ -48610,7 +48632,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 177,
-        "negative": 314,
+        "negative": 313,
         "event_ids_positive": [
           2201,
           2200,
@@ -48791,6 +48813,7 @@
           1538
         ],
         "event_ids_negative": [
+          2203,
           2202,
           2199,
           2198,
@@ -49102,14 +49125,12 @@
           1542,
           1541,
           1540,
-          1539,
-          1537,
-          1536
+          1539
         ]
       },
       "UDHR": {
         "positive": 77,
-        "negative": 237,
+        "negative": 236,
         "event_ids_positive": [
           2200,
           2187,
@@ -49425,8 +49446,7 @@
           1545,
           1544,
           1543,
-          1541,
-          1537
+          1541
         ]
       },
       "ILO": {
@@ -49532,7 +49552,7 @@
       },
       "UNDRIP": {
         "positive": 33,
-        "negative": 57,
+        "negative": 56,
         "event_ids_positive": [
           2165,
           2151,
@@ -49624,8 +49644,7 @@
           1603,
           1586,
           1553,
-          1547,
-          1537
+          1547
         ]
       },
       "Animal": {
@@ -49723,7 +49742,7 @@
       },
       "PB": {
         "positive": 82,
-        "negative": 73,
+        "negative": 72,
         "event_ids_positive": [
           2166,
           2159,
@@ -49880,8 +49899,7 @@
           1553,
           1542,
           1540,
-          1539,
-          1536
+          1539
         ]
       }
     },
@@ -49889,11 +49907,11 @@
       "niche_pct": 46.2,
       "mainstream_pct": 53.8,
       "total_sources_used": 130,
-      "articles_processed": 656
+      "articles_processed": 655
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 656,
+      "total_events": 655,
       "pct": 1.1
     },
     "active_partners_7d": [],
@@ -49949,10 +49967,11 @@
       },
       {
         "name": "UN",
-        "count": 19,
+        "count": 20,
         "burn_count": 3,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          2203,
           2175,
           2172,
           2168,
@@ -49994,6 +50013,17 @@
         ]
       },
       {
+        "name": "UN Security Council",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          2203,
+          2148,
+          2126
+        ]
+      },
+      {
         "name": "ILO",
         "count": 3,
         "burn_count": 1,
@@ -50002,16 +50032,6 @@
           2161,
           2067,
           1592
-        ]
-      },
-      {
-        "name": "UN Security Council",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          2148,
-          2126
         ]
       },
       {
@@ -50370,9 +50390,9 @@
       },
       {
         "name": "Agriculture",
-        "count": 27,
+        "count": 26,
         "burn_count": 14,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           2192,
           2158,
@@ -50399,8 +50419,7 @@
           1568,
           1548,
           1542,
-          1541,
-          1536
+          1541
         ]
       },
       {
@@ -50483,10 +50502,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 434,
+      "total_mint": 433,
       "direct_action": {
-        "count": 286,
-        "pct": 65.9
+        "count": 285,
+        "pct": 65.8
       },
       "editorial_alarm": {
         "count": 28,
@@ -50494,13 +50513,13 @@
       },
       "untyped": {
         "count": 120,
-        "pct": 27.6
+        "pct": 27.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1479,
+      "total_mint": 1480,
       "direct_action": {
-        "count": 963,
+        "count": 964,
         "pct": 65.1
       },
       "editorial_alarm": {
@@ -50513,9 +50532,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 197,
+      "citizen": 196,
       "institutional": 459,
-      "citizen_ratio": 0.3,
+      "citizen_ratio": 0.299,
       "daily": [
         {
           "date": "2026-05-29",
@@ -50550,7 +50569,7 @@
         {
           "date": "2026-06-04",
           "citizen": 11,
-          "institutional": 22
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -50749,10 +50768,10 @@
         1551,
         1548,
         1547,
-        1538,
-        1537
+        1538
       ],
       "event_ids_institutional": [
+        2203,
         2202,
         2200,
         2198,
@@ -51210,8 +51229,7 @@
         1542,
         1541,
         1540,
-        1539,
-        1536
+        1539
       ]
     }
   }
