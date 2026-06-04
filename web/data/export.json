@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-04T21:06:20.632700+00:00",
-  "total_events": 2301,
-  "total_burned": 3444935870,
-  "total_minted": 3155502000,
-  "pending_reviews": 1,
+  "generated_at": "2026-06-04T21:38:21.639571+00:00",
+  "total_events": 2303,
+  "total_burned": 3451935870,
+  "total_minted": 3157002000,
+  "pending_reviews": 3,
   "events": [
+    {
+      "id": 2303,
+      "event_title": "Trump says U.S. does not need deal with Iran to obtain enriched uranium",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/trump-says-he-does-not-need-deal-iran-get-enriched-uranium",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.76,
+      "confidence": 9,
+      "justification": "Unilateral coercive stance undermines global peace and diplomacy, risking nuclear escalation. | The statements reflect a unilateral and confrontational approach to international relations, prioritizing coercive action over diplomacy. This undermines global peace frameworks (SDG 16), violates principles of multilateralism (UNDRIP), and risks escalating nuclear proliferation concerns. The absence of positive ethical dimensions in this action results in a clear negative ethical judgment.",
+      "tx_hash": "4NjTJjaUGV26MzFaHfpqey7G2bH1P8ips1MiqihYNBgbFuLREuhBKmTssovcGYbNdXVuwrPKbFtg6SyDJw1JBD8Y",
+      "created_at": "2026-06-04T21:38:17.023848+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"U.S. President Donald Trump states the U.S. does not need a deal with Iran to obtain enriched uranium, implying willingness to bypass diplomatic agreements and potentially escalate nuclear tensions\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 26 (Right to Peace)\", \"UNDRIP (collective security undermined)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Trump's refusal to meet Iran's Supreme Leader and dismissive attitude toward diplomatic engagement with Iran undermines international peace efforts and multilateral diplomacy\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28 (Right to a Social and International Order)\", \"UNDRIP (collective security undermined)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2302,
+      "event_title": "Greenpeace concludes month-long Arctic deep sea expedition with findings",
+      "event_url": "https://mastodon.social/@greenpeace/116693084002943733",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Active scientific advocacy expedition with measurable global impact potential. | The expedition represents a proactive, evidence-based effort to document and raise awareness about Arctic deep-sea ecosystems, directly supporting climate action (SDG 13), life below water (SDG 14), and life on land (SDG 15). The public dissemination of findings amplifies its impact, aligning with educational and awareness goals.",
+      "tx_hash": "57GcjuqJYDga3yYpEWovmqNtJvBtgzghJtpZnNuszNxPULWsVPFypvqHorXQuH57CaV1tMG1i6xmKgD3ZSUNJLnF",
+      "created_at": "2026-06-04T21:38:16.804410+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Greenpeace completed a month-long deep sea expedition to the Arctic to document environmental conditions and findings, demonstrating active scientific and advocacy action to raise awareness and protect marine ecosystems.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Publication of findings from the expedition via a formal report and social media dissemination, contributing to global consciousness about Arctic deep-sea ecosystems and potential threats.\", \"affected_sdgs\": [4, 13, 14], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 2301,
       "event_title": "France bans plastic tableware in daycare centers and schools",
@@ -50632,8 +50676,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 90,
-        "total_amount": 259805000
+        "count": 89,
+        "total_amount": 258305000
       },
       {
         "country": "France",
@@ -50718,8 +50762,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.732,
-        "events": 127
+        "mint_ratio": 0.73,
+        "events": 126
       },
       {
         "region": "Asia",
@@ -50770,8 +50814,8 @@
       },
       {
         "date": "2026-06-04",
-        "net_minted": 175215000,
-        "net_burned": 212925000
+        "net_minted": 176715000,
+        "net_burned": 219925000
       }
     ],
     "event_of_the_day": {
@@ -50787,9 +50831,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 174,
-        "negative": 321,
+        "positive": 175,
+        "negative": 320,
         "event_ids_positive": [
+          2302,
           2301,
           2300,
           2299,
@@ -50966,6 +51011,7 @@
           1618
         ],
         "event_ids_negative": [
+          2303,
           2297,
           2296,
           2295,
@@ -51284,9 +51330,7 @@
           1623,
           1621,
           1619,
-          1617,
-          1616,
-          1615
+          1617
         ]
       },
       "UDHR": {
@@ -51371,6 +51415,7 @@
           1624
         ],
         "event_ids_negative": [
+          2303,
           2297,
           2295,
           2294,
@@ -51614,8 +51659,7 @@
           1626,
           1623,
           1621,
-          1617,
-          1615
+          1617
         ]
       },
       "ILO": {
@@ -51757,6 +51801,7 @@
           1650
         ],
         "event_ids_negative": [
+          2303,
           2288,
           2281,
           2278,
@@ -51813,14 +51858,14 @@
           1656,
           1655,
           1654,
-          1626,
-          1615
+          1626
         ]
       },
       "Animal": {
-        "positive": 48,
-        "negative": 38,
+        "positive": 49,
+        "negative": 37,
         "event_ids_positive": [
+          2302,
           2300,
           2299,
           2286,
@@ -51907,14 +51952,14 @@
           1819,
           1760,
           1684,
-          1654,
-          1616
+          1654
         ]
       },
       "PB": {
-        "positive": 81,
-        "negative": 76,
+        "positive": 82,
+        "negative": 75,
         "event_ids_positive": [
+          2302,
           2300,
           2293,
           2286,
@@ -52072,20 +52117,19 @@
           1654,
           1636,
           1635,
-          1619,
-          1616
+          1619
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 41.7,
-      "mainstream_pct": 58.3,
-      "total_sources_used": 127,
-      "articles_processed": 689
+      "niche_pct": 41.3,
+      "mainstream_pct": 58.7,
+      "total_sources_used": 126,
+      "articles_processed": 683
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 689,
+      "total_events": 683,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -52251,10 +52295,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 92,
+        "count": 91,
         "burn_count": 48,
-        "mint_count": 44,
+        "mint_count": 43,
         "event_ids": [
+          2303,
           2296,
           2275,
           2271,
@@ -52344,16 +52389,14 @@
           1636,
           1635,
           1627,
-          1618,
-          1614,
-          1612
+          1618
         ]
       },
       {
         "name": "Finance",
-        "count": 54,
+        "count": 53,
         "burn_count": 20,
-        "mint_count": 34,
+        "mint_count": 33,
         "event_ids": [
           2278,
           2221,
@@ -52407,15 +52450,14 @@
           1658,
           1648,
           1646,
-          1636,
-          1612
+          1636
         ]
       },
       {
         "name": "Defense",
-        "count": 51,
+        "count": 50,
         "burn_count": 4,
-        "mint_count": 47,
+        "mint_count": 46,
         "event_ids": [
           2294,
           2277,
@@ -52466,15 +52508,14 @@
           1677,
           1656,
           1626,
-          1621,
-          1612
+          1621
         ]
       },
       {
         "name": "Construction",
-        "count": 49,
+        "count": 48,
         "burn_count": 22,
-        "mint_count": 27,
+        "mint_count": 26,
         "event_ids": [
           2293,
           2278,
@@ -52523,15 +52564,14 @@
           1680,
           1662,
           1636,
-          1619,
-          1613
+          1619
         ]
       },
       {
         "name": "Tech",
-        "count": 27,
+        "count": 26,
         "burn_count": 11,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           2262,
           2199,
@@ -52558,8 +52598,7 @@
           1732,
           1709,
           1680,
-          1636,
-          1613
+          1636
         ]
       },
       {
@@ -52598,9 +52637,9 @@
       },
       {
         "name": "Transport",
-        "count": 20,
+        "count": 19,
         "burn_count": 6,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           2262,
           2201,
@@ -52620,8 +52659,7 @@
           1724,
           1705,
           1662,
-          1630,
-          1615
+          1630
         ]
       },
       {
@@ -52650,10 +52688,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 243,
+      "total_burn": 244,
       "direct_action": {
-        "count": 162,
-        "pct": 66.7
+        "count": 163,
+        "pct": 66.8
       },
       "editorial_consciousness": {
         "count": 12,
@@ -52661,14 +52699,14 @@
       },
       "untyped": {
         "count": 69,
-        "pct": 28.4
+        "pct": 28.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 753,
+      "total_burn": 754,
       "direct_action": {
-        "count": 495,
-        "pct": 65.7
+        "count": 496,
+        "pct": 65.8
       },
       "editorial_consciousness": {
         "count": 45,
@@ -52676,29 +52714,29 @@
       },
       "untyped": {
         "count": 213,
-        "pct": 28.3
+        "pct": 28.2
       }
     },
     "mint_composition_7d": {
-      "total_mint": 446,
+      "total_mint": 439,
       "direct_action": {
-        "count": 294,
-        "pct": 65.9
+        "count": 293,
+        "pct": 66.7
       },
       "editorial_alarm": {
         "count": 27,
-        "pct": 6.1
+        "pct": 6.2
       },
       "untyped": {
-        "count": 125,
-        "pct": 28.0
+        "count": 119,
+        "pct": 27.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1536,
+      "total_mint": 1537,
       "direct_action": {
-        "count": 1002,
-        "pct": 65.2
+        "count": 1003,
+        "pct": 65.3
       },
       "editorial_alarm": {
         "count": 101,
@@ -52710,9 +52748,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 212,
-      "institutional": 477,
-      "citizen_ratio": 0.308,
+      "citizen": 209,
+      "institutional": 474,
+      "citizen_ratio": 0.306,
       "daily": [
         {
           "date": "2026-05-29",
@@ -52747,7 +52785,7 @@
         {
           "date": "2026-06-04",
           "citizen": 53,
-          "institutional": 86
+          "institutional": 88
         }
       ],
       "event_ids_citizen": [
@@ -52959,12 +52997,11 @@
         1632,
         1627,
         1620,
-        1618,
-        1616,
-        1615,
-        1610
+        1618
       ],
       "event_ids_institutional": [
+        2303,
+        2302,
         2299,
         2296,
         2295,
@@ -53436,12 +53473,7 @@
         1622,
         1621,
         1619,
-        1617,
-        1614,
-        1613,
-        1612,
-        1611,
-        1609
+        1617
       ]
     }
   }
