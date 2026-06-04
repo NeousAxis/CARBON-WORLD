@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-04T08:05:44.153306+00:00",
-  "total_events": 2203,
+  "generated_at": "2026-06-04T08:36:00.517866+00:00",
+  "total_events": 2205,
   "total_burned": 3284210870,
-  "total_minted": 3062557000,
+  "total_minted": 3070607000,
   "pending_reviews": 31,
   "events": [
+    {
+      "id": 2205,
+      "event_title": "Russia ramps up pressure on Armenia ahead of Sunday's crucial election",
+      "event_url": "https://www.france24.com/en/europe/20260604-russia-ramps-pressure-on-armenia-ahead-of-sunday-s-crucial-election",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -5.48,
+      "confidence": 9,
+      "justification": "Russia's economic coercion violates sovereignty and human rights, warranting MINT. | Russia’s economic coercion against Armenia to undermine its sovereignty and EU aspirations constitutes a severe violation of international law and human rights. The action undermines regional stability, economic self-determination, and the right to development, directly conflicting with multiple SDGs and UDHR principles.",
+      "tx_hash": "2xRfUhwjTQwyDpx6jWAUQHMshTW64yYZmL19V4umMSGqhY5xELfw1vgsVA6wxY3VrKu1Ey1uBguXa7hStCRsPvN4",
+      "created_at": "2026-06-04T08:35:56.307679+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Russia threatens economic coercion against Armenia to deter EU integration, including gas price hikes, trade restrictions, and potential suspension from the Eurasian Economic Union\", \"affected_sdgs\": [8, 10, 12, 17], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2204,
+      "event_title": "Between Daniel Jositsch and the Socialist Party, autopsy of a political divorce",
+      "event_url": "https://www.letemps.ch/articles/entre-daniel-jositsch-et-le-parti-socialiste-autopsie-d-un-divorce-politique",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 50000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Party discipline action with minor democratic risks; net negative impact on representation.",
+      "tx_hash": null,
+      "created_at": "2026-06-04T08:17:01.980656+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2203,
       "event_title": "Germany Shut Out of UN Security Council in Diplomatic Blow",
@@ -48545,8 +48589,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.379,
-        "events": 124
+        "burn_ratio": 0.376,
+        "events": 125
       },
       {
         "region": "Asia",
@@ -48572,8 +48616,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.621,
-        "events": 124
+        "mint_ratio": 0.624,
+        "events": 125
       },
       {
         "region": "Latin America",
@@ -48614,7 +48658,7 @@
       },
       {
         "date": "2026-06-04",
-        "net_minted": 74770000,
+        "net_minted": 82770000,
         "net_burned": 50200000
       }
     ],
@@ -48631,7 +48675,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 177,
+        "positive": 176,
         "negative": 313,
         "event_ids_positive": [
           2201,
@@ -48809,10 +48853,10 @@
           1551,
           1550,
           1548,
-          1546,
-          1538
+          1546
         ],
         "event_ids_negative": [
+          2205,
           2203,
           2202,
           2199,
@@ -49124,13 +49168,12 @@
           1543,
           1542,
           1541,
-          1540,
-          1539
+          1540
         ]
       },
       "UDHR": {
-        "positive": 77,
-        "negative": 236,
+        "positive": 76,
+        "negative": 237,
         "event_ids_positive": [
           2200,
           2187,
@@ -49207,10 +49250,10 @@
           1560,
           1557,
           1548,
-          1546,
-          1538
+          1546
         ],
         "event_ids_negative": [
+          2205,
           2199,
           2198,
           2197,
@@ -49649,7 +49692,7 @@
       },
       "Animal": {
         "positive": 50,
-        "negative": 35,
+        "negative": 34,
         "event_ids_positive": [
           2159,
           2158,
@@ -49736,13 +49779,12 @@
           1616,
           1605,
           1590,
-          1576,
-          1539
+          1576
         ]
       },
       "PB": {
         "positive": 82,
-        "negative": 72,
+        "negative": 71,
         "event_ids_positive": [
           2166,
           2159,
@@ -49898,30 +49940,30 @@
           1576,
           1553,
           1542,
-          1540,
-          1539
+          1540
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 46.2,
-      "mainstream_pct": 53.8,
-      "total_sources_used": 130,
-      "articles_processed": 655
+      "niche_pct": 45.7,
+      "mainstream_pct": 54.3,
+      "total_sources_used": 129,
+      "articles_processed": 654
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 655,
+      "total_events": 654,
       "pct": 1.1
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 41,
+        "count": 42,
         "burn_count": 10,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          2205,
           2153,
           2147,
           2134,
@@ -50472,10 +50514,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 222,
+      "total_burn": 221,
       "direct_action": {
-        "count": 164,
-        "pct": 73.9
+        "count": 163,
+        "pct": 73.8
       },
       "editorial_consciousness": {
         "count": 13,
@@ -50483,7 +50525,7 @@
       },
       "untyped": {
         "count": 45,
-        "pct": 20.3
+        "pct": 20.4
       }
     },
     "burn_composition_all_time": {
@@ -50517,10 +50559,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1480,
+      "total_mint": 1481,
       "direct_action": {
-        "count": 964,
-        "pct": 65.1
+        "count": 965,
+        "pct": 65.2
       },
       "editorial_alarm": {
         "count": 100,
@@ -50532,9 +50574,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 196,
+      "citizen": 195,
       "institutional": 459,
-      "citizen_ratio": 0.299,
+      "citizen_ratio": 0.298,
       "daily": [
         {
           "date": "2026-05-29",
@@ -50569,7 +50611,7 @@
         {
           "date": "2026-06-04",
           "citizen": 11,
-          "institutional": 23
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -50767,10 +50809,10 @@
         1552,
         1551,
         1548,
-        1547,
-        1538
+        1547
       ],
       "event_ids_institutional": [
+        2205,
         2203,
         2202,
         2200,
@@ -51228,8 +51270,7 @@
         1543,
         1542,
         1541,
-        1540,
-        1539
+        1540
       ]
     }
   }
