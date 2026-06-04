@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-04T17:37:36.320646+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-06-04T18:06:33.478540+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 700,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-04T17:37:31.731368+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 702,
+      "event_title": "What we found in the Arctic deep sea!",
+      "event_url": "https://www.greenpeace.org/international/story/83928/what-found-arctic-deep-sea/",
+      "event_source": "Greenpeace International",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace-led deep sea expedition to the Arctic conducted for the first time, revealing previously unknown biodiversity and ecological data\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Scientific exploration and public dissemination of findings from an understudied and vulnerable ecosystem, raising global awareness of Arctic deep-sea conservation needs\", \"affected_sdgs\": [4, 13, 14], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The expedition represents a significant positive action by a recognized NGO to document and protect the Arctic deep sea, directly supporting climate action (SDG 13), life below water (SDG 14), and life on land (SDG 15). The scientific and awareness-raising value is substantial, with no identified ethical downsides in this action.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Failure to publish or share expedition data within 12 months\", \"Regulatory rollback on Arctic deep-sea protections in response to findings\", \"Insufficient follow-up actions by governments or institutions based on expedition data\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Expedition data leads to immediate international protections for Arctic deep-sea ecosystems and triggers global conservation funding\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Expedition data is published but limited immediate policy impact; long-term conservation efforts gradually emerge\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Expedition data is suppressed or ignored by policymakers, leading to increased exploitation of Arctic deep-sea resources\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 5.15, \"final_score\": 6.76, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 8, \"justification\": \"First-ever deep-sea Arctic expedition by Greenpeace advances conservation and scientific knowledge.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace-led deep sea expedition to the Arctic conducted for the first time, raising public awareness and scientific knowledge about fragile marine ecosystems\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Expedition likely produced scientific data and documentation to support future conservation policies and marine protection measures\", \"affected_sdgs\": [13, 14], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Act of exploration and public disclosure of findings contributes to global consciousness about Arctic biodiversity and climate impacts on deep sea ecosystems\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The expedition represents a proactive step toward understanding and protecting Arctic deep-sea ecosystems, aligning with climate action, life below water, and biodiversity goals. While the expedition itself has no direct negative ethical aspects, potential future negative impacts could arise if the data is not used to inform protective policies or if the expedition inadvertently disturbs sensitive ecosystems.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Failure to translate findings into policy within 2 years\", \"Expedition causes measurable ecological damage\", \"New technology reveals expedition data was misinterpreted or incomplete\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Expedition findings lead to immediate international protection measures for Arctic deep-sea zones, supported by robust scientific consensus and public pressure\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Findings contribute to gradual policy shifts and increased funding for Arctic marine research, but full protection is delayed by geopolitical and economic interests\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Expedition data is ignored or misused, leading to increased exploitation of Arctic deep-sea resources without adequate safeguards\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 4.15, \"final_score\": 5.41, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"First-of-its-kind expedition advancing Arctic marine science and conservation awareness.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.08, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"Greenpeace's Arctic deep-sea expedition promotes conservation, scientific knowledge, and public awareness, supporting global sustainability goals.\", \"disagreement\": true, \"reason\": \"Analyst A correctly emphasizes the institutional action's positive impact on conservation and awareness. While Analyst B is cautious about future implications, the current action is clearly protective and informative.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-04T18:06:28.743833+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
