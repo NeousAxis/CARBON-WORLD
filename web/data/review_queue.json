@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-04T22:05:58.405227+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-06-04T22:34:49.702591+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 704,
@@ -38,26 +38,6 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-04T21:38:17.019067+00:00",
-      "resolved_at": null,
-      "human_review_embedding": null,
-      "final_decision": null
-    },
-    {
-      "id": 706,
-      "event_title": "Several New Zealanders almost gave sensitive information to China, SIS boss says",
-      "event_url": "https://www.rnz.co.nz/news/political/597285/several-new-zealanders-almost-gave-sensitive-information-to-china-sis-boss-says",
-      "event_source": "RNZ Pacific (Radio NZ)",
-      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Increased awareness of national security risks and potential threats to sensitive information.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential compromise of national security and sensitive government information due to targeted individuals.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The event highlights a growing national security concern as individuals with access to sensitive information are targeted. While the warning raises awareness (supporting SDG 16), the risk of information compromise undermines rights to privacy and security.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of new national security protocols\", \"Public response and education on cyber threats\", \"Follow-up reports on whether any information was actually compromised\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Effective national security measures prevent future breaches and raise public awareness.\", \"probability\": 0.25, \"score\": 5}, {\"name\": \"B\", \"description\": \"Moderate success in mitigating threats, but ongoing vulnerabilities remain.\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"Significant breach occurs, leading to long-term national security consequences.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -2.25, \"final_score\": -2.44, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Event signals a negative trend in national security risks.\", \"event_country\": \"New Zealand\"}",
-      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"New Zealand Security Intelligence Service (SIS) publicly warns about foreign interference risks, raising public awareness of national security threats\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Foreign actors (implied China) attempting to extract sensitive government information from New Zealand citizens, posing risks to national security and sovereignty\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 12 (Privacy)\", \"UDHR Article 19 (Freedom of Opinion)\", \"UNDRIP (if indigenous communities targeted)\"], \"magnitude\": 7, \"frameworks\": [\"UDHR\", \"UNDRIP\"]}], \"ethical_synthesis\": \"The SIS's public warning serves as a protective measure for national security and democratic integrity, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying issue of foreign interference undermines sovereignty and privacy rights, violating core UDHR principles. The net ethical position is mixed but leans slightly positive due to the proactive disclosure of a critical threat.\", \"snapshot_score\": 2.5, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Effectiveness of SIS countermeasures in preventing breaches\", \"Public trust in government response to foreign interference\", \"Geopolitical tensions escalating or de-escalating\", \"Legislative changes strengthening or weakening oversight\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"SIS successfully thwarts foreign interference attempts with robust public awareness campaigns and legislative reforms, reducing risks long-term\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Foreign interference continues at low levels, but public awareness prevents major breaches; government response remains reactive\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Major breach occurs due to inadequate countermeasures, leading to erosion of public trust and geopolitical tensions\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 0.75, \"final_score\": 1.11, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 8, \"justification\": \"Public warning mitigates harm but underlying foreign interference remains a systemic risk.\", \"event_country\": \"New Zealand\"}",
-      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.67, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional warning mitigates harm but underlying foreign interference threat persists.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (warning) as protective (BURN), while Analyst B's NEUTRAL stance overlooks the punitive/protective intent of the SIS's response. The event's core is the institutional action (warning), not the foreign interference threat itself.\"}",
-      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: institutional warning (protective) scored BURN, but Analyst A correctly flags MINT for systemic risk.",
-      "suggested_decision": "MINT",
-      "suggested_amount_crbn": 150000,
-      "human_verdict": null,
-      "human_amount": null,
-      "human_reason": null,
-      "status": "pending",
-      "created_at": "2026-06-04T21:38:17.207740+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
