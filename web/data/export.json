@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-04T22:34:49.549070+00:00",
-  "total_events": 2309,
-  "total_burned": 3457635870,
-  "total_minted": 3173802000,
-  "pending_reviews": 2,
+  "generated_at": "2026-06-04T23:06:26.252069+00:00",
+  "total_events": 2311,
+  "total_burned": 3462635870,
+  "total_minted": 3176552000,
+  "pending_reviews": 3,
   "events": [
+    {
+      "id": 2311,
+      "event_title": "US sanctions Cuban president and Castro relatives in latest pressure campaign",
+      "event_url": "https://www.france24.com/en/americas/20260604-us-sanctions-cuban-president-and-castro-relatives-in-latest-pressure-campaign",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 2750000,
+      "final_score": -4.01,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] Both analysts agree sanctions harm civilians and violate norms, outweighing geopolitical aims. | The US sanctions target a sovereign government and its leadership, violating fundamental human rights to self-determination, freedom of expression, and economic security. While framed as a pressure campaign, the action undermines international norms of non-interference and collective well-being, d",
+      "tx_hash": "2z3N392stT2pXyVHyJKrvzMrDzZuV41SpMTtvKUipEFX1VMzBxaL33jezTwpqTB7mcAvMFzUfDmrCP7kVn6DreJm",
+      "created_at": "2026-06-04T23:06:21.637759+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US imposes sanctions on Cuban president and Castro relatives, escalating economic pressure on Cuba's government\", \"affected_sdgs\": [8, 10, 16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 19\", \"UDHR Article 22\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2310,
+      "event_title": "From the Field: In crisis-hit Middle East, renewables power daily life",
+      "event_url": "https://news.un.org/feed/view/en/story/2026/06/1167651",
+      "event_source": "UN News Climate",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.19,
+      "confidence": 9,
+      "justification": "Both analysts agree on positive ethical impact; consensus on BURN upheld. | The adoption of renewables in crisis-hit Middle Eastern countries directly addresses critical infrastructure needs while advancing climate action and sustainable development. There are no identified negative aspects in this action, as it aligns with multiple SDGs and planetary boundaries without evident harm.",
+      "tx_hash": "bCVR7BYC8JyoaFMxSigQ6ADtA5djipNudj7Cj5bogH2BFSoFXixvhcSt9qUhY8unGvfjZbparbsHEHc7iBB1N9d",
+      "created_at": "2026-06-04T23:06:21.511680+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Middle Eastern countries adopt renewable energy to power essential infrastructure (hospitals, schools, street lighting) amid severe energy access challenges, demonstrating a shift toward sustainable energy solutions in crisis conditions.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Renewable energy deployment in crisis-hit regions addresses immediate humanitarian needs while reducing reliance on fossil fuels, aligning with climate resilience and sustainable development.\", \"affected_sdgs\": [3, 7, 11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 2309,
       "event_title": "STAT+: Drug companies, patient groups urge FDA to pause commissioner’s voucher program",
@@ -50809,7 +50853,7 @@
       {
         "country": "United States",
         "count": 92,
-        "total_amount": 274955000
+        "total_amount": 269705000
       },
       {
         "country": "France",
@@ -50862,8 +50906,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.483,
-        "events": 29
+        "burn_ratio": 0.5,
+        "events": 28
       },
       {
         "region": "Africa",
@@ -50946,8 +50990,8 @@
       },
       {
         "date": "2026-06-04",
-        "net_minted": 193365000,
-        "net_burned": 225625000
+        "net_minted": 196115000,
+        "net_burned": 230625000
       }
     ],
     "event_of_the_day": {
@@ -50964,8 +51008,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 176,
-        "negative": 322,
+        "negative": 321,
         "event_ids_positive": [
+          2310,
           2306,
           2305,
           2302,
@@ -51140,10 +51185,10 @@
           1632,
           1630,
           1624,
-          1622,
-          1620
+          1622
         ],
         "event_ids_negative": [
+          2311,
           2309,
           2307,
           2304,
@@ -51463,9 +51508,7 @@
           1635,
           1634,
           1626,
-          1623,
-          1621,
-          1619
+          1623
         ]
       },
       "UDHR": {
@@ -51551,6 +51594,7 @@
           1624
         ],
         "event_ids_negative": [
+          2311,
           2309,
           2307,
           2304,
@@ -51796,8 +51840,7 @@
           1635,
           1634,
           1626,
-          1623,
-          1621
+          1623
         ]
       },
       "ILO": {
@@ -51907,7 +51950,7 @@
       },
       "UNDRIP": {
         "positive": 30,
-        "negative": 59,
+        "negative": 60,
         "event_ids_positive": [
           2298,
           2282,
@@ -51941,6 +51984,7 @@
           1650
         ],
         "event_ids_negative": [
+          2311,
           2307,
           2303,
           2288,
@@ -52003,7 +52047,7 @@
         ]
       },
       "Animal": {
-        "positive": 49,
+        "positive": 48,
         "negative": 37,
         "event_ids_positive": [
           2302,
@@ -52053,8 +52097,7 @@
           1665,
           1658,
           1651,
-          1632,
-          1620
+          1632
         ],
         "event_ids_negative": [
           2295,
@@ -52097,9 +52140,10 @@
         ]
       },
       "PB": {
-        "positive": 82,
-        "negative": 76,
+        "positive": 83,
+        "negative": 75,
         "event_ids_positive": [
+          2310,
           2306,
           2302,
           2300,
@@ -52258,20 +52302,19 @@
           1655,
           1654,
           1636,
-          1635,
-          1619
+          1635
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 41.3,
-      "mainstream_pct": 58.7,
+      "niche_pct": 40.5,
+      "mainstream_pct": 59.5,
       "total_sources_used": 126,
-      "articles_processed": 686
+      "articles_processed": 685
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 686,
+      "total_events": 685,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -52600,9 +52643,10 @@
       {
         "name": "Construction",
         "count": 50,
-        "burn_count": 23,
-        "mint_count": 27,
+        "burn_count": 24,
+        "mint_count": 26,
         "event_ids": [
+          2310,
           2307,
           2306,
           2293,
@@ -52651,15 +52695,14 @@
           1704,
           1680,
           1662,
-          1636,
-          1619
+          1636
         ]
       },
       {
         "name": "Defense",
-        "count": 50,
+        "count": 49,
         "burn_count": 4,
-        "mint_count": 46,
+        "mint_count": 45,
         "event_ids": [
           2294,
           2277,
@@ -52709,8 +52752,7 @@
           1679,
           1677,
           1656,
-          1626,
-          1621
+          1626
         ]
       },
       {
@@ -52836,12 +52878,12 @@
     "burn_composition_7d": {
       "total_burn": 245,
       "direct_action": {
-        "count": 165,
-        "pct": 67.3
+        "count": 166,
+        "pct": 67.8
       },
       "editorial_consciousness": {
-        "count": 11,
-        "pct": 4.5
+        "count": 10,
+        "pct": 4.1
       },
       "untyped": {
         "count": 69,
@@ -52849,25 +52891,25 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 756,
+      "total_burn": 757,
       "direct_action": {
-        "count": 498,
+        "count": 499,
         "pct": 65.9
       },
       "editorial_consciousness": {
         "count": 45,
-        "pct": 6.0
+        "pct": 5.9
       },
       "untyped": {
         "count": 213,
-        "pct": 28.2
+        "pct": 28.1
       }
     },
     "mint_composition_7d": {
-      "total_mint": 441,
+      "total_mint": 440,
       "direct_action": {
-        "count": 295,
-        "pct": 66.9
+        "count": 294,
+        "pct": 66.8
       },
       "editorial_alarm": {
         "count": 27,
@@ -52879,9 +52921,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1540,
+      "total_mint": 1541,
       "direct_action": {
-        "count": 1006,
+        "count": 1007,
         "pct": 65.3
       },
       "editorial_alarm": {
@@ -52894,9 +52936,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 210,
+      "citizen": 209,
       "institutional": 476,
-      "citizen_ratio": 0.306,
+      "citizen_ratio": 0.305,
       "daily": [
         {
           "date": "2026-05-29",
@@ -52931,7 +52973,7 @@
         {
           "date": "2026-06-04",
           "citizen": 55,
-          "institutional": 91
+          "institutional": 93
         }
       ],
       "event_ids_citizen": [
@@ -53143,10 +53185,11 @@
         1639,
         1633,
         1632,
-        1627,
-        1620
+        1627
       ],
       "event_ids_institutional": [
+        2311,
+        2310,
         2309,
         2306,
         2304,
@@ -53620,9 +53663,7 @@
         1625,
         1624,
         1623,
-        1622,
-        1621,
-        1619
+        1622
       ]
     }
   }

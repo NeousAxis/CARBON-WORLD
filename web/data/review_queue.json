@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-04T22:34:49.702591+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-06-04T23:06:26.487902+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 704,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-04T21:38:17.019067+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 707,
+      "event_title": "Ukrainian President offers Putin direct peace talks",
+      "event_url": "https://www.tagesschau.de/ausland/europa/ukraine-selenskyj-brief-putin-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ukrainian President Volodymyr Zelenskyy initiates direct peace talks with Russian President Vladimir Putin, signaling a diplomatic effort to end the war.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Russian President Vladimir Putin reiterates his conditions for negotiations, which include territorial concessions and undermine Ukraine's sovereignty.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 2\", \"UDHR Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Zelenskyy's initiative for direct peace talks represents a positive diplomatic step toward ending the war and restoring peace (SDG 16). However, Putin's insistence on territorial concessions undermines Ukraine's sovereignty and violates fundamental rights to self-determination and equality.\", \"snapshot_score\": -1.5, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Formal acceptance of peace talks by both sides\", \"Implementation of a verified ceasefire\", \"International mediation involvement\"], \"revaluation_checkpoint\": \"2025-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Successful peace agreement with verified compliance and international support\", \"probability\": 0.2, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial agreement with ongoing tensions and sporadic violence\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Failed negotiations leading to prolonged conflict and increased suffering\", \"probability\": 0.3, \"score\": -9}], \"prospective_score\": -1.3, \"final_score\": -1.8, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 6, \"justification\": \"Peace overtures are positive, but Putin's stance enables ongoing harm.\", \"event_country\": \"Ukraine\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Ukrainian President Zelenskyy's offer of direct peace talks with Putin demonstrates a commitment to dialogue and conflict resolution, aligning with SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Putin's reiteration of conditions for talks suggests continued obstruction or lack of genuine willingness to engage in good faith, undermining the potential for meaningful peace.\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 5, \"frameworks\": [\"UDHR\"]}], \"ethical_synthesis\": \"Zelenskyy's offer of direct peace talks represents a positive step toward conflict resolution and aligns with international peace frameworks. However, Putin's conditional stance introduces uncertainty and potential for continued stalemate, diluting the ethical weight of the offer.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Successful initiation of direct talks within 6 months\", \"Escalation of hostilities despite talks\", \"International mediation efforts yielding tangible progress\", \"Public sentiment in Russia shifting significantly toward peace\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Direct talks commence within 3 months, leading to a ceasefire and framework for negotiations, with international support.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Talks stall due to Putin's preconditions, but no major escalation occurs; diplomatic efforts continue.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Talks collapse, leading to renewed large-scale hostilities and international sanctions escalation.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.95, \"final_score\": 2.86, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Peace offer is ethically positive but undermined by conditional stance; net neutral impact.\", \"event_country\": \"Ukraine\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.02, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Initiative is positive but conditional stance by Putin enables harm.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action: Zelenskyy's peace overture is a MINT (positive), but Putin's conditional stance (enabling harm) dominates the ethical evaluation. Analyst B's neutrality underweights the harm-enabling action.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict direction flipped: peace overture is positive (BURN), but final decision is MINT, a polarity error.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-04T23:06:21.506899+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
