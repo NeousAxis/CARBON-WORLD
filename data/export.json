@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-04T12:06:26.967969+00:00",
-  "total_events": 2223,
+  "generated_at": "2026-06-04T12:35:08.652280+00:00",
+  "total_events": 2225,
   "total_burned": 3315210870,
-  "total_minted": 3086857000,
-  "pending_reviews": 32,
+  "total_minted": 3088482000,
+  "pending_reviews": 31,
   "events": [
+    {
+      "id": 2225,
+      "event_title": "Amnesty International calls for release of hostages and end to violence in Manipur",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/06/india-release-all-hostages-and-end-cycle-of-violence-in-manipur/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.78,
+      "confidence": 9,
+      "justification": "Amnesty's advocacy is a corrective action against ongoing human rights violations and hostage-taking. | Amnesty International's call to release hostages and end violence is a clear positive action aligned with human rights frameworks, aiming to protect civilians and uphold UDHR principles. However, the underlying crisis of inter-ethnic violence and hostage-taking represents a severe violation of fundamental rights, with significant humanitarian consequences.",
+      "tx_hash": "3sbAAyi8uCdiNKVPNBwnLfwv1DRjbtU1YBgQWXpueRnKWk5Y3RFYzHvBFvNwJVbSXC1wcE1NEnNtfXZz3TbyZYeB",
+      "created_at": "2026-06-04T12:35:04.449437+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"Amnesty International issues a public call for the immediate and unconditional release of civilians held hostage in Manipur, India, and an end to violence, demonstrating active human rights advocacy and pressure on authorities.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Escalating inter-ethnic violence in Manipur has resulted in civilians being taken hostage by armed groups, reflecting a deepening human rights crisis and failure of authorities to protect populations.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2224,
+      "event_title": "Norway joins EU countries in demanding visa crackdown on Russian tourists",
+      "event_url": "https://www.thelocal.no/20260604/norway-joins-eu-countries-in-demanding-visa-crackdown-on-russian-tourists",
+      "event_source": "The Local Norway (EN)",
+      "decision": "MINT",
+      "amount_crbn": 125000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch: A==B==suggested unanimous, only sentinel missing_aspects flag — reversible via worker/reverse_event.py | Visa crackdown risks deepening geopolitical tensions and violating rights to freedom of movement.",
+      "tx_hash": null,
+      "created_at": "2026-06-04T12:17:01.571029+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2223,
       "event_title": "Squid fishing: An NGO denounces destructive practices, abuses and forced labor at sea",
@@ -48953,8 +48997,8 @@
       },
       {
         "country": "Brazil",
-        "count": 10,
-        "total_amount": 51000000
+        "count": 9,
+        "total_amount": 46000000
       },
       {
         "country": "Spain",
@@ -48980,18 +49024,18 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.447,
-        "events": 38
+        "burn_ratio": 0.444,
+        "events": 36
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.375,
-        "events": 128
+        "burn_ratio": 0.378,
+        "events": 127
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.312,
-        "events": 48
+        "burn_ratio": 0.306,
+        "events": 49
       }
     ],
     "top_regions_destructive": [
@@ -49007,18 +49051,18 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.688,
-        "events": 48
+        "mint_ratio": 0.694,
+        "events": 49
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.625,
-        "events": 128
+        "mint_ratio": 0.622,
+        "events": 127
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.553,
-        "events": 38
+        "mint_ratio": 0.556,
+        "events": 36
       }
     ],
     "supply_trend_7d": [
@@ -49054,7 +49098,7 @@
       },
       {
         "date": "2026-06-04",
-        "net_minted": 98220000,
+        "net_minted": 99720000,
         "net_burned": 81200000
       }
     ],
@@ -49071,8 +49115,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 178,
-        "negative": 315,
+        "positive": 177,
+        "negative": 314,
         "event_ids_positive": [
           2221,
           2220,
@@ -49250,10 +49294,10 @@
           1566,
           1565,
           1560,
-          1557,
-          1551
+          1557
         ],
         "event_ids_negative": [
+          2225,
           2223,
           2219,
           2218,
@@ -49566,14 +49610,12 @@
           1564,
           1561,
           1559,
-          1558,
-          1553,
-          1552
+          1558
         ]
       },
       "UDHR": {
         "positive": 77,
-        "negative": 239,
+        "negative": 238,
         "event_ids_positive": [
           2221,
           2220,
@@ -49654,6 +49696,7 @@
           1557
         ],
         "event_ids_negative": [
+          2225,
           2223,
           2219,
           2218,
@@ -49890,14 +49933,12 @@
           1568,
           1561,
           1559,
-          1558,
-          1553,
-          1552
+          1558
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 12,
+        "negative": 13,
         "event_ids_positive": [
           1958,
           1933,
@@ -49906,6 +49947,7 @@
           1592
         ],
         "event_ids_negative": [
+          2225,
           2223,
           2197,
           2176,
@@ -49997,8 +50039,8 @@
         ]
       },
       "UNDRIP": {
-        "positive": 34,
-        "negative": 57,
+        "positive": 33,
+        "negative": 56,
         "event_ids_positive": [
           2214,
           2212,
@@ -50032,8 +50074,7 @@
           1591,
           1588,
           1587,
-          1569,
-          1551
+          1569
         ],
         "event_ids_negative": [
           2223,
@@ -50091,12 +50132,11 @@
           1615,
           1604,
           1603,
-          1586,
-          1553
+          1586
         ]
       },
       "Animal": {
-        "positive": 50,
+        "positive": 49,
         "negative": 37,
         "event_ids_positive": [
           2212,
@@ -50147,8 +50187,7 @@
           1573,
           1569,
           1565,
-          1557,
-          1551
+          1557
         ],
         "event_ids_negative": [
           2223,
@@ -50191,8 +50230,8 @@
         ]
       },
       "PB": {
-        "positive": 82,
-        "negative": 72,
+        "positive": 81,
+        "negative": 71,
         "event_ids_positive": [
           2214,
           2212,
@@ -50274,8 +50313,7 @@
           1569,
           1567,
           1565,
-          1560,
-          1551
+          1560
         ],
         "event_ids_negative": [
           2223,
@@ -50348,20 +50386,19 @@
           1604,
           1590,
           1579,
-          1576,
-          1553
+          1576
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 45.7,
-      "mainstream_pct": 54.3,
-      "total_sources_used": 129,
-      "articles_processed": 658
+      "niche_pct": 46.1,
+      "mainstream_pct": 53.9,
+      "total_sources_used": 128,
+      "articles_processed": 653
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 658,
+      "total_events": 653,
       "pct": 1.1
     },
     "active_partners_7d": [],
@@ -50740,9 +50777,9 @@
       },
       {
         "name": "Construction",
-        "count": 49,
+        "count": 48,
         "burn_count": 23,
-        "mint_count": 26,
+        "mint_count": 25,
         "event_ids": [
           2202,
           2200,
@@ -50791,15 +50828,14 @@
           1579,
           1577,
           1567,
-          1560,
-          1553
+          1560
         ]
       },
       {
         "name": "Tech",
-        "count": 33,
-        "burn_count": 12,
-        "mint_count": 21,
+        "count": 31,
+        "burn_count": 11,
+        "mint_count": 20,
         "event_ids": [
           2199,
           2124,
@@ -50831,9 +50867,7 @@
           1588,
           1579,
           1577,
-          1564,
-          1553,
-          1551
+          1564
         ]
       },
       {
@@ -50921,18 +50955,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 223,
+      "total_burn": 221,
       "direct_action": {
         "count": 166,
-        "pct": 74.4
+        "pct": 75.1
       },
       "editorial_consciousness": {
-        "count": 12,
-        "pct": 5.4
+        "count": 11,
+        "pct": 5.0
       },
       "untyped": {
-        "count": 45,
-        "pct": 20.2
+        "count": 44,
+        "pct": 19.9
       }
     },
     "burn_composition_all_time": {
@@ -50951,24 +50985,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 435,
+      "total_mint": 432,
       "direct_action": {
-        "count": 286,
-        "pct": 65.7
+        "count": 285,
+        "pct": 66.0
       },
       "editorial_alarm": {
         "count": 29,
         "pct": 6.7
       },
       "untyped": {
-        "count": 120,
-        "pct": 27.6
+        "count": 118,
+        "pct": 27.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1491,
+      "total_mint": 1492,
       "direct_action": {
-        "count": 974,
+        "count": 975,
         "pct": 65.3
       },
       "editorial_alarm": {
@@ -50981,9 +51015,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 199,
-      "institutional": 459,
-      "citizen_ratio": 0.302,
+      "citizen": 195,
+      "institutional": 458,
+      "citizen_ratio": 0.299,
       "daily": [
         {
           "date": "2026-05-29",
@@ -51018,7 +51052,7 @@
         {
           "date": "2026-06-04",
           "citizen": 17,
-          "institutional": 33
+          "institutional": 34
         }
       ],
       "event_ids_citizen": [
@@ -51216,13 +51250,10 @@
         1568,
         1567,
         1566,
-        1565,
-        1556,
-        1553,
-        1552,
-        1551
+        1565
       ],
       "event_ids_institutional": [
+        2225,
         2221,
         2220,
         2218,
@@ -51679,9 +51710,7 @@
         1560,
         1559,
         1558,
-        1557,
-        1555,
-        1554
+        1557
       ]
     }
   }
