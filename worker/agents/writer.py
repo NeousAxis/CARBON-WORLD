@@ -16,6 +16,8 @@ from db import (
 )
 from geo_extractor import extract_geo, resolve_country_metadata
 from solana_executor import execute_decision
+from auto_resolve import try_auto_resolve
+import config
 
 logger = logging.getLogger("agent.writer")
 
@@ -162,7 +164,33 @@ def write(event: dict) -> bool:
         logger.info("Already in DB, skipping: '%s'", title[:60])
         return False
 
-    # --- Sentinel gate: route to review_queue if incoherent ---
+    # --- Sentinel gate: the learned corrector gets first refusal ---
+    # Before a flagged event reaches the human queue, ask whether the
+    # accumulated human-review corpus can resolve it confidently
+    # (worker/auto_resolve.py). This is the self-learning loop: the agent
+    # reuses Cyril's past judgments instead of re-asking. Mode = AUTO_RESOLVE_MODE.
+    if event.get("_needs_review"):
+        verdict = try_auto_resolve(event)
+        mode = str(getattr(config, "AUTO_RESOLVE_MODE", "disabled")).lower()
+        if verdict and mode == "active":
+            # The learned layer is confident — override the (possibly buggy)
+            # reconciled verdict and let the happy path execute it on Solana.
+            analysis["decision"] = verdict["decision"]
+            analysis["amount_cbwd"] = int(verdict.get("amount_cbwd", 0) or 0)
+            event["_auto_resolved"] = verdict
+            event["_needs_review"] = False
+            logger.info(
+                "AUTO-RESOLVED [%s %d CBWD via %s] '%s' (%s)",
+                verdict["decision"], int(verdict.get("amount_cbwd", 0) or 0),
+                verdict["basis"], title[:50], verdict.get("detail", ""),
+            )
+        elif verdict:  # shadow — log what it would do, but still queue
+            logger.info(
+                "AUTO-RESOLVE(%s) would resolve [%s via %s] '%s' (%s) — queuing anyway",
+                mode, verdict["decision"], verdict["basis"], title[:50],
+                verdict.get("detail", ""),
+            )
+
     if event.get("_needs_review"):
         ok = _route_to_review(event, article, analysis)
         if ok:
@@ -177,6 +205,12 @@ def write(event: dict) -> bool:
 
     # --- Happy path: persist to carbon_events + Solana tx ---
     justification = _build_justification(analysis)
+    if event.get("_auto_resolved"):
+        ar_v = event["_auto_resolved"]
+        justification = (
+            f"[Auto-resolved by learned corrector: {ar_v.get('basis')} — "
+            f"{ar_v.get('detail', '')}] {justification}"
+        )[:500]
 
     # Extract geographic metadata.
     # Priority: the Analyst LLM contextually decides who is the primary actor.

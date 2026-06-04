@@ -76,3 +76,21 @@ SEMANTIC_MODEL_NAME: str = os.getenv("SEMANTIC_MODEL_NAME", "all-MiniLM-L6-v2")
 # Validated 2026-04-27: ship in "dry_run" first for 24 h, then flip to "active"
 # after Cyril reviews the structured log written to logs/calibrator_dryrun.jsonl.
 MAGNITUDE_CALIBRATOR_MODE: str = os.getenv("MAGNITUDE_CALIBRATOR_MODE", "disabled").lower()
+
+# Auto-resolver (learned corrector, worker/auto_resolve.py). Consumes the human
+# /review corpus to decide Sentinel-flagged events autonomously instead of
+# piling them up in the queue. Three modes:
+#   - "disabled" : never runs — every flagged event goes to the human queue.
+#   - "shadow"   : computes & logs what it WOULD resolve, but still queues the
+#                  event (no Solana TX). Validate precision in prod before trust.
+#   - "active"   : applies the learned verdict, skips the queue, fires the TX.
+# Signal 1 (analyst-consensus) validated 2026-06-04 at 94.4% confirm-rate over
+# 360 historical reviews; replay of the 31 stuck events: 18 auto-resolved, 18/18
+# correct, with safe abstention on genuine analyst disagreement.
+AUTO_RESOLVE_MODE: str = os.getenv("AUTO_RESOLVE_MODE", "disabled").lower()
+AUTO_RESOLVE_CONSENSUS_MIN_RATE: float = float(
+    os.getenv("AUTO_RESOLVE_CONSENSUS_MIN_RATE", "0.85")
+)
+AUTO_RESOLVE_PRECEDENT_THRESHOLD: float = float(
+    os.getenv("AUTO_RESOLVE_PRECEDENT_THRESHOLD", "0.70")
+)
