@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T15:37:06.671613+00:00",
-  "total_pending": 4,
+  "generated_at": "2026-06-05T16:06:17.653143+00:00",
+  "total_pending": 5,
   "reviews": [
     {
       "id": 704,
@@ -78,6 +78,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-05T15:37:01.101191+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 713,
+      "event_title": "Protests erupt in Albania against luxury resort near protected area",
+      "event_url": "https://www.tagesschau.de/ausland/europa/proteste-albanien-luxusressort-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led protests against a luxury resort project threatening a protected area demonstrate active public engagement in environmental protection and democratic participation\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Media coverage (Tagesschau) amplifies the protest, increasing public awareness of environmental and land-use issues in Albania\", \"affected_sdgs\": [4, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Approval and development of a luxury resort near a protected area, potentially violating environmental and land-use regulations\", \"affected_sdgs\": [11, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The protests represent a positive civic response to a potentially harmful development, aligning with environmental protection and democratic principles. However, the underlying project itself undermines sustainability and biodiversity goals, creating a conflict between citizen action and institutional decisions.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Completion of environmental impact assessment\", \"Government response to protests\", \"EU candidacy progress affecting environmental standards\", \"Legal challenges filed by NGOs\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Protests succeed in stopping the project, leading to stronger environmental protections and EU candidacy benefits\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Project proceeds with minor modifications, protests continue but fail to halt development\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Project expands, triggering mass protests, violent crackdowns, and international condemnation\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.1, \"final_score\": -1.745, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Luxury resort approval near protected area outweighs protest impact; environmental harm risk high.\", \"event_country\": \"Albania\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led protests against a luxury resort project threatening a protected area demonstrate active civic engagement and environmental consciousness\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Protests highlight public opposition to environmentally damaging development, signaling societal demand for sustainable policies\", \"affected_sdgs\": [11, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The luxury resort project itself, linked to a high-profile international figure, represents environmentally harmful development in a protected area\", \"affected_sdgs\": [11, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The protests constitute a positive civic action opposing environmental harm, aligning with SDGs 11, 13, and 15. However, the underlying project being protested is a negative development that threatens biodiversity and protected areas. The net ethical position is cautiously positive due to the active resistance to harm, despite the harm's existence.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Project cancellation or modification by 2026\", \"Legal injunctions halting construction\", \"Government policy shift protecting the area\", \"International pressure via EU accession talks\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Protests succeed in stopping the project and lead to permanent protection of the area, with broader environmental policy reforms in Albania\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Protests delay the project but fail to stop it; environmental damage occurs but is mitigated by stricter regulations\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Protests are suppressed, project proceeds with minimal environmental safeguards, leading to significant biodiversity loss\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.7, \"final_score\": 2.155, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Citizen protests opposing environmental harm are positive, but the harm itself remains a significant negative factor.\", \"event_country\": \"Albania\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.745, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional action (luxury resort approval) enables environmental harm; protests are corrective but do not override institutional decision.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (resort approval) as harmful, while Analyst B conflated protest action with institutional action. The institutional decision to approve the resort near a protected area is the ethical focus, which clearly warrants a BURN verdict.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-05T16:06:12.832893+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
