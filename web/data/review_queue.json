@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T21:06:02.401376+00:00",
-  "total_pending": 6,
+  "generated_at": "2026-06-05T21:35:26.214860+00:00",
+  "total_pending": 5,
   "reviews": [
     {
       "id": 704,
@@ -98,26 +98,6 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-05T18:04:57.096671+00:00",
-      "resolved_at": null,
-      "human_review_embedding": null,
-      "final_decision": null
-    },
-    {
-      "id": 719,
-      "event_title": "Trump administration oil drilling auction in Arctic Refuge receives few bids",
-      "event_url": "https://www.nrdc.org/press-releases/trump-administration-auction-bust-arctic-refuge-coastal-plain-oil-drilling-receives",
-      "event_source": "NRDC News",
-      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Few bids received for oil drilling auction in Arctic Refuge, indicating limited industry interest.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Trump administration proceeded with auction for oil drilling in ecologically sensitive Arctic Refuge.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The auction represents a harmful policy decision that undermines environmental protection, but the low industry interest suggests limited immediate impact. The long-term ecological risks remain significant.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"New administration policy on Arctic drilling\", \"Scientific reports on ecological impact\", \"Legal challenges to the auction\"], \"revaluation_checkpoint\": \"2028-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Drilling abandoned due to legal or political pressure, leading to conservation win.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Drilling proceeds at limited scale with environmental safeguards.\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Drilling expands, causing irreversible ecological damage.\", \"probability\": 0.25, \"score\": -8}], \"prospective_score\": -1.5, \"final_score\": -2.63, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 6, \"justification\": \"Harmful policy decision with limited immediate impact but long-term ecological risks.\", \"event_country\": \"United States\"}",
-      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Low commercial interest in Arctic Refuge oil drilling auction signals market rejection of environmentally destructive projects\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Public and investor resistance to Arctic drilling reflects growing climate consciousness and alignment with sustainable energy transition\", \"affected_sdgs\": [7, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Trump administration's auction attempt to open Arctic Refuge to oil drilling despite ecological sensitivity and lack of commercial viability\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UNDRIP\", \"Animal Rights Article 1\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}, {\"description\": \"Potential future administrations may revive drilling attempts, creating regulatory uncertainty and environmental risk\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The auction's failure to attract bids represents a net positive ethical outcome, as it demonstrates market and societal rejection of environmentally destructive projects. However, the underlying attempt by the Trump administration to open the Arctic Refuge to drilling remains a significant ethical violation, undermining indigenous rights, biodiversity, and planetary boundaries. The net judgment balances these opposing forces, leaning slightly positive due to the market's rejection of the project.\", \"snapshot_score\": 3.5, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Reversal of auction outcome by subsequent administration\", \"New scientific evidence of irreversible ecological damage\", \"Legal challenge successfully blocking drilling rights\", \"Renewed investor interest in Arctic drilling projects\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Arctic drilling is permanently blocked by legal and regulatory barriers, and the Refuge gains permanent protection\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Future administration revives drilling attempts but faces sustained legal and market resistance\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Drilling proceeds despite low bids, leading to significant ecological damage and legal challenges\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.7, \"final_score\": 2.1, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Market rejection of Arctic drilling outweighs administrative attempt but uncertainty remains high.\", \"event_country\": \"United States\"}",
-      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.65, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Institutional action to enable drilling is harmful despite market rejection; action punishes rights/protection.\", \"disagreement\": true, \"reason\": \"Evaluated the ACTION (Trump admin's auction attempt) as harmful to environmental rights, not the market outcome. Punishes protection by enabling harm.\"}",
-      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: harmful drilling auction marked BURN (positive) instead of MINT; justification calls action harmful but decision is opposite.",
-      "suggested_decision": "MINT",
-      "suggested_amount_crbn": 125000,
-      "human_verdict": null,
-      "human_amount": null,
-      "human_reason": null,
-      "status": "pending",
-      "created_at": "2026-06-05T21:05:56.281715+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
