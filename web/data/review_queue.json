@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T03:05:22.389704+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-06-05T03:35:05.920485+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 704,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-04T23:35:58.819914+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 709,
+      "event_title": "German asylum benefits cuts violate EU law, top court rules",
+      "event_url": "https://www.dw.com/en/german-asylum-benefits-cuts-violate-eu-law-top-court-rules/a-77424233?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"European Court of Justice (ECJ) ruled that Germany's cuts to asylum benefits violate EU law, mandating that rejected asylum-seekers receive more than the bare minimum for survival\", \"affected_sdgs\": [1, 2, 3, 10], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The ECJ ruling upholds fundamental human rights and EU legal standards by ensuring rejected asylum-seekers receive adequate support, aligning with SDG 1 (No Poverty), SDG 2 (Zero Hunger), SDG 3 (Good Health), and SDG 10 (Reduced Inequalities). This decision reinforces the UDHR's right to an adequate standard of living and the CRC's protections for children in vulnerable situations.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"German government compliance with the ruling\", \"EU migration pact implementation outcomes\", \"potential appeals or delays in benefit restoration\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Germany fully complies with the ruling, restoring benefits to EU-mandated levels, and the EU migration pact is implemented without undermining the ruling's protections\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"Germany partially complies, with ongoing legal challenges and delays, but benefits are eventually restored to acceptable levels\", \"probability\": 0.5, \"score\": 7}, {\"name\": \"C\", \"description\": \"Germany resists compliance, leading to prolonged legal battles and reduced benefits, undermining EU asylum standards\", \"probability\": 0.15, \"score\": -5}], \"prospective_score\": 6.05, \"final_score\": 7.14, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"ECJ ruling upholds human rights and EU law, ensuring adequate asylum support.\", \"event_country\": \"Germany\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"European Court of Justice (ECJ) ruling that German asylum benefits cuts violate EU law, ensuring rejected asylum-seekers receive more than bare minimum for survival\", \"affected_sdgs\": [1, 2, 3, 10], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"German government's policy of cutting asylum benefits, which the ECJ ruled violates EU law, undermining human dignity and basic needs of rejected asylum-seekers\", \"affected_sdgs\": [1, 2, 3, 10], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 22\", \"CRC Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The ECJ ruling corrects a harmful policy by enforcing EU legal standards that protect the fundamental rights of rejected asylum-seekers, aligning with SDGs on poverty, hunger, health, and reduced inequalities. While the German government's cuts were a clear violation of human rights, the ruling restores dignity and access to basic needs, though the long-term impact depends on implementation and the EU's new migration pact.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Implementation of EU migration pact in Germany\", \"German government's response to ECJ ruling\", \"Potential appeals or delays in benefit restoration\", \"Impact on asylum-seeker living conditions over 12 months\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"ECJ ruling fully implemented, asylum-seekers receive adequate benefits, EU migration pact harmonizes standards across member states\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial implementation with delays, benefits restored but not fully aligned with EU standards, some regional disparities persist\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"German government resists ruling, benefits remain inadequate, EU migration pact fails to address core issues, humanitarian crisis worsens\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 3.1, \"final_score\": 4.9, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"ECJ ruling corrects human rights violation but long-term impact uncertain due to EU migration pact and German implementation risks.\", \"event_country\": \"Germany\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.02, \"confidence\": 9, \"amount_cbwd\": 5000000, \"justification\": \"ECJ ruling enforces EU law and protects rights of vulnerable individuals.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (ECJ ruling) as a corrective measure that protects rights. Analyst B is correct to note uncertainty in implementation, but the ruling itself is a clear BURN.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-05T03:35:01.357953+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
