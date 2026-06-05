@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-05T07:38:08.289309+00:00",
-  "total_events": 2355,
+  "generated_at": "2026-06-05T08:06:32.972754+00:00",
+  "total_events": 2357,
   "total_burned": 3540585870,
-  "total_minted": 3217778000,
+  "total_minted": 3228778000,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 2357,
+      "event_title": "China’s Xi headed to North Korea in bid to shore up ties",
+      "event_url": "https://www.aljazeera.com/news/2026/6/5/chinas-xi-headed-to-north-korea-in-bid-to-shore-up-ties?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.02,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; consensus on enabling harm via regime legitimization. | While the diplomatic engagement aims to stabilize regional relations, the primary actor (China) is engaging with a regime responsible for severe human rights abuses and nuclear proliferation risks. The net ethical position is negative due to the regime's documented violations and the potential to legitimize or enable harmful policies.",
+      "tx_hash": "zZQD25C1kCK7pUsAwpe4F3c6oBq6eTme9uwoaVvik9onMJdGcwt4pytAaB9pUo9dHJbAZ1j1BsDRAG1h4vpb1J7",
+      "created_at": "2026-06-05T08:06:28.242532+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Diplomatic engagement between China and North Korea to strengthen regional stability and dialogue\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Strengthening ties with North Korea, a regime with severe human rights violations and nuclear proliferation risks\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"Animal\", \"PB\"]}, {\"description\": \"Potential alignment with North Korea's military and nuclear ambitions, undermining global non-proliferation efforts\", \"affected_sdgs\": [16], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2356,
+      "event_title": "Modi government dismantling forests, weakening environmental framework, says Kharge",
+      "event_url": "https://www.thehindu.com/sci-tech/energy-and-environment/modi-government-dismantling-forests-weakening-environmental-framework-says-kharge/article71064072.ece",
+      "event_source": "The Hindu Environment",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.16,
+      "confidence": 9,
+      "justification": "The Modi government's weakening of environmental protections and enabling large-scale deforestation violates planetary boundaries and rights. | The dismantling of forest protections and clearance of vast forest areas directly undermines climate action (SDG 13), biodiversity (SDG 15), indigenous rights (UNDRIP), and animal rights, representing a severe regression in environmental governance with irreversible ecological consequences.",
+      "tx_hash": "4g2bTq8rA7XygQbrcbzhQMQzdvb1AnVGFaD2F7ESt8Mmon5CJZW14xv1Txfh6Mt5iig3QZ7BxrztZPhh9DFWDhTF",
+      "created_at": "2026-06-05T08:06:28.126852+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Indian government under Modi administration has cleared deforestation of 191,922 hectares of forest land over the past 11 years, indicating systematic weakening of environmental protections and forest governance\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UNDRIP\", \"Animal\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2355,
       "event_title": "European climate regulation of air transport: France pushes for status quo",
@@ -51835,8 +51879,8 @@
       },
       {
         "country": "China",
-        "count": 12,
-        "total_amount": 34620000
+        "count": 13,
+        "total_amount": 36120000
       },
       {
         "country": "European Union",
@@ -51894,8 +51938,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.315,
-        "events": 54
+        "burn_ratio": 0.304,
+        "events": 56
       }
     ],
     "top_regions_destructive": [
@@ -51911,8 +51955,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.685,
-        "events": 54
+        "mint_ratio": 0.696,
+        "events": 56
       },
       {
         "region": "Europe",
@@ -51958,7 +52002,7 @@
       },
       {
         "date": "2026-06-05",
-        "net_minted": 27370000,
+        "net_minted": 38370000,
         "net_burned": 60950000
       }
     ],
@@ -51976,7 +52020,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 189,
-        "negative": 329,
+        "negative": 331,
         "event_ids_positive": [
           2349,
           2347,
@@ -52169,6 +52213,8 @@
           1650
         ],
         "event_ids_negative": [
+          2357,
+          2356,
           2353,
           2352,
           2351,
@@ -52502,7 +52548,7 @@
       },
       "UDHR": {
         "positive": 82,
-        "negative": 249,
+        "negative": 250,
         "event_ids_positive": [
           2349,
           2347,
@@ -52588,6 +52634,7 @@
           1653
         ],
         "event_ids_negative": [
+          2357,
           2352,
           2350,
           2344,
@@ -52841,7 +52888,7 @@
       },
       "ILO": {
         "positive": 6,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           2329,
           2276,
@@ -52851,6 +52898,7 @@
           1667
         ],
         "event_ids_negative": [
+          2357,
           2327,
           2289,
           2225,
@@ -52950,7 +52998,7 @@
       },
       "UNDRIP": {
         "positive": 34,
-        "negative": 63,
+        "negative": 64,
         "event_ids_positive": [
           2347,
           2331,
@@ -52988,6 +53036,7 @@
           1650
         ],
         "event_ids_negative": [
+          2356,
           2344,
           2327,
           2326,
@@ -53055,7 +53104,7 @@
       },
       "Animal": {
         "positive": 53,
-        "negative": 43,
+        "negative": 45,
         "event_ids_positive": [
           2347,
           2345,
@@ -53112,6 +53161,8 @@
           1651
         ],
         "event_ids_negative": [
+          2357,
+          2356,
           2351,
           2341,
           2340,
@@ -53159,7 +53210,7 @@
       },
       "PB": {
         "positive": 87,
-        "negative": 79,
+        "negative": 81,
         "event_ids_positive": [
           2342,
           2334,
@@ -53250,6 +53301,8 @@
           1651
         ],
         "event_ids_negative": [
+          2357,
+          2356,
           2353,
           2341,
           2338,
@@ -53336,11 +53389,11 @@
       "niche_pct": 37.5,
       "mainstream_pct": 62.5,
       "total_sources_used": 128,
-      "articles_processed": 702
+      "articles_processed": 704
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 702,
+      "total_events": 704,
       "pct": 0.7
     },
     "active_partners_7d": [],
@@ -53507,10 +53560,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 90,
+        "count": 91,
         "burn_count": 48,
-        "mint_count": 42,
+        "mint_count": 43,
         "event_ids": [
+          2357,
           2353,
           2334,
           2332,
@@ -53941,24 +53995,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 446,
+      "total_mint": 448,
       "direct_action": {
-        "count": 302,
-        "pct": 67.7
+        "count": 304,
+        "pct": 67.9
       },
       "editorial_alarm": {
         "count": 27,
-        "pct": 6.1
+        "pct": 6.0
       },
       "untyped": {
         "count": 117,
-        "pct": 26.2
+        "pct": 26.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1567,
+      "total_mint": 1569,
       "direct_action": {
-        "count": 1028,
+        "count": 1030,
         "pct": 65.6
       },
       "editorial_alarm": {
@@ -53971,8 +54025,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 221,
-      "institutional": 481,
+      "citizen": 222,
+      "institutional": 482,
       "citizen_ratio": 0.315,
       "daily": [
         {
@@ -54007,11 +54061,12 @@
         },
         {
           "date": "2026-06-05",
-          "citizen": 11,
-          "institutional": 25
+          "citizen": 12,
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
+        2356,
         2352,
         2347,
         2346,
@@ -54235,6 +54290,7 @@
         1650
       ],
       "event_ids_institutional": [
+        2357,
         2353,
         2351,
         2350,
