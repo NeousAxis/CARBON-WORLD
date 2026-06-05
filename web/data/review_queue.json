@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T23:04:13.832370+00:00",
-  "total_pending": 5,
+  "generated_at": "2026-06-05T23:35:29.687760+00:00",
+  "total_pending": 6,
   "reviews": [
     {
       "id": 704,
@@ -98,6 +98,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-05T18:04:57.096671+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 720,
+      "event_title": "Scientists spot critically endangered white abalone in the wild for the first time in five years after 99% population decline",
+      "event_url": "https://www.reddit.com/r/conservation/comments/1ty0h1c/scientists_spot_critically_endangered_white/",
+      "event_source": "Reddit r/conservation",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientists observed critically endangered white abalone in the wild for the first time in five years, indicating potential recovery or survival of the species.\", \"affected_sdgs\": [14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The white abalone population has declined by 99%, indicating severe ecological degradation and loss of biodiversity.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The observation of white abalone in the wild is a positive sign for conservation efforts and biodiversity preservation. However, the 99% population decline highlights a severe ecological crisis that undermines long-term sustainability and biodiversity goals.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Population recovery or further decline in the next five years\", \"Implementation of new conservation measures\", \"Scientific studies on the species' genetic diversity and health\"], \"revaluation_checkpoint\": \"2029-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Conservation efforts succeed in restoring the white abalone population to sustainable levels.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Population remains stable but not fully recovered, with ongoing conservation efforts.\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Population continues to decline, leading to functional extinction.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -0.85, \"final_score\": -2.14, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"The observation is positive, but the 99% decline indicates severe ecological harm.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientists observe critically endangered white abalone in the wild after a 99% population decline, indicating a potential recovery or resilience in the species' population.\", \"affected_sdgs\": [14, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"The observation follows a 99% population decline, highlighting severe prior biodiversity loss and the urgent need for conservation intervention.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [\"Animal Rights Article 1\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The rediscovery of white abalone in the wild is a significant conservation milestone, demonstrating resilience and offering hope for recovery. However, the 99% population decline underscores the severity of past biodiversity loss and the critical need for sustained conservation efforts to prevent extinction.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Population growth rate remains below 5% annually\", \"No new conservation funding allocated within 12 months\", \"Climate change impacts (e.g., ocean acidification) worsen\", \"Illegal harvesting or habitat destruction increases\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Conservation efforts succeed with population recovery to 10% of historical levels within 20 years, supported by strong policy and community engagement.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Moderate recovery occurs, with population stabilizing at 3-5% of historical levels, but ongoing threats persist.\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Population continues to decline due to climate change, overfishing, or lack of conservation funding, leading to functional extinction.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": 3.9, \"final_score\": 5.475, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Rediscovery of critically endangered species is positive but overshadowed by severe prior decline.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.45, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional action (conservation effort) punishes harm by addressing 99% decline.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (conservation observation) as protective despite severe prior harm. Analyst B's NEUTRAL stance misapplied the ethical lens by focusing on the harm rather than the corrective action.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-05T23:35:25.511691+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
