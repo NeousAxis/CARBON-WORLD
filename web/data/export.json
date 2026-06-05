@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-06-05T15:05:35.883791+00:00",
-  "total_events": 2391,
-  "total_burned": 3581925870,
-  "total_minted": 3268493000,
+  "generated_at": "2026-06-05T15:37:06.510452+00:00",
+  "total_events": 2394,
+  "total_burned": 3588925870,
+  "total_minted": 3270493000,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 2394,
+      "event_title": "Warehousing Human Beings",
+      "event_url": "https://theintercept.com/2026/06/05/new-jersey-ice-delaney-hall-protests/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.01,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] Systemic human rights abuses in ICE detention centers outweigh journalistic exposure. | The article exposes severe human rights violations within ICE detention centers, constituting a grave ethical failure. While the journalistic act of reporting raises awareness (positive aspect), the primary subject—the systemic mistreatment of detainees—is a profound violation of human dignity and rights. ",
+      "tx_hash": "4akmdyHV5a2VztHSYF1SDvSNJXdkNSN3UDE2x8Qo9ZyFnp7GpoZm1xfNaAp13VLF4bsDFc1KRvyp2G47pUEDSe8w",
+      "created_at": "2026-06-05T15:37:01.219967+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Journalistic investigation and public exposure of conditions at ICE detention centers, raising awareness of human rights violations\", \"affected_sdgs\": [10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Publication of investigative report by a recognized outlet (The Intercept) with potential to influence policy and public opinion\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Conditions at ICE detention centers described as 'warehousing human beings', implying systematic human rights abuses including indefinite detention, poor living conditions, and lack of due process\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 10\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2393,
+      "event_title": "Adam Hamawy, Doctor Who Served in Gaza During Genocide, Wins New Jersey Primary",
+      "event_url": "https://truthout.org/articles/adam-hamawy-doctor-who-served-in-gaza-during-genocide-wins-new-jersey-primary/",
+      "event_source": "Truthout Environment",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.38,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored BURN] Electoral victory advancing anti-militarism and social welfare policies | Hamawy's victory represents a significant pro-human rights and anti-militarism stance, aligning with SDG 3 (healthcare), SDG 10 (reduced inequalities), and SDG 16 (peace and justice). The platform explicitly rejects militarized immigration enforcement (ICE) and prioritizes social welfare over military spending, which di",
+      "tx_hash": "4CcVrMHqmRhLzPSRgmYeHExizMx8hsaeD3qVR6Q9RtuxFj53pwFG778t2yTxJtv3mpxA7AxsUNtXjopMYmxvCvMd",
+      "created_at": "2026-06-05T15:37:01.105734+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Dr. Adam Hamawy wins New Jersey primary with platform advocating for healthcare, abolition of ICE, and economic reform\", \"affected_sdgs\": [3, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2392,
+      "event_title": "Italy appeals for release of hunger-striking Flotilla activists in Libya",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/italy-appeals-release-hunger-striking-flotilla-activists-libya",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Italy's diplomatic appeal supports rights, but detention and interception of aid represent institutional harm.",
+      "tx_hash": null,
+      "created_at": "2026-06-05T15:17:01.801871+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2391,
       "event_title": "Melinda French Gates donates $215M, funding $600M for women's health",
@@ -52612,13 +52678,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 104,
-        "total_amount": 287950000
+        "count": 105,
+        "total_amount": 289450000
       },
       {
         "country": "France",
-        "count": 22,
-        "total_amount": 14765000
+        "count": 21,
+        "total_amount": 14265000
       },
       {
         "country": "Israel",
@@ -52639,8 +52705,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 32,
-        "total_amount": 164060000
+        "count": 33,
+        "total_amount": 171060000
       },
       {
         "country": "France",
@@ -52681,8 +52747,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.346,
-        "events": 130
+        "burn_ratio": 0.352,
+        "events": 128
       },
       {
         "region": "Asia",
@@ -52698,8 +52764,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.755,
-        "events": 143
+        "mint_ratio": 0.752,
+        "events": 145
       },
       {
         "region": "Asia",
@@ -52708,8 +52774,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.654,
-        "events": 130
+        "mint_ratio": 0.648,
+        "events": 128
       },
       {
         "region": "Latin America",
@@ -52750,8 +52816,8 @@
       },
       {
         "date": "2026-06-05",
-        "net_minted": 78085000,
-        "net_burned": 102290000
+        "net_minted": 79585000,
+        "net_burned": 109290000
       }
     ],
     "event_of_the_day": {
@@ -52767,9 +52833,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 187,
-        "negative": 346,
+        "positive": 188,
+        "negative": 345,
         "event_ids_positive": [
+          2393,
           2391,
           2389,
           2385,
@@ -52959,6 +53026,7 @@
           1689
         ],
         "event_ids_negative": [
+          2394,
           2390,
           2388,
           2387,
@@ -53302,15 +53370,14 @@
           1698,
           1691,
           1690,
-          1688,
-          1685,
-          1684
+          1688
         ]
       },
       "UDHR": {
-        "positive": 81,
+        "positive": 82,
         "negative": 263,
         "event_ids_positive": [
+          2393,
           2391,
           2389,
           2371,
@@ -53394,6 +53461,7 @@
           1699
         ],
         "event_ids_negative": [
+          2394,
           2388,
           2387,
           2386,
@@ -53655,8 +53723,7 @@
           1700,
           1698,
           1690,
-          1688,
-          1684
+          1688
         ]
       },
       "ILO": {
@@ -53688,9 +53755,10 @@
         ]
       },
       "CRC": {
-        "positive": 17,
-        "negative": 59,
+        "positive": 18,
+        "negative": 60,
         "event_ids_positive": [
+          2393,
           2391,
           2389,
           2349,
@@ -53710,6 +53778,7 @@
           1874
         ],
         "event_ids_negative": [
+          2394,
           2370,
           2369,
           2360,
@@ -53879,7 +53948,7 @@
       },
       "Animal": {
         "positive": 52,
-        "negative": 48,
+        "negative": 47,
         "event_ids_positive": [
           2381,
           2368,
@@ -53981,13 +54050,12 @@
           1837,
           1833,
           1819,
-          1760,
-          1684
+          1760
         ]
       },
       "PB": {
         "positive": 86,
-        "negative": 88,
+        "negative": 87,
         "event_ids_positive": [
           2385,
           2382,
@@ -54163,8 +54231,7 @@
           1724,
           1705,
           1702,
-          1691,
-          1684
+          1691
         ]
       }
     },
@@ -54172,20 +54239,20 @@
       "niche_pct": 40.6,
       "mainstream_pct": 59.4,
       "total_sources_used": 128,
-      "articles_processed": 704
+      "articles_processed": 702
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 704,
+      "total_events": 702,
       "pct": 0.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 45,
+        "count": 44,
         "burn_count": 12,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           2371,
           2333,
@@ -54230,8 +54297,7 @@
           1773,
           1766,
           1758,
-          1694,
-          1687
+          1694
         ]
       },
       {
@@ -54264,10 +54330,11 @@
       },
       {
         "name": "WHO",
-        "count": 14,
-        "burn_count": 6,
+        "count": 15,
+        "burn_count": 7,
         "mint_count": 8,
         "event_ids": [
+          2393,
           2377,
           2358,
           2298,
@@ -54442,73 +54509,6 @@
         ]
       },
       {
-        "name": "Finance",
-        "count": 59,
-        "burn_count": 23,
-        "mint_count": 36,
-        "event_ids": [
-          2391,
-          2389,
-          2383,
-          2377,
-          2348,
-          2342,
-          2330,
-          2326,
-          2313,
-          2307,
-          2278,
-          2221,
-          2215,
-          2210,
-          2202,
-          2182,
-          2155,
-          2149,
-          2144,
-          2143,
-          2121,
-          2112,
-          2107,
-          2102,
-          2096,
-          2064,
-          2057,
-          2051,
-          2045,
-          2029,
-          2013,
-          2012,
-          2011,
-          1982,
-          1970,
-          1969,
-          1964,
-          1958,
-          1933,
-          1926,
-          1922,
-          1919,
-          1914,
-          1901,
-          1884,
-          1863,
-          1849,
-          1839,
-          1788,
-          1784,
-          1774,
-          1773,
-          1762,
-          1729,
-          1719,
-          1695,
-          1690,
-          1687,
-          1686
-        ]
-      },
-      {
         "name": "Construction",
         "count": 58,
         "burn_count": 27,
@@ -54575,11 +54575,77 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 57,
+        "burn_count": 23,
+        "mint_count": 34,
+        "event_ids": [
+          2391,
+          2389,
+          2383,
+          2377,
+          2348,
+          2342,
+          2330,
+          2326,
+          2313,
+          2307,
+          2278,
+          2221,
+          2215,
+          2210,
+          2202,
+          2182,
+          2155,
+          2149,
+          2144,
+          2143,
+          2121,
+          2112,
+          2107,
+          2102,
+          2096,
+          2064,
+          2057,
+          2051,
+          2045,
+          2029,
+          2013,
+          2012,
+          2011,
+          1982,
+          1970,
+          1969,
+          1964,
+          1958,
+          1933,
+          1926,
+          1922,
+          1919,
+          1914,
+          1901,
+          1884,
+          1863,
+          1849,
+          1839,
+          1788,
+          1784,
+          1774,
+          1773,
+          1762,
+          1729,
+          1719,
+          1695,
+          1690
+        ]
+      },
+      {
         "name": "Defense",
-        "count": 49,
-        "burn_count": 4,
+        "count": 50,
+        "burn_count": 5,
         "mint_count": 45,
         "event_ids": [
+          2393,
           2388,
           2387,
           2375,
@@ -54749,25 +54815,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 252,
+      "total_burn": 253,
       "direct_action": {
-        "count": 175,
-        "pct": 69.4
+        "count": 176,
+        "pct": 69.6
       },
       "editorial_consciousness": {
         "count": 12,
-        "pct": 4.8
+        "pct": 4.7
       },
       "untyped": {
         "count": 65,
-        "pct": 25.8
+        "pct": 25.7
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 785,
+      "total_burn": 786,
       "direct_action": {
-        "count": 523,
-        "pct": 66.6
+        "count": 524,
+        "pct": 66.7
       },
       "editorial_consciousness": {
         "count": 47,
@@ -54779,24 +54845,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 452,
+      "total_mint": 449,
       "direct_action": {
-        "count": 319,
-        "pct": 70.6
+        "count": 318,
+        "pct": 70.8
       },
       "editorial_alarm": {
         "count": 27,
         "pct": 6.0
       },
       "untyped": {
-        "count": 106,
-        "pct": 23.5
+        "count": 104,
+        "pct": 23.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1594,
+      "total_mint": 1595,
       "direct_action": {
-        "count": 1052,
+        "count": 1053,
         "pct": 66.0
       },
       "editorial_alarm": {
@@ -54810,8 +54876,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 223,
-      "institutional": 481,
-      "citizen_ratio": 0.317,
+      "institutional": 479,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-05-30",
@@ -54846,7 +54912,7 @@
         {
           "date": "2026-06-05",
           "citizen": 26,
-          "institutional": 46
+          "institutional": 48
         }
       ],
       "event_ids_citizen": [
@@ -55075,6 +55141,8 @@
         1689
       ],
       "event_ids_institutional": [
+        2394,
+        2393,
         2391,
         2389,
         2388,
@@ -55551,11 +55619,7 @@
         1693,
         1692,
         1690,
-        1688,
-        1687,
-        1686,
-        1685,
-        1684
+        1688
       ]
     }
   }
