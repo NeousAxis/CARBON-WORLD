@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T14:35:10.794989+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-06-05T15:05:36.038313+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 704,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-04T23:35:58.819914+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 711,
+      "event_title": "Italy appeals for release of hunger-striking Flotilla activists in Libya",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/italy-appeals-release-hunger-striking-flotilla-activists-libya",
+      "event_source": "Al-Monitor (Middle East)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Italy's diplomatic appeal for the release of detained activists aligns with human rights and freedom of expression principles\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Detention of pro-Palestinian activists in Libya and Israel's interception of the Global Sumud Flotilla in international waters violate freedom of movement and humanitarian aid principles\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Hunger-striking activists face severe health risks, violating right to health and bodily integrity\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Italy's appeal for release is a positive step toward upholding human rights and freedom of expression. However, the underlying detention of activists and interception of humanitarian aid violate core UDHR principles, compounded by the severe health risks posed by hunger strikes. The net ethical position is negative due to the systemic violations of rights and humanitarian norms.\", \"snapshot_score\": -5.5, \"trajectory_score\": -1.0, \"revaluation_score\": -2.0, \"revaluation_triggers\": [\"Resolution of activists' detention status\", \"International investigation into flotilla interception\", \"Libyan government policy changes on detentions\", \"Israel's compliance with international humanitarian law\"], \"revaluation_checkpoint\": \"2028-06-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Activists released, flotilla interception condemned, and humanitarian aid routes secured\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Prolonged detention with deteriorating health, international condemnation but no policy change\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Activists face permanent detention or severe health consequences, escalating regional tensions\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -2.95, \"final_score\": -3.81, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Detention of activists and humanitarian aid interception violate core rights despite Italy's positive appeal.\", \"event_country\": \"Libya\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Italy's diplomatic appeal for the release of detained activists aligns with human rights protections and freedom of expression under international law.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The hunger strike itself represents a citizen-led protest demanding humanitarian access to Gaza, reflecting collective action for a rights-based cause.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Detention of activists without trial or clear legal basis violates fundamental rights to due process and freedom from arbitrary detention.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Use of force by Israeli forces to halt a humanitarian aid flotilla in international waters undermines freedom of navigation and humanitarian access.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"Italy's appeal for the activists' release is a positive step toward upholding human rights and freedom of expression. However, the underlying detention and use of force against humanitarian activists highlight systemic violations of rights to due process and freedom of movement. The net ethical position is mixed but leans slightly positive due to the diplomatic intervention.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Resolution of the activists' detention status\", \"International investigation into the flotilla interception\", \"Policy changes in Libya or Israel regarding humanitarian access\"], \"revaluation_checkpoint\": \"2028-06-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Activists are released, and Libya/Israel adopt policies facilitating humanitarian access to Gaza.\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Activists remain detained, but international pressure leads to improved conditions and eventual release.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Activists face prolonged detention or legal consequences, and humanitarian access remains restricted.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.45, \"final_score\": 2.41, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Diplomatic appeal for detained activists is positive but overshadowed by systemic rights violations.\", \"event_country\": \"Italy\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -2.79, \"confidence\": 7, \"amount_cbwd\": 500000, \"justification\": \"Italy's diplomatic appeal supports rights, but detention and interception of aid represent institutional harm.\", \"disagreement\": true, \"reason\": \"The institutional action of detaining activists and intercepting aid constitutes harm, warranting a BURN. Italy's appeal is positive but does not outweigh the ethical violation.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-05T15:05:31.579018+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
