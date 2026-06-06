@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-06T12:04:26.222404+00:00",
-  "total_events": 2464,
+  "generated_at": "2026-06-06T12:34:35.692465+00:00",
+  "total_events": 2466,
   "total_burned": 3682305870,
-  "total_minted": 3386698000,
-  "pending_reviews": 6,
+  "total_minted": 3388023000,
+  "pending_reviews": 5,
   "events": [
+    {
+      "id": 2466,
+      "event_title": "AI’s environmental costs threaten water, land and climate",
+      "event_url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
+      "event_source": "UN News Climate",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -3.05,
+      "confidence": 7,
+      "justification": "AI's environmental footprint threatens key planetary boundaries and SDGs, with a negative trajectory. | The article highlights the growing environmental costs of AI, particularly its strain on water, land, and climate resources. This represents a negative trajectory for planetary health and sustainability, with significant implications for SDGs 6, 13, 14, and 15.",
+      "tx_hash": "2UB8n6DrriiYmDMvNcBHCgDToFG9rqqZyb8wsVp8PVsNBERjs1DEPKp39jepUcVsRjgzmAiZhccCebzwtDFC4QBa",
+      "created_at": "2026-06-06T12:34:31.133337+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Artificial Intelligence's environmental footprint is expanding, threatening water, land, and climate resources.\", \"affected_sdgs\": [6, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2465,
+      "event_title": "REPORTAGE. State responsibility in the chlordane scandal in the Antilles: a law, and after?",
+      "event_url": "https://www.ouest-france.fr/environnement/pesticides/reportage-responsabilite-de-letat-dans-le-scandale-du-chlordecone-aux-antilles-une-loi-et-apres-490a9bac-615b-11f1-b037-716b21dc467b?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 125000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Law acknowledges state harm but lacks enforcement; institutional action punishes harm by recognizing responsibility.",
+      "tx_hash": null,
+      "created_at": "2026-06-06T12:17:02.316755+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2464,
       "event_title": "Unsafe Food Causes 866 Million Illnesses and 1.5 Million Deaths Annually, WHO Reports",
@@ -54282,13 +54326,13 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.462,
-        "events": 26
+        "burn_ratio": 0.44,
+        "events": 25
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.336,
-        "events": 131
+        "burn_ratio": 0.338,
+        "events": 130
       },
       {
         "region": "Asia",
@@ -54314,13 +54358,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.664,
-        "events": 131
+        "mint_ratio": 0.662,
+        "events": 130
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.538,
-        "events": 26
+        "mint_ratio": 0.56,
+        "events": 25
       }
     ],
     "supply_trend_7d": [
@@ -54356,7 +54400,7 @@
       },
       {
         "date": "2026-06-06",
-        "net_minted": 60150000,
+        "net_minted": 61350000,
         "net_burned": 40700000
       }
     ],
@@ -54373,7 +54417,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 187,
+        "positive": 186,
         "negative": 354,
         "event_ids_positive": [
           2461,
@@ -54561,10 +54605,10 @@
           1776,
           1775,
           1770,
-          1766,
-          1763
+          1766
         ],
         "event_ids_negative": [
+          2466,
           2464,
           2463,
           2462,
@@ -54917,12 +54961,11 @@
           1771,
           1769,
           1767,
-          1765,
-          1762
+          1765
         ]
       },
       "UDHR": {
-        "positive": 82,
+        "positive": 81,
         "negative": 271,
         "event_ids_positive": [
           2461,
@@ -55005,8 +55048,7 @@
           1782,
           1778,
           1776,
-          1775,
-          1763
+          1775
         ],
         "event_ids_negative": [
           2464,
@@ -55618,7 +55660,7 @@
       },
       "PB": {
         "positive": 84,
-        "negative": 99,
+        "negative": 100,
         "event_ids_positive": [
           2459,
           2456,
@@ -55706,6 +55748,7 @@
           1766
         ],
         "event_ids_negative": [
+          2466,
           2462,
           2449,
           2445,
@@ -55809,14 +55852,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 45.8,
-      "mainstream_pct": 54.2,
+      "niche_pct": 45.0,
+      "mainstream_pct": 55.0,
       "total_sources_used": 131,
-      "articles_processed": 700
+      "articles_processed": 698
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 700,
+      "total_events": 698,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -56158,9 +56201,9 @@
       },
       {
         "name": "Finance",
-        "count": 56,
+        "count": 55,
         "burn_count": 23,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           2435,
           2413,
@@ -56216,8 +56259,7 @@
           1788,
           1784,
           1774,
-          1773,
-          1762
+          1773
         ]
       },
       {
@@ -56278,6 +56320,41 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 27,
+        "burn_count": 12,
+        "mint_count": 15,
+        "event_ids": [
+          2466,
+          2429,
+          2382,
+          2333,
+          2329,
+          2328,
+          2262,
+          2199,
+          2182,
+          2181,
+          2124,
+          2110,
+          2108,
+          2055,
+          2049,
+          2039,
+          2030,
+          2019,
+          1976,
+          1971,
+          1964,
+          1911,
+          1906,
+          1884,
+          1836,
+          1811,
+          1799
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 27,
         "burn_count": 14,
@@ -56310,40 +56387,6 @@
           1904,
           1870,
           1783
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 26,
-        "burn_count": 12,
-        "mint_count": 14,
-        "event_ids": [
-          2429,
-          2382,
-          2333,
-          2329,
-          2328,
-          2262,
-          2199,
-          2182,
-          2181,
-          2124,
-          2110,
-          2108,
-          2055,
-          2049,
-          2039,
-          2030,
-          2019,
-          1976,
-          1971,
-          1964,
-          1911,
-          1906,
-          1884,
-          1836,
-          1811,
-          1799
         ]
       },
       {
@@ -56393,10 +56436,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 249,
+      "total_burn": 248,
       "direct_action": {
-        "count": 173,
-        "pct": 69.5
+        "count": 172,
+        "pct": 69.4
       },
       "editorial_consciousness": {
         "count": 14,
@@ -56404,7 +56447,7 @@
       },
       "untyped": {
         "count": 62,
-        "pct": 24.9
+        "pct": 25.0
       }
     },
     "burn_composition_all_time": {
@@ -56423,24 +56466,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 451,
+      "total_mint": 450,
       "direct_action": {
         "count": 328,
-        "pct": 72.7
+        "pct": 72.9
       },
       "editorial_alarm": {
         "count": 26,
         "pct": 5.8
       },
       "untyped": {
-        "count": 97,
-        "pct": 21.5
+        "count": 96,
+        "pct": 21.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1647,
+      "total_mint": 1648,
       "direct_action": {
-        "count": 1095,
+        "count": 1096,
         "pct": 66.5
       },
       "editorial_alarm": {
@@ -56454,8 +56497,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 225,
-      "institutional": 475,
-      "citizen_ratio": 0.321,
+      "institutional": 473,
+      "citizen_ratio": 0.322,
       "daily": [
         {
           "date": "2026-05-31",
@@ -56490,7 +56533,7 @@
         {
           "date": "2026-06-06",
           "citizen": 7,
-          "institutional": 24
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -56721,6 +56764,7 @@
         1768
       ],
       "event_ids_institutional": [
+        2466,
         2464,
         2463,
         2462,
@@ -57192,10 +57236,7 @@
         1769,
         1767,
         1766,
-        1765,
-        1764,
-        1763,
-        1762
+        1765
       ]
     }
   }
