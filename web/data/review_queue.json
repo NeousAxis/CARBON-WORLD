@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T22:05:50.329637+00:00",
-  "total_pending": 7,
+  "generated_at": "2026-06-06T22:34:46.965312+00:00",
+  "total_pending": 8,
   "reviews": [
     {
       "id": 704,
@@ -138,6 +138,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-06T16:06:39.652256+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 728,
+      "event_title": "120,000-year-old European fallow deer—tracing the loss of genetic diversity",
+      "event_url": "https://phys.org/news/2026-06-year-european-fallow-deer-loss.html",
+      "event_source": "Phys.org",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific study revealing loss of genetic diversity in European fallow deer over 120,000 years, providing data to inform future conservation efforts\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Documented loss of genetic diversity in European fallow deer due to climate change and human actions over millennia\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"Animal Rights Article 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The study provides critical scientific evidence of biodiversity loss driven by climate and human impacts, which is ethically negative. However, the research itself is a positive act of knowledge generation that can inform conservation, balancing the harm with potential future benefits.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Discovery of viable genetic material for restoration\", \"Implementation of conservation policies based on findings\", \"Climate stabilization reducing further loss\"], \"revaluation_checkpoint\": \"2028-06-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Conservation policies successfully restore genetic diversity using study insights\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Study informs partial conservation efforts but biodiversity loss continues\", \"probability\": 0.55, \"score\": -2}, {\"name\": \"C\", \"description\": \"No conservation action taken; biodiversity loss accelerates due to climate change\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.7, \"final_score\": -2.175, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Scientific documentation of biodiversity loss outweighs potential future benefits of the study.\", \"event_country\": null}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific study revealing genetic diversity loss in European fallow deer over 120,000 years, providing data to inform future conservation efforts\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"Demonstrated dramatic loss of genetic diversity in European fallow deer since the last interglacial period, indicating significant biodiversity erosion\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The study provides critical scientific evidence of biodiversity loss driven by climate and human actions, which is ethically negative. However, the research itself is a positive act of knowledge generation that can inform conservation policies, balancing the harm with the potential for future mitigation.\", \"snapshot_score\": -3.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"New conservation policies implemented based on study findings\", \"Climate change acceleration reversing genetic recovery efforts\", \"Human encroachment on habitats continues unabated\"], \"revaluation_checkpoint\": \"2028-06-30\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Conservation policies successfully reverse genetic diversity loss within 20 years through habitat restoration and breeding programs\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Moderate recovery of genetic diversity with partial conservation success, but irreversible losses remain\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Continued biodiversity decline due to climate change and habitat destruction, with no effective conservation response\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 0.55, \"final_score\": -0.61, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 9, \"justification\": \"Scientific study reveals biodiversity loss but enables future conservation action.\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.98, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"The study documents irreversible biodiversity loss caused by climate and human actions, which is ethically negative.\", \"disagreement\": true, \"reason\": \"The focus is on documenting harm (loss of genetic diversity), not on an institutional action. The ethical weight of biodiversity loss outweighs the potential future benefits.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict polarity error: article reports irreversible biodiversity loss (negative), but decision is BURN (positive). Justification calls it ethically negative, contradicting BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-06T22:34:42.897756+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
