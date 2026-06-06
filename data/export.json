@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-06T00:05:53.561010+00:00",
-  "total_events": 2432,
-  "total_burned": 3636105870,
-  "total_minted": 3326883000,
-  "pending_reviews": 6,
+  "generated_at": "2026-06-06T00:34:28.913888+00:00",
+  "total_events": 2434,
+  "total_burned": 3643605870,
+  "total_minted": 3327033000,
+  "pending_reviews": 5,
   "events": [
+    {
+      "id": 2434,
+      "event_title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO regarding the Ebola outbreak caused by the Bundibugyo virus",
+      "event_url": "https://www.who.int/fr/news/item/31-05-2026-joint-statement-by-the-government-of-the-democratic-republic-of-the-congo-and-who-concerning-the-outbreak-of-ebola-disease-caused-by-the-bundibugyo-virus",
+      "event_source": "WHO News (FR)",
+      "decision": "BURN",
+      "amount_crbn": 7500000,
+      "final_score": 7.0,
+      "confidence": 9,
+      "justification": "Both analysts agree on BURN due to a coordinated, equitable public health response to a severe outbreak. | The joint statement represents a proactive and coordinated public health response to a deadly viral outbreak, prioritizing equitable access to interventions and leveraging multi-institutional collaboration. This action directly advances SDG 3 (Good Health and Well-being) and upholds the right to health under UDHR, with no discernible ethical downsides in the described action.",
+      "tx_hash": "2BatV1eMg7yQXQ4nTzdWbcUAHzPQtgygCcm5UqHeHuxLRRtPxUam3UEjK6EfaunoqYbiwAPK81yEp2Nv1BAurf8P",
+      "created_at": "2026-06-06T00:34:23.903500+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Government of the Democratic Republic of the Congo and WHO jointly mobilize resources and coordinate efforts to combat the Bundibugyo Ebola outbreak, ensuring rapid and equitable interventions for affected communities\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Collaboration with CDC-Afrique and other partners strengthens public health response and resource mobilization for outbreak control\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2433,
+      "event_title": "Scientists spot critically endangered white abalone in the wild for the first time in five years after 99% population decline",
+      "event_url": "https://www.reddit.com/r/conservation/comments/1ty0h1c/scientists_spot_critically_endangered_white/",
+      "event_source": "Reddit r/conservation",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Institutional action (conservation effort) punishes harm by addressing 99% decline.",
+      "tx_hash": null,
+      "created_at": "2026-06-06T00:17:01.745860+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2432,
       "event_title": "Waqf Forest Initiative: Conservation Effort by Community Self-Reliance",
@@ -53653,7 +53697,7 @@
       {
         "date": "2026-06-06",
         "net_minted": 500000,
-        "net_burned": 1500000
+        "net_burned": 9000000
       }
     ],
     "event_of_the_day": {
@@ -53669,9 +53713,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 187,
+        "positive": 188,
         "negative": 352,
         "event_ids_positive": [
+          2434,
           2432,
           2430,
           2424,
@@ -54216,9 +54261,10 @@
         ]
       },
       "UDHR": {
-        "positive": 83,
+        "positive": 84,
         "negative": 270,
         "event_ids_positive": [
+          2434,
           2430,
           2424,
           2419,
@@ -55102,14 +55148,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 45.0,
-      "mainstream_pct": 55.0,
-      "total_sources_used": 129,
-      "articles_processed": 694
+      "niche_pct": 45.4,
+      "mainstream_pct": 54.6,
+      "total_sources_used": 130,
+      "articles_processed": 695
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 694,
+      "total_events": 695,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -55193,10 +55239,11 @@
       },
       {
         "name": "WHO",
-        "count": 15,
-        "burn_count": 7,
+        "count": 16,
+        "burn_count": 8,
         "mint_count": 8,
         "event_ids": [
+          2434,
           2404,
           2393,
           2377,
@@ -55683,10 +55730,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 248,
+      "total_burn": 249,
       "direct_action": {
-        "count": 176,
-        "pct": 71.0
+        "count": 177,
+        "pct": 71.1
       },
       "editorial_consciousness": {
         "count": 11,
@@ -55694,14 +55741,14 @@
       },
       "untyped": {
         "count": 61,
-        "pct": 24.6
+        "pct": 24.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 795,
+      "total_burn": 796,
       "direct_action": {
-        "count": 533,
-        "pct": 67.0
+        "count": 534,
+        "pct": 67.1
       },
       "editorial_consciousness": {
         "count": 47,
@@ -55744,8 +55791,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 226,
-      "institutional": 468,
-      "citizen_ratio": 0.326,
+      "institutional": 469,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-05-31",
@@ -55780,7 +55827,7 @@
         {
           "date": "2026-06-06",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -56012,6 +56059,7 @@
         1731
       ],
       "event_ids_institutional": [
+        2434,
         2431,
         2430,
         2428,
