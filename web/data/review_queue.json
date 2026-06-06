@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T22:34:46.965312+00:00",
-  "total_pending": 8,
+  "generated_at": "2026-06-06T23:05:28.296830+00:00",
+  "total_pending": 9,
   "reviews": [
     {
       "id": 704,
@@ -158,6 +158,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-06T22:34:42.897756+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 729,
+      "event_title": "Nashville Zoo tries to halt data center project next door over animal safety concerns",
+      "event_url": "https://www.reddit.com/r/environment/comments/1tyuja0/nashville_zoo_tries_to_halt_data_center_project/",
+      "event_source": "Reddit r/environment",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Nashville Zoo files legal challenge to halt a data center project due to animal safety concerns, demonstrating institutional advocacy for wildlife protection\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The Nashville Zoo's legal action to halt a nearby data center project over animal safety concerns is a proactive institutional effort to protect wildlife and biodiversity. While the immediate impact is local, the action sets a precedent for future projects to consider ecological risks, aligning with SDG 15 and animal rights frameworks.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Court ruling outcome\", \"Project modifications or cancellation\", \"Broader adoption of wildlife impact assessments in zoning laws\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court rules in favor of the zoo, setting a precedent for wildlife protection in zoning decisions, leading to stricter regulations on data centers near sensitive habitats\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Court denies the zoo's petition, but the case sparks public awareness and potential policy changes in future zoning laws\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Court denies the petition, and the data center project proceeds without wildlife protections, leading to long-term ecological harm\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 4.25, \"final_score\": 5.7125, \"decision\": \"BURN\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Institutional action to protect wildlife aligns with ethical and environmental goals.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Nashville Zoo files legal challenge to halt a data center project over animal safety concerns, demonstrating institutional action to protect wildlife and biodiversity\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The Nashville Zoo's legal action to halt a nearby data center project over animal safety concerns is a proactive institutional effort to protect biodiversity and wildlife welfare. While the data center itself may not directly violate rights, the zoo's intervention aligns with planetary boundaries and animal rights frameworks, representing a tangible step to mitigate potential harm to local ecosystems.\", \"snapshot_score\": 6.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Court ruling on the injunction\", \"Completion of environmental impact assessment\", \"State regulatory approval or denial of the data center\", \"Public backlash or support for the zoo's action\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court grants injunction, data center project is halted, setting a precedent for wildlife protection in urban development\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Court denies injunction, but zoo secures additional wildlife protections via new regulations or community pressure\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Court denies injunction, data center proceeds, and local wildlife suffers measurable decline due to project impacts\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.1, \"final_score\": 4.9, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Institutional action to protect wildlife aligns with ethical frameworks but lacks definitive outcome.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.91, \"confidence\": 8, \"amount_cbwd\": 500000, \"justification\": \"Institutional action to protect wildlife through legal intervention aligns with ethical and environmental protection goals.\", \"disagreement\": true, \"reason\": \"Analyst A correctly emphasizes the institutional action to protect wildlife, which aligns with ethical and environmental protection goals. Analyst B's neutrality overlooks the proactive nature of the action.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-06T23:05:23.160134+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
