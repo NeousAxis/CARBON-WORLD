@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-06T14:35:08.585238+00:00",
-  "total_events": 2475,
+  "generated_at": "2026-06-06T15:05:25.971900+00:00",
+  "total_events": 2477,
   "total_burned": 3692305870,
-  "total_minted": 3394473000,
+  "total_minted": 3396330500,
   "pending_reviews": 6,
   "events": [
+    {
+      "id": 2477,
+      "event_title": "In Carpentras, New RN Municipality Cuts Subsidies to Family Planning",
+      "event_url": "https://www.ouest-france.fr/politique/rassemblement-national/carpentras-la-nouvelle-mairie-rn-supprime-les-subventions-au-planning-familial-3d3eb516-61b4-11f1-8c24-b38534c94fba?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 357500,
+      "final_score": -2.54,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] Both analysts agree on direction; action undermines reproductive rights. | The decision to cut subsidies to family planning undermines access to reproductive health services and violates rights to privacy and equality. It negatively impacts SDGs related to health, gender equality, and reduced inequalities.",
+      "tx_hash": "4j5KXufAcQchqw81y9uA7EnCufmDzha4WMBxWTVhwmXLGjAGtFQidhTVPj5qWoa3d2isyRyYxShuwnh4rTTz4Kvz",
+      "created_at": "2026-06-06T15:05:21.496099+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"The new RN-led municipal council in Carpentras voted to cut subsidies to the local family planning organization.\", \"affected_sdgs\": [3, 5, 10], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 16\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2476,
+      "event_title": "Anthropic Says We Must Stop Authoritarian AI. But What About Its Authoritarian Investors?",
+      "event_url": "https://theintercept.com/2026/06/06/anthropic-ai-investor-abu-dhabi-china/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.86,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; score averaged. Ethical contradiction with authoritarian investor undermines stated commitments. | Anthropic's stated commitment to preventing authoritarian misuse of AI is ethically positive, aligning with human rights and SDG 16. However, its association with an authoritarian investor (Abu Dhabi) creates a significant contradiction, violating core UDHR principles and undermining the company's ethical stance. The net ethical position is negative due to the magnitude",
+      "tx_hash": "K4Vr89g8658cKzTAcQqzsWLfD4tgKugyfXCXq9YaVB5jdkjZcaNeGLKsgPyJwyWs7N2B3vaiFv7bGWJw1UGAW8d",
+      "created_at": "2026-06-06T15:05:21.362899+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Anthropic publicly advocates for keeping AI away from repressive regimes, demonstrating corporate accountability and ethical alignment with human rights frameworks.\", \"affected_sdgs\": [9, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Anthropic's investor, the government of Abu Dhabi, is a repressive dictatorship, which directly undermines the ethical stance of the company and raises concerns about alignment with authoritarian regimes.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2475,
       "event_title": "Trump administration in ‘active dialogue’ on strategic petroleum reserve in California",
@@ -54465,8 +54509,8 @@
       },
       {
         "country": "France",
-        "count": 21,
-        "total_amount": 13771000
+        "count": 22,
+        "total_amount": 14128500
       },
       {
         "country": "Israel",
@@ -54529,8 +54573,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.338,
-        "events": 130
+        "burn_ratio": 0.336,
+        "events": 131
       },
       {
         "region": "Asia",
@@ -54556,8 +54600,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.662,
-        "events": 130
+        "mint_ratio": 0.664,
+        "events": 131
       },
       {
         "region": "Africa",
@@ -54598,7 +54642,7 @@
       },
       {
         "date": "2026-06-06",
-        "net_minted": 66300000,
+        "net_minted": 68157500,
         "net_burned": 50700000
       }
     ],
@@ -54616,7 +54660,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 186,
-        "negative": 357,
+        "negative": 358,
         "event_ids_positive": [
           2471,
           2470,
@@ -54806,6 +54850,8 @@
           1775
         ],
         "event_ids_negative": [
+          2477,
+          2476,
           2475,
           2474,
           2472,
@@ -55161,13 +55207,12 @@
           1789,
           1781,
           1780,
-          1772,
-          1771
+          1772
         ]
       },
       "UDHR": {
         "positive": 81,
-        "negative": 271,
+        "negative": 272,
         "event_ids_positive": [
           2461,
           2459,
@@ -55252,6 +55297,8 @@
           1775
         ],
         "event_ids_negative": [
+          2477,
+          2476,
           2474,
           2468,
           2464,
@@ -55521,8 +55568,7 @@
           1801,
           1791,
           1789,
-          1781,
-          1771
+          1781
         ]
       },
       "ILO": {
@@ -55638,7 +55684,7 @@
       },
       "UNDRIP": {
         "positive": 36,
-        "negative": 70,
+        "negative": 71,
         "event_ids_positive": [
           2471,
           2470,
@@ -55678,6 +55724,7 @@
           1782
         ],
         "event_ids_negative": [
+          2476,
           2468,
           2435,
           2429,
@@ -55864,7 +55911,7 @@
       },
       "PB": {
         "positive": 83,
-        "negative": 101,
+        "negative": 100,
         "event_ids_positive": [
           2459,
           2456,
@@ -56050,8 +56097,7 @@
           1814,
           1813,
           1797,
-          1791,
-          1771
+          1791
         ]
       }
     },
@@ -56059,11 +56105,11 @@
       "niche_pct": 46.2,
       "mainstream_pct": 53.8,
       "total_sources_used": 132,
-      "articles_processed": 700
+      "articles_processed": 701
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 700,
+      "total_events": 701,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -56526,6 +56572,42 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 28,
+        "burn_count": 12,
+        "mint_count": 16,
+        "event_ids": [
+          2476,
+          2466,
+          2429,
+          2382,
+          2333,
+          2329,
+          2328,
+          2262,
+          2199,
+          2182,
+          2181,
+          2124,
+          2110,
+          2108,
+          2055,
+          2049,
+          2039,
+          2030,
+          2019,
+          1976,
+          1971,
+          1964,
+          1911,
+          1906,
+          1884,
+          1836,
+          1811,
+          1799
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 28,
         "burn_count": 14,
@@ -56559,41 +56641,6 @@
           1904,
           1870,
           1783
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 27,
-        "burn_count": 12,
-        "mint_count": 15,
-        "event_ids": [
-          2466,
-          2429,
-          2382,
-          2333,
-          2329,
-          2328,
-          2262,
-          2199,
-          2182,
-          2181,
-          2124,
-          2110,
-          2108,
-          2055,
-          2049,
-          2039,
-          2030,
-          2019,
-          1976,
-          1971,
-          1964,
-          1911,
-          1906,
-          1884,
-          1836,
-          1811,
-          1799
         ]
       },
       {
@@ -56674,10 +56721,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 452,
+      "total_mint": 453,
       "direct_action": {
-        "count": 330,
-        "pct": 73.0
+        "count": 331,
+        "pct": 73.1
       },
       "editorial_alarm": {
         "count": 27,
@@ -56689,9 +56736,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1654,
+      "total_mint": 1656,
       "direct_action": {
-        "count": 1101,
+        "count": 1103,
         "pct": 66.6
       },
       "editorial_alarm": {
@@ -56705,8 +56752,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 226,
-      "institutional": 474,
-      "citizen_ratio": 0.323,
+      "institutional": 475,
+      "citizen_ratio": 0.322,
       "daily": [
         {
           "date": "2026-05-31",
@@ -56741,7 +56788,7 @@
         {
           "date": "2026-06-06",
           "citizen": 10,
-          "institutional": 30
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
@@ -56973,6 +57020,8 @@
         1775
       ],
       "event_ids_institutional": [
+        2477,
+        2476,
         2474,
         2472,
         2470,
@@ -57445,8 +57494,7 @@
         1776,
         1774,
         1773,
-        1772,
-        1771
+        1772
       ]
     }
   }
