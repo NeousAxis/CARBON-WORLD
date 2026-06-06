@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-06T11:34:43.366559+00:00",
-  "total_events": 2463,
+  "generated_at": "2026-06-06T12:04:26.222404+00:00",
+  "total_events": 2464,
   "total_burned": 3682305870,
-  "total_minted": 3385698000,
-  "pending_reviews": 5,
+  "total_minted": 3386698000,
+  "pending_reviews": 6,
   "events": [
+    {
+      "id": 2464,
+      "event_title": "Unsafe Food Causes 866 Million Illnesses and 1.5 Million Deaths Annually, WHO Reports",
+      "event_url": "https://www.who.int/fr/news/item/04-06-2026-unsafe-food-causes-866-million-illnesses-and-1.5-million-deaths-annually--young-children-at-highest-risk",
+      "event_source": "WHO News (FR)",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -3.32,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] WHO report exposes severe global harm from unsafe food, outweighing the positive act of data publication. | The WHO report highlights a severe global health crisis with massive human suffering, particularly among vulnerable children. While the publication of data is a positive step toward addressing the issue, the underlying reality of unsafe food causing catastrophic harm underscores the urg",
+      "tx_hash": "3KPvwozcfKpjJRvovLEt7geYx3F377xmAyRLdVUEuF5rWGz37mhksQrp1bYrqt5X2gQafGZEF31LdVK8rdakzN78",
+      "created_at": "2026-06-06T12:04:21.480131+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"WHO publishes new global estimates quantifying the burden of unsafe food, raising awareness and providing data to guide public health interventions\", \"affected_sdgs\": [2, 3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Unsafe food causes 866 million illnesses and 1.5 million deaths annually, disproportionately affecting children under five\", \"affected_sdgs\": [2, 3], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2463,
       "event_title": "Iran World Cup squad heads to Mexico as US visa row erupts",
@@ -54265,8 +54287,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.333,
-        "events": 132
+        "burn_ratio": 0.336,
+        "events": 131
       },
       {
         "region": "Asia",
@@ -54292,8 +54314,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.667,
-        "events": 132
+        "mint_ratio": 0.664,
+        "events": 131
       },
       {
         "region": "Africa",
@@ -54334,7 +54356,7 @@
       },
       {
         "date": "2026-06-06",
-        "net_minted": 59150000,
+        "net_minted": 60150000,
         "net_burned": 40700000
       }
     ],
@@ -54543,6 +54565,7 @@
           1763
         ],
         "event_ids_negative": [
+          2464,
           2463,
           2462,
           2460,
@@ -54895,13 +54918,12 @@
           1769,
           1767,
           1765,
-          1762,
-          1761
+          1762
         ]
       },
       "UDHR": {
         "positive": 82,
-        "negative": 270,
+        "negative": 271,
         "event_ids_positive": [
           2461,
           2459,
@@ -54987,6 +55009,7 @@
           1763
         ],
         "event_ids_negative": [
+          2464,
           2463,
           2460,
           2457,
@@ -55288,7 +55311,7 @@
       },
       "CRC": {
         "positive": 19,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           2430,
           2393,
@@ -55311,6 +55334,7 @@
           1874
         ],
         "event_ids_negative": [
+          2464,
           2439,
           2413,
           2394,
@@ -55878,10 +55902,11 @@
       },
       {
         "name": "WHO",
-        "count": 15,
+        "count": 16,
         "burn_count": 8,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          2464,
           2434,
           2404,
           2393,
@@ -56347,9 +56372,9 @@
       },
       {
         "name": "Water",
-        "count": 14,
+        "count": 13,
         "burn_count": 5,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           2451,
           2286,
@@ -56363,8 +56388,7 @@
           1888,
           1867,
           1802,
-          1771,
-          1761
+          1771
         ]
       }
     ],
@@ -56414,9 +56438,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1646,
+      "total_mint": 1647,
       "direct_action": {
-        "count": 1094,
+        "count": 1095,
         "pct": 66.5
       },
       "editorial_alarm": {
@@ -56466,7 +56490,7 @@
         {
           "date": "2026-06-06",
           "citizen": 7,
-          "institutional": 23
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -56697,6 +56721,7 @@
         1768
       ],
       "event_ids_institutional": [
+        2464,
         2463,
         2462,
         2461,
@@ -57170,8 +57195,7 @@
         1765,
         1764,
         1763,
-        1762,
-        1761
+        1762
       ]
     }
   }

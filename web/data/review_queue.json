@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T11:34:43.494122+00:00",
-  "total_pending": 5,
+  "generated_at": "2026-06-06T12:04:26.398362+00:00",
+  "total_pending": 6,
   "reviews": [
     {
       "id": 704,
@@ -98,6 +98,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-05T18:04:57.096671+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 724,
+      "event_title": "REPORTAGE. State responsibility in the chlordane scandal in the Antilles: a law, and after?",
+      "event_url": "https://www.ouest-france.fr/environnement/pesticides/reportage-responsabilite-de-letat-dans-le-scandale-du-chlordecone-aux-antilles-une-loi-et-apres-490a9bac-615b-11f1-b037-716b21dc467b?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"The French National Assembly has passed a law acknowledging the state's responsibility and providing compensation for victims of chlordane contamination.\", \"affected_sdgs\": [3, 10, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The law lacks concrete measures to address the long-term health and environmental consequences of chlordane contamination, leaving many victims dissatisfied.\", \"affected_sdgs\": [3, 10, 13, 15], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The law represents a step toward justice and health protection for victims of chlordane contamination, but its lack of concrete measures limits its effectiveness in addressing ongoing harm.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation of concrete health and environmental remediation measures\", \"Monitoring of long-term health outcomes in affected populations\", \"Follow-up legislative review by 2026\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The law is effectively implemented with additional funding and concrete measures, leading to improved health outcomes and environmental recovery.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"The law remains underfunded and lacks enforcement, resulting in continued suffering and environmental degradation.\", \"probability\": 0.55, \"score\": 1}, {\"name\": \"C\", \"description\": \"The law is ignored or reversed, leading to further harm and loss of trust in government accountability.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.8, \"final_score\": 2.6, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 6, \"justification\": \"The law acknowledges state responsibility but lacks concrete measures, limiting its positive impact.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French National Assembly adopts law recognizing state responsibility for chlordane scandal and establishing victim compensation mechanisms\", \"affected_sdgs\": [3, 10, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Despite law adoption, critics highlight lack of concrete measures and persistent contamination affecting over 90% of adult population in Guadeloupe and Martinique\", \"affected_sdgs\": [3, 10, 12, 15], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The adoption of the law represents a significant step toward accountability and justice for victims of the chlordane scandal, aligning with human rights and SDG 3 (Good Health) and SDG 10 (Reduced Inequalities). However, the absence of concrete follow-up measures and the ongoing contamination crisis undermine its effectiveness, creating a gap between legal recognition and practical relief.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Implementation of compensation mechanisms and their accessibility to victims\", \"Public health interventions to address contamination\", \"Long-term monitoring and remediation efforts by the state\", \"Legal challenges to the law's scope or enforcement\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Law leads to comprehensive compensation, remediation, and public health interventions, significantly reducing contamination and restoring trust in institutions\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial implementation with limited compensation and slow remediation, leaving most victims without adequate support and contamination persisting\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Law is undermined by weak enforcement, legal loopholes, and continued state inaction, exacerbating health and social inequalities\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.1, \"final_score\": 4.3, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Law adoption is positive but insufficient without concrete measures; contamination crisis persists.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.87, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Law acknowledges state harm but lacks enforcement; institutional action punishes harm by recognizing responsibility.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (law) as a step toward justice, despite limitations. Analyst B's NEUTRAL stance underweights the accountability aspect. The law's recognition of responsibility is a punitive institutional action against harm, even if incomplete.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-06T12:04:21.476075+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
