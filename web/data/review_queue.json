@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T12:34:35.831173+00:00",
-  "total_pending": 5,
+  "generated_at": "2026-06-06T13:06:21.317596+00:00",
+  "total_pending": 6,
   "reviews": [
     {
       "id": 704,
@@ -98,6 +98,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-05T18:04:57.096671+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 725,
+      "event_title": "Africa: CCA and Mauritius Postpone U.S.-Africa Business Summit",
+      "event_url": "https://allafrica.com/stories/202606060111.html",
+      "event_source": "AllAfrica Headlines",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Postponement of the U.S.-Africa Business Summit in response to public health guidance reduces the risk of spreading the Ebola virus.\", \"affected_sdgs\": [3, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Postponement may delay economic cooperation and investment opportunities between the U.S. and African nations.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The postponement of the U.S.-Africa Business Summit prioritizes public health and safety in response to the Ebola outbreak, aligning with global health frameworks. However, it may temporarily hinder economic collaboration and development opportunities.\", \"snapshot_score\": 3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Rescheduling of the U.S.-Africa Business Summit\", \"Update on the status of the Ebola outbreak in Central Africa\", \"WHO and Mauritius Ministry of Health reassess travel and event guidelines\"], \"revaluation_checkpoint\": \"2027-06-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ebola outbreak is contained, and the summit is rescheduled with enhanced health protocols, leading to successful economic cooperation.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Ebola outbreak remains a concern, and the summit is delayed further, causing ongoing economic uncertainty.\", \"probability\": 0.55, \"score\": 0}, {\"name\": \"C\", \"description\": \"Ebola outbreak escalates, leading to a permanent cancellation of the summit and reduced U.S.-Africa economic engagement.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 0.25, \"final_score\": 1.0, \"decision\": \"MINT\", \"amount_cbwd\": 125000, \"confidence\": 6, \"justification\": \"Postponement prioritizes health but delays economic cooperation.\", \"event_country\": \"Mauritius\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Postponement of the U.S.-Africa Business Summit to prevent potential spread of Ebola during an outbreak in Central Africa, demonstrating responsible public health leadership by the Corporate Council on Africa (CCA) and the Government of Mauritius\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Decision made in alignment with guidance from the World Health Organization (WHO) and national health authorities, reinforcing trust in global health institutions and coordinated international responses\", \"affected_sdgs\": [3, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Postponement may cause economic disruption for businesses, investors, and local stakeholders in Mauritius preparing for the event, potentially affecting livelihoods and economic growth\", \"affected_sdgs\": [8, 9], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The postponement prioritizes public health and safety by preventing potential disease spread, aligning with global health guidance and ethical responsibility. While it may cause short-term economic disruption, the long-term benefits of protecting human life and preventing a potential outbreak outweigh these costs. The decision reflects a precautionary principle in action.\", \"snapshot_score\": 7.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"WHO declares Ebola outbreak contained before 2028\", \"Mauritius government reverses decision and holds summit despite WHO guidance\", \"New variant of Ebola emerges with higher transmission risk\"], \"revaluation_checkpoint\": \"2028-06-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Ebola outbreak is contained within months, and the summit is rescheduled for early 2027 with enhanced health protocols, leading to a successful event with minimal disruption\", \"probability\": 0.35, \"score\": 8}, {\"name\": \"B\", \"description\": \"Ebola outbreak persists but is controlled, with the summit rescheduled for late 2027; economic losses are moderate but public health is preserved\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Ebola outbreak worsens, leading to a prolonged postponement or cancellation, causing significant economic damage to Mauritius and regional business networks\", \"probability\": 0.15, \"score\": -4}], \"prospective_score\": 5.05, \"final_score\": 5.89, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Postponement prioritizes public health and ethical responsibility over economic interests.\", \"event_country\": \"Mauritius\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 0.65, \"confidence\": 9, \"amount_cbwd\": 125000, \"justification\": \"Postponement prioritizes public health and ethical responsibility over economic interests.\", \"disagreement\": true, \"reason\": \"Analyst B correctly identified the institutional action (postponement) as a protective measure against harm (Ebola spread), despite short-term economic disruption. The action aligns with ethical frameworks prioritizing life and safety.\"}",
+      "sentinel_concern": "structural: fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 125000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-06T13:06:16.461636+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
