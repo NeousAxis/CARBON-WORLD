@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-06-06T10:06:31.477077+00:00",
-  "total_events": 2457,
-  "total_burned": 3681105870,
-  "total_minted": 3384333000,
-  "pending_reviews": 6,
+  "generated_at": "2026-06-06T10:35:17.299647+00:00",
+  "total_events": 2460,
+  "total_burned": 3681805870,
+  "total_minted": 3384848000,
+  "pending_reviews": 5,
   "events": [
+    {
+      "id": 2460,
+      "event_title": "Takaichi faces heat over defamatory campaign video scandal",
+      "event_url": "https://www.japantimes.co.jp/news/2026/06/06/japan/politics/takaichi-campaign-video-scandal/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.4375,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT for defamatory campaign tactics undermining democracy. | The dissemination of defamatory campaign videos constitutes a clear violation of democratic principles and human rights, undermining free expression and fair electoral processes. The confirmed use of such tactics by a political campaign represents a significant ethical failure, eroding public trust in institutions and democratic discourse.",
+      "tx_hash": "3TR8ugEQcpa7vGwvWiEZruse8mk3jPS46xoH99jmMcscnfefc8bMDbG5VhhU7P8WGwxhfyrCnM1YKcxDN6E7LtCe",
+      "created_at": "2026-06-06T10:35:12.552866+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Political campaign disseminates defamatory videos targeting rivals, violating electoral integrity and democratic norms\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Audio recordings confirming the defamatory campaign suggest systemic unethical behavior in political messaging\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2459,
+      "event_title": "Cadmium bill proposal: Ecologist success and RN danger",
+      "event_url": "https://www.lemonde.fr/idees/article/2026/06/06/proposition-de-loi-sur-le-cadmium-succes-ecologiste-et-danger-du-rn_6698102_3232.html",
+      "event_source": "Le Monde Planete",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 6.12,
+      "confidence": 8,
+      "justification": "Adoption of cadmium reduction bill protects health and ecosystems despite RN opposition. | The adoption of the cadmium reduction bill represents a significant positive step toward protecting public health, ecosystems, and sustainable agriculture by limiting toxic heavy metal contamination in fertilizers. While RN's opposition reflects a disregard for these protections, the bill's passage demonstrates institutional commitment to environmental and health governance.",
+      "tx_hash": "NdeFosfG8cUTcd2HaNa9eUUSduhqe9XjmCs98tEhMDW7A6iW33uFsmxww4TSLNDn8qnwiErybAurZxWSEXzQks7",
+      "created_at": "2026-06-06T10:35:12.440156+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"French National Assembly adopts a bill to reduce maximum cadmium content in phosphate fertilizers, reducing soil and water contamination and protecting public health\", \"affected_sdgs\": [2, 3, 12, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rassemblement National (RN) votes against the cadmium reduction bill, opposing public health protections and environmental safeguards\", \"affected_sdgs\": [3, 12, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2458,
+      "event_title": "End to tradition of free ice cream for top pupils in Polish town sparks political controversy",
+      "event_url": "https://notesfrompoland.com/2026/06/05/end-to-tradition-of-free-ice-cream-for-best-school-reports-in-polish-town-sparks-political-controversy/",
+      "event_source": "Notes From Poland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 15000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Institutional action protected children from commercial exploitation of academic performance.",
+      "tx_hash": null,
+      "created_at": "2026-06-06T10:17:01.588666+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2457,
       "event_title": "In Sardinia, Italians torn between defense industry and pacifist convictions: 'Everyone wants peace, but people need to eat'",
@@ -54096,8 +54162,8 @@
       },
       {
         "country": "France",
-        "count": 14,
-        "total_amount": 79700000
+        "count": 15,
+        "total_amount": 80400000
       },
       {
         "country": "Australia",
@@ -54133,13 +54199,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.326,
-        "events": 132
+        "burn_ratio": 0.331,
+        "events": 133
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.305,
-        "events": 59
+        "burn_ratio": 0.3,
+        "events": 60
       }
     ],
     "top_regions_destructive": [
@@ -54155,13 +54221,13 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.695,
-        "events": 59
+        "mint_ratio": 0.7,
+        "events": 60
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.674,
-        "events": 132
+        "mint_ratio": 0.669,
+        "events": 133
       },
       {
         "region": "Latin America",
@@ -54202,8 +54268,8 @@
       },
       {
         "date": "2026-06-06",
-        "net_minted": 57800000,
-        "net_burned": 39500000
+        "net_minted": 58300000,
+        "net_burned": 40200000
       }
     ],
     "event_of_the_day": {
@@ -54219,9 +54285,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 188,
-        "negative": 354,
+        "positive": 189,
+        "negative": 355,
         "event_ids_positive": [
+          2459,
           2456,
           2453,
           2451,
@@ -54412,6 +54479,7 @@
           1755
         ],
         "event_ids_negative": [
+          2460,
           2457,
           2455,
           2454,
@@ -54769,9 +54837,10 @@
         ]
       },
       "UDHR": {
-        "positive": 81,
-        "negative": 270,
+        "positive": 82,
+        "negative": 271,
         "event_ids_positive": [
+          2459,
           2434,
           2430,
           2424,
@@ -54855,6 +54924,7 @@
           1757
         ],
         "event_ids_negative": [
+          2460,
           2457,
           2455,
           2454,
@@ -55352,9 +55422,10 @@
         ]
       },
       "Animal": {
-        "positive": 50,
+        "positive": 51,
         "negative": 54,
         "event_ids_positive": [
+          2459,
           2456,
           2453,
           2450,
@@ -55464,9 +55535,10 @@
         ]
       },
       "PB": {
-        "positive": 85,
+        "positive": 86,
         "negative": 100,
         "event_ids_positive": [
+          2459,
           2456,
           2451,
           2450,
@@ -55661,11 +55733,11 @@
       "niche_pct": 44.3,
       "mainstream_pct": 55.7,
       "total_sources_used": 131,
-      "articles_processed": 701
+      "articles_processed": 703
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 701,
+      "total_events": 703,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -56132,10 +56204,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 26,
-        "burn_count": 13,
+        "count": 27,
+        "burn_count": 14,
         "mint_count": 13,
         "event_ids": [
+          2459,
           2453,
           2418,
           2410,
@@ -56248,10 +56321,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 250,
+      "total_burn": 251,
       "direct_action": {
-        "count": 174,
-        "pct": 69.6
+        "count": 175,
+        "pct": 69.7
       },
       "editorial_consciousness": {
         "count": 14,
@@ -56259,13 +56332,13 @@
       },
       "untyped": {
         "count": 62,
-        "pct": 24.8
+        "pct": 24.7
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 804,
+      "total_burn": 805,
       "direct_action": {
-        "count": 537,
+        "count": 538,
         "pct": 66.8
       },
       "editorial_consciousness": {
@@ -56278,10 +56351,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 451,
+      "total_mint": 452,
       "direct_action": {
-        "count": 328,
-        "pct": 72.7
+        "count": 329,
+        "pct": 72.8
       },
       "editorial_alarm": {
         "count": 26,
@@ -56293,9 +56366,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1643,
+      "total_mint": 1644,
       "direct_action": {
-        "count": 1091,
+        "count": 1092,
         "pct": 66.4
       },
       "editorial_alarm": {
@@ -56309,8 +56382,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 228,
-      "institutional": 473,
-      "citizen_ratio": 0.325,
+      "institutional": 475,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-05-31",
@@ -56345,7 +56418,7 @@
         {
           "date": "2026-06-06",
           "citizen": 7,
-          "institutional": 18
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
@@ -56579,6 +56652,8 @@
         1755
       ],
       "event_ids_institutional": [
+        2460,
+        2459,
         2457,
         2455,
         2454,
