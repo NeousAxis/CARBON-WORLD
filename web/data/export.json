@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-06T11:04:46.093968+00:00",
-  "total_events": 2461,
+  "generated_at": "2026-06-06T11:34:43.366559+00:00",
+  "total_events": 2463,
   "total_burned": 3682305870,
-  "total_minted": 3384848000,
+  "total_minted": 3385698000,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 2463,
+      "event_title": "Iran World Cup squad heads to Mexico as US visa row erupts",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/iran-world-cup-squad-heads-mexico-us-visa-row-erupts",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.99,
+      "confidence": 7,
+      "justification": "US visa refusal undermines international sportsmanship and human rights principles. | The event highlights a conflict between diplomatic tensions and the spirit of international sportsmanship. While Iran's participation in the World Cup reflects a positive commitment to global engagement, the US visa refusal undermines the principle of inclusive international participation and risks violating fundamental human rights related to education and cultural exchange.",
+      "tx_hash": "52hzZPfsYkjefRB6zDRS7KJnHH8bEDds9vYDf8HmaXaU9sh2whWxjyz2ySX3BUqhJKPcwJgN3XVeBMdCwW4kWHsX",
+      "created_at": "2026-06-06T11:34:39.306393+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Iran's national football team proceeding to the World Cup despite diplomatic tensions, demonstrating commitment to international sporting participation and cultural exchange\", \"affected_sdgs\": [4, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US refusal to grant visas to Iranian support staff for the 2026 World Cup, undermining international cooperation and potentially violating principles of non-discrimination in sports participation\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2462,
+      "event_title": "FIFA bans fans from bringing reusable water bottles to World Cup stadiums",
+      "event_url": "https://efeverde.com/la-fifa-prohibe-a-los-aficionados-llevar-botellas-de-agua-reutilizables-a-los-estadios-del-mundial/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.4,
+      "confidence": 8,
+      "justification": "FIFA's ban on reusable bottles undermines sustainability and sets a negative precedent for large events. | The decision to ban reusable water bottles at World Cup stadiums directly undermines global sustainability goals (SDG 12, 13, 14, 15) by promoting single-use plastic waste and contradicting FIFA's own recent environmental commitments. This action prioritizes logistical convenience over ecological responsibility, setting a regressive precedent for large-scale events.",
+      "tx_hash": "uZUV2WCQXTJ8W797qhrV63L3zSy4byPGAt4ytgGnGxrozh77DP2vYfZhVTVyxrWdHjgHNFDxoagzzCLNs9LWr7J",
+      "created_at": "2026-06-06T11:34:39.200168+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"FIFA reverses policy to ban reusable water bottles at World Cup stadiums, increasing single-use plastic waste and undermining environmental sustainability efforts\", \"affected_sdgs\": [12, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2461,
       "event_title": "Vermont becomes first US state to ban paraquat herbicide over Parkinson's fears",
@@ -54152,8 +54196,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 107,
-        "total_amount": 309700000
+        "count": 108,
+        "total_amount": 309850000
       },
       {
         "country": "France",
@@ -54166,14 +54210,14 @@
         "total_amount": 100000000
       },
       {
+        "country": "Switzerland",
+        "count": 14,
+        "total_amount": 19140000
+      },
+      {
         "country": "China",
         "count": 14,
         "total_amount": 33195000
-      },
-      {
-        "country": "Switzerland",
-        "count": 13,
-        "total_amount": 18440000
       }
     ],
     "top_countries_burn": [
@@ -54226,8 +54270,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.3,
-        "events": 60
+        "burn_ratio": 0.305,
+        "events": 59
       }
     ],
     "top_regions_destructive": [
@@ -54238,13 +54282,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.76,
-        "events": 146
+        "mint_ratio": 0.762,
+        "events": 147
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.7,
-        "events": 60
+        "mint_ratio": 0.695,
+        "events": 59
       },
       {
         "region": "Europe",
@@ -54290,7 +54334,7 @@
       },
       {
         "date": "2026-06-06",
-        "net_minted": 58300000,
+        "net_minted": 59150000,
         "net_burned": 40700000
       }
     ],
@@ -54499,6 +54543,8 @@
           1763
         ],
         "event_ids_negative": [
+          2463,
+          2462,
           2460,
           2457,
           2455,
@@ -54850,9 +54896,7 @@
           1767,
           1765,
           1762,
-          1761,
-          1760,
-          1759
+          1761
         ]
       },
       "UDHR": {
@@ -54943,6 +54987,7 @@
           1763
         ],
         "event_ids_negative": [
+          2463,
           2460,
           2457,
           2455,
@@ -55211,8 +55256,7 @@
           1781,
           1771,
           1767,
-          1765,
-          1760
+          1765
         ]
       },
       "ILO": {
@@ -55439,7 +55483,7 @@
       },
       "Animal": {
         "positive": 50,
-        "negative": 54,
+        "negative": 53,
         "event_ids_positive": [
           2459,
           2456,
@@ -55545,13 +55589,12 @@
           1860,
           1837,
           1833,
-          1819,
-          1760
+          1819
         ]
       },
       "PB": {
         "positive": 84,
-        "negative": 100,
+        "negative": 99,
         "event_ids_positive": [
           2459,
           2456,
@@ -55639,6 +55682,7 @@
           1766
         ],
         "event_ids_negative": [
+          2462,
           2449,
           2445,
           2439,
@@ -55736,15 +55780,13 @@
           1797,
           1791,
           1771,
-          1769,
-          1760,
-          1759
+          1769
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 45.0,
-      "mainstream_pct": 55.0,
+      "niche_pct": 45.8,
+      "mainstream_pct": 54.2,
       "total_sources_used": 131,
       "articles_processed": 700
     },
@@ -55915,9 +55957,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 100,
+        "count": 99,
         "burn_count": 52,
-        "mint_count": 48,
+        "mint_count": 47,
         "event_ids": [
           2451,
           2439,
@@ -56017,15 +56059,14 @@
           1799,
           1796,
           1790,
-          1766,
-          1760
+          1766
         ]
       },
       {
         "name": "Construction",
-        "count": 62,
+        "count": 61,
         "burn_count": 30,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           2454,
           2451,
@@ -56087,8 +56128,7 @@
           1864,
           1842,
           1839,
-          1818,
-          1760
+          1818
         ]
       },
       {
@@ -56157,9 +56197,9 @@
       },
       {
         "name": "Defense",
-        "count": 50,
+        "count": 49,
         "burn_count": 4,
-        "mint_count": 46,
+        "mint_count": 45,
         "event_ids": [
           2457,
           2452,
@@ -56209,8 +56249,7 @@
           1795,
           1772,
           1767,
-          1765,
-          1760
+          1765
         ]
       },
       {
@@ -56284,9 +56323,9 @@
       },
       {
         "name": "Transport",
-        "count": 17,
+        "count": 16,
         "burn_count": 5,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           2410,
           2355,
@@ -56303,8 +56342,7 @@
           1898,
           1897,
           1791,
-          1790,
-          1760
+          1790
         ]
       },
       {
@@ -56376,10 +56414,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1644,
+      "total_mint": 1646,
       "direct_action": {
-        "count": 1092,
-        "pct": 66.4
+        "count": 1094,
+        "pct": 66.5
       },
       "editorial_alarm": {
         "count": 107,
@@ -56387,7 +56425,7 @@
       },
       "untyped": {
         "count": 445,
-        "pct": 27.1
+        "pct": 27.0
       }
     },
     "citizen_vs_institutional_7d": {
@@ -56428,7 +56466,7 @@
         {
           "date": "2026-06-06",
           "citizen": 7,
-          "institutional": 21
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -56659,6 +56697,8 @@
         1768
       ],
       "event_ids_institutional": [
+        2463,
+        2462,
         2461,
         2460,
         2459,
@@ -57131,9 +57171,7 @@
         1764,
         1763,
         1762,
-        1761,
-        1760,
-        1759
+        1761
       ]
     }
   }
