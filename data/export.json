@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-06T17:35:16.132913+00:00",
-  "total_events": 2484,
+  "generated_at": "2026-06-06T18:05:04.930781+00:00",
+  "total_events": 2486,
   "total_burned": 3693805870,
-  "total_minted": 3410815500,
+  "total_minted": 3411285500,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 2486,
+      "event_title": "Plans by Health Minister Warken: Less pension for family caregivers?",
+      "event_url": "https://www.tagesschau.de/inland/innenpolitik/pflege-reform-102.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 420000,
+      "final_score": -2.85,
+      "confidence": 8,
+      "justification": "Proposed pension cuts for family caregivers violate labor rights and worsen gender inequality. | The criticism of the proposed policy exposes a regressive measure that would weaken social protections for unpaid caregivers, predominantly women, while the policy itself represents a direct violation of labor and human rights. The discourse around the proposal, however, serves as a consciousness-raising moment about the value of care work.",
+      "tx_hash": "uCFxLtKzURUxRdnVxCcqCp9ZPYqR3enApXqyPFNkjcGECduMEoGs7zQsmQTWSEhWFfxtK7qWByQEekyeDTuS9ge",
+      "created_at": "2026-06-06T18:04:59.920431+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Criticism of proposed pension cuts for family caregivers highlights potential harm to unpaid care workers, raising awareness of their rights and social value\", \"affected_sdgs\": [1, 3, 5, 8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed policy to reduce pension contributions for family caregivers undermines social security for unpaid care workers, violating labor rights and exacerbating gender inequality in unpaid labor distribution\", \"affected_sdgs\": [1, 5, 8, 10], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\", \"ILO Freedom of Association Convention\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2485,
+      "event_title": "The Bureaucratic Journey of a Retired General Practitioner Ready to Return to Service",
+      "event_url": "http://www.lequotidiendumedecin.fr/temoignages/le-parcours-ubuesque-dun-generaliste-retraite-pret-reprendre-du-service",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 50000,
+      "final_score": -2.4875,
+      "confidence": 8,
+      "justification": "Bureaucratic failure to enable timely healthcare access outweighs individual civic duty. | The act of the retired doctor seeking to return to service is a positive demonstration of civic responsibility and commitment to public health (SDG 3, UDHR Article 25). However, the bureaucratic obstruction preventing his resumption of practice is a significant failure, directly undermining healthcare access in a vulnerable rural community.",
+      "tx_hash": "255hDYhYRqECmvi61gjF1T2aBzABP1yrdCtwLpsERx3ERCqwuTd2JmbUJUFkFQCQzHoH7VSKRKbZNRWyxqUPBPop",
+      "created_at": "2026-06-06T18:04:59.811365+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Retired general practitioner voluntarily seeks to return to service to address a critical healthcare shortage in a rural community, demonstrating civic duty and commitment to public health\", \"affected_sdgs\": [3, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Bureaucratic delays prevent a qualified healthcare professional from resuming practice, exacerbating healthcare access issues in a vulnerable rural area\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2484,
       "event_title": "Plasma land dispute in Pohuwato: Residents face legal threats amid agrarian conflict",
@@ -54663,8 +54707,8 @@
       },
       {
         "country": "France",
-        "count": 22,
-        "total_amount": 14128500
+        "count": 23,
+        "total_amount": 14178500
       },
       {
         "country": "Israel",
@@ -54727,8 +54771,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.333,
-        "events": 132
+        "burn_ratio": 0.328,
+        "events": 134
       },
       {
         "region": "Asia",
@@ -54754,8 +54798,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.667,
-        "events": 132
+        "mint_ratio": 0.672,
+        "events": 134
       },
       {
         "region": "Africa",
@@ -54796,7 +54840,7 @@
       },
       {
         "date": "2026-06-06",
-        "net_minted": 82642500,
+        "net_minted": 83112500,
         "net_burned": 52200000
       }
     ],
@@ -54814,7 +54858,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 182,
-        "negative": 361,
+        "negative": 363,
         "event_ids_positive": [
           2482,
           2471,
@@ -55000,6 +55044,8 @@
           1787
         ],
         "event_ids_negative": [
+          2486,
+          2485,
           2484,
           2483,
           2481,
@@ -55365,7 +55411,7 @@
       },
       "UDHR": {
         "positive": 78,
-        "negative": 276,
+        "negative": 278,
         "event_ids_positive": [
           2482,
           2461,
@@ -55447,6 +55493,8 @@
           1787
         ],
         "event_ids_negative": [
+          2486,
+          2485,
           2484,
           2483,
           2481,
@@ -55727,7 +55775,7 @@
       },
       "ILO": {
         "positive": 5,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           2371,
           2329,
@@ -55736,6 +55784,7 @@
           1933
         ],
         "event_ids_negative": [
+          2486,
           2357,
           2327,
           2289,
@@ -55754,7 +55803,7 @@
       },
       "CRC": {
         "positive": 19,
-        "negative": 57,
+        "negative": 58,
         "event_ids_positive": [
           2430,
           2393,
@@ -55777,6 +55826,7 @@
           1874
         ],
         "event_ids_negative": [
+          2486,
           2464,
           2439,
           2413,
@@ -56263,11 +56313,11 @@
       "niche_pct": 46.6,
       "mainstream_pct": 53.4,
       "total_sources_used": 133,
-      "articles_processed": 695
+      "articles_processed": 697
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 695,
+      "total_events": 697,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -56875,24 +56925,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 454,
+      "total_mint": 456,
       "direct_action": {
-        "count": 333,
-        "pct": 73.3
+        "count": 335,
+        "pct": 73.5
       },
       "editorial_alarm": {
         "count": 28,
-        "pct": 6.2
+        "pct": 6.1
       },
       "untyped": {
         "count": 93,
-        "pct": 20.5
+        "pct": 20.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1662,
+      "total_mint": 1664,
       "direct_action": {
-        "count": 1107,
+        "count": 1109,
         "pct": 66.6
       },
       "editorial_alarm": {
@@ -56901,13 +56951,13 @@
       },
       "untyped": {
         "count": 445,
-        "pct": 26.8
+        "pct": 26.7
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 225,
-      "institutional": 470,
-      "citizen_ratio": 0.324,
+      "institutional": 472,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-05-31",
@@ -56942,7 +56992,7 @@
         {
           "date": "2026-06-06",
           "citizen": 15,
-          "institutional": 34
+          "institutional": 36
         }
       ],
       "event_ids_citizen": [
@@ -57173,6 +57223,8 @@
         1788
       ],
       "event_ids_institutional": [
+        2486,
+        2485,
         2480,
         2478,
         2477,
