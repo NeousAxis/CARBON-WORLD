@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T15:05:26.168874+00:00",
-  "total_pending": 6,
+  "generated_at": "2026-06-06T16:06:44.820248+00:00",
+  "total_pending": 7,
   "reviews": [
     {
       "id": 704,
@@ -118,6 +118,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-06T13:06:16.461636+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 727,
+      "event_title": "Activists Disrupt German Military Exhibit Over Arms Sales to Israel",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/6/6/activists-disrupt-german-military-exhibit-over-arms-sales-to-israel?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led protest disrupting a military exhibit to oppose arms sales to Israel, demonstrating public opposition to potential human rights violations and promoting peace\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The protest directly targets arms sales that could enable human rights violations, aligning with peace and justice (SDG 16) and UDHR principles. While disruptive, the action raises public awareness and pressures institutional accountability, with no identified negative ethical aspects.\", \"snapshot_score\": 6.5, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Sustained public support for the protest\", \"Government response to the disruption\", \"Media coverage impact on policy\", \"Legal consequences for activists\"], \"revaluation_checkpoint\": \"2028-06-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Protest leads to policy review and reduction in arms sales, with lasting public engagement in peace advocacy\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Government dismisses protest, but public awareness grows, leading to long-term pressure for transparency\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Protest backfires, leading to crackdowns on dissent and increased arms sales\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.9, \"final_score\": 5.6, \"decision\": \"BURN\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Citizen-led protest opposing arms sales to Israel aligns with peace and human rights.\", \"event_country\": \"Germany\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Citizen-led protest targeting German military-industrial complex over arms sales to Israel, raising awareness of human rights violations and potential complicity in conflict\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}], \"negative_aspects\": [{\"description\": \"Disruption of a military exhibit may hinder public access to defense-related information and limit institutional transparency\", \"affected_sdgs\": [], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The protest advances human rights and peace by challenging arms sales linked to potential violations, aligning with SDG 16. However, the disruption of a public exhibit introduces minor transparency concerns. The net ethical balance favors the positive action given its alignment with core rights frameworks.\", \"snapshot_score\": 3.5, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Government response to protest (e.g., policy changes or crackdowns)\", \"Media coverage amplifying or suppressing the issue\", \"Shift in public opinion on military transparency\"], \"revaluation_checkpoint\": \"2028-06-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Protest leads to policy review and reduced arms sales, with broader public discourse on military ethics\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Protest has limited impact, with minor institutional adjustments but no significant policy change\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Protest triggers backlash, increased militarization, or legal restrictions on activism\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.3, \"final_score\": 2.6, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Citizen action aligns with human rights but has limited immediate impact.\", \"event_country\": \"Germany\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.89, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"Institutional action (arms sales) enables harm; protest opposes it, aligning with rights protection.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (arms sales enabling harm) and the protest's role in opposing it. Analyst B's neutrality underweights the ethical weight of opposing harm-enabling actions.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-06T16:06:39.652256+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
