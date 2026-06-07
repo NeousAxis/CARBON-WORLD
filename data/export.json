@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-07T18:34:13.235764+00:00",
-  "total_events": 2549,
+  "generated_at": "2026-06-07T19:35:23.063047+00:00",
+  "total_events": 2550,
   "total_burned": 3775630870,
-  "total_minted": 3480954500,
+  "total_minted": 3481654500,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 2550,
+      "event_title": "Israeli military police investigating soldier's killing of 7-month-old Palestinian",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/israeli-military-police-investigating-soldiers-killing-7-month-old-palestinian",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.17,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] Institutional investigation is positive but overshadowed by irreversible harm and systemic violence. | The investigation represents a rare institutional acknowledgment of harm and a step toward accountability, aligning with human rights and child protection frameworks. However, the underlying act—killing an infant and injuring parents—constitutes a severe violation of fundamental rights, over",
+      "tx_hash": "37PEVFvbELtSrk8HX4ifF5sWCh83BVtbJpP69EUaH4R7zPUj6GmeJ4ZKeLAvwT3ZTccHpbdkJNUid8v5JkuaofHD",
+      "created_at": "2026-06-07T19:35:18.495663+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israeli military police opening a criminal investigation into the killing of a 7-month-old Palestinian infant by an Israeli soldier\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The killing of a 7-month-old Palestinian infant and injury to his parents by an Israeli soldier in the occupied West Bank\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 6\", \"CRC Article 6\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2549,
       "event_title": "Bolivia’s legislature passes law allowing use of troops against protesters",
@@ -56107,9 +56129,9 @@
         "total_amount": 38195000
       },
       {
-        "country": "Indonesia",
+        "country": "Israel",
         "count": 11,
-        "total_amount": 26100000
+        "total_amount": 55775000
       }
     ],
     "top_countries_burn": [
@@ -56129,14 +56151,14 @@
         "total_amount": 44500000
       },
       {
-        "country": "India",
-        "count": 9,
-        "total_amount": 41500000
-      },
-      {
         "country": "South Africa",
         "count": 8,
         "total_amount": 44500000
+      },
+      {
+        "country": "India",
+        "count": 8,
+        "total_amount": 34500000
       }
     ],
     "top_regions_sustainable": [
@@ -56157,20 +56179,20 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.336,
-        "events": 143
+        "burn_ratio": 0.331,
+        "events": 142
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.3,
-        "events": 60
+        "burn_ratio": 0.288,
+        "events": 59
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.955,
-        "events": 22
+        "mint_ratio": 0.957,
+        "events": 23
       },
       {
         "region": "North America",
@@ -56179,13 +56201,13 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.7,
-        "events": 60
+        "mint_ratio": 0.712,
+        "events": 59
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.664,
-        "events": 143
+        "mint_ratio": 0.669,
+        "events": 142
       },
       {
         "region": "Latin America",
@@ -56226,7 +56248,7 @@
       },
       {
         "date": "2026-06-07",
-        "net_minted": 58840000,
+        "net_minted": 59540000,
         "net_burned": 66825000
       }
     ],
@@ -56243,7 +56265,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 187,
+        "positive": 185,
         "negative": 372,
         "event_ids_positive": [
           2546,
@@ -56430,11 +56452,10 @@
           1864,
           1853,
           1849,
-          1846,
-          1842,
-          1840
+          1846
         ],
         "event_ids_negative": [
+          2550,
           2549,
           2548,
           2545,
@@ -56805,13 +56826,12 @@
           1850,
           1847,
           1844,
-          1843,
-          1841
+          1843
         ]
       },
       "UDHR": {
         "positive": 85,
-        "negative": 289,
+        "negative": 290,
         "event_ids_positive": [
           2546,
           2544,
@@ -56900,6 +56920,7 @@
           1849
         ],
         "event_ids_negative": [
+          2550,
           2549,
           2545,
           2540,
@@ -57222,7 +57243,7 @@
       },
       "CRC": {
         "positive": 21,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           2546,
           2491,
@@ -57247,6 +57268,7 @@
           1874
         ],
         "event_ids_negative": [
+          2550,
           2536,
           2532,
           2525,
@@ -57425,7 +57447,7 @@
         ]
       },
       "Animal": {
-        "positive": 50,
+        "positive": 49,
         "negative": 57,
         "event_ids_positive": [
           2543,
@@ -57476,8 +57498,7 @@
           1886,
           1882,
           1869,
-          1846,
-          1840
+          1846
         ],
         "event_ids_negative": [
           2531,
@@ -57540,8 +57561,8 @@
         ]
       },
       "PB": {
-        "positive": 79,
-        "negative": 98,
+        "positive": 78,
+        "negative": 97,
         "event_ids_positive": [
           2543,
           2534,
@@ -57620,8 +57641,7 @@
           1882,
           1869,
           1864,
-          1846,
-          1842
+          1846
         ],
         "event_ids_negative": [
           2538,
@@ -57720,20 +57740,19 @@
           1872,
           1870,
           1861,
-          1860,
-          1841
+          1860
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 48.1,
-      "mainstream_pct": 51.9,
-      "total_sources_used": 133,
-      "articles_processed": 702
+      "niche_pct": 47.7,
+      "mainstream_pct": 52.3,
+      "total_sources_used": 132,
+      "articles_processed": 700
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 702,
+      "total_events": 700,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -58000,8 +58019,8 @@
       },
       {
         "name": "Construction",
-        "count": 69,
-        "burn_count": 31,
+        "count": 68,
+        "burn_count": 30,
         "mint_count": 38,
         "event_ids": [
           2534,
@@ -58071,8 +58090,7 @@
           1891,
           1874,
           1866,
-          1864,
-          1842
+          1864
         ]
       },
       {
@@ -58144,6 +58162,7 @@
         "burn_count": 4,
         "mint_count": 42,
         "event_ids": [
+          2550,
           2549,
           2545,
           2539,
@@ -58188,8 +58207,7 @@
           1900,
           1880,
           1868,
-          1859,
-          1841
+          1859
         ]
       },
       {
@@ -58312,18 +58330,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 241,
+      "total_burn": 239,
       "direct_action": {
-        "count": 172,
-        "pct": 71.4
+        "count": 170,
+        "pct": 71.1
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 6.2
+        "pct": 6.3
       },
       "untyped": {
         "count": 54,
-        "pct": 22.4
+        "pct": 22.6
       }
     },
     "burn_composition_all_time": {
@@ -58357,9 +58375,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1704,
+      "total_mint": 1705,
       "direct_action": {
-        "count": 1141,
+        "count": 1142,
         "pct": 67.0
       },
       "editorial_alarm": {
@@ -58373,8 +58391,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 228,
-      "institutional": 474,
-      "citizen_ratio": 0.325,
+      "institutional": 472,
+      "citizen_ratio": 0.326,
       "daily": [
         {
           "date": "2026-06-01",
@@ -58409,7 +58427,7 @@
         {
           "date": "2026-06-07",
           "citizen": 14,
-          "institutional": 31
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
@@ -58643,6 +58661,7 @@
         1845
       ],
       "event_ids_institutional": [
+        2550,
         2548,
         2546,
         2545,
@@ -59113,10 +59132,7 @@
         1848,
         1847,
         1844,
-        1843,
-        1842,
-        1841,
-        1840
+        1843
       ]
     }
   }
