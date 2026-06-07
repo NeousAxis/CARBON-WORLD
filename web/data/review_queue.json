@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T05:04:32.987806+00:00",
-  "total_pending": 9,
+  "generated_at": "2026-06-07T05:35:27.348858+00:00",
+  "total_pending": 10,
   "reviews": [
     {
       "id": 704,
@@ -178,6 +178,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-07T00:04:42.260749+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 733,
+      "event_title": "One million hectares of community conservation areas mapped amid tenure uncertainty",
+      "event_url": "https://www.ekuatorial.com/2026/06/sejuta-luas-areal-konservasi-masyarakat-terpetakan-dalam-situasi-ketidakpastian-tenurial/",
+      "event_source": "Ekuatorial (Indonesia env)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Mapping of one million hectares of community conservation areas supports local stewardship and biodiversity protection.\", \"affected_sdgs\": [15, 13, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Uncertainty in land tenure undermines legal recognition and long-term protection of these conservation areas.\", \"affected_sdgs\": [15, 16], \"violated_rights\": [\"UNDRIP Article 10\", \"UNDRIP Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}], \"ethical_synthesis\": \"The mapping of community conservation areas is a positive step for biodiversity and local empowerment, but tenure uncertainty weakens legal security and long-term impact.\", \"snapshot_score\": 2.0, \"trajectory_score\": 3.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Formal legal recognition of AKKM by the Indonesian government\", \"Implementation of land tenure reforms in 2028\", \"Monitoring reports on conservation outcomes by 2030\"], \"revaluation_checkpoint\": \"2030-06-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Legal tenure is secured and conservation efforts expand, leading to improved biodiversity and community rights.\", \"probability\": 0.25, \"score\": 7}, {\"name\": \"B\", \"description\": \"Tenure remains uncertain, but conservation continues with limited institutional support.\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Land is converted to commercial use due to lack of legal protection, reversing conservation gains.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.25, \"final_score\": 3.05, \"decision\": \"MINT\", \"amount_cbwd\": 305000, \"confidence\": 6, \"justification\": \"Tenure uncertainty weakens the long-term impact of conservation efforts.\", \"event_country\": \"Indonesia\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Mapping of one million hectares of community conservation areas (AKKM) in Indonesia, advancing indigenous land rights and biodiversity protection despite tenure uncertainty\", \"affected_sdgs\": [15, 13, 11, 2], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}, {\"description\": \"Release of official registry data by Working Group on Indigenous Issues (WGII) to formalize community conservation efforts\", \"affected_sdgs\": [15, 16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Tenure uncertainty persists for mapped conservation areas, creating legal vulnerability for indigenous communities and potential future dispossession\", \"affected_sdgs\": [1, 10, 15], \"violated_rights\": [\"UNDRIP Article 26\", \"UDHR Article 17\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}], \"ethical_synthesis\": \"The mapping of one million hectares of community conservation areas represents a significant positive step toward indigenous land rights and biodiversity protection, aligning with UNDRIP and SDG 15. However, the persistence of tenure uncertainty undermines the long-term security of these areas, creating a legal vulnerability that could lead to future dispossession. The net ethical judgment is cautiously positive, as the action advances conservation while highlighting structural gaps in legal recognition.\", \"snapshot_score\": 7.5, \"trajectory_score\": 6.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Indonesian government grants formal tenure rights to mapped areas within 24 months\", \"Legal challenges or reversals of mapped areas by state or corporate actors\", \"Expansion of mapped areas beyond one million hectares with stronger legal protections\", \"Implementation of national policy recognizing indigenous conservation rights\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Indonesia enacts national legislation recognizing indigenous conservation rights, securing tenure for mapped areas and expanding coverage to 2 million hectares\", \"probability\": 0.25, \"score\": 9}, {\"name\": \"B\", \"description\": \"Tenure uncertainty persists, but mapped areas remain intact with limited legal challenges; conservation efforts continue with NGO support\", \"probability\": 0.55, \"score\": 5}, {\"name\": \"C\", \"description\": \"State or corporate actors challenge mapped areas, leading to legal disputes and potential loss of conservation areas; indigenous communities face repression\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 3.85, \"final_score\": 5.41, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Mapping of 1M hectares of indigenous conservation areas advances biodiversity and rights despite tenure uncertainty.\", \"event_country\": \"Indonesia\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.0, \"confidence\": 7, \"amount_cbwd\": 305000, \"justification\": \"Tenure uncertainty undermines legal security of mapped conservation areas, enabling potential future harm.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (mapping under tenure uncertainty) as enabling harm by weakening long-term protections, despite the positive intent of biodiversity/rights advancement.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict MINT (negative) contradicts article's overall positive impact of mapping 1M ha of community conservation, despite tenure uncertainty; should be BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 305000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-07T05:35:22.779608+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
