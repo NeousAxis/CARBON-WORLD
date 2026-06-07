@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T01:04:26.415194+00:00",
-  "total_pending": 9,
+  "generated_at": "2026-06-07T02:04:51.284622+00:00",
+  "total_pending": 10,
   "reviews": [
     {
       "id": 704,
@@ -178,6 +178,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-07T00:04:42.260749+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 731,
+      "event_title": "Yemen: Huthis Should Free UN, Civil Society Staff",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/06/yemen-huthis-should-free-un-civil-society-staff/",
+      "event_source": "Amnesty International News",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"International NGOs (Amnesty International, Human Rights Watch, Cairo Institute for Human Rights Studies) jointly call for the release of arbitrarily detained UN and civil society staff in Yemen\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"Huthi authorities in Yemen arbitrarily detain dozens of UN and civil society staff, obstructing humanitarian aid delivery\", \"affected_sdgs\": [1, 2, 3, 16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 20\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"ethical_synthesis\": \"The joint NGO call for the release of detained staff is a positive act of advocacy for human rights and humanitarian access, aligning with SDG 16 and UDHR protections. However, the underlying detention by Huthi authorities constitutes a severe violation of fundamental rights, undermining humanitarian aid and multiple SDGs. The net ethical position is negative due to the ongoing harm caused by the detentions.\", \"snapshot_score\": -7.5, \"trajectory_score\": -2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Release of detained staff\", \"Independent verification of conditions\", \"Resumption of humanitarian aid flows\", \"International pressure escalation\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Huthi authorities release all detained staff and allow full humanitarian access within 6 months\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Partial releases occur but humanitarian access remains restricted, with ongoing detentions\", \"probability\": 0.55, \"score\": -4}, {\"name\": \"C\", \"description\": \"Detentions continue or worsen, with further restrictions on aid and international NGOs expelled\", \"probability\": 0.2, \"score\": -9}], \"prospective_score\": -3.85, \"final_score\": -4.83, \"decision\": \"MINT\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"Arbitrary detentions of humanitarian workers violate core rights and obstruct aid.\", \"event_country\": \"Yemen\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"International NGOs (Amnesty International, Human Rights Watch, Cairo Institute for Human Rights Studies) jointly demand the release of arbitrarily detained UN and civil society staff in Yemen, calling for immediate and unconditional freedom.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"The detention of humanitarian workers directly undermines the delivery of lifesaving aid to vulnerable populations in Yemen, highlighting the urgency of the call for their release.\", \"affected_sdgs\": [3, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The Huthi authorities' arbitrary detention of UN and civil society staff violates fundamental human rights and obstructs humanitarian aid delivery in Yemen.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The joint demand by international NGOs for the release of detained humanitarian workers is a positive ethical action that aligns with human rights and SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying issue—the arbitrary detention by Huthi authorities—remains a severe violation of UDHR rights, particularly affecting access to healthcare and aid (SDG 3). The net ethical position is mixed but leans toward the positive due to the advocacy effort.\", \"snapshot_score\": 5.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Release of detained staff within 6 months\", \"Huthi authorities' compliance with international human rights standards\", \"Sustained humanitarian aid delivery improvements\"], \"revaluation_checkpoint\": \"2028-06-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Huthi authorities comply with demands and release all detained staff, leading to improved humanitarian aid delivery and international cooperation.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Partial compliance occurs, with some staff released but others still detained, resulting in limited improvement in aid delivery.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"No compliance, continued detention, and further deterioration in humanitarian conditions and international relations.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.95, \"final_score\": 2.96, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Joint NGO advocacy for detained humanitarian workers is ethically positive but overshadowed by ongoing violations.\", \"event_country\": \"Yemen\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -3.42, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"Institutional action (NGO advocacy) protects rights by demanding release of detained humanitarian workers.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (NGO advocacy) as protective of rights (BURN), while Analyst B's NEUTRAL stance was inconsistent with the ethical evaluation of the action itself.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-07T02:04:46.763355+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
