@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T23:34:49.432434+00:00",
-  "total_pending": 8,
+  "generated_at": "2026-06-07T00:04:46.721800+00:00",
+  "total_pending": 9,
   "reviews": [
     {
       "id": 704,
@@ -158,6 +158,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-06T23:05:23.160134+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 730,
+      "event_title": "Strike at Decathlon: Over 1,000 Employees Mobilize Across France for Wage Increases",
+      "event_url": "https://www.ici.fr/infos/economie-social/greve-chez-decathlon-plus-de-1-000-salaries-mobilises-dans-toute-la-france-pour-reclamer-des-hausses-de-salaires-6807950?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Over 1,000 Decathlon employees across France mobilized in a strike to demand wage increases and improved working conditions, demonstrating collective labor action and solidarity.\", \"affected_sdgs\": [8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The strike represents a legitimate labor rights action aimed at securing fair wages and better working conditions, aligning with SDG 8 (Decent Work) and ILO standards. The action is a positive expression of worker agency and collective bargaining, despite the company's financial success.\", \"snapshot_score\": 7.5, \"trajectory_score\": 1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Government mediation fails to resolve the dispute within 6 months\", \"Decathlon retaliates against strikers or union leaders\", \"Other major retailers follow Decathlon's wage policies\", \"New labor laws are enacted addressing wage transparency\"], \"revaluation_checkpoint\": \"2028-06-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strike leads to significant wage increases and improved conditions, setting a national precedent for retail workers.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Partial resolution is achieved, with moderate wage increases but no structural improvements in labor rights.\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Strike fails to secure concessions, leading to repression or dismissal of strikers and chilling future labor actions.\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 5.15, \"final_score\": 6.06, \"decision\": \"BURN\", \"amount_cbwd\": 1000000, \"confidence\": 8, \"justification\": \"Collective labor action for fair wages and conditions is a positive ethical act.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Over 1,000 Decathlon employees across France mobilized in a strike to demand wage increases and improved working conditions, demonstrating collective labor action for economic justice.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"The strike was organized by a union coalition, evidencing coordinated labor rights advocacy with measurable participation.\", \"affected_sdgs\": [8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The strike highlights potential labor disputes and wage stagnation at Decathlon despite high profits, indicating systemic issues in corporate labor practices.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}], \"ethical_synthesis\": \"The strike represents a legitimate labor rights action aimed at addressing wage disparities and improving working conditions, aligning with SDG 8 (Decent Work) and UDHR Article 23. While the strike itself is a positive expression of collective bargaining, it also underscores underlying labor issues within a profitable corporation. The net ethical judgment is cautiously positive due to the empowerment of workers and the potential for systemic improvements.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Decathlon's formal response to worker demands\", \"Government mediation or labor law reforms\", \"Sustained unionization efforts beyond the strike\"], \"revaluation_checkpoint\": \"2028-06-06\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Decathlon negotiates significant wage increases and implements long-term labor reforms, setting a national precedent for retail sector labor standards.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Decathlon offers modest concessions, but labor disputes persist, leading to ongoing tensions and potential legal challenges.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Decathlon retaliates against strikers, leading to prolonged labor unrest, legal battles, and reputational damage.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 3.1, \"final_score\": 4.8, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Worker-led strike for wage justice aligns with labor rights but reflects systemic corporate labor issues.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.94, \"confidence\": 9, \"amount_cbwd\": 1000000, \"justification\": \"Strike for fair wages and conditions is a legitimate labor rights action protecting worker agency.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (strike) as a protective measure for labor rights, aligning with ethical frameworks. Analyst B's neutrality was overly cautious; the strike itself is a positive corrective action, not a systemic issue.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-07T00:04:42.260749+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
