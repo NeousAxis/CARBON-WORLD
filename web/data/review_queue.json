@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T19:35:23.210152+00:00",
-  "total_pending": 12,
+  "generated_at": "2026-06-07T20:05:40.571657+00:00",
+  "total_pending": 13,
   "reviews": [
     {
       "id": 704,
@@ -238,6 +238,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-07T17:35:14.731979+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 742,
+      "event_title": "VICTORY SEALED: Government announces Gauteng e-toll debt write-off — but no refunds if you paid",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-06-07-government-announces-gauteng-e-toll-debt-write-off-but-no-refunds-if-you-paid/",
+      "event_source": "Daily Maverick (South Africa)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government cancels outstanding e-toll debt in Gauteng, providing financial relief to motorists burdened by the system\", \"affected_sdgs\": [1, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Motorists who already paid e-toll fees receive no refunds, leaving them financially disadvantaged despite the debt cancellation\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The debt write-off addresses economic hardship for current and future motorists by removing an unfair financial burden, aligning with SDG 1 (No Poverty) and SDG 11 (Sustainable Cities). However, the exclusion of refunds for those who paid creates a regressive outcome, violating principles of fairness and equity under UDHR Article 22.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Implementation of refund mechanisms or compensation for paid motorists\", \"Legal challenges from paid motorists seeking restitution\", \"Public backlash or protests over the exclusion of refunds\", \"Government reversal of the write-off policy\"], \"revaluation_checkpoint\": \"2028-06-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Government introduces partial refunds or compensation schemes for paid motorists, addressing equity concerns\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"No refunds are provided, but the policy remains stable with minimal public resistance\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Legal challenges succeed, forcing refunds or policy reversal, creating financial instability for the government\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.4, \"final_score\": 3.2, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Debt relief is positive but regressive exclusion of refunds undermines fairness.\", \"event_country\": \"South Africa\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government cancels e-toll debt in Gauteng, providing financial relief to motorists burdened by unjustified toll fees\", \"affected_sdgs\": [1, 10, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Reduces financial inequality by removing regressive toll debt that disproportionately affected low-income drivers\", \"affected_sdgs\": [10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Motorists who already paid e-tolls receive no refunds, creating an unfair outcome for those who complied with the system\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 17\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The debt write-off is a significant positive action that alleviates financial hardship and reduces inequality by canceling unjust toll fees. However, the exclusion of refunds for those who paid creates an unfair burden on compliant motorists, undermining the principle of equitable treatment. The net impact is positive but tempered by this structural inequity.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 3.0, \"revaluation_triggers\": [\"Implementation details of refund mechanisms are clarified or expanded\", \"Legal challenges from paid motorists are resolved\", \"Public backlash leads to partial refunds or compensation\", \"E-toll system is fully replaced with a fairer funding model\"], \"revaluation_checkpoint\": \"2028-06-07\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Government introduces partial refunds or compensation for paid motorists, resolving most inequities\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"No further action is taken; inequities persist but debt relief remains a net positive\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Legal challenges succeed, forcing refunds and reducing the net positive impact of the write-off\", \"probability\": 0.2, \"score\": 2}], \"prospective_score\": 5.6, \"final_score\": 5.8, \"decision\": \"BURN\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Debt relief outweighs unfair exclusion of refunds, creating net positive impact.\", \"event_country\": \"South Africa\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.98, \"confidence\": 9, \"amount_cbwd\": 500000, \"justification\": \"Debt relief benefits outweigh refund exclusion harm, but fairness concerns persist.\", \"disagreement\": true, \"reason\": \"Institutional action (debt write-off) reduces financial burden on motorists, aligning with harm reduction. Refund exclusion is a secondary flaw, not the primary action. Net positive impact justifies MINT, but fairness critique is valid.\"}",
+      "sentinel_concern": "structural: fragile_mint_threshold, analyst_ab_disagreement | llm: Justification claims net positive impact, yet decision is MINT (negative); polarity mismatch makes verdict incoherent.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-07T20:05:35.782182+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
