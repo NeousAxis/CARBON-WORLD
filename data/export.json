@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-08T23:05:36.617435+00:00",
-  "total_events": 2660,
+  "generated_at": "2026-06-08T23:37:39.438617+00:00",
+  "total_events": 2662,
   "total_burned": 3942555870,
-  "total_minted": 3625797500,
-  "pending_reviews": 14,
+  "total_minted": 3634077500,
+  "pending_reviews": 16,
   "events": [
+    {
+      "id": 2662,
+      "event_title": "Trump Administration Emergency Order to Keep Florida Coal Plant Running",
+      "event_url": "https://insideclimatenews.org/news/08062026/trump-emergency-order-keeps-florida-coal-plant-open/",
+      "event_source": "Inside Climate News",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -4.32,
+      "confidence": 9,
+      "justification": "Federal override of legitimate climate transition plan increases emissions and undermines decarbonization efforts. | The emergency order directly undermines a legitimate climate transition plan by OUC, prioritizing short-term energy stability over long-term environmental and public health goals. While OUC's renewable energy commitment remains a positive ethical signal, the federal override introduces a significant negative impact by locking in carbon-intensive infrastructure, conflicting with SD",
+      "tx_hash": "3VAB9RDFXqxDnX4ao8YvTSfJnfwwdk2xXGEYQYPGLE39AB4W7ajfauuDAgNBaPLFCUNJqhau77nK4NyVcUWuTwMr",
+      "created_at": "2026-06-08T23:37:34.337449+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Orlando Utilities Commission (OUC) planned transition to renewable energy and net-zero emissions by 2050, demonstrating commitment to climate action and SDG 13\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Trump administration emergency order overrides OUC's planned retirement of a coal-fired power plant, prolonging fossil fuel dependence and increasing emissions\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 2661,
+      "event_title": "‘Severe’ stress on oceans as rate of sea level rise doubles in 10 years, UN warns",
+      "event_url": "https://www.theguardian.com/environment/2026/jun/08/un-world-ocean-assessment-severe-stress-sea-level-rise-doubles-pollution-fishing-climate",
+      "event_source": "The Guardian Climate",
+      "decision": "MINT",
+      "amount_crbn": 3280000,
+      "final_score": -3.57,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] UN report confirms accelerating ocean degradation from climate and human activities. | The UN report highlights a worsening state of the world's oceans, with accelerating sea level rise and severe biodiversity loss due to pollution, industrial fishing, and climate change. These trends undermine planetary health and climate resilience, with significant implications for future generations.",
+      "tx_hash": "HnGgRzD2duMJFTCJFjHGfgfpxso5ZYwFPZoDiT7C3UfW3iHqTrTsiQ4bQtXkCcEj1Azd2PbjBZpSx6nTQyorcu9",
+      "created_at": "2026-06-08T23:37:34.238190+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Rate of sea level rise has doubled in the last decade, indicating accelerating climate impacts.\", \"affected_sdgs\": [13, 14], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Oceans are under 'severe and accelerating' pressure from human activities, including pollution and industrial fishing.\", \"affected_sdgs\": [14, 13, 6], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Biodiversity loss is widespread due to cumulative stressors on ocean systems.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2660,
       "event_title": "World Cup referee from Somalia barred from entering US",
@@ -58531,7 +58575,7 @@
       {
         "country": "United States",
         "count": 123,
-        "total_amount": 347184000
+        "total_amount": 351684000
       },
       {
         "country": "France",
@@ -58668,7 +58712,7 @@
       },
       {
         "date": "2026-06-08",
-        "net_minted": 115943000,
+        "net_minted": 124223000,
         "net_burned": 146925000
       }
     ],
@@ -58685,8 +58729,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 190,
-        "negative": 391,
+        "positive": 189,
+        "negative": 392,
         "event_ids_positive": [
           2650,
           2644,
@@ -58876,10 +58920,11 @@
           1958,
           1954,
           1952,
-          1944,
-          1943
+          1944
         ],
         "event_ids_negative": [
+          2662,
+          2661,
           2660,
           2659,
           2658,
@@ -59269,8 +59314,7 @@
           1948,
           1947,
           1946,
-          1945,
-          1939
+          1945
         ]
       },
       "UDHR": {
@@ -59778,7 +59822,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 42,
+        "positive": 41,
         "negative": 74,
         "event_ids_positive": [
           2635,
@@ -59821,8 +59865,7 @@
           2004,
           1988,
           1977,
-          1976,
-          1943
+          1976
         ],
         "event_ids_negative": [
           2659,
@@ -60025,7 +60068,7 @@
       },
       "PB": {
         "positive": 83,
-        "negative": 109,
+        "negative": 110,
         "event_ids_positive": [
           2650,
           2644,
@@ -60112,6 +60155,8 @@
           1952
         ],
         "event_ids_negative": [
+          2662,
+          2661,
           2646,
           2641,
           2634,
@@ -60219,8 +60264,7 @@
           1970,
           1962,
           1949,
-          1948,
-          1939
+          1948
         ]
       }
     },
@@ -60228,20 +60272,20 @@
       "niche_pct": 45.6,
       "mainstream_pct": 54.4,
       "total_sources_used": 136,
-      "articles_processed": 714
+      "articles_processed": 711
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 714,
+      "total_events": 711,
       "pct": 0.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 35,
+        "count": 34,
         "burn_count": 9,
-        "mint_count": 26,
+        "mint_count": 25,
         "event_ids": [
           2655,
           2606,
@@ -60276,16 +60320,16 @@
           2007,
           1995,
           1955,
-          1947,
-          1941
+          1947
         ]
       },
       {
         "name": "UN",
-        "count": 21,
+        "count": 22,
         "burn_count": 2,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          2661,
           2610,
           2576,
           2500,
@@ -60395,6 +60439,7 @@
         "burn_count": 46,
         "mint_count": 57,
         "event_ids": [
+          2662,
           2659,
           2644,
           2630,
@@ -60496,16 +60541,16 @@
           1958,
           1956,
           1952,
-          1948,
-          1939
+          1948
         ]
       },
       {
         "name": "Construction",
-        "count": 66,
+        "count": 67,
         "burn_count": 25,
-        "mint_count": 41,
+        "mint_count": 42,
         "event_ids": [
+          2662,
           2650,
           2649,
           2623,
@@ -60695,8 +60740,8 @@
       },
       {
         "name": "Agriculture",
-        "count": 30,
-        "burn_count": 14,
+        "count": 29,
+        "burn_count": 13,
         "mint_count": 16,
         "event_ids": [
           2649,
@@ -60727,8 +60772,7 @@
           2009,
           1992,
           1976,
-          1962,
-          1940
+          1962
         ]
       },
       {
@@ -60820,18 +60864,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 239,
+      "total_burn": 237,
       "direct_action": {
-        "count": 174,
-        "pct": 72.8
+        "count": 173,
+        "pct": 73.0
       },
       "editorial_consciousness": {
         "count": 16,
-        "pct": 6.7
+        "pct": 6.8
       },
       "untyped": {
-        "count": 49,
-        "pct": 20.5
+        "count": 48,
+        "pct": 20.3
       }
     },
     "burn_composition_all_time": {
@@ -60850,29 +60894,29 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 475,
+      "total_mint": 474,
       "direct_action": {
         "count": 361,
-        "pct": 76.0
+        "pct": 76.2
       },
       "editorial_alarm": {
-        "count": 30,
-        "pct": 6.3
+        "count": 31,
+        "pct": 6.5
       },
       "untyped": {
-        "count": 84,
-        "pct": 17.7
+        "count": 82,
+        "pct": 17.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1784,
+      "total_mint": 1786,
       "direct_action": {
-        "count": 1211,
+        "count": 1212,
         "pct": 67.9
       },
       "editorial_alarm": {
-        "count": 116,
-        "pct": 6.5
+        "count": 117,
+        "pct": 6.6
       },
       "untyped": {
         "count": 457,
@@ -60880,9 +60924,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 233,
-      "institutional": 481,
-      "citizen_ratio": 0.326,
+      "citizen": 234,
+      "institutional": 477,
+      "citizen_ratio": 0.329,
       "daily": [
         {
           "date": "2026-06-02",
@@ -60916,11 +60960,12 @@
         },
         {
           "date": "2026-06-08",
-          "citizen": 25,
-          "institutional": 67
+          "citizen": 26,
+          "institutional": 68
         }
       ],
       "event_ids_citizen": [
+        2662,
         2660,
         2658,
         2650,
@@ -61156,6 +61201,7 @@
         1946
       ],
       "event_ids_institutional": [
+        2661,
         2659,
         2657,
         2656,
@@ -61631,12 +61677,7 @@
         1951,
         1949,
         1945,
-        1944,
-        1943,
-        1942,
-        1941,
-        1940,
-        1939
+        1944
       ]
     }
   }
