@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-08T00:05:14.268242+00:00",
-  "total_events": 2562,
-  "total_burned": 3780630870,
-  "total_minted": 3514129500,
+  "generated_at": "2026-06-08T00:34:50.732728+00:00",
+  "total_events": 2564,
+  "total_burned": 3787630870,
+  "total_minted": 3515479500,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 2564,
+      "event_title": "AI spots smuggled seahorses, shark fins and sea cucumbers with 92% accuracy",
+      "event_url": "https://phys.org/news/2026-06-ai-smuggled-seahorses-shark-fins.html",
+      "event_source": "Phys.org",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.12,
+      "confidence": 8,
+      "justification": "AI-driven wildlife trafficking detection advances biodiversity protection and SDGs 13/14/15. | The AI-driven detection system directly targets illegal wildlife trafficking, a major driver of biodiversity loss and marine ecosystem degradation. By improving interception rates, it supports SDGs 13 (Climate Action), 14 (Life Below Water), and 15 (Life on Land), while aligning with animal rights and planetary boundaries frameworks. No significant negative aspects were identified.",
+      "tx_hash": "35kLC1ruTWP5vubDrsuhgg1PfdMavhDspM9u2pWQaxU15mfctjaBf4Xe3ZVe9t6KiktMokFciBsNdGHKE6NDkMNQ",
+      "created_at": "2026-06-08T00:34:46.580825+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scientists developed an AI algorithm to detect smuggled marine wildlife (shark fins, seahorses, sea cucumbers) with 92% accuracy, enabling law enforcement to intercept illegal trafficking and protect endangered species.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2563,
+      "event_title": "European leaders back Zelensky's call for direct Russia talks",
+      "event_url": "https://www.france24.com/en/europe/20260607-european-leaders-back-zelensky-call-for-direct-russia-talks",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 1350000,
+      "final_score": -0.66,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: analyst-consensus — Analyst A and B both independently scored MINT] Support for talks is positive, but the reported nuclear facility damage introduces significant ethical risks. | While the diplomatic support for direct talks is a positive step toward peace and aligns with SDG 16 and UDHR principles, the reported damage to a nuclear facility near Chernobyl introduces significant environmental and human rights risks, undermining SDG 13, 15, and CRC.",
+      "tx_hash": "285HC42EW3CPob3w2zAPwCXajAMRvXCU9oxVYmwYTSjp7FpGcjJ87au5euThVKW3BGfZ4cRoSqn6jYbn7Jq8atv5",
+      "created_at": "2026-06-08T00:34:46.481172+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"European leaders support Zelensky's call for direct talks with Russia, signaling a diplomatic effort to de-escalate the conflict.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Russian strikes reportedly damaged a nuclear fuel storage facility near the Chernobyl exclusion zone, raising concerns about environmental and human safety.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2562,
       "event_title": "Most read | Alert over mining treaty between Chile and Argentina, pollutant emissions at Ecopetrol facilities, Galápagos uses AI to curb invasive species and more",
@@ -56443,8 +56487,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.322,
-        "events": 143
+        "burn_ratio": 0.319,
+        "events": 144
       },
       {
         "region": "Asia",
@@ -56470,8 +56514,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.678,
-        "events": 143
+        "mint_ratio": 0.681,
+        "events": 144
       },
       {
         "region": "Latin America",
@@ -56512,8 +56556,8 @@
       },
       {
         "date": "2026-06-08",
-        "net_minted": 5125000,
-        "net_burned": 0
+        "net_minted": 6475000,
+        "net_burned": 7000000
       }
     ],
     "event_of_the_day": {
@@ -56529,9 +56573,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 183,
-        "negative": 378,
+        "positive": 184,
+        "negative": 379,
         "event_ids_positive": [
+          2564,
           2556,
           2546,
           2544,
@@ -56717,6 +56762,7 @@
           1864
         ],
         "event_ids_negative": [
+          2563,
           2562,
           2561,
           2560,
@@ -57099,7 +57145,7 @@
       },
       "UDHR": {
         "positive": 83,
-        "negative": 295,
+        "negative": 296,
         "event_ids_positive": [
           2546,
           2544,
@@ -57186,6 +57232,7 @@
           1869
         ],
         "event_ids_negative": [
+          2563,
           2562,
           2561,
           2560,
@@ -57514,7 +57561,7 @@
       },
       "CRC": {
         "positive": 21,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           2546,
           2491,
@@ -57539,6 +57586,7 @@
           1874
         ],
         "event_ids_negative": [
+          2563,
           2560,
           2550,
           2536,
@@ -57716,9 +57764,10 @@
         ]
       },
       "Animal": {
-        "positive": 48,
+        "positive": 49,
         "negative": 59,
         "event_ids_positive": [
+          2564,
           2543,
           2534,
           2498,
@@ -57831,9 +57880,10 @@
         ]
       },
       "PB": {
-        "positive": 78,
-        "negative": 99,
+        "positive": 79,
+        "negative": 100,
         "event_ids_positive": [
+          2564,
           2556,
           2543,
           2534,
@@ -57914,6 +57964,7 @@
           1864
         ],
         "event_ids_negative": [
+          2563,
           2562,
           2552,
           2538,
@@ -58020,11 +58071,11 @@
       "niche_pct": 47.7,
       "mainstream_pct": 52.3,
       "total_sources_used": 132,
-      "articles_processed": 700
+      "articles_processed": 702
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 700,
+      "total_events": 702,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -58187,10 +58238,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 99,
+        "count": 100,
         "burn_count": 48,
-        "mint_count": 51,
+        "mint_count": 52,
         "event_ids": [
+          2563,
           2561,
           2552,
           2538,
@@ -58528,10 +58580,11 @@
       },
       {
         "name": "Tech",
-        "count": 26,
-        "burn_count": 10,
+        "count": 27,
+        "burn_count": 11,
         "mint_count": 16,
         "event_ids": [
+          2564,
           2562,
           2476,
           2466,
@@ -58611,25 +58664,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 236,
+      "total_burn": 237,
       "direct_action": {
-        "count": 168,
-        "pct": 71.2
+        "count": 169,
+        "pct": 71.3
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 6.4
+        "pct": 6.3
       },
       "untyped": {
         "count": 53,
-        "pct": 22.5
+        "pct": 22.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 830,
+      "total_burn": 831,
       "direct_action": {
-        "count": 559,
-        "pct": 67.3
+        "count": 560,
+        "pct": 67.4
       },
       "editorial_consciousness": {
         "count": 53,
@@ -58637,13 +58690,13 @@
       },
       "untyped": {
         "count": 218,
-        "pct": 26.3
+        "pct": 26.2
       }
     },
     "mint_composition_7d": {
-      "total_mint": 464,
+      "total_mint": 465,
       "direct_action": {
-        "count": 346,
+        "count": 347,
         "pct": 74.6
       },
       "editorial_alarm": {
@@ -58656,10 +58709,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1716,
+      "total_mint": 1717,
       "direct_action": {
-        "count": 1152,
-        "pct": 67.1
+        "count": 1153,
+        "pct": 67.2
       },
       "editorial_alarm": {
         "count": 114,
@@ -58672,8 +58725,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 227,
-      "institutional": 473,
-      "citizen_ratio": 0.324,
+      "institutional": 475,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-06-02",
@@ -58708,7 +58761,7 @@
         {
           "date": "2026-06-08",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -58941,6 +58994,8 @@
         1857
       ],
       "event_ids_institutional": [
+        2564,
+        2563,
         2561,
         2560,
         2559,
