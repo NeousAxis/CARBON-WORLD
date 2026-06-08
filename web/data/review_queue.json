@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T18:35:18.250750+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-06-08T19:04:38.607202+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 704,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-08T01:05:27.474332+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 749,
+      "event_title": "Ebola outbreak: WHO's Tedros visits Uganda, bordering the DRC Ituri province epicenter",
+      "event_url": "https://www.dw.com/en/ebola-outbreak-who-s-tedros-visits-uganda-bordering-the-drc-ituri-province-epicenter/a-77462569?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"WHO Director-General Tedros Adhanom Ghebreyesus praises Uganda's prompt and capable response to the Ebola outbreak in neighboring DRC's Ituri province, highlighting effective public health measures and cross-border cooperation.\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Uganda's proactive containment of imported Ebola cases demonstrates strong epidemiological surveillance and rapid response capabilities, reducing regional transmission risk.\", \"affected_sdgs\": [3], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The WHO's recognition of Uganda's effective Ebola response reflects a positive public health action that aligns with SDG 3 (Good Health and Well-being). The proactive measures and cross-border cooperation demonstrate institutional competence in crisis management, with no identified ethical violations or negative consequences in this specific action.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Sustained funding cuts to Uganda's health infrastructure\", \"Emergence of vaccine-resistant Ebola strain\", \"Political instability disrupting response coordination\", \"Failure to replicate success in future outbreaks\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Uganda's response model becomes a global benchmark for cross-border epidemic management, with sustained funding and technology transfer to neighboring countries.\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Initial success is maintained but fails to scale regionally due to resource constraints and competing health priorities.\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"Political or funding instability leads to erosion of response capacity, resulting in localized outbreaks and loss of regional trust.\", \"probability\": 0.2, \"score\": 2}], \"prospective_score\": 6.5, \"final_score\": 7.425, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"WHO recognition of effective public health response with measurable impact on epidemic control.\", \"event_country\": \"Uganda\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"WHO Director-General Tedros Adhanom Ghebreyesus praises Uganda's prompt and capable response to the Ebola outbreak in neighboring DRC's Ituri province, highlighting effective public health measures and cross-border cooperation.\", \"affected_sdgs\": [3], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Uganda's government demonstrates proactive public health leadership by containing a limited number of imported Ebola cases, preventing wider outbreak spread.\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Ebola outbreak in DRC's Ituri province continues to pose a regional health crisis, with potential for cross-border spread despite Uganda's containment efforts.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The WHO's recognition of Uganda's effective response and Uganda's containment of imported cases represent positive public health actions that align with SDG 3 (Good Health and Well-being). However, the ongoing Ebola outbreak in DRC's Ituri province remains a significant regional health crisis, undermining the right to health and posing a persistent threat.\", \"snapshot_score\": 4.5, \"trajectory_score\": 3.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Sustained containment of imported cases in Uganda for 12 months\", \"DRC Ituri outbreak declared fully contained by WHO\", \"Emergence of new Ebola cases in Uganda linked to DRC\", \"Significant international funding shortfall for outbreak response\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Uganda maintains robust containment, DRC outbreak is fully controlled within 18 months, and regional cooperation strengthens.\", \"probability\": 0.35, \"score\": 7}, {\"name\": \"B\", \"description\": \"Uganda continues effective containment, but DRC outbreak persists with sporadic cross-border cases; no major escalation.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"DRC outbreak worsens, spills over into Uganda with sustained local transmission, requiring international emergency response.\", \"probability\": 0.15, \"score\": -8}], \"prospective_score\": 2.45, \"final_score\": 3.16, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"WHO praise and Uganda's containment are positive but overshadowed by ongoing regional health crisis.\", \"event_country\": \"Uganda\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.12, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"WHO's recognition of Uganda's effective public health response supports regional containment and institutional cooperation.\", \"disagreement\": true, \"reason\": \"Analyst A correctly focuses on the institutional action (WHO's recognition and Uganda's containment), which supports public health. Analyst B appropriately notes the ongoing crisis but misjudges the institutional action as neutral.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-08T19:04:33.860624+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
