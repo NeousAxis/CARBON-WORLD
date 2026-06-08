@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T16:05:38.574106+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-06-08T16:36:17.376719+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 704,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-08T01:05:27.474332+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 746,
+      "event_title": "TOYO Announces 1.5GW US HJT Cell Line Weeks After AD/CVD Hits Ethiopia Factory",
+      "event_url": "https://www.pv-tech.org/toyo-announces-1-5gw-us-hjt-cell-line-weeks-after-ad-cvd-hits-ethiopia-factory/",
+      "event_source": "PV Tech (Solar)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Toyo Alumiport (Toyo) announces 1.5GW heterojunction (HJT) solar cell production capacity expansion in Houston, Texas, increasing clean energy manufacturing and reducing reliance on fossil fuels.\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The expansion of HJT solar cell production in the U.S. directly advances SDG 7 (Affordable and Clean Energy) and SDG 9 (Industry, Innovation, and Infrastructure) while contributing to climate action (SDG 13). The project reduces long-term carbon emissions by scaling renewable energy technology, aligning with planetary boundaries for climate change and fossil fuel dependence.\", \"snapshot_score\": 8.5, \"trajectory_score\": 7.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Federal or state policy changes affecting solar subsidies or tariffs\", \"Supply chain disruptions for HJT materials\", \"Technological obsolescence of HJT vs. alternative solar technologies\", \"Market demand shifts away from utility-scale solar\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"HJT technology becomes dominant in global solar manufacturing, driving rapid decarbonization and energy independence in the U.S.\", \"probability\": 0.35, \"score\": 9}, {\"name\": \"B\", \"description\": \"HJT scales moderately but faces competition from perovskite or tandem cells, limiting long-term impact.\", \"probability\": 0.5, \"score\": 6}, {\"name\": \"C\", \"description\": \"HJT expansion stalls due to trade barriers, supply chain issues, or cheaper alternatives, reducing its climate impact.\", \"probability\": 0.15, \"score\": 3}], \"prospective_score\": 6.75, \"final_score\": 7.34, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"1.5GW HJT expansion advances clean energy manufacturing and climate goals.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Toyo commits to 1.5GW of heterojunction (HJT) solar cell production capacity in the US, advancing clean energy manufacturing and reducing reliance on fossil fuels.\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Expansion of solar manufacturing in the US supports job creation and economic growth in the renewable energy sector.\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Heterojunction technology offers higher efficiency and lower degradation rates, improving long-term solar energy performance.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The announcement follows AD/CVD tariffs hitting an Ethiopia-based solar factory, potentially displacing jobs and disrupting supply chains in developing economies.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Concentration of solar manufacturing in the US may reduce global equity in renewable energy access and technology distribution.\", \"affected_sdgs\": [10, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"Toyo's investment in US-based HJT solar cell production significantly advances clean energy deployment and economic growth, aligning with SDGs 7, 9, and 13. However, the timing of this announcement, following trade tariffs on an Ethiopia-based factory, raises concerns about global equity and job displacement in developing economies. The net ethical impact is positive but tempered by potential negative externalities on global supply chains.\", \"snapshot_score\": 6.5, \"trajectory_score\": 7.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"US policy changes affecting solar incentives\", \"Global supply chain disruptions in solar materials\", \"Technological advancements in HJT efficiency\", \"Trade policy shifts impacting Ethiopia's solar sector\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"US solar manufacturing expands rapidly, driving global cost reductions and accelerating renewable energy adoption worldwide.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Trade tensions persist, leading to fragmented solar markets and slower global renewable energy deployment.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Geopolitical conflicts disrupt supply chains, causing delays in solar deployment and increasing costs globally.\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.6, \"final_score\": 4.5, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Clean energy expansion balanced by trade policy impacts on global equity.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.53, \"confidence\": 9, \"amount_cbwd\": 1500000, \"justification\": \"Clean energy expansion supports climate goals despite trade policy concerns.\", \"disagreement\": true, \"reason\": \"The institutional action is the expansion of clean energy production, which protects rights and reduces environmental harm. While trade policy concerns are valid, the action itself is ethically positive.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement | llm: Polarity error: trade policy concerns (AD/CVD) are conflated with the clean energy expansion's positive impact.",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-08T16:36:12.487166+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
