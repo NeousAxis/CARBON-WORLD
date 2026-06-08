@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T00:34:50.882890+00:00",
-  "total_pending": 13,
+  "generated_at": "2026-06-08T01:05:32.272855+00:00",
+  "total_pending": 14,
   "reviews": [
     {
       "id": 704,
@@ -258,6 +258,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-07T20:05:35.782182+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 743,
+      "event_title": "Greenpeace USA calls for more governance following new United Nations report revealing real-world damage of AI systems",
+      "event_url": "https://www.greenpeace.org/usa/greenpeace-usa-calls-for-more-governance-following-new-united-nations-report-revealing-real-world-damage-of-ai-systems/",
+      "event_source": "Greenpeace USA",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace USA publicly calls for stronger governance of AI systems to address environmental harm, demonstrating civil society advocacy for regulatory action\", \"affected_sdgs\": [12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"Greenpeace USA’s call for governance of AI systems aligns with environmental protection and climate action goals. While the UN report highlights real-world damage from AI, the action itself—advocacy for regulation—is a positive step toward mitigating harm and promoting responsible technology use.\", \"snapshot_score\": 6.5, \"trajectory_score\": 5.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Failure of governance proposals to materialize within 24 months\", \"Emergence of alternative regulatory frameworks with stronger environmental safeguards\", \"Technological advancements reducing AI's environmental impact without governance\"], \"revaluation_checkpoint\": \"2026-10-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strong international governance frameworks are adopted, significantly reducing AI's environmental footprint within 5 years\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate governance measures are implemented, leading to incremental improvements but persistent environmental harm\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Minimal governance action occurs, allowing AI's environmental damage to escalate unchecked\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.1, \"final_score\": 5.1, \"decision\": \"BURN\", \"amount_cbwd\": 1500000, \"confidence\": 7, \"justification\": \"Civil society advocacy for AI governance aligns with climate action and environmental protection.\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Greenpeace USA publicly calls for stronger governance of AI systems to address environmental harms, demonstrating active civil society advocacy and consciousness-raising on a global technology issue.\", \"affected_sdgs\": [12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"United Nations releases a report ('Environmental Cost of AI's Energy Use') exposing real-world environmental damage from AI systems, acting as an institutional knowledge-diffusion mechanism to inform global policy.\", \"affected_sdgs\": [12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"The UN report reveals real-world environmental damage caused by AI systems, indicating systemic governance failures and unchecked technological expansion with significant ecological costs.\", \"affected_sdgs\": [12, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The UN report and Greenpeace USA's call for governance both highlight critical environmental harms from AI systems, creating a dual dynamic of harm exposure and proactive advocacy. While the report documents significant ecological damage (negative aspect), the civil society response and institutional knowledge-sharing represent positive steps toward accountability and systemic change.\", \"snapshot_score\": 3.0, \"trajectory_score\": 4.0, \"revaluation_score\": 2.0, \"revaluation_triggers\": [\"Adoption of binding AI environmental regulations by major economies\", \"Technological breakthroughs reducing AI energy consumption by 50%\", \"Withdrawal of UN report findings by member states\", \"Greenpeace USA's campaign gains traction with measurable policy influence\"], \"revaluation_checkpoint\": \"2026-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Global AI governance frameworks are rapidly implemented with strict environmental standards, leading to measurable reductions in AI's carbon footprint and widespread adoption of sustainable practices.\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate progress occurs with patchwork regulations in select regions, while AI energy use continues to grow, resulting in limited but meaningful improvements.\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"AI governance remains weak, with energy use accelerating unchecked, leading to severe environmental degradation and systemic failure to address the issue.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.15, \"final_score\": 2.56, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 1500000, \"confidence\": 8, \"justification\": \"UN report exposes AI environmental harms; Greenpeace advocacy pushes for governance.\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.8, \"confidence\": 8, \"amount_cbwd\": 1500000, \"justification\": \"Greenpeace USA's advocacy for AI governance aligns with mitigating environmental harm.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identifies the institutional action (advocacy for regulation) as a step toward protecting rights and reducing harm. Analyst B treats it as neutral, which overlooks the positive institutional impact.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 1500000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-08T01:05:27.474332+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
