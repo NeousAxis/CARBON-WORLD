@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T09:06:05.905520+00:00",
-  "total_pending": 14,
+  "generated_at": "2026-06-08T09:36:43.517954+00:00",
+  "total_pending": 15,
   "reviews": [
     {
       "id": 704,
@@ -278,6 +278,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-08T01:05:27.474332+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 744,
+      "event_title": "Argentina Court Clears Extradition of Gang Arms Dealer to Brazil",
+      "event_url": "https://www.riotimesonline.com/argentina-court-extradition-arms-dealer-pcc-cv-brazil-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Argentine Supreme Court upholds extradition of arms dealer accused of supplying weapons to violent gangs, reinforcing international cooperation against transnational crime\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Extradition may enable harsh or unjust treatment in Brazilian prisons, given documented human rights concerns in the country's penal system\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The extradition ruling strengthens international justice and SDG 16 (Peace & Justice) by addressing arms trafficking to criminal organizations. However, it risks violating human rights (UDHR Articles 5 and 10) if the accused faces inhumane conditions in Brazil. The net ethical balance leans positive but with significant caveats.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Brazilian prison conditions improve or worsen post-extradition\", \"Argentine Supreme Court revisits extradition terms\", \"International human rights bodies intervene on behalf of the accused\"], \"revaluation_checkpoint\": \"2028-06-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Extradition proceeds with humane treatment guarantees, reducing gang violence in Brazil and setting precedent for cross-border justice\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Extradition occurs but Brazilian prison conditions remain abusive, leading to international condemnation and legal challenges\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Extradition triggers retaliatory violence by gangs, worsening security in both countries and undermining regional stability\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.9, \"final_score\": 2.1, \"decision\": \"MINT\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Extradition enables transnational crime but risks human rights violations; net negative impact.\", \"event_country\": \"Argentina\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Argentine Supreme Court ruling upholds extradition of arms dealer accused of supplying weapons to violent gangs in Brazil, reinforcing international judicial cooperation and rule of law.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The extradition facilitates prosecution of an alleged arms trafficker, but the underlying issue of gang violence and arms trafficking remains unaddressed, highlighting systemic failures in regional security.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The court's decision strengthens international legal cooperation and the rule of law, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, it does not resolve the broader systemic issues of gang violence and arms trafficking, which require deeper regional and institutional responses.\", \"snapshot_score\": 5.5, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Effectiveness of Brazilian judicial proceedings post-extradition\", \"Regional cooperation on arms trafficking prevention\", \"Impact on gang violence rates in Brazil\", \"Public perception and trust in extradition processes\"], \"revaluation_checkpoint\": \"2028-06-05\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Extradition leads to successful prosecution, dismantling arms supply chains and reducing gang violence in Brazil.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Extradition proceeds but fails to significantly impact gang violence due to systemic corruption or weak judicial outcomes.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Extradition triggers backlash, exacerbating gang retaliation and undermining regional trust in extradition processes.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.9, \"final_score\": 3.8, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 50000, \"confidence\": 7, \"justification\": \"Judicial cooperation strengthens rule of law but does not address systemic gang violence.\", \"event_country\": \"Argentina\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 2.1, \"confidence\": 9, \"amount_cbwd\": 50000, \"justification\": \"Extradition targets arms trafficking to gangs, punishing harm and protecting rights.\", \"disagreement\": true, \"reason\": \"Analyst A misapplied human rights risk; institutional action (extradition) punishes harm by disrupting criminal networks, aligning with justice goals.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 50000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-08T09:36:38.492112+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
