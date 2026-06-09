@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-09T01:34:41.778656+00:00",
-  "total_pending": 15,
+  "generated_at": "2026-06-09T02:06:51.614188+00:00",
+  "total_pending": 16,
   "reviews": [
     {
       "id": 704,
@@ -298,6 +298,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-09T01:05:06.388900+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 753,
+      "event_title": "Mother and Daughter Wolf Reproduce with Same Male in Chablais Pack: KORA Foundation Documents Unprecedented Case",
+      "event_url": "https://wildbeimwild.com/chablais-rudel-doppelte-reproduktion-wolf-wallis/",
+      "event_source": "Wild beim Wild",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"KORA Foundation documents a rare biological phenomenon, contributing to scientific understanding of wolf behavior and pack dynamics.\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}], \"negative_aspects\": [{\"description\": \"The death of the original alpha male (M88) through official culling likely disrupted the natural hierarchy and stability of the wolf pack.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\"]}], \"ethical_synthesis\": \"The documentation of a rare biological phenomenon in the Chablais wolf pack contributes to scientific knowledge and biodiversity understanding. However, the disruption caused by the culling of the alpha male raises concerns about the impact on the pack's social structure and ecological balance.\", \"snapshot_score\": -1.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Official culling policy review by Swiss authorities\", \"Long-term monitoring of the Chablais pack's social and reproductive stability\", \"Publication of follow-up scientific studies on the impact of culling on wolf pack dynamics\"], \"revaluation_checkpoint\": \"2028-12-31\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Culling policies are revised to prioritize non-lethal management, leading to improved wolf pack stability and biodiversity.\", \"probability\": 0.25, \"score\": 6}, {\"name\": \"B\", \"description\": \"Current culling practices continue, leading to ongoing disruption of wolf social structures and potential decline in pack viability.\", \"probability\": 0.55, \"score\": -3}, {\"name\": \"C\", \"description\": \"Increased human-wildlife conflict due to unstable wolf packs results in further culling and ecological degradation.\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -3.15, \"final_score\": -2.09, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Culling disrupted pack stability, and future outcomes are uncertain.\", \"event_country\": \"Switzerland\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Scientific documentation of unprecedented wolf reproductive behavior by KORA Foundation, contributing to biodiversity research and conservation knowledge\", \"affected_sdgs\": [15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}, {\"description\": \"Publication of findings in a formal annual report, enhancing transparency and scientific literacy on wildlife dynamics\", \"affected_sdgs\": [4, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Triggered by the culling of the alpha male wolf (M88) by authorities, raising ethical concerns about intervention in natural ecosystems\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal Rights Article 1\"], \"magnitude\": 6, \"frameworks\": [\"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The documentation of this rare biological phenomenon advances scientific understanding and biodiversity conservation (positive), but the event was precipitated by a human intervention (wolf culling) that disrupts natural social structures and raises ethical concerns for animal welfare and ecosystem integrity.\", \"snapshot_score\": 2.0, \"trajectory_score\": 0.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"New scientific consensus on wolf social behavior changes due to human intervention\", \"Policy shift in wildlife management practices in Switzerland\", \"Long-term ecological impact assessment of the culling on the Chablais pack\"], \"revaluation_checkpoint\": \"2027-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Conservation policies adapt to minimize human intervention, allowing natural wolf social structures to stabilize and reducing future culls\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Current management practices continue, with occasional culls leading to similar reproductive anomalies but improved monitoring\", \"probability\": 0.5, \"score\": 1}, {\"name\": \"C\", \"description\": \"Increased culling pressure triggers ecological imbalance, leading to broader ecosystem disruptions and public backlash\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 1.6, \"final_score\": 1.55, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Scientific documentation advances conservation but is linked to ethically questionable culling.\", \"event_country\": \"Switzerland\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -1.35, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional culling disrupted pack stability, violating ecological balance and animal welfare.\", \"disagreement\": true, \"reason\": \"The ACTION (authority-led wolf culling) punishes ecological harmony and weakens natural protections, warranting BURN despite scientific documentation benefits.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Verdict direction flipped: culling harms ecological balance, should be MINT, but decision is BURN; justification also condemns action, mismatching decision.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-09T02:06:45.914358+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
