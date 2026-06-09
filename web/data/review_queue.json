@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-09T10:05:51.767880+00:00",
-  "total_pending": 15,
+  "generated_at": "2026-06-09T10:37:41.234239+00:00",
+  "total_pending": 16,
   "reviews": [
     {
       "id": 704,
@@ -298,6 +298,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-09T01:05:06.388900+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 759,
+      "event_title": "Italy probe into Israel's treatment of flotilla activists sparks spat",
+      "event_url": "https://www.thelocal.it/20260609/italy-probe-into-israels-treatment-of-flotilla-activists-sparks-spat",
+      "event_source": "The Local Italy (EN)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Italian prosecutors in Rome initiated an investigation into Israel's National Security Minister Itamar Ben Gvir for alleged mistreatment of activists in a Gaza-bound aid flotilla, demonstrating accountability for human rights violations.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}], \"negative_aspects\": [{\"description\": \"Israel's National Security Minister Itamar Ben Gvir's insult directed at Italy's probe is framed as unacceptable, indicating diplomatic escalation and potential erosion of international cooperation.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The Italian judicial action represents a positive step toward accountability for alleged human rights violations, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the diplomatic spat and insult from Israel's minister introduce friction that could undermine international cooperation and dialogue.\", \"snapshot_score\": 5.5, \"trajectory_score\": 1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Outcome of the Italian investigation and any legal consequences for Ben Gvir\", \"Diplomatic resolution or escalation between Italy and Israel\", \"Broader international response to the probe and its implications for human rights accountability\"], \"revaluation_checkpoint\": \"2028-06-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"The investigation concludes with formal charges against Ben Gvir, leading to international pressure for accountability and improved human rights standards.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"The investigation stalls or is dismissed, with no consequences for Ben Gvir, and diplomatic relations remain strained but manageable.\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"The probe triggers a severe diplomatic crisis, with sanctions or retaliatory actions that escalate tensions and undermine human rights accountability efforts.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 0.5, \"final_score\": 2.825, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Italian judicial probe into human rights violations is positive, but diplomatic fallout and insult undermine net impact.\", \"event_country\": \"Italy\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Italian prosecutors' decision to investigate Israeli National Security Minister Itamar Ben Gvir for alleged mistreatment of flotilla activists\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Israel's National Security Minister Itamar Ben Gvir's insult directed at Italy, escalating diplomatic tensions\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 3, \"frameworks\": [\"UDHR\"]}], \"ethical_synthesis\": \"Italy's legal action to investigate alleged human rights violations against activists aligns with international justice and accountability frameworks. While the diplomatic spat reflects poor state relations, the core action (investigation) represents a positive step toward upholding UDHR principles, particularly Article 2 (non-discrimination) and Article 19 (freedom of expression).\", \"snapshot_score\": 5.5, \"trajectory_score\": 1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Dismissal or reduction of charges against Ben Gvir\", \"International court intervention or ruling\", \"Change in Italian government policy\", \"Evidence of activist mistreatment not substantiated\"], \"revaluation_checkpoint\": \"2028-06-09\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Investigation leads to formal charges and international condemnation of Israel's actions, strengthening global accountability norms\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Investigation stalls or is dismissed due to political pressure, with no tangible accountability measures\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Investigation escalates into a broader geopolitical crisis, diverting attention from human rights concerns\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.6, \"final_score\": 3.775, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 500000, \"confidence\": 7, \"justification\": \"Italian investigation into alleged human rights violations is a positive accountability step, but diplomatic fallout tempers impact.\", \"event_country\": \"Italy\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 1.77, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Italian judicial probe into alleged human rights violations is a corrective action protecting rights, outweighing diplomatic friction.\", \"disagreement\": true, \"reason\": \"Both analysts agree the institutional action (judicial probe) is positive, but disagree on direction. The probe targets alleged human rights violations, which punishes harm/protects rights, warranting BURN. Diplomatic fallout is secondary to the core action.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-09T10:37:35.894459+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
