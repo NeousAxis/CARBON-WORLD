@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-06-09T00:05:06.956654+00:00",
-  "total_events": 2663,
-  "total_burned": 3949555870,
-  "total_minted": 3634077500,
-  "pending_reviews": 16,
+  "generated_at": "2026-06-09T00:34:52.251251+00:00",
+  "total_events": 2666,
+  "total_burned": 3951055870,
+  "total_minted": 3645577500,
+  "pending_reviews": 14,
   "events": [
+    {
+      "id": 2666,
+      "event_title": "US leads record rise in spending on nuclear arsenals, campaign group says",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/us-leads-record-rise-spending-nuclear-arsenals-campaign-group-says",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 10000000,
+      "final_score": -6.16,
+      "confidence": 9,
+      "justification": "Record nuclear spending escalates global security risks and violates disarmament commitments. | The 19% increase in nuclear weapons spending by the world's nine nuclear-armed states, led by the US, directly undermines global peace and disarmament efforts (SDG 16). This action violates fundamental human rights to security and self-determination, escalating existential risks and diverting resources from critical societal needs.",
+      "tx_hash": "54hmA986inwqSBJEnbTCdzbXadkhsWeH2e8yfcG3sMCUnZonquHhogKt5fUqeNaX9PAAv6cnBRp3NcxvXg7xueDH",
+      "created_at": "2026-06-09T00:34:47.884228+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US-led record rise in nuclear arsenal spending by $19 billion in 2025, increasing global nuclear weapons expenditure to $119 billion, undermining disarmament efforts and escalating global security risks\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\", \"UNDRIP Article 7\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2665,
+      "event_title": "NIH plans to cap number of grants a scientist can have at once",
+      "event_url": "https://www.science.org/content/article/nih-plans-cap-number-grants-scientist-can-have-once",
+      "event_source": "Science (AAAS)",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | NIH's cap on grants redistributes resources to reduce inequities, punishing overconcentration of funding.",
+      "tx_hash": null,
+      "created_at": "2026-06-09T00:17:08.248142+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
+    {
+      "id": 2664,
+      "event_title": "International Criminal Court prosecutor Karim Khan suspended over sexual assault allegations",
+      "event_url": "https://www.lemonde.fr/international/article/2026/06/09/le-procureur-general-de-la-cpi-karim-khan-suspendu-pour-des-accusations-d-agression-sexuelle_6699753_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Institutional action to suspend Khan over allegations of sexual assault protects victims' rights and institutional integrity.",
+      "tx_hash": null,
+      "created_at": "2026-06-09T00:17:02.153602+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2663,
       "event_title": "Wildlife thrives in solar farm built on restored peatland",
@@ -58596,8 +58662,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 123,
-        "total_amount": 351684000
+        "count": 124,
+        "total_amount": 361684000
       },
       {
         "country": "France",
@@ -58623,8 +58689,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 39,
-        "total_amount": 183635000
+        "count": 38,
+        "total_amount": 178635000
       },
       {
         "country": "France",
@@ -58669,9 +58735,9 @@
         "events": 143
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.253,
-        "events": 174
+        "region": "Asia",
+        "burn_ratio": 0.25,
+        "events": 64
       }
     ],
     "top_regions_destructive": [
@@ -58681,14 +58747,14 @@
         "events": 27
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.753,
+        "events": 174
+      },
+      {
         "region": "Asia",
         "mint_ratio": 0.75,
         "events": 64
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.747,
-        "events": 174
       },
       {
         "region": "Europe",
@@ -58734,7 +58800,7 @@
       },
       {
         "date": "2026-06-09",
-        "net_minted": 0,
+        "net_minted": 10000000,
         "net_burned": 7000000
       }
     ],
@@ -58751,8 +58817,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 190,
-        "negative": 392,
+        "positive": 189,
+        "negative": 393,
         "event_ids_positive": [
           2663,
           2650,
@@ -58942,10 +59008,10 @@
           1960,
           1958,
           1954,
-          1952,
-          1944
+          1952
         ],
         "event_ids_negative": [
+          2666,
           2662,
           2661,
           2660,
@@ -59342,7 +59408,7 @@
       },
       "UDHR": {
         "positive": 82,
-        "negative": 304,
+        "negative": 305,
         "event_ids_positive": [
           2644,
           2629,
@@ -59428,6 +59494,7 @@
           1954
         ],
         "event_ids_negative": [
+          2666,
           2660,
           2659,
           2658,
@@ -59846,7 +59913,7 @@
       },
       "UNDRIP": {
         "positive": 41,
-        "negative": 74,
+        "negative": 75,
         "event_ids_positive": [
           2635,
           2606,
@@ -59891,6 +59958,7 @@
           1976
         ],
         "event_ids_negative": [
+          2666,
           2659,
           2656,
           2655,
@@ -59968,7 +60036,7 @@
         ]
       },
       "Animal": {
-        "positive": 52,
+        "positive": 51,
         "negative": 63,
         "event_ids_positive": [
           2663,
@@ -60021,8 +60089,7 @@
           2048,
           2021,
           2004,
-          1963,
-          1944
+          1963
         ],
         "event_ids_negative": [
           2642,
@@ -60460,10 +60527,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 104,
+        "count": 105,
         "burn_count": 47,
-        "mint_count": 57,
+        "mint_count": 58,
         "event_ids": [
+          2666,
           2663,
           2662,
           2659,
@@ -60710,10 +60778,11 @@
       },
       {
         "name": "Defense",
-        "count": 49,
+        "count": 50,
         "burn_count": 4,
-        "mint_count": 45,
+        "mint_count": 46,
         "event_ids": [
+          2666,
           2657,
           2632,
           2603,
@@ -60891,18 +60960,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 238,
+      "total_burn": 237,
       "direct_action": {
-        "count": 174,
-        "pct": 73.1
+        "count": 173,
+        "pct": 73.0
       },
       "editorial_consciousness": {
         "count": 16,
-        "pct": 6.7
+        "pct": 6.8
       },
       "untyped": {
         "count": 48,
-        "pct": 20.2
+        "pct": 20.3
       }
     },
     "burn_composition_all_time": {
@@ -60921,9 +60990,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 474,
+      "total_mint": 475,
       "direct_action": {
-        "count": 361,
+        "count": 362,
         "pct": 76.2
       },
       "editorial_alarm": {
@@ -60936,14 +61005,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1786,
+      "total_mint": 1787,
       "direct_action": {
-        "count": 1212,
+        "count": 1213,
         "pct": 67.9
       },
       "editorial_alarm": {
         "count": 117,
-        "pct": 6.6
+        "pct": 6.5
       },
       "untyped": {
         "count": 457,
@@ -60988,7 +61057,7 @@
         {
           "date": "2026-06-09",
           "citizen": 1,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -61229,6 +61298,7 @@
         1946
       ],
       "event_ids_institutional": [
+        2666,
         2661,
         2659,
         2657,
@@ -61704,8 +61774,7 @@
         1952,
         1951,
         1949,
-        1945,
-        1944
+        1945
       ]
     }
   }
