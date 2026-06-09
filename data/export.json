@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-09T22:35:36.777719+00:00",
-  "total_events": 2775,
+  "generated_at": "2026-06-09T23:06:18.495629+00:00",
+  "total_events": 2777,
   "total_burned": 4095135870,
-  "total_minted": 3831797500,
-  "pending_reviews": 15,
+  "total_minted": 3834797500,
+  "pending_reviews": 17,
   "events": [
+    {
+      "id": 2777,
+      "event_title": "In the United States, a $70 billion budget for the fight against immigration approved by the House",
+      "event_url": "https://www.lemonde.fr/international/article/2026/06/10/aux-etats-unis-un-budget-de-70-milliards-de-dollars-pour-la-lutte-contre-l-immigration-vote-approuve-par-la-chambre_6700319_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.32,
+      "confidence": 8,
+      "justification": "The budget prioritizes enforcement over integration, undermining human rights and equality. | The immigration budget includes both positive and negative aspects. While it supports border security and national infrastructure (SDG 16), the emphasis on enforcement over integration raises concerns about human rights and equality (UDHR, CRC). The net ethical position is mixed, with significant negative implications for vulnerable populations.",
+      "tx_hash": "3crG5iTVKEgGa2TRRjRyWm1iZ316BwHD67icnHqwbYd7WTpzqJj6PUQAW1F3sE7CfSNopzDatxaCAGPkS9eQVomp",
+      "created_at": "2026-06-09T23:06:13.261870+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The budget includes funding for border security infrastructure and immigration enforcement, which may help reduce illegal border crossings and improve national security.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The budget allocates significant funds to immigration enforcement, potentially diverting resources from more humane and long-term immigration solutions, and may enable harsh treatment of migrants.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"CRC Article 22\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The emphasis on enforcement over integration and humanitarian aid may exacerbate inequalities and marginalization of immigrant communities.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2776,
+      "event_title": "Driven by Steel Production, China’s Belt and Road Construction Carries a Heavy Climate Cost",
+      "event_url": "https://insideclimatenews.org/news/09062026/china-belt-and-road-steel-production/",
+      "event_source": "Inside Climate News",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.85,
+      "confidence": 8,
+      "justification": "BRI’s current high-emission steel production outweighs potential future reforms, warranting MINT. | The BRI’s reliance on high-emission steel production in China poses significant environmental harm, violating core planetary boundaries and undermining climate action (SDG 13). However, the publication of studies calling for policy reforms and cleaner technologies signals a potential pathway for future improvement, balancing immediate harm with long-term corrective action.",
+      "tx_hash": "5NyVR7nVgiKofpTaXdN333GK4NdmE47ABek8Dn4TjdykieiQ3s3kKZ9z2krwzykK9RAYq2VU2HMkZwTiABk1JK9Z",
+      "created_at": "2026-06-09T23:06:13.154456+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Two new studies highlight the need for stronger environmental policies and major investment in cleaner steel manufacturing technologies within China’s Belt and Road Initiative (BRI), indicating a growing awareness and potential for systemic improvement in climate impact.\", \"affected_sdgs\": [7, 9, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"China’s Belt and Road Initiative (BRI) currently carries a heavy climate cost, with over half of its emissions stemming from steel production, primarily manufactured in China, exacerbating global climate change and environmental degradation.\", \"affected_sdgs\": [7, 9, 12, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
     {
       "id": 2775,
       "event_title": "US Congress allocates $70 billion to fight immigration",
@@ -61061,7 +61105,7 @@
       {
         "country": "United States",
         "count": 122,
-        "total_amount": 354464000
+        "total_amount": 355264000
       },
       {
         "country": "France",
@@ -61070,8 +61114,8 @@
       },
       {
         "country": "China",
-        "count": 17,
-        "total_amount": 45245000
+        "count": 18,
+        "total_amount": 46745000
       },
       {
         "country": "Switzerland",
@@ -61124,8 +61168,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.333,
-        "events": 33
+        "burn_ratio": 0.344,
+        "events": 32
       },
       {
         "region": "Europe",
@@ -61133,9 +61177,9 @@
         "events": 148
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.257,
-        "events": 70
+        "region": "North America",
+        "burn_ratio": 0.254,
+        "events": 173
       }
     ],
     "top_regions_destructive": [
@@ -61151,8 +61195,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.743,
-        "events": 70
+        "mint_ratio": 0.746,
+        "events": 71
       },
       {
         "region": "Europe",
@@ -61161,8 +61205,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.667,
-        "events": 33
+        "mint_ratio": 0.656,
+        "events": 32
       }
     ],
     "supply_trend_7d": [
@@ -61198,20 +61242,20 @@
       },
       {
         "date": "2026-06-09",
-        "net_minted": 179410000,
+        "net_minted": 182410000,
         "net_burned": 152080000
       }
     ],
     "event_of_the_day": {
-      "id": 2659,
-      "event_title": "Nuclear powers' spending explodes and increases the risk of atomic detonation",
+      "id": 2729,
+      "event_title": "« I am terrified »: experts' warning on the nuclear arms race",
       "decision": "MINT",
-      "amount_crbn": 8170000,
-      "final_score": -7.74,
-      "confidence": 9,
+      "amount_crbn": 8000000,
+      "final_score": -7.14,
+      "confidence": 10,
       "country": null,
       "region": null,
-      "created_at": "2026-06-08T23:05:31.987767+00:00"
+      "created_at": "2026-06-09T15:06:54.160584+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
@@ -61403,6 +61447,8 @@
           2063
         ],
         "event_ids_negative": [
+          2777,
+          2776,
           2775,
           2773,
           2772,
@@ -61804,14 +61850,12 @@
           2061,
           2060,
           2058,
-          2057,
-          2056,
-          2055
+          2057
         ]
       },
       "UDHR": {
         "positive": 78,
-        "negative": 304,
+        "negative": 305,
         "event_ids_positive": [
           2768,
           2765,
@@ -61893,6 +61937,7 @@
           2070
         ],
         "event_ids_negative": [
+          2777,
           2775,
           2773,
           2772,
@@ -62228,7 +62273,7 @@
       },
       "CRC": {
         "positive": 14,
-        "negative": 50,
+        "negative": 51,
         "event_ids_positive": [
           2720,
           2546,
@@ -62246,6 +62291,7 @@
           2086
         ],
         "event_ids_negative": [
+          2777,
           2775,
           2754,
           2725,
@@ -62300,7 +62346,7 @@
       },
       "UNDRIP": {
         "positive": 40,
-        "negative": 82,
+        "negative": 81,
         "event_ids_positive": [
           2753,
           2752,
@@ -62424,13 +62470,12 @@
           2078,
           2074,
           2067,
-          2062,
-          2056
+          2062
         ]
       },
       "Animal": {
         "positive": 54,
-        "negative": 68,
+        "negative": 67,
         "event_ids_positive": [
           2765,
           2757,
@@ -62554,8 +62599,7 @@
           2084,
           2081,
           2078,
-          2067,
-          2056
+          2067
         ]
       },
       "PB": {
@@ -62645,6 +62689,7 @@
           2066
         ],
         "event_ids_negative": [
+          2776,
           2767,
           2764,
           2763,
@@ -62758,8 +62803,7 @@
           2089,
           2085,
           2081,
-          2078,
-          2056
+          2078
         ]
       }
     },
@@ -63040,10 +63084,12 @@
       },
       {
         "name": "Construction",
-        "count": 75,
+        "count": 77,
         "burn_count": 30,
-        "mint_count": 45,
+        "mint_count": 47,
         "event_ids": [
+          2777,
+          2776,
           2769,
           2768,
           2764,
@@ -63286,9 +63332,9 @@
       },
       {
         "name": "Tech",
-        "count": 22,
+        "count": 21,
         "burn_count": 9,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           2770,
           2731,
@@ -63310,8 +63356,7 @@
           2181,
           2124,
           2110,
-          2108,
-          2055
+          2108
         ]
       },
       {
@@ -63401,12 +63446,12 @@
     "mint_composition_7d": {
       "total_mint": 473,
       "direct_action": {
-        "count": 373,
-        "pct": 78.9
+        "count": 372,
+        "pct": 78.6
       },
       "editorial_alarm": {
-        "count": 31,
-        "pct": 6.6
+        "count": 32,
+        "pct": 6.8
       },
       "untyped": {
         "count": 69,
@@ -63414,14 +63459,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1855,
+      "total_mint": 1857,
       "direct_action": {
-        "count": 1270,
-        "pct": 68.5
+        "count": 1271,
+        "pct": 68.4
       },
       "editorial_alarm": {
-        "count": 123,
-        "pct": 6.6
+        "count": 124,
+        "pct": 6.7
       },
       "untyped": {
         "count": 462,
@@ -63429,9 +63474,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 227,
-      "institutional": 475,
-      "citizen_ratio": 0.323,
+      "citizen": 226,
+      "institutional": 476,
+      "citizen_ratio": 0.322,
       "daily": [
         {
           "date": "2026-06-03",
@@ -63465,11 +63510,12 @@
         },
         {
           "date": "2026-06-09",
-          "citizen": 33,
-          "institutional": 61
+          "citizen": 34,
+          "institutional": 62
         }
       ],
       "event_ids_citizen": [
+        2776,
         2771,
         2770,
         2767,
@@ -63694,11 +63740,10 @@
         2079,
         2075,
         2063,
-        2058,
-        2056,
-        2055
+        2058
       ],
       "event_ids_institutional": [
+        2777,
         2775,
         2773,
         2772,
