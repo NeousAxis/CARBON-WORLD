@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-09T19:04:52.937257+00:00",
-  "total_events": 2758,
+  "generated_at": "2026-06-09T19:35:57.746707+00:00",
+  "total_events": 2760,
   "total_burned": 4078135870,
-  "total_minted": 3807397500,
+  "total_minted": 3808322500,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 2760,
+      "event_title": "Diabetes Association in uproar after members expelled from annual meeting over protest of NIH cuts",
+      "event_url": "https://www.statnews.com/2026/06/09/american-diabetes-association-uproar-over-expulsion-of-members/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.65,
+      "confidence": 9,
+      "justification": "Institutional suppression of free speech in medical research undermines public health progress. | The expulsion of diabetes experts for protesting NIH funding cuts represents a direct violation of free expression and academic freedom, undermining SDG 3 (Good Health) and SDG 4 (Quality Education). While the protest itself is a positive act of civic engagement, the institutional response is ethically damaging and sets a dangerous precedent for professional conduct.",
+      "tx_hash": "5Ca3dTGkEyjKU8QP292otmzadkjCQz2FCKriNgHLVSwc6UBsJ5VNoCR7RqfsyEWqYCMUBaBfVfibN14iLMDbWca2",
+      "created_at": "2026-06-09T19:35:52.872103+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Public protest by named experts against federal research funding cuts to diabetes research, demonstrating civic engagement and freedom of expression\", \"affected_sdgs\": [3, 4], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Institutional expulsion of members for exercising free speech at a professional meeting, undermining academic freedom and professional ethics\", \"affected_sdgs\": [3, 4], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2759,
+      "event_title": "Tourism chiefs and European ferry ports sound alarm over summer border chaos",
+      "event_url": "https://www.thelocal.de/20260609/tourism-chiefs-and-european-ferry-ports-sound-alarm-over-summer-border-chaos",
+      "event_source": "The Local Germany (EN)",
+      "decision": "MINT",
+      "amount_crbn": 425000,
+      "final_score": -2.16,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #2748",
+      "tx_hash": null,
+      "created_at": "2026-06-09T19:33:26.453526+00:00",
+      "embedding": null,
+      "reused_from_event_id": 2748,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2758,
       "event_title": "Encouraging Clinical Trial Results for Lassa Virus Vaccine",
@@ -60686,8 +60730,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 121,
-        "total_amount": 345334000
+        "count": 122,
+        "total_amount": 345834000
       },
       {
         "country": "France",
@@ -60772,8 +60816,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.751,
-        "events": 169
+        "mint_ratio": 0.753,
+        "events": 170
       },
       {
         "region": "Asia",
@@ -60824,7 +60868,7 @@
       },
       {
         "date": "2026-06-09",
-        "net_minted": 156935000,
+        "net_minted": 157435000,
         "net_burned": 135080000
       }
     ],
@@ -61031,6 +61075,7 @@
           2043
         ],
         "event_ids_negative": [
+          2760,
           2756,
           2754,
           2751,
@@ -61430,8 +61475,7 @@
           2045,
           2044,
           2042,
-          2041,
-          2040
+          2041
         ]
       },
       "UDHR": {
@@ -61518,6 +61562,7 @@
           2049
         ],
         "event_ids_negative": [
+          2760,
           2756,
           2754,
           2750,
@@ -61819,8 +61864,7 @@
           2045,
           2044,
           2042,
-          2041,
-          2040
+          2041
         ]
       },
       "ILO": {
@@ -61853,7 +61897,7 @@
       },
       "CRC": {
         "positive": 14,
-        "negative": 52,
+        "negative": 51,
         "event_ids_positive": [
           2720,
           2546,
@@ -61921,8 +61965,7 @@
           2104,
           2083,
           2045,
-          2041,
-          2040
+          2041
         ]
       },
       "UNDRIP": {
@@ -62388,14 +62431,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 44.7,
-      "mainstream_pct": 55.3,
+      "niche_pct": 46.2,
+      "mainstream_pct": 53.8,
       "total_sources_used": 132,
-      "articles_processed": 705
+      "articles_processed": 702
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 705,
+      "total_events": 702,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -62441,9 +62484,9 @@
       },
       {
         "name": "UN",
-        "count": 22,
+        "count": 21,
         "burn_count": 3,
-        "mint_count": 19,
+        "mint_count": 18,
         "event_ids": [
           2696,
           2691,
@@ -62465,8 +62508,7 @@
           2148,
           2126,
           2110,
-          2069,
-          2037
+          2069
         ]
       },
       {
@@ -62744,10 +62786,11 @@
       },
       {
         "name": "Finance",
-        "count": 56,
+        "count": 57,
         "burn_count": 21,
-        "mint_count": 35,
+        "mint_count": 36,
         "event_ids": [
+          2760,
           2749,
           2743,
           2741,
@@ -62905,9 +62948,9 @@
       },
       {
         "name": "Tech",
-        "count": 23,
+        "count": 22,
         "burn_count": 10,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           2731,
           2710,
@@ -62930,8 +62973,7 @@
           2110,
           2108,
           2055,
-          2049,
-          2039
+          2049
         ]
       },
       {
@@ -63019,24 +63061,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 474,
+      "total_mint": 471,
       "direct_action": {
-        "count": 370,
-        "pct": 78.1
+        "count": 371,
+        "pct": 78.8
       },
       "editorial_alarm": {
-        "count": 31,
-        "pct": 6.5
+        "count": 30,
+        "pct": 6.4
       },
       "untyped": {
-        "count": 73,
-        "pct": 15.4
+        "count": 70,
+        "pct": 14.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1843,
+      "total_mint": 1844,
       "direct_action": {
-        "count": 1259,
+        "count": 1260,
         "pct": 68.3
       },
       "editorial_alarm": {
@@ -63050,8 +63092,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 225,
-      "institutional": 480,
-      "citizen_ratio": 0.319,
+      "institutional": 477,
+      "citizen_ratio": 0.321,
       "daily": [
         {
           "date": "2026-06-03",
@@ -63085,11 +63127,12 @@
         },
         {
           "date": "2026-06-09",
-          "citizen": 26,
+          "citizen": 27,
           "institutional": 53
         }
       ],
       "event_ids_citizen": [
+        2760,
         2757,
         2754,
         2753,
@@ -63313,8 +63356,7 @@
         2053,
         2052,
         2048,
-        2047,
-        2040
+        2047
       ],
       "event_ids_institutional": [
         2758,
@@ -63793,10 +63835,7 @@
         2044,
         2043,
         2042,
-        2041,
-        2039,
-        2038,
-        2037
+        2041
       ]
     }
   }
