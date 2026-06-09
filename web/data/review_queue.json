@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-09T03:34:50.731783+00:00",
-  "total_pending": 15,
+  "generated_at": "2026-06-09T04:06:19.288057+00:00",
+  "total_pending": 16,
   "reviews": [
     {
       "id": 704,
@@ -298,6 +298,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-09T01:05:06.388900+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 754,
+      "event_title": "Cartoon: Justice Minister Threatens to 'Clean House' After Child Murder Sparks Inquiry",
+      "event_url": "https://www.ouest-france.fr/medias/ouest-france/chaunu/le-dessin-de-chaunu-le-ministre-de-la-justice-menace-de-faire-le-menage-a2dd5018-6370-11f1-8a5e-13fc958a9977?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French Justice Minister Gérald Darmanin announced an inquiry into judicial 'failures' following the murder of an 11-year-old child, signaling accountability for systemic deficiencies in child protection and justice.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"The event is triggered by the murder of an 11-year-old child (Lyhanna), highlighting systemic failures in child protection and justice that allowed the tragedy to occur.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 6\", \"CRC Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The Justice Minister's announcement of an inquiry into judicial failures represents a positive step toward accountability and systemic improvement in child protection. However, the underlying trigger—a child's murder—exposes severe systemic deficiencies and violations of fundamental rights, underscoring the gravity of the situation.\", \"snapshot_score\": -1.5, \"trajectory_score\": 0.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Completion of the inquiry and implementation of reforms\", \"Public release of findings and accountability measures\", \"Sustained media and public pressure for systemic change\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Inquiry leads to meaningful reforms, systemic failures are addressed, and child protection mechanisms are strengthened.\", \"probability\": 0.3, \"score\": 6}, {\"name\": \"B\", \"description\": \"Inquiry results in superficial changes without addressing root causes, leaving systemic risks unresolved.\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Inquiry is obstructed or undermined, systemic failures persist, and no meaningful accountability is achieved.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": -0.1, \"final_score\": -0.825, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Systemic failure in child protection outweighs accountability announcement.\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Government response to a child murder case by announcing an inquiry and potential sanctions against magistrates for 'serious failures', demonstrating accountability in the justice system\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Threatening to 'clean house' in the judiciary risks undermining judicial independence and could lead to arbitrary purges rather than systemic reforms\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The government's response to the child murder case by initiating an inquiry and considering sanctions for judicial failures is a positive step toward accountability and protecting children's rights (CRC, SDG 16). However, the phrasing 'clean house' introduces a risk of undermining judicial independence and fairness, which could violate fundamental rights (UDHR Articles 10 and 11). The net ethical position is cautiously positive but tempered by the potential for abuse.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Public release of inquiry findings and sanctions imposed\", \"Judicial independence safeguards implemented or weakened\", \"Follow-up reforms to prevent future failures\", \"Political interference in judicial processes\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Inquiry leads to systemic reforms, sanctions are fair and transparent, judicial independence is strengthened\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Inquiry results in targeted but fair sanctions, minor political interference but overall positive outcome\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Inquiry is used to purge critics, judicial independence is eroded, no systemic reforms\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.9, \"final_score\": 2.8, \"decision\": \"NEUTRAL\", \"amount_cbwd\": 150000, \"confidence\": 6, \"justification\": \"Accountability action balanced by risk of judicial independence erosion.\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": -0.32, \"confidence\": 9, \"amount_cbwd\": 150000, \"justification\": \"Institutional action targets systemic failure in child protection, aligning with harm reduction.\", \"disagreement\": true, \"reason\": \"Analyst A's focus on systemic failure is correct, but the institutional action (inquiry + potential sanctions) is a corrective measure that punishes harm and protects rights, warranting BURN despite the tragic event.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement | llm: Polarity error: accountability action (inquiry/sanctions) scored BURN, but systemic failure (child murder) is the harm; corrective action should be BURN.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 150000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-09T04:06:14.112387+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
