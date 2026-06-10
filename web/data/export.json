@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-06-10T10:06:13.925812+00:00",
-  "total_events": 2845,
-  "total_burned": 4174630870,
-  "total_minted": 3919730000,
+  "generated_at": "2026-06-10T10:35:44.079607+00:00",
+  "total_events": 2848,
+  "total_burned": 4179630870,
+  "total_minted": 3926230000,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 2848,
+      "event_title": "The 2026 World Cup, announced as 'the greenest,' could become the most polluting",
+      "event_url": "https://www.lemonde.fr/les-decodeurs/article/2026/06/10/la-coupe-du-monde-2026-annoncee-comme-la-plus-verte-pourrait-devenir-la-plus-polluante_6700438_4355770.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.44,
+      "confidence": 8,
+      "justification": "Projected emissions from air travel undermine the 'greenest' claim, making the event net-negative for climate action. | The institutional announcement of a 'greenest' World Cup represents a positive step toward climate-conscious event planning, but the projected emissions from air travel between host countries severely undermine this claim. The net ethical judgment is negative due to the disproportionate environmental harm relative to the stated goals.",
+      "tx_hash": "4LXmhoh3hMXPurNCH9vXcjDF8PrmBcbCn7cjTuBPnJ2DtqfzVkzsAQECSkKi3txwarL7aFrmDkDBsf7wZXvzhyfX",
+      "created_at": "2026-06-10T10:35:39.198139+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Announcement of the 2026 World Cup as 'the greenest' signals an institutional commitment to climate-conscious event planning and public awareness of sustainability in mega-events.\", \"affected_sdgs\": [12, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Projected 3.6 million tonnes of CO₂ emissions from the 2026 World Cup, primarily due to long-haul air travel between Canada, the US, and Mexico, undermines climate action and contradicts the 'greenest' claim.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2847,
+      "event_title": "UN officials urge Russia to free Indigenous climate advocate",
+      "event_url": "https://grist.org/indigenous/u-n-officials-urge-the-release-of-an-indigenous-climate-advocate-jailed-in-russia/",
+      "event_source": "Grist",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": -1.72,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] UN's institutional action to advocate for release upholds rights; imprisonment is irrelevant to ethical evaluation. | The event highlights a conflict between international human rights norms and national enforcement actions. While the UN's call for release is a positive step toward upholding Indigenous rights and freedom of expression, the imprisonment itself represents a signif",
+      "tx_hash": "5TRWm4G7okSpZwNcR2NTZafSCwQ8dQwrXfhpyBYduk66kysuPNT4FFUU7t1NYhYQEKSmZpZKcfKMYe6gCBBt3cZY",
+      "created_at": "2026-06-10T10:35:39.082812+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"UN officials publicly call for the release of an Indigenous climate advocate imprisoned in Russia, signaling international concern for human rights and Indigenous rights.\", \"affected_sdgs\": [10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The imprisonment of an Indigenous climate advocate represents a violation of freedom of expression and the rights of Indigenous peoples to participate in environmental governance.\", \"affected_sdgs\": [10, 16, 13], \"violated_rights\": [\"UNDRIP Article 10\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null
+    },
+    {
+      "id": 2846,
+      "event_title": "Only three European countries meet deadline for new pay transparency rules",
+      "event_url": "https://www.thelocal.es/20260610/only-3-countries-met-deadline-for-new-eu-pay-transparency-rules",
+      "event_source": "The Local Spain (EN)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.5,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #2845",
+      "tx_hash": null,
+      "created_at": "2026-06-10T10:33:22.898037+00:00",
+      "embedding": null,
+      "reused_from_event_id": 2845,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2845,
       "event_title": "Only three European countries meet deadline for new pay transparency rules",
@@ -62600,8 +62666,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 123,
-        "total_amount": 345804000
+        "count": 122,
+        "total_amount": 344304000
       },
       {
         "country": "France",
@@ -62641,14 +62707,14 @@
         "total_amount": 36000000
       },
       {
-        "country": "United Kingdom",
-        "count": 7,
-        "total_amount": 32000000
-      },
-      {
         "country": "Germany",
         "count": 7,
         "total_amount": 32750000
+      },
+      {
+        "country": "European Union",
+        "count": 6,
+        "total_amount": 34600000
       }
     ],
     "top_regions_sustainable": [
@@ -62669,13 +62735,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.267,
-        "events": 150
+        "burn_ratio": 0.262,
+        "events": 149
       },
       {
         "region": "North America",
-        "burn_ratio": 0.256,
-        "events": 176
+        "burn_ratio": 0.257,
+        "events": 175
       }
     ],
     "top_regions_destructive": [
@@ -62691,13 +62757,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.744,
-        "events": 176
+        "mint_ratio": 0.743,
+        "events": 175
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.733,
-        "events": 150
+        "mint_ratio": 0.738,
+        "events": 149
       },
       {
         "region": "Latin America",
@@ -62738,8 +62804,8 @@
       },
       {
         "date": "2026-06-10",
-        "net_minted": 68132500,
-        "net_burned": 66100000
+        "net_minted": 73132500,
+        "net_burned": 71100000
       }
     ],
     "event_of_the_day": {
@@ -62755,9 +62821,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 187,
+        "positive": 186,
         "negative": 417,
         "event_ids_positive": [
+          2847,
           2839,
           2818,
           2814,
@@ -62942,11 +63009,10 @@
           2119,
           2116,
           2111,
-          2096,
-          2093,
-          2091
+          2096
         ],
         "event_ids_negative": [
+          2848,
           2845,
           2844,
           2843,
@@ -63362,14 +63428,14 @@
           2101,
           2100,
           2099,
-          2095,
-          2092
+          2095
         ]
       },
       "UDHR": {
         "positive": 81,
-        "negative": 314,
+        "negative": 313,
         "event_ids_positive": [
+          2847,
           2839,
           2818,
           2811,
@@ -63449,8 +63515,7 @@
           2142,
           2136,
           2119,
-          2111,
-          2091
+          2111
         ],
         "event_ids_negative": [
           2845,
@@ -63765,8 +63830,7 @@
           2103,
           2100,
           2099,
-          2095,
-          2092
+          2095
         ]
       },
       "ILO": {
@@ -63802,7 +63866,7 @@
         ]
       },
       "CRC": {
-        "positive": 13,
+        "positive": 12,
         "negative": 55,
         "event_ids_positive": [
           2720,
@@ -63816,8 +63880,7 @@
           2305,
           2301,
           2282,
-          2276,
-          2091
+          2276
         ],
         "event_ids_negative": [
           2819,
@@ -63878,9 +63941,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 39,
+        "positive": 40,
         "negative": 83,
         "event_ids_positive": [
+          2847,
           2753,
           2752,
           2713,
@@ -64135,8 +64199,8 @@
         ]
       },
       "PB": {
-        "positive": 84,
-        "negative": 116,
+        "positive": 83,
+        "negative": 117,
         "event_ids_positive": [
           2818,
           2809,
@@ -64220,10 +64284,10 @@
           2151,
           2138,
           2116,
-          2096,
-          2093
+          2096
         ],
         "event_ids_negative": [
+          2848,
           2842,
           2820,
           2799,
@@ -64347,11 +64411,11 @@
       "niche_pct": 43.3,
       "mainstream_pct": 56.7,
       "total_sources_used": 134,
-      "articles_processed": 732
+      "articles_processed": 730
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 732,
+      "total_events": 730,
       "pct": 1.2
     },
     "active_partners_7d": [],
@@ -64402,10 +64466,11 @@
       },
       {
         "name": "UN",
-        "count": 22,
-        "burn_count": 3,
+        "count": 23,
+        "burn_count": 4,
         "mint_count": 19,
         "event_ids": [
+          2847,
           2766,
           2755,
           2696,
@@ -64516,9 +64581,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 102,
-        "burn_count": 46,
-        "mint_count": 56,
+        "count": 100,
+        "burn_count": 45,
+        "mint_count": 55,
         "event_ids": [
           2842,
           2809,
@@ -64619,15 +64684,13 @@
           2138,
           2136,
           2101,
-          2096,
-          2093,
-          2092
+          2096
         ]
       },
       {
         "name": "Construction",
-        "count": 80,
-        "burn_count": 32,
+        "count": 79,
+        "burn_count": 31,
         "mint_count": 48,
         "event_ids": [
           2817,
@@ -64708,8 +64771,7 @@
           2191,
           2165,
           2139,
-          2130,
-          2093
+          2130
         ]
       },
       {
@@ -64968,29 +65030,29 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 234,
+      "total_burn": 233,
       "direct_action": {
-        "count": 173,
-        "pct": 73.9
+        "count": 171,
+        "pct": 73.4
       },
       "editorial_consciousness": {
-        "count": 14,
-        "pct": 6.0
+        "count": 15,
+        "pct": 6.4
       },
       "untyped": {
         "count": 47,
-        "pct": 20.1
+        "pct": 20.2
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 907,
+      "total_burn": 908,
       "direct_action": {
         "count": 625,
-        "pct": 68.9
+        "pct": 68.8
       },
       "editorial_consciousness": {
-        "count": 56,
-        "pct": 6.2
+        "count": 57,
+        "pct": 6.3
       },
       "untyped": {
         "count": 226,
@@ -64998,24 +65060,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 498,
+      "total_mint": 497,
       "direct_action": {
         "count": 386,
-        "pct": 77.5
+        "pct": 77.7
       },
       "editorial_alarm": {
         "count": 31,
         "pct": 6.2
       },
       "untyped": {
-        "count": 81,
-        "pct": 16.3
+        "count": 80,
+        "pct": 16.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1907,
+      "total_mint": 1908,
       "direct_action": {
-        "count": 1303,
+        "count": 1304,
         "pct": 68.3
       },
       "editorial_alarm": {
@@ -65029,8 +65091,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 234,
-      "institutional": 498,
-      "citizen_ratio": 0.32,
+      "institutional": 496,
+      "citizen_ratio": 0.321,
       "daily": [
         {
           "date": "2026-06-04",
@@ -65064,11 +65126,12 @@
         },
         {
           "date": "2026-06-10",
-          "citizen": 12,
-          "institutional": 31
+          "citizen": 13,
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
+        2847,
         2840,
         2839,
         2810,
@@ -65301,10 +65364,10 @@
         2122,
         2119,
         2111,
-        2103,
-        2091
+        2103
       ],
       "event_ids_institutional": [
+        2848,
         2845,
         2844,
         2843,
@@ -65799,10 +65862,7 @@
         2098,
         2097,
         2096,
-        2095,
-        2094,
-        2093,
-        2092
+        2095
       ]
     }
   }
