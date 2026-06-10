@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-10T03:06:20.207739+00:00",
-  "total_events": 2796,
+  "generated_at": "2026-06-10T03:35:30.920781+00:00",
+  "total_events": 2798,
   "total_burned": 4130235870,
-  "total_minted": 3869010000,
-  "pending_reviews": 17,
+  "total_minted": 3877010000,
+  "pending_reviews": 16,
   "events": [
+    {
+      "id": 2798,
+      "event_title": "Israel Moves Gaza Hospital Director Hussam Abu Safiya to Solitary Confinement",
+      "event_url": "https://truthout.org/articles/israel-moves-gaza-hospital-director-hussam-abu-safiya-to-solitary-confinement/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 7500000,
+      "final_score": -7.09,
+      "confidence": 9,
+      "justification": "Solitary confinement of healthcare leader violates core rights and exacerbates humanitarian crisis. | The solitary confinement of a hospital director in Gaza constitutes a severe violation of human rights and undermines the right to health, directly contravening multiple SDGs and fundamental freedoms. This action exacerbates an already dire humanitarian crisis and erodes trust in healthcare systems during conflict.",
+      "tx_hash": "5G6cWjjdr1ccVyHNw7iJ6H6P7k7a88CAL5YFo4jhm4TKEWn5CwA5zWLY1KdZ4QCWnH7CXXBYbJwB8YqTCHEse1ea",
+      "created_at": "2026-06-10T03:35:25.806738+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli authorities move Gaza hospital director Hussam Abu Safiya to solitary confinement, undermining healthcare leadership and civil rights during conflict\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 2797,
+      "event_title": "Libya: Release humanitarian activists detained for seeking to deliver aid to Gaza",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/06/libya-release-humanitarian-activists-detained-for-seeking-to-deliver-aid-to-gaza/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 0.0,
+      "confidence": 10,
+      "justification": "auto-batch-2: A==suggested, B==NEUTRAL (B conservative, A+Reconciler decided) — reversible via worker/reverse_event.py | Institutional action (Amnesty's call) punishes rights violation by demanding release of detained activists.",
+      "tx_hash": null,
+      "created_at": "2026-06-10T03:17:02.109580+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2796,
       "event_title": "Anti-foreigner violence in South Africa is easily sparked: what hasn’t been done to deal with it",
@@ -61542,8 +61586,8 @@
       },
       {
         "country": "Israel",
-        "count": 13,
-        "total_amount": 75275000
+        "count": 14,
+        "total_amount": 82775000
       }
     ],
     "top_countries_burn": [
@@ -61603,8 +61647,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.957,
-        "events": 23
+        "mint_ratio": 0.958,
+        "events": 24
       },
       {
         "region": "Asia",
@@ -61660,7 +61704,7 @@
       },
       {
         "date": "2026-06-10",
-        "net_minted": 32062500,
+        "net_minted": 39562500,
         "net_burned": 30100000
       }
     ],
@@ -61678,7 +61722,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 184,
-        "negative": 406,
+        "negative": 407,
         "event_ids_positive": [
           2789,
           2787,
@@ -61866,6 +61910,7 @@
           2075
         ],
         "event_ids_negative": [
+          2798,
           2796,
           2795,
           2793,
@@ -62276,7 +62321,7 @@
       },
       "UDHR": {
         "positive": 79,
-        "negative": 307,
+        "negative": 308,
         "event_ids_positive": [
           2789,
           2782,
@@ -62359,6 +62404,7 @@
           2082
         ],
         "event_ids_negative": [
+          2798,
           2796,
           2795,
           2792,
@@ -62698,7 +62744,7 @@
       },
       "CRC": {
         "positive": 14,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           2720,
           2546,
@@ -62716,6 +62762,7 @@
           2086
         ],
         "event_ids_negative": [
+          2798,
           2788,
           2777,
           2775,
@@ -63242,11 +63289,11 @@
       "niche_pct": 45.2,
       "mainstream_pct": 54.8,
       "total_sources_used": 135,
-      "articles_processed": 723
+      "articles_processed": 722
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 723,
+      "total_events": 722,
       "pct": 1.2
     },
     "active_partners_7d": [],
@@ -63883,24 +63930,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 492,
+      "total_mint": 491,
       "direct_action": {
-        "count": 373,
-        "pct": 75.8
+        "count": 374,
+        "pct": 76.2
       },
       "editorial_alarm": {
         "count": 33,
         "pct": 6.7
       },
       "untyped": {
-        "count": 86,
-        "pct": 17.5
+        "count": 84,
+        "pct": 17.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1886,
+      "total_mint": 1887,
       "direct_action": {
-        "count": 1282,
+        "count": 1283,
         "pct": 68.0
       },
       "editorial_alarm": {
@@ -63914,7 +63961,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 232,
-      "institutional": 491,
+      "institutional": 490,
       "citizen_ratio": 0.321,
       "daily": [
         {
@@ -63950,7 +63997,7 @@
         {
           "date": "2026-06-10",
           "citizen": 5,
-          "institutional": 10
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -64188,6 +64235,7 @@
         2075
       ],
       "event_ids_institutional": [
+        2798,
         2796,
         2795,
         2792,
@@ -64676,9 +64724,7 @@
         2078,
         2077,
         2076,
-        2074,
-        2073,
-        2072
+        2074
       ]
     }
   }
