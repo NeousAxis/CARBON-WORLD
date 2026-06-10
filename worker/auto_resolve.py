@@ -62,10 +62,14 @@ import config
 logger = logging.getLogger("agent.auto_resolve")
 
 # --- Tunables (overridable via env in config) ---
-# Minimum corpus confirm-rate for the analyst-consensus pattern to be trusted.
+# A learned (A-decision, B-decision) -> human-decision pattern is trusted when
+# the human resolved it the same way in >= CONSENSUS_MIN_RATE of cases over a
+# sample of >= MIN_SAMPLES reviews. Measured live from the corpus, so the map
+# keeps improving as Cyril reviews more (each cron run recomputes it).
 CONSENSUS_MIN_RATE: float = float(
-    getattr(config, "AUTO_RESOLVE_CONSENSUS_MIN_RATE", 0.85)
+    getattr(config, "AUTO_RESOLVE_CONSENSUS_MIN_RATE", 0.80)
 )
+MIN_SAMPLES: int = int(getattr(config, "AUTO_RESOLVE_MIN_SAMPLES", 12))
 # Cosine threshold + neighbourhood size for the precedent path.
 PRECEDENT_THRESHOLD: float = float(
     getattr(config, "AUTO_RESOLVE_PRECEDENT_THRESHOLD", 0.70)
@@ -73,6 +77,9 @@ PRECEDENT_THRESHOLD: float = float(
 PRECEDENT_NEIGHBOURS: int = 2  # top-K that must agree unanimously
 
 _VALID_DIRECTIONS = ("BURN", "MINT")
+
+# Module-level cache of the learned resolution map (recomputed per process).
+_RESOLUTION_MAP: Optional[dict] = None
 
 
 def _mode() -> str:
@@ -88,23 +95,83 @@ def _analyst_directions(event: dict) -> tuple[Optional[str], Optional[str]]:
     return a, b
 
 
-def _consensus_amount(event: dict, fallback: int) -> int:
-    """Amount for a consensus resolution: mean of the two analysts' amounts.
-    The Reconciler's amount is ignored here because its decision was the thing
-    we are overriding. Falls back to the reconciled amount if analysts lack one."""
-    amts = []
+def _resolved_amount(event: dict, decision: str, fallback: int) -> int:
+    """Amount for a resolution: mean of the amounts of the analyst(s) who voted
+    for the RESOLVED decision (the Reconciler's amount is ignored — its decision
+    is what we override). E.g. MINT|BURN -> BURN uses Analyst B's amount. Falls
+    back to any analyst amount, then the reconciled amount."""
+    matching, any_amt = [], []
     for key in ("_analyst_a", "_analyst_b"):
         v = event.get(key) or {}
-        amt = v.get("amount_cbwd", v.get("amount_crbn"))
         try:
-            amt = int(amt)
+            amt = int(v.get("amount_cbwd", v.get("amount_crbn")) or 0)
         except (TypeError, ValueError):
             amt = 0
         if amt > 0:
-            amts.append(amt)
-    if amts:
-        return int(round(sum(amts) / len(amts)))
+            any_amt.append(amt)
+            if v.get("decision") == decision:
+                matching.append(amt)
+    pool = matching or any_amt
+    if pool:
+        return int(round(sum(pool) / len(pool)))
     return int(fallback or 0)
+
+
+def _resolution_map(conn) -> dict:
+    """Learn, from the resolved human corpus, how Cyril decides each
+    (Analyst-A direction, Analyst-B direction) combination. Returns only the
+    combinations resolved consistently enough to trust:
+
+        {(a, b): {"decision": "BURN"|"MINT", "rate": float, "n": int}}
+
+    A combination qualifies when its dominant human BURN/MINT outcome covers
+    >= CONSENSUS_MIN_RATE of >= MIN_SAMPLES reviews. This is the learned model;
+    it generalises the old "consensus only" rule to disagreements too, and it
+    self-updates as the corpus grows (recomputed every process)."""
+    global _RESOLUTION_MAP
+    if _RESOLUTION_MAP is not None:
+        return _RESOLUTION_MAP
+
+    rows = conn.execute(
+        """
+        SELECT json_extract(analyst_a_verdict,'$.decision') AS a,
+               json_extract(analyst_b_verdict,'$.decision') AS b,
+               final_decision AS fd, COUNT(*) AS n
+        FROM review_queue
+        WHERE status != 'pending' AND final_decision IS NOT NULL
+        GROUP BY a, b, fd
+        """
+    ).fetchall()
+
+    # totals[(a,b)] = total resolved; wins[(a,b)][fd] = count
+    totals: dict = {}
+    wins: dict = {}
+    for r in rows:
+        a = r["a"] if not isinstance(r, tuple) else r[0]
+        b = r["b"] if not isinstance(r, tuple) else r[1]
+        fd = r["fd"] if not isinstance(r, tuple) else r[2]
+        n = r["n"] if not isinstance(r, tuple) else r[3]
+        if not a or not b:
+            continue
+        key = (a, b)
+        totals[key] = totals.get(key, 0) + n
+        wins.setdefault(key, {})[fd] = wins.setdefault(key, {}).get(fd, 0) + n
+
+    out: dict = {}
+    for key, total in totals.items():
+        if total < MIN_SAMPLES:
+            continue
+        # Dominant BURN/MINT outcome only (never auto-fire a NEUTRAL/REJECTED).
+        burn_mint = {d: c for d, c in wins[key].items() if d in _VALID_DIRECTIONS}
+        if not burn_mint:
+            continue
+        decision = max(burn_mint, key=burn_mint.get)
+        rate = burn_mint[decision] / total
+        if rate >= CONSENSUS_MIN_RATE:
+            out[key] = {"decision": decision, "rate": round(rate, 3), "n": total}
+
+    _RESOLUTION_MAP = out
+    return out
 
 
 def _event_text(event: dict) -> str:
@@ -159,7 +226,7 @@ def _precedent_verdict(event: dict, conn) -> Optional[dict]:
     analysis = event.get("analysis", {}) or {}
     return {
         "decision": pred,
-        "amount_cbwd": _consensus_amount(event, analysis.get("amount_cbwd", 0)),
+        "amount_cbwd": _resolved_amount(event, pred, analysis.get("amount_cbwd", 0)),
         "basis": "precedent",
         "confidence": min(10, int(round(top.get("cosine", 0.7) * 10))),
         "detail": (
@@ -186,23 +253,32 @@ def try_auto_resolve(event: dict, conn=None) -> Optional[dict]:
         return None
 
     try:
-        # --- Signal 1: analyst consensus (generalizes) ---
-        a, b = _analyst_directions(event)
-        if a and a == b and a in _VALID_DIRECTIONS:
-            analysis = event.get("analysis", {}) or {}
-            return {
-                "decision": a,
-                "amount_cbwd": _consensus_amount(event, analysis.get("amount_cbwd", 0)),
-                "basis": "analyst-consensus",
-                "confidence": 9,
-                "detail": f"Analyst A and B both independently scored {a}",
-            }
-
-        # --- Signal 2: human precedent (specific) ---
         if conn is None:
             from db import _get_conn
 
             conn = _get_conn()
+
+        # --- Signal 1: learned (A,B) -> decision resolution map ---
+        # Covers consensus AND disagreements that the human corpus resolves
+        # consistently (e.g. MINT|BURN -> BURN at 86%, BURN|NEUTRAL -> BURN at
+        # 88%). Generalises the former consensus-only rule.
+        a, b = _analyst_directions(event)
+        rule = _resolution_map(conn).get((a, b))
+        if rule:
+            analysis = event.get("analysis", {}) or {}
+            dec = rule["decision"]
+            return {
+                "decision": dec,
+                "amount_cbwd": _resolved_amount(event, dec, analysis.get("amount_cbwd", 0)),
+                "basis": "learned-map",
+                "confidence": min(10, int(round(rule["rate"] * 10))),
+                "detail": (
+                    f"A={a}/B={b} -> {dec} (human chose this in "
+                    f"{rule['rate']*100:.0f}% of {rule['n']} past reviews)"
+                ),
+            }
+
+        # --- Signal 2: human precedent (specific, for combos not in the map) ---
         return _precedent_verdict(event, conn)
     except Exception as exc:
         logger.warning("auto_resolve: internal error, falling back to review: %s", exc)
