@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-10T13:40:31.835869+00:00",
-  "total_events": 2866,
-  "total_burned": 4208630870,
-  "total_minted": 3972630000,
+  "generated_at": "2026-06-10T14:05:56.973416+00:00",
+  "total_events": 2868,
+  "total_burned": 4213630870,
+  "total_minted": 3982130000,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 2868,
+      "event_title": "China Opens World’s First Wind-Powered Underwater Data Center",
+      "event_url": "https://www.wired.com/story/china-opens-worlds-first-wind-powered-underwater-data-center/",
+      "event_source": "WIRED Science",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.46,
+      "confidence": 8,
+      "justification": "Innovative climate-positive infrastructure with high scalability potential. | The commissioning of the world's first wind-powered underwater data center represents a significant technological and environmental innovation, directly advancing SDG 7 (Affordable and Clean Energy), SDG 9 (Industry, Innovation, and Infrastructure), and SDG 13 (Climate Action). While potential marine ecosystem risks and geopolitical concerns exist, they are speculative and secondary to the demonstrated benefits of redu",
+      "tx_hash": "2qHegSssQBtRBFetdhVyYp5xxozkC3soW6nVfALaBZwx8sQt6mfynE52yrkWN6Ch3JS8C9wdb9iLCSpsLtb4wWuB",
+      "created_at": "2026-06-10T14:05:51.756028+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"China commissions the world's first wind-powered underwater data center, reducing reliance on fossil fuels for high-energy computing infrastructure and leveraging seawater for natural cooling, aligning with climate action and sustainable energy goals.\", \"affected_sdgs\": [7, 9, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Innovative use of renewable energy (wind) and passive cooling (seawater) demonstrates technological leadership in reducing the carbon footprint of data centers, a rapidly growing energy consumer.\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Underwater data centers may pose risks to marine ecosystems through heat discharge, electromagnetic interference, or potential leaks of hazardous materials, though these are not yet well-documented at scale.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Centralized data infrastructure in a single country (China) could concentrate geopolitical and cybersecurity risks, though this is a speculative concern rather than a confirmed harm.\", \"affected_sdgs\": [], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2867,
+      "event_title": "Fully autonomous drones have killed human soldiers for the first time",
+      "event_url": "https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/?utm_campaign=RSS%7CNSNS&utm_source=NSNS&utm_medium=RSS&utm_content=news",
+      "event_source": "New Scientist",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -7.11,
+      "confidence": 9,
+      "justification": "Deployment of autonomous lethal drones violates core human rights and sets a catastrophic precedent for warfare. | The deployment of fully autonomous drones with lethal capabilities represents a severe violation of fundamental human rights, including the right to life and the prohibition of arbitrary deprivation of life. This action undermines international humanitarian law and sets a dangerous precedent for the future of warfare, with irreversible consequences for human dignity and global secur",
+      "tx_hash": "4uH73P9Xo9eL5riqZFsWKcHKi3W11LhT7YvcWjYkH33ZoH8qd7p7JP8CX3v6usponPfeEc1C6nQk27WJYCD2k6pZ",
+      "created_at": "2026-06-10T14:05:51.645522+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Confirmed deployment of fully autonomous drones programmed to destroy targets in a given area, resulting in human casualties among soldiers\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 6\", \"UDHR Article 29\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2866,
       "event_title": "Why the 2026 World Cup will be the most polluting (and why FIFA is wrong to ignore it)",
@@ -63130,14 +63174,14 @@
         "events": 31
       },
       {
+        "region": "Asia",
+        "burn_ratio": 0.264,
+        "events": 72
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.264,
         "events": 178
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.254,
-        "events": 71
       }
     ],
     "top_regions_destructive": [
@@ -63153,8 +63197,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.746,
-        "events": 71
+        "mint_ratio": 0.736,
+        "events": 72
       },
       {
         "region": "North America",
@@ -63200,8 +63244,8 @@
       },
       {
         "date": "2026-06-10",
-        "net_minted": 119532500,
-        "net_burned": 100100000
+        "net_minted": 129032500,
+        "net_burned": 105100000
       }
     ],
     "event_of_the_day": {
@@ -63217,9 +63261,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 190,
+        "positive": 191,
         "negative": 422,
         "event_ids_positive": [
+          2868,
           2860,
           2859,
           2851,
@@ -63412,6 +63457,7 @@
           2111
         ],
         "event_ids_negative": [
+          2867,
           2866,
           2865,
           2864,
@@ -63832,8 +63878,7 @@
           2115,
           2114,
           2113,
-          2112,
-          2108
+          2112
         ]
       },
       "UDHR": {
@@ -63924,6 +63969,7 @@
           2111
         ],
         "event_ids_negative": [
+          2867,
           2865,
           2863,
           2861,
@@ -64238,8 +64284,7 @@
           2115,
           2114,
           2113,
-          2112,
-          2108
+          2112
         ]
       },
       "ILO": {
@@ -64612,9 +64657,10 @@
         ]
       },
       "PB": {
-        "positive": 86,
+        "positive": 87,
         "negative": 118,
         "event_ids_positive": [
+          2868,
           2860,
           2859,
           2850,
@@ -64828,20 +64874,20 @@
       "niche_pct": 44.0,
       "mainstream_pct": 56.0,
       "total_sources_used": 134,
-      "articles_processed": 735
+      "articles_processed": 736
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 735,
+      "total_events": 736,
       "pct": 1.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 36,
+        "count": 35,
         "burn_count": 8,
-        "mint_count": 28,
+        "mint_count": 27,
         "event_ids": [
           2858,
           2845,
@@ -64877,8 +64923,7 @@
           2127,
           2118,
           2113,
-          2112,
-          2108
+          2112
         ]
       },
       {
@@ -64996,10 +65041,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 101,
-        "burn_count": 46,
+        "count": 102,
+        "burn_count": 47,
         "mint_count": 55,
         "event_ids": [
+          2868,
           2865,
           2860,
           2851,
@@ -65105,10 +65151,11 @@
       },
       {
         "name": "Construction",
-        "count": 80,
-        "burn_count": 32,
+        "count": 81,
+        "burn_count": 33,
         "mint_count": 48,
         "event_ids": [
+          2868,
           2851,
           2817,
           2811,
@@ -65362,9 +65409,10 @@
       {
         "name": "Tech",
         "count": 26,
-        "burn_count": 12,
-        "mint_count": 14,
+        "burn_count": 13,
+        "mint_count": 13,
         "event_ids": [
+          2868,
           2858,
           2851,
           2849,
@@ -65389,8 +65437,7 @@
           2182,
           2181,
           2124,
-          2110,
-          2108
+          2110
         ]
       },
       {
@@ -65451,10 +65498,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 237,
+      "total_burn": 238,
       "direct_action": {
-        "count": 175,
-        "pct": 73.8
+        "count": 176,
+        "pct": 73.9
       },
       "editorial_consciousness": {
         "count": 15,
@@ -65462,13 +65509,13 @@
       },
       "untyped": {
         "count": 47,
-        "pct": 19.8
+        "pct": 19.7
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 913,
+      "total_burn": 914,
       "direct_action": {
-        "count": 630,
+        "count": 631,
         "pct": 69.0
       },
       "editorial_consciousness": {
@@ -65477,7 +65524,7 @@
       },
       "untyped": {
         "count": 226,
-        "pct": 24.8
+        "pct": 24.7
       }
     },
     "mint_composition_7d": {
@@ -65496,9 +65543,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1921,
+      "total_mint": 1922,
       "direct_action": {
-        "count": 1317,
+        "count": 1318,
         "pct": 68.6
       },
       "editorial_alarm": {
@@ -65512,7 +65559,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 239,
-      "institutional": 496,
+      "institutional": 497,
       "citizen_ratio": 0.325,
       "daily": [
         {
@@ -65548,7 +65595,7 @@
         {
           "date": "2026-06-10",
           "citizen": 19,
-          "institutional": 44
+          "institutional": 46
         }
       ],
       "event_ids_citizen": [
@@ -65793,6 +65840,8 @@
         2111
       ],
       "event_ids_institutional": [
+        2868,
+        2867,
         2866,
         2865,
         2864,
@@ -66287,8 +66336,7 @@
         2113,
         2112,
         2110,
-        2109,
-        2108
+        2109
       ]
     }
   }
