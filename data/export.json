@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-11T02:06:19.685309+00:00",
-  "total_events": 2922,
-  "total_burned": 4285430870,
-  "total_minted": 4095686000,
+  "generated_at": "2026-06-11T02:35:37.168947+00:00",
+  "total_events": 2924,
+  "total_burned": 4290430870,
+  "total_minted": 4098936000,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 2924,
+      "event_title": "Pennsylvania Leaders Can Act Now to Save Households $841 Per Year by 2030",
+      "event_url": "https://www.nrdc.org/press-releases/pennsylvania-leaders-can-act-now-save-households-841-year-2030-new-analysis-finds",
+      "event_source": "NRDC News",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Energy cost reduction policy advances climate and economic justice with high feasibility. | The proposed policy action directly advances multiple SDGs by reducing energy poverty (SDG 7, 11), promoting sustainable consumption (SDG 12), and mitigating climate change (SDG 13). It aligns with UDHR principles of economic security and PB frameworks by reducing fossil fuel dependence. No negative aspects identified in the action itself.",
+      "tx_hash": "WLE8cU6HdPNvdWzsMWQjtcqprak7tUHgizMS1rgzvuG8eYmVez7dH1q9x7FSE6vdJ5wDA5Zb7SR9oYGbnTgzDj4",
+      "created_at": "2026-06-11T02:35:32.192733+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Pennsylvania leaders considering policy action to reduce household energy costs by $841 annually by 2030 through energy efficiency and clean energy measures\", \"affected_sdgs\": [7, 11, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2923,
+      "event_title": "What is the true cost of gold? Illegal gold mining devastates Amazon",
+      "event_url": "https://mastodon.social/@greenpeace/116727463219792607",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "MINT",
+      "amount_crbn": 3250000,
+      "final_score": -3.11,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The institutional action is the illegal mining activity, which causes environmental destruction and violates Indigenous rights. | The article highlights a severe environmental and human rights crisis caused by illegal gold mining in the Amazon, which directly violates Indigenous rights and undermines multiple SDGs. While Greenpeace's awareness campaign is a positive step toward",
+      "tx_hash": "3EkFfpsgBRGVMBiSz5pcrLW1JL5yxEJatsC3DkBLmgVZu3ckrojnPAc2J2XUXf7H5hbxe4V3nnRdaQrkKFk6WygU",
+      "created_at": "2026-06-11T02:35:32.101832+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Greenpeace International publishes an awareness campaign highlighting the environmental and social harms of illegal gold mining in the Amazon, including destruction of protected areas and threats to Indigenous Peoples.\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Illegal gold mining in the Amazon destroys nearly 100,000 hectares of protected areas, poisons rivers, and threatens the lives of Indigenous Peoples.\", \"affected_sdgs\": [12, 13, 14, 15], \"violated_rights\": [\"UNDRIP Article 26\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 2922,
       "event_title": "California Supreme Court declines to hear rooftop solar billing case",
@@ -64321,8 +64365,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 188725000
+        "count": 44,
+        "total_amount": 193725000
       },
       {
         "country": "France",
@@ -64362,14 +64406,14 @@
         "events": 31
       },
       {
+        "region": "Asia",
+        "burn_ratio": 0.267,
+        "events": 75
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.265,
         "events": 155
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.263,
-        "events": 76
       }
     ],
     "top_regions_destructive": [
@@ -64380,18 +64424,18 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.742,
-        "events": 186
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 0.737,
-        "events": 76
+        "mint_ratio": 0.738,
+        "events": 187
       },
       {
         "region": "Europe",
         "mint_ratio": 0.735,
         "events": 155
+      },
+      {
+        "region": "Asia",
+        "mint_ratio": 0.733,
+        "events": 75
       },
       {
         "region": "Africa",
@@ -64432,8 +64476,8 @@
       },
       {
         "date": "2026-06-11",
-        "net_minted": 28400000,
-        "net_burned": 15850000
+        "net_minted": 31650000,
+        "net_burned": 20850000
       }
     ],
     "event_of_the_day": {
@@ -64449,9 +64493,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 196,
+        "positive": 195,
         "negative": 437,
         "event_ids_positive": [
+          2924,
           2922,
           2921,
           2919,
@@ -64645,11 +64690,10 @@
           2200,
           2187,
           2186,
-          2177,
-          2167,
-          2166
+          2177
         ],
         "event_ids_negative": [
+          2923,
           2920,
           2918,
           2917,
@@ -65085,14 +65129,14 @@
           2174,
           2173,
           2172,
-          2171,
-          2168
+          2171
         ]
       },
       "UDHR": {
         "positive": 83,
         "negative": 326,
         "event_ids_positive": [
+          2924,
           2922,
           2915,
           2909,
@@ -65174,10 +65218,10 @@
           2200,
           2187,
           2186,
-          2177,
-          2167
+          2177
         ],
         "event_ids_negative": [
+          2923,
           2920,
           2918,
           2917,
@@ -65502,8 +65546,7 @@
           2174,
           2173,
           2172,
-          2171,
-          2168
+          2171
         ]
       },
       "ILO": {
@@ -65668,6 +65711,7 @@
           2212
         ],
         "event_ids_negative": [
+          2923,
           2894,
           2887,
           2879,
@@ -65753,8 +65797,7 @@
           2216,
           2198,
           2184,
-          2173,
-          2168
+          2173
         ]
       },
       "Animal": {
@@ -65886,6 +65929,7 @@
         "positive": 89,
         "negative": 120,
         "event_ids_positive": [
+          2924,
           2921,
           2919,
           2913,
@@ -65973,8 +66017,7 @@
           2227,
           2226,
           2214,
-          2212,
-          2166
+          2212
         ],
         "event_ids_negative": [
           2910,
@@ -66101,14 +66144,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 41.7,
-      "mainstream_pct": 58.3,
+      "niche_pct": 40.9,
+      "mainstream_pct": 59.1,
       "total_sources_used": 132,
-      "articles_processed": 756
+      "articles_processed": 753
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 756,
+      "total_events": 753,
       "pct": 1.2
     },
     "active_partners_7d": [],
@@ -66151,9 +66194,9 @@
       },
       {
         "name": "UN",
-        "count": 21,
+        "count": 20,
         "burn_count": 4,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           2847,
           2834,
@@ -66174,8 +66217,7 @@
           2295,
           2203,
           2175,
-          2172,
-          2168
+          2172
         ]
       },
       {
@@ -66259,9 +66301,10 @@
       {
         "name": "Energy",
         "count": 109,
-        "burn_count": 50,
-        "mint_count": 59,
+        "burn_count": 51,
+        "mint_count": 58,
         "event_ids": [
+          2924,
           2922,
           2921,
           2913,
@@ -66369,8 +66412,7 @@
           2184,
           2182,
           2173,
-          2172,
-          2168
+          2172
         ]
       },
       {
@@ -66537,9 +66579,9 @@
       },
       {
         "name": "Defense",
-        "count": 61,
+        "count": 60,
         "burn_count": 4,
-        "mint_count": 57,
+        "mint_count": 56,
         "event_ids": [
           2904,
           2903,
@@ -66600,16 +66642,16 @@
           2194,
           2184,
           2181,
-          2175,
-          2168
+          2175
         ]
       },
       {
         "name": "Tech",
-        "count": 30,
+        "count": 31,
         "burn_count": 17,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          2923,
           2918,
           2870,
           2868,
@@ -66735,24 +66777,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 252,
+      "total_burn": 251,
       "direct_action": {
-        "count": 179,
-        "pct": 71.0
+        "count": 178,
+        "pct": 70.9
       },
       "editorial_consciousness": {
         "count": 17,
-        "pct": 6.7
+        "pct": 6.8
       },
       "untyped": {
         "count": 56,
-        "pct": 22.2
+        "pct": 22.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 949,
+      "total_burn": 950,
       "direct_action": {
-        "count": 649,
+        "count": 650,
         "pct": 68.4
       },
       "editorial_consciousness": {
@@ -66765,24 +66807,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 504,
+      "total_mint": 502,
       "direct_action": {
         "count": 409,
-        "pct": 81.2
+        "pct": 81.5
       },
       "editorial_alarm": {
         "count": 28,
         "pct": 5.6
       },
       "untyped": {
-        "count": 67,
-        "pct": 13.3
+        "count": 65,
+        "pct": 12.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 1964,
+      "total_mint": 1965,
       "direct_action": {
-        "count": 1353,
+        "count": 1354,
         "pct": 68.9
       },
       "editorial_alarm": {
@@ -66795,8 +66837,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 239,
-      "institutional": 517,
+      "citizen": 238,
+      "institutional": 515,
       "citizen_ratio": 0.316,
       "daily": [
         {
@@ -66831,11 +66873,12 @@
         },
         {
           "date": "2026-06-11",
-          "citizen": 0,
-          "institutional": 11
+          "citizen": 1,
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
+        2923,
         2910,
         2907,
         2906,
@@ -67072,11 +67115,10 @@
         2193,
         2187,
         2178,
-        2176,
-        2167,
-        2166
+        2176
       ],
       "event_ids_institutional": [
+        2924,
         2922,
         2921,
         2920,
@@ -67590,10 +67632,7 @@
         2174,
         2173,
         2172,
-        2171,
-        2170,
-        2169,
-        2168
+        2171
       ]
     }
   }
