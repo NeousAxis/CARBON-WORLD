@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-11T00:34:38.201967+00:00",
-  "total_events": 2913,
-  "total_burned": 4274580870,
-  "total_minted": 4063986000,
+  "generated_at": "2026-06-11T01:06:14.394791+00:00",
+  "total_events": 2915,
+  "total_burned": 4274730870,
+  "total_minted": 4073486000,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 2915,
+      "event_title": "What you need to know about holiday pay in Norway",
+      "event_url": "https://www.thelocal.no/20240805/what-you-need-to-know-about-holiday-pay-in-norway",
+      "event_source": "The Local Norway (EN)",
+      "decision": "BURN",
+      "amount_crbn": 150000,
+      "final_score": 3.7,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Norway's holiday pay system supports labor rights and financial stability for workers. | The provision of holiday pay in Norway supports fair labor practices and financial security for workers, aligning with international labor rights and contributing to reduced inequalities.",
+      "tx_hash": "3cXo322EfKnwdaPx4h9Wfpvtw139dZyVcixSngbX786LQzuP3h6Bya3uZEcMPJyqgyZFY5AqAa2U7vSfM8BMNZm6",
+      "created_at": "2026-06-11T01:06:10.035543+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Norway",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Employees in Norway have a legal right to holiday pay, ensuring financial stability during leave.\", \"affected_sdgs\": [8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 2914,
+      "event_title": "Iran announces closure of Strait of Hormuz after US attacks",
+      "event_url": "https://www.france24.com/en/middle-east/20260610-middle-east-live-iran-announces-closure-of-strait-of-hormuz-after-us-attacks",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.87,
+      "confidence": 9,
+      "justification": "Semantic cache reuse (cosine=0.938) from event #2910",
+      "tx_hash": null,
+      "created_at": "2026-06-11T01:03:07.488434+00:00",
+      "embedding": null,
+      "reused_from_event_id": 2910,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 2913,
       "event_title": "Gamuda Renewables acquires interest in 450MW solar-plus-storage site in Victoria, Australia",
@@ -64123,8 +64167,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 195025000
+        "count": 42,
+        "total_amount": 188025000
       },
       {
         "country": "France",
@@ -64170,8 +64214,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.261,
-        "events": 153
+        "burn_ratio": 0.266,
+        "events": 154
       }
     ],
     "top_regions_destructive": [
@@ -64182,13 +64226,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.741,
-        "events": 185
+        "mint_ratio": 0.745,
+        "events": 184
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.739,
-        "events": 153
+        "mint_ratio": 0.734,
+        "events": 154
       },
       {
         "region": "Asia",
@@ -64235,7 +64279,7 @@
       {
         "date": "2026-06-11",
         "net_minted": 6200000,
-        "net_burned": 5000000
+        "net_burned": 5150000
       }
     ],
     "event_of_the_day": {
@@ -64254,6 +64298,7 @@
         "positive": 195,
         "negative": 431,
         "event_ids_positive": [
+          2915,
           2913,
           2909,
           2908,
@@ -64447,8 +64492,7 @@
           2167,
           2166,
           2165,
-          2160,
-          2159
+          2160
         ],
         "event_ids_negative": [
           2912,
@@ -64885,9 +64929,10 @@
         ]
       },
       "UDHR": {
-        "positive": 82,
+        "positive": 83,
         "negative": 322,
         "event_ids_positive": [
+          2915,
           2909,
           2908,
           2895,
@@ -65547,7 +65592,7 @@
         ]
       },
       "Animal": {
-        "positive": 57,
+        "positive": 56,
         "negative": 61,
         "event_ids_positive": [
           2906,
@@ -65605,8 +65650,7 @@
           2276,
           2247,
           2226,
-          2212,
-          2159
+          2212
         ],
         "event_ids_negative": [
           2907,
@@ -65673,7 +65717,7 @@
         ]
       },
       "PB": {
-        "positive": 88,
+        "positive": 87,
         "negative": 117,
         "event_ids_positive": [
           2913,
@@ -65762,8 +65806,7 @@
           2226,
           2214,
           2212,
-          2166,
-          2159
+          2166
         ],
         "event_ids_negative": [
           2910,
@@ -65887,9 +65930,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 44.0,
-      "mainstream_pct": 56.0,
-      "total_sources_used": 134,
+      "niche_pct": 43.6,
+      "mainstream_pct": 56.4,
+      "total_sources_used": 133,
       "articles_processed": 730
     },
     "cache_hit_rate_7d": {
@@ -66313,10 +66356,11 @@
       },
       {
         "name": "Finance",
-        "count": 58,
-        "burn_count": 20,
+        "count": 59,
+        "burn_count": 21,
         "mint_count": 38,
         "event_ids": [
+          2915,
           2908,
           2897,
           2890,
@@ -66517,9 +66561,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 930,
+      "total_burn": 931,
       "direct_action": {
-        "count": 645,
+        "count": 646,
         "pct": 69.4
       },
       "editorial_consciousness": {
@@ -66562,9 +66606,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 235,
-      "institutional": 495,
-      "citizen_ratio": 0.322,
+      "citizen": 234,
+      "institutional": 496,
+      "citizen_ratio": 0.321,
       "daily": [
         {
           "date": "2026-06-05",
@@ -66599,7 +66643,7 @@
         {
           "date": "2026-06-11",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -66836,10 +66880,10 @@
         2167,
         2166,
         2162,
-        2161,
-        2159
+        2161
       ],
       "event_ids_institutional": [
+        2915,
         2913,
         2912,
         2911,
