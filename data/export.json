@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-13T20:35:36.200172+00:00",
-  "total_events": 3173,
-  "total_burned": 4714480870,
+  "generated_at": "2026-06-13T21:05:49.741763+00:00",
+  "total_events": 3174,
+  "total_burned": 4721480870,
   "total_minted": 4403893289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3174,
+      "event_title": "Mexico: Authorities must guarantee the right to peaceful protest for families searching for the disappeared",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/06/mexico-las-autoridades-deben-garantizar-el-derecho-a-la-protesta-pacifica-de-familias-buscadoras/",
+      "event_source": "Amnesty International News",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": -0.78,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Amnesty International's call to protect peaceful protest rights supports justice and human rights. | The call by Amnesty International for the protection of peaceful protest rights aligns with the right to freedom of assembly and expression under the UDHR and SDG 16. However, the reported events suggest that these rights may have been undermined, which constitutes a violation of",
+      "tx_hash": "3u1BLNsaGLFHwPJdxpo6cV5hHGcVERrCkP7JSVrQJmmLCRbhnP7e8xZTSiFQEGUnTgQNptD8qEHrZrwjmidMHX6o",
+      "created_at": "2026-06-13T21:05:44.054685+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Mexico",
+      "region": "North America",
+      "administration": "Mexico-Morena",
+      "positive_aspects_json": "[{\"description\": \"Amnesty International calls for the protection of the right to peaceful protest for families of the disappeared.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Events during the mobilization suggest that the right to peaceful protest may have been violated or restricted.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3173,
       "event_title": "Amazon tadpoles already carry microplastics, study reveals",
@@ -69879,14 +69901,14 @@
         "events": 36
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.309,
+        "events": 165
+      },
+      {
         "region": "Asia",
         "burn_ratio": 0.308,
         "events": 65
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.305,
-        "events": 164
       },
       {
         "region": "Europe",
@@ -69911,14 +69933,14 @@
         "events": 33
       },
       {
-        "region": "North America",
-        "mint_ratio": 0.695,
-        "events": 164
-      },
-      {
         "region": "Asia",
         "mint_ratio": 0.692,
         "events": 65
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.691,
+        "events": 165
       }
     ],
     "supply_trend_7d": [
@@ -69955,7 +69977,7 @@
       {
         "date": "2026-06-13",
         "net_minted": 68860000,
-        "net_burned": 105475000
+        "net_burned": 112475000
       }
     ],
     "event_of_the_day": {
@@ -69971,9 +69993,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 205,
+        "positive": 206,
         "negative": 412,
         "event_ids_positive": [
+          3174,
           3172,
           3171,
           3166,
@@ -70596,9 +70619,10 @@
         ]
       },
       "UDHR": {
-        "positive": 81,
+        "positive": 82,
         "negative": 310,
         "event_ids_positive": [
+          3174,
           3150,
           3144,
           3141,
@@ -71558,11 +71582,11 @@
       "niche_pct": 46.5,
       "mainstream_pct": 53.5,
       "total_sources_used": 127,
-      "articles_processed": 680
+      "articles_processed": 681
     },
     "cache_hit_rate_7d": {
       "hits": 12,
-      "total_events": 680,
+      "total_events": 681,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -72159,10 +72183,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 230,
+      "total_burn": 231,
       "direct_action": {
-        "count": 190,
-        "pct": 82.6
+        "count": 191,
+        "pct": 82.7
       },
       "editorial_consciousness": {
         "count": 15,
@@ -72170,14 +72194,14 @@
       },
       "untyped": {
         "count": 25,
-        "pct": 10.9
+        "pct": 10.8
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1042,
+      "total_burn": 1043,
       "direct_action": {
-        "count": 732,
-        "pct": 70.2
+        "count": 733,
+        "pct": 70.3
       },
       "editorial_consciousness": {
         "count": 67,
@@ -72219,9 +72243,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 213,
+      "citizen": 214,
       "institutional": 467,
-      "citizen_ratio": 0.313,
+      "citizen_ratio": 0.314,
       "daily": [
         {
           "date": "2026-06-07",
@@ -72255,11 +72279,12 @@
         },
         {
           "date": "2026-06-13",
-          "citizen": 24,
+          "citizen": 25,
           "institutional": 37
         }
       ],
       "event_ids_citizen": [
+        3174,
         3173,
         3172,
         3167,
