@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-13T06:04:50.721876+00:00",
-  "total_events": 3122,
-  "total_burned": 4618705870,
-  "total_minted": 4357483289,
+  "generated_at": "2026-06-13T06:35:59.380929+00:00",
+  "total_events": 3124,
+  "total_burned": 4619205870,
+  "total_minted": 4357983289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3124,
+      "event_title": "Swiss to vote on whether to cap population at 10 million",
+      "event_url": "https://www.dw.com/en/swiss-to-vote-on-whether-to-cap-population-at-10-million/a-77492750?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.7,
+      "confidence": 8,
+      "justification": "Proposed population cap risks violating human rights and destabilizing society. | The referendum itself represents a democratic exercise in civic participation, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the proposed population cap risks violating fundamental human rights to freedom of movement and asylum, while also potentially destabilizing economic and social systems. The net ethical judgment is negative due to the high risk of rights violations and systemic harm",
+      "tx_hash": "3vvySsAop61GFhdy1LKpwgKRyXiTL2WMr9tVuDoehAjTsAe4JZ5hy9NTXPL1UCfJGXJ6W5ib8BbcCYKzwJ1bn4vv",
+      "created_at": "2026-06-13T06:35:54.346684+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Swiss voters will have the opportunity to participate in a democratic referendum on a major policy issue, exercising their right to civic engagement and self-determination\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The initiative proposes a population cap at 10 million, which could lead to restrictive immigration policies that may violate human rights and undermine international cooperation\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential economic and social disruptions from population caps could disproportionately affect labor markets, social services, and international relations\", \"affected_sdgs\": [8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3123,
+      "event_title": "Shared gardens, a 'way out' for residents of a working-class commune",
+      "event_url": "https://reporterre.net/Le-jardin-partage-une-porte-de-sortie-pour-les-habitants-d-une-commune-populaire",
+      "event_source": "Reporterre",
+      "decision": "BURN",
+      "amount_crbn": 500000,
+      "final_score": 6.27,
+      "confidence": 8,
+      "justification": "Community-driven urban agriculture project enhances social equity and sustainability. | The establishment of a shared garden in a working-class commune directly addresses multiple ethical frameworks by fostering community resilience, food sovereignty, and social equity. It aligns with SDGs 2, 3, 11, 12, and 15 while promoting UDHR principles of dignity and participation. No significant negative aspects are identified.",
+      "tx_hash": "4RT9bSGRp7dNztADGV5p1GoqjJz4yyzn3CC8j1KLg13wUa1c4B4KtSyesSNbMb4dc468y9Pc18cvtpkiFh2Qxu5o",
+      "created_at": "2026-06-13T06:35:54.248943+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Community-led shared garden initiative in a working-class commune providing social cohesion, food security, and empowerment for residents\", \"affected_sdgs\": [2, 3, 11, 12, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null
+    },
     {
       "id": 3122,
       "event_title": "Australia's AI access cut after Trump order",
@@ -68704,8 +68748,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 25,
-        "total_amount": 24205000
+        "count": 26,
+        "total_amount": 24705000
       },
       {
         "country": "Israel",
@@ -68725,6 +68769,11 @@
         "total_amount": 200850000
       },
       {
+        "country": "France",
+        "count": 10,
+        "total_amount": 21400000
+      },
+      {
         "country": "United Kingdom",
         "count": 10,
         "total_amount": 40700000
@@ -68738,11 +68787,6 @@
         "country": "Brazil",
         "count": 9,
         "total_amount": 52975000
-      },
-      {
-        "country": "France",
-        "count": 9,
-        "total_amount": 20900000
       }
     ],
     "top_regions_sustainable": [
@@ -68780,8 +68824,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.758,
-        "events": 157
+        "mint_ratio": 0.755,
+        "events": 159
       },
       {
         "region": "Asia",
@@ -68832,8 +68876,8 @@
       },
       {
         "date": "2026-06-13",
-        "net_minted": 22450000,
-        "net_burned": 13700000
+        "net_minted": 22950000,
+        "net_burned": 14200000
       }
     ],
     "event_of_the_day": {
@@ -68849,9 +68893,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 194,
-        "negative": 417,
+        "positive": 195,
+        "negative": 418,
         "event_ids_positive": [
+          3123,
           3118,
           3117,
           3113,
@@ -69048,6 +69093,7 @@
           2450
         ],
         "event_ids_negative": [
+          3124,
           3122,
           3121,
           3120,
@@ -69468,9 +69514,10 @@
         ]
       },
       "UDHR": {
-        "positive": 76,
-        "negative": 309,
+        "positive": 77,
+        "negative": 310,
         "event_ids_positive": [
+          3123,
           3113,
           3111,
           3101,
@@ -69549,6 +69596,7 @@
           2459
         ],
         "event_ids_negative": [
+          3124,
           3121,
           3120,
           3119,
@@ -69971,9 +70019,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 39,
+        "positive": 40,
         "negative": 86,
         "event_ids_positive": [
+          3123,
           3106,
           3092,
           3091,
@@ -70423,11 +70472,11 @@
       "niche_pct": 44.9,
       "mainstream_pct": 55.1,
       "total_sources_used": 127,
-      "articles_processed": 678
+      "articles_processed": 680
     },
     "cache_hit_rate_7d": {
       "hits": 12,
-      "total_events": 678,
+      "total_events": 680,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -70965,10 +71014,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 20,
-        "burn_count": 10,
+        "count": 21,
+        "burn_count": 11,
         "mint_count": 10,
         "event_ids": [
+          3123,
           3087,
           3009,
           2997,
@@ -71017,14 +71067,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 220,
+      "total_burn": 221,
       "direct_action": {
         "count": 177,
-        "pct": 80.5
+        "pct": 80.1
       },
       "editorial_consciousness": {
-        "count": 17,
-        "pct": 7.7
+        "count": 18,
+        "pct": 8.1
       },
       "untyped": {
         "count": 26,
@@ -71032,14 +71082,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1020,
+      "total_burn": 1021,
       "direct_action": {
         "count": 712,
-        "pct": 69.8
+        "pct": 69.7
       },
       "editorial_consciousness": {
-        "count": 65,
-        "pct": 6.4
+        "count": 66,
+        "pct": 6.5
       },
       "untyped": {
         "count": 243,
@@ -71047,10 +71097,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 458,
+      "total_mint": 459,
       "direct_action": {
-        "count": 394,
-        "pct": 86.0
+        "count": 395,
+        "pct": 86.1
       },
       "editorial_alarm": {
         "count": 23,
@@ -71058,13 +71108,13 @@
       },
       "untyped": {
         "count": 41,
-        "pct": 9.0
+        "pct": 8.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2094,
+      "total_mint": 2095,
       "direct_action": {
-        "count": 1477,
+        "count": 1478,
         "pct": 70.5
       },
       "editorial_alarm": {
@@ -71073,13 +71123,13 @@
       },
       "untyped": {
         "count": 487,
-        "pct": 23.3
+        "pct": 23.2
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 209,
+      "citizen": 211,
       "institutional": 469,
-      "citizen_ratio": 0.308,
+      "citizen_ratio": 0.31,
       "daily": [
         {
           "date": "2026-06-07",
@@ -71113,11 +71163,13 @@
         },
         {
           "date": "2026-06-13",
-          "citizen": 4,
+          "citizen": 6,
           "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        3124,
+        3123,
         3120,
         3118,
         3111,
