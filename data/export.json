@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-13T11:04:53.232715+00:00",
-  "total_events": 3144,
-  "total_burned": 4652955870,
-  "total_minted": 4371933289,
+  "generated_at": "2026-06-13T11:34:44.235962+00:00",
+  "total_events": 3146,
+  "total_burned": 4659955870,
+  "total_minted": 4376008289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3146,
+      "event_title": "Locations released for 18 community batteries in Perth, Bunbury",
+      "event_url": "https://www.abc.net.au/news/2026-06-13/locations-released-18-community-batteries-perth-bunbury-wa/106794450",
+      "event_source": "ABC News Australia",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.49,
+      "confidence": 8,
+      "justification": "Construction of 18 community batteries advances clean energy infrastructure with measurable climate and social benefits. | The construction of 18 community batteries in Perth and Bunbury represents a significant step toward decentralized renewable energy adoption, directly supporting SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action). The initiative enhances local energy resilience and citizen engagement, with no identified ethical violations. The primary concern is the lack of a le",
+      "tx_hash": "4XuVcSt1i345rN2afEDfKNokvJmwSNNbidFSEAE38pRjEiCejGkoMtKZofA3ewN3UWdf4BqyDaZXspGzUzUNGjJ1",
+      "created_at": "2026-06-13T11:34:39.446059+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Western Australia begins construction on 18 community batteries, advancing decentralized renewable energy storage infrastructure to support grid stability and reduce reliance on fossil fuels.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Community battery initiative empowers local energy resilience, fostering citizen participation in renewable energy transition and reducing energy poverty risks.\", \"affected_sdgs\": [7, 11, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 3145,
+      "event_title": "Namibia: Katima Flood-Affected Residents Face Eviction From Relocation Camps",
+      "event_url": "https://allafrica.com/stories/202606120423.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 4075000,
+      "final_score": -1.48,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Eviction without housing alternatives violates rights and exacerbates harm. | The eviction of flood-affected residents without housing alternatives represents a violation of basic rights and undermines efforts to ensure sustainable cities and communities. This action exacerbates poverty and health risks.",
+      "tx_hash": "3uF7eEv4CvH8VHMmRU8EjxnV3gaNUKeZwo3NtPcjMTfstUVER3NieEvtb2LXv4GEweFer26ceEdveZ3cKLATog6y",
+      "created_at": "2026-06-13T11:34:39.312666+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Namibia",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Flood-affected residents are being evicted from relocation camps without adequate housing alternatives.\", \"affected_sdgs\": [1, 3, 11], \"violated_rights\": [\"UDHR Article 12\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3144,
       "event_title": "Poland records biggest rise in Global Peace Index",
@@ -69178,8 +69222,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 107,
-        "total_amount": 307649000
+        "count": 106,
+        "total_amount": 307499000
       },
       {
         "country": "France",
@@ -69188,8 +69232,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 25,
-        "total_amount": 16705000
+        "count": 24,
+        "total_amount": 16005000
       },
       {
         "country": "Israel",
@@ -69219,31 +69263,31 @@
         "total_amount": 25700000
       },
       {
+        "country": "Australia",
+        "count": 9,
+        "total_amount": 41500000
+      },
+      {
         "country": "United Kingdom",
         "count": 9,
         "total_amount": 39200000
-      },
-      {
-        "country": "Brazil",
-        "count": 9,
-        "total_amount": 52975000
       }
     ],
     "top_regions_sustainable": [
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.429,
+        "events": 28
+      },
       {
         "region": "Latin America",
         "burn_ratio": 0.417,
         "events": 36
       },
       {
-        "region": "Oceania",
-        "burn_ratio": 0.407,
-        "events": 27
-      },
-      {
         "region": "North America",
-        "burn_ratio": 0.313,
-        "events": 166
+        "burn_ratio": 0.315,
+        "events": 165
       },
       {
         "region": "Asia",
@@ -69252,8 +69296,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.281,
-        "events": 32
+        "burn_ratio": 0.273,
+        "events": 33
       }
     ],
     "top_regions_destructive": [
@@ -69264,8 +69308,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.744,
-        "events": 160
+        "mint_ratio": 0.742,
+        "events": 159
+      },
+      {
+        "region": "Africa",
+        "mint_ratio": 0.727,
+        "events": 33
       },
       {
         "region": "Asia",
@@ -69273,14 +69322,9 @@
         "events": 64
       },
       {
-        "region": "Africa",
-        "mint_ratio": 0.719,
-        "events": 32
-      },
-      {
         "region": "North America",
-        "mint_ratio": 0.687,
-        "events": 166
+        "mint_ratio": 0.685,
+        "events": 165
       }
     ],
     "supply_trend_7d": [
@@ -69316,8 +69360,8 @@
       },
       {
         "date": "2026-06-13",
-        "net_minted": 36900000,
-        "net_burned": 43950000
+        "net_minted": 40975000,
+        "net_burned": 50950000
       }
     ],
     "event_of_the_day": {
@@ -69333,9 +69377,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 197,
-        "negative": 417,
+        "positive": 198,
+        "negative": 416,
         "event_ids_positive": [
+          3146,
           3144,
           3143,
           3141,
@@ -69535,6 +69580,7 @@
           2470
         ],
         "event_ids_negative": [
+          3145,
           3140,
           3136,
           3135,
@@ -69949,9 +69995,7 @@
           2468,
           2467,
           2466,
-          2464,
-          2463,
-          2462
+          2464
         ]
       },
       "UDHR": {
@@ -70041,6 +70085,7 @@
           2482
         ],
         "event_ids_negative": [
+          3145,
           3140,
           3136,
           3135,
@@ -70348,8 +70393,7 @@
           2476,
           2474,
           2468,
-          2464,
-          2463
+          2464
         ]
       },
       "ILO": {
@@ -70388,7 +70432,7 @@
       },
       "CRC": {
         "positive": 10,
-        "negative": 59,
+        "negative": 60,
         "event_ids_positive": [
           3098,
           3061,
@@ -70402,6 +70446,7 @@
           2491
         ],
         "event_ids_negative": [
+          3145,
           3120,
           3107,
           3099,
@@ -70706,9 +70751,10 @@
         ]
       },
       "PB": {
-        "positive": 93,
-        "negative": 97,
+        "positive": 94,
+        "negative": 96,
         "event_ids_positive": [
+          3146,
           3106,
           3105,
           3096,
@@ -70899,8 +70945,7 @@
           2479,
           2475,
           2468,
-          2466,
-          2462
+          2466
         ]
       }
     },
@@ -71055,10 +71100,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 97,
-        "burn_count": 54,
+        "count": 98,
+        "burn_count": 55,
         "mint_count": 43,
         "event_ids": [
+          3146,
           3125,
           3096,
           3094,
@@ -71160,10 +71206,12 @@
       },
       {
         "name": "Construction",
-        "count": 71,
-        "burn_count": 32,
-        "mint_count": 39,
+        "count": 73,
+        "burn_count": 33,
+        "mint_count": 40,
         "event_ids": [
+          3146,
+          3145,
           3116,
           3105,
           3093,
@@ -71487,10 +71535,11 @@
       },
       {
         "name": "Water",
-        "count": 15,
+        "count": 16,
         "burn_count": 7,
-        "mint_count": 8,
+        "mint_count": 9,
         "event_ids": [
+          3145,
           3093,
           2958,
           2950,
@@ -71510,10 +71559,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 222,
+      "total_burn": 223,
       "direct_action": {
-        "count": 181,
-        "pct": 81.5
+        "count": 182,
+        "pct": 81.6
       },
       "editorial_consciousness": {
         "count": 16,
@@ -71521,13 +71570,13 @@
       },
       "untyped": {
         "count": 25,
-        "pct": 11.3
+        "pct": 11.2
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1029,
+      "total_burn": 1030,
       "direct_action": {
-        "count": 720,
+        "count": 721,
         "pct": 70.0
       },
       "editorial_consciousness": {
@@ -71540,9 +71589,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 457,
+      "total_mint": 456,
       "direct_action": {
-        "count": 394,
+        "count": 393,
         "pct": 86.2
       },
       "editorial_alarm": {
@@ -71555,9 +71604,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2103,
+      "total_mint": 2104,
       "direct_action": {
-        "count": 1486,
+        "count": 1487,
         "pct": 70.7
       },
       "editorial_alarm": {
@@ -71566,13 +71615,13 @@
       },
       "untyped": {
         "count": 487,
-        "pct": 23.2
+        "pct": 23.1
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 210,
-      "institutional": 469,
-      "citizen_ratio": 0.309,
+      "citizen": 211,
+      "institutional": 468,
+      "citizen_ratio": 0.311,
       "daily": [
         {
           "date": "2026-06-07",
@@ -71606,11 +71655,12 @@
         },
         {
           "date": "2026-06-13",
-          "citizen": 9,
-          "institutional": 23
+          "citizen": 10,
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
+        3146,
         3134,
         3127,
         3126,
@@ -71823,6 +71873,7 @@
         2468
       ],
       "event_ids_institutional": [
+        3145,
         3144,
         3143,
         3141,
@@ -72289,9 +72340,7 @@
         2467,
         2466,
         2465,
-        2464,
-        2463,
-        2462
+        2464
       ]
     }
   }
