@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-14T03:34:33.899926+00:00",
-  "total_events": 3185,
+  "generated_at": "2026-06-14T04:05:13.730592+00:00",
+  "total_events": 3186,
   "total_burned": 4732180870,
-  "total_minted": 4420793289,
+  "total_minted": 4421493289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3186,
+      "event_title": "Swiss referendum on population cap",
+      "event_url": "https://www.tagesschau.de/ausland/europa/schweiz-volksabstimmung-einwanderung-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.06,
+      "confidence": 8,
+      "justification": "Both analysts agree on MINT due to risks to human rights and economic stability. | The proposed population cap initiative restricts fundamental rights to movement and labor, undermining SDG 8 (Decent Work) and SDG 10 (Reduced Inequalities). While framed as a national policy, it risks violating core UDHR and ILO labor standards by limiting economic participation and mobility. The potential systemic harm to public services and labor markets further exacerbates ethical concerns.",
+      "tx_hash": "poWSdswmgTkqbycnv1tAE3dfBbS5SRxBTz8FNHSLjE2RipmBFRrGFTyUppExCcJWWcW3pKbL63CtkbdifJYsohU",
+      "created_at": "2026-06-14T04:05:09.015546+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Swiss referendum proposes capping population at 10 million, which could restrict immigration and labor mobility, potentially violating labor rights and economic participation\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\", \"UDHR Article 13\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Opponents warn of negative impacts on healthcare and economy, indicating potential systemic harm to public services and labor markets\", \"affected_sdgs\": [3, 8], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3185,
       "event_title": "Tongaat Hulett business rescue: Brinkmanship on steroids, in service of a dubious Zimbabwean elite",
@@ -70085,8 +70107,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 26,
-        "total_amount": 17005000
+        "count": 27,
+        "total_amount": 17705000
       },
       {
         "country": "France",
@@ -70144,8 +70166,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.319,
-        "events": 163
+        "burn_ratio": 0.321,
+        "events": 162
       },
       {
         "region": "Asia",
@@ -70154,8 +70176,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.267,
-        "events": 161
+        "burn_ratio": 0.265,
+        "events": 162
       }
     ],
     "top_regions_destructive": [
@@ -70165,14 +70187,14 @@
         "events": 28
       },
       {
+        "region": "Europe",
+        "mint_ratio": 0.735,
+        "events": 162
+      },
+      {
         "region": "Africa",
         "mint_ratio": 0.735,
         "events": 34
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.733,
-        "events": 161
       },
       {
         "region": "Asia",
@@ -70181,8 +70203,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.681,
-        "events": 163
+        "mint_ratio": 0.679,
+        "events": 162
       }
     ],
     "supply_trend_7d": [
@@ -70218,7 +70240,7 @@
       },
       {
         "date": "2026-06-14",
-        "net_minted": 10100000,
+        "net_minted": 10800000,
         "net_burned": 10700000
       }
     ],
@@ -70447,6 +70469,7 @@
           2506
         ],
         "event_ids_negative": [
+          3186,
           3185,
           3182,
           3181,
@@ -70857,8 +70880,7 @@
           2511,
           2509,
           2505,
-          2504,
-          2503
+          2504
         ]
       },
       "UDHR": {
@@ -70949,6 +70971,7 @@
           2506
         ],
         "event_ids_negative": [
+          3186,
           3185,
           3182,
           3180,
@@ -71255,13 +71278,12 @@
           2511,
           2509,
           2505,
-          2504,
-          2503
+          2504
         ]
       },
       "ILO": {
         "positive": 13,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           3141,
           3111,
@@ -71278,6 +71300,7 @@
           2517
         ],
         "event_ids_negative": [
+          3186,
           3185,
           3161,
           3095,
@@ -71921,10 +71944,11 @@
       },
       {
         "name": "ILO",
-        "count": 5,
+        "count": 6,
         "burn_count": 3,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          3186,
           3161,
           2964,
           2955,
@@ -72477,10 +72501,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2127,
+      "total_mint": 2128,
       "direct_action": {
-        "count": 1509,
-        "pct": 70.9
+        "count": 1510,
+        "pct": 71.0
       },
       "editorial_alarm": {
         "count": 131,
@@ -72492,9 +72516,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 216,
-      "institutional": 467,
-      "citizen_ratio": 0.316,
+      "citizen": 217,
+      "institutional": 466,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-06-08",
@@ -72528,11 +72552,12 @@
         },
         {
           "date": "2026-06-14",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        3186,
         3185,
         3184,
         3183,
@@ -73216,8 +73241,7 @@
         2507,
         2506,
         2505,
-        2504,
-        2503
+        2504
       ]
     }
   }
