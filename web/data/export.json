@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-14T21:34:16.422936+00:00",
-  "total_events": 3222,
+  "generated_at": "2026-06-14T22:05:28.075135+00:00",
+  "total_events": 3223,
   "total_burned": 4803580870,
-  "total_minted": 4464593289,
+  "total_minted": 4464713289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3223,
+      "event_title": "Geneva police report no injuries after riot dispersal decision",
+      "event_url": "https://www.letemps.ch/articles/aucun-blesse-n-est-a-deplorer-a-l-heure-actuelle-communique-la-police-genevoise-a-l-issue-d-une-folle-journee",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": -1.1,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The institutional action (police dispersal) protected public safety and prevented further harm. | The police action to disperse the violent demonstration was a necessary measure to protect public safety and uphold order, but the initial violence and property damage represent a significant ethical concern.",
+      "tx_hash": "21dXbu5NDwHKdMLAahr3nqCrSLFaj8x8YvJZ8r7NuoeSZm1JrsQxg8hxFyKSd512QbzziohAX1ed9zHEk616ajJF",
+      "created_at": "2026-06-14T22:05:22.888237+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Geneva police dissolved a violent demonstration to prevent further harm and protect public safety.\", \"affected_sdgs\": [11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The demonstration involved acts of violence, including damage to property and attacks on security forces.\", \"affected_sdgs\": [11, 16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3222,
       "event_title": "Civil Records for Hundreds of Thousands of Lebanese Could Be Wiped Out By Israel’s Total War",
@@ -70899,8 +70921,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 29,
-        "total_amount": 20590000
+        "count": 30,
+        "total_amount": 20710000
       },
       {
         "country": "France",
@@ -70909,8 +70931,8 @@
       },
       {
         "country": "Israel",
-        "count": 20,
-        "total_amount": 131900000
+        "count": 19,
+        "total_amount": 123900000
       },
       {
         "country": "China",
@@ -70930,11 +70952,6 @@
         "total_amount": 64700000
       },
       {
-        "country": "Australia",
-        "count": 11,
-        "total_amount": 61350000
-      },
-      {
         "country": "United Kingdom",
         "count": 11,
         "total_amount": 51200000
@@ -70943,6 +70960,11 @@
         "country": "France",
         "count": 11,
         "total_amount": 27850000
+      },
+      {
+        "country": "Australia",
+        "count": 10,
+        "total_amount": 56350000
       }
     ],
     "top_regions_sustainable": [
@@ -70953,8 +70975,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.452,
-        "events": 31
+        "burn_ratio": 0.433,
+        "events": 30
       },
       {
         "region": "North America",
@@ -70976,12 +70998,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 29
+        "events": 27
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.724,
-        "events": 163
+        "mint_ratio": 0.726,
+        "events": 164
       },
       {
         "region": "Africa",
@@ -71032,7 +71054,7 @@
       },
       {
         "date": "2026-06-14",
-        "net_minted": 53900000,
+        "net_minted": 54020000,
         "net_burned": 82100000
       }
     ],
@@ -71049,8 +71071,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 208,
-        "negative": 402,
+        "positive": 207,
+        "negative": 401,
         "event_ids_positive": [
           3221,
           3220,
@@ -71258,10 +71280,10 @@
           2580,
           2569,
           2565,
-          2564,
-          2556
+          2564
         ],
         "event_ids_negative": [
+          3223,
           3222,
           3219,
           3218,
@@ -71661,14 +71683,12 @@
           2561,
           2560,
           2559,
-          2558,
-          2557,
-          2555
+          2558
         ]
       },
       "UDHR": {
         "positive": 82,
-        "negative": 301,
+        "negative": 300,
         "event_ids_positive": [
           3220,
           3214,
@@ -71754,6 +71774,7 @@
           2582
         ],
         "event_ids_negative": [
+          3223,
           3222,
           3219,
           3217,
@@ -72052,9 +72073,7 @@
           2562,
           2561,
           2560,
-          2559,
-          2557,
-          2555
+          2559
         ]
       },
       "ILO": {
@@ -72419,7 +72438,7 @@
         ]
       },
       "PB": {
-        "positive": 104,
+        "positive": 103,
         "negative": 95,
         "event_ids_positive": [
           3221,
@@ -72524,8 +72543,7 @@
           2583,
           2580,
           2569,
-          2564,
-          2556
+          2564
         ],
         "event_ids_negative": [
           3219,
@@ -72630,11 +72648,11 @@
       "niche_pct": 48.0,
       "mainstream_pct": 52.0,
       "total_sources_used": 127,
-      "articles_processed": 668
+      "articles_processed": 666
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 668,
+      "total_events": 666,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -73030,9 +73048,9 @@
       },
       {
         "name": "Defense",
-        "count": 50,
+        "count": 48,
         "burn_count": 3,
-        "mint_count": 47,
+        "mint_count": 45,
         "event_ids": [
           3202,
           3180,
@@ -73081,9 +73099,7 @@
           2632,
           2603,
           2572,
-          2560,
-          2557,
-          2555
+          2560
         ]
       },
       {
@@ -73199,8 +73215,8 @@
       },
       {
         "name": "Agriculture",
-        "count": 14,
-        "burn_count": 8,
+        "count": 13,
+        "burn_count": 7,
         "mint_count": 6,
         "event_ids": [
           3123,
@@ -73215,16 +73231,15 @@
           2680,
           2649,
           2642,
-          2577,
-          2556
+          2577
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 236,
+      "total_burn": 235,
       "direct_action": {
-        "count": 192,
-        "pct": 81.4
+        "count": 191,
+        "pct": 81.3
       },
       "editorial_consciousness": {
         "count": 16,
@@ -73251,9 +73266,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 432,
+      "total_mint": 431,
       "direct_action": {
-        "count": 382,
+        "count": 381,
         "pct": 88.4
       },
       "editorial_alarm": {
@@ -73262,13 +73277,13 @@
       },
       "untyped": {
         "count": 30,
-        "pct": 6.9
+        "pct": 7.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2148,
+      "total_mint": 2149,
       "direct_action": {
-        "count": 1528,
+        "count": 1529,
         "pct": 71.1
       },
       "editorial_alarm": {
@@ -73282,8 +73297,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 219,
-      "institutional": 449,
-      "citizen_ratio": 0.328,
+      "institutional": 447,
+      "citizen_ratio": 0.329,
       "daily": [
         {
           "date": "2026-06-08",
@@ -73318,7 +73333,7 @@
         {
           "date": "2026-06-14",
           "citizen": 22,
-          "institutional": 22
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -73543,6 +73558,7 @@
         2562
       ],
       "event_ids_institutional": [
+        3223,
         3222,
         3220,
         3218,
@@ -73988,10 +74004,7 @@
         2561,
         2560,
         2559,
-        2558,
-        2557,
-        2556,
-        2555
+        2558
       ]
     }
   }
