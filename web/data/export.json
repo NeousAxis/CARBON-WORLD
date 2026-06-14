@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-14T09:35:34.367608+00:00",
-  "total_events": 3196,
-  "total_burned": 4750730870,
-  "total_minted": 4423543289,
+  "generated_at": "2026-06-14T10:05:29.159443+00:00",
+  "total_events": 3198,
+  "total_burned": 4751230870,
+  "total_minted": 4424043289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3198,
+      "event_title": "Swiss vote on divisive anti-immigration proposal",
+      "event_url": "https://www.thelocal.ch/20260614/swiss-head-to-polls-in-divisive-anti-immigration-vote",
+      "event_source": "The Local Switzerland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.72,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; proposals violate human rights despite democratic process. | The Swiss referendum represents a democratic exercise but centers on a proposal that risks violating fundamental human rights and labor standards. While the process itself aligns with SDG 16, the content of the anti-immigration measure undermines core principles of freedom of movement, asylum, and labor mobility, posing significant ethical concerns.",
+      "tx_hash": "4FxS4tmMRovifkwHoQgMCep5W6Sw4o4J8VBfkeeaDa6jPKsoRkdWK6n1mGNZdbVRhmnRGULQibyftpSVozFeBmgd",
+      "created_at": "2026-06-14T10:05:24.217723+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Swiss voters are given a direct democratic mechanism to participate in national decision-making on immigration policy, exercising civic rights under SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The anti-immigration proposal seeks to cap population growth, which could violate UDHR Article 13 (freedom of movement) and Article 14 (right to seek asylum), as well as UNDRIP principles by potentially excluding or restricting migrant communities.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 14\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"The proposal may undermine ILO Core Labor Standards by restricting labor mobility and potentially creating labor shortages in key sectors, affecting SDG 8 (Decent Work and Economic Growth).\", \"affected_sdgs\": [8], \"violated_rights\": [\"ILO Freedom of Association\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3197,
+      "event_title": "STAT+: FDA approves Sanofi diabetes drug for children with stage 3 diabetes",
+      "event_url": "https://www.statnews.com/2026/06/13/teplizumab-tzield-sanofi-fda-approval-children-stage-3-diabetes/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "BURN",
+      "amount_crbn": 500000,
+      "final_score": 6.04,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] FDA approval advances child health and institutional accountability. | The FDA's approval of teplizumab for pediatric diabetes represents a clear positive action, directly advancing child health (SDG 3) and reinforcing institutional accountability (SDG 16). The resolution of prior disputes underscores the system's capacity to correct course, though the magnitude is tempered b",
+      "tx_hash": "26uQKrJvPFmPWFLnsDk9bsUx6nRoYMjCtPjxi3MzoBkS9ScKhLfvKSTT4xFhyzL7KHH2rshjFqhEmtEy3mbZauB7",
+      "created_at": "2026-06-14T10:05:24.103187+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FDA approval of Sanofi's diabetes drug (teplizumab) for children with stage 3 diabetes, expanding treatment access and improving pediatric healthcare outcomes\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Regulatory action addressing a previously disputed drug, demonstrating institutional resolution of scientific and administrative conflicts\", \"affected_sdgs\": [3, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3196,
       "event_title": "Lyhanna case: ‘At this stage, no failures of the Ministry of National Education have been detected,’ defends Édouard Geffray",
@@ -70322,18 +70366,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 102,
-        "total_amount": 313415000
+        "count": 100,
+        "total_amount": 303765000
+      },
+      {
+        "country": "Switzerland",
+        "count": 28,
+        "total_amount": 18205000
       },
       {
         "country": "France",
         "count": 28,
         "total_amount": 13485000
-      },
-      {
-        "country": "Switzerland",
-        "count": 27,
-        "total_amount": 17705000
       },
       {
         "country": "Israel",
@@ -70349,8 +70393,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 46,
-        "total_amount": 203350000
+        "count": 47,
+        "total_amount": 203850000
       },
       {
         "country": "European Union",
@@ -70386,8 +70430,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.321,
-        "events": 159
+        "burn_ratio": 0.331,
+        "events": 157
       },
       {
         "region": "Asia",
@@ -70396,8 +70440,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.268,
-        "events": 164
+        "burn_ratio": 0.267,
+        "events": 165
       }
     ],
     "top_regions_destructive": [
@@ -70413,8 +70457,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.732,
-        "events": 164
+        "mint_ratio": 0.733,
+        "events": 165
       },
       {
         "region": "Asia",
@@ -70423,8 +70467,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.679,
-        "events": 159
+        "mint_ratio": 0.669,
+        "events": 157
       }
     ],
     "supply_trend_7d": [
@@ -70460,8 +70504,8 @@
       },
       {
         "date": "2026-06-14",
-        "net_minted": 12850000,
-        "net_burned": 29250000
+        "net_minted": 13350000,
+        "net_burned": 29750000
       }
     ],
     "event_of_the_day": {
@@ -70478,8 +70522,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 206,
-        "negative": 409,
+        "negative": 407,
         "event_ids_positive": [
+          3197,
           3195,
           3194,
           3193,
@@ -70684,10 +70729,10 @@
           2534,
           2533,
           2528,
-          2524,
-          2521
+          2524
         ],
         "event_ids_negative": [
+          3198,
           3196,
           3192,
           3190,
@@ -71093,16 +71138,14 @@
           2529,
           2527,
           2526,
-          2525,
-          2523,
-          2522,
-          2520
+          2525
         ]
       },
       "UDHR": {
         "positive": 79,
-        "negative": 306,
+        "negative": 305,
         "event_ids_positive": [
+          3197,
           3193,
           3188,
           3187,
@@ -71180,10 +71223,10 @@
           2582,
           2546,
           2544,
-          2524,
-          2521
+          2524
         ],
         "event_ids_negative": [
+          3198,
           3196,
           3192,
           3190,
@@ -71487,14 +71530,12 @@
           2529,
           2527,
           2526,
-          2525,
-          2523,
-          2522
+          2525
         ]
       },
       "ILO": {
         "positive": 12,
-        "negative": 15,
+        "negative": 16,
         "event_ids_positive": [
           3141,
           3111,
@@ -71510,6 +71551,7 @@
           2598
         ],
         "event_ids_negative": [
+          3198,
           3186,
           3185,
           3161,
@@ -71529,7 +71571,7 @@
       },
       "CRC": {
         "positive": 11,
-        "negative": 62,
+        "negative": 61,
         "event_ids_positive": [
           3187,
           3150,
@@ -71604,13 +71646,12 @@
           2550,
           2536,
           2532,
-          2525,
-          2523
+          2525
         ]
       },
       "UNDRIP": {
         "positive": 46,
-        "negative": 82,
+        "negative": 83,
         "event_ids_positive": [
           3195,
           3184,
@@ -71660,6 +71701,7 @@
           2528
         ],
         "event_ids_negative": [
+          3198,
           3177,
           3158,
           3149,
@@ -71746,7 +71788,7 @@
       },
       "Animal": {
         "positive": 57,
-        "negative": 44,
+        "negative": 43,
         "event_ids_positive": [
           3194,
           3184,
@@ -71849,8 +71891,7 @@
           2562,
           2552,
           2531,
-          2527,
-          2520
+          2527
         ]
       },
       "PB": {
@@ -72063,11 +72104,11 @@
       "niche_pct": 47.7,
       "mainstream_pct": 52.3,
       "total_sources_used": 128,
-      "articles_processed": 677
+      "articles_processed": 675
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 677,
+      "total_events": 675,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -72388,9 +72429,9 @@
       },
       {
         "name": "Construction",
-        "count": 67,
+        "count": 66,
         "burn_count": 33,
-        "mint_count": 34,
+        "mint_count": 33,
         "event_ids": [
           3165,
           3149,
@@ -72457,8 +72498,7 @@
           2578,
           2575,
           2569,
-          2534,
-          2523
+          2534
         ]
       },
       {
@@ -72675,9 +72715,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1056,
+      "total_burn": 1057,
       "direct_action": {
-        "count": 741,
+        "count": 742,
         "pct": 70.2
       },
       "editorial_consciousness": {
@@ -72690,14 +72730,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 442,
+      "total_mint": 440,
       "direct_action": {
         "count": 387,
-        "pct": 87.6
+        "pct": 88.0
       },
       "editorial_alarm": {
-        "count": 22,
-        "pct": 5.0
+        "count": 20,
+        "pct": 4.5
       },
       "untyped": {
         "count": 33,
@@ -72705,9 +72745,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2132,
+      "total_mint": 2133,
       "direct_action": {
-        "count": 1513,
+        "count": 1514,
         "pct": 71.0
       },
       "editorial_alarm": {
@@ -72720,8 +72760,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 219,
-      "institutional": 458,
+      "citizen": 218,
+      "institutional": 457,
       "citizen_ratio": 0.323,
       "daily": [
         {
@@ -72756,11 +72796,12 @@
         },
         {
           "date": "2026-06-14",
-          "citizen": 10,
-          "institutional": 8
+          "citizen": 11,
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
+        3198,
         3195,
         3190,
         3189,
@@ -72977,11 +73018,10 @@
         2532,
         2528,
         2527,
-        2524,
-        2523,
-        2520
+        2524
       ],
       "event_ids_institutional": [
+        3197,
         3196,
         3194,
         3193,
@@ -73437,9 +73477,7 @@
         2530,
         2529,
         2526,
-        2525,
-        2522,
-        2521
+        2525
       ]
     }
   }
