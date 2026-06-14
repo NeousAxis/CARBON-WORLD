@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-14T22:05:28.075135+00:00",
-  "total_events": 3223,
+  "generated_at": "2026-06-14T23:04:28.090787+00:00",
+  "total_events": 3224,
   "total_burned": 4803580870,
-  "total_minted": 4464713289,
+  "total_minted": 4464863289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3224,
+      "event_title": "Concerns new BHP agreement 'locks in' basin water extraction",
+      "event_url": "https://www.abc.net.au/news/2026-06-15/concerns-over-impacts-on-water-extraction-new-bhp-agreement/106787780",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.22,
+      "confidence": 8,
+      "justification": "Agreement locks in harmful water extraction despite stricter regulations, outweighing marginal environmental gains. | The stricter regulations imposed by the SA government represent a positive step toward environmental protection and align with Indigenous rights frameworks. However, the agreement's continuation of water extraction from a critical basin undermines these gains, particularly for First Nations communities and long-term ecological sustainability.",
+      "tx_hash": "3WGfNCGJ7ngP9Gtv2mmqvtURwhRPsyFFBeeqj4WfKiU9qw7Vvptio7uM6G5mCWb57H1q9vuxd6gjgPwLARXwn6p1",
+      "created_at": "2026-06-14T23:04:23.213066+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"South Australian government imposes stricter environmental regulations on BHP's mining agreement, potentially reducing water extraction impacts on the Great Artesian Basin\", \"affected_sdgs\": [6, 12, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"New BHP agreement 'locks in' continued water extraction from the Great Artesian Basin despite environmental and First Nations concerns\", \"affected_sdgs\": [6, 13, 15], \"violated_rights\": [\"UNDRIP Article 29\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3223,
       "event_title": "Geneva police report no injuries after riot dispersal decision",
@@ -70930,14 +70952,14 @@
         "total_amount": 13835000
       },
       {
-        "country": "Israel",
-        "count": 19,
-        "total_amount": 123900000
-      },
-      {
         "country": "China",
         "count": 18,
         "total_amount": 44250000
+      },
+      {
+        "country": "Israel",
+        "count": 18,
+        "total_amount": 122400000
       }
     ],
     "top_countries_burn": [
@@ -70975,8 +70997,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.433,
-        "events": 30
+        "burn_ratio": 0.419,
+        "events": 31
       },
       {
         "region": "North America",
@@ -70998,7 +71020,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 27
+        "events": 26
       },
       {
         "region": "Europe",
@@ -71054,7 +71076,7 @@
       },
       {
         "date": "2026-06-14",
-        "net_minted": 54020000,
+        "net_minted": 54170000,
         "net_burned": 82100000
       }
     ],
@@ -71072,7 +71094,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 207,
-        "negative": 401,
+        "negative": 399,
         "event_ids_positive": [
           3221,
           3220,
@@ -71283,6 +71305,7 @@
           2564
         ],
         "event_ids_negative": [
+          3224,
           3223,
           3222,
           3219,
@@ -71680,15 +71703,12 @@
           2566,
           2563,
           2562,
-          2561,
-          2560,
-          2559,
-          2558
+          2561
         ]
       },
       "UDHR": {
         "positive": 82,
-        "negative": 300,
+        "negative": 299,
         "event_ids_positive": [
           3220,
           3214,
@@ -71774,6 +71794,7 @@
           2582
         ],
         "event_ids_negative": [
+          3224,
           3223,
           3222,
           3219,
@@ -72071,9 +72092,7 @@
           2568,
           2563,
           2562,
-          2561,
-          2560,
-          2559
+          2561
         ]
       },
       "ILO": {
@@ -72115,7 +72134,7 @@
       },
       "CRC": {
         "positive": 11,
-        "negative": 59,
+        "negative": 58,
         "event_ids_positive": [
           3220,
           3187,
@@ -72187,13 +72206,12 @@
           2639,
           2636,
           2625,
-          2563,
-          2560
+          2563
         ]
       },
       "UNDRIP": {
         "positive": 46,
-        "negative": 85,
+        "negative": 86,
         "event_ids_positive": [
           3221,
           3205,
@@ -72243,6 +72261,7 @@
           2565
         ],
         "event_ids_negative": [
+          3224,
           3219,
           3216,
           3209,
@@ -72648,11 +72667,11 @@
       "niche_pct": 48.0,
       "mainstream_pct": 52.0,
       "total_sources_used": 127,
-      "articles_processed": 666
+      "articles_processed": 664
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 666,
+      "total_events": 664,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -73048,9 +73067,9 @@
       },
       {
         "name": "Defense",
-        "count": 48,
+        "count": 47,
         "burn_count": 3,
-        "mint_count": 45,
+        "mint_count": 44,
         "event_ids": [
           3202,
           3180,
@@ -73098,8 +73117,7 @@
           2657,
           2632,
           2603,
-          2572,
-          2560
+          2572
         ]
       },
       {
@@ -73151,9 +73169,9 @@
       },
       {
         "name": "Transport",
-        "count": 31,
+        "count": 30,
         "burn_count": 20,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           3209,
           3193,
@@ -73184,8 +73202,7 @@
           2617,
           2609,
           2594,
-          2571,
-          2558
+          2571
         ]
       },
       {
@@ -73266,14 +73283,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 431,
+      "total_mint": 429,
       "direct_action": {
-        "count": 381,
-        "pct": 88.4
+        "count": 379,
+        "pct": 88.3
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 4.6
+        "pct": 4.7
       },
       "untyped": {
         "count": 30,
@@ -73281,10 +73298,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2149,
+      "total_mint": 2150,
       "direct_action": {
-        "count": 1529,
-        "pct": 71.1
+        "count": 1530,
+        "pct": 71.2
       },
       "editorial_alarm": {
         "count": 133,
@@ -73296,9 +73313,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 219,
-      "institutional": 447,
-      "citizen_ratio": 0.329,
+      "citizen": 220,
+      "institutional": 444,
+      "citizen_ratio": 0.331,
       "daily": [
         {
           "date": "2026-06-08",
@@ -73332,11 +73349,12 @@
         },
         {
           "date": "2026-06-14",
-          "citizen": 22,
+          "citizen": 23,
           "institutional": 23
         }
       ],
       "event_ids_citizen": [
+        3224,
         3221,
         3219,
         3216,
@@ -74001,10 +74019,7 @@
         2567,
         2564,
         2563,
-        2561,
-        2560,
-        2559,
-        2558
+        2561
       ]
     }
   }
