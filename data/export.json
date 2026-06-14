@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-14T15:34:37.363181+00:00",
-  "total_events": 3211,
+  "generated_at": "2026-06-14T16:04:16.738737+00:00",
+  "total_events": 3212,
   "total_burned": 4773230870,
-  "total_minted": 4454243289,
+  "total_minted": 4454393289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3212,
+      "event_title": "Geneva Allows Shops to Open Two Sundays a Year",
+      "event_url": "https://www.letemps.ch/articles/geneve-offre-deux-ouvertures-le-dimanche-aux-commerces-et-une-victoire-de-prestige-a-la-droite",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.88,
+      "confidence": 8,
+      "justification": "Geneva's Sunday commerce expansion prioritizes economic interests over labor rights and sustainability. | The decision reflects a trade-off between economic competitiveness and labor rights, with a moderate positive impact on local commerce but significant ethical costs to workers' well-being and environmental sustainability. The net effect leans negative due to the violation of fundamental labor protections and potential long-term harm to sustainable development.",
+      "tx_hash": "2nFnXyXUkKYKHHbgvDsnYsRCfZ9jp1CtS7XsE25YuyGbcHFUguJr9ujoottAwwU1JEa5iBuoz88Azq6ZxafVAPdT",
+      "created_at": "2026-06-14T16:04:12.613173+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Geneva voters approved a measure allowing shops to open two Sundays per year, aligning with practices in other Swiss cantons and addressing a perceived competitive disadvantage for local commerce.\", \"affected_sdgs\": [8, 11], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The measure prioritizes commercial interests over workers' right to rest and family time, undermining labor protections and potentially increasing exploitation in the retail sector.\", \"affected_sdgs\": [8], \"violated_rights\": [\"UDHR Article 24\", \"ILO Forced Labor Convention\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Expanding Sunday commerce may contribute to overconsumption and environmental strain, conflicting with sustainable consumption goals.\", \"affected_sdgs\": [12, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3211,
       "event_title": "Three housing initiatives rejected in Zurich, and other results from German-speaking Switzerland",
@@ -70656,14 +70678,14 @@
         "total_amount": 290765000
       },
       {
+        "country": "Switzerland",
+        "count": 29,
+        "total_amount": 19240000
+      },
+      {
         "country": "France",
         "count": 29,
         "total_amount": 13985000
-      },
-      {
-        "country": "Switzerland",
-        "count": 28,
-        "total_amount": 19090000
       },
       {
         "country": "Israel",
@@ -70679,8 +70701,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 46,
-        "total_amount": 198850000
+        "count": 45,
+        "total_amount": 196275000
       },
       {
         "country": "European Union",
@@ -70716,8 +70738,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.333,
-        "events": 153
+        "burn_ratio": 0.329,
+        "events": 152
       },
       {
         "region": "Asia",
@@ -70726,8 +70748,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.273,
-        "events": 165
+        "burn_ratio": 0.271,
+        "events": 166
       }
     ],
     "top_regions_destructive": [
@@ -70743,8 +70765,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.727,
-        "events": 165
+        "mint_ratio": 0.729,
+        "events": 166
       },
       {
         "region": "Asia",
@@ -70753,8 +70775,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.667,
-        "events": 153
+        "mint_ratio": 0.671,
+        "events": 152
       }
     ],
     "supply_trend_7d": [
@@ -70790,7 +70812,7 @@
       },
       {
         "date": "2026-06-14",
-        "net_minted": 43550000,
+        "net_minted": 43700000,
         "net_burned": 51750000
       }
     ],
@@ -70807,8 +70829,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 206,
-        "negative": 404,
+        "positive": 204,
+        "negative": 405,
         "event_ids_positive": [
           3208,
           3206,
@@ -71013,11 +71035,10 @@
           2565,
           2564,
           2556,
-          2546,
-          2544,
-          2543
+          2546
         ],
         "event_ids_negative": [
+          3212,
           3211,
           3210,
           3209,
@@ -71425,8 +71446,8 @@
         ]
       },
       "UDHR": {
-        "positive": 81,
-        "negative": 303,
+        "positive": 80,
+        "negative": 304,
         "event_ids_positive": [
           3208,
           3206,
@@ -71507,10 +71528,10 @@
           2598,
           2597,
           2582,
-          2546,
-          2544
+          2546
         ],
         "event_ids_negative": [
+          3212,
           3210,
           3209,
           3207,
@@ -71818,7 +71839,7 @@
       },
       "ILO": {
         "positive": 12,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [
           3141,
           3111,
@@ -71834,6 +71855,7 @@
           2598
         ],
         "event_ids_negative": [
+          3212,
           3198,
           3186,
           3185,
@@ -71932,7 +71954,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 46,
+        "positive": 45,
         "negative": 84,
         "event_ids_positive": [
           3205,
@@ -71979,8 +72001,7 @@
           2596,
           2591,
           2588,
-          2565,
-          2543
+          2565
         ],
         "event_ids_negative": [
           3209,
@@ -72070,7 +72091,7 @@
         ]
       },
       "Animal": {
-        "positive": 57,
+        "positive": 56,
         "negative": 41,
         "event_ids_positive": [
           3201,
@@ -72128,8 +72149,7 @@
           2596,
           2584,
           2580,
-          2564,
-          2543
+          2564
         ],
         "event_ids_negative": [
           3173,
@@ -72176,8 +72196,8 @@
         ]
       },
       "PB": {
-        "positive": 103,
-        "negative": 92,
+        "positive": 102,
+        "negative": 93,
         "event_ids_positive": [
           3201,
           3194,
@@ -72280,10 +72300,10 @@
           2580,
           2569,
           2564,
-          2556,
-          2543
+          2556
         ],
         "event_ids_negative": [
+          3212,
           3181,
           3178,
           3173,
@@ -72380,14 +72400,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 47.2,
-      "mainstream_pct": 52.8,
+      "niche_pct": 48.0,
+      "mainstream_pct": 52.0,
       "total_sources_used": 127,
-      "articles_processed": 669
+      "articles_processed": 668
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 669,
+      "total_events": 668,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -72634,8 +72654,8 @@
       },
       {
         "name": "Finance",
-        "count": 68,
-        "burn_count": 31,
+        "count": 67,
+        "burn_count": 30,
         "mint_count": 37,
         "event_ids": [
           3211,
@@ -72704,8 +72724,7 @@
           2617,
           2606,
           2597,
-          2591,
-          2544
+          2591
         ]
       },
       {
@@ -72978,18 +72997,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 235,
+      "total_burn": 233,
       "direct_action": {
-        "count": 190,
-        "pct": 80.9
+        "count": 189,
+        "pct": 81.1
       },
       "editorial_consciousness": {
-        "count": 16,
-        "pct": 6.8
+        "count": 15,
+        "pct": 6.4
       },
       "untyped": {
         "count": 29,
-        "pct": 12.3
+        "pct": 12.4
       }
     },
     "burn_composition_all_time": {
@@ -73008,9 +73027,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 434,
+      "total_mint": 435,
       "direct_action": {
-        "count": 385,
+        "count": 386,
         "pct": 88.7
       },
       "editorial_alarm": {
@@ -73023,9 +73042,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2142,
+      "total_mint": 2143,
       "direct_action": {
-        "count": 1523,
+        "count": 1524,
         "pct": 71.1
       },
       "editorial_alarm": {
@@ -73038,9 +73057,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 218,
+      "citizen": 217,
       "institutional": 451,
-      "citizen_ratio": 0.326,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-06-08",
@@ -73075,7 +73094,7 @@
         {
           "date": "2026-06-14",
           "citizen": 18,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -73295,10 +73314,10 @@
         2565,
         2562,
         2554,
-        2549,
-        2543
+        2549
       ],
       "event_ids_institutional": [
+        3212,
         3208,
         3206,
         3203,
@@ -73748,8 +73767,7 @@
         2548,
         2547,
         2546,
-        2545,
-        2544
+        2545
       ]
     }
   }
