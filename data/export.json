@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-15T08:34:23.253030+00:00",
-  "total_events": 3246,
-  "total_burned": 4858830870,
+  "generated_at": "2026-06-15T09:03:45.940044+00:00",
+  "total_events": 3247,
+  "total_burned": 4863830870,
   "total_minted": 4483458289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3247,
+      "event_title": "Factbox-From Australia to Europe, countries move to curb children's social media access",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/factbox-australia-europe-countries-move-curb-childrens-social-media-access-0",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.09,
+      "confidence": 8,
+      "justification": "Australia's ban protects children's rights and health, setting a global precedent. | The ban directly advances child protection by restricting harmful digital environments, aligning with multiple SDGs and the CRC. It sets a global precedent for safeguarding children's mental health and safety online, with no identified negative ethical aspects in this action.",
+      "tx_hash": "2hVvAqSJ8jh83execuXGRd9FEdBpzvHmAzosb77Foi2x7EHtSkZm23ayAMwWd14csjGaCLor6bQHNNDyWiBhdxmx",
+      "created_at": "2026-06-15T09:03:41.219738+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Australia bans social media for children under 16, blocking access to major platforms including TikTok, YouTube, Instagram, and Facebook to protect children's health and safety\", \"affected_sdgs\": [3, 4, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3246,
       "event_title": "Opposition to reversible hydroelectric plant in Sierra de Montánchez",
@@ -71458,6 +71480,11 @@
         "total_amount": 64700000
       },
       {
+        "country": "Australia",
+        "count": 11,
+        "total_amount": 61350000
+      },
+      {
         "country": "United Kingdom",
         "count": 11,
         "total_amount": 51200000
@@ -71466,11 +71493,6 @@
         "country": "France",
         "count": 11,
         "total_amount": 27850000
-      },
-      {
-        "country": "Australia",
-        "count": 10,
-        "total_amount": 56350000
       }
     ],
     "top_regions_sustainable": [
@@ -71481,8 +71503,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.452,
-        "events": 31
+        "burn_ratio": 0.469,
+        "events": 32
       },
       {
         "region": "Asia",
@@ -71496,8 +71518,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.277,
-        "events": 166
+        "burn_ratio": 0.279,
+        "events": 165
       }
     ],
     "top_regions_destructive": [
@@ -71513,8 +71535,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.723,
-        "events": 166
+        "mint_ratio": 0.721,
+        "events": 165
       },
       {
         "region": "North America",
@@ -71561,7 +71583,7 @@
       {
         "date": "2026-06-15",
         "net_minted": 18595000,
-        "net_burned": 55250000
+        "net_burned": 60250000
       }
     ],
     "event_of_the_day": {
@@ -71577,9 +71599,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 207,
-        "negative": 392,
+        "positive": 208,
+        "negative": 391,
         "event_ids_positive": [
+          3247,
           3245,
           3237,
           3234,
@@ -72179,14 +72202,14 @@
           2595,
           2594,
           2593,
-          2592,
-          2590
+          2592
         ]
       },
       "UDHR": {
-        "positive": 88,
+        "positive": 89,
         "negative": 295,
         "event_ids_positive": [
+          3247,
           3245,
           3234,
           3232,
@@ -72612,9 +72635,10 @@
         ]
       },
       "CRC": {
-        "positive": 12,
+        "positive": 13,
         "negative": 57,
         "event_ids_positive": [
+          3247,
           3232,
           3220,
           3187,
@@ -72829,7 +72853,7 @@
       },
       "Animal": {
         "positive": 54,
-        "negative": 41,
+        "negative": 40,
         "event_ids_positive": [
           3215,
           3201,
@@ -72926,13 +72950,12 @@
           2628,
           2610,
           2593,
-          2592,
-          2590
+          2592
         ]
       },
       "PB": {
         "positive": 100,
-        "negative": 91,
+        "negative": 90,
         "event_ids_positive": [
           3237,
           3231,
@@ -73125,8 +73148,7 @@
           2608,
           2600,
           2595,
-          2592,
-          2590
+          2592
         ]
       }
     },
@@ -73583,10 +73605,11 @@
       },
       {
         "name": "Tech",
-        "count": 38,
-        "burn_count": 17,
+        "count": 39,
+        "burn_count": 18,
         "mint_count": 21,
         "event_ids": [
+          3247,
           3243,
           3218,
           3192,
@@ -73714,10 +73737,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 235,
+      "total_burn": 236,
       "direct_action": {
-        "count": 191,
-        "pct": 81.3
+        "count": 192,
+        "pct": 81.4
       },
       "editorial_consciousness": {
         "count": 16,
@@ -73729,10 +73752,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1076,
+      "total_burn": 1077,
       "direct_action": {
-        "count": 760,
-        "pct": 70.6
+        "count": 761,
+        "pct": 70.7
       },
       "editorial_consciousness": {
         "count": 69,
@@ -73740,18 +73763,18 @@
       },
       "untyped": {
         "count": 247,
-        "pct": 23.0
+        "pct": 22.9
       }
     },
     "mint_composition_7d": {
-      "total_mint": 422,
+      "total_mint": 421,
       "direct_action": {
-        "count": 372,
-        "pct": 88.2
+        "count": 371,
+        "pct": 88.1
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 4.7
+        "pct": 4.8
       },
       "untyped": {
         "count": 30,
@@ -73811,7 +73834,7 @@
         {
           "date": "2026-06-15",
           "citizen": 8,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -74038,6 +74061,7 @@
         2596
       ],
       "event_ids_institutional": [
+        3247,
         3245,
         3244,
         3243,
@@ -74472,8 +74496,7 @@
         2594,
         2593,
         2592,
-        2591,
-        2590
+        2591
       ]
     }
   }
