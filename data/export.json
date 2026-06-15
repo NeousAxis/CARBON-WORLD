@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-15T02:34:32.487786+00:00",
-  "total_events": 3231,
-  "total_burned": 4835580870,
-  "total_minted": 4468113289,
+  "generated_at": "2026-06-15T03:34:45.543166+00:00",
+  "total_events": 3233,
+  "total_burned": 4841830870,
+  "total_minted": 4469313289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3233,
+      "event_title": "Prosecutor killed in attack in western Ecuador",
+      "event_url": "https://www.letemps.ch/articles/une-procureure-tuee-dans-un-attentat-dans-l-ouest-de-l-equateur",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -3.39,
+      "confidence": 8,
+      "justification": "The assassination of a public prosecutor in Ecuador reflects systemic violence and undermines the rule of law. | The assassination of a public prosecutor in Ecuador represents a severe violation of human rights and undermines the rule of law. While the public prosecutor's office has condemned the attack, the incident highlights the ongoing threat to justice workers in regions dominated by organized crime.",
+      "tx_hash": "4gyBpsAWe7dJfFFkHTnrDu8BW7bsqzD6wDAQj1sidaNuvTF2SLTxUZSJ8NZr1dG9qHN9jp4uZX63qhTSt2jYUh21",
+      "created_at": "2026-06-15T03:34:41.061757+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ecuador",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The public prosecutor's office has condemned the attack and reaffirmed its commitment to justice.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"A public prosecutor was assassinated in an attack, likely linked to organized crime, undermining the rule of law and safety for public officials.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The killing of a public official in a region dominated by organized crime reflects systemic violence and lack of protection for justice workers.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3232,
+      "event_title": "Argentina: Taty Almeida, figure in the fight for human rights, has died",
+      "event_url": "https://www.ouest-france.fr/monde/argentine/argentine-taty-almeida-figure-de-la-lutte-pour-les-droits-humains-est-decedee-9614f736-6858-11f1-8ae5-0c53cf467897?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "BURN",
+      "amount_crbn": 6250000,
+      "final_score": 6.16,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Lifelong human rights advocacy with global impact and institutional legacy. | The passing of Taty Almeida represents a profound loss for the human rights movement in Argentina and globally. Her lifelong struggle for truth, justice, and accountability for victims of state violence embodies the highest ethical principles of UDHR Article 8 (effective remedy) and CRC Article 3 (bes",
+      "tx_hash": "5NUr7uvDHvh2EgWDEaRHfJi7sCC8qGuGiCrgpU4NshCQWxyGh4WfkMQtgm5BFJ6BoN3VQomEk4QWcyDjWBRHS6o2",
+      "created_at": "2026-06-15T03:34:40.956820+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Death of Taty Almeida, a lifelong human rights advocate and president of the Mothers of the Plaza de Mayo, who dedicated her life to seeking truth and justice for victims of Argentina's dictatorship, including her own disappeared son.\", \"affected_sdgs\": [16], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3231,
       "event_title": "Contact Energy completes solar module installation at 150MW solar PV power plant in New Zealand",
@@ -71147,7 +71191,7 @@
       {
         "region": "Latin America",
         "burn_ratio": 0.5,
-        "events": 34
+        "events": 36
       },
       {
         "region": "Oceania",
@@ -71230,8 +71274,8 @@
       },
       {
         "date": "2026-06-15",
-        "net_minted": 3250000,
-        "net_burned": 32000000
+        "net_minted": 4450000,
+        "net_burned": 38250000
       }
     ],
     "event_of_the_day": {
@@ -71247,9 +71291,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 211,
-        "negative": 394,
+        "positive": 212,
+        "negative": 395,
         "event_ids_positive": [
+          3232,
           3231,
           3230,
           3228,
@@ -71463,6 +71508,7 @@
           2569
         ],
         "event_ids_negative": [
+          3233,
           3229,
           3224,
           3223,
@@ -71860,9 +71906,10 @@
         ]
       },
       "UDHR": {
-        "positive": 86,
-        "negative": 295,
+        "positive": 87,
+        "negative": 296,
         "event_ids_positive": [
+          3232,
           3228,
           3227,
           3226,
@@ -71951,6 +71998,7 @@
           2582
         ],
         "event_ids_negative": [
+          3233,
           3224,
           3223,
           3222,
@@ -72286,9 +72334,10 @@
         ]
       },
       "CRC": {
-        "positive": 11,
+        "positive": 12,
         "negative": 57,
         "event_ids_positive": [
+          3232,
           3220,
           3187,
           3150,
@@ -72817,11 +72866,11 @@
       "niche_pct": 47.2,
       "mainstream_pct": 52.8,
       "total_sources_used": 127,
-      "articles_processed": 663
+      "articles_processed": 665
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 663,
+      "total_events": 665,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -73404,10 +73453,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 239,
+      "total_burn": 240,
       "direct_action": {
-        "count": 195,
-        "pct": 81.6
+        "count": 196,
+        "pct": 81.7
       },
       "editorial_consciousness": {
         "count": 16,
@@ -73419,9 +73468,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1072,
+      "total_burn": 1073,
       "direct_action": {
-        "count": 756,
+        "count": 757,
         "pct": 70.5
       },
       "editorial_consciousness": {
@@ -73434,10 +73483,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 424,
+      "total_mint": 425,
       "direct_action": {
-        "count": 375,
-        "pct": 88.4
+        "count": 376,
+        "pct": 88.5
       },
       "editorial_alarm": {
         "count": 19,
@@ -73449,9 +73498,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2151,
+      "total_mint": 2152,
       "direct_action": {
-        "count": 1531,
+        "count": 1532,
         "pct": 71.2
       },
       "editorial_alarm": {
@@ -73464,8 +73513,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 220,
-      "institutional": 443,
+      "citizen": 221,
+      "institutional": 444,
       "citizen_ratio": 0.332,
       "daily": [
         {
@@ -73500,11 +73549,12 @@
         },
         {
           "date": "2026-06-15",
-          "citizen": 3,
-          "institutional": 4
+          "citizen": 4,
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
+        3232,
         3230,
         3229,
         3226,
@@ -73727,6 +73777,7 @@
         2582
       ],
       "event_ids_institutional": [
+        3233,
         3231,
         3228,
         3227,
