@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-15T00:05:39.875028+00:00",
-  "total_events": 3225,
-  "total_burned": 4810580870,
+  "generated_at": "2026-06-15T00:33:55.020903+00:00",
+  "total_events": 3227,
+  "total_burned": 4820580870,
   "total_minted": 4464863289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3227,
+      "event_title": "US and Iran to sign peace agreement in Geneva on June 19",
+      "event_url": "https://www.letemps.ch/articles/en-direct-moyen-orient-les-etats-unis-et-l-iran-signeront-un-accord-de-paix-a-geneve-le-19-juin",
+      "event_source": "Le Temps (CH)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.23,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Peace agreement reduces suffering and advances SDG 16 despite enforcement uncertainty. | The signing of a peace agreement between the US and Iran to end the war in the Middle East is a significant positive action that directly advances peace and reduces suffering. It aligns with SDG 16 (Peace, Justice, and Strong Institutions) and the UDHR by promoting conflict resolution and",
+      "tx_hash": "5T6WnnKocsR7gjtFWQ6E2sp3vuhQ7DXhBJhbyDgEXdxBnFVhk62WMwbTfyEbbXphseUom4qv5jk92QhGnxEYCTdp",
+      "created_at": "2026-06-15T00:33:49.999501+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"US and Iran agree to sign a peace agreement in Geneva to immediately and permanently end the war in the Middle East, including in Lebanon, as announced by a Pakistani mediator\", \"affected_sdgs\": [16], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 3226,
+      "event_title": "Middle East War: Agreement between the United States and Iran, the Strait of Hormuz will reopen after the signing",
+      "event_url": "https://www.ouest-france.fr/monde/iran/le-mediateur-pakistanais-annonce-quun-accord-a-ete-conclu-entre-les-etats-unis-et-liran-e10e13f6-6837-11f1-8ae5-0c53cf467897?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.46,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Major diplomatic breakthrough ending war and reopening critical maritime route. | The agreement represents a significant reduction in armed conflict and potential environmental disaster (Strait of Hormuz closure), directly advancing peace (SDG 16) and international cooperation (SDG 17). The ceasefire and reopening of a critical maritime chokepoint mitigate immediate humanitaria",
+      "tx_hash": "5T6WnnKocsR7gjtFWQ6E2sp3vuhQ7DXhBJhbyDgEXdxBnFVhk62WMwbTfyEbbXphseUom4qv5jk92QhGnxEYCTdp",
+      "created_at": "2026-06-15T00:33:49.886718+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"International agreement between the United States and Iran to end war in the Middle East, including a ceasefire on all fronts and reopening the Strait of Hormuz\", \"affected_sdgs\": [16], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Diplomatic mediation by Pakistan leading to a formal peace agreement with a signed date and international venue\", \"affected_sdgs\": [16, 17], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3225,
       "event_title": "U.S. and Iran to Sign Peace Agreement in Switzerland on June 19",
@@ -71046,8 +71090,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.726,
-        "events": 164
+        "mint_ratio": 0.717,
+        "events": 166
       },
       {
         "region": "Africa",
@@ -71099,7 +71143,7 @@
       {
         "date": "2026-06-15",
         "net_minted": 0,
-        "net_burned": 7000000
+        "net_burned": 17000000
       }
     ],
     "event_of_the_day": {
@@ -71115,9 +71159,11 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 208,
+        "positive": 210,
         "negative": 397,
         "event_ids_positive": [
+          3227,
+          3226,
           3225,
           3221,
           3220,
@@ -71728,9 +71774,11 @@
         ]
       },
       "UDHR": {
-        "positive": 83,
+        "positive": 85,
         "negative": 297,
         "event_ids_positive": [
+          3227,
+          3226,
           3225,
           3220,
           3214,
@@ -72230,9 +72278,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 46,
+        "positive": 47,
         "negative": 86,
         "event_ids_positive": [
+          3226,
           3221,
           3205,
           3201,
@@ -72685,11 +72734,11 @@
       "niche_pct": 48.0,
       "mainstream_pct": 52.0,
       "total_sources_used": 127,
-      "articles_processed": 663
+      "articles_processed": 665
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 663,
+      "total_events": 665,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -73185,10 +73234,11 @@
       },
       {
         "name": "Transport",
-        "count": 30,
-        "burn_count": 20,
+        "count": 31,
+        "burn_count": 21,
         "mint_count": 10,
         "event_ids": [
+          3226,
           3209,
           3193,
           3142,
@@ -73269,24 +73319,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 236,
+      "total_burn": 238,
       "direct_action": {
-        "count": 192,
-        "pct": 81.4
+        "count": 194,
+        "pct": 81.5
       },
       "editorial_consciousness": {
         "count": 16,
-        "pct": 6.8
+        "pct": 6.7
       },
       "untyped": {
         "count": 28,
-        "pct": 11.9
+        "pct": 11.8
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1067,
+      "total_burn": 1069,
       "direct_action": {
-        "count": 751,
+        "count": 753,
         "pct": 70.4
       },
       "editorial_consciousness": {
@@ -73329,9 +73379,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 219,
-      "institutional": 444,
-      "citizen_ratio": 0.33,
+      "citizen": 220,
+      "institutional": 445,
+      "citizen_ratio": 0.331,
       "daily": [
         {
           "date": "2026-06-09",
@@ -73365,11 +73415,12 @@
         },
         {
           "date": "2026-06-15",
-          "citizen": 0,
-          "institutional": 1
+          "citizen": 1,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        3226,
         3224,
         3221,
         3219,
@@ -73591,6 +73642,7 @@
         2565
       ],
       "event_ids_institutional": [
+        3227,
         3225,
         3223,
         3222,
