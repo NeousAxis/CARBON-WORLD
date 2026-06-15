@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-15T20:35:43.655431+00:00",
-  "total_events": 3300,
-  "total_burned": 4951330870,
-  "total_minted": 4546083289,
+  "generated_at": "2026-06-15T21:05:30.149927+00:00",
+  "total_events": 3302,
+  "total_burned": 4956330870,
+  "total_minted": 4547583289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3302,
+      "event_title": "FDA Approves Colorado’s Plan to Import Cheaper Drugs from Canada",
+      "event_url": "https://www.statnews.com/2026/06/15/colorado-drug-imports-canada/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.41,
+      "confidence": 8,
+      "justification": "FDA approval of drug import plan reduces healthcare costs, advancing SDG 3. | The FDA's approval of Colorado's drug import plan directly advances SDG 3 (Good Health and Well-being) by lowering prescription drug costs, improving access to affordable medicines for residents. No significant ethical violations or negative impacts are identified in this action.",
+      "tx_hash": "2Kg3U4xoZwUK8fT17V9FmgEEwRqWCY9RyWWPWGQNU6Rrwq2T1VyKZ2ZiwWYmMHpLMydybBiuHNFoHpg2G12bUHnS",
+      "created_at": "2026-06-15T21:05:25.858418+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FDA approval of Colorado's plan to import cheaper prescription drugs from Canada, reducing healthcare costs for residents\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 3301,
+      "event_title": "Anthropogenic disturbance inverts microclimate stratification in tropical forests",
+      "event_url": "https://www.biorxiv.org/content/10.64898/2026.06.11.731463v1?rss=1",
+      "event_source": "bioRxiv Ecology",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.81,
+      "confidence": 9,
+      "justification": "Scientific evidence of anthropogenic disturbance causing significant ecological harm in critical tropical forests. | The study provides critical scientific evidence of how anthropogenic disturbance (fire) disrupts tropical forest microclimates, undermining biodiversity and climate resilience. While the research itself is a positive contribution to knowledge, the documented disturbance represents a significant ecological harm with cascading effects on planetary boundaries and SDG targets.",
+      "tx_hash": "4T8JyFwSaMYu8GddVRn4Msx3sJCYKe2H9aib8uioAcTooW8DvSzbQ1BXh1yd3nZK393XowrEC6P3DkqoQ2F6HN8j",
+      "created_at": "2026-06-15T21:05:25.769625+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scientific study quantifying anthropogenic disturbance impacts on tropical forest microclimate stratification, providing empirical data for climate action and biodiversity conservation\", \"affected_sdgs\": [13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Anthropogenic disturbance (fire) in Amazonian forests inverts vertical microclimate stratification, increasing understorey temperatures by up to 2°C during the day and reducing microclimate buffering capacity\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3300,
       "event_title": "Two-week pause of Canadian hydropower exposes frailty of Mass. plan to wean off natural gas",
@@ -72610,8 +72654,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 98,
-        "total_amount": 287865000
+        "count": 97,
+        "total_amount": 286365000
       },
       {
         "country": "Switzerland",
@@ -72637,8 +72681,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 39,
-        "total_amount": 164275000
+        "count": 40,
+        "total_amount": 169275000
       },
       {
         "country": "Australia",
@@ -72664,13 +72708,13 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.5,
-        "events": 36
+        "burn_ratio": 0.514,
+        "events": 35
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.472,
-        "events": 36
+        "burn_ratio": 0.486,
+        "events": 35
       },
       {
         "region": "Asia",
@@ -72679,12 +72723,12 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.298,
-        "events": 171
+        "burn_ratio": 0.3,
+        "events": 170
       },
       {
         "region": "North America",
-        "burn_ratio": 0.293,
+        "burn_ratio": 0.299,
         "events": 147
       }
     ],
@@ -72701,13 +72745,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.707,
+        "mint_ratio": 0.701,
         "events": 147
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.702,
-        "events": 171
+        "mint_ratio": 0.7,
+        "events": 170
       },
       {
         "region": "Asia",
@@ -72748,8 +72792,8 @@
       },
       {
         "date": "2026-06-15",
-        "net_minted": 81220000,
-        "net_burned": 147750000
+        "net_minted": 82720000,
+        "net_burned": 152750000
       }
     ],
     "event_of_the_day": {
@@ -72765,9 +72809,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 207,
-        "negative": 393,
+        "positive": 208,
+        "negative": 390,
         "event_ids_positive": [
+          3302,
           3293,
           3283,
           3282,
@@ -72977,6 +73022,7 @@
           2663
         ],
         "event_ids_negative": [
+          3301,
           3300,
           3299,
           3298,
@@ -73365,16 +73411,12 @@
           2658,
           2657,
           2656,
-          2655,
-          2654,
-          2653,
-          2652,
-          2651
+          2655
         ]
       },
       "UDHR": {
         "positive": 91,
-        "negative": 297,
+        "negative": 293,
         "event_ids_positive": [
           3293,
           3283,
@@ -73761,11 +73803,7 @@
           2659,
           2658,
           2657,
-          2655,
-          2654,
-          2653,
-          2652,
-          2651
+          2655
         ]
       },
       "ILO": {
@@ -73807,7 +73845,7 @@
       },
       "CRC": {
         "positive": 13,
-        "negative": 58,
+        "negative": 56,
         "event_ids_positive": [
           3247,
           3232,
@@ -73879,14 +73917,12 @@
           2696,
           2684,
           2682,
-          2671,
-          2653,
-          2652
+          2671
         ]
       },
       "UNDRIP": {
         "positive": 44,
-        "negative": 86,
+        "negative": 85,
         "event_ids_positive": [
           3269,
           3266,
@@ -74018,8 +74054,7 @@
           2666,
           2659,
           2656,
-          2655,
-          2652
+          2655
         ]
       },
       "Animal": {
@@ -74122,7 +74157,7 @@
       },
       "PB": {
         "positive": 97,
-        "negative": 83,
+        "negative": 84,
         "event_ids_positive": [
           3283,
           3282,
@@ -74223,6 +74258,7 @@
           2663
         ],
         "event_ids_negative": [
+          3301,
           3299,
           3296,
           3268,
@@ -74313,11 +74349,11 @@
       "niche_pct": 47.6,
       "mainstream_pct": 52.4,
       "total_sources_used": 124,
-      "articles_processed": 650
+      "articles_processed": 648
     },
     "cache_hit_rate_7d": {
       "hits": 14,
-      "total_events": 650,
+      "total_events": 648,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -74643,9 +74679,9 @@
       },
       {
         "name": "Finance",
-        "count": 65,
+        "count": 64,
         "burn_count": 27,
-        "mint_count": 38,
+        "mint_count": 37,
         "event_ids": [
           3281,
           3267,
@@ -74710,8 +74746,7 @@
           2703,
           2670,
           2665,
-          2655,
-          2654
+          2655
         ]
       },
       {
@@ -74883,10 +74918,11 @@
       },
       {
         "name": "Forestry",
-        "count": 13,
+        "count": 14,
         "burn_count": 6,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          3301,
           3299,
           3272,
           3256,
@@ -74904,10 +74940,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 231,
+      "total_burn": 232,
       "direct_action": {
-        "count": 189,
-        "pct": 81.8
+        "count": 190,
+        "pct": 81.9
       },
       "editorial_consciousness": {
         "count": 18,
@@ -74915,13 +74951,13 @@
       },
       "untyped": {
         "count": 24,
-        "pct": 10.4
+        "pct": 10.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1095,
+      "total_burn": 1096,
       "direct_action": {
-        "count": 776,
+        "count": 777,
         "pct": 70.9
       },
       "editorial_consciousness": {
@@ -74930,14 +74966,14 @@
       },
       "untyped": {
         "count": 247,
-        "pct": 22.6
+        "pct": 22.5
       }
     },
     "mint_composition_7d": {
-      "total_mint": 419,
+      "total_mint": 416,
       "direct_action": {
-        "count": 373,
-        "pct": 89.0
+        "count": 370,
+        "pct": 88.9
       },
       "editorial_alarm": {
         "count": 20,
@@ -74949,10 +74985,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2197,
+      "total_mint": 2198,
       "direct_action": {
-        "count": 1574,
-        "pct": 71.6
+        "count": 1575,
+        "pct": 71.7
       },
       "editorial_alarm": {
         "count": 136,
@@ -74965,8 +75001,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 223,
-      "institutional": 427,
-      "citizen_ratio": 0.343,
+      "institutional": 425,
+      "citizen_ratio": 0.344,
       "daily": [
         {
           "date": "2026-06-09",
@@ -75001,7 +75037,7 @@
         {
           "date": "2026-06-15",
           "citizen": 27,
-          "institutional": 49
+          "institutional": 51
         }
       ],
       "event_ids_citizen": [
@@ -75230,6 +75266,8 @@
         2658
       ],
       "event_ids_institutional": [
+        3302,
+        3301,
         3300,
         3299,
         3293,
@@ -75652,11 +75690,7 @@
         2659,
         2657,
         2656,
-        2655,
-        2654,
-        2653,
-        2652,
-        2651
+        2655
       ]
     }
   }
