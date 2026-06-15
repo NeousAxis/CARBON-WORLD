@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-15T16:06:28.782818+00:00",
-  "total_events": 3275,
-  "total_burned": 4912830870,
-  "total_minted": 4523558289,
+  "generated_at": "2026-06-15T16:35:44.891248+00:00",
+  "total_events": 3277,
+  "total_burned": 4919830870,
+  "total_minted": 4524058289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3277,
+      "event_title": "UK Court upholds ban on Palestine Action as 'terrorist' group",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/6/15/uk-court-upholds-ban-on-palestine-action-as-terrorist-group?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.06,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Court action suppresses protest rights, violating UDHR Article 20 (assembly) and 19 (expression). | The court's decision to uphold the ban on Palestine Action as a 'terrorist' group enforces legal order but risks suppressing legitimate protest and civil society activism. While it may reduce disruptive tactics, it undermines freedom of expression and assembly, which are found",
+      "tx_hash": "SB5GLVYE5Z3fCGsRqkTvAvvBseqPRuzUPtZ7aokMeFwjEEauKbWt84ehp2fqrgf7ufQiv3C27rujPGFqLNqMkuy",
+      "created_at": "2026-06-15T16:35:40.163242+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"UK court upholds ban on Palestine Action as a 'terrorist' group, enforcing legal measures against an organization accused of disruptive protest tactics\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Designation of Palestine Action as a 'terrorist' group suppresses legitimate protest and civil society activism, potentially violating freedom of expression and assembly under UDHR Article 20\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Court ruling may chill future activism by civil society groups, limiting their ability to challenge state or corporate actions through peaceful protest\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3276,
+      "event_title": "Can artificial intelligence protect biodiversity in Latin America? | Environmental readings",
+      "event_url": "https://es.mongabay.com/2026/06/inteligencia-artificial-proteger-biodiversidad-america-latina-lecturas-ambientales/",
+      "event_source": "Mongabay LATAM",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "AI-driven biodiversity conservation in Latin America is a high-impact, community-backed action with strong ethical alignment. | The deployment of AI for biodiversity conservation in Latin America represents a significant positive step, directly addressing climate action, life below water, and life on land. The actions are concrete, community-driven, and scientifically supported, with measurable ecological benefits. No ethical violations or negative impacts are identified in the described actions",
+      "tx_hash": "3THJzwkNSMpbhrGpEzfiLgT2EdRAufLBe5fPAbcyKdXUj9wZX4wnA1YtaXSErWW7D7pE2LpuaBoHTRqKudfZCHBD",
+      "created_at": "2026-06-15T16:35:40.000855+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Latin America",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Latin American scientists, local communities, and environmental organizations are deploying AI tools (algorithms, drones, acoustic sensors, automated recognition systems) to directly support biodiversity conservation efforts.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Concrete conservation actions include returning illegally extracted shells to the ocean in Costa Rica and monitoring the recovery of frailejones (Espeletia) affected by fires in Colombia, demonstrating measurable ecological restoration.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null
+    },
     {
       "id": 3275,
       "event_title": "EU says China trained Russian troops as bloc weighs tougher stance on Beijing",
@@ -72134,8 +72178,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.299,
-        "events": 167
+        "burn_ratio": 0.298,
+        "events": 168
       }
     ],
     "top_regions_destructive": [
@@ -72151,8 +72195,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.701,
-        "events": 167
+        "mint_ratio": 0.702,
+        "events": 168
       },
       {
         "region": "North America",
@@ -72198,8 +72242,8 @@
       },
       {
         "date": "2026-06-15",
-        "net_minted": 58695000,
-        "net_burned": 109250000
+        "net_minted": 59195000,
+        "net_burned": 116250000
       }
     ],
     "event_of_the_day": {
@@ -72215,9 +72259,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 202,
-        "negative": 387,
+        "positive": 203,
+        "negative": 388,
         "event_ids_positive": [
+          3276,
           3273,
           3272,
           3271,
@@ -72422,6 +72467,7 @@
           2635
         ],
         "event_ids_negative": [
+          3277,
           3275,
           3274,
           3270,
@@ -72813,7 +72859,7 @@
       },
       "UDHR": {
         "positive": 88,
-        "negative": 293,
+        "negative": 294,
         "event_ids_positive": [
           3273,
           3269,
@@ -72905,6 +72951,7 @@
           2644
         ],
         "event_ids_negative": [
+          3277,
           3275,
           3274,
           3270,
@@ -73453,9 +73500,10 @@
         ]
       },
       "Animal": {
-        "positive": 52,
+        "positive": 53,
         "negative": 37,
         "event_ids_positive": [
+          3276,
           3272,
           3269,
           3266,
@@ -73550,9 +73598,10 @@
         ]
       },
       "PB": {
-        "positive": 94,
+        "positive": 95,
         "negative": 84,
         "event_ids_positive": [
+          3276,
           3269,
           3266,
           3258,
@@ -73740,11 +73789,11 @@
       "niche_pct": 48.0,
       "mainstream_pct": 52.0,
       "total_sources_used": 123,
-      "articles_processed": 643
+      "articles_processed": 645
     },
     "cache_hit_rate_7d": {
       "hits": 14,
-      "total_events": 643,
+      "total_events": 645,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -74185,10 +74234,11 @@
       },
       {
         "name": "Tech",
-        "count": 39,
-        "burn_count": 18,
+        "count": 40,
+        "burn_count": 19,
         "mint_count": 21,
         "event_ids": [
+          3276,
           3253,
           3247,
           3243,
@@ -74314,14 +74364,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 228,
+      "total_burn": 229,
       "direct_action": {
         "count": 185,
-        "pct": 81.1
+        "pct": 80.8
       },
       "editorial_consciousness": {
-        "count": 17,
-        "pct": 7.5
+        "count": 18,
+        "pct": 7.9
       },
       "untyped": {
         "count": 26,
@@ -74329,14 +74379,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1087,
+      "total_burn": 1088,
       "direct_action": {
         "count": 769,
         "pct": 70.7
       },
       "editorial_consciousness": {
-        "count": 71,
-        "pct": 6.5
+        "count": 72,
+        "pct": 6.6
       },
       "untyped": {
         "count": 247,
@@ -74344,9 +74394,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 415,
+      "total_mint": 416,
       "direct_action": {
-        "count": 368,
+        "count": 369,
         "pct": 88.7
       },
       "editorial_alarm": {
@@ -74359,9 +74409,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2180,
+      "total_mint": 2181,
       "direct_action": {
-        "count": 1558,
+        "count": 1559,
         "pct": 71.5
       },
       "editorial_alarm": {
@@ -74374,9 +74424,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 218,
+      "citizen": 220,
       "institutional": 425,
-      "citizen_ratio": 0.339,
+      "citizen_ratio": 0.341,
       "daily": [
         {
           "date": "2026-06-09",
@@ -74410,11 +74460,13 @@
         },
         {
           "date": "2026-06-15",
-          "citizen": 17,
+          "citizen": 19,
           "institutional": 34
         }
       ],
       "event_ids_citizen": [
+        3277,
+        3276,
         3272,
         3266,
         3264,
