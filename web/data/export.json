@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-16T12:37:55.022189+00:00",
-  "total_events": 3345,
+  "generated_at": "2026-06-16T13:05:19.435296+00:00",
+  "total_events": 3346,
   "total_burned": 5026855870,
-  "total_minted": 4591658289,
+  "total_minted": 4592158289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3346,
+      "event_title": "Under the guise of ecological transition, a French refinery will serve the military industry",
+      "event_url": "https://reporterre.net/Sous-couvert-de-transition-ecologique-une-raffinerie-francaise-servira-l-industrie",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.45,
+      "confidence": 8,
+      "justification": "Dual-use refinery undermines ecological transition and enables military production. | The project presents a dual-use facility that claims to support green energy transition while enabling military production. This undermines the integrity of ecological initiatives and risks legitimizing military-industrial complexes under the guise of sustainability. The net ethical judgment is negative due to the dual-use nature and potential for harm.",
+      "tx_hash": "2kbstSCvDAjEkyJsqXTtsBDsF5jyTW7gcrsMKdzux7vrQiqkNGhEvfmY1Bs4ps8KJVjcVTunk7znFJ3eB7jmHsEK",
+      "created_at": "2026-06-16T13:05:14.791190+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"France announces a new refinery for cobalt and nickel for electric vehicle batteries, framed as a green industry project\", \"affected_sdgs\": [7, 9, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The refinery will also serve the military industry, undermining the stated ecological transition and enabling military production\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
     {
       "id": 3345,
       "event_title": "Back from the brink: Bettongs return to the desert",
@@ -73610,8 +73632,8 @@
       },
       {
         "country": "France",
-        "count": 25,
-        "total_amount": 16100000
+        "count": 26,
+        "total_amount": 16600000
       },
       {
         "country": "China",
@@ -73669,8 +73691,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.313,
-        "events": 163
+        "burn_ratio": 0.311,
+        "events": 164
       },
       {
         "region": "North America",
@@ -73696,8 +73718,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.687,
-        "events": 163
+        "mint_ratio": 0.689,
+        "events": 164
       },
       {
         "region": "Asia",
@@ -73738,7 +73760,7 @@
       },
       {
         "date": "2026-06-16",
-        "net_minted": 39450000,
+        "net_minted": 39950000,
         "net_burned": 50500000
       }
     ],
@@ -73756,7 +73778,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 210,
-        "negative": 376,
+        "negative": 377,
         "event_ids_positive": [
           3345,
           3344,
@@ -73970,6 +73992,7 @@
           2719
         ],
         "event_ids_negative": [
+          3346,
           3343,
           3342,
           3341,
@@ -75254,11 +75277,11 @@
       "niche_pct": 47.6,
       "mainstream_pct": 52.4,
       "total_sources_used": 124,
-      "articles_processed": 628
+      "articles_processed": 629
     },
     "cache_hit_rate_7d": {
       "hits": 15,
-      "total_events": 628,
+      "total_events": 629,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -75404,10 +75427,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 88,
+        "count": 89,
         "burn_count": 53,
-        "mint_count": 35,
+        "mint_count": 36,
         "event_ids": [
+          3346,
           3344,
           3332,
           3323,
@@ -75644,6 +75668,56 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 42,
+        "burn_count": 4,
+        "mint_count": 38,
+        "event_ids": [
+          3346,
+          3320,
+          3318,
+          3316,
+          3290,
+          3275,
+          3228,
+          3202,
+          3180,
+          3141,
+          3140,
+          3131,
+          3125,
+          3119,
+          3109,
+          3083,
+          3077,
+          3075,
+          3073,
+          3039,
+          3027,
+          3017,
+          2980,
+          2973,
+          2954,
+          2945,
+          2930,
+          2904,
+          2903,
+          2898,
+          2893,
+          2828,
+          2820,
+          2816,
+          2812,
+          2807,
+          2804,
+          2793,
+          2792,
+          2786,
+          2773,
+          2756
+        ]
+      },
+      {
         "name": "Tech",
         "count": 42,
         "burn_count": 20,
@@ -75691,55 +75765,6 @@
           2779,
           2770,
           2731
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 41,
-        "burn_count": 4,
-        "mint_count": 37,
-        "event_ids": [
-          3320,
-          3318,
-          3316,
-          3290,
-          3275,
-          3228,
-          3202,
-          3180,
-          3141,
-          3140,
-          3131,
-          3125,
-          3119,
-          3109,
-          3083,
-          3077,
-          3075,
-          3073,
-          3039,
-          3027,
-          3017,
-          2980,
-          2973,
-          2954,
-          2945,
-          2930,
-          2904,
-          2903,
-          2898,
-          2893,
-          2828,
-          2820,
-          2816,
-          2812,
-          2807,
-          2804,
-          2793,
-          2792,
-          2786,
-          2773,
-          2756
         ]
       },
       {
@@ -75856,14 +75881,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 394,
+      "total_mint": 395,
       "direct_action": {
         "count": 359,
-        "pct": 91.1
+        "pct": 90.9
       },
       "editorial_alarm": {
-        "count": 17,
-        "pct": 4.3
+        "count": 18,
+        "pct": 4.6
       },
       "untyped": {
         "count": 18,
@@ -75871,13 +75896,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2227,
+      "total_mint": 2228,
       "direct_action": {
         "count": 1603,
-        "pct": 72.0
+        "pct": 71.9
       },
       "editorial_alarm": {
-        "count": 137,
+        "count": 138,
         "pct": 6.2
       },
       "untyped": {
@@ -75886,9 +75911,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 222,
+      "citizen": 223,
       "institutional": 406,
-      "citizen_ratio": 0.354,
+      "citizen_ratio": 0.355,
       "daily": [
         {
           "date": "2026-06-10",
@@ -75922,11 +75947,12 @@
         },
         {
           "date": "2026-06-16",
-          "citizen": 13,
+          "citizen": 14,
           "institutional": 21
         }
       ],
       "event_ids_citizen": [
+        3346,
         3345,
         3343,
         3342,
