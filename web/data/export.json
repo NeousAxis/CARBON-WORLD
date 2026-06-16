@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-16T21:08:11.618628+00:00",
-  "total_events": 3399,
-  "total_burned": 5129482870,
-  "total_minted": 4645508289,
+  "generated_at": "2026-06-16T21:36:08.815220+00:00",
+  "total_events": 3401,
+  "total_burned": 5136482870,
+  "total_minted": 4653508289,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 3401,
+      "event_title": "Russia’s plan to drill superdeep holes in Arctic revives controversial theory of ‘endless oil’",
+      "event_url": "https://www.science.org/content/article/russia-s-plan-drill-superdeep-holes-arctic-revives-controversial-theory-endless-oil",
+      "event_source": "Science (AAAS)",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -5.6,
+      "confidence": 10,
+      "justification": "Consensus: Both analysts agree on MINT due to high-risk Arctic drilling threatening climate, biodiversity, and indigenous rights. | The proposed drilling in the Arctic represents a high-magnitude negative action that directly undermines climate action (SDG 13), biodiversity (SDG 14, 15), and indigenous rights (UNDRIP). The abiotic oil theory is scientifically disputed, and the project risks irreversible environmental damage in a region already under severe stress from climate change.",
+      "tx_hash": "5Tr1DJkavRyH8BAheJ6CCocoYsvQgUDagvD66uLx8y3ZWyTU4epuNSZEcpTW1PGogUgwi3nKK8KMymPAtz2qcGgy",
+      "created_at": "2026-06-16T21:36:04.100411+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Russia's plan to drill superdeep holes in the Arctic to exploit oil reserves based on a controversial abiotic oil theory, which lacks scientific consensus and risks accelerating climate change and environmental degradation in a fragile ecosystem\", \"affected_sdgs\": [7, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3400,
+      "event_title": "Operation Nereida dismantles illegal fish trafficking network in Chile",
+      "event_url": "https://es.mongabay.com/2026/06/operacion-nereida-desarticulan-chile-red-traficaba-peces-amenazados/",
+      "event_source": "Mongabay LATAM",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.19,
+      "confidence": 8,
+      "justification": "Enforcement against illegal wildlife trafficking protects biodiversity and marine ecosystems. | The dismantling of an illegal fish trafficking network in Chile directly supports SDGs 12 (Responsible Consumption), 13 (Climate Action), 14 (Life Below Water), and 15 (Life on Land) by enforcing protections for threatened marine species and combating illegal wildlife trade. The operation demonstrates institutional commitment to biodiversity conservation and sustainable fisheries, with tangible enforc",
+      "tx_hash": "49rwq9ijo2KhbTTYbN5tgZGDG3gT5CrZxfxXfpyfQGZc3nHm8gkKPeoZexQWEp1X4iMxyVHTC6VUXRbJ5LzgG3eo",
+      "created_at": "2026-06-16T21:36:03.992266+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Chile",
+      "region": "Latin America",
+      "administration": "Chile-Apruebo Dignidad",
+      "positive_aspects_json": "[{\"description\": \"Chilean authorities dismantled an illegal fish trafficking network responsible for trafficking threatened species including merluza austral, congrio dorado, and loco.\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"54 individuals were detained, demonstrating enforcement against illegal wildlife trade and potential deterrence of future violations.\", \"affected_sdgs\": [12, 14, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null
+    },
     {
       "id": 3399,
       "event_title": "India’s rainfall deficit at 35% as monsoon progress stalls",
@@ -74842,8 +74886,8 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.543,
-        "events": 35
+        "burn_ratio": 0.556,
+        "events": 36
       },
       {
         "region": "Oceania",
@@ -74862,8 +74906,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.292,
-        "events": 168
+        "burn_ratio": 0.29,
+        "events": 169
       }
     ],
     "top_regions_destructive": [
@@ -74879,8 +74923,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.708,
-        "events": 168
+        "mint_ratio": 0.71,
+        "events": 169
       },
       {
         "region": "North America",
@@ -74926,8 +74970,8 @@
       },
       {
         "date": "2026-06-16",
-        "net_minted": 93300000,
-        "net_burned": 125127000
+        "net_minted": 101300000,
+        "net_burned": 132127000
       }
     ],
     "event_of_the_day": {
@@ -74943,9 +74987,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 209,
-        "negative": 381,
+        "positive": 210,
+        "negative": 382,
         "event_ids_positive": [
+          3400,
           3396,
           3391,
           3387,
@@ -75157,6 +75202,7 @@
           2781
         ],
         "event_ids_negative": [
+          3401,
           3399,
           3398,
           3397,
@@ -75542,7 +75588,7 @@
       },
       "UDHR": {
         "positive": 84,
-        "negative": 291,
+        "negative": 292,
         "event_ids_positive": [
           3386,
           3385,
@@ -75630,6 +75676,7 @@
           2782
         ],
         "event_ids_negative": [
+          3401,
           3397,
           3395,
           3394,
@@ -76036,7 +76083,7 @@
       },
       "UNDRIP": {
         "positive": 45,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           3386,
           3366,
@@ -76085,6 +76132,7 @@
           2847
         ],
         "event_ids_negative": [
+          3401,
           3394,
           3384,
           3370,
@@ -76163,9 +76211,10 @@
         ]
       },
       "Animal": {
-        "positive": 55,
+        "positive": 56,
         "negative": 31,
         "event_ids_positive": [
+          3400,
           3368,
           3366,
           3348,
@@ -76257,9 +76306,10 @@
         ]
       },
       "PB": {
-        "positive": 101,
-        "negative": 78,
+        "positive": 102,
+        "negative": 79,
         "event_ids_positive": [
+          3400,
           3396,
           3391,
           3383,
@@ -76363,6 +76413,7 @@
           2781
         ],
         "event_ids_negative": [
+          3401,
           3394,
           3389,
           3372,
@@ -76448,11 +76499,11 @@
       "niche_pct": 50.4,
       "mainstream_pct": 49.6,
       "total_sources_used": 123,
-      "articles_processed": 623
+      "articles_processed": 625
     },
     "cache_hit_rate_7d": {
       "hits": 10,
-      "total_events": 623,
+      "total_events": 625,
       "pct": 1.6
     },
     "active_partners_7d": [],
@@ -76602,10 +76653,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 89,
+        "count": 90,
         "burn_count": 53,
-        "mint_count": 36,
+        "mint_count": 37,
         "event_ids": [
+          3401,
           3398,
           3396,
           3391,
@@ -77021,14 +77073,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 232,
+      "total_burn": 233,
       "direct_action": {
         "count": 188,
-        "pct": 81.0
+        "pct": 80.7
       },
       "editorial_consciousness": {
-        "count": 21,
-        "pct": 9.1
+        "count": 22,
+        "pct": 9.4
       },
       "untyped": {
         "count": 23,
@@ -77036,14 +77088,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1126,
+      "total_burn": 1127,
       "direct_action": {
         "count": 802,
         "pct": 71.2
       },
       "editorial_consciousness": {
-        "count": 76,
-        "pct": 6.7
+        "count": 77,
+        "pct": 6.8
       },
       "untyped": {
         "count": 248,
@@ -77051,9 +77103,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 391,
+      "total_mint": 392,
       "direct_action": {
-        "count": 364,
+        "count": 365,
         "pct": 93.1
       },
       "editorial_alarm": {
@@ -77066,9 +77118,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2261,
+      "total_mint": 2262,
       "direct_action": {
-        "count": 1634,
+        "count": 1635,
         "pct": 72.3
       },
       "editorial_alarm": {
@@ -77081,9 +77133,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 216,
+      "citizen": 218,
       "institutional": 407,
-      "citizen_ratio": 0.347,
+      "citizen_ratio": 0.349,
       "daily": [
         {
           "date": "2026-06-10",
@@ -77117,11 +77169,13 @@
         },
         {
           "date": "2026-06-16",
-          "citizen": 29,
+          "citizen": 31,
           "institutional": 55
         }
       ],
       "event_ids_citizen": [
+        3401,
+        3400,
         3397,
         3389,
         3388,
