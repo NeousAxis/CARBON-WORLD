@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-17T23:06:43.447411+00:00",
-  "total_events": 3524,
-  "total_burned": 5312922870,
-  "total_minted": 4813843289,
+  "generated_at": "2026-06-17T23:34:56.452604+00:00",
+  "total_events": 3526,
+  "total_burned": 5317922870,
+  "total_minted": 4813993289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3526,
+      "event_title": "U.S. Government Says Brazilian Man Arrested Was CV and PCC Leader, but Convictions Show No Link",
+      "event_url": "https://redir.folha.com.br/redir/online//rss091/*https://www1.folha.uol.com.br/internacional/en/world/2026/06/us-government-says-brazilian-man-arrested-was-cv-and-pcc-leader-but-convictions-show-no-link.shtml",
+      "event_source": "Folha International EN",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.75,
+      "confidence": 8,
+      "justification": "Institutional misrepresentation of criminal allegations outweighs legitimate enforcement action. | The arrest itself is a legitimate law enforcement action aligned with SDG 16 (Peace & Justice), but the misrepresentation of the individual's criminal affiliations constitutes a serious violation of due process and transparency. The net ethical position is negative due to the institutional deception, despite the underlying enforcement action.",
+      "tx_hash": "hkwzKL6XgsMf2NvyXgnNnr4h5ow7328PebVbBTaQLfvFPEWASRJpbJeTFbgdGgaJiXwNqjziGbDi93qJXAocpwy",
+      "created_at": "2026-06-17T23:34:51.770558+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"U.S. immigration enforcement (ICE) arrested a convicted criminal with documented offenses in Brazil, demonstrating enforcement of existing laws against drug trafficking, fraud, and extortion.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"U.S. authorities misrepresented the arrested individual's alleged ties to criminal organizations (CV and PCC) despite lack of convictions or evidence supporting these claims, undermining transparency and due process.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3525,
+      "event_title": "Iran and the United States sign memorandum of understanding to end war in the Middle East",
+      "event_url": "https://www.france24.com/fr/moyen-orient/20260617-en-direct-moyen-orient-memorandum-etats-unis-iran-donald-trump-liban",
+      "event_source": "France 24 FR",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.02,
+      "confidence": 8,
+      "justification": "Diplomatic peace agreement reduces war and suffering in the Middle East. | The signing of a memorandum of understanding to end war in the Middle East represents a significant ethical and humanitarian victory. It directly advances peace and justice (SDG 16) and upholds the right to life and security (UDHR Article 3), with potential to reduce civilian casualties and regional instability. No notable ethical downsides are identified in this action.",
+      "tx_hash": "3zBCA19xB5xaS6zqxfn7mVZCTqyeoyPwqCe7a12xWaNc8FjfqkAbn5gxMTMrLKvMUNjxptkeponRh39HyAmk4Yfd",
+      "created_at": "2026-06-17T23:34:51.676509+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Iran and the United States sign a memorandum of understanding to end war in the Middle East, signaling a diplomatic breakthrough to reduce armed conflict and humanitarian suffering\", \"affected_sdgs\": [16], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3524,
       "event_title": "The US and Iran publish their official agreement. Here’s what’s in it",
@@ -77538,8 +77582,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 91,
-        "total_amount": 213785000
+        "count": 92,
+        "total_amount": 213935000
       },
       {
         "country": "Switzerland",
@@ -77619,13 +77663,13 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.95,
-        "events": 20
+        "mint_ratio": 0.947,
+        "events": 19
       },
       {
         "region": "North America",
-        "mint_ratio": 0.719,
-        "events": 135
+        "mint_ratio": 0.721,
+        "events": 136
       },
       {
         "region": "Asia",
@@ -77676,8 +77720,8 @@
       },
       {
         "date": "2026-06-17",
-        "net_minted": 157685000,
-        "net_burned": 161440000
+        "net_minted": 157835000,
+        "net_burned": 166440000
       }
     ],
     "event_of_the_day": {
@@ -77693,9 +77737,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 215,
+        "positive": 216,
         "negative": 387,
         "event_ids_positive": [
+          3525,
           3521,
           3520,
           3519,
@@ -77913,6 +77958,7 @@
           2913
         ],
         "event_ids_negative": [
+          3526,
           3524,
           3523,
           3522,
@@ -78298,14 +78344,14 @@
           2918,
           2917,
           2912,
-          2911,
-          2910
+          2911
         ]
       },
       "UDHR": {
-        "positive": 82,
+        "positive": 83,
         "negative": 296,
         "event_ids_positive": [
+          3525,
           3519,
           3509,
           3499,
@@ -78390,6 +78436,7 @@
           2915
         ],
         "event_ids_negative": [
+          3526,
           3524,
           3522,
           3517,
@@ -78684,8 +78731,7 @@
           2918,
           2917,
           2912,
-          2911,
-          2910
+          2911
         ]
       },
       "ILO": {
@@ -79059,7 +79105,7 @@
       },
       "PB": {
         "positive": 102,
-        "negative": 87,
+        "negative": 86,
         "event_ids_positive": [
           3520,
           3512,
@@ -79250,20 +79296,19 @@
           2937,
           2934,
           2931,
-          2928,
-          2910
+          2928
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 48.8,
-      "mainstream_pct": 51.2,
+      "niche_pct": 48.0,
+      "mainstream_pct": 52.0,
       "total_sources_used": 123,
-      "articles_processed": 615
+      "articles_processed": 616
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 615,
+      "total_events": 616,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -79431,9 +79476,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 90,
+        "count": 89,
         "burn_count": 47,
-        "mint_count": 43,
+        "mint_count": 42,
         "event_ids": [
           3521,
           3518,
@@ -79523,8 +79568,7 @@
           2924,
           2922,
           2921,
-          2913,
-          2910
+          2913
         ]
       },
       {
@@ -79842,24 +79886,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 226,
+      "total_burn": 227,
       "direct_action": {
-        "count": 192,
+        "count": 193,
         "pct": 85.0
       },
       "editorial_consciousness": {
         "count": 23,
-        "pct": 10.2
+        "pct": 10.1
       },
       "untyped": {
         "count": 11,
-        "pct": 4.9
+        "pct": 4.8
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1170,
+      "total_burn": 1171,
       "direct_action": {
-        "count": 836,
+        "count": 837,
         "pct": 71.5
       },
       "editorial_consciousness": {
@@ -79887,9 +79931,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2346,
+      "total_mint": 2347,
       "direct_action": {
-        "count": 1712,
+        "count": 1713,
         "pct": 73.0
       },
       "editorial_alarm": {
@@ -79898,13 +79942,13 @@
       },
       "untyped": {
         "count": 487,
-        "pct": 20.8
+        "pct": 20.7
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 229,
-      "institutional": 386,
-      "citizen_ratio": 0.372,
+      "citizen": 228,
+      "institutional": 388,
+      "citizen_ratio": 0.37,
       "daily": [
         {
           "date": "2026-06-11",
@@ -79939,7 +79983,7 @@
         {
           "date": "2026-06-17",
           "citizen": 46,
-          "institutional": 70
+          "institutional": 72
         }
       ],
       "event_ids_citizen": [
@@ -80170,10 +80214,11 @@
         2933,
         2932,
         2925,
-        2923,
-        2910
+        2923
       ],
       "event_ids_institutional": [
+        3526,
+        3525,
         3524,
         3523,
         3522,
