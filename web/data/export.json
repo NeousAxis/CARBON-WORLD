@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-17T14:38:22.832406+00:00",
-  "total_events": 3479,
+  "generated_at": "2026-06-17T15:05:13.423664+00:00",
+  "total_events": 3481,
   "total_burned": 5247872870,
-  "total_minted": 4749418289,
+  "total_minted": 4750618289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3481,
+      "event_title": "Sydney-to-London unveiled as first route for Qantas's Project Sunrise",
+      "event_url": "https://www.abc.net.au/news/2026-06-18/qantas-project-sunrise-london-sydney/106811530",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.31,
+      "confidence": 7,
+      "justification": "Ultra-long-haul flights undermine climate goals despite technological novelty. | The launch of non-stop Sydney-to-London flights represents a technological achievement but carries significant environmental costs. While it reduces stopover-related emissions, the overall per-passenger carbon footprint of ultra-long-haul flights remains high, conflicting with climate action goals. The innovation may also normalize high-emission travel patterns.",
+      "tx_hash": "4bj3C5gA6AeTcypgChSuLrAaQY6zA2MGGRCE1ks9otfmE86L1r3zgDzvtqsGaGstsFo1bptDhCitmcQv9SihuBEi",
+      "created_at": "2026-06-17T15:05:08.978268+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Qantas launching non-stop Sydney-to-London flights as part of Project Sunrise, reducing aviation emissions by eliminating a stopover and improving fuel efficiency\", \"affected_sdgs\": [9, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Long-haul non-stop flights increase per-passenger emissions compared to shorter segments, contributing to climate change and violating planetary boundaries\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Project Sunrise may incentivize further expansion of high-emission aviation routes, undermining global decarbonization efforts\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3480,
+      "event_title": "“They won’t produce a single litre of ammonia”: Indigenous Yoreme-Mayo opposition grows against ammonia plant in Sinaloa",
+      "event_url": "https://es.mongabay.com/2026/06/mexico-crece-oposicion-indigena-yoreme-mayo-planta-amoniaco-sinaloa/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -2.05,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The institutional action of constructing the ammonia plant undermines indigenous rights and environmental protections. | The indigenous Yoreme-Mayo community's sustained opposition to the ammonia plant represents a positive ethical action grounded in the protection of indigenous rights and environmental integrity. However, the construction of the plant itself undermines thes",
+      "tx_hash": "4NBUabbyQ27Azv2uav38go2UjzwtuUNgMyjAmU3Yjr86S7qESopJCmXcFhD3nMyTs7Eyb5rNdE56WGcRUuYvAc7o",
+      "created_at": "2026-06-17T15:05:08.862355+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Mexico",
+      "region": "North America",
+      "administration": "Mexico-Morena",
+      "positive_aspects_json": "[{\"description\": \"Indigenous Yoreme-Mayo community actively opposes the construction of an ammonia plant in Topolobampo, Sinaloa, demonstrating sustained resistance since 2014\", \"affected_sdgs\": [10, 11, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Community-led opposition led by named defender Melina Maldonado, evidencing organized citizen action with measurable duration and impact\", \"affected_sdgs\": [10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Construction of an ammonia plant by Gas y Petroquímica de Occidente (GPO) in Topolobampo, Sinaloa, threatens indigenous rights and environmental integrity\", \"affected_sdgs\": [6, 13, 14, 15], \"violated_rights\": [\"UNDRIP Article 29\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
     {
       "id": 3479,
       "event_title": "Scientists identify 165,000 km² of coral reefs capable of surviving climate crisis",
@@ -76607,8 +76651,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.442,
-        "events": 43
+        "burn_ratio": 0.432,
+        "events": 44
       },
       {
         "region": "Africa",
@@ -76634,8 +76678,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.707,
-        "events": 133
+        "mint_ratio": 0.709,
+        "events": 134
       },
       {
         "region": "Asia",
@@ -76686,7 +76730,7 @@
       },
       {
         "date": "2026-06-17",
-        "net_minted": 93260000,
+        "net_minted": 94460000,
         "net_burned": 96390000
       }
     ],
@@ -76704,7 +76748,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 214,
-        "negative": 383,
+        "negative": 385,
         "event_ids_positive": [
           3476,
           3470,
@@ -76922,6 +76966,8 @@
           2870
         ],
         "event_ids_negative": [
+          3481,
+          3480,
           3479,
           3478,
           3477,
@@ -77808,7 +77854,7 @@
       },
       "UNDRIP": {
         "positive": 53,
-        "negative": 84,
+        "negative": 85,
         "event_ids_positive": [
           3476,
           3465,
@@ -77865,6 +77911,7 @@
           2884
         ],
         "event_ids_negative": [
+          3480,
           3478,
           3474,
           3473,
@@ -77953,7 +78000,7 @@
       },
       "Animal": {
         "positive": 62,
-        "negative": 36,
+        "negative": 37,
         "event_ids_positive": [
           3476,
           3470,
@@ -78019,6 +78066,7 @@
           2876
         ],
         "event_ids_negative": [
+          3480,
           3477,
           3447,
           3443,
@@ -78059,7 +78107,7 @@
       },
       "PB": {
         "positive": 102,
-        "negative": 80,
+        "negative": 82,
         "event_ids_positive": [
           3470,
           3466,
@@ -78165,6 +78213,8 @@
           2870
         ],
         "event_ids_negative": [
+          3481,
+          3480,
           3479,
           3477,
           3460,
@@ -78252,11 +78302,11 @@
       "niche_pct": 48.8,
       "mainstream_pct": 51.2,
       "total_sources_used": 125,
-      "articles_processed": 610
+      "articles_processed": 612
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 610,
+      "total_events": 612,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -78507,10 +78557,11 @@
       },
       {
         "name": "Construction",
-        "count": 65,
+        "count": 66,
         "burn_count": 31,
-        "mint_count": 34,
+        "mint_count": 35,
         "event_ids": [
+          3480,
           3466,
           3445,
           3434,
@@ -78692,10 +78743,11 @@
       },
       {
         "name": "Transport",
-        "count": 34,
+        "count": 35,
         "burn_count": 16,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          3481,
           3442,
           3428,
           3423,
@@ -78853,14 +78905,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 385,
+      "total_mint": 387,
       "direct_action": {
-        "count": 365,
-        "pct": 94.8
+        "count": 366,
+        "pct": 94.6
       },
       "editorial_alarm": {
-        "count": 18,
-        "pct": 4.7
+        "count": 19,
+        "pct": 4.9
       },
       "untyped": {
         "count": 2,
@@ -78868,13 +78920,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2316,
+      "total_mint": 2318,
       "direct_action": {
-        "count": 1686,
+        "count": 1687,
         "pct": 72.8
       },
       "editorial_alarm": {
-        "count": 143,
+        "count": 144,
         "pct": 6.2
       },
       "untyped": {
@@ -78883,9 +78935,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 224,
-      "institutional": 386,
-      "citizen_ratio": 0.367,
+      "citizen": 225,
+      "institutional": 387,
+      "citizen_ratio": 0.368,
       "daily": [
         {
           "date": "2026-06-11",
@@ -78919,11 +78971,12 @@
         },
         {
           "date": "2026-06-17",
-          "citizen": 30,
-          "institutional": 41
+          "citizen": 31,
+          "institutional": 42
         }
       ],
       "event_ids_citizen": [
+        3480,
         3476,
         3474,
         3471,
@@ -79150,6 +79203,7 @@
         2870
       ],
       "event_ids_institutional": [
+        3481,
         3479,
         3478,
         3477,
