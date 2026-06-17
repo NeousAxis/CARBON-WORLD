@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-17T10:05:30.138092+00:00",
-  "total_events": 3447,
+  "generated_at": "2026-06-17T10:34:44.168447+00:00",
+  "total_events": 3448,
   "total_burned": 5204622870,
-  "total_minted": 4697143289,
+  "total_minted": 4698393289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3448,
+      "event_title": "Europe spends billions to return migrants: why this strategy is not working",
+      "event_url": "https://theconversation.com/leurope-depense-des-milliards-pour-renvoyer-les-migrants-pourquoi-cette-strategie-ne-fonctionne-pas-284613",
+      "event_source": "The Conversation Africa",
+      "decision": "MINT",
+      "amount_crbn": 1250000,
+      "final_score": -1.57,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; EU's enforcement-heavy return strategy violates rights and fails. | While Europe's financial and control-based return strategy for migrants is an attempt to manage migration (SDG 10, 16), it is failing and likely violating fundamental rights (UDHR 14, 2; CRC 22). The negative impact outweighs the limited positive intent.",
+      "tx_hash": "3jt9YgCDGL6NkZGxAXdVGUVDcjrrb1MmGXtFWAH1bE7JFrrgt751DXNzG3AsDcwypfnYHa9DMtRKNmxeRJGBs75u",
+      "created_at": "2026-06-17T10:34:39.629432+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Europe is attempting to manage migration flows through financial and control mechanisms.\", \"affected_sdgs\": [10, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The return strategy is failing, indicating ineffective migration management and potential human rights violations.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"UDHR Article 2\", \"CRC Article 22\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3447,
       "event_title": "POWER SHIFT ANALYSIS: Aucamp rises as Steenhuisen falls in DA’s proposed Cabinet reshuffle",
@@ -75858,14 +75880,14 @@
         "total_amount": 20875000
       },
       {
-        "country": "European Union",
-        "count": 16,
-        "total_amount": 16475000
-      },
-      {
         "country": "United Kingdom",
         "count": 15,
         "total_amount": 26707500
+      },
+      {
+        "country": "China",
+        "count": 14,
+        "total_amount": 34000000
       }
     ],
     "top_countries_burn": [
@@ -75918,8 +75940,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.31,
-        "events": 174
+        "burn_ratio": 0.312,
+        "events": 173
       }
     ],
     "top_regions_destructive": [
@@ -75935,8 +75957,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.69,
-        "events": 174
+        "mint_ratio": 0.688,
+        "events": 173
       },
       {
         "region": "Africa",
@@ -75982,7 +76004,7 @@
       },
       {
         "date": "2026-06-17",
-        "net_minted": 40985000,
+        "net_minted": 42235000,
         "net_burned": 53140000
       }
     ],
@@ -76000,7 +76022,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 212,
-        "negative": 381,
+        "negative": 377,
         "event_ids_positive": [
           3445,
           3440,
@@ -76216,6 +76238,7 @@
           2847
         ],
         "event_ids_negative": [
+          3448,
           3447,
           3446,
           3444,
@@ -76591,17 +76614,12 @@
           2854,
           2853,
           2852,
-          2848,
-          2845,
-          2844,
-          2843,
-          2842,
-          2841
+          2848
         ]
       },
       "UDHR": {
         "positive": 82,
-        "negative": 290,
+        "negative": 287,
         "event_ids_positive": [
           3436,
           3432,
@@ -76687,6 +76705,7 @@
           2847
         ],
         "event_ids_negative": [
+          3448,
           3442,
           3441,
           3439,
@@ -76972,16 +76991,12 @@
           2855,
           2854,
           2853,
-          2852,
-          2845,
-          2844,
-          2843,
-          2841
+          2852
         ]
       },
       "ILO": {
         "positive": 9,
-        "negative": 20,
+        "negative": 16,
         "event_ids_positive": [
           3293,
           3283,
@@ -77009,16 +77024,12 @@
           3032,
           2991,
           2964,
-          2883,
-          2845,
-          2844,
-          2843,
-          2841
+          2883
         ]
       },
       "CRC": {
         "positive": 16,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           3436,
           3385,
@@ -77038,6 +77049,7 @@
           2884
         ],
         "event_ids_negative": [
+          3448,
           3446,
           3420,
           3414,
@@ -77329,7 +77341,7 @@
       },
       "PB": {
         "positive": 104,
-        "negative": 82,
+        "negative": 81,
         "event_ids_positive": [
           3445,
           3440,
@@ -77517,30 +77529,30 @@
           2865,
           2864,
           2852,
-          2848,
-          2842
+          2848
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 51.6,
-      "mainstream_pct": 48.4,
+      "niche_pct": 52.4,
+      "mainstream_pct": 47.6,
       "total_sources_used": 126,
-      "articles_processed": 607
+      "articles_processed": 602
     },
     "cache_hit_rate_7d": {
-      "hits": 14,
-      "total_events": 607,
-      "pct": 2.3
+      "hits": 13,
+      "total_events": 602,
+      "pct": 2.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 38,
+        "count": 35,
         "burn_count": 16,
-        "mint_count": 22,
+        "mint_count": 19,
         "event_ids": [
+          3448,
           3430,
           3357,
           3356,
@@ -77574,11 +77586,7 @@
           2978,
           2972,
           2957,
-          2858,
-          2845,
-          2844,
-          2843,
-          2841
+          2858
         ]
       },
       {
@@ -77677,9 +77685,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 88,
+        "count": 87,
         "burn_count": 49,
-        "mint_count": 39,
+        "mint_count": 38,
         "event_ids": [
           3445,
           3444,
@@ -77767,8 +77775,7 @@
           2868,
           2865,
           2860,
-          2851,
-          2842
+          2851
         ]
       },
       {
@@ -77847,10 +77854,11 @@
       },
       {
         "name": "Finance",
-        "count": 50,
+        "count": 51,
         "burn_count": 20,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          3448,
           3441,
           3364,
           3360,
@@ -78119,24 +78127,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 384,
+      "total_mint": 379,
       "direct_action": {
-        "count": 363,
-        "pct": 94.5
+        "count": 359,
+        "pct": 94.7
       },
       "editorial_alarm": {
         "count": 18,
         "pct": 4.7
       },
       "untyped": {
-        "count": 3,
-        "pct": 0.8
+        "count": 2,
+        "pct": 0.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2294,
+      "total_mint": 2295,
       "direct_action": {
-        "count": 1664,
+        "count": 1665,
         "pct": 72.5
       },
       "editorial_alarm": {
@@ -78150,8 +78158,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 218,
-      "institutional": 389,
-      "citizen_ratio": 0.359,
+      "institutional": 384,
+      "citizen_ratio": 0.362,
       "daily": [
         {
           "date": "2026-06-11",
@@ -78186,7 +78194,7 @@
         {
           "date": "2026-06-17",
           "citizen": 16,
-          "institutional": 23
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -78410,6 +78418,7 @@
         2847
       ],
       "event_ids_institutional": [
+        3448,
         3446,
         3444,
         3442,
@@ -78792,13 +78801,7 @@
         2856,
         2855,
         2849,
-        2848,
-        2846,
-        2845,
-        2844,
-        2843,
-        2842,
-        2841
+        2848
       ]
     }
   }
