@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-17T22:04:29.748501+00:00",
-  "total_events": 3520,
-  "total_burned": 5305922870,
-  "total_minted": 4812593289,
+  "generated_at": "2026-06-17T22:35:26.193232+00:00",
+  "total_events": 3522,
+  "total_burned": 5312922870,
+  "total_minted": 4812918289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3522,
+      "event_title": "Under Kevin Warsh, the Fed reiterates its determination to fight inflation in the United States",
+      "event_url": "https://www.letemps.ch/articles/sous-kevin-warsh-la-fed-repete-sa-determination-a-lutter-contre-l-inflation-aux-etats-unis",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 325000,
+      "final_score": -1.05,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Both analysts agree on MINT; consensus on economic stability vs. harm trade-off. | The Fed's decision to maintain high interest rates prioritizes macroeconomic stability but disproportionately harms vulnerable populations. Warsh's institutional reforms aim to improve transparency but may be influenced by political pressures, raising concerns about Fed independence and long-term",
+      "tx_hash": "5dNJ6tmWYu5XAQNmEKfck9HzLLu6dBgyhLnN6DjQbetFFJxhrN4wY3exCUvgivizPn6sHgUZ51NjgLZvYAVHw1iC",
+      "created_at": "2026-06-17T22:35:21.400743+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Fed maintains high interest rates to combat persistent inflation exceeding 2% target, prioritizing price stability and economic discipline\", \"affected_sdgs\": [8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Kevin Warsh announces five working groups to review Fed operations, including communication and asset size, signaling institutional self-assessment and potential reforms\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"High interest rates disproportionately burden low-income Americans, exacerbating inequality and reducing purchasing power\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Fed's inflation-fighting stance may align with political pressure from Trump administration, risking institutional independence and credibility\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3521,
+      "event_title": "Can PJM’s New ‘Fast Track’ Process Accelerate Interconnection?",
+      "event_url": "https://www.renewableenergyworld.com/power-grid/can-pjms-new-fast-track-process-accelerate-interconnection/",
+      "event_source": "Renewable Energy World",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.0,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] FERC's approval of PJM's EIT accelerates clean energy interconnection, supporting climate goals despite potential exclusion of smaller projects. | The approval of PJM's Expedited Interconnection Track (EIT) represents a significant step toward accelerating clean energy projects, directly supporting SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action). While the foc",
+      "tx_hash": "4onBVtHjxn9xEh5QjDdSdRzvTKcAQdJSK3f2vbjdMXbNsUmdXezS8ysQuJqKLtvq2rHvATTzNBdXq8onP1FhfxYN",
+      "created_at": "2026-06-17T22:35:21.311856+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FERC approves PJM's Expedited Interconnection Track (EIT) to fast-track 'shovel-ready' generation projects, accelerating clean energy deployment and grid modernization\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3520,
       "event_title": "The horseshoe bat, a great ally against pests: eats up to 264 grams per night",
@@ -77450,8 +77494,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 90,
-        "total_amount": 231535000
+        "count": 91,
+        "total_amount": 231860000
       },
       {
         "country": "Switzerland",
@@ -77477,8 +77521,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 35,
-        "total_amount": 144475000
+        "count": 36,
+        "total_amount": 151475000
       },
       {
         "country": "France",
@@ -77536,8 +77580,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.711,
-        "events": 135
+        "mint_ratio": 0.708,
+        "events": 137
       },
       {
         "region": "Asia",
@@ -77588,8 +77632,8 @@
       },
       {
         "date": "2026-06-17",
-        "net_minted": 156435000,
-        "net_burned": 154440000
+        "net_minted": 156760000,
+        "net_burned": 161440000
       }
     ],
     "event_of_the_day": {
@@ -77605,9 +77649,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 218,
-        "negative": 387,
+        "positive": 219,
+        "negative": 388,
         "event_ids_positive": [
+          3521,
           3520,
           3519,
           3515,
@@ -77828,6 +77873,7 @@
           2905
         ],
         "event_ids_negative": [
+          3522,
           3518,
           3517,
           3516,
@@ -78219,7 +78265,7 @@
       },
       "UDHR": {
         "positive": 84,
-        "negative": 296,
+        "negative": 297,
         "event_ids_positive": [
           3519,
           3509,
@@ -78307,6 +78353,7 @@
           2908
         ],
         "event_ids_negative": [
+          3522,
           3517,
           3516,
           3513,
@@ -79181,11 +79228,11 @@
       "niche_pct": 48.4,
       "mainstream_pct": 51.6,
       "total_sources_used": 124,
-      "articles_processed": 618
+      "articles_processed": 620
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 618,
+      "total_events": 620,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -79353,10 +79400,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 90,
-        "burn_count": 47,
+        "count": 91,
+        "burn_count": 48,
         "mint_count": 43,
         "event_ids": [
+          3521,
           3518,
           3506,
           3504,
@@ -79767,9 +79815,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 229,
+      "total_burn": 230,
       "direct_action": {
-        "count": 195,
+        "count": 196,
         "pct": 85.2
       },
       "editorial_consciousness": {
@@ -79782,10 +79830,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1169,
+      "total_burn": 1170,
       "direct_action": {
-        "count": 835,
-        "pct": 71.4
+        "count": 836,
+        "pct": 71.5
       },
       "editorial_consciousness": {
         "count": 82,
@@ -79793,18 +79841,18 @@
       },
       "untyped": {
         "count": 252,
-        "pct": 21.6
+        "pct": 21.5
       }
     },
     "mint_composition_7d": {
-      "total_mint": 389,
+      "total_mint": 390,
       "direct_action": {
-        "count": 365,
+        "count": 366,
         "pct": 93.8
       },
       "editorial_alarm": {
         "count": 22,
-        "pct": 5.7
+        "pct": 5.6
       },
       "untyped": {
         "count": 2,
@@ -79812,10 +79860,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2343,
+      "total_mint": 2344,
       "direct_action": {
-        "count": 1709,
-        "pct": 72.9
+        "count": 1710,
+        "pct": 73.0
       },
       "editorial_alarm": {
         "count": 147,
@@ -79828,8 +79876,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 232,
-      "institutional": 386,
-      "citizen_ratio": 0.375,
+      "institutional": 388,
+      "citizen_ratio": 0.374,
       "daily": [
         {
           "date": "2026-06-11",
@@ -79864,7 +79912,7 @@
         {
           "date": "2026-06-17",
           "citizen": 46,
-          "institutional": 66
+          "institutional": 68
         }
       ],
       "event_ids_citizen": [
@@ -80102,6 +80150,8 @@
         2905
       ],
       "event_ids_institutional": [
+        3522,
+        3521,
         3520,
         3519,
         3518,
