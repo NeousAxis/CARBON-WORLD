@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-17T04:35:43.331134+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-06-17T06:05:41.027573+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 741,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-07T17:35:14.731979+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 773,
+      "event_title": "Hokkaido tour boat operator sentenced to five years’ jail over fatal 2022 sinking",
+      "event_url": "https://www.japantimes.co.jp/news/2026/06/17/japan/crime-legal/hokkaido-boat-accident-ruling/",
+      "event_source": "Japan Times",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Court sentences tour boat operator to five years' imprisonment for negligence leading to the sinking of a passenger vessel, resulting in 20 deaths and missing persons.\", \"affected_sdgs\": [16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The court's ruling enforces accountability for gross negligence causing mass fatalities, aligning with justice and human rights frameworks. The severity of the sentence reflects the gravity of the harm, reinforcing societal norms against reckless endangerment of life.\", \"snapshot_score\": 8.5, \"trajectory_score\": 1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Appeal by the operator\", \"New evidence of systemic failures in maritime safety regulations\", \"Policy changes in tour boat oversight\"], \"revaluation_checkpoint\": \"2028-06-17\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Appeal overturns sentence, operator receives reduced penalty or acquittal due to legal technicalities.\", \"probability\": 0.25, \"score\": -5}, {\"name\": \"B\", \"description\": \"Sentence stands, operator serves full term, and maritime safety regulations are strengthened nationwide.\", \"probability\": 0.55, \"score\": 9}, {\"name\": \"C\", \"description\": \"Operator serves sentence but systemic failures persist, leading to future incidents.\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 5.15, \"final_score\": 6.36, \"decision\": \"BURN\", \"amount_cbwd\": 5000000, \"confidence\": 9, \"justification\": \"Court upholds justice for negligent manslaughter, reinforcing accountability.\", \"event_country\": \"Japan\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Court sentences tour boat operator to five years' imprisonment for negligence leading to the fatal sinking of a tour boat, enforcing accountability for safety violations.\", \"affected_sdgs\": [3, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Tragic loss of 20 lives (18 passengers and 2 crew) in a preventable tour boat sinking, highlighting systemic failures in maritime safety regulations.\", \"affected_sdgs\": [3, 14], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The court's ruling enforces accountability for gross negligence, aligning with SDG 3 (Good Health) and SDG 16 (Peace & Justice) by upholding the right to life and safety. However, the magnitude of the tragedy underscores systemic failures in maritime safety, which the ruling only partially addresses. The net ethical judgment is cautiously positive due to the enforcement of justice, despite the severe loss of life.\", \"snapshot_score\": 4.5, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Implementation of stricter maritime safety regulations\", \"Public inquiry findings on regulatory gaps\", \"Compensation and support for victims' families\", \"Changes in tour boat operator licensing standards\"], \"revaluation_checkpoint\": \"2028-06-17\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strict new maritime safety regulations are enacted and enforced, preventing future tragedies and restoring public trust in tour boat operations.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Moderate improvements in safety regulations are implemented, but gaps remain, leading to occasional incidents.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Inadequate regulatory reforms fail to address systemic issues, and another major incident occurs within five years.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 2.05, \"final_score\": 2.64, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Enforcement of accountability is positive but overshadowed by the tragedy's scale and systemic failures.\", \"event_country\": \"Japan\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.57, \"confidence\": 10, \"amount_cbwd\": 5000000, \"justification\": \"Institutional action (5-year sentence) punishes negligent harm, reinforcing accountability and rights protection.\", \"disagreement\": true, \"reason\": \"Analyst A correctly identified the institutional action (court sentence) as punitive for negligent manslaughter, while Analyst B focused on the tragedy's scale rather than the corrective justice response.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 5000000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-06-17T06:05:35.700520+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
