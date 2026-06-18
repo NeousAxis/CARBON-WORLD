@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-18T08:07:43.984339+00:00",
-  "total_events": 3555,
-  "total_burned": 5373597870,
-  "total_minted": 4843643289,
+  "generated_at": "2026-06-18T08:34:50.898029+00:00",
+  "total_events": 3557,
+  "total_burned": 5378597870,
+  "total_minted": 4844393289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3557,
+      "event_title": "France boils, and the government congratulates itself on (meager) climate adaptation progress",
+      "event_url": "https://reporterre.net/Climat-la-France-cuit-et-le-gouvernement-se-felicite-des-maigres-avancees",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 750000,
+      "final_score": -2.28,
+      "confidence": 8,
+      "justification": "Government's inadequate climate adaptation response during active crisis undermines public trust and fails to protect vulnerable populations. | The French government's action demonstrates minimal institutional engagement with climate adaptation by publicly acknowledging the issue, but this is overshadowed by the inadequacy of the plan and the inappropriate timing of self-congratulation during a severe heatwave. The positive aspect of awareness is outweighed by the negative aspects of insufficien",
+      "tx_hash": "2dpYFauA975n7tG9faduAshEKRNKump2sYtoNJm8i5iSdXKNR6c5qGsfDsvcP1XWdH3zFTZNjcAMPautiUkQVp34",
+      "created_at": "2026-06-18T08:34:46.141752+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"French government acknowledges and publicly reports on climate adaptation progress, demonstrating institutional awareness of climate risks\", \"affected_sdgs\": [13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Government's climate adaptation plan is described as mal financé (underfunded) and largely insufficient, failing to address the severity of current heatwave impacts\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Public self-congratulation during an active heatwave crisis appears tone-deaf and inappropriate, undermining public trust in climate governance\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 3556,
+      "event_title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
+      "event_url": "https://www.who.int/news/item/17-06-2026-who-issues-comprehensive-guidelines-on-filovirus-disease--including-ebola-and-marburg-disease",
+      "event_source": "WHO News",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.62,
+      "confidence": 9,
+      "justification": "WHO's evidence-based filovirus guidelines save lives and align with global health rights. | The WHO's issuance of comprehensive filovirus disease guidelines is a clear public health victory, directly supporting SDG 3 (Good Health and Well-being) by providing evidence-based care standards that can save lives during outbreaks. There are no identifiable negative ethical aspects in this action, as it aligns with universal health rights and improves clinical outcomes without trade-offs.",
+      "tx_hash": "3kzrrU2eEf1xLEH6CE5V7oVs7TdCkZaWnh2h5j8J9W1F3GjgdxwHa2sKVJfXY2dLjRfCRTgiYvjgEvybL4TMDBTP",
+      "created_at": "2026-06-18T08:34:45.997465+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"WHO releases first comprehensive clinical management guidelines for filovirus diseases (Ebola and Marburg), providing 16 evidence-based recommendations to improve patient survival through early supportive care.\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Guidelines address a critical public health need in the Democratic Republic of the Congo during an active Ebola outbreak, demonstrating rapid, targeted action to reduce mortality and improve health outcomes.\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3555,
       "event_title": "Warning over Australia's ambitions to become a global data centre hotspot",
@@ -78235,8 +78279,8 @@
       },
       {
         "country": "France",
-        "count": 23,
-        "total_amount": 22400000
+        "count": 24,
+        "total_amount": 23150000
       },
       {
         "country": "United Kingdom",
@@ -78289,8 +78333,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.352,
-        "events": 176
+        "burn_ratio": 0.35,
+        "events": 177
       },
       {
         "region": "Asia",
@@ -78316,8 +78360,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.648,
-        "events": 176
+        "mint_ratio": 0.65,
+        "events": 177
       },
       {
         "region": "Africa",
@@ -78358,8 +78402,8 @@
       },
       {
         "date": "2026-06-18",
-        "net_minted": 29650000,
-        "net_burned": 55675000
+        "net_minted": 30400000,
+        "net_burned": 60675000
       }
     ],
     "event_of_the_day": {
@@ -78375,9 +78419,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 213,
-        "negative": 384,
+        "positive": 214,
+        "negative": 385,
         "event_ids_positive": [
+          3556,
           3553,
           3550,
           3547,
@@ -78593,6 +78638,7 @@
           2951
         ],
         "event_ids_negative": [
+          3557,
           3555,
           3554,
           3552,
@@ -78980,9 +79026,10 @@
         ]
       },
       "UDHR": {
-        "positive": 83,
-        "negative": 291,
+        "positive": 84,
+        "negative": 292,
         "event_ids_positive": [
+          3556,
           3553,
           3550,
           3541,
@@ -79068,6 +79115,7 @@
           2953
         ],
         "event_ids_negative": [
+          3557,
           3554,
           3552,
           3551,
@@ -79919,11 +79967,11 @@
       "niche_pct": 49.6,
       "mainstream_pct": 50.4,
       "total_sources_used": 121,
-      "articles_processed": 608
+      "articles_processed": 610
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 608,
+      "total_events": 610,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -80033,10 +80081,11 @@
       },
       {
         "name": "WHO",
-        "count": 6,
-        "burn_count": 5,
+        "count": 7,
+        "burn_count": 6,
         "mint_count": 1,
         "event_ids": [
+          3556,
           3552,
           3492,
           3332,
@@ -80504,9 +80553,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 224,
+      "total_burn": 225,
       "direct_action": {
-        "count": 191,
+        "count": 192,
         "pct": 85.3
       },
       "editorial_consciousness": {
@@ -80519,9 +80568,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1183,
+      "total_burn": 1184,
       "direct_action": {
-        "count": 848,
+        "count": 849,
         "pct": 71.7
       },
       "editorial_consciousness": {
@@ -80534,14 +80583,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 384,
+      "total_mint": 385,
       "direct_action": {
         "count": 361,
-        "pct": 94.0
+        "pct": 93.8
       },
       "editorial_alarm": {
-        "count": 23,
-        "pct": 6.0
+        "count": 24,
+        "pct": 6.2
       },
       "untyped": {
         "count": 0,
@@ -80549,13 +80598,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2364,
+      "total_mint": 2365,
       "direct_action": {
         "count": 1728,
         "pct": 73.1
       },
       "editorial_alarm": {
-        "count": 149,
+        "count": 150,
         "pct": 6.3
       },
       "untyped": {
@@ -80564,8 +80613,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 228,
-      "institutional": 380,
+      "citizen": 229,
+      "institutional": 381,
       "citizen_ratio": 0.375,
       "daily": [
         {
@@ -80600,11 +80649,12 @@
         },
         {
           "date": "2026-06-18",
-          "citizen": 9,
-          "institutional": 20
+          "citizen": 10,
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
+        3557,
         3554,
         3545,
         3544,
@@ -80835,6 +80885,7 @@
         2948
       ],
       "event_ids_institutional": [
+        3556,
         3555,
         3553,
         3552,
