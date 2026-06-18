@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-18T02:05:21.164831+00:00",
-  "total_events": 3531,
+  "generated_at": "2026-06-18T02:34:21.971972+00:00",
+  "total_events": 3532,
   "total_burned": 5328597870,
-  "total_minted": 4815993289,
+  "total_minted": 4817243289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3532,
+      "event_title": "European Parliament approves new generation of GMOs",
+      "event_url": "https://www.rfi.fr/fr/environnement/20260617-le-parlement-europ%C3%A9en-approuve-les-ngt-une-nouvelle-g%C3%A9n%C3%A9ration-d-ogm",
+      "event_source": "RFI FR Environnement",
+      "decision": "MINT",
+      "amount_crbn": 1250000,
+      "final_score": 1.62,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables agricultural innovation with potential ecological risks. | The approval of new genomic techniques in agriculture presents a mixed ethical outcome. While it supports food security and climate resilience (SDG 2, 12, 13), it also raises ecological and health concerns (SDG 15). The net impact depends on the regulation and transparency of implementati",
+      "tx_hash": "5n99M3FkqxZjvxghNP1uqARMxA5XPNuYZMujPSifEvgfbZcxmjEqzMWWLeNXQwEU7HvgmCoTeLFYLJpETNsJxS2e",
+      "created_at": "2026-06-18T02:34:16.862139+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Approval of new genomic techniques (NGT) in agriculture aims to increase crop resilience to drought and disease.\", \"affected_sdgs\": [2, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Approval of NGT raises concerns among environmental advocates and farmers about potential ecological and health risks.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3531,
       "event_title": "Tipping the Balance: Allee Thresholds, Saddle-Node Bifurcations, and Optimal Sterile-Male Release Strategies for Anopheles Mosquitoes",
@@ -77702,8 +77724,8 @@
       },
       {
         "country": "European Union",
-        "count": 25,
-        "total_amount": 65575000
+        "count": 26,
+        "total_amount": 66825000
       },
       {
         "country": "France",
@@ -77719,8 +77741,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 34,
-        "total_amount": 150275000
+        "count": 33,
+        "total_amount": 149575000
       },
       {
         "country": "France",
@@ -77778,8 +77800,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.716,
-        "events": 134
+        "mint_ratio": 0.722,
+        "events": 133
       },
       {
         "region": "Asia",
@@ -77830,7 +77852,7 @@
       },
       {
         "date": "2026-06-18",
-        "net_minted": 2000000,
+        "net_minted": 3250000,
         "net_burned": 10675000
       }
     ],
@@ -77847,8 +77869,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 216,
-        "negative": 384,
+        "positive": 214,
+        "negative": 385,
         "event_ids_positive": [
           3531,
           3530,
@@ -78063,11 +78085,10 @@
           2935,
           2933,
           2926,
-          2924,
-          2922,
-          2921
+          2924
         ],
         "event_ids_negative": [
+          3532,
           3529,
           3528,
           3526,
@@ -78455,7 +78476,7 @@
         ]
       },
       "UDHR": {
-        "positive": 83,
+        "positive": 82,
         "negative": 292,
         "event_ids_positive": [
           3530,
@@ -78539,8 +78560,7 @@
           2947,
           2946,
           2926,
-          2924,
-          2922
+          2924
         ],
         "event_ids_negative": [
           3529,
@@ -79099,7 +79119,7 @@
         ]
       },
       "Animal": {
-        "positive": 64,
+        "positive": 63,
         "negative": 37,
         "event_ids_positive": [
           3531,
@@ -79164,8 +79184,7 @@
           2943,
           2941,
           2935,
-          2933,
-          2921
+          2933
         ],
         "event_ids_negative": [
           3507,
@@ -79208,7 +79227,7 @@
         ]
       },
       "PB": {
-        "positive": 100,
+        "positive": 99,
         "negative": 86,
         "event_ids_positive": [
           3520,
@@ -79309,8 +79328,7 @@
           2941,
           2935,
           2933,
-          2924,
-          2921
+          2924
         ],
         "event_ids_negative": [
           3524,
@@ -79406,11 +79424,11 @@
       "niche_pct": 50.0,
       "mainstream_pct": 50.0,
       "total_sources_used": 124,
-      "articles_processed": 611
+      "articles_processed": 610
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 611,
+      "total_events": 610,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -79516,6 +79534,19 @@
         ]
       },
       {
+        "name": "European Parliament",
+        "count": 5,
+        "burn_count": 1,
+        "mint_count": 4,
+        "event_ids": [
+          3532,
+          3498,
+          3489,
+          3484,
+          3457
+        ]
+      },
+      {
         "name": "NATO",
         "count": 5,
         "burn_count": 1,
@@ -79539,18 +79570,6 @@
           3293,
           3215,
           3101
-        ]
-      },
-      {
-        "name": "European Parliament",
-        "count": 4,
-        "burn_count": 1,
-        "mint_count": 3,
-        "event_ids": [
-          3498,
-          3489,
-          3484,
-          3457
         ]
       },
       {
@@ -79578,8 +79597,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 88,
-        "burn_count": 46,
+        "count": 86,
+        "burn_count": 44,
         "mint_count": 42,
         "event_ids": [
           3521,
@@ -79667,15 +79686,13 @@
           2944,
           2942,
           2926,
-          2924,
-          2922,
-          2921
+          2924
         ]
       },
       {
         "name": "Construction",
-        "count": 66,
-        "burn_count": 31,
+        "count": 64,
+        "burn_count": 29,
         "mint_count": 35,
         "event_ids": [
           3527,
@@ -79741,9 +79758,7 @@
           2944,
           2942,
           2932,
-          2926,
-          2922,
-          2921
+          2926
         ]
       },
       {
@@ -79939,8 +79954,8 @@
       },
       {
         "name": "Water",
-        "count": 19,
-        "burn_count": 8,
+        "count": 18,
+        "burn_count": 7,
         "mint_count": 11,
         "event_ids": [
           3510,
@@ -79960,16 +79975,16 @@
           3145,
           3093,
           2958,
-          2950,
-          2921
+          2950
         ]
       },
       {
         "name": "Agriculture",
-        "count": 13,
+        "count": 14,
         "burn_count": 6,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          3532,
           3520,
           3503,
           3431,
@@ -79987,18 +80002,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 227,
+      "total_burn": 225,
       "direct_action": {
-        "count": 193,
-        "pct": 85.0
+        "count": 191,
+        "pct": 84.9
       },
       "editorial_consciousness": {
         "count": 23,
-        "pct": 10.1
+        "pct": 10.2
       },
       "untyped": {
         "count": 11,
-        "pct": 4.8
+        "pct": 4.9
       }
     },
     "burn_composition_all_time": {
@@ -80017,9 +80032,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 384,
+      "total_mint": 385,
       "direct_action": {
-        "count": 361,
+        "count": 362,
         "pct": 94.0
       },
       "editorial_alarm": {
@@ -80032,9 +80047,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2349,
+      "total_mint": 2350,
       "direct_action": {
-        "count": 1714,
+        "count": 1715,
         "pct": 73.0
       },
       "editorial_alarm": {
@@ -80048,7 +80063,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 232,
-      "institutional": 379,
+      "institutional": 378,
       "citizen_ratio": 0.38,
       "daily": [
         {
@@ -80084,7 +80099,7 @@
         {
           "date": "2026-06-18",
           "citizen": 4,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -80322,6 +80337,7 @@
         2923
       ],
       "event_ids_institutional": [
+        3532,
         3530,
         3526,
         3525,
@@ -80698,9 +80714,7 @@
         2928,
         2927,
         2926,
-        2924,
-        2922,
-        2921
+        2924
       ]
     }
   }
