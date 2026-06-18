@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-18T22:06:37.056572+00:00",
-  "total_events": 3623,
-  "total_burned": 5467197870,
-  "total_minted": 5674158289,
+  "generated_at": "2026-06-18T22:35:34.176643+00:00",
+  "total_events": 3625,
+  "total_burned": 5475197870,
+  "total_minted": 5674308289,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 3625,
+      "event_title": "Trump administration abandons controversial dismantling of world-leading ocean observation network",
+      "event_url": "https://www.lemonde.fr/international/article/2026/06/19/l-administration-trump-renonce-au-demantelement-controverse-d-un-reseau-d-observation-oceanique-sans-egal-dans-le-monde_6704616_3210.html",
+      "event_source": "Le Monde Planete",
+      "decision": "BURN",
+      "amount_crbn": 8000000,
+      "final_score": 6.09,
+      "confidence": 9,
+      "justification": "Both analysts agree that preserving the ocean observation network is ethically positive and supports climate and marine science. | The decision to abandon the dismantling of a globally significant ocean observation network directly supports climate action (SDG 13) and marine life protection (SDG 14). It preserves scientific infrastructure essential for understanding planetary boundaries, aligning with planetary boundaries framework and SDG commitments. No negative ethical aspects are identified ",
+      "tx_hash": "cFePZcByNY43J5rTCFH3RXLuLj2hsbcAqMeMu3LzxmwibmvRRF73nRst9HC4oxaRf1VrmTczdFqpYJibPvHiVqx",
+      "created_at": "2026-06-18T22:35:28.926162+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Trump administration reverses plan to dismantle a world-leading ocean observation network, preserving critical climate and marine science infrastructure\", \"affected_sdgs\": [13, 14], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 3624,
+      "event_title": "STAT+: CMS recalculates Medicare Advantage star ratings again, adding more volatility to program",
+      "event_url": "https://www.statnews.com/2026/06/18/medicare-advantage-star-ratings-recalculated-volatility-industry-lawsuits/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.92,
+      "confidence": 7,
+      "justification": "Recalculations and inequitable bonus payments undermine healthcare stability and equity. | The Medicare Advantage star ratings system aims to improve healthcare quality but introduces volatility and potential inequities. While it incentivizes better outcomes, the recalculation process and massive bonus payments risk destabilizing the program and exacerbating disparities in healthcare access.",
+      "tx_hash": "3fasp8wt5MyHjQ3RL3f9hyb414YgiyX5unE77i5JseD6Uvkry6LjvxCyNxwoFo8mrwxCDFCPNsCSJr9eY5JQttBJ",
+      "created_at": "2026-06-18T22:35:28.821248+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Medicare Advantage star ratings system incentivizes high-quality healthcare plans through bonus payments, aligning with SDG 3 (Good Health and Well-being) by promoting better patient outcomes and accountability.\", \"affected_sdgs\": [3], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Recalculating star ratings introduces volatility and uncertainty for beneficiaries and insurers, potentially undermining trust in the program and destabilizing access to consistent healthcare services.\", \"affected_sdgs\": [3], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Bonus payments totaling $16 billion to high-rated plans may exacerbate healthcare inequities by disproportionately benefiting private insurers over traditional Medicare, raising concerns about SDG 10 (Reduced Inequalities).\", \"affected_sdgs\": [10], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3623,
       "event_title": "Some EU leaders furious at Costa official’s calls with the Kremlin",
@@ -79716,8 +79760,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 94,
-        "total_amount": 947360000
+        "count": 95,
+        "total_amount": 947510000
       },
       {
         "country": "Switzerland",
@@ -79743,8 +79787,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 30,
-        "total_amount": 137450000
+        "count": 31,
+        "total_amount": 145450000
       },
       {
         "country": "France",
@@ -79802,8 +79846,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.731,
-        "events": 134
+        "mint_ratio": 0.728,
+        "events": 136
       },
       {
         "region": "Asia",
@@ -79854,8 +79898,8 @@
       },
       {
         "date": "2026-06-18",
-        "net_minted": 860165000,
-        "net_burned": 149275000
+        "net_minted": 860315000,
+        "net_burned": 157275000
       }
     ],
     "event_of_the_day": {
@@ -79871,9 +79915,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 204,
-        "negative": 389,
+        "positive": 205,
+        "negative": 390,
         "event_ids_positive": [
+          3625,
           3621,
           3609,
           3608,
@@ -80080,6 +80125,7 @@
           3021
         ],
         "event_ids_negative": [
+          3624,
           3623,
           3622,
           3620,
@@ -81212,9 +81258,10 @@
         ]
       },
       "PB": {
-        "positive": 83,
+        "positive": 84,
         "negative": 92,
         "event_ids_positive": [
+          3625,
           3605,
           3593,
           3579,
@@ -81399,11 +81446,11 @@
       "niche_pct": 52.1,
       "mainstream_pct": 47.9,
       "total_sources_used": 121,
-      "articles_processed": 605
+      "articles_processed": 607
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 605,
+      "total_events": 607,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -81679,10 +81726,11 @@
       },
       {
         "name": "Construction",
-        "count": 65,
-        "burn_count": 28,
+        "count": 66,
+        "burn_count": 29,
         "mint_count": 37,
         "event_ids": [
+          3625,
           3611,
           3608,
           3604,
@@ -81985,9 +82033,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 215,
+      "total_burn": 216,
       "direct_action": {
-        "count": 184,
+        "count": 185,
         "pct": 85.6
       },
       "editorial_consciousness": {
@@ -82000,9 +82048,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1200,
+      "total_burn": 1201,
       "direct_action": {
-        "count": 864,
+        "count": 865,
         "pct": 72.0
       },
       "editorial_consciousness": {
@@ -82015,9 +82063,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 390,
+      "total_mint": 391,
       "direct_action": {
-        "count": 365,
+        "count": 366,
         "pct": 93.6
       },
       "editorial_alarm": {
@@ -82030,9 +82078,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2415,
+      "total_mint": 2416,
       "direct_action": {
-        "count": 1775,
+        "count": 1776,
         "pct": 73.5
       },
       "editorial_alarm": {
@@ -82046,8 +82094,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 217,
-      "institutional": 388,
-      "citizen_ratio": 0.359,
+      "institutional": 390,
+      "citizen_ratio": 0.357,
       "daily": [
         {
           "date": "2026-06-12",
@@ -82082,7 +82130,7 @@
         {
           "date": "2026-06-18",
           "citizen": 28,
-          "institutional": 69
+          "institutional": 71
         }
       ],
       "event_ids_citizen": [
@@ -82305,6 +82353,8 @@
         3019
       ],
       "event_ids_institutional": [
+        3625,
+        3624,
         3623,
         3621,
         3620,
