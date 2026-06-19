@@ -1,10 +1,98 @@
 {
-  "generated_at": "2026-06-19T07:06:06.661505+00:00",
-  "total_events": 3652,
-  "total_burned": 5525697870,
-  "total_minted": 5700098289,
+  "generated_at": "2026-06-19T07:37:22.701354+00:00",
+  "total_events": 3656,
+  "total_burned": 5530697870,
+  "total_minted": 5703023289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3656,
+      "event_title": "US-Iran talks postponed as Israel attacks Lebanon",
+      "event_url": "https://www.aljazeera.com/news/2026/6/19/us-iran-talks-postponed-as-israel-attacks-lebanon?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.94,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; consensus on harm from military escalation outweighing diplomatic delay. | The postponement of US-Iran talks reflects a cautious diplomatic response to escalating violence, but the underlying military action in Lebanon constitutes a severe violation of sovereignty and human rights. The net ethical position is negative due to the direct harm caused by the attacks, despite the indirect positive signal of avoiding premature negotiations.",
+      "tx_hash": "3FdyqLkb4tqo8282zozVZDxHLsFGQiKYUf8qrwpUSLwxYC44wnFp913M3JEEXN5Kj4xteTgte3PcgzozY6iyNmxt",
+      "created_at": "2026-06-19T07:37:17.302263+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Postponement of US-Iran talks due to escalation in Lebanon indicates diplomatic restraint to avoid legitimizing conflict escalation\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Israeli attacks on Lebanon violate sovereignty and risk civilian harm, undermining regional stability and peace\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(4)\", \"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Postponement of diplomatic talks due to military escalation delays potential conflict resolution and humanitarian relief\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3655,
+      "event_title": "US and Iran sign peace deal; Strait of Hormuz to reopen",
+      "event_url": "https://www.scmp.com/news/china/article/3357639/us-iran-sign-peace-deal-chinas-c919-jets-grounded-safety-checks-scmps-7-highlights?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.0,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Both analysts agree that the peace deal reduces geopolitical conflict and reopens a critical trade route, aligning with peace and stability goals. | The signing of a US-Iran peace deal represents a significant reduction in geopolitical conflict, directly advancing SDG 16 (Peace, Justice, and Strong Institutions) and upholding UDHR principles of peace and security. The immediate",
+      "tx_hash": "xjEXhycsDEXUQLVrLxQJA9CnABTCkZU8TD2NiZx3VxmXVt6UqM2hJ8mwM96Qo5xdiUBM27JpJ7niLpLMZ2R8S6c",
+      "created_at": "2026-06-19T07:37:17.175746+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US and Iran sign a peace deal ending hostilities and reopening the Strait of Hormuz, reducing geopolitical tensions and enabling regional stability\", \"affected_sdgs\": [16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 3654,
+      "event_title": "World Cup 2026: Iran files complaint with FIFA over travel restrictions imposed by the US",
+      "event_url": "https://www.france24.com/fr/sports/20260619-mondial-2026-iran-plainte-fifa-restrictions-impos%C3%A9es-etats-unis",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 425000,
+      "final_score": -3.075,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] US travel restrictions violate human rights; FIFA complaint is insufficient to offset harm. | The US action undermines core human rights by imposing discriminatory travel restrictions on a national sports team, violating UDHR principles of non-discrimination and freedom of movement. The Iranian complaint to FIFA represents a legitimate institutional response to challenge these ",
+      "tx_hash": "WTKmgLV4opzPRgZSqyWgJWeEvKtKdwpock82aKeEUsgmff3dJmgBV6kPSBeDADg2pFbDumrpqQ83VBHQRyzkPYd",
+      "created_at": "2026-06-19T07:37:17.067551+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FIFA receives formal complaint from Iran's national football team regarding discriminatory travel restrictions imposed by the US, triggering institutional accountability\", \"affected_sdgs\": [10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US imposes travel restrictions on Iranian football team during World Cup 2026, potentially violating freedom of movement and non-discrimination principles\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3653,
+      "event_title": "On chlordecone, the French Republic delivers two contradictory statements: one claims to honor, the other offends",
+      "event_url": "https://www.lemonde.fr/idees/article/2026/06/19/sur-le-chlordecone-la-republique-francaise-prononce-deux-paroles-qui-s-excluent-l-une-pretend-honorer-l-autre-offense_6704919_3232.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -1.69,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] State's legal contradiction undermines accountability despite legislative recognition of responsibility. | The legislature's recognition of state responsibility for the chlordecone scandal is a positive step toward accountability and public health protection. However, the State's legal contestation of fault directly contradicts this recognition, creating institutional hypocrisy",
+      "tx_hash": "BikR3QK4bZAQfo23UUXWPZ5D1hXQAH5iAK7PKcxWCWubHstAz3nXwaPDJUXP8ioSJA2q5TTUeVVkkvYgLga3FTr",
+      "created_at": "2026-06-19T07:37:16.937631+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"French legislature recognized responsibility for the chlordecone pesticide scandal in the Antilles, acknowledging state culpability in a public health crisis\", \"affected_sdgs\": [3, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"French State contests administrative fault in court despite legislative recognition of responsibility, creating legal contradiction and undermining accountability\", \"affected_sdgs\": [3, 12, 16], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3652,
       "event_title": "Doorsteps by President von der Leyen with President Zelenskyy ahead of the EUCO meeting of 18-19 June 2026",
@@ -80354,18 +80442,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 94,
-        "total_amount": 930240000
+        "count": 95,
+        "total_amount": 930665000
+      },
+      {
+        "country": "France",
+        "count": 28,
+        "total_amount": 30445000
       },
       {
         "country": "Switzerland",
         "count": 27,
         "total_amount": 21615000
-      },
-      {
-        "country": "France",
-        "count": 27,
-        "total_amount": 29445000
       },
       {
         "country": "European Union",
@@ -80374,15 +80462,15 @@
       },
       {
         "country": "Israel",
-        "count": 12,
-        "total_amount": 65650000
+        "count": 13,
+        "total_amount": 67150000
       }
     ],
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 31,
-        "total_amount": 151450000
+        "count": 32,
+        "total_amount": 156450000
       },
       {
         "country": "France",
@@ -80423,8 +80511,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.326,
-        "events": 175
+        "burn_ratio": 0.324,
+        "events": 176
       },
       {
         "region": "Asia",
@@ -80435,13 +80523,13 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.857,
-        "events": 21
+        "mint_ratio": 0.864,
+        "events": 22
       },
       {
         "region": "North America",
-        "mint_ratio": 0.726,
-        "events": 135
+        "mint_ratio": 0.723,
+        "events": 137
       },
       {
         "region": "Asia",
@@ -80450,8 +80538,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.674,
-        "events": 175
+        "mint_ratio": 0.676,
+        "events": 176
       },
       {
         "region": "Oceania",
@@ -80492,26 +80580,27 @@
       },
       {
         "date": "2026-06-19",
-        "net_minted": 24640000,
-        "net_burned": 45500000
+        "net_minted": 27565000,
+        "net_burned": 50500000
       }
     ],
     "event_of_the_day": {
-      "id": 3550,
-      "event_title": "Catalan parliament approves law to eradicate asbestos",
-      "decision": "BURN",
+      "id": 3647,
+      "event_title": "Far-Right Israeli Minister Ben Gvir to Attend UNCOps Conference in NYC in July",
+      "decision": "MINT",
       "amount_crbn": 5000000,
-      "final_score": 7.2,
+      "final_score": -6.98,
       "confidence": 9,
-      "country": "Spain",
-      "region": "Europe",
-      "created_at": "2026-06-18T07:35:55.365768+00:00"
+      "country": "Israel",
+      "region": "MENA",
+      "created_at": "2026-06-19T06:35:41.442479+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 205,
-        "negative": 390,
+        "positive": 206,
+        "negative": 393,
         "event_ids_positive": [
+          3655,
           3652,
           3651,
           3648,
@@ -80719,6 +80808,9 @@
           3048
         ],
         "event_ids_negative": [
+          3656,
+          3654,
+          3653,
           3649,
           3647,
           3645,
@@ -81112,9 +81204,10 @@
         ]
       },
       "UDHR": {
-        "positive": 86,
-        "negative": 294,
+        "positive": 87,
+        "negative": 297,
         "event_ids_positive": [
+          3655,
           3651,
           3646,
           3631,
@@ -81203,6 +81296,9 @@
           3049
         ],
         "event_ids_negative": [
+          3656,
+          3654,
+          3653,
           3649,
           3647,
           3645,
@@ -82031,11 +82127,11 @@
       "niche_pct": 52.1,
       "mainstream_pct": 47.9,
       "total_sources_used": 121,
-      "articles_processed": 607
+      "articles_processed": 611
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 607,
+      "total_events": 611,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -82390,6 +82486,54 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 40,
+        "burn_count": 2,
+        "mint_count": 38,
+        "event_ids": [
+          3656,
+          3613,
+          3610,
+          3562,
+          3561,
+          3486,
+          3478,
+          3475,
+          3454,
+          3453,
+          3443,
+          3442,
+          3439,
+          3423,
+          3422,
+          3421,
+          3416,
+          3403,
+          3393,
+          3361,
+          3349,
+          3346,
+          3320,
+          3318,
+          3316,
+          3290,
+          3275,
+          3228,
+          3202,
+          3180,
+          3141,
+          3140,
+          3131,
+          3125,
+          3119,
+          3109,
+          3083,
+          3077,
+          3075,
+          3073
+        ]
+      },
+      {
         "name": "Finance",
         "count": 39,
         "burn_count": 14,
@@ -82434,53 +82578,6 @@
           3081,
           3077,
           3048
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 39,
-        "burn_count": 2,
-        "mint_count": 37,
-        "event_ids": [
-          3613,
-          3610,
-          3562,
-          3561,
-          3486,
-          3478,
-          3475,
-          3454,
-          3453,
-          3443,
-          3442,
-          3439,
-          3423,
-          3422,
-          3421,
-          3416,
-          3403,
-          3393,
-          3361,
-          3349,
-          3346,
-          3320,
-          3318,
-          3316,
-          3290,
-          3275,
-          3228,
-          3202,
-          3180,
-          3141,
-          3140,
-          3131,
-          3125,
-          3119,
-          3109,
-          3083,
-          3077,
-          3075,
-          3073
         ]
       },
       {
@@ -82616,10 +82713,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 216,
+      "total_burn": 217,
       "direct_action": {
-        "count": 184,
-        "pct": 85.2
+        "count": 185,
+        "pct": 85.3
       },
       "editorial_consciousness": {
         "count": 21,
@@ -82631,9 +82728,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1212,
+      "total_burn": 1213,
       "direct_action": {
-        "count": 875,
+        "count": 876,
         "pct": 72.2
       },
       "editorial_consciousness": {
@@ -82646,9 +82743,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 391,
+      "total_mint": 394,
       "direct_action": {
-        "count": 365,
+        "count": 368,
         "pct": 93.4
       },
       "editorial_alarm": {
@@ -82661,10 +82758,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2431,
+      "total_mint": 2434,
       "direct_action": {
-        "count": 1790,
-        "pct": 73.6
+        "count": 1793,
+        "pct": 73.7
       },
       "editorial_alarm": {
         "count": 154,
@@ -82676,8 +82773,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 223,
-      "institutional": 384,
+      "citizen": 224,
+      "institutional": 387,
       "citizen_ratio": 0.367,
       "daily": [
         {
@@ -82712,11 +82809,12 @@
         },
         {
           "date": "2026-06-19",
-          "citizen": 12,
-          "institutional": 12
+          "citizen": 13,
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        3654,
         3652,
         3651,
         3648,
@@ -82942,6 +83040,9 @@
         3046
       ],
       "event_ids_institutional": [
+        3656,
+        3655,
+        3653,
         3649,
         3646,
         3644,
