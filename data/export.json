@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-19T09:05:36.490031+00:00",
-  "total_events": 3663,
+  "generated_at": "2026-06-19T09:35:56.804793+00:00",
+  "total_events": 3664,
   "total_burned": 5548237870,
-  "total_minted": 5705523289,
+  "total_minted": 5705835789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3664,
+      "event_title": "Is a Bundeswehr deployment in the Strait of Hormuz legally possible?",
+      "event_url": "https://www.tagesschau.de/ausland/asien/strasse-hormus-bundeswehreinsatz-faq-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 312500,
+      "final_score": -0.508125,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Both analysts agree on MINT; reconciled toward average with high confidence. | The potential German military involvement in mine-clearing operations in the Strait of Hormuz presents a mixed ethical picture. While it could contribute to regional stability and maritime safety, the legal uncertainties and risks of escalation raise significant concerns.",
+      "tx_hash": "pmp3j2MQ4mAVCArCmbAzwaCbp4bGhbSaHy8QVAnLe9XGeTt4FAjmPFn4Jv6QQa1hFnNtmMLftLv4K7NCoybngBS",
+      "created_at": "2026-06-19T09:35:52.319122+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Germany's potential participation in an international mine-clearing operation could enhance regional security and stability.\", \"affected_sdgs\": [16, 14], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"A Bundeswehr deployment in a conflict-prone area could expose military personnel to significant risk and potentially escalate tensions.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Legal uncertainties surrounding the deployment may undermine international legal norms and set precedents for unilateral military actions.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3663,
       "event_title": "ARENA commits AU$95.4 million to extend Australian Centre for Advanced Photovoltaics to 2033",
@@ -80611,8 +80633,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 26,
-        "total_amount": 21465000
+        "count": 25,
+        "total_amount": 20715000
       },
       {
         "country": "Israel",
@@ -80650,8 +80672,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.433,
-        "events": 30
+        "burn_ratio": 0.448,
+        "events": 29
       },
       {
         "region": "Oceania",
@@ -80660,13 +80682,13 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.405,
-        "events": 42
+        "burn_ratio": 0.415,
+        "events": 41
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.326,
-        "events": 175
+        "burn_ratio": 0.331,
+        "events": 172
       },
       {
         "region": "Asia",
@@ -80692,13 +80714,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.674,
-        "events": 175
+        "mint_ratio": 0.669,
+        "events": 172
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.595,
-        "events": 42
+        "mint_ratio": 0.585,
+        "events": 41
       }
     ],
     "supply_trend_7d": [
@@ -80734,7 +80756,7 @@
       },
       {
         "date": "2026-06-19",
-        "net_minted": 30065000,
+        "net_minted": 30377500,
         "net_burned": 68040000
       }
     ],
@@ -80752,7 +80774,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 207,
-        "negative": 392,
+        "negative": 387,
         "event_ids_positive": [
           3663,
           3658,
@@ -80963,6 +80985,7 @@
           3060
         ],
         "event_ids_negative": [
+          3664,
           3662,
           3661,
           3660,
@@ -81348,18 +81371,12 @@
           3063,
           3062,
           3059,
-          3058,
-          3057,
-          3056,
-          3055,
-          3054,
-          3053,
-          3052
+          3058
         ]
       },
       "UDHR": {
         "positive": 88,
-        "negative": 294,
+        "negative": 288,
         "event_ids_positive": [
           3658,
           3657,
@@ -81738,13 +81755,7 @@
           3072,
           3071,
           3059,
-          3058,
-          3057,
-          3056,
-          3055,
-          3054,
-          3053,
-          3052
+          3058
         ]
       },
       "ILO": {
@@ -81783,7 +81794,7 @@
       },
       "CRC": {
         "positive": 15,
-        "negative": 45,
+        "negative": 44,
         "event_ids_positive": [
           3651,
           3570,
@@ -81845,13 +81856,12 @@
           3099,
           3097,
           3086,
-          3084,
-          3052
+          3084
         ]
       },
       "UNDRIP": {
         "positive": 47,
-        "negative": 86,
+        "negative": 85,
         "event_ids_positive": [
           3657,
           3648,
@@ -81986,8 +81996,7 @@
           3087,
           3086,
           3072,
-          3062,
-          3052
+          3062
         ]
       },
       "Animal": {
@@ -82089,7 +82098,7 @@
       },
       "PB": {
         "positive": 85,
-        "negative": 92,
+        "negative": 91,
         "event_ids_positive": [
           3663,
           3657,
@@ -82268,8 +82277,7 @@
           3093,
           3087,
           3063,
-          3062,
-          3053
+          3062
         ]
       }
     },
@@ -82277,11 +82285,11 @@
       "niche_pct": 51.2,
       "mainstream_pct": 48.8,
       "total_sources_used": 121,
-      "articles_processed": 611
+      "articles_processed": 606
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 611,
+      "total_events": 606,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -82639,10 +82647,11 @@
       },
       {
         "name": "Defense",
-        "count": 40,
+        "count": 41,
         "burn_count": 2,
-        "mint_count": 38,
+        "mint_count": 39,
         "event_ids": [
+          3664,
           3656,
           3613,
           3610,
@@ -82734,10 +82743,11 @@
       },
       {
         "name": "Transport",
-        "count": 37,
+        "count": 38,
         "burn_count": 19,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          3664,
           3621,
           3611,
           3547,
@@ -82895,14 +82905,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 393,
+      "total_mint": 388,
       "direct_action": {
-        "count": 367,
-        "pct": 93.4
+        "count": 362,
+        "pct": 93.3
       },
       "editorial_alarm": {
         "count": 26,
-        "pct": 6.6
+        "pct": 6.7
       },
       "untyped": {
         "count": 0,
@@ -82910,9 +82920,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2438,
+      "total_mint": 2439,
       "direct_action": {
-        "count": 1797,
+        "count": 1798,
         "pct": 73.7
       },
       "editorial_alarm": {
@@ -82926,8 +82936,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 223,
-      "institutional": 388,
-      "citizen_ratio": 0.365,
+      "institutional": 383,
+      "citizen_ratio": 0.368,
       "daily": [
         {
           "date": "2026-06-13",
@@ -82962,7 +82972,7 @@
         {
           "date": "2026-06-19",
           "citizen": 15,
-          "institutional": 20
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -83191,6 +83201,7 @@
         3058
       ],
       "event_ids_institutional": [
+        3664,
         3663,
         3662,
         3661,
@@ -83572,13 +83583,7 @@
         3067,
         3066,
         3065,
-        3064,
-        3057,
-        3056,
-        3055,
-        3054,
-        3053,
-        3052
+        3064
       ]
     }
   }
