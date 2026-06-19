@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-19T12:35:25.434982+00:00",
-  "total_events": 3681,
+  "generated_at": "2026-06-19T13:06:13.907283+00:00",
+  "total_events": 3682,
   "total_burned": 5570937870,
-  "total_minted": 5728510789,
+  "total_minted": 5729010789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3682,
+      "event_title": "After Gaza, the Israeli government obstructs the work of foreign press in the West Bank",
+      "event_url": "https://www.lemonde.fr/idees/article/2026/06/19/apres-gaza-le-gouvernement-israelien-entrave-le-travail-de-la-presse-etrangere-en-cisjordanie_6704960_3232.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.44,
+      "confidence": 8,
+      "justification": "Government obstruction of foreign press violates UDHR Article 19, warranting MINT. | The obstruction of foreign press in the West Bank by the Israeli government constitutes a severe violation of press freedom and transparency, directly undermining UDHR Article 19. While media organizations' advocacy highlights the issue, the primary action being evaluated is the government's obstruction, which is ethically negative and warrants a MINT decision.",
+      "tx_hash": "5i1mt8vCDempYwqBko9PJex6s1j67ba9kKwJ1HDDFNh9jQDrQP5kGprGxGzS7unfcGoADBbx3pr52LG94uRtQ88h",
+      "created_at": "2026-06-19T13:06:09.258435+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"International press freedom advocacy by media organizations and journalists' societies denouncing obstruction of foreign press work in the West Bank\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Israeli government obstructing and expelling foreign journalists from the West Bank, undermining press freedom and transparency\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3681,
       "event_title": "Cold-water fisheries in a warmer world: Increasing temperature redistributes angling effort and concentrates activity in cold-water refugia",
@@ -80992,8 +81014,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 98,
-        "total_amount": 932015000
+        "count": 97,
+        "total_amount": 931265000
       },
       {
         "country": "France",
@@ -81013,7 +81035,7 @@
       {
         "country": "Israel",
         "count": 14,
-        "total_amount": 68425000
+        "total_amount": 68775000
       }
     ],
     "top_countries_burn": [
@@ -81078,8 +81100,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.72,
-        "events": 143
+        "mint_ratio": 0.718,
+        "events": 142
       },
       {
         "region": "Asia",
@@ -81130,7 +81152,7 @@
       },
       {
         "date": "2026-06-19",
-        "net_minted": 53052500,
+        "net_minted": 53552500,
         "net_burned": 90740000
       }
     ],
@@ -81147,8 +81169,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 206,
-        "negative": 393,
+        "positive": 205,
+        "negative": 392,
         "event_ids_positive": [
           3680,
           3676,
@@ -81354,10 +81376,10 @@
           3092,
           3091,
           3089,
-          3079,
-          3074
+          3079
         ],
         "event_ids_negative": [
+          3682,
           3681,
           3679,
           3678,
@@ -81748,14 +81770,12 @@
           3078,
           3077,
           3076,
-          3075,
-          3073,
-          3072
+          3075
         ]
       },
       "UDHR": {
         "positive": 90,
-        "negative": 292,
+        "negative": 291,
         "event_ids_positive": [
           3680,
           3676,
@@ -81849,6 +81869,7 @@
           3089
         ],
         "event_ids_negative": [
+          3682,
           3678,
           3671,
           3670,
@@ -82138,9 +82159,7 @@
           3078,
           3077,
           3076,
-          3075,
-          3073,
-          3072
+          3075
         ]
       },
       "ILO": {
@@ -82249,7 +82268,7 @@
       },
       "UNDRIP": {
         "positive": 47,
-        "negative": 89,
+        "negative": 88,
         "event_ids_positive": [
           3657,
           3648,
@@ -82387,12 +82406,11 @@
           3099,
           3088,
           3087,
-          3086,
-          3072
+          3086
         ]
       },
       "Animal": {
-        "positive": 55,
+        "positive": 54,
         "negative": 39,
         "event_ids_positive": [
           3673,
@@ -82448,8 +82466,7 @@
           3160,
           3155,
           3148,
-          3134,
-          3074
+          3134
         ],
         "event_ids_negative": [
           3681,
@@ -82494,7 +82511,7 @@
         ]
       },
       "PB": {
-        "positive": 84,
+        "positive": 83,
         "negative": 95,
         "event_ids_positive": [
           3673,
@@ -82579,8 +82596,7 @@
           3105,
           3096,
           3092,
-          3089,
-          3074
+          3089
         ],
         "event_ids_negative": [
           3681,
@@ -82682,14 +82698,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 51.2,
-      "mainstream_pct": 48.8,
+      "niche_pct": 52.0,
+      "mainstream_pct": 48.0,
       "total_sources_used": 123,
-      "articles_processed": 609
+      "articles_processed": 607
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 609,
+      "total_events": 607,
       "pct": 1.5
     },
     "active_partners_7d": [],
@@ -82865,9 +82881,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 94,
+        "count": 93,
         "burn_count": 40,
-        "mint_count": 54,
+        "mint_count": 53,
         "event_ids": [
           3663,
           3660,
@@ -82961,8 +82977,7 @@
           3092,
           3090,
           3089,
-          3079,
-          3072
+          3079
         ]
       },
       {
@@ -83039,9 +83054,9 @@
       },
       {
         "name": "Defense",
-        "count": 43,
+        "count": 42,
         "burn_count": 2,
-        "mint_count": 41,
+        "mint_count": 40,
         "event_ids": [
           3671,
           3669,
@@ -83084,16 +83099,16 @@
           3109,
           3083,
           3077,
-          3075,
-          3073
+          3075
         ]
       },
       {
         "name": "Finance",
-        "count": 39,
+        "count": 40,
         "burn_count": 14,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          3682,
           3663,
           3630,
           3618,
@@ -83265,9 +83280,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 215,
+      "total_burn": 214,
       "direct_action": {
-        "count": 185,
+        "count": 184,
         "pct": 86.0
       },
       "editorial_consciousness": {
@@ -83295,9 +83310,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 394,
+      "total_mint": 393,
       "direct_action": {
-        "count": 368,
+        "count": 367,
         "pct": 93.4
       },
       "editorial_alarm": {
@@ -83310,9 +83325,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2451,
+      "total_mint": 2452,
       "direct_action": {
-        "count": 1809,
+        "count": 1810,
         "pct": 73.8
       },
       "editorial_alarm": {
@@ -83325,9 +83340,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 221,
-      "institutional": 388,
-      "citizen_ratio": 0.363,
+      "citizen": 220,
+      "institutional": 387,
+      "citizen_ratio": 0.362,
       "daily": [
         {
           "date": "2026-06-13",
@@ -83362,7 +83377,7 @@
         {
           "date": "2026-06-19",
           "citizen": 20,
-          "institutional": 33
+          "institutional": 34
         }
       ],
       "event_ids_citizen": [
@@ -83585,10 +83600,10 @@
         3088,
         3087,
         3082,
-        3080,
-        3074
+        3080
       ],
       "event_ids_institutional": [
+        3682,
         3681,
         3680,
         3678,
@@ -83974,9 +83989,7 @@
         3078,
         3077,
         3076,
-        3075,
-        3073,
-        3072
+        3075
       ]
     }
   }
