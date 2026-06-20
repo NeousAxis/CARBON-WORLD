@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-20T10:35:01.916803+00:00",
-  "total_events": 3735,
+  "generated_at": "2026-06-20T11:04:44.258541+00:00",
+  "total_events": 3736,
   "total_burned": 5671352120,
-  "total_minted": 5776305789,
+  "total_minted": 5777805789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3736,
+      "event_title": "FBI Tried to Flip Anti-ICE Protesters Into Informants",
+      "event_url": "https://theintercept.com/2026/06/20/fbi-ice-delaney-hall-protest-informants/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.42,
+      "confidence": 9,
+      "justification": "FBI's coercive tactics violate democratic rights; institutional action enables harm. | The FBI's actions represent a direct violation of fundamental human rights, particularly freedom of expression and assembly. The attempt to coerce protesters into informants undermines democratic dissent and civil society participation. The arrest of a non-violent protester further signals state overreach in suppressing legitimate civic action.",
+      "tx_hash": "47jhwFFqZLZm14YnFTo6uvuWQxjCianyfZzGDYe4WjkxBNTt6FhLTezGviFVvd46pY688YeWjye7YZfSfXnnJC2r",
+      "created_at": "2026-06-20T11:04:39.757851+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"FBI attempted to recruit anti-ICE protesters as informants, potentially undermining freedom of assembly and expression rights\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Arrest of a protester engaged in non-violent civil disobedience (playing cello) suggests disproportionate state response to dissent\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 20\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3735,
       "event_title": "Take this seriously: Flotilla activist claims beating allegations ignored by government",
@@ -82180,8 +82202,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 83,
-        "total_amount": 895540000
+        "count": 84,
+        "total_amount": 897040000
       },
       {
         "country": "France",
@@ -82254,8 +82276,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.299,
-        "events": 127
+        "burn_ratio": 0.297,
+        "events": 128
       }
     ],
     "top_regions_destructive": [
@@ -82271,8 +82293,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.701,
-        "events": 127
+        "mint_ratio": 0.703,
+        "events": 128
       },
       {
         "region": "Europe",
@@ -82318,7 +82340,7 @@
       },
       {
         "date": "2026-06-20",
-        "net_minted": 23025000,
+        "net_minted": 24525000,
         "net_burned": 28814250
       }
     ],
@@ -82336,7 +82358,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 205,
-        "negative": 381,
+        "negative": 382,
         "event_ids_positive": [
           3732,
           3729,
@@ -82545,6 +82567,7 @@
           3143
         ],
         "event_ids_negative": [
+          3736,
           3735,
           3734,
           3733,
@@ -82930,7 +82953,7 @@
       },
       "UDHR": {
         "positive": 84,
-        "negative": 278,
+        "negative": 279,
         "event_ids_positive": [
           3721,
           3711,
@@ -83018,6 +83041,7 @@
           3144
         ],
         "event_ids_negative": [
+          3736,
           3735,
           3734,
           3733,
@@ -83849,16 +83873,16 @@
       "articles_processed": 594
     },
     "cache_hit_rate_7d": {
-      "hits": 7,
+      "hits": 6,
       "total_events": 594,
-      "pct": 1.2
+      "pct": 1.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 39,
-        "burn_count": 9,
+        "count": 38,
+        "burn_count": 8,
         "mint_count": 30,
         "event_ids": [
           3728,
@@ -83898,8 +83922,7 @@
           3204,
           3170,
           3159,
-          3155,
-          3142
+          3155
         ]
       },
       {
@@ -84315,8 +84338,8 @@
       },
       {
         "name": "Transport",
-        "count": 27,
-        "burn_count": 10,
+        "count": 26,
+        "burn_count": 9,
         "mint_count": 17,
         "event_ids": [
           3722,
@@ -84344,8 +84367,7 @@
           3250,
           3226,
           3209,
-          3193,
-          3142
+          3193
         ]
       },
       {
@@ -84405,18 +84427,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 211,
+      "total_burn": 210,
       "direct_action": {
         "count": 184,
-        "pct": 87.2
+        "pct": 87.6
       },
       "editorial_consciousness": {
         "count": 21,
         "pct": 10.0
       },
       "untyped": {
-        "count": 6,
-        "pct": 2.8
+        "count": 5,
+        "pct": 2.4
       }
     },
     "burn_composition_all_time": {
@@ -84435,9 +84457,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 383,
+      "total_mint": 384,
       "direct_action": {
-        "count": 353,
+        "count": 354,
         "pct": 92.2
       },
       "editorial_alarm": {
@@ -84450,9 +84472,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2486,
+      "total_mint": 2487,
       "direct_action": {
-        "count": 1839,
+        "count": 1840,
         "pct": 74.0
       },
       "editorial_alarm": {
@@ -84465,9 +84487,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 216,
-      "institutional": 378,
-      "citizen_ratio": 0.364,
+      "citizen": 217,
+      "institutional": 377,
+      "citizen_ratio": 0.365,
       "daily": [
         {
           "date": "2026-06-14",
@@ -84501,11 +84523,12 @@
         },
         {
           "date": "2026-06-20",
-          "citizen": 6,
+          "citizen": 7,
           "institutional": 18
         }
       ],
       "event_ids_citizen": [
+        3736,
         3735,
         3734,
         3727,
@@ -85100,8 +85123,7 @@
         3147,
         3145,
         3144,
-        3143,
-        3142
+        3143
       ]
     }
   }
