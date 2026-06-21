@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-21T17:03:43.251133+00:00",
-  "total_events": 3798,
+  "generated_at": "2026-06-21T17:34:27.153002+00:00",
+  "total_events": 3799,
   "total_burned": 5729852120,
-  "total_minted": 5871850789,
+  "total_minted": 5872000789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3799,
+      "event_title": "Ethiopia: Abiy Ahmed, from internationally adored reformer to war leader",
+      "event_url": "https://www.lemonde.fr/afrique/article/2026/06/21/ethiopie-abiy-ahmed-de-reformateur-adule-par-la-communaute-internationale-a-chef-de-guerre_6706112_3212.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.43,
+      "confidence": 8,
+      "justification": "Both analysts agree on MINT; focus on authoritarian consolidation and militarization outweighs electoral transparency. | While Abiy Ahmed was initially praised for his reformist policies, the current situation in Ethiopia under his leadership raises serious concerns about peace and stability, with potential long-term consequences for human rights and development.",
+      "tx_hash": "51WY59y6LssNKd9NvT7PDtL6TCyGdqc4mzFd4Ew1jUQA4J9FbutZXJ9bJTHgb4AAc5Lk7j6Gt87CvvriJPcAJtfo",
+      "created_at": "2026-06-21T17:34:22.447313+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ethiopia",
+      "region": "Africa",
+      "administration": "Ethiopia-PP",
+      "positive_aspects_json": "[{\"description\": \"Abiy Ahmed was initially recognized for his reformist policies and efforts to open up Ethiopia politically and economically.\", \"affected_sdgs\": [16, 8], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Abiy Ahmed is now leading a country on the brink of renewed conflict, raising concerns about peace and stability.\", \"affected_sdgs\": [16, 2, 11], \"violated_rights\": [\"UDHR Article 21\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3798,
       "event_title": "Le Tour de Suisse, laboratoire du «futur du cyclisme»",
@@ -83612,21 +83634,16 @@
         "total_amount": 37500000
       },
       {
-        "country": "Australia",
-        "count": 8,
-        "total_amount": 49890000
+        "country": "United Kingdom",
+        "count": 6,
+        "total_amount": 35000000
       }
     ],
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.481,
-        "events": 27
-      },
-      {
-        "region": "Oceania",
-        "burn_ratio": 0.368,
-        "events": 38
+        "burn_ratio": 0.464,
+        "events": 28
       },
       {
         "region": "Latin America",
@@ -83634,9 +83651,14 @@
         "events": 41
       },
       {
+        "region": "Oceania",
+        "burn_ratio": 0.333,
+        "events": 36
+      },
+      {
         "region": "Europe",
-        "burn_ratio": 0.318,
-        "events": 157
+        "burn_ratio": 0.314,
+        "events": 156
       },
       {
         "region": "Asia",
@@ -83662,13 +83684,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.682,
-        "events": 157
+        "mint_ratio": 0.686,
+        "events": 156
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.659,
-        "events": 41
+        "region": "Oceania",
+        "mint_ratio": 0.667,
+        "events": 36
       }
     ],
     "supply_trend_7d": [
@@ -83704,7 +83726,7 @@
       },
       {
         "date": "2026-06-21",
-        "net_minted": 32575000,
+        "net_minted": 32725000,
         "net_burned": 38500000
       }
     ],
@@ -83721,8 +83743,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 189,
-        "negative": 390,
+        "positive": 186,
+        "negative": 391,
         "event_ids_positive": [
           3798,
           3795,
@@ -83909,12 +83931,10 @@
           3226,
           3225,
           3221,
-          3220,
-          3215,
-          3214,
-          3213
+          3220
         ],
         "event_ids_negative": [
+          3799,
           3797,
           3796,
           3794,
@@ -84308,8 +84328,8 @@
         ]
       },
       "UDHR": {
-        "positive": 79,
-        "negative": 286,
+        "positive": 77,
+        "negative": 287,
         "event_ids_positive": [
           3798,
           3791,
@@ -84387,11 +84407,10 @@
           3227,
           3226,
           3225,
-          3220,
-          3214,
-          3213
+          3220
         ],
         "event_ids_negative": [
+          3799,
           3796,
           3794,
           3793,
@@ -84714,7 +84733,7 @@
       },
       "CRC": {
         "positive": 18,
-        "negative": 45,
+        "negative": 46,
         "event_ids_positive": [
           3798,
           3776,
@@ -84736,6 +84755,7 @@
           3220
         ],
         "event_ids_negative": [
+          3799,
           3780,
           3765,
           3749,
@@ -84926,7 +84946,7 @@
         ]
       },
       "Animal": {
-        "positive": 50,
+        "positive": 49,
         "negative": 42,
         "event_ids_positive": [
           3775,
@@ -84977,8 +84997,7 @@
           3276,
           3272,
           3269,
-          3266,
-          3215
+          3266
         ],
         "event_ids_negative": [
           3797,
@@ -85026,7 +85045,7 @@
         ]
       },
       "PB": {
-        "positive": 77,
+        "positive": 76,
         "negative": 99,
         "event_ids_positive": [
           3792,
@@ -85104,8 +85123,7 @@
           3237,
           3231,
           3230,
-          3221,
-          3215
+          3221
         ],
         "event_ids_negative": [
           3797,
@@ -85214,11 +85232,11 @@
       "niche_pct": 50.8,
       "mainstream_pct": 49.2,
       "total_sources_used": 118,
-      "articles_processed": 586
+      "articles_processed": 584
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 586,
+      "total_events": 584,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -85302,25 +85320,6 @@
         ]
       },
       {
-        "name": "WHO",
-        "count": 11,
-        "burn_count": 8,
-        "mint_count": 3,
-        "event_ids": [
-          3783,
-          3693,
-          3621,
-          3601,
-          3582,
-          3556,
-          3552,
-          3492,
-          3332,
-          3293,
-          3215
-        ]
-      },
-      {
         "name": "G7",
         "count": 11,
         "burn_count": 3,
@@ -85336,6 +85335,24 @@
           3358,
           3341,
           3318,
+          3293
+        ]
+      },
+      {
+        "name": "WHO",
+        "count": 10,
+        "burn_count": 7,
+        "mint_count": 3,
+        "event_ids": [
+          3783,
+          3693,
+          3621,
+          3601,
+          3582,
+          3556,
+          3552,
+          3492,
+          3332,
           3293
         ]
       },
@@ -85390,8 +85407,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 102,
-        "burn_count": 43,
+        "count": 101,
+        "burn_count": 42,
         "mint_count": 59,
         "event_ids": [
           3792,
@@ -85494,8 +85511,7 @@
           3237,
           3231,
           3230,
-          3218,
-          3214
+          3218
         ]
       },
       {
@@ -85782,14 +85798,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 194,
+      "total_burn": 191,
       "direct_action": {
-        "count": 168,
-        "pct": 86.6
+        "count": 166,
+        "pct": 86.9
       },
       "editorial_consciousness": {
-        "count": 21,
-        "pct": 10.8
+        "count": 20,
+        "pct": 10.5
       },
       "untyped": {
         "count": 5,
@@ -85812,10 +85828,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 392,
+      "total_mint": 393,
       "direct_action": {
-        "count": 362,
-        "pct": 92.3
+        "count": 363,
+        "pct": 92.4
       },
       "editorial_alarm": {
         "count": 29,
@@ -85827,23 +85843,23 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2535,
+      "total_mint": 2536,
       "direct_action": {
-        "count": 1886,
+        "count": 1887,
         "pct": 74.4
       },
       "editorial_alarm": {
         "count": 161,
-        "pct": 6.4
+        "pct": 6.3
       },
       "untyped": {
         "count": 488,
-        "pct": 19.3
+        "pct": 19.2
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 203,
-      "institutional": 383,
+      "citizen": 202,
+      "institutional": 382,
       "citizen_ratio": 0.346,
       "daily": [
         {
@@ -85879,7 +85895,7 @@
         {
           "date": "2026-06-21",
           "citizen": 12,
-          "institutional": 17
+          "institutional": 18
         }
       ],
       "event_ids_citizen": [
@@ -86084,10 +86100,10 @@
         3224,
         3221,
         3219,
-        3216,
-        3215
+        3216
       ],
       "event_ids_institutional": [
+        3799,
         3798,
         3797,
         3796,
@@ -86468,9 +86484,7 @@
         3222,
         3220,
         3218,
-        3217,
-        3214,
-        3213
+        3217
       ]
     }
   }
