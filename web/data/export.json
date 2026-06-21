@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-21T19:34:38.329908+00:00",
-  "total_events": 3805,
+  "generated_at": "2026-06-21T20:34:25.454490+00:00",
+  "total_events": 3806,
   "total_burned": 5729852120,
-  "total_minted": 5877300789,
+  "total_minted": 5877450789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3806,
+      "event_title": "Conflict between Polish and Ukrainian presidents a “strategic mistake”, warns Tusk",
+      "event_url": "https://notesfrompoland.com/2026/06/21/conflict-between-polish-and-ukrainian-presidents-a-strategic-mistake-warns-tusk/",
+      "event_source": "Notes From Poland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.09,
+      "confidence": 7,
+      "justification": "Diplomatic conflict outweighs mitigation efforts, warranting MINT for CBWD. | The conflict between Polish and Ukrainian presidents is a negative geopolitical event that undermines regional stability and cooperation. However, Tusk's proactive attempt to minimize losses reflects a positive effort to restore diplomatic balance and prioritize peace, aligning with SDG 16 and UDHR principles of international cooperation and conflict resolution.",
+      "tx_hash": "3yMnM8t4GK2EowsMoN2LgyptbGMQTYowiUr3b7vD59zMuRrQL4n1V6iRTTDnA7nDisHXXbaLXQP6LAzWJsnQXXCB",
+      "created_at": "2026-06-21T20:34:20.903762+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Poland",
+      "region": "Europe",
+      "administration": "Poland-KO",
+      "positive_aspects_json": "[{\"description\": \"Polish Prime Minister Donald Tusk acknowledges and attempts to mitigate diplomatic damage from a conflict between Polish and Ukrainian presidents, demonstrating proactive crisis management and prioritization of regional stability.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The diplomatic spat between Polish and Ukrainian presidents itself represents a breakdown in international relations, undermining regional cooperation and potentially weakening collective security efforts in Eastern Europe.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3805,
       "event_title": "Ethiopian prime minister’s party gets another big parliamentary majority",
@@ -83774,8 +83796,13 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.448,
-        "events": 29
+        "burn_ratio": 0.429,
+        "events": 28
+      },
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.343,
+        "events": 35
       },
       {
         "region": "Latin America",
@@ -83783,14 +83810,9 @@
         "events": 42
       },
       {
-        "region": "Oceania",
-        "burn_ratio": 0.333,
-        "events": 36
-      },
-      {
         "region": "Europe",
-        "burn_ratio": 0.314,
-        "events": 156
+        "burn_ratio": 0.312,
+        "events": 157
       },
       {
         "region": "Asia",
@@ -83816,8 +83838,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.686,
-        "events": 156
+        "mint_ratio": 0.688,
+        "events": 157
       },
       {
         "region": "Latin America",
@@ -83858,7 +83880,7 @@
       },
       {
         "date": "2026-06-21",
-        "net_minted": 38025000,
+        "net_minted": 38175000,
         "net_burned": 38500000
       }
     ],
@@ -83875,8 +83897,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 186,
-        "negative": 396,
+        "positive": 185,
+        "negative": 394,
         "event_ids_positive": [
           3798,
           3795,
@@ -84062,10 +84084,10 @@
           3227,
           3226,
           3225,
-          3221,
-          3220
+          3221
         ],
         "event_ids_negative": [
+          3806,
           3805,
           3804,
           3803,
@@ -84458,15 +84480,12 @@
           3229,
           3224,
           3223,
-          3222,
-          3219,
-          3218,
-          3217
+          3222
         ]
       },
       "UDHR": {
-        "positive": 77,
-        "negative": 290,
+        "positive": 76,
+        "negative": 289,
         "event_ids_positive": [
           3798,
           3791,
@@ -84543,10 +84562,10 @@
           3228,
           3227,
           3226,
-          3225,
-          3220
+          3225
         ],
         "event_ids_negative": [
+          3806,
           3805,
           3803,
           3802,
@@ -84834,9 +84853,7 @@
           3233,
           3224,
           3223,
-          3222,
-          3219,
-          3217
+          3222
         ]
       },
       "ILO": {
@@ -84873,7 +84890,7 @@
         ]
       },
       "CRC": {
-        "positive": 18,
+        "positive": 17,
         "negative": 46,
         "event_ids_positive": [
           3798,
@@ -84892,8 +84909,7 @@
           3312,
           3308,
           3247,
-          3232,
-          3220
+          3232
         ],
         "event_ids_negative": [
           3799,
@@ -84946,7 +84962,7 @@
       },
       "UNDRIP": {
         "positive": 40,
-        "negative": 93,
+        "negative": 92,
         "event_ids_positive": [
           3795,
           3791,
@@ -85081,13 +85097,12 @@
           3241,
           3240,
           3229,
-          3224,
-          3219
+          3224
         ]
       },
       "Animal": {
         "positive": 49,
-        "negative": 41,
+        "negative": 40,
         "event_ids_positive": [
           3775,
           3754,
@@ -85179,13 +85194,12 @@
           3256,
           3246,
           3238,
-          3229,
-          3219
+          3229
         ]
       },
       "PB": {
         "positive": 76,
-        "negative": 100,
+        "negative": 98,
         "event_ids_positive": [
           3792,
           3786,
@@ -85362,9 +85376,7 @@
           3246,
           3241,
           3235,
-          3229,
-          3219,
-          3218
+          3229
         ]
       }
     },
@@ -85372,11 +85384,11 @@
       "niche_pct": 50.8,
       "mainstream_pct": 49.2,
       "total_sources_used": 118,
-      "articles_processed": 589
+      "articles_processed": 586
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 589,
+      "total_events": 586,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -85547,9 +85559,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 102,
+        "count": 101,
         "burn_count": 42,
-        "mint_count": 60,
+        "mint_count": 59,
         "event_ids": [
           3800,
           3792,
@@ -85651,8 +85663,7 @@
           3238,
           3237,
           3231,
-          3230,
-          3218
+          3230
         ]
       },
       {
@@ -85853,9 +85864,9 @@
       },
       {
         "name": "Tech",
-        "count": 25,
+        "count": 24,
         "burn_count": 8,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           3737,
           3708,
@@ -85880,8 +85891,7 @@
           3276,
           3253,
           3247,
-          3243,
-          3218
+          3243
         ]
       },
       {
@@ -85942,10 +85952,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 191,
+      "total_burn": 190,
       "direct_action": {
-        "count": 166,
-        "pct": 86.9
+        "count": 165,
+        "pct": 86.8
       },
       "editorial_consciousness": {
         "count": 20,
@@ -85972,14 +85982,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 398,
+      "total_mint": 396,
       "direct_action": {
-        "count": 368,
-        "pct": 92.5
+        "count": 367,
+        "pct": 92.7
       },
       "editorial_alarm": {
-        "count": 29,
-        "pct": 7.3
+        "count": 28,
+        "pct": 7.1
       },
       "untyped": {
         "count": 1,
@@ -85987,9 +85997,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2542,
+      "total_mint": 2543,
       "direct_action": {
-        "count": 1893,
+        "count": 1894,
         "pct": 74.5
       },
       "editorial_alarm": {
@@ -86002,8 +86012,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 201,
-      "institutional": 388,
+      "citizen": 200,
+      "institutional": 386,
       "citizen_ratio": 0.341,
       "daily": [
         {
@@ -86039,7 +86049,7 @@
         {
           "date": "2026-06-21",
           "citizen": 12,
-          "institutional": 24
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -86242,10 +86252,10 @@
         3229,
         3226,
         3224,
-        3221,
-        3219
+        3221
       ],
       "event_ids_institutional": [
+        3806,
         3805,
         3804,
         3803,
@@ -86630,10 +86640,7 @@
         3227,
         3225,
         3223,
-        3222,
-        3220,
-        3218,
-        3217
+        3222
       ]
     }
   }
