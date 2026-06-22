@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-22T02:35:12.379106+00:00",
-  "total_events": 3820,
-  "total_burned": 5730352120,
+  "generated_at": "2026-06-22T03:05:20.154296+00:00",
+  "total_events": 3821,
+  "total_burned": 5734452120,
   "total_minted": 5899595789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3821,
+      "event_title": "When the people voted against oil exploration",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/colunas/bianca-santana/2026/06/quando-o-povo-votou-contra-a-exploracao-do-petroleo.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "BURN",
+      "amount_crbn": 4100000,
+      "final_score": 3.48,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Citizens' decision to halt oil exploration in Yasuní protects biodiversity and indigenous rights. | The decision to halt oil exploration in the Yasuní National Park represents a significant win for environmental and indigenous rights, aligning with multiple SDGs and planetary boundaries. While there are economic trade-offs, the long-term ecological and social benefits outweigh ",
+      "tx_hash": "GAGb3rMuTiyLZQpb7Ed6FgxMEoZRh7NfALh8VaEVm6m6Y9yYbnhyySNGYN39Mmj4cbEgfYLPuG9T37UVsg7xG1E",
+      "created_at": "2026-06-22T03:05:15.433591+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ecuador",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Citizens voted to halt oil exploration in the Yasuní National Park, protecting biodiversity and indigenous territories.\", \"affected_sdgs\": [13, 14, 15, 11, 10, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Loss of potential economic revenue from oil extraction could impact national development and energy independence.\", \"affected_sdgs\": [8, 9, 7], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 3820,
       "event_title": "Bolivia: after declaring a state of exception, the government gradually lifts roadblocks",
@@ -84113,14 +84135,14 @@
         "events": 34
       },
       {
+        "region": "Latin America",
+        "burn_ratio": 0.319,
+        "events": 47
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.308,
         "events": 156
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.304,
-        "events": 46
       },
       {
         "region": "Asia",
@@ -84145,14 +84167,14 @@
         "events": 57
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.696,
-        "events": 46
-      },
-      {
         "region": "Europe",
         "mint_ratio": 0.692,
         "events": 156
+      },
+      {
+        "region": "Latin America",
+        "mint_ratio": 0.681,
+        "events": 47
       }
     ],
     "supply_trend_7d": [
@@ -84189,7 +84211,7 @@
       {
         "date": "2026-06-22",
         "net_minted": 11950000,
-        "net_burned": 0
+        "net_burned": 4100000
       }
     ],
     "event_of_the_day": {
@@ -84205,9 +84227,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 179,
+        "positive": 180,
         "negative": 403,
         "event_ids_positive": [
+          3821,
           3813,
           3798,
           3795,
@@ -85281,9 +85304,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 38,
+        "positive": 39,
         "negative": 93,
         "event_ids_positive": [
+          3821,
           3795,
           3791,
           3787,
@@ -85517,9 +85541,10 @@
         ]
       },
       "PB": {
-        "positive": 73,
+        "positive": 74,
         "negative": 100,
         "event_ids_positive": [
+          3821,
           3792,
           3786,
           3775,
@@ -85702,11 +85727,11 @@
       "niche_pct": 50.8,
       "mainstream_pct": 49.2,
       "total_sources_used": 118,
-      "articles_processed": 589
+      "articles_processed": 590
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 589,
+      "total_events": 590,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -85877,10 +85902,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 100,
-        "burn_count": 40,
+        "count": 101,
+        "burn_count": 41,
         "mint_count": 60,
         "event_ids": [
+          3821,
           3816,
           3800,
           3792,
@@ -86268,14 +86294,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 184,
+      "total_burn": 185,
       "direct_action": {
-        "count": 159,
-        "pct": 86.4
+        "count": 160,
+        "pct": 86.5
       },
       "editorial_consciousness": {
         "count": 20,
-        "pct": 10.9
+        "pct": 10.8
       },
       "untyped": {
         "count": 5,
@@ -86283,9 +86309,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1256,
+      "total_burn": 1257,
       "direct_action": {
-        "count": 915,
+        "count": 916,
         "pct": 72.9
       },
       "editorial_consciousness": {
@@ -86294,7 +86320,7 @@
       },
       "untyped": {
         "count": 252,
-        "pct": 20.1
+        "pct": 20.0
       }
     },
     "mint_composition_7d": {
@@ -86328,9 +86354,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 198,
+      "citizen": 199,
       "institutional": 391,
-      "citizen_ratio": 0.336,
+      "citizen_ratio": 0.337,
       "daily": [
         {
           "date": "2026-06-16",
@@ -86364,11 +86390,12 @@
         },
         {
           "date": "2026-06-22",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 4
         }
       ],
       "event_ids_citizen": [
+        3821,
         3817,
         3816,
         3811,
