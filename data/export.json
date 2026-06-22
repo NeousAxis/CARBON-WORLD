@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-22T01:34:14.481504+00:00",
-  "total_events": 3818,
+  "generated_at": "2026-06-22T02:04:26.436667+00:00",
+  "total_events": 3819,
   "total_burned": 5730352120,
-  "total_minted": 5899295789,
+  "total_minted": 5899445789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3819,
+      "event_title": "Food Tank’s Weekly News Roundup: El Nino Begins, 10,000 Farmers Empowered, Britain’s Dairy Farmers Hits New Low",
+      "event_url": "https://foodtank.com/news/2026/06/food-tanks-weekly-news-roundup-el-nino-farmers-empowered-dairy-farmers/",
+      "event_source": "Food Tank",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.44,
+      "confidence": 6,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Analyst A's negative climate and sectoral decline concerns outweigh Analyst B's positive focus on farmer empowerment. | The empowerment of 10,000 farmers and the diffusion of agricultural literacy via Food Tank’s roundup are significant positive actions supporting SDGs 1, 2, 8, and 12. However, the decline in Britain’s dairy farmers and the onset of El Niño introduce substan",
+      "tx_hash": "34Y3T78MgVp1pFvVwPJEZcohJR8kQ8Wnr5pF4tzJ8ULRzsBq5V5ssxntfjaK1JiyNR3MxbrbbJ5M9gABsKCukeaA",
+      "created_at": "2026-06-22T02:04:21.934984+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"A program empowers 10,000 farmers, enhancing agricultural capacity and rural livelihoods\", \"affected_sdgs\": [1, 2, 8, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Food Tank publishes a weekly news roundup, diffusing agricultural and climate literacy to a global audience\", \"affected_sdgs\": [4, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Britain’s dairy farmers drop below 7,000 for the first time, indicating sectoral decline and potential livelihood losses\", \"affected_sdgs\": [1, 8, 12], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"El Niño begins, posing risks to global food systems and climate stability\", \"affected_sdgs\": [2, 13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3818,
       "event_title": "In Colombia, hard-right candidate Abelardo de la Espriella wins presidential election",
@@ -84144,7 +84166,7 @@
       },
       {
         "date": "2026-06-22",
-        "net_minted": 11650000,
+        "net_minted": 11800000,
         "net_burned": 0
       }
     ],
@@ -84161,8 +84183,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 181,
-        "negative": 401,
+        "positive": 180,
+        "negative": 402,
         "event_ids_positive": [
           3813,
           3798,
@@ -84343,10 +84365,10 @@
           3237,
           3234,
           3232,
-          3231,
-          3230
+          3231
         ],
         "event_ids_negative": [
+          3819,
           3818,
           3817,
           3816,
@@ -84752,7 +84774,7 @@
       },
       "UDHR": {
         "positive": 73,
-        "negative": 296,
+        "negative": 297,
         "event_ids_positive": [
           3813,
           3798,
@@ -84829,6 +84851,7 @@
           3232
         ],
         "event_ids_negative": [
+          3819,
           3818,
           3817,
           3816,
@@ -85129,7 +85152,7 @@
       },
       "ILO": {
         "positive": 12,
-        "negative": 13,
+        "negative": 14,
         "event_ids_positive": [
           3751,
           3699,
@@ -85145,6 +85168,7 @@
           3283
         ],
         "event_ids_negative": [
+          3819,
           3803,
           3765,
           3720,
@@ -85470,8 +85494,8 @@
         ]
       },
       "PB": {
-        "positive": 75,
-        "negative": 99,
+        "positive": 74,
+        "negative": 100,
         "event_ids_positive": [
           3792,
           3786,
@@ -85546,10 +85570,10 @@
           3266,
           3258,
           3237,
-          3231,
-          3230
+          3231
         ],
         "event_ids_negative": [
+          3819,
           3812,
           3811,
           3804,
@@ -85831,8 +85855,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 102,
-        "burn_count": 42,
+        "count": 101,
+        "burn_count": 41,
         "mint_count": 60,
         "event_ids": [
           3816,
@@ -85935,14 +85959,13 @@
           3246,
           3238,
           3237,
-          3231,
-          3230
+          3231
         ]
       },
       {
         "name": "Construction",
-        "count": 66,
-        "burn_count": 30,
+        "count": 65,
+        "burn_count": 29,
         "mint_count": 36,
         "event_ids": [
           3816,
@@ -86009,8 +86032,7 @@
           3252,
           3250,
           3244,
-          3231,
-          3230
+          3231
         ]
       },
       {
@@ -86167,6 +86189,35 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 21,
+        "burn_count": 4,
+        "mint_count": 17,
+        "event_ids": [
+          3819,
+          3816,
+          3804,
+          3803,
+          3779,
+          3719,
+          3712,
+          3686,
+          3685,
+          3638,
+          3637,
+          3589,
+          3575,
+          3532,
+          3520,
+          3503,
+          3431,
+          3399,
+          3365,
+          3317,
+          3300
+        ]
+      },
+      {
         "name": "Water",
         "count": 21,
         "burn_count": 10,
@@ -86194,41 +86245,13 @@
           3246,
           3244
         ]
-      },
-      {
-        "name": "Agriculture",
-        "count": 20,
-        "burn_count": 4,
-        "mint_count": 16,
-        "event_ids": [
-          3816,
-          3804,
-          3803,
-          3779,
-          3719,
-          3712,
-          3686,
-          3685,
-          3638,
-          3637,
-          3589,
-          3575,
-          3532,
-          3520,
-          3503,
-          3431,
-          3399,
-          3365,
-          3317,
-          3300
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 186,
+      "total_burn": 185,
       "direct_action": {
-        "count": 161,
-        "pct": 86.6
+        "count": 160,
+        "pct": 86.5
       },
       "editorial_consciousness": {
         "count": 20,
@@ -86255,9 +86278,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 403,
+      "total_mint": 404,
       "direct_action": {
-        "count": 374,
+        "count": 375,
         "pct": 92.8
       },
       "editorial_alarm": {
@@ -86270,9 +86293,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2554,
+      "total_mint": 2555,
       "direct_action": {
-        "count": 1905,
+        "count": 1906,
         "pct": 74.6
       },
       "editorial_alarm": {
@@ -86285,9 +86308,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 199,
-      "institutional": 390,
-      "citizen_ratio": 0.338,
+      "citizen": 198,
+      "institutional": 391,
+      "citizen_ratio": 0.336,
       "daily": [
         {
           "date": "2026-06-16",
@@ -86322,7 +86345,7 @@
         {
           "date": "2026-06-22",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -86523,10 +86546,10 @@
         3241,
         3240,
         3235,
-        3232,
-        3230
+        3232
       ],
       "event_ids_institutional": [
+        3819,
         3818,
         3815,
         3814,
