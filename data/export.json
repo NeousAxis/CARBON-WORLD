@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-22T00:05:08.019486+00:00",
-  "total_events": 3815,
+  "generated_at": "2026-06-22T00:34:36.042906+00:00",
+  "total_events": 3816,
   "total_burned": 5730352120,
-  "total_minted": 5887795789,
+  "total_minted": 5897295789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3816,
+      "event_title": "Shipping slows after Iran says it has again shut the Strait of Hormuz",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/shipping-slows-after-iran-says-it-has-again-shut-strait-hormuz",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.76,
+      "confidence": 10,
+      "justification": "Both analysts agree on MINT; converged toward average score. | The closure of the Strait of Hormuz by Iran constitutes a severe disruption to global trade and energy flows, violating fundamental human rights to movement and livelihood. It undermines multiple SDGs, particularly those related to food security, energy access, and economic stability, with cascading negative effects on climate action and sustainable infrastructure.",
+      "tx_hash": "T7tQSjtZd34MEnfaZd6mR3J8TXY5oBiVDyMJaMSmzXwdvamCQZKbx9j8YY5Ee3MXkvxat4sMEJfQ5HGyYMsdTFs",
+      "created_at": "2026-06-22T00:34:31.621736+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Iran's closure of the Strait of Hormuz disrupts global shipping, threatening supply chains and increasing fuel costs, with potential impacts on food and energy security worldwide\", \"affected_sdgs\": [2, 7, 8, 9, 12, 13, 14], \"violated_rights\": [\"UDHR Article 13 (freedom of movement)\", \"UDHR Article 25 (standard of living)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3815,
       "event_title": "U.S., Iran meet in Switzerland as fresh Trump threat angers Tehran",
@@ -83967,18 +83989,13 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 32,
-        "total_amount": 156450000
+        "count": 31,
+        "total_amount": 149450000
       },
       {
         "country": "France",
         "count": 14,
         "total_amount": 67940000
-      },
-      {
-        "country": "Switzerland",
-        "count": 8,
-        "total_amount": 38000000
       },
       {
         "country": "India",
@@ -83989,6 +84006,11 @@
         "country": "Spain",
         "count": 6,
         "total_amount": 22750000
+      },
+      {
+        "country": "Switzerland",
+        "count": 6,
+        "total_amount": 28000000
       }
     ],
     "top_regions_sustainable": [
@@ -84009,8 +84031,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.314,
-        "events": 159
+        "burn_ratio": 0.306,
+        "events": 157
       },
       {
         "region": "Asia",
@@ -84021,13 +84043,13 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.897,
-        "events": 29
+        "mint_ratio": 0.9,
+        "events": 30
       },
       {
         "region": "North America",
-        "mint_ratio": 0.724,
-        "events": 123
+        "mint_ratio": 0.73,
+        "events": 122
       },
       {
         "region": "Asia",
@@ -84036,8 +84058,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.686,
-        "events": 159
+        "mint_ratio": 0.694,
+        "events": 157
       },
       {
         "region": "Latin America",
@@ -84078,7 +84100,7 @@
       },
       {
         "date": "2026-06-22",
-        "net_minted": 150000,
+        "net_minted": 9650000,
         "net_burned": 0
       }
     ],
@@ -84095,8 +84117,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 185,
-        "negative": 399,
+        "positive": 182,
+        "negative": 400,
         "event_ids_positive": [
           3813,
           3798,
@@ -84279,12 +84301,10 @@
           3232,
           3231,
           3230,
-          3228,
-          3227,
-          3226,
-          3225
+          3228
         ],
         "event_ids_negative": [
+          3816,
           3815,
           3814,
           3812,
@@ -84687,8 +84707,8 @@
         ]
       },
       "UDHR": {
-        "positive": 77,
-        "negative": 293,
+        "positive": 74,
+        "negative": 294,
         "event_ids_positive": [
           3813,
           3798,
@@ -84763,12 +84783,10 @@
           3245,
           3234,
           3232,
-          3228,
-          3227,
-          3226,
-          3225
+          3228
         ],
         "event_ids_negative": [
+          3816,
           3815,
           3814,
           3812,
@@ -85171,7 +85189,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 39,
+        "positive": 38,
         "negative": 92,
         "event_ids_positive": [
           3795,
@@ -85211,8 +85229,7 @@
           3325,
           3269,
           3266,
-          3245,
-          3226
+          3245
         ],
         "event_ids_negative": [
           3814,
@@ -85595,11 +85612,11 @@
       "niche_pct": 50.8,
       "mainstream_pct": 49.2,
       "total_sources_used": 118,
-      "articles_processed": 591
+      "articles_processed": 589
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 591,
+      "total_events": 589,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -85770,10 +85787,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 101,
+        "count": 102,
         "burn_count": 42,
-        "mint_count": 59,
+        "mint_count": 60,
         "event_ids": [
+          3816,
           3800,
           3792,
           3789,
@@ -85879,10 +85897,11 @@
       },
       {
         "name": "Construction",
-        "count": 65,
+        "count": 66,
         "burn_count": 30,
-        "mint_count": 35,
+        "mint_count": 36,
         "event_ids": [
+          3816,
           3790,
           3762,
           3758,
@@ -86041,8 +86060,8 @@
       },
       {
         "name": "Transport",
-        "count": 26,
-        "burn_count": 8,
+        "count": 25,
+        "burn_count": 7,
         "mint_count": 18,
         "event_ids": [
           3785,
@@ -86069,8 +86088,7 @@
           3287,
           3264,
           3252,
-          3250,
-          3226
+          3250
         ]
       },
       {
@@ -86136,10 +86154,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 19,
+        "count": 20,
         "burn_count": 4,
-        "mint_count": 15,
+        "mint_count": 16,
         "event_ids": [
+          3816,
           3804,
           3803,
           3779,
@@ -86163,18 +86182,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 190,
+      "total_burn": 187,
       "direct_action": {
-        "count": 165,
-        "pct": 86.8
+        "count": 162,
+        "pct": 86.6
       },
       "editorial_consciousness": {
         "count": 20,
-        "pct": 10.5
+        "pct": 10.7
       },
       "untyped": {
         "count": 5,
-        "pct": 2.6
+        "pct": 2.7
       }
     },
     "burn_composition_all_time": {
@@ -86193,9 +86212,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 401,
+      "total_mint": 402,
       "direct_action": {
-        "count": 372,
+        "count": 373,
         "pct": 92.8
       },
       "editorial_alarm": {
@@ -86208,9 +86227,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2551,
+      "total_mint": 2552,
       "direct_action": {
-        "count": 1902,
+        "count": 1903,
         "pct": 74.6
       },
       "editorial_alarm": {
@@ -86224,8 +86243,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 199,
-      "institutional": 392,
-      "citizen_ratio": 0.337,
+      "institutional": 390,
+      "citizen_ratio": 0.338,
       "daily": [
         {
           "date": "2026-06-16",
@@ -86259,11 +86278,12 @@
         },
         {
           "date": "2026-06-22",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        3816,
         3811,
         3795,
         3792,
@@ -86461,8 +86481,7 @@
         3235,
         3232,
         3230,
-        3229,
-        3226
+        3229
       ],
       "event_ids_institutional": [
         3815,
@@ -86854,9 +86873,7 @@
         3234,
         3233,
         3231,
-        3228,
-        3227,
-        3225
+        3228
       ]
     }
   }
