@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-22T13:05:44.629374+00:00",
-  "total_events": 3856,
+  "generated_at": "2026-06-22T13:34:53.733081+00:00",
+  "total_events": 3858,
   "total_burned": 5775512120,
-  "total_minted": 5934820789,
+  "total_minted": 5936420789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3858,
+      "event_title": "Gambling firms take Meta to court over illegal betting ads",
+      "event_url": "https://www.dutchnews.nl/2026/06/gambling-firms-take-meta-to-court-over-illegal-betting-ads/",
+      "event_source": "DutchNews.nl",
+      "decision": "MINT",
+      "amount_crbn": 100000,
+      "final_score": -1.04,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Legal action against Meta for illegal betting ads reflects systemic enforcement gaps. | The legal action by licensed gambling companies against Meta reflects a positive enforcement of regulatory standards to protect consumers and public health (SDG 16). However, the underlying issue of illegal betting ads highlights systemic gaps in Meta's content moderation, which undermines t",
+      "tx_hash": "2ebUWjDQTmNnosLmC6KhnjxhJ3eRJdF9DsXi6vKguwASQKZMQ14D4pqYzzidjVW63K6VgZw2sStycnhiinR57EdX",
+      "created_at": "2026-06-22T13:34:49.282431+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Licensed gambling companies in the Netherlands are taking legal action against Meta to enforce regulations on illegal betting ads, demonstrating corporate accountability and regulatory compliance efforts.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Meta faces legal action for allegedly failing to prevent illegal betting ads, indicating potential systemic failures in content moderation and regulatory enforcement.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 29\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 3857,
+      "event_title": "La contaminación del aire repunta en Aragón por el cambio climático y la mayor combustión de petróleo",
+      "event_url": "https://www.ecologistasenaccion.org/372103/la-contaminacion-del-aire-repunta-en-aragon-por-el-cambio-climatico-y-la-mayor-combustion-de-petroleo/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -4.46,
+      "confidence": 9,
+      "justification": "Semantic cache reuse (cosine=0.934) from event #3836",
+      "tx_hash": null,
+      "created_at": "2026-06-22T13:33:14.928914+00:00",
+      "embedding": null,
+      "reused_from_event_id": 3836,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 3856,
       "event_title": "World adds 664GW of solar PV in 2025, exceeds 3TW of cumulative capacity",
@@ -84900,14 +84944,14 @@
         "events": 30
       },
       {
+        "region": "Latin America",
+        "burn_ratio": 0.319,
+        "events": 47
+      },
+      {
         "region": "Oceania",
         "burn_ratio": 0.312,
         "events": 32
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.306,
-        "events": 49
       },
       {
         "region": "Asia",
@@ -84916,15 +84960,15 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.29,
-        "events": 155
+        "burn_ratio": 0.288,
+        "events": 156
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.9,
-        "events": 30
+        "mint_ratio": 0.897,
+        "events": 29
       },
       {
         "region": "North America",
@@ -84933,8 +84977,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.71,
-        "events": 155
+        "mint_ratio": 0.712,
+        "events": 156
       },
       {
         "region": "Asia",
@@ -84942,9 +84986,9 @@
         "events": 60
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.694,
-        "events": 49
+        "region": "Oceania",
+        "mint_ratio": 0.688,
+        "events": 32
       }
     ],
     "supply_trend_7d": [
@@ -84980,7 +85024,7 @@
       },
       {
         "date": "2026-06-22",
-        "net_minted": 45175000,
+        "net_minted": 45275000,
         "net_burned": 45160000
       }
     ],
@@ -84998,7 +85042,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 179,
-        "negative": 406,
+        "negative": 404,
         "event_ids_positive": [
           3856,
           3855,
@@ -85181,6 +85225,7 @@
           3266
         ],
         "event_ids_negative": [
+          3858,
           3854,
           3852,
           3851,
@@ -85583,15 +85628,12 @@
           3274,
           3270,
           3268,
-          3267,
-          3265,
-          3264,
-          3263
+          3267
         ]
       },
       "UDHR": {
         "positive": 72,
-        "negative": 304,
+        "negative": 303,
         "event_ids_positive": [
           3853,
           3845,
@@ -85667,6 +85709,7 @@
           3266
         ],
         "event_ids_negative": [
+          3858,
           3854,
           3852,
           3851,
@@ -85968,9 +86011,7 @@
           3275,
           3274,
           3270,
-          3267,
-          3265,
-          3264
+          3267
         ]
       },
       "ILO": {
@@ -86085,7 +86126,7 @@
       },
       "UNDRIP": {
         "positive": 42,
-        "negative": 90,
+        "negative": 89,
         "event_ids_positive": [
           3853,
           3848,
@@ -86219,8 +86260,7 @@
           3296,
           3295,
           3294,
-          3288,
-          3265
+          3288
         ]
       },
       "Animal": {
@@ -86511,11 +86551,11 @@
       "niche_pct": 49.6,
       "mainstream_pct": 50.4,
       "total_sources_used": 119,
-      "articles_processed": 592
+      "articles_processed": 590
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 592,
+      "total_events": 590,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -86689,9 +86729,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 102,
+        "count": 100,
         "burn_count": 42,
-        "mint_count": 60,
+        "mint_count": 58,
         "event_ids": [
           3856,
           3855,
@@ -86792,16 +86832,14 @@
           3283,
           3271,
           3270,
-          3268,
-          3265,
-          3263
+          3268
         ]
       },
       {
         "name": "Construction",
-        "count": 64,
+        "count": 63,
         "burn_count": 28,
-        "mint_count": 36,
+        "mint_count": 35,
         "event_ids": [
           3855,
           3850,
@@ -86865,8 +86903,7 @@
           3295,
           3294,
           3283,
-          3279,
-          3264
+          3279
         ]
       },
       {
@@ -86962,10 +86999,11 @@
       },
       {
         "name": "Tech",
-        "count": 24,
+        "count": 25,
         "burn_count": 8,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          3858,
           3855,
           3850,
           3827,
@@ -86994,9 +87032,9 @@
       },
       {
         "name": "Transport",
-        "count": 24,
+        "count": 23,
         "burn_count": 6,
-        "mint_count": 18,
+        "mint_count": 17,
         "event_ids": [
           3845,
           3785,
@@ -87020,8 +87058,7 @@
           3298,
           3295,
           3289,
-          3287,
-          3264
+          3287
         ]
       },
       {
@@ -87113,10 +87150,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 408,
+      "total_mint": 406,
       "direct_action": {
-        "count": 381,
-        "pct": 93.4
+        "count": 379,
+        "pct": 93.3
       },
       "editorial_alarm": {
         "count": 26,
@@ -87128,10 +87165,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2580,
+      "total_mint": 2581,
       "direct_action": {
-        "count": 1931,
-        "pct": 74.8
+        "count": 1932,
+        "pct": 74.9
       },
       "editorial_alarm": {
         "count": 161,
@@ -87143,9 +87180,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 194,
-      "institutional": 398,
-      "citizen_ratio": 0.328,
+      "citizen": 193,
+      "institutional": 397,
+      "citizen_ratio": 0.327,
       "daily": [
         {
           "date": "2026-06-16",
@@ -87180,7 +87217,7 @@
         {
           "date": "2026-06-22",
           "citizen": 9,
-          "institutional": 31
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
@@ -87376,10 +87413,10 @@
         3277,
         3276,
         3272,
-        3266,
-        3264
+        3266
       ],
       "event_ids_institutional": [
+        3858,
         3856,
         3855,
         3854,
@@ -87775,9 +87812,7 @@
         3270,
         3269,
         3268,
-        3267,
-        3265,
-        3263
+        3267
       ]
     }
   }
