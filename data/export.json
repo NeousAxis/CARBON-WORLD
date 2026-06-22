@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-22T15:35:27.490484+00:00",
-  "total_events": 3872,
+  "generated_at": "2026-06-22T16:04:29.650956+00:00",
+  "total_events": 3873,
   "total_burned": 5808012120,
-  "total_minted": 5945045789,
+  "total_minted": 5945545789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 3873,
+      "event_title": "Rubio heads to UAE, Kuwait, Bahrain to discuss Iran deal with Gulf allies",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/rubio-heads-uae-kuwait-bahrain-discuss-iran-deal-gulf-allies",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.33,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Diplomatic trip risks enabling harmful Iran accord and reinforcing authoritarian Gulf allies. | The diplomatic engagement itself is a neutral-to-positive act of alliance-building, but the context of selling a preliminary Iran accord raises significant concerns about regional stability, human rights, and the potential normalization of authoritarian governance. The net ethical po",
+      "tx_hash": "3Pp9edfXLV1nXemivLpK49JuR6Fs5EENeLLWc48FXYQUbPf8Gr4VP2KTCPQDQbEhcQq41MkSphUTqxWDfm2txz81",
+      "created_at": "2026-06-22T16:04:24.336859+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Diplomatic engagement with Gulf allies to discuss regional security frameworks, potentially strengthening alliances and fostering dialogue on shared concerns like Iran's regional influence.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential legitimization of a preliminary Iran accord that may undermine regional stability, human rights, or non-proliferation efforts if the deal is perceived as weak or enabling of adversarial actions.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of reinforcing authoritarian Gulf monarchies without addressing their human rights records or democratic deficits, potentially normalizing oppressive governance structures.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 29\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 3872,
       "event_title": "Pastoralism at the Crossroads: Between Struggles and Recognition",
@@ -85194,8 +85216,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 81,
-        "total_amount": 877115000
+        "count": 82,
+        "total_amount": 877615000
       },
       {
         "country": "European Union",
@@ -85262,14 +85284,14 @@
         "events": 30
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.289,
-        "events": 121
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.288,
         "events": 59
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.287,
+        "events": 122
       }
     ],
     "top_regions_destructive": [
@@ -85280,18 +85302,18 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.714,
-        "events": 161
+        "mint_ratio": 0.719,
+        "events": 160
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.713,
+        "events": 122
       },
       {
         "region": "Asia",
         "mint_ratio": 0.712,
         "events": 59
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.711,
-        "events": 121
       },
       {
         "region": "Oceania",
@@ -85332,7 +85354,7 @@
       },
       {
         "date": "2026-06-22",
-        "net_minted": 53900000,
+        "net_minted": 54400000,
         "net_burned": 77660000
       }
     ],
@@ -85349,8 +85371,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 183,
-        "negative": 408,
+        "positive": 181,
+        "negative": 409,
         "event_ids_positive": [
           3872,
           3871,
@@ -85532,11 +85554,10 @@
           3280,
           3279,
           3278,
-          3276,
-          3273,
-          3272
+          3276
         ],
         "event_ids_negative": [
+          3873,
           3870,
           3865,
           3864,
@@ -85948,8 +85969,8 @@
         ]
       },
       "UDHR": {
-        "positive": 75,
-        "negative": 307,
+        "positive": 74,
+        "negative": 308,
         "event_ids_positive": [
           3871,
           3868,
@@ -86024,10 +86045,10 @@
           3293,
           3283,
           3281,
-          3279,
-          3273
+          3279
         ],
         "event_ids_negative": [
+          3873,
           3870,
           3865,
           3864,
@@ -86592,7 +86613,7 @@
         ]
       },
       "Animal": {
-        "positive": 50,
+        "positive": 49,
         "negative": 40,
         "event_ids_positive": [
           3868,
@@ -86643,8 +86664,7 @@
           3282,
           3280,
           3278,
-          3276,
-          3272
+          3276
         ],
         "event_ids_negative": [
           3870,
@@ -86882,11 +86902,11 @@
       "niche_pct": 50.0,
       "mainstream_pct": 50.0,
       "total_sources_used": 118,
-      "articles_processed": 598
+      "articles_processed": 597
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 598,
+      "total_events": 597,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -87459,14 +87479,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 188,
+      "total_burn": 186,
       "direct_action": {
-        "count": 164,
-        "pct": 87.2
+        "count": 162,
+        "pct": 87.1
       },
       "editorial_consciousness": {
         "count": 19,
-        "pct": 10.1
+        "pct": 10.2
       },
       "untyped": {
         "count": 5,
@@ -87489,9 +87509,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 410,
+      "total_mint": 411,
       "direct_action": {
-        "count": 382,
+        "count": 383,
         "pct": 93.2
       },
       "editorial_alarm": {
@@ -87504,9 +87524,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2588,
+      "total_mint": 2589,
       "direct_action": {
-        "count": 1938,
+        "count": 1939,
         "pct": 74.9
       },
       "editorial_alarm": {
@@ -87515,13 +87535,13 @@
       },
       "untyped": {
         "count": 488,
-        "pct": 18.9
+        "pct": 18.8
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 198,
+      "citizen": 197,
       "institutional": 400,
-      "citizen_ratio": 0.331,
+      "citizen_ratio": 0.33,
       "daily": [
         {
           "date": "2026-06-16",
@@ -87556,7 +87576,7 @@
         {
           "date": "2026-06-22",
           "citizen": 15,
-          "institutional": 40
+          "institutional": 41
         }
       ],
       "event_ids_citizen": [
@@ -87756,10 +87776,10 @@
         3279,
         3278,
         3277,
-        3276,
-        3272
+        3276
       ],
       "event_ids_institutional": [
+        3873,
         3871,
         3870,
         3869,
@@ -88158,8 +88178,7 @@
         3281,
         3280,
         3275,
-        3274,
-        3273
+        3274
       ]
     }
   }
