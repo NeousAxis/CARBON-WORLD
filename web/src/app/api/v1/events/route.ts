@@ -135,7 +135,14 @@ export async function GET(request: Request) {
     const rawOffset = searchParams.get("offset");
     const decisionFilter = searchParams.get("decision")?.toUpperCase();
     const sinceFilter = searchParams.get("since");
+    const untilFilter = searchParams.get("until");
     const sourceFilter = searchParams.get("source");
+    const countryFilter = searchParams.get("country");
+    const regionFilter = searchParams.get("region");
+    const rawMinScore = searchParams.get("min_score");
+    const rawMaxScore = searchParams.get("max_score");
+    const rawMinConfidence = searchParams.get("min_confidence");
+    const rawSort = searchParams.get("sort");
 
     let limit = rawLimit ? parseInt(rawLimit, 10) : 20;
     let offset = rawOffset ? parseInt(rawOffset, 10) : 0;
@@ -150,12 +157,31 @@ export async function GET(request: Request) {
       );
     }
 
-    // Validate ISO8601 date if provided
-    if (sinceFilter) {
-      const parsed = new Date(sinceFilter);
-      if (isNaN(parsed.getTime())) {
-        return badRequest(`Invalid 'since' parameter. Must be ISO8601 datetime.`);
+    // Validate ISO8601 dates if provided
+    for (const [name, val] of [["since", sinceFilter], ["until", untilFilter]] as const) {
+      if (val && isNaN(new Date(val).getTime())) {
+        return badRequest(`Invalid '${name}' parameter. Must be ISO8601 datetime.`);
       }
+    }
+
+    const minScore = rawMinScore !== null ? Number(rawMinScore) : undefined;
+    const maxScore = rawMaxScore !== null ? Number(rawMaxScore) : undefined;
+    const minConfidence = rawMinConfidence !== null ? Number(rawMinConfidence) : undefined;
+    for (const [name, val] of [
+      ["min_score", minScore],
+      ["max_score", maxScore],
+      ["min_confidence", minConfidence],
+    ] as const) {
+      if (val !== undefined && Number.isNaN(val)) {
+        return badRequest(`Invalid '${name}' parameter. Must be a number.`);
+      }
+    }
+
+    const VALID_SORTS = new Set(["recent", "oldest", "score_desc", "score_asc"]);
+    if (rawSort && !VALID_SORTS.has(rawSort)) {
+      return badRequest(
+        `Invalid 'sort' parameter. Must be one of: recent, oldest, score_desc, score_asc`
+      );
     }
 
     const { events, total } = queryEvents({
@@ -163,7 +189,14 @@ export async function GET(request: Request) {
       offset,
       decision: decisionFilter,
       since: sinceFilter ?? undefined,
+      until: untilFilter ?? undefined,
       source: sourceFilter ?? undefined,
+      country: countryFilter ?? undefined,
+      region: regionFilter ?? undefined,
+      minScore,
+      maxScore,
+      minConfidence,
+      sort: (rawSort as "recent" | "oldest" | "score_desc" | "score_asc") ?? undefined,
     });
 
     return ok(

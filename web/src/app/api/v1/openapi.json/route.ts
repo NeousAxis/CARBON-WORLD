@@ -82,6 +82,55 @@ const SPEC = {
             schema: { type: "string" },
             description: "Filter by event source (partial match)",
           },
+          {
+            name: "until",
+            in: "query",
+            schema: { type: "string", format: "date-time" },
+            description: "Return events created at or before this ISO8601 timestamp",
+          },
+          {
+            name: "country",
+            in: "query",
+            schema: { type: "string" },
+            description: "Filter by exact country name (see /countries for the vocabulary)",
+          },
+          {
+            name: "region",
+            in: "query",
+            schema: {
+              type: "string",
+              enum: ["North America", "Europe", "Latin America", "Asia", "Oceania", "Africa", "MENA"],
+            },
+            description: "Filter by world region",
+          },
+          {
+            name: "min_score",
+            in: "query",
+            schema: { type: "number" },
+            description: "Only events with final_score >= this value (signed scale; BURN positive, MINT negative)",
+          },
+          {
+            name: "max_score",
+            in: "query",
+            schema: { type: "number" },
+            description: "Only events with final_score <= this value",
+          },
+          {
+            name: "min_confidence",
+            in: "query",
+            schema: { type: "integer", minimum: 0, maximum: 10 },
+            description: "Only events with confidence >= this value",
+          },
+          {
+            name: "sort",
+            in: "query",
+            schema: {
+              type: "string",
+              enum: ["recent", "oldest", "score_desc", "score_asc"],
+              default: "recent",
+            },
+            description: "Result ordering",
+          },
         ],
         responses: {
           "200": {
@@ -178,6 +227,109 @@ const SPEC = {
               },
             },
           },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/regions": {
+      get: {
+        summary: "Per-region geo-economic aggregates",
+        description:
+          "One entry per world region with the count-based ethical_index (-1..+1), " +
+          "decision breakdown, mean_score, CBWD supply, and top countries. " +
+          "ethical_index = (burn_count - mint_count) / events — robust, not amount-based.",
+        operationId: "listRegions",
+        tags: ["Intelligence"],
+        parameters: [
+          { name: "since", in: "query", schema: { type: "string", format: "date-time" }, description: "Window start" },
+          { name: "until", in: "query", schema: { type: "string", format: "date-time" }, description: "Window end" },
+          { name: "decision", in: "query", schema: { type: "string", enum: ["BURN", "MINT", "NEUTRAL"] } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/RegionsResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/countries": {
+      get: {
+        summary: "Per-country geo-economic aggregates + ethical index",
+        operationId: "listCountries",
+        tags: ["Intelligence"],
+        parameters: [
+          { name: "region", in: "query", schema: { type: "string" }, description: "Restrict to one world region" },
+          { name: "since", in: "query", schema: { type: "string", format: "date-time" } },
+          { name: "until", in: "query", schema: { type: "string", format: "date-time" } },
+          { name: "decision", in: "query", schema: { type: "string", enum: ["BURN", "MINT", "NEUTRAL"] } },
+          { name: "sort", in: "query", schema: { type: "string", enum: ["events", "index_desc", "index_asc"], default: "events" } },
+          { name: "limit", in: "query", schema: { type: "integer", default: 50, minimum: 1, maximum: 200 } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/CountriesResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/timeseries": {
+      get: {
+        summary: "Events / supply / index over time",
+        description: "Time-bucketed aggregates (day/week/month), geo- and decision-filterable.",
+        operationId: "getTimeseries",
+        tags: ["Intelligence"],
+        parameters: [
+          { name: "interval", in: "query", schema: { type: "string", enum: ["day", "week", "month"], default: "day" } },
+          { name: "region", in: "query", schema: { type: "string" } },
+          { name: "country", in: "query", schema: { type: "string" } },
+          { name: "decision", in: "query", schema: { type: "string", enum: ["BURN", "MINT", "NEUTRAL"] } },
+          { name: "since", in: "query", schema: { type: "string", format: "date-time" } },
+          { name: "until", in: "query", schema: { type: "string", format: "date-time" } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/TimeseriesResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/frameworks": {
+      get: {
+        summary: "Aggregates across the 7 UN reference frameworks",
+        description:
+          "Counts framework hits and sums magnitudes (positive vs negative) across " +
+          "SDG, UDHR, ILO, Animal, CRC, UNDRIP, PB — plus an SDG histogram (1-17).",
+        operationId: "getFrameworks",
+        tags: ["Intelligence"],
+        parameters: [
+          { name: "region", in: "query", schema: { type: "string" } },
+          { name: "country", in: "query", schema: { type: "string" } },
+          { name: "decision", in: "query", schema: { type: "string", enum: ["BURN", "MINT", "NEUTRAL"] } },
+          { name: "since", in: "query", schema: { type: "string", format: "date-time" } },
+          { name: "until", in: "query", schema: { type: "string", format: "date-time" } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/FrameworksResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/index": {
+      get: {
+        summary: "Synthesized state-of-the-world index",
+        description:
+          "One call: global count-based ethical index, per-region ranking, and the " +
+          "7-day top movers (region index now vs the prior 7-day window). Dashboard-as-API.",
+        operationId: "getWorldIndex",
+        tags: ["Intelligence"],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/WorldIndexResponse" } } } },
           "429": { $ref: "#/components/responses/RateLimitExceeded" },
           "500": { $ref: "#/components/responses/InternalError" },
         },
@@ -448,6 +600,164 @@ const SPEC = {
               reused_events: { type: "integer" },
             },
           },
+        },
+      },
+      GeoMetrics: {
+        type: "object",
+        description: "Shared aggregate metrics for a geography or time bucket.",
+        properties: {
+          events: { type: "integer" },
+          by_decision: {
+            type: "object",
+            properties: {
+              BURN: { type: "integer" },
+              MINT: { type: "integer" },
+              NEUTRAL: { type: "integer" },
+            },
+          },
+          ethical_index: {
+            type: "number",
+            minimum: -1,
+            maximum: 1,
+            description: "(burn_count - mint_count) / events. Robust, count-based.",
+          },
+          burn_ratio: { type: "number" },
+          mint_ratio: { type: "number" },
+          mean_score: { type: "number", nullable: true, description: "Average signed final_score" },
+          supply_cbwd: {
+            type: "object",
+            description: "On-chain CBWD. net is inflation-prone — do not use as the index.",
+            properties: {
+              minted: { type: "integer" },
+              burned: { type: "integer" },
+              net: { type: "integer" },
+            },
+          },
+          last_event_at: { type: "string", format: "date-time", nullable: true },
+        },
+      },
+      RegionsResponse: {
+        type: "object",
+        properties: {
+          regions: {
+            type: "array",
+            items: {
+              allOf: [
+                { $ref: "#/components/schemas/GeoMetrics" },
+                {
+                  type: "object",
+                  properties: {
+                    region: { type: "string" },
+                    top_countries: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: { country: { type: "string" }, events: { type: "integer" } },
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          total_classified: { type: "integer" },
+        },
+      },
+      CountriesResponse: {
+        type: "object",
+        properties: {
+          countries: {
+            type: "array",
+            items: {
+              allOf: [
+                { $ref: "#/components/schemas/GeoMetrics" },
+                {
+                  type: "object",
+                  properties: {
+                    country: { type: "string" },
+                    region: { type: "string", nullable: true },
+                  },
+                },
+              ],
+            },
+          },
+          total_classified: { type: "integer" },
+        },
+      },
+      TimeseriesResponse: {
+        type: "object",
+        properties: {
+          interval: { type: "string", enum: ["day", "week", "month"] },
+          buckets: {
+            type: "array",
+            items: {
+              allOf: [
+                { $ref: "#/components/schemas/GeoMetrics" },
+                { type: "object", properties: { period: { type: "string", example: "2026-06" } } },
+              ],
+            },
+          },
+        },
+      },
+      FrameworksResponse: {
+        type: "object",
+        properties: {
+          frameworks: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                framework: { type: "string", enum: ["SDG", "UDHR", "ILO", "Animal", "CRC", "UNDRIP", "PB"] },
+                positive_count: { type: "integer" },
+                negative_count: { type: "integer" },
+                positive_magnitude: { type: "integer" },
+                negative_magnitude: { type: "integer" },
+                net_magnitude: { type: "integer" },
+              },
+            },
+          },
+          sdg_histogram: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                sdg: { type: "integer", minimum: 1, maximum: 17 },
+                positive: { type: "integer" },
+                negative: { type: "integer" },
+              },
+            },
+          },
+          events_analyzed: { type: "integer" },
+        },
+      },
+      WorldIndexResponse: {
+        type: "object",
+        properties: {
+          generated_at: { type: "string", format: "date-time" },
+          global: { $ref: "#/components/schemas/GeoMetrics" },
+          by_region: {
+            type: "array",
+            items: {
+              allOf: [
+                { $ref: "#/components/schemas/GeoMetrics" },
+                { type: "object", properties: { region: { type: "string" } } },
+              ],
+            },
+          },
+          top_movers: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                region: { type: "string" },
+                index_now: { type: "number" },
+                index_prev: { type: "number" },
+                delta: { type: "number" },
+                events_recent: { type: "integer" },
+              },
+            },
+          },
+          window_days: { type: "integer", example: 7 },
         },
       },
       SourcesResponse: {

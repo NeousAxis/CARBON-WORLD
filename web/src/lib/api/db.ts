@@ -17,7 +17,7 @@ let _db: Database.Database | null = null;
 /** true when the DB schema has the semantic-dedup columns (migration 2026-04-20) */
 let _hasExtendedColumns: boolean | null = null;
 
-function getDb(): Database.Database {
+export function getDb(): Database.Database {
   if (_db) return _db;
 
   const dbPath =
@@ -111,8 +111,22 @@ interface ListParams {
   offset: number;
   decision?: string;
   since?: string;
+  until?: string;
   source?: string;
+  country?: string;
+  region?: string;
+  minScore?: number;
+  maxScore?: number;
+  minConfidence?: number;
+  sort?: "recent" | "oldest" | "score_desc" | "score_asc";
 }
+
+const SORT_CLAUSES: Record<NonNullable<ListParams["sort"]>, string> = {
+  recent: "id DESC",
+  oldest: "id ASC",
+  score_desc: "final_score DESC, id DESC",
+  score_asc: "final_score ASC, id DESC",
+};
 
 export function queryEvents(params: ListParams): {
   events: ReturnType<typeof toPublicEvent>[];
@@ -131,12 +145,37 @@ export function queryEvents(params: ListParams): {
     conditions.push("created_at >= ?");
     bindings.push(params.since);
   }
+  if (params.until) {
+    conditions.push("created_at <= ?");
+    bindings.push(params.until);
+  }
   if (params.source) {
     conditions.push("event_source LIKE ?");
     bindings.push(`%${params.source}%`);
   }
+  if (params.country) {
+    conditions.push("country = ?");
+    bindings.push(params.country);
+  }
+  if (params.region) {
+    conditions.push("region = ?");
+    bindings.push(params.region);
+  }
+  if (params.minScore !== undefined) {
+    conditions.push("final_score >= ?");
+    bindings.push(params.minScore);
+  }
+  if (params.maxScore !== undefined) {
+    conditions.push("final_score <= ?");
+    bindings.push(params.maxScore);
+  }
+  if (params.minConfidence !== undefined) {
+    conditions.push("confidence >= ?");
+    bindings.push(params.minConfidence);
+  }
 
   const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
+  const orderBy = SORT_CLAUSES[params.sort ?? "recent"];
 
   const countRow = db
     .prepare(`SELECT COUNT(*) as c FROM carbon_events ${where}`)
@@ -149,7 +188,7 @@ export function queryEvents(params: ListParams): {
               amount_crbn, final_score, confidence, tx_hash, created_at
               ${extendedSelect}
        FROM carbon_events ${where}
-       ORDER BY id DESC
+       ORDER BY ${orderBy}
        LIMIT ? OFFSET ?`
     )
     .all(...bindings, params.limit, params.offset) as EventRow[];
