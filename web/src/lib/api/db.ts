@@ -278,6 +278,123 @@ export function queryStats() {
   };
 }
 
+// ---------------------------------------------------------------------------
+// Firehose — raw collected article stream (Phase 11)
+// ---------------------------------------------------------------------------
+
+let _hasRawArticles: boolean | null = null;
+
+/** Whether the raw_articles table exists (created by the worker migration). */
+function hasRawArticlesTable(): boolean {
+  if (_hasRawArticles !== null) return _hasRawArticles;
+  const db = getDb();
+  const row = db
+    .prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='raw_articles'")
+    .get() as { name: string } | undefined;
+  _hasRawArticles = !!row;
+  return _hasRawArticles;
+}
+
+interface FirehoseParams {
+  limit: number;
+  offset: number;
+  source?: string;
+  q?: string;
+  since?: string;
+  until?: string;
+  becameEvent?: boolean;
+}
+
+export function queryFirehose(params: FirehoseParams): {
+  articles: {
+    url: string;
+    title: string;
+    source: string;
+    published: string | null;
+    fetched_at: string;
+    became_event: boolean;
+  }[];
+  pagination: { limit: number; offset: number; total: number; has_more: boolean };
+  available: boolean;
+} {
+  if (!hasRawArticlesTable()) {
+    return {
+      articles: [],
+      pagination: { limit: params.limit, offset: params.offset, total: 0, has_more: false },
+      available: false,
+    };
+  }
+
+  const db = getDb();
+  const conditions: string[] = [];
+  const bindings: unknown[] = [];
+
+  if (params.source) {
+    conditions.push("r.source LIKE ?");
+    bindings.push(`%${params.source}%`);
+  }
+  if (params.q) {
+    conditions.push("r.title LIKE ?");
+    bindings.push(`%${params.q}%`);
+  }
+  if (params.since) {
+    conditions.push("r.fetched_at >= ?");
+    bindings.push(params.since);
+  }
+  if (params.until) {
+    conditions.push("r.fetched_at <= ?");
+    bindings.push(params.until);
+  }
+  if (params.becameEvent !== undefined) {
+    conditions.push(
+      params.becameEvent
+        ? "EXISTS (SELECT 1 FROM carbon_events e WHERE e.event_url = r.url)"
+        : "NOT EXISTS (SELECT 1 FROM carbon_events e WHERE e.event_url = r.url)"
+    );
+  }
+
+  const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
+
+  const countRow = db
+    .prepare(`SELECT COUNT(*) AS c FROM raw_articles r ${where}`)
+    .get(...bindings) as { c: number };
+
+  const rows = db
+    .prepare(
+      `SELECT r.url, r.title, r.source, r.published, r.fetched_at,
+              EXISTS (SELECT 1 FROM carbon_events e WHERE e.event_url = r.url) AS became_event
+       FROM raw_articles r ${where}
+       ORDER BY r.fetched_at DESC, r.id DESC
+       LIMIT ? OFFSET ?`
+    )
+    .all(...bindings, params.limit, params.offset) as {
+    url: string;
+    title: string;
+    source: string;
+    published: string | null;
+    fetched_at: string;
+    became_event: number;
+  }[];
+
+  return {
+    articles: rows.map((r) => ({
+      url: r.url,
+      title: r.title,
+      source: r.source,
+      published: r.published,
+      fetched_at: r.fetched_at,
+      became_event: !!r.became_event,
+    })),
+    pagination: {
+      limit: params.limit,
+      offset: params.offset,
+      total: countRow.c,
+      has_more: params.offset + rows.length < countRow.c,
+    },
+    available: true,
+  };
+}
+
 export function isDbReachable(): { ok: boolean; last_event_at: string | null } {
   try {
     const db = getDb();

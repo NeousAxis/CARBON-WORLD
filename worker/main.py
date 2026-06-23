@@ -239,6 +239,15 @@ def main() -> int:
         return 1
     total_collected = len(articles)
 
+    # Persist the full firehose (every collected article) for GET /api/v1/firehose,
+    # independently of whether it survives classification. Non-fatal.
+    try:
+        inserted = _db_module.save_raw_articles(articles, conn=_db_conn)
+        pruned = _db_module.prune_raw_articles(conn=_db_conn)
+        logger.info("Firehose: %d new raw articles persisted (%d pruned).", inserted, pruned)
+    except Exception as exc:
+        logger.warning("Could not persist raw articles (non-fatal): %s", exc)
+
     # Filter already-seen articles (carbon_events OR review_queue)
     new_articles = []
     for article in articles:

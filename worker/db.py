@@ -4,8 +4,9 @@ db.py — SQLite interactions: event existence check, saving, review queue, trai
 
 import json
 import logging
+import os
 import sqlite3
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -182,6 +183,30 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
     except sqlite3.OperationalError as exc:
         logger.warning("Migration (Tier 2 tables) partial error (likely already exists): %s", exc)
 
+    # Phase 11 — Raw article firehose (2026-06-23)
+    # Persists every collected article (the full geopolitical/economic stream),
+    # independently of whether it survives classification and becomes an event.
+    # Powers GET /api/v1/firehose. URL is UNIQUE so re-fetched articles across
+    # runs are idempotent (INSERT OR IGNORE), keeping growth bounded to genuinely
+    # new items; old rows are pruned by RAW_ARTICLES_RETENTION_DAYS.
+    try:
+        conn.executescript("""
+            CREATE TABLE IF NOT EXISTS raw_articles (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                url TEXT NOT NULL UNIQUE,
+                title TEXT NOT NULL DEFAULT '',
+                source TEXT NOT NULL DEFAULT '',
+                description TEXT,
+                published TEXT,
+                fetched_at TEXT NOT NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_raw_articles_fetched ON raw_articles(fetched_at);
+            CREATE INDEX IF NOT EXISTS idx_raw_articles_source ON raw_articles(source);
+        """)
+        conn.commit()
+    except sqlite3.OperationalError as exc:
+        logger.warning("Migration (raw_articles) partial error (likely already exists): %s", exc)
+
 
 def close_connection() -> None:
     """Close the module-level SQLite connection if open. Safe to call multiple times."""
@@ -193,6 +218,68 @@ def close_connection() -> None:
             logger.warning("Error closing SQLite connection: %s", exc)
         finally:
             _conn = None
+
+
+def save_raw_articles(articles: list[dict], conn: Optional[sqlite3.Connection] = None) -> int:
+    """
+    Persist the full collected stream into raw_articles (the firehose).
+
+    Idempotent: INSERT OR IGNORE on the UNIQUE url, so articles re-fetched across
+    runs do not duplicate. Partner submissions (no real URL) are skipped.
+    Returns the number of genuinely new rows inserted.
+    """
+    conn = conn or _get_conn()
+    now = datetime.now(tz=timezone.utc).isoformat()
+    rows = []
+    for a in articles:
+        url = (a.get("link") or "").strip()
+        if not url or url.startswith("submission://"):
+            continue
+        rows.append((
+            url,
+            (a.get("title") or "")[:500],
+            (a.get("source") or "")[:200],
+            (a.get("description") or "")[:1000],
+            (a.get("published") or "")[:64],
+            now,
+        ))
+    if not rows:
+        return 0
+    try:
+        before = conn.total_changes
+        conn.executemany(
+            "INSERT OR IGNORE INTO raw_articles "
+            "(url, title, source, description, published, fetched_at) "
+            "VALUES (?, ?, ?, ?, ?, ?)",
+            rows,
+        )
+        conn.commit()
+        return conn.total_changes - before
+    except Exception as exc:
+        logger.warning("save_raw_articles failed: %s", exc)
+        return 0
+
+
+def prune_raw_articles(retention_days: Optional[int] = None,
+                       conn: Optional[sqlite3.Connection] = None) -> int:
+    """
+    Delete raw_articles older than retention_days (env RAW_ARTICLES_RETENTION_DAYS,
+    default 30). Bounds storage growth. Returns the number of rows deleted.
+    """
+    if retention_days is None:
+        try:
+            retention_days = int(os.getenv("RAW_ARTICLES_RETENTION_DAYS", "30"))
+        except ValueError:
+            retention_days = 30
+    conn = conn or _get_conn()
+    cutoff = (datetime.now(tz=timezone.utc) - timedelta(days=retention_days)).isoformat()
+    try:
+        cur = conn.execute("DELETE FROM raw_articles WHERE fetched_at < ?", (cutoff,))
+        conn.commit()
+        return cur.rowcount or 0
+    except Exception as exc:
+        logger.warning("prune_raw_articles failed: %s", exc)
+        return 0
 
 
 def event_exists(link: str) -> bool:

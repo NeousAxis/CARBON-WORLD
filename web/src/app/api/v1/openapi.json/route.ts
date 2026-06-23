@@ -335,6 +335,75 @@ const SPEC = {
         },
       },
     },
+    "/firehose": {
+      get: {
+        summary: "Raw collected article stream",
+        description:
+          "Every article the collector fetches, persisted independently of whether it " +
+          "survives classification — the full geopolitical/economic stream. Each item " +
+          "carries became_event. Forward-only: fills as the pipeline runs (available:false until then).",
+        operationId: "getFirehose",
+        tags: ["Firehose"],
+        parameters: [
+          { name: "limit", in: "query", schema: { type: "integer", default: 50, minimum: 1, maximum: 100 } },
+          { name: "offset", in: "query", schema: { type: "integer", default: 0, minimum: 0 } },
+          { name: "source", in: "query", schema: { type: "string" }, description: "Partial match on source name" },
+          { name: "q", in: "query", schema: { type: "string" }, description: "Partial match on title" },
+          { name: "since", in: "query", schema: { type: "string", format: "date-time" } },
+          { name: "until", in: "query", schema: { type: "string", format: "date-time" } },
+          { name: "became_event", in: "query", schema: { type: "string", enum: ["true", "false"] } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/FirehoseResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "500": { $ref: "#/components/responses/InternalError" },
+        },
+      },
+    },
+    "/external/gdelt": {
+      get: {
+        summary: "Global news stream (GDELT proxy)",
+        description:
+          "Cached, timeout-guarded proxy to the GDELT 2.0 Doc API — global geopolitical news. " +
+          "Returns 502 upstream_error if GDELT is unreachable.",
+        operationId: "getGdelt",
+        tags: ["External"],
+        parameters: [
+          { name: "query", in: "query", required: true, schema: { type: "string", minLength: 2 }, description: "GDELT query expression" },
+          { name: "max", in: "query", schema: { type: "integer", default: 25, minimum: 1, maximum: 75 } },
+          { name: "timespan", in: "query", schema: { type: "string", default: "3d", example: "1d" } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/ExternalGdeltResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "502": { $ref: "#/components/responses/UpstreamError" },
+        },
+      },
+    },
+    "/external/worldbank": {
+      get: {
+        summary: "Economic indicators (World Bank proxy)",
+        description:
+          "Cached, timeout-guarded proxy to the World Bank Indicators API — economic / " +
+          "development time series. Returns 502 upstream_error if the upstream is unreachable.",
+        operationId: "getWorldBank",
+        tags: ["External"],
+        parameters: [
+          { name: "country", in: "query", required: true, schema: { type: "string", example: "US" }, description: "ISO2/ISO3 alpha code" },
+          { name: "indicator", in: "query", schema: { type: "string", default: "gdp" }, description: "Friendly key (gdp, gdp_per_capita, gdp_growth, population, co2_per_capita, renewable_energy, unemployment, forest_area) or a raw World Bank code" },
+          { name: "from", in: "query", schema: { type: "integer", example: 2010 } },
+          { name: "to", in: "query", schema: { type: "integer", example: 2024 } },
+        ],
+        responses: {
+          "200": { description: "Successful response", content: { "application/json": { schema: { $ref: "#/components/schemas/ExternalWorldBankResponse" } } } },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "429": { $ref: "#/components/responses/RateLimitExceeded" },
+          "502": { $ref: "#/components/responses/UpstreamError" },
+        },
+      },
+    },
     "/sources": {
       get: {
         summary: "List RSS sources",
@@ -760,6 +829,98 @@ const SPEC = {
           window_days: { type: "integer", example: 7 },
         },
       },
+      FirehoseResponse: {
+        type: "object",
+        properties: {
+          articles: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                url: { type: "string", format: "uri" },
+                title: { type: "string" },
+                source: { type: "string" },
+                published: { type: "string", nullable: true },
+                fetched_at: { type: "string", format: "date-time" },
+                became_event: { type: "boolean", description: "True if this URL was later scored into carbon_events" },
+              },
+            },
+          },
+          pagination: {
+            type: "object",
+            properties: {
+              limit: { type: "integer" },
+              offset: { type: "integer" },
+              total: { type: "integer" },
+              has_more: { type: "boolean" },
+            },
+          },
+          available: { type: "boolean", description: "False until the worker has persisted a batch" },
+        },
+      },
+      ExternalGdeltResponse: {
+        type: "object",
+        properties: {
+          ok: { type: "boolean", example: true },
+          source: { type: "string", example: "gdelt" },
+          fetched_at: { type: "string", format: "date-time" },
+          cached: { type: "boolean" },
+          data: {
+            type: "object",
+            properties: {
+              query: { type: "string" },
+              timespan: { type: "string" },
+              count: { type: "integer" },
+              articles: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    title: { type: "string" },
+                    url: { type: "string", format: "uri" },
+                    domain: { type: "string" },
+                    seen_date: { type: "string" },
+                    language: { type: "string" },
+                    source_country: { type: "string" },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      ExternalWorldBankResponse: {
+        type: "object",
+        properties: {
+          ok: { type: "boolean", example: true },
+          source: { type: "string", example: "worldbank" },
+          fetched_at: { type: "string", format: "date-time" },
+          cached: { type: "boolean" },
+          data: {
+            type: "object",
+            properties: {
+              country: { type: "string" },
+              country_code: { type: "string" },
+              indicator: { type: "string" },
+              indicator_code: { type: "string" },
+              indicator_name: { type: "string" },
+              points: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: { year: { type: "integer" }, value: { type: "number" } },
+                },
+              },
+              latest: {
+                type: "object",
+                nullable: true,
+                properties: { year: { type: "integer" }, value: { type: "number" } },
+              },
+            },
+          },
+          available_indicators: { type: "array", items: { type: "string" } },
+        },
+      },
       SourcesResponse: {
         type: "object",
         properties: {
@@ -832,6 +993,21 @@ const SPEC = {
         description: "Internal server error",
         content: {
           "application/json": { schema: { $ref: "#/components/schemas/Error" } },
+        },
+      },
+      UpstreamError: {
+        description: "An external upstream (GDELT / World Bank) was unreachable or returned an error",
+        content: {
+          "application/json": {
+            schema: {
+              type: "object",
+              properties: {
+                error: { type: "string", example: "upstream_error" },
+                source: { type: "string", example: "gdelt" },
+                detail: { type: "string", example: "upstream timeout" },
+              },
+            },
+          },
         },
       },
       Unauthorized: {
