@@ -12,6 +12,9 @@
  */
 
 const DEFAULT_TIMEOUT_MS = 7000;
+// GDELT's Doc API is frequently slow (8-15s) — give it a longer leash than the
+// fast World Bank API, which stays on DEFAULT_TIMEOUT_MS.
+const GDELT_TIMEOUT_MS = 18000;
 const DEFAULT_TTL_MS = 15 * 60 * 1000; // 15 minutes
 
 interface CacheEntry {
@@ -105,7 +108,7 @@ export async function fetchGdelt(
     return { ok: true, source: "gdelt", fetched_at: new Date().toISOString(), cached: true, data: hit };
   }
 
-  const res = await fetchJson(url);
+  const res = await fetchJson(url, GDELT_TIMEOUT_MS);
   if (!res.ok) return { ok: false, source: "gdelt", error: res.error };
 
   const raw = res.data as { articles?: GdeltArticle[] };
