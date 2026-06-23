@@ -1,10 +1,76 @@
 {
-  "generated_at": "2026-06-23T22:36:14.562630+00:00",
-  "total_events": 4007,
-  "total_burned": 6043762120,
-  "total_minted": 6130175789,
+  "generated_at": "2026-06-23T23:05:18.964845+00:00",
+  "total_events": 4010,
+  "total_burned": 6053762120,
+  "total_minted": 6130675789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4010,
+      "event_title": "EU battery storage expansion to quadruple by 2030, limiting gas-fired electricity generation",
+      "event_url": "https://efeverde.com/almacenamiento-baterias-ue-se-cuadriplicara-2030/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.57,
+      "confidence": 8,
+      "justification": "EU battery storage expansion directly reduces fossil fuel dependence and accelerates clean energy transition. | The EU's planned quadrupling of battery storage capacity by 2030 directly advances SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action) by accelerating renewable energy integration and reducing reliance on gas-fired power. The magnitude reflects a systemic shift with measurable impact on fossil fuel displacement and grid decarbonization.",
+      "tx_hash": "59CZBKyaRyNHhZU6fPFQou5hC8Fa8fBrZhY8mnM2yffVeA6QL3t6EjsgnAphyLP4y6nsCE33chD1tiqT5wnS3koC",
+      "created_at": "2026-06-23T23:05:13.751276+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU battery storage capacity expansion quadrupling by 2030, enabling significant displacement of gas-fired electricity generation and reducing fossil fuel dependence\", \"affected_sdgs\": [7, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 4009,
+      "event_title": "+1.2 cm per year: SUVs are growing and cannibalizing public space",
+      "event_url": "https://reporterre.net/1-2-cm-par-an-les-SUV-grandissent-et-cannibalisent-l-espace-public",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.18,
+      "confidence": 8,
+      "justification": "SUV size growth harms urban sustainability; NGO report raises awareness but does not reverse harm. | The NGO report highlights a harmful trend of growing SUV sizes that erode public space and urban sustainability, while also serving as a consciousness-raising act by documenting and publicizing this issue. The net ethical judgment is mixed but leans negative due to the concrete harm caused by larger vehicles, despite the positive aspect of awareness-raising.",
+      "tx_hash": "2ao1Qbu5vUt6opFGBRckBEvMY3cQaQH1PTjj51WBcgSPGbFvs9wCurb781NJH94JpTafiXEKAnWdpmeW2kV7W7xM",
+      "created_at": "2026-06-23T23:05:13.650560+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"NGO report (Transport&Environment and Clean Cities) exposing the growth in SUV size and its public space impact, raising awareness of urban mobility and sustainability issues\", \"affected_sdgs\": [11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increasing size of new cars (1.2 cm/year since 2000) leading to public space confiscation and urban mobility degradation\", \"affected_sdgs\": [11, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
+    {
+      "id": 4008,
+      "event_title": "US Senate joins House in voting to halt Iran war, rebuking Trump",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/us-senate-joins-house-voting-halt-iran-war-rebuking-trump",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 6.76,
+      "confidence": 9,
+      "justification": "Semantic cache reuse (cosine=0.930) from event #3990",
+      "tx_hash": null,
+      "created_at": "2026-06-23T23:02:54.096463+00:00",
+      "embedding": null,
+      "reused_from_event_id": 3990,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 4007,
       "event_title": "US's climate.gov site, taken down by Trump, relaunched by nonprofit",
@@ -88164,13 +88230,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 80,
-        "total_amount": 883115000
+        "count": 79,
+        "total_amount": 882965000
       },
       {
         "country": "European Union",
-        "count": 35,
-        "total_amount": 99550000
+        "count": 36,
+        "total_amount": 100050000
       },
       {
         "country": "France",
@@ -88218,8 +88284,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.333,
-        "events": 126
+        "burn_ratio": 0.336,
+        "events": 125
       },
       {
         "region": "Africa",
@@ -88302,8 +88368,8 @@
       },
       {
         "date": "2026-06-23",
-        "net_minted": 131435000,
-        "net_burned": 187750000
+        "net_minted": 131935000,
+        "net_burned": 192750000
       }
     ],
     "event_of_the_day": {
@@ -88319,9 +88385,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 182,
+        "positive": 183,
         "negative": 414,
         "event_ids_positive": [
+          4010,
           4007,
           4006,
           4000,
@@ -88506,6 +88573,7 @@
           3407
         ],
         "event_ids_negative": [
+          4009,
           4005,
           4004,
           4003,
@@ -88918,13 +88986,12 @@
           3412,
           3411,
           3410,
-          3409,
-          3406
+          3409
         ]
       },
       "UDHR": {
         "positive": 82,
-        "negative": 314,
+        "negative": 313,
         "event_ids_positive": [
           4007,
           4000,
@@ -89322,8 +89389,7 @@
           3414,
           3411,
           3410,
-          3409,
-          3406
+          3409
         ]
       },
       "ILO": {
@@ -89688,9 +89754,10 @@
         ]
       },
       "PB": {
-        "positive": 77,
+        "positive": 78,
         "negative": 100,
         "event_ids_positive": [
+          4010,
           4006,
           3996,
           3994,
@@ -89877,21 +89944,22 @@
       "niche_pct": 54.5,
       "mainstream_pct": 45.5,
       "total_sources_used": 121,
-      "articles_processed": 602
+      "articles_processed": 603
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 602,
+      "total_events": 603,
       "pct": 0.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 51,
-        "burn_count": 9,
+        "count": 52,
+        "burn_count": 10,
         "mint_count": 42,
         "event_ids": [
+          4010,
           4000,
           3978,
           3964,
@@ -90060,10 +90128,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 95,
-        "burn_count": 38,
+        "count": 96,
+        "burn_count": 39,
         "mint_count": 57,
         "event_ids": [
+          4010,
           3994,
           3987,
           3984,
@@ -90449,9 +90518,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 182,
+      "total_burn": 183,
       "direct_action": {
-        "count": 169,
+        "count": 170,
         "pct": 92.9
       },
       "editorial_consciousness": {
@@ -90464,9 +90533,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1314,
+      "total_burn": 1315,
       "direct_action": {
-        "count": 972,
+        "count": 973,
         "pct": 74.0
       },
       "editorial_consciousness": {
@@ -90481,12 +90550,12 @@
     "mint_composition_7d": {
       "total_mint": 420,
       "direct_action": {
-        "count": 390,
-        "pct": 92.9
+        "count": 389,
+        "pct": 92.6
       },
       "editorial_alarm": {
-        "count": 25,
-        "pct": 6.0
+        "count": 26,
+        "pct": 6.2
       },
       "untyped": {
         "count": 5,
@@ -90494,14 +90563,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2685,
+      "total_mint": 2686,
       "direct_action": {
         "count": 2028,
         "pct": 75.5
       },
       "editorial_alarm": {
-        "count": 165,
-        "pct": 6.1
+        "count": 166,
+        "pct": 6.2
       },
       "untyped": {
         "count": 492,
@@ -90510,7 +90579,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 194,
-      "institutional": 408,
+      "institutional": 409,
       "citizen_ratio": 0.322,
       "daily": [
         {
@@ -90545,11 +90614,12 @@
         },
         {
           "date": "2026-06-23",
-          "citizen": 33,
-          "institutional": 69
+          "citizen": 34,
+          "institutional": 70
         }
       ],
       "event_ids_citizen": [
+        4009,
         4007,
         4001,
         3998,
@@ -90742,10 +90812,10 @@
         3417,
         3411,
         3408,
-        3407,
-        3406
+        3407
       ],
       "event_ids_institutional": [
+        4010,
         4006,
         4005,
         4004,
