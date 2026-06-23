@@ -141,6 +141,32 @@ Mainnet token: 2LJspFTWw5VFTZjRNo9Va1VQTEjARAjSuCH7LR6K8AZW (CBWD, 6 decimals)
 
 ---
 
+## API
+
+A free, open, no-key REST API exposes the whole corpus as a **geo-economic & ethical intelligence** feed. Full reference: **[`docs/API.md`](docs/API.md)** · machine-readable [OpenAPI 3.1 spec](https://carbon-world.xyz/api/v1/openapi.json).
+
+Base URL: `https://carbon-world.xyz/api/v1` — 100 req/day/IP, CORS open.
+
+| Group | Endpoints |
+|---|---|
+| **Core** | `/events` · `/events/:id` · `/stats` · `/sources` · `/health` |
+| **Intelligence** | `/regions` · `/countries` · `/timeseries` · `/frameworks` · `/index` (state-of-the-world + 7-day movers) |
+| **Firehose** | `/firehose` — every raw article the pipeline collects, scored or not |
+| **External world data** | `/external/worldbank` (economic indicators) · `/external/gdelt` (global news) |
+| **Tier 2 (partner, Bearer)** | `POST /events` · `/submissions/:id` · `/events/:id/comment` · `/keys/:id/webhook` |
+
+```bash
+# State of the world: global ethical index, per-region ranking, 7-day movers
+curl 'https://carbon-world.xyz/api/v1/index'
+
+# Economic data for any country (World Bank, live)
+curl 'https://carbon-world.xyz/api/v1/external/worldbank?country=FR&indicator=co2_per_capita'
+```
+
+The primary metric is a robust, count-based `ethical_index = (burn − mint) / events ∈ [-1, +1]`. See [`docs/API.md`](docs/API.md) for every parameter and response shape.
+
+---
+
 ## Tech stack
 
 - **Worker** · Python 3.12, SQLite, feedparser, solana-py, sentence-transformers (CPU)
