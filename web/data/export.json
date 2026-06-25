@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-24T23:35:20.002941+00:00",
-  "total_events": 4122,
+  "generated_at": "2026-06-25T00:04:15.050151+00:00",
+  "total_events": 4123,
   "total_burned": 6279785995,
-  "total_minted": 6202995789,
+  "total_minted": 6203995789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4123,
+      "event_title": "Rubio assures Gulf allies US will protect interests in Iran peace talks",
+      "event_url": "https://www.france24.com/en/middle-east/20260624-rubio-gulf-allies-us-iran-peace-talks",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -1.74,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Military funding escalation outweighs diplomatic assurances, risking regional harm. | The diplomatic assurance to Gulf allies aligns with peace and justice (SDG 16) but is undermined by a massive military funding request that risks escalating conflict. The lack of concrete de-escalation measures further weakens the positive intent, creating a net negative trajectory for regiona",
+      "tx_hash": "2ru92wkTsoxip4ioZkEmpGgCRQzgdMcp9khVsh2hmDpXU8qJi4fNFZ7Mv56KiHZN6ub8zYNm2pL1hJun3RMwWfQB",
+      "created_at": "2026-06-25T00:04:10.510149+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US Secretary of State Marco Rubio publicly assures Gulf allies of US commitment to protect their interests during Iran peace talks, signaling diplomatic engagement and alliance maintenance\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US requests nearly $88 billion in supplemental Pentagon funding amid ongoing Iran hostilities, potentially escalating military expenditure and regional tensions\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Congress passes resolution urging an end to hostilities with Iran, but no concrete de-escalation measures are described, leaving diplomatic progress uncertain\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4122,
       "event_title": "Young women now have a 'close to zero' risk of cervical cancer death thanks to the HPV vaccine",
@@ -90694,8 +90716,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 68,
-        "total_amount": 846140000
+        "count": 69,
+        "total_amount": 847140000
       },
       {
         "country": "France",
@@ -90748,8 +90770,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.388,
-        "events": 116
+        "burn_ratio": 0.385,
+        "events": 117
       },
       {
         "region": "Asia",
@@ -90801,11 +90823,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-06-18",
-        "net_minted": 861315000,
-        "net_burned": 162275000
-      },
-      {
         "date": "2026-06-19",
         "net_minted": 77972500,
         "net_burned": 162340000
@@ -90834,6 +90851,11 @@
         "date": "2026-06-24",
         "net_minted": 61870000,
         "net_burned": 196023875
+      },
+      {
+        "date": "2026-06-25",
+        "net_minted": 1000000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -90850,7 +90872,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 187,
-        "negative": 395,
+        "negative": 396,
         "event_ids_positive": [
           4122,
           4118,
@@ -91041,6 +91063,7 @@
           3527
         ],
         "event_ids_negative": [
+          4123,
           4121,
           4120,
           4119,
@@ -91440,7 +91463,7 @@
       },
       "UDHR": {
         "positive": 87,
-        "negative": 292,
+        "negative": 293,
         "event_ids_positive": [
           4122,
           4118,
@@ -91531,6 +91554,7 @@
           3530
         ],
         "event_ids_negative": [
+          4123,
           4120,
           4119,
           4117,
@@ -92343,11 +92367,11 @@
       "niche_pct": 50.0,
       "mainstream_pct": 50.0,
       "total_sources_used": 118,
-      "articles_processed": 589
+      "articles_processed": 590
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 589,
+      "total_events": 590,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -92685,10 +92709,11 @@
       },
       {
         "name": "Finance",
-        "count": 47,
+        "count": 48,
         "burn_count": 17,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          4123,
           4110,
           4107,
           4096,
@@ -92740,10 +92765,11 @@
       },
       {
         "name": "Defense",
-        "count": 31,
+        "count": 32,
         "burn_count": 3,
-        "mint_count": 28,
+        "mint_count": 29,
         "event_ids": [
+          4123,
           4117,
           4111,
           4104,
@@ -92924,9 +92950,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 401,
+      "total_mint": 402,
       "direct_action": {
-        "count": 373,
+        "count": 374,
         "pct": 93.0
       },
       "editorial_alarm": {
@@ -92939,9 +92965,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2748,
+      "total_mint": 2749,
       "direct_action": {
-        "count": 2086,
+        "count": 2087,
         "pct": 75.9
       },
       "editorial_alarm": {
@@ -92955,14 +92981,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 193,
-      "institutional": 396,
-      "citizen_ratio": 0.328,
+      "institutional": 397,
+      "citizen_ratio": 0.327,
       "daily": [
-        {
-          "date": "2026-06-18",
-          "citizen": 28,
-          "institutional": 73
-        },
         {
           "date": "2026-06-19",
           "citizen": 32,
@@ -92992,6 +93013,11 @@
           "date": "2026-06-24",
           "citizen": 45,
           "institutional": 57
+        },
+        {
+          "date": "2026-06-25",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -93190,6 +93216,7 @@
         3527
       ],
       "event_ids_institutional": [
+        4123,
         4120,
         4119,
         4118,
