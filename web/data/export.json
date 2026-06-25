@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-25T06:34:47.789144+00:00",
-  "total_events": 4145,
+  "generated_at": "2026-06-25T07:05:45.157811+00:00",
+  "total_events": 4147,
   "total_burned": 6308045995,
-  "total_minted": 6235480789,
+  "total_minted": 6245480789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4147,
+      "event_title": "Chemours Settles with EPA on “Forever Chemical” Pollution in Three States",
+      "event_url": "https://www.nrdc.org/press-releases/chemours-settles-epa-forever-chemical-pollution-three-states",
+      "event_source": "NRDC News",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 2.8,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Settlement enforces cleanup but lacks strong penalties or systemic reform, punishing harm partially. | The settlement represents a tangible step toward addressing PFAS pollution, aligning with environmental protection and public health goals. However, the agreement's limited penalties and lack of systemic reform leave significant ethical concerns, particularly regarding corp",
+      "tx_hash": "2tYhJzeUtazZoQ2F9rQuvL467EC9U8S51pdr1Htu1mfGjCupMzkKUvQNL7gagRDxkADPFKc5nfBAsY2csaRMwWJj",
+      "created_at": "2026-06-25T07:05:40.288882+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Chemours agrees to a settlement with the EPA to address PFAS ('forever chemical') pollution in three states, requiring cleanup and monitoring measures\", \"affected_sdgs\": [3, 6, 12, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}, {\"description\": \"The settlement demonstrates enforcement of environmental regulations against a major polluter, setting a precedent for corporate accountability in toxic chemical management\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The settlement allows Chemours to avoid criminal liability or full financial penalties for historical pollution, potentially enabling continued corporate negligence\", \"affected_sdgs\": [12, 13, 14, 15], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"PFAS pollution remains a systemic issue with long-term health and environmental impacts, and the settlement does not address the broader regulatory gaps in PFAS management\", \"affected_sdgs\": [3, 6, 12, 14, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4146,
+      "event_title": "DRC: Authorities must end support for armed group suspected of war crimes",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/06/drc-authorities-must-end-support-for-armed-group-suspected-of-war-crimes/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 9500000,
+      "final_score": -6.15,
+      "confidence": 8,
+      "justification": "DRC government enabling war crimes via armed group support requires strong negative signal. | The DRC government's support for an armed group linked to severe human rights violations constitutes a grave ethical failure. The actions directly contravene multiple human rights frameworks and undermine peace, justice, and security in the region. The magnitude of harm is severe, with systemic violations of fundamental rights.",
+      "tx_hash": "2SbABya8dCB6fqWAp6iR8fAv85o84T5ADSGHoBaFppJtq3twUGGrZimiUZVdV7af8hkKH6WL831DNyoTEifxCBqH",
+      "created_at": "2026-06-25T07:05:40.149695+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"DRC authorities providing support to an armed group (CMC-FDP) suspected of war crimes including civilian killings, torture, looting, and sexual slavery of women\", \"affected_sdgs\": [1, 3, 5, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 12\", \"UDHR Article 23\", \"CRC Article 34\", \"UNDRIP Article 7\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4145,
       "event_title": "Lesotho: Dispute Stalls Closure of Hazardous Dumpsite in Maseru",
@@ -91201,7 +91245,7 @@
       {
         "country": "United States",
         "count": 71,
-        "total_amount": 841165000
+        "total_amount": 840165000
       },
       {
         "country": "France",
@@ -91210,8 +91254,8 @@
       },
       {
         "country": "European Union",
-        "count": 23,
-        "total_amount": 50300000
+        "count": 22,
+        "total_amount": 49300000
       },
       {
         "country": "Indonesia",
@@ -91338,7 +91382,7 @@
       },
       {
         "date": "2026-06-25",
-        "net_minted": 32485000,
+        "net_minted": 42485000,
         "net_burned": 28260000
       }
     ],
@@ -91543,6 +91587,8 @@
           3550
         ],
         "event_ids_negative": [
+          4147,
+          4146,
           4145,
           4144,
           4143,
@@ -91940,14 +91986,12 @@
           3555,
           3554,
           3552,
-          3551,
-          3549,
-          3548
+          3551
         ]
       },
       "UDHR": {
         "positive": 85,
-        "negative": 301,
+        "negative": 302,
         "event_ids_positive": [
           4131,
           4128,
@@ -92036,6 +92080,8 @@
           3550
         ],
         "event_ids_negative": [
+          4147,
+          4146,
           4145,
           4144,
           4143,
@@ -92335,8 +92381,7 @@
           3557,
           3554,
           3552,
-          3551,
-          3548
+          3551
         ]
       },
       "ILO": {
@@ -92401,6 +92446,7 @@
           3550
         ],
         "event_ids_negative": [
+          4146,
           4143,
           4140,
           4090,
@@ -92449,13 +92495,12 @@
           3702,
           3678,
           3603,
-          3589,
-          3548
+          3589
         ]
       },
       "UNDRIP": {
         "positive": 40,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           4128,
           4115,
@@ -92499,6 +92544,7 @@
           3586
         ],
         "event_ids_negative": [
+          4146,
           4143,
           4139,
           4121,
@@ -92582,7 +92628,7 @@
       },
       "Animal": {
         "positive": 44,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           4142,
           4131,
@@ -92630,6 +92676,7 @@
           3585
         ],
         "event_ids_negative": [
+          4147,
           4145,
           4143,
           4141,
@@ -92677,7 +92724,7 @@
       },
       "PB": {
         "positive": 79,
-        "negative": 97,
+        "negative": 98,
         "event_ids_positive": [
           4142,
           4137,
@@ -92760,6 +92807,7 @@
           3579
         ],
         "event_ids_negative": [
+          4147,
           4145,
           4143,
           4141,
@@ -92875,9 +92923,9 @@
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 42,
+        "count": 41,
         "burn_count": 10,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           4132,
           4129,
@@ -92919,8 +92967,7 @@
           3631,
           3623,
           3554,
-          3551,
-          3549
+          3551
         ]
       },
       {
@@ -93001,14 +93048,13 @@
       },
       {
         "name": "EU Commission",
-        "count": 4,
+        "count": 3,
         "burn_count": 2,
-        "mint_count": 2,
+        "mint_count": 1,
         "event_ids": [
           4048,
           3942,
-          3652,
-          3549
+          3652
         ]
       },
       {
@@ -93366,6 +93412,29 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 15,
+        "burn_count": 8,
+        "mint_count": 7,
+        "event_ids": [
+          4147,
+          4139,
+          4040,
+          4037,
+          4024,
+          3862,
+          3830,
+          3784,
+          3728,
+          3717,
+          3713,
+          3698,
+          3690,
+          3674,
+          3626
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 15,
         "burn_count": 4,
@@ -93386,28 +93455,6 @@
           3591,
           3588,
           3560
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 14,
-        "burn_count": 8,
-        "mint_count": 6,
-        "event_ids": [
-          4139,
-          4040,
-          4037,
-          4024,
-          3862,
-          3830,
-          3784,
-          3728,
-          3717,
-          3713,
-          3698,
-          3690,
-          3674,
-          3626
         ]
       }
     ],
@@ -93457,9 +93504,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2766,
+      "total_mint": 2768,
       "direct_action": {
-        "count": 2102,
+        "count": 2104,
         "pct": 76.0
       },
       "editorial_alarm": {
@@ -93468,7 +93515,7 @@
       },
       "untyped": {
         "count": 494,
-        "pct": 17.9
+        "pct": 17.8
       }
     },
     "citizen_vs_institutional_7d": {
@@ -93509,7 +93556,7 @@
         {
           "date": "2026-06-25",
           "citizen": 5,
-          "institutional": 18
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
@@ -93705,6 +93752,8 @@
         3554
       ],
       "event_ids_institutional": [
+        4147,
+        4146,
         4145,
         4144,
         4143,
@@ -94110,9 +94159,7 @@
         3553,
         3552,
         3551,
-        3550,
-        3549,
-        3548
+        3550
       ]
     }
   }
