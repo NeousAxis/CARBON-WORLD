@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-25T02:05:26.432017+00:00",
-  "total_events": 4128,
+  "generated_at": "2026-06-25T02:35:27.810712+00:00",
+  "total_events": 4130,
   "total_burned": 6291785995,
-  "total_minted": 6209295789,
+  "total_minted": 6222295789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4130,
+      "event_title": "Facing repeated drone attacks, Russians go into survival mode",
+      "event_url": "https://www.letemps.ch/articles/face-aux-attaques-repetees-de-drones-les-russes-en-mode-survie",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -3.89,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT due to severe war-related civilian harm and rights violations. | The article describes severe negative impacts on Russian civilians, including disruptions to basic services, fuel shortages, and humanitarian crises in occupied territories. These conditions violate fundamental human rights to adequate living standards and education, with significant magnitude due to the scale of affected populations and systemic nature of the harm.",
+      "tx_hash": "3uo43pTBnRMJSAreTWrm6gZ6riFGZMoxNuXVU4mZGKp2mATXNH2VN182NFnzM3WBjG2XmeqQMN4ZkWz9JGCtnH7U",
+      "created_at": "2026-06-25T02:35:22.049163+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Russian civilians face severe disruptions to daily life due to drone attacks and energy shortages, including electricity blackouts, fuel scarcity, and closed public services like daycare centers and leisure facilities.\", \"affected_sdgs\": [7, 11, 12], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Civilians in occupied Crimea experience systemic shortages of essential goods (fuel, water) and reliance on black markets, exacerbating humanitarian conditions.\", \"affected_sdgs\": [2, 6, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4129,
+      "event_title": "EU countries want oil exploration to be classed as a green investment",
+      "event_url": "https://www.politico.eu/article/eu-countries-oil-exploration-green-investment/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -6.06,
+      "confidence": 9,
+      "justification": "EU policy enabling fossil fuel greenwashing undercuts climate action and planetary boundaries. | The proposed EU policy directly undermines climate action (SDG 13) and planetary boundaries by legitimizing fossil fuel expansion under the guise of sustainability. It enables greenwashing, locks in carbon-intensive infrastructure, and contradicts the EU's own climate commitments, posing a systemic risk to global decarbonization efforts.",
+      "tx_hash": "mcR7KgAU218tjsJqKLJ7Ea6HkFCBJQaQSCGyVED9mMMiXLKSZnahPuZ4K7K6mj5bvSvAuBfTo2Qj39tQDTUBbYw",
+      "created_at": "2026-06-25T02:35:21.927720+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "European Union",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"EU countries propose classifying oil exploration as a green investment, enabling fossil fuel companies to access sustainable investment funds\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4128,
       "event_title": "Global: UN drug control bodies must take urgent action towards ending unlawful use of the death penalty for drug-related offences",
@@ -90837,7 +90881,7 @@
       {
         "country": "European Union",
         "count": 22,
-        "total_amount": 43400000
+        "total_amount": 50150000
       },
       {
         "country": "Indonesia",
@@ -90895,8 +90939,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.255,
-        "events": 161
+        "burn_ratio": 0.253,
+        "events": 162
       },
       {
         "region": "Latin America",
@@ -90922,8 +90966,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.745,
-        "events": 161
+        "mint_ratio": 0.747,
+        "events": 162
       },
       {
         "region": "Oceania",
@@ -90964,7 +91008,7 @@
       },
       {
         "date": "2026-06-25",
-        "net_minted": 6300000,
+        "net_minted": 19300000,
         "net_burned": 12000000
       }
     ],
@@ -90982,7 +91026,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 186,
-        "negative": 396,
+        "negative": 397,
         "event_ids_positive": [
           4128,
           4127,
@@ -91172,6 +91216,8 @@
           3533
         ],
         "event_ids_negative": [
+          4130,
+          4129,
           4126,
           4125,
           4123,
@@ -91566,13 +91612,12 @@
           3538,
           3537,
           3536,
-          3534,
-          3532
+          3534
         ]
       },
       "UDHR": {
         "positive": 87,
-        "negative": 294,
+        "negative": 295,
         "event_ids_positive": [
           4128,
           4122,
@@ -91663,6 +91708,7 @@
           3533
         ],
         "event_ids_negative": [
+          4130,
           4126,
           4125,
           4123,
@@ -92293,7 +92339,7 @@
       },
       "PB": {
         "positive": 79,
-        "negative": 94,
+        "negative": 95,
         "event_ids_positive": [
           4127,
           4116,
@@ -92376,6 +92422,7 @@
           3533
         ],
         "event_ids_negative": [
+          4129,
           4121,
           4087,
           4086,
@@ -92474,24 +92521,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 47.9,
-      "mainstream_pct": 52.1,
-      "total_sources_used": 117,
-      "articles_processed": 597
+      "niche_pct": 47.4,
+      "mainstream_pct": 52.6,
+      "total_sources_used": 116,
+      "articles_processed": 598
     },
     "cache_hit_rate_7d": {
       "hits": 14,
-      "total_events": 597,
+      "total_events": 598,
       "pct": 2.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 40,
+        "count": 41,
         "burn_count": 10,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          4129,
           4111,
           4085,
           4050,
@@ -92623,13 +92671,12 @@
       },
       {
         "name": "European Parliament",
-        "count": 3,
+        "count": 2,
         "burn_count": 1,
-        "mint_count": 2,
+        "mint_count": 1,
         "event_ids": [
           3949,
-          3575,
-          3532
+          3575
         ]
       },
       {
@@ -92646,10 +92693,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 100,
+        "count": 101,
         "burn_count": 41,
-        "mint_count": 59,
+        "mint_count": 60,
         "event_ids": [
+          4129,
           4121,
           4118,
           4116,
@@ -92754,10 +92802,11 @@
       },
       {
         "name": "Construction",
-        "count": 57,
+        "count": 58,
         "burn_count": 30,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          4129,
           4107,
           4095,
           4094,
@@ -92819,10 +92868,11 @@
       },
       {
         "name": "Finance",
-        "count": 47,
+        "count": 48,
         "burn_count": 16,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          4129,
           4123,
           4110,
           4107,
@@ -92954,9 +93004,9 @@
       },
       {
         "name": "Agriculture",
-        "count": 24,
+        "count": 23,
         "burn_count": 4,
-        "mint_count": 20,
+        "mint_count": 19,
         "event_ids": [
           4108,
           4064,
@@ -92980,8 +93030,7 @@
           3638,
           3637,
           3589,
-          3575,
-          3532
+          3575
         ]
       },
       {
@@ -93060,9 +93109,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 404,
+      "total_mint": 405,
       "direct_action": {
-        "count": 375,
+        "count": 376,
         "pct": 92.8
       },
       "editorial_alarm": {
@@ -93075,9 +93124,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2753,
+      "total_mint": 2755,
       "direct_action": {
-        "count": 2089,
+        "count": 2091,
         "pct": 75.9
       },
       "editorial_alarm": {
@@ -93091,8 +93140,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 189,
-      "institutional": 408,
-      "citizen_ratio": 0.317,
+      "institutional": 409,
+      "citizen_ratio": 0.316,
       "daily": [
         {
           "date": "2026-06-19",
@@ -93127,7 +93176,7 @@
         {
           "date": "2026-06-25",
           "citizen": 0,
-          "institutional": 6
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -93322,6 +93371,8 @@
         3533
       ],
       "event_ids_institutional": [
+        4130,
+        4129,
         4128,
         4127,
         4126,
@@ -93728,8 +93779,7 @@
         3537,
         3536,
         3535,
-        3534,
-        3532
+        3534
       ]
     }
   }
