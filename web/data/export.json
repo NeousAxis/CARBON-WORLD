@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-25T00:04:15.050151+00:00",
-  "total_events": 4123,
+  "generated_at": "2026-06-25T00:35:01.009510+00:00",
+  "total_events": 4125,
   "total_burned": 6279785995,
-  "total_minted": 6203995789,
+  "total_minted": 6204295789,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4125,
+      "event_title": "US delegation snubs Apec meeting in Macau due to China visa requirements row",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3358259/us-delegation-snubs-apec-meeting-macau-due-china-visa-requirements-row?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 0.4,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] US absence prioritizes principle over cooperation, enabling harm to multilateral progress. | The US decision to not send high-level officials to the Apec meeting reflects a principled stand against restrictive consular policies, aligning with SDG 16 on peace and justice. However, it risks reducing multilateral cooperation, impacting SDG 17 on partnerships.",
+      "tx_hash": "3f31SoRYh68oKenYk652E75hr5jbJDxnfcGLGtEhQfV5r3EcBgJFQK6JkBnyaCg8ggXDkqP46JesdwGAKqNchWBW",
+      "created_at": "2026-06-25T00:34:55.681096+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The US delegation's absence signals a principled stance against restrictive visa policies that limit diplomatic transparency and consular access.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The absence of high-level US officials may hinder diplomatic engagement and cooperation on regional economic and security issues.\", \"affected_sdgs\": [17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4124,
+      "event_title": "Qualcomm to design China-specific data center chip in line with US export curbs",
+      "event_url": "https://asia.nikkei.com/business/technology/artificial-intelligence/qualcomm-to-design-china-specific-data-center-chip-in-line-with-us-export-curbs",
+      "event_source": "Nikkei Asia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.97,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=0.946) from event #4114",
+      "tx_hash": null,
+      "created_at": "2026-06-25T00:32:51.668558+00:00",
+      "embedding": null,
+      "reused_from_event_id": 4114,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null
+    },
     {
       "id": 4123,
       "event_title": "Rubio assures Gulf allies US will protect interests in Iran peace talks",
@@ -90716,8 +90760,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 69,
-        "total_amount": 847140000
+        "count": 70,
+        "total_amount": 847290000
       },
       {
         "country": "France",
@@ -90770,13 +90814,13 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.385,
-        "events": 117
+        "burn_ratio": 0.381,
+        "events": 118
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.295,
-        "events": 61
+        "burn_ratio": 0.3,
+        "events": 60
       },
       {
         "region": "Oceania",
@@ -90785,13 +90829,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.261,
-        "events": 161
+        "burn_ratio": 0.256,
+        "events": 160
       },
       {
-        "region": "Africa",
-        "burn_ratio": 0.24,
-        "events": 25
+        "region": "Latin America",
+        "burn_ratio": 0.241,
+        "events": 54
       }
     ],
     "top_regions_destructive": [
@@ -90801,19 +90845,19 @@
         "events": 31
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.764,
-        "events": 55
-      },
-      {
         "region": "Africa",
         "mint_ratio": 0.76,
         "events": 25
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.759,
+        "events": 54
+      },
+      {
         "region": "Europe",
-        "mint_ratio": 0.739,
-        "events": 161
+        "mint_ratio": 0.744,
+        "events": 160
       },
       {
         "region": "Oceania",
@@ -90854,7 +90898,7 @@
       },
       {
         "date": "2026-06-25",
-        "net_minted": 1000000,
+        "net_minted": 1150000,
         "net_burned": 0
       }
     ],
@@ -90871,8 +90915,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 187,
-        "negative": 396,
+        "positive": 186,
+        "negative": 395,
         "event_ids_positive": [
           4122,
           4118,
@@ -91059,10 +91103,10 @@
           3535,
           3533,
           3531,
-          3530,
-          3527
+          3530
         ],
         "event_ids_negative": [
+          4125,
           4123,
           4121,
           4120,
@@ -91456,9 +91500,7 @@
           3537,
           3536,
           3534,
-          3532,
-          3529,
-          3528
+          3532
         ]
       },
       "UDHR": {
@@ -91554,6 +91596,7 @@
           3530
         ],
         "event_ids_negative": [
+          4125,
           4123,
           4120,
           4119,
@@ -91845,8 +91888,7 @@
           3542,
           3539,
           3536,
-          3534,
-          3529
+          3534
         ]
       },
       "ILO": {
@@ -91965,7 +92007,7 @@
       },
       "UNDRIP": {
         "positive": 39,
-        "negative": 80,
+        "negative": 78,
         "event_ids_positive": [
           4115,
           4113,
@@ -92085,9 +92127,7 @@
           3563,
           3560,
           3554,
-          3545,
-          3529,
-          3528
+          3545
         ]
       },
       "Animal": {
@@ -92364,14 +92404,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 50.0,
-      "mainstream_pct": 50.0,
-      "total_sources_used": 118,
-      "articles_processed": 590
+      "niche_pct": 49.6,
+      "mainstream_pct": 50.4,
+      "total_sources_used": 117,
+      "articles_processed": 588
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 590,
+      "total_events": 588,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -92643,8 +92683,8 @@
       },
       {
         "name": "Construction",
-        "count": 58,
-        "burn_count": 31,
+        "count": 57,
+        "burn_count": 30,
         "mint_count": 27,
         "event_ids": [
           4107,
@@ -92703,8 +92743,7 @@
           3546,
           3542,
           3540,
-          3533,
-          3527
+          3533
         ]
       },
       {
@@ -92920,10 +92959,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 188,
+      "total_burn": 187,
       "direct_action": {
-        "count": 175,
-        "pct": 93.1
+        "count": 174,
+        "pct": 93.0
       },
       "editorial_consciousness": {
         "count": 12,
@@ -92950,14 +92989,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 402,
+      "total_mint": 401,
       "direct_action": {
         "count": 374,
-        "pct": 93.0
+        "pct": 93.3
       },
       "editorial_alarm": {
-        "count": 23,
-        "pct": 5.7
+        "count": 22,
+        "pct": 5.5
       },
       "untyped": {
         "count": 5,
@@ -92965,9 +93004,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2749,
+      "total_mint": 2750,
       "direct_action": {
-        "count": 2087,
+        "count": 2088,
         "pct": 75.9
       },
       "editorial_alarm": {
@@ -92980,9 +93019,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 193,
-      "institutional": 397,
-      "citizen_ratio": 0.327,
+      "citizen": 190,
+      "institutional": 398,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-06-19",
@@ -93017,7 +93056,7 @@
         {
           "date": "2026-06-25",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -93210,12 +93249,10 @@
         3544,
         3542,
         3533,
-        3531,
-        3529,
-        3528,
-        3527
+        3531
       ],
       "event_ids_institutional": [
+        4125,
         4123,
         4120,
         4119,
