@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-26T20:04:55.558418+00:00",
-  "total_events": 4301,
+  "generated_at": "2026-06-26T20:35:50.756626+00:00",
+  "total_events": 4303,
   "total_burned": 6604130995,
-  "total_minted": 6419358289,
+  "total_minted": 6422058289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4303,
+      "event_title": "Trump threatens 100% tariffs on Europe if countries impose tax on US digital services",
+      "event_url": "https://www.france24.com/en/europe/20260626-trump-threatens-100-tariffs-on-europe-if-countries-impose-tax-on-us-digital-services",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -3.62,
+      "confidence": 8,
+      "justification": "Threat of 100% tariffs escalates economic coercion and risks global cooperation. | The threat of 100% tariffs undermines international cooperation and could disrupt global trade relations, negatively impacting economic stability and partnerships.",
+      "tx_hash": "3NUfKfVhj2EcuSYRR3TdEfKuGDvq7RvGiB2TZLmksH436sst8ENwbgAxag5gpZksac4MP1rPWsdKMD3HhVZWyn1a",
+      "created_at": "2026-06-26T20:35:46.553041+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Threat to impose 100% tariffs on European countries that implement a digital services tax.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4302,
+      "event_title": "Trump’s ‘Unprecedented’ Regulatory Rollbacks Fuel Surge in Protective Climate Lawsuits",
+      "event_url": "https://insideclimatenews.org/news/26062026/climate-lawsuits-surge-after-trump-regulatory-rollbacks/",
+      "event_source": "Inside Climate News",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.92,
+      "confidence": 9,
+      "justification": "Both analysts agree on MINT; rollbacks enabling harm outweigh reactive lawsuits' preservation efforts. | The surge in protective climate lawsuits represents a significant positive action to uphold environmental protections and legal precedents, directly addressing the negative impacts of the Trump administration's regulatory rollbacks. While the rollbacks themselves undermine climate action and human rights, the legal challenges serve as a critical counterbalance to preserve hard-won gains.",
+      "tx_hash": "4CoM4tANbsYDtBHw9rvmRMRJ5hVeYXTZAgZpSpzmBwqbb1n98xuSxadaioUXDt2kcmxFQ6qfN8U6Voy9iwk28GSy",
+      "created_at": "2026-06-26T20:35:46.439255+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Surge in protective climate lawsuits challenging Trump administration's regulatory rollbacks, aiming to preserve existing climate regulations and legal gains\", \"affected_sdgs\": [13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Trump administration's sweeping revisions to U.S. climate policy resulting in regulatory rollbacks and funding freezes\", \"affected_sdgs\": [13], \"violated_rights\": [\"UDHR Article 25 (right to a standard of living adequate for health and well-being)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
     {
       "id": 4301,
       "event_title": "Burkina Faso announces it is breaking off diplomatic relations with France",
@@ -94632,8 +94676,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 79,
-        "total_amount": 121320000
+        "count": 81,
+        "total_amount": 124020000
       },
       {
         "country": "France",
@@ -94701,8 +94745,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.296,
-        "events": 115
+        "burn_ratio": 0.291,
+        "events": 117
       },
       {
         "region": "Oceania",
@@ -94728,8 +94772,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.704,
-        "events": 115
+        "mint_ratio": 0.709,
+        "events": 117
       },
       {
         "region": "Latin America",
@@ -94770,7 +94814,7 @@
       },
       {
         "date": "2026-06-26",
-        "net_minted": 54915000,
+        "net_minted": 57615000,
         "net_burned": 119610000
       }
     ],
@@ -94787,8 +94831,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 189,
-        "negative": 392,
+        "positive": 188,
+        "negative": 394,
         "event_ids_positive": [
           4300,
           4299,
@@ -94977,10 +95021,11 @@
           3727,
           3722,
           3721,
-          3711,
-          3708
+          3711
         ],
         "event_ids_negative": [
+          4303,
+          4302,
           4301,
           4298,
           4297,
@@ -95377,7 +95422,7 @@
       },
       "UDHR": {
         "positive": 86,
-        "negative": 302,
+        "negative": 303,
         "event_ids_positive": [
           4299,
           4286,
@@ -95467,6 +95512,7 @@
           3711
         ],
         "event_ids_negative": [
+          4302,
           4301,
           4298,
           4297,
@@ -95896,7 +95942,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 45,
+        "positive": 44,
         "negative": 75,
         "event_ids_positive": [
           4279,
@@ -95942,8 +95988,7 @@
           3787,
           3784,
           3768,
-          3732,
-          3708
+          3732
         ],
         "event_ids_negative": [
           4301,
@@ -96303,14 +96348,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 48.3,
-      "mainstream_pct": 51.7,
-      "total_sources_used": 120,
-      "articles_processed": 594
+      "niche_pct": 47.9,
+      "mainstream_pct": 52.1,
+      "total_sources_used": 119,
+      "articles_processed": 595
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 594,
+      "total_events": 595,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -96688,8 +96733,8 @@
       },
       {
         "name": "Tech",
-        "count": 33,
-        "burn_count": 15,
+        "count": 32,
+        "burn_count": 14,
         "mint_count": 18,
         "event_ids": [
           4296,
@@ -96723,8 +96768,7 @@
           3855,
           3850,
           3827,
-          3737,
-          3708
+          3737
         ]
       },
       {
@@ -96849,14 +96893,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 196,
+      "total_burn": 195,
       "direct_action": {
-        "count": 176,
-        "pct": 89.8
+        "count": 175,
+        "pct": 89.7
       },
       "editorial_consciousness": {
         "count": 13,
-        "pct": 6.6
+        "pct": 6.7
       },
       "untyped": {
         "count": 7,
@@ -96879,14 +96923,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 398,
+      "total_mint": 400,
       "direct_action": {
-        "count": 373,
-        "pct": 93.7
+        "count": 374,
+        "pct": 93.5
       },
       "editorial_alarm": {
-        "count": 19,
-        "pct": 4.8
+        "count": 20,
+        "pct": 5.0
       },
       "untyped": {
         "count": 6,
@@ -96894,24 +96938,24 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2863,
+      "total_mint": 2865,
       "direct_action": {
-        "count": 2193,
+        "count": 2194,
         "pct": 76.6
       },
       "editorial_alarm": {
-        "count": 176,
-        "pct": 6.1
+        "count": 177,
+        "pct": 6.2
       },
       "untyped": {
         "count": 494,
-        "pct": 17.3
+        "pct": 17.2
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 191,
-      "institutional": 403,
-      "citizen_ratio": 0.322,
+      "institutional": 404,
+      "citizen_ratio": 0.321,
       "daily": [
         {
           "date": "2026-06-20",
@@ -96945,11 +96989,12 @@
         },
         {
           "date": "2026-06-26",
-          "citizen": 18,
-          "institutional": 49
+          "citizen": 19,
+          "institutional": 50
         }
       ],
       "event_ids_citizen": [
+        4302,
         4299,
         4298,
         4296,
@@ -97139,10 +97184,10 @@
         3727,
         3725,
         3723,
-        3720,
-        3708
+        3720
       ],
       "event_ids_institutional": [
+        4303,
         4301,
         4300,
         4297,
