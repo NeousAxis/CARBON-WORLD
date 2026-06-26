@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-26T00:05:56.942814+00:00",
-  "total_events": 4236,
+  "generated_at": "2026-06-26T00:34:55.985463+00:00",
+  "total_events": 4237,
   "total_burned": 6485620995,
-  "total_minted": 6364563289,
+  "total_minted": 6372563289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4237,
+      "event_title": "Iran war live: Israel attacks Lebanon as Netanyahu says troops to stay",
+      "event_url": "https://www.aljazeera.com/news/liveblog/2026/6/26/iran-war-live-israel-attacks-lebanon-as-netanyahu-says-troops-to-stay?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 8000000,
+      "final_score": -5.52,
+      "confidence": 8,
+      "justification": "Israeli military occupation and escalation violate human rights and SDG 16, risking severe regional harm. | The decision to maintain Israeli military occupation in southern Lebanon and escalate attacks violates core human rights frameworks, including territorial integrity and protection from violence. The action undermines peace and justice (SDG 16) and directly contravenes the Universal Declaration of Human Rights and UNDRIP, with severe and immediate consequences for regional stability and civ",
+      "tx_hash": "4pADPYfe9A7wGAUyLC8e5roYuvnqJAie8mis2E2jcXi1uSKi9nQtb1C5FRDb5qrnAX55xxjHfntVquW4SeoERYRq",
+      "created_at": "2026-06-26T00:34:51.252996+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli military maintains occupation in southern Lebanon, prolonging territorial control and potential for further conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 13\", \"UNDRIP Article 26\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Escalation of military actions between Israel and Lebanon risks civilian casualties and regional destabilization\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4236,
       "event_title": "Ratepayers Spend $1.2m to Address WA's Three-Bin Waste Problem",
@@ -93261,8 +93283,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.322,
-        "events": 59
+        "burn_ratio": 0.31,
+        "events": 58
       },
       {
         "region": "Asia",
@@ -93283,8 +93305,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.9,
-        "events": 30
+        "mint_ratio": 0.903,
+        "events": 31
       },
       {
         "region": "Africa",
@@ -93340,7 +93362,7 @@
       },
       {
         "date": "2026-06-26",
-        "net_minted": 120000,
+        "net_minted": 8120000,
         "net_burned": 1100000
       }
     ],
@@ -93357,8 +93379,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 198,
-        "negative": 397,
+        "positive": 197,
+        "negative": 398,
         "event_ids_positive": [
           4235,
           4234,
@@ -93556,10 +93578,10 @@
           3641,
           3638,
           3635,
-          3631,
-          3628
+          3631
         ],
         "event_ids_negative": [
+          4237,
           4236,
           4233,
           4231,
@@ -93960,8 +93982,8 @@
         ]
       },
       "UDHR": {
-        "positive": 88,
-        "negative": 304,
+        "positive": 87,
+        "negative": 305,
         "event_ids_positive": [
           4235,
           4232,
@@ -94049,10 +94071,10 @@
           3655,
           3651,
           3646,
-          3631,
-          3628
+          3631
         ],
         "event_ids_negative": [
+          4237,
           4233,
           4231,
           4230,
@@ -94483,7 +94505,7 @@
       },
       "UNDRIP": {
         "positive": 44,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           4215,
           4209,
@@ -94531,6 +94553,7 @@
           3648
         ],
         "event_ids_negative": [
+          4237,
           4233,
           4230,
           4229,
@@ -95341,6 +95364,45 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 31,
+        "burn_count": 3,
+        "mint_count": 28,
+        "event_ids": [
+          4237,
+          4191,
+          4160,
+          4123,
+          4117,
+          4111,
+          4104,
+          4088,
+          4053,
+          4032,
+          4019,
+          4016,
+          3990,
+          3943,
+          3939,
+          3917,
+          3904,
+          3878,
+          3849,
+          3802,
+          3796,
+          3789,
+          3780,
+          3773,
+          3764,
+          3760,
+          3753,
+          3671,
+          3669,
+          3664,
+          3656
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 31,
         "burn_count": 7,
@@ -95377,44 +95439,6 @@
           3685,
           3638,
           3637
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 30,
-        "burn_count": 3,
-        "mint_count": 27,
-        "event_ids": [
-          4191,
-          4160,
-          4123,
-          4117,
-          4111,
-          4104,
-          4088,
-          4053,
-          4032,
-          4019,
-          4016,
-          3990,
-          3943,
-          3939,
-          3917,
-          3904,
-          3878,
-          3849,
-          3802,
-          3796,
-          3789,
-          3780,
-          3773,
-          3764,
-          3760,
-          3753,
-          3671,
-          3669,
-          3664,
-          3656
         ]
       },
       {
@@ -95470,14 +95494,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 205,
+      "total_burn": 204,
       "direct_action": {
-        "count": 183,
-        "pct": 89.3
+        "count": 182,
+        "pct": 89.2
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 7.3
+        "pct": 7.4
       },
       "untyped": {
         "count": 7,
@@ -95500,9 +95524,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 404,
+      "total_mint": 405,
       "direct_action": {
-        "count": 376,
+        "count": 377,
         "pct": 93.1
       },
       "editorial_alarm": {
@@ -95515,9 +95539,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2821,
+      "total_mint": 2822,
       "direct_action": {
-        "count": 2153,
+        "count": 2154,
         "pct": 76.3
       },
       "editorial_alarm": {
@@ -95567,7 +95591,7 @@
         {
           "date": "2026-06-26",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -95777,6 +95801,7 @@
         3629
       ],
       "event_ids_institutional": [
+        4237,
         4236,
         4235,
         4234,
@@ -96180,8 +96205,7 @@
         3633,
         3632,
         3631,
-        3630,
-        3628
+        3630
       ]
     }
   }
