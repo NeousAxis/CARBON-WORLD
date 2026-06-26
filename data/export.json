@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-26T08:06:32.093364+00:00",
-  "total_events": 4256,
+  "generated_at": "2026-06-26T08:35:16.666151+00:00",
+  "total_events": 4257,
   "total_burned": 6515620995,
-  "total_minted": 6386258289,
+  "total_minted": 6386408289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4257,
+      "event_title": "FvD gets round rules to establish its own school in Almere",
+      "event_url": "https://www.dutchnews.nl/2026/06/fvd-gets-round-rules-to-establish-its-own-school-in-almere/",
+      "event_source": "DutchNews.nl",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.45,
+      "confidence": 7,
+      "justification": "Public funding for a far-right affiliated school risks undermining educational neutrality and equality. | While the new school may offer educational access, its political affiliation raises concerns about ideological bias and the misuse of public funds, undermining educational neutrality and trust in the system.",
+      "tx_hash": "4bV11wyY9n5HBE4dmznCkR74Fo1CpMyD4UihmbTWhP1EKw5cZzASzRDM3RVV1EcyNTyx2GfxtmL1M6YmuibAJnXo",
+      "created_at": "2026-06-26T08:35:11.698163+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"The establishment of a new school may provide educational opportunities for a specific community.\", \"affected_sdgs\": [4], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The school is linked to a far-right political party, raising concerns about ideological indoctrination and potential violations of educational neutrality.\", \"affected_sdgs\": [4, 10], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public funding for a school tied to a far-right party may undermine trust in the impartiality of the education system.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4256,
       "event_title": "French court rules Total must revise climate plan to account for all emissions",
@@ -93642,13 +93664,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 77,
-        "total_amount": 111595000
+        "count": 76,
+        "total_amount": 110895000
       },
       {
         "country": "France",
-        "count": 26,
-        "total_amount": 22570000
+        "count": 25,
+        "total_amount": 22420000
       },
       {
         "country": "European Union",
@@ -93696,8 +93718,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.333,
-        "events": 120
+        "burn_ratio": 0.336,
+        "events": 119
       },
       {
         "region": "Europe",
@@ -93780,7 +93802,7 @@
       },
       {
         "date": "2026-06-26",
-        "net_minted": 21815000,
+        "net_minted": 21965000,
         "net_burned": 31100000
       }
     ],
@@ -93798,7 +93820,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 191,
-        "negative": 394,
+        "negative": 393,
         "event_ids_positive": [
           4256,
           4255,
@@ -93993,6 +94015,7 @@
           3663
         ],
         "event_ids_negative": [
+          4257,
           4254,
           4253,
           4252,
@@ -94384,9 +94407,7 @@
           3665,
           3664,
           3662,
-          3661,
-          3660,
-          3659
+          3661
         ]
       },
       "UDHR": {
@@ -94480,6 +94501,7 @@
           3673
         ],
         "event_ids_negative": [
+          4257,
           4254,
           4253,
           4252,
@@ -94779,8 +94801,7 @@
           3668,
           3666,
           3665,
-          3662,
-          3660
+          3662
         ]
       },
       "ILO": {
@@ -95330,11 +95351,11 @@
       "niche_pct": 50.4,
       "mainstream_pct": 49.6,
       "total_sources_used": 121,
-      "articles_processed": 598
+      "articles_processed": 597
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 598,
+      "total_events": 597,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -95390,9 +95411,9 @@
       },
       {
         "name": "UN",
-        "count": 26,
+        "count": 25,
         "burn_count": 9,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           4216,
           4215,
@@ -95418,8 +95439,7 @@
           3741,
           3740,
           3738,
-          3721,
-          3660
+          3721
         ]
       },
       {
@@ -95494,9 +95514,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 91,
+        "count": 89,
         "burn_count": 41,
-        "mint_count": 50,
+        "mint_count": 48,
         "event_ids": [
           4252,
           4247,
@@ -95586,9 +95606,68 @@
           3699,
           3691,
           3687,
-          3663,
-          3660,
-          3659
+          3663
+        ]
+      },
+      {
+        "name": "Finance",
+        "count": 53,
+        "burn_count": 18,
+        "mint_count": 35,
+        "event_ids": [
+          4257,
+          4251,
+          4236,
+          4229,
+          4219,
+          4216,
+          4211,
+          4187,
+          4183,
+          4171,
+          4162,
+          4161,
+          4160,
+          4129,
+          4123,
+          4110,
+          4107,
+          4096,
+          4094,
+          4077,
+          4031,
+          4000,
+          3984,
+          3966,
+          3961,
+          3951,
+          3950,
+          3947,
+          3945,
+          3942,
+          3932,
+          3930,
+          3929,
+          3926,
+          3918,
+          3916,
+          3909,
+          3897,
+          3889,
+          3859,
+          3850,
+          3841,
+          3840,
+          3839,
+          3772,
+          3758,
+          3748,
+          3727,
+          3710,
+          3704,
+          3690,
+          3682,
+          3663
         ]
       },
       {
@@ -95649,66 +95728,6 @@
           3691,
           3671,
           3667,
-          3663
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 52,
-        "burn_count": 18,
-        "mint_count": 34,
-        "event_ids": [
-          4251,
-          4236,
-          4229,
-          4219,
-          4216,
-          4211,
-          4187,
-          4183,
-          4171,
-          4162,
-          4161,
-          4160,
-          4129,
-          4123,
-          4110,
-          4107,
-          4096,
-          4094,
-          4077,
-          4031,
-          4000,
-          3984,
-          3966,
-          3961,
-          3951,
-          3950,
-          3947,
-          3945,
-          3942,
-          3932,
-          3930,
-          3929,
-          3926,
-          3918,
-          3916,
-          3909,
-          3897,
-          3889,
-          3859,
-          3850,
-          3841,
-          3840,
-          3839,
-          3772,
-          3758,
-          3748,
-          3727,
-          3710,
-          3704,
-          3690,
-          3682,
           3663
         ]
       },
@@ -95913,9 +95932,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 400,
+      "total_mint": 399,
       "direct_action": {
-        "count": 374,
+        "count": 373,
         "pct": 93.5
       },
       "editorial_alarm": {
@@ -95928,9 +95947,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2835,
+      "total_mint": 2836,
       "direct_action": {
-        "count": 2167,
+        "count": 2168,
         "pct": 76.4
       },
       "editorial_alarm": {
@@ -95944,7 +95963,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 193,
-      "institutional": 405,
+      "institutional": 404,
       "citizen_ratio": 0.323,
       "daily": [
         {
@@ -95980,7 +95999,7 @@
         {
           "date": "2026-06-26",
           "citizen": 4,
-          "institutional": 18
+          "institutional": 19
         }
       ],
       "event_ids_citizen": [
@@ -96179,6 +96198,7 @@
         3668
       ],
       "event_ids_institutional": [
+        4257,
         4256,
         4255,
         4254,
@@ -96581,9 +96601,7 @@
         3664,
         3663,
         3662,
-        3661,
-        3660,
-        3659
+        3661
       ]
     }
   }
