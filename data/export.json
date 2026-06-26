@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-25T23:35:50.966520+00:00",
-  "total_events": 4234,
-  "total_burned": 6484520995,
-  "total_minted": 6364443289,
+  "generated_at": "2026-06-26T00:05:56.942814+00:00",
+  "total_events": 4236,
+  "total_burned": 6485620995,
+  "total_minted": 6364563289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4236,
+      "event_title": "Ratepayers Spend $1.2m to Address WA's Three-Bin Waste Problem",
+      "event_url": "https://www.abc.net.au/news/2026-06-26/bunbury-fogo-trucked-150km-to-perth/106832508",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": -1.75,
+      "confidence": 8,
+      "justification": "Reactive waste management with high environmental and financial costs outweighs marginal accountability. | The action reflects a reactive response to infrastructure collapse, prioritizing short-term waste disposal over sustainable solutions. While it demonstrates financial commitment to waste management, the reliance on long-distance transport exacerbates environmental harm and undermines systemic progress toward circular economy principles.",
+      "tx_hash": "35Q16uaaUbzhCQPioKCLg6VGz4ybrx7bdQgA44VJ4CNXFJxnBkHAnqbDq14i7S2GbE55p79RrHcnMeikTE1jCeKh",
+      "created_at": "2026-06-26T00:05:51.925115+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Local government allocates $1.2 million annually to address waste management infrastructure failure, demonstrating accountability and financial commitment to environmental sustainability despite logistical challenges.\", \"affected_sdgs\": [11, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Failure of local organic waste processing infrastructure forces long-distance transport (150km) of waste to Perth, increasing carbon emissions, costs to ratepayers, and undermining circular economy goals.\", \"affected_sdgs\": [11, 12, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4235,
+      "event_title": "AI in Justice: Call Opened to Create Protocol for Application in Buenos Aires Courts",
+      "event_url": "https://www.clarin.com/sociedad/ia-justicia-abren-convocatoria-crear-protocolo-aplicacion-tribunales-bonaerenses_0_ZqslDoIfbK.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "BURN",
+      "amount_crbn": 1100000,
+      "final_score": 6.15,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Establishment of ethical AI protocols in courts advances justice and transparency. | The establishment of AI protocols in Buenos Aires courts advances SDG 16 (Peace, Justice, and Strong Institutions) by promoting ethical and structured AI use in justice systems. The inclusion of a public consultation mechanism further enhances transparency and stakeholder engagement, aligning w",
+      "tx_hash": "67ogczhMNdTfdomz6yKqRxyP6dJPFgTepi7UhpNFmHkrwSrJSSg27EikSb7CB7ymTmG5H4yRVSKeK2mEz9DuvZTN",
+      "created_at": "2026-06-26T00:05:51.786260+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Supreme Court of Buenos Aires Province establishes guidelines and restrictions for AI application in courts, promoting structured and ethical integration of AI in justice systems\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public consultation process initiated to allow system operators to propose changes or modifications, ensuring stakeholder participation and transparency\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 4234,
       "event_title": "Paris court gives oil giant TotalEnergies deadline to tighten climate policies",
@@ -93158,8 +93202,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 81,
-        "total_amount": 114665000
+        "count": 80,
+        "total_amount": 113665000
       },
       {
         "country": "France",
@@ -93185,8 +93229,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 38,
-        "total_amount": 167823875
+        "count": 37,
+        "total_amount": 162823875
       },
       {
         "country": "France",
@@ -93212,13 +93256,13 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.328,
-        "events": 125
+        "burn_ratio": 0.325,
+        "events": 123
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.31,
-        "events": 58
+        "burn_ratio": 0.322,
+        "events": 59
       },
       {
         "region": "Asia",
@@ -93232,8 +93276,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.261,
-        "events": 23
+        "burn_ratio": 0.25,
+        "events": 24
       }
     ],
     "top_regions_destructive": [
@@ -93249,8 +93293,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.739,
-        "events": 23
+        "mint_ratio": 0.75,
+        "events": 24
       },
       {
         "region": "Europe",
@@ -93264,11 +93308,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-06-19",
-        "net_minted": 77972500,
-        "net_burned": 162340000
-      },
       {
         "date": "2026-06-20",
         "net_minted": 85995000,
@@ -93298,6 +93337,11 @@
         "date": "2026-06-25",
         "net_minted": 161447500,
         "net_burned": 204735000
+      },
+      {
+        "date": "2026-06-26",
+        "net_minted": 120000,
+        "net_burned": 1100000
       }
     ],
     "event_of_the_day": {
@@ -93316,6 +93360,7 @@
         "positive": 198,
         "negative": 397,
         "event_ids_positive": [
+          4235,
           4234,
           4232,
           4228,
@@ -93512,10 +93557,10 @@
           3638,
           3635,
           3631,
-          3628,
-          3626
+          3628
         ],
         "event_ids_negative": [
+          4236,
           4233,
           4231,
           4230,
@@ -93911,14 +93956,14 @@
           3633,
           3632,
           3630,
-          3629,
-          3627
+          3629
         ]
       },
       "UDHR": {
         "positive": 88,
-        "negative": 305,
+        "negative": 304,
         "event_ids_positive": [
+          4235,
           4232,
           4222,
           4218,
@@ -94005,8 +94050,7 @@
           3651,
           3646,
           3631,
-          3628,
-          3626
+          3628
         ],
         "event_ids_negative": [
           4233,
@@ -94312,8 +94356,7 @@
           3637,
           3633,
           3630,
-          3629,
-          3627
+          3629
         ]
       },
       "ILO": {
@@ -94571,7 +94614,7 @@
         ]
       },
       "Animal": {
-        "positive": 52,
+        "positive": 51,
         "negative": 41,
         "event_ids_positive": [
           4228,
@@ -94624,8 +94667,7 @@
           3648,
           3642,
           3641,
-          3635,
-          3626
+          3635
         ],
         "event_ids_negative": [
           4227,
@@ -94672,8 +94714,8 @@
         ]
       },
       "PB": {
-        "positive": 92,
-        "negative": 94,
+        "positive": 91,
+        "negative": 95,
         "event_ids_positive": [
           4234,
           4221,
@@ -94765,10 +94807,10 @@
           3646,
           3642,
           3641,
-          3638,
-          3626
+          3638
         ],
         "event_ids_negative": [
+          4236,
           4233,
           4227,
           4217,
@@ -94867,9 +94909,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 50.0,
-      "mainstream_pct": 50.0,
-      "total_sources_used": 122,
+      "niche_pct": 49.6,
+      "mainstream_pct": 50.4,
+      "total_sources_used": 121,
       "articles_processed": 609
     },
     "cache_hit_rate_7d": {
@@ -95036,9 +95078,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 91,
+        "count": 90,
         "burn_count": 41,
-        "mint_count": 50,
+        "mint_count": 49,
         "event_ids": [
           4234,
           4219,
@@ -95129,16 +95171,16 @@
           3659,
           3652,
           3633,
-          3632,
-          3627
+          3632
         ]
       },
       {
         "name": "Construction",
-        "count": 54,
+        "count": 55,
         "burn_count": 30,
-        "mint_count": 24,
+        "mint_count": 25,
         "event_ids": [
+          4236,
           4221,
           4211,
           4200,
@@ -95197,10 +95239,11 @@
       },
       {
         "name": "Finance",
-        "count": 51,
+        "count": 52,
         "burn_count": 18,
-        "mint_count": 33,
+        "mint_count": 34,
         "event_ids": [
+          4236,
           4229,
           4219,
           4216,
@@ -95256,10 +95299,11 @@
       },
       {
         "name": "Tech",
-        "count": 34,
-        "burn_count": 15,
+        "count": 35,
+        "burn_count": 16,
         "mint_count": 19,
         "event_ids": [
+          4235,
           4228,
           4209,
           4206,
@@ -95375,8 +95419,8 @@
       },
       {
         "name": "Water",
-        "count": 21,
-        "burn_count": 9,
+        "count": 20,
+        "burn_count": 8,
         "mint_count": 12,
         "event_ids": [
           4205,
@@ -95398,16 +95442,16 @@
           3713,
           3698,
           3690,
-          3674,
-          3626
+          3674
         ]
       },
       {
         "name": "Transport",
-        "count": 14,
+        "count": 15,
         "burn_count": 4,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          4236,
           4233,
           4216,
           4200,
@@ -95441,10 +95485,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1406,
+      "total_burn": 1407,
       "direct_action": {
-        "count": 1048,
-        "pct": 74.5
+        "count": 1049,
+        "pct": 74.6
       },
       "editorial_consciousness": {
         "count": 99,
@@ -95471,9 +95515,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2820,
+      "total_mint": 2821,
       "direct_action": {
-        "count": 2152,
+        "count": 2153,
         "pct": 76.3
       },
       "editorial_alarm": {
@@ -95490,11 +95534,6 @@
       "institutional": 405,
       "citizen_ratio": 0.335,
       "daily": [
-        {
-          "date": "2026-06-19",
-          "citizen": 32,
-          "institutional": 52
-        },
         {
           "date": "2026-06-20",
           "citizen": 15,
@@ -95524,6 +95563,11 @@
           "date": "2026-06-25",
           "citizen": 39,
           "institutional": 73
+        },
+        {
+          "date": "2026-06-26",
+          "citizen": 0,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -95733,6 +95777,8 @@
         3629
       ],
       "event_ids_institutional": [
+        4236,
+        4235,
         4234,
         4232,
         4231,
@@ -96135,9 +96181,7 @@
         3632,
         3631,
         3630,
-        3628,
-        3627,
-        3626
+        3628
       ]
     }
   }
