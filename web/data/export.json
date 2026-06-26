@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-26T13:35:36.272443+00:00",
-  "total_events": 4279,
+  "generated_at": "2026-06-26T14:05:21.241734+00:00",
+  "total_events": 4280,
   "total_burned": 6572780995,
-  "total_minted": 6398008289,
+  "total_minted": 6398508289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4280,
+      "event_title": "Sweden guilty of denying equal healthcare to EU residents, committee says",
+      "event_url": "https://www.thelocal.se/20260626/sweden-guilty-of-denying-equal-healthcare-to-eu-residents-committee-says",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.94,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Sweden's institutional denial of equal healthcare to EU residents violates human rights and SDG 3, warranting BURN. | The ruling by the European Committee of Social Rights exposes Sweden's systemic failure to uphold healthcare rights for vulnerable EU residents, violating core human rights and SDG 3. While the committee's condemnation is a positive step toward accountability",
+      "tx_hash": "3KVjv2yN3j4Eti4D7v2ajuCVcfxTed5aHkJgmDKwBPgdyTZRMamaLL2BufCAZdxK5diEjFHiNMevGrvRG5xwZwhb",
+      "created_at": "2026-06-26T14:05:16.360469+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"European Committee of Social Rights identifies and condemns Sweden's violations of the European Social Charter regarding healthcare access for vulnerable EU residents\", \"affected_sdgs\": [3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sweden's denial of equal healthcare to vulnerable EU residents constitutes a violation of the European Social Charter and UDHR Article 25 (right to health)\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4279,
       "event_title": "How Shining a Light on Ships Could Help Solve Illegal Fishing",
@@ -94153,8 +94175,8 @@
       },
       {
         "country": "France",
-        "count": 26,
-        "total_amount": 22695000
+        "count": 24,
+        "total_amount": 21075000
       },
       {
         "country": "European Union",
@@ -94175,8 +94197,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 32,
-        "total_amount": 138123875
+        "count": 31,
+        "total_amount": 133123875
       },
       {
         "country": "France",
@@ -94202,8 +94224,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.329,
-        "events": 167
+        "burn_ratio": 0.331,
+        "events": 166
       },
       {
         "region": "Asia",
@@ -94211,14 +94233,14 @@
         "events": 59
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.319,
-        "events": 116
-      },
-      {
         "region": "Latin America",
         "burn_ratio": 0.317,
         "events": 60
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.313,
+        "events": 115
       },
       {
         "region": "Oceania",
@@ -94243,14 +94265,14 @@
         "events": 25
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.687,
+        "events": 115
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 0.683,
         "events": 60
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.681,
-        "events": 116
       }
     ],
     "supply_trend_7d": [
@@ -94286,7 +94308,7 @@
       },
       {
         "date": "2026-06-26",
-        "net_minted": 33565000,
+        "net_minted": 34065000,
         "net_burned": 88260000
       }
     ],
@@ -94303,8 +94325,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 195,
-        "negative": 389,
+        "positive": 194,
+        "negative": 387,
         "event_ids_positive": [
           4279,
           4278,
@@ -94499,10 +94521,10 @@
           3691,
           3690,
           3688,
-          3687,
-          3685
+          3687
         ],
         "event_ids_negative": [
+          4280,
           4277,
           4276,
           4273,
@@ -94888,15 +94910,12 @@
           3697,
           3696,
           3694,
-          3689,
-          3686,
-          3684,
-          3683
+          3689
         ]
       },
       "UDHR": {
-        "positive": 85,
-        "negative": 302,
+        "positive": 84,
+        "negative": 301,
         "event_ids_positive": [
           4275,
           4274,
@@ -94981,10 +95000,10 @@
           3721,
           3711,
           3700,
-          3693,
-          3685
+          3693
         ],
         "event_ids_negative": [
+          4280,
           4277,
           4276,
           4270,
@@ -95284,9 +95303,7 @@
           3697,
           3696,
           3694,
-          3689,
-          3686,
-          3684
+          3689
         ]
       },
       "ILO": {
@@ -95327,7 +95344,7 @@
         ]
       },
       "CRC": {
-        "positive": 21,
+        "positive": 20,
         "negative": 60,
         "event_ids_positive": [
           4275,
@@ -95349,8 +95366,7 @@
           3798,
           3776,
           3700,
-          3693,
-          3685
+          3693
         ],
         "event_ids_negative": [
           4266,
@@ -95416,8 +95432,8 @@
         ]
       },
       "UNDRIP": {
-        "positive": 48,
-        "negative": 75,
+        "positive": 47,
+        "negative": 74,
         "event_ids_positive": [
           4279,
           4272,
@@ -95465,8 +95481,7 @@
           3732,
           3708,
           3693,
-          3688,
-          3685
+          3688
         ],
         "event_ids_negative": [
           4273,
@@ -95542,8 +95557,7 @@
           3712,
           3702,
           3701,
-          3697,
-          3686
+          3697
         ]
       },
       "Animal": {
@@ -95641,7 +95655,7 @@
       },
       "PB": {
         "positive": 90,
-        "negative": 92,
+        "negative": 91,
         "event_ids_positive": [
           4278,
           4272,
@@ -95825,30 +95839,30 @@
           3713,
           3710,
           3703,
-          3697,
-          3683
+          3697
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 50.0,
-      "mainstream_pct": 50.0,
-      "total_sources_used": 120,
-      "articles_processed": 597
+      "niche_pct": 49.6,
+      "mainstream_pct": 50.4,
+      "total_sources_used": 119,
+      "articles_processed": 594
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 597,
+      "total_events": 594,
       "pct": 2.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 43,
+        "count": 44,
         "burn_count": 13,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          4280,
           4274,
           4268,
           4266,
@@ -95946,16 +95960,15 @@
       },
       {
         "name": "ICC",
-        "count": 6,
+        "count": 5,
         "burn_count": 0,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           4158,
           4133,
           3958,
           3765,
-          3696,
-          3684
+          3696
         ]
       },
       {
@@ -96262,43 +96275,6 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 29,
-        "burn_count": 6,
-        "mint_count": 23,
-        "event_ids": [
-          4226,
-          4210,
-          4209,
-          4198,
-          4197,
-          4195,
-          4194,
-          4184,
-          4157,
-          4141,
-          4108,
-          4064,
-          4030,
-          4029,
-          3986,
-          3964,
-          3928,
-          3870,
-          3865,
-          3864,
-          3819,
-          3816,
-          3804,
-          3803,
-          3779,
-          3719,
-          3712,
-          3686,
-          3685
-        ]
-      },
-      {
         "name": "Defense",
         "count": 27,
         "burn_count": 3,
@@ -96331,6 +96307,41 @@
           3764,
           3760,
           3753
+        ]
+      },
+      {
+        "name": "Agriculture",
+        "count": 27,
+        "burn_count": 5,
+        "mint_count": 22,
+        "event_ids": [
+          4226,
+          4210,
+          4209,
+          4198,
+          4197,
+          4195,
+          4194,
+          4184,
+          4157,
+          4141,
+          4108,
+          4064,
+          4030,
+          4029,
+          3986,
+          3964,
+          3928,
+          3870,
+          3865,
+          3864,
+          3819,
+          3816,
+          3804,
+          3803,
+          3779,
+          3719,
+          3712
         ]
       },
       {
@@ -96386,14 +96397,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 202,
+      "total_burn": 201,
       "direct_action": {
         "count": 182,
-        "pct": 90.1
+        "pct": 90.5
       },
       "editorial_consciousness": {
-        "count": 13,
-        "pct": 6.4
+        "count": 12,
+        "pct": 6.0
       },
       "untyped": {
         "count": 7,
@@ -96416,14 +96427,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 395,
+      "total_mint": 393,
       "direct_action": {
-        "count": 369,
-        "pct": 93.4
+        "count": 368,
+        "pct": 93.6
       },
       "editorial_alarm": {
-        "count": 20,
-        "pct": 5.1
+        "count": 19,
+        "pct": 4.8
       },
       "untyped": {
         "count": 6,
@@ -96431,9 +96442,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2848,
+      "total_mint": 2849,
       "direct_action": {
-        "count": 2179,
+        "count": 2180,
         "pct": 76.5
       },
       "editorial_alarm": {
@@ -96446,9 +96457,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 196,
+      "citizen": 193,
       "institutional": 401,
-      "citizen_ratio": 0.328,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-06-20",
@@ -96483,7 +96494,7 @@
         {
           "date": "2026-06-26",
           "citizen": 12,
-          "institutional": 33
+          "institutional": 34
         }
       ],
       "event_ids_citizen": [
@@ -96679,12 +96690,10 @@
         3698,
         3697,
         3691,
-        3688,
-        3686,
-        3685,
-        3683
+        3688
       ],
       "event_ids_institutional": [
+        4280,
         4278,
         4277,
         4276,
@@ -97084,8 +97093,7 @@
         3692,
         3690,
         3689,
-        3687,
-        3684
+        3687
       ]
     }
   }
