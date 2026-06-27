@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-06-27T23:04:59.077452+00:00",
-  "total_events": 4356,
+  "generated_at": "2026-06-27T23:34:56.376042+00:00",
+  "total_events": 4357,
   "total_burned": 6718680995,
-  "total_minted": 6483883289,
+  "total_minted": 6491383289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4357,
+      "event_title": "US carries out fresh strikes against Iran after tanker struck in Hormuz, escalating hostilities",
+      "event_url": "https://www.al-monitor.com/originals/2026/06/us-carries-out-fresh-strikes-against-iran-after-tanker-struck-hormuz-escalating",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 7500000,
+      "final_score": -6.08,
+      "confidence": 9,
+      "justification": "US military strikes violate peace agreement and escalate conflict, warranting MINT. | The US military action directly violates the interim peace agreement and undermines global peace efforts (SDG 16). It escalates a regional conflict with potential for widespread human suffering, violating core human rights principles of peace, security, and due process. The magnitude of harm is severe due to the risk of prolonged conflict and collateral damage.",
+      "tx_hash": "3Jam26DG7VHBkhqFwhacRcQ4KLEyKJSMD59kbC76QdCWYcW5JPWY6tehNiZjgWbo2QDji4Zdhi5YJaHhXmB2ZD5f",
+      "created_at": "2026-06-27T23:34:51.550595+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US military conducts fresh strikes against Iran following a tanker attack in the Strait of Hormuz, violating the interim peace deal signed two weeks prior and escalating hostilities\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(3)\", \"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4356,
       "event_title": "US launches second night of strikes against Iran after ship struck by drone",
@@ -95842,8 +95864,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 89,
-        "total_amount": 165245000
+        "count": 90,
+        "total_amount": 172745000
       },
       {
         "country": "France",
@@ -95916,8 +95938,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.274,
-        "events": 124
+        "burn_ratio": 0.272,
+        "events": 125
       }
     ],
     "top_regions_destructive": [
@@ -95933,8 +95955,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.726,
-        "events": 124
+        "mint_ratio": 0.728,
+        "events": 125
       },
       {
         "region": "Oceania",
@@ -95980,7 +96002,7 @@
       },
       {
         "date": "2026-06-27",
-        "net_minted": 34675000,
+        "net_minted": 42175000,
         "net_burned": 102150000
       }
     ],
@@ -95998,7 +96020,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 199,
-        "negative": 375,
+        "negative": 376,
         "event_ids_positive": [
           4355,
           4349,
@@ -96201,6 +96223,7 @@
           3775
         ],
         "event_ids_negative": [
+          4357,
           4356,
           4354,
           4353,
@@ -96580,7 +96603,7 @@
       },
       "UDHR": {
         "positive": 92,
-        "negative": 288,
+        "negative": 289,
         "event_ids_positive": [
           4355,
           4343,
@@ -96676,6 +96699,7 @@
           3776
         ],
         "event_ids_negative": [
+          4357,
           4356,
           4354,
           4353,
@@ -97500,11 +97524,11 @@
       "niche_pct": 47.5,
       "mainstream_pct": 52.5,
       "total_sources_used": 118,
-      "articles_processed": 587
+      "articles_processed": 588
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 587,
+      "total_events": 588,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -97869,10 +97893,11 @@
       },
       {
         "name": "Defense",
-        "count": 35,
+        "count": 36,
         "burn_count": 3,
-        "mint_count": 32,
+        "mint_count": 33,
         "event_ids": [
+          4357,
           4356,
           4353,
           4345,
@@ -97985,6 +98010,31 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 17,
+        "burn_count": 3,
+        "mint_count": 14,
+        "event_ids": [
+          4357,
+          4356,
+          4312,
+          4306,
+          4276,
+          4236,
+          4233,
+          4216,
+          4200,
+          4190,
+          4186,
+          4176,
+          4046,
+          4024,
+          3968,
+          3845,
+          3785
+        ]
+      },
+      {
         "name": "Water",
         "count": 17,
         "burn_count": 7,
@@ -98007,30 +98057,6 @@
           3862,
           3830,
           3784
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 16,
-        "burn_count": 3,
-        "mint_count": 13,
-        "event_ids": [
-          4356,
-          4312,
-          4306,
-          4276,
-          4236,
-          4233,
-          4216,
-          4200,
-          4190,
-          4186,
-          4176,
-          4046,
-          4024,
-          3968,
-          3845,
-          3785
         ]
       }
     ],
@@ -98065,9 +98091,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 381,
+      "total_mint": 382,
       "direct_action": {
-        "count": 358,
+        "count": 359,
         "pct": 94.0
       },
       "editorial_alarm": {
@@ -98080,9 +98106,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2896,
+      "total_mint": 2897,
       "direct_action": {
-        "count": 2225,
+        "count": 2226,
         "pct": 76.8
       },
       "editorial_alarm": {
@@ -98096,8 +98122,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 190,
-      "institutional": 397,
-      "citizen_ratio": 0.324,
+      "institutional": 398,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-06-21",
@@ -98132,7 +98158,7 @@
         {
           "date": "2026-06-27",
           "citizen": 13,
-          "institutional": 31
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
@@ -98328,6 +98354,7 @@
         3772
       ],
       "event_ids_institutional": [
+        4357,
         4356,
         4355,
         4354,
