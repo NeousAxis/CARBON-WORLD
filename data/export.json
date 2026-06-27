@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-27T07:05:27.272762+00:00",
-  "total_events": 4321,
-  "total_burned": 6629780995,
-  "total_minted": 6465373289,
+  "generated_at": "2026-06-27T07:35:25.991100+00:00",
+  "total_events": 4323,
+  "total_burned": 6636780995,
+  "total_minted": 6465523289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4323,
+      "event_title": "Where can you cool down for free in Vienna this summer?",
+      "event_url": "https://www.thelocal.at/20260608/where-can-you-cool-down-for-free-in-vienna-this-summer",
+      "event_source": "The Local Austria (EN)",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.03,
+      "confidence": 9,
+      "justification": "Municipal action providing free climate adaptation infrastructure advances equity and sustainability | The reopening of free public cooling spaces in Vienna directly advances public health (SDG 3) and sustainable urban living (SDG 11) while mitigating heat-related climate impacts (SDG 13). This action removes financial barriers to essential services, aligning with universal access principles and reducing heat vulnerability for vulnerable populations.",
+      "tx_hash": "2T2kZUXfu4p7AH6fzp9nqGYruobUaGznJLx6PrU6QF1dUGuBk4SMLkfY81ZbSCJR2VEbiFNa5wJGmJiRYAU6W9VL",
+      "created_at": "2026-06-27T07:35:21.498433+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Austria",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Vienna's municipal government reopened free public cooling spaces for summer 2026, providing accessible heat relief to residents without cost barriers\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
+    {
+      "id": 4322,
+      "event_title": "Senior MP says Germany could revive conscription by mid-2027",
+      "event_url": "https://www.thelocal.de/20260627/senior-mp-says-germany-could-revive-conscription-by-mid-2027",
+      "event_source": "The Local Germany (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.79,
+      "confidence": 7,
+      "justification": "Revival of conscription risks violating human rights and exacerbating inequalities. | The potential revival of conscription in Germany presents a dual ethical challenge. While it may strengthen national security and institutional resilience (SDG 16), it risks violating fundamental human rights, particularly those of children and marginalized groups. The net ethical position is negative due to the high likelihood of rights violations and systemic inequalities.",
+      "tx_hash": "5KhZ1J4g3p7jqdB9L15jHLpgHp2MhBsNdjW5hDYkJTiU7BCs4817jJZRx6A2rPbJpjdCW1Yo5687sUYdsVG9pQGi",
+      "created_at": "2026-06-27T07:35:21.400847+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Discussion of potential conscription revival highlights national security preparedness and institutional capacity-building\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reintroduction of conscription could infringe on individual freedoms and bodily autonomy, violating UDHR Article 3 (right to security of person) and CRC Article 3 (best interests of the child)\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 3\"], \"magnitude\": 7, \"frameworks\": [\"UDHR\", \"CRC\", \"SDG\"]}, {\"description\": \"Military service may disproportionately impact marginalized groups, exacerbating inequalities and violating ILO Core Labor Standards on non-discrimination\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"ILO Non-Discrimination Convention\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4321,
       "event_title": "Trump administration asks high court to OK its unprecedented immigration detention policy",
@@ -95131,8 +95175,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.331,
-        "events": 166
+        "burn_ratio": 0.333,
+        "events": 168
       },
       {
         "region": "Latin America",
@@ -95210,8 +95254,8 @@
       },
       {
         "date": "2026-06-27",
-        "net_minted": 16165000,
-        "net_burned": 13250000
+        "net_minted": 16315000,
+        "net_burned": 20250000
       }
     ],
     "event_of_the_day": {
@@ -95227,9 +95271,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 190,
-        "negative": 394,
+        "positive": 191,
+        "negative": 395,
         "event_ids_positive": [
+          4323,
           4318,
           4314,
           4313,
@@ -95422,6 +95467,7 @@
           3727
         ],
         "event_ids_negative": [
+          4322,
           4321,
           4320,
           4319,
@@ -95819,9 +95865,10 @@
         ]
       },
       "UDHR": {
-        "positive": 86,
-        "negative": 306,
+        "positive": 87,
+        "negative": 307,
         "event_ids_positive": [
+          4323,
           4318,
           4314,
           4299,
@@ -95910,6 +95957,7 @@
           3751
         ],
         "event_ids_negative": [
+          4322,
           4321,
           4319,
           4317,
@@ -96220,7 +96268,7 @@
       },
       "ILO": {
         "positive": 9,
-        "negative": 19,
+        "negative": 20,
         "event_ids_positive": [
           4282,
           4274,
@@ -96233,6 +96281,7 @@
           3751
         ],
         "event_ids_negative": [
+          4322,
           4291,
           4266,
           4265,
@@ -96256,7 +96305,7 @@
       },
       "CRC": {
         "positive": 20,
-        "negative": 62,
+        "negative": 63,
         "event_ids_positive": [
           4318,
           4299,
@@ -96280,6 +96329,7 @@
           3776
         ],
         "event_ids_negative": [
+          4322,
           4321,
           4307,
           4288,
@@ -96758,11 +96808,11 @@
       "niche_pct": 47.9,
       "mainstream_pct": 52.1,
       "total_sources_used": 119,
-      "articles_processed": 597
+      "articles_processed": 599
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 597,
+      "total_events": 599,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -97026,10 +97076,11 @@
       },
       {
         "name": "Finance",
-        "count": 50,
-        "burn_count": 16,
+        "count": 51,
+        "burn_count": 17,
         "mint_count": 34,
         "event_ids": [
+          4323,
           4259,
           4258,
           4257,
@@ -97084,10 +97135,11 @@
       },
       {
         "name": "Construction",
-        "count": 48,
-        "burn_count": 25,
+        "count": 49,
+        "burn_count": 26,
         "mint_count": 23,
         "event_ids": [
+          4323,
           4309,
           4294,
           4290,
@@ -97303,10 +97355,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 197,
+      "total_burn": 198,
       "direct_action": {
-        "count": 177,
-        "pct": 89.8
+        "count": 178,
+        "pct": 89.9
       },
       "editorial_consciousness": {
         "count": 13,
@@ -97314,13 +97366,13 @@
       },
       "untyped": {
         "count": 7,
-        "pct": 3.6
+        "pct": 3.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1435,
+      "total_burn": 1436,
       "direct_action": {
-        "count": 1076,
+        "count": 1077,
         "pct": 75.0
       },
       "editorial_consciousness": {
@@ -97333,14 +97385,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 400,
+      "total_mint": 401,
       "direct_action": {
-        "count": 375,
+        "count": 376,
         "pct": 93.8
       },
       "editorial_alarm": {
         "count": 19,
-        "pct": 4.8
+        "pct": 4.7
       },
       "untyped": {
         "count": 6,
@@ -97348,14 +97400,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2878,
+      "total_mint": 2879,
       "direct_action": {
-        "count": 2207,
+        "count": 2208,
         "pct": 76.7
       },
       "editorial_alarm": {
         "count": 177,
-        "pct": 6.2
+        "pct": 6.1
       },
       "untyped": {
         "count": 494,
@@ -97364,8 +97416,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 194,
-      "institutional": 403,
-      "citizen_ratio": 0.325,
+      "institutional": 405,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-06-21",
@@ -97400,7 +97452,7 @@
         {
           "date": "2026-06-27",
           "citizen": 4,
-          "institutional": 5
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -97600,6 +97652,8 @@
         3725
       ],
       "event_ids_institutional": [
+        4323,
+        4322,
         4319,
         4318,
         4317,
