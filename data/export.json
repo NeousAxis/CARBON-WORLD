@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-27T20:04:55.276099+00:00",
-  "total_events": 4348,
-  "total_burned": 6713880995,
-  "total_minted": 6476783289,
+  "generated_at": "2026-06-27T20:35:47.443642+00:00",
+  "total_events": 4350,
+  "total_burned": 6717980995,
+  "total_minted": 6476933289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4350,
+      "event_title": "Health NZ to front community as Palmerston North loses last gastro doctor",
+      "event_url": "https://www.rnz.co.nz/news/health/631760/health-nz-to-front-community-as-palmerston-north-loses-last-gastro-doctor",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.1,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Health NZ's action to reassure the community and recruit is a corrective step, but the systemic healthcare gap remains a significant ethical concern. | The action by Health NZ to reassure the community and maintain gastro services is a positive step toward mitigating harm from the loss of the last gastro doctor. However, the underlying issue of a critical healthcare service ",
+      "tx_hash": "3Zuf5Vchf6CQ4gAYo6CstjwCHWzGjuKjpmsLYGmX4fpBKLTQC3mADzY73y4BtgH8RbUxTFgaJT7BJcmbfBWgQyGR",
+      "created_at": "2026-06-27T20:35:42.860327+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Health New Zealand Te Whatu Ora commits to reassuring the community and continuing gastro services despite losing the last gastro doctor in Palmerston North, indicating proactive communication and service maintenance\", \"affected_sdgs\": [3], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Loss of the last gastro doctor in Palmerston North creates a critical healthcare service gap, risking patient access to essential gastrointestinal care\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4349,
+      "event_title": "Three Indigenous leaders from the Amazon traveled to the EU to meet global leaders face to face",
+      "event_url": "https://mastodon.social/@greenpeace/116820928141497409",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "BURN",
+      "amount_crbn": 4100000,
+      "final_score": 3.91,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Indigenous leaders from the Amazon sharing the truth about illegal mining and deforestation with global leaders is a powerful act of advocacy and truth-sharing. | The action by Indigenous leaders represents a powerful act of truth-sharing and advocacy, aligning with climate action, biodiversity protection, and indigenous rights. It has no clear negative ethical aspects.",
+      "tx_hash": "4JHiiWZdaQ7hoewLK2piYrBLF3BHgFqd6dJmE7XpaZFwWc3UJUufQUrU5vJ92BVv6doxfoWU1iAGX67JAk4JpGZY",
+      "created_at": "2026-06-27T20:35:42.743263+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Indigenous leaders from the Amazon traveled to the EU to meet global leaders face to face, sharing the truth about illegal mining, deforestation, and unchecked development.\", \"affected_sdgs\": [13, 14, 15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 4348,
       "event_title": "Mitsubishi Heavy to invest over $618m in Japan, US gas turbine operations",
@@ -95735,8 +95779,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.308,
-        "events": 26
+        "burn_ratio": 0.296,
+        "events": 27
       },
       {
         "region": "North America",
@@ -95762,8 +95806,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.692,
-        "events": 26
+        "mint_ratio": 0.704,
+        "events": 27
       },
       {
         "region": "Latin America",
@@ -95804,8 +95848,8 @@
       },
       {
         "date": "2026-06-27",
-        "net_minted": 27575000,
-        "net_burned": 97350000
+        "net_minted": 27725000,
+        "net_burned": 101450000
       }
     ],
     "event_of_the_day": {
@@ -95821,9 +95865,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 199,
-        "negative": 374,
+        "positive": 200,
+        "negative": 375,
         "event_ids_positive": [
+          4349,
           4344,
           4343,
           4341,
@@ -96025,6 +96070,7 @@
           3767
         ],
         "event_ids_negative": [
+          4350,
           4348,
           4347,
           4346,
@@ -96403,7 +96449,7 @@
       },
       "UDHR": {
         "positive": 91,
-        "negative": 288,
+        "negative": 289,
         "event_ids_positive": [
           4343,
           4339,
@@ -96498,6 +96544,7 @@
           3776
         ],
         "event_ids_negative": [
+          4350,
           4345,
           4342,
           4340,
@@ -96910,9 +96957,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 47,
+        "positive": 48,
         "negative": 68,
         "event_ids_positive": [
+          4349,
           4339,
           4338,
           4325,
@@ -97127,9 +97175,10 @@
         ]
       },
       "PB": {
-        "positive": 91,
+        "positive": 92,
         "negative": 92,
         "event_ids_positive": [
+          4349,
           4344,
           4338,
           4337,
@@ -97322,21 +97371,22 @@
       "niche_pct": 47.5,
       "mainstream_pct": 52.5,
       "total_sources_used": 118,
-      "articles_processed": 586
+      "articles_processed": 588
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 586,
+      "total_events": 588,
       "pct": 2.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 38,
-        "burn_count": 14,
+        "count": 39,
+        "burn_count": 15,
         "mint_count": 24,
         "event_ids": [
+          4349,
           4331,
           4328,
           4280,
@@ -97730,10 +97780,11 @@
       },
       {
         "name": "Tech",
-        "count": 32,
-        "burn_count": 15,
+        "count": 33,
+        "burn_count": 16,
         "mint_count": 17,
         "event_ids": [
+          4349,
           4336,
           4296,
           4273,
@@ -97851,14 +97902,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 206,
+      "total_burn": 207,
       "direct_action": {
-        "count": 184,
-        "pct": 89.3
+        "count": 185,
+        "pct": 89.4
       },
       "editorial_consciousness": {
         "count": 15,
-        "pct": 7.3
+        "pct": 7.2
       },
       "untyped": {
         "count": 7,
@@ -97866,9 +97917,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1450,
+      "total_burn": 1451,
       "direct_action": {
-        "count": 1089,
+        "count": 1090,
         "pct": 75.1
       },
       "editorial_consciousness": {
@@ -97877,14 +97928,14 @@
       },
       "untyped": {
         "count": 259,
-        "pct": 17.9
+        "pct": 17.8
       }
     },
     "mint_composition_7d": {
-      "total_mint": 380,
+      "total_mint": 381,
       "direct_action": {
-        "count": 357,
-        "pct": 93.9
+        "count": 358,
+        "pct": 94.0
       },
       "editorial_alarm": {
         "count": 17,
@@ -97896,9 +97947,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2890,
+      "total_mint": 2891,
       "direct_action": {
-        "count": 2219,
+        "count": 2220,
         "pct": 76.8
       },
       "editorial_alarm": {
@@ -97911,8 +97962,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 192,
-      "institutional": 394,
+      "citizen": 193,
+      "institutional": 395,
       "citizen_ratio": 0.328,
       "daily": [
         {
@@ -97947,11 +97998,12 @@
         },
         {
           "date": "2026-06-27",
-          "citizen": 12,
-          "institutional": 24
+          "citizen": 13,
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
+        4349,
         4347,
         4346,
         4344,
@@ -98146,6 +98198,7 @@
         3766
       ],
       "event_ids_institutional": [
+        4350,
         4348,
         4345,
         4342,
