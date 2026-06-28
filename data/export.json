@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-28T11:04:26.730738+00:00",
-  "total_events": 4376,
+  "generated_at": "2026-06-28T11:35:29.192127+00:00",
+  "total_events": 4378,
   "total_burned": 6745680995,
-  "total_minted": 6524398289,
+  "total_minted": 6526098289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4378,
+      "event_title": "Online Age Verification Law Could Kill Whistleblowing",
+      "event_url": "https://theintercept.com/2026/06/28/age-verification-privacy-surveillance-journalists-whistleblowers/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -5.53,
+      "confidence": 8,
+      "justification": "Law risks enabling surveillance and undermining free expression despite child protection intent. | The proposed law has a dual nature: it seeks to protect children (a positive goal aligned with SDG 3 and 16) but simultaneously risks severe violations of privacy and freedom of expression (UDHR Articles 12 and 19). The magnitude of the negative aspects outweighs the positive due to the systemic threat to fundamental rights and the potential chilling effect on whistleblowing and dissent.",
+      "tx_hash": "41A5tZ5fJbx5iDCpVDy4KsW8JabPkZaVyTSrsCgT8HRBNy6VnbQrAKi9eMJC8KwtVvDEu5GhMiKvBUBsmd7zbBXw",
+      "created_at": "2026-06-28T11:35:24.526333+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Proposed law aims to protect children from online harm by implementing age verification measures\", \"affected_sdgs\": [3, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Age verification law risks enabling mass surveillance, undermining privacy, and threatening the safety of journalists, dissidents, and whistleblowers by creating identifiable trails of online activity\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4377,
+      "event_title": "About 1,000 deaths in France attributable to heat wave",
+      "event_url": "https://www.politico.eu/article/about-1000-deaths-in-france-attributable-to-heatwave/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -2.7,
+      "confidence": 7,
+      "justification": "Heatwave deaths and hospital strain in France represent a significant public health and climate crisis. | The heatwave-related deaths and hospital strain in France represent a significant public health crisis, violating rights to life and health, and undermining climate resilience and health infrastructure.",
+      "tx_hash": "22UeTmWfrNGcFZf8RDbtaJNggCo72ii8qcnktdMkXBk1zhJ7piXqk7JTjYFBtiDcYAF6v8QC242x9eQUnKXiXPTD",
+      "created_at": "2026-06-28T11:35:24.413669+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Approximately 1,000 deaths in France attributed to a heatwave, with hospitals near capacity.\", \"affected_sdgs\": [3, 13], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4376,
       "event_title": "Uganda’s main independent media group says it is 'besieged' by the army",
@@ -96282,13 +96326,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 89,
-        "total_amount": 175545000
+        "count": 90,
+        "total_amount": 176045000
       },
       {
         "country": "France",
-        "count": 25,
-        "total_amount": 19990000
+        "count": 26,
+        "total_amount": 21190000
       },
       {
         "country": "European Union",
@@ -96341,8 +96385,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.343,
-        "events": 166
+        "burn_ratio": 0.341,
+        "events": 167
       },
       {
         "region": "Asia",
@@ -96356,8 +96400,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.28,
-        "events": 125
+        "burn_ratio": 0.278,
+        "events": 126
       }
     ],
     "top_regions_destructive": [
@@ -96373,8 +96417,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.72,
-        "events": 125
+        "mint_ratio": 0.722,
+        "events": 126
       },
       {
         "region": "Latin America",
@@ -96420,7 +96464,7 @@
       },
       {
         "date": "2026-06-28",
-        "net_minted": 33015000,
+        "net_minted": 34715000,
         "net_burned": 27000000
       }
     ],
@@ -96437,8 +96481,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 202,
-        "negative": 376,
+        "positive": 201,
+        "negative": 378,
         "event_ids_positive": [
           4374,
           4367,
@@ -96640,10 +96684,11 @@
           3795,
           3792,
           3791,
-          3787,
-          3786
+          3787
         ],
         "event_ids_negative": [
+          4378,
+          4377,
           4376,
           4375,
           4373,
@@ -97024,7 +97069,7 @@
       },
       "UDHR": {
         "positive": 93,
-        "negative": 288,
+        "negative": 290,
         "event_ids_positive": [
           4374,
           4361,
@@ -97121,6 +97166,8 @@
           3787
         ],
         "event_ids_negative": [
+          4378,
+          4377,
           4376,
           4373,
           4372,
@@ -97451,7 +97498,7 @@
       },
       "CRC": {
         "positive": 20,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           4336,
           4318,
@@ -97475,6 +97522,7 @@
           3798
         ],
         "event_ids_negative": [
+          4377,
           4371,
           4322,
           4321,
@@ -97750,7 +97798,7 @@
         ]
       },
       "PB": {
-        "positive": 93,
+        "positive": 92,
         "negative": 94,
         "event_ids_positive": [
           4366,
@@ -97844,8 +97892,7 @@
           3832,
           3830,
           3821,
-          3792,
-          3786
+          3792
         ],
         "event_ids_negative": [
           4375,
@@ -97949,11 +97996,11 @@
       "niche_pct": 47.5,
       "mainstream_pct": 52.5,
       "total_sources_used": 118,
-      "articles_processed": 591
+      "articles_processed": 592
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 591,
+      "total_events": 592,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -98203,6 +98250,65 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 51,
+        "burn_count": 25,
+        "mint_count": 26,
+        "event_ids": [
+          4377,
+          4355,
+          4353,
+          4348,
+          4327,
+          4323,
+          4309,
+          4294,
+          4290,
+          4272,
+          4254,
+          4236,
+          4221,
+          4211,
+          4200,
+          4192,
+          4187,
+          4186,
+          4161,
+          4151,
+          4129,
+          4107,
+          4095,
+          4094,
+          4079,
+          4075,
+          4067,
+          4033,
+          4032,
+          4019,
+          4005,
+          4001,
+          3996,
+          3994,
+          3980,
+          3975,
+          3952,
+          3950,
+          3947,
+          3938,
+          3926,
+          3901,
+          3895,
+          3879,
+          3877,
+          3871,
+          3855,
+          3850,
+          3845,
+          3816,
+          3790
+        ]
+      },
+      {
         "name": "Finance",
         "count": 51,
         "burn_count": 16,
@@ -98259,64 +98365,6 @@
           3841,
           3840,
           3839
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 50,
-        "burn_count": 25,
-        "mint_count": 25,
-        "event_ids": [
-          4355,
-          4353,
-          4348,
-          4327,
-          4323,
-          4309,
-          4294,
-          4290,
-          4272,
-          4254,
-          4236,
-          4221,
-          4211,
-          4200,
-          4192,
-          4187,
-          4186,
-          4161,
-          4151,
-          4129,
-          4107,
-          4095,
-          4094,
-          4079,
-          4075,
-          4067,
-          4033,
-          4032,
-          4019,
-          4005,
-          4001,
-          3996,
-          3994,
-          3980,
-          3975,
-          3952,
-          3950,
-          3947,
-          3938,
-          3926,
-          3901,
-          3895,
-          3879,
-          3877,
-          3871,
-          3855,
-          3850,
-          3845,
-          3816,
-          3790
         ]
       },
       {
@@ -98493,10 +98541,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 209,
+      "total_burn": 208,
       "direct_action": {
-        "count": 188,
-        "pct": 90.0
+        "count": 187,
+        "pct": 89.9
       },
       "editorial_consciousness": {
         "count": 14,
@@ -98504,7 +98552,7 @@
       },
       "untyped": {
         "count": 7,
-        "pct": 3.3
+        "pct": 3.4
       }
     },
     "burn_composition_all_time": {
@@ -98523,10 +98571,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 382,
+      "total_mint": 384,
       "direct_action": {
-        "count": 360,
-        "pct": 94.2
+        "count": 362,
+        "pct": 94.3
       },
       "editorial_alarm": {
         "count": 16,
@@ -98538,10 +98586,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2910,
+      "total_mint": 2912,
       "direct_action": {
-        "count": 2239,
-        "pct": 76.9
+        "count": 2241,
+        "pct": 77.0
       },
       "editorial_alarm": {
         "count": 177,
@@ -98554,7 +98602,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 191,
-      "institutional": 400,
+      "institutional": 401,
       "citizen_ratio": 0.323,
       "daily": [
         {
@@ -98590,7 +98638,7 @@
         {
           "date": "2026-06-28",
           "citizen": 9,
-          "institutional": 10
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -98787,6 +98835,8 @@
         3787
       ],
       "event_ids_institutional": [
+        4378,
+        4377,
         4376,
         4375,
         4374,
@@ -99185,8 +99235,7 @@
         3793,
         3790,
         3789,
-        3788,
-        3786
+        3788
       ]
     }
   }
