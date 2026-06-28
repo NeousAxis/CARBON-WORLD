@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-28T01:05:09.441655+00:00",
-  "total_events": 4360,
-  "total_burned": 6725680995,
-  "total_minted": 6501033289,
+  "generated_at": "2026-06-28T01:35:04.593026+00:00",
+  "total_events": 4362,
+  "total_burned": 6727180995,
+  "total_minted": 6501533289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4362,
+      "event_title": "Anger grows in Venezuela as citizens blocked from aiding earthquake rescue",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/anger-grows-in-venezuela-as-citizens-blocked-from-aiding-earthquake-rescue?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.52,
+      "confidence": 9,
+      "justification": "Military blockade of humanitarian aid violates rights and harms disaster response. | The military's action directly harms disaster response and violates fundamental rights, while public anger reflects a positive civic response demanding accountability. The net ethical position is strongly negative due to the concrete harm caused by the blockade, outweighing the positive civic signal.",
+      "tx_hash": "31LNS3i8Q7wCw93fMjLYkidUpyNmJqVXu6fNDjdpHoTh3q6TXzSDgtVWkcF7NUitV26sD7KmMrJbVsgSWtxZ9s1Z",
+      "created_at": "2026-06-28T01:34:59.605894+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Venezuela",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Citizens' collective anger signals civic engagement and demand for accountability in disaster response, reflecting growing public consciousness and willingness to challenge institutional failures.\", \"affected_sdgs\": [11, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military blocking citizens from aiding earthquake rescue violates freedom of movement, access to humanitarian aid, and undermines disaster response effectiveness, exacerbating suffering.\", \"affected_sdgs\": [3, 11, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4361,
+      "event_title": "Autistic talent tapped to help fill growing cybersecurity skills gap",
+      "event_url": "https://www.abc.net.au/news/2026-06-28/curtin-university-program-austistic-workers-cyber-security/106786380",
+      "event_source": "ABC News Australia",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": 6.45,
+      "confidence": 8,
+      "justification": "Program advances neurodiversity inclusion and addresses critical skills gap with measurable societal benefit. | The program represents a net positive ethical action by addressing systemic workforce gaps while promoting inclusion and diversity. It directly supports SDG 4 (Quality Education) and SDG 8 (Decent Work) by creating tailored employment pathways for autistic individuals, who often face significant barriers to workforce participation. The initiative also aligns with UDHR principles of non",
+      "tx_hash": "3Rwk18gRGWf7LYp2DgWApT4s5jTag5YTYSaMRSQ5ZvnGGPX85BRPNfGEGhuZ2UHHv3M1txiB8Z559Gw7z8N5sb8x",
+      "created_at": "2026-06-28T01:34:59.493332+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Curtin University program leverages autistic talent to address critical cybersecurity skills shortage, providing employment opportunities and social inclusion for neurodivergent individuals\", \"affected_sdgs\": [4, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Program aligns with national cybersecurity workforce needs, contributing to economic resilience and innovation through specialized skills\", \"affected_sdgs\": [8, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 4360,
       "event_title": "The United States bombs Iran again in response to the attack on an oil tanker near the Strait of Hormuz",
@@ -95976,9 +96020,9 @@
         "total_amount": 39060000
       },
       {
-        "country": "United Kingdom",
+        "country": "Australia",
         "count": 8,
-        "total_amount": 48250000
+        "total_amount": 34050000
       }
     ],
     "top_regions_sustainable": [
@@ -95994,13 +96038,13 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.339,
-        "events": 56
+        "burn_ratio": 0.333,
+        "events": 57
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.31,
-        "events": 29
+        "burn_ratio": 0.333,
+        "events": 30
       },
       {
         "region": "North America",
@@ -96025,14 +96069,14 @@
         "events": 126
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 0.69,
-        "events": 29
+        "region": "Latin America",
+        "mint_ratio": 0.667,
+        "events": 57
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.661,
-        "events": 56
+        "region": "Oceania",
+        "mint_ratio": 0.667,
+        "events": 30
       }
     ],
     "supply_trend_7d": [
@@ -96068,8 +96112,8 @@
       },
       {
         "date": "2026-06-28",
-        "net_minted": 9650000,
-        "net_burned": 7000000
+        "net_minted": 10150000,
+        "net_burned": 8500000
       }
     ],
     "event_of_the_day": {
@@ -96085,9 +96129,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 200,
-        "negative": 375,
+        "positive": 201,
+        "negative": 376,
         "event_ids_positive": [
+          4361,
           4359,
           4355,
           4349,
@@ -96290,6 +96335,7 @@
           3775
         ],
         "event_ids_negative": [
+          4362,
           4360,
           4358,
           4357,
@@ -96668,9 +96714,10 @@
         ]
       },
       "UDHR": {
-        "positive": 92,
-        "negative": 289,
+        "positive": 93,
+        "negative": 290,
         "event_ids_positive": [
+          4361,
           4355,
           4343,
           4339,
@@ -96765,6 +96812,7 @@
           3776
         ],
         "event_ids_negative": [
+          4362,
           4360,
           4358,
           4357,
@@ -97591,11 +97639,11 @@
       "niche_pct": 47.5,
       "mainstream_pct": 52.5,
       "total_sources_used": 118,
-      "articles_processed": 588
+      "articles_processed": 590
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 588,
+      "total_events": 590,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -97679,10 +97727,11 @@
       },
       {
         "name": "WHO",
-        "count": 7,
-        "burn_count": 4,
+        "count": 8,
+        "burn_count": 5,
         "mint_count": 3,
         "event_ids": [
+          4361,
           4258,
           4222,
           4096,
@@ -97962,10 +98011,11 @@
       },
       {
         "name": "Defense",
-        "count": 37,
+        "count": 38,
         "burn_count": 3,
-        "mint_count": 34,
+        "mint_count": 35,
         "event_ids": [
+          4362,
           4360,
           4357,
           4356,
@@ -98007,10 +98057,11 @@
       },
       {
         "name": "Tech",
-        "count": 33,
-        "burn_count": 16,
+        "count": 34,
+        "burn_count": 17,
         "mint_count": 17,
         "event_ids": [
+          4361,
           4349,
           4336,
           4296,
@@ -98133,14 +98184,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 207,
+      "total_burn": 208,
       "direct_action": {
-        "count": 186,
+        "count": 187,
         "pct": 89.9
       },
       "editorial_consciousness": {
         "count": 14,
-        "pct": 6.8
+        "pct": 6.7
       },
       "untyped": {
         "count": 7,
@@ -98148,9 +98199,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1453,
+      "total_burn": 1454,
       "direct_action": {
-        "count": 1092,
+        "count": 1093,
         "pct": 75.2
       },
       "editorial_consciousness": {
@@ -98163,9 +98214,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 381,
+      "total_mint": 382,
       "direct_action": {
-        "count": 358,
+        "count": 359,
         "pct": 94.0
       },
       "editorial_alarm": {
@@ -98178,9 +98229,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2899,
+      "total_mint": 2900,
       "direct_action": {
-        "count": 2228,
+        "count": 2229,
         "pct": 76.9
       },
       "editorial_alarm": {
@@ -98193,9 +98244,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 190,
+      "citizen": 192,
       "institutional": 398,
-      "citizen_ratio": 0.323,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-06-22",
@@ -98229,11 +98280,13 @@
         },
         {
           "date": "2026-06-28",
-          "citizen": 1,
+          "citizen": 3,
           "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        4362,
+        4361,
         4358,
         4349,
         4347,
