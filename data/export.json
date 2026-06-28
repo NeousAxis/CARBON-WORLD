@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-06-28T12:34:26.205981+00:00",
-  "total_events": 4380,
-  "total_burned": 6745680995,
-  "total_minted": 6526748289,
+  "generated_at": "2026-06-28T13:04:37.175783+00:00",
+  "total_events": 4382,
+  "total_burned": 6749680995,
+  "total_minted": 6533748289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4382,
+      "event_title": "Over 350 human rights activists killed in 2025, including many environmental defenders",
+      "event_url": "https://www.rfi.fr/fr/environnement/20260628-environnement-plus-de-350-militants-tu%C3%A9s-en-2025-selon-front-line-defenders",
+      "event_source": "RFI FR Environnement",
+      "decision": "MINT",
+      "amount_crbn": 7000000,
+      "final_score": -5.28,
+      "confidence": 9,
+      "justification": "Mass killings of environmental defenders violate core human rights and undermine climate action. | The publication of the report by Front Line Defenders highlights a critical global crisis of violence against human rights defenders, including environmental activists. While the act of reporting raises awareness and fulfills a duty to document atrocities, the underlying event—mass killings of defenders—constitutes a grave violation of fundamental rights and undermines global efforts toward peace a",
+      "tx_hash": "4rRtgbCaDtMzH9dsLtpeWge5V2StJbPzp678guuZqvAT35W2kGgiMFXdvwLgAXENL6EKNAC6n4A6XqPz89apnSsV",
+      "created_at": "2026-06-28T13:04:32.540484+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Front Line Defenders published a report documenting 350+ human rights activists killed in 2025, raising global awareness of violence against defenders, including environmental activists\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Over 350 human rights activists, including environmental defenders, were killed in 2025, representing a severe violation of their rights to life, freedom of expression, and protection under international law\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4381,
+      "event_title": "Greece attempts to regulate beach privatization to combat overtourism",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/06/28/la-grece-tente-de-reguler-la-privatisation-des-plages-pour-lutter-contre-le-surtourisme_6716566_3234.html",
+      "event_source": "Le Monde International",
+      "decision": "BURN",
+      "amount_crbn": 4000000,
+      "final_score": 6.46,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Government action protects coastal ecosystems and promotes sustainable tourism. | The Greek government's ban on commercial beach exploitation directly supports sustainable tourism (SDG 12) and protects marine ecosystems (SDG 14) by preventing overtourism damage. While local economic disruptions may occur, the environmental and social benefits outweigh these concerns.",
+      "tx_hash": "54unoVvaUHCxsYAnfjMEGzXmzBq4UV9q3PBDBmv46YiQYRdY34ZapUVVpMradVkTnCzTspScDyT1LCP12uZEd6A",
+      "created_at": "2026-06-28T13:04:32.365091+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Greece",
+      "region": "Europe",
+      "administration": "Greece-ND",
+      "positive_aspects_json": "[{\"description\": \"Greek government bans commercial exploitation of 251 beaches to combat overtourism, prohibiting paid sunbeds and beach bars\", \"affected_sdgs\": [12, 14], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential economic impact on local businesses dependent on beach tourism\", \"affected_sdgs\": [8, 12], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 4380,
       "event_title": "The Supreme Court is building its own massive police force",
@@ -96434,8 +96478,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.335,
-        "events": 167
+        "burn_ratio": 0.339,
+        "events": 168
       },
       {
         "region": "Latin America",
@@ -96471,8 +96515,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.665,
-        "events": 167
+        "mint_ratio": 0.661,
+        "events": 168
       }
     ],
     "supply_trend_7d": [
@@ -96508,8 +96552,8 @@
       },
       {
         "date": "2026-06-28",
-        "net_minted": 35365000,
-        "net_burned": 27000000
+        "net_minted": 42365000,
+        "net_burned": 31000000
       }
     ],
     "event_of_the_day": {
@@ -96525,9 +96569,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 200,
-        "negative": 377,
+        "positive": 201,
+        "negative": 378,
         "event_ids_positive": [
+          4381,
           4374,
           4367,
           4366,
@@ -96730,6 +96775,7 @@
           3791
         ],
         "event_ids_negative": [
+          4382,
           4380,
           4379,
           4378,
@@ -97111,7 +97157,7 @@
       },
       "UDHR": {
         "positive": 92,
-        "negative": 289,
+        "negative": 290,
         "event_ids_positive": [
           4374,
           4361,
@@ -97207,6 +97253,7 @@
           3791
         ],
         "event_ids_negative": [
+          4382,
           4380,
           4379,
           4378,
@@ -97619,9 +97666,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 47,
+        "positive": 48,
         "negative": 66,
         "event_ids_positive": [
+          4381,
           4363,
           4359,
           4349,
@@ -98034,11 +98082,11 @@
       "niche_pct": 47.5,
       "mainstream_pct": 52.5,
       "total_sources_used": 118,
-      "articles_processed": 590
+      "articles_processed": 592
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 590,
+      "total_events": 592,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -98577,14 +98625,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 207,
+      "total_burn": 208,
       "direct_action": {
-        "count": 187,
-        "pct": 90.3
+        "count": 188,
+        "pct": 90.4
       },
       "editorial_consciousness": {
         "count": 13,
-        "pct": 6.3
+        "pct": 6.2
       },
       "untyped": {
         "count": 7,
@@ -98592,10 +98640,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1458,
+      "total_burn": 1459,
       "direct_action": {
-        "count": 1097,
-        "pct": 75.2
+        "count": 1098,
+        "pct": 75.3
       },
       "editorial_consciousness": {
         "count": 102,
@@ -98607,9 +98655,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 383,
+      "total_mint": 384,
       "direct_action": {
-        "count": 361,
+        "count": 362,
         "pct": 94.3
       },
       "editorial_alarm": {
@@ -98622,9 +98670,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2914,
+      "total_mint": 2915,
       "direct_action": {
-        "count": 2243,
+        "count": 2244,
         "pct": 77.0
       },
       "editorial_alarm": {
@@ -98633,13 +98681,13 @@
       },
       "untyped": {
         "count": 494,
-        "pct": 17.0
+        "pct": 16.9
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 190,
-      "institutional": 400,
-      "citizen_ratio": 0.322,
+      "citizen": 191,
+      "institutional": 401,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-06-22",
@@ -98673,11 +98721,12 @@
         },
         {
           "date": "2026-06-28",
-          "citizen": 9,
-          "institutional": 14
+          "citizen": 10,
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        4382,
         4371,
         4369,
         4368,
@@ -98870,6 +98919,7 @@
         3791
       ],
       "event_ids_institutional": [
+        4381,
         4380,
         4379,
         4378,
