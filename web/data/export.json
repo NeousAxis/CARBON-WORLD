@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-07-06T20:07:14.829036+00:00",
-  "total_events": 4465,
+  "generated_at": "2026-07-06T20:36:04.805102+00:00",
+  "total_events": 4466,
   "total_burned": 6915090995,
-  "total_minted": 6601783289,
+  "total_minted": 6606783289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4466,
+      "event_title": "PFAS : même des investissements massifs ne permettraient pas de s'en débarrasser",
+      "event_url": "https://reporterre.net/PFAS-meme-des-investissements-massifs-ne-permettraient-pas-de-s-en-debarrasser",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 5000000,
+      "final_score": -5.28,
+      "confidence": 9,
+      "justification": "Systemic failure to remediate PFAS pollution violates environmental and health rights. | The study reveals a stark ethical failure: despite massive investments, existing PFAS treatment methods are woefully inadequate, leaving ecosystems and human health exposed to persistent, irreversible contamination. This constitutes a systemic violation of environmental and human rights, with no immediate technological solution in sight.",
+      "tx_hash": "4DVxZ82RKanyE7GYJAJtJBvvuhbY6Hyv1hcLyBfHz36uQeraNePw6DUrLDZqwttA28inYqvpRf2JAnvXex2u8dtv",
+      "created_at": "2026-07-06T20:36:03.905452+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scientific study quantifies the inefficacy of current PFAS treatment methods, exposing a critical gap in pollution control infrastructure\", \"affected_sdgs\": [3, 6, 12, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"PFAS pollution remains largely untreated due to systemic failure of current remediation technologies, enabling ongoing environmental and health harms\", \"affected_sdgs\": [3, 6, 12, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"Animal Rights Article 1\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm"
+    },
     {
       "id": 4465,
       "event_title": "Every Summer for 34 Years, Japanese Surgeons Have Returned to Rural Vietnam to Give Free Operations to Children Who Couldn't Afford Them",
@@ -98368,7 +98390,7 @@
       },
       {
         "date": "2026-07-06",
-        "net_minted": 65275000,
+        "net_minted": 70275000,
         "net_burned": 153410000
       }
     ],
@@ -98386,7 +98408,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           4465,
           4463,
@@ -98423,6 +98445,7 @@
           4391
         ],
         "event_ids_negative": [
+          4466,
           4464,
           4462,
           4461,
@@ -98471,7 +98494,7 @@
       },
       "UDHR": {
         "positive": 9,
-        "negative": 34,
+        "negative": 35,
         "event_ids_positive": [
           4465,
           4446,
@@ -98484,6 +98507,7 @@
           4399
         ],
         "event_ids_negative": [
+          4466,
           4464,
           4462,
           4458,
@@ -98570,7 +98594,7 @@
       },
       "Animal": {
         "positive": 16,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [
           4455,
           4452,
@@ -98590,13 +98614,14 @@
           4400
         ],
         "event_ids_negative": [
+          4466,
           4464,
           4389
         ]
       },
       "PB": {
         "positive": 23,
-        "negative": 9,
+        "negative": 10,
         "event_ids_positive": [
           4463,
           4455,
@@ -98623,6 +98648,7 @@
           4391
         ],
         "event_ids_negative": [
+          4466,
           4464,
           4458,
           4457,
@@ -98638,12 +98664,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 57,
-      "articles_processed": 77
+      "total_sources_used": 58,
+      "articles_processed": 78
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 77,
+      "total_events": 78,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -98805,6 +98831,17 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 3,
+        "burn_count": 2,
+        "mint_count": 1,
+        "event_ids": [
+          4466,
+          4455,
+          4401
+        ]
+      },
+      {
         "name": "Mining",
         "count": 2,
         "burn_count": 1,
@@ -98812,16 +98849,6 @@
         "event_ids": [
           4460,
           4404
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 2,
-        "burn_count": 2,
-        "mint_count": 0,
-        "event_ids": [
-          4455,
-          4401
         ]
       },
       {
@@ -98866,14 +98893,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 44,
+      "total_mint": 45,
       "direct_action": {
         "count": 44,
-        "pct": 100.0
+        "pct": 97.8
       },
       "editorial_alarm": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 2.2
       },
       "untyped": {
         "count": 0,
@@ -98881,13 +98908,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2962,
+      "total_mint": 2963,
       "direct_action": {
         "count": 2290,
         "pct": 77.3
       },
       "editorial_alarm": {
-        "count": 177,
+        "count": 178,
         "pct": 6.0
       },
       "untyped": {
@@ -98896,9 +98923,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 33,
+      "citizen": 34,
       "institutional": 44,
-      "citizen_ratio": 0.429,
+      "citizen_ratio": 0.436,
       "daily": [
         {
           "date": "2026-06-30",
@@ -98932,11 +98959,12 @@
         },
         {
           "date": "2026-07-06",
-          "citizen": 33,
+          "citizen": 34,
           "institutional": 44
         }
       ],
       "event_ids_citizen": [
+        4466,
         4465,
         4464,
         4463,
