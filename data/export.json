@@ -1,10 +1,54 @@
 {
-  "generated_at": "2026-07-06T22:05:14.730928+00:00",
-  "total_events": 4472,
+  "generated_at": "2026-07-06T22:35:09.819817+00:00",
+  "total_events": 4474,
   "total_burned": 6922090995,
-  "total_minted": 6619983289,
+  "total_minted": 6621983289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4474,
+      "event_title": "What Alcoa's looming alumina monopoly could mean for WA's jarrah forests",
+      "event_url": "https://www.abc.net.au/news/2026-07-07/alcoa-purchase-south32-refinery-unlocks-jarrah-forest-mining/106871002",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -5.6,
+      "confidence": 8,
+      "justification": "Corporate action threatens critical jarrah forest ecosystems with irreversible damage. | The corporate consolidation may yield economic gains but poses significant environmental risks to WA's jarrah forests, a critical ecosystem. The net ethical position is negative due to the potential irreversible damage to biodiversity and planetary boundaries.",
+      "tx_hash": "pAzGaCHuRzGuRfr6R51BtzgHtLSRgq5hd41Khf9WFkLPLrRyApaRd6NLaDurutg2hKM3EwJipSByd2vpFt7JGqV",
+      "created_at": "2026-07-06T22:35:08.691857+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Potential for increased alumina production efficiency and economic benefits through corporate consolidation in Western Australia\", \"affected_sdgs\": [8, 9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk of expanded bauxite mining in WA's northern jarrah forests, threatening biodiversity and jarrah forest ecosystems\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Environmental concerns raised by environmentalists regarding loss of pristine jarrah forest areas\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
+    {
+      "id": 4473,
+      "event_title": "PAHO Warning: 8 in 10 Pregnant Women Do Not Receive Key Recommendation to Protect Their Babies",
+      "event_url": "https://www.clarin.com/sociedad/advertencia-ops-8-10-embarazadas-reciben-recomendacion-clave-proteger-bebes_0_MrCRTY9XgI.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.29,
+      "confidence": 8,
+      "justification": "Systemic healthcare failure outweighs institutional warning; MINT reflects the magnitude of the gap. | The institutional warning itself is a positive step toward addressing a critical public health gap, but the underlying data reveals a severe failure in healthcare access and preventive care for pregnant women and newborns. The warning highlights a systemic issue that undermines child health and maternal rights.",
+      "tx_hash": "4uvbnJafzstRhFgjMsdaQ7JbUvv5LpjgkZ4PKcowkYydUGYWWFNiTUKj1QDMWJm5jFXafVTFBGLNPPCBELUV1JyT",
+      "created_at": "2026-07-06T22:35:08.536464+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"PAHO and Argentina's Ministry of Health issued a public warning highlighting the low uptake of a critical vaccine for pregnant women to protect newborns from severe bronchiolitis, raising awareness and prompting institutional action.\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"76.8% of pregnant women reported not receiving a recommendation for a key vaccine to prevent severe bronchiolitis in newborns, indicating a systemic failure in healthcare delivery and preventive care.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4472,
       "event_title": "GB News co-owner ‘cashing in on climate chaos’ after leap in fossil fuel investments, critics say",
@@ -98448,8 +98492,8 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 1.0,
-        "events": 4
+        "burn_ratio": 0.8,
+        "events": 5
       },
       {
         "region": "Asia",
@@ -98485,8 +98529,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.0,
-        "events": 4
+        "mint_ratio": 0.2,
+        "events": 5
       }
     ],
     "supply_trend_7d": [
@@ -98522,7 +98566,7 @@
       },
       {
         "date": "2026-07-06",
-        "net_minted": 83475000,
+        "net_minted": 85475000,
         "net_burned": 160410000
       }
     ],
@@ -98540,7 +98584,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 50,
+        "negative": 52,
         "event_ids_positive": [
           4470,
           4465,
@@ -98578,6 +98622,8 @@
           4391
         ],
         "event_ids_negative": [
+          4474,
+          4473,
           4472,
           4471,
           4469,
@@ -98632,7 +98678,7 @@
       },
       "UDHR": {
         "positive": 9,
-        "negative": 38,
+        "negative": 39,
         "event_ids_positive": [
           4465,
           4446,
@@ -98645,6 +98691,7 @@
           4399
         ],
         "event_ids_negative": [
+          4473,
           4472,
           4469,
           4467,
@@ -98764,7 +98811,7 @@
       },
       "PB": {
         "positive": 24,
-        "negative": 13,
+        "negative": 14,
         "event_ids_positive": [
           4470,
           4463,
@@ -98792,6 +98839,7 @@
           4391
         ],
         "event_ids_negative": [
+          4474,
           4472,
           4471,
           4469,
@@ -98811,12 +98859,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 60,
-      "articles_processed": 84
+      "total_sources_used": 62,
+      "articles_processed": 86
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 84,
+      "total_events": 86,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -98986,6 +99034,17 @@
         ]
       },
       {
+        "name": "Forestry",
+        "count": 3,
+        "burn_count": 2,
+        "mint_count": 1,
+        "event_ids": [
+          4474,
+          4402,
+          4401
+        ]
+      },
+      {
         "name": "Water",
         "count": 3,
         "burn_count": 2,
@@ -99004,16 +99063,6 @@
         "event_ids": [
           4460,
           4404
-        ]
-      },
-      {
-        "name": "Forestry",
-        "count": 2,
-        "burn_count": 2,
-        "mint_count": 0,
-        "event_ids": [
-          4402,
-          4401
         ]
       }
     ],
@@ -99048,14 +99097,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 50,
+      "total_mint": 52,
       "direct_action": {
-        "count": 49,
-        "pct": 98.0
+        "count": 51,
+        "pct": 98.1
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.0
+        "pct": 1.9
       },
       "untyped": {
         "count": 0,
@@ -99063,9 +99112,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2968,
+      "total_mint": 2970,
       "direct_action": {
-        "count": 2295,
+        "count": 2297,
         "pct": 77.3
       },
       "editorial_alarm": {
@@ -99079,8 +99128,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 35,
-      "institutional": 49,
-      "citizen_ratio": 0.417,
+      "institutional": 51,
+      "citizen_ratio": 0.407,
       "daily": [
         {
           "date": "2026-06-30",
@@ -99115,7 +99164,7 @@
         {
           "date": "2026-07-06",
           "citizen": 35,
-          "institutional": 49
+          "institutional": 51
         }
       ],
       "event_ids_citizen": [
@@ -99156,6 +99205,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4474,
+        4473,
         4472,
         4471,
         4470,
