@@ -149,6 +149,101 @@ SCALE_NATIONAL = (100_000, 1_000_000)
 SCALE_INTERNATIONAL = (1_000_000, 10_000_000)
 
 
+def _max_aspect_magnitude(aspects) -> float:
+    """Highest magnitude (1-10) across a list of aspect dicts. 0 if none/parse fail."""
+    if not aspects:
+        return 0.0
+    try:
+        return max(float(a.get("magnitude", 0) or 0) for a in aspects)
+    except (TypeError, ValueError, AttributeError):
+        return 0.0
+
+
+def _dominant_magnitude(analysis: dict) -> float:
+    """
+    Impact magnitude that drives the CBWD amount: the positive side for a BURN,
+    the negative side for a MINT (the aspect that justifies the decision).
+    Falls back to the other side, then to a mid-scale 5.0 if magnitude data is
+    missing — so a parsing gap degrades to a moderate amount, never to 0 or 8M.
+    """
+    pos = _max_aspect_magnitude(analysis.get("positive_aspects"))
+    neg = _max_aspect_magnitude(analysis.get("negative_aspects"))
+    primary = pos if analysis.get("decision") == "BURN" else neg
+    if primary > 0:
+        return primary
+    fallback = max(pos, neg)
+    return fallback if fallback > 0 else 5.0
+
+
+def _band_for_magnitude(mag: float) -> tuple[int, int]:
+    """
+    Map the LLM's impact magnitude to a geographic base scale, using the anchors
+    documented in AGENTS_PROMPT_RULES.md §1:
+      9-10 → massive / affects millions / global  → International (1M-10M)
+      6-8  → national or large-regional           → National     (100K-1M)
+      3-5  → regional or sectoral                 → Regional     (10K-100K)
+      1-2  → minor / local / speculative          → Local        (1K-10K)
+    """
+    if mag >= 9:
+        return SCALE_INTERNATIONAL
+    if mag >= 6:
+        return SCALE_NATIONAL
+    if mag >= 3:
+        return SCALE_REGIONAL
+    return SCALE_LOCAL
+
+
+# Phase 2: explicit reach declared by the analyst (event_scope). Decouples the
+# breadth of an action from its severity, so a symbolically powerful but
+# single-subject win (one rescued animal, one cured patient) is priced local even
+# at high magnitude. See memory/scale-inflation-artifact.md.
+SCOPE_BANDS = {
+    "local": SCALE_LOCAL,
+    "regional": SCALE_REGIONAL,
+    "national": SCALE_NATIONAL,
+    "international": SCALE_INTERNATIONAL,
+}
+
+
+def _band_for_event(analysis: dict, mag: float) -> tuple[int, int]:
+    """
+    Choose the base scale. When the analyst declares a valid event_scope, that
+    reach drives the band (anti-inflation), but it is never allowed to exceed the
+    magnitude band by more than one tier — so an over-reaching "international" tag
+    on a low-magnitude item cannot re-inflate the amount. Falls back to the pure
+    magnitude band when scope is absent/invalid (legacy events).
+    """
+    mag_band = _band_for_magnitude(mag)
+    scope = str(analysis.get("event_scope", "")).lower().strip()
+    scope_band = SCOPE_BANDS.get(scope)
+    if scope_band is None:
+        return mag_band
+    bands = [SCALE_LOCAL, SCALE_REGIONAL, SCALE_NATIONAL, SCALE_INTERNATIONAL]
+    scope_rank, mag_rank = bands.index(scope_band), bands.index(mag_band)
+    # scope leads, but capped at one tier above what magnitude alone supports
+    return bands[min(scope_rank, mag_rank + 1)]
+
+
+def _compute_magnitude_amount(analysis: dict) -> int:
+    """
+    Deterministic CBWD amount driven by impact magnitude — the SAME function for
+    BURN and MINT, so the historical ~6.4x positive-over-negative inflation
+    cannot recur. NEUTRAL → 0. Within the magnitude band, the amount is placed by
+    magnitude and scaled by confidence, then hard-clamped to the band.
+    """
+    if analysis.get("decision") not in ("BURN", "MINT"):
+        return 0
+    mag = _dominant_magnitude(analysis)
+    lo, hi = _band_for_event(analysis, mag)
+    try:
+        conf = float(analysis.get("confidence", 5) or 5)
+    except (TypeError, ValueError):
+        conf = 5.0
+    conf = min(max(conf, 1.0), 10.0)
+    amount = lo + (hi - lo) * (mag / 10.0) * (conf / 10.0)
+    return int(round(max(lo, min(hi, amount))))
+
+
 def _recalculate_final_score(analysis: dict) -> float:
     """Recalculate final_score from component scores to verify LLM math."""
     snap = float(analysis.get("snapshot_score", 0))
@@ -233,9 +328,28 @@ def score(event: dict) -> dict:
     if analysis["decision"] == "NEUTRAL":
         event["_neutral_after_scoring"] = True
 
-    # Ensure amount_cbwd is a positive integer
-    amount = analysis.get("amount_cbwd", analysis.get("amount_crbn", 0))
-    analysis["amount_cbwd"] = max(0, int(amount))
+    # ---- CBWD amount model (gated by AMOUNT_SCALE_MODE) ----
+    # Legacy ("llm") trusts the LLM amount. "shadow"/"magnitude" derive it
+    # deterministically from impact magnitude, symmetric across BURN/MINT.
+    # See worker/config.py AMOUNT_SCALE_MODE and memory/scale-inflation-artifact.md.
+    try:
+        from config import AMOUNT_SCALE_MODE
+    except ImportError:
+        AMOUNT_SCALE_MODE = "llm"
+
+    llm_amount = max(0, int(analysis.get("amount_cbwd", analysis.get("amount_crbn", 0)) or 0))
+
+    if AMOUNT_SCALE_MODE in ("shadow", "magnitude"):
+        mag_amount = _compute_magnitude_amount(analysis)
+        logger.info(
+            "[AMOUNT %s] '%s': llm=%d -> magnitude=%d (mag=%.1f, conf=%s, %s)",
+            AMOUNT_SCALE_MODE.upper(), title, llm_amount, mag_amount,
+            _dominant_magnitude(analysis), analysis.get("confidence", "?"),
+            analysis["decision"],
+        )
+        analysis["amount_cbwd"] = mag_amount if AMOUNT_SCALE_MODE == "magnitude" else llm_amount
+    else:
+        analysis["amount_cbwd"] = llm_amount
 
     logger.info(
         "Scored '%s': %s %d CBWD (score=%.2f, confidence=%s/10)",

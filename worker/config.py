@@ -94,3 +94,18 @@ AUTO_RESOLVE_CONSENSUS_MIN_RATE: float = float(
 AUTO_RESOLVE_PRECEDENT_THRESHOLD: float = float(
     os.getenv("AUTO_RESOLVE_PRECEDENT_THRESHOLD", "0.70")
 )
+
+# CBWD amount model (worker/agents/scorer.py).
+# The legacy model trusts the LLM-emitted `amount_cbwd`, which empirically
+# collapses to round anchors (5M/7M) and tokenises positive/BURN actions ~6.4x
+# more per impact-magnitude-point than negative/MINT ones — inflating the burn
+# side and flipping the net-supply sign (quantified 2026-06-18, see
+# memory/scale-inflation-artifact.md). The new model derives the amount
+# deterministically from the impact magnitude the LLM already assigns, using the
+# SCALE_* geographic bands, with the SAME function for BURN and MINT (symmetric
+# by construction). Three modes, same rollout discipline as the calibrator:
+#   - "llm"       : legacy — use the LLM amount as-is (default, inert on deploy).
+#   - "shadow"    : compute the deterministic amount, log it next to the LLM one,
+#                   but keep the LLM amount (validate in prod before trusting).
+#   - "magnitude" : apply the deterministic magnitude-driven amount.
+AMOUNT_SCALE_MODE: str = os.getenv("AMOUNT_SCALE_MODE", "llm").lower()

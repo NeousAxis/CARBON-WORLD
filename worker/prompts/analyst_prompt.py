@@ -215,7 +215,18 @@ Decision rule:
 - final_score <= 4 → "MINT" (negative action)
 - 4 < final_score < 6 → "NEUTRAL"
 
-## STEP 5 — CBWD AMOUNT
+## STEP 5 — EVENT SCOPE (reach, not significance)
+
+event_scope = the literal breadth of who or what the action DIRECTLY affects. It is INDEPENDENT of how good, bad, urgent, or symbolically powerful the event is. Emotional, ecological, or moral significance does NOT raise scope. Being reported by international media does NOT raise scope.
+
+- "local"         -> one site, one community, one facility, one town or city, a single rescued / cured / relocated individual (animal or person), one species at one location.
+- "regional"      -> a state, province, large metro area, or river basin; a multi-city regional campaign.
+- "national"      -> an entire country: national law, nationwide policy, country-level target or budget.
+- "international" -> a binding multi-country treaty, a global mechanism, or an action whose DIRECT effect spans several countries.
+
+Decisive examples: "Tiger returns to one sanctuary" / "Two eagles nest again" / "One elephant moved to sanctuary" / "One patient cured" -> "local". "State bans plastics" -> "regional". "Country passes climate law" -> "national". "Nations ratify a high-seas treaty" -> "international".
+
+## STEP 6 — CBWD AMOUNT
 
 Geographic base:
 - Local (city): 1,000 - 10,000
@@ -227,7 +238,7 @@ Formula: amount_cbwd = base_scale × |final_score| × context_multiplier × (con
 
 context_multiplier reflects population, GDP, current emissions, and scale of the measure.
 
-## STEP 6 — CONFIDENCE (1-10 integer)
+## STEP 7 — CONFIDENCE (1-10 integer)
 
 - 9-10: solid data, scientific consensus, clear historical record
 - 7-8: good data, minor uncertainties
@@ -278,8 +289,11 @@ If validation is true, use exactly this structure:
   "amount_cbwd": 250000,
   "confidence": 7,
   "justification": "One sentence (<= 200 chars) summarizing the decision.",
+  "event_scope": "national",
   "event_country": "United States"
 }
+
+`event_scope` is one of "local", "regional", "national", "international" per STEP 5 — the breadth of the action's direct reach, not its significance.
 
 `event_country` is the canonical English name of the country whose government, judiciary, or society is the PRIMARY ACTOR of the event (the one performing the action, signing the treaty, ruling, banning, etc.). If the actor is an international institution (EU, UN, ICJ, NATO) or a regional bloc, or if the event is global / multi-country with no single primary actor, return null. Do not use abbreviations or ISO codes — use the full canonical name (e.g. "United States", not "US"; "United Kingdom", not "UK").
 
