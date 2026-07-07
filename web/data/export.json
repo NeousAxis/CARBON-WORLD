@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-07T18:37:09.078549+00:00",
-  "total_events": 4546,
+  "generated_at": "2026-07-07T19:05:38.377352+00:00",
+  "total_events": 4548,
   "total_burned": 6995840265,
-  "total_minted": 6682556689,
+  "total_minted": 6690064689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4548,
+      "event_title": "PBS dispute could see MS patients pay $33k a year for crucial drugs",
+      "event_url": "https://www.abc.net.au/news/2026-07-08/ms-drugs-could-be-pulled-from-pbs-pricing-stoush/106890154",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -3.41,
+      "confidence": 8,
+      "justification": "Denial of affordable MS medication violates health rights and creates severe financial hardship | The potential denial of affordable MS medication represents a severe violation of health rights and human dignity, with catastrophic financial consequences for patients. While the dispute may eventually drive systemic improvements in drug pricing transparency, the immediate harm to vulnerable patients is overwhelmingly negative and demands urgent intervention.",
+      "tx_hash": "21fzF6s59otpWNfkMN1egmAvd1iwVsr4cfxcjdx4jn2smAeFWRsD6jsBjsMQSaWX2i5mKAftWPob5FbAX6H79o8S",
+      "created_at": "2026-07-07T19:05:36.878055+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Potential public backlash and scrutiny over PBS drug pricing policies could lead to increased transparency and pressure for fairer drug pricing mechanisms\", \"affected_sdgs\": [3], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk of MS patients being forced to pay $33,000 annually for crucial medications due to PBS pricing dispute, creating severe financial burden and potential denial of life-saving treatment\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 26\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 4547,
+      "event_title": "Trump still ‘disappointed’ with NATO, says US should control Greenland as summit kicks off",
+      "event_url": "https://www.scmp.com/news/us/diplomacy/article/3359777/trump-still-disappointed-nato-says-us-should-control-greenland-summit-kicks?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -4.91,
+      "confidence": 8,
+      "justification": "Actions undermine NATO cohesion and global security stability. | The actions described undermine NATO's collective defense framework, violate principles of multilateral cooperation, and risk enabling further military escalation. The rhetoric and proposals directly contradict the foundational ethos of mutual defense and international solidarity enshrined in the UDHR and NATO's charter.",
+      "tx_hash": "2vpnpvLAURXSSWJt3WAfupfWHSdxDmbMh4MUqCPNvLPUcArRe4wzGQ6HAG9CXz3ZwWUfxj7kiEXyzW8ShEfdYwUv",
+      "created_at": "2026-07-07T19:05:36.760717+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US President expresses disappointment with NATO allies for not supporting a US military operation in the Middle East, undermining collective defense principles\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"US President suggests considering selling F-35 fighter jets to Turkey despite years of deadlock, potentially enabling further military escalation or human rights violations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 9\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Implied undermining of NATO cohesion and multilateral defense commitments, risking global security stability\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 4546,
       "event_title": "Ugandan farmers launch UK court case against East African oil pipeline",
@@ -104622,8 +104668,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.8,
-        "events": 5
+        "burn_ratio": 0.667,
+        "events": 6
       },
       {
         "region": "Asia",
@@ -104706,7 +104752,7 @@
       },
       {
         "date": "2026-07-07",
-        "net_minted": 57423400,
+        "net_minted": 64931400,
         "net_burned": 73749270
       }
     ],
@@ -104724,7 +104770,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 57,
-        "negative": 101,
+        "negative": 103,
         "event_ids_positive": [
           4543,
           4537,
@@ -104785,6 +104831,8 @@
           4391
         ],
         "event_ids_negative": [
+          4548,
+          4547,
           4546,
           4545,
           4544,
@@ -104890,7 +104938,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 74,
+        "negative": 76,
         "event_ids_positive": [
           4543,
           4532,
@@ -104913,6 +104961,8 @@
           4399
         ],
         "event_ids_negative": [
+          4548,
+          4547,
           4545,
           4544,
           4542,
@@ -105179,21 +105229,22 @@
       "niche_pct": 93.1,
       "mainstream_pct": 6.9,
       "total_sources_used": 87,
-      "articles_processed": 159
+      "articles_processed": 161
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 159,
+      "total_events": 161,
       "pct": 0.6
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "NATO",
-        "count": 12,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          4547,
           4542,
           4539,
           4534,
@@ -105345,10 +105396,11 @@
       },
       {
         "name": "Defense",
-        "count": 13,
+        "count": 14,
         "burn_count": 0,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          4547,
           4539,
           4529,
           4523,
@@ -105366,10 +105418,11 @@
       },
       {
         "name": "Finance",
-        "count": 9,
+        "count": 10,
         "burn_count": 3,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          4548,
           4544,
           4542,
           4504,
@@ -105464,14 +105517,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 102,
+      "total_mint": 104,
       "direct_action": {
-        "count": 93,
-        "pct": 91.2
+        "count": 95,
+        "pct": 91.3
       },
       "editorial_alarm": {
         "count": 8,
-        "pct": 7.8
+        "pct": 7.7
       },
       "untyped": {
         "count": 1,
@@ -105479,9 +105532,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3020,
+      "total_mint": 3022,
       "direct_action": {
-        "count": 2339,
+        "count": 2341,
         "pct": 77.5
       },
       "editorial_alarm": {
@@ -105495,8 +105548,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 68,
-      "institutional": 91,
-      "citizen_ratio": 0.428,
+      "institutional": 93,
+      "citizen_ratio": 0.422,
       "daily": [
         {
           "date": "2026-07-01",
@@ -105531,7 +105584,7 @@
         {
           "date": "2026-07-07",
           "citizen": 31,
-          "institutional": 38
+          "institutional": 40
         }
       ],
       "event_ids_citizen": [
@@ -105605,6 +105658,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4548,
+        4547,
         4545,
         4544,
         4542,
