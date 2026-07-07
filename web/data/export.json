@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-07-07T06:03:54.020514+00:00",
-  "total_events": 4496,
-  "total_burned": 6963090995,
+  "generated_at": "2026-07-07T06:35:05.320276+00:00",
+  "total_events": 4497,
+  "total_burned": 6964590995,
   "total_minted": 6632623289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4497,
+      "event_title": "WoMin African Alliance Statement on Xenophobia and Afrophobia in South Africa",
+      "event_url": "https://womin.africa/womin-african-alliance-statement-on-xenophobia-and-afrophobia-in-south-africa/",
+      "event_source": "WoMin Africa",
+      "decision": "BURN",
+      "amount_crbn": 1500000,
+      "final_score": -1.53,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action opposes systemic violence and discrimination, aligning with human rights and SDGs. | The statement by WoMin African Alliance represents a positive ethical action by amplifying awareness and solidarity against xenophobic violence. However, the underlying issue of violent Afrophobia and xenophobia in South Africa remains a severe ethical violation, causing sig",
+      "tx_hash": "4ZdtFiNKxs2YYWLiPtNey6cTBqrPptp3qD2c4e5oarg9pbwxUCJf71e1t6R7YFgynhk4h8M4WpjAKDMMJFPyWtvR",
+      "created_at": "2026-07-07T06:35:04.431259+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"WoMin African Alliance issues a public statement condemning xenophobia and Afrophobia in South Africa, demonstrating solidarity with African migrants and foreign nationals facing violence\", \"affected_sdgs\": [10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Violent xenophobia and Afrophobia targeting African migrants and foreign nationals in South Africa, causing harm and insecurity\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null
+    },
     {
       "id": 4496,
       "event_title": "Trump expected to tell Turkey he is ready to restore access to F-35 jets, NYT reports",
@@ -98990,14 +99012,14 @@
         "events": 7
       },
       {
+        "region": "Africa",
+        "burn_ratio": 0.5,
+        "events": 4
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.345,
         "events": 29
-      },
-      {
-        "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 3
       }
     ],
     "top_regions_destructive": [
@@ -99007,14 +99029,14 @@
         "events": 27
       },
       {
-        "region": "Africa",
-        "mint_ratio": 0.667,
-        "events": 3
-      },
-      {
         "region": "North America",
         "mint_ratio": 0.655,
         "events": 29
+      },
+      {
+        "region": "Africa",
+        "mint_ratio": 0.5,
+        "events": 4
       },
       {
         "region": "Latin America",
@@ -99061,7 +99083,7 @@
       {
         "date": "2026-07-07",
         "net_minted": 7490000,
-        "net_burned": 41000000
+        "net_burned": 42500000
       }
     ],
     "event_of_the_day": {
@@ -99077,9 +99099,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 41,
+        "positive": 42,
         "negative": 67,
         "event_ids_positive": [
+          4497,
           4489,
           4488,
           4487,
@@ -99193,9 +99216,10 @@
         ]
       },
       "UDHR": {
-        "positive": 12,
+        "positive": 13,
         "negative": 50,
         "event_ids_positive": [
+          4497,
           4487,
           4485,
           4480,
@@ -99405,14 +99429,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 94.4,
-      "mainstream_pct": 5.6,
-      "total_sources_used": 72,
-      "articles_processed": 109
+      "niche_pct": 94.5,
+      "mainstream_pct": 5.5,
+      "total_sources_used": 73,
+      "articles_processed": 110
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 109,
+      "total_events": 110,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -99629,14 +99653,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 41,
+      "total_burn": 42,
       "direct_action": {
-        "count": 39,
-        "pct": 95.1
+        "count": 40,
+        "pct": 95.2
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 4.9
+        "pct": 4.8
       },
       "untyped": {
         "count": 0,
@@ -99644,9 +99668,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1502,
+      "total_burn": 1503,
       "direct_action": {
-        "count": 1138,
+        "count": 1139,
         "pct": 75.8
       },
       "editorial_consciousness": {
@@ -99689,9 +99713,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 47,
+      "citizen": 48,
       "institutional": 62,
-      "citizen_ratio": 0.431,
+      "citizen_ratio": 0.436,
       "daily": [
         {
           "date": "2026-07-01",
@@ -99725,11 +99749,12 @@
         },
         {
           "date": "2026-07-07",
-          "citizen": 10,
+          "citizen": 11,
           "institutional": 9
         }
       ],
       "event_ids_citizen": [
+        4497,
         4496,
         4495,
         4491,
