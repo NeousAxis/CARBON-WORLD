@@ -28,9 +28,13 @@ Le fix était **codé le 18-06 mais jamais commité/poussé/déployé** — il p
 
 Le run cron à cheval sur le deploy (démarré avant le `git pull`) a ré-écrasé l'export **sans** `amount_index` → régénéré à la main. Les crons suivants l'incluent automatiquement (code déployé). Le screenshot du preview local sortait noir (bug de rendu thème sombre SSR) — vérif faite par DOM/`preview_eval`, plus fiable.
 
-### E. Dette restante (non traitée)
+### E. Graphe home refait — courbe de flux net quotidien (commit `2d32c6c`)
 
-`reconciler.py` slow-path flippe encore des **BURN unanimes → MINT ~3.8** (mémoire `reconciler-mint-collapse-bug`) — pousse dans le sens net-MINT donc pas urgent, mais reste à fixer à la source (élargir la fast-path consensus quand `decision_a == decision_b`).
+Cyril (en voyant le cumul re-pricé) : *"cette courbe n'est pas sérieuse"* — une droite quasi-monotone qui monte. Diagnostic : **cumuler depuis l'origine un flux net-MINT 95% des jours (71/75)** ⇒ mathématiquement une rampe, quel que soit le contenu. Le mauvais type de graphe. Première tentative (barres hebdo ±zéro) **rejetée** ("je veux une courbe comme l'ancienne"). Livré : `SupplyChart` réécrit en **ligne orange + aire remplie (aesthetic d'origine)** mais tracé sur le **net par jour** (`burn − mint`), symétrique autour de zéro → la courbe ondule, plonge sur les mauvais jours (creux −332M ~15 mai), et les **rares points verts** = jours net-BURN. Header = net 7j. `amount_index` (fallback `amount_crbn`).
+
+### F. Bug reconciler CORRIGÉ à la source (commit `2d32c6c`)
+
+`reconciler.py::reconcile` : la fast-path se déclenche désormais sur `decision_a == decision_b` **seul** (tout écart de score) — une direction unanime est gardée inconditionnellement, seuls les scores sont moyennés ; le LLM arbitre est réservé aux vrais **désaccords de direction**. Confiance haute seulement si l'écart ≤1.5 (`consensus`), sinon `consensus_wide_gap`. Testé : BURN unanime à écart 3.0 reste BURN (était flippé MINT avant). Fix de **control-flow**, pas de prompt → pas d'A/B requis. Devrait faire réapparaître de vraies journées vertes au fil des runs. Mémoire `reconciler-mint-collapse-bug` marquée **résolue**.
 
 ---
 
