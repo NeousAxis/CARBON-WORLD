@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-07T19:34:57.129083+00:00",
-  "total_events": 4550,
+  "generated_at": "2026-07-07T20:04:57.020125+00:00",
+  "total_events": 4552,
   "total_burned": 6995982665,
-  "total_minted": 6690064689,
+  "total_minted": 6698044689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4552,
+      "event_title": "‘Can you help us?’: US oil execs turn to Trump to topple Europe’s climate rules",
+      "event_url": "https://www.politico.com/news/2026/07/07/oil-executives-trump-europe-climate-00987782?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -4.98,
+      "confidence": 8,
+      "justification": "US oil execs lobbying to dismantle EU climate rules undermines global climate action and violates rights. | The lobbying effort by US oil executives to topple Europe's climate rules directly undermines global climate action (SDG 13) and violates principles of international cooperation and indigenous rights (UNDRIP). This action prioritizes short-term corporate interests over planetary and human rights, with severe long-term consequences for climate stability and global equity.",
+      "tx_hash": "3aN5KKBM8LHnXZWhpSKW8SeZLwptFd7X6kjAcSWouCvtgwY51HJUCskQhLKV415CBhYpz7fcsLUTe2ccv9LoezqM",
+      "created_at": "2026-07-07T20:04:55.601668+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US oil executives lobby the Trump administration to dismantle Europe's climate regulations, undermining international climate action and global emissions reduction efforts\", \"affected_sdgs\": [13], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP Article 29\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 4551,
+      "event_title": "US Revokes Iran Oil Waiver After Hormuz Attacks",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/us-revokes-iran-oil-waiver-after-hormuz-attacks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.96,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Revoking waiver punishes regime funding destabilization, despite risks of escalation. | The revocation of the oil waiver by the United States, while framed as a response to attacks in the Hormuz Strait, risks escalating regional tensions and undermining peace and stability. This action may have negative implications for international relations and regional security.",
+      "tx_hash": "27BtTkdfWCu6dPehcwobcvepttSY9JVMHUbE2FFmozKZkCGwnHHqWJdsYFvYquPBwZodzXkLKrwBkzoh1FvFSVSD",
+      "created_at": "2026-07-07T20:04:55.477002+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Revocation of the oil waiver could increase regional tensions and destabilize the geopolitical balance in the Middle East.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 667000
+    },
     {
       "id": 4550,
       "event_title": "New York now generates enough solar power for 1.3 million homes and businesses after reaching 8 gigawatts statewide",
@@ -104660,8 +104706,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 18,
-        "total_amount": 29050000
+        "count": 19,
+        "total_amount": 29550000
       },
       {
         "country": "France",
@@ -104729,8 +104775,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.417,
-        "events": 36
+        "burn_ratio": 0.405,
+        "events": 37
       },
       {
         "region": "Africa",
@@ -104751,8 +104797,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.583,
-        "events": 36
+        "mint_ratio": 0.595,
+        "events": 37
       },
       {
         "region": "Latin America",
@@ -104798,7 +104844,7 @@
       },
       {
         "date": "2026-07-07",
-        "net_minted": 64931400,
+        "net_minted": 72911400,
         "net_burned": 73891670
       }
     ],
@@ -104816,7 +104862,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 59,
-        "negative": 103,
+        "negative": 105,
         "event_ids_positive": [
           4550,
           4549,
@@ -104879,6 +104925,8 @@
           4391
         ],
         "event_ids_negative": [
+          4552,
+          4551,
           4548,
           4547,
           4546,
@@ -104986,7 +105034,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           4543,
           4532,
@@ -105009,6 +105057,7 @@
           4399
         ],
         "event_ids_negative": [
+          4552,
           4548,
           4547,
           4545,
@@ -105123,7 +105172,7 @@
       },
       "UNDRIP": {
         "positive": 18,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [
           4537,
           4528,
@@ -105145,6 +105194,7 @@
           4392
         ],
         "event_ids_negative": [
+          4552,
           4546,
           4541,
           4517,
@@ -105206,7 +105256,7 @@
       },
       "PB": {
         "positive": 36,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           4550,
           4549,
@@ -105246,6 +105296,7 @@
           4391
         ],
         "event_ids_negative": [
+          4552,
           4546,
           4541,
           4535,
@@ -105280,11 +105331,11 @@
       "niche_pct": 93.2,
       "mainstream_pct": 6.8,
       "total_sources_used": 88,
-      "articles_processed": 163
+      "articles_processed": 165
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 163,
+      "total_events": 165,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -105323,6 +105374,17 @@
         ]
       },
       {
+        "name": "EU",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          4552,
+          4448,
+          4443
+        ]
+      },
+      {
         "name": "UN",
         "count": 3,
         "burn_count": 0,
@@ -105331,16 +105393,6 @@
           4544,
           4498,
           4442
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          4448,
-          4443
         ]
       },
       {
@@ -105384,10 +105436,12 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 30,
+        "count": 32,
         "burn_count": 14,
-        "mint_count": 16,
+        "mint_count": 18,
         "event_ids": [
+          4552,
+          4551,
           4550,
           4546,
           4531,
@@ -105471,10 +105525,11 @@
       },
       {
         "name": "Finance",
-        "count": 10,
+        "count": 11,
         "burn_count": 3,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          4551,
           4548,
           4544,
           4542,
@@ -105571,24 +105626,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 104,
+      "total_mint": 106,
       "direct_action": {
-        "count": 95,
-        "pct": 91.3
+        "count": 97,
+        "pct": 91.5
       },
       "editorial_alarm": {
         "count": 8,
-        "pct": 7.7
+        "pct": 7.5
       },
       "untyped": {
         "count": 1,
-        "pct": 1.0
+        "pct": 0.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3022,
+      "total_mint": 3024,
       "direct_action": {
-        "count": 2341,
+        "count": 2343,
         "pct": 77.5
       },
       "editorial_alarm": {
@@ -105601,9 +105656,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 69,
-      "institutional": 94,
-      "citizen_ratio": 0.423,
+      "citizen": 70,
+      "institutional": 95,
+      "citizen_ratio": 0.424,
       "daily": [
         {
           "date": "2026-07-01",
@@ -105637,11 +105692,12 @@
         },
         {
           "date": "2026-07-07",
-          "citizen": 32,
-          "institutional": 41
+          "citizen": 33,
+          "institutional": 42
         }
       ],
       "event_ids_citizen": [
+        4552,
         4549,
         4546,
         4543,
@@ -105713,6 +105769,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4551,
         4550,
         4548,
         4547,
