@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-07-07T06:35:05.320276+00:00",
-  "total_events": 4497,
+  "generated_at": "2026-07-07T07:05:12.773258+00:00",
+  "total_events": 4498,
   "total_burned": 6964590995,
-  "total_minted": 6632623289,
+  "total_minted": 6633823289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4498,
+      "event_title": "Venezuela quake: UN continues to scale up as damage estimate reaches $37 billion",
+      "event_url": "https://news.un.org/feed/view/en/story/2026/07/1167879",
+      "event_source": "UN News Climate",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -1.5,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] UN's disaster response is a corrective action that mitigates harm, outweighing earthquake damage. | The UN's increased assistance is a positive step toward addressing the humanitarian crisis, aligning with SDG 1 and 11. However, the significant physical damage from the earthquakes undermines progress on climate resilience and sustainable cities.",
+      "tx_hash": "4MtfiSMmDw7AH8p63zMSU8fSVswF6ChEU1yGdbczpjtn1hZDCFSg8FoWGNg4uMqQAN4XE3gSu7eEY95yba8qijvK",
+      "created_at": "2026-07-07T07:05:11.729715+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Venezuela",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The UN and its partners are increasing assistance for people affected by the earthquakes in Venezuela.\", \"affected_sdgs\": [1, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The earthquakes have caused $37 billion in direct physical damage, impacting infrastructure and communities.\", \"affected_sdgs\": [11, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4497,
       "event_title": "WoMin African Alliance Statement on Xenophobia and Afrophobia in South Africa",
@@ -99008,8 +99030,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.571,
-        "events": 7
+        "burn_ratio": 0.5,
+        "events": 8
       },
       {
         "region": "Africa",
@@ -99034,14 +99056,14 @@
         "events": 29
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.5,
+        "events": 8
+      },
+      {
         "region": "Africa",
         "mint_ratio": 0.5,
         "events": 4
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.429,
-        "events": 7
       },
       {
         "region": "Asia",
@@ -99082,7 +99104,7 @@
       },
       {
         "date": "2026-07-07",
-        "net_minted": 7490000,
+        "net_minted": 8690000,
         "net_burned": 42500000
       }
     ],
@@ -99100,7 +99122,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 42,
-        "negative": 67,
+        "negative": 68,
         "event_ids_positive": [
           4497,
           4489,
@@ -99146,6 +99168,7 @@
           4391
         ],
         "event_ids_negative": [
+          4498,
           4496,
           4495,
           4494,
@@ -99375,7 +99398,7 @@
       },
       "PB": {
         "positive": 28,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           4489,
           4488,
@@ -99407,6 +99430,7 @@
           4391
         ],
         "event_ids_negative": [
+          4498,
           4495,
           4484,
           4482,
@@ -99429,14 +99453,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 94.5,
-      "mainstream_pct": 5.5,
-      "total_sources_used": 73,
-      "articles_processed": 110
+      "niche_pct": 94.6,
+      "mainstream_pct": 5.4,
+      "total_sources_used": 74,
+      "articles_processed": 111
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 110,
+      "total_events": 111,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -99467,6 +99491,16 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          4498,
+          4442
+        ]
+      },
+      {
         "name": "EU",
         "count": 2,
         "burn_count": 0,
@@ -99493,15 +99527,6 @@
         "mint_count": 1,
         "event_ids": [
           4451
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          4442
         ]
       },
       {
@@ -99683,24 +99708,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 68,
+      "total_mint": 69,
       "direct_action": {
-        "count": 62,
-        "pct": 91.2
+        "count": 63,
+        "pct": 91.3
       },
       "editorial_alarm": {
         "count": 5,
-        "pct": 7.4
+        "pct": 7.2
       },
       "untyped": {
         "count": 1,
-        "pct": 1.5
+        "pct": 1.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2986,
+      "total_mint": 2987,
       "direct_action": {
-        "count": 2308,
+        "count": 2309,
         "pct": 77.3
       },
       "editorial_alarm": {
@@ -99714,8 +99739,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 48,
-      "institutional": 62,
-      "citizen_ratio": 0.436,
+      "institutional": 63,
+      "citizen_ratio": 0.432,
       "daily": [
         {
           "date": "2026-07-01",
@@ -99750,7 +99775,7 @@
         {
           "date": "2026-07-07",
           "citizen": 11,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -99804,6 +99829,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4498,
         4494,
         4493,
         4492,
