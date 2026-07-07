@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-07-07T09:05:22.915710+00:00",
-  "total_events": 4507,
+  "generated_at": "2026-07-07T09:36:20.389993+00:00",
+  "total_events": 4508,
   "total_burned": 6973090995,
-  "total_minted": 6638373289,
+  "total_minted": 6638523289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4508,
+      "event_title": "Here, life expectancy rarely exceeds 65 years... In Lille, travelers demand climate shelters",
+      "event_url": "https://www.20minutes.fr/sante/4227929-20260707-duree-vie-depasse-rarement-65-ans-lille-gens-voyage-reclament-refuges-climatiques?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.5,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Community demand for climate shelters is positive, but systemic health risks outweigh the action's impact. | The citizen demand for climate shelters represents a positive ethical action by a community advocating for environmental justice and public health protections. However, the underlying health crisis in Lille's Hellemmes-Ronchin area highlights systemic failures in address",
+      "tx_hash": "6KPmC4PQ7p4rXJ5SrabGJmDgm4qhLhieWsm2U8RSrEvu1GLrD1PnWx4ySYtazpn6W18WKd9TMjzfWVhKuVqcJH6",
+      "created_at": "2026-07-07T09:36:19.227967+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Citizen demand for climate shelters in Lille to address health risks from pollution and heatwaves, reflecting community awareness and mobilization for environmental justice\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Persistent health risks in Lille's Hellemmes-Ronchin area due to pollution and climate vulnerability, with life expectancy below 65 years\", \"affected_sdgs\": [3, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4507,
       "event_title": "New national standards for China’s PV sector set to phase out sub-630W modules and conventional polysilicon products",
@@ -99169,8 +99191,8 @@
       },
       {
         "country": "France",
-        "count": 7,
-        "total_amount": 5050000
+        "count": 8,
+        "total_amount": 5200000
       },
       {
         "country": "Switzerland",
@@ -99245,8 +99267,8 @@
     "top_regions_destructive": [
       {
         "region": "Europe",
-        "mint_ratio": 0.8,
-        "events": 30
+        "mint_ratio": 0.806,
+        "events": 31
       },
       {
         "region": "Africa",
@@ -99302,7 +99324,7 @@
       },
       {
         "date": "2026-07-07",
-        "net_minted": 13240000,
+        "net_minted": 13390000,
         "net_burned": 51000000
       }
     ],
@@ -99320,7 +99342,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 46,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           4507,
           4506,
@@ -99370,6 +99392,7 @@
           4391
         ],
         "event_ids_negative": [
+          4508,
           4505,
           4504,
           4503,
@@ -99447,7 +99470,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 54,
+        "negative": 55,
         "event_ids_positive": [
           4499,
           4497,
@@ -99465,6 +99488,7 @@
           4399
         ],
         "event_ids_negative": [
+          4508,
           4504,
           4503,
           4502,
@@ -99676,11 +99700,11 @@
       "niche_pct": 94.9,
       "mainstream_pct": 5.1,
       "total_sources_used": 78,
-      "articles_processed": 120
+      "articles_processed": 121
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 120,
+      "total_events": 121,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -99934,24 +99958,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 74,
+      "total_mint": 75,
       "direct_action": {
-        "count": 68,
-        "pct": 91.9
+        "count": 69,
+        "pct": 92.0
       },
       "editorial_alarm": {
         "count": 5,
-        "pct": 6.8
+        "pct": 6.7
       },
       "untyped": {
         "count": 1,
-        "pct": 1.4
+        "pct": 1.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2992,
+      "total_mint": 2993,
       "direct_action": {
-        "count": 2314,
+        "count": 2315,
         "pct": 77.3
       },
       "editorial_alarm": {
@@ -99964,9 +99988,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 52,
+      "citizen": 53,
       "institutional": 68,
-      "citizen_ratio": 0.433,
+      "citizen_ratio": 0.438,
       "daily": [
         {
           "date": "2026-07-01",
@@ -100000,11 +100024,12 @@
         },
         {
           "date": "2026-07-07",
-          "citizen": 15,
+          "citizen": 16,
           "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        4508,
         4506,
         4502,
         4500,
