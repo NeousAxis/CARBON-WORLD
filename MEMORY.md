@@ -4,6 +4,36 @@
 
 ---
 
+## 🪙 2026-07-07 — Artefact net-supply corrigé (montants calibrés) + affichage re-pricé
+
+Cyril, en regardant le dashboard : *"C'EST IMPOSSIBLE qu'avec les événements actuels dans le monde on puisse continuer à BRÛLER des tokens comme ça !!!"*. Son intuition détectait un vrai artefact déjà quantifié le 18-06 (mémoire `scale-inflation-artifact`).
+
+### A. Le diagnostic (confirmé sur la DB live, 4524 events)
+
+- `amount_cbwd` est choisi **à 100% par le LLM**. `scorer.py` le lisait tel quel (clamp positif), sans vérif d'échelle. Les constantes `SCALE_LOCAL/…/INTERNATIONAL` existaient mais **en code mort**.
+- Conséquence : **86% du volume BURN sur deux ronds (5M/7M)**, BURN sur-tokenisé **×6,4** par point de magnitude vs MINT (alors que le LLM juge les dommages MINT *plus* sévères). Une baleine sauvée (impact local) pricée comme une catastrophe mondiale.
+- **Sign flip** : par nombre d'events le MINT gagnait déjà, mais chaque BURN pesait ~5-6× un MINT → faux **+337M net-BURN** affiché. Corrigé (tokens ∝ magnitude LLM, symétrique) → **−4,5 Md net-MINT**. BURN 6992M→1256M (÷5,6), MINT 6655M→5793M (~inchangé, déjà ~juste).
+
+### B. Le vrai échec : un correctif livré 3 semaines en retard
+
+Le fix était **codé le 18-06 mais jamais commité/poussé/déployé** — il pourrissait dans le working tree du Mac. Dernier commit du repo = 23-06. Faute de suivi (assumée). Livré aujourd'hui.
+
+### C. Ce qui a été livré et vérifié en prod
+
+1. **On-chain** (commit `f386d0f`) : `scorer._compute_magnitude_amount` — montant déterministe piloté par `_dominant_magnitude` (aspect qui justifie la décision), bandes `_band_for_event` (magnitude + `event_scope` capé à +1 tier), **même fonction BURN & MINT**. Analyst prompt : nouveau **STEP 5 event_scope** (reach ≠ significance, ex. "1 animal sauvé = local même si médiatisé mondialement"). Gaté par `AMOUNT_SCALE_MODE` (`config.py`) : `llm` (défaut inerte) / `shadow` (log) / `magnitude` (applique). VPS `.env` → flippé `shadow` puis **`magnitude`**. Les futurs events sont pricés correctement on-chain.
+2. **Affichage** (commit `d77f1e9`) : `exporter._attach_index_amount` ajoute un `amount_index` calibré (display-only) à chaque event ; `SupplyChart` + `BreakdownDonut` plottent `amount_index` (fallback `amount_crbn`). **`amount_crbn` intact** → pages Transactions/détail (liens Solana Explorer) + **API publique `/api/v1/events`** (lit la DB directement) gardent la vérité on-chain. Donut relabel `(on-chain)`→`(calibrated)`.
+3. **Vérif live** `carbon-world.xyz` : `/api/stats` sert `amount_index` sur 4528/4528 events, net **−4,53 Md net-MINT**, donut **Minted ~82% / Burned ~18%**, labels "calibrated" rendus.
+
+### D. Gotcha de déploiement
+
+Le run cron à cheval sur le deploy (démarré avant le `git pull`) a ré-écrasé l'export **sans** `amount_index` → régénéré à la main. Les crons suivants l'incluent automatiquement (code déployé). Le screenshot du preview local sortait noir (bug de rendu thème sombre SSR) — vérif faite par DOM/`preview_eval`, plus fiable.
+
+### E. Dette restante (non traitée)
+
+`reconciler.py` slow-path flippe encore des **BURN unanimes → MINT ~3.8** (mémoire `reconciler-mint-collapse-bug`) — pousse dans le sens net-MINT donc pas urgent, mais reste à fixer à la source (élargir la fast-path consensus quand `decision_a == decision_b`).
+
+---
+
 ## 🔧 2026-05-25 — /review : items qui ne disparaissent pas après décision
 
 Cyril : "les 6 derniers articles ne veulent pas s'effacer après avoir cliqué ma décision".
