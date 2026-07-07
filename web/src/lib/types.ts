@@ -8,6 +8,13 @@ export interface CarbonEvent {
   event_source: string;
   decision: "BURN" | "MINT" | "NEUTRAL";
   amount_crbn: number;
+  /**
+   * Display-only calibrated amount (magnitude-driven, symmetric BURN/MINT).
+   * Used by the dashboard headline so the net signal is not distorted by the
+   * ~6.4x BURN over-tokenisation baked into the raw on-chain amount_crbn.
+   * Falls back to amount_crbn when absent (older exports).
+   */
+  amount_index?: number;
   final_score: number;
   confidence: number;
   justification: string;

@@ -55,25 +55,29 @@ function DonutArc({
   return <path d={d} fill={color} />;
 }
 
+// Calibrated display amount: magnitude-driven, symmetric BURN/MINT. Falls back
+// to the raw on-chain amount for older exports that lack amount_index.
+const idxAmount = (e: CarbonEvent) => e.amount_index ?? e.amount_crbn;
+
 export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
   const burnedOnChain = events
     .filter((e) => e.decision === "BURN" && e.tx_hash)
-    .reduce((s, e) => s + e.amount_crbn, 0);
+    .reduce((s, e) => s + idxAmount(e), 0);
   const burnedPending = events
     .filter((e) => e.decision === "BURN" && !e.tx_hash)
-    .reduce((s, e) => s + e.amount_crbn, 0);
+    .reduce((s, e) => s + idxAmount(e), 0);
   const mintedOnChain = events
     .filter((e) => e.decision === "MINT" && e.tx_hash)
-    .reduce((s, e) => s + e.amount_crbn, 0);
+    .reduce((s, e) => s + idxAmount(e), 0);
   const mintedPending = events
     .filter((e) => e.decision === "MINT" && !e.tx_hash)
-    .reduce((s, e) => s + e.amount_crbn, 0);
+    .reduce((s, e) => s + idxAmount(e), 0);
 
   const segments: Segment[] = [];
 
   if (burnedOnChain > 0)
     segments.push({
-      label: "Burned (on-chain)",
+      label: "Burned (calibrated)",
       value: burnedOnChain,
       color: "#34D399",
       textColor: "#34D399",
@@ -87,7 +91,7 @@ export function BreakdownDonut({ events }: { events: CarbonEvent[] }) {
     });
   if (mintedOnChain > 0)
     segments.push({
-      label: "Minted (on-chain)",
+      label: "Minted (calibrated)",
       value: mintedOnChain,
       color: "#FF5C33",
       textColor: "#FF5C33",

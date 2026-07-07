@@ -49,13 +49,17 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
   }
 
   // Build cumulative series
+  // Calibrated display amount (magnitude-driven, symmetric BURN/MINT). Falls
+  // back to the raw on-chain amount for older exports lacking amount_index.
+  const idxAmount = (e: CarbonEvent) => e.amount_index ?? e.amount_crbn;
+
   let cumulative = 0;
   const rawPoints: { event: CarbonEvent; cumulative: number }[] = sorted.map(
     (event) => {
       if (event.decision === "MINT") {
-        cumulative += event.amount_crbn;
+        cumulative += idxAmount(event);
       } else if (event.decision === "BURN") {
-        cumulative -= event.amount_crbn;
+        cumulative -= idxAmount(event);
       }
       return { event, cumulative };
     }
@@ -311,7 +315,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 textAnchor="end"
                 fontFamily="'JetBrains Mono', ui-monospace, monospace"
               >
-                {formatCompact(d.event.decision === "MINT" ? d.event.amount_crbn : -d.event.amount_crbn)} CBWD
+                {formatCompact(d.event.decision === "MINT" ? idxAmount(d.event) : -idxAmount(d.event))} CBWD
               </text>
               {/* Title (truncated) */}
               <text

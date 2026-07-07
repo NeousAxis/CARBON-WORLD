@@ -15,6 +15,7 @@ import shutil
 
 import config
 from db import count_pending_reviews, get_pending_reviews
+from agents.scorer import _compute_magnitude_amount
 
 logger = logging.getLogger("exporter")
 
@@ -43,6 +44,7 @@ def export_events() -> Path:
             "SELECT * FROM carbon_events ORDER BY created_at DESC"
         ).fetchall()
         events = [dict(row) for row in rows]
+        _attach_index_amount(events)
         aggregates = _compute_aggregates(conn, events)
     finally:
         conn.close()
@@ -60,6 +62,37 @@ def export_events() -> Path:
     _export_review_queue()
 
     return EXPORT_PATH
+
+
+# ---------------------------------------------------------------------------
+# Calibrated index amount (display only)
+# ---------------------------------------------------------------------------
+
+def _attach_index_amount(events: list[dict]) -> None:
+    """
+    Add a display-only `amount_index` to each event: the calibrated CBWD amount
+    derived deterministically from the LLM's own impact magnitude, using the SAME
+    function for BURN and MINT (worker/agents/scorer._compute_magnitude_amount).
+
+    This is what the dashboard headline (SupplyChart, BreakdownDonut) plots so the
+    net signal reflects reality instead of the ~6.4x BURN over-tokenisation that
+    inflates the raw on-chain `amount_crbn`. `amount_crbn` is left untouched — it
+    stays the true on-chain figure for the transaction / event-detail pages and
+    the public API. See memory/scale-inflation-artifact.md.
+    """
+    for e in events:
+        try:
+            analysis = {
+                "decision": e.get("decision"),
+                "confidence": e.get("confidence"),
+                "event_scope": e.get("event_scope"),
+                "positive_aspects": json.loads(e.get("positive_aspects_json") or "[]"),
+                "negative_aspects": json.loads(e.get("negative_aspects_json") or "[]"),
+            }
+            e["amount_index"] = _compute_magnitude_amount(analysis)
+        except Exception:
+            # Never let a display re-price break the export — fall back to raw.
+            e["amount_index"] = int(e.get("amount_crbn") or 0)
 
 
 # ---------------------------------------------------------------------------
