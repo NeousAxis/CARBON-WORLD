@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-07-07T04:35:05.553339+00:00",
-  "total_events": 4495,
+  "generated_at": "2026-07-07T05:05:59.829579+00:00",
+  "total_events": 4496,
   "total_burned": 6963090995,
-  "total_minted": 6632473289,
+  "total_minted": 6632623289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4496,
+      "event_title": "Trump expected to tell Turkey he is ready to restore access to F-35 jets, NYT reports",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/trump-expected-tell-turkey-he-ready-restore-access-f-35-jets-nyt-reports",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.77,
+      "confidence": 7,
+      "justification": "Restoring F-35 access to Turkey despite its authoritarian governance undermines human rights and democratic norms. | The potential restoration of Turkey's F-35 access could strengthen NATO defense cooperation, aligning with SDG 16 (Peace & Justice). However, this action risks legitimizing Turkey's authoritarian governance and human rights abuses, undermining core UDHR principles. The net ethical position is mixed, with security benefits weighed against democratic and human rights concerns.",
+      "tx_hash": "5p4ZNwv86MyVYNdAs8BGYZYTPSWoSRLzb8cA5S9JxgbNRp3zAstkJ7F5sBdM3SHFbCg6eyUbyjny1brzMSLb8Tqb",
+      "created_at": "2026-07-07T05:05:58.648360+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential restoration of Turkey's access to the F-35 stealth fighter program, which could enhance NATO defense capabilities and regional security\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reinstatement of military cooperation with Turkey despite concerns over human rights violations and democratic backsliding under Erdogan's leadership\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of legitimizing Turkey's authoritarian policies by normalizing high-level military cooperation\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4495,
       "event_title": "Ecuador: indigenous Waorani people call assembly to document risks of new oil auction in block 22",
@@ -98900,8 +98922,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 15,
-        "total_amount": 28425000
+        "count": 16,
+        "total_amount": 28575000
       },
       {
         "country": "France",
@@ -98969,8 +98991,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.357,
-        "events": 28
+        "burn_ratio": 0.345,
+        "events": 29
       },
       {
         "region": "Africa",
@@ -98991,8 +99013,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.643,
-        "events": 28
+        "mint_ratio": 0.655,
+        "events": 29
       },
       {
         "region": "Latin America",
@@ -99038,7 +99060,7 @@
       },
       {
         "date": "2026-07-07",
-        "net_minted": 7340000,
+        "net_minted": 7490000,
         "net_burned": 41000000
       }
     ],
@@ -99056,7 +99078,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 41,
-        "negative": 66,
+        "negative": 67,
         "event_ids_positive": [
           4489,
           4488,
@@ -99101,6 +99123,7 @@
           4391
         ],
         "event_ids_negative": [
+          4496,
           4495,
           4494,
           4493,
@@ -99171,7 +99194,7 @@
       },
       "UDHR": {
         "positive": 12,
-        "negative": 49,
+        "negative": 50,
         "event_ids_positive": [
           4487,
           4485,
@@ -99187,6 +99210,7 @@
           4399
         ],
         "event_ids_negative": [
+          4496,
           4494,
           4492,
           4491,
@@ -99381,18 +99405,31 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.8,
-      "mainstream_pct": 4.2,
+      "niche_pct": 94.4,
+      "mainstream_pct": 5.6,
       "total_sources_used": 72,
-      "articles_processed": 108
+      "articles_processed": 109
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 108,
+      "total_events": 109,
       "pct": 0.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "NATO",
+        "count": 5,
+        "burn_count": 0,
+        "mint_count": 5,
+        "event_ids": [
+          4496,
+          4461,
+          4459,
+          4458,
+          4456
+        ]
+      },
       {
         "name": "WHO",
         "count": 4,
@@ -99403,18 +99440,6 @@
           4438,
           4403,
           4395
-        ]
-      },
-      {
-        "name": "NATO",
-        "count": 4,
-        "burn_count": 0,
-        "mint_count": 4,
-        "event_ids": [
-          4461,
-          4459,
-          4458,
-          4456
         ]
       },
       {
@@ -99634,14 +99659,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 67,
+      "total_mint": 68,
       "direct_action": {
-        "count": 61,
-        "pct": 91.0
+        "count": 62,
+        "pct": 91.2
       },
       "editorial_alarm": {
         "count": 5,
-        "pct": 7.5
+        "pct": 7.4
       },
       "untyped": {
         "count": 1,
@@ -99649,9 +99674,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2985,
+      "total_mint": 2986,
       "direct_action": {
-        "count": 2307,
+        "count": 2308,
         "pct": 77.3
       },
       "editorial_alarm": {
@@ -99664,9 +99689,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 46,
+      "citizen": 47,
       "institutional": 62,
-      "citizen_ratio": 0.426,
+      "citizen_ratio": 0.431,
       "daily": [
         {
           "date": "2026-07-01",
@@ -99700,11 +99725,12 @@
         },
         {
           "date": "2026-07-07",
-          "citizen": 9,
+          "citizen": 10,
           "institutional": 9
         }
       ],
       "event_ids_citizen": [
+        4496,
         4495,
         4491,
         4489,
