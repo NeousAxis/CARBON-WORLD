@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-07T17:04:55.812905+00:00",
-  "total_events": 4537,
+  "generated_at": "2026-07-07T17:35:32.805542+00:00",
+  "total_events": 4539,
   "total_burned": 6995787065,
-  "total_minted": 6668492689,
+  "total_minted": 6675010689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4539,
+      "event_title": "Five NATO Members Projected to Spend Over 3.5% of GDP on Core Defense in 2026",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/five-nato-members-seen-spend-over-35-gdp-core-defence-year-alliance-estimates",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.13,
+      "confidence": 8,
+      "justification": "Increased military spending undermines sustainable development priorities despite NATO's institutional goals. | While the commitment to increased defense spending aligns with NATO's institutional goals and may enhance regional security, the diversion of resources from critical social and environmental priorities raises significant ethical concerns. The net impact is mixed, with short-term institutional gains potentially outweighing long-term societal and ecological costs.",
+      "tx_hash": "4Hn67TzmvrmJBmiNHp8eGEiB3jBUkfsuCh1eJyQKzkyDGzys5DTKapcWrKhFJz1keKQWHYc9rAFTsu3nrAMLxhiH",
+      "created_at": "2026-07-07T17:35:31.153759+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"NATO members committing to increase defense spending to 3.5% of GDP by 2035, with five members projected to meet this target as early as 2026\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increased military spending diverts resources from social, environmental, and development priorities, potentially undermining SDG 1 (No Poverty), SDG 3 (Good Health), SDG 4 (Education), SDG 13 (Climate Action), and SDG 16 (Peace, Justice, and Strong Institutions)\", \"affected_sdgs\": [1, 3, 4, 13, 16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Militarization and arms buildup may escalate geopolitical tensions, increasing the risk of conflict and violating the spirit of international cooperation under SDG 16\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 4538,
+      "event_title": "As Ebola resurfaces in DR Congo, so do critical questions about how to respond",
+      "event_url": "https://www.thenewhumanitarian.org/news-feature/2026/05/22/ebola-resurfaces-dr-congo-response",
+      "event_source": "The New Humanitarian",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -0.22,
+      "confidence": 7,
+      "justification": "Ebola resurgence highlights public health risks and systemic weaknesses. | The resurgence of Ebola in DR Congo raises both concerns about public health risks and opportunities for improving response strategies. While the disease threatens health systems and vulnerable populations, it also prompts critical discussions on strengthening public health infrastructure and equity in healthcare access.",
+      "tx_hash": "3HPJohyzasEE1v3EnMuUCSGT1MMweh6q9zEiZk3n2bGv59ogrxNbzRykZJBveuNF4cu3PfzMut8tGaNBh5uAUw68",
+      "created_at": "2026-07-07T17:35:31.028591+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The resurgence of Ebola in DR Congo prompts critical discussions on improving response strategies and public health infrastructure.\", \"affected_sdgs\": [3, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The resurgence of Ebola in DR Congo poses a public health risk and highlights systemic weaknesses in disease prevention and response.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 478000
+    },
     {
       "id": 4537,
       "event_title": "Cancellation of construction license paves way for demolition of El Algarrobico hotel",
@@ -104499,7 +104545,7 @@
       },
       {
         "date": "2026-07-07",
-        "net_minted": 43359400,
+        "net_minted": 49877400,
         "net_burned": 73696070
       }
     ],
@@ -104517,7 +104563,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 56,
-        "negative": 93,
+        "negative": 95,
         "event_ids_positive": [
           4537,
           4532,
@@ -104577,6 +104623,8 @@
           4391
         ],
         "event_ids_negative": [
+          4539,
+          4538,
           4536,
           4535,
           4534,
@@ -104783,12 +104831,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 7,
+        "negative": 8,
         "event_ids_positive": [
           4532,
           4465
         ],
         "event_ids_negative": [
+          4538,
           4522,
           4503,
           4501,
@@ -104945,24 +104994,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 94.1,
-      "mainstream_pct": 5.9,
-      "total_sources_used": 85,
-      "articles_processed": 150
+      "niche_pct": 94.2,
+      "mainstream_pct": 5.8,
+      "total_sources_used": 86,
+      "articles_processed": 152
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 150,
+      "total_events": 152,
       "pct": 0.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "NATO",
-        "count": 10,
+        "count": 11,
         "burn_count": 0,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          4539,
           4534,
           4523,
           4522,
@@ -105084,10 +105134,11 @@
       },
       {
         "name": "Construction",
-        "count": 17,
+        "count": 18,
         "burn_count": 10,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          4538,
           4537,
           4531,
           4520,
@@ -105109,10 +105160,11 @@
       },
       {
         "name": "Defense",
-        "count": 12,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          4539,
           4529,
           4523,
           4522,
@@ -105224,28 +105276,28 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 94,
+      "total_mint": 96,
       "direct_action": {
-        "count": 86,
-        "pct": 91.5
+        "count": 87,
+        "pct": 90.6
       },
       "editorial_alarm": {
-        "count": 7,
-        "pct": 7.4
+        "count": 8,
+        "pct": 8.3
       },
       "untyped": {
         "count": 1,
-        "pct": 1.1
+        "pct": 1.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3012,
+      "total_mint": 3014,
       "direct_action": {
-        "count": 2332,
+        "count": 2333,
         "pct": 77.4
       },
       "editorial_alarm": {
-        "count": 184,
+        "count": 185,
         "pct": 6.1
       },
       "untyped": {
@@ -105254,9 +105306,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 64,
-      "institutional": 86,
-      "citizen_ratio": 0.427,
+      "citizen": 65,
+      "institutional": 87,
+      "citizen_ratio": 0.428,
       "daily": [
         {
           "date": "2026-07-01",
@@ -105290,11 +105342,12 @@
         },
         {
           "date": "2026-07-07",
-          "citizen": 27,
-          "institutional": 33
+          "citizen": 28,
+          "institutional": 34
         }
       ],
       "event_ids_citizen": [
+        4538,
         4537,
         4536,
         4534,
@@ -105361,6 +105414,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4539,
         4535,
         4532,
         4531,
