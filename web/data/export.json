@@ -1,10 +1,32 @@
 {
-  "generated_at": "2026-07-07T01:05:09.584789+00:00",
-  "total_events": 4483,
+  "generated_at": "2026-07-07T01:34:47.020443+00:00",
+  "total_events": 4484,
   "total_burned": 6932090995,
-  "total_minted": 6627648289,
+  "total_minted": 6629148289,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4484,
+      "event_title": "Forest fire in France forces evacuation of more than 10,000 people",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/07/incendio-florestal-na-franca-forca-evacuacao-de-mais-de-10-mil-pessoas.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -1.45,
+      "confidence": 7,
+      "justification": "Forest fire causes significant environmental harm despite evacuation efforts. | The evacuation of over 10,000 people is a positive action that protects human life and health, aligning with SDG 3 and UDHR. However, the forest fire itself and the expected intensification due to strong winds represent significant environmental harm, undermining SDG 15 and planetary boundaries.",
+      "tx_hash": "mQyJgNXKBaZrBN1XrRTk2ydsZiUrM2WEoCXtN8xRiRS5T5C4wbWyQXUYjny2dVt8z5drq9PYzNJttejANYGqBcV",
+      "created_at": "2026-07-07T01:34:46.017280+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Evacuation of over 10,000 people reduces immediate risk to human life and health.\", \"affected_sdgs\": [3, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Forest fire causes destruction of natural ecosystems and biodiversity loss.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Strong winds are expected to intensify the fire, increasing the risk to communities and environment.\", \"affected_sdgs\": [11, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action"
+    },
     {
       "id": 4483,
       "event_title": "Namibia: VIP Protection Chief Removed After State House Security Breach",
@@ -1885,7 +1907,7 @@
       "final_score": -3.88,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.934) from event #4390",
-      "tx_hash": null,
+      "tx_hash": "5PQaXZLxPj7TEtNdrdm6T2ZeCTQHmTbcSGSAru9PEMscoKHoHYQm9LiubY58GWzjgJrYN86xbaNtjJ1qdTGuBTHA",
       "created_at": "2026-07-06T11:03:31.364417+00:00",
       "embedding": null,
       "reused_from_event_id": 4390,
@@ -98640,14 +98662,14 @@
         "total_amount": 28425000
       },
       {
+        "country": "France",
+        "count": 4,
+        "total_amount": 4000000
+      },
+      {
         "country": "Switzerland",
         "count": 4,
         "total_amount": 2300000
-      },
-      {
-        "country": "France",
-        "count": 3,
-        "total_amount": 2500000
       },
       {
         "country": "State of Palestine",
@@ -98710,15 +98732,15 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.217,
-        "events": 23
+        "burn_ratio": 0.208,
+        "events": 24
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
-        "mint_ratio": 0.783,
-        "events": 23
+        "mint_ratio": 0.792,
+        "events": 24
       },
       {
         "region": "North America",
@@ -98769,12 +98791,12 @@
       },
       {
         "date": "2026-07-06",
-        "net_minted": 88625000,
+        "net_minted": 89625000,
         "net_burned": 160410000
       },
       {
         "date": "2026-07-07",
-        "net_minted": 2515000,
+        "net_minted": 4015000,
         "net_burned": 10000000
       }
     ],
@@ -98792,7 +98814,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 36,
-        "negative": 59,
+        "negative": 60,
         "event_ids_positive": [
           4480,
           4479,
@@ -98832,6 +98854,7 @@
           4391
         ],
         "event_ids_negative": [
+          4484,
           4483,
           4482,
           4481,
@@ -98895,7 +98918,7 @@
       },
       "UDHR": {
         "positive": 10,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           4480,
           4465,
@@ -98909,6 +98932,7 @@
           4399
         ],
         "event_ids_negative": [
+          4484,
           4483,
           4482,
           4481,
@@ -99041,7 +99065,7 @@
       },
       "PB": {
         "positive": 25,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [
           4480,
           4470,
@@ -99070,6 +99094,7 @@
           4391
         ],
         "event_ids_negative": [
+          4484,
           4482,
           4476,
           4474,
@@ -99092,13 +99117,13 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 67,
-      "articles_processed": 95
+      "total_sources_used": 68,
+      "articles_processed": 97
     },
     "cache_hit_rate_7d": {
-      "hits": 0,
-      "total_events": 95,
-      "pct": 0.0
+      "hits": 1,
+      "total_events": 97,
+      "pct": 1.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -99258,6 +99283,19 @@
         ]
       },
       {
+        "name": "Forestry",
+        "count": 5,
+        "burn_count": 3,
+        "mint_count": 2,
+        "event_ids": [
+          4484,
+          4479,
+          4474,
+          4402,
+          4401
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 5,
         "burn_count": 5,
@@ -99268,18 +99306,6 @@
           4426,
           4401,
           4391
-        ]
-      },
-      {
-        "name": "Forestry",
-        "count": 4,
-        "burn_count": 3,
-        "mint_count": 1,
-        "event_ids": [
-          4479,
-          4474,
-          4402,
-          4401
         ]
       },
       {
@@ -99336,24 +99362,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 59,
+      "total_mint": 61,
       "direct_action": {
-        "count": 55,
-        "pct": 93.2
+        "count": 56,
+        "pct": 91.8
       },
       "editorial_alarm": {
         "count": 4,
-        "pct": 6.8
+        "pct": 6.6
       },
       "untyped": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 1.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 2977,
+      "total_mint": 2979,
       "direct_action": {
-        "count": 2301,
+        "count": 2302,
         "pct": 77.3
       },
       "editorial_alarm": {
@@ -99361,14 +99387,14 @@
         "pct": 6.1
       },
       "untyped": {
-        "count": 495,
+        "count": 496,
         "pct": 16.6
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 41,
-      "institutional": 54,
-      "citizen_ratio": 0.432,
+      "institutional": 56,
+      "citizen_ratio": 0.423,
       "daily": [
         {
           "date": "2026-07-01",
@@ -99398,12 +99424,12 @@
         {
           "date": "2026-07-06",
           "citizen": 37,
-          "institutional": 52
+          "institutional": 53
         },
         {
           "date": "2026-07-07",
           "citizen": 4,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -99450,6 +99476,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4484,
         4481,
         4480,
         4477,
@@ -99496,6 +99523,7 @@
         4406,
         4403,
         4399,
+        4398,
         4397,
         4396,
         4395,
