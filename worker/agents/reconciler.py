@@ -2,8 +2,12 @@
 reconciler.py — Agent: merges Analyst A and Analyst B verdicts into ONE final decision.
 
 Logic:
-- Both agree on decision AND scores within +/- 1.5 -> use average, high confidence
-- They disagree on decision -> call reconciler LLM to arbitrate, flag _disagreement=true
+- Both agree on DIRECTION (same decision) -> average, keep the direction, NEVER
+  call the LLM. A unanimous BURN/MINT is the strongest signal we have; routing it
+  to the arbiter caused systematic BURN->MINT collapse (see
+  memory/reconciler-mint-collapse-bug). Confidence is high only when the scores
+  are also within +/- 1.5; a wider gap keeps the honest averaged confidence.
+- They disagree on DIRECTION -> call reconciler LLM to arbitrate, flag _disagreement=true
 """
 
 import json
@@ -50,19 +54,28 @@ def reconcile(event_pair: dict) -> Optional[dict]:
     score_a = float(analyst_a.get("final_score", 0) or 0)
     score_b = float(analyst_b.get("final_score", 0) or 0)
 
-    # --- Fast path: strong consensus ---
-    if decision_a == decision_b and abs(score_a - score_b) <= 1.5:
+    # --- Fast path: directional consensus -> never let the LLM flip it ---
+    # When A and B agree on the direction (both BURN or both MINT), we keep that
+    # direction unconditionally and just average the scores. Sending unanimous
+    # verdicts to the LLM arbiter systematically collapsed BURN -> MINT ~3.8
+    # (memory/reconciler-mint-collapse-bug). The arbiter is reserved for genuine
+    # DIRECTION disagreements below.
+    if decision_a == decision_b:
+        tight = abs(score_a - score_b) <= 1.5
         avg_score = round((score_a + score_b) / 2, 2)
         avg_conf = int(round((int(analyst_a.get("confidence", 5)) + int(analyst_b.get("confidence", 5))) / 2))
         # Prefer Analyst A's detailed analysis as the canonical base (keeps scorer happy)
         merged = dict(analyst_a)
         merged["decision"] = decision_a
         merged["final_score"] = avg_score
-        merged["confidence"] = max(avg_conf, 7)  # high conf on consensus
+        # High confidence only on a tight consensus; a wide score gap means the
+        # analysts agree on direction but not intensity -> keep the honest avg.
+        merged["confidence"] = max(avg_conf, 7) if tight else avg_conf
         merged["justification"] = (analyst_a.get("justification") or analyst_b.get("justification", ""))[:300]
+        reason = "consensus" if tight else "consensus_wide_gap"
         logger.info(
-            "Reconcile CONSENSUS '%s': %s score=%.2f (A=%.2f, B=%.2f)",
-            title, decision_a, avg_score, score_a, score_b,
+            "Reconcile CONSENSUS%s '%s': %s score=%.2f (A=%.2f, B=%.2f)",
+            "" if tight else "(wide-gap)", title, decision_a, avg_score, score_a, score_b,
         )
         return {
             "article": article,
@@ -70,10 +83,10 @@ def reconcile(event_pair: dict) -> Optional[dict]:
             "_analyst_a": analyst_a,
             "_analyst_b": analyst_b,
             "_disagreement": False,
-            "_reconciler_reason": "consensus",
+            "_reconciler_reason": reason,
         }
 
-    # --- Slow path: disagreement -> LLM arbitration ---
+    # --- Slow path: DIRECTION disagreement -> LLM arbitration ---
     # Sanitize article fields before embedding in the reconciler payload to
     # prevent prompt injection from malicious RSS content reaching the LLM.
     safe_description = _sanitize_field(

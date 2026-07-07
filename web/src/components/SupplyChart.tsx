@@ -3,11 +3,16 @@
 import { useState } from "react";
 import type { CarbonEvent } from "@/lib/types";
 
-interface ChartPoint {
-  x: number;
-  y: number;
-  event: CarbonEvent;
-  cumulative: number;
+// Calibrated display amount (magnitude-driven, symmetric BURN/MINT). Falls back
+// to the raw on-chain amount for older exports lacking amount_index.
+const idxAmount = (e: CarbonEvent) => e.amount_index ?? e.amount_crbn;
+
+interface DayPoint {
+  dayMs: number;
+  net: number; // burn - mint (>0 = net-burn = world improving)
+  burn: number;
+  mint: number;
+  count: number;
 }
 
 function formatCompact(raw: number): string {
@@ -16,23 +21,22 @@ function formatCompact(raw: number): string {
   const m = abs / 1_000_000;
   if (m >= 1) return `${sign}${m.toFixed(1).replace(/\.0$/, "")}M`;
   const k = abs / 1_000;
-  return `${sign}${k.toFixed(0)}K`;
+  if (k >= 1) return `${sign}${k.toFixed(0)}K`;
+  return `${sign}${abs.toFixed(0)}`;
 }
 
-function formatShortDate(iso: string): string {
-  const d = new Date(iso);
-  return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+function formatShortDate(ms: number): string {
+  return new Date(ms).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
 export function SupplyChart({ events }: { events: CarbonEvent[] }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  // Sort events chronologically and compute cumulative supply
-  const sorted = [...events].sort(
-    (a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+  const decided = events.filter(
+    (e) => (e.decision === "BURN" || e.decision === "MINT") && e.created_at
   );
 
-  if (sorted.length === 0) {
+  if (decided.length === 0) {
     return (
       <div
         className="flex items-center justify-center h-[300px] text-sm"
@@ -48,41 +52,25 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     );
   }
 
-  // Build cumulative series
-  // Calibrated display amount (magnitude-driven, symmetric BURN/MINT). Falls
-  // back to the raw on-chain amount for older exports lacking amount_index.
-  const idxAmount = (e: CarbonEvent) => e.amount_index ?? e.amount_crbn;
-
-  let cumulative = 0;
-  const rawPoints: { event: CarbonEvent; cumulative: number }[] = sorted.map(
-    (event) => {
-      if (event.decision === "MINT") {
-        cumulative += idxAmount(event);
-      } else if (event.decision === "BURN") {
-        cumulative -= idxAmount(event);
-      }
-      return { event, cumulative };
+  // Group into per-day net-flow buckets (burn - mint), the honest signal that
+  // actually oscillates instead of a monotone cumulative ramp.
+  const byDay = new Map<string, DayPoint>();
+  for (const e of decided) {
+    const d = new Date(e.created_at);
+    const key = d.toISOString().slice(0, 10);
+    let p = byDay.get(key);
+    if (!p) {
+      const dayMs = new Date(key + "T00:00:00Z").getTime();
+      p = { dayMs, net: 0, burn: 0, mint: 0, count: 0 };
+      byDay.set(key, p);
     }
-  );
-
-  // Prepend a synthetic genesis point when there are fewer than 2 real points
-  // so the chart always renders a visible line.
-  const dataPoints =
-    rawPoints.length < 2
-      ? [
-          {
-            event: {
-              ...rawPoints[0].event,
-              // Shift timestamp 1 hour before first real event
-              created_at: new Date(
-                new Date(rawPoints[0].event.created_at).getTime() - 3_600_000
-              ).toISOString(),
-            },
-            cumulative: 0,
-          },
-          ...rawPoints,
-        ]
-      : rawPoints;
+    const amt = idxAmount(e);
+    if (e.decision === "BURN") p.burn += amt;
+    else p.mint += amt;
+    p.count += 1;
+  }
+  const dataPoints = [...byDay.values()].sort((a, b) => a.dayMs - b.dayMs);
+  for (const p of dataPoints) p.net = p.burn - p.mint;
 
   // Chart dimensions
   const width = 900;
@@ -91,59 +79,43 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
   const chartW = width - padding.left - padding.right;
   const chartH = height - padding.top - padding.bottom;
 
-  // Scales
-  const minY = Math.min(0, ...dataPoints.map((d) => d.cumulative));
-  const maxY = Math.max(0, ...dataPoints.map((d) => d.cumulative));
-  const yRange = maxY - minY || 1;
-  const yPad = yRange * 0.1;
-
+  // Symmetric Y scale around zero.
+  const maxAbs = Math.max(1, ...dataPoints.map((d) => Math.abs(d.net)));
+  const yPad = maxAbs * 0.12;
   const scaleX = (i: number) =>
     padding.left +
     (dataPoints.length === 1 ? chartW / 2 : (i / (dataPoints.length - 1)) * chartW);
-
   const scaleY = (val: number) =>
-    padding.top + chartH - ((val - (minY - yPad)) / (yRange + 2 * yPad)) * chartH;
-
-  // Build SVG path
-  const pathD = dataPoints
-    .map((d, i) => `${i === 0 ? "M" : "L"} ${scaleX(i).toFixed(1)} ${scaleY(d.cumulative).toFixed(1)}`)
-    .join(" ");
-
-  // Area fill path (fill down to zero line)
+    padding.top + chartH / 2 - (val / (maxAbs + yPad)) * (chartH / 2);
   const zeroY = scaleY(0);
+
+  // Line + area paths
+  const pathD = dataPoints
+    .map((d, i) => `${i === 0 ? "M" : "L"} ${scaleX(i).toFixed(1)} ${scaleY(d.net).toFixed(1)}`)
+    .join(" ");
   const areaD =
     pathD +
     ` L ${scaleX(dataPoints.length - 1).toFixed(1)} ${zeroY.toFixed(1)}` +
     ` L ${scaleX(0).toFixed(1)} ${zeroY.toFixed(1)} Z`;
 
-  // Y-axis ticks (5 ticks)
-  const yTicks: number[] = [];
-  const tickCount = 5;
-  for (let i = 0; i <= tickCount; i++) {
-    yTicks.push(minY - yPad + ((yRange + 2 * yPad) / tickCount) * i);
-  }
+  // Y-axis ticks (symmetric)
+  const yTicks = [maxAbs, maxAbs / 2, 0, -maxAbs / 2, -maxAbs];
 
-  // X-axis labels (show ~6 evenly spaced dates)
+  // X-axis labels (~6 evenly spaced dates)
   const xLabelCount = Math.min(6, dataPoints.length);
   const xLabels: { index: number; label: string }[] = [];
   for (let i = 0; i < xLabelCount; i++) {
     const idx =
-      xLabelCount === 1
-        ? 0
-        : Math.round((i / (xLabelCount - 1)) * (dataPoints.length - 1));
-    xLabels.push({
-      index: idx,
-      label: formatShortDate(dataPoints[idx].event.created_at),
-    });
+      xLabelCount === 1 ? 0 : Math.round((i / (xLabelCount - 1)) * (dataPoints.length - 1));
+    xLabels.push({ index: idx, label: formatShortDate(dataPoints[idx].dayMs) });
   }
 
-  // Line and fill always orange in Lunaris Dark
   const lineColor = "#FF8400";
   const fillColor = "rgba(255,132,0,0.12)";
 
-  // Cumulative label color
-  const lastCumulative = dataPoints[dataPoints.length - 1].cumulative;
-  const cumulativeColor = lastCumulative > 0 ? "#FF5C33" : "#B6FFCE";
+  // Headline: 7-day net (sum of last 7 buckets).
+  const last7 = dataPoints.slice(-7).reduce((s, d) => s + d.net, 0);
+  const headlineColor = last7 >= 0 ? "#B6FFCE" : "#FF5C33";
 
   return (
     <div
@@ -156,13 +128,13 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     >
       <div className="flex items-center justify-between mb-2 px-2">
         <span className="text-xs font-medium uppercase tracking-wider" style={{ color: "#B8B9B6" }}>
-          Cumulative Supply Change
+          Net Impact Flow · Daily
         </span>
         <span
           className="text-sm font-mono font-semibold tabular-nums"
-          style={{ color: cumulativeColor }}
+          style={{ color: headlineColor }}
         >
-          {formatCompact(lastCumulative)} CBWD
+          {formatCompact(last7)} CBWD · 7d
         </span>
       </div>
       <svg
@@ -204,11 +176,10 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
         {/* Data points */}
         {dataPoints.map((d, i) => {
           const cx = scaleX(i);
-          const cy = scaleY(d.cumulative);
-          const dotColor = d.event.decision === "BURN" ? "#B6FFCE" : d.event.decision === "MINT" ? "#FF5C33" : "#B8B9B6";
+          const cy = scaleY(d.net);
+          const dotColor = d.net >= 0 ? "#B6FFCE" : "#FF5C33";
           return (
             <g key={i}>
-              {/* Invisible larger hit area */}
               <circle
                 cx={cx}
                 cy={cy}
@@ -219,7 +190,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
               <circle
                 cx={cx}
                 cy={cy}
-                r={hoveredIndex === i ? 5 : 3}
+                r={hoveredIndex === i ? 5 : 2.5}
                 fill={dotColor}
                 stroke="#1A1A1A"
                 strokeWidth="1.5"
@@ -263,17 +234,13 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
         {hoveredIndex !== null && (() => {
           const d = dataPoints[hoveredIndex];
           const cx = scaleX(hoveredIndex);
-          const cy = scaleY(d.cumulative);
-          const tooltipW = 260;
-          const tooltipH = 52;
-          // Flip tooltip if too close to right edge
+          const tooltipW = 232;
+          const tooltipH = 62;
           const tooltipX = cx + tooltipW + 10 > width ? cx - tooltipW - 10 : cx + 10;
-          const tooltipY = Math.max(padding.top, Math.min(cy - tooltipH / 2, height - padding.bottom - tooltipH));
-          const decColor = d.event.decision === "BURN" ? "#B6FFCE" : "#FF5C33";
-
+          const tooltipY = Math.max(padding.top, Math.min(zeroY - tooltipH / 2, height - padding.bottom - tooltipH));
+          const netColor = d.net >= 0 ? "#B6FFCE" : "#FF5C33";
           return (
             <g>
-              {/* Vertical guideline */}
               <line
                 x1={cx}
                 y1={padding.top}
@@ -283,60 +250,35 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                 strokeWidth="0.5"
                 strokeDasharray="3 2"
               />
-              {/* Tooltip background */}
               <rect
                 x={tooltipX}
                 y={tooltipY}
                 width={tooltipW}
                 height={tooltipH}
-                rx="0"
                 fill="#1A1A1A"
                 stroke="#2E2E2E"
                 strokeWidth="1"
                 filter="drop-shadow(0 1px 3px rgba(0,0,0,0.3))"
               />
-              {/* Decision badge */}
-              <text
-                x={tooltipX + 8}
-                y={tooltipY + 16}
-                fontSize="10"
-                fontWeight="700"
-                fill={decColor}
-              >
-                {d.event.decision}
+              <text x={tooltipX + 8} y={tooltipY + 16} fontSize="10" fill="#B8B9B6">
+                {formatShortDate(d.dayMs)} · {d.count} ev
               </text>
-              {/* Amount */}
               <text
                 x={tooltipX + tooltipW - 8}
                 y={tooltipY + 16}
-                fontSize="10"
-                fontWeight="600"
-                fill={decColor}
+                fontSize="11"
+                fontWeight="700"
+                fill={netColor}
                 textAnchor="end"
                 fontFamily="'JetBrains Mono', ui-monospace, monospace"
               >
-                {formatCompact(d.event.decision === "MINT" ? idxAmount(d.event) : -idxAmount(d.event))} CBWD
+                NET {formatCompact(d.net)}
               </text>
-              {/* Title (truncated) */}
-              <text
-                x={tooltipX + 8}
-                y={tooltipY + 32}
-                fontSize="11"
-                fill="#FFFFFF"
-                clipPath={`inset(0 0 0 0)`}
-              >
-                {d.event.event_title.length > 38
-                  ? d.event.event_title.slice(0, 38) + "..."
-                  : d.event.event_title}
+              <text x={tooltipX + 8} y={tooltipY + 34} fontSize="10" fill="#B6FFCE" fontFamily="'JetBrains Mono', ui-monospace, monospace">
+                ▲ Burn {formatCompact(d.burn).replace("+", "")}
               </text>
-              {/* Date + cumulative */}
-              <text
-                x={tooltipX + 8}
-                y={tooltipY + 46}
-                fontSize="9"
-                fill="#B8B9B6"
-              >
-                {formatShortDate(d.event.created_at)} | Cumulative: {formatCompact(d.cumulative)}
+              <text x={tooltipX + 8} y={tooltipY + 50} fontSize="10" fill="#FF5C33" fontFamily="'JetBrains Mono', ui-monospace, monospace">
+                ▼ Mint {formatCompact(d.mint).replace("+", "")}
               </text>
             </g>
           );
