@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-08T02:34:18.337019+00:00",
-  "total_events": 4579,
+  "generated_at": "2026-07-08T03:04:37.416129+00:00",
+  "total_events": 4580,
   "total_burned": 7000832065,
-  "total_minted": 6744035189,
+  "total_minted": 6750075189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4580,
+      "event_title": "US-Militär: USA greifen erneut Iran an",
+      "event_url": "https://www.tagesschau.de/ausland/asien/iran-angriffe-usa-102.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.17,
+      "confidence": 8,
+      "justification": "Military escalation and sanctions risk conflict and rights violations. | The military action and sanctions may temporarily deter aggression and protect shipping lanes, but they risk escalating conflict, violating human rights, and undermining economic stability and climate goals.",
+      "tx_hash": "2WfRu67t8hCKvEWAAW3LMwupQsoFz5CUNTUzDSJ2UvhSLiTJPoVFG93U6uTZjmJfNS4HYri5ude5SrRr7rdscSAU",
+      "created_at": "2026-07-08T03:04:35.712693+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Military action may deter further attacks on commercial ships in the Strait of Hormuz.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military strikes against Iran risk escalating regional tensions and civilian casualties.\", \"affected_sdgs\": [16, 13, 14, 15], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Reinstated oil sanctions may harm Iran's economy and access to essential goods.\", \"affected_sdgs\": [1, 8, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 4579,
       "event_title": "FDA Approves New Kidney Disease Treatment by Vera Therapeutics",
@@ -105327,8 +105350,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 23,
-        "total_amount": 32052000
+        "count": 24,
+        "total_amount": 38092000
       },
       {
         "country": "France",
@@ -105391,8 +105414,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.435,
-        "events": 46
+        "burn_ratio": 0.426,
+        "events": 47
       },
       {
         "region": "Latin America",
@@ -105423,8 +105446,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.565,
-        "events": 46
+        "mint_ratio": 0.574,
+        "events": 47
       },
       {
         "region": "Asia",
@@ -105465,7 +105488,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 27115000,
+        "net_minted": 33155000,
         "net_burned": 2100000
       }
     ],
@@ -105483,7 +105506,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 68,
-        "negative": 123,
+        "negative": 124,
         "event_ids_positive": [
           4579,
           4574,
@@ -105555,6 +105578,7 @@
           4391
         ],
         "event_ids_negative": [
+          4580,
           4578,
           4577,
           4576,
@@ -105682,7 +105706,7 @@
       },
       "UDHR": {
         "positive": 25,
-        "negative": 92,
+        "negative": 93,
         "event_ids_positive": [
           4579,
           4574,
@@ -105711,6 +105735,7 @@
           4399
         ],
         "event_ids_negative": [
+          4580,
           4578,
           4577,
           4576,
@@ -105942,7 +105967,7 @@
       },
       "PB": {
         "positive": 42,
-        "negative": 32,
+        "negative": 33,
         "event_ids_positive": [
           4574,
           4569,
@@ -105988,6 +106013,7 @@
           4391
         ],
         "event_ids_negative": [
+          4580,
           4563,
           4562,
           4557,
@@ -106027,11 +106053,11 @@
       "niche_pct": 89.1,
       "mainstream_pct": 10.9,
       "total_sources_used": 92,
-      "articles_processed": 192
+      "articles_processed": 193
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 192,
+      "total_events": 193,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106210,10 +106236,11 @@
       },
       {
         "name": "Defense",
-        "count": 17,
+        "count": 18,
         "burn_count": 0,
-        "mint_count": 17,
+        "mint_count": 18,
         "event_ids": [
+          4580,
           4573,
           4563,
           4554,
@@ -106343,14 +106370,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 124,
+      "total_mint": 125,
       "direct_action": {
-        "count": 114,
-        "pct": 91.9
+        "count": 115,
+        "pct": 92.0
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 7.3
+        "pct": 7.2
       },
       "untyped": {
         "count": 1,
@@ -106358,9 +106385,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3042,
+      "total_mint": 3043,
       "direct_action": {
-        "count": 2360,
+        "count": 2361,
         "pct": 77.6
       },
       "editorial_alarm": {
@@ -106374,8 +106401,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 113,
-      "citizen_ratio": 0.411,
+      "institutional": 114,
+      "citizen_ratio": 0.409,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106410,7 +106437,7 @@
         {
           "date": "2026-07-08",
           "citizen": 2,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -106495,6 +106522,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4580,
         4579,
         4577,
         4575,
