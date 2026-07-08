@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-08T05:05:05.226180+00:00",
-  "total_events": 4584,
+  "generated_at": "2026-07-08T06:34:17.648803+00:00",
+  "total_events": 4585,
   "total_burned": 7000832065,
-  "total_minted": 6764416189,
+  "total_minted": 6765020189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4585,
+      "event_title": "In Morocco, the alarming brain drain of doctors",
+      "event_url": "https://www.lemonde.fr/afrique/article/2026/07/08/au-maroc-l-alarmante-fuite-des-medecins_6721772_3212.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.98,
+      "confidence": 8,
+      "justification": "Systemic healthcare workforce depletion violates fundamental rights and undermines SDG 3. | The public acknowledgment of a critical healthcare shortage is a positive step toward addressing systemic gaps, but the ongoing brain drain of physicians severely undermines Morocco's ability to provide essential medical services. The net ethical impact is negative due to the direct harm to public health and the violation of fundamental rights to healthcare.",
+      "tx_hash": "5Ljzen9VPvzzJyVjzjcHG9ZH9GWvU49kyNM5scJjAuS4B5i2bUYAdPZKD4Sdpsnpi73JEgX62xh2dMBnnjJQeBHm",
+      "created_at": "2026-07-08T06:34:15.425433+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Morocco",
+      "region": "MENA",
+      "administration": "Morocco-PAM-RNI",
+      "positive_aspects_json": "[{\"description\": \"Morocco's Ministry of Health publicly acknowledges the critical shortage of physicians (28,000 needed), demonstrating transparency and awareness of a systemic healthcare gap\", \"affected_sdgs\": [3], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Annual emigration of ~700 Moroccan doctors to foreign countries exacerbates healthcare workforce shortages, undermining SDG 3 (Good Health and Well-being) and violating UDHR Article 25 (right to health)\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 4584,
       "event_title": "Working at over 40 degrees in the field: between the law and reality",
@@ -105522,6 +105545,11 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 3
+      },
+      {
         "region": "Europe",
         "mint_ratio": 0.778,
         "events": 54
@@ -105540,11 +105568,6 @@
         "region": "North America",
         "mint_ratio": 0.574,
         "events": 47
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 0.471,
-        "events": 17
       }
     ],
     "supply_trend_7d": [
@@ -105580,7 +105603,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 47496000,
+        "net_minted": 48100000,
         "net_burned": 2100000
       }
     ],
@@ -105598,7 +105621,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 68,
-        "negative": 128,
+        "negative": 129,
         "event_ids_positive": [
           4579,
           4574,
@@ -105670,6 +105693,7 @@
           4391
         ],
         "event_ids_negative": [
+          4585,
           4584,
           4583,
           4582,
@@ -105802,7 +105826,7 @@
       },
       "UDHR": {
         "positive": 25,
-        "negative": 97,
+        "negative": 98,
         "event_ids_positive": [
           4579,
           4574,
@@ -105831,6 +105855,7 @@
           4399
         ],
         "event_ids_negative": [
+          4585,
           4584,
           4583,
           4582,
@@ -106152,14 +106177,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 88.0,
-      "mainstream_pct": 12.0,
+      "niche_pct": 87.0,
+      "mainstream_pct": 13.0,
       "total_sources_used": 92,
-      "articles_processed": 197
+      "articles_processed": 198
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 197,
+      "total_events": 198,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106475,14 +106500,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 129,
+      "total_mint": 130,
       "direct_action": {
-        "count": 119,
-        "pct": 92.2
+        "count": 120,
+        "pct": 92.3
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 7.0
+        "pct": 6.9
       },
       "untyped": {
         "count": 1,
@@ -106490,9 +106515,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3047,
+      "total_mint": 3048,
       "direct_action": {
-        "count": 2365,
+        "count": 2366,
         "pct": 77.6
       },
       "editorial_alarm": {
@@ -106506,8 +106531,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 118,
-      "citizen_ratio": 0.401,
+      "institutional": 119,
+      "citizen_ratio": 0.399,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106542,7 +106567,7 @@
         {
           "date": "2026-07-08",
           "citizen": 2,
-          "institutional": 13
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -106627,6 +106652,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4585,
         4584,
         4583,
         4582,
