@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T09:35:59.049113+00:00",
-  "total_events": 4600,
-  "total_burned": 7008566065,
-  "total_minted": 6804088689,
+  "generated_at": "2026-07-08T10:05:50.350791+00:00",
+  "total_events": 4602,
+  "total_burned": 7009314065,
+  "total_minted": 6804620689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4602,
+      "event_title": "Hotter, drier weather could double water bills in some US cities, study finds",
+      "event_url": "https://phys.org/news/2026-07-hotter-drier-weather-bills-cities.html",
+      "event_source": "Phys.org",
+      "decision": "MINT",
+      "amount_crbn": 532000,
+      "final_score": -1.45,
+      "confidence": 8,
+      "justification": "Projected doubling of water bills due to climate change threatens access and affordability, undermining SDG 6 and UDHR. | The study reveals a significant threat to water affordability and access due to climate change, which undermines SDG 6 and UDHR Article 12. While it raises awareness (supporting SDG 13), the projected financial burden on households is a major ethical concern.",
+      "tx_hash": "3itMn556E6gcCoKHE3YuZbCcXh9tnbCEdSatNCFTFTzNR6t83DwGkBfzPGtAS7kim6xnqsEbGrHvsdLy3An1EjCz",
+      "created_at": "2026-07-08T10:05:48.259710+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"The study raises awareness about the potential impact of climate change on water affordability, prompting informed public discourse and policy planning.\", \"affected_sdgs\": [6, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The study highlights that water bills could double in some US cities by midcentury due to hotter, drier weather, increasing financial strain on households and potentially reducing access to clean water.\", \"affected_sdgs\": [6, 1], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 4601,
+      "event_title": "Clinical trials begin in DRC epicenter of Bundibugyo strain of Ebola",
+      "event_url": "https://news.mongabay.com/2026/07/clinical-trials-begin-in-drc-epicenter-of-bundibugyo-strain-of-ebola/",
+      "event_source": "Mongabay",
+      "decision": "BURN",
+      "amount_crbn": 748000,
+      "final_score": 6.6,
+      "confidence": 9,
+      "justification": "Life-saving clinical trials addressing a severe disease outbreak with high mortality. | The initiation of clinical trials for an Ebola strain with high mortality and case counts represents a proactive public health intervention that directly saves lives and aligns with SDG 3 (Good Health and Well-being). There are no identified negative ethical aspects in this action, as it addresses a clear humanitarian need without violating rights or undermining other frameworks.",
+      "tx_hash": "3WaePTquYPUgo7fEqWvhrtVmRYYPmDB6B8iGys9oBjoVLKvgGepsn9Zt3ALd3M65tYnHwM885nzHS8NP9eZAaz1F",
+      "created_at": "2026-07-08T10:05:48.123669+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Clinical trials initiated for treatments targeting the Bundibugyo strain of Ebola in the DRC, aiming to develop a standard treatment for a strain with high mortality and case counts.\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public health intervention addressing a severe disease outbreak with measurable impact (1,500+ cases, 450+ deaths), demonstrating proactive response to a humanitarian crisis.\", \"affected_sdgs\": [3, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 748000
+    },
     {
       "id": 4600,
       "event_title": "Brazilian Chamber threatens 555,000 hectares of protected areas in new anti-environmental offensive",
@@ -105810,8 +105856,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 28,
-        "total_amount": 60731000
+        "count": 29,
+        "total_amount": 61263000
       },
       {
         "country": "France",
@@ -105874,8 +105920,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.404,
-        "events": 52
+        "burn_ratio": 0.396,
+        "events": 53
       },
       {
         "region": "Latin America",
@@ -105911,8 +105957,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.596,
-        "events": 52
+        "mint_ratio": 0.604,
+        "events": 53
       }
     ],
     "supply_trend_7d": [
@@ -105948,8 +105994,8 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 87168500,
-        "net_burned": 9834000
+        "net_minted": 87700500,
+        "net_burned": 10582000
       }
     ],
     "event_of_the_day": {
@@ -105965,9 +106011,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 71,
-        "negative": 141,
+        "positive": 72,
+        "negative": 142,
         "event_ids_positive": [
+          4601,
           4597,
           4589,
           4588,
@@ -106041,6 +106088,7 @@
           4391
         ],
         "event_ids_negative": [
+          4602,
           4600,
           4599,
           4598,
@@ -106185,9 +106233,10 @@
         ]
       },
       "UDHR": {
-        "positive": 26,
-        "negative": 107,
+        "positive": 27,
+        "negative": 108,
         "event_ids_positive": [
+          4601,
           4597,
           4579,
           4574,
@@ -106216,6 +106265,7 @@
           4399
         ],
         "event_ids_negative": [
+          4602,
           4600,
           4599,
           4598,
@@ -106472,7 +106522,7 @@
       },
       "PB": {
         "positive": 42,
-        "negative": 36,
+        "negative": 37,
         "event_ids_positive": [
           4574,
           4569,
@@ -106518,6 +106568,7 @@
           4391
         ],
         "event_ids_negative": [
+          4602,
           4600,
           4590,
           4587,
@@ -106558,14 +106609,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 85.3,
-      "mainstream_pct": 14.7,
+      "niche_pct": 84.2,
+      "mainstream_pct": 15.8,
       "total_sources_used": 95,
-      "articles_processed": 213
+      "articles_processed": 215
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 213,
+      "total_events": 215,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106779,10 +106830,11 @@
       },
       {
         "name": "Finance",
-        "count": 18,
+        "count": 19,
         "burn_count": 5,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          4602,
           4596,
           4591,
           4568,
@@ -106861,14 +106913,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 71,
+      "total_burn": 72,
       "direct_action": {
         "count": 68,
-        "pct": 95.8
+        "pct": 94.4
       },
       "editorial_consciousness": {
-        "count": 3,
-        "pct": 4.2
+        "count": 4,
+        "pct": 5.6
       },
       "untyped": {
         "count": 0,
@@ -106876,13 +106928,13 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1532,
+      "total_burn": 1533,
       "direct_action": {
         "count": 1167,
-        "pct": 76.2
+        "pct": 76.1
       },
       "editorial_consciousness": {
-        "count": 105,
+        "count": 106,
         "pct": 6.9
       },
       "untyped": {
@@ -106891,9 +106943,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 142,
+      "total_mint": 143,
       "direct_action": {
-        "count": 132,
+        "count": 133,
         "pct": 93.0
       },
       "editorial_alarm": {
@@ -106906,9 +106958,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3060,
+      "total_mint": 3061,
       "direct_action": {
-        "count": 2378,
+        "count": 2379,
         "pct": 77.7
       },
       "editorial_alarm": {
@@ -106921,9 +106973,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 83,
-      "institutional": 130,
-      "citizen_ratio": 0.39,
+      "citizen": 84,
+      "institutional": 131,
+      "citizen_ratio": 0.391,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106957,11 +107009,12 @@
         },
         {
           "date": "2026-07-08",
-          "citizen": 6,
-          "institutional": 25
+          "citizen": 7,
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
+        4601,
         4600,
         4589,
         4588,
@@ -107047,6 +107100,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4602,
         4599,
         4598,
         4597,
