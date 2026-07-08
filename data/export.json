@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T01:04:35.169977+00:00",
-  "total_events": 4575,
+  "generated_at": "2026-07-08T01:35:08.162139+00:00",
+  "total_events": 4577,
   "total_burned": 7000132065,
-  "total_minted": 6735104189,
+  "total_minted": 6743494189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4577,
+      "event_title": "ACT announces Three Strikes policy for burglary",
+      "event_url": "https://www.rnz.co.nz/news/political/685954/act-announces-three-strikes-policy-for-burglary",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 100000,
+      "final_score": -1.91,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Harsh penalties risk rights violations outweighing deterrent benefits. | The policy aims to strengthen public safety by imposing harsh penalties on repeat offenders, which aligns with SDG 16 (Peace, Justice, and Strong Institutions). However, the approach risks violating fundamental rights to fair trial and proportional punishment, undermining rehabilitation and potentially exa",
+      "tx_hash": "4mYNdrtYHzDVR9AsnQ7ixZxgoArndxUzLTrRyJcKGAXF22vUcY5Gb1DJsp7P22zc1iCzxq19QbA6ZxFnyUZ28Vvr",
+      "created_at": "2026-07-08T01:35:06.434583+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"ACT party proposes stricter penalties for repeat burglary offenders, aiming to enhance public safety and deter crime\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Three-strikes policy risks disproportionate sentencing, overcrowding prisons, and undermines rehabilitation, violating principles of proportional justice and potentially violating UDHR Article 10 (right to fair trial) and CRC Article 37 (right against cruel punishment)\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"CRC Article 37\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 4576,
+      "event_title": "Iran: Lack of international justice six months after January protest massacres risks further atrocity crimes",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/07/iran-lack-of-international-justice-six-months-after-january-protest-massacres-risks-further-atrocity-crimes/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 8290000,
+      "final_score": -6.21,
+      "confidence": 9,
+      "justification": "Failure to pursue justice for mass killings enables impunity and risks further atrocities. | The absence of international justice mechanisms in response to state-sponsored mass killings in Iran constitutes a severe violation of fundamental human rights and undermines global accountability for atrocity crimes. This failure enables impunity, emboldens further repression, and directly contravenes the principles of peace, justice, and strong institutions (SDG 16).",
+      "tx_hash": "3SLnMBGdPcFyJesC5JEjT42HkKyN2F2eTtmAZMf4CemPgS8KGCf6edpk88S9b9Sn9J3sF1UqtanGX1id8DUDetgZ",
+      "created_at": "2026-07-08T01:35:06.280906+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Failure of international institutions to hold Iran accountable for mass unlawful killings of protesters and bystanders during January 2026 uprisings, risking further atrocity crimes\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 19\", \"UDHR Article 20\", \"CRC Article 6\", \"CRC Article 12\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 8290000
+    },
     {
       "id": 4575,
       "event_title": "Marine Le Pen to run for French Presidency despite criminal conviction",
@@ -105289,8 +105335,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.75,
-        "events": 8
+        "burn_ratio": 0.667,
+        "events": 9
       },
       {
         "region": "Asia",
@@ -105373,7 +105419,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 18184000,
+        "net_minted": 26574000,
         "net_burned": 1400000
       }
     ],
@@ -105391,7 +105437,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 67,
-        "negative": 120,
+        "negative": 122,
         "event_ids_positive": [
           4574,
           4570,
@@ -105462,6 +105508,8 @@
           4391
         ],
         "event_ids_negative": [
+          4577,
+          4576,
           4575,
           4573,
           4572,
@@ -105586,7 +105634,7 @@
       },
       "UDHR": {
         "positive": 24,
-        "negative": 89,
+        "negative": 91,
         "event_ids_positive": [
           4574,
           4570,
@@ -105614,6 +105662,8 @@
           4399
         ],
         "event_ids_negative": [
+          4577,
+          4576,
           4575,
           4573,
           4572,
@@ -105725,13 +105775,15 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 9,
+        "negative": 11,
         "event_ids_positive": [
           4570,
           4532,
           4465
         ],
         "event_ids_negative": [
+          4577,
+          4576,
           4568,
           4538,
           4522,
@@ -105924,11 +105976,11 @@
       "niche_pct": 89.1,
       "mainstream_pct": 10.9,
       "total_sources_used": 92,
-      "articles_processed": 188
+      "articles_processed": 190
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 188,
+      "total_events": 190,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106240,14 +106292,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 121,
+      "total_mint": 123,
       "direct_action": {
-        "count": 111,
-        "pct": 91.7
+        "count": 113,
+        "pct": 91.9
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 7.4
+        "pct": 7.3
       },
       "untyped": {
         "count": 1,
@@ -106255,9 +106307,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3039,
+      "total_mint": 3041,
       "direct_action": {
-        "count": 2357,
+        "count": 2359,
         "pct": 77.6
       },
       "editorial_alarm": {
@@ -106270,9 +106322,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 77,
-      "institutional": 111,
-      "citizen_ratio": 0.41,
+      "citizen": 78,
+      "institutional": 112,
+      "citizen_ratio": 0.411,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106306,11 +106358,12 @@
         },
         {
           "date": "2026-07-08",
-          "citizen": 0,
-          "institutional": 6
+          "citizen": 1,
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
+        4576,
         4568,
         4565,
         4562,
@@ -106390,6 +106443,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4577,
         4575,
         4574,
         4573,
