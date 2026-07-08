@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T16:07:07.457939+00:00",
-  "total_events": 4630,
-  "total_burned": 7039487465,
-  "total_minted": 6853773689,
+  "generated_at": "2026-07-08T16:34:49.552286+00:00",
+  "total_events": 4632,
+  "total_burned": 7045527465,
+  "total_minted": 6853923689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4632,
+      "event_title": "Co-benefit premiums can enhance nature-based climate solutions",
+      "event_url": "https://www.nature.com/articles/s41558-026-02690-1",
+      "event_source": "Nature Climate Change",
+      "decision": "BURN",
+      "amount_crbn": 6040000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Proposal advances integrated climate and biodiversity solutions with high potential impact. | The proposal advances climate action while explicitly valuing biodiversity and coastal protection, aligning with multiple SDGs and planetary boundaries. It represents a systemic shift toward integrated, multi-benefit solutions rather than siloed climate mitigation. No significant ethical downsides are identified in the data provided.",
+      "tx_hash": "57yB83KsXz6pa4n5fsdA1NPJkJ5Wc2Vi1ZjgkjJE3yLBjYNrjhFn6ozbjyKmGjKx8TDFxsoW4CEZMP2WYD1CJjKx",
+      "created_at": "2026-07-08T16:34:47.522201+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Proposal to create markets for verified co-benefits of nature-based climate solutions, including coastal protection and biodiversity, to redirect investment toward projects with larger societal and climate gains\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}, {\"description\": \"Encourages investment in nature-based solutions that deliver multiple societal benefits beyond climate mitigation, aligning with sustainable development and planetary boundaries\", \"affected_sdgs\": [11, 12, 13, 14, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
+    {
+      "id": 4631,
+      "event_title": "Hungary: Black screen heralds start of public media overhaul",
+      "event_url": "https://www.dw.com/en/hungary-black-screen-heralds-start-of-public-media-overhaul/a-77880569?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -3.42,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action dismantles authoritarian media control, aligning with democratic rights. | The public media blackout and overhaul in Hungary raises concerns about the erosion of media independence and transparency, violating the right to freedom of expression and undermining democratic governance.",
+      "tx_hash": "3t5bjzzSVU2g1ibznq9U89YkpW8WaaoWSDV2vfMJYXg8Yh6SrNHrbx8bsqamBcc25Vio3GzZXR2w77hTx8dVARpK",
+      "created_at": "2026-07-08T16:34:47.421402+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Hungary",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Public media blackout and overhaul under new leadership signals potential erosion of media independence and transparency.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 667000
+    },
     {
       "id": 4630,
       "event_title": "Press release: EU is on track to ban lead in fishing tackle",
@@ -106580,14 +106626,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "Europe",
+        "mint_ratio": 0.754,
+        "events": 65
+      },
+      {
         "region": "MENA",
         "mint_ratio": 0.75,
         "events": 4
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.75,
-        "events": 64
       },
       {
         "region": "Africa",
@@ -106638,8 +106684,8 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 136853500,
-        "net_burned": 40755400
+        "net_minted": 137003500,
+        "net_burned": 46795400
       }
     ],
     "event_of_the_day": {
@@ -106655,9 +106701,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 83,
-        "negative": 159,
+        "positive": 84,
+        "negative": 160,
         "event_ids_positive": [
+          4632,
           4630,
           4628,
           4627,
@@ -106743,6 +106790,7 @@
           4391
         ],
         "event_ids_negative": [
+          4631,
           4629,
           4624,
           4623,
@@ -106906,7 +106954,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 122,
+        "negative": 123,
         "event_ids_positive": [
           4628,
           4626,
@@ -106943,6 +106991,7 @@
           4399
         ],
         "event_ids_negative": [
+          4631,
           4629,
           4623,
           4622,
@@ -107117,9 +107166,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 24,
+        "positive": 25,
         "negative": 28,
         "event_ids_positive": [
+          4632,
           4625,
           4617,
           4588,
@@ -107177,9 +107227,10 @@
         ]
       },
       "Animal": {
-        "positive": 33,
+        "positive": 34,
         "negative": 12,
         "event_ids_positive": [
+          4632,
           4630,
           4628,
           4627,
@@ -107230,9 +107281,10 @@
         ]
       },
       "PB": {
-        "positive": 47,
+        "positive": 48,
         "negative": 38,
         "event_ids_positive": [
+          4632,
           4630,
           4628,
           4627,
@@ -107327,11 +107379,11 @@
       "niche_pct": 81.2,
       "mainstream_pct": 18.8,
       "total_sources_used": 101,
-      "articles_processed": 243
+      "articles_processed": 245
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 243,
+      "total_events": 245,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -107650,9 +107702,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 83,
+      "total_burn": 84,
       "direct_action": {
-        "count": 79,
+        "count": 80,
         "pct": 95.2
       },
       "editorial_consciousness": {
@@ -107665,9 +107717,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1544,
+      "total_burn": 1545,
       "direct_action": {
-        "count": 1178,
+        "count": 1179,
         "pct": 76.3
       },
       "editorial_consciousness": {
@@ -107680,9 +107732,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 160,
+      "total_mint": 161,
       "direct_action": {
-        "count": 150,
+        "count": 151,
         "pct": 93.8
       },
       "editorial_alarm": {
@@ -107695,9 +107747,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3078,
+      "total_mint": 3079,
       "direct_action": {
-        "count": 2396,
+        "count": 2397,
         "pct": 77.8
       },
       "editorial_alarm": {
@@ -107711,8 +107763,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 93,
-      "institutional": 150,
-      "citizen_ratio": 0.383,
+      "institutional": 152,
+      "citizen_ratio": 0.38,
       "daily": [
         {
           "date": "2026-07-02",
@@ -107747,7 +107799,7 @@
         {
           "date": "2026-07-08",
           "citizen": 16,
-          "institutional": 45
+          "institutional": 47
         }
       ],
       "event_ids_citizen": [
@@ -107846,6 +107898,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4632,
+        4631,
         4629,
         4628,
         4624,
