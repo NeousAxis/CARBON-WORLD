@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T11:04:36.273185+00:00",
-  "total_events": 4604,
-  "total_burned": 7009314065,
-  "total_minted": 6805900689,
+  "generated_at": "2026-07-08T12:05:48.436668+00:00",
+  "total_events": 4606,
+  "total_burned": 7010014065,
+  "total_minted": 6806300689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4606,
+      "event_title": "In Hungary, the new government takes control of public media forged by Viktor Orbán",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/07/08/en-hongrie-le-nouveau-gouvernement-reprend-en-main-les-medias-publics-forges-par-viktor-orban_6721830_3234.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": 2.34,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Dismantling propaganda is positive but new state media control risks undermining press freedom. | The dismantling of Orbán's propaganda apparatus is a positive step toward restoring media pluralism and democratic integrity in Hungary, aligning with SDG 16 and UDHR Article 19. However, the new government's control over public media introduces risks of new biases, creating a comp",
+      "tx_hash": "3kDxsUqJdfSXFXUdFHeP7ZKgt756LjC4xn225XYY24yYBXSzgqjUf3jdKu2PiozVnu3sPkG9WvbJNNfkSUtnNkbM",
+      "created_at": "2026-07-08T12:05:46.674899+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Hungary",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Hungarian government under Péter Magyar dismantles state propaganda apparatus previously used by Viktor Orbán's Fidesz party to maintain power for 16 years\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Conservative pro-European government taking control of public media may introduce new biases or restrictions, potentially undermining press freedom despite dismantling Orbán-era propaganda\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 4605,
+      "event_title": "Prosecutors open criminal inquiry into Sabic PFAS pollution",
+      "event_url": "https://www.dutchnews.nl/2026/07/prosecutors-open-criminal-inquiry-into-sabic-pfas-pollution/",
+      "event_source": "DutchNews.nl",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": -0.6,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Criminal inquiry punishes environmental harm and enforces legal protections. | The criminal investigation into Sabic's suspected PFAS pollution is a positive step toward holding corporations accountable for environmental harm. However, the ongoing illegal discharge of toxic chemicals represents a significant violation of environmental and human rights.",
+      "tx_hash": "5BdMPpSBJ22azW5trTK2Mt7cYfrHB4UMJ22CJ3EwbCjfMCkUb89GXNkJmYTLXGTTMTDVXKDd61r9ESZ1TnzPzd8s",
+      "created_at": "2026-07-08T12:05:46.552011+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Criminal investigation launched into illegal PFAS pollution by a major plastics manufacturer.\", \"affected_sdgs\": [6, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Suspected illegal discharge of PFAS chemicals by Sabic, which are persistent pollutants with severe environmental and health impacts.\", \"affected_sdgs\": [3, 6, 12, 13, 15], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 667000
+    },
     {
       "id": 4604,
       "event_title": "Italian PM Meloni's party proposes swift deportation of foreign offenders",
@@ -105988,8 +106034,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.78,
-        "events": 59
+        "mint_ratio": 0.77,
+        "events": 61
       },
       {
         "region": "Africa",
@@ -106040,8 +106086,8 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 88980500,
-        "net_burned": 10582000
+        "net_minted": 89380500,
+        "net_burned": 11282000
       }
     ],
     "event_of_the_day": {
@@ -106057,9 +106103,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 72,
-        "negative": 144,
+        "positive": 73,
+        "negative": 145,
         "event_ids_positive": [
+          4605,
           4601,
           4597,
           4589,
@@ -106134,6 +106181,7 @@
           4391
         ],
         "event_ids_negative": [
+          4606,
           4604,
           4603,
           4602,
@@ -106281,9 +106329,10 @@
         ]
       },
       "UDHR": {
-        "positive": 27,
-        "negative": 109,
+        "positive": 28,
+        "negative": 110,
         "event_ids_positive": [
+          4605,
           4601,
           4597,
           4579,
@@ -106313,6 +106362,7 @@
           4399
         ],
         "event_ids_negative": [
+          4606,
           4604,
           4602,
           4600,
@@ -106471,7 +106521,7 @@
       },
       "UNDRIP": {
         "positive": 22,
-        "negative": 26,
+        "negative": 27,
         "event_ids_positive": [
           4588,
           4574,
@@ -106497,6 +106547,7 @@
           4392
         ],
         "event_ids_negative": [
+          4606,
           4604,
           4603,
           4600,
@@ -106574,9 +106625,10 @@
         ]
       },
       "PB": {
-        "positive": 42,
+        "positive": 43,
         "negative": 38,
         "event_ids_positive": [
+          4605,
           4574,
           4569,
           4564,
@@ -106663,14 +106715,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 83.2,
-      "mainstream_pct": 16.8,
-      "total_sources_used": 95,
-      "articles_processed": 217
+      "niche_pct": 83.3,
+      "mainstream_pct": 16.7,
+      "total_sources_used": 96,
+      "articles_processed": 219
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 217,
+      "total_events": 219,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106943,10 +106995,11 @@
       },
       {
         "name": "Water",
-        "count": 5,
-        "burn_count": 2,
+        "count": 6,
+        "burn_count": 3,
         "mint_count": 3,
         "event_ids": [
+          4605,
           4505,
           4476,
           4466,
@@ -106968,14 +107021,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 72,
+      "total_burn": 73,
       "direct_action": {
-        "count": 68,
-        "pct": 94.4
+        "count": 69,
+        "pct": 94.5
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 5.6
+        "pct": 5.5
       },
       "untyped": {
         "count": 0,
@@ -106983,9 +107036,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1533,
+      "total_burn": 1534,
       "direct_action": {
-        "count": 1167,
+        "count": 1168,
         "pct": 76.1
       },
       "editorial_consciousness": {
@@ -106994,14 +107047,14 @@
       },
       "untyped": {
         "count": 260,
-        "pct": 17.0
+        "pct": 16.9
       }
     },
     "mint_composition_7d": {
-      "total_mint": 145,
+      "total_mint": 146,
       "direct_action": {
-        "count": 135,
-        "pct": 93.1
+        "count": 136,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 9,
@@ -107013,9 +107066,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3063,
+      "total_mint": 3064,
       "direct_action": {
-        "count": 2381,
+        "count": 2382,
         "pct": 77.7
       },
       "editorial_alarm": {
@@ -107029,8 +107082,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 85,
-      "institutional": 132,
-      "citizen_ratio": 0.392,
+      "institutional": 134,
+      "citizen_ratio": 0.388,
       "daily": [
         {
           "date": "2026-07-02",
@@ -107065,7 +107118,7 @@
         {
           "date": "2026-07-08",
           "citizen": 8,
-          "institutional": 27
+          "institutional": 29
         }
       ],
       "event_ids_citizen": [
@@ -107156,6 +107209,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4606,
+        4605,
         4604,
         4602,
         4599,
