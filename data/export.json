@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T20:04:42.673866+00:00",
-  "total_events": 4650,
-  "total_burned": 7054343465,
-  "total_minted": 6899284189,
+  "generated_at": "2026-07-08T20:36:03.215564+00:00",
+  "total_events": 4652,
+  "total_burned": 7055043465,
+  "total_minted": 6899334189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4652,
+      "event_title": "Medical interns and health authority clash over deployment of junior doctors in Centre-Val de Loire",
+      "event_url": "http://www.lequotidiendumedecin.fr/jeunes-medecins/internat/en-centre-val-de-loire-internes-de-medecine-generale-et-ars-saffrontent-sur-le-deploiement-des",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 50000,
+      "final_score": 2.41,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Deployment conflict undermines healthcare access despite positive intent; magnitude of harm outweighs benefits. | The deployment of junior doctors to combat medical desertification is a positive step toward improving public health (SDG 3) and reducing inequalities (SDG 10). However, the conflict over deployment logistics risks undermining the effectiveness of the initiative, po",
+      "tx_hash": "2YtpB7i2YNAFqedgBdT1aXKhKEnE3oBibkubBhzy4NRZikcbWT4nktej6WFYZay592x92KBpZnBWj9gNJRZ8zYkM",
+      "created_at": "2026-07-08T20:36:00.859632+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Regional health authority (ARS) and medical faculty are deploying junior doctors to address medical desertification in Centre-Val de Loire, aiming to improve healthcare access\", \"affected_sdgs\": [3, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Conflict between ARS, medical faculty, and intern representatives over deployment logistics and stage distribution, creating operational friction and potential delays in healthcare service delivery\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
+    {
+      "id": 4651,
+      "event_title": "Amden SG: Hobby Hunter Illegally Shot Crowned Deer and Was Condemned After Weapons Found",
+      "event_url": "https://wildbeimwild.com/amden-hobby-jaeger-kronenhirsche-waffenfund-verurteilt/",
+      "event_source": "Wild beim Wild",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": -0.23,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action (conviction) punishes harm to protected species and illegal weapons possession. | The conviction of the hobby hunter for illegal deer hunting and possession of undeclared weapons supports wildlife protection and legal hunting frameworks. However, the act of illegal hunting and the possession of undeclared weapons undermine biodiversity and legal order.",
+      "tx_hash": "5BfXGUg3GE4BPjETeM9kkDQZsvNqJKLyPQMnN2f9xphZoUhFNwc4b3A3jscF6w2MJQXTKw2iyMWKKZHsDe9VuF5E",
+      "created_at": "2026-07-08T20:36:00.685551+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"A hobby hunter was convicted for illegally shooting two crowned deer, reinforcing legal wildlife protection.\", \"affected_sdgs\": [15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The illegal hunting of two crowned deer represents a direct harm to biodiversity and wildlife conservation.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The possession of 71 undeclared weapons and trophies indicates a broader disregard for legal and ethical hunting practices.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 586000
+    },
     {
       "id": 4650,
       "event_title": "French deputies approve prison sentences for organizers and participants of 'free parties' under new law",
@@ -106965,8 +107011,8 @@
       },
       {
         "country": "France",
-        "count": 17,
-        "total_amount": 9112400
+        "count": 18,
+        "total_amount": 9162400
       },
       {
         "country": "Switzerland",
@@ -107041,8 +107087,8 @@
     "top_regions_destructive": [
       {
         "region": "Europe",
-        "mint_ratio": 0.758,
-        "events": 66
+        "mint_ratio": 0.75,
+        "events": 68
       },
       {
         "region": "MENA",
@@ -107098,8 +107144,8 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 182064000,
-        "net_burned": 55611400
+        "net_minted": 182114000,
+        "net_burned": 56311400
       }
     ],
     "event_of_the_day": {
@@ -107115,9 +107161,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 89,
-        "negative": 170,
+        "positive": 90,
+        "negative": 171,
         "event_ids_positive": [
+          4651,
           4648,
           4646,
           4644,
@@ -107209,6 +107256,7 @@
           4391
         ],
         "event_ids_negative": [
+          4652,
           4650,
           4649,
           4647,
@@ -107383,7 +107431,7 @@
       },
       "UDHR": {
         "positive": 36,
-        "negative": 131,
+        "negative": 132,
         "event_ids_positive": [
           4648,
           4646,
@@ -107423,6 +107471,7 @@
           4399
         ],
         "event_ids_negative": [
+          4652,
           4650,
           4649,
           4647,
@@ -107731,9 +107780,10 @@
         ]
       },
       "PB": {
-        "positive": 50,
+        "positive": 51,
         "negative": 39,
         "event_ids_positive": [
+          4651,
           4644,
           4634,
           4632,
@@ -107829,14 +107879,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 79.4,
-      "mainstream_pct": 20.6,
-      "total_sources_used": 102,
-      "articles_processed": 260
+      "niche_pct": 78.6,
+      "mainstream_pct": 21.4,
+      "total_sources_used": 103,
+      "articles_processed": 262
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 260,
+      "total_events": 262,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -108008,10 +108058,11 @@
       },
       {
         "name": "Defense",
-        "count": 27,
-        "burn_count": 0,
+        "count": 28,
+        "burn_count": 1,
         "mint_count": 27,
         "event_ids": [
+          4651,
           4638,
           4637,
           4633,
@@ -108169,9 +108220,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 89,
+      "total_burn": 90,
       "direct_action": {
-        "count": 84,
+        "count": 85,
         "pct": 94.4
       },
       "editorial_consciousness": {
@@ -108184,9 +108235,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1550,
+      "total_burn": 1551,
       "direct_action": {
-        "count": 1183,
+        "count": 1184,
         "pct": 76.3
       },
       "editorial_consciousness": {
@@ -108199,14 +108250,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 171,
+      "total_mint": 172,
       "direct_action": {
-        "count": 161,
+        "count": 162,
         "pct": 94.2
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 5.3
+        "pct": 5.2
       },
       "untyped": {
         "count": 1,
@@ -108214,9 +108265,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3089,
+      "total_mint": 3090,
       "direct_action": {
-        "count": 2407,
+        "count": 2408,
         "pct": 77.9
       },
       "editorial_alarm": {
@@ -108229,9 +108280,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 99,
-      "institutional": 161,
-      "citizen_ratio": 0.381,
+      "citizen": 100,
+      "institutional": 162,
+      "citizen_ratio": 0.382,
       "daily": [
         {
           "date": "2026-07-02",
@@ -108265,11 +108316,12 @@
         },
         {
           "date": "2026-07-08",
-          "citizen": 22,
-          "institutional": 56
+          "citizen": 23,
+          "institutional": 57
         }
       ],
       "event_ids_citizen": [
+        4652,
         4650,
         4646,
         4645,
@@ -108371,6 +108423,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4651,
         4649,
         4648,
         4647,
