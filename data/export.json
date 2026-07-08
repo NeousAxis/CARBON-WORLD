@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-07-08T17:36:01.300619+00:00",
-  "total_events": 4639,
+  "generated_at": "2026-07-08T18:07:26.145321+00:00",
+  "total_events": 4642,
   "total_burned": 7046203465,
-  "total_minted": 6884223689,
+  "total_minted": 6884556189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4642,
+      "event_title": "Somalia: Northeastern Administration Excluded From Somalia's $12 Million Climate Resilience Project",
+      "event_url": "https://allafrica.com/stories/202607080452.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 120000,
+      "final_score": -1.27,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Exclusion of a federal region from climate resilience funding undermines equity and SDG 10. | The project represents a positive step toward climate resilience and sustainable urban development in Somalia, aligning with SDGs 11 and 13. However, the exclusion of the Northeastern Administration undermines principles of equity, inclusion, and non-discrimination, violating UDHR Arti",
+      "tx_hash": "482UPAFyz9AZRCi2M9SxXibGdWMLigW7mrQrWd67UNAqHYiFhNVrHAaS1GBbugven8f9NbpFPUYJRv5gHyLLAb8r",
+      "created_at": "2026-07-08T18:07:24.034611+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Somalia",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Somalia's federal government launched a $12 million international climate resilience project to cover 17 cities, demonstrating commitment to climate action and sustainable development.\", \"affected_sdgs\": [11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The Northeastern Administration of Somalia was excluded from the $12 million climate resilience project, raising concerns about political exclusion and unequal access to climate adaptation resources.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 4641,
+      "event_title": "Sudan: Sudanese Armed Forces Announce Liberation of Al-Kormuk in Blue Nile State",
+      "event_url": "https://allafrica.com/stories/202607080666.html",
+      "event_source": "AllAfrica Headlines",
+      "decision": "MINT",
+      "amount_crbn": 112500,
+      "final_score": -1.6,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Conflict likely caused civilian harm and environmental damage. | The liberation of Al-Kormuk by the Sudanese Armed Forces may contribute to regional stability (SDG 16), but the conflict likely caused significant harm to civilians and the environment, violating core human rights and undermining SDGs 1, 3, 11, and 15.",
+      "tx_hash": "2RxR5atZKqiE6825C57Dybszdb6BxPu2S77xsGUTYy2iiEVfGQvytBhNAfwLxMXNV5RLKfMNnvFGjaB4BGTzjnME",
+      "created_at": "2026-07-08T18:07:23.935119+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sudan",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Military victory may contribute to regional stability and security.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Fierce battles likely caused civilian casualties, displacement, and destruction of infrastructure.\", \"affected_sdgs\": [1, 3, 11], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Military conflict often leads to environmental degradation and disruption of local ecosystems.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
+    {
+      "id": 4640,
+      "event_title": "EES: 8,700 overstayers snared since launch of EU's new Schengen border checks",
+      "event_url": "https://www.thelocal.dk/20260520/ees-7000-overstayers-snared-since-launch-of-eus-new-schengen-border-checks",
+      "event_source": "The Local Denmark (EN)",
+      "decision": "MINT",
+      "amount_crbn": 100000,
+      "final_score": -1.33,
+      "confidence": 7,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #4636",
+      "tx_hash": null,
+      "created_at": "2026-07-08T18:03:35.977719+00:00",
+      "embedding": null,
+      "reused_from_event_id": 4636,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 41500
+    },
     {
       "id": 4639,
       "event_title": "US officials compiling ‘menu’ of Spanish goods, as Trump weighs embargo",
@@ -106781,8 +106850,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 12
+        "burn_ratio": 0.286,
+        "events": 14
       }
     ],
     "top_regions_destructive": [
@@ -106798,8 +106867,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.667,
-        "events": 12
+        "mint_ratio": 0.714,
+        "events": 14
       },
       {
         "region": "North America",
@@ -106845,7 +106914,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 167103500,
+        "net_minted": 167336000,
         "net_burned": 47471400
       }
     ],
@@ -106863,7 +106932,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 85,
-        "negative": 164,
+        "negative": 166,
         "event_ids_positive": [
           4634,
           4632,
@@ -106952,6 +107021,8 @@
           4391
         ],
         "event_ids_negative": [
+          4642,
+          4641,
           4639,
           4638,
           4637,
@@ -107120,7 +107191,7 @@
       },
       "UDHR": {
         "positive": 33,
-        "negative": 126,
+        "negative": 128,
         "event_ids_positive": [
           4628,
           4626,
@@ -107157,6 +107228,8 @@
           4399
         ],
         "event_ids_negative": [
+          4642,
+          4641,
           4639,
           4638,
           4637,
@@ -107310,7 +107383,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 13,
+        "negative": 14,
         "event_ids_positive": [
           4619,
           4611,
@@ -107319,6 +107392,7 @@
           4465
         ],
         "event_ids_negative": [
+          4641,
           4604,
           4578,
           4577,
@@ -107452,7 +107526,7 @@
       },
       "PB": {
         "positive": 49,
-        "negative": 38,
+        "negative": 39,
         "event_ids_positive": [
           4634,
           4632,
@@ -107505,6 +107579,7 @@
           4391
         ],
         "event_ids_negative": [
+          4641,
           4603,
           4602,
           4600,
@@ -107550,11 +107625,11 @@
       "niche_pct": 80.2,
       "mainstream_pct": 19.8,
       "total_sources_used": 101,
-      "articles_processed": 250
+      "articles_processed": 252
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 250,
+      "total_events": 252,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -107759,41 +107834,12 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 22,
-        "burn_count": 13,
-        "mint_count": 9,
-        "event_ids": [
-          4634,
-          4633,
-          4569,
-          4550,
-          4538,
-          4537,
-          4531,
-          4520,
-          4517,
-          4506,
-          4502,
-          4491,
-          4488,
-          4482,
-          4471,
-          4469,
-          4453,
-          4452,
-          4418,
-          4412,
-          4410,
-          4391
-        ]
-      },
-      {
         "name": "Finance",
-        "count": 22,
+        "count": 23,
         "burn_count": 6,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          4642,
           4619,
           4614,
           4608,
@@ -107816,6 +107862,37 @@
           4452,
           4421,
           4413
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 23,
+        "burn_count": 13,
+        "mint_count": 10,
+        "event_ids": [
+          4642,
+          4634,
+          4633,
+          4569,
+          4550,
+          4538,
+          4537,
+          4531,
+          4520,
+          4517,
+          4506,
+          4502,
+          4491,
+          4488,
+          4482,
+          4471,
+          4469,
+          4453,
+          4452,
+          4418,
+          4412,
+          4410,
+          4391
         ]
       },
       {
@@ -107912,14 +107989,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 165,
+      "total_mint": 167,
       "direct_action": {
-        "count": 155,
-        "pct": 93.9
+        "count": 157,
+        "pct": 94.0
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 5.5
+        "pct": 5.4
       },
       "untyped": {
         "count": 1,
@@ -107927,9 +108004,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3083,
+      "total_mint": 3085,
       "direct_action": {
-        "count": 2401,
+        "count": 2403,
         "pct": 77.9
       },
       "editorial_alarm": {
@@ -107943,8 +108020,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 94,
-      "institutional": 156,
-      "citizen_ratio": 0.376,
+      "institutional": 158,
+      "citizen_ratio": 0.373,
       "daily": [
         {
           "date": "2026-07-02",
@@ -107979,7 +108056,7 @@
         {
           "date": "2026-07-08",
           "citizen": 17,
-          "institutional": 51
+          "institutional": 53
         }
       ],
       "event_ids_citizen": [
@@ -108079,6 +108156,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4642,
+        4641,
         4639,
         4637,
         4634,
