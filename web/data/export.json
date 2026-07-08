@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-08T03:04:37.416129+00:00",
-  "total_events": 4580,
+  "generated_at": "2026-07-08T03:34:43.683811+00:00",
+  "total_events": 4581,
   "total_burned": 7000832065,
-  "total_minted": 6750075189,
+  "total_minted": 6755485189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4581,
+      "event_title": "Ukraine signs military drone agreements with several European countries",
+      "event_url": "https://www.france24.com/fr/europe/20260708-ukraine-signe-accords-sur-drones-plusieurs-pays-europeens-technologies-volodymyr-zelensky-danemark-pays-bas-estonie",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -1.73,
+      "confidence": 7,
+      "justification": "Military agreements increase arms proliferation and resource diversion despite defensive benefits. | The agreements strengthen Ukraine's defensive capacity, aligning with SDG 16 (Peace, Justice, and Strong Institutions) by supporting sovereignty and territorial integrity. However, they also contribute to arms proliferation and divert critical resources from social and environmental needs, creating a net ethical tension between immediate security needs and long-term sustainability.",
+      "tx_hash": "3X34REpyTvg5QfqNaVgbbRRUdE3uBkzMBnSmZXD2dPPAgkkA1Ez7Td9ohdgk2eKTzDfW9D8JZ5C53PddGJSRsJqE",
+      "created_at": "2026-07-08T03:34:41.710738+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Ukraine signs military drone agreements with Denmark, Netherlands, and Estonia to enhance defense capabilities amid ongoing conflict\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military drone agreements increase arms proliferation and potential for escalation in regional conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Military expenditures divert resources from social and environmental priorities\", \"affected_sdgs\": [1, 3, 4, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 4580,
       "event_title": "US-Militär: USA greifen erneut Iran an",
@@ -105488,7 +105511,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 33155000,
+        "net_minted": 38565000,
         "net_burned": 2100000
       }
     ],
@@ -105506,7 +105529,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 68,
-        "negative": 124,
+        "negative": 125,
         "event_ids_positive": [
           4579,
           4574,
@@ -105578,6 +105601,7 @@
           4391
         ],
         "event_ids_negative": [
+          4581,
           4580,
           4578,
           4577,
@@ -105706,7 +105730,7 @@
       },
       "UDHR": {
         "positive": 25,
-        "negative": 93,
+        "negative": 94,
         "event_ids_positive": [
           4579,
           4574,
@@ -105735,6 +105759,7 @@
           4399
         ],
         "event_ids_negative": [
+          4581,
           4580,
           4578,
           4577,
@@ -106053,11 +106078,11 @@
       "niche_pct": 89.1,
       "mainstream_pct": 10.9,
       "total_sources_used": 92,
-      "articles_processed": 193
+      "articles_processed": 194
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 193,
+      "total_events": 194,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106236,10 +106261,11 @@
       },
       {
         "name": "Defense",
-        "count": 18,
+        "count": 19,
         "burn_count": 0,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          4581,
           4580,
           4573,
           4563,
@@ -106370,14 +106396,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 125,
+      "total_mint": 126,
       "direct_action": {
-        "count": 115,
-        "pct": 92.0
+        "count": 116,
+        "pct": 92.1
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 7.2
+        "pct": 7.1
       },
       "untyped": {
         "count": 1,
@@ -106385,9 +106411,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3043,
+      "total_mint": 3044,
       "direct_action": {
-        "count": 2361,
+        "count": 2362,
         "pct": 77.6
       },
       "editorial_alarm": {
@@ -106401,8 +106427,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 114,
-      "citizen_ratio": 0.409,
+      "institutional": 115,
+      "citizen_ratio": 0.407,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106437,7 +106463,7 @@
         {
           "date": "2026-07-08",
           "citizen": 2,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -106522,6 +106548,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4581,
         4580,
         4579,
         4577,
