@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-08T04:03:29.585362+00:00",
-  "total_events": 4582,
+  "generated_at": "2026-07-08T04:33:39.231469+00:00",
+  "total_events": 4583,
   "total_burned": 7000832065,
-  "total_minted": 6755585189,
+  "total_minted": 6763875189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4583,
+      "event_title": "US says it has completed a new round of strikes on Iran",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/us-says-it-has-completed-new-round-strikes-iran",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 8290000,
+      "final_score": -6.76,
+      "confidence": 9,
+      "justification": "US military strikes and sanctions escalate conflict and violate human rights | The US actions constitute a clear escalation of military force and economic coercion against Iran, violating core human rights principles of peace, security, and economic dignity. The strikes and sanctions directly undermine SDG 16 (Peace, Justice, and Strong Institutions) and multiple UDHR articles, with high magnitude due to the scale of targets and potential civilian harm.",
+      "tx_hash": "2pTnB24ML9MnUBkgwzLWSnagny9ND7KS99k9DHogFfRXuqHv55ExDLBfhLcQu5PTJJPqy6vH4ayaL5FbAzPx9naG",
+      "created_at": "2026-07-08T04:33:37.211888+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US military strikes on Iran targeting over 80 sites, escalating regional conflict and risking civilian casualties\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"US revokes Iran's oil sales license after Strait of Hormuz tanker attacks, increasing economic pressure and potential humanitarian impact on Iranian civilians\", \"affected_sdgs\": [1, 8, 12], \"violated_rights\": [\"UDHR Article 25(1)\", \"UDHR Article 23(1)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 8290000
+    },
     {
       "id": 4582,
       "event_title": "Breaking: BHP workers to strike as negotiations with mining giant stall",
@@ -105534,7 +105557,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 38665000,
+        "net_minted": 46955000,
         "net_burned": 2100000
       }
     ],
@@ -105552,7 +105575,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 68,
-        "negative": 126,
+        "negative": 127,
         "event_ids_positive": [
           4579,
           4574,
@@ -105624,6 +105647,7 @@
           4391
         ],
         "event_ids_negative": [
+          4583,
           4582,
           4581,
           4580,
@@ -105754,7 +105778,7 @@
       },
       "UDHR": {
         "positive": 25,
-        "negative": 95,
+        "negative": 96,
         "event_ids_positive": [
           4579,
           4574,
@@ -105783,6 +105807,7 @@
           4399
         ],
         "event_ids_negative": [
+          4583,
           4582,
           4581,
           4580,
@@ -106104,11 +106129,11 @@
       "niche_pct": 88.0,
       "mainstream_pct": 12.0,
       "total_sources_used": 92,
-      "articles_processed": 195
+      "articles_processed": 196
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 195,
+      "total_events": 196,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -106258,6 +106283,34 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 20,
+        "burn_count": 0,
+        "mint_count": 20,
+        "event_ids": [
+          4583,
+          4581,
+          4580,
+          4573,
+          4563,
+          4554,
+          4547,
+          4539,
+          4529,
+          4523,
+          4522,
+          4511,
+          4493,
+          4471,
+          4469,
+          4467,
+          4461,
+          4459,
+          4458,
+          4394
+        ]
+      },
+      {
         "name": "Construction",
         "count": 20,
         "burn_count": 12,
@@ -106283,33 +106336,6 @@
           4412,
           4410,
           4391
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 19,
-        "burn_count": 0,
-        "mint_count": 19,
-        "event_ids": [
-          4581,
-          4580,
-          4573,
-          4563,
-          4554,
-          4547,
-          4539,
-          4529,
-          4523,
-          4522,
-          4511,
-          4493,
-          4471,
-          4469,
-          4467,
-          4461,
-          4459,
-          4458,
-          4394
         ]
       },
       {
@@ -106422,14 +106448,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 127,
+      "total_mint": 128,
       "direct_action": {
-        "count": 117,
-        "pct": 92.1
+        "count": 118,
+        "pct": 92.2
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 7.1
+        "pct": 7.0
       },
       "untyped": {
         "count": 1,
@@ -106437,9 +106463,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3045,
+      "total_mint": 3046,
       "direct_action": {
-        "count": 2363,
+        "count": 2364,
         "pct": 77.6
       },
       "editorial_alarm": {
@@ -106453,8 +106479,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 116,
-      "citizen_ratio": 0.405,
+      "institutional": 117,
+      "citizen_ratio": 0.403,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106489,7 +106515,7 @@
         {
           "date": "2026-07-08",
           "citizen": 2,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -106574,6 +106600,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4583,
         4582,
         4581,
         4580,
