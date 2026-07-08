@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T00:04:35.030839+00:00",
-  "total_events": 4570,
+  "generated_at": "2026-07-08T00:35:15.005086+00:00",
+  "total_events": 4572,
   "total_burned": 6999432065,
-  "total_minted": 6716920189,
+  "total_minted": 6727740189,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4572,
+      "event_title": "NATO agrees to $50 billion in defense deals to placate Trump",
+      "event_url": "https://www.japantimes.co.jp/news/2026/07/08/world/politics/nato-50-billion-defense-trump/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.0,
+      "confidence": 7,
+      "justification": "NATO defense deals driven by political pressure risk misallocating resources and undermining social/environmental priorities. | While the NATO defense deals represent a tangible commitment to collective security and burden-sharing, the underlying motivation—placating political pressure—undermines the ethical integrity of the action. The potential misallocation of resources and diversion from social and environmental priorities introduces significant negative consequences, resulting in a net nega",
+      "tx_hash": "iovDtytZWVKmFg9nogANamMWGqPWUa3C6fgDgnHTqDEcrL9BDHLSqqJyz6xExFrsX7cMehPK1NKnJVzc6DYasp9",
+      "created_at": "2026-07-08T00:35:13.492447+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"NATO members commit to $50 billion in defense deals, demonstrating increased collective security investment and burden-sharing within the alliance\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The primary motivation appears to be placating a political figure rather than addressing genuine security needs, potentially leading to inefficient or misaligned defense spending\", \"affected_sdgs\": [8, 16], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Increased defense spending may divert resources from critical social and environmental priorities, exacerbating global inequalities and climate inaction\", \"affected_sdgs\": [1, 10, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 4571,
+      "event_title": "Russia moves closer to full Olympic return ahead of 2028 Los Angeles Games",
+      "event_url": "https://www.france24.com/en/europe/20260707-russia-moves-closer-to-full-olympic-return-ahead-of-2028-los-angeles-games",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.4,
+      "confidence": 7,
+      "justification": "Decision risks normalizing aggression and undermines global peace and justice norms. | While the decision offers a positive step for Russian athletes' inclusion in international sports, it risks normalizing state aggression and undermining global peace and justice principles.",
+      "tx_hash": "iovDtytZWVKmFg9nogANamMWGqPWUa3C6fgDgnHTqDEcrL9BDHLSqqJyz6xExFrsX7cMehPK1NKnJVzc6DYasp9",
+      "created_at": "2026-07-08T00:35:13.381409+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"Russian athletes may regain the opportunity to compete under their national flag and anthem, which could promote their visibility and inclusion in international sports.\", \"affected_sdgs\": [10, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The decision undermines the principle of accountability for state-sponsored aggression and may be seen as normalizing Russia's actions in Ukraine, violating international peace and justice norms.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1, 2, 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 4570,
       "event_title": "Computer Scientist Who Administered a Site Hosting Sexual Deepfakes Sentenced to One Year in Prison",
@@ -105201,8 +105247,8 @@
     "top_regions_destructive": [
       {
         "region": "Europe",
-        "mint_ratio": 0.776,
-        "events": 49
+        "mint_ratio": 0.78,
+        "events": 50
       },
       {
         "region": "Africa",
@@ -105258,7 +105304,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 0,
+        "net_minted": 10820000,
         "net_burned": 700000
       }
     ],
@@ -105276,7 +105322,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 66,
-        "negative": 116,
+        "negative": 118,
         "event_ids_positive": [
           4570,
           4569,
@@ -105346,6 +105392,8 @@
           4391
         ],
         "event_ids_negative": [
+          4572,
+          4571,
           4568,
           4567,
           4566,
@@ -105466,7 +105514,7 @@
       },
       "UDHR": {
         "positive": 23,
-        "negative": 85,
+        "negative": 87,
         "event_ids_positive": [
           4570,
           4564,
@@ -105493,6 +105541,8 @@
           4399
         ],
         "event_ids_negative": [
+          4572,
+          4571,
           4568,
           4567,
           4566,
@@ -105792,24 +105842,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 91.2,
-      "mainstream_pct": 8.8,
+      "niche_pct": 90.1,
+      "mainstream_pct": 9.9,
       "total_sources_used": 91,
-      "articles_processed": 183
+      "articles_processed": 185
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 183,
+      "total_events": 185,
       "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "NATO",
-        "count": 13,
+        "count": 14,
         "burn_count": 0,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          4572,
           4547,
           4542,
           4539,
@@ -106108,24 +106159,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 117,
+      "total_mint": 119,
       "direct_action": {
-        "count": 107,
-        "pct": 91.5
+        "count": 109,
+        "pct": 91.6
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 7.7
+        "pct": 7.6
       },
       "untyped": {
         "count": 1,
-        "pct": 0.9
+        "pct": 0.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3035,
+      "total_mint": 3037,
       "direct_action": {
-        "count": 2353,
+        "count": 2355,
         "pct": 77.5
       },
       "editorial_alarm": {
@@ -106139,8 +106190,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 77,
-      "institutional": 106,
-      "citizen_ratio": 0.421,
+      "institutional": 108,
+      "citizen_ratio": 0.416,
       "daily": [
         {
           "date": "2026-07-02",
@@ -106175,7 +106226,7 @@
         {
           "date": "2026-07-08",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -106258,6 +106309,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4572,
+        4571,
         4570,
         4569,
         4567,
