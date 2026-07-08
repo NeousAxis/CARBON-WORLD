@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-08T13:34:44.153549+00:00",
-  "total_events": 4614,
+  "generated_at": "2026-07-08T14:05:13.126159+00:00",
+  "total_events": 4616,
   "total_burned": 7024234065,
-  "total_minted": 6821528689,
+  "total_minted": 6830418689,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4616,
+      "event_title": "EU’s solar and wind growing ‘far too slowly’ to meet 2030 target – report",
+      "event_url": "https://www.pv-tech.org/eu-solar-wind-growing-too-slowly-2030-target-report-ecno/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "MINT",
+      "amount_crbn": 600000,
+      "final_score": -1.76,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Systemic barriers in EU renewables expansion undermine climate action despite good intentions. | The EU's commitment to renewable energy expansion is a positive step toward climate action (SDG 7, 13), but systemic barriers like grid bottlenecks and permitting delays are undermining progress. These obstacles risk delaying critical climate targets, creating a net negative impact ",
+      "tx_hash": "ThNwBeN65hT5uFRyWmkBKSy1XRBpfseieXA1VKvi8nExKCRofCwiuteWARdvastLrdeewL1YznwPtt9c3mF3GnF",
+      "created_at": "2026-07-08T14:05:11.190966+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU's continued focus on solar and wind energy expansion as part of climate targets\", \"affected_sdgs\": [7, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Grid bottlenecks, permitting delays, and flexibility limitations slowing renewable energy growth in the EU\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 4615,
+      "event_title": "Trump on Iran: US will probably hit them again Wednesday night",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/trump-iran-us-will-probably-hit-them-again-wednesday-night",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 8290000,
+      "final_score": -6.25,
+      "confidence": 9,
+      "justification": "Unilateral military escalation violates peace and human rights, risking regional destabilization. | The action constitutes a clear escalation of military aggression, violating core human rights principles of peace, security, and diplomatic resolution. The unilateral declaration of the end of a ceasefire framework removes a critical de-escalation mechanism, increasing the likelihood of sustained violence and humanitarian harm. The magnitude of the negative impact is severe, with potential regiona",
+      "tx_hash": "WDjw7vKvHeVwJLZDBCiCAsRws8HHsF7dNuNVvCEQ1K9Dt38zWGqjDcqFSHqkhmyVqSBF9nUEwv9L9baHWKWoZ5a",
+      "created_at": "2026-07-08T14:05:11.029346+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US President Donald Trump threatens additional military strikes against Iran, escalating conflict and undermining diplomatic efforts\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2(1)\", \"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Trump declares a previously agreed ceasefire memorandum 'over', removing a diplomatic framework and increasing risk of prolonged conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 8290000
+    },
     {
       "id": 4614,
       "event_title": "Funding Withheld: Treasury Insists R13.5bn Municipal Freeze Is Corrective, But Service Delivery Fears Remain",
@@ -106270,7 +106316,7 @@
       },
       {
         "date": "2026-07-08",
-        "net_minted": 104608500,
+        "net_minted": 113498500,
         "net_burned": 25502000
       }
     ],
@@ -106288,7 +106334,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 76,
-        "negative": 150,
+        "negative": 152,
         "event_ids_positive": [
           4613,
           4612,
@@ -106368,6 +106414,8 @@
           4391
         ],
         "event_ids_negative": [
+          4616,
+          4615,
           4614,
           4610,
           4609,
@@ -106522,7 +106570,7 @@
       },
       "UDHR": {
         "positive": 30,
-        "negative": 115,
+        "negative": 116,
         "event_ids_positive": [
           4613,
           4611,
@@ -106556,6 +106604,7 @@
           4399
         ],
         "event_ids_negative": [
+          4615,
           4614,
           4610,
           4609,
@@ -106922,11 +106971,11 @@
       "niche_pct": 82.7,
       "mainstream_pct": 17.3,
       "total_sources_used": 98,
-      "articles_processed": 227
+      "articles_processed": 229
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 227,
+      "total_events": 229,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -106970,6 +107019,18 @@
         ]
       },
       {
+        "name": "EU",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          4616,
+          4552,
+          4448,
+          4443
+        ]
+      },
+      {
         "name": "UN",
         "count": 4,
         "burn_count": 0,
@@ -106979,17 +107040,6 @@
           4544,
           4498,
           4442
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          4552,
-          4448,
-          4443
         ]
       },
       {
@@ -107034,10 +107084,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 42,
+        "count": 43,
         "burn_count": 18,
-        "mint_count": 24,
+        "mint_count": 25,
         "event_ids": [
+          4616,
           4607,
           4594,
           4587,
@@ -107084,10 +107135,11 @@
       },
       {
         "name": "Defense",
-        "count": 22,
+        "count": 23,
         "burn_count": 0,
-        "mint_count": 22,
+        "mint_count": 23,
         "event_ids": [
+          4615,
           4598,
           4586,
           4583,
@@ -107260,14 +107312,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 151,
+      "total_mint": 153,
       "direct_action": {
-        "count": 141,
-        "pct": 93.4
+        "count": 143,
+        "pct": 93.5
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 6.0
+        "pct": 5.9
       },
       "untyped": {
         "count": 1,
@@ -107275,9 +107327,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3069,
+      "total_mint": 3071,
       "direct_action": {
-        "count": 2387,
+        "count": 2389,
         "pct": 77.8
       },
       "editorial_alarm": {
@@ -107291,8 +107343,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 88,
-      "institutional": 139,
-      "citizen_ratio": 0.388,
+      "institutional": 141,
+      "citizen_ratio": 0.384,
       "daily": [
         {
           "date": "2026-07-02",
@@ -107327,7 +107379,7 @@
         {
           "date": "2026-07-08",
           "citizen": 11,
-          "institutional": 34
+          "institutional": 36
         }
       ],
       "event_ids_citizen": [
@@ -107421,6 +107473,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4616,
+        4615,
         4613,
         4610,
         4609,
