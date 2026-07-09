@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-09T06:05:37.718714+00:00",
-  "total_events": 4684,
+  "generated_at": "2026-07-09T06:34:52.068226+00:00",
+  "total_events": 4685,
   "total_burned": 7080564865,
-  "total_minted": 6939398889,
+  "total_minted": 6939898889,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4685,
+      "event_title": "How a Palestinian town is defending itself from Israeli settler attacks",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/how-palestinian-town-defending-itself-israeli-settler-attacks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -4.58,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Grassroots defense in response to systemic failure and violence is ethically negative due to the context of institutional harm. | The formation of a grassroots defense group in Sinjil is a positive act of community resilience and self-protection, aligning with human rights frameworks. However, this action is a direct response to systemic failures in protection and escalating",
+      "tx_hash": "61iR3a1Yn9HmLF8PtuqMv5Ziy5spfeMckJFgNYL3MbiwCKAJYV8kRcTppKgfimucaFfuY3cPzW3enK38nc4VhMAM",
+      "created_at": "2026-07-09T06:34:49.828318+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Palestinian community in Sinjil forms grassroots volunteer group to defend against settler violence, demonstrating collective self-protection and resilience\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rising Israeli settler violence in the West Bank and perceived failure of Israeli military/government to prevent attacks, indicating systemic failure of protection and escalation of conflict\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 4684,
       "event_title": "Varroa risk to Tasmanian crop pollination",
@@ -107823,8 +107846,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.8,
-        "events": 5
+        "mint_ratio": 0.833,
+        "events": 6
       },
       {
         "region": "Europe",
@@ -107880,7 +107903,7 @@
       },
       {
         "date": "2026-07-09",
-        "net_minted": 30673300,
+        "net_minted": 31173300,
         "net_burned": 6791400
       }
     ],
@@ -107898,7 +107921,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 100,
-        "negative": 193,
+        "negative": 194,
         "event_ids_positive": [
           4682,
           4678,
@@ -108002,6 +108025,7 @@
           4391
         ],
         "event_ids_negative": [
+          4685,
           4684,
           4683,
           4681,
@@ -108199,7 +108223,7 @@
       },
       "UDHR": {
         "positive": 40,
-        "negative": 147,
+        "negative": 148,
         "event_ids_positive": [
           4682,
           4674,
@@ -108243,6 +108267,7 @@
           4399
         ],
         "event_ids_negative": [
+          4685,
           4683,
           4680,
           4677,
@@ -108696,11 +108721,11 @@
       "niche_pct": 74.1,
       "mainstream_pct": 25.9,
       "total_sources_used": 112,
-      "articles_processed": 297
+      "articles_processed": 298
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 297,
+      "total_events": 298,
       "pct": 1.3
     },
     "active_partners_7d": [],
@@ -109088,9 +109113,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 197,
+      "total_mint": 198,
       "direct_action": {
-        "count": 182,
+        "count": 183,
         "pct": 92.4
       },
       "editorial_alarm": {
@@ -109103,10 +109128,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3115,
+      "total_mint": 3116,
       "direct_action": {
-        "count": 2428,
-        "pct": 77.9
+        "count": 2429,
+        "pct": 78.0
       },
       "editorial_alarm": {
         "count": 188,
@@ -109118,9 +109143,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 112,
+      "citizen": 113,
       "institutional": 185,
-      "citizen_ratio": 0.377,
+      "citizen_ratio": 0.379,
       "daily": [
         {
           "date": "2026-07-03",
@@ -109154,11 +109179,12 @@
         },
         {
           "date": "2026-07-09",
-          "citizen": 7,
+          "citizen": 8,
           "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        4685,
         4679,
         4677,
         4672,
