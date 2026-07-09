@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-09T05:36:11.034467+00:00",
-  "total_events": 4682,
+  "generated_at": "2026-07-09T06:05:37.718714+00:00",
+  "total_events": 4684,
   "total_burned": 7080564865,
-  "total_minted": 6939173889,
+  "total_minted": 6939398889,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4684,
+      "event_title": "Varroa risk to Tasmanian crop pollination",
+      "event_url": "https://phys.org/news/2026-07-varroa-tasmanian-crop-pollination.html",
+      "event_source": "Phys.org",
+      "decision": "MINT",
+      "amount_crbn": 125000,
+      "final_score": -2.56,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Scientific assessment of ecological threat with potential severe agricultural and biodiversity impacts. | The study by TIA serves as a proactive scientific assessment of an ecological threat, aligning with SDG 2 (Zero Hunger) and SDG 15 (Life on Land) by highlighting risks to pollination-dependent agriculture and biodiversity. However, the underlying risk of Varroa mite establi",
+      "tx_hash": "3iVDNoDqLgybwmxhUhLPcK1yi4kciF4tRyjBq41DZjuayeM5J652mnFuq2eXRumEZxhXVrunvfEajyDssCGxRxTY",
+      "created_at": "2026-07-09T06:05:35.407709+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Tasmanian Institute of Agriculture (TIA) conducts research to assess Varroa mite impact on crop pollination, raising awareness of ecological and agricultural risks\", \"affected_sdgs\": [2, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential establishment of Varroa mites in Tasmania threatens feral honeybee colonies, risking pollination-dependent crops and biodiversity\", \"affected_sdgs\": [2, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 4683,
+      "event_title": "Thai court greenlights government's $12bn emergency borrowing",
+      "event_url": "https://asia.nikkei.com/politics/thai-court-greenlights-government-s-12bn-emergency-borrowing",
+      "event_source": "Nikkei Asia",
+      "decision": "MINT",
+      "amount_crbn": 100000,
+      "final_score": -2.0,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The institutional action enables short-term crisis response but introduces long-term debt risks. | The court's decision enables short-term crisis response and economic stability (SDG 1, 3, 8) but risks long-term debt sustainability and institutional erosion of democratic oversight (SDG 16). The net ethical balance leans negative due to the high magnitude of potential future ",
+      "tx_hash": "4mRuftAnMCbzZWye89PHGpFpJRDVW8Ct4W9tTgAfH9omHT1uT39d9e6tCqxkhMcn576fQgXb5BmhrKfEw8A4t8a5",
+      "created_at": "2026-07-09T06:05:35.318332+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Thailand",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Thai court upholds government's emergency borrowing plan, enabling fiscal response to crises without immediate austerity measures\", \"affected_sdgs\": [1, 3, 8, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Emergency borrowing of $12 billion increases national debt burden, potentially limiting future fiscal flexibility and crowding out social/environmental investments\", \"affected_sdgs\": [8, 10, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Court ruling may set precedent for bypassing parliamentary oversight on large-scale borrowing, weakening institutional checks and balances\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 4682,
       "event_title": "South Africa: Over 1,000 in Western Cape Initiated on Lenacapavir",
@@ -107750,13 +107796,13 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.667,
-        "events": 12
+        "burn_ratio": 0.615,
+        "events": 13
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.455,
-        "events": 22
+        "burn_ratio": 0.435,
+        "events": 23
       },
       {
         "region": "Latin America",
@@ -107834,7 +107880,7 @@
       },
       {
         "date": "2026-07-09",
-        "net_minted": 30448300,
+        "net_minted": 30673300,
         "net_burned": 6791400
       }
     ],
@@ -107852,7 +107898,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 100,
-        "negative": 191,
+        "negative": 193,
         "event_ids_positive": [
           4682,
           4678,
@@ -107956,6 +108002,8 @@
           4391
         ],
         "event_ids_negative": [
+          4684,
+          4683,
           4681,
           4680,
           4679,
@@ -108151,7 +108199,7 @@
       },
       "UDHR": {
         "positive": 40,
-        "negative": 146,
+        "negative": 147,
         "event_ids_positive": [
           4682,
           4674,
@@ -108195,6 +108243,7 @@
           4399
         ],
         "event_ids_negative": [
+          4683,
           4680,
           4677,
           4676,
@@ -108476,7 +108525,7 @@
       },
       "Animal": {
         "positive": 39,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           4678,
           4668,
@@ -108519,6 +108568,7 @@
           4400
         ],
         "event_ids_negative": [
+          4684,
           4667,
           4645,
           4603,
@@ -108643,15 +108693,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 73.9,
-      "mainstream_pct": 26.1,
-      "total_sources_used": 111,
-      "articles_processed": 295
+      "niche_pct": 74.1,
+      "mainstream_pct": 25.9,
+      "total_sources_used": 112,
+      "articles_processed": 297
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 295,
-      "pct": 1.4
+      "total_events": 297,
+      "pct": 1.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -108942,10 +108992,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 11,
+        "count": 12,
         "burn_count": 9,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          4684,
           4661,
           4646,
           4617,
@@ -109037,10 +109088,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 195,
+      "total_mint": 197,
       "direct_action": {
-        "count": 180,
-        "pct": 92.3
+        "count": 182,
+        "pct": 92.4
       },
       "editorial_alarm": {
         "count": 11,
@@ -109048,13 +109099,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 2.1
+        "pct": 2.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3113,
+      "total_mint": 3115,
       "direct_action": {
-        "count": 2426,
+        "count": 2428,
         "pct": 77.9
       },
       "editorial_alarm": {
@@ -109068,8 +109119,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 112,
-      "institutional": 183,
-      "citizen_ratio": 0.38,
+      "institutional": 185,
+      "citizen_ratio": 0.377,
       "daily": [
         {
           "date": "2026-07-03",
@@ -109104,7 +109155,7 @@
         {
           "date": "2026-07-09",
           "citizen": 7,
-          "institutional": 13
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -109222,6 +109273,8 @@
         4388
       ],
       "event_ids_institutional": [
+        4684,
+        4683,
         4682,
         4681,
         4680,
