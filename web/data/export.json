@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-10T11:34:24.800799+00:00",
-  "total_events": 4797,
-  "total_burned": 7136432765,
-  "total_minted": 7049660589,
+  "generated_at": "2026-07-10T12:04:09.436521+00:00",
+  "total_events": 4799,
+  "total_burned": 7137108765,
+  "total_minted": 7050030589,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4799,
+      "event_title": "Kremlin says Russia is in touch with Turkey on fate of Russian S-400 missiles",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/kremlin-says-russia-touch-turkey-fate-russian-s-400-missiles",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 370000,
+      "final_score": -2.33,
+      "confidence": 6,
+      "justification": "Potential missile transfer risks regional stability and undermines peace. | The potential resale of Russian S-400 missiles by Turkey to a Gulf country raises concerns about regional instability and the escalation of military tensions, which undermines peace and justice.",
+      "tx_hash": "4AUjJj3JJvgesP8yaJYTrCdE6bDAEkzbAN7AxziJaMHCy6Y9QaveS1LikK7bwGEnbQ7AUDoqFTVXTfBM5t2zaoiu",
+      "created_at": "2026-07-10T12:04:06.323910+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Potential transfer of Russian S-400 missiles to a Gulf country could increase regional military tensions and destabilize the Middle East.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 37000
+    },
+    {
+      "id": 4798,
+      "event_title": "Greece rejects fossil gas terminal plan after campaigning by residents and environmental groups",
+      "event_url": "https://mastodon.social/@greenpeace/116895159672727911",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "BURN",
+      "amount_crbn": 676000,
+      "final_score": 6.01,
+      "confidence": 8,
+      "justification": "Citizen-led campaign blocks fossil gas terminal, advancing climate and biodiversity goals. | The rejection of the fossil gas terminal plan aligns with climate action (SDG 13) and protects marine ecosystems (SDG 14) and biodiversity (SDG 15). It also reflects the power of collective action by residents and environmental groups, reinforcing democratic participation and environmental justice. No significant negative aspects were identified in this action.",
+      "tx_hash": "4zuHQ1yB55BsEWsywmZhEniFMYVK7mohgR9Ta6A283EFykfQUKFD3Po4xgF3zdAoYXgVfuyk1N2S9w6ydrspVBkN",
+      "created_at": "2026-07-10T12:04:06.223660+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Greece",
+      "region": "Europe",
+      "administration": "Greece-ND",
+      "positive_aspects_json": "[{\"description\": \"Greek authorities rejected the Environmental Impact Assessment for a fossil gas terminal in the Pagasitikos Gulf following sustained campaigning by local residents and environmental groups\", \"affected_sdgs\": [7, 13, 14, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}, {\"description\": \"Citizen-led and NGO-driven campaign successfully blocked fossil fuel infrastructure, demonstrating effective grassroots action against climate-damaging projects\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 4797,
       "event_title": "Facing Bankruptcy, the Pittsburgh Post-Gazette Set to Live on After Sale to Nonprofit Journalism Institute",
@@ -110422,13 +110468,13 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.857,
-        "events": 7
+        "mint_ratio": 0.875,
+        "events": 8
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.758,
-        "events": 99
+        "mint_ratio": 0.75,
+        "events": 100
       },
       {
         "region": "Africa",
@@ -110479,8 +110525,8 @@
       },
       {
         "date": "2026-07-10",
-        "net_minted": 33077900,
-        "net_burned": 17078600
+        "net_minted": 33447900,
+        "net_burned": 17754600
       }
     ],
     "event_of_the_day": {
@@ -110496,9 +110542,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 130,
-        "negative": 276,
+        "positive": 131,
+        "negative": 277,
         "event_ids_positive": [
+          4798,
           4797,
           4793,
           4791,
@@ -110631,6 +110678,7 @@
           4391
         ],
         "event_ids_negative": [
+          4799,
           4796,
           4795,
           4794,
@@ -111266,9 +111314,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 34,
+        "positive": 35,
         "negative": 55,
         "event_ids_positive": [
+          4798,
           4789,
           4754,
           4734,
@@ -111363,9 +111412,10 @@
         ]
       },
       "Animal": {
-        "positive": 44,
+        "positive": 45,
         "negative": 24,
         "event_ids_positive": [
+          4798,
           4789,
           4776,
           4762,
@@ -111439,9 +111489,10 @@
         ]
       },
       "PB": {
-        "positive": 64,
+        "positive": 65,
         "negative": 64,
         "event_ids_positive": [
+          4798,
           4793,
           4789,
           4787,
@@ -111579,11 +111630,11 @@
       "niche_pct": 61.0,
       "mainstream_pct": 39.0,
       "total_sources_used": 118,
-      "articles_processed": 410
+      "articles_processed": 412
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 410,
+      "total_events": 412,
       "pct": 1.0
     },
     "active_partners_7d": [],
@@ -111723,10 +111774,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 67,
-        "burn_count": 29,
+        "count": 68,
+        "burn_count": 30,
         "mint_count": 38,
         "event_ids": [
+          4798,
           4796,
           4787,
           4783,
@@ -111797,6 +111849,56 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 42,
+        "burn_count": 1,
+        "mint_count": 41,
+        "event_ids": [
+          4799,
+          4755,
+          4731,
+          4729,
+          4718,
+          4696,
+          4690,
+          4677,
+          4676,
+          4673,
+          4665,
+          4664,
+          4659,
+          4654,
+          4651,
+          4638,
+          4637,
+          4633,
+          4618,
+          4615,
+          4598,
+          4586,
+          4583,
+          4581,
+          4580,
+          4573,
+          4563,
+          4554,
+          4547,
+          4539,
+          4529,
+          4523,
+          4522,
+          4511,
+          4493,
+          4471,
+          4469,
+          4467,
+          4461,
+          4459,
+          4458,
+          4394
+        ]
+      },
+      {
         "name": "Finance",
         "count": 41,
         "burn_count": 13,
@@ -111843,55 +111945,6 @@
           4452,
           4421,
           4413
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 41,
-        "burn_count": 1,
-        "mint_count": 40,
-        "event_ids": [
-          4755,
-          4731,
-          4729,
-          4718,
-          4696,
-          4690,
-          4677,
-          4676,
-          4673,
-          4665,
-          4664,
-          4659,
-          4654,
-          4651,
-          4638,
-          4637,
-          4633,
-          4618,
-          4615,
-          4598,
-          4586,
-          4583,
-          4581,
-          4580,
-          4573,
-          4563,
-          4554,
-          4547,
-          4539,
-          4529,
-          4523,
-          4522,
-          4511,
-          4493,
-          4471,
-          4469,
-          4467,
-          4461,
-          4459,
-          4458,
-          4394
         ]
       },
       {
@@ -112027,14 +112080,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 130,
+      "total_burn": 131,
       "direct_action": {
-        "count": 119,
-        "pct": 91.5
+        "count": 120,
+        "pct": 91.6
       },
       "editorial_consciousness": {
         "count": 11,
-        "pct": 8.5
+        "pct": 8.4
       },
       "untyped": {
         "count": 0,
@@ -112042,9 +112095,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1591,
+      "total_burn": 1592,
       "direct_action": {
-        "count": 1218,
+        "count": 1219,
         "pct": 76.6
       },
       "editorial_consciousness": {
@@ -112057,9 +112110,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 280,
+      "total_mint": 281,
       "direct_action": {
-        "count": 257,
+        "count": 258,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -112072,9 +112125,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3198,
+      "total_mint": 3199,
       "direct_action": {
-        "count": 2503,
+        "count": 2504,
         "pct": 78.3
       },
       "editorial_alarm": {
@@ -112087,9 +112140,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 149,
-      "institutional": 261,
-      "citizen_ratio": 0.363,
+      "citizen": 150,
+      "institutional": 262,
+      "citizen_ratio": 0.364,
       "daily": [
         {
           "date": "2026-07-04",
@@ -112123,11 +112176,12 @@
         },
         {
           "date": "2026-07-10",
-          "citizen": 13,
-          "institutional": 22
+          "citizen": 14,
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
+        4798,
         4797,
         4792,
         4789,
@@ -112279,6 +112333,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4799,
         4796,
         4795,
         4794,
