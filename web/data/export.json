@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-11T02:34:16.378668+00:00",
-  "total_events": 4851,
+  "generated_at": "2026-07-11T03:04:24.592098+00:00",
+  "total_events": 4852,
   "total_burned": 7172534265,
-  "total_minted": 7113355709,
+  "total_minted": 7113370709,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4852,
+      "event_title": "Pollination responses to artificial light at night may vary with lighting arrangement",
+      "event_url": "https://www.biorxiv.org/content/10.64898/2026.07.10.737511v1?rss=1",
+      "event_source": "bioRxiv Ecology",
+      "decision": "MINT",
+      "amount_crbn": 15000,
+      "final_score": -1.23,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Study reveals ecological risks of ALAN outweigh potential pollination benefits. | The study reveals a nuanced interaction where specific lighting configurations may temporarily boost pollination but also highlights the broader ecological disruption caused by artificial light at night. The net ethical judgment is mixed, with the potential benefits of linear light arrays outwe",
+      "tx_hash": "1vb9SGYrzLD6keomnSBMGo7Eoa8sXdw4om5E3WUNSpaysvF9agVfEXArwEPDfYFB2ninwsaUppLQMYmX2SicW9w",
+      "created_at": "2026-07-11T03:04:21.402570+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Field experiment demonstrates that linear arrays of low-intensity LED lights may enhance nocturnal pollination success in moth-pollinated plants by increasing seed-set probability and reproductive output compared to unlit controls.\", \"affected_sdgs\": [15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Artificial light at night (ALAN) disrupts nocturnal ecosystems and may alter pollinator behavior, even if some configurations show temporary benefits to pollination.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 4851,
       "event_title": "Microsoft Reports a Massive 25 Percent Jump in Emissions",
@@ -111721,7 +111744,7 @@
       },
       {
         "date": "2026-07-11",
-        "net_minted": 9205000,
+        "net_minted": 9220000,
         "net_burned": 7460000
       }
     ],
@@ -111739,7 +111762,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 150,
-        "negative": 308,
+        "negative": 309,
         "event_ids_positive": [
           4850,
           4848,
@@ -111893,6 +111916,7 @@
           4391
         ],
         "event_ids_negative": [
+          4852,
           4851,
           4849,
           4847,
@@ -112706,7 +112730,7 @@
       },
       "Animal": {
         "positive": 48,
-        "negative": 26,
+        "negative": 27,
         "event_ids_positive": [
           4822,
           4819,
@@ -112758,6 +112782,7 @@
           4400
         ],
         "event_ids_negative": [
+          4852,
           4835,
           4808,
           4786,
@@ -112941,14 +112966,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 61.0,
-      "mainstream_pct": 39.0,
+      "niche_pct": 60.2,
+      "mainstream_pct": 39.8,
       "total_sources_used": 123,
-      "articles_processed": 464
+      "articles_processed": 465
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 464,
+      "total_events": 465,
       "pct": 1.3
     },
     "active_partners_7d": [],
@@ -113453,14 +113478,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 314,
+      "total_mint": 315,
       "direct_action": {
-        "count": 288,
+        "count": 289,
         "pct": 91.7
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 6.4
+        "pct": 6.3
       },
       "untyped": {
         "count": 6,
@@ -113468,9 +113493,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3232,
+      "total_mint": 3233,
       "direct_action": {
-        "count": 2534,
+        "count": 2535,
         "pct": 78.4
       },
       "editorial_alarm": {
@@ -113484,8 +113509,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 165,
-      "institutional": 299,
-      "citizen_ratio": 0.356,
+      "institutional": 300,
+      "citizen_ratio": 0.355,
       "daily": [
         {
           "date": "2026-07-05",
@@ -113520,7 +113545,7 @@
         {
           "date": "2026-07-11",
           "citizen": 2,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -113691,6 +113716,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4852,
         4851,
         4850,
         4847,
