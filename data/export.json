@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-11T01:04:38.138986+00:00",
-  "total_events": 4847,
-  "total_burned": 7165074265,
+  "generated_at": "2026-07-11T01:35:08.568062+00:00",
+  "total_events": 4848,
+  "total_burned": 7171834265,
   "total_minted": 7104650709,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4848,
+      "event_title": "Interview: COP31 president says electrification is 'surest way to protect citizens'",
+      "event_url": "https://www.carbonbrief.org/interview-cop31-president-says-electrification-is-surest-way-to-protect-citizens/",
+      "event_source": "Carbon Brief",
+      "decision": "BURN",
+      "amount_crbn": 6760000,
+      "final_score": 6.04,
+      "confidence": 8,
+      "justification": "Global electrification target advances climate action and public health with high potential impact. | The COP31 electrification target represents a significant step toward climate action and public health protection by reducing fossil fuel dependence. While the target lacks binding enforcement mechanisms, its global scope and alignment with SDGs 7, 11, and 13 justify a strong positive assessment. No direct ethical violations are identified.",
+      "tx_hash": "2HsPP4UMzWpvGNzfpcr5ir7o2uVB7QBS8fREnVisRyLoNyRyhVpPefZzzQqFD8CZ5K5bLJt43Agmf39VMN6BxtKo",
+      "created_at": "2026-07-11T01:35:05.214409+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"COP31 president-designate sets a global electrification target of 35% of final energy demand, aiming to reduce emissions and protect citizens from climate impacts\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Electrification initiative aligns with sustainable energy transitions, reducing reliance on fossil fuels and improving public health through cleaner air\", \"affected_sdgs\": [3, 7, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 4847,
       "event_title": "US extends work permits for Haitians, other immigrants with temporary protected status",
@@ -84,7 +107,7 @@
       "final_score": -2.72,
       "confidence": 6,
       "justification": "Semantic cache reuse (cosine=0.995) from event #4801",
-      "tx_hash": null,
+      "tx_hash": "5PSkomYqyp4XiD7CtJkATRMX1o4TYCd2WboDf1iPpFABo4ipnhQN3b7wPkoUjX8NFvJ1vcftWswzkFGoANfpGAzQ",
       "created_at": "2026-07-10T23:32:29.806773+00:00",
       "embedding": null,
       "reused_from_event_id": 4801,
@@ -245,7 +268,7 @@
       "final_score": -3.14,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.938) from event #4836",
-      "tx_hash": null,
+      "tx_hash": "FhMZZwHU2Vev4Gk1cH48MMsggtTUZEqiu9naAP9SPE8kBHDpfd54VngtCfFqF9Roa4ez1zmG8y7SRHchH9PUKbu",
       "created_at": "2026-07-10T21:02:56.398188+00:00",
       "embedding": null,
       "reused_from_event_id": 4836,
@@ -111624,13 +111647,13 @@
       },
       {
         "date": "2026-07-10",
-        "net_minted": 86643020,
+        "net_minted": 87568020,
         "net_burned": 45720100
       },
       {
         "date": "2026-07-11",
         "net_minted": 500000,
-        "net_burned": 0
+        "net_burned": 6760000
       }
     ],
     "event_of_the_day": {
@@ -111646,9 +111669,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 148,
+        "positive": 149,
         "negative": 306,
         "event_ids_positive": [
+          4848,
           4846,
           4845,
           4841,
@@ -112108,9 +112132,10 @@
         ]
       },
       "UDHR": {
-        "positive": 65,
+        "positive": 66,
         "negative": 227,
         "event_ids_positive": [
+          4848,
           4845,
           4834,
           4833,
@@ -112841,15 +112866,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.3,
-      "mainstream_pct": 39.7,
-      "total_sources_used": 121,
-      "articles_processed": 458
+      "niche_pct": 60.7,
+      "mainstream_pct": 39.3,
+      "total_sources_used": 122,
+      "articles_processed": 461
     },
     "cache_hit_rate_7d": {
-      "hits": 4,
-      "total_events": 458,
-      "pct": 0.9
+      "hits": 6,
+      "total_events": 461,
+      "pct": 1.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -112970,6 +112995,16 @@
         ]
       },
       {
+        "name": "COP",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
+        "event_ids": [
+          4848,
+          4431
+        ]
+      },
+      {
         "name": "IUCN",
         "count": 2,
         "burn_count": 0,
@@ -112978,24 +113013,16 @@
           4808,
           4735
         ]
-      },
-      {
-        "name": "World Bank",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          4815
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 76,
-        "burn_count": 36,
+        "count": 77,
+        "burn_count": 37,
         "mint_count": 40,
         "event_ids": [
+          4848,
           4846,
           4845,
           4831,
@@ -113320,14 +113347,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 148,
+      "total_burn": 149,
       "direct_action": {
         "count": 136,
-        "pct": 91.9
+        "pct": 91.3
       },
       "editorial_consciousness": {
-        "count": 12,
-        "pct": 8.1
+        "count": 13,
+        "pct": 8.7
       },
       "untyped": {
         "count": 0,
@@ -113335,37 +113362,37 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1609,
+      "total_burn": 1610,
       "direct_action": {
         "count": 1235,
-        "pct": 76.8
+        "pct": 76.7
       },
       "editorial_consciousness": {
-        "count": 114,
+        "count": 115,
         "pct": 7.1
       },
       "untyped": {
         "count": 260,
-        "pct": 16.2
+        "pct": 16.1
       }
     },
     "mint_composition_7d": {
-      "total_mint": 310,
+      "total_mint": 312,
       "direct_action": {
         "count": 286,
-        "pct": 92.3
+        "pct": 91.7
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 6.5
+        "pct": 6.4
       },
       "untyped": {
-        "count": 4,
-        "pct": 1.3
+        "count": 6,
+        "pct": 1.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3228,
+      "total_mint": 3230,
       "direct_action": {
         "count": 2532,
         "pct": 78.4
@@ -113375,13 +113402,13 @@
         "pct": 6.1
       },
       "untyped": {
-        "count": 499,
+        "count": 501,
         "pct": 15.5
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 163,
-      "institutional": 295,
+      "citizen": 164,
+      "institutional": 297,
       "citizen_ratio": 0.356,
       "daily": [
         {
@@ -113412,15 +113439,16 @@
         {
           "date": "2026-07-10",
           "citizen": 27,
-          "institutional": 55
+          "institutional": 57
         },
         {
           "date": "2026-07-11",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        4848,
         4839,
         4835,
         4834,
@@ -113589,11 +113617,13 @@
         4847,
         4846,
         4845,
+        4844,
         4843,
         4842,
         4841,
         4840,
         4838,
+        4837,
         4836,
         4832,
         4831,
