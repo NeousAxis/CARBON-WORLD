@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-10T23:34:40.210602+00:00",
-  "total_events": 4846,
+  "generated_at": "2026-07-11T00:04:26.064087+00:00",
+  "total_events": 4847,
   "total_burned": 7165074265,
-  "total_minted": 7104150709,
+  "total_minted": 7104650709,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4847,
+      "event_title": "US extends work permits for Haitians, other immigrants with temporary protected status",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/us-extends-work-permits-haitians-other-immigrants-temporary-protected-status",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 3.09,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Protects rights and prevents harm by extending work permits and delaying deportations. | The extension of work permits is a positive step that mitigates immediate harm to hundreds of thousands of immigrants by preserving their economic stability and reducing deportation risk. However, the temporary nature of the relief and the lack of a permanent solution leave recipients in",
+      "tx_hash": "K3s7HhFVwpvxGqqALCnuNMNKyALqjF5HJacGc7WBJ6vpnxsKC72Z9Lm7D8reouGVXbowHRCCNVTqJfax5FGRvjb",
+      "created_at": "2026-07-11T00:04:22.895242+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"U.S. administration extends work permits for hundreds of thousands of immigrants with temporary protected status from Haiti and six other countries, preventing immediate loss of legal work authorization and economic stability.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Extension provides temporary relief from deportation risk and allows continued employment, supporting livelihoods and reducing economic vulnerability for affected immigrant communities.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Extension is temporary and does not resolve long-term immigration status or provide a pathway to permanent residency, leaving recipients in legal limbo.\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 14\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Decision is made by an administration with a history of restrictive immigration policies, raising concerns about future reversals or additional restrictions.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 13\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 50500
+    },
     {
       "id": 4846,
       "event_title": "India's clean energy capacity has now overtaken fossil fuels — and supplied more than half the country's electricity during peak demand this week",
@@ -111468,8 +111491,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 57,
-        "total_amount": 93839500
+        "count": 58,
+        "total_amount": 94339500
       },
       {
         "country": "France",
@@ -111532,8 +111555,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.381,
-        "events": 97
+        "burn_ratio": 0.378,
+        "events": 98
       },
       {
         "region": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.619,
-        "events": 97
+        "mint_ratio": 0.622,
+        "events": 98
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-07-04",
-        "net_minted": 0,
-        "net_burned": 0
-      },
       {
         "date": "2026-07-05",
         "net_minted": 0,
@@ -111608,6 +111626,11 @@
         "date": "2026-07-10",
         "net_minted": 86643020,
         "net_burned": 45720100
+      },
+      {
+        "date": "2026-07-11",
+        "net_minted": 500000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -111624,7 +111647,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 148,
-        "negative": 305,
+        "negative": 306,
         "event_ids_positive": [
           4846,
           4845,
@@ -111776,6 +111799,7 @@
           4391
         ],
         "event_ids_negative": [
+          4847,
           4843,
           4842,
           4840,
@@ -112085,7 +112109,7 @@
       },
       "UDHR": {
         "positive": 65,
-        "negative": 226,
+        "negative": 227,
         "event_ids_positive": [
           4845,
           4834,
@@ -112154,6 +112178,7 @@
           4399
         ],
         "event_ids_negative": [
+          4847,
           4843,
           4842,
           4838,
@@ -112819,11 +112844,11 @@
       "niche_pct": 60.3,
       "mainstream_pct": 39.7,
       "total_sources_used": 121,
-      "articles_processed": 457
+      "articles_processed": 458
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 457,
+      "total_events": 458,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -113325,10 +113350,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 309,
+      "total_mint": 310,
       "direct_action": {
-        "count": 285,
-        "pct": 92.2
+        "count": 286,
+        "pct": 92.3
       },
       "editorial_alarm": {
         "count": 20,
@@ -113340,9 +113365,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3227,
+      "total_mint": 3228,
       "direct_action": {
-        "count": 2531,
+        "count": 2532,
         "pct": 78.4
       },
       "editorial_alarm": {
@@ -113356,14 +113381,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 163,
-      "institutional": 294,
-      "citizen_ratio": 0.357,
+      "institutional": 295,
+      "citizen_ratio": 0.356,
       "daily": [
-        {
-          "date": "2026-07-04",
-          "citizen": 0,
-          "institutional": 0
-        },
         {
           "date": "2026-07-05",
           "citizen": 0,
@@ -113393,6 +113413,11 @@
           "date": "2026-07-10",
           "citizen": 27,
           "institutional": 55
+        },
+        {
+          "date": "2026-07-11",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -113561,6 +113586,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4847,
         4846,
         4845,
         4843,
