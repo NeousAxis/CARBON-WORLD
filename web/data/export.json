@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-11T08:04:17.942426+00:00",
-  "total_events": 4866,
+  "generated_at": "2026-07-11T08:34:56.715461+00:00",
+  "total_events": 4867,
   "total_burned": 7179970665,
-  "total_minted": 7151933809,
+  "total_minted": 7152083809,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4867,
+      "event_title": "Meta removes AI feature on Instagram after global backlash",
+      "event_url": "https://www.rnz.co.nz/news/science-and-technology/700735/missed-the-mark-meta-removes-ai-feature-on-instagram-after-global-backlash",
+      "event_source": "RNZ Pacific (Radio NZ)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.15,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Meta's removal of the AI feature corrects a rights-violating action, aligning with ethical protections. | Meta's decision to remove the AI feature after public backlash reflects a positive response to ethical concerns, but the initial rollout violated user rights and privacy expectations.",
+      "tx_hash": "3nQ3T8VFh3HX3X9iqTZYYkQnNqYUhLx5qJYb5C8yf6r4yDiG8R9cdkykCAdxZYENwDZMABafeMoZtnZBA2WdVgPF",
+      "created_at": "2026-07-11T08:34:53.236917+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Meta removes AI feature after public backlash, addressing privacy and ethical concerns.\", \"affected_sdgs\": [16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Initial rollout of the AI feature raised concerns about data misuse and lack of user consent.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 17\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 667000
+    },
     {
       "id": 4866,
       "event_title": "How overlapping US and China sanctions are complicating business in Africa",
@@ -111928,8 +111951,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 60,
-        "total_amount": 101208500
+        "count": 61,
+        "total_amount": 101358500
       },
       {
         "country": "France",
@@ -111992,8 +112015,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.382,
-        "events": 102
+        "burn_ratio": 0.379,
+        "events": 103
       },
       {
         "region": "Europe",
@@ -112029,8 +112052,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.618,
-        "events": 102
+        "mint_ratio": 0.621,
+        "events": 103
       }
     ],
     "supply_trend_7d": [
@@ -112066,7 +112089,7 @@
       },
       {
         "date": "2026-07-11",
-        "net_minted": 47783100,
+        "net_minted": 47933100,
         "net_burned": 14896400
       }
     ],
@@ -112084,7 +112107,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 156,
-        "negative": 317,
+        "negative": 318,
         "event_ids_positive": [
           4862,
           4858,
@@ -112244,6 +112267,7 @@
           4391
         ],
         "event_ids_negative": [
+          4867,
           4866,
           4865,
           4864,
@@ -112565,7 +112589,7 @@
       },
       "UDHR": {
         "positive": 69,
-        "negative": 235,
+        "negative": 236,
         "event_ids_positive": [
           4858,
           4853,
@@ -112638,6 +112662,7 @@
           4399
         ],
         "event_ids_negative": [
+          4867,
           4866,
           4864,
           4863,
@@ -113326,15 +113351,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 60.2,
-      "mainstream_pct": 39.8,
+      "niche_pct": 59.3,
+      "mainstream_pct": 40.7,
       "total_sources_used": 123,
-      "articles_processed": 479
+      "articles_processed": 480
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 479,
-      "pct": 1.3
+      "total_events": 480,
+      "pct": 1.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -113794,23 +113819,23 @@
         ]
       },
       {
-        "name": "Transport",
+        "name": "Tech",
         "count": 12,
-        "burn_count": 5,
-        "mint_count": 7,
+        "burn_count": 2,
+        "mint_count": 10,
         "event_ids": [
-          4782,
-          4769,
-          4746,
-          4744,
-          4704,
-          4624,
-          4619,
-          4610,
-          4569,
-          4558,
-          4507,
-          4429
+          4867,
+          4851,
+          4849,
+          4827,
+          4818,
+          4800,
+          4794,
+          4793,
+          4773,
+          4760,
+          4482,
+          4441
         ]
       }
     ],
@@ -113845,9 +113870,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 323,
+      "total_mint": 324,
       "direct_action": {
-        "count": 297,
+        "count": 298,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -113860,9 +113885,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3241,
+      "total_mint": 3242,
       "direct_action": {
-        "count": 2543,
+        "count": 2544,
         "pct": 78.5
       },
       "editorial_alarm": {
@@ -113876,8 +113901,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 168,
-      "institutional": 311,
-      "citizen_ratio": 0.351,
+      "institutional": 312,
+      "citizen_ratio": 0.35,
       "daily": [
         {
           "date": "2026-07-05",
@@ -113912,7 +113937,7 @@
         {
           "date": "2026-07-11",
           "citizen": 5,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -114086,6 +114111,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4867,
         4866,
         4865,
         4864,
