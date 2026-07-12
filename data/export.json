@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-12T01:04:06.707007+00:00",
-  "total_events": 4913,
+  "generated_at": "2026-07-12T01:34:17.595681+00:00",
+  "total_events": 4914,
   "total_burned": 7201871065,
-  "total_minted": 7209241709,
+  "total_minted": 7217531709,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4914,
+      "event_title": "Iran declares Strait of Hormuz closed as 'unauthorised' vessel hit",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/iran-declares-strait-hormuz-closed-unauthorised-vessel-hit",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 8290000,
+      "final_score": -7.19,
+      "confidence": 9,
+      "justification": "Unilateral closure of a critical global chokepoint violates international law and escalates geopolitical risks. | The closure of the Strait of Hormuz, a vital global shipping route, constitutes a severe violation of international maritime law and human rights, undermining freedom of navigation and global trade. The unilateral action by Iran's Revolutionary Guard Corps escalates regional tensions and poses significant risks to global supply chains and geopolitical stability.",
+      "tx_hash": "2Sy2jKgMH7KrGK5Zk7UbNujexWSaVj7YskfEQyGsosyL1FtNANtFaZBg3Nybipp82PdaxwbdTfKE6T39EH69g28F",
+      "created_at": "2026-07-12T01:34:14.111827+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Iran's Revolutionary Guard Corps closed the Strait of Hormuz, a critical global maritime chokepoint, after a vessel allegedly traveled on an unapproved route, citing maritime security concerns and issuing threats of severe retaliation.\", \"affected_sdgs\": [14], \"violated_rights\": [\"UDHR Article 13 (Freedom of Movement)\", \"UDHR Article 17 (Right to Property)\", \"UN Convention on the Law of the Sea (UNCLOS) - freedom of navigation\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 8290000
+    },
     {
       "id": 4913,
       "event_title": "Trump administration panned for New York Times subpoenas",
@@ -113147,25 +113170,25 @@
       },
       {
         "date": "2026-07-12",
-        "net_minted": 1352000,
+        "net_minted": 9642000,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 4908,
-      "event_title": "US judge dismisses January 6 case against Proud Boys after Trump order",
+      "id": 4914,
+      "event_title": "Iran declares Strait of Hormuz closed as 'unauthorised' vessel hit",
       "decision": "MINT",
-      "amount_crbn": 748000,
-      "final_score": -6.91,
-      "confidence": 8,
-      "country": "United States",
-      "region": "North America",
-      "created_at": "2026-07-11T22:34:16.612805+00:00"
+      "amount_crbn": 8290000,
+      "final_score": -7.19,
+      "confidence": 9,
+      "country": null,
+      "region": null,
+      "created_at": "2026-07-12T01:34:14.111827+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 165,
-        "negative": 355,
+        "negative": 356,
         "event_ids_positive": [
           4903,
           4902,
@@ -113334,6 +113357,7 @@
           4391
         ],
         "event_ids_negative": [
+          4914,
           4913,
           4912,
           4911,
@@ -113693,7 +113717,7 @@
       },
       "UDHR": {
         "positive": 72,
-        "negative": 267,
+        "negative": 268,
         "event_ids_positive": [
           4903,
           4895,
@@ -113769,6 +113793,7 @@
           4399
         ],
         "event_ids_negative": [
+          4914,
           4913,
           4912,
           4911,
@@ -114350,7 +114375,7 @@
       },
       "PB": {
         "positive": 80,
-        "negative": 83,
+        "negative": 84,
         "event_ids_positive": [
           4887,
           4873,
@@ -114434,6 +114459,7 @@
           4391
         ],
         "event_ids_negative": [
+          4914,
           4906,
           4905,
           4904,
@@ -114524,11 +114550,11 @@
       "niche_pct": 57.3,
       "mainstream_pct": 42.7,
       "total_sources_used": 124,
-      "articles_processed": 526
+      "articles_processed": 527
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 526,
+      "total_events": 527,
       "pct": 1.1
     },
     "active_partners_7d": [],
@@ -114984,6 +115010,28 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 14,
+        "burn_count": 5,
+        "mint_count": 9,
+        "event_ids": [
+          4914,
+          4909,
+          4782,
+          4769,
+          4746,
+          4744,
+          4704,
+          4624,
+          4619,
+          4610,
+          4569,
+          4558,
+          4507,
+          4429
+        ]
+      },
+      {
         "name": "Water",
         "count": 14,
         "burn_count": 6,
@@ -115002,28 +115050,6 @@
           4476,
           4466,
           4455,
-          4401
-        ]
-      },
-      {
-        "name": "Forestry",
-        "count": 14,
-        "burn_count": 7,
-        "mint_count": 7,
-        "event_ids": [
-          4793,
-          4780,
-          4770,
-          4762,
-          4686,
-          4644,
-          4603,
-          4587,
-          4549,
-          4484,
-          4479,
-          4474,
-          4402,
           4401
         ]
       }
@@ -115059,9 +115085,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 361,
+      "total_mint": 362,
       "direct_action": {
-        "count": 332,
+        "count": 333,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -115074,9 +115100,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3279,
+      "total_mint": 3280,
       "direct_action": {
-        "count": 2578,
+        "count": 2579,
         "pct": 78.6
       },
       "editorial_alarm": {
@@ -115090,8 +115116,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 181,
-      "institutional": 345,
-      "citizen_ratio": 0.344,
+      "institutional": 346,
+      "citizen_ratio": 0.343,
       "daily": [
         {
           "date": "2026-07-06",
@@ -115126,7 +115152,7 @@
         {
           "date": "2026-07-12",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -115313,6 +115339,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4914,
         4913,
         4912,
         4911,
