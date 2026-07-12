@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-12T11:04:53.889251+00:00",
-  "total_events": 4929,
+  "generated_at": "2026-07-12T11:34:17.033303+00:00",
+  "total_events": 4930,
   "total_burned": 7201998165,
-  "total_minted": 7253849509,
+  "total_minted": 7253999509,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4930,
+      "event_title": "Food Tank’s Weekly News Roundup: India Acts to Empower Women Farmers, $127 Million in USDA Grants Restored, Nigeria’s Hunger Crisis Worsens",
+      "event_url": "https://foodtank.com/news/2026/07/food-tanks-weekly-news-roundup-india-women-farmers-usda-grants-nigerias-hunger/",
+      "event_source": "Food Tank",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.11,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Positive actions in India and USDA are outweighed by Nigeria's worsening hunger crisis, a severe humanitarian failure. | The actions in India and the USDA restoration of grants represent significant positive steps toward gender equality, economic justice, and sustainable agriculture, aligning with multiple SDGs and human rights frameworks. However, Nigeria's deepening hunger cr",
+      "tx_hash": "4ZtZ1f6yMQEGxReKy28FqBr2q9xPScinPorqkM8RChqLs24EJHaqN4bJn7rfK2T2KRQAGvL9FU1F5vMrvDmQqBCq",
+      "created_at": "2026-07-12T11:34:12.421470+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Indian state legislation to empower women farmers by supporting their land rights and agricultural access\", \"affected_sdgs\": [1, 2, 5, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"UNDRIP\", \"CRC\"]}, {\"description\": \"USDA judge orders restoration of $127 million in grants, reversing a policy that likely restricted funding for sustainable agriculture or food security programs\", \"affected_sdgs\": [2, 8, 12, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Nigeria's hunger crisis worsens, indicating systemic failures in food security and governance\", \"affected_sdgs\": [1, 2, 3, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 4929,
       "event_title": "Iraqi prime minister to visit Washington on Monday; oil and gas deals expected",
@@ -113515,7 +113538,7 @@
       },
       {
         "date": "2026-07-12",
-        "net_minted": 45355800,
+        "net_minted": 45505800,
         "net_burned": 127100
       }
     ],
@@ -113533,7 +113556,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 167,
-        "negative": 368,
+        "negative": 369,
         "event_ids_positive": [
           4928,
           4923,
@@ -113704,6 +113727,7 @@
           4391
         ],
         "event_ids_negative": [
+          4930,
           4929,
           4927,
           4926,
@@ -114076,7 +114100,7 @@
       },
       "UDHR": {
         "positive": 73,
-        "negative": 275,
+        "negative": 276,
         "event_ids_positive": [
           4923,
           4903,
@@ -114153,6 +114177,7 @@
           4399
         ],
         "event_ids_negative": [
+          4930,
           4927,
           4925,
           4924,
@@ -114432,7 +114457,7 @@
       },
       "ILO": {
         "positive": 10,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [
           4902,
           4806,
@@ -114446,6 +114471,7 @@
           4399
         ],
         "event_ids_negative": [
+          4930,
           4745,
           4714,
           4708,
@@ -114466,7 +114492,7 @@
       },
       "CRC": {
         "positive": 14,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           4897,
           4853,
@@ -114484,6 +114510,7 @@
           4465
         ],
         "event_ids_negative": [
+          4930,
           4916,
           4886,
           4883,
@@ -114531,7 +114558,7 @@
       },
       "UNDRIP": {
         "positive": 41,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           4902,
           4890,
@@ -114576,6 +114603,7 @@
           4392
         ],
         "event_ids_negative": [
+          4930,
           4925,
           4924,
           4918,
@@ -114930,11 +114958,11 @@
       "niche_pct": 55.6,
       "mainstream_pct": 44.4,
       "total_sources_used": 124,
-      "articles_processed": 541
+      "articles_processed": 542
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 541,
+      "total_events": 542,
       "pct": 1.1
     },
     "active_partners_7d": [],
@@ -115350,10 +115378,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 21,
+        "count": 22,
         "burn_count": 11,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          4930,
           4919,
           4856,
           4800,
@@ -115480,10 +115509,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 374,
+      "total_mint": 375,
       "direct_action": {
-        "count": 345,
-        "pct": 92.2
+        "count": 346,
+        "pct": 92.3
       },
       "editorial_alarm": {
         "count": 23,
@@ -115495,9 +115524,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3292,
+      "total_mint": 3293,
       "direct_action": {
-        "count": 2591,
+        "count": 2592,
         "pct": 78.7
       },
       "editorial_alarm": {
@@ -115510,9 +115539,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 183,
+      "citizen": 184,
       "institutional": 358,
-      "citizen_ratio": 0.338,
+      "citizen_ratio": 0.339,
       "daily": [
         {
           "date": "2026-07-06",
@@ -115546,11 +115575,12 @@
         },
         {
           "date": "2026-07-12",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        4930,
         4925,
         4924,
         4909,
