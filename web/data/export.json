@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-07-13T00:04:27.054143+00:00",
-  "total_events": 4952,
+  "generated_at": "2026-07-13T00:34:31.633670+00:00",
+  "total_events": 4955,
   "total_burned": 7224384365,
-  "total_minted": 7265146609,
+  "total_minted": 7278816609,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4955,
+      "event_title": "Iran war live: US bombs Iranian cities again as Hormuz standoff intensifies",
+      "event_url": "https://www.aljazeera.com/news/liveblog/2026/7/13/iran-war-live-us-bombs-iranian-cities-again-as-hormuz-standoff-intensifies?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -6.29,
+      "confidence": 8,
+      "justification": "Military escalation in Hormuz region with high civilian risk | The reported US bombing of Iranian cities represents a severe escalation of violence with direct harm to civilian populations and infrastructure. It violates core human rights and undermines global peace and security.",
+      "tx_hash": "2oHA1ThHmbTjVkPJZ6oDAc422L9q6m9ha43oappEoDjpPnypMnPXy1VNUbTC5wEeSRzKsB1Ky2JXaFDkmfk3EV3P",
+      "created_at": "2026-07-13T00:34:27.633032+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US bombing of Iranian cities causes civilian harm and destruction\", \"affected_sdgs\": [3, 11, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 26\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 4954,
+      "event_title": "The coalition of volunteers for Ukraine meets in a summit in Paris",
+      "event_url": "https://www.france24.com/fr/france/20260712-coalition-volontaires-ukraine-reunie-en-sommet-paris-emmanuel-macron-russie-soutien-pression-volodymyr-zelensky",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.9,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action prioritizes pressure over dialogue, risking escalation and harm. | The summit represents a positive act of international solidarity and support for Ukraine's sovereignty, aligning with SDG 16 and UDHR principles. However, the emphasis on pressure over dialogue introduces ethical risks of escalation and prolonged conflict, which could undermine long-term ",
+      "tx_hash": "5M2L9UMYAzs5BZB25NrFb8VbjqLELqYFfixmcrQKmBggaCAUm2dGQLKLnytptYti5yHVuJdF41XYQCKcvefMKAvs",
+      "created_at": "2026-07-13T00:34:27.532284+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"International coalition of volunteers convenes a summit in Paris to increase support for Ukraine and pressure on Russia, demonstrating global solidarity and collective action against aggression\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"French President Emmanuel Macron hosts the summit, signaling diplomatic leadership and commitment to international law and sovereignty\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Ukrainian President Volodymyr Zelensky participates, reinforcing diplomatic engagement and international visibility for Ukraine's sovereignty and territorial integrity\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The summit's focus on increasing pressure on Russia may escalate tensions and prolong conflict, risking civilian harm and destabilization in the region\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The framing of the summit as a tool to pressure Russia could reinforce geopolitical divisions and undermine diplomatic efforts for peaceful resolution\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 50500
+    },
+    {
+      "id": 4953,
+      "event_title": "UN space database aimed at easing global tensions is mysteriously down",
+      "event_url": "https://www.newscientist.com/article/2533721-un-space-database-aimed-at-easing-global-tensions-is-mysteriously-down/?utm_campaign=RSS|NSNS&utm_content=news&utm_medium=RSS&utm_source=NSNS",
+      "event_source": "New Scientist",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.16,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #4823",
+      "tx_hash": null,
+      "created_at": "2026-07-13T00:32:42.597501+00:00",
+      "embedding": null,
+      "reused_from_event_id": 4823,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 4952,
       "event_title": "Live: War in Ukraine — Volodymyr Zelensky announces government reshuffle; departure of Prime Minister Ioulia Svyrydenko",
@@ -113987,8 +114056,8 @@
     "top_regions_destructive": [
       {
         "region": "MENA",
-        "mint_ratio": 0.9,
-        "events": 10
+        "mint_ratio": 0.909,
+        "events": 11
       },
       {
         "region": "Africa",
@@ -114044,7 +114113,7 @@
       },
       {
         "date": "2026-07-13",
-        "net_minted": 415000,
+        "net_minted": 8045000,
         "net_burned": 0
       }
     ],
@@ -114062,7 +114131,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 175,
-        "negative": 383,
+        "negative": 385,
         "event_ids_positive": [
           4951,
           4948,
@@ -114241,6 +114310,8 @@
           4391
         ],
         "event_ids_negative": [
+          4955,
+          4954,
           4952,
           4950,
           4949,
@@ -114628,7 +114699,7 @@
       },
       "UDHR": {
         "positive": 74,
-        "negative": 282,
+        "negative": 284,
         "event_ids_positive": [
           4935,
           4923,
@@ -114706,6 +114777,8 @@
           4399
         ],
         "event_ids_negative": [
+          4955,
+          4954,
           4952,
           4949,
           4946,
@@ -115509,11 +115582,11 @@
       "niche_pct": 54.8,
       "mainstream_pct": 45.2,
       "total_sources_used": 124,
-      "articles_processed": 564
+      "articles_processed": 566
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 564,
+      "total_events": 566,
       "pct": 1.1
     },
     "active_partners_7d": [],
@@ -115764,10 +115837,11 @@
       },
       {
         "name": "Defense",
-        "count": 53,
+        "count": 54,
         "burn_count": 1,
-        "mint_count": 52,
+        "mint_count": 53,
         "event_ids": [
+          4955,
           4944,
           4937,
           4922,
@@ -115886,10 +115960,11 @@
       },
       {
         "name": "Construction",
-        "count": 49,
+        "count": 50,
         "burn_count": 22,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          4955,
           4942,
           4936,
           4933,
@@ -116075,10 +116150,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 389,
+      "total_mint": 391,
       "direct_action": {
-        "count": 360,
-        "pct": 92.5
+        "count": 362,
+        "pct": 92.6
       },
       "editorial_alarm": {
         "count": 23,
@@ -116090,9 +116165,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3307,
+      "total_mint": 3309,
       "direct_action": {
-        "count": 2606,
+        "count": 2608,
         "pct": 78.8
       },
       "editorial_alarm": {
@@ -116105,8 +116180,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 191,
-      "institutional": 373,
+      "citizen": 192,
+      "institutional": 374,
       "citizen_ratio": 0.339,
       "daily": [
         {
@@ -116141,11 +116216,12 @@
         },
         {
           "date": "2026-07-13",
-          "citizen": 0,
-          "institutional": 1
+          "citizen": 1,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        4954,
         4946,
         4945,
         4943,
@@ -116339,6 +116415,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4955,
         4952,
         4951,
         4950,
