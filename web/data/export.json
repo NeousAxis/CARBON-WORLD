@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-07-13T16:34:31.878458+00:00",
-  "total_events": 5018,
-  "total_burned": 7265881265,
-  "total_minted": 7360258499,
+  "generated_at": "2026-07-13T17:05:39.573931+00:00",
+  "total_events": 5021,
+  "total_burned": 7272621265,
+  "total_minted": 7360658499,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 5021,
+      "event_title": "Council of State warns against repealing asylum law",
+      "event_url": "https://www.dutchnews.nl/2026/07/council-of-state-warns-against-repealing-asylum-law/",
+      "event_source": "DutchNews.nl",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": 1.43,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action opposes rights-violating bill, protecting fair distribution of asylum seekers. | The Council of State's warning aligns with principles of equity, human rights, and child protection by opposing the repeal of a law ensuring fair distribution of asylum seekers. However, the proposed repeal risks concentrating vulnerable populations in fewer areas, undermini",
+      "tx_hash": "4CXG7u4yjjqwoGfhMYEk1btDhFC3KmN3feFYDnkW3sFX4p6pZYZtcDyoQGcHobiGj4wJFgbZt25zzFQBRxoYdfey",
+      "created_at": "2026-07-13T17:05:35.064044+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Dutch Council of State warns against repealing asylum law, advocating for equitable distribution of asylum seekers across municipalities\", \"affected_sdgs\": [10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Bill to repeal the law distributing asylum seekers more evenly across Dutch councils, potentially concentrating asylum seekers in fewer areas\", \"affected_sdgs\": [10, 11, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 22\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 667000
+    },
+    {
+      "id": 5020,
+      "event_title": "U.S. and Mexico Unveil A New Weapon To Fight Screwworm, the Parasite Threatening Cattle Herds",
+      "event_url": "https://sentientmedia.org/us-and-mexico-unveil-new-weapon-to-fight-screwworm/",
+      "event_source": "Sentient Media",
+      "decision": "BURN",
+      "amount_crbn": 6040000,
+      "final_score": 6.39,
+      "confidence": 8,
+      "justification": "Joint biocontrol initiative reduces agricultural and ecological harm with proven, scalable method. | The joint U.S.-Mexico initiative directly combats a parasitic threat to livestock, aligning with SDG 2 (Zero Hunger) and SDG 15 (Life on Land) by protecting animal welfare and agricultural productivity. The sterile insect technique is a proven, non-toxic method that reduces reliance on chemical pesticides, minimizing ecological harm.",
+      "tx_hash": "5Snq2jP8t6kLjGb1diX1cU5QsbkcjFremp34dUETF88wxYfhVqW5zgmpqvQTioUNm5cxQRaUAaaqbhcMGL33tdBM",
+      "created_at": "2026-07-13T17:05:34.935325+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"U.S. and Mexico jointly establish a facility in southern Mexico to produce 100 million sterile screwworms weekly, targeting screwworm infestations that threaten cattle herds\", \"affected_sdgs\": [2, 12, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
+    {
+      "id": 5019,
+      "event_title": "EU to limit children's access to social media",
+      "event_url": "https://www.thelocal.it/20260713/eu-to-limit-childrens-access-to-social-media",
+      "event_source": "The Local Italy (EN)",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 6.04,
+      "confidence": 9,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #4990",
+      "tx_hash": null,
+      "created_at": "2026-07-13T17:03:12.492476+00:00",
+      "embedding": null,
+      "reused_from_event_id": 4990,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 50500
+    },
     {
       "id": 5018,
       "event_title": "Revising CONAMA 430 is Protecting Water, Life, and the Future",
@@ -115478,8 +115547,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.422,
-        "events": 45
+        "burn_ratio": 0.409,
+        "events": 44
       },
       {
         "region": "Oceania",
@@ -115562,8 +115631,8 @@
       },
       {
         "date": "2026-07-13",
-        "net_minted": 95472790,
-        "net_burned": 39396900
+        "net_minted": 95872790,
+        "net_burned": 45436900
       }
     ],
     "event_of_the_day": {
@@ -115580,8 +115649,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 172,
-        "negative": 395,
+        "negative": 393,
         "event_ids_positive": [
+          5020,
           5018,
           5012,
           5010,
@@ -115752,10 +115822,10 @@
           4453,
           4452,
           4447,
-          4446,
-          4444
+          4446
         ],
         "event_ids_negative": [
+          5021,
           5017,
           5016,
           5015,
@@ -116147,15 +116217,12 @@
           4450,
           4449,
           4448,
-          4445,
-          4443,
-          4442,
-          4441
+          4445
         ]
       },
       "UDHR": {
         "positive": 76,
-        "negative": 287,
+        "negative": 286,
         "event_ids_positive": [
           5018,
           5007,
@@ -116235,6 +116302,7 @@
           4446
         ],
         "event_ids_negative": [
+          5021,
           5017,
           5013,
           5011,
@@ -116519,14 +116587,12 @@
           4450,
           4449,
           4448,
-          4445,
-          4442,
-          4441
+          4445
         ]
       },
       "ILO": {
         "positive": 9,
-        "negative": 18,
+        "negative": 17,
         "event_ids_positive": [
           4902,
           4806,
@@ -116555,13 +116621,12 @@
           4540,
           4524,
           4478,
-          4451,
-          4442
+          4451
         ]
       },
       "CRC": {
         "positive": 15,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           4987,
           4897,
@@ -116580,6 +116645,7 @@
           4465
         ],
         "event_ids_negative": [
+          5021,
           5013,
           4949,
           4930,
@@ -116754,6 +116820,7 @@
         "positive": 51,
         "negative": 39,
         "event_ids_positive": [
+          5020,
           5012,
           5002,
           4999,
@@ -116803,8 +116870,7 @@
           4470,
           4455,
           4452,
-          4447,
-          4444
+          4447
         ],
         "event_ids_negative": [
           5015,
@@ -116849,7 +116915,7 @@
         ]
       },
       "PB": {
-        "positive": 77,
+        "positive": 76,
         "negative": 95,
         "event_ids_positive": [
           5012,
@@ -116927,8 +116993,7 @@
           4453,
           4452,
           4447,
-          4446,
-          4444
+          4446
         ],
         "event_ids_negative": [
           5016,
@@ -117030,14 +117095,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 54.8,
-      "mainstream_pct": 45.2,
+      "niche_pct": 53.2,
+      "mainstream_pct": 46.8,
       "total_sources_used": 124,
-      "articles_processed": 574
+      "articles_processed": 572
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 574,
+      "total_events": 572,
       "pct": 1.2
     },
     "active_partners_7d": [],
@@ -117074,9 +117139,9 @@
       },
       {
         "name": "EU",
-        "count": 20,
+        "count": 19,
         "burn_count": 7,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           4987,
           4986,
@@ -117096,15 +117161,14 @@
           4620,
           4616,
           4552,
-          4448,
-          4443
+          4448
         ]
       },
       {
         "name": "UN",
-        "count": 13,
+        "count": 12,
         "burn_count": 2,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           4953,
           4941,
@@ -117117,8 +117181,7 @@
           4629,
           4608,
           4544,
-          4498,
-          4442
+          4498
         ]
       },
       {
@@ -117287,6 +117350,72 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 58,
+        "burn_count": 2,
+        "mint_count": 56,
+        "event_ids": [
+          5020,
+          4983,
+          4976,
+          4963,
+          4958,
+          4955,
+          4944,
+          4937,
+          4922,
+          4898,
+          4880,
+          4860,
+          4859,
+          4838,
+          4830,
+          4827,
+          4801,
+          4799,
+          4755,
+          4731,
+          4729,
+          4718,
+          4696,
+          4690,
+          4677,
+          4676,
+          4673,
+          4665,
+          4664,
+          4659,
+          4654,
+          4651,
+          4638,
+          4637,
+          4633,
+          4618,
+          4615,
+          4598,
+          4586,
+          4583,
+          4581,
+          4580,
+          4573,
+          4563,
+          4554,
+          4547,
+          4539,
+          4529,
+          4523,
+          4522,
+          4511,
+          4493,
+          4471,
+          4469,
+          4467,
+          4461,
+          4459,
+          4458
+        ]
+      },
+      {
         "name": "Finance",
         "count": 57,
         "burn_count": 19,
@@ -117349,71 +117478,6 @@
           4472,
           4460,
           4452
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 57,
-        "burn_count": 1,
-        "mint_count": 56,
-        "event_ids": [
-          4983,
-          4976,
-          4963,
-          4958,
-          4955,
-          4944,
-          4937,
-          4922,
-          4898,
-          4880,
-          4860,
-          4859,
-          4838,
-          4830,
-          4827,
-          4801,
-          4799,
-          4755,
-          4731,
-          4729,
-          4718,
-          4696,
-          4690,
-          4677,
-          4676,
-          4673,
-          4665,
-          4664,
-          4659,
-          4654,
-          4651,
-          4638,
-          4637,
-          4633,
-          4618,
-          4615,
-          4598,
-          4586,
-          4583,
-          4581,
-          4580,
-          4573,
-          4563,
-          4554,
-          4547,
-          4539,
-          4529,
-          4523,
-          4522,
-          4511,
-          4493,
-          4471,
-          4469,
-          4467,
-          4461,
-          4459,
-          4458
         ]
       },
       {
@@ -117512,10 +117576,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 20,
-        "burn_count": 8,
+        "count": 21,
+        "burn_count": 9,
         "mint_count": 12,
         "event_ids": [
+          5020,
           4995,
           4984,
           4930,
@@ -117566,9 +117631,9 @@
       },
       {
         "name": "Tech",
-        "count": 18,
+        "count": 17,
         "burn_count": 3,
-        "mint_count": 15,
+        "mint_count": 14,
         "event_ids": [
           4987,
           4962,
@@ -117586,8 +117651,7 @@
           4793,
           4773,
           4760,
-          4482,
-          4441
+          4482
         ]
       }
     ],
@@ -117607,9 +117671,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1658,
+      "total_burn": 1659,
       "direct_action": {
-        "count": 1277,
+        "count": 1278,
         "pct": 77.0
       },
       "editorial_consciousness": {
@@ -117622,10 +117686,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 402,
+      "total_mint": 400,
       "direct_action": {
-        "count": 367,
-        "pct": 91.3
+        "count": 365,
+        "pct": 91.2
       },
       "editorial_alarm": {
         "count": 28,
@@ -117633,13 +117697,13 @@
       },
       "untyped": {
         "count": 7,
-        "pct": 1.7
+        "pct": 1.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3348,
+      "total_mint": 3349,
       "direct_action": {
-        "count": 2640,
+        "count": 2641,
         "pct": 78.9
       },
       "editorial_alarm": {
@@ -117653,8 +117717,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 193,
-      "institutional": 381,
-      "citizen_ratio": 0.336,
+      "institutional": 379,
+      "citizen_ratio": 0.337,
       "daily": [
         {
           "date": "2026-07-07",
@@ -117688,11 +117752,12 @@
         },
         {
           "date": "2026-07-13",
-          "citizen": 23,
-          "institutional": 40
+          "citizen": 24,
+          "institutional": 41
         }
       ],
       "event_ids_citizen": [
+        5020,
         5017,
         5015,
         5012,
@@ -117884,10 +117949,10 @@
         4453,
         4452,
         4447,
-        4445,
-        4444
+        4445
       ],
       "event_ids_institutional": [
+        5021,
         5018,
         5016,
         5013,
@@ -118265,10 +118330,7 @@
         4450,
         4449,
         4448,
-        4446,
-        4443,
-        4442,
-        4441
+        4446
       ]
     }
   }
