@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-13T03:04:49.259887+00:00",
-  "total_events": 4961,
+  "generated_at": "2026-07-13T03:34:18.475477+00:00",
+  "total_events": 4962,
   "total_burned": 7225001165,
-  "total_minted": 7286442609,
+  "total_minted": 7294732609,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4962,
+      "event_title": "Artificial intelligence explodes Google's electricity bill",
+      "event_url": "https://www.rfi.fr/fr/environnement/20260712-l-intelligence-artificielle-fait-exploser-la-facture-d-%C3%A9lectricit%C3%A9-de-google",
+      "event_source": "RFI FR Environnement",
+      "decision": "MINT",
+      "amount_crbn": 8290000,
+      "final_score": -5.28,
+      "confidence": 9,
+      "justification": "Google's AI expansion directly increases emissions and energy use, violating climate goals. | Google's AI expansion has led to a significant and measurable increase in carbon emissions and energy consumption, directly contradicting global climate goals. The magnitude of harm is substantial, with no identified positive aspects to offset the environmental damage.",
+      "tx_hash": "5hMhWUV6eD5DnixNEpDtYkNEw7TpUzvUwqRFbmLHFR7HYAG94BY7diW6JGcUEvSoq4YgLYfNbQzcPAuTeyhDTKhb",
+      "created_at": "2026-07-13T03:34:14.520087+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Google's AI-driven operations caused an 18% annual increase in CO2 emissions (18.85 million tonnes) and a 2.5x rise in electricity consumption since 2019, directly undermining climate action (SDG 13) and planetary boundaries (climate change, energy systems).\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 8290000
+    },
     {
       "id": 4961,
       "event_title": "Illegal shark fin trafficking in Peru, nickel mine reactivation in Guatemala, revival of underwater forests in Chile",
@@ -114251,7 +114274,7 @@
       },
       {
         "date": "2026-07-13",
-        "net_minted": 21711000,
+        "net_minted": 30001000,
         "net_burned": 616800
       }
     ],
@@ -114269,7 +114292,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 178,
-        "negative": 388,
+        "negative": 389,
         "event_ids_positive": [
           4959,
           4957,
@@ -114451,6 +114474,7 @@
           4391
         ],
         "event_ids_negative": [
+          4962,
           4961,
           4960,
           4958,
@@ -115544,7 +115568,7 @@
       },
       "PB": {
         "positive": 87,
-        "negative": 93,
+        "negative": 94,
         "event_ids_positive": [
           4959,
           4957,
@@ -115635,6 +115659,7 @@
           4391
         ],
         "event_ids_negative": [
+          4962,
           4961,
           4947,
           4942,
@@ -115735,11 +115760,11 @@
       "niche_pct": 54.0,
       "mainstream_pct": 46.0,
       "total_sources_used": 124,
-      "articles_processed": 574
+      "articles_processed": 575
     },
     "cache_hit_rate_7d": {
       "hits": 8,
-      "total_events": 574,
+      "total_events": 575,
       "pct": 1.4
     },
     "active_partners_7d": [],
@@ -115891,10 +115916,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 94,
+        "count": 95,
         "burn_count": 44,
-        "mint_count": 50,
+        "mint_count": 51,
         "event_ids": [
+          4962,
           4959,
           4957,
           4942,
@@ -116231,6 +116257,31 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 17,
+        "burn_count": 2,
+        "mint_count": 15,
+        "event_ids": [
+          4962,
+          4925,
+          4896,
+          4889,
+          4882,
+          4867,
+          4851,
+          4849,
+          4827,
+          4818,
+          4800,
+          4794,
+          4793,
+          4773,
+          4760,
+          4482,
+          4441
+        ]
+      },
+      {
         "name": "Water",
         "count": 16,
         "burn_count": 8,
@@ -116252,30 +116303,6 @@
           4466,
           4455,
           4401
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 16,
-        "burn_count": 2,
-        "mint_count": 14,
-        "event_ids": [
-          4925,
-          4896,
-          4889,
-          4882,
-          4867,
-          4851,
-          4849,
-          4827,
-          4818,
-          4800,
-          4794,
-          4793,
-          4773,
-          4760,
-          4482,
-          4441
         ]
       }
     ],
@@ -116310,14 +116337,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 396,
+      "total_mint": 397,
       "direct_action": {
-        "count": 364,
+        "count": 365,
         "pct": 91.9
       },
       "editorial_alarm": {
         "count": 24,
-        "pct": 6.1
+        "pct": 6.0
       },
       "untyped": {
         "count": 8,
@@ -116325,9 +116352,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3314,
+      "total_mint": 3315,
       "direct_action": {
-        "count": 2610,
+        "count": 2611,
         "pct": 78.8
       },
       "editorial_alarm": {
@@ -116341,7 +116368,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 193,
-      "institutional": 381,
+      "institutional": 382,
       "citizen_ratio": 0.336,
       "daily": [
         {
@@ -116377,7 +116404,7 @@
         {
           "date": "2026-07-13",
           "citizen": 2,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -116576,6 +116603,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4962,
         4960,
         4959,
         4958,
