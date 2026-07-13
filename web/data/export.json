@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-13T07:05:09.072102+00:00",
-  "total_events": 4972,
+  "generated_at": "2026-07-13T07:34:54.645097+00:00",
+  "total_events": 4973,
   "total_burned": 7238435765,
-  "total_minted": 7310225009,
+  "total_minted": 7310973009,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 4973,
+      "event_title": "Ambulance patients left waiting for hours to get into emergency department",
+      "event_url": "https://www.rnz.co.nz/news/health/708691/ambulance-patients-left-waiting-for-hours-to-get-into-emergency-department",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -6.15,
+      "confidence": 9,
+      "justification": "Systemic healthcare failure violating patient rights and emergency response capacity | The systemic failure to unload ambulances in a timely manner directly violates fundamental rights to health and security, with severe consequences for patient outcomes and emergency response capacity. This represents a critical breakdown in healthcare infrastructure and institutional duty of care.",
+      "tx_hash": "47igQByvDSGf32iH9duCQaSBKWgAVVzTzkqSu6rKwT4t23gm5ENThbFzN5dMr73AF2x5AZgEBejqZQJbRZENdWJJ",
+      "created_at": "2026-07-13T07:34:50.835816+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Ambulance patients left waiting for hours to access emergency department care, causing delays in emergency response and worsening health outcomes\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 748000
+    },
     {
       "id": 4972,
       "event_title": "ESCAPE: A user’s guide to most of Gauteng’s parkruns: Revised edition",
@@ -114419,14 +114442,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Oceania",
-        "burn_ratio": 0.429,
-        "events": 21
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.413,
         "events": 46
+      },
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.409,
+        "events": 22
       },
       {
         "region": "North America",
@@ -114504,7 +114527,7 @@
       },
       {
         "date": "2026-07-13",
-        "net_minted": 45493400,
+        "net_minted": 46241400,
         "net_burned": 14051400
       }
     ],
@@ -114522,7 +114545,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 181,
-        "negative": 396,
+        "negative": 397,
         "event_ids_positive": [
           4972,
           4969,
@@ -114707,6 +114730,7 @@
           4391
         ],
         "event_ids_negative": [
+          4973,
           4971,
           4970,
           4967,
@@ -115107,7 +115131,7 @@
       },
       "UDHR": {
         "positive": 75,
-        "negative": 293,
+        "negative": 294,
         "event_ids_positive": [
           4968,
           4935,
@@ -115186,6 +115210,7 @@
           4399
         ],
         "event_ids_negative": [
+          4973,
           4971,
           4970,
           4967,
@@ -116012,11 +116037,11 @@
       "niche_pct": 54.0,
       "mainstream_pct": 46.0,
       "total_sources_used": 124,
-      "articles_processed": 585
+      "articles_processed": 586
     },
     "cache_hit_rate_7d": {
       "hits": 8,
-      "total_events": 585,
+      "total_events": 586,
       "pct": 1.4
     },
     "active_partners_7d": [],
@@ -116271,6 +116296,70 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 56,
+        "burn_count": 25,
+        "mint_count": 31,
+        "event_ids": [
+          4973,
+          4972,
+          4971,
+          4968,
+          4965,
+          4957,
+          4955,
+          4942,
+          4936,
+          4933,
+          4929,
+          4928,
+          4926,
+          4909,
+          4889,
+          4883,
+          4882,
+          4872,
+          4866,
+          4827,
+          4821,
+          4812,
+          4794,
+          4773,
+          4764,
+          4757,
+          4756,
+          4746,
+          4720,
+          4713,
+          4691,
+          4663,
+          4661,
+          4642,
+          4634,
+          4633,
+          4569,
+          4550,
+          4538,
+          4537,
+          4531,
+          4520,
+          4517,
+          4506,
+          4502,
+          4491,
+          4488,
+          4482,
+          4471,
+          4469,
+          4453,
+          4452,
+          4418,
+          4412,
+          4410,
+          4391
+        ]
+      },
+      {
         "name": "Defense",
         "count": 56,
         "burn_count": 1,
@@ -116332,69 +116421,6 @@
           4459,
           4458,
           4394
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 55,
-        "burn_count": 25,
-        "mint_count": 30,
-        "event_ids": [
-          4972,
-          4971,
-          4968,
-          4965,
-          4957,
-          4955,
-          4942,
-          4936,
-          4933,
-          4929,
-          4928,
-          4926,
-          4909,
-          4889,
-          4883,
-          4882,
-          4872,
-          4866,
-          4827,
-          4821,
-          4812,
-          4794,
-          4773,
-          4764,
-          4757,
-          4756,
-          4746,
-          4720,
-          4713,
-          4691,
-          4663,
-          4661,
-          4642,
-          4634,
-          4633,
-          4569,
-          4550,
-          4538,
-          4537,
-          4531,
-          4520,
-          4517,
-          4506,
-          4502,
-          4491,
-          4488,
-          4482,
-          4471,
-          4469,
-          4453,
-          4452,
-          4418,
-          4412,
-          4410,
-          4391
         ]
       },
       {
@@ -116596,9 +116622,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 404,
+      "total_mint": 405,
       "direct_action": {
-        "count": 372,
+        "count": 373,
         "pct": 92.1
       },
       "editorial_alarm": {
@@ -116611,14 +116637,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3322,
+      "total_mint": 3323,
       "direct_action": {
-        "count": 2618,
+        "count": 2619,
         "pct": 78.8
       },
       "editorial_alarm": {
         "count": 201,
-        "pct": 6.1
+        "pct": 6.0
       },
       "untyped": {
         "count": 503,
@@ -116627,8 +116653,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 197,
-      "institutional": 388,
-      "citizen_ratio": 0.337,
+      "institutional": 389,
+      "citizen_ratio": 0.336,
       "daily": [
         {
           "date": "2026-07-07",
@@ -116663,7 +116689,7 @@
         {
           "date": "2026-07-13",
           "citizen": 6,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -116866,6 +116892,7 @@
         4388
       ],
       "event_ids_institutional": [
+        4973,
         4971,
         4967,
         4966,
