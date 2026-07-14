@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-14T09:06:10.524297+00:00",
-  "total_events": 5082,
+  "generated_at": "2026-07-14T09:35:53.552275+00:00",
+  "total_events": 5084,
   "total_burned": 7318665945,
-  "total_minted": 7518096019,
+  "total_minted": 7524836019,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 5084,
+      "event_title": "Ecologistas en Acción rates Spanish government’s biodiversity policies as insufficient",
+      "event_url": "https://www.ecologistasenaccion.org/373197/ecologistas-en-accion-valora-como-insuficientes-las-politicas-de-biodiversidad-del-gobierno-espanol/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -1.63,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Civil society report exposes government failure to protect biodiversity, outweighing the positive act of oversight. | The publication of a civil society report evaluating government biodiversity policies is a positive act of accountability and awareness-raising, aligning with SDG 13, 14, and 15. However, the report's conclusion that policies are insufficient highlights a signif",
+      "tx_hash": "58XeqNxV4Yn8EatUNV5zKNuFUwXGCPMTWzM1MAaQm9GpBqwPR9Ue6PYq9iNLR6UYhnwMy3QhHdTV6sSAjkCvD35A",
+      "created_at": "2026-07-14T09:35:49.706422+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Ecologistas en Acción publishes a formal report evaluating Spain's biodiversity policies against the global biodiversity framework, demonstrating active civil society oversight and accountability.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The report explicitly rates the Spanish government's biodiversity policies as insufficient, indicating a failure to meet critical environmental protection and biodiversity conservation targets.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 5083,
+      "event_title": "UAE says Iranian missiles struck oil tankers in Strait of Hormuz, one sailor killed",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/uae-says-iranian-missiles-struck-oil-tankers-strait-hormuz-one-sailor-killed",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -4.37,
+      "confidence": 8,
+      "justification": "Missile strike on tankers causes direct harm and escalates regional tensions. | The missile strike on oil tankers in the Strait of Hormuz caused direct harm to human life and safety, violating core human rights and destabilizing regional peace and security.",
+      "tx_hash": "4tBPxVvGQDfTU9y7DnoAg35F2gN8Nx9gHtK85ZQhzdLUy6f8jWksSUCa3mZ8nhH78q5iEGMKA6KVnoqQAKKHZRG8",
+      "created_at": "2026-07-14T09:35:49.580764+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Arab Emirates",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Two Emirati oil tankers were struck by Iranian cruise missiles, resulting in one death and eight injuries.\", \"affected_sdgs\": [3, 8, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 2\", \"UDHR Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5082,
       "event_title": "Greenpeace suspends Spain over energy crisis relief measures",
@@ -116910,14 +116956,14 @@
         "total_amount": 8402000
       },
       {
+        "country": "Spain",
+        "count": 12,
+        "total_amount": 3824700
+      },
+      {
         "country": "Brazil",
         "count": 12,
         "total_amount": 13362410
-      },
-      {
-        "country": "Spain",
-        "count": 11,
-        "total_amount": 3124700
       }
     ],
     "top_countries_burn": [
@@ -116960,8 +117006,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.302,
-        "events": 139
+        "burn_ratio": 0.3,
+        "events": 140
       },
       {
         "region": "North America",
@@ -116997,8 +117043,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.698,
-        "events": 139
+        "mint_ratio": 0.7,
+        "events": 140
       }
     ],
     "supply_trend_7d": [
@@ -117034,7 +117080,7 @@
       },
       {
         "date": "2026-07-14",
-        "net_minted": 70144480,
+        "net_minted": 76884480,
         "net_burned": 23129200
       }
     ],
@@ -117052,7 +117098,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 168,
-        "negative": 395,
+        "negative": 397,
         "event_ids_positive": [
           5081,
           5079,
@@ -117224,6 +117270,8 @@
           4512
         ],
         "event_ids_negative": [
+          5084,
+          5083,
           5082,
           5080,
           5077,
@@ -117623,7 +117671,7 @@
       },
       "UDHR": {
         "positive": 76,
-        "negative": 293,
+        "negative": 294,
         "event_ids_positive": [
           5078,
           5070,
@@ -117703,6 +117751,7 @@
           4512
         ],
         "event_ids_negative": [
+          5083,
           5077,
           5076,
           5075,
@@ -118101,7 +118150,7 @@
       },
       "UNDRIP": {
         "positive": 36,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           5079,
           5070,
@@ -118141,6 +118190,7 @@
           4515
         ],
         "event_ids_negative": [
+          5084,
           5071,
           5054,
           5047,
@@ -118224,7 +118274,7 @@
       },
       "Animal": {
         "positive": 47,
-        "negative": 37,
+        "negative": 38,
         "event_ids_positive": [
           5042,
           5026,
@@ -118275,6 +118325,7 @@
           4525
         ],
         "event_ids_negative": [
+          5084,
           5047,
           5015,
           4998,
@@ -118316,7 +118367,7 @@
       },
       "PB": {
         "positive": 69,
-        "negative": 91,
+        "negative": 92,
         "event_ids_positive": [
           5081,
           5064,
@@ -118389,6 +118440,7 @@
           4525
         ],
         "event_ids_negative": [
+          5084,
           5082,
           5080,
           5057,
@@ -118487,11 +118539,11 @@
       "niche_pct": 50.4,
       "mainstream_pct": 49.6,
       "total_sources_used": 117,
-      "articles_processed": 575
+      "articles_processed": 577
     },
     "cache_hit_rate_7d": {
       "hits": 12,
-      "total_events": 575,
+      "total_events": 577,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -118645,10 +118697,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 91,
+        "count": 92,
         "burn_count": 38,
-        "mint_count": 53,
+        "mint_count": 54,
         "event_ids": [
+          5083,
           5082,
           5081,
           5077,
@@ -118744,10 +118797,11 @@
       },
       {
         "name": "Defense",
-        "count": 64,
+        "count": 65,
         "burn_count": 2,
-        "mint_count": 62,
+        "mint_count": 63,
         "event_ids": [
+          5083,
           5076,
           5067,
           5066,
@@ -119088,10 +119142,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 403,
+      "total_mint": 405,
       "direct_action": {
-        "count": 370,
-        "pct": 91.8
+        "count": 372,
+        "pct": 91.9
       },
       "editorial_alarm": {
         "count": 25,
@@ -119103,9 +119157,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3395,
+      "total_mint": 3397,
       "direct_action": {
-        "count": 2684,
+        "count": 2686,
         "pct": 79.1
       },
       "editorial_alarm": {
@@ -119119,8 +119173,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 181,
-      "institutional": 394,
-      "citizen_ratio": 0.315,
+      "institutional": 396,
+      "citizen_ratio": 0.314,
       "daily": [
         {
           "date": "2026-07-08",
@@ -119155,7 +119209,7 @@
         {
           "date": "2026-07-14",
           "citizen": 7,
-          "institutional": 22
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -119342,6 +119396,8 @@
         4508
       ],
       "event_ids_institutional": [
+        5084,
+        5083,
         5082,
         5081,
         5080,
