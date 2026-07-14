@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T09:35:53.878427+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-07-14T10:05:01.273389+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 741,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-06-19T07:06:01.285708+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 775,
+      "event_title": "France arrests arson suspects amid Fontainebleau forest fire",
+      "event_url": "https://www.dw.com/en/france-arrests-arson-suspects-amid-fontainebleau-forest-fire/a-77946073?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French authorities arrested suspects for suspected arson in the Fontainebleau forest fire, demonstrating enforcement of environmental protection and public safety laws.\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"The arrest of arson suspects for a forest fire in Fontainebleau is a positive enforcement action that aligns with climate action (SDG 13) and biodiversity protection (SDG 15). It upholds public safety and environmental integrity, though the underlying fire itself remains a negative event.\", \"snapshot_score\": 6.5, \"trajectory_score\": 1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Further evidence of arson intent or negligence\", \"Legal outcomes of the arrests (conviction vs. acquittal)\", \"Policy changes in forest fire prevention\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Suspects are convicted, leading to stronger forest fire prevention policies and public awareness campaigns.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Legal process drags on, but arrests deter future arson attempts through public deterrence.\", \"probability\": 0.5, \"score\": 5}, {\"name\": \"C\", \"description\": \"Arrests are overturned or evidence is weak, undermining trust in law enforcement and enabling future incidents.\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.4, \"final_score\": 5.175, \"decision\": \"BURN\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Arrests for arson in a protected forest align with environmental enforcement and public safety.\", \"event_scope\": \"regional\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"French authorities arresting suspected arsonists for a forest fire in Fontainebleau\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Major forest fire burning in Fontainebleau, a significant ecological and recreational area\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}], \"ethical_synthesis\": \"The arrest of arson suspects is a positive enforcement of environmental protection and public safety, aligning with SDG 13 and 15. However, the ongoing forest fire itself represents a significant ecological and climate setback, violating planetary boundaries and harming biodiversity.\", \"snapshot_score\": -3.0, \"trajectory_score\": -1.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Fire containment achieved within 72 hours\", \"Arsonists convicted with strong evidence\", \"Long-term damage assessment completed\", \"Restoration efforts initiated\"], \"revaluation_checkpoint\": \"2025-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Fire fully contained within 5 days, minimal long-term damage, arsonists convicted\", \"probability\": 0.3, \"score\": 4}, {\"name\": \"B\", \"description\": \"Fire contained within 10 days, moderate ecological damage, arsonists convicted\", \"probability\": 0.5, \"score\": -2}, {\"name\": \"C\", \"description\": \"Fire spreads beyond containment, severe ecological damage, arsonists acquitted\", \"probability\": 0.2, \"score\": -8}], \"prospective_score\": -1.8, \"final_score\": -2.15, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Arrests are positive but overshadowed by the ongoing ecological harm of the fire.\", \"event_scope\": \"regional\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.58, \"confidence\": 9, \"amount_cbwd\": 50500, \"justification\": \"Arrests for arson in a protected forest represent institutional action to punish harm and protect rights.\", \"disagreement\": true, \"reason\": \"Analyst B focused on the ongoing fire's ecological harm, but the institutional action (arrests) is corrective and protective.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 50500,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-07-14T10:04:56.619394+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
