@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-15T17:05:27.437156+00:00",
-  "total_events": 5233,
+  "generated_at": "2026-07-15T17:35:01.023131+00:00",
+  "total_events": 5234,
   "total_burned": 7411488825,
-  "total_minted": 7690172979,
+  "total_minted": 7690347979,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 5234,
+      "event_title": "US says it issued sanctions to disrupt Iran's weapon procurement",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/us-says-it-issued-sanctions-disrupt-irans-weapon-procurement",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 175000,
+      "final_score": 1.84,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Sanctions disrupt arms networks but risk civilian harm and geopolitical escalation. | The sanctions aim to disrupt arms proliferation, aligning with peace and security goals (SDG 16) and potentially reducing regional conflict risks. However, they risk collateral economic harm to civilians and violate economic rights, creating a mixed ethical outcome with moderate positive and n",
+      "tx_hash": "5CP1zYExKFPBEaMRiFxxnKS6UAwbupwRpDT6u4iaiUjSnwPb1A1aBz75b2bp9rLCQSVjRKbTKSBUBKhJ1x1BunAc",
+      "created_at": "2026-07-15T17:34:53.733751+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"U.S. sanctions target an international network aiding Iran's weapon procurement, disrupting arms proliferation and potential regional destabilization\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sanctions may exacerbate geopolitical tensions, harm civilian populations in targeted regions, and violate economic rights of affected individuals and entities\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 5233,
       "event_title": "Government proposes new housing without underground garages or basements in flood zones",
@@ -120442,9 +120465,9 @@
         "events": 37
       },
       {
-        "region": "Africa",
-        "burn_ratio": 0.269,
-        "events": 26
+        "region": "Oceania",
+        "burn_ratio": 0.25,
+        "events": 16
       }
     ],
     "top_regions_destructive": [
@@ -120454,14 +120477,14 @@
         "events": 14
       },
       {
+        "region": "Africa",
+        "mint_ratio": 0.76,
+        "events": 25
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 0.75,
         "events": 16
-      },
-      {
-        "region": "Africa",
-        "mint_ratio": 0.731,
-        "events": 26
       },
       {
         "region": "Latin America",
@@ -120507,7 +120530,7 @@
       },
       {
         "date": "2026-07-15",
-        "net_minted": 92649300,
+        "net_minted": 92824300,
         "net_burned": 56538480
       }
     ],
@@ -120524,7 +120547,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 178,
+        "positive": 177,
         "negative": 404,
         "event_ids_positive": [
           5233,
@@ -120703,10 +120726,10 @@
           4648,
           4646,
           4644,
-          4643,
-          4634
+          4643
         ],
         "event_ids_negative": [
+          5234,
           5232,
           5231,
           5230,
@@ -121109,13 +121132,12 @@
           4641,
           4639,
           4638,
-          4637,
-          4633
+          4637
         ]
       },
       "UDHR": {
         "positive": 84,
-        "negative": 290,
+        "negative": 291,
         "event_ids_positive": [
           5233,
           5221,
@@ -121203,6 +121225,7 @@
           4643
         ],
         "event_ids_negative": [
+          5234,
           5232,
           5230,
           5226,
@@ -121828,7 +121851,7 @@
         ]
       },
       "PB": {
-        "positive": 71,
+        "positive": 70,
         "negative": 106,
         "event_ids_positive": [
           5228,
@@ -121900,8 +121923,7 @@
           4678,
           4656,
           4651,
-          4644,
-          4634
+          4644
         ],
         "event_ids_negative": [
           5231,
@@ -122014,23 +122036,23 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 45.2,
-      "mainstream_pct": 54.8,
-      "total_sources_used": 115,
-      "articles_processed": 594
+      "niche_pct": 44.7,
+      "mainstream_pct": 55.3,
+      "total_sources_used": 114,
+      "articles_processed": 591
     },
     "cache_hit_rate_7d": {
-      "hits": 12,
-      "total_events": 594,
-      "pct": 2.0
+      "hits": 10,
+      "total_events": 591,
+      "pct": 1.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 31,
+        "count": 29,
         "burn_count": 13,
-        "mint_count": 18,
+        "mint_count": 16,
         "event_ids": [
           5214,
           5198,
@@ -122060,9 +122082,7 @@
           4707,
           4704,
           4656,
-          4640,
-          4636,
-          4635
+          4640
         ]
       },
       {
@@ -122170,9 +122190,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 92,
-        "burn_count": 42,
-        "mint_count": 50,
+        "count": 90,
+        "burn_count": 41,
+        "mint_count": 49,
         "event_ids": [
           5229,
           5228,
@@ -122263,16 +122283,14 @@
           4691,
           4671,
           4665,
-          4649,
-          4634,
-          4633
+          4649
         ]
       },
       {
         "name": "Construction",
-        "count": 65,
-        "burn_count": 27,
-        "mint_count": 38,
+        "count": 63,
+        "burn_count": 26,
+        "mint_count": 37,
         "event_ids": [
           5233,
           5229,
@@ -122336,9 +122354,7 @@
           4691,
           4663,
           4661,
-          4642,
-          4634,
-          4633
+          4642
         ]
       },
       {
@@ -122347,6 +122363,7 @@
         "burn_count": 2,
         "mint_count": 55,
         "event_ids": [
+          5234,
           5195,
           5194,
           5193,
@@ -122402,8 +122419,7 @@
           4654,
           4651,
           4638,
-          4637,
-          4633
+          4637
         ]
       },
       {
@@ -122608,14 +122624,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 182,
+      "total_burn": 181,
       "direct_action": {
-        "count": 154,
-        "pct": 84.6
+        "count": 153,
+        "pct": 84.5
       },
       "editorial_consciousness": {
         "count": 24,
-        "pct": 13.2
+        "pct": 13.3
       },
       "untyped": {
         "count": 4,
@@ -122638,24 +122654,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 412,
+      "total_mint": 410,
       "direct_action": {
         "count": 372,
-        "pct": 90.3
+        "pct": 90.7
       },
       "editorial_alarm": {
         "count": 32,
         "pct": 7.8
       },
       "untyped": {
-        "count": 8,
-        "pct": 1.9
+        "count": 6,
+        "pct": 1.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3491,
+      "total_mint": 3492,
       "direct_action": {
-        "count": 2769,
+        "count": 2770,
         "pct": 79.3
       },
       "editorial_alarm": {
@@ -122669,8 +122685,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 191,
-      "institutional": 403,
-      "citizen_ratio": 0.322,
+      "institutional": 400,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-07-09",
@@ -122705,7 +122721,7 @@
         {
           "date": "2026-07-15",
           "citizen": 29,
-          "institutional": 57
+          "institutional": 58
         }
       ],
       "event_ids_citizen": [
@@ -122902,6 +122918,7 @@
         4638
       ],
       "event_ids_institutional": [
+        5234,
         5233,
         5232,
         5227,
@@ -123300,11 +123317,7 @@
         4641,
         4640,
         4639,
-        4637,
-        4636,
-        4635,
-        4634,
-        4633
+        4637
       ]
     }
   }
