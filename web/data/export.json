@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-07-15T12:06:16.651059+00:00",
-  "total_events": 5206,
-  "total_burned": 7407351625,
-  "total_minted": 7660896679,
+  "generated_at": "2026-07-15T12:34:59.500454+00:00",
+  "total_events": 5209,
+  "total_burned": 7408027625,
+  "total_minted": 7661921679,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 5209,
+      "event_title": "Plans for Child Support Advance Payments and Who It Affects",
+      "event_url": "https://www.tagesschau.de/inland/innenpolitik/unterhaltsvorschuss-prien-kritik-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.44,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Planned cuts to child support advance payments harm children's rights and welfare. | The article describes a policy debate in Germany regarding child support advance payments. While the proposal to maintain or expand these payments aligns with child welfare and poverty reduction (SDGs 1, 2, 3, 10), the planned cuts by the Family Minister undermine these goals and violate chi",
+      "tx_hash": "46TfGxNH27DBoPSS7M2A5nTBVYEajBR97ESjyp2BUaH4Tp3iXRc3v8rrs2QEXe3c29dags77xW9QYBaNDhKAXs7b",
+      "created_at": "2026-07-15T12:34:52.838272+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Proposal to maintain or expand child support advance payments in Germany, ensuring financial support for children when a parent fails to pay child support\", \"affected_sdgs\": [1, 2, 3, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Planned cuts to child support advance payments by the German Family Minister, risking reduced financial security for vulnerable children and families\", \"affected_sdgs\": [1, 2, 3, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 27\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 748000
+    },
+    {
+      "id": 5208,
+      "event_title": "Cypress Creek Energy starts construction at US’ largest solar-plus-storage project",
+      "event_url": "https://www.pv-tech.org/cypress-creek-energy-starts-construction-us-largest-solar-plus-storage-project/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "BURN",
+      "amount_crbn": 676000,
+      "final_score": 6.0,
+      "confidence": 8,
+      "justification": "Major renewable energy infrastructure project advancing climate action and energy transition. | The construction of the 2.5GW solar-plus-storage project in Arkansas represents a major step toward decarbonizing the US energy grid and advancing SDG 7 and 13. While the project promises significant environmental and economic benefits, potential ecological and water-use impacts require careful mitigation to avoid undermining SDG 15 and 6.",
+      "tx_hash": "4qFeSr57mGatpRsu5tEavLDHksvPJaEmhi7j7x7sWkaSQ1MscLzjnwWduDJep6ET3qRwiJ87Fi8jNhJzJgksGK9J",
+      "created_at": "2026-07-15T12:34:52.656643+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Construction begins on a 2.5GW solar-plus-storage project, significantly increasing renewable energy capacity in the US\", \"affected_sdgs\": [7, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Solar-plus-storage integration supports grid stability and reduces reliance on fossil fuels\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Large-scale renewable energy project creates jobs and economic activity in Arkansas\", \"affected_sdgs\": [8, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Large-scale solar projects can disrupt local ecosystems and land use, particularly if not properly sited\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential for increased water usage in solar panel cleaning and cooling systems in a water-stressed region\", \"affected_sdgs\": [6], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
+    {
+      "id": 5207,
+      "event_title": "EU extends right to stay for Ukrainians but excludes military-age men",
+      "event_url": "https://www.thelocal.it/20260715/eu-extends-right-to-stay-for-ukrainians-but-excludes-military-age-men",
+      "event_source": "The Local Italy (EN)",
+      "decision": "MINT",
+      "amount_crbn": 325000,
+      "final_score": 2.92,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #5195",
+      "tx_hash": null,
+      "created_at": "2026-07-15T12:33:24.328029+00:00",
+      "embedding": null,
+      "reused_from_event_id": 5195,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 5206,
       "event_title": "Rights groups sue over Trump’s sanctions against the International Criminal Court",
@@ -119758,8 +119827,8 @@
       },
       {
         "country": "Germany",
-        "count": 14,
-        "total_amount": 8260000
+        "count": 15,
+        "total_amount": 8960000
       },
       {
         "country": "Spain",
@@ -119775,8 +119844,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 31,
-        "total_amount": 12276800
+        "count": 32,
+        "total_amount": 12952800
       },
       {
         "country": "France",
@@ -119807,13 +119876,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.317,
-        "events": 139
+        "burn_ratio": 0.314,
+        "events": 140
       },
       {
         "region": "North America",
-        "burn_ratio": 0.301,
-        "events": 113
+        "burn_ratio": 0.307,
+        "events": 114
       },
       {
         "region": "Oceania",
@@ -119849,8 +119918,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.699,
-        "events": 113
+        "mint_ratio": 0.693,
+        "events": 114
       }
     ],
     "supply_trend_7d": [
@@ -119886,8 +119955,8 @@
       },
       {
         "date": "2026-07-15",
-        "net_minted": 70783000,
-        "net_burned": 52401280
+        "net_minted": 71483000,
+        "net_burned": 53077280
       }
     ],
     "event_of_the_day": {
@@ -119903,9 +119972,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 182,
-        "negative": 402,
+        "positive": 183,
+        "negative": 403,
         "event_ids_positive": [
+          5208,
           5205,
           5204,
           5200,
@@ -120090,6 +120160,7 @@
           4611
         ],
         "event_ids_negative": [
+          5209,
           5206,
           5203,
           5202,
@@ -120496,7 +120567,7 @@
       },
       "UDHR": {
         "positive": 86,
-        "negative": 289,
+        "negative": 290,
         "event_ids_positive": [
           5200,
           5196,
@@ -120586,6 +120657,7 @@
           4611
         ],
         "event_ids_negative": [
+          5209,
           5206,
           5203,
           5202,
@@ -120907,7 +120979,7 @@
       },
       "CRC": {
         "positive": 21,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           5196,
           5154,
@@ -120932,6 +121004,7 @@
           4611
         ],
         "event_ids_negative": [
+          5209,
           5203,
           5202,
           5194,
@@ -121208,9 +121281,10 @@
         ]
       },
       "PB": {
-        "positive": 73,
+        "positive": 74,
         "negative": 100,
         "event_ids_positive": [
+          5208,
           5205,
           5198,
           5197,
@@ -121393,11 +121467,11 @@
       "niche_pct": 46.6,
       "mainstream_pct": 53.4,
       "total_sources_used": 118,
-      "articles_processed": 596
+      "articles_processed": 598
     },
     "cache_hit_rate_7d": {
       "hits": 12,
-      "total_events": 596,
+      "total_events": 598,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -121445,6 +121519,29 @@
         ]
       },
       {
+        "name": "WHO",
+        "count": 15,
+        "burn_count": 6,
+        "mint_count": 9,
+        "event_ids": [
+          5209,
+          5184,
+          5131,
+          5078,
+          5044,
+          5036,
+          4899,
+          4829,
+          4806,
+          4772,
+          4750,
+          4725,
+          4723,
+          4688,
+          4620
+        ]
+      },
+      {
         "name": "UN",
         "count": 15,
         "burn_count": 2,
@@ -121465,28 +121562,6 @@
           4658,
           4629,
           4608
-        ]
-      },
-      {
-        "name": "WHO",
-        "count": 14,
-        "burn_count": 6,
-        "mint_count": 8,
-        "event_ids": [
-          5184,
-          5131,
-          5078,
-          5044,
-          5036,
-          4899,
-          4829,
-          4806,
-          4772,
-          4750,
-          4725,
-          4723,
-          4688,
-          4620
         ]
       },
       {
@@ -121551,10 +121626,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 91,
-        "burn_count": 41,
+        "count": 92,
+        "burn_count": 42,
         "mint_count": 50,
         "event_ids": [
+          5208,
           5204,
           5200,
           5184,
@@ -121650,10 +121726,11 @@
       },
       {
         "name": "Construction",
-        "count": 61,
-        "burn_count": 24,
+        "count": 62,
+        "burn_count": 25,
         "mint_count": 37,
         "event_ids": [
+          5208,
           5203,
           5200,
           5199,
@@ -121983,24 +122060,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 186,
+      "total_burn": 187,
       "direct_action": {
-        "count": 158,
-        "pct": 84.9
+        "count": 159,
+        "pct": 85.0
       },
       "editorial_consciousness": {
         "count": 24,
-        "pct": 12.9
+        "pct": 12.8
       },
       "untyped": {
         "count": 4,
-        "pct": 2.2
+        "pct": 2.1
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1720,
+      "total_burn": 1721,
       "direct_action": {
-        "count": 1326,
+        "count": 1327,
         "pct": 77.1
       },
       "editorial_consciousness": {
@@ -122013,10 +122090,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 410,
+      "total_mint": 411,
       "direct_action": {
-        "count": 372,
-        "pct": 90.7
+        "count": 373,
+        "pct": 90.8
       },
       "editorial_alarm": {
         "count": 30,
@@ -122024,13 +122101,13 @@
       },
       "untyped": {
         "count": 8,
-        "pct": 2.0
+        "pct": 1.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3474,
+      "total_mint": 3475,
       "direct_action": {
-        "count": 2754,
+        "count": 2755,
         "pct": 79.3
       },
       "editorial_alarm": {
@@ -122044,8 +122121,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 190,
-      "institutional": 406,
-      "citizen_ratio": 0.319,
+      "institutional": 408,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-07-09",
@@ -122080,7 +122157,7 @@
         {
           "date": "2026-07-15",
           "citizen": 20,
-          "institutional": 42
+          "institutional": 44
         }
       ],
       "event_ids_citizen": [
@@ -122276,6 +122353,8 @@
         4611
       ],
       "event_ids_institutional": [
+        5209,
+        5208,
         5206,
         5200,
         5195,
