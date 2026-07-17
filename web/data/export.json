@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-17T05:34:27.269233+00:00",
-  "total_events": 5386,
-  "total_burned": 7522027545,
-  "total_minted": 7910327219,
+  "generated_at": "2026-07-17T06:05:08.095572+00:00",
+  "total_events": 5388,
+  "total_burned": 7528067545,
+  "total_minted": 7910927219,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 5388,
+      "event_title": "Kenya: Greenpeace Demands Halt to Dangote's $17bn Kenya Coastal Refinery",
+      "event_url": "https://allafrica.com/stories/202607170002.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 600000,
+      "final_score": -3.62,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Civil society action to halt high-risk industrial project is positive, but the project itself poses severe environmental threats. | Greenpeace Africa's demand to halt the refinery is a positive act of environmental advocacy and precautionary principle application, aligning with climate and biodiversity protection. However, the underlying project itself represents a major threat",
+      "tx_hash": "2dk4RDxQbT5tKfUftcY3vYKVLGHisQJpJcMKJXqaqaQMWBKpV2jjN7Rpfe8zPLRao1F6xcVPVLaDxBY5nn6tJ82R",
+      "created_at": "2026-07-17T06:05:02.644361+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Kenya",
+      "region": "Africa",
+      "administration": "Kenya-UDA",
+      "positive_aspects_json": "[{\"description\": \"Greenpeace Africa's public call to halt a high-risk industrial project based on environmental concerns, demonstrating civil society's role in holding corporations and governments accountable for potential harm.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed construction of a $17 billion coastal oil refinery by Dangote Group in Kenya, which poses significant risks to marine ecosystems, coastal communities, and climate targets due to potential pollution and emissions.\", \"affected_sdgs\": [7, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 5387,
+      "event_title": "Commission greenlights Estonia's fourth payment request for €135.5 million under NextGenerationEU",
+      "event_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1642",
+      "event_source": "European Commission Press",
+      "decision": "BURN",
+      "amount_crbn": 6040000,
+      "final_score": 6.08,
+      "confidence": 8,
+      "justification": "EU institutional approval of climate-aligned recovery funding advances SDGs 8, 9, 11, and 13. | The European Commission's approval of Estonia's fourth RRF payment request directly advances sustainable economic recovery, innovation, and climate-aligned infrastructure investments. The action aligns with multiple SDGs by fostering resilient, inclusive, and green growth. No negative ethical aspects are identified in this institutional funding approval.",
+      "tx_hash": "5SUYLVbwcf8i426XyECCwe6xXmYj7sypq5ncHW6Npcz5vUvarYxxULFQBTUPnNAAkgsySASoo94UMjTP1vvMePVo",
+      "created_at": "2026-07-17T06:05:02.461186+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"European Commission approves Estonia's fourth payment request for €135.5 million under the Recovery and Resilience Facility (RRF) of NextGenerationEU, enabling continued implementation of Estonia's recovery and resilience plan.\", \"affected_sdgs\": [8, 9, 10, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 5386,
       "event_title": "Merz and Macron's final push for Europe's nuclear shield",
@@ -123942,8 +123988,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.405,
-        "events": 42
+        "burn_ratio": 0.415,
+        "events": 41
       },
       {
         "region": "Latin America",
@@ -123961,7 +124007,7 @@
         "events": 120
       },
       {
-        "region": "Oceania",
+        "region": "Africa",
         "burn_ratio": 0.263,
         "events": 19
       }
@@ -123973,12 +124019,12 @@
         "events": 13
       },
       {
-        "region": "Oceania",
+        "region": "Africa",
         "mint_ratio": 0.737,
         "events": 19
       },
       {
-        "region": "Africa",
+        "region": "Oceania",
         "mint_ratio": 0.737,
         "events": 19
       },
@@ -124026,8 +124072,8 @@
       },
       {
         "date": "2026-07-17",
-        "net_minted": 48435900,
-        "net_burned": 13271700
+        "net_minted": 49035900,
+        "net_burned": 19311700
       }
     ],
     "event_of_the_day": {
@@ -124044,8 +124090,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 189,
-        "negative": 406,
+        "negative": 405,
         "event_ids_positive": [
+          5387,
           5384,
           5379,
           5377,
@@ -124233,10 +124280,10 @@
           4790,
           4789,
           4787,
-          4778,
-          4776
+          4778
         ],
         "event_ids_negative": [
+          5388,
           5386,
           5385,
           5383,
@@ -124640,14 +124687,12 @@
           4781,
           4780,
           4779,
-          4777,
-          4775,
-          4774
+          4777
         ]
       },
       "UDHR": {
         "positive": 84,
-        "negative": 295,
+        "negative": 294,
         "event_ids_positive": [
           5379,
           5373,
@@ -125028,8 +125073,7 @@
           4784,
           4782,
           4781,
-          4777,
-          4774
+          4777
         ]
       },
       "ILO": {
@@ -125256,8 +125300,8 @@
         ]
       },
       "Animal": {
-        "positive": 47,
-        "negative": 51,
+        "positive": 46,
+        "negative": 52,
         "event_ids_positive": [
           5371,
           5359,
@@ -125304,10 +125348,10 @@
           4819,
           4809,
           4798,
-          4789,
-          4776
+          4789
         ],
         "event_ids_negative": [
+          5388,
           5385,
           5370,
           5363,
@@ -125448,6 +125492,7 @@
           4787
         ],
         "event_ids_negative": [
+          5388,
           5382,
           5370,
           5363,
@@ -125560,8 +125605,7 @@
           4796,
           4782,
           4780,
-          4779,
-          4775
+          4779
         ]
       }
     },
@@ -125569,21 +125613,22 @@
       "niche_pct": 44.3,
       "mainstream_pct": 55.7,
       "total_sources_used": 115,
-      "articles_processed": 613
+      "articles_processed": 612
     },
     "cache_hit_rate_7d": {
       "hits": 18,
-      "total_events": 613,
+      "total_events": 612,
       "pct": 2.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 37,
-        "burn_count": 12,
+        "count": 38,
+        "burn_count": 13,
         "mint_count": 25,
         "event_ids": [
+          5387,
           5382,
           5376,
           5322,
@@ -125664,6 +125709,19 @@
         ]
       },
       {
+        "name": "EU Commission",
+        "count": 5,
+        "burn_count": 3,
+        "mint_count": 2,
+        "event_ids": [
+          5387,
+          5309,
+          5295,
+          5214,
+          5037
+        ]
+      },
+      {
         "name": "ILO",
         "count": 4,
         "burn_count": 2,
@@ -125673,18 +125731,6 @@
           5196,
           5089,
           4993
-        ]
-      },
-      {
-        "name": "EU Commission",
-        "count": 4,
-        "burn_count": 2,
-        "mint_count": 2,
-        "event_ids": [
-          5309,
-          5295,
-          5214,
-          5037
         ]
       },
       {
@@ -125722,9 +125768,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 94,
+        "count": 93,
         "burn_count": 41,
-        "mint_count": 53,
+        "mint_count": 52,
         "event_ids": [
           5386,
           5378,
@@ -125818,16 +125864,16 @@
           4796,
           4787,
           4783,
-          4782,
-          4775
+          4782
         ]
       },
       {
         "name": "Construction",
-        "count": 69,
-        "burn_count": 28,
+        "count": 70,
+        "burn_count": 29,
         "mint_count": 41,
         "event_ids": [
+          5387,
           5376,
           5372,
           5355,
@@ -125966,6 +126012,7 @@
         "burn_count": 16,
         "mint_count": 32,
         "event_ids": [
+          5387,
           5385,
           5354,
           5350,
@@ -126012,8 +126059,7 @@
           4791,
           4790,
           4785,
-          4781,
-          4776
+          4781
         ]
       },
       {
@@ -126192,9 +126238,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1776,
+      "total_burn": 1777,
       "direct_action": {
-        "count": 1378,
+        "count": 1379,
         "pct": 77.6
       },
       "editorial_consciousness": {
@@ -126207,10 +126253,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 420,
+      "total_mint": 419,
       "direct_action": {
-        "count": 372,
-        "pct": 88.6
+        "count": 371,
+        "pct": 88.5
       },
       "editorial_alarm": {
         "count": 34,
@@ -126222,9 +126268,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3602,
+      "total_mint": 3603,
       "direct_action": {
-        "count": 2862,
+        "count": 2863,
         "pct": 79.5
       },
       "editorial_alarm": {
@@ -126237,9 +126283,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 200,
-      "institutional": 413,
-      "citizen_ratio": 0.326,
+      "citizen": 198,
+      "institutional": 414,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-07-11",
@@ -126274,7 +126320,7 @@
         {
           "date": "2026-07-17",
           "citizen": 6,
-          "institutional": 12
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -126475,11 +126521,11 @@
         4789,
         4784,
         4779,
-        4777,
-        4776,
-        4775
+        4777
       ],
       "event_ids_institutional": [
+        5388,
+        5387,
         5385,
         5384,
         5382,
@@ -126891,8 +126937,7 @@
         4782,
         4781,
         4780,
-        4778,
-        4774
+        4778
       ]
     }
   }
