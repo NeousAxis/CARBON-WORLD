@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-17T13:05:46.086596+00:00",
-  "total_pending": 5,
+  "generated_at": "2026-07-17T13:36:18.902878+00:00",
+  "total_pending": 6,
   "reviews": [
     {
       "id": 741,
@@ -98,6 +98,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-07-15T19:07:22.025786+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 777,
+      "event_title": "ActionSA to take SAPS to court over Phala Phala ‘cover-up’ that cleared top cops",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-07-17-actionsa-to-take-saps-to-court-over-phala-phala-cover-up-that-cleared-top-cops/",
+      "event_source": "Daily Maverick (South Africa)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Political party ActionSA initiates legal action to challenge perceived cover-up of top police officers in the Phala Phala scandal, aiming to hold authorities accountable\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [], \"ethical_synthesis\": \"ActionSA's legal challenge to overturn a SAPS investigation that cleared top cops in the Phala Phala scandal represents a positive step toward accountability and transparency in governance. The action aligns with SDG 16 (Peace, Justice, and Strong Institutions) by seeking to address perceived corruption and restore public trust in law enforcement institutions.\", \"snapshot_score\": 7.5, \"trajectory_score\": 1.5, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Court ruling on the case\", \"Public Protector or IPID findings corroborated\", \"Government response to legal challenge\", \"Media or public opinion shifts significantly\"], \"revaluation_checkpoint\": \"2028-07-17\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court rules in favor of ActionSA, leading to reinvestigation and accountability for implicated officers\", \"probability\": 0.3, \"score\": 9}, {\"name\": \"B\", \"description\": \"Court dismisses the case, but public pressure forces alternative accountability measures\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Court dismisses the case, and no further accountability measures are taken, reinforcing impunity\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 4.35, \"final_score\": 5.66, \"decision\": \"BURN\", \"amount_cbwd\": 700000, \"confidence\": 8, \"justification\": \"Legal challenge to hold police accountable for alleged cover-up aligns with justice and transparency.\", \"event_scope\": \"national\", \"event_country\": \"South Africa\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Political party ActionSA initiates legal action to challenge a perceived cover-up by the South African Police Service (SAPS) in the Phala Phala scandal, aiming to hold top officials accountable.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Legal challenge seeks to overturn an internal disciplinary process that allegedly ignored findings by independent oversight bodies (Public Protector and IPID), promoting transparency and institutional accountability.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"The SAPS internal disciplinary process cleared top cops despite allegations of a cover-up, undermining public trust in law enforcement and accountability mechanisms.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The legal action by ActionSA represents a positive step toward accountability and transparency in addressing alleged corruption within SAPS, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the initial clearance of top cops by SAPS highlights systemic failures in institutional oversight, violating fundamental rights to due process and fair trial.\", \"snapshot_score\": 3.0, \"trajectory_score\": 2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Court ruling on the case\", \"Public Protector or IPID reopening investigations\", \"SAPS implementing reforms in response to the lawsuit\", \"Political interference in the judicial process\"], \"revaluation_checkpoint\": \"2028-07-17\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Court rules in favor of ActionSA, leading to a transparent re-investigation and accountability for implicated officials, restoring public trust in SAPS.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Court partially upholds ActionSA's challenge but delays or limits accountability, leaving systemic issues unresolved.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Court dismisses the case or ruling is ignored, exacerbating corruption and eroding public confidence in SAPS and the judiciary.\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.7, \"final_score\": 2.155, \"decision\": \"MINT\", \"amount_cbwd\": 300000, \"confidence\": 7, \"justification\": \"Legal challenge to hold SAPS accountable for alleged cover-up, but systemic failures undermine trust.\", \"event_scope\": \"national\", \"event_country\": \"South Africa\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.9075, \"confidence\": 8, \"amount_cbwd\": 532000, \"justification\": \"Legal challenge seeks to correct institutional failure and promote accountability.\", \"disagreement\": true, \"reason\": \"The institutional action is a legal challenge to correct a perceived cover-up, which aligns with protecting rights and punishing harm.\"}",
+      "sentinel_concern": "structural: missing_negative_aspects, analyst_ab_disagreement | llm: Polarity error: cover-up correction is BURN, but systemic failures (MINT) suggest harm outweighs accountability.",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 532000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-07-17T13:36:11.463676+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
