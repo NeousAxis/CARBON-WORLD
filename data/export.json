@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-19T04:35:24.165180+00:00",
-  "total_events": 5527,
-  "total_burned": 7623837065,
-  "total_minted": 8100374979,
+  "generated_at": "2026-07-19T05:05:33.706972+00:00",
+  "total_events": 5529,
+  "total_burned": 7624537065,
+  "total_minted": 8101050979,
   "pending_reviews": 6,
   "events": [
+    {
+      "id": 5529,
+      "event_title": "Japan ‘cannot avoid’ nuclear weapons debate, defense chief Koizumi says",
+      "event_url": "https://www.japantimes.co.jp/news/2026/07/19/japan/politics/koizumi-japan-nuclear-weapons-debate/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -4.73,
+      "confidence": 8,
+      "justification": "Government contemplation of nuclear armament undermines global peace and non-proliferation. | While the debate itself may foster democratic discourse, the core action—considering a reversal of Japan's non-nuclear policy—poses severe risks to regional stability, global non-proliferation norms, and Japan's long-standing commitment to peace. The potential violation of international legal frameworks and human rights principles outweighs the minor positive aspect of increased transparency.",
+      "tx_hash": "2adCEPw1LZdXnP3PrJM25Fb8icw2773UfkccwhBKD3tciqeYiXa32xkJTjR9irnLw1hLWA4eNsAuMqU3jTbuJb3g",
+      "created_at": "2026-07-19T05:05:28.501397+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Public debate initiated by a government defense minister on nuclear weapons policy, potentially increasing transparency and democratic engagement\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Statement by Japan's Defense Minister indicating the government may reconsider its decades-long non-nuclear policy, risking destabilization in East Asia and undermining global non-proliferation efforts\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential shift toward nuclear armament could violate Japan's obligations under the Treaty on the Non-Proliferation of Nuclear Weapons (NPT)\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 5528,
+      "event_title": "Poland welcomes Zelensky’s five-point plan for resolving dispute over WWII massacres",
+      "event_url": "https://notesfrompoland.com/2026/07/18/poland-welcomes-zelenskys-five-point-plan-for-resolving-dispute-over-wwii-massacres/",
+      "event_source": "Notes From Poland (EN)",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 6.04,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Diplomatic commitment to historical justice and transparency strengthens peace and human rights. | The action represents a significant step toward historical accountability and reconciliation, aligning with justice and human rights frameworks. While the long-term impact depends on implementation, the commitment to transparency and exhumations addresses past atrocities and fos",
+      "tx_hash": "4zHhXnWX7z9hUPP8bzrKkKaoWzFTSdAGorn3AkBh9YbSXzZbgMz3F6TknpxQ4x3m2QUZG8mVrqXAVVsL51RLx4J2",
+      "created_at": "2026-07-19T05:05:28.401172+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Ukraine commits to opening historical archives and allowing exhumations to address WWII massacres, promoting transparency and historical justice\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Poland's willingness to engage with Ukraine's five-point plan signals diplomatic cooperation and potential reconciliation over historical disputes\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 667000
+    },
     {
       "id": 5527,
       "event_title": "Influencer Andrew Tate and his brother arrested in Miami at UK's extradition request",
@@ -127190,8 +127236,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.435,
-        "events": 46
+        "burn_ratio": 0.426,
+        "events": 47
       },
       {
         "region": "North America",
@@ -127269,8 +127315,8 @@
       },
       {
         "date": "2026-07-19",
-        "net_minted": 2024000,
-        "net_burned": 22286000
+        "net_minted": 2700000,
+        "net_burned": 22986000
       }
     ],
     "event_of_the_day": {
@@ -127286,9 +127332,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 186,
-        "negative": 405,
+        "positive": 187,
+        "negative": 406,
         "event_ids_positive": [
+          5528,
           5527,
           5524,
           5523,
@@ -127477,6 +127524,7 @@
           4923
         ],
         "event_ids_negative": [
+          5529,
           5526,
           5525,
           5520,
@@ -127885,9 +127933,10 @@
         ]
       },
       "UDHR": {
-        "positive": 81,
-        "negative": 290,
+        "positive": 82,
+        "negative": 291,
         "event_ids_positive": [
+          5528,
           5527,
           5524,
           5523,
@@ -127971,6 +128020,7 @@
           4923
         ],
         "event_ids_negative": [
+          5529,
           5526,
           5525,
           5520,
@@ -128810,11 +128860,11 @@
       "niche_pct": 42.6,
       "mainstream_pct": 57.4,
       "total_sources_used": 115,
-      "articles_processed": 608
+      "articles_processed": 610
     },
     "cache_hit_rate_7d": {
       "hits": 17,
-      "total_events": 608,
+      "total_events": 610,
       "pct": 2.8
     },
     "active_partners_7d": [],
@@ -128979,10 +129029,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 90,
+        "count": 91,
         "burn_count": 37,
-        "mint_count": 53,
+        "mint_count": 54,
         "event_ids": [
+          5529,
           5525,
           5500,
           5493,
@@ -129162,10 +129213,11 @@
       },
       {
         "name": "Defense",
-        "count": 49,
+        "count": 50,
         "burn_count": 1,
-        "mint_count": 48,
+        "mint_count": 49,
         "event_ids": [
+          5529,
           5526,
           5468,
           5466,
@@ -129425,14 +129477,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 190,
+      "total_burn": 191,
       "direct_action": {
-        "count": 163,
-        "pct": 85.8
+        "count": 164,
+        "pct": 85.9
       },
       "editorial_consciousness": {
         "count": 23,
-        "pct": 12.1
+        "pct": 12.0
       },
       "untyped": {
         "count": 4,
@@ -129440,14 +129492,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1816,
+      "total_burn": 1817,
       "direct_action": {
-        "count": 1413,
+        "count": 1414,
         "pct": 77.8
       },
       "editorial_consciousness": {
         "count": 139,
-        "pct": 7.7
+        "pct": 7.6
       },
       "untyped": {
         "count": 264,
@@ -129455,9 +129507,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 418,
+      "total_mint": 419,
       "direct_action": {
-        "count": 375,
+        "count": 376,
         "pct": 89.7
       },
       "editorial_alarm": {
@@ -129470,9 +129522,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3703,
+      "total_mint": 3704,
       "direct_action": {
-        "count": 2958,
+        "count": 2959,
         "pct": 79.9
       },
       "editorial_alarm": {
@@ -129486,8 +129538,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 202,
-      "institutional": 406,
-      "citizen_ratio": 0.332,
+      "institutional": 408,
+      "citizen_ratio": 0.331,
       "daily": [
         {
           "date": "2026-07-13",
@@ -129522,7 +129574,7 @@
         {
           "date": "2026-07-19",
           "citizen": 1,
-          "institutional": 7
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -129730,6 +129782,8 @@
         4924
       ],
       "event_ids_institutional": [
+        5529,
+        5528,
         5527,
         5526,
         5524,
