@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-19T00:04:58.149037+00:00",
-  "total_events": 5519,
+  "generated_at": "2026-07-19T01:35:03.156568+00:00",
+  "total_events": 5520,
   "total_burned": 7601551065,
-  "total_minted": 8098350979,
+  "total_minted": 8098950979,
   "pending_reviews": 6,
   "events": [
+    {
+      "id": 5520,
+      "event_title": "Dissident artist Luis Manuel Otero Alcantara leaves Cuba for the United States",
+      "event_url": "https://www.ouest-france.fr/monde/cuba/lartiste-dissident-luis-manuel-otero-alcantara-a-quitte-cuba-pour-les-etats-unis-e2b38e68-82e8-11f1-ae6f-a09f3d00f0f8?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 600000,
+      "final_score": 2.5,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Prison sentence for dissent outweighs release; systemic repression persists. | The release and departure of Luis Manuel Otero Alcantara marks a positive step toward freedom of expression and political rights, aligning with SDG 16. However, the five-year imprisonment underscores severe suppression of dissent in Cuba, violating fundamental human rights. The net ethical judgment b",
+      "tx_hash": "5gWqWn2raLtUP14XpaJTdnCzpe9pngNYz59rhwVwkUiPNW38mXo1BfEBFLsz33TWhcGiEzaW32WAyBpPTX4DnXCm",
+      "created_at": "2026-07-19T01:34:57.409845+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Cuba",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Dissident artist Luis Manuel Otero Alcantara's departure from Cuba to the United States after serving a prison sentence, indicating a release from political imprisonment and potential freedom of expression\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Cuban government's imprisonment of a dissident artist for five years, representing suppression of free expression and political dissent\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5519,
       "event_title": "New environmental performance index highlights sustainability gains, and the challenges ahead",
@@ -1234,7 +1257,7 @@
       "final_score": -6.79,
       "confidence": 9,
       "justification": "Semantic cache reuse (cosine=0.941) from event #5380",
-      "tx_hash": null,
+      "tx_hash": "Vm27HSrmkmVmtzePF9av1Hv4NRbJrY8ETwPfYCmAH9BmDyF7oggoCMg8efmRVUmuYNWfcw73aAoi2bFhUWob9fy",
       "created_at": "2026-07-18T04:02:41.928374+00:00",
       "embedding": null,
       "reused_from_event_id": 5380,
@@ -127001,8 +127024,8 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.459,
-        "events": 37
+        "burn_ratio": 0.447,
+        "events": 38
       },
       {
         "region": "Asia",
@@ -127080,12 +127103,12 @@
       },
       {
         "date": "2026-07-18",
-        "net_minted": 46482900,
+        "net_minted": 54772900,
         "net_burned": 38029620
       },
       {
         "date": "2026-07-19",
-        "net_minted": 0,
+        "net_minted": 600000,
         "net_burned": 0
       }
     ],
@@ -127288,6 +127311,7 @@
           4923
         ],
         "event_ids_negative": [
+          5520,
           5519,
           5518,
           5516,
@@ -127693,8 +127717,7 @@
           4919,
           4918,
           4916,
-          4915,
-          4914
+          4915
         ]
       },
       "UDHR": {
@@ -127779,6 +127802,7 @@
           4923
         ],
         "event_ids_negative": [
+          5520,
           5518,
           5516,
           5515,
@@ -128067,8 +128091,7 @@
           4922,
           4920,
           4916,
-          4915,
-          4914
+          4915
         ]
       },
       "ILO": {
@@ -128175,7 +128198,7 @@
       },
       "UNDRIP": {
         "positive": 40,
-        "negative": 85,
+        "negative": 86,
         "event_ids_positive": [
           5493,
           5491,
@@ -128219,6 +128242,7 @@
           4943
         ],
         "event_ids_negative": [
+          5520,
           5494,
           5490,
           5480,
@@ -128417,7 +128441,7 @@
       },
       "PB": {
         "positive": 76,
-        "negative": 114,
+        "negative": 113,
         "event_ids_positive": [
           5507,
           5493,
@@ -128609,8 +128633,7 @@
           4929,
           4925,
           4921,
-          4916,
-          4914
+          4916
         ]
       }
     },
@@ -128618,12 +128641,12 @@
       "niche_pct": 43.0,
       "mainstream_pct": 57.0,
       "total_sources_used": 114,
-      "articles_processed": 605
+      "articles_processed": 606
     },
     "cache_hit_rate_7d": {
-      "hits": 17,
-      "total_events": 605,
-      "pct": 2.8
+      "hits": 18,
+      "total_events": 606,
+      "pct": 3.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -128969,11 +128992,12 @@
       },
       {
         "name": "Defense",
-        "count": 47,
+        "count": 48,
         "burn_count": 1,
-        "mint_count": 46,
+        "mint_count": 47,
         "event_ids": [
           5468,
+          5466,
           5451,
           5426,
           5385,
@@ -129162,9 +129186,9 @@
       },
       {
         "name": "Transport",
-        "count": 31,
+        "count": 30,
         "burn_count": 9,
-        "mint_count": 22,
+        "mint_count": 21,
         "event_ids": [
           5518,
           5366,
@@ -129195,8 +129219,7 @@
           4959,
           4957,
           4928,
-          4922,
-          4914
+          4922
         ]
       },
       {
@@ -129262,24 +129285,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 420,
+      "total_mint": 421,
       "direct_action": {
         "count": 377,
-        "pct": 89.8
+        "pct": 89.5
       },
       "editorial_alarm": {
         "count": 30,
         "pct": 7.1
       },
       "untyped": {
-        "count": 13,
-        "pct": 3.1
+        "count": 14,
+        "pct": 3.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3699,
+      "total_mint": 3701,
       "direct_action": {
-        "count": 2955,
+        "count": 2956,
         "pct": 79.9
       },
       "editorial_alarm": {
@@ -129287,13 +129310,13 @@
         "pct": 6.2
       },
       "untyped": {
-        "count": 514,
+        "count": 515,
         "pct": 13.9
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 201,
-      "institutional": 404,
+      "institutional": 405,
       "citizen_ratio": 0.332,
       "daily": [
         {
@@ -129324,12 +129347,12 @@
         {
           "date": "2026-07-18",
           "citizen": 14,
-          "institutional": 47
+          "institutional": 48
         },
         {
           "date": "2026-07-19",
           "citizen": 0,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -129536,6 +129559,7 @@
         4924
       ],
       "event_ids_institutional": [
+        5520,
         5519,
         5518,
         5517,
@@ -129576,6 +129600,7 @@
         5473,
         5469,
         5467,
+        5466,
         5465,
         5464,
         5463,
@@ -129938,8 +129963,7 @@
         4918,
         4917,
         4916,
-        4915,
-        4914
+        4915
       ]
     }
   }
