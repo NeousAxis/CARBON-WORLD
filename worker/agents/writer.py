@@ -302,7 +302,7 @@ def write(event: dict) -> bool:
     amount = event_data["amount_crbn"]
     tx_hash = None
     try:
-        tx_hash = execute_decision(decision, amount)
+        tx_hash = execute_decision(decision, amount, event_id=event_id)
         if tx_hash and event_id:
             update_tx_hash(event_id, tx_hash)
             logger.info("Solana tx recorded for event %s: %s", event_id, tx_hash)

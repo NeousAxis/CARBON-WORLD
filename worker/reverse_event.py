@@ -88,7 +88,7 @@ def main() -> int:
         raise SystemExit(f"Unknown original decision: {original_decision}")
 
     logger.info("Will execute: %s %d CBWD to offset original %s", reverse_decision, amount, original_decision)
-    reverse_sig = execute_decision(reverse_decision, amount)
+    reverse_sig = execute_decision(reverse_decision, amount, event_id=args.event_id)
     if not reverse_sig:
         raise SystemExit("On-chain reverse failed — DB not updated, no side effects.")
 
