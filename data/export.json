@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-07-24T17:06:53.958045+00:00",
-  "total_events": 5575,
-  "total_burned": 7668009085,
-  "total_minted": 8119551969,
+  "generated_at": "2026-07-24T17:37:38.084780+00:00",
+  "total_events": 5578,
+  "total_burned": 7668613085,
+  "total_minted": 8120097239,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5578,
+      "event_title": "Thousands flee wildfires in France and Spain as temperatures reach extreme levels in southern Europe",
+      "event_url": "https://www.theguardian.com/world/2026/jul/23/people-evacuated-intense-wildfire-saumos-france",
+      "event_source": "The Guardian Environment",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -0.06,
+      "confidence": 7,
+      "justification": "Protective actions are outweighed by worsening wildfire trends and limited long‑term impact. | The emergency declaration and EU assistance request are positive steps that protect lives and support climate resilience, but they occur amid worsening wildfire trends that limit their overall impact.",
+      "tx_hash": "2mrAyCTAdVMoySL29nUTf8D1xatVi3AkVFiVDrVWnQyWHTSuh6RbacpgwmQcSzMz1q8vh64L3UYYTrWJE6i6NPTP",
+      "created_at": "2026-07-24T17:37:33.908639+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Spain declared a national emergency in the Madrid region and Avila province to mobilize resources against wildfires.\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"France requested European Union assistance to combat a major wildfire on its Atlantic coast.\", \"affected_sdgs\": [9, 11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 5577,
+      "event_title": "France evacuates Cap Ferret peninsula as Spanish wildfires merge near Madrid – as it happened",
+      "event_url": "https://www.theguardian.com/world/live/2026/jul/24/france-spain-wildfires-cap-ferret-europe-latest-news-updates",
+      "event_source": "The Guardian Climate",
+      "decision": "MINT",
+      "amount_crbn": 4270,
+      "final_score": 1.22,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Evacuation protects lives but limited scope yields a low net score, leading to a MINT decision. | The evacuation action safeguards human life and health, aligning with several SDGs and the right to life, while causing only limited short‑term hardship. Overall the net ethical impact is positive.",
+      "tx_hash": "4pGKorjQtoCn2SVwoT9UqEhiN1yxjfN2t9f4buhqVj6M6R8hXVazEZhvFQznbs1h26BB71BczP3Va8tFitcYC127",
+      "created_at": "2026-07-24T17:37:31.776513+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Government-ordered evacuation of residents from the Cap Ferret peninsula and surrounding areas, protecting lives and health.\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Temporary displacement and loss of property for evacuees, causing short‑term economic hardship.\", \"affected_sdgs\": [1, 8], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 2260
+    },
+    {
+      "id": 5576,
+      "event_title": "Top court defends Afghan woman's right to resettlement in Germany",
+      "event_url": "https://www.thelocal.de/20260724/top-court-defends-afghan-womans-right-to-resettlement-in-germany",
+      "event_source": "The Local Germany (EN)",
+      "decision": "BURN",
+      "amount_crbn": 604000,
+      "final_score": 6.01,
+      "confidence": 8,
+      "justification": "The court ruling upholds refugee rights, yielding a net positive impact, thus BURN. | The ruling safeguards the right to asylum and reduces gender and inequality disparities, aligning with core human‑rights norms. Although implementation may face political and resource challenges, the overall ethical balance is strongly positive.",
+      "tx_hash": "2vhVwZ1Tq3yyS2F2En3chJ5Qe98sMR6Vqtu8UWAZscpcJtkftq8WchTBnYEkXSLM7KMeANecGYkDmWo9PbQVtmhn",
+      "created_at": "2026-07-24T17:37:29.564911+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"German top court rules that authorities cannot deny admission to Afghan refugees, upholding their right to resettlement.\", \"affected_sdgs\": [5, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 5575,
       "event_title": "How Merz's personnel fiasco turned into a hanging party",
@@ -128276,14 +128345,14 @@
         "total_amount": 1400000
       },
       {
+        "country": "Germany",
+        "count": 1,
+        "total_amount": 604000
+      },
+      {
         "country": "Spain",
         "count": 1,
         "total_amount": 1365000
-      },
-      {
-        "country": "Mexico",
-        "count": 1,
-        "total_amount": 604000
       }
     ],
     "top_regions_sustainable": [
@@ -128309,8 +128378,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.1,
-        "events": 30
+        "burn_ratio": 0.125,
+        "events": 32
       }
     ],
     "top_regions_destructive": [
@@ -128326,8 +128395,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.9,
-        "events": 30
+        "mint_ratio": 0.875,
+        "events": 32
       },
       {
         "region": "Asia",
@@ -128373,8 +128442,8 @@
       },
       {
         "date": "2026-07-24",
-        "net_minted": 8525710,
-        "net_burned": 12994320
+        "net_minted": 9070980,
+        "net_burned": 13598320
       }
     ],
     "event_of_the_day": {
@@ -128390,9 +128459,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 45,
+        "positive": 46,
         "negative": 84,
         "event_ids_positive": [
+          5576,
           5574,
           5572,
           5571,
@@ -128440,6 +128510,8 @@
           5443
         ],
         "event_ids_negative": [
+          5578,
+          5577,
           5575,
           5573,
           5569,
@@ -128521,15 +128593,14 @@
           5448,
           5447,
           5446,
-          5442,
-          5441,
-          5440
+          5442
         ]
       },
       "UDHR": {
-        "positive": 20,
-        "negative": 62,
+        "positive": 21,
+        "negative": 63,
         "event_ids_positive": [
+          5576,
           5574,
           5571,
           5570,
@@ -128552,6 +128623,8 @@
           5445
         ],
         "event_ids_negative": [
+          5578,
+          5577,
           5575,
           5573,
           5566,
@@ -128612,8 +128685,7 @@
           5450,
           5448,
           5447,
-          5446,
-          5440
+          5446
         ]
       },
       "ILO": {
@@ -128769,14 +128841,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 81.0,
-      "mainstream_pct": 19.0,
-      "total_sources_used": 63,
-      "articles_processed": 136
+      "niche_pct": 81.2,
+      "mainstream_pct": 18.8,
+      "total_sources_used": 64,
+      "articles_processed": 137
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 136,
+      "total_events": 137,
       "pct": 0.7
     },
     "active_partners_7d": [],
@@ -128787,11 +128859,11 @@
         "burn_count": 2,
         "mint_count": 3,
         "event_ids": [
+          5578,
           5561,
           5548,
           5506,
-          5442,
-          5441
+          5442
         ]
       },
       {
@@ -128803,16 +128875,6 @@
           5487,
           5469,
           5462
-        ]
-      },
-      {
-        "name": "EU Commission",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          5506,
-          5441
         ]
       },
       {
@@ -128831,6 +128893,15 @@
         "mint_count": 0,
         "event_ids": [
           5541
+        ]
+      },
+      {
+        "name": "EU Commission",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          5506
         ]
       },
       {
@@ -128864,9 +128935,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 13,
+        "count": 12,
         "burn_count": 4,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           5571,
           5567,
@@ -128879,8 +128950,7 @@
           5500,
           5493,
           5486,
-          5473,
-          5441
+          5473
         ]
       },
       {
@@ -128982,25 +129052,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 48,
+      "total_burn": 49,
       "direct_action": {
-        "count": 41,
-        "pct": 85.4
+        "count": 42,
+        "pct": 85.7
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 8.3
+        "pct": 8.2
       },
       "untyped": {
         "count": 3,
-        "pct": 6.2
+        "pct": 6.1
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1837,
+      "total_burn": 1838,
       "direct_action": {
-        "count": 1430,
-        "pct": 77.8
+        "count": 1431,
+        "pct": 77.9
       },
       "editorial_consciousness": {
         "count": 140,
@@ -129027,9 +129097,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3730,
+      "total_mint": 3732,
       "direct_action": {
-        "count": 2980,
+        "count": 2982,
         "pct": 79.9
       },
       "editorial_alarm": {
@@ -129042,9 +129112,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 36,
-      "institutional": 100,
-      "citizen_ratio": 0.265,
+      "citizen": 35,
+      "institutional": 102,
+      "citizen_ratio": 0.255,
       "daily": [
         {
           "date": "2026-07-18",
@@ -129079,7 +129149,7 @@
         {
           "date": "2026-07-24",
           "citizen": 8,
-          "institutional": 11
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -129117,10 +129187,12 @@
         5460,
         5449,
         5445,
-        5444,
-        5440
+        5444
       ],
       "event_ids_institutional": [
+        5578,
+        5577,
+        5576,
         5575,
         5574,
         5573,
@@ -129219,8 +129291,7 @@
         5447,
         5446,
         5443,
-        5442,
-        5441
+        5442
       ]
     }
   }
