@@ -24,12 +24,24 @@ OLLAMA_REPEAT_PENALTY: float = float(os.getenv("OLLAMA_REPEAT_PENALTY", "1.15"))
 OLLAMA_TIMEOUT_SECONDS: int = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "240"))
 
 # Groq settings (used when LLM_PROVIDER=groq)
+#
+# 2026-07-24 — model decommission outage. Groq retired `qwen/qwen3-32b` and
+# Cerebras retired `qwen-3-235b-a22b-instruct-2507`. Both providers answer 404
+# `model_not_found`, which the client logs as a generic call failure, so the
+# pipeline kept running while classifying every article invalid: 0 event for
+# 5 days. Model ids below are taken from each provider's live /v1/models list
+# and were probed for clean JSON output before being committed.
 GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL: str = os.getenv("GROQ_MODEL", "qwen/qwen3-32b")
+GROQ_MODEL: str = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+
+# The classifier gets its own model id so it keeps a 30 RPM bucket separate
+# from the deep agents (analyst A, reconciler, sentinel), which all share
+# GROQ_MODEL. Triage is a shallow task, so the smaller model is enough.
+GROQ_FAST_MODEL: str = os.getenv("GROQ_FAST_MODEL", "openai/gpt-oss-20b")
 
 # Cerebras settings — separate free-tier quota bucket for Analyst B (parallel A||B without 429 collisions)
 CEREBRAS_API_KEY: str = os.getenv("CEREBRAS_API_KEY", "")
-CEREBRAS_MODEL: str = os.getenv("CEREBRAS_MODEL", "qwen-3-235b-a22b-instruct-2507")
+CEREBRAS_MODEL: str = os.getenv("CEREBRAS_MODEL", "gpt-oss-120b")
 
 # Mistral settings — third independent free-tier bucket (added 2026-05-05)
 # Used as the primary route for Analyst B; Cerebras becomes the fallback.

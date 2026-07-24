@@ -24,6 +24,7 @@ from config import (
     OLLAMA_REPEAT_PENALTY,
     GROQ_API_KEY,
     GROQ_MODEL,
+    GROQ_FAST_MODEL,
     CEREBRAS_API_KEY,
     CEREBRAS_MODEL,
     MISTRAL_API_KEY,
@@ -35,8 +36,37 @@ logger = logging.getLogger(__name__)
 
 # Model identifiers for the 8-agent verification pipeline
 ANALYST_B_MODEL = "llama-3.3-70b-versatile"
-RECONCILER_MODEL = "qwen/qwen3-32b"
+RECONCILER_MODEL = "openai/gpt-oss-120b"
 SENTINEL_MODEL = "openai/gpt-oss-120b"
+
+
+# Provider config errors (401/403/404) already reported this process, keyed by
+# (provider, model, status). A retired model or a revoked key fails on every
+# single call, so without this the log fills with hundreds of identical lines
+# and the real cause drowns in the noise — exactly how the 2026-07-24 outage
+# stayed invisible for 5 days.
+_reported_config_errors: set = set()
+
+
+def _log_config_error(provider: str, status: int, model: str, body: str) -> None:
+    """
+    Log a provider misconfiguration once per (provider, model, status).
+
+    401/403 means the API key is revoked or expired; 404 means the model id no
+    longer exists on that provider. Neither is transient, so retrying or
+    cascading to the next provider will not help — only a config change will.
+    """
+    key = (provider, model, status)
+    if key in _reported_config_errors:
+        return
+    _reported_config_errors.add(key)
+    cause = "API key rejected" if status in (401, 403) else "model id not found"
+    logger.critical(
+        "PROVIDER_CONFIG_ERROR — %s HTTP %d: %s (model=%s). This is permanent, "
+        "not a quota blip: every call to this provider will fail until the "
+        "config is fixed. Check the live model list / key. Response: %s",
+        provider, status, cause, model, body[:200],
+    )
 
 
 # ── JSON parsing helpers ─────────────────────────────────────────────────────
@@ -175,6 +205,9 @@ def _call_groq(
                 )
                 time.sleep(backoff)
                 continue
+            if resp.status_code in (401, 403, 404):
+                _log_config_error("Groq", resp.status_code, target_model, resp.text)
+                return None
             resp.raise_for_status()
             data = resp.json()
             raw = data["choices"][0]["message"]["content"]
@@ -258,6 +291,9 @@ def _call_cerebras(
                 )
                 time.sleep(backoff)
                 continue
+            if resp.status_code in (401, 403, 404):
+                _log_config_error("Cerebras", resp.status_code, target_model, resp.text)
+                return None
             resp.raise_for_status()
             data = resp.json()
             raw = data["choices"][0]["message"]["content"]
@@ -340,6 +376,9 @@ def _call_mistral(
                 )
                 time.sleep(backoff)
                 continue
+            if resp.status_code in (401, 403, 404):
+                _log_config_error("Mistral", resp.status_code, target_model, resp.text)
+                return None
             resp.raise_for_status()
             data = resp.json()
             raw = data["choices"][0]["message"]["content"]
@@ -427,7 +466,14 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
         # Cascade: Groq → Mistral → Cerebras. 1 attempt per provider so a
         # single provider's 429 never freezes the classifier.
         attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
-        result = _call_groq(system_prompt, user_message, context, max_tokens=200, max_attempts=attempts)
+        result = _call_groq(
+            system_prompt,
+            user_message,
+            context,
+            max_tokens=200,
+            model=GROQ_FAST_MODEL,
+            max_attempts=attempts,
+        )
         if result is None and MISTRAL_API_KEY:
             logger.info("Groq failed for classifier %s, trying Mistral", context)
             result = _call_mistral(system_prompt, user_message, context, max_tokens=200, delay=1, max_attempts=1)
@@ -464,7 +510,7 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
 
     Routing (each provider is a separate free-tier bucket):
       1. Mistral  (mistral-small-latest)  — primary  (added 2026-05-05)
-      2. Cerebras (qwen-3-235b)            — fallback when Mistral fails
+      2. Cerebras (CEREBRAS_MODEL)         — fallback when Mistral fails
       3. Groq     (llama-3.3-70b)          — last resort
       4. Ollama local                      — when LLM_PROVIDER=ollama
 
@@ -487,7 +533,7 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
         logger.info("Mistral failed for analyst B %s, falling back to Cerebras", context)
 
     if CEREBRAS_API_KEY:
-        return _call_cerebras(
+        result = _call_cerebras(
             system_prompt,
             user_message,
             context,
@@ -495,6 +541,10 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             delay=4,
             max_attempts=1,
         )
+        if result is not None:
+            return result
+        logger.info("Cerebras failed for analyst B %s, falling back to Groq", context)
+
     if LLM_PROVIDER == "groq":
         return _call_groq(
             system_prompt,

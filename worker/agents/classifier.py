@@ -20,7 +20,7 @@ import sqlite3
 from datetime import datetime, timezone
 from typing import Optional
 
-from ollama_client import call_fast
+from ollama_client import call_fast, _log_config_error
 from prompts.classifier_prompt import CLASSIFIER_PROMPT, CLASSIFIER_BATCH_PROMPT
 from prompts.sanitize import wrap_article_for_llm, wrap_articles_batch_for_llm
 from config import (
@@ -324,6 +324,9 @@ def _call_cerebras_batch_raw(user_message: str, context: str) -> Optional[str]:
                 )
                 time.sleep(backoff)
                 continue
+            if resp.status_code in (401, 403, 404):
+                _log_config_error("Cerebras", resp.status_code, CEREBRAS_MODEL, resp.text)
+                return None
             resp.raise_for_status()
             data = resp.json()
             return data["choices"][0]["message"]["content"]
@@ -371,6 +374,9 @@ def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
         if resp.status_code == 429:
             logger.warning("Mistral 429 for batch %s (single attempt fail-fast)", context)
             return None
+        if resp.status_code in (401, 403, 404):
+            _log_config_error("Mistral", resp.status_code, MISTRAL_MODEL, resp.text)
+            return None
         resp.raise_for_status()
         data = resp.json()
         return data["choices"][0]["message"]["content"]
@@ -387,7 +393,7 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
     Cascade: Groq → Mistral → Cerebras (3 independent free-tier buckets).
     """
     import time
-    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_MODEL, CEREBRAS_API_KEY, MISTRAL_API_KEY
+    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_FAST_MODEL, CEREBRAS_API_KEY, MISTRAL_API_KEY
 
     if LLM_PROVIDER == "groq":
         import httpx
@@ -399,7 +405,9 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
         time.sleep(delay)
 
         payload = {
-            "model": GROQ_MODEL,
+            # Same model as the mono classifier path, so both share one RPM
+            # bucket that stays separate from the deep agents' GROQ_MODEL.
+            "model": GROQ_FAST_MODEL,
             "messages": [
                 {"role": "system", "content": system_with_no_think},
                 {"role": "user", "content": user_message},
@@ -446,6 +454,9 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
                     )
                     time.sleep(backoff)
                     continue
+                if resp.status_code in (401, 403, 404):
+                    _log_config_error("Groq", resp.status_code, GROQ_FAST_MODEL, resp.text)
+                    return None
                 resp.raise_for_status()
                 data = resp.json()
                 return data["choices"][0]["message"]["content"]
