@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-24T20:06:24.384580+00:00",
-  "total_events": 5584,
-  "total_burned": 7680181185,
-  "total_minted": 8121233339,
+  "generated_at": "2026-07-24T20:36:37.404276+00:00",
+  "total_events": 5586,
+  "total_burned": 7680785185,
+  "total_minted": 8121648339,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5586,
+      "event_title": "More than 100,000 people flee or lock down as wildfires sweep France and Spain",
+      "event_url": "https://www.theguardian.com/world/2026/jul/24/france-evacuation-cap-ferret-peninsula-wildfire",
+      "event_source": "The Guardian Climate",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": 0.67,
+      "confidence": 7,
+      "justification": "Protective actions were significant but overall impact score remains low, leading to a MINT decision. | The evacuation and emergency declaration saved lives and demonstrated rapid governmental response, but the massive displacement caused economic and social strain. Overall the protective actions outweigh the temporary hardships, yielding a modest net positive ethical outcome.",
+      "tx_hash": "4g84ewQAArbW1YYnW8yuSw4TXCdVhpuAEFJG8YkTiUcUXyzY53g3DwSMy5jn2HWdRmZ5Zx1TWnxkXgq57yUWZcie",
+      "created_at": "2026-07-24T20:36:33.374970+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"French authorities ordered a village‑by‑village evacuation of the Cap Ferret peninsula to protect residents from an intense wildfire.\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"The Spanish government declared a national emergency to mobilize resources against widespread wildfires.\", \"affected_sdgs\": [11, 13, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Forced evacuation and lockdown displaced over 100,000 people, disrupting livelihoods and causing short‑term mental‑health stress.\", \"affected_sdgs\": [3, 8, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 5585,
+      "event_title": "Poland bans chaining of dogs and cats",
+      "event_url": "https://notesfrompoland.com/2026/07/24/poland-bans-chaining-of-dogs-and-cats/",
+      "event_source": "Notes From Poland (EN)",
+      "decision": "BURN",
+      "amount_crbn": 604000,
+      "final_score": 6.86,
+      "confidence": 8,
+      "justification": "Positive animal welfare law outweighs minor enforcement concerns. | The ban on chaining dogs and cats in Poland advances animal welfare, supporting SDG 12 and 15 and aligning with animal rights, while any enforcement challenges are limited, resulting in a net positive ethical judgment.",
+      "tx_hash": "5oUmmM2XmhdqVwTssCBUtjLQsTaSLCdsHnYCzCz97JXBiS4Ju56kkGSkyyeexKk77zYGibVY7xwApoXu366TbvwA",
+      "created_at": "2026-07-24T20:36:31.234316+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Poland",
+      "region": "Europe",
+      "administration": "Poland-KO",
+      "positive_aspects_json": "[{\"description\": \"National ban on chaining dogs and cats reduces animal cruelty and improves welfare.\", \"affected_sdgs\": [12, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 5584,
       "event_title": "Canadian Solar begins US HJT solar cell production at 6GW facility",
@@ -128456,14 +128502,14 @@
         "total_amount": 2208480
       },
       {
+        "country": "France",
+        "count": 4,
+        "total_amount": 644070
+      },
+      {
         "country": "United Kingdom",
         "count": 4,
         "total_amount": 1921000
-      },
-      {
-        "country": "Switzerland",
-        "count": 4,
-        "total_amount": 1750000
       }
     ],
     "top_countries_burn": [
@@ -128483,14 +128529,14 @@
         "total_amount": 1400000
       },
       {
-        "country": "Germany",
+        "country": "Poland",
         "count": 1,
         "total_amount": 604000
       },
       {
-        "country": "Spain",
+        "country": "Germany",
         "count": 1,
-        "total_amount": 1365000
+        "total_amount": 604000
       }
     ],
     "top_regions_sustainable": [
@@ -128516,8 +128562,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.125,
-        "events": 32
+        "burn_ratio": 0.147,
+        "events": 34
       }
     ],
     "top_regions_destructive": [
@@ -128533,8 +128579,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.875,
-        "events": 32
+        "mint_ratio": 0.853,
+        "events": 34
       },
       {
         "region": "Asia",
@@ -128580,8 +128626,8 @@
       },
       {
         "date": "2026-07-24",
-        "net_minted": 10207080,
-        "net_burned": 25166420
+        "net_minted": 10622080,
+        "net_burned": 25770420
       }
     ],
     "event_of_the_day": {
@@ -128597,9 +128643,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 45,
-        "negative": 83,
+        "positive": 46,
+        "negative": 84,
         "event_ids_positive": [
+          5585,
           5584,
           5581,
           5580,
@@ -128647,6 +128694,7 @@
           5460
         ],
         "event_ids_negative": [
+          5586,
           5583,
           5582,
           5579,
@@ -128734,7 +128782,7 @@
       },
       "UDHR": {
         "positive": 22,
-        "negative": 63,
+        "negative": 64,
         "event_ids_positive": [
           5581,
           5580,
@@ -128760,6 +128808,7 @@
           5462
         ],
         "event_ids_negative": [
+          5586,
           5583,
           5582,
           5579,
@@ -128906,9 +128955,10 @@
         ]
       },
       "Animal": {
-        "positive": 10,
+        "positive": 11,
         "negative": 11,
         "event_ids_positive": [
+          5585,
           5558,
           5557,
           5538,
@@ -128981,11 +129031,11 @@
       "niche_pct": 81.5,
       "mainstream_pct": 18.5,
       "total_sources_used": 65,
-      "articles_processed": 135
+      "articles_processed": 137
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 135,
+      "total_events": 137,
       "pct": 0.7
     },
     "active_partners_7d": [],
@@ -129189,24 +129239,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 48,
+      "total_burn": 49,
       "direct_action": {
-        "count": 42,
-        "pct": 87.5
+        "count": 43,
+        "pct": 87.8
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 6.2
+        "pct": 6.1
       },
       "untyped": {
         "count": 3,
-        "pct": 6.2
+        "pct": 6.1
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1841,
+      "total_burn": 1842,
       "direct_action": {
-        "count": 1434,
+        "count": 1435,
         "pct": 77.9
       },
       "editorial_consciousness": {
@@ -129219,9 +129269,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 87,
+      "total_mint": 88,
       "direct_action": {
-        "count": 80,
+        "count": 81,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -129230,13 +129280,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 4.6
+        "pct": 4.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3735,
+      "total_mint": 3736,
       "direct_action": {
-        "count": 2985,
+        "count": 2986,
         "pct": 79.9
       },
       "editorial_alarm": {
@@ -129250,8 +129300,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 33,
-      "institutional": 102,
-      "citizen_ratio": 0.244,
+      "institutional": 104,
+      "citizen_ratio": 0.241,
       "daily": [
         {
           "date": "2026-07-18",
@@ -129286,7 +129336,7 @@
         {
           "date": "2026-07-24",
           "citizen": 9,
-          "institutional": 19
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -129325,6 +129375,8 @@
         5460
       ],
       "event_ids_institutional": [
+        5586,
+        5585,
         5584,
         5583,
         5582,
