@@ -203,7 +203,7 @@ def main() -> int:
     # gap before each TX prevents that — verified empirically: at sleep=1 s
     # we got 5/18 success, at sleep=5 s we got 13/13 (2026-04-30).
     time.sleep(5)
-    tx_hash = execute_decision(final_decision, final_amount)
+    tx_hash = execute_decision(final_decision, final_amount, event_id=event_id)
     if tx_hash and event_id:
         update_tx_hash(event_id, tx_hash)
         logger.info("Solana tx: %s", tx_hash)
