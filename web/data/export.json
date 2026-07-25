@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T08:08:02.524659+00:00",
-  "total_events": 5600,
-  "total_burned": 7683077685,
+  "generated_at": "2026-07-25T10:07:35.508442+00:00",
+  "total_events": 5601,
+  "total_burned": 7683366165,
   "total_minted": 8135373739,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5601,
+      "event_title": "Pedro Sánchez announces that the Madrid and Ávila fires will be treated as a single incident",
+      "event_url": "https://efeverde.com/pedro-sanchez-incendios-madrid-y-avila/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "BURN",
+      "amount_crbn": 288480,
+      "final_score": 6.01,
+      "confidence": 6,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Unified command is a net positive for safety and climate resilience, justifying a BURN decision. | The decision to treat the Madrid and Ávila fires as a single incident largely enhances emergency response and protects human and ecological health, outweighing modest risks of reduced local autonomy.",
+      "tx_hash": "5RPaD1KhErA3vRUWtbNsQRGZFJD5MgMPXXhQ5FVtwicngLshMvjNtyyfNkD35Vd6ityE6P6Zr5AiM6EmuHsdhCD2",
+      "created_at": "2026-07-25T10:07:31.308049+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Unified emergency command improves coordination, speeding response and reducing fire damage to people and ecosystems.\", \"affected_sdgs\": [13, 11, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Governmental commitment signals protection of citizens' right to life and health during natural disasters.\", \"affected_sdgs\": [3, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Centralising command may overlook local knowledge, risking slower localized actions.\", \"affected_sdgs\": [11, 13], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 478000
+    },
     {
       "id": 5600,
       "event_title": "KEY DATES: Everything that changes in Austria in August 2026",
@@ -128815,18 +128838,18 @@
       },
       {
         "country": "Germany",
-        "count": 9,
-        "total_amount": 3179000
-      },
-      {
-        "country": "Switzerland",
-        "count": 5,
-        "total_amount": 2102000
+        "count": 8,
+        "total_amount": 2575000
       },
       {
         "country": "Israel",
         "count": 5,
         "total_amount": 2125580
+      },
+      {
+        "country": "Switzerland",
+        "count": 4,
+        "total_amount": 1570000
       },
       {
         "country": "Spain",
@@ -128841,14 +128864,14 @@
         "total_amount": 5792220
       },
       {
+        "country": "Spain",
+        "count": 2,
+        "total_amount": 1653480
+      },
+      {
         "country": "Brazil",
         "count": 2,
         "total_amount": 1267100
-      },
-      {
-        "country": "India",
-        "count": 2,
-        "total_amount": 1400000
       },
       {
         "country": "Poland",
@@ -128863,19 +128886,19 @@
     ],
     "top_regions_sustainable": [
       {
+        "region": "Latin America",
+        "burn_ratio": 0.5,
+        "events": 6
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.429,
         "events": 21
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.429,
-        "events": 7
-      },
-      {
         "region": "Asia",
-        "burn_ratio": 0.333,
-        "events": 12
+        "burn_ratio": 0.3,
+        "events": 10
       },
       {
         "region": "Africa",
@@ -128884,8 +128907,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.139,
-        "events": 36
+        "burn_ratio": 0.152,
+        "events": 33
       }
     ],
     "top_regions_destructive": [
@@ -128901,8 +128924,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.861,
-        "events": 36
+        "mint_ratio": 0.848,
+        "events": 33
       },
       {
         "region": "Africa",
@@ -128911,8 +128934,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.667,
-        "events": 12
+        "mint_ratio": 0.7,
+        "events": 10
       }
     ],
     "supply_trend_7d": [
@@ -128949,7 +128972,7 @@
       {
         "date": "2026-07-25",
         "net_minted": 11244000,
-        "net_burned": 0
+        "net_burned": 288480
       }
     ],
     "event_of_the_day": {
@@ -128965,9 +128988,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 41,
-        "negative": 80,
+        "positive": 40,
+        "negative": 73,
         "event_ids_positive": [
+          5601,
           5587,
           5585,
           5584,
@@ -129006,9 +129030,7 @@
           5489,
           5488,
           5487,
-          5483,
-          5479,
-          5475
+          5483
         ],
         "event_ids_negative": [
           5600,
@@ -129083,20 +129105,14 @@
           5490,
           5486,
           5485,
-          5484,
-          5482,
-          5481,
-          5480,
-          5478,
-          5477,
-          5476,
-          5474
+          5484
         ]
       },
       "UDHR": {
         "positive": 22,
-        "negative": 62,
+        "negative": 57,
         "event_ids_positive": [
+          5601,
           5587,
           5581,
           5580,
@@ -129117,8 +129133,7 @@
           5517,
           5493,
           5489,
-          5488,
-          5475
+          5488
         ],
         "event_ids_negative": [
           5600,
@@ -129177,12 +129192,7 @@
           5496,
           5495,
           5494,
-          5486,
-          5482,
-          5480,
-          5477,
-          5476,
-          5474
+          5486
         ]
       },
       "ILO": {
@@ -129202,7 +129212,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 13,
+        "negative": 12,
         "event_ids_positive": [
           5587,
           5580,
@@ -129223,13 +129233,12 @@
           5502,
           5496,
           5495,
-          5494,
-          5474
+          5494
         ]
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 12,
+        "negative": 10,
         "event_ids_positive": [
           5558,
           5552,
@@ -129248,14 +129257,12 @@
           5525,
           5520,
           5494,
-          5490,
-          5480,
-          5478
+          5490
         ]
       },
       "Animal": {
         "positive": 9,
-        "negative": 9,
+        "negative": 8,
         "event_ids_positive": [
           5585,
           5558,
@@ -129275,14 +129282,14 @@
           5515,
           5510,
           5504,
-          5490,
-          5478
+          5490
         ]
       },
       "PB": {
         "positive": 13,
-        "negative": 21,
+        "negative": 20,
         "event_ids_positive": [
+          5601,
           5587,
           5584,
           5564,
@@ -129294,8 +129301,7 @@
           5537,
           5507,
           5493,
-          5492,
-          5479
+          5492
         ],
         "event_ids_negative": [
           5600,
@@ -129317,20 +129323,19 @@
           5510,
           5506,
           5500,
-          5490,
-          5478
+          5490
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 83.1,
-      "mainstream_pct": 16.9,
-      "total_sources_used": 65,
-      "articles_processed": 127
+      "niche_pct": 85.9,
+      "mainstream_pct": 14.1,
+      "total_sources_used": 64,
+      "articles_processed": 119
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 127,
+      "total_events": 119,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129401,15 +129406,6 @@
         "event_ids": [
           5487
         ]
-      },
-      {
-        "name": "IUCN",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5478
-        ]
       }
     ],
     "top_sectors_7d": [
@@ -129435,33 +129431,16 @@
       },
       {
         "name": "Construction",
-        "count": 9,
-        "burn_count": 4,
-        "mint_count": 5,
+        "count": 6,
+        "burn_count": 3,
+        "mint_count": 3,
         "event_ids": [
           5560,
           5559,
           5535,
           5500,
           5484,
-          5483,
-          5481,
-          5476,
-          5475
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 6,
-        "burn_count": 1,
-        "mint_count": 5,
-        "event_ids": [
-          5597,
-          5595,
-          5560,
-          5555,
-          5525,
-          5476
+          5483
         ]
       },
       {
@@ -129475,6 +129454,19 @@
           5575,
           5548,
           5518
+        ]
+      },
+      {
+        "name": "Finance",
+        "count": 5,
+        "burn_count": 1,
+        "mint_count": 4,
+        "event_ids": [
+          5597,
+          5595,
+          5560,
+          5555,
+          5525
         ]
       },
       {
@@ -129526,24 +129518,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 44,
+      "total_burn": 43,
       "direct_action": {
-        "count": 38,
-        "pct": 86.4
+        "count": 37,
+        "pct": 86.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 6.8
+        "pct": 7.0
       },
       "untyped": {
         "count": 3,
-        "pct": 6.8
+        "pct": 7.0
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1843,
+      "total_burn": 1844,
       "direct_action": {
-        "count": 1436,
+        "count": 1437,
         "pct": 77.9
       },
       "editorial_consciousness": {
@@ -129556,18 +129548,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 83,
+      "total_mint": 76,
       "direct_action": {
-        "count": 78,
-        "pct": 94.0
+        "count": 71,
+        "pct": 93.4
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 2.4
+        "pct": 2.6
       },
       "untyped": {
         "count": 3,
-        "pct": 3.6
+        "pct": 3.9
       }
     },
     "mint_composition_all_time": {
@@ -129586,9 +129578,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 28,
-      "institutional": 99,
-      "citizen_ratio": 0.22,
+      "citizen": 26,
+      "institutional": 93,
+      "citizen_ratio": 0.218,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129623,7 +129615,7 @@
         {
           "date": "2026-07-25",
           "citizen": 0,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -129652,11 +129644,10 @@
         5491,
         5488,
         5487,
-        5485,
-        5481,
-        5480
+        5485
       ],
       "event_ids_institutional": [
+        5601,
         5600,
         5599,
         5598,
@@ -129748,14 +129739,7 @@
         5489,
         5486,
         5484,
-        5483,
-        5482,
-        5479,
-        5478,
-        5477,
-        5476,
-        5475,
-        5474
+        5483
       ]
     }
   }
