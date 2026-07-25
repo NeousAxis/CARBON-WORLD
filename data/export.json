@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T03:36:19.483476+00:00",
-  "total_events": 5595,
+  "generated_at": "2026-07-25T07:06:14.080778+00:00",
+  "total_events": 5596,
   "total_burned": 7683077685,
-  "total_minted": 8132807739,
+  "total_minted": 8133411739,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5596,
+      "event_title": "OPEN SECRETS: Digital Profiteers (Part One): A peek behind South Africa’s digitalised grants system",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-07-25-a-peek-behind-south-africas-digitalised-grants-system/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -1.43,
+      "confidence": 7,
+      "justification": "Privatizing grant administration reduces transparency and risks exclusion, outweighing efficiency gains. | While digital verification may improve efficiency, the privatization of a core social safety net undermines accountability and the right to social security, leading to a net negative ethical outcome.",
+      "tx_hash": "42fVqKqUX1gfgR1bz7Vs33ejGE2CVA7oeXhXbbnJXN53jvn7AtNFyKgyntBNsfNRSDppdWUiXkQzTnPHHUf1Bcqo",
+      "created_at": "2026-07-25T07:06:10.033300+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"Digital verification of grant recipients can reduce fraud and improve targeting of social assistance.\", \"affected_sdgs\": [1, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Outsourcing grant administration to commercial banks reduces transparency, creates profit motives, and risks exclusion of vulnerable people.\", \"affected_sdgs\": [1, 16], \"violated_rights\": [\"UDHR Article 22\", \"CRC Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5595,
       "event_title": "Europe: Approval of Israel bonds in the European market risks state’s complicity in Israel’s ongoing genocide",
@@ -128705,18 +128728,18 @@
       },
       {
         "country": "Israel",
-        "count": 6,
-        "total_amount": 2208480
-      },
-      {
-        "country": "France",
         "count": 5,
-        "total_amount": 1122070
+        "total_amount": 2125580
       },
       {
         "country": "United Kingdom",
         "count": 4,
         "total_amount": 1921000
+      },
+      {
+        "country": "Switzerland",
+        "count": 4,
+        "total_amount": 1750000
       }
     ],
     "top_countries_burn": [
@@ -128727,8 +128750,8 @@
       },
       {
         "country": "Brazil",
-        "count": 3,
-        "total_amount": 1341900
+        "count": 2,
+        "total_amount": 1267100
       },
       {
         "country": "India",
@@ -128748,36 +128771,36 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Latin America",
-        "burn_ratio": 0.5,
-        "events": 8
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.429,
         "events": 21
       },
       {
+        "region": "Latin America",
+        "burn_ratio": 0.429,
+        "events": 7
+      },
+      {
         "region": "Asia",
-        "burn_ratio": 0.308,
-        "events": 13
+        "burn_ratio": 0.333,
+        "events": 12
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.25,
-        "events": 4
+        "burn_ratio": 0.2,
+        "events": 5
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.147,
-        "events": 34
+        "burn_ratio": 0.156,
+        "events": 32
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 6
       },
       {
         "region": "Oceania",
@@ -128786,18 +128809,18 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.853,
-        "events": 34
+        "mint_ratio": 0.844,
+        "events": 32
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.75,
-        "events": 4
+        "mint_ratio": 0.8,
+        "events": 5
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.692,
-        "events": 13
+        "mint_ratio": 0.667,
+        "events": 12
       }
     ],
     "supply_trend_7d": [
@@ -128833,7 +128856,7 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 8678000,
+        "net_minted": 9282000,
         "net_burned": 0
       }
     ],
@@ -128850,8 +128873,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 43,
-        "negative": 80,
+        "positive": 41,
+        "negative": 77,
         "event_ids_positive": [
           5587,
           5585,
@@ -128893,11 +128916,10 @@
           5487,
           5483,
           5479,
-          5475,
-          5472,
-          5470
+          5475
         ],
         "event_ids_negative": [
+          5596,
           5595,
           5594,
           5593,
@@ -128973,16 +128995,12 @@
           5477,
           5476,
           5474,
-          5473,
-          5471,
-          5469,
-          5468,
-          5467
+          5473
         ]
       },
       "UDHR": {
         "positive": 22,
-        "negative": 60,
+        "negative": 58,
         "event_ids_positive": [
           5587,
           5581,
@@ -129008,6 +129026,7 @@
           5475
         ],
         "event_ids_negative": [
+          5596,
           5595,
           5593,
           5592,
@@ -129064,10 +129083,7 @@
           5480,
           5477,
           5476,
-          5474,
-          5471,
-          5469,
-          5468
+          5474
         ]
       },
       "ILO": {
@@ -129096,6 +129112,7 @@
           5488
         ],
         "event_ids_negative": [
+          5596,
           5579,
           5535,
           5513,
@@ -129105,22 +129122,19 @@
           5496,
           5495,
           5494,
-          5474,
-          5468
+          5474
         ]
       },
       "UNDRIP": {
-        "positive": 8,
-        "negative": 16,
+        "positive": 6,
+        "negative": 12,
         "event_ids_positive": [
           5558,
           5552,
           5493,
           5491,
           5488,
-          5487,
-          5472,
-          5470
+          5487
         ],
         "event_ids_negative": [
           5569,
@@ -129134,16 +129148,12 @@
           5494,
           5490,
           5480,
-          5478,
-          5471,
-          5469,
-          5468,
-          5467
+          5478
         ]
       },
       "Animal": {
         "positive": 9,
-        "negative": 10,
+        "negative": 9,
         "event_ids_positive": [
           5585,
           5558,
@@ -129164,13 +129174,12 @@
           5510,
           5504,
           5490,
-          5478,
-          5471
+          5478
         ]
       },
       "PB": {
-        "positive": 14,
-        "negative": 21,
+        "positive": 13,
+        "negative": 20,
         "event_ids_positive": [
           5587,
           5584,
@@ -129184,8 +129193,7 @@
           5507,
           5493,
           5492,
-          5479,
-          5472
+          5479
         ],
         "event_ids_negative": [
           5595,
@@ -129207,21 +129215,20 @@
           5506,
           5500,
           5490,
-          5478,
-          5471
+          5478
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 82.8,
-      "mainstream_pct": 17.2,
-      "total_sources_used": 64,
-      "articles_processed": 130
+      "niche_pct": 82.3,
+      "mainstream_pct": 17.7,
+      "total_sources_used": 62,
+      "articles_processed": 124
     },
     "cache_hit_rate_7d": {
-      "hits": 1,
-      "total_events": 130,
-      "pct": 0.8
+      "hits": 0,
+      "total_events": 124,
+      "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -129245,16 +129252,6 @@
         "event_ids": [
           5580,
           5502
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 2,
-        "burn_count": 1,
-        "mint_count": 1,
-        "event_ids": [
-          5487,
-          5469
         ]
       },
       {
@@ -129294,6 +129291,15 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          5487
+        ]
+      },
+      {
         "name": "IUCN",
         "count": 1,
         "burn_count": 0,
@@ -129327,9 +129333,9 @@
       },
       {
         "name": "Construction",
-        "count": 11,
+        "count": 9,
         "burn_count": 4,
-        "mint_count": 7,
+        "mint_count": 5,
         "event_ids": [
           5560,
           5559,
@@ -129339,51 +129345,45 @@
           5483,
           5481,
           5476,
-          5475,
-          5471,
-          5468
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 7,
-        "burn_count": 0,
-        "mint_count": 7,
-        "event_ids": [
-          5591,
-          5550,
-          5540,
-          5529,
-          5526,
-          5468,
-          5466
+          5475
         ]
       },
       {
         "name": "Finance",
-        "count": 6,
+        "count": 5,
         "burn_count": 1,
-        "mint_count": 5,
+        "mint_count": 4,
         "event_ids": [
           5595,
           5560,
           5555,
           5525,
-          5476,
-          5468
+          5476
+        ]
+      },
+      {
+        "name": "Defense",
+        "count": 5,
+        "burn_count": 0,
+        "mint_count": 5,
+        "event_ids": [
+          5591,
+          5550,
+          5540,
+          5529,
+          5526
         ]
       },
       {
         "name": "Forestry",
-        "count": 5,
+        "count": 4,
         "burn_count": 1,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           5566,
           5544,
           5530,
-          5492,
-          5471
+          5492
         ]
       },
       {
@@ -129421,18 +129421,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 46,
+      "total_burn": 44,
       "direct_action": {
-        "count": 40,
-        "pct": 87.0
+        "count": 38,
+        "pct": 86.4
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 6.5
+        "pct": 6.8
       },
       "untyped": {
         "count": 3,
-        "pct": 6.5
+        "pct": 6.8
       }
     },
     "burn_composition_all_time": {
@@ -129451,24 +129451,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 84,
+      "total_mint": 80,
       "direct_action": {
-        "count": 77,
-        "pct": 91.7
+        "count": 75,
+        "pct": 93.8
       },
       "editorial_alarm": {
-        "count": 3,
-        "pct": 3.6
+        "count": 2,
+        "pct": 2.5
       },
       "untyped": {
-        "count": 4,
-        "pct": 4.8
+        "count": 3,
+        "pct": 3.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3744,
+      "total_mint": 3745,
       "direct_action": {
-        "count": 2994,
+        "count": 2995,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129481,9 +129481,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 32,
-      "institutional": 98,
-      "citizen_ratio": 0.246,
+      "citizen": 28,
+      "institutional": 96,
+      "citizen_ratio": 0.226,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129518,7 +129518,7 @@
         {
           "date": "2026-07-25",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -129549,13 +129549,10 @@
         5487,
         5485,
         5481,
-        5480,
-        5472,
-        5471,
-        5470,
-        5468
+        5480
       ],
       "event_ids_institutional": [
+        5596,
         5595,
         5594,
         5593,
@@ -129650,10 +129647,7 @@
         5476,
         5475,
         5474,
-        5473,
-        5469,
-        5467,
-        5466
+        5473
       ]
     }
   }
