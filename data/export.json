@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T02:07:12.509757+00:00",
-  "total_events": 5594,
+  "generated_at": "2026-07-25T03:36:19.483476+00:00",
+  "total_events": 5595,
   "total_burned": 7683077685,
-  "total_minted": 8126767739,
+  "total_minted": 8132807739,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5595,
+      "event_title": "Europe: Approval of Israel bonds in the European market risks state’s complicity in Israel’s ongoing genocide",
+      "event_url": "https://www.amnesty.org/en/documents/eur01/1200/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -3.22,
+      "confidence": 7,
+      "justification": "The bond approval largely enables conflict financing, violating human rights and SDGs. | While the bond approval adds market transparency, it primarily facilitates funding for a war linked to serious human rights violations, outweighing any procedural benefits.",
+      "tx_hash": "czZd1KBWFVhMSPX57SLFsoJMnjgJiT9YAfuw7gBjFznLh4W8qSTYa5SnK78MhvApyy6QB77AG9V8wyEeE3QC9N2",
+      "created_at": "2026-07-25T03:36:15.610358+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Regulated bond issuance creates transparent financial channels and oversight\", \"affected_sdgs\": [9, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Approval enables financing of a conflict accused of genocide and war crimes\", \"affected_sdgs\": [1, 3, 5, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 27\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5594,
       "event_title": "Gordie Howe Bridge between Canada and the USA opened",
@@ -128672,8 +128695,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 13,
-        "total_amount": 5377000
+        "count": 12,
+        "total_amount": 5227000
       },
       {
         "country": "Germany",
@@ -128731,18 +128754,18 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.409,
-        "events": 22
-      },
-      {
-        "region": "Africa",
-        "burn_ratio": 0.4,
-        "events": 5
+        "burn_ratio": 0.429,
+        "events": 21
       },
       {
         "region": "Asia",
         "burn_ratio": 0.308,
         "events": 13
+      },
+      {
+        "region": "Africa",
+        "burn_ratio": 0.25,
+        "events": 4
       },
       {
         "region": "Europe",
@@ -128767,14 +128790,14 @@
         "events": 34
       },
       {
+        "region": "Africa",
+        "mint_ratio": 0.75,
+        "events": 4
+      },
+      {
         "region": "Asia",
         "mint_ratio": 0.692,
         "events": 13
-      },
-      {
-        "region": "Africa",
-        "mint_ratio": 0.6,
-        "events": 5
       }
     ],
     "supply_trend_7d": [
@@ -128810,7 +128833,7 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 2638000,
+        "net_minted": 8678000,
         "net_burned": 0
       }
     ],
@@ -128827,8 +128850,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 45,
-        "negative": 81,
+        "positive": 43,
+        "negative": 80,
         "event_ids_positive": [
           5587,
           5585,
@@ -128872,11 +128895,10 @@
           5479,
           5475,
           5472,
-          5470,
-          5465,
-          5462
+          5470
         ],
         "event_ids_negative": [
+          5595,
           5594,
           5593,
           5592,
@@ -128955,14 +128977,12 @@
           5471,
           5469,
           5468,
-          5467,
-          5464,
-          5463
+          5467
         ]
       },
       "UDHR": {
-        "positive": 23,
-        "negative": 61,
+        "positive": 22,
+        "negative": 60,
         "event_ids_positive": [
           5587,
           5581,
@@ -128985,10 +129005,10 @@
           5493,
           5489,
           5488,
-          5475,
-          5462
+          5475
         ],
         "event_ids_negative": [
+          5595,
           5593,
           5592,
           5591,
@@ -129047,9 +129067,7 @@
           5474,
           5471,
           5469,
-          5468,
-          5464,
-          5463
+          5468
         ]
       },
       "ILO": {
@@ -129067,16 +129085,15 @@
         ]
       },
       "CRC": {
-        "positive": 7,
-        "negative": 12,
+        "positive": 6,
+        "negative": 11,
         "event_ids_positive": [
           5587,
           5580,
           5527,
           5521,
           5493,
-          5488,
-          5462
+          5488
         ],
         "event_ids_negative": [
           5579,
@@ -129089,13 +129106,12 @@
           5495,
           5494,
           5474,
-          5468,
-          5463
+          5468
         ]
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 17,
+        "negative": 16,
         "event_ids_positive": [
           5558,
           5552,
@@ -129122,12 +129138,11 @@
           5471,
           5469,
           5468,
-          5467,
-          5463
+          5467
         ]
       },
       "Animal": {
-        "positive": 10,
+        "positive": 9,
         "negative": 10,
         "event_ids_positive": [
           5585,
@@ -129138,8 +129153,7 @@
           5508,
           5507,
           5492,
-          5491,
-          5465
+          5491
         ],
         "event_ids_negative": [
           5593,
@@ -129155,7 +129169,7 @@
         ]
       },
       "PB": {
-        "positive": 15,
+        "positive": 14,
         "negative": 21,
         "event_ids_positive": [
           5587,
@@ -129171,10 +129185,10 @@
           5493,
           5492,
           5479,
-          5472,
-          5465
+          5472
         ],
         "event_ids_negative": [
+          5595,
           5594,
           5593,
           5590,
@@ -129194,20 +129208,19 @@
           5500,
           5490,
           5478,
-          5471,
-          5463
+          5471
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 81.5,
-      "mainstream_pct": 18.5,
-      "total_sources_used": 65,
-      "articles_processed": 133
+      "niche_pct": 82.8,
+      "mainstream_pct": 17.2,
+      "total_sources_used": 64,
+      "articles_processed": 130
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 133,
+      "total_events": 130,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -129225,17 +129238,6 @@
         ]
       },
       {
-        "name": "UN",
-        "count": 3,
-        "burn_count": 2,
-        "mint_count": 1,
-        "event_ids": [
-          5487,
-          5469,
-          5462
-        ]
-      },
-      {
         "name": "WHO",
         "count": 2,
         "burn_count": 1,
@@ -129243,6 +129245,16 @@
         "event_ids": [
           5580,
           5502
+        ]
+      },
+      {
+        "name": "UN",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
+        "event_ids": [
+          5487,
+          5469
         ]
       },
       {
@@ -129348,30 +129360,30 @@
         ]
       },
       {
-        "name": "Forestry",
+        "name": "Finance",
         "count": 6,
         "burn_count": 1,
         "mint_count": 5,
         "event_ids": [
-          5566,
-          5544,
-          5530,
-          5492,
-          5471,
-          5463
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 5,
-        "burn_count": 1,
-        "mint_count": 4,
-        "event_ids": [
+          5595,
           5560,
           5555,
           5525,
           5476,
           5468
+        ]
+      },
+      {
+        "name": "Forestry",
+        "count": 5,
+        "burn_count": 1,
+        "mint_count": 4,
+        "event_ids": [
+          5566,
+          5544,
+          5530,
+          5492,
+          5471
         ]
       },
       {
@@ -129409,18 +129421,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 48,
+      "total_burn": 46,
       "direct_action": {
-        "count": 42,
-        "pct": 87.5
+        "count": 40,
+        "pct": 87.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 6.2
+        "pct": 6.5
       },
       "untyped": {
         "count": 3,
-        "pct": 6.2
+        "pct": 6.5
       }
     },
     "burn_composition_all_time": {
@@ -129439,24 +129451,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 85,
+      "total_mint": 84,
       "direct_action": {
-        "count": 78,
-        "pct": 91.8
+        "count": 77,
+        "pct": 91.7
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 3.5
+        "pct": 3.6
       },
       "untyped": {
         "count": 4,
-        "pct": 4.7
+        "pct": 4.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3743,
+      "total_mint": 3744,
       "direct_action": {
-        "count": 2993,
+        "count": 2994,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129470,8 +129482,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 32,
-      "institutional": 101,
-      "citizen_ratio": 0.241,
+      "institutional": 98,
+      "citizen_ratio": 0.246,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129506,7 +129518,7 @@
         {
           "date": "2026-07-25",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -129544,6 +129556,7 @@
         5468
       ],
       "event_ids_institutional": [
+        5595,
         5594,
         5593,
         5592,
@@ -129640,11 +129653,7 @@
         5473,
         5469,
         5467,
-        5466,
-        5465,
-        5464,
-        5463,
-        5462
+        5466
       ]
     }
   }
