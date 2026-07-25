@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T18:36:33.044495+00:00",
-  "total_events": 5609,
+  "generated_at": "2026-07-25T20:37:38.790910+00:00",
+  "total_events": 5610,
   "total_burned": 7684881025,
-  "total_minted": 8136507839,
+  "total_minted": 8136514599,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5610,
+      "event_title": "Head of Hamas-led police in northern Gaza killed by Israeli strike",
+      "event_url": "https://www.aljazeera.com/news/2026/7/25/head-of-hamas-led-police-in-northern-gaza-killed-by-israeli-strike?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 6760,
+      "final_score": -2.65,
+      "confidence": 8,
+      "justification": "The lethal strike causes significant civilian harm that outweighs any limited security gain. | While the strike might marginally curb militant activity, the immediate loss of civilian lives and violation of the right to life outweigh any security benefit, resulting in a net negative ethical outcome.",
+      "tx_hash": "2W41KWLrLQzv6sJCEyXDaiXS62uJ6dyBx2bhb4ib1ZTWv9vKcRq83BVU3FSEc9wjieunpcx3ECHBiZmkmthMQWwV",
+      "created_at": "2026-07-25T20:37:34.515589+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Potential weakening of Hamas' policing capacity may reduce armed violence in the area\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Air strike killed the head of Hamas‑led police and four other Palestinians, causing civilian loss of life\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5609,
       "event_title": "Government expands national emergency for fires to the province of Toledo",
@@ -129017,18 +129040,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 10,
-        "total_amount": 3182000
+        "count": 9,
+        "total_amount": 3114400
+      },
+      {
+        "country": "Israel",
+        "count": 4,
+        "total_amount": 699340
       },
       {
         "country": "France",
         "count": 4,
         "total_amount": 1677270
-      },
-      {
-        "country": "Israel",
-        "count": 4,
-        "total_amount": 1296580
       },
       {
         "country": "United Kingdom",
@@ -129076,13 +129099,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.444,
-        "events": 18
+        "burn_ratio": 0.471,
+        "events": 17
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.207,
-        "events": 29
+        "burn_ratio": 0.231,
+        "events": 26
       },
       {
         "region": "Latin America",
@@ -129118,8 +129141,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.793,
-        "events": 29
+        "mint_ratio": 0.769,
+        "events": 26
       }
     ],
     "supply_trend_7d": [
@@ -129155,25 +129178,25 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 12378100,
+        "net_minted": 12384860,
         "net_burned": 1803340
       }
     ],
     "event_of_the_day": {
-      "id": 5585,
-      "event_title": "Poland bans chaining of dogs and cats",
+      "id": 5603,
+      "event_title": "Daily News 24 / 07 / 2026",
       "decision": "BURN",
-      "amount_crbn": 604000,
-      "final_score": 6.86,
+      "amount_crbn": 60400,
+      "final_score": 6.49,
       "confidence": 8,
-      "country": "Poland",
-      "region": "Europe",
-      "created_at": "2026-07-24T20:36:31.234316+00:00"
+      "country": null,
+      "region": null,
+      "created_at": "2026-07-25T14:07:11.522296+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 59,
+        "negative": 55,
         "event_ids_positive": [
           5609,
           5607,
@@ -129211,6 +129234,7 @@
           5517
         ],
         "event_ids_negative": [
+          5610,
           5608,
           5606,
           5605,
@@ -129264,17 +129288,12 @@
           5520,
           5519,
           5518,
-          5516,
-          5515,
-          5514,
-          5513,
-          5512,
-          5511
+          5516
         ]
       },
       "UDHR": {
         "positive": 21,
-        "negative": 48,
+        "negative": 44,
         "event_ids_positive": [
           5609,
           5603,
@@ -129299,6 +129318,7 @@
           5517
         ],
         "event_ids_negative": [
+          5610,
           5608,
           5605,
           5604,
@@ -129341,12 +129361,7 @@
           5525,
           5520,
           5518,
-          5516,
-          5515,
-          5514,
-          5513,
-          5512,
-          5511
+          5516
         ]
       },
       "ILO": {
@@ -129367,7 +129382,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 7,
+        "negative": 5,
         "event_ids_positive": [
           5603,
           5587,
@@ -129380,9 +129395,7 @@
           5597,
           5596,
           5579,
-          5535,
-          5513,
-          5511
+          5535
         ]
       },
       "UNDRIP": {
@@ -129405,7 +129418,7 @@
       },
       "Animal": {
         "positive": 5,
-        "negative": 5,
+        "negative": 4,
         "event_ids_positive": [
           5585,
           5558,
@@ -129417,13 +129430,12 @@
           5593,
           5569,
           5567,
-          5539,
-          5515
+          5539
         ]
       },
       "PB": {
         "positive": 11,
-        "negative": 18,
+        "negative": 17,
         "event_ids_positive": [
           5609,
           5601,
@@ -129454,20 +129466,19 @@
           5539,
           5534,
           5530,
-          5525,
-          5515
+          5525
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 90.3,
-      "mainstream_pct": 9.7,
+      "niche_pct": 95.2,
+      "mainstream_pct": 4.8,
       "total_sources_used": 62,
-      "articles_processed": 99
+      "articles_processed": 95
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 99,
+      "total_events": 95,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129653,24 +129664,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 62,
+      "total_mint": 58,
       "direct_action": {
-        "count": 57,
-        "pct": 91.9
+        "count": 53,
+        "pct": 91.4
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 3.2
+        "pct": 3.4
       },
       "untyped": {
         "count": 3,
-        "pct": 4.8
+        "pct": 5.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3754,
+      "total_mint": 3755,
       "direct_action": {
-        "count": 3004,
+        "count": 3005,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129684,8 +129695,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 20,
-      "institutional": 79,
-      "citizen_ratio": 0.202,
+      "institutional": 75,
+      "citizen_ratio": 0.211,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129720,7 +129731,7 @@
         {
           "date": "2026-07-25",
           "citizen": 1,
-          "institutional": 16
+          "institutional": 17
         }
       ],
       "event_ids_citizen": [
@@ -129746,6 +129757,7 @@
         5525
       ],
       "event_ids_institutional": [
+        5610,
         5609,
         5608,
         5607,
@@ -129819,12 +129831,7 @@
         5519,
         5518,
         5517,
-        5516,
-        5515,
-        5514,
-        5513,
-        5512,
-        5511
+        5516
       ]
     }
   }
