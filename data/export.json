@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-25T21:36:57.803160+00:00",
-  "total_events": 5611,
-  "total_burned": 7684881025,
-  "total_minted": 8137118599,
+  "generated_at": "2026-07-25T22:07:12.201316+00:00",
+  "total_events": 5613,
+  "total_burned": 7684889425,
+  "total_minted": 8137186199,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5613,
+      "event_title": "Team Repair Breaks Things to Teach People How to Fix Them",
+      "event_url": "https://hackaday.com/2026/07/25/team-repair-breaks-things-to-teach-people-how-to-fix-them/",
+      "event_source": "Hackaday",
+      "decision": "BURN",
+      "amount_crbn": 8400,
+      "final_score": 6.0,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Repair teaching reduces waste and builds skills, delivering a net positive impact. | The initiative builds repair capacity and cuts e‑waste, aligning with responsible consumption and climate goals. Minor risks of temporary waste are outweighed by long‑term benefits, yielding a net positive ethical outcome.",
+      "tx_hash": "461LJ6McsXqoC886LhDEcZ8ncyFnhkkJ2PpuzzT9vDLjZoBHLh7mdkCwBuhMrenyaPHVnfufVGyooS4mmpN44gJc",
+      "created_at": "2026-07-25T22:07:08.592454+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Teaching repair skills reduces electronic waste and promotes a circular economy\", \"affected_sdgs\": [9, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"If broken devices are not repaired, there may be a short‑term increase in waste\", \"affected_sdgs\": [12], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 41500
+    },
+    {
+      "id": 5612,
+      "event_title": "Fires: \"the next hours may be difficult\" in Gironde, warns Sébastien Lecornu",
+      "event_url": "https://www.ici.fr/nouvelle-aquitaine/gironde-33/direct-incendies-19-000-hectares-parcourus-en-gironde-des-evacuations-dans-la-metropole-bordelaise-4591316?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -2.38,
+      "confidence": 8,
+      "justification": "Large regional fires cause severe damage, and despite military response, net impact remains negative. | The military response mitigates immediate harm, but the extensive fire damage outweighs the benefits, leading to a net negative ethical outcome.",
+      "tx_hash": "3HpDmrJq5a8kBNdu5NhmZDSS7QVVarrAvdot89ZJRYkixN6QPhmDJZd26H69wcK4LUvXyyW6YidW5gpyYXEZ3oEt",
+      "created_at": "2026-07-25T22:07:06.380770+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Deployment of 1,500 French military personnel to assist firefighting and evacuations in Gironde and Landes.\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Wildfires burned approximately 47,000 hectares, destroying habitats, releasing carbon and threatening lives.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5611,
       "event_title": "Trump Administration’s Unified Agenda Suggests Major Reversals on Climate Safeguards",
@@ -129067,14 +129113,14 @@
         "total_amount": 3718400
       },
       {
+        "country": "France",
+        "count": 5,
+        "total_amount": 1744870
+      },
+      {
         "country": "Israel",
         "count": 4,
         "total_amount": 699340
-      },
-      {
-        "country": "France",
-        "count": 4,
-        "total_amount": 1677270
       },
       {
         "country": "United Kingdom",
@@ -129201,8 +129247,8 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 12988860,
-        "net_burned": 1803340
+        "net_minted": 13056460,
+        "net_burned": 1811740
       }
     ],
     "event_of_the_day": {
@@ -129218,9 +129264,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 34,
+        "positive": 35,
         "negative": 56,
         "event_ids_positive": [
+          5613,
           5609,
           5607,
           5603,
@@ -129257,6 +129304,7 @@
           5517
         ],
         "event_ids_negative": [
+          5612,
           5611,
           5610,
           5608,
@@ -129311,8 +129359,7 @@
           5525,
           5520,
           5519,
-          5518,
-          5516
+          5518
         ]
       },
       "UDHR": {
@@ -129342,6 +129389,7 @@
           5517
         ],
         "event_ids_negative": [
+          5612,
           5611,
           5610,
           5608,
@@ -129385,8 +129433,7 @@
           5526,
           5525,
           5520,
-          5518,
-          5516
+          5518
         ]
       },
       "ILO": {
@@ -129443,7 +129490,7 @@
       },
       "Animal": {
         "positive": 5,
-        "negative": 4,
+        "negative": 5,
         "event_ids_positive": [
           5585,
           5558,
@@ -129452,6 +129499,7 @@
           5537
         ],
         "event_ids_negative": [
+          5612,
           5593,
           5569,
           5567,
@@ -129459,9 +129507,10 @@
         ]
       },
       "PB": {
-        "positive": 11,
-        "negative": 18,
+        "positive": 12,
+        "negative": 19,
         "event_ids_positive": [
+          5613,
           5609,
           5601,
           5587,
@@ -129475,6 +129524,7 @@
           5537
         ],
         "event_ids_negative": [
+          5612,
           5611,
           5608,
           5606,
@@ -129497,14 +129547,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.2,
-      "mainstream_pct": 4.8,
-      "total_sources_used": 63,
-      "articles_processed": 96
+      "niche_pct": 96.9,
+      "mainstream_pct": 3.1,
+      "total_sources_used": 64,
+      "articles_processed": 97
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 96,
+      "total_events": 97,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129577,10 +129627,11 @@
       },
       {
         "name": "Defense",
-        "count": 6,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          5612,
           5606,
           5591,
           5550,
@@ -129660,24 +129711,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 37,
+      "total_burn": 38,
       "direct_action": {
-        "count": 33,
-        "pct": 89.2
+        "count": 34,
+        "pct": 89.5
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 2.7
+        "pct": 2.6
       },
       "untyped": {
         "count": 3,
-        "pct": 8.1
+        "pct": 7.9
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1847,
+      "total_burn": 1848,
       "direct_action": {
-        "count": 1440,
+        "count": 1441,
         "pct": 78.0
       },
       "editorial_consciousness": {
@@ -129686,7 +129737,7 @@
       },
       "untyped": {
         "count": 267,
-        "pct": 14.5
+        "pct": 14.4
       }
     },
     "mint_composition_7d": {
@@ -129705,9 +129756,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3756,
+      "total_mint": 3757,
       "direct_action": {
-        "count": 3006,
+        "count": 3007,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129720,9 +129771,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 20,
+      "citizen": 21,
       "institutional": 76,
-      "citizen_ratio": 0.208,
+      "citizen_ratio": 0.216,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129756,11 +129807,12 @@
         },
         {
           "date": "2026-07-25",
-          "citizen": 1,
-          "institutional": 18
+          "citizen": 2,
+          "institutional": 19
         }
       ],
       "event_ids_citizen": [
+        5613,
         5604,
         5581,
         5572,
@@ -129783,6 +129835,7 @@
         5525
       ],
       "event_ids_institutional": [
+        5612,
         5611,
         5610,
         5609,
@@ -129857,8 +129910,7 @@
         5520,
         5519,
         5518,
-        5517,
-        5516
+        5517
       ]
     }
   }
