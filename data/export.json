@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T14:37:47.083665+00:00",
-  "total_events": 5603,
+  "generated_at": "2026-07-25T15:06:57.187231+00:00",
+  "total_events": 5604,
   "total_burned": 7683426565,
-  "total_minted": 8135788739,
+  "total_minted": 8136068739,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5604,
+      "event_title": "",
+      "event_url": "https://mastodon.social/@greenpeace/116980535171206536",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "MINT",
+      "amount_crbn": 280000,
+      "final_score": 2.35,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Petition is positive but limited impact, leading to modest net score. | The petition represents a positive step toward climate justice by targeting wealth‑based emissions, aligning with SDGs 13, 10, 12 and the principle of equality. As a non‑binding civil‑society initiative it currently has limited concrete impact, so its overall effect remains modest.",
+      "tx_hash": "LUaRd9FTMr2YmmzCv7qPBgEacJPKgZhph1Gqp6fRaCRRwbvktcqEKrH7tFVyvjLMw3HfSCSaNPgAtLqrsSBgiDw",
+      "created_at": "2026-07-25T15:06:52.142680+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Petition urging taxation of ultra‑rich to fund climate mitigation and green transition\", \"affected_sdgs\": [1, 10, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 5603,
       "event_title": "Daily News 24 / 07 / 2026",
@@ -128879,8 +128902,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 12,
-        "total_amount": 5227000
+        "count": 13,
+        "total_amount": 5507000
       },
       {
         "country": "Israel",
@@ -128933,8 +128956,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.429,
-        "events": 21
+        "burn_ratio": 0.409,
+        "events": 22
       },
       {
         "region": "Africa",
@@ -129017,7 +129040,7 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 11659000,
+        "net_minted": 11939000,
         "net_burned": 348880
       }
     ],
@@ -129073,6 +129096,7 @@
           5507
         ],
         "event_ids_negative": [
+          5604,
           5602,
           5600,
           5599,
@@ -129135,13 +129159,12 @@
           5504,
           5503,
           5502,
-          5501,
-          5500
+          5501
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 51,
+        "negative": 52,
         "event_ids_positive": [
           5603,
           5601,
@@ -129165,6 +129188,7 @@
           5517
         ],
         "event_ids_negative": [
+          5604,
           5602,
           5600,
           5599,
@@ -129297,7 +129321,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 19,
+        "negative": 18,
         "event_ids_positive": [
           5601,
           5587,
@@ -129329,15 +129353,14 @@
           5525,
           5515,
           5510,
-          5506,
-          5500
+          5506
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 88.5,
-      "mainstream_pct": 11.5,
-      "total_sources_used": 61,
+      "niche_pct": 88.7,
+      "mainstream_pct": 11.3,
+      "total_sources_used": 62,
       "articles_processed": 104
     },
     "cache_hit_rate_7d": {
@@ -129409,9 +129432,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 10,
+        "count": 9,
         "burn_count": 4,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           5584,
           5571,
@@ -129421,8 +129444,7 @@
           5543,
           5534,
           5529,
-          5525,
-          5500
+          5525
         ]
       },
       {
@@ -129465,18 +129487,6 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 4,
-        "burn_count": 2,
-        "mint_count": 2,
-        "event_ids": [
-          5560,
-          5559,
-          5535,
-          5500
-        ]
-      },
-      {
         "name": "Forestry",
         "count": 3,
         "burn_count": 0,
@@ -129485,6 +129495,17 @@
           5566,
           5544,
           5530
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 3,
+        "burn_count": 2,
+        "mint_count": 1,
+        "event_ids": [
+          5560,
+          5559,
+          5535
         ]
       },
       {
@@ -129554,9 +129575,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3750,
+      "total_mint": 3751,
       "direct_action": {
-        "count": 3000,
+        "count": 3001,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129569,9 +129590,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 20,
-      "institutional": 84,
-      "citizen_ratio": 0.192,
+      "citizen": 21,
+      "institutional": 83,
+      "citizen_ratio": 0.202,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129605,11 +129626,12 @@
         },
         {
           "date": "2026-07-25",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 11
         }
       ],
       "event_ids_citizen": [
+        5604,
         5581,
         5572,
         5571,
@@ -129714,8 +129736,7 @@
         5504,
         5503,
         5502,
-        5501,
-        5500
+        5501
       ]
     }
   }
