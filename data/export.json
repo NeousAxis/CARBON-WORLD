@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T15:06:57.187231+00:00",
-  "total_events": 5604,
+  "generated_at": "2026-07-25T16:37:21.336474+00:00",
+  "total_events": 5605,
   "total_burned": 7683426565,
-  "total_minted": 8136068739,
+  "total_minted": 8136483739,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5605,
+      "event_title": "Romanian airspace violated twice in 2 days",
+      "event_url": "https://www.politico.eu/article/romanian-airspace-violated-twice-in-2-days/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": 0.32,
+      "confidence": 7,
+      "justification": "Limited positive security impact outweighed by escalation risk. | The action strengthens national security and upholds sovereignty, but the potential for escalation and unintended harm tempers its overall benefit.",
+      "tx_hash": "2YaGZE2dpzgK2xgmKtH1Lrqa82iFf2H9cRasg2533qZv6CUok5FEoN7TE1swCQdfyRq6NqWzsQJWrgwXkbFjgLDs",
+      "created_at": "2026-07-25T16:37:17.629361+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Romania",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Romanian fighter jets intercepted and destroyed unauthorized drones, defending national airspace and deterring future violations.\", \"affected_sdgs\": [16, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The shoot‑downs carry a risk of escalation and possible civilian casualties, heightening regional tension.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 5604,
       "event_title": "",
@@ -128902,8 +128925,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 13,
-        "total_amount": 5507000
+        "count": 11,
+        "total_amount": 4011000
       },
       {
         "country": "Israel",
@@ -128916,14 +128939,14 @@
         "total_amount": 1677270
       },
       {
-        "country": "Germany",
-        "count": 4,
-        "total_amount": 2025000
-      },
-      {
         "country": "Switzerland",
         "count": 3,
         "total_amount": 1560000
+      },
+      {
+        "country": "Spain",
+        "count": 3,
+        "total_amount": 1416000
       }
     ],
     "top_countries_burn": [
@@ -128956,8 +128979,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.409,
-        "events": 22
+        "burn_ratio": 0.45,
+        "events": 20
       },
       {
         "region": "Africa",
@@ -129040,7 +129063,7 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 11939000,
+        "net_minted": 12354000,
         "net_burned": 348880
       }
     ],
@@ -129058,7 +129081,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 64,
+        "negative": 62,
         "event_ids_positive": [
           5603,
           5601,
@@ -129096,6 +129119,7 @@
           5507
         ],
         "event_ids_negative": [
+          5605,
           5604,
           5602,
           5600,
@@ -129156,15 +129180,12 @@
           5509,
           5506,
           5505,
-          5504,
-          5503,
-          5502,
-          5501
+          5504
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 52,
+        "negative": 50,
         "event_ids_positive": [
           5603,
           5601,
@@ -129188,6 +129209,7 @@
           5517
         ],
         "event_ids_negative": [
+          5605,
           5604,
           5602,
           5600,
@@ -129236,10 +129258,7 @@
           5511,
           5510,
           5509,
-          5504,
-          5503,
-          5502,
-          5501
+          5504
         ]
       },
       "ILO": {
@@ -129259,7 +129278,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 9,
+        "negative": 8,
         "event_ids_positive": [
           5603,
           5587,
@@ -129275,8 +129294,7 @@
           5535,
           5513,
           5511,
-          5504,
-          5502
+          5504
         ]
       },
       "UNDRIP": {
@@ -129361,11 +129379,11 @@
       "niche_pct": 88.7,
       "mainstream_pct": 11.3,
       "total_sources_used": 62,
-      "articles_processed": 104
+      "articles_processed": 102
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 104,
+      "total_events": 102,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129383,22 +129401,21 @@
         ]
       },
       {
-        "name": "WHO",
-        "count": 2,
-        "burn_count": 1,
-        "mint_count": 1,
-        "event_ids": [
-          5580,
-          5502
-        ]
-      },
-      {
         "name": "ICC",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
           5588
+        ]
+      },
+      {
+        "name": "WHO",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          5580
         ]
       },
       {
@@ -129560,24 +129577,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 67,
+      "total_mint": 65,
       "direct_action": {
-        "count": 62,
-        "pct": 92.5
+        "count": 60,
+        "pct": 92.3
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 3.0
+        "pct": 3.1
       },
       "untyped": {
         "count": 3,
-        "pct": 4.5
+        "pct": 4.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3751,
+      "total_mint": 3752,
       "direct_action": {
-        "count": 3001,
+        "count": 3002,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129591,8 +129608,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 21,
-      "institutional": 83,
-      "citizen_ratio": 0.202,
+      "institutional": 81,
+      "citizen_ratio": 0.206,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129627,7 +129644,7 @@
         {
           "date": "2026-07-25",
           "citizen": 1,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -129654,6 +129671,7 @@
         5507
       ],
       "event_ids_institutional": [
+        5605,
         5603,
         5602,
         5601,
@@ -129733,10 +129751,7 @@
         5508,
         5506,
         5505,
-        5504,
-        5503,
-        5502,
-        5501
+        5504
       ]
     }
   }
