@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T17:06:54.353442+00:00",
-  "total_events": 5607,
+  "generated_at": "2026-07-25T17:37:15.708709+00:00",
+  "total_events": 5608,
   "total_burned": 7684753765,
-  "total_minted": 8136499539,
+  "total_minted": 8136507839,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5608,
+      "event_title": "Uber Moto São Paulo Must Launch in 48 Hours, Brazil Court Rules",
+      "event_url": "https://www.riotimesonline.com/uber-moto-sao-paulo-court-order-authorization/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 8300,
+      "final_score": -2.3,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Court order enables Uber Moto, likely increasing emissions and precarious gig work, outweighing mobility benefits. | While the ruling expands mobility options, it likely increases emissions and entrenches insecure gig‑work, resulting in a net negative ethical impact.",
+      "tx_hash": "32Kwbi7mSfeSE99NRtr7WVsJHncToWDNQYnKYASpGPxotoSNBEmz4zHzGkr8PKFUvnAgjbvwtRYc7DHA2Fu9Vdxc",
+      "created_at": "2026-07-25T17:37:11.875606+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Increased access to affordable transportation for São Paulo residents\", \"affected_sdgs\": [8, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential rise in greenhouse gas emissions and air pollution from additional motorbike trips\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Precarious gig‑worker conditions lacking benefits and labor protections\", \"affected_sdgs\": [8], \"violated_rights\": [\"UDHR Article 23\", \"ILO Convention 111\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 5607,
       "event_title": "Mali: How Mali's Ancient Craft Is Building New Economic Futures",
@@ -128998,8 +129021,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 8,
-        "total_amount": 5792220
+        "count": 7,
+        "total_amount": 5731820
       },
       {
         "country": "Spain",
@@ -129030,13 +129053,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.45,
-        "events": 20
+        "burn_ratio": 0.421,
+        "events": 19
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.25,
-        "events": 4
+        "burn_ratio": 0.2,
+        "events": 5
       },
       {
         "region": "Europe",
@@ -129072,8 +129095,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.75,
-        "events": 4
+        "mint_ratio": 0.8,
+        "events": 5
       }
     ],
     "supply_trend_7d": [
@@ -129109,7 +129132,7 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 12369800,
+        "net_minted": 12378100,
         "net_burned": 1676080
       }
     ],
@@ -129126,7 +129149,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 35,
+        "positive": 33,
         "negative": 61,
         "event_ids_positive": [
           5607,
@@ -129161,11 +129184,10 @@
           5523,
           5522,
           5521,
-          5517,
-          5508,
-          5507
+          5517
         ],
         "event_ids_negative": [
+          5608,
           5606,
           5605,
           5604,
@@ -129225,13 +129247,12 @@
           5512,
           5511,
           5510,
-          5509,
-          5506
+          5509
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 49,
+        "negative": 50,
         "event_ids_positive": [
           5603,
           5601,
@@ -129255,6 +129276,7 @@
           5517
         ],
         "event_ids_negative": [
+          5608,
           5605,
           5604,
           5602,
@@ -129308,12 +129330,13 @@
       },
       "ILO": {
         "positive": 2,
-        "negative": 5,
+        "negative": 6,
         "event_ids_positive": [
           5524,
           5523
         ],
         "event_ids_negative": [
+          5608,
           5600,
           5592,
           5583,
@@ -129360,16 +129383,14 @@
         ]
       },
       "Animal": {
-        "positive": 7,
+        "positive": 5,
         "negative": 6,
         "event_ids_positive": [
           5585,
           5558,
           5557,
           5538,
-          5537,
-          5508,
-          5507
+          5537
         ],
         "event_ids_negative": [
           5593,
@@ -129381,7 +129402,7 @@
         ]
       },
       "PB": {
-        "positive": 11,
+        "positive": 10,
         "negative": 19,
         "event_ids_positive": [
           5601,
@@ -129393,10 +129414,10 @@
           5556,
           5548,
           5538,
-          5537,
-          5507
+          5537
         ],
         "event_ids_negative": [
+          5608,
           5606,
           5600,
           5595,
@@ -129414,8 +129435,7 @@
           5530,
           5525,
           5515,
-          5510,
-          5506
+          5510
         ]
       }
     },
@@ -129423,25 +129443,24 @@
       "niche_pct": 88.7,
       "mainstream_pct": 11.3,
       "total_sources_used": 62,
-      "articles_processed": 102
+      "articles_processed": 100
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 102,
+      "total_events": 100,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 4,
+        "count": 3,
         "burn_count": 2,
-        "mint_count": 2,
+        "mint_count": 1,
         "event_ids": [
           5578,
           5561,
-          5548,
-          5506
+          5548
         ]
       },
       {
@@ -129478,15 +129497,6 @@
         "mint_count": 0,
         "event_ids": [
           5541
-        ]
-      },
-      {
-        "name": "EU Commission",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5506
         ]
       }
     ],
@@ -129549,6 +129559,17 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 3,
+        "burn_count": 1,
+        "mint_count": 2,
+        "event_ids": [
+          5608,
+          5603,
+          5589
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 3,
         "burn_count": 0,
@@ -129571,16 +129592,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 2,
-        "burn_count": 1,
-        "mint_count": 1,
-        "event_ids": [
-          5603,
-          5589
-        ]
-      },
-      {
         "name": "Pharma",
         "count": 2,
         "burn_count": 2,
@@ -129592,18 +129603,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 36,
       "direct_action": {
-        "count": 33,
-        "pct": 86.8
+        "count": 32,
+        "pct": 88.9
       },
       "editorial_consciousness": {
-        "count": 2,
-        "pct": 5.3
+        "count": 1,
+        "pct": 2.8
       },
       "untyped": {
         "count": 3,
-        "pct": 7.9
+        "pct": 8.3
       }
     },
     "burn_composition_all_time": {
@@ -129637,9 +129648,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3753,
+      "total_mint": 3754,
       "direct_action": {
-        "count": 3003,
+        "count": 3004,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129652,9 +129663,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 21,
-      "institutional": 81,
-      "citizen_ratio": 0.206,
+      "citizen": 20,
+      "institutional": 80,
+      "citizen_ratio": 0.2,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129689,7 +129700,7 @@
         {
           "date": "2026-07-25",
           "citizen": 1,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -129712,10 +129723,10 @@
         5536,
         5535,
         5530,
-        5525,
-        5507
+        5525
       ],
       "event_ids_institutional": [
+        5608,
         5607,
         5606,
         5605,
@@ -129794,9 +129805,7 @@
         5512,
         5511,
         5510,
-        5509,
-        5508,
-        5506
+        5509
       ]
     }
   }
