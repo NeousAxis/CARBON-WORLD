@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T17:37:15.708709+00:00",
-  "total_events": 5608,
-  "total_burned": 7684753765,
+  "generated_at": "2026-07-25T18:36:33.044495+00:00",
+  "total_events": 5609,
+  "total_burned": 7684881025,
   "total_minted": 8136507839,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5609,
+      "event_title": "Government expands national emergency for fires to the province of Toledo",
+      "event_url": "https://efeverde.com/gobierno-amplia-emergencia-nacional-por-incendios-a-toledo/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "BURN",
+      "amount_crbn": 127260,
+      "final_score": 6.06,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Expanding the emergency improves protection and response, outweighing minor disruptions. | The government's action strengthens protection against wildfires and supports several SDGs, outweighing short‑term economic constraints. Overall the net ethical impact is positive.",
+      "tx_hash": "2ynveWW8bujAok35Vcf3nohKwUmnmEwYHhpK7VXVcRXCZwV9H6P2PqKQFnMksWXFXq63YpMLWF6BH3FdVczcg4JW",
+      "created_at": "2026-07-25T18:36:29.311979+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Expansion of the national emergency to Toledo enables coordinated fire response, protecting lives, health, and ecosystems.\", \"affected_sdgs\": [13, 15, 11, 3, 1], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Emergency measures may temporarily restrict movement and economic activity in the province.\", \"affected_sdgs\": [8, 1], \"violated_rights\": [\"UDHR Article 13\"], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 541000
+    },
     {
       "id": 5608,
       "event_title": "Uber Moto São Paulo Must Launch in 48 Hours, Brazil Court Rules",
@@ -128994,8 +129017,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 11,
-        "total_amount": 4011000
+        "count": 10,
+        "total_amount": 3182000
       },
       {
         "country": "France",
@@ -129026,8 +129049,8 @@
       },
       {
         "country": "Spain",
-        "count": 2,
-        "total_amount": 1653480
+        "count": 3,
+        "total_amount": 1780740
       },
       {
         "country": "Mali",
@@ -129053,18 +129076,18 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.421,
-        "events": 19
+        "burn_ratio": 0.444,
+        "events": 18
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.207,
+        "events": 29
       },
       {
         "region": "Latin America",
         "burn_ratio": 0.2,
         "events": 5
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.179,
-        "events": 28
       },
       {
         "region": "Asia",
@@ -129089,14 +129112,14 @@
         "events": 8
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.821,
-        "events": 28
-      },
-      {
         "region": "Latin America",
         "mint_ratio": 0.8,
         "events": 5
+      },
+      {
+        "region": "Europe",
+        "mint_ratio": 0.793,
+        "events": 29
       }
     ],
     "supply_trend_7d": [
@@ -129133,7 +129156,7 @@
       {
         "date": "2026-07-25",
         "net_minted": 12378100,
-        "net_burned": 1676080
+        "net_burned": 1803340
       }
     ],
     "event_of_the_day": {
@@ -129149,9 +129172,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 33,
-        "negative": 61,
+        "positive": 34,
+        "negative": 59,
         "event_ids_positive": [
+          5609,
           5607,
           5603,
           5601,
@@ -129245,15 +129269,14 @@
           5514,
           5513,
           5512,
-          5511,
-          5510,
-          5509
+          5511
         ]
       },
       "UDHR": {
-        "positive": 20,
-        "negative": 50,
+        "positive": 21,
+        "negative": 48,
         "event_ids_positive": [
+          5609,
           5603,
           5601,
           5587,
@@ -129323,9 +129346,7 @@
           5514,
           5513,
           5512,
-          5511,
-          5510,
-          5509
+          5511
         ]
       },
       "ILO": {
@@ -129384,7 +129405,7 @@
       },
       "Animal": {
         "positive": 5,
-        "negative": 6,
+        "negative": 5,
         "event_ids_positive": [
           5585,
           5558,
@@ -129397,14 +129418,14 @@
           5569,
           5567,
           5539,
-          5515,
-          5510
+          5515
         ]
       },
       "PB": {
-        "positive": 10,
-        "negative": 19,
+        "positive": 11,
+        "negative": 18,
         "event_ids_positive": [
+          5609,
           5601,
           5587,
           5584,
@@ -129434,20 +129455,19 @@
           5534,
           5530,
           5525,
-          5515,
-          5510
+          5515
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 88.7,
-      "mainstream_pct": 11.3,
+      "niche_pct": 90.3,
+      "mainstream_pct": 9.7,
       "total_sources_used": 62,
-      "articles_processed": 100
+      "articles_processed": 99
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 100,
+      "total_events": 99,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129603,24 +129623,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 36,
+      "total_burn": 37,
       "direct_action": {
-        "count": 32,
-        "pct": 88.9
+        "count": 33,
+        "pct": 89.2
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 2.8
+        "pct": 2.7
       },
       "untyped": {
         "count": 3,
-        "pct": 8.3
+        "pct": 8.1
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1846,
+      "total_burn": 1847,
       "direct_action": {
-        "count": 1439,
+        "count": 1440,
         "pct": 78.0
       },
       "editorial_consciousness": {
@@ -129633,18 +129653,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 64,
+      "total_mint": 62,
       "direct_action": {
-        "count": 59,
-        "pct": 92.2
+        "count": 57,
+        "pct": 91.9
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 3.1
+        "pct": 3.2
       },
       "untyped": {
         "count": 3,
-        "pct": 4.7
+        "pct": 4.8
       }
     },
     "mint_composition_all_time": {
@@ -129664,8 +129684,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 20,
-      "institutional": 80,
-      "citizen_ratio": 0.2,
+      "institutional": 79,
+      "citizen_ratio": 0.202,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129700,7 +129720,7 @@
         {
           "date": "2026-07-25",
           "citizen": 1,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -129726,6 +129746,7 @@
         5525
       ],
       "event_ids_institutional": [
+        5609,
         5608,
         5607,
         5606,
@@ -129803,9 +129824,7 @@
         5514,
         5513,
         5512,
-        5511,
-        5510,
-        5509
+        5511
       ]
     }
   }
