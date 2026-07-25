@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-25T10:07:35.508442+00:00",
-  "total_events": 5601,
+  "generated_at": "2026-07-25T11:06:21.057234+00:00",
+  "total_events": 5602,
   "total_burned": 7683366165,
-  "total_minted": 8135373739,
+  "total_minted": 8135788739,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5602,
+      "event_title": "Italy’s defense minister offered adviser job to ousted Ukrainian defense chief",
+      "event_url": "https://www.politico.eu/article/italys-defense-minister-offered-adviser-job-to-ousted-ukrainian-defense-chief/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": 1.2,
+      "confidence": 7,
+      "justification": "The negative diplomatic risk outweighs modest security benefits, yielding a net negative score. | The action provides modest support for Ukraine's defense but also raises concerns about foreign interference in sovereign affairs. Positive security benefits are outweighed by potential diplomatic friction, leading to a net negative ethical balance.",
+      "tx_hash": "3Me2qTq3rz1i8tPGFLBXGzSrNN318uHD9GkAkmkYZxArNLQjzUSYkoEqvmMqJnnrufA2HbgMJhicuGQuSViXpLmA",
+      "created_at": "2026-07-25T11:06:17.034091+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": "[{\"description\": \"Italy offers advisory role to experienced Ukrainian defense official, potentially strengthening Ukraine's defense capabilities and supporting peace and security.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The appointment may be viewed as external interference in Ukraine's internal political affairs, risking diplomatic tension and undermining sovereign decision‑making.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 5601,
       "event_title": "Pedro Sánchez announces that the Madrid and Ávila fires will be treated as a single incident",
@@ -128847,14 +128870,14 @@
         "total_amount": 2125580
       },
       {
-        "country": "Switzerland",
-        "count": 4,
-        "total_amount": 1570000
-      },
-      {
         "country": "Spain",
         "count": 4,
         "total_amount": 1566000
+      },
+      {
+        "country": "France",
+        "count": 4,
+        "total_amount": 1677270
       }
     ],
     "top_countries_burn": [
@@ -128897,8 +128920,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.3,
-        "events": 10
+        "burn_ratio": 0.222,
+        "events": 9
       },
       {
         "region": "Africa",
@@ -128907,8 +128930,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.152,
-        "events": 33
+        "burn_ratio": 0.156,
+        "events": 32
       }
     ],
     "top_regions_destructive": [
@@ -128924,8 +128947,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.848,
-        "events": 33
+        "mint_ratio": 0.844,
+        "events": 32
       },
       {
         "region": "Africa",
@@ -128934,8 +128957,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.7,
-        "events": 10
+        "mint_ratio": 0.778,
+        "events": 9
       }
     ],
     "supply_trend_7d": [
@@ -128971,7 +128994,7 @@
       },
       {
         "date": "2026-07-25",
-        "net_minted": 11244000,
+        "net_minted": 11659000,
         "net_burned": 288480
       }
     ],
@@ -128988,8 +129011,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 40,
-        "negative": 73,
+        "positive": 39,
+        "negative": 72,
         "event_ids_positive": [
           5601,
           5587,
@@ -129029,10 +129052,10 @@
           5491,
           5489,
           5488,
-          5487,
-          5483
+          5487
         ],
         "event_ids_negative": [
+          5602,
           5600,
           5599,
           5598,
@@ -129103,14 +129126,12 @@
           5495,
           5494,
           5490,
-          5486,
-          5485,
-          5484
+          5486
         ]
       },
       "UDHR": {
         "positive": 22,
-        "negative": 57,
+        "negative": 58,
         "event_ids_positive": [
           5601,
           5587,
@@ -129136,6 +129157,7 @@
           5488
         ],
         "event_ids_negative": [
+          5602,
           5600,
           5599,
           5598,
@@ -129331,11 +129353,11 @@
       "niche_pct": 85.9,
       "mainstream_pct": 14.1,
       "total_sources_used": 64,
-      "articles_processed": 119
+      "articles_processed": 117
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 119,
+      "total_events": 117,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129430,20 +129452,6 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 6,
-        "burn_count": 3,
-        "mint_count": 3,
-        "event_ids": [
-          5560,
-          5559,
-          5535,
-          5500,
-          5484,
-          5483
-        ]
-      },
-      {
         "name": "Transport",
         "count": 5,
         "burn_count": 1,
@@ -129495,15 +129503,26 @@
         ]
       },
       {
-        "name": "Agriculture",
+        "name": "Construction",
         "count": 4,
         "burn_count": 2,
         "mint_count": 2,
         "event_ids": [
+          5560,
+          5559,
+          5535,
+          5500
+        ]
+      },
+      {
+        "name": "Agriculture",
+        "count": 3,
+        "burn_count": 2,
+        "mint_count": 1,
+        "event_ids": [
           5493,
           5492,
-          5490,
-          5485
+          5490
         ]
       },
       {
@@ -129518,18 +129537,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 43,
+      "total_burn": 42,
       "direct_action": {
-        "count": 37,
-        "pct": 86.0
+        "count": 36,
+        "pct": 85.7
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 7.0
+        "pct": 7.1
       },
       "untyped": {
         "count": 3,
-        "pct": 7.0
+        "pct": 7.1
       }
     },
     "burn_composition_all_time": {
@@ -129548,24 +129567,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 76,
+      "total_mint": 75,
       "direct_action": {
-        "count": 71,
-        "pct": 93.4
+        "count": 70,
+        "pct": 93.3
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 2.6
+        "pct": 2.7
       },
       "untyped": {
         "count": 3,
-        "pct": 3.9
+        "pct": 4.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3749,
+      "total_mint": 3750,
       "direct_action": {
-        "count": 2999,
+        "count": 3000,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129578,9 +129597,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 26,
-      "institutional": 93,
-      "citizen_ratio": 0.218,
+      "citizen": 25,
+      "institutional": 92,
+      "citizen_ratio": 0.214,
       "daily": [
         {
           "date": "2026-07-19",
@@ -129615,7 +129634,7 @@
         {
           "date": "2026-07-25",
           "citizen": 0,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -129643,10 +129662,10 @@
         5492,
         5491,
         5488,
-        5487,
-        5485
+        5487
       ],
       "event_ids_institutional": [
+        5602,
         5601,
         5600,
         5599,
@@ -129737,9 +129756,7 @@
         5494,
         5490,
         5489,
-        5486,
-        5484,
-        5483
+        5486
       ]
     }
   }
