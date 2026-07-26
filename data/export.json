@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-25T22:07:12.201316+00:00",
-  "total_events": 5613,
+  "generated_at": "2026-07-26T01:36:46.682359+00:00",
+  "total_events": 5615,
   "total_burned": 7684889425,
-  "total_minted": 8137186199,
+  "total_minted": 8142510449,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5615,
+      "event_title": "In Michigan, the price of energy is on the ballot and both parties know it",
+      "event_url": "https://grist.org/energy/in-michigan-the-price-of-energy-is-on-the-ballot-and-both-parties-know-it/",
+      "event_source": "Grist",
+      "decision": "MINT",
+      "amount_crbn": 4250,
+      "final_score": -0.17,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Potential climate harm outweighs democratic benefit, leading to a negative net impact. | The ballot initiative promotes democratic involvement but carries risk of weakening climate‑friendly energy incentives. Overall, the potential negative climate impact outweighs the democratic benefit, leading to a net negative ethical assessment.",
+      "tx_hash": "4LBKHB7uz2uhsxr7xwfrj4wRqY8UyBfwqrADsG5VBPQWCyMsfg7fJU59qsXmZSBPHDwBHoDegbYnLFHQQcpxHvED",
+      "created_at": "2026-07-26T01:36:43.437659+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Ballot measure enables public participation in energy pricing decisions, fostering democratic engagement.\", \"affected_sdgs\": [7, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"If the measure imposes price caps that reduce incentives for clean‑energy investment, it could hinder climate action and increase emissions.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 478000
+    },
+    {
+      "id": 5614,
+      "event_title": "LATEST: Devastating wildfires send 267,000 fleeing in France and Spain",
+      "event_url": "https://www.thelocal.es/20260723/deadly-wildfires-force-thousands-from-homes-in-europe",
+      "event_source": "The Local Spain (EN)",
+      "decision": "MINT",
+      "amount_crbn": 5320000,
+      "final_score": -2.23,
+      "confidence": 6,
+      "justification": "The event's net impact is strongly negative due to massive displacement and ecosystem loss. | The wildfires represent a severe negative impact on human safety and ecosystems, while the military deployment provides important but limited relief. Overall, the event tilts toward harm due to the scale of displacement and environmental loss.",
+      "tx_hash": "2hEwMsFhxc2JU3sFJjEcogkxGDm2HdvupvvPhShjGcPLZ9G7mz7QcaLd8Xy6o4P8TvHLYMzhLJVqeouFDZHrs7iD",
+      "created_at": "2026-07-26T01:36:41.181813+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"French government deployed military units to assist evacuation and protect civilians affected by wildfires\", \"affected_sdgs\": [3, 11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Uncontrolled wildfires in France and Spain forced 267,000 people to flee and caused extensive ecosystem damage\", \"affected_sdgs\": [3, 11, 13, 15], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 5613,
       "event_title": "Team Repair Breaks Things to Teach People How to Fix Them",
@@ -129109,8 +129155,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 10,
-        "total_amount": 3718400
+        "count": 11,
+        "total_amount": 3722650
       },
       {
         "country": "France",
@@ -129168,23 +129214,23 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.444,
-        "events": 18
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.231,
-        "events": 26
+        "burn_ratio": 0.421,
+        "events": 19
       },
       {
         "region": "Latin America",
+        "burn_ratio": 0.25,
+        "events": 4
+      },
+      {
+        "region": "Europe",
         "burn_ratio": 0.2,
-        "events": 5
+        "events": 25
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.125,
-        "events": 8
+        "burn_ratio": 0.143,
+        "events": 7
       }
     ],
     "top_regions_destructive": [
@@ -129200,26 +129246,21 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.875,
-        "events": 8
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.8,
-        "events": 5
+        "mint_ratio": 0.857,
+        "events": 7
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.769,
-        "events": 26
+        "mint_ratio": 0.8,
+        "events": 25
+      },
+      {
+        "region": "Latin America",
+        "mint_ratio": 0.75,
+        "events": 4
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-07-19",
-        "net_minted": 12675280,
-        "net_burned": 53463700
-      },
       {
         "date": "2026-07-20",
         "net_minted": 0,
@@ -129249,6 +129290,11 @@
         "date": "2026-07-25",
         "net_minted": 13056460,
         "net_burned": 1811740
+      },
+      {
+        "date": "2026-07-26",
+        "net_minted": 5324250,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -129264,8 +129310,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 35,
-        "negative": 56,
+        "positive": 34,
+        "negative": 55,
         "event_ids_positive": [
           5613,
           5609,
@@ -129300,10 +129346,11 @@
           5524,
           5523,
           5522,
-          5521,
-          5517
+          5521
         ],
         "event_ids_negative": [
+          5615,
+          5614,
           5612,
           5611,
           5610,
@@ -129356,15 +129403,12 @@
           5530,
           5529,
           5526,
-          5525,
-          5520,
-          5519,
-          5518
+          5525
         ]
       },
       "UDHR": {
-        "positive": 21,
-        "negative": 45,
+        "positive": 20,
+        "negative": 44,
         "event_ids_positive": [
           5609,
           5603,
@@ -129385,10 +129429,10 @@
           5524,
           5523,
           5522,
-          5521,
-          5517
+          5521
         ],
         "event_ids_negative": [
+          5614,
           5612,
           5611,
           5610,
@@ -129431,9 +129475,7 @@
           5532,
           5529,
           5526,
-          5525,
-          5520,
-          5518
+          5525
         ]
       },
       "ILO": {
@@ -129472,7 +129514,7 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 8,
+        "negative": 7,
         "event_ids_positive": [
           5558,
           5552
@@ -129484,8 +129526,7 @@
           5551,
           5535,
           5530,
-          5525,
-          5520
+          5525
         ]
       },
       "Animal": {
@@ -129508,7 +129549,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 19,
+        "negative": 20,
         "event_ids_positive": [
           5613,
           5609,
@@ -129524,6 +129565,7 @@
           5537
         ],
         "event_ids_negative": [
+          5614,
           5612,
           5611,
           5608,
@@ -129550,11 +129592,11 @@
       "niche_pct": 96.9,
       "mainstream_pct": 3.1,
       "total_sources_used": 64,
-      "articles_processed": 97
+      "articles_processed": 95
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 97,
+      "total_events": 95,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129610,10 +129652,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 9,
+        "count": 10,
         "burn_count": 4,
-        "mint_count": 5,
+        "mint_count": 6,
         "event_ids": [
+          5615,
           5584,
           5571,
           5567,
@@ -129627,10 +129670,11 @@
       },
       {
         "name": "Defense",
-        "count": 7,
+        "count": 8,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          5614,
           5612,
           5606,
           5591,
@@ -129638,19 +129682,6 @@
           5540,
           5529,
           5526
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 5,
-        "burn_count": 1,
-        "mint_count": 4,
-        "event_ids": [
-          5600,
-          5597,
-          5575,
-          5548,
-          5518
         ]
       },
       {
@@ -129664,6 +129695,18 @@
           5560,
           5555,
           5525
+        ]
+      },
+      {
+        "name": "Transport",
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
+        "event_ids": [
+          5600,
+          5597,
+          5575,
+          5548
         ]
       },
       {
@@ -129711,18 +129754,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 37,
       "direct_action": {
-        "count": 34,
-        "pct": 89.5
+        "count": 33,
+        "pct": 89.2
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 2.6
+        "pct": 2.7
       },
       "untyped": {
         "count": 3,
-        "pct": 7.9
+        "pct": 8.1
       }
     },
     "burn_composition_all_time": {
@@ -129741,28 +129784,28 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 59,
+      "total_mint": 58,
       "direct_action": {
-        "count": 54,
-        "pct": 91.5
+        "count": 52,
+        "pct": 89.7
       },
       "editorial_alarm": {
-        "count": 2,
-        "pct": 3.4
+        "count": 3,
+        "pct": 5.2
       },
       "untyped": {
         "count": 3,
-        "pct": 5.1
+        "pct": 5.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3757,
+      "total_mint": 3759,
       "direct_action": {
-        "count": 3007,
+        "count": 3008,
         "pct": 80.0
       },
       "editorial_alarm": {
-        "count": 232,
+        "count": 233,
         "pct": 6.2
       },
       "untyped": {
@@ -129771,15 +129814,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 21,
-      "institutional": 76,
-      "citizen_ratio": 0.216,
+      "citizen": 22,
+      "institutional": 73,
+      "citizen_ratio": 0.232,
       "daily": [
-        {
-          "date": "2026-07-19",
-          "citizen": 10,
-          "institutional": 27
-        },
         {
           "date": "2026-07-20",
           "citizen": 0,
@@ -129809,9 +129847,15 @@
           "date": "2026-07-25",
           "citizen": 2,
           "institutional": 19
+        },
+        {
+          "date": "2026-07-26",
+          "citizen": 1,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        5615,
         5613,
         5604,
         5581,
@@ -129835,6 +129879,7 @@
         5525
       ],
       "event_ids_institutional": [
+        5614,
         5612,
         5611,
         5610,
@@ -129906,11 +129951,7 @@
         5524,
         5523,
         5522,
-        5521,
-        5520,
-        5519,
-        5518,
-        5517
+        5521
       ]
     }
   }
