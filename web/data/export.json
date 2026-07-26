@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-26T01:36:46.682359+00:00",
-  "total_events": 5615,
+  "generated_at": "2026-07-26T02:06:55.283667+00:00",
+  "total_events": 5616,
   "total_burned": 7684889425,
-  "total_minted": 8142510449,
+  "total_minted": 8143051449,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5616,
+      "event_title": "Yemen’s Houthis target Saudi oil facilities along the Red Sea",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/7/26/yemens-houthis-target-saudi-oil-facilities-along-the-red-sea?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -3.45,
+      "confidence": 7,
+      "justification": "The attack worsens conflict, harms civilians and the environment, thus warrants a MINT decision. | The attack escalates conflict, endangers lives, and threatens climate and energy systems, resulting in a net negative ethical impact.",
+      "tx_hash": "3rYphXBq9aqjm6JMZN1Lbb7TyTdKt2QPm8x1xELuwB9HUNeaDqJPJMixJdxt1viV1R2UJd4rUbeXiuJVQCxiCi75",
+      "created_at": "2026-07-26T02:06:52.009724+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Yemen",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Houthis attacked Saudi oil facilities, risking civilian casualties, environmental damage and disrupting energy supply.\", \"affected_sdgs\": [7, 9, 12, 13, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5615,
       "event_title": "In Michigan, the price of energy is on the ballot and both parties know it",
@@ -129237,7 +129260,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 5
+        "events": 6
       },
       {
         "region": "Oceania",
@@ -129293,7 +129316,7 @@
       },
       {
         "date": "2026-07-26",
-        "net_minted": 5324250,
+        "net_minted": 5865250,
         "net_burned": 0
       }
     ],
@@ -129311,7 +129334,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 55,
+        "negative": 56,
         "event_ids_positive": [
           5613,
           5609,
@@ -129349,6 +129372,7 @@
           5521
         ],
         "event_ids_negative": [
+          5616,
           5615,
           5614,
           5612,
@@ -129408,7 +129432,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           5609,
           5603,
@@ -129432,6 +129456,7 @@
           5521
         ],
         "event_ids_negative": [
+          5616,
           5614,
           5612,
           5611,
@@ -129549,7 +129574,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           5613,
           5609,
@@ -129565,6 +129590,7 @@
           5537
         ],
         "event_ids_negative": [
+          5616,
           5614,
           5612,
           5611,
@@ -129589,14 +129615,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.9,
-      "mainstream_pct": 3.1,
+      "niche_pct": 95.3,
+      "mainstream_pct": 4.7,
       "total_sources_used": 64,
-      "articles_processed": 95
+      "articles_processed": 96
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 95,
+      "total_events": 96,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129652,10 +129678,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 10,
+        "count": 11,
         "burn_count": 4,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          5616,
           5615,
           5584,
           5571,
@@ -129784,24 +129811,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 58,
+      "total_mint": 59,
       "direct_action": {
-        "count": 52,
-        "pct": 89.7
+        "count": 53,
+        "pct": 89.8
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 5.2
+        "pct": 5.1
       },
       "untyped": {
         "count": 3,
-        "pct": 5.2
+        "pct": 5.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3759,
+      "total_mint": 3760,
       "direct_action": {
-        "count": 3008,
+        "count": 3009,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129815,8 +129842,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 22,
-      "institutional": 73,
-      "citizen_ratio": 0.232,
+      "institutional": 74,
+      "citizen_ratio": 0.229,
       "daily": [
         {
           "date": "2026-07-20",
@@ -129851,7 +129878,7 @@
         {
           "date": "2026-07-26",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -129879,6 +129906,7 @@
         5525
       ],
       "event_ids_institutional": [
+        5616,
         5614,
         5612,
         5611,
