@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-26T10:36:36.378296+00:00",
-  "total_events": 5620,
+  "generated_at": "2026-07-26T11:07:25.526818+00:00",
+  "total_events": 5621,
   "total_burned": 7684939425,
-  "total_minted": 8143926149,
+  "total_minted": 8143929309,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5621,
+      "event_title": "Why the UK cancelled a military exercise in Kenya – and what it means",
+      "event_url": "https://www.aljazeera.com/news/2026/7/26/why-the-uk-cancelled-a-military-exercise-in-kenya-and-what-it-means?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 3160,
+      "final_score": 2.22,
+      "confidence": 8,
+      "justification": "Limited positive impact does not outweigh the diplomatic and economic downsides. | Cancelling the exercise yields modest environmental and peace benefits, but it also harms diplomatic ties and local economies. Overall the net ethical balance leans slightly positive but remains limited in scale.",
+      "tx_hash": "62ZmasaxxTAAEQyJQkeAZDcWNPUB7tkZK5XkYgHVXLv9Efix1Xw53SLgApCQuNT7D3e51mZzsjtw4dNCTWysKrqG",
+      "created_at": "2026-07-26T11:07:21.507874+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Cancellation prevents emissions and environmental disturbance from a large military exercise.\", \"affected_sdgs\": [13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The decision respects Kenyan sovereignty and reduces risk of conflict, supporting peace and justice.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Strained UK‑Kenya security cooperation may weaken joint peacekeeping capacity.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Local Kenyan businesses lose short‑term revenue that the exercise would have generated.\", \"affected_sdgs\": [8, 1], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 31600
+    },
     {
       "id": 5620,
       "event_title": "Poland identifies remains of legendary anti-communist resistance fighter",
@@ -129270,13 +129293,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 3046350
+        "count": 8,
+        "total_amount": 2442350
       },
       {
         "country": "France",
         "count": 6,
         "total_amount": 2159870
+      },
+      {
+        "country": "United Kingdom",
+        "count": 3,
+        "total_amount": 118960
       },
       {
         "country": "Brazil",
@@ -129287,11 +129315,6 @@
         "country": "Spain",
         "count": 3,
         "total_amount": 1416000
-      },
-      {
-        "country": "Israel",
-        "count": 2,
-        "total_amount": 15050
       }
     ],
     "top_countries_burn": [
@@ -129324,8 +129347,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.4,
-        "events": 15
+        "burn_ratio": 0.429,
+        "events": 14
       },
       {
         "region": "Africa",
@@ -129334,8 +129357,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.25,
-        "events": 24
+        "burn_ratio": 0.24,
+        "events": 25
       },
       {
         "region": "Latin America",
@@ -129366,8 +129389,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.75,
-        "events": 24
+        "mint_ratio": 0.76,
+        "events": 25
       },
       {
         "region": "Africa",
@@ -129408,7 +129431,7 @@
       },
       {
         "date": "2026-07-26",
-        "net_minted": 6739950,
+        "net_minted": 6743110,
         "net_burned": 50000
       }
     ],
@@ -129454,6 +129477,7 @@
           5552
         ],
         "event_ids_negative": [
+          5621,
           5619,
           5618,
           5617,
@@ -129498,8 +129522,7 @@
           5562,
           5555,
           5554,
-          5553,
-          5551
+          5553
         ]
       },
       "UDHR": {
@@ -129521,6 +129544,7 @@
           5561
         ],
         "event_ids_negative": [
+          5621,
           5619,
           5618,
           5617,
@@ -129558,8 +129582,7 @@
           5563,
           5562,
           5554,
-          5553,
-          5551
+          5553
         ]
       },
       "ILO": {
@@ -129592,7 +129615,7 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 5,
+        "negative": 4,
         "event_ids_positive": [
           5558,
           5552
@@ -129601,8 +129624,7 @@
           5618,
           5569,
           5567,
-          5553,
-          5551
+          5553
         ]
       },
       "Animal": {
@@ -129622,7 +129644,7 @@
       },
       "PB": {
         "positive": 9,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [
           5613,
           5609,
@@ -129635,6 +129657,7 @@
           5556
         ],
         "event_ids_negative": [
+          5621,
           5616,
           5614,
           5612,
@@ -129657,7 +129680,7 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 52,
+      "total_sources_used": 51,
       "articles_processed": 70
     },
     "cache_hit_rate_7d": {
@@ -129722,10 +129745,11 @@
       },
       {
         "name": "Defense",
-        "count": 4,
+        "count": 5,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          5621,
           5614,
           5612,
           5606,
@@ -129841,9 +129865,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3763,
+      "total_mint": 3764,
       "direct_action": {
-        "count": 3011,
+        "count": 3012,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129893,7 +129917,7 @@
         {
           "date": "2026-07-26",
           "citizen": 3,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -129915,6 +129939,7 @@
         5552
       ],
       "event_ids_institutional": [
+        5621,
         5620,
         5617,
         5616,
@@ -129967,8 +129992,7 @@
         5560,
         5555,
         5554,
-        5553,
-        5551
+        5553
       ]
     }
   }
