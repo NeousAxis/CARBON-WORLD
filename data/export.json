@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-26T21:06:22.517999+00:00",
-  "total_events": 5625,
+  "generated_at": "2026-07-26T21:36:04.320220+00:00",
+  "total_events": 5626,
   "total_burned": 7687068525,
-  "total_minted": 8144058209,
+  "total_minted": 8144662209,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5626,
+      "event_title": "Carbon market extension: the day Macron and Bayrou said no to four ministers",
+      "event_url": "https://www.politico.eu/article/extension-du-marche-carbone-le-jour-ou-macron-et-bayrou-ont-dit-non-a-quatre-ministres/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.84,
+      "confidence": 7,
+      "justification": "National refusal of a carbon market harms climate finance and SDG progress. | The refusal to implement the second carbon market deprives France of significant decarbonisation funding, undermining climate goals and related human rights, outweighing the modest benefit of avoiding market risks.",
+      "tx_hash": "umi3yfxqW7JfTwUtV3cuHfQAjT8Jbf7WUHUxhzeqydaGnfx6EindNqFFVaQUWqzQT5aAShaLBfDBZ7WWHuqAsCV",
+      "created_at": "2026-07-26T21:36:01.135409+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Avoids potential market manipulation and price volatility that could harm consumers\", \"affected_sdgs\": [8, 9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rejection of a second carbon market eliminates a major source of climate finance for decarbonisation\", \"affected_sdgs\": [7, 9, 12, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5625,
       "event_title": "Appeals Court Keeps Block on Trump Order Targeting Voting Rights",
@@ -129390,8 +129413,8 @@
       },
       {
         "country": "France",
-        "count": 6,
-        "total_amount": 2159870
+        "count": 7,
+        "total_amount": 2763870
       },
       {
         "country": "Brazil",
@@ -129449,8 +129472,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.25,
-        "events": 24
+        "burn_ratio": 0.24,
+        "events": 25
       },
       {
         "region": "Latin America",
@@ -129481,8 +129504,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.75,
-        "events": 24
+        "mint_ratio": 0.76,
+        "events": 25
       },
       {
         "region": "Africa",
@@ -129523,7 +129546,7 @@
       },
       {
         "date": "2026-07-26",
-        "net_minted": 6872010,
+        "net_minted": 7476010,
         "net_burned": 2179100
       }
     ],
@@ -129541,7 +129564,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 45,
+        "negative": 46,
         "event_ids_positive": [
           5625,
           5623,
@@ -129569,6 +129592,7 @@
           5557
         ],
         "event_ids_negative": [
+          5626,
           5624,
           5622,
           5621,
@@ -129618,7 +129642,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [
           5625,
           5620,
@@ -129636,6 +129660,7 @@
           5561
         ],
         "event_ids_negative": [
+          5626,
           5624,
           5622,
           5621,
@@ -129737,7 +129762,7 @@
       },
       "PB": {
         "positive": 8,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           5613,
           5609,
@@ -129749,6 +129774,7 @@
           5557
         ],
         "event_ids_negative": [
+          5626,
           5622,
           5621,
           5616,
@@ -129774,11 +129800,11 @@
       "niche_pct": 98.0,
       "mainstream_pct": 2.0,
       "total_sources_used": 51,
-      "articles_processed": 69
+      "articles_processed": 70
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 69,
+      "total_events": 70,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129841,6 +129867,18 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
+        "event_ids": [
+          5626,
+          5597,
+          5595,
+          5560
+        ]
+      },
+      {
         "name": "Tech",
         "count": 3,
         "burn_count": 1,
@@ -129860,17 +129898,6 @@
           5600,
           5597,
           5575
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 3,
-        "burn_count": 1,
-        "mint_count": 2,
-        "event_ids": [
-          5597,
-          5595,
-          5560
         ]
       },
       {
@@ -129933,14 +129960,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 45,
+      "total_mint": 46,
       "direct_action": {
-        "count": 42,
-        "pct": 93.3
+        "count": 43,
+        "pct": 93.5
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 6.7
+        "pct": 6.5
       },
       "untyped": {
         "count": 0,
@@ -129948,9 +129975,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3766,
+      "total_mint": 3767,
       "direct_action": {
-        "count": 3014,
+        "count": 3015,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129964,8 +129991,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 15,
-      "institutional": 54,
-      "citizen_ratio": 0.217,
+      "institutional": 55,
+      "citizen_ratio": 0.214,
       "daily": [
         {
           "date": "2026-07-20",
@@ -130000,7 +130027,7 @@
         {
           "date": "2026-07-26",
           "citizen": 4,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -130021,6 +130048,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5626,
         5625,
         5624,
         5622,
