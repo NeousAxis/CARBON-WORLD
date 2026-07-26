@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-26T11:07:25.526818+00:00",
-  "total_events": 5621,
+  "generated_at": "2026-07-26T16:37:17.111667+00:00",
+  "total_events": 5622,
   "total_burned": 7684939425,
-  "total_minted": 8143929309,
+  "total_minted": 8143983409,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5622,
+      "event_title": "WA government considering new gas-fired power plant as coal phases out",
+      "event_url": "https://www.abc.net.au/news/2026-07-26/wa-government-considering-new-gas-fired-power-plant/106959916",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -1.65,
+      "confidence": 7,
+      "justification": "Considering a new gas plant undermines climate goals despite the coal phase‑out, leading to a net negative impact. | While the coal phase‑out commitment is a clear climate benefit, the move to consider a new gas plant introduces additional greenhouse‑gas emissions and health risks, resulting in a net negative ethical outcome.",
+      "tx_hash": "5vjVGyfXjUfAkYwjoXNjL7aoqphqdfHgv3ReqBcZwvvVGHwzgfdQAzCvbdteXA9xA2wsvu9ghXC17utTngoDR3rh",
+      "created_at": "2026-07-26T16:37:13.795317+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Western Australia has set a target to switch off coal by 2030, advancing clean energy transition.\", \"affected_sdgs\": [7, 13, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The government is investigating construction of a new gas‑fired power plant, extending fossil‑fuel reliance and emissions.\", \"affected_sdgs\": [7, 13, 3, 9], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5621,
       "event_title": "Why the UK cancelled a military exercise in Kenya – and what it means",
@@ -129302,11 +129325,6 @@
         "total_amount": 2159870
       },
       {
-        "country": "United Kingdom",
-        "count": 3,
-        "total_amount": 118960
-      },
-      {
         "country": "Brazil",
         "count": 3,
         "total_amount": 885300
@@ -129315,6 +129333,11 @@
         "country": "Spain",
         "count": 3,
         "total_amount": 1416000
+      },
+      {
+        "country": "United Kingdom",
+        "count": 2,
+        "total_amount": 18960
       }
     ],
     "top_countries_burn": [
@@ -129357,8 +129380,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.24,
-        "events": 25
+        "burn_ratio": 0.25,
+        "events": 24
       },
       {
         "region": "Latin America",
@@ -129368,14 +129391,14 @@
       {
         "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 4
+        "events": 3
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 4
+        "events": 3
       },
       {
         "region": "Asia",
@@ -129389,8 +129412,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.76,
-        "events": 25
+        "mint_ratio": 0.75,
+        "events": 24
       },
       {
         "region": "Africa",
@@ -129431,25 +129454,25 @@
       },
       {
         "date": "2026-07-26",
-        "net_minted": 6743110,
+        "net_minted": 6797210,
         "net_burned": 50000
       }
     ],
     "event_of_the_day": {
-      "id": 5603,
-      "event_title": "Daily News 24 / 07 / 2026",
+      "id": 5607,
+      "event_title": "Mali: How Mali's Ancient Craft Is Building New Economic Futures",
       "decision": "BURN",
-      "amount_crbn": 60400,
-      "final_score": 6.49,
-      "confidence": 8,
-      "country": null,
-      "region": null,
-      "created_at": "2026-07-25T14:07:11.522296+00:00"
+      "amount_crbn": 1327200,
+      "final_score": 6.32,
+      "confidence": 7,
+      "country": "Mali",
+      "region": "Africa",
+      "created_at": "2026-07-25T17:06:49.779819+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 24,
-        "negative": 46,
+        "positive": 22,
+        "negative": 44,
         "event_ids_positive": [
           5620,
           5613,
@@ -129472,11 +129495,10 @@
           5560,
           5559,
           5558,
-          5557,
-          5556,
-          5552
+          5557
         ],
         "event_ids_negative": [
+          5622,
           5621,
           5619,
           5618,
@@ -129519,15 +129541,12 @@
           5566,
           5565,
           5563,
-          5562,
-          5555,
-          5554,
-          5553
+          5562
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 39,
+        "negative": 38,
         "event_ids_positive": [
           5620,
           5609,
@@ -129544,6 +129563,7 @@
           5561
         ],
         "event_ids_negative": [
+          5622,
           5621,
           5619,
           5618,
@@ -129580,22 +129600,19 @@
           5566,
           5565,
           5563,
-          5562,
-          5554,
-          5553
+          5562
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 6,
+        "negative": 5,
         "event_ids_positive": [],
         "event_ids_negative": [
           5608,
           5600,
           5592,
           5583,
-          5579,
-          5554
+          5579
         ]
       },
       "CRC": {
@@ -129614,17 +129631,15 @@
         ]
       },
       "UNDRIP": {
-        "positive": 2,
-        "negative": 4,
+        "positive": 1,
+        "negative": 3,
         "event_ids_positive": [
-          5558,
-          5552
+          5558
         ],
         "event_ids_negative": [
           5618,
           5569,
-          5567,
-          5553
+          5567
         ]
       },
       "Animal": {
@@ -129643,8 +129658,8 @@
         ]
       },
       "PB": {
-        "positive": 9,
-        "negative": 17,
+        "positive": 8,
+        "negative": 18,
         "event_ids_positive": [
           5613,
           5609,
@@ -129653,10 +129668,10 @@
           5584,
           5564,
           5558,
-          5557,
-          5556
+          5557
         ],
         "event_ids_negative": [
+          5622,
           5621,
           5616,
           5614,
@@ -129680,12 +129695,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 51,
-      "articles_processed": 70
+      "total_sources_used": 50,
+      "articles_processed": 66
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 70,
+      "total_events": 66,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129717,30 +129732,21 @@
         "event_ids": [
           5580
         ]
-      },
-      {
-        "name": "UNESCO",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          5552
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
         "count": 6,
-        "burn_count": 3,
-        "mint_count": 3,
+        "burn_count": 2,
+        "mint_count": 4,
         "event_ids": [
+          5622,
           5616,
           5615,
           5584,
           5571,
-          5567,
-          5556
+          5567
         ]
       },
       {
@@ -129754,18 +129760,6 @@
           5612,
           5606,
           5591
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 4,
-        "burn_count": 1,
-        "mint_count": 3,
-        "event_ids": [
-          5597,
-          5595,
-          5560,
-          5555
         ]
       },
       {
@@ -129788,6 +129782,17 @@
           5600,
           5597,
           5575
+        ]
+      },
+      {
+        "name": "Finance",
+        "count": 3,
+        "burn_count": 1,
+        "mint_count": 2,
+        "event_ids": [
+          5597,
+          5595,
+          5560
         ]
       },
       {
@@ -129820,14 +129825,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 24,
+      "total_burn": 22,
       "direct_action": {
-        "count": 23,
-        "pct": 95.8
+        "count": 22,
+        "pct": 100.0
       },
       "editorial_consciousness": {
-        "count": 1,
-        "pct": 4.2
+        "count": 0,
+        "pct": 0.0
       },
       "untyped": {
         "count": 0,
@@ -129850,14 +129855,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 46,
+      "total_mint": 44,
       "direct_action": {
-        "count": 43,
-        "pct": 93.5
+        "count": 41,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 6.5
+        "pct": 6.8
       },
       "untyped": {
         "count": 0,
@@ -129865,9 +129870,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3764,
+      "total_mint": 3765,
       "direct_action": {
-        "count": 3012,
+        "count": 3013,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129880,9 +129885,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 16,
-      "institutional": 54,
-      "citizen_ratio": 0.229,
+      "citizen": 14,
+      "institutional": 52,
+      "citizen_ratio": 0.212,
       "daily": [
         {
           "date": "2026-07-20",
@@ -129917,7 +129922,7 @@
         {
           "date": "2026-07-26",
           "citizen": 3,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -129934,11 +129939,10 @@
         5567,
         5559,
         5558,
-        5557,
-        5556,
-        5552
+        5557
       ],
       "event_ids_institutional": [
+        5622,
         5621,
         5620,
         5617,
@@ -129989,10 +129993,7 @@
         5563,
         5562,
         5561,
-        5560,
-        5555,
-        5554,
-        5553
+        5560
       ]
     }
   }
