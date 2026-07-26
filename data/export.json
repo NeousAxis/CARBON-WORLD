@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-26T04:07:02.592977+00:00",
-  "total_events": 5617,
+  "generated_at": "2026-07-26T08:36:48.271206+00:00",
+  "total_events": 5619,
   "total_burned": 7684889425,
-  "total_minted": 8143301149,
+  "total_minted": 8143926149,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5619,
+      "event_title": "Brazil denies entry to senior Trump officials ahead of elections",
+      "event_url": "https://www.dw.com/en/brazil-denies-entry-to-senior-trump-officials-ahead-of-elections/a-78117458?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 210000,
+      "final_score": 1.0,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Visa denial protects sovereignty but harms diplomatic relations, resulting in a net negative impact. | The action safeguards Brazil's electoral autonomy, which is a positive step for democratic governance, but it also harms diplomatic relations and raises concerns about freedom of movement. Overall, the negative diplomatic repercussions outweigh the sovereignty benefit.",
+      "tx_hash": "5LtqGWJ8F6qtiarRB4FJigxv7fpR2rmUBmENbbjj7SffRd7T6Z2eNjtgHUw1TcVhLo2uFiHoBwUprhCU9RnDrJmY",
+      "created_at": "2026-07-26T08:36:45.227893+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Brazil denied visas to senior US officials to prevent external influence on its upcoming election, protecting national sovereignty and electoral integrity.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The visa denial restricts diplomatic engagement and may infringe on the right to freedom of movement for the officials, increasing international tension.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 13\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 5618,
+      "event_title": "Fences and fenced forests: how to regain the freedom to walk",
+      "event_url": "https://reporterre.net/Clotures-et-forets-engrillagees-comment-retrouver-la-liberte-de-cheminer",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": 0.36,
+      "confidence": 7,
+      "justification": "Modest net ethical gain outweighed by reinforced property rights, leading to MINT. | The law expands public access to natural areas, supporting health, environmental awareness and the right to free movement, but its reinforcement of private property rights may limit communal and indigenous access. While the positive impacts are notable, the mixed nature and limited enforcement reduce overall benefit, resulting in a modest net ethical gain.",
+      "tx_hash": "UJ5oViGpjwwUyS61zdfnweqTm6e449zAAA1wXGr4g7Wk5ouWCdzxUwKaha6upEZZFHkDuH46TSXmxL5pdbzGYXx",
+      "created_at": "2026-07-26T08:36:43.012624+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Law limits enclosure of natural spaces, increasing public access to nature and recreation.\", \"affected_sdgs\": [3, 11, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Law simultaneously strengthens private property protections, potentially restricting communal and indigenous land rights.\", \"affected_sdgs\": [1, 2, 10], \"violated_rights\": [\"UDHR Article 13\", \"UNDRIP Article 26\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 41500
+    },
     {
       "id": 5617,
       "event_title": "Advocates Sue Trump Administration Over Secret Dossiers on ICE Watchers",
@@ -129201,35 +129247,35 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 11,
-        "total_amount": 3296350
+        "count": 10,
+        "total_amount": 3146350
       },
       {
         "country": "France",
-        "count": 5,
-        "total_amount": 1744870
+        "count": 6,
+        "total_amount": 2159870
+      },
+      {
+        "country": "Brazil",
+        "count": 3,
+        "total_amount": 885300
       },
       {
         "country": "Israel",
-        "count": 4,
-        "total_amount": 699340
+        "count": 3,
+        "total_amount": 691050
       },
       {
-        "country": "United Kingdom",
+        "country": "Spain",
         "count": 3,
-        "total_amount": 791800
-      },
-      {
-        "country": "Switzerland",
-        "count": 3,
-        "total_amount": 1560000
+        "total_amount": 1416000
       }
     ],
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 7,
-        "total_amount": 5731820
+        "count": 5,
+        "total_amount": 4802820
       },
       {
         "country": "Spain",
@@ -129255,8 +129301,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.421,
-        "events": 19
+        "burn_ratio": 0.375,
+        "events": 16
       },
       {
         "region": "Africa",
@@ -129264,41 +129310,41 @@
         "events": 3
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.25,
-        "events": 4
-      },
-      {
         "region": "Europe",
-        "burn_ratio": 0.2,
-        "events": 25
+        "burn_ratio": 0.208,
+        "events": 24
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.143,
-        "events": 7
+        "region": "Latin America",
+        "burn_ratio": 0.2,
+        "events": 5
+      },
+      {
+        "region": "MENA",
+        "burn_ratio": 0.0,
+        "events": 5
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 6
+        "events": 5
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.857,
-        "events": 7
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.8,
-        "events": 25
+        "mint_ratio": 1.0,
+        "events": 4
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.75,
-        "events": 4
+        "mint_ratio": 0.8,
+        "events": 5
+      },
+      {
+        "region": "Europe",
+        "mint_ratio": 0.792,
+        "events": 24
       },
       {
         "region": "Africa",
@@ -129339,7 +129385,7 @@
       },
       {
         "date": "2026-07-26",
-        "net_minted": 6114950,
+        "net_minted": 6739950,
         "net_burned": 0
       }
     ],
@@ -129356,8 +129402,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 30,
-        "negative": 55,
+        "positive": 24,
+        "negative": 51,
         "event_ids_positive": [
           5613,
           5609,
@@ -129382,15 +129428,11 @@
           5557,
           5556,
           5552,
-          5548,
-          5538,
-          5537,
-          5536,
-          5531,
-          5528,
-          5527
+          5548
         ],
         "event_ids_negative": [
+          5619,
+          5618,
           5617,
           5616,
           5615,
@@ -129439,18 +129481,12 @@
           5549,
           5547,
           5540,
-          5539,
-          5535,
-          5534,
-          5533,
-          5532,
-          5530,
-          5529
+          5539
         ]
       },
       "UDHR": {
-        "positive": 16,
-        "negative": 44,
+        "positive": 12,
+        "negative": 42,
         "event_ids_positive": [
           5609,
           5603,
@@ -129463,13 +129499,11 @@
           5571,
           5570,
           5564,
-          5561,
-          5536,
-          5531,
-          5528,
-          5527
+          5561
         ],
         "event_ids_negative": [
+          5619,
+          5618,
           5617,
           5616,
           5614,
@@ -129509,11 +129543,7 @@
           5551,
           5550,
           5540,
-          5539,
-          5535,
-          5533,
-          5532,
-          5529
+          5539
         ]
       },
       "ILO": {
@@ -129530,47 +129560,42 @@
         ]
       },
       "CRC": {
-        "positive": 4,
-        "negative": 5,
+        "positive": 3,
+        "negative": 4,
         "event_ids_positive": [
           5603,
           5587,
-          5580,
-          5527
+          5580
         ],
         "event_ids_negative": [
           5600,
           5597,
           5596,
-          5579,
-          5535
+          5579
         ]
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 6,
+        "negative": 5,
         "event_ids_positive": [
           5558,
           5552
         ],
         "event_ids_negative": [
+          5618,
           5569,
           5567,
           5553,
-          5551,
-          5535,
-          5530
+          5551
         ]
       },
       "Animal": {
-        "positive": 5,
+        "positive": 3,
         "negative": 5,
         "event_ids_positive": [
           5585,
           5558,
-          5557,
-          5538,
-          5537
+          5557
         ],
         "event_ids_negative": [
           5612,
@@ -129581,8 +129606,8 @@
         ]
       },
       "PB": {
-        "positive": 12,
-        "negative": 20,
+        "positive": 10,
+        "negative": 18,
         "event_ids_positive": [
           5613,
           5609,
@@ -129593,9 +129618,7 @@
           5558,
           5557,
           5556,
-          5548,
-          5538,
-          5537
+          5548
         ],
         "event_ids_negative": [
           5616,
@@ -129615,21 +129638,19 @@
           5568,
           5567,
           5550,
-          5539,
-          5534,
-          5530
+          5539
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.8,
-      "mainstream_pct": 3.2,
-      "total_sources_used": 63,
-      "articles_processed": 91
+      "niche_pct": 96.6,
+      "mainstream_pct": 3.4,
+      "total_sources_used": 59,
+      "articles_processed": 81
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 91,
+      "total_events": 81,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129685,9 +129706,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 10,
+        "count": 8,
         "burn_count": 4,
-        "mint_count": 6,
+        "mint_count": 4,
         "event_ids": [
           5616,
           5615,
@@ -129696,24 +129717,21 @@
           5567,
           5556,
           5547,
-          5543,
-          5534,
-          5529
+          5543
         ]
       },
       {
         "name": "Defense",
-        "count": 7,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 6,
         "event_ids": [
           5614,
           5612,
           5606,
           5591,
           5550,
-          5540,
-          5529
+          5540
         ]
       },
       {
@@ -129753,24 +129771,22 @@
       },
       {
         "name": "Forestry",
-        "count": 3,
+        "count": 2,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 2,
         "event_ids": [
           5566,
-          5544,
-          5530
+          5544
         ]
       },
       {
         "name": "Construction",
-        "count": 3,
+        "count": 2,
         "burn_count": 2,
-        "mint_count": 1,
+        "mint_count": 0,
         "event_ids": [
           5560,
-          5559,
-          5535
+          5559
         ]
       },
       {
@@ -129784,18 +129800,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 33,
+      "total_burn": 27,
       "direct_action": {
-        "count": 29,
-        "pct": 87.9
+        "count": 23,
+        "pct": 85.2
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 3.0
+        "pct": 3.7
       },
       "untyped": {
         "count": 3,
-        "pct": 9.1
+        "pct": 11.1
       }
     },
     "burn_composition_all_time": {
@@ -129814,28 +129830,28 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 58,
+      "total_mint": 54,
       "direct_action": {
-        "count": 52,
-        "pct": 89.7
+        "count": 47,
+        "pct": 87.0
       },
       "editorial_alarm": {
-        "count": 3,
-        "pct": 5.2
+        "count": 4,
+        "pct": 7.4
       },
       "untyped": {
         "count": 3,
-        "pct": 5.2
+        "pct": 5.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3761,
+      "total_mint": 3763,
       "direct_action": {
-        "count": 3010,
+        "count": 3011,
         "pct": 80.0
       },
       "editorial_alarm": {
-        "count": 233,
+        "count": 234,
         "pct": 6.2
       },
       "untyped": {
@@ -129844,9 +129860,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 21,
-      "institutional": 70,
-      "citizen_ratio": 0.231,
+      "citizen": 18,
+      "institutional": 63,
+      "citizen_ratio": 0.222,
       "daily": [
         {
           "date": "2026-07-20",
@@ -129880,11 +129896,13 @@
         },
         {
           "date": "2026-07-26",
-          "citizen": 1,
+          "citizen": 3,
           "institutional": 3
         }
       ],
       "event_ids_citizen": [
+        5619,
+        5618,
         5615,
         5613,
         5604,
@@ -129900,12 +129918,7 @@
         5556,
         5552,
         5549,
-        5543,
-        5538,
-        5537,
-        5536,
-        5535,
-        5530
+        5543
       ],
       "event_ids_institutional": [
         5617,
@@ -129970,14 +129983,7 @@
         5542,
         5541,
         5540,
-        5539,
-        5534,
-        5533,
-        5532,
-        5531,
-        5529,
-        5528,
-        5527
+        5539
       ]
     }
   }
