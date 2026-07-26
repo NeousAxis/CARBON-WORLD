@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-26T02:06:55.283667+00:00",
-  "total_events": 5616,
+  "generated_at": "2026-07-26T04:07:02.592977+00:00",
+  "total_events": 5617,
   "total_burned": 7684889425,
-  "total_minted": 8143051449,
+  "total_minted": 8143301149,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 5617,
+      "event_title": "Advocates Sue Trump Administration Over Secret Dossiers on ICE Watchers",
+      "event_url": "https://truthout.org/articles/advocates-sue-trump-administration-over-secret-dossiers-on-ice-watchers/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 249700,
+      "final_score": 1.19,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The ongoing privacy violation outweighs the positive impact of the lawsuit, leading to a net negative assessment. | The lawsuit represents a positive step toward accountability and protection of privacy, yet the underlying surveillance breach remains a serious violation of human rights. While the legal challenge may lead to reforms, the current harm outweighs the immediate bene",
+      "tx_hash": "4y4jy3WmiUERpQ1Et1wCRVZVdu3EvXc3ftTfhViKXXntXchgSdECWXpUNyXsv5oFS92232AwYgSDMhHH5NgDpumA",
+      "created_at": "2026-07-26T04:06:59.184708+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Filing of a lawsuit challenging secret DHS data collection on ICE watchers\", \"affected_sdgs\": [16, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Secret DHS dossiers collecting personal data on individuals documenting ICE operations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5616,
       "event_title": "Yemen’s Houthis target Saudi oil facilities along the Red Sea",
@@ -129179,7 +129202,7 @@
       {
         "country": "United States",
         "count": 11,
-        "total_amount": 3722650
+        "total_amount": 3296350
       },
       {
         "country": "France",
@@ -129231,14 +129254,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Africa",
-        "burn_ratio": 0.5,
-        "events": 4
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.421,
         "events": 19
+      },
+      {
+        "region": "Africa",
+        "burn_ratio": 0.333,
+        "events": 3
       },
       {
         "region": "Latin America",
@@ -129263,11 +129286,6 @@
         "events": 6
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 3
-      },
-      {
         "region": "Asia",
         "mint_ratio": 0.857,
         "events": 7
@@ -129281,6 +129299,11 @@
         "region": "Latin America",
         "mint_ratio": 0.75,
         "events": 4
+      },
+      {
+        "region": "Africa",
+        "mint_ratio": 0.667,
+        "events": 3
       }
     ],
     "supply_trend_7d": [
@@ -129316,7 +129339,7 @@
       },
       {
         "date": "2026-07-26",
-        "net_minted": 5865250,
+        "net_minted": 6114950,
         "net_burned": 0
       }
     ],
@@ -129333,8 +129356,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 34,
-        "negative": 56,
+        "positive": 30,
+        "negative": 55,
         "event_ids_positive": [
           5613,
           5609,
@@ -129365,13 +129388,10 @@
           5536,
           5531,
           5528,
-          5527,
-          5524,
-          5523,
-          5522,
-          5521
+          5527
         ],
         "event_ids_negative": [
+          5617,
           5616,
           5615,
           5614,
@@ -129425,14 +129445,12 @@
           5533,
           5532,
           5530,
-          5529,
-          5526,
-          5525
+          5529
         ]
       },
       "UDHR": {
-        "positive": 20,
-        "negative": 45,
+        "positive": 16,
+        "negative": 44,
         "event_ids_positive": [
           5609,
           5603,
@@ -129449,13 +129467,10 @@
           5536,
           5531,
           5528,
-          5527,
-          5524,
-          5523,
-          5522,
-          5521
+          5527
         ],
         "event_ids_negative": [
+          5617,
           5616,
           5614,
           5612,
@@ -129498,18 +129513,13 @@
           5535,
           5533,
           5532,
-          5529,
-          5526,
-          5525
+          5529
         ]
       },
       "ILO": {
-        "positive": 2,
+        "positive": 0,
         "negative": 6,
-        "event_ids_positive": [
-          5524,
-          5523
-        ],
+        "event_ids_positive": [],
         "event_ids_negative": [
           5608,
           5600,
@@ -129520,14 +129530,13 @@
         ]
       },
       "CRC": {
-        "positive": 5,
+        "positive": 4,
         "negative": 5,
         "event_ids_positive": [
           5603,
           5587,
           5580,
-          5527,
-          5521
+          5527
         ],
         "event_ids_negative": [
           5600,
@@ -129539,7 +129548,7 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 7,
+        "negative": 6,
         "event_ids_positive": [
           5558,
           5552
@@ -129550,8 +129559,7 @@
           5553,
           5551,
           5535,
-          5530,
-          5525
+          5530
         ]
       },
       "Animal": {
@@ -129574,7 +129582,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 21,
+        "negative": 20,
         "event_ids_positive": [
           5613,
           5609,
@@ -129609,20 +129617,19 @@
           5550,
           5539,
           5534,
-          5530,
-          5525
+          5530
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.3,
-      "mainstream_pct": 4.7,
-      "total_sources_used": 64,
-      "articles_processed": 96
+      "niche_pct": 96.8,
+      "mainstream_pct": 3.2,
+      "total_sources_used": 63,
+      "articles_processed": 91
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 96,
+      "total_events": 91,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129678,9 +129685,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 11,
+        "count": 10,
         "burn_count": 4,
-        "mint_count": 7,
+        "mint_count": 6,
         "event_ids": [
           5616,
           5615,
@@ -129691,15 +129698,14 @@
           5547,
           5543,
           5534,
-          5529,
-          5525
+          5529
         ]
       },
       {
         "name": "Defense",
-        "count": 8,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 8,
+        "mint_count": 7,
         "event_ids": [
           5614,
           5612,
@@ -129707,21 +129713,7 @@
           5591,
           5550,
           5540,
-          5529,
-          5526
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 5,
-        "burn_count": 1,
-        "mint_count": 4,
-        "event_ids": [
-          5597,
-          5595,
-          5560,
-          5555,
-          5525
+          5529
         ]
       },
       {
@@ -129734,6 +129726,18 @@
           5597,
           5575,
           5548
+        ]
+      },
+      {
+        "name": "Finance",
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
+        "event_ids": [
+          5597,
+          5595,
+          5560,
+          5555
         ]
       },
       {
@@ -129770,29 +129774,28 @@
         ]
       },
       {
-        "name": "Pharma",
-        "count": 2,
-        "burn_count": 2,
-        "mint_count": 0,
+        "name": "Mining",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
         "event_ids": [
-          5531,
-          5522
+          5569
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 37,
+      "total_burn": 33,
       "direct_action": {
-        "count": 33,
-        "pct": 89.2
+        "count": 29,
+        "pct": 87.9
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 2.7
+        "pct": 3.0
       },
       "untyped": {
         "count": 3,
-        "pct": 8.1
+        "pct": 9.1
       }
     },
     "burn_composition_all_time": {
@@ -129811,24 +129814,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 59,
+      "total_mint": 58,
       "direct_action": {
-        "count": 53,
-        "pct": 89.8
+        "count": 52,
+        "pct": 89.7
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 5.1
+        "pct": 5.2
       },
       "untyped": {
         "count": 3,
-        "pct": 5.1
+        "pct": 5.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3760,
+      "total_mint": 3761,
       "direct_action": {
-        "count": 3009,
+        "count": 3010,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -129841,9 +129844,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 22,
-      "institutional": 74,
-      "citizen_ratio": 0.229,
+      "citizen": 21,
+      "institutional": 70,
+      "citizen_ratio": 0.231,
       "daily": [
         {
           "date": "2026-07-20",
@@ -129878,7 +129881,7 @@
         {
           "date": "2026-07-26",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -129902,10 +129905,10 @@
         5537,
         5536,
         5535,
-        5530,
-        5525
+        5530
       ],
       "event_ids_institutional": [
+        5617,
         5616,
         5614,
         5612,
@@ -129974,12 +129977,7 @@
         5531,
         5529,
         5528,
-        5527,
-        5526,
-        5524,
-        5523,
-        5522,
-        5521
+        5527
       ]
     }
   }
