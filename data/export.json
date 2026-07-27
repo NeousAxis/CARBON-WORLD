@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T20:06:49.608605+00:00",
-  "total_events": 5661,
+  "generated_at": "2026-07-27T21:06:08.035562+00:00",
+  "total_events": 5662,
   "total_burned": 7688640525,
-  "total_minted": 8170845449,
+  "total_minted": 8177605449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5662,
+      "event_title": "US walks out of UN Security Council meeting as France condemns rights vote",
+      "event_url": "https://www.france24.com/en/france/20260727-us-walks-out-of-un-security-council-meeting-as-france-condemns-rights-vote",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -2.5,
+      "confidence": 8,
+      "justification": "US walkout undermines UN human‑rights mandate, harming global rights protection. | The United States' diplomatic walkout and opposition to the UN human‑rights chief’s mandate weaken international human‑rights safeguards and erode multilateral trust, outweighing any asserted sovereign benefit.",
+      "tx_hash": "tLBo3b9Ts6jds31VcoNUQsRVtWyoyK1yhuifoXKPZHZxDnmqqeF3D6dFVLxRT4cPpAfkGbTxYDqZzBf1bc9CJgs",
+      "created_at": "2026-07-27T21:06:04.123623+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US vote against extending the UN human rights chief mandate and walkout from the Security Council undermines global human‑rights protection and multilateral cooperation.\", \"affected_sdgs\": [5, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5661,
       "event_title": "DOJ Charges Alleged Cop City Activist Over “Duress” Password That Wipes Phone",
@@ -130213,8 +130236,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 13,
-        "total_amount": 4738150
+        "count": 14,
+        "total_amount": 11498150
       },
       {
         "country": "France",
@@ -130267,8 +130290,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.409,
-        "events": 22
+        "burn_ratio": 0.391,
+        "events": 23
       },
       {
         "region": "Africa",
@@ -130351,7 +130374,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 26177200,
+        "net_minted": 32937200,
         "net_burned": 1572000
       }
     ],
@@ -130369,7 +130392,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 78,
+        "negative": 79,
         "event_ids_positive": [
           5658,
           5631,
@@ -130400,6 +130423,7 @@
           5557
         ],
         "event_ids_negative": [
+          5662,
           5661,
           5660,
           5659,
@@ -130482,7 +130506,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 67,
+        "negative": 68,
         "event_ids_positive": [
           5631,
           5625,
@@ -130501,6 +130525,7 @@
           5561
         ],
         "event_ids_negative": [
+          5662,
           5661,
           5660,
           5657,
@@ -130704,11 +130729,11 @@
       "niche_pct": 92.5,
       "mainstream_pct": 7.5,
       "total_sources_used": 67,
-      "articles_processed": 105
+      "articles_processed": 106
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 105,
+      "total_events": 106,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -130736,21 +130761,31 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          5662,
+          5643
+        ]
+      },
+      {
+        "name": "UN Security Council",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          5662
+        ]
+      },
+      {
         "name": "COP",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
           5661
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5643
         ]
       },
       {
@@ -130918,14 +130953,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 78,
+      "total_mint": 79,
       "direct_action": {
-        "count": 72,
-        "pct": 92.3
+        "count": 73,
+        "pct": 92.4
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 7.7
+        "pct": 7.6
       },
       "untyped": {
         "count": 0,
@@ -130933,9 +130968,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3799,
+      "total_mint": 3800,
       "direct_action": {
-        "count": 3044,
+        "count": 3045,
         "pct": 80.1
       },
       "editorial_alarm": {
@@ -130949,8 +130984,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 28,
-      "institutional": 77,
-      "citizen_ratio": 0.267,
+      "institutional": 78,
+      "citizen_ratio": 0.264,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130985,7 +131020,7 @@
         {
           "date": "2026-07-27",
           "citizen": 13,
-          "institutional": 21
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -131019,6 +131054,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5662,
         5659,
         5658,
         5657,
