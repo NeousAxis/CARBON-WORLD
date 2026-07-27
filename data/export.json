@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T13:36:26.709651+00:00",
-  "total_events": 5647,
+  "generated_at": "2026-07-27T15:07:35.732683+00:00",
+  "total_events": 5648,
   "total_burned": 7687440525,
-  "total_minted": 8163624449,
+  "total_minted": 8163774449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5648,
+      "event_title": "Poland asks US to extradite its ex-justice minister",
+      "event_url": "https://www.politico.eu/article/poland-us-extradite-justice-minister-zbigniew-ziobro/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.6,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Extradition request seeks accountability for alleged corruption, reinforcing rule of law and protecting public rights. | The extradition request represents a significant step toward accountability for alleged corruption, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the political context risks undermining judicial independence and public trust, cre",
+      "tx_hash": "2C3adbbuoJPE6WVxyU4dLDRes8ZuSrG2eSaBtirL3QPbY1YV898oWz5NA3bCJhpa2Zu3b6kpoRNuuRYgxtvftBT2",
+      "created_at": "2026-07-27T15:07:31.732000+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Poland",
+      "region": "Europe",
+      "administration": "Poland-KO",
+      "positive_aspects_json": "[{\"description\": \"Poland's current government requests extradition of former justice minister for alleged corruption, signaling accountability for past administration's actions.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Extradition request may be perceived as politically motivated, potentially undermining judicial independence and public trust in legal processes.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential diplomatic tensions between Poland and the US could weaken international cooperation on broader justice and human rights issues.\", \"affected_sdgs\": [17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 46000
+    },
     {
       "id": 5647,
       "event_title": "How India's Gen-Z protesters shifted the political debate",
@@ -129955,8 +129978,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.206,
-        "events": 34
+        "burn_ratio": 0.2,
+        "events": 35
       },
       {
         "region": "Latin America",
@@ -129992,8 +130015,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.794,
-        "events": 34
+        "mint_ratio": 0.8,
+        "events": 35
       }
     ],
     "supply_trend_7d": [
@@ -130029,7 +130052,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 18956200,
+        "net_minted": 19106200,
         "net_burned": 372000
       }
     ],
@@ -130047,7 +130070,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 65,
+        "negative": 66,
         "event_ids_positive": [
           5631,
           5629,
@@ -130077,6 +130100,7 @@
           5557
         ],
         "event_ids_negative": [
+          5648,
           5647,
           5646,
           5645,
@@ -130146,7 +130170,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 57,
+        "negative": 58,
         "event_ids_positive": [
           5631,
           5625,
@@ -130165,6 +130189,7 @@
           5561
         ],
         "event_ids_negative": [
+          5648,
           5647,
           5646,
           5645,
@@ -130343,11 +130368,11 @@
       "niche_pct": 93.8,
       "mainstream_pct": 6.2,
       "total_sources_used": 64,
-      "articles_processed": 91
+      "articles_processed": 92
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 91,
+      "total_events": 92,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -130540,14 +130565,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 65,
+      "total_mint": 66,
       "direct_action": {
-        "count": 60,
-        "pct": 92.3
+        "count": 61,
+        "pct": 92.4
       },
       "editorial_alarm": {
         "count": 5,
-        "pct": 7.7
+        "pct": 7.6
       },
       "untyped": {
         "count": 0,
@@ -130555,9 +130580,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3786,
+      "total_mint": 3787,
       "direct_action": {
-        "count": 3032,
+        "count": 3033,
         "pct": 80.1
       },
       "editorial_alarm": {
@@ -130571,8 +130596,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 24,
-      "institutional": 67,
-      "citizen_ratio": 0.264,
+      "institutional": 68,
+      "citizen_ratio": 0.261,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130607,7 +130632,7 @@
         {
           "date": "2026-07-27",
           "citizen": 9,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -130637,6 +130662,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5648,
         5645,
         5643,
         5642,
