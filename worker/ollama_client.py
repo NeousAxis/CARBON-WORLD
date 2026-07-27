@@ -29,6 +29,7 @@ from config import (
     CEREBRAS_MODEL,
     MISTRAL_API_KEY,
     MISTRAL_MODEL,
+    MISTRAL_FAST_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -538,7 +539,7 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
         )
         if result is None and MISTRAL_API_KEY and _provider_enabled("mistral"):
             logger.info("Groq failed for classifier %s, trying Mistral", context)
-            result = _call_mistral(system_prompt, user_message, context, max_tokens=200, delay=1, max_attempts=1)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=200, model=MISTRAL_FAST_MODEL, delay=1, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Mistral failed for classifier %s, falling back to Cerebras", context)
             return _call_cerebras(system_prompt, user_message, context, max_tokens=200, delay=2, max_attempts=1)
