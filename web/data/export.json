@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T04:36:55.489666+00:00",
-  "total_events": 5628,
-  "total_burned": 7687068525,
+  "generated_at": "2026-07-27T05:36:31.423353+00:00",
+  "total_events": 5629,
+  "total_burned": 7687088525,
   "total_minted": 8144918249,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5629,
+      "event_title": "Digital Campaigner (bilingual)",
+      "event_url": "https://www.greenpeace.org/canada/en/job/75676/digital-campaigner-bilingual/",
+      "event_source": "Greenpeace Canada",
+      "decision": "BURN",
+      "amount_crbn": 20000,
+      "final_score": 1.94,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Hiring a digital campaigner advances environmental advocacy and public awareness, outweighing the modest labour‑precarity concerns. | The hiring boosts climate‑related outreach and aligns with several SDGs, but the short‑term contract raises modest labour‑rights concerns. Overall the action is net positive for consciousness‑raising.",
+      "tx_hash": "2HMj1YTRwNi8N2fHPvmjeXHf5VBkYaHdoESuC74QULCwZgdz8NmQ6Wg83LSacXifdcLcQeeWHwhYLfky6nvtJEit",
+      "created_at": "2026-07-27T05:36:28.100864+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Canada",
+      "region": "North America",
+      "administration": "Canada-Liberal",
+      "positive_aspects_json": "[{\"description\": \"Greenpeace Canada hires a digital campaigner to create and disseminate environmental awareness content.\", \"affected_sdgs\": [13, 12, 7, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The 4‑month contract creates precarious employment, undermining decent‑work standards.\", \"affected_sdgs\": [8], \"violated_rights\": [\"ILO Decent Work\"], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 35200
+    },
     {
       "id": 5628,
       "event_title": "Sudan’s army regains control of highway linking Khartoum with El Obeid",
@@ -129500,16 +129523,16 @@
         "total_amount": 654000
       },
       {
-        "country": "Mali",
+        "country": "Canada",
         "count": 1,
-        "total_amount": 1327200
+        "total_amount": 20000
       }
     ],
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.471,
-        "events": 17
+        "burn_ratio": 0.5,
+        "events": 18
       },
       {
         "region": "Africa",
@@ -129593,7 +129616,7 @@
       {
         "date": "2026-07-27",
         "net_minted": 250000,
-        "net_burned": 0
+        "net_burned": 20000
       }
     ],
     "event_of_the_day": {
@@ -129609,9 +129632,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 24,
+        "positive": 25,
         "negative": 48,
         "event_ids_positive": [
+          5629,
           5625,
           5623,
           5620,
@@ -129753,9 +129777,11 @@
         ]
       },
       "ILO": {
-        "positive": 0,
+        "positive": 1,
         "negative": 6,
-        "event_ids_positive": [],
+        "event_ids_positive": [
+          5629
+        ],
         "event_ids_negative": [
           5624,
           5608,
@@ -129850,12 +129876,12 @@
     "source_diversity_7d": {
       "niche_pct": 96.2,
       "mainstream_pct": 3.8,
-      "total_sources_used": 52,
-      "articles_processed": 72
+      "total_sources_used": 53,
+      "articles_processed": 73
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 72,
+      "total_events": 73,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129983,9 +130009,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 24,
+      "total_burn": 25,
       "direct_action": {
-        "count": 24,
+        "count": 25,
         "pct": 100.0
       },
       "editorial_consciousness": {
@@ -129998,9 +130024,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1851,
+      "total_burn": 1852,
       "direct_action": {
-        "count": 1444,
+        "count": 1445,
         "pct": 78.0
       },
       "editorial_consciousness": {
@@ -130043,9 +130069,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 16,
+      "citizen": 17,
       "institutional": 56,
-      "citizen_ratio": 0.222,
+      "citizen_ratio": 0.233,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130079,11 +130105,12 @@
         },
         {
           "date": "2026-07-27",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        5629,
         5628,
         5623,
         5619,
