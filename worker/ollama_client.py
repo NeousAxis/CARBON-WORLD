@@ -47,20 +47,46 @@ SENTINEL_MODEL = "openai/gpt-oss-120b"
 # stayed invisible for 5 days.
 _reported_config_errors: set = set()
 
+# Providers that returned 401/403 earlier in this process. This means the key
+# is revoked/expired OR the account plan/subscription is inactive (e.g. Mistral
+# returns 401, not 429, when the paid plan is not active) — either way every
+# subsequent call fails identically, so once we have seen it we skip that
+# provider for the rest of the run instead of paying a network round-trip (and a
+# misleading "trying X" cascade log line) on every one of the run's articles.
+# Reset every process — each cron run is a fresh interpreter — so a re-activated
+# account or fixed key is picked up on the next run automatically.
+#
+# Scope note: only account-level errors (401/403) disable the whole provider. A
+# 404 is model-specific (one retired model id while the key and the provider's
+# other models stay valid), so it is logged but does not disable the provider.
+_disabled_providers: set = set()
+
+
+def _provider_enabled(provider: str) -> bool:
+    """True unless this provider's key was rejected earlier this process."""
+    return provider.lower() not in _disabled_providers
+
 
 def _log_config_error(provider: str, status: int, model: str, body: str) -> None:
     """
-    Log a provider misconfiguration once per (provider, model, status).
+    Log a provider misconfiguration once per (provider, model, status), and
+    disable the provider for the rest of the process on a key-level error.
 
     401/403 means the API key is revoked or expired; 404 means the model id no
     longer exists on that provider. Neither is transient, so retrying or
     cascading to the next provider will not help — only a config change will.
     """
+    if status in (401, 403):
+        _disabled_providers.add(provider.lower())
     key = (provider, model, status)
     if key in _reported_config_errors:
         return
     _reported_config_errors.add(key)
-    cause = "API key rejected" if status in (401, 403) else "model id not found"
+    cause = (
+        "API key rejected or account/subscription inactive"
+        if status in (401, 403)
+        else "model id not found"
+    )
     logger.critical(
         "PROVIDER_CONFIG_ERROR — %s HTTP %d: %s (model=%s). This is permanent, "
         "not a quota blip: every call to this provider will fail until the "
@@ -117,6 +143,36 @@ def _parse_json_response(raw: str, context: str) -> Optional[dict]:
     return None
 
 
+def _extract_content(data: dict, provider: str, context: str) -> str:
+    """
+    Defensively pull the assistant text out of an OpenAI-compatible response.
+
+    gpt-oss / reasoning models occasionally return a message whose `content`
+    key is missing or null (typically when the completion is cut off by
+    max_tokens while still in the reasoning phase). Indexing
+    data["choices"][0]["message"]["content"] then raised KeyError, which the
+    caller caught as a generic call failure and logged as "'content'" — so an
+    article got marked invalid even though the provider had answered 200 OK
+    (observed live on Cerebras, 2026-07-27). Walk the structure with .get() and
+    fall back to "" so an empty/odd response is handled downstream as an empty
+    response instead of crashing the whole call.
+    """
+    choices = data.get("choices") or []
+    if not choices:
+        logger.warning("%s returned no choices for %s: %s", provider, context, str(data)[:200])
+        return ""
+    message = choices[0].get("message") or {}
+    content = message.get("content")
+    if content:
+        return content
+    # Some reasoning models leave `content` empty and put the text in a
+    # reasoning field; the JSON parser will still find the {...} block there.
+    for alt in ("reasoning_content", "reasoning"):
+        if message.get(alt):
+            return message[alt]
+    return ""
+
+
 # ── Groq provider ───────────────────────────────────────────────────────────
 
 def _call_groq(
@@ -143,6 +199,8 @@ def _call_groq(
                       (useful when a Cerebras fallback is available and we
                       don't want to wait on Groq's long backoff, up to 1000s).
     """
+    if not _provider_enabled("groq"):
+        return None
     import httpx
 
     target_model = model or GROQ_MODEL
@@ -210,7 +268,7 @@ def _call_groq(
                 return None
             resp.raise_for_status()
             data = resp.json()
-            raw = data["choices"][0]["message"]["content"]
+            raw = _extract_content(data, "Groq", context)
             return _parse_json_response(raw, context)
         except Exception as exc:
             logger.error("Groq call failed for %s (model=%s): %s", context, target_model, exc)
@@ -236,6 +294,8 @@ def _call_cerebras(
     truly fails fast (one attempt per provider, no minute-long internal
     retries that defeat the purpose of having multiple buckets).
     """
+    if not _provider_enabled("cerebras"):
+        return None
     import httpx
 
     target_model = model or CEREBRAS_MODEL
@@ -296,7 +356,7 @@ def _call_cerebras(
                 return None
             resp.raise_for_status()
             data = resp.json()
-            raw = data["choices"][0]["message"]["content"]
+            raw = _extract_content(data, "Cerebras", context)
             return _parse_json_response(raw, context)
         except Exception as exc:
             logger.error("Cerebras call failed for %s (model=%s): %s", context, target_model, exc)
@@ -322,6 +382,8 @@ def _call_mistral(
     Cerebras becomes the fallback if Mistral 429s. Same fail-fast cap (60 s)
     as Cerebras to avoid the multi-hour daily-quota stall pattern.
     """
+    if not _provider_enabled("mistral"):
+        return None
     import httpx
 
     target_model = model or MISTRAL_MODEL
@@ -381,7 +443,7 @@ def _call_mistral(
                 return None
             resp.raise_for_status()
             data = resp.json()
-            raw = data["choices"][0]["message"]["content"]
+            raw = _extract_content(data, "Mistral", context)
             return _parse_json_response(raw, context)
         except Exception as exc:
             logger.error("Mistral call failed for %s (model=%s): %s", context, target_model, exc)
@@ -474,7 +536,7 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
             model=GROQ_FAST_MODEL,
             max_attempts=attempts,
         )
-        if result is None and MISTRAL_API_KEY:
+        if result is None and MISTRAL_API_KEY and _provider_enabled("mistral"):
             logger.info("Groq failed for classifier %s, trying Mistral", context)
             result = _call_mistral(system_prompt, user_message, context, max_tokens=200, delay=1, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
@@ -494,7 +556,7 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
     if LLM_PROVIDER == "groq":
         attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
         result = _call_groq(system_prompt, user_message, context, max_tokens=3000, max_attempts=attempts)
-        if result is None and MISTRAL_API_KEY:
+        if result is None and MISTRAL_API_KEY and _provider_enabled("mistral"):
             logger.info("Groq failed for analyst A %s, trying Mistral", context)
             result = _call_mistral(system_prompt, user_message, context, max_tokens=3000, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
@@ -517,7 +579,7 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
     The cascade keeps Analyst B running through 429 of any single provider
     and decouples it from the Groq account ceiling that Analyst A consumes.
     """
-    if MISTRAL_API_KEY:
+    if MISTRAL_API_KEY and _provider_enabled("mistral"):
         # Mistral is primary for Analyst B → 2 attempts (it's our strongest
         # bucket so worth a retry on transient errors before we cascade)
         result = _call_mistral(
@@ -573,7 +635,7 @@ def call_reconciler(system_prompt: str, user_message: str, context: str = "") ->
             delay=8,
             max_attempts=attempts,
         )
-        if result is None and MISTRAL_API_KEY:
+        if result is None and MISTRAL_API_KEY and _provider_enabled("mistral"):
             logger.info("Groq failed for reconciler %s, trying Mistral", context)
             result = _call_mistral(system_prompt, user_message, context, max_tokens=2500, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
@@ -599,7 +661,7 @@ def call_sentinel(system_prompt: str, user_message: str, context: str = "") -> O
             delay=6,
             max_attempts=attempts,
         )
-        if result is None and MISTRAL_API_KEY:
+        if result is None and MISTRAL_API_KEY and _provider_enabled("mistral"):
             logger.info("Groq failed for sentinel %s, trying Mistral", context)
             result = _call_mistral(system_prompt, user_message, context, max_tokens=1500, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
