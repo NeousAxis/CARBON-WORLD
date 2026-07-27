@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T03:36:46.542865+00:00",
-  "total_events": 5627,
+  "generated_at": "2026-07-27T04:36:55.489666+00:00",
+  "total_events": 5628,
   "total_burned": 7687068525,
-  "total_minted": 8144668249,
+  "total_minted": 8144918249,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5628,
+      "event_title": "Sudan’s army regains control of highway linking Khartoum with El Obeid",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/sudans-army-regains-control-of-highway-linking-khartoum-with-el-obeid?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 250000,
+      "final_score": -2.75,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Army control of the highway facilitates military logistics, increasing conflict risk and limiting civilian freedom. | While the highway's reopening could aid civilian logistics, the army's control deepens conflict, curtails freedom of movement and threatens lives, resulting in a net negative ethical impact.",
+      "tx_hash": "2qyVkVjuhpPmPNpMK57RLepSY1kbKn6WTcusMDKp3X1KVXevUuqww6UwM3ri4U4kEv5ZCDQSywscN8rVAsonBKBY",
+      "created_at": "2026-07-27T04:36:52.246856+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sudan",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Restoration of civilian access to a major transport corridor\", \"affected_sdgs\": [1, 3, 9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military control of the highway enables increased conflict, restricts civilian movement and raises risk of human rights violations\", \"affected_sdgs\": [1, 3, 11, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5627,
       "event_title": "China has put a Polish university on its European dual-use exports blacklist. Why?",
@@ -129490,8 +129513,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 3
+        "burn_ratio": 0.25,
+        "events": 4
       },
       {
         "region": "Europe",
@@ -129532,8 +129555,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.667,
-        "events": 3
+        "mint_ratio": 0.75,
+        "events": 4
       }
     ],
     "supply_trend_7d": [
@@ -129569,7 +129592,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 0,
+        "net_minted": 250000,
         "net_burned": 0
       }
     ],
@@ -129587,7 +129610,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           5625,
           5623,
@@ -129615,6 +129638,7 @@
           5557
         ],
         "event_ids_negative": [
+          5628,
           5627,
           5626,
           5624,
@@ -129666,7 +129690,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           5625,
           5620,
@@ -129684,6 +129708,7 @@
           5561
         ],
         "event_ids_negative": [
+          5628,
           5627,
           5626,
           5624,
@@ -129823,14 +129848,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 98.1,
-      "mainstream_pct": 1.9,
+      "niche_pct": 96.2,
+      "mainstream_pct": 3.8,
       "total_sources_used": 52,
-      "articles_processed": 71
+      "articles_processed": 72
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 71,
+      "total_events": 72,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129866,6 +129891,20 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Defense",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          5628,
+          5621,
+          5614,
+          5612,
+          5606,
+          5591
+        ]
+      },
+      {
         "name": "Energy",
         "count": 6,
         "burn_count": 2,
@@ -129880,16 +129919,15 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 5,
+        "name": "Transport",
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 5,
+        "mint_count": 4,
         "event_ids": [
-          5621,
-          5614,
-          5612,
-          5606,
-          5591
+          5628,
+          5600,
+          5597,
+          5575
         ]
       },
       {
@@ -129913,17 +129951,6 @@
           5608,
           5603,
           5589
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          5600,
-          5597,
-          5575
         ]
       },
       {
@@ -129986,14 +130013,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 47,
+      "total_mint": 48,
       "direct_action": {
-        "count": 44,
-        "pct": 93.6
+        "count": 45,
+        "pct": 93.8
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 6.4
+        "pct": 6.2
       },
       "untyped": {
         "count": 0,
@@ -130001,9 +130028,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3768,
+      "total_mint": 3769,
       "direct_action": {
-        "count": 3016,
+        "count": 3017,
         "pct": 80.0
       },
       "editorial_alarm": {
@@ -130016,9 +130043,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 15,
+      "citizen": 16,
       "institutional": 56,
-      "citizen_ratio": 0.211,
+      "citizen_ratio": 0.222,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130052,11 +130079,12 @@
         },
         {
           "date": "2026-07-27",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        5628,
         5623,
         5619,
         5618,
