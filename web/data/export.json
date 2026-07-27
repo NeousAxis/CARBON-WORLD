@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T16:06:31.763428+00:00",
-  "total_events": 5651,
+  "generated_at": "2026-07-27T16:36:53.931987+00:00",
+  "total_events": 5652,
   "total_burned": 7687440525,
-  "total_minted": 8165426449,
+  "total_minted": 8165826449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5652,
+      "event_title": "Enviro Groups Appeal NJ DEP’s Misguided NESE Pipeline Approval",
+      "event_url": "https://www.foodandwaterwatch.org/2026/07/27/enviro-groups-appeal-nj-deps-misguided-nese-pipeline-approval/",
+      "event_source": "Food & Water Watch",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -2.64,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The initial approval of the NESE pipeline enables significant climate harm, outweighing the positive appeal action. | The appeal by environmental groups represents a positive legal challenge to a decision that directly undermines climate action and clean energy goals. However, the initial approval of the pipeline constitutes a significant negative action, as it perpetuates foss",
+      "tx_hash": "5tjC17NPNzoRcGk2VdNePHJN6abwLD6RpFUGSzjw6cgkyyedLu49RbDtkdioG3vrL1g2v8h8fhEtsy1rJ5Y9e438",
+      "created_at": "2026-07-27T16:36:48.442295+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Environmental groups file a legal appeal against the approval of the NESE fracked gas pipeline, challenging a decision that enables fossil fuel expansion and undermines climate goals.\", \"affected_sdgs\": [7, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The initial approval of the NESE pipeline by NJ DEP enables fossil fuel infrastructure expansion, increasing greenhouse gas emissions and locking in long-term climate harm.\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5651,
       "event_title": "Why Venezuela is leaving the ICC",
@@ -129983,8 +130006,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 10,
-        "total_amount": 3121150
+        "count": 11,
+        "total_amount": 3521150
       },
       {
         "country": "France",
@@ -130037,8 +130060,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.474,
-        "events": 19
+        "burn_ratio": 0.45,
+        "events": 20
       },
       {
         "region": "Africa",
@@ -130121,7 +130144,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 20758200,
+        "net_minted": 21158200,
         "net_burned": 372000
       }
     ],
@@ -130139,7 +130162,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 69,
+        "negative": 70,
         "event_ids_positive": [
           5631,
           5629,
@@ -130169,6 +130192,7 @@
           5557
         ],
         "event_ids_negative": [
+          5652,
           5651,
           5650,
           5649,
@@ -130400,7 +130424,7 @@
       },
       "PB": {
         "positive": 9,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           5631,
           5613,
@@ -130413,6 +130437,7 @@
           5557
         ],
         "event_ids_negative": [
+          5652,
           5650,
           5649,
           5641,
@@ -130444,14 +130469,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 93.8,
-      "mainstream_pct": 6.2,
-      "total_sources_used": 65,
-      "articles_processed": 95
+      "niche_pct": 93.9,
+      "mainstream_pct": 6.1,
+      "total_sources_used": 66,
+      "articles_processed": 96
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 95,
+      "total_events": 96,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -130515,6 +130540,22 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Energy",
+        "count": 8,
+        "burn_count": 2,
+        "mint_count": 6,
+        "event_ids": [
+          5652,
+          5649,
+          5622,
+          5616,
+          5615,
+          5584,
+          5571,
+          5567
+        ]
+      },
+      {
         "name": "Finance",
         "count": 8,
         "burn_count": 1,
@@ -130528,21 +130569,6 @@
           5597,
           5595,
           5560
-        ]
-      },
-      {
-        "name": "Energy",
-        "count": 7,
-        "burn_count": 2,
-        "mint_count": 5,
-        "event_ids": [
-          5649,
-          5622,
-          5616,
-          5615,
-          5584,
-          5571,
-          5567
         ]
       },
       {
@@ -130649,14 +130675,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 69,
+      "total_mint": 70,
       "direct_action": {
-        "count": 63,
-        "pct": 91.3
+        "count": 64,
+        "pct": 91.4
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 8.7
+        "pct": 8.6
       },
       "untyped": {
         "count": 0,
@@ -130664,9 +130690,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3790,
+      "total_mint": 3791,
       "direct_action": {
-        "count": 3035,
+        "count": 3036,
         "pct": 80.1
       },
       "editorial_alarm": {
@@ -130679,9 +130705,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 25,
+      "citizen": 26,
       "institutional": 70,
-      "citizen_ratio": 0.263,
+      "citizen_ratio": 0.271,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130715,11 +130741,12 @@
         },
         {
           "date": "2026-07-27",
-          "citizen": 10,
+          "citizen": 11,
           "institutional": 14
         }
       ],
       "event_ids_citizen": [
+        5652,
         5650,
         5647,
         5646,
