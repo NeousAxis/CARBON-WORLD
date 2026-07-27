@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T21:06:08.035562+00:00",
-  "total_events": 5662,
+  "generated_at": "2026-07-27T21:36:38.514654+00:00",
+  "total_events": 5663,
   "total_burned": 7688640525,
-  "total_minted": 8177605449,
+  "total_minted": 8177957449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5663,
+      "event_title": "Researchers use hemp, rock dust and biochar to scrub forever chemicals from farm soils",
+      "event_url": "https://www.anthropocenemagazine.org/2026/07/researchers-use-hemp-rock-dust-and-biochar-to-scrub-forever-chemicals-from-farm-soils/?utm_source=rss&utm_medium=rss&utm_campaign=global-farmlands-are-straining-under-a-toxic-chemical-load-researchers-think-they-have-a-solution",
+      "event_source": "Anthropocene Magazine",
+      "decision": "MINT",
+      "amount_crbn": 352000,
+      "final_score": 3.9,
+      "confidence": 7,
+      "justification": "Promising, scalable solution for PFAS remediation with strong SDG alignment, despite research-phase uncertainties. | The Yale study represents a promising advancement in addressing PFAS contamination, a critical environmental and public health issue. While the method aligns with multiple SDGs and planetary boundaries, uncertainties about real-world application and potential ecological trade-offs temper the net positive impact. The ethical balance leans positive due to the potential for scalable,",
+      "tx_hash": "61a15rzmRnrpzUTjZaoEHVz1bmxnXNd1F8ReWiHEYtqX2r2NEqH8WtFsEGK7KQke2KEHUQnoPC4frMTTm6rVK2VV",
+      "created_at": "2026-07-27T21:36:34.587335+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Yale study demonstrates a low-cost, scalable method to remediate PFAS-contaminated farm soils using hemp, rock dust, and biochar, reducing environmental and health risks.\", \"affected_sdgs\": [2, 3, 6, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential to restore contaminated agricultural land, supporting food security (SDG 2) and sustainable land use (SDG 15).\", \"affected_sdgs\": [2, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Reduces reliance on costly conventional cleanup methods, making remediation accessible to smaller farms and developing regions.\", \"affected_sdgs\": [1, 8, 10, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Study is still in research phase; real-world efficacy, scalability, and long-term impacts remain unproven.\", \"affected_sdgs\": [2, 3, 15], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential unintended consequences of large-scale biochar or rock dust application on soil ecosystems or water quality not fully assessed.\", \"affected_sdgs\": [6, 14, 15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 5662,
       "event_title": "US walks out of UN Security Council meeting as France condemns rights vote",
@@ -130236,8 +130259,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 14,
-        "total_amount": 11498150
+        "count": 15,
+        "total_amount": 11850150
       },
       {
         "country": "France",
@@ -130290,8 +130313,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.391,
-        "events": 23
+        "burn_ratio": 0.375,
+        "events": 24
       },
       {
         "region": "Africa",
@@ -130374,7 +130397,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 32937200,
+        "net_minted": 33289200,
         "net_burned": 1572000
       }
     ],
@@ -130392,7 +130415,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           5658,
           5631,
@@ -130423,6 +130446,7 @@
           5557
         ],
         "event_ids_negative": [
+          5663,
           5662,
           5661,
           5660,
@@ -130679,7 +130703,7 @@
       },
       "PB": {
         "positive": 10,
-        "negative": 29,
+        "negative": 30,
         "event_ids_positive": [
           5658,
           5631,
@@ -130693,6 +130717,7 @@
           5557
         ],
         "event_ids_negative": [
+          5663,
           5659,
           5652,
           5650,
@@ -130726,14 +130751,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 92.5,
-      "mainstream_pct": 7.5,
-      "total_sources_used": 67,
-      "articles_processed": 106
+      "niche_pct": 92.6,
+      "mainstream_pct": 7.4,
+      "total_sources_used": 68,
+      "articles_processed": 107
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 106,
+      "total_events": 107,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -130903,6 +130928,16 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          5663,
+          5636
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 2,
         "burn_count": 0,
@@ -130910,15 +130945,6 @@
         "event_ids": [
           5641,
           5566
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5636
         ]
       }
     ],
@@ -130953,14 +130979,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 79,
+      "total_mint": 80,
       "direct_action": {
-        "count": 73,
-        "pct": 92.4
+        "count": 74,
+        "pct": 92.5
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 7.6
+        "pct": 7.5
       },
       "untyped": {
         "count": 0,
@@ -130968,9 +130994,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3800,
+      "total_mint": 3801,
       "direct_action": {
-        "count": 3045,
+        "count": 3046,
         "pct": 80.1
       },
       "editorial_alarm": {
@@ -130983,9 +131009,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 28,
+      "citizen": 29,
       "institutional": 78,
-      "citizen_ratio": 0.264,
+      "citizen_ratio": 0.271,
       "daily": [
         {
           "date": "2026-07-21",
@@ -131019,11 +131045,12 @@
         },
         {
           "date": "2026-07-27",
-          "citizen": 13,
+          "citizen": 14,
           "institutional": 22
         }
       ],
       "event_ids_citizen": [
+        5663,
         5661,
         5660,
         5652,
