@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T05:36:31.423353+00:00",
-  "total_events": 5629,
+  "generated_at": "2026-07-27T06:35:21.907035+00:00",
+  "total_events": 5630,
   "total_burned": 7687088525,
-  "total_minted": 8144918249,
+  "total_minted": 8145068249,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5630,
+      "event_title": "IMF commends Italy's progress on fiscal consolidation, says time to accelerate",
+      "event_url": "https://www.ansa.it/english/news/business/2026/07/24/imf-commends-italys-progress-on-fiscal-consolidation-says-time-to-accelerate_8ff3b437-7786-4a53-b828-f6003128661a.html",
+      "event_source": "ANSA English (Italy)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.2,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] IMF's call to accelerate fiscal consolidation prioritizes economic discipline over social rights, enabling potential harm. | The IMF's commendation of Italy's fiscal progress reflects a positive alignment with economic stability goals (SDG 8, 10, 17), but the call to accelerate consolidation risks entrenching austerity that undermines social rights (SDG 1, 3, 4, 10). The low",
+      "tx_hash": "3jRpwc4iggffjout1C3AKYxN8iG4jQNat8yKaRRnyZDmUqc36tYiuduEowb3AxDxfEXun5pgvhopdNb2eZ7NSvTr",
+      "created_at": "2026-07-27T06:35:18.245755+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": "[{\"description\": \"IMF commends Italy's progress on fiscal consolidation, indicating adherence to responsible economic policies that may reduce debt and improve long-term sustainability\", \"affected_sdgs\": [8, 10, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"IMF's call to 'accelerate' fiscal consolidation may imply austerity measures that could reduce public spending on social programs, healthcare, or education, disproportionately affecting vulnerable populations\", \"affected_sdgs\": [1, 3, 4, 10], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"IMF's forecast of low economic growth (0.5% in 2026 and 2027) suggests weak economic performance, which may limit job creation and social mobility\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 5629,
       "event_title": "Digital Campaigner (bilingual)",
@@ -129496,9 +129519,9 @@
         "total_amount": 1416000
       },
       {
-        "country": "United Kingdom",
+        "country": "Italy",
         "count": 2,
-        "total_amount": 18960
+        "total_amount": 565000
       }
     ],
     "top_countries_burn": [
@@ -129541,8 +129564,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.24,
-        "events": 25
+        "burn_ratio": 0.231,
+        "events": 26
       },
       {
         "region": "Latin America",
@@ -129573,8 +129596,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.76,
-        "events": 25
+        "mint_ratio": 0.769,
+        "events": 26
       },
       {
         "region": "Africa",
@@ -129615,7 +129638,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 250000,
+        "net_minted": 400000,
         "net_burned": 20000
       }
     ],
@@ -129633,7 +129656,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           5629,
           5625,
@@ -129662,6 +129685,7 @@
           5557
         ],
         "event_ids_negative": [
+          5630,
           5628,
           5627,
           5626,
@@ -129714,7 +129738,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 42,
+        "negative": 43,
         "event_ids_positive": [
           5625,
           5620,
@@ -129732,6 +129756,7 @@
           5561
         ],
         "event_ids_negative": [
+          5630,
           5628,
           5627,
           5626,
@@ -129874,14 +129899,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.2,
-      "mainstream_pct": 3.8,
-      "total_sources_used": 53,
-      "articles_processed": 73
+      "niche_pct": 96.3,
+      "mainstream_pct": 3.7,
+      "total_sources_used": 54,
+      "articles_processed": 74
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 73,
+      "total_events": 74,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -129894,6 +129919,15 @@
         "event_ids": [
           5578,
           5561
+        ]
+      },
+      {
+        "name": "IMF",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          5630
         ]
       },
       {
@@ -130039,14 +130073,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 48,
+      "total_mint": 49,
       "direct_action": {
-        "count": 45,
-        "pct": 93.8
+        "count": 46,
+        "pct": 93.9
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 6.2
+        "pct": 6.1
       },
       "untyped": {
         "count": 0,
@@ -130054,10 +130088,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3769,
+      "total_mint": 3770,
       "direct_action": {
-        "count": 3017,
-        "pct": 80.0
+        "count": 3018,
+        "pct": 80.1
       },
       "editorial_alarm": {
         "count": 234,
@@ -130070,8 +130104,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 17,
-      "institutional": 56,
-      "citizen_ratio": 0.233,
+      "institutional": 57,
+      "citizen_ratio": 0.23,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130106,7 +130140,7 @@
         {
           "date": "2026-07-27",
           "citizen": 2,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -130129,6 +130163,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5630,
         5627,
         5626,
         5625,
