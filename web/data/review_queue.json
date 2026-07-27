@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-26T22:06:43.451632+00:00",
-  "total_pending": 1,
+  "generated_at": "2026-07-27T03:36:46.940155+00:00",
+  "total_pending": 2,
   "reviews": [
     {
       "id": 778,
@@ -18,6 +18,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-07-24T15:23:43.112860+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 779,
+      "event_title": "Fires: Holiday camps and scout camps suspended in Gironde",
+      "event_url": "https://www.20minutes.fr/societe/4236349-20260727-incendies-colonies-vacances-camps-scouts-suspendus-gironde?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Suspension of holiday and scout camps reduces risk of fire‑related injuries and deaths in the Gironde region\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Temporary loss of tourism revenue and related jobs for local businesses\", \"affected_sdgs\": [1, 8], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The precautionary suspension safeguards human life and aligns with health, safety and climate goals, outweighing the short‑term economic disruption for local tourism and employment.\", \"snapshot_score\": 9, \"trajectory_score\": 7, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Repeated severe fire seasons forcing frequent suspensions\", \"Significant economic downturn in Gironde tourism sector\", \"Adoption of alternative fire‑mitigation measures reducing need for closures\"], \"revaluation_checkpoint\": \"2028-07-27\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Fire risk declines, alternative mitigation adopted, tourism rebounds, net positive impact\", \"probability\": 0.3, \"score\": 10}, {\"name\": \"B\", \"description\": \"Intermittent fires cause periodic suspensions; lives saved but moderate economic loss\", \"probability\": 0.55, \"score\": 6}, {\"name\": \"C\", \"description\": \"Frequent severe fires lead to chronic suspensions, major tourism collapse and social strain\", \"probability\": 0.15, \"score\": 0}], \"prospective_score\": 5.85, \"final_score\": 6.05, \"decision\": \"BURN\", \"amount_cbwd\": 190000, \"confidence\": 7, \"justification\": \"Protective suspension saves lives despite short‑term economic loss, net positive.\", \"event_scope\": \"regional\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Suspension of holiday camps and scout camps to prevent wildfires\", \"affected_sdgs\": [13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"Ongoing forest fires ravaging the region\", \"affected_sdgs\": [3, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The suspension of holiday camps and scout camps in Gironde is a positive action to prevent wildfires, but the ongoing forest fires in the region have significant negative impacts on the environment and human health.\", \"snapshot_score\": -5.0, \"trajectory_score\": -2.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"change in weather conditions\", \"effectiveness of fire prevention measures\", \"government response to the crisis\"], \"revaluation_checkpoint\": \"2028-10-01\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"effective fire prevention and containment\", \"probability\": 0.3, \"score\": 2}, {\"name\": \"B\", \"description\": \"ongoing fires with moderate damage\", \"probability\": 0.4, \"score\": -4}, {\"name\": \"C\", \"description\": \"catastrophic fires with severe damage\", \"probability\": 0.3, \"score\": -8}], \"prospective_score\": -3.4, \"final_score\": -3.5, \"decision\": \"MINT\", \"amount_cbwd\": 50000, \"confidence\": 6, \"justification\": \"Ongoing forest fires in Gironde have significant negative impacts.\", \"event_scope\": \"regional\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.2, \"confidence\": 8, \"amount_cbwd\": 67600, \"justification\": \"Suspending camps prevents fire spread, safeguards lives and environment, a protective institutional action.\", \"disagreement\": true, \"reason\": \"Analysts conflicted; the prefectural suspension is a protective measure, thus classified as BURN.\"}",
+      "sentinel_concern": "structural: fragile_burn_threshold, analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 67600,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-07-27T03:36:45.664573+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
