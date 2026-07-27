@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T08:07:23.441857+00:00",
-  "total_events": 5637,
+  "generated_at": "2026-07-27T08:37:01.809826+00:00",
+  "total_events": 5638,
   "total_burned": 7687440525,
-  "total_minted": 8153197649,
+  "total_minted": 8153675649,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5638,
+      "event_title": "The Federal Customs Office Plans Restructuring and Elimination of 25 Management Positions",
+      "event_url": "https://www.letemps.ch/articles/l-office-federal-des-douanes-prevoit-une-restructuration-et-la-suppression-de-25-postes-de-cadre",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.96,
+      "confidence": 7,
+      "justification": "Job cuts and institutional disruption outweigh speculative efficiency gains, violating labor rights and undermining stability. | The restructuring of the Federal Customs Office presents a mixed ethical outcome. While the stated goal of improving efficiency and preparedness aligns with institutional effectiveness (SDGs 8, 9, 16), the elimination of 25 management positions raises significant concerns about job security and labor rights (UDHR Article 23, ILO standards). The negative impact on emplo",
+      "tx_hash": "3cU8R5jew7pPyvADrou62QXPYoxyATd7PHZoRRRdaTTi3RHT6yxiuwLS5NhvrWrUNLorZ8UhKRUNg1WBEdZ3Wpw5",
+      "created_at": "2026-07-27T08:36:58.204122+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Restructuring aims to improve efficiency and preparedness of the Federal Customs Office to address current and future challenges, potentially enhancing border security and operational effectiveness.\", \"affected_sdgs\": [8, 9, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Elimination of 25 management positions may lead to job losses, reduced morale, and potential disruption in institutional knowledge and operational continuity.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Internal perception of regression and confusion due to reversal of prior reforms may undermine trust in leadership and institutional stability.\", \"affected_sdgs\": [8, 16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 5637,
       "event_title": "Rubio’s Paranoid Cuba Report Designed to “Justify a Military Attack on Cuba,” Says Democratic Rep.",
@@ -129680,9 +129703,9 @@
         "total_amount": 1426300
       },
       {
-        "country": "Australia",
+        "country": "Switzerland",
         "count": 2,
-        "total_amount": 658100
+        "total_amount": 830000
       }
     ],
     "top_countries_burn": [
@@ -129719,14 +129742,14 @@
         "events": 19
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.25,
-        "events": 28
-      },
-      {
         "region": "Africa",
         "burn_ratio": 0.25,
         "events": 4
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.241,
+        "events": 29
       },
       {
         "region": "Latin America",
@@ -129762,8 +129785,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.75,
-        "events": 28
+        "mint_ratio": 0.759,
+        "events": 29
       }
     ],
     "supply_trend_7d": [
@@ -129799,7 +129822,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 8529400,
+        "net_minted": 9007400,
         "net_burned": 372000
       }
     ],
@@ -129817,7 +129840,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 55,
+        "negative": 56,
         "event_ids_positive": [
           5631,
           5629,
@@ -129847,6 +129870,7 @@
           5557
         ],
         "event_ids_negative": [
+          5638,
           5637,
           5636,
           5635,
@@ -129906,7 +129930,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           5631,
           5625,
@@ -129925,6 +129949,7 @@
           5561
         ],
         "event_ids_negative": [
+          5638,
           5637,
           5635,
           5634,
@@ -129977,11 +130002,12 @@
       },
       "ILO": {
         "positive": 1,
-        "negative": 7,
+        "negative": 8,
         "event_ids_positive": [
           5629
         ],
         "event_ids_negative": [
+          5638,
           5635,
           5624,
           5608,
@@ -130081,14 +130107,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 94.8,
-      "mainstream_pct": 5.2,
-      "total_sources_used": 58,
-      "articles_processed": 81
+      "niche_pct": 94.9,
+      "mainstream_pct": 5.1,
+      "total_sources_used": 59,
+      "articles_processed": 82
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 81,
+      "total_events": 82,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -130101,6 +130127,15 @@
         "event_ids": [
           5578,
           5561
+        ]
+      },
+      {
+        "name": "ILO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          5638
         ]
       },
       {
@@ -130259,14 +130294,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 55,
+      "total_mint": 56,
       "direct_action": {
-        "count": 51,
-        "pct": 92.7
+        "count": 52,
+        "pct": 92.9
       },
       "editorial_alarm": {
         "count": 4,
-        "pct": 7.3
+        "pct": 7.1
       },
       "untyped": {
         "count": 0,
@@ -130274,9 +130309,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3776,
+      "total_mint": 3777,
       "direct_action": {
-        "count": 3023,
+        "count": 3024,
         "pct": 80.1
       },
       "editorial_alarm": {
@@ -130290,8 +130325,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 20,
-      "institutional": 61,
-      "citizen_ratio": 0.247,
+      "institutional": 62,
+      "citizen_ratio": 0.244,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130326,7 +130361,7 @@
         {
           "date": "2026-07-27",
           "citizen": 5,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -130352,6 +130387,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5638,
         5637,
         5636,
         5635,
