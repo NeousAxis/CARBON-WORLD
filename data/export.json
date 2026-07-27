@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-27T23:05:43.221914+00:00",
-  "total_events": 5669,
+  "generated_at": "2026-07-27T23:36:22.841954+00:00",
+  "total_events": 5670,
   "total_burned": 7688640525,
-  "total_minted": 8186953449,
+  "total_minted": 8187953449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5670,
+      "event_title": "STAT+: HIV resurgence is feared as global funding to combat the disease falls 18%",
+      "event_url": "https://www.statnews.com/pharmalot/2026/07/27/hiv-resurgence-is-feared-as-global-fund-to-combat-the-disease-falls-18-percent/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -4.35,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Reduction in global HIV funding directly enables harm by undermining health rights and epidemic control. | The 18% reduction in global HIV/AIDS funding directly undermines SDG 3 (Good Health and Well-being) and SDG 10 (Reduced Inequalities) by limiting access to life-saving treatments and prevention programs. It violates the right to health (UDHR Article 25) and children's righ",
+      "tx_hash": "3FLGTe5tqoNptLK4D9ayDR4qdefHDav7F23omj4xWTk2FYBNHJsbF7gwpYUcsauLhDKvDVaKGXQXnxPz6rHYFKaZ",
+      "created_at": "2026-07-27T23:36:17.873290+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Global funding to combat HIV/AIDS reduced by 18%, weakening prevention, treatment, and research efforts.\", \"affected_sdgs\": [3, 10, 17], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5669,
       "event_title": "American singer D4vd to be tried for killing and dismembering a teenager",
@@ -130535,7 +130558,7 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 42285200,
+        "net_minted": 43285200,
         "net_burned": 1572000
       }
     ],
@@ -130553,7 +130576,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 86,
+        "negative": 87,
         "event_ids_positive": [
           5658,
           5631,
@@ -130584,6 +130607,7 @@
           5557
         ],
         "event_ids_negative": [
+          5670,
           5669,
           5668,
           5667,
@@ -130674,7 +130698,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           5631,
           5625,
@@ -130693,6 +130717,7 @@
           5561
         ],
         "event_ids_negative": [
+          5670,
           5669,
           5667,
           5666,
@@ -130789,7 +130814,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [
           5623,
           5603,
@@ -130797,6 +130822,7 @@
           5580
         ],
         "event_ids_negative": [
+          5670,
           5669,
           5661,
           5660,
@@ -130907,14 +130933,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 91.3,
-      "mainstream_pct": 8.7,
-      "total_sources_used": 69,
-      "articles_processed": 113
+      "niche_pct": 91.4,
+      "mainstream_pct": 8.6,
+      "total_sources_used": 70,
+      "articles_processed": 114
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 113,
+      "total_events": 114,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -130999,6 +131025,24 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Finance",
+        "count": 10,
+        "burn_count": 1,
+        "mint_count": 9,
+        "event_ids": [
+          5670,
+          5667,
+          5649,
+          5645,
+          5642,
+          5632,
+          5626,
+          5597,
+          5595,
+          5560
+        ]
+      },
+      {
         "name": "Energy",
         "count": 9,
         "burn_count": 2,
@@ -131013,23 +131057,6 @@
           5584,
           5571,
           5567
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 9,
-        "burn_count": 1,
-        "mint_count": 8,
-        "event_ids": [
-          5667,
-          5649,
-          5645,
-          5642,
-          5632,
-          5626,
-          5597,
-          5595,
-          5560
         ]
       },
       {
@@ -131137,14 +131164,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 86,
+      "total_mint": 87,
       "direct_action": {
-        "count": 80,
-        "pct": 93.0
+        "count": 81,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 7.0
+        "pct": 6.9
       },
       "untyped": {
         "count": 0,
@@ -131152,9 +131179,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3807,
+      "total_mint": 3808,
       "direct_action": {
-        "count": 3052,
+        "count": 3053,
         "pct": 80.2
       },
       "editorial_alarm": {
@@ -131168,8 +131195,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 31,
-      "institutional": 82,
-      "citizen_ratio": 0.274,
+      "institutional": 83,
+      "citizen_ratio": 0.272,
       "daily": [
         {
           "date": "2026-07-21",
@@ -131204,7 +131231,7 @@
         {
           "date": "2026-07-27",
           "citizen": 16,
-          "institutional": 26
+          "institutional": 27
         }
       ],
       "event_ids_citizen": [
@@ -131241,6 +131268,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5670,
         5669,
         5666,
         5665,
