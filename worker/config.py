@@ -43,12 +43,17 @@ GROQ_FAST_MODEL: str = os.getenv("GROQ_FAST_MODEL", "openai/gpt-oss-20b")
 CEREBRAS_API_KEY: str = os.getenv("CEREBRAS_API_KEY", "")
 CEREBRAS_MODEL: str = os.getenv("CEREBRAS_MODEL", "gpt-oss-120b")
 
-# Mistral settings — third independent free-tier bucket (added 2026-05-05)
-# Used as the primary route for Analyst B; Cerebras becomes the fallback.
-# Free tier "Experiment" allows ~1 RPS and a generous monthly token budget,
-# zero cost as long as no payment method is added on the Mistral console.
+# Mistral settings — paid pay-as-you-go bucket (2026-07-27). Primary route for
+# Analyst B and the reliable fallback behind Groq for the deep agents.
+# MISTRAL_MODEL is the deep model (analyst / reconciler / sentinel / Analyst B):
+# Mistral Large 3 is the flagship AND the cheapest of the capable tier
+# ($0.5/$1.5 per M tok, vs Medium 3.5 at $1.5/$7.5).
+# MISTRAL_FAST_MODEL is the classifier's own model, mirroring GROQ_FAST_MODEL:
+# triage is shallow and high-volume, so Ministral 8B ($0.15/$0.15) keeps that
+# cost down without touching analysis quality.
 MISTRAL_API_KEY: str = os.getenv("MISTRAL_API_KEY", "")
-MISTRAL_MODEL: str = os.getenv("MISTRAL_MODEL", "mistral-small-latest")
+MISTRAL_MODEL: str = os.getenv("MISTRAL_MODEL", "mistral-large-latest")
+MISTRAL_FAST_MODEL: str = os.getenv("MISTRAL_FAST_MODEL", "ministral-8b-latest")
 
 # LLM Models — two-tier system (Ollama model names)
 CLASSIFIER_MODEL: str = os.getenv("CLASSIFIER_MODEL", "qwen3:14b")
