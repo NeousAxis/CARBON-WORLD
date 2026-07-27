@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-27T18:38:01.006335+00:00",
-  "total_events": 5657,
-  "total_burned": 7687440525,
-  "total_minted": 8168128449,
+  "generated_at": "2026-07-27T19:08:16.452560+00:00",
+  "total_events": 5659,
+  "total_burned": 7688640525,
+  "total_minted": 8169628449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5659,
+      "event_title": "Countries evaluate for the first time the progress of global biodiversity targets",
+      "event_url": "https://oeco.org.br/noticias/paises-avaliam-pela-primeira-vez-o-progresso-das-metas-globais-de-biodiversidade/",
+      "event_source": "O Eco (Brazil env)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 2.14,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] First global biodiversity evaluation is a step forward but lacks enforcement, enabling potential harm. | The evaluation represents a critical step in global biodiversity governance, aligning with SDGs 14, 15, and 17 by promoting transparency and international cooperation. However, the lack of binding enforcement and potential political compromises could limit its effectivene",
+      "tx_hash": "3koHf9FqexwGdQCAK3GgukY9ZoMZCVL5cyE3Bz4Mjq1UtnitbDRpGep7Kebz9m51YDRdWQEAAWCcMwpt9PPkiex9",
+      "created_at": "2026-07-27T19:08:12.659030+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"First formal evaluation of progress toward the 23 global biodiversity targets under the Kunming-Montreal Global Biodiversity Framework, demonstrating institutional accountability and transparency.\", \"affected_sdgs\": [14, 15, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Multilateral process involving Parties to the Convention on Biological Diversity, fostering international cooperation and partnerships for biodiversity conservation.\", \"affected_sdgs\": [17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Evaluation may reveal insufficient progress or lack of binding enforcement mechanisms, risking continued biodiversity loss without concrete corrective actions.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential for political delays or watered-down commitments during negotiations, undermining the urgency of biodiversity protection.\", \"affected_sdgs\": [14, 15, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 46000
+    },
+    {
+      "id": 5658,
+      "event_title": "EU bans large companies from destroying unsold clothes, shoes, and accessories",
+      "event_url": "https://mastodon.social/@greenpeace/116992520633687985",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "BURN",
+      "amount_crbn": 1200000,
+      "final_score": 6.12,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] EU ban on destroying unsold textiles is a strong climate and waste-reduction action with broad positive impact. | The EU's ban on destroying unsold textiles is a significant step toward reducing waste and promoting circular economy practices, directly supporting SDGs 12, 13, 14, and 15. While the exclusion of SMEs and potential enforcement gaps are notable limitations, the poli",
+      "tx_hash": "2CcKuyfX83mytYUEekjQQEvzReDDZpugHqqgb7j1DYFTpmezM4t6tt8GBQr4QzVyrKbFzHAn7AfRd7qqxkNYLxcS",
+      "created_at": "2026-07-27T19:08:10.499268+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU bans large companies from destroying unsold textiles, mandating reuse, repair, donation, or resale instead, directly reducing waste and promoting circular economy practices.\", \"affected_sdgs\": [12, 13, 14, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Policy targets fast fashion industry, a major contributor to pollution and resource depletion, aligning with responsible consumption and climate action goals.\", \"affected_sdgs\": [12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Encourages corporate accountability and shifts industry norms toward sustainability, potentially influencing global supply chains.\", \"affected_sdgs\": [8, 9, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Excludes small and medium-sized enterprises (SMEs), potentially creating an uneven playing field and limiting overall impact.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Risk of non-compliance or loopholes (e.g., misclassification of waste, offshoring destruction) without robust enforcement mechanisms.\", \"affected_sdgs\": [12, 16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 5657,
       "event_title": "Chinese university launches probe into girl’s gene-editing death",
@@ -130259,8 +130305,8 @@
       },
       {
         "date": "2026-07-27",
-        "net_minted": 23460200,
-        "net_burned": 372000
+        "net_minted": 24960200,
+        "net_burned": 1572000
       }
     ],
     "event_of_the_day": {
@@ -130276,9 +130322,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
-        "negative": 75,
+        "positive": 27,
+        "negative": 76,
         "event_ids_positive": [
+          5658,
           5631,
           5629,
           5625,
@@ -130307,6 +130354,7 @@
           5557
         ],
         "event_ids_negative": [
+          5659,
           5657,
           5656,
           5655,
@@ -130552,9 +130600,10 @@
         ]
       },
       "PB": {
-        "positive": 9,
-        "negative": 28,
+        "positive": 10,
+        "negative": 29,
         "event_ids_positive": [
+          5658,
           5631,
           5613,
           5609,
@@ -130566,6 +130615,7 @@
           5557
         ],
         "event_ids_negative": [
+          5659,
           5652,
           5650,
           5649,
@@ -130601,15 +130651,26 @@
       "niche_pct": 92.5,
       "mainstream_pct": 7.5,
       "total_sources_used": 67,
-      "articles_processed": 101
+      "articles_processed": 103
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 101,
+      "total_events": 103,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 3,
+        "burn_count": 2,
+        "mint_count": 1,
+        "event_ids": [
+          5658,
+          5578,
+          5561
+        ]
+      },
       {
         "name": "ICC",
         "count": 3,
@@ -130619,16 +130680,6 @@
           5653,
           5651,
           5588
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 2,
-        "burn_count": 1,
-        "mint_count": 1,
-        "event_ids": [
-          5578,
-          5561
         ]
       },
       {
@@ -130775,9 +130826,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 27,
       "direct_action": {
-        "count": 26,
+        "count": 27,
         "pct": 100.0
       },
       "editorial_consciousness": {
@@ -130790,9 +130841,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1853,
+      "total_burn": 1854,
       "direct_action": {
-        "count": 1446,
+        "count": 1447,
         "pct": 78.0
       },
       "editorial_consciousness": {
@@ -130805,14 +130856,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 75,
+      "total_mint": 76,
       "direct_action": {
-        "count": 69,
-        "pct": 92.0
+        "count": 70,
+        "pct": 92.1
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 8.0
+        "pct": 7.9
       },
       "untyped": {
         "count": 0,
@@ -130820,9 +130871,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3796,
+      "total_mint": 3797,
       "direct_action": {
-        "count": 3041,
+        "count": 3042,
         "pct": 80.1
       },
       "editorial_alarm": {
@@ -130836,8 +130887,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 26,
-      "institutional": 75,
-      "citizen_ratio": 0.257,
+      "institutional": 77,
+      "citizen_ratio": 0.252,
       "daily": [
         {
           "date": "2026-07-21",
@@ -130872,7 +130923,7 @@
         {
           "date": "2026-07-27",
           "citizen": 11,
-          "institutional": 19
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -130904,6 +130955,8 @@
         5557
       ],
       "event_ids_institutional": [
+        5659,
+        5658,
         5657,
         5656,
         5655,
