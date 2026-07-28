@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-28T03:06:46.809066+00:00",
-  "total_events": 5678,
+  "generated_at": "2026-07-28T03:36:56.201777+00:00",
+  "total_events": 5679,
   "total_burned": 7688640525,
-  "total_minted": 8191464449,
+  "total_minted": 8191503249,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5679,
+      "event_title": "New York just delivered $189 million in summer food assistance to nearly 1.6 million children this summer, covering the gap left when free school lunch disappears every June",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1v8fxwp/new_york_just_delivered_189_million_in_summer/",
+      "event_source": "Reddit r/UpliftingNews",
+      "decision": "MINT",
+      "amount_crbn": 38800,
+      "final_score": 3.36,
+      "confidence": 8,
+      "justification": "Direct reduction of child hunger and inequality during a critical period outweighs temporary and systemic limitations. | The program represents a significant positive intervention to reduce child hunger and inequality during a critical period, aligning strongly with SDGs 1, 2, and 10 and upholding rights under the UDHR and CRC. However, its temporary nature and reliance on state funding limit its long-term impact and introduce ethical concerns about sustainability and systemic exclusion.",
+      "tx_hash": "4FyGb6nyTWi9pTbq7pQ8Mdm1qd71pMPKBNXUcrsFfFNjrN8UgucHtwaK9pDegnX7yFTyom2Hwkp8sXwh5hGBjzZt",
+      "created_at": "2026-07-28T03:36:51.271805+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"New York State allocated $189 million to provide summer food assistance to nearly 1.6 million children, directly addressing food insecurity during the school break.\", \"affected_sdgs\": [1, 2, 3, 4, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The program is temporary and does not address systemic gaps in year-round food security or broader poverty alleviation, leaving children vulnerable outside the summer period.\", \"affected_sdgs\": [1, 2, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 27\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Dependence on state funding introduces fragility; future budget cuts or political shifts could disrupt the program, creating uncertainty for beneficiaries.\", \"affected_sdgs\": [1, 2, 16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 38800
+    },
     {
       "id": 5678,
       "event_title": "Haiti to hold presidential and legislative elections by year-end under security conditions",
@@ -130604,8 +130627,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 20,
-        "total_amount": 20374150
+        "count": 21,
+        "total_amount": 20412950
       },
       {
         "country": "France",
@@ -130658,8 +130681,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.31,
-        "events": 29
+        "burn_ratio": 0.3,
+        "events": 30
       },
       {
         "region": "Europe",
@@ -130742,7 +130765,7 @@
       },
       {
         "date": "2026-07-28",
-        "net_minted": 3511000,
+        "net_minted": 3549800,
         "net_burned": 0
       }
     ],
@@ -130760,7 +130783,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 95,
+        "negative": 96,
         "event_ids_positive": [
           5658,
           5631,
@@ -130791,6 +130814,7 @@
           5557
         ],
         "event_ids_negative": [
+          5679,
           5678,
           5677,
           5676,
@@ -130890,7 +130914,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 81,
+        "negative": 82,
         "event_ids_positive": [
           5631,
           5625,
@@ -130909,6 +130933,7 @@
           5561
         ],
         "event_ids_negative": [
+          5679,
           5678,
           5677,
           5676,
@@ -131015,7 +131040,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [
           5623,
           5603,
@@ -131023,6 +131048,7 @@
           5580
         ],
         "event_ids_negative": [
+          5679,
           5675,
           5671,
           5670,
@@ -131144,11 +131170,11 @@
       "niche_pct": 90.0,
       "mainstream_pct": 10.0,
       "total_sources_used": 70,
-      "articles_processed": 122
+      "articles_processed": 123
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 122,
+      "total_events": 123,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -131236,10 +131262,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 11,
+        "count": 12,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          5679,
           5672,
           5670,
           5667,
@@ -131376,14 +131403,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 95,
+      "total_mint": 96,
       "direct_action": {
-        "count": 89,
-        "pct": 93.7
+        "count": 90,
+        "pct": 93.8
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 6.3
+        "pct": 6.2
       },
       "untyped": {
         "count": 0,
@@ -131391,9 +131418,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3816,
+      "total_mint": 3817,
       "direct_action": {
-        "count": 3061,
+        "count": 3062,
         "pct": 80.2
       },
       "editorial_alarm": {
@@ -131407,8 +131434,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 31,
-      "institutional": 91,
-      "citizen_ratio": 0.254,
+      "institutional": 92,
+      "citizen_ratio": 0.252,
       "daily": [
         {
           "date": "2026-07-22",
@@ -131443,7 +131470,7 @@
         {
           "date": "2026-07-28",
           "citizen": 0,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -131480,6 +131507,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5679,
         5678,
         5677,
         5676,
