@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-28T14:06:47.223674+00:00",
-  "total_events": 5700,
-  "total_burned": 7688980025,
+  "generated_at": "2026-07-28T14:36:52.656956+00:00",
+  "total_events": 5701,
+  "total_burned": 7689805025,
   "total_minted": 8199740239,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5701,
+      "event_title": "Analysis: Wind and solar power overtake fossil fuels in Germany for first time ever",
+      "event_url": "https://www.carbonbrief.org/analysis-wind-and-solar-power-overtake-fossil-fuels-in-germany-for-first-time-ever",
+      "event_source": "Carbon Brief",
+      "decision": "BURN",
+      "amount_crbn": 825000,
+      "final_score": 6.17,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Historic milestone in renewable energy adoption with systemic climate benefits outweighing transitional challenges. | The milestone represents a significant positive shift toward sustainable energy, directly advancing climate action and clean energy goals. While economic and technical challenges remain, they are secondary to the systemic benefits of reduced emissions and renewa",
+      "tx_hash": "4Wdu1HjSqdnM6HgtC5HaMTAer24LgTCVHpkwhZckodRvV4FG7S7pcP9bkgisxyPBPByPz484jBzx9qn69qaoWJ88",
+      "created_at": "2026-07-28T14:36:47.959639+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Germany's electricity generation from wind and solar surpassed fossil fuels for the first time, marking a concrete shift toward renewable energy adoption.\", \"affected_sdgs\": [7, 13, 11, 12], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Reduction in fossil fuel dependence directly contributes to lower greenhouse gas emissions, aligning with climate action goals.\", \"affected_sdgs\": [13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Demonstrates feasibility of large-scale renewable energy integration, serving as a model for other nations and accelerating global energy transition momentum.\", \"affected_sdgs\": [7, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential short-term economic disruption for fossil fuel-dependent industries and workers, risking job losses without adequate transition policies.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Intermittency of wind and solar may require backup fossil fuel capacity or energy storage solutions, potentially delaying full decarbonization.\", \"affected_sdgs\": [7, 13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 5700,
       "event_title": "Switzerland's populists up efforts to limit immigration after vote defeat",
@@ -131146,6 +131169,11 @@
         "total_amount": 1780740
       },
       {
+        "country": "Germany",
+        "count": 2,
+        "total_amount": 1429000
+      },
+      {
         "country": "Mexico",
         "count": 2,
         "total_amount": 608600
@@ -131154,11 +131182,6 @@
         "country": "Poland",
         "count": 2,
         "total_amount": 654000
-      },
-      {
-        "country": "France",
-        "count": 1,
-        "total_amount": 352000
       }
     ],
     "top_regions_sustainable": [
@@ -131169,8 +131192,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.156,
-        "events": 45
+        "burn_ratio": 0.174,
+        "events": 46
       },
       {
         "region": "Africa",
@@ -131249,7 +131272,7 @@
       {
         "date": "2026-07-28",
         "net_minted": 11786790,
-        "net_burned": 339500
+        "net_burned": 1164500
       }
     ],
     "event_of_the_day": {
@@ -131265,9 +131288,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 29,
+        "positive": 30,
         "negative": 115,
         "event_ids_positive": [
+          5701,
           5690,
           5680,
           5658,
@@ -131417,9 +131441,10 @@
         ]
       },
       "UDHR": {
-        "positive": 16,
+        "positive": 17,
         "negative": 100,
         "event_ids_positive": [
+          5701,
           5690,
           5631,
           5625,
@@ -131660,9 +131685,10 @@
         ]
       },
       "PB": {
-        "positive": 11,
+        "positive": 12,
         "negative": 40,
         "event_ids_positive": [
+          5701,
           5680,
           5658,
           5631,
@@ -131720,14 +131746,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 88.2,
-      "mainstream_pct": 11.8,
-      "total_sources_used": 76,
-      "articles_processed": 144
+      "niche_pct": 88.3,
+      "mainstream_pct": 11.7,
+      "total_sources_used": 77,
+      "articles_processed": 145
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 144,
+      "total_events": 145,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -131835,10 +131861,11 @@
       },
       {
         "name": "Energy",
-        "count": 10,
-        "burn_count": 2,
+        "count": 11,
+        "burn_count": 3,
         "mint_count": 8,
         "event_ids": [
+          5701,
           5686,
           5668,
           5652,
@@ -131933,14 +131960,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 29,
+      "total_burn": 30,
       "direct_action": {
         "count": 29,
-        "pct": 100.0
+        "pct": 96.7
       },
       "editorial_consciousness": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 3.3
       },
       "untyped": {
         "count": 0,
@@ -131948,14 +131975,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1856,
+      "total_burn": 1857,
       "direct_action": {
         "count": 1449,
-        "pct": 78.1
+        "pct": 78.0
       },
       "editorial_consciousness": {
-        "count": 140,
-        "pct": 7.5
+        "count": 141,
+        "pct": 7.6
       },
       "untyped": {
         "count": 267,
@@ -131993,9 +132020,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 38,
+      "citizen": 39,
       "institutional": 106,
-      "citizen_ratio": 0.264,
+      "citizen_ratio": 0.269,
       "daily": [
         {
           "date": "2026-07-22",
@@ -132029,11 +132056,12 @@
         },
         {
           "date": "2026-07-28",
-          "citizen": 7,
+          "citizen": 8,
           "institutional": 23
         }
       ],
       "event_ids_citizen": [
+        5701,
         5697,
         5692,
         5690,
