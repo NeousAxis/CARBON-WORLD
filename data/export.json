@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-28T12:39:41.054466+00:00",
-  "total_events": 5697,
+  "generated_at": "2026-07-28T13:08:02.856780+00:00",
+  "total_events": 5698,
   "total_burned": 7688980025,
-  "total_minted": 8198099239,
+  "total_minted": 8199099239,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5698,
+      "event_title": "Oman presents Iran with Gulf-backed plan for voluntary fees to use Hormuz",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/oman-presents-iran-gulf-backed-plan-voluntary-fees-use-hormuz",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -2.05,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Proposal risks enabling trade barriers and undermining maritime rights, outweighing diplomatic benefits. | The proposal reflects a positive step toward regional diplomacy and conflict de-escalation, aligning with SDGs 16 and 17. However, the lack of a binding framework and the introduction of 'voluntary fees' risk creating economic inequities and undermining international marit",
+      "tx_hash": "2JHD3koBBTzZtZRoqmeVRnui9j3ekBUH5RVYr7tkAwgaGwnWfKWkkrabqMxJAa62CoRKcdRN5nacCWwY3Rinx6nK",
+      "created_at": "2026-07-28T13:07:56.828665+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Proposal of a diplomatic plan to manage the Strait of Hormuz, potentially reducing conflict-related disruptions to global trade and maritime security.\", \"affected_sdgs\": [8, 9, 16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Involvement of regional stakeholders (Gulf states) in conflict de-escalation, fostering multilateral cooperation and reducing risks of armed confrontation.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential for 'voluntary fees' to evolve into de facto tolls, imposing financial burdens on global shipping and disproportionately affecting low-income countries reliant on trade.\", \"affected_sdgs\": [8, 10, 12], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of transparency or binding legal framework could enable arbitrary enforcement, undermining freedom of navigation (UDHR Article 13) and international maritime law.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 13\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of regional power consolidation by Gulf states, potentially sidelining non-Gulf stakeholders (e.g., Iran, global shipping nations) and exacerbating geopolitical tensions.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UNDRIP (if indigenous coastal communities are excluded)\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5697,
       "event_title": "Honduran peasant organizations denounce the decree that legalizes land dispossession",
@@ -131179,7 +131202,7 @@
       },
       {
         "date": "2026-07-28",
-        "net_minted": 10145790,
+        "net_minted": 11145790,
         "net_burned": 339500
       }
     ],
@@ -131197,7 +131220,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 29,
-        "negative": 112,
+        "negative": 113,
         "event_ids_positive": [
           5690,
           5680,
@@ -131230,6 +131253,7 @@
           5557
         ],
         "event_ids_negative": [
+          5698,
           5697,
           5696,
           5695,
@@ -131346,7 +131370,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 97,
+        "negative": 98,
         "event_ids_positive": [
           5690,
           5631,
@@ -131366,6 +131390,7 @@
           5561
         ],
         "event_ids_negative": [
+          5698,
           5697,
           5696,
           5695,
@@ -131530,12 +131555,13 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           5623,
           5558
         ],
         "event_ids_negative": [
+          5698,
           5697,
           5692,
           5686,
@@ -131643,11 +131669,11 @@
       "niche_pct": 88.2,
       "mainstream_pct": 11.8,
       "total_sources_used": 76,
-      "articles_processed": 141
+      "articles_processed": 142
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 141,
+      "total_events": 142,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -131772,6 +131798,21 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          5698,
+          5650,
+          5635,
+          5628,
+          5600,
+          5597,
+          5575
+        ]
+      },
+      {
         "name": "Construction",
         "count": 7,
         "burn_count": 2,
@@ -131799,20 +131840,6 @@
           5612,
           5606,
           5591
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 6,
-        "burn_count": 0,
-        "mint_count": 6,
-        "event_ids": [
-          5650,
-          5635,
-          5628,
-          5600,
-          5597,
-          5575
         ]
       },
       {
@@ -131880,14 +131907,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 112,
+      "total_mint": 113,
       "direct_action": {
-        "count": 106,
-        "pct": 94.6
+        "count": 107,
+        "pct": 94.7
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 5.4
+        "pct": 5.3
       },
       "untyped": {
         "count": 0,
@@ -131895,9 +131922,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3833,
+      "total_mint": 3834,
       "direct_action": {
-        "count": 3078,
+        "count": 3079,
         "pct": 80.3
       },
       "editorial_alarm": {
@@ -131911,8 +131938,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 38,
-      "institutional": 103,
-      "citizen_ratio": 0.27,
+      "institutional": 104,
+      "citizen_ratio": 0.268,
       "daily": [
         {
           "date": "2026-07-22",
@@ -131947,7 +131974,7 @@
         {
           "date": "2026-07-28",
           "citizen": 7,
-          "institutional": 20
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -131991,6 +132018,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5698,
         5696,
         5695,
         5694,
