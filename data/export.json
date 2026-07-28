@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-28T02:37:04.068894+00:00",
-  "total_events": 5677,
+  "generated_at": "2026-07-28T03:06:46.809066+00:00",
+  "total_events": 5678,
   "total_burned": 7688640525,
-  "total_minted": 8191064449,
+  "total_minted": 8191464449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5678,
+      "event_title": "Haiti to hold presidential and legislative elections by year-end under security conditions",
+      "event_url": "https://www.france24.com/fr/am%C3%A9riques/20260728-haiti-elections-presidentielle-legislatives-fin-annee-condition-securite-violences-gangs",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -2.4,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Conditional elections without a security plan risk enabling instability and violating democratic rights. | The announcement of elections is a positive step toward restoring democratic processes (SDG 16) and partnerships (SDG 17), but the conditional security requirement introduces significant uncertainty. The lack of a clear security strategy risks perpetuating instability, vio",
+      "tx_hash": "nyaDuScf2s62dTuJzxdiNf5hvhbEX3rP5BJwLRpXS6gqayDfKqzBFS424eFdfCQusiEGKDWswoVLyhJSiSHGit1",
+      "created_at": "2026-07-28T03:06:41.943876+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Haiti",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Announcement of a concrete electoral calendar for presidential and legislative elections in Haiti, signaling a step toward democratic governance and political stability.\", \"affected_sdgs\": [16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Elections are conditional on 'an acceptable security climate,' which remains highly uncertain given ongoing gang violence and institutional fragility, risking delayed or failed implementation.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"No concrete security plan or enforcement mechanism is outlined, potentially enabling further impunity for armed groups and undermining civic participation.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 20\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5677,
       "event_title": "Haiti: authorities announce elections at the end of the year, if security conditions allow",
@@ -130650,8 +130673,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.077,
-        "events": 13
+        "burn_ratio": 0.071,
+        "events": 14
       },
       {
         "region": "Asia",
@@ -130677,8 +130700,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.923,
-        "events": 13
+        "mint_ratio": 0.929,
+        "events": 14
       },
       {
         "region": "Africa",
@@ -130719,7 +130742,7 @@
       },
       {
         "date": "2026-07-28",
-        "net_minted": 3111000,
+        "net_minted": 3511000,
         "net_burned": 0
       }
     ],
@@ -130737,7 +130760,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 94,
+        "negative": 95,
         "event_ids_positive": [
           5658,
           5631,
@@ -130768,6 +130791,7 @@
           5557
         ],
         "event_ids_negative": [
+          5678,
           5677,
           5676,
           5675,
@@ -130866,7 +130890,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           5631,
           5625,
@@ -130885,6 +130909,7 @@
           5561
         ],
         "event_ids_negative": [
+          5678,
           5677,
           5676,
           5675,
@@ -131119,11 +131144,11 @@
       "niche_pct": 90.0,
       "mainstream_pct": 10.0,
       "total_sources_used": 70,
-      "articles_processed": 121
+      "articles_processed": 122
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 121,
+      "total_events": 122,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -131351,14 +131376,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 94,
+      "total_mint": 95,
       "direct_action": {
-        "count": 88,
-        "pct": 93.6
+        "count": 89,
+        "pct": 93.7
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 6.4
+        "pct": 6.3
       },
       "untyped": {
         "count": 0,
@@ -131366,9 +131391,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3815,
+      "total_mint": 3816,
       "direct_action": {
-        "count": 3060,
+        "count": 3061,
         "pct": 80.2
       },
       "editorial_alarm": {
@@ -131382,8 +131407,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 31,
-      "institutional": 90,
-      "citizen_ratio": 0.256,
+      "institutional": 91,
+      "citizen_ratio": 0.254,
       "daily": [
         {
           "date": "2026-07-22",
@@ -131418,7 +131443,7 @@
         {
           "date": "2026-07-28",
           "citizen": 0,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -131455,6 +131480,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5678,
         5677,
         5676,
         5675,
