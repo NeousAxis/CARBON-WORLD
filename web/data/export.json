@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T16:06:53.533373+00:00",
-  "total_events": 5780,
+  "generated_at": "2026-07-29T16:38:17.029600+00:00",
+  "total_events": 5781,
   "total_burned": 7701207025,
-  "total_minted": 8287649389,
+  "total_minted": 8288149389,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5781,
+      "event_title": "US sanctions Chinese, Hong Kong shipping firms over Iranian oil deliveries",
+      "event_url": "https://www.scmp.com/news/us/article/3362307/us-sanctions-chinese-hong-kong-shipping-firms-over-iranian-oil-deliveries?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.22,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Sanctions enable enforcement but risk economic harm, geopolitical instability, and sovereignty violations. | The sanctions enforce existing legal frameworks against Iran but carry significant collateral damage, including economic harm to third parties and geopolitical instability. The action prioritizes short-term enforcement over long-term diplomatic and economic stability, wi",
+      "tx_hash": "3f3AUh16GjCd3YMZcfbHdyJfb2mq8kjd3cCZutfip3zbS3cBZ7neGALKFkqUTJVJQXu3tuEdrCWx1WaMYyr1kgfH",
+      "created_at": "2026-07-29T16:38:11.796100+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US imposes sanctions on entities facilitating Iranian oil deliveries, aiming to enforce existing sanctions and curb Iran's revenue from oil exports.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sanctions may disrupt global shipping and trade, potentially harming innocent third-party businesses and workers in China and Hong Kong.\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Sanctions risk escalating geopolitical tensions, undermining diplomatic efforts for regional stability and climate cooperation.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Targeting entities for compliance with US sanctions may set a precedent for extraterritorial enforcement, potentially violating sovereignty norms under international law.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5780,
       "event_title": "Germany defends deporting non-criminal to Afghanistan",
@@ -132950,8 +132973,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 40,
-        "total_amount": 29855050
+        "count": 41,
+        "total_amount": 30355050
       },
       {
         "country": "France",
@@ -133004,8 +133027,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.231,
-        "events": 52
+        "burn_ratio": 0.226,
+        "events": 53
       },
       {
         "region": "Africa",
@@ -133088,7 +133111,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 78164350,
+        "net_minted": 78664350,
         "net_burned": 2000000
       }
     ],
@@ -133106,7 +133129,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 184,
+        "negative": 185,
         "event_ids_positive": [
           5760,
           5750,
@@ -133149,6 +133172,7 @@
           5557
         ],
         "event_ids_negative": [
+          5781,
           5780,
           5779,
           5778,
@@ -133337,7 +133361,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 160,
+        "negative": 161,
         "event_ids_positive": [
           5760,
           5750,
@@ -133361,6 +133385,7 @@
           5561
         ],
         "event_ids_negative": [
+          5781,
           5780,
           5779,
           5778,
@@ -133798,14 +133823,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 80.0,
-      "mainstream_pct": 20.0,
+      "niche_pct": 78.9,
+      "mainstream_pct": 21.1,
       "total_sources_used": 90,
-      "articles_processed": 224
+      "articles_processed": 225
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 224,
+      "total_events": 225,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -133898,6 +133923,32 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Energy",
+        "count": 18,
+        "burn_count": 5,
+        "mint_count": 13,
+        "event_ids": [
+          5781,
+          5763,
+          5747,
+          5739,
+          5730,
+          5723,
+          5715,
+          5701,
+          5686,
+          5668,
+          5652,
+          5649,
+          5622,
+          5616,
+          5615,
+          5584,
+          5571,
+          5567
+        ]
+      },
+      {
         "name": "Defense",
         "count": 18,
         "burn_count": 0,
@@ -133946,31 +133997,6 @@
           5597,
           5595,
           5560
-        ]
-      },
-      {
-        "name": "Energy",
-        "count": 17,
-        "burn_count": 5,
-        "mint_count": 12,
-        "event_ids": [
-          5763,
-          5747,
-          5739,
-          5730,
-          5723,
-          5715,
-          5701,
-          5686,
-          5668,
-          5652,
-          5649,
-          5622,
-          5616,
-          5615,
-          5584,
-          5571,
-          5567
         ]
       },
       {
@@ -134086,9 +134112,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 185,
+      "total_mint": 186,
       "direct_action": {
-        "count": 174,
+        "count": 175,
         "pct": 94.1
       },
       "editorial_alarm": {
@@ -134101,9 +134127,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3906,
+      "total_mint": 3907,
       "direct_action": {
-        "count": 3146,
+        "count": 3147,
         "pct": 80.5
       },
       "editorial_alarm": {
@@ -134117,8 +134143,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 60,
-      "institutional": 164,
-      "citizen_ratio": 0.268,
+      "institutional": 165,
+      "citizen_ratio": 0.267,
       "daily": [
         {
           "date": "2026-07-23",
@@ -134153,7 +134179,7 @@
         {
           "date": "2026-07-29",
           "citizen": 11,
-          "institutional": 40
+          "institutional": 41
         }
       ],
       "event_ids_citizen": [
@@ -134219,6 +134245,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5781,
         5780,
         5779,
         5778,
