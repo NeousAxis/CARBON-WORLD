@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T13:37:19.072495+00:00",
-  "total_events": 5775,
+  "generated_at": "2026-07-29T14:08:17.785529+00:00",
+  "total_events": 5776,
   "total_burned": 7701207025,
-  "total_minted": 8285505689,
+  "total_minted": 8285730689,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5776,
+      "event_title": "South Africa: SAHRC Calls for Action Following Wastewater Pollution Finding",
+      "event_url": "https://allafrica.com/stories/202607290388.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": 2.81,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] While the SAHRC's directive is a positive enforcement action, pre-existing harm and reactive governance tilt the balance negatively. | The SAHRC's directive is a positive enforcement action that holds a municipality accountable for environmental harm, aligning with SDGs 6, 13, 14, and 16. However, the pre-existing pollution and reactive nature of the intervention highlight syst",
+      "tx_hash": "67a5bYSEdR5g6LMkGKpjCtKswaqiz7rXdNGDzRsWbL2tAxooVBmP8DWuEb5xp8bDnQLHzxZQaueKs1UEz1FpS4iy",
+      "created_at": "2026-07-29T14:08:10.859115+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"SAHRC directs Buffalo City Metropolitan Municipality to submit an emergency intervention plan to address wastewater pollution, enforcing accountability for environmental harm.\", \"affected_sdgs\": [6, 13, 14, 15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The pollution has already caused significant contamination of rivers, estuaries, and coastal waters, indicating prior inaction and ongoing environmental degradation.\", \"affected_sdgs\": [6, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"The directive is reactive rather than preventive, suggesting systemic delays in addressing environmental violations.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 5775,
       "event_title": "FIFA project: Emergency meeting convened by European bodies",
@@ -132894,8 +132917,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.214,
-        "events": 14
+        "burn_ratio": 0.2,
+        "events": 15
       },
       {
         "region": "Europe",
@@ -132973,7 +132996,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 76020650,
+        "net_minted": 76245650,
         "net_burned": 2000000
       }
     ],
@@ -132991,7 +133014,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 179,
+        "negative": 180,
         "event_ids_positive": [
           5760,
           5750,
@@ -133034,6 +133057,7 @@
           5557
         ],
         "event_ids_negative": [
+          5776,
           5775,
           5774,
           5773,
@@ -133217,7 +133241,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 155,
+        "negative": 156,
         "event_ids_positive": [
           5760,
           5750,
@@ -133241,6 +133265,7 @@
           5561
         ],
         "event_ids_negative": [
+          5776,
           5775,
           5774,
           5773,
@@ -133586,7 +133611,7 @@
       },
       "PB": {
         "positive": 18,
-        "negative": 54,
+        "negative": 55,
         "event_ids_positive": [
           5750,
           5749,
@@ -133608,6 +133633,7 @@
           5557
         ],
         "event_ids_negative": [
+          5776,
           5762,
           5759,
           5756,
@@ -133669,11 +133695,11 @@
       "niche_pct": 80.0,
       "mainstream_pct": 20.0,
       "total_sources_used": 90,
-      "articles_processed": 219
+      "articles_processed": 220
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 219,
+      "total_events": 220,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -133898,6 +133924,18 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          5776,
+          5709,
+          5663,
+          5636
+        ]
+      },
+      {
         "name": "Mining",
         "count": 4,
         "burn_count": 0,
@@ -133907,18 +133945,6 @@
           5727,
           5702,
           5569
-        ]
-      },
-      {
-        "name": "Fishing",
-        "count": 4,
-        "burn_count": 1,
-        "mint_count": 3,
-        "event_ids": [
-          5743,
-          5706,
-          5676,
-          5558
         ]
       }
     ],
@@ -133953,14 +133979,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 180,
+      "total_mint": 181,
       "direct_action": {
-        "count": 169,
+        "count": 170,
         "pct": 93.9
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 5.6
+        "pct": 5.5
       },
       "untyped": {
         "count": 1,
@@ -133968,9 +133994,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3901,
+      "total_mint": 3902,
       "direct_action": {
-        "count": 3141,
+        "count": 3142,
         "pct": 80.5
       },
       "editorial_alarm": {
@@ -133984,8 +134010,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 60,
-      "institutional": 159,
-      "citizen_ratio": 0.274,
+      "institutional": 160,
+      "citizen_ratio": 0.273,
       "daily": [
         {
           "date": "2026-07-23",
@@ -134020,7 +134046,7 @@
         {
           "date": "2026-07-29",
           "citizen": 11,
-          "institutional": 35
+          "institutional": 36
         }
       ],
       "event_ids_citizen": [
@@ -134086,6 +134112,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5776,
         5775,
         5774,
         5773,
