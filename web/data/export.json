@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T20:35:53.032304+00:00",
-  "total_events": 5788,
+  "generated_at": "2026-07-29T21:05:58.676298+00:00",
+  "total_events": 5789,
   "total_burned": 7701207025,
-  "total_minted": 8296210189,
+  "total_minted": 8296688189,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5789,
+      "event_title": "Prince Harry, other claimants may have to pay 'millions' in Daily Mail case",
+      "event_url": "https://www.rnz.co.nz/news/world/836602/prince-harry-other-claimants-may-have-to-pay-millions-in-daily-mail-case",
+      "event_source": "RNZ Pacific (Radio NZ)",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -2.45,
+      "confidence": 7,
+      "justification": "Court ruling weakens privacy protections and access to justice by imposing prohibitive costs on claimants. | The court's decision to impose significant costs on claimants in a privacy case undermines access to justice and may chill future legal challenges against media overreach. While the ruling does not directly legalize intrusive journalism, it creates a financial barrier that disproportionately affects non-wealthy individuals, weakening protections for privacy and equality before the law.",
+      "tx_hash": "2Q6bY8Aikp5QWv5vv981FTENLYzFX5Fz622RmZh7QrdkAvWVHmdrCXzR4eqXPKwsnqG4oTfJY8E4SZbqozK6VkSV",
+      "created_at": "2026-07-29T21:05:52.658315+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Court ruling against claimants in a privacy case may deter future individuals from pursuing legal action against media intrusion, weakening protections for personal privacy and freedom from harassment.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"High legal costs imposed on claimants could disproportionately affect less wealthy individuals, limiting access to justice and reinforcing inequalities in legal recourse.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 7\", \"UDHR Article 8\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 5788,
       "event_title": "Ecuador: Guerreras por la Amazonía demand the elimination of gas flares five years after landmark ruling",
@@ -133198,8 +133221,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.15,
-        "events": 60
+        "burn_ratio": 0.148,
+        "events": 61
       },
       {
         "region": "Oceania",
@@ -133235,8 +133258,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.85,
-        "events": 60
+        "mint_ratio": 0.852,
+        "events": 61
       }
     ],
     "supply_trend_7d": [
@@ -133272,7 +133295,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 86725150,
+        "net_minted": 87203150,
         "net_burned": 2000000
       }
     ],
@@ -133290,7 +133313,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 192,
+        "negative": 193,
         "event_ids_positive": [
           5760,
           5750,
@@ -133333,6 +133356,7 @@
           5557
         ],
         "event_ids_negative": [
+          5789,
           5788,
           5787,
           5786,
@@ -133529,7 +133553,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 167,
+        "negative": 168,
         "event_ids_positive": [
           5760,
           5750,
@@ -133553,6 +133577,7 @@
           5561
         ],
         "event_ids_negative": [
+          5789,
           5788,
           5787,
           5786,
@@ -134005,14 +134030,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 78.0,
-      "mainstream_pct": 22.0,
-      "total_sources_used": 91,
-      "articles_processed": 232
+      "niche_pct": 78.3,
+      "mainstream_pct": 21.7,
+      "total_sources_used": 92,
+      "articles_processed": 233
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 232,
+      "total_events": 233,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -134132,6 +134157,32 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 18,
+        "burn_count": 3,
+        "mint_count": 15,
+        "event_ids": [
+          5789,
+          5767,
+          5750,
+          5735,
+          5730,
+          5702,
+          5679,
+          5672,
+          5670,
+          5667,
+          5649,
+          5645,
+          5642,
+          5632,
+          5626,
+          5597,
+          5595,
+          5560
+        ]
+      },
+      {
         "name": "Defense",
         "count": 18,
         "burn_count": 0,
@@ -134155,31 +134206,6 @@
           5612,
           5606,
           5591
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 17,
-        "burn_count": 3,
-        "mint_count": 14,
-        "event_ids": [
-          5767,
-          5750,
-          5735,
-          5730,
-          5702,
-          5679,
-          5672,
-          5670,
-          5667,
-          5649,
-          5645,
-          5642,
-          5632,
-          5626,
-          5597,
-          5595,
-          5560
         ]
       },
       {
@@ -134297,9 +134323,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 193,
+      "total_mint": 194,
       "direct_action": {
-        "count": 182,
+        "count": 183,
         "pct": 94.3
       },
       "editorial_alarm": {
@@ -134312,9 +134338,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3914,
+      "total_mint": 3915,
       "direct_action": {
-        "count": 3154,
+        "count": 3155,
         "pct": 80.6
       },
       "editorial_alarm": {
@@ -134328,8 +134354,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 64,
-      "institutional": 168,
-      "citizen_ratio": 0.276,
+      "institutional": 169,
+      "citizen_ratio": 0.275,
       "daily": [
         {
           "date": "2026-07-23",
@@ -134364,7 +134390,7 @@
         {
           "date": "2026-07-29",
           "citizen": 15,
-          "institutional": 44
+          "institutional": 45
         }
       ],
       "event_ids_citizen": [
@@ -134434,6 +134460,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5789,
         5785,
         5784,
         5783,
