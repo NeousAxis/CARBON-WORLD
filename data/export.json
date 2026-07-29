@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T08:09:07.002850+00:00",
-  "total_events": 5759,
-  "total_burned": 7700857025,
+  "generated_at": "2026-07-29T08:37:13.281017+00:00",
+  "total_events": 5760,
+  "total_burned": 7701207025,
   "total_minted": 8268671089,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5760,
+      "event_title": "Peru Raises Minimum Wage to US$365 in Fujimori’s First Act",
+      "event_url": "https://www.riotimesonline.com/peru-minimum-wage-fujimori-first-act-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "BURN",
+      "amount_crbn": 350000,
+      "final_score": 2.81,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Wage and pension hikes protect workers and reduce poverty, outweighing inflation and informal sector concerns. | The wage and pension increases represent a significant step toward reducing poverty and inequality, directly supporting SDGs 1, 8, and 10. However, the lack of protections for informal workers and potential inflationary effects temper the positive impact. The infrastr",
+      "tx_hash": "shEx8gsJMMZbhWerwDeoaxGMbwY9cCrifA5fP8K2c9PXgm3PhKoaviDQsC4Aj6VEFYVYE1dzvSBjcwNs6AcDVPh",
+      "created_at": "2026-07-29T08:37:08.524046+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Peru",
+      "region": "Latin America",
+      "administration": "Peru-FP",
+      "positive_aspects_json": "[{\"description\": \"Minimum wage increased from ~US$318 to ~US$365, improving income for low-wage workers and reducing poverty.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Pensión 65 for elderly in extreme poverty doubled, directly addressing poverty and social protection for vulnerable populations.\", \"affected_sdgs\": [1, 3, 10], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Commitment to complete Metro Line 2 and execute Lines 3 in Lima and Callao, improving sustainable urban infrastructure and public transportation access.\", \"affected_sdgs\": [9, 11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential inflationary pressure due to wage increase, which may erode purchasing power gains for low-income workers.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"No explicit protections for informal workers (70% of Peru's workforce), who may not benefit from wage increases and could face job losses.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Long-term fiscal sustainability concerns for pension increases, potentially straining public finances and future social programs.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 5759,
       "event_title": "Amber Highway Awarded: Dominican Republic’s US$476M Northern Corridor",
@@ -132541,8 +132564,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.048,
-        "events": 21
+        "burn_ratio": 0.091,
+        "events": 22
       }
     ],
     "top_regions_destructive": [
@@ -132558,8 +132581,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.952,
-        "events": 21
+        "mint_ratio": 0.909,
+        "events": 22
       },
       {
         "region": "Oceania",
@@ -132606,7 +132629,7 @@
       {
         "date": "2026-07-29",
         "net_minted": 59186050,
-        "net_burned": 1650000
+        "net_burned": 2000000
       }
     ],
     "event_of_the_day": {
@@ -132622,9 +132645,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 38,
+        "positive": 39,
         "negative": 164,
         "event_ids_positive": [
+          5760,
           5750,
           5749,
           5730,
@@ -132832,9 +132856,10 @@
         ]
       },
       "UDHR": {
-        "positive": 19,
+        "positive": 20,
         "negative": 142,
         "event_ids_positive": [
+          5760,
           5750,
           5718,
           5701,
@@ -133001,9 +133026,10 @@
         ]
       },
       "ILO": {
-        "positive": 3,
+        "positive": 4,
         "negative": 28,
         "event_ids_positive": [
+          5760,
           5750,
           5690,
           5629
@@ -133040,9 +133066,10 @@
         ]
       },
       "CRC": {
-        "positive": 5,
+        "positive": 6,
         "negative": 42,
         "event_ids_positive": [
+          5760,
           5750,
           5623,
           5603,
@@ -133257,11 +133284,11 @@
       "niche_pct": 79.5,
       "mainstream_pct": 20.5,
       "total_sources_used": 88,
-      "articles_processed": 203
+      "articles_processed": 204
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 203,
+      "total_events": 204,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -133504,14 +133531,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 39,
       "direct_action": {
-        "count": 36,
-        "pct": 94.7
+        "count": 37,
+        "pct": 94.9
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 5.3
+        "pct": 5.1
       },
       "untyped": {
         "count": 0,
@@ -133519,9 +133546,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1865,
+      "total_burn": 1866,
       "direct_action": {
-        "count": 1456,
+        "count": 1457,
         "pct": 78.1
       },
       "editorial_consciousness": {
@@ -133565,8 +133592,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 57,
-      "institutional": 146,
-      "citizen_ratio": 0.281,
+      "institutional": 147,
+      "citizen_ratio": 0.279,
       "daily": [
         {
           "date": "2026-07-23",
@@ -133601,7 +133628,7 @@
         {
           "date": "2026-07-29",
           "citizen": 8,
-          "institutional": 22
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -133664,6 +133691,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5760,
         5758,
         5757,
         5756,
