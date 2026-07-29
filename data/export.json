@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T22:06:11.190448+00:00",
-  "total_events": 5790,
+  "generated_at": "2026-07-29T22:36:51.159710+00:00",
+  "total_events": 5791,
   "total_burned": 7701207025,
-  "total_minted": 8302098189,
+  "total_minted": 8302398189,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5791,
+      "event_title": "The Fed chooses to keep rates unchanged, despite high inflation",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/07/30/la-fed-choisit-de-maintenir-ses-taux-inchanges-malgre-une-forte-inflation_6736482_3234.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.84,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Decision to maintain rates despite inflation risks prolonged harm to vulnerable populations and economic instability. | The Federal Reserve's decision prioritizes short-term economic stability but risks exacerbating inflationary harm to vulnerable populations. While avoiding immediate job losses is positive, the prolonged erosion of purchasing power and institutional dissent un",
+      "tx_hash": "3eDCJtsPctxY6ZBQAVY3baaSheAvULBdY1unshVn6vPc1SRASG4UsgP3pgU6A4z1xFsuj8UHoDWTZZ7Sx2ptdwVo",
+      "created_at": "2026-07-29T22:36:46.161733+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Maintaining stable interest rates avoids immediate economic contraction, preserving jobs and financial stability for vulnerable populations.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Decision to keep rates unchanged despite high inflation risks prolonging inflationary pressures, eroding purchasing power for low-income households and undermining economic stability.\", \"affected_sdgs\": [1, 2, 8, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Unprecedented dissent within the Federal Reserve signals institutional instability, potentially weakening public trust in monetary policy and long-term economic governance.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5790,
       "event_title": "SA blocks Ghana’s attempt to put xenophobic violence on African Union agenda",
@@ -133180,8 +133203,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 31909050
+        "count": 44,
+        "total_amount": 32209050
       },
       {
         "country": "France",
@@ -133234,8 +133257,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.218,
-        "events": 55
+        "burn_ratio": 0.214,
+        "events": 56
       },
       {
         "region": "Africa",
@@ -133318,7 +133341,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 92613150,
+        "net_minted": 92913150,
         "net_burned": 2000000
       }
     ],
@@ -133336,7 +133359,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 194,
+        "negative": 195,
         "event_ids_positive": [
           5760,
           5750,
@@ -133379,6 +133402,7 @@
           5557
         ],
         "event_ids_negative": [
+          5791,
           5790,
           5789,
           5788,
@@ -133577,7 +133601,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 169,
+        "negative": 170,
         "event_ids_positive": [
           5760,
           5750,
@@ -133601,6 +133625,7 @@
           5561
         ],
         "event_ids_negative": [
+          5791,
           5790,
           5789,
           5788,
@@ -134059,21 +134084,22 @@
       "niche_pct": 78.3,
       "mainstream_pct": 21.7,
       "total_sources_used": 92,
-      "articles_processed": 234
+      "articles_processed": 235
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 234,
+      "total_events": 235,
       "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 5,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 5,
+        "mint_count": 6,
         "event_ids": [
+          5791,
           5752,
           5708,
           5673,
@@ -134349,9 +134375,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 195,
+      "total_mint": 196,
       "direct_action": {
-        "count": 184,
+        "count": 185,
         "pct": 94.4
       },
       "editorial_alarm": {
@@ -134364,9 +134390,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3916,
+      "total_mint": 3917,
       "direct_action": {
-        "count": 3156,
+        "count": 3157,
         "pct": 80.6
       },
       "editorial_alarm": {
@@ -134375,13 +134401,13 @@
       },
       "untyped": {
         "count": 519,
-        "pct": 13.3
+        "pct": 13.2
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 65,
-      "institutional": 169,
-      "citizen_ratio": 0.278,
+      "institutional": 170,
+      "citizen_ratio": 0.277,
       "daily": [
         {
           "date": "2026-07-23",
@@ -134416,7 +134442,7 @@
         {
           "date": "2026-07-29",
           "citizen": 16,
-          "institutional": 45
+          "institutional": 46
         }
       ],
       "event_ids_citizen": [
@@ -134487,6 +134513,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5791,
         5789,
         5785,
         5784,
