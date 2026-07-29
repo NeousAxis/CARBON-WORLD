@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T11:36:24.221555+00:00",
-  "total_events": 5770,
+  "generated_at": "2026-07-29T12:05:56.888853+00:00",
+  "total_events": 5771,
   "total_burned": 7701207025,
-  "total_minted": 8278138689,
+  "total_minted": 8278679689,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5771,
+      "event_title": "Exclusive-US commander warns troops their videos help Iran, sources say",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/exclusive-us-commander-warns-troops-their-videos-help-iran-sources-say",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.54,
+      "confidence": 7,
+      "justification": "Policy infringes on fundamental rights with insufficient safeguards for affected troops. | The decision to restrict personal device usage among troops balances operational security against fundamental rights to privacy and communication. While the measure aims to protect lives and military assets (SDG 16), it risks undermining mental health (SDG 3) and individual freedoms (UDHR Articles 12, 19). The net ethical impact leans negative due to the direct infringement on rights without clear mitigati",
+      "tx_hash": "5zfLj945fq16ai5SeqDh4q1CVJiP9o9EXrXxg2AaSndmLoDeXTuBt7XLZF8AdE1LyabqmXKUhGC3HLaXxuDFuGNr",
+      "created_at": "2026-07-29T12:05:51.258294+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Military leadership takes proactive measure to enhance operational security (OPSEC) by addressing potential intelligence leaks through personal device usage, reducing risk to personnel and assets.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential restriction on troops' ability to communicate with families, limiting their right to private life and freedom of expression (UDHR Articles 12, 19), and risking psychological well-being (SDG 3).\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Policy may disproportionately affect lower-ranking personnel, exacerbating inequalities in access to communication (SDG 10).\", \"affected_sdgs\": [10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5770,
       "event_title": "Disclosing past substance use in medical and dental school applications could hurt admissions prospects, study finds",
@@ -132720,8 +132743,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 36,
-        "total_amount": 27597050
+        "count": 37,
+        "total_amount": 28138050
       },
       {
         "country": "France",
@@ -132774,8 +132797,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.25,
-        "events": 48
+        "burn_ratio": 0.245,
+        "events": 49
       },
       {
         "region": "Africa",
@@ -132858,7 +132881,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 68653650,
+        "net_minted": 69194650,
         "net_burned": 2000000
       }
     ],
@@ -132876,7 +132899,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 174,
+        "negative": 175,
         "event_ids_positive": [
           5760,
           5750,
@@ -132919,6 +132942,7 @@
           5557
         ],
         "event_ids_negative": [
+          5771,
           5770,
           5769,
           5768,
@@ -133097,7 +133121,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 151,
+        "negative": 152,
         "event_ids_positive": [
           5760,
           5750,
@@ -133121,6 +133145,7 @@
           5561
         ],
         "event_ids_negative": [
+          5771,
           5770,
           5769,
           5768,
@@ -133543,11 +133568,11 @@
       "niche_pct": 79.8,
       "mainstream_pct": 20.2,
       "total_sources_used": 89,
-      "articles_processed": 214
+      "articles_processed": 215
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 214,
+      "total_events": 215,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -133640,6 +133665,31 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Defense",
+        "count": 17,
+        "burn_count": 0,
+        "mint_count": 17,
+        "event_ids": [
+          5771,
+          5768,
+          5758,
+          5756,
+          5752,
+          5745,
+          5738,
+          5732,
+          5727,
+          5707,
+          5637,
+          5628,
+          5621,
+          5614,
+          5612,
+          5606,
+          5591
+        ]
+      },
+      {
         "name": "Finance",
         "count": 17,
         "burn_count": 3,
@@ -133687,30 +133737,6 @@
           5584,
           5571,
           5567
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 16,
-        "burn_count": 0,
-        "mint_count": 16,
-        "event_ids": [
-          5768,
-          5758,
-          5756,
-          5752,
-          5745,
-          5738,
-          5732,
-          5727,
-          5707,
-          5637,
-          5628,
-          5621,
-          5614,
-          5612,
-          5606,
-          5591
         ]
       },
       {
@@ -133825,10 +133851,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 175,
+      "total_mint": 176,
       "direct_action": {
-        "count": 164,
-        "pct": 93.7
+        "count": 165,
+        "pct": 93.8
       },
       "editorial_alarm": {
         "count": 10,
@@ -133840,9 +133866,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3896,
+      "total_mint": 3897,
       "direct_action": {
-        "count": 3136,
+        "count": 3137,
         "pct": 80.5
       },
       "editorial_alarm": {
@@ -133856,8 +133882,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 60,
-      "institutional": 154,
-      "citizen_ratio": 0.28,
+      "institutional": 155,
+      "citizen_ratio": 0.279,
       "daily": [
         {
           "date": "2026-07-23",
@@ -133892,7 +133918,7 @@
         {
           "date": "2026-07-29",
           "citizen": 11,
-          "institutional": 30
+          "institutional": 31
         }
       ],
       "event_ids_citizen": [
@@ -133958,6 +133984,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5771,
         5770,
         5769,
         5767,
