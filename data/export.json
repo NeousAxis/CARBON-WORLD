@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-29T14:35:36.337410+00:00",
-  "total_events": 5776,
+  "generated_at": "2026-07-29T15:06:30.943100+00:00",
+  "total_events": 5777,
   "total_burned": 7701207025,
-  "total_minted": 8285730689,
+  "total_minted": 8285797389,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5777,
+      "event_title": "Israel army hit Gaza mosque, says used for Hamas 'weapons storage'",
+      "event_url": "https://www.al-monitor.com/originals/2026/07/israel-army-hit-gaza-mosque-says-used-hamas-weapons-storage",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 66700,
+      "final_score": -5.65,
+      "confidence": 7,
+      "justification": "Military strike on a civilian site violates human rights and undermines peace, justifying MINT. | The military strike on a mosque in Gaza, regardless of the claimed justification, constitutes a severe violation of human rights, including the right to life, religious freedom, and protection of cultural sites. The action directly harms civilians, including displaced populations and children, and undermines peace and justice. The lack of independent verification of the military's claims further exa",
+      "tx_hash": "3CYuuWv3Zvm4AjL1gU53UaRhVD5aEBT1EBJTkCqsg3mKrZnzecQfBEpuhXDBBiVgyfCG3GN1JQoLAciy2EcXUSX5",
+      "created_at": "2026-07-29T15:06:25.835683+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli military strike on a Gaza mosque, resulting in destruction and displacement of civilians, under the claim of targeting a Hamas weapons storage facility without independent verification of the claim.\", \"affected_sdgs\": [1, 3, 11, 16], \"violated_rights\": [\"UDHR Article 3 (Right to Life)\", \"UDHR Article 12 (Right to Privacy and Home)\", \"UDHR Article 17 (Right to Property)\", \"CRC Article 6 (Right to Life for Children)\", \"CRC Article 27 (Adequate Standard of Living)\", \"UNDRIP Article 8 (Right not to be subjected to forced assimilation or destruction of culture)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}, {\"description\": \"Destruction of a place of worship and cultural site, undermining religious freedom and community cohesion.\", \"affected_sdgs\": [11, 16], \"violated_rights\": [\"UDHR Article 18 (Freedom of Religion)\", \"UNDRIP Article 12 (Right to manifest, practice, and teach spiritual traditions)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Potential for civilian casualties and harm to displaced populations, including children, living in or near the targeted site.\", \"affected_sdgs\": [1, 3, 16], \"violated_rights\": [\"UDHR Article 5 (Freedom from Torture or Cruel Treatment)\", \"CRC Article 22 (Protection as Refugees)\", \"CRC Article 38 (Protection in Armed Conflict)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 5776,
       "event_title": "South Africa: SAHRC Calls for Action Following Wastewater Pollution Finding",
@@ -132938,14 +132961,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 9
+      },
+      {
         "region": "Asia",
         "mint_ratio": 1.0,
         "events": 15
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 8
       },
       {
         "region": "Latin America",
@@ -132996,7 +133019,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 76245650,
+        "net_minted": 76312350,
         "net_burned": 2000000
       }
     ],
@@ -133014,7 +133037,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 180,
+        "negative": 181,
         "event_ids_positive": [
           5760,
           5750,
@@ -133057,6 +133080,7 @@
           5557
         ],
         "event_ids_negative": [
+          5777,
           5776,
           5775,
           5774,
@@ -133241,7 +133265,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 156,
+        "negative": 157,
         "event_ids_positive": [
           5760,
           5750,
@@ -133265,6 +133289,7 @@
           5561
         ],
         "event_ids_negative": [
+          5777,
           5776,
           5775,
           5774,
@@ -133466,7 +133491,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           5760,
           5750,
@@ -133476,6 +133501,7 @@
           5580
         ],
         "event_ids_negative": [
+          5777,
           5773,
           5769,
           5768,
@@ -133527,7 +133553,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [
           5750,
           5730,
@@ -133536,6 +133562,7 @@
           5558
         ],
         "event_ids_negative": [
+          5777,
           5764,
           5763,
           5762,
@@ -133695,11 +133722,11 @@
       "niche_pct": 80.0,
       "mainstream_pct": 20.0,
       "total_sources_used": 90,
-      "articles_processed": 220
+      "articles_processed": 221
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 220,
+      "total_events": 221,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -133793,10 +133820,11 @@
     "top_sectors_7d": [
       {
         "name": "Defense",
-        "count": 17,
+        "count": 18,
         "burn_count": 0,
-        "mint_count": 17,
+        "mint_count": 18,
         "event_ids": [
+          5777,
           5771,
           5768,
           5758,
@@ -133979,10 +134007,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 181,
+      "total_mint": 182,
       "direct_action": {
-        "count": 170,
-        "pct": 93.9
+        "count": 171,
+        "pct": 94.0
       },
       "editorial_alarm": {
         "count": 10,
@@ -133990,13 +134018,13 @@
       },
       "untyped": {
         "count": 1,
-        "pct": 0.6
+        "pct": 0.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3902,
+      "total_mint": 3903,
       "direct_action": {
-        "count": 3142,
+        "count": 3143,
         "pct": 80.5
       },
       "editorial_alarm": {
@@ -134010,8 +134038,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 60,
-      "institutional": 160,
-      "citizen_ratio": 0.273,
+      "institutional": 161,
+      "citizen_ratio": 0.271,
       "daily": [
         {
           "date": "2026-07-23",
@@ -134046,7 +134074,7 @@
         {
           "date": "2026-07-29",
           "citizen": 11,
-          "institutional": 36
+          "institutional": 37
         }
       ],
       "event_ids_citizen": [
@@ -134112,6 +134140,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5777,
         5776,
         5775,
         5774,
