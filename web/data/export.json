@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-29T10:37:13.649414+00:00",
-  "total_events": 5767,
+  "generated_at": "2026-07-29T11:05:34.047847+00:00",
+  "total_events": 5769,
   "total_burned": 7701207025,
-  "total_minted": 8270818689,
+  "total_minted": 8277534689,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5769,
+      "event_title": "Warning about a viral toy already withdrawn in Europe: potential health risks for children",
+      "event_url": "https://www.clarin.com/sociedad/advierten-juguete-viral-retirado-europa-posibles-riegos-salud-chicos_0_DFGMaU2hIS.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -1.97,
+      "confidence": 8,
+      "justification": "Delayed enforcement of child safety standards enables harm despite remedial complaint. | The complaint by CAIJ is a positive enforcement action aligning with child health protections (SDG 3, CRC). However, the delayed response—allowing a known hazardous product to remain on shelves—constitutes a significant violation of children's rights to health and safety, outweighing the remedial action's immediate impact.",
+      "tx_hash": "58GbQgAmQd5K7npYKgyBb6sAxA81deJNXyFjGAjeHf2vV2ctyqwZCUG5TDWXgj2JNucfAMo3s7BeVKcitNjrFnt",
+      "created_at": "2026-07-29T11:05:29.133710+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Argentine Toy Industry Chamber (CAIJ) files formal complaint to withdraw hazardous toy containing benzene from the market, protecting children's health.\", \"affected_sdgs\": [3, 12, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Delay in action: toy was already withdrawn in Europe but remains available in Argentina, exposing children to benzene, a known carcinogen, during a high-consumption period (Children's Day).\", \"affected_sdgs\": [3, 12], \"violated_rights\": [\"CRC Article 24\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 5768,
+      "event_title": "UK looks to build naval coalition to secure shipping in Strait of Hormuz",
+      "event_url": "https://www.france24.com/en/uk-looks-to-build-naval-coalition-to-secure-shipping-in-strait-of-hormuz",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.51,
+      "confidence": 7,
+      "justification": "Military escalation and conflict risks outweigh potential maritime safety benefits of the naval coalition. | The UK's initiative to secure the Strait of Hormuz could enhance maritime safety and global trade stability, aligning with SDGs 8, 9, and 16. However, the broader context of military escalation in the region, including strikes by US and Saudi forces, poses significant risks to civilian safety and regional peace, violating core human rights and undermining SDG 16. The net ethical judgment ",
+      "tx_hash": "3SKb6exP3hWRzqbM4VbBqRyoqMhNXmGNfwtmtWRYYCnXVtzpSefCAimuUwNXsypsURpLRGdkyJH92xzUUpSgEZ67",
+      "created_at": "2026-07-29T11:05:26.991716+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"UK initiative to build a naval coalition to secure shipping in the Strait of Hormuz, potentially reducing risks to global trade and maritime safety.\", \"affected_sdgs\": [8, 9, 16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military escalation in the region, including strikes by US and Saudi forces on Iraqi militant groups, risks exacerbating conflict, increasing civilian harm, and undermining peace efforts.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Naval coalition formation may be perceived as a provocation, potentially heightening geopolitical tensions and undermining diplomatic efforts for de-escalation.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5767,
       "event_title": "AIDS: South Africa faces challenge to compensate for permanent end of American aid",
@@ -132725,8 +132771,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.091,
-        "events": 22
+        "burn_ratio": 0.087,
+        "events": 23
       }
     ],
     "top_regions_destructive": [
@@ -132742,8 +132788,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.909,
-        "events": 22
+        "mint_ratio": 0.913,
+        "events": 23
       },
       {
         "region": "Oceania",
@@ -132789,7 +132835,7 @@
       },
       {
         "date": "2026-07-29",
-        "net_minted": 61333650,
+        "net_minted": 68049650,
         "net_burned": 2000000
       }
     ],
@@ -132807,7 +132853,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 171,
+        "negative": 173,
         "event_ids_positive": [
           5760,
           5750,
@@ -132850,6 +132896,8 @@
           5557
         ],
         "event_ids_negative": [
+          5769,
+          5768,
           5767,
           5766,
           5765,
@@ -133025,7 +133073,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 148,
+        "negative": 150,
         "event_ids_positive": [
           5760,
           5750,
@@ -133049,6 +133097,8 @@
           5561
         ],
         "event_ids_negative": [
+          5769,
+          5768,
           5767,
           5766,
           5764,
@@ -133241,7 +133291,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 44,
+        "negative": 46,
         "event_ids_positive": [
           5760,
           5750,
@@ -133251,6 +133301,8 @@
           5580
         ],
         "event_ids_negative": [
+          5769,
+          5768,
           5767,
           5764,
           5758,
@@ -133466,11 +133518,11 @@
       "niche_pct": 79.8,
       "mainstream_pct": 20.2,
       "total_sources_used": 89,
-      "articles_processed": 211
+      "articles_processed": 213
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 211,
+      "total_events": 213,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -133613,6 +133665,30 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 16,
+        "burn_count": 0,
+        "mint_count": 16,
+        "event_ids": [
+          5768,
+          5758,
+          5756,
+          5752,
+          5745,
+          5738,
+          5732,
+          5727,
+          5707,
+          5637,
+          5628,
+          5621,
+          5614,
+          5612,
+          5606,
+          5591
+        ]
+      },
+      {
         "name": "Construction",
         "count": 15,
         "burn_count": 2,
@@ -133636,34 +133712,12 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 15,
-        "burn_count": 0,
-        "mint_count": 15,
-        "event_ids": [
-          5758,
-          5756,
-          5752,
-          5745,
-          5738,
-          5732,
-          5727,
-          5707,
-          5637,
-          5628,
-          5621,
-          5614,
-          5612,
-          5606,
-          5591
-        ]
-      },
-      {
         "name": "Transport",
-        "count": 11,
+        "count": 12,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          5768,
           5759,
           5736,
           5728,
@@ -133746,14 +133800,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 172,
+      "total_mint": 174,
       "direct_action": {
-        "count": 161,
-        "pct": 93.6
+        "count": 163,
+        "pct": 93.7
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 5.8
+        "pct": 5.7
       },
       "untyped": {
         "count": 1,
@@ -133761,9 +133815,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3893,
+      "total_mint": 3895,
       "direct_action": {
-        "count": 3133,
+        "count": 3135,
         "pct": 80.5
       },
       "editorial_alarm": {
@@ -133776,9 +133830,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 59,
-      "institutional": 152,
-      "citizen_ratio": 0.28,
+      "citizen": 60,
+      "institutional": 153,
+      "citizen_ratio": 0.282,
       "daily": [
         {
           "date": "2026-07-23",
@@ -133812,11 +133866,12 @@
         },
         {
           "date": "2026-07-29",
-          "citizen": 10,
-          "institutional": 28
+          "citizen": 11,
+          "institutional": 29
         }
       ],
       "event_ids_citizen": [
+        5768,
         5763,
         5762,
         5759,
@@ -133878,6 +133933,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5769,
         5767,
         5766,
         5765,
