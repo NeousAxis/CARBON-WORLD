@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-28T23:36:33.086450+00:00",
-  "total_events": 5729,
-  "total_burned": 7699207025,
+  "generated_at": "2026-07-29T00:06:41.238952+00:00",
+  "total_events": 5730,
+  "total_burned": 7700007025,
   "total_minted": 8209485039,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5730,
+      "event_title": "Australia connected a record 9.1 GW of new solar, wind and battery capacity to its grid in the 2025/26 financial year, more than double the year before, with 2.7 GW of battery storage added in the final quarter and 6.9 GW more approved for the pipeline",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1v9d3ue/australia_connected_a_record_91_gw_of_new_solar/",
+      "event_source": "Reddit r/UpliftingNews",
+      "decision": "BURN",
+      "amount_crbn": 800000,
+      "final_score": 6.39,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Record renewable energy expansion in Australia significantly advances climate action and sustainable energy goals. | The expansion of renewable energy capacity in Australia represents a significant step toward decarbonization and climate action (SDGs 7, 13), with substantial positive implications for sustainable cities and energy access. However, the rapid scaling introduces ri",
+      "tx_hash": "TSREvouHVC3Lpjm2bhiWpNQAKLgHsnRFKu4nUpM5G2Ef2k31LLvehpsLye19edrgMEDrb7XP4iWT6qPgHsgk57q",
+      "created_at": "2026-07-29T00:06:36.367397+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Australia connected a record 9.1 GW of new solar, wind, and battery capacity to its grid in 2025/26, more than doubling the previous year's additions. This includes 2.7 GW of battery storage in the final quarter and 6.9 GW approved for the pipeline, accelerating the transition to renewable energy.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential grid instability or inefficiencies during the rapid scaling of intermittent renewable energy sources without sufficient baseload or storage backup, risking energy reliability (SDG 7).\", \"affected_sdgs\": [7], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Possible displacement of local communities or ecosystems during large-scale renewable infrastructure development if environmental and social safeguards are not strictly enforced (SDGs 11, 15).\", \"affected_sdgs\": [11, 15], \"violated_rights\": [\"UNDRIP\", \"Animal\"], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UNDRIP\", \"Animal\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 5729,
       "event_title": "WHO: Integration, innovation and community leadership key to ending HIV, hepatitis and STIs",
@@ -131835,6 +131858,11 @@
         "events": 41
       },
       {
+        "region": "Oceania",
+        "burn_ratio": 0.2,
+        "events": 5
+      },
+      {
         "region": "Africa",
         "burn_ratio": 0.182,
         "events": 11
@@ -131848,19 +131876,9 @@
         "region": "Latin America",
         "burn_ratio": 0.053,
         "events": 19
-      },
-      {
-        "region": "Oceania",
-        "burn_ratio": 0.0,
-        "events": 4
       }
     ],
     "top_regions_destructive": [
-      {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 4
-      },
       {
         "region": "Asia",
         "mint_ratio": 1.0,
@@ -131880,14 +131898,14 @@
         "region": "Europe",
         "mint_ratio": 0.827,
         "events": 52
+      },
+      {
+        "region": "Africa",
+        "mint_ratio": 0.818,
+        "events": 11
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-07-22",
-        "net_minted": 0,
-        "net_burned": 0
-      },
       {
         "date": "2026-07-23",
         "net_minted": 0,
@@ -131917,6 +131935,11 @@
         "date": "2026-07-28",
         "net_minted": 20531590,
         "net_burned": 10566500
+      },
+      {
+        "date": "2026-07-29",
+        "net_minted": 0,
+        "net_burned": 800000
       }
     ],
     "event_of_the_day": {
@@ -131932,9 +131955,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 35,
+        "positive": 36,
         "negative": 137,
         "event_ids_positive": [
+          5730,
           5722,
           5718,
           5715,
@@ -132333,9 +132357,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 3,
+        "positive": 4,
         "negative": 28,
         "event_ids_positive": [
+          5730,
           5710,
           5623,
           5558
@@ -132372,9 +132397,10 @@
         ]
       },
       "Animal": {
-        "positive": 5,
+        "positive": 6,
         "negative": 12,
         "event_ids_positive": [
+          5730,
           5710,
           5705,
           5585,
@@ -132397,9 +132423,10 @@
         ]
       },
       "PB": {
-        "positive": 15,
+        "positive": 16,
         "negative": 44,
         "event_ids_positive": [
+          5730,
           5715,
           5710,
           5705,
@@ -132468,11 +132495,11 @@
       "niche_pct": 85.7,
       "mainstream_pct": 14.3,
       "total_sources_used": 84,
-      "articles_processed": 172
+      "articles_processed": 173
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 172,
+      "total_events": 173,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -132565,10 +132592,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 13,
-        "burn_count": 4,
+        "count": 14,
+        "burn_count": 5,
         "mint_count": 9,
         "event_ids": [
+          5730,
           5723,
           5715,
           5701,
@@ -132586,10 +132614,11 @@
       },
       {
         "name": "Finance",
-        "count": 13,
-        "burn_count": 1,
+        "count": 14,
+        "burn_count": 2,
         "mint_count": 12,
         "event_ids": [
+          5730,
           5702,
           5679,
           5672,
@@ -132696,14 +132725,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 35,
+      "total_burn": 36,
       "direct_action": {
-        "count": 34,
-        "pct": 97.1
+        "count": 35,
+        "pct": 97.2
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 2.9
+        "pct": 2.8
       },
       "untyped": {
         "count": 0,
@@ -132711,9 +132740,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1862,
+      "total_burn": 1863,
       "direct_action": {
-        "count": 1454,
+        "count": 1455,
         "pct": 78.1
       },
       "editorial_consciousness": {
@@ -132757,14 +132786,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 49,
-      "institutional": 123,
-      "citizen_ratio": 0.285,
+      "institutional": 124,
+      "citizen_ratio": 0.283,
       "daily": [
-        {
-          "date": "2026-07-22",
-          "citizen": 0,
-          "institutional": 0
-        },
         {
           "date": "2026-07-23",
           "citizen": 0,
@@ -132794,6 +132818,11 @@
           "date": "2026-07-28",
           "citizen": 18,
           "institutional": 40
+        },
+        {
+          "date": "2026-07-29",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -132848,6 +132877,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5730,
         5729,
         5728,
         5727,
