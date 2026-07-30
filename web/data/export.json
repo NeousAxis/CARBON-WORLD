@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-30T00:06:17.689604+00:00",
-  "total_events": 5794,
+  "generated_at": "2026-07-30T00:36:09.093243+00:00",
+  "total_events": 5795,
   "total_burned": 7701257025,
-  "total_minted": 8309114189,
+  "total_minted": 8309264189,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5795,
+      "event_title": "The housing market stops deteriorating, but the shortage is far from being resolved",
+      "event_url": "https://www.letemps.ch/articles/le-marche-du-logement-cesse-de-se-degrader-mais-la-penurie-est-loin-d-etre-resorbee",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.67,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Continued housing shortage reflects insufficient institutional action, enabling harm to right to adequate housing. | The increase in construction permits for rental housing and stabilization of supply are positive steps toward addressing Switzerland's housing crisis, aligning with SDG 11 (Sustainable Cities) and SDG 1 (No Poverty). However, the persistent shortage and lack o",
+      "tx_hash": "5iN7YWmTTiTkZjYQ5mwKxuLdam41pTovsnjA6MYtaJuSR7zhsagcWsPrWEP1r4Fkm4ahVEcxGKSCLvxonkFMkN1Q",
+      "created_at": "2026-07-30T00:35:18.779857+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Increase in construction permits for rental housing (52,000 units, 11% annual growth), signaling a potential easing of housing shortages in Switzerland.\", \"affected_sdgs\": [11, 8, 1], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Stabilization of rental housing supply and deceleration in the decline of vacant housing, indicating a possible bottoming out of the housing crisis.\", \"affected_sdgs\": [11, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Housing shortage remains unresolved, with insufficient progress to significantly reduce pressure on tenants, particularly in rental markets.\", \"affected_sdgs\": [11, 1, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Construction permits for individual homes and condominiums continue to decline, limiting housing diversity and accessibility for middle-income groups.\", \"affected_sdgs\": [11, 8], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5794,
       "event_title": "The urban green revolution continues: Ecologistas en Acción expands and reissues its Manual of the tree in the city",
@@ -133336,8 +133359,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.161,
-        "events": 62
+        "burn_ratio": 0.159,
+        "events": 63
       },
       {
         "region": "Oceania",
@@ -133373,8 +133396,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.839,
-        "events": 62
+        "mint_ratio": 0.841,
+        "events": 63
       }
     ],
     "supply_trend_7d": [
@@ -133410,7 +133433,7 @@
       },
       {
         "date": "2026-07-30",
-        "net_minted": 0,
+        "net_minted": 150000,
         "net_burned": 50000
       }
     ],
@@ -133428,7 +133451,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 40,
-        "negative": 197,
+        "negative": 198,
         "event_ids_positive": [
           5794,
           5760,
@@ -133472,6 +133495,7 @@
           5557
         ],
         "event_ids_negative": [
+          5795,
           5793,
           5792,
           5791,
@@ -133673,7 +133697,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 171,
+        "negative": 172,
         "event_ids_positive": [
           5794,
           5760,
@@ -133698,6 +133722,7 @@
           5561
         ],
         "event_ids_negative": [
+          5795,
           5793,
           5791,
           5790,
@@ -134162,11 +134187,11 @@
       "niche_pct": 78.3,
       "mainstream_pct": 21.7,
       "total_sources_used": 92,
-      "articles_processed": 238
+      "articles_processed": 239
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 238,
+      "total_events": 239,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -134341,10 +134366,11 @@
       },
       {
         "name": "Construction",
-        "count": 16,
+        "count": 17,
         "burn_count": 2,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          5795,
           5772,
           5759,
           5747,
@@ -134454,14 +134480,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 198,
+      "total_mint": 199,
       "direct_action": {
-        "count": 187,
-        "pct": 94.4
+        "count": 188,
+        "pct": 94.5
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 5.1
+        "pct": 5.0
       },
       "untyped": {
         "count": 1,
@@ -134469,9 +134495,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3919,
+      "total_mint": 3920,
       "direct_action": {
-        "count": 3159,
+        "count": 3160,
         "pct": 80.6
       },
       "editorial_alarm": {
@@ -134485,8 +134511,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 66,
-      "institutional": 172,
-      "citizen_ratio": 0.277,
+      "institutional": 173,
+      "citizen_ratio": 0.276,
       "daily": [
         {
           "date": "2026-07-24",
@@ -134521,7 +134547,7 @@
         {
           "date": "2026-07-30",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -134593,6 +134619,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5795,
         5794,
         5792,
         5791,
