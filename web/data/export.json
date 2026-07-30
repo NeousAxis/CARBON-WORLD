@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-30T08:06:06.988750+00:00",
-  "total_events": 5812,
-  "total_burned": 7702944725,
+  "generated_at": "2026-07-30T08:37:13.774409+00:00",
+  "total_events": 5813,
+  "total_burned": 7702994725,
   "total_minted": 8335389589,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5813,
+      "event_title": "Administrative litigation filed against the ammonia plant in Baltanás",
+      "event_url": "https://www.ecologistasenaccion.org/374329/presentado-recurso-contencioso-administrativo-contra-la-planta-de-amoniaco-de-baltanas/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "decision": "BURN",
+      "amount_crbn": 50000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Legal challenge enforces environmental safeguards, punishing potential harm of the ammonia plant. | The legal challenge represents a positive enforcement of environmental governance (SDGs 13/15/16) and upholds procedural justice (UDHR). However, the project's potential role in energy transition (SDG 7) and the uncertainty around its environmental risks create ethical tension. Th",
+      "tx_hash": "57nWuxoRBnMJf8aAjuUMncpXXbY38ohKHk2BbdQhLrm8WnRfTdA2of5Sjic6DK3bCJXPLKKwCyjq1D8GszRpcAK1",
+      "created_at": "2026-07-30T08:37:08.006882+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Filing of an administrative litigation against the approval of an ammonia/hydrogen plant, challenging its environmental authorization. Represents legal opposition to a potentially harmful industrial project.\", \"affected_sdgs\": [13, 15, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential delay or obstruction of a project that could contribute to clean energy transition (hydrogen production) if managed with strict environmental safeguards.\", \"affected_sdgs\": [7, 9], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Lack of clarity on whether the plant's environmental risks (e.g., nitrogen cycle disruption, local pollution) were adequately assessed in the original authorization, leaving room for regulatory gaps.\", \"affected_sdgs\": [6, 11, 14], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 532000
+    },
     {
       "id": 5812,
       "event_title": "Did a tourist tax save Magaluf?",
@@ -133718,8 +133741,8 @@
       },
       {
         "country": "Spain",
-        "count": 5,
-        "total_amount": 2180740
+        "count": 6,
+        "total_amount": 2230740
       },
       {
         "country": "Brazil",
@@ -133750,8 +133773,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.167,
-        "events": 66
+        "burn_ratio": 0.179,
+        "events": 67
       },
       {
         "region": "Latin America",
@@ -133787,8 +133810,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.833,
-        "events": 66
+        "mint_ratio": 0.821,
+        "events": 67
       }
     ],
     "supply_trend_7d": [
@@ -133825,25 +133848,26 @@
       {
         "date": "2026-07-30",
         "net_minted": 26275400,
-        "net_burned": 1737700
+        "net_burned": 1787700
       }
     ],
     "event_of_the_day": {
-      "id": 5756,
-      "event_title": "War in the Middle East: The United States and Saudi Arabia take an unprecedented step by jointly striking Iraq",
-      "decision": "MINT",
-      "amount_crbn": 7480000,
-      "final_score": -7.03,
-      "confidence": 8,
-      "country": null,
-      "region": null,
-      "created_at": "2026-07-29T08:08:49.262890+00:00"
+      "id": 5802,
+      "event_title": "Study warns about climate change impact on ecological restoration",
+      "decision": "BURN",
+      "amount_crbn": 1337700,
+      "final_score": 6.37,
+      "confidence": 7,
+      "country": "Brazil",
+      "region": "Latin America",
+      "created_at": "2026-07-30T03:35:21.915502+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 42,
+        "positive": 43,
         "negative": 213,
         "event_ids_positive": [
+          5813,
           5809,
           5802,
           5794,
@@ -134104,9 +134128,10 @@
         ]
       },
       "UDHR": {
-        "positive": 22,
+        "positive": 23,
         "negative": 186,
         "event_ids_positive": [
+          5813,
           5809,
           5794,
           5760,
@@ -134537,9 +134562,10 @@
         ]
       },
       "PB": {
-        "positive": 20,
+        "positive": 21,
         "negative": 63,
         "event_ids_positive": [
+          5813,
           5802,
           5794,
           5750,
@@ -134632,11 +134658,11 @@
       "niche_pct": 75.0,
       "mainstream_pct": 25.0,
       "total_sources_used": 92,
-      "articles_processed": 256
+      "articles_processed": 257
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 256,
+      "total_events": 257,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -134731,6 +134757,36 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Energy",
+        "count": 22,
+        "burn_count": 7,
+        "mint_count": 15,
+        "event_ids": [
+          5813,
+          5809,
+          5792,
+          5788,
+          5781,
+          5763,
+          5747,
+          5739,
+          5730,
+          5723,
+          5715,
+          5701,
+          5686,
+          5668,
+          5652,
+          5649,
+          5622,
+          5616,
+          5615,
+          5584,
+          5571,
+          5567
+        ]
+      },
+      {
         "name": "Finance",
         "count": 21,
         "burn_count": 4,
@@ -134757,35 +134813,6 @@
           5597,
           5595,
           5560
-        ]
-      },
-      {
-        "name": "Energy",
-        "count": 21,
-        "burn_count": 6,
-        "mint_count": 15,
-        "event_ids": [
-          5809,
-          5792,
-          5788,
-          5781,
-          5763,
-          5747,
-          5739,
-          5730,
-          5723,
-          5715,
-          5701,
-          5686,
-          5668,
-          5652,
-          5649,
-          5622,
-          5616,
-          5615,
-          5584,
-          5571,
-          5567
         ]
       },
       {
@@ -134908,14 +134935,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 42,
+      "total_burn": 43,
       "direct_action": {
-        "count": 40,
-        "pct": 95.2
+        "count": 41,
+        "pct": 95.3
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 4.8
+        "pct": 4.7
       },
       "untyped": {
         "count": 0,
@@ -134923,9 +134950,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1869,
+      "total_burn": 1870,
       "direct_action": {
-        "count": 1460,
+        "count": 1461,
         "pct": 78.1
       },
       "editorial_consciousness": {
@@ -134969,8 +134996,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 73,
-      "institutional": 183,
-      "citizen_ratio": 0.285,
+      "institutional": 184,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-07-24",
@@ -135005,7 +135032,7 @@
         {
           "date": "2026-07-30",
           "citizen": 7,
-          "institutional": 12
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -135084,6 +135111,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5813,
         5811,
         5810,
         5809,
