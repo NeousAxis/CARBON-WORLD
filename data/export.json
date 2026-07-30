@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-30T12:05:52.385253+00:00",
-  "total_events": 5821,
+  "generated_at": "2026-07-30T12:36:36.697791+00:00",
+  "total_events": 5822,
   "total_burned": 7702994725,
-  "total_minted": 8343415989,
+  "total_minted": 8350175989,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5822,
+      "event_title": "The World Bank Is Pouring Billions of Dollars into Large-scale Factory Farms",
+      "event_url": "https://sentientmedia.org/the-world-bank-pouring-billions-into-factory-farms/",
+      "event_source": "Sentient Media",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -4.25,
+      "confidence": 8,
+      "justification": "World Bank funding of factory farms directly enables climate harm, biodiversity loss, and rights violations at scale. | The World Bank's $13 billion investment in industrial animal agriculture represents a severe misalignment with global sustainability goals. It directly undermines climate action, biodiversity, and food security while violating animal rights and indigenous land rights. The action contradicts the institution's stated climate commitments, eroding trust in multilateral development ",
+      "tx_hash": "3z4KYbZUj5HymC4BURfs3NMosf4M4FLQmeZ8AaAqA1WeoMTitzYTA4wzKp2jrecc7LnrDPw3o1bL2zJaVj8iTFRU",
+      "created_at": "2026-07-30T12:36:31.280632+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"World Bank funding of large-scale factory farms directly increases industrial animal agriculture, accelerating climate change, biodiversity loss, and environmental degradation.\", \"affected_sdgs\": [2, 12, 13, 14, 15], \"violated_rights\": [\"Animal\", \"UDHR Article 25 (right to adequate standard of living)\", \"UNDRIP (indigenous land rights)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"UNDRIP\", \"PB\"]}, {\"description\": \"Investment in factory farming undermines sustainable agriculture and food security, exacerbating hunger and inequality in developing nations.\", \"affected_sdgs\": [1, 2, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Funding contradicts World Bank's own climate commitments, signaling institutional hypocrisy and weakening global climate action frameworks.\", \"affected_sdgs\": [13, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5821,
       "event_title": "Facing the demolition of the cooling towers of As Pontes",
@@ -134031,7 +134054,7 @@
       },
       {
         "date": "2026-07-30",
-        "net_minted": 34241400,
+        "net_minted": 41001400,
         "net_burned": 1787700
       }
     ],
@@ -134049,7 +134072,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 43,
-        "negative": 220,
+        "negative": 221,
         "event_ids_positive": [
           5813,
           5809,
@@ -134096,6 +134119,7 @@
           5557
         ],
         "event_ids_negative": [
+          5822,
           5821,
           5820,
           5818,
@@ -134320,7 +134344,7 @@
       },
       "UDHR": {
         "positive": 23,
-        "negative": 193,
+        "negative": 194,
         "event_ids_positive": [
           5813,
           5809,
@@ -134347,6 +134371,7 @@
           5561
         ],
         "event_ids_negative": [
+          5822,
           5821,
           5820,
           5818,
@@ -134668,7 +134693,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 52,
+        "negative": 53,
         "event_ids_positive": [
           5750,
           5730,
@@ -134677,6 +134702,7 @@
           5558
         ],
         "event_ids_negative": [
+          5822,
           5817,
           5814,
           5806,
@@ -134733,7 +134759,7 @@
       },
       "Animal": {
         "positive": 6,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           5730,
           5710,
@@ -134743,6 +134769,7 @@
           5557
         ],
         "event_ids_negative": [
+          5822,
           5803,
           5787,
           5765,
@@ -134767,7 +134794,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 66,
+        "negative": 67,
         "event_ids_positive": [
           5813,
           5802,
@@ -134792,6 +134819,7 @@
           5557
         ],
         "event_ids_negative": [
+          5822,
           5821,
           5820,
           5818,
@@ -134862,14 +134890,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 75.3,
-      "mainstream_pct": 24.7,
-      "total_sources_used": 93,
-      "articles_processed": 264
+      "niche_pct": 75.5,
+      "mainstream_pct": 24.5,
+      "total_sources_used": 94,
+      "articles_processed": 265
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 264,
+      "total_events": 265,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -134935,6 +134963,15 @@
         ]
       },
       {
+        "name": "World Bank",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          5822
+        ]
+      },
+      {
         "name": "African Union",
         "count": 1,
         "burn_count": 0,
@@ -134951,18 +134988,40 @@
         "event_ids": [
           5787
         ]
-      },
-      {
-        "name": "EU Commission",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5693
-        ]
       }
     ],
     "top_sectors_7d": [
+      {
+        "name": "Finance",
+        "count": 23,
+        "burn_count": 4,
+        "mint_count": 19,
+        "event_ids": [
+          5822,
+          5817,
+          5812,
+          5809,
+          5797,
+          5789,
+          5767,
+          5750,
+          5735,
+          5730,
+          5702,
+          5679,
+          5672,
+          5670,
+          5667,
+          5649,
+          5645,
+          5642,
+          5632,
+          5626,
+          5597,
+          5595,
+          5560
+        ]
+      },
       {
         "name": "Energy",
         "count": 23,
@@ -134992,36 +135051,6 @@
           5584,
           5571,
           5567
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 22,
-        "burn_count": 4,
-        "mint_count": 18,
-        "event_ids": [
-          5817,
-          5812,
-          5809,
-          5797,
-          5789,
-          5767,
-          5750,
-          5735,
-          5730,
-          5702,
-          5679,
-          5672,
-          5670,
-          5667,
-          5649,
-          5645,
-          5642,
-          5632,
-          5626,
-          5597,
-          5595,
-          5560
         ]
       },
       {
@@ -135132,15 +135161,15 @@
         ]
       },
       {
-        "name": "Water",
+        "name": "Agriculture",
         "count": 4,
-        "burn_count": 0,
-        "mint_count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
         "event_ids": [
-          5776,
-          5709,
-          5663,
-          5636
+          5822,
+          5763,
+          5750,
+          5665
         ]
       }
     ],
@@ -135175,9 +135204,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 221,
+      "total_mint": 222,
       "direct_action": {
-        "count": 208,
+        "count": 209,
         "pct": 94.1
       },
       "editorial_alarm": {
@@ -135190,9 +135219,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3942,
+      "total_mint": 3943,
       "direct_action": {
-        "count": 3180,
+        "count": 3181,
         "pct": 80.7
       },
       "editorial_alarm": {
@@ -135205,9 +135234,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 73,
+      "citizen": 74,
       "institutional": 191,
-      "citizen_ratio": 0.277,
+      "citizen_ratio": 0.279,
       "daily": [
         {
           "date": "2026-07-24",
@@ -135241,11 +135270,12 @@
         },
         {
           "date": "2026-07-30",
-          "citizen": 7,
+          "citizen": 8,
           "institutional": 20
         }
       ],
       "event_ids_citizen": [
+        5822,
         5812,
         5806,
         5804,
