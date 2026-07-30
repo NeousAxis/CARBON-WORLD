@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-30T01:36:20.626236+00:00",
-  "total_events": 5797,
+  "generated_at": "2026-07-30T02:05:41.275314+00:00",
+  "total_events": 5798,
   "total_burned": 7701257025,
-  "total_minted": 8317348189,
+  "total_minted": 8317498189,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5798,
+      "event_title": "Optus sued in Federal Court over network outage",
+      "event_url": "https://www.abc.net.au/news/2026-07-30/acma-takes-optus-to-federal-court-over-2025-outage/106975412",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 1.83,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Legal action enforces accountability but does not fully mitigate systemic risks or past harms. | The lawsuit by ACMA represents a positive enforcement of accountability for critical infrastructure, aligning with SDGs 9 (Industry/Infrastructure) and 16 (Peace/Justice). However, the underlying outage's harm to public safety (SDG 3) and the potential for recurring systemic risks t",
+      "tx_hash": "3GemXR2e4PyvTVxPpXtnju2cKtb8fh1f5EdwSiRMVxf7jNvfBrt3qi5w7hjghYgdAnKz6wpXhuYQv5C7Uh46dUuk",
+      "created_at": "2026-07-30T02:05:34.828500+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Regulatory authority (ACMA) takes legal action against a telecommunications provider for failing to ensure emergency service access, reinforcing accountability for critical infrastructure reliability.\", \"affected_sdgs\": [3, 9, 11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The outage itself (prior event) disrupted emergency communications, potentially endangering lives and violating the right to safety and access to emergency services.\", \"affected_sdgs\": [3, 9, 11], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Legal action may not fully address systemic vulnerabilities in telecommunications infrastructure, leaving room for future failures.\", \"affected_sdgs\": [9, 11], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5797,
       "event_title": "Trump cuts WHO off from Gavi vaccine alliance funding",
@@ -133410,8 +133433,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.1,
-        "events": 10
+        "burn_ratio": 0.091,
+        "events": 11
       },
       {
         "region": "Latin America",
@@ -133437,8 +133460,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.9,
-        "events": 10
+        "mint_ratio": 0.909,
+        "events": 11
       },
       {
         "region": "Europe",
@@ -133479,7 +133502,7 @@
       },
       {
         "date": "2026-07-30",
-        "net_minted": 8234000,
+        "net_minted": 8384000,
         "net_burned": 50000
       }
     ],
@@ -133497,7 +133520,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 40,
-        "negative": 200,
+        "negative": 201,
         "event_ids_positive": [
           5794,
           5760,
@@ -133541,6 +133564,7 @@
           5557
         ],
         "event_ids_negative": [
+          5798,
           5797,
           5796,
           5795,
@@ -133745,7 +133769,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 174,
+        "negative": 175,
         "event_ids_positive": [
           5794,
           5760,
@@ -133770,6 +133794,7 @@
           5561
         ],
         "event_ids_negative": [
+          5798,
           5797,
           5796,
           5795,
@@ -134238,14 +134263,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 78.3,
-      "mainstream_pct": 21.7,
+      "niche_pct": 77.2,
+      "mainstream_pct": 22.8,
       "total_sources_used": 92,
-      "articles_processed": 241
+      "articles_processed": 242
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 241,
+      "total_events": 242,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -134395,6 +134420,32 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 18,
+        "burn_count": 2,
+        "mint_count": 16,
+        "event_ids": [
+          5798,
+          5795,
+          5772,
+          5759,
+          5747,
+          5739,
+          5728,
+          5721,
+          5717,
+          5709,
+          5699,
+          5693,
+          5686,
+          5683,
+          5672,
+          5649,
+          5560,
+          5559
+        ]
+      },
+      {
         "name": "Defense",
         "count": 18,
         "burn_count": 0,
@@ -134418,31 +134469,6 @@
           5612,
           5606,
           5591
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 17,
-        "burn_count": 2,
-        "mint_count": 15,
-        "event_ids": [
-          5795,
-          5772,
-          5759,
-          5747,
-          5739,
-          5728,
-          5721,
-          5717,
-          5709,
-          5699,
-          5693,
-          5686,
-          5683,
-          5672,
-          5649,
-          5560,
-          5559
         ]
       },
       {
@@ -134536,10 +134562,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 201,
+      "total_mint": 202,
       "direct_action": {
-        "count": 190,
-        "pct": 94.5
+        "count": 191,
+        "pct": 94.6
       },
       "editorial_alarm": {
         "count": 10,
@@ -134551,9 +134577,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3922,
+      "total_mint": 3923,
       "direct_action": {
-        "count": 3162,
+        "count": 3163,
         "pct": 80.6
       },
       "editorial_alarm": {
@@ -134567,8 +134593,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 67,
-      "institutional": 174,
-      "citizen_ratio": 0.278,
+      "institutional": 175,
+      "citizen_ratio": 0.277,
       "daily": [
         {
           "date": "2026-07-24",
@@ -134603,7 +134629,7 @@
         {
           "date": "2026-07-30",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -134676,6 +134702,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5798,
         5797,
         5795,
         5794,
