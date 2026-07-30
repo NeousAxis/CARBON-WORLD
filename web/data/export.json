@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-30T12:36:36.697791+00:00",
-  "total_events": 5822,
+  "generated_at": "2026-07-30T13:06:13.821947+00:00",
+  "total_events": 5824,
   "total_burned": 7702994725,
-  "total_minted": 8350175989,
+  "total_minted": 8357539989,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5824,
+      "event_title": "Nigeria: Investigation - Gas Flares, Poisoned Lives, Regulatory Failures in Nigeria's Oil Fields",
+      "event_url": "https://allafrica.com/stories/202607300037.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": 0.84,
+      "confidence": 7,
+      "justification": "Investigation is a positive step but ongoing flaring harms dominate, yielding a net negative assessment. | The investigation marks a constructive step toward accountability, yet the current scale of flaring and its health and environmental damages outweigh the immediate benefits, resulting in a net negative ethical balance.",
+      "tx_hash": "49fzYZGPAx1q2rn7SJzyjgvcNq91Hgu7KqXxcFRaepaTmpnidkgvazhr12RuJP15M9AEaqmbGaDjYBk6kGMg1cJS",
+      "created_at": "2026-07-30T13:06:07.630586+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Nigeria",
+      "region": "Africa",
+      "administration": "Nigeria-APC",
+      "positive_aspects_json": "[{\"description\": \"National investigation into gas flaring and regulatory failures launched, opening path to emission reductions and health protections.\", \"affected_sdgs\": [3, 6, 7, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ongoing gas flares release methane and pollutants, harming health, water quality, marine and terrestrial ecosystems.\", \"affected_sdgs\": [3, 6, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\", \"UNDRIP Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 5823,
+      "event_title": "Commission disburses another €3.47 billion to Ukraine for drones, missiles, air defence and fighter jets",
+      "event_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1710",
+      "event_source": "European Commission Press",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -3.15,
+      "confidence": 8,
+      "justification": "Military funding risks escalating conflict and diverting resources from humanitarian needs, outweighing defensive benefits. | While the disbursement supports Ukraine's right to self-defense under international law, the prioritization of military funding over humanitarian and environmental needs raises significant ethical concerns. The action risks exacerbating conflict, diverting critical resources, and causing long-term harm to civilians and ecosystems, outweighing its immediate defensive benef",
+      "tx_hash": "3RPxARu1rJFhB96ipnR3Xe33EnzQSjrRNJB21xiTfjggZjDUdAQQx29uG6DkNJt6VvywTuekXjkUetHUdDQuNrvz",
+      "created_at": "2026-07-30T13:06:05.374876+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Financial support to Ukraine enhances its capacity to defend against aggression, potentially reducing civilian casualties and preserving territorial integrity.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Funding for drones, missiles, and fighter jets increases military expenditure, diverting resources from humanitarian, social, and environmental needs, and risks escalating conflict.\", \"affected_sdgs\": [1, 2, 3, 4, 6, 7, 13, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Military aid may prolong the conflict, leading to further destruction of infrastructure, displacement of populations, and environmental degradation (e.g., pollution, biodiversity loss).\", \"affected_sdgs\": [11, 13, 14, 15], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 25\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5822,
       "event_title": "The World Bank Is Pouring Billions of Dollars into Large-scale Factory Farms",
@@ -133975,8 +134021,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.188,
-        "events": 16
+        "burn_ratio": 0.176,
+        "events": 17
       },
       {
         "region": "Europe",
@@ -134054,7 +134100,7 @@
       },
       {
         "date": "2026-07-30",
-        "net_minted": 41001400,
+        "net_minted": 48365400,
         "net_burned": 1787700
       }
     ],
@@ -134072,7 +134118,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 43,
-        "negative": 221,
+        "negative": 223,
         "event_ids_positive": [
           5813,
           5809,
@@ -134119,6 +134165,8 @@
           5557
         ],
         "event_ids_negative": [
+          5824,
+          5823,
           5822,
           5821,
           5820,
@@ -134344,7 +134392,7 @@
       },
       "UDHR": {
         "positive": 23,
-        "negative": 194,
+        "negative": 196,
         "event_ids_positive": [
           5813,
           5809,
@@ -134371,6 +134419,8 @@
           5561
         ],
         "event_ids_negative": [
+          5824,
+          5823,
           5822,
           5821,
           5820,
@@ -134617,7 +134667,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 62,
+        "negative": 63,
         "event_ids_positive": [
           5760,
           5750,
@@ -134627,6 +134677,7 @@
           5580
         ],
         "event_ids_negative": [
+          5824,
           5816,
           5814,
           5811,
@@ -134693,7 +134744,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 53,
+        "negative": 55,
         "event_ids_positive": [
           5750,
           5730,
@@ -134702,6 +134753,8 @@
           5558
         ],
         "event_ids_negative": [
+          5824,
+          5823,
           5822,
           5817,
           5814,
@@ -134794,7 +134847,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 67,
+        "negative": 69,
         "event_ids_positive": [
           5813,
           5802,
@@ -134819,6 +134872,8 @@
           5557
         ],
         "event_ids_negative": [
+          5824,
+          5823,
           5822,
           5821,
           5820,
@@ -134890,14 +134945,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 75.5,
-      "mainstream_pct": 24.5,
+      "niche_pct": 74.5,
+      "mainstream_pct": 25.5,
       "total_sources_used": 94,
-      "articles_processed": 265
+      "articles_processed": 267
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 265,
+      "total_events": 267,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -134992,42 +135047,12 @@
     ],
     "top_sectors_7d": [
       {
-        "name": "Finance",
-        "count": 23,
-        "burn_count": 4,
-        "mint_count": 19,
-        "event_ids": [
-          5822,
-          5817,
-          5812,
-          5809,
-          5797,
-          5789,
-          5767,
-          5750,
-          5735,
-          5730,
-          5702,
-          5679,
-          5672,
-          5670,
-          5667,
-          5649,
-          5645,
-          5642,
-          5632,
-          5626,
-          5597,
-          5595,
-          5560
-        ]
-      },
-      {
         "name": "Energy",
-        "count": 23,
+        "count": 24,
         "burn_count": 7,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          5824,
           5821,
           5813,
           5809,
@@ -135054,11 +135079,44 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 21,
-        "burn_count": 0,
-        "mint_count": 21,
+        "name": "Finance",
+        "count": 24,
+        "burn_count": 4,
+        "mint_count": 20,
         "event_ids": [
+          5823,
+          5822,
+          5817,
+          5812,
+          5809,
+          5797,
+          5789,
+          5767,
+          5750,
+          5735,
+          5730,
+          5702,
+          5679,
+          5672,
+          5670,
+          5667,
+          5649,
+          5645,
+          5642,
+          5632,
+          5626,
+          5597,
+          5595,
+          5560
+        ]
+      },
+      {
+        "name": "Defense",
+        "count": 22,
+        "burn_count": 0,
+        "mint_count": 22,
+        "event_ids": [
+          5823,
           5807,
           5800,
           5799,
@@ -135204,10 +135262,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 222,
+      "total_mint": 224,
       "direct_action": {
-        "count": 209,
-        "pct": 94.1
+        "count": 211,
+        "pct": 94.2
       },
       "editorial_alarm": {
         "count": 12,
@@ -135215,13 +135273,13 @@
       },
       "untyped": {
         "count": 1,
-        "pct": 0.5
+        "pct": 0.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3943,
+      "total_mint": 3945,
       "direct_action": {
-        "count": 3181,
+        "count": 3183,
         "pct": 80.7
       },
       "editorial_alarm": {
@@ -135235,8 +135293,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 74,
-      "institutional": 191,
-      "citizen_ratio": 0.279,
+      "institutional": 193,
+      "citizen_ratio": 0.277,
       "daily": [
         {
           "date": "2026-07-24",
@@ -135271,7 +135329,7 @@
         {
           "date": "2026-07-30",
           "citizen": 8,
-          "institutional": 20
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -135351,6 +135409,8 @@
         5557
       ],
       "event_ids_institutional": [
+        5824,
+        5823,
         5821,
         5820,
         5818,
