@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-31T00:35:59.658296+00:00",
-  "total_events": 5843,
-  "total_burned": 7712955975,
-  "total_minted": 8374719189,
+  "generated_at": "2026-07-31T01:07:22.960477+00:00",
+  "total_events": 5845,
+  "total_burned": 7713168075,
+  "total_minted": 8380129189,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5845,
+      "event_title": "Trump nominee vows to sharpen US media challenge to China",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3362452/trump-nominee-vows-sharpen-us-media-challenge-china?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -3.07,
+      "confidence": 7,
+      "justification": "Escalation of state-driven media confrontation risks undermining free expression and fueling geopolitical instability. | While the intent to counter disinformation aligns with SDG 16 (Peace, Justice, and Strong Institutions), the action risks entrenching a zero-sum media conflict that undermines journalistic integrity and exacerbates geopolitical tensions. The potential for state-driven propaganda and surveillance of diaspora groups introduces significant ethical costs, outweighing the limited b",
+      "tx_hash": "F7potse1URmdqAnFpbmkeSPynKqZBExG7ga6saKYiARVym5afMeN7bpiHx4NAETynX8VvwGDRS2de6SSTgGfC1v",
+      "created_at": "2026-07-31T01:07:17.096433+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Expansion of USAGM's media outreach to counter disinformation and promote free expression, particularly in regions under authoritarian influence.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Escalation of geopolitical media confrontation with China, risking further polarization, censorship, and suppression of independent journalism in both countries.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential instrumentalization of media for state propaganda, undermining credibility and independence of USAGM outlets like VOA and Radio Free Asia.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Targeting diaspora groups may exacerbate surveillance and repression of ethnic minorities, including Chinese diaspora communities, violating rights to privacy and freedom of association.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 20\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 5844,
+      "event_title": "Middle East live: Trump says Board of Peace reaches Hamas disarmament deal",
+      "event_url": "https://www.france24.com/en/middle-east/20260730-middle-east-live-trump-says-board-of-peace-reaches-hamas-disarmament-deal",
+      "event_source": "France 24 EN",
+      "decision": "BURN",
+      "amount_crbn": 212100,
+      "final_score": 6.06,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Peace deal markedly reduces conflict and advances human rights, outweighing legitimacy concerns. | The disarmament agreement offers a strong step toward peace and human security, aligning with key SDGs and human‑rights norms. However, concerns about legitimising a militant group temper the overall benefit, leaving the net impact cautiously optimistic.",
+      "tx_hash": "5hMsG5jZkP2JnaeySA2DrKDznS8cdFz9isvkfCpSdJJ4Ha9zqWEJSg7Pcv7GTYbyYDN4NCyW4zVJrnCjBn5wMj4m",
+      "created_at": "2026-07-31T01:07:14.951204+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Hamas disarmament deal reduces armed conflict and promotes lasting peace in the region\", \"affected_sdgs\": [16, 3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deal may legitimize Hamas, risking security setbacks and possible rights violations\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 5843,
       "event_title": "Italy and Spain clash over Schengen as Ceuta migration spat boils over",
@@ -134399,8 +134445,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 55,
-        "total_amount": 50081050
+        "count": 56,
+        "total_amount": 55491050
       },
       {
         "country": "Spain",
@@ -134453,8 +134499,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.191,
-        "events": 68
+        "burn_ratio": 0.188,
+        "events": 69
       },
       {
         "region": "Europe",
@@ -134537,8 +134583,8 @@
       },
       {
         "date": "2026-07-31",
-        "net_minted": 6100400,
-        "net_burned": 0
+        "net_minted": 11510400,
+        "net_burned": 212100
       }
     ],
     "event_of_the_day": {
@@ -134554,9 +134600,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 46,
-        "negative": 239,
+        "positive": 47,
+        "negative": 240,
         "event_ids_positive": [
+          5844,
           5839,
           5831,
           5827,
@@ -134605,6 +134652,7 @@
           5557
         ],
         "event_ids_negative": [
+          5845,
           5843,
           5842,
           5841,
@@ -134847,9 +134895,10 @@
         ]
       },
       "UDHR": {
-        "positive": 24,
-        "negative": 212,
+        "positive": 25,
+        "negative": 213,
         "event_ids_positive": [
+          5844,
           5827,
           5813,
           5809,
@@ -134876,6 +134925,7 @@
           5561
         ],
         "event_ids_negative": [
+          5845,
           5843,
           5842,
           5841,
@@ -135441,11 +135491,11 @@
       "niche_pct": 72.9,
       "mainstream_pct": 27.1,
       "total_sources_used": 96,
-      "articles_processed": 286
+      "articles_processed": 288
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 286,
+      "total_events": 288,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -135734,9 +135784,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 46,
+      "total_burn": 47,
       "direct_action": {
-        "count": 44,
+        "count": 45,
         "pct": 95.7
       },
       "editorial_consciousness": {
@@ -135749,9 +135799,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1873,
+      "total_burn": 1874,
       "direct_action": {
-        "count": 1464,
+        "count": 1465,
         "pct": 78.2
       },
       "editorial_consciousness": {
@@ -135760,13 +135810,13 @@
       },
       "untyped": {
         "count": 267,
-        "pct": 14.3
+        "pct": 14.2
       }
     },
     "mint_composition_7d": {
-      "total_mint": 240,
+      "total_mint": 241,
       "direct_action": {
-        "count": 227,
+        "count": 228,
         "pct": 94.6
       },
       "editorial_alarm": {
@@ -135779,9 +135829,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3961,
+      "total_mint": 3962,
       "direct_action": {
-        "count": 3199,
+        "count": 3200,
         "pct": 80.8
       },
       "editorial_alarm": {
@@ -135795,8 +135845,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 77,
-      "institutional": 209,
-      "citizen_ratio": 0.269,
+      "institutional": 211,
+      "citizen_ratio": 0.267,
       "daily": [
         {
           "date": "2026-07-25",
@@ -135831,7 +135881,7 @@
         {
           "date": "2026-07-31",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -135914,6 +135964,8 @@
         5557
       ],
       "event_ids_institutional": [
+        5845,
+        5844,
         5842,
         5841,
         5840,
