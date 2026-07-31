@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-31T18:06:42.681718+00:00",
-  "total_events": 5887,
+  "generated_at": "2026-07-31T18:37:13.331925+00:00",
+  "total_events": 5889,
   "total_burned": 7720745675,
-  "total_minted": 8419102339,
+  "total_minted": 8426087339,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5889,
+      "event_title": "Orbia Court Ruling Wipes Out US$1.14 Billion Cartel Claim",
+      "event_url": "https://www.riotimesonline.com/orbia-court-ruling-wipes-out-us1-14-billion-cartel-claim/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -1.82,
+      "confidence": 8,
+      "justification": "Ruling undermines fair competition and legal accountability, outweighing corporate stability benefits. | The ruling favors corporate stability and legal finality but risks perpetuating anticompetitive practices and denying redress to aggrieved parties. The negative impact on fair market competition and trust in legal institutions outweighs the benefits of avoiding financial instability for the defendant.",
+      "tx_hash": "3F1wxnkny6ABt9JM89z3V1f5UvG2vyVDBHQvVZUFsxeS44rJ2DEUXE16EFxMKqpQzEskoVMHG1WXpCeWN9euJiWj",
+      "created_at": "2026-07-31T18:37:07.045476+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Court ruling dismisses lawsuits against Orbia, potentially avoiding prolonged legal uncertainty and financial instability for the company and its employees.\", \"affected_sdgs\": [8, 9, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Dismissal of €1.14 billion cartel damages claims may enable anticompetitive behavior, undermining fair market practices and consumer rights.\", \"affected_sdgs\": [8, 10, 12, 16], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential denial of justice for claimants (Shell Chemicals Europe and Repsol entities), weakening trust in legal mechanisms for corporate accountability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 5888,
+      "event_title": "Online Betting and Adolescent Mental Health: A Growing Challenge for Families",
+      "event_url": "https://www.clarin.com/sociedad/apuestas-online-salud-mental-adolescente-desafio-creciente-familias_0_u1Twt80cB9.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -1.8,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The action (UNICEF's tools) is positive but insufficient to counter the severe harm of adolescent gambling. | While UNICEF's intervention is a positive step to mitigate harm and raise awareness, the underlying issue of widespread adolescent gambling reflects a severe failure in safeguarding children's rights and mental health. The magnitude of the problem (25% prevalence) outwe",
+      "tx_hash": "WkKCR8BUAaiDMzN9SYSympz4P9aZKLyRSi2TnyDKkF2G3pQ2ucWHnBzffNjuMn4vt7v1miKU5dWQmBo1MMSi4vT",
+      "created_at": "2026-07-31T18:37:04.386146+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"UNICEF launches tools to prevent, accompany, and open dialogue on adolescent online betting, addressing a growing public health concern.\", \"affected_sdgs\": [3, 4, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"High prevalence of adolescent online betting (1 in 4) indicates systemic failure to protect minors from gambling-related harm, including mental health risks and financial exploitation.\", \"affected_sdgs\": [3, 4, 10], \"violated_rights\": [\"CRC Article 3 (best interests of the child)\", \"CRC Article 17 (access to harmful content)\", \"UDHR Article 25 (health and well-being)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5887,
       "event_title": "Almost all of Ceuta migrants have returned to Morocco, Spain says",
@@ -135426,8 +135472,8 @@
       },
       {
         "country": "Brazil",
-        "count": 12,
-        "total_amount": 4478100
+        "count": 11,
+        "total_amount": 3811100
       },
       {
         "country": "Germany",
@@ -135549,7 +135595,7 @@
       },
       {
         "date": "2026-07-31",
-        "net_minted": 49983550,
+        "net_minted": 56968550,
         "net_burned": 7789700
       }
     ],
@@ -135566,8 +135612,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 38,
-        "negative": 268,
+        "positive": 37,
+        "negative": 269,
         "event_ids_positive": [
           5884,
           5876,
@@ -135605,10 +135651,11 @@
           5587,
           5585,
           5584,
-          5581,
-          5580
+          5581
         ],
         "event_ids_negative": [
+          5889,
+          5888,
           5887,
           5886,
           5885,
@@ -135875,13 +135922,12 @@
           5588,
           5586,
           5583,
-          5582,
-          5579
+          5582
         ]
       },
       "UDHR": {
-        "positive": 20,
-        "negative": 243,
+        "positive": 19,
+        "negative": 244,
         "event_ids_positive": [
           5876,
           5844,
@@ -135901,10 +135947,11 @@
           5603,
           5601,
           5587,
-          5581,
-          5580
+          5581
         ],
         "event_ids_negative": [
+          5889,
+          5888,
           5887,
           5886,
           5885,
@@ -136146,13 +136193,12 @@
           5588,
           5586,
           5583,
-          5582,
-          5579
+          5582
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 40,
+        "negative": 39,
         "event_ids_positive": [
           5809,
           5760,
@@ -136199,22 +136245,21 @@
           5608,
           5600,
           5592,
-          5583,
-          5579
+          5583
         ]
       },
       "CRC": {
-        "positive": 6,
+        "positive": 5,
         "negative": 88,
         "event_ids_positive": [
           5760,
           5750,
           5623,
           5603,
-          5587,
-          5580
+          5587
         ],
         "event_ids_negative": [
+          5888,
           5887,
           5886,
           5883,
@@ -136301,8 +136346,7 @@
           5624,
           5600,
           5597,
-          5596,
-          5579
+          5596
         ]
       },
       "UNDRIP": {
@@ -136529,9 +136573,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.0,
-      "mainstream_pct": 29.0,
-      "total_sources_used": 93,
+      "niche_pct": 69.6,
+      "mainstream_pct": 30.4,
+      "total_sources_used": 92,
       "articles_processed": 308
     },
     "cache_hit_rate_7d": {
@@ -136572,19 +136616,6 @@
         ]
       },
       {
-        "name": "WHO",
-        "count": 5,
-        "burn_count": 2,
-        "mint_count": 3,
-        "event_ids": [
-          5859,
-          5797,
-          5729,
-          5718,
-          5580
-        ]
-      },
-      {
         "name": "ILO",
         "count": 4,
         "burn_count": 0,
@@ -136594,6 +136625,18 @@
           5877,
           5847,
           5638
+        ]
+      },
+      {
+        "name": "WHO",
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
+        "event_ids": [
+          5859,
+          5797,
+          5729,
+          5718
         ]
       },
       {
@@ -136618,6 +136661,15 @@
         ]
       },
       {
+        "name": "UNICEF",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          5888
+        ]
+      },
+      {
         "name": "World Bank",
         "count": 1,
         "burn_count": 0,
@@ -136625,24 +136677,16 @@
         "event_ids": [
           5822
         ]
-      },
-      {
-        "name": "African Union",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5790
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 30,
+        "count": 31,
         "burn_count": 3,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          5889,
           5868,
           5866,
           5862,
@@ -136840,14 +136884,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 37,
       "direct_action": {
-        "count": 36,
-        "pct": 94.7
+        "count": 35,
+        "pct": 94.6
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 5.3
+        "pct": 5.4
       },
       "untyped": {
         "count": 0,
@@ -136870,10 +136914,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 270,
+      "total_mint": 271,
       "direct_action": {
-        "count": 255,
-        "pct": 94.4
+        "count": 256,
+        "pct": 94.5
       },
       "editorial_alarm": {
         "count": 13,
@@ -136885,9 +136929,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4002,
+      "total_mint": 4004,
       "direct_action": {
-        "count": 3237,
+        "count": 3239,
         "pct": 80.9
       },
       "editorial_alarm": {
@@ -136937,7 +136981,7 @@
         {
           "date": "2026-07-31",
           "citizen": 12,
-          "institutional": 33
+          "institutional": 35
         }
       ],
       "event_ids_citizen": [
@@ -137024,6 +137068,8 @@
         5581
       ],
       "event_ids_institutional": [
+        5889,
+        5888,
         5887,
         5885,
         5884,
@@ -137248,9 +137294,7 @@
         5585,
         5584,
         5583,
-        5582,
-        5580,
-        5579
+        5582
       ]
     }
   }
