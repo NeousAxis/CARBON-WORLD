@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-30T23:36:07.707357+00:00",
-  "total_events": 5841,
+  "generated_at": "2026-07-31T00:05:47.625793+00:00",
+  "total_events": 5842,
   "total_burned": 7712955975,
-  "total_minted": 8368618789,
+  "total_minted": 8368679189,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5842,
+      "event_title": "Gaza: Trump announces a 'historic' agreement for the disarmament of Hamas",
+      "event_url": "https://www.ouest-france.fr/monde/gaza/gaza-trump-annonce-un-accord-historique-pour-le-desarmement-du-hamas-b0886afc-8c6c-11f1-ae39-071763a6d211?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.42,
+      "confidence": 7,
+      "justification": "High risk of human rights violations and lack of local legitimacy outweigh potential conflict reduction benefits. | The agreement presents a potential pathway to reduce armed conflict and civilian harm, aligning with SDG 16 and UDHR principles. However, the risks of coercive enforcement, lack of local legitimacy, and historical precedents of failure introduce significant ethical concerns, particularly regarding human rights violations and undermining self-determination.",
+      "tx_hash": "2C9ih5suswV3xJMzP3GdCQPjwTxxu4PWzCR4hLTY4TYKy6QC6r6WTMPag5TsN3fR5TLdrfu87bj1tSPTUX2BrvCg",
+      "created_at": "2026-07-31T00:05:41.155335+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Announcement of an agreement aimed at disarming Hamas, potentially reducing armed conflict and civilian casualties in Gaza.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Proposed withdrawal of Israeli forces and deployment of an international stabilization force, which could reduce hostilities and improve security.\", \"affected_sdgs\": [16, 3], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Lack of clarity on the enforcement mechanism for disarmament, risking coercive measures that could violate human rights (e.g., forced disarmament, collective punishment).\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for international force to lack legitimacy or accountability, undermining local sovereignty and self-determination (UNDRIP).\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UNDRIP Article 3\", \"UNDRIP Article 4\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Historical context of failed disarmament agreements in conflict zones, raising concerns about long-term feasibility and unintended escalation.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5841,
       "event_title": "Winston Peters ‘inviting a sacking’ with attack on Chinese-born MP, Helen Clark says",
@@ -134353,8 +134376,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 54,
-        "total_amount": 50020650
+        "count": 55,
+        "total_amount": 50081050
       },
       {
         "country": "Spain",
@@ -134407,8 +134430,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.194,
-        "events": 67
+        "burn_ratio": 0.191,
+        "events": 68
       },
       {
         "region": "Europe",
@@ -134460,11 +134483,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-07-24",
-        "net_minted": 13103480,
-        "net_burned": 28062920
-      },
-      {
         "date": "2026-07-25",
         "net_minted": 13056460,
         "net_burned": 1811740
@@ -134493,6 +134511,11 @@
         "date": "2026-07-30",
         "net_minted": 59444200,
         "net_burned": 11748950
+      },
+      {
+        "date": "2026-07-31",
+        "net_minted": 60400,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -134509,7 +134532,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 46,
-        "negative": 237,
+        "negative": 238,
         "event_ids_positive": [
           5839,
           5831,
@@ -134559,6 +134582,7 @@
           5557
         ],
         "event_ids_negative": [
+          5842,
           5841,
           5840,
           5838,
@@ -134800,7 +134824,7 @@
       },
       "UDHR": {
         "positive": 24,
-        "negative": 210,
+        "negative": 211,
         "event_ids_positive": [
           5827,
           5813,
@@ -134828,6 +134852,7 @@
           5561
         ],
         "event_ids_negative": [
+          5842,
           5841,
           5840,
           5838,
@@ -135176,7 +135201,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 60,
+        "negative": 61,
         "event_ids_positive": [
           5750,
           5730,
@@ -135185,6 +135210,7 @@
           5558
         ],
         "event_ids_negative": [
+          5842,
           5840,
           5838,
           5837,
@@ -135389,11 +135415,11 @@
       "niche_pct": 72.9,
       "mainstream_pct": 27.1,
       "total_sources_used": 96,
-      "articles_processed": 284
+      "articles_processed": 285
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 284,
+      "total_events": 285,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -135712,10 +135738,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 238,
+      "total_mint": 239,
       "direct_action": {
-        "count": 225,
-        "pct": 94.5
+        "count": 226,
+        "pct": 94.6
       },
       "editorial_alarm": {
         "count": 12,
@@ -135727,9 +135753,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3959,
+      "total_mint": 3960,
       "direct_action": {
-        "count": 3197,
+        "count": 3198,
         "pct": 80.8
       },
       "editorial_alarm": {
@@ -135743,14 +135769,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 76,
-      "institutional": 208,
-      "citizen_ratio": 0.268,
+      "institutional": 209,
+      "citizen_ratio": 0.267,
       "daily": [
-        {
-          "date": "2026-07-24",
-          "citizen": 9,
-          "institutional": 27
-        },
         {
           "date": "2026-07-25",
           "citizen": 2,
@@ -135780,6 +135801,11 @@
           "date": "2026-07-30",
           "citizen": 10,
           "institutional": 37
+        },
+        {
+          "date": "2026-07-31",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -135861,6 +135887,7 @@
         5557
       ],
       "event_ids_institutional": [
+        5842,
         5841,
         5840,
         5839,
