@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-07-31T14:35:33.152074+00:00",
-  "total_events": 5875,
-  "total_burned": 7713168075,
-  "total_minted": 8409089239,
+  "generated_at": "2026-07-31T15:07:17.647267+00:00",
+  "total_events": 5877,
+  "total_burned": 7714545675,
+  "total_minted": 8409239239,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5877,
+      "event_title": "Dutch unions call 24-hour public transport strike on September 9",
+      "event_url": "https://www.dutchnews.nl/2026/07/dutch-unions-call-24-hour-public-transport-strike-on-september-9/",
+      "event_source": "DutchNews.nl",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.63,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Short-term disruption to public services and marginalized groups outweighs labor rights exercise in immediate impact. | The strike represents a legitimate exercise of labor rights (ILO, UDHR) and may pressure institutions to address worker grievances, supporting SDGs 8 and 10. However, the immediate disruption disproportionately impacts marginalized groups and risks short-term ",
+      "tx_hash": "4jh8hSbzwQfisW5bPriJboyRyK8X3n5kZqDCNtrzm96JUwRbQ1Gm3dQnkguq7xYp6i66dA3EckBKdgbQBhU6saZg",
+      "created_at": "2026-07-31T15:07:10.583819+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Named unions and workers collectively exercise their right to strike to advocate for labor conditions, demonstrating freedom of association and collective bargaining (ILO Core Labor Standards).\", \"affected_sdgs\": [8, 10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Disruption of public transport affects daily commuters, including low-income workers, students, and vulnerable populations, limiting access to work, education, and essential services.\", \"affected_sdgs\": [1, 3, 4, 8, 10, 11], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Short-term increase in private vehicle use due to strike may lead to higher emissions and congestion, undermining climate goals and urban sustainability.\", \"affected_sdgs\": [11, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 5876,
+      "event_title": "Death certificates: The end of paper draws nearer for doctors",
+      "event_url": "http://www.lequotidiendumedecin.fr/liberal-soins-de-ville/certificats-de-deces-la-fin-du-papier-se-rapproche-pour-les-medecins",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "BURN",
+      "amount_crbn": 1377600,
+      "final_score": 6.56,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Digitalization improves efficiency, data accuracy, and sustainability while addressing manageable risks. | The decree largely advances efficiency and environmental goals, but it introduces privacy and equity concerns that must be managed. Overall the action leans positive, though safeguards are essential.",
+      "tx_hash": "65jhkwavorV4DT7Q2tbEwkZu8Gu68y1rE3atRqjcSPPGeGo9nks22TXXN9niPLRUanA6m9TPJH6NwS3mnUk5S9tE",
+      "created_at": "2026-07-31T15:07:07.027918+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Electronic death certificates reduce paper use, lowering waste and emissions.\", \"affected_sdgs\": [12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Faster digital transmission improves mortality statistics, aiding public health planning.\", \"affected_sdgs\": [3, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Digital records raise privacy and data‑security risks for sensitive personal information.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Digital transition may exclude rural or under‑resourced municipalities lacking infrastructure.\", \"affected_sdgs\": [9, 10], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 5875,
       "event_title": "Martin Pfister acknowledges that the lack of information to Churches about the military service of the clergy was an 'error'",
@@ -135176,14 +135222,14 @@
         "total_amount": 1524000
       },
       {
+        "country": "France",
+        "count": 2,
+        "total_amount": 1729600
+      },
+      {
         "country": "Brazil",
         "count": 2,
         "total_amount": 1904800
-      },
-      {
-        "country": "Germany",
-        "count": 2,
-        "total_amount": 1429000
       }
     ],
     "top_regions_sustainable": [
@@ -135199,8 +135245,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.146,
-        "events": 82
+        "burn_ratio": 0.155,
+        "events": 84
       },
       {
         "region": "Latin America",
@@ -135236,8 +135282,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.854,
-        "events": 82
+        "mint_ratio": 0.845,
+        "events": 84
       }
     ],
     "supply_trend_7d": [
@@ -135273,8 +135319,8 @@
       },
       {
         "date": "2026-07-31",
-        "net_minted": 39970450,
-        "net_burned": 212100
+        "net_minted": 40120450,
+        "net_burned": 1589700
       }
     ],
     "event_of_the_day": {
@@ -135290,9 +135336,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 41,
-        "negative": 267,
+        "positive": 42,
+        "negative": 268,
         "event_ids_positive": [
+          5876,
           5844,
           5839,
           5831,
@@ -135336,6 +135383,7 @@
           5570
         ],
         "event_ids_negative": [
+          5877,
           5875,
           5874,
           5873,
@@ -135606,9 +135654,10 @@
         ]
       },
       "UDHR": {
-        "positive": 23,
-        "negative": 239,
+        "positive": 24,
+        "negative": 240,
         "event_ids_positive": [
+          5876,
           5844,
           5827,
           5813,
@@ -135634,6 +135683,7 @@
           5570
         ],
         "event_ids_negative": [
+          5877,
           5875,
           5874,
           5873,
@@ -135877,7 +135927,7 @@
       },
       "ILO": {
         "positive": 5,
-        "negative": 38,
+        "negative": 39,
         "event_ids_positive": [
           5809,
           5760,
@@ -135886,6 +135936,7 @@
           5629
         ],
         "event_ids_negative": [
+          5877,
           5872,
           5863,
           5847,
@@ -136136,9 +136187,10 @@
         ]
       },
       "PB": {
-        "positive": 20,
-        "negative": 78,
+        "positive": 21,
+        "negative": 79,
         "event_ids_positive": [
+          5876,
           5839,
           5827,
           5813,
@@ -136161,6 +136213,7 @@
           5584
         ],
         "event_ids_negative": [
+          5877,
           5871,
           5868,
           5862,
@@ -136246,11 +136299,11 @@
       "niche_pct": 71.9,
       "mainstream_pct": 28.1,
       "total_sources_used": 96,
-      "articles_processed": 310
+      "articles_processed": 312
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 310,
+      "total_events": 312,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -136299,6 +136352,17 @@
         ]
       },
       {
+        "name": "ILO",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          5877,
+          5847,
+          5638
+        ]
+      },
+      {
         "name": "ICC",
         "count": 3,
         "burn_count": 0,
@@ -136307,16 +136371,6 @@
           5653,
           5651,
           5588
-        ]
-      },
-      {
-        "name": "ILO",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          5847,
-          5638
         ]
       },
       {
@@ -136487,10 +136541,11 @@
       },
       {
         "name": "Transport",
-        "count": 14,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          5877,
           5818,
           5785,
           5768,
@@ -136553,14 +136608,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 41,
+      "total_burn": 42,
       "direct_action": {
-        "count": 39,
-        "pct": 95.1
+        "count": 40,
+        "pct": 95.2
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 4.9
+        "pct": 4.8
       },
       "untyped": {
         "count": 0,
@@ -136568,9 +136623,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1874,
+      "total_burn": 1875,
       "direct_action": {
-        "count": 1465,
+        "count": 1466,
         "pct": 78.2
       },
       "editorial_consciousness": {
@@ -136583,9 +136638,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 269,
+      "total_mint": 270,
       "direct_action": {
-        "count": 254,
+        "count": 255,
         "pct": 94.4
       },
       "editorial_alarm": {
@@ -136598,9 +136653,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 3992,
+      "total_mint": 3993,
       "direct_action": {
-        "count": 3228,
+        "count": 3229,
         "pct": 80.9
       },
       "editorial_alarm": {
@@ -136614,8 +136669,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 228,
-      "citizen_ratio": 0.265,
+      "institutional": 230,
+      "citizen_ratio": 0.263,
       "daily": [
         {
           "date": "2026-07-25",
@@ -136650,7 +136705,7 @@
         {
           "date": "2026-07-31",
           "citizen": 8,
-          "institutional": 25
+          "institutional": 27
         }
       ],
       "event_ids_citizen": [
@@ -136738,6 +136793,8 @@
         5567
       ],
       "event_ids_institutional": [
+        5877,
+        5876,
         5875,
         5874,
         5873,
