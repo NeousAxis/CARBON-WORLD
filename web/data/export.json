@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-07-31T23:36:15.666185+00:00",
-  "total_events": 5897,
+  "generated_at": "2026-08-01T00:05:36.452186+00:00",
+  "total_events": 5898,
   "total_burned": 7730681675,
-  "total_minted": 8428764339,
+  "total_minted": 8429064339,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5898,
+      "event_title": "US lawmakers investigate DoorDash’s use of Moonshot AI’s Kimi K2.6 model",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3362616/us-lawmakers-investigate-doordashs-use-moonshot-ais-kimi-k26-model?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.49,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Investigation risks protectionism and innovation stifling, outweighing oversight benefits. | The investigation reflects legitimate oversight concerns (data security, labor impacts) but risks overreach into protectionism. The net ethical balance tilts negative due to potential chilling effects on innovation and global cooperation, though the action itself is procedurally neutral",
+      "tx_hash": "LmdqoABisJrYWfZaA1pwAuBgHiweVkU155pxxuDPuYSED7PXEetdpKN1cyT4r3bLqHBiJwvpyAuYNDy8N6jyLmW",
+      "created_at": "2026-08-01T00:05:31.271282+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US lawmakers initiate oversight of cross-border AI deployment, potentially safeguarding data privacy, national security, and labor standards in digital platforms.\", \"affected_sdgs\": [8, 9, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Investigation may signal protectionist policies that could stifle technological collaboration, innovation, and access to cost-effective AI solutions for businesses and consumers.\", \"affected_sdgs\": [9, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential escalation of US-China tech tensions could undermine global partnerships (SDG 17) and disproportionately affect smaller businesses reliant on affordable AI tools.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 5897,
       "event_title": "Children face higher threat of US deportation as legal support deal expires",
@@ -135642,7 +135665,7 @@
       {
         "country": "United States",
         "count": 63,
-        "total_amount": 59954650
+        "total_amount": 59713650
       },
       {
         "country": "Spain",
@@ -135723,12 +135746,12 @@
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 25
+        "events": 24
       },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 10
       },
       {
         "region": "Latin America",
@@ -135747,11 +135770,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-07-25",
-        "net_minted": 13056460,
-        "net_burned": 1811740
-      },
       {
         "date": "2026-07-26",
         "net_minted": 7482050,
@@ -135781,6 +135799,11 @@
         "date": "2026-07-31",
         "net_minted": 59645550,
         "net_burned": 17725700
+      },
+      {
+        "date": "2026-08-01",
+        "net_minted": 300000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -135797,7 +135820,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 271,
+        "negative": 269,
         "event_ids_positive": [
           5892,
           5884,
@@ -135835,6 +135858,7 @@
           5601
         ],
         "event_ids_negative": [
+          5898,
           5897,
           5896,
           5895,
@@ -136102,15 +136126,12 @@
           5596,
           5595,
           5594,
-          5593,
-          5592,
-          5591,
-          5590
+          5593
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 245,
+        "negative": 243,
         "event_ids_positive": [
           5876,
           5844,
@@ -136131,6 +136152,7 @@
           5601
         ],
         "event_ids_negative": [
+          5898,
           5897,
           5896,
           5895,
@@ -136372,15 +136394,12 @@
           5597,
           5596,
           5595,
-          5593,
-          5592,
-          5591,
-          5590
+          5593
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 38,
+        "negative": 37,
         "event_ids_positive": [
           5809,
           5760,
@@ -136425,8 +136444,7 @@
           5635,
           5624,
           5608,
-          5600,
-          5592
+          5600
         ]
       },
       "CRC": {
@@ -136649,7 +136667,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 78,
+        "negative": 77,
         "event_ids_positive": [
           5892,
           5884,
@@ -136750,8 +136768,7 @@
           5600,
           5595,
           5594,
-          5593,
-          5590
+          5593
         ]
       }
     },
@@ -136759,11 +136776,11 @@
       "niche_pct": 71.4,
       "mainstream_pct": 28.6,
       "total_sources_used": 91,
-      "articles_processed": 307
+      "articles_processed": 305
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 307,
+      "total_events": 305,
       "pct": 0.7
     },
     "active_partners_7d": [],
@@ -136905,9 +136922,9 @@
       },
       {
         "name": "Defense",
-        "count": 29,
+        "count": 28,
         "burn_count": 0,
-        "mint_count": 29,
+        "mint_count": 28,
         "event_ids": [
           5895,
           5878,
@@ -136936,8 +136953,7 @@
           5621,
           5614,
           5612,
-          5606,
-          5591
+          5606
         ]
       },
       {
@@ -137026,10 +137042,11 @@
       },
       {
         "name": "Tech",
-        "count": 8,
+        "count": 9,
         "burn_count": 1,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          5898,
           5855,
           5804,
           5803,
@@ -137099,9 +137116,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 273,
+      "total_mint": 271,
       "direct_action": {
-        "count": 258,
+        "count": 256,
         "pct": 94.5
       },
       "editorial_alarm": {
@@ -137114,9 +137131,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4011,
+      "total_mint": 4012,
       "direct_action": {
-        "count": 3246,
+        "count": 3247,
         "pct": 80.9
       },
       "editorial_alarm": {
@@ -137130,14 +137147,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 83,
-      "institutional": 224,
-      "citizen_ratio": 0.27,
+      "institutional": 222,
+      "citizen_ratio": 0.272,
       "daily": [
-        {
-          "date": "2026-07-25",
-          "citizen": 2,
-          "institutional": 19
-        },
         {
           "date": "2026-07-26",
           "citizen": 4,
@@ -137167,6 +137179,11 @@
           "date": "2026-07-31",
           "citizen": 15,
           "institutional": 40
+        },
+        {
+          "date": "2026-08-01",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -137255,6 +137272,7 @@
         5604
       ],
       "event_ids_institutional": [
+        5898,
         5897,
         5896,
         5895,
@@ -137475,10 +137493,7 @@
         5596,
         5595,
         5594,
-        5593,
-        5592,
-        5591,
-        5590
+        5593
       ]
     }
   }
