@@ -13,9 +13,9 @@ const AVG_MIN_COVERAGE = 5;
 
 interface DayPoint {
   dayMs: number;
-  net: number; // burn - mint (>0 = net-burn = world improving)
-  burn: number;
-  mint: number;
+  burn: number; // gross CBWD burned that day
+  mint: number; // gross CBWD minted that day
+  net: number; // burn - mint
   count: number;
   avg: number; // trailing 7-calendar-day average of net
   avgReady: boolean; // window has enough covered days to be meaningful
@@ -25,7 +25,7 @@ function formatCompact(raw: number): string {
   const abs = Math.abs(raw);
   const sign = raw >= 0 ? "+" : "-";
   const b = abs / 1_000_000_000;
-  if (b >= 1) return `${sign}${b.toFixed(1).replace(/\.0$/, "")}B`;
+  if (b >= 1) return `${sign}${b.toFixed(2).replace(/\.?0+$/, "")}B`;
   const m = abs / 1_000_000;
   if (m >= 1) return `${sign}${m.toFixed(1).replace(/\.0$/, "")}M`;
   const k = abs / 1_000;
@@ -41,14 +41,20 @@ function formatShortDate(ms: number): string {
   });
 }
 
-// Round to the nearest 1 / 2 / 5 x 10^n so axis ticks read as human numbers.
-function niceRound(v: number): number {
-  if (v === 0) return 0;
-  const exp = Math.floor(Math.log10(v));
-  const pow = Math.pow(10, exp);
-  const frac = v / pow;
-  const snapped = frac < 1.5 ? 1 : frac < 3.5 ? 2 : frac < 7.5 ? 5 : 10;
-  return snapped * pow;
+// Round up to a human number. Finer than the usual 1/2/5 ladder, otherwise the
+// axis bound jumps far past the data and flattens every bar.
+const NICE_STEPS = [1, 1.25, 1.5, 2, 2.5, 3, 4, 5, 7.5, 10];
+function niceCeil(v: number): number {
+  if (v <= 0) return 0;
+  const pow = Math.pow(10, Math.floor(Math.log10(v)));
+  const f = v / pow;
+  return (NICE_STEPS.find((s) => f <= s) ?? 10) * pow;
+}
+
+function percentile(values: number[], p: number): number {
+  if (!values.length) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  return sorted[Math.min(sorted.length - 1, Math.round(p * (sorted.length - 1)))];
 }
 
 export function SupplyChart({ events }: { events: CarbonEvent[] }) {
@@ -61,7 +67,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
   if (decided.length === 0) {
     return (
       <div
-        className="flex items-center justify-center h-[300px] text-sm"
+        className="flex items-center justify-center h-[320px] text-sm"
         style={{
           backgroundColor: "#1A1A1A",
           border: "1px solid #2E2E2E",
@@ -74,8 +80,9 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     );
   }
 
-  // Group into per-day net-flow buckets (burn - mint). Each dot is one real
-  // calendar day: it materialises what actually happened on that date.
+  // One column per calendar day. BURN and MINT are plotted as their own gross
+  // volumes, up and down from the baseline. Plotting only the net hid the BURN
+  // side completely: it is 32% of the events and present on most days.
   const byDay = new Map<string, DayPoint>();
   for (const e of decided) {
     const key = new Date(e.created_at).toISOString().slice(0, 10);
@@ -83,9 +90,9 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     if (!p) {
       p = {
         dayMs: new Date(key + "T00:00:00Z").getTime(),
-        net: 0,
         burn: 0,
         mint: 0,
+        net: 0,
         count: 0,
         avg: 0,
         avgReady: false,
@@ -97,16 +104,16 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     else p.mint += amt;
     p.count += 1;
   }
-  const dataPoints = [...byDay.values()].sort((a, b) => a.dayMs - b.dayMs);
-  for (const p of dataPoints) p.net = p.burn - p.mint;
+  const days = [...byDay.values()].sort((a, b) => a.dayMs - b.dayMs);
+  for (const p of days) p.net = p.burn - p.mint;
 
-  // Trailing 7-CALENDAR-day average (days without events count as 0, because no
-  // event genuinely means no measured impact that day).
-  for (const p of dataPoints) {
+  // Trailing 7-CALENDAR-day average of the net, suppressed when the window is
+  // mostly a pipeline silence (it would otherwise ramp back towards zero).
+  for (const p of days) {
     const from = p.dayMs - (AVG_WINDOW_DAYS - 1) * DAY_MS;
     let sum = 0;
     let covered = 0;
-    for (const q of dataPoints) {
+    for (const q of days) {
       if (q.dayMs > p.dayMs) break;
       if (q.dayMs >= from) {
         sum += q.net;
@@ -114,120 +121,116 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
       }
     }
     p.avg = sum / AVG_WINDOW_DAYS;
-    // Below this, the window is mostly a pipeline silence and the average would
-    // draw a fake ramp back towards zero after every gap.
     p.avgReady = covered >= AVG_MIN_COVERAGE;
   }
 
-  const firstMs = dataPoints[0].dayMs;
-  const lastMs = dataPoints[dataPoints.length - 1].dayMs;
+  const firstMs = days[0].dayMs;
+  const lastMs = days[days.length - 1].dayMs;
   const spanMs = Math.max(DAY_MS, lastMs - firstMs);
+  const calendarDays = Math.round(spanMs / DAY_MS) + 1;
 
-  // Headline: net over the last 7 calendar days (same window as the avg line).
-  const headlineFrom = lastMs - (AVG_WINDOW_DAYS - 1) * DAY_MS;
-  const last7 = dataPoints
-    .filter((d) => d.dayMs >= headlineFrom)
+  // Stretches of consecutive missing calendar days: real pipeline outages, so
+  // they get labelled instead of looking like a rendering bug.
+  const outages: { fromMs: number; toMs: number; days: number }[] = [];
+  for (let i = 1; i < days.length; i++) {
+    const missing = Math.round((days[i].dayMs - days[i - 1].dayMs) / DAY_MS) - 1;
+    if (missing > 0) {
+      outages.push({
+        fromMs: days[i - 1].dayMs + DAY_MS / 2,
+        toMs: days[i].dayMs - DAY_MS / 2,
+        days: missing,
+      });
+    }
+  }
+
+  const totals = days.reduce(
+    (acc, d) => ({ burn: acc.burn + d.burn, mint: acc.mint + d.mint }),
+    { burn: 0, mint: 0 }
+  );
+  const last7 = days
+    .filter((d) => d.dayMs >= lastMs - (AVG_WINDOW_DAYS - 1) * DAY_MS)
     .reduce((s, d) => s + d.net, 0);
   const headlineColor = last7 >= 0 ? "#B6FFCE" : "#FF5C33";
 
   // Chart dimensions
   const width = 900;
-  const height = 300;
-  const padding = { top: 24, right: 30, bottom: 40, left: 74 };
+  const height = 320;
+  const padding = { top: 26, right: 24, bottom: 38, left: 68 };
   const chartW = width - padding.left - padding.right;
   const chartH = height - padding.top - padding.bottom;
 
-  // X = real time, so a 5-day silence reads as a 5-day gap and every date label
-  // sits at its true position.
-  const scaleX = (dayMs: number) =>
-    padding.left + ((dayMs - firstMs) / spanMs) * chartW;
-
-  // Y = signed square root. A single outlier day (-332M) would otherwise
-  // flatten the other 95 days into an unreadable band. One pixel is worth the
-  // same number of compressed units above and below zero, but the two sides get
-  // the vertical room their data actually needs instead of a symmetric half
-  // each (the positive side is nearly empty, 93 days out of 96 are net-MINT).
-  const signedSqrt = (v: number) => Math.sign(v) * Math.sqrt(Math.abs(v));
-  const plotted = dataPoints.flatMap((d) => (d.avgReady ? [d.net, d.avg] : [d.net]));
-  const posMax = Math.max(0, ...plotted);
-  const negMax = Math.max(0, ...plotted.map((v) => -v));
-  // Degenerate case (a single day, or everything netting to exactly zero):
-  // fall back to a symmetric scale so the line lands mid-card, not on an edge.
-  const flat = posMax === 0 && negMax === 0;
-  const negUnits = flat ? 1 : Math.sqrt(negMax) * 1.06;
-  // Keep a floor of headroom above zero so the zero line never sticks to the
-  // top edge and a net-BURN day still has somewhere to go.
-  const posUnits = flat ? 1 : Math.max(Math.sqrt(posMax) * 1.15, negUnits * 0.16);
-  const totalUnits = posUnits + negUnits;
-  const unitsToPx = chartH / totalUnits;
-  const zeroY = padding.top + posUnits * unitsToPx;
-  const scaleY = (val: number) => zeroY - signedSqrt(val) * unitsToPx;
-
-  // Ticks per side, spaced evenly in the compressed space, snapped to round
-  // numbers, then thinned out so labels never collide.
-  const sideTicks = (max: number, sign: 1 | -1) => {
-    const out: number[] = [];
-    for (const f of [1, 0.55, 0.25]) {
-      const v = niceRound(max * f * f);
-      if (v <= 0 || out.includes(v)) continue;
-      if (Math.abs(scaleY(sign * v) - zeroY) < 14) continue;
-      if (out.some((p) => Math.abs(scaleY(sign * p) - scaleY(sign * v)) < 18)) continue;
-      out.push(v);
-    }
-    return out.map((v) => sign * v);
+  // Linear, and CRITICALLY the same number of CBWD per pixel above and below
+  // the baseline, otherwise comparing the two flows visually would be a lie.
+  // Each side is only cropped at its own 97th percentile so that a couple of
+  // freak days cannot flatten the other 90+. Cropped days are drawn full length
+  // and flagged with an axis-break mark.
+  const sideBound = (values: number[], floor: number) => {
+    const positives = values.filter((v) => v > 0);
+    if (!positives.length) return floor;
+    return Math.max(floor, niceCeil(percentile(positives, 0.97) * 1.1));
   };
-  const yTicks = [...sideTicks(posMax, 1), 0, ...sideTicks(negMax, -1)];
+  const burnBound = sideBound(days.map((d) => d.burn), 1);
+  const mintBound = sideBound(days.map((d) => d.mint), burnBound);
+  const totalRange = burnBound + mintBound;
+  const zeroY = padding.top + (burnBound / totalRange) * chartH;
+  const chartBottom = padding.top + chartH;
+  const pxPerToken = chartH / totalRange;
+  const scaleY = (v: number) =>
+    zeroY - Math.max(-mintBound, Math.min(burnBound, v)) * pxPerToken;
 
-  // Split into runs of consecutive calendar days. Nothing is ever drawn across
-  // a silence, so a 7-day gap reads as a hole and not as a slope.
-  const runs: DayPoint[][] = [];
-  for (const d of dataPoints) {
-    const run = runs[runs.length - 1];
-    if (run && d.dayMs - run[run.length - 1].dayMs === DAY_MS) run.push(d);
-    else runs.push([d]);
-  }
-  const runPath = (run: DayPoint[], value: (d: DayPoint) => number) =>
-    run
-      .map(
-        (d, i) =>
-          `${i === 0 ? "M" : "L"} ${scaleX(d.dayMs).toFixed(1)} ${scaleY(value(d)).toFixed(1)}`
-      )
-      .join(" ");
-  const rawSegments = runs.map((run) => runPath(run, (d) => d.net));
-  const avgSegments = runs.flatMap((run) => {
-    const chunks: DayPoint[][] = [];
-    for (const d of run) {
-      if (!d.avgReady) {
-        if (chunks[chunks.length - 1]?.length) chunks.push([]);
-        continue;
-      }
-      if (!chunks.length) chunks.push([]);
-      chunks[chunks.length - 1].push(d);
+  const overBurn = days.filter((d) => d.burn > burnBound).length;
+  const overMint = days.filter((d) => d.mint > mintBound).length;
+
+  // One slot per calendar day, so a silent day simply has no column.
+  const slot = chartW / Math.max(1, calendarDays - 1);
+  const barW = Math.max(2, Math.min(10, slot - 1.6));
+
+  // Y ticks, linear, same step on both sides so the shared scale is visible.
+  const step = niceCeil(mintBound / 4);
+  const yTicks = [0];
+  for (let v = step; v <= mintBound + 1; v += step) yTicks.push(-v);
+  for (let v = step; v <= burnBound + 1; v += step) yTicks.push(v);
+  if (yTicks.length < 3) yTicks.push(burnBound);
+
+  // Net average line, split on gaps and on stretches with too thin a window.
+  const avgSegments: string[] = [];
+  let run: DayPoint[] = [];
+  const flush = () => {
+    if (run.length > 1) {
+      avgSegments.push(
+        run
+          .map(
+            (d, i) =>
+              `${i === 0 ? "M" : "L"} ${scaleX(d.dayMs).toFixed(1)} ${scaleY(d.avg).toFixed(1)}`
+          )
+          .join(" ")
+      );
     }
-    return chunks.filter((c) => c.length > 1).map((c) => runPath(c, (d) => d.avg));
+    run = [];
+  };
+  function scaleX(dayMs: number) {
+    return padding.left + ((dayMs - firstMs) / spanMs) * chartW;
+  }
+  days.forEach((d, i) => {
+    const contiguous = i > 0 && d.dayMs - days[i - 1].dayMs === DAY_MS;
+    if (!d.avgReady || !contiguous) flush();
+    if (d.avgReady) run.push(d);
   });
-  const areaSegments = runs.map(
-    (run) =>
-      runPath(run, (d) => d.net) +
-      ` L ${scaleX(run[run.length - 1].dayMs).toFixed(1)} ${zeroY.toFixed(1)}` +
-      ` L ${scaleX(run[0].dayMs).toFixed(1)} ${zeroY.toFixed(1)} Z`
-  );
+  flush();
 
-  // X-axis labels: evenly spaced in TIME, not in bucket index.
-  const xLabelCount = Math.min(6, dataPoints.length);
+  // X labels: evenly spaced in TIME, not in bucket index.
+  const xLabelCount = Math.min(6, days.length);
   const xLabels = Array.from({ length: xLabelCount }, (_, i) => {
-    const ms =
-      xLabelCount === 1 ? firstMs : firstMs + (i / (xLabelCount - 1)) * spanMs;
+    const ms = xLabelCount === 1 ? firstMs : firstMs + (i / (xLabelCount - 1)) * spanMs;
     return { ms, label: formatShortDate(ms) };
   });
 
-  // Nearest-point hover: one overlay instead of 96 overlapping hit circles.
   const handleMove = (evt: React.MouseEvent<SVGRectElement>) => {
     const box = evt.currentTarget.getBoundingClientRect();
     const x = ((evt.clientX - box.left) / box.width) * chartW + padding.left;
     let best = 0;
     let bestDist = Infinity;
-    dataPoints.forEach((d, i) => {
+    days.forEach((d, i) => {
       const dist = Math.abs(scaleX(d.dayMs) - x);
       if (dist < bestDist) {
         bestDist = dist;
@@ -237,7 +240,13 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
     setHoveredIndex(best);
   };
 
-  const rangeLabel = `${formatShortDate(firstMs)} → ${formatShortDate(lastMs)}`;
+  const mono = "'JetBrains Mono', ui-monospace, monospace";
+  const breakMark = (x: number, y: number) => (
+    <g stroke="#1A1A1A" strokeWidth="2">
+      <line x1={x - 1} y1={y} x2={x + barW + 1} y2={y - 4} />
+      <line x1={x - 1} y1={y + 4} x2={x + barW + 1} y2={y} />
+    </g>
+  );
 
   return (
     <div
@@ -253,7 +262,7 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
           className="text-xs font-medium uppercase tracking-wider"
           style={{ color: "#B8B9B6" }}
         >
-          Net Impact Flow · Daily
+          Daily Burn vs Mint
         </span>
         <span
           className="text-sm font-mono font-semibold tabular-nums whitespace-nowrap"
@@ -263,41 +272,78 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
         </span>
       </div>
 
-      {/* Legend: says out loud what up and down mean. */}
       <div
-        className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 mb-2 px-2 text-[10px]"
+        className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 mb-3 px-2 text-[10px]"
         style={{ color: "#B8B9B6" }}
       >
         <span className="min-w-0" style={{ color: "#0190A0" }}>
-          {rangeLabel} · {dataPoints.length} days with events
+          {formatShortDate(firstMs)} → {formatShortDate(lastMs)} · one column = one day
         </span>
         <span className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
-          <span style={{ color: "#B6FFCE" }}>▲ above 0 = net BURN</span>
-          <span style={{ color: "#FF5C33" }}>▼ below 0 = net MINT</span>
-          <span style={{ color: "#FF8400" }}>▬ 7d average</span>
-          <span>√ compressed y axis</span>
+          <span style={{ color: "#B6FFCE" }}>
+            ▲ burned {formatCompact(totals.burn).replace("+", "")}
+          </span>
+          <span style={{ color: "#FF5C33" }}>
+            ▼ minted {formatCompact(totals.mint).replace("+", "")}
+          </span>
+          <span style={{ color: "#FF8400" }}>▬ 7d net</span>
+          {outages.length > 0 && <span>▨ pipeline down</span>}
+          {overBurn + overMint > 0 && <span>⇉ {overBurn + overMint} past the axis</span>}
         </span>
       </div>
 
       <svg
         viewBox={`0 0 ${width} ${height}`}
         className="w-full"
-        style={{ height: "300px" }}
+        style={{ height: "320px" }}
         onMouseLeave={() => setHoveredIndex(null)}
       >
         <defs>
-          <clipPath id="supplychart-above">
-            <rect x="0" y="0" width={width} height={zeroY} />
-          </clipPath>
-          <clipPath id="supplychart-below">
-            <rect x="0" y={zeroY} width={width} height={height - zeroY} />
-          </clipPath>
+          <pattern
+            id="supplychart-outage"
+            width="6"
+            height="6"
+            patternUnits="userSpaceOnUse"
+            patternTransform="rotate(45)"
+          >
+            <rect width="6" height="6" fill="#151515" />
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#2E2E2E" strokeWidth="1.5" />
+          </pattern>
         </defs>
 
-        {/* Grid lines */}
-        {yTicks.map((tick, i) => (
+        {/* Real outages: days where the pipeline produced nothing at all */}
+        {outages.map((o) => {
+          const x = scaleX(o.fromMs);
+          const w = Math.max(2, scaleX(o.toMs) - x);
+          return (
+            <g key={`outage-${o.fromMs}`}>
+              <rect
+                x={x}
+                y={padding.top}
+                width={w}
+                height={chartH}
+                fill="url(#supplychart-outage)"
+              />
+              {w > 22 && (
+                <text
+                  x={x + w / 2}
+                  y={padding.top + 12}
+                  textAnchor="middle"
+                  fontSize="8"
+                  fill="#B8B9B6"
+                  fontFamily={mono}
+                >
+                  {o.days}d
+                </text>
+              )}
+            </g>
+          );
+        })}
+
+        {/* Grid */}
+        {yTicks.map((tick) => (
           <line
-            key={`grid-${i}`}
+            key={`grid-${tick}`}
             x1={padding.left}
             y1={scaleY(tick)}
             x2={width - padding.right}
@@ -307,7 +353,50 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
           />
         ))}
 
-        {/* Zero line */}
+        {/* Hover highlight, behind the columns */}
+        {hoveredIndex !== null && (
+          <rect
+            x={scaleX(days[hoveredIndex].dayMs) - slot / 2}
+            y={padding.top}
+            width={slot}
+            height={chartH}
+            fill="rgba(255,255,255,0.07)"
+          />
+        )}
+
+        {/* Daily columns: BURN up, MINT down, same scale */}
+        {days.map((d, i) => {
+          const x = scaleX(d.dayMs) - barW / 2;
+          const dim = hoveredIndex !== null && hoveredIndex !== i;
+          const burnTop = scaleY(Math.min(d.burn, burnBound));
+          const mintBottom = scaleY(-Math.min(d.mint, mintBound));
+          return (
+            <g key={`col-${d.dayMs}`} opacity={dim ? 0.5 : 1}>
+              {d.burn > 0 && (
+                <rect
+                  x={x}
+                  y={burnTop}
+                  width={barW}
+                  height={Math.max(1.5, zeroY - burnTop)}
+                  fill="#B6FFCE"
+                />
+              )}
+              {d.mint > 0 && (
+                <rect
+                  x={x}
+                  y={zeroY}
+                  width={barW}
+                  height={Math.max(1.5, mintBottom - zeroY)}
+                  fill="#FF5C33"
+                />
+              )}
+              {d.burn > burnBound && breakMark(x, padding.top + 6)}
+              {d.mint > mintBound && breakMark(x, chartBottom - 6)}
+            </g>
+          );
+        })}
+
+        {/* Baseline */}
         <line
           x1={padding.left}
           y1={zeroY}
@@ -315,69 +404,70 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
           y2={zeroY}
           stroke="#B8B9B6"
           strokeWidth="1"
-          strokeDasharray="4 2"
+          opacity="0.8"
         />
 
-        {/* Area fill, green above zero and red below */}
-        {areaSegments.map((d, i) => (
-          <g key={`area-${i}`}>
-            <path d={d} fill="rgba(182,255,206,0.16)" clipPath="url(#supplychart-above)" />
-            <path d={d} fill="rgba(255,92,51,0.12)" clipPath="url(#supplychart-below)" />
+        {/* 7-day net average, with a halo so it reads over the columns */}
+        {avgSegments.map((d, i) => (
+          <g key={`avg-${i}`}>
+            <path d={d} fill="none" stroke="#1A1A1A" strokeWidth="4.5" opacity="0.8" />
+            <path
+              d={d}
+              fill="none"
+              stroke="#FF8400"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </g>
         ))}
 
-        {/* Raw daily line, dimmed: the dots are the message, this only links them */}
-        {rawSegments.map((d, i) => (
-          <path
-            key={`raw-${i}`}
-            d={d}
-            fill="none"
-            stroke="rgba(184,185,182,0.45)"
-            strokeWidth="1"
-          />
-        ))}
-
-        {/* 7-day trailing average: the trend */}
-        {avgSegments.map((d, i) => (
-          <path key={`avg-${i}`} d={d} fill="none" stroke="#FF8400" strokeWidth="2" />
-        ))}
-
-        {/* Daily points */}
-        {dataPoints.map((d, i) => (
-          <circle
-            key={`dot-${i}`}
-            cx={scaleX(d.dayMs)}
-            cy={scaleY(d.net)}
-            r={hoveredIndex === i ? 5.5 : 3}
-            fill={d.net >= 0 ? "#B6FFCE" : "#FF5C33"}
-            stroke="#1A1A1A"
-            strokeWidth="1.5"
-            style={{ transition: "r 0.15s ease" }}
-          />
-        ))}
-
         {/* Y-axis labels */}
-        {yTicks.map((tick, i) => (
+        {yTicks.map((tick) => (
           <text
-            key={`ytick-${i}`}
-            x={padding.left - 8}
+            key={`ytick-${tick}`}
+            x={padding.left - 10}
             y={scaleY(tick)}
             textAnchor="end"
             dominantBaseline="middle"
             fill="#B8B9B6"
             fontSize="10"
-            fontFamily="'JetBrains Mono', ui-monospace, monospace"
+            fontFamily={mono}
           >
-            {tick === 0 ? "0" : formatCompact(tick)}
+            {tick === 0 ? "0" : formatCompact(Math.abs(tick)).replace("+", "")}
           </text>
         ))}
+
+        {/* Which side is which, so the chart reads without the legend */}
+        <text
+          x={16}
+          y={(padding.top + zeroY) / 2}
+          fill="#B6FFCE"
+          fontSize="9"
+          fontFamily={mono}
+          textAnchor="middle"
+          transform={`rotate(-90, 16, ${(padding.top + zeroY) / 2})`}
+        >
+          BURN ▲
+        </text>
+        <text
+          x={16}
+          y={(zeroY + chartBottom) / 2}
+          fill="#FF5C33"
+          fontSize="9"
+          fontFamily={mono}
+          textAnchor="middle"
+          transform={`rotate(-90, 16, ${(zeroY + chartBottom) / 2})`}
+        >
+          MINT ▼
+        </text>
 
         {/* X-axis labels */}
         {xLabels.map(({ ms, label }) => (
           <text
             key={`xlabel-${ms}`}
             x={scaleX(ms)}
-            y={height - 10}
+            y={height - 12}
             textAnchor="middle"
             fill="#B8B9B6"
             fontSize="10"
@@ -399,65 +489,60 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
         {/* Tooltip */}
         {hoveredIndex !== null &&
           (() => {
-            const d = dataPoints[hoveredIndex];
+            const d = days[hoveredIndex];
             const cx = scaleX(d.dayMs);
-            const tooltipW = 214;
-            const tooltipH = 96;
+            const tooltipW = 212;
+            const tooltipH = 90;
             const tooltipX =
-              cx + tooltipW + 12 > width - padding.right
-                ? cx - tooltipW - 12
-                : cx + 12;
+              cx + tooltipW + 14 > width - padding.right ? cx - tooltipW - 14 : cx + 14;
             const tooltipY = Math.max(
               padding.top,
-              Math.min(scaleY(d.net) - tooltipH / 2, height - padding.bottom - tooltipH)
+              Math.min(zeroY - tooltipH / 2, chartBottom - tooltipH)
             );
             const netColor = d.net >= 0 ? "#B6FFCE" : "#FF5C33";
-            const mono = "'JetBrains Mono', ui-monospace, monospace";
             return (
               <g style={{ pointerEvents: "none" }}>
-                <line
-                  x1={cx}
-                  y1={padding.top}
-                  x2={cx}
-                  y2={height - padding.bottom}
-                  stroke="#B8B9B6"
-                  strokeWidth="0.5"
-                  strokeDasharray="3 2"
-                />
                 <rect
                   x={tooltipX}
                   y={tooltipY}
                   width={tooltipW}
                   height={tooltipH}
-                  fill="#1A1A1A"
+                  fill="#111111"
                   stroke="#2E2E2E"
                   strokeWidth="1"
-                  filter="drop-shadow(0 1px 3px rgba(0,0,0,0.3))"
                 />
-                <text x={tooltipX + 8} y={tooltipY + 17} fontSize="10" fill="#B8B9B6">
+                <text x={tooltipX + 10} y={tooltipY + 17} fontSize="10" fill="#B8B9B6">
                   {formatShortDate(d.dayMs)} · {d.count} event{d.count > 1 ? "s" : ""}
                 </text>
                 <text
-                  x={tooltipX + 8}
+                  x={tooltipX + 10}
                   y={tooltipY + 35}
                   fontSize="10"
                   fill="#B6FFCE"
                   fontFamily={mono}
                 >
-                  ▲ BURN {formatCompact(d.burn)}
+                  ▲ BURN {formatCompact(d.burn).replace("+", "")}
                 </text>
                 <text
-                  x={tooltipX + 8}
-                  y={tooltipY + 51}
+                  x={tooltipX + 10}
+                  y={tooltipY + 50}
                   fontSize="10"
                   fill="#FF5C33"
                   fontFamily={mono}
                 >
-                  ▼ MINT {formatCompact(-d.mint)}
+                  ▼ MINT {formatCompact(d.mint).replace("+", "")}
                 </text>
+                <line
+                  x1={tooltipX + 10}
+                  y1={tooltipY + 58}
+                  x2={tooltipX + tooltipW - 10}
+                  y2={tooltipY + 58}
+                  stroke="#2E2E2E"
+                  strokeWidth="1"
+                />
                 <text
-                  x={tooltipX + 8}
-                  y={tooltipY + 69}
+                  x={tooltipX + 10}
+                  y={tooltipY + 74}
                   fontSize="11"
                   fontWeight="700"
                   fill={netColor}
@@ -466,13 +551,14 @@ export function SupplyChart({ events }: { events: CarbonEvent[] }) {
                   NET {formatCompact(d.net)}
                 </text>
                 <text
-                  x={tooltipX + 8}
-                  y={tooltipY + 86}
+                  x={tooltipX + tooltipW - 10}
+                  y={tooltipY + 74}
                   fontSize="9"
                   fill="#FF8400"
+                  textAnchor="end"
                   fontFamily={mono}
                 >
-                  7d avg {d.avgReady ? formatCompact(d.avg) : "n/a"}
+                  7d {d.avgReady ? formatCompact(d.avg) : "n/a"}
                 </text>
               </g>
             );
