@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-01T02:05:24.183703+00:00",
-  "total_events": 5901,
+  "generated_at": "2026-08-01T02:36:26.963935+00:00",
+  "total_events": 5902,
   "total_burned": 7731331675,
-  "total_minted": 8429843939,
+  "total_minted": 8430447939,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5902,
+      "event_title": "Middle East War: Trump Increases Pressure on Iran Despite Military Stalemate… Latest News",
+      "event_url": "https://www.ouest-france.fr/monde/iran/guerre-au-moyen-orient-trump-accentue-la-pression-sur-liran-malgre-limpasse-militaire-les-dernieres-infos-65775236-8d4c-11f1-bac6-43ee9437487c?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.48,
+      "confidence": 7,
+      "justification": "The planned strikes increase harm and violate rights, leading to a MINT decision. | While the action signals resolve, its likely execution would cause massive civilian harm, environmental destruction, and breach fundamental human rights, resulting in a net negative ethical outcome.",
+      "tx_hash": "3HYoYNEFao6zrvS9Mu4BRgteRBFnRWkJ7RCHAFJaWQFVgTbeqMpdG8Ygh2VKFhvkb5Kp1TMEgXN38FpvGy5TMfXd",
+      "created_at": "2026-08-01T02:36:21.926859+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Shows US resolve which may deter further Iranian aggression and support regional stability.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Planned strikes on Iranian energy infrastructure risk civilian casualties, severe environmental damage, and undermine peace, violating the right to life and causing climate harm.\", \"affected_sdgs\": [7, 13, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5901,
       "event_title": "Court orders Rio to incorporate climate into environmental licensing process",
@@ -135733,8 +135756,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 63,
-        "total_amount": 59713650
+        "count": 64,
+        "total_amount": 60317650
       },
       {
         "country": "Spain",
@@ -135797,8 +135820,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.1,
-        "events": 70
+        "burn_ratio": 0.099,
+        "events": 71
       },
       {
         "region": "Oceania",
@@ -135834,8 +135857,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.9,
-        "events": 70
+        "mint_ratio": 0.901,
+        "events": 71
       }
     ],
     "supply_trend_7d": [
@@ -135871,7 +135894,7 @@
       },
       {
         "date": "2026-08-01",
-        "net_minted": 1079600,
+        "net_minted": 1683600,
         "net_burned": 650000
       }
     ],
@@ -135928,6 +135951,7 @@
           5601
         ],
         "event_ids_negative": [
+          5902,
           5901,
           5899,
           5898,
@@ -136196,13 +136220,12 @@
           5598,
           5597,
           5596,
-          5595,
-          5594
+          5595
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 243,
+        "negative": 244,
         "event_ids_positive": [
           5876,
           5844,
@@ -136223,6 +136246,7 @@
           5601
         ],
         "event_ids_negative": [
+          5902,
           5899,
           5898,
           5897,
@@ -136765,6 +136789,7 @@
           5601
         ],
         "event_ids_negative": [
+          5902,
           5901,
           5896,
           5891,
@@ -136840,14 +136865,13 @@
           5608,
           5606,
           5600,
-          5595,
-          5594
+          5595
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.7,
-      "mainstream_pct": 29.3,
+      "niche_pct": 69.6,
+      "mainstream_pct": 30.4,
       "total_sources_used": 92,
       "articles_processed": 308
     },
@@ -136994,6 +137018,43 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 29,
+        "burn_count": 0,
+        "mint_count": 29,
+        "event_ids": [
+          5902,
+          5895,
+          5878,
+          5875,
+          5867,
+          5855,
+          5838,
+          5825,
+          5823,
+          5807,
+          5800,
+          5799,
+          5777,
+          5771,
+          5768,
+          5758,
+          5756,
+          5752,
+          5745,
+          5738,
+          5732,
+          5727,
+          5707,
+          5637,
+          5628,
+          5621,
+          5614,
+          5612,
+          5606
+        ]
+      },
+      {
         "name": "Energy",
         "count": 28,
         "burn_count": 8,
@@ -137027,42 +137088,6 @@
           5622,
           5616,
           5615
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 28,
-        "burn_count": 0,
-        "mint_count": 28,
-        "event_ids": [
-          5895,
-          5878,
-          5875,
-          5867,
-          5855,
-          5838,
-          5825,
-          5823,
-          5807,
-          5800,
-          5799,
-          5777,
-          5771,
-          5768,
-          5758,
-          5756,
-          5752,
-          5745,
-          5738,
-          5732,
-          5727,
-          5707,
-          5637,
-          5628,
-          5621,
-          5614,
-          5612,
-          5606
         ]
       },
       {
@@ -137205,9 +137230,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4015,
+      "total_mint": 4016,
       "direct_action": {
-        "count": 3249,
+        "count": 3250,
         "pct": 80.9
       },
       "editorial_alarm": {
@@ -137257,7 +137282,7 @@
         {
           "date": "2026-08-01",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -137348,6 +137373,7 @@
         5604
       ],
       "event_ids_institutional": [
+        5902,
         5901,
         5898,
         5897,
@@ -137569,8 +137595,7 @@
         5598,
         5597,
         5596,
-        5595,
-        5594
+        5595
       ]
     }
   }
