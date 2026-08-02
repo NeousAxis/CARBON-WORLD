@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-08-02T15:35:41.062224+00:00",
-  "total_events": 5957,
-  "total_burned": 7746695675,
-  "total_minted": 8496538779,
+  "generated_at": "2026-08-02T17:06:29.981464+00:00",
+  "total_events": 5960,
+  "total_burned": 7748073275,
+  "total_minted": 8497070879,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5960,
+      "event_title": "Island that received cruise ships is forgotten after COP30",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/08/ilha-que-recebeu-navios-de-cruzeiros-e-esquecida-apos-cop30.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -2.68,
+      "confidence": 7,
+      "justification": "Failure to act on COP30 promises violates rights and undermines trust, outweighing temporary awareness gains. | The article evaluates the *inaction* of authorities post-COP30, not the event itself. The failure to follow through on infrastructure promises constitutes a breach of trust and exacerbates local inequalities, outweighing the fleeting awareness benefits of the event. The negative aspects are concrete (unmet needs, violated rights), while the positive aspects are speculative (awareness w",
+      "tx_hash": "2EPNYfzNchwduCQuhZysXSYHsskCEmWdgyefyubfuMet94MC63q7NJREYWMSZ35WTdzRWNbKzEzPHkXxgzzmMf7Q",
+      "created_at": "2026-08-02T17:06:24.700066+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"COP30 brought temporary international attention and visibility to Outeiro, a district in Belém, potentially raising awareness of local environmental and social issues (e.g., infrastructure deficits, climate vulnerability).\", \"affected_sdgs\": [11, 13, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Failure to deliver promised infrastructure improvements post-COP30 undermines trust in institutional commitments, perpetuates local inequalities, and leaves residents without tangible benefits from the event's spotlight.\", \"affected_sdgs\": [1, 8, 10, 11, 16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Unmet expectations may discourage future civic engagement and participation in sustainability initiatives, weakening community resilience and partnerships (SDG 17).\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 5959,
+      "event_title": "Japan Lower House to install security cameras in Diet building",
+      "event_url": "https://www.japantimes.co.jp/news/2026/08/02/japan/politics/lower-house-security-cameras/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.17,
+      "confidence": 7,
+      "justification": "The negative privacy implications outweigh the safety benefits, given the risk of surveillance overreach. | The decision to install security cameras balances the need for safety and accountability in a public institution against the risk of privacy infringements. While it addresses a specific past incident, the broader implications for surveillance and individual rights must be carefully managed to avoid overreach.",
+      "tx_hash": "2xv7xbSTFyffzcNApRwJfq2RKa6NrU4dTiNXUzfRZHMtMLCcCxHbSc1f3QGksKY7h1M52UTptDaR2BrwXoQWuBpq",
+      "created_at": "2026-08-02T17:06:22.563227+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Installation of security cameras in the Diet building to enhance safety and deter misconduct, following a prior incident of unauthorized filming.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential privacy violations and surveillance overreach in a legislative building, risking misuse of footage or disproportionate monitoring of individuals.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
+    {
+      "id": 5958,
+      "event_title": "Certificats de décès : la fin du papier se rapproche pour les médecins",
+      "event_url": "http://rhumatologie.lequotidiendumedecin.fr/liberal-soins-de-ville/certificats-de-deces-la-fin-du-papier-se-rapproche-pour-les-medecins",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "BURN",
+      "amount_crbn": 1377600,
+      "final_score": 6.56,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #5876",
+      "tx_hash": null,
+      "created_at": "2026-08-02T16:03:47.299157+00:00",
+      "embedding": null,
+      "reused_from_event_id": 5876,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 5957,
       "event_title": "Hungary faces energy crunch as drought shuts down Paks nuclear plant, PM says",
@@ -137031,8 +137100,8 @@
       },
       {
         "country": "Brazil",
-        "count": 11,
-        "total_amount": 4031900
+        "count": 12,
+        "total_amount": 4086000
       },
       {
         "country": "France",
@@ -137085,45 +137154,45 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.1,
-        "events": 70
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.057,
-        "events": 35
+        "burn_ratio": 0.087,
+        "events": 69
       },
       {
         "region": "Oceania",
+        "burn_ratio": 0.059,
+        "events": 17
+      },
+      {
+        "region": "Latin America",
         "burn_ratio": 0.056,
-        "events": 18
+        "events": 36
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 28
+      },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 11
       },
       {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 27
+        "region": "Latin America",
+        "mint_ratio": 0.944,
+        "events": 36
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.944,
-        "events": 18
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.943,
-        "events": 35
+        "mint_ratio": 0.941,
+        "events": 17
       },
       {
         "region": "North America",
-        "mint_ratio": 0.9,
-        "events": 70
+        "mint_ratio": 0.913,
+        "events": 69
       }
     ],
     "supply_trend_7d": [
@@ -137159,7 +137228,7 @@
       },
       {
         "date": "2026-08-02",
-        "net_minted": 28504440,
+        "net_minted": 29036540,
         "net_burned": 10314000
       }
     ],
@@ -137176,8 +137245,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 34,
-        "negative": 296,
+        "positive": 33,
+        "negative": 297,
         "event_ids_positive": [
           5947,
           5941,
@@ -137211,10 +137280,11 @@
           5658,
           5631,
           5629,
-          5625,
-          5623
+          5625
         ],
         "event_ids_negative": [
+          5960,
+          5959,
           5957,
           5956,
           5955,
@@ -137509,13 +137579,12 @@
           5628,
           5627,
           5626,
-          5624,
-          5622
+          5624
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 265,
+        "negative": 266,
         "event_ids_positive": [
           5947,
           5941,
@@ -137537,6 +137606,8 @@
           5625
         ],
         "event_ids_negative": [
+          5960,
+          5959,
           5957,
           5956,
           5955,
@@ -137800,8 +137871,7 @@
           5628,
           5627,
           5626,
-          5624,
-          5622
+          5624
         ]
       },
       "ILO": {
@@ -137860,13 +137930,12 @@
         ]
       },
       "CRC": {
-        "positive": 4,
+        "positive": 3,
         "negative": 109,
         "event_ids_positive": [
           5939,
           5760,
-          5750,
-          5623
+          5750
         ],
         "event_ids_negative": [
           5956,
@@ -137981,14 +138050,13 @@
         ]
       },
       "UNDRIP": {
-        "positive": 5,
+        "positive": 4,
         "negative": 75,
         "event_ids_positive": [
           5900,
           5750,
           5730,
-          5710,
-          5623
+          5710
         ],
         "event_ids_negative": [
           5948,
@@ -138101,7 +138169,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 79,
+        "negative": 78,
         "event_ids_positive": [
           5947,
           5939,
@@ -138203,8 +138271,7 @@
           5635,
           5633,
           5627,
-          5626,
-          5622
+          5626
         ]
       }
     },
@@ -138294,6 +138361,16 @@
         ]
       },
       {
+        "name": "COP",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          5960,
+          5661
+        ]
+      },
+      {
         "name": "UN Security Council",
         "count": 2,
         "burn_count": 0,
@@ -138310,15 +138387,6 @@
         "mint_count": 1,
         "event_ids": [
           5888
-        ]
-      },
-      {
-        "name": "World Bank",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          5822
         ]
       }
     ],
@@ -138368,9 +138436,9 @@
       },
       {
         "name": "Energy",
-        "count": 33,
+        "count": 32,
         "burn_count": 8,
-        "mint_count": 25,
+        "mint_count": 24,
         "event_ids": [
           5957,
           5955,
@@ -138403,8 +138471,7 @@
           5686,
           5668,
           5652,
-          5649,
-          5622
+          5649
         ]
       },
       {
@@ -138447,10 +138514,11 @@
       },
       {
         "name": "Construction",
-        "count": 23,
+        "count": 24,
         "burn_count": 0,
-        "mint_count": 23,
+        "mint_count": 24,
         "event_ids": [
+          5960,
           5955,
           5945,
           5933,
@@ -138545,14 +138613,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 34,
+      "total_burn": 33,
       "direct_action": {
-        "count": 32,
-        "pct": 94.1
+        "count": 31,
+        "pct": 93.9
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 5.9
+        "pct": 6.1
       },
       "untyped": {
         "count": 0,
@@ -138575,9 +138643,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 299,
+      "total_mint": 300,
       "direct_action": {
-        "count": 284,
+        "count": 285,
         "pct": 95.0
       },
       "editorial_alarm": {
@@ -138590,9 +138658,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4063,
+      "total_mint": 4065,
       "direct_action": {
-        "count": 3296,
+        "count": 3298,
         "pct": 81.1
       },
       "editorial_alarm": {
@@ -138605,9 +138673,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 91,
-      "institutional": 242,
-      "citizen_ratio": 0.273,
+      "citizen": 90,
+      "institutional": 243,
+      "citizen_ratio": 0.27,
       "daily": [
         {
           "date": "2026-07-27",
@@ -138642,7 +138710,7 @@
         {
           "date": "2026-08-02",
           "citizen": 3,
-          "institutional": 23
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -138735,10 +138803,11 @@
         5633,
         5632,
         5629,
-        5628,
-        5623
+        5628
       ],
       "event_ids_institutional": [
+        5960,
+        5959,
         5957,
         5956,
         5955,
@@ -138979,8 +139048,7 @@
         5627,
         5626,
         5625,
-        5624,
-        5622
+        5624
       ]
     }
   }
