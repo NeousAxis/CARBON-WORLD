@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-02T03:37:25.746564+00:00",
-  "total_events": 5933,
+  "generated_at": "2026-08-02T04:06:08.938403+00:00",
+  "total_events": 5935,
   "total_burned": 7731881675,
-  "total_minted": 8470357039,
+  "total_minted": 8483877039,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5935,
+      "event_title": "War in the Middle East: Trump suspends strikes against Iran, Gaza bombed again… Latest news",
+      "event_url": "https://www.ouest-france.fr/monde/iran/guerre-au-moyen-orient-menaces-contre-liran-gaza-frappee-et-hezbollah-vise-les-dernieres-infos-83dd0242-8e15-11f1-bac6-43ee9437487c?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -3.33,
+      "confidence": 8,
+      "justification": "Civilian harm in Gaza and regional instability outweigh temporary de-escalation with Iran. | The suspension of strikes against Iran represents a temporary de-escalation that aligns with peace and security goals (SDG 16, UDHR). However, the continuation of lethal airstrikes in Gaza constitutes a severe violation of human rights and humanitarian principles, outweighing the positive aspect. The net ethical judgment is negative due to the immediate harm to civilians and the broader destabilization o",
+      "tx_hash": "PyM8ehLzjNkhEYRZzho1cSLdkzaTgzJTzdfeQwgEhXAYRR3YFxb9QixFYzJdPmtFgrMRFXK3NmjxBBDvXC8nVkA",
+      "created_at": "2026-08-02T04:06:03.213960+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Suspension of planned strikes against Iran by the United States and Israel, potentially averting immediate escalation and civilian casualties.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Continued Israeli airstrikes in Gaza resulting in civilian deaths (8 reported), violating rights to life and security.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 6\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Ongoing regional instability and risk of broader conflict, undermining peace and security frameworks.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 5934,
+      "event_title": "OPEC+ tipped to raise production again but new quotas loom",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/opec-tipped-raise-production-again-new-quotas-loom",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -4.35,
+      "confidence": 8,
+      "justification": "OPEC+ production increase directly enables higher emissions, violating climate and sustainability frameworks. | The decision to increase oil production quotas directly undermines global climate goals (SDG 13) and responsible consumption (SDG 12). It exacerbates planetary boundaries, particularly climate change, ocean acidification, and biodiversity loss, with no countervailing positive ethical aspects identified. The action prioritizes short-term economic gains over long-term environmental and h",
+      "tx_hash": "2CWLrQxBfzYH1FW1WiF4oQMVJ638TGDMKLCSB7uNFRKc9B2kqAbjwwWMqiEYPpdik9BM5KzYU5kNRhkShDhmxYrz",
+      "created_at": "2026-08-02T04:06:01.076417+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"OPEC+ members, including Saudi Arabia and Russia, are expected to raise oil production quotas by 188,000 barrels per day, increasing global fossil fuel supply and emissions.\", \"affected_sdgs\": [7, 12, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5933,
       "event_title": "Hungary to shut sole nuclear plant for first time on Sunday",
@@ -136607,7 +136653,7 @@
       },
       {
         "date": "2026-08-02",
-        "net_minted": 2322700,
+        "net_minted": 15842700,
         "net_burned": 0
       }
     ],
@@ -136625,7 +136671,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 282,
+        "negative": 284,
         "event_ids_positive": [
           5913,
           5907,
@@ -136661,6 +136707,8 @@
           5620
         ],
         "event_ids_negative": [
+          5935,
+          5934,
           5933,
           5932,
           5931,
@@ -136947,7 +136995,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 252,
+        "negative": 253,
         "event_ids_positive": [
           5913,
           5907,
@@ -136967,6 +137015,7 @@
           5620
         ],
         "event_ids_negative": [
+          5935,
           5933,
           5932,
           5931,
@@ -137275,13 +137324,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 103,
+        "negative": 104,
         "event_ids_positive": [
           5760,
           5750,
           5623
         ],
         "event_ids_negative": [
+          5935,
           5932,
           5931,
           5930,
@@ -137507,7 +137557,7 @@
       },
       "PB": {
         "positive": 19,
-        "negative": 77,
+        "negative": 78,
         "event_ids_positive": [
           5900,
           5892,
@@ -137530,6 +137580,7 @@
           5631
         ],
         "event_ids_negative": [
+          5934,
           5933,
           5924,
           5918,
@@ -137614,11 +137665,11 @@
       "niche_pct": 69.2,
       "mainstream_pct": 30.8,
       "total_sources_used": 91,
-      "articles_processed": 317
+      "articles_processed": 319
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 317,
+      "total_events": 319,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -137765,10 +137816,11 @@
       },
       {
         "name": "Energy",
-        "count": 29,
+        "count": 30,
         "burn_count": 8,
-        "mint_count": 21,
+        "mint_count": 22,
         "event_ids": [
+          5934,
           5933,
           5923,
           5903,
@@ -137902,6 +137954,20 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          5934,
+          5891,
+          5776,
+          5709,
+          5663,
+          5636
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 6,
         "burn_count": 1,
@@ -137913,19 +137979,6 @@
           5763,
           5750,
           5665
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          5891,
-          5776,
-          5709,
-          5663,
-          5636
         ]
       }
     ],
@@ -137960,24 +138013,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 285,
+      "total_mint": 287,
       "direct_action": {
-        "count": 269,
+        "count": 271,
         "pct": 94.4
       },
       "editorial_alarm": {
         "count": 13,
-        "pct": 4.6
+        "pct": 4.5
       },
       "untyped": {
         "count": 3,
-        "pct": 1.1
+        "pct": 1.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4045,
+      "total_mint": 4047,
       "direct_action": {
-        "count": 3278,
+        "count": 3280,
         "pct": 81.0
       },
       "editorial_alarm": {
@@ -137991,8 +138044,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 227,
-      "citizen_ratio": 0.284,
+      "institutional": 229,
+      "citizen_ratio": 0.282,
       "daily": [
         {
           "date": "2026-07-27",
@@ -138027,7 +138080,7 @@
         {
           "date": "2026-08-02",
           "citizen": 0,
-          "institutional": 5
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -138123,6 +138176,8 @@
         5618
       ],
       "event_ids_institutional": [
+        5935,
+        5934,
         5933,
         5932,
         5931,
