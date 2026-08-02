@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-02T22:05:31.423797+00:00",
-  "total_events": 5964,
+  "generated_at": "2026-08-02T22:35:40.154044+00:00",
+  "total_events": 5965,
   "total_burned": 7748223275,
-  "total_minted": 8498451879,
+  "total_minted": 8505211879,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5965,
+      "event_title": "Why some states want to leave the International Criminal Court",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20260802-pourquoi-certains-%C3%A9tats-veulent-quitter-la-cour-p%C3%A9nale-internationale",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -5.07,
+      "confidence": 8,
+      "justification": "Withdrawal from ICC weakens international justice, enabling impunity and violating human rights frameworks. | The withdrawal of Chad from the ICC represents a significant setback for international justice and accountability. While framed as a rejection of perceived Western bias, the action directly undermines the ICC's capacity to address atrocity crimes, violating core human rights frameworks and weakening multilateral cooperation. The negative impacts on SDG 16 (Peace, Justice, and Strong Inst",
+      "tx_hash": "51knRi5ujVP35V8KR3zGsEKH1UmxfDDPHNj6upXgPi4wTzsdjy2J1G1ENDsa3RFx1eyvXh6MJxR3dew3YstZ7P62",
+      "created_at": "2026-08-02T22:35:34.169017+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Withdrawal of Chad from the International Criminal Court (ICC), following Burkina Faso, Mali, and Niger, weakening international judicial cooperation and accountability for atrocity crimes.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\", \"CRC Article 38\", \"UNDRIP Article 40\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}, {\"description\": \"Undermines the ICC's role as a global mechanism for prosecuting war crimes, crimes against humanity, and genocide, potentially enabling impunity for future violations.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 7\", \"UDHR Article 14\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Signals a broader diplomatic shift away from multilateral institutions (e.g., ECOWAS, OIF), reducing regional and international partnerships for peace, justice, and development.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 5964,
       "event_title": "STS Label Compass: Why 'animal welfare' is the wrong term here",
@@ -137264,7 +137287,7 @@
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 28
+        "events": 27
       },
       {
         "region": "MENA",
@@ -137320,7 +137343,7 @@
       },
       {
         "date": "2026-08-02",
-        "net_minted": 30417540,
+        "net_minted": 37177540,
         "net_burned": 10464000
       }
     ],
@@ -137375,6 +137398,7 @@
           5629
         ],
         "event_ids_negative": [
+          5965,
           5964,
           5963,
           5961,
@@ -137671,8 +137695,7 @@
           5633,
           5632,
           5630,
-          5628,
-          5627
+          5628
         ]
       },
       "UDHR": {
@@ -137699,6 +137722,7 @@
           5631
         ],
         "event_ids_negative": [
+          5965,
           5963,
           5961,
           5960,
@@ -137963,8 +137987,7 @@
           5633,
           5632,
           5630,
-          5628,
-          5627
+          5628
         ]
       },
       "ILO": {
@@ -138023,7 +138046,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 108,
+        "negative": 109,
         "event_ids_positive": [
           5962,
           5939,
@@ -138031,6 +138054,7 @@
           5750
         ],
         "event_ids_negative": [
+          5965,
           5956,
           5954,
           5949,
@@ -138143,7 +138167,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           5900,
           5750,
@@ -138151,6 +138175,7 @@
           5710
         ],
         "event_ids_negative": [
+          5965,
           5948,
           5938,
           5920,
@@ -138262,7 +138287,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 78,
+        "negative": 77,
         "event_ids_positive": [
           5947,
           5939,
@@ -138363,8 +138388,7 @@
           5640,
           5636,
           5635,
-          5633,
-          5627
+          5633
         ]
       }
     },
@@ -138419,6 +138443,18 @@
         ]
       },
       {
+        "name": "ICC",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          5965,
+          5911,
+          5653,
+          5651
+        ]
+      },
+      {
         "name": "ILO",
         "count": 4,
         "burn_count": 0,
@@ -138440,17 +138476,6 @@
           5797,
           5729,
           5718
-        ]
-      },
-      {
-        "name": "ICC",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          5911,
-          5653,
-          5651
         ]
       },
       {
@@ -138750,10 +138775,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4068,
+      "total_mint": 4069,
       "direct_action": {
-        "count": 3301,
-        "pct": 81.1
+        "count": 3302,
+        "pct": 81.2
       },
       "editorial_alarm": {
         "count": 246,
@@ -138802,7 +138827,7 @@
         {
           "date": "2026-08-02",
           "citizen": 4,
-          "institutional": 28
+          "institutional": 29
         }
       ],
       "event_ids_citizen": [
@@ -138899,6 +138924,7 @@
         5628
       ],
       "event_ids_institutional": [
+        5965,
         5964,
         5963,
         5961,
@@ -139140,8 +139166,7 @@
         5636,
         5635,
         5631,
-        5630,
-        5627
+        5630
       ]
     }
   }
