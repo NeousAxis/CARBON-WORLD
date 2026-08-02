@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-01T23:36:09.259342+00:00",
-  "total_events": 5928,
+  "generated_at": "2026-08-02T00:05:59.470273+00:00",
+  "total_events": 5929,
   "total_burned": 7731881675,
-  "total_minted": 8468034339,
+  "total_minted": 8468638339,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5929,
+      "event_title": "New York Times reveals Trump administration subpoena over North Korea story",
+      "event_url": "https://www.aljazeera.com/news/2026/8/1/new-york-times-reveals-trump-administration-subpoena-over-north-korea-story?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.4,
+      "confidence": 8,
+      "justification": "Government subpoena against journalists violates press freedom and undermines democratic accountability. | The action directly violates press freedom and undermines the role of journalism as a pillar of democracy. While the subpoena targets a specific story, its broader chilling effect on investigative reporting and whistleblower protections constitutes a significant ethical cost with systemic implications for transparency and accountability.",
+      "tx_hash": "4BriVdorqsrr6kRjyPtGC4g3DsfMeZ6CP1es58EKgwmjYksHAGp115J1E1NzxQZLbvwPfjd3uYm7UDQNDYiLfjRn",
+      "created_at": "2026-08-02T00:05:54.310849+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Government subpoena compelling journalists to reveal sources undermines press freedom and investigative journalism, enabling potential retaliation against whistleblowers and sources.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Increasing use of subpoenas against media sets a precedent for broader erosion of democratic checks and balances, weakening institutional accountability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 5928,
       "event_title": "Ecologistas en Acción Toledo denounces repeated episodes of atmospheric pollution of unknown origin in the Toledo municipalities of Cobeja, Pantoja and Alameda de la Sagra",
@@ -136354,8 +136377,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 64,
-        "total_amount": 60233650
+        "count": 65,
+        "total_amount": 60837650
       },
       {
         "country": "Spain",
@@ -136418,8 +136441,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.099,
-        "events": 71
+        "burn_ratio": 0.097,
+        "events": 72
       },
       {
         "region": "Oceania",
@@ -136455,16 +136478,11 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.901,
-        "events": 71
+        "mint_ratio": 0.903,
+        "events": 72
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-07-26",
-        "net_minted": 7482050,
-        "net_burned": 2179100
-      },
       {
         "date": "2026-07-27",
         "net_minted": 43285200,
@@ -136494,6 +136512,11 @@
         "date": "2026-08-01",
         "net_minted": 39270000,
         "net_burned": 1200000
+      },
+      {
+        "date": "2026-08-02",
+        "net_minted": 604000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -136510,7 +136533,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 280,
+        "negative": 281,
         "event_ids_positive": [
           5913,
           5907,
@@ -136546,6 +136569,7 @@
           5620
         ],
         "event_ids_negative": [
+          5929,
           5928,
           5927,
           5926,
@@ -136830,7 +136854,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 249,
+        "negative": 250,
         "event_ids_positive": [
           5913,
           5907,
@@ -136850,6 +136874,7 @@
           5620
         ],
         "event_ids_negative": [
+          5929,
           5928,
           5927,
           5926,
@@ -137491,12 +137516,12 @@
       "niche_pct": 69.6,
       "mainstream_pct": 30.4,
       "total_sources_used": 92,
-      "articles_processed": 315
+      "articles_processed": 316
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 315,
-      "pct": 1.0
+      "total_events": 316,
+      "pct": 0.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -137837,9 +137862,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 283,
+      "total_mint": 284,
       "direct_action": {
-        "count": 266,
+        "count": 267,
         "pct": 94.0
       },
       "editorial_alarm": {
@@ -137852,9 +137877,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4040,
+      "total_mint": 4041,
       "direct_action": {
-        "count": 3273,
+        "count": 3274,
         "pct": 81.0
       },
       "editorial_alarm": {
@@ -137868,14 +137893,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 91,
-      "institutional": 224,
-      "citizen_ratio": 0.289,
+      "institutional": 225,
+      "citizen_ratio": 0.288,
       "daily": [
-        {
-          "date": "2026-07-26",
-          "citizen": 4,
-          "institutional": 10
-        },
         {
           "date": "2026-07-27",
           "citizen": 16,
@@ -137905,6 +137925,11 @@
           "date": "2026-08-01",
           "citizen": 10,
           "institutional": 21
+        },
+        {
+          "date": "2026-08-02",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -138001,6 +138026,7 @@
         5615
       ],
       "event_ids_institutional": [
+        5929,
         5928,
         5927,
         5925,
