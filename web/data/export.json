@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-02T03:05:09.593300+00:00",
-  "total_events": 5932,
+  "generated_at": "2026-08-02T03:37:25.746564+00:00",
+  "total_events": 5933,
   "total_burned": 7731881675,
-  "total_minted": 8470057039,
+  "total_minted": 8470357039,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5933,
+      "event_title": "Hungary to shut sole nuclear plant for first time on Sunday",
+      "event_url": "https://www.dw.com/en/hungary-to-shut-sole-nuclear-plant-for-first-time-on-sunday/a-78205668?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.8,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Forced shutdown of critical energy infrastructure increases harm and undermines stability, outweighing minor climate awareness benefits. | The shutdown of Hungary's nuclear plant, while highlighting climate vulnerabilities in energy systems, creates immediate risks to energy security and economic stability. The potential shift to fossil fuels exacerbates climate concerns, outwe",
+      "tx_hash": "4ZXoxv8SvGdJGaCeGV9yifuQBH9WbH5cG8nDyyfvPmmFcoTozNPqkFPVcfzgr2ehtf2mSNnVHCVXj4Aph5ozNyGo",
+      "created_at": "2026-08-02T03:37:19.876008+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Hungary",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Temporary shutdown of nuclear plant due to environmental constraints (low water levels) may raise awareness of climate vulnerability in energy infrastructure, aligning with climate adaptation efforts.\", \"affected_sdgs\": [13, 7, 11], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Forced shutdown of Hungary's sole nuclear plant disrupts stable energy supply, risking blackouts and economic instability, particularly for vulnerable populations reliant on consistent electricity.\", \"affected_sdgs\": [7, 8, 9, 1], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential reliance on fossil fuel backup generation during the outage could increase short-term emissions, undermining climate goals.\", \"affected_sdgs\": [13, 7], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 5932,
       "event_title": "Mali: Independence fighters of the FLA release video of over 200 captured military personnel",
@@ -136500,8 +136523,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.131,
-        "events": 84
+        "burn_ratio": 0.129,
+        "events": 85
       },
       {
         "region": "Africa",
@@ -136584,7 +136607,7 @@
       },
       {
         "date": "2026-08-02",
-        "net_minted": 2022700,
+        "net_minted": 2322700,
         "net_burned": 0
       }
     ],
@@ -136602,7 +136625,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 281,
+        "negative": 282,
         "event_ids_positive": [
           5913,
           5907,
@@ -136638,6 +136661,7 @@
           5620
         ],
         "event_ids_negative": [
+          5933,
           5932,
           5931,
           5930,
@@ -136923,7 +136947,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 251,
+        "negative": 252,
         "event_ids_positive": [
           5913,
           5907,
@@ -136943,6 +136967,7 @@
           5620
         ],
         "event_ids_negative": [
+          5933,
           5932,
           5931,
           5930,
@@ -137482,7 +137507,7 @@
       },
       "PB": {
         "positive": 19,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           5900,
           5892,
@@ -137505,6 +137530,7 @@
           5631
         ],
         "event_ids_negative": [
+          5933,
           5924,
           5918,
           5917,
@@ -137588,11 +137614,11 @@
       "niche_pct": 69.2,
       "mainstream_pct": 30.8,
       "total_sources_used": 91,
-      "articles_processed": 316
+      "articles_processed": 317
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 316,
+      "total_events": 317,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -137738,6 +137764,43 @@
         ]
       },
       {
+        "name": "Energy",
+        "count": 29,
+        "burn_count": 8,
+        "mint_count": 21,
+        "event_ids": [
+          5933,
+          5923,
+          5903,
+          5900,
+          5892,
+          5878,
+          5867,
+          5847,
+          5839,
+          5826,
+          5824,
+          5821,
+          5813,
+          5809,
+          5792,
+          5788,
+          5781,
+          5763,
+          5747,
+          5739,
+          5730,
+          5723,
+          5715,
+          5701,
+          5686,
+          5668,
+          5652,
+          5649,
+          5622
+        ]
+      },
+      {
         "name": "Defense",
         "count": 29,
         "burn_count": 0,
@@ -137775,47 +137838,12 @@
         ]
       },
       {
-        "name": "Energy",
-        "count": 28,
-        "burn_count": 8,
-        "mint_count": 20,
-        "event_ids": [
-          5923,
-          5903,
-          5900,
-          5892,
-          5878,
-          5867,
-          5847,
-          5839,
-          5826,
-          5824,
-          5821,
-          5813,
-          5809,
-          5792,
-          5788,
-          5781,
-          5763,
-          5747,
-          5739,
-          5730,
-          5723,
-          5715,
-          5701,
-          5686,
-          5668,
-          5652,
-          5649,
-          5622
-        ]
-      },
-      {
         "name": "Construction",
-        "count": 20,
+        "count": 21,
         "burn_count": 0,
-        "mint_count": 20,
+        "mint_count": 21,
         "event_ids": [
+          5933,
           5917,
           5869,
           5851,
@@ -137932,9 +137960,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 284,
+      "total_mint": 285,
       "direct_action": {
-        "count": 268,
+        "count": 269,
         "pct": 94.4
       },
       "editorial_alarm": {
@@ -137947,9 +137975,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4044,
+      "total_mint": 4045,
       "direct_action": {
-        "count": 3277,
+        "count": 3278,
         "pct": 81.0
       },
       "editorial_alarm": {
@@ -137963,8 +137991,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 226,
-      "citizen_ratio": 0.285,
+      "institutional": 227,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-07-27",
@@ -137999,7 +138027,7 @@
         {
           "date": "2026-08-02",
           "citizen": 0,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -138095,6 +138123,7 @@
         5618
       ],
       "event_ids_institutional": [
+        5933,
         5932,
         5931,
         5930,
