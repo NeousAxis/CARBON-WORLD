@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-03T04:05:37.880838+00:00",
-  "total_events": 5976,
-  "total_burned": 7748223275,
+  "generated_at": "2026-08-03T04:36:00.145827+00:00",
+  "total_events": 5977,
+  "total_burned": 7748898275,
   "total_minted": 8507682339,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5977,
+      "event_title": "This Texas coal mine will soon be home to a 1.2GW solar farm",
+      "event_url": "https://grist.org/energy/this-texas-coal-mine-will-soon-be-home-to-a-1-2gw-solar-farm/",
+      "event_source": "Grist",
+      "decision": "BURN",
+      "amount_crbn": 675000,
+      "final_score": 6.16,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Large-scale replacement of coal infrastructure with renewable energy, advancing climate action and sustainable land use. | The conversion of a coal mine to a solar farm represents a significant positive shift toward renewable energy and sustainable land use, aligning strongly with climate action and clean energy goals. While minor environmental disruptions and workforce transit",
+      "tx_hash": "83XPfriktZxxSpQwSqb2FW6wwYxFJBdNUYv7AefYCCrV992xAU8C9cwat2RdAxQkNwMksYmHf9eHJ6ktRVJyiwy",
+      "created_at": "2026-08-03T04:35:53.840314+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Conversion of a former coal mine site into a 1.2GW solar farm, directly replacing fossil fuel infrastructure with renewable energy.\", \"affected_sdgs\": [7, 11, 13, 15], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Land repurposing reduces need for greenfield development, preserving ecosystems and promoting sustainable land use.\", \"affected_sdgs\": [12, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Large-scale solar project contributes to energy transition, reducing greenhouse gas emissions and supporting climate action.\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential local environmental disruption during construction, including soil disturbance and temporary habitat loss.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Possible limited long-term job displacement for former coal workers without targeted retraining programs.\", \"affected_sdgs\": [8], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of solar farm underutilizing site potential if grid integration or storage solutions are inadequate.\", \"affected_sdgs\": [7, 9], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 5976,
       "event_title": "STAT+: Senate measure would block Trump plan to politicize federal grants, for now",
@@ -137484,14 +137507,14 @@
     ],
     "top_countries_burn": [
       {
+        "country": "United States",
+        "count": 5,
+        "total_amount": 1379750
+      },
+      {
         "country": "Spain",
         "count": 4,
         "total_amount": 500000
-      },
-      {
-        "country": "United States",
-        "count": 4,
-        "total_amount": 704750
       },
       {
         "country": "France",
@@ -137522,8 +137545,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.069,
-        "events": 72
+        "burn_ratio": 0.082,
+        "events": 73
       },
       {
         "region": "Latin America",
@@ -137559,8 +137582,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.931,
-        "events": 72
+        "mint_ratio": 0.918,
+        "events": 73
       }
     ],
     "supply_trend_7d": [
@@ -137597,7 +137620,7 @@
       {
         "date": "2026-08-03",
         "net_minted": 2470460,
-        "net_burned": 0
+        "net_burned": 675000
       }
     ],
     "event_of_the_day": {
@@ -137613,9 +137636,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 33,
+        "positive": 34,
         "negative": 309,
         "event_ids_positive": [
+          5977,
           5962,
           5947,
           5941,
@@ -137963,9 +137987,10 @@
         ]
       },
       "UDHR": {
-        "positive": 18,
+        "positive": 19,
         "negative": 276,
         "event_ids_positive": [
+          5977,
           5962,
           5947,
           5941,
@@ -138571,9 +138596,10 @@
         ]
       },
       "PB": {
-        "positive": 21,
+        "positive": 22,
         "negative": 80,
         "event_ids_positive": [
+          5977,
           5947,
           5939,
           5900,
@@ -138681,14 +138707,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 67.4,
-      "mainstream_pct": 32.6,
-      "total_sources_used": 95,
-      "articles_processed": 349
+      "niche_pct": 67.7,
+      "mainstream_pct": 32.3,
+      "total_sources_used": 96,
+      "articles_processed": 350
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 349,
+      "total_events": 350,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -138846,6 +138872,47 @@
         ]
       },
       {
+        "name": "Energy",
+        "count": 33,
+        "burn_count": 9,
+        "mint_count": 24,
+        "event_ids": [
+          5977,
+          5957,
+          5955,
+          5938,
+          5934,
+          5933,
+          5923,
+          5903,
+          5900,
+          5892,
+          5878,
+          5867,
+          5847,
+          5839,
+          5826,
+          5824,
+          5821,
+          5813,
+          5809,
+          5792,
+          5788,
+          5781,
+          5763,
+          5747,
+          5739,
+          5730,
+          5723,
+          5715,
+          5701,
+          5686,
+          5668,
+          5652,
+          5649
+        ]
+      },
+      {
         "name": "Defense",
         "count": 32,
         "burn_count": 0,
@@ -138886,51 +138953,12 @@
         ]
       },
       {
-        "name": "Energy",
-        "count": 32,
-        "burn_count": 8,
-        "mint_count": 24,
-        "event_ids": [
-          5957,
-          5955,
-          5938,
-          5934,
-          5933,
-          5923,
-          5903,
-          5900,
-          5892,
-          5878,
-          5867,
-          5847,
-          5839,
-          5826,
-          5824,
-          5821,
-          5813,
-          5809,
-          5792,
-          5788,
-          5781,
-          5763,
-          5747,
-          5739,
-          5730,
-          5723,
-          5715,
-          5701,
-          5686,
-          5668,
-          5652,
-          5649
-        ]
-      },
-      {
         "name": "Construction",
-        "count": 25,
-        "burn_count": 0,
+        "count": 26,
+        "burn_count": 1,
         "mint_count": 25,
         "event_ids": [
+          5977,
           5968,
           5960,
           5955,
@@ -139030,33 +139058,33 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 37,
+      "total_burn": 38,
       "direct_action": {
         "count": 31,
-        "pct": 83.8
+        "pct": 81.6
       },
       "editorial_consciousness": {
-        "count": 2,
-        "pct": 5.4
+        "count": 3,
+        "pct": 7.9
       },
       "untyped": {
         "count": 4,
-        "pct": 10.8
+        "pct": 10.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1888,
+      "total_burn": 1889,
       "direct_action": {
         "count": 1475,
         "pct": 78.1
       },
       "editorial_consciousness": {
-        "count": 142,
-        "pct": 7.5
+        "count": 143,
+        "pct": 7.6
       },
       "untyped": {
         "count": 271,
-        "pct": 14.4
+        "pct": 14.3
       }
     },
     "mint_composition_7d": {
@@ -139090,9 +139118,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 92,
+      "citizen": 93,
       "institutional": 257,
-      "citizen_ratio": 0.264,
+      "citizen_ratio": 0.266,
       "daily": [
         {
           "date": "2026-07-28",
@@ -139126,11 +139154,12 @@
         },
         {
           "date": "2026-08-03",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        5977,
         5968,
         5962,
         5950,
