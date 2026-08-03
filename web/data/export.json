@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-02T23:07:14.962398+00:00",
-  "total_events": 5965,
+  "generated_at": "2026-08-03T00:05:29.235028+00:00",
+  "total_events": 5966,
   "total_burned": 7748223275,
-  "total_minted": 8505211879,
+  "total_minted": 8505276279,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5966,
+      "event_title": "Agencies Issue Recommendations on Future of California Ocean Protections",
+      "event_url": "https://www.nrdc.org/press-releases/agencies-issue-recommendations-future-california-ocean-protections",
+      "event_source": "NRDC News",
+      "decision": "MINT",
+      "amount_crbn": 64400,
+      "final_score": 1.84,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Recommendations are positive but non‑binding, risk insufficient protection. | The agencies’ recommendations represent a constructive step toward better marine stewardship, supporting several SDGs and planetary boundaries. However, their non‑binding nature limits immediate impact and leaves ecosystems vulnerable. Overall the action leans positive but the lack of enforceability c",
+      "tx_hash": "4cxLVXRmxwDLz7kGGmo5qjvPg3HbWbc7duCPbbEockMEC1EMiDpwy2ZGMfXhT9kEaszXhW2kAp8trxhdMafTdLPW",
+      "created_at": "2026-08-03T00:05:23.650934+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Agencies issued recommendations to strengthen California ocean protections, aiming to safeguard marine ecosystems and reduce over‑fishing\", \"affected_sdgs\": [14, 13, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The recommendations are non‑binding, allowing continued ocean degradation if the Commission does not act\", \"affected_sdgs\": [14, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 5965,
       "event_title": "Why some states want to leave the International Criminal Court",
@@ -137205,8 +137228,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 63,
-        "total_amount": 60808900
+        "count": 64,
+        "total_amount": 60873300
       },
       {
         "country": "Spain",
@@ -137269,8 +137292,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.074,
-        "events": 68
+        "burn_ratio": 0.072,
+        "events": 69
       },
       {
         "region": "Oceania",
@@ -137306,16 +137329,11 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.926,
-        "events": 68
+        "mint_ratio": 0.928,
+        "events": 69
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-07-27",
-        "net_minted": 43285200,
-        "net_burned": 1572000
-      },
       {
         "date": "2026-07-28",
         "net_minted": 21531590,
@@ -137345,6 +137363,11 @@
         "date": "2026-08-02",
         "net_minted": 37177540,
         "net_burned": 10464000
+      },
+      {
+        "date": "2026-08-03",
+        "net_minted": 64400,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -137361,7 +137384,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 298,
+        "negative": 299,
         "event_ids_positive": [
           5962,
           5947,
@@ -137398,6 +137421,7 @@
           5629
         ],
         "event_ids_negative": [
+          5966,
           5965,
           5964,
           5963,
@@ -137700,7 +137724,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 266,
+        "negative": 267,
         "event_ids_positive": [
           5962,
           5947,
@@ -137722,6 +137746,7 @@
           5631
         ],
         "event_ids_negative": [
+          5966,
           5965,
           5963,
           5961,
@@ -138255,13 +138280,14 @@
       },
       "Animal": {
         "positive": 3,
-        "negative": 21,
+        "negative": 22,
         "event_ids_positive": [
           5730,
           5710,
           5705
         ],
         "event_ids_negative": [
+          5966,
           5964,
           5915,
           5879,
@@ -138287,7 +138313,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 77,
+        "negative": 78,
         "event_ids_positive": [
           5947,
           5939,
@@ -138312,6 +138338,7 @@
           5631
         ],
         "event_ids_negative": [
+          5966,
           5964,
           5955,
           5938,
@@ -138396,11 +138423,11 @@
       "niche_pct": 67.4,
       "mainstream_pct": 32.6,
       "total_sources_used": 92,
-      "articles_processed": 334
+      "articles_processed": 335
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 334,
+      "total_events": 335,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -138760,9 +138787,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 301,
+      "total_mint": 302,
       "direct_action": {
-        "count": 286,
+        "count": 287,
         "pct": 95.0
       },
       "editorial_alarm": {
@@ -138775,9 +138802,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4069,
+      "total_mint": 4070,
       "direct_action": {
-        "count": 3302,
+        "count": 3303,
         "pct": 81.2
       },
       "editorial_alarm": {
@@ -138791,14 +138818,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 91,
-      "institutional": 243,
+      "institutional": 244,
       "citizen_ratio": 0.272,
       "daily": [
-        {
-          "date": "2026-07-27",
-          "citizen": 16,
-          "institutional": 27
-        },
         {
           "date": "2026-07-28",
           "citizen": 18,
@@ -138828,6 +138850,11 @@
           "date": "2026-08-02",
           "citizen": 4,
           "institutional": 29
+        },
+        {
+          "date": "2026-08-03",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -138924,6 +138951,7 @@
         5628
       ],
       "event_ids_institutional": [
+        5966,
         5965,
         5964,
         5963,
