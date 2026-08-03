@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-03T01:36:00.859676+00:00",
-  "total_events": 5969,
+  "generated_at": "2026-08-03T02:05:36.079168+00:00",
+  "total_events": 5970,
   "total_burned": 7748223275,
-  "total_minted": 8506107539,
+  "total_minted": 8506182339,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 5970,
+      "event_title": "Sudanese army drone strike kills 35 at Darfur court, rights group says",
+      "event_url": "https://www.france24.com/en/africa/20260803-sudan-darfur-drone-army-kill",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 74800,
+      "final_score": -5.41,
+      "confidence": 8,
+      "justification": "Drone strike killing civilians violates core human rights and undermines peace, justice, and institutional integrity. | The drone strike constitutes a severe violation of human rights, including the right to life, freedom from torture, and access to justice. It undermines peace, justice, and strong institutions (SDG 16), exacerbates inequalities (SDG 10), and causes direct harm to health and well-being (SDG 3). There are no identifiable positive aspects to the action itself, as it represents an ",
+      "tx_hash": "65GPzajEFJQXVxpEXWXjUy69stxEVPJSh5v8BcpYwu4NPZ7NmAsK6R7TNu6hTB1MTkmWJo4VyAr4rZEBDNWwpws3",
+      "created_at": "2026-08-03T02:05:30.653693+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sudan",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Sudanese army conducted a drone strike targeting a traditional court in a village held by the Rapid Support Forces, killing 35 civilians and wounding others during local court hearings.\", \"affected_sdgs\": [1, 3, 10, 16], \"violated_rights\": [\"UDHR Article 3 (Right to Life)\", \"UDHR Article 5 (Freedom from Torture)\", \"UDHR Article 10 (Right to Fair Hearing)\", \"CRC Article 6 (Right to Life for Children)\", \"ILO Convention on Forced Labor (if civilians were coerced into attendance)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 5969,
       "event_title": "Four women accusing Mohammed Al-Fayed of sexual violence recognized by British authorities as victims of human trafficking",
@@ -137351,8 +137374,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.167,
-        "events": 18
+        "burn_ratio": 0.158,
+        "events": 19
       },
       {
         "region": "Europe",
@@ -137435,7 +137458,7 @@
       },
       {
         "date": "2026-08-03",
-        "net_minted": 895660,
+        "net_minted": 970460,
         "net_burned": 0
       }
     ],
@@ -137453,7 +137476,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 302,
+        "negative": 303,
         "event_ids_positive": [
           5962,
           5947,
@@ -137490,6 +137513,7 @@
           5629
         ],
         "event_ids_negative": [
+          5970,
           5969,
           5968,
           5967,
@@ -137796,7 +137820,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 269,
+        "negative": 270,
         "event_ids_positive": [
           5962,
           5947,
@@ -137818,6 +137842,7 @@
           5631
         ],
         "event_ids_negative": [
+          5970,
           5969,
           5967,
           5966,
@@ -138091,7 +138116,7 @@
       },
       "ILO": {
         "positive": 5,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           5809,
           5760,
@@ -138100,6 +138125,7 @@
           5629
         ],
         "event_ids_negative": [
+          5970,
           5954,
           5953,
           5938,
@@ -138145,7 +138171,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 110,
+        "negative": 111,
         "event_ids_positive": [
           5962,
           5939,
@@ -138153,6 +138179,7 @@
           5750
         ],
         "event_ids_negative": [
+          5970,
           5969,
           5965,
           5956,
@@ -138500,11 +138527,11 @@
       "niche_pct": 68.4,
       "mainstream_pct": 31.6,
       "total_sources_used": 95,
-      "articles_processed": 342
+      "articles_processed": 343
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 342,
+      "total_events": 343,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -138700,10 +138727,11 @@
       },
       {
         "name": "Defense",
-        "count": 30,
+        "count": 31,
         "burn_count": 0,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          5970,
           5954,
           5952,
           5932,
@@ -138871,9 +138899,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 305,
+      "total_mint": 306,
       "direct_action": {
-        "count": 290,
+        "count": 291,
         "pct": 95.1
       },
       "editorial_alarm": {
@@ -138886,9 +138914,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4073,
+      "total_mint": 4074,
       "direct_action": {
-        "count": 3306,
+        "count": 3307,
         "pct": 81.2
       },
       "editorial_alarm": {
@@ -138902,8 +138930,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 92,
-      "institutional": 250,
-      "citizen_ratio": 0.269,
+      "institutional": 251,
+      "citizen_ratio": 0.268,
       "daily": [
         {
           "date": "2026-07-28",
@@ -138938,7 +138966,7 @@
         {
           "date": "2026-08-03",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -139036,6 +139064,7 @@
         5628
       ],
       "event_ids_institutional": [
+        5970,
         5969,
         5967,
         5966,
