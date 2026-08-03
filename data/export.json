@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-03T14:07:17.012316+00:00",
-  "total_events": 6000,
+  "generated_at": "2026-08-03T14:37:51.272127+00:00",
+  "total_events": 6001,
   "total_burned": 7758370275,
-  "total_minted": 8540374039,
+  "total_minted": 8541122039,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6001,
+      "event_title": "Trump administration moves to block public from enforcing environmental protection laws",
+      "event_url": "https://theconversation.com/trump-administration-moves-to-block-public-from-enforcing-environmental-protection-laws-288687",
+      "event_source": "The Conversation US",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -5.53,
+      "confidence": 8,
+      "justification": "Action removes critical public enforcement of environmental laws, enabling impunity and ecological harm. | The decision to block public enforcement of environmental laws represents a significant regression in accountability, justice, and ecological protection. It directly violates participatory rights under UDHR and undermines SDGs related to climate action, life on land, and peace/justice. The magnitude of harm is high due to the systemic removal of a critical check on environmental degradation",
+      "tx_hash": "48SM6Dg9LEq3Eq9AVfvtRK1Vy1eaEjxjYmXSUH52fjPgwjJB4oRWrNqXFnukBoFGxKL8P5ecZmj2DR1P1Q378886",
+      "created_at": "2026-08-03T14:37:45.529688+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Trump administration action restricts public ability to file lawsuits enforcing environmental protection laws, weakening citizen oversight and accountability mechanisms.\", \"affected_sdgs\": [13, 15, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Reduces access to justice for communities and advocacy groups, particularly marginalized populations, undermining environmental justice and participatory governance.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 7\", \"UDHR Article 8\", \"UNDRIP Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Undermines long-standing legal precedents that enabled public enforcement of environmental laws, increasing risk of unchecked pollution and biodiversity loss.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6000,
       "event_title": "Chinese military unveils AI system to plan and coordinate mass air strikes",
@@ -138010,8 +138033,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 70,
-        "total_amount": 62976560
+        "count": 71,
+        "total_amount": 63724560
       },
       {
         "country": "Spain",
@@ -138074,8 +138097,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.067,
-        "events": 75
+        "burn_ratio": 0.066,
+        "events": 76
       },
       {
         "region": "Latin America",
@@ -138111,8 +138134,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.933,
-        "events": 75
+        "mint_ratio": 0.934,
+        "events": 76
       }
     ],
     "supply_trend_7d": [
@@ -138148,7 +138171,7 @@
       },
       {
         "date": "2026-08-03",
-        "net_minted": 35162160,
+        "net_minted": 35910160,
         "net_burned": 10147000
       }
     ],
@@ -138166,7 +138189,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 312,
+        "negative": 313,
         "event_ids_positive": [
           5980,
           5979,
@@ -138204,6 +138227,7 @@
           5658
         ],
         "event_ids_negative": [
+          6001,
           6000,
           5999,
           5998,
@@ -138520,7 +138544,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 279,
+        "negative": 280,
         "event_ids_positive": [
           5977,
           5962,
@@ -138542,6 +138566,7 @@
           5690
         ],
         "event_ids_negative": [
+          6001,
           6000,
           5999,
           5998,
@@ -139006,7 +139031,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           5900,
           5750,
@@ -139014,6 +139039,7 @@
           5710
         ],
         "event_ids_negative": [
+          6001,
           5985,
           5984,
           5974,
@@ -139131,7 +139157,7 @@
       },
       "PB": {
         "positive": 22,
-        "negative": 85,
+        "negative": 86,
         "event_ids_positive": [
           5980,
           5977,
@@ -139157,6 +139183,7 @@
           5658
         ],
         "event_ids_negative": [
+          6001,
           5999,
           5998,
           5995,
@@ -139249,11 +139276,11 @@
       "niche_pct": 67.4,
       "mainstream_pct": 32.6,
       "total_sources_used": 95,
-      "articles_processed": 353
+      "articles_processed": 354
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 353,
+      "total_events": 354,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -139632,10 +139659,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 315,
+      "total_mint": 316,
       "direct_action": {
-        "count": 300,
-        "pct": 95.2
+        "count": 301,
+        "pct": 95.3
       },
       "editorial_alarm": {
         "count": 12,
@@ -139643,14 +139670,14 @@
       },
       "untyped": {
         "count": 3,
-        "pct": 1.0
+        "pct": 0.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4101,
+      "total_mint": 4102,
       "direct_action": {
-        "count": 3332,
-        "pct": 81.2
+        "count": 3333,
+        "pct": 81.3
       },
       "editorial_alarm": {
         "count": 248,
@@ -139663,8 +139690,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 263,
-      "citizen_ratio": 0.255,
+      "institutional": 264,
+      "citizen_ratio": 0.254,
       "daily": [
         {
           "date": "2026-07-28",
@@ -139699,7 +139726,7 @@
         {
           "date": "2026-08-03",
           "citizen": 8,
-          "institutional": 27
+          "institutional": 28
         }
       ],
       "event_ids_citizen": [
@@ -139795,6 +139822,7 @@
         5650
       ],
       "event_ids_institutional": [
+        6001,
         6000,
         5998,
         5997,
