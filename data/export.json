@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-03T17:06:34.250405+00:00",
-  "total_events": 6010,
+  "generated_at": "2026-08-03T17:35:39.102944+00:00",
+  "total_events": 6012,
   "total_burned": 7758370275,
-  "total_minted": 8542360099,
+  "total_minted": 8547897099,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6012,
+      "event_title": "Ceuta: EU calls borders a 'shared European responsibility'",
+      "event_url": "https://www.dw.com/en/ceuta-eu-calls-borders-a-shared-european-responsibility/a-78220701?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.77,
+      "confidence": 7,
+      "justification": "EU's border security call risks enabling rights violations against migrants, outweighing limited solidarity benefits. | The EU's call for 'united action' on border security could strengthen institutional cooperation (SDG 17) but risks entrenching policies that violate migrant rights (UDHR Article 14) and exacerbate inequalities (SDG 10). The negative aspects outweigh the positive due to the direct harm to vulnerable populations and the potential for systemic rights violations.",
+      "tx_hash": "QQdQ3HNBDkP4PUMUa2CxLpNUSRX3WbqcxCCvddbnURdzepQndxBRqnZF9F1jPY1rhpQynvMvDuCfMPqiqAhQETL",
+      "created_at": "2026-08-03T17:35:33.209996+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU Commission frames border security as a 'shared European responsibility', potentially fostering solidarity and coordinated policy among member states.\", \"affected_sdgs\": [16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increased border security support to Morocco at Ceuta and Melilla may reinforce exclusionary migration policies, risking violations of the right to seek asylum (UDHR Article 14) and non-refoulement principles.\", \"affected_sdgs\": [1, 10, 16], \"violated_rights\": [\"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential normalization of externalizing border control to third countries (Morocco), which may enable human rights abuses against migrants, including arbitrary detention and collective expulsions.\", \"affected_sdgs\": [1, 8, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 13\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 6011,
+      "event_title": "Invasive rats are stopping small mammals from returning to Madagascar’s regenerating forests – study",
+      "event_url": "https://theconversation.com/invasive-rats-are-stopping-small-mammals-from-returning-to-madagascars-regenerating-forests-study-288735",
+      "event_source": "The Conversation Africa",
+      "decision": "MINT",
+      "amount_crbn": 127000,
+      "final_score": -1.81,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Negative biodiversity impact outweighs modest awareness benefit. | The study reveals a serious biodiversity threat as invasive rats block wildlife recovery, a clear negative impact. While the article’s dissemination offers modest awareness benefits, the net ethical balance is negative.",
+      "tx_hash": "pGdmsD5jXfmFyMD7bTcM7KN7AXkeT6vLkmZa8opxLqQ63X6S7v1cMN6iFA3Nx6tGthde7vaU8m3s6o2m1dUoNtn",
+      "created_at": "2026-08-03T17:35:31.018100+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Madagascar",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Publication raises public awareness of invasive rat impacts, enabling future conservation actions\", \"affected_sdgs\": [15, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Invasive rats prevent native small mammals, including lemurs, from recolonizing regenerating forests in Madagascar\", \"affected_sdgs\": [15, 13], \"violated_rights\": [\"Animal Rights\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6010,
       "event_title": "Romanian navy blasts riverbed to protect nuclear plant",
@@ -138378,7 +138424,7 @@
       },
       {
         "date": "2026-08-03",
-        "net_minted": 37148220,
+        "net_minted": 42685220,
         "net_burned": 10147000
       }
     ],
@@ -138396,7 +138442,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 317,
+        "negative": 318,
         "event_ids_positive": [
           5980,
           5979,
@@ -138434,6 +138480,8 @@
           5658
         ],
         "event_ids_negative": [
+          6012,
+          6011,
           6010,
           6009,
           6008,
@@ -138749,13 +138797,12 @@
           5657,
           5656,
           5655,
-          5654,
-          5653
+          5654
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 284,
+        "negative": 285,
         "event_ids_positive": [
           5977,
           5962,
@@ -138777,6 +138824,8 @@
           5690
         ],
         "event_ids_negative": [
+          6012,
+          6011,
           6010,
           6009,
           6007,
@@ -139059,13 +139108,12 @@
           5657,
           5656,
           5655,
-          5654,
-          5653
+          5654
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 43,
+        "negative": 42,
         "event_ids_positive": [
           5809,
           5760,
@@ -139114,13 +139162,12 @@
           5686,
           5684,
           5675,
-          5671,
-          5653
+          5671
         ]
       },
       "CRC": {
         "positive": 4,
-        "negative": 116,
+        "negative": 115,
         "event_ids_positive": [
           5962,
           5939,
@@ -139242,13 +139289,12 @@
           5669,
           5661,
           5660,
-          5657,
-          5653
+          5657
         ]
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 78,
+        "negative": 77,
         "event_ids_positive": [
           5900,
           5750,
@@ -139332,13 +139378,12 @@
           5668,
           5667,
           5665,
-          5660,
-          5653
+          5660
         ]
       },
       "Animal": {
         "positive": 4,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           5980,
           5730,
@@ -139346,6 +139391,7 @@
           5705
         ],
         "event_ids_negative": [
+          6011,
           6010,
           6004,
           6002,
@@ -139495,24 +139541,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.3,
-      "mainstream_pct": 33.7,
-      "total_sources_used": 95,
-      "articles_processed": 358
+      "niche_pct": 66.7,
+      "mainstream_pct": 33.3,
+      "total_sources_used": 96,
+      "articles_processed": 359
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 358,
-      "pct": 2.0
+      "total_events": 359,
+      "pct": 1.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 19,
+        "count": 20,
         "burn_count": 5,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          6012,
           5997,
           5995,
           5986,
@@ -139576,13 +139623,12 @@
       },
       {
         "name": "ICC",
-        "count": 3,
+        "count": 2,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 2,
         "event_ids": [
           5965,
-          5911,
-          5653
+          5911
         ]
       },
       {
@@ -139886,9 +139932,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 320,
+      "total_mint": 321,
       "direct_action": {
-        "count": 306,
+        "count": 307,
         "pct": 95.6
       },
       "editorial_alarm": {
@@ -139901,9 +139947,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4111,
+      "total_mint": 4113,
       "direct_action": {
-        "count": 3342,
+        "count": 3344,
         "pct": 81.3
       },
       "editorial_alarm": {
@@ -139917,7 +139963,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 268,
+      "institutional": 269,
       "citizen_ratio": 0.251,
       "daily": [
         {
@@ -139953,7 +139999,7 @@
         {
           "date": "2026-08-03",
           "citizen": 10,
-          "institutional": 35
+          "institutional": 37
         }
       ],
       "event_ids_citizen": [
@@ -140049,6 +140095,8 @@
         5660
       ],
       "event_ids_institutional": [
+        6012,
+        6011,
         6010,
         6009,
         6008,
@@ -140315,8 +140363,7 @@
         5657,
         5656,
         5655,
-        5654,
-        5653
+        5654
       ]
     }
   }
