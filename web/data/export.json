@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-04T05:06:45.007939+00:00",
-  "total_events": 6038,
+  "generated_at": "2026-08-04T05:36:25.032226+00:00",
+  "total_events": 6039,
   "total_burned": 7758394315,
-  "total_minted": 8564576999,
+  "total_minted": 8564631099,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6039,
+      "event_title": "Government confirms controversial Pegasus fast-track application",
+      "event_url": "https://www.rnz.co.nz/news/political/883834/government-confirms-controversial-pegasus-fast-track-application",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -3.38,
+      "confidence": 7,
+      "justification": "Fast-track approval undermines environmental, community, and transparency rights, outweighing housing benefits. | The government's confirmation of a fast-track application for housing development prioritizes short-term economic and housing goals over environmental and community rights. While addressing housing needs (SDG 11), the action undermines sustainable urban planning, public participation, and biodiversity conservation. The bypassing of consultation processes violates principles of transp",
+      "tx_hash": "32B5qJo1sNGHVH41LTNLCondDp4ffXv4H9u7aHPexAEZX6eXmaMviiZEu7W1gHry685hPsdynk6JS4hKzgMbEYDB",
+      "created_at": "2026-08-04T05:36:18.242701+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Fast-track application process may accelerate housing development, addressing housing shortages in Canterbury.\", \"affected_sdgs\": [11, 8], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Destruction of a public recreational space (golf course) reduces community access to green areas, undermining sustainable urban planning and well-being.\", \"affected_sdgs\": [11, 3, 15], \"violated_rights\": [\"UDHR Article 27\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Fast-tracking bypasses standard environmental and community consultation processes, risking inadequate assessment of ecological and social impacts.\", \"affected_sdgs\": [11, 16, 15], \"violated_rights\": [\"UNDRIP Article 19\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Potential loss of biodiversity and urban green space, contributing to land-system change and reduced ecosystem services.\", \"affected_sdgs\": [15, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6038,
       "event_title": "FAA certifies Boeing 737 MAX 7 after years of delays",
@@ -138893,14 +138916,14 @@
         "total_amount": 4192760
       },
       {
+        "country": "New Zealand",
+        "count": 11,
+        "total_amount": 3405940
+      },
+      {
         "country": "Brazil",
         "count": 11,
         "total_amount": 2493000
-      },
-      {
-        "country": "New Zealand",
-        "count": 10,
-        "total_amount": 3351840
       },
       {
         "country": "Australia",
@@ -138948,8 +138971,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.087,
-        "events": 23
+        "burn_ratio": 0.083,
+        "events": 24
       },
       {
         "region": "Latin America",
@@ -138985,8 +139008,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.913,
-        "events": 23
+        "mint_ratio": 0.917,
+        "events": 24
       }
     ],
     "supply_trend_7d": [
@@ -139022,25 +139045,25 @@
       },
       {
         "date": "2026-08-04",
-        "net_minted": 3351100,
+        "net_minted": 3405200,
         "net_burned": 24040
       }
     ],
     "event_of_the_day": {
-      "id": 5980,
-      "event_title": "No more blind birds: Reducing light pollution saves birds and energy",
+      "id": 6029,
+      "event_title": "New Zealand climbers stranded on remote mountain in Solomon Islands rescued",
       "decision": "BURN",
-      "amount_crbn": 400000,
-      "final_score": 6.06,
+      "amount_crbn": 24040,
+      "final_score": 6.01,
       "confidence": 8,
-      "country": null,
-      "region": null,
-      "created_at": "2026-08-03T05:35:36.068073+00:00"
+      "country": "Solomon Islands",
+      "region": "Oceania",
+      "created_at": "2026-08-04T00:06:46.012054+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 318,
+        "negative": 319,
         "event_ids_positive": [
           6029,
           5980,
@@ -139077,6 +139100,7 @@
           5690
         ],
         "event_ids_negative": [
+          6039,
           6038,
           6037,
           6036,
@@ -139399,7 +139423,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 285,
+        "negative": 286,
         "event_ids_positive": [
           6029,
           5977,
@@ -139422,6 +139446,7 @@
           5690
         ],
         "event_ids_negative": [
+          6039,
           6038,
           6037,
           6036,
@@ -139889,7 +139914,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           5900,
           5750,
@@ -139897,6 +139922,7 @@
           5710
         ],
         "event_ids_negative": [
+          6039,
           6021,
           6019,
           6018,
@@ -140016,7 +140042,7 @@
       },
       "PB": {
         "positive": 20,
-        "negative": 91,
+        "negative": 92,
         "event_ids_positive": [
           5980,
           5977,
@@ -140040,6 +140066,7 @@
           5701
         ],
         "event_ids_negative": [
+          6039,
           6038,
           6037,
           6034,
@@ -140138,12 +140165,12 @@
       "niche_pct": 65.6,
       "mainstream_pct": 34.4,
       "total_sources_used": 93,
-      "articles_processed": 358
+      "articles_processed": 359
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 358,
-      "pct": 2.0
+      "total_events": 359,
+      "pct": 1.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -140347,10 +140374,11 @@
       },
       {
         "name": "Construction",
-        "count": 33,
+        "count": 34,
         "burn_count": 1,
-        "mint_count": 32,
+        "mint_count": 33,
         "event_ids": [
+          6039,
           6034,
           6030,
           6022,
@@ -140534,10 +140562,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 321,
+      "total_mint": 322,
       "direct_action": {
-        "count": 307,
-        "pct": 95.6
+        "count": 308,
+        "pct": 95.7
       },
       "editorial_alarm": {
         "count": 11,
@@ -140549,9 +140577,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4138,
+      "total_mint": 4139,
       "direct_action": {
-        "count": 3369,
+        "count": 3370,
         "pct": 81.4
       },
       "editorial_alarm": {
@@ -140565,8 +140593,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 89,
-      "institutional": 269,
-      "citizen_ratio": 0.249,
+      "institutional": 270,
+      "citizen_ratio": 0.248,
       "daily": [
         {
           "date": "2026-07-29",
@@ -140601,7 +140629,7 @@
         {
           "date": "2026-08-04",
           "citizen": 1,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -140696,6 +140724,7 @@
         5682
       ],
       "event_ids_institutional": [
+        6039,
         6038,
         6037,
         6036,
