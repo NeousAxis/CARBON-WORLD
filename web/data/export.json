@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-04T10:36:08.745381+00:00",
-  "total_events": 6045,
+  "generated_at": "2026-08-04T11:06:12.272665+00:00",
+  "total_events": 6046,
   "total_burned": 7758394315,
-  "total_minted": 8565927609,
+  "total_minted": 8566152609,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6046,
+      "event_title": "Hong Kong: Submission to the UN Committee on the Rights of the Child, 103rd Pre-Sessional Working Group, 26 September – 2 October 2026, List of Issues",
+      "event_url": "https://www.amnesty.org/en/documents/asa17/1334/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -2.07,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The submission highlights systemic failures in children's rights, outweighing the positive act of reporting. | The submission by Amnesty International represents a positive enforcement mechanism for children's rights under the CRC, aligning with SDGs 4, 10, and 16. However, the underlying concerns it raises about Hong Kong's compliance with the CRC indicate significant ethical ",
+      "tx_hash": "5tPysBjmNZcwLH8j5opqEtT6gX6JTbbd1uRLrVKZTvopJkDq7xybAbZDGDUHrjMegUtroSwSAQ2QwR32CkRQ67jt",
+      "created_at": "2026-08-04T11:06:03.573161+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "China",
+      "region": "Asia",
+      "administration": "China-CPC",
+      "positive_aspects_json": "[{\"description\": \"Amnesty International submits a formal report to the UN Committee on the Rights of the Child, highlighting concerns and recommendations for Hong Kong's implementation of the UN Convention on the Rights of the Child (CRC).\", \"affected_sdgs\": [4, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}, {\"description\": \"The submission aims to assist the Committee in adopting a list of issues and conducting a subsequent review, reinforcing accountability for children's rights.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The submission implies potential violations or gaps in Hong Kong's implementation of the CRC, suggesting systemic issues in protecting children's rights.\", \"affected_sdgs\": [4, 10, 16], \"violated_rights\": [\"CRC Article 3 (Best interests of the child)\", \"CRC Article 12 (Respect for the views of the child)\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6045,
       "event_title": "Ethiopians flee to neighbouring Sudan after renewed conflict in Tigray",
@@ -139125,14 +139148,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 25
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 11
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 24
       },
       {
         "region": "North America",
@@ -139183,7 +139206,7 @@
       },
       {
         "date": "2026-08-04",
-        "net_minted": 4701710,
+        "net_minted": 4926710,
         "net_burned": 24040
       }
     ],
@@ -139201,7 +139224,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 316,
+        "negative": 317,
         "event_ids_positive": [
           6029,
           5980,
@@ -139238,6 +139261,7 @@
           5690
         ],
         "event_ids_negative": [
+          6046,
           6045,
           6044,
           6043,
@@ -139558,7 +139582,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 281,
+        "negative": 282,
         "event_ids_positive": [
           6029,
           5977,
@@ -139581,6 +139605,7 @@
           5690
         ],
         "event_ids_negative": [
+          6046,
           6045,
           6044,
           6043,
@@ -139919,7 +139944,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 111,
+        "negative": 112,
         "event_ids_positive": [
           5962,
           5939,
@@ -139927,6 +139952,7 @@
           5750
         ],
         "event_ids_negative": [
+          6046,
           6045,
           6044,
           6028,
@@ -140290,11 +140316,11 @@
       "niche_pct": 66.7,
       "mainstream_pct": 33.3,
       "total_sources_used": 93,
-      "articles_processed": 356
+      "articles_processed": 357
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 356,
+      "total_events": 357,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -140329,6 +140355,20 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          6046,
+          5863,
+          5837,
+          5791,
+          5752,
+          5708
+        ]
+      },
+      {
         "name": "ILO",
         "count": 5,
         "burn_count": 0,
@@ -140352,19 +140392,6 @@
           5797,
           5729,
           5718
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          5863,
-          5837,
-          5791,
-          5752,
-          5708
         ]
       },
       {
@@ -140686,9 +140713,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 319,
+      "total_mint": 320,
       "direct_action": {
-        "count": 304,
+        "count": 305,
         "pct": 95.3
       },
       "editorial_alarm": {
@@ -140701,9 +140728,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4145,
+      "total_mint": 4146,
       "direct_action": {
-        "count": 3375,
+        "count": 3376,
         "pct": 81.4
       },
       "editorial_alarm": {
@@ -140717,7 +140744,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 87,
-      "institutional": 269,
+      "institutional": 270,
       "citizen_ratio": 0.244,
       "daily": [
         {
@@ -140753,7 +140780,7 @@
         {
           "date": "2026-08-04",
           "citizen": 2,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -140846,6 +140873,7 @@
         5690
       ],
       "event_ids_institutional": [
+        6046,
         6045,
         6044,
         6043,
