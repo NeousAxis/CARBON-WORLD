@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-04T09:06:37.401573+00:00",
-  "total_events": 6044,
+  "generated_at": "2026-08-04T10:06:20.978219+00:00",
+  "total_events": 6045,
   "total_burned": 7758394315,
-  "total_minted": 8565860909,
+  "total_minted": 8565927609,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6045,
+      "event_title": "Ethiopians flee to neighbouring Sudan after renewed conflict in Tigray",
+      "event_url": "https://www.france24.com/en/video/20260804-ethiopians-flee-to-neighbouring-sudan-after-renewed-conflict-in-tigray",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 66700,
+      "final_score": -4.3,
+      "confidence": 7,
+      "justification": "Conflict escalation causes large‑scale harm and rights violations, warranting a MINT decision. | The escalation of fighting in Tigray generates severe humanitarian harm, breaching multiple human rights instruments and SDGs. No compensating positive outcomes are evident, leading to a net negative ethical assessment.",
+      "tx_hash": "4FKxX7LuLP2xnmv13kYhvejtDmvSk7nT5zxyWyAqSbUzVVmvUxWEsGecWj9b52tCeT27PaMpjyLAGCknx6iNBUqM",
+      "created_at": "2026-08-04T10:06:14.216526+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ethiopia",
+      "region": "Africa",
+      "administration": "Ethiopia-PP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Renewed armed conflict in Tigray forces mass displacement, causing loss of life, health crises, food insecurity and violation of fundamental rights.\", \"affected_sdgs\": [1, 2, 3, 5, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 13\", \"UDHR Article 25\", \"CRC Article 3\", \"CRC Article 24\", \"UNDRIP Article 7\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 6044,
       "event_title": "Kennedy and Oz call Medicaid cuts ‘myths.’ It’s more complicated than that",
@@ -139076,8 +139099,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.214,
-        "events": 14
+        "burn_ratio": 0.2,
+        "events": 15
       },
       {
         "region": "Europe",
@@ -139104,12 +139127,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 12
+        "events": 11
       },
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 25
+        "events": 24
       },
       {
         "region": "North America",
@@ -139160,7 +139183,7 @@
       },
       {
         "date": "2026-08-04",
-        "net_minted": 4635010,
+        "net_minted": 4701710,
         "net_burned": 24040
       }
     ],
@@ -139178,7 +139201,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 320,
+        "negative": 317,
         "event_ids_positive": [
           6029,
           5980,
@@ -139215,6 +139238,7 @@
           5690
         ],
         "event_ids_negative": [
+          6045,
           6044,
           6043,
           6042,
@@ -139530,16 +139554,12 @@
           5693,
           5692,
           5691,
-          5689,
-          5688,
-          5687,
-          5686,
-          5685
+          5689
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 285,
+        "negative": 282,
         "event_ids_positive": [
           6029,
           5977,
@@ -139562,6 +139582,7 @@
           5690
         ],
         "event_ids_negative": [
+          6045,
           6044,
           6043,
           6042,
@@ -139842,16 +139863,12 @@
           5694,
           5692,
           5691,
-          5689,
-          5688,
-          5687,
-          5686,
-          5685
+          5689
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 42,
+        "negative": 41,
         "event_ids_positive": [
           5809,
           5760,
@@ -139899,8 +139916,7 @@
           5700,
           5697,
           5696,
-          5694,
-          5686
+          5694
         ]
       },
       "CRC": {
@@ -139913,6 +139929,7 @@
           5750
         ],
         "event_ids_negative": [
+          6045,
           6044,
           6028,
           6023,
@@ -140022,8 +140039,7 @@
           5697,
           5696,
           5695,
-          5692,
-          5687
+          5692
         ]
       },
       "UNDRIP": {
@@ -140036,6 +140052,7 @@
           5710
         ],
         "event_ids_negative": [
+          6045,
           6042,
           6039,
           6021,
@@ -140110,13 +140127,12 @@
           5700,
           5698,
           5697,
-          5692,
-          5686
+          5692
         ]
       },
       "Animal": {
         "positive": 4,
-        "negative": 29,
+        "negative": 28,
         "event_ids_positive": [
           5980,
           5730,
@@ -140151,13 +140167,12 @@
           5737,
           5731,
           5706,
-          5689,
-          5686
+          5689
         ]
       },
       "PB": {
         "positive": 20,
-        "negative": 93,
+        "negative": 91,
         "event_ids_positive": [
           5980,
           5977,
@@ -140271,22 +140286,20 @@
           5702,
           5699,
           5692,
-          5689,
-          5688,
-          5686
+          5689
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.6,
-      "mainstream_pct": 34.4,
+      "niche_pct": 66.7,
+      "mainstream_pct": 33.3,
       "total_sources_used": 93,
-      "articles_processed": 360
+      "articles_processed": 357
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 360,
-      "pct": 1.9
+      "total_events": 357,
+      "pct": 2.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -140399,9 +140412,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 40,
+        "count": 39,
         "burn_count": 10,
-        "mint_count": 30,
+        "mint_count": 29,
         "event_ids": [
           6043,
           6034,
@@ -140441,8 +140454,7 @@
           5730,
           5723,
           5715,
-          5701,
-          5686
+          5701
         ]
       },
       {
@@ -140491,9 +140503,9 @@
       },
       {
         "name": "Construction",
-        "count": 33,
+        "count": 32,
         "burn_count": 1,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           6039,
           6034,
@@ -140526,8 +140538,7 @@
           5717,
           5709,
           5699,
-          5693,
-          5686
+          5693
         ]
       },
       {
@@ -140679,14 +140690,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 323,
+      "total_mint": 320,
       "direct_action": {
-        "count": 308,
-        "pct": 95.4
+        "count": 305,
+        "pct": 95.3
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 3.7
+        "pct": 3.8
       },
       "untyped": {
         "count": 3,
@@ -140694,9 +140705,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4144,
+      "total_mint": 4145,
       "direct_action": {
-        "count": 3374,
+        "count": 3375,
         "pct": 81.4
       },
       "editorial_alarm": {
@@ -140710,8 +140721,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 88,
-      "institutional": 272,
-      "citizen_ratio": 0.244,
+      "institutional": 269,
+      "citizen_ratio": 0.246,
       "daily": [
         {
           "date": "2026-07-29",
@@ -140746,7 +140757,7 @@
         {
           "date": "2026-08-04",
           "citizen": 2,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -140840,6 +140851,7 @@
         5689
       ],
       "event_ids_institutional": [
+        6045,
         6044,
         6043,
         6041,
@@ -141107,11 +141119,7 @@
         5695,
         5694,
         5693,
-        5691,
-        5688,
-        5687,
-        5686,
-        5685
+        5691
       ]
     }
   }
