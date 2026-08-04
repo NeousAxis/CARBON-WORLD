@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-04T00:06:56.907877+00:00",
-  "total_events": 6031,
+  "generated_at": "2026-08-04T01:06:16.506294+00:00",
+  "total_events": 6033,
   "total_burned": 7758394315,
-  "total_minted": 8562040899,
+  "total_minted": 8562881899,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6033,
+      "event_title": "Trump administration sued by 25 states over new tariffs on trading partners",
+      "event_url": "https://www.aljazeera.com/news/2026/8/4/trump-administration-sued-by-25-states-over-new-tariffs-on-trading-partners?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.85,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The tariffs' immediate economic harm and potential for trade escalation outweigh the procedural safeguard of the lawsuit. | The lawsuit by 25 states represents a positive check on executive authority, aligning with SDG 16 (Peace, Justice, and Strong Institutions) and reinforcing judicial oversight. However, the tariffs themselves risk exacerbating economic inequality (SDG 10), ",
+      "tx_hash": "3xTvzUFJJHoaNEdtskg1KhSwZR63WnKNimWgTdxfod6hBZTGmtSn5Z86d3phh7dYgkgf9MngneN5nSquyXdCaMFr",
+      "created_at": "2026-08-04T01:06:10.867648+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"25 states file a lawsuit challenging the legality of new tariffs, asserting judicial oversight over executive overreach.\", \"affected_sdgs\": [16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Implementation of new tariffs by the federal government, potentially undermining fair trade, economic stability, and international cooperation.\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential escalation of trade disputes, risking economic harm to workers, businesses, and consumers across multiple states.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 6032,
+      "event_title": "Boeing obtains certification for its 737 MAX 7, after seven years of delay",
+      "event_url": "https://www.france24.com/fr/%C3%A9co-tech/20260803-boeing-737-max-7-decroche-certification-sept-ans-retard",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.47,
+      "confidence": 7,
+      "justification": "Certification enables fossil-fuel-dependent aviation with unresolved safety and climate risks, outweighing economic benefits. | The certification enables economic and infrastructural progress (SDGs 8, 9) but carries significant ethical trade-offs. The decision prioritizes short-term industry viability over long-term safety and environmental risks, particularly given the 737 MAX series' troubled history. The lack of binding climate commitments in aviation regulation further undermines planetary b",
+      "tx_hash": "2mGour1coK4QqPJ5RPwABp6tptwqwBxUxHRdWPryZZjwm9deodpjYvd9Cwr7pCdScXTbR6XRao5j1X44m6EQHZ22",
+      "created_at": "2026-08-04T01:06:08.664649+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FAA certification of the Boeing 737 MAX 7 enables regulated commercial aviation operations, supporting industry infrastructure (SDG 9) and economic activity (SDG 8).\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Certification of a new aircraft model with a history of safety concerns (737 MAX series) may perpetuate risks to passenger safety (SDG 3) and undermine public trust in aviation regulation (SDG 16).\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Continued reliance on fossil-fuel-dependent aviation infrastructure (SDG 13) without binding emissions reductions or sustainable alternatives locks in long-term climate harm (PB Climate Change, PB Ocean Acidification).\", \"affected_sdgs\": [13, 14], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6031,
       "event_title": "United States: 25 Democratic and Republican States Sue Over Donald Trump's Tariffs",
@@ -138724,7 +138770,7 @@
       {
         "country": "United States",
         "count": 72,
-        "total_amount": 51291960
+        "total_amount": 51234960
       },
       {
         "country": "Spain",
@@ -138777,8 +138823,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.188,
-        "events": 16
+        "burn_ratio": 0.2,
+        "events": 15
       },
       {
         "region": "Europe",
@@ -138861,7 +138907,7 @@
       },
       {
         "date": "2026-08-04",
-        "net_minted": 815000,
+        "net_minted": 1656000,
         "net_burned": 24040
       }
     ],
@@ -138879,7 +138925,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 320,
+        "negative": 318,
         "event_ids_positive": [
           6029,
           5980,
@@ -138917,6 +138963,8 @@
           5680
         ],
         "event_ids_negative": [
+          6033,
+          6032,
           6031,
           6030,
           6028,
@@ -139232,16 +139280,12 @@
           5678,
           5677,
           5676,
-          5675,
-          5674,
-          5673,
-          5672,
-          5671
+          5675
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 287,
+        "negative": 286,
         "event_ids_positive": [
           6029,
           5977,
@@ -139264,6 +139308,8 @@
           5690
         ],
         "event_ids_negative": [
+          6033,
+          6032,
           6031,
           6030,
           6028,
@@ -139547,15 +139593,12 @@
           5678,
           5677,
           5676,
-          5675,
-          5673,
-          5672,
-          5671
+          5675
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 44,
+        "negative": 43,
         "event_ids_positive": [
           5809,
           5760,
@@ -139605,13 +139648,12 @@
           5694,
           5686,
           5684,
-          5675,
-          5671
+          5675
         ]
       },
       "CRC": {
         "positive": 4,
-        "negative": 114,
+        "negative": 113,
         "event_ids_positive": [
           5962,
           5939,
@@ -139731,13 +139773,12 @@
           5687,
           5681,
           5679,
-          5675,
-          5671
+          5675
         ]
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 77,
+        "negative": 76,
         "event_ids_positive": [
           5900,
           5750,
@@ -139820,13 +139861,12 @@
           5692,
           5686,
           5683,
-          5675,
-          5671
+          5675
         ]
       },
       "Animal": {
         "positive": 4,
-        "negative": 29,
+        "negative": 28,
         "event_ids_positive": [
           5980,
           5730,
@@ -139861,13 +139901,12 @@
           5706,
           5689,
           5686,
-          5676,
-          5674
+          5676
         ]
       },
       "PB": {
         "positive": 21,
-        "negative": 88,
+        "negative": 89,
         "event_ids_positive": [
           5980,
           5977,
@@ -139892,6 +139931,7 @@
           5680
         ],
         "event_ids_negative": [
+          6032,
           6022,
           6020,
           6019,
@@ -139987,11 +140027,11 @@
       "niche_pct": 64.9,
       "mainstream_pct": 35.1,
       "total_sources_used": 94,
-      "articles_processed": 361
+      "articles_processed": 359
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 361,
+      "total_events": 359,
       "pct": 1.9
     },
     "active_partners_7d": [],
@@ -140026,20 +140066,6 @@
         ]
       },
       {
-        "name": "UN",
-        "count": 6,
-        "burn_count": 0,
-        "mint_count": 6,
-        "event_ids": [
-          5863,
-          5837,
-          5791,
-          5752,
-          5708,
-          5673
-        ]
-      },
-      {
         "name": "ILO",
         "count": 5,
         "burn_count": 0,
@@ -140063,6 +140089,19 @@
           5797,
           5729,
           5718
+        ]
+      },
+      {
+        "name": "UN",
+        "count": 5,
+        "burn_count": 0,
+        "mint_count": 5,
+        "event_ids": [
+          5863,
+          5837,
+          5791,
+          5752,
+          5708
         ]
       },
       {
@@ -140195,9 +140234,9 @@
       },
       {
         "name": "Finance",
-        "count": 34,
+        "count": 33,
         "burn_count": 4,
-        "mint_count": 30,
+        "mint_count": 29,
         "event_ids": [
           6028,
           6003,
@@ -140231,15 +140270,14 @@
           5735,
           5730,
           5702,
-          5679,
-          5672
+          5679
         ]
       },
       {
         "name": "Construction",
-        "count": 33,
+        "count": 32,
         "burn_count": 1,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           6030,
           6022,
@@ -140272,8 +140310,7 @@
           5699,
           5693,
           5686,
-          5683,
-          5672
+          5683
         ]
       },
       {
@@ -140300,10 +140337,11 @@
       },
       {
         "name": "Transport",
-        "count": 11,
+        "count": 12,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          6032,
           6030,
           6020,
           5877,
@@ -140380,10 +140418,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 323,
+      "total_mint": 321,
       "direct_action": {
-        "count": 309,
-        "pct": 95.7
+        "count": 307,
+        "pct": 95.6
       },
       "editorial_alarm": {
         "count": 11,
@@ -140395,9 +140433,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4131,
+      "total_mint": 4133,
       "direct_action": {
-        "count": 3362,
+        "count": 3364,
         "pct": 81.4
       },
       "editorial_alarm": {
@@ -140411,8 +140449,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 271,
-      "citizen_ratio": 0.249,
+      "institutional": 269,
+      "citizen_ratio": 0.251,
       "daily": [
         {
           "date": "2026-07-29",
@@ -140447,7 +140485,7 @@
         {
           "date": "2026-08-04",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -140543,6 +140581,8 @@
         5680
       ],
       "event_ids_institutional": [
+        6033,
+        6032,
         6031,
         6030,
         6028,
@@ -140809,11 +140849,7 @@
         5678,
         5677,
         5676,
-        5675,
-        5674,
-        5673,
-        5672,
-        5671
+        5675
       ]
     }
   }
