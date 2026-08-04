@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-04T03:35:58.941482+00:00",
-  "total_events": 6037,
+  "generated_at": "2026-08-04T04:06:53.913962+00:00",
+  "total_events": 6038,
   "total_burned": 7758394315,
-  "total_minted": 8564276999,
+  "total_minted": 8564576999,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6038,
+      "event_title": "FAA certifies Boeing 737 MAX 7 after years of delays",
+      "event_url": "https://www.france24.com/en/americas/20260804-faa-certifies-boeing-737-max-7-after-years-of-delays",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.17,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Certification enables systemic risks and environmental harm despite safety reforms. | While the certification reflects improved safety protocols and regulatory rigor, the prolonged process and historical failures underscore persistent risks in aviation oversight. The decision also carries environmental trade-offs, as increased air travel could exacerbate climate change. The net",
+      "tx_hash": "3CqxPgvddpoLyy28RfJNH1DisgQN4G5dbktkmxsb98VFBDUcnRtsXHNgdQbPzHCzPX3fWsdp5BLpWFWbfUpmgyKQ",
+      "created_at": "2026-08-04T04:06:48.368174+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FAA certification of the Boeing 737 MAX 7 after safety reforms addresses past failures, potentially improving aviation safety standards and restoring public trust in regulatory oversight.\", \"affected_sdgs\": [9, 11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Certification follows years of delays and two fatal crashes, raising concerns about systemic weaknesses in regulatory enforcement and corporate accountability, which may persist despite reforms.\", \"affected_sdgs\": [3, 8, 9, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 23\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Approval of a new aircraft model may incentivize increased air travel, contributing to higher carbon emissions and undermining climate action goals (SDG 13).\", \"affected_sdgs\": [13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6037,
       "event_title": "Boeing's 737 MAX 7 finally secures certification after seven years of delay",
@@ -138862,7 +138885,7 @@
       {
         "country": "United States",
         "count": 74,
-        "total_amount": 52275960
+        "total_amount": 52537160
       },
       {
         "country": "Spain",
@@ -138999,7 +139022,7 @@
       },
       {
         "date": "2026-08-04",
-        "net_minted": 3051100,
+        "net_minted": 3351100,
         "net_burned": 24040
       }
     ],
@@ -139055,6 +139078,7 @@
           5680
         ],
         "event_ids_negative": [
+          6038,
           6037,
           6036,
           6035,
@@ -139371,8 +139395,7 @@
           5684,
           5683,
           5682,
-          5681,
-          5679
+          5681
         ]
       },
       "UDHR": {
@@ -139400,6 +139423,7 @@
           5690
         ],
         "event_ids_negative": [
+          6038,
           6037,
           6036,
           6035,
@@ -139683,8 +139707,7 @@
           5684,
           5683,
           5682,
-          5681,
-          5679
+          5681
         ]
       },
       "ILO": {
@@ -139744,7 +139767,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 112,
+        "negative": 111,
         "event_ids_positive": [
           5962,
           5939,
@@ -139862,8 +139885,7 @@
           5695,
           5692,
           5687,
-          5681,
-          5679
+          5681
         ]
       },
       "UNDRIP": {
@@ -139995,7 +140017,7 @@
       },
       "PB": {
         "positive": 21,
-        "negative": 90,
+        "negative": 91,
         "event_ids_positive": [
           5980,
           5977,
@@ -140020,6 +140042,7 @@
           5680
         ],
         "event_ids_negative": [
+          6038,
           6037,
           6034,
           6032,
@@ -140114,8 +140137,8 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.5,
-      "mainstream_pct": 35.5,
+      "niche_pct": 65.6,
+      "mainstream_pct": 34.4,
       "total_sources_used": 93,
       "articles_processed": 359
     },
@@ -140367,9 +140390,9 @@
       },
       {
         "name": "Finance",
-        "count": 33,
+        "count": 32,
         "burn_count": 4,
-        "mint_count": 29,
+        "mint_count": 28,
         "event_ids": [
           6028,
           6003,
@@ -140402,8 +140425,29 @@
           5750,
           5735,
           5730,
-          5702,
-          5679
+          5702
+        ]
+      },
+      {
+        "name": "Transport",
+        "count": 14,
+        "burn_count": 0,
+        "mint_count": 14,
+        "event_ids": [
+          6038,
+          6037,
+          6032,
+          6030,
+          6020,
+          5877,
+          5818,
+          5785,
+          5768,
+          5759,
+          5736,
+          5728,
+          5699,
+          5698
         ]
       },
       {
@@ -140426,27 +140470,6 @@
           5804,
           5803,
           5784
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 13,
-        "burn_count": 0,
-        "mint_count": 13,
-        "event_ids": [
-          6037,
-          6032,
-          6030,
-          6020,
-          5877,
-          5818,
-          5785,
-          5768,
-          5759,
-          5736,
-          5728,
-          5699,
-          5698
         ]
       },
       {
@@ -140528,9 +140551,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4137,
+      "total_mint": 4138,
       "direct_action": {
-        "count": 3368,
+        "count": 3369,
         "pct": 81.4
       },
       "editorial_alarm": {
@@ -140580,7 +140603,7 @@
         {
           "date": "2026-08-04",
           "citizen": 1,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -140676,6 +140699,7 @@
         5680
       ],
       "event_ids_institutional": [
+        6038,
         6037,
         6036,
         6035,
@@ -140943,8 +140967,7 @@
         5686,
         5685,
         5684,
-        5681,
-        5679
+        5681
       ]
     }
   }
