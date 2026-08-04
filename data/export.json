@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-04T02:35:46.777207+00:00",
-  "total_events": 6034,
+  "generated_at": "2026-08-04T03:05:59.666019+00:00",
+  "total_events": 6035,
   "total_burned": 7758394315,
-  "total_minted": 8562935999,
+  "total_minted": 8563435999,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6035,
+      "event_title": "Twenty-five American Democratic states challenge in court the latest tariffs of Donald Trump",
+      "event_url": "https://www.letemps.ch/articles/vingt-cinq-etats-americains-democrates-contestent-en-justice-les-derniers-droits-de-douane-de-donald-trump",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.31,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Unilateral tariffs without clear exit mechanisms risk economic harm and violate procedural fairness. | The legal challenge by 25 states represents a positive effort to uphold labor rights and procedural fairness in trade policy, aligning with SDGs 8, 10, and 16. However, the tariffs themselves risk violating economic rights and exacerbating inequalities, with high magnitude due",
+      "tx_hash": "4Bf9BDuX9CGnH4ghnQc6WRRtonp7XzGS9a5W1McMMUWkNAzmMjN7ex49rAWgtDZ3G69yumFnKeWPEMX8Pr1ErHgu",
+      "created_at": "2026-08-04T03:05:54.001911+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Legal challenge by 25 U.S. states to block tariffs imposed on grounds of forced labor concerns, aiming to enforce accountability in global supply chains.\", \"affected_sdgs\": [8, 10, 12, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"Potential to establish judicial oversight over trade policies that may violate labor rights or lack procedural fairness.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Tariffs imposed unilaterally without clear exit mechanisms for affected countries, risking trade disruptions and economic harm to vulnerable populations.\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Lack of transparency or evidence in the investigation process, undermining trust in trade policy enforcement.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6034,
       "event_title": "Dry Danube River threatens nuclear power in Romania, Hungary",
@@ -138792,8 +138815,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 72,
-        "total_amount": 51234960
+        "count": 73,
+        "total_amount": 51734960
       },
       {
         "country": "Spain",
@@ -138851,8 +138874,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.108,
-        "events": 93
+        "burn_ratio": 0.109,
+        "events": 92
       },
       {
         "region": "Oceania",
@@ -138861,13 +138884,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.065,
-        "events": 77
+        "burn_ratio": 0.064,
+        "events": 78
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.061,
-        "events": 33
+        "burn_ratio": 0.062,
+        "events": 32
       }
     ],
     "top_regions_destructive": [
@@ -138883,13 +138906,13 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.939,
-        "events": 33
+        "mint_ratio": 0.938,
+        "events": 32
       },
       {
         "region": "North America",
-        "mint_ratio": 0.935,
-        "events": 77
+        "mint_ratio": 0.936,
+        "events": 78
       },
       {
         "region": "Oceania",
@@ -138930,7 +138953,7 @@
       },
       {
         "date": "2026-08-04",
-        "net_minted": 1710100,
+        "net_minted": 2210100,
         "net_burned": 24040
       }
     ],
@@ -138948,7 +138971,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 318,
+        "negative": 317,
         "event_ids_positive": [
           6029,
           5980,
@@ -138986,6 +139009,7 @@
           5680
         ],
         "event_ids_negative": [
+          6035,
           6034,
           6033,
           6032,
@@ -139301,14 +139325,12 @@
           5682,
           5681,
           5679,
-          5678,
-          5677,
-          5676
+          5678
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 285,
+        "negative": 284,
         "event_ids_positive": [
           6029,
           5977,
@@ -139331,6 +139353,7 @@
           5690
         ],
         "event_ids_negative": [
+          6035,
           6033,
           6032,
           6031,
@@ -139613,14 +139636,12 @@
           5682,
           5681,
           5679,
-          5678,
-          5677,
-          5676
+          5678
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 42,
+        "negative": 43,
         "event_ids_positive": [
           5809,
           5760,
@@ -139628,6 +139649,7 @@
           5690
         ],
         "event_ids_negative": [
+          6035,
           6027,
           6015,
           5993,
@@ -139885,7 +139907,7 @@
       },
       "Animal": {
         "positive": 4,
-        "negative": 29,
+        "negative": 28,
         "event_ids_positive": [
           5980,
           5730,
@@ -139920,13 +139942,12 @@
           5731,
           5706,
           5689,
-          5686,
-          5676
+          5686
         ]
       },
       "PB": {
         "positive": 21,
-        "negative": 90,
+        "negative": 89,
         "event_ids_positive": [
           5980,
           5977,
@@ -140039,21 +140060,20 @@
           5688,
           5686,
           5684,
-          5683,
-          5676
+          5683
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.9,
-      "mainstream_pct": 35.1,
-      "total_sources_used": 94,
-      "articles_processed": 359
+      "niche_pct": 64.5,
+      "mainstream_pct": 35.5,
+      "total_sources_used": 93,
+      "articles_processed": 358
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 359,
-      "pct": 1.9
+      "total_events": 358,
+      "pct": 2.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -140443,9 +140463,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 321,
+      "total_mint": 320,
       "direct_action": {
-        "count": 307,
+        "count": 306,
         "pct": 95.6
       },
       "editorial_alarm": {
@@ -140458,9 +140478,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4134,
+      "total_mint": 4135,
       "direct_action": {
-        "count": 3365,
+        "count": 3366,
         "pct": 81.4
       },
       "editorial_alarm": {
@@ -140474,7 +140494,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 269,
+      "institutional": 268,
       "citizen_ratio": 0.251,
       "daily": [
         {
@@ -140510,7 +140530,7 @@
         {
           "date": "2026-08-04",
           "citizen": 1,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -140606,6 +140626,7 @@
         5680
       ],
       "event_ids_institutional": [
+        6035,
         6034,
         6033,
         6032,
@@ -140872,9 +140893,7 @@
         5684,
         5681,
         5679,
-        5678,
-        5677,
-        5676
+        5678
       ]
     }
   }
