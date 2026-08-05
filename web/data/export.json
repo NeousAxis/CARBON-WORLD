@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-05T05:36:08.366582+00:00",
-  "total_events": 6094,
+  "generated_at": "2026-08-05T06:05:41.696573+00:00",
+  "total_events": 6095,
   "total_burned": 7759014315,
-  "total_minted": 8605027149,
+  "total_minted": 8605177149,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6095,
+      "event_title": "Taiwan investigates 17 Chinese firms for suspected poaching of high-tech talent",
+      "event_url": "https://www.japantimes.co.jp/business/2026/08/05/tech/taiwan-chinese-poaching-tech-talent/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.0,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Taiwan's investigation curtails illegal talent poaching, protecting labor and IP rights; a protective institutional action. | The investigation represents a proactive enforcement of national labor and intellectual property protections, aligning with SDGs 8, 9, and 16. However, it risks overreach into individual labor rights and could exacerbate regional tensions, though thes",
+      "tx_hash": "5NfNJDTXf2j6THo3oMHctzrjAnYKTtkgZUbfgQuf5QduddTiYi1ZSTfb9Xo5JJ3PD9MFAwbkztgyMWW36C89UEXF",
+      "created_at": "2026-08-05T06:05:35.440792+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Taiwan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Taiwanese authorities initiate investigation into illegal poaching of high-tech talent by foreign entities, enforcing national labor and intellectual property laws.\", \"affected_sdgs\": [8, 9, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential violation of labor mobility rights and freedom of association (UDHR Article 23) if investigation leads to restrictive measures on Taiwanese workers' employment choices.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Geopolitical tensions may escalate, risking broader economic and diplomatic instability in the region (SDG 16).\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 46000
+    },
     {
       "id": 6094,
       "event_title": "We ask to limit blue light and reduce light pollution",
@@ -140225,14 +140248,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Africa",
-        "burn_ratio": 0.125,
-        "events": 16
-      },
-      {
         "region": "Europe",
         "burn_ratio": 0.098,
         "events": 92
+      },
+      {
+        "region": "Africa",
+        "burn_ratio": 0.067,
+        "events": 15
       },
       {
         "region": "Latin America",
@@ -140252,14 +140275,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 29
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 11
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 28
       },
       {
         "region": "North America",
@@ -140310,7 +140333,7 @@
       },
       {
         "date": "2026-08-05",
-        "net_minted": 2356860,
+        "net_minted": 2506860,
         "net_burned": 120000
       }
     ],
@@ -140327,8 +140350,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 27,
-        "negative": 312,
+        "positive": 25,
+        "negative": 313,
         "event_ids_positive": [
           6094,
           6049,
@@ -140354,11 +140377,10 @@
           5809,
           5802,
           5794,
-          5760,
-          5750,
-          5749
+          5760
         ],
         "event_ids_negative": [
+          6095,
           6093,
           6092,
           6091,
@@ -140674,8 +140696,8 @@
         ]
       },
       "UDHR": {
-        "positive": 16,
-        "negative": 280,
+        "positive": 15,
+        "negative": 281,
         "event_ids_positive": [
           6029,
           5977,
@@ -140691,10 +140713,10 @@
           5813,
           5809,
           5794,
-          5760,
-          5750
+          5760
         ],
         "event_ids_negative": [
+          6095,
           6092,
           6091,
           6090,
@@ -140978,12 +141000,11 @@
         ]
       },
       "ILO": {
-        "positive": 3,
+        "positive": 2,
         "negative": 32,
         "event_ids_positive": [
           5809,
-          5760,
-          5750
+          5760
         ],
         "event_ids_negative": [
           6080,
@@ -141021,13 +141042,12 @@
         ]
       },
       "CRC": {
-        "positive": 4,
+        "positive": 3,
         "negative": 104,
         "event_ids_positive": [
           5962,
           5939,
-          5760,
-          5750
+          5760
         ],
         "event_ids_negative": [
           6091,
@@ -141137,11 +141157,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 2,
+        "positive": 1,
         "negative": 77,
         "event_ids_positive": [
-          5900,
-          5750
+          5900
         ],
         "event_ids_negative": [
           6091,
@@ -141264,7 +141283,7 @@
         ]
       },
       "PB": {
-        "positive": 17,
+        "positive": 15,
         "negative": 91,
         "event_ids_positive": [
           6094,
@@ -141281,9 +141300,7 @@
           5827,
           5813,
           5802,
-          5794,
-          5750,
-          5749
+          5794
         ],
         "event_ids_negative": [
           6092,
@@ -141384,11 +141401,11 @@
       "niche_pct": 65.6,
       "mainstream_pct": 34.4,
       "total_sources_used": 90,
-      "articles_processed": 346
+      "articles_processed": 345
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 346,
+      "total_events": 345,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -141550,8 +141567,8 @@
       },
       {
         "name": "Finance",
-        "count": 36,
-        "burn_count": 4,
+        "count": 35,
+        "burn_count": 3,
         "mint_count": 32,
         "event_ids": [
           6091,
@@ -141588,8 +141605,7 @@
           5809,
           5797,
           5789,
-          5767,
-          5750
+          5767
         ]
       },
       {
@@ -141695,25 +141711,6 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 11,
-        "burn_count": 1,
-        "mint_count": 10,
-        "event_ids": [
-          6079,
-          6069,
-          6055,
-          6042,
-          5994,
-          5988,
-          5872,
-          5836,
-          5822,
-          5763,
-          5750
-        ]
-      },
-      {
         "name": "Transport",
         "count": 11,
         "burn_count": 0,
@@ -141730,6 +141727,24 @@
           5785,
           5768,
           5759
+        ]
+      },
+      {
+        "name": "Agriculture",
+        "count": 10,
+        "burn_count": 0,
+        "mint_count": 10,
+        "event_ids": [
+          6079,
+          6069,
+          6055,
+          6042,
+          5994,
+          5988,
+          5872,
+          5836,
+          5822,
+          5763
         ]
       },
       {
@@ -141751,18 +141766,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 31,
+      "total_burn": 29,
       "direct_action": {
-        "count": 25,
-        "pct": 80.6
+        "count": 24,
+        "pct": 82.8
       },
       "editorial_consciousness": {
-        "count": 2,
-        "pct": 6.5
+        "count": 1,
+        "pct": 3.4
       },
       "untyped": {
         "count": 4,
-        "pct": 12.9
+        "pct": 13.8
       }
     },
     "burn_composition_all_time": {
@@ -141781,9 +141796,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 315,
+      "total_mint": 316,
       "direct_action": {
-        "count": 302,
+        "count": 303,
         "pct": 95.9
       },
       "editorial_alarm": {
@@ -141792,13 +141807,13 @@
       },
       "untyped": {
         "count": 3,
-        "pct": 1.0
+        "pct": 0.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4192,
+      "total_mint": 4193,
       "direct_action": {
-        "count": 3420,
+        "count": 3421,
         "pct": 81.6
       },
       "editorial_alarm": {
@@ -141807,13 +141822,13 @@
       },
       "untyped": {
         "count": 522,
-        "pct": 12.5
+        "pct": 12.4
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 83,
-      "institutional": 263,
-      "citizen_ratio": 0.24,
+      "citizen": 81,
+      "institutional": 264,
+      "citizen_ratio": 0.235,
       "daily": [
         {
           "date": "2026-07-30",
@@ -141848,7 +141863,7 @@
         {
           "date": "2026-08-05",
           "citizen": 3,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -141932,11 +141947,10 @@
         5763,
         5762,
         5759,
-        5751,
-        5750,
-        5749
+        5751
       ],
       "event_ids_institutional": [
+        6095,
         6093,
         6092,
         6090,
