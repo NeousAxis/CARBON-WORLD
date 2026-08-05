@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-05T10:08:09.843621+00:00",
-  "total_events": 6100,
+  "generated_at": "2026-08-05T10:36:32.884573+00:00",
+  "total_events": 6101,
   "total_burned": 7759014315,
-  "total_minted": 8606685249,
+  "total_minted": 8607085249,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6101,
+      "event_title": "Italy to spend billions more on energy and defense, finance minister says",
+      "event_url": "https://www.politico.eu/article/italy-spend-energy-defense-finance-minister-giancarlo-giorgetti/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -1.83,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Military spending and relaxed fiscal rules outweigh green investment benefits, risking long-term harm. | The decision to increase green investment aligns with climate action and clean energy goals, offering tangible environmental benefits. However, the concurrent rise in military spending and relaxation of fiscal rules introduces significant ethical trade-offs, prioritizing def",
+      "tx_hash": "2MsYyGYoEUW6ptZpcysaoANwwDfkuFZg9W92c4UEYyTMftmqdDkGi2P3MF9phJz2KfszNpgHU7K2PbkTc4afxDx8",
+      "created_at": "2026-08-05T10:36:27.115131+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": "[{\"description\": \"Increased government expenditure on green investment, signaling commitment to renewable energy and climate action.\", \"affected_sdgs\": [7, 13, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Boosted military spending, which diverts public funds from social, environmental, or development priorities and may escalate regional tensions.\", \"affected_sdgs\": [16, 1, 3, 4], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Relaxation of EU spending rules may enable unsustainable fiscal policies, potentially undermining long-term economic stability and intergenerational equity.\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6100,
       "event_title": "Turkey to unveil draft law that would bring PKK peace",
@@ -140364,8 +140387,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.102,
-        "events": 88
+        "burn_ratio": 0.101,
+        "events": 89
       },
       {
         "region": "Africa",
@@ -140448,7 +140471,7 @@
       },
       {
         "date": "2026-08-05",
-        "net_minted": 4014960,
+        "net_minted": 4414960,
         "net_burned": 120000
       }
     ],
@@ -140466,7 +140489,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 304,
+        "negative": 305,
         "event_ids_positive": [
           6094,
           6049,
@@ -140494,6 +140517,7 @@
           5794
         ],
         "event_ids_negative": [
+          6101,
           6100,
           6099,
           6098,
@@ -141363,7 +141387,7 @@
       },
       "PB": {
         "positive": 15,
-        "negative": 90,
+        "negative": 91,
         "event_ids_positive": [
           6094,
           6049,
@@ -141382,6 +141406,7 @@
           5794
         ],
         "event_ids_negative": [
+          6101,
           6099,
           6098,
           6096,
@@ -141476,14 +141501,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.3,
-      "mainstream_pct": 33.7,
-      "total_sources_used": 89,
-      "articles_processed": 335
+      "niche_pct": 66.7,
+      "mainstream_pct": 33.3,
+      "total_sources_used": 90,
+      "articles_processed": 336
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 335,
+      "total_events": 336,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -141597,10 +141622,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 39,
+        "count": 40,
         "burn_count": 7,
-        "mint_count": 32,
+        "mint_count": 33,
         "event_ids": [
+          6101,
           6099,
           6093,
           6090,
@@ -141644,10 +141670,11 @@
       },
       {
         "name": "Finance",
-        "count": 35,
+        "count": 36,
         "burn_count": 3,
-        "mint_count": 32,
+        "mint_count": 33,
         "event_ids": [
+          6101,
           6091,
           6088,
           6083,
@@ -141687,10 +141714,11 @@
       },
       {
         "name": "Defense",
-        "count": 32,
+        "count": 33,
         "burn_count": 0,
-        "mint_count": 32,
+        "mint_count": 33,
         "event_ids": [
+          6101,
           6089,
           6066,
           6058,
@@ -141868,9 +141896,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 307,
+      "total_mint": 308,
       "direct_action": {
-        "count": 295,
+        "count": 296,
         "pct": 96.1
       },
       "editorial_alarm": {
@@ -141883,9 +141911,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4198,
+      "total_mint": 4199,
       "direct_action": {
-        "count": 3426,
+        "count": 3427,
         "pct": 81.6
       },
       "editorial_alarm": {
@@ -141899,8 +141927,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 77,
-      "institutional": 258,
-      "citizen_ratio": 0.23,
+      "institutional": 259,
+      "citizen_ratio": 0.229,
       "daily": [
         {
           "date": "2026-07-30",
@@ -141935,7 +141963,7 @@
         {
           "date": "2026-08-05",
           "citizen": 3,
-          "institutional": 12
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -142018,6 +142046,7 @@
         5768
       ],
       "event_ids_institutional": [
+        6101,
         6100,
         6099,
         6098,
