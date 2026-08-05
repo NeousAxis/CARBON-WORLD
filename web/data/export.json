@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-05T09:06:46.478839+00:00",
-  "total_events": 6097,
+  "generated_at": "2026-08-05T09:37:43.406469+00:00",
+  "total_events": 6098,
   "total_burned": 7759014315,
-  "total_minted": 8605931149,
+  "total_minted": 8606331149,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6098,
+      "event_title": "Japan cabinet approves move to cut consumption tax on food to 1%",
+      "event_url": "https://asia.nikkei.com/politics/japan-cabinet-approves-move-to-cut-consumption-tax-on-food-to-1",
+      "event_source": "Nikkei Asia",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -1.9,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Tax cut risks fiscal capacity for sustainability goals, lacks progressive targeting, and may worsen inequality. | The tax cut on food provides immediate relief for low-income households and supports economic activity, aligning with SDGs 1, 2, and 10. However, the policy risks reducing fiscal capacity for critical social and environmental programs, undermining broader sustainabi",
+      "tx_hash": "2Aba5pY9mMxCMTRjXLreYL1id9NWBg2en6SdmiLs6szZYEMR2ujAs2aYACEEPW8eqnHn9J5MNqRFk7WmjGx22MuN",
+      "created_at": "2026-08-05T09:37:37.238398+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Reduction of consumption tax on food lowers cost of living for consumers, particularly benefiting low-income households and improving food affordability.\", \"affected_sdgs\": [1, 2, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential stimulus for domestic consumption, supporting local businesses and economic activity in the food sector.\", \"affected_sdgs\": [8, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reduction in tax revenue may lead to budget cuts for social programs, infrastructure, or climate initiatives, undermining long-term sustainability goals.\", \"affected_sdgs\": [1, 3, 4, 6, 7, 11, 13, 16], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Tax cut disproportionately benefits higher-income households who spend more on food, exacerbating income inequality if not paired with progressive measures.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"No explicit linkage to sustainable or responsible consumption, potentially encouraging overconsumption or waste without environmental safeguards.\", \"affected_sdgs\": [12, 13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6097,
       "event_title": "STAT+: Exemption of rare disease therapies in drug-pricing pilots would wipe out huge savings, analysis finds",
@@ -140323,7 +140346,7 @@
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 29
+        "events": 28
       },
       {
         "region": "MENA",
@@ -140379,7 +140402,7 @@
       },
       {
         "date": "2026-08-05",
-        "net_minted": 3260860,
+        "net_minted": 3660860,
         "net_burned": 120000
       }
     ],
@@ -140397,7 +140420,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 305,
+        "negative": 304,
         "event_ids_positive": [
           6094,
           6049,
@@ -140425,6 +140448,7 @@
           5794
         ],
         "event_ids_negative": [
+          6098,
           6097,
           6096,
           6095,
@@ -140727,14 +140751,12 @@
           5767,
           5766,
           5765,
-          5764,
-          5763,
-          5762
+          5764
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 273,
+        "negative": 272,
         "event_ids_positive": [
           6029,
           5977,
@@ -140752,6 +140774,7 @@
           5794
         ],
         "event_ids_negative": [
+          6098,
           6097,
           6095,
           6092,
@@ -141022,9 +141045,7 @@
           5768,
           5767,
           5766,
-          5764,
-          5763,
-          5762
+          5764
         ]
       },
       "ILO": {
@@ -141177,7 +141198,7 @@
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 72,
+        "negative": 70,
         "event_ids_positive": [
           5900
         ],
@@ -141251,9 +141272,7 @@
           5787,
           5780,
           5777,
-          5764,
-          5763,
-          5762
+          5764
         ]
       },
       "Animal": {
@@ -141317,6 +141336,7 @@
           5794
         ],
         "event_ids_negative": [
+          6098,
           6096,
           6092,
           6090,
@@ -141404,20 +141424,19 @@
           5787,
           5784,
           5782,
-          5776,
-          5762
+          5776
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.7,
-      "mainstream_pct": 33.3,
-      "total_sources_used": 90,
-      "articles_processed": 336
+      "niche_pct": 66.3,
+      "mainstream_pct": 33.7,
+      "total_sources_used": 89,
+      "articles_processed": 335
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 336,
+      "total_events": 335,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -141531,9 +141550,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 39,
+        "count": 38,
         "burn_count": 7,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           6093,
           6090,
@@ -141572,8 +141591,7 @@
           5809,
           5792,
           5788,
-          5781,
-          5763
+          5781
         ]
       },
       {
@@ -141718,24 +141736,6 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 10,
-        "burn_count": 0,
-        "mint_count": 10,
-        "event_ids": [
-          6079,
-          6069,
-          6055,
-          6042,
-          5994,
-          5988,
-          5872,
-          5836,
-          5822,
-          5763
-        ]
-      },
-      {
         "name": "Transport",
         "count": 10,
         "burn_count": 0,
@@ -141751,6 +141751,23 @@
           5818,
           5785,
           5768
+        ]
+      },
+      {
+        "name": "Agriculture",
+        "count": 9,
+        "burn_count": 0,
+        "mint_count": 9,
+        "event_ids": [
+          6079,
+          6069,
+          6055,
+          6042,
+          5994,
+          5988,
+          5872,
+          5836,
+          5822
         ]
       },
       {
@@ -141802,9 +141819,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 308,
+      "total_mint": 307,
       "direct_action": {
-        "count": 296,
+        "count": 295,
         "pct": 96.1
       },
       "editorial_alarm": {
@@ -141817,9 +141834,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4195,
+      "total_mint": 4196,
       "direct_action": {
-        "count": 3423,
+        "count": 3424,
         "pct": 81.6
       },
       "editorial_alarm": {
@@ -141832,9 +141849,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 79,
-      "institutional": 257,
-      "citizen_ratio": 0.235,
+      "citizen": 77,
+      "institutional": 258,
+      "citizen_ratio": 0.23,
       "daily": [
         {
           "date": "2026-07-30",
@@ -141869,7 +141886,7 @@
         {
           "date": "2026-08-05",
           "citizen": 3,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -141949,11 +141966,10 @@
         5787,
         5786,
         5782,
-        5768,
-        5763,
-        5762
+        5768
       ],
       "event_ids_institutional": [
+        6098,
         6097,
         6096,
         6095,
