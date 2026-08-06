@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T19:36:44.708172+00:00",
-  "total_events": 6178,
+  "generated_at": "2026-08-06T20:07:05.648299+00:00",
+  "total_events": 6179,
   "total_burned": 7759814315,
-  "total_minted": 8693925599,
+  "total_minted": 8694225599,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6179,
+      "event_title": "Argentina renews US$19 billion China currency swap, brushing off Washington’s pressure",
+      "event_url": "https://www.scmp.com/news/china/article/3363219/argentina-renews-us19-billion-china-currency-swap-brushing-washingtons-pressure?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.68,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Renewal risks long-term dependency and geopolitical alignment with a regime violating human rights, outweighing short-term economic relief. | The renewal provides immediate economic relief and trade stability, supporting poverty reduction and economic growth (SDGs 1, 8, 10). However, it risks entrenching dependency on a regime with questionable human rights records and may weak",
+      "tx_hash": "5BaAo8rbQxnuNzCpWzDGEYc6DBMb1pZpXwrYDERnkY8Q7JxixoGTEi8ZiCLofyvyvXqAcTqr5wST34BEsKNxoMJR",
+      "created_at": "2026-08-06T20:06:58.203456+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Argentina secures a US$19 billion financial lifeline, stabilizing its economy and potentially supporting domestic stability, trade, and access to essential goods.\", \"affected_sdgs\": [1, 8, 10, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Renewal of a currency swap with China despite US pressure may undermine Argentina's geopolitical autonomy, risking alignment with a regime that has been criticized for human rights violations (e.g., Xinjiang, Hong Kong) and debt-trap diplomacy.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Extended financial dependency on China could limit Argentina's policy flexibility, potentially delaying structural reforms needed for long-term economic sustainability (e.g., fiscal responsibility, anti-corruption).\", \"affected_sdgs\": [8, 10, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 6178,
       "event_title": "STAT+: Medicare quietly gave blockbuster AbbVie drug seven extra years before price negotiations, advocacy group asserts",
@@ -142104,8 +142127,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 70,
-        "total_amount": 47213760
+        "count": 69,
+        "total_amount": 47146160
       },
       {
         "country": "Spain",
@@ -142173,25 +142196,25 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.027,
-        "events": 73
+        "burn_ratio": 0.028,
+        "events": 72
       },
       {
-        "region": "MENA",
+        "region": "Latin America",
         "burn_ratio": 0.0,
-        "events": 14
+        "events": 28
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Latin America",
+        "mint_ratio": 1.0,
+        "events": 28
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 14
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 1.0,
-        "events": 27
       },
       {
         "region": "Asia",
@@ -142200,8 +142223,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.973,
-        "events": 73
+        "mint_ratio": 0.972,
+        "events": 72
       },
       {
         "region": "Oceania",
@@ -142242,7 +142265,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 50590950,
+        "net_minted": 50890950,
         "net_burned": 0
       }
     ],
@@ -142283,6 +142306,7 @@
           5839
         ],
         "event_ids_negative": [
+          6179,
           6178,
           6177,
           6176,
@@ -142602,8 +142626,7 @@
           5837,
           5836,
           5835,
-          5834,
-          5833
+          5834
         ]
       },
       "UDHR": {
@@ -142622,6 +142645,7 @@
           5844
         ],
         "event_ids_negative": [
+          6179,
           6178,
           6177,
           6176,
@@ -142907,8 +142931,7 @@
           5837,
           5836,
           5835,
-          5834,
-          5833
+          5834
         ]
       },
       "ILO": {
@@ -142955,7 +142978,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 85,
+        "negative": 84,
         "event_ids_positive": [
           5962,
           5939
@@ -143044,8 +143067,7 @@
           5838,
           5837,
           5835,
-          5834,
-          5833
+          5834
         ]
       },
       "UNDRIP": {
@@ -143292,9 +143314,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.9,
-      "mainstream_pct": 34.1,
-      "total_sources_used": 88,
+      "niche_pct": 65.5,
+      "mainstream_pct": 34.5,
+      "total_sources_used": 87,
       "articles_processed": 346
     },
     "cache_hit_rate_7d": {
@@ -143713,9 +143735,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4275,
+      "total_mint": 4276,
       "direct_action": {
-        "count": 3496,
+        "count": 3497,
         "pct": 81.8
       },
       "editorial_alarm": {
@@ -143765,7 +143787,7 @@
         {
           "date": "2026-08-06",
           "citizen": 12,
-          "institutional": 38
+          "institutional": 39
         }
       ],
       "event_ids_citizen": [
@@ -143852,6 +143874,7 @@
         5836
       ],
       "event_ids_institutional": [
+        6179,
         6178,
         6177,
         6176,
@@ -144115,8 +144138,7 @@
         5839,
         5837,
         5835,
-        5834,
-        5833
+        5834
       ]
     }
   }
