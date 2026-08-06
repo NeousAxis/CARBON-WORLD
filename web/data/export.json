@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-06T20:07:05.648299+00:00",
-  "total_events": 6179,
+  "generated_at": "2026-08-06T20:37:46.319306+00:00",
+  "total_events": 6181,
   "total_burned": 7759814315,
-  "total_minted": 8694225599,
+  "total_minted": 8694585999,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6181,
+      "event_title": "Israeli settler charged over Palestinian activist’s killing",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/israeli-settler-charged-over-palestinian-activists-killing?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.54,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Charging a settler is positive but overshadowed by systemic impunity and lenient charges. | The charging of a settler represents a rare instance of legal accountability for violence against Palestinians, aligning with SDG 16 (Peace and Justice). However, the lesser charge of 'reckless manslaughter' and the broader context of systemic impunity undermine this progress, violating ",
+      "tx_hash": "48QN5d1nyjK1vADHnYZh5eWSrcmyEQHBi4Qxn8u6c1QHqPfpRx6KUyq7UKEyzks5HvSJTcHjyQ2eSYvxa1dPxLLU",
+      "created_at": "2026-08-06T20:37:39.055588+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israeli prosecutors charge a settler with reckless manslaughter for the killing of a Palestinian activist, signaling legal accountability for violence against civilians.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The charge is for 'reckless manslaughter' rather than murder, potentially indicating leniency or undercharging in a case involving settler violence against a Palestinian activist.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 7\", \"UNDRIP\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"The case highlights systemic impunity for settler violence, as prosecutions remain rare despite documented patterns of attacks on Palestinians.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 28\", \"UNDRIP\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 6180,
+      "event_title": "'I panicked': Developer tried to end affordable housing early",
+      "event_url": "https://www.abc.net.au/news/2026-08-07/landmark-group-tried-to-end-affordable-housing-period-early/106968030",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -4.79,
+      "confidence": 8,
+      "justification": "Developer's attempt to reduce affordable housing violates housing rights and exacerbates inequality. | The developer's action directly undermines SDG 1 (No Poverty), SDG 10 (Reduced Inequalities), and SDG 11 (Sustainable Cities) by reducing affordable housing availability. It violates the right to adequate living standards (UDHR Article 25), disproportionately harming vulnerable populations. No countervailing positive aspects are identified in the action itself.",
+      "tx_hash": "2nNX3c1NkBsCeEXC9s3ni4uJ47bwJDFDdb2vNDjq42DpNZ3zF4DW3JTpceUrZQ83YKqMC6uhwnbyC8qw82i8tnkg",
+      "created_at": "2026-08-06T20:37:36.843296+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Property developer attempted to prematurely terminate affordable housing commitments, reducing access to affordable homes for low-income populations.\", \"affected_sdgs\": [1, 10, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6179,
       "event_title": "Argentina renews US$19 billion China currency swap, brushing off Washington’s pressure",
@@ -142127,8 +142173,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 69,
-        "total_amount": 47146160
+        "count": 68,
+        "total_amount": 46996160
       },
       {
         "country": "Spain",
@@ -142137,8 +142183,8 @@
       },
       {
         "country": "Australia",
-        "count": 13,
-        "total_amount": 2793100
+        "count": 14,
+        "total_amount": 2853500
       },
       {
         "country": "Brazil",
@@ -142146,9 +142192,9 @@
         "total_amount": 3602400
       },
       {
-        "country": "France",
+        "country": "Israel",
         "count": 10,
-        "total_amount": 2395220
+        "total_amount": 4630540
       }
     ],
     "top_countries_burn": [
@@ -142197,24 +142243,24 @@
       {
         "region": "North America",
         "burn_ratio": 0.028,
-        "events": 72
+        "events": 71
       },
       {
-        "region": "Latin America",
+        "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 28
+        "events": 15
       }
     ],
     "top_regions_destructive": [
       {
-        "region": "Latin America",
-        "mint_ratio": 1.0,
-        "events": 28
-      },
-      {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 14
+        "events": 15
+      },
+      {
+        "region": "Latin America",
+        "mint_ratio": 1.0,
+        "events": 27
       },
       {
         "region": "Asia",
@@ -142224,7 +142270,7 @@
       {
         "region": "North America",
         "mint_ratio": 0.972,
-        "events": 72
+        "events": 71
       },
       {
         "region": "Oceania",
@@ -142265,7 +142311,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 50890950,
+        "net_minted": 51251350,
         "net_burned": 0
       }
     ],
@@ -142283,7 +142329,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 321,
+        "negative": 320,
         "event_ids_positive": [
           6124,
           6094,
@@ -142306,6 +142352,8 @@
           5839
         ],
         "event_ids_negative": [
+          6181,
+          6180,
           6179,
           6178,
           6177,
@@ -142623,15 +142671,12 @@
           5841,
           5840,
           5838,
-          5837,
-          5836,
-          5835,
-          5834
+          5837
         ]
       },
       "UDHR": {
         "positive": 10,
-        "negative": 287,
+        "negative": 286,
         "event_ids_positive": [
           6029,
           5977,
@@ -142645,6 +142690,8 @@
           5844
         ],
         "event_ids_negative": [
+          6181,
+          6180,
           6179,
           6178,
           6177,
@@ -142928,10 +142975,7 @@
           5841,
           5840,
           5838,
-          5837,
-          5836,
-          5835,
-          5834
+          5837
         ]
       },
       "ILO": {
@@ -142978,7 +143022,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 84,
+        "negative": 82,
         "event_ids_positive": [
           5962,
           5939
@@ -143065,18 +143109,17 @@
           5843,
           5840,
           5838,
-          5837,
-          5835,
-          5834
+          5837
         ]
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 71,
+        "negative": 70,
         "event_ids_positive": [
           5900
         ],
         "event_ids_negative": [
+          6181,
           6174,
           6173,
           6164,
@@ -143145,9 +143188,7 @@
           5842,
           5840,
           5838,
-          5837,
-          5836,
-          5834
+          5837
         ]
       },
       "Animal": {
@@ -143196,7 +143237,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 98,
+        "negative": 97,
         "event_ids_positive": [
           6124,
           6094,
@@ -143308,20 +143349,19 @@
           5855,
           5851,
           5849,
-          5847,
-          5836
+          5847
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.5,
-      "mainstream_pct": 34.5,
+      "niche_pct": 66.7,
+      "mainstream_pct": 33.3,
       "total_sources_used": 87,
-      "articles_processed": 346
+      "articles_processed": 345
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 346,
+      "total_events": 345,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -143497,9 +143537,9 @@
       },
       {
         "name": "Finance",
-        "count": 35,
+        "count": 34,
         "burn_count": 2,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           6175,
           6163,
@@ -143534,16 +143574,16 @@
           5868,
           5866,
           5862,
-          5846,
-          5835
+          5846
         ]
       },
       {
         "name": "Construction",
-        "count": 28,
+        "count": 29,
         "burn_count": 1,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          6180,
           6175,
           6162,
           6132,
@@ -143636,25 +143676,6 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 11,
-        "burn_count": 0,
-        "mint_count": 11,
-        "event_ids": [
-          6139,
-          6130,
-          6114,
-          6079,
-          6069,
-          6055,
-          6042,
-          5994,
-          5988,
-          5872,
-          5836
-        ]
-      },
-      {
         "name": "Water",
         "count": 10,
         "burn_count": 0,
@@ -143670,6 +143691,24 @@
           5955,
           5934,
           5891
+        ]
+      },
+      {
+        "name": "Agriculture",
+        "count": 10,
+        "burn_count": 0,
+        "mint_count": 10,
+        "event_ids": [
+          6139,
+          6130,
+          6114,
+          6079,
+          6069,
+          6055,
+          6042,
+          5994,
+          5988,
+          5872
         ]
       },
       {
@@ -143720,9 +143759,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 323,
+      "total_mint": 322,
       "direct_action": {
-        "count": 307,
+        "count": 306,
         "pct": 95.0
       },
       "editorial_alarm": {
@@ -143735,9 +143774,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4276,
+      "total_mint": 4278,
       "direct_action": {
-        "count": 3497,
+        "count": 3499,
         "pct": 81.8
       },
       "editorial_alarm": {
@@ -143751,8 +143790,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 81,
-      "institutional": 265,
-      "citizen_ratio": 0.234,
+      "institutional": 264,
+      "citizen_ratio": 0.235,
       "daily": [
         {
           "date": "2026-07-31",
@@ -143786,11 +143825,12 @@
         },
         {
           "date": "2026-08-06",
-          "citizen": 12,
-          "institutional": 39
+          "citizen": 13,
+          "institutional": 40
         }
       ],
       "event_ids_citizen": [
+        6181,
         6174,
         6173,
         6170,
@@ -143870,10 +143910,10 @@
         5847,
         5846,
         5843,
-        5838,
-        5836
+        5838
       ],
       "event_ids_institutional": [
+        6180,
         6179,
         6178,
         6177,
@@ -144136,9 +144176,7 @@
         5841,
         5840,
         5839,
-        5837,
-        5835,
-        5834
+        5837
       ]
     }
   }
