@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T17:37:28.576415+00:00",
-  "total_events": 6174,
+  "generated_at": "2026-08-06T18:07:17.589398+00:00",
+  "total_events": 6175,
   "total_burned": 7759814315,
-  "total_minted": 8691917599,
+  "total_minted": 8692593599,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6175,
+      "event_title": "NRDC: Trump’s War on Wind Costs Us $4 Billion",
+      "event_url": "https://www.nrdc.org/press-releases/nrdc-trumps-war-wind-costs-us-4-billion",
+      "event_source": "NRDC News",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -4.3,
+      "confidence": 8,
+      "justification": "Blocking renewable energy projects with taxpayer funds violates climate and economic rights, justifying MINT. | The action directly undermines SDGs 7 (Clean Energy) and 13 (Climate Action) by obstructing renewable energy development, while misallocating public funds that could support sustainable infrastructure. It also violates economic and social rights under UDHR by prioritizing short-term political goals over long-term public welfare and energy security.",
+      "tx_hash": "ZGawx9ZR8CeXGcivrJMgCUv1gyTeFAR6iYjUu7qS4Db5rNhRyakcwgXWxQQdP2vH9wYKkwC9XHCoDyD4TnVTKxN",
+      "created_at": "2026-08-06T18:07:10.676970+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Trump administration's financial actions to halt offshore wind projects, resulting in $4 billion taxpayer expenditure to block renewable energy infrastructure.\", \"affected_sdgs\": [7, 13, 11, 8], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6174,
       "event_title": "Indigenous leaders before the IACHR: 'The Peruvian State is not prepared to save the life of a threatened defender'",
@@ -142012,8 +142035,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 68,
-        "total_amount": 45996760
+        "count": 69,
+        "total_amount": 46672760
       },
       {
         "country": "Spain",
@@ -142082,7 +142105,7 @@
       {
         "region": "North America",
         "burn_ratio": 0.028,
-        "events": 71
+        "events": 72
       },
       {
         "region": "Latin America",
@@ -142109,7 +142132,7 @@
       {
         "region": "North America",
         "mint_ratio": 0.972,
-        "events": 71
+        "events": 72
       },
       {
         "region": "Oceania",
@@ -142150,7 +142173,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 48582950,
+        "net_minted": 49258950,
         "net_burned": 0
       }
     ],
@@ -142168,7 +142191,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 318,
+        "negative": 319,
         "event_ids_positive": [
           6124,
           6094,
@@ -142192,6 +142215,7 @@
           5831
         ],
         "event_ids_negative": [
+          6175,
           6174,
           6173,
           6172,
@@ -142514,7 +142538,7 @@
       },
       "UDHR": {
         "positive": 10,
-        "negative": 284,
+        "negative": 285,
         "event_ids_positive": [
           6029,
           5977,
@@ -142528,6 +142552,7 @@
           5844
         ],
         "event_ids_negative": [
+          6175,
           6174,
           6173,
           6172,
@@ -143198,11 +143223,11 @@
       "niche_pct": 65.9,
       "mainstream_pct": 34.1,
       "total_sources_used": 88,
-      "articles_processed": 344
+      "articles_processed": 345
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 344,
+      "total_events": 345,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -143325,10 +143350,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 43,
+        "count": 44,
         "burn_count": 6,
-        "mint_count": 37,
+        "mint_count": 38,
         "event_ids": [
+          6175,
           6173,
           6166,
           6162,
@@ -143376,10 +143402,11 @@
       },
       {
         "name": "Finance",
-        "count": 35,
+        "count": 36,
         "burn_count": 2,
-        "mint_count": 33,
+        "mint_count": 34,
         "event_ids": [
+          6175,
           6163,
           6161,
           6154,
@@ -143418,6 +143445,42 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 28,
+        "burn_count": 1,
+        "mint_count": 27,
+        "event_ids": [
+          6175,
+          6162,
+          6132,
+          6130,
+          6129,
+          6127,
+          6089,
+          6084,
+          6070,
+          6039,
+          6034,
+          6030,
+          6022,
+          6020,
+          6017,
+          6010,
+          6008,
+          6004,
+          5990,
+          5977,
+          5968,
+          5960,
+          5955,
+          5945,
+          5933,
+          5917,
+          5869,
+          5851
+        ]
+      },
+      {
         "name": "Defense",
         "count": 27,
         "burn_count": 0,
@@ -143450,41 +143513,6 @@
           5867,
           5855,
           5838
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 27,
-        "burn_count": 1,
-        "mint_count": 26,
-        "event_ids": [
-          6162,
-          6132,
-          6130,
-          6129,
-          6127,
-          6089,
-          6084,
-          6070,
-          6039,
-          6034,
-          6030,
-          6022,
-          6020,
-          6017,
-          6010,
-          6008,
-          6004,
-          5990,
-          5977,
-          5968,
-          5960,
-          5955,
-          5945,
-          5933,
-          5917,
-          5869,
-          5851
         ]
       },
       {
@@ -143598,9 +143626,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 320,
+      "total_mint": 321,
       "direct_action": {
-        "count": 304,
+        "count": 305,
         "pct": 95.0
       },
       "editorial_alarm": {
@@ -143613,9 +143641,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4271,
+      "total_mint": 4272,
       "direct_action": {
-        "count": 3492,
+        "count": 3493,
         "pct": 81.8
       },
       "editorial_alarm": {
@@ -143629,7 +143657,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 81,
-      "institutional": 263,
+      "institutional": 264,
       "citizen_ratio": 0.235,
       "daily": [
         {
@@ -143665,7 +143693,7 @@
         {
           "date": "2026-08-06",
           "citizen": 12,
-          "institutional": 34
+          "institutional": 35
         }
       ],
       "event_ids_citizen": [
@@ -143752,6 +143780,7 @@
         5836
       ],
       "event_ids_institutional": [
+        6175,
         6172,
         6171,
         6169,
