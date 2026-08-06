@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T01:06:48.633490+00:00",
-  "total_events": 6131,
+  "generated_at": "2026-08-06T01:36:22.510105+00:00",
+  "total_events": 6132,
   "total_burned": 7759814315,
-  "total_minted": 8649396449,
+  "total_minted": 8649546449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6132,
+      "event_title": "ACT wants to expand pharmacists power and make it easier to open new pharmacies",
+      "event_url": "https://www.rnz.co.nz/news/political/904059/act-wants-to-expand-pharmacists-power-and-make-it-easier-to-open-new-pharmacies",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.86,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Proposal risks commercialization and patient safety without safeguards, outweighing access benefits. | The proposal expands healthcare access (SDG 3, 10) and infrastructure (SDG 9, 11), which is ethically positive, but the risks of commercialization and inadequate safeguards create significant concerns. The net ethical judgment tilts negative due to the potential for systemic h",
+      "tx_hash": "4abnAosoax1dNAqDDXUb9usoYhnVeMDzhQ1JEGZ3MhnYh3bE9kgxvKZHgph6totH1dHYSYL8bt9PTimNkN4NQcjP",
+      "created_at": "2026-08-06T01:36:15.072717+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Expansion of pharmacist scope to treat more conditions could improve access to primary healthcare, particularly in underserved or rural areas.\", \"affected_sdgs\": [3, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Introduction of 24-hour prescription collection via secure electronic lockers enhances convenience and accessibility of essential medications.\", \"affected_sdgs\": [3, 9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential deregulation of pharmacy ownership could lead to commercialization, prioritizing profit over patient care and undermining equitable access.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of explicit safeguards for clinical oversight may risk patient safety, particularly for complex conditions or vulnerable populations.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"No mention of workforce training or regulatory frameworks to ensure pharmacists are adequately prepared for expanded roles.\", \"affected_sdgs\": [3, 8], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6131,
       "event_title": "NIH Director Bhattacharya kills more health disparities grants",
@@ -141023,8 +141046,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 68,
-        "total_amount": 54566760
+        "count": 67,
+        "total_amount": 47086760
       },
       {
         "country": "Spain",
@@ -141087,18 +141110,18 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.048,
-        "events": 21
+        "burn_ratio": 0.045,
+        "events": 22
       },
       {
         "region": "North America",
-        "burn_ratio": 0.042,
-        "events": 71
+        "burn_ratio": 0.043,
+        "events": 70
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.033,
-        "events": 30
+        "burn_ratio": 0.034,
+        "events": 29
       }
     ],
     "top_regions_destructive": [
@@ -141114,18 +141137,18 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.967,
-        "events": 30
+        "mint_ratio": 0.966,
+        "events": 29
       },
       {
         "region": "North America",
-        "mint_ratio": 0.958,
-        "events": 71
+        "mint_ratio": 0.957,
+        "events": 70
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.952,
-        "events": 21
+        "mint_ratio": 0.955,
+        "events": 22
       }
     ],
     "supply_trend_7d": [
@@ -141161,7 +141184,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 6061800,
+        "net_minted": 6211800,
         "net_burned": 0
       }
     ],
@@ -141179,7 +141202,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 305,
+        "negative": 304,
         "event_ids_positive": [
           6124,
           6094,
@@ -141207,6 +141230,7 @@
           5802
         ],
         "event_ids_negative": [
+          6132,
           6131,
           6130,
           6129,
@@ -141509,14 +141533,12 @@
           5801,
           5800,
           5799,
-          5798,
-          5797,
-          5796
+          5798
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 275,
+        "negative": 274,
         "event_ids_positive": [
           6029,
           5977,
@@ -141533,6 +141555,7 @@
           5809
         ],
         "event_ids_negative": [
+          6132,
           6131,
           6130,
           6129,
@@ -141805,9 +141828,7 @@
           5801,
           5800,
           5799,
-          5798,
-          5797,
-          5796
+          5798
         ]
       },
       "ILO": {
@@ -141818,6 +141839,7 @@
           5809
         ],
         "event_ids_negative": [
+          6132,
           6104,
           6102,
           6100,
@@ -141848,13 +141870,12 @@
           5818,
           5807,
           5805,
-          5799,
-          5796
+          5799
         ]
       },
       "CRC": {
         "positive": 2,
-        "negative": 92,
+        "negative": 90,
         "event_ids_positive": [
           5962,
           5939
@@ -141949,14 +141970,12 @@
           5810,
           5807,
           5806,
-          5799,
-          5797,
-          5796
+          5799
         ]
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 71,
+        "negative": 70,
         "event_ids_positive": [
           5900
         ],
@@ -142030,8 +142049,7 @@
           5806,
           5804,
           5803,
-          5799,
-          5796
+          5799
         ]
       },
       "Animal": {
@@ -142194,11 +142212,11 @@
       "niche_pct": 66.3,
       "mainstream_pct": 33.7,
       "total_sources_used": 89,
-      "articles_processed": 336
+      "articles_processed": 335
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 336,
+      "total_events": 335,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -142263,14 +142281,13 @@
       },
       {
         "name": "WHO",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           6104,
           5984,
-          5859,
-          5797
+          5859
         ]
       },
       {
@@ -142364,9 +142381,9 @@
       },
       {
         "name": "Finance",
-        "count": 38,
+        "count": 37,
         "burn_count": 3,
-        "mint_count": 35,
+        "mint_count": 34,
         "event_ids": [
           6126,
           6123,
@@ -142404,8 +142421,7 @@
           5822,
           5817,
           5812,
-          5809,
-          5797
+          5809
         ]
       },
       {
@@ -142449,10 +142465,11 @@
       },
       {
         "name": "Construction",
-        "count": 27,
+        "count": 28,
         "burn_count": 1,
-        "mint_count": 26,
+        "mint_count": 27,
         "event_ids": [
+          6132,
           6130,
           6129,
           6127,
@@ -142592,9 +142609,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 308,
+      "total_mint": 307,
       "direct_action": {
-        "count": 293,
+        "count": 292,
         "pct": 95.1
       },
       "editorial_alarm": {
@@ -142607,9 +142624,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4228,
+      "total_mint": 4229,
       "direct_action": {
-        "count": 3453,
+        "count": 3454,
         "pct": 81.7
       },
       "editorial_alarm": {
@@ -142622,9 +142639,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 78,
+      "citizen": 77,
       "institutional": 258,
-      "citizen_ratio": 0.232,
+      "citizen_ratio": 0.23,
       "daily": [
         {
           "date": "2026-07-31",
@@ -142659,7 +142676,7 @@
         {
           "date": "2026-08-06",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -142739,10 +142756,10 @@
         5804,
         5803,
         5802,
-        5801,
-        5796
+        5801
       ],
       "event_ids_institutional": [
+        6132,
         6131,
         6130,
         6129,
@@ -142999,8 +143016,7 @@
         5805,
         5800,
         5799,
-        5798,
-        5797
+        5798
       ]
     }
   }
