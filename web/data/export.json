@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T12:36:39.874871+00:00",
-  "total_events": 6159,
+  "generated_at": "2026-08-06T13:07:02.035280+00:00",
+  "total_events": 6160,
   "total_burned": 7759814315,
-  "total_minted": 8678866099,
+  "total_minted": 8678920199,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6160,
+      "event_title": "The Community of Madrid acts negligently in the face of biodiversity loss caused by wildfires",
+      "event_url": "https://www.ecologistasenaccion.org/374674/la-comunidad-de-madrid-actua-con-negligencia-ante-la-perdida-de-biodiversidad-provocada-por-los-incendios/",
+      "event_source": "Ecologistas en Acción (Spain)",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -2.72,
+      "confidence": 7,
+      "justification": "Negligent policy prioritizing hunting lobby over biodiversity recovery warrants MINT. | The resolution limiting hunting activity is a minor positive step for wildlife protection, but its delayed and lobby-influenced nature undermines its conservation value. The primary ethical concern is the negligent prioritization of economic interests over urgent biodiversity recovery, violating planetary boundaries and SDGs related to life on land and climate action.",
+      "tx_hash": "giAYfx9Lv8Eq1mteBoZJDdcozrYfJF27CgXje9EfhcC5G7KFSbGiGcu1PLg5279WrFDLJmvcwZf52Q7XXa68vJt",
+      "created_at": "2026-08-06T13:06:54.383998+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Resolution limiting hunting activity in Madrid region, potentially reducing stress on wildlife recovering from wildfires.\", \"affected_sdgs\": [15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Resolution deemed negligent and delayed, prioritizing hunting lobby interests over biodiversity conservation goals, undermining ecological recovery post-wildfires.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Lack of timely and effective policy action to address biodiversity loss, exacerbating long-term ecological damage.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6159,
       "event_title": "Expansion of citizen's arrest powers to take effect within a week",
@@ -141672,8 +141695,8 @@
       },
       {
         "country": "Spain",
-        "count": 24,
-        "total_amount": 4542260
+        "count": 25,
+        "total_amount": 4596360
       },
       {
         "country": "Australia",
@@ -141720,14 +141743,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Europe",
-        "burn_ratio": 0.069,
-        "events": 87
+        "region": "Africa",
+        "burn_ratio": 0.071,
+        "events": 14
       },
       {
-        "region": "Africa",
-        "burn_ratio": 0.067,
-        "events": 15
+        "region": "Europe",
+        "burn_ratio": 0.068,
+        "events": 88
       },
       {
         "region": "North America",
@@ -141805,7 +141828,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 35531450,
+        "net_minted": 35585550,
         "net_burned": 0
       }
     ],
@@ -141823,7 +141846,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 310,
+        "negative": 309,
         "event_ids_positive": [
           6124,
           6094,
@@ -141848,6 +141871,7 @@
           5827
         ],
         "event_ids_negative": [
+          6160,
           6159,
           6158,
           6157,
@@ -142155,14 +142179,12 @@
           5829,
           5828,
           5826,
-          5825,
-          5824,
-          5823
+          5825
         ]
       },
       "UDHR": {
         "positive": 11,
-        "negative": 278,
+        "negative": 276,
         "event_ids_positive": [
           6029,
           5977,
@@ -142452,9 +142474,7 @@
           5829,
           5828,
           5826,
-          5825,
-          5824,
-          5823
+          5825
         ]
       },
       "ILO": {
@@ -142500,7 +142520,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 88,
+        "negative": 87,
         "event_ids_positive": [
           5962,
           5939
@@ -142592,13 +142612,12 @@
           5833,
           5830,
           5828,
-          5825,
-          5824
+          5825
         ]
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 70,
+        "negative": 68,
         "event_ids_positive": [
           5900
         ],
@@ -142670,14 +142689,12 @@
           5838,
           5837,
           5836,
-          5834,
-          5824,
-          5823
+          5834
         ]
       },
       "Animal": {
         "positive": 4,
-        "negative": 29,
+        "negative": 30,
         "event_ids_positive": [
           6124,
           6094,
@@ -142685,6 +142702,7 @@
           5980
         ],
         "event_ids_negative": [
+          6160,
           6157,
           6149,
           6148,
@@ -142718,7 +142736,7 @@
       },
       "PB": {
         "positive": 13,
-        "negative": 95,
+        "negative": 94,
         "event_ids_positive": [
           6124,
           6094,
@@ -142735,6 +142753,7 @@
           5827
         ],
         "event_ids_negative": [
+          6160,
           6158,
           6157,
           6155,
@@ -142827,21 +142846,19 @@
           5849,
           5847,
           5836,
-          5826,
-          5824,
-          5823
+          5826
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.8,
-      "mainstream_pct": 35.2,
-      "total_sources_used": 88,
-      "articles_processed": 337
+      "niche_pct": 65.5,
+      "mainstream_pct": 34.5,
+      "total_sources_used": 87,
+      "articles_processed": 336
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 337,
+      "total_events": 336,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -142964,9 +142981,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 42,
+        "count": 41,
         "burn_count": 6,
-        "mint_count": 36,
+        "mint_count": 35,
         "event_ids": [
           6151,
           6143,
@@ -143008,15 +143025,14 @@
           5867,
           5847,
           5839,
-          5826,
-          5824
+          5826
         ]
       },
       {
         "name": "Finance",
-        "count": 35,
+        "count": 34,
         "burn_count": 2,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           6154,
           6140,
@@ -143051,15 +143067,14 @@
           5846,
           5835,
           5832,
-          5826,
-          5823
+          5826
         ]
       },
       {
         "name": "Defense",
-        "count": 28,
+        "count": 27,
         "burn_count": 0,
-        "mint_count": 28,
+        "mint_count": 27,
         "event_ids": [
           6116,
           6101,
@@ -143087,8 +143102,7 @@
           5867,
           5855,
           5838,
-          5825,
-          5823
+          5825
         ]
       },
       {
@@ -143235,14 +143249,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 312,
+      "total_mint": 311,
       "direct_action": {
-        "count": 298,
+        "count": 297,
         "pct": 95.5
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 3.8
+        "pct": 3.9
       },
       "untyped": {
         "count": 2,
@@ -143250,9 +143264,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4256,
+      "total_mint": 4257,
       "direct_action": {
-        "count": 3479,
+        "count": 3480,
         "pct": 81.7
       },
       "editorial_alarm": {
@@ -143266,8 +143280,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 77,
-      "institutional": 260,
-      "citizen_ratio": 0.228,
+      "institutional": 259,
+      "citizen_ratio": 0.229,
       "daily": [
         {
           "date": "2026-07-31",
@@ -143302,7 +143316,7 @@
         {
           "date": "2026-08-06",
           "citizen": 8,
-          "institutional": 23
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -143385,6 +143399,7 @@
         5836
       ],
       "event_ids_institutional": [
+        6160,
         6158,
         6155,
         6154,
@@ -143642,9 +143657,7 @@
         5828,
         5827,
         5826,
-        5825,
-        5824,
-        5823
+        5825
       ]
     }
   }
