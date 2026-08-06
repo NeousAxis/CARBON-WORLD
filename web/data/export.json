@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T07:36:29.592408+00:00",
-  "total_events": 6144,
+  "generated_at": "2026-08-06T08:06:01.099357+00:00",
+  "total_events": 6145,
   "total_burned": 7759814315,
-  "total_minted": 8656431099,
+  "total_minted": 8656846099,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6145,
+      "event_title": "Postal rates will increase next year",
+      "event_url": "https://www.letemps.ch/articles/le-prix-des-lettres-va-augmenter-l-annee-prochaine",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": -2.51,
+      "confidence": 7,
+      "justification": "Regressive pricing increases inequity and access barriers, outweighing parcel price stability benefits. | The decision to stabilize parcel prices while increasing letter postage presents a mixed ethical outcome. On one hand, it supports business predictability and responsible consumption. On the other, it imposes regressive costs on vulnerable groups and may limit access to essential services. The net impact leans negative due to the disproportionate burden on low-income populations and potentia",
+      "tx_hash": "2zdJaRH38zptWDBJqnkefngEwj6qqNjduAMBYZxmNM9Df3zokQG3MtpH18AMg8nRgjrj68ztc72NqrqoqFbNV64v",
+      "created_at": "2026-08-06T08:05:53.296587+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Price stabilization for parcel shipping until 2030, ensuring predictable costs for businesses and consumers relying on parcel delivery services.\", \"affected_sdgs\": [8, 9, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential reduction in unnecessary parcel shipping due to stable pricing, indirectly supporting responsible consumption (SDG 12).\", \"affected_sdgs\": [12], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increased cost of letter postage disproportionately affects low-income individuals, small businesses, and non-profits relying on affordable mail services, exacerbating inequalities (SDG 10).\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Higher costs for registered mail may discourage legal and administrative correspondence, potentially hindering access to justice (SDG 16).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Additional revenue for La Poste (60.7M CHF) may not be reinvested in sustainable infrastructure or worker welfare, prioritizing profit over equitable service delivery.\", \"affected_sdgs\": [8, 10], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 6144,
       "event_title": "The Javan Fishing Cat’s Return: Is Indonesia Paying Enough Attention to Wild Cat Conservation?",
@@ -141327,8 +141350,8 @@
       },
       {
         "country": "Spain",
-        "count": 26,
-        "total_amount": 4742260
+        "count": 25,
+        "total_amount": 4692260
       },
       {
         "country": "Australia",
@@ -141409,7 +141432,7 @@
       {
         "region": "Latin America",
         "mint_ratio": 1.0,
-        "events": 26
+        "events": 25
       },
       {
         "region": "MENA",
@@ -141460,7 +141483,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 13096450,
+        "net_minted": 13511450,
         "net_burned": 0
       }
     ],
@@ -141478,7 +141501,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 22,
-        "negative": 305,
+        "negative": 304,
         "event_ids_positive": [
           6124,
           6094,
@@ -141504,6 +141527,7 @@
           5813
         ],
         "event_ids_negative": [
+          6145,
           6144,
           6143,
           6142,
@@ -141806,14 +141830,12 @@
           5817,
           5816,
           5815,
-          5814,
-          5812,
-          5811
+          5814
         ]
       },
       "UDHR": {
         "positive": 12,
-        "negative": 275,
+        "negative": 274,
         "event_ids_positive": [
           6029,
           5977,
@@ -141829,6 +141851,7 @@
           5813
         ],
         "event_ids_negative": [
+          6145,
           6143,
           6142,
           6141,
@@ -142101,9 +142124,7 @@
           5817,
           5816,
           5815,
-          5814,
-          5812,
-          5811
+          5814
         ]
       },
       "ILO": {
@@ -142149,7 +142170,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 89,
+        "negative": 88,
         "event_ids_positive": [
           5962,
           5939
@@ -142242,8 +142263,7 @@
           5825,
           5824,
           5816,
-          5814,
-          5811
+          5814
         ]
       },
       "UNDRIP": {
@@ -142364,7 +142384,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 95,
+        "negative": 94,
         "event_ids_positive": [
           6124,
           6094,
@@ -142475,20 +142495,19 @@
           5822,
           5821,
           5820,
-          5818,
-          5812
+          5818
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.2,
-      "mainstream_pct": 34.8,
-      "total_sources_used": 89,
-      "articles_processed": 334
+      "niche_pct": 65.9,
+      "mainstream_pct": 34.1,
+      "total_sources_used": 88,
+      "articles_processed": 333
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 334,
+      "total_events": 333,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -142658,9 +142677,9 @@
       },
       {
         "name": "Finance",
-        "count": 37,
+        "count": 36,
         "burn_count": 2,
-        "mint_count": 35,
+        "mint_count": 34,
         "event_ids": [
           6140,
           6126,
@@ -142697,8 +142716,7 @@
           5826,
           5823,
           5822,
-          5817,
-          5812
+          5817
         ]
       },
       {
@@ -142739,9 +142757,9 @@
       },
       {
         "name": "Construction",
-        "count": 27,
+        "count": 26,
         "burn_count": 1,
-        "mint_count": 26,
+        "mint_count": 25,
         "event_ids": [
           6132,
           6130,
@@ -142768,8 +142786,7 @@
           5933,
           5917,
           5869,
-          5851,
-          5812
+          5851
         ]
       },
       {
@@ -142882,14 +142899,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 308,
+      "total_mint": 307,
       "direct_action": {
-        "count": 295,
+        "count": 294,
         "pct": 95.8
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 3.2
+        "pct": 3.3
       },
       "untyped": {
         "count": 3,
@@ -142897,9 +142914,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4241,
+      "total_mint": 4242,
       "direct_action": {
-        "count": 3466,
+        "count": 3467,
         "pct": 81.7
       },
       "editorial_alarm": {
@@ -142912,9 +142929,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 74,
+      "citizen": 73,
       "institutional": 260,
-      "citizen_ratio": 0.222,
+      "citizen_ratio": 0.219,
       "daily": [
         {
           "date": "2026-07-31",
@@ -142949,7 +142966,7 @@
         {
           "date": "2026-08-06",
           "citizen": 2,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -143025,10 +143042,10 @@
         5838,
         5836,
         5822,
-        5819,
-        5812
+        5819
       ],
       "event_ids_institutional": [
+        6145,
         6144,
         6143,
         6142,
@@ -143287,8 +143304,7 @@
         5816,
         5815,
         5814,
-        5813,
-        5811
+        5813
       ]
     }
   }
