@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T18:07:17.589398+00:00",
-  "total_events": 6175,
+  "generated_at": "2026-08-06T18:37:10.002486+00:00",
+  "total_events": 6176,
   "total_burned": 7759814315,
-  "total_minted": 8692593599,
+  "total_minted": 8693197599,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6176,
+      "event_title": "Iranian parliamentary committee reviews draft bill to bar US, Israeli ships from Hormuz, Fars says",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/iranian-parliamentary-committee-reviews-draft-bill-bar-us-israeli-ships-hormuz",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -4.14,
+      "confidence": 7,
+      "justification": "Proposed bill violates international law and risks escalating regional conflict, outweighing procedural transparency. | The proposed bill undermines core principles of international law and global cooperation, with significant negative impacts on trade, energy security, and regional stability. While the legislative process includes transparency measures, these are outweighed by the bill's discriminatory targeting and potential for escalating conflict. The action risks violating multiple SDGs and",
+      "tx_hash": "KN4e5y1GGavpyzgUVKMZzvC75YJMxiWFq5CR8F4G5ik8RXaZjCmyxKA7KJV2PUbLuiVqAHiA5faicP9pnuyRk3B",
+      "created_at": "2026-08-06T18:37:02.718576+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": "[{\"description\": \"Legislative review process includes expert consultation and public input, promoting transparency and stakeholder engagement in national security policy.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed bill restricts freedom of navigation in the Strait of Hormuz, violating international maritime law (UNCLOS) and undermining global trade and energy security.\", \"affected_sdgs\": [7, 8, 9, 13, 14, 16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Targeted exclusion of vessels based on nationality risks escalating regional tensions and enabling discriminatory enforcement, violating principles of non-discrimination and peaceful dispute resolution.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential fines on cargo could disproportionately affect global supply chains, harming vulnerable populations dependent on food and energy imports (e.g., SDG 2, 7).\", \"affected_sdgs\": [2, 7, 8, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6175,
       "event_title": "NRDC: Trump’s War on Wind Costs Us $4 Billion",
@@ -142108,12 +142131,17 @@
         "events": 72
       },
       {
-        "region": "Latin America",
+        "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 28
+        "events": 14
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 14
+      },
       {
         "region": "Latin America",
         "mint_ratio": 1.0,
@@ -142123,11 +142151,6 @@
         "region": "Asia",
         "mint_ratio": 1.0,
         "events": 31
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 13
       },
       {
         "region": "North America",
@@ -142173,7 +142196,7 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 49258950,
+        "net_minted": 49862950,
         "net_burned": 0
       }
     ],
@@ -142191,7 +142214,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 319,
+        "negative": 320,
         "event_ids_positive": [
           6124,
           6094,
@@ -142215,6 +142238,7 @@
           5831
         ],
         "event_ids_negative": [
+          6176,
           6175,
           6174,
           6173,
@@ -142538,7 +142562,7 @@
       },
       "UDHR": {
         "positive": 10,
-        "negative": 285,
+        "negative": 286,
         "event_ids_positive": [
           6029,
           5977,
@@ -142552,6 +142576,7 @@
           5844
         ],
         "event_ids_negative": [
+          6176,
           6175,
           6174,
           6173,
@@ -143223,11 +143248,11 @@
       "niche_pct": 65.9,
       "mainstream_pct": 34.1,
       "total_sources_used": 88,
-      "articles_processed": 345
+      "articles_processed": 346
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 345,
+      "total_events": 346,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -143350,10 +143375,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 44,
+        "count": 45,
         "burn_count": 6,
-        "mint_count": 38,
+        "mint_count": 39,
         "event_ids": [
+          6176,
           6175,
           6173,
           6166,
@@ -143626,14 +143652,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 321,
+      "total_mint": 322,
       "direct_action": {
-        "count": 305,
+        "count": 306,
         "pct": 95.0
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 4.4
+        "pct": 4.3
       },
       "untyped": {
         "count": 2,
@@ -143641,9 +143667,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4272,
+      "total_mint": 4273,
       "direct_action": {
-        "count": 3493,
+        "count": 3494,
         "pct": 81.8
       },
       "editorial_alarm": {
@@ -143657,8 +143683,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 81,
-      "institutional": 264,
-      "citizen_ratio": 0.235,
+      "institutional": 265,
+      "citizen_ratio": 0.234,
       "daily": [
         {
           "date": "2026-07-31",
@@ -143693,7 +143719,7 @@
         {
           "date": "2026-08-06",
           "citizen": 12,
-          "institutional": 35
+          "institutional": 36
         }
       ],
       "event_ids_citizen": [
@@ -143780,6 +143806,7 @@
         5836
       ],
       "event_ids_institutional": [
+        6176,
         6175,
         6172,
         6171,
