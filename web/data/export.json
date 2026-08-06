@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-06T03:06:55.143579+00:00",
-  "total_events": 6136,
+  "generated_at": "2026-08-06T04:06:45.861246+00:00",
+  "total_events": 6137,
   "total_burned": 7759814315,
-  "total_minted": 8650546449,
+  "total_minted": 8650696449,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 6137,
+      "event_title": "Luxon catches caucus off-guard with promise to hold MMP referendum if re-elected",
+      "event_url": "https://www.rnz.co.nz/news/political/905800/luxon-catches-caucus-off-guard-with-promise-to-hold-mmp-referendum-if-re-elected",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.87,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The proposal risks undermining proportional representation and democratic stability without clear safeguards. | While a referendum could enhance democratic engagement, the potential erosion of MMP—a system credited with advancing political inclusivity—poses significant risks to representation and stability. The abrupt announcement without broader consultation further weakens tr",
+      "tx_hash": "Tf1q9bC3KJQ4q4FznKL3A8gSvExt9FAHKNk6komWgsLW2TithLBQq5NGSgxA1p6DX8yDemrS81s42od4Nu7xRR3",
+      "created_at": "2026-08-06T04:06:39.568960+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Potential for public consultation on electoral reform, increasing democratic participation and transparency.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk of destabilizing New Zealand's proportional representation system (MMP), which has historically improved minority representation and reduced political exclusion.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of prior caucus or public consultation before announcement, undermining institutional trust and participatory governance.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 6136,
       "event_title": "Former Indigenous authorities of the 48 Cantones of Totonicapán released in Guatemala after more than a year in pretrial detention",
@@ -141202,8 +141225,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.045,
-        "events": 22
+        "burn_ratio": 0.043,
+        "events": 23
       },
       {
         "region": "North America",
@@ -141212,11 +141235,16 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.033,
-        "events": 30
+        "burn_ratio": 0.0,
+        "events": 29
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "Latin America",
+        "mint_ratio": 1.0,
+        "events": 29
+      },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
@@ -141228,19 +141256,14 @@
         "events": 29
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.967,
-        "events": 30
+        "region": "Oceania",
+        "mint_ratio": 0.957,
+        "events": 23
       },
       {
         "region": "North America",
         "mint_ratio": 0.957,
         "events": 70
-      },
-      {
-        "region": "Oceania",
-        "mint_ratio": 0.955,
-        "events": 22
       }
     ],
     "supply_trend_7d": [
@@ -141276,25 +141299,25 @@
       },
       {
         "date": "2026-08-06",
-        "net_minted": 7211800,
+        "net_minted": 7361800,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 6091,
-      "event_title": "Israel approves $37m to seize more than 70 occupied West Bank sites",
+      "id": 6110,
+      "event_title": "UN rights chief says Iran executed at least 56 people since March",
       "decision": "MINT",
-      "amount_crbn": 82900,
-      "final_score": -6.53,
-      "confidence": 9,
-      "country": "Israel",
+      "amount_crbn": 748000,
+      "final_score": -6.27,
+      "confidence": 8,
+      "country": "Iran",
       "region": "MENA",
-      "created_at": "2026-08-05T03:35:43.953660+00:00"
+      "created_at": "2026-08-05T13:07:42.942207+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 24,
-        "negative": 304,
+        "positive": 23,
+        "negative": 305,
         "event_ids_positive": [
           6124,
           6094,
@@ -141318,10 +141341,10 @@
           5831,
           5827,
           5813,
-          5809,
-          5802
+          5809
         ],
         "event_ids_negative": [
+          6137,
           6136,
           6135,
           6134,
@@ -141630,7 +141653,7 @@
       },
       "UDHR": {
         "positive": 13,
-        "negative": 274,
+        "negative": 275,
         "event_ids_positive": [
           6029,
           5977,
@@ -141647,6 +141670,7 @@
           5809
         ],
         "event_ids_negative": [
+          6137,
           6136,
           6135,
           6134,
@@ -142185,7 +142209,7 @@
         ]
       },
       "PB": {
-        "positive": 15,
+        "positive": 14,
         "negative": 94,
         "event_ids_positive": [
           6124,
@@ -142201,8 +142225,7 @@
           5876,
           5839,
           5827,
-          5813,
-          5802
+          5813
         ],
         "event_ids_negative": [
           6133,
@@ -142674,18 +142697,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 28,
+      "total_burn": 27,
       "direct_action": {
-        "count": 23,
-        "pct": 82.1
+        "count": 22,
+        "pct": 81.5
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 3.6
+        "pct": 3.7
       },
       "untyped": {
         "count": 4,
-        "pct": 14.3
+        "pct": 14.8
       }
     },
     "burn_composition_all_time": {
@@ -142704,9 +142727,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 307,
+      "total_mint": 308,
       "direct_action": {
-        "count": 292,
+        "count": 293,
         "pct": 95.1
       },
       "editorial_alarm": {
@@ -142719,9 +142742,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4233,
+      "total_mint": 4234,
       "direct_action": {
-        "count": 3458,
+        "count": 3459,
         "pct": 81.7
       },
       "editorial_alarm": {
@@ -142734,9 +142757,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 77,
-      "institutional": 258,
-      "citizen_ratio": 0.23,
+      "citizen": 76,
+      "institutional": 259,
+      "citizen_ratio": 0.227,
       "daily": [
         {
           "date": "2026-07-31",
@@ -142771,7 +142794,7 @@
         {
           "date": "2026-08-06",
           "citizen": 1,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -142850,10 +142873,10 @@
         5812,
         5806,
         5804,
-        5803,
-        5802
+        5803
       ],
       "event_ids_institutional": [
+        6137,
         6135,
         6134,
         6133,
