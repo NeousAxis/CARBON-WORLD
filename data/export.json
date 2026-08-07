@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-07T09:07:20.137082+00:00",
-  "total_events": 6209,
+  "generated_at": "2026-08-07T09:35:42.084907+00:00",
+  "total_events": 6210,
   "total_burned": 7760114315,
-  "total_minted": 8716880999,
+  "total_minted": 8716941399,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6210,
+      "event_title": "Illegal trade in endangered species continues to thrive in West Sumatra",
+      "event_url": "https://mongabay.co.id/2026/08/07/perdagangan-satwa-langka-ilegal-terus-marak-di-sumatera-barat/",
+      "event_source": "Mongabay Indonesia",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.84,
+      "confidence": 7,
+      "justification": "Seizure is positive but outweighed by systemic failure enabling ongoing biodiversity harm. | The seizure represents a positive enforcement action under wildlife protection laws, directly supporting SDG 15 and planetary boundaries. However, the underlying persistence of illegal trade reflects a broader failure to address root causes, resulting in significant biodiversity harm and violating animal rights frameworks. The net ethical impact tilts negative due to the systemic nature of the issue.",
+      "tx_hash": "4pDAL3LWBceRhDTZm3RkqsFk5zNT3ywZaWxyVj2bmv74zywzECX1Vq3SD5KzA9Wwi6JyjTSwncLji9CBThMCpm2M",
+      "created_at": "2026-08-07T09:35:34.648796+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Seizure of illegal wildlife parts (16 hornbill beaks and one sack of pangolin scales) by authorities, disrupting illegal trade and protecting endangered species.\", \"affected_sdgs\": [15, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Enforcement action by named agency (Balai Penegakan) demonstrates institutional commitment to wildlife protection laws.\", \"affected_sdgs\": [15, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Persistent illegal trade in endangered species indicates systemic failure in enforcement, habitat protection, and public awareness, enabling ongoing biodiversity loss.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal Rights\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Targeting of critically endangered species (hornbills and pangolins) for trade threatens species survival and ecosystem stability.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal Rights\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6209,
       "event_title": "Saudi Arabia, Turkey and Pakistan to sign joint defence deal amid regional turmoil",
@@ -142822,8 +142845,8 @@
       },
       {
         "country": "Spain",
-        "count": 24,
-        "total_amount": 5029160
+        "count": 23,
+        "total_amount": 4968760
       },
       {
         "country": "Australia",
@@ -142876,8 +142899,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.056,
-        "events": 89
+        "burn_ratio": 0.057,
+        "events": 87
       },
       {
         "region": "Oceania",
@@ -142890,12 +142913,17 @@
         "events": 82
       },
       {
-        "region": "Latin America",
+        "region": "Asia",
         "burn_ratio": 0.0,
-        "events": 28
+        "events": 30
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 30
+      },
       {
         "region": "Latin America",
         "mint_ratio": 1.0,
@@ -142905,11 +142933,6 @@
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 15
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 29
       },
       {
         "region": "North America",
@@ -142955,7 +142978,7 @@
       },
       {
         "date": "2026-08-07",
-        "net_minted": 19111400,
+        "net_minted": 19171800,
         "net_burned": 300000
       }
     ],
@@ -142973,7 +142996,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 18,
-        "negative": 330,
+        "negative": 329,
         "event_ids_positive": [
           6202,
           6124,
@@ -142995,6 +143018,7 @@
           5876
         ],
         "event_ids_negative": [
+          6210,
           6209,
           6208,
           6207,
@@ -143322,14 +143346,12 @@
           5862,
           5861,
           5860,
-          5859,
-          5858,
-          5857
+          5859
         ]
       },
       "UDHR": {
         "positive": 10,
-        "negative": 293,
+        "negative": 291,
         "event_ids_positive": [
           6202,
           6029,
@@ -143633,9 +143655,7 @@
           5862,
           5861,
           5860,
-          5859,
-          5858,
-          5857
+          5859
         ]
       },
       "ILO": {
@@ -143685,7 +143705,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 85,
+        "negative": 83,
         "event_ids_positive": [
           5962,
           5939
@@ -143773,9 +143793,7 @@
           5878,
           5873,
           5864,
-          5863,
-          5858,
-          5857
+          5863
         ]
       },
       "UNDRIP": {
@@ -143858,7 +143876,7 @@
       },
       "Animal": {
         "positive": 4,
-        "negative": 35,
+        "negative": 36,
         "event_ids_positive": [
           6124,
           6094,
@@ -143866,6 +143884,7 @@
           5980
         ],
         "event_ids_negative": [
+          6210,
           6207,
           6196,
           6185,
@@ -143905,7 +143924,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 100,
+        "negative": 101,
         "event_ids_positive": [
           6124,
           6094,
@@ -143920,6 +143939,7 @@
           5876
         ],
         "event_ids_negative": [
+          6210,
           6208,
           6207,
           6196,
@@ -144024,23 +144044,23 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 63.6,
-      "mainstream_pct": 36.4,
+      "niche_pct": 62.5,
+      "mainstream_pct": 37.5,
       "total_sources_used": 88,
-      "articles_processed": 353
+      "articles_processed": 352
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 353,
+      "total_events": 352,
       "pct": 1.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 26,
+        "count": 25,
         "burn_count": 4,
-        "mint_count": 22,
+        "mint_count": 21,
         "event_ids": [
           6158,
           6134,
@@ -144066,8 +144086,7 @@
           5894,
           5893,
           5886,
-          5860,
-          5857
+          5860
         ]
       },
       {
@@ -144441,9 +144460,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 331,
+      "total_mint": 330,
       "direct_action": {
-        "count": 317,
+        "count": 316,
         "pct": 95.8
       },
       "editorial_alarm": {
@@ -144456,9 +144475,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4305,
+      "total_mint": 4306,
       "direct_action": {
-        "count": 3526,
+        "count": 3527,
         "pct": 81.9
       },
       "editorial_alarm": {
@@ -144471,9 +144490,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 81,
+      "citizen": 80,
       "institutional": 272,
-      "citizen_ratio": 0.229,
+      "citizen_ratio": 0.227,
       "daily": [
         {
           "date": "2026-08-01",
@@ -144508,7 +144527,7 @@
         {
           "date": "2026-08-07",
           "citizen": 3,
-          "institutional": 18
+          "institutional": 19
         }
       ],
       "event_ids_citizen": [
@@ -144591,10 +144610,10 @@
         5879,
         5872,
         5871,
-        5862,
-        5857
+        5862
       ],
       "event_ids_institutional": [
+        6210,
         6209,
         6208,
         6206,
@@ -144865,8 +144884,7 @@
         5863,
         5861,
         5860,
-        5859,
-        5858
+        5859
       ]
     }
   }
