@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-07T00:06:49.473741+00:00",
-  "total_events": 6188,
+  "generated_at": "2026-08-07T00:35:35.796022+00:00",
+  "total_events": 6190,
   "total_burned": 7759814315,
-  "total_minted": 8697769599,
+  "total_minted": 8698945599,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6190,
+      "event_title": "Trump announces tariffs on key component for solar panels and semiconductors",
+      "event_url": "https://www.politico.com/news/2026/08/06/trump-tariffs-solar-semiconductors-01028009?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.06,
+      "confidence": 8,
+      "justification": "Tariffs increase costs for renewables and tech, undermining climate action and equity goals. | The tariffs prioritize geopolitical supply chain control over immediate climate and energy equity goals. While they may bolster domestic industry, the negative impacts on renewable energy adoption, global trade stability, and affordability outweigh the potential long-term benefits. The action undermines multiple SDGs without clear compensatory mechanisms for vulnerable populations.",
+      "tx_hash": "3Ma8x2Hyk4HSouP4AQLL37tRHykANAsutnnVvGiTeBi31qCzv8Ptz3cJkxq9DKRCsLG1jSHi3coVscvdFSWHWj22",
+      "created_at": "2026-08-07T00:35:29.823136+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Tariffs may reduce reliance on Chinese supply chains, potentially supporting domestic or allied semiconductor and solar panel manufacturing.\", \"affected_sdgs\": [8, 9, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Tariffs increase costs for solar panels and semiconductors, likely slowing renewable energy adoption (SDG 7, 13) and technological innovation (SDG 9).\", \"affected_sdgs\": [7, 9, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Protectionist measures risk trade retaliation, undermining global partnerships (SDG 17) and economic stability (SDG 8).\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Higher costs for solar panels disproportionately affect low-income households, exacerbating energy inequality (SDG 1, 7, 10).\", \"affected_sdgs\": [1, 7, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 6189,
+      "event_title": "Ebola: Africa CDC plans to use vaccine for different strain as outbreak spreads",
+      "event_url": "https://www.dw.com/en/ebola-africa-cdc-plans-to-use-vaccine-for-different-strain-as-outbreak-spreads/a-78271789?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": 2.7,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Risk of suboptimal protection outweighs immediate public health action benefits. | The decision to deploy an existing Ebola vaccine demonstrates proactive public health intervention, aligning with SDG 3 and the right to health (UDHR Article 25). However, the use of a non-strain-specific vaccine introduces risks of reduced efficacy, potentially undermining outbreak control and e",
+      "tx_hash": "4rwT9HWVGLnq693fQfN7UZJutYVhFbE9EMtcQuF4L4YWgumyNkuitMgXhZDiDHBaj6q7g9y6p9qzkyN9npkaWucB",
+      "created_at": "2026-08-07T00:35:27.679115+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Africa CDC deploys existing Ebola vaccine to combat current outbreak, leveraging cross-strain protection to potentially save lives and curb transmission.\", \"affected_sdgs\": [3, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Use of a vaccine not specifically designed for the current Ebola strain may offer suboptimal protection, risking continued spread or reduced public trust in vaccination efforts.\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential delay in deploying a strain-specific vaccine could prolong the outbreak, increasing morbidity and mortality in affected regions.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 6188,
       "event_title": "US imposes 15% tariff on polysilicon in pushback against China",
@@ -142334,8 +142380,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 74,
-        "total_amount": 50119360
+        "count": 75,
+        "total_amount": 50795360
       },
       {
         "country": "Spain",
@@ -142404,7 +142450,7 @@
       {
         "region": "North America",
         "burn_ratio": 0.026,
-        "events": 77
+        "events": 78
       },
       {
         "region": "MENA",
@@ -142431,7 +142477,7 @@
       {
         "region": "North America",
         "mint_ratio": 0.974,
-        "events": 77
+        "events": 78
       },
       {
         "region": "Oceania",
@@ -142472,7 +142518,7 @@
       },
       {
         "date": "2026-08-07",
-        "net_minted": 0,
+        "net_minted": 1176000,
         "net_burned": 0
       }
     ],
@@ -142490,7 +142536,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 18,
-        "negative": 322,
+        "negative": 324,
         "event_ids_positive": [
           6124,
           6094,
@@ -142512,6 +142558,8 @@
           5844
         ],
         "event_ids_negative": [
+          6190,
+          6189,
           6188,
           6187,
           6186,
@@ -142838,7 +142886,7 @@
       },
       "UDHR": {
         "positive": 10,
-        "negative": 286,
+        "negative": 288,
         "event_ids_positive": [
           6029,
           5977,
@@ -142852,6 +142900,8 @@
           5844
         ],
         "event_ids_negative": [
+          6190,
+          6189,
           6188,
           6186,
           6185,
@@ -143399,7 +143449,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 99,
+        "negative": 100,
         "event_ids_positive": [
           6124,
           6094,
@@ -143414,6 +143464,7 @@
           5876
         ],
         "event_ids_negative": [
+          6190,
           6188,
           6185,
           6174,
@@ -143520,11 +143571,11 @@
       "niche_pct": 64.4,
       "mainstream_pct": 35.6,
       "total_sources_used": 87,
-      "articles_processed": 346
+      "articles_processed": 348
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 346,
+      "total_events": 348,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -143646,10 +143697,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 47,
+        "count": 48,
         "burn_count": 5,
-        "mint_count": 42,
+        "mint_count": 43,
         "event_ids": [
+          6190,
           6188,
           6187,
           6183,
@@ -143881,10 +143933,11 @@
       },
       {
         "name": "Transport",
-        "count": 9,
+        "count": 10,
         "burn_count": 0,
-        "mint_count": 9,
+        "mint_count": 10,
         "event_ids": [
+          6190,
           6188,
           6153,
           6062,
@@ -143928,9 +143981,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 324,
+      "total_mint": 326,
       "direct_action": {
-        "count": 308,
+        "count": 310,
         "pct": 95.1
       },
       "editorial_alarm": {
@@ -143943,9 +143996,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4285,
+      "total_mint": 4287,
       "direct_action": {
-        "count": 3506,
+        "count": 3508,
         "pct": 81.8
       },
       "editorial_alarm": {
@@ -143959,8 +144012,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 264,
-      "citizen_ratio": 0.237,
+      "institutional": 266,
+      "citizen_ratio": 0.236,
       "daily": [
         {
           "date": "2026-08-01",
@@ -143995,7 +144048,7 @@
         {
           "date": "2026-08-07",
           "citizen": 0,
-          "institutional": 0
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -144083,6 +144136,8 @@
         5843
       ],
       "event_ids_institutional": [
+        6190,
+        6189,
         6188,
         6187,
         6186,
