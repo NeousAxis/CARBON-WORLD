@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-08T01:36:44.971773+00:00",
-  "total_events": 6265,
+  "generated_at": "2026-08-08T02:06:14.031341+00:00",
+  "total_events": 6266,
   "total_burned": 7771998315,
-  "total_minted": 8784028299,
+  "total_minted": 8784704299,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6266,
+      "event_title": "Trump launched big new solar tariffs. Here's what it means.",
+      "event_url": "https://www.canarymedia.com/articles/solar/trump-new-solar-tariffs",
+      "event_source": "Canary Media",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -2.3,
+      "confidence": 8,
+      "justification": "Tariffs increase clean energy costs and slow deployment, outweighing potential long-term manufacturing benefits. | The tariffs prioritize short-term domestic economic gains over immediate climate action, creating a tension between industrial policy and environmental urgency. While reshoring manufacturing may yield long-term benefits, the near-term slowdown in solar deployment undermines critical SDG 13 targets. The policy also risks exacerbating energy inequality, violating the principle of univ",
+      "tx_hash": "r3VeTH45QGJbjUkWzfR7WyL5PyMhEpoEYSPBx7653USZoyNL534ziU6LZuNEKdU2hAKPV9BjK4CX7DSi8jC4jLm",
+      "created_at": "2026-08-08T02:06:06.745337+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Strengthens domestic solar manufacturing capacity, potentially creating jobs and reducing long-term reliance on foreign supply chains.\", \"affected_sdgs\": [7, 8, 9, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increases immediate costs of solar installations, slowing deployment of clean energy and delaying climate action goals.\", \"affected_sdgs\": [7, 13, 11, 12], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Tariffs may disproportionately affect low-income households and communities, limiting access to affordable clean energy.\", \"affected_sdgs\": [1, 7, 10, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential trade retaliation could disrupt global supply chains for renewable energy components, undermining international climate partnerships.\", \"affected_sdgs\": [17, 7, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6265,
       "event_title": "Suriname moves to evict Mennonites and illegal Amazon settlers",
@@ -144105,8 +144128,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 80,
-        "total_amount": 46413160
+        "count": 81,
+        "total_amount": 47089160
       },
       {
         "country": "Spain",
@@ -144115,8 +144138,8 @@
       },
       {
         "country": "Brazil",
-        "count": 14,
-        "total_amount": 3995000
+        "count": 13,
+        "total_amount": 3963400
       },
       {
         "country": "Australia",
@@ -144180,14 +144203,14 @@
       {
         "region": "North America",
         "burn_ratio": 0.035,
-        "events": 85
+        "events": 86
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Latin America",
         "mint_ratio": 1.0,
-        "events": 32
+        "events": 31
       },
       {
         "region": "MENA",
@@ -144197,7 +144220,7 @@
       {
         "region": "North America",
         "mint_ratio": 0.965,
-        "events": 85
+        "events": 86
       },
       {
         "region": "Oceania",
@@ -144243,7 +144266,7 @@
       },
       {
         "date": "2026-08-08",
-        "net_minted": 1471600,
+        "net_minted": 2147600,
         "net_burned": 350000
       }
     ],
@@ -144285,6 +144308,7 @@
           5907
         ],
         "event_ids_negative": [
+          6266,
           6265,
           6264,
           6263,
@@ -144623,13 +144647,12 @@
           5905,
           5904,
           5903,
-          5902,
-          5901
+          5902
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 298,
+        "negative": 299,
         "event_ids_positive": [
           6261,
           6254,
@@ -144647,6 +144670,7 @@
           5907
         ],
         "event_ids_negative": [
+          6266,
           6265,
           6263,
           6262,
@@ -144949,13 +144973,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 35,
+        "negative": 36,
         "event_ids_positive": [
           6230,
           6202,
           6124
         ],
         "event_ids_negative": [
+          6266,
           6258,
           6223,
           6222,
@@ -145231,6 +145256,7 @@
           5939
         ],
         "event_ids_negative": [
+          6266,
           6265,
           6262,
           6258,
@@ -145338,14 +145364,13 @@
           5914,
           5912,
           5906,
-          5902,
-          5901
+          5902
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.0,
-      "mainstream_pct": 36.0,
+      "niche_pct": 62.9,
+      "mainstream_pct": 37.1,
       "total_sources_used": 89,
       "articles_processed": 365
     },
@@ -145465,10 +145490,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 51,
+        "count": 52,
         "burn_count": 3,
-        "mint_count": 48,
+        "mint_count": 49,
         "event_ids": [
+          6266,
           6262,
           6255,
           6253,
@@ -145784,9 +145810,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4355,
+      "total_mint": 4356,
       "direct_action": {
-        "count": 3573,
+        "count": 3574,
         "pct": 82.0
       },
       "editorial_alarm": {
@@ -145836,7 +145862,7 @@
         {
           "date": "2026-08-08",
           "citizen": 2,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -145930,6 +145956,7 @@
         5904
       ],
       "event_ids_institutional": [
+        6266,
         6264,
         6263,
         6262,
@@ -146205,8 +146232,7 @@
         5906,
         5905,
         5903,
-        5902,
-        5901
+        5902
       ]
     }
   }
