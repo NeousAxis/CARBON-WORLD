@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-08T06:05:57.832999+00:00",
-  "total_events": 6272,
-  "total_burned": 7772221615,
+  "generated_at": "2026-08-08T07:06:40.989358+00:00",
+  "total_events": 6273,
+  "total_burned": 7774021615,
   "total_minted": 8785386199,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6273,
+      "event_title": "Daily News 07 / 08 / 2026",
+      "event_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1727",
+      "event_source": "European Commission Press",
+      "decision": "BURN",
+      "amount_crbn": 1800000,
+      "final_score": 6.25,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Large EU funding to Portugal drives climate and social gains that outweigh debt concerns. | The disbursement provides substantial resources for poverty reduction, decent work, infrastructure and climate action, outweighing the moderate debt‑service concerns. Overall the action advances several SDGs and human‑rights goals, yielding a net positive ethical balance.",
+      "tx_hash": "2Xm7MteDePcj1b5zyXsUu5BqZVFDocWJsBMcBNYJLhEK1ctDXoyxpuDC58Gxmo9TWcxCAbgCLKrHroHoXvY6UVkj",
+      "created_at": "2026-08-08T07:06:34.274565+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU disburses €2.32 bn to Portugal for green and digital recovery projects\", \"affected_sdgs\": [1, 8, 9, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Large loan increases Portugal's public debt and fiscal risk\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 6272,
       "event_title": "Capobianco recalls attacks on INPE: 'There were people who did not accept this data'",
@@ -144280,14 +144303,14 @@
         "total_amount": 3855900
       },
       {
-        "country": "Australia",
-        "count": 12,
-        "total_amount": 1205900
-      },
-      {
         "country": "New Zealand",
         "count": 11,
         "total_amount": 3553900
+      },
+      {
+        "country": "France",
+        "count": 11,
+        "total_amount": 3508810
       }
     ],
     "top_countries_burn": [
@@ -144340,8 +144363,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.042,
-        "events": 24
+        "burn_ratio": 0.043,
+        "events": 23
       }
     ],
     "top_regions_destructive": [
@@ -144357,8 +144380,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.958,
-        "events": 24
+        "mint_ratio": 0.957,
+        "events": 23
       },
       {
         "region": "North America",
@@ -144405,7 +144428,7 @@
       {
         "date": "2026-08-08",
         "net_minted": 2829500,
-        "net_burned": 573300
+        "net_burned": 2373300
       }
     ],
     "event_of_the_day": {
@@ -144421,9 +144444,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 21,
-        "negative": 342,
+        "positive": 22,
+        "negative": 340,
         "event_ids_positive": [
+          6273,
           6268,
           6261,
           6256,
@@ -144786,15 +144810,14 @@
           5911,
           5910,
           5909,
-          5908,
-          5906,
-          5905
+          5908
         ]
       },
       "UDHR": {
-        "positive": 15,
-        "negative": 301,
+        "positive": 16,
+        "negative": 300,
         "event_ids_positive": [
+          6273,
           6268,
           6261,
           6254,
@@ -145111,8 +145134,7 @@
           5911,
           5910,
           5909,
-          5908,
-          5905
+          5908
         ]
       },
       "ILO": {
@@ -145251,7 +145273,7 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 72,
+        "negative": 71,
         "event_ids_positive": [
           6261,
           6202
@@ -145327,8 +145349,7 @@
           5965,
           5948,
           5938,
-          5920,
-          5905
+          5920
         ]
       },
       "Animal": {
@@ -145387,7 +145408,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 110,
+        "negative": 109,
         "event_ids_positive": [
           6261,
           6256,
@@ -145511,30 +145532,30 @@
           5917,
           5915,
           5914,
-          5912,
-          5906
+          5912
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.0,
-      "mainstream_pct": 36.0,
+      "niche_pct": 62.9,
+      "mainstream_pct": 37.1,
       "total_sources_used": 89,
-      "articles_processed": 368
+      "articles_processed": 367
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 368,
+      "total_events": 367,
       "pct": 1.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 31,
-        "burn_count": 5,
+        "count": 32,
+        "burn_count": 6,
         "mint_count": 26,
         "event_ids": [
+          6273,
           6267,
           6260,
           6259,
@@ -145699,10 +145720,11 @@
       },
       {
         "name": "Finance",
-        "count": 38,
-        "burn_count": 2,
+        "count": 39,
+        "burn_count": 3,
         "mint_count": 36,
         "event_ids": [
+          6273,
           6264,
           6253,
           6250,
@@ -145745,10 +145767,11 @@
       },
       {
         "name": "Construction",
-        "count": 33,
-        "burn_count": 1,
+        "count": 34,
+        "burn_count": 2,
         "mint_count": 32,
         "event_ids": [
+          6273,
           6264,
           6262,
           6243,
@@ -145785,39 +145808,6 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 25,
-        "burn_count": 0,
-        "mint_count": 25,
-        "event_ids": [
-          6238,
-          6224,
-          6220,
-          6205,
-          6198,
-          6172,
-          6116,
-          6101,
-          6089,
-          6066,
-          6058,
-          6048,
-          6034,
-          6010,
-          6009,
-          6003,
-          6000,
-          5987,
-          5974,
-          5970,
-          5954,
-          5952,
-          5932,
-          5917,
-          5905
-        ]
-      },
-      {
         "name": "Tech",
         "count": 24,
         "burn_count": 5,
@@ -145847,6 +145837,38 @@
           5942,
           5941,
           5936
+        ]
+      },
+      {
+        "name": "Defense",
+        "count": 24,
+        "burn_count": 0,
+        "mint_count": 24,
+        "event_ids": [
+          6238,
+          6224,
+          6220,
+          6205,
+          6198,
+          6172,
+          6116,
+          6101,
+          6089,
+          6066,
+          6058,
+          6048,
+          6034,
+          6010,
+          6009,
+          6003,
+          6000,
+          5987,
+          5974,
+          5970,
+          5954,
+          5952,
+          5932,
+          5917
         ]
       },
       {
@@ -145913,24 +145935,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 25,
+      "total_burn": 26,
       "direct_action": {
-        "count": 19,
-        "pct": 76.0
+        "count": 20,
+        "pct": 76.9
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 8.0
+        "pct": 7.7
       },
       "untyped": {
         "count": 4,
-        "pct": 16.0
+        "pct": 15.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1903,
+      "total_burn": 1904,
       "direct_action": {
-        "count": 1488,
+        "count": 1489,
         "pct": 78.2
       },
       "editorial_consciousness": {
@@ -145943,9 +145965,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 343,
+      "total_mint": 341,
       "direct_action": {
-        "count": 328,
+        "count": 326,
         "pct": 95.6
       },
       "editorial_alarm": {
@@ -145974,7 +145996,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 90,
-      "institutional": 278,
+      "institutional": 277,
       "citizen_ratio": 0.245,
       "daily": [
         {
@@ -146010,7 +146032,7 @@
         {
           "date": "2026-08-08",
           "citizen": 5,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -146106,6 +146128,7 @@
         5909
       ],
       "event_ids_institutional": [
+        6273,
         6272,
         6270,
         6268,
@@ -146381,9 +146404,7 @@
         5912,
         5911,
         5908,
-        5907,
-        5906,
-        5905
+        5907
       ]
     }
   }
