@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-08T17:06:32.555013+00:00",
-  "total_events": 6302,
+  "generated_at": "2026-08-08T17:36:38.300227+00:00",
+  "total_events": 6303,
   "total_burned": 7774237615,
-  "total_minted": 8800843724,
+  "total_minted": 8800849134,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6303,
+      "event_title": "UAE says Iran attacked ADNOC vessel with missile in Strait of Hormuz",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/uae-says-iran-attacked-adnoc-vessel-missile-strait-hormuz",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5410,
+      "final_score": -2.9,
+      "confidence": 7,
+      "justification": "Iran's missile attack escalates conflict and poses environmental and human harm, outweighing UAE's condemnation. | The missile attack by Iran creates immediate human and environmental danger and fuels regional instability, outweighing the UAE's diplomatic condemnation. While the condemnation supports peace norms, the net ethical balance is strongly negative.",
+      "tx_hash": "nUR1f3YMLfvndGw9fxCmEzGh4oxwXVWPikcGnpUQLkkJpcH29gWJd57rnBN5Cas7pdYnPFYYRKSeSq3HuuE6ox6",
+      "created_at": "2026-08-08T17:36:32.086613+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": "[{\"description\": \"UAE Foreign Ministry publicly condemned the missile attack, reinforcing international norms against piracy and aggression.\", \"affected_sdgs\": [16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Iran launched a missile at an ADNOC vessel, endangering crew, risking an oil spill, and escalating regional conflict.\", \"affected_sdgs\": [13, 14, 15, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6302,
       "event_title": "Food Tank’s Weekly News Roundup: U.S. Restores Health Aid, Companies Block Action on UPFs, New Tool Boosts Water Security",
@@ -145038,12 +145061,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 16
+        "events": 17
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.971,
-        "events": 34
+        "mint_ratio": 0.97,
+        "events": 33
       },
       {
         "region": "Oceania",
@@ -145094,7 +145117,7 @@
       },
       {
         "date": "2026-08-08",
-        "net_minted": 18146225,
+        "net_minted": 18151635,
         "net_burned": 2589300
       }
     ],
@@ -145137,6 +145160,7 @@
           5939
         ],
         "event_ids_negative": [
+          6303,
           6302,
           6301,
           6300,
@@ -145486,8 +145510,7 @@
           5926,
           5925,
           5924,
-          5923,
-          5922
+          5923
         ]
       },
       "UDHR": {
@@ -145510,6 +145533,7 @@
           5939
         ],
         "event_ids_negative": [
+          6303,
           6302,
           6301,
           6300,
@@ -145820,8 +145844,7 @@
           5928,
           5927,
           5926,
-          5925,
-          5922
+          5925
         ]
       },
       "ILO": {
@@ -145877,7 +145900,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 75,
+        "negative": 74,
         "event_ids_positive": [
           5962,
           5939
@@ -145956,8 +145979,7 @@
           5930,
           5927,
           5926,
-          5925,
-          5922
+          5925
         ]
       },
       "UNDRIP": {
@@ -146100,7 +146122,7 @@
       },
       "PB": {
         "positive": 13,
-        "negative": 112,
+        "negative": 113,
         "event_ids_positive": [
           6291,
           6261,
@@ -146117,6 +146139,7 @@
           5939
         ],
         "event_ids_negative": [
+          6303,
           6302,
           6300,
           6297,
@@ -146509,6 +146532,40 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 26,
+        "burn_count": 0,
+        "mint_count": 26,
+        "event_ids": [
+          6303,
+          6299,
+          6283,
+          6238,
+          6224,
+          6220,
+          6205,
+          6198,
+          6172,
+          6116,
+          6101,
+          6089,
+          6066,
+          6058,
+          6048,
+          6034,
+          6010,
+          6009,
+          6003,
+          6000,
+          5987,
+          5974,
+          5970,
+          5954,
+          5952,
+          5932
+        ]
+      },
+      {
         "name": "Tech",
         "count": 26,
         "burn_count": 5,
@@ -146543,39 +146600,6 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 25,
-        "burn_count": 0,
-        "mint_count": 25,
-        "event_ids": [
-          6299,
-          6283,
-          6238,
-          6224,
-          6220,
-          6205,
-          6198,
-          6172,
-          6116,
-          6101,
-          6089,
-          6066,
-          6058,
-          6048,
-          6034,
-          6010,
-          6009,
-          6003,
-          6000,
-          5987,
-          5974,
-          5970,
-          5954,
-          5952,
-          5932
-        ]
-      },
-      {
         "name": "Water",
         "count": 15,
         "burn_count": 0,
@@ -146599,6 +146623,28 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 14,
+        "burn_count": 0,
+        "mint_count": 14,
+        "event_ids": [
+          6303,
+          6264,
+          6243,
+          6240,
+          6229,
+          6190,
+          6188,
+          6153,
+          6062,
+          6038,
+          6037,
+          6032,
+          6030,
+          6020
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 14,
         "burn_count": 0,
@@ -146618,27 +146664,6 @@
           6042,
           5994,
           5988
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 13,
-        "burn_count": 0,
-        "mint_count": 13,
-        "event_ids": [
-          6264,
-          6243,
-          6240,
-          6229,
-          6190,
-          6188,
-          6153,
-          6062,
-          6038,
-          6037,
-          6032,
-          6030,
-          6020
         ]
       }
     ],
@@ -146688,9 +146713,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4385,
+      "total_mint": 4386,
       "direct_action": {
-        "count": 3600,
+        "count": 3601,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -146740,7 +146765,7 @@
         {
           "date": "2026-08-08",
           "citizen": 12,
-          "institutional": 26
+          "institutional": 27
         }
       ],
       "event_ids_citizen": [
@@ -146838,6 +146863,7 @@
         5923
       ],
       "event_ids_institutional": [
+        6303,
         6299,
         6298,
         6296,
@@ -147121,8 +147147,7 @@
         5928,
         5927,
         5925,
-        5924,
-        5922
+        5924
       ]
     }
   }
