@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-09T11:07:14.122129+00:00",
-  "total_events": 6334,
+  "generated_at": "2026-08-09T12:06:46.321920+00:00",
+  "total_events": 6336,
   "total_burned": 7784193115,
-  "total_minted": 8835763534,
+  "total_minted": 8843250204,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6336,
+      "event_title": "Israel 'rejects' the American plan for Gaza accepted by Hamas, announces Benjamin Netanyahu",
+      "event_url": "https://www.lemonde.fr/international/article/2026/08/09/israel-rejette-le-plan-americain-pour-gaza-accepte-par-le-hamas-annonce-benyamin-netanyahou_6742436_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -5.04,
+      "confidence": 8,
+      "justification": "Rejection of ceasefire prolongs conflict, violates rights, and risks escalation. | The rejection of a ceasefire plan prolongs violence, deepens humanitarian suffering, and undermines prospects for peace. The insistence on indefinite military presence violates Palestinian self-determination and risks further civilian casualties, directly contravening multiple human rights frameworks and SDGs.",
+      "tx_hash": "3vmT32ihXy571YxSHvkzJcFojJHSwNoffumUmAYGQPjQnUeJLWabMuUZtNpuEffpbAr5M6Adu4AMyNzB9c5Ui9aP",
+      "created_at": "2026-08-09T12:06:40.000411+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israel rejects a U.S.-brokered ceasefire plan for Gaza that was accepted by Hamas, prolonging conflict and blocking humanitarian access.\", \"affected_sdgs\": [1, 2, 3, 4, 5, 6, 8, 10, 11, 16], \"violated_rights\": [\"UDHR Article 3 (Right to Life)\", \"UDHR Article 5 (Freedom from Torture)\", \"UDHR Article 13 (Freedom of Movement)\", \"UDHR Article 25 (Right to Adequate Living Standard)\", \"CRC Article 6 (Right to Life)\", \"CRC Article 22 (Refugee Children)\", \"UNDRIP Article 7 (Right to Life)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}, {\"description\": \"Israeli Prime Minister announces military will not withdraw from Palestinian territory until Hamas is 'truly disarmed,' risking indefinite occupation and escalation.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28 (Right to Social Order)\", \"UNDRIP Article 3 (Right to Self-Determination)\", \"UNDRIP Article 8 (Right to Not Be Forcibly Removed)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 6335,
+      "event_title": "Russia's war in Ukraine: Hours-long air alarm in Odessa",
+      "event_url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-odessa-belgorod-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 6670,
+      "final_score": -3.45,
+      "confidence": 7,
+      "justification": "Russian attack on civilian area outweighs protective warning, net negative impact. | The Russian attack inflicts severe harm on civilians and breaches fundamental human rights, while the Ukrainian warning system provides limited mitigation. Overall the event is overwhelmingly negative.",
+      "tx_hash": "4DcG33VGozoCBUCjbco1ntFDL3HXg6jbRMhsZNR9c3nUZgvpRCYLVmxYs24eradW8cmc7DAwdVdj2j9jHHN1VU8Y",
+      "created_at": "2026-08-09T12:06:37.773649+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"Activation of Odessa air‑raid warning system alerts residents, enabling shelter\", \"affected_sdgs\": [3, 11, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Russian air strike on Odessa causing civilian casualties and infrastructure damage\", \"affected_sdgs\": [3, 11, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 6\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 6334,
       "event_title": "Elderly woman left on a stretcher for several days at Orléans hospital: ARS requests a 'feedback report'",
@@ -145774,12 +145820,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 17
+        "events": 16
       },
       {
         "region": "Europe",
         "mint_ratio": 0.963,
-        "events": 81
+        "events": 82
       },
       {
         "region": "North America",
@@ -145830,7 +145876,7 @@
       },
       {
         "date": "2026-08-09",
-        "net_minted": 12259800,
+        "net_minted": 19746470,
         "net_burned": 9955500
       }
     ],
@@ -145848,7 +145894,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 349,
+        "negative": 350,
         "event_ids_positive": [
           6322,
           6318,
@@ -145873,6 +145919,8 @@
           5962
         ],
         "event_ids_negative": [
+          6336,
+          6335,
           6334,
           6333,
           6331,
@@ -146220,13 +146268,12 @@
           5959,
           5957,
           5956,
-          5955,
-          5954
+          5955
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 311,
+        "negative": 312,
         "event_ids_positive": [
           6318,
           6317,
@@ -146243,6 +146290,8 @@
           5962
         ],
         "event_ids_negative": [
+          6336,
+          6335,
           6334,
           6333,
           6331,
@@ -146552,13 +146601,12 @@
           5959,
           5957,
           5956,
-          5955,
-          5954
+          5955
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 36,
+        "negative": 35,
         "event_ids_positive": [
           6268,
           6230,
@@ -146600,18 +146648,19 @@
           5984,
           5983,
           5975,
-          5970,
-          5954
+          5970
         ]
       },
       "CRC": {
         "positive": 2,
-        "negative": 71,
+        "negative": 72,
         "event_ids_positive": [
           6318,
           5962
         ],
         "event_ids_negative": [
+          6336,
+          6335,
           6334,
           6333,
           6325,
@@ -146681,13 +146730,12 @@
           5970,
           5969,
           5965,
-          5956,
-          5954
+          5956
         ]
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           6318,
           6317,
@@ -146695,6 +146743,7 @@
           6202
         ],
         "event_ids_negative": [
+          6336,
           6331,
           6312,
           6300,
@@ -146830,7 +146879,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 116,
+        "negative": 117,
         "event_ids_positive": [
           6322,
           6318,
@@ -146848,6 +146897,7 @@
           5977
         ],
         "event_ids_negative": [
+          6335,
           6331,
           6330,
           6328,
@@ -146971,11 +147021,11 @@
       "niche_pct": 61.7,
       "mainstream_pct": 38.3,
       "total_sources_used": 94,
-      "articles_processed": 380
+      "articles_processed": 381
     },
     "cache_hit_rate_7d": {
       "hits": 10,
-      "total_events": 380,
+      "total_events": 381,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -147259,6 +147309,7 @@
         "burn_count": 0,
         "mint_count": 25,
         "event_ids": [
+          6336,
           6311,
           6303,
           6299,
@@ -147282,8 +147333,7 @@
           6000,
           5987,
           5974,
-          5970,
-          5954
+          5970
         ]
       },
       {
@@ -147420,10 +147470,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 358,
+      "total_mint": 359,
       "direct_action": {
-        "count": 332,
-        "pct": 92.7
+        "count": 333,
+        "pct": 92.8
       },
       "editorial_alarm": {
         "count": 17,
@@ -147435,10 +147485,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4417,
+      "total_mint": 4419,
       "direct_action": {
-        "count": 3624,
-        "pct": 82.0
+        "count": 3626,
+        "pct": 82.1
       },
       "editorial_alarm": {
         "count": 263,
@@ -147451,7 +147501,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 94,
-      "institutional": 286,
+      "institutional": 287,
       "citizen_ratio": 0.247,
       "daily": [
         {
@@ -147487,7 +147537,7 @@
         {
           "date": "2026-08-09",
           "citizen": 4,
-          "institutional": 14
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -147587,6 +147637,8 @@
         5962
       ],
       "event_ids_institutional": [
+        6336,
+        6335,
         6334,
         6333,
         6330,
@@ -147871,8 +147923,7 @@
         5958,
         5957,
         5956,
-        5955,
-        5954
+        5955
       ]
     }
   }
