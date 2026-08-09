@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-09T13:37:01.670261+00:00",
-  "total_events": 6341,
+  "generated_at": "2026-08-09T14:06:13.472388+00:00",
+  "total_events": 6342,
   "total_burned": 7785173115,
-  "total_minted": 8845798204,
+  "total_minted": 8846402204,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6342,
+      "event_title": "Syria and Russia reach deal on future of Tartous and Hmeimim bases after 18 months of talks",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/syria-and-russia-reach-deal-future-tartous-and-hmeimim-bases-after-18-months",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.48,
+      "confidence": 7,
+      "justification": "The agreement enables foreign military presence, undermining Syrian sovereignty and self-determination. | While the partial restoration of Syrian administrative control over civilian infrastructure is a positive step toward sovereignty, the agreement entrenches foreign military presence, violating Syria's territorial integrity and self-determination. The lack of inclusive governance further weakens the legitimacy of the deal, outweighing its limited benefits.",
+      "tx_hash": "3vsMYfkHCNuaedqhwGgHscdRG42WLo3S6PYMCLcnj6AZpmMmMng4VLbyhG91X7GR11ntjXxcn8gnH9mB9h9jzmdf",
+      "created_at": "2026-08-09T14:06:06.075360+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Syria",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Syria regains partial administrative control over civilian facilities at Russian military bases, potentially restoring sovereign oversight over key infrastructure (Hmeimim airport, Tartous port).\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The agreement perpetuates the presence of foreign military bases on Syrian territory, undermining full sovereignty and enabling ongoing external military influence in Syria.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"The deal lacks transparency and was negotiated without inclusive participation of Syrian civil society or opposition groups, risking exclusionary governance.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6341,
       "event_title": "Guarantee Rights and Protection, Coalition Submits 11 Substantive Points for Indigenous Peoples Bill",
@@ -145935,12 +145958,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 17
+        "events": 18
       },
       {
         "region": "Europe",
         "mint_ratio": 0.963,
-        "events": 81
+        "events": 80
       },
       {
         "region": "North America",
@@ -145991,7 +146014,7 @@
       },
       {
         "date": "2026-08-09",
-        "net_minted": 22294470,
+        "net_minted": 22898470,
         "net_burned": 10935500
       }
     ],
@@ -146036,6 +146059,7 @@
           5962
         ],
         "event_ids_negative": [
+          6342,
           6340,
           6338,
           6337,
@@ -146385,8 +146409,7 @@
           5963,
           5961,
           5960,
-          5959,
-          5957
+          5959
         ]
       },
       "UDHR": {
@@ -146410,6 +146433,7 @@
           5962
         ],
         "event_ids_negative": [
+          6342,
           6340,
           6338,
           6337,
@@ -146721,8 +146745,7 @@
           5963,
           5961,
           5960,
-          5959,
-          5957
+          5959
         ]
       },
       "ILO": {
@@ -146860,7 +146883,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           6341,
           6339,
@@ -146870,6 +146893,7 @@
           6202
         ],
         "event_ids_negative": [
+          6342,
           6340,
           6338,
           6336,
@@ -147282,9 +147306,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 55,
+        "count": 54,
         "burn_count": 3,
-        "mint_count": 52,
+        "mint_count": 51,
         "event_ids": [
           6328,
           6327,
@@ -147339,8 +147363,7 @@
           5998,
           5990,
           5980,
-          5977,
-          5957
+          5977
         ]
       },
       {
@@ -147393,10 +147416,11 @@
       },
       {
         "name": "Construction",
-        "count": 33,
+        "count": 34,
         "burn_count": 2,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          6342,
           6328,
           6301,
           6288,
@@ -147434,10 +147458,11 @@
       },
       {
         "name": "Defense",
-        "count": 25,
+        "count": 26,
         "burn_count": 0,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          6342,
           6336,
           6311,
           6303,
@@ -147546,9 +147571,9 @@
       },
       {
         "name": "Water",
-        "count": 14,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           6308,
           6302,
@@ -147562,8 +147587,7 @@
           6071,
           6034,
           5998,
-          5985,
-          5957
+          5985
         ]
       }
     ],
@@ -147613,9 +147637,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4422,
+      "total_mint": 4423,
       "direct_action": {
-        "count": 3629,
+        "count": 3630,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -147628,9 +147652,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 98,
-      "institutional": 286,
-      "citizen_ratio": 0.255,
+      "citizen": 99,
+      "institutional": 285,
+      "citizen_ratio": 0.258,
       "daily": [
         {
           "date": "2026-08-03",
@@ -147664,11 +147688,12 @@
         },
         {
           "date": "2026-08-09",
-          "citizen": 8,
+          "citizen": 9,
           "institutional": 17
         }
       ],
       "event_ids_citizen": [
+        6342,
         6341,
         6339,
         6338,
@@ -148053,8 +148078,7 @@
         5961,
         5960,
         5959,
-        5958,
-        5957
+        5958
       ]
     }
   }
