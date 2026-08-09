@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-09T17:06:33.535661+00:00",
-  "total_events": 6346,
+  "generated_at": "2026-08-09T17:35:13.198324+00:00",
+  "total_events": 6347,
   "total_burned": 7785173115,
-  "total_minted": 8859238244,
+  "total_minted": 8859986244,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6347,
+      "event_title": "Afghanistan - Tourism under the Taliban",
+      "event_url": "https://www.tagesschau.de/ausland/asien/afghanistan-tourismus-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -5.51,
+      "confidence": 8,
+      "justification": "Taliban's tourism push enables systemic human rights violations and propaganda, outweighing minor economic benefits. | The Taliban's tourism initiative is overshadowed by severe human rights violations, particularly against women and girls, and the use of tourism as a propaganda mechanism. While minor economic benefits may arise, the ethical costs far outweigh any potential gains, undermining core UN frameworks and SDGs.",
+      "tx_hash": "HiV9BuFPCRBRo9QH6NrjGsvrmugPTPZoL2Jii8MnQsyCs2ihsTJsBUem5bYPNhxmUa33zTTpYoWeKkR4d5VkoTv",
+      "created_at": "2026-08-09T17:35:07.203156+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Afghanistan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Taliban's attempt to open Afghanistan to tourism may facilitate cultural exchange and economic opportunities for local communities.\", \"affected_sdgs\": [8, 11, 17], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Tourism promotion under Taliban rule is accompanied by systemic discrimination against women and girls, violating their rights to education, work, and freedom of movement.\", \"affected_sdgs\": [5, 4, 8, 10, 16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 2\", \"UDHR Article 3\", \"UDHR Article 23\", \"UDHR Article 26\", \"CRC Article 28\", \"CRC Article 29\", \"ILO Discrimination Convention\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}, {\"description\": \"Tourism serves as a propaganda tool for the Taliban, legitimizing their regime and potentially enabling further human rights abuses.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 21\", \"UNDRIP Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6346,
       "event_title": "Jura and Bern Tighten Ties at the Saignelégier Horse Market, While Horse Breeders Worry About Their Future",
@@ -146022,8 +146045,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.125,
-        "events": 32
+        "burn_ratio": 0.121,
+        "events": 33
       },
       {
         "region": "Latin America",
@@ -146106,7 +146129,7 @@
       },
       {
         "date": "2026-08-09",
-        "net_minted": 35734510,
+        "net_minted": 36482510,
         "net_burned": 10935500
       }
     ],
@@ -146124,7 +146147,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 353,
+        "negative": 354,
         "event_ids_positive": [
           6341,
           6339,
@@ -146151,6 +146174,7 @@
           5962
         ],
         "event_ids_negative": [
+          6347,
           6346,
           6345,
           6344,
@@ -146508,7 +146532,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 315,
+        "negative": 316,
         "event_ids_positive": [
           6341,
           6339,
@@ -146527,6 +146551,7 @@
           5962
         ],
         "event_ids_negative": [
+          6347,
           6346,
           6345,
           6344,
@@ -146846,7 +146871,7 @@
       },
       "ILO": {
         "positive": 4,
-        "negative": 36,
+        "negative": 37,
         "event_ids_positive": [
           6268,
           6230,
@@ -146854,6 +146879,7 @@
           6124
         ],
         "event_ids_negative": [
+          6347,
           6337,
           6334,
           6319,
@@ -146894,13 +146920,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           6341,
           6318,
           5962
         ],
         "event_ids_negative": [
+          6347,
           6343,
           6340,
           6338,
@@ -146980,7 +147007,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 78,
+        "negative": 79,
         "event_ids_positive": [
           6341,
           6339,
@@ -146990,6 +147017,7 @@
           6202
         ],
         "event_ids_negative": [
+          6347,
           6343,
           6342,
           6340,
@@ -147273,11 +147301,11 @@
       "niche_pct": 61.3,
       "mainstream_pct": 38.7,
       "total_sources_used": 93,
-      "articles_processed": 385
+      "articles_processed": 386
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 385,
+      "total_events": 386,
       "pct": 2.3
     },
     "active_partners_7d": [],
@@ -147323,6 +147351,20 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          6347,
+          6192,
+          6155,
+          6110,
+          6091,
+          6046
+        ]
+      },
+      {
         "name": "WHO",
         "count": 6,
         "burn_count": 0,
@@ -147334,19 +147376,6 @@
           6150,
           6104,
           5984
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          6192,
-          6155,
-          6110,
-          6091,
-          6046
         ]
       },
       {
@@ -147720,9 +147749,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 362,
+      "total_mint": 363,
       "direct_action": {
-        "count": 336,
+        "count": 337,
         "pct": 92.8
       },
       "editorial_alarm": {
@@ -147735,9 +147764,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4427,
+      "total_mint": 4428,
       "direct_action": {
-        "count": 3634,
+        "count": 3635,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -147750,9 +147779,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 100,
+      "citizen": 101,
       "institutional": 285,
-      "citizen_ratio": 0.26,
+      "citizen_ratio": 0.262,
       "daily": [
         {
           "date": "2026-08-03",
@@ -147786,11 +147815,12 @@
         },
         {
           "date": "2026-08-09",
-          "citizen": 10,
+          "citizen": 11,
           "institutional": 20
         }
       ],
       "event_ids_citizen": [
+        6347,
         6343,
         6342,
         6341,
