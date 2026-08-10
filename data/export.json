@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-10T08:37:16.613399+00:00",
-  "total_events": 6371,
+  "generated_at": "2026-08-10T09:06:49.750972+00:00",
+  "total_events": 6372,
   "total_burned": 7785584115,
-  "total_minted": 8880356484,
+  "total_minted": 8880410584,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6372,
+      "event_title": "Pakistan-administered Kashmir votes in reduced third phase amid unrest",
+      "event_url": "https://www.aljazeera.com/news/2026/8/10/pakistan-administered-kashmir-votes-in-reduced-third-phase-amid-unrest?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -3.1,
+      "confidence": 7,
+      "justification": "Postponement of voting and election-related violence disenfranchise citizens and undermine democratic rights. | The continuation of elections in some areas supports democratic participation (SDG 16, UDHR Article 21), but the postponement in most constituencies and accompanying violence severely undermine electoral integrity and human security. The net ethical impact is negative due to widespread disenfranchisement and instability.",
+      "tx_hash": "nCkPk5Jtxo1LDra8daTGLf7uYgrK9VzLXqEcqXxLg3q8J4y4WkAxJ53cSL8nMRZ3r419yZLTr1rzWxtpLrmrZn8",
+      "created_at": "2026-08-10T09:06:42.456074+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Pakistan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Election process continues in some constituencies, allowing partial exercise of democratic rights and civic participation.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Voting postponed in seven of 11 constituencies due to boycott calls and violence, disenfranchising a significant portion of the electorate.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Unrest and violence during elections undermine peace, security, and stability in the region.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6371,
       "event_title": "Irish cartel boss Daniel Kinahan extradited from Dubai and charged in Dublin",
@@ -146597,8 +146620,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.111,
-        "events": 36
+        "burn_ratio": 0.108,
+        "events": 37
       },
       {
         "region": "Latin America",
@@ -146681,7 +146704,7 @@
       },
       {
         "date": "2026-08-10",
-        "net_minted": 9856400,
+        "net_minted": 9910500,
         "net_burned": 411000
       }
     ],
@@ -146699,7 +146722,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 357,
+        "negative": 358,
         "event_ids_positive": [
           6358,
           6341,
@@ -146723,6 +146746,7 @@
           6029
         ],
         "event_ids_negative": [
+          6372,
           6371,
           6370,
           6369,
@@ -147084,7 +147108,7 @@
       },
       "UDHR": {
         "positive": 13,
-        "negative": 319,
+        "negative": 320,
         "event_ids_positive": [
           6341,
           6339,
@@ -147101,6 +147125,7 @@
           6029
         ],
         "event_ids_negative": [
+          6372,
           6371,
           6370,
           6369,
@@ -147854,11 +147879,11 @@
       "niche_pct": 62.4,
       "mainstream_pct": 37.6,
       "total_sources_used": 93,
-      "articles_processed": 387
+      "articles_processed": 388
     },
     "cache_hit_rate_7d": {
       "hits": 10,
-      "total_events": 387,
+      "total_events": 388,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -148301,14 +148326,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 367,
+      "total_mint": 368,
       "direct_action": {
-        "count": 341,
+        "count": 342,
         "pct": 92.9
       },
       "editorial_alarm": {
         "count": 16,
-        "pct": 4.4
+        "pct": 4.3
       },
       "untyped": {
         "count": 10,
@@ -148316,9 +148341,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4452,
+      "total_mint": 4453,
       "direct_action": {
-        "count": 3658,
+        "count": 3659,
         "pct": 82.2
       },
       "editorial_alarm": {
@@ -148331,9 +148356,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 99,
+      "citizen": 100,
       "institutional": 288,
-      "citizen_ratio": 0.256,
+      "citizen_ratio": 0.258,
       "daily": [
         {
           "date": "2026-08-04",
@@ -148367,11 +148392,12 @@
         },
         {
           "date": "2026-08-10",
-          "citizen": 3,
+          "citizen": 4,
           "institutional": 12
         }
       ],
       "event_ids_citizen": [
+        6372,
         6370,
         6369,
         6358,
