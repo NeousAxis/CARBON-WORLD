@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-10T01:05:55.804489+00:00",
-  "total_events": 6359,
+  "generated_at": "2026-08-10T02:05:33.418990+00:00",
+  "total_events": 6360,
   "total_burned": 7785584115,
-  "total_minted": 8871398084,
+  "total_minted": 8871472884,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6360,
+      "event_title": "Live, war in Ukraine – A WHO humanitarian warehouse destroyed in Dnipro",
+      "event_url": "https://www.letemps.ch/articles/en-direct-guerre-en-ukraine-un-entrepot-humanitaire-de-l-oms-detruit-a-dnipro",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 74800,
+      "final_score": -6.05,
+      "confidence": 8,
+      "justification": "Destruction of medical supplies and healthcare infrastructure violates core humanitarian principles and rights. | The destruction of a WHO humanitarian warehouse constitutes a severe violation of medical neutrality and the right to health, directly harming vulnerable populations. The systemic pattern of attacks on healthcare infrastructure in Ukraine further undermines international humanitarian law and erodes trust in conflict resolution frameworks. No countervailing positive action is identifi",
+      "tx_hash": "2d7aymuEAzVqVJi4eGLhbF9i35FXmRFHws8VqVMw4kjyFsXxPw5gPWfv7WLmrarHkqchj8XwnGPogoisRhKD5CJ6",
+      "created_at": "2026-08-10T02:05:26.993006+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Destruction of a WHO humanitarian warehouse in Dnipro containing critical medical supplies for frontline health facilities, directly undermining healthcare access for civilians and combatants in need.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\", \"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Continuation of a documented pattern of attacks on healthcare infrastructure in Ukraine (3,148 recorded attacks since February 2022), normalizing impunity and eroding the principle of medical neutrality in conflict zones.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 28\", \"ILO Medical Neutrality\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6359,
       "event_title": "Netanyahu rejects Trump-backed Gaza peace plan",
@@ -636,7 +659,7 @@
       "final_score": -5.73,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.934) from event #6321",
-      "tx_hash": null,
+      "tx_hash": "59AFxzxJFPRVH1CK3D31Qzw6s4AFTnAaYxSTqeKGjDYajgqDXmCuWzbE8iF9GDbBs8WZLUUYFoDxDc9eN9pD693B",
       "created_at": "2026-08-09T10:34:13.442911+00:00",
       "embedding": null,
       "reused_from_event_id": 6321,
@@ -146267,8 +146290,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 88,
-        "total_amount": 50291085
+        "count": 86,
+        "total_amount": 49684825
       },
       {
         "country": "Spain",
@@ -146341,8 +146364,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.042,
-        "events": 95
+        "burn_ratio": 0.043,
+        "events": 93
       }
     ],
     "top_regions_destructive": [
@@ -146358,8 +146381,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.958,
-        "events": 95
+        "mint_ratio": 0.957,
+        "events": 93
       },
       {
         "region": "Oceania",
@@ -146400,12 +146423,12 @@
       },
       {
         "date": "2026-08-09",
-        "net_minted": 46996350,
+        "net_minted": 54476350,
         "net_burned": 10935500
       },
       {
         "date": "2026-08-10",
-        "net_minted": 898000,
+        "net_minted": 972800,
         "net_burned": 411000
       }
     ],
@@ -146423,7 +146446,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 360,
+        "negative": 358,
         "event_ids_positive": [
           6358,
           6341,
@@ -146450,6 +146473,7 @@
           5977
         ],
         "event_ids_negative": [
+          6360,
           6359,
           6357,
           6356,
@@ -146806,15 +146830,12 @@
           5973,
           5972,
           5971,
-          5970,
-          5969,
-          5968,
-          5967
+          5970
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 323,
+        "negative": 322,
         "event_ids_positive": [
           6341,
           6339,
@@ -146832,6 +146853,7 @@
           5977
         ],
         "event_ids_negative": [
+          6360,
           6359,
           6357,
           6356,
@@ -147152,14 +147174,12 @@
           5973,
           5972,
           5971,
-          5970,
-          5969,
-          5967
+          5970
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [
           6268,
           6230,
@@ -147167,6 +147187,7 @@
           6124
         ],
         "event_ids_negative": [
+          6360,
           6354,
           6353,
           6347,
@@ -147216,6 +147237,7 @@
           6318
         ],
         "event_ids_negative": [
+          6360,
           6359,
           6356,
           6352,
@@ -147292,8 +147314,7 @@
           5975,
           5972,
           5971,
-          5970,
-          5969
+          5970
         ]
       },
       "UNDRIP": {
@@ -147393,7 +147414,7 @@
       },
       "Animal": {
         "positive": 8,
-        "negative": 41,
+        "negative": 40,
         "event_ids_positive": [
           6318,
           6317,
@@ -147444,13 +147465,12 @@
           6002,
           5994,
           5990,
-          5985,
-          5968
+          5985
         ]
       },
       "PB": {
         "positive": 16,
-        "negative": 117,
+        "negative": 116,
         "event_ids_positive": [
           6358,
           6339,
@@ -147585,21 +147605,20 @@
           5985,
           5983,
           5978,
-          5974,
-          5968
+          5974
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 62.8,
-      "mainstream_pct": 37.2,
+      "niche_pct": 63.8,
+      "mainstream_pct": 36.2,
       "total_sources_used": 94,
-      "articles_processed": 392
+      "articles_processed": 391
     },
     "cache_hit_rate_7d": {
-      "hits": 9,
-      "total_events": 392,
-      "pct": 2.3
+      "hits": 10,
+      "total_events": 391,
+      "pct": 2.6
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -147644,6 +147663,21 @@
         ]
       },
       {
+        "name": "WHO",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          6360,
+          6298,
+          6278,
+          6272,
+          6150,
+          6104,
+          5984
+        ]
+      },
+      {
         "name": "UN",
         "count": 6,
         "burn_count": 0,
@@ -147655,20 +147689,6 @@
           6110,
           6091,
           6046
-        ]
-      },
-      {
-        "name": "WHO",
-        "count": 6,
-        "burn_count": 0,
-        "mint_count": 6,
-        "event_ids": [
-          6298,
-          6278,
-          6272,
-          6150,
-          6104,
-          5984
         ]
       },
       {
@@ -147840,6 +147860,7 @@
         "burn_count": 2,
         "mint_count": 32,
         "event_ids": [
+          6360,
           6344,
           6342,
           6328,
@@ -147872,8 +147893,7 @@
           6008,
           6004,
           5990,
-          5977,
-          5968
+          5977
         ]
       },
       {
@@ -148045,24 +148065,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 369,
+      "total_mint": 368,
       "direct_action": {
-        "count": 343,
-        "pct": 93.0
+        "count": 341,
+        "pct": 92.7
       },
       "editorial_alarm": {
         "count": 17,
         "pct": 4.6
       },
       "untyped": {
-        "count": 9,
-        "pct": 2.4
+        "count": 10,
+        "pct": 2.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4439,
+      "total_mint": 4441,
       "direct_action": {
-        "count": 3646,
+        "count": 3647,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -148070,14 +148090,14 @@
         "pct": 5.9
       },
       "untyped": {
-        "count": 530,
-        "pct": 11.9
+        "count": 531,
+        "pct": 12.0
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 102,
+      "citizen": 101,
       "institutional": 290,
-      "citizen_ratio": 0.26,
+      "citizen_ratio": 0.258,
       "daily": [
         {
           "date": "2026-08-04",
@@ -148107,12 +148127,12 @@
         {
           "date": "2026-08-09",
           "citizen": 12,
-          "institutional": 28
+          "institutional": 29
         },
         {
           "date": "2026-08-10",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -148216,10 +148236,10 @@
         5984,
         5980,
         5979,
-        5977,
-        5968
+        5977
       ],
       "event_ids_institutional": [
+        6360,
         6359,
         6357,
         6356,
@@ -148238,6 +148258,7 @@
         6335,
         6334,
         6333,
+        6332,
         6330,
         6329,
         6328,
@@ -148507,9 +148528,7 @@
         5973,
         5972,
         5971,
-        5970,
-        5969,
-        5967
+        5970
       ]
     }
   }
