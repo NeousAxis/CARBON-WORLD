@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-10T04:35:26.756995+00:00",
-  "total_events": 6363,
+  "generated_at": "2026-08-10T05:05:03.609335+00:00",
+  "total_events": 6364,
   "total_burned": 7785584115,
-  "total_minted": 8877717884,
+  "total_minted": 8878258884,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6364,
+      "event_title": "Turkey: the PKK denounces the 'errors and gaps' in the law concerning its fighters",
+      "event_url": "https://www.letemps.ch/articles/turquie-le-pkk-denonce-les-erreurs-et-lacunes-dans-la-loi-concernant-ses-combattants",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.13,
+      "confidence": 7,
+      "justification": "Proposed law enables structural exclusion of Kurdish rights and fails to address key peace process demands. | The PKK's demands for political inclusion and democratization represent a positive step toward peace and justice (SDG 16, UDHR). However, the proposed law's omissions and the unresolved status of Öcalan risk perpetuating structural inequalities and undermining the peace process, creating a net negative ethical balance. The lack of explicit recognition of Kurdish rights and the potential ",
+      "tx_hash": "3Q3XwRC3z2VQUA5EX8Mk5umBK8NTWfsDJtu7i4Dez5yFwS3RG9KHpgRkeH9jG5avqGRop7UXc1K1CxLVggFY4koj",
+      "created_at": "2026-08-10T05:04:55.665261+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": "[{\"description\": \"PKK publicly demands legal guarantees for fighters renouncing arms to participate in democratic political life without imprisonment, emphasizing freedom of thought and association.\", \"affected_sdgs\": [16, 10, 5], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"PKK's statement highlights the need for democratization and resolution of the Kurdish issue, aligning with peace and justice frameworks.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed law omits key recommendations from the parliamentary commission on democratization and Kurdish rights, risking incomplete or ineffective peace process.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 21\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Law focuses solely on disarmament without addressing the Kurdish identity or broader political rights, potentially marginalizing Kurdish populations.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Continued imprisonment of Abdullah Öcalan, a key figure in the peace process, undermines trust and legitimacy of the law, risking its effectiveness.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6363,
       "event_title": "War in the Middle East: Against Iran, Trump now bets on economic pressure rather than bombs",
@@ -146385,14 +146408,14 @@
     ],
     "top_countries_burn": [
       {
-        "country": "United States",
-        "count": 4,
-        "total_amount": 1848300
-      },
-      {
         "country": "Indonesia",
         "count": 3,
         "total_amount": 782500
+      },
+      {
+        "country": "United States",
+        "count": 3,
+        "total_amount": 1173300
       },
       {
         "country": "Ecuador",
@@ -146432,26 +146455,26 @@
         "events": 20
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.043,
-        "events": 93
+        "region": "Europe",
+        "burn_ratio": 0.037,
+        "events": 81
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 24
+        "events": 25
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.967,
+        "events": 92
       },
       {
         "region": "Europe",
         "mint_ratio": 0.963,
         "events": 81
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.957,
-        "events": 93
       },
       {
         "region": "Oceania",
@@ -146497,7 +146520,7 @@
       },
       {
         "date": "2026-08-10",
-        "net_minted": 7217800,
+        "net_minted": 7758800,
         "net_burned": 411000
       }
     ],
@@ -146514,8 +146537,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 23,
-        "negative": 354,
+        "positive": 22,
+        "negative": 355,
         "event_ids_positive": [
           6358,
           6341,
@@ -146538,10 +146561,10 @@
           6049,
           6029,
           5980,
-          5979,
-          5977
+          5979
         ],
         "event_ids_negative": [
+          6364,
           6363,
           6362,
           6361,
@@ -146899,8 +146922,8 @@
         ]
       },
       "UDHR": {
-        "positive": 14,
-        "negative": 317,
+        "positive": 13,
+        "negative": 318,
         "event_ids_positive": [
           6341,
           6339,
@@ -146914,10 +146937,10 @@
           6215,
           6212,
           6202,
-          6029,
-          5977
+          6029
         ],
         "event_ids_negative": [
+          6364,
           6363,
           6362,
           6360,
@@ -147376,7 +147399,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           6341,
           6339,
@@ -147386,6 +147409,7 @@
           6202
         ],
         "event_ids_negative": [
+          6364,
           6362,
           6359,
           6355,
@@ -147525,7 +147549,7 @@
         ]
       },
       "PB": {
-        "positive": 16,
+        "positive": 15,
         "negative": 116,
         "event_ids_positive": [
           6358,
@@ -147542,8 +147566,7 @@
           6124,
           6094,
           6049,
-          5980,
-          5977
+          5980
         ],
         "event_ids_negative": [
           6361,
@@ -147799,8 +147822,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 56,
-        "burn_count": 3,
+        "count": 55,
+        "burn_count": 2,
         "mint_count": 53,
         "event_ids": [
           6351,
@@ -147857,8 +147880,7 @@
           6004,
           5998,
           5990,
-          5980,
-          5977
+          5980
         ]
       },
       {
@@ -147910,8 +147932,8 @@
       },
       {
         "name": "Construction",
-        "count": 34,
-        "burn_count": 2,
+        "count": 33,
+        "burn_count": 1,
         "mint_count": 32,
         "event_ids": [
           6360,
@@ -147946,8 +147968,7 @@
           6010,
           6008,
           6004,
-          5990,
-          5977
+          5990
         ]
       },
       {
@@ -148089,14 +148110,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 23,
+      "total_burn": 22,
       "direct_action": {
         "count": 20,
-        "pct": 87.0
+        "pct": 90.9
       },
       "editorial_consciousness": {
-        "count": 3,
-        "pct": 13.0
+        "count": 2,
+        "pct": 9.1
       },
       "untyped": {
         "count": 0,
@@ -148119,9 +148140,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 364,
+      "total_mint": 365,
       "direct_action": {
-        "count": 337,
+        "count": 338,
         "pct": 92.6
       },
       "editorial_alarm": {
@@ -148134,9 +148155,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4444,
+      "total_mint": 4445,
       "direct_action": {
-        "count": 3650,
+        "count": 3651,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -148149,9 +148170,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 101,
-      "institutional": 286,
-      "citizen_ratio": 0.261,
+      "citizen": 100,
+      "institutional": 287,
+      "citizen_ratio": 0.258,
       "daily": [
         {
           "date": "2026-08-04",
@@ -148186,7 +148207,7 @@
         {
           "date": "2026-08-10",
           "citizen": 1,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -148289,10 +148310,10 @@
         5991,
         5984,
         5980,
-        5979,
-        5977
+        5979
       ],
       "event_ids_institutional": [
+        6364,
         6363,
         6362,
         6361,
