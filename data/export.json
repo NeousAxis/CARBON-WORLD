@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-10T02:05:33.418990+00:00",
-  "total_events": 6360,
+  "generated_at": "2026-08-10T03:05:32.028855+00:00",
+  "total_events": 6361,
   "total_burned": 7785584115,
-  "total_minted": 8871472884,
+  "total_minted": 8871766884,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6361,
+      "event_title": "Japan taps public-private funds for shipbuilding, eyeing next-generation vessels",
+      "event_url": "https://www.japantimes.co.jp/business/2026/08/10/companies/japan-public-private-shipbuilding-revive/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 294000,
+      "final_score": 0.84,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Funding expands shipbuilding with environmental risks outweighing economic gains. | The funding boosts employment and industrial strength, but it also risks increasing emissions and marine harm, leading to a net negative ethical balance.",
+      "tx_hash": "AVQFkFfasRJVocj9fua3FDAHF3bgxsigJ3HvaYmAsKCsZFdd8Dc91qRa4hbsBAxERqDVRaRp9eooH2LroSCwNZH",
+      "created_at": "2026-08-10T03:05:23.977389+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Public‑private funding to revitalize shipbuilding creates jobs and industrial capacity\", \"affected_sdgs\": [8, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Expanded shipbuilding likely raises greenhouse‑gas emissions and marine pollution\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 6360,
       "event_title": "Live, war in Ukraine – A WHO humanitarian warehouse destroyed in Dnipro",
@@ -146344,8 +146367,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.118,
-        "events": 34
+        "burn_ratio": 0.114,
+        "events": 35
       },
       {
         "region": "Latin America",
@@ -146354,8 +146377,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.053,
-        "events": 19
+        "burn_ratio": 0.056,
+        "events": 18
       },
       {
         "region": "Oceania",
@@ -146391,8 +146414,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.947,
-        "events": 19
+        "mint_ratio": 0.944,
+        "events": 18
       }
     ],
     "supply_trend_7d": [
@@ -146428,7 +146451,7 @@
       },
       {
         "date": "2026-08-10",
-        "net_minted": 972800,
+        "net_minted": 1266800,
         "net_burned": 411000
       }
     ],
@@ -146473,6 +146496,7 @@
           5977
         ],
         "event_ids_negative": [
+          6361,
           6360,
           6359,
           6357,
@@ -146829,13 +146853,12 @@
           5974,
           5973,
           5972,
-          5971,
-          5970
+          5971
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 322,
+        "negative": 321,
         "event_ids_positive": [
           6341,
           6339,
@@ -147173,8 +147196,7 @@
           5974,
           5973,
           5972,
-          5971,
-          5970
+          5971
         ]
       },
       "ILO": {
@@ -147187,6 +147209,7 @@
           6124
         ],
         "event_ids_negative": [
+          6361,
           6360,
           6354,
           6353,
@@ -147225,13 +147248,12 @@
           5993,
           5984,
           5983,
-          5975,
-          5970
+          5975
         ]
       },
       "CRC": {
         "positive": 2,
-        "negative": 78,
+        "negative": 77,
         "event_ids_positive": [
           6341,
           6318
@@ -147313,8 +147335,7 @@
           5986,
           5975,
           5972,
-          5971,
-          5970
+          5971
         ]
       },
       "UNDRIP": {
@@ -147470,7 +147491,7 @@
       },
       "PB": {
         "positive": 16,
-        "negative": 116,
+        "negative": 117,
         "event_ids_positive": [
           6358,
           6339,
@@ -147490,6 +147511,7 @@
           5977
         ],
         "event_ids_negative": [
+          6361,
           6354,
           6351,
           6338,
@@ -147610,8 +147632,8 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 63.8,
-      "mainstream_pct": 36.2,
+      "niche_pct": 62.8,
+      "mainstream_pct": 37.2,
       "total_sources_used": 94,
       "articles_processed": 391
     },
@@ -147808,10 +147830,11 @@
       },
       {
         "name": "Finance",
-        "count": 40,
+        "count": 41,
         "burn_count": 2,
-        "mint_count": 38,
+        "mint_count": 39,
         "event_ids": [
+          6361,
           6337,
           6324,
           6310,
@@ -147898,9 +147921,9 @@
       },
       {
         "name": "Defense",
-        "count": 29,
+        "count": 28,
         "burn_count": 0,
-        "mint_count": 29,
+        "mint_count": 28,
         "event_ids": [
           6359,
           6355,
@@ -147929,8 +147952,7 @@
           6003,
           6000,
           5987,
-          5974,
-          5970
+          5974
         ]
       },
       {
@@ -148080,9 +148102,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4441,
+      "total_mint": 4442,
       "direct_action": {
-        "count": 3647,
+        "count": 3648,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -148132,7 +148154,7 @@
         {
           "date": "2026-08-10",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -148239,6 +148261,7 @@
         5977
       ],
       "event_ids_institutional": [
+        6361,
         6360,
         6359,
         6357,
@@ -148527,8 +148550,7 @@
         5974,
         5973,
         5972,
-        5971,
-        5970
+        5971
       ]
     }
   }
