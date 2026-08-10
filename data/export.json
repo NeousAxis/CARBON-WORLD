@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-10T21:07:48.056736+00:00",
-  "total_events": 6401,
+  "generated_at": "2026-08-10T21:36:40.012576+00:00",
+  "total_events": 6402,
   "total_burned": 7786434115,
-  "total_minted": 8906315784,
+  "total_minted": 8906369884,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6402,
+      "event_title": "COURTING INVESTORS: Cape Town’s built-for-business push — from tourism to global investment",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-08-10-cape-town-s-built-for-business-push-from-tourism-to-global-investment/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -1.76,
+      "confidence": 7,
+      "justification": "Potential socioeconomic and environmental harms outweigh economic benefits without clear safeguards. | The initiative aims to stimulate economic growth and urban development, aligning with SDGs 8, 9, and 11. However, the socioeconomic trade-offs and potential weakening of protections pose significant risks to equity, labor rights, and environmental sustainability, undermining multiple frameworks.",
+      "tx_hash": "4y6M8C7k17Fcxut2GPGZ8hTz6qvrdCcd4j44E3EKCNydSZryPjb6kFquHvWzAy9ygoVS16EDTwbK5eEBghrTdvvy",
+      "created_at": "2026-08-10T21:36:32.857498+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"City of Cape Town prioritizes ease of doing business, fast-tracking permits and licenses to attract global investment, potentially boosting local employment and economic growth.\", \"affected_sdgs\": [8, 9, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"R120bn, 10-year infrastructure plan may improve urban infrastructure, supporting sustainable cities and economic development.\", \"affected_sdgs\": [9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Infrastructure plan involves acute socioeconomic trade-offs, potentially exacerbating inequality or displacing vulnerable communities without adequate safeguards.\", \"affected_sdgs\": [1, 10, 11], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Fast-tracking permits and licenses may weaken environmental or labor protections, risking violations of ILO standards or Planetary Boundaries.\", \"affected_sdgs\": [8, 13, 15], \"violated_rights\": [\"ILO Core Labor Standards\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6401,
       "event_title": "Russia bars only party opposing war in Ukraine from parliamentary vote",
@@ -147307,8 +147330,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.045,
-        "events": 22
+        "burn_ratio": 0.043,
+        "events": 23
       }
     ],
     "top_regions_destructive": [
@@ -147324,8 +147347,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.955,
-        "events": 22
+        "mint_ratio": 0.957,
+        "events": 23
       },
       {
         "region": "Oceania",
@@ -147371,7 +147394,7 @@
       },
       {
         "date": "2026-08-10",
-        "net_minted": 35815700,
+        "net_minted": 35869800,
         "net_burned": 1261000
       }
     ],
@@ -147389,7 +147412,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 347,
+        "negative": 348,
         "event_ids_positive": [
           6399,
           6382,
@@ -147416,6 +147439,7 @@
           6029
         ],
         "event_ids_negative": [
+          6402,
           6401,
           6400,
           6398,
@@ -147767,7 +147791,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 312,
+        "negative": 313,
         "event_ids_positive": [
           6399,
           6382,
@@ -147786,6 +147810,7 @@
           6029
         ],
         "event_ids_negative": [
+          6402,
           6401,
           6400,
           6398,
@@ -148102,7 +148127,7 @@
       },
       "ILO": {
         "positive": 4,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           6268,
           6230,
@@ -148110,6 +148135,7 @@
           6124
         ],
         "event_ids_negative": [
+          6402,
           6397,
           6391,
           6378,
@@ -148240,7 +148266,7 @@
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 82,
+        "negative": 83,
         "event_ids_positive": [
           6382,
           6341,
@@ -148251,6 +148277,7 @@
           6202
         ],
         "event_ids_negative": [
+          6402,
           6400,
           6394,
           6391,
@@ -148386,7 +148413,7 @@
       },
       "PB": {
         "positive": 17,
-        "negative": 107,
+        "negative": 108,
         "event_ids_positive": [
           6399,
           6382,
@@ -148407,6 +148434,7 @@
           6049
         ],
         "event_ids_negative": [
+          6402,
           6396,
           6395,
           6394,
@@ -148521,11 +148549,11 @@
       "niche_pct": 63.8,
       "mainstream_pct": 36.2,
       "total_sources_used": 94,
-      "articles_processed": 380
+      "articles_processed": 381
     },
     "cache_hit_rate_7d": {
       "hits": 10,
-      "total_events": 380,
+      "total_events": 381,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -148708,10 +148736,11 @@
       },
       {
         "name": "Finance",
-        "count": 39,
+        "count": 40,
         "burn_count": 2,
-        "mint_count": 37,
+        "mint_count": 38,
         "event_ids": [
+          6402,
           6398,
           6393,
           6381,
@@ -148755,10 +148784,11 @@
       },
       {
         "name": "Construction",
-        "count": 29,
+        "count": 30,
         "burn_count": 1,
-        "mint_count": 28,
+        "mint_count": 29,
         "event_ids": [
+          6402,
           6385,
           6383,
           6360,
@@ -148950,9 +148980,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 357,
+      "total_mint": 358,
       "direct_action": {
-        "count": 328,
+        "count": 329,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -148965,9 +148995,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4479,
+      "total_mint": 4480,
       "direct_action": {
-        "count": 3681,
+        "count": 3682,
         "pct": 82.2
       },
       "editorial_alarm": {
@@ -148980,9 +149010,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 100,
+      "citizen": 101,
       "institutional": 280,
-      "citizen_ratio": 0.263,
+      "citizen_ratio": 0.265,
       "daily": [
         {
           "date": "2026-08-04",
@@ -149016,11 +149046,12 @@
         },
         {
           "date": "2026-08-10",
-          "citizen": 12,
+          "citizen": 13,
           "institutional": 33
         }
       ],
       "event_ids_citizen": [
+        6402,
         6399,
         6396,
         6395,
