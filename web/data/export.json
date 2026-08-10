@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-09T22:07:20.146564+00:00",
-  "total_events": 6356,
+  "generated_at": "2026-08-10T00:07:06.347955+00:00",
+  "total_events": 6357,
   "total_burned": 7785173115,
-  "total_minted": 8870500084,
+  "total_minted": 8870650084,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6357,
+      "event_title": "The alleged leader of the 'Irish mafia', Daniel Kinahan, indicted after his extradition from Dubai",
+      "event_url": "https://www.lemonde.fr/international/article/2026/08/10/le-chef-presume-de-la-mafia-irlandaise-daniel-kinahan-inculpe-apres-son-extradition-de-dubai_6742908_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.49,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action (indictment/extradition) punishes harm and reinforces rule of law, outweighing procedural risks. | The indictment of a high-profile criminal leader represents a significant step toward strengthening the rule of law and reducing organized crime, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the process carries risks of procedura",
+      "tx_hash": "Yc6Y7NhvUxMbY3vNRWz24QQ62n3zyYrAZwu5Dvgiip4Luy64FZaBLzq9gdG5py6m4g2aPKijYhP6sNgFfP7zPQz",
+      "created_at": "2026-08-10T00:06:58.731186+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ireland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Indictment and extradition of an alleged leader of a major criminal organization, disrupting its operations and signaling law enforcement action against organized crime.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential for prolonged legal proceedings with uncertain outcomes, delaying justice and allowing residual criminal networks to persist.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Possible human rights concerns during extradition or detention, including fair trial guarantees and conditions of provisional detention.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 38800
+    },
     {
       "id": 6356,
       "event_title": "We request the intervention of the Board and the Children's Ombudsman regarding a 'children's bull enclosure'",
@@ -146198,8 +146221,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 89,
-        "total_amount": 50355485
+        "count": 88,
+        "total_amount": 50291085
       },
       {
         "country": "Spain",
@@ -146268,12 +146291,12 @@
       {
         "region": "North America",
         "burn_ratio": 0.042,
-        "events": 96
+        "events": 95
       },
       {
         "region": "Europe",
         "burn_ratio": 0.037,
-        "events": 81
+        "events": 82
       }
     ],
     "top_regions_destructive": [
@@ -146290,12 +146313,12 @@
       {
         "region": "Europe",
         "mint_ratio": 0.963,
-        "events": 81
+        "events": 82
       },
       {
         "region": "North America",
         "mint_ratio": 0.958,
-        "events": 96
+        "events": 95
       },
       {
         "region": "Oceania",
@@ -146304,11 +146327,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-08-03",
-        "net_minted": 56014020,
-        "net_burned": 10147000
-      },
       {
         "date": "2026-08-04",
         "net_minted": 41444390,
@@ -146338,6 +146356,11 @@
         "date": "2026-08-09",
         "net_minted": 46996350,
         "net_burned": 10935500
+      },
+      {
+        "date": "2026-08-10",
+        "net_minted": 150000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -146354,7 +146377,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 22,
-        "negative": 360,
+        "negative": 359,
         "event_ids_positive": [
           6341,
           6339,
@@ -146380,6 +146403,7 @@
           5977
         ],
         "event_ids_negative": [
+          6357,
           6356,
           6355,
           6354,
@@ -146737,14 +146761,12 @@
           5970,
           5969,
           5968,
-          5967,
-          5966,
-          5965
+          5967
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 323,
+        "negative": 322,
         "event_ids_positive": [
           6341,
           6339,
@@ -146762,6 +146784,7 @@
           5977
         ],
         "event_ids_negative": [
+          6357,
           6356,
           6355,
           6354,
@@ -147082,9 +147105,7 @@
           5971,
           5970,
           5969,
-          5967,
-          5966,
-          5965
+          5967
         ]
       },
       "ILO": {
@@ -147140,7 +147161,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 78,
+        "negative": 77,
         "event_ids_positive": [
           6341,
           6318
@@ -147222,13 +147243,12 @@
           5972,
           5971,
           5970,
-          5969,
-          5965
+          5969
         ]
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 81,
+        "negative": 80,
         "event_ids_positive": [
           6341,
           6339,
@@ -147317,13 +147337,12 @@
           5985,
           5984,
           5974,
-          5971,
-          5965
+          5971
         ]
       },
       "Animal": {
         "positive": 8,
-        "negative": 42,
+        "negative": 41,
         "event_ids_positive": [
           6318,
           6317,
@@ -147375,13 +147394,12 @@
           5994,
           5990,
           5985,
-          5968,
-          5966
+          5968
         ]
       },
       "PB": {
         "positive": 15,
-        "negative": 118,
+        "negative": 117,
         "event_ids_positive": [
           6339,
           6322,
@@ -147516,8 +147534,7 @@
           5983,
           5978,
           5974,
-          5968,
-          5966
+          5968
         ]
       }
     },
@@ -147525,11 +147542,11 @@
       "niche_pct": 62.8,
       "mainstream_pct": 37.2,
       "total_sources_used": 94,
-      "articles_processed": 391
+      "articles_processed": 390
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 391,
+      "total_events": 390,
       "pct": 2.3
     },
     "active_partners_7d": [],
@@ -147615,16 +147632,6 @@
         ]
       },
       {
-        "name": "ICC",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          6251,
-          5965
-        ]
-      },
-      {
         "name": "EU Commission",
         "count": 2,
         "burn_count": 0,
@@ -147641,6 +147648,15 @@
         "mint_count": 1,
         "event_ids": [
           6311
+        ]
+      },
+      {
+        "name": "ICC",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          6251
         ]
       },
       {
@@ -147976,10 +147992,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 369,
+      "total_mint": 368,
       "direct_action": {
-        "count": 343,
-        "pct": 93.0
+        "count": 342,
+        "pct": 92.9
       },
       "editorial_alarm": {
         "count": 17,
@@ -147991,9 +148007,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4437,
+      "total_mint": 4438,
       "direct_action": {
-        "count": 3644,
+        "count": 3645,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -148007,14 +148023,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 101,
-      "institutional": 290,
-      "citizen_ratio": 0.258,
+      "institutional": 289,
+      "citizen_ratio": 0.259,
       "daily": [
-        {
-          "date": "2026-08-03",
-          "citizen": 14,
-          "institutional": 49
-        },
         {
           "date": "2026-08-04",
           "citizen": 13,
@@ -148044,6 +148055,11 @@
           "date": "2026-08-09",
           "citizen": 12,
           "institutional": 28
+        },
+        {
+          "date": "2026-08-10",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -148150,6 +148166,7 @@
         5968
       ],
       "event_ids_institutional": [
+        6357,
         6356,
         6354,
         6353,
@@ -148437,9 +148454,7 @@
         5971,
         5970,
         5969,
-        5967,
-        5966,
-        5965
+        5967
       ]
     }
   }
