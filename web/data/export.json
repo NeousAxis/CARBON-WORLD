@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-10T00:07:06.347955+00:00",
-  "total_events": 6357,
-  "total_burned": 7785173115,
-  "total_minted": 8870650084,
+  "generated_at": "2026-08-10T01:05:55.804489+00:00",
+  "total_events": 6359,
+  "total_burned": 7785584115,
+  "total_minted": 8871398084,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6359,
+      "event_title": "Netanyahu rejects Trump-backed Gaza peace plan",
+      "event_url": "https://www.dw.com/en/netanyahu-rejects-trump-backed-gaza-peace-plan/a-78298282?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -5.38,
+      "confidence": 8,
+      "justification": "Rejection of peace plan enables prolonged conflict, violating human rights and undermining SDGs at scale. | The rejection of a peace plan without alternative proposals entrenches conflict, directly violating core human rights and undermining multiple SDGs. While security concerns are legitimate, the absence of a viable path to de-escalation prioritizes military objectives over civilian protection, creating irreversible harm to vulnerable populations.",
+      "tx_hash": "5cjwphNznUVbxbxedwvCxEAmt3mwgeDkEWRDwbTuBPfNcWiBReGAwaufDeDgtTP2tM6WM3BNRy7GPobSh5Fh9Z1G",
+      "created_at": "2026-08-10T01:05:48.715793+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Rejection of a US-backed peace plan prolongs conflict in Gaza, undermining prospects for ceasefire, humanitarian access, and reconstruction.\", \"affected_sdgs\": [1, 2, 3, 4, 5, 6, 8, 10, 11, 16], \"violated_rights\": [\"UDHR Article 3 (Life, Liberty, Security)\", \"UDHR Article 25 (Standard of Living)\", \"CRC Article 6 (Right to Life)\", \"CRC Article 27 (Adequate Standard of Living)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Condition of full Hamas disarmament as prerequisite for withdrawal may escalate military operations, increasing civilian casualties and displacement.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 14 (Right to Asylum)\", \"UNDRIP Article 8 (Right not to be subjected to forced assimilation or destruction of culture)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 6358,
+      "event_title": "Kenya Scouts have set a new Guinness World Record after 4,124 people planted mangroves together in Mombasa, adding to a restoration drive that has already restored 91.6 million mangroves in the last three years",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1vk66an/kenya_scouts_have_set_a_new_guinness_world_record/",
+      "event_source": "Reddit r/UpliftingNews",
+      "decision": "BURN",
+      "amount_crbn": 411000,
+      "final_score": 6.49,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Large-scale community restoration yields strong climate and biodiversity gains, outweighing any minor uncertainties. | The community-driven mangrove restoration delivers clear climate, biodiversity and coastal protection benefits, aligning with multiple SDGs and planetary boundaries. While the event is localized, its contribution to a larger national effort amplifies its positi",
+      "tx_hash": "5XEpMQhLVEG4vo6U7hJXUp17isG476jfdtg1HnqgWN7LHYC8umqQBped457nm7KMA1RsN1bAXEmfhC8ibZMYwfHs",
+      "created_at": "2026-08-10T01:05:46.567807+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Kenya",
+      "region": "Africa",
+      "administration": "Kenya-UDA",
+      "positive_aspects_json": "[{\"description\": \"Mass mangrove planting by 4,124 volunteers in Mombasa, contributing to a national restoration of 91.6 million mangroves over three years\", \"affected_sdgs\": [13, 14, 15, 6, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 6357,
       "event_title": "The alleged leader of the 'Irish mafia', Daniel Kinahan, indicted after his extradition from Dubai",
@@ -146240,9 +146286,9 @@
         "total_amount": 4405800
       },
       {
-        "country": "Australia",
+        "country": "Israel",
         "count": 11,
-        "total_amount": 1145500
+        "total_amount": 4842140
       }
     ],
     "top_countries_burn": [
@@ -146267,9 +146313,9 @@
         "total_amount": 338400
       },
       {
-        "country": "Brazil",
+        "country": "Kenya",
         "count": 1,
-        "total_amount": 630000
+        "total_amount": 411000
       }
     ],
     "top_regions_sustainable": [
@@ -146284,6 +146330,11 @@
         "events": 35
       },
       {
+        "region": "Africa",
+        "burn_ratio": 0.053,
+        "events": 19
+      },
+      {
         "region": "Oceania",
         "burn_ratio": 0.045,
         "events": 22
@@ -146292,23 +146343,13 @@
         "region": "North America",
         "burn_ratio": 0.042,
         "events": 95
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.037,
-        "events": 82
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 22
-      },
-      {
-        "region": "Africa",
-        "mint_ratio": 1.0,
-        "events": 18
+        "events": 23
       },
       {
         "region": "Europe",
@@ -146324,6 +146365,11 @@
         "region": "Oceania",
         "mint_ratio": 0.955,
         "events": 22
+      },
+      {
+        "region": "Africa",
+        "mint_ratio": 0.947,
+        "events": 19
       }
     ],
     "supply_trend_7d": [
@@ -146359,26 +146405,27 @@
       },
       {
         "date": "2026-08-10",
-        "net_minted": 150000,
-        "net_burned": 0
+        "net_minted": 898000,
+        "net_burned": 411000
       }
     ],
     "event_of_the_day": {
-      "id": 6317,
-      "event_title": "Eagle and Condor: How Ecuador Translated Indigenous Cosmology Into Constitutional Law",
+      "id": 6358,
+      "event_title": "Kenya Scouts have set a new Guinness World Record after 4,124 people planted mangroves together in Mombasa, adding to a restoration drive that has already restored 91.6 million mangroves in the last three years",
       "decision": "BURN",
-      "amount_crbn": 1025000,
+      "amount_crbn": 411000,
       "final_score": 6.49,
       "confidence": 8,
-      "country": "Ecuador",
-      "region": "Latin America",
-      "created_at": "2026-08-09T01:06:21.223792+00:00"
+      "country": "Kenya",
+      "region": "Africa",
+      "created_at": "2026-08-10T01:05:46.567807+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 22,
-        "negative": 359,
+        "positive": 23,
+        "negative": 360,
         "event_ids_positive": [
+          6358,
           6341,
           6339,
           6322,
@@ -146403,6 +146450,7 @@
           5977
         ],
         "event_ids_negative": [
+          6359,
           6357,
           6356,
           6355,
@@ -146766,7 +146814,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 322,
+        "negative": 323,
         "event_ids_positive": [
           6341,
           6339,
@@ -146784,6 +146832,7 @@
           5977
         ],
         "event_ids_negative": [
+          6359,
           6357,
           6356,
           6355,
@@ -147161,12 +147210,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 77,
+        "negative": 78,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6359,
           6356,
           6352,
           6347,
@@ -147248,7 +147298,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           6341,
           6339,
@@ -147258,6 +147308,7 @@
           6202
         ],
         "event_ids_negative": [
+          6359,
           6355,
           6353,
           6347,
@@ -147398,9 +147449,10 @@
         ]
       },
       "PB": {
-        "positive": 15,
+        "positive": 16,
         "negative": 117,
         "event_ids_positive": [
+          6358,
           6339,
           6322,
           6318,
@@ -147542,11 +147594,11 @@
       "niche_pct": 62.8,
       "mainstream_pct": 37.2,
       "total_sources_used": 94,
-      "articles_processed": 390
+      "articles_processed": 392
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 390,
+      "total_events": 392,
       "pct": 2.3
     },
     "active_partners_7d": [],
@@ -147826,10 +147878,11 @@
       },
       {
         "name": "Defense",
-        "count": 28,
+        "count": 29,
         "burn_count": 0,
-        "mint_count": 28,
+        "mint_count": 29,
         "event_ids": [
+          6359,
           6355,
           6352,
           6342,
@@ -147962,14 +148015,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 22,
+      "total_burn": 23,
       "direct_action": {
-        "count": 19,
-        "pct": 86.4
+        "count": 20,
+        "pct": 87.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 13.6
+        "pct": 13.0
       },
       "untyped": {
         "count": 0,
@@ -147977,9 +148030,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1910,
+      "total_burn": 1911,
       "direct_action": {
-        "count": 1494,
+        "count": 1495,
         "pct": 78.2
       },
       "editorial_consciousness": {
@@ -147992,10 +148045,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 368,
+      "total_mint": 369,
       "direct_action": {
-        "count": 342,
-        "pct": 92.9
+        "count": 343,
+        "pct": 93.0
       },
       "editorial_alarm": {
         "count": 17,
@@ -148007,9 +148060,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4438,
+      "total_mint": 4439,
       "direct_action": {
-        "count": 3645,
+        "count": 3646,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -148022,9 +148075,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 101,
-      "institutional": 289,
-      "citizen_ratio": 0.259,
+      "citizen": 102,
+      "institutional": 290,
+      "citizen_ratio": 0.26,
       "daily": [
         {
           "date": "2026-08-04",
@@ -148058,11 +148111,12 @@
         },
         {
           "date": "2026-08-10",
-          "citizen": 0,
-          "institutional": 1
+          "citizen": 1,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        6358,
         6355,
         6347,
         6343,
@@ -148166,6 +148220,7 @@
         5968
       ],
       "event_ids_institutional": [
+        6359,
         6357,
         6356,
         6354,
