@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-10T03:05:32.028855+00:00",
-  "total_events": 6361,
+  "generated_at": "2026-08-10T03:34:49.129436+00:00",
+  "total_events": 6362,
   "total_burned": 7785584115,
-  "total_minted": 8871766884,
+  "total_minted": 8872307884,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 6362,
+      "event_title": "Syria says reached deal with Moscow on fate of Russian bases",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/syria-says-reached-deal-moscow-fate-russian-bases",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.56,
+      "confidence": 7,
+      "justification": "Deal entrenches foreign military control in Syria, undermining sovereignty and enabling long-term interference. | The deal between Syria and Russia stabilizes the legal status of foreign military bases, which may reduce short-term conflict but entrenches external control over Syrian territory. The negative aspects outweigh the positive, as the agreement undermines sovereignty, enables ongoing foreign interference, and risks perpetuating human rights violations under the guise of legitimacy.",
+      "tx_hash": "29MNUGeQiQvtaJGLcf8UbfvifRQ3z1p7HzFguk4rh5FZzGb6JiEsCry6SfZZKX3b659vTWwpefEdAQbz4YtHMarD",
+      "created_at": "2026-08-10T03:34:42.678307+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Syria",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Agreement between Syria and Russia formalizes the status of Russian military bases, potentially reducing ambiguity and conflict over foreign military presence in Syria.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deal legitimizes continued foreign military presence in Syria, undermining Syrian sovereignty and prolonging external interference in the country's affairs.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Perpetuates a framework where foreign powers (Russia) maintain military influence in Syria, potentially enabling future human rights violations or suppression of dissent.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 21\", \"CRC Article 38\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6361,
       "event_title": "Japan taps public-private funds for shipbuilding, eyeing next-generation vessels",
@@ -146382,8 +146405,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.045,
-        "events": 22
+        "burn_ratio": 0.05,
+        "events": 20
       },
       {
         "region": "North America",
@@ -146395,7 +146418,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 23
+        "events": 24
       },
       {
         "region": "Europe",
@@ -146409,8 +146432,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.955,
-        "events": 22
+        "mint_ratio": 0.95,
+        "events": 20
       },
       {
         "region": "Africa",
@@ -146451,7 +146474,7 @@
       },
       {
         "date": "2026-08-10",
-        "net_minted": 1266800,
+        "net_minted": 1807800,
         "net_burned": 411000
       }
     ],
@@ -146469,7 +146492,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 358,
+        "negative": 356,
         "event_ids_positive": [
           6358,
           6341,
@@ -146496,6 +146519,7 @@
           5977
         ],
         "event_ids_negative": [
+          6362,
           6361,
           6360,
           6359,
@@ -146850,15 +146874,12 @@
           5978,
           5976,
           5975,
-          5974,
-          5973,
-          5972,
-          5971
+          5974
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 321,
+        "negative": 319,
         "event_ids_positive": [
           6341,
           6339,
@@ -146876,6 +146897,7 @@
           5977
         ],
         "event_ids_negative": [
+          6362,
           6360,
           6359,
           6357,
@@ -147193,10 +147215,7 @@
           5978,
           5976,
           5975,
-          5974,
-          5973,
-          5972,
-          5971
+          5974
         ]
       },
       "ILO": {
@@ -147253,12 +147272,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 77,
+        "negative": 76,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6362,
           6360,
           6359,
           6356,
@@ -147333,9 +147353,7 @@
           5993,
           5989,
           5986,
-          5975,
-          5972,
-          5971
+          5975
         ]
       },
       "UNDRIP": {
@@ -147350,6 +147368,7 @@
           6202
         ],
         "event_ids_negative": [
+          6362,
           6359,
           6355,
           6353,
@@ -147429,8 +147448,7 @@
           6001,
           5985,
           5984,
-          5974,
-          5971
+          5974
         ]
       },
       "Animal": {
@@ -147635,11 +147653,11 @@
       "niche_pct": 62.8,
       "mainstream_pct": 37.2,
       "total_sources_used": 94,
-      "articles_processed": 391
+      "articles_processed": 389
     },
     "cache_hit_rate_7d": {
       "hits": 10,
-      "total_events": 391,
+      "total_events": 389,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -147830,9 +147848,9 @@
       },
       {
         "name": "Finance",
-        "count": 41,
+        "count": 40,
         "burn_count": 2,
-        "mint_count": 39,
+        "mint_count": 38,
         "event_ids": [
           6361,
           6337,
@@ -147873,8 +147891,7 @@
           6003,
           5981,
           5978,
-          5976,
-          5971
+          5976
         ]
       },
       {
@@ -147921,10 +147938,11 @@
       },
       {
         "name": "Defense",
-        "count": 28,
+        "count": 29,
         "burn_count": 0,
-        "mint_count": 28,
+        "mint_count": 29,
         "event_ids": [
+          6362,
           6359,
           6355,
           6352,
@@ -148087,10 +148105,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 368,
+      "total_mint": 366,
       "direct_action": {
-        "count": 341,
-        "pct": 92.7
+        "count": 339,
+        "pct": 92.6
       },
       "editorial_alarm": {
         "count": 17,
@@ -148102,9 +148120,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4442,
+      "total_mint": 4443,
       "direct_action": {
-        "count": 3648,
+        "count": 3649,
         "pct": 82.1
       },
       "editorial_alarm": {
@@ -148118,8 +148136,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 101,
-      "institutional": 290,
-      "citizen_ratio": 0.258,
+      "institutional": 288,
+      "citizen_ratio": 0.26,
       "daily": [
         {
           "date": "2026-08-04",
@@ -148154,7 +148172,7 @@
         {
           "date": "2026-08-10",
           "citizen": 1,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -148261,6 +148279,7 @@
         5977
       ],
       "event_ids_institutional": [
+        6362,
         6361,
         6360,
         6359,
@@ -148547,10 +148566,7 @@
         5978,
         5976,
         5975,
-        5974,
-        5973,
-        5972,
-        5971
+        5974
       ]
     }
   }
