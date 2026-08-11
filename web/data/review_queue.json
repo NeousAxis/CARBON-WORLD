@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T04:05:40.614781+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-08-11T04:34:54.205250+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 778,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-08-07T00:06:45.133686+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 781,
+      "event_title": "Telemarketing: In what cases are professionals allowed to call you starting this Tuesday?",
+      "event_url": "https://www.20minutes.fr/societe/4238535-20260810-demarchage-telephonique-cas-professionnels-autorises-appeler-mardi?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Enactment of a national law prohibiting unsolicited telemarketing calls without consumer consent, reducing harassment and protecting privacy.\", \"affected_sdgs\": [3, 8, 12, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Exceptions in the law may allow continued unsolicited calls in certain sectors, potentially undermining full privacy protections for consumers.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The law represents a significant step toward protecting consumer privacy and reducing harassment, aligning with SDG 16 and UDHR Article 12. However, the exceptions create a loophole that weakens the full realization of these protections, though the net impact remains positive.\", \"snapshot_score\": 5.0, \"trajectory_score\": 6.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Implementation effectiveness of exceptions assessed after 12 months\", \"Consumer complaints data reviewed to measure reduction in harassment\", \"Potential legislative amendments to close loopholes\"], \"revaluation_checkpoint\": \"2025-08-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Law fully enforced, exceptions minimized, leading to widespread reduction in unsolicited calls and improved consumer trust.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Law partially enforced, exceptions exploited by some sectors, resulting in moderate reduction in harassment but persistent loopholes.\", \"probability\": 0.5, \"score\": 4}, {\"name\": \"C\", \"description\": \"Law weakly enforced, exceptions widely abused, leading to minimal impact on consumer privacy and continued harassment.\", \"probability\": 0.2, \"score\": 1}], \"prospective_score\": 4.6, \"final_score\": 4.85, \"decision\": \"BURN\", \"amount_cbwd\": 300000, \"confidence\": 8, \"justification\": \"National law strengthens consumer privacy protections despite exceptions, justifying a BURN decision.\", \"event_scope\": \"national\", \"event_country\": \"France\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"New law prohibits telemarketing without explicit consumer consent, reducing harassment and protecting privacy.\", \"affected_sdgs\": [8, 12, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Strengthens consumer rights by requiring opt-in consent, aligning with responsible consumption and fair business practices.\", \"affected_sdgs\": [12, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Exceptions to the ban (e.g., existing contracts, non-profits) may create loopholes for continued unsolicited calls, undermining full protection.\", \"affected_sdgs\": [12, 16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Enforcement effectiveness unclear; past regulations on telemarketing have faced compliance gaps and weak penalties.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The law represents a net positive step for consumer privacy and dignity, directly addressing harassment and aligning with SDG 12 and UDHR Article 12. However, exceptions and potential enforcement gaps limit its full protective potential, creating ethical trade-offs between business flexibility and individual rights.\", \"snapshot_score\": 4.0, \"trajectory_score\": 3.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Enforcement data released after 12 months showing compliance rates\", \"Legal challenges to the exceptions filed by consumer rights groups\", \"Amendments to close loopholes proposed in parliament\"], \"revaluation_checkpoint\": \"2026-04-10\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Strict enforcement and public awareness campaigns lead to near-elimination of unsolicited calls, with exceptions tightly regulated.\", \"probability\": 0.3, \"score\": 7}, {\"name\": \"B\", \"description\": \"Moderate compliance with persistent loophole exploitation, reducing but not eliminating harassment; enforcement remains inconsistent.\", \"probability\": 0.5, \"score\": 2}, {\"name\": \"C\", \"description\": \"Weak enforcement and industry lobbying water down the law, rendering it ineffective; consumer trust erodes further.\", \"probability\": 0.2, \"score\": -3}], \"prospective_score\": 2.0, \"final_score\": 2.85, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 7, \"justification\": \"Law improves consumer rights but exceptions and enforcement risks create ethical costs outweighing immediate benefits.\", \"event_scope\": \"national\", \"event_country\": \"France\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.9, \"confidence\": 8, \"amount_cbwd\": 388000, \"justification\": \"The law chiefly bans unsolicited calls, safeguarding consumer privacy; exceptions are limited and do not outweigh the protective effect.\", \"disagreement\": true, \"reason\": \"Analyst A's view aligns with the action's primary intent to punish harmful telemarketing, making BURN the appropriate verdict.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 388000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-08-11T04:34:49.103995+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
