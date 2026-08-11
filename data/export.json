@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-11T18:07:31.063737+00:00",
-  "total_events": 6449,
+  "generated_at": "2026-08-11T19:05:49.379856+00:00",
+  "total_events": 6450,
   "total_burned": 7798260915,
-  "total_minted": 8927997884,
+  "total_minted": 8928673884,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6450,
+      "event_title": "Amid Measles Outbreak, Trump Signs Order Furthering Anti-Vaccine Movement",
+      "event_url": "https://truthout.org/articles/amid-measles-outbreak-trump-signs-order-furthering-anti-vaccine-movement/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.55,
+      "confidence": 8,
+      "justification": "Order harms public health and violates rights, leading to a negative net impact. | The executive order weakens essential health protections and violates children's right to health, outweighing any claimed increase in personal freedom. The net ethical balance is strongly negative.",
+      "tx_hash": "2nZKnatzvXRHNnhE9F4SoP3LtPDyfwnnWnJWVTXPbHpfwSyFQCbxHjBZQQqC9pvmZFRGyCHuwbFYTH3F63cbFUEZ",
+      "created_at": "2026-08-11T19:05:42.923726+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Order claims to protect individual liberty and parental rights over medical decisions\", \"affected_sdgs\": [10, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Order undermines public health by discouraging vaccination, increasing measles risk and endangering children\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6449,
       "event_title": "Limits on women's education in Afghanistan will likely further weaken school quality, UNESCO says",
@@ -148338,7 +148361,7 @@
       {
         "country": "United States",
         "count": 76,
-        "total_amount": 48708025
+        "total_amount": 48780025
       },
       {
         "country": "France",
@@ -148396,8 +148419,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.086,
-        "events": 35
+        "burn_ratio": 0.091,
+        "events": 33
       },
       {
         "region": "Africa",
@@ -148475,7 +148498,7 @@
       },
       {
         "date": "2026-08-11",
-        "net_minted": 19915600,
+        "net_minted": 20591600,
         "net_burned": 11826800
       }
     ],
@@ -148493,7 +148516,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 342,
+        "negative": 340,
         "event_ids_positive": [
           6447,
           6436,
@@ -148523,6 +148546,7 @@
           6094
         ],
         "event_ids_negative": [
+          6450,
           6449,
           6448,
           6446,
@@ -148861,15 +148885,12 @@
           6077,
           6076,
           6075,
-          6074,
-          6073,
-          6072,
-          6071
+          6074
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 309,
+        "negative": 307,
         "event_ids_positive": [
           6447,
           6424,
@@ -148890,6 +148911,7 @@
           6202
         ],
         "event_ids_negative": [
+          6450,
           6449,
           6448,
           6446,
@@ -149195,10 +149217,7 @@
           6077,
           6076,
           6075,
-          6074,
-          6073,
-          6072,
-          6071
+          6074
         ]
       },
       "ILO": {
@@ -149260,12 +149279,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6450,
           6449,
           6445,
           6443,
@@ -149345,7 +149365,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 80,
+        "negative": 79,
         "event_ids_positive": [
           6418,
           6382,
@@ -149435,8 +149455,7 @@
           6084,
           6082,
           6081,
-          6079,
-          6071
+          6079
         ]
       },
       "Animal": {
@@ -149491,7 +149510,7 @@
       },
       "PB": {
         "positive": 19,
-        "negative": 108,
+        "negative": 107,
         "event_ids_positive": [
           6447,
           6419,
@@ -149620,20 +149639,19 @@
           6082,
           6081,
           6079,
-          6076,
-          6071
+          6076
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 63.9,
-      "mainstream_pct": 36.1,
-      "total_sources_used": 97,
-      "articles_processed": 377
+      "niche_pct": 63.5,
+      "mainstream_pct": 36.5,
+      "total_sources_used": 96,
+      "articles_processed": 375
     },
     "cache_hit_rate_7d": {
       "hits": 9,
-      "total_events": 377,
+      "total_events": 375,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -149813,9 +149831,9 @@
       },
       {
         "name": "Finance",
-        "count": 38,
+        "count": 37,
         "burn_count": 1,
-        "mint_count": 37,
+        "mint_count": 36,
         "event_ids": [
           6416,
           6402,
@@ -149853,8 +149871,7 @@
           6091,
           6088,
           6083,
-          6077,
-          6072
+          6077
         ]
       },
       {
@@ -149983,26 +150000,6 @@
         ]
       },
       {
-        "name": "Water",
-        "count": 12,
-        "burn_count": 0,
-        "mint_count": 12,
-        "event_ids": [
-          6395,
-          6393,
-          6308,
-          6302,
-          6276,
-          6232,
-          6223,
-          6196,
-          6185,
-          6156,
-          6143,
-          6071
-        ]
-      },
-      {
         "name": "Transport",
         "count": 11,
         "burn_count": 0,
@@ -150019,6 +150016,25 @@
           6190,
           6188,
           6153
+        ]
+      },
+      {
+        "name": "Water",
+        "count": 11,
+        "burn_count": 0,
+        "mint_count": 11,
+        "event_ids": [
+          6395,
+          6393,
+          6308,
+          6302,
+          6276,
+          6232,
+          6223,
+          6196,
+          6185,
+          6156,
+          6143
         ]
       }
     ],
@@ -150053,10 +150069,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 351,
+      "total_mint": 349,
       "direct_action": {
-        "count": 321,
-        "pct": 91.5
+        "count": 319,
+        "pct": 91.4
       },
       "editorial_alarm": {
         "count": 21,
@@ -150068,9 +150084,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4520,
+      "total_mint": 4521,
       "direct_action": {
-        "count": 3718,
+        "count": 3719,
         "pct": 82.3
       },
       "editorial_alarm": {
@@ -150084,8 +150100,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 104,
-      "institutional": 273,
-      "citizen_ratio": 0.276,
+      "institutional": 271,
+      "citizen_ratio": 0.277,
       "daily": [
         {
           "date": "2026-08-05",
@@ -150119,11 +150135,12 @@
         },
         {
           "date": "2026-08-11",
-          "citizen": 13,
+          "citizen": 14,
           "institutional": 30
         }
       ],
       "event_ids_citizen": [
+        6450,
         6448,
         6447,
         6446,
@@ -150226,8 +150243,7 @@
         6086,
         6082,
         6081,
-        6079,
-        6071
+        6079
       ],
       "event_ids_institutional": [
         6449,
@@ -150500,9 +150516,7 @@
         6077,
         6076,
         6075,
-        6074,
-        6073,
-        6072
+        6074
       ]
     }
   }
