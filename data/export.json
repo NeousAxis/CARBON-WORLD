@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-12T08:37:19.313369+00:00",
-  "total_events": 6470,
+  "generated_at": "2026-08-12T09:08:22.597156+00:00",
+  "total_events": 6471,
   "total_burned": 7799008915,
-  "total_minted": 8949228199,
+  "total_minted": 8949282299,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6471,
+      "event_title": "North Korea tests missile ahead of US-South Korea drills",
+      "event_url": "https://www.dw.com/en/north-korea-tests-missile-ahead-of-us-south-korea-drills/a-78329244?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -3.15,
+      "confidence": 7,
+      "justification": "The missile test worsens security and environmental conditions, meriting a negative (MINT) decision. | The missile test represents a clear negative action, increasing conflict risk and environmental harm, outweighing any indirect benefits.",
+      "tx_hash": "2iyYFvuZTVY49LDy6BjLQUij5eH2HyGGZeL9PTQrTd7EpTodQ8wj5YxMfyMTVCZKZHBP6baq7mgxzHZJiSRHVs99",
+      "created_at": "2026-08-12T09:08:16.572502+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "North Korea",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"North Korea's ballistic missile test heightens regional security tensions and threatens the right to life.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The missile launch adds to atmospheric pollution, contributing to climate change and breaching planetary boundaries.\", \"affected_sdgs\": [13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6470,
       "event_title": "50+ Baltimoreans Join Advocates to Launch ‘Make Polluters Pay’ Campaign",
@@ -148874,8 +148897,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.152,
-        "events": 33
+        "burn_ratio": 0.147,
+        "events": 34
       },
       {
         "region": "Latin America",
@@ -148958,7 +148981,7 @@
       },
       {
         "date": "2026-08-12",
-        "net_minted": 17317235,
+        "net_minted": 17371335,
         "net_burned": 748000
       }
     ],
@@ -148976,7 +148999,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 336,
+        "negative": 337,
         "event_ids_positive": [
           6462,
           6447,
@@ -149006,6 +149029,7 @@
           6124
         ],
         "event_ids_negative": [
+          6471,
           6470,
           6469,
           6468,
@@ -149346,7 +149370,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 306,
+        "negative": 307,
         "event_ids_positive": [
           6462,
           6447,
@@ -149368,6 +149392,7 @@
           6202
         ],
         "event_ids_negative": [
+          6471,
           6470,
           6469,
           6468,
@@ -149958,7 +149983,7 @@
       },
       "PB": {
         "positive": 18,
-        "negative": 103,
+        "negative": 104,
         "event_ids_positive": [
           6447,
           6419,
@@ -149980,6 +150005,7 @@
           6124
         ],
         "event_ids_negative": [
+          6471,
           6470,
           6465,
           6460,
@@ -150090,11 +150116,11 @@
       "niche_pct": 64.9,
       "mainstream_pct": 35.1,
       "total_sources_used": 97,
-      "articles_processed": 373
+      "articles_processed": 374
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 373,
+      "total_events": 374,
       "pct": 2.9
     },
     "active_partners_7d": [],
@@ -150354,10 +150380,11 @@
       },
       {
         "name": "Defense",
-        "count": 25,
+        "count": 26,
         "burn_count": 0,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          6471,
           6465,
           6464,
           6456,
@@ -150509,14 +150536,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 347,
+      "total_mint": 348,
       "direct_action": {
-        "count": 315,
+        "count": 316,
         "pct": 90.8
       },
       "editorial_alarm": {
         "count": 21,
-        "pct": 6.1
+        "pct": 6.0
       },
       "untyped": {
         "count": 11,
@@ -150524,9 +150551,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4542,
+      "total_mint": 4543,
       "direct_action": {
-        "count": 3738,
+        "count": 3739,
         "pct": 82.3
       },
       "editorial_alarm": {
@@ -150540,7 +150567,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 102,
-      "institutional": 271,
+      "institutional": 272,
       "citizen_ratio": 0.273,
       "daily": [
         {
@@ -150576,7 +150603,7 @@
         {
           "date": "2026-08-12",
           "citizen": 4,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -150684,6 +150711,7 @@
         6102
       ],
       "event_ids_institutional": [
+        6471,
         6469,
         6468,
         6465,
