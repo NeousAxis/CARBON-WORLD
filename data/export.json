@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-12T21:36:39.340011+00:00",
-  "total_events": 6516,
+  "generated_at": "2026-08-12T22:07:26.352134+00:00",
+  "total_events": 6517,
   "total_burned": 7805860580,
-  "total_minted": 8973522699,
+  "total_minted": 8974126699,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6517,
+      "event_title": "US sets up task force to combat birth tourism, revokes more than 600 visas",
+      "event_url": "https://www.scmp.com/news/us/diplomacy/article/3363833/us-sets-task-force-combat-birth-tourism-revokes-more-600-visas?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.71,
+      "confidence": 8,
+      "justification": "Policy enables discriminatory enforcement and violates rights to non-discrimination and family unity, outweighing fraud prevention benefits. | While the task force aims to address visa fraud, the revocation of 600+ visas and targeting of birth tourism raises significant ethical concerns. The policy disproportionately impacts pregnant women and children, violating non-discrimination and family unity rights. The lack of safeguards against arbitrary enforcement further undermines rule of law, outwe",
+      "tx_hash": "3m75FQHCK25BepXku5o27KVSrVb9hLUD3atNroG5WoRCex9tpzovFPNBvUiLjaZAekYnLuKBnxbDPTfipHhS1yYD",
+      "created_at": "2026-08-12T22:07:19.653106+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Establishment of a task force to enforce existing visa regulations and combat fraudulent visa use, potentially reducing exploitation of immigration systems.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Revocation of over 600 visas targeting birth tourism, which disproportionately affects pregnant women and their children, potentially violating rights to non-discrimination and family unity.\", \"affected_sdgs\": [5, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 15\", \"CRC Article 7\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Policy may deter legitimate travel and medical care for pregnant women, undermining access to healthcare (SDG 3) and increasing stress on vulnerable populations.\", \"affected_sdgs\": [3, 5, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Enforcement actions without clear due process protections risk arbitrary revocations, violating principles of fairness and rule of law (SDG 16).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6516,
       "event_title": "Burnham to consider ban on disposable barbecues as wildfires rage in UK",
@@ -149878,8 +149901,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 80,
-        "total_amount": 52608660
+        "count": 81,
+        "total_amount": 53212660
       },
       {
         "country": "France",
@@ -149905,8 +149928,8 @@
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 6,
-        "total_amount": 2003300
+        "count": 5,
+        "total_amount": 1203300
       },
       {
         "country": "Indonesia",
@@ -149947,7 +149970,7 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.078,
+        "burn_ratio": 0.067,
         "events": 90
       },
       {
@@ -149974,7 +149997,7 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.922,
+        "mint_ratio": 0.933,
         "events": 90
       },
       {
@@ -150016,7 +150039,7 @@
       },
       {
         "date": "2026-08-12",
-        "net_minted": 41611735,
+        "net_minted": 42215735,
         "net_burned": 4349665
       }
     ],
@@ -150033,8 +150056,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 29,
-        "negative": 352,
+        "positive": 28,
+        "negative": 353,
         "event_ids_positive": [
           6503,
           6496,
@@ -150063,10 +150086,10 @@
           6230,
           6215,
           6212,
-          6202,
-          6124
+          6202
         ],
         "event_ids_negative": [
+          6517,
           6516,
           6515,
           6514,
@@ -150423,7 +150446,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 318,
+        "negative": 319,
         "event_ids_positive": [
           6503,
           6496,
@@ -150447,6 +150470,7 @@
           6202
         ],
         "event_ids_negative": [
+          6517,
           6515,
           6514,
           6513,
@@ -150768,13 +150792,12 @@
         ]
       },
       "ILO": {
-        "positive": 4,
+        "positive": 3,
         "negative": 45,
         "event_ids_positive": [
           6268,
           6230,
-          6202,
-          6124
+          6202
         ],
         "event_ids_negative": [
           6512,
@@ -150826,12 +150849,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 86,
+        "negative": 87,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6517,
           6514,
           6513,
           6512,
@@ -151015,7 +151039,7 @@
         ]
       },
       "Animal": {
-        "positive": 7,
+        "positive": 6,
         "negative": 38,
         "event_ids_positive": [
           6399,
@@ -151023,8 +151047,7 @@
           6318,
           6317,
           6291,
-          6230,
-          6124
+          6230
         ],
         "event_ids_negative": [
           6502,
@@ -151068,7 +151091,7 @@
         ]
       },
       "PB": {
-        "positive": 21,
+        "positive": 20,
         "negative": 108,
         "event_ids_positive": [
           6503,
@@ -151090,8 +151113,7 @@
           6256,
           6254,
           6230,
-          6215,
-          6124
+          6215
         ],
         "event_ids_negative": [
           6516,
@@ -151335,8 +151357,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 46,
-        "burn_count": 4,
+        "count": 45,
+        "burn_count": 3,
         "mint_count": 42,
         "event_ids": [
           6508,
@@ -151383,8 +151405,7 @@
           6143,
           6141,
           6133,
-          6130,
-          6124
+          6130
         ]
       },
       {
@@ -151600,14 +151621,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 29,
+      "total_burn": 28,
       "direct_action": {
-        "count": 25,
-        "pct": 86.2
+        "count": 24,
+        "pct": 85.7
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 13.8
+        "pct": 14.3
       },
       "untyped": {
         "count": 0,
@@ -151630,9 +151651,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 363,
+      "total_mint": 364,
       "direct_action": {
-        "count": 331,
+        "count": 332,
         "pct": 91.2
       },
       "editorial_alarm": {
@@ -151645,9 +151666,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4584,
+      "total_mint": 4585,
       "direct_action": {
-        "count": 3778,
+        "count": 3779,
         "pct": 82.4
       },
       "editorial_alarm": {
@@ -151697,7 +151718,7 @@
         {
           "date": "2026-08-12",
           "citizen": 15,
-          "institutional": 42
+          "institutional": 43
         }
       ],
       "event_ids_citizen": [
@@ -151809,6 +151830,7 @@
         6127
       ],
       "event_ids_institutional": [
+        6517,
         6516,
         6514,
         6512,
@@ -152093,8 +152115,7 @@
         6129,
         6128,
         6126,
-        6125,
-        6124
+        6125
       ]
     }
   }
