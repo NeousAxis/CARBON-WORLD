@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-12T17:08:00.576703+00:00",
-  "total_events": 6502,
-  "total_burned": 7802588915,
-  "total_minted": 8967629699,
+  "generated_at": "2026-08-12T18:05:37.949770+00:00",
+  "total_events": 6504,
+  "total_burned": 7802610580,
+  "total_minted": 8968377699,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6504,
+      "event_title": "Pentagon Admits US Killed 150+ Yemeni Civilians in Airstrikes in 2025",
+      "event_url": "https://truthout.org/articles/pentagon-admits-us-killed-150-yemeni-civilians-in-airstrikes-in-2025/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -4.11,
+      "confidence": 8,
+      "justification": "The admission of civilian harm is outweighed by the severe violations of human rights and destabilization caused by the airstrikes. | The admission of civilian casualties by the Pentagon represents a minor step toward accountability (SDG 16, UDHR), but the underlying act of airstrikes causing mass civilian harm constitutes a severe violation of human rights and undermines multiple SDGs. The negative impacts far outweigh the positive transparency aspect, as the loss of life and destabilization of",
+      "tx_hash": "5x2RRoyo5sWTTCAqdzn64nZLWXexjLvDmNT7gJARWUbuQP7WBWDWfvwYT7ibit6CLRgnrv8TDnnDdiKREYeRZU2i",
+      "created_at": "2026-08-12T18:05:31.083591+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Pentagon conducts internal review and publicly admits civilian casualties from airstrikes, enabling accountability and transparency.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US airstrikes result in the deaths of over 150 Yemeni civilians and injuries to nearly 250 others, violating the right to life and physical integrity.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 6\", \"ILO Convention on Forced Labour (indirect displacement impact)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}, {\"description\": \"Military action in Yemen perpetuates conflict, undermining peace, security, and sustainable development in the region.\", \"affected_sdgs\": [1, 2, 3, 4, 5, 6, 16], \"violated_rights\": [\"UDHR Article 28\", \"UNDRIP (indirect impact on indigenous communities)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 6503,
+      "event_title": "How one German city plans to challenge climate extremes",
+      "event_url": "https://www.dw.com/en/how-one-german-city-plans-to-challenge-climate-extremes/a-78278373?maca=en-rss-en-environment-4553-rdf",
+      "event_source": "Deutsche Welle Environment",
+      "decision": "BURN",
+      "amount_crbn": 21665,
+      "final_score": 6.19,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Strong local adaptation action with high net positive impact earns a BURN decision. | The city's proactive adaptation measures substantially advance climate resilience and public health, outweighing modest environmental and social trade‑offs. Overall the action is ethically positive.",
+      "tx_hash": "4vNzxJw6MNsbWKh6K7SntAe84E56XYL3wSn8kLNTSc5Mem9DTvm77onm9ei7DNgHteHts2dqqfVJnVnDCrqVp8KZ",
+      "created_at": "2026-08-12T18:05:28.941352+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Kiel municipal government adopts a climate‑adaptation plan featuring green roofs, urban forests and flood‑resilient infrastructure.\", \"affected_sdgs\": [13, 11, 6, 3], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"City launches a public heat‑wave early‑warning system and community cooling centers to protect vulnerable residents.\", \"affected_sdgs\": [3, 13, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Construction of new flood barriers and infrastructure may disturb local habitats and generate CO₂ emissions.\", \"affected_sdgs\": [15, 13, 12], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential displacement of residents from zones earmarked for redevelopment could affect housing security.\", \"affected_sdgs\": [1, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 541000
+    },
     {
       "id": 6502,
       "event_title": "The Pacific Ocean Fed Her Community for Generations. Now It’s Under Attack by the Trump Administration",
@@ -149556,8 +149602,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 81,
-        "total_amount": 58234660
+        "count": 82,
+        "total_amount": 58982660
       },
       {
         "country": "France",
@@ -149570,14 +149616,14 @@
         "total_amount": 5315600
       },
       {
-        "country": "Switzerland",
-        "count": 11,
-        "total_amount": 3074400
-      },
-      {
         "country": "Spain",
         "count": 11,
         "total_amount": 1286700
+      },
+      {
+        "country": "Switzerland",
+        "count": 10,
+        "total_amount": 2470400
       }
     ],
     "top_countries_burn": [
@@ -149625,12 +149671,12 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.077,
-        "events": 91
+        "burn_ratio": 0.076,
+        "events": 92
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.047,
+        "burn_ratio": 0.059,
         "events": 85
       }
     ],
@@ -149647,13 +149693,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.953,
+        "mint_ratio": 0.941,
         "events": 85
       },
       {
         "region": "North America",
-        "mint_ratio": 0.923,
-        "events": 91
+        "mint_ratio": 0.924,
+        "events": 92
       },
       {
         "region": "Africa",
@@ -149694,8 +149740,8 @@
       },
       {
         "date": "2026-08-12",
-        "net_minted": 35718735,
-        "net_burned": 4328000
+        "net_minted": 36466735,
+        "net_burned": 4349665
       }
     ],
     "event_of_the_day": {
@@ -149711,9 +149757,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 28,
+        "positive": 29,
         "negative": 349,
         "event_ids_positive": [
+          6503,
           6496,
           6480,
           6462,
@@ -149744,6 +149791,7 @@
           6124
         ],
         "event_ids_negative": [
+          6504,
           6502,
           6501,
           6500,
@@ -150091,14 +150139,14 @@
           6119,
           6118,
           6117,
-          6116,
-          6115
+          6116
         ]
       },
       "UDHR": {
-        "positive": 19,
+        "positive": 20,
         "negative": 316,
         "event_ids_positive": [
+          6503,
           6496,
           6462,
           6447,
@@ -150120,6 +150168,7 @@
           6202
         ],
         "event_ids_negative": [
+          6504,
           6502,
           6501,
           6500,
@@ -150434,13 +150483,12 @@
           6119,
           6118,
           6117,
-          6116,
-          6115
+          6116
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           6268,
           6230,
@@ -150448,6 +150496,7 @@
           6124
         ],
         "event_ids_negative": [
+          6504,
           6484,
           6461,
           6439,
@@ -150495,12 +150544,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6504,
           6501,
           6489,
           6485,
@@ -150597,6 +150647,7 @@
           6202
         ],
         "event_ids_negative": [
+          6504,
           6502,
           6500,
           6497,
@@ -150672,8 +150723,7 @@
           6139,
           6136,
           6130,
-          6119,
-          6115
+          6119
         ]
       },
       "Animal": {
@@ -150730,9 +150780,10 @@
         ]
       },
       "PB": {
-        "positive": 20,
+        "positive": 21,
         "negative": 106,
         "event_ids_positive": [
+          6503,
           6496,
           6480,
           6447,
@@ -150865,14 +150916,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 63.3,
-      "mainstream_pct": 36.7,
-      "total_sources_used": 98,
-      "articles_processed": 388
+      "niche_pct": 63.6,
+      "mainstream_pct": 36.4,
+      "total_sources_used": 99,
+      "articles_processed": 389
     },
     "cache_hit_rate_7d": {
       "hits": 11,
-      "total_events": 388,
+      "total_events": 389,
       "pct": 2.8
     },
     "active_partners_7d": [],
@@ -151258,14 +151309,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 28,
+      "total_burn": 29,
       "direct_action": {
-        "count": 24,
-        "pct": 85.7
+        "count": 25,
+        "pct": 86.2
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 14.3
+        "pct": 13.8
       },
       "untyped": {
         "count": 0,
@@ -151273,9 +151324,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1922,
+      "total_burn": 1923,
       "direct_action": {
-        "count": 1504,
+        "count": 1505,
         "pct": 78.3
       },
       "editorial_consciousness": {
@@ -151303,9 +151354,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4572,
+      "total_mint": 4573,
       "direct_action": {
-        "count": 3766,
+        "count": 3767,
         "pct": 82.4
       },
       "editorial_alarm": {
@@ -151319,8 +151370,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 104,
-      "institutional": 284,
-      "citizen_ratio": 0.268,
+      "institutional": 285,
+      "citizen_ratio": 0.267,
       "daily": [
         {
           "date": "2026-08-06",
@@ -151355,7 +151406,7 @@
         {
           "date": "2026-08-12",
           "citizen": 12,
-          "institutional": 32
+          "institutional": 34
         }
       ],
       "event_ids_citizen": [
@@ -151465,6 +151516,8 @@
         6119
       ],
       "event_ids_institutional": [
+        6504,
+        6503,
         6501,
         6499,
         6498,
@@ -151747,8 +151800,7 @@
         6120,
         6118,
         6117,
-        6116,
-        6115
+        6116
       ]
     }
   }
