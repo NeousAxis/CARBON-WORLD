@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-13T10:07:22.555559+00:00",
-  "total_events": 6551,
+  "generated_at": "2026-08-13T10:36:17.227597+00:00",
+  "total_events": 6552,
   "total_burned": 7806536580,
-  "total_minted": 9015473159,
+  "total_minted": 9015973159,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6552,
+      "event_title": "Human Rights Watch urges Taliban to release detained UN, NGO staff",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/human-rights-watch-urges-taliban-release-detained-un-ngo-staff",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -5.67,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Taliban detentions violate core rights and undermine humanitarian work, outweighing HRW's advocacy. | The Taliban's detention of UN and NGO staff represents a severe violation of human rights, freedom of association, and humanitarian principles, directly undermining SDGs 16 and 17. HRW's public advocacy is a positive but insufficient countermeasure, as it does not reverse the i",
+      "tx_hash": "3JN1o1vAH3vYbd3U92rphX9PV1F1nW7ngULb4JoTfcYrPKfcydXZpDUGNi2jkejrt5ktUXjfUF1Ryb22XHTep6VL",
+      "created_at": "2026-08-13T10:36:10.198055+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Afghanistan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Human Rights Watch (HRW) publicly urges the Taliban to release detained UN and NGO staff, reinforcing international advocacy for human rights and legal protections.\", \"affected_sdgs\": [16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The action highlights the detention of staff working on women's and children's rights, amplifying visibility for vulnerable groups and pressuring for accountability.\", \"affected_sdgs\": [5, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The Taliban's detention of UN and NGO staff violates fundamental rights to freedom, association, and due process, undermining humanitarian work and legal protections.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 20\", \"ILO Freedom of Association\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"The detentions target staff working on women's and children's rights, directly harming advocacy for gender equality and child protection.\", \"affected_sdgs\": [5, 10], \"violated_rights\": [\"UDHR Article 2\", \"CRC Article 2\", \"UNDRIP Article 22\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6551,
       "event_title": "The Government regulated the possession of silencers and night sights for weapons: who can register them and what are the requirements",
@@ -150737,8 +150760,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.152,
-        "events": 33
+        "burn_ratio": 0.147,
+        "events": 34
       },
       {
         "region": "Africa",
@@ -150821,7 +150844,7 @@
       },
       {
         "date": "2026-08-13",
-        "net_minted": 37541760,
+        "net_minted": 38041760,
         "net_burned": 676000
       }
     ],
@@ -150839,7 +150862,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 29,
-        "negative": 355,
+        "negative": 356,
         "event_ids_positive": [
           6545,
           6503,
@@ -150872,6 +150895,7 @@
           6202
         ],
         "event_ids_negative": [
+          6552,
           6551,
           6547,
           6546,
@@ -151231,7 +151255,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 321,
+        "negative": 322,
         "event_ids_positive": [
           6545,
           6503,
@@ -151256,6 +151280,7 @@
           6202
         ],
         "event_ids_negative": [
+          6552,
           6551,
           6546,
           6544,
@@ -151581,7 +151606,7 @@
       },
       "ILO": {
         "positive": 4,
-        "negative": 45,
+        "negative": 46,
         "event_ids_positive": [
           6545,
           6268,
@@ -151589,6 +151614,7 @@
           6202
         ],
         "event_ids_negative": [
+          6552,
           6547,
           6543,
           6539,
@@ -151638,12 +151664,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 93,
+        "negative": 94,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6552,
           6546,
           6543,
           6541,
@@ -151741,7 +151768,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 83,
+        "negative": 84,
         "event_ids_positive": [
           6418,
           6382,
@@ -151753,6 +151780,7 @@
           6202
         ],
         "event_ids_negative": [
+          6552,
           6544,
           6541,
           6540,
@@ -152030,11 +152058,11 @@
       "niche_pct": 62.2,
       "mainstream_pct": 37.8,
       "total_sources_used": 98,
-      "articles_processed": 396
+      "articles_processed": 397
     },
     "cache_hit_rate_7d": {
       "hits": 12,
-      "total_events": 396,
+      "total_events": 397,
       "pct": 3.0
     },
     "active_partners_7d": [],
@@ -152093,10 +152121,11 @@
       },
       {
         "name": "UN",
-        "count": 4,
+        "count": 5,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          6552,
           6510,
           6347,
           6192,
@@ -152460,9 +152489,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 366,
+      "total_mint": 367,
       "direct_action": {
-        "count": 333,
+        "count": 334,
         "pct": 91.0
       },
       "editorial_alarm": {
@@ -152475,9 +152504,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4615,
+      "total_mint": 4616,
       "direct_action": {
-        "count": 3806,
+        "count": 3807,
         "pct": 82.5
       },
       "editorial_alarm": {
@@ -152490,9 +152519,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 105,
+      "citizen": 106,
       "institutional": 291,
-      "citizen_ratio": 0.265,
+      "citizen_ratio": 0.267,
       "daily": [
         {
           "date": "2026-08-07",
@@ -152526,11 +152555,12 @@
         },
         {
           "date": "2026-08-13",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 21
         }
       ],
       "event_ids_citizen": [
+        6552,
         6541,
         6538,
         6537,
