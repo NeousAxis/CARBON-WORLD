@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-13T05:06:22.243305+00:00",
-  "total_events": 6535,
+  "generated_at": "2026-08-13T06:04:21.504695+00:00",
+  "total_events": 6536,
   "total_burned": 7805860580,
-  "total_minted": 8992243759,
+  "total_minted": 8992784759,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6536,
+      "event_title": "Forest Service 'Restructuring': Bad News for Public Lands",
+      "event_url": "https://steadystate.org/forest-service-restructuring-bad-news-for-public-lands/",
+      "event_source": "Center for Steady State Economy",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -3.4,
+      "confidence": 7,
+      "justification": "Restructuring threatens public land protection, outweighing any efficiency gains. | While the restructuring might bring modest efficiency gains, it largely weakens safeguards for public lands, undermining climate action, biodiversity, and cultural rights. The net ethical balance is negative.",
+      "tx_hash": "kahj17Fjprubr8vGEgVdpeWKX6ZpGnHPytEXBvwV25zBLab5bA762fYNJh2gkMeLau68geJ6n4Cw4nzCe68NkiW",
+      "created_at": "2026-08-13T06:04:15.107738+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential for streamlined agency operations could improve fire response and land management efficiency.\", \"affected_sdgs\": [13], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Restructuring of the U.S. Forest Service reduces protections for public lands, risking increased exploitation and habitat loss.\", \"affected_sdgs\": [11, 13, 15], \"violated_rights\": [\"UNDRIP Article 12\", \"UDHR Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6535,
       "event_title": "US immigration agency plans to buy electric shock gloves, raising alarm among rights advocates",
@@ -150316,7 +150339,7 @@
       {
         "country": "United States",
         "count": 84,
-        "total_amount": 59447260
+        "total_amount": 59456260
       },
       {
         "country": "Brazil",
@@ -150453,7 +150476,7 @@
       },
       {
         "date": "2026-08-13",
-        "net_minted": 15812360,
+        "net_minted": 16353360,
         "net_burned": 0
       }
     ],
@@ -150471,7 +150494,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 28,
-        "negative": 356,
+        "negative": 355,
         "event_ids_positive": [
           6503,
           6496,
@@ -150503,6 +150526,7 @@
           6202
         ],
         "event_ids_negative": [
+          6536,
           6535,
           6534,
           6533,
@@ -150856,14 +150880,12 @@
           6145,
           6144,
           6143,
-          6142,
-          6141,
-          6140
+          6142
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 321,
+        "negative": 320,
         "event_ids_positive": [
           6503,
           6496,
@@ -150887,6 +150909,7 @@
           6202
         ],
         "event_ids_negative": [
+          6536,
           6535,
           6534,
           6533,
@@ -151205,9 +151228,7 @@
           6146,
           6145,
           6143,
-          6142,
-          6141,
-          6140
+          6142
         ]
       },
       "ILO": {
@@ -151368,7 +151389,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           6418,
           6382,
@@ -151380,6 +151401,7 @@
           6202
         ],
         "event_ids_negative": [
+          6536,
           6534,
           6533,
           6529,
@@ -151650,14 +151672,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 62.6,
-      "mainstream_pct": 37.4,
-      "total_sources_used": 99,
-      "articles_processed": 396
+      "niche_pct": 63.0,
+      "mainstream_pct": 37.0,
+      "total_sources_used": 100,
+      "articles_processed": 395
     },
     "cache_hit_rate_7d": {
       "hits": 12,
-      "total_events": 396,
+      "total_events": 395,
       "pct": 3.0
     },
     "active_partners_7d": [],
@@ -151778,9 +151800,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 44,
+        "count": 43,
         "burn_count": 3,
-        "mint_count": 41,
+        "mint_count": 40,
         "event_ids": [
           6524,
           6508,
@@ -151824,15 +151846,14 @@
           6166,
           6162,
           6151,
-          6143,
-          6141
+          6143
         ]
       },
       {
         "name": "Finance",
-        "count": 38,
+        "count": 37,
         "burn_count": 1,
-        "mint_count": 37,
+        "mint_count": 36,
         "event_ids": [
           6532,
           6528,
@@ -151870,8 +151891,7 @@
           6175,
           6163,
           6161,
-          6154,
-          6140
+          6154
         ]
       },
       {
@@ -152078,9 +152098,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 367,
+      "total_mint": 366,
       "direct_action": {
-        "count": 334,
+        "count": 333,
         "pct": 91.0
       },
       "editorial_alarm": {
@@ -152093,10 +152113,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4603,
+      "total_mint": 4604,
       "direct_action": {
-        "count": 3795,
-        "pct": 82.4
+        "count": 3796,
+        "pct": 82.5
       },
       "editorial_alarm": {
         "count": 275,
@@ -152109,8 +152129,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 105,
-      "institutional": 291,
-      "citizen_ratio": 0.265,
+      "institutional": 290,
+      "citizen_ratio": 0.266,
       "daily": [
         {
           "date": "2026-08-07",
@@ -152145,7 +152165,7 @@
         {
           "date": "2026-08-13",
           "citizen": 2,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -152256,6 +152276,7 @@
         6148
       ],
       "event_ids_institutional": [
+        6536,
         6535,
         6533,
         6532,
@@ -152544,9 +152565,7 @@
         6145,
         6144,
         6143,
-        6142,
-        6141,
-        6140
+        6142
       ]
     }
   }
