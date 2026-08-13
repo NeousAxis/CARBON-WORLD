@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-13T01:07:24.564512+00:00",
-  "total_events": 6528,
+  "generated_at": "2026-08-13T01:35:06.267316+00:00",
+  "total_events": 6529,
   "total_burned": 7805860580,
-  "total_minted": 8985133399,
+  "total_minted": 8985633399,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6529,
+      "event_title": "Indigenous groups renew legal challenge to Indonesian conservation law",
+      "event_url": "https://news.mongabay.com/2026/08/indigenous-groups-renew-legal-challenge-to-indonesian-conservation-law/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.15,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The legal challenge is positive but the law's threat to indigenous rights outweighs it, warranting MINT. | The legal challenge represents a critical assertion of indigenous rights and a check on state overreach in conservation policy, aligning with UNDRIP and SDGs 10, 15, and 16. However, the underlying law poses a severe threat to indigenous land rights and self-determination,",
+      "tx_hash": "47PwwdcHU8BmpbE2vHnEhUvni8LyyvVLwBpt4gc9pjCwPscBhmR1QYY3Ge4ciWWYFb2DBd6bbDrFY6VRVrd9NoPH",
+      "created_at": "2026-08-13T01:34:57.629362+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Indigenous groups and the Coalition for Equitable Conservation filed a legal challenge to a conservation law that threatens their land rights, asserting their right to free, prior, and informed consent (FPIC).\", \"affected_sdgs\": [10, 11, 13, 15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}, {\"description\": \"The legal challenge raises public and institutional awareness about indigenous land rights and conservation justice, potentially setting a precedent for future cases.\", \"affected_sdgs\": [4, 16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The conservation law in question risks enabling government designation of indigenous ancestral lands as conservation areas without consent, violating indigenous land rights and self-determination.\", \"affected_sdgs\": [10, 11, 15, 16], \"violated_rights\": [\"UNDRIP Articles 10, 26, 28\", \"UDHR Article 17\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}, {\"description\": \"Potential for prolonged legal uncertainty and displacement of indigenous communities if the law is upheld, exacerbating inequalities and environmental injustice.\", \"affected_sdgs\": [1, 2, 10, 16], \"violated_rights\": [\"UNDRIP Articles 8, 10\", \"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 676000
+    },
     {
       "id": 6528,
       "event_title": "Trading platforms offer cash vouchers for 'high-risk' investments, watchdog says",
@@ -544,7 +567,7 @@
       "final_score": 6.14,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=1.000) from event #6496",
-      "tx_hash": null,
+      "tx_hash": "3NQbasW2bwVqvc4K4Te7D8dA8PcKhy2fy2vpTzDDg7rDJAQYYaeyFdmFLK8dAXYRUuJAsyPCAJNNqVvjhJ8FYUuR",
       "created_at": "2026-08-12T18:33:58.133572+00:00",
       "embedding": null,
       "reused_from_event_id": 6496,
@@ -150208,8 +150231,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.152,
-        "events": 33
+        "burn_ratio": 0.147,
+        "events": 34
       },
       {
         "region": "Africa",
@@ -150288,11 +150311,11 @@
       {
         "date": "2026-08-12",
         "net_minted": 44520435,
-        "net_burned": 4349665
+        "net_burned": 7599665
       },
       {
         "date": "2026-08-13",
-        "net_minted": 8702000,
+        "net_minted": 9202000,
         "net_burned": 0
       }
     ],
@@ -150310,7 +150333,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 28,
-        "negative": 357,
+        "negative": 358,
         "event_ids_positive": [
           6503,
           6496,
@@ -150342,6 +150365,7 @@
           6202
         ],
         "event_ids_negative": [
+          6529,
           6528,
           6527,
           6526,
@@ -150703,7 +150727,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 322,
+        "negative": 323,
         "event_ids_positive": [
           6503,
           6496,
@@ -150727,6 +150751,7 @@
           6202
         ],
         "event_ids_negative": [
+          6529,
           6528,
           6527,
           6526,
@@ -151210,7 +151235,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 78,
+        "negative": 79,
         "event_ids_positive": [
           6418,
           6382,
@@ -151222,6 +151247,7 @@
           6202
         ],
         "event_ids_negative": [
+          6529,
           6523,
           6514,
           6513,
@@ -151495,21 +151521,22 @@
       "niche_pct": 62.6,
       "mainstream_pct": 37.4,
       "total_sources_used": 99,
-      "articles_processed": 396
+      "articles_processed": 398
     },
     "cache_hit_rate_7d": {
-      "hits": 11,
-      "total_events": 396,
-      "pct": 2.8
+      "hits": 12,
+      "total_events": 398,
+      "pct": 3.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 26,
-        "burn_count": 3,
+        "count": 27,
+        "burn_count": 4,
         "mint_count": 23,
         "event_ids": [
+          6505,
           6496,
           6438,
           6392,
@@ -151892,44 +151919,44 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 28,
+      "total_burn": 29,
       "direct_action": {
         "count": 24,
-        "pct": 85.7
+        "pct": 82.8
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 14.3
+        "pct": 13.8
       },
       "untyped": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 3.4
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1923,
+      "total_burn": 1924,
       "direct_action": {
         "count": 1505,
-        "pct": 78.3
+        "pct": 78.2
       },
       "editorial_consciousness": {
         "count": 147,
         "pct": 7.6
       },
       "untyped": {
-        "count": 271,
+        "count": 272,
         "pct": 14.1
       }
     },
     "mint_composition_7d": {
-      "total_mint": 368,
+      "total_mint": 369,
       "direct_action": {
         "count": 337,
-        "pct": 91.6
+        "pct": 91.3
       },
       "editorial_alarm": {
-        "count": 20,
-        "pct": 5.4
+        "count": 21,
+        "pct": 5.7
       },
       "untyped": {
         "count": 11,
@@ -151937,14 +151964,14 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4596,
+      "total_mint": 4597,
       "direct_action": {
         "count": 3790,
-        "pct": 82.5
+        "pct": 82.4
       },
       "editorial_alarm": {
-        "count": 273,
-        "pct": 5.9
+        "count": 274,
+        "pct": 6.0
       },
       "untyped": {
         "count": 533,
@@ -151952,9 +151979,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 105,
-      "institutional": 291,
-      "citizen_ratio": 0.265,
+      "citizen": 106,
+      "institutional": 292,
+      "citizen_ratio": 0.266,
       "daily": [
         {
           "date": "2026-08-07",
@@ -151984,15 +152011,16 @@
         {
           "date": "2026-08-12",
           "citizen": 15,
-          "institutional": 48
+          "institutional": 49
         },
         {
           "date": "2026-08-13",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 6
         }
       ],
       "event_ids_citizen": [
+        6529,
         6515,
         6513,
         6506,
@@ -152120,6 +152148,7 @@
         6509,
         6508,
         6507,
+        6505,
         6504,
         6503,
         6501,
