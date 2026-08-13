@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-13T07:35:47.478330+00:00",
-  "total_events": 6542,
+  "generated_at": "2026-08-13T08:05:47.571191+00:00",
+  "total_events": 6543,
   "total_burned": 7805860580,
-  "total_minted": 9007392759,
+  "total_minted": 9007467559,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6543,
+      "event_title": "Gaza cancer patients face rising death rate amid Israeli curbs, doctors say",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/gaza-cancer-patients-face-rising-death-rate-amid-israeli-curbs-doctors-say",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 74800,
+      "final_score": -6.35,
+      "confidence": 8,
+      "justification": "Destruction of medical infrastructure and blockade of patient treatment violate core rights and SDGs, causing irreversible harm. | The destruction of Gaza's sole cancer hospital and the blockade on patient travel for treatment constitute severe violations of the right to health and life, disproportionately affecting vulnerable populations. The action directly undermines SDGs 3 (Good Health), 10 (Reduced Inequalities), and 16 (Peace and Justice), with irreversible harm to thousands of patients.",
+      "tx_hash": "U3R4yydtp2t4JSAucx4311jNJb2Ws9JZR1Vh2cyVrK1azE1Fwk9nYXJmmYxbSz9DMbLNqnLsgYXH9yDAKEvqY4F",
+      "created_at": "2026-08-13T08:05:40.662688+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Destruction of Gaza's only specialized cancer hospital, eliminating local treatment options for ~17,000 cancer patients.\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 24\", \"ILO Core Labor Standards (health access)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}, {\"description\": \"Israeli curbs blocking cancer patients from traveling for treatment, leading to a 2-3x increase in death rates.\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6542,
       "event_title": "Jailed Istanbul mayor Imamoglu joins new opposition party amid political turmoil",
@@ -150530,8 +150553,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.143,
-        "events": 35
+        "burn_ratio": 0.147,
+        "events": 34
       },
       {
         "region": "Africa",
@@ -150562,8 +150585,8 @@
       },
       {
         "region": "MENA",
-        "mint_ratio": 0.97,
-        "events": 33
+        "mint_ratio": 0.971,
+        "events": 34
       },
       {
         "region": "Europe",
@@ -150614,7 +150637,7 @@
       },
       {
         "date": "2026-08-13",
-        "net_minted": 30961360,
+        "net_minted": 31036160,
         "net_burned": 0
       }
     ],
@@ -150664,6 +150687,7 @@
           6202
         ],
         "event_ids_negative": [
+          6543,
           6542,
           6541,
           6540,
@@ -151021,13 +151045,12 @@
           6148,
           6147,
           6146,
-          6145,
-          6144
+          6145
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 324,
+        "negative": 325,
         "event_ids_positive": [
           6503,
           6496,
@@ -151051,6 +151074,7 @@
           6202
         ],
         "event_ids_negative": [
+          6543,
           6542,
           6541,
           6540,
@@ -151379,13 +151403,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           6268,
           6230,
           6202
         ],
         "event_ids_negative": [
+          6543,
           6539,
           6535,
           6524,
@@ -151434,12 +151459,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 91,
+        "negative": 92,
         "event_ids_positive": [
           6341,
           6318
         ],
         "event_ids_negative": [
+          6543,
           6541,
           6535,
           6531,
@@ -151635,7 +151661,7 @@
       },
       "Animal": {
         "positive": 6,
-        "negative": 40,
+        "negative": 39,
         "event_ids_positive": [
           6399,
           6382,
@@ -151683,13 +151709,12 @@
           6160,
           6157,
           6149,
-          6148,
-          6144
+          6148
         ]
       },
       "PB": {
         "positive": 20,
-        "negative": 107,
+        "negative": 106,
         "event_ids_positive": [
           6503,
           6496,
@@ -151818,8 +151843,7 @@
           6157,
           6155,
           6149,
-          6148,
-          6144
+          6148
         ]
       }
     },
@@ -152048,10 +152072,11 @@
       },
       {
         "name": "Construction",
-        "count": 34,
+        "count": 35,
         "burn_count": 3,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          6543,
           6539,
           6520,
           6518,
@@ -152267,9 +152292,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4610,
+      "total_mint": 4611,
       "direct_action": {
-        "count": 3801,
+        "count": 3802,
         "pct": 82.5
       },
       "editorial_alarm": {
@@ -152319,7 +152344,7 @@
         {
           "date": "2026-08-13",
           "citizen": 5,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -152433,6 +152458,7 @@
         6148
       ],
       "event_ids_institutional": [
+        6543,
         6542,
         6540,
         6539,
@@ -152722,8 +152748,7 @@
         6150,
         6147,
         6146,
-        6145,
-        6144
+        6145
       ]
     }
   }
