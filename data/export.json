@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-14T20:37:26.241043+00:00",
-  "total_events": 6638,
+  "generated_at": "2026-08-14T21:07:12.881629+00:00",
+  "total_events": 6639,
   "total_burned": 7825330080,
-  "total_minted": 9081194959,
+  "total_minted": 9081464959,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6639,
+      "event_title": "Vietnam public spending boom boosts infrastructure earnings",
+      "event_url": "https://asia.nikkei.com/economy/vietnam-public-spending-boom-boosts-infrastructure-earnings",
+      "event_source": "Nikkei Asia",
+      "decision": "MINT",
+      "amount_crbn": 270000,
+      "final_score": 0.77,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Economic boost is offset by heightened environmental risks, leading to a net negative assessment. | The spending surge brings clear economic and employment benefits, but it also raises significant environmental concerns that could undermine climate and biodiversity goals. Overall, the negative ecological risks outweigh the short‑term gains.",
+      "tx_hash": "5vRPVmY2oAPg1PSHhyh53S21FQRD5dUMPr99kxzicpFYsUc2UQGsZHgnqeTUmuNTwjuzPcGYRdaBfQknfqcrJM89",
+      "created_at": "2026-08-14T21:07:06.114769+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Vietnam",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Government spending boost creates jobs and stimulates economic growth through new infrastructure projects\", \"affected_sdgs\": [1, 8, 9, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"New infrastructure may increase greenhouse‑gas emissions and cause habitat loss, worsening climate change and biodiversity\", \"affected_sdgs\": [13, 15, 11], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 6638,
       "event_title": "Chinese drone maker DJI gets another shot at Pentagon blacklist removal",
@@ -152684,8 +152707,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 83,
-        "total_amount": 65770270
+        "count": 81,
+        "total_amount": 65271470
       },
       {
         "country": "Israel",
@@ -152738,13 +152761,13 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.129,
-        "events": 31
+        "burn_ratio": 0.133,
+        "events": 30
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.129,
-        "events": 31
+        "burn_ratio": 0.125,
+        "events": 32
       },
       {
         "region": "Africa",
@@ -152753,8 +152776,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.087,
-        "events": 92
+        "burn_ratio": 0.089,
+        "events": 90
       },
       {
         "region": "Europe",
@@ -152780,13 +152803,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.913,
-        "events": 92
+        "mint_ratio": 0.911,
+        "events": 90
       },
       {
-        "region": "Africa",
+        "region": "Asia",
         "mint_ratio": 0.875,
-        "events": 24
+        "events": 32
       }
     ],
     "supply_trend_7d": [
@@ -152822,7 +152845,7 @@
       },
       {
         "date": "2026-08-14",
-        "net_minted": 26224800,
+        "net_minted": 26494800,
         "net_burned": 18793500
       }
     ],
@@ -152840,7 +152863,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 36,
-        "negative": 337,
+        "negative": 334,
         "event_ids_positive": [
           6629,
           6627,
@@ -152880,6 +152903,7 @@
           6254
         ],
         "event_ids_negative": [
+          6639,
           6638,
           6637,
           6636,
@@ -153212,16 +153236,12 @@
           6259,
           6258,
           6257,
-          6255,
-          6253,
-          6252,
-          6251,
-          6250
+          6255
         ]
       },
       "UDHR": {
         "positive": 26,
-        "negative": 312,
+        "negative": 308,
         "event_ids_positive": [
           6629,
           6627,
@@ -153558,22 +153578,19 @@
           6259,
           6258,
           6257,
-          6255,
-          6253,
-          6252,
-          6251,
-          6250
+          6255
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 50,
+        "negative": 51,
         "event_ids_positive": [
           6595,
           6545,
           6268
         ],
         "event_ids_negative": [
+          6639,
           6635,
           6631,
           6608,
@@ -153628,7 +153645,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 95,
+        "negative": 93,
         "event_ids_positive": [
           6620,
           6598,
@@ -153728,14 +153745,12 @@
           6292,
           6282,
           6269,
-          6260,
-          6252,
-          6251
+          6260
         ]
       },
       "UNDRIP": {
         "positive": 11,
-        "negative": 82,
+        "negative": 81,
         "event_ids_positive": [
           6625,
           6620,
@@ -153830,8 +153845,7 @@
           6271,
           6269,
           6265,
-          6258,
-          6251
+          6258
         ]
       },
       "Animal": {
@@ -153911,6 +153925,7 @@
           6254
         ],
         "event_ids_negative": [
+          6639,
           6637,
           6635,
           6633,
@@ -154020,20 +154035,19 @@
           6265,
           6262,
           6258,
-          6255,
-          6253
+          6255
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.0,
-      "mainstream_pct": 35.0,
-      "total_sources_used": 100,
-      "articles_processed": 388
+      "niche_pct": 64.6,
+      "mainstream_pct": 35.4,
+      "total_sources_used": 99,
+      "articles_processed": 385
     },
     "cache_hit_rate_7d": {
       "hits": 15,
-      "total_events": 388,
+      "total_events": 385,
       "pct": 3.9
     },
     "active_partners_7d": [],
@@ -154111,16 +154125,6 @@
         ]
       },
       {
-        "name": "ICC",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          6483,
-          6251
-        ]
-      },
-      {
         "name": "UNESCO",
         "count": 2,
         "burn_count": 0,
@@ -154148,14 +154152,23 @@
         "event_ids": [
           6554
         ]
+      },
+      {
+        "name": "ICC",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          6483
+        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 42,
+        "count": 41,
         "burn_count": 3,
-        "mint_count": 39,
+        "mint_count": 38,
         "event_ids": [
           6636,
           6635,
@@ -154197,15 +154210,14 @@
           6284,
           6266,
           6262,
-          6255,
-          6253
+          6255
         ]
       },
       {
         "name": "Finance",
-        "count": 37,
+        "count": 35,
         "burn_count": 1,
-        "mint_count": 36,
+        "mint_count": 34,
         "event_ids": [
           6600,
           6579,
@@ -154241,17 +154253,16 @@
           6280,
           6276,
           6273,
-          6264,
-          6253,
-          6250
+          6264
         ]
       },
       {
         "name": "Construction",
-        "count": 33,
+        "count": 34,
         "burn_count": 3,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          6639,
           6604,
           6581,
           6580,
@@ -154451,14 +154462,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 351,
+      "total_mint": 348,
       "direct_action": {
-        "count": 313,
-        "pct": 89.2
+        "count": 310,
+        "pct": 89.1
       },
       "editorial_alarm": {
         "count": 24,
-        "pct": 6.8
+        "pct": 6.9
       },
       "untyped": {
         "count": 14,
@@ -154466,9 +154477,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4693,
+      "total_mint": 4694,
       "direct_action": {
-        "count": 3875,
+        "count": 3876,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -154482,8 +154493,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 109,
-      "institutional": 279,
-      "citizen_ratio": 0.281,
+      "institutional": 276,
+      "citizen_ratio": 0.283,
       "daily": [
         {
           "date": "2026-08-08",
@@ -154518,7 +154529,7 @@
         {
           "date": "2026-08-14",
           "citizen": 13,
-          "institutional": 34
+          "institutional": 35
         }
       ],
       "event_ids_citizen": [
@@ -154633,6 +154644,7 @@
         6254
       ],
       "event_ids_institutional": [
+        6639,
         6638,
         6637,
         6636,
@@ -154907,11 +154919,7 @@
         6263,
         6262,
         6259,
-        6255,
-        6253,
-        6252,
-        6251,
-        6250
+        6255
       ]
     }
   }
