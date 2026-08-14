@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T12:36:55.579194+00:00",
-  "total_pending": 4,
+  "generated_at": "2026-08-14T14:07:40.932283+00:00",
+  "total_pending": 5,
   "reviews": [
     {
       "id": 778,
@@ -78,6 +78,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-08-11T04:34:49.103995+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 782,
+      "event_title": "STAT+: Pharmalittle: We’re reading about a lawsuit over lab tests for meds, a Bristol myeloma drug, and more",
+      "event_url": "https://www.statnews.com/pharmalot/2026/08/14/lab-tests-lawsuit-bristol-multiple-myeloma-drug-approved/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"FDA approval provides a new effective oral therapy for advanced multiple myeloma, improving patient survival and quality of life.\", \"affected_sdgs\": [3, 9], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The drug represents a novel class of medicine, advancing pharmaceutical innovation and industry capacity.\", \"affected_sdgs\": [9], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}], \"negative_aspects\": [{\"description\": \"High launch price may limit access for low‑income patients, widening health inequities.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Manufacturing and distribution of the new drug increase resource use and chemical waste, stressing planetary boundaries.\", \"affected_sdgs\": [12, 13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The approval delivers a major health benefit and spurs medical innovation, but its high cost and environmental footprint pose equity and sustainability concerns. Overall, the positive health impact outweighs the negatives, leading to a net favorable ethical judgment.\", \"snapshot_score\": 10, \"trajectory_score\": 9, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Negotiated price reductions or insurance coverage expansions\", \"Post‑market safety data revealing serious adverse effects\", \"Regulatory or policy changes affecting drug reimbursement\"], \"revaluation_checkpoint\": \"2028-08-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic: drug proves highly effective, price is reduced through negotiations, and it becomes widely accessible, driving further breakthroughs.\", \"probability\": 0.25, \"score\": 10}, {\"name\": \"B\", \"description\": \"Realistic: drug offers moderate survival benefit, cost remains high for many, and uptake is limited to well‑insured patients.\", \"probability\": 0.55, \"score\": 5}, {\"name\": \"C\", \"description\": \"Pessimistic: serious safety issues emerge, efficacy is lower than expected, and high price leads to public backlash and restricted use.\", \"probability\": 0.2, \"score\": -2}], \"prospective_score\": 4.85, \"final_score\": 6.24, \"decision\": \"BURN\", \"amount_cbwd\": 1310400, \"confidence\": 7, \"justification\": \"Approval yields strong health gains that outweigh cost and environmental concerns, justifying a BURN decision.\", \"event_scope\": \"national\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"FDA approval of an oral Bristol-Myeloma drug provides a new therapeutic option for patients with advanced multiple myeloma\", \"affected_sdgs\": [3, 9], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"High price and limited insurance coverage may restrict access, worsening health inequities\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"ethical_synthesis\": \"The approval creates a valuable new therapy for a deadly cancer, advancing health outcomes, but cost and access barriers risk widening inequities.\", \"snapshot_score\": 5, \"trajectory_score\": 4, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Negotiated drug pricing outcomes\", \"Real‑world effectiveness and safety data\", \"Changes in insurance coverage policies\"], \"revaluation_checkpoint\": \"2028-08-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic: affordable pricing, broad coverage, significant survival benefit\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Realistic: moderate pricing, limited coverage, modest benefit\", \"probability\": 0.55, \"score\": 2}, {\"name\": \"C\", \"description\": \"Pessimistic: high price, minimal uptake, safety concerns\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.3, \"final_score\": 2.97, \"decision\": \"MINT\", \"amount_cbwd\": 624000, \"confidence\": 7, \"justification\": \"Approval is positive but limited by cost and access, net impact modestly negative.\", \"event_scope\": \"national\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"BURN\", \"final_score\": 6.24, \"confidence\": 8, \"amount_cbwd\": 676000, \"justification\": \"FDA approval enables a life‑saving therapy, protecting patient rights despite cost/access challenges.\", \"disagreement\": true, \"reason\": \"Analysts conflicted; action is regulatory approval, which safeguards health rights, thus BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "BURN",
+      "suggested_amount_crbn": 676000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-08-14T14:07:36.350989+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
