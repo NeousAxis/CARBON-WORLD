@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-14T18:36:38.775956+00:00",
-  "total_events": 6632,
+  "generated_at": "2026-08-14T19:07:15.241097+00:00",
+  "total_events": 6633,
   "total_burned": 7825330080,
-  "total_minted": 9078746859,
+  "total_minted": 9079350859,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6633,
+      "event_title": "Russia is cutting off Ukraine’s grain exports again, threatening a critical harvest and global food security",
+      "event_url": "https://theconversation.com/russia-is-cutting-off-ukraines-grain-exports-again-threatening-a-critical-harvest-and-global-food-security-289718",
+      "event_source": "The Conversation Global",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.09,
+      "confidence": 8,
+      "justification": "Russia's export blockade harms global food security, outweighing Ukraine's tentative proposal, leading to a negative net impact. | The Russian export blockade severely threatens food security and violates the right to food, while Ukraine's diplomatic proposal offers a modest positive step; overall the net effect is negative.",
+      "tx_hash": "4D4xPze42711KbR5NvNyipsU57o8WvAr1JohXPYUP9KSmNTDhhxSQPwaJ6XteEzy3ZHLnZD1zcgQq7wrPagkFdBv",
+      "created_at": "2026-08-14T19:07:07.387052+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"Ukraine proposes a deal to halt attacks on civilian targets in the Black Sea to resume grain shipments\", \"affected_sdgs\": [2, 16, 1], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Russia cuts off Ukraine's grain exports, threatening global food security\", \"affected_sdgs\": [1, 2, 12, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6632,
       "event_title": "Constitutional Council validates agricultural emergency law, including the return of acetamiprid",
@@ -152546,8 +152569,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 82,
-        "total_amount": 65367270
+        "count": 80,
+        "total_amount": 64676270
       },
       {
         "country": "Brazil",
@@ -152615,13 +152638,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.088,
-        "events": 91
+        "burn_ratio": 0.09,
+        "events": 89
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.079,
-        "events": 89
+        "burn_ratio": 0.078,
+        "events": 90
       }
     ],
     "top_regions_destructive": [
@@ -152637,13 +152660,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.921,
-        "events": 89
+        "mint_ratio": 0.922,
+        "events": 90
       },
       {
         "region": "North America",
-        "mint_ratio": 0.912,
-        "events": 91
+        "mint_ratio": 0.91,
+        "events": 89
       },
       {
         "region": "Africa",
@@ -152684,7 +152707,7 @@
       },
       {
         "date": "2026-08-14",
-        "net_minted": 23776700,
+        "net_minted": 24380700,
         "net_burned": 18793500
       }
     ],
@@ -152702,7 +152725,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 36,
-        "negative": 336,
+        "negative": 335,
         "event_ids_positive": [
           6629,
           6627,
@@ -152742,6 +152765,7 @@
           6254
         ],
         "event_ids_negative": [
+          6633,
           6632,
           6631,
           6630,
@@ -153075,9 +153099,7 @@
           6250,
           6249,
           6248,
-          6247,
-          6246,
-          6245
+          6247
         ]
       },
       "UDHR": {
@@ -153112,6 +153134,7 @@
           6254
         ],
         "event_ids_negative": [
+          6633,
           6632,
           6631,
           6630,
@@ -153419,8 +153442,7 @@
           6251,
           6250,
           6249,
-          6247,
-          6245
+          6247
         ]
       },
       "ILO": {
@@ -153485,7 +153507,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 93,
+        "negative": 94,
         "event_ids_positive": [
           6620,
           6598,
@@ -153493,6 +153515,7 @@
           6318
         ],
         "event_ids_negative": [
+          6633,
           6628,
           6608,
           6607,
@@ -153766,6 +153789,7 @@
           6254
         ],
         "event_ids_negative": [
+          6633,
           6632,
           6624,
           6623,
@@ -153874,8 +153898,7 @@
           6258,
           6255,
           6253,
-          6248,
-          6246
+          6248
         ]
       }
     },
@@ -153883,11 +153906,11 @@
       "niche_pct": 65.0,
       "mainstream_pct": 35.0,
       "total_sources_used": 100,
-      "articles_processed": 387
+      "articles_processed": 386
     },
     "cache_hit_rate_7d": {
       "hits": 15,
-      "total_events": 387,
+      "total_events": 386,
       "pct": 3.9
     },
     "active_partners_7d": [],
@@ -154209,10 +154232,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 16,
+        "count": 17,
         "burn_count": 1,
-        "mint_count": 15,
+        "mint_count": 16,
         "event_ids": [
+          6633,
           6632,
           6605,
           6596,
@@ -154301,9 +154325,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 350,
+      "total_mint": 349,
       "direct_action": {
-        "count": 312,
+        "count": 311,
         "pct": 89.1
       },
       "editorial_alarm": {
@@ -154316,10 +154340,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4687,
+      "total_mint": 4688,
       "direct_action": {
-        "count": 3869,
-        "pct": 82.5
+        "count": 3870,
+        "pct": 82.6
       },
       "editorial_alarm": {
         "count": 282,
@@ -154332,7 +154356,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 109,
-      "institutional": 278,
+      "institutional": 277,
       "citizen_ratio": 0.282,
       "daily": [
         {
@@ -154368,7 +154392,7 @@
         {
           "date": "2026-08-14",
           "citizen": 13,
-          "institutional": 28
+          "institutional": 29
         }
       ],
       "event_ids_citizen": [
@@ -154483,6 +154507,7 @@
         6254
       ],
       "event_ids_institutional": [
+        6633,
         6631,
         6630,
         6629,
@@ -154758,9 +154783,7 @@
         6250,
         6249,
         6248,
-        6247,
-        6246,
-        6245
+        6247
       ]
     }
   }
