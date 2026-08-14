@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-14T09:37:21.041581+00:00",
-  "total_events": 6612,
+  "generated_at": "2026-08-14T10:37:38.503415+00:00",
+  "total_events": 6614,
   "total_burned": 7822352580,
-  "total_minted": 9070083439,
+  "total_minted": 9070491039,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 6614,
+      "event_title": "STF gives 24 months for Congress to regulate mining on indigenous lands",
+      "event_url": "https://oeco.org.br/noticias/stf-da-24-meses-para-congresso-regulamentar-mineracao-em-terras-indigenas/",
+      "event_source": "O Eco (Brazil env)",
+      "decision": "MINT",
+      "amount_crbn": 340000,
+      "final_score": -1.35,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] STF's provisional rule allowing mining on 1% of indigenous land enables harm despite a regulatory deadline, outweighing procedural gains. | The ruling creates a procedural deadline that could lead to stronger protection, but it simultaneously authorises mining on indigenous lands, violating indigenous rights and planetary boundaries. The negative impacts outweigh the modest ",
+      "tx_hash": "3dHuvBVfuENyJqH6WeHwYXmjwHZNYUAhrmd4wkQddFBnfgAGNv5szrsW4upB1mPv1jQTwRXpePxt2wcebDEudMYs",
+      "created_at": "2026-08-14T10:37:30.668267+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"STF set a 24‑month deadline for Congress to create mining regulations, establishing a legal framework and limiting provisional exploitation to 1 % of indigenous territory\", \"affected_sdgs\": [16, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Provisional rules permit mining on up to 1 % of the demarcated indigenous territory, opening indigenous lands to extraction and environmental harm\", \"affected_sdgs\": [13, 15, 11], \"violated_rights\": [\"UNDRIP Article 26\", \"UDHR Article 27\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 6613,
+      "event_title": "Israeli settlers divert Palestinian water to fill West Bank pool",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/israeli-settlers-divert-palestinian-water-fill-west-bank-pool",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -5.96,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=0.936) from event #6605",
+      "tx_hash": null,
+      "created_at": "2026-08-14T10:07:14.634781+00:00",
+      "embedding": null,
+      "reused_from_event_id": 6605,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 6612,
       "event_title": "Scientists turn Starlink into a giant scanner for Earth’s upper atmosphere",
@@ -152091,8 +152137,8 @@
       },
       {
         "country": "Brazil",
-        "count": 14,
-        "total_amount": 5689600
+        "count": 15,
+        "total_amount": 6029600
       },
       {
         "country": "Israel",
@@ -152100,14 +152146,14 @@
         "total_amount": 3190660
       },
       {
-        "country": "France",
-        "count": 11,
-        "total_amount": 2501000
-      },
-      {
         "country": "Switzerland",
         "count": 10,
         "total_amount": 2794400
+      },
+      {
+        "country": "Spain",
+        "count": 10,
+        "total_amount": 1367600
       }
     ],
     "top_countries_burn": [
@@ -152145,8 +152191,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.091,
-        "events": 33
+        "burn_ratio": 0.088,
+        "events": 34
       },
       {
         "region": "Africa",
@@ -152160,8 +152206,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.066,
-        "events": 91
+        "burn_ratio": 0.067,
+        "events": 90
       }
     ],
     "top_regions_destructive": [
@@ -152177,8 +152223,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.934,
-        "events": 91
+        "mint_ratio": 0.933,
+        "events": 90
       },
       {
         "region": "North America",
@@ -152224,7 +152270,7 @@
       },
       {
         "date": "2026-08-14",
-        "net_minted": 15180880,
+        "net_minted": 15520880,
         "net_burned": 15816000
       }
     ],
@@ -152279,6 +152325,7 @@
           6212
         ],
         "event_ids_negative": [
+          6614,
           6610,
           6609,
           6608,
@@ -152631,8 +152678,7 @@
           6217,
           6216,
           6214,
-          6213,
-          6211
+          6213
         ]
       },
       "UDHR": {
@@ -152665,6 +152711,7 @@
           6212
         ],
         "event_ids_negative": [
+          6614,
           6610,
           6609,
           6608,
@@ -152987,8 +153034,7 @@
           6217,
           6216,
           6214,
-          6213,
-          6211
+          6213
         ]
       },
       "ILO": {
@@ -153164,7 +153210,7 @@
       },
       "UNDRIP": {
         "positive": 9,
-        "negative": 87,
+        "negative": 88,
         "event_ids_positive": [
           6611,
           6595,
@@ -153177,6 +153223,7 @@
           6261
         ],
         "event_ids_negative": [
+          6614,
           6610,
           6605,
           6604,
@@ -153318,7 +153365,7 @@
       },
       "PB": {
         "positive": 23,
-        "negative": 113,
+        "negative": 114,
         "event_ids_positive": [
           6612,
           6611,
@@ -153345,6 +153392,7 @@
           6215
         ],
         "event_ids_negative": [
+          6614,
           6609,
           6606,
           6604,
@@ -153642,9 +153690,9 @@
       },
       {
         "name": "Finance",
-        "count": 41,
+        "count": 40,
         "burn_count": 1,
-        "mint_count": 40,
+        "mint_count": 39,
         "event_ids": [
           6600,
           6579,
@@ -153685,15 +153733,14 @@
           6250,
           6248,
           6243,
-          6214,
-          6211
+          6214
         ]
       },
       {
         "name": "Construction",
-        "count": 36,
+        "count": 35,
         "burn_count": 3,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           6604,
           6581,
@@ -153729,8 +153776,7 @@
           6264,
           6262,
           6243,
-          6236,
-          6211
+          6236
         ]
       },
       {
@@ -153916,9 +153962,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4674,
+      "total_mint": 4675,
       "direct_action": {
-        "count": 3858,
+        "count": 3859,
         "pct": 82.5
       },
       "editorial_alarm": {
@@ -153967,11 +154013,12 @@
         },
         {
           "date": "2026-08-14",
-          "citizen": 7,
+          "citizen": 8,
           "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        6614,
         6612,
         6610,
         6605,
@@ -154086,8 +154133,7 @@
         6218,
         6217,
         6216,
-        6215,
-        6211
+        6215
       ],
       "event_ids_institutional": [
         6611,
