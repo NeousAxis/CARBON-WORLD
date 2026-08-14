@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-14T16:37:55.303160+00:00",
-  "total_events": 6627,
+  "generated_at": "2026-08-14T17:07:44.407191+00:00",
+  "total_events": 6628,
   "total_burned": 7825307580,
-  "total_minted": 9077523819,
+  "total_minted": 9077524449,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6628,
+      "event_title": "In New York, Luigi Mangione admits shooting the UnitedHealthcare CEO and faces life imprisonment",
+      "event_url": "https://www.letemps.ch/articles/luigi-mangione-reconnait-le-meurtre-du-patron-d-unitedhealthcare-et-encourt-la-prison-a-vie",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 630,
+      "final_score": -0.17,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Legal punishment is positive but the murder's harm outweighs it, leading to a net negative assessment. | While the murder itself is a grave violation of human rights, the swift legal punishment reinforces justice and deterrence, yielding a net but modestly negative ethical balance.",
+      "tx_hash": "3Xo3c3eaCGjqKn74iVjFjr5usfBbGyQ8RDPfgGMXNW2C9x9KRTrPX47HJkXt9fMkwKizBpS8inJkxRdhHxCri6hi",
+      "created_at": "2026-08-14T17:07:37.939438+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Federal court sentencing of the murderer to life imprisonment upholds rule of law and deters future violent crimes.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The premeditated killing of the UnitedHealthcare CEO violates the right to life and causes personal and societal harm.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 6\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 6627,
       "event_title": "Tool Monitors What Governments Are Doing to Face El Niño",
@@ -152432,7 +152455,7 @@
       {
         "country": "United States",
         "count": 82,
-        "total_amount": 65516640
+        "total_amount": 65367270
       },
       {
         "country": "Brazil",
@@ -152484,6 +152507,11 @@
     ],
     "top_regions_sustainable": [
       {
+        "region": "Latin America",
+        "burn_ratio": 0.129,
+        "events": 31
+      },
+      {
         "region": "Africa",
         "burn_ratio": 0.125,
         "events": 24
@@ -152494,19 +152522,14 @@
         "events": 32
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.121,
-        "events": 33
-      },
-      {
         "region": "North America",
-        "burn_ratio": 0.087,
-        "events": 92
+        "burn_ratio": 0.088,
+        "events": 91
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.07,
-        "events": 86
+        "burn_ratio": 0.071,
+        "events": 85
       }
     ],
     "top_regions_destructive": [
@@ -152522,18 +152545,18 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.93,
-        "events": 86
+        "mint_ratio": 0.929,
+        "events": 85
       },
       {
         "region": "North America",
-        "mint_ratio": 0.913,
-        "events": 92
+        "mint_ratio": 0.912,
+        "events": 91
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.879,
-        "events": 33
+        "region": "Africa",
+        "mint_ratio": 0.875,
+        "events": 24
       }
     ],
     "supply_trend_7d": [
@@ -152569,7 +152592,7 @@
       },
       {
         "date": "2026-08-14",
-        "net_minted": 22553660,
+        "net_minted": 22554290,
         "net_burned": 18771000
       }
     ],
@@ -152587,7 +152610,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 35,
-        "negative": 342,
+        "negative": 335,
         "event_ids_positive": [
           6627,
           6625,
@@ -152626,6 +152649,7 @@
           6254
         ],
         "event_ids_negative": [
+          6628,
           6626,
           6624,
           6623,
@@ -152959,20 +152983,12 @@
           6246,
           6245,
           6244,
-          6243,
-          6242,
-          6241,
-          6240,
-          6239,
-          6238,
-          6237,
-          6236,
-          6235
+          6243
         ]
       },
       "UDHR": {
         "positive": 25,
-        "negative": 314,
+        "negative": 308,
         "event_ids_positive": [
           6627,
           6625,
@@ -153001,6 +153017,7 @@
           6254
         ],
         "event_ids_negative": [
+          6628,
           6626,
           6624,
           6623,
@@ -153307,14 +153324,7 @@
           6247,
           6245,
           6244,
-          6243,
-          6242,
-          6241,
-          6239,
-          6238,
-          6237,
-          6236,
-          6235
+          6243
         ]
       },
       "ILO": {
@@ -153386,6 +153396,7 @@
           6318
         ],
         "event_ids_negative": [
+          6628,
           6608,
           6607,
           6606,
@@ -153477,13 +153488,12 @@
           6269,
           6260,
           6252,
-          6251,
-          6235
+          6251
         ]
       },
       "UNDRIP": {
         "positive": 11,
-        "negative": 83,
+        "negative": 81,
         "event_ids_positive": [
           6625,
           6620,
@@ -153578,9 +153588,7 @@
           6269,
           6265,
           6258,
-          6251,
-          6242,
-          6235
+          6251
         ]
       },
       "Animal": {
@@ -153632,7 +153640,7 @@
       },
       "PB": {
         "positive": 24,
-        "negative": 110,
+        "negative": 109,
         "event_ids_positive": [
           6627,
           6625,
@@ -153768,8 +153776,7 @@
           6255,
           6253,
           6248,
-          6246,
-          6240
+          6246
         ]
       }
     },
@@ -153777,20 +153784,20 @@
       "niche_pct": 65.0,
       "mainstream_pct": 35.0,
       "total_sources_used": 100,
-      "articles_processed": 392
+      "articles_processed": 385
     },
     "cache_hit_rate_7d": {
       "hits": 15,
-      "total_events": 392,
-      "pct": 3.8
+      "total_events": 385,
+      "pct": 3.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 25,
+        "count": 24,
         "burn_count": 5,
-        "mint_count": 20,
+        "mint_count": 19,
         "event_ids": [
           6611,
           6595,
@@ -153815,8 +153822,7 @@
           6260,
           6259,
           6257,
-          6244,
-          6235
+          6244
         ]
       },
       {
@@ -153998,9 +154004,9 @@
       },
       {
         "name": "Construction",
-        "count": 35,
+        "count": 34,
         "burn_count": 3,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           6604,
           6581,
@@ -154035,15 +154041,14 @@
           6273,
           6264,
           6262,
-          6243,
-          6236
+          6243
         ]
       },
       {
         "name": "Defense",
-        "count": 31,
+        "count": 30,
         "burn_count": 0,
-        "mint_count": 31,
+        "mint_count": 30,
         "event_ids": [
           6572,
           6560,
@@ -154074,8 +154079,7 @@
           6311,
           6303,
           6299,
-          6283,
-          6238
+          6283
         ]
       },
       {
@@ -154152,20 +154156,19 @@
         ]
       },
       {
-        "name": "Transport",
-        "count": 9,
-        "burn_count": 0,
-        "mint_count": 9,
+        "name": "Mining",
+        "count": 8,
+        "burn_count": 1,
+        "mint_count": 7,
         "event_ids": [
-          6465,
-          6455,
-          6439,
-          6366,
-          6319,
-          6303,
-          6264,
-          6243,
-          6240
+          6620,
+          6614,
+          6568,
+          6445,
+          6396,
+          6394,
+          6387,
+          6271
         ]
       }
     ],
@@ -154200,24 +154203,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 356,
+      "total_mint": 349,
       "direct_action": {
-        "count": 319,
-        "pct": 89.6
+        "count": 312,
+        "pct": 89.4
       },
       "editorial_alarm": {
         "count": 23,
-        "pct": 6.5
+        "pct": 6.6
       },
       "untyped": {
         "count": 14,
-        "pct": 3.9
+        "pct": 4.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4683,
+      "total_mint": 4684,
       "direct_action": {
-        "count": 3866,
+        "count": 3867,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -154230,8 +154233,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 111,
-      "institutional": 281,
+      "citizen": 109,
+      "institutional": 276,
       "citizen_ratio": 0.283,
       "daily": [
         {
@@ -154267,7 +154270,7 @@
         {
           "date": "2026-08-14",
           "citizen": 12,
-          "institutional": 24
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -154379,11 +154382,10 @@
         6257,
         6256,
         6254,
-        6244,
-        6242,
-        6235
+        6244
       ],
       "event_ids_institutional": [
+        6628,
         6627,
         6626,
         6624,
@@ -154658,13 +154660,7 @@
         6247,
         6246,
         6245,
-        6243,
-        6241,
-        6240,
-        6239,
-        6238,
-        6237,
-        6236
+        6243
       ]
     }
   }
