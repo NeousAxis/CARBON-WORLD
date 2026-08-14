@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-14T17:37:27.994521+00:00",
-  "total_events": 6631,
+  "generated_at": "2026-08-14T18:36:38.775956+00:00",
+  "total_events": 6632,
   "total_burned": 7825330080,
-  "total_minted": 9078070859,
+  "total_minted": 9078746859,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6632,
+      "event_title": "Constitutional Council validates agricultural emergency law, including the return of acetamiprid",
+      "event_url": "https://reporterre.net/Le-Conseil-constitutionnel-valide-la-loi-d-urgence-agricole-dont-le-retour-de-l",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.45,
+      "confidence": 8,
+      "justification": "Reintroduction of harmful neonicotinoids outweighs any emergency benefits, leading to a negative net impact. | While the law aims to address an agricultural emergency, the allowance of harmful neonicotinoid pesticides creates significant environmental and health risks that outweigh the limited food‑security benefit.",
+      "tx_hash": "38DjbM1DTTEtnUFNsR2TrAEC7Nwq6BjHCn7uyidWRzt2H3DFAwxfnNRfgHRMFeRnWRUU1WeGNhLaX4tjS8n1iAm7",
+      "created_at": "2026-08-14T18:36:30.544403+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Legal validation of the agricultural emergency law provides a framework for rapid response to crop threats, supporting food security.\", \"affected_sdgs\": [2, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reintroduction of acetamiprid and flupyradifurone permits use of neonicotinoid pesticides, harming pollinators, biodiversity, and human health.\", \"affected_sdgs\": [3, 12, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 676000
+    },
     {
       "id": 6631,
       "event_title": "Polish opposition expels 40 lawmakers who formed breakaway caucus led by ex-PM Morawiecki",
@@ -152537,14 +152560,14 @@
         "total_amount": 3190660
       },
       {
+        "country": "France",
+        "count": 11,
+        "total_amount": 2699000
+      },
+      {
         "country": "South Africa",
         "count": 10,
         "total_amount": 2545300
-      },
-      {
-        "country": "Spain",
-        "count": 10,
-        "total_amount": 1755600
       }
     ],
     "top_countries_burn": [
@@ -152597,15 +152620,15 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.08,
-        "events": 88
+        "burn_ratio": 0.079,
+        "events": 89
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 12
+        "events": 11
       },
       {
         "region": "MENA",
@@ -152614,8 +152637,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.92,
-        "events": 88
+        "mint_ratio": 0.921,
+        "events": 89
       },
       {
         "region": "North America",
@@ -152661,7 +152684,7 @@
       },
       {
         "date": "2026-08-14",
-        "net_minted": 23100700,
+        "net_minted": 23776700,
         "net_burned": 18793500
       }
     ],
@@ -152679,7 +152702,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 36,
-        "negative": 337,
+        "negative": 336,
         "event_ids_positive": [
           6629,
           6627,
@@ -152719,6 +152742,7 @@
           6254
         ],
         "event_ids_negative": [
+          6632,
           6631,
           6630,
           6628,
@@ -153053,14 +153077,12 @@
           6248,
           6247,
           6246,
-          6245,
-          6244,
-          6243
+          6245
         ]
       },
       "UDHR": {
         "positive": 26,
-        "negative": 310,
+        "negative": 309,
         "event_ids_positive": [
           6629,
           6627,
@@ -153090,6 +153112,7 @@
           6254
         ],
         "event_ids_negative": [
+          6632,
           6631,
           6630,
           6628,
@@ -153397,9 +153420,7 @@
           6250,
           6249,
           6247,
-          6245,
-          6244,
-          6243
+          6245
         ]
       },
       "ILO": {
@@ -153669,7 +153690,7 @@
       },
       "Animal": {
         "positive": 8,
-        "negative": 31,
+        "negative": 32,
         "event_ids_positive": [
           6625,
           6616,
@@ -153681,6 +153702,7 @@
           6291
         ],
         "event_ids_negative": [
+          6632,
           6604,
           6588,
           6587,
@@ -153716,7 +153738,7 @@
       },
       "PB": {
         "positive": 24,
-        "negative": 109,
+        "negative": 110,
         "event_ids_positive": [
           6627,
           6625,
@@ -153744,6 +153766,7 @@
           6254
         ],
         "event_ids_negative": [
+          6632,
           6624,
           6623,
           6621,
@@ -153860,20 +153883,20 @@
       "niche_pct": 65.0,
       "mainstream_pct": 35.0,
       "total_sources_used": 100,
-      "articles_processed": 388
+      "articles_processed": 387
     },
     "cache_hit_rate_7d": {
       "hits": 15,
-      "total_events": 388,
+      "total_events": 387,
       "pct": 3.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 24,
+        "count": 23,
         "burn_count": 5,
-        "mint_count": 19,
+        "mint_count": 18,
         "event_ids": [
           6611,
           6595,
@@ -153897,8 +153920,7 @@
           6267,
           6260,
           6259,
-          6257,
-          6244
+          6257
         ]
       },
       {
@@ -154034,9 +154056,9 @@
       },
       {
         "name": "Finance",
-        "count": 39,
+        "count": 38,
         "burn_count": 1,
-        "mint_count": 38,
+        "mint_count": 37,
         "event_ids": [
           6600,
           6579,
@@ -154075,15 +154097,14 @@
           6264,
           6253,
           6250,
-          6248,
-          6243
+          6248
         ]
       },
       {
         "name": "Construction",
-        "count": 34,
+        "count": 33,
         "burn_count": 3,
-        "mint_count": 31,
+        "mint_count": 30,
         "event_ids": [
           6604,
           6581,
@@ -154117,8 +154138,7 @@
           6288,
           6273,
           6264,
-          6262,
-          6243
+          6262
         ]
       },
       {
@@ -154189,10 +154209,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 15,
+        "count": 16,
         "burn_count": 1,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          6632,
           6605,
           6596,
           6581,
@@ -154280,14 +154301,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 351,
+      "total_mint": 350,
       "direct_action": {
-        "count": 314,
-        "pct": 89.5
+        "count": 312,
+        "pct": 89.1
       },
       "editorial_alarm": {
-        "count": 23,
-        "pct": 6.6
+        "count": 24,
+        "pct": 6.9
       },
       "untyped": {
         "count": 14,
@@ -154295,13 +154316,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4686,
+      "total_mint": 4687,
       "direct_action": {
         "count": 3869,
-        "pct": 82.6
+        "pct": 82.5
       },
       "editorial_alarm": {
-        "count": 281,
+        "count": 282,
         "pct": 6.0
       },
       "untyped": {
@@ -154311,8 +154332,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 109,
-      "institutional": 279,
-      "citizen_ratio": 0.281,
+      "institutional": 278,
+      "citizen_ratio": 0.282,
       "daily": [
         {
           "date": "2026-08-08",
@@ -154346,11 +154367,12 @@
         },
         {
           "date": "2026-08-14",
-          "citizen": 12,
+          "citizen": 13,
           "institutional": 28
         }
       ],
       "event_ids_citizen": [
+        6632,
         6625,
         6621,
         6620,
@@ -154458,8 +154480,7 @@
         6258,
         6257,
         6256,
-        6254,
-        6244
+        6254
       ],
       "event_ids_institutional": [
         6631,
@@ -154739,8 +154760,7 @@
         6248,
         6247,
         6246,
-        6245,
-        6243
+        6245
       ]
     }
   }
