@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-14T23:36:02.467448+00:00",
-  "total_events": 6642,
+  "generated_at": "2026-08-15T02:06:03.424502+00:00",
+  "total_events": 6643,
   "total_burned": 7826813280,
-  "total_minted": 9082060059,
+  "total_minted": 9082538059,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6643,
+      "event_title": "Congress Promised Non-Dairy Milk for Schools. Where Is It?",
+      "event_url": "https://sentientmedia.org/congress-promised-non-dairy-milk-for-schools/",
+      "event_source": "Sentient Media",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.06,
+      "confidence": 7,
+      "justification": "USDA omission undermines climate and health goals, leading to a negative net impact. | The legislative intent to broaden school milk choices supports health and climate goals, but the USDA's omission blocks those benefits, resulting in a net negative ethical impact.",
+      "tx_hash": "59Rrh9gv55qjPtfd381ijatSJeJMze57SiQ6tXWdvq12R5yb2xgmKpBTUAvP1LEzfv8hY7nsF3mEuxWi6HzbxDRN",
+      "created_at": "2026-08-15T02:05:55.288587+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Congress passed a law to expand non‑dairy milk options in schools, showing commitment to healthier, lower‑emission diets.\", \"affected_sdgs\": [3, 12, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"USDA rule omitted the non‑dairy milk provisions, preventing implementation of the law and limiting plant‑based, climate‑friendly options for students.\", \"affected_sdgs\": [3, 12, 13, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 6642,
       "event_title": "South Africa’s top court blocks Shell’s offshore oil exploration right",
@@ -682,7 +705,7 @@
       "final_score": -5.96,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.936) from event #6605",
-      "tx_hash": null,
+      "tx_hash": "5YAMsSDiXfk3ktCj7i97NeveEeYQTZjv7Xc7q55UHSx9wwZ3dnPZ1JXh8cybcwzEjbgmJNt4pLEEUvcPLSRnMeEq",
       "created_at": "2026-08-14T10:07:14.634781+00:00",
       "embedding": null,
       "reused_from_event_id": 6605,
@@ -152777,7 +152800,7 @@
       {
         "country": "United States",
         "count": 80,
-        "total_amount": 65211070
+        "total_amount": 65621470
       },
       {
         "country": "Israel",
@@ -152807,11 +152830,6 @@
         "total_amount": 7443300
       },
       {
-        "country": "Indonesia",
-        "count": 3,
-        "total_amount": 782500
-      },
-      {
         "country": "South Africa",
         "count": 2,
         "total_amount": 1733200
@@ -152825,6 +152843,11 @@
         "country": "Kenya",
         "count": 2,
         "total_amount": 661000
+      },
+      {
+        "country": "Indonesia",
+        "count": 2,
+        "total_amount": 432500
       }
     ],
     "top_regions_sustainable": [
@@ -152835,13 +152858,13 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.133,
-        "events": 30
+        "burn_ratio": 0.138,
+        "events": 29
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.129,
-        "events": 31
+        "burn_ratio": 0.103,
+        "events": 29
       },
       {
         "region": "North America",
@@ -152877,16 +152900,11 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.871,
-        "events": 31
+        "mint_ratio": 0.897,
+        "events": 29
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-08-08",
-        "net_minted": 33467035,
-        "net_burned": 2589300
-      },
       {
         "date": "2026-08-09",
         "net_minted": 54476350,
@@ -152914,8 +152932,13 @@
       },
       {
         "date": "2026-08-14",
-        "net_minted": 27089900,
+        "net_minted": 27157500,
         "net_burned": 20276700
+      },
+      {
+        "date": "2026-08-15",
+        "net_minted": 478000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -152931,8 +152954,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 35,
-        "negative": 331,
+        "positive": 34,
+        "negative": 328,
         "event_ids_positive": [
           6642,
           6629,
@@ -152967,10 +152990,10 @@
           6317,
           6291,
           6273,
-          6268,
-          6261
+          6268
         ],
         "event_ids_negative": [
+          6643,
           6641,
           6640,
           6639,
@@ -153297,16 +153320,12 @@
           6270,
           6269,
           6267,
-          6266,
-          6265,
-          6264,
-          6263,
-          6262
+          6266
         ]
       },
       "UDHR": {
-        "positive": 26,
-        "negative": 305,
+        "positive": 25,
+        "negative": 303,
         "event_ids_positive": [
           6642,
           6629,
@@ -153332,10 +153351,10 @@
           6318,
           6317,
           6273,
-          6268,
-          6261
+          6268
         ],
         "event_ids_negative": [
+          6643,
           6641,
           6640,
           6638,
@@ -153637,10 +153656,7 @@
           6270,
           6269,
           6267,
-          6266,
-          6265,
-          6263,
-          6262
+          6266
         ]
       },
       "ILO": {
@@ -153810,8 +153826,8 @@
         ]
       },
       "UNDRIP": {
-        "positive": 12,
-        "negative": 80,
+        "positive": 11,
+        "negative": 79,
         "event_ids_positive": [
           6642,
           6625,
@@ -153823,8 +153839,7 @@
           6341,
           6339,
           6318,
-          6317,
-          6261
+          6317
         ],
         "event_ids_negative": [
           6634,
@@ -153905,8 +153920,7 @@
           6299,
           6282,
           6271,
-          6269,
-          6265
+          6269
         ]
       },
       "Animal": {
@@ -153923,6 +153937,7 @@
           6291
         ],
         "event_ids_negative": [
+          6643,
           6632,
           6604,
           6588,
@@ -153952,13 +153967,12 @@
           6356,
           6326,
           6279,
-          6271,
-          6265
+          6271
         ]
       },
       "PB": {
-        "positive": 23,
-        "negative": 111,
+        "positive": 22,
+        "negative": 109,
         "event_ids_positive": [
           6642,
           6627,
@@ -153981,8 +153995,7 @@
           6322,
           6318,
           6317,
-          6291,
-          6261
+          6291
         ],
         "event_ids_negative": [
           6641,
@@ -154093,9 +154106,7 @@
           6276,
           6272,
           6271,
-          6266,
-          6265,
-          6262
+          6266
         ]
       }
     },
@@ -154103,12 +154114,12 @@
       "niche_pct": 65.7,
       "mainstream_pct": 34.3,
       "total_sources_used": 99,
-      "articles_processed": 381
+      "articles_processed": 378
     },
     "cache_hit_rate_7d": {
-      "hits": 15,
-      "total_events": 381,
-      "pct": 3.9
+      "hits": 16,
+      "total_events": 378,
+      "pct": 4.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -154223,9 +154234,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 42,
+        "count": 41,
         "burn_count": 4,
-        "mint_count": 38,
+        "mint_count": 37,
         "event_ids": [
           6642,
           6641,
@@ -154267,51 +154278,7 @@
           6286,
           6285,
           6284,
-          6266,
-          6262
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 35,
-        "burn_count": 3,
-        "mint_count": 32,
-        "event_ids": [
-          6640,
-          6639,
-          6604,
-          6581,
-          6580,
-          6574,
-          6563,
-          6543,
-          6539,
-          6520,
-          6518,
-          6500,
-          6469,
-          6455,
-          6453,
-          6443,
-          6436,
-          6435,
-          6434,
-          6424,
-          6423,
-          6422,
-          6414,
-          6402,
-          6385,
-          6383,
-          6360,
-          6344,
-          6342,
-          6328,
-          6301,
-          6288,
-          6273,
-          6264,
-          6262
+          6266
         ]
       },
       {
@@ -154320,6 +154287,7 @@
         "burn_count": 1,
         "mint_count": 34,
         "event_ids": [
+          6613,
           6600,
           6579,
           6574,
@@ -154353,8 +154321,48 @@
           6288,
           6280,
           6276,
-          6273,
-          6264
+          6273
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 33,
+        "burn_count": 3,
+        "mint_count": 30,
+        "event_ids": [
+          6640,
+          6639,
+          6604,
+          6581,
+          6580,
+          6574,
+          6563,
+          6543,
+          6539,
+          6520,
+          6518,
+          6500,
+          6469,
+          6455,
+          6453,
+          6443,
+          6436,
+          6435,
+          6434,
+          6424,
+          6423,
+          6422,
+          6414,
+          6402,
+          6385,
+          6383,
+          6360,
+          6344,
+          6342,
+          6328,
+          6301,
+          6288,
+          6273
         ]
       },
       {
@@ -154397,38 +154405,12 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 19,
-        "burn_count": 1,
-        "mint_count": 18,
-        "event_ids": [
-          6598,
-          6567,
-          6544,
-          6527,
-          6511,
-          6494,
-          6452,
-          6448,
-          6445,
-          6435,
-          6411,
-          6307,
-          6306,
-          6305,
-          6304,
-          6296,
-          6295,
-          6265,
-          6262
-        ]
-      },
-      {
         "name": "Agriculture",
-        "count": 17,
+        "count": 18,
         "burn_count": 1,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          6643,
           6634,
           6633,
           6632,
@@ -154446,6 +154428,31 @@
           6330,
           6302,
           6276
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 17,
+        "burn_count": 1,
+        "mint_count": 16,
+        "event_ids": [
+          6598,
+          6567,
+          6544,
+          6527,
+          6511,
+          6494,
+          6452,
+          6448,
+          6445,
+          6435,
+          6411,
+          6307,
+          6306,
+          6305,
+          6304,
+          6296,
+          6295
         ]
       },
       {
@@ -154472,35 +154479,35 @@
         ]
       },
       {
-        "name": "Transport",
+        "name": "Mining",
         "count": 8,
-        "burn_count": 0,
-        "mint_count": 8,
+        "burn_count": 1,
+        "mint_count": 7,
         "event_ids": [
-          6640,
-          6465,
-          6455,
-          6439,
-          6366,
-          6319,
-          6303,
-          6264
+          6620,
+          6614,
+          6568,
+          6445,
+          6396,
+          6394,
+          6387,
+          6271
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 36,
+      "total_burn": 35,
       "direct_action": {
-        "count": 32,
-        "pct": 88.9
+        "count": 31,
+        "pct": 88.6
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 8.3
+        "pct": 8.6
       },
       "untyped": {
         "count": 1,
-        "pct": 2.8
+        "pct": 2.9
       }
     },
     "burn_composition_all_time": {
@@ -154519,24 +154526,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 345,
+      "total_mint": 343,
       "direct_action": {
-        "count": 308,
-        "pct": 89.3
+        "count": 306,
+        "pct": 89.2
       },
       "editorial_alarm": {
-        "count": 23,
-        "pct": 6.7
+        "count": 22,
+        "pct": 6.4
       },
       "untyped": {
-        "count": 14,
-        "pct": 4.1
+        "count": 15,
+        "pct": 4.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4696,
+      "total_mint": 4698,
       "direct_action": {
-        "count": 3878,
+        "count": 3879,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -154544,20 +154551,15 @@
         "pct": 6.0
       },
       "untyped": {
-        "count": 536,
+        "count": 537,
         "pct": 11.4
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 104,
-      "institutional": 277,
-      "citizen_ratio": 0.273,
+      "citizen": 103,
+      "institutional": 275,
+      "citizen_ratio": 0.272,
       "daily": [
-        {
-          "date": "2026-08-08",
-          "citizen": 15,
-          "institutional": 40
-        },
         {
           "date": "2026-08-09",
           "citizen": 12,
@@ -154586,10 +154588,16 @@
         {
           "date": "2026-08-14",
           "citizen": 13,
-          "institutional": 38
+          "institutional": 39
+        },
+        {
+          "date": "2026-08-15",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        6643,
         6632,
         6625,
         6621,
@@ -154691,9 +154699,7 @@
         6282,
         6271,
         6269,
-        6267,
-        6265,
-        6261
+        6267
       ],
       "event_ids_institutional": [
         6642,
@@ -154719,6 +154725,7 @@
         6618,
         6617,
         6615,
+        6613,
         6611,
         6609,
         6608,
@@ -154969,10 +154976,7 @@
         6272,
         6270,
         6268,
-        6266,
-        6264,
-        6263,
-        6262
+        6266
       ]
     }
   }
