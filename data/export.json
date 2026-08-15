@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-15T10:37:00.671739+00:00",
-  "total_events": 6645,
+  "generated_at": "2026-08-15T11:06:55.932906+00:00",
+  "total_events": 6646,
   "total_burned": 7827893280,
-  "total_minted": 9083214059,
+  "total_minted": 9083219309,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6646,
+      "event_title": "Viennese woman sues city over 'discriminatory' toilet fees",
+      "event_url": "https://www.thelocal.at/20260815/viennese-woman-sues-city-over-discriminatory-toilet-fees",
+      "event_source": "The Local Austria (EN)",
+      "decision": "MINT",
+      "amount_crbn": 5250,
+      "final_score": 1.5,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The lawsuit challenges gender discrimination, but the current policy remains harmful and the net impact is modestly negative. | The lawsuit represents a positive step toward gender equality, yet the existing discriminatory fee policy remains harmful. Overall, the net ethical impact is modestly negative given the limited immediate effect.",
+      "tx_hash": "tAdBJRZh9uTQaMq2H9TdZ1xToYDgJadJArpgH2rRQndLRw3wJBEEr8PDR7Tor59LxCM1JPsBxdtbpfErmzdt4FY",
+      "created_at": "2026-08-15T11:06:49.384931+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Austria",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Filing a gender discrimination lawsuit against Vienna's public toilet fee policy\", \"affected_sdgs\": [5, 10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Vienna's policy charging women for toilet cubicles while men use urinals free, discriminating based on gender\", \"affected_sdgs\": [5, 6, 3, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 7\", \"ILO Non-Discrimination\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 6645,
       "event_title": "Facing a particularly deadly Ebola epidemic in DRC, the race to deploy new vaccines",
@@ -152919,15 +152942,15 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.07,
-        "events": 86
+        "burn_ratio": 0.069,
+        "events": 87
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 10
       },
       {
         "region": "MENA",
@@ -152936,8 +152959,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.93,
-        "events": 86
+        "mint_ratio": 0.931,
+        "events": 87
       },
       {
         "region": "North America",
@@ -152983,7 +153006,7 @@
       },
       {
         "date": "2026-08-15",
-        "net_minted": 1154000,
+        "net_minted": 1159250,
         "net_burned": 1080000
       }
     ],
@@ -153038,6 +153061,7 @@
           6291
         ],
         "event_ids_negative": [
+          6646,
           6644,
           6643,
           6641,
@@ -153352,8 +153376,7 @@
           6288,
           6284,
           6283,
-          6282,
-          6281
+          6282
         ]
       },
       "UDHR": {
@@ -153386,6 +153409,7 @@
           6317
         ],
         "event_ids_negative": [
+          6646,
           6644,
           6643,
           6641,
@@ -153675,19 +153699,19 @@
           6290,
           6289,
           6288,
-          6282,
-          6281
+          6282
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           6642,
           6595,
           6545
         ],
         "event_ids_negative": [
+          6646,
           6639,
           6635,
           6631,
@@ -154117,8 +154141,8 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.6,
-      "mainstream_pct": 34.4,
+      "niche_pct": 64.6,
+      "mainstream_pct": 35.4,
       "total_sources_used": 96,
       "articles_processed": 365
     },
@@ -154538,9 +154562,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4699,
+      "total_mint": 4700,
       "direct_action": {
-        "count": 3880,
+        "count": 3881,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -154590,7 +154614,7 @@
         {
           "date": "2026-08-15",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -154696,6 +154720,7 @@
         6282
       ],
       "event_ids_institutional": [
+        6646,
         6645,
         6644,
         6642,
@@ -154959,8 +154984,7 @@
         6286,
         6285,
         6284,
-        6283,
-        6281
+        6283
       ]
     }
   }
