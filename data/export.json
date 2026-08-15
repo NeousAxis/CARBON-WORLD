@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-08-15T20:07:22.397096+00:00",
-  "total_events": 6675,
+  "generated_at": "2026-08-15T20:36:16.637631+00:00",
+  "total_events": 6678,
   "total_burned": 7831916075,
-  "total_minted": 9121693289,
+  "total_minted": 9123608289,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6678,
+      "event_title": "Test moderators use AI-generated writing to judge literacy standards",
+      "event_url": "https://www.newscientist.com/article/2584776-test-moderators-use-ai-generated-writing-to-judge-literacy-standards/?utm_campaign=RSS|NSNS&utm_content=news&utm_medium=RSS&utm_source=NSNS",
+      "event_source": "New Scientist",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.57,
+      "confidence": 7,
+      "justification": "Using AI-generated writing to grade children undermines fair assessment and children's right to quality education, so the action is negative. | While the policy promises cost savings, it compromises the integrity of student assessment and breaches children's educational rights, resulting in a net negative ethical impact.",
+      "tx_hash": "4277BFPNfPWG32ehF98S7vtgxgpuyGXhx9uqhCbhGMWC4vvwxnVnYDBTiwwPFfYadt7sy243AaAY5oTqDaR5zsxd",
+      "created_at": "2026-08-15T20:36:11.039693+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Reduces assessment costs and administrative workload\", \"affected_sdgs\": [4, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Undermines fairness of literacy assessment, violating children's right to quality education\", \"affected_sdgs\": [4, 10], \"violated_rights\": [\"UDHR Article 26\", \"CRC Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 6677,
+      "event_title": "The Download: Flock’s new rules, cloning’s future, and children’s cells",
+      "event_url": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/",
+      "event_source": "MIT Technology Review",
+      "decision": "MINT",
+      "amount_crbn": 770000,
+      "final_score": 3.68,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Privacy gains are outweighed by potential safety risks, leading to a net negative assessment. | The policy change advances privacy rights but carries a moderate risk to public safety. Overall the net ethical balance leans slightly negative due to potential harms to security.",
+      "tx_hash": "wNfxcqmSWwQZKdRqPKjsgCCnrX4ZA3oCY6vEDdriYywmqp5vdQfN3ht6v1CxQvdNnjW1Ys8bKRUWSowU7o4aUhK",
+      "created_at": "2026-08-15T20:36:08.913393+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Flock restricts police access to its nationwide license‑plate reader network, enhancing privacy and reducing mass surveillance.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reduced police access may limit law‑enforcement effectiveness, potentially compromising public safety.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 6676,
+      "event_title": "Reversal for Kast in Chile: Constitutional Court challenges environmental regulation",
+      "event_url": "https://es.mongabay.com/short-article/2026/08/reves-kast-chile-tribunal-constitucional-impugna-normativa-ambiental/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.23,
+      "confidence": 7,
+      "justification": "The court action undermines key environmental protections, resulting in a negative net impact. | While the judicial action upholds constitutional processes, it largely erodes environmental protections, harming climate and biodiversity goals. The net ethical impact is negative, outweighing the modest benefit of rule‑of‑law reinforcement.",
+      "tx_hash": "3JF3w8hrn4zCQXtk7rkyvLNTo8J5eihJQb8MofZoakNGyG1xwwTyUjrDjnC1czVcM8YYkKidux73dgrxQHEkkYMZ",
+      "created_at": "2026-08-15T20:36:06.699696+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Chile",
+      "region": "Latin America",
+      "administration": "Chile-Apruebo Dignidad",
+      "positive_aspects_json": "[{\"description\": \"The Constitutional Court exercised judicial review, reinforcing the rule of law and constitutional oversight.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The court's challenge weakens environmental regulation that protected ecosystems and climate, reducing safeguards for biodiversity and emissions.\", \"affected_sdgs\": [7, 12, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 541000
+    },
     {
       "id": 6675,
       "event_title": "Burnham criticised for EV and North Sea approach amid climate crisis",
@@ -153536,7 +153605,7 @@
       {
         "country": "United States",
         "count": 77,
-        "total_amount": 69533645
+        "total_amount": 70243245
       },
       {
         "country": "Israel",
@@ -153545,8 +153614,8 @@
       },
       {
         "country": "United Kingdom",
-        "count": 12,
-        "total_amount": 4210680
+        "count": 13,
+        "total_amount": 4814680
       },
       {
         "country": "Brazil",
@@ -153599,8 +153668,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.115,
-        "events": 26
+        "burn_ratio": 0.111,
+        "events": 27
       },
       {
         "region": "North America",
@@ -153610,7 +153679,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.067,
-        "events": 89
+        "events": 90
       }
     ],
     "top_regions_destructive": [
@@ -153627,7 +153696,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.933,
-        "events": 89
+        "events": 90
       },
       {
         "region": "North America",
@@ -153636,8 +153705,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.885,
-        "events": 26
+        "mint_ratio": 0.889,
+        "events": 27
       }
     ],
     "supply_trend_7d": [
@@ -153673,7 +153742,7 @@
       },
       {
         "date": "2026-08-15",
-        "net_minted": 12579080,
+        "net_minted": 14494080,
         "net_burned": 5102795
       }
     ],
@@ -153691,7 +153760,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 312,
+        "negative": 313,
         "event_ids_positive": [
           6674,
           6668,
@@ -153734,6 +153803,9 @@
           6317
         ],
         "event_ids_negative": [
+          6678,
+          6677,
+          6676,
           6675,
           6673,
           6672,
@@ -154043,14 +154115,12 @@
           6316,
           6315,
           6314,
-          6313,
-          6312,
-          6311
+          6313
         ]
       },
       "UDHR": {
         "positive": 29,
-        "negative": 285,
+        "negative": 286,
         "event_ids_positive": [
           6674,
           6668,
@@ -154083,6 +154153,9 @@
           6317
         ],
         "event_ids_negative": [
+          6678,
+          6677,
+          6676,
           6675,
           6672,
           6670,
@@ -154365,9 +154438,7 @@
           6316,
           6315,
           6314,
-          6313,
-          6312,
-          6311
+          6313
         ]
       },
       "ILO": {
@@ -154433,7 +154504,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 86,
+        "negative": 87,
         "event_ids_positive": [
           6645,
           6620,
@@ -154442,6 +154513,7 @@
           6318
         ],
         "event_ids_negative": [
+          6678,
           6672,
           6665,
           6634,
@@ -154532,7 +154604,7 @@
       },
       "UNDRIP": {
         "positive": 12,
-        "negative": 75,
+        "negative": 74,
         "event_ids_positive": [
           6648,
           6642,
@@ -154621,8 +154693,7 @@
           6340,
           6338,
           6336,
-          6331,
-          6312
+          6331
         ]
       },
       "Animal": {
@@ -154673,7 +154744,7 @@
       },
       "PB": {
         "positive": 22,
-        "negative": 100,
+        "negative": 101,
         "event_ids_positive": [
           6648,
           6642,
@@ -154699,6 +154770,7 @@
           6317
         ],
         "event_ids_negative": [
+          6676,
           6675,
           6671,
           6670,
@@ -154803,14 +154875,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 67.7,
-      "mainstream_pct": 32.3,
-      "total_sources_used": 96,
-      "articles_processed": 359
+      "niche_pct": 67.3,
+      "mainstream_pct": 32.7,
+      "total_sources_used": 98,
+      "articles_processed": 360
     },
     "cache_hit_rate_7d": {
       "hits": 8,
-      "total_events": 359,
+      "total_events": 360,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -154865,16 +154937,6 @@
         ]
       },
       {
-        "name": "NATO",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          6618,
-          6311
-        ]
-      },
-      {
         "name": "UNESCO",
         "count": 2,
         "burn_count": 0,
@@ -154892,6 +154954,15 @@
         "event_ids": [
           6439,
           6438
+        ]
+      },
+      {
+        "name": "NATO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          6618
         ]
       },
       {
@@ -155041,9 +155112,9 @@
       },
       {
         "name": "Defense",
-        "count": 28,
+        "count": 27,
         "burn_count": 0,
-        "mint_count": 28,
+        "mint_count": 27,
         "event_ids": [
           6637,
           6572,
@@ -155071,8 +155142,7 @@
           6355,
           6352,
           6342,
-          6336,
-          6311
+          6336
         ]
       },
       {
@@ -155127,10 +155197,11 @@
       },
       {
         "name": "Tech",
-        "count": 11,
+        "count": 12,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          6678,
           6598,
           6567,
           6544,
@@ -155193,14 +155264,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 319,
+      "total_mint": 320,
       "direct_action": {
         "count": 293,
-        "pct": 91.8
+        "pct": 91.6
       },
       "editorial_alarm": {
-        "count": 19,
-        "pct": 6.0
+        "count": 20,
+        "pct": 6.2
       },
       "untyped": {
         "count": 7,
@@ -155208,13 +155279,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4716,
+      "total_mint": 4719,
       "direct_action": {
-        "count": 3897,
+        "count": 3899,
         "pct": 82.6
       },
       "editorial_alarm": {
-        "count": 282,
+        "count": 283,
         "pct": 6.0
       },
       "untyped": {
@@ -155223,9 +155294,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 95,
+      "citizen": 96,
       "institutional": 264,
-      "citizen_ratio": 0.265,
+      "citizen_ratio": 0.267,
       "daily": [
         {
           "date": "2026-08-09",
@@ -155259,11 +155330,12 @@
         },
         {
           "date": "2026-08-15",
-          "citizen": 6,
-          "institutional": 21
+          "citizen": 7,
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
+        6676,
         6668,
         6664,
         6652,
@@ -155361,6 +155433,8 @@
         6317
       ],
       "event_ids_institutional": [
+        6678,
+        6677,
         6675,
         6674,
         6673,
@@ -155622,9 +155696,7 @@
         6316,
         6315,
         6314,
-        6313,
-        6312,
-        6311
+        6313
       ]
     }
   }
