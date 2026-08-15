@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-15T12:05:52.426625+00:00",
-  "total_events": 6649,
+  "generated_at": "2026-08-15T12:37:16.085226+00:00",
+  "total_events": 6650,
   "total_burned": 7828131575,
-  "total_minted": 9083273409,
+  "total_minted": 9083279449,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6650,
+      "event_title": "Russians snap up new homes built on Ukraine 'graveyard'",
+      "event_url": "https://www.dw.com/en/russians-snap-up-new-homes-built-on-ukraine-graveyard/a-78360176?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 6040,
+      "final_score": -2.73,
+      "confidence": 7,
+      "justification": "The action deepens illegal occupation and violates human rights, outweighing any minor housing benefit. | While the construction provides limited shelter, it primarily serves an illegal occupation, erases war‑related sites and breaches fundamental human rights, resulting in a net negative ethical outcome.",
+      "tx_hash": "4icygpijcFFpKEfPkb7QrbTWMtpct4NpAUWyn9JPFGaUVLt6nbGBibfGk2ctSxVCNH5ezBYekaupt12MhpMRTy6r",
+      "created_at": "2026-08-15T12:37:10.340377+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"Construction of new housing units increases shelter capacity for residents in Mariupol.\", \"affected_sdgs\": [1, 11], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Building and selling homes in occupied Mariupol undermines Ukrainian sovereignty, erases sites of war casualties, and violates the right to property and cultural memory.\", \"affected_sdgs\": [16, 11], \"violated_rights\": [\"UDHR Article 17\", \"UDHR Article 2\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6649,
       "event_title": "Building Peasant Internationalism: La Via Campesina in Cotonou",
@@ -152952,8 +152975,8 @@
       },
       {
         "country": "United Kingdom",
-        "count": 11,
-        "total_amount": 3254680
+        "count": 10,
+        "total_amount": 2776680
       },
       {
         "country": "South Africa",
@@ -153075,7 +153098,7 @@
       },
       {
         "date": "2026-08-15",
-        "net_minted": 1213350,
+        "net_minted": 1219390,
         "net_burned": 1318295
       }
     ],
@@ -153093,7 +153116,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 35,
-        "negative": 316,
+        "negative": 315,
         "event_ids_positive": [
           6649,
           6648,
@@ -153132,6 +153155,7 @@
           6291
         ],
         "event_ids_negative": [
+          6650,
           6647,
           6646,
           6644,
@@ -153445,14 +153469,12 @@
           6292,
           6290,
           6289,
-          6288,
-          6284,
-          6283
+          6288
         ]
       },
       "UDHR": {
         "positive": 25,
-        "negative": 291,
+        "negative": 292,
         "event_ids_positive": [
           6649,
           6645,
@@ -153481,6 +153503,7 @@
           6317
         ],
         "event_ids_negative": [
+          6650,
           6647,
           6646,
           6644,
@@ -154080,7 +154103,7 @@
       },
       "PB": {
         "positive": 23,
-        "negative": 103,
+        "negative": 102,
         "event_ids_positive": [
           6648,
           6642,
@@ -154208,20 +154231,19 @@
           6302,
           6300,
           6297,
-          6288,
-          6283
+          6288
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.0,
-      "mainstream_pct": 34.0,
+      "niche_pct": 67.0,
+      "mainstream_pct": 33.0,
       "total_sources_used": 97,
-      "articles_processed": 367
+      "articles_processed": 366
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 367,
+      "total_events": 366,
       "pct": 4.4
     },
     "active_partners_7d": [],
@@ -154333,9 +154355,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 40,
+        "count": 39,
         "burn_count": 4,
-        "mint_count": 36,
+        "mint_count": 35,
         "event_ids": [
           6642,
           6641,
@@ -154375,8 +154397,48 @@
           6288,
           6287,
           6286,
-          6285,
-          6284
+          6285
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 33,
+        "burn_count": 2,
+        "mint_count": 31,
+        "event_ids": [
+          6650,
+          6640,
+          6639,
+          6604,
+          6581,
+          6580,
+          6574,
+          6563,
+          6543,
+          6539,
+          6520,
+          6518,
+          6500,
+          6469,
+          6455,
+          6453,
+          6443,
+          6436,
+          6435,
+          6434,
+          6424,
+          6423,
+          6422,
+          6414,
+          6402,
+          6385,
+          6383,
+          6360,
+          6344,
+          6342,
+          6328,
+          6301,
+          6288
         ]
       },
       {
@@ -154421,50 +154483,10 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 32,
-        "burn_count": 2,
-        "mint_count": 30,
-        "event_ids": [
-          6640,
-          6639,
-          6604,
-          6581,
-          6580,
-          6574,
-          6563,
-          6543,
-          6539,
-          6520,
-          6518,
-          6500,
-          6469,
-          6455,
-          6453,
-          6443,
-          6436,
-          6435,
-          6434,
-          6424,
-          6423,
-          6422,
-          6414,
-          6402,
-          6385,
-          6383,
-          6360,
-          6344,
-          6342,
-          6328,
-          6301,
-          6288
-        ]
-      },
-      {
         "name": "Defense",
-        "count": 31,
+        "count": 30,
         "burn_count": 0,
-        "mint_count": 31,
+        "mint_count": 30,
         "event_ids": [
           6637,
           6572,
@@ -154495,8 +154517,7 @@
           6336,
           6311,
           6303,
-          6299,
-          6283
+          6299
         ]
       },
       {
@@ -154622,14 +154643,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 331,
+      "total_mint": 330,
       "direct_action": {
-        "count": 294,
+        "count": 293,
         "pct": 88.8
       },
       "editorial_alarm": {
         "count": 22,
-        "pct": 6.6
+        "pct": 6.7
       },
       "untyped": {
         "count": 15,
@@ -154637,9 +154658,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4701,
+      "total_mint": 4702,
       "direct_action": {
-        "count": 3882,
+        "count": 3883,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -154653,8 +154674,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 101,
-      "institutional": 266,
-      "citizen_ratio": 0.275,
+      "institutional": 265,
+      "citizen_ratio": 0.276,
       "daily": [
         {
           "date": "2026-08-09",
@@ -154689,7 +154710,7 @@
         {
           "date": "2026-08-15",
           "citizen": 3,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -154796,6 +154817,7 @@
         6288
       ],
       "event_ids_institutional": [
+        6650,
         6647,
         6646,
         6645,
@@ -155059,9 +155081,7 @@
         6289,
         6287,
         6286,
-        6285,
-        6284,
-        6283
+        6285
       ]
     }
   }
