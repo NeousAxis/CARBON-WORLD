@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-15T12:37:16.085226+00:00",
-  "total_events": 6650,
+  "generated_at": "2026-08-15T13:06:58.899401+00:00",
+  "total_events": 6651,
   "total_burned": 7828131575,
-  "total_minted": 9083279449,
+  "total_minted": 9083283599,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6651,
+      "event_title": "Lebanon says 9 dead in strikes as Israel says targeted Hezbollah",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/lebanon-says-9-dead-strikes-israel-says-targeted-hezbollah",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 4150,
+      "final_score": -3.1,
+      "confidence": 7,
+      "justification": "Israeli strikes causing civilian deaths outweigh Lebanon's de‑escalation call, resulting in a net negative impact. | The civilian casualties from the Israeli strikes represent a serious violation of human rights and health, outweighing the Prime Minister's call for de‑escalation, leading to a net negative ethical outcome.",
+      "tx_hash": "5JocEmDxbdXmi6T3kD1zackToFKuQco9PGFrt6wXzoMcYd4vQCm91yKChdpLgfrTWBokJRypbq6V72kKLT1u8xkz",
+      "created_at": "2026-08-15T13:06:51.286398+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Lebanon Prime Minister publicly urged Israel to halt escalation and seek peace\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Israeli air strikes in southern Lebanon killed nine civilians, including three children\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 6650,
       "event_title": "Russians snap up new homes built on Ukraine 'graveyard'",
@@ -152960,13 +152983,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 78,
-        "total_amount": 64399570
+        "count": 76,
+        "total_amount": 63047570
       },
       {
         "country": "Israel",
-        "count": 13,
-        "total_amount": 3258260
+        "count": 14,
+        "total_amount": 3262410
       },
       {
         "country": "Brazil",
@@ -153029,8 +153052,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.082,
-        "events": 85
+        "burn_ratio": 0.084,
+        "events": 83
       },
       {
         "region": "Europe",
@@ -153056,8 +153079,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.918,
-        "events": 85
+        "mint_ratio": 0.916,
+        "events": 83
       },
       {
         "region": "Asia",
@@ -153098,7 +153121,7 @@
       },
       {
         "date": "2026-08-15",
-        "net_minted": 1219390,
+        "net_minted": 1223540,
         "net_burned": 1318295
       }
     ],
@@ -153116,7 +153139,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 35,
-        "negative": 315,
+        "negative": 313,
         "event_ids_positive": [
           6649,
           6648,
@@ -153155,6 +153178,7 @@
           6291
         ],
         "event_ids_negative": [
+          6651,
           6650,
           6647,
           6646,
@@ -153466,15 +153490,12 @@
           6296,
           6295,
           6293,
-          6292,
-          6290,
-          6289,
-          6288
+          6292
         ]
       },
       "UDHR": {
         "positive": 25,
-        "negative": 292,
+        "negative": 290,
         "event_ids_positive": [
           6649,
           6645,
@@ -153503,6 +153524,7 @@
           6317
         ],
         "event_ids_negative": [
+          6651,
           6650,
           6647,
           6646,
@@ -153791,10 +153813,7 @@
           6296,
           6295,
           6293,
-          6292,
-          6290,
-          6289,
-          6288
+          6292
         ]
       },
       "ILO": {
@@ -154103,7 +154122,7 @@
       },
       "PB": {
         "positive": 23,
-        "negative": 102,
+        "negative": 101,
         "event_ids_positive": [
           6648,
           6642,
@@ -154230,21 +154249,20 @@
           6303,
           6302,
           6300,
-          6297,
-          6288
+          6297
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 67.0,
-      "mainstream_pct": 33.0,
+      "niche_pct": 68.0,
+      "mainstream_pct": 32.0,
       "total_sources_used": 97,
-      "articles_processed": 366
+      "articles_processed": 361
     },
     "cache_hit_rate_7d": {
-      "hits": 16,
-      "total_events": 366,
-      "pct": 4.4
+      "hits": 13,
+      "total_events": 361,
+      "pct": 3.6
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -154355,9 +154373,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 39,
+        "count": 35,
         "burn_count": 4,
-        "mint_count": 35,
+        "mint_count": 31,
         "event_ids": [
           6642,
           6641,
@@ -154393,18 +154411,14 @@
           6328,
           6327,
           6321,
-          6294,
-          6288,
-          6287,
-          6286,
-          6285
+          6294
         ]
       },
       {
         "name": "Construction",
-        "count": 33,
+        "count": 32,
         "burn_count": 2,
-        "mint_count": 31,
+        "mint_count": 30,
         "event_ids": [
           6650,
           6640,
@@ -154437,15 +154451,14 @@
           6344,
           6342,
           6328,
-          6301,
-          6288
+          6301
         ]
       },
       {
         "name": "Finance",
-        "count": 33,
+        "count": 32,
         "burn_count": 0,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           6644,
           6613,
@@ -154478,8 +154491,7 @@
           6337,
           6324,
           6310,
-          6293,
-          6288
+          6293
         ]
       },
       {
@@ -154643,24 +154655,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 330,
+      "total_mint": 325,
       "direct_action": {
-        "count": 293,
-        "pct": 88.8
+        "count": 292,
+        "pct": 89.8
       },
       "editorial_alarm": {
-        "count": 22,
-        "pct": 6.7
+        "count": 21,
+        "pct": 6.5
       },
       "untyped": {
-        "count": 15,
-        "pct": 4.5
+        "count": 12,
+        "pct": 3.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4702,
+      "total_mint": 4703,
       "direct_action": {
-        "count": 3883,
+        "count": 3884,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -154673,9 +154685,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 101,
-      "institutional": 265,
-      "citizen_ratio": 0.276,
+      "citizen": 100,
+      "institutional": 261,
+      "citizen_ratio": 0.277,
       "daily": [
         {
           "date": "2026-08-09",
@@ -154710,7 +154722,7 @@
         {
           "date": "2026-08-15",
           "citizen": 3,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -154813,10 +154825,10 @@
         6301,
         6300,
         6297,
-        6291,
-        6288
+        6291
       ],
       "event_ids_institutional": [
+        6651,
         6650,
         6647,
         6646,
@@ -155076,12 +155088,7 @@
         6295,
         6294,
         6293,
-        6292,
-        6290,
-        6289,
-        6287,
-        6286,
-        6285
+        6292
       ]
     }
   }
