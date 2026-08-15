@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-15T22:06:08.023017+00:00",
-  "total_events": 6680,
+  "generated_at": "2026-08-15T23:07:09.786033+00:00",
+  "total_events": 6681,
   "total_burned": 7831916075,
-  "total_minted": 9123621809,
+  "total_minted": 9123688509,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6681,
+      "event_title": "Israeli strikes kill 11 in southern Lebanon, Hezbollah threatens to retaliate",
+      "event_url": "https://www.france24.com/en/middle-east/20260815-israeli-strikes-kill-11-in-southern-lebanon-hezbollah-threatens-to-retaliate",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 66700,
+      "final_score": -2.58,
+      "confidence": 7,
+      "justification": "The action caused civilian deaths and escalated conflict, resulting in a net negative impact. | The Israeli airstrikes resulted in significant civilian harm and heightened regional tension, outweighing any limited deterrence benefit. The action violates fundamental human rights and undermines peace, leading to a net negative ethical judgment.",
+      "tx_hash": "5EC2BPqj2XDTFmsayTuF9i1iqgKvuqdBBZQBbBYTBqPQfzaTe39MsTYU9Aat9ZFJXmjRt1j2arFEaWkVTZ21KMpf",
+      "created_at": "2026-08-15T23:07:03.656614+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israeli strikes intended to deter further Hezbollah attacks on Israeli troops\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Airstrikes caused civilian deaths and injuries in southern Lebanon, escalating the conflict\", \"affected_sdgs\": [3, 11, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 6680,
       "event_title": "Israeli Strikes Kill 11 in Lebanon, Including 3 Children, as Strikes Escalate",
@@ -153655,8 +153678,8 @@
       },
       {
         "country": "Israel",
-        "count": 15,
-        "total_amount": 3206890
+        "count": 16,
+        "total_amount": 3273590
       },
       {
         "country": "United Kingdom",
@@ -153737,7 +153760,7 @@
       {
         "region": "MENA",
         "mint_ratio": 0.971,
-        "events": 34
+        "events": 35
       },
       {
         "region": "Europe",
@@ -153788,7 +153811,7 @@
       },
       {
         "date": "2026-08-15",
-        "net_minted": 14507600,
+        "net_minted": 14574300,
         "net_burned": 5102795
       }
     ],
@@ -153806,7 +153829,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 39,
-        "negative": 312,
+        "negative": 313,
         "event_ids_positive": [
           6674,
           6668,
@@ -153849,6 +153872,7 @@
           6317
         ],
         "event_ids_negative": [
+          6681,
           6680,
           6679,
           6678,
@@ -154165,7 +154189,7 @@
       },
       "UDHR": {
         "positive": 29,
-        "negative": 285,
+        "negative": 286,
         "event_ids_positive": [
           6674,
           6668,
@@ -154198,6 +154222,7 @@
           6317
         ],
         "event_ids_negative": [
+          6681,
           6680,
           6679,
           6678,
@@ -154921,11 +154946,11 @@
       "niche_pct": 68.4,
       "mainstream_pct": 31.6,
       "total_sources_used": 98,
-      "articles_processed": 359
+      "articles_processed": 360
     },
     "cache_hit_rate_7d": {
       "hits": 8,
-      "total_events": 359,
+      "total_events": 360,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -155308,14 +155333,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 319,
+      "total_mint": 320,
       "direct_action": {
-        "count": 292,
-        "pct": 91.5
+        "count": 293,
+        "pct": 91.6
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 6.3
+        "pct": 6.2
       },
       "untyped": {
         "count": 7,
@@ -155323,9 +155348,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4721,
+      "total_mint": 4722,
       "direct_action": {
-        "count": 3901,
+        "count": 3902,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -155339,7 +155364,7 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 96,
-      "institutional": 263,
+      "institutional": 264,
       "citizen_ratio": 0.267,
       "daily": [
         {
@@ -155375,7 +155400,7 @@
         {
           "date": "2026-08-15",
           "citizen": 7,
-          "institutional": 25
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
@@ -155477,6 +155502,7 @@
         6317
       ],
       "event_ids_institutional": [
+        6681,
         6680,
         6679,
         6678,
