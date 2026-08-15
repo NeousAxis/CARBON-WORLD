@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-15T05:37:08.343671+00:00",
-  "total_events": 6644,
-  "total_burned": 7826813280,
+  "generated_at": "2026-08-15T08:06:36.923033+00:00",
+  "total_events": 6645,
+  "total_burned": 7827893280,
   "total_minted": 9083214059,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6645,
+      "event_title": "Facing a particularly deadly Ebola epidemic in DRC, the race to deploy new vaccines",
+      "event_url": "https://www.letemps.ch/articles/face-a-une-epidemie-d-ebola-particulierement-meurtriere-en-rdc-la-course-contre-la-montre-pour-deployer-de-nouveaux-vaccins",
+      "event_source": "Le Temps (CH)",
+      "decision": "BURN",
+      "amount_crbn": 1080000,
+      "final_score": 6.21,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Rapid vaccine deployment in DRC markedly reduces Ebola deaths despite modest safety uncertainties, yielding a net positive impact. | The vaccine rollout offers a strong health benefit by curbing Ebola deaths, outweighing moderate safety and consent concerns. Overall the action is ethically positive.",
+      "tx_hash": "KRncHzZwMu24Wpw62WA75gfEXUWDpEpJRQbKhznarT5EjnGraMptkhgtYjGXkeCar3wZyNaWjYkdmFaVd5547gc",
+      "created_at": "2026-08-15T08:06:30.815751+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Rapid deployment and testing of Ebola vaccines in the Democratic Republic of the Congo\", \"affected_sdgs\": [3], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Accelerated vaccine trials risk insufficient safety data and consent challenges for vulnerable populations\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 12\", \"CRC Article 24\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 6644,
       "event_title": "NIH is ending a key grant for budding clinical researchers",
@@ -152832,8 +152855,8 @@
       },
       {
         "country": "Brazil",
-        "count": 13,
-        "total_amount": 5637000
+        "count": 12,
+        "total_amount": 5337000
       },
       {
         "country": "United Kingdom",
@@ -152853,6 +152876,11 @@
         "total_amount": 7220000
       },
       {
+        "country": "Democratic Republic of the Congo",
+        "count": 2,
+        "total_amount": 1580000
+      },
+      {
         "country": "South Africa",
         "count": 2,
         "total_amount": 1733200
@@ -152866,11 +152894,6 @@
         "country": "Kenya",
         "count": 2,
         "total_amount": 661000
-      },
-      {
-        "country": "Indonesia",
-        "count": 2,
-        "total_amount": 432500
       }
     ],
     "top_regions_sustainable": [
@@ -152881,8 +152904,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.138,
-        "events": 29
+        "burn_ratio": 0.143,
+        "events": 28
       },
       {
         "region": "Asia",
@@ -152961,7 +152984,7 @@
       {
         "date": "2026-08-15",
         "net_minted": 1154000,
-        "net_burned": 0
+        "net_burned": 1080000
       }
     ],
     "event_of_the_day": {
@@ -152978,8 +153001,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 33,
-        "negative": 324,
+        "negative": 322,
         "event_ids_positive": [
+          6645,
           6642,
           6629,
           6627,
@@ -153011,8 +153035,7 @@
           6322,
           6318,
           6317,
-          6291,
-          6273
+          6291
         ],
         "event_ids_negative": [
           6644,
@@ -153336,15 +153359,14 @@
           6278,
           6277,
           6276,
-          6275,
-          6274,
-          6272
+          6275
         ]
       },
       "UDHR": {
         "positive": 24,
-        "negative": 299,
+        "negative": 297,
         "event_ids_positive": [
+          6645,
           6642,
           6629,
           6627,
@@ -153367,8 +153389,7 @@
           6341,
           6339,
           6318,
-          6317,
-          6273
+          6317
         ],
         "event_ids_negative": [
           6644,
@@ -153667,9 +153688,7 @@
           6278,
           6277,
           6276,
-          6275,
-          6274,
-          6272
+          6275
         ]
       },
       "ILO": {
@@ -153733,9 +153752,10 @@
         ]
       },
       "CRC": {
-        "positive": 4,
+        "positive": 5,
         "negative": 91,
         "event_ids_positive": [
+          6645,
           6620,
           6598,
           6341,
@@ -153979,7 +153999,7 @@
       },
       "PB": {
         "positive": 22,
-        "negative": 107,
+        "negative": 106,
         "event_ids_positive": [
           6642,
           6627,
@@ -154110,8 +154130,7 @@
           6283,
           6279,
           6278,
-          6276,
-          6272
+          6276
         ]
       }
     },
@@ -154119,19 +154138,19 @@
       "niche_pct": 64.9,
       "mainstream_pct": 35.1,
       "total_sources_used": 97,
-      "articles_processed": 373
+      "articles_processed": 371
     },
     "cache_hit_rate_7d": {
       "hits": 16,
-      "total_events": 373,
+      "total_events": 371,
       "pct": 4.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 19,
-        "burn_count": 5,
+        "count": 18,
+        "burn_count": 4,
         "mint_count": 14,
         "event_ids": [
           6611,
@@ -154151,15 +154170,14 @@
           6305,
           6304,
           6296,
-          6295,
-          6273
+          6295
         ]
       },
       {
         "name": "WHO",
-        "count": 10,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           6631,
           6551,
@@ -154169,8 +154187,7 @@
           6438,
           6360,
           6298,
-          6278,
-          6272
+          6278
         ]
       },
       {
@@ -154286,8 +154303,8 @@
       },
       {
         "name": "Finance",
-        "count": 36,
-        "burn_count": 1,
+        "count": 35,
+        "burn_count": 0,
         "mint_count": 35,
         "event_ids": [
           6644,
@@ -154324,14 +154341,13 @@
           6293,
           6288,
           6280,
-          6276,
-          6273
+          6276
         ]
       },
       {
         "name": "Construction",
-        "count": 33,
-        "burn_count": 3,
+        "count": 32,
+        "burn_count": 2,
         "mint_count": 30,
         "event_ids": [
           6640,
@@ -154365,8 +154381,7 @@
           6342,
           6328,
           6301,
-          6288,
-          6273
+          6288
         ]
       },
       {
@@ -154484,10 +154499,11 @@
       },
       {
         "name": "Pharma",
-        "count": 8,
-        "burn_count": 0,
+        "count": 9,
+        "burn_count": 1,
         "mint_count": 8,
         "event_ids": [
+          6645,
           6515,
           6507,
           6457,
@@ -154515,9 +154531,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1937,
+      "total_burn": 1938,
       "direct_action": {
-        "count": 1518,
+        "count": 1519,
         "pct": 78.4
       },
       "editorial_consciousness": {
@@ -154530,10 +154546,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 339,
+      "total_mint": 337,
       "direct_action": {
-        "count": 302,
-        "pct": 89.1
+        "count": 300,
+        "pct": 89.0
       },
       "editorial_alarm": {
         "count": 22,
@@ -154541,7 +154557,7 @@
       },
       "untyped": {
         "count": 15,
-        "pct": 4.4
+        "pct": 4.5
       }
     },
     "mint_composition_all_time": {
@@ -154561,8 +154577,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 100,
-      "institutional": 273,
-      "citizen_ratio": 0.268,
+      "institutional": 271,
+      "citizen_ratio": 0.27,
       "daily": [
         {
           "date": "2026-08-09",
@@ -154597,7 +154613,7 @@
         {
           "date": "2026-08-15",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -154703,6 +154719,7 @@
         6282
       ],
       "event_ids_institutional": [
+        6645,
         6644,
         6642,
         6641,
@@ -154972,10 +154989,7 @@
         6278,
         6277,
         6276,
-        6275,
-        6274,
-        6273,
-        6272
+        6275
       ]
     }
   }
