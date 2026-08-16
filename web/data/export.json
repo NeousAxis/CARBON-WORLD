@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-16T20:06:43.638827+00:00",
-  "total_events": 6702,
-  "total_burned": 7834958075,
+  "generated_at": "2026-08-16T20:35:39.837190+00:00",
+  "total_events": 6703,
+  "total_burned": 7836312575,
   "total_minted": 9138530529,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6703,
+      "event_title": "Rehabilitating housing, a sustainable way to save energy and increase the total stock",
+      "event_url": "https://efeverde.com/rehabilitar-vivienda-ahorrar-energia-aumentar-parque-total/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "BURN",
+      "amount_crbn": 1354500,
+      "final_score": 6.45,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Strong national policy delivers major climate and housing benefits, outweighing moderate financial and transitional costs. | The policy strongly supports climate action, affordable clean energy and the right to adequate housing, outweighing moderate fiscal and transitional challenges.",
+      "tx_hash": "4APRakEDMC5yguu6EemwXvoRTNKvXaL6GJqqUgty3EQGAPZ1do3QwVXjr8eWt9v7Sa7KJ26EC7vCDnUXLL3cbczn",
+      "created_at": "2026-08-16T20:35:34.148217+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"National strategy for energy-efficient building retrofits aims to reduce emissions, improve housing quality and increase total housing stock.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Implementation requires substantial public financing and may generate short‑term construction waste and cost burdens for low‑income households.\", \"affected_sdgs\": [1, 8], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 6702,
       "event_title": "Hundreds of thousands of women in England use free morning-after pill service at pharmacies",
@@ -154187,6 +154210,11 @@
         "total_amount": 8565500
       },
       {
+        "country": "Spain",
+        "count": 2,
+        "total_amount": 1958500
+      },
+      {
         "country": "United Kingdom",
         "count": 2,
         "total_amount": 1137000
@@ -154200,11 +154228,6 @@
         "country": "Germany",
         "count": 2,
         "total_amount": 893865
-      },
-      {
-        "country": "Democratic Republic of the Congo",
-        "count": 2,
-        "total_amount": 1580000
       }
     ],
     "top_regions_sustainable": [
@@ -154215,8 +154238,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.115,
-        "events": 87
+        "burn_ratio": 0.125,
+        "events": 88
       },
       {
         "region": "North America",
@@ -154295,7 +154318,7 @@
       {
         "date": "2026-08-16",
         "net_minted": 14842020,
-        "net_burned": 3042000
+        "net_burned": 4396500
       }
     ],
     "event_of_the_day": {
@@ -154311,9 +154334,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 40,
+        "positive": 41,
         "negative": 299,
         "event_ids_positive": [
+          6703,
           6702,
           6697,
           6695,
@@ -154658,9 +154682,10 @@
         ]
       },
       "UDHR": {
-        "positive": 30,
+        "positive": 31,
         "negative": 272,
         "event_ids_positive": [
+          6703,
           6702,
           6697,
           6695,
@@ -155247,9 +155272,10 @@
         ]
       },
       "PB": {
-        "positive": 20,
+        "positive": 21,
         "negative": 98,
         "event_ids_positive": [
+          6703,
           6692,
           6687,
           6648,
@@ -155377,11 +155403,11 @@
       "niche_pct": 63.8,
       "mainstream_pct": 36.2,
       "total_sources_used": 94,
-      "articles_processed": 352
+      "articles_processed": 353
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 352,
+      "total_events": 353,
       "pct": 3.7
     },
     "active_partners_7d": [],
@@ -155490,10 +155516,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 34,
-        "burn_count": 2,
+        "count": 35,
+        "burn_count": 3,
         "mint_count": 32,
         "event_ids": [
+          6703,
           6701,
           6697,
           6695,
@@ -155532,10 +155559,11 @@
       },
       {
         "name": "Energy",
-        "count": 33,
-        "burn_count": 4,
+        "count": 34,
+        "burn_count": 5,
         "mint_count": 29,
         "event_ids": [
+          6703,
           6675,
           6670,
           6656,
@@ -155573,10 +155601,11 @@
       },
       {
         "name": "Construction",
-        "count": 29,
-        "burn_count": 3,
+        "count": 30,
+        "burn_count": 4,
         "mint_count": 26,
         "event_ids": [
+          6703,
           6657,
           6650,
           6640,
@@ -155732,14 +155761,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 41,
+      "total_burn": 42,
       "direct_action": {
-        "count": 35,
-        "pct": 85.4
+        "count": 36,
+        "pct": 85.7
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 12.2
+        "pct": 11.9
       },
       "untyped": {
         "count": 1,
@@ -155747,9 +155776,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1951,
+      "total_burn": 1952,
       "direct_action": {
-        "count": 1529,
+        "count": 1530,
         "pct": 78.4
       },
       "editorial_consciousness": {
@@ -155793,8 +155822,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 89,
-      "institutional": 263,
-      "citizen_ratio": 0.253,
+      "institutional": 264,
+      "citizen_ratio": 0.252,
       "daily": [
         {
           "date": "2026-08-10",
@@ -155829,7 +155858,7 @@
         {
           "date": "2026-08-16",
           "citizen": 4,
-          "institutional": 17
+          "institutional": 18
         }
       ],
       "event_ids_citizen": [
@@ -155924,6 +155953,7 @@
         6355
       ],
       "event_ids_institutional": [
+        6703,
         6702,
         6701,
         6700,
