@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-16T17:37:34.378358+00:00",
-  "total_events": 6696,
-  "total_burned": 7834032075,
-  "total_minted": 9131185379,
+  "generated_at": "2026-08-16T18:06:35.191770+00:00",
+  "total_events": 6698,
+  "total_burned": 7834708075,
+  "total_minted": 9131406529,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6698,
+      "event_title": "Autonomous delivery vehicles: France paves the way for their approval",
+      "event_url": "https://www.ouest-france.fr/economie/transports/vehicules-de-livraison-autonomes-la-france-ouvre-la-voie-a-leur-homologation-3033a9ec-9992-11f1-8c29-31ba9300fba3?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 221150,
+      "final_score": -0.93,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Approval offers emission benefits but creates safety, labour, and waste risks, resulting in a net negative outcome. | The approval could lower emissions and improve logistics, but it raises significant safety, labour, and waste concerns. Overall the negative impacts outweigh the positives, leading to a net ethical downside.",
+      "tx_hash": "3UnsjahQHeHYQeMTYJXQQLX6jbWEQi4LDFZBdxgBq6Qiscj4fweDNTmsZE66KSUVjBzz7ZxrzHVzJaMAFYJLA81K",
+      "created_at": "2026-08-16T18:06:29.270604+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Potential reduction in emissions from electric autonomous delivery vehicles\", \"affected_sdgs\": [13, 7, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Improved last‑mile delivery efficiency reducing traffic congestion\", \"affected_sdgs\": [11, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increased risk of accidents affecting pedestrian safety\", \"affected_sdgs\": [3, 11], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential displacement of delivery workers without adequate transition measures\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"ILO Convention 111\", \"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}, {\"description\": \"Increased electronic waste and resource consumption from vehicle components\", \"affected_sdgs\": [12], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
+    {
+      "id": 6697,
+      "event_title": "Why financial education is like sex education",
+      "event_url": "https://www.rnz.co.nz/news/education/1021420/why-financial-education-is-like-sex-education",
+      "event_source": "RNZ News NZ",
+      "decision": "BURN",
+      "amount_crbn": 676000,
+      "final_score": 6.53,
+      "confidence": 8,
+      "justification": "National financial‑education curriculum delivers strong positive social and economic benefits, outweighing any minor implementation risks. | The curriculum expands quality education and equips youth with financial skills, supporting poverty reduction, decent work and reduced inequality. No direct harms are evident, making the net ethical impact strongly positive.",
+      "tx_hash": "48BpXUJPRqESbSqegGM67xHYVJCfFL3NnfmnGGD2cwYEDuaqLMiH5fuvc65LqJV4wWnAVACuc3pK5dJZ34EbgeD1",
+      "created_at": "2026-08-16T18:06:27.076858+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Implementation of a national financial education curriculum for primary and intermediate students\", \"affected_sdgs\": [1, 4, 8, 10], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 6696,
       "event_title": "Ukraine attacks Wildberries, Russia's biggest online market",
@@ -154038,8 +154084,8 @@
       },
       {
         "country": "France",
-        "count": 9,
-        "total_amount": 2691300
+        "count": 10,
+        "total_amount": 2912450
       }
     ],
     "top_countries_burn": [
@@ -154077,8 +154123,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.106,
-        "events": 85
+        "burn_ratio": 0.105,
+        "events": 86
       },
       {
         "region": "North America",
@@ -154086,22 +154132,17 @@
         "events": 87
       },
       {
+        "region": "Oceania",
+        "burn_ratio": 0.083,
+        "events": 12
+      },
+      {
         "region": "Latin America",
         "burn_ratio": 0.083,
         "events": 24
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.069,
-        "events": 29
       }
     ],
     "top_regions_destructive": [
-      {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 11
-      },
       {
         "region": "MENA",
         "mint_ratio": 0.97,
@@ -154109,8 +154150,13 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.931,
-        "events": 29
+        "mint_ratio": 0.929,
+        "events": 28
+      },
+      {
+        "region": "Oceania",
+        "mint_ratio": 0.917,
+        "events": 12
       },
       {
         "region": "Latin America",
@@ -154156,26 +154202,27 @@
       },
       {
         "date": "2026-08-16",
-        "net_minted": 7496870,
-        "net_burned": 2116000
+        "net_minted": 7718020,
+        "net_burned": 2792000
       }
     ],
     "event_of_the_day": {
-      "id": 6695,
-      "event_title": "England: More families to benefit from free school meals from September",
+      "id": 6697,
+      "event_title": "Why financial education is like sex education",
       "decision": "BURN",
-      "amount_crbn": 887000,
-      "final_score": 6.37,
+      "amount_crbn": 676000,
+      "final_score": 6.53,
       "confidence": 8,
-      "country": "United Kingdom",
-      "region": "Europe",
-      "created_at": "2026-08-16T17:37:26.517242+00:00"
+      "country": "New Zealand",
+      "region": "Oceania",
+      "created_at": "2026-08-16T18:06:27.076858+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 38,
+        "positive": 39,
         "negative": 298,
         "event_ids_positive": [
+          6697,
           6695,
           6692,
           6689,
@@ -154216,6 +154263,7 @@
           6358
         ],
         "event_ids_negative": [
+          6698,
           6696,
           6694,
           6693,
@@ -154512,14 +154560,14 @@
           6352,
           6351,
           6350,
-          6349,
-          6348
+          6349
         ]
       },
       "UDHR": {
-        "positive": 28,
+        "positive": 29,
         "negative": 271,
         "event_ids_positive": [
+          6697,
           6695,
           6692,
           6689,
@@ -154550,6 +154598,7 @@
           6382
         ],
         "event_ids_negative": [
+          6698,
           6696,
           6694,
           6693,
@@ -154819,13 +154868,12 @@
           6352,
           6351,
           6350,
-          6349,
-          6348
+          6349
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           6668,
           6649,
@@ -154834,6 +154882,7 @@
           6545
         ],
         "event_ids_negative": [
+          6698,
           6669,
           6665,
           6646,
@@ -155102,7 +155151,7 @@
       },
       "PB": {
         "positive": 20,
-        "negative": 97,
+        "negative": 98,
         "event_ids_positive": [
           6692,
           6687,
@@ -155126,6 +155175,7 @@
           6358
         ],
         "event_ids_negative": [
+          6698,
           6691,
           6690,
           6688,
@@ -155227,14 +155277,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.3,
-      "mainstream_pct": 34.7,
+      "niche_pct": 64.2,
+      "mainstream_pct": 35.8,
       "total_sources_used": 95,
-      "articles_processed": 349
+      "articles_processed": 350
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 349,
+      "total_events": 350,
       "pct": 3.7
     },
     "active_partners_7d": [],
@@ -155342,6 +155392,47 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Finance",
+        "count": 33,
+        "burn_count": 2,
+        "mint_count": 31,
+        "event_ids": [
+          6697,
+          6695,
+          6684,
+          6671,
+          6663,
+          6644,
+          6613,
+          6600,
+          6579,
+          6574,
+          6572,
+          6558,
+          6557,
+          6555,
+          6553,
+          6544,
+          6539,
+          6532,
+          6528,
+          6526,
+          6522,
+          6521,
+          6520,
+          6515,
+          6489,
+          6488,
+          6455,
+          6416,
+          6402,
+          6398,
+          6393,
+          6381,
+          6361
+        ]
+      },
+      {
         "name": "Energy",
         "count": 33,
         "burn_count": 4,
@@ -155380,46 +155471,6 @@
           6375,
           6368,
           6351
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 32,
-        "burn_count": 1,
-        "mint_count": 31,
-        "event_ids": [
-          6695,
-          6684,
-          6671,
-          6663,
-          6644,
-          6613,
-          6600,
-          6579,
-          6574,
-          6572,
-          6558,
-          6557,
-          6555,
-          6553,
-          6544,
-          6539,
-          6532,
-          6528,
-          6526,
-          6522,
-          6521,
-          6520,
-          6515,
-          6489,
-          6488,
-          6455,
-          6416,
-          6402,
-          6398,
-          6393,
-          6381,
-          6361
         ]
       },
       {
@@ -155581,25 +155632,25 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 39,
+      "total_burn": 40,
       "direct_action": {
-        "count": 33,
-        "pct": 84.6
+        "count": 34,
+        "pct": 85.0
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 12.8
+        "pct": 12.5
       },
       "untyped": {
         "count": 1,
-        "pct": 2.6
+        "pct": 2.5
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1949,
+      "total_burn": 1950,
       "direct_action": {
-        "count": 1527,
-        "pct": 78.3
+        "count": 1528,
+        "pct": 78.4
       },
       "editorial_consciousness": {
         "count": 150,
@@ -155607,7 +155658,7 @@
       },
       "untyped": {
         "count": 272,
-        "pct": 14.0
+        "pct": 13.9
       }
     },
     "mint_composition_7d": {
@@ -155626,10 +155677,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4739,
+      "total_mint": 4740,
       "direct_action": {
-        "count": 3912,
-        "pct": 82.5
+        "count": 3913,
+        "pct": 82.6
       },
       "editorial_alarm": {
         "count": 284,
@@ -155642,8 +155693,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 89,
-      "institutional": 260,
-      "citizen_ratio": 0.255,
+      "institutional": 261,
+      "citizen_ratio": 0.254,
       "daily": [
         {
           "date": "2026-08-10",
@@ -155678,7 +155729,7 @@
         {
           "date": "2026-08-16",
           "citizen": 4,
-          "institutional": 11
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -155773,6 +155824,8 @@
         6355
       ],
       "event_ids_institutional": [
+        6698,
+        6697,
         6696,
         6695,
         6694,
@@ -156031,8 +156084,7 @@
         6352,
         6351,
         6350,
-        6349,
-        6348
+        6349
       ]
     }
   }
