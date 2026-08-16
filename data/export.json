@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-16T07:06:29.318359+00:00",
-  "total_events": 6684,
+  "generated_at": "2026-08-16T10:36:22.945678+00:00",
+  "total_events": 6685,
   "total_burned": 7831916075,
-  "total_minted": 9123941869,
+  "total_minted": 9124257869,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6685,
+      "event_title": "NATO fighter jet shoots down drone over Romania",
+      "event_url": "https://www.politico.eu/article/nato-fighter-jet-shoot-drone-romania/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 316000,
+      "final_score": 2.06,
+      "confidence": 6,
+      "justification": "Defensive shoot‑down prevents immediate threat but raises escalation risk, net negative. | While the action safeguards lives by neutralising a possible threat, it also increases the chance of escalation between NATO and Russia, creating a net negative ethical balance.",
+      "tx_hash": "4VUU5Gt7tTFsDj77n3J1aWcp77Wh2ivGtMufqTiQRH31ga8G4jAP2o25gehTJM4zwA67KgvLpMErxFuq9UGD3eRn",
+      "created_at": "2026-08-16T10:36:17.525435+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"NATO intercepts a potentially hostile drone, protecting Romanian airspace and civilian safety.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The shoot‑down heightens the risk of military escalation and regional tension.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 31600
+    },
     {
       "id": 6684,
       "event_title": "Football. Girondins to file appeal to administrative court after exclusion from national championships",
@@ -153757,13 +153780,13 @@
       },
       {
         "country": "Brazil",
-        "count": 12,
-        "total_amount": 5337000
+        "count": 11,
+        "total_amount": 4733000
       },
       {
         "country": "France",
-        "count": 11,
-        "total_amount": 2799500
+        "count": 10,
+        "total_amount": 2751700
       }
     ],
     "top_countries_burn": [
@@ -153796,8 +153819,13 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.174,
-        "events": 23
+        "burn_ratio": 0.182,
+        "events": 22
+      },
+      {
+        "region": "Asia",
+        "burn_ratio": 0.107,
+        "events": 28
       },
       {
         "region": "North America",
@@ -153805,19 +153833,14 @@
         "events": 85
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.1,
-        "events": 30
-      },
-      {
         "region": "Latin America",
-        "burn_ratio": 0.08,
-        "events": 25
+        "burn_ratio": 0.083,
+        "events": 24
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.067,
-        "events": 89
+        "burn_ratio": 0.071,
+        "events": 85
       }
     ],
     "top_regions_destructive": [
@@ -153833,18 +153856,18 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.933,
-        "events": 89
+        "mint_ratio": 0.929,
+        "events": 85
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.92,
-        "events": 25
+        "mint_ratio": 0.917,
+        "events": 24
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.9,
-        "events": 30
+        "region": "North America",
+        "mint_ratio": 0.894,
+        "events": 85
       }
     ],
     "supply_trend_7d": [
@@ -153880,7 +153903,7 @@
       },
       {
         "date": "2026-08-16",
-        "net_minted": 253360,
+        "net_minted": 569360,
         "net_burned": 0
       }
     ],
@@ -153898,7 +153921,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 36,
-        "negative": 311,
+        "negative": 304,
         "event_ids_positive": [
           6674,
           6668,
@@ -153938,6 +153961,7 @@
           6339
         ],
         "event_ids_negative": [
+          6685,
           6684,
           6683,
           6682,
@@ -154240,20 +154264,12 @@
           6336,
           6335,
           6334,
-          6333,
-          6331,
-          6330,
-          6329,
-          6328,
-          6327,
-          6326,
-          6325,
-          6324
+          6333
         ]
       },
       "UDHR": {
         "positive": 27,
-        "negative": 284,
+        "negative": 279,
         "event_ids_positive": [
           6674,
           6668,
@@ -154284,6 +154300,7 @@
           6339
         ],
         "event_ids_negative": [
+          6685,
           6684,
           6683,
           6682,
@@ -154561,13 +154578,7 @@
           6336,
           6335,
           6334,
-          6333,
-          6331,
-          6330,
-          6329,
-          6327,
-          6325,
-          6324
+          6333
         ]
       },
       "ILO": {
@@ -154632,7 +154643,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 86,
+        "negative": 85,
         "event_ids_positive": [
           6645,
           6620,
@@ -154724,13 +154735,12 @@
           6336,
           6335,
           6334,
-          6333,
-          6325
+          6333
         ]
       },
       "UNDRIP": {
         "positive": 10,
-        "negative": 74,
+        "negative": 73,
         "event_ids_positive": [
           6648,
           6642,
@@ -154816,13 +154826,12 @@
           6342,
           6340,
           6338,
-          6336,
-          6331
+          6336
         ]
       },
       "Animal": {
         "positive": 6,
-        "negative": 30,
+        "negative": 29,
         "event_ids_positive": [
           6648,
           6625,
@@ -154860,13 +154869,12 @@
           6420,
           6403,
           6394,
-          6356,
-          6326
+          6356
         ]
       },
       "PB": {
         "positive": 19,
-        "negative": 101,
+        "negative": 96,
         "event_ids_positive": [
           6648,
           6642,
@@ -154984,33 +154992,28 @@
           6354,
           6351,
           6338,
-          6335,
-          6331,
-          6330,
-          6328,
-          6327,
-          6324
+          6335
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.9,
-      "mainstream_pct": 35.1,
+      "niche_pct": 66.0,
+      "mainstream_pct": 34.0,
       "total_sources_used": 97,
-      "articles_processed": 361
+      "articles_processed": 353
     },
     "cache_hit_rate_7d": {
-      "hits": 14,
-      "total_events": 361,
-      "pct": 3.9
+      "hits": 13,
+      "total_events": 353,
+      "pct": 3.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 18,
+        "count": 17,
         "burn_count": 5,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           6662,
           6661,
@@ -155028,8 +155031,7 @@
           6438,
           6392,
           6374,
-          6373,
-          6325
+          6373
         ]
       },
       {
@@ -155061,6 +155063,16 @@
         ]
       },
       {
+        "name": "NATO",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          6685,
+          6618
+        ]
+      },
+      {
         "name": "UNESCO",
         "count": 2,
         "burn_count": 0,
@@ -155078,15 +155090,6 @@
         "event_ids": [
           6439,
           6438
-        ]
-      },
-      {
-        "name": "NATO",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          6618
         ]
       },
       {
@@ -155111,9 +155114,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 36,
+        "count": 34,
         "burn_count": 4,
-        "mint_count": 32,
+        "mint_count": 30,
         "event_ids": [
           6675,
           6670,
@@ -155148,16 +155151,14 @@
           6375,
           6368,
           6351,
-          6345,
-          6328,
-          6327
+          6345
         ]
       },
       {
         "name": "Finance",
-        "count": 33,
+        "count": 32,
         "burn_count": 0,
-        "mint_count": 33,
+        "mint_count": 32,
         "event_ids": [
           6684,
           6671,
@@ -155190,15 +155191,14 @@
           6393,
           6381,
           6361,
-          6337,
-          6324
+          6337
         ]
       },
       {
         "name": "Construction",
-        "count": 32,
+        "count": 31,
         "burn_count": 3,
-        "mint_count": 29,
+        "mint_count": 28,
         "event_ids": [
           6657,
           6650,
@@ -155230,8 +155230,7 @@
           6383,
           6360,
           6344,
-          6342,
-          6328
+          6342
         ]
       },
       {
@@ -155272,9 +155271,9 @@
       },
       {
         "name": "Agriculture",
-        "count": 18,
+        "count": 17,
         "burn_count": 2,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           6663,
           6649,
@@ -155292,8 +155291,7 @@
           6487,
           6435,
           6418,
-          6407,
-          6330
+          6407
         ]
       },
       {
@@ -155389,24 +155387,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 324,
+      "total_mint": 316,
       "direct_action": {
-        "count": 291,
-        "pct": 89.8
+        "count": 284,
+        "pct": 89.9
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 6.2
+        "pct": 6.3
       },
       "untyped": {
-        "count": 13,
-        "pct": 4.0
+        "count": 12,
+        "pct": 3.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4731,
+      "total_mint": 4732,
       "direct_action": {
-        "count": 3905,
+        "count": 3906,
         "pct": 82.5
       },
       "editorial_alarm": {
@@ -155419,8 +155417,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 95,
-      "institutional": 266,
+      "citizen": 93,
+      "institutional": 260,
       "citizen_ratio": 0.263,
       "daily": [
         {
@@ -155456,7 +155454,7 @@
         {
           "date": "2026-08-16",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -155552,11 +155550,10 @@
         6341,
         6339,
         6338,
-        6337,
-        6331,
-        6325
+        6337
       ],
       "event_ids_institutional": [
+        6685,
         6684,
         6683,
         6681,
@@ -155815,14 +155812,7 @@
         6336,
         6335,
         6334,
-        6333,
-        6332,
-        6330,
-        6329,
-        6328,
-        6327,
-        6326,
-        6324
+        6333
       ]
     }
   }
