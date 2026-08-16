@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-16T16:37:17.803173+00:00",
-  "total_events": 6694,
-  "total_burned": 7833145075,
-  "total_minted": 9130644379,
+  "generated_at": "2026-08-16T17:37:34.378358+00:00",
+  "total_events": 6696,
+  "total_burned": 7834032075,
+  "total_minted": 9131185379,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6696,
+      "event_title": "Ukraine attacks Wildberries, Russia's biggest online market",
+      "event_url": "https://www.dw.com/en/ukraine-attacks-wildberries-russia-s-biggest-online-market/a-78384605?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -1.46,
+      "confidence": 7,
+      "justification": "The attacks cause significant civilian economic harm that outweighs any strategic benefit, yielding a negative net impact. | While the strikes may weaken Russia's war capacity, they inflict substantial civilian economic damage, resulting in a net negative ethical outcome.",
+      "tx_hash": "3d8ZoHm9xqc1ZxeBVgbWoy3cknj6oBA7oni6A7XzBr7XXzD6Zz7uNSxUYnj8VJi16BfaBRTQd3AusrTPnHd51LvX",
+      "created_at": "2026-08-16T17:37:28.654702+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"Disruption of Russian logistics may hasten conflict resolution and support Ukraine's self‑defence.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Destruction of civilian warehouses harms civilians' right to property and adequate livelihood.\", \"affected_sdgs\": [1, 8, 9, 11], \"violated_rights\": [\"UDHR Article 17\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 6695,
+      "event_title": "England: More families to benefit from free school meals from September",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1vq323q/england_more_families_to_benefit_from_free_school/",
+      "event_source": "Reddit r/UpliftingNews",
+      "decision": "BURN",
+      "amount_crbn": 887000,
+      "final_score": 6.37,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] The expansion delivers major child‑welfare gains that outweigh funding concerns, meriting a BURN decision. | The policy markedly advances child welfare, education and poverty reduction, aligning with several SDGs and human‑rights standards. The main drawback is the lack of additional funding for the expanded cohort, which could undermine implementation quality. Overall the posi",
+      "tx_hash": "22RtG3yqp3Le3RjtHYStiDgxZC1ifWiTz4y636TLPfg9BYadb4LdM9UojHriET2vddfX6EYj1oLnLhctH154Xrtz",
+      "created_at": "2026-08-16T17:37:26.517242+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Expansion of free school meals to all children on Universal Credit improves nutrition, health and reduces poverty for millions of families.\", \"affected_sdgs\": [1, 2, 3, 4, 10], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Continued pupil‑premium and disadvantage funding for the originally targeted group sustains support for the most deprived children.\", \"affected_sdgs\": [1, 2, 4, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"No extra funding is allocated for the newly eligible children, risking school budget strain and possible decline in meal quality.\", \"affected_sdgs\": [2, 3, 4], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 6694,
       "event_title": "South Korea fires warning shots after North Korean soldiers crossed DMZ",
@@ -154030,14 +154076,14 @@
         "events": 21
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.106,
+        "events": 85
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.103,
         "events": 87
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.095,
-        "events": 84
       },
       {
         "region": "Latin America",
@@ -154046,8 +154092,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.067,
-        "events": 30
+        "burn_ratio": 0.069,
+        "events": 29
       }
     ],
     "top_regions_destructive": [
@@ -154063,8 +154109,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.933,
-        "events": 30
+        "mint_ratio": 0.931,
+        "events": 29
       },
       {
         "region": "Latin America",
@@ -154072,9 +154118,9 @@
         "events": 24
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.905,
-        "events": 84
+        "region": "North America",
+        "mint_ratio": 0.897,
+        "events": 87
       }
     ],
     "supply_trend_7d": [
@@ -154110,26 +154156,27 @@
       },
       {
         "date": "2026-08-16",
-        "net_minted": 6955870,
-        "net_burned": 1229000
+        "net_minted": 7496870,
+        "net_burned": 2116000
       }
     ],
     "event_of_the_day": {
-      "id": 6689,
-      "event_title": "SPD Federal Ministries present action plan against heat",
+      "id": 6695,
+      "event_title": "England: More families to benefit from free school meals from September",
       "decision": "BURN",
-      "amount_crbn": 872200,
-      "final_score": 6.23,
-      "confidence": 7,
-      "country": "Germany",
+      "amount_crbn": 887000,
+      "final_score": 6.37,
+      "confidence": 8,
+      "country": "United Kingdom",
       "region": "Europe",
-      "created_at": "2026-08-16T13:07:13.228278+00:00"
+      "created_at": "2026-08-16T17:37:26.517242+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 37,
-        "negative": 299,
+        "positive": 38,
+        "negative": 298,
         "event_ids_positive": [
+          6695,
           6692,
           6689,
           6687,
@@ -154169,6 +154216,7 @@
           6358
         ],
         "event_ids_negative": [
+          6696,
           6694,
           6693,
           6691,
@@ -154465,15 +154513,14 @@
           6351,
           6350,
           6349,
-          6348,
-          6347,
-          6346
+          6348
         ]
       },
       "UDHR": {
-        "positive": 27,
-        "negative": 272,
+        "positive": 28,
+        "negative": 271,
         "event_ids_positive": [
+          6695,
           6692,
           6689,
           6674,
@@ -154503,6 +154550,7 @@
           6382
         ],
         "event_ids_negative": [
+          6696,
           6694,
           6693,
           6691,
@@ -154772,14 +154820,12 @@
           6351,
           6350,
           6349,
-          6348,
-          6347,
-          6346
+          6348
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 45,
+        "negative": 44,
         "event_ids_positive": [
           6668,
           6649,
@@ -154831,14 +154877,14 @@
           6361,
           6360,
           6354,
-          6353,
-          6347
+          6353
         ]
       },
       "CRC": {
-        "positive": 3,
-        "negative": 78,
+        "positive": 4,
+        "negative": 77,
         "event_ids_positive": [
+          6695,
           6645,
           6620,
           6598
@@ -154920,13 +154966,12 @@
           6360,
           6359,
           6356,
-          6352,
-          6347
+          6352
         ]
       },
       "UNDRIP": {
         "positive": 9,
-        "negative": 69,
+        "negative": 68,
         "event_ids_positive": [
           6692,
           6648,
@@ -155006,8 +155051,7 @@
           6362,
           6359,
           6355,
-          6353,
-          6347
+          6353
         ]
       },
       "Animal": {
@@ -155237,15 +155281,14 @@
       },
       {
         "name": "UN",
-        "count": 5,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 5,
+        "mint_count": 4,
         "event_ids": [
           6579,
           6554,
           6552,
-          6510,
-          6347
+          6510
         ]
       },
       {
@@ -155341,10 +155384,11 @@
       },
       {
         "name": "Finance",
-        "count": 31,
-        "burn_count": 0,
+        "count": 32,
+        "burn_count": 1,
         "mint_count": 31,
         "event_ids": [
+          6695,
           6684,
           6671,
           6663,
@@ -155537,14 +155581,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 39,
       "direct_action": {
-        "count": 32,
-        "pct": 84.2
+        "count": 33,
+        "pct": 84.6
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 13.2
+        "pct": 12.8
       },
       "untyped": {
         "count": 1,
@@ -155552,9 +155596,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1948,
+      "total_burn": 1949,
       "direct_action": {
-        "count": 1526,
+        "count": 1527,
         "pct": 78.3
       },
       "editorial_consciousness": {
@@ -155567,9 +155611,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 311,
+      "total_mint": 310,
       "direct_action": {
-        "count": 278,
+        "count": 277,
         "pct": 89.4
       },
       "editorial_alarm": {
@@ -155582,9 +155626,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4738,
+      "total_mint": 4739,
       "direct_action": {
-        "count": 3911,
+        "count": 3912,
         "pct": 82.5
       },
       "editorial_alarm": {
@@ -155597,9 +155641,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 90,
-      "institutional": 259,
-      "citizen_ratio": 0.258,
+      "citizen": 89,
+      "institutional": 260,
+      "citizen_ratio": 0.255,
       "daily": [
         {
           "date": "2026-08-10",
@@ -155634,7 +155678,7 @@
         {
           "date": "2026-08-16",
           "citizen": 4,
-          "institutional": 9
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -155726,10 +155770,11 @@
         6370,
         6369,
         6358,
-        6355,
-        6347
+        6355
       ],
       "event_ids_institutional": [
+        6696,
+        6695,
         6694,
         6693,
         6689,
@@ -155987,8 +156032,7 @@
         6351,
         6350,
         6349,
-        6348,
-        6346
+        6348
       ]
     }
   }
