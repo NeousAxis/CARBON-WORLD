@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-16T12:05:53.669028+00:00",
-  "total_events": 6688,
-  "total_burned": 7831951875,
+  "generated_at": "2026-08-16T13:07:19.101677+00:00",
+  "total_events": 6689,
+  "total_burned": 7832824075,
   "total_minted": 9124285879,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6689,
+      "event_title": "SPD Federal Ministries present action plan against heat",
+      "event_url": "https://www.tagesschau.de/inland/spd-aktionsplan-hitzeschutz-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "BURN",
+      "amount_crbn": 872200,
+      "final_score": 6.23,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Heat action plan and constitutional amendment advance climate adaptation, outweighing modest political risk. | The heat‑action plan and constitutional amendment represent strong steps toward climate adaptation and public health protection, aligning with several SDGs and human‑rights norms. While political tension could slow rollout, the overall ethical balance is positive.",
+      "tx_hash": "39cSTBgxTJH1YSYgwcqJUv7nTeqa78A98Cw2qzKQsEEPrjGxrmhMN2MrtCRErZPJaSusChEtZmgcXmES4H5VW18m",
+      "created_at": "2026-08-16T13:07:13.228278+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"National heat protection action plan to reduce heat‑related health risks\", \"affected_sdgs\": [3, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Proposed constitutional amendment to embed climate‑adaptation obligations\", \"affected_sdgs\": [13, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential political friction with coalition partner may delay implementation\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 541000
+    },
     {
       "id": 6688,
       "event_title": "Kaikōura trust seeks review after DOC decides not to vaccinate penguins amidst bird flu",
@@ -153865,6 +153888,11 @@
         "total_amount": 8565500
       },
       {
+        "country": "Germany",
+        "count": 2,
+        "total_amount": 893865
+      },
+      {
         "country": "Indonesia",
         "count": 2,
         "total_amount": 400000
@@ -153878,18 +153906,13 @@
         "country": "South Africa",
         "count": 2,
         "total_amount": 1733200
-      },
-      {
-        "country": "Brazil",
-        "count": 2,
-        "total_amount": 2780000
       }
     ],
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.182,
-        "events": 22
+        "burn_ratio": 0.19,
+        "events": 21
       },
       {
         "region": "North America",
@@ -153903,7 +153926,7 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.083,
+        "burn_ratio": 0.095,
         "events": 84
       },
       {
@@ -153924,14 +153947,14 @@
         "events": 36
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.917,
-        "events": 84
-      },
-      {
         "region": "Latin America",
         "mint_ratio": 0.917,
         "events": 24
+      },
+      {
+        "region": "Europe",
+        "mint_ratio": 0.905,
+        "events": 84
       },
       {
         "region": "Asia",
@@ -153973,7 +153996,7 @@
       {
         "date": "2026-08-16",
         "net_minted": 597370,
-        "net_burned": 35800
+        "net_burned": 908000
       }
     ],
     "event_of_the_day": {
@@ -153989,9 +154012,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 37,
-        "negative": 304,
+        "positive": 38,
+        "negative": 300,
         "event_ids_positive": [
+          6689,
           6687,
           6674,
           6668,
@@ -154330,17 +154354,14 @@
           6344,
           6343,
           6342,
-          6340,
-          6338,
-          6337,
-          6336,
-          6335
+          6340
         ]
       },
       "UDHR": {
-        "positive": 27,
-        "negative": 277,
+        "positive": 28,
+        "negative": 273,
         "event_ids_positive": [
+          6689,
           6674,
           6668,
           6664,
@@ -154642,16 +154663,12 @@
           6344,
           6343,
           6342,
-          6340,
-          6338,
-          6337,
-          6336,
-          6335
+          6340
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 46,
+        "negative": 45,
         "event_ids_positive": [
           6668,
           6649,
@@ -154704,13 +154721,12 @@
           6360,
           6354,
           6353,
-          6347,
-          6337
+          6347
         ]
       },
       "CRC": {
         "positive": 4,
-        "negative": 83,
+        "negative": 79,
         "event_ids_positive": [
           6645,
           6620,
@@ -154796,16 +154812,12 @@
           6352,
           6347,
           6343,
-          6340,
-          6338,
-          6337,
-          6336,
-          6335
+          6340
         ]
       },
       "UNDRIP": {
         "positive": 10,
-        "negative": 73,
+        "negative": 71,
         "event_ids_positive": [
           6648,
           6642,
@@ -154889,9 +154901,7 @@
           6347,
           6343,
           6342,
-          6340,
-          6338,
-          6336
+          6340
         ]
       },
       "Animal": {
@@ -154941,7 +154951,7 @@
       },
       "PB": {
         "positive": 20,
-        "negative": 97,
+        "negative": 95,
         "event_ids_positive": [
           6687,
           6648,
@@ -155059,9 +155069,7 @@
           6368,
           6361,
           6354,
-          6351,
-          6338,
-          6335
+          6351
         ]
       }
     },
@@ -155069,11 +155077,11 @@
       "niche_pct": 67.0,
       "mainstream_pct": 33.0,
       "total_sources_used": 97,
-      "articles_processed": 354
+      "articles_processed": 351
     },
     "cache_hit_rate_7d": {
       "hits": 13,
-      "total_events": 354,
+      "total_events": 351,
       "pct": 3.7
     },
     "active_partners_7d": [],
@@ -155225,9 +155233,9 @@
       },
       {
         "name": "Finance",
-        "count": 32,
+        "count": 31,
         "burn_count": 0,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           6684,
           6671,
@@ -155259,8 +155267,7 @@
           6398,
           6393,
           6381,
-          6361,
-          6337
+          6361
         ]
       },
       {
@@ -155304,9 +155311,9 @@
       },
       {
         "name": "Defense",
-        "count": 28,
+        "count": 27,
         "burn_count": 0,
-        "mint_count": 28,
+        "mint_count": 27,
         "event_ids": [
           6679,
           6637,
@@ -155334,8 +155341,7 @@
           6359,
           6355,
           6352,
-          6342,
-          6336
+          6342
         ]
       },
       {
@@ -155426,14 +155432,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 39,
       "direct_action": {
-        "count": 31,
-        "pct": 81.6
+        "count": 32,
+        "pct": 82.1
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 15.8
+        "pct": 15.4
       },
       "untyped": {
         "count": 1,
@@ -155441,9 +155447,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1946,
+      "total_burn": 1947,
       "direct_action": {
-        "count": 1524,
+        "count": 1525,
         "pct": 78.3
       },
       "editorial_consciousness": {
@@ -155456,14 +155462,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 316,
+      "total_mint": 312,
       "direct_action": {
-        "count": 284,
-        "pct": 89.9
+        "count": 280,
+        "pct": 89.7
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 6.3
+        "pct": 6.4
       },
       "untyped": {
         "count": 12,
@@ -155486,9 +155492,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 93,
-      "institutional": 261,
-      "citizen_ratio": 0.263,
+      "citizen": 91,
+      "institutional": 260,
+      "citizen_ratio": 0.259,
       "daily": [
         {
           "date": "2026-08-10",
@@ -155523,7 +155529,7 @@
         {
           "date": "2026-08-16",
           "citizen": 1,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -155617,11 +155623,10 @@
         6343,
         6342,
         6341,
-        6339,
-        6338,
-        6337
+        6339
       ],
       "event_ids_institutional": [
+        6689,
         6688,
         6687,
         6686,
@@ -155880,9 +155885,7 @@
         6346,
         6345,
         6344,
-        6340,
-        6336,
-        6335
+        6340
       ]
     }
   }
