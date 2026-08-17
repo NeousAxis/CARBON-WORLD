@@ -35,30 +35,49 @@ from config import (
 logger = logging.getLogger(__name__)
 
 
+# Output ceiling for the two analyst calls (A and B).
+#
+# Providers bill the RESERVED completion budget against the rate limit, not the
+# tokens actually produced, so an oversized max_tokens is paid on every call.
+# Measured 2026-08-17 over the 782 analyst verdicts stored in review_queue: the
+# JSON answer averages 545 tokens and peaked at 945. The previous 3000 reserved
+# ~5.5x the observed maximum, twice per article (A + B).
+#
+# 2000 keeps ~2x headroom over the observed peak for the model's internal
+# reasoning tokens, which also count toward the completion budget and are not
+# visible in the stored JSON. If truncated answers ever appear (empty content,
+# invalid JSON at the tail), raise this first.
+ANALYST_MAX_TOKENS = 2000
+
 # Model identifiers for the 8-agent verification pipeline
 ANALYST_B_MODEL = "llama-3.3-70b-versatile"
 RECONCILER_MODEL = "openai/gpt-oss-120b"
 SENTINEL_MODEL = "openai/gpt-oss-120b"
 
 
-# Provider config errors (401/403/404) already reported this process, keyed by
-# (provider, model, status). A retired model or a revoked key fails on every
+# Provider config errors (401/402/403/404) already reported this process, keyed
+# by (provider, model, status). A retired model or a revoked key fails on every
 # single call, so without this the log fills with hundreds of identical lines
 # and the real cause drowns in the noise — exactly how the 2026-07-24 outage
 # stayed invisible for 5 days.
 _reported_config_errors: set = set()
 
-# Providers that returned 401/403 earlier in this process. This means the key
-# is revoked/expired OR the account plan/subscription is inactive (e.g. Mistral
-# returns 401, not 429, when the paid plan is not active) — either way every
-# subsequent call fails identically, so once we have seen it we skip that
-# provider for the rest of the run instead of paying a network round-trip (and a
-# misleading "trying X" cascade log line) on every one of the run's articles.
+# Providers that returned 401/402/403 earlier in this process. This means the key
+# is revoked/expired, the account plan/subscription is inactive (e.g. Mistral
+# returns 401, not 429, when the paid plan is not active), or the pay-as-you-go
+# balance is exhausted (402 Payment Required) — either way every subsequent call
+# fails identically, so once we have seen it we skip that provider for the rest
+# of the run instead of paying a network round-trip (and a misleading "trying X"
+# cascade log line) on every one of the run's articles.
 # Reset every process — each cron run is a fresh interpreter — so a re-activated
-# account or fixed key is picked up on the next run automatically.
+# account or a topped-up balance is picked up on the next run automatically.
 #
-# Scope note: only account-level errors (401/403) disable the whole provider. A
-# 404 is model-specific (one retired model id while the key and the provider's
+# 402 was added 2026-08-17: the VPS Mistral account ran out of credit and
+# answered 402, which this breaker did not cover, so the pipeline kept calling a
+# dead provider 1352 times a day — once per article, per run, for weeks.
+#
+# Scope note: only account-level errors (401/402/403) disable the whole provider.
+# A 404 is model-specific (one retired model id while the key and the provider's
 # other models stay valid), so it is logged but does not disable the provider.
 _disabled_providers: set = set()
 
@@ -73,21 +92,23 @@ def _log_config_error(provider: str, status: int, model: str, body: str) -> None
     Log a provider misconfiguration once per (provider, model, status), and
     disable the provider for the rest of the process on a key-level error.
 
-    401/403 means the API key is revoked or expired; 404 means the model id no
-    longer exists on that provider. Neither is transient, so retrying or
-    cascading to the next provider will not help — only a config change will.
+    401/403 means the API key is revoked or expired; 402 means the account has
+    no credit left; 404 means the model id no longer exists on that provider.
+    None is transient, so retrying or cascading to the next provider will not
+    help — only a config or billing change will.
     """
-    if status in (401, 403):
+    if status in (401, 402, 403):
         _disabled_providers.add(provider.lower())
     key = (provider, model, status)
     if key in _reported_config_errors:
         return
     _reported_config_errors.add(key)
-    cause = (
-        "API key rejected or account/subscription inactive"
-        if status in (401, 403)
-        else "model id not found"
-    )
+    if status == 402:
+        cause = "account out of credit (pay-as-you-go balance exhausted)"
+    elif status in (401, 403):
+        cause = "API key rejected or account/subscription inactive"
+    else:
+        cause = "model id not found"
     logger.critical(
         "PROVIDER_CONFIG_ERROR — %s HTTP %d: %s (model=%s). This is permanent, "
         "not a quota blip: every call to this provider will fail until the "
@@ -264,7 +285,7 @@ def _call_groq(
                 )
                 time.sleep(backoff)
                 continue
-            if resp.status_code in (401, 403, 404):
+            if resp.status_code in (401, 402, 403, 404):
                 _log_config_error("Groq", resp.status_code, target_model, resp.text)
                 return None
             resp.raise_for_status()
@@ -352,7 +373,7 @@ def _call_cerebras(
                 )
                 time.sleep(backoff)
                 continue
-            if resp.status_code in (401, 403, 404):
+            if resp.status_code in (401, 402, 403, 404):
                 _log_config_error("Cerebras", resp.status_code, target_model, resp.text)
                 return None
             resp.raise_for_status()
@@ -439,7 +460,7 @@ def _call_mistral(
                 )
                 time.sleep(backoff)
                 continue
-            if resp.status_code in (401, 403, 404):
+            if resp.status_code in (401, 402, 403, 404):
                 _log_config_error("Mistral", resp.status_code, target_model, resp.text)
                 return None
             resp.raise_for_status()
@@ -556,13 +577,13 @@ def call_deep(system_prompt: str, user_message: str, context: str = "") -> Optio
     """
     if LLM_PROVIDER == "groq":
         attempts = 1 if (MISTRAL_API_KEY or CEREBRAS_API_KEY) else 3
-        result = _call_groq(system_prompt, user_message, context, max_tokens=3000, max_attempts=attempts)
+        result = _call_groq(system_prompt, user_message, context, max_tokens=ANALYST_MAX_TOKENS, max_attempts=attempts)
         if result is None and MISTRAL_API_KEY and _provider_enabled("mistral"):
             logger.info("Groq failed for analyst A %s, trying Mistral", context)
-            result = _call_mistral(system_prompt, user_message, context, max_tokens=3000, delay=2, max_attempts=1)
+            result = _call_mistral(system_prompt, user_message, context, max_tokens=ANALYST_MAX_TOKENS, delay=2, max_attempts=1)
         if result is None and CEREBRAS_API_KEY:
             logger.info("Mistral failed for analyst A %s, falling back to Cerebras", context)
-            return _call_cerebras(system_prompt, user_message, context, max_tokens=3000, delay=4, max_attempts=1)
+            return _call_cerebras(system_prompt, user_message, context, max_tokens=ANALYST_MAX_TOKENS, delay=4, max_attempts=1)
         return result
     return _call_ollama_deep(system_prompt, user_message, context, num_predict=2500)
 
@@ -587,7 +608,7 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             system_prompt,
             user_message,
             context,
-            max_tokens=3000,
+            max_tokens=ANALYST_MAX_TOKENS,
             delay=2,
             max_attempts=2,
         )
@@ -600,7 +621,7 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             system_prompt,
             user_message,
             context,
-            max_tokens=3000,
+            max_tokens=ANALYST_MAX_TOKENS,
             delay=4,
             max_attempts=1,
         )
@@ -613,7 +634,7 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             system_prompt,
             user_message,
             context,
-            max_tokens=3000,
+            max_tokens=ANALYST_MAX_TOKENS,
             model=ANALYST_B_MODEL,
             delay=10,
         )
