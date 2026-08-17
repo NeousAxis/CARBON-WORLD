@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-17T06:36:18.530438+00:00",
-  "total_events": 6717,
+  "generated_at": "2026-08-17T07:07:40.101780+00:00",
+  "total_events": 6718,
   "total_burned": 7841879855,
-  "total_minted": 9145605739,
+  "total_minted": 9145611239,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 6718,
+      "event_title": "Swimming warning issued in Malmö due to widespread algal bloom",
+      "event_url": "https://www.thelocal.se/20260817/swimming-warning-issued-in-malmo-due-to-widespread-algal-bloom",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 5500,
+      "final_score": 1.57,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Council warning protects public health and prevents harm, aligning with protective institutional action. | The warning safeguards health and water quality, aligning with SDGs and human rights, while temporarily harming local tourism and recreation. The protective benefit modestly outweighs the short‑term economic downside, yielding a net positive ethical tilt.",
+      "tx_hash": "4kxAKHUVGNMgo8yt8uqHo96Esi98aPbWYZMq3h9gGsvjm1Xan6H5VAmfJ69LWxRyEjCpMHGweEDbqF9akeNnZTtU",
+      "created_at": "2026-08-17T07:07:34.491994+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Municipal swimming warning protects public health from harmful algal toxins\", \"affected_sdgs\": [3, 6, 14], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Beach closures reduce tourism revenue and limit local recreation\", \"affected_sdgs\": [8, 1], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 31600
+    },
     {
       "id": 6717,
       "event_title": "STAT+: State laws may be curbing private equity takeovers of physician group",
@@ -154565,8 +154588,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.141,
-        "events": 85
+        "burn_ratio": 0.14,
+        "events": 86
       },
       {
         "region": "North America",
@@ -154602,8 +154625,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.859,
-        "events": 85
+        "mint_ratio": 0.86,
+        "events": 86
       }
     ],
     "supply_trend_7d": [
@@ -154639,7 +154662,7 @@
       },
       {
         "date": "2026-08-17",
-        "net_minted": 5761890,
+        "net_minted": 5767390,
         "net_burned": 5567280
       }
     ],
@@ -154706,6 +154729,7 @@
           6375
         ],
         "event_ids_negative": [
+          6718,
           6716,
           6714,
           6713,
@@ -154995,8 +155019,7 @@
           6373,
           6372,
           6371,
-          6370,
-          6369
+          6370
         ]
       },
       "UDHR": {
@@ -155039,6 +155062,7 @@
           6382
         ],
         "event_ids_negative": [
+          6718,
           6714,
           6711,
           6709,
@@ -155300,13 +155324,12 @@
           6373,
           6372,
           6371,
-          6370,
-          6369
+          6370
         ]
       },
       "ILO": {
         "positive": 5,
-        "negative": 40,
+        "negative": 39,
         "event_ids_positive": [
           6668,
           6649,
@@ -155353,13 +155376,12 @@
           6402,
           6397,
           6391,
-          6378,
-          6369
+          6378
         ]
       },
       "CRC": {
         "positive": 4,
-        "negative": 72,
+        "negative": 71,
         "event_ids_positive": [
           6695,
           6645,
@@ -155437,8 +155459,7 @@
           6388,
           6380,
           6379,
-          6373,
-          6369
+          6373
         ]
       },
       "UNDRIP": {
@@ -155570,7 +155591,7 @@
       },
       "PB": {
         "positive": 24,
-        "negative": 97,
+        "negative": 98,
         "event_ids_positive": [
           6715,
           6712,
@@ -155598,6 +155619,7 @@
           6375
         ],
         "event_ids_negative": [
+          6718,
           6709,
           6708,
           6705,
@@ -155972,6 +155994,31 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 17,
+        "burn_count": 3,
+        "mint_count": 14,
+        "event_ids": [
+          6718,
+          6664,
+          6663,
+          6654,
+          6648,
+          6634,
+          6605,
+          6590,
+          6581,
+          6569,
+          6566,
+          6563,
+          6541,
+          6496,
+          6487,
+          6395,
+          6393
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 17,
         "burn_count": 2,
@@ -155994,30 +156041,6 @@
           6435,
           6418,
           6407
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 16,
-        "burn_count": 3,
-        "mint_count": 13,
-        "event_ids": [
-          6664,
-          6663,
-          6654,
-          6648,
-          6634,
-          6605,
-          6590,
-          6581,
-          6569,
-          6566,
-          6563,
-          6541,
-          6496,
-          6487,
-          6395,
-          6393
         ]
       },
       {
@@ -156105,9 +156128,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4752,
+      "total_mint": 4753,
       "direct_action": {
-        "count": 3925,
+        "count": 3926,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -156120,9 +156143,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 91,
-      "institutional": 258,
-      "citizen_ratio": 0.261,
+      "citizen": 90,
+      "institutional": 259,
+      "citizen_ratio": 0.258,
       "daily": [
         {
           "date": "2026-08-11",
@@ -156157,7 +156180,7 @@
         {
           "date": "2026-08-17",
           "citizen": 3,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -156250,10 +156273,10 @@
         6376,
         6374,
         6372,
-        6370,
-        6369
+        6370
       ],
       "event_ids_institutional": [
+        6718,
         6717,
         6716,
         6715,
