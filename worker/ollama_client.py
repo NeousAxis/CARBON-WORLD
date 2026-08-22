@@ -31,6 +31,7 @@ from config import (
     MISTRAL_API_KEY,
     MISTRAL_MODEL,
     MISTRAL_FAST_MODEL,
+    MISTRAL_ANALYST_B_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -643,6 +644,10 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
             user_message,
             context,
             max_tokens=ANALYST_MAX_TOKENS,
+            # Explicitly NOT MISTRAL_MODEL: Analyst A falls back to that same
+            # model whenever Groq 429s, and two identical models answering the
+            # same prompt is not a second opinion. See MISTRAL_ANALYST_B_MODEL.
+            model=MISTRAL_ANALYST_B_MODEL,
             delay=2,
             max_attempts=2,
         )

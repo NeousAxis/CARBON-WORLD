@@ -55,6 +55,19 @@ MISTRAL_API_KEY: str = os.getenv("MISTRAL_API_KEY", "")
 MISTRAL_MODEL: str = os.getenv("MISTRAL_MODEL", "mistral-large-latest")
 MISTRAL_FAST_MODEL: str = os.getenv("MISTRAL_FAST_MODEL", "ministral-8b-latest")
 
+# MISTRAL_ANALYST_B_MODEL keeps the dual reading actually dual.
+#
+# Analyst A and Analyst B both cascade down to Mistral when Groq 429s, which it
+# does on roughly half the calls. Before this, both used MISTRAL_MODEL, so the
+# two "independent" analysts were the same model answering the same prompt
+# twice: correlated verdicts, and the reconciler's consensus fast path then
+# raises confidence to 7 minimum on what is really a single opinion.
+#
+# A distinct model decorrelates them, which is the entire point of the A||B
+# architecture. Small 4 is a different size and a different snapshot, and at
+# $0.15/$0.60 it also costs 3.3x less on input than Large 3.
+MISTRAL_ANALYST_B_MODEL: str = os.getenv("MISTRAL_ANALYST_B_MODEL", "mistral-small-latest")
+
 # LLM Models — two-tier system (Ollama model names)
 CLASSIFIER_MODEL: str = os.getenv("CLASSIFIER_MODEL", "qwen3:14b")
 ANALYST_MODEL: str = os.getenv("ANALYST_MODEL", "qwen3:32b")
