@@ -20,7 +20,7 @@ import sqlite3
 from datetime import datetime, timezone
 from typing import Optional
 
-from ollama_client import call_fast, _log_config_error
+from ollama_client import call_fast, _log_config_error, _cache_key
 from prompts.classifier_prompt import CLASSIFIER_PROMPT, CLASSIFIER_BATCH_PROMPT
 from prompts.sanitize import wrap_article_for_llm, wrap_articles_batch_for_llm
 from config import (
@@ -342,7 +342,7 @@ def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
     """
     import time
     import httpx
-    from config import MISTRAL_API_KEY, MISTRAL_MODEL
+    from config import MISTRAL_API_KEY, MISTRAL_FAST_MODEL
 
     if not MISTRAL_API_KEY:
         return None
@@ -351,7 +351,9 @@ def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
     time.sleep(2)
 
     payload = {
-        "model": MISTRAL_MODEL,
+        # Triage is shallow and high-volume, so it runs on the cheap tier — the
+        # mono path already did, this batch path was still billing Large 3.
+        "model": MISTRAL_FAST_MODEL,
         "messages": [
             {"role": "system", "content": CLASSIFIER_BATCH_PROMPT},
             {"role": "user", "content": user_message},
@@ -359,6 +361,8 @@ def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
         "temperature": 0.1,
         "max_tokens": max_tokens,
         "response_format": {"type": "json_object"},
+        # Bills the 7 866-char batch prompt at 10 % of the input price
+        "prompt_cache_key": _cache_key(CLASSIFIER_BATCH_PROMPT),
     }
     headers = {
         "Authorization": f"Bearer {MISTRAL_API_KEY}",
@@ -374,8 +378,8 @@ def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
         if resp.status_code == 429:
             logger.warning("Mistral 429 for batch %s (single attempt fail-fast)", context)
             return None
-        if resp.status_code in (401, 403, 404):
-            _log_config_error("Mistral", resp.status_code, MISTRAL_MODEL, resp.text)
+        if resp.status_code in (401, 402, 403, 404):
+            _log_config_error("Mistral", resp.status_code, MISTRAL_FAST_MODEL, resp.text)
             return None
         resp.raise_for_status()
         data = resp.json()
