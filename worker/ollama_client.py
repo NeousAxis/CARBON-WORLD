@@ -9,6 +9,7 @@ Manages multiple Groq model configurations for the 8-agent verification pipeline
   - sentinel: GPT-OSS-120B
 """
 
+import hashlib
 import json
 import logging
 import re
@@ -50,7 +51,7 @@ logger = logging.getLogger(__name__)
 ANALYST_MAX_TOKENS = 2000
 
 # Model identifiers for the 8-agent verification pipeline
-ANALYST_B_MODEL = "llama-3.3-70b-versatile"
+ANALYST_B_MODEL = "qwen/qwen3.6-27b"
 RECONCILER_MODEL = "openai/gpt-oss-120b"
 SENTINEL_MODEL = "openai/gpt-oss-120b"
 
@@ -247,6 +248,22 @@ def _call_groq(
         "temperature": 0.1,
         "max_tokens": max_tokens,
     }
+
+    # Reasoning control. The `/no_think` prefix above is a Qwen3 convention that
+    # newer models ignore, so ask the API directly. Qwen and gpt-oss expose
+    # different, mutually exclusive knobs and sending the wrong one is a 400.
+    #
+    # This matters for cost and for correctness: reasoning tokens are billed and
+    # they consume the same max_tokens budget as the answer. A completion cut off
+    # mid-reasoning has no closing </think>, so _strip_think_tags cannot remove it
+    # and the JSON parse fails — observed live on qwen/qwen3.6-27b, 2026-08-22,
+    # which silently produced zero Analyst B verdicts.
+    if target_model.startswith("openai/gpt-oss"):
+        payload["include_reasoning"] = False
+    else:
+        payload["reasoning_format"] = "hidden"
+        payload["reasoning_effort"] = "none"
+
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json",
@@ -385,6 +402,21 @@ def _call_cerebras(
             return None
 
 
+def _cache_key(system_prompt: str) -> str:
+    """
+    Stable id for a static system prompt, passed to Mistral as `prompt_cache_key`.
+
+    Mistral bills cached prompt tokens at 10 % of the input price, but the cache
+    is opt-in: without this key an identical system prompt is re-billed in full
+    on every single call. Measured on the live pipeline 2026-08-22: the static
+    system prompts are 69 % of the Mistral bill, and the analyst prompt alone
+    (17 793 chars, sent twice per article for A and B, 732 times a day) is 65 %
+    of it. Hashing the prompt itself gives every agent its own cache slot for
+    free, and editing a prompt invalidates its slot with no bookkeeping.
+    """
+    return hashlib.sha256(system_prompt.encode("utf-8")).hexdigest()[:32]
+
+
 # ── Mistral provider ────────────────────────────────────────────────────────
 
 def _call_mistral(
@@ -425,6 +457,8 @@ def _call_mistral(
         "max_tokens": max_tokens,
         # Mistral honors `response_format` for guaranteed JSON output
         "response_format": {"type": "json_object"},
+        # Bills the static system prefix at 10 % of the input price (see _cache_key)
+        "prompt_cache_key": _cache_key(system_prompt),
     }
     headers = {
         "Authorization": f"Bearer {MISTRAL_API_KEY}",
