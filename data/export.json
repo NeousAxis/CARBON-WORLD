@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-22T07:04:11.880576+00:00",
-  "total_events": 6737,
+  "generated_at": "2026-08-22T11:32:03.806384+00:00",
+  "total_events": 6738,
   "total_burned": 7847454255,
-  "total_minted": 9149781269,
+  "total_minted": 9150457269,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6738,
+      "event_title": "Neurologist with antivaccine views to lead NIH’s child health institute",
+      "event_url": "https://www.science.org/content/article/neurologist-antivaccine-views-lead-nih-s-child-health-institute",
+      "event_source": "Science (AAAS)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.62,
+      "confidence": 8,
+      "justification": "Appointment risks weakening vaccine trust and child health protections. | The appointment likely undermines vaccine confidence and child health, outweighing the modest benefit of increased public discussion. Overall the action is ethically negative.",
+      "tx_hash": "5QNpvQJRtiD4V3wrSm3np1vMDNV6sZkUHVv4iuHQEnCNtxAK6CiBsJ8EkoxNa1GjhEavJ6t2uigRMxc9yncbdkEc",
+      "created_at": "2026-08-22T11:31:59.291522+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Appointment sparks public debate on vaccine policy, raising awareness of child health issues.\", \"affected_sdgs\": [3, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Leader's antivaccine stance may erode public confidence in vaccines, jeopardizing child health and violating the right to health.\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6737,
       "event_title": "Texas Oil and Gas Regulators Will No Longer Have to Accept Public Comment at Open Meetings",
@@ -154961,8 +154984,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 18,
-        "total_amount": 22340070
+        "count": 19,
+        "total_amount": 23016070
       },
       {
         "country": "Israel",
@@ -155020,13 +155043,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.318,
-        "events": 22
+        "burn_ratio": 0.333,
+        "events": 21
       },
       {
         "region": "North America",
-        "burn_ratio": 0.217,
-        "events": 23
+        "burn_ratio": 0.208,
+        "events": 24
       },
       {
         "region": "Latin America",
@@ -155062,8 +155085,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.783,
-        "events": 23
+        "mint_ratio": 0.792,
+        "events": 24
       }
     ],
     "supply_trend_7d": [
@@ -155099,24 +155122,24 @@
       },
       {
         "date": "2026-08-22",
-        "net_minted": 60400,
+        "net_minted": 736400,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 6737,
-      "event_title": "Texas Oil and Gas Regulators Will No Longer Have to Accept Public Comment at Open Meetings",
+      "id": 6738,
+      "event_title": "Neurologist with antivaccine views to lead NIH’s child health institute",
       "decision": "MINT",
-      "amount_crbn": 60400,
-      "final_score": -3.5,
-      "confidence": 7,
+      "amount_crbn": 676000,
+      "final_score": -3.62,
+      "confidence": 8,
       "country": "United States",
       "region": "North America",
-      "created_at": "2026-08-22T07:04:08.426530+00:00"
+      "created_at": "2026-08-22T11:31:59.291522+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 23,
+        "positive": 22,
         "negative": 61,
         "event_ids_positive": [
           6732,
@@ -155140,10 +155163,10 @@
           6657,
           6652,
           6649,
-          6648,
-          6645
+          6648
         ],
         "event_ids_negative": [
+          6738,
           6737,
           6736,
           6735,
@@ -155203,12 +155226,11 @@
           6653,
           6651,
           6650,
-          6647,
-          6646
+          6647
         ]
       },
       "UDHR": {
-        "positive": 17,
+        "positive": 16,
         "negative": 52,
         "event_ids_positive": [
           6732,
@@ -155226,10 +155248,10 @@
           6668,
           6664,
           6652,
-          6649,
-          6645
+          6649
         ],
         "event_ids_negative": [
+          6738,
           6737,
           6736,
           6735,
@@ -155280,13 +155302,12 @@
           6653,
           6651,
           6650,
-          6647,
-          6646
+          6647
         ]
       },
       "ILO": {
         "positive": 2,
-        "negative": 6,
+        "negative": 5,
         "event_ids_positive": [
           6668,
           6649
@@ -155296,18 +155317,17 @@
           6704,
           6698,
           6669,
-          6665,
-          6646
+          6665
         ]
       },
       "CRC": {
-        "positive": 2,
-        "negative": 7,
+        "positive": 1,
+        "negative": 8,
         "event_ids_positive": [
-          6695,
-          6645
+          6695
         ],
         "event_ids_negative": [
+          6738,
           6711,
           6699,
           6693,
@@ -155383,14 +155403,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 87.0,
-      "mainstream_pct": 13.0,
-      "total_sources_used": 54,
-      "articles_processed": 93
+      "niche_pct": 87.3,
+      "mainstream_pct": 12.7,
+      "total_sources_used": 55,
+      "articles_processed": 92
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 93,
+      "total_events": 92,
       "pct": 6.5
     },
     "active_partners_7d": [],
@@ -155534,11 +155554,11 @@
       {
         "name": "Pharma",
         "count": 2,
-        "burn_count": 1,
-        "mint_count": 1,
+        "burn_count": 0,
+        "mint_count": 2,
         "event_ids": [
-          6734,
-          6645
+          6738,
+          6734
         ]
       },
       {
@@ -155553,18 +155573,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 25,
       "direct_action": {
-        "count": 20,
-        "pct": 76.9
+        "count": 19,
+        "pct": 76.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 11.5
+        "pct": 12.0
       },
       "untyped": {
         "count": 3,
-        "pct": 11.5
+        "pct": 12.0
       }
     },
     "burn_composition_all_time": {
@@ -155598,9 +155618,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4766,
+      "total_mint": 4767,
       "direct_action": {
-        "count": 3938,
+        "count": 3939,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -155614,8 +155634,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 17,
-      "institutional": 76,
-      "citizen_ratio": 0.183,
+      "institutional": 75,
+      "citizen_ratio": 0.185,
       "daily": [
         {
           "date": "2026-08-16",
@@ -155650,7 +155670,7 @@
         {
           "date": "2026-08-22",
           "citizen": 1,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -155673,6 +155693,7 @@
         6648
       ],
       "event_ids_institutional": [
+        6738,
         6736,
         6735,
         6734,
@@ -155746,9 +155767,7 @@
         6653,
         6651,
         6650,
-        6647,
-        6646,
-        6645
+        6647
       ]
     }
   }
