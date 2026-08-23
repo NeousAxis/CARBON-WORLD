@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-23T16:05:06.650514+00:00",
-  "total_events": 6748,
+  "generated_at": "2026-08-23T19:07:00.052025+00:00",
+  "total_events": 6750,
   "total_burned": 7848854255,
-  "total_minted": 9163189669,
+  "total_minted": 9165039669,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6750,
+      "event_title": "Albanese to override Queensland to settle AI data centre energy rules",
+      "event_url": "https://www.abc.net.au/news/2026-08-24/ai-data-centre-energy-rules-override-qld/107068536",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 350000,
+      "final_score": -1.59,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Federal override forces renewable energy for AI data centres, protecting climate rights despite state autonomy concerns. | The federal override prioritizes climate action (SDGs 7/13) by mandating renewables for high-energy data centres, a critical step for decarbonizing digital infrastructure. However, this centralization risks undermining state autonomy (SDG 16) and could e",
+      "tx_hash": "PtB6DJ4ykXK5F1E8Ks5hAYNveX211sAPdP85TJvkJB8TQiXVtn3VcWTCpjUrgVo5SvCQRpWdWKE5jkBvXqbsGJd",
+      "created_at": "2026-08-23T19:06:57.076918+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Federal government intervention to enforce renewable energy requirements for new AI data centres, potentially accelerating clean energy adoption in a high-energy-demand sector.\", \"affected_sdgs\": [7, 13, 9], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Federal override of state sovereignty undermines cooperative federalism, potentially setting a precedent for centralization of energy policy decisions.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UNDRIP (if Indigenous land-use decisions are bypassed)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Risk of political backlash or legal challenges delaying implementation, creating uncertainty for renewable energy investments.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 6749,
+      "event_title": "Six EU countries urge windfall tax on energy firms",
+      "event_url": "https://www.thelocal.de/20260823/six-eu-countries-urge-windfall-tax-on-energy-firms",
+      "event_source": "The Local Germany (EN)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 2.69,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #6742",
+      "tx_hash": null,
+      "created_at": "2026-08-23T17:04:08.595465+00:00",
+      "embedding": null,
+      "reused_from_event_id": 6742,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 6748,
       "event_title": "Child hunger drives Free State community to step in when school meals stop",
@@ -155214,8 +155260,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 11,
-        "total_amount": 9870650
+        "count": 10,
+        "total_amount": 9266650
+      },
+      {
+        "country": "Australia",
+        "count": 3,
+        "total_amount": 458100
       },
       {
         "country": "Russia",
@@ -155223,27 +155274,17 @@
         "total_amount": 1179410
       },
       {
-        "country": "France",
-        "count": 2,
-        "total_amount": 897150
-      },
-      {
         "country": "China",
         "count": 2,
         "total_amount": 86140
       },
       {
-        "country": "Australia",
+        "country": "Mali",
         "count": 2,
-        "total_amount": 108100
+        "total_amount": 673760
       }
     ],
     "top_countries_burn": [
-      {
-        "country": "New Zealand",
-        "count": 3,
-        "total_amount": 1540480
-      },
       {
         "country": "United States",
         "count": 2,
@@ -155255,12 +155296,17 @@
         "total_amount": 1606500
       },
       {
-        "country": "United Kingdom",
+        "country": "New Zealand",
         "count": 2,
-        "total_amount": 1137000
+        "total_amount": 864480
       },
       {
         "country": "South Africa",
+        "count": 1,
+        "total_amount": 700000
+      },
+      {
+        "country": "Cambodia",
         "count": 1,
         "total_amount": 700000
       }
@@ -155268,13 +155314,13 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.6,
+        "burn_ratio": 0.4,
         "events": 5
       },
       {
         "region": "Europe",
         "burn_ratio": 0.333,
-        "events": 15
+        "events": 12
       },
       {
         "region": "Africa",
@@ -155283,25 +155329,20 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.2,
-        "events": 5
+        "burn_ratio": 0.25,
+        "events": 4
       },
       {
         "region": "North America",
-        "burn_ratio": 0.154,
-        "events": 13
+        "burn_ratio": 0.167,
+        "events": 12
       }
     ],
     "top_regions_destructive": [
       {
         "region": "North America",
-        "mint_ratio": 0.846,
-        "events": 13
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 0.8,
-        "events": 5
+        "mint_ratio": 0.833,
+        "events": 12
       },
       {
         "region": "Africa",
@@ -155309,13 +155350,18 @@
         "events": 4
       },
       {
+        "region": "Asia",
+        "mint_ratio": 0.75,
+        "events": 4
+      },
+      {
         "region": "Europe",
         "mint_ratio": 0.667,
-        "events": 15
+        "events": 12
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.4,
+        "mint_ratio": 0.6,
         "events": 5
       }
     ],
@@ -155352,7 +155398,7 @@
       },
       {
         "date": "2026-08-23",
-        "net_minted": 9732400,
+        "net_minted": 10082400,
         "net_burned": 1400000
       }
     ],
@@ -155369,8 +155415,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 14,
-        "negative": 36,
+        "positive": 12,
+        "negative": 33,
         "event_ids_positive": [
           6748,
           6745,
@@ -155383,11 +155429,10 @@
           6710,
           6706,
           6703,
-          6702,
-          6697,
-          6695
+          6702
         ],
         "event_ids_negative": [
+          6750,
           6747,
           6746,
           6744,
@@ -155419,16 +155464,12 @@
           6705,
           6704,
           6701,
-          6700,
-          6699,
-          6698,
-          6696,
-          6694
+          6700
         ]
       },
       "UDHR": {
-        "positive": 11,
-        "negative": 32,
+        "positive": 9,
+        "negative": 28,
         "event_ids_positive": [
           6748,
           6745,
@@ -155438,9 +155479,7 @@
           6710,
           6706,
           6703,
-          6702,
-          6697,
-          6695
+          6702
         ],
         "event_ids_negative": [
           6747,
@@ -155470,47 +155509,41 @@
           6705,
           6704,
           6701,
-          6700,
-          6699,
-          6698,
-          6696,
-          6694
+          6700
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 4,
+        "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
           6743,
           6730,
-          6704,
-          6698
+          6704
         ]
       },
       "CRC": {
-        "positive": 3,
-        "negative": 4,
+        "positive": 2,
+        "negative": 3,
         "event_ids_positive": [
           6748,
-          6745,
-          6695
+          6745
         ],
         "event_ids_negative": [
           6739,
           6738,
-          6711,
-          6699
+          6711
         ]
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [
           6745,
           6706
         ],
         "event_ids_negative": [
+          6750,
           6711
         ]
       },
@@ -155536,6 +155569,7 @@
           6703
         ],
         "event_ids_negative": [
+          6750,
           6746,
           6744,
           6737,
@@ -155545,20 +155579,19 @@
           6718,
           6709,
           6708,
-          6705,
-          6698
+          6705
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.1,
-      "mainstream_pct": 2.9,
-      "total_sources_used": 34,
-      "articles_processed": 53
+      "niche_pct": 96.9,
+      "mainstream_pct": 3.1,
+      "total_sources_used": 32,
+      "articles_processed": 48
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 53,
+      "total_events": 48,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -155614,10 +155647,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 10,
+        "count": 11,
         "burn_count": 5,
-        "mint_count": 5,
+        "mint_count": 6,
         "event_ids": [
+          6750,
           6746,
           6740,
           6737,
@@ -155631,19 +155665,18 @@
         ]
       },
       {
-        "name": "Finance",
-        "count": 8,
-        "burn_count": 4,
-        "mint_count": 4,
+        "name": "Construction",
+        "count": 7,
+        "burn_count": 2,
+        "mint_count": 5,
         "event_ids": [
+          6750,
           6746,
           6740,
-          6729,
-          6717,
-          6703,
-          6701,
-          6697,
-          6695
+          6733,
+          6730,
+          6719,
+          6703
         ]
       },
       {
@@ -155662,17 +155695,28 @@
         ]
       },
       {
-        "name": "Construction",
+        "name": "Finance",
         "count": 6,
         "burn_count": 2,
         "mint_count": 4,
         "event_ids": [
           6746,
           6740,
+          6729,
+          6717,
+          6703,
+          6701
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          6750,
           6733,
-          6730,
-          6719,
-          6703
+          6713
         ]
       },
       {
@@ -155696,16 +155740,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          6733,
-          6713
-        ]
-      },
-      {
         "name": "Fishing",
         "count": 1,
         "burn_count": 0,
@@ -155716,10 +155750,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 17,
+      "total_burn": 15,
       "direct_action": {
-        "count": 14,
-        "pct": 82.4
+        "count": 12,
+        "pct": 80.0
       },
       "editorial_consciousness": {
         "count": 0,
@@ -155727,7 +155761,7 @@
       },
       "untyped": {
         "count": 3,
-        "pct": 17.6
+        "pct": 20.0
       }
     },
     "burn_composition_all_time": {
@@ -155746,14 +155780,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 36,
+      "total_mint": 33,
       "direct_action": {
-        "count": 35,
-        "pct": 97.2
+        "count": 32,
+        "pct": 97.0
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.8
+        "pct": 3.0
       },
       "untyped": {
         "count": 0,
@@ -155761,9 +155795,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4773,
+      "total_mint": 4774,
       "direct_action": {
-        "count": 3945,
+        "count": 3946,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -155777,8 +155811,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 45,
-      "citizen_ratio": 0.151,
+      "institutional": 40,
+      "citizen_ratio": 0.167,
       "daily": [
         {
           "date": "2026-08-17",
@@ -155813,7 +155847,7 @@
         {
           "date": "2026-08-23",
           "citizen": 1,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -155827,6 +155861,7 @@
         6704
       ],
       "event_ids_institutional": [
+        6750,
         6748,
         6747,
         6746,
@@ -155865,13 +155900,7 @@
         6703,
         6702,
         6701,
-        6700,
-        6699,
-        6698,
-        6697,
-        6696,
-        6695,
-        6694
+        6700
       ]
     }
   }
