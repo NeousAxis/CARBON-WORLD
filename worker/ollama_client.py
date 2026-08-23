@@ -403,6 +403,21 @@ def _call_cerebras(
             return None
 
 
+def _record_usage(model: str, usage: dict, agent: str) -> None:
+    """
+    Append one billed Mistral call to the local ledger.
+
+    Mistral exposes no balance endpoint, so the only way to know what is left is
+    to keep our own books. Import is local and failures are swallowed: the ledger
+    is useful, never load-bearing.
+    """
+    try:
+        from mistral_ledger import record
+        record(model, usage, agent=agent[:60])
+    except Exception as exc:
+        logger.debug("ledger unavailable: %s", exc)
+
+
 def _cache_key(system_prompt: str) -> str:
     """
     Stable id for a static system prompt, passed to Mistral as `prompt_cache_key`.
@@ -500,6 +515,10 @@ def _call_mistral(
                 return None
             resp.raise_for_status()
             data = resp.json()
+            # Book the call from the provider's own token counts. Only on a 200:
+            # a 402 or 429 bills nothing and must not enter the ledger, or a
+            # blocked account would read as an expensive one.
+            _record_usage(target_model, data.get("usage") or {}, context)
             raw = _extract_content(data, "Mistral", context)
             return _parse_json_response(raw, context)
         except Exception as exc:
