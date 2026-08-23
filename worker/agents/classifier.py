@@ -20,7 +20,7 @@ import sqlite3
 from datetime import datetime, timezone
 from typing import Optional
 
-from ollama_client import call_fast, _log_config_error, _cache_key
+from ollama_client import call_fast, _log_config_error, _cache_key, _record_usage
 from prompts.classifier_prompt import CLASSIFIER_PROMPT, CLASSIFIER_BATCH_PROMPT
 from prompts.sanitize import wrap_article_for_llm, wrap_articles_batch_for_llm
 from config import (
@@ -383,6 +383,7 @@ def _call_mistral_batch_raw(user_message: str, context: str) -> Optional[str]:
             return None
         resp.raise_for_status()
         data = resp.json()
+        _record_usage(MISTRAL_FAST_MODEL, data.get("usage") or {}, "classifier_batch")
         return data["choices"][0]["message"]["content"]
     except Exception as exc:
         logger.warning("Mistral batch call failed for %s: %s", context, exc)
