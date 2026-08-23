@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-23T13:04:24.407259+00:00",
-  "total_events": 6739,
+  "generated_at": "2026-08-23T13:10:49.729998+00:00",
+  "total_events": 6740,
   "total_burned": 7847454255,
-  "total_minted": 9151133269,
+  "total_minted": 9152633269,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6740,
+      "event_title": "Six EU Countries Urge Windfall Tax on Energy Firms",
+      "event_url": "https://www.thelocal.es/20260823/six-eu-countries-urge-windfall-tax-on-energy-firms",
+      "event_source": "The Local Spain (EN)",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": 2.69,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Windfall tax punishes excess fossil fuel profits, redistributes wealth, and protects public interest, aligning with protective action. | The proposed windfall tax aligns with redistributive justice and climate goals by targeting excess profits from fossil fuel companies, supporting SDGs 7, 10, 12, and 13. However, it risks undermining investment in energy infrastructure and ",
+      "tx_hash": "SBiSE2yg9tvv23wFiFEddcQK5CEqCEaEcmG4FhLQmAWjMYaJBLWFNhyD7fBW1DRveNRfm2BzoUi3XRYkVqfmzhs",
+      "created_at": "2026-08-23T13:10:46.059491+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Six EU countries urge a bloc-wide windfall tax on oil companies to redistribute excess profits, potentially funding climate action, energy transition, and social welfare programs.\", \"affected_sdgs\": [7, 10, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Windfall taxes may discourage investment in energy infrastructure, including renewable energy, if perceived as punitive or unpredictable by private firms.\", \"affected_sdgs\": [7, 8, 9], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential for uneven implementation across EU member states, risking market distortions and reduced cohesion in energy policy.\", \"affected_sdgs\": [17], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 38800
+    },
     {
       "id": 6739,
       "event_title": "France Welcomes Saudi Leader Mohammed bin Salman Amid Middle East Tensions",
@@ -155066,8 +155089,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.429,
-        "events": 14
+        "burn_ratio": 0.385,
+        "events": 13
       },
       {
         "region": "Latin America",
@@ -155108,8 +155131,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.571,
-        "events": 14
+        "mint_ratio": 0.615,
+        "events": 13
       }
     ],
     "supply_trend_7d": [
@@ -155145,7 +155168,7 @@
       },
       {
         "date": "2026-08-23",
-        "net_minted": 676000,
+        "net_minted": 2176000,
         "net_burned": 0
       }
     ],
@@ -155162,8 +155185,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 14,
-        "negative": 34,
+        "positive": 13,
+        "negative": 35,
         "event_ids_positive": [
           6732,
           6723,
@@ -155177,10 +155200,10 @@
           6702,
           6697,
           6695,
-          6692,
-          6689
+          6692
         ],
         "event_ids_negative": [
+          6740,
           6739,
           6738,
           6737,
@@ -155218,8 +155241,8 @@
         ]
       },
       "UDHR": {
-        "positive": 11,
-        "negative": 31,
+        "positive": 10,
+        "negative": 32,
         "event_ids_positive": [
           6732,
           6719,
@@ -155230,10 +155253,10 @@
           6702,
           6697,
           6695,
-          6692,
-          6689
+          6692
         ],
         "event_ids_negative": [
+          6740,
           6739,
           6738,
           6737,
@@ -155355,6 +155378,16 @@
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
+        "name": "EU",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
+        "event_ids": [
+          6740,
+          6723
+        ]
+      },
+      {
         "name": "UN",
         "count": 2,
         "burn_count": 0,
@@ -155362,15 +155395,6 @@
         "event_ids": [
           6714,
           6707
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          6723
         ]
       },
       {
@@ -155386,10 +155410,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 8,
+        "count": 9,
         "burn_count": 5,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          6740,
           6737,
           6732,
           6724,
@@ -155398,6 +155423,21 @@
           6712,
           6710,
           6703
+        ]
+      },
+      {
+        "name": "Finance",
+        "count": 7,
+        "burn_count": 4,
+        "mint_count": 3,
+        "event_ids": [
+          6740,
+          6729,
+          6717,
+          6703,
+          6701,
+          6697,
+          6695
         ]
       },
       {
@@ -155416,25 +155456,12 @@
         ]
       },
       {
-        "name": "Finance",
-        "count": 6,
-        "burn_count": 4,
-        "mint_count": 2,
-        "event_ids": [
-          6729,
-          6717,
-          6703,
-          6701,
-          6697,
-          6695
-        ]
-      },
-      {
         "name": "Construction",
-        "count": 4,
+        "count": 5,
         "burn_count": 2,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          6740,
           6733,
           6730,
           6719,
@@ -155472,10 +155499,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 17,
+      "total_burn": 16,
       "direct_action": {
-        "count": 14,
-        "pct": 82.4
+        "count": 13,
+        "pct": 81.2
       },
       "editorial_consciousness": {
         "count": 0,
@@ -155483,7 +155510,7 @@
       },
       "untyped": {
         "count": 3,
-        "pct": 17.6
+        "pct": 18.8
       }
     },
     "burn_composition_all_time": {
@@ -155502,14 +155529,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 34,
+      "total_mint": 35,
       "direct_action": {
-        "count": 32,
-        "pct": 94.1
+        "count": 33,
+        "pct": 94.3
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 5.9
+        "pct": 5.7
       },
       "untyped": {
         "count": 0,
@@ -155517,9 +155544,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4768,
+      "total_mint": 4769,
       "direct_action": {
-        "count": 3940,
+        "count": 3941,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -155569,7 +155596,7 @@
         {
           "date": "2026-08-23",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -155585,6 +155612,7 @@
         6690
       ],
       "event_ids_institutional": [
+        6740,
         6739,
         6738,
         6736,
@@ -155624,8 +155652,7 @@
         6696,
         6695,
         6694,
-        6693,
-        6689
+        6693
       ]
     }
   }
