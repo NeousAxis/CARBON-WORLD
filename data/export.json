@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-23T19:07:00.052025+00:00",
-  "total_events": 6750,
+  "generated_at": "2026-08-23T21:07:31.421400+00:00",
+  "total_events": 6751,
   "total_burned": 7848854255,
-  "total_minted": 9165039669,
+  "total_minted": 9165339669,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6751,
+      "event_title": "Mumbai bus drivers bristle at India’s tactics to electrify a century-old fleet",
+      "event_url": "https://dialogue.earth/en/energy/mumbai-bus-drivers-bristle-at-indias-tactics-to-electrify-a-century-old-fleet/",
+      "event_source": "China Dialogue",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.45,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Government's electrification contracts weaken driver protections, enabling harm despite environmental gains. | While the electrification of Mumbai's bus fleet represents a positive step toward reducing emissions and promoting sustainable urban transport, the implementation has significant ethical trade-offs. The precarious conditions imposed on drivers undermine labor rights",
+      "tx_hash": "5h8xPjDUPxw299D2mazsaetWHjMqckiyE7rVTKFvpLLp9N5qzeng3Xrc1tj2qdStdizoC2SYHh8XWFPQhX8SmNN9",
+      "created_at": "2026-08-23T21:07:27.587710+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"Mumbai's public bus fleet electrification initiative aims to reduce emissions and improve urban air quality, aligning with climate action and sustainable cities goals.\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Electrification contracts for Mumbai's bus fleet reportedly push drivers into precarious working conditions, reducing incomes and compromising safety, violating labor rights and decent work standards.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 604000
+    },
     {
       "id": 6750,
       "event_title": "Albanese to override Queensland to settle AI data centre energy rules",
@@ -155291,11 +155314,6 @@
         "total_amount": 268300
       },
       {
-        "country": "Spain",
-        "count": 2,
-        "total_amount": 1606500
-      },
-      {
         "country": "New Zealand",
         "count": 2,
         "total_amount": 864480
@@ -155309,6 +155327,11 @@
         "country": "Cambodia",
         "count": 1,
         "total_amount": 700000
+      },
+      {
+        "country": "France",
+        "count": 1,
+        "total_amount": 22300
       }
     ],
     "top_regions_sustainable": [
@@ -155318,19 +155341,19 @@
         "events": 5
       },
       {
-        "region": "Europe",
-        "burn_ratio": 0.333,
-        "events": 12
-      },
-      {
         "region": "Africa",
-        "burn_ratio": 0.25,
-        "events": 4
+        "burn_ratio": 0.333,
+        "events": 3
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.25,
-        "events": 4
+        "burn_ratio": 0.2,
+        "events": 5
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.2,
+        "events": 10
       },
       {
         "region": "North America",
@@ -155345,19 +155368,19 @@
         "events": 12
       },
       {
-        "region": "Africa",
-        "mint_ratio": 0.75,
-        "events": 4
-      },
-      {
         "region": "Asia",
-        "mint_ratio": 0.75,
-        "events": 4
+        "mint_ratio": 0.8,
+        "events": 5
       },
       {
         "region": "Europe",
+        "mint_ratio": 0.8,
+        "events": 10
+      },
+      {
+        "region": "Africa",
         "mint_ratio": 0.667,
-        "events": 12
+        "events": 3
       },
       {
         "region": "Oceania",
@@ -155398,7 +155421,7 @@
       },
       {
         "date": "2026-08-23",
-        "net_minted": 10082400,
+        "net_minted": 10382400,
         "net_burned": 1400000
       }
     ],
@@ -155415,8 +155438,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 12,
-        "negative": 33,
+        "positive": 10,
+        "negative": 31,
         "event_ids_positive": [
           6748,
           6745,
@@ -155427,11 +155450,10 @@
           6715,
           6712,
           6710,
-          6706,
-          6703,
-          6702
+          6706
         ],
         "event_ids_negative": [
+          6751,
           6750,
           6747,
           6746,
@@ -155461,15 +155483,12 @@
           6709,
           6708,
           6707,
-          6705,
-          6704,
-          6701,
-          6700
+          6705
         ]
       },
       "UDHR": {
-        "positive": 9,
-        "negative": 28,
+        "positive": 7,
+        "negative": 26,
         "event_ids_positive": [
           6748,
           6745,
@@ -155477,11 +155496,10 @@
           6719,
           6717,
           6710,
-          6706,
-          6703,
-          6702
+          6706
         ],
         "event_ids_negative": [
+          6751,
           6747,
           6744,
           6743,
@@ -155506,10 +155524,7 @@
           6711,
           6709,
           6707,
-          6705,
-          6704,
-          6701,
-          6700
+          6705
         ]
       },
       "ILO": {
@@ -155517,9 +155532,9 @@
         "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
+          6751,
           6743,
-          6730,
-          6704
+          6730
         ]
       },
       "CRC": {
@@ -155556,8 +155571,8 @@
         ]
       },
       "PB": {
-        "positive": 8,
-        "negative": 11,
+        "positive": 7,
+        "negative": 12,
         "event_ids_positive": [
           6745,
           6732,
@@ -155565,10 +155580,10 @@
           6715,
           6712,
           6710,
-          6706,
-          6703
+          6706
         ],
         "event_ids_negative": [
+          6751,
           6750,
           6746,
           6744,
@@ -155584,14 +155599,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.9,
-      "mainstream_pct": 3.1,
-      "total_sources_used": 32,
-      "articles_processed": 48
+      "niche_pct": 96.7,
+      "mainstream_pct": 3.3,
+      "total_sources_used": 30,
+      "articles_processed": 44
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 48,
+      "total_events": 44,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -155647,8 +155662,8 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 11,
-        "burn_count": 5,
+        "count": 10,
+        "burn_count": 4,
         "mint_count": 6,
         "event_ids": [
           6750,
@@ -155660,14 +155675,13 @@
           6722,
           6713,
           6712,
-          6710,
-          6703
+          6710
         ]
       },
       {
         "name": "Construction",
-        "count": 7,
-        "burn_count": 2,
+        "count": 6,
+        "burn_count": 1,
         "mint_count": 5,
         "event_ids": [
           6750,
@@ -155675,37 +155689,43 @@
           6740,
           6733,
           6730,
-          6719,
-          6703
+          6719
         ]
       },
       {
         "name": "Defense",
-        "count": 7,
+        "count": 5,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 5,
         "event_ids": [
           6731,
           6728,
           6709,
           6707,
-          6705,
-          6701,
-          6700
+          6705
         ]
       },
       {
         "name": "Finance",
-        "count": 6,
-        "burn_count": 2,
-        "mint_count": 4,
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
         "event_ids": [
           6746,
           6740,
           6729,
-          6717,
-          6703,
-          6701
+          6717
+        ]
+      },
+      {
+        "name": "Transport",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          6751,
+          6747,
+          6743
         ]
       },
       {
@@ -155717,16 +155737,6 @@
           6750,
           6733,
           6713
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          6747,
-          6743
         ]
       },
       {
@@ -155750,10 +155760,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 15,
+      "total_burn": 13,
       "direct_action": {
-        "count": 12,
-        "pct": 80.0
+        "count": 10,
+        "pct": 76.9
       },
       "editorial_consciousness": {
         "count": 0,
@@ -155761,7 +155771,7 @@
       },
       "untyped": {
         "count": 3,
-        "pct": 20.0
+        "pct": 23.1
       }
     },
     "burn_composition_all_time": {
@@ -155780,14 +155790,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 33,
+      "total_mint": 31,
       "direct_action": {
-        "count": 32,
-        "pct": 97.0
+        "count": 29,
+        "pct": 93.5
       },
       "editorial_alarm": {
-        "count": 1,
-        "pct": 3.0
+        "count": 2,
+        "pct": 6.5
       },
       "untyped": {
         "count": 0,
@@ -155795,13 +155805,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4774,
+      "total_mint": 4775,
       "direct_action": {
         "count": 3946,
-        "pct": 82.7
+        "pct": 82.6
       },
       "editorial_alarm": {
-        "count": 285,
+        "count": 286,
         "pct": 6.0
       },
       "untyped": {
@@ -155811,8 +155821,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 40,
-      "citizen_ratio": 0.167,
+      "institutional": 36,
+      "citizen_ratio": 0.182,
       "daily": [
         {
           "date": "2026-08-17",
@@ -155846,19 +155856,19 @@
         },
         {
           "date": "2026-08-23",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 8
         }
       ],
       "event_ids_citizen": [
+        6751,
         6745,
         6737,
         6723,
         6720,
         6710,
         6708,
-        6706,
-        6704
+        6706
       ],
       "event_ids_institutional": [
         6750,
@@ -155896,11 +155906,7 @@
         6711,
         6709,
         6707,
-        6705,
-        6703,
-        6702,
-        6701,
-        6700
+        6705
       ]
     }
   }
