@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-23T22:04:50.609305+00:00",
-  "total_events": 6752,
+  "generated_at": "2026-08-23T23:04:57.609851+00:00",
+  "total_events": 6753,
   "total_burned": 7848854255,
-  "total_minted": 9165389669,
+  "total_minted": 9172149669,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6753,
+      "event_title": "Boats from Eastern Libya: How Europe Is Bowing to a Libyan Warlord on Migration",
+      "event_url": "https://www.spiegel.de/international/europe/migration-wie-die-eu-sich-von-warlords-der-haftar-familie-erpressen-laesst-1787217281-a-9d6ea35f-75ce-49e2-95fc-268abe54936b#ref=rss",
+      "event_source": "Spiegel International (Germany)",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -4.81,
+      "confidence": 8,
+      "justification": "EU's engagement with Libyan warlords enables human rights abuses and undermines rule of law. | The EU's decision to engage with the Haftar family to curb migration prioritizes short-term border control over human rights, rule of law, and international protection obligations. This action legitimizes non-state armed actors linked to abuses, undermines the EU's ethical standing, and risks perpetuating cycles of violence and exploitation in Libya. The negative impacts on vulnerable populations, incl",
+      "tx_hash": "5nmpcQSxNYtNMaHntoq2aJpRJoeXuuuNMnjDeWzzJeiTxvyAtr2Sfs5awPxbnHwDnoYikzpVH4nxwLRVFGEG8NAf",
+      "created_at": "2026-08-23T23:04:53.273649+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"EU allows itself to be influenced by a Libyan warlord family (Haftar) to control migration flows, potentially enabling human rights abuses and impunity in Libya.\", \"affected_sdgs\": [1, 8, 10, 16], \"violated_rights\": [\"UDHR Article 3 (Right to Life)\", \"UDHR Article 4 (Freedom from Slavery)\", \"UDHR Article 5 (Freedom from Torture)\", \"UDHR Article 9 (Freedom from Arbitrary Detention)\", \"UDHR Article 13 (Freedom of Movement)\", \"UDHR Article 14 (Right to Asylum)\", \"CRC Article 22 (Refugee Children)\", \"ILO Forced Labor Convention\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}, {\"description\": \"Undermines EU's stated commitment to human rights and rule of law by negotiating with non-state armed actors linked to war crimes.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 28 (Social and International Order)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of normalizing warlord governance, weakening state sovereignty and long-term stability in Libya, with potential spillover effects in the region.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UNDRIP (if applicable to affected populations)\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6752,
       "event_title": "Animal rights between hunting and protection: Podcast episode on fox hunting and political pressure",
@@ -155444,7 +155467,7 @@
       },
       {
         "date": "2026-08-23",
-        "net_minted": 10432400,
+        "net_minted": 17192400,
         "net_burned": 1400000
       }
     ],
@@ -155462,7 +155485,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 10,
-        "negative": 32,
+        "negative": 33,
         "event_ids_positive": [
           6748,
           6745,
@@ -155476,6 +155499,7 @@
           6706
         ],
         "event_ids_negative": [
+          6753,
           6752,
           6751,
           6750,
@@ -155512,7 +155536,7 @@
       },
       "UDHR": {
         "positive": 7,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           6748,
           6745,
@@ -155523,6 +155547,7 @@
           6706
         ],
         "event_ids_negative": [
+          6753,
           6752,
           6751,
           6747,
@@ -155554,9 +155579,10 @@
       },
       "ILO": {
         "positive": 0,
-        "negative": 3,
+        "negative": 4,
         "event_ids_positive": [],
         "event_ids_negative": [
+          6753,
           6751,
           6743,
           6730
@@ -155564,12 +155590,13 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 3,
+        "negative": 4,
         "event_ids_positive": [
           6748,
           6745
         ],
         "event_ids_negative": [
+          6753,
           6739,
           6738,
           6711
@@ -155577,12 +155604,13 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [
           6745,
           6706
         ],
         "event_ids_negative": [
+          6753,
           6750,
           6711
         ]
@@ -155625,24 +155653,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.8,
-      "mainstream_pct": 3.2,
-      "total_sources_used": 31,
-      "articles_processed": 45
+      "niche_pct": 96.9,
+      "mainstream_pct": 3.1,
+      "total_sources_used": 32,
+      "articles_processed": 46
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 45,
+      "total_events": 46,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 2,
+        "count": 3,
         "burn_count": 1,
-        "mint_count": 1,
+        "mint_count": 2,
         "event_ids": [
+          6753,
           6740,
           6723
         ]
@@ -155816,14 +155845,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 32,
+      "total_mint": 33,
       "direct_action": {
-        "count": 30,
-        "pct": 93.8
+        "count": 31,
+        "pct": 93.9
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 6.2
+        "pct": 6.1
       },
       "untyped": {
         "count": 0,
@@ -155831,9 +155860,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4776,
+      "total_mint": 4777,
       "direct_action": {
-        "count": 3947,
+        "count": 3948,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -155847,8 +155876,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 9,
-      "institutional": 36,
-      "citizen_ratio": 0.2,
+      "institutional": 37,
+      "citizen_ratio": 0.196,
       "daily": [
         {
           "date": "2026-08-17",
@@ -155883,7 +155912,7 @@
         {
           "date": "2026-08-23",
           "citizen": 3,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -155898,6 +155927,7 @@
         6706
       ],
       "event_ids_institutional": [
+        6753,
         6750,
         6748,
         6747,
