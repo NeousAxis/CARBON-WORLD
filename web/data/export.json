@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-23T23:04:57.609851+00:00",
-  "total_events": 6753,
+  "generated_at": "2026-08-24T00:06:12.598713+00:00",
+  "total_events": 6754,
   "total_burned": 7848854255,
-  "total_minted": 9172149669,
+  "total_minted": 9172449669,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6754,
+      "event_title": "Trump ordered to release billions in climate grants meant for Black communities",
+      "event_url": "https://grist.org/energy/trump-ordered-to-release-billions-in-climate-grants-meant-for-black-communities/",
+      "event_source": "Grist",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": 2.39,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Court-ordered release of funds corrects prior harm, punishing systemic obstruction and protecting rights. | The court order to release climate grants for Black communities represents a significant step toward rectifying environmental justice inequities, directly supporting multiple SDGs and human rights frameworks. However, the initial withholding of funds and the need for j",
+      "tx_hash": "52WKTbHWZAHT67yKip8LeZ5T7VPsWPmKZ6XEhDG1Zp53fnMrNdCASuTux7GVHvPHr7gF9tJ6CE4v2ZGFf3LAP9j8",
+      "created_at": "2026-08-24T00:06:09.853715+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Court order mandates release of $2 billion in climate grants specifically earmarked for Black communities, addressing historical environmental justice disparities.\", \"affected_sdgs\": [1, 7, 10, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Funds target clean energy access and climate resilience in marginalized communities, directly supporting SDGs 7 and 13 while reducing inequality (SDG 10).\", \"affected_sdgs\": [7, 10, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Initial withholding of funds delayed critical climate adaptation projects, exacerbating vulnerability in Black communities already disproportionately affected by environmental hazards.\", \"affected_sdgs\": [10, 11, 13], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Judicial intervention required to enforce funding suggests systemic resistance to equitable climate policy, risking future delays for similar programs.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 7\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 50500
+    },
     {
       "id": 6753,
       "event_title": "Boats from Eastern Libya: How Europe Is Bowing to a Libyan Warlord on Migration",
@@ -155330,7 +155353,7 @@
       {
         "country": "United States",
         "count": 10,
-        "total_amount": 9266650
+        "total_amount": 8258650
       },
       {
         "country": "Australia",
@@ -155436,11 +155459,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-08-17",
-        "net_minted": 8630660,
-        "net_burned": 11141680
-      },
-      {
         "date": "2026-08-18",
         "net_minted": 0,
         "net_burned": 0
@@ -155469,6 +155487,11 @@
         "date": "2026-08-23",
         "net_minted": 17192400,
         "net_burned": 1400000
+      },
+      {
+        "date": "2026-08-24",
+        "net_minted": 300000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -155499,6 +155522,7 @@
           6706
         ],
         "event_ids_negative": [
+          6754,
           6753,
           6752,
           6751,
@@ -155530,8 +155554,7 @@
           6711,
           6709,
           6708,
-          6707,
-          6705
+          6707
         ]
       },
       "UDHR": {
@@ -155547,6 +155570,7 @@
           6706
         ],
         "event_ids_negative": [
+          6754,
           6753,
           6752,
           6751,
@@ -155573,8 +155597,7 @@
           6714,
           6711,
           6709,
-          6707,
-          6705
+          6707
         ]
       },
       "ILO": {
@@ -155604,12 +155627,13 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 3,
+        "negative": 4,
         "event_ids_positive": [
           6745,
           6706
         ],
         "event_ids_negative": [
+          6754,
           6753,
           6750,
           6711
@@ -155626,7 +155650,7 @@
       },
       "PB": {
         "positive": 7,
-        "negative": 12,
+        "negative": 11,
         "event_ids_positive": [
           6745,
           6732,
@@ -155647,8 +155671,7 @@
           6724,
           6718,
           6709,
-          6708,
-          6705
+          6708
         ]
       }
     },
@@ -155748,28 +155771,28 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          6731,
-          6728,
-          6709,
-          6707,
-          6705
-        ]
-      },
-      {
         "name": "Finance",
-        "count": 4,
+        "count": 5,
         "burn_count": 1,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          6754,
           6746,
           6740,
           6729,
           6717
+        ]
+      },
+      {
+        "name": "Defense",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          6731,
+          6728,
+          6709,
+          6707
         ]
       },
       {
@@ -155847,12 +155870,12 @@
     "mint_composition_7d": {
       "total_mint": 33,
       "direct_action": {
-        "count": 31,
-        "pct": 93.9
+        "count": 30,
+        "pct": 90.9
       },
       "editorial_alarm": {
-        "count": 2,
-        "pct": 6.1
+        "count": 3,
+        "pct": 9.1
       },
       "untyped": {
         "count": 0,
@@ -155860,13 +155883,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4777,
+      "total_mint": 4778,
       "direct_action": {
         "count": 3948,
         "pct": 82.6
       },
       "editorial_alarm": {
-        "count": 286,
+        "count": 287,
         "pct": 6.0
       },
       "untyped": {
@@ -155875,15 +155898,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 9,
-      "institutional": 37,
-      "citizen_ratio": 0.196,
+      "citizen": 10,
+      "institutional": 36,
+      "citizen_ratio": 0.217,
       "daily": [
-        {
-          "date": "2026-08-17",
-          "citizen": 5,
-          "institutional": 22
-        },
         {
           "date": "2026-08-18",
           "citizen": 0,
@@ -155913,9 +155931,15 @@
           "date": "2026-08-23",
           "citizen": 3,
           "institutional": 9
+        },
+        {
+          "date": "2026-08-24",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        6754,
         6752,
         6751,
         6745,
@@ -155962,8 +155986,7 @@
         6712,
         6711,
         6709,
-        6707,
-        6705
+        6707
       ]
     }
   }
