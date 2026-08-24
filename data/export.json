@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-24T03:04:38.322754+00:00",
-  "total_events": 6759,
-  "total_burned": 7849554255,
+  "generated_at": "2026-08-24T07:06:58.771711+00:00",
+  "total_events": 6760,
+  "total_burned": 7850254255,
   "total_minted": 9180895269,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6760,
+      "event_title": "Amnesty International urges UN Human Rights Council to extend Sudan fact-finding mission mandate",
+      "event_url": "https://www.amnesty.org/en/documents/afr65/1383/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 3.5,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action strengthens accountability and human rights protections in Sudan. | The extension of the Fact-Finding Mission's mandate is a critical step toward accountability and justice in Sudan, directly supporting SDG 16 (Peace, Justice, and Strong Institutions) and upholding core UDHR principles. However, the urgency of the request underscores the severity of ongoing ",
+      "tx_hash": "WqsKeGtEkjtC8DcxSaPV4aBppZnPEfVp5pszwTzEesdUZ1sUjwnvBv3nPLGV7HM5LmkScQCbTfBxzwVSjRE6SDw",
+      "created_at": "2026-08-24T07:06:55.989298+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Amnesty International and partners formally urge the UN Human Rights Council to extend the Sudan Fact-Finding Mission's mandate, ensuring continued independent investigation and reporting on human rights violations in Sudan.\", \"affected_sdgs\": [16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Failure to extend the mandate would risk impunity for ongoing human rights violations in Sudan, including potential war crimes and crimes against humanity, undermining accountability and justice.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 6\", \"UDHR Article 7\", \"UDHR Article 8\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 667000
+    },
     {
       "id": 6759,
       "event_title": "When residents again challenge the environmental permit for the Dairi zinc mine",
@@ -155467,8 +155490,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 8,
-        "total_amount": 2800850
+        "count": 6,
+        "total_amount": 2668400
       },
       {
         "country": "Russia",
@@ -155493,11 +155516,6 @@
     ],
     "top_countries_burn": [
       {
-        "country": "United States",
-        "count": 2,
-        "total_amount": 268300
-      },
-      {
         "country": "South Africa",
         "count": 1,
         "total_amount": 700000
@@ -155508,14 +155526,14 @@
         "total_amount": 700000
       },
       {
+        "country": "United States",
+        "count": 1,
+        "total_amount": 220500
+      },
+      {
         "country": "France",
         "count": 1,
         "total_amount": 22300
-      },
-      {
-        "country": "Spain",
-        "count": 1,
-        "total_amount": 252000
       }
     ],
     "top_regions_sustainable": [
@@ -155525,19 +155543,19 @@
         "events": 3
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.2,
-        "events": 10
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.182,
-        "events": 11
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.167,
         "events": 6
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.143,
+        "events": 7
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.1,
+        "events": 10
       },
       {
         "region": "Oceania",
@@ -155552,19 +155570,19 @@
         "events": 3
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.833,
-        "events": 6
-      },
-      {
         "region": "Europe",
-        "mint_ratio": 0.818,
-        "events": 11
+        "mint_ratio": 0.9,
+        "events": 10
       },
       {
         "region": "North America",
-        "mint_ratio": 0.8,
-        "events": 10
+        "mint_ratio": 0.857,
+        "events": 7
+      },
+      {
+        "region": "Asia",
+        "mint_ratio": 0.833,
+        "events": 6
       },
       {
         "region": "Africa",
@@ -155606,7 +155624,7 @@
       {
         "date": "2026-08-24",
         "net_minted": 8745600,
-        "net_burned": 700000
+        "net_burned": 1400000
       }
     ],
     "event_of_the_day": {
@@ -155622,17 +155640,16 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 8,
-        "negative": 32,
+        "positive": 7,
+        "negative": 30,
         "event_ids_positive": [
+          6760,
           6756,
           6748,
           6745,
           6732,
           6723,
-          6719,
-          6717,
-          6715
+          6719
         ],
         "event_ids_negative": [
           6759,
@@ -155664,21 +155681,19 @@
           6726,
           6725,
           6724,
-          6718,
-          6716,
-          6714
+          6718
         ]
       },
       "UDHR": {
         "positive": 6,
-        "negative": 28,
+        "negative": 27,
         "event_ids_positive": [
+          6760,
           6756,
           6748,
           6745,
           6732,
-          6719,
-          6717
+          6719
         ],
         "event_ids_negative": [
           6759,
@@ -155707,8 +155722,7 @@
           6726,
           6725,
           6724,
-          6718,
-          6714
+          6718
         ]
       },
       "ILO": {
@@ -155762,14 +155776,13 @@
         ]
       },
       "PB": {
-        "positive": 5,
+        "positive": 4,
         "negative": 12,
         "event_ids_positive": [
           6756,
           6745,
           6732,
-          6723,
-          6715
+          6723
         ],
         "event_ids_negative": [
           6759,
@@ -155788,15 +155801,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.1,
-      "mainstream_pct": 2.9,
-      "total_sources_used": 35,
-      "articles_processed": 46
+      "niche_pct": 97.2,
+      "mainstream_pct": 2.8,
+      "total_sources_used": 36,
+      "articles_processed": 43
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 46,
-      "pct": 6.5
+      "total_events": 43,
+      "pct": 7.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -155815,6 +155828,15 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          6760
+        ]
+      },
+      {
         "name": "EU Commission",
         "count": 1,
         "burn_count": 0,
@@ -155830,24 +155852,6 @@
         "mint_count": 1,
         "event_ids": [
           6743
-        ]
-      },
-      {
-        "name": "WHO",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          6716
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          6714
         ]
       }
     ],
@@ -155888,16 +155892,15 @@
       },
       {
         "name": "Finance",
-        "count": 6,
-        "burn_count": 1,
+        "count": 5,
+        "burn_count": 0,
         "mint_count": 5,
         "event_ids": [
           6758,
           6754,
           6746,
           6740,
-          6729,
-          6717
+          6729
         ]
       },
       {
@@ -155953,10 +155956,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 11,
+      "total_burn": 10,
       "direct_action": {
-        "count": 8,
-        "pct": 72.7
+        "count": 7,
+        "pct": 70.0
       },
       "editorial_consciousness": {
         "count": 0,
@@ -155964,13 +155967,13 @@
       },
       "untyped": {
         "count": 3,
-        "pct": 27.3
+        "pct": 30.0
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1966,
+      "total_burn": 1967,
       "direct_action": {
-        "count": 1541,
+        "count": 1542,
         "pct": 78.4
       },
       "editorial_consciousness": {
@@ -155983,18 +155986,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 35,
+      "total_mint": 33,
       "direct_action": {
-        "count": 29,
-        "pct": 82.9
+        "count": 27,
+        "pct": 81.8
       },
       "editorial_alarm": {
         "count": 3,
-        "pct": 8.6
+        "pct": 9.1
       },
       "untyped": {
         "count": 3,
-        "pct": 8.6
+        "pct": 9.1
       }
     },
     "mint_composition_all_time": {
@@ -156014,8 +156017,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 38,
-      "citizen_ratio": 0.174,
+      "institutional": 35,
+      "citizen_ratio": 0.186,
       "daily": [
         {
           "date": "2026-08-18",
@@ -156050,7 +156053,7 @@
         {
           "date": "2026-08-24",
           "citizen": 2,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -156064,6 +156067,7 @@
         6720
       ],
       "event_ids_institutional": [
+        6760,
         6759,
         6758,
         6757,
@@ -156097,11 +156101,7 @@
         6722,
         6721,
         6719,
-        6718,
-        6717,
-        6716,
-        6715,
-        6714
+        6718
       ]
     }
   }
