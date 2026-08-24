@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-24T17:07:20.637002+00:00",
-  "total_events": 6774,
+  "generated_at": "2026-08-24T18:05:46.123330+00:00",
+  "total_events": 6775,
   "total_burned": 7850679255,
-  "total_minted": 9198701169,
+  "total_minted": 9198761569,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6775,
+      "event_title": "International company's plan for multi-billion-dollar data centre in regional Queensland",
+      "event_url": "https://www.abc.net.au/news/2026-08-24/plans-for-australia-largest-data-centre-in-regional-queensland/107071624",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.02,
+      "confidence": 7,
+      "justification": "Approval of a high-impact project without binding sustainability safeguards risks environmental harm outweighing economic benefits. | The approval of the data centre represents a significant economic opportunity for regional Queensland, aligning with SDGs 8, 9, and 11. However, the project's potential environmental costs—particularly its energy and water demands—pose substantial risks to SDGs 6, 7, 13, and planetary boundaries. The absence of binding sustainability commitments weakens its ethica",
+      "tx_hash": "2bfd9f35fPDghGprEAQm6XWXie62US6apH8nJUBdZgbLJFnXsNQnRnKmFeBgXo7b4sLPMCVGH14QJgwMeegshS9t",
+      "created_at": "2026-08-24T18:05:42.433631+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Approval of a $31.9 billion hyper-scale data centre in regional Queensland, promising significant economic growth and job creation in a non-metropolitan area.\", \"affected_sdgs\": [8, 9, 11], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential increase in energy demand and water consumption in a regional area, risking strain on local resources and contributing to climate change if powered by non-renewable sources.\", \"affected_sdgs\": [6, 7, 13], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Lack of explicit binding commitments to renewable energy or water sustainability in the project approval, raising concerns about long-term environmental harm.\", \"affected_sdgs\": [12, 13, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6774,
       "event_title": "Donald Trump threatens Canada with 50% tariff on vehicles from January 1, 2027",
@@ -155816,6 +155839,11 @@
         "total_amount": 10172700
       },
       {
+        "country": "Australia",
+        "count": 3,
+        "total_amount": 433000
+      },
+      {
         "country": "New Zealand",
         "count": 3,
         "total_amount": 893600
@@ -155829,18 +155857,13 @@
         "country": "Indonesia",
         "count": 2,
         "total_amount": 671600
-      },
-      {
-        "country": "Switzerland",
-        "count": 2,
-        "total_amount": 200000
       }
     ],
     "top_countries_burn": [
       {
         "country": "United States",
-        "count": 2,
-        "total_amount": 645500
+        "count": 1,
+        "total_amount": 425000
       },
       {
         "country": "South Africa",
@@ -155855,19 +155878,19 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "North America",
-        "burn_ratio": 0.182,
-        "events": 11
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.125,
         "events": 8
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.1,
+        "events": 10
+      },
+      {
         "region": "Oceania",
         "burn_ratio": 0.0,
-        "events": 5
+        "events": 6
       },
       {
         "region": "Europe",
@@ -155879,7 +155902,7 @@
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 5
+        "events": 6
       },
       {
         "region": "Europe",
@@ -155887,14 +155910,14 @@
         "events": 7
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.9,
+        "events": 10
+      },
+      {
         "region": "Asia",
         "mint_ratio": 0.875,
         "events": 8
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.818,
-        "events": 11
       }
     ],
     "supply_trend_7d": [
@@ -155930,7 +155953,7 @@
       },
       {
         "date": "2026-08-24",
-        "net_minted": 26551500,
+        "net_minted": 26611900,
         "net_burned": 1825000
       }
     ],
@@ -155947,17 +155970,17 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 6,
-        "negative": 34,
+        "positive": 5,
+        "negative": 35,
         "event_ids_positive": [
           6768,
           6760,
           6756,
           6748,
-          6745,
-          6732
+          6745
         ],
         "event_ids_negative": [
+          6775,
           6774,
           6773,
           6772,
@@ -155995,15 +156018,14 @@
         ]
       },
       "UDHR": {
-        "positive": 6,
+        "positive": 5,
         "negative": 29,
         "event_ids_positive": [
           6768,
           6760,
           6756,
           6748,
-          6745,
-          6732
+          6745
         ],
         "event_ids_negative": [
           6774,
@@ -156097,14 +156119,14 @@
         ]
       },
       "PB": {
-        "positive": 3,
-        "negative": 17,
+        "positive": 2,
+        "negative": 18,
         "event_ids_positive": [
           6756,
-          6745,
-          6732
+          6745
         ],
         "event_ids_negative": [
+          6775,
           6773,
           6772,
           6769,
@@ -156126,9 +156148,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.0,
-      "mainstream_pct": 3.0,
-      "total_sources_used": 33,
+      "niche_pct": 96.9,
+      "mainstream_pct": 3.1,
+      "total_sources_used": 32,
       "articles_processed": 43
     },
     "cache_hit_rate_7d": {
@@ -156192,9 +156214,10 @@
       {
         "name": "Energy",
         "count": 15,
-        "burn_count": 1,
-        "mint_count": 14,
+        "burn_count": 0,
+        "mint_count": 15,
         "event_ids": [
+          6775,
           6772,
           6767,
           6765,
@@ -156208,8 +156231,7 @@
           6742,
           6741,
           6740,
-          6737,
-          6732
+          6737
         ]
       },
       {
@@ -156241,6 +156263,18 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 4,
+        "burn_count": 1,
+        "mint_count": 3,
+        "event_ids": [
+          6775,
+          6756,
+          6750,
+          6733
+        ]
+      },
+      {
         "name": "Transport",
         "count": 4,
         "burn_count": 0,
@@ -156250,17 +156284,6 @@
           6751,
           6747,
           6743
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 3,
-        "burn_count": 1,
-        "mint_count": 2,
-        "event_ids": [
-          6756,
-          6750,
-          6733
         ]
       },
       {
@@ -156293,9 +156316,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 6,
+      "total_burn": 5,
       "direct_action": {
-        "count": 6,
+        "count": 5,
         "pct": 100.0
       },
       "editorial_consciousness": {
@@ -156323,24 +156346,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 37,
+      "total_mint": 38,
       "direct_action": {
-        "count": 30,
-        "pct": 81.1
+        "count": 31,
+        "pct": 81.6
       },
       "editorial_alarm": {
         "count": 4,
-        "pct": 10.8
+        "pct": 10.5
       },
       "untyped": {
         "count": 3,
-        "pct": 8.1
+        "pct": 7.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4798,
+      "total_mint": 4799,
       "direct_action": {
-        "count": 3964,
+        "count": 3965,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -156390,7 +156413,7 @@
         {
           "date": "2026-08-24",
           "citizen": 6,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -156406,6 +156429,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6775,
         6774,
         6773,
         6772,
@@ -156437,8 +156461,7 @@
         6736,
         6735,
         6734,
-        6733,
-        6732
+        6733
       ]
     }
   }
