@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-25T00:08:05.508936+00:00",
-  "total_events": 6788,
+  "generated_at": "2026-08-25T01:06:35.313357+00:00",
+  "total_events": 6789,
   "total_burned": 7852079255,
-  "total_minted": 9217124569,
+  "total_minted": 9217974569,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6789,
+      "event_title": "US removes Syria from state sponsor of terrorism list",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/us-removes-syria-state-sponsor-terrorism-list",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 850000,
+      "final_score": -3.5,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables harm by removing accountability for human rights abuses and terrorism. | The decision to remove Syria from the state sponsor of terrorism list and revoke HTS's terrorist designation presents a stark ethical trade-off. While it may reduce geopolitical tensions and improve humanitarian conditions, it risks enabling impunity for severe human rights ",
+      "tx_hash": "5c4MWSfnSNMF8wgpFcPtfn8cVWG1uKQTfQ3drxBXiXjAJfbJUaGE1rFCDZ3fNzFppeZ9NMoWZUPhUyDcUHv5tJSW",
+      "created_at": "2026-08-25T01:06:31.489772+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential for improved diplomatic relations and reduced geopolitical tension in the Middle East, facilitating humanitarian aid and reconstruction efforts in Syria.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Sanctions relief may enable economic recovery and access to basic goods, indirectly supporting SDGs 1 (No Poverty), 2 (Zero Hunger), and 3 (Good Health).\", \"affected_sdgs\": [1, 2, 3], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Removal of Syria from the state sponsor of terrorism list may enable impunity for past and ongoing human rights violations, including war crimes and crimes against humanity.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"CRC Article 38\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Revocation of HTS's terrorist designation risks legitimizing a group linked to severe human rights abuses, including forced displacement, torture, and extrajudicial killings.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"ILO Forced Labor Convention\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Sanctions relief may strengthen the Assad regime's capacity to suppress dissent and perpetuate authoritarian governance, undermining democratic principles and civic freedoms.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 8290000
+    },
     {
       "id": 6788,
       "event_title": "US slaps new sanctions on Iran, warns Tehran trade partners",
@@ -156134,8 +156157,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 15,
-        "total_amount": 26281700
+        "count": 16,
+        "total_amount": 27131700
       },
       {
         "country": "New Zealand",
@@ -156178,8 +156201,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.118,
-        "events": 17
+        "burn_ratio": 0.111,
+        "events": 18
       },
       {
         "region": "Asia",
@@ -156215,8 +156238,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.882,
-        "events": 17
+        "mint_ratio": 0.889,
+        "events": 18
       }
     ],
     "supply_trend_7d": [
@@ -156252,7 +156275,7 @@
       },
       {
         "date": "2026-08-25",
-        "net_minted": 8029000,
+        "net_minted": 8879000,
         "net_burned": 0
       }
     ],
@@ -156270,7 +156293,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 7,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [
           6782,
           6779,
@@ -156281,6 +156304,7 @@
           6745
         ],
         "event_ids_negative": [
+          6789,
           6788,
           6787,
           6786,
@@ -156331,7 +156355,7 @@
       },
       "UDHR": {
         "positive": 6,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [
           6779,
           6768,
@@ -156341,6 +156365,7 @@
           6745
         ],
         "event_ids_negative": [
+          6789,
           6788,
           6787,
           6786,
@@ -156384,11 +156409,12 @@
       },
       "ILO": {
         "positive": 1,
-        "negative": 8,
+        "negative": 9,
         "event_ids_positive": [
           6779
         ],
         "event_ids_negative": [
+          6789,
           6787,
           6786,
           6785,
@@ -156401,13 +156427,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 10,
+        "negative": 11,
         "event_ids_positive": [
           6768,
           6748,
           6745
         ],
         "event_ids_negative": [
+          6789,
           6785,
           6783,
           6781,
@@ -156491,15 +156518,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.6,
-      "mainstream_pct": 2.4,
+      "niche_pct": 95.2,
+      "mainstream_pct": 4.8,
       "total_sources_used": 42,
-      "articles_processed": 56
+      "articles_processed": 57
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 56,
-      "pct": 5.4
+      "total_events": 57,
+      "pct": 5.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -156702,24 +156729,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 49,
+      "total_mint": 50,
       "direct_action": {
-        "count": 41,
-        "pct": 83.7
+        "count": 42,
+        "pct": 84.0
       },
       "editorial_alarm": {
         "count": 5,
-        "pct": 10.2
+        "pct": 10.0
       },
       "untyped": {
         "count": 3,
-        "pct": 6.1
+        "pct": 6.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4810,
+      "total_mint": 4811,
       "direct_action": {
-        "count": 3975,
+        "count": 3976,
         "pct": 82.6
       },
       "editorial_alarm": {
@@ -156728,13 +156755,13 @@
       },
       "untyped": {
         "count": 546,
-        "pct": 11.4
+        "pct": 11.3
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 15,
-      "institutional": 41,
-      "citizen_ratio": 0.268,
+      "institutional": 42,
+      "citizen_ratio": 0.263,
       "daily": [
         {
           "date": "2026-08-19",
@@ -156769,7 +156796,7 @@
         {
           "date": "2026-08-25",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -156790,6 +156817,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6789,
         6788,
         6787,
         6786,
