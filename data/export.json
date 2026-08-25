@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-25T19:11:36.029701+00:00",
-  "total_events": 6817,
+  "generated_at": "2026-08-25T20:10:08.329977+00:00",
+  "total_events": 6818,
   "total_burned": 7853961755,
-  "total_minted": 9235928969,
+  "total_minted": 9236428969,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6818,
+      "event_title": "Syria's Kurdish-led SDF dissolves as part of integration with Damascus",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/syrias-kurdish-led-sdf-dissolves-part-integration-damascus",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.6,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Dissolution of SDF under Islamist-led Damascus risks enabling Kurdish rights violations and state repression. | The dissolution of the SDF as part of a state integration plan presents a complex ethical dilemma. While it may reduce armed conflict and improve state governance (SDG 16), it risks undermining Kurdish self-determination (UNDRIP) and exposing vulnerable populations",
+      "tx_hash": "28qD9jrgFYwCHaNNuq2oguvLTtvkDPDA4bXz3taVmfNT66rqTppsws26jUZDfcAo3UabQxmPJrxNFm7bm3haF7GC",
+      "created_at": "2026-08-25T20:10:05.124061+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Syria",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Dissolution of an armed militant group as part of a formal integration agreement with the state may reduce armed conflict and civilian casualties in the region.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for improved governance and state control, reducing lawlessness and enabling better protection of human rights under a unified authority.\", \"affected_sdgs\": [16, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Dissolution of the SDF, a Kurdish-led force, may undermine Kurdish autonomy and self-determination, violating rights under UNDRIP.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UNDRIP\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Integration with a government accused of human rights abuses may expose former SDF members and Kurdish civilians to persecution, violating UDHR and CRC protections.\", \"affected_sdgs\": [16, 5, 10], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 38\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Loss of a de facto autonomous administration could weaken local governance structures, reducing access to education, healthcare, and economic opportunities for Kurdish populations.\", \"affected_sdgs\": [1, 3, 4, 8], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 26\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6817,
       "event_title": "Restriction of MP powers may weaken environmental defense, warns Abrampa",
@@ -156869,26 +156892,26 @@
         "events": 27
       },
       {
-        "region": "Latin America",
+        "region": "MENA",
         "burn_ratio": 0.0,
         "events": 4
       },
       {
-        "region": "MENA",
+        "region": "Latin America",
         "burn_ratio": 0.0,
-        "events": 3
+        "events": 4
       }
     ],
     "top_regions_destructive": [
       {
-        "region": "Latin America",
+        "region": "MENA",
         "mint_ratio": 1.0,
         "events": 4
       },
       {
-        "region": "MENA",
+        "region": "Latin America",
         "mint_ratio": 1.0,
-        "events": 3
+        "events": 4
       },
       {
         "region": "Oceania",
@@ -156939,7 +156962,7 @@
       },
       {
         "date": "2026-08-25",
-        "net_minted": 26833400,
+        "net_minted": 27333400,
         "net_burned": 1882500
       }
     ],
@@ -156957,7 +156980,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 10,
-        "negative": 72,
+        "negative": 73,
         "event_ids_positive": [
           6802,
           6801,
@@ -156971,6 +156994,7 @@
           6745
         ],
         "event_ids_negative": [
+          6818,
           6817,
           6816,
           6815,
@@ -157047,7 +157071,7 @@
       },
       "UDHR": {
         "positive": 8,
-        "negative": 65,
+        "negative": 66,
         "event_ids_positive": [
           6802,
           6792,
@@ -157059,6 +157083,7 @@
           6745
         ],
         "event_ids_negative": [
+          6818,
           6817,
           6816,
           6815,
@@ -157148,7 +157173,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           6792,
           6768,
@@ -157156,6 +157181,7 @@
           6745
         ],
         "event_ids_negative": [
+          6818,
           6813,
           6810,
           6808,
@@ -157178,13 +157204,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 21,
+        "negative": 22,
         "event_ids_positive": [
           6768,
           6756,
           6745
         ],
         "event_ids_negative": [
+          6818,
           6817,
           6814,
           6813,
@@ -157276,11 +157303,11 @@
       "niche_pct": 96.4,
       "mainstream_pct": 3.6,
       "total_sources_used": 56,
-      "articles_processed": 85
+      "articles_processed": 86
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 85,
+      "total_events": 86,
       "pct": 3.5
     },
     "active_partners_7d": [],
@@ -157514,24 +157541,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 75,
+      "total_mint": 76,
       "direct_action": {
-        "count": 64,
-        "pct": 85.3
+        "count": 65,
+        "pct": 85.5
       },
       "editorial_alarm": {
         "count": 8,
-        "pct": 10.7
+        "pct": 10.5
       },
       "untyped": {
         "count": 3,
-        "pct": 4.0
+        "pct": 3.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4836,
+      "total_mint": 4837,
       "direct_action": {
-        "count": 3998,
+        "count": 3999,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -157545,8 +157572,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 26,
-      "institutional": 59,
-      "citizen_ratio": 0.306,
+      "institutional": 60,
+      "citizen_ratio": 0.302,
       "daily": [
         {
           "date": "2026-08-19",
@@ -157581,7 +157608,7 @@
         {
           "date": "2026-08-25",
           "citizen": 11,
-          "institutional": 21
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -157613,6 +157640,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6818,
         6817,
         6816,
         6815,
