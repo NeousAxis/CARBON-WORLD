@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-25T10:08:37.169000+00:00",
-  "total_events": 6798,
+  "generated_at": "2026-08-25T11:09:11.144635+00:00",
+  "total_events": 6799,
   "total_burned": 7852579255,
-  "total_minted": 9222383569,
+  "total_minted": 9228423569,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6799,
+      "event_title": "Trump threatens to double tariffs on Canadian products",
+      "event_url": "https://www.france24.com/fr/vid%C3%A9o/20260825-trump-menace-de-doubler-les-droits-de-douane-sur-les-produits-canadiens",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -4.06,
+      "confidence": 8,
+      "justification": "Threatened tariffs undermine trade cooperation, economic stability, and labor rights, with high risk of escalation. | The threatened tariff increase represents a regressive trade policy that undermines economic stability, fair labor conditions, and international cooperation. While the direct environmental impact is secondary, the disruption to supply chains and economic incentives could indirectly harm sustainability efforts. The action primarily violates economic and social rights under the UDH",
+      "tx_hash": "3BZWtMSqrxysifUe2cVxLnS238zTpYsQ9WaR46gEKhHDpFiDxoTGPcmQLCSPEYBtSgNLAo72DzQErsVGF2qcJqvq",
+      "created_at": "2026-08-25T11:09:06.383470+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Threat to double tariffs on Canadian automotive and steel imports, increasing trade barriers and potentially disrupting supply chains.\", \"affected_sdgs\": [8, 9, 10, 12, 17], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Undermines bilateral trade relations and international cooperation, risking economic instability and job losses in both countries.\", \"affected_sdgs\": [8, 10, 16, 17], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential environmental harm due to disrupted supply chains and increased production costs, incentivizing less sustainable practices.\", \"affected_sdgs\": [12, 13, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6798,
       "event_title": "Poland’s Mesko signs €1.9bn deal to supply Piorun air-defence systems to four NATO countries",
@@ -156364,8 +156387,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 19,
-        "total_amount": 28606700
+        "count": 20,
+        "total_amount": 34646700
       },
       {
         "country": "New Zealand",
@@ -156413,8 +156436,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.095,
-        "events": 21
+        "burn_ratio": 0.091,
+        "events": 22
       },
       {
         "region": "Europe",
@@ -156444,14 +156467,14 @@
         "events": 12
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.909,
+        "events": 22
+      },
+      {
         "region": "Europe",
         "mint_ratio": 0.909,
         "events": 11
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.905,
-        "events": 21
       }
     ],
     "supply_trend_7d": [
@@ -156487,7 +156510,7 @@
       },
       {
         "date": "2026-08-25",
-        "net_minted": 13288000,
+        "net_minted": 19328000,
         "net_burned": 500000
       }
     ],
@@ -156505,7 +156528,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 8,
-        "negative": 55,
+        "negative": 56,
         "event_ids_positive": [
           6792,
           6782,
@@ -156517,6 +156540,7 @@
           6745
         ],
         "event_ids_negative": [
+          6799,
           6798,
           6797,
           6796,
@@ -156576,7 +156600,7 @@
       },
       "UDHR": {
         "positive": 7,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           6792,
           6779,
@@ -156587,6 +156611,7 @@
           6745
         ],
         "event_ids_negative": [
+          6799,
           6798,
           6797,
           6796,
@@ -156720,13 +156745,14 @@
       },
       "PB": {
         "positive": 3,
-        "negative": 25,
+        "negative": 26,
         "event_ids_positive": [
           6782,
           6756,
           6745
         ],
         "event_ids_negative": [
+          6799,
           6798,
           6793,
           6791,
@@ -156756,14 +156782,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.6,
-      "mainstream_pct": 4.4,
-      "total_sources_used": 45,
-      "articles_processed": 66
+      "niche_pct": 95.7,
+      "mainstream_pct": 4.3,
+      "total_sources_used": 46,
+      "articles_processed": 67
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 66,
+      "total_events": 67,
       "pct": 4.5
     },
     "active_partners_7d": [],
@@ -156988,24 +157014,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 58,
+      "total_mint": 59,
       "direct_action": {
-        "count": 49,
-        "pct": 84.5
+        "count": 50,
+        "pct": 84.7
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 10.3
+        "pct": 10.2
       },
       "untyped": {
         "count": 3,
-        "pct": 5.2
+        "pct": 5.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4819,
+      "total_mint": 4820,
       "direct_action": {
-        "count": 3983,
+        "count": 3984,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -157019,8 +157045,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 18,
-      "institutional": 48,
-      "citizen_ratio": 0.273,
+      "institutional": 49,
+      "citizen_ratio": 0.269,
       "daily": [
         {
           "date": "2026-08-19",
@@ -157055,7 +157081,7 @@
         {
           "date": "2026-08-25",
           "citizen": 3,
-          "institutional": 10
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -157079,6 +157105,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6799,
         6798,
         6797,
         6796,
