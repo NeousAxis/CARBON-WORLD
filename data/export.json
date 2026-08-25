@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-25T14:07:35.920213+00:00",
-  "total_events": 6805,
+  "generated_at": "2026-08-25T15:08:26.548087+00:00",
+  "total_events": 6807,
   "total_burned": 7853961755,
-  "total_minted": 9229889169,
+  "total_minted": 9230915169,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6807,
+      "event_title": "Switzerland Has Stopped Thinking Big",
+      "event_url": "https://www.letemps.ch/articles/la-suisse-a-cesse-de-voir-grand",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 350000,
+      "final_score": -4.31,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Swiss austerity cuts directly undermine climate resilience and biodiversity, violating multiple ethical frameworks. | The decision to cut funding for forest resilience and broader austerity measures represents a clear violation of climate action (SDG 13) and life on land (SDG 15), with cascading effects on biodiversity and community rights. While fiscal prudence is cited, the t",
+      "tx_hash": "2cSLwRLqyJt6bH5jtvaHjTVBfbgtQteAtXEMcz7XnRkukr5XgnYCu2UZG5DMdp5F3L8e5Zq3R6u82CqC9WxBfGpR",
+      "created_at": "2026-08-25T15:08:23.632605+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Swiss parliament and federal council reduce funding for forest resilience programs aimed at combating drought and heat, citing debt brake constraints. This directly undermines climate adaptation efforts and biodiversity protection.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UDHR Article 25 (right to adequate living conditions)\", \"UNDRIP (indigenous and local community rights to land and resources)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}, {\"description\": \"Broader austerity measures (1.4-2 billion CHF cuts) signal systemic retreat from long-term investments in sustainability, infrastructure, and climate resilience, weakening Switzerland's capacity to meet SDGs.\", \"affected_sdgs\": [8, 9, 11, 13, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Decision to defund forest resilience programs during escalating wildfires demonstrates reactive governance, undermining public trust and democratic accountability (UDHR Article 21).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 6806,
+      "event_title": "Inside the struggle to dismantle America’s greenhouse gas data",
+      "event_url": "https://www.resilience.org/stories/2026-08-24/inside-the-struggle-to-dismantle-americas-greenhouse-gas-data/",
+      "event_source": "Resilience.org",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.7,
+      "confidence": 8,
+      "justification": "Industry lobbying to weaken methane reporting poses a net negative impact on climate action. | The industry's attempt to dilute methane reporting undermines climate transparency and planetary boundaries, outweighing the modest benefit of preserving the broader emissions system.",
+      "tx_hash": "2CaKBgC1UQomMDP4ziZntotFe9LRiEBCKfPaQwvaLRvRVP8UEnfnbkkkRm4XQ9Ny5Mfr5vsyvKWKGUVg1KA3Va4",
+      "created_at": "2026-08-25T15:08:21.452149+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Preservation of the existing federal emissions reporting system\", \"affected_sdgs\": [13, 16, 9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Oil and gas industry lobbying to weaken methane reporting requirements\", \"affected_sdgs\": [13, 12, 16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 27\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6805,
       "event_title": "Factbox: What's included in the new US sanctions campaign to pressure Iran's economy?",
@@ -156525,13 +156571,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 23,
-        "total_amount": 35364300
+        "count": 24,
+        "total_amount": 36040300
       },
       {
         "country": "New Zealand",
         "count": 4,
         "total_amount": 1043600
+      },
+      {
+        "country": "Switzerland",
+        "count": 3,
+        "total_amount": 550000
       },
       {
         "country": "India",
@@ -156542,11 +156593,6 @@
         "country": "Australia",
         "count": 3,
         "total_amount": 433000
-      },
-      {
-        "country": "China",
-        "count": 2,
-        "total_amount": 682760
       }
     ],
     "top_countries_burn": [
@@ -156579,8 +156625,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.167,
-        "events": 12
+        "burn_ratio": 0.154,
+        "events": 13
       },
       {
         "region": "Asia",
@@ -156589,8 +156635,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.08,
-        "events": 25
+        "burn_ratio": 0.077,
+        "events": 26
       },
       {
         "region": "Oceania",
@@ -156606,8 +156652,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.92,
-        "events": 25
+        "mint_ratio": 0.923,
+        "events": 26
       },
       {
         "region": "Asia",
@@ -156616,8 +156662,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.833,
-        "events": 12
+        "mint_ratio": 0.846,
+        "events": 13
       }
     ],
     "supply_trend_7d": [
@@ -156653,7 +156699,7 @@
       },
       {
         "date": "2026-08-25",
-        "net_minted": 20793600,
+        "net_minted": 21819600,
         "net_burned": 1882500
       }
     ],
@@ -156671,7 +156717,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 10,
-        "negative": 60,
+        "negative": 62,
         "event_ids_positive": [
           6802,
           6801,
@@ -156685,6 +156731,8 @@
           6745
         ],
         "event_ids_negative": [
+          6807,
+          6806,
           6805,
           6804,
           6803,
@@ -156749,7 +156797,7 @@
       },
       "UDHR": {
         "positive": 8,
-        "negative": 53,
+        "negative": 55,
         "event_ids_positive": [
           6802,
           6792,
@@ -156761,6 +156809,8 @@
           6745
         ],
         "event_ids_negative": [
+          6807,
+          6806,
           6805,
           6804,
           6803,
@@ -156865,13 +156915,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [
           6768,
           6756,
           6745
         ],
         "event_ids_negative": [
+          6807,
           6803,
           6800,
           6791,
@@ -156906,7 +156957,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 28,
+        "negative": 30,
         "event_ids_positive": [
           6801,
           6782,
@@ -156914,6 +156965,8 @@
           6745
         ],
         "event_ids_negative": [
+          6807,
+          6806,
           6803,
           6800,
           6799,
@@ -156946,15 +156999,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.0,
-      "mainstream_pct": 4.0,
-      "total_sources_used": 50,
-      "articles_processed": 73
+      "niche_pct": 96.1,
+      "mainstream_pct": 3.9,
+      "total_sources_used": 51,
+      "articles_processed": 75
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 73,
-      "pct": 4.1
+      "total_events": 75,
+      "pct": 4.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -157038,10 +157091,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 15,
+        "count": 16,
         "burn_count": 0,
-        "mint_count": 15,
+        "mint_count": 16,
         "event_ids": [
+          6806,
           6775,
           6772,
           6767,
@@ -157060,6 +157114,22 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 8,
+        "burn_count": 0,
+        "mint_count": 8,
+        "event_ids": [
+          6807,
+          6794,
+          6770,
+          6766,
+          6758,
+          6754,
+          6746,
+          6740
+        ]
+      },
+      {
         "name": "Construction",
         "count": 8,
         "burn_count": 0,
@@ -157073,21 +157143,6 @@
           6746,
           6740,
           6733
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 7,
-        "burn_count": 0,
-        "mint_count": 7,
-        "event_ids": [
-          6794,
-          6770,
-          6766,
-          6758,
-          6754,
-          6746,
-          6740
         ]
       },
       {
@@ -157180,24 +157235,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 63,
+      "total_mint": 65,
       "direct_action": {
-        "count": 54,
-        "pct": 85.7
+        "count": 56,
+        "pct": 86.2
       },
       "editorial_alarm": {
         "count": 6,
-        "pct": 9.5
+        "pct": 9.2
       },
       "untyped": {
         "count": 3,
-        "pct": 4.8
+        "pct": 4.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4824,
+      "total_mint": 4826,
       "direct_action": {
-        "count": 3988,
+        "count": 3990,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -157211,8 +157266,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 22,
-      "institutional": 51,
-      "citizen_ratio": 0.301,
+      "institutional": 53,
+      "citizen_ratio": 0.293,
       "daily": [
         {
           "date": "2026-08-19",
@@ -157247,7 +157302,7 @@
         {
           "date": "2026-08-25",
           "citizen": 7,
-          "institutional": 13
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -157275,6 +157330,8 @@
         6737
       ],
       "event_ids_institutional": [
+        6807,
+        6806,
         6805,
         6802,
         6799,
