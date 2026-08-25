@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-25T18:09:34.119901+00:00",
-  "total_events": 6815,
+  "generated_at": "2026-08-25T19:11:36.029701+00:00",
+  "total_events": 6817,
   "total_burned": 7853961755,
-  "total_minted": 9234952969,
+  "total_minted": 9235928969,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6817,
+      "event_title": "Restriction of MP powers may weaken environmental defense, warns Abrampa",
+      "event_url": "https://oeco.org.br/salada-verde/restricao-dos-poderes-do-mp-pode-enfraquecer-defesa-ambiental-alerta-abrampa/",
+      "event_source": "O Eco (Brazil env)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.46,
+      "confidence": 8,
+      "justification": "Restricting MP's powers weakens environmental enforcement, increasing harm to climate, biodiversity, and rule of law. | The potential restriction of the MP's powers represents a significant rollback in environmental protection and accountability mechanisms. It directly undermines SDGs 13, 15, and 16 by weakening enforcement capacity, increasing risks to biodiversity and climate action, and eroding judicial independence. The negative impacts are concrete and far-reaching, while any potential just",
+      "tx_hash": "61gAcpb9yHtskNYuKDuwWRCx3hYMA6zS3wxfYqHyLikprSNbDbAFw8ECMsPwPAg1CK2GCX25aCLSJapboxpCHeaD",
+      "created_at": "2026-08-25T19:11:31.903250+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Potential restriction of the Brazilian Public Prosecutor's (MP) powers to issue requisitions, which could weaken environmental enforcement and reduce accountability for environmental violations.\", \"affected_sdgs\": [13, 15, 16], \"violated_rights\": [\"UDHR Article 12 (privacy and interference with correspondence)\", \"UNDRIP Article 26 (right to conservation of lands)\", \"UDHR Article 28 (right to social order)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Reduced capacity of the MP to investigate and prosecute environmental crimes, potentially leading to increased deforestation, illegal mining, and biodiversity loss.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Undermines judicial independence and the rule of law by limiting the tools available to prosecutors, which could erode public trust in environmental governance.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10 (right to fair public hearing)\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 6816,
+      "event_title": "NRDC Challenges EPA’s Free Pass to Cleveland Polluters",
+      "event_url": "https://www.nrdc.org/press-releases/nrdc-challenges-epas-free-pass-cleveland-polluters",
+      "event_source": "NRDC News",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": 2.24,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action (lawsuit) punishes harm by challenging EPA's enabling of pollution, protecting rights. | The lawsuit represents a proactive enforcement of environmental regulations, aligning with SDGs 3, 11, 13, and 16 by holding institutions accountable. However, the prior regulatory failure underscores systemic gaps in protecting public health and clean air, violating",
+      "tx_hash": "57nMqo1GbnhamnQocYAKMNHYM3aqA5gC6KJ8fWTgfqE93U8gsJYjT6wojBGDeiYYj8VYYfQbMHCC7mkfKJxwJ8VH",
+      "created_at": "2026-08-25T19:11:28.744856+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"NRDC files lawsuit challenging EPA's failure to enforce affordable smog controls on Cleveland polluters, directly targeting regulatory negligence.\", \"affected_sdgs\": [3, 11, 13, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"EPA's initial inaction enabled continued pollution, violating clean air standards and harming public health (UDHR Article 25).\", \"affected_sdgs\": [3, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 586000
+    },
     {
       "id": 6815,
       "event_title": "Greenpeace Norway and Nature and Youth sue Norwegian government for approving oil/gas fields without environmental assessment; case reaches Norwegian Supreme Court",
@@ -156755,8 +156801,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 24,
-        "total_amount": 36040300
+        "count": 25,
+        "total_amount": 36340300
       },
       {
         "country": "Australia",
@@ -156819,22 +156865,27 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.077,
-        "events": 26
+        "burn_ratio": 0.074,
+        "events": 27
+      },
+      {
+        "region": "Latin America",
+        "burn_ratio": 0.0,
+        "events": 4
       },
       {
         "region": "MENA",
         "burn_ratio": 0.0,
         "events": 3
-      },
-      {
-        "region": "Oceania",
-        "burn_ratio": 0.0,
-        "events": 8
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Latin America",
+        "mint_ratio": 1.0,
+        "events": 4
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 3
@@ -156845,14 +156896,9 @@
         "events": 8
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 1.0,
-        "events": 3
-      },
-      {
         "region": "North America",
-        "mint_ratio": 0.923,
-        "events": 26
+        "mint_ratio": 0.926,
+        "events": 27
       },
       {
         "region": "Asia",
@@ -156893,7 +156939,7 @@
       },
       {
         "date": "2026-08-25",
-        "net_minted": 25857400,
+        "net_minted": 26833400,
         "net_burned": 1882500
       }
     ],
@@ -156911,7 +156957,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 10,
-        "negative": 70,
+        "negative": 72,
         "event_ids_positive": [
           6802,
           6801,
@@ -156925,6 +156971,8 @@
           6745
         ],
         "event_ids_negative": [
+          6817,
+          6816,
           6815,
           6814,
           6813,
@@ -156999,7 +157047,7 @@
       },
       "UDHR": {
         "positive": 8,
-        "negative": 63,
+        "negative": 65,
         "event_ids_positive": [
           6802,
           6792,
@@ -157011,6 +157059,8 @@
           6745
         ],
         "event_ids_negative": [
+          6817,
+          6816,
           6815,
           6814,
           6813,
@@ -157128,13 +157178,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           6768,
           6756,
           6745
         ],
         "event_ids_negative": [
+          6817,
           6814,
           6813,
           6808,
@@ -157175,7 +157226,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 34,
+        "negative": 35,
         "event_ids_positive": [
           6801,
           6782,
@@ -157183,6 +157234,7 @@
           6745
         ],
         "event_ids_negative": [
+          6817,
           6815,
           6814,
           6813,
@@ -157223,13 +157275,13 @@
     "source_diversity_7d": {
       "niche_pct": 96.4,
       "mainstream_pct": 3.6,
-      "total_sources_used": 55,
-      "articles_processed": 83
+      "total_sources_used": 56,
+      "articles_processed": 85
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 83,
-      "pct": 3.6
+      "total_events": 85,
+      "pct": 3.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -157462,24 +157514,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 73,
+      "total_mint": 75,
       "direct_action": {
-        "count": 62,
-        "pct": 84.9
+        "count": 64,
+        "pct": 85.3
       },
       "editorial_alarm": {
         "count": 8,
-        "pct": 11.0
+        "pct": 10.7
       },
       "untyped": {
         "count": 3,
-        "pct": 4.1
+        "pct": 4.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4834,
+      "total_mint": 4836,
       "direct_action": {
-        "count": 3996,
+        "count": 3998,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -157493,8 +157545,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 26,
-      "institutional": 57,
-      "citizen_ratio": 0.313,
+      "institutional": 59,
+      "citizen_ratio": 0.306,
       "daily": [
         {
           "date": "2026-08-19",
@@ -157529,7 +157581,7 @@
         {
           "date": "2026-08-25",
           "citizen": 11,
-          "institutional": 19
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -157561,6 +157613,8 @@
         6737
       ],
       "event_ids_institutional": [
+        6817,
+        6816,
         6815,
         6811,
         6810,
