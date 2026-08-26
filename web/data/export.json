@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-26T07:09:19.131076+00:00",
-  "total_events": 6832,
+  "generated_at": "2026-08-26T08:07:09.603233+00:00",
+  "total_events": 6833,
   "total_burned": 7855661755,
-  "total_minted": 9251935869,
+  "total_minted": 9252602869,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6833,
+      "event_title": "Grain exports stall as Ukraine steps up attacks on Russia's Black Sea ports",
+      "event_url": "https://www.dw.com/en/grain-exports-stall-as-ukraine-steps-up-attacks-on-russia-s-black-sea-ports/a-78499629?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 667000,
+      "final_score": -2.53,
+      "confidence": 7,
+      "justification": "Drone strikes disrupt grain exports, harming food security outweighing limited climate benefit. | The attacks cause a severe negative impact on food security that outweighs the modest climate‑related benefit of reduced oil exports. Overall the action is ethically detrimental.",
+      "tx_hash": "35BT6RBW1zxPgRrF1exTz3QVaFNdKXTz5QoxNLY4t7E4NFB5vdnYkQWXwrD8akLYA4uX7cMPwm4KiLvjejZCaEZV",
+      "created_at": "2026-08-26T08:07:05.119231+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"Reduction of Russian oil exports may lower fossil‑fuel supply, contributing to climate mitigation\", \"affected_sdgs\": [7, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Disruption of grain exports from Black Sea ports threatens global food security, increasing hunger and poverty\", \"affected_sdgs\": [1, 2], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 6832,
       "event_title": "Residents of Bulukumba Demand Return of Ex-HGU Land",
@@ -157205,8 +157228,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.1,
-        "events": 20
+        "burn_ratio": 0.095,
+        "events": 21
       },
       {
         "region": "Asia",
@@ -157247,8 +157270,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.9,
-        "events": 20
+        "mint_ratio": 0.905,
+        "events": 21
       }
     ],
     "supply_trend_7d": [
@@ -157284,7 +157307,7 @@
       },
       {
         "date": "2026-08-26",
-        "net_minted": 12998900,
+        "net_minted": 13665900,
         "net_burned": 0
       }
     ],
@@ -157302,7 +157325,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 12,
-        "negative": 84,
+        "negative": 85,
         "event_ids_positive": [
           6826,
           6825,
@@ -157318,6 +157341,7 @@
           6745
         ],
         "event_ids_negative": [
+          6833,
           6832,
           6831,
           6830,
@@ -157406,7 +157430,7 @@
       },
       "UDHR": {
         "positive": 10,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           6826,
           6825,
@@ -157420,6 +157444,7 @@
           6745
         ],
         "event_ids_negative": [
+          6833,
           6832,
           6831,
           6830,
@@ -157611,7 +157636,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [
           6801,
           6782,
@@ -157619,6 +157644,7 @@
           6745
         ],
         "event_ids_negative": [
+          6833,
           6831,
           6830,
           6828,
@@ -157662,14 +157688,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.6,
-      "mainstream_pct": 3.4,
-      "total_sources_used": 59,
-      "articles_processed": 99
+      "niche_pct": 96.7,
+      "mainstream_pct": 3.3,
+      "total_sources_used": 60,
+      "articles_processed": 100
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 99,
+      "total_events": 100,
       "pct": 3.0
     },
     "active_partners_7d": [],
@@ -157757,10 +157783,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 20,
+        "count": 21,
         "burn_count": 0,
-        "mint_count": 20,
+        "mint_count": 21,
         "event_ids": [
+          6833,
           6830,
           6828,
           6827,
@@ -157833,6 +157860,19 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 5,
+        "burn_count": 0,
+        "mint_count": 5,
+        "event_ids": [
+          6833,
+          6831,
+          6813,
+          6812,
+          6811
+        ]
+      },
+      {
         "name": "Water",
         "count": 5,
         "burn_count": 0,
@@ -157843,18 +157883,6 @@
           6791,
           6783,
           6761
-        ]
-      },
-      {
-        "name": "Agriculture",
-        "count": 4,
-        "burn_count": 0,
-        "mint_count": 4,
-        "event_ids": [
-          6831,
-          6813,
-          6812,
-          6811
         ]
       },
       {
@@ -157912,14 +157940,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 87,
+      "total_mint": 88,
       "direct_action": {
-        "count": 75,
-        "pct": 86.2
+        "count": 76,
+        "pct": 86.4
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 10.3
+        "pct": 10.2
       },
       "untyped": {
         "count": 3,
@@ -157927,9 +157955,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4849,
+      "total_mint": 4850,
       "direct_action": {
-        "count": 4010,
+        "count": 4011,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -157943,8 +157971,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 31,
-      "institutional": 68,
-      "citizen_ratio": 0.313,
+      "institutional": 69,
+      "citizen_ratio": 0.31,
       "daily": [
         {
           "date": "2026-08-20",
@@ -157979,7 +158007,7 @@
         {
           "date": "2026-08-26",
           "citizen": 4,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -158016,6 +158044,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6833,
         6830,
         6828,
         6826,
