@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-26T03:06:22.552734+00:00",
-  "total_events": 6829,
+  "generated_at": "2026-08-26T04:05:55.271672+00:00",
+  "total_events": 6830,
   "total_burned": 7855661755,
-  "total_minted": 9245707069,
+  "total_minted": 9251747069,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6830,
+      "event_title": "Trump sends Saudi civil nuclear agreement to Congress for review",
+      "event_url": "https://www.france24.com/en/americas/20260826-trump-saudi-civil-nuclear-agreement-congress",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -3.33,
+      "confidence": 7,
+      "justification": "The agreement's proliferation risks and ethical compromises outweigh limited oversight benefits. | The submission of the nuclear agreement to Congress introduces limited transparency but carries significant risks of nuclear proliferation and ethical compromise due to Saudi Arabia's human rights record. The potential for regional stability through Israel-Saudi normalization is outweighed by the long-term security and rights violations inherent in the agreement. The classified nature of the pact f",
+      "tx_hash": "2h3UHGThbSzEGVgPCf7m2hZpeNGaZ81wv8fkCLiY9KDwH3uTuY2EVUymgPVZLsfj6D2h1iMX4DembD8bpeQjjEbw",
+      "created_at": "2026-08-26T04:05:52.148570+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Submission to Congress for review introduces democratic oversight and potential public debate on nuclear cooperation, aligning with transparency and accountability principles.\", \"affected_sdgs\": [16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential normalization of relations between Saudi Arabia and Israel could reduce regional tensions, supporting peace and stability objectives.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Civilian nuclear cooperation with Saudi Arabia risks enabling nuclear proliferation, undermining global non-proliferation efforts and long-term security.\", \"affected_sdgs\": [16, 13, 15], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Saudi Arabia's human rights record, including violations of labor rights, gender equality, and freedom of expression, raises ethical concerns about deepening cooperation.\", \"affected_sdgs\": [5, 8, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 23\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"The agreement's classified nature limits public scrutiny and democratic accountability, potentially enabling unchecked nuclear development.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6829,
       "event_title": "Belgium awards scholarships to Palestinian students — but gives them no way to leave Gaza",
@@ -157077,8 +157100,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 28,
-        "total_amount": 37044400
+        "count": 29,
+        "total_amount": 43084400
       },
       {
         "country": "Australia",
@@ -157146,8 +157169,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.067,
-        "events": 30
+        "burn_ratio": 0.065,
+        "events": 31
       },
       {
         "region": "MENA",
@@ -157168,8 +157191,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.933,
-        "events": 30
+        "mint_ratio": 0.935,
+        "events": 31
       },
       {
         "region": "Asia",
@@ -157215,7 +157238,7 @@
       },
       {
         "date": "2026-08-26",
-        "net_minted": 6770100,
+        "net_minted": 12810100,
         "net_burned": 0
       }
     ],
@@ -157233,7 +157256,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 12,
-        "negative": 82,
+        "negative": 83,
         "event_ids_positive": [
           6826,
           6825,
@@ -157249,6 +157272,7 @@
           6745
         ],
         "event_ids_negative": [
+          6830,
           6829,
           6828,
           6827,
@@ -157335,7 +157359,7 @@
       },
       "UDHR": {
         "positive": 10,
-        "negative": 74,
+        "negative": 75,
         "event_ids_positive": [
           6826,
           6825,
@@ -157349,6 +157373,7 @@
           6745
         ],
         "event_ids_negative": [
+          6830,
           6829,
           6828,
           6827,
@@ -157427,11 +157452,12 @@
       },
       "ILO": {
         "positive": 1,
-        "negative": 12,
+        "negative": 13,
         "event_ids_positive": [
           6779
         ],
         "event_ids_negative": [
+          6830,
           6828,
           6803,
           6796,
@@ -157535,7 +157561,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 37,
+        "negative": 38,
         "event_ids_positive": [
           6801,
           6782,
@@ -157543,6 +157569,7 @@
           6745
         ],
         "event_ids_negative": [
+          6830,
           6828,
           6820,
           6817,
@@ -157587,11 +157614,11 @@
       "niche_pct": 96.6,
       "mainstream_pct": 3.4,
       "total_sources_used": 59,
-      "articles_processed": 97
+      "articles_processed": 98
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 97,
+      "total_events": 98,
       "pct": 3.1
     },
     "active_partners_7d": [],
@@ -157679,10 +157706,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 19,
+        "count": 20,
         "burn_count": 0,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          6830,
           6828,
           6827,
           6815,
@@ -157833,14 +157861,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 85,
+      "total_mint": 86,
       "direct_action": {
-        "count": 74,
-        "pct": 87.1
+        "count": 75,
+        "pct": 87.2
       },
       "editorial_alarm": {
         "count": 8,
-        "pct": 9.4
+        "pct": 9.3
       },
       "untyped": {
         "count": 3,
@@ -157848,9 +157876,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4846,
+      "total_mint": 4847,
       "direct_action": {
-        "count": 4008,
+        "count": 4009,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -157864,8 +157892,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 29,
-      "institutional": 68,
-      "citizen_ratio": 0.299,
+      "institutional": 69,
+      "citizen_ratio": 0.296,
       "daily": [
         {
           "date": "2026-08-20",
@@ -157900,7 +157928,7 @@
         {
           "date": "2026-08-26",
           "citizen": 2,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -157935,6 +157963,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6830,
         6828,
         6826,
         6825,
