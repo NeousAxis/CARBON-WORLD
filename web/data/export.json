@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-26T10:09:22.380421+00:00",
-  "total_events": 6837,
-  "total_burned": 7855661755,
-  "total_minted": 9254467869,
+  "generated_at": "2026-08-26T11:10:34.364369+00:00",
+  "total_events": 6839,
+  "total_burned": 7856361755,
+  "total_minted": 9254528269,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6839,
+      "event_title": "Kenyan investigators arrest 4 people linked to 18 Amboseli elephant deaths",
+      "event_url": "https://news.mongabay.com/short-article/2026/08/kenyan-investigators-arrest-4-people-linked-to-18-amboseli-elephant-deaths/",
+      "event_source": "Mongabay",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": -0.51,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action (arrests) punishes harm and enforces wildlife protection laws. | The arrest of suspects represents a positive enforcement action under wildlife protection laws, aligning with SDG 15 (Life on Land) and SDG 16 (Peace and Justice). However, the underlying event—the poisoning of 18 elephants—constitutes a significant violation of biodiversity and animal rights, ",
+      "tx_hash": "dXqvA5kHJgyA5osSebyxqfrC7hUWtrz3VGHSisjHNM2WSmadZU4rfSmhXhUC9KvG358okE7QFvi6M9G4Ka21uTk",
+      "created_at": "2026-08-26T11:10:31.190626+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Kenya",
+      "region": "Africa",
+      "administration": "Kenya-UDA",
+      "positive_aspects_json": "[{\"description\": \"Arrest of four suspects linked to the poisoning deaths of 18 elephants in Amboseli ecosystem, demonstrating enforcement of wildlife protection laws.\", \"affected_sdgs\": [15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deaths of 18 elephants due to poisoning, indicating a severe breach of wildlife protection and biodiversity conservation.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Use of agricultural pesticides for poisoning highlights gaps in regulation or enforcement of hazardous substances affecting wildlife.\", \"affected_sdgs\": [15, 3, 6], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 667000
+    },
+    {
+      "id": 6838,
+      "event_title": "Queensland Allowed to Use Coal, Gas for Data Centres Despite Renewable Push",
+      "event_url": "https://www.abc.net.au/news/2026-08-26/gun-licences-restricted-to-citizens-data-centre-carve-out/107079926",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.89,
+      "confidence": 8,
+      "justification": "Approval of fossil fuels for data centres undermines climate goals and sets a harmful precedent. | The decision to permit coal and gas use for data centres directly conflicts with climate action goals (SDG 13) and clean energy transitions (SDG 7). While state ownership of infrastructure offers long-term flexibility, the immediate lock-in of fossil fuels outweighs this minor benefit. The policy misalignment with federal standards further undermines collective progress.",
+      "tx_hash": "52rYTxKqrPYuEvXuarc9RqF57wpEuixeKP8WmWowRmzKrr2mpQnqy2KrMFgaKLYTCqQPVRLd5t5gvW6CsWZtrkSu",
+      "created_at": "2026-08-26T11:10:28.950926+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"State ownership of electricity infrastructure allows for potential future transition to renewables without external dependencies.\", \"affected_sdgs\": [7, 9, 11], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Approval of coal and gas use for data centres undermines renewable energy transition, increasing greenhouse gas emissions and locking in fossil fuel dependency.\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Contradicts federal renewable energy standards, creating policy misalignment and weakening national climate commitments.\", \"affected_sdgs\": [13, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6837,
       "event_title": "Canada tightens tariffs in trade war against the US",
@@ -157266,8 +157312,8 @@
       },
       {
         "country": "Australia",
-        "count": 4,
-        "total_amount": 933000
+        "count": 5,
+        "total_amount": 993400
       },
       {
         "country": "New Zealand",
@@ -157297,6 +157343,11 @@
         "total_amount": 1125000
       },
       {
+        "country": "Kenya",
+        "count": 1,
+        "total_amount": 700000
+      },
+      {
         "country": "Türkiye",
         "count": 1,
         "total_amount": 1000000
@@ -157305,14 +157356,14 @@
         "country": "Romania",
         "count": 1,
         "total_amount": 382500
-      },
-      {
-        "country": "France",
-        "count": 1,
-        "total_amount": 500000
       }
     ],
     "top_regions_sustainable": [
+      {
+        "region": "Africa",
+        "burn_ratio": 0.667,
+        "events": 3
+      },
       {
         "region": "Latin America",
         "burn_ratio": 0.333,
@@ -157332,23 +157383,18 @@
         "region": "North America",
         "burn_ratio": 0.062,
         "events": 32
-      },
-      {
-        "region": "MENA",
-        "burn_ratio": 0.0,
-        "events": 5
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Oceania",
+        "mint_ratio": 1.0,
+        "events": 9
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 5
-      },
-      {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 8
       },
       {
         "region": "North America",
@@ -157399,8 +157445,8 @@
       },
       {
         "date": "2026-08-26",
-        "net_minted": 15530900,
-        "net_burned": 0
+        "net_minted": 15591300,
+        "net_burned": 700000
       }
     ],
     "event_of_the_day": {
@@ -157416,9 +157462,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 12,
-        "negative": 89,
+        "positive": 13,
+        "negative": 90,
         "event_ids_positive": [
+          6839,
           6826,
           6825,
           6802,
@@ -157433,6 +157480,7 @@
           6745
         ],
         "event_ids_negative": [
+          6838,
           6837,
           6836,
           6835,
@@ -157719,9 +157767,10 @@
         ]
       },
       "Animal": {
-        "positive": 2,
+        "positive": 3,
         "negative": 7,
         "event_ids_positive": [
+          6839,
           6801,
           6782
         ],
@@ -157736,15 +157785,17 @@
         ]
       },
       "PB": {
-        "positive": 4,
-        "negative": 41,
+        "positive": 5,
+        "negative": 42,
         "event_ids_positive": [
+          6839,
           6801,
           6782,
           6756,
           6745
         ],
         "event_ids_negative": [
+          6838,
           6835,
           6833,
           6831,
@@ -157790,15 +157841,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.0,
-      "mainstream_pct": 5.0,
+      "niche_pct": 93.3,
+      "mainstream_pct": 6.7,
       "total_sources_used": 60,
-      "articles_processed": 104
+      "articles_processed": 106
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 104,
-      "pct": 2.9
+      "total_events": 106,
+      "pct": 2.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -157885,10 +157936,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 21,
+        "count": 22,
         "burn_count": 0,
-        "mint_count": 21,
+        "mint_count": 22,
         "event_ids": [
+          6838,
           6833,
           6830,
           6828,
@@ -157949,10 +158001,11 @@
       },
       {
         "name": "Construction",
-        "count": 7,
+        "count": 8,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          6838,
           6800,
           6784,
           6762,
@@ -158013,14 +158066,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 12,
+      "total_burn": 13,
       "direct_action": {
         "count": 12,
-        "pct": 100.0
+        "pct": 92.3
       },
       "editorial_consciousness": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 7.7
       },
       "untyped": {
         "count": 0,
@@ -158028,13 +158081,13 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1975,
+      "total_burn": 1976,
       "direct_action": {
         "count": 1550,
-        "pct": 78.5
+        "pct": 78.4
       },
       "editorial_consciousness": {
-        "count": 150,
+        "count": 151,
         "pct": 7.6
       },
       "untyped": {
@@ -158043,24 +158096,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 92,
+      "total_mint": 93,
       "direct_action": {
-        "count": 80,
-        "pct": 87.0
+        "count": 81,
+        "pct": 87.1
       },
       "editorial_alarm": {
         "count": 9,
-        "pct": 9.8
+        "pct": 9.7
       },
       "untyped": {
         "count": 3,
-        "pct": 3.3
+        "pct": 3.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4854,
+      "total_mint": 4855,
       "direct_action": {
-        "count": 4015,
+        "count": 4016,
         "pct": 82.7
       },
       "editorial_alarm": {
@@ -158073,9 +158126,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 31,
-      "institutional": 73,
-      "citizen_ratio": 0.298,
+      "citizen": 32,
+      "institutional": 74,
+      "citizen_ratio": 0.302,
       "daily": [
         {
           "date": "2026-08-20",
@@ -158109,11 +158162,12 @@
         },
         {
           "date": "2026-08-26",
-          "citizen": 4,
-          "institutional": 7
+          "citizen": 5,
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
+        6839,
         6832,
         6831,
         6829,
@@ -158147,6 +158201,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6838,
         6837,
         6836,
         6835,
