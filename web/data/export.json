@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-08-27T20:09:36.533582+00:00",
-  "total_events": 6901,
+  "generated_at": "2026-08-27T21:08:11.937394+00:00",
+  "total_events": 6904,
   "total_burned": 7861719255,
-  "total_minted": 9336171829,
+  "total_minted": 9336839429,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6904,
+      "event_title": "Argentina left out of expanded US beef quota; Brazil gains access",
+      "event_url": "https://www.riotimesonline.com/us-beef-quota-argentina-excluded-brazil-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.8,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] US beef quota expansion enables environmental harm and trade inequality without safeguards. | The decision to expand the US beef quota primarily benefits Brazil economically but excludes Argentina, creating trade disparities. The broader environmental impact of increased beef production—deforestation and emissions—outweighs the economic gains, particularly given the lack of ",
+      "tx_hash": "QLGcXLVo8zsg8QuzsyJKixSdd8LAsKZ1PY1uJY3CdJAhkjhbFywPCfo7hd4iJmwvQVvob1dNQ7zDBgJXRTKdidM",
+      "created_at": "2026-08-27T21:08:08.267644+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Brazil gains increased market access for beef exports, potentially boosting economic activity and trade partnerships.\", \"affected_sdgs\": [8, 9, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Argentina excluded from expanded US beef quota, risking economic loss, trade inequality, and potential violation of fair competition principles under international trade norms.\", \"affected_sdgs\": [8, 10, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Expansion of beef quotas may incentivize increased cattle ranching, contributing to deforestation, biodiversity loss, and higher greenhouse gas emissions (methane).\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 6903,
+      "event_title": "In DR Congo, academic activities suspended in areas under AFC/M23 control",
+      "event_url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20260827-en-rd-congo-les-activit%C3%A9s-acad%C3%A9miques-dans-les-zones-sous-contr%C3%B4le-de-l-afc-m23-sont-suspendues",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -2.9,
+      "confidence": 8,
+      "justification": "Suspending schooling harms children's right to education and exacerbates conflict impacts, outweighing any protective intent. | While the suspension may aim to protect students from conflict, it overwhelmingly harms the right to education and undermines SDG 4, resulting in a net negative ethical impact.",
+      "tx_hash": "2kCbbFR6RUm7SgCPsgEZkKEAW2eGpmXmz2HiXJGXtNDWf4A7DQm2tgWSVS1Uci1fogUVpK9TUrwgzXT7jBkXMXig",
+      "created_at": "2026-08-27T21:08:06.002682+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Democratic Republic of the Congo",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Potentially reduces children's exposure to armed conflict by keeping schools closed in insecure zones\", \"affected_sdgs\": [3, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Suspension of academic activities deprives children and youth of their right to education\", \"affected_sdgs\": [4], \"violated_rights\": [\"UDHR Article 26\", \"CRC Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 6902,
+      "event_title": "EU demands Meta 'protect our kids' after US settlement",
+      "event_url": "https://www.thelocal.at/20260827/eu-demands-meta-to-protect-our-kids-after-us-settlement",
+      "event_source": "The Local Austria (EN)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": 2.84,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #6885",
+      "tx_hash": null,
+      "created_at": "2026-08-27T21:05:47.183399+00:00",
+      "embedding": null,
+      "reused_from_event_id": 6885,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 6901,
       "event_title": "FDA approves Roivant therapy for rare autoimmune disease",
@@ -158871,7 +158940,7 @@
       },
       {
         "date": "2026-08-27",
-        "net_minted": 51143760,
+        "net_minted": 51511360,
         "net_burned": 1757500
       }
     ],
@@ -158889,7 +158958,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 143,
+        "negative": 145,
         "event_ids_positive": [
           6901,
           6871,
@@ -158913,6 +158982,8 @@
           6745
         ],
         "event_ids_negative": [
+          6904,
+          6903,
           6900,
           6899,
           6898,
@@ -159060,7 +159131,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 128,
+        "negative": 129,
         "event_ids_positive": [
           6901,
           6871,
@@ -159080,6 +159151,7 @@
           6745
         ],
         "event_ids_negative": [
+          6903,
           6900,
           6899,
           6898,
@@ -159243,7 +159315,7 @@
       },
       "CRC": {
         "positive": 8,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [
           6871,
           6845,
@@ -159255,6 +159327,7 @@
           6745
         ],
         "event_ids_negative": [
+          6903,
           6896,
           6893,
           6892,
@@ -159375,7 +159448,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           6870,
           6839,
@@ -159385,6 +159458,7 @@
           6745
         ],
         "event_ids_negative": [
+          6904,
           6900,
           6899,
           6898,
@@ -159445,14 +159519,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 81.9,
-      "mainstream_pct": 18.1,
+      "niche_pct": 80.6,
+      "mainstream_pct": 19.4,
       "total_sources_used": 72,
-      "articles_processed": 166
+      "articles_processed": 168
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 166,
+      "total_events": 168,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -159741,24 +159815,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 146,
+      "total_mint": 148,
       "direct_action": {
-        "count": 129,
-        "pct": 88.4
+        "count": 131,
+        "pct": 88.5
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 9.6
+        "pct": 9.5
       },
       "untyped": {
         "count": 3,
-        "pct": 2.1
+        "pct": 2.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4910,
+      "total_mint": 4912,
       "direct_action": {
-        "count": 4066,
+        "count": 4068,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -159771,9 +159845,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 47,
-      "institutional": 119,
-      "citizen_ratio": 0.283,
+      "citizen": 48,
+      "institutional": 120,
+      "citizen_ratio": 0.286,
       "daily": [
         {
           "date": "2026-08-21",
@@ -159807,11 +159881,12 @@
         },
         {
           "date": "2026-08-27",
-          "citizen": 9,
-          "institutional": 30
+          "citizen": 10,
+          "institutional": 31
         }
       ],
       "event_ids_citizen": [
+        6903,
         6900,
         6898,
         6890,
@@ -159861,6 +159936,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6904,
         6901,
         6899,
         6897,
