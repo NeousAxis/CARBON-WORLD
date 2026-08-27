@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-27T22:08:20.749757+00:00",
-  "total_events": 6904,
+  "generated_at": "2026-08-27T23:08:33.158423+00:00",
+  "total_events": 6905,
   "total_burned": 7861719255,
-  "total_minted": 9336839429,
+  "total_minted": 9337339429,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6905,
+      "event_title": "Lawsuit Seeks to Block EPA From Abandoning Health Protections for Cleveland Residents",
+      "event_url": "https://www.nrdc.org/press-releases/lawsuit-seeks-block-epa-abandoning-health-clevelanders",
+      "event_source": "NRDC News",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.99,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action (EPA abandoning protections) enables harm; lawsuit is corrective but secondary. | The lawsuit represents a critical effort to uphold environmental justice and public health protections, directly countering the EPA's regulatory rollback. However, the underlying decision to abandon protections constitutes a significant violation of residents' rights to hea",
+      "tx_hash": "5RLzGEj9ZfEsxsBeBPEwZfjkYuS61HHNXrbWxkUXaYyc1ZG1FkdxqhDidYbPrKTVvLfM9Yc3R8RsiwKb6Ee7e7vg",
+      "created_at": "2026-08-27T23:08:28.364989+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Lawsuit filed by named groups (NRDC and likely others) to block EPA's decision to abandon health protections, directly challenging regulatory rollback.\", \"affected_sdgs\": [3, 11, 13, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Legal action reinforces accountability for environmental justice, protecting vulnerable populations in Cleveland from smog-related health harms.\", \"affected_sdgs\": [3, 10, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"EPA's decision to abandon health protections enables continued pollution, violating residents' right to clean air and health (UDHR Article 25).\", \"affected_sdgs\": [3, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for prolonged legal battle delays immediate enforcement of health protections, risking ongoing harm to Cleveland residents.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 748000
+    },
     {
       "id": 6904,
       "event_title": "Argentina left out of expanded US beef quota; Brazil gains access",
@@ -158802,8 +158825,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 44,
-        "total_amount": 62654600
+        "count": 45,
+        "total_amount": 63154600
       },
       {
         "country": "Switzerland",
@@ -158876,8 +158899,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.1,
-        "events": 50
+        "burn_ratio": 0.098,
+        "events": 51
       }
     ],
     "top_regions_destructive": [
@@ -158893,8 +158916,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.9,
-        "events": 50
+        "mint_ratio": 0.902,
+        "events": 51
       },
       {
         "region": "Asia",
@@ -158940,7 +158963,7 @@
       },
       {
         "date": "2026-08-27",
-        "net_minted": 51511360,
+        "net_minted": 52011360,
         "net_burned": 1757500
       }
     ],
@@ -158958,7 +158981,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 145,
+        "negative": 146,
         "event_ids_positive": [
           6901,
           6871,
@@ -158982,6 +159005,7 @@
           6745
         ],
         "event_ids_negative": [
+          6905,
           6904,
           6903,
           6900,
@@ -159131,7 +159155,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 129,
+        "negative": 130,
         "event_ids_positive": [
           6901,
           6871,
@@ -159151,6 +159175,7 @@
           6745
         ],
         "event_ids_negative": [
+          6905,
           6903,
           6900,
           6899,
@@ -159315,7 +159340,7 @@
       },
       "CRC": {
         "positive": 8,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           6871,
           6845,
@@ -159327,6 +159352,7 @@
           6745
         ],
         "event_ids_negative": [
+          6905,
           6903,
           6896,
           6893,
@@ -159522,11 +159548,11 @@
       "niche_pct": 80.6,
       "mainstream_pct": 19.4,
       "total_sources_used": 72,
-      "articles_processed": 168
+      "articles_processed": 169
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 168,
+      "total_events": 169,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -159815,14 +159841,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 148,
+      "total_mint": 149,
       "direct_action": {
-        "count": 131,
-        "pct": 88.5
+        "count": 132,
+        "pct": 88.6
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 9.5
+        "pct": 9.4
       },
       "untyped": {
         "count": 3,
@@ -159830,9 +159856,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4912,
+      "total_mint": 4913,
       "direct_action": {
-        "count": 4068,
+        "count": 4069,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -159846,8 +159872,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 48,
-      "institutional": 120,
-      "citizen_ratio": 0.286,
+      "institutional": 121,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-08-21",
@@ -159882,7 +159908,7 @@
         {
           "date": "2026-08-27",
           "citizen": 10,
-          "institutional": 31
+          "institutional": 32
         }
       ],
       "event_ids_citizen": [
@@ -159936,6 +159962,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6905,
         6904,
         6901,
         6899,
