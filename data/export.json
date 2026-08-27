@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-27T07:08:33.928449+00:00",
-  "total_events": 6873,
+  "generated_at": "2026-08-27T09:10:24.591424+00:00",
+  "total_events": 6874,
   "total_burned": 7861019255,
-  "total_minted": 9299023229,
+  "total_minted": 9299173229,
   "pending_reviews": 0,
   "events": [
+    {
+      "id": 6874,
+      "event_title": "Danish PM confident VAT cut on food will be passed to consumers",
+      "event_url": "https://www.thelocal.dk/20260827/danish-pm-confident-vat-cut-on-food-will-be-passed-to-consumers",
+      "event_source": "The Local Denmark (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 1.79,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Policy lacks enforcement, risking corporate profit retention over consumer benefit, undermining ethical intent. | The VAT cut on food is a well-intentioned policy targeting poverty reduction and food security, aligning with SDGs 1, 2, and 10. However, its effectiveness is undermined by the absence of enforcement mechanisms, creating ethical concerns about corporate accountabili",
+      "tx_hash": "5WaqknTDvUG42Y4sQhequU8khoBNvgw6YC1peY3rr1rnYsgRhQ7bNmtSZukTF2ACNG2wekf98WWBb19u4nPUgi12",
+      "created_at": "2026-08-27T09:10:21.028785+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Denmark",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Government implements VAT cut on food to reduce cost of living for consumers, aiming to alleviate financial pressure on households.\", \"affected_sdgs\": [1, 2, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Uncertainty whether retailers will pass on VAT savings to consumers, potentially undermining the policy's intended benefit and creating distrust in economic measures.\", \"affected_sdgs\": [10, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Policy lacks binding enforcement mechanism to ensure retailers comply, risking corporate profit retention at the expense of consumer welfare.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 6873,
       "event_title": "Changes to Facebook and Instagram are key part of Meta’s $17B settlement with the states over harm to teens",
@@ -158153,8 +158176,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.152,
-        "events": 33
+        "burn_ratio": 0.147,
+        "events": 34
       },
       {
         "region": "Asia",
@@ -158190,8 +158213,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.848,
-        "events": 33
+        "mint_ratio": 0.853,
+        "events": 34
       }
     ],
     "supply_trend_7d": [
@@ -158227,7 +158250,7 @@
       },
       {
         "date": "2026-08-27",
-        "net_minted": 13995160,
+        "net_minted": 14145160,
         "net_burned": 1057500
       }
     ],
@@ -158245,7 +158268,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 117,
+        "negative": 118,
         "event_ids_positive": [
           6871,
           6870,
@@ -158268,6 +158291,7 @@
           6745
         ],
         "event_ids_negative": [
+          6874,
           6873,
           6872,
           6869,
@@ -158389,7 +158413,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 105,
+        "negative": 106,
         "event_ids_positive": [
           6871,
           6858,
@@ -158408,6 +158432,7 @@
           6745
         ],
         "event_ids_negative": [
+          6874,
           6873,
           6872,
           6869,
@@ -158725,12 +158750,12 @@
       "niche_pct": 82.5,
       "mainstream_pct": 17.5,
       "total_sources_used": 63,
-      "articles_processed": 139
+      "articles_processed": 140
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 139,
-      "pct": 2.2
+      "total_events": 140,
+      "pct": 2.1
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -158927,6 +158952,20 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          6874,
+          6833,
+          6831,
+          6813,
+          6812,
+          6811
+        ]
+      },
+      {
         "name": "Defense",
         "count": 5,
         "burn_count": 0,
@@ -158937,19 +158976,6 @@
           6813,
           6781,
           6766
-        ]
-      },
-      {
-        "name": "Agriculture",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          6833,
-          6831,
-          6813,
-          6812,
-          6811
         ]
       },
       {
@@ -158996,14 +159022,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 120,
+      "total_mint": 121,
       "direct_action": {
-        "count": 105,
-        "pct": 87.5
+        "count": 106,
+        "pct": 87.6
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 10.0
+        "pct": 9.9
       },
       "untyped": {
         "count": 3,
@@ -159011,9 +159037,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4883,
+      "total_mint": 4884,
       "direct_action": {
-        "count": 4041,
+        "count": 4042,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -159027,8 +159053,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 42,
-      "institutional": 97,
-      "citizen_ratio": 0.302,
+      "institutional": 98,
+      "citizen_ratio": 0.3,
       "daily": [
         {
           "date": "2026-08-21",
@@ -159063,7 +159089,7 @@
         {
           "date": "2026-08-27",
           "citizen": 4,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -159111,6 +159137,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6874,
         6873,
         6872,
         6867,
