@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-28T03:11:24.815139+00:00",
-  "total_events": 6912,
+  "generated_at": "2026-08-28T04:10:57.642766+00:00",
+  "total_events": 6913,
   "total_burned": 7862419255,
-  "total_minted": 9350013629,
+  "total_minted": 9350163629,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6913,
+      "event_title": "Kick in the guts: Woolworths confirms it will no longer buy Tasmanian beef",
+      "event_url": "https://www.abc.net.au/news/2026-08-28/woolworths-to-no-longer-sell-local-beef-in-tasmania/107088812",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -3.36,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Corporate action enables harm by abandoning farmers without transition support, violating rights. | While the decision may contribute marginally to climate goals by reducing beef consumption, its immediate and severe economic impact on farmers—without mitigation—outweighs the environmental benefits. The lack of procedural justice and support for affected communities violates",
+      "tx_hash": "3fee8j4MD8Sv8kTWzTMvJ4Zn6dqt3r1N6bPaKvfwiuRBZwHNM71927xezJT6fJ5KrRdXnGz9m3Ss44e1LwLqsQK8",
+      "created_at": "2026-08-28T04:10:53.654727+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Potential reduction in beef consumption aligns with climate action goals by decreasing greenhouse gas emissions associated with livestock.\", \"affected_sdgs\": [13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sudden withdrawal of a major buyer disrupts livelihoods of Tasmanian cattle farmers, threatening economic stability and decent work.\", \"affected_sdgs\": [1, 2, 8, 10], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of transition support or consultation with affected farmers exacerbates inequality and undermines trust in corporate responsibility.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 6912,
       "event_title": "Community programs linked to lower forest loss in Indonesia’s Borneo during COVID-19",
@@ -158995,6 +159018,11 @@
         "total_amount": 1131000
       },
       {
+        "country": "Australia",
+        "count": 6,
+        "total_amount": 1796800
+      },
+      {
         "country": "Indonesia",
         "count": 6,
         "total_amount": 2140400
@@ -159003,11 +159031,6 @@
         "country": "New Zealand",
         "count": 6,
         "total_amount": 1869600
-      },
-      {
-        "country": "Brazil",
-        "count": 5,
-        "total_amount": 1842000
       }
     ],
     "top_countries_burn": [
@@ -159055,8 +159078,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.111,
-        "events": 18
+        "burn_ratio": 0.118,
+        "events": 17
       },
       {
         "region": "North America",
@@ -159068,7 +159091,7 @@
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 12
       },
       {
         "region": "MENA",
@@ -159082,8 +159105,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.889,
-        "events": 18
+        "mint_ratio": 0.882,
+        "events": 17
       },
       {
         "region": "Europe",
@@ -159124,7 +159147,7 @@
       },
       {
         "date": "2026-08-28",
-        "net_minted": 12674200,
+        "net_minted": 12824200,
         "net_burned": 700000
       }
     ],
@@ -159167,6 +159190,7 @@
           6745
         ],
         "event_ids_negative": [
+          6913,
           6912,
           6911,
           6909,
@@ -159317,8 +159341,7 @@
           6740,
           6739,
           6738,
-          6737,
-          6736
+          6737
         ]
       },
       "UDHR": {
@@ -159344,6 +159367,7 @@
           6745
         ],
         "event_ids_negative": [
+          6913,
           6911,
           6909,
           6908,
@@ -159477,8 +159501,7 @@
           6740,
           6739,
           6738,
-          6737,
-          6736
+          6737
         ]
       },
       "ILO": {
@@ -159651,7 +159674,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           6870,
           6839,
@@ -159661,6 +159684,7 @@
           6745
         ],
         "event_ids_negative": [
+          6913,
           6912,
           6904,
           6900,
@@ -159723,8 +159747,8 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 76.7,
-      "mainstream_pct": 23.3,
+      "niche_pct": 75.3,
+      "mainstream_pct": 24.7,
       "total_sources_used": 73,
       "articles_processed": 177
     },
@@ -159935,6 +159959,22 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 8,
+        "burn_count": 0,
+        "mint_count": 8,
+        "event_ids": [
+          6913,
+          6900,
+          6874,
+          6833,
+          6831,
+          6813,
+          6812,
+          6811
+        ]
+      },
+      {
         "name": "Water",
         "count": 8,
         "burn_count": 1,
@@ -159963,21 +160003,6 @@
           6813,
           6781,
           6766
-        ]
-      },
-      {
-        "name": "Agriculture",
-        "count": 7,
-        "burn_count": 0,
-        "mint_count": 7,
-        "event_ids": [
-          6900,
-          6874,
-          6833,
-          6831,
-          6813,
-          6812,
-          6811
         ]
       },
       {
@@ -160039,9 +160064,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4920,
+      "total_mint": 4921,
       "direct_action": {
-        "count": 4074,
+        "count": 4075,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -160091,7 +160116,7 @@
         {
           "date": "2026-08-28",
           "citizen": 2,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -160147,6 +160172,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6913,
         6911,
         6910,
         6908,
@@ -160272,8 +160298,7 @@
         6741,
         6740,
         6739,
-        6738,
-        6736
+        6738
       ]
     }
   }
