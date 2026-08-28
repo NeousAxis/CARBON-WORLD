@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-27T23:08:33.158423+00:00",
-  "total_events": 6905,
+  "generated_at": "2026-08-28T00:08:35.581819+00:00",
+  "total_events": 6907,
   "total_burned": 7861719255,
-  "total_minted": 9337339429,
+  "total_minted": 9342809829,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6907,
+      "event_title": "Joburg ignores warnings and appoints ‘potential security risk’ to head Public Safety Department",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-08-27-joburg-ignores-warnings-and-appoints-potential-security-risk-to-head-public-safety-department/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -3.83,
+      "confidence": 8,
+      "justification": "Appointment of a 'high risk' individual to public safety undermines governance, trust, and SDG 16. | The appointment of an individual flagged as a 'high risk' to a critical public safety role directly undermines SDG 16 (Peace, Justice, and Strong Institutions) and erodes public trust. It violates core UDHR principles of fair governance and security, while enabling impunity. The negative aspects outweigh any potential justifications, as the action signals institutional decay rather than reform.",
+      "tx_hash": "3MhCEq5WR1ChuagoACHQeDzDuEDWUAC74GHM6heGwvtrtoUiuyLw9wagp3YpUCU1YGxFkMqygKP4JCfUPpWzNDGu",
+      "created_at": "2026-08-28T00:08:31.850489+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Appointment of an individual classified as 'high risk' by a forensic audit to head a critical public safety department, despite warnings and recommendations for further investigation.\", \"affected_sdgs\": [16, 11, 10], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Undermines public trust in governance and institutional integrity, potentially compromising safety and security for citizens.\", \"affected_sdgs\": [16, 11], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Ignores due diligence processes, setting a precedent for impunity and weakening accountability mechanisms in public administration.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 6906,
+      "event_title": "US to push economic pressure on Iran at G20 finance talks",
+      "event_url": "https://www.al-monitor.com/originals/2026/08/us-push-economic-pressure-iran-g20-finance-talks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -3.55,
+      "confidence": 7,
+      "justification": "Economic pressure on Iran risks violating rights and undermining SDGs, with high potential for humanitarian harm. | The decision to escalate economic pressure on Iran risks violating fundamental rights to an adequate standard of living (UDHR Article 25) and a social and international order enabling rights fulfillment (UDHR Article 28). This action undermines multiple SDGs, including poverty eradication, health, decent work, and peace, with potential cascading effects on regional stability and gl",
+      "tx_hash": "5tfGiujLRnBqyoPBJdojR6PiJXwfkZcjxiRcVhWYCrjD9MtSaGMSibgt1VpHAy6vmjj9f5ZWYKfhX87uqqdv7oX2",
+      "created_at": "2026-08-28T00:08:29.720888+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US Treasury Secretary pushes for increased economic pressure on Iran at G20 finance talks, potentially escalating sanctions or isolation measures.\", \"affected_sdgs\": [1, 2, 3, 8, 10, 16], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6905,
       "event_title": "Lawsuit Seeks to Block EPA From Abandoning Health Protections for Cleveland Residents",
@@ -158879,8 +158925,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 6
+        "burn_ratio": 0.286,
+        "events": 7
       },
       {
         "region": "Latin America",
@@ -158932,11 +158978,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-08-21",
-        "net_minted": 6760,
-        "net_burned": 0
-      },
-      {
         "date": "2026-08-22",
         "net_minted": 736400,
         "net_burned": 0
@@ -158965,6 +159006,11 @@
         "date": "2026-08-27",
         "net_minted": 52011360,
         "net_burned": 1757500
+      },
+      {
+        "date": "2026-08-28",
+        "net_minted": 5470400,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -158981,7 +159027,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 146,
+        "negative": 148,
         "event_ids_positive": [
           6901,
           6871,
@@ -159005,6 +159051,8 @@
           6745
         ],
         "event_ids_negative": [
+          6907,
+          6906,
           6905,
           6904,
           6903,
@@ -159155,7 +159203,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 130,
+        "negative": 132,
         "event_ids_positive": [
           6901,
           6871,
@@ -159175,6 +159223,8 @@
           6745
         ],
         "event_ids_negative": [
+          6907,
+          6906,
           6905,
           6903,
           6900,
@@ -159545,14 +159595,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 80.6,
-      "mainstream_pct": 19.4,
+      "niche_pct": 79.2,
+      "mainstream_pct": 20.8,
       "total_sources_used": 72,
-      "articles_processed": 169
+      "articles_processed": 171
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 169,
+      "total_events": 171,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -159596,6 +159646,15 @@
         ]
       },
       {
+        "name": "G20",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          6906
+        ]
+      },
+      {
         "name": "ICC",
         "count": 1,
         "burn_count": 0,
@@ -159629,15 +159688,6 @@
         "mint_count": 0,
         "event_ids": [
           6760
-        ]
-      },
-      {
-        "name": "EU Commission",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          6744
         ]
       }
     ],
@@ -159681,6 +159731,32 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 18,
+        "burn_count": 2,
+        "mint_count": 16,
+        "event_ids": [
+          6906,
+          6900,
+          6875,
+          6864,
+          6861,
+          6860,
+          6857,
+          6845,
+          6835,
+          6821,
+          6807,
+          6794,
+          6770,
+          6766,
+          6758,
+          6754,
+          6746,
+          6740
+        ]
+      },
+      {
         "name": "Tech",
         "count": 18,
         "burn_count": 4,
@@ -159704,31 +159780,6 @@
           6775,
           6756,
           6750
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 17,
-        "burn_count": 2,
-        "mint_count": 15,
-        "event_ids": [
-          6900,
-          6875,
-          6864,
-          6861,
-          6860,
-          6857,
-          6845,
-          6835,
-          6821,
-          6807,
-          6794,
-          6770,
-          6766,
-          6758,
-          6754,
-          6746,
-          6740
         ]
       },
       {
@@ -159841,14 +159892,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 149,
+      "total_mint": 151,
       "direct_action": {
-        "count": 132,
-        "pct": 88.6
+        "count": 134,
+        "pct": 88.7
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 9.4
+        "pct": 9.3
       },
       "untyped": {
         "count": 3,
@@ -159856,9 +159907,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4913,
+      "total_mint": 4915,
       "direct_action": {
-        "count": 4069,
+        "count": 4071,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -159872,14 +159923,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 48,
-      "institutional": 121,
-      "citizen_ratio": 0.284,
+      "institutional": 123,
+      "citizen_ratio": 0.281,
       "daily": [
-        {
-          "date": "2026-08-21",
-          "citizen": 0,
-          "institutional": 1
-        },
         {
           "date": "2026-08-22",
           "citizen": 1,
@@ -159909,6 +159955,11 @@
           "date": "2026-08-27",
           "citizen": 10,
           "institutional": 32
+        },
+        {
+          "date": "2026-08-28",
+          "citizen": 0,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -159962,6 +160013,8 @@
         6737
       ],
       "event_ids_institutional": [
+        6907,
+        6906,
         6905,
         6904,
         6901,
