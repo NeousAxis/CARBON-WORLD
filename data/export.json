@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-28T05:07:02.488860+00:00",
-  "total_events": 6913,
+  "generated_at": "2026-08-28T08:11:07.427234+00:00",
+  "total_events": 6914,
   "total_burned": 7862419255,
-  "total_minted": 9350163629,
+  "total_minted": 9350704629,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6914,
+      "event_title": "Switzerland eyes drone battalion by 2028",
+      "event_url": "https://www.thelocal.ch/20260828/switzerland-eyes-drone-battalion-by-2028",
+      "event_source": "The Local Switzerland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -3.25,
+      "confidence": 7,
+      "justification": "Military drone expansion risks humanitarian violations and resource diversion, outweighing security benefits. | While the decision to establish a drone battalion may strengthen national security (SDG 16), it carries significant ethical concerns. The risks of autonomous weapons proliferation and potential violations of humanitarian law outweigh the benefits, particularly given the opportunity cost of diverting resources from social and environmental priorities. The net ethical impact is negative.",
+      "tx_hash": "4nSnX3LTkgNdirdauCqerKwXTrEtQufjpcGooPRuXTREx42TPjG2voJQjtng8UWy5RA3MzBB8X3dHWvn51kRYSFa",
+      "created_at": "2026-08-28T08:11:02.658023+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Military modernization may enhance national security and defense capabilities, potentially deterring aggression and protecting sovereignty.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Expansion of military drone capabilities increases risks of autonomous weapons proliferation, potential violations of international humanitarian law, and escalation of global arms races.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Reallocation of public funds to military spending may divert resources from social programs, climate action, or sustainable development initiatives.\", \"affected_sdgs\": [1, 3, 4, 7, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 6913,
       "event_title": "Kick in the guts: Woolworths confirms it will no longer buy Tasmanian beef",
@@ -159014,8 +159037,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 8,
-        "total_amount": 1131000
+        "count": 9,
+        "total_amount": 1672000
       },
       {
         "country": "Australia",
@@ -159073,8 +159096,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.139,
-        "events": 36
+        "burn_ratio": 0.135,
+        "events": 37
       },
       {
         "region": "Asia",
@@ -159110,8 +159133,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.861,
-        "events": 36
+        "mint_ratio": 0.865,
+        "events": 37
       }
     ],
     "supply_trend_7d": [
@@ -159147,7 +159170,7 @@
       },
       {
         "date": "2026-08-28",
-        "net_minted": 12824200,
+        "net_minted": 13365200,
         "net_burned": 700000
       }
     ],
@@ -159165,7 +159188,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 152,
+        "negative": 153,
         "event_ids_positive": [
           6910,
           6901,
@@ -159190,6 +159213,7 @@
           6745
         ],
         "event_ids_negative": [
+          6914,
           6913,
           6912,
           6911,
@@ -159346,7 +159370,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 135,
+        "negative": 136,
         "event_ids_positive": [
           6910,
           6901,
@@ -159367,6 +159391,7 @@
           6745
         ],
         "event_ids_negative": [
+          6914,
           6913,
           6911,
           6909,
@@ -159674,7 +159699,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 59,
+        "negative": 60,
         "event_ids_positive": [
           6870,
           6839,
@@ -159684,6 +159709,7 @@
           6745
         ],
         "event_ids_negative": [
+          6914,
           6913,
           6912,
           6904,
@@ -159750,12 +159776,12 @@
       "niche_pct": 75.3,
       "mainstream_pct": 24.7,
       "total_sources_used": 73,
-      "articles_processed": 177
+      "articles_processed": 178
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 177,
-      "pct": 2.3
+      "total_events": 178,
+      "pct": 2.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -159959,6 +159985,22 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 8,
+        "burn_count": 0,
+        "mint_count": 8,
+        "event_ids": [
+          6914,
+          6911,
+          6882,
+          6843,
+          6841,
+          6813,
+          6781,
+          6766
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 8,
         "burn_count": 0,
@@ -159988,21 +160030,6 @@
           6791,
           6783,
           6761
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 7,
-        "burn_count": 0,
-        "mint_count": 7,
-        "event_ids": [
-          6911,
-          6882,
-          6843,
-          6841,
-          6813,
-          6781,
-          6766
         ]
       },
       {
@@ -160049,10 +160076,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 156,
+      "total_mint": 157,
       "direct_action": {
-        "count": 137,
-        "pct": 87.8
+        "count": 138,
+        "pct": 87.9
       },
       "editorial_alarm": {
         "count": 15,
@@ -160060,13 +160087,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 2.6
+        "pct": 2.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4921,
+      "total_mint": 4922,
       "direct_action": {
-        "count": 4075,
+        "count": 4076,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -160080,8 +160107,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 50,
-      "institutional": 127,
-      "citizen_ratio": 0.282,
+      "institutional": 128,
+      "citizen_ratio": 0.281,
       "daily": [
         {
           "date": "2026-08-22",
@@ -160116,7 +160143,7 @@
         {
           "date": "2026-08-28",
           "citizen": 2,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -160172,6 +160199,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6914,
         6913,
         6911,
         6910,
