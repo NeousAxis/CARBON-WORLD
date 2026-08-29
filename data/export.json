@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-08-29T09:08:44.104104+00:00",
-  "total_events": 6946,
-  "total_burned": 7863419255,
-  "total_minted": 9401115349,
+  "generated_at": "2026-08-29T10:07:56.314451+00:00",
+  "total_events": 6948,
+  "total_burned": 7864019255,
+  "total_minted": 9401863349,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6948,
+      "event_title": "Court orders survey of elephant corridors, seeks ban on fireball use",
+      "event_url": "https://india.mongabay.com/short-article/2026/08/court-orders-survey-of-elephant-corridors-seeks-ban-on-fireball-use/",
+      "event_source": "Mongabay India",
+      "decision": "BURN",
+      "amount_crbn": 600000,
+      "final_score": 3.93,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Court ruling enforces habitat protection and cruelty ban, outweighing implementation risks. | The court's ruling is a significant step toward protecting elephant habitats and reducing cruelty, aligning with biodiversity and climate goals. However, the lack of immediate enforcement measures and potential bureaucratic delays temper the positive impact, leaving room for continued ",
+      "tx_hash": "28Rzgint8uei12SZaqdC4twYUriPTodi9oHaf2b8Noisv7yL3r2udNRoYsqfMma4xCsYsJS6XqXcTsvZDvYZ6TDz",
+      "created_at": "2026-08-29T10:07:51.570486+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"Supreme Court orders a fresh survey of India’s elephant corridors, mandating identification of obstructions and reporting within a strict deadline.\", \"affected_sdgs\": [13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Court seeks a ban on the use of fireballs and other harmful methods to deter elephants, directly addressing animal cruelty and habitat protection.\", \"affected_sdgs\": [15, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential delays in implementation due to bureaucratic processes or lack of enforcement capacity, risking prolonged harm to elephants.\", \"affected_sdgs\": [15, 16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"No immediate injunction granted to halt fireball use pending the survey, leaving elephants vulnerable in the interim.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal\"], \"magnitude\": 5, \"frameworks\": [\"Animal\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
+    {
+      "id": 6947,
+      "event_title": "Nicaragua Escalates Detentions and Disappearances of Indigenous Peoples",
+      "event_url": "https://icmagazine.org/nicaragua-escalates-detentions-and-disappearances-of-indigenous-peoples/",
+      "event_source": "IC Magazine",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -3.9,
+      "confidence": 8,
+      "justification": "Severe rights violations with no offsetting benefits merit a MINT decision. | The government's intensified repression of Indigenous communities constitutes a severe violation of human rights and Indigenous rights, undermining multiple SDGs. No compensating positive outcomes are evident, leading to a strongly negative ethical assessment.",
+      "tx_hash": "344ndQYq4UU6fnXFTQr3uqPwndbU3AukSFTG1sQfU4B7avdiV9Nrm1uhRau4NzXmKbrZJwUrSuRCfheuSBAJQThC",
+      "created_at": "2026-08-29T10:07:49.378003+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Nicaragua",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Escalated detentions and disappearances of Indigenous peoples in Nicaragua's Bosawás Biosphere Reserve\", \"affected_sdgs\": [1, 5, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"UNDRIP Article 3\", \"UNDRIP Article 7\", \"CRC Article 16\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6946,
       "event_title": "Antarctica: Krill Fishery Closed Due to Overfishing, Alarm Grows Over Impacts",
@@ -159827,13 +159873,13 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.158,
-        "events": 19
+        "burn_ratio": 0.2,
+        "events": 20
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.154,
-        "events": 13
+        "burn_ratio": 0.143,
+        "events": 14
       },
       {
         "region": "Europe",
@@ -159863,14 +159909,14 @@
         "events": 64
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.857,
+        "events": 14
+      },
+      {
         "region": "Europe",
         "mint_ratio": 0.857,
         "events": 42
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.846,
-        "events": 13
       }
     ],
     "supply_trend_7d": [
@@ -159906,8 +159952,8 @@
       },
       {
         "date": "2026-08-29",
-        "net_minted": 26979000,
-        "net_burned": 1000000
+        "net_minted": 27727000,
+        "net_burned": 1600000
       }
     ],
     "event_of_the_day": {
@@ -159923,9 +159969,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 23,
-        "negative": 182,
+        "positive": 24,
+        "negative": 183,
         "event_ids_positive": [
+          6948,
           6944,
           6941,
           6910,
@@ -159951,6 +159998,7 @@
           6745
         ],
         "event_ids_negative": [
+          6947,
           6946,
           6945,
           6943,
@@ -160136,9 +160184,10 @@
         ]
       },
       "UDHR": {
-        "positive": 19,
-        "negative": 159,
+        "positive": 20,
+        "negative": 160,
         "event_ids_positive": [
+          6948,
           6944,
           6941,
           6910,
@@ -160160,6 +160209,7 @@
           6745
         ],
         "event_ids_negative": [
+          6947,
           6945,
           6943,
           6942,
@@ -160357,7 +160407,7 @@
       },
       "CRC": {
         "positive": 8,
-        "negative": 52,
+        "negative": 53,
         "event_ids_positive": [
           6871,
           6845,
@@ -160369,6 +160419,7 @@
           6745
         ],
         "event_ids_negative": [
+          6947,
           6935,
           6932,
           6929,
@@ -160425,7 +160476,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           6941,
           6768,
@@ -160433,6 +160484,7 @@
           6745
         ],
         "event_ids_negative": [
+          6947,
           6940,
           6939,
           6938,
@@ -160489,9 +160541,10 @@
         ]
       },
       "Animal": {
-        "positive": 4,
+        "positive": 5,
         "negative": 18,
         "event_ids_positive": [
+          6948,
           6870,
           6839,
           6801,
@@ -160519,9 +160572,10 @@
         ]
       },
       "PB": {
-        "positive": 6,
+        "positive": 7,
         "negative": 77,
         "event_ids_positive": [
+          6948,
           6870,
           6839,
           6801,
@@ -160611,14 +160665,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 72.2,
-      "mainstream_pct": 27.8,
-      "total_sources_used": 79,
-      "articles_processed": 209
+      "niche_pct": 72.5,
+      "mainstream_pct": 27.5,
+      "total_sources_used": 80,
+      "articles_processed": 211
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 209,
+      "total_events": 211,
       "pct": 1.9
     },
     "active_partners_7d": [],
@@ -160909,14 +160963,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 23,
+      "total_burn": 24,
       "direct_action": {
-        "count": 22,
-        "pct": 95.7
+        "count": 23,
+        "pct": 95.8
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 4.3
+        "pct": 4.2
       },
       "untyped": {
         "count": 0,
@@ -160924,10 +160978,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 1986,
+      "total_burn": 1987,
       "direct_action": {
-        "count": 1560,
-        "pct": 78.5
+        "count": 1561,
+        "pct": 78.6
       },
       "editorial_consciousness": {
         "count": 151,
@@ -160939,24 +160993,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 186,
+      "total_mint": 187,
       "direct_action": {
-        "count": 164,
+        "count": 165,
         "pct": 88.2
       },
       "editorial_alarm": {
         "count": 18,
-        "pct": 9.7
+        "pct": 9.6
       },
       "untyped": {
         "count": 4,
-        "pct": 2.2
+        "pct": 2.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4952,
+      "total_mint": 4953,
       "direct_action": {
-        "count": 4102,
+        "count": 4103,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -160969,9 +161023,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 65,
+      "citizen": 67,
       "institutional": 144,
-      "citizen_ratio": 0.311,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-08-23",
@@ -161005,11 +161059,13 @@
         },
         {
           "date": "2026-08-29",
-          "citizen": 6,
+          "citizen": 8,
           "institutional": 7
         }
       ],
       "event_ids_citizen": [
+        6948,
+        6947,
         6946,
         6942,
         6941,
