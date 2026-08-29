@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-29T00:08:04.498231+00:00",
-  "total_events": 6934,
+  "generated_at": "2026-08-29T01:05:59.741255+00:00",
+  "total_events": 6935,
   "total_burned": 7862419255,
-  "total_minted": 9374812349,
+  "total_minted": 9382292349,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6935,
+      "event_title": "Trump announces a major oil agreement with Venezuela",
+      "event_url": "https://www.ouest-france.fr/monde/etats-unis/donald-trump/trump-annonce-un-important-accord-petrolier-avec-le-venezuela-268a3106-a336-11f1-94d9-ff4da0548a19?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -4.88,
+      "confidence": 8,
+      "justification": "The agreement enables fossil fuel expansion and human rights violations, outweighing economic benefits. | The agreement prioritizes short-term economic and energy gains for the U.S. while entrenching fossil fuel reliance and enabling a regime with a poor human rights record. The negative impacts on climate, governance, and social equity far outweigh the economic benefits, violating multiple UN frameworks and planetary boundaries.",
+      "tx_hash": "43Atvo9deJnrxakaeKLXGsaFANMAiawFPPYvSvv7TjJaStDSvi2Y1JnsXS786t2QV38bXd1NvN8QGio9Kz43KnCY",
+      "created_at": "2026-08-29T01:05:55.626347+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential economic boost for the U.S. through increased energy security and access to oil reserves, supporting infrastructure and industry.\", \"affected_sdgs\": [7, 8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Enables and legitimizes a regime with documented human rights violations, undermining democratic governance and rule of law in Venezuela.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 25\", \"CRC Article 3\", \"UNDRIP Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}, {\"description\": \"Locks in long-term fossil fuel dependency, accelerating climate change and undermining global decarbonization efforts.\", \"affected_sdgs\": [7, 12, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Exploitative resource extraction without clear benefits for Venezuelan citizens, exacerbating inequality and poverty.\", \"affected_sdgs\": [1, 2, 3, 10], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 6934,
       "event_title": "Forest Service ‘restructuring’ is bad news for public lands",
@@ -159492,8 +159515,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 53,
-        "total_amount": 79311600
+        "count": 54,
+        "total_amount": 86791600
       },
       {
         "country": "Switzerland",
@@ -159566,8 +159589,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.085,
-        "events": 59
+        "burn_ratio": 0.083,
+        "events": 60
       }
     ],
     "top_regions_destructive": [
@@ -159583,8 +159606,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.915,
-        "events": 59
+        "mint_ratio": 0.917,
+        "events": 60
       },
       {
         "region": "Asia",
@@ -159630,25 +159653,25 @@
       },
       {
         "date": "2026-08-29",
-        "net_minted": 676000,
+        "net_minted": 8156000,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 6925,
-      "event_title": "Trump Designates Italian Web-Hosting Provider as Foreign 'Terror' Group",
+      "id": 6935,
+      "event_title": "Trump announces a major oil agreement with Venezuela",
       "decision": "MINT",
-      "amount_crbn": 676000,
-      "final_score": -4.67,
+      "amount_crbn": 7480000,
+      "final_score": -4.88,
       "confidence": 8,
       "country": "United States",
       "region": "North America",
-      "created_at": "2026-08-28T18:09:04.118363+00:00"
+      "created_at": "2026-08-29T01:05:55.626347+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 173,
+        "negative": 174,
         "event_ids_positive": [
           6910,
           6901,
@@ -159673,6 +159696,7 @@
           6745
         ],
         "event_ids_negative": [
+          6935,
           6934,
           6933,
           6932,
@@ -159850,7 +159874,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 152,
+        "negative": 153,
         "event_ids_positive": [
           6910,
           6901,
@@ -159871,6 +159895,7 @@
           6745
         ],
         "event_ids_negative": [
+          6935,
           6934,
           6933,
           6932,
@@ -160060,7 +160085,7 @@
       },
       "CRC": {
         "positive": 8,
-        "negative": 51,
+        "negative": 52,
         "event_ids_positive": [
           6871,
           6845,
@@ -160072,6 +160097,7 @@
           6745
         ],
         "event_ids_negative": [
+          6935,
           6932,
           6929,
           6927,
@@ -160127,13 +160153,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 49,
+        "negative": 50,
         "event_ids_positive": [
           6768,
           6756,
           6745
         ],
         "event_ids_negative": [
+          6935,
           6934,
           6933,
           6932,
@@ -160216,7 +160243,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 72,
+        "negative": 73,
         "event_ids_positive": [
           6870,
           6839,
@@ -160226,6 +160253,7 @@
           6745
         ],
         "event_ids_negative": [
+          6935,
           6934,
           6933,
           6932,
@@ -160305,11 +160333,11 @@
       "niche_pct": 72.4,
       "mainstream_pct": 27.6,
       "total_sources_used": 76,
-      "articles_processed": 198
+      "articles_processed": 199
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 198,
+      "total_events": 199,
       "pct": 2.0
     },
     "active_partners_7d": [],
@@ -160342,6 +160370,16 @@
           6931,
           6930,
           6927
+        ]
+      },
+      {
+        "name": "UN",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
+        "event_ids": [
+          6935,
+          6760
         ]
       },
       {
@@ -160390,24 +160428,16 @@
         "event_ids": [
           6779
         ]
-      },
-      {
-        "name": "UN Security Council",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          6771
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 33,
+        "count": 34,
         "burn_count": 0,
-        "mint_count": 33,
+        "mint_count": 34,
         "event_ids": [
+          6935,
           6928,
           6916,
           6915,
@@ -160621,10 +160651,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 177,
+      "total_mint": 178,
       "direct_action": {
-        "count": 156,
-        "pct": 88.1
+        "count": 157,
+        "pct": 88.2
       },
       "editorial_alarm": {
         "count": 17,
@@ -160632,13 +160662,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 2.3
+        "pct": 2.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4942,
+      "total_mint": 4943,
       "direct_action": {
-        "count": 4094,
+        "count": 4095,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -160652,8 +160682,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 61,
-      "institutional": 137,
-      "citizen_ratio": 0.308,
+      "institutional": 138,
+      "citizen_ratio": 0.307,
       "daily": [
         {
           "date": "2026-08-23",
@@ -160688,7 +160718,7 @@
         {
           "date": "2026-08-29",
           "citizen": 1,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -160755,6 +160785,7 @@
         6737
       ],
       "event_ids_institutional": [
+        6935,
         6930,
         6929,
         6927,
