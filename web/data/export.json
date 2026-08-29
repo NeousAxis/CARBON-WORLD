@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-29T12:07:34.869286+00:00",
-  "total_events": 6949,
+  "generated_at": "2026-08-29T13:08:13.900159+00:00",
+  "total_events": 6950,
   "total_burned": 7864019255,
-  "total_minted": 9402404349,
+  "total_minted": 9402419349,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6950,
+      "event_title": "Pedestrians killed by driver in Caen: suspect charged with murder",
+      "event_url": "https://www.ici.fr/normandie/calvados-14/drame-devant-la-gare-de-caen-le-suspect-presente-a-un-juge-d-instruction-en-vue-d-une-mise-en-examen-pour-assassinat-2957432?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "decision": "MINT",
+      "amount_crbn": 15000,
+      "final_score": -1.59,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Legal accountability is positive, but the tragic loss of life and violation of rights outweigh it. | The legal action taken (charging the suspect) upholds the rule of law and accountability, aligning with SDG 16 and UDHR principles. However, the underlying tragedy of lives lost and the violation of the right to life outweighs this positive aspect, resulting in a net negative et",
+      "tx_hash": "2yz4nCNVyCERZkKBUbFMP6x2gnYNHDUpLAk3acyuuCCgBvhvgLvJL4qdm4W8Ze4xRZ2iQyUmfiNmt1RjuKpTi2TU",
+      "created_at": "2026-08-29T13:07:24.575825+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Suspect charged with murder and attempted murder, demonstrating legal accountability for violent acts against civilians.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Two pedestrians killed, representing a direct violation of the right to life and public safety.\", \"affected_sdgs\": [3, 11, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6949,
       "event_title": "South Korea leans toward military conscription for women",
@@ -159846,6 +159869,11 @@
         "total_amount": 1732400
       },
       {
+        "country": "France",
+        "count": 7,
+        "total_amount": 2770000
+      },
+      {
         "country": "New Zealand",
         "count": 7,
         "total_amount": 2545600
@@ -159854,11 +159882,6 @@
         "country": "Brazil",
         "count": 6,
         "total_amount": 2302000
-      },
-      {
-        "country": "France",
-        "count": 6,
-        "total_amount": 2755000
       }
     ],
     "top_countries_burn": [
@@ -159906,8 +159929,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.143,
-        "events": 42
+        "burn_ratio": 0.14,
+        "events": 43
       },
       {
         "region": "North America",
@@ -159932,14 +159955,14 @@
         "events": 63
       },
       {
+        "region": "Europe",
+        "mint_ratio": 0.86,
+        "events": 43
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 0.857,
         "events": 14
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.857,
-        "events": 42
       }
     ],
     "supply_trend_7d": [
@@ -159975,7 +159998,7 @@
       },
       {
         "date": "2026-08-29",
-        "net_minted": 28268000,
+        "net_minted": 28283000,
         "net_burned": 1600000
       }
     ],
@@ -159993,7 +160016,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 183,
+        "negative": 184,
         "event_ids_positive": [
           6948,
           6944,
@@ -160021,6 +160044,7 @@
           6745
         ],
         "event_ids_negative": [
+          6950,
           6949,
           6947,
           6946,
@@ -160208,7 +160232,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 160,
+        "negative": 161,
         "event_ids_positive": [
           6948,
           6944,
@@ -160232,6 +160256,7 @@
           6745
         ],
         "event_ids_negative": [
+          6950,
           6949,
           6947,
           6945,
@@ -160688,14 +160713,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.2,
-      "mainstream_pct": 28.7,
-      "total_sources_used": 80,
-      "articles_processed": 211
+      "niche_pct": 71.6,
+      "mainstream_pct": 28.4,
+      "total_sources_used": 81,
+      "articles_processed": 212
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 211,
+      "total_events": 212,
       "pct": 1.9
     },
     "active_partners_7d": [],
@@ -161018,10 +161043,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 187,
+      "total_mint": 188,
       "direct_action": {
-        "count": 165,
-        "pct": 88.2
+        "count": 166,
+        "pct": 88.3
       },
       "editorial_alarm": {
         "count": 18,
@@ -161033,9 +161058,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4954,
+      "total_mint": 4955,
       "direct_action": {
-        "count": 4104,
+        "count": 4105,
         "pct": 82.8
       },
       "editorial_alarm": {
@@ -161049,8 +161074,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 67,
-      "institutional": 144,
-      "citizen_ratio": 0.318,
+      "institutional": 145,
+      "citizen_ratio": 0.316,
       "daily": [
         {
           "date": "2026-08-23",
@@ -161085,7 +161110,7 @@
         {
           "date": "2026-08-29",
           "citizen": 8,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -161158,6 +161183,7 @@
         6745
       ],
       "event_ids_institutional": [
+        6950,
         6949,
         6945,
         6944,
