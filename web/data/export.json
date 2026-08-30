@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-30T05:05:58.491730+00:00",
-  "total_events": 6963,
+  "generated_at": "2026-08-30T06:05:17.376871+00:00",
+  "total_events": 6964,
   "total_burned": 7864369255,
-  "total_minted": 9412033549,
+  "total_minted": 9412233549,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6964,
+      "event_title": "Netanjahu condemns settler violence in West Bank, calling it damaging to Israel's global standing",
+      "event_url": "https://www.tagesschau.de/ausland/asien/netanjahu-westjordanland-siedlergewalt-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 200000,
+      "final_score": -2.98,
+      "confidence": 6,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Rhetorical condemnation without enforcement enables ongoing rights violations and systemic impunity. | While Netanyahu's condemnation signals a rare acknowledgment of settler violence, it lacks binding action or accountability mechanisms, leaving underlying violations unaddressed. The rhetorical stance does little to mitigate the immediate harm to Palestinian communities or rev",
+      "tx_hash": "52XbYkP9btSejzMa7Y1Z3gJnWJ7cNWuwmpdBoLewirwLVBg1eyB6Ro5gEe7JjVqUiqV7C19B2u4cwEZkYTvSpFP8",
+      "created_at": "2026-08-30T06:05:13.344030+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israeli Prime Minister publicly condemns settler violence in the West Bank, acknowledging harm to Israel's global standing and implicitly recognizing the illegitimacy of such actions.\", \"affected_sdgs\": [16, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Condemnation remains rhetorical without concrete enforcement measures (e.g., arrests, dismantling of settlements, or policy changes) to prevent future violence or address systemic impunity for settlers.\", \"affected_sdgs\": [16, 10, 11], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 7\", \"UNDRIP Article 8\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Ongoing settler violence and blockade of Palestinian villages continue to violate rights to security, movement, and livelihood, with no immediate relief for affected communities.\", \"affected_sdgs\": [1, 2, 3, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 27\", \"UNDRIP Article 26\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 6963,
       "event_title": "Western North Carolina Pleaded for Hurricane Help. It Got ICE Instead.",
@@ -160239,14 +160262,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 12
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 14
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 11
       },
       {
         "region": "North America",
@@ -160297,7 +160320,7 @@
       },
       {
         "date": "2026-08-30",
-        "net_minted": 115400,
+        "net_minted": 315400,
         "net_burned": 350000
       }
     ],
@@ -160315,7 +160338,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 196,
+        "negative": 197,
         "event_ids_positive": [
           6961,
           6948,
@@ -160344,6 +160367,7 @@
           6745
         ],
         "event_ids_negative": [
+          6964,
           6963,
           6962,
           6960,
@@ -160544,7 +160568,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 171,
+        "negative": 172,
         "event_ids_positive": [
           6961,
           6948,
@@ -160569,6 +160593,7 @@
           6745
         ],
         "event_ids_negative": [
+          6964,
           6963,
           6962,
           6960,
@@ -160781,7 +160806,7 @@
       },
       "CRC": {
         "positive": 9,
-        "negative": 54,
+        "negative": 55,
         "event_ids_positive": [
           6961,
           6871,
@@ -160794,6 +160819,7 @@
           6745
         ],
         "event_ids_negative": [
+          6964,
           6963,
           6957,
           6947,
@@ -160852,7 +160878,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 57,
+        "negative": 58,
         "event_ids_positive": [
           6941,
           6768,
@@ -160860,6 +160886,7 @@
           6745
         ],
         "event_ids_negative": [
+          6964,
           6957,
           6953,
           6951,
@@ -161050,14 +161077,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.4,
-      "mainstream_pct": 28.6,
+      "niche_pct": 70.2,
+      "mainstream_pct": 29.8,
       "total_sources_used": 84,
-      "articles_processed": 225
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 225,
+      "total_events": 226,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -161203,10 +161230,11 @@
       },
       {
         "name": "Finance",
-        "count": 24,
+        "count": 25,
         "burn_count": 2,
-        "mint_count": 22,
+        "mint_count": 23,
         "event_ids": [
+          6964,
           6958,
           6953,
           6931,
@@ -161391,10 +161419,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 200,
+      "total_mint": 201,
       "direct_action": {
-        "count": 178,
-        "pct": 89.0
+        "count": 179,
+        "pct": 89.1
       },
       "editorial_alarm": {
         "count": 18,
@@ -161406,9 +161434,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4967,
+      "total_mint": 4968,
       "direct_action": {
-        "count": 4117,
+        "count": 4118,
         "pct": 82.9
       },
       "editorial_alarm": {
@@ -161422,8 +161450,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 73,
-      "institutional": 152,
-      "citizen_ratio": 0.324,
+      "institutional": 153,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-08-24",
@@ -161458,7 +161486,7 @@
         {
           "date": "2026-08-30",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -161537,6 +161565,7 @@
         6745
       ],
       "event_ids_institutional": [
+        6964,
         6963,
         6961,
         6960,
