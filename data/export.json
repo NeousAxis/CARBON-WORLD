@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-30T16:08:10.527109+00:00",
-  "total_events": 6984,
+  "generated_at": "2026-08-30T18:06:58.577189+00:00",
+  "total_events": 6985,
   "total_burned": 7866276755,
-  "total_minted": 9420930649,
+  "total_minted": 9421155649,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6985,
+      "event_title": "Iceland’s parliament will discuss withdrawing EU bid after failed referendum",
+      "event_url": "https://www.politico.eu/article/iceland-parliament-will-discuss-withdrawing-eu-bid-after-failed-referendum/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -2.4,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Withdrawal from EU accession talks weakens collective climate and human rights frameworks, outweighing sovereignty benefits. | The decision to discuss withdrawing Iceland's EU bid presents a trade-off between preserving national sovereignty and environmental autonomy versus losing access to collaborative climate and human rights frameworks. While Iceland's governance model alig",
+      "tx_hash": "2MufooJiuLVDKTF8ZaABDkkwNBT7Px8UGWrnpiqN3QQErf8EN88pJDBtYytAoLjuordrV1YqCGtVg8SZ6pNAUpnD",
+      "created_at": "2026-08-30T18:06:54.132284+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iceland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Potential reduction in alignment with EU policies that may undermine Iceland's strong environmental protections and sovereignty over natural resources (e.g., fishing rights, renewable energy autonomy).\", \"affected_sdgs\": [7, 13, 14, 15], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Preservation of Iceland's unique governance model, which has historically prioritized local decision-making and direct democracy, aligning with UNDRIP principles for indigenous and community rights.\", \"affected_sdgs\": [16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Withdrawal from EU accession talks may weaken Iceland's access to EU climate funds, research collaborations, and cross-border environmental regulations, undermining SDGs 13, 14, and 15.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Reduced participation in EU-wide human rights frameworks (e.g., UDHR-aligned labor standards, anti-discrimination policies) could erode protections for marginalized groups in Iceland.\", \"affected_sdgs\": [5, 8, 10, 16], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Isolation from EU mechanisms may limit Iceland's ability to influence or benefit from collective climate action, particularly in Arctic policy and biodiversity conservation.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 6984,
       "event_title": "Do Decarbonization Policies Prolong Fossil Fuel Industry Lifespans?",
@@ -160711,8 +160734,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.146,
-        "events": 48
+        "burn_ratio": 0.143,
+        "events": 49
       },
       {
         "region": "North America",
@@ -160738,8 +160761,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.854,
-        "events": 48
+        "mint_ratio": 0.857,
+        "events": 49
       },
       {
         "region": "Asia",
@@ -160780,7 +160803,7 @@
       },
       {
         "date": "2026-08-30",
-        "net_minted": 8412500,
+        "net_minted": 8637500,
         "net_burned": 2257500
       }
     ],
@@ -160798,7 +160821,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 203,
+        "negative": 204,
         "event_ids_positive": [
           6982,
           6981,
@@ -160829,6 +160852,7 @@
           6756
         ],
         "event_ids_negative": [
+          6985,
           6984,
           6983,
           6979,
@@ -161036,7 +161060,7 @@
       },
       "UDHR": {
         "positive": 22,
-        "negative": 175,
+        "negative": 176,
         "event_ids_positive": [
           6982,
           6981,
@@ -161062,6 +161086,7 @@
           6756
         ],
         "event_ids_negative": [
+          6985,
           6983,
           6979,
           6978,
@@ -161350,13 +161375,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 60,
+        "negative": 61,
         "event_ids_positive": [
           6941,
           6768,
           6756
         ],
         "event_ids_negative": [
+          6985,
           6973,
           6971,
           6964,
@@ -161455,7 +161481,7 @@
       },
       "PB": {
         "positive": 8,
-        "negative": 88,
+        "negative": 89,
         "event_ids_positive": [
           6980,
           6969,
@@ -161467,6 +161493,7 @@
           6756
         ],
         "event_ids_negative": [
+          6985,
           6984,
           6979,
           6973,
@@ -161565,9 +161592,9 @@
       "articles_processed": 232
     },
     "cache_hit_rate_7d": {
-      "hits": 2,
+      "hits": 1,
       "total_events": 232,
-      "pct": 0.9
+      "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -161577,6 +161604,7 @@
         "burn_count": 0,
         "mint_count": 12,
         "event_ids": [
+          6985,
           6979,
           6973,
           6972,
@@ -161587,8 +161615,7 @@
           6884,
           6820,
           6812,
-          6753,
-          6749
+          6753
         ]
       },
       {
@@ -161664,9 +161691,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 40,
+        "count": 39,
         "burn_count": 1,
-        "mint_count": 39,
+        "mint_count": 38,
         "event_ids": [
           6984,
           6969,
@@ -161706,8 +161733,7 @@
           6762,
           6761,
           6757,
-          6750,
-          6749
+          6750
         ]
       },
       {
@@ -161904,22 +161930,22 @@
     "mint_composition_7d": {
       "total_mint": 205,
       "direct_action": {
-        "count": 185,
-        "pct": 90.2
+        "count": 186,
+        "pct": 90.7
       },
       "editorial_alarm": {
         "count": 18,
         "pct": 8.8
       },
       "untyped": {
-        "count": 2,
-        "pct": 1.0
+        "count": 1,
+        "pct": 0.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4980,
+      "total_mint": 4981,
       "direct_action": {
-        "count": 4130,
+        "count": 4131,
         "pct": 82.9
       },
       "editorial_alarm": {
@@ -161969,7 +161995,7 @@
         {
           "date": "2026-08-30",
           "citizen": 2,
-          "institutional": 18
+          "institutional": 19
         }
       ],
       "event_ids_citizen": [
@@ -162048,6 +162074,7 @@
         6751
       ],
       "event_ids_institutional": [
+        6985,
         6984,
         6983,
         6982,
@@ -162205,8 +162232,7 @@
         6757,
         6755,
         6753,
-        6750,
-        6749
+        6750
       ]
     }
   }
