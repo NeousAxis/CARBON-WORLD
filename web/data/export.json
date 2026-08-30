@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-30T04:06:33.187739+00:00",
-  "total_events": 6962,
+  "generated_at": "2026-08-30T05:05:58.491730+00:00",
+  "total_events": 6963,
   "total_burned": 7864369255,
-  "total_minted": 9411965949,
+  "total_minted": 9412033549,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6963,
+      "event_title": "Western North Carolina Pleaded for Hurricane Help. It Got ICE Instead.",
+      "event_url": "https://theintercept.com/2026/08/29/hurricane-helene-ice-asheville-nc-g20-trump/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -4.13,
+      "confidence": 8,
+      "justification": "ICE enforcement in disaster zones violates rights and undermines humanitarian aid, outweighing local resilience efforts. | The article highlights a stark ethical conflict: while local communities exhibited solidarity and resilience (positive), the federal response prioritized immigration enforcement over humanitarian needs, violating core rights and deepening inequities. The negative aspects outweigh the positive due to the direct harm to vulnerable populations and the erosion of trust in crisis",
+      "tx_hash": "3kmghcgJsxcVoWJoGJQ3ZEruv164tSxc7LW1Zf7Kk1wGvbRE17tmBRrycrjLqyR6CVRFrdjrLD2p2w2TrKM7bRoL",
+      "created_at": "2026-08-30T05:05:54.183925+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Community-led rebuilding efforts post-Hurricane Helene demonstrate resilience and mutual aid, supporting local recovery and social cohesion.\", \"affected_sdgs\": [1, 11, 13, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deployment of ICE (Immigration and Customs Enforcement) in a disaster-affected area instills fear, deters undocumented residents from accessing aid, and violates rights to safety and non-discrimination.\", \"affected_sdgs\": [1, 3, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 14\", \"UDHR Article 25\", \"CRC Article 22\", \"ILO Discrimination Convention\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}, {\"description\": \"Prioritization of immigration enforcement over humanitarian assistance undermines trust in institutions and exacerbates vulnerability during crises.\", \"affected_sdgs\": [11, 13, 16], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 6962,
       "event_title": "Residents prepare to fight AI data centre approval",
@@ -160136,8 +160159,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 61,
-        "total_amount": 97040400
+        "count": 62,
+        "total_amount": 97108000
       },
       {
         "country": "Switzerland",
@@ -160210,8 +160233,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.088,
-        "events": 68
+        "burn_ratio": 0.087,
+        "events": 69
       }
     ],
     "top_regions_destructive": [
@@ -160227,8 +160250,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.912,
-        "events": 68
+        "mint_ratio": 0.913,
+        "events": 69
       },
       {
         "region": "Latin America",
@@ -160274,7 +160297,7 @@
       },
       {
         "date": "2026-08-30",
-        "net_minted": 47800,
+        "net_minted": 115400,
         "net_burned": 350000
       }
     ],
@@ -160292,7 +160315,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 195,
+        "negative": 196,
         "event_ids_positive": [
           6961,
           6948,
@@ -160321,6 +160344,7 @@
           6745
         ],
         "event_ids_negative": [
+          6963,
           6962,
           6960,
           6959,
@@ -160520,7 +160544,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 170,
+        "negative": 171,
         "event_ids_positive": [
           6961,
           6948,
@@ -160545,6 +160569,7 @@
           6745
         ],
         "event_ids_negative": [
+          6963,
           6962,
           6960,
           6958,
@@ -160719,11 +160744,12 @@
       },
       "ILO": {
         "positive": 1,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           6779
         ],
         "event_ids_negative": [
+          6963,
           6960,
           6949,
           6939,
@@ -160755,7 +160781,7 @@
       },
       "CRC": {
         "positive": 9,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           6961,
           6871,
@@ -160768,6 +160794,7 @@
           6745
         ],
         "event_ids_negative": [
+          6963,
           6957,
           6947,
           6935,
@@ -161026,11 +161053,11 @@
       "niche_pct": 71.4,
       "mainstream_pct": 28.6,
       "total_sources_used": 84,
-      "articles_processed": 224
+      "articles_processed": 225
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 224,
+      "total_events": 225,
       "pct": 1.8
     },
     "active_partners_7d": [],
@@ -161364,10 +161391,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 199,
+      "total_mint": 200,
       "direct_action": {
-        "count": 177,
-        "pct": 88.9
+        "count": 178,
+        "pct": 89.0
       },
       "editorial_alarm": {
         "count": 18,
@@ -161379,9 +161406,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4966,
+      "total_mint": 4967,
       "direct_action": {
-        "count": 4116,
+        "count": 4117,
         "pct": 82.9
       },
       "editorial_alarm": {
@@ -161395,8 +161422,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 73,
-      "institutional": 151,
-      "citizen_ratio": 0.326,
+      "institutional": 152,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-08-24",
@@ -161431,7 +161458,7 @@
         {
           "date": "2026-08-30",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -161510,6 +161537,7 @@
         6745
       ],
       "event_ids_institutional": [
+        6963,
         6961,
         6960,
         6958,
