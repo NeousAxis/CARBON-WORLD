@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-08-31T09:07:04.042394+00:00",
-  "total_events": 6998,
+  "generated_at": "2026-08-31T11:07:14.993329+00:00",
+  "total_events": 6999,
   "total_burned": 7866976755,
-  "total_minted": 9445897049,
+  "total_minted": 9446197049,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 6999,
+      "event_title": "Fuel subsidies for struggling businesses will not be suspended, government confirms",
+      "event_url": "https://www.ici.fr/infos/economie-social/carburants-les-aides-aux-entreprises-les-plus-touchees-ne-seront-pas-suspendues-affirme-le-gouvernement-3605140?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.2,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables fossil fuel dependence, undermining climate goals despite economic relief. | The decision prioritizes short-term economic stability for struggling businesses (SDGs 8, 9) but conflicts with long-term climate goals (SDGs 7, 13) and risks entrenching inequality (SDG 10). The negative environmental impact outweighs the immediate economic relief, give",
+      "tx_hash": "2s1FJY7GhboqciyMnhUmJTGya63XURWwETX3XKgAys55Yrc9KLpudL4zcpHAJcXcbphmNDD2Kerv9NTE9aqjNbPM",
+      "created_at": "2026-08-31T11:07:10.304171+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Government maintains fuel subsidies for struggling businesses, preventing immediate economic hardship for vulnerable sectors (e.g., transport, logistics).\", \"affected_sdgs\": [8, 9, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Continued fuel subsidies for high-emission industries (e.g., transport) delay transition to clean energy, undermining climate action and perpetuating fossil fuel dependence.\", \"affected_sdgs\": [7, 12, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Subsidies may disproportionately benefit larger businesses, exacerbating inequality by not targeting smaller enterprises or low-income workers.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 667000
+    },
     {
       "id": 6998,
       "event_title": "'Lost' for 170 years, rare plant recorded in Sri Lanka",
@@ -160964,13 +160987,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 65,
-        "total_amount": 112256400
+        "count": 64,
+        "total_amount": 111508400
       },
       {
-        "country": "Switzerland",
+        "country": "France",
         "count": 9,
-        "total_amount": 1682400
+        "total_amount": 2769000
       },
       {
         "country": "Australia",
@@ -160978,9 +161001,9 @@
         "total_amount": 2087000
       },
       {
-        "country": "France",
+        "country": "Switzerland",
         "count": 8,
-        "total_amount": 2469000
+        "total_amount": 1532400
       },
       {
         "country": "Iceland",
@@ -161023,8 +161046,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.227,
-        "events": 22
+        "burn_ratio": 0.238,
+        "events": 21
       },
       {
         "region": "Latin America",
@@ -161038,8 +161061,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.083,
-        "events": 72
+        "burn_ratio": 0.085,
+        "events": 71
       }
     ],
     "top_regions_destructive": [
@@ -161055,8 +161078,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.917,
-        "events": 72
+        "mint_ratio": 0.915,
+        "events": 71
       },
       {
         "region": "Europe",
@@ -161102,7 +161125,7 @@
       },
       {
         "date": "2026-08-31",
-        "net_minted": 16606400,
+        "net_minted": 16906400,
         "net_burned": 700000
       }
     ],
@@ -161120,7 +161143,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 205,
+        "negative": 203,
         "event_ids_positive": [
           6998,
           6982,
@@ -161150,6 +161173,7 @@
           6768
         ],
         "event_ids_negative": [
+          6999,
           6997,
           6996,
           6995,
@@ -161351,15 +161375,12 @@
           6770,
           6769,
           6767,
-          6766,
-          6765,
-          6764,
-          6763
+          6766
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 180,
+        "negative": 179,
         "event_ids_positive": [
           6982,
           6981,
@@ -161383,6 +161404,7 @@
           6768
         ],
         "event_ids_negative": [
+          6999,
           6997,
           6996,
           6995,
@@ -161560,9 +161582,7 @@
           6770,
           6769,
           6767,
-          6766,
-          6765,
-          6763
+          6766
         ]
       },
       "ILO": {
@@ -161677,7 +161697,7 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 58,
+        "negative": 56,
         "event_ids_positive": [
           6941,
           6768
@@ -161738,9 +161758,7 @@
           6785,
           6783,
           6773,
-          6770,
-          6765,
-          6763
+          6770
         ]
       },
       "Animal": {
@@ -161777,7 +161795,7 @@
       },
       "PB": {
         "positive": 8,
-        "negative": 87,
+        "negative": 86,
         "event_ids_positive": [
           6998,
           6980,
@@ -161789,6 +161807,7 @@
           6782
         ],
         "event_ids_negative": [
+          6999,
           6996,
           6992,
           6991,
@@ -161873,21 +161892,19 @@
           6772,
           6769,
           6767,
-          6766,
-          6765,
-          6764
+          6766
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.8,
-      "mainstream_pct": 31.2,
+      "niche_pct": 71.2,
+      "mainstream_pct": 28.7,
       "total_sources_used": 80,
-      "articles_processed": 236
+      "articles_processed": 234
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 236,
+      "total_events": 234,
       "pct": 2.1
     },
     "active_partners_7d": [],
@@ -161990,10 +162007,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 35,
+        "count": 34,
         "burn_count": 1,
-        "mint_count": 34,
+        "mint_count": 33,
         "event_ids": [
+          6999,
           6984,
           6969,
           6966,
@@ -162026,9 +162044,7 @@
           6806,
           6775,
           6772,
-          6767,
-          6765,
-          6764
+          6767
         ]
       },
       {
@@ -162220,14 +162236,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 210,
+      "total_mint": 208,
       "direct_action": {
-        "count": 188,
-        "pct": 89.5
+        "count": 187,
+        "pct": 89.9
       },
       "editorial_alarm": {
-        "count": 17,
-        "pct": 8.1
+        "count": 16,
+        "pct": 7.7
       },
       "untyped": {
         "count": 5,
@@ -162235,9 +162251,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 4997,
+      "total_mint": 4998,
       "direct_action": {
-        "count": 4142,
+        "count": 4143,
         "pct": 82.9
       },
       "editorial_alarm": {
@@ -162250,9 +162266,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 74,
+      "citizen": 72,
       "institutional": 162,
-      "citizen_ratio": 0.314,
+      "citizen_ratio": 0.308,
       "daily": [
         {
           "date": "2026-08-25",
@@ -162287,7 +162303,7 @@
         {
           "date": "2026-08-31",
           "citizen": 3,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -162362,11 +162378,10 @@
         6777,
         6776,
         6769,
-        6768,
-        6765,
-        6763
+        6768
       ],
       "event_ids_institutional": [
+        6999,
         6997,
         6996,
         6994,
@@ -162527,8 +162542,7 @@
         6771,
         6770,
         6767,
-        6766,
-        6764
+        6766
       ]
     }
   }
