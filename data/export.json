@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-01T08:07:25.473224+00:00",
-  "total_events": 7027,
+  "generated_at": "2026-09-01T09:09:16.891949+00:00",
+  "total_events": 7028,
   "total_burned": 7881861755,
-  "total_minted": 9473968449,
+  "total_minted": 9474118449,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7028,
+      "event_title": "Opponents miss vote as rates cap bill passes first reading",
+      "event_url": "https://www.rnz.co.nz/news/political/1213656/opponents-miss-vote-as-rates-cap-bill-passes-first-reading",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.33,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables harm by bypassing scrutiny and risking long-term public welfare erosion. | While the rates cap may alleviate short-term financial pressure on citizens (SDGs 1, 10), the lack of opposition scrutiny violates democratic principles (UDHR 21). The potential erosion of local service funding introduces ethical trade-offs between affordability and long-t",
+      "tx_hash": "5uGDCXEcPj82QmiFx4aFKeQcQyPk4y74TvnQi3meJ9HZAP3evbBx3i3xdR58pRdvotT4G5kQBa8fq7DByvceZbg2",
+      "created_at": "2026-09-01T09:09:12.647811+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Legislation to cap council rates increases may reduce financial burden on households, supporting affordability of essential services.\", \"affected_sdgs\": [1, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Legislative process bypassed due to absence of opposition, undermining democratic participation and scrutiny (UDHR Article 21).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential long-term underfunding of local services (e.g., infrastructure, social programs) due to revenue constraints, risking SDGs 3, 6, and 11.\", \"affected_sdgs\": [3, 6, 11], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 7027,
       "event_title": "Gary power outage underscores stakes of Solar for All cancellation",
@@ -161685,13 +161708,13 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.286,
-        "events": 7
+        "burn_ratio": 0.333,
+        "events": 6
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.278,
-        "events": 18
+        "burn_ratio": 0.294,
+        "events": 17
       },
       {
         "region": "Latin America",
@@ -161713,7 +161736,7 @@
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 13
+        "events": 14
       },
       {
         "region": "MENA",
@@ -161769,7 +161792,7 @@
       },
       {
         "date": "2026-09-01",
-        "net_minted": 3153600,
+        "net_minted": 3303600,
         "net_burned": 1200000
       }
     ],
@@ -161787,7 +161810,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 28,
-        "negative": 200,
+        "negative": 199,
         "event_ids_positive": [
           7020,
           7019,
@@ -161819,6 +161842,7 @@
           6801
         ],
         "event_ids_negative": [
+          7028,
           7027,
           7026,
           7025,
@@ -162016,14 +162040,12 @@
           6800,
           6799,
           6798,
-          6797,
-          6796,
-          6795
+          6797
         ]
       },
       "UDHR": {
         "positive": 21,
-        "negative": 177,
+        "negative": 176,
         "event_ids_positive": [
           7020,
           7019,
@@ -162048,6 +162070,7 @@
           6802
         ],
         "event_ids_negative": [
+          7028,
           7027,
           7026,
           7025,
@@ -162222,14 +162245,12 @@
           6800,
           6799,
           6798,
-          6797,
-          6796,
-          6795
+          6797
         ]
       },
       "ILO": {
         "positive": 2,
-        "negative": 26,
+        "negative": 25,
         "event_ids_positive": [
           7020,
           7018
@@ -162259,13 +162280,12 @@
           6837,
           6830,
           6828,
-          6803,
-          6796
+          6803
         ]
       },
       "CRC": {
         "positive": 8,
-        "negative": 57,
+        "negative": 56,
         "event_ids_positive": [
           7009,
           7005,
@@ -162332,8 +162352,7 @@
           6808,
           6805,
           6803,
-          6797,
-          6796
+          6797
         ]
       },
       "UNDRIP": {
@@ -162537,12 +162556,12 @@
       "niche_pct": 74.4,
       "mainstream_pct": 25.6,
       "total_sources_used": 82,
-      "articles_processed": 233
+      "articles_processed": 232
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 233,
-      "pct": 2.1
+      "total_events": 232,
+      "pct": 2.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -162680,10 +162699,11 @@
       },
       {
         "name": "Finance",
-        "count": 23,
+        "count": 24,
         "burn_count": 3,
-        "mint_count": 20,
+        "mint_count": 21,
         "event_ids": [
+          7028,
           7017,
           7009,
           6988,
@@ -162865,25 +162885,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 205,
+      "total_mint": 204,
       "direct_action": {
-        "count": 185,
+        "count": 184,
         "pct": 90.2
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.3
+        "pct": 7.4
       },
       "untyped": {
         "count": 5,
-        "pct": 2.4
+        "pct": 2.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5020,
+      "total_mint": 5021,
       "direct_action": {
-        "count": 4164,
-        "pct": 82.9
+        "count": 4165,
+        "pct": 83.0
       },
       "editorial_alarm": {
         "count": 305,
@@ -162895,9 +162915,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 72,
-      "institutional": 161,
-      "citizen_ratio": 0.309,
+      "citizen": 73,
+      "institutional": 159,
+      "citizen_ratio": 0.315,
       "daily": [
         {
           "date": "2026-08-26",
@@ -162931,11 +162951,12 @@
         },
         {
           "date": "2026-09-01",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 7
         }
       ],
       "event_ids_citizen": [
+        7028,
         7023,
         7022,
         7016,
@@ -163168,9 +163189,7 @@
         6802,
         6799,
         6798,
-        6797,
-        6796,
-        6795
+        6797
       ]
     }
   }
