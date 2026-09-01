@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-01T17:10:15.555358+00:00",
-  "total_events": 7041,
+  "generated_at": "2026-09-01T18:08:30.633779+00:00",
+  "total_events": 7043,
   "total_burned": 7882711755,
-  "total_minted": 9485656849,
+  "total_minted": 9493286849,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7043,
+      "event_title": "The US military began striking targets in Iran, CENTCOM says",
+      "event_url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/the-us-military-began-striking-targets-in-iran-centcom-says?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -6.51,
+      "confidence": 8,
+      "justification": "Military strikes violate sovereignty, human rights, and peace frameworks, warranting MINT. | The US military's initiation of strikes in Iran constitutes a severe violation of international law, sovereignty, and human rights. It directly undermines SDG 16 (Peace and Justice) and risks cascading harm across multiple SDGs, including health, education, and poverty. The action violates core UDHR articles and threatens the rights of civilians, children, and indigenous populations. No positive ethical ",
+      "tx_hash": "2SSbTDyDa85bS2QLDwtPFWVv5FALKaqK9ZY9WQUc3QLFrcJv1ij22mJeEnG65QknwqscNyZPDFJ5RcT3LDb1PQRf",
+      "created_at": "2026-09-01T18:08:26.238558+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US military initiates strikes in Iran, escalating armed conflict and risking civilian harm, regional destabilization, and violation of sovereignty.\", \"affected_sdgs\": [16, 3, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15], \"violated_rights\": [\"UDHR Article 3 (Right to Life)\", \"UDHR Article 5 (Freedom from Torture)\", \"UDHR Article 12 (Freedom from Arbitrary Interference)\", \"UDHR Article 28 (Right to Social Order)\", \"CRC Article 6 (Right to Life for Children)\", \"UNDRIP Article 3 (Right to Self-Determination)\", \"ILO Forced Labor Convention (Indirect Violation via Displacement)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 7042,
+      "event_title": "Tanzania: Government Announces Two-Month Illegal Firearms Amnesty",
+      "event_url": "https://allafrica.com/stories/202609010242.html",
+      "event_source": "AllAfrica Headlines",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 1.91,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Amnesty risks impunity and limited effectiveness, outweighing short-term public safety benefits. | The amnesty promotes public safety and institutional trust by reducing illegal firearms, aligning with SDG 16 and UDHR principles. However, it risks enabling impunity and may exclude some due to its limited duration, creating ethical trade-offs between immediate harm reduction and",
+      "tx_hash": "rkGciCFQ8nMFEFjsa5fdLmuNisUHtB4gTnfVuVyPjrbJwS3WNuNnJi1P5vwXN6E87at27K5JJjCjpjPebpyqkaU",
+      "created_at": "2026-09-01T18:08:24.082033+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Tanzania",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Government offers amnesty for illegal firearms, reducing armed violence and promoting public safety.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Voluntary surrender mechanism encourages compliance with the law, fostering trust in institutions.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Amnesty may enable impunity for past offenses involving illegal firearms, undermining justice for victims.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Short duration (two months) may limit effectiveness, excluding those unaware or unable to act in time.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 7041,
       "event_title": "Government: Russia responsible for drone attack attempt in Leipzig; further sanctions announced",
@@ -161953,8 +161999,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 53,
-        "total_amount": 87951500
+        "count": 54,
+        "total_amount": 95431500
       },
       {
         "country": "Switzerland",
@@ -162006,14 +162052,14 @@
     ],
     "top_regions_sustainable": [
       {
-        "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 6
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.294,
         "events": 17
+      },
+      {
+        "region": "Africa",
+        "burn_ratio": 0.286,
+        "events": 7
       },
       {
         "region": "Latin America",
@@ -162027,8 +162073,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.1,
-        "events": 60
+        "burn_ratio": 0.098,
+        "events": 61
       }
     ],
     "top_regions_destructive": [
@@ -162044,8 +162090,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.9,
-        "events": 60
+        "mint_ratio": 0.902,
+        "events": 61
       },
       {
         "region": "Europe",
@@ -162091,25 +162137,25 @@
       },
       {
         "date": "2026-09-01",
-        "net_minted": 14842000,
+        "net_minted": 22472000,
         "net_burned": 2050000
       }
     ],
     "event_of_the_day": {
-      "id": 7033,
-      "event_title": "Occupied West Bank: UN World Food Programme cuts food aid in half due to lack of funding",
+      "id": 7043,
+      "event_title": "The US military began striking targets in Iran, CENTCOM says",
       "decision": "MINT",
-      "amount_crbn": 67600,
-      "final_score": -5.26,
+      "amount_crbn": 7480000,
+      "final_score": -6.51,
       "confidence": 8,
-      "country": null,
-      "region": null,
-      "created_at": "2026-09-01T12:10:36.302769+00:00"
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-09-01T18:08:26.238558+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 28,
-        "negative": 196,
+        "negative": 198,
         "event_ids_positive": [
           7038,
           7034,
@@ -162141,6 +162187,8 @@
           6825
         ],
         "event_ids_negative": [
+          7043,
+          7042,
           7041,
           7040,
           7039,
@@ -162341,7 +162389,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 172,
+        "negative": 174,
         "event_ids_positive": [
           7020,
           7019,
@@ -162365,6 +162413,8 @@
           6825
         ],
         "event_ids_negative": [
+          7043,
+          7042,
           7041,
           7040,
           7039,
@@ -162541,12 +162591,13 @@
       },
       "ILO": {
         "positive": 2,
-        "negative": 25,
+        "negative": 26,
         "event_ids_positive": [
           7020,
           7018
         ],
         "event_ids_negative": [
+          7043,
           7039,
           7024,
           7011,
@@ -162576,7 +162627,7 @@
       },
       "CRC": {
         "positive": 8,
-        "negative": 55,
+        "negative": 56,
         "event_ids_positive": [
           7009,
           7005,
@@ -162588,6 +162639,7 @@
           6825
         ],
         "event_ids_negative": [
+          7043,
           7040,
           7039,
           7036,
@@ -162647,13 +162699,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           7038,
           7005,
           6941
         ],
         "event_ids_negative": [
+          7043,
           7039,
           7037,
           7036,
@@ -162845,11 +162898,11 @@
       "niche_pct": 75.6,
       "mainstream_pct": 24.4,
       "total_sources_used": 82,
-      "articles_processed": 229
+      "articles_processed": 231
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 229,
+      "total_events": 231,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -163056,10 +163109,11 @@
       },
       {
         "name": "Defense",
-        "count": 15,
+        "count": 16,
         "burn_count": 1,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          7043,
           7029,
           7024,
           7019,
@@ -163179,14 +163233,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 201,
+      "total_mint": 203,
       "direct_action": {
-        "count": 182,
-        "pct": 90.5
+        "count": 184,
+        "pct": 90.6
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 7.0
+        "pct": 6.9
       },
       "untyped": {
         "count": 5,
@@ -163194,9 +163248,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5032,
+      "total_mint": 5034,
       "direct_action": {
-        "count": 4176,
+        "count": 4178,
         "pct": 83.0
       },
       "editorial_alarm": {
@@ -163209,9 +163263,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 68,
-      "institutional": 161,
-      "citizen_ratio": 0.297,
+      "citizen": 69,
+      "institutional": 162,
+      "citizen_ratio": 0.299,
       "daily": [
         {
           "date": "2026-08-26",
@@ -163245,11 +163299,12 @@
         },
         {
           "date": "2026-09-01",
-          "citizen": 4,
-          "institutional": 19
+          "citizen": 5,
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
+        7043,
         7038,
         7028,
         7023,
@@ -163320,6 +163375,7 @@
         6813
       ],
       "event_ids_institutional": [
+        7042,
         7041,
         7040,
         7039,
