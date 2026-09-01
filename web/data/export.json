@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-09-01T22:07:32.183074+00:00",
-  "total_events": 7047,
-  "total_burned": 7883211755,
-  "total_minted": 9494106149,
+  "generated_at": "2026-09-01T23:06:56.561065+00:00",
+  "total_events": 7050,
+  "total_burned": 7889971755,
+  "total_minted": 9494731149,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7050,
+      "event_title": "Germany Blames Russia for Airport Drone Incident, Imposes Sanctions",
+      "event_url": "https://www.thelocal.de/20260901/germany-expected-to-blame-russia-for-airport-drone-incident",
+      "event_source": "The Local Germany (EN)",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -2.6,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Sanctions risk collective punishment and geopolitical escalation, outweighing security benefits. | The decision to impose sanctions addresses a concrete security threat but risks violating human rights principles by targeting a broad group without individualized evidence. The action may also exacerbate geopolitical tensions, potentially undermining global stability and cooperat",
+      "tx_hash": "UuEkNzN9LD32b1MjGjrAA8h1vTL4Vrszjb6MCB5EkvbNKvqUhQqFjbHUiAspXGR7HY6DmwjGCajJfDWm45CTUAm",
+      "created_at": "2026-09-01T23:06:52.183397+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Germany imposes sanctions and tightens entry rules in response to a security threat, reinforcing national security and deterring future attacks.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sanctions and entry restrictions targeting Russian nationals may lead to collective punishment, violating the principle of individual culpability under UDHR Article 14 (right to seek asylum) and Article 2 (non-discrimination).\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Escalation of geopolitical tensions could undermine international cooperation on climate action (SDG 13) and peace (SDG 16), with potential long-term destabilization.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 7049,
+      "event_title": "WHO Emergency Committee Temporary Recommendations on Ebola Bundibugyo Outbreak in DRC",
+      "event_url": "https://www.who.int/fr/news/item/24-08-2026-second-meeting-of-the-ihr-emergency-committee-on-the-epidemic-of-ebola-bundibugyo-virus-disease-in-the-democratic-republic-of-the-congo-temporary-recommendations",
+      "event_source": "WHO News (FR)",
+      "decision": "BURN",
+      "amount_crbn": 6760000,
+      "final_score": 6.15,
+      "confidence": 8,
+      "justification": "WHO's coordinated health measures are strongly positive despite modest economic side‑effects. | The WHO's emergency recommendations substantially advance public health and human right to health, outweighing the moderate economic disruptions they may cause. Overall the action is ethically positive.",
+      "tx_hash": "5EFbSXzsrGVp3tUAg9rz5dkEzqv4A6hcPFunzXWarbXUL4yeFKa5ZrKfyP1j34CAeSei1z62uWpVYLWhghLkp6Dp",
+      "created_at": "2026-09-01T23:06:50.011732+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"WHO issued temporary recommendations to strengthen surveillance, case management and safe burial practices for the Ebola Bundibugyo outbreak in the DRC.\", \"affected_sdgs\": [3, 6, 13], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The recommendations may lead to travel and trade restrictions that disrupt livelihoods and economic activity in affected regions.\", \"affected_sdgs\": [1, 8], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
+    {
+      "id": 7048,
+      "event_title": "L’Oniam, un meilleur recouvrement des créances, mais des indemnisations en hausse",
+      "event_url": "http://www.lequotidiendumedecin.fr/hopital/loniam-un-meilleur-recouvrement-des-creances-mais-des-indemnisations-en-hausse",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -1.43,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=1.000) from event #7040",
+      "tx_hash": null,
+      "created_at": "2026-09-01T23:04:00.797619+00:00",
+      "embedding": null,
+      "reused_from_event_id": 7040,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 7047,
       "event_title": "In the Serbian Republic of Bosnia, thousands pay tribute to Ratko Mladic, former military chief convicted of genocide",
@@ -162091,8 +162160,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 53,
-        "total_amount": 95041900
+        "count": 52,
+        "total_amount": 94541900
       },
       {
         "country": "Switzerland",
@@ -162165,8 +162234,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.115,
-        "events": 61
+        "burn_ratio": 0.117,
+        "events": 60
       }
     ],
     "top_regions_destructive": [
@@ -162182,8 +162251,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.885,
-        "events": 61
+        "mint_ratio": 0.883,
+        "events": 60
       },
       {
         "region": "Europe",
@@ -162229,8 +162298,8 @@
       },
       {
         "date": "2026-09-01",
-        "net_minted": 23291300,
-        "net_burned": 2550000
+        "net_minted": 23691300,
+        "net_burned": 9310000
       }
     ],
     "event_of_the_day": {
@@ -162246,9 +162315,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 29,
-        "negative": 192,
+        "positive": 30,
+        "negative": 191,
         "event_ids_positive": [
+          7049,
           7046,
           7038,
           7034,
@@ -162280,6 +162350,7 @@
           6825
         ],
         "event_ids_negative": [
+          7050,
           7047,
           7045,
           7044,
@@ -162469,15 +162540,14 @@
           6829,
           6828,
           6827,
-          6824,
-          6823,
-          6822
+          6824
         ]
       },
       "UDHR": {
-        "positive": 21,
-        "negative": 168,
+        "positive": 22,
+        "negative": 167,
         "event_ids_positive": [
+          7049,
           7046,
           7020,
           7019,
@@ -162501,6 +162571,7 @@
           6825
         ],
         "event_ids_negative": [
+          7050,
           7047,
           7045,
           7043,
@@ -162666,9 +162737,7 @@
           6829,
           6828,
           6827,
-          6824,
-          6823,
-          6822
+          6824
         ]
       },
       "ILO": {
@@ -162709,7 +162778,7 @@
       },
       "CRC": {
         "positive": 8,
-        "negative": 56,
+        "negative": 55,
         "event_ids_positive": [
           7009,
           7005,
@@ -162775,8 +162844,7 @@
           6848,
           6847,
           6841,
-          6829,
-          6822
+          6829
         ]
       },
       "UNDRIP": {
@@ -162969,9 +163037,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 75.3,
-      "mainstream_pct": 24.7,
-      "total_sources_used": 81,
+      "niche_pct": 75.6,
+      "mainstream_pct": 24.4,
+      "total_sources_used": 82,
       "articles_processed": 226
     },
     "cache_hit_rate_7d": {
@@ -163041,6 +163109,15 @@
         ]
       },
       {
+        "name": "WHO",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          7049
+        ]
+      },
+      {
         "name": "ICJ",
         "count": 1,
         "burn_count": 0,
@@ -163065,15 +163142,6 @@
         "mint_count": 1,
         "event_ids": [
           6906
-        ]
-      },
-      {
-        "name": "NATO",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          6872
         ]
       }
     ],
@@ -163279,14 +163347,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 29,
+      "total_burn": 30,
       "direct_action": {
-        "count": 26,
-        "pct": 89.7
+        "count": 27,
+        "pct": 90.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 10.3
+        "pct": 10.0
       },
       "untyped": {
         "count": 0,
@@ -163294,9 +163362,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2002,
+      "total_burn": 2003,
       "direct_action": {
-        "count": 1574,
+        "count": 1575,
         "pct": 78.6
       },
       "editorial_consciousness": {
@@ -163309,10 +163377,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 197,
+      "total_mint": 196,
       "direct_action": {
-        "count": 178,
-        "pct": 90.4
+        "count": 177,
+        "pct": 90.3
       },
       "editorial_alarm": {
         "count": 14,
@@ -163320,13 +163388,13 @@
       },
       "untyped": {
         "count": 5,
-        "pct": 2.5
+        "pct": 2.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5037,
+      "total_mint": 5038,
       "direct_action": {
-        "count": 4180,
+        "count": 4181,
         "pct": 83.0
       },
       "editorial_alarm": {
@@ -163376,7 +163444,7 @@
         {
           "date": "2026-09-01",
           "citizen": 7,
-          "institutional": 22
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -163451,6 +163519,8 @@
         6824
       ],
       "event_ids_institutional": [
+        7050,
+        7049,
         7047,
         7044,
         7042,
@@ -163605,9 +163675,7 @@
         6830,
         6828,
         6826,
-        6825,
-        6823,
-        6822
+        6825
       ]
     }
   }
