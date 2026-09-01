@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-01T07:07:09.865377+00:00",
-  "total_events": 7026,
+  "generated_at": "2026-09-01T08:07:25.473224+00:00",
+  "total_events": 7027,
   "total_burned": 7881861755,
-  "total_minted": 9473835449,
+  "total_minted": 9473968449,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7027,
+      "event_title": "Gary power outage underscores stakes of Solar for All cancellation",
+      "event_url": "https://www.canarymedia.com/articles/climate-crisis/gary-power-outage-solar-for-all",
+      "event_source": "Canary Media",
+      "decision": "MINT",
+      "amount_crbn": 133000,
+      "final_score": -2.53,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Cancellation reduces clean‑energy access for low‑income residents, outweighing awareness benefits. | The cancellation of Solar for All harms clean‑energy access and equity, outweighing the modest awareness benefit from media coverage. This net negative impact reduces progress on several SDGs and infringes on the right to an adequate standard of living.",
+      "tx_hash": "4XXjGSgr2bfSvq58Myvd1ELd8at58hoJfsycixwhsEErq42x5VPAGNbEcyKJjsDy8cgdCwUacn1vngydeR9tK7Cw",
+      "created_at": "2026-09-01T08:07:20.749346+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Canary Media article raises public awareness about the need for affordable clean energy after the Gary outage\", \"affected_sdgs\": [7, 11, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Cancellation of the Solar for All program removes planned low‑cost solar installations for low‑income households in Indiana, increasing reliance on fossil‑fuel electricity\", \"affected_sdgs\": [1, 7, 10, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 7026,
       "event_title": "'No action' against Chris Ellison, MinRes after regulator ends tax probe",
@@ -161608,8 +161631,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 55,
-        "total_amount": 93976100
+        "count": 56,
+        "total_amount": 94109100
       },
       {
         "country": "Australia",
@@ -161682,8 +161705,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.097,
-        "events": 62
+        "burn_ratio": 0.095,
+        "events": 63
       }
     ],
     "top_regions_destructive": [
@@ -161699,8 +161722,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.903,
-        "events": 62
+        "mint_ratio": 0.905,
+        "events": 63
       },
       {
         "region": "Europe",
@@ -161746,7 +161769,7 @@
       },
       {
         "date": "2026-09-01",
-        "net_minted": 3020600,
+        "net_minted": 3153600,
         "net_burned": 1200000
       }
     ],
@@ -161764,7 +161787,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 28,
-        "negative": 199,
+        "negative": 200,
         "event_ids_positive": [
           7020,
           7019,
@@ -161796,6 +161819,7 @@
           6801
         ],
         "event_ids_negative": [
+          7027,
           7026,
           7025,
           7024,
@@ -161999,7 +162023,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 176,
+        "negative": 177,
         "event_ids_positive": [
           7020,
           7019,
@@ -162024,6 +162048,7 @@
           6802
         ],
         "event_ids_negative": [
+          7027,
           7026,
           7025,
           7024,
@@ -162413,7 +162438,7 @@
       },
       "PB": {
         "positive": 10,
-        "negative": 77,
+        "negative": 78,
         "event_ids_positive": [
           7020,
           7018,
@@ -162427,6 +162452,7 @@
           6801
         ],
         "event_ids_negative": [
+          7027,
           7022,
           7016,
           7014,
@@ -162508,15 +162534,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 74.1,
-      "mainstream_pct": 25.9,
-      "total_sources_used": 81,
-      "articles_processed": 232
+      "niche_pct": 74.4,
+      "mainstream_pct": 25.6,
+      "total_sources_used": 82,
+      "articles_processed": 233
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 232,
-      "pct": 2.2
+      "total_events": 233,
+      "pct": 2.1
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -162612,10 +162638,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 33,
+        "count": 34,
         "burn_count": 2,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          7027,
           7022,
           7002,
           6999,
@@ -162838,24 +162865,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 204,
+      "total_mint": 205,
       "direct_action": {
-        "count": 184,
+        "count": 185,
         "pct": 90.2
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.4
+        "pct": 7.3
       },
       "untyped": {
         "count": 5,
-        "pct": 2.5
+        "pct": 2.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5019,
+      "total_mint": 5020,
       "direct_action": {
-        "count": 4163,
+        "count": 4164,
         "pct": 82.9
       },
       "editorial_alarm": {
@@ -162869,8 +162896,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 72,
-      "institutional": 160,
-      "citizen_ratio": 0.31,
+      "institutional": 161,
+      "citizen_ratio": 0.309,
       "daily": [
         {
           "date": "2026-08-26",
@@ -162905,7 +162932,7 @@
         {
           "date": "2026-09-01",
           "citizen": 2,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -162983,6 +163010,7 @@
         6800
       ],
       "event_ids_institutional": [
+        7027,
         7026,
         7025,
         7024,
