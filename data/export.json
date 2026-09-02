@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-02T09:11:01.557640+00:00",
-  "total_events": 7070,
+  "generated_at": "2026-09-02T10:09:57.816396+00:00",
+  "total_events": 7072,
   "total_burned": 7890996755,
-  "total_minted": 9534857549,
+  "total_minted": 9541827549,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7072,
+      "event_title": "Midsummer ditches plans for 200MW Swedish CIGS facility",
+      "event_url": "https://www.pv-tech.org/midsummer-ditches-plans-for-200mw-swedish-cigs-facility/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.77,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Cancellation of 200MW solar facility weakens clean energy infrastructure and climate action. | The decision to cancel the 200MW CIGS facility directly undermines SDGs 7 (Clean Energy), 8 (Decent Work), 9 (Industry & Infrastructure), and 13 (Climate Action). While the cancellation may reflect market or financial constraints, it represents a setback for domestic renewable ener",
+      "tx_hash": "3om32WgYiDmtRvTtxbfXt5SS88vYCgsiKsGWmJGxjvFpi5t145jw3oJQbfXDDXrW9zcZ1bU7aMmbVj1YWDqL3i6b",
+      "created_at": "2026-09-02T10:09:53.180918+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Abandonment of a 200MW solar cell manufacturing facility in Sweden, reducing domestic clean energy production capacity and potential job creation in the renewable sector.\", \"affected_sdgs\": [7, 8, 9, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 7071,
+      "event_title": "The U.S. Has Killed 227 Civilians in Boat Strikes During 'A Year of Murders'",
+      "event_url": "https://theintercept.com/2026/09/02/military-boat-strikes-killings-year/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 6670000,
+      "final_score": -3.45,
+      "confidence": 7,
+      "justification": "Civilian deaths from US boat strikes constitute a severe rights violation, resulting in a MINT decision. | The strikes represent a grave violation of human rights and health, outweighing any security rationale. No redeeming positive impact is evident, leading to a strongly negative ethical judgment.",
+      "tx_hash": "2sbPhGfYi8vEw9dJetMT8mGmYgynnuBH4o7xcp4uZpKxp9xmJuYqN6sUMbDmpV8XRzniYxyZxRnhy4v5dhUYGahp",
+      "created_at": "2026-09-02T10:09:50.992221+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US military boat strikes caused the deaths of 227 civilians, violating the right to life and harming health and safety.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 6\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 7070,
       "event_title": "Zelenskiy says Ukrainian drones have effectively closed Russian airspace",
@@ -162620,8 +162666,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 58,
-        "total_amount": 104667400
+        "count": 59,
+        "total_amount": 111337400
       },
       {
         "country": "Switzerland",
@@ -162689,8 +162735,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.14,
-        "events": 50
+        "burn_ratio": 0.143,
+        "events": 49
       },
       {
         "region": "North America",
@@ -162716,8 +162762,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.86,
-        "events": 50
+        "mint_ratio": 0.857,
+        "events": 49
       },
       {
         "region": "Latin America",
@@ -162758,7 +162804,7 @@
       },
       {
         "date": "2026-09-02",
-        "net_minted": 39522400,
+        "net_minted": 46492400,
         "net_burned": 1025000
       }
     ],
@@ -162776,7 +162822,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 30,
-        "negative": 199,
+        "negative": 198,
         "event_ids_positive": [
           7069,
           7066,
@@ -162810,6 +162856,8 @@
           6839
         ],
         "event_ids_negative": [
+          7072,
+          7071,
           7070,
           7068,
           7067,
@@ -163005,15 +163053,12 @@
           6842,
           6841,
           6840,
-          6838,
-          6837,
-          6836,
-          6835
+          6838
         ]
       },
       "UDHR": {
         "positive": 22,
-        "negative": 173,
+        "negative": 171,
         "event_ids_positive": [
           7069,
           7066,
@@ -163039,6 +163084,7 @@
           6844
         ],
         "event_ids_negative": [
+          7071,
           7070,
           7068,
           7067,
@@ -163208,15 +163254,12 @@
           6846,
           6843,
           6842,
-          6841,
-          6837,
-          6836,
-          6835
+          6841
         ]
       },
       "ILO": {
         "positive": 2,
-        "negative": 25,
+        "negative": 24,
         "event_ids_positive": [
           7020,
           7018
@@ -163245,13 +163288,12 @@
           6866,
           6853,
           6848,
-          6843,
-          6837
+          6843
         ]
       },
       "CRC": {
         "positive": 7,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           7066,
           7009,
@@ -163262,6 +163304,7 @@
           6845
         ],
         "event_ids_negative": [
+          7071,
           7065,
           7062,
           7058,
@@ -163426,7 +163469,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 72,
+        "negative": 71,
         "event_ids_positive": [
           7046,
           7038,
@@ -163512,8 +163555,7 @@
           6852,
           6851,
           6840,
-          6838,
-          6835
+          6838
         ]
       }
     },
@@ -163521,11 +163563,11 @@
       "niche_pct": 75.9,
       "mainstream_pct": 24.1,
       "total_sources_used": 83,
-      "articles_processed": 235
+      "articles_processed": 234
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 235,
+      "total_events": 234,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -163630,10 +163672,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 33,
+        "count": 34,
         "burn_count": 3,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          7072,
           7046,
           7045,
           7044,
@@ -163675,6 +163718,7 @@
         "burn_count": 4,
         "mint_count": 25,
         "event_ids": [
+          7072,
           7059,
           7051,
           7046,
@@ -163702,8 +163746,7 @@
           6861,
           6860,
           6857,
-          6845,
-          6835
+          6845
         ]
       },
       {
@@ -163761,10 +163804,11 @@
       },
       {
         "name": "Construction",
-        "count": 14,
+        "count": 15,
         "burn_count": 2,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          7072,
           7059,
           7017,
           7002,
@@ -163859,14 +163903,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 205,
+      "total_mint": 204,
       "direct_action": {
-        "count": 184,
-        "pct": 89.8
+        "count": 183,
+        "pct": 89.7
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.3
+        "pct": 7.4
       },
       "untyped": {
         "count": 6,
@@ -163874,9 +163918,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5056,
+      "total_mint": 5058,
       "direct_action": {
-        "count": 4196,
+        "count": 4198,
         "pct": 83.0
       },
       "editorial_alarm": {
@@ -163890,8 +163934,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 70,
-      "institutional": 165,
-      "citizen_ratio": 0.298,
+      "institutional": 164,
+      "citizen_ratio": 0.299,
       "daily": [
         {
           "date": "2026-08-27",
@@ -163926,7 +163970,7 @@
         {
           "date": "2026-09-02",
           "citizen": 6,
-          "institutional": 13
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -164002,6 +164046,8 @@
         6839
       ],
       "event_ids_institutional": [
+        7072,
+        7071,
         7069,
         7068,
         7067,
@@ -164163,10 +164209,7 @@
         6843,
         6842,
         6841,
-        6838,
-        6837,
-        6836,
-        6835
+        6838
       ]
     }
   }
