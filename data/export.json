@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-02T17:10:10.610232+00:00",
-  "total_events": 7085,
-  "total_burned": 7890996755,
-  "total_minted": 9558606149,
+  "generated_at": "2026-09-02T18:09:31.751412+00:00",
+  "total_events": 7087,
+  "total_burned": 7897996755,
+  "total_minted": 9558680949,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7087,
+      "event_title": "Invaders storm Indigenous Amazon land, threatening isolated people",
+      "event_url": "https://news.mongabay.com/2026/09/invaders-storm-indigenous-amazon-land-threatening-isolated-people/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 74800,
+      "final_score": -6.25,
+      "confidence": 8,
+      "justification": "Severe violation of Indigenous rights and environmental protections with irreversible potential harm. | The invasion constitutes a severe violation of Indigenous rights, environmental protections, and legal safeguards for uncontacted peoples. The direct threat to lives, cultural integrity, and ecological stability outweighs any speculative justifications for the encroachment. The erosion of institutional protections compounds the harm, making this a high-magnitude negative event.",
+      "tx_hash": "47odb7kAsbVFqRSeD2kiVqi6TxJrYW6EA5kfNgMFZX7fpFikWDt8ZgydNegJcyinYxjLtnzA4PbKCZrye1g6AbtN",
+      "created_at": "2026-09-02T18:09:26.811194+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Nearly 200 invaders forcibly entered Ituna/Itatá Indigenous Land, destroying Funai infrastructure, removing protective signage, and establishing camps in a territory designated for uncontacted Indigenous peoples, directly threatening their survival and autonomy.\", \"affected_sdgs\": [10, 11, 13, 15, 16], \"violated_rights\": [\"UNDRIP Articles 7, 8, 10, 25, 26, 29\", \"UDHR Articles 3, 17, 25\", \"CRC Article 30\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\", \"CRC\", \"Animal\", \"PB\"]}, {\"description\": \"The invasion undermines Brazil’s legal protections for Indigenous territories, eroding institutional trust and setting a precedent for further encroachment on protected lands.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UNDRIP Article 40\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 7480000
+    },
+    {
+      "id": 7086,
+      "event_title": "SCO takes landmark stand on nuclear security as Iran comes under renewed attack",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3366108/sco-takes-landmark-stand-nuclear-security-iran-comes-under-renewed-attack?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 2.18,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] SCO's institutional action strengthens global nuclear security norms and protections. | The SCO declaration represents a positive step in institutionalizing dialogue on nuclear safety and security, aligning with SDGs 16 and 17. However, its non-binding nature and potential to normalize nuclear programs in states with proliferation risks introduce ethical trade-offs. The net impa",
+      "tx_hash": "3dkpDyNmmVx1mrJCEhouMeFh54VKd2feZffuW19dKHmjx6X95dmRwvJFiBMcE9JuYXA3EWuNgPyv8WqkTeK9Qx43",
+      "created_at": "2026-09-02T18:09:24.652108+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"SCO issues first dedicated declaration on nuclear safety and security, condemning attacks on peaceful nuclear facilities and outlining practical cooperation among 10 member states.\", \"affected_sdgs\": [7, 9, 16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Declaration may implicitly legitimize nuclear energy programs of member states with questionable non-proliferation records (e.g., Iran, Pakistan), potentially undermining global non-proliferation norms.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Lacks binding enforcement mechanisms, reducing its practical impact on preventing attacks or ensuring compliance with nuclear safety standards.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7085,
       "event_title": "Senegal: Senegal and IMF Strike $2.2bn Deal, Two Years After Debt Scandal Froze Funding",
@@ -163024,8 +163070,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.176,
-        "events": 17
+        "burn_ratio": 0.167,
+        "events": 18
       },
       {
         "region": "Europe",
@@ -163103,8 +163149,8 @@
       },
       {
         "date": "2026-09-02",
-        "net_minted": 63271000,
-        "net_burned": 1025000
+        "net_minted": 63345800,
+        "net_burned": 8025000
       }
     ],
     "event_of_the_day": {
@@ -163120,9 +163166,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 27,
-        "negative": 200,
+        "positive": 28,
+        "negative": 201,
         "event_ids_positive": [
+          7086,
           7069,
           7066,
           7049,
@@ -163152,6 +163199,7 @@
           6857
         ],
         "event_ids_negative": [
+          7087,
           7085,
           7084,
           7083,
@@ -163356,7 +163404,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 176,
+        "negative": 177,
         "event_ids_positive": [
           7069,
           7066,
@@ -163380,6 +163428,7 @@
           6857
         ],
         "event_ids_negative": [
+          7087,
           7085,
           7084,
           7083,
@@ -163593,7 +163642,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           7066,
           7009,
@@ -163603,6 +163652,7 @@
           6871
         ],
         "event_ids_negative": [
+          7087,
           7080,
           7076,
           7073,
@@ -163665,7 +163715,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 56,
+        "negative": 57,
         "event_ids_positive": [
           7066,
           7038,
@@ -163673,6 +163723,7 @@
           6941
         ],
         "event_ids_negative": [
+          7087,
           7080,
           7074,
           7065,
@@ -163733,7 +163784,7 @@
       },
       "Animal": {
         "positive": 6,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           7069,
           7038,
@@ -163743,6 +163794,7 @@
           6870
         ],
         "event_ids_negative": [
+          7087,
           7074,
           7056,
           7053,
@@ -163765,7 +163817,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 69,
+        "negative": 70,
         "event_ids_positive": [
           7046,
           7038,
@@ -163780,6 +163832,7 @@
           6870
         ],
         "event_ids_negative": [
+          7087,
           7074,
           7068,
           7056,
@@ -163853,14 +163906,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 77.1,
-      "mainstream_pct": 22.9,
+      "niche_pct": 75.9,
+      "mainstream_pct": 24.1,
       "total_sources_used": 83,
-      "articles_processed": 233
+      "articles_processed": 235
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 233,
+      "total_events": 235,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -163966,10 +164019,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 34,
-        "burn_count": 3,
+        "count": 35,
+        "burn_count": 4,
         "mint_count": 31,
         "event_ids": [
+          7086,
           7074,
           7072,
           7046,
@@ -164071,6 +164125,30 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 16,
+        "burn_count": 2,
+        "mint_count": 14,
+        "event_ids": [
+          7087,
+          7082,
+          7066,
+          7045,
+          6995,
+          6962,
+          6944,
+          6917,
+          6902,
+          6889,
+          6885,
+          6884,
+          6877,
+          6873,
+          6869,
+          6864
+        ]
+      },
+      {
         "name": "Construction",
         "count": 15,
         "burn_count": 2,
@@ -164091,29 +164169,6 @@
           6879,
           6867,
           6858
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 15,
-        "burn_count": 2,
-        "mint_count": 13,
-        "event_ids": [
-          7082,
-          7066,
-          7045,
-          6995,
-          6962,
-          6944,
-          6917,
-          6902,
-          6889,
-          6885,
-          6884,
-          6877,
-          6873,
-          6869,
-          6864
         ]
       },
       {
@@ -164166,14 +164221,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 27,
+      "total_burn": 28,
       "direct_action": {
-        "count": 25,
-        "pct": 92.6
+        "count": 26,
+        "pct": 92.9
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 7.4
+        "pct": 7.1
       },
       "untyped": {
         "count": 0,
@@ -164181,9 +164236,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2005,
+      "total_burn": 2006,
       "direct_action": {
-        "count": 1577,
+        "count": 1578,
         "pct": 78.7
       },
       "editorial_consciousness": {
@@ -164196,14 +164251,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 206,
+      "total_mint": 207,
       "direct_action": {
         "count": 186,
-        "pct": 90.3
+        "pct": 89.9
       },
       "editorial_alarm": {
-        "count": 14,
-        "pct": 6.8
+        "count": 15,
+        "pct": 7.2
       },
       "untyped": {
         "count": 6,
@@ -164211,13 +164266,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5071,
+      "total_mint": 5072,
       "direct_action": {
         "count": 4211,
         "pct": 83.0
       },
       "editorial_alarm": {
-        "count": 308,
+        "count": 309,
         "pct": 6.1
       },
       "untyped": {
@@ -164226,9 +164281,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 69,
-      "institutional": 164,
-      "citizen_ratio": 0.296,
+      "citizen": 70,
+      "institutional": 165,
+      "citizen_ratio": 0.298,
       "daily": [
         {
           "date": "2026-08-27",
@@ -164262,11 +164317,12 @@
         },
         {
           "date": "2026-09-02",
-          "citizen": 9,
-          "institutional": 25
+          "citizen": 10,
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
+        7087,
         7081,
         7075,
         7073,
@@ -164338,6 +164394,7 @@
         6853
       ],
       "event_ids_institutional": [
+        7086,
         7085,
         7084,
         7083,
