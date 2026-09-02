@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-02T14:09:58.279966+00:00",
-  "total_events": 7080,
+  "generated_at": "2026-09-02T15:09:45.245965+00:00",
+  "total_events": 7082,
   "total_burned": 7890996755,
-  "total_minted": 9556410149,
+  "total_minted": 9557618149,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7082,
+      "event_title": "ICE Is Paying a Controversial AI Firm to Hide the Identities of Agents",
+      "event_url": "https://theintercept.com/2026/09/02/ice-ai-whistleblower-doxing-zerofox/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.37,
+      "confidence": 8,
+      "justification": "Deployment of AI tools lacking transparency risks enabling institutional impunity and whistleblower suppression. | While the protection of law enforcement personnel from doxing aligns with SDG 16 (Peace and Justice), the potential for this AI tool to be weaponized against whistleblowers and the absence of transparency or oversight constitute significant ethical violations. The negative aspects outweigh the positive, as they directly undermine core democratic principles and human rights framework",
+      "tx_hash": "Vqe9HvtjVvucfp8nhuGbwF6mV1NgWqBVkwDNk7nszQmu1qJcBFm7TExjxNEfR8GuHNJqnnUMH7Z7CMwmn5fShLQ",
+      "created_at": "2026-09-02T15:09:40.479656+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Implementation of AI tools to protect law enforcement personnel from doxing, potentially enhancing safety for agents performing their duties.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential misuse of AI technology to suppress whistleblowers, undermining transparency, accountability, and freedom of expression within a law enforcement agency.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of public oversight or regulatory framework for the deployment of AI tools in sensitive institutional contexts, risking systemic erosion of democratic checks and balances.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 7081,
+      "event_title": "Guinea-Bissau referendum tests democratic future",
+      "event_url": "https://www.dw.com/en/guinea-bissau-referendum-tests-democratic-future/a-78646043?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.51,
+      "confidence": 7,
+      "justification": "Constitutional power expansion undermines democratic safeguards, outweighing the positive of holding a referendum. | While the referendum demonstrated citizen participation, the resulting expansion of presidential authority erodes democratic safeguards and threatens fundamental political rights, leading to a net negative ethical assessment.",
+      "tx_hash": "49AFZAD1upGD6kgPgAh4wgvKqU6CpS39Jtsfsycv99YeETD85uAiYx3AgAKeNHKitd4omYKmAghxn39bvg6AXJXv",
+      "created_at": "2026-09-02T15:09:38.319961+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Guinea-Bissau",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Nationwide referendum allowed citizens to vote on a constitutional amendment\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Constitutional amendment expands presidential powers, weakening checks and democratic rights\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7080,
       "event_title": "India rejects Hague ruling on Indus waters: What's next?",
@@ -162850,8 +162896,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 58,
-        "total_amount": 111277000
+        "count": 59,
+        "total_amount": 111881000
       },
       {
         "country": "Switzerland",
@@ -162924,8 +162970,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.094,
-        "events": 64
+        "burn_ratio": 0.092,
+        "events": 65
       }
     ],
     "top_regions_destructive": [
@@ -162941,8 +162987,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.906,
-        "events": 64
+        "mint_ratio": 0.908,
+        "events": 65
       },
       {
         "region": "Africa",
@@ -162988,7 +163034,7 @@
       },
       {
         "date": "2026-09-02",
-        "net_minted": 61075000,
+        "net_minted": 62283000,
         "net_burned": 1025000
       }
     ],
@@ -163006,7 +163052,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 201,
+        "negative": 203,
         "event_ids_positive": [
           7069,
           7066,
@@ -163037,6 +163083,8 @@
           6857
         ],
         "event_ids_negative": [
+          7082,
+          7081,
           7080,
           7079,
           7078,
@@ -163242,7 +163290,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 176,
+        "negative": 178,
         "event_ids_positive": [
           7069,
           7066,
@@ -163266,6 +163314,8 @@
           6857
         ],
         "event_ids_negative": [
+          7082,
+          7081,
           7080,
           7079,
           7078,
@@ -163748,12 +163798,12 @@
       "niche_pct": 75.9,
       "mainstream_pct": 24.1,
       "total_sources_used": 83,
-      "articles_processed": 234
+      "articles_processed": 236
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 234,
-      "pct": 2.6
+      "total_events": 236,
+      "pct": 2.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -163962,10 +164012,11 @@
       },
       {
         "name": "Tech",
-        "count": 15,
+        "count": 16,
         "burn_count": 2,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          7082,
           7066,
           7045,
           6995,
@@ -164085,14 +164136,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 207,
+      "total_mint": 209,
       "direct_action": {
-        "count": 187,
-        "pct": 90.3
+        "count": 189,
+        "pct": 90.4
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.8
+        "pct": 6.7
       },
       "untyped": {
         "count": 6,
@@ -164100,9 +164151,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5066,
+      "total_mint": 5068,
       "direct_action": {
-        "count": 4206,
+        "count": 4208,
         "pct": 83.0
       },
       "editorial_alarm": {
@@ -164115,9 +164166,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 70,
-      "institutional": 164,
-      "citizen_ratio": 0.299,
+      "citizen": 71,
+      "institutional": 165,
+      "citizen_ratio": 0.301,
       "daily": [
         {
           "date": "2026-08-27",
@@ -164151,11 +164202,12 @@
         },
         {
           "date": "2026-09-02",
-          "citizen": 8,
-          "institutional": 21
+          "citizen": 9,
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
+        7081,
         7075,
         7073,
         7070,
@@ -164228,6 +164280,7 @@
         6846
       ],
       "event_ids_institutional": [
+        7082,
         7080,
         7079,
         7078,
