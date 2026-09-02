@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-02T08:08:39.450932+00:00",
-  "total_events": 7068,
-  "total_burned": 7890296755,
-  "total_minted": 9529447549,
+  "generated_at": "2026-09-02T09:11:01.557640+00:00",
+  "total_events": 7070,
+  "total_burned": 7890996755,
+  "total_minted": 9534857549,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7070,
+      "event_title": "Zelenskiy says Ukrainian drones have effectively closed Russian airspace",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/zelenskiy-says-ukrainian-drones-have-effectively-closed-russian-airspace",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.73,
+      "confidence": 7,
+      "justification": "Action risks escalating conflict and disrupting global civil aviation, outweighing defensive benefits. | The action prioritizes national defense and deterrence of military aggression, aligning with SDG 16 (Peace and Justice). However, it risks disrupting global civil aviation and escalating conflict, violating rights to freedom of movement and security. The net ethical judgment leans negative due to the broader systemic risks and potential for unintended harm to civilians and economic stability.",
+      "tx_hash": "3TFDZFG91oyCB1NJ45DCtquKZremeiyLYwxrpHFdu3T7DiFPANsgjKpCZx9ZAztuG7ws3sjhPRVkH8uCiT71kGr",
+      "created_at": "2026-09-02T09:10:56.628784+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Ukrainian government asserts defensive measures to deter military aggression by restricting Russian airspace, potentially reducing civilian casualties from military operations.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Warning to airlines and insurers may disrupt global civil aviation, affecting economic stability (SDG 8) and freedom of movement (UDHR Article 13).\", \"affected_sdgs\": [8, 9, 10], \"violated_rights\": [\"UDHR Article 13\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential escalation of conflict, increasing risks to civilian populations and infrastructure (SDG 16, UDHR Article 3).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 7069,
+      "event_title": "Government transfers investigation report of orca Toñi to Environmental Prosecutor's Office",
+      "event_url": "https://efeverde.com/gobierno-traslada-a-fiscalia-de-medio-ambiente-el-balance-de-investigacion-de-la-orca-toni/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action enforces wildlife protection via legal referral, punishing harm to protected species. | The transfer of the investigation report to the Environmental Prosecutor's Office is a positive step toward enforcing wildlife protection laws and upholding SDGs 14, 15, and 16. However, the delay in concrete legal outcomes and the underlying harm to biodiversity temper t",
+      "tx_hash": "2GEEatyQ1JMnEmtFuU7M94q94ZQMyiEbf5EC9F6Po2MiGc86ssRwiuq4h1kSc5FRouWDkvwtZoV8DT2rpbtE97Yz",
+      "created_at": "2026-09-02T09:10:54.483836+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Government transfers investigation report on the shooting of a protected orca to the Environmental Prosecutor's Office, signaling potential legal action against wildlife crime.\", \"affected_sdgs\": [14, 15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Delay in legal proceedings: the act of transferring the report does not guarantee immediate justice or protection for the species, leaving room for impunity.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"The incident itself (shooting of a protected orca) reflects ongoing threats to biodiversity, which the transfer does not directly address.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [\"Animal\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7068,
       "event_title": "Illegal gold mining rampant in Aceh: Forkopimda ultimatum ignored?",
@@ -162605,6 +162651,11 @@
         "total_amount": 6850000
       },
       {
+        "country": "Spain",
+        "count": 3,
+        "total_amount": 1582500
+      },
+      {
         "country": "Nepal",
         "count": 3,
         "total_amount": 1625000
@@ -162618,11 +162669,6 @@
         "country": "France",
         "count": 2,
         "total_amount": 1175000
-      },
-      {
-        "country": "Spain",
-        "count": 2,
-        "total_amount": 882500
       }
     ],
     "top_regions_sustainable": [
@@ -162643,7 +162689,7 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.12,
+        "burn_ratio": 0.14,
         "events": 50
       },
       {
@@ -162670,7 +162716,7 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.88,
+        "mint_ratio": 0.86,
         "events": 50
       },
       {
@@ -162712,8 +162758,8 @@
       },
       {
         "date": "2026-09-02",
-        "net_minted": 34112400,
-        "net_burned": 325000
+        "net_minted": 39522400,
+        "net_burned": 1025000
       }
     ],
     "event_of_the_day": {
@@ -162729,9 +162775,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 29,
+        "positive": 30,
         "negative": 199,
         "event_ids_positive": [
+          7069,
           7066,
           7049,
           7046,
@@ -162763,6 +162810,7 @@
           6839
         ],
         "event_ids_negative": [
+          7070,
           7068,
           7067,
           7065,
@@ -162960,14 +163008,14 @@
           6838,
           6837,
           6836,
-          6835,
-          6834
+          6835
         ]
       },
       "UDHR": {
-        "positive": 21,
+        "positive": 22,
         "negative": 173,
         "event_ids_positive": [
+          7069,
           7066,
           7049,
           7046,
@@ -162991,6 +163039,7 @@
           6844
         ],
         "event_ids_negative": [
+          7070,
           7068,
           7067,
           7065,
@@ -163162,8 +163211,7 @@
           6841,
           6837,
           6836,
-          6835,
-          6834
+          6835
         ]
       },
       "ILO": {
@@ -163343,9 +163391,10 @@
         ]
       },
       "Animal": {
-        "positive": 6,
+        "positive": 7,
         "negative": 19,
         "event_ids_positive": [
+          7069,
           7038,
           7034,
           6980,
@@ -163472,11 +163521,11 @@
       "niche_pct": 75.9,
       "mainstream_pct": 24.1,
       "total_sources_used": 83,
-      "articles_processed": 234
+      "articles_processed": 235
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 234,
+      "total_events": 235,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -163659,10 +163708,11 @@
       },
       {
         "name": "Defense",
-        "count": 20,
+        "count": 21,
         "burn_count": 1,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          7070,
           7067,
           7061,
           7058,
@@ -163779,14 +163829,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 29,
+      "total_burn": 30,
       "direct_action": {
-        "count": 26,
-        "pct": 89.7
+        "count": 27,
+        "pct": 90.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 10.3
+        "pct": 10.0
       },
       "untyped": {
         "count": 0,
@@ -163794,10 +163844,10 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2004,
+      "total_burn": 2005,
       "direct_action": {
-        "count": 1576,
-        "pct": 78.6
+        "count": 1577,
+        "pct": 78.7
       },
       "editorial_consciousness": {
         "count": 153,
@@ -163824,9 +163874,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5055,
+      "total_mint": 5056,
       "direct_action": {
-        "count": 4195,
+        "count": 4196,
         "pct": 83.0
       },
       "editorial_alarm": {
@@ -163839,9 +163889,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 69,
+      "citizen": 70,
       "institutional": 165,
-      "citizen_ratio": 0.295,
+      "citizen_ratio": 0.298,
       "daily": [
         {
           "date": "2026-08-27",
@@ -163875,11 +163925,12 @@
         },
         {
           "date": "2026-09-02",
-          "citizen": 5,
-          "institutional": 12
+          "citizen": 6,
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
+        7070,
         7066,
         7060,
         7054,
@@ -163951,6 +164002,7 @@
         6839
       ],
       "event_ids_institutional": [
+        7069,
         7068,
         7067,
         7065,
@@ -164114,8 +164166,7 @@
         6838,
         6837,
         6836,
-        6835,
-        6834
+        6835
       ]
     }
   }
