@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-03T05:09:06.804299+00:00",
-  "total_events": 7113,
+  "generated_at": "2026-09-03T06:09:17.221504+00:00",
+  "total_events": 7114,
   "total_burned": 7899371755,
-  "total_minted": 9582352149,
+  "total_minted": 9582502149,
   "pending_reviews": 1,
   "events": [
+    {
+      "id": 7114,
+      "event_title": "Ecuador: begins oversight process to assess how Environment Ministry controls Galápagos wildlife trafficking",
+      "event_url": "https://es.mongabay.com/2026/09/ecuador-inician-un-proceso-de-fiscalizacion-para-conocer-como-ambiente-controla-el-trafico-de-fauna-de-galapagos/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action to audit and correct prior failures in wildlife protection justifies BURN. | The oversight process represents a positive institutional response to address wildlife trafficking, aligning with biodiversity protection (SDGs 14/15) and justice (SDG 16). However, the need for oversight implies prior regulatory failures, which tempers the positive impact. The ",
+      "tx_hash": "4ryWHReUPt4viSnCH1MfuUdAq23e9M9zpaGKMmBNFazoSXTdCfjmKrtRo4oWxQd7DRn87tx18SaDbfifAqamaduk",
+      "created_at": "2026-09-03T06:09:10.627798+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ecuador",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Initiation of an oversight process by a named legislator to assess the Environment Ministry's control over wildlife trafficking in the Galápagos, a UNESCO World Heritage site and biodiversity hotspot.\", \"affected_sdgs\": [14, 15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The oversight process was triggered by a report exposing weaknesses in existing controls, suggesting prior institutional failure to adequately address wildlife trafficking.\", \"affected_sdgs\": [14, 15, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 46000
+    },
     {
       "id": 7113,
       "event_title": "Government offers small businesses a trust tax workaround",
@@ -163640,14 +163663,14 @@
         "total_amount": 5700000
       },
       {
-        "country": "Spain",
-        "count": 3,
-        "total_amount": 1582500
-      },
-      {
         "country": "Nepal",
         "count": 3,
         "total_amount": 1625000
+      },
+      {
+        "country": "Spain",
+        "count": 2,
+        "total_amount": 1225000
       },
       {
         "country": "Brazil",
@@ -163668,13 +163691,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.167,
-        "events": 18
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.1,
-        "events": 50
+        "burn_ratio": 0.158,
+        "events": 19
       },
       {
         "region": "Africa",
@@ -163685,6 +163703,11 @@
         "region": "North America",
         "burn_ratio": 0.095,
         "events": 63
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.082,
+        "events": 49
       }
     ],
     "top_regions_destructive": [
@@ -163699,14 +163722,14 @@
         "events": 13
       },
       {
+        "region": "Europe",
+        "mint_ratio": 0.918,
+        "events": 49
+      },
+      {
         "region": "North America",
         "mint_ratio": 0.905,
         "events": 63
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 0.9,
-        "events": 50
       },
       {
         "region": "Africa",
@@ -163747,7 +163770,7 @@
       },
       {
         "date": "2026-09-03",
-        "net_minted": 5069100,
+        "net_minted": 5219100,
         "net_burned": 150000
       }
     ],
@@ -163764,8 +163787,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 29,
-        "negative": 208,
+        "positive": 28,
+        "negative": 209,
         "event_ids_positive": [
           7110,
           7089,
@@ -163794,10 +163817,10 @@
           6941,
           6910,
           6901,
-          6871,
-          6870
+          6871
         ],
         "event_ids_negative": [
+          7114,
           7113,
           7112,
           7111,
@@ -164399,8 +164422,8 @@
         ]
       },
       "Animal": {
-        "positive": 8,
-        "negative": 18,
+        "positive": 7,
+        "negative": 19,
         "event_ids_positive": [
           7089,
           7088,
@@ -164408,10 +164431,10 @@
           7038,
           7034,
           6980,
-          6948,
-          6870
+          6948
         ],
         "event_ids_negative": [
+          7114,
           7107,
           7090,
           7087,
@@ -164433,8 +164456,8 @@
         ]
       },
       "PB": {
-        "positive": 13,
-        "negative": 73,
+        "positive": 12,
+        "negative": 74,
         "event_ids_positive": [
           7089,
           7088,
@@ -164447,10 +164470,10 @@
           6998,
           6980,
           6969,
-          6948,
-          6870
+          6948
         ],
         "event_ids_negative": [
+          7114,
           7109,
           7107,
           7097,
@@ -164528,9 +164551,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 72.3,
-      "mainstream_pct": 27.7,
-      "total_sources_used": 83,
+      "niche_pct": 72.0,
+      "mainstream_pct": 28.0,
+      "total_sources_used": 82,
       "articles_processed": 244
     },
     "cache_hit_rate_7d": {
@@ -164850,14 +164873,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 29,
+      "total_burn": 28,
       "direct_action": {
-        "count": 27,
-        "pct": 93.1
+        "count": 26,
+        "pct": 92.9
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 6.9
+        "pct": 7.1
       },
       "untyped": {
         "count": 0,
@@ -164880,33 +164903,33 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 215,
+      "total_mint": 216,
       "direct_action": {
         "count": 195,
-        "pct": 90.7
+        "pct": 90.3
       },
       "editorial_alarm": {
-        "count": 13,
-        "pct": 6.0
+        "count": 14,
+        "pct": 6.5
       },
       "untyped": {
         "count": 7,
-        "pct": 3.3
+        "pct": 3.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5096,
+      "total_mint": 5097,
       "direct_action": {
         "count": 4234,
         "pct": 83.1
       },
       "editorial_alarm": {
-        "count": 309,
+        "count": 310,
         "pct": 6.1
       },
       "untyped": {
         "count": 553,
-        "pct": 10.9
+        "pct": 10.8
       }
     },
     "citizen_vs_institutional_7d": {
@@ -164946,11 +164969,12 @@
         },
         {
           "date": "2026-09-03",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 11
         }
       ],
       "event_ids_citizen": [
+        7114,
         7110,
         7095,
         7090,
@@ -165019,8 +165043,7 @@
         6890,
         6887,
         6879,
-        6871,
-        6870
+        6871
       ],
       "event_ids_institutional": [
         7113,
