@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-04T10:09:06.962228+00:00",
-  "total_events": 7160,
-  "total_burned": 7902946755,
+  "generated_at": "2026-09-04T11:06:54.809760+00:00",
+  "total_events": 7161,
+  "total_burned": 7903646755,
   "total_minted": 9634970649,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7161,
+      "event_title": "Former Uber driver jailed for indecent assault of passenger",
+      "event_url": "https://www.abc.net.au/news/2026-09-04/former-uber-driver-jailed-for-indecently-assaulting-passenger/107116732",
+      "event_source": "ABC News Australia",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 1.61,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Court sentencing punishes the assault and upholds victim's rights, a protective institutional action. | The conviction and sentencing of the perpetrator is a positive enforcement of justice and deterrence for gender-based violence (SDG 5, 16; UDHR). However, the underlying assault and systemic safety failures in ride-sharing platforms highlight ongoing risks to women's rights an",
+      "tx_hash": "5Jy2LccEuFdU95Qf8Grc9WtPTXwH7CMyeiFWqezyoeoy69AA1N762XSGyY89riq4N2ooY29UDWfFw9gy5eEgyijt",
+      "created_at": "2026-09-04T11:06:47.716191+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Court convicts and sentences a perpetrator of sexual assault, enforcing legal consequences for gender-based violence.\", \"affected_sdgs\": [5, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The assault itself reflects a failure in systemic protections for passengers, particularly women, in ride-sharing services.\", \"affected_sdgs\": [5, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 19\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The incident underscores persistent gaps in corporate accountability (Uber) for safety measures, despite prior warnings.\", \"affected_sdgs\": [8, 16], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7160,
       "event_title": "Colombia Court Suspends Offensive Air Operations Over Child Recruits",
@@ -164736,9 +164759,9 @@
         "total_amount": 925000
       },
       {
-        "country": "United Kingdom",
+        "country": "Australia",
         "count": 1,
-        "total_amount": 500000
+        "total_amount": 700000
       }
     ],
     "top_regions_sustainable": [
@@ -164763,9 +164786,9 @@
         "events": 57
       },
       {
-        "region": "MENA",
-        "burn_ratio": 0.062,
-        "events": 16
+        "region": "Oceania",
+        "burn_ratio": 0.077,
+        "events": 13
       }
     ],
     "top_regions_destructive": [
@@ -164775,14 +164798,14 @@
         "events": 8
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 12
-      },
-      {
         "region": "MENA",
         "mint_ratio": 0.938,
         "events": 16
+      },
+      {
+        "region": "Oceania",
+        "mint_ratio": 0.923,
+        "events": 13
       },
       {
         "region": "Europe",
@@ -164829,7 +164852,7 @@
       {
         "date": "2026-09-04",
         "net_minted": 17184800,
-        "net_burned": 1400000
+        "net_burned": 2100000
       }
     ],
     "event_of_the_day": {
@@ -164845,9 +164868,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 31,
+        "positive": 32,
         "negative": 208,
         "event_ids_positive": [
+          7161,
           7154,
           7152,
           7137,
@@ -165092,9 +165116,10 @@
         ]
       },
       "UDHR": {
-        "positive": 22,
+        "positive": 23,
         "negative": 183,
         "event_ids_positive": [
+          7161,
           7154,
           7152,
           7129,
@@ -165305,9 +165330,10 @@
         ]
       },
       "ILO": {
-        "positive": 2,
+        "positive": 3,
         "negative": 27,
         "event_ids_positive": [
+          7161,
           7020,
           7018
         ],
@@ -165342,9 +165368,10 @@
         ]
       },
       "CRC": {
-        "positive": 6,
+        "positive": 7,
         "negative": 63,
         "event_ids_positive": [
+          7161,
           7110,
           7066,
           7009,
@@ -165640,11 +165667,11 @@
       "niche_pct": 69.1,
       "mainstream_pct": 30.9,
       "total_sources_used": 81,
-      "articles_processed": 245
+      "articles_processed": 246
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 245,
+      "total_events": 246,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -165864,10 +165891,11 @@
       },
       {
         "name": "Tech",
-        "count": 12,
-        "burn_count": 2,
+        "count": 13,
+        "burn_count": 3,
         "mint_count": 10,
         "event_ids": [
+          7161,
           7119,
           7102,
           7093,
@@ -165956,14 +165984,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 31,
+      "total_burn": 32,
       "direct_action": {
-        "count": 29,
-        "pct": 93.5
+        "count": 30,
+        "pct": 93.8
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 6.5
+        "pct": 6.2
       },
       "untyped": {
         "count": 0,
@@ -165971,9 +165999,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2015,
+      "total_burn": 2016,
       "direct_action": {
-        "count": 1587,
+        "count": 1588,
         "pct": 78.8
       },
       "editorial_consciousness": {
@@ -166017,8 +166045,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 73,
-      "institutional": 172,
-      "citizen_ratio": 0.298,
+      "institutional": 173,
+      "citizen_ratio": 0.297,
       "daily": [
         {
           "date": "2026-08-29",
@@ -166053,7 +166081,7 @@
         {
           "date": "2026-09-04",
           "citizen": 3,
-          "institutional": 12
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -166132,6 +166160,7 @@
         6916
       ],
       "event_ids_institutional": [
+        7161,
         7160,
         7159,
         7158,
