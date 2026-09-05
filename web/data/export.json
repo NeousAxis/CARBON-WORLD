@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-05T05:06:12.381765+00:00",
-  "total_events": 7195,
-  "total_burned": 7905346755,
+  "generated_at": "2026-09-05T06:06:51.296098+00:00",
+  "total_events": 7196,
+  "total_burned": 7906046755,
   "total_minted": 9685566149,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7196,
+      "event_title": "Hungary poised to rejoin flagship EU research program",
+      "event_url": "https://www.politico.eu/article/hungary-poised-to-rejoin-flagship-eu-research-program/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 2.24,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Funding reentry enables research but risks legitimizing a regime with rule‑of‑law violations, potentially weakening protections. | Rejoining Horizon Europe is a net positive for scientific collaboration, education, and innovation (SDGs 4, 9, 17), but the underlying rule-of-law issues that led to Hungary's exclusion remain unresolved. The action restores funding but does not addr",
+      "tx_hash": "tp4PbpoJ9oQzTqYAb2maeC1K6sAQTpm7KWG8GjJX7d3rksMFaJRPxSQnSTRjNx3WBRobV97Sky3QowUEH8AFBqg",
+      "created_at": "2026-09-05T06:06:46.101622+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Hungary",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Hungary rejoins Horizon Europe, restoring access to EU research funding for Hungarian scientists and institutions, enabling collaboration, innovation, and knowledge sharing across Europe.\", \"affected_sdgs\": [4, 9, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rejoining follows prior exclusion due to Hungary's rule-of-law concerns, which may persist and could undermine the integrity of research governance and academic freedom.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 541000
+    },
     {
       "id": 7195,
       "event_title": "Faye government faces deeper Moody’s Caa2 downgrade as Senegal economy oil cash meets hidden debt bill",
@@ -165495,8 +165518,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 57,
-        "total_amount": 78935000
+        "count": 56,
+        "total_amount": 78331000
       },
       {
         "country": "France",
@@ -165526,6 +165549,11 @@
         "total_amount": 6200000
       },
       {
+        "country": "Hungary",
+        "count": 2,
+        "total_amount": 1175000
+      },
+      {
         "country": "Spain",
         "count": 2,
         "total_amount": 1225000
@@ -165536,11 +165564,6 @@
         "total_amount": 750000
       },
       {
-        "country": "Nepal",
-        "count": 2,
-        "total_amount": 925000
-      },
-      {
         "country": "Poland",
         "count": 1,
         "total_amount": 700000
@@ -165549,8 +165572,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.267,
-        "events": 15
+        "burn_ratio": 0.214,
+        "events": 14
       },
       {
         "region": "Latin America",
@@ -165559,13 +165582,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.117,
-        "events": 60
+        "burn_ratio": 0.131,
+        "events": 61
       },
       {
         "region": "North America",
-        "burn_ratio": 0.109,
-        "events": 64
+        "burn_ratio": 0.111,
+        "events": 63
       },
       {
         "region": "Oceania",
@@ -165591,13 +165614,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.891,
-        "events": 64
+        "mint_ratio": 0.889,
+        "events": 63
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.883,
-        "events": 60
+        "mint_ratio": 0.869,
+        "events": 61
       }
     ],
     "supply_trend_7d": [
@@ -165634,7 +165657,7 @@
       {
         "date": "2026-09-05",
         "net_minted": 1881400,
-        "net_burned": 0
+        "net_burned": 700000
       }
     ],
     "event_of_the_day": {
@@ -165651,8 +165674,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 215,
+        "negative": 214,
         "event_ids_positive": [
+          7196,
           7180,
           7173,
           7161,
@@ -165685,8 +165709,7 @@
           6969,
           6961,
           6948,
-          6944,
-          6941
+          6944
         ],
         "event_ids_negative": [
           7195,
@@ -165902,14 +165925,14 @@
           6947,
           6946,
           6945,
-          6943,
-          6942
+          6943
         ]
       },
       "UDHR": {
         "positive": 24,
-        "negative": 191,
+        "negative": 190,
         "event_ids_positive": [
+          7196,
           7180,
           7161,
           7154,
@@ -165932,8 +165955,7 @@
           6969,
           6961,
           6948,
-          6944,
-          6941
+          6944
         ],
         "event_ids_negative": [
           7195,
@@ -166125,8 +166147,7 @@
           6949,
           6947,
           6945,
-          6943,
-          6942
+          6943
         ]
       },
       "ILO": {
@@ -166254,7 +166275,7 @@
         ]
       },
       "UNDRIP": {
-        "positive": 7,
+        "positive": 6,
         "negative": 68,
         "event_ids_positive": [
           7152,
@@ -166262,8 +166283,7 @@
           7089,
           7066,
           7038,
-          7005,
-          6941
+          7005
         ],
         "event_ids_negative": [
           7194,
@@ -166473,24 +166493,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.4,
-      "mainstream_pct": 29.6,
-      "total_sources_used": 81,
-      "articles_processed": 255
+      "niche_pct": 70.7,
+      "mainstream_pct": 29.3,
+      "total_sources_used": 82,
+      "articles_processed": 254
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 255,
+      "total_events": 254,
       "pct": 2.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 19,
-        "burn_count": 2,
+        "count": 20,
+        "burn_count": 3,
         "mint_count": 17,
         "event_ids": [
+          7196,
           7172,
           7171,
           7170,
@@ -166588,10 +166609,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 35,
-        "burn_count": 4,
+        "count": 36,
+        "burn_count": 5,
         "mint_count": 31,
         "event_ids": [
+          7196,
           7180,
           7179,
           7177,
@@ -166747,8 +166769,8 @@
       },
       {
         "name": "Water",
-        "count": 12,
-        "burn_count": 3,
+        "count": 11,
+        "burn_count": 2,
         "mint_count": 9,
         "event_ids": [
           7183,
@@ -166761,14 +166783,13 @@
           7080,
           7006,
           6982,
-          6959,
-          6941
+          6959
         ]
       },
       {
         "name": "Agriculture",
-        "count": 11,
-        "burn_count": 1,
+        "count": 10,
+        "burn_count": 0,
         "mint_count": 10,
         "event_ids": [
           7186,
@@ -166780,8 +166801,7 @@
           7097,
           7092,
           7076,
-          7048,
-          6941
+          7048
         ]
       },
       {
@@ -166818,9 +166838,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2018,
+      "total_burn": 2019,
       "direct_action": {
-        "count": 1590,
+        "count": 1591,
         "pct": 78.8
       },
       "editorial_consciousness": {
@@ -166833,14 +166853,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 221,
+      "total_mint": 220,
       "direct_action": {
-        "count": 201,
-        "pct": 91.0
+        "count": 200,
+        "pct": 90.9
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.3
+        "pct": 6.4
       },
       "untyped": {
         "count": 6,
@@ -166863,9 +166883,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 71,
-      "institutional": 184,
-      "citizen_ratio": 0.278,
+      "citizen": 69,
+      "institutional": 185,
+      "citizen_ratio": 0.272,
       "daily": [
         {
           "date": "2026-08-30",
@@ -166900,7 +166920,7 @@
         {
           "date": "2026-09-05",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -166972,11 +166992,10 @@
         6951,
         6948,
         6947,
-        6946,
-        6942,
-        6941
+        6946
       ],
       "event_ids_institutional": [
+        7196,
         7195,
         7192,
         7190,
