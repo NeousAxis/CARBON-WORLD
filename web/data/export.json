@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-05T10:08:03.614971+00:00",
-  "total_events": 7198,
+  "generated_at": "2026-09-05T11:07:40.087427+00:00",
+  "total_events": 7199,
   "total_burned": 7906404255,
-  "total_minted": 9686170149,
+  "total_minted": 9686846149,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7199,
+      "event_title": "Brazil authorizes drilling of three additional oil wells off the Amazon coast",
+      "event_url": "https://efeverde.com/brasil-autoriza-la-perforacion-de-tres-pozos-petroleros-mas-frente-a-la-costa-amazonica/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -4.51,
+      "confidence": 8,
+      "justification": "Approval of oil drilling in the Amazon coast undermines climate and biodiversity goals, violating multiple ethical frameworks. | The authorization of additional oil wells in the Amazon coast represents a significant setback for climate and biodiversity goals, directly violating multiple SDGs and human rights frameworks. While the involvement of Ibama suggests some regulatory oversight, the net ethical impact is overwhelmingly negative due to the irreversible harm to ecosystems and communities. T",
+      "tx_hash": "3aSUL4iT3ToRANPQBg92r7uXDedjufSEGmuR9peKuWHzsx26A5dt8Hh7LRxxUezxKL3449XYNZxc5SGWF3KW5mak",
+      "created_at": "2026-09-05T11:07:34.983230+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Authorization process involved a technical review by Ibama, a government environmental agency, ensuring some regulatory oversight.\", \"affected_sdgs\": [7, 8, 9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Approval of three additional oil wells in the Amazon coast increases fossil fuel extraction, directly undermining climate action (SDG 13) and threatening biodiversity (SDG 14, 15).\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 3 (right to life via environmental degradation)\", \"UNDRIP (indigenous rights to land and resources)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}, {\"description\": \"Expansion of oil drilling in ecologically sensitive areas risks long-term environmental damage, including ocean acidification and biodiversity loss, violating planetary boundaries.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential displacement or disruption of indigenous and local communities dependent on Amazon ecosystems, violating their rights to land and livelihoods.\", \"affected_sdgs\": [1, 2, 10], \"violated_rights\": [\"UNDRIP\", \"UDHR Article 25 (standard of living)\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7198,
       "event_title": "Two senior Reform UK officials resign as Farage faces fresh foreign donations scandal",
@@ -165618,13 +165641,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.214,
-        "events": 14
+        "burn_ratio": 0.231,
+        "events": 13
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.143,
-        "events": 21
+        "burn_ratio": 0.136,
+        "events": 22
       },
       {
         "region": "Europe",
@@ -165702,7 +165725,7 @@
       },
       {
         "date": "2026-09-05",
-        "net_minted": 2485400,
+        "net_minted": 3161400,
         "net_burned": 1057500
       }
     ],
@@ -165757,6 +165780,7 @@
           6961
         ],
         "event_ids_negative": [
+          7199,
           7198,
           7195,
           7194,
@@ -165966,8 +165990,7 @@
           6953,
           6952,
           6951,
-          6950,
-          6949
+          6950
         ]
       },
       "UDHR": {
@@ -165999,6 +166022,7 @@
           6961
         ],
         "event_ids_negative": [
+          7199,
           7198,
           7195,
           7193,
@@ -166185,13 +166209,12 @@
           6953,
           6952,
           6951,
-          6950,
-          6949
+          6950
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 29,
+        "negative": 28,
         "event_ids_positive": [
           7161,
           7020,
@@ -166225,8 +166248,7 @@
           6972,
           6965,
           6963,
-          6960,
-          6949
+          6960
         ]
       },
       "CRC": {
@@ -166314,7 +166336,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 67,
+        "negative": 68,
         "event_ids_positive": [
           7152,
           7125,
@@ -166324,6 +166346,7 @@
           7005
         ],
         "event_ids_negative": [
+          7199,
           7194,
           7193,
           7191,
@@ -166436,7 +166459,7 @@
       },
       "PB": {
         "positive": 17,
-        "negative": 66,
+        "negative": 67,
         "event_ids_positive": [
           7197,
           7180,
@@ -166457,6 +166480,7 @@
           6969
         ],
         "event_ids_negative": [
+          7199,
           7194,
           7193,
           7191,
@@ -166603,16 +166627,6 @@
         ]
       },
       {
-        "name": "ILO",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          6994,
-          6949
-        ]
-      },
-      {
         "name": "OAS",
         "count": 1,
         "burn_count": 1,
@@ -166637,6 +166651,15 @@
         "mint_count": 1,
         "event_ids": [
           7007
+        ]
+      },
+      {
+        "name": "ILO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          6994
         ]
       }
     ],
@@ -166688,10 +166711,11 @@
       },
       {
         "name": "Energy",
-        "count": 32,
+        "count": 33,
         "burn_count": 6,
-        "mint_count": 26,
+        "mint_count": 27,
         "event_ids": [
+          7199,
           7195,
           7188,
           7173,
@@ -166728,9 +166752,9 @@
       },
       {
         "name": "Defense",
-        "count": 22,
+        "count": 21,
         "burn_count": 1,
-        "mint_count": 21,
+        "mint_count": 20,
         "event_ids": [
           7187,
           7176,
@@ -166752,16 +166776,16 @@
           7010,
           6992,
           6990,
-          6983,
-          6949
+          6983
         ]
       },
       {
         "name": "Tech",
-        "count": 15,
+        "count": 16,
         "burn_count": 2,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          7199,
           7189,
           7188,
           7176,
@@ -166900,9 +166924,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5170,
+      "total_mint": 5171,
       "direct_action": {
-        "count": 4301,
+        "count": 4302,
         "pct": 83.2
       },
       "editorial_alarm": {
@@ -166952,7 +166976,7 @@
         {
           "date": "2026-09-05",
           "citizen": 3,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -167025,6 +167049,7 @@
         6951
       ],
       "event_ids_institutional": [
+        7199,
         7198,
         7196,
         7195,
@@ -167206,8 +167231,7 @@
         6956,
         6955,
         6954,
-        6950,
-        6949
+        6950
       ]
     }
   }
