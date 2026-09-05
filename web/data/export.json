@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-05T12:07:55.094861+00:00",
-  "total_events": 7201,
-  "total_burned": 7906404255,
+  "generated_at": "2026-09-05T14:07:13.695751+00:00",
+  "total_events": 7202,
+  "total_burned": 7906904255,
   "total_minted": 9687687149,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7202,
+      "event_title": "The Rhône Glacier Cave Under Scrutiny",
+      "event_url": "https://www.letemps.ch/articles/la-grotte-du-glacier-du-rhone-sur-la-sellette",
+      "event_source": "Le Temps (CH)",
+      "decision": "BURN",
+      "amount_crbn": 500000,
+      "final_score": 3.45,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Cantonal order to close and restore the glacier cave punishes unauthorized exploitation and protects environmental rights. | The decision to halt unauthorized exploitation of the Rhône Glacier cave is a significant environmental protection measure, directly supporting climate action (SDG 13) and ecosystem preservation (SDGs 14, 15). It reflects both institutional enforcement of ",
+      "tx_hash": "cCpKj3haua1ca2qoNkdWXVf5BvjqExLjfqjB5BtQvWPKktEpE7gEQg14Xs531kTWvrziyzPiFxWonLEdTdx8Cks",
+      "created_at": "2026-09-05T14:07:07.960936+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Canton government orders cessation of unauthorized tourist exploitation of Rhône Glacier cave and mandates site restoration, halting physical alterations to a protected glacial zone.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Decision aligns with a citizen petition signed by over 10,000 people demanding glacier protection and removal of the tourist cave.\", \"affected_sdgs\": [13, 16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Enforces national protection status for alluvial plains, preventing further degradation of a fragile ecosystem.\", \"affected_sdgs\": [15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Immediate economic impact on local tourism operator and potential job losses in a regional economy reliant on glacier visits.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of transitional support or compensation for the operator, raising concerns about procedural fairness.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 17\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7201,
       "event_title": "Claudia Sheinbaum Wants to Ban Dual Citizens From Office to Shield Mexico From Trump",
@@ -165638,8 +165661,8 @@
       },
       {
         "country": "France",
-        "count": 13,
-        "total_amount": 4406000
+        "count": 12,
+        "total_amount": 4391000
       },
       {
         "country": "Australia",
@@ -165679,9 +165702,9 @@
         "total_amount": 750000
       },
       {
-        "country": "Indonesia",
+        "country": "Switzerland",
         "count": 1,
-        "total_amount": 357500
+        "total_amount": 500000
       }
     ],
     "top_regions_sustainable": [
@@ -165697,7 +165720,7 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.117,
+        "burn_ratio": 0.133,
         "events": 60
       },
       {
@@ -165734,7 +165757,7 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.883,
+        "mint_ratio": 0.867,
         "events": 60
       }
     ],
@@ -165772,7 +165795,7 @@
       {
         "date": "2026-09-05",
         "net_minted": 4002400,
-        "net_burned": 1057500
+        "net_burned": 1557500
       }
     ],
     "event_of_the_day": {
@@ -165788,9 +165811,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 33,
-        "negative": 213,
+        "positive": 34,
+        "negative": 212,
         "event_ids_positive": [
+          7202,
           7197,
           7196,
           7180,
@@ -166037,14 +166061,14 @@
           6954,
           6953,
           6952,
-          6951,
-          6950
+          6951
         ]
       },
       "UDHR": {
-        "positive": 23,
-        "negative": 190,
+        "positive": 24,
+        "negative": 189,
         "event_ids_positive": [
+          7202,
           7197,
           7196,
           7180,
@@ -166258,8 +166282,7 @@
           6954,
           6953,
           6952,
-          6951,
-          6950
+          6951
         ]
       },
       "ILO": {
@@ -166511,9 +166534,10 @@
         ]
       },
       "PB": {
-        "positive": 17,
+        "positive": 18,
         "negative": 67,
         "event_ids_positive": [
+          7202,
           7197,
           7180,
           7173,
@@ -166857,6 +166881,26 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 12,
+        "burn_count": 3,
+        "mint_count": 9,
+        "event_ids": [
+          7202,
+          7183,
+          7182,
+          7173,
+          7159,
+          7155,
+          7146,
+          7100,
+          7080,
+          7006,
+          6982,
+          6959
+        ]
+      },
+      {
         "name": "Construction",
         "count": 12,
         "burn_count": 1,
@@ -166874,25 +166918,6 @@
           6966,
           6962,
           6951
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 11,
-        "burn_count": 2,
-        "mint_count": 9,
-        "event_ids": [
-          7183,
-          7182,
-          7173,
-          7159,
-          7155,
-          7146,
-          7100,
-          7080,
-          7006,
-          6982,
-          6959
         ]
       },
       {
@@ -166932,14 +166957,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 33,
+      "total_burn": 34,
       "direct_action": {
-        "count": 31,
-        "pct": 93.9
+        "count": 32,
+        "pct": 94.1
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 6.1
+        "pct": 5.9
       },
       "untyped": {
         "count": 0,
@@ -166947,9 +166972,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2020,
+      "total_burn": 2021,
       "direct_action": {
-        "count": 1592,
+        "count": 1593,
         "pct": 78.8
       },
       "editorial_consciousness": {
@@ -166962,18 +166987,18 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 219,
+      "total_mint": 218,
       "direct_action": {
-        "count": 200,
+        "count": 199,
         "pct": 91.3
       },
       "editorial_alarm": {
         "count": 13,
-        "pct": 5.9
+        "pct": 6.0
       },
       "untyped": {
         "count": 6,
-        "pct": 2.7
+        "pct": 2.8
       }
     },
     "mint_composition_all_time": {
@@ -167029,7 +167054,7 @@
         {
           "date": "2026-09-05",
           "citizen": 4,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -167103,6 +167128,7 @@
         6951
       ],
       "event_ids_institutional": [
+        7202,
         7200,
         7199,
         7198,
@@ -167285,8 +167311,7 @@
         6958,
         6956,
         6955,
-        6954,
-        6950
+        6954
       ]
     }
   }
