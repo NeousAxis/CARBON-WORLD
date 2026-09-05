@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-05T22:07:29.631029+00:00",
-  "total_events": 7211,
+  "generated_at": "2026-09-05T23:07:06.459305+00:00",
+  "total_events": 7212,
   "total_burned": 7906904255,
-  "total_minted": 9698727949,
+  "total_minted": 9698877949,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7212,
+      "event_title": "National promises wider access to low-deposit home loans if re-elected",
+      "event_url": "https://www.rnz.co.nz/news/political/1269949/national-promises-wider-access-to-low-deposit-home-loans-if-re-elected",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.05,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Policy enables systemic risk via relaxed lending, outweighing housing access gains. | The policy expands housing access (SDGs 1, 10, 11) but risks financial instability and market distortions. The lack of safeguards for vulnerable groups undermines its equity goals. Net impact leans negative due to systemic risks outweighing short-term benefits.",
+      "tx_hash": "2Y74QmSg3rDR3e2baGGfALtSAuDb3gAd4pZrkF2XQMBAfdE1pcXQHNLRkWGPnpEFGBm2CNdbUn4y5TFYMASbFJGC",
+      "created_at": "2026-09-05T23:06:58.983936+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Expands access to home ownership for low- and middle-income households, reducing financial barriers to housing.\", \"affected_sdgs\": [1, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increases household debt exposure, potentially raising financial instability risks and housing market speculation.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lacks safeguards to prevent displacement of vulnerable groups if housing prices rise due to increased demand.\", \"affected_sdgs\": [1, 10, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 7211,
       "event_title": "Proposal to pump 70 million litres of treated wastewater into Parramatta River",
@@ -165863,8 +165886,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 57,
-        "total_amount": 79255400
+        "count": 56,
+        "total_amount": 79187800
       },
       {
         "country": "Australia",
@@ -165883,8 +165906,8 @@
       },
       {
         "country": "Argentina",
-        "count": 8,
-        "total_amount": 9293600
+        "count": 7,
+        "total_amount": 8693600
       }
     ],
     "top_countries_burn": [
@@ -165927,18 +165950,18 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.13,
-        "events": 23
+        "burn_ratio": 0.136,
+        "events": 22
       },
       {
         "region": "North America",
-        "burn_ratio": 0.108,
-        "events": 65
+        "burn_ratio": 0.109,
+        "events": 64
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.071,
-        "events": 14
+        "burn_ratio": 0.067,
+        "events": 15
       }
     ],
     "top_regions_destructive": [
@@ -165954,18 +165977,18 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.929,
-        "events": 14
+        "mint_ratio": 0.933,
+        "events": 15
       },
       {
         "region": "North America",
-        "mint_ratio": 0.892,
-        "events": 65
+        "mint_ratio": 0.891,
+        "events": 64
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.87,
-        "events": 23
+        "mint_ratio": 0.864,
+        "events": 22
       }
     ],
     "supply_trend_7d": [
@@ -166001,7 +166024,7 @@
       },
       {
         "date": "2026-09-05",
-        "net_minted": 15043200,
+        "net_minted": 15193200,
         "net_burned": 1557500
       }
     ],
@@ -166019,7 +166042,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 213,
+        "negative": 212,
         "event_ids_positive": [
           7202,
           7197,
@@ -166057,6 +166080,7 @@
           6961
         ],
         "event_ids_negative": [
+          7212,
           7211,
           7210,
           7209,
@@ -166267,9 +166291,7 @@
           6965,
           6964,
           6963,
-          6962,
-          6960,
-          6959
+          6962
         ]
       },
       "UDHR": {
@@ -166302,6 +166324,7 @@
           6961
         ],
         "event_ids_negative": [
+          7212,
           7211,
           7210,
           7209,
@@ -166490,13 +166513,12 @@
           6965,
           6964,
           6963,
-          6962,
-          6960
+          6962
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 30,
+        "negative": 29,
         "event_ids_positive": [
           7161,
           7020,
@@ -166531,8 +166553,7 @@
           6973,
           6972,
           6965,
-          6963,
-          6960
+          6963
         ]
       },
       "CRC": {
@@ -166750,7 +166771,7 @@
       },
       "PB": {
         "positive": 18,
-        "negative": 69,
+        "negative": 68,
         "event_ids_positive": [
           7202,
           7197,
@@ -166839,8 +166860,7 @@
           6970,
           6967,
           6966,
-          6962,
-          6959
+          6962
         ]
       }
     },
@@ -166848,11 +166868,11 @@
       "niche_pct": 67.9,
       "mainstream_pct": 32.1,
       "total_sources_used": 78,
-      "articles_processed": 253
+      "articles_processed": 252
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 253,
+      "total_events": 252,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -166960,10 +166980,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 37,
+        "count": 38,
         "burn_count": 5,
-        "mint_count": 32,
+        "mint_count": 33,
         "event_ids": [
+          7212,
           7206,
           7205,
           7198,
@@ -167005,9 +167026,9 @@
       },
       {
         "name": "Energy",
-        "count": 32,
+        "count": 31,
         "burn_count": 6,
-        "mint_count": 26,
+        "mint_count": 25,
         "event_ids": [
           7207,
           7199,
@@ -167039,8 +167060,7 @@
           6984,
           6969,
           6966,
-          6962,
-          6960
+          6962
         ]
       },
       {
@@ -167098,10 +167118,30 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 12,
+        "burn_count": 1,
+        "mint_count": 11,
+        "event_ids": [
+          7212,
+          7188,
+          7168,
+          7141,
+          7091,
+          7085,
+          7072,
+          7059,
+          7017,
+          7002,
+          6966,
+          6962
+        ]
+      },
+      {
         "name": "Water",
-        "count": 13,
+        "count": 12,
         "burn_count": 3,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           7211,
           7202,
@@ -167114,8 +167154,7 @@
           7100,
           7080,
           7006,
-          6982,
-          6959
+          6982
         ]
       },
       {
@@ -167135,25 +167174,6 @@
           7092,
           7076,
           7048
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 11,
-        "burn_count": 1,
-        "mint_count": 10,
-        "event_ids": [
-          7188,
-          7168,
-          7141,
-          7091,
-          7085,
-          7072,
-          7059,
-          7017,
-          7002,
-          6966,
-          6962
         ]
       },
       {
@@ -167204,10 +167224,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 219,
+      "total_mint": 218,
       "direct_action": {
-        "count": 199,
-        "pct": 90.9
+        "count": 198,
+        "pct": 90.8
       },
       "editorial_alarm": {
         "count": 14,
@@ -167215,13 +167235,13 @@
       },
       "untyped": {
         "count": 6,
-        "pct": 2.7
+        "pct": 2.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5182,
+      "total_mint": 5183,
       "direct_action": {
-        "count": 4312,
+        "count": 4313,
         "pct": 83.2
       },
       "editorial_alarm": {
@@ -167234,9 +167254,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 65,
+      "citizen": 64,
       "institutional": 188,
-      "citizen_ratio": 0.257,
+      "citizen_ratio": 0.254,
       "daily": [
         {
           "date": "2026-08-30",
@@ -167271,7 +167291,7 @@
         {
           "date": "2026-09-05",
           "citizen": 5,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -167338,10 +167358,10 @@
         6989,
         6986,
         6980,
-        6962,
-        6959
+        6962
       ],
       "event_ids_institutional": [
+        7212,
         7211,
         7210,
         7209,
@@ -167528,8 +167548,7 @@
         6965,
         6964,
         6963,
-        6961,
-        6960
+        6961
       ]
     }
   }
