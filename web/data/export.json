@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-05T14:07:13.695751+00:00",
-  "total_events": 7202,
+  "generated_at": "2026-09-05T15:08:33.698418+00:00",
+  "total_events": 7203,
   "total_burned": 7906904255,
-  "total_minted": 9687687149,
+  "total_minted": 9688363149,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7203,
+      "event_title": "Trump signs order to remove endangered species protection for grey wolves",
+      "event_url": "https://www.bbc.co.uk/news/articles/c62k677d4lzo?at_medium=RSS&at_campaign=rss",
+      "event_source": "BBC Science & Environment",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.76,
+      "confidence": 8,
+      "justification": "Removal of endangered species protection enables ecological harm and violates conservation frameworks. | The removal of endangered species protection for grey wolves prioritizes short-term economic interests over long-term ecological sustainability. While it may provide temporary relief to ranchers, the decision risks irreversible harm to biodiversity and undermines global conservation frameworks. The negative impacts on ecosystems and animal rights far outweigh the limited economic benefits.",
+      "tx_hash": "Lfy9pyctbmFzRd3npV3Dq4wdcPGnUHvYZpgwUJEXDFdRKsYv6kk69N3eiefboWQrk2GCtXQxkj4vCPn7Jhk7PA9",
+      "created_at": "2026-09-05T15:08:27.956608+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Removal of endangered species protection may reduce regulatory burdens on ranchers and local economies, potentially supporting SDG 8 (Decent Work) and SDG 9 (Industry, Innovation, and Infrastructure).\", \"affected_sdgs\": [8, 9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Removal of endangered species protection for grey wolves undermines biodiversity conservation (SDG 15), weakens ecological balance (Planetary Boundaries), and violates the Universal Declaration of Animal Rights by increasing extinction risk.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal Rights\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"The decision reverses decades of conservation progress, potentially accelerating population decline and habitat loss, with cascading effects on ecosystems (SDG 14, 15).\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Lack of scientific consensus or stakeholder consultation in the decision-making process undermines SDG 17 (Partnerships) and weakens trust in environmental governance.\", \"affected_sdgs\": [17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7202,
       "event_title": "The Rhône Glacier Cave Under Scrutiny",
@@ -165794,7 +165817,7 @@
       },
       {
         "date": "2026-09-05",
-        "net_minted": 4002400,
+        "net_minted": 4678400,
         "net_burned": 1557500
       }
     ],
@@ -165850,6 +165873,7 @@
           6961
         ],
         "event_ids_negative": [
+          7203,
           7201,
           7200,
           7199,
@@ -166060,13 +166084,12 @@
           6955,
           6954,
           6953,
-          6952,
-          6951
+          6952
         ]
       },
       "UDHR": {
         "positive": 24,
-        "negative": 189,
+        "negative": 188,
         "event_ids_positive": [
           7202,
           7197,
@@ -166281,8 +166304,7 @@
           6955,
           6954,
           6953,
-          6952,
-          6951
+          6952
         ]
       },
       "ILO": {
@@ -166410,7 +166432,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 70,
+        "negative": 69,
         "event_ids_positive": [
           7152,
           7125,
@@ -166488,13 +166510,12 @@
           6971,
           6964,
           6957,
-          6953,
-          6951
+          6953
         ]
       },
       "Animal": {
         "positive": 10,
-        "negative": 23,
+        "negative": 24,
         "event_ids_positive": [
           7197,
           7180,
@@ -166508,6 +166529,7 @@
           6980
         ],
         "event_ids_negative": [
+          7203,
           7194,
           7191,
           7183,
@@ -166557,6 +166579,7 @@
           6969
         ],
         "event_ids_negative": [
+          7203,
           7199,
           7194,
           7193,
@@ -166622,15 +166645,14 @@
           6959,
           6957,
           6956,
-          6955,
-          6951
+          6955
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.4,
-      "mainstream_pct": 31.6,
-      "total_sources_used": 79,
+      "niche_pct": 68.8,
+      "mainstream_pct": 31.2,
+      "total_sources_used": 80,
       "articles_processed": 252
     },
     "cache_hit_rate_7d": {
@@ -166902,9 +166924,9 @@
       },
       {
         "name": "Construction",
-        "count": 12,
+        "count": 11,
         "burn_count": 1,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           7188,
           7168,
@@ -166916,8 +166938,7 @@
           7017,
           7002,
           6966,
-          6962,
-          6951
+          6962
         ]
       },
       {
@@ -167002,9 +167023,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5173,
+      "total_mint": 5174,
       "direct_action": {
-        "count": 4304,
+        "count": 4305,
         "pct": 83.2
       },
       "editorial_alarm": {
@@ -167017,9 +167038,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 68,
-      "institutional": 184,
-      "citizen_ratio": 0.27,
+      "citizen": 67,
+      "institutional": 185,
+      "citizen_ratio": 0.266,
       "daily": [
         {
           "date": "2026-08-30",
@@ -167054,7 +167075,7 @@
         {
           "date": "2026-09-05",
           "citizen": 4,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -167124,10 +167145,10 @@
         6959,
         6957,
         6953,
-        6952,
-        6951
+        6952
       ],
       "event_ids_institutional": [
+        7203,
         7202,
         7200,
         7199,
