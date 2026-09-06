@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-06T16:07:27.246612+00:00",
-  "total_events": 7227,
+  "generated_at": "2026-09-06T18:07:17.306507+00:00",
+  "total_events": 7228,
   "total_burned": 7907429255,
-  "total_minted": 9725076549,
+  "total_minted": 9725081959,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7228,
+      "event_title": "Israeli strike kills a man and his daughter in Gaza, medics say",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/israeli-strike-kills-man-and-his-daughter-gaza-medics-say",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5410,
+      "final_score": -3.28,
+      "confidence": 7,
+      "justification": "The strike caused civilian deaths, violating fundamental rights, leading to a negative net impact. | The strike caused civilian deaths, directly breaching fundamental human and child rights and undermining health and peace goals. No mitigating positive outcomes are presented, resulting in a net negative ethical assessment.",
+      "tx_hash": "5w3hzKW7DNPBtfTWuMtofcYacQ5tvYRFGwfScPu5LWgaePn3tbcoVd1DxePBCAdcbGGwG7nHSzMNx5wzTGrNrVS",
+      "created_at": "2026-09-06T18:07:12.367939+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli airstrike killed a civilian man and his teenage daughter, violating the right to life and child survival rights.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 6\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 7227,
       "event_title": "COP17 concludes without drought agreements and blocks civil society agenda",
@@ -166285,18 +166308,18 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.214,
-        "events": 14
+        "burn_ratio": 0.167,
+        "events": 12
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.132,
+        "events": 53
       },
       {
         "region": "Latin America",
         "burn_ratio": 0.13,
         "events": 23
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.13,
-        "events": 54
       },
       {
         "region": "North America",
@@ -166313,7 +166336,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 15
+        "events": 16
       },
       {
         "region": "Africa",
@@ -166369,25 +166392,25 @@
       },
       {
         "date": "2026-09-06",
-        "net_minted": 26198600,
+        "net_minted": 26204010,
         "net_burned": 525000
       }
     ],
     "event_of_the_day": {
-      "id": 7205,
-      "event_title": "Israeli campaign of West Bank destruction moves on to region’s food basket",
+      "id": 7218,
+      "event_title": "US military announces retaliatory strikes on 3 Iranian oil tankers",
       "decision": "MINT",
-      "amount_crbn": 74800,
-      "final_score": -6.91,
+      "amount_crbn": 7480000,
+      "final_score": -6.66,
       "confidence": 8,
-      "country": "Israel",
-      "region": "MENA",
-      "created_at": "2026-09-05T16:08:37.094061+00:00"
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-09-06T08:07:12.495111+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 31,
-        "negative": 213,
+        "positive": 30,
+        "negative": 211,
         "event_ids_positive": [
           7226,
           7202,
@@ -166418,10 +166441,10 @@
           7009,
           7005,
           7002,
-          6998,
-          6982
+          6998
         ],
         "event_ids_negative": [
+          7228,
           7227,
           7225,
           7224,
@@ -166631,15 +166654,12 @@
           6989,
           6988,
           6987,
-          6986,
-          6985,
-          6984,
-          6983
+          6986
         ]
       },
       "UDHR": {
-        "positive": 21,
-        "negative": 191,
+        "positive": 20,
+        "negative": 190,
         "event_ids_positive": [
           7202,
           7197,
@@ -166660,10 +166680,10 @@
           7020,
           7019,
           7018,
-          7009,
-          6982
+          7009
         ],
         "event_ids_negative": [
+          7228,
           7227,
           7225,
           7224,
@@ -166852,9 +166872,7 @@
           6989,
           6988,
           6987,
-          6986,
-          6985,
-          6983
+          6986
         ]
       },
       "ILO": {
@@ -166895,17 +166913,17 @@
         ]
       },
       "CRC": {
-        "positive": 6,
-        "negative": 74,
+        "positive": 5,
+        "negative": 75,
         "event_ids_positive": [
           7161,
           7110,
           7066,
           7009,
-          7005,
-          6982
+          7005
         ],
         "event_ids_negative": [
+          7228,
           7223,
           7222,
           7221,
@@ -166984,7 +167002,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 72,
+        "negative": 71,
         "event_ids_positive": [
           7152,
           7125,
@@ -167064,8 +167082,7 @@
           7001,
           6995,
           6992,
-          6989,
-          6985
+          6989
         ]
       },
       "Animal": {
@@ -167110,7 +167127,7 @@
       },
       "PB": {
         "positive": 17,
-        "negative": 68,
+        "negative": 66,
         "event_ids_positive": [
           7226,
           7202,
@@ -167196,30 +167213,28 @@
           6996,
           6992,
           6991,
-          6987,
-          6985,
-          6984
+          6987
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.2,
-      "mainstream_pct": 33.8,
+      "niche_pct": 67.5,
+      "mainstream_pct": 32.5,
       "total_sources_used": 77,
-      "articles_processed": 246
+      "articles_processed": 243
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 246,
+      "total_events": 243,
       "pct": 0.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 12,
+        "count": 11,
         "burn_count": 3,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           7196,
           7172,
@@ -167231,8 +167246,7 @@
           7020,
           7018,
           6996,
-          6987,
-          6985
+          6987
         ]
       },
       {
@@ -167357,9 +167371,9 @@
       },
       {
         "name": "Energy",
-        "count": 30,
+        "count": 29,
         "burn_count": 5,
-        "mint_count": 25,
+        "mint_count": 24,
         "event_ids": [
           7222,
           7218,
@@ -167389,15 +167403,14 @@
           7027,
           7022,
           7002,
-          6999,
-          6984
+          6999
         ]
       },
       {
         "name": "Defense",
-        "count": 24,
+        "count": 23,
         "burn_count": 1,
-        "mint_count": 23,
+        "mint_count": 22,
         "event_ids": [
           7221,
           7218,
@@ -167421,8 +167434,7 @@
           7019,
           7010,
           6992,
-          6990,
-          6983
+          6990
         ]
       },
       {
@@ -167450,8 +167462,8 @@
       },
       {
         "name": "Water",
-        "count": 14,
-        "burn_count": 3,
+        "count": 13,
+        "burn_count": 2,
         "mint_count": 11,
         "event_ids": [
           7227,
@@ -167466,8 +167478,7 @@
           7146,
           7100,
           7080,
-          7006,
-          6982
+          7006
         ]
       },
       {
@@ -167527,14 +167538,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 31,
+      "total_burn": 30,
       "direct_action": {
-        "count": 30,
-        "pct": 96.8
+        "count": 29,
+        "pct": 96.7
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 3.2
+        "pct": 3.3
       },
       "untyped": {
         "count": 0,
@@ -167557,14 +167568,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 215,
+      "total_mint": 213,
       "direct_action": {
-        "count": 196,
-        "pct": 91.2
+        "count": 194,
+        "pct": 91.1
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 7.9
+        "pct": 8.0
       },
       "untyped": {
         "count": 2,
@@ -167572,9 +167583,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5197,
+      "total_mint": 5198,
       "direct_action": {
-        "count": 4324,
+        "count": 4325,
         "pct": 83.2
       },
       "editorial_alarm": {
@@ -167588,8 +167599,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 69,
-      "institutional": 177,
-      "citizen_ratio": 0.28,
+      "institutional": 174,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-08-31",
@@ -167624,7 +167635,7 @@
         {
           "date": "2026-09-06",
           "citizen": 7,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -167699,6 +167710,7 @@
         6986
       ],
       "event_ids_institutional": [
+        7228,
         7225,
         7221,
         7220,
@@ -167871,11 +167883,7 @@
         6992,
         6990,
         6988,
-        6987,
-        6985,
-        6984,
-        6983,
-        6982
+        6987
       ]
     }
   }
