@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-05T23:07:06.459305+00:00",
-  "total_events": 7212,
+  "generated_at": "2026-09-06T00:08:21.396438+00:00",
+  "total_events": 7213,
   "total_burned": 7906904255,
-  "total_minted": 9698877949,
+  "total_minted": 9705637949,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7213,
+      "event_title": "UN’s landmark nature restoration fund fails to raise almost any money",
+      "event_url": "https://www.politico.eu/article/un-landmark-nature-restoration-cali-fund-fails-to-raise-almost-any-money/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -2.24,
+      "confidence": 8,
+      "justification": "The fund's near-total lack of funding undermines its purpose and risks setting a negative precedent for global conservation finance. | While the creation of the Cali Fund represents a positive institutional step toward addressing biodiversity loss and climate change, its near-total failure to secure funding severely limits its potential impact. The lack of financial backing not only hampers immediate restoration efforts but also risks discouraging future investments in similar initiatives, creat",
+      "tx_hash": "wxDpFX61ZxwJbqPxCTKAH2Bfsa2bA8ESzT4cmyHRVtTyz1aiMjKFF9zcWv3HpSrajWBNV5W1LbwZhZsPFfWo752",
+      "created_at": "2026-09-06T00:08:16.146925+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Launch of the Cali Fund as a UN-backed mechanism to finance nature restoration, signaling institutional commitment to biodiversity and climate action.\", \"affected_sdgs\": [13, 14, 15, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Failure to raise significant funds (only $6,000 from corporate contributors), undermining the fund's ability to achieve its restoration goals and eroding trust in multilateral climate finance mechanisms.\", \"affected_sdgs\": [13, 14, 15, 17], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7212,
       "event_title": "National promises wider access to low-deposit home loans if re-elected",
@@ -165993,11 +166016,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-08-30",
-        "net_minted": 17372500,
-        "net_burned": 2257500
-      },
-      {
         "date": "2026-08-31",
         "net_minted": 41524200,
         "net_burned": 14385000
@@ -166026,6 +166044,11 @@
         "date": "2026-09-05",
         "net_minted": 15193200,
         "net_burned": 1557500
+      },
+      {
+        "date": "2026-09-06",
+        "net_minted": 6760000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -166042,7 +166065,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 34,
-        "negative": 212,
+        "negative": 213,
         "event_ids_positive": [
           7202,
           7197,
@@ -166080,6 +166103,7 @@
           6961
         ],
         "event_ids_negative": [
+          7213,
           7212,
           7211,
           7210,
@@ -166771,7 +166795,7 @@
       },
       "PB": {
         "positive": 18,
-        "negative": 68,
+        "negative": 69,
         "event_ids_positive": [
           7202,
           7197,
@@ -166793,6 +166817,7 @@
           6969
         ],
         "event_ids_negative": [
+          7213,
           7211,
           7207,
           7206,
@@ -166868,11 +166893,11 @@
       "niche_pct": 67.9,
       "mainstream_pct": 32.1,
       "total_sources_used": 78,
-      "articles_processed": 252
+      "articles_processed": 253
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 252,
+      "total_events": 253,
       "pct": 2.4
     },
     "active_partners_7d": [],
@@ -166907,10 +166932,11 @@
       },
       {
         "name": "UN",
-        "count": 6,
+        "count": 7,
         "burn_count": 2,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          7213,
           7139,
           7125,
           7098,
@@ -166980,10 +167006,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 38,
+        "count": 39,
         "burn_count": 5,
-        "mint_count": 33,
+        "mint_count": 34,
         "event_ids": [
+          7213,
           7212,
           7206,
           7205,
@@ -167224,10 +167251,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 218,
+      "total_mint": 219,
       "direct_action": {
-        "count": 198,
-        "pct": 90.8
+        "count": 199,
+        "pct": 90.9
       },
       "editorial_alarm": {
         "count": 14,
@@ -167235,13 +167262,13 @@
       },
       "untyped": {
         "count": 6,
-        "pct": 2.8
+        "pct": 2.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5183,
+      "total_mint": 5184,
       "direct_action": {
-        "count": 4313,
+        "count": 4314,
         "pct": 83.2
       },
       "editorial_alarm": {
@@ -167254,15 +167281,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 64,
+      "citizen": 65,
       "institutional": 188,
-      "citizen_ratio": 0.254,
+      "citizen_ratio": 0.257,
       "daily": [
-        {
-          "date": "2026-08-30",
-          "citizen": 4,
-          "institutional": 26
-        },
         {
           "date": "2026-08-31",
           "citizen": 11,
@@ -167292,9 +167314,15 @@
           "date": "2026-09-05",
           "citizen": 5,
           "institutional": 16
+        },
+        {
+          "date": "2026-09-06",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        7213,
         7204,
         7201,
         7197,
