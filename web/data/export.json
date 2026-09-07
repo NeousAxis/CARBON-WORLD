@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-07T04:08:08.869747+00:00",
-  "total_events": 7239,
+  "generated_at": "2026-09-07T05:07:04.750210+00:00",
+  "total_events": 7240,
   "total_burned": 7908829255,
-  "total_minted": 9726901999,
+  "total_minted": 9726907319,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7240,
+      "event_title": "Wellington City Council cuts 47 jobs",
+      "event_url": "https://www.rnz.co.nz/news/business/1284966/wellington-city-council-cuts-47-jobs",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 5320,
+      "final_score": -2.75,
+      "confidence": 8,
+      "justification": "Job cuts directly harm workers and risk service quality, outweighing speculative fiscal benefits. | The decision to cut 47 jobs prioritizes short-term fiscal targets over immediate livelihoods and service continuity. While financial sustainability is necessary, the direct harm to workers and potential service disruptions outweigh the long-term benefits, which remain speculative and contingent on effective reallocation of resources.",
+      "tx_hash": "KvDLGudYSMpsXGBaYBGWySYM7eVXUdb89onJYPgoybkZat7Cd2znS7YWdWEfBZX1wQoJj2Ukz5S1TcQhJWiqc3y",
+      "created_at": "2026-09-07T05:06:57.683401+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Fiscal responsibility measure to address budget deficits, potentially ensuring long-term financial sustainability of municipal services.\", \"affected_sdgs\": [8, 11, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Direct job losses (47 roles) impacting workers and their families, reducing decent work opportunities and economic security at a local level.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Potential reduction in municipal service quality or capacity, affecting community access to public services and infrastructure.\", \"affected_sdgs\": [11, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 7239,
       "event_title": "China marks major tunnel milestone for Central Asia railway bypassing Russia",
@@ -166581,8 +166604,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.077,
-        "events": 13
+        "burn_ratio": 0.071,
+        "events": 14
       }
     ],
     "top_regions_destructive": [
@@ -166598,8 +166621,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.923,
-        "events": 13
+        "mint_ratio": 0.929,
+        "events": 14
       },
       {
         "region": "North America",
@@ -166645,7 +166668,7 @@
       },
       {
         "date": "2026-09-07",
-        "net_minted": 641240,
+        "net_minted": 646560,
         "net_burned": 700000
       }
     ],
@@ -166663,7 +166686,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 32,
-        "negative": 210,
+        "negative": 211,
         "event_ids_positive": [
           7235,
           7229,
@@ -166699,6 +166722,7 @@
           6998
         ],
         "event_ids_negative": [
+          7240,
           7239,
           7238,
           7237,
@@ -166913,7 +166937,7 @@
       },
       "UDHR": {
         "positive": 22,
-        "negative": 189,
+        "negative": 190,
         "event_ids_positive": [
           7235,
           7229,
@@ -166939,6 +166963,7 @@
           7009
         ],
         "event_ids_negative": [
+          7240,
           7239,
           7238,
           7237,
@@ -167132,7 +167157,7 @@
       },
       "ILO": {
         "positive": 4,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           7235,
           7161,
@@ -167140,6 +167165,7 @@
           7018
         ],
         "event_ids_negative": [
+          7240,
           7236,
           7233,
           7232,
@@ -167485,11 +167511,11 @@
       "niche_pct": 67.5,
       "mainstream_pct": 32.5,
       "total_sources_used": 77,
-      "articles_processed": 244
+      "articles_processed": 245
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 244,
+      "total_events": 245,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -167584,10 +167610,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 36,
+        "count": 37,
         "burn_count": 5,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          7240,
           7217,
           7213,
           7212,
@@ -167827,9 +167854,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 213,
       "direct_action": {
-        "count": 194,
+        "count": 195,
         "pct": 91.5
       },
       "editorial_alarm": {
@@ -167842,9 +167869,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5207,
+      "total_mint": 5208,
       "direct_action": {
-        "count": 4334,
+        "count": 4335,
         "pct": 83.2
       },
       "editorial_alarm": {
@@ -167858,8 +167885,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 66,
-      "institutional": 178,
-      "citizen_ratio": 0.27,
+      "institutional": 179,
+      "citizen_ratio": 0.269,
       "daily": [
         {
           "date": "2026-09-01",
@@ -167894,7 +167921,7 @@
         {
           "date": "2026-09-07",
           "citizen": 1,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -167966,6 +167993,7 @@
         6998
       ],
       "event_ids_institutional": [
+        7240,
         7239,
         7238,
         7237,
