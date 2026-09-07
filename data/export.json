@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-07T09:06:42.939196+00:00",
-  "total_events": 7244,
+  "generated_at": "2026-09-07T10:09:52.752704+00:00",
+  "total_events": 7245,
   "total_burned": 7908829255,
-  "total_minted": 9728702319,
+  "total_minted": 9728852319,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7245,
+      "event_title": "MSD blames administration error for denying applications for food help",
+      "event_url": "https://www.rnz.co.nz/news/political/1287504/msd-blames-administration-error-for-denying-applications-for-food-help",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.92,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Initial denial of food assistance due to administrative error violates basic rights and outweighs later acknowledgment. | The initial denial of food assistance due to an administrative error constitutes a significant violation of the right to an adequate standard of living, particularly for vulnerable groups. While the acknowledgment of the error is a positive step, the harm ca",
+      "tx_hash": "4LvE49vA8Eei9xVmzGMbUTciDQi3VqywzBQsdHmGQYDH6hoqgArpRQqjiLBxyCAA84fvaBFSPRyhUJVDUotY5NjR",
+      "created_at": "2026-09-07T10:09:48.318604+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Acknowledgment of the administrative error by MSD (Ministry of Social Development) and implied correction of the misclassification of food as a non-essential need.\", \"affected_sdgs\": [1, 2, 3, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Initial denial of food assistance applications due to administrative error, directly undermining access to basic needs for vulnerable populations.\", \"affected_sdgs\": [1, 2, 3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential systemic flaw in MSD processes, risking repeated denials of essential support to those in need.\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7244,
       "event_title": "Brazil’s Casas Bahia Files for Court Protection Over Its Debt",
@@ -166696,8 +166719,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.071,
-        "events": 14
+        "burn_ratio": 0.067,
+        "events": 15
       }
     ],
     "top_regions_destructive": [
@@ -166713,8 +166736,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.929,
-        "events": 14
+        "mint_ratio": 0.933,
+        "events": 15
       },
       {
         "region": "North America",
@@ -166760,25 +166783,25 @@
       },
       {
         "date": "2026-09-07",
-        "net_minted": 2441560,
+        "net_minted": 2591560,
         "net_burned": 700000
       }
     ],
     "event_of_the_day": {
-      "id": 7221,
-      "event_title": "Israel bombards several towns in southern Lebanon",
+      "id": 7238,
+      "event_title": "Middle East Live: Israel army orders evacuation of zone in south Lebanon ahead of strikes",
       "decision": "MINT",
       "amount_crbn": 74800,
-      "final_score": -6.15,
+      "final_score": -6.0,
       "confidence": 8,
       "country": "Israel",
       "region": "MENA",
-      "created_at": "2026-09-06T09:08:55.332119+00:00"
+      "created_at": "2026-09-07T02:06:17.111467+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 31,
-        "negative": 213,
+        "negative": 214,
         "event_ids_positive": [
           7235,
           7229,
@@ -166813,6 +166836,7 @@
           7002
         ],
         "event_ids_negative": [
+          7245,
           7244,
           7243,
           7242,
@@ -167030,7 +167054,7 @@
       },
       "UDHR": {
         "positive": 22,
-        "negative": 192,
+        "negative": 193,
         "event_ids_positive": [
           7235,
           7229,
@@ -167056,6 +167080,7 @@
           7009
         ],
         "event_ids_negative": [
+          7245,
           7244,
           7243,
           7242,
@@ -167608,11 +167633,11 @@
       "niche_pct": 67.5,
       "mainstream_pct": 32.5,
       "total_sources_used": 77,
-      "articles_processed": 246
+      "articles_processed": 247
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 246,
+      "total_events": 247,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -167952,10 +167977,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 215,
+      "total_mint": 216,
       "direct_action": {
-        "count": 197,
-        "pct": 91.6
+        "count": 198,
+        "pct": 91.7
       },
       "editorial_alarm": {
         "count": 16,
@@ -167967,9 +167992,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5212,
+      "total_mint": 5213,
       "direct_action": {
-        "count": 4339,
+        "count": 4340,
         "pct": 83.3
       },
       "editorial_alarm": {
@@ -167983,8 +168008,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 66,
-      "institutional": 180,
-      "citizen_ratio": 0.268,
+      "institutional": 181,
+      "citizen_ratio": 0.267,
       "daily": [
         {
           "date": "2026-09-01",
@@ -168019,7 +168044,7 @@
         {
           "date": "2026-09-07",
           "citizen": 2,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -168091,6 +168116,7 @@
         7002
       ],
       "event_ids_institutional": [
+        7245,
         7244,
         7242,
         7241,
