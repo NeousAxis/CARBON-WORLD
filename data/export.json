@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-08T11:06:26.285219+00:00",
-  "total_events": 7281,
-  "total_burned": 7912389255,
+  "generated_at": "2026-09-08T12:06:30.363338+00:00",
+  "total_events": 7282,
+  "total_burned": 7913089255,
   "total_minted": 9778232099,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7282,
+      "event_title": "France calls for new EU taxes to raise €60B",
+      "event_url": "https://www.politico.eu/article/france-calls-for-new-eu-taxes-to-raise-e60b/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": -1.73,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] The tax proposal aims to fund climate and social programs, protecting rights and mitigating harm despite regressive risk. | The proposal for new EU taxes presents a dual-edged opportunity: it could unlock significant funding for climate and social programs, aligning with multiple SDGs, but risks exacerbating inequality and economic strain if not carefully designed. The resistanc",
+      "tx_hash": "JrUyUU5y4DdyR93Pa9nJ3boX9Z7XwZF2HdSBmopZowS84ESh7icccEnSkS4TMrtqHC1u893HiPnrv5TtrciigqD",
+      "created_at": "2026-09-08T12:06:25.029070+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Proposal for new EU taxes to finance the EU budget, potentially enabling funding for climate, social, and infrastructure programs under SDGs 7, 9, 11, 13, and 17.\", \"affected_sdgs\": [7, 9, 11, 13, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Demonstrates EU-level fiscal coordination, reinforcing partnerships (SDG 17) and potentially reducing inequalities (SDG 10) through redistributive mechanisms.\", \"affected_sdgs\": [10, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"New taxes may disproportionately burden lower-income households or small businesses, undermining SDG 1 (No Poverty) and SDG 8 (Decent Work).\", \"affected_sdgs\": [1, 8], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Resistance from member states could delay or dilute the proposal, weakening EU cohesion and delaying critical funding for SDGs 13 (Climate Action) and 15 (Life on Land).\", \"affected_sdgs\": [13, 15, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 478000
+    },
     {
       "id": 7281,
       "event_title": "The Pentagon Asked OpenAI for Artificial Intelligence Designed to Rarely Say No",
@@ -167473,8 +167496,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 52,
-        "total_amount": 66253800
+        "count": 51,
+        "total_amount": 65653800
       },
       {
         "country": "France",
@@ -167537,8 +167560,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.114,
-        "events": 70
+        "burn_ratio": 0.116,
+        "events": 69
       },
       {
         "region": "Oceania",
@@ -167547,8 +167570,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.069,
-        "events": 58
+        "burn_ratio": 0.07,
+        "events": 57
       }
     ],
     "top_regions_destructive": [
@@ -167564,8 +167587,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.931,
-        "events": 58
+        "mint_ratio": 0.93,
+        "events": 57
       },
       {
         "region": "Oceania",
@@ -167574,8 +167597,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.886,
-        "events": 70
+        "mint_ratio": 0.884,
+        "events": 69
       }
     ],
     "supply_trend_7d": [
@@ -167612,7 +167635,7 @@
       {
         "date": "2026-09-08",
         "net_minted": 19049080,
-        "net_burned": 0
+        "net_burned": 700000
       }
     ],
     "event_of_the_day": {
@@ -167628,9 +167651,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
-        "negative": 224,
+        "positive": 27,
+        "negative": 222,
         "event_ids_positive": [
+          7282,
           7255,
           7235,
           7229,
@@ -167880,15 +167904,14 @@
           7035,
           7033,
           7032,
-          7031,
-          7030,
-          7029
+          7031
         ]
       },
       "UDHR": {
-        "positive": 19,
-        "negative": 203,
+        "positive": 20,
+        "negative": 202,
         "event_ids_positive": [
+          7282,
           7255,
           7235,
           7229,
@@ -168111,8 +168134,7 @@
           7035,
           7033,
           7032,
-          7031,
-          7029
+          7031
         ]
       },
       "ILO": {
@@ -168256,7 +168278,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 82,
+        "negative": 81,
         "event_ids_positive": [
           7255,
           7152,
@@ -168346,13 +168368,12 @@
           7043,
           7039,
           7037,
-          7036,
-          7030
+          7036
         ]
       },
       "Animal": {
         "positive": 10,
-        "negative": 23,
+        "negative": 22,
         "event_ids_positive": [
           7255,
           7197,
@@ -168387,13 +168408,12 @@
           7074,
           7056,
           7053,
-          7031,
-          7030
+          7031
         ]
       },
       "PB": {
         "positive": 16,
-        "negative": 69,
+        "negative": 67,
         "event_ids_positive": [
           7255,
           7235,
@@ -168479,9 +168499,7 @@
           7052,
           7051,
           7045,
-          7044,
-          7030,
-          7029
+          7044
         ]
       }
     },
@@ -168489,11 +168507,11 @@
       "niche_pct": 73.1,
       "mainstream_pct": 26.9,
       "total_sources_used": 78,
-      "articles_processed": 252
+      "articles_processed": 251
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 252,
+      "total_events": 251,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -168523,10 +168541,11 @@
       },
       {
         "name": "EU",
-        "count": 10,
-        "burn_count": 2,
+        "count": 11,
+        "burn_count": 3,
         "mint_count": 8,
         "event_ids": [
+          7282,
           7248,
           7242,
           7235,
@@ -168602,10 +168621,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 36,
-        "burn_count": 4,
+        "count": 37,
+        "burn_count": 5,
         "mint_count": 32,
         "event_ids": [
+          7282,
           7265,
           7244,
           7240,
@@ -168646,9 +168666,9 @@
       },
       {
         "name": "Energy",
-        "count": 28,
+        "count": 27,
         "burn_count": 5,
-        "mint_count": 23,
+        "mint_count": 22,
         "event_ids": [
           7277,
           7275,
@@ -168676,15 +168696,14 @@
           7046,
           7045,
           7044,
-          7035,
-          7029
+          7035
         ]
       },
       {
         "name": "Defense",
-        "count": 25,
+        "count": 24,
         "burn_count": 0,
-        "mint_count": 25,
+        "mint_count": 24,
         "event_ids": [
           7281,
           7279,
@@ -168709,8 +168728,7 @@
           7058,
           7054,
           7047,
-          7043,
-          7029
+          7043
         ]
       },
       {
@@ -168819,9 +168837,9 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 27,
       "direct_action": {
-        "count": 26,
+        "count": 27,
         "pct": 100.0
       },
       "editorial_consciousness": {
@@ -168834,9 +168852,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2025,
+      "total_burn": 2026,
       "direct_action": {
-        "count": 1597,
+        "count": 1598,
         "pct": 78.9
       },
       "editorial_consciousness": {
@@ -168849,9 +168867,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 226,
+      "total_mint": 224,
       "direct_action": {
-        "count": 208,
+        "count": 206,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -168880,8 +168898,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 64,
-      "institutional": 188,
-      "citizen_ratio": 0.254,
+      "institutional": 187,
+      "citizen_ratio": 0.255,
       "daily": [
         {
           "date": "2026-09-02",
@@ -168916,7 +168934,7 @@
         {
           "date": "2026-09-08",
           "citizen": 3,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -168986,6 +169004,7 @@
         7038
       ],
       "event_ids_institutional": [
+        7282,
         7281,
         7280,
         7279,
@@ -169171,9 +169190,7 @@
         7034,
         7033,
         7032,
-        7031,
-        7030,
-        7029
+        7031
       ]
     }
   }
