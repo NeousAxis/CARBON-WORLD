@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-08T04:06:52.913120+00:00",
-  "total_events": 7271,
+  "generated_at": "2026-09-08T05:05:01.421590+00:00",
+  "total_events": 7272,
   "total_burned": 7912389255,
-  "total_minted": 9767719499,
+  "total_minted": 9767869499,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7272,
+      "event_title": "Fires: Why are firefighters starting a strike from this Tuesday?",
+      "event_url": "https://www.ici.fr/infos/societe/incendies-pourquoi-les-sapeurs-pompiers-entament-ils-une-greve-a-partir-de-ce-mardi-8988986?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.51,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Strike risks immediate harm to public safety outweighing potential long-term systemic benefits. | The firefighters' strike is a legitimate labor action to address chronic underfunding and overwork, aligning with SDGs 8 and 11 and reinforcing ILO labor standards. However, the immediate reduction in emergency response capacity poses significant risks to public health and safety (",
+      "tx_hash": "3Y2w8H6EhMeu58rxq1dBxTRoTyE9pv4S4UNW5yqDnPW4baABWcjpc6ozdW8LWjYzN6TdJCRd8CueFjL9QqMiBvoE",
+      "created_at": "2026-09-08T05:04:56.453283+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Firefighters' strike draws public and institutional attention to systemic understaffing and resource shortages in emergency services, potentially leading to improved working conditions and safety.\", \"affected_sdgs\": [3, 8, 11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Collective action by firefighters highlights the importance of decent work (SDG 8) and public safety (SDG 11), reinforcing labor rights and social protection frameworks.\", \"affected_sdgs\": [8, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Strike action risks temporary reduction in emergency response capacity, potentially endangering lives, health, and property during a period of heightened wildfire risk.\", \"affected_sdgs\": [3, 11, 13], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Disruption of critical public services may disproportionately affect vulnerable populations (e.g., elderly, disabled, or low-income communities) reliant on emergency interventions.\", \"affected_sdgs\": [1, 3, 10], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7271,
       "event_title": "New Zealand troops to continue to train Ukrainian soldiers",
@@ -167248,8 +167271,8 @@
       },
       {
         "country": "France",
-        "count": 15,
-        "total_amount": 5771000
+        "count": 16,
+        "total_amount": 5921000
       },
       {
         "country": "Germany",
@@ -167307,8 +167330,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.119,
-        "events": 67
+        "burn_ratio": 0.118,
+        "events": 68
       },
       {
         "region": "North America",
@@ -167344,8 +167367,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.881,
-        "events": 67
+        "mint_ratio": 0.882,
+        "events": 68
       }
     ],
     "supply_trend_7d": [
@@ -167381,7 +167404,7 @@
       },
       {
         "date": "2026-09-08",
-        "net_minted": 9212480,
+        "net_minted": 9362480,
         "net_burned": 0
       }
     ],
@@ -167399,7 +167422,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 220,
+        "negative": 221,
         "event_ids_positive": [
           7255,
           7235,
@@ -167429,6 +167452,7 @@
           7034
         ],
         "event_ids_negative": [
+          7272,
           7271,
           7270,
           7269,
@@ -167653,7 +167677,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 199,
+        "negative": 200,
         "event_ids_positive": [
           7255,
           7235,
@@ -167676,6 +167700,7 @@
           7046
         ],
         "event_ids_negative": [
+          7272,
           7271,
           7270,
           7269,
@@ -167879,12 +167904,13 @@
       },
       "ILO": {
         "positive": 2,
-        "negative": 34,
+        "negative": 35,
         "event_ids_positive": [
           7235,
           7161
         ],
         "event_ids_negative": [
+          7272,
           7267,
           7261,
           7254,
@@ -167923,13 +167949,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 81,
+        "negative": 82,
         "event_ids_positive": [
           7161,
           7110,
           7066
         ],
         "event_ids_negative": [
+          7272,
           7271,
           7270,
           7266,
@@ -168246,11 +168273,11 @@
       "niche_pct": 73.1,
       "mainstream_pct": 26.9,
       "total_sources_used": 78,
-      "articles_processed": 248
+      "articles_processed": 249
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 248,
+      "total_events": 249,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -168325,6 +168352,15 @@
         "event_ids": [
           7085,
           7075
+        ]
+      },
+      {
+        "name": "ILO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          7272
         ]
       },
       {
@@ -168593,9 +168629,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 222,
+      "total_mint": 223,
       "direct_action": {
-        "count": 204,
+        "count": 205,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -168608,9 +168644,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5238,
+      "total_mint": 5239,
       "direct_action": {
-        "count": 4364,
+        "count": 4365,
         "pct": 83.3
       },
       "editorial_alarm": {
@@ -168624,8 +168660,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 64,
-      "institutional": 184,
-      "citizen_ratio": 0.258,
+      "institutional": 185,
+      "citizen_ratio": 0.257,
       "daily": [
         {
           "date": "2026-09-02",
@@ -168660,7 +168696,7 @@
         {
           "date": "2026-09-08",
           "citizen": 2,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -168730,6 +168766,7 @@
         7028
       ],
       "event_ids_institutional": [
+        7272,
         7271,
         7270,
         7267,
