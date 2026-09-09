@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-09T06:05:32.485523+00:00",
-  "total_events": 7314,
+  "generated_at": "2026-09-09T07:04:41.166501+00:00",
+  "total_events": 7315,
   "total_burned": 7913439255,
-  "total_minted": 9828612939,
+  "total_minted": 9828937939,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7315,
+      "event_title": "India's Manipur vows to complete Myanmar border fence by 2028",
+      "event_url": "https://asia.nikkei.com/politics/international-relations/india-s-manipur-vows-to-complete-myanmar-border-fence-by-2028",
+      "event_source": "Nikkei Asia",
+      "decision": "MINT",
+      "amount_crbn": 325000,
+      "final_score": -2.56,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Border fence approval enables rights violations and environmental harm, outweighing limited security benefits. | While the border fence may bolster national security (SDG 16), its negative impacts on indigenous rights, humanitarian access, and environmental integrity are severe and multi-dimensional. The violation of UDHR and UNDRIP protections for marginalized communities, cou",
+      "tx_hash": "zmAWxiJE2uNQ2WoiEb2TGbAPVPxyBs8eMc3prJYEHwwQUThETRVC6ZRSfVWDaR5ZwWPQGENSB9njybVMKBuBRvL",
+      "created_at": "2026-09-09T07:04:34.190817+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"Completion of border infrastructure may enhance national security and reduce illegal cross-border activities, supporting SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Border fencing disrupts indigenous communities, violates freedom of movement (UDHR Article 13), and undermines rights of ethnic groups (UNDRIP), particularly in conflict-prone regions like Manipur.\", \"affected_sdgs\": [1, 10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UNDRIP\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Fencing may exacerbate humanitarian crises by restricting access to refuge for displaced populations from Myanmar, violating CRC and UDHR protections for asylum seekers.\", \"affected_sdgs\": [1, 10, 16], \"violated_rights\": [\"UDHR Article 14\", \"CRC\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Environmental degradation from construction (e.g., deforestation, habitat fragmentation) undermines SDGs 13 (Climate Action) and 15 (Life on Land), and violates Animal Rights and Planetary Boundaries.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7314,
       "event_title": "In Ukraine, the resignation of the prosecutor general in a corruption case weakens Volodymyr Zelensky’s political structure",
@@ -168232,8 +168255,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 48,
-        "total_amount": 49845600
+        "count": 47,
+        "total_amount": 49720600
       },
       {
         "country": "France",
@@ -168286,8 +168309,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.167,
-        "events": 12
+        "burn_ratio": 0.154,
+        "events": 13
       },
       {
         "region": "Latin America",
@@ -168301,8 +168324,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.074,
-        "events": 54
+        "burn_ratio": 0.075,
+        "events": 53
       },
       {
         "region": "Oceania",
@@ -168328,8 +168351,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.926,
-        "events": 54
+        "mint_ratio": 0.925,
+        "events": 53
       },
       {
         "region": "Europe",
@@ -168370,7 +168393,7 @@
       },
       {
         "date": "2026-09-09",
-        "net_minted": 16753000,
+        "net_minted": 17078000,
         "net_burned": 0
       }
     ],
@@ -168416,6 +168439,7 @@
           7066
         ],
         "event_ids_negative": [
+          7315,
           7314,
           7313,
           7312,
@@ -168640,8 +168664,7 @@
           7070,
           7068,
           7067,
-          7065,
-          7064
+          7065
         ]
       },
       "UDHR": {
@@ -168669,6 +168692,7 @@
           7066
         ],
         "event_ids_negative": [
+          7315,
           7314,
           7313,
           7312,
@@ -168874,8 +168898,7 @@
           7070,
           7068,
           7067,
-          7065,
-          7064
+          7065
         ]
       },
       "ILO": {
@@ -168927,13 +168950,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           7161,
           7110,
           7066
         ],
         "event_ids_negative": [
+          7315,
           7308,
           7303,
           7301,
@@ -169017,7 +169041,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 80,
+        "negative": 81,
         "event_ids_positive": [
           7255,
           7152,
@@ -169026,6 +169050,7 @@
           7066
         ],
         "event_ids_negative": [
+          7315,
           7306,
           7303,
           7301,
@@ -169110,7 +169135,7 @@
       },
       "Animal": {
         "positive": 8,
-        "negative": 21,
+        "negative": 22,
         "event_ids_positive": [
           7255,
           7197,
@@ -169122,6 +169147,7 @@
           7069
         ],
         "event_ids_negative": [
+          7315,
           7294,
           7293,
           7268,
@@ -169147,7 +169173,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 66,
+        "negative": 67,
         "event_ids_positive": [
           7302,
           7255,
@@ -169165,6 +169191,7 @@
           7088
         ],
         "event_ids_negative": [
+          7315,
           7306,
           7301,
           7300,
@@ -169609,9 +169636,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5279,
+      "total_mint": 5280,
       "direct_action": {
-        "count": 4403,
+        "count": 4404,
         "pct": 83.4
       },
       "editorial_alarm": {
@@ -169624,9 +169651,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 62,
-      "institutional": 189,
-      "citizen_ratio": 0.247,
+      "citizen": 63,
+      "institutional": 188,
+      "citizen_ratio": 0.251,
       "daily": [
         {
           "date": "2026-09-03",
@@ -169660,11 +169687,12 @@
         },
         {
           "date": "2026-09-09",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        7315,
         7300,
         7299,
         7293,
@@ -169916,8 +169944,7 @@
         7069,
         7068,
         7067,
-        7065,
-        7064
+        7065
       ]
     }
   }
