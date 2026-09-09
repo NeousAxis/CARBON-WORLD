@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-09T01:06:47.446842+00:00",
-  "total_events": 7308,
+  "generated_at": "2026-09-09T02:07:25.788945+00:00",
+  "total_events": 7309,
   "total_burned": 7913439255,
-  "total_minted": 9825979939,
+  "total_minted": 9826583939,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7309,
+      "event_title": "NIH to use part of its budget to pay for Department of Defense research",
+      "event_url": "https://arstechnica.com/science/2026/09/nih-to-use-part-of-its-budget-to-pay-for-department-of-defense-research/",
+      "event_source": "Ars Technica Science",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.24,
+      "confidence": 8,
+      "justification": "Reallocation of NIH funds to defense research undermines public health equity and scientific autonomy. | The decision to reallocate NIH funds to Department of Defense research prioritizes defense objectives over civilian biomedical innovation, risking long-term harm to public health equity and scientific autonomy. While dual-use research may yield some benefits, the diversion undermines core SDGs and lacks democratic oversight, creating a net negative ethical outcome.",
+      "tx_hash": "HsdvDMJvvThwChug9pDVPWjAP1qFjjKB3jE2P56crYTKXJLzwX5tsvsvNVwk8jErmEK9tUh5SxnBLmMLiGxD1Gp",
+      "created_at": "2026-09-09T02:07:20.229710+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Potential redirection of NIH funds to support dual-use research with public health applications (e.g., infectious disease, trauma care, or medical countermeasures).\", \"affected_sdgs\": [3, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Diversion of NIH budget away from civilian biomedical research priorities, potentially undermining public health innovation and basic science funding.\", \"affected_sdgs\": [3, 9, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of militarization of biomedical research, prioritizing defense objectives over global health equity and civilian needs.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Lack of transparency or public consultation in reallocating funds, undermining accountability in scientific funding.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7308,
       "event_title": "Zohran Mamdani denounces air toxicity cover-ups in New York after 9/11: 'People fell ill because leaders lied to them'",
@@ -751,7 +774,7 @@
       "final_score": -2.45,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.935) from event #7270",
-      "tx_hash": null,
+      "tx_hash": "3ZCRvd6wPB5pqRkA9ng9SmVfSDnNWjtKm2VFh6fxihFWTiDXwzqgkyjdtDSDUDXxpnBhMctpMWjaXNeUHwUeyUyT",
       "created_at": "2026-09-08T09:04:27.468136+00:00",
       "embedding": null,
       "reused_from_event_id": 7270,
@@ -168094,8 +168117,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 52,
-        "total_amount": 65118600
+        "count": 53,
+        "total_amount": 65722600
       },
       {
         "country": "France",
@@ -168168,8 +168191,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.069,
-        "events": 58
+        "burn_ratio": 0.068,
+        "events": 59
       }
     ],
     "top_regions_destructive": [
@@ -168185,8 +168208,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.931,
-        "events": 58
+        "mint_ratio": 0.932,
+        "events": 59
       },
       {
         "region": "Oceania",
@@ -168227,12 +168250,12 @@
       },
       {
         "date": "2026-09-08",
-        "net_minted": 52676920,
+        "net_minted": 53352920,
         "net_burned": 1050000
       },
       {
         "date": "2026-09-09",
-        "net_minted": 14120000,
+        "net_minted": 14724000,
         "net_burned": 0
       }
     ],
@@ -168250,7 +168273,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 228,
+        "negative": 229,
         "event_ids_positive": [
           7302,
           7282,
@@ -168278,6 +168301,7 @@
           7066
         ],
         "event_ids_negative": [
+          7309,
           7308,
           7307,
           7306,
@@ -168510,7 +168534,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 208,
+        "negative": 209,
         "event_ids_positive": [
           7302,
           7282,
@@ -168533,6 +168557,7 @@
           7066
         ],
         "event_ids_negative": [
+          7309,
           7308,
           7307,
           7306,
@@ -169110,12 +169135,12 @@
       "niche_pct": 71.8,
       "mainstream_pct": 28.2,
       "total_sources_used": 78,
-      "articles_processed": 253
+      "articles_processed": 255
     },
     "cache_hit_rate_7d": {
-      "hits": 1,
-      "total_events": 253,
-      "pct": 0.4
+      "hits": 2,
+      "total_events": 255,
+      "pct": 0.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -169223,10 +169248,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 31,
+        "count": 32,
         "burn_count": 4,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          7309,
           7282,
           7265,
           7244,
@@ -169330,12 +169356,13 @@
       },
       {
         "name": "Tech",
-        "count": 18,
+        "count": 19,
         "burn_count": 3,
-        "mint_count": 15,
+        "mint_count": 16,
         "event_ids": [
           7281,
           7279,
+          7276,
           7270,
           7255,
           7242,
@@ -169467,24 +169494,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 229,
+      "total_mint": 231,
       "direct_action": {
-        "count": 214,
-        "pct": 93.4
+        "count": 215,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 14,
         "pct": 6.1
       },
       "untyped": {
-        "count": 1,
-        "pct": 0.4
+        "count": 2,
+        "pct": 0.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5272,
+      "total_mint": 5274,
       "direct_action": {
-        "count": 4397,
+        "count": 4398,
         "pct": 83.4
       },
       "editorial_alarm": {
@@ -169492,14 +169519,14 @@
         "pct": 6.1
       },
       "untyped": {
-        "count": 553,
+        "count": 554,
         "pct": 10.5
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 63,
-      "institutional": 190,
-      "citizen_ratio": 0.249,
+      "institutional": 192,
+      "citizen_ratio": 0.247,
       "daily": [
         {
           "date": "2026-09-03",
@@ -169529,12 +169556,12 @@
         {
           "date": "2026-09-08",
           "citizen": 9,
-          "institutional": 31
+          "institutional": 32
         },
         {
           "date": "2026-09-09",
           "citizen": 0,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -169603,6 +169630,7 @@
         7060
       ],
       "event_ids_institutional": [
+        7309,
         7308,
         7307,
         7306,
@@ -169629,6 +169657,7 @@
         7279,
         7278,
         7277,
+        7276,
         7274,
         7273,
         7272,
