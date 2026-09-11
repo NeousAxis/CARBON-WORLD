@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-11T11:06:39.330224+00:00",
-  "total_events": 7398,
+  "generated_at": "2026-09-11T12:07:04.936427+00:00",
+  "total_events": 7399,
   "total_burned": 7918656855,
-  "total_minted": 9895821439,
+  "total_minted": 9901861439,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7399,
+      "event_title": "Beijing lodges diplomatic protests over Taiwan official’s visit to Italy",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3367234/beijing-lodges-diplomatic-protests-over-taiwan-officials-visit-italy?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -3.79,
+      "confidence": 8,
+      "justification": "Beijing's diplomatic protests enable isolation of Taiwan, violating self-determination and global partnership principles. | The action—Beijing's diplomatic protests—undermines Taiwan's right to self-determination and international participation, violating core principles of the UDHR and UNDRIP. While framed as a sovereignty issue by China, it restricts Taiwan's ability to engage globally, harming SDGs 16 (Peace and Justice) and 17 (Partnerships). The negative impact is direct and institutional, ",
+      "tx_hash": "4UdAUGMcGYYyV18ZWzxNwaVoEJKri7b4s7SLp9HJveeG6DXdfDgJaRdZnb564UCJPBQcUrWxwf4SzzMm3XBLcKk",
+      "created_at": "2026-09-11T12:06:59.130845+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Beijing lodges diplomatic protests against Italy and the EU for hosting a Taiwanese official, reinforcing its claim of sovereignty over Taiwan and potentially chilling cross-strait dialogue or international engagement with Taiwan.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 19\", \"UNDRIP (self-determination)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Diplomatic pressure from a major power (China) may limit Italy and the EU's future engagement with Taiwan, reducing Taiwan's international participation and access to global partnerships.\", \"affected_sdgs\": [10, 16, 17], \"violated_rights\": [\"UDHR Article 2 (non-discrimination)\", \"UDHR Article 28 (social order)\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7398,
       "event_title": "Cardiologists in Amsterdam and Nijmegen raided over corruption",
@@ -170200,11 +170223,6 @@
         "total_amount": 1925000
       },
       {
-        "country": "Australia",
-        "count": 2,
-        "total_amount": 1400000
-      },
-      {
         "country": "Austria",
         "count": 1,
         "total_amount": 350000
@@ -170213,6 +170231,11 @@
         "country": "United Kingdom",
         "count": 1,
         "total_amount": 425000
+      },
+      {
+        "country": "Australia",
+        "count": 1,
+        "total_amount": 700000
       }
     ],
     "top_regions_sustainable": [
@@ -170227,11 +170250,6 @@
         "events": 45
       },
       {
-        "region": "Oceania",
-        "burn_ratio": 0.133,
-        "events": 15
-      },
-      {
         "region": "Asia",
         "burn_ratio": 0.111,
         "events": 18
@@ -170240,6 +170258,11 @@
         "region": "Europe",
         "burn_ratio": 0.079,
         "events": 76
+      },
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.071,
+        "events": 14
       }
     ],
     "top_regions_destructive": [
@@ -170254,6 +170277,11 @@
         "events": 15
       },
       {
+        "region": "Oceania",
+        "mint_ratio": 0.929,
+        "events": 14
+      },
+      {
         "region": "Europe",
         "mint_ratio": 0.921,
         "events": 76
@@ -170262,11 +170290,6 @@
         "region": "Asia",
         "mint_ratio": 0.889,
         "events": 18
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.867,
-        "events": 45
       }
     ],
     "supply_trend_7d": [
@@ -170302,7 +170325,7 @@
       },
       {
         "date": "2026-09-11",
-        "net_minted": 3843800,
+        "net_minted": 9883800,
         "net_burned": 350000
       }
     ],
@@ -170319,8 +170342,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 23,
-        "negative": 214,
+        "positive": 22,
+        "negative": 215,
         "event_ids_positive": [
           7394,
           7384,
@@ -170343,10 +170366,10 @@
           7197,
           7196,
           7180,
-          7173,
-          7161
+          7173
         ],
         "event_ids_negative": [
+          7399,
           7398,
           7397,
           7396,
@@ -170564,8 +170587,8 @@
         ]
       },
       "UDHR": {
-        "positive": 21,
-        "negative": 197,
+        "positive": 20,
+        "negative": 198,
         "event_ids_positive": [
           7394,
           7384,
@@ -170586,10 +170609,10 @@
           7202,
           7197,
           7196,
-          7180,
-          7161
+          7180
         ],
         "event_ids_negative": [
+          7399,
           7398,
           7397,
           7396,
@@ -170790,12 +170813,11 @@
         ]
       },
       "ILO": {
-        "positive": 3,
+        "positive": 2,
         "negative": 39,
         "event_ids_positive": [
           7373,
-          7235,
-          7161
+          7235
         ],
         "event_ids_negative": [
           7391,
@@ -170840,12 +170862,11 @@
         ]
       },
       "CRC": {
-        "positive": 3,
+        "positive": 2,
         "negative": 68,
         "event_ids_positive": [
           7327,
-          7318,
-          7161
+          7318
         ],
         "event_ids_negative": [
           7395,
@@ -170920,12 +170941,13 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 82,
+        "negative": 83,
         "event_ids_positive": [
           7318,
           7255
         ],
         "event_ids_negative": [
+          7399,
           7393,
           7391,
           7389,
@@ -171354,8 +171376,8 @@
       },
       {
         "name": "Tech",
-        "count": 14,
-        "burn_count": 3,
+        "count": 13,
+        "burn_count": 2,
         "mint_count": 11,
         "event_ids": [
           7382,
@@ -171370,8 +171392,7 @@
           7189,
           7188,
           7176,
-          7168,
-          7161
+          7168
         ]
       },
       {
@@ -171424,14 +171445,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 23,
+      "total_burn": 22,
       "direct_action": {
-        "count": 20,
-        "pct": 87.0
+        "count": 19,
+        "pct": 86.4
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 13.0
+        "pct": 13.6
       },
       "untyped": {
         "count": 0,
@@ -171454,9 +171475,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 215,
+      "total_mint": 216,
       "direct_action": {
-        "count": 198,
+        "count": 199,
         "pct": 92.1
       },
       "editorial_alarm": {
@@ -171469,9 +171490,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5352,
+      "total_mint": 5353,
       "direct_action": {
-        "count": 4470,
+        "count": 4471,
         "pct": 83.5
       },
       "editorial_alarm": {
@@ -171480,7 +171501,7 @@
       },
       "untyped": {
         "count": 554,
-        "pct": 10.4
+        "pct": 10.3
       }
     },
     "citizen_vs_institutional_7d": {
@@ -171521,7 +171542,7 @@
         {
           "date": "2026-09-11",
           "citizen": 7,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -171598,6 +171619,7 @@
         7165
       ],
       "event_ids_institutional": [
+        7399,
         7398,
         7397,
         7396,
@@ -171763,8 +171785,7 @@
         7166,
         7164,
         7163,
-        7162,
-        7161
+        7162
       ]
     }
   }
