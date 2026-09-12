@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-12T08:05:56.561134+00:00",
-  "total_events": 7429,
+  "generated_at": "2026-09-12T09:04:59.717183+00:00",
+  "total_events": 7430,
   "total_burned": 7921264355,
-  "total_minted": 9911156139,
+  "total_minted": 9911656139,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7430,
+      "event_title": "Saudi Arabia shuts down key oil pipeline after drone strikes",
+      "event_url": "https://www.tagesschau.de/ausland/asien/saudi-arabien-stellt-betrieb-von-oelpipeline-ein-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.79,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Security-driven fossil fuel disruption lacks climate intent and risks economic harm, outweighing temporary emissions reduction. | While the pipeline shutdown incidentally reduces short-term emissions, it is a security-driven action lacking climate intent. The negative economic and systemic consequences outweigh the temporary environmental benefit, particularly given the absence",
+      "tx_hash": "4WyXNRG9rgTBrA1wQAxFx6LrMdwuYbewWujeyxbYxgGDm4pU97RGoCjGGFVpS5mPe5P8CJpU1mCKck5V6XH5e8Y1",
+      "created_at": "2026-09-12T09:04:54.485893+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": "[{\"description\": \"Temporary shutdown of oil pipeline reduces immediate fossil fuel extraction and transportation, aligning with climate action goals.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Decision driven by security threats (drone strikes) rather than proactive climate policy, undermining long-term energy transition stability and economic predictability.\", \"affected_sdgs\": [7, 8, 9, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential economic disruption and price volatility may disproportionately affect vulnerable populations reliant on affordable energy access.\", \"affected_sdgs\": [1, 7, 8, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Security-driven shutdown normalizes reactive measures over systemic solutions, potentially delaying renewable energy investments.\", \"affected_sdgs\": [7, 13, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 7429,
       "event_title": "New Hope for Tapanuli Orangutan Conservation via Canopy Bridges",
@@ -170914,8 +170937,8 @@
       },
       {
         "country": "Indonesia",
-        "count": 2,
-        "total_amount": 1057500
+        "count": 1,
+        "total_amount": 700000
       },
       {
         "country": "Honduras",
@@ -170941,8 +170964,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.15,
-        "events": 20
+        "burn_ratio": 0.105,
+        "events": 19
       },
       {
         "region": "Oceania",
@@ -170959,7 +170982,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 19
+        "events": 20
       },
       {
         "region": "Africa",
@@ -170978,8 +171001,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.85,
-        "events": 20
+        "mint_ratio": 0.895,
+        "events": 19
       }
     ],
     "supply_trend_7d": [
@@ -171015,7 +171038,7 @@
       },
       {
         "date": "2026-09-12",
-        "net_minted": 4586200,
+        "net_minted": 5086200,
         "net_burned": 700000
       }
     ],
@@ -171032,8 +171055,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 23,
-        "negative": 209,
+        "positive": 22,
+        "negative": 210,
         "event_ids_positive": [
           7429,
           7413,
@@ -171056,10 +171079,10 @@
           7235,
           7229,
           7226,
-          7202,
-          7197
+          7202
         ],
         "event_ids_negative": [
+          7430,
           7428,
           7427,
           7426,
@@ -171272,8 +171295,8 @@
         ]
       },
       "UDHR": {
-        "positive": 20,
-        "negative": 196,
+        "positive": 19,
+        "negative": 197,
         "event_ids_positive": [
           7413,
           7409,
@@ -171293,10 +171316,10 @@
           7255,
           7235,
           7229,
-          7202,
-          7197
+          7202
         ],
         "event_ids_negative": [
+          7430,
           7428,
           7427,
           7426,
@@ -171703,14 +171726,13 @@
         ]
       },
       "Animal": {
-        "positive": 5,
+        "positive": 4,
         "negative": 11,
         "event_ids_positive": [
           7429,
           7401,
           7384,
-          7255,
-          7197
+          7255
         ],
         "event_ids_negative": [
           7422,
@@ -171727,8 +171749,8 @@
         ]
       },
       "PB": {
-        "positive": 13,
-        "negative": 61,
+        "positive": 12,
+        "negative": 62,
         "event_ids_positive": [
           7429,
           7413,
@@ -171741,10 +171763,10 @@
           7235,
           7229,
           7226,
-          7202,
-          7197
+          7202
         ],
         "event_ids_negative": [
+          7430,
           7423,
           7422,
           7412,
@@ -171810,9 +171832,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.8,
-      "mainstream_pct": 28.2,
-      "total_sources_used": 78,
+      "niche_pct": 71.4,
+      "mainstream_pct": 28.6,
+      "total_sources_used": 77,
       "articles_processed": 233
     },
     "cache_hit_rate_7d": {
@@ -171919,10 +171941,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 28,
+        "count": 29,
         "burn_count": 6,
-        "mint_count": 22,
+        "mint_count": 23,
         "event_ids": [
+          7430,
           7426,
           7423,
           7414,
@@ -172104,14 +172127,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 23,
+      "total_burn": 22,
       "direct_action": {
-        "count": 19,
-        "pct": 82.6
+        "count": 18,
+        "pct": 81.8
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 17.4
+        "pct": 18.2
       },
       "untyped": {
         "count": 0,
@@ -172134,14 +172157,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 210,
+      "total_mint": 211,
       "direct_action": {
-        "count": 195,
+        "count": 196,
         "pct": 92.9
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.7
+        "pct": 6.6
       },
       "untyped": {
         "count": 1,
@@ -172149,9 +172172,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5379,
+      "total_mint": 5380,
       "direct_action": {
-        "count": 4495,
+        "count": 4496,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -172164,9 +172187,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 75,
-      "institutional": 158,
-      "citizen_ratio": 0.322,
+      "citizen": 74,
+      "institutional": 159,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-09-06",
@@ -172201,7 +172224,7 @@
         {
           "date": "2026-09-12",
           "citizen": 5,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -172278,10 +172301,10 @@
         7215,
         7213,
         7204,
-        7201,
-        7197
+        7201
       ],
       "event_ids_institutional": [
+        7430,
         7428,
         7426,
         7424,
