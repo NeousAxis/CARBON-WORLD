@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-12T02:05:58.195167+00:00",
-  "total_events": 7422,
+  "generated_at": "2026-09-12T04:05:51.899831+00:00",
+  "total_events": 7423,
   "total_burned": 7920564355,
-  "total_minted": 9908415739,
+  "total_minted": 9908915739,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7423,
+      "event_title": "Saudi Arabia closes East-West oil pipeline, bypassing Ormuz Strait blockage after drone attacks from Iraq",
+      "event_url": "https://www.lemonde.fr/international/article/2026/09/12/l-arabie-saoudite-ferme-l-oleoduc-est-ouest-voie-de-contournement-au-blocage-du-detroit-d-ormuz-apres-des-attaques-de-drones-tires-d-irak_6770637_3211.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.85,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Closure escalates regional conflict dynamics, outweighing short-term environmental benefits. | The closure of the East-West oil pipeline reduces immediate environmental risks associated with maritime conflict in the Strait of Hormuz but signals a deepening of regional instability. The action is reactive rather than preventive, prioritizing short-term energy security over long-t",
+      "tx_hash": "4AHijVcXou8hmLsyNkZxxRuynxPRk7pszxDXuHdPzpBjoQyRwbj7yJhqC9cM8o9RbNxvSjC8ZrLTfKYoDvoCqnRR",
+      "created_at": "2026-09-12T04:05:46.782125+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": "[{\"description\": \"Closure of the East-West oil pipeline reduces reliance on the Strait of Hormuz, potentially lowering geopolitical tensions and risks of environmental disasters from maritime conflicts in the region.\", \"affected_sdgs\": [7, 13, 14, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Closure of the pipeline may signal escalation of regional conflict, increasing instability and risk of broader military engagement, which could lead to environmental degradation and human rights violations.\", \"affected_sdgs\": [13, 15, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The action is a direct response to drone attacks, which may normalize retaliatory measures, undermining peacebuilding efforts and increasing civilian vulnerability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 7422,
       "event_title": "Concerns of Indigenous Communities as Gunung Mutis Declared a National Park",
@@ -170798,7 +170821,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 17
+        "events": 18
       },
       {
         "region": "Africa",
@@ -170854,7 +170877,7 @@
       },
       {
         "date": "2026-09-12",
-        "net_minted": 1845800,
+        "net_minted": 2345800,
         "net_burned": 0
       }
     ],
@@ -170872,7 +170895,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 204,
+        "negative": 205,
         "event_ids_positive": [
           7413,
           7409,
@@ -170899,6 +170922,7 @@
           7196
         ],
         "event_ids_negative": [
+          7423,
           7422,
           7421,
           7420,
@@ -171107,7 +171131,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 191,
+        "negative": 192,
         "event_ids_positive": [
           7413,
           7409,
@@ -171132,6 +171156,7 @@
           7196
         ],
         "event_ids_negative": [
+          7423,
           7422,
           7421,
           7420,
@@ -171553,7 +171578,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 60,
+        "negative": 61,
         "event_ids_positive": [
           7413,
           7401,
@@ -171569,6 +171594,7 @@
           7197
         ],
         "event_ids_negative": [
+          7423,
           7422,
           7412,
           7410,
@@ -171636,11 +171662,11 @@
       "niche_pct": 70.1,
       "mainstream_pct": 29.9,
       "total_sources_used": 77,
-      "articles_processed": 228
+      "articles_processed": 229
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 228,
+      "total_events": 229,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -171743,10 +171769,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 27,
+        "count": 28,
         "burn_count": 6,
-        "mint_count": 21,
+        "mint_count": 22,
         "event_ids": [
+          7423,
           7414,
           7413,
           7406,
@@ -171914,10 +171941,11 @@
       },
       {
         "name": "Transport",
-        "count": 4,
+        "count": 5,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          7423,
           7377,
           7359,
           7344,
@@ -171956,9 +171984,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 205,
+      "total_mint": 206,
       "direct_action": {
-        "count": 191,
+        "count": 192,
         "pct": 93.2
       },
       "editorial_alarm": {
@@ -171971,9 +171999,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5373,
+      "total_mint": 5374,
       "direct_action": {
-        "count": 4490,
+        "count": 4491,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -171987,8 +172015,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 72,
-      "institutional": 156,
-      "citizen_ratio": 0.316,
+      "institutional": 157,
+      "citizen_ratio": 0.314,
       "daily": [
         {
           "date": "2026-09-06",
@@ -172023,7 +172051,7 @@
         {
           "date": "2026-09-12",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -172101,6 +172129,7 @@
         7197
       ],
       "event_ids_institutional": [
+        7423,
         7421,
         7419,
         7417,
