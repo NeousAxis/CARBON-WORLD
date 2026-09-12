@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-12T15:05:52.885994+00:00",
-  "total_events": 7433,
+  "generated_at": "2026-09-12T16:05:16.088264+00:00",
+  "total_events": 7434,
   "total_burned": 7921964355,
-  "total_minted": 9912320539,
+  "total_minted": 9912620539,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7434,
+      "event_title": "Poland issued EU’s third most residence permits to immigrants in 2025",
+      "event_url": "https://notesfrompoland.com/2026/09/12/poland-issued-eus-third-most-residence-permits-to-immigrants-in-2025/",
+      "event_source": "Notes From Poland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.69,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Tightening migration rules enables harm by restricting rights, despite high permit issuance. | While Poland’s issuance of residence permits supports labor market and humanitarian goals, the tightening of migration rules and multi-year decline in permits represent a significant negative shift. The restrictive trend undermines human rights and global equity, outweighing the be",
+      "tx_hash": "o4BX2eraSJWC1A6pANAtAaQnkEAXHc9JRSULsxGudT43yjFmaeXiCfRuQGtKdkTHV9wtwfm8SKFebYS3xrNpBad",
+      "created_at": "2026-09-12T16:05:10.054726+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Poland",
+      "region": "Europe",
+      "administration": "Poland-KO",
+      "positive_aspects_json": "[{\"description\": \"Issuance of residence permits supports labor market needs, family reunification, and humanitarian protection, aligning with SDGs 8 (Decent Work) and 10 (Reduced Inequalities).\", \"affected_sdgs\": [8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Tightening of migration rules reduces access to safe migration pathways, potentially increasing irregular migration and violating UDHR Article 13 (freedom of movement) and Article 14 (right to asylum).\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 14\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Decline in permits for the fourth consecutive year signals a restrictive trend, undermining SDG 10 (Reduced Inequalities) and SDG 16 (Peace, Justice, and Strong Institutions).\", \"affected_sdgs\": [10, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 667000
+    },
     {
       "id": 7433,
       "event_title": "Saxony-Anhalt revokes firearm permits from AfD hunters",
@@ -170969,8 +170992,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 32,
-        "total_amount": 35107200
+        "count": 31,
+        "total_amount": 34431200
       },
       {
         "country": "France",
@@ -171028,8 +171051,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.175,
-        "events": 40
+        "burn_ratio": 0.179,
+        "events": 39
       },
       {
         "region": "Asia",
@@ -171044,7 +171067,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.056,
-        "events": 71
+        "events": 72
       }
     ],
     "top_regions_destructive": [
@@ -171061,7 +171084,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.944,
-        "events": 71
+        "events": 72
       },
       {
         "region": "Oceania",
@@ -171107,7 +171130,7 @@
       },
       {
         "date": "2026-09-12",
-        "net_minted": 5750600,
+        "net_minted": 6050600,
         "net_burned": 1400000
       }
     ],
@@ -171151,6 +171174,7 @@
           7226
         ],
         "event_ids_negative": [
+          7434,
           7432,
           7431,
           7430,
@@ -171357,13 +171381,12 @@
           7207,
           7206,
           7205,
-          7204,
-          7203
+          7204
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 195,
+        "negative": 196,
         "event_ids_positive": [
           7433,
           7413,
@@ -171386,6 +171409,7 @@
           7229
         ],
         "event_ids_negative": [
+          7434,
           7432,
           7431,
           7430,
@@ -171791,7 +171815,7 @@
       },
       "Animal": {
         "positive": 4,
-        "negative": 12,
+        "negative": 11,
         "event_ids_positive": [
           7429,
           7401,
@@ -171809,13 +171833,12 @@
           7293,
           7268,
           7250,
-          7211,
-          7203
+          7211
         ]
       },
       "PB": {
         "positive": 11,
-        "negative": 63,
+        "negative": 62,
         "event_ids_positive": [
           7429,
           7413,
@@ -171891,15 +171914,14 @@
           7207,
           7206,
           7205,
-          7204,
-          7203
+          7204
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.4,
-      "mainstream_pct": 28.6,
-      "total_sources_used": 77,
+      "niche_pct": 69.7,
+      "mainstream_pct": 30.3,
+      "total_sources_used": 76,
       "articles_processed": 231
     },
     "cache_hit_rate_7d": {
@@ -171935,10 +171957,11 @@
       },
       {
         "name": "EU",
-        "count": 13,
+        "count": 14,
         "burn_count": 2,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          7434,
           7402,
           7396,
           7372,
@@ -172234,9 +172257,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5382,
+      "total_mint": 5383,
       "direct_action": {
-        "count": 4498,
+        "count": 4499,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -172286,7 +172309,7 @@
         {
           "date": "2026-09-12",
           "citizen": 6,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -172366,6 +172389,7 @@
         7204
       ],
       "event_ids_institutional": [
+        7434,
         7433,
         7432,
         7430,
@@ -172521,8 +172545,7 @@
         7208,
         7207,
         7206,
-        7205,
-        7203
+        7205
       ]
     }
   }
