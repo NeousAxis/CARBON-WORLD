@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-11T23:09:09.302949+00:00",
-  "total_events": 7418,
+  "generated_at": "2026-09-12T00:07:41.606918+00:00",
+  "total_events": 7419,
   "total_burned": 7920564355,
-  "total_minted": 9906569939,
+  "total_minted": 9908069939,
   "pending_reviews": 2,
   "events": [
+    {
+      "id": 7419,
+      "event_title": "UN extends partial Sudan arms embargo for a month",
+      "event_url": "https://www.aljazeera.com/news/2026/9/11/un-extends-partial-sudan-arms-embargo-for-a-month?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.03,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] UN's partial arms embargo restricts weapon flow, aiming to protect civilians despite its limited scope. | The extension of a partial arms embargo signals limited international commitment to de-escalation but fails to fully address the conflict’s root causes or halt weapons flows. The partial nature of the embargo undermines its effectiveness, while the invocation of self-def",
+      "tx_hash": "3uxApe1o5ewZHFrGakZQRQSePXcMQhU7xFxeJBcHGwbwrfQixHxjE3Ysadd2g73trh7WKZ3aEZbAGAAvzKtwicBn",
+      "created_at": "2026-09-12T00:07:34.818645+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"UN extends partial arms embargo on Sudan, limiting weapons flow into a conflict zone and reducing potential for escalation of violence.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Partial embargo (not total) allows continued arms transfers, enabling ongoing conflict and human rights violations in Sudan.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Sudan’s argument for self-defence under UN Charter (Article 51) may be exploited to justify internal repression or external aggression, undermining peace efforts.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 7418,
       "event_title": "Israeli demolitions threaten schools and homes in Masafer Yatta",
@@ -170698,8 +170721,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.069,
-        "events": 72
+        "burn_ratio": 0.07,
+        "events": 71
       }
     ],
     "top_regions_destructive": [
@@ -170715,8 +170738,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.931,
-        "events": 72
+        "mint_ratio": 0.93,
+        "events": 71
       },
       {
         "region": "Oceania",
@@ -170730,11 +170753,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-09-05",
-        "net_minted": 15193200,
-        "net_burned": 1557500
-      },
       {
         "date": "2026-09-06",
         "net_minted": 27382810,
@@ -170764,6 +170782,11 @@
         "date": "2026-09-11",
         "net_minted": 14592300,
         "net_burned": 2257500
+      },
+      {
+        "date": "2026-09-12",
+        "net_minted": 1500000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -170807,6 +170830,7 @@
           7196
         ],
         "event_ids_negative": [
+          7419,
           7418,
           7417,
           7416,
@@ -171008,8 +171032,7 @@
           7198,
           7195,
           7194,
-          7193,
-          7192
+          7193
         ]
       },
       "UDHR": {
@@ -171039,6 +171062,7 @@
           7196
         ],
         "event_ids_negative": [
+          7419,
           7418,
           7417,
           7416,
@@ -171226,8 +171250,7 @@
           7199,
           7198,
           7195,
-          7193,
-          7192
+          7193
         ]
       },
       "ILO": {
@@ -171553,10 +171576,11 @@
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 15,
+        "count": 16,
         "burn_count": 1,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          7419,
           7409,
           7368,
           7336,
@@ -171716,10 +171740,11 @@
       },
       {
         "name": "Defense",
-        "count": 18,
+        "count": 19,
         "burn_count": 0,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          7419,
           7395,
           7380,
           7370,
@@ -171875,9 +171900,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5369,
+      "total_mint": 5370,
       "direct_action": {
-        "count": 4486,
+        "count": 4487,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -171894,11 +171919,6 @@
       "institutional": 155,
       "citizen_ratio": 0.317,
       "daily": [
-        {
-          "date": "2026-09-05",
-          "citizen": 5,
-          "institutional": 16
-        },
         {
           "date": "2026-09-06",
           "citizen": 7,
@@ -171928,6 +171948,11 @@
           "date": "2026-09-11",
           "citizen": 17,
           "institutional": 17
+        },
+        {
+          "date": "2026-09-12",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -172005,6 +172030,7 @@
         7193
       ],
       "event_ids_institutional": [
+        7419,
         7417,
         7416,
         7415,
@@ -172158,8 +172184,7 @@
         7199,
         7198,
         7196,
-        7195,
-        7192
+        7195
       ]
     }
   }
