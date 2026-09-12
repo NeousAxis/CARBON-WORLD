@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-12T21:04:12.393927+00:00",
-  "total_events": 7436,
+  "generated_at": "2026-09-12T22:05:43.903523+00:00",
+  "total_events": 7437,
   "total_burned": 7923164355,
-  "total_minted": 9913161539,
+  "total_minted": 9919921539,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7437,
+      "event_title": "Saudi Arabia shuts down East-West pipeline as Houthis escalate Red Sea control",
+      "event_url": "https://www.france24.com/en/middle-east/20260912-saudi-arabia-shut-down-east-west-pipeline-as-houthis-tighten-grip-on-red-sea",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -4.85,
+      "confidence": 8,
+      "justification": "Shutdown of critical energy infrastructure enables conflict-driven harm, undermines global stability, and increases emissions. | The shutdown of the East-West pipeline represents a significant negative action with far-reaching consequences for global energy security, economic stability, and climate goals. While the decision is framed as a security measure, it directly undermines SDGs related to affordable energy, economic growth, and climate action, while violating fundamental human rights to se",
+      "tx_hash": "3x6gMo1umJuqo2kuEdJsDphmKMXezmPe75Q681m2GrUDW7xbubr75hSXiB8rvy9Yj87Ewr9ZbfwLnMkHo4Tg47QG",
+      "created_at": "2026-09-12T22:05:39.164311+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Saudi Arabia shuts down the East-West pipeline, a critical energy infrastructure, due to security threats, disrupting global oil supply chains and increasing reliance on alternative routes with higher emissions.\", \"affected_sdgs\": [7, 8, 9, 12, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Escalation of conflict in the Red Sea region undermines regional stability, economic security, and energy access, disproportionately affecting vulnerable populations dependent on global trade and energy markets.\", \"affected_sdgs\": [1, 2, 3, 8, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 22\", \"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7436,
       "event_title": "Why Enerparc insolvency is a warning sign for European solar’s new reality",
@@ -171120,7 +171143,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 18
+        "events": 19
       },
       {
         "region": "Africa",
@@ -171176,7 +171199,7 @@
       },
       {
         "date": "2026-09-12",
-        "net_minted": 6591600,
+        "net_minted": 13351600,
         "net_burned": 2600000
       }
     ],
@@ -171194,7 +171217,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 202,
+        "negative": 203,
         "event_ids_positive": [
           7435,
           7433,
@@ -171221,6 +171244,7 @@
           7226
         ],
         "event_ids_negative": [
+          7437,
           7436,
           7434,
           7432,
@@ -171427,7 +171451,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 190,
+        "negative": 191,
         "event_ids_positive": [
           7433,
           7413,
@@ -171450,6 +171474,7 @@
           7229
         ],
         "event_ids_negative": [
+          7437,
           7436,
           7434,
           7432,
@@ -171949,11 +171974,11 @@
       "niche_pct": 71.1,
       "mainstream_pct": 28.9,
       "total_sources_used": 76,
-      "articles_processed": 226
+      "articles_processed": 227
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 226,
+      "total_events": 227,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -172056,10 +172081,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 28,
+        "count": 29,
         "burn_count": 6,
-        "mint_count": 22,
+        "mint_count": 23,
         "event_ids": [
+          7437,
           7436,
           7430,
           7426,
@@ -172120,6 +172146,32 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 18,
+        "burn_count": 3,
+        "mint_count": 15,
+        "event_ids": [
+          7437,
+          7432,
+          7418,
+          7403,
+          7377,
+          7365,
+          7359,
+          7340,
+          7326,
+          7311,
+          7302,
+          7288,
+          7259,
+          7250,
+          7239,
+          7229,
+          7220,
+          7212
+        ]
+      },
+      {
         "name": "Defense",
         "count": 18,
         "burn_count": 0,
@@ -172143,31 +172195,6 @@
           7237,
           7221,
           7218
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 17,
-        "burn_count": 3,
-        "mint_count": 14,
-        "event_ids": [
-          7432,
-          7418,
-          7403,
-          7377,
-          7365,
-          7359,
-          7340,
-          7326,
-          7311,
-          7302,
-          7288,
-          7259,
-          7250,
-          7239,
-          7229,
-          7220,
-          7212
         ]
       },
       {
@@ -172266,9 +172293,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 203,
+      "total_mint": 204,
       "direct_action": {
-        "count": 189,
+        "count": 190,
         "pct": 93.1
       },
       "editorial_alarm": {
@@ -172281,9 +172308,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5384,
+      "total_mint": 5385,
       "direct_action": {
-        "count": 4500,
+        "count": 4501,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -172297,8 +172324,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 74,
-      "institutional": 152,
-      "citizen_ratio": 0.327,
+      "institutional": 153,
+      "citizen_ratio": 0.326,
       "daily": [
         {
           "date": "2026-09-06",
@@ -172333,7 +172360,7 @@
         {
           "date": "2026-09-12",
           "citizen": 7,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -172413,6 +172440,7 @@
         7213
       ],
       "event_ids_institutional": [
+        7437,
         7436,
         7434,
         7433,
