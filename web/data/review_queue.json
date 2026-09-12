@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-12T06:06:43.868231+00:00",
-  "total_pending": 2,
+  "generated_at": "2026-09-12T07:07:25.039656+00:00",
+  "total_pending": 3,
   "reviews": [
     {
       "id": 783,
@@ -38,6 +38,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-09-03T19:10:02.558968+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 785,
+      "event_title": "Court Overturns DOE Order Forcing Michigan Coal Plant to Stay Open",
+      "event_url": "https://www.nrdc.org/press-releases/court-overturns-doe-order-forcing-michigan-coal-plant-stay-open",
+      "event_source": "NRDC News",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Court overturns U.S. Department of Energy (DOE) emergency order that forced a Michigan coal plant to remain operational, allowing its planned retirement to proceed.\", \"affected_sdgs\": [7, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Potential short-term energy supply instability in the regional grid due to the sudden closure of a large power source, risking reliability for vulnerable populations.\", \"affected_sdgs\": [7, 11], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Judicial intervention in executive energy policy may set a precedent for future legal challenges to climate-related executive actions, weakening regulatory certainty.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}], \"ethical_synthesis\": \"The ruling is a net positive for climate action (SDG 13) and clean energy transition (SDG 7), as it removes a regulatory barrier to phasing out coal. However, the decision introduces short-term energy reliability risks and potential long-term regulatory uncertainty, though these are outweighed by the environmental benefits and alignment with planetary boundaries.\", \"snapshot_score\": 6.0, \"trajectory_score\": 5.0, \"revaluation_score\": 1.0, \"revaluation_triggers\": [\"Grid stability incidents in Michigan within 12 months of closure\", \"Federal or state legislation reinstating coal plant operations\", \"New DOE emergency orders targeting similar plants\", \"Judicial rulings on related energy policy cases within 24 months\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Coal plant closure accelerates regional clean energy adoption, with grid upgrades and renewables filling the gap without reliability issues. Precedent strengthens climate policy enforcement.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Closure proceeds but causes minor grid instability, mitigated by temporary fossil-fuel backup. Precedent has mixed effects on future climate regulations.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Closure triggers prolonged energy shortages, leading to public backlash and rollback of climate policies. Judicial precedent emboldens legal challenges to environmental regulations.\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.4, \"final_score\": 4.15, \"decision\": \"BURN\", \"amount_cbwd\": 350000, \"confidence\": 8, \"justification\": \"Overturning DOE order enables coal phase-out, advancing climate goals despite minor reliability risks.\", \"event_scope\": \"regional\", \"event_country\": \"United States\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Court ruling overturns DOE emergency order forcing a coal plant to stay open, reducing harmful emissions and aligning with climate action goals\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}], \"negative_aspects\": [{\"description\": \"Ruling may delay transition away from coal, potentially prolonging reliance on fossil fuels and associated health impacts\", \"affected_sdgs\": [3, 7, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}], \"ethical_synthesis\": \"The court's decision to overturn the DOE order is a positive step toward reducing emissions and aligning with climate action (SDG 13, Planetary Boundaries). However, it may delay the transition away from coal, which could prolong health and environmental harms. The net ethical judgment is cautiously positive, prioritizing long-term climate benefits over short-term economic or energy stability concerns.\", \"snapshot_score\": 4.5, \"trajectory_score\": 2.0, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"State or federal legislation mandating coal plant retirement timelines\", \"New federal climate regulations superseding the ruling\", \"Economic viability of coal plant operations under new market conditions\", \"Public health data linking coal emissions to increased mortality\"], \"revaluation_checkpoint\": \"2026-04-14\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Optimistic: Rapid renewable energy deployment and strong climate policies accelerate coal phase-out within 5 years, rendering the ruling moot\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Realistic: Gradual but steady transition to renewables occurs, with coal plants retiring as planned but with some delays due to legal and economic hurdles\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Pessimistic: Coal plants remain operational longer than planned due to energy security concerns, leading to increased emissions and health impacts\", \"probability\": 0.2, \"score\": -5}], \"prospective_score\": 2.9, \"final_score\": 2.89, \"decision\": \"MINT\", \"amount_cbwd\": 150000, \"confidence\": 8, \"justification\": \"Ruling enables continued coal use, increasing emissions and health risks despite climate alignment.\", \"event_scope\": \"national\", \"event_country\": \"United States\"}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.52, \"confidence\": 8, \"amount_cbwd\": 46000, \"justification\": \"Court overturns DOE order, permitting the coal plant's retirement and reducing emissions, protecting climate and public health.\", \"disagreement\": true, \"reason\": \"Analysts conflicted; I examined the institutional action (court decision) which enables coal phase‑out, thus it protects rights → BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 46000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-09-12T07:07:19.147868+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
