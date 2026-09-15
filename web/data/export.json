@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-15T05:06:29.278413+00:00",
-  "total_events": 7500,
+  "generated_at": "2026-09-15T06:05:37.940348+00:00",
+  "total_events": 7501,
   "total_burned": 7926679055,
-  "total_minted": 9965080239,
+  "total_minted": 9965128039,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7501,
+      "event_title": "Houthis strike Saudi targets anew as talks over Strait of Hormuz stall",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/houthis-strike-saudi-targets-anew-talks-over-strait-hormuz-stall",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 47800,
+      "final_score": -2.18,
+      "confidence": 7,
+      "justification": "Postponing talks raises conflict risk and undermines peace. | The postponement of diplomatic talks by Gulf states heightens the risk of armed conflict and undermines peace and partnership goals, outweighing any short‑term political considerations. No compensating positive actions are evident, leading to a net negative ethical assessment.",
+      "tx_hash": "46fQRp8Fk3bdqrJXTV591SmmZyAF8387w6QcegmnUKRx5NxB2aaTNfHQ2XtZzGKYwKcynG3u9kekF3vVVDxvEN2a",
+      "created_at": "2026-09-15T06:05:33.559120+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Gulf Arab states postponed planned diplomatic talks with Iran, delaying conflict de‑escalation and increasing regional tension.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 7500,
       "event_title": "A signal to stop: Hauts-de-France reaffirms hostility to onshore wind energy",
@@ -172590,14 +172613,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 18
+      },
+      {
         "region": "Africa",
         "mint_ratio": 1.0,
         "events": 9
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 17
       },
       {
         "region": "Europe",
@@ -172648,7 +172671,7 @@
       },
       {
         "date": "2026-09-15",
-        "net_minted": 5693000,
+        "net_minted": 5740800,
         "net_burned": 0
       }
     ],
@@ -172666,7 +172689,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 198,
+        "negative": 199,
         "event_ids_positive": [
           7486,
           7480,
@@ -172696,6 +172719,7 @@
           7282
         ],
         "event_ids_negative": [
+          7501,
           7500,
           7499,
           7498,
@@ -172898,7 +172922,7 @@
       },
       "UDHR": {
         "positive": 20,
-        "negative": 187,
+        "negative": 188,
         "event_ids_positive": [
           7480,
           7459,
@@ -172922,6 +172946,7 @@
           7282
         ],
         "event_ids_negative": [
+          7501,
           7499,
           7498,
           7497,
@@ -173393,12 +173418,12 @@
       "niche_pct": 70.5,
       "mainstream_pct": 29.5,
       "total_sources_used": 78,
-      "articles_processed": 228
+      "articles_processed": 229
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 228,
-      "pct": 1.8
+      "total_events": 229,
+      "pct": 1.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -173705,9 +173730,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 202,
+      "total_mint": 203,
       "direct_action": {
-        "count": 182,
+        "count": 183,
         "pct": 90.1
       },
       "editorial_alarm": {
@@ -173720,9 +173745,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5441,
+      "total_mint": 5442,
       "direct_action": {
-        "count": 4547,
+        "count": 4548,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -173736,8 +173761,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 149,
-      "citizen_ratio": 0.346,
+      "institutional": 150,
+      "citizen_ratio": 0.345,
       "daily": [
         {
           "date": "2026-09-09",
@@ -173772,7 +173797,7 @@
         {
           "date": "2026-09-15",
           "citizen": 3,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -173857,6 +173882,7 @@
         7275
       ],
       "event_ids_institutional": [
+        7501,
         7499,
         7498,
         7495,
