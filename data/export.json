@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-15T03:06:21.104900+00:00",
-  "total_events": 7499,
+  "generated_at": "2026-09-15T04:07:40.530002+00:00",
+  "total_events": 7500,
   "total_burned": 7926679055,
-  "total_minted": 9964655239,
+  "total_minted": 9965080239,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7500,
+      "event_title": "A signal to stop: Hauts-de-France reaffirms hostility to onshore wind energy",
+      "event_url": "https://reporterre.net/Un-signal-pour-dire-stop-les-Hauts-de-France-reaffirment-leur-hostilite-a-l-eolien",
+      "event_source": "Reporterre",
+      "decision": "MINT",
+      "amount_crbn": 425000,
+      "final_score": -2.3,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Non-binding moratorium on onshore wind projects undermines renewable energy expansion and climate goals. | The decision to halt new onshore wind projects prioritizes short-term regional interests over urgent climate action, despite acknowledging biodiversity concerns. While the abstention of ecologists signals potential for future wildlife protections, the moratorium's immediat",
+      "tx_hash": "2z8roiB7gB8wCZmrN94XaW8vGv43S7yv3vNemcnnGjrG5H6R4tY2ymFnXGpn7u4vHsfGjQSfQoasGWH6173w2icL",
+      "created_at": "2026-09-15T04:07:33.704674+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Regional energy committee acknowledges ecological concerns by abstaining on new onshore wind projects due to lack of wildlife guarantees, signaling potential for future biodiversity protections.\", \"affected_sdgs\": [13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Non-binding vote effectively imposes a moratorium on new onshore wind energy projects until 2035, delaying renewable energy expansion and perpetuating reliance on fossil fuels.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Decision lacks binding legal force but sets a precedent that could discourage investment in clean energy, undermining climate action at a critical juncture.\", \"affected_sdgs\": [7, 13, 17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 604000
+    },
     {
       "id": 7499,
       "event_title": "Trump administration suffers double legal setback over immigration rules",
@@ -172487,13 +172510,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 39458400
+        "count": 42,
+        "total_amount": 38782400
       },
       {
         "country": "France",
-        "count": 20,
-        "total_amount": 6565740
+        "count": 21,
+        "total_amount": 6990740
       },
       {
         "country": "Germany",
@@ -172546,13 +172569,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.17,
-        "events": 53
+        "burn_ratio": 0.173,
+        "events": 52
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.111,
-        "events": 9
+        "burn_ratio": 0.125,
+        "events": 8
       },
       {
         "region": "Asia",
@@ -172588,8 +172611,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.889,
-        "events": 9
+        "mint_ratio": 0.875,
+        "events": 8
       }
     ],
     "supply_trend_7d": [
@@ -172625,7 +172648,7 @@
       },
       {
         "date": "2026-09-15",
-        "net_minted": 5268000,
+        "net_minted": 5693000,
         "net_burned": 0
       }
     ],
@@ -172643,7 +172666,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 201,
+        "negative": 199,
         "event_ids_positive": [
           7486,
           7480,
@@ -172673,6 +172696,7 @@
           7282
         ],
         "event_ids_negative": [
+          7500,
           7499,
           7498,
           7497,
@@ -172870,15 +172894,12 @@
           7275,
           7274,
           7273,
-          7272,
-          7271,
-          7270,
-          7269
+          7272
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 191,
+        "negative": 188,
         "event_ids_positive": [
           7480,
           7459,
@@ -173089,10 +173110,7 @@
           7275,
           7274,
           7273,
-          7272,
-          7271,
-          7270,
-          7269
+          7272
         ]
       },
       "ILO": {
@@ -173140,7 +173158,7 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 57,
+        "negative": 55,
         "event_ids_positive": [
           7409,
           7327,
@@ -173201,14 +173219,12 @@
           7283,
           7281,
           7279,
-          7272,
-          7271,
-          7270
+          7272
         ]
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 59,
+        "negative": 58,
         "event_ids_positive": [
           7409,
           7401,
@@ -173272,13 +173288,12 @@
           7284,
           7279,
           7275,
-          7274,
-          7269
+          7274
         ]
       },
       "Animal": {
         "positive": 5,
-        "negative": 9,
+        "negative": 10,
         "event_ids_positive": [
           7486,
           7435,
@@ -173287,6 +173302,7 @@
           7384
         ],
         "event_ids_negative": [
+          7500,
           7476,
           7431,
           7422,
@@ -173315,6 +173331,7 @@
           7302
         ],
         "event_ids_negative": [
+          7500,
           7498,
           7497,
           7496,
@@ -173372,20 +173389,19 @@
           7288,
           7287,
           7286,
-          7275,
-          7269
+          7275
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.0,
-      "mainstream_pct": 30.0,
-      "total_sources_used": 80,
-      "articles_processed": 231
+      "niche_pct": 70.5,
+      "mainstream_pct": 29.5,
+      "total_sources_used": 78,
+      "articles_processed": 229
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 231,
+      "total_events": 229,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -173469,10 +173485,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 40,
+        "count": 41,
         "burn_count": 6,
-        "mint_count": 34,
+        "mint_count": 35,
         "event_ids": [
+          7500,
           7498,
           7497,
           7496,
@@ -173547,9 +173564,9 @@
       },
       {
         "name": "Tech",
-        "count": 18,
+        "count": 17,
         "burn_count": 2,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           7494,
           7484,
@@ -173567,8 +173584,7 @@
           7327,
           7281,
           7279,
-          7276,
-          7270
+          7276
         ]
       },
       {
@@ -173598,9 +173614,9 @@
       },
       {
         "name": "Defense",
-        "count": 16,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           7460,
           7457,
@@ -173616,8 +173632,7 @@
           7301,
           7291,
           7281,
-          7279,
-          7271
+          7279
         ]
       },
       {
@@ -173695,14 +173710,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 205,
+      "total_mint": 203,
       "direct_action": {
-        "count": 186,
-        "pct": 90.7
+        "count": 183,
+        "pct": 90.1
       },
       "editorial_alarm": {
-        "count": 15,
-        "pct": 7.3
+        "count": 16,
+        "pct": 7.9
       },
       "untyped": {
         "count": 4,
@@ -173710,13 +173725,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5440,
+      "total_mint": 5441,
       "direct_action": {
         "count": 4547,
         "pct": 83.6
       },
       "editorial_alarm": {
-        "count": 336,
+        "count": 337,
         "pct": 6.2
       },
       "untyped": {
@@ -173726,8 +173741,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 152,
-      "citizen_ratio": 0.342,
+      "institutional": 150,
+      "citizen_ratio": 0.345,
       "daily": [
         {
           "date": "2026-09-09",
@@ -173761,11 +173776,12 @@
         },
         {
           "date": "2026-09-15",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 6
         }
       ],
       "event_ids_citizen": [
+        7500,
         7497,
         7496,
         7488,
@@ -173843,8 +173859,7 @@
         7290,
         7288,
         7286,
-        7275,
-        7269
+        7275
       ],
       "event_ids_institutional": [
         7499,
@@ -173996,9 +174011,7 @@
         7276,
         7274,
         7273,
-        7272,
-        7271,
-        7270
+        7272
       ]
     }
   }
