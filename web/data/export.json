@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-16T03:06:42.544288+00:00",
-  "total_events": 7539,
-  "total_burned": 7927829055,
-  "total_minted": 10026755729,
+  "generated_at": "2026-09-16T04:06:59.113518+00:00",
+  "total_events": 7541,
+  "total_burned": 7927889455,
+  "total_minted": 10027359729,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7541,
+      "event_title": "Rubio announces US visa curbs for some foreign nationals from South Africa",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-09-16-rubio-announces-us-visa-curbs-for-some-foreign-nationals-from-south-africa/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.96,
+      "confidence": 8,
+      "justification": "Visa restrictions violate mobility rights and undermine international cooperation without offsetting benefits. | The visa restrictions impose concrete harms on individuals by limiting their freedom of movement, economic opportunities, and family unity, directly violating core UDHR articles. The diplomatic strain further weakens international collaboration, which is critical for addressing global challenges like climate change and inequality. No countervailing positive aspects are identified in t",
+      "tx_hash": "4fBthMHtchJanUqYkctPGkjYHzw2WNPDh9qGc36wEDCZQKooNnjzsttMHzNcXyAZ8PcMLPXCn8Nxa1vV8UaXLAmD",
+      "created_at": "2026-09-16T04:06:52.606079+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Implementation of visa restrictions targeting foreign nationals from South Africa, potentially limiting mobility, family reunification, and economic opportunities for affected individuals.\", \"affected_sdgs\": [1, 8, 10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Deterioration of diplomatic relations between the U.S. and South Africa, undermining international cooperation and partnerships (SDG 17).\", \"affected_sdgs\": [17], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 7540,
+      "event_title": "When nature heals: Ultima Frontiera looks ahead to a flourishing future",
+      "event_url": "https://rewildingeurope.com/news/when-nature-heals-ultima-frontiera-looks-ahead-to-a-flourishing-future/",
+      "event_source": "Rewilding Europe",
+      "decision": "BURN",
+      "amount_crbn": 60400,
+      "final_score": 6.67,
+      "confidence": 8,
+      "justification": "Positive wetland restoration outweighs any negatives, justifying a BURN decision. | The rewilding project delivers clear environmental and social benefits, strengthening climate mitigation, water security, and biodiversity, with no evident harms reported.",
+      "tx_hash": "4mxV2RtRZEtM52RDnKqmDapcwj1dzg2uLT23q51heEdghWWLW8E6HcbtD8HtGtAwiQQHNuWZfPBkyQiUv1Vxenis",
+      "created_at": "2026-09-16T04:06:49.047623+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Romania",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Restoration of degraded wetlands in the Romanian Danube Delta improves carbon sequestration, water regulation, and biodiversity.\", \"affected_sdgs\": [6, 11, 13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7539,
       "event_title": "Saudi Arabia cancels oil to Europe over East-West pipeline blast",
@@ -173407,8 +173453,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 44,
-        "total_amount": 59275890
+        "count": 45,
+        "total_amount": 59879890
       },
       {
         "country": "France",
@@ -173466,18 +173512,18 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.164,
-        "events": 55
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.127,
-        "events": 63
+        "burn_ratio": 0.161,
+        "events": 56
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.125,
-        "events": 8
+        "burn_ratio": 0.143,
+        "events": 7
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.141,
+        "events": 64
       },
       {
         "region": "Asia",
@@ -173494,7 +173540,7 @@
       {
         "region": "Africa",
         "mint_ratio": 1.0,
-        "events": 9
+        "events": 8
       },
       {
         "region": "Asia",
@@ -173502,14 +173548,14 @@
         "events": 23
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 0.875,
-        "events": 8
+        "region": "Europe",
+        "mint_ratio": 0.859,
+        "events": 64
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.873,
-        "events": 63
+        "region": "Oceania",
+        "mint_ratio": 0.857,
+        "events": 7
       }
     ],
     "supply_trend_7d": [
@@ -173545,26 +173591,27 @@
       },
       {
         "date": "2026-09-16",
-        "net_minted": 9763000,
-        "net_burned": 0
+        "net_minted": 10367000,
+        "net_burned": 60400
       }
     ],
     "event_of_the_day": {
-      "id": 7511,
-      "event_title": "Algeria: Threats to Resume Executions After 30 Years Severe Blow to Human Rights",
-      "decision": "MINT",
-      "amount_crbn": 676000,
-      "final_score": -6.07,
+      "id": 7540,
+      "event_title": "When nature heals: Ultima Frontiera looks ahead to a flourishing future",
+      "decision": "BURN",
+      "amount_crbn": 60400,
+      "final_score": 6.67,
       "confidence": 8,
-      "country": "Algeria",
-      "region": "MENA",
-      "created_at": "2026-09-15T10:08:20.682741+00:00"
+      "country": "Romania",
+      "region": "Europe",
+      "created_at": "2026-09-16T04:06:49.047623+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 27,
-        "negative": 199,
+        "positive": 28,
+        "negative": 198,
         "event_ids_positive": [
+          7540,
           7530,
           7524,
           7514,
@@ -173594,6 +173641,7 @@
           7318
         ],
         "event_ids_negative": [
+          7541,
           7539,
           7538,
           7537,
@@ -173790,14 +173838,12 @@
           7315,
           7314,
           7313,
-          7312,
-          7311,
-          7310
+          7312
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 186,
+        "negative": 185,
         "event_ids_positive": [
           7524,
           7514,
@@ -173821,6 +173867,7 @@
           7318
         ],
         "event_ids_negative": [
+          7541,
           7539,
           7538,
           7537,
@@ -174004,9 +174051,7 @@
           7315,
           7314,
           7313,
-          7312,
-          7311,
-          7310
+          7312
         ]
       },
       "ILO": {
@@ -174187,9 +174232,10 @@
         ]
       },
       "Animal": {
-        "positive": 6,
+        "positive": 7,
         "negative": 12,
         "event_ids_positive": [
+          7540,
           7530,
           7486,
           7435,
@@ -174213,9 +174259,10 @@
         ]
       },
       "PB": {
-        "positive": 11,
+        "positive": 12,
         "negative": 69,
         "event_ids_positive": [
+          7540,
           7530,
           7486,
           7459,
@@ -174302,9 +174349,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 74.4,
-      "mainstream_pct": 25.6,
-      "total_sources_used": 82,
+      "niche_pct": 74.7,
+      "mainstream_pct": 25.3,
+      "total_sources_used": 83,
       "articles_processed": 230
     },
     "cache_hit_rate_7d": {
@@ -174446,9 +174493,9 @@
       },
       {
         "name": "Finance",
-        "count": 25,
+        "count": 24,
         "burn_count": 3,
-        "mint_count": 22,
+        "mint_count": 21,
         "event_ids": [
           7535,
           7530,
@@ -174473,15 +174520,14 @@
           7333,
           7324,
           7321,
-          7320,
-          7311
+          7320
         ]
       },
       {
         "name": "Construction",
-        "count": 18,
+        "count": 17,
         "burn_count": 2,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           7535,
           7512,
@@ -174499,8 +174545,7 @@
           7365,
           7359,
           7340,
-          7326,
-          7311
+          7326
         ]
       },
       {
@@ -174565,10 +174610,11 @@
       },
       {
         "name": "Water",
-        "count": 5,
-        "burn_count": 0,
+        "count": 6,
+        "burn_count": 1,
         "mint_count": 5,
         "event_ids": [
+          7540,
           7484,
           7403,
           7400,
@@ -174590,14 +174636,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 27,
+      "total_burn": 28,
       "direct_action": {
-        "count": 22,
-        "pct": 81.5
+        "count": 23,
+        "pct": 82.1
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 18.5
+        "pct": 17.9
       },
       "untyped": {
         "count": 0,
@@ -174605,9 +174651,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2054,
+      "total_burn": 2055,
       "direct_action": {
-        "count": 1621,
+        "count": 1622,
         "pct": 78.9
       },
       "editorial_consciousness": {
@@ -174620,10 +174666,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 203,
+      "total_mint": 202,
       "direct_action": {
-        "count": 180,
-        "pct": 88.7
+        "count": 179,
+        "pct": 88.6
       },
       "editorial_alarm": {
         "count": 19,
@@ -174635,9 +174681,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5477,
+      "total_mint": 5478,
       "direct_action": {
-        "count": 4578,
+        "count": 4579,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -174650,9 +174696,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 91,
-      "institutional": 139,
-      "citizen_ratio": 0.396,
+      "citizen": 93,
+      "institutional": 137,
+      "citizen_ratio": 0.404,
       "daily": [
         {
           "date": "2026-09-10",
@@ -174686,11 +174732,13 @@
         },
         {
           "date": "2026-09-16",
-          "citizen": 4,
+          "citizen": 6,
           "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        7541,
+        7540,
         7538,
         7537,
         7536,
@@ -174920,9 +174968,7 @@
         7316,
         7314,
         7313,
-        7312,
-        7311,
-        7310
+        7312
       ]
     }
   }
