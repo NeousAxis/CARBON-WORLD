@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-16T22:08:50.674302+00:00",
-  "total_events": 7575,
+  "generated_at": "2026-09-16T23:06:17.836669+00:00",
+  "total_events": 7576,
   "total_burned": 7929864455,
-  "total_minted": 10039802229,
+  "total_minted": 10039952229,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7576,
+      "event_title": "Grey Power welcomes scrapping of mandatory cognitive testing for older drivers",
+      "event_url": "https://www.rnz.co.nz/news/health/1430273/grey-power-welcomes-scrapping-of-mandatory-cognitive-testing-for-older-drivers",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.25,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Policy removal weakens safety protections, enabling harm despite autonomy gains. | The decision to scrap mandatory cognitive testing for older drivers prioritizes autonomy and reduces age-based discrimination, aligning with human rights frameworks. However, it introduces significant road safety concerns, particularly for vulnerable populations, creating a tension between ind",
+      "tx_hash": "3KeizFWcLhJjThYgRYpUMkY6mirKvobYBnDHWCKW4Jeom3HqquXwnNYkToaKsQXmkqB3oB6dw8U3LP6iSnhoWLUH",
+      "created_at": "2026-09-16T23:06:12.932374+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Removal of mandatory cognitive testing for older drivers reduces age-based discrimination and supports autonomy for elderly individuals.\", \"affected_sdgs\": [3, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Aligns with advocacy efforts by Grey Power, a recognized organization representing older citizens, signaling community-driven policy influence.\", \"affected_sdgs\": [10, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential increased road safety risks due to lack of cognitive screening for older drivers, which could lead to accidents affecting public health and safety.\", \"affected_sdgs\": [3, 11], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of alternative measures to ensure road safety for older drivers, which may disproportionately affect vulnerable road users (e.g., pedestrians, cyclists).\", \"affected_sdgs\": [3, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7575,
       "event_title": "UK village votes to 'secede' in asylum center plan protest",
@@ -174289,8 +174312,8 @@
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.136,
-        "events": 59
+        "burn_ratio": 0.138,
+        "events": 58
       },
       {
         "region": "Latin America",
@@ -174308,21 +174331,21 @@
         "events": 23
       },
       {
-        "region": "MENA",
+        "region": "Oceania",
         "burn_ratio": 0.0,
-        "events": 20
+        "events": 7
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Oceania",
+        "mint_ratio": 1.0,
+        "events": 7
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 20
-      },
-      {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 6
       },
       {
         "region": "Africa",
@@ -174373,7 +174396,7 @@
       },
       {
         "date": "2026-09-16",
-        "net_minted": 22809500,
+        "net_minted": 22959500,
         "net_burned": 2035400
       }
     ],
@@ -174421,6 +174444,7 @@
           7349
         ],
         "event_ids_negative": [
+          7576,
           7575,
           7574,
           7573,
@@ -174619,13 +174643,12 @@
           7352,
           7350,
           7348,
-          7347,
-          7346
+          7347
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 184,
+        "negative": 185,
         "event_ids_positive": [
           7572,
           7552,
@@ -174647,6 +174670,7 @@
           7349
         ],
         "event_ids_negative": [
+          7576,
           7575,
           7574,
           7573,
@@ -175039,7 +175063,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 75,
+        "negative": 74,
         "event_ids_positive": [
           7572,
           7540,
@@ -175128,14 +175152,13 @@
           7359,
           7357,
           7354,
-          7350,
-          7346
+          7350
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 72.3,
-      "mainstream_pct": 27.7,
+      "niche_pct": 71.1,
+      "mainstream_pct": 28.9,
       "total_sources_used": 83,
       "articles_processed": 230
     },
@@ -175475,9 +175498,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5509,
+      "total_mint": 5510,
       "direct_action": {
-        "count": 4610,
+        "count": 4611,
         "pct": 83.7
       },
       "editorial_alarm": {
@@ -175527,7 +175550,7 @@
         {
           "date": "2026-09-16",
           "citizen": 15,
-          "institutional": 27
+          "institutional": 28
         }
       ],
       "event_ids_citizen": [
@@ -175624,6 +175647,7 @@
         7350
       ],
       "event_ids_institutional": [
+        7576,
         7574,
         7571,
         7570,
@@ -175761,8 +175785,7 @@
         7352,
         7349,
         7348,
-        7347,
-        7346
+        7347
       ]
     }
   }
