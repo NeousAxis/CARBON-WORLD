@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-16T10:08:24.769227+00:00",
-  "total_events": 7549,
+  "generated_at": "2026-09-16T11:07:15.563022+00:00",
+  "total_events": 7550,
   "total_burned": 7928464455,
-  "total_minted": 10030076429,
+  "total_minted": 10030076879,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7550,
+      "event_title": "Tice speech interrupted by Greenpeace banner",
+      "event_url": "https://www.greenpeace.org.uk/news/tice-speech-interrupted-by-greenpeace-banner/",
+      "event_source": "Greenpeace UK",
+      "decision": "MINT",
+      "amount_crbn": 450,
+      "final_score": -0.2,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Greenpeace's banner protest infringes on political speech rights, weakening democratic protections despite climate intent. | The action spotlights climate issues but simultaneously curtails democratic discourse, resulting in a net negative ethical balance.",
+      "tx_hash": "4YEwYwQ9pQUiGESyYLJGA1BkpTnEw57woHk8TLNor5dmiCa2J7Fsj8nwZHY4wvgF1hZPF6YzmUsiZ3cRsew4S8Nq",
+      "created_at": "2026-09-16T11:07:10.550811+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Greenpeace protest raises public awareness on climate change and holds political leaders accountable\", \"affected_sdgs\": [13, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Disruption of a political speech infringes on the speaker's and attendees' right to free expression and peaceful assembly\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 7549,
       "event_title": "US not expected to release list of South Africans targeted for visa restrictions",
@@ -173642,8 +173665,13 @@
       },
       {
         "country": "France",
-        "count": 19,
-        "total_amount": 6817100
+        "count": 18,
+        "total_amount": 6667100
+      },
+      {
+        "country": "United Kingdom",
+        "count": 7,
+        "total_amount": 3130450
       },
       {
         "country": "China",
@@ -173654,11 +173682,6 @@
         "country": "Brazil",
         "count": 7,
         "total_amount": 3410100
-      },
-      {
-        "country": "Germany",
-        "count": 7,
-        "total_amount": 3329000
       }
     ],
     "top_countries_burn": [
@@ -173775,7 +173798,7 @@
       },
       {
         "date": "2026-09-16",
-        "net_minted": 13083700,
+        "net_minted": 13084150,
         "net_burned": 635400
       }
     ],
@@ -173825,6 +173848,7 @@
           7327
         ],
         "event_ids_negative": [
+          7550,
           7549,
           7547,
           7546,
@@ -174022,8 +174046,7 @@
           7323,
           7322,
           7321,
-          7320,
-          7319
+          7320
         ]
       },
       "UDHR": {
@@ -174052,6 +174075,7 @@
           7327
         ],
         "event_ids_negative": [
+          7550,
           7549,
           7547,
           7546,
@@ -174234,8 +174258,7 @@
           7323,
           7322,
           7321,
-          7320,
-          7319
+          7320
         ]
       },
       "ILO": {
@@ -174533,9 +174556,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 73.2,
-      "mainstream_pct": 26.8,
-      "total_sources_used": 82,
+      "niche_pct": 73.5,
+      "mainstream_pct": 26.5,
+      "total_sources_used": 83,
       "articles_processed": 231
     },
     "cache_hit_rate_7d": {
@@ -174869,9 +174892,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5485,
+      "total_mint": 5486,
       "direct_action": {
-        "count": 4586,
+        "count": 4587,
         "pct": 83.6
       },
       "editorial_alarm": {
@@ -174884,9 +174907,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 93,
-      "institutional": 138,
-      "citizen_ratio": 0.403,
+      "citizen": 94,
+      "institutional": 137,
+      "citizen_ratio": 0.407,
       "daily": [
         {
           "date": "2026-09-10",
@@ -174920,11 +174943,12 @@
         },
         {
           "date": "2026-09-16",
-          "citizen": 7,
+          "citizen": 8,
           "institutional": 9
         }
       ],
       "event_ids_citizen": [
+        7550,
         7548,
         7541,
         7540,
@@ -175156,8 +175180,7 @@
         7323,
         7322,
         7321,
-        7320,
-        7319
+        7320
       ]
     }
   }
