@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-17T16:06:15.561185+00:00",
-  "total_events": 7599,
+  "generated_at": "2026-09-17T17:05:53.405078+00:00",
+  "total_events": 7600,
   "total_burned": 7931864455,
-  "total_minted": 10073550629,
+  "total_minted": 10079590629,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7600,
+      "event_title": "US Once Again Denies Palestinian Officials Visas to Attend New York UN Meeting",
+      "event_url": "https://truthout.org/articles/us-once-again-denies-palestinian-officials-visas-to-attend-new-york-un-meeting/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -4.31,
+      "confidence": 8,
+      "justification": "US visa denial to Palestinian officials violates diplomatic rights and undermines SDGs 10, 16, and 17. | The denial of visas to Palestinian officials directly violates principles of equality, justice, and inclusive participation under the SDGs and UDHR. It undermines diplomatic efforts and the right to representation, particularly for a marginalized population. The action reinforces systemic inequalities and impedes peaceful resolution mechanisms, with no countervailing positive ethical aspects ",
+      "tx_hash": "4sLjbZXiLGgYM42ZvEnbXaqkGzng1ZKhzN4dEBwXx3KunWKqrmTDuo6X1L4ctZLXCpSES1pEwEZfqqLvQnQ2ejPr",
+      "created_at": "2026-09-17T17:05:47.926105+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US government denies visas to Palestinian officials, preventing their physical participation in a UN meeting in New York, undermining diplomatic engagement and representation.\", \"affected_sdgs\": [10, 16, 17], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 19\", \"UDHR Article 20\", \"UNDRIP Article 18\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7599,
       "event_title": "Colombia: FENSUAGRO demands respect for the Constitution and the rights of Colombia’s peasantry",
@@ -174788,7 +174811,7 @@
       {
         "country": "United States",
         "count": 58,
-        "total_amount": 72462490
+        "total_amount": 77754490
       },
       {
         "country": "France",
@@ -174925,7 +174948,7 @@
       },
       {
         "date": "2026-09-17",
-        "net_minted": 33598400,
+        "net_minted": 39638400,
         "net_burned": 2000000
       }
     ],
@@ -174943,7 +174966,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 199,
+        "negative": 198,
         "event_ids_positive": [
           7599,
           7597,
@@ -174974,6 +174997,7 @@
           7373
         ],
         "event_ids_negative": [
+          7600,
           7598,
           7596,
           7595,
@@ -175170,14 +175194,12 @@
           7376,
           7375,
           7374,
-          7372,
-          7371,
-          7370
+          7372
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 185,
+        "negative": 184,
         "event_ids_positive": [
           7599,
           7597,
@@ -175199,6 +175221,7 @@
           7373
         ],
         "event_ids_negative": [
+          7600,
           7598,
           7596,
           7595,
@@ -175381,14 +175404,12 @@
           7376,
           7375,
           7374,
-          7372,
-          7371,
-          7370
+          7372
         ]
       },
       "ILO": {
         "positive": 4,
-        "negative": 31,
+        "negative": 30,
         "event_ids_positive": [
           7480,
           7459,
@@ -175425,13 +175446,12 @@
           7380,
           7378,
           7375,
-          7372,
-          7370
+          7372
         ]
       },
       "CRC": {
         "positive": 2,
-        "negative": 55,
+        "negative": 54,
         "event_ids_positive": [
           7514,
           7409
@@ -175490,8 +175510,7 @@
           7386,
           7382,
           7381,
-          7375,
-          7370
+          7375
         ]
       },
       "UNDRIP": {
@@ -175504,6 +175523,7 @@
           7401
         ],
         "event_ids_negative": [
+          7600,
           7598,
           7592,
           7591,
@@ -175555,8 +175575,7 @@
           7389,
           7385,
           7379,
-          7376,
-          7370
+          7376
         ]
       },
       "Animal": {
@@ -175690,23 +175709,40 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 72.8,
-      "mainstream_pct": 27.2,
-      "total_sources_used": 81,
-      "articles_processed": 230
+      "niche_pct": 72.5,
+      "mainstream_pct": 27.5,
+      "total_sources_used": 80,
+      "articles_processed": 229
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 230,
+      "total_events": 229,
       "pct": 1.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
+        "name": "UN",
+        "count": 9,
+        "burn_count": 2,
+        "mint_count": 7,
+        "event_ids": [
+          7600,
+          7592,
+          7585,
+          7569,
+          7557,
+          7548,
+          7523,
+          7419,
+          7409
+        ]
+      },
+      {
         "name": "EU",
-        "count": 10,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           7528,
           7527,
@@ -175716,24 +175752,7 @@
           7434,
           7402,
           7396,
-          7372,
-          7371
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 8,
-        "burn_count": 2,
-        "mint_count": 6,
-        "event_ids": [
-          7592,
-          7585,
-          7569,
-          7557,
-          7548,
-          7523,
-          7419,
-          7409
+          7372
         ]
       },
       {
@@ -175916,9 +175935,9 @@
       },
       {
         "name": "Defense",
-        "count": 16,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           7598,
           7591,
@@ -175934,8 +175953,7 @@
           7438,
           7419,
           7395,
-          7380,
-          7370
+          7380
         ]
       },
       {
@@ -176013,10 +176031,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 203,
+      "total_mint": 202,
       "direct_action": {
-        "count": 182,
-        "pct": 89.7
+        "count": 181,
+        "pct": 89.6
       },
       "editorial_alarm": {
         "count": 17,
@@ -176028,9 +176046,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5529,
+      "total_mint": 5530,
       "direct_action": {
-        "count": 4629,
+        "count": 4630,
         "pct": 83.7
       },
       "editorial_alarm": {
@@ -176044,8 +176062,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 91,
-      "institutional": 139,
-      "citizen_ratio": 0.396,
+      "institutional": 138,
+      "citizen_ratio": 0.397,
       "daily": [
         {
           "date": "2026-09-11",
@@ -176080,7 +176098,7 @@
         {
           "date": "2026-09-17",
           "citizen": 10,
-          "institutional": 13
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -176177,6 +176195,7 @@
         7373
       ],
       "event_ids_institutional": [
+        7600,
         7596,
         7593,
         7592,
@@ -176313,9 +176332,7 @@
         7378,
         7375,
         7374,
-        7372,
-        7371,
-        7370
+        7372
       ]
     }
   }
