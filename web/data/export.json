@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-17T15:07:51.514024+00:00",
-  "total_events": 7598,
-  "total_burned": 7931364455,
+  "generated_at": "2026-09-17T16:06:15.561185+00:00",
+  "total_events": 7599,
+  "total_burned": 7931864455,
   "total_minted": 10073550629,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7599,
+      "event_title": "Colombia: FENSUAGRO demands respect for the Constitution and the rights of Colombia’s peasantry",
+      "event_url": "https://viacampesina.org/en/2026/09/colombia-fensuagro-demands-respect-for-the-constitution-and-the-rights-of-colombias-peasantry/",
+      "event_source": "La Via Campesina",
+      "decision": "BURN",
+      "amount_crbn": 500000,
+      "final_score": 2.25,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action (demand for rights) protects marginalized groups, outweighs neglect critique. | The action by FENSUAGRO represents a formal, consciousness-raising act targeting institutional accountability for peasant rights, aligning with SDGs 1, 2, 10, and 16 and reinforcing constitutional protections. However, the demand's rhetorical nature and the implied institutional ",
+      "tx_hash": "2aKJ2L8Dh5XdCMfB8aGLrKQnNwW34JWkKSKBueejoQUzMCUXZvoJdiWo44ziMsSpLnBywDAVhPPqwNXG9cZZ4avf",
+      "created_at": "2026-09-17T16:06:10.547072+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Colombia",
+      "region": "Latin America",
+      "administration": "Colombia-Pacto Historico",
+      "positive_aspects_json": "[{\"description\": \"FENSUAGRO, a named peasant organization, formally demands respect for the Colombian Constitution and the rights of the peasantry, explicitly targeting the National Land Agency and agrarian policy.\", \"affected_sdgs\": [1, 2, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"The demand reinforces legal and institutional accountability for peasant rights, aligning with constitutional protections and agrarian reform commitments.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The demand implies institutional neglect or invisibilization of peasantry by the National Land Agency, suggesting ongoing violations of land rights and agrarian justice.\", \"affected_sdgs\": [1, 2, 10, 16], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP Article 26\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"No concrete policy change or enforcement action is reported; the demand remains rhetorical without immediate legal or institutional consequences.\", \"affected_sdgs\": [], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 532000
+    },
     {
       "id": 7598,
       "event_title": "Serbia opens Israeli drone assembly plant",
@@ -174810,12 +174833,17 @@
         "total_amount": 1304000
       },
       {
-        "country": "Romania",
+        "country": "Colombia",
         "count": 1,
-        "total_amount": 60400
+        "total_amount": 500000
       }
     ],
     "top_regions_sustainable": [
+      {
+        "region": "Latin America",
+        "burn_ratio": 0.167,
+        "events": 12
+      },
       {
         "region": "Europe",
         "burn_ratio": 0.148,
@@ -174825,11 +174853,6 @@
         "region": "North America",
         "burn_ratio": 0.143,
         "events": 70
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.091,
-        "events": 11
       },
       {
         "region": "Asia",
@@ -174864,9 +174887,9 @@
         "events": 23
       },
       {
-        "region": "Latin America",
-        "mint_ratio": 0.909,
-        "events": 11
+        "region": "North America",
+        "mint_ratio": 0.857,
+        "events": 70
       }
     ],
     "supply_trend_7d": [
@@ -174903,7 +174926,7 @@
       {
         "date": "2026-09-17",
         "net_minted": 33598400,
-        "net_burned": 1500000
+        "net_burned": 2000000
       }
     ],
     "event_of_the_day": {
@@ -174919,9 +174942,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
+        "positive": 27,
         "negative": 199,
         "event_ids_positive": [
+          7599,
           7597,
           7584,
           7580,
@@ -175152,9 +175176,10 @@
         ]
       },
       "UDHR": {
-        "positive": 17,
+        "positive": 18,
         "negative": 185,
         "event_ids_positive": [
+          7599,
           7597,
           7580,
           7572,
@@ -175470,9 +175495,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 3,
+        "positive": 4,
         "negative": 53,
         "event_ids_positive": [
+          7599,
           7548,
           7409,
           7401
@@ -175667,11 +175693,11 @@
       "niche_pct": 72.8,
       "mainstream_pct": 27.2,
       "total_sources_used": 81,
-      "articles_processed": 229
+      "articles_processed": 230
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 229,
+      "total_events": 230,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -175957,14 +175983,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 27,
       "direct_action": {
-        "count": 22,
-        "pct": 84.6
+        "count": 23,
+        "pct": 85.2
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 15.4
+        "pct": 14.8
       },
       "untyped": {
         "count": 0,
@@ -175972,9 +175998,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2061,
+      "total_burn": 2062,
       "direct_action": {
-        "count": 1628,
+        "count": 1629,
         "pct": 79.0
       },
       "editorial_consciousness": {
@@ -176017,9 +176043,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 90,
+      "citizen": 91,
       "institutional": 139,
-      "citizen_ratio": 0.393,
+      "citizen_ratio": 0.396,
       "daily": [
         {
           "date": "2026-09-11",
@@ -176053,11 +176079,12 @@
         },
         {
           "date": "2026-09-17",
-          "citizen": 9,
+          "citizen": 10,
           "institutional": 13
         }
       ],
       "event_ids_citizen": [
+        7599,
         7598,
         7597,
         7595,
