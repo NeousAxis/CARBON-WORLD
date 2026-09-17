@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-17T07:08:11.866503+00:00",
-  "total_events": 7590,
+  "generated_at": "2026-09-17T08:07:20.637119+00:00",
+  "total_events": 7591,
   "total_burned": 7930989455,
-  "total_minted": 10057194629,
+  "total_minted": 10057215029,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7591,
+      "event_title": "Japan’s Natuna port proposal highlights Indonesia’s balancing act on China",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3367757/japans-natuna-port-proposal-highlights-indonesias-balancing-act-china?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 20400,
+      "final_score": -0.3,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables geopolitical tension and militarization risks with limited safeguards. | While the port upgrade could bring economic and infrastructure benefits, the risk of turning the facility into a strategic military foothold heightens regional tensions and threatens marine environments. The negative security and ecological implications outweigh the modest p",
+      "tx_hash": "3omHGsxV9ZReg8Q4RktPocPtJW9aBjnuZ18nVCdDxP25bv813WTDk5CJRHjWpS6Ac27nwturBX3eJGSunuZ1Ky94",
+      "created_at": "2026-09-17T08:07:15.762297+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Proposed upgrade of Natuna port infrastructure to improve civilian maritime facilities and regional trade\", \"affected_sdgs\": [8, 9, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential militarization of the Natuna port increasing regional security tensions and risking marine ecosystem disruption\", \"affected_sdgs\": [13, 14, 16], \"violated_rights\": [\"UNDRIP Article 11\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 7590,
       "event_title": "South Africa: Stop Sardine Fishing, Warn Conservationists",
@@ -174643,14 +174666,14 @@
         "events": 67
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.083,
-        "events": 24
-      },
-      {
         "region": "Latin America",
         "burn_ratio": 0.083,
         "events": 12
+      },
+      {
+        "region": "Asia",
+        "burn_ratio": 0.08,
+        "events": 25
       },
       {
         "region": "Africa",
@@ -174676,8 +174699,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.917,
-        "events": 24
+        "mint_ratio": 0.92,
+        "events": 25
       },
       {
         "region": "Latin America",
@@ -174718,7 +174741,7 @@
       },
       {
         "date": "2026-09-17",
-        "net_minted": 17242400,
+        "net_minted": 17262800,
         "net_burned": 1125000
       }
     ],
@@ -174736,7 +174759,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 207,
+        "negative": 208,
         "event_ids_positive": [
           7584,
           7580,
@@ -174765,6 +174788,7 @@
           7373
         ],
         "event_ids_negative": [
+          7591,
           7590,
           7589,
           7588,
@@ -175304,13 +175328,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 54,
+        "negative": 55,
         "event_ids_positive": [
           7548,
           7409,
           7401
         ],
         "event_ids_negative": [
+          7591,
           7589,
           7587,
           7586,
@@ -175400,7 +175425,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           7584,
           7580,
@@ -175418,6 +175443,7 @@
           7373
         ],
         "event_ids_negative": [
+          7591,
           7590,
           7588,
           7587,
@@ -175501,11 +175527,11 @@
       "niche_pct": 73.5,
       "mainstream_pct": 26.5,
       "total_sources_used": 83,
-      "articles_processed": 236
+      "articles_processed": 237
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 236,
+      "total_events": 237,
       "pct": 1.7
     },
     "active_partners_7d": [],
@@ -175674,10 +175700,11 @@
       },
       {
         "name": "Construction",
-        "count": 18,
+        "count": 19,
         "burn_count": 1,
-        "mint_count": 17,
+        "mint_count": 18,
         "event_ids": [
+          7591,
           7555,
           7544,
           7543,
@@ -175725,10 +175752,11 @@
       },
       {
         "name": "Defense",
-        "count": 14,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          7591,
           7589,
           7588,
           7563,
@@ -175820,10 +175848,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 211,
+      "total_mint": 212,
       "direct_action": {
-        "count": 188,
-        "pct": 89.1
+        "count": 189,
+        "pct": 89.2
       },
       "editorial_alarm": {
         "count": 19,
@@ -175835,9 +175863,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5522,
+      "total_mint": 5523,
       "direct_action": {
-        "count": 4622,
+        "count": 4623,
         "pct": 83.7
       },
       "editorial_alarm": {
@@ -175851,8 +175879,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 93,
-      "institutional": 143,
-      "citizen_ratio": 0.394,
+      "institutional": 144,
+      "citizen_ratio": 0.392,
       "daily": [
         {
           "date": "2026-09-11",
@@ -175887,7 +175915,7 @@
         {
           "date": "2026-09-17",
           "citizen": 5,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -175986,6 +176014,7 @@
         7355
       ],
       "event_ids_institutional": [
+        7591,
         7590,
         7588,
         7584,
