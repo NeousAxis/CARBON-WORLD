@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-18T04:06:38.244143+00:00",
-  "total_events": 7614,
+  "generated_at": "2026-09-18T05:06:32.360233+00:00",
+  "total_events": 7615,
   "total_burned": 7931864455,
-  "total_minted": 10112114929,
+  "total_minted": 10112790929,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7615,
+      "event_title": "Australia to detain tourists exceeding visa durations, risking image damage",
+      "event_url": "https://www.letemps.ch/articles/l-australie-va-detenir-les-touristes-qui-depassent-leurs-visas-au-risque-de-ternir-son-image",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.16,
+      "confidence": 8,
+      "justification": "Detention for visa overstays violates core rights and risks systemic harm, outweighing compliance benefits. | The policy prioritizes administrative control over fundamental rights, with detention for visa overstays constituting a disproportionate and punitive response. While the government frames this as deterrence, the violation of liberty and potential for systemic harm outweighs any compliance benefits. The economic and reputational risks further undermine the policy's justification, making i",
+      "tx_hash": "56FQnikoEsKixnLwUcUVAXrKzQhYNky8DBg1naGBuD39GH5xFR33taHz2eyjfyXxLKbFXNgBo7RUCmhYyQpyCWxX",
+      "created_at": "2026-09-18T05:06:26.489410+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Government asserts control over immigration compliance, potentially reducing overstaying and associated labor market distortions.\", \"affected_sdgs\": [8, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Detention of tourists for visa overstays violates freedom from arbitrary detention (UDHR Article 9) and risks inhumane treatment (UDHR Article 5), with documented poor conditions in Australian detention centers.\", \"affected_sdgs\": [1, 3, 8, 10, 16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 13\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Policy may deter tourism, harming economic livelihoods (SDG 8) and cultural exchange (SDG 17), with sector representatives warning of reputational damage.\", \"affected_sdgs\": [8, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Expansion of detention infrastructure locks in punitive immigration systems, normalizing deprivation of liberty for administrative violations.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 9\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7614,
       "event_title": "EU warns Turkey to clean up waste treatment or face trade ban",
@@ -175141,14 +175164,14 @@
         "total_amount": 5385400
       },
       {
-        "country": "China",
-        "count": 7,
-        "total_amount": 2233300
-      },
-      {
         "country": "United Kingdom",
         "count": 6,
         "total_amount": 1980600
+      },
+      {
+        "country": "China",
+        "count": 6,
+        "total_amount": 2150400
       },
       {
         "country": "Saudi Arabia",
@@ -175201,16 +175224,21 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.095,
-        "events": 21
+        "burn_ratio": 0.1,
+        "events": 20
       },
       {
-        "region": "MENA",
+        "region": "Oceania",
         "burn_ratio": 0.0,
-        "events": 17
+        "events": 6
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "Oceania",
+        "mint_ratio": 1.0,
+        "events": 6
+      },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
@@ -175222,14 +175250,9 @@
         "events": 8
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 1.0,
-        "events": 5
-      },
-      {
         "region": "Asia",
-        "mint_ratio": 0.905,
-        "events": 21
+        "mint_ratio": 0.9,
+        "events": 20
       },
       {
         "region": "North America",
@@ -175270,7 +175293,7 @@
       },
       {
         "date": "2026-09-18",
-        "net_minted": 7568000,
+        "net_minted": 8244000,
         "net_burned": 0
       }
     ],
@@ -175317,6 +175340,7 @@
           7394
         ],
         "event_ids_negative": [
+          7615,
           7614,
           7613,
           7612,
@@ -175510,8 +175534,7 @@
           7396,
           7395,
           7393,
-          7392,
-          7391
+          7392
         ]
       },
       "UDHR": {
@@ -175536,6 +175559,7 @@
           7394
         ],
         "event_ids_negative": [
+          7615,
           7614,
           7613,
           7612,
@@ -175713,13 +175737,12 @@
           7396,
           7395,
           7393,
-          7392,
-          7391
+          7392
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 26,
+        "negative": 25,
         "event_ids_positive": [
           7480,
           7459,
@@ -175750,13 +175773,12 @@
           7454,
           7450,
           7436,
-          7408,
-          7391
+          7408
         ]
       },
       "CRC": {
         "positive": 2,
-        "negative": 53,
+        "negative": 52,
         "event_ids_positive": [
           7514,
           7409
@@ -175813,13 +175835,12 @@
           7415,
           7410,
           7408,
-          7395,
-          7391
+          7395
         ]
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 52,
+        "negative": 51,
         "event_ids_positive": [
           7599,
           7548,
@@ -175877,8 +175898,7 @@
           7403,
           7400,
           7399,
-          7393,
-          7391
+          7393
         ]
       },
       "Animal": {
@@ -176332,9 +176352,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5544,
+      "total_mint": 5545,
       "direct_action": {
-        "count": 4644,
+        "count": 4645,
         "pct": 83.8
       },
       "editorial_alarm": {
@@ -176347,9 +176367,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 84,
-      "institutional": 140,
-      "citizen_ratio": 0.375,
+      "citizen": 83,
+      "institutional": 141,
+      "citizen_ratio": 0.371,
       "daily": [
         {
           "date": "2026-09-12",
@@ -176384,7 +176404,7 @@
         {
           "date": "2026-09-18",
           "citizen": 0,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -176470,10 +176490,10 @@
         7400,
         7395,
         7394,
-        7392,
-        7391
+        7392
       ],
       "event_ids_institutional": [
+        7615,
         7614,
         7613,
         7612,
