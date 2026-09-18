@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-18T10:05:40.016499+00:00",
-  "total_events": 7625,
+  "generated_at": "2026-09-18T11:07:48.771443+00:00",
+  "total_events": 7626,
   "total_burned": 7931864455,
-  "total_minted": 10125158929,
+  "total_minted": 10125308929,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7626,
+      "event_title": "Fuel prices: Government studies new aid scheme for 'large drivers' to continue, starting October 1st",
+      "event_url": "https://www.ici.fr/infos/economie-social/prix-des-carburants-l-aide-grands-rouleurs-ne-va-pas-s-arreter-un-nouveau-dispositif-etudie-par-le-gouvernement-6146067?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.1,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Subsidizing fuel use aids low‑income drivers but entrenches fossil‑fuel consumption, weakening climate protections. | The aid scheme addresses immediate socioeconomic vulnerabilities (SDGs 1, 8, 10) but risks locking in fossil fuel dependence (SDGs 7, 12, 13) and may not equitably reach all affected groups. The net ethical judgment tilts negative due to the long-term environ",
+      "tx_hash": "4XPLwd1KUPceDjerha8zKxAFqJeUik9Xojsyu5XN8tR8JU7n7RsuKjWh331zigmsNey7P1ZPnMcnPF84HkaokpBk",
+      "created_at": "2026-09-18T11:07:43.534712+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Government studies new aid scheme targeting low-income workers ('large drivers') to mitigate fuel price increases, providing financial relief to vulnerable populations.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Subsidy for fossil fuel consumption perpetuates dependency on carbon-intensive energy, undermining climate action and sustainable consumption goals.\", \"affected_sdgs\": [7, 12, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential exclusion of non-drivers or those in rural areas without access to public transport, risking unequal distribution of aid.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 22\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 7625,
       "event_title": "Foundation Phase textbook delays threaten SA’s literacy push",
@@ -175390,8 +175413,8 @@
       },
       {
         "country": "France",
-        "count": 16,
-        "total_amount": 5385400
+        "count": 17,
+        "total_amount": 5535400
       },
       {
         "country": "Indonesia",
@@ -175444,8 +175467,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.138,
-        "events": 58
+        "burn_ratio": 0.145,
+        "events": 55
       },
       {
         "region": "North America",
@@ -175523,7 +175546,7 @@
       },
       {
         "date": "2026-09-18",
-        "net_minted": 12384000,
+        "net_minted": 12534000,
         "net_burned": 0
       }
     ],
@@ -175541,7 +175564,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 24,
-        "negative": 201,
+        "negative": 198,
         "event_ids_positive": [
           7599,
           7597,
@@ -175569,6 +175592,7 @@
           7401
         ],
         "event_ids_negative": [
+          7626,
           7625,
           7624,
           7623,
@@ -175765,16 +175789,12 @@
           7403,
           7402,
           7400,
-          7399,
-          7398,
-          7397,
-          7396,
-          7395
+          7399
         ]
       },
       "UDHR": {
         "positive": 15,
-        "negative": 185,
+        "negative": 182,
         "event_ids_positive": [
           7599,
           7597,
@@ -175793,6 +175813,7 @@
           7409
         ],
         "event_ids_negative": [
+          7626,
           7625,
           7624,
           7623,
@@ -175973,11 +175994,7 @@
           7403,
           7402,
           7400,
-          7399,
-          7398,
-          7397,
-          7396,
-          7395
+          7399
         ]
       },
       "ILO": {
@@ -176018,7 +176035,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 55,
+        "negative": 54,
         "event_ids_positive": [
           7514,
           7409
@@ -176077,8 +176094,7 @@
           7417,
           7415,
           7410,
-          7408,
-          7395
+          7408
         ]
       },
       "UNDRIP": {
@@ -176197,6 +176213,7 @@
           7401
         ],
         "event_ids_negative": [
+          7626,
           7624,
           7623,
           7621,
@@ -176274,21 +176291,20 @@
           7405,
           7403,
           7402,
-          7400,
-          7396
+          7400
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 73.8,
-      "mainstream_pct": 26.2,
-      "total_sources_used": 80,
-      "articles_processed": 229
+      "niche_pct": 72.2,
+      "mainstream_pct": 27.8,
+      "total_sources_used": 79,
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 229,
-      "pct": 1.7
+      "total_events": 226,
+      "pct": 1.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -176312,9 +176328,9 @@
       },
       {
         "name": "EU",
-        "count": 9,
+        "count": 8,
         "burn_count": 0,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           7614,
           7528,
@@ -176323,8 +176339,7 @@
           7471,
           7462,
           7434,
-          7402,
-          7396
+          7402
         ]
       },
       {
@@ -176362,6 +176377,7 @@
         "burn_count": 4,
         "mint_count": 46,
         "event_ids": [
+          7626,
           7624,
           7621,
           7604,
@@ -176410,15 +176426,14 @@
           7413,
           7406,
           7402,
-          7400,
-          7396
+          7400
         ]
       },
       {
         "name": "Finance",
-        "count": 20,
+        "count": 19,
         "burn_count": 3,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           7584,
           7579,
@@ -176438,8 +176453,7 @@
           7465,
           7411,
           7405,
-          7401,
-          7396
+          7401
         ]
       },
       {
@@ -176496,9 +176510,9 @@
       },
       {
         "name": "Defense",
-        "count": 14,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           7598,
           7591,
@@ -176512,8 +176526,7 @@
           7457,
           7449,
           7438,
-          7419,
-          7395
+          7419
         ]
       },
       {
@@ -176589,14 +176602,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 205,
+      "total_mint": 202,
       "direct_action": {
-        "count": 186,
-        "pct": 90.7
+        "count": 183,
+        "pct": 90.6
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.3
+        "pct": 7.4
       },
       "untyped": {
         "count": 4,
@@ -176604,9 +176617,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5553,
+      "total_mint": 5554,
       "direct_action": {
-        "count": 4652,
+        "count": 4653,
         "pct": 83.8
       },
       "editorial_alarm": {
@@ -176619,8 +176632,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 82,
-      "institutional": 147,
+      "citizen": 81,
+      "institutional": 145,
       "citizen_ratio": 0.358,
       "daily": [
         {
@@ -176656,7 +176669,7 @@
         {
           "date": "2026-09-18",
           "citizen": 1,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -176740,10 +176753,10 @@
         7404,
         7402,
         7401,
-        7400,
-        7395
+        7400
       ],
       "event_ids_institutional": [
+        7626,
         7625,
         7624,
         7622,
@@ -176887,10 +176900,7 @@
         7406,
         7405,
         7403,
-        7399,
-        7398,
-        7397,
-        7396
+        7399
       ]
     }
   }
