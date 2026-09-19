@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-19T11:08:19.646211+00:00",
-  "total_events": 7660,
+  "generated_at": "2026-09-19T12:06:45.074159+00:00",
+  "total_events": 7662,
   "total_burned": 7933189455,
-  "total_minted": 10160255329,
+  "total_minted": 10161859329,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7662,
+      "event_title": "The United States has abandoned the seizure of a Chinese ship in the Middle East, considered based on a report partly written by AI",
+      "event_url": "https://www.lemonde.fr/international/article/2026/09/19/les-etats-unis-ont-renonce-a-l-arraisonnement-d-un-navire-chinois-au-moyen-orient-envisage-sur-la-base-d-un-rapport-en-partie-redige-par-ia-selon-cnn_6777674_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1000000,
+      "final_score": -2.25,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Abandoning the seizure protects rights and de‑escalates conflict, outweighing AI‑driven risk concerns. | The decision to abandon the seizure avoids immediate conflict and human rights risks, aligning with SDG 16 and UDHR principles. However, the underlying reliance on AI for military intelligence raises significant ethical concerns about accountability, transparency, and the",
+      "tx_hash": "2qfJwxXyPX9ZKirx5R7YykfxnKX2f4YrS6XRwYqD6BcASVqBUwr4q5WVwHVJF2tj8j5CfVuEHD1AmYkTE65ugCq8",
+      "created_at": "2026-09-19T12:06:40.146784+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Avoidance of an escalatory military action that could have heightened geopolitical tensions and risked conflict in the Middle East.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Prevention of potential human rights violations (e.g., arbitrary detention, use of force) that could have arisen from the seizure of the ship and its crew.\", \"affected_sdgs\": [16, 3], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reliance on AI-generated intelligence for military decision-making without sufficient human oversight, risking misjudgment and unintended consequences.\", \"affected_sdgs\": [16, 9], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential normalization of AI-driven military actions, undermining accountability and transparency in national security decisions.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 7661,
+      "event_title": "Federal transit cuts could hit rural America hardest",
+      "event_url": "https://grist.org/solutions/federal-transit-cuts-could-hit-rural-america-hardest/",
+      "event_source": "Grist",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.3,
+      "confidence": 7,
+      "justification": "Federal transit cuts harm rural communities, outweighing any fiscal benefit. | The transit funding cuts directly harm rural populations by limiting mobility, worsening poverty, and increasing climate impact, outweighing any fiscal savings. No compensating positive outcomes are evident.",
+      "tx_hash": "qA8XLZN68njHDJbhhHeKJCSuyjQiuBGc2cF5wqo1cGsTCCLMPaMxcDRusovetSfUYtHgrZcpuxvrwcUsxPr7D91",
+      "created_at": "2026-09-19T12:06:37.890845+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Federal cuts to transit funding reduce rural mobility, increase isolation, raise emissions, and limit access to essential services.\", \"affected_sdgs\": [1, 8, 9, 11, 13], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 604000
+    },
     {
       "id": 7660,
       "event_title": "Denmark hails 'binding' Greenland deal with Trump",
@@ -176190,8 +176236,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 66,
-        "total_amount": 100970790
+        "count": 68,
+        "total_amount": 102574790
       },
       {
         "country": "France",
@@ -176254,8 +176300,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.081,
-        "events": 74
+        "burn_ratio": 0.079,
+        "events": 76
       },
       {
         "region": "MENA",
@@ -176291,8 +176337,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.919,
-        "events": 74
+        "mint_ratio": 0.921,
+        "events": 76
       }
     ],
     "supply_trend_7d": [
@@ -176328,7 +176374,7 @@
       },
       {
         "date": "2026-09-19",
-        "net_minted": 21569800,
+        "net_minted": 23173800,
         "net_burned": 325000
       }
     ],
@@ -176346,7 +176392,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 200,
+        "negative": 202,
         "event_ids_positive": [
           7652,
           7644,
@@ -176373,6 +176419,8 @@
           7433
         ],
         "event_ids_negative": [
+          7662,
+          7661,
           7660,
           7659,
           7658,
@@ -176577,7 +176625,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 176,
+        "negative": 178,
         "event_ids_positive": [
           7652,
           7644,
@@ -176596,6 +176644,8 @@
           7433
         ],
         "event_ids_negative": [
+          7662,
+          7661,
           7660,
           7659,
           7657,
@@ -176776,13 +176826,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [
           7480,
           7459,
           7451
         ],
         "event_ids_negative": [
+          7661,
           7635,
           7629,
           7628,
@@ -177084,11 +177135,11 @@
       "niche_pct": 68.8,
       "mainstream_pct": 31.2,
       "total_sources_used": 80,
-      "articles_processed": 229
+      "articles_processed": 231
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 229,
+      "total_events": 231,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -177239,10 +177290,11 @@
       },
       {
         "name": "Tech",
-        "count": 17,
+        "count": 18,
         "burn_count": 1,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          7662,
           7653,
           7631,
           7602,
@@ -177264,10 +177316,11 @@
       },
       {
         "name": "Finance",
-        "count": 17,
+        "count": 18,
         "burn_count": 2,
-        "mint_count": 15,
+        "mint_count": 16,
         "event_ids": [
+          7661,
           7636,
           7584,
           7579,
@@ -177289,10 +177342,11 @@
       },
       {
         "name": "Defense",
-        "count": 14,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          7662,
           7656,
           7647,
           7598,
@@ -177380,14 +177434,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 206,
+      "total_mint": 208,
       "direct_action": {
-        "count": 184,
-        "pct": 89.3
+        "count": 185,
+        "pct": 88.9
       },
       "editorial_alarm": {
-        "count": 16,
-        "pct": 7.8
+        "count": 17,
+        "pct": 8.2
       },
       "untyped": {
         "count": 6,
@@ -177395,13 +177449,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5587,
+      "total_mint": 5589,
       "direct_action": {
-        "count": 4681,
+        "count": 4682,
         "pct": 83.8
       },
       "editorial_alarm": {
-        "count": 346,
+        "count": 347,
         "pct": 6.2
       },
       "untyped": {
@@ -177410,9 +177464,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 77,
-      "institutional": 152,
-      "citizen_ratio": 0.336,
+      "citizen": 78,
+      "institutional": 153,
+      "citizen_ratio": 0.338,
       "daily": [
         {
           "date": "2026-09-13",
@@ -177446,11 +177500,12 @@
         },
         {
           "date": "2026-09-19",
-          "citizen": 7,
-          "institutional": 9
+          "citizen": 8,
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        7661,
         7660,
         7656,
         7652,
@@ -177530,6 +177585,7 @@
         7435
       ],
       "event_ids_institutional": [
+        7662,
         7659,
         7658,
         7657,
