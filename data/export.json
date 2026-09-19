@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-19T13:05:23.554047+00:00",
-  "total_events": 7662,
+  "generated_at": "2026-09-19T14:05:43.355471+00:00",
+  "total_events": 7663,
   "total_burned": 7933189455,
-  "total_minted": 10161859329,
+  "total_minted": 10162359329,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7663,
+      "event_title": "Germany cuts fuel tax as Middle East conflicts send prices soaring",
+      "event_url": "https://www.politico.eu/article/germany-fuel-tax-middle-east-war-prices/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.86,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Tax cut eases fuel costs, encouraging fossil use and undermining climate commitments, thus enabling harm. | While the tax cut offers immediate relief to citizens facing energy price shocks, it prioritizes short-term economic stability over long-term climate and equity goals. The action directly contradicts Germany's climate commitments and risks locking in fossil fuel depend",
+      "tx_hash": "5XHMQXnjD7U7ULuMaRNFuRc91jfLgjmAVMz7xqNGdQ52WGLXH4MnZ41a8aMo15iYZCgGJdXR2bkQwEyZzMLcpFhT",
+      "created_at": "2026-09-19T14:05:36.368241+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Temporary fuel tax cut provides short-term financial relief to citizens, easing cost-of-living pressures during energy price spikes.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Fuel tax reduction incentivizes fossil fuel consumption, undermining climate action (SDG 13) and clean energy transitions (SDG 7), with long-term environmental harm.\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Subsidy benefits fossil fuel corporations by maintaining demand, potentially enabling windfall profits without binding conditions on reinvestment in renewables.\", \"affected_sdgs\": [12, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Lack of targeted support for low-income households risks exacerbating inequality (SDG 10), as wealthier citizens benefit disproportionately from fuel subsidies.\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7662,
       "event_title": "The United States has abandoned the seizure of a Chinese ship in the Middle East, considered based on a report partly written by AI",
@@ -176295,8 +176318,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.148,
-        "events": 61
+        "burn_ratio": 0.145,
+        "events": 62
       },
       {
         "region": "North America",
@@ -176374,7 +176397,7 @@
       },
       {
         "date": "2026-09-19",
-        "net_minted": 23173800,
+        "net_minted": 23673800,
         "net_burned": 325000
       }
     ],
@@ -176392,7 +176415,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 202,
+        "negative": 203,
         "event_ids_positive": [
           7652,
           7644,
@@ -176419,6 +176442,7 @@
           7433
         ],
         "event_ids_negative": [
+          7663,
           7662,
           7661,
           7660,
@@ -176625,7 +176649,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 178,
+        "negative": 179,
         "event_ids_positive": [
           7652,
           7644,
@@ -176644,6 +176668,7 @@
           7433
         ],
         "event_ids_negative": [
+          7663,
           7662,
           7661,
           7660,
@@ -177026,7 +177051,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 86,
+        "negative": 87,
         "event_ids_positive": [
           7652,
           7638,
@@ -177042,6 +177067,7 @@
           7435
         ],
         "event_ids_negative": [
+          7663,
           7660,
           7659,
           7658,
@@ -177132,14 +177158,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.8,
-      "mainstream_pct": 31.2,
+      "niche_pct": 67.5,
+      "mainstream_pct": 32.5,
       "total_sources_used": 80,
-      "articles_processed": 231
+      "articles_processed": 232
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 231,
+      "total_events": 232,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -177208,10 +177234,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 47,
+        "count": 48,
         "burn_count": 3,
-        "mint_count": 44,
+        "mint_count": 45,
         "event_ids": [
+          7663,
           7659,
           7654,
           7653,
@@ -177434,14 +177461,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 208,
+      "total_mint": 209,
       "direct_action": {
-        "count": 185,
-        "pct": 88.9
+        "count": 186,
+        "pct": 89.0
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 8.2
+        "pct": 8.1
       },
       "untyped": {
         "count": 6,
@@ -177449,9 +177476,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5589,
+      "total_mint": 5590,
       "direct_action": {
-        "count": 4682,
+        "count": 4683,
         "pct": 83.8
       },
       "editorial_alarm": {
@@ -177464,9 +177491,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 78,
+      "citizen": 79,
       "institutional": 153,
-      "citizen_ratio": 0.338,
+      "citizen_ratio": 0.341,
       "daily": [
         {
           "date": "2026-09-13",
@@ -177500,11 +177527,12 @@
         },
         {
           "date": "2026-09-19",
-          "citizen": 8,
+          "citizen": 9,
           "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        7663,
         7661,
         7660,
         7656,
