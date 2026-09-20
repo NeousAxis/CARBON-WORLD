@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-19T23:06:46.043811+00:00",
-  "total_events": 7676,
+  "generated_at": "2026-09-20T00:06:14.377775+00:00",
+  "total_events": 7677,
   "total_burned": 7933189455,
-  "total_minted": 10174106429,
+  "total_minted": 10180866429,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7677,
+      "event_title": "Turkiye backs Saudi Arabia’s security amid escalating Houthi attacks: FM",
+      "event_url": "https://www.aljazeera.com/news/2026/9/19/turkiye-backs-saudi-arabias-security-amid-escalating-houthi-attacks-fm?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -3.21,
+      "confidence": 8,
+      "justification": "Military backing for Saudi Arabia in Yemen risks prolonging conflict and enabling human rights violations. | While Turkey's support for Saudi Arabia's security may offer short-term regional stability, it risks entrenching a conflict with severe humanitarian consequences. The negative aspects—prolonged war, civilian harm, and violations of international law—outweigh the limited diplomatic benefits, particularly given the documented human rights abuses in Yemen.",
+      "tx_hash": "NBDmhwb6aoH3xSfqqmhTA4q15psoKYchrN19JEa5ehHrH7Fa95gztYwRDtgCiJvJLwaibveuWg1SmbfhRVqzhzV",
+      "created_at": "2026-09-20T00:06:09.853269+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Turkey's diplomatic support for Saudi Arabia's security may contribute to regional stability and reduce immediate conflict escalation.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military backing for Saudi Arabia, a party to the Yemen conflict, risks prolonging the war, increasing civilian casualties, and undermining peace efforts.\", \"affected_sdgs\": [1, 2, 3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 6\", \"CRC Article 22\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Military assistance to Saudi Arabia may enable further violations of international humanitarian law, including airstrikes on civilian infrastructure in Yemen.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"ILO Forced Labor Convention\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7676,
       "event_title": "Trump to appoint an 'AI tsar' to 'cherish, aid, and oversee' AI",
@@ -176665,11 +176688,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-09-13",
-        "net_minted": 6342400,
-        "net_burned": 914700
-      },
-      {
         "date": "2026-09-14",
         "net_minted": 33123300,
         "net_burned": 2600000
@@ -176698,6 +176716,11 @@
         "date": "2026-09-19",
         "net_minted": 35420900,
         "net_burned": 325000
+      },
+      {
+        "date": "2026-09-20",
+        "net_minted": 6760000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -176714,7 +176737,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 212,
+        "negative": 213,
         "event_ids_positive": [
           7652,
           7644,
@@ -176739,6 +176762,7 @@
           7451
         ],
         "event_ids_negative": [
+          7677,
           7676,
           7675,
           7674,
@@ -176955,7 +176979,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 188,
+        "negative": 189,
         "event_ids_positive": [
           7652,
           7644,
@@ -176973,6 +176997,7 @@
           7451
         ],
         "event_ids_negative": [
+          7677,
           7676,
           7675,
           7674,
@@ -177165,13 +177190,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 30,
+        "negative": 31,
         "event_ids_positive": [
           7480,
           7459,
           7451
         ],
         "event_ids_negative": [
+          7677,
           7675,
           7670,
           7666,
@@ -177206,11 +177232,12 @@
       },
       "CRC": {
         "positive": 1,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           7514
         ],
         "event_ids_negative": [
+          7677,
           7673,
           7671,
           7666,
@@ -177268,12 +177295,13 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           7599,
           7548
         ],
         "event_ids_negative": [
+          7677,
           7670,
           7666,
           7660,
@@ -177479,11 +177507,11 @@
       "niche_pct": 68.8,
       "mainstream_pct": 31.2,
       "total_sources_used": 80,
-      "articles_processed": 239
+      "articles_processed": 240
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 239,
+      "total_events": 240,
       "pct": 2.5
     },
     "active_partners_7d": [],
@@ -177695,10 +177723,11 @@
       },
       {
         "name": "Defense",
-        "count": 16,
+        "count": 17,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          7677,
           7671,
           7662,
           7656,
@@ -177789,10 +177818,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 218,
+      "total_mint": 219,
       "direct_action": {
-        "count": 193,
-        "pct": 88.5
+        "count": 194,
+        "pct": 88.6
       },
       "editorial_alarm": {
         "count": 19,
@@ -177800,13 +177829,13 @@
       },
       "untyped": {
         "count": 6,
-        "pct": 2.8
+        "pct": 2.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5603,
+      "total_mint": 5604,
       "direct_action": {
-        "count": 4694,
+        "count": 4695,
         "pct": 83.8
       },
       "editorial_alarm": {
@@ -177820,14 +177849,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 157,
-      "citizen_ratio": 0.343,
+      "institutional": 158,
+      "citizen_ratio": 0.342,
       "daily": [
-        {
-          "date": "2026-09-13",
-          "citizen": 9,
-          "institutional": 9
-        },
         {
           "date": "2026-09-14",
           "citizen": 10,
@@ -177857,6 +177881,11 @@
           "date": "2026-09-19",
           "citizen": 13,
           "institutional": 19
+        },
+        {
+          "date": "2026-09-20",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -177944,6 +177973,7 @@
         7439
       ],
       "event_ids_institutional": [
+        7677,
         7675,
         7674,
         7673,
