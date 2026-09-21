@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-21T17:07:38.447674+00:00",
-  "total_events": 7711,
+  "generated_at": "2026-09-21T18:07:38.974126+00:00",
+  "total_events": 7712,
   "total_burned": 7937293455,
-  "total_minted": 10211377239,
+  "total_minted": 10211877239,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7712,
+      "event_title": "Pakistan: Arbitrary Detention of Imran Khan’s Family and Party Activists Violates Human Rights",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/09/pakistan-arbitrary-detention-of-imran-khans-family-and-party-activists-a-flagrant-violation-of-human-rights/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -4.97,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Arbitrary detention of political opposition violates core human rights and undermines democratic governance. | The arbitrary detention of political opposition figures and their family members constitutes a severe violation of fundamental human rights, including liberty, freedom of association, and peaceful assembly. This action undermines democratic principles, exacerbates poli",
+      "tx_hash": "55NBJTqGMub2Lp9o9B96PJyHsDC4ZqNseZnA9e2sgt1MHGwU1mt6QLbiad8HM9MiEPv65hLtK7YpMo8AWyz2fQjc",
+      "created_at": "2026-09-21T18:07:33.991398+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Pakistan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Arbitrary detention of political opposition figures, including family members of Imran Khan and PTI activists, violating their rights to liberty, freedom of association, and peaceful assembly.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 9\", \"UDHR Article 19\", \"UDHR Article 20\", \"UDHR Article 21\", \"ILO Freedom of Association\", \"CRC Article 15\", \"UNDRIP Article 1\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7711,
       "event_title": "Japan aims to ensure domestic vaccine production capacity for next crisis",
@@ -177363,8 +177386,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 74,
-        "total_amount": 107041800
+        "count": 73,
+        "total_amount": 106365800
       },
       {
         "country": "France",
@@ -177422,8 +177445,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.133,
-        "events": 15
+        "burn_ratio": 0.125,
+        "events": 16
       },
       {
         "region": "Europe",
@@ -177437,8 +177460,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.061,
-        "events": 82
+        "burn_ratio": 0.062,
+        "events": 81
       }
     ],
     "top_regions_destructive": [
@@ -177454,8 +177477,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.939,
-        "events": 82
+        "mint_ratio": 0.938,
+        "events": 81
       },
       {
         "region": "MENA",
@@ -177501,20 +177524,20 @@
       },
       {
         "date": "2026-09-21",
-        "net_minted": 19011400,
+        "net_minted": 19511400,
         "net_burned": 700000
       }
     ],
     "event_of_the_day": {
-      "id": 7690,
-      "event_title": "Golden catfish: the migratory fish revealing Amazon river crises",
-      "decision": "BURN",
-      "amount_crbn": 2659000,
-      "final_score": 6.5,
+      "id": 7692,
+      "event_title": "Russia’s secret plan to supercharge kamikaze drone production",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -6.06,
       "confidence": 8,
-      "country": null,
-      "region": null,
-      "created_at": "2026-09-20T18:06:36.661143+00:00"
+      "country": "Russia",
+      "region": "Europe",
+      "created_at": "2026-09-20T22:05:54.751262+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
@@ -177543,6 +177566,7 @@
           7480
         ],
         "event_ids_negative": [
+          7712,
           7711,
           7710,
           7709,
@@ -177751,8 +177775,7 @@
           7484,
           7483,
           7482,
-          7481,
-          7479
+          7481
         ]
       },
       "UDHR": {
@@ -177775,6 +177798,7 @@
           7480
         ],
         "event_ids_negative": [
+          7712,
           7711,
           7710,
           7709,
@@ -177957,18 +177981,18 @@
           7484,
           7483,
           7482,
-          7481,
-          7479
+          7481
         ]
       },
       "ILO": {
         "positive": 2,
-        "negative": 31,
+        "negative": 32,
         "event_ids_positive": [
           7706,
           7480
         ],
         "event_ids_negative": [
+          7712,
           7709,
           7705,
           7703,
@@ -178004,13 +178028,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 51,
+        "negative": 52,
         "event_ids_positive": [
           7706,
           7684,
           7514
         ],
         "event_ids_negative": [
+          7712,
           7702,
           7693,
           7692,
@@ -178066,13 +178091,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 57,
+        "negative": 58,
         "event_ids_positive": [
           7678,
           7599,
           7548
         ],
         "event_ids_negative": [
+          7712,
           7709,
           7703,
           7702,
@@ -178169,7 +178195,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 86,
+        "negative": 85,
         "event_ids_positive": [
           7690,
           7684,
@@ -178268,8 +178294,7 @@
           7488,
           7487,
           7485,
-          7484,
-          7479
+          7484
         ]
       }
     },
@@ -178420,32 +178445,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 18,
-        "burn_count": 1,
-        "mint_count": 17,
-        "event_ids": [
-          7710,
-          7708,
-          7690,
-          7683,
-          7676,
-          7675,
-          7662,
-          7653,
-          7631,
-          7602,
-          7593,
-          7570,
-          7564,
-          7556,
-          7554,
-          7494,
-          7484,
-          7479
-        ]
-      },
-      {
         "name": "Construction",
         "count": 18,
         "burn_count": 1,
@@ -178469,6 +178468,31 @@
           7505,
           7491,
           7486
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 17,
+        "burn_count": 1,
+        "mint_count": 16,
+        "event_ids": [
+          7710,
+          7708,
+          7690,
+          7683,
+          7676,
+          7675,
+          7662,
+          7653,
+          7631,
+          7602,
+          7593,
+          7570,
+          7564,
+          7556,
+          7554,
+          7494,
+          7484
         ]
       },
       {
@@ -178604,10 +178628,10 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5634,
+      "total_mint": 5635,
       "direct_action": {
-        "count": 4724,
-        "pct": 83.8
+        "count": 4725,
+        "pct": 83.9
       },
       "editorial_alarm": {
         "count": 350,
@@ -178655,11 +178679,12 @@
         },
         {
           "date": "2026-09-21",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 12
         }
       ],
       "event_ids_citizen": [
+        7712,
         7711,
         7709,
         7702,
@@ -178733,8 +178758,7 @@
         7497,
         7496,
         7488,
-        7481,
-        7479
+        7481
       ],
       "event_ids_institutional": [
         7710,
