@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-21T00:05:32.841214+00:00",
-  "total_events": 7695,
+  "generated_at": "2026-09-21T03:04:41.344445+00:00",
+  "total_events": 7696,
   "total_burned": 7936593455,
-  "total_minted": 10193041839,
+  "total_minted": 10193645839,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7696,
+      "event_title": "Pentagon Is Undercounting US Death Toll Amid Iran War, Washington Post Reports",
+      "event_url": "https://truthout.org/articles/pentagon-is-undercounting-us-death-toll-amid-iran-war-washington-post-reports/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.2,
+      "confidence": 7,
+      "justification": "Undercounting military deaths undermines transparency and accountability, warranting a MINT decision. | The concealment of casualty figures harms the right to information and weakens institutional trust, outweighing any indirect benefits. No positive ethical impact is identified.",
+      "tx_hash": "3A4wuZQKrWZJmibLn9KA2oWHzmUyjbUcbyH3et8WbGpPGJtmAHCrTdbhj3kah81t6AKoyNv2vBoXQXDRZJ5E376v",
+      "created_at": "2026-09-21T03:04:36.573317+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Pentagon undercounts US military deaths in the Iran conflict, reducing transparency and accountability for families and the public.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7695,
       "event_title": "Revised Consent Rules Raise Concerns Over Indigenous Rights in the Philippines",
@@ -176995,8 +177018,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 77,
-        "total_amount": 114296200
+        "count": 78,
+        "total_amount": 114900200
       },
       {
         "country": "France",
@@ -177069,8 +177092,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.059,
-        "events": 85
+        "burn_ratio": 0.058,
+        "events": 86
       }
     ],
     "top_regions_destructive": [
@@ -177086,8 +177109,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.941,
-        "events": 85
+        "mint_ratio": 0.942,
+        "events": 86
       },
       {
         "region": "MENA",
@@ -177133,7 +177156,7 @@
       },
       {
         "date": "2026-09-21",
-        "net_minted": 676000,
+        "net_minted": 1280000,
         "net_burned": 0
       }
     ],
@@ -177150,8 +177173,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 21,
-        "negative": 216,
+        "positive": 20,
+        "negative": 217,
         "event_ids_positive": [
           7690,
           7684,
@@ -177172,10 +177195,10 @@
           7514,
           7486,
           7480,
-          7459,
-          7456
+          7459
         ],
         "event_ids_negative": [
+          7696,
           7695,
           7694,
           7693,
@@ -177395,8 +177418,8 @@
         ]
       },
       "UDHR": {
-        "positive": 15,
-        "negative": 190,
+        "positive": 14,
+        "negative": 191,
         "event_ids_positive": [
           7684,
           7678,
@@ -177411,10 +177434,10 @@
           7524,
           7514,
           7480,
-          7459,
-          7456
+          7459
         ],
         "event_ids_negative": [
+          7696,
           7695,
           7694,
           7693,
@@ -178094,32 +178117,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 18,
-        "burn_count": 2,
-        "mint_count": 16,
-        "event_ids": [
-          7690,
-          7683,
-          7676,
-          7675,
-          7662,
-          7653,
-          7631,
-          7602,
-          7593,
-          7570,
-          7564,
-          7556,
-          7554,
-          7494,
-          7484,
-          7479,
-          7466,
-          7456
-        ]
-      },
-      {
         "name": "Construction",
         "count": 18,
         "burn_count": 1,
@@ -178147,10 +178144,11 @@
       },
       {
         "name": "Defense",
-        "count": 16,
+        "count": 17,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          7696,
           7692,
           7677,
           7671,
@@ -178167,6 +178165,31 @@
           7508,
           7460,
           7457
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 17,
+        "burn_count": 1,
+        "mint_count": 16,
+        "event_ids": [
+          7690,
+          7683,
+          7676,
+          7675,
+          7662,
+          7653,
+          7631,
+          7602,
+          7593,
+          7570,
+          7564,
+          7556,
+          7554,
+          7494,
+          7484,
+          7479,
+          7466
         ]
       },
       {
@@ -178211,14 +178234,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 21,
+      "total_burn": 20,
       "direct_action": {
-        "count": 19,
-        "pct": 90.5
+        "count": 18,
+        "pct": 90.0
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 9.5
+        "pct": 10.0
       },
       "untyped": {
         "count": 0,
@@ -178241,14 +178264,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 219,
+      "total_mint": 220,
       "direct_action": {
-        "count": 199,
+        "count": 200,
         "pct": 90.9
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 7.8
+        "pct": 7.7
       },
       "untyped": {
         "count": 3,
@@ -178256,9 +178279,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5619,
+      "total_mint": 5620,
       "direct_action": {
-        "count": 4710,
+        "count": 4711,
         "pct": 83.8
       },
       "editorial_alarm": {
@@ -178308,7 +178331,7 @@
         {
           "date": "2026-09-21",
           "citizen": 1,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -178392,6 +178415,7 @@
         7457
       ],
       "event_ids_institutional": [
+        7696,
         7694,
         7693,
         7692,
@@ -178552,8 +178576,7 @@
         7464,
         7462,
         7461,
-        7460,
-        7456
+        7460
       ]
     }
   }
