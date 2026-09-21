@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-21T18:07:38.974126+00:00",
-  "total_events": 7712,
+  "generated_at": "2026-09-21T20:06:18.480573+00:00",
+  "total_events": 7713,
   "total_burned": 7937293455,
-  "total_minted": 10211877239,
+  "total_minted": 10212481239,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7713,
+      "event_title": "US announces new sanctions targeting Iranian airlines",
+      "event_url": "https://truthout.org/articles/bessent-says-new-us-sanctions-will-shut-down-all-iranian-airlines-worldwide/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -1.97,
+      "confidence": 8,
+      "justification": "Sanctions cause greater civilian harm than deterrent benefit, leading to a negative net impact. | While the sanctions seek to deter harmful state behavior, they impose significant civilian hardship, curtail freedom of movement, and exacerbate economic insecurity, resulting in a net negative ethical impact.",
+      "tx_hash": "2bQo33k22we3budY2GYhPAFx6u2mWZDUUymkWURRB94A8kd37CFMts7vneeuxvsPifwAhoV1H7gV5931s2ghz1v6",
+      "created_at": "2026-09-21T20:06:13.804631+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Sanctions aim to pressure the Iranian government to cease activities that threaten international peace and security.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sanctions restrict airline operations, causing economic hardship and limiting freedom of movement for Iranian civilians.\", \"affected_sdgs\": [1, 8, 9, 10], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7712,
       "event_title": "Pakistan: Arbitrary Detention of Imran Khan’s Family and Party Activists Violates Human Rights",
@@ -177386,8 +177409,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 73,
-        "total_amount": 106365800
+        "count": 74,
+        "total_amount": 106969800
       },
       {
         "country": "France",
@@ -177412,14 +177435,14 @@
     ],
     "top_countries_burn": [
       {
-        "country": "United States",
-        "count": 5,
-        "total_amount": 2700000
-      },
-      {
         "country": "France",
         "count": 4,
         "total_amount": 2600000
+      },
+      {
+        "country": "United States",
+        "count": 4,
+        "total_amount": 2000000
       },
       {
         "country": "Indonesia",
@@ -177460,7 +177483,7 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.062,
+        "burn_ratio": 0.049,
         "events": 81
       }
     ],
@@ -177477,7 +177500,7 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.938,
+        "mint_ratio": 0.951,
         "events": 81
       },
       {
@@ -177524,7 +177547,7 @@
       },
       {
         "date": "2026-09-21",
-        "net_minted": 19511400,
+        "net_minted": 20115400,
         "net_burned": 700000
       }
     ],
@@ -177541,8 +177564,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 20,
-        "negative": 210,
+        "positive": 19,
+        "negative": 211,
         "event_ids_positive": [
           7706,
           7690,
@@ -177562,10 +177585,10 @@
           7530,
           7524,
           7514,
-          7486,
-          7480
+          7486
         ],
         "event_ids_negative": [
+          7713,
           7712,
           7711,
           7710,
@@ -177779,8 +177802,8 @@
         ]
       },
       "UDHR": {
-        "positive": 14,
-        "negative": 184,
+        "positive": 13,
+        "negative": 185,
         "event_ids_positive": [
           7706,
           7684,
@@ -177794,10 +177817,10 @@
           7552,
           7548,
           7524,
-          7514,
-          7480
+          7514
         ],
         "event_ids_negative": [
+          7713,
           7712,
           7711,
           7710,
@@ -177985,13 +178008,13 @@
         ]
       },
       "ILO": {
-        "positive": 2,
-        "negative": 32,
+        "positive": 1,
+        "negative": 33,
         "event_ids_positive": [
-          7706,
-          7480
+          7706
         ],
         "event_ids_negative": [
+          7713,
           7712,
           7709,
           7705,
@@ -178559,10 +178582,11 @@
       },
       {
         "name": "Transport",
-        "count": 5,
+        "count": 6,
         "burn_count": 1,
-        "mint_count": 4,
+        "mint_count": 5,
         "event_ids": [
+          7713,
           7629,
           7543,
           7535,
@@ -178583,14 +178607,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 20,
+      "total_burn": 19,
       "direct_action": {
-        "count": 18,
-        "pct": 90.0
+        "count": 17,
+        "pct": 89.5
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 10.0
+        "pct": 10.5
       },
       "untyped": {
         "count": 0,
@@ -178613,14 +178637,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 213,
+      "total_mint": 214,
       "direct_action": {
-        "count": 193,
-        "pct": 90.6
+        "count": 194,
+        "pct": 90.7
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 8.0
+        "pct": 7.9
       },
       "untyped": {
         "count": 3,
@@ -178628,9 +178652,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5635,
+      "total_mint": 5636,
       "direct_action": {
-        "count": 4725,
+        "count": 4726,
         "pct": 83.9
       },
       "editorial_alarm": {
@@ -178643,9 +178667,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 75,
-      "institutional": 158,
-      "citizen_ratio": 0.322,
+      "citizen": 76,
+      "institutional": 157,
+      "citizen_ratio": 0.326,
       "daily": [
         {
           "date": "2026-09-15",
@@ -178679,11 +178703,12 @@
         },
         {
           "date": "2026-09-21",
-          "citizen": 6,
+          "citizen": 7,
           "institutional": 12
         }
       ],
       "event_ids_citizen": [
+        7713,
         7712,
         7711,
         7709,
@@ -178917,8 +178942,7 @@
         7485,
         7484,
         7483,
-        7482,
-        7480
+        7482
       ]
     }
   }
