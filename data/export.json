@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-22T10:07:13.930981+00:00",
-  "total_events": 7740,
+  "generated_at": "2026-09-22T11:07:18.693333+00:00",
+  "total_events": 7741,
   "total_burned": 7938793455,
-  "total_minted": 10248407939,
+  "total_minted": 10249074939,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7741,
+      "event_title": "The Download: investigating deaths at the US border’s “virtual wall”",
+      "event_url": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
+      "event_source": "MIT Technology Review",
+      "decision": "MINT",
+      "amount_crbn": 667000,
+      "final_score": -2.65,
+      "confidence": 7,
+      "justification": "The virtual wall increases migrant deaths and violates human rights, outweighing security gains. | While the surveillance system is intended to bolster security, its lethal impact on migrants and violation of fundamental human rights outweigh any security benefits, resulting in a net negative ethical assessment.",
+      "tx_hash": "2rHop1X7h3jSZuFSsyBSbUcfVK4asmzMR9m1snW9R9Vqh4uDZjGsQhHJRJjjskn1qF6zmzXEwqQkXrswuNVrqwEf",
+      "created_at": "2026-09-22T11:07:14.136902+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Enhanced border surveillance aims to improve national security and reduce illegal crossings.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The virtual wall has contributed to migrant deaths and infringes on the right to life and freedom of movement.\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 13\", \"CRC Article 3\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 7740,
       "event_title": "Eduardo Bolsonaro, in US since 2025, fired from Federal Police for abandoning post",
@@ -178030,8 +178053,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 68,
-        "total_amount": 97567800
+        "count": 69,
+        "total_amount": 98234800
       },
       {
         "country": "France",
@@ -178084,8 +178107,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.167,
-        "events": 18
+        "burn_ratio": 0.176,
+        "events": 17
       },
       {
         "region": "Latin America",
@@ -178094,8 +178117,8 @@
       },
       {
         "region": "MENA",
-        "burn_ratio": 0.111,
-        "events": 9
+        "burn_ratio": 0.125,
+        "events": 8
       },
       {
         "region": "Europe",
@@ -178104,8 +178127,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.079,
-        "events": 76
+        "burn_ratio": 0.078,
+        "events": 77
       }
     ],
     "top_regions_destructive": [
@@ -178121,8 +178144,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.921,
-        "events": 76
+        "mint_ratio": 0.922,
+        "events": 77
       },
       {
         "region": "Europe",
@@ -178131,8 +178154,8 @@
       },
       {
         "region": "MENA",
-        "mint_ratio": 0.889,
-        "events": 9
+        "mint_ratio": 0.875,
+        "events": 8
       }
     ],
     "supply_trend_7d": [
@@ -178168,7 +178191,7 @@
       },
       {
         "date": "2026-09-22",
-        "net_minted": 31495700,
+        "net_minted": 32162700,
         "net_burned": 1500000
       }
     ],
@@ -178186,7 +178209,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 208,
+        "negative": 206,
         "event_ids_positive": [
           7731,
           7723,
@@ -178211,6 +178234,7 @@
           7514
         ],
         "event_ids_negative": [
+          7741,
           7740,
           7739,
           7738,
@@ -178415,15 +178439,12 @@
           7517,
           7516,
           7513,
-          7512,
-          7511,
-          7510,
-          7509
+          7512
         ]
       },
       "UDHR": {
         "positive": 15,
-        "negative": 183,
+        "negative": 182,
         "event_ids_positive": [
           7731,
           7723,
@@ -178442,6 +178463,7 @@
           7514
         ],
         "event_ids_negative": [
+          7741,
           7740,
           7739,
           7736,
@@ -178622,14 +178644,12 @@
           7517,
           7516,
           7513,
-          7512,
-          7511,
-          7509
+          7512
         ]
       },
       "ILO": {
         "positive": 1,
-        "negative": 33,
+        "negative": 32,
         "event_ids_positive": [
           7706
         ],
@@ -178665,19 +178685,19 @@
           7544,
           7537,
           7534,
-          7521,
-          7509
+          7521
         ]
       },
       "CRC": {
         "positive": 3,
-        "negative": 49,
+        "negative": 48,
         "event_ids_positive": [
           7706,
           7684,
           7514
         ],
         "event_ids_negative": [
+          7741,
           7734,
           7728,
           7724,
@@ -178724,9 +178744,7 @@
           7526,
           7523,
           7521,
-          7516,
-          7511,
-          7509
+          7516
         ]
       },
       "UNDRIP": {
@@ -178836,7 +178854,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 75,
+        "negative": 74,
         "event_ids_positive": [
           7721,
           7690,
@@ -178924,8 +178942,7 @@
           7519,
           7517,
           7516,
-          7513,
-          7510
+          7513
         ]
       }
     },
@@ -178933,11 +178950,11 @@
       "niche_pct": 68.8,
       "mainstream_pct": 31.2,
       "total_sources_used": 80,
-      "articles_processed": 232
+      "articles_processed": 230
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 232,
+      "total_events": 230,
       "pct": 1.3
     },
     "active_partners_7d": [],
@@ -179030,9 +179047,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 35,
+        "count": 34,
         "burn_count": 3,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           7737,
           7732,
@@ -179067,8 +179084,7 @@
           7519,
           7516,
           7513,
-          7512,
-          7510
+          7512
         ]
       },
       {
@@ -179240,14 +179256,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 211,
+      "total_mint": 209,
       "direct_action": {
-        "count": 194,
-        "pct": 91.9
+        "count": 193,
+        "pct": 92.3
       },
       "editorial_alarm": {
-        "count": 14,
-        "pct": 6.6
+        "count": 13,
+        "pct": 6.2
       },
       "untyped": {
         "count": 3,
@@ -179255,9 +179271,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5660,
+      "total_mint": 5661,
       "direct_action": {
-        "count": 4749,
+        "count": 4750,
         "pct": 83.9
       },
       "editorial_alarm": {
@@ -179270,9 +179286,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 75,
+      "citizen": 73,
       "institutional": 157,
-      "citizen_ratio": 0.323,
+      "citizen_ratio": 0.317,
       "daily": [
         {
           "date": "2026-09-16",
@@ -179307,7 +179323,7 @@
         {
           "date": "2026-09-22",
           "citizen": 3,
-          "institutional": 17
+          "institutional": 18
         }
       ],
       "event_ids_citizen": [
@@ -179383,11 +179399,10 @@
         7521,
         7520,
         7517,
-        7516,
-        7510,
-        7509
+        7516
       ],
       "event_ids_institutional": [
+        7741,
         7740,
         7739,
         7738,
@@ -179543,8 +179558,7 @@
         7515,
         7514,
         7513,
-        7512,
-        7511
+        7512
       ]
     }
   }
