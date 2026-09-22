@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-22T07:06:57.643440+00:00",
-  "total_events": 7734,
+  "generated_at": "2026-09-22T08:05:20.482831+00:00",
+  "total_events": 7735,
   "total_burned": 7938793455,
-  "total_minted": 10240759839,
+  "total_minted": 10241363839,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7735,
+      "event_title": "Emergency plan for agriculture: Rural Coordination fears wave of business closures and suicides",
+      "event_url": "https://www.ici.fr/infos/agriculture-peche/plan-d-urgence-pour-l-agriculture-la-coordination-rurale-craint-une-vague-de-cessation-d-activites-et-de-suicides-5535330?at_medium=lien_RSS&at_locale=56",
+      "event_source": "France Bleu",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.58,
+      "confidence": 7,
+      "justification": "Severe risk of rights violations and economic harm outweighs potential policy response. | The article highlights a critical intersection of climate vulnerability, economic distress, and mental health in rural communities. While the government's engagement with unions is a positive step, the immediate risk of farm closures and suicides constitutes a severe violation of fundamental rights. The ethical balance tilts negatively due to the gravity of the potential harm, despite the promise of future ",
+      "tx_hash": "2DP1es6ipUy8GbsSPEKEFpanMJMNoj32dNYui1TjcUwZKxtTXcnWEwMUHPc3Bo95uk5oqvB9C1SX1dznTTHdQ3Zk",
+      "created_at": "2026-09-22T08:05:15.626165+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Government engagement with agricultural union to address crisis, signaling potential policy response to rural distress and climate impacts on farming.\", \"affected_sdgs\": [1, 2, 8, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public acknowledgment of rural mental health crisis (suicides) by a major union, raising awareness of SDG 3 (Good Health) and potential for targeted interventions.\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk of widespread farm closures and suicides due to climate-induced drought and heatwaves, directly violating rights to life (UDHR Article 3), work (UDHR Article 23), and exacerbating poverty (SDG 1).\", \"affected_sdgs\": [1, 2, 3, 8, 13], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 23\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of immediate, concrete action described in the article; the crisis is framed as a future threat rather than an addressed emergency, undermining SDG 13 (Climate Action) and SDG 2 (Zero Hunger).\", \"affected_sdgs\": [2, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7734,
       "event_title": "UK to refuel Saudi jets amid conflict with Yemen's Houthis",
@@ -177897,8 +177920,8 @@
       },
       {
         "country": "France",
-        "count": 12,
-        "total_amount": 3684400
+        "count": 13,
+        "total_amount": 4288400
       },
       {
         "country": "United Kingdom",
@@ -177961,8 +177984,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.105,
-        "events": 57
+        "burn_ratio": 0.103,
+        "events": 58
       },
       {
         "region": "North America",
@@ -177988,8 +178011,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.895,
-        "events": 57
+        "mint_ratio": 0.897,
+        "events": 58
       },
       {
         "region": "MENA",
@@ -178030,7 +178053,7 @@
       },
       {
         "date": "2026-09-22",
-        "net_minted": 23847600,
+        "net_minted": 24451600,
         "net_burned": 1500000
       }
     ],
@@ -178048,7 +178071,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 207,
+        "negative": 208,
         "event_ids_positive": [
           7731,
           7723,
@@ -178073,6 +178096,7 @@
           7514
         ],
         "event_ids_negative": [
+          7735,
           7734,
           7733,
           7732,
@@ -178284,7 +178308,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 182,
+        "negative": 183,
         "event_ids_positive": [
           7731,
           7723,
@@ -178303,6 +178327,7 @@
           7514
         ],
         "event_ids_negative": [
+          7735,
           7734,
           7733,
           7730,
@@ -178797,11 +178822,11 @@
       "niche_pct": 66.2,
       "mainstream_pct": 33.8,
       "total_sources_used": 80,
-      "articles_processed": 231
+      "articles_processed": 232
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 231,
+      "total_events": 232,
       "pct": 1.3
     },
     "active_partners_7d": [],
@@ -179050,6 +179075,18 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          7735,
+          7610,
+          7573,
+          7529
+        ]
+      },
+      {
         "name": "Transport",
         "count": 4,
         "burn_count": 0,
@@ -179059,17 +179096,6 @@
           7629,
           7543,
           7535
-        ]
-      },
-      {
-        "name": "Forestry",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          7727,
-          7654,
-          7620
         ]
       }
     ],
@@ -179104,14 +179130,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 210,
+      "total_mint": 211,
       "direct_action": {
-        "count": 193,
+        "count": 194,
         "pct": 91.9
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.7
+        "pct": 6.6
       },
       "untyped": {
         "count": 3,
@@ -179119,9 +179145,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5654,
+      "total_mint": 5655,
       "direct_action": {
-        "count": 4743,
+        "count": 4744,
         "pct": 83.9
       },
       "editorial_alarm": {
@@ -179135,8 +179161,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 76,
-      "institutional": 155,
-      "citizen_ratio": 0.329,
+      "institutional": 156,
+      "citizen_ratio": 0.328,
       "daily": [
         {
           "date": "2026-09-16",
@@ -179171,7 +179197,7 @@
         {
           "date": "2026-09-22",
           "citizen": 3,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -179253,6 +179279,7 @@
         7505
       ],
       "event_ids_institutional": [
+        7735,
         7734,
         7732,
         7731,
