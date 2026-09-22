@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-22T08:05:20.482831+00:00",
-  "total_events": 7735,
+  "generated_at": "2026-09-22T09:05:44.379875+00:00",
+  "total_events": 7736,
   "total_burned": 7938793455,
-  "total_minted": 10241363839,
+  "total_minted": 10241417939,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7736,
+      "event_title": "Today in Switzerland: A roundup of the latest news on Tuesday",
+      "event_url": "https://www.thelocal.ch/20260922/today-in-switzerland-a-roundup-of-the-latest-news-on-tuesday-262",
+      "event_source": "The Local Switzerland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -1.44,
+      "confidence": 7,
+      "justification": "Rejection of housing rights in Zurich Constitution outweighs potential gun control measures, enabling structural inequality. | The proposed medical certificate for gun purchases aligns with public health and safety goals, supporting SDGs 3 and 16. However, the rejection of the 'Right to Housing' constitutes a significant setback for social equity, violating UDHR Article 25 and undermining multiple SDGs. The negative impact outweighs the positive due to the direct and structural harm to vulnerabl",
+      "tx_hash": "P6j9wbpcF9gniURviESUa1XmU1wK3khUti4Y2mtGPC17RM2o98cSP1xHHoEhGrz5dHWuoCiKDXLceEt13pRvwfm",
+      "created_at": "2026-09-22T09:05:39.359718+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Experts advocate for a medical certificate requirement for gun purchases, aiming to reduce firearm-related harm and suicides.\", \"affected_sdgs\": [3, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Zurich Parliament rejects the inclusion of the 'Right to Housing' in the cantonal Constitution, undermining housing security and equality of access.\", \"affected_sdgs\": [1, 10, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 7735,
       "event_title": "Emergency plan for agriculture: Rural Coordination fears wave of business closures and suicides",
@@ -177920,13 +177943,13 @@
       },
       {
         "country": "France",
-        "count": 13,
-        "total_amount": 4288400
+        "count": 12,
+        "total_amount": 4188400
       },
       {
-        "country": "United Kingdom",
+        "country": "Switzerland",
         "count": 7,
-        "total_amount": 9188600
+        "total_amount": 1403000
       },
       {
         "country": "New Zealand",
@@ -177984,8 +178007,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.103,
-        "events": 58
+        "burn_ratio": 0.105,
+        "events": 57
       },
       {
         "region": "North America",
@@ -178011,8 +178034,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.897,
-        "events": 58
+        "mint_ratio": 0.895,
+        "events": 57
       },
       {
         "region": "MENA",
@@ -178053,7 +178076,7 @@
       },
       {
         "date": "2026-09-22",
-        "net_minted": 24451600,
+        "net_minted": 24505700,
         "net_burned": 1500000
       }
     ],
@@ -178071,7 +178094,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 208,
+        "negative": 207,
         "event_ids_positive": [
           7731,
           7723,
@@ -178096,6 +178119,7 @@
           7514
         ],
         "event_ids_negative": [
+          7736,
           7735,
           7734,
           7733,
@@ -178301,9 +178325,7 @@
           7509,
           7508,
           7507,
-          7506,
-          7505,
-          7504
+          7506
         ]
       },
       "UDHR": {
@@ -178327,6 +178349,7 @@
           7514
         ],
         "event_ids_negative": [
+          7736,
           7735,
           7734,
           7733,
@@ -178508,13 +178531,12 @@
           7511,
           7509,
           7508,
-          7507,
-          7505
+          7507
         ]
       },
       "ILO": {
         "positive": 1,
-        "negative": 34,
+        "negative": 33,
         "event_ids_positive": [
           7706
         ],
@@ -178551,8 +178573,7 @@
           7537,
           7534,
           7521,
-          7509,
-          7505
+          7509
         ]
       },
       "CRC": {
@@ -178689,7 +178710,7 @@
       },
       "Animal": {
         "positive": 7,
-        "negative": 19,
+        "negative": 18,
         "event_ids_positive": [
           7684,
           7652,
@@ -178717,13 +178738,12 @@
           7542,
           7537,
           7529,
-          7525,
-          7504
+          7525
         ]
       },
       "PB": {
         "positive": 11,
-        "negative": 77,
+        "negative": 76,
         "event_ids_positive": [
           7721,
           7690,
@@ -178813,20 +178833,19 @@
           7510,
           7508,
           7507,
-          7506,
-          7504
+          7506
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.2,
-      "mainstream_pct": 33.8,
+      "niche_pct": 67.5,
+      "mainstream_pct": 32.5,
       "total_sources_used": 80,
-      "articles_processed": 232
+      "articles_processed": 231
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 232,
+      "total_events": 231,
       "pct": 1.3
     },
     "active_partners_7d": [],
@@ -178918,9 +178937,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 37,
+        "count": 35,
         "burn_count": 3,
-        "mint_count": 34,
+        "mint_count": 32,
         "event_ids": [
           7732,
           7721,
@@ -178956,9 +178975,7 @@
           7513,
           7512,
           7510,
-          7507,
-          7505,
-          7504
+          7507
         ]
       },
       {
@@ -178988,6 +179005,31 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 17,
+        "burn_count": 0,
+        "mint_count": 17,
+        "event_ids": [
+          7736,
+          7727,
+          7699,
+          7686,
+          7675,
+          7673,
+          7657,
+          7647,
+          7640,
+          7624,
+          7593,
+          7591,
+          7555,
+          7544,
+          7543,
+          7535,
+          7512
+        ]
+      },
+      {
         "name": "Tech",
         "count": 17,
         "burn_count": 1,
@@ -179010,31 +179052,6 @@
           7564,
           7556,
           7554
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 17,
-        "burn_count": 0,
-        "mint_count": 17,
-        "event_ids": [
-          7727,
-          7699,
-          7686,
-          7675,
-          7673,
-          7657,
-          7647,
-          7640,
-          7624,
-          7593,
-          7591,
-          7555,
-          7544,
-          7543,
-          7535,
-          7512,
-          7505
         ]
       },
       {
@@ -179130,14 +179147,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 211,
+      "total_mint": 210,
       "direct_action": {
-        "count": 194,
+        "count": 193,
         "pct": 91.9
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.6
+        "pct": 6.7
       },
       "untyped": {
         "count": 3,
@@ -179145,9 +179162,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5655,
+      "total_mint": 5656,
       "direct_action": {
-        "count": 4744,
+        "count": 4745,
         "pct": 83.9
       },
       "editorial_alarm": {
@@ -179160,9 +179177,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 76,
+      "citizen": 75,
       "institutional": 156,
-      "citizen_ratio": 0.328,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-09-16",
@@ -179197,7 +179214,7 @@
         {
           "date": "2026-09-22",
           "citizen": 3,
-          "institutional": 12
+          "institutional": 13
         }
       ],
       "event_ids_citizen": [
@@ -179275,10 +179292,10 @@
         7517,
         7516,
         7510,
-        7509,
-        7505
+        7509
       ],
       "event_ids_institutional": [
+        7736,
         7735,
         7734,
         7732,
@@ -179433,8 +179450,7 @@
         7511,
         7508,
         7507,
-        7506,
-        7504
+        7506
       ]
     }
   }
