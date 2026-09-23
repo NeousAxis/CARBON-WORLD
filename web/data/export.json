@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-23T15:08:20.576577+00:00",
-  "total_events": 7799,
+  "generated_at": "2026-09-23T16:06:53.128670+00:00",
+  "total_events": 7800,
   "total_burned": 7945169205,
-  "total_minted": 10292629039,
+  "total_minted": 10293305039,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7800,
+      "event_title": "Indigenous Communities Face New Wave of Evictions in Argentina",
+      "event_url": "https://icmagazine.org/indigenous-communities-face-new-wave-of-evictions-in-argentina/",
+      "event_source": "IC Magazine",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -5.87,
+      "confidence": 8,
+      "justification": "Government action enables systemic violation of Indigenous rights and environmental harm, warranting MINT. | The Argentine government's rollback of Indigenous land protections and enforcement of evictions constitutes a severe violation of Indigenous rights, environmental justice, and social equity. The action directly undermines multiple SDGs, UNDRIP, and core human rights frameworks, with irreversible consequences for affected communities and ecosystems. No countervailing positive aspects are i",
+      "tx_hash": "4nGrvQPjpYkpDRVjE4c8uBDLCz3sURVBbpVJrgpPFesqCYCZM6cn71NA6vRaDJM1ErYHzwNX83Gueju219mXYygL",
+      "created_at": "2026-09-23T16:06:46.057034+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Government rolls back legal protections for Indigenous land claims, enabling forced evictions of Mapuche, Quechua, and Mbya Guaraní communities.\", \"affected_sdgs\": [1, 2, 10, 11, 13, 15, 16], \"violated_rights\": [\"UNDRIP Articles 8, 10, 25, 26, 27, 28, 29, 32\", \"UDHR Article 17\", \"CRC Article 30\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\", \"CRC\"]}, {\"description\": \"Strengthening of private property rights over Indigenous collective rights, exacerbating land dispossession and environmental degradation.\", \"affected_sdgs\": [10, 15, 16], \"violated_rights\": [\"UNDRIP Articles 25, 26, 29\", \"UDHR Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\", \"PB\"]}, {\"description\": \"Police enforcement of evictions, risking violence and trauma for Indigenous families, including children.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 5\", \"CRC Articles 9, 19, 36\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7799,
       "event_title": "Socio-Environmental Passport Seeks to Protect Brazilian Agribusiness from New EU Barrier",
@@ -179446,8 +179469,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.15,
-        "events": 20
+        "burn_ratio": 0.143,
+        "events": 21
       },
       {
         "region": "MENA",
@@ -179487,9 +179510,9 @@
         "events": 10
       },
       {
-        "region": "MENA",
+        "region": "Latin America",
         "mint_ratio": 0.857,
-        "events": 7
+        "events": 21
       }
     ],
     "supply_trend_7d": [
@@ -179525,7 +179548,7 @@
       },
       {
         "date": "2026-09-23",
-        "net_minted": 17666100,
+        "net_minted": 18342100,
         "net_burned": 5500000
       }
     ],
@@ -179543,7 +179566,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 221,
+        "negative": 222,
         "event_ids_positive": [
           7797,
           7778,
@@ -179567,6 +179590,7 @@
           7572
         ],
         "event_ids_negative": [
+          7800,
           7799,
           7798,
           7796,
@@ -179792,7 +179816,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 197,
+        "negative": 198,
         "event_ids_positive": [
           7797,
           7778,
@@ -179810,6 +179834,7 @@
           7572
         ],
         "event_ids_negative": [
+          7800,
           7799,
           7798,
           7796,
@@ -180057,13 +180082,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [
           7778,
           7706,
           7684
         ],
         "event_ids_negative": [
+          7800,
           7783,
           7782,
           7772,
@@ -180114,13 +180140,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 63,
+        "negative": 64,
         "event_ids_positive": [
           7778,
           7678,
           7599
         ],
         "event_ids_negative": [
+          7800,
           7799,
           7795,
           7790,
@@ -180221,7 +180248,7 @@
       },
       "PB": {
         "positive": 13,
-        "negative": 79,
+        "negative": 80,
         "event_ids_positive": [
           7778,
           7761,
@@ -180238,6 +180265,7 @@
           7572
         ],
         "event_ids_negative": [
+          7800,
           7799,
           7796,
           7795,
@@ -180324,11 +180352,11 @@
       "niche_pct": 68.4,
       "mainstream_pct": 31.6,
       "total_sources_used": 79,
-      "articles_processed": 244
+      "articles_processed": 245
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 244,
+      "total_events": 245,
       "pct": 1.2
     },
     "active_partners_7d": [],
@@ -180635,14 +180663,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 224,
+      "total_mint": 225,
       "direct_action": {
-        "count": 209,
+        "count": 210,
         "pct": 93.3
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 5.4
+        "pct": 5.3
       },
       "untyped": {
         "count": 3,
@@ -180650,9 +180678,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5714,
+      "total_mint": 5715,
       "direct_action": {
-        "count": 4800,
+        "count": 4801,
         "pct": 84.0
       },
       "editorial_alarm": {
@@ -180665,9 +180693,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 75,
+      "citizen": 76,
       "institutional": 169,
-      "citizen_ratio": 0.307,
+      "citizen_ratio": 0.31,
       "daily": [
         {
           "date": "2026-09-17",
@@ -180701,11 +180729,12 @@
         },
         {
           "date": "2026-09-23",
-          "citizen": 10,
+          "citizen": 11,
           "institutional": 18
         }
       ],
       "event_ids_citizen": [
+        7800,
         7798,
         7797,
         7796,
