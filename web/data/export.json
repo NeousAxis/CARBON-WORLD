@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-23T23:06:22.486573+00:00",
-  "total_events": 7815,
+  "generated_at": "2026-09-24T00:06:34.335961+00:00",
+  "total_events": 7816,
   "total_burned": 7950169205,
-  "total_minted": 10310767839,
+  "total_minted": 10311443839,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7816,
+      "event_title": "Government puts $40.5 million towards two gas exploration projects",
+      "event_url": "https://www.rnz.co.nz/news/political/1552986/government-puts-40-point-5-million-towards-two-gas-exploration-projects",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -2.56,
+      "confidence": 8,
+      "justification": "Funding fossil fuel exploration undermines climate goals and intergenerational equity, outweighing short-term energy security benefits. | While the investment addresses immediate energy security (SDG 7) and economic stability (SDG 8), it directly conflicts with climate action (SDG 13) and planetary boundaries by expanding fossil fuel dependence. The negative environmental and intergenerational impacts outweigh the short-term economic benefits, particularly given New Zealand's existing climate co",
+      "tx_hash": "K2uopqRXrn7LQdNRghN3ERCsZDJefCUW6zjAq7xER2h6cgeftATfuaf6Cp7HcnGkvsMYM5hb3p7ikMGvdrScPNE",
+      "created_at": "2026-09-24T00:06:28.869798+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Government investment in energy infrastructure to address national energy security concerns.\", \"affected_sdgs\": [7, 8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Funding of fossil fuel exploration projects locks in long-term greenhouse gas emissions and undermines climate commitments.\", \"affected_sdgs\": [7, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential violation of intergenerational equity by prioritizing short-term energy needs over long-term environmental sustainability.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7815,
       "event_title": "A congressional representative just proposed killing America’s border tower program",
@@ -179764,14 +179787,14 @@
         "total_amount": 5988000
       },
       {
+        "country": "New Zealand",
+        "count": 8,
+        "total_amount": 3732000
+      },
+      {
         "country": "Switzerland",
         "count": 8,
         "total_amount": 2704500
-      },
-      {
-        "country": "New Zealand",
-        "count": 7,
-        "total_amount": 3056000
       },
       {
         "country": "Brazil",
@@ -179837,7 +179860,7 @@
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 12
       },
       {
         "region": "Europe",
@@ -179861,11 +179884,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-09-17",
-        "net_minted": 64594700,
-        "net_burned": 2000000
-      },
       {
         "date": "2026-09-18",
         "net_minted": 34138600,
@@ -179895,6 +179913,11 @@
         "date": "2026-09-23",
         "net_minted": 35804900,
         "net_burned": 10500000
+      },
+      {
+        "date": "2026-09-24",
+        "net_minted": 676000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -179911,7 +179934,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 216,
+        "negative": 217,
         "event_ids_positive": [
           7801,
           7797,
@@ -179935,6 +179958,7 @@
           7580
         ],
         "event_ids_negative": [
+          7816,
           7815,
           7814,
           7813,
@@ -180155,7 +180179,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 191,
+        "negative": 192,
         "event_ids_positive": [
           7801,
           7797,
@@ -180173,6 +180197,7 @@
           7580
         ],
         "event_ids_negative": [
+          7816,
           7815,
           7814,
           7813,
@@ -180413,13 +180438,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           7778,
           7706,
           7684
         ],
         "event_ids_negative": [
+          7816,
           7815,
           7814,
           7812,
@@ -180581,7 +180607,7 @@
       },
       "PB": {
         "positive": 12,
-        "negative": 81,
+        "negative": 82,
         "event_ids_positive": [
           7778,
           7761,
@@ -180597,6 +180623,7 @@
           7580
         ],
         "event_ids_negative": [
+          7816,
           7814,
           7809,
           7806,
@@ -180685,12 +180712,12 @@
       "niche_pct": 65.8,
       "mainstream_pct": 34.2,
       "total_sources_used": 79,
-      "articles_processed": 239
+      "articles_processed": 240
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 239,
-      "pct": 1.3
+      "total_events": 240,
+      "pct": 1.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -180794,10 +180821,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 41,
+        "count": 42,
         "burn_count": 2,
-        "mint_count": 39,
+        "mint_count": 40,
         "event_ids": [
+          7816,
           7809,
           7803,
           7796,
@@ -180916,10 +180944,11 @@
       },
       {
         "name": "Finance",
-        "count": 11,
+        "count": 12,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          7816,
           7789,
           7788,
           7780,
@@ -181008,10 +181037,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 219,
+      "total_mint": 220,
       "direct_action": {
-        "count": 202,
-        "pct": 92.2
+        "count": 203,
+        "pct": 92.3
       },
       "editorial_alarm": {
         "count": 14,
@@ -181023,9 +181052,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5729,
+      "total_mint": 5730,
       "direct_action": {
-        "count": 4813,
+        "count": 4814,
         "pct": 84.0
       },
       "editorial_alarm": {
@@ -181039,14 +181068,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 75,
-      "institutional": 164,
-      "citizen_ratio": 0.314,
+      "institutional": 165,
+      "citizen_ratio": 0.312,
       "daily": [
-        {
-          "date": "2026-09-17",
-          "citizen": 11,
-          "institutional": 24
-        },
         {
           "date": "2026-09-18",
           "citizen": 6,
@@ -181076,6 +181100,11 @@
           "date": "2026-09-23",
           "citizen": 16,
           "institutional": 28
+        },
+        {
+          "date": "2026-09-24",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -181156,6 +181185,7 @@
         7583
       ],
       "event_ids_institutional": [
+        7816,
         7815,
         7813,
         7810,
