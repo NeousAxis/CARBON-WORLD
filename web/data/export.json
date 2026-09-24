@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-24T11:07:58.701717+00:00",
-  "total_events": 7831,
+  "generated_at": "2026-09-24T12:07:17.580068+00:00",
+  "total_events": 7832,
   "total_burned": 7950319205,
-  "total_minted": 10325570639,
+  "total_minted": 10326070639,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7832,
+      "event_title": "EU launches diplomatic offensive to stop Trump’s diesel export ban",
+      "event_url": "https://www.politico.eu/article/eu-launches-diplomatic-offensive-to-stop-trumps-diesel-export-ban/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.8,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] EU diplomatic pressure sustains diesel trade, protecting short‑term markets but enabling continued fossil‑fuel harm, weakening climate protections. | The EU's diplomatic offensive aims to prevent immediate economic and energy market disruptions, which could protect livelihoods and stability. However, this action also risks entrenching fossil fuel dependence, conflicting with",
+      "tx_hash": "35vdQ7TuFxbkQzx9gF6JufbfucUxPhqEUADkNJpypHPTCypSZD3s38fEAZZkz2C45YsQtzgpCrtdnRyyp2iHVkKn",
+      "created_at": "2026-09-24T12:07:11.491000+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU diplomatic effort to prevent a sudden disruption in global energy markets, avoiding supply shocks and price volatility that could harm vulnerable populations and economies.\", \"affected_sdgs\": [7, 8, 9, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential avoidance of increased reliance on alternative, more polluting energy sources due to sudden diesel shortages, supporting climate action and air quality.\", \"affected_sdgs\": [3, 7, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Diplomatic effort to maintain diesel exports, a fossil fuel, which perpetuates reliance on high-emission energy sources and undermines climate action goals.\", \"affected_sdgs\": [7, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential prioritization of short-term economic stability over long-term environmental and public health benefits, delaying necessary energy transitions.\", \"affected_sdgs\": [3, 7, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7831,
       "event_title": "US judge blocks Trump ban of CNN, MS NOW, Politico from White House, orders him to restore access",
@@ -180123,8 +180146,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 63,
-        "total_amount": 75782110
+        "count": 61,
+        "total_amount": 75110510
       },
       {
         "country": "France",
@@ -180209,8 +180232,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.941,
-        "events": 68
+        "mint_ratio": 0.939,
+        "events": 66
       },
       {
         "region": "Oceania",
@@ -180261,7 +180284,7 @@
       },
       {
         "date": "2026-09-24",
-        "net_minted": 14802800,
+        "net_minted": 15302800,
         "net_burned": 150000
       }
     ],
@@ -180279,7 +180302,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 217,
+        "negative": 216,
         "event_ids_positive": [
           7826,
           7801,
@@ -180302,6 +180325,7 @@
           7597
         ],
         "event_ids_negative": [
+          7832,
           7831,
           7830,
           7829,
@@ -180516,14 +180540,12 @@
           7600,
           7598,
           7596,
-          7595,
-          7594,
-          7593
+          7595
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 191,
+        "negative": 190,
         "event_ids_positive": [
           7801,
           7797,
@@ -180729,8 +180751,7 @@
           7600,
           7598,
           7596,
-          7595,
-          7593
+          7595
         ]
       },
       "ILO": {
@@ -180912,7 +180933,7 @@
       },
       "Animal": {
         "positive": 6,
-        "negative": 20,
+        "negative": 19,
         "event_ids_positive": [
           7826,
           7761,
@@ -180940,8 +180961,7 @@
           7634,
           7633,
           7624,
-          7607,
-          7594
+          7607
         ]
       },
       "PB": {
@@ -180961,6 +180981,7 @@
           7597
         ],
         "event_ids_negative": [
+          7832,
           7830,
           7825,
           7823,
@@ -181040,20 +181061,19 @@
           7607,
           7604,
           7598,
-          7596,
-          7594
+          7596
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.4,
-      "mainstream_pct": 31.6,
-      "total_sources_used": 79,
-      "articles_processed": 239
+      "niche_pct": 67.9,
+      "mainstream_pct": 32.1,
+      "total_sources_used": 78,
+      "articles_processed": 238
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 239,
+      "total_events": 238,
       "pct": 1.3
     },
     "active_partners_7d": [],
@@ -181080,10 +181100,11 @@
       },
       {
         "name": "EU",
-        "count": 8,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 8,
+        "mint_count": 9,
         "event_ids": [
+          7832,
           7799,
           7750,
           7737,
@@ -181159,10 +181180,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 43,
+        "count": 44,
         "burn_count": 2,
-        "mint_count": 41,
+        "mint_count": 42,
         "event_ids": [
+          7832,
           7823,
           7820,
           7816,
@@ -181210,9 +181232,9 @@
       },
       {
         "name": "Tech",
-        "count": 17,
+        "count": 16,
         "burn_count": 1,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           7822,
           7818,
@@ -181229,8 +181251,7 @@
           7662,
           7653,
           7631,
-          7602,
-          7593
+          7602
         ]
       },
       {
@@ -181259,9 +181280,9 @@
       },
       {
         "name": "Construction",
-        "count": 14,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           7766,
           7746,
@@ -181275,8 +181296,7 @@
           7657,
           7647,
           7640,
-          7624,
-          7593
+          7624
         ]
       },
       {
@@ -181374,10 +181394,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 220,
+      "total_mint": 219,
       "direct_action": {
-        "count": 203,
-        "pct": 92.3
+        "count": 202,
+        "pct": 92.2
       },
       "editorial_alarm": {
         "count": 14,
@@ -181389,9 +181409,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5744,
+      "total_mint": 5745,
       "direct_action": {
-        "count": 4827,
+        "count": 4828,
         "pct": 84.0
       },
       "editorial_alarm": {
@@ -181404,9 +181424,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 75,
+      "citizen": 74,
       "institutional": 164,
-      "citizen_ratio": 0.314,
+      "citizen_ratio": 0.311,
       "daily": [
         {
           "date": "2026-09-18",
@@ -181441,7 +181461,7 @@
         {
           "date": "2026-09-24",
           "citizen": 5,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -181518,10 +181538,10 @@
         7599,
         7598,
         7597,
-        7595,
-        7594
+        7595
       ],
       "event_ids_institutional": [
+        7832,
         7829,
         7828,
         7827,
@@ -181684,8 +181704,7 @@
         7602,
         7601,
         7600,
-        7596,
-        7593
+        7596
       ]
     }
   }
