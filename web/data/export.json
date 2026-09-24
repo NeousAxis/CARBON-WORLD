@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-24T06:06:59.836178+00:00",
-  "total_events": 7826,
+  "generated_at": "2026-09-24T07:06:28.327589+00:00",
+  "total_events": 7827,
   "total_burned": 7950319205,
-  "total_minted": 10324081439,
+  "total_minted": 10324149039,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7827,
+      "event_title": "Leclanché anticipates insolvency in Germany as August salaries remain unpaid",
+      "event_url": "https://www.letemps.ch/articles/leclanche-anticipe-son-insolvabilite-en-allemagne-alors-que-les-salaires-d-aout-n-ont-toujours-pas-ete-verses",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -4.96,
+      "confidence": 8,
+      "justification": "Non-payment of salaries and insolvency filings violate labor rights and economic security, warranting MINT. | The decision to withhold salaries and initiate insolvency proceedings for Leclanché's German subsidiaries constitutes a severe violation of labor rights and economic security for 370 employees. The action directly undermines SDGs 1 (No Poverty), 8 (Decent Work), and 10 (Reduced Inequalities), while violating core UDHR and ILO standards. No mitigating positive aspects are identified in th",
+      "tx_hash": "5hBQyRwFPcZW4S9ivRWDpHG6ghh66RuumPhMfYgXcoappbFqgpgZb3jzMdW24Dra1FHqQoK2RgPKVR5QD7tjZftX",
+      "created_at": "2026-09-24T07:06:22.551186+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Failure to pay salaries to 370 employees for August and potential non-payment for September, risking insolvency proceedings for two German subsidiaries.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\", \"ILO Freedom of Association and Collective Bargaining\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Precautionary insolvency filings for German subsidiaries due to illiquidity, signaling potential job losses and economic instability for affected workers and families.\", \"affected_sdgs\": [1, 8, 9], \"violated_rights\": [\"UDHR Article 23\", \"CRC Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7826,
       "event_title": "Fast-track application to mine Denniston Plateau on West Coast rejected",
@@ -180089,8 +180112,8 @@
     "top_regions_destructive": [
       {
         "region": "Europe",
-        "mint_ratio": 0.964,
-        "events": 56
+        "mint_ratio": 0.965,
+        "events": 57
       },
       {
         "region": "North America",
@@ -180146,7 +180169,7 @@
       },
       {
         "date": "2026-09-24",
-        "net_minted": 13313600,
+        "net_minted": 13381200,
         "net_burned": 150000
       }
     ],
@@ -180164,7 +180187,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 217,
+        "negative": 218,
         "event_ids_positive": [
           7826,
           7801,
@@ -180187,6 +180210,7 @@
           7597
         ],
         "event_ids_negative": [
+          7827,
           7825,
           7824,
           7823,
@@ -180408,7 +180432,7 @@
       },
       "UDHR": {
         "positive": 13,
-        "negative": 191,
+        "negative": 192,
         "event_ids_positive": [
           7801,
           7797,
@@ -180425,6 +180449,7 @@
           7597
         ],
         "event_ids_negative": [
+          7827,
           7825,
           7823,
           7822,
@@ -180620,11 +180645,12 @@
       },
       "ILO": {
         "positive": 1,
-        "negative": 37,
+        "negative": 38,
         "event_ids_positive": [
           7706
         ],
         "event_ids_negative": [
+          7827,
           7819,
           7807,
           7803,
@@ -180666,13 +180692,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           7778,
           7706,
           7684
         ],
         "event_ids_negative": [
+          7827,
           7821,
           7816,
           7815,
@@ -180937,12 +180964,12 @@
       "niche_pct": 68.4,
       "mainstream_pct": 31.6,
       "total_sources_used": 79,
-      "articles_processed": 239
+      "articles_processed": 240
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 239,
-      "pct": 1.3
+      "total_events": 240,
+      "pct": 1.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -180985,10 +181012,11 @@
       },
       {
         "name": "ILO",
-        "count": 4,
+        "count": 5,
         "burn_count": 1,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          7827,
           7794,
           7706,
           7705,
@@ -181266,14 +181294,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 220,
+      "total_mint": 221,
       "direct_action": {
-        "count": 203,
+        "count": 204,
         "pct": 92.3
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.4
+        "pct": 6.3
       },
       "untyped": {
         "count": 3,
@@ -181281,9 +181309,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5739,
+      "total_mint": 5740,
       "direct_action": {
-        "count": 4822,
+        "count": 4823,
         "pct": 84.0
       },
       "editorial_alarm": {
@@ -181297,8 +181325,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 74,
-      "institutional": 165,
-      "citizen_ratio": 0.31,
+      "institutional": 166,
+      "citizen_ratio": 0.308,
       "daily": [
         {
           "date": "2026-09-18",
@@ -181333,7 +181361,7 @@
         {
           "date": "2026-09-24",
           "citizen": 3,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -181413,6 +181441,7 @@
         7589
       ],
       "event_ids_institutional": [
+        7827,
         7825,
         7823,
         7822,
