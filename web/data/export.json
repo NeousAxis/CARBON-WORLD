@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-24T19:07:05.489441+00:00",
-  "total_events": 7845,
-  "total_burned": 7954219205,
-  "total_minted": 10337510739,
+  "generated_at": "2026-09-24T20:08:30.850440+00:00",
+  "total_events": 7847,
+  "total_burned": 7955219205,
+  "total_minted": 10337660739,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7847,
+      "event_title": "Integrity officer resigns after allegations of ties to Pfizer",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/09/24/le-referent-integrite-de-sante-publique-france-demissionne-apres-sa-mise-en-cause-pour-des-liens-avec-pfizer_6781556_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.51,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Resignation and ministerial pressure remove compromised official, protecting public health integrity. | The resignation of the integrity officer signals a commitment to transparency and accountability in public health governance, aligning with SDG 16 and UDHR principles. However, the underlying conflict of interest and delayed response undermine institutional integrity, posi",
+      "tx_hash": "3Uy4crFfVRZZXCrQDNzTBLgqyi5s1w1qdaDDMgquprAMpEF2cjs1kmSdtXVed95Xs5gLTw73iEDXzN91hSnER8zk",
+      "created_at": "2026-09-24T20:08:25.108048+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Resignation of a public integrity officer following allegations of undeclared financial ties to a pharmaceutical corporation, demonstrating accountability in public health governance.\", \"affected_sdgs\": [16, 3], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Undeclared financial ties between a public health official and a pharmaceutical company undermine public trust in health institutions and risk conflicts of interest in policy decisions.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential delay in addressing the conflict of interest, as the resignation follows external pressure rather than proactive disclosure by the institution.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 7846,
+      "event_title": "World leaders approve new declaration to tackle rising sea levels",
+      "event_url": "https://news.un.org/feed/view/en/story/2026/09/1168423",
+      "event_source": "UN News Climate",
+      "decision": "BURN",
+      "amount_crbn": 1000000,
+      "final_score": 2.22,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] The declaration seeks to protect vulnerable nations from sea‑level rise, reinforcing rights even if non‑binding. | The approval of the declaration represents a significant step in acknowledging and addressing the existential threats posed by rising sea levels to vulnerable nations, aligning with climate action and international solidarity goals. However, its non-binding nature u",
+      "tx_hash": "2YvP8MaEeUUZPvja4s6FJquFUV8Pu47tRtLuFv2zuer62vzKx82nM42GEiHdZpHystu5cv2bsXnZ9ZVSQjw6N6JU",
+      "created_at": "2026-09-24T20:08:22.952128+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"World leaders approve a new declaration to strengthen international cooperation and support for vulnerable low-lying nations threatened by rising sea levels.\", \"affected_sdgs\": [13, 14, 15, 17], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The declaration is non-binding, lacking enforceable mechanisms or concrete financial commitments, which may limit its effectiveness in addressing the urgent needs of affected nations.\", \"affected_sdgs\": [13, 14, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7845,
       "event_title": "Govt Challenges Emilia-Romagna End-of-Life Law on Constitutional Grounds",
@@ -180451,7 +180497,7 @@
       {
         "country": "France",
         "count": 20,
-        "total_amount": 6833000
+        "total_amount": 6683000
       },
       {
         "country": "Switzerland",
@@ -180503,6 +180549,11 @@
         "events": 20
       },
       {
+        "region": "Latin America",
+        "burn_ratio": 0.118,
+        "events": 17
+      },
+      {
         "region": "Africa",
         "burn_ratio": 0.111,
         "events": 9
@@ -180511,11 +180562,6 @@
         "region": "MENA",
         "burn_ratio": 0.111,
         "events": 9
-      },
-      {
-        "region": "Latin America",
-        "burn_ratio": 0.111,
-        "events": 18
       },
       {
         "region": "Oceania",
@@ -180532,7 +180578,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.952,
-        "events": 63
+        "events": 62
       },
       {
         "region": "Oceania",
@@ -180583,8 +180629,8 @@
       },
       {
         "date": "2026-09-24",
-        "net_minted": 26742900,
-        "net_burned": 4050000
+        "net_minted": 26892900,
+        "net_burned": 5050000
       }
     ],
     "event_of_the_day": {
@@ -180600,9 +180646,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 18,
-        "negative": 222,
+        "positive": 19,
+        "negative": 220,
         "event_ids_positive": [
+          7846,
           7833,
           7826,
           7801,
@@ -180623,6 +180670,7 @@
           7638
         ],
         "event_ids_negative": [
+          7847,
           7845,
           7844,
           7843,
@@ -180841,16 +180889,14 @@
           7609,
           7608,
           7607,
-          7606,
-          7605,
-          7604,
-          7603
+          7606
         ]
       },
       "UDHR": {
-        "positive": 12,
-        "negative": 195,
+        "positive": 13,
+        "negative": 194,
         "event_ids_positive": [
+          7846,
           7833,
           7801,
           7797,
@@ -180865,6 +180911,7 @@
           7644
         ],
         "event_ids_negative": [
+          7847,
           7845,
           7844,
           7843,
@@ -181057,9 +181104,7 @@
           7611,
           7609,
           7608,
-          7606,
-          7605,
-          7604
+          7606
         ]
       },
       "ILO": {
@@ -181176,9 +181221,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 3,
+        "positive": 4,
         "negative": 56,
         "event_ids_positive": [
+          7846,
           7826,
           7778,
           7678
@@ -181279,7 +181325,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 81,
+        "negative": 80,
         "event_ids_positive": [
           7833,
           7826,
@@ -181373,29 +181419,28 @@
           7614,
           7610,
           7608,
-          7607,
-          7604
+          7607
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.7,
-      "mainstream_pct": 33.3,
-      "total_sources_used": 78,
-      "articles_processed": 243
+      "niche_pct": 67.1,
+      "mainstream_pct": 32.9,
+      "total_sources_used": 79,
+      "articles_processed": 242
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 243,
+      "total_events": 242,
       "pct": 1.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 12,
+        "count": 11,
         "burn_count": 2,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           7842,
           7825,
@@ -181407,8 +181452,7 @@
           7731,
           7730,
           7708,
-          7641,
-          7605
+          7641
         ]
       },
       {
@@ -181495,9 +181539,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 43,
+        "count": 42,
         "burn_count": 2,
-        "mint_count": 41,
+        "mint_count": 40,
         "event_ids": [
           7833,
           7832,
@@ -181540,8 +181584,7 @@
           7646,
           7626,
           7624,
-          7621,
-          7604
+          7621
         ]
       },
       {
@@ -181677,14 +181720,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 18,
+      "total_burn": 19,
       "direct_action": {
-        "count": 15,
-        "pct": 83.3
+        "count": 16,
+        "pct": 84.2
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 16.7
+        "pct": 15.8
       },
       "untyped": {
         "count": 0,
@@ -181692,9 +181735,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2080,
+      "total_burn": 2081,
       "direct_action": {
-        "count": 1644,
+        "count": 1645,
         "pct": 79.0
       },
       "editorial_consciousness": {
@@ -181707,10 +181750,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 225,
+      "total_mint": 223,
       "direct_action": {
-        "count": 207,
-        "pct": 92.0
+        "count": 205,
+        "pct": 91.9
       },
       "editorial_alarm": {
         "count": 15,
@@ -181722,9 +181765,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5757,
+      "total_mint": 5758,
       "direct_action": {
-        "count": 4839,
+        "count": 4840,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -181738,8 +181781,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 73,
-      "institutional": 170,
-      "citizen_ratio": 0.3,
+      "institutional": 169,
+      "citizen_ratio": 0.302,
       "daily": [
         {
           "date": "2026-09-18",
@@ -181774,7 +181817,7 @@
         {
           "date": "2026-09-24",
           "citizen": 8,
-          "institutional": 22
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -181853,6 +181896,8 @@
         7611
       ],
       "event_ids_institutional": [
+        7847,
+        7846,
         7845,
         7844,
         7843,
@@ -182019,10 +182064,7 @@
         7609,
         7608,
         7607,
-        7606,
-        7605,
-        7604,
-        7603
+        7606
       ]
     }
   }
