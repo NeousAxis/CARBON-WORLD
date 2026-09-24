@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-24T08:06:42.665987+00:00",
-  "total_events": 7828,
+  "generated_at": "2026-09-24T09:07:41.355916+00:00",
+  "total_events": 7829,
   "total_burned": 7950319205,
-  "total_minted": 10324499039,
+  "total_minted": 10324566639,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7829,
+      "event_title": "Afghanistan: Pakistani airstrikes and drone attacks kill four civilians, Taliban vow retaliation",
+      "event_url": "https://www.france24.com/fr/asie-pacifique/20260924-afghanistan-frappes-pakistan-tuent-quatre-civils-taliban-promettent-de-r%C3%A9pondre",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -5.48,
+      "confidence": 8,
+      "justification": "Pakistani airstrikes causing civilian deaths violate human rights and undermine peace, justifying a MINT decision. | The airstrikes and drone attacks by Pakistan constitute a direct violation of human rights, particularly the right to life and security, with significant negative consequences for peace and civilian well-being. The action undermines multiple SDGs and escalates conflict, posing long-term risks to stability and development in the region.",
+      "tx_hash": "5QDEfW7K3LWBLwGfmcJJDGYKCo7QsLdJqpH6t4AYNmadcKT8kajznYYaYcK4Twa3HioqHdr1ZU9W2Z2d7swsUfmd",
+      "created_at": "2026-09-24T09:07:35.215427+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Pakistan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Pakistani airstrikes and drone attacks in Afghanistan resulted in the deaths of four civilians, violating the right to life and security of person.\", \"affected_sdgs\": [16, 3, 1], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Military action undermines peace, justice, and strong institutions (SDG 16) by escalating conflict and bypassing diplomatic resolution mechanisms.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Civilian casualties and conflict exacerbate poverty (SDG 1) and hunger (SDG 2) by disrupting livelihoods and access to resources.\", \"affected_sdgs\": [1, 2], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7828,
       "event_title": "Spain's PM softens tone with Morocco amid fears of new Ceuta migrant rush",
@@ -180192,7 +180215,7 @@
       },
       {
         "date": "2026-09-24",
-        "net_minted": 13731200,
+        "net_minted": 13798800,
         "net_burned": 150000
       }
     ],
@@ -180233,6 +180256,7 @@
           7597
         ],
         "event_ids_negative": [
+          7829,
           7828,
           7827,
           7825,
@@ -180447,13 +180471,12 @@
           7595,
           7594,
           7593,
-          7592,
-          7591
+          7592
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 190,
+        "negative": 191,
         "event_ids_positive": [
           7801,
           7797,
@@ -180470,6 +180493,7 @@
           7597
         ],
         "event_ids_negative": [
+          7829,
           7828,
           7827,
           7825,
@@ -180711,13 +180735,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 50,
+        "negative": 51,
         "event_ids_positive": [
           7778,
           7706,
           7684
         ],
         "event_ids_negative": [
+          7829,
           7828,
           7827,
           7821,
@@ -180772,7 +180797,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 60,
+        "negative": 59,
         "event_ids_positive": [
           7826,
           7778,
@@ -180838,8 +180863,7 @@
           7601,
           7600,
           7598,
-          7592,
-          7591
+          7592
         ]
       },
       "Animal": {
@@ -180877,7 +180901,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 81,
+        "negative": 80,
         "event_ids_positive": [
           7826,
           7778,
@@ -180971,8 +180995,7 @@
           7604,
           7598,
           7596,
-          7594,
-          7591
+          7594
         ]
       }
     },
@@ -181167,9 +181190,9 @@
       },
       {
         "name": "Defense",
-        "count": 17,
+        "count": 16,
         "burn_count": 0,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           7807,
           7802,
@@ -181186,15 +181209,14 @@
           7662,
           7656,
           7647,
-          7598,
-          7591
+          7598
         ]
       },
       {
         "name": "Construction",
-        "count": 15,
+        "count": 14,
         "burn_count": 0,
-        "mint_count": 15,
+        "mint_count": 14,
         "event_ids": [
           7766,
           7746,
@@ -181209,8 +181231,7 @@
           7647,
           7640,
           7624,
-          7593,
-          7591
+          7593
         ]
       },
       {
@@ -181323,9 +181344,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5741,
+      "total_mint": 5742,
       "direct_action": {
-        "count": 4824,
+        "count": 4825,
         "pct": 84.0
       },
       "editorial_alarm": {
@@ -181375,7 +181396,7 @@
         {
           "date": "2026-09-24",
           "citizen": 3,
-          "institutional": 10
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -181454,6 +181475,7 @@
         7594
       ],
       "event_ids_institutional": [
+        7829,
         7828,
         7827,
         7825,
@@ -181617,8 +181639,7 @@
         7600,
         7596,
         7593,
-        7592,
-        7591
+        7592
       ]
     }
   }
