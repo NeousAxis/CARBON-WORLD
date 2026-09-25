@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-25T15:06:00.078676+00:00",
-  "total_events": 7889,
+  "generated_at": "2026-09-25T16:05:46.837152+00:00",
+  "total_events": 7890,
   "total_burned": 7962718205,
-  "total_minted": 10381172539,
+  "total_minted": 10382372539,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7890,
+      "event_title": "UN expands list of companies linked to Israeli settlements",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/un-expands-list-companies-linked-israeli-settlements",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": 2.57,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] UN's expanded list penalizes firms complicit in illegal settlements, safeguarding Palestinian rights. | The UN's action strengthens accountability for settlements deemed illegal under international law, directly supporting Palestinian rights (UNDRIP, UDHR) and SDG 16 (Peace and Justice). However, it introduces risks of economic harm to listed companies and potential politici",
+      "tx_hash": "2BdyCSXc7VaC6P7PitX4h4a4NfDkaWPqpGG7f9JLgnoeGQSWrRizUAZNMLGWATXYyBdNpEuVt5BNsXBXTaHpPau4",
+      "created_at": "2026-09-25T16:05:41.482793+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"UN human rights office expands database of companies linked to Israeli settlements, increasing transparency and enabling informed divestment/boycott actions.\", \"affected_sdgs\": [16, 10, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Action targets settlements considered illegal under international law, reinforcing accountability for violations of Palestinian rights and territorial sovereignty.\", \"affected_sdgs\": [16, 10], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Database expansion may disproportionately affect Israeli and international businesses without clear due process, potentially violating principles of fair economic participation (UDHR Article 23).\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of politicization or selective enforcement, which could undermine the credibility of UN human rights mechanisms and weaken global consensus on conflict resolution (SDG 16).\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 7889,
       "event_title": "Azerbaijan: Authorities must immediately release activist Bahruz Samadov who cut himself during latest court appearance",
@@ -181511,13 +181534,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.286,
-        "events": 21
+        "burn_ratio": 0.3,
+        "events": 20
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.143,
-        "events": 21
+        "burn_ratio": 0.15,
+        "events": 20
       },
       {
         "region": "Africa",
@@ -181557,9 +181580,9 @@
         "events": 8
       },
       {
-        "region": "Latin America",
+        "region": "Africa",
         "mint_ratio": 0.857,
-        "events": 21
+        "events": 7
       }
     ],
     "supply_trend_7d": [
@@ -181595,7 +181618,7 @@
       },
       {
         "date": "2026-09-25",
-        "net_minted": 35812600,
+        "net_minted": 37012600,
         "net_burned": 7499000
       }
     ],
@@ -181613,7 +181636,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 231,
+        "negative": 230,
         "event_ids_positive": [
           7880,
           7873,
@@ -181643,6 +181666,7 @@
           7638
         ],
         "event_ids_negative": [
+          7890,
           7889,
           7888,
           7887,
@@ -181871,9 +181895,7 @@
           7637,
           7636,
           7635,
-          7634,
-          7633,
-          7632
+          7634
         ]
       },
       "UDHR": {
@@ -181900,6 +181922,7 @@
           7644
         ],
         "event_ids_negative": [
+          7890,
           7889,
           7887,
           7886,
@@ -182101,8 +182124,7 @@
           7640,
           7639,
           7635,
-          7634,
-          7632
+          7634
         ]
       },
       "ILO": {
@@ -182155,7 +182177,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 51,
+        "negative": 50,
         "event_ids_positive": [
           7872,
           7778,
@@ -182212,8 +182234,7 @@
           7666,
           7664,
           7655,
-          7639,
-          7632
+          7639
         ]
       },
       "UNDRIP": {
@@ -182227,6 +182248,7 @@
           7678
         ],
         "event_ids_negative": [
+          7890,
           7888,
           7886,
           7882,
@@ -182287,13 +182309,12 @@
           7641,
           7640,
           7636,
-          7634,
-          7632
+          7634
         ]
       },
       "Animal": {
         "positive": 8,
-        "negative": 21,
+        "negative": 20,
         "event_ids_positive": [
           7858,
           7833,
@@ -182324,13 +182345,12 @@
           7654,
           7650,
           7636,
-          7634,
-          7633
+          7634
         ]
       },
       "PB": {
         "positive": 14,
-        "negative": 84,
+        "negative": 83,
         "event_ids_positive": [
           7873,
           7859,
@@ -182430,30 +182450,30 @@
           7639,
           7637,
           7636,
-          7634,
-          7633
+          7634
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.6,
-      "mainstream_pct": 35.4,
+      "niche_pct": 67.1,
+      "mainstream_pct": 32.9,
       "total_sources_used": 82,
-      "articles_processed": 258
+      "articles_processed": 257
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 258,
+      "total_events": 257,
       "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 14,
+        "count": 15,
         "burn_count": 2,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          7890,
           7882,
           7857,
           7854,
@@ -182729,23 +182749,6 @@
         ]
       },
       {
-        "name": "Water",
-        "count": 9,
-        "burn_count": 3,
-        "mint_count": 6,
-        "event_ids": [
-          7854,
-          7821,
-          7797,
-          7778,
-          7738,
-          7723,
-          7666,
-          7640,
-          7632
-        ]
-      },
-      {
         "name": "Agriculture",
         "count": 8,
         "burn_count": 0,
@@ -182759,6 +182762,22 @@
           7799,
           7753,
           7735
+        ]
+      },
+      {
+        "name": "Water",
+        "count": 8,
+        "burn_count": 3,
+        "mint_count": 5,
+        "event_ids": [
+          7854,
+          7821,
+          7797,
+          7778,
+          7738,
+          7723,
+          7666,
+          7640
         ]
       }
     ],
@@ -182793,14 +182812,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 232,
+      "total_mint": 231,
       "direct_action": {
-        "count": 214,
+        "count": 213,
         "pct": 92.2
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 7.3
+        "pct": 7.4
       },
       "untyped": {
         "count": 1,
@@ -182808,9 +182827,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5793,
+      "total_mint": 5794,
       "direct_action": {
-        "count": 4872,
+        "count": 4873,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -182823,9 +182842,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 91,
+      "citizen": 90,
       "institutional": 167,
-      "citizen_ratio": 0.353,
+      "citizen_ratio": 0.35,
       "daily": [
         {
           "date": "2026-09-19",
@@ -182860,7 +182879,7 @@
         {
           "date": "2026-09-25",
           "citizen": 17,
-          "institutional": 20
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -182953,10 +182972,10 @@
         7643,
         7640,
         7638,
-        7636,
-        7632
+        7636
       ],
       "event_ids_institutional": [
+        7890,
         7887,
         7886,
         7885,
@@ -183122,8 +183141,7 @@
         7639,
         7637,
         7635,
-        7634,
-        7633
+        7634
       ]
     }
   }
