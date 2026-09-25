@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-24T23:05:28.644746+00:00",
-  "total_events": 7852,
+  "generated_at": "2026-09-25T00:05:39.583709+00:00",
+  "total_events": 7853,
   "total_burned": 7955219205,
-  "total_minted": 10345359939,
+  "total_minted": 10351399939,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7853,
+      "event_title": "US and UK achieve historic first with drone submarine torpedo launch",
+      "event_url": "https://newatlas.com/military/us-uk-aukus-first-with-drone-submarine-torpedo-launch/",
+      "event_source": "New Atlas",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -3.74,
+      "confidence": 8,
+      "justification": "Advancement of autonomous military technology undermines peace and human rights, justifying MINT. | The action represents a significant advancement in autonomous military technology, directly undermining SDG 16 (Peace, Justice, and Strong Institutions) by increasing the risk of autonomous warfare and reducing human accountability. While it may enhance military efficiency, it poses substantial ethical concerns regarding the erosion of human control over lethal force and the diversion of resources",
+      "tx_hash": "f12inseo85pxmUoVbALVrxDqLxf31WE1X2b9CwShpa6zsaopoCYAwnVgaSiizDktE7v3ZKvgfqsm247Eu5aWDjw",
+      "created_at": "2026-09-25T00:05:33.953439+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Development and testing of autonomous military submarine capable of launching heavyweight torpedoes, advancing autonomous warfare capabilities.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential escalation of global arms race in autonomous weapons systems, increasing risks of unintended conflict and reduced human oversight in lethal decision-making.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Diverts technological and financial resources from peaceful applications (e.g., climate mitigation, disaster response) to military purposes.\", \"affected_sdgs\": [7, 9, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7852,
       "event_title": "Greenpeace Canada reacts to the introduction of Bill C-39, The Bulldoze Nature Bill",
@@ -180713,11 +180736,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-09-18",
-        "net_minted": 34138600,
-        "net_burned": 1000000
-      },
-      {
         "date": "2026-09-19",
         "net_minted": 35420900,
         "net_burned": 325000
@@ -180746,6 +180764,11 @@
         "date": "2026-09-24",
         "net_minted": 34592100,
         "net_burned": 5050000
+      },
+      {
+        "date": "2026-09-25",
+        "net_minted": 6040000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -180785,6 +180808,7 @@
           7638
         ],
         "event_ids_negative": [
+          7853,
           7852,
           7851,
           7850,
@@ -181003,8 +181027,7 @@
           7615,
           7614,
           7613,
-          7612,
-          7611
+          7612
         ]
       },
       "UDHR": {
@@ -181026,6 +181049,7 @@
           7644
         ],
         "event_ids_negative": [
+          7853,
           7852,
           7851,
           7850,
@@ -181220,8 +181244,7 @@
           7615,
           7614,
           7613,
-          7612,
-          7611
+          7612
         ]
       },
       "ILO": {
@@ -181274,7 +181297,7 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 52,
+        "negative": 51,
         "event_ids_positive": [
           7778,
           7706,
@@ -181331,8 +181354,7 @@
           7625,
           7617,
           7616,
-          7612,
-          7611
+          7612
         ]
       },
       "UNDRIP": {
@@ -181707,10 +181729,11 @@
       },
       {
         "name": "Defense",
-        "count": 16,
+        "count": 17,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          7853,
           7851,
           7807,
           7802,
@@ -181887,9 +181910,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5763,
+      "total_mint": 5764,
       "direct_action": {
-        "count": 4845,
+        "count": 4846,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -181902,15 +181925,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 76,
-      "institutional": 166,
-      "citizen_ratio": 0.314,
+      "citizen": 75,
+      "institutional": 167,
+      "citizen_ratio": 0.31,
       "daily": [
-        {
-          "date": "2026-09-18",
-          "citizen": 6,
-          "institutional": 27
-        },
         {
           "date": "2026-09-19",
           "citizen": 13,
@@ -181940,6 +181958,11 @@
           "date": "2026-09-24",
           "citizen": 11,
           "institutional": 26
+        },
+        {
+          "date": "2026-09-25",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -182017,10 +182040,10 @@
         7638,
         7636,
         7632,
-        7623,
-        7611
+        7623
       ],
       "event_ids_institutional": [
+        7853,
         7851,
         7848,
         7847,
