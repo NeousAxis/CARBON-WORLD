@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-25T04:09:24.305361+00:00",
-  "total_events": 7863,
+  "generated_at": "2026-09-25T05:06:08.648137+00:00",
+  "total_events": 7864,
   "total_burned": 7956470205,
-  "total_minted": 10355200539,
+  "total_minted": 10361240539,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7864,
+      "event_title": "Allies unite behind Saudi Arabia as Houthis step up attacks",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/allies-unite-behind-saudi-arabia-houthis-step-attacks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -4.32,
+      "confidence": 8,
+      "justification": "Military escalation and conflict reinforcement violate peace and human rights frameworks, warranting MINT. | The decision to convene a high-level defense meeting and the militarized religious rhetoric directly undermine SDG 16 (Peace and Justice) and violate core UDHR rights to life and security. While framed as defensive, the action escalates regional tensions and risks prolonging conflict, with no evident protections for civilians or pathways to de-escalation. The absence of diplomatic or huma",
+      "tx_hash": "46buPaarAmGzM9HNh8UQHPGJBmGLtbtfVdK4Fp4HJ8zto7qY7F9bgFq98Rb4EdyPuDUMjKfqDXjEW73KJm8dNDuj",
+      "created_at": "2026-09-25T05:06:03.619879+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"High-level defense pact meeting convened to support Saudi Arabia amid Houthi attacks, signaling military escalation and potential reinforcement of regional conflict dynamics.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Saudi religious authority urging troops to 'lay down their lives' to fight Iran-aligned Houthis, normalizing militarized rhetoric and increasing risk of civilian and combatant casualties.\", \"affected_sdgs\": [16, 3], \"violated_rights\": [\"UDHR Article 3\", \"CRC Article 38\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7863,
       "event_title": "Enviro Groups Call on CARB to Reject Dangerous Carbon Capture",
@@ -180997,7 +181020,7 @@
       },
       {
         "date": "2026-09-25",
-        "net_minted": 9840600,
+        "net_minted": 15880600,
         "net_burned": 1251000
       }
     ],
@@ -181015,7 +181038,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 22,
-        "negative": 224,
+        "negative": 225,
         "event_ids_positive": [
           7860,
           7859,
@@ -181041,6 +181064,7 @@
           7638
         ],
         "event_ids_negative": [
+          7864,
           7863,
           7862,
           7861,
@@ -181269,7 +181293,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 199,
+        "negative": 200,
         "event_ids_positive": [
           7860,
           7859,
@@ -181288,6 +181312,7 @@
           7644
         ],
         "event_ids_negative": [
+          7864,
           7863,
           7862,
           7861,
@@ -181538,13 +181563,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 51,
+        "negative": 52,
         "event_ids_positive": [
           7778,
           7706,
           7684
         ],
         "event_ids_negative": [
+          7864,
           7855,
           7849,
           7845,
@@ -181815,11 +181841,11 @@
       "niche_pct": 65.0,
       "mainstream_pct": 35.0,
       "total_sources_used": 80,
-      "articles_processed": 249
+      "articles_processed": 250
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 249,
+      "total_events": 250,
       "pct": 1.2
     },
     "active_partners_7d": [],
@@ -181984,6 +182010,32 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 18,
+        "burn_count": 0,
+        "mint_count": 18,
+        "event_ids": [
+          7864,
+          7853,
+          7851,
+          7807,
+          7802,
+          7798,
+          7784,
+          7769,
+          7734,
+          7728,
+          7724,
+          7696,
+          7692,
+          7677,
+          7671,
+          7662,
+          7656,
+          7647
+        ]
+      },
+      {
         "name": "Tech",
         "count": 17,
         "burn_count": 1,
@@ -182006,31 +182058,6 @@
           7662,
           7653,
           7631
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 17,
-        "burn_count": 0,
-        "mint_count": 17,
-        "event_ids": [
-          7853,
-          7851,
-          7807,
-          7802,
-          7798,
-          7784,
-          7769,
-          7734,
-          7728,
-          7724,
-          7696,
-          7692,
-          7677,
-          7671,
-          7662,
-          7656,
-          7647
         ]
       },
       {
@@ -182155,9 +182182,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 227,
+      "total_mint": 228,
       "direct_action": {
-        "count": 207,
+        "count": 208,
         "pct": 91.2
       },
       "editorial_alarm": {
@@ -182170,9 +182197,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5771,
+      "total_mint": 5772,
       "direct_action": {
-        "count": 4851,
+        "count": 4852,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -182186,8 +182213,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 167,
-      "citizen_ratio": 0.329,
+      "institutional": 168,
+      "citizen_ratio": 0.328,
       "daily": [
         {
           "date": "2026-09-19",
@@ -182222,7 +182249,7 @@
         {
           "date": "2026-09-25",
           "citizen": 7,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -182310,6 +182337,7 @@
         7623
       ],
       "event_ids_institutional": [
+        7864,
         7859,
         7857,
         7854,
