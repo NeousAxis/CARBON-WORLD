@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-26T04:06:24.713361+00:00",
-  "total_events": 7907,
+  "generated_at": "2026-09-26T06:06:16.526253+00:00",
+  "total_events": 7908,
   "total_burned": 7968194205,
-  "total_minted": 10392274639,
+  "total_minted": 10392950639,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7908,
+      "event_title": "Trump administration uses rare authority to claw back nearly $1B in spending approved by Congress",
+      "event_url": "https://www.statnews.com/2026/09/25/trump-administration-cancel-spending-hhs-programs/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -5.41,
+      "confidence": 8,
+      "justification": "Cancellation of refugee funding violates core human rights and undermines democratic governance, warranting MINT. | The cancellation of funding for refugee and unaccompanied minor programs constitutes a severe violation of human rights, particularly for vulnerable children, and undermines social protections guaranteed under multiple UN frameworks. The unilateral override of congressional authority further erodes democratic governance, though its direct ethical harm is secondary to the immediate ",
+      "tx_hash": "G2vNfLmaz2Bcv76gv8vHMHhmfTTXTieuFHAMAucm6HNFDniuP9xKHqRcfwMSNtn4qewrPyaLUtzUmR5sUGFiRUd",
+      "created_at": "2026-09-26T06:06:11.173350+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Cancellation of nearly $1 billion in congressionally approved funding for HHS programs serving refugees and unaccompanied minors, directly reducing access to healthcare, shelter, and legal support.\", \"affected_sdgs\": [1, 2, 3, 4, 10, 16], \"violated_rights\": [\"UDHR Article 25 (right to adequate standard of living)\", \"UDHR Article 22 (right to social security)\", \"CRC Article 22 (rights of refugee children)\", \"CRC Article 3 (best interests of the child)\", \"UNDRIP Article 21 (right to improvement of economic and social conditions)\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}, {\"description\": \"Use of executive authority to override congressional appropriations, undermining democratic checks and balances and setting a precedent for future unilateral budgetary actions.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21 (right to participate in government)\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7907,
       "event_title": "Indigenous peoples from 16 African, Asian, and American countries reject 'green colonialism' in Kenya",
@@ -181871,8 +181894,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 55,
-        "total_amount": 53652010
+        "count": 56,
+        "total_amount": 54328010
       },
       {
         "country": "France",
@@ -181940,13 +181963,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.069,
-        "events": 72
+        "burn_ratio": 0.07,
+        "events": 71
       },
       {
         "region": "North America",
-        "burn_ratio": 0.066,
-        "events": 61
+        "burn_ratio": 0.065,
+        "events": 62
       }
     ],
     "top_regions_destructive": [
@@ -181962,13 +181985,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.934,
-        "events": 61
+        "mint_ratio": 0.935,
+        "events": 62
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.931,
-        "events": 72
+        "mint_ratio": 0.93,
+        "events": 71
       },
       {
         "region": "Latin America",
@@ -182009,7 +182032,7 @@
       },
       {
         "date": "2026-09-26",
-        "net_minted": 553200,
+        "net_minted": 1229200,
         "net_burned": 4100000
       }
     ],
@@ -182027,7 +182050,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 225,
+        "negative": 224,
         "event_ids_positive": [
           7907,
           7906,
@@ -182058,6 +182081,7 @@
           7678
         ],
         "event_ids_negative": [
+          7908,
           7905,
           7904,
           7903,
@@ -182280,14 +182304,12 @@
           7660,
           7659,
           7658,
-          7657,
-          7656,
-          7655
+          7657
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 202,
+        "negative": 201,
         "event_ids_positive": [
           7907,
           7906,
@@ -182311,6 +182333,7 @@
           7678
         ],
         "event_ids_negative": [
+          7908,
           7905,
           7904,
           7902,
@@ -182510,9 +182533,7 @@
           7661,
           7660,
           7659,
-          7657,
-          7656,
-          7655
+          7657
         ]
       },
       "ILO": {
@@ -182574,6 +182595,7 @@
           7684
         ],
         "event_ids_negative": [
+          7908,
           7899,
           7897,
           7893,
@@ -182625,13 +182647,12 @@
           7673,
           7671,
           7666,
-          7664,
-          7655
+          7664
         ]
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 55,
+        "negative": 56,
         "event_ids_positive": [
           7907,
           7896,
@@ -182642,6 +182663,7 @@
           7678
         ],
         "event_ids_negative": [
+          7908,
           7897,
           7890,
           7888,
@@ -182831,24 +182853,25 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.7,
-      "mainstream_pct": 33.3,
+      "niche_pct": 67.9,
+      "mainstream_pct": 32.1,
       "total_sources_used": 81,
-      "articles_processed": 253
+      "articles_processed": 252
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 253,
+      "total_events": 252,
       "pct": 0.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 14,
+        "count": 15,
         "burn_count": 2,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          7908,
           7890,
           7882,
           7857,
@@ -183007,10 +183030,11 @@
       },
       {
         "name": "Finance",
-        "count": 20,
+        "count": 21,
         "burn_count": 2,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          7908,
           7906,
           7899,
           7897,
@@ -183062,9 +183086,9 @@
       },
       {
         "name": "Defense",
-        "count": 19,
+        "count": 18,
         "burn_count": 0,
-        "mint_count": 19,
+        "mint_count": 18,
         "event_ids": [
           7904,
           7901,
@@ -183083,8 +183107,7 @@
           7692,
           7677,
           7671,
-          7662,
-          7656
+          7662
         ]
       },
       {
@@ -183189,14 +183212,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 226,
+      "total_mint": 225,
       "direct_action": {
-        "count": 210,
+        "count": 209,
         "pct": 92.9
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 6.6
+        "pct": 6.7
       },
       "untyped": {
         "count": 1,
@@ -183204,9 +183227,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5807,
+      "total_mint": 5808,
       "direct_action": {
-        "count": 4885,
+        "count": 4886,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -183219,9 +183242,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 83,
+      "citizen": 82,
       "institutional": 170,
-      "citizen_ratio": 0.328,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-09-20",
@@ -183256,7 +183279,7 @@
         {
           "date": "2026-09-26",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -183341,10 +183364,10 @@
         7666,
         7663,
         7661,
-        7660,
-        7656
+        7660
       ],
       "event_ids_institutional": [
+        7908,
         7906,
         7905,
         7904,
@@ -183513,8 +183536,7 @@
         7662,
         7659,
         7658,
-        7657,
-        7655
+        7657
       ]
     }
   }
