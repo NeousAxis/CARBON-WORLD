@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-26T18:06:27.817690+00:00",
-  "total_events": 7917,
+  "generated_at": "2026-09-26T19:06:20.151480+00:00",
+  "total_events": 7918,
   "total_burned": 7968194205,
-  "total_minted": 10395547079,
+  "total_minted": 10395772079,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7918,
+      "event_title": "Argentina opens trade talks with the Emirates to attract mining and energy investment",
+      "event_url": "https://www.riotimesonline.com/argentina-uae-cepa-mining-energy-rigi-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -2.25,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Trade talks risk enabling environmental harm and rights violations without binding safeguards. | The trade negotiations present a mixed ethical landscape. While they may drive economic growth and renewable energy investment, the risks to environmental sustainability, labor rights, and indigenous communities are substantial. The absence of binding safeguards in the current phase",
+      "tx_hash": "Bdot2CvHHPVzTqjVCo1k2AuTCPHnejPGgVso9czy8w8NscVvPvAbJeRraSBEGgQLkcdJn2rDEvDQ6w35xxgbEi5",
+      "created_at": "2026-09-26T19:06:13.796719+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Trade negotiations may foster economic growth and infrastructure development, potentially supporting SDG 8 (Decent Work and Economic Growth) and SDG 9 (Industry, Innovation and Infrastructure).\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential for increased investment in renewable energy projects, aligning with SDG 7 (Affordable and Clean Energy) and SDG 13 (Climate Action).\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Mining investments risk environmental degradation, including biodiversity loss, water contamination, and land-system change, undermining SDG 14 (Life Below Water), SDG 15 (Life on Land), and Planetary Boundaries.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}, {\"description\": \"Potential for labor rights violations in mining and energy sectors, including unsafe working conditions and exploitation, violating ILO Core Labor Standards and UDHR Article 23 (right to just and favorable working conditions).\", \"affected_sdgs\": [8], \"violated_rights\": [\"UDHR Article 23\", \"ILO\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Lack of explicit safeguards for indigenous communities and local populations, risking displacement and cultural erosion, violating UNDRIP and UDHR Article 27 (right to cultural life).\", \"affected_sdgs\": [10, 11], \"violated_rights\": [\"UNDRIP\", \"UDHR Article 27\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 7917,
       "event_title": "Germany Selects Munich for Olympics Host Bid",
@@ -182101,8 +182124,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 52,
-        "total_amount": 51644010
+        "count": 50,
+        "total_amount": 50292010
       },
       {
         "country": "France",
@@ -182169,14 +182192,14 @@
         "events": 19
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.073,
+        "events": 55
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.069,
         "events": 72
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.069,
-        "events": 58
       }
     ],
     "top_regions_destructive": [
@@ -182197,8 +182220,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.931,
-        "events": 58
+        "mint_ratio": 0.927,
+        "events": 55
       },
       {
         "region": "Latin America",
@@ -182239,7 +182262,7 @@
       },
       {
         "date": "2026-09-26",
-        "net_minted": 3825640,
+        "net_minted": 4050640,
         "net_burned": 4100000
       }
     ],
@@ -182257,7 +182280,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 222,
+        "negative": 220,
         "event_ids_positive": [
           7907,
           7906,
@@ -182288,6 +182311,7 @@
           7678
         ],
         "event_ids_negative": [
+          7918,
           7917,
           7916,
           7915,
@@ -182506,15 +182530,12 @@
           7674,
           7673,
           7672,
-          7671,
-          7670,
-          7669,
-          7668
+          7671
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 199,
+        "negative": 197,
         "event_ids_positive": [
           7907,
           7906,
@@ -182538,6 +182559,7 @@
           7678
         ],
         "event_ids_negative": [
+          7918,
           7917,
           7915,
           7914,
@@ -182733,10 +182755,7 @@
           7674,
           7673,
           7672,
-          7671,
-          7670,
-          7669,
-          7668
+          7671
         ]
       },
       "ILO": {
@@ -182747,6 +182766,7 @@
           7706
         ],
         "event_ids_negative": [
+          7918,
           7892,
           7882,
           7871,
@@ -182781,8 +182801,7 @@
           7689,
           7679,
           7677,
-          7675,
-          7670
+          7675
         ]
       },
       "CRC": {
@@ -182864,6 +182883,7 @@
           7678
         ],
         "event_ids_negative": [
+          7918,
           7917,
           7913,
           7908,
@@ -182918,13 +182938,12 @@
           7692,
           7691,
           7687,
-          7677,
-          7670
+          7677
         ]
       },
       "Animal": {
         "positive": 6,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [
           7858,
           7833,
@@ -182934,6 +182953,7 @@
           7684
         ],
         "event_ids_negative": [
+          7918,
           7916,
           7903,
           7881,
@@ -182955,7 +182975,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           7907,
           7896,
@@ -182973,6 +182993,7 @@
           7684
         ],
         "event_ids_negative": [
+          7918,
           7917,
           7916,
           7915,
@@ -183052,14 +183073,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.3,
-      "mainstream_pct": 31.7,
+      "niche_pct": 69.5,
+      "mainstream_pct": 30.5,
       "total_sources_used": 82,
-      "articles_processed": 250
+      "articles_processed": 248
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 250,
+      "total_events": 248,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -183105,17 +183126,16 @@
       },
       {
         "name": "ILO",
-        "count": 7,
+        "count": 6,
         "burn_count": 1,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           7882,
           7844,
           7827,
           7794,
           7706,
-          7705,
-          7670
+          7705
         ]
       },
       {
@@ -183174,10 +183194,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 45,
+        "count": 46,
         "burn_count": 5,
-        "mint_count": 40,
+        "mint_count": 41,
         "event_ids": [
+          7918,
           7903,
           7896,
           7894,
@@ -183227,10 +183248,11 @@
       },
       {
         "name": "Finance",
-        "count": 21,
+        "count": 22,
         "burn_count": 2,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          7918,
           7912,
           7908,
           7906,
@@ -183329,6 +183351,23 @@
         ]
       },
       {
+        "name": "Mining",
+        "count": 9,
+        "burn_count": 3,
+        "mint_count": 6,
+        "event_ids": [
+          7918,
+          7873,
+          7862,
+          7849,
+          7826,
+          7825,
+          7814,
+          7809,
+          7761
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 8,
         "burn_count": 0,
@@ -183342,22 +183381,6 @@
           7799,
           7753,
           7735
-        ]
-      },
-      {
-        "name": "Mining",
-        "count": 8,
-        "burn_count": 3,
-        "mint_count": 5,
-        "event_ids": [
-          7873,
-          7862,
-          7849,
-          7826,
-          7825,
-          7814,
-          7809,
-          7761
         ]
       },
       {
@@ -183407,25 +183430,25 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 223,
+      "total_mint": 221,
       "direct_action": {
-        "count": 209,
-        "pct": 93.7
+        "count": 208,
+        "pct": 94.1
       },
       "editorial_alarm": {
-        "count": 13,
-        "pct": 5.8
+        "count": 12,
+        "pct": 5.4
       },
       "untyped": {
         "count": 1,
-        "pct": 0.4
+        "pct": 0.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5817,
+      "total_mint": 5818,
       "direct_action": {
-        "count": 4895,
-        "pct": 84.1
+        "count": 4896,
+        "pct": 84.2
       },
       "editorial_alarm": {
         "count": 361,
@@ -183438,8 +183461,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 79,
-      "institutional": 171,
-      "citizen_ratio": 0.316,
+      "institutional": 169,
+      "citizen_ratio": 0.319,
       "daily": [
         {
           "date": "2026-09-20",
@@ -183473,11 +183496,12 @@
         },
         {
           "date": "2026-09-26",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 12
         }
       ],
       "event_ids_citizen": [
+        7918,
         7913,
         7907,
         7899,
@@ -183555,8 +183579,7 @@
         7683,
         7678,
         7676,
-        7672,
-        7670
+        7672
       ],
       "event_ids_institutional": [
         7917,
@@ -183727,9 +183750,7 @@
         7675,
         7674,
         7673,
-        7671,
-        7669,
-        7668
+        7671
       ]
     }
   }
