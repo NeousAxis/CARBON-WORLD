@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-26T01:06:18.830694+00:00",
-  "total_events": 7905,
-  "total_burned": 7964094205,
+  "generated_at": "2026-09-26T02:05:08.098252+00:00",
+  "total_events": 7906,
+  "total_burned": 7964794205,
   "total_minted": 10392274639,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7906,
+      "event_title": "Brazil: Desenrola 3.0 to Buy Up US$29 Billion in Family Debt at Up to 90% Discount",
+      "event_url": "https://www.riotimesonline.com/brazil-desenrola-3-debt-buyback-90-percent-discount-september-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Government debt buyback relieves families, protects economic rights, reduces poverty. | The debt relief program provides immediate financial relief to vulnerable families, addressing poverty and inequality (SDGs 1, 10) while potentially boosting economic activity. However, it risks creating moral hazard, misallocating resources, and lacks structural safeguards against corruption",
+      "tx_hash": "4TPWocwefrLPeDkrDRtT6C5MRHWrHCczoRZBVqTjgiJSuN7nAHakvz1jsKzzmoF7oui5BumtuZMR5o9R1rz1PBnP",
+      "created_at": "2026-09-26T02:05:02.353041+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Government intervention to relieve financial distress of low-income families by purchasing defaulted debt at steep discounts, directly reducing household debt burdens.\", \"affected_sdgs\": [1, 8, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential to stimulate economic activity by increasing disposable income for vulnerable populations, supporting local businesses and consumption.\", \"affected_sdgs\": [8, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Reduces risk of predatory lending practices and debt traps for marginalized families, aligning with financial inclusion goals.\", \"affected_sdgs\": [1, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Moral hazard risk: creditors may engage in reckless lending if they anticipate government bailouts, undermining long-term financial responsibility.\", \"affected_sdgs\": [8, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Opportunity cost: US$29 billion could fund direct social programs (e.g., housing, education, healthcare) with more durable poverty-reduction impacts.\", \"affected_sdgs\": [1, 3, 4], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential for corruption or mismanagement in debt valuation and disbursement, given the scale and opacity of financial transactions.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7905,
       "event_title": "AI Data Centre Company Starts Development Work Without a Permit",
@@ -181825,8 +181848,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 57,
-        "total_amount": 54354510
+        "count": 56,
+        "total_amount": 53704510
       },
       {
         "country": "France",
@@ -181851,6 +181874,11 @@
     ],
     "top_countries_burn": [
       {
+        "country": "Brazil",
+        "count": 3,
+        "total_amount": 1750000
+      },
+      {
         "country": "United States",
         "count": 3,
         "total_amount": 1500000
@@ -181859,11 +181887,6 @@
         "country": "France",
         "count": 2,
         "total_amount": 1376000
-      },
-      {
-        "country": "Brazil",
-        "count": 2,
-        "total_amount": 1050000
       },
       {
         "country": "Spain",
@@ -181888,22 +181911,27 @@
         "events": 6
       },
       {
-        "region": "MENA",
-        "burn_ratio": 0.111,
-        "events": 9
-      },
-      {
         "region": "Latin America",
-        "burn_ratio": 0.105,
+        "burn_ratio": 0.158,
         "events": 19
       },
       {
         "region": "Europe",
         "burn_ratio": 0.069,
         "events": 72
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.065,
+        "events": 62
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 8
+      },
       {
         "region": "Oceania",
         "mint_ratio": 0.941,
@@ -181911,8 +181939,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.937,
-        "events": 63
+        "mint_ratio": 0.935,
+        "events": 62
       },
       {
         "region": "Europe",
@@ -181921,13 +181949,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.895,
+        "mint_ratio": 0.842,
         "events": 19
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 0.889,
-        "events": 9
       }
     ],
     "supply_trend_7d": [
@@ -181964,7 +181987,7 @@
       {
         "date": "2026-09-26",
         "net_minted": 553200,
-        "net_burned": 0
+        "net_burned": 700000
       }
     ],
     "event_of_the_day": {
@@ -181981,8 +182004,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 229,
+        "negative": 227,
         "event_ids_positive": [
+          7906,
           7896,
           7895,
           7880,
@@ -182007,8 +182031,7 @@
           7706,
           7690,
           7684,
-          7678,
-          7652
+          7678
         ],
         "event_ids_negative": [
           7905,
@@ -182237,15 +182260,14 @@
           7656,
           7655,
           7654,
-          7653,
-          7651,
-          7650
+          7653
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 204,
+        "negative": 202,
         "event_ids_positive": [
+          7906,
           7896,
           7895,
           7880,
@@ -182263,8 +182285,7 @@
           7723,
           7706,
           7684,
-          7678,
-          7652
+          7678
         ],
         "event_ids_negative": [
           7905,
@@ -182468,9 +182489,7 @@
           7659,
           7657,
           7656,
-          7655,
-          7651,
-          7650
+          7655
         ]
       },
       "ILO": {
@@ -182657,16 +182676,15 @@
         ]
       },
       "Animal": {
-        "positive": 7,
-        "negative": 19,
+        "positive": 6,
+        "negative": 18,
         "event_ids_positive": [
           7858,
           7833,
           7826,
           7761,
           7743,
-          7684,
-          7652
+          7684
         ],
         "event_ids_negative": [
           7903,
@@ -182686,13 +182704,12 @@
           7717,
           7701,
           7658,
-          7654,
-          7650
+          7654
         ]
       },
       "PB": {
-        "positive": 14,
-        "negative": 79,
+        "positive": 13,
+        "negative": 78,
         "event_ids_positive": [
           7896,
           7873,
@@ -182706,8 +182723,7 @@
           7743,
           7721,
           7690,
-          7684,
-          7652
+          7684
         ],
         "event_ids_negative": [
           7903,
@@ -182787,20 +182803,19 @@
           7659,
           7658,
           7657,
-          7654,
-          7650
+          7654
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 67.5,
-      "mainstream_pct": 32.5,
-      "total_sources_used": 83,
-      "articles_processed": 256
+      "niche_pct": 66.7,
+      "mainstream_pct": 33.3,
+      "total_sources_used": 81,
+      "articles_processed": 254
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 256,
+      "total_events": 254,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -182970,6 +182985,34 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 20,
+        "burn_count": 2,
+        "mint_count": 18,
+        "event_ids": [
+          7906,
+          7899,
+          7897,
+          7896,
+          7887,
+          7885,
+          7884,
+          7875,
+          7867,
+          7844,
+          7837,
+          7816,
+          7789,
+          7788,
+          7780,
+          7764,
+          7720,
+          7719,
+          7683,
+          7661
+        ]
+      },
+      {
         "name": "Tech",
         "count": 20,
         "burn_count": 2,
@@ -183022,33 +183065,6 @@
           7671,
           7662,
           7656
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 19,
-        "burn_count": 1,
-        "mint_count": 18,
-        "event_ids": [
-          7899,
-          7897,
-          7896,
-          7887,
-          7885,
-          7884,
-          7875,
-          7867,
-          7844,
-          7837,
-          7816,
-          7789,
-          7788,
-          7780,
-          7764,
-          7720,
-          7719,
-          7683,
-          7661
         ]
       },
       {
@@ -183139,9 +183155,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2090,
+      "total_burn": 2091,
       "direct_action": {
-        "count": 1651,
+        "count": 1652,
         "pct": 79.0
       },
       "editorial_consciousness": {
@@ -183154,14 +183170,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 230,
+      "total_mint": 228,
       "direct_action": {
-        "count": 214,
+        "count": 212,
         "pct": 93.0
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 6.5
+        "pct": 6.6
       },
       "untyped": {
         "count": 1,
@@ -183184,9 +183200,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 83,
-      "institutional": 173,
-      "citizen_ratio": 0.324,
+      "citizen": 82,
+      "institutional": 172,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-09-20",
@@ -183221,7 +183237,7 @@
         {
           "date": "2026-09-26",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -183306,10 +183322,10 @@
         7663,
         7661,
         7660,
-        7656,
-        7652
+        7656
       ],
       "event_ids_institutional": [
+        7906,
         7905,
         7904,
         7903,
@@ -183480,9 +183496,7 @@
         7657,
         7655,
         7654,
-        7653,
-        7651,
-        7650
+        7653
       ]
     }
   }
