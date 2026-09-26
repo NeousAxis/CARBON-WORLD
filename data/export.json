@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-26T10:05:29.157060+00:00",
-  "total_events": 7910,
+  "generated_at": "2026-09-26T11:06:11.462225+00:00",
+  "total_events": 7912,
   "total_burned": 7968194205,
-  "total_minted": 10393926639,
+  "total_minted": 10394630639,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7912,
+      "event_title": "Touching staff levels always has an impact: Geneva's budget standoff also plays out in classrooms",
+      "event_url": "https://www.letemps.ch/articles/toucher-aux-effectifs-a-toujours-un-impact-a-geneve-le-bras-de-fer-budgetaire-se-joue-aussi-dans-les-classes",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 100000,
+      "final_score": -2.12,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Budget cuts to education outweigh targeted youth support, risking long-term harm to access and quality. | The budget decision balances targeted investments in child protection and mental health against broader cuts to education funding. While the allocations for minors and youth mental health are positive, the reduction in education spending risks undermining access to quality ",
+      "tx_hash": "2pMyyzoekp1doypCmhU7BSHYky5owB4UEZyEtegDTqqTjnBBdriWyKfj5aiaZy4mDBKLepMffKg5nxS14XdggwQs",
+      "created_at": "2026-09-26T11:06:05.470970+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Allocation of 34.1 million CHF to reinforce the protection of minors, addressing child welfare and safety.\", \"affected_sdgs\": [3, 4, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}, {\"description\": \"Allocation of 16.5 million CHF for prevention and mental health support for youth, improving access to health and well-being services.\", \"affected_sdgs\": [3, 4, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reduction of 15 million CHF in the education budget for 2027, with further cuts planned, potentially impacting staffing, infrastructure, and educational quality.\", \"affected_sdgs\": [4, 8, 10], \"violated_rights\": [\"UDHR Article 26\", \"CRC Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 7911,
+      "event_title": "The Backlash to 'NAZA' Shows How Little Israeli Citizenship Really Means",
+      "event_url": "https://theintercept.com/2026/09/25/naza-documentary-film-netanyahu-israel-revoke-citizenship/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.2,
+      "confidence": 8,
+      "justification": "Threatening filmmakers curtails free expression, violating human rights. | The threat against filmmakers represents a clear violation of freedom of expression and press freedom, harming democratic participation and equality. No compensating positive impacts are evident, leading to a net negative ethical assessment.",
+      "tx_hash": "59nqfPLx46EoYtkorrFFnx3szLrKMyqqq2wknQrKXecpfJo8VvcJkT543dMT8Fmo18BXxeVUDjYUzeCM8zUe8Ak5",
+      "created_at": "2026-09-26T11:06:03.032772+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Prime Minister Netanyahu threatened documentary filmmakers, undermining freedom of expression and press freedom.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7910,
       "event_title": "Why Taiwan’s coastguard vessel transfer to the Philippines has sparked a double outcry",
@@ -181954,14 +182000,14 @@
         "total_amount": 5420100
       },
       {
+        "country": "Switzerland",
+        "count": 9,
+        "total_amount": 2669200
+      },
+      {
         "country": "Australia",
         "count": 9,
         "total_amount": 3317600
-      },
-      {
-        "country": "Switzerland",
-        "count": 9,
-        "total_amount": 2629600
       }
     ],
     "top_countries_burn": [
@@ -182022,7 +182068,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 8
+        "events": 9
       },
       {
         "region": "North America",
@@ -182078,7 +182124,7 @@
       },
       {
         "date": "2026-09-26",
-        "net_minted": 2205200,
+        "net_minted": 2909200,
         "net_burned": 4100000
       }
     ],
@@ -182096,7 +182142,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 225,
+        "negative": 226,
         "event_ids_positive": [
           7907,
           7906,
@@ -182127,6 +182173,8 @@
           7678
         ],
         "event_ids_negative": [
+          7912,
+          7911,
           7910,
           7909,
           7908,
@@ -182350,13 +182398,12 @@
           7662,
           7661,
           7660,
-          7659,
-          7658
+          7659
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 202,
+        "negative": 204,
         "event_ids_positive": [
           7907,
           7906,
@@ -182380,6 +182427,8 @@
           7678
         ],
         "event_ids_negative": [
+          7912,
+          7911,
           7910,
           7909,
           7908,
@@ -182634,7 +182683,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           7907,
           7872,
@@ -182643,6 +182692,7 @@
           7684
         ],
         "event_ids_negative": [
+          7912,
           7908,
           7899,
           7897,
@@ -182771,7 +182821,7 @@
       },
       "Animal": {
         "positive": 6,
-        "negative": 17,
+        "negative": 16,
         "event_ids_positive": [
           7858,
           7833,
@@ -182796,13 +182846,12 @@
           7753,
           7744,
           7717,
-          7701,
-          7658
+          7701
         ]
       },
       "PB": {
         "positive": 14,
-        "negative": 76,
+        "negative": 75,
         "event_ids_positive": [
           7907,
           7896,
@@ -182894,20 +182943,19 @@
           7675,
           7663,
           7660,
-          7659,
-          7658
+          7659
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 67.9,
-      "mainstream_pct": 32.1,
-      "total_sources_used": 81,
-      "articles_processed": 253
+      "niche_pct": 68.3,
+      "mainstream_pct": 31.7,
+      "total_sources_used": 82,
+      "articles_processed": 254
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 253,
+      "total_events": 254,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -183077,10 +183125,11 @@
       },
       {
         "name": "Finance",
-        "count": 21,
+        "count": 22,
         "burn_count": 2,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          7912,
           7908,
           7906,
           7899,
@@ -183258,10 +183307,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 226,
+      "total_mint": 227,
       "direct_action": {
-        "count": 210,
-        "pct": 92.9
+        "count": 211,
+        "pct": 93.0
       },
       "editorial_alarm": {
         "count": 15,
@@ -183273,9 +183322,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5810,
+      "total_mint": 5812,
       "direct_action": {
-        "count": 4888,
+        "count": 4890,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -183289,8 +183338,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 82,
-      "institutional": 171,
-      "citizen_ratio": 0.324,
+      "institutional": 172,
+      "citizen_ratio": 0.323,
       "daily": [
         {
           "date": "2026-09-20",
@@ -183325,7 +183374,7 @@
         {
           "date": "2026-09-26",
           "citizen": 1,
-          "institutional": 6
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -183413,6 +183462,8 @@
         7660
       ],
       "event_ids_institutional": [
+        7912,
+        7911,
         7910,
         7909,
         7908,
@@ -183582,8 +183633,7 @@
         7665,
         7664,
         7662,
-        7659,
-        7658
+        7659
       ]
     }
   }
