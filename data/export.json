@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-09-26T00:05:08.258788+00:00",
-  "total_events": 7903,
+  "generated_at": "2026-09-26T01:06:18.830694+00:00",
+  "total_events": 7905,
   "total_burned": 7964094205,
-  "total_minted": 10391721439,
+  "total_minted": 10392274639,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7905,
+      "event_title": "AI Data Centre Company Starts Development Work Without a Permit",
+      "event_url": "https://www.abc.net.au/news/2026-09-26/firmus-starts-development-work-without-permit-wesley-vale/107198264",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 53200,
+      "final_score": -3.99,
+      "confidence": 8,
+      "justification": "Unauthorized development undermines legal and environmental governance, warranting MINT. | The action undermines the rule of law (SDG 16) and responsible consumption/production (SDG 12) by circumventing regulatory oversight. It also violates principles of transparent governance (UDHR Articles 21 and 28) by ignoring legal procedures, setting a precedent for impunity in development projects. No countervailing positive aspects are identified in the reported action.",
+      "tx_hash": "4mD4rC49KtoCx3qJ2QFJDDKdSg9X2Gz5H7TqP57cxCnUL55gLSsbZ7TWDVVQ4JpAM7bQDiQFH92XeUREZN5J1GN",
+      "created_at": "2026-09-26T01:06:12.979281+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Unauthorized commencement of development work by Firmus Technologies on a data centre site in Wesley Vale, Tasmania, bypassing regulatory approval processes.\", \"affected_sdgs\": [11, 12, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 7904,
+      "event_title": "IA: Pentagon’s exclusion of Anthropic confirmed by court",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/09/26/ia-la-mise-a-l-ecart-d-anthropic-par-le-pentagone-confirmee-par-la-justice_6782773_3234.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.09,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Court upholds Pentagon's exclusion of Anthropic, preventing unrestricted military AI use; protects rights and limits potential harm. | The court's ruling reinforces corporate autonomy in ethical AI governance but risks enabling military AI development without sufficient civilian oversight. While protecting private sector ethical boundaries, it undermines broader accountabili",
+      "tx_hash": "239H6tRsTgo7tRSDXpEjAqKcfCwJp3VPwEWr8445PG8DK9mM7WQj55xg5g2kxVnos2rSzSCTRxHirMD7VYYhqMJw",
+      "created_at": "2026-09-26T01:06:06.755865+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Court upholds a private company's right to set ethical boundaries on military use of its AI technology, reinforcing corporate autonomy and potential ethical safeguards in AI deployment.\", \"affected_sdgs\": [9, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Judicial validation of the Pentagon's exclusion of Anthropic may limit civilian oversight of military AI development, potentially enabling unchecked military applications of AI with risks to global security and human rights.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Decision may set a precedent discouraging private sector collaboration with military on ethical AI governance, reducing transparency and accountability in defense AI systems.\", \"affected_sdgs\": [9, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 7903,
       "event_title": "Nuclear: EDF seeks to revise river temperature norms due to climate change",
@@ -181779,8 +181825,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 58,
-        "total_amount": 60012510
+        "count": 57,
+        "total_amount": 54354510
       },
       {
         "country": "France",
@@ -181793,14 +181839,14 @@
         "total_amount": 5420100
       },
       {
+        "country": "Australia",
+        "count": 9,
+        "total_amount": 3317600
+      },
+      {
         "country": "Switzerland",
         "count": 9,
         "total_amount": 2629600
-      },
-      {
-        "country": "Germany",
-        "count": 8,
-        "total_amount": 3097200
       }
     ],
     "top_countries_burn": [
@@ -181848,35 +181894,35 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.1,
-        "events": 20
+        "burn_ratio": 0.105,
+        "events": 19
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.068,
-        "events": 73
+        "burn_ratio": 0.069,
+        "events": 72
       }
     ],
     "top_regions_destructive": [
       {
-        "region": "North America",
-        "mint_ratio": 0.938,
-        "events": 64
+        "region": "Oceania",
+        "mint_ratio": 0.941,
+        "events": 17
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 0.938,
-        "events": 16
+        "region": "North America",
+        "mint_ratio": 0.937,
+        "events": 63
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.932,
-        "events": 73
+        "mint_ratio": 0.931,
+        "events": 72
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.9,
-        "events": 20
+        "mint_ratio": 0.895,
+        "events": 19
       },
       {
         "region": "MENA",
@@ -181917,7 +181963,7 @@
       },
       {
         "date": "2026-09-26",
-        "net_minted": 0,
+        "net_minted": 553200,
         "net_burned": 0
       }
     ],
@@ -181935,7 +181981,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 232,
+        "negative": 229,
         "event_ids_positive": [
           7896,
           7895,
@@ -181965,6 +182011,8 @@
           7652
         ],
         "event_ids_negative": [
+          7905,
+          7904,
           7903,
           7902,
           7901,
@@ -182191,17 +182239,12 @@
           7654,
           7653,
           7651,
-          7650,
-          7649,
-          7648,
-          7647,
-          7646,
-          7645
+          7650
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 206,
+        "negative": 204,
         "event_ids_positive": [
           7896,
           7895,
@@ -182224,6 +182267,8 @@
           7652
         ],
         "event_ids_negative": [
+          7905,
+          7904,
           7902,
           7901,
           7900,
@@ -182425,11 +182470,7 @@
           7656,
           7655,
           7651,
-          7650,
-          7649,
-          7648,
-          7646,
-          7645
+          7650
         ]
       },
       "ILO": {
@@ -182547,7 +182588,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 58,
+        "negative": 56,
         "event_ids_positive": [
           7896,
           7873,
@@ -182612,9 +182653,7 @@
           7670,
           7666,
           7660,
-          7654,
-          7649,
-          7647
+          7654
         ]
       },
       "Animal": {
@@ -182653,7 +182692,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 83,
+        "negative": 79,
         "event_ids_positive": [
           7896,
           7873,
@@ -182749,23 +182788,19 @@
           7658,
           7657,
           7654,
-          7650,
-          7649,
-          7647,
-          7646,
-          7645
+          7650
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.3,
-      "mainstream_pct": 33.7,
+      "niche_pct": 67.5,
+      "mainstream_pct": 32.5,
       "total_sources_used": 83,
-      "articles_processed": 259
+      "articles_processed": 256
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 259,
+      "total_events": 256,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -182879,9 +182914,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 51,
+        "count": 49,
         "burn_count": 5,
-        "mint_count": 46,
+        "mint_count": 44,
         "event_ids": [
           7903,
           7896,
@@ -182931,9 +182966,35 @@
           7663,
           7659,
           7654,
-          7653,
-          7648,
-          7646
+          7653
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 20,
+        "burn_count": 2,
+        "mint_count": 18,
+        "event_ids": [
+          7905,
+          7904,
+          7887,
+          7873,
+          7855,
+          7848,
+          7822,
+          7818,
+          7814,
+          7758,
+          7732,
+          7722,
+          7710,
+          7708,
+          7690,
+          7683,
+          7676,
+          7675,
+          7662,
+          7653
         ]
       },
       {
@@ -182942,6 +183003,7 @@
         "burn_count": 0,
         "mint_count": 19,
         "event_ids": [
+          7904,
           7901,
           7864,
           7853,
@@ -182959,8 +183021,7 @@
           7677,
           7671,
           7662,
-          7656,
-          7647
+          7656
         ]
       },
       {
@@ -182991,36 +183052,10 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 18,
-        "burn_count": 2,
-        "mint_count": 16,
-        "event_ids": [
-          7887,
-          7873,
-          7855,
-          7848,
-          7822,
-          7818,
-          7814,
-          7758,
-          7732,
-          7722,
-          7710,
-          7708,
-          7690,
-          7683,
-          7676,
-          7675,
-          7662,
-          7653
-        ]
-      },
-      {
         "name": "Construction",
-        "count": 15,
+        "count": 14,
         "burn_count": 1,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           7896,
           7874,
@@ -183035,8 +183070,7 @@
           7686,
           7675,
           7673,
-          7657,
-          7647
+          7657
         ]
       },
       {
@@ -183120,14 +183154,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 233,
+      "total_mint": 230,
       "direct_action": {
-        "count": 215,
-        "pct": 92.3
+        "count": 214,
+        "pct": 93.0
       },
       "editorial_alarm": {
-        "count": 17,
-        "pct": 7.3
+        "count": 15,
+        "pct": 6.5
       },
       "untyped": {
         "count": 1,
@@ -183135,9 +183169,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5805,
+      "total_mint": 5807,
       "direct_action": {
-        "count": 4883,
+        "count": 4885,
         "pct": 84.1
       },
       "editorial_alarm": {
@@ -183150,9 +183184,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 87,
-      "institutional": 172,
-      "citizen_ratio": 0.336,
+      "citizen": 83,
+      "institutional": 173,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-09-20",
@@ -183187,7 +183221,7 @@
         {
           "date": "2026-09-26",
           "citizen": 0,
-          "institutional": 0
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -183273,13 +183307,11 @@
         7661,
         7660,
         7656,
-        7652,
-        7649,
-        7647,
-        7646,
-        7645
+        7652
       ],
       "event_ids_institutional": [
+        7905,
+        7904,
         7903,
         7902,
         7901,
@@ -183450,8 +183482,7 @@
         7654,
         7653,
         7651,
-        7650,
-        7648
+        7650
       ]
     }
   }
