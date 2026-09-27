@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-27T14:05:55.907300+00:00",
-  "total_events": 7928,
-  "total_burned": 7968494205,
+  "generated_at": "2026-09-27T16:06:35.714097+00:00",
+  "total_events": 7929,
+  "total_burned": 7969194205,
   "total_minted": 10403597079,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7929,
+      "event_title": "EU Commission calls on countries to cut energy demands as costs surge",
+      "event_url": "https://www.politico.eu/article/eu-commission-calls-for-gas-electricity-demand-cuts/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Proactive institutional action to reduce energy demand aligns with climate and energy security goals. | The EU Commission's call for energy demand reduction aligns with climate action and responsible consumption goals, offering a proactive step to mitigate emissions and fossil fuel reliance. However, the non-binding nature and potential economic strain on vulnerable populations ",
+      "tx_hash": "3Luqhq4YDgH1sbCWDrfZmFhS7pWXmAdmzzM3UsHhvgjMNQCZgv8YqBUC36dm8L5ApY8zbvzyTL88DZVTJT8JKNNE",
+      "created_at": "2026-09-27T16:06:29.807652+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU Commission urges member states to reduce energy demand amid supply constraints, potentially lowering emissions and fossil fuel dependency.\", \"affected_sdgs\": [7, 12, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Promotes responsible consumption (SDG 12) and climate action (SDG 13) by addressing energy efficiency and reducing waste.\", \"affected_sdgs\": [12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential short-term economic strain on households and businesses due to reduced energy availability, risking decent work (SDG 8) and affordable energy access (SDG 7).\", \"affected_sdgs\": [7, 8], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of binding enforcement may limit effectiveness, creating uncertainty in achieving stated climate goals.\", \"affected_sdgs\": [13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 7928,
       "event_title": "Swiss voters set to reject tighter neutrality rules in referendum",
@@ -182368,14 +182391,14 @@
         "total_amount": 3723200
       },
       {
-        "country": "Italy",
-        "count": 10,
-        "total_amount": 5420100
-      },
-      {
         "country": "Australia",
         "count": 9,
         "total_amount": 3317600
+      },
+      {
+        "country": "Italy",
+        "count": 9,
+        "total_amount": 4816100
       }
     ],
     "top_countries_burn": [
@@ -182440,8 +182463,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.933,
-        "events": 75
+        "mint_ratio": 0.931,
+        "events": 72
       },
       {
         "region": "Oceania",
@@ -182493,7 +182516,7 @@
       {
         "date": "2026-09-27",
         "net_minted": 7711600,
-        "net_burned": 300000
+        "net_burned": 1000000
       }
     ],
     "event_of_the_day": {
@@ -182509,9 +182532,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
-        "negative": 217,
+        "positive": 27,
+        "negative": 214,
         "event_ids_positive": [
+          7929,
           7921,
           7907,
           7906,
@@ -182753,16 +182777,14 @@
           7692,
           7691,
           7689,
-          7688,
-          7687,
-          7686,
-          7685
+          7688
         ]
       },
       "UDHR": {
-        "positive": 18,
-        "negative": 191,
+        "positive": 19,
+        "negative": 189,
         "event_ids_positive": [
+          7929,
           7907,
           7906,
           7896,
@@ -182971,9 +182993,7 @@
           7692,
           7691,
           7689,
-          7688,
-          7687,
-          7685
+          7688
         ]
       },
       "ILO": {
@@ -183021,7 +183041,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 50,
+        "negative": 48,
         "event_ids_positive": [
           7907,
           7872,
@@ -183076,14 +183096,12 @@
           7712,
           7702,
           7693,
-          7692,
-          7687,
-          7685
+          7692
         ]
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 58,
+        "negative": 57,
         "event_ids_positive": [
           7907,
           7896,
@@ -183149,8 +183167,7 @@
           7695,
           7693,
           7692,
-          7691,
-          7687
+          7691
         ]
       },
       "Animal": {
@@ -183189,9 +183206,10 @@
         ]
       },
       "PB": {
-        "positive": 13,
-        "negative": 79,
+        "positive": 14,
+        "negative": 78,
         "event_ids_positive": [
+          7929,
           7907,
           7896,
           7873,
@@ -183284,20 +183302,19 @@
           7708,
           7703,
           7701,
-          7697,
-          7686
+          7697
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.7,
-      "mainstream_pct": 33.3,
+      "niche_pct": 67.9,
+      "mainstream_pct": 32.1,
       "total_sources_used": 81,
-      "articles_processed": 244
+      "articles_processed": 242
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 244,
+      "total_events": 242,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -183327,10 +183344,11 @@
       },
       {
         "name": "EU",
-        "count": 8,
-        "burn_count": 1,
+        "count": 9,
+        "burn_count": 2,
         "mint_count": 7,
         "event_ids": [
+          7929,
           7859,
           7832,
           7799,
@@ -183390,6 +183408,15 @@
         ]
       },
       {
+        "name": "EU Commission",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          7929
+        ]
+      },
+      {
         "name": "CITES",
         "count": 1,
         "burn_count": 0,
@@ -183397,24 +183424,16 @@
         "event_ids": [
           7804
         ]
-      },
-      {
-        "name": "G7",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          7728
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 47,
-        "burn_count": 6,
+        "count": 48,
+        "burn_count": 7,
         "mint_count": 41,
         "event_ids": [
+          7929,
           7922,
           7921,
           7918,
@@ -183545,9 +183564,9 @@
       },
       {
         "name": "Construction",
-        "count": 13,
+        "count": 12,
         "burn_count": 1,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           7917,
           7915,
@@ -183560,8 +183579,7 @@
           7744,
           7736,
           7727,
-          7699,
-          7686
+          7699
         ]
       },
       {
@@ -183614,14 +183632,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 27,
       "direct_action": {
-        "count": 20,
-        "pct": 76.9
+        "count": 21,
+        "pct": 77.8
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 23.1
+        "pct": 22.2
       },
       "untyped": {
         "count": 0,
@@ -183629,9 +183647,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2093,
+      "total_burn": 2094,
       "direct_action": {
-        "count": 1653,
+        "count": 1654,
         "pct": 79.0
       },
       "editorial_consciousness": {
@@ -183644,14 +183662,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 218,
+      "total_mint": 215,
       "direct_action": {
-        "count": 205,
+        "count": 202,
         "pct": 94.0
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 5.5
+        "pct": 5.6
       },
       "untyped": {
         "count": 1,
@@ -183674,9 +183692,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 78,
-      "institutional": 166,
-      "citizen_ratio": 0.32,
+      "citizen": 77,
+      "institutional": 165,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-09-21",
@@ -183711,7 +183729,7 @@
         {
           "date": "2026-09-27",
           "citizen": 3,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -183791,10 +183809,10 @@
         7702,
         7701,
         7695,
-        7690,
-        7687
+        7690
       ],
       "event_ids_institutional": [
+        7929,
         7928,
         7927,
         7926,
@@ -183958,9 +183976,7 @@
         7692,
         7691,
         7689,
-        7688,
-        7686,
-        7685
+        7688
       ]
     }
   }
