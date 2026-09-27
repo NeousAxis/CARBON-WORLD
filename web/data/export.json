@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-27T00:07:19.200786+00:00",
-  "total_events": 7920,
-  "total_burned": 7968194205,
+  "generated_at": "2026-09-27T01:05:57.051915+00:00",
+  "total_events": 7921,
+  "total_burned": 7968494205,
   "total_minted": 10395935479,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7921,
+      "event_title": "A rural Idaho county banned renewables. It’s having second thoughts.",
+      "event_url": "https://grist.org/energy/a-rural-idaho-county-banned-renewables-its-having-second-thoughts/",
+      "event_source": "Grist",
+      "decision": "BURN",
+      "amount_crbn": 300000,
+      "final_score": -1.7,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] County's renewable ban remains in effect, hindering climate action; reversal is only tentative. | The county's ban on renewables directly undermines clean energy access and climate action, outweighing any tentative reconsideration. No concrete positive action has been taken yet, resulting in a net negative ethical assessment.",
+      "tx_hash": "57y4VrTYCHGpYU2BtUfuT3y11bv8pVv3fj4ZwbhuBwxuPP78STS9T46sg4TrcaVjBEWfiXMpnvKfhRN7dQ9MEXpZ",
+      "created_at": "2026-09-27T01:05:51.562810+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"County ban on renewable energy projects limits clean energy deployment and hampers climate mitigation efforts.\", \"affected_sdgs\": [7, 13, 11], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 35200
+    },
     {
       "id": 7920,
       "event_title": "Russia condemns Polish city’s 'barbaric' removal of Monument of Gratitude to the Red Army",
@@ -182196,14 +182219,14 @@
     ],
     "top_countries_burn": [
       {
+        "country": "United States",
+        "count": 4,
+        "total_amount": 1800000
+      },
+      {
         "country": "Brazil",
         "count": 3,
         "total_amount": 1750000
-      },
-      {
-        "country": "United States",
-        "count": 3,
-        "total_amount": 1500000
       },
       {
         "country": "France",
@@ -182239,8 +182262,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.074,
-        "events": 54
+        "burn_ratio": 0.091,
+        "events": 55
       },
       {
         "region": "Europe",
@@ -182266,8 +182289,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.926,
-        "events": 54
+        "mint_ratio": 0.909,
+        "events": 55
       },
       {
         "region": "Latin America",
@@ -182309,7 +182332,7 @@
       {
         "date": "2026-09-27",
         "net_minted": 50000,
-        "net_burned": 0
+        "net_burned": 300000
       }
     ],
     "event_of_the_day": {
@@ -182325,9 +182348,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 27,
+        "positive": 28,
         "negative": 215,
         "event_ids_positive": [
+          7921,
           7907,
           7906,
           7896,
@@ -183107,11 +183131,11 @@
       "niche_pct": 67.5,
       "mainstream_pct": 32.5,
       "total_sources_used": 80,
-      "articles_processed": 243
+      "articles_processed": 244
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 243,
+      "total_events": 244,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -183225,10 +183249,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 46,
-        "burn_count": 5,
+        "count": 47,
+        "burn_count": 6,
         "mint_count": 41,
         "event_ids": [
+          7921,
           7918,
           7903,
           7896,
@@ -183426,14 +183451,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 27,
+      "total_burn": 28,
       "direct_action": {
         "count": 22,
-        "pct": 81.5
+        "pct": 78.6
       },
       "editorial_consciousness": {
-        "count": 5,
-        "pct": 18.5
+        "count": 6,
+        "pct": 21.4
       },
       "untyped": {
         "count": 0,
@@ -183441,14 +183466,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2092,
+      "total_burn": 2093,
       "direct_action": {
         "count": 1653,
         "pct": 79.0
       },
       "editorial_consciousness": {
-        "count": 164,
-        "pct": 7.8
+        "count": 165,
+        "pct": 7.9
       },
       "untyped": {
         "count": 275,
@@ -183486,9 +183511,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 77,
+      "citizen": 78,
       "institutional": 166,
-      "citizen_ratio": 0.317,
+      "citizen_ratio": 0.32,
       "daily": [
         {
           "date": "2026-09-21",
@@ -183522,11 +183547,12 @@
         },
         {
           "date": "2026-09-27",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        7921,
         7918,
         7913,
         7907,
