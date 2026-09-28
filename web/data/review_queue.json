@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T09:05:46.815342+00:00",
-  "total_pending": 3,
+  "generated_at": "2026-09-28T10:19:37.217855+00:00",
+  "total_pending": 4,
   "reviews": [
     {
       "id": 783,
@@ -58,6 +58,26 @@
       "human_reason": null,
       "status": "pending",
       "created_at": "2026-09-12T07:07:19.147868+00:00",
+      "resolved_at": null,
+      "human_review_embedding": null,
+      "final_decision": null
+    },
+    {
+      "id": 786,
+      "event_title": "Rome Judges Set to Give Verdict in Regeni Murder Trial",
+      "event_url": "https://www.ansa.it/english/news/general_news/2026/09/28/rome-judges-set-to-give-verdict-in-regeni-murder-trial_b2382b1a-53e8-4f90-bc48-ae30d65bcd55.html",
+      "event_source": "ANSA English (Italy)",
+      "analyst_a_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Court verdict in the murder trial of Giulio Regeni, holding state security officials accountable for abduction and torture leading to death.\", \"affected_sdgs\": [16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}], \"negative_aspects\": [{\"description\": \"Potential for diplomatic tensions or impunity if verdict is perceived as politically motivated or if enforcement is weak, undermining trust in judicial independence.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Risk of retraumatization for Regeni's family and broader civil society if the verdict does not deliver full justice or transparency.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 5\", \"CRC Article 39\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"ethical_synthesis\": \"The verdict represents a critical enforcement of accountability for state-sponsored violence, directly supporting SDG 16 (Peace, Justice, and Strong Institutions) and UDHR rights to fair trial and freedom from torture. However, the potential for diplomatic fallout or incomplete justice introduces ethical trade-offs, though these are secondary to the primary act of judicial accountability.\", \"snapshot_score\": 6.0, \"trajectory_score\": 5.0, \"revaluation_score\": 0, \"revaluation_triggers\": [\"Enforcement of verdict (e.g., extradition or imprisonment of officials)\", \"Diplomatic retaliation or bilateral relations impact between Italy and Egypt\", \"Follow-up legal actions or civil society campaigns for transparency\"], \"revaluation_checkpoint\": \"2028-09-28\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Verdict leads to full enforcement, setting precedent for state accountability in cross-border human rights cases.\", \"probability\": 0.3, \"score\": 8}, {\"name\": \"B\", \"description\": \"Verdict delivered but enforcement stalled due to diplomatic or political barriers, limiting symbolic impact.\", \"probability\": 0.5, \"score\": 3}, {\"name\": \"C\", \"description\": \"Verdict triggers backlash, undermining judicial independence or enabling further impunity for state actors.\", \"probability\": 0.2, \"score\": -4}], \"prospective_score\": 2.9, \"final_score\": 4.23, \"decision\": \"BURN\", \"amount_cbwd\": 300000, \"confidence\": 8, \"justification\": \"Judicial accountability for state violence aligns with SDG 16 and UDHR, outweighing secondary risks.\", \"event_scope\": \"national\", \"event_country\": \"Italy\"}",
+      "analyst_b_verdict": "{\"validation\": true, \"positive_aspects\": [{\"description\": \"Italian judiciary proceeding with a murder trial against foreign state officials for the abduction and torture of Giulio Regeni, an Italian citizen and Cambridge PhD student, demonstrating accountability for human rights violations\", \"affected_sdgs\": [16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}], \"negative_aspects\": [{\"description\": \"Egyptian security officials charged with abduction and torture leading to death, indicating systemic human rights abuses within Egypt's state apparatus\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 10\"], \"magnitude\": 9, \"frameworks\": [\"UDHR\"]}], \"ethical_synthesis\": \"The trial represents a rare instance of accountability for state-sponsored human rights abuses, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the underlying crimes reflect severe violations of fundamental rights, underscoring systemic failures in Egypt's governance and rule of law.\", \"snapshot_score\": 5.0, \"trajectory_score\": 0.5, \"revaluation_score\": -1.0, \"revaluation_triggers\": [\"Egyptian government obstructs trial proceedings or refuses to extradite officials\", \"Italian judiciary drops charges due to diplomatic pressure\", \"New evidence emerges challenging the prosecution's case\"], \"revaluation_checkpoint\": \"2028-09-28\", \"prospective_scenarios\": [{\"name\": \"A\", \"description\": \"Trial concludes with convictions, setting a precedent for accountability in transnational human rights cases, and prompting reforms in Egypt\", \"probability\": 0.25, \"score\": 8}, {\"name\": \"B\", \"description\": \"Trial results in partial accountability (e.g., symbolic convictions) but fails to address systemic abuses in Egypt\", \"probability\": 0.55, \"score\": 3}, {\"name\": \"C\", \"description\": \"Trial collapses due to diplomatic interference or lack of evidence, reinforcing impunity for state actors\", \"probability\": 0.2, \"score\": -7}], \"prospective_score\": 1.65, \"final_score\": 2.46, \"decision\": \"MINT\", \"amount_cbwd\": 500000, \"confidence\": 8, \"justification\": \"Trial advances accountability but systemic abuses in Egypt outweigh positive impact.\", \"event_scope\": \"international\", \"event_country\": null}",
+      "reconciler_verdict": "{\"decision\": \"MINT\", \"final_score\": 3.35, \"confidence\": 9, \"amount_cbwd\": 424000, \"justification\": \"The Italian court’s verdict holds perpetrators accountable, punishing state violence and upholding justice, aligning with SDG 16.\", \"disagreement\": true, \"reason\": \"Evaluated the institutional action (the trial/verdict) which punishes harm and protects rights, thus supporting BURN.\"}",
+      "sentinel_concern": "structural: analyst_ab_disagreement",
+      "suggested_decision": "MINT",
+      "suggested_amount_crbn": 424000,
+      "human_verdict": null,
+      "human_amount": null,
+      "human_reason": null,
+      "status": "pending",
+      "created_at": "2026-09-28T10:19:28.795879+00:00",
       "resolved_at": null,
       "human_review_embedding": null,
       "final_decision": null
