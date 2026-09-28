@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-28T05:05:54.172762+00:00",
-  "total_events": 7936,
+  "generated_at": "2026-09-28T07:05:50.829984+00:00",
+  "total_events": 7937,
   "total_burned": 7970114205,
-  "total_minted": 10405745079,
+  "total_minted": 10406145079,
   "pending_reviews": 3,
   "events": [
+    {
+      "id": 7937,
+      "event_title": "Maharashtra declares drought as El Niño deepens",
+      "event_url": "https://india.mongabay.com/short-article/2026/09/maharashtra-declares-drought-as-el-nino-deepens/",
+      "event_source": "Mongabay India",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -2.7,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Drought declaration reflects severe climate harm outweighing reactive relief measures. | The drought declaration and relief measures represent a necessary but reactive response to a severe climate-induced crisis. While the action provides critical short-term support, it underscores systemic vulnerabilities and the failure to prevent or mitigate the underlying climatic and agric",
+      "tx_hash": "59jT86RUJ3PYECRSyXRWdE5CfMzfaYkokSD5W3pi5kyUMob51J1vYKHYb26NuCLcypGCsVbQ4tBmQLfrvRHz8Hf2",
+      "created_at": "2026-09-28T07:05:45.363826+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"Maharashtra government declares drought in 265 talukas and implements relief measures, providing immediate aid to affected populations.\", \"affected_sdgs\": [1, 2, 6, 8, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Official recognition of drought triggers institutional support, including potential financial assistance, water supply interventions, and agricultural relief.\", \"affected_sdgs\": [1, 2, 6, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Drought declaration reflects severe climatic stress, exacerbating food insecurity, water scarcity, and economic hardship for millions, with long-term livelihood impacts.\", \"affected_sdgs\": [1, 2, 6, 8, 13, 15], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\", \"UDHR Article 23\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Relief measures may be insufficient or delayed, risking prolonged suffering and displacement, particularly for marginalized communities and smallholder farmers.\", \"affected_sdgs\": [1, 2, 10], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7936,
       "event_title": "Israel's Election Campaign with Hard Tactics – Possible Exclusion of Arab Parties?",
@@ -182592,8 +182615,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.238,
-        "events": 21
+        "burn_ratio": 0.227,
+        "events": 22
       },
       {
         "region": "Africa",
@@ -182612,8 +182635,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.074,
-        "events": 68
+        "burn_ratio": 0.075,
+        "events": 67
       }
     ],
     "top_regions_destructive": [
@@ -182629,8 +182652,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.926,
-        "events": 68
+        "mint_ratio": 0.925,
+        "events": 67
       },
       {
         "region": "North America",
@@ -182676,7 +182699,7 @@
       },
       {
         "date": "2026-09-28",
-        "net_minted": 676000,
+        "net_minted": 1076000,
         "net_burned": 0
       }
     ],
@@ -182726,6 +182749,7 @@
           7706
         ],
         "event_ids_negative": [
+          7937,
           7936,
           7935,
           7933,
@@ -182935,8 +182959,7 @@
           7701,
           7700,
           7699,
-          7698,
-          7697
+          7698
         ]
       },
       "UDHR": {
@@ -182965,6 +182988,7 @@
           7706
         ],
         "event_ids_negative": [
+          7937,
           7936,
           7935,
           7933,
@@ -183149,8 +183173,7 @@
           7701,
           7700,
           7699,
-          7698,
-          7697
+          7698
         ]
       },
       "ILO": {
@@ -183198,7 +183221,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 49,
+        "negative": 50,
         "event_ids_positive": [
           7907,
           7872,
@@ -183206,6 +183229,7 @@
           7706
         ],
         "event_ids_negative": [
+          7937,
           7936,
           7935,
           7930,
@@ -183259,7 +183283,7 @@
       },
       "UNDRIP": {
         "positive": 6,
-        "negative": 54,
+        "negative": 55,
         "event_ids_positive": [
           7907,
           7896,
@@ -183269,6 +183293,7 @@
           7778
         ],
         "event_ids_negative": [
+          7937,
           7936,
           7925,
           7922,
@@ -183362,7 +183387,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 79,
+        "negative": 78,
         "event_ids_positive": [
           7934,
           7929,
@@ -183457,14 +183482,13 @@
           7709,
           7708,
           7703,
-          7701,
-          7697
+          7701
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 69.1,
-      "mainstream_pct": 30.9,
+      "niche_pct": 70.4,
+      "mainstream_pct": 29.6,
       "total_sources_used": 81,
       "articles_processed": 240
     },
@@ -183753,6 +183777,22 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 8,
+        "burn_count": 3,
+        "mint_count": 5,
+        "event_ids": [
+          7937,
+          7903,
+          7854,
+          7821,
+          7797,
+          7778,
+          7738,
+          7723
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 8,
         "burn_count": 0,
@@ -183766,21 +183806,6 @@
           7799,
           7753,
           7735
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 7,
-        "burn_count": 3,
-        "mint_count": 4,
-        "event_ids": [
-          7903,
-          7854,
-          7821,
-          7797,
-          7778,
-          7738,
-          7723
         ]
       }
     ],
@@ -183830,9 +183855,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5832,
+      "total_mint": 5833,
       "direct_action": {
-        "count": 4910,
+        "count": 4911,
         "pct": 84.2
       },
       "editorial_alarm": {
@@ -183845,9 +183870,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 79,
-      "institutional": 161,
-      "citizen_ratio": 0.329,
+      "citizen": 80,
+      "institutional": 160,
+      "citizen_ratio": 0.333,
       "daily": [
         {
           "date": "2026-09-22",
@@ -183881,11 +183906,12 @@
         },
         {
           "date": "2026-09-28",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        7937,
         7935,
         7934,
         7932,
@@ -184126,8 +184152,7 @@
         7703,
         7700,
         7699,
-        7698,
-        7697
+        7698
       ]
     }
   }
