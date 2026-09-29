@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-29T11:08:34.916039+00:00",
-  "total_events": 7992,
+  "generated_at": "2026-09-29T12:07:23.386020+00:00",
+  "total_events": 7993,
   "total_burned": 7972538205,
-  "total_minted": 10469071339,
+  "total_minted": 10469747339,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 7993,
+      "event_title": "Malaysia gave refuge to Rohingya; now it wants them to go",
+      "event_url": "https://www.aljazeera.com/features/2026/9/29/malaysia-gave-refuge-to-rohingya-now-it-wants-them-to-go?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.1,
+      "confidence": 8,
+      "justification": "The forced repatriation plan severely violates refugee rights, resulting in a negative net impact. | The policy harms thousands of refugees by breaching fundamental human rights, outweighing any modest domestic benefit, leading to a net negative ethical judgment.",
+      "tx_hash": "PogWwThBnvSFPuJ7zbGcGnfYXCVawF1ipka9XXAD2UZ1Gx9RRroEjktUGsT5fAyBA5o8YKA3bjguLdNYtuzigDQ",
+      "created_at": "2026-09-29T12:07:17.424978+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Malaysia",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Potential reduction of social tension and resource strain in Malaysia\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Planned forced return of Rohingya refugees to Myanmar, violating the right to seek asylum and endangering vulnerable populations\", \"affected_sdgs\": [1, 3, 5, 10, 16], \"violated_rights\": [\"UDHR Article 14\", \"CRC Article 22\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 7992,
       "event_title": "Bhutan recognized for eliminating dog-transmitted rabies ahead of World Rabies Day",
@@ -183880,8 +183903,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.19,
-        "events": 21
+        "burn_ratio": 0.182,
+        "events": 22
       },
       {
         "region": "Latin America",
@@ -183894,14 +183917,14 @@
         "events": 7
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.096,
-        "events": 52
+        "region": "Oceania",
+        "burn_ratio": 0.083,
+        "events": 12
       },
       {
-        "region": "Oceania",
-        "burn_ratio": 0.077,
-        "events": 13
+        "region": "North America",
+        "burn_ratio": 0.078,
+        "events": 51
       }
     ],
     "top_regions_destructive": [
@@ -183916,14 +183939,14 @@
         "events": 75
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 0.923,
-        "events": 13
+        "region": "North America",
+        "mint_ratio": 0.922,
+        "events": 51
       },
       {
-        "region": "North America",
-        "mint_ratio": 0.904,
-        "events": 52
+        "region": "Oceania",
+        "mint_ratio": 0.917,
+        "events": 12
       },
       {
         "region": "Africa",
@@ -183964,7 +183987,7 @@
       },
       {
         "date": "2026-09-29",
-        "net_minted": 20042200,
+        "net_minted": 20718200,
         "net_burned": 1676000
       }
     ],
@@ -183981,7 +184004,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 28,
+        "positive": 27,
         "negative": 222,
         "event_ids_positive": [
           7992,
@@ -184010,10 +184033,10 @@
           7797,
           7778,
           7761,
-          7754,
-          7743
+          7754
         ],
         "event_ids_negative": [
+          7993,
           7991,
           7990,
           7989,
@@ -184234,8 +184257,7 @@
           7748,
           7747,
           7746,
-          7745,
-          7744
+          7745
         ]
       },
       "UDHR": {
@@ -184265,6 +184287,7 @@
           7761
         ],
         "event_ids_negative": [
+          7993,
           7991,
           7990,
           7989,
@@ -184463,8 +184486,7 @@
           7748,
           7747,
           7746,
-          7745,
-          7744
+          7745
         ]
       },
       "ILO": {
@@ -184512,7 +184534,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 61,
+        "negative": 62,
         "event_ids_positive": [
           7968,
           7907,
@@ -184520,6 +184542,7 @@
           7778
         ],
         "event_ids_negative": [
+          7993,
           7991,
           7988,
           7980,
@@ -184585,7 +184608,7 @@
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 64,
+        "negative": 63,
         "event_ids_positive": [
           7968,
           7907,
@@ -184658,20 +184681,18 @@
           7757,
           7751,
           7747,
-          7745,
-          7744
+          7745
         ]
       },
       "Animal": {
-        "positive": 6,
-        "negative": 22,
+        "positive": 5,
+        "negative": 21,
         "event_ids_positive": [
           7968,
           7858,
           7833,
           7826,
-          7761,
-          7743
+          7761
         ],
         "event_ids_negative": [
           7970,
@@ -184694,13 +184715,12 @@
           7795,
           7788,
           7757,
-          7753,
-          7744
+          7753
         ]
       },
       "PB": {
-        "positive": 14,
-        "negative": 79,
+        "positive": 13,
+        "negative": 78,
         "event_ids_positive": [
           7968,
           7934,
@@ -184714,8 +184734,7 @@
           7826,
           7778,
           7761,
-          7754,
-          7743
+          7754
         ],
         "event_ids_negative": [
           7982,
@@ -184795,21 +184814,20 @@
           7757,
           7753,
           7749,
-          7745,
-          7744
+          7745
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.6,
-      "mainstream_pct": 29.4,
-      "total_sources_used": 85,
-      "articles_processed": 251
+      "niche_pct": 70.2,
+      "mainstream_pct": 29.8,
+      "total_sources_used": 84,
+      "articles_processed": 249
     },
     "cache_hit_rate_7d": {
-      "hits": 1,
-      "total_events": 251,
-      "pct": 0.4
+      "hits": 0,
+      "total_events": 249,
+      "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -185038,9 +185056,9 @@
       },
       {
         "name": "Construction",
-        "count": 15,
+        "count": 14,
         "burn_count": 1,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           7989,
           7986,
@@ -185055,8 +185073,7 @@
           7855,
           7851,
           7766,
-          7746,
-          7744
+          7746
         ]
       },
       {
@@ -185132,14 +185149,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 28,
+      "total_burn": 27,
       "direct_action": {
-        "count": 21,
-        "pct": 75.0
+        "count": 20,
+        "pct": 74.1
       },
       "editorial_consciousness": {
         "count": 7,
-        "pct": 25.0
+        "pct": 25.9
       },
       "untyped": {
         "count": 0,
@@ -185162,24 +185179,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 223,
+      "total_mint": 222,
       "direct_action": {
         "count": 207,
-        "pct": 92.8
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 6.7
+        "pct": 6.8
       },
       "untyped": {
-        "count": 1,
-        "pct": 0.4
+        "count": 0,
+        "pct": 0.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5884,
+      "total_mint": 5885,
       "direct_action": {
-        "count": 4957,
+        "count": 4958,
         "pct": 84.2
       },
       "editorial_alarm": {
@@ -185192,9 +185209,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 85,
-      "institutional": 166,
-      "citizen_ratio": 0.339,
+      "citizen": 82,
+      "institutional": 167,
+      "citizen_ratio": 0.329,
       "daily": [
         {
           "date": "2026-09-23",
@@ -185229,7 +185246,7 @@
         {
           "date": "2026-09-29",
           "citizen": 8,
-          "institutional": 15
+          "institutional": 16
         }
       ],
       "event_ids_citizen": [
@@ -185314,12 +185331,10 @@
         7754,
         7753,
         7747,
-        7745,
-        7744,
-        7743,
-        7742
+        7745
       ],
       "event_ids_institutional": [
+        7993,
         7991,
         7990,
         7988,
