@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-29T18:05:04.596634+00:00",
-  "total_events": 8002,
+  "generated_at": "2026-09-29T19:06:59.504820+00:00",
+  "total_events": 8003,
   "total_burned": 7972538205,
-  "total_minted": 10473490939,
+  "total_minted": 10473890939,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8003,
+      "event_title": "US sanctions 10 over allegedly procuring weapons for Iran",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/us-sanctions-10-over-allegedly-procuring-weapons-iran",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -1.75,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Sanctions risk enabling prolonged civilian harm and regional instability despite targeting weapons procurement. | The sanctions target a concrete action (weapons procurement) that could reduce armed conflict, aligning with SDG 16 and UDHR principles of peace. However, the broader strategy of economic isolation risks collateral harm to civilians, violating economic and social ri",
+      "tx_hash": "63ubFxkKwfEZprc65aHYYYLkA8bophyxWDHdQQbZNNpMVdT54MhYSGP4o8C4VXjf3B6TiS3MUVeXjfmobA4vKHVt",
+      "created_at": "2026-09-29T19:06:53.467030+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US imposes sanctions targeting procurement of weapons for Iran's Ministry of Defense, aiming to disrupt arms supply chains that could escalate regional conflict.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sanctions may exacerbate economic hardship for civilians in Iran, potentially violating rights to health, food, and livelihood under prolonged economic isolation.\", \"affected_sdgs\": [1, 2, 3, 8], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Sanctions risk entrenching geopolitical tensions, undermining diplomatic pathways to peace and stability in the region.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8002,
       "event_title": "Pay, Rosters and Future Jobs at Heart of WA's Latest Coal Strike",
@@ -184056,8 +184079,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 49,
-        "total_amount": 42381300
+        "count": 50,
+        "total_amount": 42781300
       },
       {
         "country": "France",
@@ -184076,8 +184099,8 @@
       },
       {
         "country": "Brazil",
-        "count": 9,
-        "total_amount": 3852800
+        "count": 8,
+        "total_amount": 3176800
       }
     ],
     "top_countries_burn": [
@@ -184114,14 +184137,14 @@
         "events": 22
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.125,
-        "events": 24
+        "region": "Africa",
+        "burn_ratio": 0.143,
+        "events": 7
       },
       {
-        "region": "Africa",
-        "burn_ratio": 0.125,
-        "events": 8
+        "region": "Latin America",
+        "burn_ratio": 0.136,
+        "events": 22
       },
       {
         "region": "Oceania",
@@ -184130,8 +184153,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.074,
-        "events": 54
+        "burn_ratio": 0.073,
+        "events": 55
       }
     ],
     "top_regions_destructive": [
@@ -184147,8 +184170,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.926,
-        "events": 54
+        "mint_ratio": 0.927,
+        "events": 55
       },
       {
         "region": "Oceania",
@@ -184157,8 +184180,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.875,
-        "events": 24
+        "mint_ratio": 0.864,
+        "events": 22
       }
     ],
     "supply_trend_7d": [
@@ -184194,7 +184217,7 @@
       },
       {
         "date": "2026-09-29",
-        "net_minted": 24461800,
+        "net_minted": 24861800,
         "net_burned": 1676000
       }
     ],
@@ -184212,7 +184235,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 221,
+        "negative": 218,
         "event_ids_positive": [
           7992,
           7985,
@@ -184242,6 +184265,7 @@
           7761
         ],
         "event_ids_negative": [
+          8003,
           8002,
           8001,
           8000,
@@ -184458,16 +184482,12 @@
           7764,
           7763,
           7762,
-          7760,
-          7759,
-          7758,
-          7757,
-          7756
+          7760
         ]
       },
       "UDHR": {
         "positive": 21,
-        "negative": 198,
+        "negative": 195,
         "event_ids_positive": [
           7992,
           7985,
@@ -184492,6 +184512,7 @@
           7761
         ],
         "event_ids_negative": [
+          8003,
           8002,
           8001,
           8000,
@@ -184685,11 +184706,7 @@
           7765,
           7764,
           7763,
-          7762,
-          7759,
-          7758,
-          7757,
-          7756
+          7762
         ]
       },
       "ILO": {
@@ -184812,7 +184829,7 @@
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 61,
+        "negative": 59,
         "event_ids_positive": [
           7968,
           7907,
@@ -184881,14 +184898,12 @@
           7783,
           7775,
           7769,
-          7768,
-          7758,
-          7757
+          7768
         ]
       },
       "Animal": {
         "positive": 5,
-        "negative": 21,
+        "negative": 20,
         "event_ids_positive": [
           7968,
           7858,
@@ -184916,13 +184931,12 @@
           7806,
           7802,
           7795,
-          7788,
-          7757
+          7788
         ]
       },
       "PB": {
         "positive": 12,
-        "negative": 78,
+        "negative": 76,
         "event_ids_positive": [
           7968,
           7934,
@@ -185013,30 +185027,28 @@
           7764,
           7763,
           7762,
-          7760,
-          7758,
-          7757
+          7760
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.2,
-      "mainstream_pct": 29.8,
+      "niche_pct": 71.4,
+      "mainstream_pct": 28.6,
       "total_sources_used": 84,
-      "articles_processed": 247
+      "articles_processed": 244
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 247,
+      "total_events": 244,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 14,
+        "count": 13,
         "burn_count": 2,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           7988,
           7968,
@@ -185050,8 +185062,7 @@
           7842,
           7825,
           7778,
-          7768,
-          7758
+          7768
         ]
       },
       {
@@ -185139,9 +185150,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 43,
+        "count": 41,
         "burn_count": 6,
-        "mint_count": 37,
+        "mint_count": 35,
         "event_ids": [
           8002,
           7956,
@@ -185183,9 +185194,7 @@
           7764,
           7763,
           7762,
-          7760,
-          7758,
-          7757
+          7760
         ]
       },
       {
@@ -185230,10 +185239,11 @@
       },
       {
         "name": "Defense",
-        "count": 18,
+        "count": 19,
         "burn_count": 0,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          8003,
           8000,
           7980,
           7977,
@@ -185277,9 +185287,9 @@
       },
       {
         "name": "Tech",
-        "count": 13,
+        "count": 12,
         "burn_count": 2,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           7982,
           7968,
@@ -185292,8 +185302,7 @@
           7848,
           7822,
           7818,
-          7814,
-          7758
+          7814
         ]
       },
       {
@@ -185378,14 +185387,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 221,
+      "total_mint": 218,
       "direct_action": {
-        "count": 208,
-        "pct": 94.1
+        "count": 205,
+        "pct": 94.0
       },
       "editorial_alarm": {
         "count": 13,
-        "pct": 5.9
+        "pct": 6.0
       },
       "untyped": {
         "count": 0,
@@ -185393,9 +185402,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5894,
+      "total_mint": 5895,
       "direct_action": {
-        "count": 4967,
+        "count": 4968,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -185408,9 +185417,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 77,
+      "citizen": 74,
       "institutional": 170,
-      "citizen_ratio": 0.312,
+      "citizen_ratio": 0.303,
       "daily": [
         {
           "date": "2026-09-23",
@@ -185445,7 +185454,7 @@
         {
           "date": "2026-09-29",
           "citizen": 8,
-          "institutional": 25
+          "institutional": 26
         }
       ],
       "event_ids_citizen": [
@@ -185522,12 +185531,10 @@
         7775,
         7773,
         7769,
-        7765,
-        7759,
-        7758,
-        7757
+        7765
       ],
       "event_ids_institutional": [
+        8003,
         8002,
         8001,
         8000,
@@ -185696,8 +185703,7 @@
         7763,
         7762,
         7761,
-        7760,
-        7756
+        7760
       ]
     }
   }
