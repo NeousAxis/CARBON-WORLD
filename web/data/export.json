@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-29T19:06:59.504820+00:00",
-  "total_events": 8003,
+  "generated_at": "2026-09-29T20:06:24.258591+00:00",
+  "total_events": 8004,
   "total_burned": 7972538205,
-  "total_minted": 10473890939,
+  "total_minted": 10480650939,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8004,
+      "event_title": "Belgium to transfer three F-16s to Ukraine this year, Zelenskiy says",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-09-29-belgium-to-transfer-three-f-16s-to-ukraine-this-year-zelenskiy-says/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -3.16,
+      "confidence": 8,
+      "justification": "Military aid escalates conflict, harming civilians and undermining SDGs despite sovereignty support. | While the transfer of F-16s to Ukraine supports its sovereignty and aligns with international legal frameworks, the escalation of military conflict poses severe risks to civilian populations, environmental stability, and long-term development goals. The negative impacts on human rights and planetary boundaries outweigh the geopolitical justifications for this action.",
+      "tx_hash": "2tJ6LoCJdgG98WoFz6gMkQPMcHHrGsSTbN2GyaamcG2TQjFWGC5JKaT5ubEAFps6BzWXmfSn3LeEbj3a29hsYNtE",
+      "created_at": "2026-09-29T20:06:18.157436+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Belgium",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Military aid to Ukraine supports its sovereignty and territorial integrity, aligning with international law and collective defense principles.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Transfer of advanced weaponry escalates military conflict, increasing civilian harm, displacement, and environmental damage in Ukraine.\", \"affected_sdgs\": [1, 3, 11, 13, 15, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 6\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"PB\"]}, {\"description\": \"Military aid diverts resources from humanitarian and development needs, undermining SDGs related to poverty, health, and education.\", \"affected_sdgs\": [1, 2, 3, 4, 6, 7], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8003,
       "event_title": "US sanctions 10 over allegedly procuring weapons for Iran",
@@ -184084,8 +184107,8 @@
       },
       {
         "country": "France",
-        "count": 22,
-        "total_amount": 15219200
+        "count": 21,
+        "total_amount": 14719200
       },
       {
         "country": "Switzerland",
@@ -184115,11 +184138,6 @@
         "total_amount": 2148000
       },
       {
-        "country": "Indonesia",
-        "count": 2,
-        "total_amount": 985000
-      },
-      {
         "country": "Spain",
         "count": 2,
         "total_amount": 4576000
@@ -184128,13 +184146,18 @@
         "country": "Bhutan",
         "count": 1,
         "total_amount": 676000
+      },
+      {
+        "country": "Italy",
+        "count": 1,
+        "total_amount": 500000
       }
     ],
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.182,
-        "events": 22
+        "burn_ratio": 0.143,
+        "events": 21
       },
       {
         "region": "Africa",
@@ -184161,7 +184184,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 13
+        "events": 12
       },
       {
         "region": "Europe",
@@ -184217,7 +184240,7 @@
       },
       {
         "date": "2026-09-29",
-        "net_minted": 24861800,
+        "net_minted": 31621800,
         "net_burned": 1676000
       }
     ],
@@ -184234,8 +184257,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
-        "negative": 218,
+        "positive": 25,
+        "negative": 217,
         "event_ids_positive": [
           7992,
           7985,
@@ -184261,10 +184284,10 @@
           7826,
           7801,
           7797,
-          7778,
-          7761
+          7778
         ],
         "event_ids_negative": [
+          8004,
           8003,
           8002,
           8001,
@@ -184480,13 +184503,11 @@
           7766,
           7765,
           7764,
-          7763,
-          7762,
-          7760
+          7763
         ]
       },
       "UDHR": {
-        "positive": 21,
+        "positive": 20,
         "negative": 195,
         "event_ids_positive": [
           7992,
@@ -184508,10 +184529,10 @@
           7833,
           7801,
           7797,
-          7778,
-          7761
+          7778
         ],
         "event_ids_negative": [
+          8004,
           8003,
           8002,
           8001,
@@ -184705,8 +184726,7 @@
           7767,
           7765,
           7764,
-          7763,
-          7762
+          7763
         ]
       },
       "ILO": {
@@ -184753,7 +184773,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           7968,
           7907,
@@ -184761,6 +184781,7 @@
           7778
         ],
         "event_ids_negative": [
+          8004,
           8000,
           7998,
           7997,
@@ -184902,14 +184923,13 @@
         ]
       },
       "Animal": {
-        "positive": 5,
+        "positive": 4,
         "negative": 20,
         "event_ids_positive": [
           7968,
           7858,
           7833,
-          7826,
-          7761
+          7826
         ],
         "event_ids_negative": [
           7999,
@@ -184935,8 +184955,8 @@
         ]
       },
       "PB": {
-        "positive": 12,
-        "negative": 76,
+        "positive": 11,
+        "negative": 75,
         "event_ids_positive": [
           7968,
           7934,
@@ -184948,10 +184968,10 @@
           7858,
           7833,
           7826,
-          7778,
-          7761
+          7778
         ],
         "event_ids_negative": [
+          8004,
           8000,
           7999,
           7996,
@@ -185025,21 +185045,19 @@
           7767,
           7766,
           7764,
-          7763,
-          7762,
-          7760
+          7763
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.4,
-      "mainstream_pct": 28.6,
-      "total_sources_used": 84,
-      "articles_processed": 244
+      "niche_pct": 69.9,
+      "mainstream_pct": 30.1,
+      "total_sources_used": 83,
+      "articles_processed": 242
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 244,
+      "total_events": 242,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -185150,9 +185168,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 41,
+        "count": 39,
         "burn_count": 6,
-        "mint_count": 35,
+        "mint_count": 33,
         "event_ids": [
           8002,
           7956,
@@ -185192,9 +185210,7 @@
           7767,
           7766,
           7764,
-          7763,
-          7762,
-          7760
+          7763
         ]
       },
       {
@@ -185239,10 +185255,11 @@
       },
       {
         "name": "Defense",
-        "count": 19,
+        "count": 20,
         "burn_count": 0,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          8004,
           8003,
           8000,
           7980,
@@ -185323,23 +185340,6 @@
         ]
       },
       {
-        "name": "Mining",
-        "count": 9,
-        "burn_count": 3,
-        "mint_count": 6,
-        "event_ids": [
-          7918,
-          7873,
-          7862,
-          7849,
-          7826,
-          7825,
-          7814,
-          7809,
-          7761
-        ]
-      },
-      {
         "name": "Water",
         "count": 8,
         "burn_count": 2,
@@ -185354,17 +185354,33 @@
           7797,
           7778
         ]
+      },
+      {
+        "name": "Mining",
+        "count": 8,
+        "burn_count": 2,
+        "mint_count": 6,
+        "event_ids": [
+          7918,
+          7873,
+          7862,
+          7849,
+          7826,
+          7825,
+          7814,
+          7809
+        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 25,
       "direct_action": {
-        "count": 20,
-        "pct": 76.9
+        "count": 19,
+        "pct": 76.0
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 23.1
+        "pct": 24.0
       },
       "untyped": {
         "count": 0,
@@ -185387,9 +185403,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 218,
+      "total_mint": 217,
       "direct_action": {
-        "count": 205,
+        "count": 204,
         "pct": 94.0
       },
       "editorial_alarm": {
@@ -185402,9 +185418,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5895,
+      "total_mint": 5896,
       "direct_action": {
-        "count": 4968,
+        "count": 4969,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -185418,8 +185434,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 74,
-      "institutional": 170,
-      "citizen_ratio": 0.303,
+      "institutional": 168,
+      "citizen_ratio": 0.306,
       "daily": [
         {
           "date": "2026-09-23",
@@ -185454,7 +185470,7 @@
         {
           "date": "2026-09-29",
           "citizen": 8,
-          "institutional": 26
+          "institutional": 27
         }
       ],
       "event_ids_citizen": [
@@ -185534,6 +185550,7 @@
         7765
       ],
       "event_ids_institutional": [
+        8004,
         8003,
         8002,
         8001,
@@ -185700,10 +185717,7 @@
         7767,
         7766,
         7764,
-        7763,
-        7762,
-        7761,
-        7760
+        7763
       ]
     }
   }
