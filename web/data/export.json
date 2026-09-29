@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-29T14:06:02.702193+00:00",
-  "total_events": 7997,
+  "generated_at": "2026-09-29T15:05:40.859633+00:00",
+  "total_events": 7998,
   "total_burned": 7972538205,
-  "total_minted": 10471012939,
+  "total_minted": 10471760939,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 7998,
+      "event_title": "Inside the Business of Trump’s Third-Country Deportations",
+      "event_url": "https://theintercept.com/2026/09/29/ice-third-country-deportation-flights/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -4.0,
+      "confidence": 8,
+      "justification": "The deportation action causes major human‑rights harms with no offsetting benefits. | The deportation policy inflicts severe human‑rights harms, undermining multiple SDGs and international conventions. No redeeming benefits offset these violations, leading to a clearly negative ethical balance.",
+      "tx_hash": "3tszw4rsKZS8rX8uieeWHicND2jpJxNdqgXUiyfECgFW6sMoz4X5RNvdvxcwkVwmwo6AWnDHfWeq6aA4m7ChnMBE",
+      "created_at": "2026-09-29T15:05:34.992252+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"U.S. government deportations of migrants to third countries where they have no ties, violating rights to seek asylum and family unity.\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 14\", \"CRC Article 22\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 7997,
       "event_title": "Prison That Didn’t Report Sex Abuse Allegation Against Staffer to Reopen as ICE Camp",
@@ -183941,8 +183964,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 47,
-        "total_amount": 40957300
+        "count": 48,
+        "total_amount": 41705300
       },
       {
         "country": "France",
@@ -184015,8 +184038,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.077,
-        "events": 52
+        "burn_ratio": 0.075,
+        "events": 53
       }
     ],
     "top_regions_destructive": [
@@ -184032,8 +184055,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.923,
-        "events": 52
+        "mint_ratio": 0.925,
+        "events": 53
       },
       {
         "region": "Oceania",
@@ -184079,7 +184102,7 @@
       },
       {
         "date": "2026-09-29",
-        "net_minted": 21983800,
+        "net_minted": 22731800,
         "net_burned": 1676000
       }
     ],
@@ -184097,7 +184120,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 225,
+        "negative": 226,
         "event_ids_positive": [
           7992,
           7985,
@@ -184128,6 +184151,7 @@
           7754
         ],
         "event_ids_negative": [
+          7998,
           7997,
           7996,
           7995,
@@ -184357,7 +184381,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 202,
+        "negative": 203,
         "event_ids_positive": [
           7992,
           7985,
@@ -184382,6 +184406,7 @@
           7761
         ],
         "event_ids_negative": [
+          7998,
           7997,
           7995,
           7994,
@@ -184633,7 +184658,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           7968,
           7907,
@@ -184641,6 +184666,7 @@
           7778
         ],
         "event_ids_negative": [
+          7998,
           7997,
           7994,
           7993,
@@ -184920,14 +184946,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.2,
-      "mainstream_pct": 29.8,
+      "niche_pct": 69.0,
+      "mainstream_pct": 31.0,
       "total_sources_used": 84,
-      "articles_processed": 252
+      "articles_processed": 253
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 252,
+      "total_events": 253,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -185279,14 +185305,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 225,
+      "total_mint": 226,
       "direct_action": {
-        "count": 210,
-        "pct": 93.3
+        "count": 211,
+        "pct": 93.4
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 6.7
+        "pct": 6.6
       },
       "untyped": {
         "count": 0,
@@ -185294,9 +185320,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5889,
+      "total_mint": 5890,
       "direct_action": {
-        "count": 4962,
+        "count": 4963,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -185310,8 +185336,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 81,
-      "institutional": 171,
-      "citizen_ratio": 0.321,
+      "institutional": 172,
+      "citizen_ratio": 0.32,
       "daily": [
         {
           "date": "2026-09-23",
@@ -185346,7 +185372,7 @@
         {
           "date": "2026-09-29",
           "citizen": 8,
-          "institutional": 20
+          "institutional": 21
         }
       ],
       "event_ids_citizen": [
@@ -185433,6 +185459,7 @@
         7747
       ],
       "event_ids_institutional": [
+        7998,
         7997,
         7996,
         7995,
