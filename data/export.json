@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-30T04:08:30.923012+00:00",
-  "total_events": 8018,
+  "generated_at": "2026-09-30T05:06:08.019461+00:00",
+  "total_events": 8019,
   "total_burned": 7974538205,
-  "total_minted": 10485763739,
+  "total_minted": 10485938739,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8019,
+      "event_title": "Iraq: US-led anti-jihadist coalition completes its withdrawal",
+      "event_url": "https://www.france24.com/fr/vid%C3%A9o/20260930-irak-la-coalition-antijihadiste-men%C3%A9e-par-les-%C3%A9tats-unis-ach%C3%A8ve-son-retrait",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 175000,
+      "final_score": -0.25,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Withdrawal reduces foreign control but likely creates security vacuum, enabling harm outweighing sovereignty gains. | While the pullout enhances Iraq's self‑determination, the immediate risk of heightened violence and loss of life outweighs the sovereignty benefit, resulting in a net negative ethical impact.",
+      "tx_hash": "5JP6B2oAgcLhe7oRc2zrsLnYVY4VGPD5hT3ZjUGGeTBP6vEfNrwXvM3yYs3syk1KCmiMi8hYgdpfknm4WhegUKrb",
+      "created_at": "2026-09-30T05:06:02.211265+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iraq",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Coalition withdrawal restores Iraqi sovereignty and reduces foreign military presence\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Withdrawal may create a security vacuum, allowing extremist groups to rearm and increasing civilian casualties\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8018,
       "event_title": "Slow is beautiful: China launches war against AI drama, goes beyond algorithms",
@@ -184424,8 +184447,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 48,
-        "total_amount": 41505300
+        "count": 47,
+        "total_amount": 40829300
       },
       {
         "country": "France",
@@ -184493,8 +184516,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.093,
-        "events": 54
+        "burn_ratio": 0.094,
+        "events": 53
       },
       {
         "region": "Oceania",
@@ -184506,7 +184529,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 13
+        "events": 14
       },
       {
         "region": "Europe",
@@ -184520,8 +184543,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.907,
-        "events": 54
+        "mint_ratio": 0.906,
+        "events": 53
       },
       {
         "region": "Africa",
@@ -184562,7 +184585,7 @@
       },
       {
         "date": "2026-09-30",
-        "net_minted": 2196800,
+        "net_minted": 2371800,
         "net_burned": 700000
       }
     ],
@@ -184612,6 +184635,7 @@
           7778
         ],
         "event_ids_negative": [
+          8019,
           8018,
           8017,
           8016,
@@ -184824,8 +184848,7 @@
           7782,
           7781,
           7780,
-          7779,
-          7777
+          7779
         ]
       },
       "UDHR": {
@@ -184857,6 +184880,7 @@
           7778
         ],
         "event_ids_negative": [
+          8019,
           8018,
           8017,
           8016,
@@ -185048,8 +185072,7 @@
           7782,
           7781,
           7780,
-          7779,
-          7777
+          7779
         ]
       },
       "ILO": {
@@ -185500,9 +185523,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 35,
+        "count": 34,
         "burn_count": 6,
-        "mint_count": 29,
+        "mint_count": 28,
         "event_ids": [
           8014,
           8002,
@@ -185537,8 +185560,7 @@
           7789,
           7786,
           7782,
-          7779,
-          7777
+          7779
         ]
       },
       {
@@ -185745,9 +185767,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5907,
+      "total_mint": 5908,
       "direct_action": {
-        "count": 4979,
+        "count": 4980,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -185760,9 +185782,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 76,
-      "institutional": 166,
-      "citizen_ratio": 0.314,
+      "citizen": 77,
+      "institutional": 165,
+      "citizen_ratio": 0.318,
       "daily": [
         {
           "date": "2026-09-24",
@@ -185796,11 +185818,12 @@
         },
         {
           "date": "2026-09-30",
-          "citizen": 4,
+          "citizen": 5,
           "institutional": 4
         }
       ],
       "event_ids_citizen": [
+        8019,
         8016,
         8014,
         8012,
@@ -186043,8 +186066,7 @@
         7782,
         7781,
         7779,
-        7778,
-        7777
+        7778
       ]
     }
   }
