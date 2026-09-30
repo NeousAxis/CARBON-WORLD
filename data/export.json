@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-09-29T23:07:39.637200+00:00",
-  "total_events": 8010,
+  "generated_at": "2026-09-30T00:06:23.423129+00:00",
+  "total_events": 8011,
   "total_burned": 7973838205,
-  "total_minted": 10483566939,
+  "total_minted": 10483866939,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8011,
+      "event_title": "How the war in Sudan is teaching society to govern without the state",
+      "event_url": "https://wagingnonviolence.org/2026/09/sudan-mutual-aid-war-state-collapse/",
+      "event_source": "Waging Nonviolence",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": 1.8,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The war, an institutional action, deepens harm and erodes rights; community aid is a response, not the cause, so the action merits MINT. | The emergence of mutual aid networks in Sudan represents a powerful act of collective resilience and survival, directly addressing urgent human needs and demonstrating the potential for community-led governance. However, this action is a ",
+      "tx_hash": "uKDYBcL137e1v1xw2hxzbcJ8yDbLiiEMJVLFJwxzrdbPjwMdVoRKnJCstnYU2Wc3Ewenodo3F1f748NBFWRoLmD",
+      "created_at": "2026-09-30T00:06:18.143162+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sudan",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Mutual aid networks in Sudan have organized to provide critical health care, food, and emergency services in the absence of state infrastructure, directly addressing survival needs of affected populations.\", \"affected_sdgs\": [1, 2, 3, 11, 16, 17], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Citizen-led governance models demonstrate resilience and community self-determination, fostering local agency and reducing dependency on failed state structures.\", \"affected_sdgs\": [10, 11, 16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Publication of this movement by Waging Nonviolence raises global awareness of alternative governance models, potentially inspiring similar efforts elsewhere.\", \"affected_sdgs\": [4, 16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Mutual aid networks operate in a context of state collapse and war, which inherently violates rights to security, stability, and access to state services (UDHR Articles 3, 22, 25).\", \"affected_sdgs\": [1, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of formal state backing may limit scalability, sustainability, and legal protections for these networks, risking burnout or co-optation by armed groups.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The article’s focus on mutual aid as a response to state failure may normalize the absence of state accountability, potentially undermining long-term efforts to rebuild inclusive governance.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 8010,
       "event_title": "UN extends mandate of Gang Suppression Force in Haiti for six months",
@@ -184304,8 +184327,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.143,
-        "events": 7
+        "burn_ratio": 0.125,
+        "events": 8
       },
       {
         "region": "Oceania",
@@ -184340,17 +184363,12 @@
         "events": 13
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.857,
-        "events": 21
+        "region": "Africa",
+        "mint_ratio": 0.875,
+        "events": 8
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-09-23",
-        "net_minted": 35804900,
-        "net_burned": 10500000
-      },
       {
         "date": "2026-09-24",
         "net_minted": 34592100,
@@ -184380,6 +184398,11 @@
         "date": "2026-09-29",
         "net_minted": 34537800,
         "net_burned": 2976000
+      },
+      {
+        "date": "2026-09-30",
+        "net_minted": 300000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -184396,7 +184419,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 212,
+        "negative": 213,
         "event_ids_positive": [
           8009,
           8006,
@@ -184427,6 +184450,7 @@
           7778
         ],
         "event_ids_negative": [
+          8011,
           8010,
           8008,
           8007,
@@ -184643,7 +184667,7 @@
       },
       "UDHR": {
         "positive": 22,
-        "negative": 191,
+        "negative": 192,
         "event_ids_positive": [
           8009,
           8006,
@@ -184669,6 +184693,7 @@
           7778
         ],
         "event_ids_negative": [
+          8011,
           8010,
           8008,
           8007,
@@ -184906,7 +184931,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           7968,
           7907,
@@ -184914,6 +184939,7 @@
           7778
         ],
         "event_ids_negative": [
+          8011,
           8010,
           8004,
           8000,
@@ -184982,7 +185008,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           8006,
           7968,
@@ -184994,6 +185020,7 @@
           7778
         ],
         "event_ids_negative": [
+          8011,
           8010,
           7996,
           7991,
@@ -185181,14 +185208,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 69.9,
-      "mainstream_pct": 30.1,
-      "total_sources_used": 83,
-      "articles_processed": 239
+      "niche_pct": 70.2,
+      "mainstream_pct": 29.8,
+      "total_sources_used": 84,
+      "articles_processed": 240
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 239,
+      "total_events": 240,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -185527,9 +185554,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 213,
       "direct_action": {
-        "count": 199,
+        "count": 200,
         "pct": 93.9
       },
       "editorial_alarm": {
@@ -185542,9 +185569,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5900,
+      "total_mint": 5901,
       "direct_action": {
-        "count": 4973,
+        "count": 4974,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -185557,15 +185584,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 74,
+      "citizen": 75,
       "institutional": 165,
-      "citizen_ratio": 0.31,
+      "citizen_ratio": 0.312,
       "daily": [
-        {
-          "date": "2026-09-23",
-          "citizen": 16,
-          "institutional": 28
-        },
         {
           "date": "2026-09-24",
           "citizen": 11,
@@ -185595,9 +185617,15 @@
           "date": "2026-09-29",
           "citizen": 10,
           "institutional": 31
+        },
+        {
+          "date": "2026-09-30",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        8011,
         8008,
         8006,
         7992,
