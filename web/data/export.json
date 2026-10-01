@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-01T03:06:44.717159+00:00",
-  "total_events": 8042,
+  "generated_at": "2026-10-01T04:06:33.396928+00:00",
+  "total_events": 8043,
   "total_burned": 7975013205,
-  "total_minted": 10512581339,
+  "total_minted": 10513257339,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8043,
+      "event_title": "El Salvador sets 2027 presidential election as Nayib Bukele seeks third term",
+      "event_url": "https://www.france24.com/en/americas/20261001-el-salvador-sets-2027-presidential-election-as-nayib-bukele-seeks-third-term",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -2.84,
+      "confidence": 8,
+      "justification": "Removal of term limits and rights abuses outweigh security gains, posing systemic risks to democracy and human rights. | While the reduction in gang violence aligns with SDG 16 (Peace and Justice), the removal of term limits and documented rights abuses during Bukele's tenure constitute significant violations of democratic principles and human rights. The negative aspects outweigh the positive due to the systemic risks posed to institutional integrity and long-term governance.",
+      "tx_hash": "2hfs4o6oXidCZ6ofrfFcRwGFjXyYksPU4tv9oFD6YfR4iUBazMEqPjsTo54NdedJrbPD7uQUiRAi26Z8u16vjXg2",
+      "created_at": "2026-10-01T04:06:28.098434+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "El Salvador",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Constitutional change enabling electoral process and potential continuity of policies that reduced gang violence, contributing to public safety and stability.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Removal of presidential term limits undermines democratic norms, risking consolidation of power and potential erosion of checks and balances (UDHR Article 21, SDG 16).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Precedent of rights abuses during Bukele's crackdown on gangs, including arbitrary detentions and due process violations (UDHR Articles 9, 10, 11).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8042,
       "event_title": "Trump administration finalizes Medicare drug pricing rule with limited scope",
@@ -185030,8 +185053,8 @@
     "top_regions_sustainable": [
       {
         "region": "Latin America",
-        "burn_ratio": 0.174,
-        "events": 23
+        "burn_ratio": 0.167,
+        "events": 24
       },
       {
         "region": "Asia",
@@ -185114,7 +185137,7 @@
       },
       {
         "date": "2026-10-01",
-        "net_minted": 6606600,
+        "net_minted": 7282600,
         "net_burned": 475000
       }
     ],
@@ -185132,7 +185155,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 193,
+        "negative": 194,
         "event_ids_positive": [
           8038,
           8012,
@@ -185162,6 +185185,7 @@
           7826
         ],
         "event_ids_negative": [
+          8043,
           8042,
           8041,
           8040,
@@ -185359,7 +185383,7 @@
       },
       "UDHR": {
         "positive": 21,
-        "negative": 174,
+        "negative": 175,
         "event_ids_positive": [
           8038,
           8012,
@@ -185384,6 +185408,7 @@
           7833
         ],
         "event_ids_negative": [
+          8043,
           8042,
           8041,
           8040,
@@ -185857,11 +185882,11 @@
       "niche_pct": 70.0,
       "mainstream_pct": 30.0,
       "total_sources_used": 80,
-      "articles_processed": 219
+      "articles_processed": 220
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 219,
+      "total_events": 220,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -186187,9 +186212,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 193,
+      "total_mint": 194,
       "direct_action": {
-        "count": 181,
+        "count": 182,
         "pct": 93.8
       },
       "editorial_alarm": {
@@ -186202,9 +186227,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5930,
+      "total_mint": 5931,
       "direct_action": {
-        "count": 5001,
+        "count": 5002,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -186218,8 +186243,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 69,
-      "institutional": 150,
-      "citizen_ratio": 0.315,
+      "institutional": 151,
+      "citizen_ratio": 0.314,
       "daily": [
         {
           "date": "2026-09-25",
@@ -186254,7 +186279,7 @@
         {
           "date": "2026-10-01",
           "citizen": 2,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -186329,6 +186354,7 @@
         7824
       ],
       "event_ids_institutional": [
+        8043,
         8042,
         8041,
         8039,
