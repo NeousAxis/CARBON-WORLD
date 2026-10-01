@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-01T05:04:53.387515+00:00",
-  "total_events": 8043,
+  "generated_at": "2026-10-01T06:06:16.212335+00:00",
+  "total_events": 8044,
   "total_burned": 7975013205,
-  "total_minted": 10513257339,
+  "total_minted": 10513407339,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8044,
+      "event_title": "Netanyahu says Israel will investigate foiled FlyDubai flight hijacking attempt",
+      "event_url": "https://www.al-monitor.com/originals/2026/09/netanyahu-says-israel-will-get-root-co-pilot-foiled-bid-crash-flydubai-flight",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.85,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Investigation aims to prevent future attacks and uphold safety, outweighing politicized rhetoric. | The commitment to investigate a security threat aligns with SDG 16 (Peace and Justice) but is undermined by premature accusations and politicized rhetoric. The net ethical impact is negative due to risks of escalation and procedural violations, outweighing the potential securi",
+      "tx_hash": "xFzZjQwTN5T5QqkatEXd3cLk2TjxJoZKungExTT4QqcFMiyHsdtYPLsSgongFhT8A3QDhQrTrUYjdicDaQsJrHW",
+      "created_at": "2026-10-01T06:06:10.919815+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israeli government commits to investigating a foiled hijacking attempt, potentially enhancing aviation security and preventing future threats.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Premature public accusations (e.g., suggesting Iran's involvement) without evidence risk escalating geopolitical tensions and undermining due process.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 11\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for biased or politicized investigation, given the public framing of the incident as an 'attack' before formal inquiry.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8043,
       "event_title": "El Salvador sets 2027 presidential election as Nayib Bukele seeks third term",
@@ -185081,7 +185104,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 12
+        "events": 13
       },
       {
         "region": "Africa",
@@ -185137,7 +185160,7 @@
       },
       {
         "date": "2026-10-01",
-        "net_minted": 7282600,
+        "net_minted": 7432600,
         "net_burned": 475000
       }
     ],
@@ -185185,6 +185208,7 @@
           7826
         ],
         "event_ids_negative": [
+          8044,
           8043,
           8042,
           8041,
@@ -185376,8 +185400,7 @@
           7830,
           7829,
           7828,
-          7827,
-          7825
+          7827
         ]
       },
       "UDHR": {
@@ -185407,6 +185430,7 @@
           7833
         ],
         "event_ids_negative": [
+          8044,
           8043,
           8042,
           8041,
@@ -185580,8 +185604,7 @@
           7831,
           7829,
           7828,
-          7827,
-          7825
+          7827
         ]
       },
       "ILO": {
@@ -185798,7 +185821,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 61,
+        "negative": 60,
         "event_ids_positive": [
           8012,
           7968,
@@ -185872,8 +185895,7 @@
           7837,
           7834,
           7832,
-          7830,
-          7825
+          7830
         ]
       }
     },
@@ -185892,9 +185914,9 @@
     "top_institutions_7d": [
       {
         "name": "UN",
-        "count": 12,
+        "count": 11,
         "burn_count": 1,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           8010,
           7988,
@@ -185906,8 +185928,7 @@
           7882,
           7857,
           7854,
-          7842,
-          7825
+          7842
         ]
       },
       {
@@ -185942,14 +185963,13 @@
       },
       {
         "name": "ICC",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           7967,
           7857,
-          7839,
-          7825
+          7839
         ]
       },
       {
@@ -186136,10 +186156,25 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          8044,
+          8015,
+          7973,
+          7959,
+          7950,
+          7938,
+          7910
+        ]
+      },
+      {
         "name": "Mining",
-        "count": 8,
+        "count": 7,
         "burn_count": 2,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           8034,
           8020,
@@ -186147,8 +186182,7 @@
           7873,
           7862,
           7849,
-          7826,
-          7825
+          7826
         ]
       },
       {
@@ -186163,20 +186197,6 @@
           7937,
           7903,
           7854
-        ]
-      },
-      {
-        "name": "Forestry",
-        "count": 6,
-        "burn_count": 1,
-        "mint_count": 5,
-        "event_ids": [
-          8015,
-          8007,
-          7996,
-          7968,
-          7922,
-          7888
         ]
       }
     ],
@@ -186226,9 +186246,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5931,
+      "total_mint": 5932,
       "direct_action": {
-        "count": 5002,
+        "count": 5003,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -186278,7 +186298,7 @@
         {
           "date": "2026-10-01",
           "citizen": 2,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -186352,6 +186372,7 @@
         7826
       ],
       "event_ids_institutional": [
+        8044,
         8043,
         8042,
         8041,
@@ -186501,8 +186522,7 @@
         7832,
         7829,
         7828,
-        7827,
-        7825
+        7827
       ]
     }
   }
