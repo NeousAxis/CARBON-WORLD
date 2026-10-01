@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-01T02:06:24.246843+00:00",
-  "total_events": 8041,
+  "generated_at": "2026-10-01T03:06:44.717159+00:00",
+  "total_events": 8042,
   "total_burned": 7975013205,
-  "total_minted": 10512281339,
+  "total_minted": 10512581339,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8042,
+      "event_title": "Trump administration finalizes Medicare drug pricing rule with limited scope",
+      "event_url": "https://www.statnews.com/2026/09/30/trump-final-globe-rule-will-save-medicare-much-less-money-on-drugs/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.5,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Limited-scope rule enables piecemeal reform, normalizing inadequate systemic protections. | While the rule introduces a targeted reduction in drug costs for Medicare beneficiaries, its limited application undermines its potential to address systemic healthcare inequities. The narrow scope risks normalizing piecemeal reforms that fail to ensure universal access to affordable ",
+      "tx_hash": "4mBga7dXnM14aXikPkDCwCUsDQFBMzSqbNGSPsN3rroRhiQEU8ezoDcuJ71hdMW2yDUh9BQtAUQMJwMYqzC7ZhNb",
+      "created_at": "2026-10-01T03:06:39.454180+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Finalizes a rule to lower Medicare drug prices for select drugs administered in doctor offices, directly reducing healthcare costs for elderly and disabled populations.\", \"affected_sdgs\": [3, 10], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rule applies to only four companies, severely limiting its scope and impact on overall drug pricing and healthcare affordability.\", \"affected_sdgs\": [3, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lacks systemic reform, potentially entrenching inequities in drug pricing and access for broader populations.\", \"affected_sdgs\": [3, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8041,
       "event_title": "US Supreme Court finally authorizes execution of Christa Pike, convicted of a 1995 murder",
@@ -184954,7 +184977,7 @@
       {
         "country": "United States",
         "count": 44,
-        "total_amount": 34012700
+        "total_amount": 33636700
       },
       {
         "country": "France",
@@ -185016,14 +185039,14 @@
         "events": 20
       },
       {
+        "region": "Oceania",
+        "burn_ratio": 0.143,
+        "events": 7
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.118,
         "events": 51
-      },
-      {
-        "region": "Oceania",
-        "burn_ratio": 0.111,
-        "events": 9
       },
       {
         "region": "Europe",
@@ -185048,14 +185071,14 @@
         "events": 62
       },
       {
-        "region": "Oceania",
-        "mint_ratio": 0.889,
-        "events": 9
-      },
-      {
         "region": "North America",
         "mint_ratio": 0.882,
         "events": 51
+      },
+      {
+        "region": "Oceania",
+        "mint_ratio": 0.857,
+        "events": 7
       }
     ],
     "supply_trend_7d": [
@@ -185091,7 +185114,7 @@
       },
       {
         "date": "2026-10-01",
-        "net_minted": 6306600,
+        "net_minted": 6606600,
         "net_burned": 475000
       }
     ],
@@ -185109,7 +185132,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 197,
+        "negative": 193,
         "event_ids_positive": [
           8038,
           8012,
@@ -185139,6 +185162,7 @@
           7826
         ],
         "event_ids_negative": [
+          8042,
           8041,
           8040,
           8039,
@@ -185330,17 +185354,12 @@
           7828,
           7827,
           7825,
-          7824,
-          7823,
-          7822,
-          7821,
-          7820,
-          7819
+          7824
         ]
       },
       "UDHR": {
         "positive": 21,
-        "negative": 178,
+        "negative": 174,
         "event_ids_positive": [
           8038,
           8012,
@@ -185365,6 +185384,7 @@
           7833
         ],
         "event_ids_negative": [
+          8042,
           8041,
           8040,
           8039,
@@ -185537,17 +185557,12 @@
           7829,
           7828,
           7827,
-          7825,
-          7823,
-          7822,
-          7821,
-          7820,
-          7819
+          7825
         ]
       },
       "ILO": {
         "positive": 2,
-        "negative": 29,
+        "negative": 28,
         "event_ids_positive": [
           7932,
           7859
@@ -185580,13 +185595,12 @@
           7844,
           7841,
           7835,
-          7827,
-          7819
+          7827
         ]
       },
       "CRC": {
         "positive": 3,
-        "negative": 62,
+        "negative": 61,
         "event_ids_positive": [
           7968,
           7907,
@@ -185653,8 +185667,7 @@
           7837,
           7829,
           7828,
-          7827,
-          7821
+          7827
         ]
       },
       "UNDRIP": {
@@ -185761,7 +185774,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 63,
+        "negative": 61,
         "event_ids_positive": [
           8012,
           7968,
@@ -185836,21 +185849,19 @@
           7834,
           7832,
           7830,
-          7825,
-          7823,
-          7821
+          7825
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.8,
-      "mainstream_pct": 31.2,
+      "niche_pct": 70.0,
+      "mainstream_pct": 30.0,
       "total_sources_used": 80,
-      "articles_processed": 223
+      "articles_processed": 219
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 223,
+      "total_events": 219,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -186000,9 +186011,9 @@
       },
       {
         "name": "Energy",
-        "count": 29,
+        "count": 27,
         "burn_count": 7,
-        "mint_count": 22,
+        "mint_count": 20,
         "event_ids": [
           8039,
           8038,
@@ -186030,9 +186041,7 @@
           7850,
           7848,
           7833,
-          7832,
-          7823,
-          7820
+          7832
         ]
       },
       {
@@ -186063,9 +186072,9 @@
       },
       {
         "name": "Tech",
-        "count": 14,
+        "count": 13,
         "burn_count": 2,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           8037,
           8021,
@@ -186079,8 +186088,7 @@
           7887,
           7873,
           7855,
-          7848,
-          7822
+          7848
         ]
       },
       {
@@ -186121,31 +186129,30 @@
       },
       {
         "name": "Water",
-        "count": 7,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 6,
         "event_ids": [
           8024,
           7999,
           7982,
           7937,
           7903,
-          7854,
-          7821
+          7854
         ]
       },
       {
-        "name": "Agriculture",
+        "name": "Forestry",
         "count": 6,
-        "burn_count": 0,
-        "mint_count": 6,
+        "burn_count": 1,
+        "mint_count": 5,
         "event_ids": [
           8015,
-          7949,
-          7885,
-          7877,
-          7875,
-          7821
+          8007,
+          7996,
+          7968,
+          7922,
+          7888
         ]
       }
     ],
@@ -186180,14 +186187,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 197,
+      "total_mint": 193,
       "direct_action": {
-        "count": 184,
-        "pct": 93.4
+        "count": 181,
+        "pct": 93.8
       },
       "editorial_alarm": {
-        "count": 13,
-        "pct": 6.6
+        "count": 12,
+        "pct": 6.2
       },
       "untyped": {
         "count": 0,
@@ -186195,9 +186202,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5929,
+      "total_mint": 5930,
       "direct_action": {
-        "count": 5000,
+        "count": 5001,
         "pct": 84.3
       },
       "editorial_alarm": {
@@ -186210,9 +186217,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 70,
-      "institutional": 153,
-      "citizen_ratio": 0.314,
+      "citizen": 69,
+      "institutional": 150,
+      "citizen_ratio": 0.315,
       "daily": [
         {
           "date": "2026-09-25",
@@ -186247,7 +186254,7 @@
         {
           "date": "2026-10-01",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -186319,10 +186326,10 @@
         7831,
         7830,
         7826,
-        7824,
-        7820
+        7824
       ],
       "event_ids_institutional": [
+        8042,
         8041,
         8039,
         8037,
@@ -186471,11 +186478,7 @@
         7829,
         7828,
         7827,
-        7825,
-        7823,
-        7822,
-        7821,
-        7819
+        7825
       ]
     }
   }
