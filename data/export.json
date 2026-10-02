@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-02T17:08:20.835166+00:00",
-  "total_events": 8097,
+  "generated_at": "2026-10-02T18:06:03.740302+00:00",
+  "total_events": 8099,
   "total_burned": 7979720705,
-  "total_minted": 10582400164,
+  "total_minted": 10589638164,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8099,
+      "event_title": "G7 agrees to release oil reserves after U.S. push",
+      "event_url": "https://www.politico.eu/article/trump-says-europe-agrees-to-release-massive-amount-of-diesel/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -4.56,
+      "confidence": 8,
+      "justification": "G7 oil reserve release enables fossil fuel dependence, undermining climate action and planetary boundaries. | The G7's decision to release oil reserves and lift diesel export restrictions prioritizes short-term economic relief over urgent climate and environmental obligations. While it may provide temporary affordability benefits, the action directly undermines global decarbonization efforts, violates planetary boundaries, and risks perpetuating fossil fuel dependence. The negative impacts on cl",
+      "tx_hash": "2zXP7ufAbnTV7QRjs3L8cY1aeSGtda1pJ8kf2D9z8VEp6zTMCZFZvfgQ7po1RHHH6czYACiEBjoHqLQ6PJKisPPS",
+      "created_at": "2026-10-02T18:05:58.073632+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Temporary reduction in oil prices may alleviate short-term energy cost burdens for vulnerable populations, supporting affordability of essential goods and services.\", \"affected_sdgs\": [1, 7, 8], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Release of oil reserves prolongs dependence on fossil fuels, undermining climate action and accelerating planetary boundary breaches (climate change, ocean acidification, biodiversity loss).\", \"affected_sdgs\": [7, 12, 13, 14, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Decision signals prioritization of short-term economic stability over long-term environmental and intergenerational justice, violating principles of sustainable development and rights of future generations.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Explicit removal of diesel export bans (as noted in description) enables continued fossil fuel expansion in other regions, potentially violating rights of communities affected by extraction and pollution (e.g., Indigenous lands, frontline communities).\", \"affected_sdgs\": [3, 10, 11], \"violated_rights\": [\"UNDRIP\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 8098,
+      "event_title": "South Africa doesn’t know how many leopards it has. Trophy hunting quotas are set for public comment.",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-10-02-sa-doesnt-know-how-many-leopards-it-has-trophy-hunting-quotas-are-set/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.85,
+      "confidence": 6,
+      "justification": "Trophy hunting quotas set without reliable data risk irreversible harm to leopards, outweighing transparency benefits. | The public consultation process represents a positive step toward transparency and participatory governance in wildlife management, aligning with SDGs 15, 16, and 17. However, the decision to set trophy hunting quotas without reliable population data poses a significant ethical risk to leopard conservation, undermining planetary boundaries and animal rights. The net judgment l",
+      "tx_hash": "2actxoQPz9WnSKd7qfXpqYZf1MfCUf5qywXGagqHYs2bWpkRiuDgrnDUiH4VZWeHedUPiNepswJzRk8GqgdU25Fm",
+      "created_at": "2026-10-02T18:05:55.825286+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"Public consultation process opened for leopard trophy hunting quotas, allowing citizen input and transparency in wildlife management decisions.\", \"affected_sdgs\": [15, 16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for improved data collection and conservation policies stemming from public scrutiny of leopard population estimates.\", \"affected_sdgs\": [15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Trophy hunting quotas set despite critical lack of scientific data on leopard populations, risking unsustainable exploitation of an endangered species.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Public comment period limited to a short window (until 4 October), potentially restricting meaningful participation from affected communities and conservation groups.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 8097,
       "event_title": "Spain's parliament rejects housing bill as protests continue",
@@ -186314,12 +186360,17 @@
         "events": 17
       },
       {
-        "region": "MENA",
+        "region": "Africa",
         "burn_ratio": 0.0,
-        "events": 16
+        "events": 8
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "Africa",
+        "mint_ratio": 1.0,
+        "events": 8
+      },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
@@ -186329,11 +186380,6 @@
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 9
-      },
-      {
-        "region": "Africa",
-        "mint_ratio": 1.0,
-        "events": 7
       },
       {
         "region": "Asia",
@@ -186379,7 +186425,7 @@
       },
       {
         "date": "2026-10-02",
-        "net_minted": 45802625,
+        "net_minted": 53040625,
         "net_burned": 500000
       }
     ],
@@ -186397,7 +186443,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 186,
+        "negative": 188,
         "event_ids_positive": [
           8085,
           8071,
@@ -186422,6 +186468,8 @@
           7895
         ],
         "event_ids_negative": [
+          8099,
+          8098,
           8097,
           8096,
           8095,
@@ -186612,7 +186660,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 175,
+        "negative": 177,
         "event_ids_positive": [
           8085,
           8064,
@@ -186634,6 +186682,8 @@
           7895
         ],
         "event_ids_negative": [
+          8099,
+          8098,
           8097,
           8096,
           8095,
@@ -186920,7 +186970,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           8012,
           8006,
@@ -186929,6 +186979,7 @@
           7896
         ],
         "event_ids_negative": [
+          8099,
           8096,
           8092,
           8091,
@@ -186980,11 +187031,12 @@
       },
       "Animal": {
         "positive": 1,
-        "negative": 15,
+        "negative": 16,
         "event_ids_positive": [
           7968
         ],
         "event_ids_negative": [
+          8098,
           8055,
           8020,
           8014,
@@ -187004,7 +187056,7 @@
       },
       "PB": {
         "positive": 7,
-        "negative": 60,
+        "negative": 62,
         "event_ids_positive": [
           8071,
           8012,
@@ -187015,6 +187067,8 @@
           7896
         ],
         "event_ids_negative": [
+          8099,
+          8098,
           8094,
           8093,
           8092,
@@ -187082,11 +187136,11 @@
       "niche_pct": 73.7,
       "mainstream_pct": 26.3,
       "total_sources_used": 76,
-      "articles_processed": 207
+      "articles_processed": 209
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 207,
+      "total_events": 209,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -187138,10 +187192,11 @@
       },
       {
         "name": "G7",
-        "count": 2,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          8099,
           8093,
           8090
         ]
@@ -187225,10 +187280,11 @@
       },
       {
         "name": "Energy",
-        "count": 26,
+        "count": 27,
         "burn_count": 4,
-        "mint_count": 22,
+        "mint_count": 23,
         "event_ids": [
+          8099,
           8093,
           8090,
           8088,
@@ -187399,9 +187455,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 186,
+      "total_mint": 188,
       "direct_action": {
-        "count": 175,
+        "count": 177,
         "pct": 94.1
       },
       "editorial_alarm": {
@@ -187414,9 +187470,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5980,
+      "total_mint": 5982,
       "direct_action": {
-        "count": 5048,
+        "count": 5050,
         "pct": 84.4
       },
       "editorial_alarm": {
@@ -187430,8 +187486,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 54,
-      "institutional": 153,
-      "citizen_ratio": 0.261,
+      "institutional": 155,
+      "citizen_ratio": 0.258,
       "daily": [
         {
           "date": "2026-09-26",
@@ -187466,7 +187522,7 @@
         {
           "date": "2026-10-02",
           "citizen": 4,
-          "institutional": 20
+          "institutional": 22
         }
       ],
       "event_ids_citizen": [
@@ -187526,6 +187582,8 @@
         7899
       ],
       "event_ids_institutional": [
+        8099,
+        8098,
         8096,
         8095,
         8093,
