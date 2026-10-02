@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-02T12:05:36.740568+00:00",
-  "total_events": 8088,
+  "generated_at": "2026-10-02T14:06:40.397345+00:00",
+  "total_events": 8089,
   "total_burned": 7979720705,
-  "total_minted": 10562199764,
+  "total_minted": 10562803764,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8089,
+      "event_title": "What Italy's Meloni School Decree Entails",
+      "event_url": "https://www.tagesschau.de/ausland/europa/italien-schuldekret-meloni-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -4.08,
+      "confidence": 8,
+      "justification": "Decree violates education and non-discrimination rights, risks institutionalizing exclusion, with no offsetting positive impacts. | The decree directly violates core rights to education, non-discrimination, and religious freedom, disproportionately affecting migrant and Muslim children. While its practical enforcement may be limited, the policy legitimizes exclusionary narratives and risks institutionalizing discrimination, undermining SDGs 4, 10, and 16. No substantive positive aspects are iden",
+      "tx_hash": "q9wx886HB43PN8FicmCdDoS92jLZpuZ881Z6hVj7dU5g8GepHd3TD58YqWskrmJLLcKQmdRWhGSLWHbCWz7ymQV",
+      "created_at": "2026-10-02T14:06:34.701133+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Government decree imposes quotas on foreign students in schools, limiting access to education for non-citizens and migrant children.\", \"affected_sdgs\": [4, 10, 16], \"violated_rights\": [\"UDHR Article 26\", \"CRC Article 28\", \"CRC Article 2\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Ban on religious symbols (e.g., burqas) in schools, targeting Muslim students and restricting religious freedom and cultural expression.\", \"affected_sdgs\": [4, 5, 10, 16], \"violated_rights\": [\"UDHR Article 18\", \"UDHR Article 26\", \"CRC Article 29\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Policy framed as symbolic enforcement with limited practical impact, but risks normalizing exclusionary rhetoric and policies, undermining social cohesion.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP Article 2\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8088,
       "event_title": "France floats major oil and diesel reserve release in response to US pressure",
@@ -186034,8 +186057,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 48,
-        "total_amount": 35973100
+        "count": 47,
+        "total_amount": 35297100
       },
       {
         "country": "France",
@@ -186048,14 +186071,14 @@
         "total_amount": 4007400
       },
       {
-        "country": "Germany",
-        "count": 8,
-        "total_amount": 2466160
-      },
-      {
         "country": "Switzerland",
         "count": 8,
         "total_amount": 2308000
+      },
+      {
+        "country": "Australia",
+        "count": 7,
+        "total_amount": 1128900
       }
     ],
     "top_countries_burn": [
@@ -186093,13 +186116,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.109,
-        "events": 55
+        "burn_ratio": 0.111,
+        "events": 54
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.091,
-        "events": 55
+        "burn_ratio": 0.094,
+        "events": 53
       },
       {
         "region": "Asia",
@@ -186135,8 +186158,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.909,
-        "events": 55
+        "mint_ratio": 0.906,
+        "events": 53
       }
     ],
     "supply_trend_7d": [
@@ -186172,7 +186195,7 @@
       },
       {
         "date": "2026-10-02",
-        "net_minted": 25602225,
+        "net_minted": 26206225,
         "net_burned": 500000
       }
     ],
@@ -186190,7 +186213,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 186,
+        "negative": 182,
         "event_ids_positive": [
           8085,
           8071,
@@ -186215,6 +186238,7 @@
           7895
         ],
         "event_ids_negative": [
+          8089,
           8088,
           8087,
           8086,
@@ -186395,17 +186419,12 @@
           7890,
           7889,
           7888,
-          7887,
-          7886,
-          7885,
-          7884,
-          7883,
-          7882
+          7887
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 174,
+        "negative": 170,
         "event_ids_positive": [
           8085,
           8064,
@@ -186427,6 +186446,7 @@
           7895
         ],
         "event_ids_negative": [
+          8089,
           8088,
           8087,
           8086,
@@ -186595,17 +186615,12 @@
           7891,
           7890,
           7889,
-          7887,
-          7886,
-          7885,
-          7884,
-          7883,
-          7882
+          7887
         ]
       },
       "ILO": {
         "positive": 1,
-        "negative": 27,
+        "negative": 26,
         "event_ids_positive": [
           7932
         ],
@@ -186635,8 +186650,7 @@
           7938,
           7935,
           7918,
-          7892,
-          7882
+          7892
         ]
       },
       "CRC": {
@@ -186648,6 +186662,7 @@
           7907
         ],
         "event_ids_negative": [
+          8089,
           8082,
           8081,
           8078,
@@ -186702,13 +186717,12 @@
           7899,
           7897,
           7893,
-          7891,
-          7882
+          7891
         ]
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 47,
+        "negative": 46,
         "event_ids_positive": [
           8012,
           8006,
@@ -186717,6 +186731,7 @@
           7896
         ],
         "event_ids_negative": [
+          8089,
           8087,
           8082,
           8060,
@@ -186761,9 +186776,7 @@
           7908,
           7897,
           7890,
-          7888,
-          7886,
-          7882
+          7888
         ]
       },
       "Animal": {
@@ -186792,7 +186805,7 @@
       },
       "PB": {
         "positive": 7,
-        "negative": 59,
+        "negative": 56,
         "event_ids_positive": [
           8071,
           8012,
@@ -186858,22 +186871,19 @@
           7898,
           7897,
           7894,
-          7888,
-          7885,
-          7884,
-          7883
+          7888
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 77.2,
-      "mainstream_pct": 22.8,
-      "total_sources_used": 79,
-      "articles_processed": 207
+      "niche_pct": 76.9,
+      "mainstream_pct": 23.1,
+      "total_sources_used": 78,
+      "articles_processed": 203
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 207,
+      "total_events": 203,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -186896,22 +186906,6 @@
         ]
       },
       {
-        "name": "UN",
-        "count": 8,
-        "burn_count": 1,
-        "mint_count": 7,
-        "event_ids": [
-          8010,
-          7988,
-          7968,
-          7961,
-          7952,
-          7908,
-          7890,
-          7882
-        ]
-      },
-      {
         "name": "WHO",
         "count": 7,
         "burn_count": 1,
@@ -186927,14 +186921,28 @@
         ]
       },
       {
+        "name": "UN",
+        "count": 7,
+        "burn_count": 1,
+        "mint_count": 6,
+        "event_ids": [
+          8010,
+          7988,
+          7968,
+          7961,
+          7952,
+          7908,
+          7890
+        ]
+      },
+      {
         "name": "ILO",
-        "count": 3,
+        "count": 2,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 2,
         "event_ids": [
           8056,
-          8053,
-          7882
+          8053
         ]
       },
       {
@@ -186964,23 +186972,14 @@
         "event_ids": [
           7967
         ]
-      },
-      {
-        "name": "COP",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          7886
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 32,
+        "count": 30,
         "burn_count": 2,
-        "mint_count": 30,
+        "mint_count": 28,
         "event_ids": [
           8069,
           8065,
@@ -187011,16 +187010,14 @@
           7899,
           7897,
           7896,
-          7887,
-          7885,
-          7884
+          7887
         ]
       },
       {
         "name": "Energy",
-        "count": 26,
+        "count": 24,
         "burn_count": 4,
-        "mint_count": 22,
+        "mint_count": 20,
         "event_ids": [
           8088,
           8087,
@@ -187045,9 +187042,7 @@
           7918,
           7903,
           7896,
-          7894,
-          7884,
-          7883
+          7894
         ]
       },
       {
@@ -187132,20 +187127,6 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 6,
-        "burn_count": 0,
-        "mint_count": 6,
-        "event_ids": [
-          8072,
-          8069,
-          8055,
-          8015,
-          7949,
-          7885
-        ]
-      },
-      {
         "name": "Water",
         "count": 6,
         "burn_count": 0,
@@ -187157,6 +187138,20 @@
           7982,
           7937,
           7903
+        ]
+      },
+      {
+        "name": "Forestry",
+        "count": 6,
+        "burn_count": 1,
+        "mint_count": 5,
+        "event_ids": [
+          8015,
+          8007,
+          7996,
+          7968,
+          7922,
+          7888
         ]
       }
     ],
@@ -187191,14 +187186,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 186,
+      "total_mint": 182,
       "direct_action": {
-        "count": 175,
-        "pct": 94.1
+        "count": 171,
+        "pct": 94.0
       },
       "editorial_alarm": {
         "count": 11,
-        "pct": 5.9
+        "pct": 6.0
       },
       "untyped": {
         "count": 0,
@@ -187206,9 +187201,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 5971,
+      "total_mint": 5972,
       "direct_action": {
-        "count": 5040,
+        "count": 5041,
         "pct": 84.4
       },
       "editorial_alarm": {
@@ -187222,8 +187217,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 54,
-      "institutional": 153,
-      "citizen_ratio": 0.261,
+      "institutional": 149,
+      "citizen_ratio": 0.266,
       "daily": [
         {
           "date": "2026-09-26",
@@ -187258,7 +187253,7 @@
         {
           "date": "2026-10-02",
           "citizen": 2,
-          "institutional": 13
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -187318,6 +187313,7 @@
         7888
       ],
       "event_ids_institutional": [
+        8089,
         8088,
         8086,
         8085,
@@ -187465,12 +187461,7 @@
         7892,
         7891,
         7890,
-        7887,
-        7886,
-        7885,
-        7884,
-        7883,
-        7882
+        7887
       ]
     }
   }
