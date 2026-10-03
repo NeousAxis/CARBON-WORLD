@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-03T22:05:49.829989+00:00",
-  "total_events": 8122,
+  "generated_at": "2026-10-03T23:04:39.671175+00:00",
+  "total_events": 8123,
   "total_burned": 7984670705,
-  "total_minted": 10609632564,
+  "total_minted": 10609637974,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8123,
+      "event_title": "Israel targets top Hamas leader in deadly Gaza strike on anniversary",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/israel-targets-top-hamas-leader-deadly-gaza-strike-anniversary",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5410,
+      "final_score": -2.17,
+      "confidence": 7,
+      "justification": "Civilian deaths and escalation outweigh any security benefit of the strike. | While the strike intended to weaken a militant organization, the civilian deaths and breach of the right to life create a net negative ethical outcome. The harm to non‑combatants outweighs the potential security benefit.",
+      "tx_hash": "3E4HoGSihNXbkTKrurKEnRBt4tmsZDKSpwYmbaVBfEo4EKkojjne3BgYZX6SCw3ubJNNFuHwKVkE7sJRPAKxREVg",
+      "created_at": "2026-10-03T23:04:34.598923+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Attempted elimination of Hamas top leader aimed at reducing attacks on civilians\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Airstrike killed five civilians, violating the right to life and escalating violence\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8122,
       "event_title": "Failed execution of Christa Pike: Tennessee prison chief resigns",
@@ -186889,21 +186912,21 @@
         "events": 17
       },
       {
-        "region": "Africa",
+        "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 9
+        "events": 17
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 17
+      },
+      {
         "region": "Africa",
         "mint_ratio": 1.0,
         "events": 9
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 16
       },
       {
         "region": "Oceania",
@@ -186954,25 +186977,25 @@
       },
       {
         "date": "2026-10-03",
-        "net_minted": 3474800,
+        "net_minted": 3480210,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 8103,
-      "event_title": "2027 Indigenous Youth Fellowship: Call for Project Proposals",
-      "decision": "BURN",
-      "amount_crbn": 4250000,
-      "final_score": 6.1,
+      "id": 8112,
+      "event_title": "Russia’s spending plans show Putin preparing for years of war",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -5.46,
       "confidence": 8,
-      "country": null,
-      "region": null,
-      "created_at": "2026-10-02T22:08:54.978904+00:00"
+      "country": "Russia",
+      "region": "Europe",
+      "created_at": "2026-10-03T02:08:23.129291+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 185,
+        "negative": 186,
         "event_ids_positive": [
           8107,
           8103,
@@ -186995,6 +187018,7 @@
           7921
         ],
         "event_ids_negative": [
+          8123,
           8122,
           8121,
           8120,
@@ -187184,7 +187208,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 172,
+        "negative": 173,
         "event_ids_positive": [
           8107,
           8103,
@@ -187204,6 +187228,7 @@
           7929
         ],
         "event_ids_negative": [
+          8123,
           8122,
           8121,
           8119,
@@ -187650,11 +187675,11 @@
       "niche_pct": 74.4,
       "mainstream_pct": 25.6,
       "total_sources_used": 78,
-      "articles_processed": 204
+      "articles_processed": 205
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 204,
+      "total_events": 205,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -187967,9 +187992,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 185,
+      "total_mint": 186,
       "direct_action": {
-        "count": 174,
+        "count": 175,
         "pct": 94.1
       },
       "editorial_alarm": {
@@ -187982,9 +188007,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6003,
+      "total_mint": 6004,
       "direct_action": {
-        "count": 5070,
+        "count": 5071,
         "pct": 84.5
       },
       "editorial_alarm": {
@@ -187998,8 +188023,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 56,
-      "institutional": 148,
-      "citizen_ratio": 0.275,
+      "institutional": 149,
+      "citizen_ratio": 0.273,
       "daily": [
         {
           "date": "2026-09-27",
@@ -188034,7 +188059,7 @@
         {
           "date": "2026-10-03",
           "citizen": 2,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -188096,6 +188121,7 @@
         7921
       ],
       "event_ids_institutional": [
+        8123,
         8122,
         8120,
         8119,
