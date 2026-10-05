@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-05T08:07:27.156091+00:00",
-  "total_events": 8150,
+  "generated_at": "2026-10-05T09:05:44.313452+00:00",
+  "total_events": 8151,
   "total_burned": 7990370705,
-  "total_minted": 10625589054,
+  "total_minted": 10625889054,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8151,
+      "event_title": "US removes bombers from UK base at centre of suspected Iranian plot",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/us-removes-bombers-uk-base-centre-suspected-iranian-plot",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.45,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] US bomber removal de‑escalates tension, protecting civilian safety and upholding peace, outweighing potential deterrence loss. | The removal of bombers reduces immediate military presence, aligning with peace-building efforts (SDG 16). However, the action appears reactive to a security threat, potentially undermining deterrence and long-term stability. The net ethical impact",
+      "tx_hash": "5DgMwjVWV4veWKFZ2arb9RT31YVVSvwtLkBwUXky7TQDC4Mhhf69a5MLkXiVRRXVCx62n4RQfBaYUKJnWSYqKDiT",
+      "created_at": "2026-10-05T09:05:38.162855+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Reduction of military presence in a foreign base, potentially lowering geopolitical tensions and risk of conflict escalation.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Withdrawal of military assets may signal perceived weakness or reduced deterrence, potentially emboldening adversarial actors and increasing regional instability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Action taken in response to a suspected terrorist plot may indicate reactive rather than preventive governance, lacking long-term conflict resolution strategy.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8150,
       "event_title": "British Greens Motion: 'Zionism is Racism'",
@@ -187598,7 +187621,7 @@
       },
       {
         "date": "2026-10-05",
-        "net_minted": 2849600,
+        "net_minted": 3149600,
         "net_burned": 0
       }
     ],
@@ -187616,7 +187639,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 18,
-        "negative": 192,
+        "negative": 193,
         "event_ids_positive": [
           8143,
           8137,
@@ -187638,6 +187661,7 @@
           7968
         ],
         "event_ids_negative": [
+          8151,
           8150,
           8149,
           8148,
@@ -187834,7 +187858,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 181,
+        "negative": 182,
         "event_ids_positive": [
           8143,
           8137,
@@ -187855,6 +187879,7 @@
           7968
         ],
         "event_ids_negative": [
+          8151,
           8150,
           8149,
           8148,
@@ -188305,11 +188330,11 @@
       "niche_pct": 72.2,
       "mainstream_pct": 27.8,
       "total_sources_used": 79,
-      "articles_processed": 211
+      "articles_processed": 212
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 211,
+      "total_events": 212,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -188489,10 +188514,11 @@
       },
       {
         "name": "Defense",
-        "count": 19,
+        "count": 20,
         "burn_count": 0,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          8151,
           8133,
           8127,
           8125,
@@ -188629,9 +188655,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 192,
+      "total_mint": 193,
       "direct_action": {
-        "count": 180,
+        "count": 181,
         "pct": 93.8
       },
       "editorial_alarm": {
@@ -188644,9 +188670,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6027,
+      "total_mint": 6028,
       "direct_action": {
-        "count": 5093,
+        "count": 5094,
         "pct": 84.5
       },
       "editorial_alarm": {
@@ -188660,8 +188686,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 53,
-      "institutional": 158,
-      "citizen_ratio": 0.251,
+      "institutional": 159,
+      "citizen_ratio": 0.25,
       "daily": [
         {
           "date": "2026-09-29",
@@ -188696,7 +188722,7 @@
         {
           "date": "2026-10-05",
           "citizen": 1,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -188755,6 +188781,7 @@
         7941
       ],
       "event_ids_institutional": [
+        8151,
         8150,
         8149,
         8148,
