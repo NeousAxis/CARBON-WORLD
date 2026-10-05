@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-05T10:05:29.187211+00:00",
-  "total_events": 8152,
+  "generated_at": "2026-10-05T11:05:20.345444+00:00",
+  "total_events": 8153,
   "total_burned": 7990370705,
-  "total_minted": 10626421054,
+  "total_minted": 10626571054,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8153,
+      "event_title": "‘I Used to Just Call a Guy’: The Struggle to Get Repair Information",
+      "event_url": "https://www.ifixit.com/News/119622/i-used-to-just-call-a-guy-the-struggle-to-get-repair-information",
+      "event_source": "iFixit News (right to repair)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.3,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Manufacturer withholding repair info weakens EU right‑to‑repair protections, enabling harm. | The EU Ecodesign rules represent a positive legal framework for right-to-repair, aligning with circular economy goals. However, the prolonged non-compliance by manufacturers significantly weakens its impact, creating ethical tensions between legal intent and practical enforcement. T",
+      "tx_hash": "2ypfoi5V19UiQGYYdqkUoDztnfnPZ1ZzwjApATzUrofjiE23T4rQtPKMZXD1bWqrmDJS8mfVj7E4vVefGoe9tY5g",
+      "created_at": "2026-10-05T11:05:14.003276+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU Ecodesign rules explicitly grant repair professionals access to repair information, supporting right-to-repair legislation and circular economy principles.\", \"affected_sdgs\": [9, 12, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Recognition of a repair professional's qualification under EU law reinforces legal protections for independent repair workers, aligning with decent work (SDG 8) and responsible consumption (SDG 12).\", \"affected_sdgs\": [8, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Eight-month delay in providing repair information by most brands undermines the practical effectiveness of the Ecodesign rules, violating the spirit of SDG 12 (responsible consumption) and creating barriers to decent work (SDG 8).\", \"affected_sdgs\": [8, 12], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"ILO\"]}, {\"description\": \"Non-compliance by manufacturers with existing regulations perpetuates planned obsolescence, increasing e-waste and undermining climate action (SDG 13) and sustainable industrialization (SDG 9).\", \"affected_sdgs\": [9, 12, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8152,
       "event_title": "Former Prince Andrew takes police to court over Epstein files arrest",
@@ -187511,8 +187534,8 @@
       },
       {
         "country": "France",
-        "count": 11,
-        "total_amount": 4369600
+        "count": 10,
+        "total_amount": 3693600
       },
       {
         "country": "Brazil",
@@ -187564,14 +187587,14 @@
         "events": 21
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.096,
+        "events": 52
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.094,
         "events": 53
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.091,
-        "events": 55
       },
       {
         "region": "Africa",
@@ -187606,9 +187629,9 @@
         "events": 12
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.909,
-        "events": 55
+        "region": "North America",
+        "mint_ratio": 0.906,
+        "events": 53
       }
     ],
     "supply_trend_7d": [
@@ -187644,7 +187667,7 @@
       },
       {
         "date": "2026-10-05",
-        "net_minted": 3681600,
+        "net_minted": 3831600,
         "net_burned": 0
       }
     ],
@@ -187662,7 +187685,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 18,
-        "negative": 194,
+        "negative": 192,
         "event_ids_positive": [
           8143,
           8137,
@@ -187684,6 +187707,7 @@
           7968
         ],
         "event_ids_negative": [
+          8153,
           8152,
           8151,
           8150,
@@ -187874,15 +187898,12 @@
           7946,
           7945,
           7944,
-          7943,
-          7942,
-          7941,
-          7940
+          7943
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 183,
+        "negative": 180,
         "event_ids_positive": [
           8143,
           8137,
@@ -188082,10 +188103,7 @@
           7947,
           7945,
           7944,
-          7943,
-          7942,
-          7941,
-          7940
+          7943
         ]
       },
       "ILO": {
@@ -188093,6 +188111,7 @@
         "negative": 28,
         "event_ids_positive": [],
         "event_ids_negative": [
+          8153,
           8144,
           8135,
           8117,
@@ -188119,13 +188138,12 @@
           7962,
           7958,
           7949,
-          7945,
-          7942
+          7945
         ]
       },
       "CRC": {
         "positive": 3,
-        "negative": 57,
+        "negative": 56,
         "event_ids_positive": [
           8103,
           8064,
@@ -188187,13 +188205,12 @@
           7959,
           7952,
           7950,
-          7943,
-          7940
+          7943
         ]
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 50,
+        "negative": 48,
         "event_ids_positive": [
           8103,
           8012,
@@ -188248,9 +188265,7 @@
           7960,
           7954,
           7952,
-          7949,
-          7941,
-          7940
+          7949
         ]
       },
       "Animal": {
@@ -188276,7 +188291,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           8107,
           8071,
@@ -188284,6 +188299,7 @@
           7968
         ],
         "event_ids_negative": [
+          8153,
           8141,
           8140,
           8135,
@@ -188355,15 +188371,32 @@
       "niche_pct": 72.2,
       "mainstream_pct": 27.8,
       "total_sources_used": 79,
-      "articles_processed": 213
+      "articles_processed": 211
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 213,
+      "total_events": 211,
       "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 9,
+        "burn_count": 1,
+        "mint_count": 8,
+        "event_ids": [
+          8153,
+          8080,
+          8046,
+          8033,
+          8021,
+          8007,
+          8006,
+          7981,
+          7967
+        ]
+      },
       {
         "name": "UN",
         "count": 9,
@@ -188379,22 +188412,6 @@
           7968,
           7961,
           7952
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 8,
-        "burn_count": 1,
-        "mint_count": 7,
-        "event_ids": [
-          8080,
-          8046,
-          8033,
-          8021,
-          8007,
-          8006,
-          7981,
-          7967
         ]
       },
       {
@@ -188505,9 +188522,9 @@
       },
       {
         "name": "Finance",
-        "count": 26,
+        "count": 25,
         "burn_count": 1,
-        "mint_count": 25,
+        "mint_count": 24,
         "event_ids": [
           8144,
           8141,
@@ -188533,8 +188550,7 @@
           7974,
           7972,
           7964,
-          7953,
-          7942
+          7953
         ]
       },
       {
@@ -188680,9 +188696,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 194,
+      "total_mint": 192,
       "direct_action": {
-        "count": 182,
+        "count": 180,
         "pct": 93.8
       },
       "editorial_alarm": {
@@ -188695,9 +188711,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6029,
+      "total_mint": 6030,
       "direct_action": {
-        "count": 5095,
+        "count": 5096,
         "pct": 84.5
       },
       "editorial_alarm": {
@@ -188710,9 +188726,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 53,
-      "institutional": 160,
-      "citizen_ratio": 0.249,
+      "citizen": 52,
+      "institutional": 159,
+      "citizen_ratio": 0.246,
       "daily": [
         {
           "date": "2026-09-29",
@@ -188747,7 +188763,7 @@
         {
           "date": "2026-10-05",
           "citizen": 1,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -188802,10 +188818,10 @@
         7949,
         7947,
         7945,
-        7944,
-        7941
+        7944
       ],
       "event_ids_institutional": [
+        8153,
         8152,
         8151,
         8150,
@@ -188963,9 +188979,7 @@
         7951,
         7948,
         7946,
-        7943,
-        7942,
-        7940
+        7943
       ]
     }
   }
