@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-05T18:06:28.339491+00:00",
-  "total_events": 8163,
-  "total_burned": 7990370705,
-  "total_minted": 10632102054,
+  "generated_at": "2026-10-05T19:06:00.841868+00:00",
+  "total_events": 8165,
+  "total_burned": 7990870705,
+  "total_minted": 10632602054,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8165,
+      "event_title": "Japan's TEPCO to tap AI to speed nuclear restarts",
+      "event_url": "https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-tepco-to-tap-ai-to-speed-nuclear-restarts",
+      "event_source": "Nikkei Asia",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.38,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Accelerated nuclear restarts risk safety and environmental harm, outweighing potential efficiency gains. | The decision to use AI to accelerate nuclear restarts presents a trade-off between potential efficiency gains and significant safety and environmental risks. While AI could enhance operational safety, the urgency to restart reactors may compromise thorough oversight, parti",
+      "tx_hash": "4sFZKDkmv3eeKMEYABhZcrqZV15BeJ8spibBkGywQFz4do9LYryQJu5prfkxKBBCv36wWS7vJcciHxtmTDcc4xSW",
+      "created_at": "2026-10-05T19:05:55.092593+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Japan",
+      "region": "Asia",
+      "administration": "Japan-LDP",
+      "positive_aspects_json": "[{\"description\": \"Use of AI to improve safety and efficiency in nuclear plant restarts, potentially reducing human error and operational risks.\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential reduction in fossil fuel dependence if nuclear energy replaces coal or gas, supporting cleaner energy transitions.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Accelerated nuclear restarts may bypass rigorous safety reviews, increasing risks of accidents or radiation leaks, undermining public health and environmental safety.\", \"affected_sdgs\": [3, 7, 13, 15], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Historical distrust in TEPCO due to Fukushima disaster may exacerbate public opposition, risking social unrest and undermining trust in energy governance.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential lock-in of nuclear energy infrastructure, delaying investment in renewable energy alternatives and perpetuating reliance on high-risk technology.\", \"affected_sdgs\": [7, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 8164,
+      "event_title": "Cadmium: after years of inaction, the government commits to follow health authorities' recommendations",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/10/05/cadmium-apres-des-annees-d-inaction-le-gouvernement-s-engage-a-suivre-les-recommandations-des-autorites-sanitaires_6788567_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "BURN",
+      "amount_crbn": 500000,
+      "final_score": 2.19,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Regulatory action to reduce cadmium harm outweighs derogation risks; institutional protection prevails. | The commitment to reduce cadmium in fertilizers represents a significant step toward protecting public health and environmental integrity, aligning with SDGs 3, 6, 12, and 15. However, the derogation clause undermines the reliability of this action, creating a risk of prolon",
+      "tx_hash": "cy7qthiLaSrmEHKt5wYqg11NnyBcB6tyvA7RgfFgdDXHomLxb3wm47Tw1y9jmuLQZf3foF3vo8x7bbLcJRqgCjW",
+      "created_at": "2026-10-05T19:05:52.782235+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Government commits to progressively reduce cadmium levels in phosphate fertilizers by 2030, aligning with health authorities' recommendations after years of inaction.\", \"affected_sdgs\": [3, 6, 12, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Government reserves the right to derogate from the established timeline, introducing uncertainty and potential delays in implementation.\", \"affected_sdgs\": [3, 6, 12, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 8163,
       "event_title": "Tory plan to cut energy efficiency rule for builders will cost new home owners £1,000 a year",
@@ -187795,6 +187841,11 @@
         "total_amount": 1848000
       },
       {
+        "country": "France",
+        "count": 1,
+        "total_amount": 500000
+      },
+      {
         "country": "United Kingdom",
         "count": 1,
         "total_amount": 500000
@@ -187803,11 +187854,6 @@
         "country": "Uganda",
         "count": 1,
         "total_amount": 475000
-      },
-      {
-        "country": "Spain",
-        "count": 1,
-        "total_amount": 500000
       }
     ],
     "top_regions_sustainable": [
@@ -187817,14 +187863,14 @@
         "events": 19
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.113,
+        "events": 53
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.1,
         "events": 50
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.096,
-        "events": 52
       },
       {
         "region": "Africa",
@@ -187834,14 +187880,14 @@
       {
         "region": "Asia",
         "burn_ratio": 0.0,
-        "events": 13
+        "events": 14
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 13
+        "events": 14
       },
       {
         "region": "MENA",
@@ -187859,9 +187905,9 @@
         "events": 11
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.904,
-        "events": 52
+        "region": "North America",
+        "mint_ratio": 0.9,
+        "events": 50
       }
     ],
     "supply_trend_7d": [
@@ -187897,8 +187943,8 @@
       },
       {
         "date": "2026-10-05",
-        "net_minted": 9362600,
-        "net_burned": 0
+        "net_minted": 9862600,
+        "net_burned": 500000
       }
     ],
     "event_of_the_day": {
@@ -187914,9 +187960,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 18,
-        "negative": 182,
+        "positive": 19,
+        "negative": 183,
         "event_ids_positive": [
+          8164,
           8143,
           8137,
           8124,
@@ -187937,6 +187984,7 @@
           7968
         ],
         "event_ids_negative": [
+          8165,
           8163,
           8162,
           8161,
@@ -188122,9 +188170,10 @@
         ]
       },
       "UDHR": {
-        "positive": 17,
-        "negative": 169,
+        "positive": 18,
+        "negative": 170,
         "event_ids_positive": [
+          8164,
           8143,
           8137,
           8124,
@@ -188144,6 +188193,7 @@
           7968
         ],
         "event_ids_negative": [
+          8165,
           8163,
           8162,
           8160,
@@ -188490,7 +188540,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 62,
+        "negative": 63,
         "event_ids_positive": [
           8107,
           8071,
@@ -188498,6 +188548,7 @@
           7968
         ],
         "event_ids_negative": [
+          8165,
           8163,
           8161,
           8155,
@@ -188567,11 +188618,11 @@
       "niche_pct": 74.0,
       "mainstream_pct": 26.0,
       "total_sources_used": 77,
-      "articles_processed": 201
+      "articles_processed": 203
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 201,
+      "total_events": 203,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -188678,10 +188729,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 30,
+        "count": 31,
         "burn_count": 3,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          8165,
           8163,
           8143,
           8141,
@@ -188804,10 +188856,11 @@
       },
       {
         "name": "Tech",
-        "count": 8,
+        "count": 9,
         "burn_count": 1,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          8165,
           8109,
           8075,
           8037,
@@ -188860,24 +188913,24 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 19,
+      "total_burn": 20,
       "direct_action": {
-        "count": 15,
-        "pct": 78.9
+        "count": 16,
+        "pct": 80.0
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 15.8
+        "pct": 15.0
       },
       "untyped": {
         "count": 1,
-        "pct": 5.3
+        "pct": 5.0
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2115,
+      "total_burn": 2116,
       "direct_action": {
-        "count": 1671,
+        "count": 1672,
         "pct": 79.0
       },
       "editorial_consciousness": {
@@ -188890,9 +188943,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 182,
+      "total_mint": 183,
       "direct_action": {
-        "count": 172,
+        "count": 173,
         "pct": 94.5
       },
       "editorial_alarm": {
@@ -188905,9 +188958,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6040,
+      "total_mint": 6041,
       "direct_action": {
-        "count": 5106,
+        "count": 5107,
         "pct": 84.5
       },
       "editorial_alarm": {
@@ -188921,8 +188974,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 48,
-      "institutional": 153,
-      "citizen_ratio": 0.239,
+      "institutional": 155,
+      "citizen_ratio": 0.236,
       "daily": [
         {
           "date": "2026-09-29",
@@ -188957,7 +189010,7 @@
         {
           "date": "2026-10-05",
           "citizen": 3,
-          "institutional": 16
+          "institutional": 18
         }
       ],
       "event_ids_citizen": [
@@ -189011,6 +189064,8 @@
         7968
       ],
       "event_ids_institutional": [
+        8165,
+        8164,
         8163,
         8162,
         8160,
