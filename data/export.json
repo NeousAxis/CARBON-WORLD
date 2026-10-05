@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-05T01:06:27.727918+00:00",
-  "total_events": 8144,
+  "generated_at": "2026-10-05T02:05:53.604636+00:00",
+  "total_events": 8145,
   "total_burned": 7990370705,
-  "total_minted": 10622739454,
+  "total_minted": 10623487454,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8145,
+      "event_title": "Nearly 1,500 migrants arrive in Myanmar from Malaysia despite UN warnings",
+      "event_url": "https://www.aljazeera.com/news/2026/10/5/nearly-1500-migrants-arrive-in-myanmar-from-malaysia-despite-un-warnings?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -6.1,
+      "confidence": 8,
+      "justification": "Mass deportation to an active war zone violates core human rights and undermines global protection frameworks. | The deportation of migrants to an active war zone constitutes a severe violation of human rights, including the right to life, security, and asylum. It directly undermines multiple SDGs, particularly those related to reducing inequalities, peace and justice, and decent work. The action disregards UN warnings, amplifying harm to vulnerable populations, including children and indigenous",
+      "tx_hash": "2jDVXWQKm2PwkhvLtXWrK6pV7qqvVWe3WxCnZeEtG2jJMTnfrKsDNFpspphMQrqvLbbc7i44rpyzuzdBeG5KngtW",
+      "created_at": "2026-10-05T02:05:48.554853+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Malaysia",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Mass deportation of nearly 1,500 migrants from Malaysia to Myanmar, an active war zone with documented human rights violations and unsafe conditions.\", \"affected_sdgs\": [1, 3, 8, 10, 16], \"violated_rights\": [\"UDHR Article 3 (Right to Life, Liberty, Security)\", \"UDHR Article 9 (No Arbitrary Detention)\", \"UDHR Article 13 (Freedom of Movement)\", \"UDHR Article 14 (Right to Asylum)\", \"CRC Article 22 (Refugee Children)\", \"UNDRIP Article 7 (Collective Rights in Conflict Zones)\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
     {
       "id": 8144,
       "event_title": "Mobile crisis teams: unions satisfied but vigilant on future funding",
@@ -130,7 +153,7 @@
       "final_score": 3.86,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.984) from event #8124",
-      "tx_hash": null,
+      "tx_hash": "5h7EJZPuwx7gyBa8JhDQKtPdCY36hLpVt5o5w8u3KQUFv5RhbD3TbP9W15hGBanrSjjMseYxtohr7m7cdYeX5hgv",
       "created_at": "2026-10-04T19:04:30.097985+00:00",
       "embedding": null,
       "reused_from_event_id": 8124,
@@ -187395,21 +187418,21 @@
         "events": 12
       },
       {
-        "region": "MENA",
+        "region": "Asia",
         "burn_ratio": 0.0,
-        "events": 18
+        "events": 15
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 15
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 18
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 14
       },
       {
         "region": "Oceania",
@@ -187456,29 +187479,29 @@
       {
         "date": "2026-10-04",
         "net_minted": 13101480,
-        "net_burned": 5225000
+        "net_burned": 5700000
       },
       {
         "date": "2026-10-05",
-        "net_minted": 0,
+        "net_minted": 748000,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 8127,
-      "event_title": "Ethiopian government troops seize Tigray’s capital Mekelle",
+      "id": 8145,
+      "event_title": "Nearly 1,500 migrants arrive in Myanmar from Malaysia despite UN warnings",
       "decision": "MINT",
-      "amount_crbn": 74800,
-      "final_score": -5.54,
+      "amount_crbn": 748000,
+      "final_score": -6.1,
       "confidence": 8,
-      "country": "Ethiopia",
-      "region": "Africa",
-      "created_at": "2026-10-04T02:06:33.852164+00:00"
+      "country": "Malaysia",
+      "region": "Asia",
+      "created_at": "2026-10-05T02:05:48.554853+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 18,
-        "negative": 190,
+        "negative": 191,
         "event_ids_positive": [
           8143,
           8137,
@@ -187500,6 +187523,7 @@
           7968
         ],
         "event_ids_negative": [
+          8145,
           8144,
           8142,
           8141,
@@ -187694,7 +187718,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 179,
+        "negative": 180,
         "event_ids_positive": [
           8143,
           8137,
@@ -187715,6 +187739,7 @@
           7968
         ],
         "event_ids_negative": [
+          8145,
           8144,
           8142,
           8141,
@@ -187934,13 +187959,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           8103,
           8064,
           7968
         ],
         "event_ids_negative": [
+          8145,
           8144,
           8133,
           8127,
@@ -188003,7 +188029,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 50,
+        "negative": 51,
         "event_ids_positive": [
           8103,
           8012,
@@ -188011,6 +188037,7 @@
           7968
         ],
         "event_ids_negative": [
+          8145,
           8136,
           8132,
           8127,
@@ -188165,15 +188192,32 @@
       "niche_pct": 72.5,
       "mainstream_pct": 27.5,
       "total_sources_used": 80,
-      "articles_processed": 208
+      "articles_processed": 210
     },
     "cache_hit_rate_7d": {
-      "hits": 0,
-      "total_events": 208,
-      "pct": 0.0
+      "hits": 1,
+      "total_events": 210,
+      "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "UN",
+        "count": 9,
+        "burn_count": 3,
+        "mint_count": 6,
+        "event_ids": [
+          8145,
+          8140,
+          8139,
+          8124,
+          8010,
+          7988,
+          7968,
+          7961,
+          7952
+        ]
+      },
       {
         "name": "EU",
         "count": 8,
@@ -188188,21 +188232,6 @@
           8006,
           7981,
           7967
-        ]
-      },
-      {
-        "name": "UN",
-        "count": 7,
-        "burn_count": 2,
-        "mint_count": 5,
-        "event_ids": [
-          8140,
-          8124,
-          8010,
-          7988,
-          7968,
-          7961,
-          7952
         ]
       },
       {
@@ -188460,22 +188489,22 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 18,
+      "total_burn": 19,
       "direct_action": {
         "count": 15,
-        "pct": 83.3
+        "pct": 78.9
       },
       "editorial_consciousness": {
         "count": 3,
-        "pct": 16.7
+        "pct": 15.8
       },
       "untyped": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 5.3
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2114,
+      "total_burn": 2115,
       "direct_action": {
         "count": 1671,
         "pct": 79.0
@@ -188485,14 +188514,14 @@
         "pct": 7.9
       },
       "untyped": {
-        "count": 275,
+        "count": 276,
         "pct": 13.0
       }
     },
     "mint_composition_7d": {
-      "total_mint": 190,
+      "total_mint": 191,
       "direct_action": {
-        "count": 178,
+        "count": 179,
         "pct": 93.7
       },
       "editorial_alarm": {
@@ -188505,9 +188534,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6021,
+      "total_mint": 6022,
       "direct_action": {
-        "count": 5087,
+        "count": 5088,
         "pct": 84.5
       },
       "editorial_alarm": {
@@ -188520,9 +188549,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 53,
-      "institutional": 155,
-      "citizen_ratio": 0.255,
+      "citizen": 54,
+      "institutional": 156,
+      "citizen_ratio": 0.257,
       "daily": [
         {
           "date": "2026-09-29",
@@ -188552,15 +188581,16 @@
         {
           "date": "2026-10-04",
           "citizen": 4,
-          "institutional": 16
+          "institutional": 17
         },
         {
           "date": "2026-10-05",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        8145,
         8143,
         8132,
         8129,
@@ -188620,6 +188650,7 @@
         8142,
         8141,
         8140,
+        8139,
         8138,
         8137,
         8136,
