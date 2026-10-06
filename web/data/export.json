@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-06T05:06:47.063306+00:00",
-  "total_events": 8178,
+  "generated_at": "2026-10-06T06:06:50.474660+00:00",
+  "total_events": 8179,
   "total_burned": 7991570705,
-  "total_minted": 10636868454,
+  "total_minted": 10637368454,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8179,
+      "event_title": "Trump targets tax-free diesel as Republicans approach midterms",
+      "event_url": "https://www.france24.com/en/americas/20261006-trump-targets-tax-free-diesel-as-republicans-approach-midterms",
+      "event_source": "France 24 EN",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.33,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Executive order eases tax-free diesel limits, encouraging fossil fuel use and weakening climate protections. | The executive order prioritizes short-term economic relief for a specific sector over long-term climate and environmental goals. While it may provide marginal economic benefits, the policy directly undermines emissions reductions and sustainable energy transitions, ",
+      "tx_hash": "5svyGJJeAeoxRWNHd2xe3wz8SiB7RFFzz63fF3CQr9EK93F1EFLRmupb6jc8zo7YVjSNaBH37GnFAeRmM2jyquUV",
+      "created_at": "2026-10-06T06:06:45.032173+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Executive order aims to reduce costs for farmers and lower prices of goods, potentially supporting rural economies and food affordability.\", \"affected_sdgs\": [1, 2, 8, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Removal of tax-free diesel limits undermines climate action by incentivizing fossil fuel use, increasing emissions and air pollution.\", \"affected_sdgs\": [7, 11, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Policy disproportionately benefits industrial agriculture and fossil fuel industries, exacerbating inequality and environmental harm without guaranteed farmer relief.\", \"affected_sdgs\": [10, 12, 13], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Analysts note the policy may not benefit farmers already using tax-exempt fuel, raising concerns about effectiveness and misaligned incentives.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8178,
       "event_title": "Cabinet wants phones out of schools from January",
@@ -188105,7 +188128,7 @@
       {
         "country": "United States",
         "count": 47,
-        "total_amount": 26844200
+        "total_amount": 26740200
       },
       {
         "country": "United Kingdom",
@@ -188163,8 +188186,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.111,
-        "events": 18
+        "burn_ratio": 0.118,
+        "events": 17
       },
       {
         "region": "Africa",
@@ -188242,7 +188265,7 @@
       },
       {
         "date": "2026-10-06",
-        "net_minted": 2927600,
+        "net_minted": 3427600,
         "net_burned": 700000
       }
     ],
@@ -188260,7 +188283,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 183,
+        "negative": 181,
         "event_ids_positive": [
           8178,
           8164,
@@ -188283,6 +188306,7 @@
           7983
         ],
         "event_ids_negative": [
+          8179,
           8177,
           8176,
           8175,
@@ -188462,15 +188486,12 @@
           7982,
           7981,
           7980,
-          7979,
-          7978,
-          7977,
-          7976
+          7979
         ]
       },
       "UDHR": {
         "positive": 18,
-        "negative": 169,
+        "negative": 166,
         "event_ids_positive": [
           8178,
           8164,
@@ -188657,15 +188678,12 @@
           7982,
           7981,
           7980,
-          7979,
-          7978,
-          7977,
-          7976
+          7979
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 24,
+        "negative": 23,
         "event_ids_positive": [],
         "event_ids_negative": [
           8173,
@@ -188690,13 +188708,12 @@
           8002,
           7997,
           7994,
-          7980,
-          7977
+          7980
         ]
       },
       "CRC": {
         "positive": 3,
-        "negative": 48,
+        "negative": 46,
         "event_ids_positive": [
           8178,
           8103,
@@ -188748,14 +188765,12 @@
           7991,
           7988,
           7980,
-          7979,
-          7978,
-          7977
+          7979
         ]
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 46,
+        "negative": 44,
         "event_ids_positive": [
           8103,
           8012,
@@ -188805,9 +188820,7 @@
           7982,
           7981,
           7980,
-          7979,
-          7978,
-          7977
+          7979
         ]
       },
       "Animal": {
@@ -188832,13 +188845,14 @@
       },
       "PB": {
         "positive": 3,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           8107,
           8071,
           8012
         ],
         "event_ids_negative": [
+          8179,
           8175,
           8173,
           8172,
@@ -188907,14 +188921,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 67.6,
-      "mainstream_pct": 32.4,
-      "total_sources_used": 74,
-      "articles_processed": 203
+      "niche_pct": 68.5,
+      "mainstream_pct": 31.5,
+      "total_sources_used": 73,
+      "articles_processed": 201
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 203,
+      "total_events": 201,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -189009,10 +189023,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 34,
+        "count": 35,
         "burn_count": 3,
-        "mint_count": 31,
+        "mint_count": 32,
         "event_ids": [
+          8179,
           8175,
           8172,
           8167,
@@ -189051,9 +189066,9 @@
       },
       {
         "name": "Finance",
-        "count": 22,
+        "count": 21,
         "burn_count": 1,
-        "mint_count": 21,
+        "mint_count": 20,
         "event_ids": [
           8160,
           8144,
@@ -189075,15 +189090,14 @@
           8001,
           7986,
           7984,
-          7982,
-          7976
+          7982
         ]
       },
       {
         "name": "Defense",
-        "count": 19,
+        "count": 18,
         "burn_count": 0,
-        "mint_count": 19,
+        "mint_count": 18,
         "event_ids": [
           8160,
           8151,
@@ -189102,8 +189116,7 @@
           8004,
           8003,
           8000,
-          7980,
-          7977
+          7980
         ]
       },
       {
@@ -189217,14 +189230,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 183,
+      "total_mint": 181,
       "direct_action": {
         "count": 173,
-        "pct": 94.5
+        "pct": 95.6
       },
       "editorial_alarm": {
-        "count": 10,
-        "pct": 5.5
+        "count": 8,
+        "pct": 4.4
       },
       "untyped": {
         "count": 0,
@@ -189232,9 +189245,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6053,
+      "total_mint": 6054,
       "direct_action": {
-        "count": 5118,
+        "count": 5119,
         "pct": 84.6
       },
       "editorial_alarm": {
@@ -189247,9 +189260,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 50,
+      "citizen": 48,
       "institutional": 153,
-      "citizen_ratio": 0.246,
+      "citizen_ratio": 0.239,
       "daily": [
         {
           "date": "2026-09-30",
@@ -189284,7 +189297,7 @@
         {
           "date": "2026-10-06",
           "citizen": 2,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -189335,11 +189348,10 @@
         7989,
         7983,
         7981,
-        7980,
-        7978,
-        7976
+        7980
       ],
       "event_ids_institutional": [
+        8179,
         8177,
         8176,
         8175,
@@ -189491,8 +189503,7 @@
         7985,
         7984,
         7982,
-        7979,
-        7977
+        7979
       ]
     }
   }
