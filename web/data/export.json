@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-06T22:06:14.827810+00:00",
-  "total_events": 8205,
+  "generated_at": "2026-10-06T23:06:53.720395+00:00",
+  "total_events": 8206,
   "total_burned": 7991620705,
-  "total_minted": 10653769614,
+  "total_minted": 10653919614,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8206,
+      "event_title": "Latvia moves to expel Russian journalist Leonid Ragozin",
+      "event_url": "https://www.politico.eu/article/latvia-moves-expel-russian-journalist-leonid-ragozin/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.05,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Expulsion curtails press freedom, weakening democratic rights despite security intent. | The expulsion targets a journalist whose rhetoric was deemed supportive of Kremlin aggression, aligning with SDG 16 (Peace and Justice). However, the action risks violating UDHR Article 19 (freedom of expression) and could undermine journalistic pluralism, creating a net negative ethical",
+      "tx_hash": "5Q7x1FkodxGmQ86C3yDcKU5j3bF8p2UGTkfbRHke3cn7uU2zWDpWHdrKu3WvrLaCVMt8ZncWuw9dkCLxHVuNStzx",
+      "created_at": "2026-10-06T23:06:48.363087+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Latvia",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Latvian authorities take action against a journalist whose remarks were interpreted as justifying Kremlin aggression, signaling a stance against disinformation and foreign influence.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Expulsion of a journalist risks violating freedom of expression (UDHR Article 19) and may set a precedent for arbitrary restrictions on press freedom.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential chilling effect on independent journalism, undermining public access to diverse perspectives and critical reporting.\", \"affected_sdgs\": [16, 4], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8205,
       "event_title": "Antisemitism Law Helped Get a Professor Fired for Free Speech, Lawsuit Says",
@@ -188725,8 +188748,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 46,
-        "total_amount": 26804600
+        "count": 45,
+        "total_amount": 26263600
       },
       {
         "country": "France",
@@ -188761,17 +188784,17 @@
         "total_amount": 1200000
       },
       {
-        "country": "Brazil",
-        "count": 2,
-        "total_amount": 1100000
-      },
-      {
         "country": "Kenya",
         "count": 1,
         "total_amount": 50000
       },
       {
         "country": "France",
+        "count": 1,
+        "total_amount": 500000
+      },
+      {
+        "country": "United Kingdom",
         "count": 1,
         "total_amount": 500000
       }
@@ -188783,19 +188806,19 @@
         "events": 9
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.118,
-        "events": 17
-      },
-      {
         "region": "Europe",
-        "burn_ratio": 0.113,
-        "events": 53
+        "burn_ratio": 0.111,
+        "events": 54
       },
       {
         "region": "North America",
-        "burn_ratio": 0.077,
-        "events": 52
+        "burn_ratio": 0.078,
+        "events": 51
+      },
+      {
+        "region": "Latin America",
+        "burn_ratio": 0.062,
+        "events": 16
       },
       {
         "region": "Asia",
@@ -188820,14 +188843,14 @@
         "events": 15
       },
       {
-        "region": "North America",
-        "mint_ratio": 0.923,
-        "events": 52
+        "region": "Latin America",
+        "mint_ratio": 0.938,
+        "events": 16
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.887,
-        "events": 53
+        "region": "North America",
+        "mint_ratio": 0.922,
+        "events": 51
       }
     ],
     "supply_trend_7d": [
@@ -188863,7 +188886,7 @@
       },
       {
         "date": "2026-10-06",
-        "net_minted": 19828760,
+        "net_minted": 19978760,
         "net_burned": 750000
       }
     ],
@@ -188880,8 +188903,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 17,
-        "negative": 182,
+        "positive": 15,
+        "negative": 180,
         "event_ids_positive": [
           8195,
           8178,
@@ -188897,11 +188920,10 @@
           8054,
           8047,
           8038,
-          8012,
-          8009,
-          8006
+          8012
         ],
         "event_ids_negative": [
+          8206,
           8205,
           8204,
           8203,
@@ -189080,15 +189102,12 @@
           8015,
           8014,
           8013,
-          8011,
-          8010,
-          8008,
-          8007
+          8011
         ]
       },
       "UDHR": {
-        "positive": 16,
-        "negative": 165,
+        "positive": 14,
+        "negative": 163,
         "event_ids_positive": [
           8195,
           8178,
@@ -189103,11 +189122,10 @@
           8054,
           8047,
           8038,
-          8012,
-          8009,
-          8006
+          8012
         ],
         "event_ids_negative": [
+          8206,
           8205,
           8204,
           8203,
@@ -189269,15 +189287,12 @@
           8015,
           8014,
           8013,
-          8011,
-          8010,
-          8008,
-          8007
+          8011
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 23,
+        "negative": 22,
         "event_ids_positive": [],
         "event_ids_negative": [
           8186,
@@ -189301,13 +189316,12 @@
           8031,
           8015,
           8014,
-          8013,
-          8007
+          8013
         ]
       },
       "CRC": {
         "positive": 3,
-        "negative": 44,
+        "negative": 43,
         "event_ids_positive": [
           8178,
           8103,
@@ -189356,17 +189370,15 @@
           8027,
           8022,
           8013,
-          8011,
-          8010
+          8011
         ]
       },
       "UNDRIP": {
-        "positive": 3,
-        "negative": 42,
+        "positive": 2,
+        "negative": 41,
         "event_ids_positive": [
           8103,
-          8012,
-          8006
+          8012
         ],
         "event_ids_negative": [
           8202,
@@ -189409,13 +189421,12 @@
           8020,
           8016,
           8014,
-          8011,
-          8010
+          8011
         ]
       },
       "Animal": {
         "positive": 1,
-        "negative": 13,
+        "negative": 12,
         "event_ids_positive": [
           8124
         ],
@@ -189431,13 +189442,12 @@
           8098,
           8055,
           8020,
-          8014,
-          8007
+          8014
         ]
       },
       "PB": {
         "positive": 3,
-        "negative": 68,
+        "negative": 67,
         "event_ids_positive": [
           8107,
           8071,
@@ -189510,8 +189520,7 @@
           8020,
           8016,
           8015,
-          8014,
-          8007
+          8014
         ]
       }
     },
@@ -189519,37 +189528,20 @@
       "niche_pct": 70.3,
       "mainstream_pct": 29.7,
       "total_sources_used": 74,
-      "articles_processed": 200
+      "articles_processed": 196
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 200,
+      "total_events": 196,
       "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
-        "name": "EU",
-        "count": 9,
-        "burn_count": 1,
-        "mint_count": 8,
-        "event_ids": [
-          8177,
-          8159,
-          8153,
-          8080,
-          8046,
-          8033,
-          8021,
-          8007,
-          8006
-        ]
-      },
-      {
         "name": "UN",
-        "count": 8,
+        "count": 7,
         "burn_count": 2,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           8202,
           8199,
@@ -189557,8 +189549,22 @@
           8145,
           8140,
           8139,
-          8124,
-          8010
+          8124
+        ]
+      },
+      {
+        "name": "EU",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          8177,
+          8159,
+          8153,
+          8080,
+          8046,
+          8033,
+          8021
         ]
       },
       {
@@ -189735,22 +189741,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 8,
-        "burn_count": 0,
-        "mint_count": 8,
-        "event_ids": [
-          8171,
-          8165,
-          8109,
-          8075,
-          8037,
-          8021,
-          8018,
-          8008
-        ]
-      },
-      {
         "name": "Agriculture",
         "count": 7,
         "burn_count": 0,
@@ -189763,6 +189753,21 @@
           8069,
           8055,
           8015
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          8171,
+          8165,
+          8109,
+          8075,
+          8037,
+          8021,
+          8018
         ]
       },
       {
@@ -189791,18 +189796,18 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 18,
+      "total_burn": 16,
       "direct_action": {
-        "count": 16,
-        "pct": 88.9
+        "count": 14,
+        "pct": 87.5
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 5.6
+        "pct": 6.2
       },
       "untyped": {
         "count": 1,
-        "pct": 5.6
+        "pct": 6.2
       }
     },
     "burn_composition_all_time": {
@@ -189821,14 +189826,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 182,
+      "total_mint": 180,
       "direct_action": {
-        "count": 172,
-        "pct": 94.5
+        "count": 170,
+        "pct": 94.4
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 5.5
+        "pct": 5.6
       },
       "untyped": {
         "count": 0,
@@ -189836,9 +189841,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6079,
+      "total_mint": 6080,
       "direct_action": {
-        "count": 5142,
+        "count": 5143,
         "pct": 84.6
       },
       "editorial_alarm": {
@@ -189851,9 +189856,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 49,
-      "institutional": 151,
-      "citizen_ratio": 0.245,
+      "citizen": 47,
+      "institutional": 149,
+      "citizen_ratio": 0.24,
       "daily": [
         {
           "date": "2026-09-30",
@@ -189888,7 +189893,7 @@
         {
           "date": "2026-10-06",
           "citizen": 8,
-          "institutional": 26
+          "institutional": 27
         }
       ],
       "event_ids_citizen": [
@@ -189938,11 +189943,10 @@
         8016,
         8014,
         8012,
-        8011,
-        8008,
-        8006
+        8011
       ],
       "event_ids_institutional": [
+        8206,
         8205,
         8204,
         8203,
@@ -190090,10 +190094,7 @@
         8018,
         8017,
         8015,
-        8013,
-        8010,
-        8009,
-        8007
+        8013
       ]
     }
   }
