@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-06T04:06:14.110059+00:00",
-  "total_events": 8177,
-  "total_burned": 7990870705,
+  "generated_at": "2026-10-06T05:06:47.063306+00:00",
+  "total_events": 8178,
+  "total_burned": 7991570705,
   "total_minted": 10636868454,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8178,
+      "event_title": "Cabinet wants phones out of schools from January",
+      "event_url": "https://www.dutchnews.nl/2026/10/cabinet-wants-phones-out-of-schools-from-january/",
+      "event_source": "DutchNews.nl",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action protects student well-being and education, outweighing equity concerns. | The policy addresses critical concerns about student well-being and educational equity by reducing distractions and screen time, aligning with SDGs 3 and 4. However, it risks violating the rights of students with disabilities and may exacerbate inequalities if enforcement is uneven. Th",
+      "tx_hash": "3SQm8jFryqm4QsXg39hvsLsj1v81gcGGMyfzNZaG15UmhY9ve2RqTPrkb7Bod56vJqyPmPZ1mjrJrMjW3MqVNftV",
+      "created_at": "2026-10-06T05:06:41.554096+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Netherlands",
+      "region": "Europe",
+      "administration": "Netherlands-PVV",
+      "positive_aspects_json": "[{\"description\": \"Government-mandated ban on mobile phones in primary and secondary schools to reduce classroom distractions, improve focus, and potentially enhance student mental health and academic performance.\", \"affected_sdgs\": [3, 4, 10], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"CRC\", \"UDHR\"]}, {\"description\": \"Policy aligns with growing evidence linking reduced screen time to better cognitive development and social interaction among children.\", \"affected_sdgs\": [3, 4], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential exclusion of students with disabilities who rely on mobile devices for accessibility tools (e.g., speech-to-text, communication aids).\", \"affected_sdgs\": [4, 10], \"violated_rights\": [\"UDHR Article 26\", \"CRC Article 23\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Lack of clarity on enforcement mechanisms may lead to inconsistent application, disproportionately affecting marginalized students.\", \"affected_sdgs\": [4, 10], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 532000
+    },
     {
       "id": 8177,
       "event_title": "Australia's migrant policy offers lessons for EU and US",
@@ -188090,14 +188113,14 @@
         "total_amount": 4344880
       },
       {
-        "country": "France",
-        "count": 11,
-        "total_amount": 4297600
-      },
-      {
         "country": "Brazil",
         "count": 10,
         "total_amount": 4395000
+      },
+      {
+        "country": "France",
+        "count": 10,
+        "total_amount": 4072600
       },
       {
         "country": "Australia",
@@ -188110,6 +188133,11 @@
         "country": "United States",
         "count": 5,
         "total_amount": 4882500
+      },
+      {
+        "country": "Netherlands",
+        "count": 2,
+        "total_amount": 1200000
       },
       {
         "country": "Brazil",
@@ -188125,18 +188153,13 @@
         "country": "United Kingdom",
         "count": 1,
         "total_amount": 500000
-      },
-      {
-        "country": "Uganda",
-        "count": 1,
-        "total_amount": 475000
       }
     ],
     "top_regions_sustainable": [
       {
         "region": "Europe",
-        "burn_ratio": 0.113,
-        "events": 53
+        "burn_ratio": 0.135,
+        "events": 52
       },
       {
         "region": "Latin America",
@@ -188220,7 +188243,7 @@
       {
         "date": "2026-10-06",
         "net_minted": 2927600,
-        "net_burned": 0
+        "net_burned": 700000
       }
     ],
     "event_of_the_day": {
@@ -188236,9 +188259,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 18,
-        "negative": 186,
+        "positive": 19,
+        "negative": 183,
         "event_ids_positive": [
+          8178,
           8164,
           8143,
           8137,
@@ -188441,16 +188465,14 @@
           7979,
           7978,
           7977,
-          7976,
-          7975,
-          7974,
-          7973
+          7976
         ]
       },
       "UDHR": {
-        "positive": 17,
-        "negative": 172,
+        "positive": 18,
+        "negative": 169,
         "event_ids_positive": [
+          8178,
           8164,
           8143,
           8137,
@@ -188638,15 +188660,12 @@
           7979,
           7978,
           7977,
-          7976,
-          7975,
-          7974,
-          7973
+          7976
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 26,
+        "negative": 24,
         "event_ids_positive": [],
         "event_ids_negative": [
           8173,
@@ -188672,15 +188691,14 @@
           7997,
           7994,
           7980,
-          7977,
-          7974,
-          7973
+          7977
         ]
       },
       "CRC": {
-        "positive": 2,
-        "negative": 50,
+        "positive": 3,
+        "negative": 48,
         "event_ids_positive": [
+          8178,
           8103,
           8064
         ],
@@ -188732,9 +188750,7 @@
           7980,
           7979,
           7978,
-          7977,
-          7974,
-          7973
+          7977
         ]
       },
       "UNDRIP": {
@@ -188891,14 +188907,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.0,
-      "mainstream_pct": 32.0,
-      "total_sources_used": 75,
-      "articles_processed": 205
+      "niche_pct": 67.6,
+      "mainstream_pct": 32.4,
+      "total_sources_used": 74,
+      "articles_processed": 203
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 205,
+      "total_events": 203,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -188988,15 +189004,6 @@
         "event_ids": [
           8021
         ]
-      },
-      {
-        "name": "UNHCR",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          7974
-        ]
       }
     ],
     "top_sectors_7d": [
@@ -189044,9 +189051,9 @@
       },
       {
         "name": "Finance",
-        "count": 23,
+        "count": 22,
         "burn_count": 1,
-        "mint_count": 22,
+        "mint_count": 21,
         "event_ids": [
           8160,
           8144,
@@ -189069,15 +189076,14 @@
           7986,
           7984,
           7982,
-          7976,
-          7974
+          7976
         ]
       },
       {
         "name": "Defense",
-        "count": 20,
+        "count": 19,
         "burn_count": 0,
-        "mint_count": 20,
+        "mint_count": 19,
         "event_ids": [
           8160,
           8151,
@@ -189097,15 +189103,14 @@
           8003,
           8000,
           7980,
-          7977,
-          7975
+          7977
         ]
       },
       {
         "name": "Construction",
-        "count": 16,
+        "count": 15,
         "burn_count": 2,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           8156,
           8148,
@@ -189121,8 +189126,7 @@
           8054,
           8051,
           7989,
-          7986,
-          7975
+          7986
         ]
       },
       {
@@ -189171,36 +189175,36 @@
         ]
       },
       {
-        "name": "Transport",
+        "name": "Forestry",
         "count": 3,
         "burn_count": 0,
         "mint_count": 3,
         "event_ids": [
-          8044,
           8015,
-          7973
+          8007,
+          7996
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 19,
+      "total_burn": 20,
       "direct_action": {
-        "count": 16,
-        "pct": 84.2
+        "count": 17,
+        "pct": 85.0
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 10.5
+        "pct": 10.0
       },
       "untyped": {
         "count": 1,
-        "pct": 5.3
+        "pct": 5.0
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2116,
+      "total_burn": 2117,
       "direct_action": {
-        "count": 1672,
+        "count": 1673,
         "pct": 79.0
       },
       "editorial_consciousness": {
@@ -189213,14 +189217,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 186,
+      "total_mint": 183,
       "direct_action": {
-        "count": 176,
-        "pct": 94.6
+        "count": 173,
+        "pct": 94.5
       },
       "editorial_alarm": {
         "count": 10,
-        "pct": 5.4
+        "pct": 5.5
       },
       "untyped": {
         "count": 0,
@@ -189243,9 +189247,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 49,
-      "institutional": 156,
-      "citizen_ratio": 0.239,
+      "citizen": 50,
+      "institutional": 153,
+      "citizen_ratio": 0.246,
       "daily": [
         {
           "date": "2026-09-30",
@@ -189279,11 +189283,12 @@
         },
         {
           "date": "2026-10-06",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 5
         }
       ],
       "event_ids_citizen": [
+        8178,
         8173,
         8168,
         8166,
@@ -189487,10 +189492,7 @@
         7984,
         7982,
         7979,
-        7977,
-        7975,
-        7974,
-        7973
+        7977
       ]
     }
   }
