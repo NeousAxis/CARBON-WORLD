@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-06T06:06:50.474660+00:00",
-  "total_events": 8179,
+  "generated_at": "2026-10-06T07:05:16.666500+00:00",
+  "total_events": 8180,
   "total_burned": 7991570705,
-  "total_minted": 10637368454,
+  "total_minted": 10638044454,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8180,
+      "event_title": "Indonesia threatens prison time for unauthorized downloads of forest data",
+      "event_url": "https://news.mongabay.com/2026/10/indonesia-threatens-prison-time-for-unauthorized-downloads-of-forest-data/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.53,
+      "confidence": 8,
+      "justification": "The restrictive data law curtails research and transparency, harming climate action and rights, thus warrants a MINT. | The new law heavily restricts access to vital forest data, undermining climate action, biodiversity protection, and fundamental freedoms, outweighing any modest data‑security benefit.",
+      "tx_hash": "4iumDRbnfWiWtZ3vq6uBNE8SRHEJYKt9gS3YZ4KPrrwt1Y2oAFhDHVugWuG1in9yjNJafwEF2MhTiYDL66ABDdK5",
+      "created_at": "2026-10-06T07:05:11.321847+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Potentially safeguards sensitive forest data from misuse\", \"affected_sdgs\": [15], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Criminalising unauthorized downloads limits scientific research, climate monitoring and public oversight\", \"affected_sdgs\": [13, 15, 16, 17], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 27\", \"UNDRIP Article 31\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 676000
+    },
     {
       "id": 8179,
       "event_title": "Trump targets tax-free diesel as Republicans approach midterms",
@@ -188200,21 +188223,21 @@
         "events": 53
       },
       {
-        "region": "Oceania",
+        "region": "Asia",
         "burn_ratio": 0.0,
-        "events": 8
+        "events": 16
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 16
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 8
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 15
       },
       {
         "region": "MENA",
@@ -188265,7 +188288,7 @@
       },
       {
         "date": "2026-10-06",
-        "net_minted": 3427600,
+        "net_minted": 4103600,
         "net_burned": 700000
       }
     ],
@@ -188283,7 +188306,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 181,
+        "negative": 182,
         "event_ids_positive": [
           8178,
           8164,
@@ -188306,6 +188329,7 @@
           7983
         ],
         "event_ids_negative": [
+          8180,
           8179,
           8177,
           8176,
@@ -188491,7 +188515,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 166,
+        "negative": 167,
         "event_ids_positive": [
           8178,
           8164,
@@ -188513,6 +188537,7 @@
           7983
         ],
         "event_ids_negative": [
+          8180,
           8177,
           8176,
           8175,
@@ -188770,13 +188795,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [
           8103,
           8012,
           8006
         ],
         "event_ids_negative": [
+          8180,
           8173,
           8158,
           8157,
@@ -188845,13 +188871,14 @@
       },
       "PB": {
         "positive": 3,
-        "negative": 65,
+        "negative": 66,
         "event_ids_positive": [
           8107,
           8071,
           8012
         ],
         "event_ids_negative": [
+          8180,
           8179,
           8175,
           8173,
@@ -188924,11 +188951,11 @@
       "niche_pct": 68.5,
       "mainstream_pct": 31.5,
       "total_sources_used": 73,
-      "articles_processed": 201
+      "articles_processed": 202
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 201,
+      "total_events": 202,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -189189,10 +189216,11 @@
       },
       {
         "name": "Forestry",
-        "count": 3,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          8180,
           8015,
           8007,
           7996
@@ -189230,14 +189258,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 181,
+      "total_mint": 182,
       "direct_action": {
         "count": 173,
-        "pct": 95.6
+        "pct": 95.1
       },
       "editorial_alarm": {
-        "count": 8,
-        "pct": 4.4
+        "count": 9,
+        "pct": 4.9
       },
       "untyped": {
         "count": 0,
@@ -189245,13 +189273,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6054,
+      "total_mint": 6055,
       "direct_action": {
         "count": 5119,
-        "pct": 84.6
+        "pct": 84.5
       },
       "editorial_alarm": {
-        "count": 374,
+        "count": 375,
         "pct": 6.2
       },
       "untyped": {
@@ -189260,9 +189288,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 48,
+      "citizen": 49,
       "institutional": 153,
-      "citizen_ratio": 0.239,
+      "citizen_ratio": 0.243,
       "daily": [
         {
           "date": "2026-09-30",
@@ -189296,11 +189324,12 @@
         },
         {
           "date": "2026-10-06",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 6
         }
       ],
       "event_ids_citizen": [
+        8180,
         8178,
         8173,
         8168,
