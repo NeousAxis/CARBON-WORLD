@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-07T04:05:28.849324+00:00",
-  "total_events": 8214,
+  "generated_at": "2026-10-07T05:07:09.082884+00:00",
+  "total_events": 8215,
   "total_burned": 7992095705,
-  "total_minted": 10662580614,
+  "total_minted": 10662641014,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8215,
+      "event_title": "Deforestation along the A412 highway route in Haute-Savoie sparks public tension",
+      "event_url": "https://www.lemonde.fr/planete/article/2026/10/07/sur-le-trace-de-l-a412-en-haute-savoie-le-deboisement-a-marche-forcee-crispe-une-partie-de-la-population_6789499_3244.html",
+      "event_source": "Le Monde Planete",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.56,
+      "confidence": 8,
+      "justification": "Premature deforestation and procedural violations outweigh infrastructure benefits, causing irreversible harm. | The A412 highway project presents a conflict between economic development and environmental/social justice. While it may improve regional infrastructure, the premature deforestation and procedural violations outweigh the benefits, particularly given the irreversible ecological damage and disregard for community rights. The net ethical impact is negative.",
+      "tx_hash": "ah6nysXozBvE1M9f8CEpRCXmaSjPMog36s7uiGq64s4RXxmjg2xKdsLB6Q9NqbB3NJYW5Qe3BXerqF6wkbTRXLh",
+      "created_at": "2026-10-07T05:07:03.310117+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Infrastructure project (A412 highway) aims to improve regional connectivity and economic access, potentially supporting local businesses and commuters.\", \"affected_sdgs\": [8, 9, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deforestation for highway construction without completed expropriation processes, violating procedural rights and environmental protections, leading to biodiversity loss and habitat destruction.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 17\", \"UNDRIP Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}, {\"description\": \"Public tension and distrust due to lack of transparency and potential displacement of local populations, undermining social cohesion and community rights.\", \"affected_sdgs\": [11, 16], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP Article 10\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8214,
       "event_title": "Australia, co-chair of COP31, continues to rely on coal",
@@ -188932,13 +188955,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 46,
-        "total_amount": 27011600
+        "count": 45,
+        "total_amount": 26711600
       },
       {
         "country": "France",
-        "count": 13,
-        "total_amount": 4608000
+        "count": 14,
+        "total_amount": 4668400
       },
       {
         "country": "United Kingdom",
@@ -188991,13 +189014,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.109,
-        "events": 55
+        "burn_ratio": 0.107,
+        "events": 56
       },
       {
         "region": "North America",
-        "burn_ratio": 0.059,
-        "events": 51
+        "burn_ratio": 0.06,
+        "events": 50
       },
       {
         "region": "Latin America",
@@ -189019,12 +189042,12 @@
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 12
+        "events": 11
       },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 14
+        "events": 13
       },
       {
         "region": "Latin America",
@@ -189033,8 +189056,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.941,
-        "events": 51
+        "mint_ratio": 0.94,
+        "events": 50
       }
     ],
     "supply_trend_7d": [
@@ -189070,7 +189093,7 @@
       },
       {
         "date": "2026-10-07",
-        "net_minted": 8661000,
+        "net_minted": 8721400,
         "net_burned": 475000
       }
     ],
@@ -189088,7 +189111,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 15,
-        "negative": 183,
+        "negative": 180,
         "event_ids_positive": [
           8212,
           8195,
@@ -189107,6 +189130,7 @@
           8038
         ],
         "event_ids_negative": [
+          8215,
           8214,
           8213,
           8211,
@@ -189285,16 +189309,12 @@
           8023,
           8022,
           8021,
-          8020,
-          8019,
-          8018,
-          8017,
-          8016
+          8020
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 164,
+        "negative": 161,
         "event_ids_positive": [
           8212,
           8195,
@@ -189312,6 +189332,7 @@
           8038
         ],
         "event_ids_negative": [
+          8215,
           8213,
           8211,
           8210,
@@ -189471,11 +189492,7 @@
           8024,
           8023,
           8022,
-          8021,
-          8019,
-          8018,
-          8017,
-          8016
+          8021
         ]
       },
       "ILO": {
@@ -189565,6 +189582,7 @@
           8103
         ],
         "event_ids_negative": [
+          8215,
           8211,
           8210,
           8202,
@@ -189604,8 +189622,7 @@
           8026,
           8024,
           8022,
-          8020,
-          8016
+          8020
         ]
       },
       "Animal": {
@@ -189637,6 +189654,7 @@
           8071
         ],
         "event_ids_negative": [
+          8215,
           8214,
           8211,
           8210,
@@ -189704,20 +189722,19 @@
           8026,
           8025,
           8021,
-          8020,
-          8016
+          8020
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 72.0,
-      "mainstream_pct": 28.0,
+      "niche_pct": 74.7,
+      "mainstream_pct": 25.3,
       "total_sources_used": 75,
-      "articles_processed": 199
+      "articles_processed": 196
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 199,
+      "total_events": 196,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -189882,6 +189899,29 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 15,
+        "burn_count": 2,
+        "mint_count": 13,
+        "event_ids": [
+          8215,
+          8184,
+          8156,
+          8148,
+          8135,
+          8132,
+          8116,
+          8115,
+          8100,
+          8097,
+          8087,
+          8085,
+          8075,
+          8054,
+          8051
+        ]
+      },
+      {
         "name": "Defense",
         "count": 15,
         "burn_count": 1,
@@ -189905,32 +189945,10 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 14,
-        "burn_count": 2,
-        "mint_count": 12,
-        "event_ids": [
-          8184,
-          8156,
-          8148,
-          8135,
-          8132,
-          8116,
-          8115,
-          8100,
-          8097,
-          8087,
-          8085,
-          8075,
-          8054,
-          8051
-        ]
-      },
-      {
         "name": "Tech",
-        "count": 8,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 8,
+        "mint_count": 7,
         "event_ids": [
           8211,
           8171,
@@ -189938,8 +189956,7 @@
           8109,
           8075,
           8037,
-          8021,
-          8018
+          8021
         ]
       },
       {
@@ -189971,10 +189988,11 @@
       },
       {
         "name": "Transport",
-        "count": 2,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          8215,
           8184,
           8044
         ]
@@ -190011,14 +190029,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 183,
+      "total_mint": 180,
       "direct_action": {
-        "count": 173,
-        "pct": 94.5
+        "count": 171,
+        "pct": 95.0
       },
       "editorial_alarm": {
-        "count": 10,
-        "pct": 5.5
+        "count": 9,
+        "pct": 5.0
       },
       "untyped": {
         "count": 0,
@@ -190026,9 +190044,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6087,
+      "total_mint": 6088,
       "direct_action": {
-        "count": 5150,
+        "count": 5151,
         "pct": 84.6
       },
       "editorial_alarm": {
@@ -190041,9 +190059,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 46,
-      "institutional": 153,
-      "citizen_ratio": 0.231,
+      "citizen": 44,
+      "institutional": 152,
+      "citizen_ratio": 0.224,
       "daily": [
         {
           "date": "2026-10-01",
@@ -190078,7 +190096,7 @@
         {
           "date": "2026-10-07",
           "citizen": 2,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -190125,11 +190143,10 @@
         8027,
         8026,
         8023,
-        8022,
-        8019,
-        8016
+        8022
       ],
       "event_ids_institutional": [
+        8215,
         8214,
         8213,
         8212,
@@ -190280,9 +190297,7 @@
         8025,
         8024,
         8021,
-        8020,
-        8018,
-        8017
+        8020
       ]
     }
   }
