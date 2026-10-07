@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-07T11:07:05.716503+00:00",
-  "total_events": 8219,
+  "generated_at": "2026-10-07T12:06:48.991722+00:00",
+  "total_events": 8220,
   "total_burned": 7992095705,
-  "total_minted": 10664913014,
+  "total_minted": 10666113014,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8220,
+      "event_title": "European Parliament hardens line on China",
+      "event_url": "https://www.scmp.com/news/china/diplomacy/article/3370075/no-more-dumping-no-more-spying-european-parliament-hardens-line-china?utm_source=rss_feed",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 1200000,
+      "final_score": -2.15,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Parliament's resolution punishes perceived Chinese harms and aims to protect EU and global security, outweighing escalation risks. | The European Parliament's resolution strengthens trade protections and democratic accountability but risks escalating geopolitical conflict and economic retaliation. While it addresses unfair industrial practices, the framing of China as an 'ex",
+      "tx_hash": "3RDMRtAbg7upGXYyGVcSYBiQrCDdu2J8eN62PdzVad8wpqNjXgmY7Pa4qvFieGLhdgH7DCmZqAzRz79Euwpq5Hf",
+      "created_at": "2026-10-07T12:06:44.109246+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"European Parliament adopts a binding resolution to counter industrial overcapacity and unfair trade practices attributed to China, directly targeting dumping and state subsidies.\", \"affected_sdgs\": [8, 9, 10, 12, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Resolution explicitly links China's industrial policy to security risks for Europe, potentially strengthening supply-chain resilience and reducing dependency on non-aligned actors.\", \"affected_sdgs\": [9, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Parliamentary vote signals democratic accountability and institutional transparency in EU foreign policy, reinforcing rule-based international order.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Resolution frames China as an 'existential threat' and calls for continuous naval presence near Taiwan, escalating geopolitical tensions and risking military confrontation.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for retaliatory trade measures from China, harming European industries and workers dependent on Chinese markets, particularly in renewable energy and automotive sectors.\", \"affected_sdgs\": [8, 9, 13], \"violated_rights\": [\"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Resolution may undermine diplomatic channels for climate cooperation (e.g., EU-China climate dialogues), delaying progress on SDG 13 and Paris Agreement goals.\", \"affected_sdgs\": [13, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8219,
       "event_title": "Bill for new election law passes confidence tests before final vote",
@@ -189185,7 +189208,7 @@
       },
       {
         "date": "2026-10-07",
-        "net_minted": 10993400,
+        "net_minted": 12193400,
         "net_burned": 475000
       }
     ],
@@ -189203,7 +189226,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 15,
-        "negative": 178,
+        "negative": 179,
         "event_ids_positive": [
           8212,
           8195,
@@ -189222,6 +189245,7 @@
           8038
         ],
         "event_ids_negative": [
+          8220,
           8219,
           8218,
           8217,
@@ -189404,7 +189428,7 @@
       },
       "UDHR": {
         "positive": 14,
-        "negative": 160,
+        "negative": 161,
         "event_ids_positive": [
           8212,
           8195,
@@ -189422,6 +189446,7 @@
           8038
         ],
         "event_ids_negative": [
+          8220,
           8219,
           8218,
           8217,
@@ -189809,18 +189834,33 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 76.6,
-      "mainstream_pct": 23.4,
+      "niche_pct": 75.3,
+      "mainstream_pct": 24.7,
       "total_sources_used": 77,
-      "articles_processed": 194
+      "articles_processed": 195
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 194,
+      "total_events": 195,
       "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          8220,
+          8177,
+          8159,
+          8153,
+          8080,
+          8046,
+          8033
+        ]
+      },
       {
         "name": "UN",
         "count": 7,
@@ -189834,20 +189874,6 @@
           8140,
           8139,
           8124
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 6,
-        "burn_count": 0,
-        "mint_count": 6,
-        "event_ids": [
-          8177,
-          8159,
-          8153,
-          8080,
-          8046,
-          8033
         ]
       },
       {
@@ -189894,6 +189920,15 @@
         "event_ids": [
           8056,
           8053
+        ]
+      },
+      {
+        "name": "European Parliament",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          8220
         ]
       }
     ],
@@ -190096,9 +190131,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 178,
+      "total_mint": 179,
       "direct_action": {
-        "count": 170,
+        "count": 171,
         "pct": 95.5
       },
       "editorial_alarm": {
@@ -190111,9 +190146,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6092,
+      "total_mint": 6093,
       "direct_action": {
-        "count": 5155,
+        "count": 5156,
         "pct": 84.6
       },
       "editorial_alarm": {
@@ -190127,8 +190162,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 43,
-      "institutional": 151,
-      "citizen_ratio": 0.222,
+      "institutional": 152,
+      "citizen_ratio": 0.221,
       "daily": [
         {
           "date": "2026-10-01",
@@ -190163,7 +190198,7 @@
         {
           "date": "2026-10-07",
           "citizen": 3,
-          "institutional": 10
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -190212,6 +190247,7 @@
         8026
       ],
       "event_ids_institutional": [
+        8220,
         8219,
         8218,
         8217,
