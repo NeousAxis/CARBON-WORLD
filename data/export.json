@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-08T13:07:14.675281+00:00",
-  "total_events": 8258,
+  "generated_at": "2026-10-08T14:06:32.511974+00:00",
+  "total_events": 8259,
   "total_burned": 7993095705,
-  "total_minted": 10699565554,
+  "total_minted": 10699633154,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8259,
+      "event_title": "Armed Border Agents Arrest Protesters, Bulldoze 200-Year-Old Tree to Build Border Wall",
+      "event_url": "https://theintercept.com/2026/10/08/border-wall-tree-sit-protest-bulldozed/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -2.89,
+      "confidence": 8,
+      "justification": "Government action enables ecological destruction and suppresses dissent, violating multiple ethical frameworks. | The protest represents a legitimate act of resistance against ecological and cultural harm, aligning with SDGs 13, 15, and 16. However, the government's actions—arrests and destruction of heritage—violate multiple frameworks, including UNDRIP and UDHR, with irreversible environmental consequences. The negative aspects outweigh the positive due to the scale of harm and institutional i",
+      "tx_hash": "3GtMnQMmiJSa7mPA5gdkRZ9b7mUESBv8gMsrtMoTGGsEpcMeexQL5PmfZdhVo2EDee4DuF7sj29ep7V9bvR5vaMR",
+      "created_at": "2026-10-08T14:06:26.605685+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Citizen-led protest against border wall construction, involving direct action (tree-sit) to protect ecological and cultural heritage.\", \"affected_sdgs\": [13, 15, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Government agents arrested protesters and destroyed a 200-year-old tree, violating environmental protections and indigenous/cultural heritage rights.\", \"affected_sdgs\": [15, 16], \"violated_rights\": [\"UDHR Article 20\", \"UNDRIP Articles 8, 25, 29\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}, {\"description\": \"Border wall construction accelerates habitat fragmentation, biodiversity loss, and disrupts indigenous land stewardship.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UNDRIP Articles 25, 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8258,
       "event_title": "RSA audit reveals major governance failures, misuse of poppy trust funds",
@@ -189944,8 +189967,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 41,
-        "total_amount": 24125900
+        "count": 42,
+        "total_amount": 24193500
       },
       {
         "country": "France",
@@ -190013,8 +190036,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.044,
-        "events": 45
+        "burn_ratio": 0.043,
+        "events": 46
       },
       {
         "region": "Oceania",
@@ -190040,8 +190063,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.956,
-        "events": 45
+        "mint_ratio": 0.957,
+        "events": 46
       },
       {
         "region": "Europe",
@@ -190082,7 +190105,7 @@
       },
       {
         "date": "2026-10-08",
-        "net_minted": 10717640,
+        "net_minted": 10785240,
         "net_burned": 0
       }
     ],
@@ -190100,7 +190123,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 16,
-        "negative": 190,
+        "negative": 191,
         "event_ids_positive": [
           8238,
           8224,
@@ -190120,6 +190143,7 @@
           8054
         ],
         "event_ids_negative": [
+          8259,
           8258,
           8257,
           8256,
@@ -190314,7 +190338,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 171,
+        "negative": 172,
         "event_ids_positive": [
           8238,
           8224,
@@ -190333,6 +190357,7 @@
           8054
         ],
         "event_ids_negative": [
+          8259,
           8258,
           8257,
           8256,
@@ -190591,12 +190616,13 @@
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           8221,
           8103
         ],
         "event_ids_negative": [
+          8259,
           8257,
           8255,
           8251,
@@ -190667,13 +190693,14 @@
       },
       "PB": {
         "positive": 3,
-        "negative": 76,
+        "negative": 77,
         "event_ids_positive": [
           8238,
           8107,
           8071
         ],
         "event_ids_negative": [
+          8259,
           8257,
           8256,
           8255,
@@ -190757,11 +190784,11 @@
       "niche_pct": 75.9,
       "mainstream_pct": 24.1,
       "total_sources_used": 79,
-      "articles_processed": 207
+      "articles_processed": 208
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 207,
+      "total_events": 208,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -191059,9 +191086,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 190,
+      "total_mint": 191,
       "direct_action": {
-        "count": 177,
+        "count": 178,
         "pct": 93.2
       },
       "editorial_alarm": {
@@ -191074,9 +191101,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6128,
+      "total_mint": 6129,
       "direct_action": {
-        "count": 5186,
+        "count": 5187,
         "pct": 84.6
       },
       "editorial_alarm": {
@@ -191089,9 +191116,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 52,
+      "citizen": 53,
       "institutional": 155,
-      "citizen_ratio": 0.251,
+      "citizen_ratio": 0.255,
       "daily": [
         {
           "date": "2026-10-02",
@@ -191125,11 +191152,12 @@
         },
         {
           "date": "2026-10-08",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        8259,
         8257,
         8256,
         8255,
