@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-08T12:08:12.333070+00:00",
-  "total_events": 8257,
+  "generated_at": "2026-10-08T13:07:14.675281+00:00",
+  "total_events": 8258,
   "total_burned": 7993095705,
-  "total_minted": 10699505154,
+  "total_minted": 10699565554,
   "pending_reviews": 4,
   "events": [
+    {
+      "id": 8258,
+      "event_title": "RSA audit reveals major governance failures, misuse of poppy trust funds",
+      "event_url": "https://www.rnz.co.nz/news/business/1796350/rsa-audit-finds-significant-governance-mistakes-failures-but-no-evidence-of-fraud",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.1,
+      "confidence": 8,
+      "justification": "Misuse of veterans' welfare funds and governance failures outweigh audit accountability. | The audit's revelation of governance failures is a positive step toward accountability, aligning with SDG 16 (Peace, Justice, and Strong Institutions). However, the misuse of funds intended for veterans' welfare constitutes a significant ethical breach, violating rights to social security and an adequate standard of living (UDHR Articles 22 and 25) and undermining multiple SDGs. The net ethical impact is n",
+      "tx_hash": "3neBrDm3sn7rSHhqjELtsMtgjxbp5ex43bPqF5KdXKGSRBBdEGUYTbFLn5ML27YXs6ee7RpdwgqRYpeRgiCQpB25",
+      "created_at": "2026-10-08T13:07:09.230719+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Audit conducted reveals governance failures, enabling accountability and potential corrective action for misuse of funds intended for veterans' welfare.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Misuse of poppy trust funds (intended for veterans' welfare) for unrelated building work, undermining trust and diverting resources from intended beneficiaries (veterans and their families).\", \"affected_sdgs\": [1, 3, 8, 10, 16], \"violated_rights\": [\"UDHR Article 22\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Governance failures within a veterans' association erode institutional credibility and may discourage future donations or support for veterans' causes.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8257,
       "event_title": "The Drava flows through my veins: we are fighting to save the Amazon of Europe from factory farms",
@@ -189921,8 +189944,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 25477900
+        "count": 41,
+        "total_amount": 24125900
       },
       {
         "country": "France",
@@ -189990,25 +190013,25 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.043,
-        "events": 47
+        "burn_ratio": 0.044,
+        "events": 45
       },
       {
-        "region": "Asia",
+        "region": "Oceania",
         "burn_ratio": 0.0,
         "events": 10
       }
     ],
     "top_regions_destructive": [
       {
-        "region": "Asia",
+        "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 10
       },
       {
-        "region": "Oceania",
+        "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 9
+        "events": 10
       },
       {
         "region": "MENA",
@@ -190017,8 +190040,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.957,
-        "events": 47
+        "mint_ratio": 0.956,
+        "events": 45
       },
       {
         "region": "Europe",
@@ -190059,7 +190082,7 @@
       },
       {
         "date": "2026-10-08",
-        "net_minted": 10657240,
+        "net_minted": 10717640,
         "net_burned": 0
       }
     ],
@@ -190077,7 +190100,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 16,
-        "negative": 191,
+        "negative": 190,
         "event_ids_positive": [
           8238,
           8224,
@@ -190097,6 +190120,7 @@
           8054
         ],
         "event_ids_negative": [
+          8258,
           8257,
           8256,
           8255,
@@ -190285,14 +190309,12 @@
           8056,
           8055,
           8053,
-          8052,
-          8051,
-          8050
+          8052
         ]
       },
       "UDHR": {
         "positive": 15,
-        "negative": 172,
+        "negative": 171,
         "event_ids_positive": [
           8238,
           8224,
@@ -190311,6 +190333,7 @@
           8054
         ],
         "event_ids_negative": [
+          8258,
           8257,
           8256,
           8255,
@@ -190480,9 +190503,7 @@
           8057,
           8056,
           8053,
-          8052,
-          8051,
-          8050
+          8052
         ]
       },
       "ILO": {
@@ -190646,7 +190667,7 @@
       },
       "PB": {
         "positive": 3,
-        "negative": 77,
+        "negative": 76,
         "event_ids_positive": [
           8238,
           8107,
@@ -190728,20 +190749,19 @@
           8060,
           8058,
           8057,
-          8055,
-          8051
+          8055
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 76.5,
-      "mainstream_pct": 23.5,
-      "total_sources_used": 81,
-      "articles_processed": 208
+      "niche_pct": 75.9,
+      "mainstream_pct": 24.1,
+      "total_sources_used": 79,
+      "articles_processed": 207
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 208,
+      "total_events": 207,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -190879,10 +190899,11 @@
       },
       {
         "name": "Finance",
-        "count": 20,
+        "count": 21,
         "burn_count": 1,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          8258,
           8247,
           8242,
           8228,
@@ -190906,29 +190927,6 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 15,
-        "burn_count": 2,
-        "mint_count": 13,
-        "event_ids": [
-          8215,
-          8184,
-          8156,
-          8148,
-          8135,
-          8132,
-          8116,
-          8115,
-          8100,
-          8097,
-          8087,
-          8085,
-          8075,
-          8054,
-          8051
-        ]
-      },
-      {
         "name": "Defense",
         "count": 14,
         "burn_count": 1,
@@ -190948,6 +190946,28 @@
           8091,
           8083,
           8076
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 14,
+        "burn_count": 2,
+        "mint_count": 12,
+        "event_ids": [
+          8215,
+          8184,
+          8156,
+          8148,
+          8135,
+          8132,
+          8116,
+          8115,
+          8100,
+          8097,
+          8087,
+          8085,
+          8075,
+          8054
         ]
       },
       {
@@ -191039,9 +191059,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 191,
+      "total_mint": 190,
       "direct_action": {
-        "count": 178,
+        "count": 177,
         "pct": 93.2
       },
       "editorial_alarm": {
@@ -191054,9 +191074,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6127,
+      "total_mint": 6128,
       "direct_action": {
-        "count": 5185,
+        "count": 5186,
         "pct": 84.6
       },
       "editorial_alarm": {
@@ -191070,8 +191090,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 52,
-      "institutional": 156,
-      "citizen_ratio": 0.25,
+      "institutional": 155,
+      "citizen_ratio": 0.251,
       "daily": [
         {
           "date": "2026-10-02",
@@ -191106,7 +191126,7 @@
         {
           "date": "2026-10-08",
           "citizen": 5,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -191164,6 +191184,7 @@
         8057
       ],
       "event_ids_institutional": [
+        8258,
         8254,
         8253,
         8251,
@@ -191317,9 +191338,7 @@
         8055,
         8054,
         8053,
-        8052,
-        8051,
-        8050
+        8052
       ]
     }
   }
