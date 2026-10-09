@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-09T14:05:48.430855+00:00",
-  "total_events": 8301,
+  "generated_at": "2026-10-09T15:06:17.932809+00:00",
+  "total_events": 8302,
   "total_burned": 7994745705,
-  "total_minted": 10720809764,
+  "total_minted": 10727569764,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8302,
+      "event_title": "Statement on the International Criminal Court following announcement of US sanctions",
+      "event_url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2127",
+      "event_source": "European Commission Press",
+      "decision": "MINT",
+      "amount_crbn": 6760000,
+      "final_score": -2.41,
+      "confidence": 8,
+      "justification": "US sanctions against the ICC undermine international justice, enabling impunity and weakening multilateral legal frameworks. | While the EU's reaffirmation of support for the ICC is a positive step for international justice and accountability, the US announcement of sanctions against the ICC constitutes a significant ethical cost. The latter undermines the rule of law, weakens multilateral institutions, and risks enabling impunity for grave crimes, outweighing the positive reinforcement provided",
+      "tx_hash": "37LKUvN2UnADkxn9DjMSGhz2rLRLs1k6Sc5Y5CxTwdNi4EtPQHFVe7DPzi5S2qvhesx4JuJtBygeBEXGQhVVGaB8",
+      "created_at": "2026-10-09T15:06:11.943155+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"European Commission reaffirms support for the International Criminal Court (ICC), reinforcing international justice mechanisms and accountability for atrocity crimes.\", \"affected_sdgs\": [16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US announcement of intent to impose sanctions on the ICC undermines the court's independence and ability to pursue justice, weakening international legal frameworks and enabling impunity for atrocity crimes.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8301,
       "event_title": "Poland: Lifeline for Ukrainian Refugees Confronts Donor Fatigue and Online Abuse",
@@ -190998,7 +191021,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.068,
-        "events": 74
+        "events": 73
       },
       {
         "region": "North America",
@@ -191035,7 +191058,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.932,
-        "events": 74
+        "events": 73
       }
     ],
     "supply_trend_7d": [
@@ -191071,7 +191094,7 @@
       },
       {
         "date": "2026-10-09",
-        "net_minted": 14651740,
+        "net_minted": 21411740,
         "net_burned": 1125000
       }
     ],
@@ -191109,6 +191132,7 @@
           8103
         ],
         "event_ids_negative": [
+          8302,
           8301,
           8299,
           8298,
@@ -191303,8 +191327,7 @@
           8093,
           8092,
           8091,
-          8090,
-          8089
+          8090
         ]
       },
       "UDHR": {
@@ -191329,6 +191352,7 @@
           8103
         ],
         "event_ids_negative": [
+          8302,
           8301,
           8299,
           8297,
@@ -191502,8 +191526,7 @@
           8093,
           8092,
           8091,
-          8090,
-          8089
+          8090
         ]
       },
       "ILO": {
@@ -191537,7 +191560,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 48,
+        "negative": 47,
         "event_ids_positive": [
           8280,
           8221,
@@ -191592,13 +191615,12 @@
           8100,
           8096,
           8095,
-          8094,
-          8089
+          8094
         ]
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 43,
+        "negative": 42,
         "event_ids_positive": [
           8221,
           8103
@@ -191645,8 +191667,7 @@
           8099,
           8096,
           8092,
-          8091,
-          8089
+          8091
         ]
       },
       "Animal": {
@@ -191764,9 +191785,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 74.7,
-      "mainstream_pct": 25.3,
-      "total_sources_used": 79,
+      "niche_pct": 75.0,
+      "mainstream_pct": 25.0,
+      "total_sources_used": 80,
       "articles_processed": 213
     },
     "cache_hit_rate_7d": {
@@ -191776,6 +191797,22 @@
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 8,
+        "burn_count": 0,
+        "mint_count": 8,
+        "event_ids": [
+          8302,
+          8273,
+          8226,
+          8225,
+          8220,
+          8177,
+          8159,
+          8153
+        ]
+      },
       {
         "name": "UN",
         "count": 8,
@@ -191790,21 +191827,6 @@
           8140,
           8139,
           8124
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 7,
-        "burn_count": 0,
-        "mint_count": 7,
-        "event_ids": [
-          8273,
-          8226,
-          8225,
-          8220,
-          8177,
-          8159,
-          8153
         ]
       },
       {
@@ -191842,6 +191864,15 @@
         ]
       },
       {
+        "name": "ICC",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          8302
+        ]
+      },
+      {
         "name": "IMF",
         "count": 1,
         "burn_count": 0,
@@ -191857,15 +191888,6 @@
         "mint_count": 1,
         "event_ids": [
           8270
-        ]
-      },
-      {
-        "name": "European Parliament",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          8220
         ]
       }
     ],
@@ -192096,9 +192118,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6167,
+      "total_mint": 6168,
       "direct_action": {
-        "count": 5222,
+        "count": 5223,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -192148,7 +192170,7 @@
         {
           "date": "2026-10-09",
           "citizen": 7,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -192212,6 +192234,7 @@
         8094
       ],
       "event_ids_institutional": [
+        8302,
         8300,
         8299,
         8297,
@@ -192365,8 +192388,7 @@
         8093,
         8092,
         8091,
-        8090,
-        8089
+        8090
       ]
     }
   }
