@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-10T14:07:36.548044+00:00",
-  "total_events": 8333,
+  "generated_at": "2026-10-10T15:06:56.450398+00:00",
+  "total_events": 8335,
   "total_burned": 7996103205,
-  "total_minted": 10768310214,
+  "total_minted": 10775850214,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8335,
+      "event_title": "Members of the UN Climate Panel Fail to Reach Consensus on Next Reports",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/10/membros-do-painel-climatico-da-onu-nao-chegam-a-consenso-sobre-proximos-relatorios.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.5,
+      "confidence": 8,
+      "justification": "Failure to act by the IPCC enables climate inaction, undermining global mitigation efforts and scientific trust. | While the IPCC's deliberative process upholds scientific integrity, the prolonged failure to establish a timeline for future reports directly hinders global climate action (SDG 13) and partnerships (SDG 17). The delay risks systemic inertia, outweighing the procedural benefits of consensus-building.",
+      "tx_hash": "2ZWxrAYht8K4EwK3NUXdLZQrdHb3v3UahZpNwDCeVWNYYXgWgGor4WSGprFPtY3r6nW9dWMCkn3obrdcCjg6CXsF",
+      "created_at": "2026-10-10T15:06:50.216596+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The UN Climate Panel (IPCC) continues to engage in deliberative processes, maintaining institutional transparency and scientific rigor in climate reporting.\", \"affected_sdgs\": [13, 17], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Failure to reach consensus on a timeline for next reports delays critical climate science dissemination, undermining global climate action and policy responsiveness.\", \"affected_sdgs\": [13, 17], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Prolonged indecision risks eroding public and institutional trust in the IPCC, potentially weakening international cooperation on climate mitigation and adaptation.\", \"affected_sdgs\": [13, 16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 8334,
+      "event_title": "2026 Nobel Peace Prize laureate Navanethem Pillay condemns US sanctions against the ICC",
+      "event_url": "https://www.lemonde.fr/international/article/2026/10/10/la-prix-nobel-de-la-paix-navanethem-pillay-juge-inacceptables-les-sanctions-americaines-contre-la-cpi_6791007_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 1500000,
+      "final_score": -2.5,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] US sanctions on the ICC weaken judicial independence and global accountability, enabling harm. | The condemnation by Pillay is a positive act of resistance against the erosion of judicial independence and international rule of law, aligning with SDG 16 and UDHR principles. However, the persistence of the US sanctions constitutes a severe violation of these frameworks, with l",
+      "tx_hash": "kCjPixS44LPtFkuq7mJvX6nfWMQU2RpbiyNBykrQqGzCJgoUax6pweBL4mw2TgoE1bXqNq8FXsHrj9PAeE8SQjE",
+      "created_at": "2026-10-10T15:06:47.981428+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Nobel Peace Prize laureate Navanethem Pillay publicly condemns US sanctions against the International Criminal Court (ICC), reinforcing the principle of judicial independence and international rule of law.\", \"affected_sdgs\": [16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"High-profile condemnation by a respected jurist and Nobel laureate raises global awareness of the importance of protecting international judicial institutions from political interference.\", \"affected_sdgs\": [16, 4], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The underlying US sanctions against the ICC remain in place, undermining the Court's ability to function independently and investigate potential war crimes or crimes against humanity without political pressure.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 10\", \"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential chilling effect on other international institutions or judges, who may fear similar sanctions for unpopular rulings, weakening the global justice system.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8333,
       "event_title": "One year after Gaza ceasefire, only two of Trump’s 20-point plan points realized",
@@ -191807,7 +191853,7 @@
       },
       {
         "date": "2026-10-10",
-        "net_minted": 23907250,
+        "net_minted": 31447250,
         "net_burned": 357500
       }
     ],
@@ -191825,7 +191871,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 17,
-        "negative": 197,
+        "negative": 199,
         "event_ids_positive": [
           8331,
           8320,
@@ -191846,6 +191892,8 @@
           8124
         ],
         "event_ids_negative": [
+          8335,
+          8334,
           8333,
           8332,
           8330,
@@ -192047,7 +192095,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 178,
+        "negative": 179,
         "event_ids_positive": [
           8331,
           8320,
@@ -192068,6 +192116,7 @@
           8124
         ],
         "event_ids_negative": [
+          8334,
           8333,
           8332,
           8330,
@@ -192416,7 +192465,7 @@
       },
       "PB": {
         "positive": 4,
-        "negative": 70,
+        "negative": 71,
         "event_ids_positive": [
           8331,
           8320,
@@ -192424,6 +192473,7 @@
           8238
         ],
         "event_ids_negative": [
+          8335,
           8325,
           8323,
           8322,
@@ -192501,15 +192551,33 @@
       "niche_pct": 76.2,
       "mainstream_pct": 23.8,
       "total_sources_used": 80,
-      "articles_processed": 215
+      "articles_processed": 217
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 215,
+      "total_events": 217,
       "pct": 0.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "UN",
+        "count": 10,
+        "burn_count": 2,
+        "mint_count": 8,
+        "event_ids": [
+          8335,
+          8306,
+          8294,
+          8202,
+          8199,
+          8181,
+          8145,
+          8140,
+          8139,
+          8124
+        ]
+      },
       {
         "name": "EU",
         "count": 9,
@@ -192528,23 +192596,6 @@
         ]
       },
       {
-        "name": "UN",
-        "count": 9,
-        "burn_count": 2,
-        "mint_count": 7,
-        "event_ids": [
-          8306,
-          8294,
-          8202,
-          8199,
-          8181,
-          8145,
-          8140,
-          8139,
-          8124
-        ]
-      },
-      {
         "name": "COP",
         "count": 5,
         "burn_count": 0,
@@ -192559,10 +192610,11 @@
       },
       {
         "name": "ICC",
-        "count": 3,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          8334,
           8313,
           8308,
           8302
@@ -192577,6 +192629,15 @@
           8303,
           8217,
           8137
+        ]
+      },
+      {
+        "name": "IPCC",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          8335
         ]
       },
       {
@@ -192595,15 +192656,6 @@
         "mint_count": 1,
         "event_ids": [
           8270
-        ]
-      },
-      {
-        "name": "European Parliament",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          8220
         ]
       }
     ],
@@ -192820,14 +192872,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 197,
+      "total_mint": 199,
       "direct_action": {
-        "count": 182,
-        "pct": 92.4
+        "count": 184,
+        "pct": 92.5
       },
       "editorial_alarm": {
         "count": 15,
-        "pct": 7.6
+        "pct": 7.5
       },
       "untyped": {
         "count": 0,
@@ -192835,9 +192887,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6196,
+      "total_mint": 6198,
       "direct_action": {
-        "count": 5248,
+        "count": 5250,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -192851,8 +192903,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 62,
-      "institutional": 153,
-      "citizen_ratio": 0.288,
+      "institutional": 155,
+      "citizen_ratio": 0.286,
       "daily": [
         {
           "date": "2026-10-04",
@@ -192887,7 +192939,7 @@
         {
           "date": "2026-10-10",
           "citizen": 5,
-          "institutional": 8
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -192955,6 +193007,8 @@
         8121
       ],
       "event_ids_institutional": [
+        8335,
+        8334,
         8333,
         8332,
         8330,
