@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-11T22:05:58.588884+00:00",
-  "total_events": 8373,
+  "generated_at": "2026-10-11T23:06:35.078298+00:00",
+  "total_events": 8374,
   "total_burned": 8012076005,
-  "total_minted": 10802069134,
+  "total_minted": 10802529134,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8374,
+      "event_title": "FAA tells US airlines to exercise caution in Saudi Arabia flights, citing safety risks",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/faa-tells-us-airlines-exercise-caution-saudi-arabia-flights-citing-safety-risks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 460000,
+      "final_score": -1.66,
+      "confidence": 8,
+      "justification": "FAA's cautionary measure enables conflict-related disruptions without addressing root causes or protecting broader rights. | The FAA's cautionary NOTAM prioritizes immediate safety of civilian air travel (SDGs 3/16, UDHR Article 3) but does not resolve underlying conflict or protect broader rights to movement and economic activity (UDHR Articles 13/23). The action is reactive, not preventive, and risks entrenching conflict-related disruptions without addressing systemic violence.",
+      "tx_hash": "4NTtkN6oqq71FTbcanVuNcfUmyWE2QLyCfDDmFThGD9jgpmXvazx3XWoEAMfEmwgVSfqsFj8x8XNsyPxfbZFNkrv",
+      "created_at": "2026-10-11T23:06:29.168670+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"FAA issues cautionary Notice to Airmen (NOTAM) to US airlines, potentially reducing risk of civilian casualties from military activities or navigation interference in Saudi airspace.\", \"affected_sdgs\": [3, 8, 9, 11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"NOTAM restricts operational freedom of US airlines, potentially disrupting travel, trade, and economic activity without addressing root causes of conflict or safety risks.\", \"affected_sdgs\": [8, 9, 10, 17], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Cautionary measure may signal normalization of conflict-related risks, indirectly enabling impunity for attacks on civilian infrastructure (e.g., Riyadh airport strike).\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 46000
+    },
     {
       "id": 8373,
       "event_title": "Houthis claim multiple strikes on Riyad airport",
@@ -192589,13 +192612,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 46,
-        "total_amount": 30535650
+        "count": 47,
+        "total_amount": 30995650
       },
       {
         "country": "France",
-        "count": 21,
-        "total_amount": 6915800
+        "count": 20,
+        "total_amount": 6615800
       },
       {
         "country": "Brazil",
@@ -192658,13 +192681,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.06,
-        "events": 50
+        "burn_ratio": 0.059,
+        "events": 51
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.055,
-        "events": 73
+        "burn_ratio": 0.056,
+        "events": 72
       }
     ],
     "top_regions_destructive": [
@@ -192680,13 +192703,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.945,
-        "events": 73
+        "mint_ratio": 0.944,
+        "events": 72
       },
       {
         "region": "North America",
-        "mint_ratio": 0.94,
-        "events": 50
+        "mint_ratio": 0.941,
+        "events": 51
       },
       {
         "region": "Asia",
@@ -192727,7 +192750,7 @@
       },
       {
         "date": "2026-10-11",
-        "net_minted": 18718920,
+        "net_minted": 19178920,
         "net_burned": 15272800
       }
     ],
@@ -192769,6 +192792,7 @@
           8164
         ],
         "event_ids_negative": [
+          8374,
           8373,
           8372,
           8366,
@@ -192972,8 +192996,7 @@
           8148,
           8147,
           8146,
-          8145,
-          8144
+          8145
         ]
       },
       "UDHR": {
@@ -192999,6 +193022,7 @@
           8164
         ],
         "event_ids_negative": [
+          8374,
           8373,
           8366,
           8365,
@@ -193181,13 +193205,12 @@
           8148,
           8147,
           8146,
-          8145,
-          8144
+          8145
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 20,
+        "negative": 19,
         "event_ids_positive": [],
         "event_ids_negative": [
           8365,
@@ -193208,13 +193231,12 @@
           8181,
           8173,
           8155,
-          8153,
-          8144
+          8153
         ]
       },
       "CRC": {
         "positive": 5,
-        "negative": 48,
+        "negative": 47,
         "event_ids_positive": [
           8311,
           8280,
@@ -193269,8 +193291,7 @@
           8177,
           8166,
           8154,
-          8145,
-          8144
+          8145
         ]
       },
       "UNDRIP": {
@@ -193608,9 +193629,9 @@
       },
       {
         "name": "Finance",
-        "count": 24,
+        "count": 23,
         "burn_count": 0,
-        "mint_count": 24,
+        "mint_count": 23,
         "event_ids": [
           8363,
           8361,
@@ -193634,8 +193655,7 @@
           8198,
           8188,
           8182,
-          8160,
-          8144
+          8160
         ]
       },
       {
@@ -193742,10 +193762,11 @@
       },
       {
         "name": "Transport",
-        "count": 8,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 8,
+        "mint_count": 9,
         "event_ids": [
+          8374,
           8373,
           8359,
           8355,
@@ -193803,9 +193824,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6225,
+      "total_mint": 6226,
       "direct_action": {
-        "count": 5276,
+        "count": 5277,
         "pct": 84.8
       },
       "editorial_alarm": {
@@ -193818,9 +193839,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 67,
-      "institutional": 158,
-      "citizen_ratio": 0.298,
+      "citizen": 68,
+      "institutional": 157,
+      "citizen_ratio": 0.302,
       "daily": [
         {
           "date": "2026-10-05",
@@ -193854,11 +193875,12 @@
         },
         {
           "date": "2026-10-11",
-          "citizen": 10,
+          "citizen": 11,
           "institutional": 20
         }
       ],
       "event_ids_citizen": [
+        8374,
         8361,
         8360,
         8359,
@@ -194084,8 +194106,7 @@
         8149,
         8148,
         8147,
-        8146,
-        8144
+        8146
       ]
     }
   }
