@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-11T17:06:42.605954+00:00",
-  "total_events": 8361,
+  "generated_at": "2026-10-11T18:06:28.715442+00:00",
+  "total_events": 8362,
   "total_burned": 8012076005,
-  "total_minted": 10790612374,
+  "total_minted": 10791112374,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8362,
+      "event_title": "Trump announces 'energy ceasefire' between Russia and Ukraine",
+      "event_url": "https://www.dw.com/en/trump-announces-energy-ceasefire-between-russia-and-ukraine/a-79634509?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.59,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The ceasefire announcement protects civilians by halting attacks on energy infrastructure, outweighing its non‑binding nature. | The announcement offers immediate relief to civilians by reducing attacks on critical infrastructure, aligning with humanitarian frameworks. However, its non-binding nature and potential to entrench occupation without addressing sovereignty or acco",
+      "tx_hash": "HKYZoY8McVrN2AehKJTbkowKbKsyfAgHptAHpnfcHRMrRQTGTjw87ECn3XgazzijRm3GKsevjNeRTuiXVkbJY1C",
+      "created_at": "2026-10-11T18:06:22.737321+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Temporary cessation of attacks on energy infrastructure reduces immediate civilian harm, including disruptions to heating, electricity, and water supply.\", \"affected_sdgs\": [3, 7, 11, 13, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Potential to de-escalate broader conflict, reducing risk of further environmental destruction and civilian casualties.\", \"affected_sdgs\": [13, 15, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Non-binding announcement by a single actor (US President) without formal agreement from Russia or Ukraine, risking lack of enforcement or compliance.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"May legitimize or prolong Russian occupation by freezing conflict lines without addressing territorial sovereignty or accountability for war crimes.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Could enable Russia to consolidate control over seized energy assets, undermining Ukraine's long-term energy independence and sovereignty.\", \"affected_sdgs\": [7, 8, 16], \"violated_rights\": [\"UDHR Article 17\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8361,
       "event_title": "The Collapse of Rural Agrarian Societies under World Bank-IMF Policies – Seminar & Press conference",
@@ -192451,7 +192474,7 @@
       },
       {
         "date": "2026-10-11",
-        "net_minted": 12762160,
+        "net_minted": 13262160,
         "net_burned": 15272800
       }
     ],
@@ -192469,7 +192492,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 22,
-        "negative": 202,
+        "negative": 203,
         "event_ids_positive": [
           8360,
           8352,
@@ -192495,6 +192518,7 @@
           8137
         ],
         "event_ids_negative": [
+          8362,
           8361,
           8359,
           8358,
@@ -192701,7 +192725,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 181,
+        "negative": 182,
         "event_ids_positive": [
           8347,
           8339,
@@ -192724,6 +192748,7 @@
           8137
         ],
         "event_ids_negative": [
+          8362,
           8361,
           8359,
           8358,
@@ -192935,7 +192960,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [
           8311,
           8280,
@@ -192944,6 +192969,7 @@
           8178
         ],
         "event_ids_negative": [
+          8362,
           8356,
           8355,
           8343,
@@ -192994,13 +193020,14 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           8347,
           8320,
           8221
         ],
         "event_ids_negative": [
+          8362,
           8361,
           8359,
           8333,
@@ -193079,7 +193106,7 @@
       },
       "PB": {
         "positive": 8,
-        "negative": 74,
+        "negative": 75,
         "event_ids_positive": [
           8360,
           8352,
@@ -193091,6 +193118,7 @@
           8238
         ],
         "event_ids_negative": [
+          8362,
           8359,
           8354,
           8353,
@@ -193169,14 +193197,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 74.7,
-      "mainstream_pct": 25.3,
+      "niche_pct": 73.6,
+      "mainstream_pct": 26.4,
       "total_sources_used": 87,
-      "articles_processed": 225
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 225,
+      "total_events": 226,
       "pct": 0.4
     },
     "active_partners_7d": [],
@@ -193283,10 +193311,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 32,
+        "count": 33,
         "burn_count": 2,
-        "mint_count": 30,
+        "mint_count": 31,
         "event_ids": [
+          8362,
           8354,
           8351,
           8350,
@@ -193398,6 +193427,26 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 12,
+        "burn_count": 2,
+        "mint_count": 10,
+        "event_ids": [
+          8362,
+          8350,
+          8339,
+          8328,
+          8305,
+          8277,
+          8269,
+          8262,
+          8215,
+          8184,
+          8156,
+          8148
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 11,
         "burn_count": 2,
@@ -193433,25 +193482,6 @@
           8264,
           8257,
           8195
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 11,
-        "burn_count": 2,
-        "mint_count": 9,
-        "event_ids": [
-          8350,
-          8339,
-          8328,
-          8305,
-          8277,
-          8269,
-          8262,
-          8215,
-          8184,
-          8156,
-          8148
         ]
       },
       {
@@ -193501,9 +193531,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 202,
+      "total_mint": 203,
       "direct_action": {
-        "count": 187,
+        "count": 188,
         "pct": 92.6
       },
       "editorial_alarm": {
@@ -193516,9 +193546,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6218,
+      "total_mint": 6219,
       "direct_action": {
-        "count": 5269,
+        "count": 5270,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -193532,8 +193562,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 68,
-      "institutional": 157,
-      "citizen_ratio": 0.302,
+      "institutional": 158,
+      "citizen_ratio": 0.301,
       "daily": [
         {
           "date": "2026-10-05",
@@ -193568,7 +193598,7 @@
         {
           "date": "2026-10-11",
           "citizen": 10,
-          "institutional": 13
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -193642,6 +193672,7 @@
         8143
       ],
       "event_ids_institutional": [
+        8362,
         8358,
         8357,
         8356,
