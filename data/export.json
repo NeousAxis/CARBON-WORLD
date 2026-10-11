@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-11T03:06:34.201262+00:00",
-  "total_events": 8344,
+  "generated_at": "2026-10-11T04:06:22.646004+00:00",
+  "total_events": 8345,
   "total_burned": 7997228205,
-  "total_minted": 10780643214,
+  "total_minted": 10780649974,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8345,
+      "event_title": "Taiz hospitals near collapse as Houthis tighten siege: Yemen government",
+      "event_url": "https://www.aljazeera.com/news/2026/10/11/taiz-hospitals-near-collapse-as-houthis-tighten-siege-yemen-government?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 6760,
+      "final_score": -3.63,
+      "confidence": 8,
+      "justification": "The tightening siege harms health services and violates basic rights, yielding a strongly negative net impact. | The siege severely undermines health services and basic human rights, outweighing any indirect awareness effects. It represents a clear negative ethical impact on civilians in Taiz.",
+      "tx_hash": "3uaHCCcvZgVXwj1hvgxFPiELYC7rWC2CwqsXcLJVv3sB4DBk55XGeiekmAkLeApNhodt5B8CHKmSCarfrgn5e4KZ",
+      "created_at": "2026-10-11T04:06:17.439321+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Yemen",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Houthi blockade tightening causes hospitals in Taiz to near collapse, cutting access to fuel, medicines and medical care.\", \"affected_sdgs\": [3, 6, 9, 16], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8344,
       "event_title": "Major US news networks face probe over White House coverage boycott",
@@ -192002,14 +192025,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 4
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 5
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 3
       },
       {
         "region": "North America",
@@ -192060,7 +192083,7 @@
       },
       {
         "date": "2026-10-11",
-        "net_minted": 2793000,
+        "net_minted": 2799760,
         "net_burned": 425000
       }
     ],
@@ -192078,7 +192101,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 18,
-        "negative": 198,
+        "negative": 199,
         "event_ids_positive": [
           8339,
           8337,
@@ -192100,6 +192123,7 @@
           8137
         ],
         "event_ids_negative": [
+          8345,
           8344,
           8343,
           8342,
@@ -192302,7 +192326,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 179,
+        "negative": 180,
         "event_ids_positive": [
           8339,
           8337,
@@ -192324,6 +192348,7 @@
           8137
         ],
         "event_ids_negative": [
+          8345,
           8344,
           8343,
           8342,
@@ -192758,11 +192783,11 @@
       "niche_pct": 75.6,
       "mainstream_pct": 24.4,
       "total_sources_used": 82,
-      "articles_processed": 217
+      "articles_processed": 218
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 217,
+      "total_events": 218,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -193078,14 +193103,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 198,
+      "total_mint": 199,
       "direct_action": {
-        "count": 182,
-        "pct": 91.9
+        "count": 183,
+        "pct": 92.0
       },
       "editorial_alarm": {
         "count": 16,
-        "pct": 8.1
+        "pct": 8.0
       },
       "untyped": {
         "count": 0,
@@ -193093,9 +193118,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6205,
+      "total_mint": 6206,
       "direct_action": {
-        "count": 5256,
+        "count": 5257,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -193109,8 +193134,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 65,
-      "institutional": 152,
-      "citizen_ratio": 0.3,
+      "institutional": 153,
+      "citizen_ratio": 0.298,
       "daily": [
         {
           "date": "2026-10-05",
@@ -193145,7 +193170,7 @@
         {
           "date": "2026-10-11",
           "citizen": 5,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -193216,6 +193241,7 @@
         8129
       ],
       "event_ids_institutional": [
+        8345,
         8344,
         8338,
         8337,
