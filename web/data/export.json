@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-12T16:08:47.666408+00:00",
-  "total_events": 8392,
+  "generated_at": "2026-10-12T17:06:29.410285+00:00",
+  "total_events": 8394,
   "total_burned": 8012826005,
-  "total_minted": 10819688194,
+  "total_minted": 10820055794,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8394,
+      "event_title": "Turkey to send Mecca Joint Defence Agreement to parliament soon, Erdogan says",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/turkey-send-mecca-agreement-parliament-soon-erdogan-says",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.1,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Ratifying a defence pact enables militarization and potential conflict, weakening peace protections. | The action prioritizes geopolitical alliances and security over humanitarian or environmental concerns. While regional stability (SDG 16) is a potential benefit, the risks of militarization and resource diversion outweigh it. The lack of conflict resolution balance undermin",
+      "tx_hash": "3wRoaj838DLujCpoMiWuarxSgouBo7EM55oWjX5TX3hQ9Ag8LdGmddLhModcwErrARYPJFRgTE8tX5ujG9KUZVfD",
+      "created_at": "2026-10-12T17:06:23.860569+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Ratification of a defense pact could enhance regional stability and security cooperation, potentially reducing conflict-related emissions and displacement.\", \"affected_sdgs\": [16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Defense pacts may escalate militarization, divert resources from social/environmental needs, and risk enabling human rights violations by allied regimes.\", \"affected_sdgs\": [1, 3, 13, 16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Condemnation of Houthi attacks without addressing broader Yemen conflict dynamics may perpetuate one-sided narratives and prolong suffering.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 8393,
+      "event_title": "Amid Lawsuit Over Iowa’s Cancer-Linked Water Pollution, EPA Doubles Down On Inaction",
+      "event_url": "https://www.foodandwaterwatch.org/press/2026/10/08/amid-lawsuit-over-iowas-cancer-linked-water-pollution-epa-doubles-down-on-inaction/",
+      "event_source": "Food & Water Watch",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -5.07,
+      "confidence": 8,
+      "justification": "Semantic cache reuse (cosine=0.998) from event #8271",
+      "tx_hash": null,
+      "created_at": "2026-10-12T17:04:28.709325+00:00",
+      "embedding": null,
+      "reused_from_event_id": 8271,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 46000
+    },
     {
       "id": 8392,
       "event_title": "UNJUST COMPENSATION: Coal mine relocation families paid ‘less than 5% of their real losses’",
@@ -193026,13 +193072,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 45,
-        "total_amount": 30169650
+        "count": 44,
+        "total_amount": 29493650
       },
       {
         "country": "France",
-        "count": 21,
-        "total_amount": 6840800
+        "count": 20,
+        "total_amount": 6236800
       },
       {
         "country": "Brazil",
@@ -193095,13 +193141,13 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.061,
-        "events": 49
+        "burn_ratio": 0.062,
+        "events": 48
       },
       {
         "region": "Europe",
         "burn_ratio": 0.056,
-        "events": 72
+        "events": 71
       }
     ],
     "top_regions_destructive": [
@@ -193118,12 +193164,12 @@
       {
         "region": "Europe",
         "mint_ratio": 0.944,
-        "events": 72
+        "events": 71
       },
       {
         "region": "North America",
-        "mint_ratio": 0.939,
-        "events": 49
+        "mint_ratio": 0.938,
+        "events": 48
       },
       {
         "region": "Asia",
@@ -193164,7 +193210,7 @@
       },
       {
         "date": "2026-10-12",
-        "net_minted": 17159060,
+        "net_minted": 17459060,
         "net_burned": 750000
       }
     ],
@@ -193182,7 +193228,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 206,
+        "negative": 205,
         "event_ids_positive": [
           8388,
           8360,
@@ -193207,6 +193253,7 @@
           8164
         ],
         "event_ids_negative": [
+          8394,
           8392,
           8391,
           8390,
@@ -193410,9 +193457,7 @@
           8167,
           8166,
           8165,
-          8163,
-          8162,
-          8161
+          8163
         ]
       },
       "UDHR": {
@@ -193439,6 +193484,7 @@
           8164
         ],
         "event_ids_negative": [
+          8394,
           8392,
           8391,
           8390,
@@ -193622,8 +193668,7 @@
           8167,
           8166,
           8165,
-          8163,
-          8162
+          8163
         ]
       },
       "ILO": {
@@ -193770,7 +193815,7 @@
       },
       "Animal": {
         "positive": 7,
-        "negative": 22,
+        "negative": 21,
         "event_ids_positive": [
           8360,
           8352,
@@ -193801,13 +193846,12 @@
           8201,
           8184,
           8183,
-          8173,
-          8161
+          8173
         ]
       },
       "PB": {
         "positive": 8,
-        "negative": 80,
+        "negative": 79,
         "event_ids_positive": [
           8360,
           8352,
@@ -193897,20 +193941,19 @@
           8172,
           8169,
           8165,
-          8163,
-          8161
+          8163
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 72.4,
-      "mainstream_pct": 27.6,
-      "total_sources_used": 87,
-      "articles_processed": 232
+      "niche_pct": 71.8,
+      "mainstream_pct": 28.2,
+      "total_sources_used": 85,
+      "articles_processed": 231
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 232,
+      "total_events": 231,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -194238,9 +194281,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 211,
+      "total_mint": 210,
       "direct_action": {
-        "count": 190,
+        "count": 189,
         "pct": 90.0
       },
       "editorial_alarm": {
@@ -194253,9 +194296,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6248,
+      "total_mint": 6249,
       "direct_action": {
-        "count": 5293,
+        "count": 5294,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -194268,9 +194311,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 70,
+      "citizen": 69,
       "institutional": 162,
-      "citizen_ratio": 0.302,
+      "citizen_ratio": 0.299,
       "daily": [
         {
           "date": "2026-10-06",
@@ -194305,7 +194348,7 @@
         {
           "date": "2026-10-12",
           "citizen": 4,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -194377,10 +194420,10 @@
         8178,
         8173,
         8168,
-        8166,
-        8161
+        8166
       ],
       "event_ids_institutional": [
+        8394,
         8392,
         8391,
         8389,
@@ -194541,8 +194584,7 @@
         8167,
         8165,
         8164,
-        8163,
-        8162
+        8163
       ]
     }
   }
