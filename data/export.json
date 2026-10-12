@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-11T23:06:35.078298+00:00",
-  "total_events": 8374,
+  "generated_at": "2026-10-12T00:05:47.683818+00:00",
+  "total_events": 8375,
   "total_burned": 8012076005,
-  "total_minted": 10802529134,
+  "total_minted": 10802754134,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8375,
+      "event_title": "In France, a new week of student mobilization begins",
+      "event_url": "https://www.letemps.ch/articles/en-france-une-nouvelle-semaine-de-mobilisation-lyceenne",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -0.94,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Severe rights violations and non-binding government responses outweigh mobilization's positive impact. | The mobilization demonstrates the power of collective citizen action to force institutional engagement (positive), but the government's initial violent repression and subsequent non-binding concessions undermine trust in systemic reform. The net ethical position tilts negati",
+      "tx_hash": "5GoitstgNQEwY1dNpKNj5RQyq4hHL7b8NJyjEW5gujLTUVw479KFfBVTAjPs3z74S6EpzjemX8mM6TJuwGrXmY3Y",
+      "created_at": "2026-10-12T00:05:42.370412+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Student and union-led mobilization forces government to open a formal consultation platform and propose budget amendments for education reforms, including deployment of 3,000 substitute teachers.\", \"affected_sdgs\": [4, 8, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Public assembly and collective action by named student unions (Union syndicale lycéenne, intersyndicale étudiante) with measurable participation, raising awareness of education inequities and infrastructure deficits.\", \"affected_sdgs\": [4, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Government initially responded with police force, including use of controversial LBDs (less-lethal weapons), leading to severe injuries (e.g., a student losing a hand).\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 19\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Proposed budget amendments and consultation platform lack binding commitments, risking tokenism and failing to address core demands (e.g., abolition of Parcoursup).\", \"affected_sdgs\": [4, 10], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8374,
       "event_title": "FAA tells US airlines to exercise caution in Saudi Arabia flights, citing safety risks",
@@ -192617,8 +192640,8 @@
       },
       {
         "country": "France",
-        "count": 20,
-        "total_amount": 6615800
+        "count": 21,
+        "total_amount": 6840800
       },
       {
         "country": "Brazil",
@@ -192686,8 +192709,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.056,
-        "events": 72
+        "burn_ratio": 0.055,
+        "events": 73
       }
     ],
     "top_regions_destructive": [
@@ -192703,8 +192726,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.944,
-        "events": 72
+        "mint_ratio": 0.945,
+        "events": 73
       },
       {
         "region": "North America",
@@ -192718,11 +192741,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-10-05",
-        "net_minted": 11201400,
-        "net_burned": 500000
-      },
       {
         "date": "2026-10-06",
         "net_minted": 19978760,
@@ -192752,6 +192770,11 @@
         "date": "2026-10-11",
         "net_minted": 19178920,
         "net_burned": 15272800
+      },
+      {
+        "date": "2026-10-12",
+        "net_minted": 225000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -192768,7 +192791,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 205,
+        "negative": 206,
         "event_ids_positive": [
           8360,
           8352,
@@ -192792,6 +192815,7 @@
           8164
         ],
         "event_ids_negative": [
+          8375,
           8374,
           8373,
           8372,
@@ -193001,7 +193025,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 184,
+        "negative": 185,
         "event_ids_positive": [
           8347,
           8339,
@@ -193022,6 +193046,7 @@
           8164
         ],
         "event_ids_negative": [
+          8375,
           8374,
           8373,
           8366,
@@ -193236,7 +193261,7 @@
       },
       "CRC": {
         "positive": 5,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           8311,
           8280,
@@ -193245,6 +193270,7 @@
           8178
         ],
         "event_ids_negative": [
+          8375,
           8365,
           8362,
           8356,
@@ -193481,11 +193507,11 @@
       "niche_pct": 71.8,
       "mainstream_pct": 28.2,
       "total_sources_used": 85,
-      "articles_processed": 225
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 225,
+      "total_events": 226,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -193809,9 +193835,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 205,
+      "total_mint": 206,
       "direct_action": {
-        "count": 190,
+        "count": 191,
         "pct": 92.7
       },
       "editorial_alarm": {
@@ -193824,9 +193850,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6226,
+      "total_mint": 6227,
       "direct_action": {
-        "count": 5277,
+        "count": 5278,
         "pct": 84.8
       },
       "editorial_alarm": {
@@ -193839,15 +193865,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 68,
+      "citizen": 69,
       "institutional": 157,
-      "citizen_ratio": 0.302,
+      "citizen_ratio": 0.305,
       "daily": [
-        {
-          "date": "2026-10-05",
-          "citizen": 5,
-          "institutional": 22
-        },
         {
           "date": "2026-10-06",
           "citizen": 8,
@@ -193877,9 +193898,15 @@
           "date": "2026-10-11",
           "citizen": 11,
           "institutional": 20
+        },
+        {
+          "date": "2026-10-12",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        8375,
         8374,
         8361,
         8360,
