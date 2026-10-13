@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-12T23:05:39.821287+00:00",
-  "total_events": 8403,
+  "generated_at": "2026-10-13T00:05:45.627314+00:00",
+  "total_events": 8404,
   "total_burned": 8012826005,
-  "total_minted": 10830622594,
+  "total_minted": 10830938594,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8404,
+      "event_title": "Oxfam France denounces 'fiscal injustice' and sues the state",
+      "event_url": "https://www.ouest-france.fr/economie/impots-fiscalite/long-oxfam-france-denonce-une-injustice-fiscale-et-attaque-letat-en-justice-23750a1e-c68f-11f1-826d-36d87fa6fed4?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 316000,
+      "final_score": 3.46,
+      "confidence": 8,
+      "justification": "Legal action to enforce fiscal justice advances equity and accountability, outweighing minor risks. | The lawsuit represents a proactive step to address systemic fiscal inequality, aligning with SDGs 1, 10, and 16 by challenging state inaction on equitable taxation. While the legal outcome is uncertain, the action itself strengthens institutional accountability and public discourse. Minor risks include political resistance and polarization, but these are outweighed by the potential for structura",
+      "tx_hash": "2uno9ir8rHrw9kYkmH7gQJgVEH9Bz3cYkQvWhLasq9ACiUbahaMAQ1GMpdkkPpm4keH2rw31ssa5dxfGvAZXYwgf",
+      "created_at": "2026-10-13T00:05:39.930668+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Oxfam France files a lawsuit against the state to enforce fiscal justice, challenging systemic tax inequality and demanding equitable taxation policies.\", \"affected_sdgs\": [1, 10, 16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The legal action raises public awareness and places fiscal justice on the political agenda ahead of the 2027 presidential election, amplifying citizen consciousness.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The lawsuit may face legal or political resistance, delaying or weakening enforcement of fiscal justice measures.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential polarization of public discourse around taxation, risking backlash against progressive fiscal policies.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 31600
+    },
     {
       "id": 8403,
       "event_title": "Elon Musk spends $366m to bolster Republican Party in US midterm elections",
@@ -193284,8 +193307,8 @@
       },
       {
         "country": "France",
-        "count": 20,
-        "total_amount": 6687800
+        "count": 21,
+        "total_amount": 7003800
       },
       {
         "country": "Brazil",
@@ -193298,9 +193321,9 @@
         "total_amount": 1815400
       },
       {
-        "country": "United Kingdom",
+        "country": "Italy",
         "count": 7,
-        "total_amount": 3727500
+        "total_amount": 2513600
       }
     ],
     "top_countries_burn": [
@@ -193386,11 +193409,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-10-06",
-        "net_minted": 19978760,
-        "net_burned": 750000
-      },
-      {
         "date": "2026-10-07",
         "net_minted": 34928300,
         "net_burned": 1475000
@@ -193419,6 +193437,11 @@
         "date": "2026-10-12",
         "net_minted": 28025860,
         "net_burned": 750000
+      },
+      {
+        "date": "2026-10-13",
+        "net_minted": 316000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -193459,6 +193482,7 @@
           8178
         ],
         "event_ids_negative": [
+          8404,
           8403,
           8402,
           8401,
@@ -193664,8 +193688,7 @@
           8175,
           8174,
           8173,
-          8172,
-          8171
+          8172
         ]
       },
       "UDHR": {
@@ -193691,6 +193714,7 @@
           8178
         ],
         "event_ids_negative": [
+          8404,
           8403,
           8402,
           8400,
@@ -193875,8 +193899,7 @@
           8175,
           8174,
           8173,
-          8172,
-          8171
+          8172
         ]
       },
       "ILO": {
@@ -194368,27 +194391,6 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 13,
-        "burn_count": 1,
-        "mint_count": 12,
-        "event_ids": [
-          8359,
-          8330,
-          8328,
-          8310,
-          8282,
-          8274,
-          8269,
-          8265,
-          8257,
-          8232,
-          8222,
-          8211,
-          8171
-        ]
-      },
-      {
         "name": "Defense",
         "count": 12,
         "burn_count": 2,
@@ -194426,6 +194428,26 @@
           8264,
           8257,
           8195
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 12,
+        "burn_count": 1,
+        "mint_count": 11,
+        "event_ids": [
+          8359,
+          8330,
+          8328,
+          8310,
+          8282,
+          8274,
+          8269,
+          8265,
+          8257,
+          8232,
+          8222,
+          8211
         ]
       },
       {
@@ -194511,9 +194533,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6258,
+      "total_mint": 6259,
       "direct_action": {
-        "count": 5303,
+        "count": 5304,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -194530,11 +194552,6 @@
       "institutional": 164,
       "citizen_ratio": 0.293,
       "daily": [
-        {
-          "date": "2026-10-06",
-          "citizen": 8,
-          "institutional": 27
-        },
         {
           "date": "2026-10-07",
           "citizen": 14,
@@ -194564,6 +194581,11 @@
           "date": "2026-10-12",
           "citizen": 5,
           "institutional": 23
+        },
+        {
+          "date": "2026-10-13",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -194637,6 +194659,7 @@
         8173
       ],
       "event_ids_institutional": [
+        8404,
         8403,
         8402,
         8401,
@@ -194799,8 +194822,7 @@
         8176,
         8175,
         8174,
-        8172,
-        8171
+        8172
       ]
     }
   }
