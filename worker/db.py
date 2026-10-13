@@ -220,6 +220,28 @@ def close_connection() -> None:
             _conn = None
 
 
+def _rollback_quietly(conn: Optional[sqlite3.Connection] = None) -> None:
+    """End the transaction a failed write leaves open on `conn` (default: the
+    module singleton), so that it stops holding the database write lock.
+
+    Python's sqlite3 issues an implicit BEGIN before every INSERT/UPDATE/DELETE.
+    When the statement then fails (UNIQUE constraint, busy timeout...), SQLite
+    only undoes that statement: the transaction stays open and keeps the WAL
+    write lock until the next commit on the same connection. On the pipeline's
+    long-lived singleton that lasted minutes, and every other writer
+    (/api/review/resolve, the drain cron) waited out its busy_timeout and
+    failed, so human review verdicts were silently lost (2026-10-13).
+    """
+    conn = conn if conn is not None else _conn
+    if conn is None:
+        return
+    try:
+        if conn.in_transaction:
+            conn.rollback()
+    except Exception as exc:
+        logger.warning("Rollback after a failed write failed: %s", exc)
+
+
 def save_raw_articles(articles: list[dict], conn: Optional[sqlite3.Connection] = None) -> int:
     """
     Persist the full collected stream into raw_articles (the firehose).
@@ -256,6 +278,7 @@ def save_raw_articles(articles: list[dict], conn: Optional[sqlite3.Connection] =
         conn.commit()
         return conn.total_changes - before
     except Exception as exc:
+        _rollback_quietly(conn)
         logger.warning("save_raw_articles failed: %s", exc)
         return 0
 
@@ -278,6 +301,7 @@ def prune_raw_articles(retention_days: Optional[int] = None,
         conn.commit()
         return cur.rowcount or 0
     except Exception as exc:
+        _rollback_quietly(conn)
         logger.warning("prune_raw_articles failed: %s", exc)
         return 0
 
@@ -317,6 +341,7 @@ def update_embedding(event_id: int, embedding: bytes) -> bool:
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error updating embedding for event %d: %s", event_id, exc)
         return False
 
@@ -332,6 +357,7 @@ def update_tx_hash(event_id: int, tx_hash: str) -> bool:
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error updating tx_hash for event %d: %s", event_id, exc)
         return False
 
@@ -400,6 +426,7 @@ def save_event(event_data: dict) -> Optional[dict]:
             return None
         return dict(row)
     except sqlite3.IntegrityError as exc:
+        _rollback_quietly()
         logger.warning(
             "Duplicate event_url skipped for '%s': %s",
             event_data.get("event_url", "")[:80],
@@ -407,6 +434,7 @@ def save_event(event_data: dict) -> Optional[dict]:
         )
         return None
     except Exception as exc:
+        _rollback_quietly()
         logger.error(
             "Error in save_event for '%s': %s",
             event_data.get("event_title", "")[:60],
@@ -485,12 +513,14 @@ def add_to_review_queue(data: dict) -> Optional[int]:
         )
         return review_id
     except sqlite3.IntegrityError:
+        _rollback_quietly()
         logger.warning(
             "Review queue duplicate skipped for '%s'",
             data.get("event_url", "")[:80],
         )
         return None
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error adding to review_queue: %s", exc)
         return None
 
@@ -613,6 +643,7 @@ def resolve_review(
         )
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error resolving review id=%d: %s", review_id, exc)
         return False
 
@@ -641,6 +672,7 @@ def insert_submission(
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error inserting submission %s: %s", submission_id, exc)
         return False
 
@@ -675,6 +707,7 @@ def mark_submission_scored(submission_id: str, resulting_event_id: int) -> bool:
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error marking submission scored %s: %s", submission_id, exc)
         return False
 
@@ -699,6 +732,7 @@ def mark_submission_rejected(submission_id: str, status: str) -> bool:
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error marking submission rejected %s: %s", submission_id, exc)
         return False
 
@@ -751,6 +785,7 @@ def log_api_usage(
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.warning("Error logging api_usage: %s", exc)
         return False
 
@@ -798,6 +833,7 @@ def update_api_key_last_used(key_id: int) -> None:
         )
         conn.commit()
     except Exception as exc:
+        _rollback_quietly()
         logger.warning("Error updating last_used_at for key %d: %s", key_id, exc)
 
 
@@ -812,6 +848,7 @@ def update_api_key_webhook(key_id: int, webhook_url: str) -> bool:
         conn.commit()
         return True
     except Exception as exc:
+        _rollback_quietly()
         logger.error("Error updating webhook for key %d: %s", key_id, exc)
         return False
 
