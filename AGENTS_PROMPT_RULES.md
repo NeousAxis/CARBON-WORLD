@@ -148,6 +148,7 @@ Chaque entrée suit le format : **Symptôme → Cause → Fix / à surveiller �
 | 2026-04-18 | `worker/prompts/analyst_prompt.py` | (voir git log) | 2.1 nivellement magnitudes | Seine-Saint-Denis score 4.10→5.36, MINT→NEUTRAL, 120K CBWD évités |
 | 2026-04-18 | `worker/prompts/analyst_prompt.py` | (voir git log) | 2.4 dérive linguistique FR/autres | Directive "LANGUAGE (non-negotiable)" ajoutée, tous champs texte désormais forcés en anglais |
 | 2026-06-18 | `worker/prompts/analyst_prompt.py` + `worker/agents/scorer.py` + `worker/config.py` | (voir git log) | 2.5 inflation d'échelle | `event_scope` (STEP 5) + montant déterministe symétrique gaté par `AMOUNT_SCALE_MODE`. Re-pricing historique : net +560M → −3,67Md (net-MINT). A/B live 5/6 scopes corrects. Inerte tant que mode=llm. |
+| 2026-10-13 | `worker/prompts/analyst_prompt.py` + `worker/agents/analyst.py` + `worker/agents/analyst_b.py` | (voir git log) | hors classe : flux de review | `HUMAN_VALIDATION_CONTEXT`, injecté UNIQUEMENT pour un article dont Cyril a annulé le rejet « not actionable » dans /review (bouton ANALYZE ANYWAY). Fixe seulement validation=true ; décision, scores et montant restent ceux du LLM. Aucun effet sur les autres articles, donc pas d'A/B de score. |
 
 ---
 

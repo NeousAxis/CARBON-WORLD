@@ -7,7 +7,11 @@ import logging
 from typing import Optional
 
 from ollama_client import call_deep
-from prompts.analyst_prompt import ANALYST_PROMPT, PRIOR_VALIDATION_CONTEXT_TEMPLATE
+from prompts.analyst_prompt import (
+    ANALYST_PROMPT,
+    HUMAN_VALIDATION_CONTEXT,
+    PRIOR_VALIDATION_CONTEXT_TEMPLATE,
+)
 from prompts.sanitize import wrap_article_for_llm
 
 logger = logging.getLogger("agent.analyst")
@@ -101,6 +105,10 @@ def analyze(article: dict) -> Optional[dict]:
         prior_ctx = PRIOR_VALIDATION_CONTEXT_TEMPLATE.format(organization=organization)
         user_msg = prior_ctx.strip() + "\n\n" + user_msg
 
+    # A human overruled an earlier "not actionable" rejection from /review
+    if article.get("_human_validated"):
+        user_msg = HUMAN_VALIDATION_CONTEXT.strip() + "\n\n" + user_msg
+
     # Phase 10 — prepend a hint about past human reviews of similar events
     review_hint = _build_human_review_hint(article)
     if review_hint:
@@ -124,11 +132,28 @@ def analyze(article: dict) -> Optional[dict]:
     if not result.get("validation", True):
         reason = result.get("reason", "rejected by analyst")
         logger.info("Analyst rejected '%s': %s — queued for human review", title[:60], reason[:100])
+        if article.get("_human_validated"):
+            # The human already overruled one rejection of this article: hand
+            # their own row back with the new reasoning rather than looping.
+            try:
+                from db import requeue_review
+                requeue_review(article["_review_id"], {
+                    "analyst_a_verdict": result,
+                    "sentinel_concern": (
+                        f"Analyst rejected again after your validation: {reason[:300]}"
+                    ),
+                })
+            except Exception as exc:
+                logger.warning("Failed to hand the re-analysed article back to review: %s", exc)
+            return None
         try:
             from db import add_to_review_queue
             add_to_review_queue({
                 "event_title": title,
-                "event_url": article.get("url", ""),
+                # Articles carry their URL under "link" (rss_fetcher, collector).
+                # Reading "url" queued every rejection with an empty URL from
+                # 2026-05-05 to 2026-10-13, all dropped on review #27's UNIQUE ''.
+                "event_url": article.get("link", ""),
                 "event_source": article.get("source", ""),
                 "analyst_a_verdict": result,
                 "analyst_b_verdict": None,

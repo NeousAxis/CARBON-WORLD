@@ -70,7 +70,15 @@ def main() -> int:
 
     # Determine final decision
     suggested = review["suggested_decision"]
-    if args.verdict == "approve":
+    # An Analyst rejection (suggested REJECT) carries no BURN/MINT verdict, so
+    # nothing goes on chain here: reverse sends the article back for a full
+    # analysis on the next pipeline run, any other verdict confirms the
+    # rejection (see db.resolve_review).
+    analyst_rejection = (suggested or "").upper() == "REJECT"
+    if analyst_rejection:
+        final_decision = None
+        final_amount = 0
+    elif args.verdict == "approve":
         final_decision = suggested
         final_amount = review["suggested_amount_crbn"]
     elif args.verdict == "reverse":
@@ -100,6 +108,16 @@ def main() -> int:
             file=sys.stderr,
         )
         return 1
+
+    if analyst_rejection and args.verdict == "reverse":
+        # No final_decision yet: the re-analysis decides it.
+        logger.info(
+            "Review #%d sent back for a full analysis on the next pipeline run.",
+            args.review_id,
+        )
+        print(f"Review #{args.review_id} queued for re-analysis on the next pipeline run.")
+        export_events()
+        return 0
 
     # Phase 10 — set final_decision now (cheap, just a marker). The embedding
     # is computed asynchronously by `worker/backfill_review_embeddings.py`

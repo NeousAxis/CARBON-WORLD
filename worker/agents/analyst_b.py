@@ -8,7 +8,11 @@ import logging
 from typing import Optional
 
 from ollama_client import call_analyst_b
-from prompts.analyst_prompt import ANALYST_PROMPT, PRIOR_VALIDATION_CONTEXT_TEMPLATE
+from prompts.analyst_prompt import (
+    ANALYST_PROMPT,
+    HUMAN_VALIDATION_CONTEXT,
+    PRIOR_VALIDATION_CONTEXT_TEMPLATE,
+)
 
 logger = logging.getLogger("agent.analyst_b")
 
@@ -41,6 +45,10 @@ def analyze(article: dict) -> Optional[dict]:
         organization = article.get("source", "Partner Organization")
         prior_ctx = PRIOR_VALIDATION_CONTEXT_TEMPLATE.format(organization=organization)
         user_msg = prior_ctx.strip() + "\n\n" + user_msg
+
+    # Same human validation note as Analyst A (rejection overruled in /review)
+    if article.get("_human_validated"):
+        user_msg = HUMAN_VALIDATION_CONTEXT.strip() + "\n\n" + user_msg
 
     # Phase 10 — same human-review hint as Analyst A. Both A and B see the
     # same calibration signal so their independent reads stay aligned on

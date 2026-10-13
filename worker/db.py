@@ -306,10 +306,12 @@ def prune_raw_articles(retention_days: Optional[int] = None,
         return 0
 
 
-def event_exists(link: str) -> bool:
+def event_exists(link: str, include_review_queue: bool = True) -> bool:
     """
     Return True if an event with this event_url already exists in carbon_events
     OR in the review_queue (so we don't re-analyze pending reviews).
+    include_review_queue=False checks carbon_events only: used for articles a
+    human sent back for re-analysis, whose URL owns a review_queue row by design.
     On error, returns False to prefer a potential duplicate over a missed article.
     """
     try:
@@ -320,6 +322,8 @@ def event_exists(link: str) -> bool:
         )
         if cursor.fetchone() is not None:
             return True
+        if not include_review_queue:
+            return False
         cursor = conn.execute(
             "SELECT 1 FROM review_queue WHERE event_url = ? LIMIT 1",
             (link,),
@@ -470,6 +474,15 @@ def add_to_review_queue(data: dict) -> Optional[int]:
     duplicate review entries when an article hits the analyst-rejected path
     AND later the sentinel-flag path on a re-classify).
     """
+    if not (data.get("event_url") or "").strip():
+        # A URL-less row collides on UNIQUE(event_url) with the next one: from
+        # 2026-05-05 to 2026-10-13 every Analyst rejection hit review #27 ('')
+        # and was silently dropped.
+        logger.warning(
+            "Not queued for review (no event_url): '%s'",
+            (data.get("event_title") or "")[:60],
+        )
+        return None
     try:
         conn = _get_conn()
         # Skip duplicates already pending review
@@ -579,6 +592,33 @@ def resolve_review(
 
         now = datetime.now(tz=timezone.utc).isoformat()
 
+        # An Analyst rejection (suggested 'REJECT') has no BURN/MINT verdict to
+        # promote. reverse means "actionable after all": the row waits in
+        # 'reanalyze' for a full analysis by the next pipeline run. approve,
+        # edit and reject confirm the rejection. Nothing reaches carbon_events.
+        if (row["suggested_decision"] or "").upper() == "REJECT":
+            if human_verdict == "reverse":
+                status = "reanalyze"
+            elif human_verdict in ("approve", "edit", "reject"):
+                status = "rejected"
+            else:
+                logger.warning(
+                    "resolve_review: verdict %r does not apply to the Analyst "
+                    "rejection id=%d", human_verdict, review_id,
+                )
+                return False
+            conn.execute(
+                """UPDATE review_queue SET status=?, human_verdict=?,
+                       human_amount=?, human_reason=?, resolved_at=? WHERE id=?""",
+                (status, human_verdict, human_amount, human_reason, now, review_id),
+            )
+            conn.commit()
+            logger.info(
+                "Analyst rejection id=%d -> %s (human verdict: %s).",
+                review_id, status, human_verdict,
+            )
+            return True
+
         if human_verdict == "reject":
             conn.execute(
                 """UPDATE review_queue SET status='rejected', human_verdict=?,
@@ -646,6 +686,125 @@ def resolve_review(
         _rollback_quietly()
         logger.error("Error resolving review id=%d: %s", review_id, exc)
         return False
+
+
+def requeue_review(review_id: int, data: dict, expected_status: Optional[str] = None) -> bool:
+    """Put an existing review_queue row back in the human queue ('pending').
+
+    Used for articles a human sent back for re-analysis: their URL already owns
+    a review_queue row (UNIQUE event_url), so fresh verdicts refresh that row
+    instead of inserting a second one. `data` takes the add_to_review_queue()
+    keys; absent keys are left untouched. With expected_status, the row is
+    updated only while it is still in that status (returns False otherwise).
+    """
+    sets = ["status = 'pending'", "resolved_at = NULL"]
+    params: list = []
+    for key in ("analyst_a_verdict", "analyst_b_verdict", "reconciler_verdict"):
+        if key in data:
+            sets.append(f"{key} = ?")
+            params.append(_json_or_null(data[key]))
+    if "sentinel_concern" in data:
+        sets.append("sentinel_concern = ?")
+        params.append((data["sentinel_concern"] or "")[:500])
+    if "suggested_decision" in data:
+        sets.append("suggested_decision = ?")
+        params.append(data["suggested_decision"] or "")
+    if "suggested_amount_crbn" in data:
+        sets.append("suggested_amount_crbn = ?")
+        params.append(int(data["suggested_amount_crbn"] or 0))
+    where = "id = ?"
+    params.append(review_id)
+    if expected_status is not None:
+        where += " AND status = ?"
+        params.append(expected_status)
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            f"UPDATE review_queue SET {', '.join(sets)} WHERE {where}", params
+        )
+        conn.commit()
+        return cursor.rowcount > 0
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error requeuing review id=%d: %s", review_id, exc)
+        return False
+
+
+def get_reanalysis_articles() -> list[dict]:
+    """Articles a human sent back from /review for a full analysis.
+
+    Reversing an Analyst rejection means "actionable after all": the row waits
+    in status 'reanalyze' and the next pipeline run analyses the article again,
+    skipping the seen-URL filter and the classifier. The description comes from
+    the raw_articles firehose while it is still retained.
+    """
+    try:
+        conn = _get_conn()
+        rows = conn.execute(
+            """
+            SELECT q.id, q.event_title, q.event_url, q.event_source, q.created_at,
+                   r.description
+            FROM review_queue q
+            LEFT JOIN raw_articles r ON r.url = q.event_url
+            WHERE q.status = 'reanalyze'
+            ORDER BY q.id ASC
+            """
+        ).fetchall()
+    except Exception as exc:
+        logger.error("Error fetching articles to re-analyse: %s", exc)
+        return []
+    return [
+        {
+            "title": row["event_title"],
+            "link": row["event_url"],
+            "source": row["event_source"],
+            "description": row["description"] or "",
+            "published": row["created_at"],
+            "_human_validated": True,
+            "_review_id": row["id"],
+        }
+        for row in rows
+    ]
+
+
+def settle_reanalysis(articles: list[dict]) -> None:
+    """Close the loop on human-validated articles once the analysts have run.
+
+    Each one either produced an event (writer happy path) or is already back
+    in the human queue (Analyst rejected it again, or the Sentinel flagged it).
+    A row still in 'reanalyze' got no BURN/MINT verdict this run (neutral, or
+    an analyst call failed): it goes back to the human rather than being
+    re-analysed every hour.
+    """
+    for article in articles:
+        review_id = article.get("_review_id")
+        if review_id is None:
+            continue
+        if event_exists(article.get("link", ""), include_review_queue=False):
+            try:
+                conn = _get_conn()
+                conn.execute(
+                    "UPDATE review_queue SET status = 'reanalyzed' "
+                    "WHERE id = ? AND status = 'reanalyze'",
+                    (review_id,),
+                )
+                conn.commit()
+            except Exception as exc:
+                _rollback_quietly()
+                logger.error("Error closing re-analysed review id=%d: %s", review_id, exc)
+            continue
+        if requeue_review(
+            review_id,
+            {"sentinel_concern": (
+                "Re-analysis after your validation produced no BURN/MINT verdict "
+                "(neutral, or an analyst call failed). Send it again or reject it."
+            )},
+            expected_status="reanalyze",
+        ):
+            logger.info(
+                "Review id=%d back to the human queue: no verdict on re-analysis.",
+                review_id,
+            )
 
 
 # ── Training data logger ─────────────────────────────────────────────────────

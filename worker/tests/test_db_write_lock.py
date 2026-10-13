@@ -67,7 +67,10 @@ def _analyst_rejected(url: str) -> dict:
 
 
 def test_duplicate_review_url_releases_write_lock(fresh_db):
-    first = db.add_to_review_queue(_analyst_rejected(""))
+    # The incident used the empty URL of review #27; empty URLs are now refused
+    # upstream, but any URL whose review is already resolved takes the same path.
+    url = "https://example.org/already-reviewed"
+    first = db.add_to_review_queue(_analyst_rejected(url))
     assert first is not None
     # Once the existing row is resolved, the pending-only idempotence check
     # misses it and the INSERT hits the UNIQUE constraint (production path).
@@ -75,7 +78,7 @@ def test_duplicate_review_url_releases_write_lock(fresh_db):
     conn.execute("UPDATE review_queue SET status = 'rejected' WHERE id = ?", (first,))
     conn.commit()
 
-    assert db.add_to_review_queue(_analyst_rejected("")) is None
+    assert db.add_to_review_queue(_analyst_rejected(url)) is None
     assert not conn.in_transaction
     assert _other_process_can_write(fresh_db)
 

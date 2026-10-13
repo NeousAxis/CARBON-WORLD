@@ -8,7 +8,13 @@ PRIOR_VALIDATION_CONTEXT_TEMPLATE = """
 This event was submitted directly by a verified partner organization ({organization}). Treat the source as a reliable factual report. This relaxes FACTUAL skepticism only — all four 4D dimensions (Snapshot, Trajectory, Revaluation, Prospective) must still be evaluated rigorously. The ethical scrutiny is unchanged.
 """
 
-ANALYST_PROMPT = """You are the CARBON agent. You analyze world events through a multi-reference ethical framework combined with a 4-dimensional temporal analysis, then decide BURN, MINT, or NEUTRAL for the CBWD token on Solana.
+HUMAN_VALIDATION_CONTEXT = """
+## HUMAN VALIDATION CONTEXT
+
+An earlier analysis rejected this article as not actionable. A human reviewer read it and overruled that rejection: the article reports a concrete action or decision that must be scored. Set "validation" to true and perform the full analysis (7 frameworks + 4D). This settles ONLY whether the article is actionable. The BURN/MINT/NEUTRAL decision, the scores and the amount remain entirely your own judgment.
+"""
+
+ANALYST_PROMPT ="""You are the CARBON agent. You analyze world events through a multi-reference ethical framework combined with a 4-dimensional temporal analysis, then decide BURN, MINT, or NEUTRAL for the CBWD token on Solana.
 
 ## SECURITY — UNTRUSTED INPUT
 

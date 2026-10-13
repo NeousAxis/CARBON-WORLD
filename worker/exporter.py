@@ -818,6 +818,10 @@ def _export_review_queue() -> None:
         logger.warning("Could not fetch pending reviews: %s", exc)
         reviews = []
 
+    # Analyst rejections (suggested REJECT, ~70 a day) go after the BURN/MINT
+    # reviews so the decisions with on-chain consequences stay on top of /review.
+    reviews.sort(key=lambda r: ((r.get("suggested_decision") or "").upper() == "REJECT", r.get("id", 0)))
+
     payload = {
         "generated_at": datetime.now(tz=timezone.utc).isoformat(),
         "total_pending": len(reviews),

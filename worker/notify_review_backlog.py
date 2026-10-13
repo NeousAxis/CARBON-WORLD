@@ -94,6 +94,7 @@ def fetch_backlog_summary() -> dict:
         buckets_raw = con.execute("""
             SELECT
               CASE
+                WHEN suggested_decision = 'REJECT' THEN 'analyst rejection (not actionable)'
                 WHEN sentinel_concern LIKE 'structural:%missing_positive%missing_negative%' THEN 'both lists empty'
                 WHEN sentinel_concern LIKE 'structural:%missing_negative%' THEN 'missing negative aspects'
                 WHEN sentinel_concern LIKE 'structural:%missing_positive%' THEN 'missing positive aspects'
@@ -111,13 +112,14 @@ def fetch_backlog_summary() -> dict:
         """).fetchall()
         buckets = {row["bucket"]: row["n"] for row in buckets_raw}
 
-        # Top 10 newest pending rows for the email body.
+        # Top 10 newest pending rows for the email body, BURN/MINT reviews
+        # first (the many Analyst rejections would otherwise fill the list).
         rows = con.execute("""
             SELECT id, event_title, event_source, suggested_decision,
                    suggested_amount_crbn, sentinel_concern, created_at
             FROM review_queue
             WHERE status = 'pending'
-            ORDER BY created_at DESC
+            ORDER BY (suggested_decision = 'REJECT'), created_at DESC
             LIMIT 10
         """).fetchall()
 

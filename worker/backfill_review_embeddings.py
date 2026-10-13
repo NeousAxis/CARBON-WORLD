@@ -73,6 +73,10 @@ def main() -> int:
             FROM review_queue
             WHERE status != 'pending'
               AND human_review_embedding IS NULL
+              -- Analyst rejections (confirmed, or sent back for re-analysis)
+              -- are not human BURN/MINT judgments: keeping them out of the
+              -- corpus leaves the auto-resolver and the analyst hint as before.
+              AND COALESCE(suggested_decision, '') != 'REJECT'
             ORDER BY id ASC
             """
         ).fetchall()

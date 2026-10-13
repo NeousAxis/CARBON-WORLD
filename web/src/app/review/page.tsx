@@ -84,6 +84,11 @@ function ReviewCard({
     b.decision !== undefined &&
     a.decision === b.decision;
 
+  // Analyst rejection ("not actionable", no Analyst B / Reconciler verdict):
+  // APPROVE and REJECT confirm it, REVERSE sends the article to a full analysis
+  // on the next pipeline run (worker/db.py resolve_review).
+  const isAnalystRejection = item.suggested_decision === "REJECT";
+
   const resolved = result?.kind === "ok";
 
   function requestResolve(verdict: ResolveVerdict) {
@@ -221,7 +226,7 @@ function ReviewCard({
         </div>
       </div>
 
-      {!agree && (
+      {!agree && !isAnalystRejection && (
         <div
           className="p-2 mb-3 text-xs font-medium"
           style={{ backgroundColor: "#24100B", color: "#FF5C33" }}
@@ -278,7 +283,7 @@ function ReviewCard({
               opacity: resolved || (busy !== null && busy !== "reverse") ? 0.5 : 1,
             }}
           >
-            {busy === "reverse" ? "Executing…" : "REVERSE MINT↔BURN"}
+            {busy === "reverse" ? "Executing…" : isAnalystRejection ? "ANALYZE ANYWAY" : "REVERSE MINT↔BURN"}
           </button>
 
           <button

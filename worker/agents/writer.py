@@ -12,6 +12,7 @@ from db import (
     event_exists,
     update_tx_hash,
     add_to_review_queue,
+    requeue_review,
     log_training_data,
 )
 from geo_extractor import extract_geo, resolve_country_metadata
@@ -104,7 +105,7 @@ def _route_to_review(event: dict, article: dict, analysis: dict) -> bool:
     link = article.get("link", "")
     sentinel = event.get("_sentinel", {}) or {}
 
-    review_id = add_to_review_queue({
+    entry = {
         "event_title": title[:500],
         "event_url": link,
         "event_source": article.get("source", ""),
@@ -122,7 +123,14 @@ def _route_to_review(event: dict, article: dict, analysis: dict) -> bool:
         "sentinel_concern": sentinel.get("concern", ""),
         "suggested_decision": analysis.get("decision", "NEUTRAL"),
         "suggested_amount_crbn": int(analysis.get("amount_cbwd", 0) or 0),
-    })
+    }
+    if article.get("_human_validated"):
+        # Re-analysed after a human overruled the Analyst's rejection: the URL
+        # already owns a review_queue row, which becomes a regular BURN/MINT
+        # review instead of a second (UNIQUE-violating) insert.
+        review_id = article["_review_id"] if requeue_review(article["_review_id"], entry) else None
+    else:
+        review_id = add_to_review_queue(entry)
 
     log_training_data({
         "event_url": link,
@@ -160,7 +168,9 @@ def write(event: dict) -> bool:
     title = article.get("title", "")
     link = article.get("link", "")
 
-    if event_exists(link):
+    # A human-validated re-analysis owns a review_queue row by design: only an
+    # existing carbon_events row makes it a duplicate.
+    if event_exists(link, include_review_queue=not article.get("_human_validated")):
         logger.info("Already in DB, skipping: '%s'", title[:60])
         return False
 

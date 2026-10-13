@@ -269,7 +269,14 @@ def main() -> int:
         new_articles = new_articles[:MAX_ARTICLES_PER_RUN]
     total_classified = len(new_articles)
 
-    if not new_articles:
+    # Analyst rejections a human overruled in /review ("actionable after all").
+    # Their URL already owns a review_queue row, so they skip the seen filter
+    # and the classifier and go straight to the analysts.
+    reanalysis_articles = _db_module.get_reanalysis_articles()
+    if reanalysis_articles:
+        logger.info("Human-validated articles to re-analyse: %d", len(reanalysis_articles))
+
+    if not new_articles and not reanalysis_articles:
         logger.info("No new articles to process.")
         export_events()
         set_last_run(datetime.now(tz=timezone.utc))
@@ -278,11 +285,14 @@ def main() -> int:
     # === Phase 2/8: CLASSIFIER ===
     logger.info("=== Phase 2/8: CLASSIFIER (%d articles) ===", total_classified)
     # Pass the DB connection so the semantic cache can search for similar recent events
-    valid_articles, invalid_articles = classify_batch(new_articles, conn=_db_conn)
+    if new_articles:
+        valid_articles, invalid_articles = classify_batch(new_articles, conn=_db_conn)
+    else:
+        valid_articles, invalid_articles = [], []
 
     # Separate cache-hit articles (verdict already known) from articles that need LLM analysis
     cache_hit_articles = [a for a in valid_articles if a.get("_cache_hit")]
-    valid_articles = [a for a in valid_articles if not a.get("_cache_hit")]
+    valid_articles = reanalysis_articles + [a for a in valid_articles if not a.get("_cache_hit")]
 
     # Mark partner submissions that were rejected by classifier
     for a in invalid_articles:
@@ -332,8 +342,16 @@ def main() -> int:
     # Merge by URL — both analysts must have spoken
     ab_pairs = _merge_ab_by_url(results_a, results_b)
 
+    def _close_reanalysis() -> None:
+        # Every human-validated article leaves the run with an outcome: event
+        # written, or back in the human queue (and in review_queue.json).
+        if reanalysis_articles:
+            _db_module.settle_reanalysis(reanalysis_articles)
+            export_events()
+
     if not ab_pairs:
         logger.info("No A/B pairs to reconcile. Pipeline complete.")
+        _close_reanalysis()
         _empty_report()
         set_last_run(datetime.now(tz=timezone.utc))
         return 0
@@ -355,6 +373,7 @@ def main() -> int:
     )
 
     if not actionable_events:
+        _close_reanalysis()
         _empty_report(analyzed=0, neutral=neutral_count)
         set_last_run(datetime.now(tz=timezone.utc))
         return 0
@@ -374,6 +393,10 @@ def main() -> int:
 
     # --- Update submission lifecycle for partner-submitted articles ---
     _update_submission_lifecycle(scored_events)
+
+    # --- Human-validated articles: event written, or back to the human queue ---
+    if reanalysis_articles:
+        _db_module.settle_reanalysis(reanalysis_articles)
 
     # --- Export JSON for frontend ---
     export_events()
