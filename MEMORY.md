@@ -4,6 +4,24 @@
 
 ---
 
+## 🔒 2026-10-13 : /review bloquée par un verrou SQLite, et rejets de l'analyste enfin visibles
+
+Cyril : « Je ne peux plus faire les review, elle reste bloquée malgré mes décisions ! »
+
+**Constat (logs/web.log)** : #783 approuvée à 17:01, puis 6 clics sur #784 et #785 entre 17:04 et 17:06, tous en échec (`exited with code 1`), chacun 30 s après le début (`busy_timeout`) avec `Error in save_event ... database is locked`. Le pipeline de 17:00 tournait.
+
+**Cause racine** : le module `sqlite3` de Python ouvre une transaction implicite avant chaque INSERT/UPDATE/DELETE. Quand l'INSERT échoue (contrainte UNIQUE), SQLite n'annule que l'instruction : la transaction reste ouverte et garde le verrou d'écriture WAL jusqu'au prochain commit sur la même connexion. Les `except` de `db.py` avalaient l'erreur sans rollback. Déclencheur : `analyst.py` mettait en file les articles rejetés par l'analyste avec `article.get("url")` alors que les articles portent la clé `link` (commit `dd1d262c` du 2026-05-05) : URL toujours vide, collision avec la ligne #27, verrou tenu du premier rejet jusqu'à la phase writer (environ 4 min par run). L'incident du 2026-05-25 relevait probablement du même mécanisme (non vérifié).
+
+**Correctif 1 (`7faa875e`)** : `_rollback_quietly()` dans le `except` de chaque écriture de `db.py`. Rejoué sur une copie de la base de prod : ancien code verrouillé après 30,1 s, nouveau code 0,0 s. Vérifié en prod : sonde du verrou toutes les 3 s sur tout le run de 19:00 (268 mesures, aucune bloquée), reviews #784 à #787 résolues par Cyril sans erreur.
+
+**Correctif 2 (`d90b2b61`, demandé par Cyril)** : clé `link`, URL vide refusée. Suggestions REJECT : APPROVE et REJECT confirment le rejet (aucun event, aucune TX) ; le bouton ANALYZE ANYWAY met la ligne en `reanalyze`, le run suivant réanalyse l'article avec `HUMAN_VALIDATION_CONTEXT` (sans filtre « déjà vu » ni classifier), puis `settle_reanalysis` : event écrit (`reanalyzed`) ou retour vers Cyril. Ces lignes restent hors du corpus d'embeddings (auto-résolution et hint inchangés). `/review` et la notification listent les BURN/MINT d'abord. Vérifié en prod : 9 rejets mis en file aux runs de 18:00 et 19:00 avec leurs vraies URL. Volume attendu environ 70 par jour ; avant, ces articles étaient réanalysés à chaque run (78 analyses pour 52 articles le 13).
+
+**Ouvert, non corrigé** : `db.resolve_review()` insère déjà l'event (final_score 0, sans aspects), donc le `save_event` plus riche de `resolve_review.py` tombe sur l'URL en doublon et sort avant la TX Solana. Les 733 events approuvés via review ont un score 0, 477 n'ont pas d'aspects, et leur TX ne part qu'au rattrapage de 03:15. Signalé à Cyril.
+
+**Note opérationnelle** : toute modification sous `web/` déclenche un rebuild Next.js de 42,6 min (prégénération de 8435 pages d'events) qui retarde d'autant le run de l'heure.
+
+---
+
 ## 🪙 2026-07-07 — Artefact net-supply corrigé (montants calibrés) + affichage re-pricé
 
 Cyril, en regardant le dashboard : *"C'EST IMPOSSIBLE qu'avec les événements actuels dans le monde on puisse continuer à BRÛLER des tokens comme ça !!!"*. Son intuition détectait un vrai artefact déjà quantifié le 18-06 (mémoire `scale-inflation-artifact`).
