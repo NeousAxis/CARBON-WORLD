@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-13T02:05:21.448067+00:00",
-  "total_events": 8405,
-  "total_burned": 8012826005,
+  "generated_at": "2026-10-13T03:07:34.518661+00:00",
+  "total_events": 8406,
+  "total_burned": 8013526005,
   "total_minted": 10831614594,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8406,
+      "event_title": "Favorable taxes for the rich: Oxfam sues the French state",
+      "event_url": "https://reporterre.net/Impots-favorables-aux-riches-Oxfam-attaque-l-Etat-en-justice",
+      "event_source": "Reporterre",
+      "decision": "BURN",
+      "amount_crbn": 700000,
+      "final_score": 2.23,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Legal challenge against regressive tax policy punishes harmful fiscal inequality, protecting rights; thus BURN. | The legal action by Oxfam France is a proactive step toward addressing fiscal injustice, directly challenging policies that entrench inequality. While the lawsuit itself does not immediately rectify the harm, it embodies a critical mechanism for accountability and pu",
+      "tx_hash": "NGuahKqTNEPi4v5dLDU6ZjeU9YAJr7nG4FfQd6XQ9tj2h8L4GQhk7E4CS8FByziKMzg6LJA5ZR1kHeWQdu52vF2",
+      "created_at": "2026-10-13T03:07:28.531134+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Oxfam France files a legal challenge against the French state for regressive taxation policies, directly targeting systemic inequality and advocating for fiscal justice.\", \"affected_sdgs\": [1, 10, 16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The lawsuit raises public awareness and institutional scrutiny of tax policies that disproportionately benefit the wealthy, aligning with SDG 10 (Reduced Inequalities) and UDHR Article 26 (right to social security).\", \"affected_sdgs\": [4, 10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The legal challenge does not immediately alter tax policy, leaving regressive fiscal structures intact, which continue to exacerbate income inequality (SDG 10) and undermine equitable resource distribution (UDHR Article 25).\", \"affected_sdgs\": [1, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for prolonged litigation without guaranteed outcome, delaying tangible reforms and perpetuating systemic inequities in taxation.\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 8405,
       "event_title": "Elon Musk spent $276 million supporting Republican candidates in midterm elections",
@@ -193371,9 +193394,9 @@
         "total_amount": 850000
       },
       {
-        "country": "Mexico",
+        "country": "France",
         "count": 1,
-        "total_amount": 3575000
+        "total_amount": 700000
       }
     ],
     "top_regions_sustainable": [
@@ -193399,8 +193422,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.043,
-        "events": 70
+        "burn_ratio": 0.056,
+        "events": 71
       }
     ],
     "top_regions_destructive": [
@@ -193416,8 +193439,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.957,
-        "events": 70
+        "mint_ratio": 0.944,
+        "events": 71
       },
       {
         "region": "North America",
@@ -193464,7 +193487,7 @@
       {
         "date": "2026-10-13",
         "net_minted": 992000,
-        "net_burned": 0
+        "net_burned": 700000
       }
     ],
     "event_of_the_day": {
@@ -193480,9 +193503,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 20,
+        "positive": 21,
         "negative": 203,
         "event_ids_positive": [
+          8406,
           8388,
           8360,
           8352,
@@ -193711,9 +193735,10 @@
         ]
       },
       "UDHR": {
-        "positive": 17,
+        "positive": 18,
         "negative": 182,
         "event_ids_positive": [
+          8406,
           8388,
           8347,
           8339,
@@ -194195,11 +194220,11 @@
       "niche_pct": 72.9,
       "mainstream_pct": 27.1,
       "total_sources_used": 85,
-      "articles_processed": 229
+      "articles_processed": 230
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 229,
+      "total_events": 230,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -194498,14 +194523,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 20,
+      "total_burn": 21,
       "direct_action": {
         "count": 18,
-        "pct": 90.0
+        "pct": 85.7
       },
       "editorial_consciousness": {
-        "count": 2,
-        "pct": 10.0
+        "count": 3,
+        "pct": 14.3
       },
       "untyped": {
         "count": 0,
@@ -194513,13 +194538,13 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2136,
+      "total_burn": 2137,
       "direct_action": {
         "count": 1690,
         "pct": 79.1
       },
       "editorial_consciousness": {
-        "count": 170,
+        "count": 171,
         "pct": 8.0
       },
       "untyped": {
@@ -194558,9 +194583,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 68,
+      "citizen": 69,
       "institutional": 161,
-      "citizen_ratio": 0.297,
+      "citizen_ratio": 0.3,
       "daily": [
         {
           "date": "2026-10-07",
@@ -194594,11 +194619,12 @@
         },
         {
           "date": "2026-10-13",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        8406,
         8396,
         8393,
         8390,
