@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-13T16:52:48.095473+00:00",
-  "total_events": 8427,
+  "generated_at": "2026-10-13T17:07:26.022576+00:00",
+  "total_events": 8428,
   "total_burned": 8018426005,
-  "total_minted": 10852207294,
-  "pending_reviews": 5,
+  "total_minted": 10852707294,
+  "pending_reviews": 9,
   "events": [
+    {
+      "id": 8428,
+      "event_title": "Road lobby groups pressure Swiss federal government to overhaul Transports’45 infrastructure plan",
+      "event_url": "https://www.letemps.ch/articles/transports-45-les-milieux-routiers-mettent-la-pression-sur-berne",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -3.2,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Lobby pressure to expand highways weakens climate protections, enabling environmental harm. | The pressure to overhaul Transports’45 prioritizes highway expansion over sustainable mobility, directly conflicting with SDGs 11 (sustainable cities) and 13 (climate action). While addressing congestion may align with short-term economic goals (SDG 8/9), the long-term environmental",
+      "tx_hash": "5Et4dxSeK77LHaEWPRbvnk1LK8SEhaj8wPDCKv2uf4A3JoKQYbormPXPWC5X8ubrWvtSF8AXwSbK2TwgytyfJLes",
+      "created_at": "2026-10-13T17:07:19.423588+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Road lobby groups and bourgeois politicians pressure Swiss federal government to prioritize highway expansion (A1 widening) and increase national road investments, sidelining sustainable transport alternatives.\", \"affected_sdgs\": [11, 13, 3], \"violated_rights\": [\"UDHR Article 25 (right to health via pollution)\", \"SDG 13 (climate action)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential lock-in of car-dependent infrastructure, undermining Switzerland's climate targets (SDG 13) and urban sustainability (SDG 11).\", \"affected_sdgs\": [11, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Disproportionate focus on road capacity over public transport, cycling, or pedestrian infrastructure, exacerbating inequalities in mobility access (SDG 10).\", \"affected_sdgs\": [10, 11], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8427,
       "event_title": "Richard Rasmussen to Join Environmental Secretariat Council of Pará",
@@ -193846,8 +193869,8 @@
       },
       {
         "country": "Switzerland",
-        "count": 7,
-        "total_amount": 1815400
+        "count": 8,
+        "total_amount": 2315400
       },
       {
         "country": "Italy",
@@ -193905,8 +193928,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.046,
-        "events": 65
+        "burn_ratio": 0.045,
+        "events": 66
       }
     ],
     "top_regions_destructive": [
@@ -193922,8 +193945,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.954,
-        "events": 65
+        "mint_ratio": 0.955,
+        "events": 66
       },
       {
         "region": "North America",
@@ -193969,7 +193992,7 @@
       },
       {
         "date": "2026-10-13",
-        "net_minted": 20302700,
+        "net_minted": 20802700,
         "net_burned": 5600000
       }
     ],
@@ -193987,7 +194010,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 22,
-        "negative": 205,
+        "negative": 206,
         "event_ids_positive": [
           8417,
           8409,
@@ -194013,6 +194036,7 @@
           8195
         ],
         "event_ids_negative": [
+          8428,
           8427,
           8426,
           8425,
@@ -194222,7 +194246,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 187,
+        "negative": 188,
         "event_ids_positive": [
           8417,
           8406,
@@ -194244,6 +194268,7 @@
           8195
         ],
         "event_ids_negative": [
+          8428,
           8427,
           8426,
           8425,
@@ -194712,11 +194737,11 @@
       "niche_pct": 70.2,
       "mainstream_pct": 29.8,
       "total_sources_used": 84,
-      "articles_processed": 233
+      "articles_processed": 234
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 233,
+      "total_events": 234,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -194898,6 +194923,28 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 14,
+        "burn_count": 3,
+        "mint_count": 11,
+        "event_ids": [
+          8428,
+          8421,
+          8397,
+          8388,
+          8373,
+          8362,
+          8350,
+          8339,
+          8328,
+          8305,
+          8277,
+          8269,
+          8262,
+          8215
+        ]
+      },
+      {
         "name": "Water",
         "count": 14,
         "burn_count": 2,
@@ -194917,27 +194964,6 @@
           8264,
           8257,
           8195
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 13,
-        "burn_count": 3,
-        "mint_count": 10,
-        "event_ids": [
-          8421,
-          8397,
-          8388,
-          8373,
-          8362,
-          8350,
-          8339,
-          8328,
-          8305,
-          8277,
-          8269,
-          8262,
-          8215
         ]
       },
       {
@@ -194981,6 +195007,24 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 10,
+        "burn_count": 0,
+        "mint_count": 10,
+        "event_ids": [
+          8428,
+          8408,
+          8374,
+          8373,
+          8359,
+          8355,
+          8326,
+          8272,
+          8261,
+          8215
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 10,
         "burn_count": 2,
@@ -194996,23 +195040,6 @@
           8238,
           8235,
           8224
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 9,
-        "burn_count": 0,
-        "mint_count": 9,
-        "event_ids": [
-          8408,
-          8374,
-          8373,
-          8359,
-          8355,
-          8326,
-          8272,
-          8261,
-          8215
         ]
       }
     ],
@@ -195047,10 +195074,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 211,
+      "total_mint": 212,
       "direct_action": {
-        "count": 191,
-        "pct": 90.5
+        "count": 192,
+        "pct": 90.6
       },
       "editorial_alarm": {
         "count": 14,
@@ -195062,9 +195089,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6276,
+      "total_mint": 6277,
       "direct_action": {
-        "count": 5320,
+        "count": 5321,
         "pct": 84.8
       },
       "editorial_alarm": {
@@ -195078,8 +195105,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 73,
-      "institutional": 160,
-      "citizen_ratio": 0.313,
+      "institutional": 161,
+      "citizen_ratio": 0.312,
       "daily": [
         {
           "date": "2026-10-07",
@@ -195114,7 +195141,7 @@
         {
           "date": "2026-10-13",
           "citizen": 9,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -195193,6 +195220,7 @@
         8198
       ],
       "event_ids_institutional": [
+        8428,
         8427,
         8426,
         8418,
