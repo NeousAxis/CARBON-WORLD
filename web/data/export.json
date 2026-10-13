@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-13T00:05:45.627314+00:00",
-  "total_events": 8404,
+  "generated_at": "2026-10-13T01:06:28.146928+00:00",
+  "total_events": 8405,
   "total_burned": 8012826005,
-  "total_minted": 10830938594,
+  "total_minted": 10831614594,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8405,
+      "event_title": "Elon Musk spent $276 million supporting Republican candidates in midterm elections",
+      "event_url": "https://www.letemps.ch/articles/elon-musk-a-depense-276-millions-de-dollars-en-faveur-des-republicains-pour-les-elections-de-mi-mandat",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -5.15,
+      "confidence": 8,
+      "justification": "Massive political donations to actors undermining climate, labor, and democratic equity warrant MINT. | The action—massive financial support for political candidates and PACs—directly undermines democratic equity (SDG 16, UDHR Article 21) and enables policies that exacerbate climate change (SDG 13) and inequality (SDG 10). While no immediate harm is enacted, the downstream effects of empowered actors with anti-regulatory agendas pose significant ethical costs, particularly to environmental and l",
+      "tx_hash": "6tcFs7U5fMtZPuZTzJHvWeoBxuwM3fQSraW2715KMGBGZHh4QKNkaCPxUf3HeHwhkU3CjatqkTqh5naqdherKGW",
+      "created_at": "2026-10-13T01:06:22.367505+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Elon Musk's $276 million donation to Republican candidates and PACs enables political actors with documented records of undermining climate action, social equity, and labor rights, amplifying their influence in elections.\", \"affected_sdgs\": [10, 13, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The use of super PACs to bypass individual donation limits ($3,300) exploits regulatory loopholes, distorting democratic representation and enabling disproportionate influence by wealthy individuals over policy outcomes.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Historical alignment of supported candidates with policies that weaken environmental regulations (e.g., rollbacks of emissions standards, defunding of renewable energy programs) and labor protections (e.g., anti-union legislation, wage suppression).\", \"affected_sdgs\": [7, 8, 13, 15], \"violated_rights\": [\"ILO Freedom of Association\", \"UDHR Article 23\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8404,
       "event_title": "Oxfam France denounces 'fiscal injustice' and sues the state",
@@ -193302,8 +193325,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 45,
-        "total_amount": 31054850
+        "count": 43,
+        "total_amount": 30455250
       },
       {
         "country": "France",
@@ -193366,13 +193389,13 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.1,
-        "events": 20
+        "burn_ratio": 0.105,
+        "events": 19
       },
       {
         "region": "North America",
-        "burn_ratio": 0.061,
-        "events": 49
+        "burn_ratio": 0.064,
+        "events": 47
       },
       {
         "region": "Europe",
@@ -193398,13 +193421,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.939,
-        "events": 49
+        "mint_ratio": 0.936,
+        "events": 47
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.9,
-        "events": 20
+        "mint_ratio": 0.895,
+        "events": 19
       }
     ],
     "supply_trend_7d": [
@@ -193440,7 +193463,7 @@
       },
       {
         "date": "2026-10-13",
-        "net_minted": 316000,
+        "net_minted": 992000,
         "net_burned": 0
       }
     ],
@@ -193458,7 +193481,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 207,
+        "negative": 204,
         "event_ids_positive": [
           8388,
           8360,
@@ -193482,6 +193505,7 @@
           8178
         ],
         "event_ids_negative": [
+          8405,
           8404,
           8403,
           8402,
@@ -193684,16 +193708,12 @@
           8180,
           8179,
           8177,
-          8176,
-          8175,
-          8174,
-          8173,
-          8172
+          8176
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 186,
+        "negative": 183,
         "event_ids_positive": [
           8388,
           8347,
@@ -193714,6 +193734,7 @@
           8178
         ],
         "event_ids_negative": [
+          8405,
           8404,
           8403,
           8402,
@@ -193895,11 +193916,7 @@
           8181,
           8180,
           8177,
-          8176,
-          8175,
-          8174,
-          8173,
-          8172
+          8176
         ]
       },
       "ILO": {
@@ -193907,6 +193924,7 @@
         "negative": 20,
         "event_ids_positive": [],
         "event_ids_negative": [
+          8405,
           8402,
           8399,
           8389,
@@ -193925,8 +193943,7 @@
           8186,
           8185,
           8184,
-          8181,
-          8173
+          8181
         ]
       },
       "CRC": {
@@ -193994,7 +194011,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 45,
+        "negative": 44,
         "event_ids_positive": [
           8388,
           8347,
@@ -194045,13 +194062,12 @@
           8198,
           8185,
           8184,
-          8180,
-          8173
+          8180
         ]
       },
       "Animal": {
         "positive": 7,
-        "negative": 22,
+        "negative": 21,
         "event_ids_positive": [
           8360,
           8352,
@@ -194082,13 +194098,12 @@
           8202,
           8201,
           8184,
-          8183,
-          8173
+          8183
         ]
       },
       "PB": {
         "positive": 8,
-        "negative": 78,
+        "negative": 75,
         "event_ids_positive": [
           8360,
           8352,
@@ -194174,10 +194189,7 @@
           8184,
           8183,
           8180,
-          8179,
-          8175,
-          8173,
-          8172
+          8179
         ]
       }
     },
@@ -194185,11 +194197,11 @@
       "niche_pct": 72.9,
       "mainstream_pct": 27.1,
       "total_sources_used": 85,
-      "articles_processed": 232
+      "articles_processed": 229
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 232,
+      "total_events": 229,
       "pct": 2.2
     },
     "active_partners_7d": [],
@@ -194301,9 +194313,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 29,
+        "count": 27,
         "burn_count": 1,
-        "mint_count": 28,
+        "mint_count": 26,
         "event_ids": [
           8392,
           8381,
@@ -194331,17 +194343,16 @@
           8214,
           8211,
           8194,
-          8179,
-          8175,
-          8172
+          8179
         ]
       },
       {
         "name": "Finance",
-        "count": 25,
+        "count": 26,
         "burn_count": 0,
-        "mint_count": 25,
+        "mint_count": 26,
         "event_ids": [
+          8405,
           8403,
           8381,
           8378,
@@ -194518,14 +194529,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 209,
       "direct_action": {
-        "count": 191,
-        "pct": 90.1
+        "count": 189,
+        "pct": 90.4
       },
       "editorial_alarm": {
-        "count": 16,
-        "pct": 7.5
+        "count": 15,
+        "pct": 7.2
       },
       "untyped": {
         "count": 5,
@@ -194533,9 +194544,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6259,
+      "total_mint": 6260,
       "direct_action": {
-        "count": 5304,
+        "count": 5305,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -194548,8 +194559,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 68,
-      "institutional": 164,
+      "citizen": 67,
+      "institutional": 162,
       "citizen_ratio": 0.293,
       "daily": [
         {
@@ -194585,7 +194596,7 @@
         {
           "date": "2026-10-13",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -194655,10 +194666,10 @@
         8187,
         8184,
         8180,
-        8178,
-        8173
+        8178
       ],
       "event_ids_institutional": [
+        8405,
         8404,
         8403,
         8402,
@@ -194819,10 +194830,7 @@
         8181,
         8179,
         8177,
-        8176,
-        8175,
-        8174,
-        8172
+        8176
       ]
     }
   }
