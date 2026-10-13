@@ -82,6 +82,16 @@ def main() -> int:
     if original_decision == "NEUTRAL" or amount <= 0:
         raise SystemExit(f"Event #{args.event_id} has nothing to reverse (decision={original_decision}, amount={amount}).")
 
+    # An offset needs an original on chain. Events resolved through /review
+    # wait for the nightly reconcile_tx (03:15) with tx_hash NULL: offsetting
+    # one now would land the offset alone (the row then turns NEUTRAL/0, so the
+    # reconcile never sends the original), a net supply move of minus the amount.
+    if not original_tx:
+        raise SystemExit(
+            f"Event #{args.event_id} has no on-chain TX yet (the nightly reconcile_tx "
+            "sends it at 03:15). Reverse it once its tx_hash is recorded."
+        )
+
     flip = {"MINT": "BURN", "BURN": "MINT"}
     reverse_decision = flip.get(original_decision)
     if reverse_decision is None:

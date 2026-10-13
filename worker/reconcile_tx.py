@@ -37,6 +37,7 @@ import logging
 import sqlite3
 import sys
 import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -48,16 +49,27 @@ from solana_executor import execute_decision
 logger = logging.getLogger("reconcile_tx")
 
 
-def list_pending(conn: sqlite3.Connection) -> list[dict]:
-    """Return events with a final BURN/MINT decision but no tx_hash."""
+MIN_AGE_MINUTES = 15
+
+
+def list_pending(conn: sqlite3.Connection, min_age_minutes: int = MIN_AGE_MINUTES) -> list[dict]:
+    """Return events with a final BURN/MINT decision but no tx_hash.
+
+    Rows younger than min_age_minutes are left alone: their writer (a pipeline
+    run that started late, for instance behind a 40 min Next.js rebuild) may
+    still be waiting for the confirmation of a TX it already sent, and a
+    replay would land a second supply move.
+    """
+    cutoff = (datetime.now(tz=timezone.utc) - timedelta(minutes=min_age_minutes)).isoformat()
     cur = conn.execute("""
         SELECT id, decision, amount_crbn, event_source, event_title
         FROM carbon_events
         WHERE tx_hash IS NULL
           AND decision IN ('BURN', 'MINT')
           AND amount_crbn > 0
+          AND created_at < ?
         ORDER BY id ASC
-    """)
+    """, (cutoff,))
     return [
         {
             "id": row[0],
@@ -168,6 +180,14 @@ def reconcile(conn: sqlite3.Connection, execute: bool, sleep_between: float = 1.
     for i, e in enumerate(events, 1):
         title = (e["event_title"] or "")[:55]
         print(f"[{i}/{len(events)}] #{e['id']:3} {e['decision']:5} {e['amount_crbn']:>10,} CBWD  {title}")
+        # The list is a snapshot and each send takes up to ~50 s: another
+        # sender may have recorded a signature for this row in the meantime.
+        current = conn.execute(
+            "SELECT tx_hash FROM carbon_events WHERE id = ?", (e["id"],)
+        ).fetchone()
+        if current is None or current[0] is not None:
+            print("      skipped (tx recorded meanwhile)")
+            continue
         try:
             sig = execute_decision(e["decision"], e["amount_crbn"], event_id=e["id"])
         except Exception as exc:

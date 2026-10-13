@@ -44,6 +44,18 @@ def export_events() -> Path:
             "SELECT * FROM carbon_events ORDER BY created_at DESC"
         ).fetchall()
         events = [dict(row) for row in rows]
+        # Explicit marker of events resolved through the /review queue (by
+        # Cyril or by the auto-approval scripts, so not a proof of human review).
+        # /citizen-actions used final_score == 0 for that, a side effect of the
+        # placeholder row the review path wrote until 2026-10-13.
+        reviewed = {
+            r[0] for r in conn.execute(
+                "SELECT event_url FROM review_queue WHERE status = 'approved'"
+            )
+        }
+        for e in events:
+            if e.get("event_url") in reviewed:
+                e["via_review_queue"] = True
         _attach_index_amount(events)
         aggregates = _compute_aggregates(conn, events)
     finally:

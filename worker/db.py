@@ -366,6 +366,45 @@ def update_tx_hash(event_id: int, tx_hash: str) -> bool:
         return False
 
 
+def _insert_event(conn: sqlite3.Connection, event_data: dict) -> int:
+    """INSERT one carbon_events row WITHOUT committing; returns its id.
+    Raises sqlite3.IntegrityError on a duplicate event_url."""
+    cursor = conn.execute(
+        """
+        INSERT INTO carbon_events
+            (event_title, event_url, event_source, decision,
+             amount_crbn, final_score, confidence, justification,
+             tx_hash, created_at, embedding, reused_from_event_id,
+             country, region, administration,
+             positive_aspects_json, negative_aspects_json,
+             burn_subtype, mint_subtype)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (
+            event_data.get("event_title", ""),
+            event_data.get("event_url", ""),
+            event_data.get("event_source", ""),
+            event_data.get("decision", ""),
+            event_data.get("amount_crbn", 0),
+            event_data.get("final_score", 0.0),
+            event_data.get("confidence", 0),
+            event_data.get("justification", ""),
+            event_data.get("tx_hash"),
+            event_data.get("created_at", ""),
+            event_data.get("embedding"),               # bytes or None
+            event_data.get("reused_from_event_id"),    # int or None
+            event_data.get("country"),                 # str or None
+            event_data.get("region"),                  # str or None
+            event_data.get("administration"),          # str or None
+            event_data.get("positive_aspects_json"),   # str or None
+            event_data.get("negative_aspects_json"),   # str or None
+            event_data.get("burn_subtype"),            # str or None
+            event_data.get("mint_subtype"),            # str or None
+        ),
+    )
+    return cursor.lastrowid
+
+
 def save_event(event_data: dict) -> Optional[dict]:
     """
     Insert an event into carbon_events.
@@ -384,43 +423,11 @@ def save_event(event_data: dict) -> Optional[dict]:
     """
     try:
         conn = _get_conn()
-        cursor = conn.execute(
-            """
-            INSERT INTO carbon_events
-                (event_title, event_url, event_source, decision,
-                 amount_crbn, final_score, confidence, justification,
-                 tx_hash, created_at, embedding, reused_from_event_id,
-                 country, region, administration,
-                 positive_aspects_json, negative_aspects_json,
-                 burn_subtype, mint_subtype)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
-            (
-                event_data.get("event_title", ""),
-                event_data.get("event_url", ""),
-                event_data.get("event_source", ""),
-                event_data.get("decision", ""),
-                event_data.get("amount_crbn", 0),
-                event_data.get("final_score", 0.0),
-                event_data.get("confidence", 0),
-                event_data.get("justification", ""),
-                event_data.get("tx_hash"),
-                event_data.get("created_at", ""),
-                event_data.get("embedding"),               # bytes or None
-                event_data.get("reused_from_event_id"),    # int or None
-                event_data.get("country"),                 # str or None
-                event_data.get("region"),                  # str or None
-                event_data.get("administration"),          # str or None
-                event_data.get("positive_aspects_json"),   # str or None
-                event_data.get("negative_aspects_json"),   # str or None
-                event_data.get("burn_subtype"),            # str or None
-                event_data.get("mint_subtype"),            # str or None
-            ),
-        )
+        event_id = _insert_event(conn, event_data)
         conn.commit()
         row = conn.execute(
             "SELECT * FROM carbon_events WHERE id = ?",
-            (cursor.lastrowid,),
+            (event_id,),
         ).fetchone()
         if row is None:
             logger.warning(
@@ -569,6 +576,7 @@ def resolve_review(
     human_verdict: str,
     human_amount: Optional[int] = None,
     human_reason: Optional[str] = None,
+    event_data: Optional[dict] = None,
 ) -> bool:
     """
     Mark a review as resolved. If human_verdict is 'approve' or 'reverse' or 'edit',
@@ -580,6 +588,10 @@ def resolve_review(
       - 'edit'   : use human_verdict decision override (BURN/MINT) with human_amount
                    (pass the override in human_reason prefix like 'BURN:<reason>' or supply via another call)
       - 'reject' : discard the event entirely (no carbon_events row)
+
+    event_data: the full carbon_events row to insert when the event is
+    promoted (resolve_review.py builds it from the stored verdicts). Keys it
+    omits fall back to a minimal row (final_score 0, confidence 10).
     """
     try:
         conn = _get_conn()
@@ -591,6 +603,23 @@ def resolve_review(
             return False
 
         now = datetime.now(tz=timezone.utc).isoformat()
+
+        def claim(status: str) -> bool:
+            # Only a still-pending row can be resolved: a drain approve racing
+            # a human reject on the same review must not both win. Runs inside
+            # the transaction that also inserts the event, if any.
+            cursor = conn.execute(
+                """UPDATE review_queue SET status=?, human_verdict=?,
+                       human_amount=?, human_reason=?, resolved_at=?
+                   WHERE id=? AND status='pending'""",
+                (status, human_verdict, human_amount, human_reason, now, review_id),
+            )
+            if cursor.rowcount == 1:
+                return True
+            conn.rollback()
+            logger.warning("resolve_review: id=%d is no longer pending (already resolved).",
+                           review_id)
+            return False
 
         # An Analyst rejection (suggested 'REJECT') has no BURN/MINT verdict to
         # promote. reverse means "actionable after all": the row waits in
@@ -607,11 +636,8 @@ def resolve_review(
                     "rejection id=%d", human_verdict, review_id,
                 )
                 return False
-            conn.execute(
-                """UPDATE review_queue SET status=?, human_verdict=?,
-                       human_amount=?, human_reason=?, resolved_at=? WHERE id=?""",
-                (status, human_verdict, human_amount, human_reason, now, review_id),
-            )
+            if not claim(status):
+                return False
             conn.commit()
             logger.info(
                 "Analyst rejection id=%d -> %s (human verdict: %s).",
@@ -620,11 +646,8 @@ def resolve_review(
             return True
 
         if human_verdict == "reject":
-            conn.execute(
-                """UPDATE review_queue SET status='rejected', human_verdict=?,
-                       human_amount=?, human_reason=?, resolved_at=? WHERE id=?""",
-                ("reject", human_amount, human_reason, now, review_id),
-            )
+            if not claim("rejected"):
+                return False
             conn.commit()
             logger.info("Review id=%d rejected by human.", review_id)
             return True
@@ -654,7 +677,7 @@ def resolve_review(
             except Exception:
                 pass
 
-        event_data = {
+        minimal_event = {
             "event_title": row["event_title"],
             "event_url": row["event_url"],
             "event_source": row["event_source"],
@@ -666,26 +689,38 @@ def resolve_review(
             "tx_hash": None,
             "created_at": now,
         }
-        saved = save_event(event_data)
-        if saved is None:
-            logger.error("resolve_review: save_event failed for review id=%d", review_id)
+        # The caller's full row (reconciler score and confidence, analysts'
+        # aspects, subtypes, geo) wins over the minimal one. This is the ONLY
+        # insert of the event, in the same transaction as the claim: until
+        # 2026-10-13 the minimal row went in here and resolve_review.py's
+        # richer insert then hit the duplicate URL (733 events with
+        # final_score 0, 477 without aspects).
+        event_row = {**minimal_event, **(event_data or {})}
+        if not claim("approved"):
             return False
-
-        conn.execute(
-            """UPDATE review_queue SET status='approved', human_verdict=?,
-                   human_amount=?, human_reason=?, resolved_at=? WHERE id=?""",
-            (human_verdict, human_amount, human_reason, now, review_id),
-        )
+        event_id = _insert_event(conn, event_row)  # duplicate URL -> rollback below
         conn.commit()
         logger.info(
             "Review id=%d resolved: %s -> %s %d CBWD (event id=%s)",
-            review_id, human_verdict, final_decision, final_amount, saved.get("id"),
+            review_id, human_verdict, event_row["decision"], event_row["amount_crbn"], event_id,
         )
         return True
     except Exception as exc:
         _rollback_quietly()
         logger.error("Error resolving review id=%d: %s", review_id, exc)
         return False
+
+
+def get_event_id_by_url(event_url: str) -> Optional[int]:
+    """Return the carbon_events id stored for this URL, or None."""
+    try:
+        row = _get_conn().execute(
+            "SELECT id FROM carbon_events WHERE event_url = ? LIMIT 1", (event_url,)
+        ).fetchone()
+        return int(row["id"]) if row else None
+    except Exception as exc:
+        logger.error("Error looking up event for '%s': %s", event_url[:80], exc)
+        return None
 
 
 def requeue_review(review_id: int, data: dict, expected_status: Optional[str] = None) -> bool:

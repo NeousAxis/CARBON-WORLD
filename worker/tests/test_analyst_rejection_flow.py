@@ -56,7 +56,6 @@ def offline(monkeypatch):
         raise AssertionError("no Solana transaction expected")
 
     monkeypatch.setattr(writer, "execute_decision", _no_chain)
-    monkeypatch.setattr(resolve_cli, "execute_decision", _no_chain)
     monkeypatch.setattr(resolve_cli, "export_events", lambda: None)
 
 

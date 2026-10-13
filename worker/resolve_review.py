@@ -5,10 +5,14 @@ Usage:
   python worker/resolve_review.py <review_id> <verdict> [--amount N] [--reason "..."]
 
 Verdicts:
-  approve  — accept the reconciler's suggested decision (executes Solana)
-  reverse  — flip the decision (MINT↔BURN) and execute Solana
+  approve  — accept the reconciler's suggested decision
+  reverse  — flip the decision (MINT↔BURN)
   reject   — discard the event, no on-chain action
   edit     — use a custom amount; requires --amount
+
+approve/reverse/edit write the event to carbon_events; its Solana TX is sent
+by the nightly worker/reconcile_tx.py (03:15), the single on-chain sender for
+human-resolved events.
 
 Examples:
   python worker/resolve_review.py 3 approve
@@ -18,9 +22,9 @@ Examples:
 """
 
 import argparse
+import json
 import logging
 import sys
-import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -28,12 +32,103 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from db import get_pending_reviews, resolve_review  # noqa: E402
-from solana_executor import execute_decision  # noqa: E402
-from db import save_event, update_tx_hash  # noqa: E402
+from db import get_event_id_by_url  # noqa: E402
 from exporter import export_events  # noqa: E402
 
 
 logger = logging.getLogger("resolve_review")
+
+
+def _safe_verdict(raw: object) -> dict:
+    """Parse a stored verdict to a dict, tolerating None, the JSON literal
+    "null" (json.loads -> None), arrays, or malformed text. A non-dict here
+    must never abort the resolve (the exact symptom reported 2026-05-25: the
+    /review item never disappeared)."""
+    if not isinstance(raw, str) or not raw:
+        return {}
+    try:
+        v = json.loads(raw)
+    except (json.JSONDecodeError, TypeError):
+        return {}
+    return v if isinstance(v, dict) else {}
+
+
+def review_event_fields(review: dict, decision: str) -> dict:
+    """The analysis fields a review row carries for its carbon_events row,
+    given the decision finally stored for the event:
+      - final_score and confidence from the reconciler (Analyst A fallback),
+        but only when the AI reached that same decision. When the human
+        reversed it, the AI score describes the opposite verdict: keep 0 and
+        confidence 10, the marker of a human override (/citizen-actions and
+        backfill_burn_subtype.py read final_score == 0 that way).
+      - the per-aspect taxonomy (affected SDGs, frameworks, magnitudes) from
+        Analyst A, then B (reconciler verdicts don't carry it). Without it the
+        SDG/PB cards and the calibrated amount are blind to the event.
+      - country/region/administration derived exactly like the writer does.
+    """
+    from agents.writer import derive_geo
+
+    r_verdict = _safe_verdict(review.get("reconciler_verdict"))
+    a_verdict = _safe_verdict(review.get("analyst_a_verdict"))
+    b_verdict = _safe_verdict(review.get("analyst_b_verdict"))
+    positive = a_verdict.get("positive_aspects") or b_verdict.get("positive_aspects") or []
+    negative = a_verdict.get("negative_aspects") or b_verdict.get("negative_aspects") or []
+    ai_decision = r_verdict.get("decision") or a_verdict.get("decision")
+    if ai_decision == decision:
+        score = float(r_verdict.get("final_score", a_verdict.get("final_score", 0)) or 0)
+        confidence = int(r_verdict.get("confidence", a_verdict.get("confidence", 5)) or 5)
+    else:
+        score, confidence = 0.0, 10
+    reconciler_justification = str(r_verdict.get("justification") or "")
+    geo = derive_geo(
+        a_verdict or b_verdict,
+        review.get("event_title") or "",
+        reconciler_justification,
+        review.get("event_source") or "",
+    )
+    return {
+        "final_score": score,
+        "confidence": confidence,
+        "positive_aspects_json": json.dumps(positive, ensure_ascii=False) if positive else None,
+        "negative_aspects_json": json.dumps(negative, ensure_ascii=False) if negative else None,
+        "country": geo.get("country"),
+        "region": geo.get("region"),
+        "administration": geo.get("administration"),
+        "reconciler_justification": reconciler_justification,
+    }
+
+
+def build_event_data(review: dict, verdict: str, reason: str,
+                     final_decision: str, final_amount: int) -> dict:
+    """The carbon_events row for a human-resolved review, inserted once by
+    db.resolve_review()."""
+    from agents.writer import _classify_burn_subtype, _classify_mint_subtype
+
+    fields = review_event_fields(review, final_decision)
+    justification = f"[Human review #{review['id']}: {verdict}] {reason}".strip()
+    if fields["reconciler_justification"]:
+        justification = f"{justification} | {fields['reconciler_justification']}"
+    return {
+        "event_title": review["event_title"][:500],
+        "event_url": review["event_url"],
+        "event_source": review["event_source"],
+        "decision": final_decision,
+        "amount_crbn": final_amount,
+        "final_score": fields["final_score"],
+        "confidence": fields["confidence"],
+        "justification": justification[:500],
+        "tx_hash": None,
+        "created_at": datetime.now(tz=timezone.utc).isoformat(),
+        # Auto-tag burn_subtype / mint_subtype based on the resolved decision
+        # (manual reverses from credible-educational sources → editorial_*)
+        "burn_subtype": _classify_burn_subtype(final_decision, review["event_source"]),
+        "mint_subtype": _classify_mint_subtype(final_decision, review["event_source"]),
+        "positive_aspects_json": fields["positive_aspects_json"],
+        "negative_aspects_json": fields["negative_aspects_json"],
+        "country": fields["country"],
+        "region": fields["region"],
+        "administration": fields["administration"],
+    }
 
 
 def main() -> int:
@@ -92,12 +187,24 @@ def main() -> int:
         final_decision = None
         final_amount = 0
 
+    # The full carbon_events row, inserted once by resolve_review() below.
+    event_data = None
+    if final_decision is not None:
+        event_data = build_event_data(
+            review, args.verdict, args.reason, final_decision, final_amount,
+        )
+
     # Mark as resolved in review_queue. resolve_review() returns False if the
-    # update fails (DB lock, missing row, schema error). Don't continue to
-    # Solana TX in that case — exit non-zero so the web route returns 500
-    # and the UI surfaces the actual failure instead of showing "Done"
-    # while the row stays pending.
-    if not resolve_review(args.review_id, args.verdict, final_amount, args.reason):
+    # update fails (DB lock, missing row, schema error) or if another resolver
+    # (drain cron, second click) got there first. Exit non-zero on a real
+    # failure so the web route returns 500 and the UI surfaces it instead of
+    # showing "Done" while the row stays pending.
+    if not resolve_review(args.review_id, args.verdict, final_amount, args.reason,
+                          event_data=event_data):
+        if not any(r["id"] == args.review_id for r in get_pending_reviews()):
+            logger.info("Review #%d not found (or already resolved).", args.review_id)
+            print(f"Review #{args.review_id} not found (or already resolved).")
+            return 0
         logger.error(
             "resolve_review() returned False for #%d — likely DB contention. Aborting.",
             args.review_id,
@@ -142,97 +249,22 @@ def main() -> int:
         export_events()
         return 0
 
-    # Create the event in carbon_events + execute Solana
-    import json
-    from agents.writer import _classify_burn_subtype, _classify_mint_subtype
-
-    def _safe_verdict(raw: object) -> dict:
-        """Parse a stored verdict to a dict, tolerating None, the JSON literal
-        "null" (json.loads -> None), arrays, or malformed text. A non-dict here
-        must never abort the resolve: the review is already marked resolved at
-        this point, so a crash would leave the row stuck in review_queue.json
-        and the /review item would never disappear (the exact symptom reported
-        2026-05-25)."""
-        if not isinstance(raw, str) or not raw:
-            return {}
-        try:
-            v = json.loads(raw)
-        except (json.JSONDecodeError, TypeError):
-            return {}
-        return v if isinstance(v, dict) else {}
-
-    r_verdict = _safe_verdict(review.get("reconciler_verdict"))
-    # Propagate the per-aspect taxonomy (affected_sdgs + frameworks + magnitudes)
-    # the Analyst already produced. Without this copy, every event resolved via
-    # /review or auto_approve_* scripts arrives in carbon_events with empty
-    # aspects_json columns, leaving the SDG/PB dashboard cards blind to them.
-    # Reconciler verdicts don't carry the aspect lists — only the merged final
-    # score / decision — so we fall back to Analyst A (always present) and
-    # then Analyst B if A is missing for some reason.
-    a_verdict = _safe_verdict(review.get("analyst_a_verdict"))
-    b_verdict = _safe_verdict(review.get("analyst_b_verdict"))
-    positive_aspects = a_verdict.get("positive_aspects") or b_verdict.get("positive_aspects") or []
-    negative_aspects = a_verdict.get("negative_aspects") or b_verdict.get("negative_aspects") or []
-    event_data = {
-        "event_title": review["event_title"][:500],
-        "event_url": review["event_url"],
-        "event_source": review["event_source"],
-        "decision": final_decision,
-        "amount_crbn": final_amount,
-        "final_score": float(r_verdict.get("final_score", 0) or 0),
-        "confidence": int(r_verdict.get("confidence", 5) or 5),
-        "justification": f"[Human review #{args.review_id}: {args.verdict}] {args.reason}"[:500],
-        "tx_hash": None,
-        "created_at": datetime.now(tz=timezone.utc).isoformat(),
-        # Auto-tag burn_subtype / mint_subtype based on the resolved decision
-        # (manual reverses from credible-educational sources → editorial_*)
-        "burn_subtype": _classify_burn_subtype(
-            final_decision,
-            review["event_source"],
-        ),
-        "mint_subtype": _classify_mint_subtype(
-            final_decision,
-            review["event_source"],
-        ),
-        "positive_aspects_json": json.dumps(positive_aspects, ensure_ascii=False) if positive_aspects else None,
-        "negative_aspects_json": json.dumps(negative_aspects, ensure_ascii=False) if negative_aspects else None,
-    }
-
-    saved = save_event(event_data)
-    if not saved:
-        logger.warning("Could not save event (possibly duplicate URL).")
+    # resolve_review() inserted the event (the full row built above), once.
+    event_id = get_event_id_by_url(review["event_url"])
+    if event_id is None:
+        logger.error("Review #%d resolved but its event was not found.", args.review_id)
         export_events()
-        return 0
-
-    event_id = saved.get("id")
+        return 1
     logger.info("Saved event #%s: %s %d CBWD", event_id, final_decision, final_amount)
 
-    # Refresh export.json BEFORE the Solana TX. Earlier this was at the end
-    # of the function, but the TX can take > 60 s and the web route's 120 s
-    # execFile timeout may SIGTERM the process before the export runs,
-    # leaving review_queue.json stale and the resolved row visible in /review.
-    # Doing the export first means the UI stays in sync even on TX timeout —
-    # the nightly reconcile_tx cron will rebroadcast the missing tx.
+    # On chain: the nightly reconcile_tx (03:15) is the single sender for
+    # human-resolved events, as it has de facto been since April (the second
+    # insert here always hit the duplicate URL before reaching the TX). Sending
+    # here as well would make two senders for one row: a web-route SIGTERM
+    # (120 s) or a failed update_tx_hash after a landed TX would let the
+    # reconcile replay it, a double MINT/BURN. Sending immediately needs the
+    # signature recorded before broadcast first (review of 2026-10-13).
     export_events()
-
-    # Rate-limit before broadcasting to the public Solana mainnet RPC.
-    # When the user approves several reviews in quick succession, the public
-    # endpoint throttles and execute_decision() returns None silently. A 5 s
-    # gap before each TX prevents that — verified empirically: at sleep=1 s
-    # we got 5/18 success, at sleep=5 s we got 13/13 (2026-04-30).
-    time.sleep(5)
-    tx_hash = execute_decision(final_decision, final_amount, event_id=event_id)
-    if tx_hash and event_id:
-        update_tx_hash(event_id, tx_hash)
-        logger.info("Solana tx: %s", tx_hash)
-        # Re-export so the new tx_hash is visible in the dashboard donut.
-        export_events()
-    elif event_id:
-        logger.warning(
-            "Solana TX returned no signature for event #%s. The reconcile_tx "
-            "nightly cron will retry.", event_id,
-        )
-
     return 0
 
 

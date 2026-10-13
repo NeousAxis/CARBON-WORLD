@@ -99,6 +99,25 @@ def _build_justification(analysis: dict) -> str:
     return combined[:500]
 
 
+def derive_geo(analysis: dict, title: str, justification: str, source: str) -> dict:
+    """Geographic metadata of an event (dashboard indicators).
+
+    Priority: the Analyst LLM contextually decides who is the primary actor.
+    We trust its event_country verdict — including an explicit `null` which
+    means "no single country actor" (EU plans, UN resolution, multi-country
+    crisis, etc.). We only fall back to the regex extractor when the field
+    is ABSENT from the analysis (legacy event without the new schema).
+    """
+    if "event_country" in analysis:
+        llm_country = analysis.get("event_country")
+        if llm_country and isinstance(llm_country, str) and llm_country.strip():
+            return resolve_country_metadata(llm_country.strip())
+        # LLM explicitly returned null — respect its contextual decision
+        return {"country": None, "region": None, "administration": None}
+    # Field absent — fallback to the regex extractor for backward compat
+    return extract_geo(title=title, justification=justification, source=source)
+
+
 def _route_to_review(event: dict, article: dict, analysis: dict) -> bool:
     """Save the event to review_queue and log training data. Returns True on success."""
     title = article.get("title", "")
@@ -222,26 +241,7 @@ def write(event: dict) -> bool:
             f"{ar_v.get('detail', '')}] {justification}"
         )[:500]
 
-    # Extract geographic metadata.
-    # Priority: the Analyst LLM contextually decides who is the primary actor.
-    # We trust its event_country verdict — including an explicit `null` which
-    # means "no single country actor" (EU plans, UN resolution, multi-country
-    # crisis, etc.). We only fall back to the regex extractor when the field
-    # is ABSENT from the analysis (legacy event without the new schema).
-    if "event_country" in analysis:
-        llm_country = analysis.get("event_country")
-        if llm_country and isinstance(llm_country, str) and llm_country.strip():
-            geo = resolve_country_metadata(llm_country.strip())
-        else:
-            # LLM explicitly returned null — respect its contextual decision
-            geo = {"country": None, "region": None, "administration": None}
-    else:
-        # Field absent — fallback to the regex extractor for backward compat
-        geo = extract_geo(
-            title=title,
-            justification=justification,
-            source=article.get("source", ""),
-        )
+    geo = derive_geo(analysis, title, justification, article.get("source", ""))
 
     # Serialise positive/negative aspects if present in the analysis
     positive_aspects = analysis.get("positive_aspects")

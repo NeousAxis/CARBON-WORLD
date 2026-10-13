@@ -27,7 +27,7 @@ function loadEvents(): CarbonEvent[] {
  *   - decision = BURN AND (
  *       burn_subtype = "editorial_consciousness"            (credible educational outlets covering it)
  *       OR event_source ∈ EDITORIAL_CONSCIOUSNESS_SOURCES   (Mongabay, Yale E360, etc.)
- *       OR final_score == 0                                  (manually reversed via /review)
+ *       OR via_review_queue OR final_score == 0              (resolved through the /review queue)
  *     )
  *   - OR decision = BURN AND keywords in title hint at citizen / community / NGO action
  *
@@ -94,7 +94,10 @@ function isCitizenAction(e: CarbonEvent): boolean {
   if (e.decision !== "BURN") return false;
   if (e.burn_subtype === "editorial_consciousness") return true;
   if (EDITORIAL_SOURCES.has(e.event_source ?? "")) return true;
-  if ((e.final_score ?? 0) === 0) return true; // manually reversed
+  // Resolved through the /review queue. final_score == 0 alone used to mark these, a side
+  // effect of the placeholder row written until 2026-10-13: the explicit
+  // via_review_queue flag (exporter) keeps the same events listed.
+  if (e.via_review_queue || (e.final_score ?? 0) === 0) return true;
   const text = `${e.event_title ?? ""} ${e.justification ?? ""}`;
   return CITIZEN_KEYWORDS.some((re) => re.test(text));
 }

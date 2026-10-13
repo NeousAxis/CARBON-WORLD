@@ -28,6 +28,9 @@ export interface CarbonEvent {
   /** JSON string: array of {description, affected_sdgs, magnitude, ...}. */
   positive_aspects_json?: string | null;
   negative_aspects_json?: string | null;
+  /** True when the event was resolved through the /review queue (by Cyril or
+   *  by the auto-approval scripts): not a proof of human review. */
+  via_review_queue?: boolean;
 }
 
 export interface CountryStat {
