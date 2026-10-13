@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-13T10:07:16.646107+00:00",
-  "total_events": 8411,
+  "generated_at": "2026-10-13T11:05:21.450848+00:00",
+  "total_events": 8412,
   "total_burned": 8017626005,
-  "total_minted": 10840274594,
+  "total_minted": 10840309994,
   "pending_reviews": 5,
   "events": [
+    {
+      "id": 8412,
+      "event_title": "Empty Gallons at the Data Center Gate: Batam Residents Demand Clean Water",
+      "event_url": "https://mongabay.co.id/short-article/2026/10/galon-kosong-di-gerbang-data-center-warga-batam-tuntut-air-bersih/",
+      "event_source": "Mongabay Indonesia",
+      "decision": "MINT",
+      "amount_crbn": 35400,
+      "final_score": 0.27,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Severe water shortage outweighs the modest impact of the local protest. | The protest is a positive step toward securing safe water, but the current water shortage represents a serious violation of health and human‑rights standards, resulting in a net negative ethical balance.",
+      "tx_hash": "2ww85yQCbPLDSEN2j1QtS5kkc6c8eEnKguv5QSe4h6GcAX37fGr3uQ1sNkKM5nsFfBhhbQChLTJKN6XgjV7TUhNM",
+      "created_at": "2026-10-13T11:05:15.537869+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Community protest raises awareness and demands clean water for Batam residents\", \"affected_sdgs\": [6, 3], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Residents lack reliable access to clean water, facing health and dignity risks\", \"affected_sdgs\": [6, 3, 1], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 8411,
       "event_title": "Germany's China calculation shifts as import pressures eclipse export benefits",
@@ -193477,14 +193500,14 @@
         "total_amount": 5889200
       },
       {
+        "country": "Indonesia",
+        "count": 7,
+        "total_amount": 1464560
+      },
+      {
         "country": "Switzerland",
         "count": 7,
         "total_amount": 1815400
-      },
-      {
-        "country": "Italy",
-        "count": 7,
-        "total_amount": 2513600
       }
     ],
     "top_countries_burn": [
@@ -193527,8 +193550,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.105,
-        "events": 19
+        "burn_ratio": 0.1,
+        "events": 20
       },
       {
         "region": "North America",
@@ -193564,8 +193587,8 @@
       },
       {
         "region": "Asia",
-        "mint_ratio": 0.895,
-        "events": 19
+        "mint_ratio": 0.9,
+        "events": 20
       }
     ],
     "supply_trend_7d": [
@@ -193601,7 +193624,7 @@
       },
       {
         "date": "2026-10-13",
-        "net_minted": 9652000,
+        "net_minted": 9687400,
         "net_burned": 4800000
       }
     ],
@@ -193619,7 +193642,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 200,
+        "negative": 201,
         "event_ids_positive": [
           8409,
           8406,
@@ -193644,6 +193667,7 @@
           8195
         ],
         "event_ids_negative": [
+          8412,
           8411,
           8410,
           8408,
@@ -193848,7 +193872,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 181,
+        "negative": 182,
         "event_ids_positive": [
           8406,
           8388,
@@ -193869,6 +193893,7 @@
           8195
         ],
         "event_ids_negative": [
+          8412,
           8411,
           8410,
           8408,
@@ -194080,7 +194105,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           8311,
           8280,
@@ -194088,6 +194113,7 @@
           8212
         ],
         "event_ids_negative": [
+          8412,
           8402,
           8395,
           8391,
@@ -194323,11 +194349,11 @@
       "niche_pct": 70.9,
       "mainstream_pct": 29.1,
       "total_sources_used": 86,
-      "articles_processed": 227
+      "articles_processed": 228
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 227,
+      "total_events": 228,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -194507,10 +194533,11 @@
       },
       {
         "name": "Water",
-        "count": 13,
+        "count": 14,
         "burn_count": 2,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          8412,
           8393,
           8376,
           8359,
@@ -194524,6 +194551,27 @@
           8264,
           8257,
           8195
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 13,
+        "burn_count": 1,
+        "mint_count": 12,
+        "event_ids": [
+          8412,
+          8359,
+          8330,
+          8328,
+          8310,
+          8282,
+          8274,
+          8269,
+          8265,
+          8257,
+          8232,
+          8222,
+          8211
         ]
       },
       {
@@ -194564,26 +194612,6 @@
           8248,
           8195,
           8188
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 12,
-        "burn_count": 1,
-        "mint_count": 11,
-        "event_ids": [
-          8359,
-          8330,
-          8328,
-          8310,
-          8282,
-          8274,
-          8269,
-          8265,
-          8257,
-          8232,
-          8222,
-          8211
         ]
       },
       {
@@ -194653,9 +194681,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 206,
+      "total_mint": 207,
       "direct_action": {
-        "count": 186,
+        "count": 187,
         "pct": 90.3
       },
       "editorial_alarm": {
@@ -194668,9 +194696,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6265,
+      "total_mint": 6266,
       "direct_action": {
-        "count": 5309,
+        "count": 5310,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -194679,13 +194707,13 @@
       },
       "untyped": {
         "count": 567,
-        "pct": 9.1
+        "pct": 9.0
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 68,
+      "citizen": 69,
       "institutional": 159,
-      "citizen_ratio": 0.3,
+      "citizen_ratio": 0.303,
       "daily": [
         {
           "date": "2026-10-07",
@@ -194719,11 +194747,12 @@
         },
         {
           "date": "2026-10-13",
-          "citizen": 3,
+          "citizen": 4,
           "institutional": 5
         }
       ],
       "event_ids_citizen": [
+        8412,
         8409,
         8408,
         8406,
