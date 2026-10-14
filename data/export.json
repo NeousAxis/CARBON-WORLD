@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-14T03:05:46.848197+00:00",
-  "total_events": 8444,
-  "total_burned": 8018426005,
+  "generated_at": "2026-10-14T04:06:16.517156+00:00",
+  "total_events": 8445,
+  "total_burned": 8018576005,
   "total_minted": 10858907994,
-  "pending_reviews": 21,
+  "pending_reviews": 23,
   "events": [
+    {
+      "id": 8445,
+      "event_title": "Governor orders DEQ to pause data center permits",
+      "event_url": "https://www.foodandwaterwatch.org/press/2026/10/13/governor-orders-deq-to-pause-data-center-permits/",
+      "event_source": "Food & Water Watch",
+      "decision": "BURN",
+      "amount_crbn": 150000,
+      "final_score": 3.46,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Governor's pause curtails harmful data‑center expansion, protecting climate and water resources. | The pause on data center permits is a significant step toward reducing energy and water consumption linked to hyperscale infrastructure, aligning with climate and sustainability goals. However, its temporary nature and lack of binding long-term commitments introduce uncertainty,",
+      "tx_hash": "2efCvdWcdCnSVvDSMuy5Ku1wFFJjokcMMLGx8VRKXyViBjkiitS44CLRvUnre2m188GYYwQDDtCfM1g2XSzGg6Ze",
+      "created_at": "2026-10-14T04:06:10.927216+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Governor orders a pause on data center permits, halting approvals for hyperscale data centers that consume vast energy and water resources, often powered by fossil fuels.\", \"affected_sdgs\": [7, 11, 12, 13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Action responds to environmental advocacy, signaling responsiveness to citizen and NGO concerns about sustainable infrastructure and climate impact.\", \"affected_sdgs\": [13, 16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Temporary pause may not lead to permanent policy change, risking resumption of permits without stricter regulations or renewable energy mandates.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Potential economic disruption for local communities reliant on data center investments, though indirect and speculative.\", \"affected_sdgs\": [8, 10], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 8444,
       "event_title": "Trump seeks reevaluation of permit for operational offshore wind farm",
@@ -194964,8 +194987,8 @@
       },
       {
         "country": "France",
-        "count": 20,
-        "total_amount": 7018400
+        "count": 19,
+        "total_amount": 6693400
       },
       {
         "country": "Brazil",
@@ -194985,14 +195008,14 @@
     ],
     "top_countries_burn": [
       {
+        "country": "United States",
+        "count": 3,
+        "total_amount": 725000
+      },
+      {
         "country": "Brazil",
         "count": 3,
         "total_amount": 1550000
-      },
-      {
-        "country": "United States",
-        "count": 2,
-        "total_amount": 575000
       },
       {
         "country": "France",
@@ -195028,20 +195051,20 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.062,
-        "events": 48
+        "burn_ratio": 0.082,
+        "events": 49
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.046,
-        "events": 65
+        "burn_ratio": 0.047,
+        "events": 64
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 6
       },
       {
         "region": "MENA",
@@ -195050,13 +195073,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.954,
-        "events": 65
+        "mint_ratio": 0.953,
+        "events": 64
       },
       {
         "region": "North America",
-        "mint_ratio": 0.938,
-        "events": 48
+        "mint_ratio": 0.918,
+        "events": 49
       },
       {
         "region": "Asia",
@@ -195098,7 +195121,7 @@
       {
         "date": "2026-10-14",
         "net_minted": 3666700,
-        "net_burned": 0
+        "net_burned": 150000
       }
     ],
     "event_of_the_day": {
@@ -195115,8 +195138,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 202,
+        "negative": 200,
         "event_ids_positive": [
+          8445,
           8417,
           8409,
           8406,
@@ -195136,8 +195160,7 @@
           8269,
           8238,
           8224,
-          8221,
-          8212
+          8221
         ],
         "event_ids_negative": [
           8444,
@@ -195339,14 +195362,12 @@
           8218,
           8217,
           8216,
-          8215,
-          8214,
-          8213
+          8215
         ]
       },
       "UDHR": {
-        "positive": 17,
-        "negative": 185,
+        "positive": 16,
+        "negative": 184,
         "event_ids_positive": [
           8417,
           8406,
@@ -195363,8 +195384,7 @@
           8269,
           8238,
           8224,
-          8221,
-          8212
+          8221
         ],
         "event_ids_negative": [
           8444,
@@ -195550,8 +195570,7 @@
           8218,
           8217,
           8216,
-          8215,
-          8213
+          8215
         ]
       },
       "ILO": {
@@ -195581,13 +195600,12 @@
         ]
       },
       "CRC": {
-        "positive": 4,
-        "negative": 51,
+        "positive": 3,
+        "negative": 50,
         "event_ids_positive": [
           8311,
           8280,
-          8221,
-          8212
+          8221
         ],
         "event_ids_negative": [
           8443,
@@ -195639,8 +195657,7 @@
           8248,
           8239,
           8236,
-          8218,
-          8213
+          8218
         ]
       },
       "UNDRIP": {
@@ -195739,9 +195756,10 @@
         ]
       },
       "PB": {
-        "positive": 10,
-        "negative": 74,
+        "positive": 11,
+        "negative": 73,
         "event_ids_positive": [
+          8445,
           8417,
           8409,
           8360,
@@ -195826,8 +195844,7 @@
           8230,
           8226,
           8225,
-          8215,
-          8214
+          8215
         ]
       }
     },
@@ -195835,11 +195852,11 @@
       "niche_pct": 72.1,
       "mainstream_pct": 27.9,
       "total_sources_used": 86,
-      "articles_processed": 233
+      "articles_processed": 231
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 233,
+      "total_events": 231,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -195938,13 +195955,12 @@
         ]
       },
       {
-        "name": "COP",
-        "count": 2,
+        "name": "ILO",
+        "count": 1,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 1,
         "event_ids": [
-          8319,
-          8214
+          8389
         ]
       }
     ],
@@ -195952,9 +195968,10 @@
       {
         "name": "Energy",
         "count": 31,
-        "burn_count": 1,
-        "mint_count": 30,
+        "burn_count": 2,
+        "mint_count": 29,
         "event_ids": [
+          8445,
           8444,
           8434,
           8430,
@@ -195984,8 +196001,7 @@
           8237,
           8234,
           8231,
-          8225,
-          8214
+          8225
         ]
       },
       {
@@ -196021,10 +196037,11 @@
       },
       {
         "name": "Construction",
-        "count": 16,
-        "burn_count": 3,
+        "count": 17,
+        "burn_count": 4,
         "mint_count": 13,
         "event_ids": [
+          8445,
           8438,
           8430,
           8428,
@@ -196068,10 +196085,11 @@
       },
       {
         "name": "Tech",
-        "count": 13,
-        "burn_count": 1,
+        "count": 14,
+        "burn_count": 2,
         "mint_count": 12,
         "event_ids": [
+          8445,
           8438,
           8412,
           8359,
@@ -196159,9 +196177,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2139,
+      "total_burn": 2140,
       "direct_action": {
-        "count": 1692,
+        "count": 1693,
         "pct": 79.1
       },
       "editorial_consciousness": {
@@ -196174,10 +196192,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 210,
       "direct_action": {
-        "count": 187,
-        "pct": 88.2
+        "count": 185,
+        "pct": 88.1
       },
       "editorial_alarm": {
         "count": 15,
@@ -196185,7 +196203,7 @@
       },
       "untyped": {
         "count": 10,
-        "pct": 4.7
+        "pct": 4.8
       }
     },
     "mint_composition_all_time": {
@@ -196204,9 +196222,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 75,
-      "institutional": 158,
-      "citizen_ratio": 0.322,
+      "citizen": 76,
+      "institutional": 155,
+      "citizen_ratio": 0.329,
       "daily": [
         {
           "date": "2026-10-08",
@@ -196240,11 +196258,12 @@
         },
         {
           "date": "2026-10-14",
-          "citizen": 4,
+          "citizen": 5,
           "institutional": 6
         }
       ],
       "event_ids_citizen": [
+        8445,
         8442,
         8439,
         8436,
@@ -196476,10 +196495,7 @@
         8219,
         8218,
         8217,
-        8215,
-        8214,
-        8213,
-        8212
+        8215
       ]
     }
   }
