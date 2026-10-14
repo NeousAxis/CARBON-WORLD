@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-14T00:07:25.138585+00:00",
-  "total_events": 8437,
+  "generated_at": "2026-10-14T01:05:39.278277+00:00",
+  "total_events": 8438,
   "total_burned": 8018426005,
-  "total_minted": 10856292294,
-  "pending_reviews": 17,
+  "total_minted": 10856359894,
+  "pending_reviews": 19,
   "events": [
+    {
+      "id": 8438,
+      "event_title": "Finland: AI Boom at the Expense of Nature?",
+      "event_url": "https://www.tagesschau.de/ausland/europa/finnland-google-rechenzentren-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -2.53,
+      "confidence": 8,
+      "justification": "Unpermitted deforestation for digital infrastructure violates environmental and procedural rights, outweighing economic benefits. | The action prioritizes short-term economic and technological gains over environmental protection and regulatory compliance. The clearance of a significant forest area without permits constitutes a direct and severe violation of ecological frameworks, outweighing the potential economic benefits. Procedural lapses further undermine governance and rights frameworks.",
+      "tx_hash": "2ndMV37GoKg6s84RZUsuNdFFhMa53VjiGs3HP8ifXmvAKBaVCoWNLV6yqZTUmKeddNtDidv35nJwsNnEm1FxbY1h",
+      "created_at": "2026-10-14T01:05:33.603185+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Finland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Investment in digital infrastructure by Google may support SDG 9 (Industry, Innovation and Infrastructure) and SDG 8 (Decent Work and Economic Growth) by creating jobs and technological advancement in Finland.\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Clearance of over 300 hectares of forest for a data center without required permits violates environmental regulations, undermining SDG 13 (Climate Action), SDG 15 (Life on Land), and planetary boundaries (biodiversity, land-system change).\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Lack of proper permitting process may violate procedural environmental rights under UDHR Article 21 (right to take part in government) and UNDRIP (indigenous consultation if applicable).\", \"affected_sdgs\": [], \"violated_rights\": [\"UDHR Article 21\", \"UNDRIP\"], \"magnitude\": 4, \"frameworks\": [\"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8437,
       "event_title": "Cornell University suspends fraternity parties until end of academic year",
@@ -194872,8 +194895,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.047,
-        "events": 64
+        "burn_ratio": 0.046,
+        "events": 65
       }
     ],
     "top_regions_destructive": [
@@ -194889,8 +194912,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.953,
-        "events": 64
+        "mint_ratio": 0.954,
+        "events": 65
       },
       {
         "region": "North America",
@@ -194936,7 +194959,7 @@
       },
       {
         "date": "2026-10-14",
-        "net_minted": 1051000,
+        "net_minted": 1118600,
         "net_burned": 0
       }
     ],
@@ -194954,7 +194977,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 198,
+        "negative": 199,
         "event_ids_positive": [
           8417,
           8409,
@@ -194979,6 +195002,7 @@
           8212
         ],
         "event_ids_negative": [
+          8438,
           8437,
           8436,
           8435,
@@ -195181,7 +195205,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 180,
+        "negative": 181,
         "event_ids_positive": [
           8417,
           8406,
@@ -195202,6 +195226,7 @@
           8212
         ],
         "event_ids_negative": [
+          8438,
           8437,
           8436,
           8435,
@@ -195471,7 +195496,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [
           8409,
           8388,
@@ -195480,6 +195505,7 @@
           8221
         ],
         "event_ids_negative": [
+          8438,
           8430,
           8427,
           8421,
@@ -195564,7 +195590,7 @@
       },
       "PB": {
         "positive": 10,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           8417,
           8409,
@@ -195578,6 +195604,7 @@
           8238
         ],
         "event_ids_negative": [
+          8438,
           8436,
           8434,
           8431,
@@ -195658,11 +195685,11 @@
       "niche_pct": 72.6,
       "mainstream_pct": 27.4,
       "total_sources_used": 84,
-      "articles_processed": 225
+      "articles_processed": 226
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 225,
+      "total_events": 226,
       "pct": 2.7
     },
     "active_partners_7d": [],
@@ -195842,10 +195869,11 @@
       },
       {
         "name": "Construction",
-        "count": 15,
+        "count": 16,
         "burn_count": 3,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          8438,
           8430,
           8428,
           8421,
@@ -195861,6 +195889,28 @@
           8269,
           8262,
           8215
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 14,
+        "burn_count": 1,
+        "mint_count": 13,
+        "event_ids": [
+          8438,
+          8412,
+          8359,
+          8330,
+          8328,
+          8310,
+          8282,
+          8274,
+          8269,
+          8265,
+          8257,
+          8232,
+          8222,
+          8211
         ]
       },
       {
@@ -195883,27 +195933,6 @@
           8271,
           8264,
           8257
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 13,
-        "burn_count": 1,
-        "mint_count": 12,
-        "event_ids": [
-          8412,
-          8359,
-          8330,
-          8328,
-          8310,
-          8282,
-          8274,
-          8269,
-          8265,
-          8257,
-          8232,
-          8222,
-          8211
         ]
       },
       {
@@ -195992,14 +196021,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 204,
+      "total_mint": 205,
       "direct_action": {
-        "count": 184,
+        "count": 185,
         "pct": 90.2
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 6.9
+        "pct": 6.8
       },
       "untyped": {
         "count": 6,
@@ -196007,9 +196036,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6286,
+      "total_mint": 6287,
       "direct_action": {
-        "count": 5329,
+        "count": 5330,
         "pct": 84.8
       },
       "editorial_alarm": {
@@ -196023,8 +196052,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 74,
-      "institutional": 151,
-      "citizen_ratio": 0.329,
+      "institutional": 152,
+      "citizen_ratio": 0.327,
       "daily": [
         {
           "date": "2026-10-08",
@@ -196059,7 +196088,7 @@
         {
           "date": "2026-10-14",
           "citizen": 2,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -196139,6 +196168,7 @@
         8210
       ],
       "event_ids_institutional": [
+        8438,
         8437,
         8434,
         8433,
