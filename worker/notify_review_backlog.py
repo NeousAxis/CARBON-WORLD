@@ -28,10 +28,11 @@ from __future__ import annotations
 
 import logging
 import os
+import html
 import smtplib
 import sqlite3
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -87,8 +88,17 @@ def fetch_backlog_summary() -> dict:
             "SELECT COUNT(*) AS n FROM review_queue WHERE status = 'pending'"
         ).fetchone()["n"]
 
+        # Analyst rejections the learning confirmed in the last 24 h
+        # (worker/rejection_learning.py), so Cyril sees it at work.
+        since = (datetime.now(tz=timezone.utc) - timedelta(hours=24)).isoformat()
+        auto_confirmed = [dict(r) for r in con.execute(
+            "SELECT id, rejection_type, event_title FROM review_queue "
+            "WHERE rejection_verdict = 'auto_confirmed' AND resolved_at >= ? ORDER BY id",
+            (since,),
+        )]
+
         if total == 0:
-            return {"total": 0, "rows": [], "buckets": {}}
+            return {"total": 0, "rows": [], "buckets": {}, "auto_confirmed": auto_confirmed}
 
         # Bucket by structural flag prefix in sentinel_concern.
         buckets_raw = con.execute("""
@@ -123,7 +133,8 @@ def fetch_backlog_summary() -> dict:
             LIMIT 10
         """).fetchall()
 
-        return {"total": total, "rows": [dict(r) for r in rows], "buckets": buckets}
+        return {"total": total, "rows": [dict(r) for r in rows], "buckets": buckets,
+                "auto_confirmed": auto_confirmed}
     finally:
         con.close()
 
@@ -154,6 +165,10 @@ def build_text_body(summary: dict) -> str:
         f"CARBON WORLD — review queue digest",
         f"",
         f"{total} events are waiting for your review on https://carbon-world.xyz/review",
+        f"{len(summary.get('auto_confirmed', []))} Analyst rejections confirmed by learning in the last 24 h"
+        f" (undo one: resolve_review.py <id> reverse):",
+        *[f"  #{r['id']} [{r['rejection_type']}] {(r['event_title'] or '')[:80]}"
+          for r in summary.get("auto_confirmed", [])],
         f"",
         f"By trigger:",
     ]
@@ -187,9 +202,13 @@ def build_html_body(summary: dict) -> str:
         f'{r["suggested_decision"]} {_format_amount(int(r["suggested_amount_crbn"] or 0))}'
         f'</td>'
         f'<td style="padding:6px 12px;color:#666666;font-size:11px;">{_format_age(r["created_at"])} ago</td>'
-        f'<td style="padding:6px 12px;color:#FFFFFF;">{(r["event_title"] or "")[:90]}</td>'
+        f'<td style="padding:6px 12px;color:#FFFFFF;">{html.escape((r["event_title"] or "")[:90])}</td>'
         '</tr>'
         for r in summary["rows"]
+    )
+    auto_rows = "".join(
+        f'<br>#{r["id"]} [{r["rejection_type"]}] {html.escape((r["event_title"] or "")[:80])}'
+        for r in summary.get("auto_confirmed", [])
     )
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"></head>
@@ -207,6 +226,7 @@ def build_html_body(summary: dict) -> str:
 <div style="font-size:12px;color:#B8B9B6;margin-top:8px;">
 <a href="https://carbon-world.xyz/review" style="color:#FF8400;text-decoration:none;">https://carbon-world.xyz/review →</a>
 </div>
+<div style="font-size:12px;color:#B8B9B6;margin-top:8px;">{len(summary.get("auto_confirmed", []))} Analyst rejections confirmed by learning in the last 24 h{auto_rows}</div>
 </td></tr>
 <tr><td style="padding:8px 24px;">
 <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#0190A0;margin:16px 0 8px 0;">By trigger</div>

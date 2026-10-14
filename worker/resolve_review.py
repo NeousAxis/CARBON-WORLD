@@ -32,7 +32,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from db import get_pending_reviews, resolve_review  # noqa: E402
-from db import get_event_id_by_url  # noqa: E402
+from db import get_auto_confirmed_rejection, get_event_id_by_url  # noqa: E402
 from exporter import export_events  # noqa: E402
 
 
@@ -148,6 +148,10 @@ def main() -> int:
     # Find the review item
     reviews = get_pending_reviews()
     review = next((r for r in reviews if r["id"] == args.review_id), None)
+    if not review and args.verdict == "reverse":
+        # An Analyst rejection the learning confirmed on Cyril's behalf can
+        # still be overruled (worker/rejection_learning.py).
+        review = get_auto_confirmed_rejection(args.review_id)
     if not review:
         # Exit code 0 here: the row is genuinely not pending anymore — most
         # likely a previous click succeeded server-side while the web route

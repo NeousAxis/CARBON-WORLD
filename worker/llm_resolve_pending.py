@@ -89,6 +89,9 @@ def fetch_pending(conn: sqlite3.Connection) -> list[sqlite3.Row]:
                created_at
         FROM review_queue
         WHERE status = 'pending'
+          -- Analyst rejections are Cyril's to judge: his decisions train
+          -- worker/rejection_learning.py, an LLM verdict must not.
+          AND COALESCE(suggested_decision, '') != 'REJECT'
         ORDER BY id
     """).fetchall()
 

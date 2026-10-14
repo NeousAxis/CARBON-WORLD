@@ -55,6 +55,8 @@ def fetch_pending(conn: sqlite3.Connection) -> list[sqlite3.Row]:
                suggested_amount_crbn, sentinel_concern, created_at
         FROM review_queue
         WHERE status = 'pending'
+          -- Analyst rejections are handled by worker/rejection_learning.py
+          AND COALESCE(suggested_decision, '') != 'REJECT'
         ORDER BY id
     """).fetchall()
 

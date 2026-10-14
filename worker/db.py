@@ -124,6 +124,12 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         #     user_message (Solution B)
         "ALTER TABLE review_queue ADD COLUMN human_review_embedding BLOB;",
         "ALTER TABLE review_queue ADD COLUMN final_decision TEXT;",
+        # Learning from Analyst rejections (2026-10-14, rejection_learning.py):
+        # Cyril's verdict on the rejection itself ('confirmed' / 'reversed', or
+        # 'auto_confirmed' by the learning) and the kind of its reason, both
+        # fixed at decision time (a re-analysis later rewrites the verdicts).
+        "ALTER TABLE review_queue ADD COLUMN rejection_verdict TEXT;",
+        "ALTER TABLE review_queue ADD COLUMN rejection_type TEXT;",
     ]
     for sql in migrations:
         try:
@@ -636,8 +642,37 @@ def resolve_review(
                     "rejection id=%d", human_verdict, review_id,
                 )
                 return False
-            if not claim(status):
-                return False
+            from rejection_learning import classify_rejection, rejection_reason
+            if (row["status"] == "rejected" and row["rejection_verdict"] == "auto_confirmed"
+                    and human_verdict == "reverse"):
+                # Cyril overrules an automatic confirmation: the strongest
+                # training signal there is, and the article gets its analysis.
+                cursor = conn.execute(
+                    """UPDATE review_queue SET status='reanalyze', human_verdict=?,
+                           human_amount=?, human_reason=?, resolved_at=?,
+                           rejection_verdict='reversed'
+                       WHERE id=? AND status='rejected'
+                         AND rejection_verdict='auto_confirmed'""",
+                    (human_verdict, human_amount, human_reason, now, review_id),
+                )
+                if cursor.rowcount != 1:
+                    conn.rollback()
+                    return False
+            else:
+                if not claim(status):
+                    return False
+                # Training signal for rejection_learning.py, written once at
+                # Cyril's FIRST decision: a re-analysis later rewrites
+                # analyst_a_verdict, and a confirmation after a reversal must
+                # not erase that reversal.
+                conn.execute(
+                    """UPDATE review_queue
+                       SET rejection_verdict = COALESCE(rejection_verdict, ?),
+                           rejection_type = COALESCE(rejection_type, ?)
+                       WHERE id = ?""",
+                    ("reversed" if human_verdict == "reverse" else "confirmed",
+                     classify_rejection(rejection_reason(row["analyst_a_verdict"])), review_id),
+                )
             conn.commit()
             logger.info(
                 "Analyst rejection id=%d -> %s (human verdict: %s).",
@@ -709,6 +744,20 @@ def resolve_review(
         _rollback_quietly()
         logger.error("Error resolving review id=%d: %s", review_id, exc)
         return False
+
+
+def get_auto_confirmed_rejection(review_id: int) -> Optional[dict]:
+    """An Analyst rejection confirmed by rejection_learning.py, or None."""
+    try:
+        row = _get_conn().execute(
+            """SELECT * FROM review_queue WHERE id = ? AND status = 'rejected'
+               AND rejection_verdict = 'auto_confirmed'""",
+            (review_id,),
+        ).fetchone()
+        return dict(row) if row else None
+    except Exception as exc:
+        logger.error("Error fetching auto-confirmed rejection id=%d: %s", review_id, exc)
+        return None
 
 
 def get_event_id_by_url(event_url: str) -> Optional[int]:
