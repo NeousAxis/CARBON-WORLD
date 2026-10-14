@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-14T15:08:47.280569+00:00",
-  "total_events": 8462,
+  "generated_at": "2026-10-14T16:07:06.188181+00:00",
+  "total_events": 8463,
   "total_burned": 8019001005,
-  "total_minted": 10872589194,
-  "pending_reviews": 40,
+  "total_minted": 10872739194,
+  "pending_reviews": 41,
   "events": [
+    {
+      "id": 8463,
+      "event_title": "Legal Turbulence: Suspended SAA acting CEO takes airline to court for fair shot at permanent job",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-10-14-suspended-saa-acting-ceo-takes-airline-to-court-for-fair-shot-at-permanent-job/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.95,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] SAA's decision to exclude the suspended acting CEO from interview weakens fair employment rights, enabling harm. | The legal challenge by the suspended acting CEO highlights tensions between individual rights to fair employment processes and institutional governance. While the action may promote transparency and accountability, it also risks undermining organizational stabil",
+      "tx_hash": "379aEKhVYRk6UvoCYdExjdczd7xt3vGVC4yniZS5A28XVgVc9xs98oC9yZAtTWs2SVUNp8nfhNDvqDpm5sp1RXAY",
+      "created_at": "2026-10-14T16:06:59.939881+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "South Africa",
+      "region": "Africa",
+      "administration": "South Africa-ANC",
+      "positive_aspects_json": "[{\"description\": \"Individual challenges institutional process to uphold fair employment practices and due process, potentially setting a precedent for transparency in hiring.\", \"affected_sdgs\": [8, 10, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Internal disciplinary process and exclusion from permanent CEO interviews may indicate procedural unfairness or lack of transparency in state-owned enterprise governance.\", \"affected_sdgs\": [8, 10, 16], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 10\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential disruption to organizational stability and operational focus of a critical national airline during legal proceedings.\", \"affected_sdgs\": [8, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8462,
       "event_title": "The Trump Administration’s Pro-Cancer Agenda",
@@ -195393,8 +195416,8 @@
       },
       {
         "country": "South Africa",
-        "count": 6,
-        "total_amount": 1862200
+        "count": 7,
+        "total_amount": 2012200
       }
     ],
     "top_countries_burn": [
@@ -195427,8 +195450,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.308,
-        "events": 13
+        "burn_ratio": 0.286,
+        "events": 14
       },
       {
         "region": "Latin America",
@@ -195511,7 +195534,7 @@
       },
       {
         "date": "2026-10-14",
-        "net_minted": 17347900,
+        "net_minted": 17497900,
         "net_burned": 575000
       }
     ],
@@ -195529,7 +195552,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 209,
+        "negative": 210,
         "event_ids_positive": [
           8461,
           8445,
@@ -195554,6 +195577,7 @@
           8224
         ],
         "event_ids_negative": [
+          8463,
           8462,
           8460,
           8459,
@@ -195767,7 +195791,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 193,
+        "negative": 194,
         "event_ids_positive": [
           8461,
           8417,
@@ -195787,6 +195811,7 @@
           8224
         ],
         "event_ids_negative": [
+          8463,
           8462,
           8460,
           8459,
@@ -196283,11 +196308,11 @@
       "niche_pct": 69.8,
       "mainstream_pct": 30.2,
       "total_sources_used": 86,
-      "articles_processed": 240
+      "articles_processed": 241
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 240,
+      "total_events": 241,
       "pct": 2.5
     },
     "active_partners_7d": [],
@@ -196542,6 +196567,25 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 11,
+        "burn_count": 0,
+        "mint_count": 11,
+        "event_ids": [
+          8463,
+          8443,
+          8428,
+          8408,
+          8374,
+          8373,
+          8359,
+          8355,
+          8326,
+          8272,
+          8261
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 11,
         "burn_count": 2,
@@ -196558,24 +196602,6 @@
           8238,
           8235,
           8224
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 10,
-        "burn_count": 0,
-        "mint_count": 10,
-        "event_ids": [
-          8443,
-          8428,
-          8408,
-          8374,
-          8373,
-          8359,
-          8355,
-          8326,
-          8272,
-          8261
         ]
       },
       {
@@ -196628,24 +196654,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 219,
+      "total_mint": 220,
       "direct_action": {
-        "count": 192,
+        "count": 193,
         "pct": 87.7
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 7.8
+        "pct": 7.7
       },
       "untyped": {
         "count": 10,
-        "pct": 4.6
+        "pct": 4.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6313,
+      "total_mint": 6314,
       "direct_action": {
-        "count": 5349,
+        "count": 5350,
         "pct": 84.7
       },
       "editorial_alarm": {
@@ -196659,8 +196685,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 81,
-      "institutional": 159,
-      "citizen_ratio": 0.338,
+      "institutional": 160,
+      "citizen_ratio": 0.336,
       "daily": [
         {
           "date": "2026-10-08",
@@ -196695,7 +196721,7 @@
         {
           "date": "2026-10-14",
           "citizen": 12,
-          "institutional": 16
+          "institutional": 17
         }
       ],
       "event_ids_citizen": [
@@ -196782,6 +196808,7 @@
         8223
       ],
       "event_ids_institutional": [
+        8463,
         8462,
         8458,
         8457,
