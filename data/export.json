@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-15T19:06:59.114237+00:00",
-  "total_events": 8508,
+  "generated_at": "2026-10-15T20:06:12.415164+00:00",
+  "total_events": 8509,
   "total_burned": 8020758505,
-  "total_minted": 10909199434,
+  "total_minted": 10909875434,
   "pending_reviews": 94,
   "events": [
+    {
+      "id": 8509,
+      "event_title": "Peru: Government insists on reforms that would affect indigenous territorial rights",
+      "event_url": "https://es.mongabay.com/short-article/2026/10/peru-gobierno-reformas-afectarian-derechos-territoriales-pueblos-indigenas/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -4.03,
+      "confidence": 8,
+      "justification": "Proposed reforms enable systemic violation of indigenous rights and weaken democratic accountability, warranting MINT. | The proposed reforms represent a direct threat to indigenous territorial rights and self-governance, violating multiple UNDRIP and UDHR protections. The bypassing of prior legislative rejection further undermines democratic accountability, compounding the negative ethical impact. No countervailing positive aspects are identified in the action itself.",
+      "tx_hash": "5hu8cwxNAVMT6BkRFLaWEpXgW9w5j5ZJPdU6DFkCqu6n3ehLWVzVyo8ZuKaZr8srEuFfaeW99CuFFvxwErssKBy5",
+      "created_at": "2026-10-15T20:06:05.984608+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Peru",
+      "region": "Latin America",
+      "administration": "Peru-FP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Proposed legislative reforms by Peru's government could grant executive powers to undermine indigenous territorial rights, potentially violating land tenure and self-determination protections.\", \"affected_sdgs\": [10, 11, 13, 15, 16], \"violated_rights\": [\"UNDRIP Articles 8, 10, 26, 27, 28\", \"UDHR Article 17\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}, {\"description\": \"Reforms bypass prior legislative rejection in the Chamber of Deputies, weakening democratic checks and institutional accountability for indigenous rights protections.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 676000
+    },
     {
       "id": 8508,
       "event_title": "Minister for Ecological Transition announces reform of environmental assessment",
@@ -196431,8 +196454,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 47,
-        "total_amount": 31316090
+        "count": 45,
+        "total_amount": 30748490
       },
       {
         "country": "France",
@@ -196495,8 +196518,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.115,
-        "events": 26
+        "burn_ratio": 0.111,
+        "events": 27
       },
       {
         "region": "Asia",
@@ -196517,8 +196540,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.941,
-        "events": 51
+        "mint_ratio": 0.939,
+        "events": 49
       },
       {
         "region": "Europe",
@@ -196532,8 +196555,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.885,
-        "events": 26
+        "mint_ratio": 0.889,
+        "events": 27
       }
     ],
     "supply_trend_7d": [
@@ -196569,7 +196592,7 @@
       },
       {
         "date": "2026-10-15",
-        "net_minted": 24141200,
+        "net_minted": 24817200,
         "net_burned": 1757500
       }
     ],
@@ -196587,7 +196610,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 211,
+        "negative": 208,
         "event_ids_positive": [
           8505,
           8490,
@@ -196612,6 +196635,7 @@
           8280
         ],
         "event_ids_negative": [
+          8509,
           8508,
           8507,
           8506,
@@ -196818,16 +196842,12 @@
           8277,
           8276,
           8275,
-          8274,
-          8273,
-          8272,
-          8271,
-          8270
+          8274
         ]
       },
       "UDHR": {
         "positive": 15,
-        "negative": 193,
+        "negative": 190,
         "event_ids_positive": [
           8490,
           8488,
@@ -196846,6 +196866,7 @@
           8280
         ],
         "event_ids_negative": [
+          8509,
           8508,
           8507,
           8506,
@@ -197034,11 +197055,7 @@
           8277,
           8276,
           8275,
-          8274,
-          8273,
-          8272,
-          8271,
-          8270
+          8274
         ]
       },
       "ILO": {
@@ -197071,7 +197088,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 55,
+        "negative": 54,
         "event_ids_positive": [
           8311,
           8280
@@ -197130,8 +197147,7 @@
           8289,
           8285,
           8283,
-          8274,
-          8271
+          8274
         ]
       },
       "UNDRIP": {
@@ -197144,6 +197160,7 @@
           8320
         ],
         "event_ids_negative": [
+          8509,
           8508,
           8500,
           8499,
@@ -197200,8 +197217,7 @@
           8306,
           8294,
           8278,
-          8274,
-          8270
+          8274
         ]
       },
       "Animal": {
@@ -197339,20 +197355,20 @@
       "niche_pct": 70.6,
       "mainstream_pct": 29.4,
       "total_sources_used": 85,
-      "articles_processed": 238
+      "articles_processed": 235
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 238,
-      "pct": 2.5
+      "total_events": 235,
+      "pct": 2.6
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 16,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           8455,
           8411,
@@ -197368,8 +197384,7 @@
           8365,
           8364,
           8329,
-          8302,
-          8273
+          8302
         ]
       },
       {
@@ -197419,32 +197434,30 @@
         ]
       },
       {
-        "name": "IMF",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          8361,
-          8270
-        ]
-      },
-      {
-        "name": "World Bank",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          8361,
-          8270
-        ]
-      },
-      {
         "name": "ECB",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
           8507
+        ]
+      },
+      {
+        "name": "NATO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          8478
+        ]
+      },
+      {
+        "name": "ILO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          8389
         ]
       }
     ],
@@ -197489,37 +197502,6 @@
         ]
       },
       {
-        "name": "Finance",
-        "count": 23,
-        "burn_count": 0,
-        "mint_count": 23,
-        "event_ids": [
-          8507,
-          8500,
-          8498,
-          8495,
-          8486,
-          8478,
-          8473,
-          8407,
-          8405,
-          8403,
-          8381,
-          8378,
-          8363,
-          8361,
-          8329,
-          8322,
-          8314,
-          8309,
-          8301,
-          8277,
-          8276,
-          8272,
-          8270
-        ]
-      },
-      {
         "name": "Construction",
         "count": 22,
         "burn_count": 3,
@@ -197550,10 +197532,39 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 21,
+        "burn_count": 0,
+        "mint_count": 21,
+        "event_ids": [
+          8507,
+          8500,
+          8498,
+          8495,
+          8486,
+          8478,
+          8473,
+          8407,
+          8405,
+          8403,
+          8381,
+          8378,
+          8363,
+          8361,
+          8329,
+          8322,
+          8314,
+          8309,
+          8301,
+          8277,
+          8276
+        ]
+      },
+      {
         "name": "Water",
-        "count": 15,
+        "count": 14,
         "burn_count": 1,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           8491,
           8459,
@@ -197568,8 +197579,7 @@
           8327,
           8324,
           8292,
-          8284,
-          8271
+          8284
         ]
       },
       {
@@ -197595,9 +197605,9 @@
       },
       {
         "name": "Transport",
-        "count": 12,
+        "count": 11,
         "burn_count": 1,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           8505,
           8501,
@@ -197609,15 +197619,14 @@
           8373,
           8359,
           8355,
-          8326,
-          8272
+          8326
         ]
       },
       {
         "name": "Defense",
-        "count": 12,
+        "count": 11,
         "burn_count": 1,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           8498,
           8484,
@@ -197629,8 +197638,7 @@
           8305,
           8283,
           8279,
-          8274,
-          8272
+          8274
         ]
       },
       {
@@ -197682,14 +197690,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 217,
+      "total_mint": 214,
       "direct_action": {
-        "count": 200,
-        "pct": 92.2
+        "count": 196,
+        "pct": 91.6
       },
       "editorial_alarm": {
-        "count": 11,
-        "pct": 5.1
+        "count": 12,
+        "pct": 5.6
       },
       "untyped": {
         "count": 6,
@@ -197697,13 +197705,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6355,
+      "total_mint": 6356,
       "direct_action": {
         "count": 5842,
         "pct": 91.9
       },
       "editorial_alarm": {
-        "count": 423,
+        "count": 424,
         "pct": 6.7
       },
       "untyped": {
@@ -197712,8 +197720,8 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 71,
-      "institutional": 167,
+      "citizen": 70,
+      "institutional": 165,
       "citizen_ratio": 0.298,
       "daily": [
         {
@@ -197748,11 +197756,12 @@
         },
         {
           "date": "2026-10-15",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 29
         }
       ],
       "event_ids_citizen": [
+        8509,
         8505,
         8500,
         8493,
@@ -197821,9 +197830,7 @@
         8290,
         8285,
         8281,
-        8277,
-        8271,
-        8270
+        8277
       ],
       "event_ids_institutional": [
         8508,
@@ -197990,9 +197997,7 @@
         8278,
         8276,
         8275,
-        8274,
-        8273,
-        8272
+        8274
       ]
     }
   }
