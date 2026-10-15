@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-15T16:07:14.957606+00:00",
-  "total_events": 8502,
+  "generated_at": "2026-10-15T17:06:31.226422+00:00",
+  "total_events": 8503,
   "total_burned": 8020401005,
-  "total_minted": 10901802434,
-  "pending_reviews": 88,
+  "total_minted": 10902469434,
+  "pending_reviews": 90,
   "events": [
+    {
+      "id": 8503,
+      "event_title": "Analysis: How are Yemen’s Houthis attacking Saudi Arabia so effectively?",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/analysis-how-are-yemens-houthis-attacking-saudi-arabia-so-effectively",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 667000,
+      "final_score": -3.85,
+      "confidence": 7,
+      "justification": "The attacks cause major harm to people and the planet, warranting a negative token action. | The attacks represent a severe violation of human rights and planetary boundaries, undermining health, infrastructure, and climate stability. No redeeming positive outcomes are evident, leading to a strongly negative ethical assessment.",
+      "tx_hash": "5MrFSVgr3i5jzwWPUyy7iG5Gpq1sjbYBuMLSRTmokJbcAVXpnewmXLLsV42Svoizeot5vd9kgRkZMukJVXPhvxre",
+      "created_at": "2026-10-15T17:06:24.919024+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Yemen",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Houthi missile and drone attacks on Riyadh airport and Saudi Aramco headquarters cause civilian casualties, threaten critical energy infrastructure, and risk large-scale environmental damage.\", \"affected_sdgs\": [3, 8, 9, 13, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 13\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 8502,
       "event_title": "Turkey floats earlier 2028 vote that would clear way for Erdogan to run again",
@@ -196293,13 +196316,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 48,
-        "total_amount": 30956490
+        "count": 47,
+        "total_amount": 30896090
       },
       {
         "country": "France",
-        "count": 19,
-        "total_amount": 6351600
+        "count": 18,
+        "total_amount": 5951600
       },
       {
         "country": "Brazil",
@@ -196361,31 +196384,31 @@
         "events": 26
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.077,
+        "events": 52
+      },
+      {
         "region": "Asia",
         "burn_ratio": 0.077,
         "events": 26
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.075,
-        "events": 53
       }
     ],
     "top_regions_destructive": [
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 6
+        "events": 7
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.953,
-        "events": 64
+        "mint_ratio": 0.951,
+        "events": 61
       },
       {
         "region": "North America",
-        "mint_ratio": 0.925,
-        "events": 53
+        "mint_ratio": 0.923,
+        "events": 52
       },
       {
         "region": "Asia",
@@ -196431,7 +196454,7 @@
       },
       {
         "date": "2026-10-15",
-        "net_minted": 16744200,
+        "net_minted": 17411200,
         "net_burned": 1400000
       }
     ],
@@ -196449,7 +196472,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 215,
+        "negative": 212,
         "event_ids_positive": [
           8490,
           8488,
@@ -196474,6 +196497,7 @@
           8269
         ],
         "event_ids_negative": [
+          8503,
           8502,
           8501,
           8500,
@@ -196684,16 +196708,12 @@
           8267,
           8266,
           8265,
-          8264,
-          8263,
-          8262,
-          8261,
-          8260
+          8264
         ]
       },
       "UDHR": {
         "positive": 16,
-        "negative": 197,
+        "negative": 194,
         "event_ids_positive": [
           8490,
           8488,
@@ -196713,6 +196733,7 @@
           8269
         ],
         "event_ids_negative": [
+          8503,
           8502,
           8501,
           8500,
@@ -196905,16 +196926,12 @@
           8267,
           8266,
           8265,
-          8264,
-          8263,
-          8262,
-          8261,
-          8260
+          8264
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 22,
+        "negative": 20,
         "event_ids_positive": [],
         "event_ids_negative": [
           8500,
@@ -196936,14 +196953,12 @@
           8296,
           8281,
           8275,
-          8266,
-          8261,
-          8260
+          8266
         ]
       },
       "CRC": {
         "positive": 2,
-        "negative": 58,
+        "negative": 57,
         "event_ids_positive": [
           8311,
           8280
@@ -197005,8 +197020,7 @@
           8274,
           8271,
           8268,
-          8265,
-          8260
+          8265
         ]
       },
       "UNDRIP": {
@@ -197118,7 +197132,7 @@
       },
       "PB": {
         "positive": 11,
-        "negative": 76,
+        "negative": 74,
         "event_ids_positive": [
           8461,
           8445,
@@ -197133,6 +197147,7 @@
           8269
         ],
         "event_ids_negative": [
+          8503,
           8501,
           8499,
           8498,
@@ -197205,22 +197220,19 @@
           8277,
           8275,
           8268,
-          8264,
-          8263,
-          8262,
-          8261
+          8264
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.1,
-      "mainstream_pct": 29.9,
+      "niche_pct": 71.3,
+      "mainstream_pct": 28.7,
       "total_sources_used": 87,
-      "articles_processed": 242
+      "articles_processed": 239
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 242,
+      "total_events": 239,
       "pct": 2.5
     },
     "active_partners_7d": [],
@@ -197328,9 +197340,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 33,
+        "count": 31,
         "burn_count": 2,
-        "mint_count": 31,
+        "mint_count": 29,
         "event_ids": [
           8499,
           8498,
@@ -197362,16 +197374,44 @@
           8315,
           8314,
           8309,
+          8277
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 22,
+        "burn_count": 4,
+        "mint_count": 18,
+        "event_ids": [
+          8503,
+          8501,
+          8492,
+          8484,
+          8460,
+          8454,
+          8451,
+          8445,
+          8438,
+          8430,
+          8428,
+          8421,
+          8397,
+          8388,
+          8373,
+          8362,
+          8350,
+          8339,
+          8328,
+          8305,
           8277,
-          8263,
-          8262
+          8269
         ]
       },
       {
         "name": "Finance",
-        "count": 23,
+        "count": 22,
         "burn_count": 0,
-        "mint_count": 23,
+        "mint_count": 22,
         "event_ids": [
           8500,
           8498,
@@ -197394,38 +197434,7 @@
           8277,
           8276,
           8272,
-          8270,
-          8263
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 22,
-        "burn_count": 4,
-        "mint_count": 18,
-        "event_ids": [
-          8501,
-          8492,
-          8484,
-          8460,
-          8454,
-          8451,
-          8445,
-          8438,
-          8430,
-          8428,
-          8421,
-          8397,
-          8388,
-          8373,
-          8362,
-          8350,
-          8339,
-          8328,
-          8305,
-          8277,
-          8269,
-          8262
+          8270
         ]
       },
       {
@@ -197498,9 +197507,9 @@
       },
       {
         "name": "Transport",
-        "count": 12,
+        "count": 11,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           8501,
           8463,
@@ -197512,8 +197521,7 @@
           8359,
           8355,
           8326,
-          8272,
-          8261
+          8272
         ]
       },
       {
@@ -197565,24 +197573,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 221,
+      "total_mint": 218,
       "direct_action": {
-        "count": 202,
-        "pct": 91.4
+        "count": 200,
+        "pct": 91.7
       },
       "editorial_alarm": {
-        "count": 13,
-        "pct": 5.9
+        "count": 12,
+        "pct": 5.5
       },
       "untyped": {
         "count": 6,
-        "pct": 2.7
+        "pct": 2.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6350,
+      "total_mint": 6351,
       "direct_action": {
-        "count": 5837,
+        "count": 5838,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -197595,9 +197603,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 73,
-      "institutional": 169,
-      "citizen_ratio": 0.302,
+      "citizen": 72,
+      "institutional": 167,
+      "citizen_ratio": 0.301,
       "daily": [
         {
           "date": "2026-10-09",
@@ -197632,7 +197640,7 @@
         {
           "date": "2026-10-15",
           "citizen": 4,
-          "institutional": 24
+          "institutional": 25
         }
       ],
       "event_ids_citizen": [
@@ -197707,10 +197715,10 @@
         8271,
         8270,
         8269,
-        8266,
-        8262
+        8266
       ],
       "event_ids_institutional": [
+        8503,
         8502,
         8501,
         8499,
@@ -197876,10 +197884,7 @@
         8268,
         8267,
         8265,
-        8264,
-        8263,
-        8261,
-        8260
+        8264
       ]
     }
   }
