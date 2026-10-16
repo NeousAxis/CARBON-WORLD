@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-15T23:05:14.205384+00:00",
-  "total_events": 8513,
-  "total_burned": 8024401105,
+  "generated_at": "2026-10-16T00:06:54.936754+00:00",
+  "total_events": 8514,
+  "total_burned": 8025151105,
   "total_minted": 10910701434,
-  "pending_reviews": 99,
+  "pending_reviews": 101,
   "events": [
+    {
+      "id": 8514,
+      "event_title": "Deutsche Bahn enforces alcohol ban across all stations to improve safety",
+      "event_url": "https://www.thelocal.de/20260721/alcohol-ban-takes-effect-at-every-deutsche-bahn-station",
+      "event_source": "The Local Germany (EN)",
+      "decision": "BURN",
+      "amount_crbn": 750000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=BURN -> BURN (human chose this in 89% of 28 past reviews)] Institutional action reduces harm and enhances safety, outweighing minor overreach risks. | The ban aligns with public safety goals (SDGs 3, 11, 16) by reducing harm in high-traffic transit environments, a clear positive. However, it risks overreach in personal freedoms and could disproportionately impact vulnerable populations, though the magnitude of this harm is lower given t",
+      "tx_hash": "5TC9waCsAy4EgNaeVBx9y7oFrBHoT6G4Er5jobVKdihs4MRAsCHvLJRKysVGy1B6QGirbNK7HnkrsANeSDf342PC",
+      "created_at": "2026-10-16T00:06:47.756959+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"Blanket alcohol ban enforced at all Deutsche Bahn stations to improve safety for travelers and staff, reducing risks of violence, harassment, and accidents.\", \"affected_sdgs\": [3, 8, 11, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential restriction on personal freedoms and social behaviors in public spaces, with possible disproportionate enforcement affecting marginalized groups (e.g., homeless individuals).\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 24\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 532000
+    },
     {
       "id": 8513,
       "event_title": "Long Isun Community Rejects Carbon Funds to Protect Forest and Preserve Tradition",
@@ -196546,8 +196569,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 29750490
+        "count": 42,
+        "total_amount": 29074490
       },
       {
         "country": "France",
@@ -196592,9 +196615,9 @@
         "total_amount": 1400000
       },
       {
-        "country": "Australia",
+        "country": "Germany",
         "count": 1,
-        "total_amount": 700000
+        "total_amount": 750000
       }
     ],
     "top_regions_sustainable": [
@@ -196614,14 +196637,14 @@
         "events": 9
       },
       {
-        "region": "Latin America",
-        "burn_ratio": 0.111,
-        "events": 27
+        "region": "North America",
+        "burn_ratio": 0.085,
+        "events": 47
       },
       {
-        "region": "North America",
+        "region": "Europe",
         "burn_ratio": 0.083,
-        "events": 48
+        "events": 60
       }
     ],
     "top_regions_destructive": [
@@ -196631,32 +196654,27 @@
         "events": 8
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.923,
+        "events": 26
+      },
+      {
         "region": "Europe",
-        "mint_ratio": 0.932,
-        "events": 59
+        "mint_ratio": 0.917,
+        "events": 60
       },
       {
         "region": "North America",
-        "mint_ratio": 0.917,
-        "events": 48
+        "mint_ratio": 0.915,
+        "events": 47
       },
       {
         "region": "Oceania",
         "mint_ratio": 0.889,
         "events": 9
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.889,
-        "events": 27
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-10-09",
-        "net_minted": 38244940,
-        "net_burned": 2125000
-      },
       {
         "date": "2026-10-10",
         "net_minted": 33447250,
@@ -196686,6 +196704,11 @@
         "date": "2026-10-15",
         "net_minted": 25643200,
         "net_burned": 5400100
+      },
+      {
+        "date": "2026-10-16",
+        "net_minted": 0,
+        "net_burned": 750000
       }
     ],
     "event_of_the_day": {
@@ -196702,8 +196725,9 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 205,
+        "negative": 204,
         "event_ids_positive": [
+          8514,
           8513,
           8510,
           8505,
@@ -196725,8 +196749,7 @@
           8320,
           8311,
           8300,
-          8290,
-          8280
+          8290
         ],
         "event_ids_negative": [
           8512,
@@ -196932,14 +196955,14 @@
           8284,
           8283,
           8282,
-          8281,
-          8279
+          8281
         ]
       },
       "UDHR": {
         "positive": 16,
-        "negative": 187,
+        "negative": 186,
         "event_ids_positive": [
+          8514,
           8510,
           8490,
           8488,
@@ -196954,8 +196977,7 @@
           8320,
           8311,
           8300,
-          8290,
-          8280
+          8290
         ],
         "event_ids_negative": [
           8512,
@@ -197143,8 +197165,7 @@
           8284,
           8283,
           8282,
-          8281,
-          8279
+          8281
         ]
       },
       "ILO": {
@@ -197175,11 +197196,10 @@
         ]
       },
       "CRC": {
-        "positive": 2,
+        "positive": 1,
         "negative": 53,
         "event_ids_positive": [
-          8311,
-          8280
+          8311
         ],
         "event_ids_negative": [
           8501,
@@ -197441,14 +197461,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 73.3,
-      "mainstream_pct": 26.7,
+      "niche_pct": 72.1,
+      "mainstream_pct": 27.9,
       "total_sources_used": 86,
-      "articles_processed": 234
+      "articles_processed": 233
     },
     "cache_hit_rate_7d": {
       "hits": 6,
-      "total_events": 234,
+      "total_events": 233,
       "pct": 2.6
     },
     "active_partners_7d": [],
@@ -197710,9 +197730,9 @@
       },
       {
         "name": "Defense",
-        "count": 10,
+        "count": 9,
         "burn_count": 1,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           8498,
           8484,
@@ -197722,8 +197742,7 @@
           8355,
           8336,
           8305,
-          8283,
-          8279
+          8283
         ]
       },
       {
@@ -197760,9 +197779,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2146,
+      "total_burn": 2147,
       "direct_action": {
-        "count": 1913,
+        "count": 1914,
         "pct": 89.1
       },
       "editorial_consciousness": {
@@ -197775,10 +197794,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 211,
+      "total_mint": 210,
       "direct_action": {
-        "count": 193,
-        "pct": 91.5
+        "count": 192,
+        "pct": 91.4
       },
       "editorial_alarm": {
         "count": 12,
@@ -197786,7 +197805,7 @@
       },
       "untyped": {
         "count": 6,
-        "pct": 2.8
+        "pct": 2.9
       }
     },
     "mint_composition_all_time": {
@@ -197806,14 +197825,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 71,
-      "institutional": 163,
-      "citizen_ratio": 0.303,
+      "institutional": 162,
+      "citizen_ratio": 0.305,
       "daily": [
-        {
-          "date": "2026-10-09",
-          "citizen": 13,
-          "institutional": 27
-        },
         {
           "date": "2026-10-10",
           "citizen": 5,
@@ -197843,6 +197857,11 @@
           "date": "2026-10-15",
           "citizen": 8,
           "institutional": 31
+        },
+        {
+          "date": "2026-10-16",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -197919,6 +197938,7 @@
         8281
       ],
       "event_ids_institutional": [
+        8514,
         8512,
         8511,
         8508,
@@ -198079,9 +198099,7 @@
         8286,
         8284,
         8283,
-        8282,
-        8280,
-        8279
+        8282
       ]
     }
   }
