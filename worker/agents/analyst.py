@@ -131,7 +131,7 @@ def analyze(article: dict) -> Optional[dict]:
     # decision" by an over-zealous Analyst). Cyril asked 2026-05-05 for visibility.
     if not result.get("validation", True):
         reason = result.get("reason", "rejected by analyst")
-        logger.info("Analyst rejected '%s': %s — queued for human review", title[:60], reason[:100])
+        logger.info("Analyst rejected '%s': %s", title[:60], reason[:100])
         if article.get("_human_validated"):
             # The human already overruled one rejection of this article: hand
             # their own row back with the new reasoning rather than looping.
@@ -146,25 +146,16 @@ def analyze(article: dict) -> Optional[dict]:
             except Exception as exc:
                 logger.warning("Failed to hand the re-analysed article back to review: %s", exc)
             return None
+        # Recorded now but hidden ('awaiting_b'): Analyst B reads the same
+        # article in parallel, and only a disagreement goes to Cyril
+        # (main._route_analyst_rejections). Written at once so a killed run
+        # still leaves the URL seen and the row finishable.
+        article["_analyst_a_rejection"] = result
         try:
-            from db import add_to_review_queue
-            add_to_review_queue({
-                "event_title": title,
-                # Articles carry their URL under "link" (rss_fetcher, collector).
-                # Reading "url" queued every rejection with an empty URL from
-                # 2026-05-05 to 2026-10-13, all dropped on review #27's UNIQUE ''.
-                "event_url": article.get("link", ""),
-                "event_source": article.get("source", ""),
-                "analyst_a_verdict": result,
-                "analyst_b_verdict": None,
-                "reconciler_verdict": None,
-                "sentinel_concern": f"Analyst rejected as not-actionable: {reason[:300]}",
-                "suggested_decision": "REJECT",
-                "suggested_amount_crbn": 0,
-            })
+            from db import park_analyst_rejection
+            article["_rejection_review_id"] = park_analyst_rejection(article, result)
         except Exception as exc:
-            # Don't let queue-write errors break the pipeline
-            logger.warning("Failed to push analyst-rejected article to review queue: %s", exc)
+            logger.warning("Failed to record the Analyst rejection: %s", exc)
         return None
 
     decision = result.get("decision", "NEUTRAL")

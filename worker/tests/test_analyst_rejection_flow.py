@@ -80,10 +80,18 @@ def _count(table: str) -> int:
     return db._get_conn().execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
 
 
+B_DISAGREES = {"validation": True, "decision": "BURN", "final_score": 7.2}
+
+
 def _queue_analyst_rejection(monkeypatch) -> int:
-    """Run the real analyst path with an LLM answer that rejects the article."""
+    """Run the real analyst path with an LLM answer that rejects the article,
+    then route it as the pipeline does when Analyst B disagrees (the only
+    case that reaches /review since 2026-10-16)."""
     monkeypatch.setattr(analyst_a, "call_deep", lambda **kwargs: dict(REJECTION))
-    assert analyst_a.analyze(_article()) is None
+    article = _article()
+    assert analyst_a.analyze(article) is None
+    db.route_analyst_rejection(article["_rejection_review_id"], article["_analyst_a_rejection"],
+                               dict(B_DISAGREES), None, article["link"])
     row = db._get_conn().execute(
         "SELECT id FROM review_queue WHERE event_url = ?", (URL,)
     ).fetchone()

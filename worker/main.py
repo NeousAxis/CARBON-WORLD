@@ -183,6 +183,64 @@ def _run_analysts_parallel(valid_articles: list[dict]) -> tuple[list[dict], list
     return results_a, results_b
 
 
+def _route_analyst_rejections(articles: list[dict], results_b: list[dict]) -> None:
+    """Analyst A judged these articles not actionable. Now that Analyst B has
+    read them too, only a disagreement (B scores BURN or MINT) goes to Cyril's
+    /review; an agreement is recorded as settled (db.record_analyst_rejection)."""
+    b_by_link = {r["article"].get("link", ""): r["analysis"] for r in results_b}
+    counts: dict[str, int] = {}
+    for article in articles:
+        rejection = article.get("_analyst_a_rejection")
+        if rejection is None:
+            continue
+        outcome = article.get("_analyst_b_outcome")
+        # B's own rejection is kept as its verdict for the audit trail
+        b_verdict = (b_by_link.get(article.get("link", ""))
+                     or (article.get("_analyst_b_rejection") if outcome == "rejected" else None))
+        try:
+            review_id = article.get("_rejection_review_id")
+            if review_id is None:
+                review_id = _db_module.park_analyst_rejection(article, rejection)
+            if review_id is None:
+                continue
+            routed = _db_module.route_analyst_rejection(
+                review_id, rejection, b_verdict, outcome, article.get("link", ""))
+        except Exception as exc:
+            logger.warning("Could not route Analyst rejection '%s': %s",
+                           article.get("title", "")[:60], exc)
+            continue
+        counts[routed] = counts.get(routed, 0) + 1
+    if counts:
+        logger.info("Analyst rejections routed: %s", counts)
+
+
+def _flag_mirror_disagreements(events: list[dict]) -> None:
+    """Analyst A scored the article BURN/MINT but Analyst B judged it not
+    actionable: the mirror of an A rejection B disagrees with, so it gets the
+    same treatment. The pair went through as A-only (B "failed" for the merge);
+    here it is flagged for review, which lets the writer's learned resolver
+    decide from Cyril's past choices first and ask him only if it cannot.
+    Measured 2026-10-16: 2 of 53 A-scored articles in 20 runs."""
+    for event in events:
+        article = event.get("article", {}) or {}
+        if article.get("_analyst_b_outcome") != "rejected":
+            continue
+        b_rejection = article.get("_analyst_b_rejection") or {}
+        reason = str(b_rejection.get("reason") or "not actionable")
+        analysis = event.get("analysis", {}) or {}
+        event["_analyst_b"] = b_rejection or {"validation": False, "reason": reason}
+        event["_needs_review"] = True
+        concern = (f"Analysts disagree: B finds it not actionable ({reason[:200]}); "
+                   f"A scores it {analysis.get('decision')} "
+                   f"{float(analysis.get('final_score') or 0):.2f}")
+        sentinel = dict(event.get("_sentinel") or {})
+        if sentinel.get("concern"):
+            # Sentinel concern first: the digest buckets read its prefix
+            concern = f"{sentinel['concern']} | {concern}"
+        sentinel["concern"] = concern[:500]
+        event["_sentinel"] = sentinel
+
+
 def _merge_ab_by_url(results_a: list[dict], results_b: list[dict]) -> list[dict]:
     """
     Match Analyst A and Analyst B outputs by article URL.
@@ -337,7 +395,13 @@ def main() -> int:
 
     # === Phase 3/8: ANALYST A + ANALYST B (parallel) ===
     logger.info("=== Phase 3/8: ANALYSTS A+B in parallel (%d valid articles) ===", valid_count)
-    results_a, results_b = _run_analysts_parallel(valid_articles)
+    results_b: list[dict] = []
+    try:
+        results_a, results_b = _run_analysts_parallel(valid_articles)
+    finally:
+        # Even on a crash: the A rejections already made are recorded (with no
+        # B verdict they wait in 'awaiting_b' instead of being re-analysed).
+        _route_analyst_rejections(valid_articles, results_b)
 
     # Merge by URL — both analysts must have spoken
     ab_pairs = _merge_ab_by_url(results_a, results_b)
@@ -381,6 +445,7 @@ def main() -> int:
     # === Phase 5/8: SENTINEL ===
     logger.info("=== Phase 5/8: SENTINEL (%d events) ===", len(actionable_events))
     sentinel_events = sentinel_check(actionable_events)
+    _flag_mirror_disagreements(sentinel_events)
 
     # === Phase 6/8: SCORER ===
     logger.info("=== Phase 6/8: SCORER (%d events) ===", len(sentinel_events))

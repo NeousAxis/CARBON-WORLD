@@ -14,6 +14,8 @@ echo '--- batch 2: B=NEUTRAL ---'
 python worker/auto_approve_b_neutral.py 2>&1
 # Batch 3: Analyst rejections of a kind Cyril has learned to confirm.
 # Non-fatal: under set -e a failure would otherwise skip the export.
+echo '--- batch 3a: analyst rejections still without Analyst B (retry) ---'
+python worker/settle_analyst_rejections.py --execute --limit 20 2>&1 || echo 'settle retry failed (non-fatal)'
 echo '--- batch 3: analyst rejections confirmed by learning ---'
 python worker/rejection_learning.py --execute 2>&1 || echo 'rejection learning failed (non-fatal)'
 echo '--- regenerate export ---'

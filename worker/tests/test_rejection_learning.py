@@ -111,7 +111,9 @@ def _reject(reason: str, title: str = "") -> int:
         "event_url": f"https://example.org/{n}",
         "event_source": "Test Wire",
         "analyst_a_verdict": {"validation": False, "reason": reason},
-        "sentinel_concern": f"Analyst rejected as not-actionable: {reason}",
+        # Since 2026-10-16 only A/B disagreements reach /review and train
+        "analyst_b_verdict": {"validation": True, "decision": "MINT", "final_score": -3.0},
+        "sentinel_concern": f"Analysts disagree: {reason}",
         "suggested_decision": "REJECT",
         "suggested_amount_crbn": 0,
     })

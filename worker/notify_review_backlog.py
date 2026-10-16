@@ -97,14 +97,26 @@ def fetch_backlog_summary() -> dict:
             (since,),
         )]
 
+        # Analyst rejections both analysts agreed on: settled without review
+        settled = [dict(r) for r in con.execute(
+            "SELECT id, event_title FROM review_queue "
+            "WHERE rejection_verdict = 'analysts_agree' AND resolved_at >= ? ORDER BY id",
+            (since,),
+        )]
+
         if total == 0:
-            return {"total": 0, "rows": [], "buckets": {}, "auto_confirmed": auto_confirmed}
+            return {"total": 0, "rows": [], "buckets": {}, "auto_confirmed": auto_confirmed,
+                    "settled": settled}
 
         # Bucket by structural flag prefix in sentinel_concern.
         buckets_raw = con.execute("""
             SELECT
               CASE
+                WHEN suggested_decision = 'REJECT' AND sentinel_concern LIKE 'Analysts disagree%'
+                  THEN 'analysts disagree (A: not actionable, B: BURN/MINT)'
                 WHEN suggested_decision = 'REJECT' THEN 'analyst rejection (not actionable)'
+                WHEN sentinel_concern LIKE 'Analysts disagree: B%'
+                  THEN 'analysts disagree (A: BURN/MINT, B: not actionable)'
                 WHEN sentinel_concern LIKE 'structural:%missing_positive%missing_negative%' THEN 'both lists empty'
                 WHEN sentinel_concern LIKE 'structural:%missing_negative%' THEN 'missing negative aspects'
                 WHEN sentinel_concern LIKE 'structural:%missing_positive%' THEN 'missing positive aspects'
@@ -134,7 +146,7 @@ def fetch_backlog_summary() -> dict:
         """).fetchall()
 
         return {"total": total, "rows": [dict(r) for r in rows], "buckets": buckets,
-                "auto_confirmed": auto_confirmed}
+                "auto_confirmed": auto_confirmed, "settled": settled}
     finally:
         con.close()
 
@@ -165,6 +177,9 @@ def build_text_body(summary: dict) -> str:
         f"CARBON WORLD — review queue digest",
         f"",
         f"{total} events are waiting for your review on https://carbon-world.xyz/review",
+        f"{len(summary.get('settled', []))} Analyst rejections settled without you in the last 24 h"
+        f" (Analysts A and B agree; undo one: resolve_review.py <id> reverse):",
+        *[f"  #{r['id']} {(r['event_title'] or '')[:80]}" for r in summary.get("settled", [])[:10]],
         f"{len(summary.get('auto_confirmed', []))} Analyst rejections confirmed by learning in the last 24 h"
         f" (undo one: resolve_review.py <id> reverse):",
         *[f"  #{r['id']} [{r['rejection_type']}] {(r['event_title'] or '')[:80]}"
@@ -206,6 +221,10 @@ def build_html_body(summary: dict) -> str:
         '</tr>'
         for r in summary["rows"]
     )
+    settled_rows = "".join(
+        f'<br>#{r["id"]} {html.escape((r["event_title"] or "")[:80])}'
+        for r in summary.get("settled", [])[:10]
+    )
     auto_rows = "".join(
         f'<br>#{r["id"]} [{r["rejection_type"]}] {html.escape((r["event_title"] or "")[:80])}'
         for r in summary.get("auto_confirmed", [])
@@ -226,6 +245,7 @@ def build_html_body(summary: dict) -> str:
 <div style="font-size:12px;color:#B8B9B6;margin-top:8px;">
 <a href="https://carbon-world.xyz/review" style="color:#FF8400;text-decoration:none;">https://carbon-world.xyz/review →</a>
 </div>
+<div style="font-size:12px;color:#B8B9B6;margin-top:8px;">{len(summary.get("settled", []))} Analyst rejections settled without you in the last 24 h (Analysts A and B agree){settled_rows}</div>
 <div style="font-size:12px;color:#B8B9B6;margin-top:8px;">{len(summary.get("auto_confirmed", []))} Analyst rejections confirmed by learning in the last 24 h{auto_rows}</div>
 </td></tr>
 <tr><td style="padding:8px 24px;">

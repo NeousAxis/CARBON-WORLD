@@ -84,9 +84,10 @@ function ReviewCard({
     b.decision !== undefined &&
     a.decision === b.decision;
 
-  // Analyst rejection ("not actionable", no Analyst B / Reconciler verdict):
-  // APPROVE and REJECT confirm it, REVERSE sends the article to a full analysis
-  // on the next pipeline run (worker/db.py resolve_review).
+  // Analyst rejection ("not actionable"): it reaches /review only when Analyst
+  // B scored the article BURN or MINT. CONFIRM REJECT and REJECT confirm the
+  // rejection, ANALYZE ANYWAY sends the article to a full analysis on the next
+  // pipeline run (worker/db.py resolve_review).
   const isAnalystRejection = item.suggested_decision === "REJECT";
 
   const resolved = result?.kind === "ok";
@@ -226,7 +227,9 @@ function ReviewCard({
         </div>
       </div>
 
-      {!agree && !isAnalystRejection && (
+      {/* On an Analyst rejection the banner shows only when B scored it (the
+          only rejections that reach /review since 2026-10-16) */}
+      {!agree && (!isAnalystRejection || b.decision === "BURN" || b.decision === "MINT") && (
         <div
           className="p-2 mb-3 text-xs font-medium"
           style={{ backgroundColor: "#24100B", color: "#FF5C33" }}
@@ -268,7 +271,7 @@ function ReviewCard({
               opacity: resolved || (busy !== null && busy !== "approve") ? 0.5 : 1,
             }}
           >
-            {busy === "approve" ? "Executing…" : "APPROVE"}
+            {busy === "approve" ? "Executing…" : isAnalystRejection ? "CONFIRM REJECT" : "APPROVE"}
           </button>
 
           <button

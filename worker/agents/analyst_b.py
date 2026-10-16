@@ -69,11 +69,14 @@ def analyze(article: dict) -> Optional[dict]:
 
     if result is None:
         logger.warning("Analyst B failed for '%s'.", title[:60])
+        article["_analyst_b_outcome"] = "failed"
         return None
 
     if not result.get("validation", True):
         reason = result.get("reason", "rejected by analyst B")
         logger.info("Analyst B rejected '%s': %s", title[:60], reason[:100])
+        article["_analyst_b_outcome"] = "rejected"
+        article["_analyst_b_rejection"] = result
         return None
 
     decision = result.get("decision", "NEUTRAL")

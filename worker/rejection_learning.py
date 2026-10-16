@@ -150,6 +150,10 @@ def kind_stats(conn: sqlite3.Connection) -> dict[str, dict[str, int]]:
         """SELECT rejection_type, rejection_verdict, COUNT(*) FROM review_queue
            WHERE rejection_verdict IN ('confirmed', 'reversed')
              AND rejection_type IS NOT NULL
+             -- since 2026-10-16 only A/B disagreements reach Cyril: learn on
+             -- that population, as it stood when he decided (a re-analysis
+             -- later rewrites analyst_b_verdict)
+             AND rejection_disagreement = 1
            GROUP BY 1, 2"""
     ):
         stats.setdefault(kind, {"confirmed": 0, "reversed": 0})[verdict] = n
@@ -177,7 +181,11 @@ def record_past_decisions(conn: sqlite3.Connection) -> int:
     ).fetchall()
     for review_id, human_verdict, a_verdict in rows:
         conn.execute(
-            "UPDATE review_queue SET rejection_verdict = ?, rejection_type = ? WHERE id = ?",
+            """UPDATE review_queue SET rejection_verdict = ?, rejection_type = ?,
+                   rejection_disagreement = CASE
+                     WHEN json_extract(analyst_b_verdict, '$.decision') IN ('BURN', 'MINT')
+                     THEN 1 ELSE 0 END
+               WHERE id = ?""",
             ("reversed" if human_verdict == "reverse" else "confirmed",
              classify_rejection(rejection_reason(a_verdict)), review_id),
         )
@@ -193,6 +201,7 @@ def plan(conn: sqlite3.Connection) -> list[dict]:
         """SELECT id, event_title, analyst_a_verdict FROM review_queue
            WHERE status = 'pending' AND suggested_decision = 'REJECT'
              AND rejection_verdict IS NULL AND human_verdict IS NULL
+             AND json_extract(analyst_b_verdict, '$.decision') IN ('BURN', 'MINT')
            ORDER BY id"""
     ).fetchall():
         kind = classify_rejection(rejection_reason(a_verdict))

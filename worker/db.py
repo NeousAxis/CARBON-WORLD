@@ -130,6 +130,12 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         # fixed at decision time (a re-analysis later rewrites the verdicts).
         "ALTER TABLE review_queue ADD COLUMN rejection_verdict TEXT;",
         "ALTER TABLE review_queue ADD COLUMN rejection_type TEXT;",
+        # Whether Analyst B scored BURN/MINT when Cyril decided (the learning
+        # trains on disagreements only; a later re-analysis rewrites B's verdict)
+        "ALTER TABLE review_queue ADD COLUMN rejection_disagreement INTEGER;",
+        # Silent Analyst B retries of a parked rejection (settle_analyst_rejections.py)
+        "ALTER TABLE review_queue ADD COLUMN b_retry_count INTEGER;",
+        "ALTER TABLE review_queue ADD COLUMN b_retry_at TEXT;",
     ]
     for sql in migrations:
         try:
@@ -643,16 +649,19 @@ def resolve_review(
                 )
                 return False
             from rejection_learning import classify_rejection, rejection_reason
-            if (row["status"] == "rejected" and row["rejection_verdict"] == "auto_confirmed"
+            if (row["status"] == "rejected"
+                    and row["rejection_verdict"] in OVERRULABLE_REJECTIONS
                     and human_verdict == "reverse"):
-                # Cyril overrules an automatic confirmation: the strongest
+                # Cyril overrules a rejection closed without him: the strongest
                 # training signal there is, and the article gets its analysis.
                 cursor = conn.execute(
                     """UPDATE review_queue SET status='reanalyze', human_verdict=?,
                            human_amount=?, human_reason=?, resolved_at=?,
-                           rejection_verdict='reversed'
+                           rejection_verdict='reversed',
+                           rejection_disagreement = COALESCE(rejection_disagreement,
+                               CASE WHEN rejection_verdict = 'auto_confirmed' THEN 1 ELSE 0 END)
                        WHERE id=? AND status='rejected'
-                         AND rejection_verdict='auto_confirmed'""",
+                         AND rejection_verdict IN ('auto_confirmed', 'analysts_agree')""",
                     (human_verdict, human_amount, human_reason, now, review_id),
                 )
                 if cursor.rowcount != 1:
@@ -665,13 +674,19 @@ def resolve_review(
                 # Cyril's FIRST decision: a re-analysis later rewrites
                 # analyst_a_verdict, and a confirmation after a reversal must
                 # not erase that reversal.
+                try:
+                    b_now = json.loads(row["analyst_b_verdict"] or "null")
+                except (json.JSONDecodeError, TypeError):
+                    b_now = None
                 conn.execute(
                     """UPDATE review_queue
                        SET rejection_verdict = COALESCE(rejection_verdict, ?),
-                           rejection_type = COALESCE(rejection_type, ?)
+                           rejection_type = COALESCE(rejection_type, ?),
+                           rejection_disagreement = COALESCE(rejection_disagreement, ?)
                        WHERE id = ?""",
                     ("reversed" if human_verdict == "reverse" else "confirmed",
-                     classify_rejection(rejection_reason(row["analyst_a_verdict"])), review_id),
+                     classify_rejection(rejection_reason(row["analyst_a_verdict"])),
+                     1 if b_decision(b_now) in ("BURN", "MINT") else 0, review_id),
                 )
             conn.commit()
             logger.info(
@@ -746,12 +761,205 @@ def resolve_review(
         return False
 
 
+B_RETRY_LIMIT = 24  # hourly retries of a silent Analyst B before Cyril sees the row
+
+
+def b_decision(b_verdict: Optional[dict]) -> Optional[str]:
+    """Analyst B's normalised decision, or None when it gave no usable one."""
+    if not isinstance(b_verdict, dict) or not b_verdict.get("validation", True):
+        return None
+    decision = str(b_verdict.get("decision") or "").strip().upper()
+    return decision if decision in ("BURN", "MINT", "NEUTRAL") else None
+
+
+def _disagreement_concern(a_verdict: Optional[dict], b_verdict: dict) -> str:
+    reason = str((a_verdict or {}).get("reason") or "rejected by analyst")
+    return (
+        f"Analysts disagree: A finds it not actionable ({reason[:220]}); "
+        f"B scores it {b_decision(b_verdict)} {float(b_verdict.get('final_score') or 0):.2f}"
+    )
+
+
+def _settled_reason(b_verdict: Optional[dict], b_outcome: Optional[str]) -> str:
+    why = "found it NEUTRAL" if b_decision(b_verdict) == "NEUTRAL" else "also rejected it"
+    return f"settled without review: Analyst B {why}"
+
+
+def park_analyst_rejection(article: dict, a_verdict: dict) -> Optional[int]:
+    """Record an Analyst A rejection at once, hidden in status 'awaiting_b'
+    until Analyst B's reading routes it (route_analyst_rejection). Written
+    immediately so that a run killed before B finishes (run_vps.sh SIGKILL)
+    still marks the URL as seen and leaves a row settle_analyst_rejections.py
+    can finish."""
+    reason = str((a_verdict or {}).get("reason") or "rejected by analyst")
+    review_id = add_to_review_queue({
+        "event_title": article.get("title", ""),
+        "event_url": article.get("link", ""),
+        "event_source": article.get("source", ""),
+        "analyst_a_verdict": a_verdict,
+        "analyst_b_verdict": None,
+        "reconciler_verdict": None,
+        "sentinel_concern": f"Analyst rejected as not-actionable: {reason[:300]}",
+        "suggested_decision": "REJECT",
+        "suggested_amount_crbn": 0,
+    })
+    if review_id is None:
+        return None
+    try:
+        conn = _get_conn()
+        conn.execute(
+            "UPDATE review_queue SET status = 'awaiting_b' "
+            "WHERE id = ? AND status = 'pending' AND human_verdict IS NULL",
+            (review_id,),
+        )
+        conn.commit()
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error parking Analyst rejection id=%d: %s", review_id, exc)
+    return review_id
+
+
+def settle_analyst_rejection(review_id: int, b_verdict: Optional[dict],
+                             b_outcome: Optional[str]) -> bool:
+    """Close an Analyst rejection both analysts agree on (no review). It stays
+    overrulable: resolve_review.py <id> reverse sends it to a full analysis.
+    b_verdict is B's NEUTRAL verdict or B's own rejection, kept for the audit."""
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            """UPDATE review_queue
+               SET status = 'rejected', human_verdict = 'auto', human_reason = ?,
+                   resolved_at = ?, final_decision = 'REJECTED',
+                   rejection_verdict = 'analysts_agree', analyst_b_verdict = ?
+               WHERE id = ? AND status IN ('pending', 'awaiting_b')
+                 AND human_verdict IS NULL""",
+            (_settled_reason(b_verdict, b_outcome), datetime.now(tz=timezone.utc).isoformat(),
+             _json_or_null(b_verdict), review_id),
+        )
+        conn.commit()
+        return cursor.rowcount == 1
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error settling Analyst rejection id=%d: %s", review_id, exc)
+        return False
+
+
+def mark_rejection_disagreement(review_id: int, a_verdict: Optional[dict],
+                                b_verdict: dict) -> bool:
+    """Put an Analyst rejection in /review with B's opposite verdict."""
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            """UPDATE review_queue SET status = 'pending', analyst_b_verdict = ?,
+                   sentinel_concern = ?
+               WHERE id = ? AND status IN ('pending', 'awaiting_b')
+                 AND human_verdict IS NULL""",
+            (_json_or_null(b_verdict), _disagreement_concern(a_verdict, b_verdict)[:500],
+             review_id),
+        )
+        conn.commit()
+        return cursor.rowcount == 1
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error marking disagreement on id=%d: %s", review_id, exc)
+        return False
+
+
+def show_undecided_rejection(review_id: int, why: str) -> bool:
+    """Analyst B cannot be asked (no article text) or kept failing: nothing
+    decided the rejection, so Cyril sees it."""
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            """UPDATE review_queue SET status = 'pending',
+                   sentinel_concern = substr(sentinel_concern || ' | ' || ?, 1, 500)
+               WHERE id = ? AND status = 'awaiting_b' AND human_verdict IS NULL""",
+            (why, review_id),
+        )
+        conn.commit()
+        return cursor.rowcount == 1
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error showing undecided rejection id=%d: %s", review_id, exc)
+        return False
+
+
+def note_b_retry(review_id: int) -> int:
+    """Count one more silent Analyst B retry; returns the new count."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            "UPDATE review_queue SET b_retry_count = COALESCE(b_retry_count, 0) + 1, "
+            "b_retry_at = ? WHERE id = ?",
+            (datetime.now(tz=timezone.utc).isoformat(), review_id),
+        )
+        conn.commit()
+        row = conn.execute("SELECT b_retry_count FROM review_queue WHERE id = ?",
+                           (review_id,)).fetchone()
+        return int(row[0] or 0) if row else 0
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error counting B retry on id=%d: %s", review_id, exc)
+        return 0
+
+
+def has_article_text(link: str) -> bool:
+    """Whether the firehose kept the text Analyst B needs for this URL."""
+    try:
+        row = _get_conn().execute(
+            "SELECT 1 FROM raw_articles WHERE url = ? AND COALESCE(description, '') != ''",
+            (link,),
+        ).fetchone()
+        return row is not None
+    except Exception:
+        return False
+
+
+def route_analyst_rejection(review_id: int, a_verdict: dict, b_verdict: Optional[dict],
+                            b_outcome: Optional[str], link: str = "") -> str:
+    """Route a parked Analyst A rejection once Analyst B has read the article.
+
+    Only a disagreement reaches Cyril: B scoring BURN or MINT means the
+    pipeline could not decide. B rejecting it too, or finding it NEUTRAL, is a
+    decision: settled without review (still overrulable). B giving no usable
+    answer decides nothing: the row stays hidden in 'awaiting_b' for
+    settle_analyst_rejections.py, or goes to Cyril when B can never read it
+    (no article text kept). Measured on 2026-10-16 over 40 rejections: B
+    agreed for 19, scored BURN or MINT for 20, failed for 1.
+    """
+    decision = b_decision(b_verdict)
+    if decision in ("BURN", "MINT"):
+        mark_rejection_disagreement(review_id, a_verdict, b_verdict)
+        return "review"
+    if decision == "NEUTRAL" or b_outcome == "rejected":
+        settle_analyst_rejection(review_id, b_verdict, b_outcome)
+        return "settled"
+    if link and not has_article_text(link):
+        show_undecided_rejection(review_id, "Analyst B could not read it (no article text)")
+        return "review"
+    return "awaiting_b"
+
+
+def record_analyst_rejection(article: dict, a_verdict: dict, b_verdict: Optional[dict],
+                             b_outcome: Optional[str] = None) -> Optional[int]:
+    """park_analyst_rejection + route_analyst_rejection in one call."""
+    review_id = park_analyst_rejection(article, a_verdict)
+    if review_id is not None:
+        route_analyst_rejection(review_id, a_verdict, b_verdict, b_outcome,
+                                article.get("link", ""))
+    return review_id
+
+
+OVERRULABLE_REJECTIONS = ("auto_confirmed", "analysts_agree")
+
+
 def get_auto_confirmed_rejection(review_id: int) -> Optional[dict]:
-    """An Analyst rejection confirmed by rejection_learning.py, or None."""
+    """An Analyst rejection closed without Cyril (learning, or both analysts
+    agreeing), which he can still overrule; None otherwise."""
     try:
         row = _get_conn().execute(
             """SELECT * FROM review_queue WHERE id = ? AND status = 'rejected'
-               AND rejection_verdict = 'auto_confirmed'""",
+               AND rejection_verdict IN ('auto_confirmed', 'analysts_agree')""",
             (review_id,),
         ).fetchone()
         return dict(row) if row else None
