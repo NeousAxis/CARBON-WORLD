@@ -5,6 +5,7 @@ for the frontend to consume at build time.
 
 import json
 import logging
+import os
 import re
 import sqlite3
 from collections import defaultdict
@@ -24,6 +25,31 @@ EXPORT_PATH = Path(config.DB_PATH).parent / "export.json"
 WEB_EXPORT_PATH = PROJECT_ROOT / "web" / "data" / "export.json"
 REVIEW_EXPORT_PATH = Path(config.DB_PATH).parent / "review_queue.json"
 WEB_REVIEW_PATH = PROJECT_ROOT / "web" / "data" / "review_queue.json"
+
+
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Write through a temp file and os.replace: a reader (the live Next.js
+    server, or a build prerendering 8000+ event pages from web/data) sees the
+    old file or the new one, never a half-written one. The plain write and
+    copy made the builds of 2026-10-13 20:00 and 2026-10-16 16:13 fail with
+    "Unterminated string in JSON" when the :17 drain exported mid-build."""
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        tmp.write_text(text, encoding="utf-8")
+        os.replace(tmp, path)
+    finally:
+        if tmp.exists():
+            tmp.unlink()
+
+
+def _atomic_copy(src: Path, dst: Path) -> None:
+    tmp = dst.with_name(f".{dst.name}.{os.getpid()}.tmp")
+    try:
+        shutil.copy2(src, tmp)
+        os.replace(tmp, dst)
+    finally:
+        if tmp.exists():
+            tmp.unlink()
 
 
 def export_events() -> Path:
@@ -65,7 +91,7 @@ def export_events() -> Path:
 
     # Copy to web/data/ for Next.js builds
     if WEB_EXPORT_PATH.parent.exists():
-        shutil.copy2(EXPORT_PATH, WEB_EXPORT_PATH)
+        _atomic_copy(EXPORT_PATH, WEB_EXPORT_PATH)
         logger.info("Copied export to %s", WEB_EXPORT_PATH)
 
     logger.info("Exported %d events to %s", len(events), EXPORT_PATH)
@@ -841,12 +867,10 @@ def _export_review_queue() -> None:
     }
 
     REVIEW_EXPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REVIEW_EXPORT_PATH.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    _atomic_write_text(REVIEW_EXPORT_PATH, json.dumps(payload, indent=2, ensure_ascii=False))
 
     if WEB_REVIEW_PATH.parent.exists():
-        shutil.copy2(REVIEW_EXPORT_PATH, WEB_REVIEW_PATH)
+        _atomic_copy(REVIEW_EXPORT_PATH, WEB_REVIEW_PATH)
 
     logger.info("Exported %d pending reviews", len(reviews))
 
@@ -880,7 +904,7 @@ def _write_json(events: list[dict], path: Path, aggregates: dict | None = None) 
     }
 
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, default=_json_default), encoding="utf-8")
+    _atomic_write_text(path, json.dumps(payload, indent=2, ensure_ascii=False, default=_json_default))
 
 
 if __name__ == "__main__":
