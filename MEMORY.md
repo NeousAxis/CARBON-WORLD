@@ -4,6 +4,16 @@
 
 ---
 
+## 🧭 2026-10-16 : /review ne reçoit que ce que le système n'arrive pas à trancher
+
+Cyril : « Explique-moi comme je suis passé de 5 à 114 reviews ! » puis « Nous avons dit qu'il ne devait me demander en review que les articles que le système n'arrivait pas à trancher pour apprendre de mes choix ! ». Il a raison : depuis le 13.10 (`d90b2b61`), TOUS les rejets de l'analyste A partaient chez lui (16, 36, 47, 31 par jour, 130 en attente), et l'apprentissage par catégorie (`9eb5d8ca`) attendait ses décisions pour agir, donc rien ne baissait.
+
+**Règle (`560df592`)** : un rejet de A n'arrive chez Cyril que si l'analyste B note l'article BURN ou MINT (désaccord). B le rejette aussi ou le juge NEUTRAL : classé sans lui (`rejection_verdict = analysts_agree`, annulable avec `resolve_review.py <id> reverse`, listé dans le digest). B ne répond pas : rejet caché en `awaiting_b`, B réinterrogé chaque heure par `settle_analyst_rejections.py` (verrou du pipeline, Mistral seul), montré à Cyril si B ne peut pas le lire (pas de texte) ou se tait 24 fois. Cas miroir (A note, B rejette) : signalé pour revue après la sentinelle, l'auto-résolution tranche d'abord. L'apprentissage ne s'entraîne et n'agit que sur les désaccords (`rejection_disagreement`). /review : « CONFIRM REJECT » au lieu d'« APPROVE » sur ces cartes. Mesure avant : sur 40 rejets, B d'accord 19, désaccord 20, panne 1. Deux relectures adverses (11 puis 9 constats, tous traités), 339 tests.
+
+**Stock traité le 16.10 (après sauvegarde `data/carbon.db.bak.20261016_before_settle`)** : 127 rejets relus par B, 63 classés sans Cyril, 64 désaccords gardés ; 6 sans texte d'article restent visibles. File : 130 → 70. Premier run en direct (17:00) : 1 rejet classé automatiquement.
+
+**Cause des builds web ratés (`d5eb0053`)** : la génération statique lit `web/data/export.json` (17 Mo) pour chaque page ; l'exporter l'écrivait sans précaution (`write_text` + `shutil.copy2`), et l'export du vidage de :17 en plein build donnait un fichier à moitié écrit (« Unterminated string in JSON », builds du 13.10 20:00 et du 16.10 16:13). Exports désormais atomiques (fichier temporaire + `os.replace`). Reconstruit le 16.10 de 17:07 à 17:53 sous verrou, malgré le vidage de 17:17 : succès, site redémarré.
+
 ## 🔒 2026-10-13 : /review bloquée par un verrou SQLite, et rejets de l'analyste enfin visibles
 
 Cyril : « Je ne peux plus faire les review, elle reste bloquée malgré mes décisions ! »
