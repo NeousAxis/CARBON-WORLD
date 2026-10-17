@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-17T15:07:52.682419+00:00",
-  "total_events": 8567,
+  "generated_at": "2026-10-17T16:06:12.729710+00:00",
+  "total_events": 8568,
   "total_burned": 8034998705,
-  "total_minted": 10962353844,
-  "pending_reviews": 82,
+  "total_minted": 10962503844,
+  "pending_reviews": 83,
   "events": [
+    {
+      "id": 8568,
+      "event_title": "Switzerland adjusts list of Nicolas Maduro’s associates with frozen assets",
+      "event_url": "https://www.letemps.ch/articles/la-suisse-ajuste-la-liste-des-proches-de-nicolas-maduro-aux-avoirs-bloques",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.81,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Swiss asset freezes target corrupt Maduro allies, curbing illicit finance and protecting human‑rights norms. | The action reflects a mixed ethical stance: while the removal of two individuals may signal a nuanced approach to sanctions, the addition of six others—particularly figures linked to corruption and human rights abuses—undermines accountability. The lack of transpare",
+      "tx_hash": "a72XMGwd5bf7QESnTaDy3LnVCsiLuNUCHeVaciStcXFc7yBkaxNRn6L1nL76dBobF1RBYhKuDqv2VnRBb16yKTA",
+      "created_at": "2026-10-17T16:06:06.819650+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Switzerland removes two individuals (wife of Diosdado Cabello and deputy Jorge Arreaza) from its sanctions list, potentially signaling a reduction in targeted restrictions aligned with international coordination or improved human rights conditions.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Switzerland adds six new associates of Nicolás Maduro to its sanctions list, including Alex Saab and Alvaro Pulido Vargas, reinforcing asset freezes that may enable impunity for corruption and human rights violations linked to the Venezuelan regime.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 17\", \"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The adjustment lacks transparency, as the Federal Department of Foreign Affairs declined to comment on individual cases, raising concerns about arbitrary enforcement and due process.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 10\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8567,
       "event_title": "Rule Lets Fossil Fuel Companies 'Unintentionally' Kill Polar Bears and Walruses",
@@ -197874,8 +197897,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.912,
-        "events": 57
+        "mint_ratio": 0.914,
+        "events": 58
       },
       {
         "region": "Latin America",
@@ -197926,7 +197949,7 @@
       },
       {
         "date": "2026-10-17",
-        "net_minted": 19938410,
+        "net_minted": 20088410,
         "net_burned": 1050000
       }
     ],
@@ -197944,7 +197967,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 200,
+        "negative": 201,
         "event_ids_positive": [
           8559,
           8556,
@@ -197973,6 +197996,7 @@
           8337
         ],
         "event_ids_negative": [
+          8568,
           8567,
           8566,
           8565,
@@ -198177,7 +198201,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 180,
+        "negative": 181,
         "event_ids_positive": [
           8559,
           8556,
@@ -198198,6 +198222,7 @@
           8337
         ],
         "event_ids_negative": [
+          8568,
           8567,
           8566,
           8565,
@@ -198692,11 +198717,11 @@
       "niche_pct": 74.7,
       "mainstream_pct": 25.3,
       "total_sources_used": 83,
-      "articles_processed": 232
+      "articles_processed": 233
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 232,
+      "total_events": 233,
       "pct": 3.0
     },
     "active_partners_7d": [],
@@ -198871,10 +198896,11 @@
       },
       {
         "name": "Finance",
-        "count": 18,
+        "count": 19,
         "burn_count": 2,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          8568,
           8557,
           8544,
           8539,
@@ -199022,14 +199048,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 207,
+      "total_mint": 208,
       "direct_action": {
-        "count": 187,
-        "pct": 90.3
+        "count": 188,
+        "pct": 90.4
       },
       "editorial_alarm": {
         "count": 13,
-        "pct": 6.3
+        "pct": 6.2
       },
       "untyped": {
         "count": 7,
@@ -199037,9 +199063,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6405,
+      "total_mint": 6406,
       "direct_action": {
-        "count": 5885,
+        "count": 5886,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199053,8 +199079,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 70,
-      "institutional": 162,
-      "citizen_ratio": 0.302,
+      "institutional": 163,
+      "citizen_ratio": 0.3,
       "daily": [
         {
           "date": "2026-10-11",
@@ -199089,7 +199115,7 @@
         {
           "date": "2026-10-17",
           "citizen": 5,
-          "institutional": 11
+          "institutional": 12
         }
       ],
       "event_ids_citizen": [
@@ -199165,6 +199191,7 @@
         8339
       ],
       "event_ids_institutional": [
+        8568,
         8565,
         8564,
         8562,
