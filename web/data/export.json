@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-17T18:06:58.630003+00:00",
-  "total_events": 8570,
+  "generated_at": "2026-10-17T19:05:04.616766+00:00",
+  "total_events": 8571,
   "total_burned": 8035498705,
-  "total_minted": 10962803844,
+  "total_minted": 10963036344,
   "pending_reviews": 84,
   "events": [
+    {
+      "id": 8571,
+      "event_title": "Brazil Party Asks Court to Halt Lula Shows",
+      "event_url": "https://www.riotimesonline.com/brazil-novo-party-court-halt-pro-lula-concerts-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 232500,
+      "final_score": -0.9,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Request to halt concerts suppresses political expression, outweighing modest rule‑of‑law benefit. | The Novo party's legal move upholds electoral rules but simultaneously curtails political expression and assembly. The modest benefit to rule of law is outweighed by the rights violations, resulting in a net negative ethical assessment.",
+      "tx_hash": "5kiqzrfr5dVmiNEtX3eDccmkkQdtJECrMEL55ucVN1bgugRheeFW5qTmLv3RrpUeYyxXxyP1eGCPXY4Hbixj99id",
+      "created_at": "2026-10-17T19:04:58.376865+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Enforcement of electoral regulations by seeking to stop unauthorized campaign concerts\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Attempt to suppress political speech and assembly by halting pro‑Lula concerts\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8570,
       "event_title": "How Taiwan’s new AI satellite system aims to speed up early warning against PLA moves",
@@ -197867,8 +197890,8 @@
       },
       {
         "country": "Brazil",
-        "count": 11,
-        "total_amount": 3987100
+        "count": 12,
+        "total_amount": 4219600
       },
       {
         "country": "Indonesia",
@@ -197943,8 +197966,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.947,
-        "events": 19
+        "mint_ratio": 0.95,
+        "events": 20
       },
       {
         "region": "Europe",
@@ -197995,7 +198018,7 @@
       },
       {
         "date": "2026-10-17",
-        "net_minted": 20388410,
+        "net_minted": 20620910,
         "net_burned": 1550000
       }
     ],
@@ -198013,7 +198036,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 201,
+        "negative": 202,
         "event_ids_positive": [
           8569,
           8559,
@@ -198042,6 +198065,7 @@
           8339
         ],
         "event_ids_negative": [
+          8571,
           8570,
           8568,
           8567,
@@ -198247,7 +198271,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 181,
+        "negative": 182,
         "event_ids_positive": [
           8559,
           8556,
@@ -198267,6 +198291,7 @@
           8339
         ],
         "event_ids_negative": [
+          8571,
           8570,
           8568,
           8567,
@@ -198760,14 +198785,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 75.6,
-      "mainstream_pct": 24.4,
+      "niche_pct": 74.4,
+      "mainstream_pct": 25.6,
       "total_sources_used": 82,
-      "articles_processed": 233
+      "articles_processed": 234
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 233,
+      "total_events": 234,
       "pct": 3.0
     },
     "active_partners_7d": [],
@@ -199094,9 +199119,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 208,
+      "total_mint": 209,
       "direct_action": {
-        "count": 188,
+        "count": 189,
         "pct": 90.4
       },
       "editorial_alarm": {
@@ -199105,13 +199130,13 @@
       },
       "untyped": {
         "count": 7,
-        "pct": 3.4
+        "pct": 3.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6407,
+      "total_mint": 6408,
       "direct_action": {
-        "count": 5887,
+        "count": 5888,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199124,9 +199149,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 70,
+      "citizen": 71,
       "institutional": 163,
-      "citizen_ratio": 0.3,
+      "citizen_ratio": 0.303,
       "daily": [
         {
           "date": "2026-10-11",
@@ -199160,11 +199185,12 @@
         },
         {
           "date": "2026-10-17",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 14
         }
       ],
       "event_ids_citizen": [
+        8571,
         8567,
         8566,
         8563,
