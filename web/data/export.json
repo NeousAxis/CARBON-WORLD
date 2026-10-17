@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-17T21:06:02.025341+00:00",
-  "total_events": 8571,
+  "generated_at": "2026-10-17T22:06:34.597114+00:00",
+  "total_events": 8572,
   "total_burned": 8035498705,
-  "total_minted": 10963036344,
-  "pending_reviews": 85,
+  "total_minted": 10963540344,
+  "pending_reviews": 86,
   "events": [
+    {
+      "id": 8572,
+      "event_title": "Prime Minister passed over easier election dates, advice reveals",
+      "event_url": "https://www.rnz.co.nz/news/political/1974290/prime-minister-passed-over-easier-election-dates-advice-reveals",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 504000,
+      "final_score": -2.4,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Choosing an election date that inconveniences holiday voters weakens voting accessibility, undermining democratic rights. | While the date avoids holiday disruption for some workers, the overall effect is a reduction in democratic participation and a breach of the right to vote, leading to a net negative ethical outcome.",
+      "tx_hash": "3gDQFHYArDo1BUjCjPbSiX7rXeoNFAY6ZbZ2no7ik5y7kcntrj4DZvFteRKXfA33RokZoeNUCu2v85H2XvkCrBUE",
+      "created_at": "2026-10-17T22:06:28.846719+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Scheduling the election away from Labour Day reduces disruption for workers and businesses, supporting economic stability and decent work.\", \"affected_sdgs\": [8], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Choosing a less convenient election date limits voter accessibility, potentially lowering turnout and disenfranchising citizens.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8571,
       "event_title": "Brazil Party Asks Court to Halt Lula Shows",
@@ -197949,8 +197972,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.1,
-        "events": 10
+        "burn_ratio": 0.091,
+        "events": 11
       },
       {
         "region": "Europe",
@@ -197976,8 +197999,8 @@
       },
       {
         "region": "Oceania",
-        "mint_ratio": 0.9,
-        "events": 10
+        "mint_ratio": 0.909,
+        "events": 11
       },
       {
         "region": "North America",
@@ -198018,7 +198041,7 @@
       },
       {
         "date": "2026-10-17",
-        "net_minted": 20620910,
+        "net_minted": 21124910,
         "net_burned": 1550000
       }
     ],
@@ -198036,7 +198059,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 201,
+        "negative": 202,
         "event_ids_positive": [
           8569,
           8559,
@@ -198065,6 +198088,7 @@
           8339
         ],
         "event_ids_negative": [
+          8572,
           8571,
           8570,
           8568,
@@ -198270,7 +198294,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 181,
+        "negative": 182,
         "event_ids_positive": [
           8559,
           8556,
@@ -198290,6 +198314,7 @@
           8339
         ],
         "event_ids_negative": [
+          8572,
           8571,
           8570,
           8568,
@@ -198785,11 +198810,11 @@
       "niche_pct": 74.4,
       "mainstream_pct": 25.6,
       "total_sources_used": 82,
-      "articles_processed": 233
+      "articles_processed": 234
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 233,
+      "total_events": 234,
       "pct": 3.0
     },
     "active_partners_7d": [],
@@ -199116,9 +199141,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 208,
+      "total_mint": 209,
       "direct_action": {
-        "count": 188,
+        "count": 189,
         "pct": 90.4
       },
       "editorial_alarm": {
@@ -199127,13 +199152,13 @@
       },
       "untyped": {
         "count": 7,
-        "pct": 3.4
+        "pct": 3.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6408,
+      "total_mint": 6409,
       "direct_action": {
-        "count": 5888,
+        "count": 5889,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199147,8 +199172,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 71,
-      "institutional": 162,
-      "citizen_ratio": 0.305,
+      "institutional": 163,
+      "citizen_ratio": 0.303,
       "daily": [
         {
           "date": "2026-10-11",
@@ -199183,7 +199208,7 @@
         {
           "date": "2026-10-17",
           "citizen": 6,
-          "institutional": 14
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
@@ -199260,6 +199285,7 @@
         8339
       ],
       "event_ids_institutional": [
+        8572,
         8570,
         8569,
         8568,
