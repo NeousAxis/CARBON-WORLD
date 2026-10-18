@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-18T17:06:23.622152+00:00",
-  "total_events": 8585,
+  "generated_at": "2026-10-18T18:06:24.304519+00:00",
+  "total_events": 8586,
   "total_burned": 8037023705,
-  "total_minted": 10973089344,
+  "total_minted": 10973239344,
   "pending_reviews": 95,
   "events": [
+    {
+      "id": 8586,
+      "event_title": "Sonora Cattle Exports Resume on 20 October",
+      "event_url": "https://www.riotimesonline.com/sonora-cattle-exports-resume-stomatitis-20-october-2026/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.17,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables industrial livestock trade with systemic environmental/animal welfare harm. | The resumption of cattle exports supports economic livelihoods (SDG 8) and trade partnerships (SDG 17), but it perpetuates industrial livestock practices with significant environmental costs (SDG 13/15) and risks to animal welfare. The net ethical balance tilts negative",
+      "tx_hash": "3SYybnLvKq7N7oMbtMEhge8MJpeasxdnJk9eSkiwjWdFeKNr39u6Pc6zxoj1U8kfnttnUL5wqEVfY8tSnX4o97Yp",
+      "created_at": "2026-10-18T18:06:19.243104+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Mexico",
+      "region": "North America",
+      "administration": "Mexico-Morena",
+      "positive_aspects_json": "[{\"description\": \"Resumption of cattle exports from Sonora to the US after ruling out foot-and-mouth disease, restoring trade and economic activity for regional livestock producers.\", \"affected_sdgs\": [8, 9, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential risk of disease transmission if biosecurity measures are insufficient, threatening animal welfare and agricultural sustainability.\", \"affected_sdgs\": [2, 15], \"violated_rights\": [\"Animal\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\"]}, {\"description\": \"Reinforces industrial livestock trade, contributing to environmental degradation (deforestation, methane emissions) and climate change.\", \"affected_sdgs\": [12, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8585,
       "event_title": "Egypt says ready to give Saudi Arabia necessary support amid Houthi conflict",
@@ -198266,8 +198289,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.109,
-        "events": 46
+        "burn_ratio": 0.106,
+        "events": 47
       },
       {
         "region": "Oceania",
@@ -198303,8 +198326,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.891,
-        "events": 46
+        "mint_ratio": 0.894,
+        "events": 47
       }
     ],
     "supply_trend_7d": [
@@ -198340,7 +198363,7 @@
       },
       {
         "date": "2026-10-18",
-        "net_minted": 9233000,
+        "net_minted": 9383000,
         "net_burned": 825000
       }
     ],
@@ -198357,7 +198380,7 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 24,
+        "positive": 23,
         "negative": 195,
         "event_ids_positive": [
           8584,
@@ -198382,10 +198405,10 @@
           8417,
           8409,
           8406,
-          8388,
-          8360
+          8388
         ],
         "event_ids_negative": [
+          8586,
           8585,
           8583,
           8582,
@@ -198579,13 +198602,12 @@
           8365,
           8364,
           8363,
-          8362,
-          8361
+          8362
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 176,
+        "negative": 175,
         "event_ids_positive": [
           8584,
           8578,
@@ -198780,8 +198802,7 @@
           8365,
           8364,
           8363,
-          8362,
-          8361
+          8362
         ]
       },
       "ILO": {
@@ -198880,7 +198901,7 @@
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 60,
+        "negative": 59,
         "event_ids_positive": [
           8584,
           8544,
@@ -198949,13 +198970,12 @@
           8385,
           8376,
           8365,
-          8362,
-          8361
+          8362
         ]
       },
       "Animal": {
-        "positive": 11,
-        "negative": 23,
+        "positive": 10,
+        "negative": 24,
         "event_ids_positive": [
           8578,
           8569,
@@ -198966,10 +198986,10 @@
           8510,
           8505,
           8461,
-          8409,
-          8360
+          8409
         ],
         "event_ids_negative": [
+          8586,
           8582,
           8579,
           8567,
@@ -198996,8 +199016,8 @@
         ]
       },
       "PB": {
-        "positive": 14,
-        "negative": 67,
+        "positive": 13,
+        "negative": 68,
         "event_ids_positive": [
           8578,
           8569,
@@ -199011,10 +199031,10 @@
           8461,
           8445,
           8417,
-          8409,
-          8360
+          8409
         ],
         "event_ids_negative": [
+          8586,
           8581,
           8579,
           8575,
@@ -199086,14 +199106,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 70.1,
-      "mainstream_pct": 29.9,
-      "total_sources_used": 77,
-      "articles_processed": 226
+      "niche_pct": 69.7,
+      "mainstream_pct": 30.3,
+      "total_sources_used": 76,
+      "articles_processed": 225
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 226,
+      "total_events": 225,
       "pct": 3.1
     },
     "active_partners_7d": [],
@@ -199136,28 +199156,6 @@
         ]
       },
       {
-        "name": "IMF",
-        "count": 3,
-        "burn_count": 2,
-        "mint_count": 1,
-        "event_ids": [
-          8584,
-          8544,
-          8361
-        ]
-      },
-      {
-        "name": "World Bank",
-        "count": 3,
-        "burn_count": 2,
-        "mint_count": 1,
-        "event_ids": [
-          8584,
-          8544,
-          8361
-        ]
-      },
-      {
         "name": "IPCC",
         "count": 3,
         "burn_count": 0,
@@ -199177,6 +199175,26 @@
           8562,
           8559,
           8391
+        ]
+      },
+      {
+        "name": "IMF",
+        "count": 2,
+        "burn_count": 2,
+        "mint_count": 0,
+        "event_ids": [
+          8584,
+          8544
+        ]
+      },
+      {
+        "name": "World Bank",
+        "count": 2,
+        "burn_count": 2,
+        "mint_count": 0,
+        "event_ids": [
+          8584,
+          8544
         ]
       },
       {
@@ -199266,9 +199284,9 @@
       },
       {
         "name": "Finance",
-        "count": 20,
+        "count": 19,
         "burn_count": 3,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           8584,
           8568,
@@ -199288,8 +199306,7 @@
           8403,
           8381,
           8378,
-          8363,
-          8361
+          8363
         ]
       },
       {
@@ -199371,10 +199388,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 6,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          8586,
           8582,
           8566,
           8521,
@@ -199385,14 +199403,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 24,
+      "total_burn": 23,
       "direct_action": {
-        "count": 22,
-        "pct": 91.7
+        "count": 21,
+        "pct": 91.3
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 8.3
+        "pct": 8.7
       },
       "untyped": {
         "count": 0,
@@ -199430,9 +199448,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6419,
+      "total_mint": 6420,
       "direct_action": {
-        "count": 5899,
+        "count": 5900,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199445,9 +199463,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 66,
-      "institutional": 160,
-      "citizen_ratio": 0.292,
+      "citizen": 64,
+      "institutional": 161,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-10-12",
@@ -199482,7 +199500,7 @@
         {
           "date": "2026-10-18",
           "citizen": 3,
-          "institutional": 8
+          "institutional": 9
         }
       ],
       "event_ids_citizen": [
@@ -199549,11 +199567,10 @@
         8377,
         8376,
         8375,
-        8374,
-        8361,
-        8360
+        8374
       ],
       "event_ids_institutional": [
+        8586,
         8585,
         8583,
         8582,
