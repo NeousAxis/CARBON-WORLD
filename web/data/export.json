@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-18T19:06:45.518603+00:00",
-  "total_events": 8586,
+  "generated_at": "2026-10-18T20:06:47.098057+00:00",
+  "total_events": 8587,
   "total_burned": 8037023705,
-  "total_minted": 10973239344,
-  "pending_reviews": 96,
+  "total_minted": 10973739344,
+  "pending_reviews": 97,
   "events": [
+    {
+      "id": 8587,
+      "event_title": "US resumes intelligence-sharing with Ukraine after pause, Zelenskiy says",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-10-18-us-resumes-intelligence-sharing-with-ukraine-after-pause-zelenskiy-says/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.41,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] US intelligence sharing protects Ukraine's right to self‑defence and civilian safety, a protective institutional action. | The resumption of intelligence-sharing directly supports Ukraine's defense, aligning with SDG 16 (Peace and Justice) by enabling resistance to aggression. However, it also perpetuates conflict, violating core rights (UDHR Articles 3, 25) and risking casc",
+      "tx_hash": "5csy9q6qLPAopoGLEExwyuoRu3HNuEeBrCe2YUCuXuHRK9smLFcCTGtuLq3z6G22WaAjHTxM59i2LzDfwER6fLyh",
+      "created_at": "2026-10-18T20:06:41.656971+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Resumption of intelligence-sharing supports Ukraine's defense against missile strikes, potentially reducing civilian casualties and infrastructure damage.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Intelligence-sharing prolongs armed conflict, risking further civilian harm, displacement, and environmental degradation in Ukraine.\", \"affected_sdgs\": [16, 3, 11, 15], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Action reinforces militarized responses to geopolitical conflicts, potentially undermining diplomatic efforts for peaceful resolution (SDG 16).\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8586,
       "event_title": "Sonora Cattle Exports Resume on 20 October",
@@ -198239,14 +198262,14 @@
         "total_amount": 4907200
       },
       {
-        "country": "Switzerland",
-        "count": 8,
-        "total_amount": 2796000
-      },
-      {
         "country": "Indonesia",
         "count": 8,
         "total_amount": 1657000
+      },
+      {
+        "country": "South Africa",
+        "count": 8,
+        "total_amount": 1861200
       }
     ],
     "top_countries_burn": [
@@ -198293,14 +198316,14 @@
         "events": 47
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.091,
+        "events": 55
+      },
+      {
         "region": "Oceania",
         "burn_ratio": 0.091,
         "events": 11
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.089,
-        "events": 56
       }
     ],
     "top_regions_destructive": [
@@ -198316,8 +198339,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.911,
-        "events": 56
+        "mint_ratio": 0.909,
+        "events": 55
       },
       {
         "region": "Oceania",
@@ -198363,7 +198386,7 @@
       },
       {
         "date": "2026-10-18",
-        "net_minted": 9383000,
+        "net_minted": 9883000,
         "net_burned": 825000
       }
     ],
@@ -198381,7 +198404,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 194,
+        "negative": 191,
         "event_ids_positive": [
           8584,
           8578,
@@ -198408,6 +198431,7 @@
           8388
         ],
         "event_ids_negative": [
+          8587,
           8586,
           8585,
           8583,
@@ -198597,16 +198621,12 @@
           8375,
           8374,
           8373,
-          8372,
-          8366,
-          8365,
-          8364,
-          8363
+          8372
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 174,
+        "negative": 171,
         "event_ids_positive": [
           8584,
           8578,
@@ -198627,6 +198647,7 @@
           8388
         ],
         "event_ids_negative": [
+          8587,
           8585,
           8583,
           8581,
@@ -198796,16 +198817,12 @@
           8376,
           8375,
           8374,
-          8373,
-          8366,
-          8365,
-          8364,
-          8363
+          8373
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 23,
+        "negative": 22,
         "event_ids_positive": [
           8584,
           8559,
@@ -198833,13 +198850,12 @@
           8405,
           8402,
           8399,
-          8389,
-          8365
+          8389
         ]
       },
       "CRC": {
         "positive": 3,
-        "negative": 48,
+        "negative": 47,
         "event_ids_positive": [
           8584,
           8559,
@@ -198892,13 +198908,12 @@
           8391,
           8389,
           8385,
-          8375,
-          8365
+          8375
         ]
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 58,
+        "negative": 57,
         "event_ids_positive": [
           8584,
           8544,
@@ -198965,13 +198980,12 @@
           8391,
           8389,
           8385,
-          8376,
-          8365
+          8376
         ]
       },
       "Animal": {
         "positive": 10,
-        "negative": 24,
+        "negative": 23,
         "event_ids_positive": [
           8578,
           8569,
@@ -199007,13 +199021,12 @@
           8396,
           8382,
           8380,
-          8372,
-          8363
+          8372
         ]
       },
       "PB": {
         "positive": 13,
-        "negative": 67,
+        "negative": 65,
         "event_ids_positive": [
           8578,
           8569,
@@ -199094,30 +199107,28 @@
           8377,
           8376,
           8373,
-          8372,
-          8366,
-          8364
+          8372
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.1,
-      "mainstream_pct": 28.9,
-      "total_sources_used": 76,
-      "articles_processed": 224
+      "niche_pct": 69.9,
+      "mainstream_pct": 30.1,
+      "total_sources_used": 73,
+      "articles_processed": 216
     },
     "cache_hit_rate_7d": {
-      "hits": 7,
-      "total_events": 224,
-      "pct": 3.1
+      "hits": 2,
+      "total_events": 216,
+      "pct": 0.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 15,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 15,
+        "mint_count": 7,
         "event_ids": [
           8538,
           8526,
@@ -199125,15 +199136,7 @@
           8411,
           8400,
           8399,
-          8378,
-          8371,
-          8370,
-          8369,
-          8368,
-          8367,
-          8366,
-          8365,
-          8364
+          8378
         ]
       },
       {
@@ -199277,9 +199280,9 @@
       },
       {
         "name": "Finance",
-        "count": 19,
+        "count": 18,
         "burn_count": 3,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           8584,
           8568,
@@ -199298,8 +199301,7 @@
           8405,
           8403,
           8381,
-          8378,
-          8363
+          8378
         ]
       },
       {
@@ -199426,24 +199428,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 201,
+      "total_mint": 193,
       "direct_action": {
-        "count": 182,
-        "pct": 90.5
+        "count": 179,
+        "pct": 92.7
       },
       "editorial_alarm": {
         "count": 12,
-        "pct": 6.0
+        "pct": 6.2
       },
       "untyped": {
-        "count": 7,
-        "pct": 3.5
+        "count": 2,
+        "pct": 1.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6420,
+      "total_mint": 6421,
       "direct_action": {
-        "count": 5900,
+        "count": 5901,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199457,8 +199459,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 64,
-      "institutional": 160,
-      "citizen_ratio": 0.286,
+      "institutional": 152,
+      "citizen_ratio": 0.296,
       "daily": [
         {
           "date": "2026-10-12",
@@ -199493,7 +199495,7 @@
         {
           "date": "2026-10-18",
           "citizen": 3,
-          "institutional": 9
+          "institutional": 10
         }
       ],
       "event_ids_citizen": [
@@ -199563,6 +199565,7 @@
         8374
       ],
       "event_ids_institutional": [
+        8587,
         8586,
         8585,
         8583,
@@ -199713,16 +199716,7 @@
         8379,
         8378,
         8373,
-        8372,
-        8371,
-        8370,
-        8369,
-        8368,
-        8367,
-        8366,
-        8365,
-        8364,
-        8363
+        8372
       ]
     }
   }
