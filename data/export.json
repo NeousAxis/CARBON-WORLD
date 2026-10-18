@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-18T02:06:36.657466+00:00",
-  "total_events": 8579,
+  "generated_at": "2026-10-18T03:06:38.775059+00:00",
+  "total_events": 8580,
   "total_burned": 8036573705,
-  "total_minted": 10971189944,
-  "pending_reviews": 88,
+  "total_minted": 10971589944,
+  "pending_reviews": 89,
   "events": [
+    {
+      "id": 8580,
+      "event_title": "Lebanon says military delegation will press for halt to Israeli attacks at US talks",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/lebanon-says-military-delegation-will-press-halt-israeli-attacks-us-talks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 400000,
+      "final_score": -2.12,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Non-binding diplomatic effort with high risk of failure and no enforcement mechanism enables continued harm. | The act of presenting demands at a formal diplomatic forum is a positive step toward peace (SDG 16, UDHR), but the lack of binding outcomes and potential for dismissal creates ethical ambiguity. The negative aspects reflect the risk of prolonged harm to civilians and e",
+      "tx_hash": "qhTCVcHEPRtcxoqpj7UGhfa7aNZMGmf4MGV9fKSepb8PMj9A2mAVqsaMj5KnvdtvZV54N3qZNYPNZWDWQ5hUN3a",
+      "created_at": "2026-10-18T03:06:33.213431+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Lebanese military delegation formally presents demands for halt to Israeli attacks in Lebanon at trilateral US-mediated talks, signaling institutional effort to de-escalate hostilities.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Talks remain non-binding and speculative; no concrete ceasefire or enforcement mechanism established, risking prolonged conflict and civilian harm.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Delegation's demands may be ignored or dismissed by Israel, enabling impunity for continued attacks and undermining diplomatic credibility.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 2\", \"UNDRIP\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 8579,
       "event_title": "Tracing the origins of long-tailed macaques for research purposes: are they truly from breeding facilities?",
@@ -198064,8 +198087,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 41,
-        "total_amount": 33791550
+        "count": 40,
+        "total_amount": 33250550
       },
       {
         "country": "France",
@@ -198123,18 +198146,18 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.125,
-        "events": 32
+        "burn_ratio": 0.129,
+        "events": 31
       },
       {
         "region": "North America",
-        "burn_ratio": 0.125,
-        "events": 48
+        "burn_ratio": 0.128,
+        "events": 47
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.085,
-        "events": 59
+        "burn_ratio": 0.086,
+        "events": 58
       },
       {
         "region": "Oceania",
@@ -198160,13 +198183,13 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.915,
-        "events": 59
+        "mint_ratio": 0.914,
+        "events": 58
       },
       {
-        "region": "Asia",
-        "mint_ratio": 0.875,
-        "events": 32
+        "region": "North America",
+        "mint_ratio": 0.872,
+        "events": 47
       }
     ],
     "supply_trend_7d": [
@@ -198202,7 +198225,7 @@
       },
       {
         "date": "2026-10-18",
-        "net_minted": 7333600,
+        "net_minted": 7733600,
         "net_burned": 375000
       }
     ],
@@ -198220,7 +198243,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 26,
-        "negative": 205,
+        "negative": 203,
         "event_ids_positive": [
           8578,
           8574,
@@ -198250,6 +198273,7 @@
           8347
         ],
         "event_ids_negative": [
+          8580,
           8579,
           8577,
           8576,
@@ -198451,15 +198475,12 @@
           8350,
           8348,
           8346,
-          8345,
-          8344,
-          8343,
-          8342
+          8345
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 184,
+        "negative": 182,
         "event_ids_positive": [
           8578,
           8574,
@@ -198480,6 +198501,7 @@
           8347
         ],
         "event_ids_negative": [
+          8580,
           8577,
           8576,
           8575,
@@ -198660,10 +198682,7 @@
           8353,
           8351,
           8346,
-          8345,
-          8344,
-          8343,
-          8342
+          8345
         ]
       },
       "ILO": {
@@ -198701,7 +198720,7 @@
       },
       "CRC": {
         "positive": 2,
-        "negative": 50,
+        "negative": 49,
         "event_ids_positive": [
           8559,
           8522
@@ -198755,13 +198774,12 @@
           8365,
           8362,
           8356,
-          8355,
-          8343
+          8355
         ]
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 59,
+        "negative": 60,
         "event_ids_positive": [
           8544,
           8522,
@@ -198772,6 +198790,7 @@
           8347
         ],
         "event_ids_negative": [
+          8580,
           8567,
           8566,
           8565,
@@ -198835,7 +198854,7 @@
       },
       "Animal": {
         "positive": 13,
-        "negative": 26,
+        "negative": 25,
         "event_ids_positive": [
           8578,
           8569,
@@ -198876,13 +198895,12 @@
           8363,
           8359,
           8354,
-          8353,
-          8342
+          8353
         ]
       },
       "PB": {
         "positive": 17,
-        "negative": 73,
+        "negative": 72,
         "event_ids_positive": [
           8578,
           8569,
@@ -198974,8 +198992,7 @@
           8353,
           8351,
           8350,
-          8348,
-          8342
+          8348
         ]
       }
     },
@@ -198983,12 +199000,12 @@
       "niche_pct": 70.4,
       "mainstream_pct": 29.6,
       "total_sources_used": 81,
-      "articles_processed": 238
+      "articles_processed": 236
     },
     "cache_hit_rate_7d": {
       "hits": 7,
-      "total_events": 238,
-      "pct": 2.9
+      "total_events": 236,
+      "pct": 3.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -199210,6 +199227,26 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 12,
+        "burn_count": 1,
+        "mint_count": 11,
+        "event_ids": [
+          8580,
+          8570,
+          8551,
+          8530,
+          8523,
+          8518,
+          8498,
+          8484,
+          8481,
+          8479,
+          8388,
+          8355
+        ]
+      },
+      {
         "name": "Tech",
         "count": 11,
         "burn_count": 1,
@@ -199226,25 +199263,6 @@
           8438,
           8412,
           8359
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 11,
-        "burn_count": 1,
-        "mint_count": 10,
-        "event_ids": [
-          8570,
-          8551,
-          8530,
-          8523,
-          8518,
-          8498,
-          8484,
-          8481,
-          8479,
-          8388,
-          8355
         ]
       },
       {
@@ -199267,9 +199285,9 @@
       },
       {
         "name": "Agriculture",
-        "count": 9,
+        "count": 8,
         "burn_count": 0,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           8566,
           8521,
@@ -199278,8 +199296,7 @@
           8397,
           8359,
           8354,
-          8348,
-          8342
+          8348
         ]
       }
     ],
@@ -199314,14 +199331,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 212,
+      "total_mint": 210,
       "direct_action": {
-        "count": 192,
-        "pct": 90.6
+        "count": 191,
+        "pct": 91.0
       },
       "editorial_alarm": {
-        "count": 13,
-        "pct": 6.1
+        "count": 12,
+        "pct": 5.7
       },
       "untyped": {
         "count": 7,
@@ -199329,9 +199346,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6414,
+      "total_mint": 6415,
       "direct_action": {
-        "count": 5894,
+        "count": 5895,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199344,9 +199361,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 69,
+      "citizen": 67,
       "institutional": 169,
-      "citizen_ratio": 0.29,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-10-12",
@@ -199381,7 +199398,7 @@
         {
           "date": "2026-10-18",
           "citizen": 1,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -199451,11 +199468,10 @@
         8360,
         8359,
         8354,
-        8352,
-        8343,
-        8342
+        8352
       ],
       "event_ids_institutional": [
+        8580,
         8579,
         8577,
         8576,
@@ -199623,8 +199639,7 @@
         8348,
         8347,
         8346,
-        8345,
-        8344
+        8345
       ]
     }
   }
