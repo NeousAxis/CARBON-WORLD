@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-19T04:06:44.557274+00:00",
-  "total_events": 8591,
+  "generated_at": "2026-10-19T05:07:15.760289+00:00",
+  "total_events": 8592,
   "total_burned": 8042448705,
-  "total_minted": 10974349344,
-  "pending_reviews": 99,
+  "total_minted": 10974650344,
+  "pending_reviews": 101,
   "events": [
+    {
+      "id": 8592,
+      "event_title": "STAT+: Cambridge scientist David Sabatini speaks out after courtroom victory: ‘The hardest years of my life’",
+      "event_url": "https://www.statnews.com/2026/10/18/david-sabatini-speaks-out-after-courtroom-win-metoo-trial/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 301000,
+      "final_score": -2.15,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The ruling harms victim protection and gender equality, outweighing procedural fairness benefits. | While the decision respects procedural fairness, it significantly undermines victim protection and gender equality, resulting in a net negative ethical impact.",
+      "tx_hash": "2wseog9ziYCaRrX1SqCWPN7rKoSBswsoSzCJiqh16LeYKsJ7gcuoW7NWMqtNQ1CnNBof6asAs8ZztJTqvFVQ61ZP",
+      "created_at": "2026-10-19T05:07:09.496690+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Court upheld the principle of due process, ensuring legal fairness for the accused.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ruling weakens protections for sexual assault victims, discouraging reporting and harming gender equality.\", \"affected_sdgs\": [5, 10, 16], \"violated_rights\": [\"UDHR Article 7\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8591,
       "event_title": "New rules for cumulative employment and retirement for French doctors: stricter limits before age 67",
@@ -198340,8 +198363,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 39,
-        "total_amount": 32790550
+        "count": 40,
+        "total_amount": 33091550
       },
       {
         "country": "France",
@@ -198399,8 +198422,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.128,
-        "events": 47
+        "burn_ratio": 0.125,
+        "events": 48
       },
       {
         "region": "Asia",
@@ -198409,8 +198432,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.093,
-        "events": 54
+        "burn_ratio": 0.096,
+        "events": 52
       },
       {
         "region": "Oceania",
@@ -198436,8 +198459,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.907,
-        "events": 54
+        "mint_ratio": 0.904,
+        "events": 52
       },
       {
         "region": "Asia",
@@ -198478,7 +198501,7 @@
       },
       {
         "date": "2026-10-19",
-        "net_minted": 610000,
+        "net_minted": 911000,
         "net_burned": 5000000
       }
     ],
@@ -198496,7 +198519,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 188,
+        "negative": 187,
         "event_ids_positive": [
           8589,
           8588,
@@ -198525,6 +198548,7 @@
           8388
         ],
         "event_ids_negative": [
+          8592,
           8591,
           8590,
           8587,
@@ -198710,9 +198734,7 @@
           8382,
           8381,
           8380,
-          8379,
-          8378,
-          8377
+          8379
         ]
       },
       "UDHR": {
@@ -198739,6 +198761,7 @@
           8388
         ],
         "event_ids_negative": [
+          8592,
           8591,
           8590,
           8587,
@@ -198906,8 +198929,7 @@
           8383,
           8381,
           8380,
-          8379,
-          8377
+          8379
         ]
       },
       "ILO": {
@@ -199115,7 +199137,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 62,
+        "negative": 61,
         "event_ids_positive": [
           8589,
           8578,
@@ -199193,20 +199215,19 @@
           8400,
           8392,
           8382,
-          8381,
-          8377
+          8381
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 69.9,
-      "mainstream_pct": 30.1,
-      "total_sources_used": 73,
-      "articles_processed": 215
+      "niche_pct": 68.1,
+      "mainstream_pct": 31.9,
+      "total_sources_used": 72,
+      "articles_processed": 214
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 215,
+      "total_events": 214,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -199228,17 +199249,16 @@
       },
       {
         "name": "EU",
-        "count": 7,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 6,
         "event_ids": [
           8538,
           8526,
           8455,
           8411,
           8400,
-          8399,
-          8378
+          8399
         ]
       },
       {
@@ -199368,9 +199388,9 @@
       },
       {
         "name": "Finance",
-        "count": 18,
+        "count": 17,
         "burn_count": 3,
-        "mint_count": 15,
+        "mint_count": 14,
         "event_ids": [
           8584,
           8568,
@@ -199388,8 +199408,7 @@
           8407,
           8405,
           8403,
-          8381,
-          8378
+          8381
         ]
       },
       {
@@ -199513,10 +199532,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 190,
+      "total_mint": 189,
       "direct_action": {
-        "count": 177,
-        "pct": 93.2
+        "count": 176,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 11,
@@ -199528,9 +199547,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6423,
+      "total_mint": 6424,
       "direct_action": {
-        "count": 5903,
+        "count": 5904,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199543,9 +199562,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 62,
+      "citizen": 61,
       "institutional": 153,
-      "citizen_ratio": 0.288,
+      "citizen_ratio": 0.285,
       "daily": [
         {
           "date": "2026-10-13",
@@ -199580,7 +199599,7 @@
         {
           "date": "2026-10-19",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -199644,10 +199663,10 @@
         8406,
         8396,
         8393,
-        8390,
-        8377
+        8390
       ],
       "event_ids_institutional": [
+        8592,
         8591,
         8590,
         8588,
@@ -199799,8 +199818,7 @@
         8382,
         8381,
         8380,
-        8379,
-        8378
+        8379
       ]
     }
   }
