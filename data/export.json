@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-19T13:07:05.277320+00:00",
-  "total_events": 8601,
-  "total_burned": 8044038705,
-  "total_minted": 10976846744,
-  "pending_reviews": 109,
+  "generated_at": "2026-10-19T14:06:41.790996+00:00",
+  "total_events": 8603,
+  "total_burned": 8044448705,
+  "total_minted": 10977071744,
+  "pending_reviews": 112,
   "events": [
+    {
+      "id": 8603,
+      "event_title": "Seahorse Declared 'Vulnerable' in Spain's State Catalog of Threatened Species",
+      "event_url": "https://efeverde.com/caballito-de-mar-declarado-vulnerable-en-catalogo-estatal-de-especies-amenazadas/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "BURN",
+      "amount_crbn": 410000,
+      "final_score": 3.79,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Legal protection of a threatened marine species under national law merits BURN despite classification caveats. | The inclusion of the long-snouted seahorse in Spain's threatened species catalog is a concrete legal step that strengthens biodiversity protection and aligns with planetary boundaries. However, the 'vulnerable' classification may not fully reflect the species' precar",
+      "tx_hash": "48eE2vYR6ofyF94SEZbEocuFWSnWAbRUFvp8dYps8Agqn9noEujRg4pDFrj1jqBCiUHwJ7HJViWg9Lzi5mMv3x1s",
+      "created_at": "2026-10-19T14:06:35.886666+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Long-snouted seahorse (Hippocampus guttulatus) officially listed as 'vulnerable' in Spain's State Catalog of Threatened Species, triggering legal protection measures under national biodiversity law.\", \"affected_sdgs\": [14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Listing as 'vulnerable' rather than 'endangered' may delay urgent conservation actions and understate the species' risk of extinction in the Mar Menor, a highly degraded lagoon ecosystem.\", \"affected_sdgs\": [14, 15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
+    {
+      "id": 8602,
+      "event_title": "Written Statement on the Occasion of the Review of Austria by the Human Rights Committee",
+      "event_url": "https://www.amnesty.org/en/documents/ior40/1514/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "MINT",
+      "amount_crbn": 225000,
+      "final_score": -1.51,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The submission highlights severe, systemic human rights violations in Austria, outweighing the positive accountability mechanism. | The submission by Amnesty International is a critical mechanism for holding Austria accountable to international human rights standards, aligning with SDGs 5, 10, and 16. However, the underlying violations highlighted—such as gender-based violence ",
+      "tx_hash": "GZnqhmfQdB9bt8rVeWKcFsJwBWs7zZczzghDsUxDfdCaNSz3eJ2x8S9SfRk3DCayXyokxWxJdz7961Bw8uzgGTU",
+      "created_at": "2026-10-19T14:06:33.264192+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Austria",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Amnesty International submits a formal written statement to the UN Human Rights Committee reviewing Austria's compliance with human rights obligations, ensuring accountability and transparency.\", \"affected_sdgs\": [5, 10, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"The submission highlights systemic issues such as violence against women and discrimination, potentially leading to policy reforms and legal protections.\", \"affected_sdgs\": [5, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The act of engaging with the UN Human Rights Committee reinforces international cooperation and partnerships for human rights advocacy.\", \"affected_sdgs\": [17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The statement implies ongoing violations of human rights in Austria, including discrimination, violence against women, and inadequate reproductive rights, indicating systemic failures.\", \"affected_sdgs\": [3, 5, 10, 16], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 3\", \"UDHR Article 7\", \"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"The submission suggests that Austria's legal and institutional frameworks may not be effectively addressing these violations, risking prolonged harm to vulnerable groups.\", \"affected_sdgs\": [5, 10, 16], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8601,
       "event_title": "Open Letter from Nepal: Grants, Not Loans for Climate Disaster Recovery",
@@ -198616,9 +198662,9 @@
         "total_amount": 782500
       },
       {
-        "country": "Italy",
+        "country": "Spain",
         "count": 1,
-        "total_amount": 1590000
+        "total_amount": 410000
       }
     ],
     "top_regions_sustainable": [
@@ -198628,14 +198674,14 @@
         "events": 15
       },
       {
+        "region": "Europe",
+        "burn_ratio": 0.127,
+        "events": 55
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.125,
         "events": 48
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.113,
-        "events": 53
       },
       {
         "region": "Asia",
@@ -198670,9 +198716,9 @@
         "events": 28
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.887,
-        "events": 53
+        "region": "North America",
+        "mint_ratio": 0.875,
+        "events": 48
       }
     ],
     "supply_trend_7d": [
@@ -198708,8 +198754,8 @@
       },
       {
         "date": "2026-10-19",
-        "net_minted": 3107400,
-        "net_burned": 6590000
+        "net_minted": 3332400,
+        "net_burned": 7000000
       }
     ],
     "event_of_the_day": {
@@ -198725,9 +198771,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
-        "negative": 187,
+        "positive": 27,
+        "negative": 188,
         "event_ids_positive": [
+          8603,
           8600,
           8589,
           8588,
@@ -198756,6 +198803,7 @@
           8388
         ],
         "event_ids_negative": [
+          8602,
           8601,
           8599,
           8598,
@@ -198947,7 +198995,7 @@
       },
       "UDHR": {
         "positive": 19,
-        "negative": 169,
+        "negative": 170,
         "event_ids_positive": [
           8600,
           8588,
@@ -198970,6 +199018,7 @@
           8388
         ],
         "event_ids_negative": [
+          8602,
           8601,
           8599,
           8598,
@@ -199177,13 +199226,14 @@
       },
       "CRC": {
         "positive": 3,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [
           8584,
           8559,
           8522
         ],
         "event_ids_negative": [
+          8602,
           8590,
           8585,
           8581,
@@ -199306,9 +199356,10 @@
         ]
       },
       "Animal": {
-        "positive": 11,
+        "positive": 12,
         "negative": 21,
         "event_ids_positive": [
+          8603,
           8589,
           8578,
           8569,
@@ -199346,9 +199397,10 @@
         ]
       },
       "PB": {
-        "positive": 14,
+        "positive": 15,
         "negative": 63,
         "event_ids_positive": [
+          8603,
           8589,
           8578,
           8569,
@@ -199432,14 +199484,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 68.5,
-      "mainstream_pct": 31.5,
-      "total_sources_used": 73,
-      "articles_processed": 215
+      "niche_pct": 67.6,
+      "mainstream_pct": 32.4,
+      "total_sources_used": 74,
+      "articles_processed": 217
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 215,
+      "total_events": 217,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -199717,14 +199769,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 27,
       "direct_action": {
-        "count": 24,
-        "pct": 92.3
+        "count": 25,
+        "pct": 92.6
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 7.7
+        "pct": 7.4
       },
       "untyped": {
         "count": 0,
@@ -199732,9 +199784,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2161,
+      "total_burn": 2162,
       "direct_action": {
-        "count": 1927,
+        "count": 1928,
         "pct": 89.2
       },
       "editorial_consciousness": {
@@ -199747,10 +199799,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 189,
+      "total_mint": 190,
       "direct_action": {
-        "count": 176,
-        "pct": 93.1
+        "count": 177,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 11,
@@ -199762,9 +199814,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6432,
+      "total_mint": 6433,
       "direct_action": {
-        "count": 5912,
+        "count": 5913,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199778,8 +199830,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 64,
-      "institutional": 151,
-      "citizen_ratio": 0.298,
+      "institutional": 153,
+      "citizen_ratio": 0.295,
       "daily": [
         {
           "date": "2026-10-13",
@@ -199814,7 +199866,7 @@
         {
           "date": "2026-10-19",
           "citizen": 4,
-          "institutional": 9
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -199884,6 +199936,8 @@
         8390
       ],
       "event_ids_institutional": [
+        8603,
+        8602,
         8600,
         8599,
         8598,
