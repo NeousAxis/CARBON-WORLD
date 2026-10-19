@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-19T03:04:45.814505+00:00",
-  "total_events": 8590,
+  "generated_at": "2026-10-19T04:06:44.557274+00:00",
+  "total_events": 8591,
   "total_burned": 8042448705,
-  "total_minted": 10974199344,
+  "total_minted": 10974349344,
   "pending_reviews": 99,
   "events": [
+    {
+      "id": 8591,
+      "event_title": "New rules for cumulative employment and retirement for French doctors: stricter limits before age 67",
+      "event_url": "http://www.lequotidiendumedecin.fr/liberal-soins-de-ville/retraite/cumul-emploi-retraite-les-nouvelles-regles-qui-bouleversent-la-donne",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.95,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The policy restricts doctors' ability to work while retired, likely reducing healthcare access and increasing strain, outweighing modest rural benefits. | The new rules impose significant restrictions on doctors' ability to combine retirement and work, which may reduce healthcare availability in non-underserved areas. However, the exception for underserved regions partially ",
+      "tx_hash": "4wqaXEZMNQ9v3PnCv9ZcNPfbxQt6ULT4pvnoDQQYfhe9XE61jDFW6c4AchUho4DyjoEYo4ynqejdv14rSkP3hjfa",
+      "created_at": "2026-10-19T04:06:39.223932+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Exception for doctors practicing in underserved areas (zones sous-denses), potentially improving healthcare access in rural or deprived regions.\", \"affected_sdgs\": [3, 10, 11], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Stricter limits on cumulative employment and retirement for doctors under 67, reducing workforce flexibility and potentially exacerbating physician shortages in non-underserved areas.\", \"affected_sdgs\": [3, 8, 10], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8590,
       "event_title": "WHO welcomes adoption of UN Political Declaration on pandemic prevention, preparedness, and response",
@@ -198322,8 +198345,8 @@
       },
       {
         "country": "France",
-        "count": 15,
-        "total_amount": 4209600
+        "count": 16,
+        "total_amount": 4359600
       },
       {
         "country": "Brazil",
@@ -198386,8 +198409,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.094,
-        "events": 53
+        "burn_ratio": 0.093,
+        "events": 54
       },
       {
         "region": "Oceania",
@@ -198413,8 +198436,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.906,
-        "events": 53
+        "mint_ratio": 0.907,
+        "events": 54
       },
       {
         "region": "Asia",
@@ -198455,7 +198478,7 @@
       },
       {
         "date": "2026-10-19",
-        "net_minted": 460000,
+        "net_minted": 610000,
         "net_burned": 5000000
       }
     ],
@@ -198473,7 +198496,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 187,
+        "negative": 188,
         "event_ids_positive": [
           8589,
           8588,
@@ -198502,6 +198525,7 @@
           8388
         ],
         "event_ids_negative": [
+          8591,
           8590,
           8587,
           8586,
@@ -198693,7 +198717,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 168,
+        "negative": 169,
         "event_ids_positive": [
           8588,
           8584,
@@ -198715,6 +198739,7 @@
           8388
         ],
         "event_ids_negative": [
+          8591,
           8590,
           8587,
           8585,
@@ -199177,11 +199202,11 @@
       "niche_pct": 69.9,
       "mainstream_pct": 30.1,
       "total_sources_used": 73,
-      "articles_processed": 214
+      "articles_processed": 215
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 214,
+      "total_events": 215,
       "pct": 0.9
     },
     "active_partners_7d": [],
@@ -199488,10 +199513,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 189,
+      "total_mint": 190,
       "direct_action": {
-        "count": 176,
-        "pct": 93.1
+        "count": 177,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 11,
@@ -199503,9 +199528,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6422,
+      "total_mint": 6423,
       "direct_action": {
-        "count": 5902,
+        "count": 5903,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -199519,8 +199544,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 62,
-      "institutional": 152,
-      "citizen_ratio": 0.29,
+      "institutional": 153,
+      "citizen_ratio": 0.288,
       "daily": [
         {
           "date": "2026-10-13",
@@ -199555,7 +199580,7 @@
         {
           "date": "2026-10-19",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -199623,6 +199648,7 @@
         8377
       ],
       "event_ids_institutional": [
+        8591,
         8590,
         8588,
         8587,
