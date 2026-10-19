@@ -8,8 +8,8 @@ Two populations:
   - the backlog queued in /review from 2026-10-13 to 2026-10-16, before the
     rule existed (pending REJECT rows without B verdict, untouched by Cyril).
 
-For each: B scores it BURN or MINT -> /review with B's verdict (the pipeline
-could not decide); B rejects it or finds it NEUTRAL -> settled without review
+For each: B scores it BURN or MINT -> the article follows B's verdict on the
+next pipeline run (rule of 2026-10-19, db.B_APPLIED_REASON); B rejects it or finds it NEUTRAL -> settled without review
 (still overrulable, B's verdict kept); B gives no answer -> retried on the next
 run, and a parked row goes to Cyril after B_RETRY_LIMIT silent tries. A parked
 row whose article text the firehose no longer holds goes to Cyril at once: B
@@ -107,8 +107,9 @@ def settle_one(row: dict, analyze=None) -> str:
         a_verdict = {}
     decision = db.b_decision(b_verdict)
     if decision in ("BURN", "MINT"):
-        db.mark_rejection_disagreement(row["id"], a_verdict, b_verdict)
-        return "kept for review (A and B disagree)"
+        # Follows B's verdict on the next pipeline run (get_b_only_backlog)
+        db.attach_b_verdict(row["id"], dict(b_verdict, decision=decision))
+        return "queued to follow Analyst B's verdict"
     if decision == "NEUTRAL" or outcome == "rejected":
         db.settle_analyst_rejection(row["id"], b_verdict, outcome)
         return "settled (A and B agree)"

@@ -90,8 +90,9 @@ def _queue_analyst_rejection(monkeypatch) -> int:
     monkeypatch.setattr(analyst_a, "call_deep", lambda **kwargs: dict(REJECTION))
     article = _article()
     assert analyst_a.analyze(article) is None
-    db.route_analyst_rejection(article["_rejection_review_id"], article["_analyst_a_rejection"],
-                               dict(B_DISAGREES), None, article["link"])
+    # A visible REJECT review row, as in the 2026-10-16/19 backlog
+    db.mark_rejection_disagreement(article["_rejection_review_id"],
+                                   article["_analyst_a_rejection"], dict(B_DISAGREES))
     row = db._get_conn().execute(
         "SELECT id FROM review_queue WHERE event_url = ?", (URL,)
     ).fetchone()

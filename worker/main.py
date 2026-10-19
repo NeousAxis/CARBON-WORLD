@@ -183,11 +183,14 @@ def _run_analysts_parallel(valid_articles: list[dict]) -> tuple[list[dict], list
     return results_a, results_b
 
 
-def _route_analyst_rejections(articles: list[dict], results_b: list[dict]) -> None:
-    """Analyst A judged these articles not actionable. Now that Analyst B has
-    read them too, only a disagreement (B scores BURN or MINT) goes to Cyril's
-    /review; an agreement is recorded as settled (db.record_analyst_rejection)."""
+def _route_analyst_rejections(articles: list[dict], results_b: list[dict]) -> list[dict]:
+    """Analyst A judged these articles not actionable; Analyst B has read them
+    too. B scoring BURN or MINT -> the article follows B's verdict through the
+    normal path (Cyril's rule of 2026-10-19, see db.B_APPLIED_REASON): it is
+    returned for the B-only pairs. B agreeing or silent -> settled or parked
+    by db.route_analyst_rejection."""
     b_by_link = {r["article"].get("link", ""): r["analysis"] for r in results_b}
+    b_only: list[dict] = []
     counts: dict[str, int] = {}
     for article in articles:
         rejection = article.get("_analyst_a_rejection")
@@ -203,8 +206,18 @@ def _route_analyst_rejections(articles: list[dict], results_b: list[dict]) -> No
                 review_id = _db_module.park_analyst_rejection(article, rejection)
             if review_id is None:
                 continue
-            routed = _db_module.route_analyst_rejection(
-                review_id, rejection, b_verdict, outcome, article.get("link", ""))
+            if _db_module.b_decision(b_verdict) in ("BURN", "MINT"):
+                # Kept hidden with B's verdict: a run cut short leaves it for
+                # the next run's B-only backlog
+                _db_module.attach_b_verdict(review_id, b_verdict)
+                article["_rejection_review_id"] = review_id
+                article["_b_verdict"] = dict(b_verdict, decision=_db_module.b_decision(b_verdict))
+                article["_b_only"] = True
+                b_only.append(article)
+                routed = "b_only"
+            else:
+                routed = _db_module.route_analyst_rejection(
+                    review_id, rejection, b_verdict, outcome, article.get("link", ""))
         except Exception as exc:
             logger.warning("Could not route Analyst rejection '%s': %s",
                            article.get("title", "")[:60], exc)
@@ -212,33 +225,15 @@ def _route_analyst_rejections(articles: list[dict], results_b: list[dict]) -> No
         counts[routed] = counts.get(routed, 0) + 1
     if counts:
         logger.info("Analyst rejections routed: %s", counts)
+    return b_only
 
 
-def _flag_mirror_disagreements(events: list[dict]) -> None:
-    """Analyst A scored the article BURN/MINT but Analyst B judged it not
-    actionable: the mirror of an A rejection B disagrees with, so it gets the
-    same treatment. The pair went through as A-only (B "failed" for the merge);
-    here it is flagged for review, which lets the writer's learned resolver
-    decide from Cyril's past choices first and ask him only if it cannot.
-    Measured 2026-10-16: 2 of 53 A-scored articles in 20 runs."""
-    for event in events:
-        article = event.get("article", {}) or {}
-        if article.get("_analyst_b_outcome") != "rejected":
-            continue
-        b_rejection = article.get("_analyst_b_rejection") or {}
-        reason = str(b_rejection.get("reason") or "not actionable")
-        analysis = event.get("analysis", {}) or {}
-        event["_analyst_b"] = b_rejection or {"validation": False, "reason": reason}
-        event["_needs_review"] = True
-        concern = (f"Analysts disagree: B finds it not actionable ({reason[:200]}); "
-                   f"A scores it {analysis.get('decision')} "
-                   f"{float(analysis.get('final_score') or 0):.2f}")
-        sentinel = dict(event.get("_sentinel") or {})
-        if sentinel.get("concern"):
-            # Sentinel concern first: the digest buckets read its prefix
-            concern = f"{sentinel['concern']} | {concern}"
-        sentinel["concern"] = concern[:500]
-        event["_sentinel"] = sentinel
+def _b_only_pairs(articles: list[dict]) -> list[dict]:
+    """Pairs for articles that follow Analyst B's verdict alone: B's analysis
+    on both sides, like the A-only fallback when B fails, so the reconciler
+    keeps it and the learned resolver sees a consensus."""
+    return [{"article": a, "_analyst_a": a["_b_verdict"], "_analyst_b": a["_b_verdict"]}
+            for a in articles if a.get("_b_verdict")]
 
 
 def _merge_ab_by_url(results_a: list[dict], results_b: list[dict]) -> list[dict]:
@@ -334,7 +329,13 @@ def main() -> int:
     if reanalysis_articles:
         logger.info("Human-validated articles to re-analyse: %d", len(reanalysis_articles))
 
-    if not new_articles and not reanalysis_articles:
+    # A rejections Analyst B scored, still waiting for the B-only path (the
+    # /review backlog of 2026-10-16/19, or a run cut short)
+    b_only_backlog = [] if args.dry_run else _db_module.get_b_only_backlog(limit=20)
+    if b_only_backlog:
+        logger.info("A rejections to settle on Analyst B's verdict: %d", len(b_only_backlog))
+
+    if not new_articles and not reanalysis_articles and not b_only_backlog:
         logger.info("No new articles to process.")
         export_events()
         set_last_run(datetime.now(tz=timezone.utc))
@@ -381,7 +382,7 @@ def main() -> int:
             events=events or [],
         )
 
-    if not valid_articles:
+    if not valid_articles and not b_only_backlog:
         logger.info("No valid articles found. Pipeline complete.")
         _empty_report()
         set_last_run(datetime.now(tz=timezone.utc))
@@ -395,22 +396,28 @@ def main() -> int:
 
     # === Phase 3/8: ANALYST A + ANALYST B (parallel) ===
     logger.info("=== Phase 3/8: ANALYSTS A+B in parallel (%d valid articles) ===", valid_count)
+    results_a: list[dict] = []
     results_b: list[dict] = []
+    b_only_articles: list[dict] = list(b_only_backlog)
     try:
-        results_a, results_b = _run_analysts_parallel(valid_articles)
+        if valid_articles:
+            results_a, results_b = _run_analysts_parallel(valid_articles)
     finally:
         # Even on a crash: the A rejections already made are recorded (with no
         # B verdict they wait in 'awaiting_b' instead of being re-analysed).
-        _route_analyst_rejections(valid_articles, results_b)
+        b_only_articles += _route_analyst_rejections(valid_articles, results_b)
 
     # Merge by URL — both analysts must have spoken
-    ab_pairs = _merge_ab_by_url(results_a, results_b)
+    ab_pairs = _merge_ab_by_url(results_a, results_b) + _b_only_pairs(b_only_articles)
 
     def _close_reanalysis() -> None:
         # Every human-validated article leaves the run with an outcome: event
         # written, or back in the human queue (and in review_queue.json).
         if reanalysis_articles:
             _db_module.settle_reanalysis(reanalysis_articles)
+        if b_only_articles:
+            logger.info("B-only rows: %s", _db_module.settle_b_only(b_only_articles))
+        if reanalysis_articles or b_only_articles:
             export_events()
 
     if not ab_pairs:
@@ -423,6 +430,11 @@ def main() -> int:
     # === Phase 4/8: RECONCILER ===
     logger.info("=== Phase 4/8: RECONCILER (%d pairs) ===", len(ab_pairs))
     reconciled_events = reconcile_batch(ab_pairs)
+
+    # B-only articles the reconciler turned NEUTRAL: decided, settled as such
+    for e in reconciled_events:
+        if e["article"].get("_b_only") and e["analysis"].get("decision", "NEUTRAL") == "NEUTRAL":
+            e["article"]["_b_only_neutral"] = True
 
     # Drop NEUTRAL verdicts here (same as old pipeline — the analyst-level NEUTRAL filter)
     actionable_events = [
@@ -445,12 +457,16 @@ def main() -> int:
     # === Phase 5/8: SENTINEL ===
     logger.info("=== Phase 5/8: SENTINEL (%d events) ===", len(actionable_events))
     sentinel_events = sentinel_check(actionable_events)
-    _flag_mirror_disagreements(sentinel_events)
 
     # === Phase 6/8: SCORER ===
     logger.info("=== Phase 6/8: SCORER (%d events) ===", len(sentinel_events))
     scored_events = score_batch(sentinel_events)
     scored_count = len(scored_events)
+    # B-only articles the scorer dropped as NEUTRAL: decided as well
+    scored_links = {e["article"].get("link") for e in scored_events}
+    for e in sentinel_events:
+        if e["article"].get("_b_only") and e["article"].get("link") not in scored_links:
+            e["article"]["_b_only_neutral"] = True
 
     # === Phase 7/8: WRITER (routes to Solana or review_queue) ===
     logger.info("=== Phase 7/8: WRITER (%d events) ===", scored_count)
@@ -462,6 +478,9 @@ def main() -> int:
     # --- Human-validated articles: event written, or back to the human queue ---
     if reanalysis_articles:
         _db_module.settle_reanalysis(reanalysis_articles)
+    # --- A rejections that followed Analyst B: event written, or retried ---
+    if b_only_articles:
+        logger.info("B-only rows: %s", _db_module.settle_b_only(b_only_articles))
 
     # --- Export JSON for frontend ---
     export_events()

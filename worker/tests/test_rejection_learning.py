@@ -106,7 +106,7 @@ _counter = iter(range(1, 10_000))
 
 def _reject(reason: str, title: str = "") -> int:
     n = next(_counter)
-    return db.add_to_review_queue({
+    review_id = db.add_to_review_queue({
         "event_title": title or f"Article {n}",
         "event_url": f"https://example.org/{n}",
         "event_source": "Test Wire",
@@ -117,6 +117,13 @@ def _reject(reason: str, title: str = "") -> int:
         "suggested_decision": "REJECT",
         "suggested_amount_crbn": 0,
     })
+    # Since 2026-10-19 the pipeline follows B on such rows; the learning only
+    # sees those the follow-B path gave up on
+    conn = db._get_conn()
+    conn.execute("UPDATE review_queue SET b_only_attempts = ? WHERE id = ?",
+                 (db.B_ONLY_MAX_ATTEMPTS, review_id))
+    conn.commit()
+    return review_id
 
 
 def _row(review_id: int) -> dict:
@@ -215,6 +222,15 @@ def test_past_decisions_are_recorded_once(fresh_db):
     assert rl.record_past_decisions(conn) == 1
     assert _row(legacy)["rejection_verdict"] == "confirmed"
     assert rl.record_past_decisions(conn) == 0
+
+
+def test_rows_in_the_follow_b_path_are_left_to_it(fresh_db):
+    _learn_opinion()
+    in_flight = _reject(OPINION)
+    conn = db._get_conn()
+    conn.execute("UPDATE review_queue SET b_only_attempts = 0 WHERE id = ?", (in_flight,))
+    conn.commit()
+    assert in_flight not in {d["id"] for d in rl.plan(conn)}
 
 
 def test_digest_lists_the_automatic_confirmations(fresh_db, monkeypatch):

@@ -136,6 +136,9 @@ def _migrate_schema(conn: sqlite3.Connection) -> None:
         # Silent Analyst B retries of a parked rejection (settle_analyst_rejections.py)
         "ALTER TABLE review_queue ADD COLUMN b_retry_count INTEGER;",
         "ALTER TABLE review_queue ADD COLUMN b_retry_at TEXT;",
+        # Attempts of the follow-Analyst-B path (2026-10-19), apart from the
+        # silent-B retries above
+        "ALTER TABLE review_queue ADD COLUMN b_only_attempts INTEGER;",
     ]
     for sql in migrations:
         try:
@@ -616,15 +619,16 @@ def resolve_review(
 
         now = datetime.now(tz=timezone.utc).isoformat()
 
-        def claim(status: str) -> bool:
+        def claim(status: str, open_statuses: tuple = ("pending",)) -> bool:
             # Only a still-pending row can be resolved: a drain approve racing
             # a human reject on the same review must not both win. Runs inside
             # the transaction that also inserts the event, if any.
             cursor = conn.execute(
-                """UPDATE review_queue SET status=?, human_verdict=?,
+                f"""UPDATE review_queue SET status=?, human_verdict=?,
                        human_amount=?, human_reason=?, resolved_at=?
-                   WHERE id=? AND status='pending'""",
-                (status, human_verdict, human_amount, human_reason, now, review_id),
+                   WHERE id=? AND status IN ({",".join("?" * len(open_statuses))})""",
+                (status, human_verdict, human_amount, human_reason, now, review_id,
+                 *open_statuses),
             )
             if cursor.rowcount == 1:
                 return True
@@ -668,7 +672,10 @@ def resolve_review(
                     conn.rollback()
                     return False
             else:
-                if not claim(status):
+                # 'awaiting_b': a row the pipeline is following Analyst B on
+                # (or still asking B about). Cyril's click wins over the run:
+                # the writer re-checks the row before writing any event.
+                if not claim(status, ("pending", "awaiting_b")):
                     return False
                 # Training signal for rejection_learning.py, written once at
                 # Cyril's FIRST decision: a re-analysis later rewrites
@@ -820,7 +827,7 @@ def park_analyst_rejection(article: dict, a_verdict: dict) -> Optional[int]:
 
 
 def settle_analyst_rejection(review_id: int, b_verdict: Optional[dict],
-                             b_outcome: Optional[str]) -> bool:
+                             b_outcome: Optional[str], reason: Optional[str] = None) -> bool:
     """Close an Analyst rejection both analysts agree on (no review). It stays
     overrulable: resolve_review.py <id> reverse sends it to a full analysis.
     b_verdict is B's NEUTRAL verdict or B's own rejection, kept for the audit."""
@@ -833,8 +840,8 @@ def settle_analyst_rejection(review_id: int, b_verdict: Optional[dict],
                    rejection_verdict = 'analysts_agree', analyst_b_verdict = ?
                WHERE id = ? AND status IN ('pending', 'awaiting_b')
                  AND human_verdict IS NULL""",
-            (_settled_reason(b_verdict, b_outcome), datetime.now(tz=timezone.utc).isoformat(),
-             _json_or_null(b_verdict), review_id),
+            (reason or _settled_reason(b_verdict, b_outcome),
+             datetime.now(tz=timezone.utc).isoformat(), _json_or_null(b_verdict), review_id),
         )
         conn.commit()
         return cursor.rowcount == 1
@@ -919,18 +926,19 @@ def route_analyst_rejection(review_id: int, a_verdict: dict, b_verdict: Optional
                             b_outcome: Optional[str], link: str = "") -> str:
     """Route a parked Analyst A rejection once Analyst B has read the article.
 
-    Only a disagreement reaches Cyril: B scoring BURN or MINT means the
-    pipeline could not decide. B rejecting it too, or finding it NEUTRAL, is a
-    decision: settled without review (still overrulable). B giving no usable
-    answer decides nothing: the row stays hidden in 'awaiting_b' for
+    B scoring BURN or MINT: the article follows B's verdict (rule of
+    2026-10-19, B_APPLIED_REASON); the row keeps B's verdict, hidden, for the
+    pipeline's B-only path (main._route_analyst_rejections in the same run,
+    get_b_only_backlog otherwise). B rejecting it too, or finding it NEUTRAL,
+    is a decision: settled without review (still overrulable). B giving no
+    usable answer decides nothing: the row stays hidden in 'awaiting_b' for
     settle_analyst_rejections.py, or goes to Cyril when B can never read it
-    (no article text kept). Measured on 2026-10-16 over 40 rejections: B
-    agreed for 19, scored BURN or MINT for 20, failed for 1.
+    (no article text kept).
     """
     decision = b_decision(b_verdict)
     if decision in ("BURN", "MINT"):
-        mark_rejection_disagreement(review_id, a_verdict, b_verdict)
-        return "review"
+        attach_b_verdict(review_id, dict(b_verdict, decision=decision))
+        return "b_only"
     if decision == "NEUTRAL" or b_outcome == "rejected":
         settle_analyst_rejection(review_id, b_verdict, b_outcome)
         return "settled"
@@ -938,6 +946,257 @@ def route_analyst_rejection(review_id: int, a_verdict: dict, b_verdict: Optional
         show_undecided_rejection(review_id, "Analyst B could not read it (no article text)")
         return "review"
     return "awaiting_b"
+
+
+# Cyril's rule of 2026-10-19 for an A rejection that Analyst B scored: follow
+# the analyst who scored. Measured on his 730 review decisions, when one
+# analyst scored a direction and the other found it NEUTRAL he sided with the
+# scorer about 90 % of the time (A=BURN/B=NEUTRAL: BURN 89 % of 85,
+# A=MINT/B=NEUTRAL: MINT 93 % of 255). B's verdict goes through the normal
+# reconcile, sentinel, learned resolver and writer path; /review only gets
+# what that path itself cannot settle.
+B_APPLIED_REASON = ("Analyst B's verdict applied: Cyril follows the analyst who scored "
+                    "in about 90 % of such cases (rule of 2026-10-19)")
+B_ONLY_MAX_ATTEMPTS = 3
+
+
+def _b_only_attempts(review_id: int) -> int:
+    row = _get_conn().execute("SELECT b_only_attempts FROM review_queue WHERE id = ?",
+                              (review_id,)).fetchone()
+    return int(row[0] or 0) if row else 0
+
+
+def get_open_rejection(review_id: int) -> Optional[dict]:
+    """An Analyst rejection still open to Cyril's decision, including one the
+    pipeline is following Analyst B on ('awaiting_b'): his click wins."""
+    try:
+        row = _get_conn().execute(
+            """SELECT * FROM review_queue WHERE id = ? AND suggested_decision = 'REJECT'
+               AND status IN ('pending', 'awaiting_b') AND human_verdict IS NULL""",
+            (review_id,),
+        ).fetchone()
+        return dict(row) if row else None
+    except Exception as exc:
+        logger.error("Error reading open rejection id=%d: %s", review_id, exc)
+        return None
+
+
+def attach_b_verdict(review_id: int, b_verdict: dict) -> bool:
+    """Store B's verdict on a parked A rejection without showing it to Cyril."""
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            """UPDATE review_queue SET analyst_b_verdict = ?
+               WHERE id = ? AND status IN ('pending', 'awaiting_b') AND human_verdict IS NULL""",
+            (_json_or_null(b_verdict), review_id),
+        )
+        conn.commit()
+        return cursor.rowcount == 1
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error attaching B verdict to id=%d: %s", review_id, exc)
+        return False
+
+
+def get_b_only_backlog(limit: int = 20) -> list[dict]:
+    """A rejections Analyst B scored BURN/MINT that still wait for the B-only
+    path: the /review backlog of 2026-10-16/19, and rows a run did not finish.
+    Capped per run: each goes through the sentinel (an LLM call) and the writer
+    (a Solana TX), and run_vps.sh kills a run after 25 minutes. An attempt is
+    counted when a row is loaded, so a run that crashes or is killed cannot
+    reload the same rows forever: after B_ONLY_MAX_ATTEMPTS they go back to
+    /review."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            """UPDATE review_queue SET status = 'pending'
+               WHERE status = 'awaiting_b' AND suggested_decision = 'REJECT'
+                 AND human_verdict IS NULL
+                 AND UPPER(TRIM(json_extract(analyst_b_verdict, '$.decision'))) IN ('BURN', 'MINT')
+                 AND COALESCE(b_only_attempts, 0) >= ?""",
+            (B_ONLY_MAX_ATTEMPTS,),
+        )
+        conn.commit()
+        rows = conn.execute(
+            """SELECT q.id, q.event_title, q.event_url, q.event_source,
+                      q.analyst_a_verdict, q.analyst_b_verdict, r.description
+               FROM review_queue q LEFT JOIN raw_articles r ON r.url = q.event_url
+               WHERE q.status IN ('pending', 'awaiting_b') AND q.suggested_decision = 'REJECT'
+                 AND q.human_verdict IS NULL
+                 AND UPPER(TRIM(json_extract(q.analyst_b_verdict, '$.decision'))) IN ('BURN', 'MINT')
+                 AND COALESCE(q.b_only_attempts, 0) < ?
+               ORDER BY COALESCE(q.b_only_attempts, 0), q.id
+               LIMIT ?""",
+            (B_ONLY_MAX_ATTEMPTS, limit),
+        ).fetchall()
+        # In flight as 'awaiting_b' (a click by Cyril on the still-displayed
+        # card wins: resolve_review accepts it, the writer re-checks the row)
+        conn.executemany(
+            "UPDATE review_queue SET status = 'awaiting_b', "
+            "b_only_attempts = COALESCE(b_only_attempts, 0) + 1 "
+            "WHERE id = ? AND status IN ('pending', 'awaiting_b') AND human_verdict IS NULL",
+            [(row["id"],) for row in rows],
+        )
+        conn.commit()
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error fetching the B-only backlog: %s", exc)
+        return []
+    articles = []
+    for row in rows:
+        try:
+            a_verdict = json.loads(row["analyst_a_verdict"] or "{}")
+            b_verdict = json.loads(row["analyst_b_verdict"] or "{}")
+        except (json.JSONDecodeError, TypeError):
+            continue
+        b_verdict["decision"] = b_decision(b_verdict)
+        submission_id = _submission_for_url(row["event_url"])
+        articles.append({
+            "title": row["event_title"] or "",
+            "link": row["event_url"],
+            "source": row["event_source"] or "",
+            "description": row["description"] or "",
+            "_analyst_a_rejection": a_verdict,
+            "_b_verdict": b_verdict,
+            "_rejection_review_id": row["id"],
+            "_b_only": True,
+            **({"_from_submission": True, "_submission_id": submission_id,
+                "_prior_validation": True} if submission_id else {}),
+        })
+    return articles
+
+
+def _submission_for_url(event_url: str) -> Optional[str]:
+    """Partner submission behind a review row, so its lifecycle is updated."""
+    if (event_url or "").startswith("submission://"):
+        return event_url[len("submission://"):]
+    try:
+        row = _get_conn().execute(
+            "SELECT id FROM submissions WHERE json_extract(raw_payload_json, '$.source_url') = ? "
+            "LIMIT 1", (event_url,),
+        ).fetchone()
+        return row[0] if row else None
+    except Exception:
+        return None
+
+
+def claim_b_only_row(review_id: int) -> bool:
+    """Close a B-only row as 'b_applied' right before its event is saved, so a
+    decision by Cyril and the pipeline's event can never both win."""
+    try:
+        conn = _get_conn()
+        cursor = conn.execute(
+            """UPDATE review_queue
+               SET status = 'reanalyzed', human_verdict = 'auto', human_reason = ?,
+                   resolved_at = ?, rejection_verdict = 'b_applied'
+               WHERE id = ? AND status IN ('pending', 'awaiting_b')
+                 AND suggested_decision = 'REJECT' AND human_verdict IS NULL""",
+            (B_APPLIED_REASON, datetime.now(tz=timezone.utc).isoformat(), review_id),
+        )
+        conn.commit()
+        return cursor.rowcount == 1
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error claiming B-only row id=%s: %s", review_id, exc)
+        return False
+
+
+def release_b_only_row(review_id: int) -> None:
+    """Undo claim_b_only_row when the event could not be saved (retried)."""
+    try:
+        conn = _get_conn()
+        conn.execute(
+            """UPDATE review_queue
+               SET status = 'awaiting_b', human_verdict = NULL, human_reason = NULL,
+                   resolved_at = NULL, rejection_verdict = NULL
+               WHERE id = ? AND status = 'reanalyzed' AND rejection_verdict = 'b_applied'
+                 AND human_verdict = 'auto'""",
+            (review_id,),
+        )
+        conn.commit()
+    except Exception as exc:
+        _rollback_quietly()
+        logger.error("Error releasing B-only row id=%s: %s", review_id, exc)
+
+
+def b_only_row_open(review_id: int) -> bool:
+    """The writer's last check before saving a B-only event: the row is still
+    unresolved (Cyril or another process has not decided it meanwhile)."""
+    try:
+        row = _get_conn().execute(
+            """SELECT 1 FROM review_queue WHERE id = ? AND status IN ('pending', 'awaiting_b')
+               AND human_verdict IS NULL AND suggested_decision = 'REJECT'""",
+            (review_id,),
+        ).fetchone()
+        return row is not None
+    except Exception:
+        return False
+
+
+def settle_b_only(articles: list[dict]) -> dict[str, int]:
+    """Close the rows of B-only articles once the writer has run.
+
+    Event written -> 'reanalyzed' with rejection_verdict 'b_applied'. Routed
+    to Cyril by the writer (sentinel flag the learned resolver could not
+    settle) -> already pending with a BURN/MINT suggestion, left as is.
+    Anything else (writer failure, run cut short) -> retried on the next run,
+    shown to Cyril after B_ONLY_MAX_ATTEMPTS.
+    """
+    counts: dict[str, int] = {}
+    now = datetime.now(tz=timezone.utc).isoformat()
+    for article in articles:
+        review_id = article.get("_rejection_review_id")
+        if review_id is None:
+            continue
+        try:
+            conn = _get_conn()
+            if article.get("_b_only_neutral"):
+                # The pipeline itself scored B's verdict NEUTRAL: decided, no event
+                settled = settle_analyst_rejection(
+                    review_id, article.get("_b_verdict"), None,
+                    reason="settled without review: the pipeline scored Analyst B's verdict NEUTRAL")
+                outcome = "neutral" if settled else "resolved_meanwhile"
+            elif event_exists(article.get("link", ""), include_review_queue=False):
+                cursor = conn.execute(
+                    """UPDATE review_queue
+                       SET status = 'reanalyzed', human_verdict = 'auto', human_reason = ?,
+                           resolved_at = ?, rejection_verdict = 'b_applied'
+                       WHERE id = ? AND status IN ('pending', 'awaiting_b')
+                         AND suggested_decision = 'REJECT' AND human_verdict IS NULL""",
+                    (B_APPLIED_REASON, now, review_id),
+                )
+                conn.commit()
+                claimed = conn.execute(
+                    "SELECT rejection_verdict FROM review_queue WHERE id = ?", (review_id,)
+                ).fetchone()
+                outcome = ("written" if cursor.rowcount == 1
+                           or (claimed and claimed[0] == "b_applied")
+                           else "resolved_meanwhile")
+            else:
+                row = conn.execute(
+                    "SELECT status, suggested_decision FROM review_queue WHERE id = ?",
+                    (review_id,),
+                ).fetchone()
+                if row and row["status"] == "pending" and row["suggested_decision"] != "REJECT":
+                    outcome = "review"
+                elif row is None or row["status"] not in ("pending", "awaiting_b"):
+                    outcome = "resolved_meanwhile"
+                elif _b_only_attempts(review_id) >= B_ONLY_MAX_ATTEMPTS:
+                    conn.execute(
+                        "UPDATE review_queue SET status = 'pending' "
+                        "WHERE id = ? AND status = 'awaiting_b' AND human_verdict IS NULL",
+                        (review_id,),
+                    )
+                    conn.commit()
+                    outcome = "review"
+                else:
+                    outcome = "retry"
+        except Exception as exc:
+            _rollback_quietly()
+            logger.error("Error closing B-only row id=%d: %s", review_id, exc)
+            outcome = "error"
+        counts[outcome] = counts.get(outcome, 0) + 1
+    return counts
 
 
 def record_analyst_rejection(article: dict, a_verdict: dict, b_verdict: Optional[dict],

@@ -13,6 +13,9 @@ from db import (
     update_tx_hash,
     add_to_review_queue,
     requeue_review,
+    b_only_row_open,
+    claim_b_only_row,
+    release_b_only_row,
     log_training_data,
 )
 from geo_extractor import extract_geo, resolve_country_metadata
@@ -118,6 +121,15 @@ def derive_geo(analysis: dict, title: str, justification: str, source: str) -> d
     return extract_geo(title=title, justification=justification, source=source)
 
 
+def _owned_review_id(article: dict):
+    """The review_queue row an article already owns, if any."""
+    if article.get("_human_validated"):
+        return article.get("_review_id")
+    if article.get("_b_only"):
+        return article.get("_rejection_review_id")
+    return None
+
+
 def _route_to_review(event: dict, article: dict, analysis: dict) -> bool:
     """Save the event to review_queue and log training data. Returns True on success."""
     title = article.get("title", "")
@@ -143,11 +155,21 @@ def _route_to_review(event: dict, article: dict, analysis: dict) -> bool:
         "suggested_decision": analysis.get("decision", "NEUTRAL"),
         "suggested_amount_crbn": int(analysis.get("amount_cbwd", 0) or 0),
     }
-    if article.get("_human_validated"):
-        # Re-analysed after a human overruled the Analyst's rejection: the URL
-        # already owns a review_queue row, which becomes a regular BURN/MINT
-        # review instead of a second (UNIQUE-violating) insert.
-        review_id = article["_review_id"] if requeue_review(article["_review_id"], entry) else None
+    owned_review_id = _owned_review_id(article)
+    if owned_review_id is not None:
+        # The URL already owns a review_queue row (human-validated re-analysis,
+        # or an A rejection following Analyst B): that row becomes a regular
+        # BURN/MINT review instead of a second (UNIQUE-violating) insert.
+        # A B-only row is in flight as 'awaiting_b': never reopen a row someone
+        # resolved meanwhile
+        expected = "awaiting_b" if article.get("_b_only") else None
+        if article.get("_b_only"):
+            # Keep A's rejection as A's verdict: B's copy in both slots would
+            # look unanimous (auto_approve_unanimous.py, learned map)
+            entry.pop("analyst_a_verdict")
+        review_id = (owned_review_id
+                     if requeue_review(owned_review_id, entry, expected_status=expected)
+                     else None)
     else:
         review_id = add_to_review_queue(entry)
 
@@ -187,10 +209,13 @@ def write(event: dict) -> bool:
     title = article.get("title", "")
     link = article.get("link", "")
 
-    # A human-validated re-analysis owns a review_queue row by design: only an
-    # existing carbon_events row makes it a duplicate.
-    if event_exists(link, include_review_queue=not article.get("_human_validated")):
+    # An article owning a review_queue row (human-validated re-analysis, A
+    # rejection following Analyst B) is a duplicate only in carbon_events.
+    if event_exists(link, include_review_queue=_owned_review_id(article) is None):
         logger.info("Already in DB, skipping: '%s'", title[:60])
+        return False
+    if article.get("_b_only") and not b_only_row_open(article.get("_rejection_review_id")):
+        logger.info("B-only row resolved meanwhile, not written: '%s'", title[:60])
         return False
 
     # --- Sentinel gate: the learned corrector gets first refusal ---
@@ -234,6 +259,9 @@ def write(event: dict) -> bool:
 
     # --- Happy path: persist to carbon_events + Solana tx ---
     justification = _build_justification(analysis)
+    if article.get("_b_only"):
+        justification = ("[Analyst A judged it not actionable; Analyst B's verdict applied] "
+                         + justification)[:500]
     if event.get("_auto_resolved"):
         ar_v = event["_auto_resolved"]
         justification = (
@@ -293,9 +321,17 @@ def write(event: dict) -> bool:
         ),
     }
 
+    # B-only: the row is closed first, so a click by Cyril meanwhile wins
+    b_only_id = article.get("_rejection_review_id") if article.get("_b_only") else None
+    if b_only_id is not None and not claim_b_only_row(b_only_id):
+        logger.info("B-only row resolved meanwhile, not written: '%s'", title[:60])
+        return False
+
     saved = save_event(event_data)
     if not saved:
         logger.warning("Failed to save: '%s'", title[:60])
+        if b_only_id is not None:
+            release_b_only_row(b_only_id)
         return False
 
     event_id = saved.get("id")

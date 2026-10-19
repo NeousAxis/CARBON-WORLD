@@ -51,6 +51,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import config  # noqa: E402
+from db import B_ONLY_MAX_ATTEMPTS  # noqa: E402
 
 logger = logging.getLogger("rejection_learning")
 
@@ -201,8 +202,12 @@ def plan(conn: sqlite3.Connection) -> list[dict]:
         """SELECT id, event_title, analyst_a_verdict FROM review_queue
            WHERE status = 'pending' AND suggested_decision = 'REJECT'
              AND rejection_verdict IS NULL AND human_verdict IS NULL
-             AND json_extract(analyst_b_verdict, '$.decision') IN ('BURN', 'MINT')
-           ORDER BY id"""
+             -- since 2026-10-19 the pipeline follows Analyst B on these rows
+             -- (db.get_b_only_backlog); only rows that path gave up on are
+             -- left here, so the two never act on the same row
+             AND COALESCE(b_only_attempts, 0) >= ?
+           ORDER BY id""",
+        (B_ONLY_MAX_ATTEMPTS,),
     ).fetchall():
         kind = classify_rejection(rejection_reason(a_verdict))
         if not qualifies(kind, stats):

@@ -104,9 +104,16 @@ def fetch_backlog_summary() -> dict:
             (since,),
         )]
 
+        # A rejections that followed Analyst B's verdict (rule of 2026-10-19)
+        b_applied = con.execute(
+            "SELECT COUNT(*) AS n FROM review_queue "
+            "WHERE rejection_verdict = 'b_applied' AND resolved_at >= ?",
+            (since,),
+        ).fetchone()["n"]
+
         if total == 0:
             return {"total": 0, "rows": [], "buckets": {}, "auto_confirmed": auto_confirmed,
-                    "settled": settled}
+                    "settled": settled, "b_applied": b_applied}
 
         # Bucket by structural flag prefix in sentinel_concern.
         buckets_raw = con.execute("""
@@ -146,7 +153,8 @@ def fetch_backlog_summary() -> dict:
         """).fetchall()
 
         return {"total": total, "rows": [dict(r) for r in rows], "buckets": buckets,
-                "auto_confirmed": auto_confirmed, "settled": settled}
+                "auto_confirmed": auto_confirmed, "settled": settled,
+                "b_applied": b_applied}
     finally:
         con.close()
 
@@ -177,6 +185,8 @@ def build_text_body(summary: dict) -> str:
         f"CARBON WORLD — review queue digest",
         f"",
         f"{total} events are waiting for your review on https://carbon-world.xyz/review",
+        f"{summary.get('b_applied', 0)} Analyst A rejections settled by following Analyst B's score"
+        f" in the last 24 h",
         f"{len(summary.get('settled', []))} Analyst rejections settled without you in the last 24 h"
         f" (Analysts A and B agree; undo one: resolve_review.py <id> reverse):",
         *[f"  #{r['id']} {(r['event_title'] or '')[:80]}" for r in summary.get("settled", [])[:10]],
@@ -245,6 +255,7 @@ def build_html_body(summary: dict) -> str:
 <div style="font-size:12px;color:#B8B9B6;margin-top:8px;">
 <a href="https://carbon-world.xyz/review" style="color:#FF8400;text-decoration:none;">https://carbon-world.xyz/review →</a>
 </div>
+<div style="font-size:12px;color:#B8B9B6;margin-top:8px;">{summary.get("b_applied", 0)} Analyst A rejections settled by following Analyst B's score in the last 24 h</div>
 <div style="font-size:12px;color:#B8B9B6;margin-top:8px;">{len(summary.get("settled", []))} Analyst rejections settled without you in the last 24 h (Analysts A and B agree){settled_rows}</div>
 <div style="font-size:12px;color:#B8B9B6;margin-top:8px;">{len(summary.get("auto_confirmed", []))} Analyst rejections confirmed by learning in the last 24 h{auto_rows}</div>
 </td></tr>

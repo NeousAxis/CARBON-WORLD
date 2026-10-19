@@ -32,7 +32,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from db import get_pending_reviews, resolve_review  # noqa: E402
-from db import get_auto_confirmed_rejection, get_event_id_by_url  # noqa: E402
+from db import get_auto_confirmed_rejection, get_event_id_by_url, get_open_rejection  # noqa: E402
 from exporter import export_events  # noqa: E402
 
 
@@ -148,6 +148,10 @@ def main() -> int:
     # Find the review item
     reviews = get_pending_reviews()
     review = next((r for r in reviews if r["id"] == args.review_id), None)
+    if not review:
+        # An Analyst rejection the running pipeline is following Analyst B on:
+        # still displayed in /review, and Cyril's decision wins over the run
+        review = get_open_rejection(args.review_id)
     if not review and args.verdict == "reverse":
         # An Analyst rejection the learning confirmed on Cyril's behalf can
         # still be overruled (worker/rejection_learning.py).
@@ -205,7 +209,8 @@ def main() -> int:
     # showing "Done" while the row stays pending.
     if not resolve_review(args.review_id, args.verdict, final_amount, args.reason,
                           event_data=event_data):
-        if not any(r["id"] == args.review_id for r in get_pending_reviews()):
+        if (not any(r["id"] == args.review_id for r in get_pending_reviews())
+                and get_open_rejection(args.review_id) is None):
             logger.info("Review #%d not found (or already resolved).", args.review_id)
             print(f"Review #{args.review_id} not found (or already resolved).")
             return 0
