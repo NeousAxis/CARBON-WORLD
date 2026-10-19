@@ -4,6 +4,14 @@
 
 ---
 
+## 🧭 2026-10-19 : un rejet de A que B note suit B, sans passer par /review
+
+Cyril : « nous sommes déjà à 100 articles en review... je ne vais pas les passer en review un par un ». Ses propres décisions passées montrent qu'il suit l'analyste qui a noté dans environ 90 % de ces désaccords (carte apprise : MINT|BURN → BURN 89 %, BURN|NEUTRAL → BURN 89 %, MINT|NEUTRAL → MINT 93 %). Il a validé (« oui lance ») de suivre B automatiquement.
+
+**Règle (`e52deada`)** : A rejette, B note BURN ou MINT → l'article passe dans le circuit normal (réconciliateur, sentinelle, scoreur, writer, TX Solana) sur le verdict de B. Ligne fermée en `reanalyzed` / `rejection_verdict = b_applied` ; si le scoreur ou le réconciliateur le juge NEUTRAL, fermée en `analysts_agree`. N'arrivent chez Cyril que les cas que la sentinelle signale ET que l'auto-résolution ne tranche pas, ou une ligne qui échoue 3 runs. Stock : 20 par run (`db.get_b_only_backlog`), ligne cachée en `awaiting_b` pendant le run, tentative comptée au chargement (un run tué ne recharge pas les mêmes lignes sans fin). Un clic de Cyril sur une carte encore affichée gagne : `resolve_review` accepte `awaiting_b`, le writer réserve la ligne juste avant d'écrire l'événement et ne la rouvre jamais. Un cas signalé garde le rejet de A comme verdict A (sinon `auto_approve_unanimous.py` l'aurait approuvé comme unanime). `rejection_learning` n'agit plus que sur les lignes abandonnées par ce circuit. Deux relectures adverses (8 puis 2 constats, tous traités), 355 tests.
+
+**Vérifié** : rejoué sur une copie de la base de prod (sans LLM ni Solana) : 105 lignes, 6 runs, 77 événements (60 MINT, 17 BURN), 28 NEUTRAL fermés, 6 restants (sans texte ou B muet). Premier run réel (19.10 18:00, 11 min) : 24 lignes suivies sur B, 18 événements écrits avec TX, 6 NEUTRAL fermés, 0 envoyé à Cyril ; file 112 → 92.
+
 ## 🧭 2026-10-16 : /review ne reçoit que ce que le système n'arrive pas à trancher
 
 Cyril : « Explique-moi comme je suis passé de 5 à 114 reviews ! » puis « Nous avons dit qu'il ne devait me demander en review que les articles que le système n'arrivait pas à trancher pour apprendre de mes choix ! ». Il a raison : depuis le 13.10 (`d90b2b61`), TOUS les rejets de l'analyste A partaient chez lui (16, 36, 47, 31 par jour, 130 en attente), et l'apprentissage par catégorie (`9eb5d8ca`) attendait ses décisions pour agir, donc rien ne baissait.
