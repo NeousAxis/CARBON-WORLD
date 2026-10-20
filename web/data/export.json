@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-20T13:06:01.169180+00:00",
-  "total_events": 8742,
+  "generated_at": "2026-10-20T14:05:45.181939+00:00",
+  "total_events": 8743,
   "total_burned": 8086900705,
-  "total_minted": 11144288444,
+  "total_minted": 11144295114,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 8743,
+      "event_title": "Death toll from Houthi attack on Yemen training camp rises to 73",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/death-toll-houthi-attack-yemen-training-camp-rises-73",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6670,
+      "final_score": -4.6,
+      "confidence": 7,
+      "justification": "The deadly Houthi attack causes massive loss of life and escalates conflict, warranting a MINT decision. | The attack results in massive loss of life, undermines peace and security, and breaches fundamental human rights, leading to a strongly negative ethical assessment.",
+      "tx_hash": "migfcZ9eP6HFnqmdKsP8zwUaGjSCQxvmPFdkAczNxUBs7ydcygjs71QASvFu71xcqw7SJeUNZ9ZmLpd3AFAY2Vf",
+      "created_at": "2026-10-20T14:05:38.232428+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Yemen",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Houthi attack on a government security forces training camp killed 73 people and left 14 missing, violating the right to life and security.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 8742,
       "event_title": "Bail denied: 'Dangerous pattern': Shadrack Sibiya denied bail over threats and wiped cellphone",
@@ -201867,8 +201890,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.219,
-        "events": 32
+        "burn_ratio": 0.226,
+        "events": 31
       },
       {
         "region": "Africa",
@@ -201895,12 +201918,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 12
+        "events": 13
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.892,
-        "events": 93
+        "mint_ratio": 0.891,
+        "events": 92
       },
       {
         "region": "North America",
@@ -201951,7 +201974,7 @@
       },
       {
         "date": "2026-10-20",
-        "net_minted": 16175400,
+        "net_minted": 16182070,
         "net_burned": 1160400
       }
     ],
@@ -201969,7 +201992,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 48,
-        "negative": 280,
+        "negative": 278,
         "event_ids_positive": [
           8742,
           8733,
@@ -202021,6 +202044,7 @@
           8417
         ],
         "event_ids_negative": [
+          8743,
           8741,
           8740,
           8739,
@@ -202297,15 +202321,12 @@
           8420,
           8419,
           8418,
-          8416,
-          8415,
-          8414,
-          8413
+          8416
         ]
       },
       "UDHR": {
         "positive": 24,
-        "negative": 245,
+        "negative": 243,
         "event_ids_positive": [
           8742,
           8718,
@@ -202333,6 +202354,7 @@
           8417
         ],
         "event_ids_negative": [
+          8743,
           8741,
           8740,
           8739,
@@ -202574,10 +202596,7 @@
           8420,
           8419,
           8418,
-          8416,
-          8415,
-          8414,
-          8413
+          8416
         ]
       },
       "ILO": {
@@ -202621,7 +202640,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 59,
+        "negative": 58,
         "event_ids_positive": [
           8613,
           8584,
@@ -202686,13 +202705,12 @@
           8432,
           8425,
           8421,
-          8419,
-          8413
+          8419
         ]
       },
       "UNDRIP": {
         "positive": 9,
-        "negative": 76,
+        "negative": 75,
         "event_ids_positive": [
           8718,
           8673,
@@ -202779,8 +202797,7 @@
           8421,
           8420,
           8419,
-          8418,
-          8413
+          8418
         ]
       },
       "Animal": {
@@ -202978,14 +202995,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 58.3,
-      "mainstream_pct": 41.7,
+      "niche_pct": 61.5,
+      "mainstream_pct": 38.5,
       "total_sources_used": 96,
-      "articles_processed": 330
+      "articles_processed": 328
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 330,
+      "total_events": 328,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -203055,14 +203072,13 @@
       },
       {
         "name": "IPCC",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           8731,
           8575,
-          8548,
-          8414
+          8548
         ]
       },
       {
@@ -203385,14 +203401,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 282,
+      "total_mint": 280,
       "direct_action": {
-        "count": 263,
-        "pct": 93.3
+        "count": 261,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 17,
-        "pct": 6.0
+        "pct": 6.1
       },
       "untyped": {
         "count": 2,
@@ -203400,9 +203416,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6548,
+      "total_mint": 6549,
       "direct_action": {
-        "count": 6021,
+        "count": 6022,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -203415,9 +203431,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 95,
-      "institutional": 235,
-      "citizen_ratio": 0.288,
+      "citizen": 94,
+      "institutional": 234,
+      "citizen_ratio": 0.287,
       "daily": [
         {
           "date": "2026-10-14",
@@ -203452,7 +203468,7 @@
         {
           "date": "2026-10-20",
           "citizen": 12,
-          "institutional": 16
+          "institutional": 17
         }
       ],
       "event_ids_citizen": [
@@ -203549,10 +203565,10 @@
         8424,
         8421,
         8420,
-        8419,
-        8413
+        8419
       ],
       "event_ids_institutional": [
+        8743,
         8742,
         8741,
         8738,
@@ -203785,9 +203801,7 @@
         8422,
         8418,
         8417,
-        8416,
-        8415,
-        8414
+        8416
       ]
     }
   }
