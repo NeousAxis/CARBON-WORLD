@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-21T11:05:36.262845+00:00",
-  "total_events": 8794,
-  "total_burned": 8095873405,
-  "total_minted": 11221121314,
+  "generated_at": "2026-10-21T12:07:14.360618+00:00",
+  "total_events": 8796,
+  "total_burned": 8102543405,
+  "total_minted": 11221725314,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 8796,
+      "event_title": "Honduras: Peasant Movement Warns of the Social Cost of IMF-Backed Reforms",
+      "event_url": "https://viacampesina.org/en/2026/10/honduras-peasant-movement-warns-of-the-social-cost-of-imf-backed-reforms/",
+      "event_source": "La Via Campesina",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.84,
+      "confidence": 8,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] IMF-backed reforms worsen rural poverty and food insecurity, violating human rights and SDGs. | The peasant movement's warning highlights a concrete ethical violation by IMF-backed reforms that deepen poverty and food insecurity among rural families. While the act of raising awareness is a positive consciousness-raising effort, the underlying reforms actively undermine fundamental rights and sustainable development goals.",
+      "tx_hash": "4cQp5ma5LhkBSoWK5T9qXKheufMj355RHtqqUuUDbmCumACZhWG3rFmLLzH7GiEB366wHVLtUqaXM51tSJUUbwkJ",
+      "created_at": "2026-10-21T12:07:03.787673+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Honduras",
+      "region": "Latin America",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Peasant movement publicly warns about social costs of IMF-backed reforms, raising awareness of rural livelihood impacts and access to basic services\", \"affected_sdgs\": [1, 2, 8, 10, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"IMF-backed reforms (rising electricity prices, subsidy elimination, tax pressure) exacerbate precarious living conditions for Honduran peasant families, worsening poverty and food insecurity\", \"affected_sdgs\": [1, 2, 8, 10, 12], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 23\", \"CRC Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 8795,
+      "event_title": "Compilation of Recommendations – Submissions to the 54th Session of the UPR Working Group",
+      "event_url": "https://www.amnesty.org/en/documents/ior40/1592/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "BURN",
+      "amount_crbn": 6670000,
+      "final_score": 6.04,
+      "confidence": 9,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Amnesty International's human rights advocacy advances global justice and accountability. | The publication of human rights recommendations by a globally recognized NGO like Amnesty International constitutes a significant positive action that advances SDG 10 (Reduced Inequalities) and SDG 16 (Peace, Justice, and Strong Institutions). It directly supports the UDHR and other human rights frameworks by pressuring states to address sy",
+      "tx_hash": "3CfRVWa9nupNDafzdyAPmhccRuAxp9Sr4cU5NjK4M7KiGU2pX2XsE4z8zhXCg4APUUTFgHSfpVQhko6fZVsKP4u2",
+      "created_at": "2026-10-21T12:06:57.421824+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Amnesty International publishes a compilation of human rights recommendations for six countries (Iceland, Syria, Togo, Uganda, Venezuela, Zimbabwe) to the 54th session of the UPR Working Group, promoting accountability and rights-based policy changes.\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\", \"CRC\", \"UNDRIP\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 667000
+    },
     {
       "id": 8794,
       "event_title": "New Mexico’s transition to clean energy is actually ahead of schedule",
@@ -203073,8 +203119,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.19,
-        "events": 21
+        "burn_ratio": 0.2,
+        "events": 20
       },
       {
         "region": "Latin America",
@@ -203110,8 +203156,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.81,
-        "events": 21
+        "mint_ratio": 0.8,
+        "events": 20
       }
     ],
     "supply_trend_7d": [
@@ -203147,8 +203193,8 @@
       },
       {
         "date": "2026-10-21",
-        "net_minted": 40993600,
-        "net_burned": 825600
+        "net_minted": 41597600,
+        "net_burned": 7495600
       }
     ],
     "event_of_the_day": {
@@ -203164,9 +203210,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 54,
-        "negative": 286,
+        "positive": 55,
+        "negative": 285,
         "event_ids_positive": [
+          8795,
           8794,
           8773,
           8772,
@@ -203223,6 +203270,7 @@
           8461
         ],
         "event_ids_negative": [
+          8796,
           8793,
           8792,
           8791,
@@ -203506,15 +203554,14 @@
           8458,
           8457,
           8456,
-          8455,
-          8454,
-          8453
+          8455
         ]
       },
       "UDHR": {
-        "positive": 24,
-        "negative": 242,
+        "positive": 25,
+        "negative": 241,
         "event_ids_positive": [
+          8795,
           8756,
           8742,
           8718,
@@ -203541,6 +203588,7 @@
           8461
         ],
         "event_ids_negative": [
+          8796,
           8791,
           8789,
           8788,
@@ -203780,15 +203828,14 @@
           8458,
           8457,
           8456,
-          8455,
-          8454,
-          8453
+          8455
         ]
       },
       "ILO": {
-        "positive": 3,
+        "positive": 4,
         "negative": 26,
         "event_ids_positive": [
+          8795,
           8584,
           8559,
           8547
@@ -203823,9 +203870,10 @@
         ]
       },
       "CRC": {
-        "positive": 5,
-        "negative": 53,
+        "positive": 6,
+        "negative": 54,
         "event_ids_positive": [
+          8795,
           8756,
           8613,
           8584,
@@ -203833,6 +203881,7 @@
           8522
         ],
         "event_ids_negative": [
+          8796,
           8788,
           8787,
           8786,
@@ -203889,9 +203938,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 9,
-        "negative": 75,
+        "positive": 10,
+        "negative": 74,
         "event_ids_positive": [
+          8795,
           8718,
           8673,
           8627,
@@ -203976,8 +204026,7 @@
           8460,
           8459,
           8458,
-          8456,
-          8453
+          8456
         ]
       },
       "Animal": {
@@ -204277,6 +204326,18 @@
         ]
       },
       {
+        "name": "IMF",
+        "count": 4,
+        "burn_count": 2,
+        "mint_count": 2,
+        "event_ids": [
+          8796,
+          8671,
+          8584,
+          8544
+        ]
+      },
+      {
         "name": "IPCC",
         "count": 4,
         "burn_count": 0,
@@ -204306,17 +204367,6 @@
         "mint_count": 0,
         "event_ids": [
           8762,
-          8584,
-          8544
-        ]
-      },
-      {
-        "name": "IMF",
-        "count": 3,
-        "burn_count": 2,
-        "mint_count": 1,
-        "event_ids": [
-          8671,
           8584,
           8544
         ]
@@ -204381,9 +204431,9 @@
       },
       {
         "name": "Construction",
-        "count": 38,
+        "count": 37,
         "burn_count": 6,
-        "mint_count": 32,
+        "mint_count": 31,
         "event_ids": [
           8792,
           8788,
@@ -204421,8 +204471,7 @@
           8501,
           8492,
           8484,
-          8460,
-          8454
+          8460
         ]
       },
       {
@@ -204589,14 +204638,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 54,
+      "total_burn": 55,
       "direct_action": {
-        "count": 49,
-        "pct": 90.7
+        "count": 50,
+        "pct": 90.9
       },
       "editorial_consciousness": {
         "count": 5,
-        "pct": 9.3
+        "pct": 9.1
       },
       "untyped": {
         "count": 0,
@@ -204604,9 +204653,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2194,
+      "total_burn": 2195,
       "direct_action": {
-        "count": 1956,
+        "count": 1957,
         "pct": 89.2
       },
       "editorial_consciousness": {
@@ -204619,14 +204668,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 288,
+      "total_mint": 287,
       "direct_action": {
-        "count": 268,
-        "pct": 93.1
+        "count": 267,
+        "pct": 93.0
       },
       "editorial_alarm": {
         "count": 18,
-        "pct": 6.2
+        "pct": 6.3
       },
       "untyped": {
         "count": 2,
@@ -204634,9 +204683,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6592,
+      "total_mint": 6593,
       "direct_action": {
-        "count": 6061,
+        "count": 6062,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -204649,9 +204698,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 98,
-      "institutional": 244,
-      "citizen_ratio": 0.287,
+      "citizen": 99,
+      "institutional": 243,
+      "citizen_ratio": 0.289,
       "daily": [
         {
           "date": "2026-10-15",
@@ -204685,11 +204734,13 @@
         },
         {
           "date": "2026-10-21",
-          "citizen": 9,
+          "citizen": 11,
           "institutional": 17
         }
       ],
       "event_ids_citizen": [
+        8796,
+        8795,
         8791,
         8787,
         8777,
@@ -204786,8 +204837,7 @@
         8468,
         8461,
         8460,
-        8459,
-        8454
+        8459
       ],
       "event_ids_institutional": [
         8794,
@@ -205032,8 +205082,7 @@
         8458,
         8457,
         8456,
-        8455,
-        8453
+        8455
       ]
     }
   }
