@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-21T04:07:12.239512+00:00",
-  "total_events": 8782,
+  "generated_at": "2026-10-21T05:06:20.747762+00:00",
+  "total_events": 8783,
   "total_burned": 8095798605,
-  "total_minted": 11196172114,
+  "total_minted": 11196232514,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 8783,
+      "event_title": "Italy approves sweeping security measures in response to protests",
+      "event_url": "https://www.aljazeera.com/news/2026/10/21/italy-approves-sweeping-security-measures-in-response-to-protests?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -3.12,
+      "confidence": 7,
+      "justification": "Deployment of troops to suppress protests risks violating fundamental rights and undermining democratic norms. | While the government's action aims to restore order, the deployment of troops to address civilian protests carries significant risks to fundamental rights and democratic principles. The potential for escalation and suppression of dissent outweighs the short-term benefits of public safety, particularly given the lack of clarity on the nature of the protests and the proportionality of t",
+      "tx_hash": "5DfR7kQXCMfT3LMAjcxCUYA5L4Mkjjx6FcAiXYmPwgEezfsJfnNwVCRAdUpaM65vcrWCZqvPM1CrPRuRt3M16q5N",
+      "created_at": "2026-10-21T05:06:13.340118+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": "[{\"description\": \"Government takes action to restore public order in response to violent protests, potentially preventing further harm to civilians and infrastructure.\", \"affected_sdgs\": [11, 16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deployment of troops to a city in response to protests risks escalating tensions, suppressing legitimate dissent, and violating freedoms of assembly and expression (UDHR Articles 19, 20).\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Use of military forces in domestic policing may set a precedent for further militarization of law enforcement, undermining democratic norms and civil liberties.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 8782,
       "event_title": "Faecal waste pollutes drinking water in Mexico’s Yucatan, Greenpeace says",
@@ -202819,8 +202842,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.892,
-        "events": 93
+        "mint_ratio": 0.894,
+        "events": 94
       },
       {
         "region": "North America",
@@ -202871,7 +202894,7 @@
       },
       {
         "date": "2026-10-21",
-        "net_minted": 16044400,
+        "net_minted": 16104800,
         "net_burned": 750800
       }
     ],
@@ -202889,7 +202912,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 53,
-        "negative": 282,
+        "negative": 283,
         "event_ids_positive": [
           8773,
           8772,
@@ -202946,6 +202969,7 @@
           8461
         ],
         "event_ids_negative": [
+          8783,
           8782,
           8781,
           8780,
@@ -203232,7 +203256,7 @@
       },
       "UDHR": {
         "positive": 24,
-        "negative": 241,
+        "negative": 242,
         "event_ids_positive": [
           8756,
           8742,
@@ -203260,6 +203284,7 @@
           8461
         ],
         "event_ids_negative": [
+          8783,
           8782,
           8781,
           8779,
@@ -203917,11 +203942,11 @@
       "niche_pct": 63.0,
       "mainstream_pct": 37.0,
       "total_sources_used": 100,
-      "articles_processed": 337
+      "articles_processed": 338
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 337,
+      "total_events": 338,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -204327,9 +204352,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 284,
+      "total_mint": 285,
       "direct_action": {
-        "count": 264,
+        "count": 265,
         "pct": 93.0
       },
       "editorial_alarm": {
@@ -204342,9 +204367,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6581,
+      "total_mint": 6582,
       "direct_action": {
-        "count": 6051,
+        "count": 6052,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -204358,8 +204383,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 99,
-      "institutional": 238,
-      "citizen_ratio": 0.294,
+      "institutional": 239,
+      "citizen_ratio": 0.293,
       "daily": [
         {
           "date": "2026-10-15",
@@ -204394,7 +204419,7 @@
         {
           "date": "2026-10-21",
           "citizen": 7,
-          "institutional": 7
+          "institutional": 8
         }
       ],
       "event_ids_citizen": [
@@ -204499,6 +204524,7 @@
         8448
       ],
       "event_ids_institutional": [
+        8783,
         8782,
         8781,
         8780,
