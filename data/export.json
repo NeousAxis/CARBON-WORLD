@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-22T15:10:28.378821+00:00",
-  "total_events": 8849,
+  "generated_at": "2026-10-22T16:06:19.681816+00:00",
+  "total_events": 8850,
   "total_burned": 8119127405,
-  "total_minted": 11289365214,
+  "total_minted": 11289665214,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 8850,
+      "event_title": "Google plans big virtual power plant in energy-strapped PJM grid",
+      "event_url": "https://www.canarymedia.com/articles/virtual-power-plants/google-plans-big-virtual-power-plant-in-energy-strapped-pjm-grid",
+      "event_source": "Canary Media",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": 2.64,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables corporate-driven energy demand, undermining grid equity and climate goals. | The VPP initiative represents a significant step toward grid decarbonization and resilience, aligning with SDGs 7, 9, 11, and 13. However, its primary motivation—supporting energy-intensive data centers—undermines its climate benefits by perpetuating high demand. The cor",
+      "tx_hash": "3aifGxePL9Ry3wAX1qdiz42vcvSMKF8BuSSrWHHX3RYpz6AAGLdiwBhvpoenEAQgcDATntVUVbM7tKT5L8Hrxwsm",
+      "created_at": "2026-10-22T16:06:11.473572+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Google and Voltus plan to deploy a gigawatt-scale virtual power plant (VPP) in PJM Interconnection, leveraging distributed energy resources (DERs) to reduce grid strain and integrate renewable energy.\", \"affected_sdgs\": [7, 9, 11, 13], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"VPPs can enhance grid resilience, reduce peak demand, and lower reliance on fossil-fuel peaker plants, supporting decarbonization efforts.\", \"affected_sdgs\": [7, 13], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"The initiative could serve as a scalable model for other regions, accelerating adoption of distributed energy solutions and reducing emissions from centralized power generation.\", \"affected_sdgs\": [7, 9, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The VPP is explicitly designed to free up grid capacity for data centers, which are energy-intensive and contribute to rising electricity demand, potentially locking in high-energy infrastructure.\", \"affected_sdgs\": [7, 13], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Dependence on corporate-led energy solutions may sideline community-owned or public utility models, risking inequitable access to benefits and reinforcing private control over critical infrastructure.\", \"affected_sdgs\": [7, 10, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential for data privacy concerns if household energy data is aggregated and managed by private entities without robust safeguards.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 12\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8849,
       "event_title": "Peru: First Scientific Fish Collection in Madre de Dios Reveals Impacts of Illegal Mining on Aquatic Life",
@@ -204274,8 +204297,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 43312810
+        "count": 44,
+        "total_amount": 43612810
       },
       {
         "country": "France",
@@ -204338,8 +204361,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.203,
-        "events": 59
+        "burn_ratio": 0.2,
+        "events": 60
       },
       {
         "region": "Latin America",
@@ -204375,8 +204398,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.797,
-        "events": 59
+        "mint_ratio": 0.8,
+        "events": 60
       }
     ],
     "supply_trend_7d": [
@@ -204412,7 +204435,7 @@
       },
       {
         "date": "2026-10-22",
-        "net_minted": 41392800,
+        "net_minted": 41692800,
         "net_burned": 9584000
       }
     ],
@@ -204430,7 +204453,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 57,
-        "negative": 290,
+        "negative": 291,
         "event_ids_positive": [
           8846,
           8841,
@@ -204491,6 +204514,7 @@
           8505
         ],
         "event_ids_negative": [
+          8850,
           8849,
           8848,
           8847,
@@ -204785,7 +204809,7 @@
       },
       "UDHR": {
         "positive": 24,
-        "negative": 236,
+        "negative": 237,
         "event_ids_positive": [
           8846,
           8819,
@@ -204813,6 +204837,7 @@
           8510
         ],
         "event_ids_negative": [
+          8850,
           8847,
           8845,
           8844,
@@ -205320,7 +205345,7 @@
       },
       "PB": {
         "positive": 38,
-        "negative": 98,
+        "negative": 99,
         "event_ids_positive": [
           8811,
           8794,
@@ -205362,6 +205387,7 @@
           8505
         ],
         "event_ids_negative": [
+          8850,
           8849,
           8848,
           8843,
@@ -205467,11 +205493,11 @@
       "niche_pct": 61.5,
       "mainstream_pct": 38.5,
       "total_sources_used": 104,
-      "articles_processed": 348
+      "articles_processed": 349
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 348,
+      "total_events": 349,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -205597,10 +205623,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 50,
+        "count": 51,
         "burn_count": 10,
-        "mint_count": 40,
+        "mint_count": 41,
         "event_ids": [
+          8850,
           8841,
           8836,
           8834,
@@ -205735,10 +205762,11 @@
       },
       {
         "name": "Tech",
-        "count": 23,
+        "count": 24,
         "burn_count": 3,
-        "mint_count": 20,
+        "mint_count": 21,
         "event_ids": [
+          8850,
           8833,
           8829,
           8825,
@@ -205891,10 +205919,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 291,
+      "total_mint": 292,
       "direct_action": {
-        "count": 271,
-        "pct": 93.1
+        "count": 272,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 19,
@@ -205906,9 +205934,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6641,
+      "total_mint": 6642,
       "direct_action": {
-        "count": 6107,
+        "count": 6108,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -205921,9 +205949,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 103,
+      "citizen": 104,
       "institutional": 245,
-      "citizen_ratio": 0.296,
+      "citizen_ratio": 0.298,
       "daily": [
         {
           "date": "2026-10-16",
@@ -205957,11 +205985,12 @@
         },
         {
           "date": "2026-10-22",
-          "citizen": 11,
+          "citizen": 12,
           "institutional": 22
         }
       ],
       "event_ids_citizen": [
+        8850,
         8849,
         8847,
         8845,
