@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-22T16:06:19.681816+00:00",
-  "total_events": 8850,
-  "total_burned": 8119127405,
-  "total_minted": 11289665214,
+  "generated_at": "2026-10-22T17:07:32.401156+00:00",
+  "total_events": 8852,
+  "total_burned": 8119552405,
+  "total_minted": 11289965214,
   "pending_reviews": 7,
   "events": [
+    {
+      "id": 8852,
+      "event_title": "Greece, Egypt in Talks to Extend Maritime Zone Further East",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/greece-egypt-talks-extend-maritime-zone-further-east",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.31,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action enables exclusionary maritime claims, risking regional harm and undermining inclusive rights. | The diplomatic talks between Greece and Egypt represent a proactive step toward regional stability and cooperation, aligning with SDG 16 and 17. However, the context of escalating maritime disputes introduces significant risks to peace and inclusive governance",
+      "tx_hash": "3RZC1cd7DhrNeL6VPsMFERPZM72JnXfQYdFNXczqsWM3NYj73ynLayes38hZFY7TahdPuK4RbGWLs3Tm5ytMfMF2",
+      "created_at": "2026-10-22T17:07:25.046159+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Greece and Egypt engage in diplomatic talks to extend their Exclusive Economic Zone (EEZ), potentially strengthening regional cooperation and stability in the eastern Mediterranean.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The talks are a direct response to Turkey-Libya maritime accord, which risks escalating geopolitical tensions and undermining peaceful dispute resolution in the region.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Potential exclusion of other regional actors (e.g., Turkey, Libya) from maritime negotiations could reinforce inequalities and limit inclusive partnerships.\", \"affected_sdgs\": [10, 17], \"violated_rights\": [\"UDHR Article 1\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 8851,
+      "event_title": "A412: Annecy prosecutor requests immediate halt to highway construction site",
+      "event_url": "https://reporterre.net/A412-la-procureure-d-Annecy-demande-la-suspension-immediate-du-chantier",
+      "event_source": "Reporterre",
+      "decision": "BURN",
+      "amount_crbn": 425000,
+      "final_score": 3.62,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] Prosecutor's request to halt ecologically harmful highway construction aligns with climate and biodiversity protection. | The prosecutor's request to halt the A412 highway construction prioritizes ecological preservation and judicial accountability over short-term economic or infrastructural gains. While the suspension may introduce temporary uncertainty, the direct protection ",
+      "tx_hash": "3RkLVTcJevp9tYAtjodqxGh8Ltq6BooSgRQgpX45sv98dS7aXSiwJmnK7ArkopX788mt33onuyRtzj889UEAbo4d",
+      "created_at": "2026-10-22T17:07:22.872391+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Prosecutor requests immediate suspension of A412 highway construction, halting deforestation, land clearing, and earthworks that harm ecosystems and biodiversity.\", \"affected_sdgs\": [13, 14, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}, {\"description\": \"Legal action reinforces judicial oversight of infrastructure projects, potentially protecting indigenous or local community rights to land and natural resources.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential delay in infrastructure development could temporarily limit regional economic connectivity and access to services, though no direct evidence of harm to livelihoods yet.\", \"affected_sdgs\": [8, 9], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"Uncertainty created by legal proceedings may deter investment or planning for sustainable transport alternatives, though this is speculative.\", \"affected_sdgs\": [11], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 8850,
       "event_title": "Google plans big virtual power plant in energy-strapped PJM grid",
@@ -204379,12 +204425,12 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 14
+        "events": 12
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.909,
-        "events": 99
+        "mint_ratio": 0.9,
+        "events": 100
       },
       {
         "region": "Africa",
@@ -204435,8 +204481,8 @@
       },
       {
         "date": "2026-10-22",
-        "net_minted": 41692800,
-        "net_burned": 9584000
+        "net_minted": 41992800,
+        "net_burned": 10009000
       }
     ],
     "event_of_the_day": {
@@ -204452,9 +204498,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 57,
-        "negative": 291,
+        "positive": 58,
+        "negative": 290,
         "event_ids_positive": [
+          8851,
           8846,
           8841,
           8819,
@@ -204514,6 +204561,7 @@
           8505
         ],
         "event_ids_negative": [
+          8852,
           8850,
           8849,
           8848,
@@ -204802,15 +204850,14 @@
           8508,
           8507,
           8506,
-          8504,
-          8503,
-          8502
+          8504
         ]
       },
       "UDHR": {
-        "positive": 24,
-        "negative": 237,
+        "positive": 25,
+        "negative": 236,
         "event_ids_positive": [
+          8851,
           8846,
           8819,
           8795,
@@ -204837,6 +204884,7 @@
           8510
         ],
         "event_ids_negative": [
+          8852,
           8850,
           8847,
           8845,
@@ -205071,9 +205119,7 @@
           8508,
           8507,
           8506,
-          8504,
-          8503,
-          8502
+          8504
         ]
       },
       "ILO": {
@@ -205185,9 +205231,10 @@
         ]
       },
       "UNDRIP": {
-        "positive": 11,
+        "positive": 12,
         "negative": 62,
         "event_ids_positive": [
+          8851,
           8819,
           8795,
           8718,
@@ -205266,9 +205313,10 @@
         ]
       },
       "Animal": {
-        "positive": 25,
+        "positive": 26,
         "negative": 45,
         "event_ids_positive": [
+          8851,
           8818,
           8772,
           8767,
@@ -205344,9 +205392,10 @@
         ]
       },
       "PB": {
-        "positive": 38,
-        "negative": 99,
+        "positive": 39,
+        "negative": 98,
         "event_ids_positive": [
+          8851,
           8811,
           8794,
           8773,
@@ -205484,8 +205533,7 @@
           8525,
           8521,
           8520,
-          8508,
-          8503
+          8508
         ]
       }
     },
@@ -205683,9 +205731,10 @@
       {
         "name": "Construction",
         "count": 36,
-        "burn_count": 6,
-        "mint_count": 30,
+        "burn_count": 7,
+        "mint_count": 29,
         "event_ids": [
+          8851,
           8826,
           8807,
           8797,
@@ -205720,8 +205769,7 @@
           8546,
           8542,
           8528,
-          8507,
-          8503
+          8507
         ]
       },
       {
@@ -205845,6 +205893,29 @@
         ]
       },
       {
+        "name": "Transport",
+        "count": 15,
+        "burn_count": 2,
+        "mint_count": 13,
+        "event_ids": [
+          8852,
+          8851,
+          8824,
+          8813,
+          8759,
+          8752,
+          8735,
+          8670,
+          8650,
+          8629,
+          8546,
+          8535,
+          8526,
+          8523,
+          8505
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 14,
         "burn_count": 2,
@@ -205865,38 +205936,17 @@
           8566,
           8521
         ]
-      },
-      {
-        "name": "Transport",
-        "count": 13,
-        "burn_count": 1,
-        "mint_count": 12,
-        "event_ids": [
-          8824,
-          8813,
-          8759,
-          8752,
-          8735,
-          8670,
-          8650,
-          8629,
-          8546,
-          8535,
-          8526,
-          8523,
-          8505
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 57,
+      "total_burn": 58,
       "direct_action": {
         "count": 52,
-        "pct": 91.2
+        "pct": 89.7
       },
       "editorial_consciousness": {
-        "count": 5,
-        "pct": 8.8
+        "count": 6,
+        "pct": 10.3
       },
       "untyped": {
         "count": 0,
@@ -205904,14 +205954,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2200,
+      "total_burn": 2201,
       "direct_action": {
         "count": 1962,
-        "pct": 89.2
+        "pct": 89.1
       },
       "editorial_consciousness": {
-        "count": 201,
-        "pct": 9.1
+        "count": 202,
+        "pct": 9.2
       },
       "untyped": {
         "count": 37,
@@ -205919,10 +205969,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 292,
+      "total_mint": 291,
       "direct_action": {
-        "count": 272,
-        "pct": 93.2
+        "count": 271,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 19,
@@ -205934,9 +205984,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6642,
+      "total_mint": 6643,
       "direct_action": {
-        "count": 6108,
+        "count": 6109,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -205949,9 +205999,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 104,
-      "institutional": 245,
-      "citizen_ratio": 0.298,
+      "citizen": 105,
+      "institutional": 244,
+      "citizen_ratio": 0.301,
       "daily": [
         {
           "date": "2026-10-16",
@@ -205985,11 +206035,12 @@
         },
         {
           "date": "2026-10-22",
-          "citizen": 12,
-          "institutional": 22
+          "citizen": 13,
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
+        8851,
         8850,
         8849,
         8847,
@@ -206096,6 +206147,7 @@
         8505
       ],
       "event_ids_institutional": [
+        8852,
         8848,
         8846,
         8844,
@@ -206338,9 +206390,7 @@
         8508,
         8507,
         8506,
-        8504,
-        8503,
-        8502
+        8504
       ]
     }
   }
