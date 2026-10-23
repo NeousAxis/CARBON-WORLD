@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-23T13:09:03.731476+00:00",
-  "total_events": 8900,
+  "generated_at": "2026-10-23T14:08:12.437559+00:00",
+  "total_events": 8902,
   "total_burned": 8126670305,
-  "total_minted": 11317691814,
+  "total_minted": 11318382814,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 8902,
+      "event_title": "Leader of junior coalition partner quits Polish government",
+      "event_url": "https://notesfrompoland.com/2026/10/23/leader-of-junior-coalition-partner-quits-polish-government/",
+      "event_source": "Notes From Poland (EN)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.36,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Leadership instability in a coalition partner introduces governance risks without clear benefits. | The resignation of a coalition leader introduces short-term instability but does not alter the party's continued participation in government. The net effect is a moderate negative impact on governance stability, th",
+      "tx_hash": "53c1GnEaB6BCrEZaQEWHCy6uTamqXD3BX8vm6eHg5humSM6z6V8AoSYkPsPtB6jYinnPzi43Ce8JPHjWKvLXzVAi",
+      "created_at": "2026-10-23T14:08:05.794047+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Poland",
+      "region": "Europe",
+      "administration": "Poland-KO",
+      "positive_aspects_json": "[{\"description\": \"Poland 2050 remains in the government despite leadership change, maintaining continuity of its policy commitments\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Leadership change in a junior coalition partner may destabilize policy implementation and reduce accountability\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 8901,
+      "event_title": "Who were the 5,000 foreigners deported from Norway last year?",
+      "event_url": "https://www.thelocal.no/20261023/in-data-who-were-the-5000-foreigners-deported-from-norway-last-year",
+      "event_source": "The Local Norway (EN)",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -3.04,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Deportation of 5,000 individuals raises significant human rights concerns outweighing transparency benefits. | While Norway's transparency in reporting deportations is a positive step for accountability, the act of deporting 5,000 individuals raises significant ethical concerns. Deportations often disrupt lives, separate families, and may violate fundamental human rights, particularly if due process or humanitarian considerations ",
+      "tx_hash": "5UGWMCGbofEy3JHYLdKwSw1UFftjAotgTVShfW9MhxqJaNRbgGwrYJSRhzvDxLusYTAiWvWCXVh28VL9DViYbaj1",
+      "created_at": "2026-10-23T14:08:03.553940+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Norway",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Norway's Directorate of Immigration (UDI) tracks and reports deportation data, demonstrating transparency in migration governance and accountability for enforcement actions.\", \"affected_sdgs\": [10, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deportation of 5,000 foreign nationals from Norway, which may involve separation from families, loss of livelihoods, and potential human rights concerns under international law.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 14\", \"UDHR Article 16\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 8900,
       "event_title": "Billion-Dollar Dairy Plant Sparks Concerns Over Water Pollution Risks",
@@ -205533,8 +205579,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.925,
-        "events": 107
+        "mint_ratio": 0.927,
+        "events": 109
       },
       {
         "region": "Africa",
@@ -205585,7 +205631,7 @@
       },
       {
         "date": "2026-10-23",
-        "net_minted": 9193000,
+        "net_minted": 9884000,
         "net_burned": 1557500
       }
     ],
@@ -205603,7 +205649,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 59,
-        "negative": 306,
+        "negative": 308,
         "event_ids_positive": [
           8892,
           8883,
@@ -205666,6 +205712,8 @@
           8542
         ],
         "event_ids_negative": [
+          8902,
+          8901,
           8900,
           8899,
           8898,
@@ -205976,7 +206024,7 @@
       },
       "UDHR": {
         "positive": 28,
-        "negative": 248,
+        "negative": 249,
         "event_ids_positive": [
           8892,
           8883,
@@ -206008,6 +206056,7 @@
           8542
         ],
         "event_ids_negative": [
+          8901,
           8899,
           8898,
           8897,
@@ -206682,11 +206731,11 @@
       "niche_pct": 59.0,
       "mainstream_pct": 41.0,
       "total_sources_used": 105,
-      "articles_processed": 366
+      "articles_processed": 368
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 366,
+      "total_events": 368,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -206714,6 +206763,26 @@
         ]
       },
       {
+        "name": "WHO",
+        "count": 12,
+        "burn_count": 3,
+        "mint_count": 9,
+        "event_ids": [
+          8901,
+          8884,
+          8874,
+          8869,
+          8846,
+          8820,
+          8710,
+          8706,
+          8655,
+          8590,
+          8562,
+          8559
+        ]
+      },
+      {
         "name": "EU",
         "count": 12,
         "burn_count": 0,
@@ -206731,25 +206800,6 @@
           8624,
           8621,
           8538
-        ]
-      },
-      {
-        "name": "WHO",
-        "count": 11,
-        "burn_count": 3,
-        "mint_count": 8,
-        "event_ids": [
-          8884,
-          8874,
-          8869,
-          8846,
-          8820,
-          8710,
-          8706,
-          8655,
-          8590,
-          8562,
-          8559
         ]
       },
       {
@@ -207121,14 +207171,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 307,
+      "total_mint": 309,
       "direct_action": {
-        "count": 288,
-        "pct": 93.8
+        "count": 290,
+        "pct": 93.9
       },
       "editorial_alarm": {
         "count": 18,
-        "pct": 5.9
+        "pct": 5.8
       },
       "untyped": {
         "count": 1,
@@ -207136,9 +207186,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6685,
+      "total_mint": 6687,
       "direct_action": {
-        "count": 6150,
+        "count": 6152,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -207151,9 +207201,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 109,
-      "institutional": 257,
-      "citizen_ratio": 0.298,
+      "citizen": 110,
+      "institutional": 258,
+      "citizen_ratio": 0.299,
       "daily": [
         {
           "date": "2026-10-17",
@@ -207187,11 +207237,12 @@
         },
         {
           "date": "2026-10-23",
-          "citizen": 9,
-          "institutional": 19
+          "citizen": 10,
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
+        8902,
         8900,
         8899,
         8895,
@@ -207303,6 +207354,7 @@
         8535
       ],
       "event_ids_institutional": [
+        8901,
         8898,
         8897,
         8896,
