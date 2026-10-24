@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-24T10:05:48.082148+00:00",
-  "total_events": 8929,
+  "generated_at": "2026-10-24T11:05:58.035108+00:00",
+  "total_events": 8930,
   "total_burned": 8139412805,
-  "total_minted": 11340732714,
+  "total_minted": 11341432714,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 8930,
+      "event_title": "Behind the Colorful Paint, There’s a Lead Threat to Children",
+      "event_url": "https://mongabay.co.id/short-article/2026/10/di-balik-warna-warni-cat-ada-ancaman-timbal-bagi-anak-anak/",
+      "event_source": "Mongabay Indonesia",
+      "decision": "MINT",
+      "amount_crbn": 700000,
+      "final_score": -3.2,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Exposure to lead-based paint harms children's health and development, outweighing the awareness-raising aspect. | The article highlights a critical public health issue where lead-based paint threatens children's development, violating their rights to health and safety. While the report itself is a positive act of",
+      "tx_hash": "386sJmRDum6e3LhaxigjZRz3eX2KSZ5bZvSQzVpJ54uFaZiPMKbFEtfEeh2Gim75QTgcebBRaW38wzX731B8MWKC",
+      "created_at": "2026-10-24T11:05:51.046173+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Mongabay Indonesia publishes an investigative report exposing the health risks of lead-based paint to children, raising public awareness and informing policy discussions.\", \"affected_sdgs\": [3, 12], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Widespread use of lead-based paint in homes, schools, and playgrounds poses a direct health threat to children through inhalation or ingestion of lead dust, risking developmental harm.\", \"affected_sdgs\": [3, 12], \"violated_rights\": [\"CRC Article 6\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 8929,
       "event_title": "Calling out the army against its own population is extremely worrying",
@@ -206114,8 +206137,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 27131410
+        "count": 42,
+        "total_amount": 27126000
       },
       {
         "country": "France",
@@ -206134,8 +206157,8 @@
       },
       {
         "country": "Indonesia",
-        "count": 13,
-        "total_amount": 3188660
+        "count": 14,
+        "total_amount": 3888660
       }
     ],
     "top_countries_burn": [
@@ -206173,8 +206196,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.259,
-        "events": 27
+        "burn_ratio": 0.25,
+        "events": 28
       },
       {
         "region": "Africa",
@@ -206182,14 +206205,14 @@
         "events": 24
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.179,
+        "events": 56
+      },
+      {
         "region": "Latin America",
         "burn_ratio": 0.176,
         "events": 34
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.175,
-        "events": 57
       }
     ],
     "top_regions_destructive": [
@@ -206204,14 +206227,14 @@
         "events": 110
       },
       {
-        "region": "North America",
-        "mint_ratio": 0.825,
-        "events": 57
-      },
-      {
         "region": "Latin America",
         "mint_ratio": 0.824,
         "events": 34
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.821,
+        "events": 56
       },
       {
         "region": "Africa",
@@ -206252,20 +206275,20 @@
       },
       {
         "date": "2026-10-24",
-        "net_minted": 10437100,
+        "net_minted": 11137100,
         "net_burned": 957500
       }
     ],
     "event_of_the_day": {
-      "id": 8894,
-      "event_title": "Sudan: El Fasher civilians suffer unlawful killings, detention, and torture one year after city’s capture by the RSF – new testimony",
-      "decision": "MINT",
-      "amount_crbn": 82900,
-      "final_score": -6.99,
+      "id": 8909,
+      "event_title": "AviList updated for 2026",
+      "decision": "BURN",
+      "amount_crbn": 7480000,
+      "final_score": 6.81,
       "confidence": 9,
-      "country": "Sudan",
-      "region": "Africa",
-      "created_at": "2026-10-23T10:06:49.524004+00:00"
+      "country": null,
+      "region": null,
+      "created_at": "2026-10-23T17:06:15.708019+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
@@ -206332,6 +206355,7 @@
           8569
         ],
         "event_ids_negative": [
+          8930,
           8929,
           8928,
           8926,
@@ -206638,13 +206662,12 @@
           8567,
           8566,
           8565,
-          8564,
-          8563
+          8564
         ]
       },
       "UDHR": {
         "positive": 27,
-        "negative": 251,
+        "negative": 250,
         "event_ids_positive": [
           8927,
           8921,
@@ -206924,8 +206947,7 @@
           8567,
           8566,
           8565,
-          8564,
-          8563
+          8564
         ]
       },
       "ILO": {
@@ -206970,7 +206992,7 @@
       },
       "CRC": {
         "positive": 9,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           8869,
           8868,
@@ -206983,6 +207005,7 @@
           8584
         ],
         "event_ids_negative": [
+          8930,
           8918,
           8911,
           8908,
@@ -207199,7 +207222,7 @@
       },
       "PB": {
         "positive": 35,
-        "negative": 99,
+        "negative": 98,
         "event_ids_positive": [
           8909,
           8892,
@@ -207335,14 +207358,13 @@
           8567,
           8566,
           8565,
-          8564,
-          8563
+          8564
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 61.0,
-      "mainstream_pct": 39.0,
+      "niche_pct": 61.9,
+      "mainstream_pct": 38.1,
       "total_sources_used": 105,
       "articles_processed": 367
     },
@@ -207470,9 +207492,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 56,
+        "count": 55,
         "burn_count": 10,
-        "mint_count": 46,
+        "mint_count": 45,
         "event_ids": [
           8918,
           8914,
@@ -207528,8 +207550,7 @@
           8611,
           8593,
           8577,
-          8567,
-          8563
+          8567
         ]
       },
       {
@@ -207790,9 +207811,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6709,
+      "total_mint": 6710,
       "direct_action": {
-        "count": 6170,
+        "count": 6171,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -207805,9 +207826,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 114,
-      "institutional": 253,
-      "citizen_ratio": 0.311,
+      "citizen": 113,
+      "institutional": 254,
+      "citizen_ratio": 0.308,
       "daily": [
         {
           "date": "2026-10-18",
@@ -207842,7 +207863,7 @@
         {
           "date": "2026-10-24",
           "citizen": 5,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -207958,10 +207979,10 @@
         8578,
         8571,
         8567,
-        8566,
-        8563
+        8566
       ],
       "event_ids_institutional": [
+        8930,
         8924,
         8923,
         8922,
