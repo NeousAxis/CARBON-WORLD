@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-10-25T01:06:05.083025+00:00",
-  "total_events": 8947,
+  "generated_at": "2026-10-25T02:05:49.174701+00:00",
+  "total_events": 8950,
   "total_burned": 8139837805,
-  "total_minted": 11359713514,
+  "total_minted": 11360369114,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 8950,
+      "event_title": "Alert in a Mendoza hospital: two patients die from bacterial infection after surgery",
+      "event_url": "https://www.clarin.com/sociedad/mendoza-pacientes-murieron-operados-hospital-privado-ministerio-salud-investiga-posible-contaminacion-quirofanos_0_CshD76e5eJ.html",
+      "event_source": "Clarin Sociedad (AR)",
+      "decision": "MINT",
+      "amount_crbn": 67600,
+      "final_score": -2.92,
+      "confidence": 8,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Healthcare failure causing preventable deaths outweighs government response in ethical weight | The event reveals a critical failure in healthcare safety leading to preventable deaths, which violates fundamental rights to health and life. However, the government's swift suspension of surgeries and investigation demonstrates accountability and a commitment to preventing future harm, aligning with public health obligations.",
+      "tx_hash": "2Fvoq1y8UHBDFSLDdsSTch2EEiYVFqTXg5PBrKp2TteYcKEoYzaqyofcVcRw1Bxm9i28VTDrpL7U3ZGWqSncBvq",
+      "created_at": "2026-10-25T02:05:42.123848+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Argentina",
+      "region": "Latin America",
+      "administration": "Argentina-La Libertad Avanza",
+      "positive_aspects_json": "[{\"description\": \"Government of Mendoza suspends surgeries and launches investigation into potential contamination in operating rooms, demonstrating proactive public health response to protect patients\", \"affected_sdgs\": [3], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Two patients die and two others contract bacterial infections following surgeries at a private hospital, indicating severe failure in hospital hygiene protocols and patient safety standards\", \"affected_sdgs\": [3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
+    {
+      "id": 8949,
+      "event_title": "Trump defends tariffs at rally as Audi announces U.S. factory investment",
+      "event_url": "https://www.japantimes.co.jp/business/2026/10/25/economy/trump-tariffs-audi-factory-election/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.36,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Protectionist tariffs undermine global trade stability and long-term economic equity despite short-term corporate gains. | The Audi investment is a positive economic signal, supporting decent work and industry growth. However, Trump's defense of tariffs undermines global trade stability and responsible consumption, creating a net negative ethical balance. The tariffs' long-term harm to international cooperation and economic equity",
+      "tx_hash": "5eg6ECNJg6G1AbfiMoSzXBpeugMBz71xGxZPWcUL2WkHeSFjoces79SQg12nb2o1XUx4nKbseQ69ML5CUGvC9nwd",
+      "created_at": "2026-10-25T02:05:39.919410+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Audi commits to U.S. factory investment, signaling corporate confidence in the American economy despite tariff policies\", \"affected_sdgs\": [8, 9, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Trump defends tariffs at rally, reinforcing protectionist trade policies that may increase costs, reduce global trade efficiency, and harm international economic cooperation\", \"affected_sdgs\": [8, 10, 12], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 8948,
+      "event_title": "Ethiopia: Ethiopia's Abiy Inaugurates Major Megech Irrigation Dam",
+      "event_url": "https://allafrica.com/stories/202610230515.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 47000,
+      "final_score": 1.82,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Infrastructure enabling harm via ecological disruption and downstream risks outweighs economic benefits. | The project delivers clear economic and food‑security gains for the region, yet it creates significant water‑resource and ecological risks that could undermine downstream communities and biodiversity. On balance, the negative environmental implications outweigh the imme",
+      "tx_hash": "4xQRwQ2DiAkc6nBRXWvJ96CVTzNqSDaAvJ9BFT7favub26DUWY84Vmc1c5xV76S4HKUsL8nbmSa8c4X6ke7cSeUb",
+      "created_at": "2026-10-25T02:05:37.750262+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ethiopia",
+      "region": "Africa",
+      "administration": "Ethiopia-PP",
+      "positive_aspects_json": "[{\"description\": \"Inauguration of the Megech Irrigation Dam expands agricultural production, improves water supply and creates jobs for the region.\", \"affected_sdgs\": [1, 2, 6, 8, 9], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The dam alters river flow, threatens downstream ecosystems, reduces freshwater availability and may impact biodiversity.\", \"affected_sdgs\": [6, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 8947,
       "event_title": "Tensions flare up across France as marches come to an end",
@@ -206528,8 +206597,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 43,
-        "total_amount": 26588400
+        "count": 44,
+        "total_amount": 27129400
       },
       {
         "country": "France",
@@ -206592,18 +206661,18 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.2,
-        "events": 25
+        "burn_ratio": 0.192,
+        "events": 26
       },
       {
         "region": "North America",
-        "burn_ratio": 0.175,
-        "events": 57
+        "burn_ratio": 0.172,
+        "events": 58
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.171,
-        "events": 35
+        "burn_ratio": 0.167,
+        "events": 36
       }
     ],
     "top_regions_destructive": [
@@ -206619,18 +206688,18 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.829,
-        "events": 35
+        "mint_ratio": 0.833,
+        "events": 36
       },
       {
         "region": "North America",
-        "mint_ratio": 0.825,
-        "events": 57
+        "mint_ratio": 0.828,
+        "events": 58
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.8,
-        "events": 25
+        "mint_ratio": 0.808,
+        "events": 26
       }
     ],
     "supply_trend_7d": [
@@ -206666,7 +206735,7 @@
       },
       {
         "date": "2026-10-25",
-        "net_minted": 1232000,
+        "net_minted": 1887600,
         "net_burned": 0
       }
     ],
@@ -206684,7 +206753,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 57,
-        "negative": 312,
+        "negative": 315,
         "event_ids_positive": [
           8933,
           8927,
@@ -206745,6 +206814,9 @@
           8578
         ],
         "event_ids_negative": [
+          8950,
+          8949,
+          8948,
           8947,
           8946,
           8945,
@@ -207061,7 +207133,7 @@
       },
       "UDHR": {
         "positive": 27,
-        "negative": 248,
+        "negative": 250,
         "event_ids_positive": [
           8933,
           8927,
@@ -207092,6 +207164,8 @@
           8578
         ],
         "event_ids_negative": [
+          8950,
+          8948,
           8947,
           8946,
           8945,
@@ -207544,7 +207618,7 @@
       },
       "Animal": {
         "positive": 21,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [
           8933,
           8909,
@@ -207569,6 +207643,7 @@
           8578
         ],
         "event_ids_negative": [
+          8948,
           8943,
           8942,
           8941,
@@ -207621,7 +207696,7 @@
       },
       "PB": {
         "positive": 35,
-        "negative": 100,
+        "negative": 101,
         "event_ids_positive": [
           8933,
           8909,
@@ -207660,6 +207735,7 @@
           8578
         ],
         "event_ids_negative": [
+          8948,
           8943,
           8942,
           8941,
@@ -207767,11 +207843,11 @@
       "niche_pct": 61.7,
       "mainstream_pct": 38.3,
       "total_sources_used": 107,
-      "articles_processed": 370
+      "articles_processed": 373
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 370,
+      "total_events": 373,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -207958,10 +208034,11 @@
       },
       {
         "name": "Construction",
-        "count": 35,
+        "count": 36,
         "burn_count": 7,
-        "mint_count": 28,
+        "mint_count": 29,
         "event_ids": [
+          8948,
           8943,
           8934,
           8921,
@@ -208001,10 +208078,11 @@
       },
       {
         "name": "Finance",
-        "count": 33,
+        "count": 34,
         "burn_count": 7,
-        "mint_count": 26,
+        "mint_count": 27,
         "event_ids": [
+          8949,
           8944,
           8937,
           8923,
@@ -208078,10 +208156,11 @@
       },
       {
         "name": "Water",
-        "count": 19,
+        "count": 20,
         "burn_count": 3,
-        "mint_count": 16,
+        "mint_count": 17,
         "event_ids": [
+          8948,
           8933,
           8921,
           8918,
@@ -208202,14 +208281,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 313,
+      "total_mint": 316,
       "direct_action": {
-        "count": 292,
-        "pct": 93.3
+        "count": 295,
+        "pct": 93.4
       },
       "editorial_alarm": {
         "count": 20,
-        "pct": 6.4
+        "pct": 6.3
       },
       "untyped": {
         "count": 1,
@@ -208217,9 +208296,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6726,
+      "total_mint": 6729,
       "direct_action": {
-        "count": 6185,
+        "count": 6188,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -208233,8 +208312,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 121,
-      "institutional": 249,
-      "citizen_ratio": 0.327,
+      "institutional": 252,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-10-19",
@@ -208269,7 +208348,7 @@
         {
           "date": "2026-10-25",
           "citizen": 3,
-          "institutional": 0
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -208396,6 +208475,9 @@
         8578
       ],
       "event_ids_institutional": [
+        8950,
+        8949,
+        8948,
         8943,
         8942,
         8940,
