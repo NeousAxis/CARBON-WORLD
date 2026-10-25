@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-10-25T00:05:34.000748+00:00",
-  "total_events": 8944,
+  "generated_at": "2026-10-25T01:06:05.083025+00:00",
+  "total_events": 8947,
   "total_burned": 8139837805,
-  "total_minted": 11358481514,
+  "total_minted": 11359713514,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 8947,
+      "event_title": "Tensions flare up across France as marches come to an end",
+      "event_url": "https://www.politico.eu/article/france-police-deploy-protests/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -4.04,
+      "confidence": 8,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Instruction to police risks disproportionate force and suppresses dissent, violating UDHR rights. | The instruction to police to adopt an uncompromising stance during protests directly undermines fundamental rights to peaceful assembly and freedom of expression, violating core UDHR articles. While public order is a legitimate concern, the framing risks disproportionate force and erodes democratic freedoms, outweighing any potentia",
+      "tx_hash": "3Qh2qTXxx4nRcMk95h52XD7cozuFGgNWz2cFKJwmuovWf8UitHWz9byGKm8GwHNK5NKrLJ2X66WGPFpd9hJx1XWf",
+      "created_at": "2026-10-25T01:05:57.096507+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Interior Minister Laurent Nuñez instructs police to be 'uncompromising' with potential rioters during protest marches, risking excessive use of force and suppression of legitimate dissent\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 20\", \"UDHR Article 21\", \"UDHR Article 29\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 8946,
+      "event_title": "Gabon Restores Social Media After Eight Months of Suspension",
+      "event_url": "https://www.lemonde.fr/afrique/article/2026/10/25/le-gabon-retablit-les-reseaux-sociaux-apres-huit-mois-de-suspension_6799863_3212.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -1.79,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Mandatory ID erodes privacy and anonymity, enabling state surveillance despite restored access, thus weakening rights. | The restoration of social media is a positive step for freedom of expression and access to information, aligning with SDG 16 and UDHR Article 19. However, the simultaneous imposition of mandatory identification undermines privacy and anonymity, violating U",
+      "tx_hash": "29dWEuqujToAAsLuf9DwXmiHnh9CxXnWaaC6S8jrVQked6zsznLRD1BZYXqFJHrAv8S7TX9bNCoeyd3GSg9vTZq8",
+      "created_at": "2026-10-25T01:05:54.742605+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Gabon",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Restoration of social media access after an eight-month suspension, enabling freedom of expression and access to information for Gabonese citizens.\", \"affected_sdgs\": [16, 10, 4], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Mandatory formal identification for all Gabonese social media users, ending online anonymity and potentially chilling dissent or marginalized voices.\", \"affected_sdgs\": [16, 10, 5], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
+    {
+      "id": 8945,
+      "event_title": "Security forces deploy for Italy protests after clashes",
+      "event_url": "https://www.thelocal.it/20261024/security-forces-deploy-for-italy-protests-after-clashes",
+      "event_source": "The Local Italy (EN)",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.7,
+      "confidence": 6,
+      "justification": "The crackdown suppresses fundamental rights, outweighing safety benefits. | While the security deployment aims to maintain order, the heavy-handed crackdown undermines fundamental civil liberties and labor rights. The negative impact on freedom of assembly outweighs the modest safety benefits, leading to an overall adverse ethical assessment.",
+      "tx_hash": "4vLnn5bkabBiwFridRyRZXH2ttBaTn9PJTTGaXbuY1dEiTFWeqybWvo4V7uSRia4mgrCWfTjsxJimsismj92kiP8",
+      "created_at": "2026-10-25T01:05:52.478896+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Italy",
+      "region": "Europe",
+      "administration": "Italy-FdI",
+      "positive_aspects_json": "[{\"description\": \"Police deployment intended to protect public safety and prevent further violence during protests\", \"affected_sdgs\": [16, 11], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sweeping crackdown on protests restricts freedom of assembly and expression and may involve excessive force\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\", \"ILO Freedom of Association Convention\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 8944,
       "event_title": "Israel Launches Major Ethnic Cleansing Escalation in West Bank, Targeting Hebron",
@@ -206464,8 +206533,8 @@
       },
       {
         "country": "France",
-        "count": 31,
-        "total_amount": 11105100
+        "count": 32,
+        "total_amount": 11709100
       },
       {
         "country": "Brazil",
@@ -206513,8 +206582,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.286,
-        "events": 14
+        "burn_ratio": 0.308,
+        "events": 13
       },
       {
         "region": "Asia",
@@ -206523,8 +206592,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.208,
-        "events": 24
+        "burn_ratio": 0.2,
+        "events": 25
       },
       {
         "region": "North America",
@@ -206545,8 +206614,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.908,
-        "events": 109
+        "mint_ratio": 0.909,
+        "events": 110
       },
       {
         "region": "Latin America",
@@ -206560,8 +206629,8 @@
       },
       {
         "region": "Africa",
-        "mint_ratio": 0.792,
-        "events": 24
+        "mint_ratio": 0.8,
+        "events": 25
       }
     ],
     "supply_trend_7d": [
@@ -206597,7 +206666,7 @@
       },
       {
         "date": "2026-10-25",
-        "net_minted": 0,
+        "net_minted": 1232000,
         "net_burned": 0
       }
     ],
@@ -206676,6 +206745,9 @@
           8578
         ],
         "event_ids_negative": [
+          8947,
+          8946,
+          8945,
           8944,
           8943,
           8942,
@@ -206984,10 +207056,7 @@
           8582,
           8581,
           8580,
-          8579,
-          8577,
-          8576,
-          8575
+          8579
         ]
       },
       "UDHR": {
@@ -207023,6 +207092,9 @@
           8578
         ],
         "event_ids_negative": [
+          8947,
+          8946,
+          8945,
           8944,
           8940,
           8938,
@@ -207267,10 +207339,7 @@
           8585,
           8583,
           8581,
-          8580,
-          8577,
-          8576,
-          8575
+          8580
         ]
       },
       "ILO": {
@@ -207281,6 +207350,7 @@
           8584
         ],
         "event_ids_negative": [
+          8945,
           8938,
           8934,
           8913,
@@ -207310,13 +207380,12 @@
           8659,
           8655,
           8599,
-          8585,
-          8576
+          8585
         ]
       },
       "CRC": {
         "positive": 9,
-        "negative": 61,
+        "negative": 60,
         "event_ids_positive": [
           8869,
           8868,
@@ -207388,8 +207457,7 @@
           8602,
           8590,
           8585,
-          8581,
-          8576
+          8581
         ]
       },
       "UNDRIP": {
@@ -207553,7 +207621,7 @@
       },
       "PB": {
         "positive": 35,
-        "negative": 101,
+        "negative": 100,
         "event_ids_positive": [
           8933,
           8909,
@@ -207691,8 +207759,7 @@
           8593,
           8586,
           8581,
-          8579,
-          8575
+          8579
         ]
       }
     },
@@ -207804,17 +207871,6 @@
         ]
       },
       {
-        "name": "IPCC",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          8777,
-          8731,
-          8575
-        ]
-      },
-      {
         "name": "ILO",
         "count": 2,
         "burn_count": 0,
@@ -207823,14 +207879,24 @@
           8881,
           8876
         ]
+      },
+      {
+        "name": "CITES",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          8864,
+          8821
+        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 57,
+        "count": 56,
         "burn_count": 10,
-        "mint_count": 47,
+        "mint_count": 46,
         "event_ids": [
           8943,
           8939,
@@ -207887,8 +207953,7 @@
           8633,
           8616,
           8611,
-          8593,
-          8577
+          8593
         ]
       },
       {
@@ -207977,10 +208042,11 @@
       },
       {
         "name": "Tech",
-        "count": 27,
+        "count": 28,
         "burn_count": 3,
-        "mint_count": 24,
+        "mint_count": 25,
         "event_ids": [
+          8946,
           8941,
           8939,
           8920,
@@ -208151,9 +208217,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6723,
+      "total_mint": 6726,
       "direct_action": {
-        "count": 6182,
+        "count": 6185,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -208166,9 +208232,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 118,
-      "institutional": 252,
-      "citizen_ratio": 0.319,
+      "citizen": 121,
+      "institutional": 249,
+      "citizen_ratio": 0.327,
       "daily": [
         {
           "date": "2026-10-19",
@@ -208202,11 +208268,14 @@
         },
         {
           "date": "2026-10-25",
-          "citizen": 0,
+          "citizen": 3,
           "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        8947,
+        8946,
+        8945,
         8944,
         8941,
         8939,
@@ -208575,10 +208644,7 @@
         8583,
         8582,
         8580,
-        8579,
-        8577,
-        8576,
-        8575
+        8579
       ]
     }
   }
