@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-26T02:05:41.896649+00:00",
-  "total_events": 8969,
-  "total_burned": 8148648805,
+  "generated_at": "2026-10-26T03:06:22.275396+00:00",
+  "total_events": 8970,
+  "total_burned": 8153648805,
   "total_minted": 11370476314,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 8970,
+      "event_title": "Lula defeats Trump ally Bolsonaro, keeping Brazil left as Latin America shifts right",
+      "event_url": "https://www.reddit.com/r/UpliftingNews/comments/1xfihy6/lula_defeats_trump_ally_bolsonaro_keeping_brazil/",
+      "event_source": "Reddit r/UpliftingNews",
+      "decision": "BURN",
+      "amount_crbn": 5000000,
+      "final_score": 3.94,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Democratic victory with strong climate and rights implications outweighs regional risks. | The election of Lula represents a significant democratic victory that aligns with multiple SDGs, particularly climate action and reduced inequalities, while reversing harmful environmental policies. However, the broader reg",
+      "tx_hash": "3WMFQRfZmt6ngBnvy4fFpcVSg4sDhYq5VPugdojUfpJxiVGqMz32okbfAqLtwzi7tH5uZjBhAUSbWgHywy21v2TK",
+      "created_at": "2026-10-26T03:06:16.019382+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Brazilian electorate votes out far-right incumbent Jair Bolsonaro, replacing him with leftist Lula da Silva, signaling a democratic rejection of authoritarian and anti-environmental policies\", \"affected_sdgs\": [10, 16], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Reversal of Bolsonaro-era environmental deregulation and deforestation policies, likely reducing Amazon destruction and greenhouse gas emissions\", \"affected_sdgs\": [13, 15], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"UNDRIP\"]}, {\"description\": \"Strengthening of democratic institutions and civil society participation in Brazil, countering regional authoritarian drift\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Latin America's broader political shift to the right may continue in other countries, potentially undermining regional climate and human rights progress\", \"affected_sdgs\": [13, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Polarization and political instability in Brazil following the election, with potential for violent backlash from Bolsonaro supporters\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 20\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 676000
+    },
     {
       "id": 8969,
       "event_title": "Libya summons US envoy to protest at Trump remarks",
@@ -207075,14 +207098,14 @@
         "total_amount": 1555800
       },
       {
+        "country": "Brazil",
+        "count": 3,
+        "total_amount": 13546000
+      },
+      {
         "country": "Australia",
         "count": 3,
         "total_amount": 1418700
-      },
-      {
-        "country": "France",
-        "count": 2,
-        "total_amount": 682500
       }
     ],
     "top_regions_sustainable": [
@@ -207098,8 +207121,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.171,
-        "events": 35
+        "burn_ratio": 0.194,
+        "events": 36
       },
       {
         "region": "Africa",
@@ -207135,8 +207158,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.829,
-        "events": 35
+        "mint_ratio": 0.806,
+        "events": 36
       }
     ],
     "supply_trend_7d": [
@@ -207173,7 +207196,7 @@
       {
         "date": "2026-10-26",
         "net_minted": 765800,
-        "net_burned": 0
+        "net_burned": 5000000
       }
     ],
     "event_of_the_day": {
@@ -207189,9 +207212,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 58,
-        "negative": 321,
+        "positive": 59,
+        "negative": 320,
         "event_ids_positive": [
+          8970,
           8966,
           8964,
           8963,
@@ -207571,14 +207595,14 @@
           8594,
           8593,
           8592,
-          8591,
-          8590
+          8591
         ]
       },
       "UDHR": {
-        "positive": 27,
-        "negative": 258,
+        "positive": 28,
+        "negative": 257,
         "event_ids_positive": [
+          8970,
           8966,
           8964,
           8952,
@@ -207864,8 +207888,7 @@
           8594,
           8593,
           8592,
-          8591,
-          8590
+          8591
         ]
       },
       "ILO": {
@@ -207910,7 +207933,7 @@
       },
       "CRC": {
         "positive": 9,
-        "negative": 61,
+        "negative": 60,
         "event_ids_positive": [
           8966,
           8869,
@@ -207982,14 +208005,14 @@
           8619,
           8608,
           8604,
-          8602,
-          8590
+          8602
         ]
       },
       "UNDRIP": {
-        "positive": 7,
+        "positive": 8,
         "negative": 67,
         "event_ids_positive": [
+          8970,
           8851,
           8819,
           8795,
@@ -208145,9 +208168,10 @@
         ]
       },
       "PB": {
-        "positive": 35,
+        "positive": 36,
         "negative": 102,
         "event_ids_positive": [
+          8970,
           8963,
           8952,
           8933,
@@ -208291,9 +208315,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 62.3,
-      "mainstream_pct": 37.7,
-      "total_sources_used": 106,
+      "niche_pct": 61.9,
+      "mainstream_pct": 38.1,
+      "total_sources_used": 105,
       "articles_processed": 380
     },
     "cache_hit_rate_7d": {
@@ -208325,9 +208349,9 @@
       },
       {
         "name": "WHO",
-        "count": 11,
+        "count": 10,
         "burn_count": 3,
-        "mint_count": 8,
+        "mint_count": 7,
         "event_ids": [
           8933,
           8901,
@@ -208338,15 +208362,14 @@
           8820,
           8710,
           8706,
-          8655,
-          8590
+          8655
         ]
       },
       {
         "name": "UN",
-        "count": 11,
+        "count": 10,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           8894,
           8814,
@@ -208357,8 +208380,7 @@
           8754,
           8720,
           8693,
-          8673,
-          8590
+          8673
         ]
       },
       {
@@ -208704,14 +208726,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 58,
+      "total_burn": 59,
       "direct_action": {
-        "count": 52,
-        "pct": 89.7
+        "count": 53,
+        "pct": 89.8
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 10.3
+        "pct": 10.2
       },
       "untyped": {
         "count": 0,
@@ -208719,14 +208741,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2218,
+      "total_burn": 2219,
       "direct_action": {
-        "count": 1978,
+        "count": 1979,
         "pct": 89.2
       },
       "editorial_consciousness": {
         "count": 203,
-        "pct": 9.2
+        "pct": 9.1
       },
       "untyped": {
         "count": 37,
@@ -208734,10 +208756,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 322,
+      "total_mint": 321,
       "direct_action": {
-        "count": 300,
-        "pct": 93.2
+        "count": 299,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 21,
@@ -208801,7 +208823,7 @@
         {
           "date": "2026-10-26",
           "citizen": 3,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -208932,6 +208954,7 @@
         8593
       ],
       "event_ids_institutional": [
+        8970,
         8966,
         8965,
         8962,
@@ -209185,8 +209208,7 @@
         8595,
         8594,
         8592,
-        8591,
-        8590
+        8591
       ]
     }
   }
