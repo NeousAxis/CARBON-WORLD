@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-26T01:06:30.041726+00:00",
-  "total_events": 8968,
+  "generated_at": "2026-10-26T02:05:41.896649+00:00",
+  "total_events": 8969,
   "total_burned": 8148648805,
-  "total_minted": 11370326314,
+  "total_minted": 11370476314,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 8969,
+      "event_title": "Libya summons US envoy to protest at Trump remarks",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/libya-summons-us-envoy-protest-trump-remarks",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -2.46,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Trump's inflammatory remarks violate diplomatic norms and UDHR principles, outweighing Libya's measured protest. | The Libyan government's diplomatic protest upholds national dignity and aligns with international norms of respect and sovereignty. However, Trump's inflammatory remarks violate basic principles of h",
+      "tx_hash": "2vwN5RzJhbfS4JBuWSNnBJ9HuHMdu5JFWm8QUTybJKo1m7MY1koNU3cwisL48bk192grBmCfNRKXqv2mH94NYP9X",
+      "created_at": "2026-10-26T02:05:35.033512+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Libyan government formally rejects statements that undermine national dignity and sovereignty by summoning a foreign envoy to lodge a protest\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"US President Donald Trump's public remarks referring to Libya as 'terror-infested' are inflammatory, dehumanizing, and undermine diplomatic norms\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 2\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 46000
+    },
     {
       "id": 8968,
       "event_title": "DR Congo: Bill outlining referendum conditions adopted by National Assembly",
@@ -207079,14 +207102,14 @@
         "events": 35
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.155,
-        "events": 58
-      },
-      {
         "region": "Africa",
         "burn_ratio": 0.143,
         "events": 28
+      },
+      {
+        "region": "North America",
+        "burn_ratio": 0.14,
+        "events": 57
       }
     ],
     "top_regions_destructive": [
@@ -207101,14 +207124,14 @@
         "events": 114
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.86,
+        "events": 57
+      },
+      {
         "region": "Africa",
         "mint_ratio": 0.857,
         "events": 28
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.845,
-        "events": 58
       },
       {
         "region": "Latin America",
@@ -207149,7 +207172,7 @@
       },
       {
         "date": "2026-10-26",
-        "net_minted": 615800,
+        "net_minted": 765800,
         "net_burned": 0
       }
     ],
@@ -207166,8 +207189,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 59,
-        "negative": 320,
+        "positive": 58,
+        "negative": 321,
         "event_ids_positive": [
           8966,
           8964,
@@ -207226,10 +207249,10 @@
           8616,
           8613,
           8603,
-          8600,
-          8589
+          8600
         ],
         "event_ids_negative": [
+          8969,
           8968,
           8967,
           8965,
@@ -207554,7 +207577,7 @@
       },
       "UDHR": {
         "positive": 27,
-        "negative": 257,
+        "negative": 258,
         "event_ids_positive": [
           8966,
           8964,
@@ -207585,6 +207608,7 @@
           8600
         ],
         "event_ids_negative": [
+          8969,
           8968,
           8967,
           8965,
@@ -208045,7 +208069,7 @@
         ]
       },
       "Animal": {
-        "positive": 22,
+        "positive": 21,
         "negative": 47,
         "event_ids_positive": [
           8963,
@@ -208068,8 +208092,7 @@
           8636,
           8628,
           8627,
-          8603,
-          8589
+          8603
         ],
         "event_ids_negative": [
           8955,
@@ -208122,7 +208145,7 @@
         ]
       },
       "PB": {
-        "positive": 36,
+        "positive": 35,
         "negative": 102,
         "event_ids_positive": [
           8963,
@@ -208159,8 +208182,7 @@
           8628,
           8627,
           8616,
-          8603,
-          8589
+          8603
         ],
         "event_ids_negative": [
           8962,
@@ -208269,9 +208291,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 62.6,
-      "mainstream_pct": 37.4,
-      "total_sources_used": 107,
+      "niche_pct": 62.3,
+      "mainstream_pct": 37.7,
+      "total_sources_used": 106,
       "articles_processed": 380
     },
     "cache_hit_rate_7d": {
@@ -208682,14 +208704,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 59,
+      "total_burn": 58,
       "direct_action": {
-        "count": 53,
-        "pct": 89.8
+        "count": 52,
+        "pct": 89.7
       },
       "editorial_consciousness": {
         "count": 6,
-        "pct": 10.2
+        "pct": 10.3
       },
       "untyped": {
         "count": 0,
@@ -208712,10 +208734,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 321,
+      "total_mint": 322,
       "direct_action": {
-        "count": 299,
-        "pct": 93.1
+        "count": 300,
+        "pct": 93.2
       },
       "editorial_alarm": {
         "count": 21,
@@ -208727,9 +208749,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6742,
+      "total_mint": 6743,
       "direct_action": {
-        "count": 6200,
+        "count": 6201,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -208778,11 +208800,12 @@
         },
         {
           "date": "2026-10-26",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        8969,
         8968,
         8967,
         8964,
@@ -208906,8 +208929,7 @@
         8607,
         8601,
         8597,
-        8593,
-        8589
+        8593
       ],
       "event_ids_institutional": [
         8966,
