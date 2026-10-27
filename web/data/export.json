@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-27T19:07:04.500238+00:00",
-  "total_events": 9051,
+  "generated_at": "2026-10-27T21:06:52.705501+00:00",
+  "total_events": 9053,
   "total_burned": 8167671605,
-  "total_minted": 11470690114,
+  "total_minted": 11476796264,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 9053,
+      "event_title": "Myanmar: Is the US undermining the EU's diplomatic blockade?",
+      "event_url": "https://www.dw.com/en/myanmar-is-the-us-undermining-the-eu-s-diplomatic-blockade/a-79778863?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -4.15,
+      "confidence": 8,
+      "justification": "US diplomatic re-engagement with Myanmar's junta undermines accountability and risks enabling human rights violations. | The US action directly undermines the EU's diplomatic efforts to isolate Myanmar's military junta, which has been accused of widespread human rights abuses. This risks enabling impunity, weakening international accountability mechanisms, and normalizing military rule, thereby violating core human rights and undermining SDGs related to peace, justice, and reduced inequalities.",
+      "tx_hash": "4UdwFyvSqrHZNWiYQWsJ52bZYpPXiKbx41C5yGF4JxVn9FC9cYtaYVY3shbHn7SQj3msJ1t9tCMmi3f8M91X66te",
+      "created_at": "2026-10-27T21:06:46.532736+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US reopening diplomatic talks with Myanmar's military-backed government undermines the EU's diplomatic blockade, potentially enabling continued impunity for human rights violations by the junta.\", \"affected_sdgs\": [16, 10, 1], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\", \"UDHR Article 21\", \"CRC Article 38\", \"UNDRIP Article 8\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}, {\"description\": \"Restarting diplomatic contacts with the junta risks normalizing military rule, weakening international pressure for democratic restoration and accountability.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 21\", \"UNDRIP Article 4\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 9052,
+      "event_title": "Syria condemns deadly Jordan strikes as 'unacceptable violation'",
+      "event_url": "https://www.al-monitor.com/originals/2026/10/syria-condemns-deadly-jordan-strikes-unacceptable-violation",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 66150,
+      "final_score": -2.45,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Military strikes causing civilian harm and sovereignty breach enable harm, outweighing minor accountability gestures. | While the operation sought to neutralize terrorist actors, the resulting civilian deaths and breach of sovereignty outweigh any security benefit, leading to a net negative ethical outcome.",
+      "tx_hash": "k87uxL7dVbVqPJGn4MwQZdzFGwCTfZaTW8oJcbKosb3cLS5dDvvyyv6NjDZ8jetEZYy63APjtESoE3c82eBcBWG",
+      "created_at": "2026-10-27T21:06:44.079132+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Jordan",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Jordan's strike targeted jihadist militants, aiming to reduce terrorist threats in the region.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The strike caused civilian casualties and violated Syrian sovereignty, breaching international humanitarian law.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 2\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 9051,
       "event_title": "Joint Statement: Georgia – Failure to Investigate Prison Torture Allegations Fuels Impunity",
@@ -209002,7 +209048,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 22
+        "events": 23
       },
       {
         "region": "Africa",
@@ -209058,7 +209104,7 @@
       },
       {
         "date": "2026-10-27",
-        "net_minted": 43251800,
+        "net_minted": 49357950,
         "net_burned": 2864400
       }
     ],
@@ -209076,7 +209122,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 41,
-        "negative": 256,
+        "negative": 258,
         "event_ids_positive": [
           9033,
           9030,
@@ -209121,6 +209167,8 @@
           8756
         ],
         "event_ids_negative": [
+          9053,
+          9052,
           9051,
           9050,
           9049,
@@ -209381,7 +209429,7 @@
       },
       "UDHR": {
         "positive": 24,
-        "negative": 207,
+        "negative": 209,
         "event_ids_positive": [
           9030,
           9027,
@@ -209409,6 +209457,8 @@
           8756
         ],
         "event_ids_negative": [
+          9053,
+          9052,
           9051,
           9050,
           9049,
@@ -209657,7 +209707,7 @@
       },
       "CRC": {
         "positive": 10,
-        "negative": 66,
+        "negative": 67,
         "event_ids_positive": [
           9030,
           9022,
@@ -209671,6 +209721,7 @@
           8756
         ],
         "event_ids_negative": [
+          9053,
           9051,
           9048,
           9044,
@@ -209741,7 +209792,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           8970,
           8851,
@@ -209749,6 +209800,7 @@
           8795
         ],
         "event_ids_negative": [
+          9053,
           9050,
           9049,
           9047,
@@ -209987,21 +210039,22 @@
       "niche_pct": 66.3,
       "mainstream_pct": 33.7,
       "total_sources_used": 95,
-      "articles_processed": 297
+      "articles_processed": 299
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 297,
+      "total_events": 299,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 11,
+        "count": 12,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          9053,
           9040,
           9038,
           9030,
@@ -210246,6 +210299,32 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 18,
+        "burn_count": 0,
+        "mint_count": 18,
+        "event_ids": [
+          9053,
+          9052,
+          9011,
+          9010,
+          9002,
+          8987,
+          8982,
+          8979,
+          8967,
+          8961,
+          8929,
+          8875,
+          8871,
+          8820,
+          8808,
+          8784,
+          8765,
+          8763
+        ]
+      },
+      {
         "name": "Water",
         "count": 17,
         "burn_count": 2,
@@ -210268,30 +210347,6 @@
           8810,
           8800,
           8782
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 16,
-        "burn_count": 0,
-        "mint_count": 16,
-        "event_ids": [
-          9011,
-          9010,
-          9002,
-          8987,
-          8982,
-          8979,
-          8967,
-          8961,
-          8929,
-          8875,
-          8871,
-          8820,
-          8808,
-          8784,
-          8765,
-          8763
         ]
       },
       {
@@ -210362,9 +210417,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 256,
+      "total_mint": 258,
       "direct_action": {
-        "count": 238,
+        "count": 240,
         "pct": 93.0
       },
       "editorial_alarm": {
@@ -210377,9 +210432,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6815,
+      "total_mint": 6817,
       "direct_action": {
-        "count": 6268,
+        "count": 6270,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -210393,8 +210448,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 100,
-      "institutional": 197,
-      "citizen_ratio": 0.337,
+      "institutional": 199,
+      "citizen_ratio": 0.334,
       "daily": [
         {
           "date": "2026-10-21",
@@ -210429,7 +210484,7 @@
         {
           "date": "2026-10-27",
           "citizen": 10,
-          "institutional": 33
+          "institutional": 35
         }
       ],
       "event_ids_citizen": [
@@ -210535,6 +210590,8 @@
         8757
       ],
       "event_ids_institutional": [
+        9053,
+        9052,
         9051,
         9050,
         9048,
