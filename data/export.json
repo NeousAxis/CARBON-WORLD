@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-28T05:06:29.004475+00:00",
-  "total_events": 9076,
-  "total_burned": 8168506805,
-  "total_minted": 11513543464,
+  "generated_at": "2026-10-28T06:05:53.410573+00:00",
+  "total_events": 9078,
+  "total_burned": 8175506805,
+  "total_minted": 11513843464,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 9078,
+      "event_title": "ASEAN prepares QR payments, e-signatures for digital trade pact",
+      "event_url": "https://asia.nikkei.com/business/technology/asean-prepares-qr-payments-e-signatures-for-digital-trade-pact",
+      "event_source": "Nikkei Asia",
+      "decision": "BURN",
+      "amount_crbn": 7000000,
+      "final_score": 6.39,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=BURN -> BURN (human chose this in 91% of 126 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] ASEAN's digital trade pact promotes economic integration and technological progress, aligning with multiple SDGs. | The ASEAN digital trade pact initiative promotes economic integration and technological advancement, aligning with SDGs 8 (Decent Work), 9 (Industry & Infrastructure), and 12 (Responsible Consumptio",
+      "tx_hash": "nzAU6EpeoamtjQAkkhuwiWWGsRRGxZUxTdyj9bj4wsvq7Ap1AMLttXpTWYQ1wcvecCfviwwEgG14K7xnrZ7vfdf",
+      "created_at": "2026-10-28T06:05:47.653265+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"ASEAN prepares standardized QR payments and e-signatures to facilitate digital trade, reducing friction in cross-border transactions and promoting economic integration\", \"affected_sdgs\": [8, 9, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\"]}, {\"description\": \"Digital trade pact aims to streamline regional commerce, potentially lowering costs and increasing efficiency for businesses and consumers\", \"affected_sdgs\": [8, 9, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
+    {
+      "id": 9077,
+      "event_title": "Planned burns doubled and salvaged wood for sawmills under Coalition forest policy",
+      "event_url": "https://www.abc.net.au/news/2026-10-28/coalition-to-revive-native-timber-processing-victoria/107156526",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -2.72,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Policy enables native timber extraction and increased burns, outweighing fire‑risk benefits and harming biodiversity and Indigenous rights. | The policy balances short-term wildfire mitigation and economic benefits against severe long-term ecological risks. While planned burns align with climate adaptation goals, the revival of native timber processing undermines biodiversit",
+      "tx_hash": "4a65y9C5Y2Zo2u4bNX4nyRWocrzgA9vHQbmZCpefz35BGVhdo6iApNXLRGMRASRWZSFoDWizSotYvSeuHHCbHECw",
+      "created_at": "2026-10-28T06:05:45.445521+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Increased planned burns reduce wildfire risk, protecting ecosystems, human settlements, and biodiversity (fuel load management).\", \"affected_sdgs\": [13, 15, 11], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Salvaged wood processing may create regional jobs and economic activity in forestry-dependent communities.\", \"affected_sdgs\": [8, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Reviving native timber processing risks increased deforestation, biodiversity loss, and carbon emissions from logging old-growth forests.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}, {\"description\": \"Potential undermining of Indigenous land rights and cultural heritage if traditional custodianship is not prioritized in forest management.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UNDRIP\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UNDRIP\"]}, {\"description\": \"Long-term ecological damage from unsustainable logging practices, including soil degradation and habitat fragmentation.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9076,
       "event_title": "Glass recycling potential discovered for restoring a disappearing coastline",
@@ -209554,8 +209600,8 @@
       },
       {
         "region": "Oceania",
-        "burn_ratio": 0.182,
-        "events": 11
+        "burn_ratio": 0.167,
+        "events": 12
       },
       {
         "region": "Europe",
@@ -209633,8 +209679,8 @@
       },
       {
         "date": "2026-10-28",
-        "net_minted": 25573400,
-        "net_burned": 835200
+        "net_minted": 25873400,
+        "net_burned": 7835200
       }
     ],
     "event_of_the_day": {
@@ -209650,9 +209696,10 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 38,
-        "negative": 254,
+        "positive": 39,
+        "negative": 255,
         "event_ids_positive": [
+          9078,
           9076,
           9065,
           9062,
@@ -209693,6 +209740,7 @@
           8794
         ],
         "event_ids_negative": [
+          9077,
           9075,
           9074,
           9073,
@@ -210315,7 +210363,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           8970,
           8851,
@@ -210323,6 +210371,7 @@
           8795
         ],
         "event_ids_negative": [
+          9077,
           9067,
           9053,
           9050,
@@ -210380,7 +210429,7 @@
       },
       "Animal": {
         "positive": 8,
-        "negative": 32,
+        "negative": 33,
         "event_ids_positive": [
           9006,
           8986,
@@ -210392,6 +210441,7 @@
           8818
         ],
         "event_ids_negative": [
+          9077,
           9069,
           9040,
           9037,
@@ -210428,7 +210478,7 @@
       },
       "PB": {
         "positive": 19,
-        "negative": 83,
+        "negative": 84,
         "event_ids_positive": [
           9076,
           9065,
@@ -210451,6 +210501,7 @@
           8794
         ],
         "event_ids_negative": [
+          9077,
           9073,
           9071,
           9069,
@@ -210538,14 +210589,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 66.7,
-      "mainstream_pct": 33.3,
-      "total_sources_used": 93,
-      "articles_processed": 292
+      "niche_pct": 67.0,
+      "mainstream_pct": 33.0,
+      "total_sources_used": 94,
+      "articles_processed": 294
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 292,
+      "total_events": 294,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -210633,21 +210684,21 @@
         ]
       },
       {
+        "name": "ASEAN",
+        "count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
+        "event_ids": [
+          9078
+        ]
+      },
+      {
         "name": "IPCC",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
           9047
-        ]
-      },
-      {
-        "name": "IUCN",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          8848
         ]
       }
     ],
@@ -210738,10 +210789,11 @@
       },
       {
         "name": "Construction",
-        "count": 21,
-        "burn_count": 4,
+        "count": 22,
+        "burn_count": 5,
         "mint_count": 17,
         "event_ids": [
+          9078,
           9037,
           9007,
           8997,
@@ -210879,14 +210931,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 38,
+      "total_burn": 39,
       "direct_action": {
-        "count": 34,
-        "pct": 89.5
+        "count": 35,
+        "pct": 89.7
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 10.5
+        "pct": 10.3
       },
       "untyped": {
         "count": 0,
@@ -210894,9 +210946,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2231,
+      "total_burn": 2232,
       "direct_action": {
-        "count": 1989,
+        "count": 1990,
         "pct": 89.2
       },
       "editorial_consciousness": {
@@ -210909,9 +210961,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 254,
+      "total_mint": 255,
       "direct_action": {
-        "count": 235,
+        "count": 236,
         "pct": 92.5
       },
       "editorial_alarm": {
@@ -210924,9 +210976,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6836,
+      "total_mint": 6837,
       "direct_action": {
-        "count": 6287,
+        "count": 6288,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -210939,9 +210991,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 95,
+      "citizen": 97,
       "institutional": 197,
-      "citizen_ratio": 0.325,
+      "citizen_ratio": 0.33,
       "daily": [
         {
           "date": "2026-10-22",
@@ -210975,11 +211027,13 @@
         },
         {
           "date": "2026-10-28",
-          "citizen": 6,
+          "citizen": 8,
           "institutional": 10
         }
       ],
       "event_ids_citizen": [
+        9078,
+        9077,
         9076,
         9073,
         9067,
