@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-27T23:07:23.449215+00:00",
-  "total_events": 9059,
+  "generated_at": "2026-10-28T00:05:00.848042+00:00",
+  "total_events": 9060,
   "total_burned": 8167671605,
-  "total_minted": 11487141064,
+  "total_minted": 11494621064,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 9060,
+      "event_title": "New report maps widespread criminal presence across six Amazonian countries",
+      "event_url": "https://news.mongabay.com/short-article/2026/10/new-report-maps-widespread-criminal-presence-across-six-amazonian-countries/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 7480000,
+      "final_score": -5.14,
+      "confidence": 8,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Widespread criminal presence in the Amazon undermines governance, human rights, and environmental protection. | The report's publication is a positive step toward transparency and awareness, but the underlying issue—widespread criminal presence in the Amazon—represents a severe failure of governance, human rights, and environmental protection. The scale of the problem underscores systemic vulnerabilities in the region.",
+      "tx_hash": "28dcCifT9yrSAqsXtU1yQspVqDAMtUUL9G5qR4sxFpe7TWbroCxwopALTWH1WtsaVvJbdGcoCRB5PF9r7rYaN6Qi",
+      "created_at": "2026-10-28T00:04:54.644352+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Publication of a detailed report exposing criminal networks in the Amazon, raising awareness of environmental and social threats\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Widespread presence of criminal networks and armed groups in 59% of Amazon municipalities across six countries, indicating severe governance and security failures\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 7480000
+    },
     {
       "id": 9059,
       "event_title": "Record carbon dioxide levels will impact us for centuries, says UN weather agency",
@@ -209211,11 +209234,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-10-21",
-        "net_minted": 67844700,
-        "net_burned": 14495600
-      },
-      {
         "date": "2026-10-22",
         "net_minted": 60526400,
         "net_burned": 15569400
@@ -209244,6 +209262,11 @@
         "date": "2026-10-27",
         "net_minted": 59702750,
         "net_burned": 2864400
+      },
+      {
+        "date": "2026-10-28",
+        "net_minted": 7480000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -209260,7 +209283,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 37,
-        "negative": 254,
+        "negative": 255,
         "event_ids_positive": [
           9033,
           9030,
@@ -209301,6 +209324,7 @@
           8772
         ],
         "event_ids_negative": [
+          9060,
           9059,
           9058,
           9057,
@@ -209559,7 +209583,7 @@
       },
       "UDHR": {
         "positive": 23,
-        "negative": 208,
+        "negative": 209,
         "event_ids_positive": [
           9030,
           9027,
@@ -209586,6 +209610,7 @@
           8795
         ],
         "event_ids_negative": [
+          9060,
           9059,
           9058,
           9057,
@@ -210155,11 +210180,11 @@
       "niche_pct": 66.0,
       "mainstream_pct": 34.0,
       "total_sources_used": 94,
-      "articles_processed": 291
+      "articles_processed": 292
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 291,
+      "total_events": 292,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -210385,10 +210410,11 @@
       },
       {
         "name": "Tech",
-        "count": 18,
+        "count": 19,
         "burn_count": 0,
-        "mint_count": 18,
+        "mint_count": 19,
         "event_ids": [
+          9060,
           9012,
           8999,
           8997,
@@ -210525,14 +210551,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 254,
+      "total_mint": 255,
       "direct_action": {
         "count": 236,
-        "pct": 92.9
+        "pct": 92.5
       },
       "editorial_alarm": {
-        "count": 18,
-        "pct": 7.1
+        "count": 19,
+        "pct": 7.5
       },
       "untyped": {
         "count": 0,
@@ -210540,13 +210566,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6823,
+      "total_mint": 6824,
       "direct_action": {
         "count": 6276,
         "pct": 92.0
       },
       "editorial_alarm": {
-        "count": 455,
+        "count": 456,
         "pct": 6.7
       },
       "untyped": {
@@ -210555,15 +210581,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 96,
+      "citizen": 97,
       "institutional": 195,
-      "citizen_ratio": 0.33,
+      "citizen_ratio": 0.332,
       "daily": [
-        {
-          "date": "2026-10-21",
-          "citizen": 15,
-          "institutional": 33
-        },
         {
           "date": "2026-10-22",
           "citizen": 18,
@@ -210593,9 +210614,15 @@
           "date": "2026-10-27",
           "citizen": 12,
           "institutional": 39
+        },
+        {
+          "date": "2026-10-28",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        9060,
         9057,
         9056,
         9049,
