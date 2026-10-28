@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-28T02:07:09.680383+00:00",
-  "total_events": 9065,
+  "generated_at": "2026-10-28T03:06:03.551492+00:00",
+  "total_events": 9067,
   "total_burned": 8168446405,
-  "total_minted": 11496898064,
+  "total_minted": 11498475064,
   "pending_reviews": 8,
   "events": [
+    {
+      "id": 9067,
+      "event_title": "Peru: Prosecutor closes case on forced sterilizations of thousands of indigenous women",
+      "event_url": "https://www.ouest-france.fr/monde/perou/perou-le-parquet-classe-une-affaire-sur-des-milliers-de-sterilisations-forcees-de-femmes-54aae710-d275-11f1-af78-2d36ec019942?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "event_source": "Ouest-France",
+      "decision": "MINT",
+      "amount_crbn": 748000,
+      "final_score": -5.75,
+      "confidence": 8,
+      "justification": "Closure of forced sterilization case enables impunity for systemic gender/racial violence, violating multiple rights frameworks. | The closure of this case represents a severe ethical failure, entrenching impunity for state-sanctioned violence against indigenous women. It violates core human rights frameworks, undermines gender equality and justice, and perpetuates systemic discrimination. The decision sends a harmful signal that historical atrocities may go unpunished, weakening trust in legal ",
+      "tx_hash": "4pqmxPThgAFfttGQBvsqctfXKQqvV1nFMbcxNyLWaiu3MWkFf5zZV6D6ZkWGJGxj1AMyNeqzh3zWfxsDDPJ8xEmK",
+      "created_at": "2026-10-28T03:05:56.568621+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Peru",
+      "region": "Latin America",
+      "administration": "Peru-FP",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Closure of legal case on forced sterilizations of thousands of indigenous women, allowing impunity for human rights violations under the Fujimori administration.\", \"affected_sdgs\": [3, 5, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 7\", \"UDHR Article 8\", \"UDHR Article 12\", \"UDHR Article 25\", \"CRC Article 3\", \"CRC Article 19\", \"UNDRIP Article 7\", \"UNDRIP Article 21\", \"ILO Convention 169\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\", \"ILO\"]}, {\"description\": \"Statute of limitations cited as justification, undermining access to justice for systemic gender-based violence and racial discrimination.\", \"affected_sdgs\": [5, 10, 16], \"violated_rights\": [\"UDHR Article 8\", \"UNDRIP Article 40\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 7480000
+    },
+    {
+      "id": 9066,
+      "event_title": "US costs of Iran war rise to over $47 billion, according to Pentagon estimate",
+      "event_url": "https://www.dailymaverick.co.za/article/2026-10-28-us-costs-of-iran-war-rise-to-over-47-billion-according-to-pentagon-estimate/",
+      "event_source": "Daily Maverick (South Africa)",
+      "decision": "MINT",
+      "amount_crbn": 829000,
+      "final_score": -5.32,
+      "confidence": 9,
+      "justification": "Semantic cache reuse (cosine=0.976) from event #9063",
+      "tx_hash": null,
+      "created_at": "2026-10-28T03:03:16.581324+00:00",
+      "embedding": null,
+      "reused_from_event_id": 9063,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 50500
+    },
     {
       "id": 9065,
       "event_title": "Bird-assisted sampling of air temperature reveals three-dimensional cooling effects of urban vegetation",
@@ -209328,8 +209374,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.923,
-        "events": 26
+        "mint_ratio": 0.926,
+        "events": 27
       },
       {
         "region": "Africa",
@@ -209380,7 +209426,7 @@
       },
       {
         "date": "2026-10-28",
-        "net_minted": 9757000,
+        "net_minted": 10505000,
         "net_burned": 774800
       }
     ],
@@ -209398,7 +209444,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 37,
-        "negative": 252,
+        "negative": 253,
         "event_ids_positive": [
           9065,
           9062,
@@ -209439,6 +209485,7 @@
           8794
         ],
         "event_ids_negative": [
+          9067,
           9064,
           9063,
           9061,
@@ -209695,7 +209742,7 @@
       },
       "UDHR": {
         "positive": 24,
-        "negative": 207,
+        "negative": 208,
         "event_ids_positive": [
           9062,
           9030,
@@ -209723,6 +209770,7 @@
           8795
         ],
         "event_ids_negative": [
+          9067,
           9064,
           9063,
           9061,
@@ -209934,13 +209982,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 25,
+        "negative": 26,
         "event_ids_positive": [
           9022,
           8952,
           8795
         ],
         "event_ids_negative": [
+          9067,
           9051,
           9041,
           9039,
@@ -209970,7 +210019,7 @@
       },
       "CRC": {
         "positive": 9,
-        "negative": 67,
+        "negative": 68,
         "event_ids_positive": [
           9030,
           9022,
@@ -209983,6 +210032,7 @@
           8795
         ],
         "event_ids_negative": [
+          9067,
           9059,
           9054,
           9053,
@@ -210054,7 +210104,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 53,
+        "negative": 54,
         "event_ids_positive": [
           8970,
           8851,
@@ -210062,6 +210112,7 @@
           8795
         ],
         "event_ids_negative": [
+          9067,
           9053,
           9050,
           9049,
@@ -210278,11 +210329,11 @@
       "niche_pct": 66.7,
       "mainstream_pct": 33.3,
       "total_sources_used": 93,
-      "articles_processed": 289
+      "articles_processed": 290
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 289,
+      "total_events": 290,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -210648,9 +210699,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 252,
+      "total_mint": 253,
       "direct_action": {
-        "count": 233,
+        "count": 234,
         "pct": 92.5
       },
       "editorial_alarm": {
@@ -210663,9 +210714,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6827,
+      "total_mint": 6828,
       "direct_action": {
-        "count": 6279,
+        "count": 6280,
         "pct": 92.0
       },
       "editorial_alarm": {
@@ -210678,9 +210729,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 93,
+      "citizen": 94,
       "institutional": 196,
-      "citizen_ratio": 0.322,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-10-22",
@@ -210714,11 +210765,12 @@
         },
         {
           "date": "2026-10-28",
-          "citizen": 3,
+          "citizen": 4,
           "institutional": 3
         }
       ],
       "event_ids_citizen": [
+        9067,
         9065,
         9061,
         9060,
