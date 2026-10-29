@@ -32,6 +32,9 @@ from config import (
     MISTRAL_MODEL,
     MISTRAL_FAST_MODEL,
     MISTRAL_ANALYST_B_MODEL,
+    ANTHROPIC_API_KEY,
+    ANTHROPIC_FAST_MODEL,
+    ANTHROPIC_ANALYST_B_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -50,6 +53,14 @@ logger = logging.getLogger(__name__)
 # visible in the stored JSON. If truncated answers ever appear (empty content,
 # invalid JSON at the tail), raise this first.
 ANALYST_MAX_TOKENS = 2000
+
+# Output ceilings for the Claude route. Anthropic bills the tokens actually
+# produced, not the reserved budget, so these only need room for adaptive
+# thinking (which counts toward max_tokens) plus the JSON answer. A cap sized
+# for the answer alone can be used up by thinking and return no text at all.
+ANTHROPIC_FAST_MAX_TOKENS = 1024
+ANTHROPIC_BATCH_MAX_TOKENS = 2048
+ANTHROPIC_ANALYST_MAX_TOKENS = 8000
 
 # Model identifiers for the 8-agent verification pipeline
 ANALYST_B_MODEL = "qwen/qwen3.6-27b"
@@ -526,6 +537,133 @@ def _call_mistral(
             return None
 
 
+# ── Anthropic provider ──────────────────────────────────────────────────────
+
+_anthropic_client = None
+
+
+def _get_anthropic_client():
+    """
+    One SDK client per process, so every call of the run reuses the same
+    connection pool. The SDK already retries 408/409/429/5xx with backoff; one
+    retry is enough here because the Groq / Mistral / Cerebras cascade behind
+    Claude is the real fallback, and a long internal wait would only stall the
+    run.
+
+    The SDK reads ANTHROPIC_API_KEY from the environment, which config.py fills
+    from .env through load_dotenv.
+    """
+    global _anthropic_client
+    if _anthropic_client is None:
+        import anthropic
+        _anthropic_client = anthropic.Anthropic(timeout=120.0, max_retries=1)
+    return _anthropic_client
+
+
+def _call_anthropic_raw(
+    system_prompt: str,
+    user_message: str,
+    context: str,
+    max_tokens: int,
+    model: str,
+    effort: str = "low",
+) -> Optional[str]:
+    """
+    Call Claude through the official SDK and return the answer text, or None so
+    the caller's cascade moves on to the next provider.
+
+    Returns raw text rather than parsed JSON because the batch classifier expects
+    a JSON array, while every other agent expects an object.
+
+    Adaptive thinking stays on (the Haiku 5.5 default) and `effort` sets how much
+    the model thinks: low for triage, medium for Analyst B. No temperature is
+    sent, Haiku 5.5 rejects any sampling parameter with a 400.
+    """
+    if not ANTHROPIC_API_KEY or not _provider_enabled("anthropic"):
+        return None
+    try:
+        import anthropic
+        client = _get_anthropic_client()
+    except Exception as exc:
+        # The package is missing on this host: skip Claude for the whole run
+        # instead of logging the same import error once per article.
+        _disabled_providers.add("anthropic")
+        logger.critical("Anthropic SDK unavailable, Claude skipped for this run: %s", exc)
+        return None
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            # The system prompt is static per agent, so it is cached: later calls
+            # in the run read it at 0.1x the input price. Haiku 5.5 caches
+            # prefixes from 512 tokens, every prompt of this pipeline is longer.
+            system=[{
+                "type": "text",
+                "text": system_prompt,
+                "cache_control": {"type": "ephemeral"},
+            }],
+            messages=[{"role": "user", "content": user_message}],
+            output_config={"effort": effort},
+        )
+    except anthropic.APIStatusError as exc:
+        status = exc.status_code
+        # An exhausted credit balance can come back as a 400 whose message names
+        # the balance; it is as permanent for this run as a 402.
+        if status == 400 and "credit balance" in str(exc).lower():
+            status = 402
+        if status in (401, 402, 403, 404):
+            _log_config_error("Anthropic", status, model, str(exc))
+        else:
+            logger.warning(
+                "Anthropic HTTP %s for %s (model=%s): %s", status, context, model, str(exc)[:200],
+            )
+        return None
+    except Exception as exc:
+        logger.error("Anthropic call failed for %s (model=%s): %s", context, model, exc)
+        return None
+
+    # A safety classifier can decline with HTTP 200. Haiku 5.5 has no server
+    # side fallback model, so the cascade is the fallback.
+    if response.stop_reason == "refusal":
+        details = getattr(response, "stop_details", None)
+        logger.warning(
+            "Anthropic refused %s (model=%s, category=%s), cascading",
+            context, model, getattr(details, "category", None),
+        )
+        return None
+
+    usage = response.usage
+    logger.info(
+        "Anthropic 200 for %s (model=%s, in=%s, cache_read=%s, cache_write=%s, out=%s, stop=%s)",
+        context, model, usage.input_tokens,
+        getattr(usage, "cache_read_input_tokens", 0) or 0,
+        getattr(usage, "cache_creation_input_tokens", 0) or 0,
+        usage.output_tokens, response.stop_reason,
+    )
+    # Thinking blocks come first and carry no answer text: read by block type.
+    text = "".join(block.text for block in response.content if block.type == "text")
+    if not text.strip():
+        logger.warning("Anthropic returned no text for %s (stop=%s)", context, response.stop_reason)
+        return None
+    return text
+
+
+def _call_anthropic(
+    system_prompt: str,
+    user_message: str,
+    context: str,
+    max_tokens: int,
+    model: str,
+    effort: str = "low",
+) -> Optional[dict]:
+    """Claude call parsed as a JSON object, None when the cascade should go on."""
+    raw = _call_anthropic_raw(system_prompt, user_message, context, max_tokens, model, effort)
+    if raw is None:
+        return None
+    return _parse_json_response(raw, context)
+
+
 # ── Ollama provider ──────────────────────────────────────────────────────────
 
 def _call_ollama_fast(system_prompt: str, user_message: str, context: str) -> Optional[dict]:
@@ -599,7 +737,16 @@ def call_fast(system_prompt: str, user_message: str, context: str = "") -> Optio
     max_attempts=1) and when CEREBRAS_API_KEY is set, falls back to Cerebras
     (separate quota bucket). Keeps the classifier responsive when Groq free-tier
     is saturated — no 1000s+ backoff wait.
+
+    When ANTHROPIC_API_KEY is set, Claude Haiku 5.5 is tried first and the
+    cascade below only runs if it fails (see config.ANTHROPIC_API_KEY).
     """
+    result = _call_anthropic(
+        system_prompt, user_message, context,
+        max_tokens=ANTHROPIC_FAST_MAX_TOKENS, model=ANTHROPIC_FAST_MODEL, effort="low",
+    )
+    if result is not None:
+        return result
     if LLM_PROVIDER == "groq":
         # Cascade: Groq → Mistral → Cerebras. 1 attempt per provider so a
         # single provider's 429 never freezes the classifier.
@@ -646,15 +793,27 @@ def call_analyst_b(system_prompt: str, user_message: str, context: str = "") -> 
     """
     Call Analyst B — independent deep reading.
 
-    Routing (each provider is a separate free-tier bucket):
-      1. Mistral  (mistral-small-latest)  — primary  (added 2026-05-05)
+    Routing (each provider is a separate bucket):
+      0. Claude   (claude-haiku-5-5)      — primary when ANTHROPIC_API_KEY is set (2026-10-29)
+      1. Mistral  (mistral-small-latest)  — primary otherwise (added 2026-05-05)
       2. Cerebras (CEREBRAS_MODEL)         — fallback when Mistral fails
       3. Groq     (llama-3.3-70b)          — last resort
       4. Ollama local                      — when LLM_PROVIDER=ollama
 
     The cascade keeps Analyst B running through 429 of any single provider
     and decouples it from the Groq account ceiling that Analyst A consumes.
+    Analyst A never routes to Claude, so with Claude up the two readings come
+    from two different vendors. Medium effort: B is a full reading, not triage.
     """
+    result = _call_anthropic(
+        system_prompt, user_message, context,
+        max_tokens=ANTHROPIC_ANALYST_MAX_TOKENS, model=ANTHROPIC_ANALYST_B_MODEL, effort="medium",
+    )
+    if result is not None:
+        return result
+    if ANTHROPIC_API_KEY:
+        logger.info("Claude failed for analyst B %s, falling back to Mistral", context)
+
     if MISTRAL_API_KEY and _provider_enabled("mistral"):
         # Mistral is primary for Analyst B → 2 attempts (it's our strongest
         # bucket so worth a retry on transient errors before we cascade)
