@@ -20,7 +20,10 @@ import sqlite3
 from datetime import datetime, timezone
 from typing import Optional
 
-from ollama_client import call_fast, _log_config_error, _cache_key, _record_usage
+from ollama_client import (
+    call_fast, _log_config_error, _cache_key, _record_usage,
+    _call_anthropic_raw, ANTHROPIC_BATCH_MAX_TOKENS,
+)
 from prompts.classifier_prompt import CLASSIFIER_PROMPT, CLASSIFIER_BATCH_PROMPT
 from prompts.sanitize import wrap_article_for_llm, wrap_articles_batch_for_llm
 from config import (
@@ -395,10 +398,18 @@ def _call_fast_raw(user_message: str, context: str) -> Optional[str]:
     Call the fast LLM and return the raw text response (before JSON parsing).
     This is needed for batch mode where the response is a JSON array, not a dict.
 
-    Cascade: Groq → Mistral → Cerebras (3 independent free-tier buckets).
+    Cascade: Groq → Mistral → Cerebras (3 independent free-tier buckets),
+    behind Claude Haiku 5.5 when ANTHROPIC_API_KEY is set.
     """
     import time
-    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_FAST_MODEL, CEREBRAS_API_KEY, MISTRAL_API_KEY
+    from config import LLM_PROVIDER, GROQ_API_KEY, GROQ_FAST_MODEL, CEREBRAS_API_KEY, MISTRAL_API_KEY, ANTHROPIC_FAST_MODEL
+
+    raw = _call_anthropic_raw(
+        CLASSIFIER_BATCH_PROMPT, user_message, context,
+        max_tokens=ANTHROPIC_BATCH_MAX_TOKENS, model=ANTHROPIC_FAST_MODEL, effort="low",
+    )
+    if raw is not None:
+        return raw
 
     if LLM_PROVIDER == "groq":
         import httpx

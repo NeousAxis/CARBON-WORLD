@@ -68,6 +68,21 @@ MISTRAL_FAST_MODEL: str = os.getenv("MISTRAL_FAST_MODEL", "ministral-8b-latest")
 # $0.15/$0.60 it also costs 3.3x less on input than Large 3.
 MISTRAL_ANALYST_B_MODEL: str = os.getenv("MISTRAL_ANALYST_B_MODEL", "mistral-small-latest")
 
+# Anthropic settings (2026-10-29), paid from the monthly API credits that come
+# with the Claude Max plan (no carry-over from one month to the next).
+# Optional: with ANTHROPIC_API_KEY set, Claude Haiku 5.5 becomes the primary
+# route for the classifier (single and batch) and for Analyst B, ahead of the
+# Groq / Mistral / Cerebras cascade, which stays as the fallback. Measured the
+# same day, the Groq free tier answered 48 to 82 calls per hourly run with 429.
+#
+# Analyst A never routes to Claude: A stays on Groq with Mistral Large behind
+# it, so the two readings always come from two different vendors (guarded by
+# test_analyst_independence). Haiku 5.5 is $0.10 / $0.50 per M tokens for
+# prompts up to 100K, cache reads at 0.1x the input price.
+ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
+ANTHROPIC_FAST_MODEL: str = os.getenv("ANTHROPIC_FAST_MODEL", "claude-haiku-5-5")
+ANTHROPIC_ANALYST_B_MODEL: str = os.getenv("ANTHROPIC_ANALYST_B_MODEL", "claude-haiku-5-5")
+
 # LLM Models — two-tier system (Ollama model names)
 CLASSIFIER_MODEL: str = os.getenv("CLASSIFIER_MODEL", "qwen3:14b")
 ANALYST_MODEL: str = os.getenv("ANALYST_MODEL", "qwen3:32b")
