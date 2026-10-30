@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-10-30T11:04:45.986937+00:00",
-  "total_events": 9190,
+  "generated_at": "2026-10-30T12:05:02.699577+00:00",
+  "total_events": 9192,
   "total_burned": 8178518485,
-  "total_minted": 11584590444,
+  "total_minted": 11585572444,
   "pending_reviews": 9,
   "events": [
+    {
+      "id": 9192,
+      "event_title": "TOYO secures CBP release of solar cell shipments from Ethiopia",
+      "event_url": "https://www.pv-tech.org/toyo-secures-cbp-release-of-solar-cell-shipments-from-ethiopia/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": -0.8,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] CBP action enables shipments despite unverified labor/environmental risks, prioritizing trade over safeguards. | The release of solar cell shipments supports renewable energy deployment and economic activity, aligning with climate and development goals. However, the lack of rigorous supply chain scrutiny risks enabling labor abuses and unsustainable practices, undermining et",
+      "tx_hash": "2pWVf1j7aRQDcibsB5wZX9B62Um9nztTU7wxtiVTZmAzqG1aiYV15GAu1C3GrbPF3WUGeEzxwZqMGctKx5ta63aE",
+      "created_at": "2026-10-30T12:04:57.152955+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Release of solar cell shipments enables deployment of renewable energy infrastructure, supporting clean energy transition.\", \"affected_sdgs\": [7, 13, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Facilitates trade and economic activity in Ethiopia, potentially supporting local employment and industrial development.\", \"affected_sdgs\": [8, 9, 1], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Lack of transparency in supply chain documentation review may enable unethical labor practices or environmental violations in Ethiopian manufacturing.\", \"affected_sdgs\": [8, 12, 16], \"violated_rights\": [\"ILO Core Labor Standards\", \"UDHR Article 23\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Potential for solar cell production to rely on non-renewable energy sources or unsustainable mining practices in Ethiopia.\", \"affected_sdgs\": [7, 12, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 9191,
+      "event_title": "The Pacific demands more accessible climate finance ahead of COP31",
+      "event_url": "https://efeverde.com/pacifico-reclama-financiacion-climatica-accesible-cop31/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "MINT",
+      "amount_crbn": 832000,
+      "final_score": 2.66,
+      "confidence": 6,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] While the demand for climate finance reforms is positive, systemic risks and inequities persist, warranting a MINT decision. | The demand for climate finance reforms by Pacific nations represents a positive step toward equitable adaptation and resilience, aligning with SDGs 1, 10, 13, and 17. However, the risk of negotiations ignoring scientific evidence and the persistent inac",
+      "tx_hash": "27y72Z61cwY8QKoEGzYUrb4wUSK4W6hsGM6k43F2JPRmN7fm5am1z5jWsj1ZKxDaGCu2NyuVciy7eHY2jmqjDhq1",
+      "created_at": "2026-10-30T12:04:54.798744+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Pacific nations collectively demand reforms in climate finance mechanisms to improve accessibility for vulnerable states, directly targeting adaptation and resilience funding.\", \"affected_sdgs\": [1, 10, 13, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Public advocacy by named actors (Pacific countries) ahead of COP31, amplifying the voices of climate-vulnerable nations and emphasizing scientific evidence in negotiations.\", \"affected_sdgs\": [13, 16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk of international negotiations losing sight of scientific evidence, potentially undermining effective climate action and delaying urgent measures.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"UDHR Article 3 (life, liberty, security)\", \"UDHR Article 25 (standard of living)\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Current climate finance systems remain inaccessible to the most vulnerable, perpetuating inequalities in adaptation and mitigation efforts.\", \"affected_sdgs\": [10, 13], \"violated_rights\": [\"UDHR Article 2 (non-discrimination)\", \"UDHR Article 28 (social order)\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 424000
+    },
     {
       "id": 9190,
       "event_title": "Government Seeks Solution for Illegal Gold Miners? Jatam: Keep Pursuing Intellectual Actors",
@@ -212137,8 +212183,8 @@
       },
       {
         "country": "Indonesia",
-        "count": 11,
-        "total_amount": 4353300
+        "count": 10,
+        "total_amount": 4285700
       }
     ],
     "top_countries_burn": [
@@ -212171,13 +212217,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.2,
-        "events": 30
+        "burn_ratio": 0.207,
+        "events": 29
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.14,
-        "events": 86
+        "burn_ratio": 0.141,
+        "events": 85
       },
       {
         "region": "Oceania",
@@ -212255,7 +212301,7 @@
       },
       {
         "date": "2026-10-30",
-        "net_minted": 7456810,
+        "net_minted": 8438810,
         "net_burned": 63880
       }
     ],
@@ -212310,6 +212356,8 @@
           8903
         ],
         "event_ids_negative": [
+          9192,
+          9191,
           9190,
           9189,
           9188,
@@ -212568,9 +212616,7 @@
           8900,
           8899,
           8898,
-          8897,
-          8896,
-          8895
+          8897
         ]
       },
       "UDHR": {
@@ -212599,6 +212645,8 @@
           8903
         ],
         "event_ids_negative": [
+          9192,
+          9191,
           9190,
           9189,
           9188,
@@ -212811,9 +212859,7 @@
           8901,
           8899,
           8898,
-          8897,
-          8896,
-          8895
+          8897
         ]
       },
       "ILO": {
@@ -212825,6 +212871,7 @@
           8952
         ],
         "event_ids_negative": [
+          9192,
           9190,
           9188,
           9147,
@@ -212854,8 +212901,7 @@
           8934,
           8913,
           8905,
-          8899,
-          8895
+          8899
         ]
       },
       "CRC": {
@@ -212934,7 +212980,7 @@
       },
       "UNDRIP": {
         "positive": 4,
-        "negative": 64,
+        "negative": 63,
         "event_ids_positive": [
           9134,
           9102,
@@ -213004,13 +213050,12 @@
           8924,
           8918,
           8906,
-          8905,
-          8895
+          8905
         ]
       },
       "Animal": {
         "positive": 8,
-        "negative": 32,
+        "negative": 31,
         "event_ids_positive": [
           9173,
           9083,
@@ -213052,8 +213097,7 @@
           8941,
           8932,
           8926,
-          8924,
-          8895
+          8924
         ]
       },
       "PB": {
@@ -213079,6 +213123,7 @@
           8909
         ],
         "event_ids_negative": [
+          9192,
           9190,
           9189,
           9188,
@@ -213171,14 +213216,13 @@
           8919,
           8918,
           8914,
-          8905,
-          8895
+          8905
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.7,
-      "mainstream_pct": 28.3,
+      "niche_pct": 69.6,
+      "mainstream_pct": 30.4,
       "total_sources_used": 92,
       "articles_processed": 296
     },
@@ -213228,10 +213272,11 @@
       },
       {
         "name": "COP",
-        "count": 3,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          9191,
           9181,
           9145,
           9080
@@ -213288,10 +213333,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 41,
+        "count": 42,
         "burn_count": 5,
-        "mint_count": 36,
+        "mint_count": 37,
         "event_ids": [
+          9192,
           9189,
           9180,
           9156,
@@ -213337,10 +213383,11 @@
       },
       {
         "name": "Finance",
-        "count": 27,
+        "count": 28,
         "burn_count": 0,
-        "mint_count": 27,
+        "mint_count": 28,
         "event_ids": [
+          9191,
           9174,
           9168,
           9146,
@@ -213372,9 +213419,9 @@
       },
       {
         "name": "Construction",
-        "count": 22,
+        "count": 21,
         "burn_count": 4,
-        "mint_count": 18,
+        "mint_count": 17,
         "event_ids": [
           9180,
           9154,
@@ -213396,8 +213443,7 @@
           8943,
           8934,
           8921,
-          8920,
-          8895
+          8920
         ]
       },
       {
@@ -213561,9 +213607,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6942,
+      "total_mint": 6944,
       "direct_action": {
-        "count": 6377,
+        "count": 6379,
         "pct": 91.9
       },
       "editorial_alarm": {
@@ -213576,9 +213622,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 106,
-      "institutional": 190,
-      "citizen_ratio": 0.358,
+      "citizen": 105,
+      "institutional": 191,
+      "citizen_ratio": 0.355,
       "daily": [
         {
           "date": "2026-10-24",
@@ -213613,7 +213659,7 @@
         {
           "date": "2026-10-30",
           "citizen": 6,
-          "institutional": 21
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -213721,10 +213767,11 @@
         8904,
         8902,
         8900,
-        8899,
-        8895
+        8899
       ],
       "event_ids_institutional": [
+        9192,
+        9191,
         9190,
         9186,
         9185,
@@ -213913,8 +213960,7 @@
         8903,
         8901,
         8898,
-        8897,
-        8896
+        8897
       ]
     }
   }
