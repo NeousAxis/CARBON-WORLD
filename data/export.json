@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-10-31T11:04:22.662391+00:00",
-  "total_events": 9245,
+  "generated_at": "2026-10-31T12:05:23.193275+00:00",
+  "total_events": 9246,
   "total_burned": 8183632485,
-  "total_minted": 11641683269,
+  "total_minted": 11641882769,
   "pending_reviews": 10,
   "events": [
+    {
+      "id": 9246,
+      "event_title": "Zelenskyy urges US to speed up Patriot deliveries",
+      "event_url": "https://www.politico.eu/article/volodymyr-zelenskyy-urges-us-speed-up-patriot-deliveries/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico Europe (full)",
+      "decision": "MINT",
+      "amount_crbn": 199500,
+      "final_score": 2.85,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] US arms approval protects civilians from missiles but may prolong war; net ethical score is mildly negative, so MINT. | The approval is a concrete governmental act that strengthens defensive protection against missile attacks on civilians, which is a clear humanitarian benefit. However, arms sales in an active wa",
+      "tx_hash": "x4S4TUFWWYsiGTEhLE4psSre6KFi4mM72Jgh2MaspvDXZz3mz3gmhqfG5uDotD5PgaufCwp3Z552McaQgXYVuBk",
+      "created_at": "2026-10-31T12:05:17.583207+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Approved sale of 500 Patriot interceptors gives Ukraine air-defence capacity against Russian ballistic missile strikes on civilian areas.\", \"affected_sdgs\": [3, 16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Defensive, non-offensive capability can protect lives and critical infrastructure, supporting the right to life and security of civilians.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Arms transfers sustain and may prolong an armed conflict, extending civilian exposure to violence and displacement.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Continued militarisation of the conflict diverts resources and reduces pressure for a negotiated settlement.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 9245,
       "event_title": "PSN Tambak: Does the Forestry Minister's Circular Contradict the Constitutional Court Ruling?",
@@ -213382,8 +213405,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 52,
-        "total_amount": 27011400
+        "count": 53,
+        "total_amount": 27210900
       },
       {
         "country": "France",
@@ -213436,8 +213459,8 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.233,
-        "events": 30
+        "burn_ratio": 0.241,
+        "events": 29
       },
       {
         "region": "Europe",
@@ -213456,8 +213479,8 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.083,
-        "events": 60
+        "burn_ratio": 0.082,
+        "events": 61
       }
     ],
     "top_regions_destructive": [
@@ -213473,8 +213496,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.917,
-        "events": 60
+        "mint_ratio": 0.918,
+        "events": 61
       },
       {
         "region": "Oceania",
@@ -213520,7 +213543,7 @@
       },
       {
         "date": "2026-10-31",
-        "net_minted": 29085500,
+        "net_minted": 29285000,
         "net_burned": 2512000
       }
     ],
@@ -213576,6 +213599,7 @@
           8933
         ],
         "event_ids_negative": [
+          9246,
           9245,
           9244,
           9243,
@@ -213854,13 +213878,12 @@
           8935,
           8934,
           8932,
-          8931,
-          8930
+          8931
         ]
       },
       "UDHR": {
         "positive": 20,
-        "negative": 228,
+        "negative": 229,
         "event_ids_positive": [
           9234,
           9230,
@@ -213884,6 +213907,7 @@
           8933
         ],
         "event_ids_negative": [
+          9246,
           9245,
           9244,
           9242,
@@ -214163,7 +214187,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 63,
+        "negative": 62,
         "event_ids_positive": [
           9167,
           9141,
@@ -214234,8 +214258,7 @@
           8956,
           8938,
           8936,
-          8934,
-          8930
+          8934
         ]
       },
       "UNDRIP": {
@@ -214745,10 +214768,11 @@
       },
       {
         "name": "Defense",
-        "count": 19,
+        "count": 20,
         "burn_count": 0,
-        "mint_count": 19,
+        "mint_count": 20,
         "event_ids": [
+          9246,
           9204,
           9202,
           9194,
@@ -214904,9 +214928,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 6991,
+      "total_mint": 6992,
       "direct_action": {
-        "count": 6420,
+        "count": 6421,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -214956,7 +214980,7 @@
         {
           "date": "2026-10-31",
           "citizen": 13,
-          "institutional": 13
+          "institutional": 14
         }
       ],
       "event_ids_citizen": [
@@ -215073,6 +215097,7 @@
         8932
       ],
       "event_ids_institutional": [
+        9246,
         9244,
         9242,
         9240,
@@ -215276,8 +215301,7 @@
         8940,
         8938,
         8935,
-        8931,
-        8930
+        8931
       ]
     }
   }
