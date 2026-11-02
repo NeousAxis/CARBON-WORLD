@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-01T23:03:54.205907+00:00",
-  "total_events": 9302,
+  "generated_at": "2026-11-02T00:03:55.904109+00:00",
+  "total_events": 9303,
   "total_burned": 8184853985,
-  "total_minted": 11692349379,
+  "total_minted": 11692360119,
   "pending_reviews": 11,
   "events": [
+    {
+      "id": 9303,
+      "event_title": "Large fire in Alter do Chão (PA) is controlled; firefighters and brigadistas fight new hotspots",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/11/incendio-de-grandes-proporcoes-em-alter-do-chao-pa-e-controlado-bombeiros-e-brigadistas-combatem-novos-focos.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 10740,
+      "final_score": 3.58,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Indigenous and brigade firefighting protects a protected area, but the ongoing fire damage and modest net score fall under the MINT threshold. | The community and institutional firefighting response is a protective act that limits ecological and health damage in a protected area, with indigenous participation add",
+      "tx_hash": "3Svx1uBZnAd3rrrpAbhYDz9Daz9eQNfwQ88aQATcbbziHjiyA19AK33nfcvtFPtMxE3fFVjcxTpgjjH8SXNkGtMj",
+      "created_at": "2026-11-02T00:03:48.747830+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Borari indigenous people, volunteer brigadistas and military firefighters are actively containing fires in the Alter do Chão Environmental Protection Area, protecting forest and biodiversity.\", \"affected_sdgs\": [15, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\", \"UNDRIP\"]}, {\"description\": \"Indigenous-led participation in fire response recognizes Borari territorial stewardship and community role in environmental protection.\", \"affected_sdgs\": [16, 10], \"magnitude\": 4, \"frameworks\": [\"UNDRIP\", \"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"A large-scale fire has damaged forest and protected-area ecosystems, with new hotspots still appearing and risk of further loss.\", \"affected_sdgs\": [15, 13, 3], \"violated_rights\": [\"UNDRIP Article 29\", \"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\", \"UNDRIP\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 9302,
       "event_title": "Property regimes and the socio-ecological dynamics of bofedales (Andean Peatlands) in Northern Chile",
@@ -214708,8 +214731,8 @@
       },
       {
         "country": "Brazil",
-        "count": 13,
-        "total_amount": 4403475
+        "count": 14,
+        "total_amount": 4414215
       },
       {
         "country": "Indonesia",
@@ -214752,13 +214775,13 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.125,
-        "events": 24
+        "burn_ratio": 0.12,
+        "events": 25
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.12,
-        "events": 92
+        "burn_ratio": 0.11,
+        "events": 91
       },
       {
         "region": "Oceania",
@@ -214794,16 +214817,11 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.88,
-        "events": 92
+        "mint_ratio": 0.89,
+        "events": 91
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-10-26",
-        "net_minted": 57727800,
-        "net_burned": 16158400
-      },
       {
         "date": "2026-10-27",
         "net_minted": 59702750,
@@ -214833,6 +214851,11 @@
         "date": "2026-11-01",
         "net_minted": 26997910,
         "net_burned": 21500
+      },
+      {
+        "date": "2026-11-02",
+        "net_minted": 10740,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -214848,8 +214871,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 31,
-        "negative": 304,
+        "positive": 30,
+        "negative": 305,
         "event_ids_positive": [
           9291,
           9263,
@@ -214880,10 +214903,10 @@
           8990,
           8986,
           8973,
-          8970,
-          8966
+          8970
         ],
         "event_ids_negative": [
+          9303,
           9302,
           9301,
           9300,
@@ -215191,8 +215214,8 @@
         ]
       },
       "UDHR": {
-        "positive": 18,
-        "negative": 248,
+        "positive": 17,
+        "negative": 249,
         "event_ids_positive": [
           9291,
           9234,
@@ -215210,10 +215233,10 @@
           9027,
           9022,
           8986,
-          8970,
-          8966
+          8970
         ],
         "event_ids_negative": [
+          9303,
           9301,
           9299,
           9297,
@@ -215513,7 +215536,7 @@
         ]
       },
       "CRC": {
-        "positive": 7,
+        "positive": 6,
         "negative": 64,
         "event_ids_positive": [
           9291,
@@ -215521,8 +215544,7 @@
           9141,
           9099,
           9030,
-          9022,
-          8966
+          9022
         ],
         "event_ids_negative": [
           9297,
@@ -215593,7 +215615,7 @@
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           9263,
           9233,
@@ -215604,6 +215626,7 @@
           8970
         ],
         "event_ids_negative": [
+          9303,
           9302,
           9299,
           9298,
@@ -215732,7 +215755,7 @@
       },
       "PB": {
         "positive": 16,
-        "negative": 108,
+        "negative": 109,
         "event_ids_positive": [
           9263,
           9233,
@@ -215752,6 +215775,7 @@
           8970
         ],
         "event_ids_negative": [
+          9303,
           9302,
           9299,
           9298,
@@ -216224,14 +216248,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 31,
+      "total_burn": 30,
       "direct_action": {
-        "count": 27,
-        "pct": 87.1
+        "count": 26,
+        "pct": 86.7
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 12.9
+        "pct": 13.3
       },
       "untyped": {
         "count": 0,
@@ -216254,14 +216278,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 306,
+      "total_mint": 307,
       "direct_action": {
-        "count": 272,
+        "count": 273,
         "pct": 88.9
       },
       "editorial_alarm": {
         "count": 32,
-        "pct": 10.5
+        "pct": 10.4
       },
       "untyped": {
         "count": 2,
@@ -216269,9 +216293,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7046,
+      "total_mint": 7047,
       "direct_action": {
-        "count": 6470,
+        "count": 6471,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -216284,15 +216308,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 114,
-      "institutional": 223,
-      "citizen_ratio": 0.338,
+      "citizen": 115,
+      "institutional": 222,
+      "citizen_ratio": 0.341,
       "daily": [
-        {
-          "date": "2026-10-26",
-          "citizen": 13,
-          "institutional": 29
-        },
         {
           "date": "2026-10-27",
           "citizen": 12,
@@ -216322,9 +216341,15 @@
           "date": "2026-11-01",
           "citizen": 11,
           "institutional": 26
+        },
+        {
+          "date": "2026-11-02",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        9303,
         9302,
         9298,
         9294,
@@ -216662,8 +216687,7 @@
         8973,
         8972,
         8971,
-        8970,
-        8966
+        8970
       ]
     }
   }
