@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-02T06:06:14.778838+00:00",
-  "total_events": 9316,
+  "generated_at": "2026-11-02T07:05:14.377904+00:00",
+  "total_events": 9317,
   "total_burned": 8185003985,
-  "total_minted": 11695195689,
+  "total_minted": 11695799689,
   "pending_reviews": 11,
   "events": [
+    {
+      "id": 9317,
+      "event_title": "Naval military industry: Germany displays its new ambitions",
+      "event_url": "https://www.lemonde.fr/economie/article/2026/11/02/industrie-navale-militaire-l-allemagne-affiche-ses-nouvelles-ambitions_6805019_3234.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.62,
+      "confidence": 7,
+      "justification": "Military rearmament and defense industry expansion undermine peace, divert resources from sustainability, and risk enabling human rights abuses. | While the development of national defense champions may bolster economic growth and industrial capacity, the ethical costs are substantial. The expansion of military capabilities risks undermining global peace, diverting critical resources from sustainable development, and enabling future human rights abuses. The negative aspects outweigh the economic",
+      "tx_hash": "2jXo16nn5JofP6UcMbccA6Fz5FPNkSMu8r89pZBTSqFGNhfiU7bMz19FrNss79t6KXvGnKrLgNXAQ1bKxiHyr25K",
+      "created_at": "2026-11-02T07:05:07.250509+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"National industrial champions (TKMS and Rheinmetall) may create high-skilled jobs and economic growth in the defense sector, supporting domestic industry and infrastructure.\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Military rearmament and expansion of naval defense industry increase global arms proliferation, risking escalation of conflicts and undermining peace and security efforts.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Defense sector growth may divert public and private resources from climate action, social welfare, and sustainable development priorities.\", \"affected_sdgs\": [1, 3, 7, 13, 15], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"Expansion of military-industrial capacity could enable future human rights violations or environmental harm through arms exports to conflict zones or authoritarian regimes.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 38\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9316,
       "event_title": "The 'super El Niño' continues to progress: 'It is already of unprecedented scale'",
@@ -215030,8 +215053,8 @@
       },
       {
         "country": "Brazil",
-        "count": 14,
-        "total_amount": 4414215
+        "count": 13,
+        "total_amount": 3714215
       },
       {
         "country": "Indonesia",
@@ -215069,13 +215092,13 @@
     "top_regions_sustainable": [
       {
         "region": "Asia",
-        "burn_ratio": 0.135,
-        "events": 37
+        "burn_ratio": 0.139,
+        "events": 36
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.11,
-        "events": 91
+        "burn_ratio": 0.109,
+        "events": 92
       },
       {
         "region": "North America",
@@ -215084,8 +215107,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.077,
-        "events": 26
+        "burn_ratio": 0.08,
+        "events": 25
       },
       {
         "region": "Oceania",
@@ -215102,7 +215125,7 @@
       {
         "region": "Africa",
         "mint_ratio": 1.0,
-        "events": 10
+        "events": 9
       },
       {
         "region": "MENA",
@@ -215111,8 +215134,8 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.923,
-        "events": 26
+        "mint_ratio": 0.92,
+        "events": 25
       },
       {
         "region": "North America",
@@ -215153,7 +215176,7 @@
       },
       {
         "date": "2026-11-02",
-        "net_minted": 2846310,
+        "net_minted": 3450310,
         "net_burned": 150000
       }
     ],
@@ -215171,7 +215194,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 29,
-        "negative": 312,
+        "negative": 309,
         "event_ids_positive": [
           9304,
           9291,
@@ -215204,6 +215227,7 @@
           8986
         ],
         "event_ids_negative": [
+          9317,
           9316,
           9315,
           9314,
@@ -215511,16 +215535,12 @@
           8981,
           8980,
           8979,
-          8978,
-          8977,
-          8976,
-          8975,
-          8974
+          8978
         ]
       },
       "UDHR": {
         "positive": 17,
-        "negative": 253,
+        "negative": 250,
         "event_ids_positive": [
           9304,
           9291,
@@ -215541,6 +215561,7 @@
           8986
         ],
         "event_ids_negative": [
+          9317,
           9316,
           9315,
           9314,
@@ -215789,11 +215810,7 @@
           8981,
           8980,
           8979,
-          8978,
-          8977,
-          8976,
-          8975,
-          8974
+          8978
         ]
       },
       "ILO": {
@@ -215846,7 +215863,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 65,
+        "negative": 64,
         "event_ids_positive": [
           9291,
           9167,
@@ -215856,6 +215873,7 @@
           9022
         ],
         "event_ids_negative": [
+          9317,
           9314,
           9312,
           9297,
@@ -215918,9 +215936,7 @@
           8987,
           8984,
           8982,
-          8979,
-          8975,
-          8974
+          8979
         ]
       },
       "UNDRIP": {
@@ -216065,7 +216081,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 115,
+        "negative": 112,
         "event_ids_positive": [
           9263,
           9233,
@@ -216194,22 +216210,19 @@
           8984,
           8983,
           8981,
-          8978,
-          8976,
-          8975,
-          8974
+          8978
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 61.7,
-      "mainstream_pct": 38.3,
+      "niche_pct": 62.8,
+      "mainstream_pct": 37.2,
       "total_sources_used": 94,
-      "articles_processed": 343
+      "articles_processed": 340
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 343,
+      "total_events": 340,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -216422,6 +216435,38 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 24,
+        "burn_count": 0,
+        "mint_count": 24,
+        "event_ids": [
+          9317,
+          9300,
+          9281,
+          9278,
+          9274,
+          9255,
+          9246,
+          9204,
+          9202,
+          9194,
+          9169,
+          9166,
+          9140,
+          9121,
+          9063,
+          9057,
+          9053,
+          9052,
+          9011,
+          9010,
+          9002,
+          8987,
+          8982,
+          8979
+        ]
+      },
+      {
         "name": "Construction",
         "count": 23,
         "burn_count": 2,
@@ -216450,37 +216495,6 @@
           8992,
           8985,
           8980
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 23,
-        "burn_count": 0,
-        "mint_count": 23,
-        "event_ids": [
-          9300,
-          9281,
-          9278,
-          9274,
-          9255,
-          9246,
-          9204,
-          9202,
-          9194,
-          9169,
-          9166,
-          9140,
-          9121,
-          9063,
-          9057,
-          9053,
-          9052,
-          9011,
-          9010,
-          9002,
-          8987,
-          8982,
-          8979
         ]
       },
       {
@@ -216527,9 +216541,9 @@
       },
       {
         "name": "Water",
-        "count": 11,
+        "count": 10,
         "burn_count": 3,
-        "mint_count": 8,
+        "mint_count": 7,
         "event_ids": [
           9315,
           9210,
@@ -216540,26 +216554,24 @@
           9091,
           9000,
           8985,
-          8984,
-          8975
+          8984
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 10,
-        "burn_count": 1,
+        "name": "Transport",
+        "count": 9,
+        "burn_count": 0,
         "mint_count": 9,
         "event_ids": [
-          9156,
-          9134,
-          9131,
-          9119,
-          9115,
-          9064,
-          9056,
-          9038,
-          9019,
-          8974
+          9278,
+          9239,
+          9204,
+          9192,
+          9188,
+          9164,
+          9155,
+          9075,
+          9012
         ]
       }
     ],
@@ -216594,14 +216606,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 314,
+      "total_mint": 311,
       "direct_action": {
-        "count": 280,
-        "pct": 89.2
+        "count": 277,
+        "pct": 89.1
       },
       "editorial_alarm": {
         "count": 32,
-        "pct": 10.2
+        "pct": 10.3
       },
       "untyped": {
         "count": 2,
@@ -216609,9 +216621,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7059,
+      "total_mint": 7060,
       "direct_action": {
-        "count": 6483,
+        "count": 6484,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -216625,8 +216637,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 115,
-      "institutional": 228,
-      "citizen_ratio": 0.335,
+      "institutional": 225,
+      "citizen_ratio": 0.338,
       "daily": [
         {
           "date": "2026-10-27",
@@ -216661,7 +216673,7 @@
         {
           "date": "2026-11-02",
           "citizen": 4,
-          "institutional": 10
+          "institutional": 11
         }
       ],
       "event_ids_citizen": [
@@ -216782,6 +216794,7 @@
         8978
       ],
       "event_ids_institutional": [
+        9317,
         9316,
         9315,
         9314,
@@ -217005,11 +217018,7 @@
         8983,
         8981,
         8980,
-        8979,
-        8977,
-        8976,
-        8975,
-        8974
+        8979
       ]
     }
   }
