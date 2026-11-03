@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-03T13:07:25.015830+00:00",
-  "total_events": 9406,
+  "generated_at": "2026-11-03T14:07:28.777752+00:00",
+  "total_events": 9407,
   "total_burned": 8187077795,
-  "total_minted": 11768497259,
+  "total_minted": 11768997259,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9407,
+      "event_title": "Meta's $25B fine left out accountability for the Cambridge Analytica data privacy scandal",
+      "event_url": "https://theconversation.com/metas-25b-fine-left-out-accountability-for-the-cambridge-analytica-data-privacy-scandal-295620",
+      "event_source": "The Conversation US",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.19,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Fine punishes deception but fails to address systemic harm, enabling impunity for privacy violations. | The fine represents a tangible enforcement action against corporate deception, aligning with SDG 16 (Peace and Justice). However, the exclusion of direct accountability for the Cambridge Analytica scandal's broader harms undermines trust in institutional protections for pr",
+      "tx_hash": "b1wwySxXwBu3kyD8tH8i53MPPJaJkNEDbZQV26whYrUPA3F9NaSunJSWptpU8vsiYGbHE9f2iFY9y5AT1DSz5Bz",
+      "created_at": "2026-11-03T14:07:20.722165+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Court imposes $25 billion fine on Meta for deceptive practices related to data privacy violations, signaling enforcement of accountability for corporate misconduct.\", \"affected_sdgs\": [16, 17], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Fine excludes direct accountability for the Cambridge Analytica scandal's harm to democratic processes and individual privacy, leaving systemic violations unaddressed.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 12\", \"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of structural reforms or binding obligations on Meta to prevent future data misuse, perpetuating risks to user rights and societal trust.\", \"affected_sdgs\": [16, 9], \"violated_rights\": [\"UDHR Article 8\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9406,
       "event_title": "The prefecture bans gatherings near high schools in Strasbourg",
@@ -217085,8 +217108,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 65,
-        "total_amount": 40601680
+        "count": 66,
+        "total_amount": 41101680
       },
       {
         "country": "France",
@@ -217144,23 +217167,23 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.093,
-        "events": 43
+        "burn_ratio": 0.095,
+        "events": 42
       },
       {
         "region": "North America",
-        "burn_ratio": 0.092,
-        "events": 76
+        "burn_ratio": 0.091,
+        "events": 77
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.091,
+        "events": 110
       },
       {
         "region": "Latin America",
         "burn_ratio": 0.091,
         "events": 22
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.09,
-        "events": 111
       }
     ],
     "top_regions_destructive": [
@@ -217175,19 +217198,19 @@
         "events": 11
       },
       {
+        "region": "North America",
+        "mint_ratio": 0.909,
+        "events": 77
+      },
+      {
         "region": "Europe",
-        "mint_ratio": 0.91,
-        "events": 111
+        "mint_ratio": 0.909,
+        "events": 110
       },
       {
         "region": "Latin America",
         "mint_ratio": 0.909,
         "events": 22
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 0.908,
-        "events": 76
       }
     ],
     "supply_trend_7d": [
@@ -217223,7 +217246,7 @@
       },
       {
         "date": "2026-11-03",
-        "net_minted": 28501705,
+        "net_minted": 29001705,
         "net_burned": 600000
       }
     ],
@@ -217241,7 +217264,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 28,
-        "negative": 337,
+        "negative": 335,
         "event_ids_positive": [
           9395,
           9387,
@@ -217273,6 +217296,7 @@
           9062
         ],
         "event_ids_negative": [
+          9407,
           9406,
           9405,
           9404,
@@ -217606,15 +217630,12 @@
           9045,
           9044,
           9043,
-          9042,
-          9041,
-          9040,
-          9039
+          9042
         ]
       },
       "UDHR": {
         "positive": 16,
-        "negative": 272,
+        "negative": 271,
         "event_ids_positive": [
           9364,
           9340,
@@ -217634,6 +217655,7 @@
           9062
         ],
         "event_ids_negative": [
+          9407,
           9406,
           9404,
           9403,
@@ -217903,14 +217925,12 @@
           9045,
           9044,
           9043,
-          9042,
-          9041,
-          9039
+          9042
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 40,
+        "negative": 38,
         "event_ids_positive": [
           9230,
           9212,
@@ -217954,14 +217974,12 @@
           9081,
           9079,
           9067,
-          9051,
-          9041,
-          9039
+          9051
         ]
       },
       "CRC": {
         "positive": 4,
-        "negative": 71,
+        "negative": 69,
         "event_ids_positive": [
           9291,
           9167,
@@ -218037,14 +218055,12 @@
           9051,
           9048,
           9044,
-          9043,
-          9041,
-          9039
+          9043
         ]
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 73,
+        "negative": 70,
         "event_ids_positive": [
           9387,
           9364,
@@ -218125,15 +218141,12 @@
           9050,
           9049,
           9047,
-          9044,
-          9041,
-          9040,
-          9039
+          9044
         ]
       },
       "Animal": {
         "positive": 9,
-        "negative": 41,
+        "negative": 40,
         "event_ids_positive": [
           9395,
           9340,
@@ -218185,13 +218198,12 @@
           9098,
           9097,
           9077,
-          9069,
-          9040
+          9069
         ]
       },
       "PB": {
         "positive": 14,
-        "negative": 126,
+        "negative": 125,
         "event_ids_positive": [
           9395,
           9387,
@@ -218333,20 +218345,19 @@
           9050,
           9047,
           9046,
-          9044,
-          9040
+          9044
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 64.4,
-      "mainstream_pct": 35.6,
-      "total_sources_used": 101,
-      "articles_processed": 367
+      "niche_pct": 64.7,
+      "mainstream_pct": 35.3,
+      "total_sources_used": 102,
+      "articles_processed": 365
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 367,
+      "total_events": 365,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -218398,9 +218409,9 @@
       },
       {
         "name": "EU",
-        "count": 14,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 13,
         "event_ids": [
           9368,
           9310,
@@ -218414,8 +218425,7 @@
           9090,
           9089,
           9072,
-          9053,
-          9040
+          9053
         ]
       },
       {
@@ -218521,9 +218531,9 @@
       },
       {
         "name": "Finance",
-        "count": 37,
+        "count": 36,
         "burn_count": 2,
-        "mint_count": 35,
+        "mint_count": 34,
         "event_ids": [
           9404,
           9391,
@@ -218560,8 +218570,7 @@
           9084,
           9071,
           9047,
-          9045,
-          9040
+          9045
         ]
       },
       {
@@ -218623,6 +218632,28 @@
         ]
       },
       {
+        "name": "Tech",
+        "count": 14,
+        "burn_count": 0,
+        "mint_count": 14,
+        "event_ids": [
+          9407,
+          9383,
+          9378,
+          9342,
+          9294,
+          9228,
+          9218,
+          9194,
+          9179,
+          9159,
+          9157,
+          9140,
+          9109,
+          9060
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 13,
         "burn_count": 2,
@@ -218641,27 +218672,6 @@
           9108,
           9100,
           9077
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 13,
-        "burn_count": 0,
-        "mint_count": 13,
-        "event_ids": [
-          9383,
-          9378,
-          9342,
-          9294,
-          9228,
-          9218,
-          9194,
-          9179,
-          9159,
-          9157,
-          9140,
-          9109,
-          9060
         ]
       },
       {
@@ -218731,14 +218741,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 339,
+      "total_mint": 337,
       "direct_action": {
-        "count": 302,
-        "pct": 89.1
+        "count": 300,
+        "pct": 89.0
       },
       "editorial_alarm": {
         "count": 35,
-        "pct": 10.3
+        "pct": 10.4
       },
       "untyped": {
         "count": 2,
@@ -218746,9 +218756,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7141,
+      "total_mint": 7142,
       "direct_action": {
-        "count": 6557,
+        "count": 6558,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -218761,9 +218771,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 127,
-      "institutional": 240,
-      "citizen_ratio": 0.346,
+      "citizen": 126,
+      "institutional": 239,
+      "citizen_ratio": 0.345,
       "daily": [
         {
           "date": "2026-10-28",
@@ -218798,7 +218808,7 @@
         {
           "date": "2026-11-03",
           "citizen": 14,
-          "institutional": 23
+          "institutional": 24
         }
       ],
       "event_ids_citizen": [
@@ -218927,10 +218937,10 @@
         9057,
         9056,
         9049,
-        9043,
-        9040
+        9043
       ],
       "event_ids_institutional": [
+        9407,
         9403,
         9402,
         9400,
@@ -219168,9 +219178,7 @@
         9046,
         9045,
         9044,
-        9042,
-        9041,
-        9039
+        9042
       ]
     }
   }
