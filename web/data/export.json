@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-03T19:07:16.171634+00:00",
-  "total_events": 9428,
+  "generated_at": "2026-11-03T20:07:18.565122+00:00",
+  "total_events": 9430,
   "total_burned": 8187377795,
-  "total_minted": 11790858559,
+  "total_minted": 11791508559,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9430,
+      "event_title": "WALHI Jambi reports 9 companies to police over fires in concession areas",
+      "event_url": "https://www.ekuatorial.com/2026/11/walhi-jambi-laporkan-9-perusahaan-atas-kebakaran-yang-terjadi-di-area-konsesi/",
+      "event_source": "Ekuatorial (Indonesia env)",
+      "decision": "MINT",
+      "amount_crbn": 150000,
+      "final_score": 2.24,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action (legal complaint) punishes harm and enforces accountability, outweighing systemic risks. | The legal action by WALHI Jambi represents a positive step toward enforcing environmental accountability and protecting ecosystems, aligning with SDGs 13, 15, and 16. However, the underlying fires reflect systemic failures in corporate compliance and enforcement, u",
+      "tx_hash": "2UPHh1jVAniLnK8abPWpQNzUvf8xm5ZWTbejdBdg3poMTwJQ3SpPxPCsKipMMb7xgEMiHcZ61M9ivjPFDppNhaSF",
+      "created_at": "2026-11-03T20:07:10.536943+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"WALHI Jambi, an environmental NGO, filed legal reports against 9 companies for fires in their concession areas, holding them accountable for environmental damage.\", \"affected_sdgs\": [13, 15, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The underlying fires in concession areas indicate ongoing deforestation and land degradation, violating environmental protections and indigenous rights.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"UNDRIP\", \"Animal\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\", \"UNDRIP\", \"Animal\"]}, {\"description\": \"Potential for weak enforcement or delayed legal outcomes, allowing impunity for corporate actors responsible for environmental harm.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
+    {
+      "id": 9429,
+      "event_title": "Meta’s $25B fine left out accountability for harm from the Cambridge Analytica data privacy scandal",
+      "event_url": "https://theconversation.com/metas-25b-fine-left-out-accountability-for-harm-from-the-cambridge-analytica-data-privacy-scandal-295620",
+      "event_source": "The Conversation US",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -2.19,
+      "confidence": 7,
+      "justification": "Semantic cache reuse (cosine=0.992) from event #9407",
+      "tx_hash": null,
+      "created_at": "2026-11-03T20:03:02.729934+00:00",
+      "embedding": null,
+      "reused_from_event_id": 9407,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 41500
+    },
     {
       "id": 9428,
       "event_title": "COP30 roadmaps are a critical step, but urgent 1.5°C action needed at COP31",
@@ -217601,8 +217647,8 @@
       },
       {
         "country": "Indonesia",
-        "count": 17,
-        "total_amount": 5524130
+        "count": 18,
+        "total_amount": 5674130
       },
       {
         "country": "United Kingdom",
@@ -217650,8 +217696,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.093,
-        "events": 43
+        "burn_ratio": 0.091,
+        "events": 44
       },
       {
         "region": "North America",
@@ -217729,7 +217775,7 @@
       },
       {
         "date": "2026-11-03",
-        "net_minted": 50863005,
+        "net_minted": 51013005,
         "net_burned": 900000
       }
     ],
@@ -217747,7 +217793,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 29,
-        "negative": 345,
+        "negative": 346,
         "event_ids_positive": [
           9426,
           9395,
@@ -217780,6 +217826,7 @@
           9062
         ],
         "event_ids_negative": [
+          9430,
           9428,
           9427,
           9425,
@@ -218129,7 +218176,7 @@
       },
       "UDHR": {
         "positive": 17,
-        "negative": 278,
+        "negative": 279,
         "event_ids_positive": [
           9426,
           9364,
@@ -218150,6 +218197,7 @@
           9062
         ],
         "event_ids_negative": [
+          9430,
           9427,
           9425,
           9424,
@@ -218559,7 +218607,7 @@
       },
       "UNDRIP": {
         "positive": 8,
-        "negative": 69,
+        "negative": 70,
         "event_ids_positive": [
           9387,
           9364,
@@ -218571,6 +218619,7 @@
           9099
         ],
         "event_ids_negative": [
+          9430,
           9424,
           9423,
           9422,
@@ -218644,7 +218693,7 @@
       },
       "Animal": {
         "positive": 9,
-        "negative": 42,
+        "negative": 43,
         "event_ids_positive": [
           9395,
           9340,
@@ -218657,6 +218706,7 @@
           9083
         ],
         "event_ids_negative": [
+          9430,
           9416,
           9412,
           9405,
@@ -218703,7 +218753,7 @@
       },
       "PB": {
         "positive": 14,
-        "negative": 129,
+        "negative": 130,
         "event_ids_positive": [
           9395,
           9387,
@@ -218721,6 +218771,7 @@
           9065
         ],
         "event_ids_negative": [
+          9430,
           9428,
           9427,
           9423,
@@ -218857,11 +218908,11 @@
       "niche_pct": 64.0,
       "mainstream_pct": 36.0,
       "total_sources_used": 100,
-      "articles_processed": 376
+      "articles_processed": 377
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 376,
+      "total_events": 377,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -219258,14 +219309,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 347,
+      "total_mint": 348,
       "direct_action": {
-        "count": 307,
+        "count": 308,
         "pct": 88.5
       },
       "editorial_alarm": {
         "count": 38,
-        "pct": 11.0
+        "pct": 10.9
       },
       "untyped": {
         "count": 2,
@@ -219273,9 +219324,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7162,
+      "total_mint": 7163,
       "direct_action": {
-        "count": 6575,
+        "count": 6576,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -219289,8 +219340,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 131,
-      "institutional": 245,
-      "citizen_ratio": 0.348,
+      "institutional": 246,
+      "citizen_ratio": 0.347,
       "daily": [
         {
           "date": "2026-10-28",
@@ -219325,7 +219376,7 @@
         {
           "date": "2026-11-03",
           "citizen": 21,
-          "institutional": 38
+          "institutional": 39
         }
       ],
       "event_ids_citizen": [
@@ -219462,6 +219513,7 @@
         9056
       ],
       "event_ids_institutional": [
+        9430,
         9427,
         9426,
         9423,
