@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-02T23:05:59.961900+00:00",
-  "total_events": 9368,
+  "generated_at": "2026-11-03T00:05:32.522037+00:00",
+  "total_events": 9369,
   "total_burned": 8186477795,
-  "total_minted": 11739927954,
+  "total_minted": 11740083029,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9369,
+      "event_title": "Two public servants in Brazil removed after threatening to poison Indigenous people",
+      "event_url": "https://news.mongabay.com/short-article/2026/11/two-public-servants-in-brazil-removed-after-threatening-to-poison-indigenous-people/",
+      "event_source": "Mongabay",
+      "decision": "MINT",
+      "amount_crbn": 155075,
+      "final_score": -2.14,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] The removal of officials is outweighed by the severity of the threats and potential impunity, justifying MINT. | The removal of the officials is a positive step toward accountability and protection of Indigenous rights, aligning with SDG 16 and UNDRIP. However, the underlying threats represent a grave violation of fundamental rights, and the perceived inadequacy of the response",
+      "tx_hash": "5YBt5mmWXjh8zpirxRGb7jgZrwh7fCBrfY5ShY2PjFU7anVRAMEZSU8wmQf7aFMXHaGY7x8rwLFCXcfxaT8ZWP9t",
+      "created_at": "2026-11-03T00:05:26.342737+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Removal of two public servants who threatened to poison Indigenous water supply, demonstrating accountability for threats against Indigenous communities.\", \"affected_sdgs\": [10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Threats of poisoning Indigenous water supply constitute a severe violation of Indigenous rights, endangering lives and livelihoods of the Guarani-Kaiowá people.\", \"affected_sdgs\": [3, 6, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"UNDRIP Article 7\", \"UNDRIP Article 29\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Activists argue suspension is insufficient, indicating potential impunity or lack of full justice for the Indigenous community.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\", \"UNDRIP Article 40\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 7480000
+    },
     {
       "id": 9368,
       "event_title": "Tobacco lobbies turn up the pressure in Brussels as the EU examines the sector",
@@ -216216,8 +216239,8 @@
       },
       {
         "country": "France",
-        "count": 32,
-        "total_amount": 8458635
+        "count": 31,
+        "total_amount": 8108635
       },
       {
         "country": "United Kingdom",
@@ -216225,14 +216248,14 @@
         "total_amount": 6642760
       },
       {
+        "country": "Brazil",
+        "count": 13,
+        "total_amount": 3474290
+      },
+      {
         "country": "Indonesia",
         "count": 12,
         "total_amount": 3952430
-      },
-      {
-        "country": "Brazil",
-        "count": 12,
-        "total_amount": 3319215
       }
     ],
     "top_countries_burn": [
@@ -216270,8 +216293,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.103,
-        "events": 107
+        "burn_ratio": 0.104,
+        "events": 106
       },
       {
         "region": "North America",
@@ -216280,8 +216303,8 @@
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.087,
-        "events": 23
+        "burn_ratio": 0.083,
+        "events": 24
       },
       {
         "region": "Oceania",
@@ -216301,14 +216324,14 @@
         "events": 11
       },
       {
+        "region": "Latin America",
+        "mint_ratio": 0.917,
+        "events": 24
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 0.917,
         "events": 12
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.913,
-        "events": 23
       },
       {
         "region": "North America",
@@ -216317,11 +216340,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-10-27",
-        "net_minted": 59702750,
-        "net_burned": 2864400
-      },
       {
         "date": "2026-10-28",
         "net_minted": 50472700,
@@ -216351,6 +216369,11 @@
         "date": "2026-11-02",
         "net_minted": 47578575,
         "net_burned": 1623810
+      },
+      {
+        "date": "2026-11-03",
+        "net_minted": 155075,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -216367,7 +216390,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 31,
-        "negative": 329,
+        "negative": 328,
         "event_ids_positive": [
           9364,
           9340,
@@ -216402,6 +216425,7 @@
           9022
         ],
         "event_ids_negative": [
+          9369,
           9368,
           9367,
           9366,
@@ -216728,14 +216752,12 @@
           9012,
           9011,
           9010,
-          9009,
-          9008,
-          9007
+          9009
         ]
       },
       "UDHR": {
         "positive": 19,
-        "negative": 265,
+        "negative": 264,
         "event_ids_positive": [
           9364,
           9340,
@@ -216758,6 +216780,7 @@
           9022
         ],
         "event_ids_negative": [
+          9369,
           9368,
           9367,
           9366,
@@ -217020,9 +217043,7 @@
           9013,
           9011,
           9010,
-          9009,
-          9008,
-          9007
+          9009
         ]
       },
       "ILO": {
@@ -217078,7 +217099,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 70,
+        "negative": 68,
         "event_ids_positive": [
           9291,
           9167,
@@ -217155,14 +217176,12 @@
           9016,
           9015,
           9014,
-          9010,
-          9008,
-          9007
+          9010
         ]
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 75,
+        "negative": 76,
         "event_ids_positive": [
           9364,
           9263,
@@ -217173,6 +217192,7 @@
           9099
         ],
         "event_ids_negative": [
+          9369,
           9359,
           9356,
           9349,
@@ -217460,20 +217480,20 @@
       "niche_pct": 64.4,
       "mainstream_pct": 35.6,
       "total_sources_used": 101,
-      "articles_processed": 362
+      "articles_processed": 361
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 362,
+      "total_events": 361,
       "pct": 0.6
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 17,
+        "count": 16,
         "burn_count": 1,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           9368,
           9310,
@@ -217490,8 +217510,7 @@
           9053,
           9040,
           9038,
-          9030,
-          9008
+          9030
         ]
       },
       {
@@ -217643,9 +217662,9 @@
       },
       {
         "name": "Finance",
-        "count": 38,
+        "count": 37,
         "burn_count": 2,
-        "mint_count": 36,
+        "mint_count": 35,
         "event_ids": [
           9358,
           9357,
@@ -217683,8 +217702,7 @@
           9040,
           9021,
           9015,
-          9014,
-          9007
+          9014
         ]
       },
       {
@@ -217719,9 +217737,9 @@
       },
       {
         "name": "Construction",
-        "count": 20,
+        "count": 19,
         "burn_count": 2,
-        "mint_count": 18,
+        "mint_count": 17,
         "event_ids": [
           9330,
           9304,
@@ -217741,8 +217759,7 @@
           9113,
           9091,
           9078,
-          9037,
-          9007
+          9037
         ]
       },
       {
@@ -217852,14 +217869,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 331,
+      "total_mint": 330,
       "direct_action": {
-        "count": 296,
-        "pct": 89.4
+        "count": 294,
+        "pct": 89.1
       },
       "editorial_alarm": {
-        "count": 33,
-        "pct": 10.0
+        "count": 34,
+        "pct": 10.3
       },
       "untyped": {
         "count": 2,
@@ -217867,13 +217884,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7106,
+      "total_mint": 7107,
       "direct_action": {
         "count": 6527,
-        "pct": 91.9
+        "pct": 91.8
       },
       "editorial_alarm": {
-        "count": 485,
+        "count": 486,
         "pct": 6.8
       },
       "untyped": {
@@ -217883,14 +217900,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 121,
-      "institutional": 241,
-      "citizen_ratio": 0.334,
+      "institutional": 240,
+      "citizen_ratio": 0.335,
       "daily": [
-        {
-          "date": "2026-10-27",
-          "citizen": 12,
-          "institutional": 39
-        },
         {
           "date": "2026-10-28",
           "citizen": 21,
@@ -217920,9 +217932,15 @@
           "date": "2026-11-02",
           "citizen": 19,
           "institutional": 47
+        },
+        {
+          "date": "2026-11-03",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        9369,
         9368,
         9361,
         9359,
@@ -218042,8 +218060,7 @@
         9035,
         9021,
         9012,
-        9009,
-        9007
+        9009
       ],
       "event_ids_institutional": [
         9367,
@@ -218285,8 +218302,7 @@
         9014,
         9013,
         9011,
-        9010,
-        9008
+        9010
       ]
     }
   }
