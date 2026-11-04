@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T02:06:42.763770+00:00",
+  "generated_at": "2026-11-04T03:04:06.175892+00:00",
   "total_events": 9451,
   "total_burned": 8187377795,
   "total_minted": 11813214959,
@@ -521,7 +521,7 @@
       "final_score": -2.19,
       "confidence": 7,
       "justification": "Semantic cache reuse (cosine=0.992) from event #9407",
-      "tx_hash": null,
+      "tx_hash": "5Y9H672eLwgnyitRs2CcvGKtzw61UrgJcjYbvaT5U5rLaq1i8HnHKDcEG3E8CMryw7UNR5kW5JiiVGefAuDWpSwg",
       "created_at": "2026-11-03T20:03:02.729934+00:00",
       "embedding": null,
       "reused_from_event_id": 9407,
@@ -1786,7 +1786,7 @@
       "final_score": -4.06,
       "confidence": 8,
       "justification": "Semantic cache reuse (cosine=0.934) from event #9362",
-      "tx_hash": null,
+      "tx_hash": "4SoXUCqeHv7CcSmNFBTRqaMQUTUME4cnM6oyb6w3BcdbceDSx9PDN8ZCu2bAMgcnfWoaahfhcT6ftk4cXxWGKCHz",
       "created_at": "2026-11-03T03:03:11.482764+00:00",
       "embedding": null,
       "reused_from_event_id": 9362,
@@ -218120,8 +218120,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 68,
-        "total_amount": 41133780
+        "count": 67,
+        "total_amount": 40304780
       },
       {
         "country": "France",
@@ -218140,8 +218140,8 @@
       },
       {
         "country": "Brazil",
-        "count": 15,
-        "total_amount": 4828490
+        "count": 14,
+        "total_amount": 4128490
       }
     ],
     "top_countries_burn": [
@@ -218178,24 +218178,24 @@
         "events": 9
       },
       {
+        "region": "North America",
+        "burn_ratio": 0.089,
+        "events": 79
+      },
+      {
         "region": "Asia",
         "burn_ratio": 0.089,
         "events": 45
       },
       {
-        "region": "North America",
-        "burn_ratio": 0.087,
-        "events": 80
+        "region": "Latin America",
+        "burn_ratio": 0.077,
+        "events": 26
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.081,
-        "events": 123
-      },
-      {
-        "region": "Latin America",
         "burn_ratio": 0.074,
-        "events": 27
+        "events": 122
       }
     ],
     "top_regions_destructive": [
@@ -218210,19 +218210,19 @@
         "events": 8
       },
       {
-        "region": "Latin America",
+        "region": "Europe",
         "mint_ratio": 0.926,
-        "events": 27
+        "events": 122
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.919,
-        "events": 123
+        "region": "Latin America",
+        "mint_ratio": 0.923,
+        "events": 26
       },
       {
         "region": "North America",
-        "mint_ratio": 0.912,
-        "events": 80
+        "mint_ratio": 0.911,
+        "events": 79
       }
     ],
     "supply_trend_7d": [
@@ -218253,7 +218253,7 @@
       },
       {
         "date": "2026-11-03",
-        "net_minted": 65336155,
+        "net_minted": 65903755,
         "net_burned": 900000
       },
       {
@@ -218275,8 +218275,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 29,
-        "negative": 357,
+        "positive": 27,
+        "negative": 355,
         "event_ids_positive": [
           9426,
           9395,
@@ -218304,9 +218304,7 @@
           9099,
           9083,
           9078,
-          9076,
-          9065,
-          9062
+          9076
         ],
         "event_ids_negative": [
           9451,
@@ -218663,14 +218661,12 @@
           9070,
           9069,
           9068,
-          9067,
-          9064,
-          9063
+          9067
         ]
       },
       "UDHR": {
-        "positive": 17,
-        "negative": 289,
+        "positive": 16,
+        "negative": 287,
         "event_ids_positive": [
           9426,
           9364,
@@ -218687,8 +218683,7 @@
           9134,
           9107,
           9102,
-          9099,
-          9062
+          9099
         ],
         "event_ids_negative": [
           9451,
@@ -218977,9 +218972,7 @@
           9071,
           9070,
           9068,
-          9067,
-          9064,
-          9063
+          9067
         ]
       },
       "ILO": {
@@ -219266,8 +219259,8 @@
         ]
       },
       "PB": {
-        "positive": 14,
-        "negative": 134,
+        "positive": 13,
+        "negative": 133,
         "event_ids_positive": [
           9395,
           9387,
@@ -219281,8 +219274,7 @@
           9173,
           9107,
           9083,
-          9076,
-          9065
+          9076
         ],
         "event_ids_negative": [
           9449,
@@ -219417,21 +219409,20 @@
           9077,
           9073,
           9071,
-          9069,
-          9064
+          9069
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 63.0,
-      "mainstream_pct": 37.0,
+      "niche_pct": 65.0,
+      "mainstream_pct": 35.0,
       "total_sources_used": 100,
-      "articles_processed": 388
+      "articles_processed": 385
     },
     "cache_hit_rate_7d": {
-      "hits": 2,
-      "total_events": 388,
-      "pct": 0.5
+      "hits": 3,
+      "total_events": 385,
+      "pct": 0.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -219687,9 +219678,9 @@
       },
       {
         "name": "Defense",
-        "count": 21,
+        "count": 20,
         "burn_count": 0,
-        "mint_count": 21,
+        "mint_count": 20,
         "event_ids": [
           9433,
           9388,
@@ -219710,8 +219701,7 @@
           9169,
           9166,
           9140,
-          9121,
-          9063
+          9121
         ]
       },
       {
@@ -219740,10 +219730,11 @@
       },
       {
         "name": "Tech",
-        "count": 14,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          9429,
           9424,
           9407,
           9383,
@@ -219801,14 +219792,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 29,
+      "total_burn": 27,
       "direct_action": {
-        "count": 25,
-        "pct": 86.2
+        "count": 23,
+        "pct": 85.2
       },
       "editorial_consciousness": {
         "count": 4,
-        "pct": 13.8
+        "pct": 14.8
       },
       "untyped": {
         "count": 0,
@@ -219831,22 +219822,22 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 359,
+      "total_mint": 358,
       "direct_action": {
-        "count": 318,
-        "pct": 88.6
+        "count": 316,
+        "pct": 88.3
       },
       "editorial_alarm": {
         "count": 39,
         "pct": 10.9
       },
       "untyped": {
-        "count": 2,
-        "pct": 0.6
+        "count": 3,
+        "pct": 0.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7184,
+      "total_mint": 7186,
       "direct_action": {
         "count": 6595,
         "pct": 91.8
@@ -219856,13 +219847,13 @@
         "pct": 6.9
       },
       "untyped": {
-        "count": 94,
+        "count": 96,
         "pct": 1.3
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 132,
-      "institutional": 256,
+      "citizen": 131,
+      "institutional": 254,
       "citizen_ratio": 0.34,
       "daily": [
         {
@@ -219893,7 +219884,7 @@
         {
           "date": "2026-11-03",
           "citizen": 24,
-          "institutional": 51
+          "institutional": 53
         },
         {
           "date": "2026-11-04",
@@ -220032,8 +220023,7 @@
         9077,
         9076,
         9073,
-        9067,
-        9065
+        9067
       ],
       "event_ids_institutional": [
         9451,
@@ -220053,6 +220043,7 @@
         9433,
         9431,
         9430,
+        9429,
         9427,
         9426,
         9423,
@@ -220089,6 +220080,7 @@
         9378,
         9377,
         9376,
+        9374,
         9372,
         9371,
         9367,
@@ -220287,11 +220279,7 @@
         9071,
         9070,
         9069,
-        9068,
-        9066,
-        9064,
-        9063,
-        9062
+        9068
       ]
     }
   }
