@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-04T04:04:55.338632+00:00",
-  "total_events": 9452,
+  "generated_at": "2026-11-04T05:06:28.853388+00:00",
+  "total_events": 9454,
   "total_burned": 8187377795,
-  "total_minted": 11819254959,
+  "total_minted": 11823407659,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9454,
+      "event_title": "ASIC fines Mona owner David Walsh's company for late financial report",
+      "event_url": "https://www.abc.net.au/news/2026-11-04/mona-museum-company-fined-asic-late-financial-report/107345772",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 2700,
+      "final_score": 0.77,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Valid but minor compliance fine; score 0.77 is below the BURN threshold and, under the <=4 rule, maps to MINT despite positive intent. | A binding regulatory fine for a late financial report is a valid enforcement act that supports corporate accountability. Its ethical weight is minimal, since it concerns adminis",
+      "tx_hash": "c6naJ1dHvH4vbpf2GmbLHunRactJYeERmeTPAdYov1i8bJHxzg2rg4xb3EG4AecyVc9d1QBeTgMiZt2KWh3E8HC",
+      "created_at": "2026-11-04T05:06:20.621334+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"ASIC enforces corporate financial reporting deadlines, supporting transparency and accountability of a company that is publicly required to disclose its finances.\", \"affected_sdgs\": [16, 8], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 2260
+    },
+    {
+      "id": 9453,
+      "event_title": "US Said to Help Venezuela Strike Rebel Camp",
+      "event_url": "https://www.riotimesonline.com/us-said-to-help-venezuela-strike-rebel-camp/",
+      "event_source": "The Rio Times (BR EN)",
+      "decision": "MINT",
+      "amount_crbn": 4150000,
+      "final_score": -4.21,
+      "confidence": 5,
+      "justification": "US military support for Venezuela's strike risks enabling human rights violations and conflict escalation. | The action undermines peace and justice (SDG 16) by enabling military escalation in Venezuela, risking civilian casualties and human rights violations. While framed as counter-rebellion, the lack of oversight and potential for collateral harm outweighs any speculative security benefits. The violation of core rights (life, freedom from torture, due process) is direct and severe.",
+      "tx_hash": "3wcppb6sfqRsbe9yCuzaZHE377nKByjReFHfvKhUnJbTs8NrqFeM3VSqzqobDBYgsrwrwkt1peoR7K6agTZ5EnZo",
+      "created_at": "2026-11-04T05:06:16.782200+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"US provides intelligence and military support to Venezuela for a strike targeting a rebel camp, potentially escalating conflict and civilian harm.\", \"affected_sdgs\": [16, 3, 1], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"CRC Article 6\", \"ILO Forced Labor Convention\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"ILO\"]}, {\"description\": \"Lack of transparency and accountability in military cooperation, risking impunity for human rights violations.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\", \"UDHR Article 10\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 415000
+    },
     {
       "id": 9452,
       "event_title": "Brussels sets slimline legislative agenda for 2027",
@@ -218143,8 +218189,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 67,
-        "total_amount": 40304780
+        "count": 64,
+        "total_amount": 38730780
       },
       {
         "country": "France",
@@ -218163,20 +218209,20 @@
       },
       {
         "country": "Brazil",
-        "count": 14,
-        "total_amount": 4128490
+        "count": 13,
+        "total_amount": 3524490
       }
     ],
     "top_countries_burn": [
       {
-        "country": "United States",
-        "count": 6,
-        "total_amount": 1683200
-      },
-      {
         "country": "France",
         "count": 5,
         "total_amount": 2972380
+      },
+      {
+        "country": "United States",
+        "count": 5,
+        "total_amount": 1622800
       },
       {
         "country": "United Kingdom",
@@ -218197,13 +218243,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.111,
-        "events": 9
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.089,
-        "events": 79
+        "burn_ratio": 0.1,
+        "events": 10
       },
       {
         "region": "Asia",
@@ -218212,13 +218253,18 @@
       },
       {
         "region": "Latin America",
+        "burn_ratio": 0.083,
+        "events": 24
+      },
+      {
+        "region": "North America",
         "burn_ratio": 0.08,
-        "events": 25
+        "events": 75
       },
       {
         "region": "Europe",
         "burn_ratio": 0.074,
-        "events": 122
+        "events": 121
       }
     ],
     "top_regions_destructive": [
@@ -218235,17 +218281,17 @@
       {
         "region": "Europe",
         "mint_ratio": 0.926,
-        "events": 122
-      },
-      {
-        "region": "Latin America",
-        "mint_ratio": 0.92,
-        "events": 25
+        "events": 121
       },
       {
         "region": "North America",
-        "mint_ratio": 0.911,
-        "events": 79
+        "mint_ratio": 0.92,
+        "events": 75
+      },
+      {
+        "region": "Latin America",
+        "mint_ratio": 0.917,
+        "events": 24
       }
     ],
     "supply_trend_7d": [
@@ -218281,7 +218327,7 @@
       },
       {
         "date": "2026-11-04",
-        "net_minted": 13423250,
+        "net_minted": 17575950,
         "net_burned": 0
       }
     ],
@@ -218298,8 +218344,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 27,
-        "negative": 355,
+        "positive": 26,
+        "negative": 349,
         "event_ids_positive": [
           9426,
           9395,
@@ -218326,10 +218372,11 @@
           9102,
           9099,
           9083,
-          9078,
-          9076
+          9078
         ],
         "event_ids_negative": [
+          9454,
+          9453,
           9452,
           9451,
           9450,
@@ -218676,20 +218723,12 @@
           9081,
           9080,
           9079,
-          9077,
-          9075,
-          9074,
-          9073,
-          9072,
-          9071,
-          9070,
-          9069,
-          9068
+          9077
         ]
       },
       "UDHR": {
         "positive": 16,
-        "negative": 287,
+        "negative": 281,
         "event_ids_positive": [
           9426,
           9364,
@@ -218709,6 +218748,7 @@
           9099
         ],
         "event_ids_negative": [
+          9453,
           9452,
           9451,
           9450,
@@ -218988,25 +219028,19 @@
           9082,
           9081,
           9080,
-          9079,
-          9075,
-          9074,
-          9073,
-          9072,
-          9071,
-          9070,
-          9068
+          9079
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [
           9230,
           9212,
           9107
         ],
         "event_ids_negative": [
+          9453,
           9446,
           9437,
           9434,
@@ -219052,7 +219086,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 64,
+        "negative": 65,
         "event_ids_positive": [
           9291,
           9167,
@@ -219060,6 +219094,7 @@
           9099
         ],
         "event_ids_negative": [
+          9453,
           9446,
           9439,
           9408,
@@ -219217,7 +219252,7 @@
       },
       "Animal": {
         "positive": 9,
-        "negative": 46,
+        "negative": 45,
         "event_ids_positive": [
           9395,
           9340,
@@ -219274,13 +219309,12 @@
           9100,
           9098,
           9097,
-          9077,
-          9069
+          9077
         ]
       },
       "PB": {
-        "positive": 13,
-        "negative": 134,
+        "positive": 12,
+        "negative": 131,
         "event_ids_positive": [
           9395,
           9387,
@@ -219293,8 +219327,7 @@
           9231,
           9173,
           9107,
-          9083,
-          9076
+          9083
         ],
         "event_ids_negative": [
           9452,
@@ -219427,22 +219460,19 @@
           9088,
           9087,
           9082,
-          9077,
-          9073,
-          9071,
-          9069
+          9077
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 65.0,
-      "mainstream_pct": 35.0,
+      "niche_pct": 67.0,
+      "mainstream_pct": 33.0,
       "total_sources_used": 100,
-      "articles_processed": 385
+      "articles_processed": 378
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 385,
+      "total_events": 378,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -219474,9 +219504,9 @@
       },
       {
         "name": "EU",
-        "count": 13,
+        "count": 12,
         "burn_count": 0,
-        "mint_count": 13,
+        "mint_count": 12,
         "event_ids": [
           9411,
           9368,
@@ -219489,8 +219519,7 @@
           9135,
           9092,
           9090,
-          9089,
-          9072
+          9089
         ]
       },
       {
@@ -219570,9 +219599,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 44,
+        "count": 42,
         "burn_count": 1,
-        "mint_count": 43,
+        "mint_count": 41,
         "event_ids": [
           9445,
           9428,
@@ -219615,9 +219644,7 @@
           9088,
           9087,
           9082,
-          9080,
-          9074,
-          9073
+          9080
         ]
       },
       {
@@ -219626,6 +219653,7 @@
         "burn_count": 2,
         "mint_count": 36,
         "event_ids": [
+          9454,
           9448,
           9440,
           9419,
@@ -219662,8 +219690,7 @@
           9108,
           9095,
           9091,
-          9084,
-          9071
+          9084
         ]
       },
       {
@@ -219699,10 +219726,11 @@
       },
       {
         "name": "Defense",
-        "count": 20,
+        "count": 21,
         "burn_count": 0,
-        "mint_count": 20,
+        "mint_count": 21,
         "event_ids": [
+          9453,
           9433,
           9388,
           9381,
@@ -219794,9 +219822,9 @@
       },
       {
         "name": "Transport",
-        "count": 11,
+        "count": 10,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           9436,
           9381,
@@ -219807,20 +219835,19 @@
           9192,
           9188,
           9164,
-          9155,
-          9075
+          9155
         ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 27,
+      "total_burn": 26,
       "direct_action": {
         "count": 23,
-        "pct": 85.2
+        "pct": 88.5
       },
       "editorial_consciousness": {
-        "count": 4,
-        "pct": 14.8
+        "count": 3,
+        "pct": 11.5
       },
       "untyped": {
         "count": 0,
@@ -219843,24 +219870,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 358,
+      "total_mint": 352,
       "direct_action": {
-        "count": 316,
-        "pct": 88.3
+        "count": 311,
+        "pct": 88.4
       },
       "editorial_alarm": {
-        "count": 39,
-        "pct": 10.9
+        "count": 38,
+        "pct": 10.8
       },
       "untyped": {
         "count": 3,
-        "pct": 0.8
+        "pct": 0.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7187,
+      "total_mint": 7189,
       "direct_action": {
-        "count": 6596,
+        "count": 6598,
         "pct": 91.8
       },
       "editorial_alarm": {
@@ -219873,9 +219900,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 130,
-      "institutional": 255,
-      "citizen_ratio": 0.338,
+      "citizen": 128,
+      "institutional": 250,
+      "citizen_ratio": 0.339,
       "daily": [
         {
           "date": "2026-10-29",
@@ -219910,7 +219937,7 @@
         {
           "date": "2026-11-04",
           "citizen": 2,
-          "institutional": 5
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -220041,11 +220068,11 @@
         9083,
         9080,
         9078,
-        9077,
-        9076,
-        9073
+        9077
       ],
       "event_ids_institutional": [
+        9454,
+        9453,
         9452,
         9451,
         9450,
@@ -220293,14 +220320,7 @@
         9086,
         9082,
         9081,
-        9079,
-        9075,
-        9074,
-        9072,
-        9071,
-        9070,
-        9069,
-        9068
+        9079
       ]
     }
   }
