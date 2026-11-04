@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-04T19:08:32.333210+00:00",
-  "total_events": 9494,
+  "generated_at": "2026-11-04T20:06:14.989870+00:00",
+  "total_events": 9495,
   "total_burned": 8188922595,
-  "total_minted": 11847824359,
+  "total_minted": 11847884759,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9495,
+      "event_title": "Morocco says it will uphold Western Sahara ceasefire after UN mission ends",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/morocco-says-it-will-uphold-western-sahara-ceasefire-after-un-mission-ends",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 60400,
+      "final_score": -2.88,
+      "confidence": 7,
+      "justification": "Termination of UN oversight enables impunity and risks renewed conflict, outweighing Morocco's stated ceasefire commitment. | While Morocco's stated commitment to the ceasefire is a positive signal for short-term stability, the removal of UN oversight constitutes a significant ethical cost. The absence of international monitoring risks enabling human rights violations, conflict recurrence, and systemic marginalization of the Sahrawi population, directly undermining SDG 16 and core UDHR/UNDRIP pr",
+      "tx_hash": "211oZz75Rr9Mqms9ymmecvXnTGJYhdHDEeDwADFjgLM7RNNn67jayx77WxVH1fUWygGu5qxy4n3rNCKBFNHzgv42",
+      "created_at": "2026-11-04T20:06:07.291067+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Morocco",
+      "region": "MENA",
+      "administration": "Morocco-PAM-RNI",
+      "positive_aspects_json": "[{\"description\": \"Morocco's stated commitment to uphold the ceasefire in Western Sahara, maintaining a period of reduced armed conflict and potential stability for civilian populations.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Termination of the UN peacekeeping mission (MINURSO) removes international oversight, increasing risks of ceasefire violations, human rights abuses, and renewed conflict without accountability.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 28\", \"UNDRIP\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\"]}, {\"description\": \"Lack of UN presence may exacerbate marginalization of Sahrawi people, undermining self-determination and access to basic services (water, healthcare, education).\", \"affected_sdgs\": [1, 2, 3, 4, 6, 10, 16], \"violated_rights\": [\"UDHR Article 1\", \"UDHR Article 25\", \"CRC Article 27\", \"UNDRIP\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9494,
       "event_title": "Breathing repeated forest fire smoke does not mean the body is immune to pollutants",
@@ -219189,14 +219212,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 8
+      },
+      {
         "region": "Africa",
         "mint_ratio": 1.0,
         "events": 11
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 7
       },
       {
         "region": "Asia",
@@ -219247,7 +219270,7 @@
       },
       {
         "date": "2026-11-04",
-        "net_minted": 41992650,
+        "net_minted": 42053050,
         "net_burned": 1544800
       }
     ],
@@ -219265,7 +219288,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 363,
+        "negative": 364,
         "event_ids_positive": [
           9463,
           9462,
@@ -219296,6 +219319,7 @@
           9102
         ],
         "event_ids_negative": [
+          9495,
           9494,
           9493,
           9492,
@@ -219663,7 +219687,7 @@
       },
       "UDHR": {
         "positive": 18,
-        "negative": 292,
+        "negative": 293,
         "event_ids_positive": [
           9462,
           9461,
@@ -219685,6 +219709,7 @@
           9102
         ],
         "event_ids_negative": [
+          9495,
           9494,
           9493,
           9492,
@@ -220034,7 +220059,7 @@
       },
       "CRC": {
         "positive": 6,
-        "negative": 66,
+        "negative": 67,
         "event_ids_positive": [
           9462,
           9461,
@@ -220044,6 +220069,7 @@
           9141
         ],
         "event_ids_negative": [
+          9495,
           9494,
           9492,
           9479,
@@ -220114,7 +220140,7 @@
       },
       "UNDRIP": {
         "positive": 7,
-        "negative": 72,
+        "negative": 73,
         "event_ids_positive": [
           9387,
           9364,
@@ -220125,6 +220151,7 @@
           9102
         ],
         "event_ids_negative": [
+          9495,
           9490,
           9489,
           9486,
@@ -220421,11 +220448,11 @@
       "niche_pct": 66.3,
       "mainstream_pct": 33.7,
       "total_sources_used": 101,
-      "articles_processed": 393
+      "articles_processed": 394
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 393,
+      "total_events": 394,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -220456,10 +220483,11 @@
       },
       {
         "name": "UN",
-        "count": 12,
+        "count": 13,
         "burn_count": 1,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          9495,
           9480,
           9466,
           9408,
@@ -220820,9 +220848,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 366,
+      "total_mint": 367,
       "direct_action": {
-        "count": 322,
+        "count": 323,
         "pct": 88.0
       },
       "editorial_alarm": {
@@ -220835,9 +220863,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7225,
+      "total_mint": 7226,
       "direct_action": {
-        "count": 6628,
+        "count": 6629,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -220851,8 +220879,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 135,
-      "institutional": 258,
-      "citizen_ratio": 0.344,
+      "institutional": 259,
+      "citizen_ratio": 0.343,
       "daily": [
         {
           "date": "2026-10-29",
@@ -220887,7 +220915,7 @@
         {
           "date": "2026-11-04",
           "citizen": 21,
-          "institutional": 28
+          "institutional": 29
         }
       ],
       "event_ids_citizen": [
@@ -221028,6 +221056,7 @@
         9102
       ],
       "event_ids_institutional": [
+        9495,
         9494,
         9491,
         9490,
