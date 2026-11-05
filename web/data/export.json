@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-05T20:05:36.510461+00:00",
-  "total_events": 9553,
+  "generated_at": "2026-11-05T21:06:30.271153+00:00",
+  "total_events": 9555,
   "total_burned": 8189614595,
-  "total_minted": 11892689129,
+  "total_minted": 11892741729,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9555,
+      "event_title": "Out-of-pocket health costs: 150 euros on average, over 910 euros for the most exposed",
+      "event_url": "http://www.lequotidiendumedecin.fr/liberal-soins-de-ville/assurance-maladie/reste-charge-en-sante-150-euros-en-moyenne-plus-de-910-euros-pour-les-plus-exposes",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 15600,
+      "final_score": 0.26,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Transparent official data is positive, but it documents a regressive out-of-pocket burden of 910+ euros for the most exposed; net weakly negative. | The Drees study is an official, transparent publication that improves evidence for health policy, a modest positive. However, it documents a regressive burden in whi",
+      "tx_hash": "3zXEATN1sqRHoEF6fpsgUR3zriCKB15E36D1UMAhKBvcjAKCAEwmn9dAwgDWHm45uRz391WUAyuQecd3S8kUDMix",
+      "created_at": "2026-11-05T21:06:23.207068+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Publication by the national statistics body (Drees) quantifies out-of-pocket health costs, improving public transparency and an evidence base for policy debate\", \"affected_sdgs\": [3, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Average annual out-of-pocket cost of 150 euros is documented, which makes the scale of financial barriers to care visible to policymakers and the public\", \"affected_sdgs\": [3, 10], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The most exposed 10% face out-of-pocket costs of 910 euros or more a year, a financial barrier to care for lower-income and under-insured people, concentrated on optical, dental, hearing aids and fee overruns\", \"affected_sdgs\": [1, 3, 10], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 22\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Context of government attempts to shift costs toward complementary insurers risks further regressive effects on access to care, though this is a second-order concern not measured in the study itself\", \"affected_sdgs\": [10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 9554,
+      "event_title": "Rooks: Lucerne examines incentives for hobby hunters",
+      "event_url": "https://wildbeimwild.com/luzern-saatkraehen-pilotprojekt-anreizsystem-hobby-jaeger/",
+      "event_source": "Wild beim Wild",
+      "decision": "MINT",
+      "amount_crbn": 37000,
+      "final_score": -2.5,
+      "confidence": 5,
+      "justification": "Proposal risks enabling harmful wildlife practices without safeguards, outweighing limited community engagement benefits. | While the pilot project aims to address urban wildlife conflicts, the reliance on hobby hunters without clear ecological safeguards poses significant risks to animal welfare and biodiversity. The potential for harm outweighs the limited benefits of community engagement, especially given the absence of expert involvement or evidence-based strategies.",
+      "tx_hash": "5cDkpAJQRD7mrjzjgi9qgD7xPMz9DPHSM46FYzxXMDfL94ZDnDkwfB12kfJY8Jnq1mwkomJKAff7x7fuKBU31sC5",
+      "created_at": "2026-11-05T21:06:20.929611+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Switzerland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Exploration of community-based wildlife management through pilot projects may foster local engagement and education on biodiversity.\", \"affected_sdgs\": [15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposal to incentivize hobby hunters for crow control risks promoting indiscriminate killing of wildlife, undermining ethical and ecological balance in urban ecosystems.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Lack of scientific justification or expert oversight in the pilot project could lead to ineffective or harmful outcomes for biodiversity and public perception of wildlife management.\", \"affected_sdgs\": [15], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 370000
+    },
     {
       "id": 9553,
       "event_title": "November 5 strike: nearly 1.6 million protesters in France according to CGT, 575,000 according to government",
@@ -220466,13 +220512,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 59,
-        "total_amount": 33516630
+        "count": 58,
+        "total_amount": 33468830
       },
       {
         "country": "France",
-        "count": 40,
-        "total_amount": 9958905
+        "count": 41,
+        "total_amount": 9974505
       },
       {
         "country": "Indonesia",
@@ -220520,18 +220566,18 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.154,
-        "events": 13
+        "burn_ratio": 0.167,
+        "events": 12
       },
       {
         "region": "North America",
-        "burn_ratio": 0.099,
-        "events": 71
+        "burn_ratio": 0.1,
+        "events": 70
       },
       {
         "region": "Europe",
         "burn_ratio": 0.083,
-        "events": 120
+        "events": 121
       },
       {
         "region": "Asia",
@@ -220568,7 +220614,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.917,
-        "events": 120
+        "events": 121
       }
     ],
     "supply_trend_7d": [
@@ -220604,7 +220650,7 @@
       },
       {
         "date": "2026-11-05",
-        "net_minted": 41209630,
+        "net_minted": 41262230,
         "net_burned": 677000
       }
     ],
@@ -220622,7 +220668,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 27,
-        "negative": 370,
+        "negative": 369,
         "event_ids_positive": [
           9553,
           9528,
@@ -220653,6 +220699,8 @@
           9167
         ],
         "event_ids_negative": [
+          9555,
+          9554,
           9552,
           9551,
           9550,
@@ -221019,10 +221067,7 @@
           9160,
           9159,
           9158,
-          9157,
-          9156,
-          9155,
-          9154
+          9157
         ]
       },
       "UDHR": {
@@ -221047,6 +221092,7 @@
           9167
         ],
         "event_ids_negative": [
+          9555,
           9552,
           9551,
           9550,
@@ -221339,8 +221385,7 @@
           9160,
           9159,
           9158,
-          9157,
-          9155
+          9157
         ]
       },
       "ILO": {
@@ -221579,6 +221624,7 @@
           9173
         ],
         "event_ids_negative": [
+          9554,
           9550,
           9548,
           9545,
@@ -221628,13 +221674,12 @@
           9209,
           9176,
           9174,
-          9163,
-          9154
+          9163
         ]
       },
       "PB": {
         "positive": 13,
-        "negative": 134,
+        "negative": 133,
         "event_ids_positive": [
           9528,
           9507,
@@ -221651,6 +221696,7 @@
           9173
         ],
         "event_ids_negative": [
+          9554,
           9552,
           9550,
           9548,
@@ -221782,9 +221828,7 @@
           9163,
           9162,
           9161,
-          9159,
-          9156,
-          9154
+          9159
         ]
       }
     },
@@ -221792,11 +221836,11 @@
       "niche_pct": 62.2,
       "mainstream_pct": 37.8,
       "total_sources_used": 98,
-      "articles_processed": 399
+      "articles_processed": 398
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 399,
+      "total_events": 398,
       "pct": 0.5
     },
     "active_partners_7d": [],
@@ -221976,9 +222020,9 @@
       },
       {
         "name": "Energy",
-        "count": 31,
+        "count": 29,
         "burn_count": 0,
-        "mint_count": 31,
+        "mint_count": 29,
         "event_ids": [
           9534,
           9525,
@@ -222008,9 +222052,7 @@
           9197,
           9192,
           9189,
-          9180,
-          9156,
-          9154
+          9180
         ]
       },
       {
@@ -222077,9 +222119,9 @@
       },
       {
         "name": "Construction",
-        "count": 20,
+        "count": 19,
         "burn_count": 1,
-        "mint_count": 19,
+        "mint_count": 18,
         "event_ids": [
           9525,
           9483,
@@ -222099,8 +222141,7 @@
           9216,
           9210,
           9203,
-          9180,
-          9154
+          9180
         ]
       },
       {
@@ -222126,9 +222167,9 @@
       },
       {
         "name": "Transport",
-        "count": 12,
+        "count": 11,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 11,
         "event_ids": [
           9539,
           9499,
@@ -222140,25 +222181,24 @@
           9204,
           9192,
           9188,
-          9164,
-          9155
+          9164
         ]
       },
       {
-        "name": "Agriculture",
+        "name": "Water",
         "count": 9,
-        "burn_count": 1,
-        "mint_count": 8,
+        "burn_count": 2,
+        "mint_count": 7,
         "event_ids": [
-          9546,
-          9528,
-          9467,
-          9456,
-          9443,
-          9441,
-          9400,
-          9338,
-          9156
+          9542,
+          9449,
+          9442,
+          9416,
+          9355,
+          9322,
+          9315,
+          9210,
+          9173
         ]
       }
     ],
@@ -222193,14 +222233,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 372,
+      "total_mint": 371,
       "direct_action": {
         "count": 331,
-        "pct": 89.0
+        "pct": 89.2
       },
       "editorial_alarm": {
-        "count": 39,
-        "pct": 10.5
+        "count": 38,
+        "pct": 10.2
       },
       "untyped": {
         "count": 2,
@@ -222208,9 +222248,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7279,
+      "total_mint": 7281,
       "direct_action": {
-        "count": 6678,
+        "count": 6680,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -222223,9 +222263,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 134,
-      "institutional": 265,
-      "citizen_ratio": 0.336,
+      "citizen": 132,
+      "institutional": 266,
+      "citizen_ratio": 0.332,
       "daily": [
         {
           "date": "2026-10-30",
@@ -222260,7 +222300,7 @@
         {
           "date": "2026-11-05",
           "citizen": 13,
-          "institutional": 35
+          "institutional": 37
         }
       ],
       "event_ids_citizen": [
@@ -222395,11 +222435,11 @@
         9160,
         9159,
         9158,
-        9157,
-        9155,
-        9154
+        9157
       ],
       "event_ids_institutional": [
+        9555,
+        9554,
         9553,
         9552,
         9549,
@@ -222663,8 +222703,7 @@
         9165,
         9164,
         9163,
-        9162,
-        9156
+        9162
       ]
     }
   }
