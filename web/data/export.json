@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-06T04:05:50.336971+00:00",
-  "total_events": 9576,
+  "generated_at": "2026-11-06T05:05:02.222081+00:00",
+  "total_events": 9577,
   "total_burned": 8189614595,
-  "total_minted": 11904388109,
+  "total_minted": 11904392709,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9577,
+      "event_title": "Israeli settlers seize 8 Palestinian homes in Jericho, displacing dozens",
+      "event_url": "https://www.aljazeera.com/news/2026/11/6/israeli-settlers-seize-8-palestinian-homes-in-jericho-displacing-dozens?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 4600,
+      "final_score": -3.1,
+      "confidence": 8,
+      "justification": "Home seizure and forced displacement violate multiple rights, yielding a net negative impact. | The forced seizure and displacement represent a clear violation of property, housing, and indigenous rights, outweighing any incidental benefits. The action deepens inequality and undermines peace and justice, leading to a net negative ethical assessment.",
+      "tx_hash": "2XxRagqHFsRCuVtrBGqtTBPCkNs2bqccf1Rz396QzSFXXWC1eANVZR3ooMFW4isJ2Mj6bLhz3xS29s9ujifCjPp6",
+      "created_at": "2026-11-06T05:04:55.052583+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli settlers seized eight Palestinian homes in Jericho, forcibly displacing dozens of families.\", \"affected_sdgs\": [1, 10, 11, 16], \"violated_rights\": [\"UDHR Article 17\", \"UDHR Article 25\", \"UNDRIP Article 10\", \"CRC Article 3\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 46000
+    },
     {
       "id": 9576,
       "event_title": "Adaptation isn't keeping up with global warming, UN warns",
@@ -221063,36 +221086,36 @@
         "events": 119
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.042,
-        "events": 48
-      },
-      {
         "region": "Latin America",
         "burn_ratio": 0.036,
         "events": 28
+      },
+      {
+        "region": "Asia",
+        "burn_ratio": 0.021,
+        "events": 47
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 9
+      },
       {
         "region": "Africa",
         "mint_ratio": 1.0,
         "events": 13
       },
       {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 8
+        "region": "Asia",
+        "mint_ratio": 0.979,
+        "events": 47
       },
       {
         "region": "Latin America",
         "mint_ratio": 0.964,
         "events": 28
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 0.958,
-        "events": 48
       },
       {
         "region": "Europe",
@@ -221133,7 +221156,7 @@
       },
       {
         "date": "2026-11-06",
-        "net_minted": 9705980,
+        "net_minted": 9710580,
         "net_burned": 0
       }
     ],
@@ -221150,8 +221173,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 26,
-        "negative": 375,
+        "positive": 25,
+        "negative": 376,
         "event_ids_positive": [
           9553,
           9528,
@@ -221177,10 +221200,10 @@
           9231,
           9230,
           9212,
-          9193,
-          9173
+          9193
         ],
         "event_ids_negative": [
+          9577,
           9576,
           9575,
           9574,
@@ -221560,7 +221583,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 300,
+        "negative": 301,
         "event_ids_positive": [
           9553,
           9528,
@@ -221579,6 +221602,7 @@
           9193
         ],
         "event_ids_negative": [
+          9577,
           9576,
           9575,
           9574,
@@ -221935,7 +221959,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 74,
+        "negative": 75,
         "event_ids_positive": [
           9462,
           9461,
@@ -221943,6 +221967,7 @@
           9291
         ],
         "event_ids_negative": [
+          9577,
           9576,
           9574,
           9571,
@@ -222021,7 +222046,7 @@
       },
       "UNDRIP": {
         "positive": 5,
-        "negative": 73,
+        "negative": 74,
         "event_ids_positive": [
           9387,
           9364,
@@ -222030,6 +222055,7 @@
           9231
         ],
         "event_ids_negative": [
+          9577,
           9576,
           9567,
           9562,
@@ -222106,7 +222132,7 @@
         ]
       },
       "Animal": {
-        "positive": 12,
+        "positive": 11,
         "negative": 52,
         "event_ids_positive": [
           9528,
@@ -222119,8 +222145,7 @@
           9318,
           9233,
           9231,
-          9193,
-          9173
+          9193
         ],
         "event_ids_negative": [
           9564,
@@ -222178,7 +222203,7 @@
         ]
       },
       "PB": {
-        "positive": 13,
+        "positive": 12,
         "negative": 138,
         "event_ids_positive": [
           9528,
@@ -222192,8 +222217,7 @@
           9318,
           9263,
           9233,
-          9231,
-          9173
+          9231
         ],
         "event_ids_negative": [
           9576,
@@ -222600,6 +222624,34 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 20,
+        "burn_count": 1,
+        "mint_count": 19,
+        "event_ids": [
+          9577,
+          9525,
+          9483,
+          9445,
+          9418,
+          9415,
+          9413,
+          9401,
+          9330,
+          9304,
+          9300,
+          9299,
+          9296,
+          9294,
+          9290,
+          9218,
+          9216,
+          9210,
+          9203,
+          9180
+        ]
+      },
+      {
         "name": "Defense",
         "count": 20,
         "burn_count": 0,
@@ -222625,33 +222677,6 @@
           9204,
           9202,
           9194
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 19,
-        "burn_count": 1,
-        "mint_count": 18,
-        "event_ids": [
-          9525,
-          9483,
-          9445,
-          9418,
-          9415,
-          9413,
-          9401,
-          9330,
-          9304,
-          9300,
-          9299,
-          9296,
-          9294,
-          9290,
-          9218,
-          9216,
-          9210,
-          9203,
-          9180
         ]
       },
       {
@@ -222712,14 +222737,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 26,
+      "total_burn": 25,
       "direct_action": {
         "count": 23,
-        "pct": 88.5
+        "pct": 92.0
       },
       "editorial_consciousness": {
-        "count": 3,
-        "pct": 11.5
+        "count": 2,
+        "pct": 8.0
       },
       "untyped": {
         "count": 0,
@@ -222742,9 +222767,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 378,
+      "total_mint": 379,
       "direct_action": {
-        "count": 336,
+        "count": 337,
         "pct": 88.9
       },
       "editorial_alarm": {
@@ -222757,9 +222782,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7303,
+      "total_mint": 7304,
       "direct_action": {
-        "count": 6698,
+        "count": 6699,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -222808,11 +222833,12 @@
         },
         {
           "date": "2026-11-06",
-          "citizen": 5,
+          "citizen": 6,
           "institutional": 11
         }
       ],
       "event_ids_citizen": [
+        9577,
         9575,
         9570,
         9565,
@@ -222945,8 +222971,7 @@
         9188,
         9187,
         9182,
-        9174,
-        9173
+        9174
       ],
       "event_ids_institutional": [
         9576,
