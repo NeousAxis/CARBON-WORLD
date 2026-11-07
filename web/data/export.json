@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-07T05:06:09.409753+00:00",
-  "total_events": 9623,
+  "generated_at": "2026-11-07T06:04:37.179400+00:00",
+  "total_events": 9624,
   "total_burned": 8190129595,
-  "total_minted": 11932027139,
+  "total_minted": 11937437139,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9624,
+      "event_title": "Iran says forces 'stronger' than at beginning of war",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/iran-says-forces-stronger-beginning-war",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -4.4,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Escalatory state actions (Hormuz restriction, US bounty) amid active war with global energy risk; mediation is only a modest counterweight. | The article reports state actions and claims rather than binding outcomes: Iran's Hormuz restriction and the US bounty are escalatory measures, while mediation is ongoing but has produced no concrete result. The main concrete harms are the risk of renewed large-scale fighting and global ener",
+      "tx_hash": "3qcm6dn2KUoyF54bQzYUcUFGri6rRreenARhzq3ZRzb2UU2SzHb6n7rHBqk4KZDmiFZdfV3qiHuEd8FAkmsq5to9",
+      "created_at": "2026-11-07T06:04:29.482553+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Iran",
+      "region": "MENA",
+      "administration": "Iran-reformist",
+      "positive_aspects_json": "[{\"description\": \"Mediators are working to prevent a resumption of fighting after months of deadlock, a diplomatic de-escalation effort.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Ongoing armed conflict between Iran, the United States and Israel, which began with attacks in late February, threatens civilian lives and regional security.\", \"affected_sdgs\": [16, 3], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Iran's restriction of traffic through the Strait of Hormuz, which carries about one-fifth of global oil consumption, risks energy price shocks and supply disruption that hit vulnerable populations worldwide.\", \"affected_sdgs\": [1, 7, 8], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}, {\"description\": \"The US $20 million reward for nuclear-programme information and Iran's claims of a strengthened military both escalate the military posture and reduce the space for negotiated de-escalation.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9623,
       "event_title": "Guatemala faces a human rights court over violent evictions of Indigenous communities",
@@ -222149,21 +222172,21 @@
         "events": 49
       },
       {
-        "region": "Latin America",
+        "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 29
+        "events": 10
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 10
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 1.0,
         "events": 29
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 9
       },
       {
         "region": "Africa",
@@ -222214,7 +222237,7 @@
       },
       {
         "date": "2026-11-07",
-        "net_minted": 7344000,
+        "net_minted": 12754000,
         "net_burned": 0
       }
     ],
@@ -222232,7 +222255,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 21,
-        "negative": 363,
+        "negative": 364,
         "event_ids_positive": [
           9611,
           9578,
@@ -222257,6 +222280,7 @@
           9263
         ],
         "event_ids_negative": [
+          9624,
           9623,
           9622,
           9621,
@@ -222624,7 +222648,7 @@
       },
       "UDHR": {
         "positive": 13,
-        "negative": 297,
+        "negative": 298,
         "event_ids_positive": [
           9611,
           9578,
@@ -222641,6 +222665,7 @@
           9291
         ],
         "event_ids_negative": [
+          9624,
           9623,
           9622,
           9621,
@@ -223391,11 +223416,11 @@
       "niche_pct": 58.5,
       "mainstream_pct": 41.5,
       "total_sources_used": 94,
-      "articles_processed": 387
+      "articles_processed": 388
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 387,
+      "total_events": 388,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -223573,10 +223598,11 @@
       },
       {
         "name": "Energy",
-        "count": 29,
+        "count": 30,
         "burn_count": 0,
-        "mint_count": 29,
+        "mint_count": 30,
         "event_ids": [
+          9624,
           9622,
           9621,
           9600,
@@ -223776,9 +223802,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 366,
+      "total_mint": 367,
       "direct_action": {
-        "count": 325,
+        "count": 326,
         "pct": 88.8
       },
       "editorial_alarm": {
@@ -223791,9 +223817,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7348,
+      "total_mint": 7349,
       "direct_action": {
-        "count": 6738,
+        "count": 6739,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -223807,8 +223833,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 132,
-      "institutional": 255,
-      "citizen_ratio": 0.341,
+      "institutional": 256,
+      "citizen_ratio": 0.34,
       "daily": [
         {
           "date": "2026-11-01",
@@ -223843,7 +223869,7 @@
         {
           "date": "2026-11-07",
           "citizen": 2,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -223981,6 +224007,7 @@
         9238
       ],
       "event_ids_institutional": [
+        9624,
         9622,
         9620,
         9619,
