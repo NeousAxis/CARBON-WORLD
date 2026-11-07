@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-07T01:04:56.159595+00:00",
-  "total_events": 9619,
+  "generated_at": "2026-11-07T02:04:26.852352+00:00",
+  "total_events": 9620,
   "total_burned": 8190129595,
-  "total_minted": 11925013139,
+  "total_minted": 11925513139,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9620,
+      "event_title": "STAT+: States sue Trump administration again to delay Medicaid work requirements",
+      "event_url": "https://www.statnews.com/2026/11/06/states-sue-trump-delay-medicaid-work-requirements/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 500000,
+      "final_score": -1.47,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The states' lawsuit seeks to block harmful Medicaid work requirements, protecting vulnerable populations' health rights. | The lawsuit represents a protective action against a policy that risks undermining healthcare access for low-income and vulnerable populations, aligning with SDGs 1, 3, and 10 and UDHR Article 25. However, the underlying policy itself remains a significa",
+      "tx_hash": "4XwLsRQTdYjYzW2FnJDRgUqHPnAWDw28jrg8uXEJVMUSDqUg2VDNkL9vxPpJrhm82BP1LoY2EqPyL6XvPaj4szLy",
+      "created_at": "2026-11-07T02:04:19.241167+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"States file lawsuit to block Medicaid work requirements, aiming to protect low-income individuals' access to healthcare.\", \"affected_sdgs\": [1, 3, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Federal administration's attempt to impose work requirements on Medicaid recipients, which could exclude vulnerable populations from healthcare access.\", \"affected_sdgs\": [1, 3, 8, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 9619,
       "event_title": "Banking crisis in Paraguay: Pedro Alliana sworn in as president after Santiago Peña's removal",
@@ -221985,12 +222008,12 @@
       {
         "country": "United States",
         "count": 70,
-        "total_amount": 38900330
+        "total_amount": 39346230
       },
       {
         "country": "France",
-        "count": 42,
-        "total_amount": 10418955
+        "count": 41,
+        "total_amount": 9742955
       },
       {
         "country": "Brazil",
@@ -222048,8 +222071,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.06,
-        "events": 117
+        "burn_ratio": 0.061,
+        "events": 114
       },
       {
         "region": "Asia",
@@ -222085,8 +222108,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.94,
-        "events": 117
+        "mint_ratio": 0.939,
+        "events": 114
       }
     ],
     "supply_trend_7d": [
@@ -222122,7 +222145,7 @@
       },
       {
         "date": "2026-11-07",
-        "net_minted": 330000,
+        "net_minted": 830000,
         "net_burned": 0
       }
     ],
@@ -222140,7 +222163,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 25,
-        "negative": 371,
+        "negative": 367,
         "event_ids_positive": [
           9611,
           9578,
@@ -222169,6 +222192,7 @@
           9230
         ],
         "event_ids_negative": [
+          9620,
           9619,
           9618,
           9617,
@@ -222534,17 +222558,12 @@
           9229,
           9228,
           9227,
-          9226,
-          9225,
-          9224,
-          9223,
-          9222,
-          9221
+          9226
         ]
       },
       "UDHR": {
         "positive": 15,
-        "negative": 303,
+        "negative": 300,
         "event_ids_positive": [
           9611,
           9578,
@@ -222563,6 +222582,7 @@
           9230
         ],
         "event_ids_negative": [
+          9620,
           9619,
           9618,
           9617,
@@ -222861,11 +222881,7 @@
           9229,
           9228,
           9227,
-          9226,
-          9224,
-          9223,
-          9222,
-          9221
+          9226
         ]
       },
       "ILO": {
@@ -222925,7 +222941,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 77,
+        "negative": 78,
         "event_ids_positive": [
           9462,
           9461,
@@ -222933,6 +222949,7 @@
           9291
         ],
         "event_ids_negative": [
+          9620,
           9617,
           9613,
           9612,
@@ -223334,11 +223351,11 @@
       "niche_pct": 59.4,
       "mainstream_pct": 40.6,
       "total_sources_used": 96,
-      "articles_processed": 399
+      "articles_processed": 395
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 399,
+      "total_events": 395,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -223394,9 +223411,9 @@
       },
       {
         "name": "EU",
-        "count": 11,
+        "count": 10,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           9547,
           9539,
@@ -223407,8 +223424,7 @@
           9411,
           9368,
           9310,
-          9293,
-          9225
+          9293
         ]
       },
       {
@@ -223725,14 +223741,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 374,
+      "total_mint": 370,
       "direct_action": {
-        "count": 333,
-        "pct": 89.0
+        "count": 329,
+        "pct": 88.9
       },
       "editorial_alarm": {
         "count": 38,
-        "pct": 10.2
+        "pct": 10.3
       },
       "untyped": {
         "count": 3,
@@ -223740,9 +223756,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7344,
+      "total_mint": 7345,
       "direct_action": {
-        "count": 6736,
+        "count": 6737,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -223755,9 +223771,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 138,
-      "institutional": 261,
-      "citizen_ratio": 0.346,
+      "citizen": 136,
+      "institutional": 259,
+      "citizen_ratio": 0.344,
       "daily": [
         {
           "date": "2026-11-01",
@@ -223792,7 +223808,7 @@
         {
           "date": "2026-11-07",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -223931,11 +223947,10 @@
         9230,
         9228,
         9227,
-        9226,
-        9225,
-        9222
+        9226
       ],
       "event_ids_institutional": [
+        9620,
         9619,
         9618,
         9617,
@@ -224193,10 +224208,7 @@
         9235,
         9234,
         9232,
-        9229,
-        9224,
-        9223,
-        9221
+        9229
       ]
     }
   }
