@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-07T23:05:25.324893+00:00",
-  "total_events": 9642,
+  "generated_at": "2026-11-08T00:05:24.162557+00:00",
+  "total_events": 9643,
   "total_burned": 8191151595,
-  "total_minted": 11941300479,
+  "total_minted": 11941307149,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9643,
+      "event_title": "Houthi-run health ministry says airstrikes kill 33 near Yemen capital",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/houthi-run-health-ministry-says-airstrikes-kill-33-near-yemen-capital",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6670,
+      "final_score": -3.65,
+      "confidence": 7,
+      "justification": "Airstrike caused massive civilian loss; investigation alone insufficient. | The civilian casualties from the airstrike represent a severe breach of the right to life and health, outweighing the modest step of announcing an investigation. Overall the action is ethically negative.",
+      "tx_hash": "3TtyZc5gHixB8Ha3REJym9cv3JDaUB9xmntLE8z4e63oJmBDVKKFCdNiEdgCEJ4KUm6LbRkfFvuc8YAuKgm6XtWB",
+      "created_at": "2026-11-08T00:05:09.856142+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": "[{\"description\": \"Saudi Arabia's Center for International Communication announced an investigation into the reported airstrike\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Airstrike caused at least 33 civilian deaths and 39 injuries in a village near Sanaa\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 9\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 9642,
       "event_title": "Trump Admin Giving $1M to Group Studying Crime Against White South Africans",
@@ -222595,7 +222618,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 10
+        "events": 11
       },
       {
         "region": "Latin America",
@@ -222619,11 +222642,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-01",
-        "net_minted": 26997910,
-        "net_burned": 21500
-      },
       {
         "date": "2026-11-02",
         "net_minted": 47578575,
@@ -222653,6 +222671,11 @@
         "date": "2026-11-07",
         "net_minted": 16617340,
         "net_burned": 1022000
+      },
+      {
+        "date": "2026-11-08",
+        "net_minted": 6670,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -222669,7 +222692,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 22,
-        "negative": 352,
+        "negative": 353,
         "event_ids_positive": [
           9636,
           9628,
@@ -222695,6 +222718,7 @@
           9291
         ],
         "event_ids_negative": [
+          9643,
           9642,
           9641,
           9640,
@@ -223051,7 +223075,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 289,
+        "negative": 290,
         "event_ids_positive": [
           9636,
           9628,
@@ -223070,6 +223094,7 @@
           9291
         ],
         "event_ids_negative": [
+          9643,
           9642,
           9641,
           9638,
@@ -223798,11 +223823,11 @@
       "niche_pct": 58.5,
       "mainstream_pct": 41.5,
       "total_sources_used": 94,
-      "articles_processed": 377
+      "articles_processed": 378
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 377,
+      "total_events": 378,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -224182,14 +224207,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 355,
+      "total_mint": 356,
       "direct_action": {
-        "count": 317,
+        "count": 318,
         "pct": 89.3
       },
       "editorial_alarm": {
         "count": 35,
-        "pct": 9.9
+        "pct": 9.8
       },
       "untyped": {
         "count": 3,
@@ -224197,9 +224222,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7365,
+      "total_mint": 7366,
       "direct_action": {
-        "count": 6754,
+        "count": 6755,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -224213,14 +224238,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 123,
-      "institutional": 254,
-      "citizen_ratio": 0.326,
+      "institutional": 255,
+      "citizen_ratio": 0.325,
       "daily": [
-        {
-          "date": "2026-11-01",
-          "citizen": 11,
-          "institutional": 26
-        },
         {
           "date": "2026-11-02",
           "citizen": 19,
@@ -224250,6 +224270,11 @@
           "date": "2026-11-07",
           "citizen": 5,
           "institutional": 19
+        },
+        {
+          "date": "2026-11-08",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -224378,6 +224403,7 @@
         9267
       ],
       "event_ids_institutional": [
+        9643,
         9642,
         9641,
         9640,
