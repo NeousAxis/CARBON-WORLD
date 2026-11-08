@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-08T17:06:01.970992+00:00",
-  "total_events": 9661,
+  "generated_at": "2026-11-08T18:05:54.178132+00:00",
+  "total_events": 9663,
   "total_burned": 8191447595,
-  "total_minted": 11961591849,
+  "total_minted": 11961914449,
   "pending_reviews": 12,
   "events": [
+    {
+      "id": 9663,
+      "event_title": "Israel: Opposition leader Eisenkot to form new government",
+      "event_url": "https://www.tagesschau.de/ausland/asien/israel-auftrag-regierungsbildung-eisenkot-100.html",
+      "event_source": "Tagesschau (Germany, DE)",
+      "decision": "MINT",
+      "amount_crbn": 22600,
+      "final_score": 1.53,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Procedural coalition mandate with limited concrete ethical content; low-conviction MINT under the rule (score <= 4), confidence low. | The article reports a procedural constitutional step, a presidential mandate to attempt government formation, with no binding policy outcome yet. Its ethical weight is limited and depends on what coalition emerges and how it governs. Confidence is low because the article gives no details on the pro",
+      "tx_hash": "5oHaMeVvCEFXH5mJSiA2B2pdTSmj9qrMuUwdRbNhvqP7j57mZPE6DDXC65t7XFYmzBFqkwpmmicHUMTZoeTUfMvF",
+      "created_at": "2026-11-08T18:05:47.766287+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Presidential mandate to form a government follows constitutional procedure and offers a path out of prolonged political deadlock through parliamentary coalition-building.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}, {\"description\": \"The opposition leader publicly urges rivals to accept unconventional political compromises, signalling willingness to bridge partisan divides.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Coalition formation is at an early, uncertain stage. Unconventional arrangements could weaken accountability and oversight if they lack transparent parliamentary support.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 2260
+    },
+    {
+      "id": 9662,
+      "event_title": "Michel Zecler case: lies and video surveillance, when videos topple false police reports",
+      "event_url": "https://www.20minutes.fr/justice/4261045-20261108-affaire-michel-zecler-mensonges-videosurveillance-quand-videos-font-tomber-faux-pv-policiers?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -0.7,
+      "confidence": 9,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Institutional action (trial) punishes harm (police violence/falsification) and reinforces rights protections. | The trial represents a critical enforcement of accountability for alleged police misconduct, reinforcing SDG 16 (Peace, Justice, and Strong Institutions) and UDHR protections against torture and arbitrary detention. However, the underlying act of violence and falsi",
+      "tx_hash": "3YLmdyxhvvxYtUvBQn7hvQMmqR1PRLKuuBRkJqabPTE3Lw27ZBCQ7ccqZG94DstgJhRXr3tGXH5K15Xgs7KjweXz",
+      "created_at": "2026-11-08T18:05:45.550747+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Court trial opens for three police officers accused of assaulting music producer Michel Zecler, holding them accountable for alleged police violence.\", \"affected_sdgs\": [16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Role of video evidence in exposing false police reports and ensuring transparency in legal proceedings.\", \"affected_sdgs\": [16], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Alleged police violence and falsification of official reports, undermining trust in law enforcement and judicial integrity.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 5\", \"UDHR Article 7\", \"UDHR Article 8\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 748000
+    },
     {
       "id": 9661,
       "event_title": "Finance, adaptation, science… The major issues of COP31 on climate",
@@ -222955,8 +223001,8 @@
       },
       {
         "country": "France",
-        "count": 40,
-        "total_amount": 9470155
+        "count": 41,
+        "total_amount": 9770155
       },
       {
         "country": "Brazil",
@@ -223019,8 +223065,8 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.071,
-        "events": 113
+        "burn_ratio": 0.07,
+        "events": 114
       },
       {
         "region": "Asia",
@@ -223030,14 +223076,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 11
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 1.0,
         "events": 30
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 10
       },
       {
         "region": "Asia",
@@ -223046,8 +223092,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.929,
-        "events": 113
+        "mint_ratio": 0.93,
+        "events": 114
       },
       {
         "region": "North America",
@@ -223088,7 +223134,7 @@
       },
       {
         "date": "2026-11-08",
-        "net_minted": 20291370,
+        "net_minted": 20613970,
         "net_burned": 296000
       }
     ],
@@ -223106,7 +223152,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 345,
+        "negative": 347,
         "event_ids_positive": [
           9658,
           9636,
@@ -223133,6 +223179,8 @@
           9291
         ],
         "event_ids_negative": [
+          9663,
+          9662,
           9661,
           9660,
           9659,
@@ -223482,7 +223530,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 283,
+        "negative": 284,
         "event_ids_positive": [
           9658,
           9636,
@@ -223502,6 +223550,7 @@
           9291
         ],
         "event_ids_negative": [
+          9662,
           9661,
           9659,
           9657,
@@ -224216,11 +224265,11 @@
       "niche_pct": 58.9,
       "mainstream_pct": 41.1,
       "total_sources_used": 95,
-      "articles_processed": 371
+      "articles_processed": 373
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 371,
+      "total_events": 373,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -224607,14 +224656,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 348,
+      "total_mint": 350,
       "direct_action": {
-        "count": 311,
+        "count": 313,
         "pct": 89.4
       },
       "editorial_alarm": {
         "count": 34,
-        "pct": 9.8
+        "pct": 9.7
       },
       "untyped": {
         "count": 3,
@@ -224622,9 +224671,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7383,
+      "total_mint": 7385,
       "direct_action": {
-        "count": 6771,
+        "count": 6773,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -224637,9 +224686,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 120,
-      "institutional": 251,
-      "citizen_ratio": 0.323,
+      "citizen": 121,
+      "institutional": 252,
+      "citizen_ratio": 0.324,
       "daily": [
         {
           "date": "2026-11-02",
@@ -224673,11 +224722,12 @@
         },
         {
           "date": "2026-11-08",
-          "citizen": 5,
-          "institutional": 14
+          "citizen": 6,
+          "institutional": 15
         }
       ],
       "event_ids_citizen": [
+        9663,
         9659,
         9657,
         9656,
@@ -224800,6 +224850,7 @@
         9294
       ],
       "event_ids_institutional": [
+        9662,
         9661,
         9660,
         9658,
