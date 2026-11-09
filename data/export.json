@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-09T15:06:15.123233+00:00",
-  "total_events": 9700,
+  "generated_at": "2026-11-09T16:05:01.624609+00:00",
+  "total_events": 9701,
   "total_burned": 8191612595,
-  "total_minted": 11991249949,
+  "total_minted": 11991494949,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 9701,
+      "event_title": "EU emissions fell 1.6% in 2025, but Spain's rose 2.2%",
+      "event_url": "https://efeverde.com/las-emisiones-de-la-ue-bajaron-un-16-en-2025-pero-las-de-espana-subieron-un-22/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "MINT",
+      "amount_crbn": 245000,
+      "final_score": 0.49,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Mixed EU-wide emissions decline (-1.6%) and Spanish rise (+2.2%); near-neutral net impact with low confidence, so the rule-based decision is MINT. | The Commission report documents a continued EU-wide emissions decline alongside a notable national rebound in Spain. The two findings partly offset each other, and t",
+      "tx_hash": "2KN8LDUd39gn9zWkNQgq43DGLC992nkAyP1K8j5iZvbDbwGzyHxMi1ViPLqazJZAN1oSx8R75jXLRMgEhjvVK6AP",
+      "created_at": "2026-11-09T16:04:54.454190+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU-wide net greenhouse gas emissions fell 1.6% in 2025, confirmed by an official European Commission annual report\", \"affected_sdgs\": [13, 7], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Spain's net emissions rose 2.2% in 2025, the third-largest increase among the 27 member states, signalling off-track national climate progress\", \"affected_sdgs\": [13, 7], \"violated_rights\": [], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 9700,
       "event_title": "How Indigenous land leasing fueled a war among the Kaingang in Paraná",
@@ -223985,7 +224008,7 @@
       },
       {
         "date": "2026-11-09",
-        "net_minted": 26488400,
+        "net_minted": 26733400,
         "net_burned": 15000
       }
     ],
@@ -224003,7 +224026,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 336,
+        "negative": 337,
         "event_ids_positive": [
           9674,
           9664,
@@ -224026,6 +224049,7 @@
           9364
         ],
         "event_ids_negative": [
+          9701,
           9700,
           9699,
           9698,
@@ -224927,7 +224951,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 112,
+        "negative": 113,
         "event_ids_positive": [
           9578,
           9528,
@@ -224937,6 +224961,7 @@
           9387
         ],
         "event_ids_negative": [
+          9701,
           9699,
           9697,
           9695,
@@ -225056,11 +225081,11 @@
       "niche_pct": 58.9,
       "mainstream_pct": 41.1,
       "total_sources_used": 90,
-      "articles_processed": 358
+      "articles_processed": 359
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 358,
+      "total_events": 359,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -225116,10 +225141,11 @@
       },
       {
         "name": "EU",
-        "count": 11,
+        "count": 12,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 12,
         "event_ids": [
+          9701,
           9692,
           9686,
           9639,
@@ -225445,9 +225471,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 339,
+      "total_mint": 340,
       "direct_action": {
-        "count": 303,
+        "count": 304,
         "pct": 89.4
       },
       "editorial_alarm": {
@@ -225460,9 +225486,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7420,
+      "total_mint": 7421,
       "direct_action": {
-        "count": 6806,
+        "count": 6807,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -225476,8 +225502,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 118,
-      "institutional": 240,
-      "citizen_ratio": 0.33,
+      "institutional": 241,
+      "citizen_ratio": 0.329,
       "daily": [
         {
           "date": "2026-11-03",
@@ -225512,7 +225538,7 @@
         {
           "date": "2026-11-09",
           "citizen": 10,
-          "institutional": 19
+          "institutional": 20
         }
       ],
       "event_ids_citizen": [
@@ -225636,6 +225662,7 @@
         9343
       ],
       "event_ids_institutional": [
+        9701,
         9697,
         9696,
         9695,
