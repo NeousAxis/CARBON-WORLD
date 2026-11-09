@@ -1,10 +1,79 @@
 {
-  "generated_at": "2026-11-09T04:06:02.695093+00:00",
-  "total_events": 9675,
+  "generated_at": "2026-11-09T05:04:19.846138+00:00",
+  "total_events": 9678,
   "total_burned": 8191612595,
-  "total_minted": 11965561549,
+  "total_minted": 11966002549,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 9678,
+      "event_title": "Survival after sudden cardiac arrest didn't improve despite training bystanders, emergency responders",
+      "event_url": "https://www.statnews.com/2026/11/08/sudden-cardiac-arrest-survival-cpr-defibrillation-training/?utm_campaign=rss",
+      "event_source": "STAT News (medicine)",
+      "decision": "MINT",
+      "amount_crbn": 22600,
+      "final_score": 0.43,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Score is near zero (0.43), so this is effectively neutral; the literal threshold (<=4 MINT) yields MINT. Based on a secondary news summary of a study. | The study is a research deliverable whose main value is evidence for better allocation of cardiac arrest resources. Its null result is a scientific contribution rather than a harm, and the researchers themselves caution against closing the door on the question. The concern about m",
+      "tx_hash": "2fifMk8PKHdkTZg1eTsUBZN2uhaN11HYH3cGcnYoKpL8tWhvHRLEZDgNcDMiT7jYtFNtitvXiRhFGH2Ux74Mv4FG",
+      "created_at": "2026-11-09T05:04:12.306367+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Peer-reviewed evidence that advanced responder training did not improve survival after sudden cardiac arrest helps public health planners target resources toward interventions that work.\", \"affected_sdgs\": [3, 4], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Risk that the null finding is misread as evidence that bystander CPR and defibrillation training are ineffective, discouraging training investment that may still help in some settings.\", \"affected_sdgs\": [3], \"violated_rights\": [], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 2260
+    },
+    {
+      "id": 9677,
+      "event_title": "'I've never seen anything like this': RNZ plans job cuts after shock $12m loss",
+      "event_url": "https://www.rnz.co.nz/news/business/2466817/i-ve-never-seen-anything-like-this-rnz-plans-job-cuts-after-shock-12m-loss",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": -1.85,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Public broadcaster RNZ's job cuts after a $12m loss harm workers and public-interest news capacity; accountability gains are modest. Net negative. | The job cuts impose a concrete cost on workers and on the breadth of public media coverage, which outweighs the accountability gain from openly addressing the financial failures. The net effect is moderately negative, but the harm is reversible and sectoral rather than systemic. Confi",
+      "tx_hash": "49skcsDtfgkH6Wor6mkHyEhjLxE87fKcEjUdePRKcyGPXHkDytztaVYCVQCwdN1bQoKoFKBiGYtMWQiaQYmxJiBa",
+      "created_at": "2026-11-09T05:04:09.852102+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Public disclosure of a budget blowout and a series of financial errors, with a corrective cost-cutting plan, supports fiscal accountability and transparency in a publicly funded institution.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Planned job cuts at a national public broadcaster reduce employment for media workers and may weaken public-interest news capacity, with downstream effects on access to information.\", \"affected_sdgs\": [8, 10, 16], \"violated_rights\": [\"UDHR Article 23\", \"UDHR Article 19\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"ILO\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
+    {
+      "id": 9676,
+      "event_title": "Farmers fight to adapt as droughts loom in COP31 host Turkey",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/farmers-fight-adapt-droughts-loom-cop31-host-turkey",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 3400,
+      "final_score": 1.14,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Single-farmer drought adaptation is positive but local; final 1.14 falls under the <=4 MINT rule as written. Threshold scale looks ambiguous; flagged for review. | A named farmer's crop switch is a concrete, water-saving adaptation step, so the act is net positive but local in reach. The article also shows that a",
+      "tx_hash": "2kf8dDaJPFWXCZPLA1fR449eCDBTU556UGEYCzd1iEwRfAiGxrqbBiWc5a7ewuVdRdjPdF2p1hMQrTGcXg97b8ME",
+      "created_at": "2026-11-09T05:04:07.619828+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": "[{\"description\": \"Farmer Mehmet Kabak switched from cotton to wheat and sunflower, which need less water, cutting water stress on drought-prone land.\", \"affected_sdgs\": [6, 13, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Reported widespread farmer-led adaptation worldwide, with growers acting independently of slow international adaptation finance.\", \"affected_sdgs\": [2, 13], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Adaptation costs fall on individual farmers because international adaptation finance remains unresolved, which may burden smallholders with less capital.\", \"affected_sdgs\": [1, 10, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 28900
+    },
     {
       "id": 9675,
       "event_title": "COP31 seeks to move from words to deeds in a divided world with less money",
@@ -223326,8 +223395,8 @@
     "top_regions_sustainable": [
       {
         "region": "Oceania",
-        "burn_ratio": 0.2,
-        "events": 10
+        "burn_ratio": 0.182,
+        "events": 11
       },
       {
         "region": "Africa",
@@ -223352,14 +223421,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 12
+      },
+      {
         "region": "Latin America",
         "mint_ratio": 1.0,
         "events": 28
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 11
       },
       {
         "region": "Asia",
@@ -223410,7 +223479,7 @@
       },
       {
         "date": "2026-11-09",
-        "net_minted": 800000,
+        "net_minted": 1241000,
         "net_burned": 15000
       }
     ],
@@ -223428,7 +223497,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 337,
+        "negative": 340,
         "event_ids_positive": [
           9674,
           9664,
@@ -223455,6 +223524,9 @@
           9318
         ],
         "event_ids_negative": [
+          9678,
+          9677,
+          9676,
           9675,
           9673,
           9672,
@@ -223796,7 +223868,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 278,
+        "negative": 280,
         "event_ids_positive": [
           9674,
           9664,
@@ -223816,6 +223888,8 @@
           9318
         ],
         "event_ids_negative": [
+          9677,
+          9676,
           9675,
           9673,
           9672,
@@ -224098,13 +224172,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 42,
+        "negative": 43,
         "event_ids_positive": [
           9636,
           9628,
           9553
         ],
         "event_ids_negative": [
+          9677,
           9654,
           9652,
           9650,
@@ -224372,7 +224447,7 @@
       },
       "PB": {
         "positive": 10,
-        "negative": 117,
+        "negative": 118,
         "event_ids_positive": [
           9578,
           9528,
@@ -224386,6 +224461,7 @@
           9318
         ],
         "event_ids_negative": [
+          9676,
           9675,
           9671,
           9669,
@@ -224510,11 +224586,11 @@
       "niche_pct": 58.7,
       "mainstream_pct": 41.3,
       "total_sources_used": 92,
-      "articles_processed": 363
+      "articles_processed": 366
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 363,
+      "total_events": 366,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -224547,10 +224623,11 @@
       },
       {
         "name": "COP",
-        "count": 12,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 12,
+        "mint_count": 13,
         "event_ids": [
+          9676,
           9675,
           9672,
           9666,
@@ -224640,10 +224717,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 41,
+        "count": 42,
         "burn_count": 1,
-        "mint_count": 40,
+        "mint_count": 41,
         "event_ids": [
+          9677,
           9675,
           9670,
           9669,
@@ -224805,6 +224883,25 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 11,
+        "burn_count": 1,
+        "mint_count": 10,
+        "event_ids": [
+          9676,
+          9594,
+          9567,
+          9546,
+          9528,
+          9467,
+          9456,
+          9443,
+          9441,
+          9400,
+          9338
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 11,
         "burn_count": 1,
@@ -224824,37 +224921,20 @@
         ]
       },
       {
-        "name": "Agriculture",
-        "count": 10,
+        "name": "Water",
+        "count": 9,
         "burn_count": 1,
-        "mint_count": 9,
-        "event_ids": [
-          9594,
-          9567,
-          9546,
-          9528,
-          9467,
-          9456,
-          9443,
-          9441,
-          9400,
-          9338
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 8,
-        "burn_count": 0,
         "mint_count": 8,
         "event_ids": [
-          9648,
-          9633,
-          9630,
-          9539,
-          9499,
-          9436,
-          9381,
-          9328
+          9676,
+          9591,
+          9542,
+          9449,
+          9442,
+          9416,
+          9355,
+          9322,
+          9315
         ]
       }
     ],
@@ -224889,14 +224969,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 340,
+      "total_mint": 343,
       "direct_action": {
-        "count": 304,
-        "pct": 89.4
+        "count": 307,
+        "pct": 89.5
       },
       "editorial_alarm": {
         "count": 33,
-        "pct": 9.7
+        "pct": 9.6
       },
       "untyped": {
         "count": 3,
@@ -224904,9 +224984,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7395,
+      "total_mint": 7398,
       "direct_action": {
-        "count": 6783,
+        "count": 6786,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -224920,8 +225000,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 119,
-      "institutional": 244,
-      "citizen_ratio": 0.328,
+      "institutional": 247,
+      "citizen_ratio": 0.325,
       "daily": [
         {
           "date": "2026-11-03",
@@ -224956,7 +225036,7 @@
         {
           "date": "2026-11-09",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -225081,6 +225161,9 @@
         9313
       ],
       "event_ids_institutional": [
+        9678,
+        9677,
+        9676,
         9675,
         9674,
         9670,
