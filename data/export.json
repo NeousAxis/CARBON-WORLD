@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-09T07:06:09.021583+00:00",
-  "total_events": 9681,
+  "generated_at": "2026-11-09T08:04:22.302522+00:00",
+  "total_events": 9682,
   "total_burned": 8191612595,
-  "total_minted": 11974209549,
+  "total_minted": 11974223749,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 9682,
+      "event_title": "Southern African farmers prepare for powerful El Niño with agroecology",
+      "event_url": "https://allafrica.com/stories/202611090004.html",
+      "event_source": "AllAfrica Environment",
+      "decision": "MINT",
+      "amount_crbn": 14200,
+      "final_score": 2.8,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Positive citizen adaptation act scores 2.8, which the literal <=4 rule maps to MINT; threshold may be inverted for positive acts, review. | The article documents a concrete, citizen-led adaptation practice by smallholder farmers that supports food security and soil health against a forecast climate shock. The sca",
+      "tx_hash": "2vPjpPyR8JF29Az9CbnV4JPPDk4FrQk6iJzCWmKRz4ayHg3ZZNdgDH3dcWw1CdiaHai2o2C1XzoaYBp9TNJhq1mp",
+      "created_at": "2026-11-09T08:04:14.808260+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Smallholder farmers adopt agroecological drought preparation (pitting, organic manure) to build soil moisture and food security ahead of anticipated El Nino drought.\", \"affected_sdgs\": [2, 13, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Farmer-led adaptation reduces reliance on synthetic inputs and supports soil health and land-system resilience.\", \"affected_sdgs\": [13, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Adaptation depends on individual smallholders without described institutional or financial support, leaving vulnerable farming households exposed to severe drought.\", \"affected_sdgs\": [1, 2], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 28900
+    },
     {
       "id": 9681,
       "event_title": "Cop31 opens in Turkey as climate funding and fossil fuels divide nations",
@@ -223469,8 +223492,8 @@
       },
       {
         "region": "Africa",
-        "burn_ratio": 0.167,
-        "events": 12
+        "burn_ratio": 0.154,
+        "events": 13
       },
       {
         "region": "Europe",
@@ -223548,7 +223571,7 @@
       },
       {
         "date": "2026-11-09",
-        "net_minted": 9448000,
+        "net_minted": 9462200,
         "net_burned": 15000
       }
     ],
@@ -223566,7 +223589,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 23,
-        "negative": 338,
+        "negative": 339,
         "event_ids_positive": [
           9674,
           9664,
@@ -223593,6 +223616,7 @@
           9318
         ],
         "event_ids_negative": [
+          9682,
           9681,
           9680,
           9679,
@@ -223935,7 +223959,7 @@
       },
       "UDHR": {
         "positive": 16,
-        "negative": 278,
+        "negative": 279,
         "event_ids_positive": [
           9674,
           9664,
@@ -223955,6 +223979,7 @@
           9318
         ],
         "event_ids_negative": [
+          9682,
           9681,
           9680,
           9679,
@@ -224509,7 +224534,7 @@
       },
       "PB": {
         "positive": 10,
-        "negative": 118,
+        "negative": 119,
         "event_ids_positive": [
           9578,
           9528,
@@ -224523,6 +224548,7 @@
           9318
         ],
         "event_ids_negative": [
+          9682,
           9681,
           9679,
           9676,
@@ -224648,11 +224674,11 @@
       "niche_pct": 59.1,
       "mainstream_pct": 40.9,
       "total_sources_used": 93,
-      "articles_processed": 364
+      "articles_processed": 365
     },
     "cache_hit_rate_7d": {
       "hits": 3,
-      "total_events": 364,
+      "total_events": 365,
       "pct": 0.8
     },
     "active_partners_7d": [],
@@ -224948,10 +224974,11 @@
       },
       {
         "name": "Agriculture",
-        "count": 11,
+        "count": 12,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 11,
         "event_ids": [
+          9682,
           9676,
           9594,
           9567,
@@ -225032,14 +225059,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 341,
+      "total_mint": 342,
       "direct_action": {
-        "count": 305,
-        "pct": 89.4
+        "count": 306,
+        "pct": 89.5
       },
       "editorial_alarm": {
         "count": 33,
-        "pct": 9.7
+        "pct": 9.6
       },
       "untyped": {
         "count": 3,
@@ -225047,9 +225074,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7401,
+      "total_mint": 7402,
       "direct_action": {
-        "count": 6789,
+        "count": 6790,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -225062,9 +225089,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 118,
+      "citizen": 119,
       "institutional": 246,
-      "citizen_ratio": 0.324,
+      "citizen_ratio": 0.326,
       "daily": [
         {
           "date": "2026-11-03",
@@ -225098,11 +225125,12 @@
         },
         {
           "date": "2026-11-09",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 8
         }
       ],
       "event_ids_citizen": [
+        9682,
         9673,
         9672,
         9671,
