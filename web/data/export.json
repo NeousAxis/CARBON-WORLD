@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-10T03:06:08.596018+00:00",
-  "total_events": 9730,
+  "generated_at": "2026-11-10T04:05:07.314131+00:00",
+  "total_events": 9732,
   "total_burned": 8191804595,
-  "total_minted": 12009421539,
+  "total_minted": 12010799539,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 9732,
+      "event_title": "Africa's funding focus needs to change: the African Development Bank has plans to make that happen",
+      "event_url": "https://theconversation.com/africas-funding-focus-needs-to-change-the-african-development-bank-has-plans-to-make-that-happen-295782",
+      "event_source": "The Conversation Africa",
+      "decision": "MINT",
+      "amount_crbn": 900000,
+      "final_score": 2.0,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] AfDB plan for country-owned financing is a modest, unimplemented intent; net score is weakly positive but falls below the BURN threshold. | The article describes a multilateral development bank's stated intent to reorient African financing toward country ownership, which aligns with SDG 17 and locally led develop",
+      "tx_hash": "5bJ78C1QTPDdPJEkTKLJwyDg5SDqDYMaUqysxtchHzUpHuoseFJXBE9s5BW9RDMXewQk9Ke1QC3DQ21Hzg2FFYHS",
+      "created_at": "2026-11-10T04:04:59.391025+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"AfDB strategy to shift African financing toward country-owned growth models, potentially strengthening national ownership of development priorities\", \"affected_sdgs\": [8, 9, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}, {\"description\": \"Emphasis on domestic capacity and locally defined priorities could support more inclusive industrial and infrastructure development\", \"affected_sdgs\": [9, 10], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Plans remain at the stated-intent stage; without binding commitments, the shift may not reach the countries and communities most dependent on external finance\", \"affected_sdgs\": [1, 10, 17], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 28900
+    },
+    {
+      "id": 9731,
+      "event_title": "Spain's conservatives promise to relax climate rules if they win election",
+      "event_url": "https://www.politico.eu/article/spain-election-favorites-say-madrid-must-avoid-impossible-climate-timeline/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -4.86,
+      "confidence": 6,
+      "justification": "Political promise to weaken climate rules risks increased emissions and undermines EU climate leadership. | The proposed relaxation of climate rules directly conflicts with SDGs 7, 13, and 15 by potentially increasing emissions and weakening biodiversity protections. While no specific rights are violated, the action undermines collective climate efforts and risks lock-in effects for high-carbon infrastructure, with cascading negative impacts on planetary boundaries.",
+      "tx_hash": "39n2BhwhL2TmDtajuDxEJcYcsLvgxx3Mw7Qt6Dc6UbUnufBYKo3XJcs1dSk2MHUacAb8AogeUndSGy2TEszm9wSn",
+      "created_at": "2026-11-10T04:04:56.704913+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Political party promises to relax climate regulations, potentially weakening emissions targets and renewable energy commitments.\", \"affected_sdgs\": [7, 13, 15], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Undermines Spain's role as a climate leader within the EU, reducing collective ambition and potentially delaying regional climate action.\", \"affected_sdgs\": [13, 17], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9730,
       "event_title": "President Trump Undermines BAAJA As Senate Debate Begins",
@@ -224612,7 +224658,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.05,
-        "events": 100
+        "events": 101
       }
     ],
     "top_regions_destructive": [
@@ -224629,7 +224675,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.95,
-        "events": 100
+        "events": 101
       },
       {
         "region": "Asia",
@@ -224675,7 +224721,7 @@
       },
       {
         "date": "2026-11-10",
-        "net_minted": 3457040,
+        "net_minted": 4835040,
         "net_burned": 0
       }
     ],
@@ -224693,7 +224739,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 334,
+        "negative": 336,
         "event_ids_positive": [
           9716,
           9674,
@@ -224716,6 +224762,8 @@
           9387
         ],
         "event_ids_negative": [
+          9732,
+          9731,
           9730,
           9729,
           9728,
@@ -225597,7 +225645,7 @@
       },
       "PB": {
         "positive": 7,
-        "negative": 115,
+        "negative": 116,
         "event_ids_positive": [
           9716,
           9578,
@@ -225608,6 +225656,7 @@
           9387
         ],
         "event_ids_negative": [
+          9731,
           9730,
           9729,
           9728,
@@ -225727,14 +225776,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 58.4,
-      "mainstream_pct": 41.6,
+      "niche_pct": 56.2,
+      "mainstream_pct": 43.8,
       "total_sources_used": 89,
-      "articles_processed": 355
+      "articles_processed": 357
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 355,
+      "total_events": 357,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -225789,10 +225838,11 @@
       },
       {
         "name": "EU",
-        "count": 14,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 14,
+        "mint_count": 15,
         "event_ids": [
+          9731,
           9725,
           9721,
           9709,
@@ -225865,10 +225915,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 44,
+        "count": 45,
         "burn_count": 1,
-        "mint_count": 43,
+        "mint_count": 44,
         "event_ids": [
+          9732,
           9728,
           9709,
           9704,
@@ -225991,10 +226042,11 @@
       },
       {
         "name": "Construction",
-        "count": 17,
+        "count": 18,
         "burn_count": 0,
-        "mint_count": 17,
+        "mint_count": 18,
         "event_ids": [
+          9731,
           9724,
           9718,
           9713,
@@ -226128,9 +226180,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 336,
+      "total_mint": 338,
       "direct_action": {
-        "count": 301,
+        "count": 303,
         "pct": 89.6
       },
       "editorial_alarm": {
@@ -226143,9 +226195,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7449,
+      "total_mint": 7451,
       "direct_action": {
-        "count": 6832,
+        "count": 6834,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -226159,8 +226211,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 115,
-      "institutional": 240,
-      "citizen_ratio": 0.324,
+      "institutional": 242,
+      "citizen_ratio": 0.322,
       "daily": [
         {
           "date": "2026-11-04",
@@ -226195,7 +226247,7 @@
         {
           "date": "2026-11-10",
           "citizen": 5,
-          "institutional": 3
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -226316,6 +226368,8 @@
         9382
       ],
       "event_ids_institutional": [
+        9732,
+        9731,
         9730,
         9727,
         9725,
