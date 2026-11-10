@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-10T09:06:59.877502+00:00",
-  "total_events": 9750,
+  "generated_at": "2026-11-10T10:04:09.373739+00:00",
+  "total_events": 9751,
   "total_burned": 8195454595,
-  "total_minted": 12016578159,
+  "total_minted": 12016790579,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 9751,
+      "event_title": "France summons Iran envoy over supermarket fridge hack, warns of response",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/france-summons-iran-envoy-over-supermarket-fridge-hack-warns-response",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 212420,
+      "final_score": -0.63,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Escalation risk outweighs deterrence, leading to a negative net impact. | While the diplomatic summons signals a needed stand against illicit cyber aggression, the accompanying threat of retaliation could spark further conflict and harm civilian systems. The net effect leans negative due to escalation risk outweighing deterrence benefits.",
+      "tx_hash": "3KqFNcxAtyw59CVU357r8vSgVxLndu3J7aaFj3n4CPQ8r2gi322LajwqSWeAgmoiZ5kiL1Hv6Wjd44ycYwNt5Ksx",
+      "created_at": "2026-11-10T10:04:02.205235+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"France's diplomatic protest condemns state-sponsored cyber attacks, reinforcing international norms and deterrence.\", \"affected_sdgs\": [16, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The public warning of possible cyber retaliation raises the risk of escalation and civilian infrastructure damage.\", \"affected_sdgs\": [16, 9, 11], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 12\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9750,
       "event_title": "Russia sees new security framework for Europe as main thrust of Ukraine talks, delegation source says",
@@ -225002,8 +225025,8 @@
       },
       {
         "country": "France",
-        "count": 37,
-        "total_amount": 8478670
+        "count": 38,
+        "total_amount": 8691090
       },
       {
         "country": "Brazil",
@@ -225067,7 +225090,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.051,
-        "events": 98
+        "events": 99
       },
       {
         "region": "North America",
@@ -225094,7 +225117,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.949,
-        "events": 98
+        "events": 99
       },
       {
         "region": "Asia",
@@ -225135,7 +225158,7 @@
       },
       {
         "date": "2026-11-10",
-        "net_minted": 10613660,
+        "net_minted": 10826080,
         "net_burned": 3650000
       }
     ],
@@ -225153,7 +225176,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 20,
-        "negative": 336,
+        "negative": 337,
         "event_ids_positive": [
           9743,
           9734,
@@ -225177,6 +225200,7 @@
           9395
         ],
         "event_ids_negative": [
+          9751,
           9750,
           9749,
           9748,
@@ -225517,7 +225541,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 274,
+        "negative": 275,
         "event_ids_positive": [
           9734,
           9716,
@@ -225536,6 +225560,7 @@
           9426
         ],
         "event_ids_negative": [
+          9751,
           9750,
           9748,
           9747,
@@ -226198,11 +226223,11 @@
       "niche_pct": 55.7,
       "mainstream_pct": 44.3,
       "total_sources_used": 88,
-      "articles_processed": 358
+      "articles_processed": 359
     },
     "cache_hit_rate_7d": {
       "hits": 2,
-      "total_events": 358,
+      "total_events": 359,
       "pct": 0.6
     },
     "active_partners_7d": [],
@@ -226599,14 +226624,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 338,
+      "total_mint": 339,
       "direct_action": {
-        "count": 302,
-        "pct": 89.3
+        "count": 303,
+        "pct": 89.4
       },
       "editorial_alarm": {
         "count": 34,
-        "pct": 10.1
+        "pct": 10.0
       },
       "untyped": {
         "count": 2,
@@ -226614,9 +226639,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7467,
+      "total_mint": 7468,
       "direct_action": {
-        "count": 6848,
+        "count": 6849,
         "pct": 91.7
       },
       "editorial_alarm": {
@@ -226630,8 +226655,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 118,
-      "institutional": 240,
-      "citizen_ratio": 0.33,
+      "institutional": 241,
+      "citizen_ratio": 0.329,
       "daily": [
         {
           "date": "2026-11-04",
@@ -226666,7 +226691,7 @@
         {
           "date": "2026-11-10",
           "citizen": 12,
-          "institutional": 16
+          "institutional": 17
         }
       ],
       "event_ids_citizen": [
@@ -226790,6 +226815,7 @@
         9394
       ],
       "event_ids_institutional": [
+        9751,
         9750,
         9749,
         9744,
