@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-11T00:06:31.751277+00:00",
-  "total_events": 9798,
+  "generated_at": "2026-11-11T01:05:30.229054+00:00",
+  "total_events": 9800,
   "total_burned": 8195600595,
-  "total_minted": 12039084569,
+  "total_minted": 12039138819,
   "pending_reviews": 13,
   "events": [
+    {
+      "id": 9800,
+      "event_title": "Unexpected photo reveals return of a bird unseen in Africa for 13 years",
+      "event_url": "https://es.mongabay.com/short-article/2026/11/foto-inesperada-revela-regreso-ave-africa/",
+      "event_source": "Mongabay LATAM",
+      "decision": "MINT",
+      "amount_crbn": 6450,
+      "final_score": 2.15,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Valid positive rediscovery (score +2.15), but rule maps any final_score <=4 to MINT, which conflicts with the positive sign. Flag for rule review. | A single field sighting by named researchers in one protected park is a modest, verified positive for biodiversity monitoring and public awareness. It shows a specie",
+      "tx_hash": "2FgdcZjJrvhwtQnAM5mQVMUG297N9tnMoeijsZdgHsiqovNemd3fiADHYD2uq9epwWGBF8gHXcACXjrgvfkA1WoQ",
+      "created_at": "2026-11-11T01:05:22.321749+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Côte d'Ivoire",
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Rediscovery of the Ghana cuckooshrike (Lobotos lobatus), unseen in Africa for 13 years, documented by field researchers in Taï National Park\", \"affected_sdgs\": [15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Documentation by named IBCP field fellows and public dissemination through Mongabay raise awareness of avian biodiversity in West Africa\", \"affected_sdgs\": [4, 17], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 28900
+    },
+    {
+      "id": 9799,
+      "event_title": "Duchy tenants may have to buy farms or leave as Prince William plans sell-off",
+      "event_url": "https://www.bbc.co.uk/news/articles/cwm242plggldo?at_medium=RSS&at_campaign=rss",
+      "event_source": "BBC Science & Environment",
+      "decision": "MINT",
+      "amount_crbn": 47800,
+      "final_score": -3.77,
+      "confidence": 6,
+      "justification": "Sell-off enables displacement and ecological harm, undermining livelihoods and land stewardship. | The planned sell-off of farms by the Duchy of Cornwall prioritizes financial gain over the rights and livelihoods of tenant farmers, with significant risks to community stability, environmental stewardship, and equitable land access. While there is minor potential for positive outcomes if land is acquired by sustainable stewards, the negative impacts—particularly displacement and ecological harm—ou",
+      "tx_hash": "5hBzHXVejJeBoXyS4ydXNVi8xJBiPNsB8YhnUtpF4sM8ogCSih7A2XiLgPXd3aTkmdYsh9Xta7ZAGAjBGGMuNuBg",
+      "created_at": "2026-11-11T01:05:17.363647+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"Potential for new ownership models that could increase local agricultural resilience or diversify land use if sold to community trusts or sustainable farmers.\", \"affected_sdgs\": [2, 8, 11, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Displacement of long-term tenant farmers, risking livelihoods, community stability, and traditional land stewardship practices.\", \"affected_sdgs\": [1, 2, 8, 10, 11], \"violated_rights\": [\"UDHR Article 25\", \"ILO Core Labor Standards\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}, {\"description\": \"Privatization of agricultural land may prioritize profit over environmental stewardship, undermining biodiversity and soil health.\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Lack of transparency or public consultation in the sell-off process, excluding affected communities from decision-making.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9798,
       "event_title": "U.S. House blocks path to impeach Defense Secretary Hegseth",
@@ -226176,7 +226222,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.045,
-        "events": 88
+        "events": 89
       }
     ],
     "top_regions_destructive": [
@@ -226193,7 +226239,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.955,
-        "events": 88
+        "events": 89
       },
       {
         "region": "North America",
@@ -226239,7 +226285,7 @@
       },
       {
         "date": "2026-11-11",
-        "net_minted": 3800000,
+        "net_minted": 3854250,
         "net_burned": 0
       }
     ],
@@ -226257,7 +226303,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 19,
-        "negative": 333,
+        "negative": 335,
         "event_ids_positive": [
           9784,
           9743,
@@ -226280,6 +226326,8 @@
           9459
         ],
         "event_ids_negative": [
+          9800,
+          9799,
           9798,
           9797,
           9796,
@@ -226617,7 +226665,7 @@
       },
       "UDHR": {
         "positive": 15,
-        "negative": 265,
+        "negative": 266,
         "event_ids_positive": [
           9784,
           9734,
@@ -226636,6 +226684,7 @@
           9459
         ],
         "event_ids_negative": [
+          9799,
           9798,
           9795,
           9794,
@@ -226905,13 +226954,14 @@
       },
       "ILO": {
         "positive": 3,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [
           9636,
           9628,
           9553
         ],
         "event_ids_negative": [
+          9799,
           9791,
           9776,
           9772,
@@ -227110,7 +227160,7 @@
       },
       "Animal": {
         "positive": 7,
-        "negative": 35,
+        "negative": 36,
         "event_ids_positive": [
           9784,
           9743,
@@ -227121,6 +227171,7 @@
           9463
         ],
         "event_ids_negative": [
+          9800,
           9783,
           9781,
           9767,
@@ -227160,7 +227211,7 @@
       },
       "PB": {
         "positive": 8,
-        "negative": 118,
+        "negative": 120,
         "event_ids_positive": [
           9784,
           9743,
@@ -227172,6 +227223,8 @@
           9463
         ],
         "event_ids_negative": [
+          9800,
+          9799,
           9797,
           9796,
           9789,
@@ -227297,11 +227350,11 @@
       "niche_pct": 55.4,
       "mainstream_pct": 44.6,
       "total_sources_used": 92,
-      "articles_processed": 353
+      "articles_processed": 355
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 353,
+      "total_events": 355,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -227445,10 +227498,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 44,
+        "count": 45,
         "burn_count": 2,
-        "mint_count": 42,
+        "mint_count": 43,
         "event_ids": [
+          9799,
           9789,
           9784,
           9773,
@@ -227597,6 +227651,27 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 13,
+        "burn_count": 1,
+        "mint_count": 12,
+        "event_ids": [
+          9799,
+          9702,
+          9699,
+          9698,
+          9686,
+          9682,
+          9676,
+          9594,
+          9567,
+          9546,
+          9528,
+          9467,
+          9456
+        ]
+      },
+      {
         "name": "Defense",
         "count": 13,
         "burn_count": 0,
@@ -227615,26 +227690,6 @@
           9469,
           9460,
           9453
-        ]
-      },
-      {
-        "name": "Agriculture",
-        "count": 12,
-        "burn_count": 1,
-        "mint_count": 11,
-        "event_ids": [
-          9702,
-          9699,
-          9698,
-          9686,
-          9682,
-          9676,
-          9594,
-          9567,
-          9546,
-          9528,
-          9467,
-          9456
         ]
       },
       {
@@ -227702,14 +227757,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 334,
+      "total_mint": 336,
       "direct_action": {
-        "count": 300,
-        "pct": 89.8
+        "count": 301,
+        "pct": 89.6
       },
       "editorial_alarm": {
-        "count": 33,
-        "pct": 9.9
+        "count": 34,
+        "pct": 10.1
       },
       "untyped": {
         "count": 1,
@@ -227717,13 +227772,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7514,
+      "total_mint": 7516,
       "direct_action": {
-        "count": 6890,
+        "count": 6891,
         "pct": 91.7
       },
       "editorial_alarm": {
-        "count": 527,
+        "count": 528,
         "pct": 7.0
       },
       "untyped": {
@@ -227732,9 +227787,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 115,
-      "institutional": 238,
-      "citizen_ratio": 0.326,
+      "citizen": 116,
+      "institutional": 239,
+      "citizen_ratio": 0.327,
       "daily": [
         {
           "date": "2026-11-05",
@@ -227768,11 +227823,12 @@
         },
         {
           "date": "2026-11-11",
-          "citizen": 0,
-          "institutional": 5
+          "citizen": 1,
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
+        9800,
         9788,
         9787,
         9785,
@@ -227890,6 +227946,7 @@
         9447
       ],
       "event_ids_institutional": [
+        9799,
         9798,
         9797,
         9796,
