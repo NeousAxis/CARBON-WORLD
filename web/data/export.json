@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-11T20:05:53.386829+00:00",
-  "total_events": 9844,
+  "generated_at": "2026-11-11T21:05:47.390461+00:00",
+  "total_events": 9845,
   "total_burned": 8196950595,
-  "total_minted": 12071376649,
+  "total_minted": 12071676649,
   "pending_reviews": 14,
   "events": [
+    {
+      "id": 9845,
+      "event_title": "Justice Department Official Who Led Attacks on Gender-Affirming Care Resigns",
+      "event_url": "https://truthout.org/articles/justice-department-official-who-led-attacks-on-gender-affirming-care-resigns/",
+      "event_source": "Truthout Environment",
+      "decision": "MINT",
+      "amount_crbn": 300000,
+      "final_score": -1.81,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Resignation alone does not remedy prior harm or reverse discriminatory policies targeting trans minors. | The resignation removes a key actor driving harmful policies, offering temporary relief for gender-affirming care access. However, the prior actions caused significant, ongoing harm to trans minors, and the resignation alone does not address systemic discrimination or resto",
+      "tx_hash": "62f7VtnbZkG4KwtzdAF6JA3wtR32XsqkDH9C9m5Pm3Aiit6mTJdEcqganrYhx1VGwHfsS8gYuf8sT2oH58gStQPa",
+      "created_at": "2026-11-11T21:05:39.566745+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Resignation of a key official leading attacks on gender-affirming care for trans minors, potentially reducing institutional pressure on healthcare providers.\", \"affected_sdgs\": [3, 5, 10, 16], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Prior actions by the official enabled systemic discrimination and denial of healthcare access to trans minors, violating rights to health and non-discrimination.\", \"affected_sdgs\": [3, 5, 10], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\", \"UDHR Article 2\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"Resignation does not reverse existing policies or investigations, leaving harm in place without immediate remedy.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 8\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 9844,
       "event_title": "COP31: Q&A: Ana Toni on the fossil-fuel transition roadmap",
@@ -227159,13 +227182,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 57,
-        "total_amount": 31645430
+        "count": 58,
+        "total_amount": 31945430
       },
       {
         "country": "France",
-        "count": 32,
-        "total_amount": 6296140
+        "count": 30,
+        "total_amount": 6156820
       },
       {
         "country": "Brazil",
@@ -227228,13 +227251,13 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.056,
-        "events": 89
+        "burn_ratio": 0.057,
+        "events": 87
       },
       {
         "region": "North America",
-        "burn_ratio": 0.017,
-        "events": 60
+        "burn_ratio": 0.016,
+        "events": 61
       }
     ],
     "top_regions_destructive": [
@@ -227246,17 +227269,17 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 20
+        "events": 19
       },
       {
         "region": "North America",
-        "mint_ratio": 0.983,
-        "events": 60
+        "mint_ratio": 0.984,
+        "events": 61
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.944,
-        "events": 89
+        "mint_ratio": 0.943,
+        "events": 87
       },
       {
         "region": "Oceania",
@@ -227297,7 +227320,7 @@
       },
       {
         "date": "2026-11-11",
-        "net_minted": 36092080,
+        "net_minted": 36392080,
         "net_burned": 1350000
       }
     ],
@@ -227315,7 +227338,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 17,
-        "negative": 332,
+        "negative": 330,
         "event_ids_positive": [
           9835,
           9829,
@@ -227336,6 +227359,7 @@
           9498
         ],
         "event_ids_negative": [
+          9845,
           9844,
           9843,
           9842,
@@ -227664,15 +227688,12 @@
           9502,
           9501,
           9500,
-          9499,
-          9497,
-          9496,
-          9495
+          9499
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 260,
+        "negative": 259,
         "event_ids_positive": [
           9829,
           9784,
@@ -227689,6 +227710,7 @@
           9528
         ],
         "event_ids_negative": [
+          9845,
           9843,
           9842,
           9841,
@@ -227946,9 +227968,7 @@
           9502,
           9501,
           9500,
-          9499,
-          9496,
-          9495
+          9499
         ]
       },
       "ILO": {
@@ -228017,6 +228037,7 @@
           9628
         ],
         "event_ids_negative": [
+          9845,
           9840,
           9834,
           9833,
@@ -228072,13 +228093,12 @@
           9512,
           9510,
           9509,
-          9508,
-          9495
+          9508
         ]
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 61,
+        "negative": 60,
         "event_ids_positive": [
           9829,
           9784,
@@ -228144,8 +228164,7 @@
           9509,
           9504,
           9502,
-          9500,
-          9495
+          9500
         ]
       },
       "Animal": {
@@ -228339,14 +228358,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 54.4,
-      "mainstream_pct": 45.6,
+      "niche_pct": 55.6,
+      "mainstream_pct": 44.4,
       "total_sources_used": 90,
-      "articles_processed": 350
+      "articles_processed": 348
     },
     "cache_hit_rate_7d": {
       "hits": 1,
-      "total_events": 350,
+      "total_events": 348,
       "pct": 0.3
     },
     "active_partners_7d": [],
@@ -228389,9 +228408,9 @@
       },
       {
         "name": "UN",
-        "count": 17,
+        "count": 16,
         "burn_count": 2,
-        "mint_count": 15,
+        "mint_count": 14,
         "event_ids": [
           9829,
           9827,
@@ -228408,8 +228427,7 @@
           9576,
           9574,
           9550,
-          9501,
-          9495
+          9501
         ]
       },
       {
@@ -228451,10 +228469,11 @@
       },
       {
         "name": "WHO",
-        "count": 3,
+        "count": 4,
         "burn_count": 1,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          9845,
           9792,
           9762,
           9611
@@ -228493,9 +228512,9 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 43,
+        "count": 42,
         "burn_count": 2,
-        "mint_count": 41,
+        "mint_count": 40,
         "event_ids": [
           9843,
           9824,
@@ -228538,8 +228557,7 @@
           9511,
           9507,
           9503,
-          9501,
-          9496
+          9501
         ]
       },
       {
@@ -228751,14 +228769,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 333,
+      "total_mint": 331,
       "direct_action": {
-        "count": 296,
-        "pct": 88.9
+        "count": 294,
+        "pct": 88.8
       },
       "editorial_alarm": {
         "count": 36,
-        "pct": 10.8
+        "pct": 10.9
       },
       "untyped": {
         "count": 1,
@@ -228766,9 +228784,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7558,
+      "total_mint": 7559,
       "direct_action": {
-        "count": 6924,
+        "count": 6925,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -228782,8 +228800,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 107,
-      "institutional": 243,
-      "citizen_ratio": 0.306,
+      "institutional": 241,
+      "citizen_ratio": 0.307,
       "daily": [
         {
           "date": "2026-11-05",
@@ -228818,7 +228836,7 @@
         {
           "date": "2026-11-11",
           "citizen": 13,
-          "institutional": 38
+          "institutional": 39
         }
       ],
       "event_ids_citizen": [
@@ -228931,6 +228949,7 @@
         9498
       ],
       "event_ids_institutional": [
+        9845,
         9842,
         9841,
         9839,
@@ -229170,10 +229189,7 @@
         9505,
         9503,
         9501,
-        9500,
-        9497,
-        9496,
-        9495
+        9500
       ]
     }
   }
