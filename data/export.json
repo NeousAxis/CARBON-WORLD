@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-11T15:05:32.192581+00:00",
-  "total_events": 9832,
+  "generated_at": "2026-11-11T16:05:42.233954+00:00",
+  "total_events": 9833,
   "total_burned": 8196800595,
-  "total_minted": 12062216149,
+  "total_minted": 12063021349,
   "pending_reviews": 14,
   "events": [
+    {
+      "id": 9833,
+      "event_title": "Russian-Ukrainian talks: prisoner exchange promised, but no progress on ceasefire",
+      "event_url": "https://www.letemps.ch/monde/pourparlers-russo-ukrainiens-un-echange-de-prisonniers-promis-mais-aucun-progres-sur-le-cessez-le-feu",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 805200,
+      "final_score": -2.72,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Humanitarian gains overshadowed by lack of ceasefire progress and U.S. policy enabling conflict continuation. | The prisoner exchange is a tangible humanitarian gain, directly alleviating suffering and upholding rights under UDHR and CRC. However, the failure to advance a ceasefire or address structural enablers of the conflict (e.g., sanctions relief) outweighs this benefit. T",
+      "tx_hash": "e1SfPy4P8sRxipxdzqrAihatEJJE8cZuKJtKKgDoKQNWCv6pWr69tQu1jPm55XsTcU4fNjS7MRMkTJkBJPAfBU7",
+      "created_at": "2026-11-11T16:05:35.793781+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Promise of a prisoner exchange (1000-1500 individuals) between Russia and Ukraine, directly addressing humanitarian concerns and reducing immediate suffering.\", \"affected_sdgs\": [16, 3, 10], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"European inclusion in negotiations (France, Germany, UK, Switzerland) prevents exclusion of Ukraine's allies, maintaining diplomatic balance and multilateral engagement.\", \"affected_sdgs\": [16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"No progress on ceasefire, prolonging armed conflict, civilian casualties, displacement, and destruction of infrastructure.\", \"affected_sdgs\": [16, 3, 1, 2, 4, 6, 7, 11, 13, 15], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"CRC Article 6\", \"CRC Article 27\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}, {\"description\": \"U.S. suspension of Russian hydrocarbon sanctions weakens Ukraine's and EU's negotiating position, potentially enabling continued Russian aggression and funding of the war.\", \"affected_sdgs\": [16, 13, 7, 8], \"violated_rights\": [\"UDHR Article 28\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of binding outcomes or concrete steps toward peace, reinforcing diplomatic stagnation and reliance on symbolic gestures.\", \"affected_sdgs\": [16, 17], \"magnitude\": 6, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 9832,
       "event_title": "Electric car: Faced with the 'jungle of rates', when will France display the price of charging?",
@@ -226888,8 +226911,8 @@
       },
       {
         "country": "France",
-        "count": 36,
-        "total_amount": 7304240
+        "count": 35,
+        "total_amount": 7269240
       },
       {
         "country": "Brazil",
@@ -226953,7 +226976,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.043,
-        "events": 94
+        "events": 93
       },
       {
         "region": "North America",
@@ -226980,7 +227003,7 @@
       {
         "region": "Europe",
         "mint_ratio": 0.957,
-        "events": 94
+        "events": 93
       },
       {
         "region": "Oceania",
@@ -227021,20 +227044,20 @@
       },
       {
         "date": "2026-11-11",
-        "net_minted": 26931580,
+        "net_minted": 27736780,
         "net_burned": 1200000
       }
     ],
     "event_of_the_day": {
-      "id": 9768,
-      "event_title": "UNICEF says Israel blocks Gaza basin repairs, warns of flood risk",
-      "decision": "MINT",
-      "amount_crbn": 74800,
-      "final_score": -6.12,
-      "confidence": 8,
-      "country": "Israel",
-      "region": "MENA",
-      "created_at": "2026-11-10T15:06:03.645580+00:00"
+      "id": 9784,
+      "event_title": "Kenya launches $160 million conservation initiative to protect wildlife habitats and support local communities",
+      "decision": "BURN",
+      "amount_crbn": 146000,
+      "final_score": 6.08,
+      "confidence": 7,
+      "country": "Kenya",
+      "region": "Africa",
+      "created_at": "2026-11-10T21:06:11.125956+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
@@ -227059,6 +227082,7 @@
           9498
         ],
         "event_ids_negative": [
+          9833,
           9832,
           9831,
           9830,
@@ -227401,8 +227425,7 @@
           9476,
           9475,
           9474,
-          9473,
-          9472
+          9473
         ]
       },
       "UDHR": {
@@ -227424,6 +227447,7 @@
           9528
         ],
         "event_ids_negative": [
+          9833,
           9831,
           9830,
           9828,
@@ -227692,8 +227716,7 @@
           9477,
           9475,
           9474,
-          9473,
-          9472
+          9473
         ]
       },
       "ILO": {
@@ -227755,7 +227778,7 @@
       },
       "CRC": {
         "positive": 4,
-        "negative": 58,
+        "negative": 59,
         "event_ids_positive": [
           9829,
           9674,
@@ -227763,6 +227786,7 @@
           9628
         ],
         "event_ids_negative": [
+          9833,
           9820,
           9816,
           9810,
@@ -228521,9 +228545,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7547,
+      "total_mint": 7548,
       "direct_action": {
-        "count": 6916,
+        "count": 6917,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -228573,7 +228597,7 @@
         {
           "date": "2026-11-11",
           "citizen": 9,
-          "institutional": 30
+          "institutional": 31
         }
       ],
       "event_ids_citizen": [
@@ -228693,6 +228717,7 @@
         9473
       ],
       "event_ids_institutional": [
+        9833,
         9832,
         9831,
         9830,
@@ -228938,8 +228963,7 @@
         9478,
         9477,
         9476,
-        9475,
-        9472
+        9475
       ]
     }
   }
