@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-11T14:06:37.786836+00:00",
-  "total_events": 9830,
+  "generated_at": "2026-11-11T15:05:32.192581+00:00",
+  "total_events": 9832,
   "total_burned": 8196800595,
-  "total_minted": 12061450149,
+  "total_minted": 12062216149,
   "pending_reviews": 14,
   "events": [
+    {
+      "id": 9832,
+      "event_title": "Electric car: Faced with the 'jungle of rates', when will France display the price of charging?",
+      "event_url": "https://www.20minutes.fr/societe/4260904-20261111-voiture-electrique-face-jungle-tarifs-quand-france-affichera-prix-recharges?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "decision": "MINT",
+      "amount_crbn": 90000,
+      "final_score": 1.82,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] [Analyst A judged it not actionable; Analyst B's verdict applied] Weak positive score (1.82) from a vague national EV-transparency ambition; literal threshold (<=4 gives MINT) applied, which conflicts with the positive lean. | The government's plan is a concrete institutional step, but the price-display measure is stated as an ambition without a confirmed timeline or binding ob",
+      "tx_hash": "35geudBqedFsaFY1bccppQoH9dYe9rxPka3zTEtj5Vhsrgw4W8FAxx8THNVwXGiumGEUgjMX2Vk7jr8y7kKVtjZk",
+      "created_at": "2026-11-11T15:05:26.019410+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"A government electrification plan commits to greater transparency on EV charging prices, which can help drivers compare tariffs and accelerate EV adoption.\", \"affected_sdgs\": [7, 12, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
+    {
+      "id": 9831,
+      "event_title": "Tundu Lissu: After escaping the death penalty, what does his guilty verdict mean for Tanzania's democracy?",
+      "event_url": "https://www.dw.com/en/tundu-lissu-after-escaping-the-death-penalty-what-does-his-guilty-verdict-mean-for-tanzania-s-democracy/a-79908512?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.96,
+      "confidence": 8,
+      "justification": "Conviction of opposition leader for dissent undermines democracy and human rights, outweighing avoidance of death penalty. | The conviction and imprisonment of an opposition leader for incitement to unrest represents a significant erosion of democratic norms and human rights, particularly freedom of expression and political participation. While avoiding the death penalty is a positive outcome, the broader impact of silencing dissent through legal means undermines the foundations of a just and in",
+      "tx_hash": "4Uv9ZtR4iBxuEZqFEr3vKbT3fHFrjmoCyzYL2UsvczETATSrGnRxqE6MJ2icjBHpMeSvRTe1xTpoXQHNNCmrCdGG",
+      "created_at": "2026-11-11T15:05:23.747258+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Tanzania",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Avoidance of the death penalty for opposition leader Tundu Lissu, reducing risk of irreversible state-sanctioned violence.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Conviction of opposition leader for incitement to unrest, criminalizing dissent and undermining political freedoms and democratic participation.\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Four-year prison sentence for political speech, creating a chilling effect on free expression and opposition activity in Tanzania.\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 9\", \"UDHR Article 19\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 9830,
       "event_title": "New Democratic regulators plan to take on Georgia Power's data center gas boom",
@@ -226842,8 +226888,8 @@
       },
       {
         "country": "France",
-        "count": 35,
-        "total_amount": 7214240
+        "count": 36,
+        "total_amount": 7304240
       },
       {
         "country": "Brazil",
@@ -226891,8 +226937,8 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.267,
-        "events": 15
+        "burn_ratio": 0.25,
+        "events": 16
       },
       {
         "region": "Asia",
@@ -226975,7 +227021,7 @@
       },
       {
         "date": "2026-11-11",
-        "net_minted": 26165580,
+        "net_minted": 26931580,
         "net_burned": 1200000
       }
     ],
@@ -227013,6 +227059,8 @@
           9498
         ],
         "event_ids_negative": [
+          9832,
+          9831,
           9830,
           9828,
           9827,
@@ -227354,14 +227402,12 @@
           9475,
           9474,
           9473,
-          9472,
-          9471,
-          9470
+          9472
         ]
       },
       "UDHR": {
         "positive": 13,
-        "negative": 271,
+        "negative": 270,
         "event_ids_positive": [
           9829,
           9784,
@@ -227378,6 +227424,7 @@
           9528
         ],
         "event_ids_negative": [
+          9831,
           9830,
           9828,
           9827,
@@ -227646,14 +227693,12 @@
           9475,
           9474,
           9473,
-          9472,
-          9471,
-          9470
+          9472
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 47,
+        "negative": 46,
         "event_ids_positive": [
           9636,
           9628,
@@ -227705,8 +227750,7 @@
           9510,
           9499,
           9492,
-          9483,
-          9470
+          9483
         ]
       },
       "CRC": {
@@ -228477,9 +228521,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7545,
+      "total_mint": 7547,
       "direct_action": {
-        "count": 6914,
+        "count": 6916,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -228492,9 +228536,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 116,
-      "institutional": 245,
-      "citizen_ratio": 0.321,
+      "citizen": 114,
+      "institutional": 247,
+      "citizen_ratio": 0.316,
       "daily": [
         {
           "date": "2026-11-05",
@@ -228529,7 +228573,7 @@
         {
           "date": "2026-11-11",
           "citizen": 9,
-          "institutional": 28
+          "institutional": 30
         }
       ],
       "event_ids_citizen": [
@@ -228646,11 +228690,11 @@
         9483,
         9481,
         9474,
-        9473,
-        9471,
-        9470
+        9473
       ],
       "event_ids_institutional": [
+        9832,
+        9831,
         9830,
         9829,
         9827,
