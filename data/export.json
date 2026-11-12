@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-12T15:10:19.924213+00:00",
-  "total_events": 9890,
+  "generated_at": "2026-11-12T18:07:08.067249+00:00",
+  "total_events": 9891,
   "total_burned": 8197220595,
-  "total_minted": 12111308569,
+  "total_minted": 12111723569,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9891,
+      "event_title": "Israel bars Jean-Luc Mélenchon from entering its territory, calling LFI 'extremely hostile' toward it",
+      "event_url": "https://www.lemonde.fr/international/article/2026/11/12/israel-interdit-a-jean-luc-melenchon-l-entree-sur-son-territoire-jugeant-lfi-extremement-hostile-a-son-egard_6809141_3210.html",
+      "event_source": "Le Monde International",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": -1.93,
+      "confidence": 7,
+      "justification": "The ban infringes core human rights and sets a negative precedent. | The action primarily harms fundamental human rights by limiting movement and political speech, outweighing any claimed security benefit. While intended to curb hate, the measure sets a concerning precedent for political discrimination.",
+      "tx_hash": "2uW2wAFubhtkdLGFJtmZiE8gZFPZHnG543YfVksBqmAzMR9KWbCCDYEGn2Bj5tBw8tWYzSWtxaw8W97zQqjzs9bF",
+      "created_at": "2026-11-12T18:07:00.208969+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israel cites protection against hate incitement as reason for the ban\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Denial of entry restricts freedom of movement and political expression\", \"affected_sdgs\": [16, 10], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 19\", \"UDHR Article 21\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 9890,
       "event_title": "Iran: Exiled journalists still repressed by regime",
@@ -228217,8 +228240,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 56,
-        "total_amount": 31641030
+        "count": 55,
+        "total_amount": 31141030
       },
       {
         "country": "France",
@@ -228227,8 +228250,8 @@
       },
       {
         "country": "Brazil",
-        "count": 18,
-        "total_amount": 5914975
+        "count": 17,
+        "total_amount": 5779975
       },
       {
         "country": "Switzerland",
@@ -228276,18 +228299,18 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.103,
-        "events": 29
+        "burn_ratio": 0.107,
+        "events": 28
       },
       {
         "region": "Europe",
         "burn_ratio": 0.056,
-        "events": 90
+        "events": 89
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.028,
-        "events": 36
+        "burn_ratio": 0.029,
+        "events": 35
       },
       {
         "region": "MENA",
@@ -228304,7 +228327,7 @@
       {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 58
+        "events": 57
       },
       {
         "region": "Oceania",
@@ -228313,13 +228336,13 @@
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.972,
-        "events": 36
+        "mint_ratio": 0.971,
+        "events": 35
       },
       {
         "region": "Europe",
         "mint_ratio": 0.944,
-        "events": 90
+        "events": 89
       }
     ],
     "supply_trend_7d": [
@@ -228355,7 +228378,7 @@
       },
       {
         "date": "2026-11-12",
-        "net_minted": 38940920,
+        "net_minted": 39355920,
         "net_burned": 220000
       }
     ],
@@ -228373,7 +228396,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 16,
-        "negative": 336,
+        "negative": 327,
         "event_ids_positive": [
           9878,
           9846,
@@ -228393,6 +228416,7 @@
           9553
         ],
         "event_ids_negative": [
+          9891,
           9890,
           9889,
           9888,
@@ -228718,22 +228742,12 @@
           9552,
           9551,
           9550,
-          9549,
-          9548,
-          9547,
-          9546,
-          9545,
-          9544,
-          9543,
-          9542,
-          9541,
-          9540,
-          9539
+          9549
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 262,
+        "negative": 257,
         "event_ids_positive": [
           9878,
           9846,
@@ -228751,6 +228765,7 @@
           9553
         ],
         "event_ids_negative": [
+          9891,
           9890,
           9888,
           9887,
@@ -229006,18 +229021,12 @@
           9552,
           9551,
           9550,
-          9549,
-          9547,
-          9546,
-          9543,
-          9542,
-          9540,
-          9539
+          9549
         ]
       },
       "ILO": {
         "positive": 3,
-        "negative": 43,
+        "negative": 40,
         "event_ids_positive": [
           9636,
           9628,
@@ -229063,15 +229072,12 @@
           9595,
           9592,
           9587,
-          9586,
-          9547,
-          9543,
-          9539
+          9586
         ]
       },
       "CRC": {
         "positive": 6,
-        "negative": 54,
+        "negative": 53,
         "event_ids_positive": [
           9878,
           9846,
@@ -229133,13 +229139,12 @@
           9568,
           9562,
           9558,
-          9557,
-          9542
+          9557
         ]
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 58,
+        "negative": 56,
         "event_ids_positive": [
           9829,
           9784,
@@ -229201,14 +229206,12 @@
           9576,
           9567,
           9562,
-          9550,
-          9547,
-          9546
+          9550
         ]
       },
       "Animal": {
         "positive": 4,
-        "negative": 36,
+        "negative": 32,
         "event_ids_positive": [
           9835,
           9784,
@@ -229247,16 +229250,12 @@
           9564,
           9563,
           9554,
-          9550,
-          9548,
-          9545,
-          9544,
-          9541
+          9550
         ]
       },
       "PB": {
         "positive": 6,
-        "negative": 124,
+        "negative": 120,
         "event_ids_positive": [
           9835,
           9784,
@@ -229385,23 +229384,19 @@
           9559,
           9554,
           9552,
-          9550,
-          9548,
-          9544,
-          9541,
-          9539
+          9550
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 59.1,
-      "mainstream_pct": 40.9,
-      "total_sources_used": 93,
-      "articles_processed": 352
+      "niche_pct": 59.8,
+      "mainstream_pct": 40.2,
+      "total_sources_used": 92,
+      "articles_processed": 343
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 352,
+      "total_events": 343,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229476,9 +229471,9 @@
       },
       {
         "name": "EU",
-        "count": 13,
+        "count": 11,
         "burn_count": 0,
-        "mint_count": 13,
+        "mint_count": 11,
         "event_ids": [
           9806,
           9771,
@@ -229490,9 +229485,7 @@
           9701,
           9692,
           9686,
-          9639,
-          9547,
-          9539
+          9639
         ]
       },
       {
@@ -229556,9 +229549,9 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 42,
+        "count": 40,
         "burn_count": 1,
-        "mint_count": 41,
+        "mint_count": 39,
         "event_ids": [
           9887,
           9885,
@@ -229599,9 +229592,7 @@
           9585,
           9573,
           9569,
-          9560,
-          9542,
-          9539
+          9560
         ]
       },
       {
@@ -229682,9 +229673,9 @@
       },
       {
         "name": "Tech",
-        "count": 18,
+        "count": 17,
         "burn_count": 1,
-        "mint_count": 17,
+        "mint_count": 16,
         "event_ids": [
           9878,
           9865,
@@ -229702,8 +229693,7 @@
           9571,
           9568,
           9566,
-          9549,
-          9545
+          9549
         ]
       },
       {
@@ -229729,9 +229719,9 @@
       },
       {
         "name": "Agriculture",
-        "count": 11,
+        "count": 10,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           9888,
           9799,
@@ -229742,15 +229732,14 @@
           9682,
           9676,
           9594,
-          9567,
-          9546
+          9567
         ]
       },
       {
         "name": "Transport",
-        "count": 10,
+        "count": 9,
         "burn_count": 1,
-        "mint_count": 9,
+        "mint_count": 8,
         "event_ids": [
           9873,
           9806,
@@ -229760,8 +229749,7 @@
           9687,
           9648,
           9633,
-          9630,
-          9539
+          9630
         ]
       },
       {
@@ -229811,14 +229799,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 336,
+      "total_mint": 327,
       "direct_action": {
-        "count": 299,
-        "pct": 89.0
+        "count": 292,
+        "pct": 89.3
       },
       "editorial_alarm": {
-        "count": 37,
-        "pct": 11.0
+        "count": 35,
+        "pct": 10.7
       },
       "untyped": {
         "count": 0,
@@ -229826,9 +229814,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7602,
+      "total_mint": 7603,
       "direct_action": {
-        "count": 6965,
+        "count": 6966,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229841,9 +229829,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 102,
-      "institutional": 250,
-      "citizen_ratio": 0.29,
+      "citizen": 100,
+      "institutional": 243,
+      "citizen_ratio": 0.292,
       "daily": [
         {
           "date": "2026-11-06",
@@ -229877,11 +229865,12 @@
         },
         {
           "date": "2026-11-12",
-          "citizen": 6,
+          "citizen": 7,
           "institutional": 36
         }
       ],
       "event_ids_citizen": [
+        9891,
         9888,
         9883,
         9875,
@@ -229980,10 +229969,7 @@
         9563,
         9559,
         9551,
-        9550,
-        9547,
-        9544,
-        9542
+        9550
       ],
       "event_ids_institutional": [
         9890,
@@ -230228,14 +230214,7 @@
         9554,
         9553,
         9552,
-        9549,
-        9548,
-        9546,
-        9545,
-        9543,
-        9541,
-        9540,
-        9539
+        9549
       ]
     }
   }
