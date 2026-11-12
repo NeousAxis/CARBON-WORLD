@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-12T07:07:27.442996+00:00",
-  "total_events": 9872,
+  "generated_at": "2026-11-12T08:06:11.603385+00:00",
+  "total_events": 9874,
   "total_burned": 8197000595,
-  "total_minted": 12092184479,
+  "total_minted": 12092226019,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9874,
+      "event_title": "Israeli strike on southern Gaza hospital kills six, Gaza civil defence says",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/israeli-strike-southern-gaza-hospital-kills-six-gaza-civil-defence-says",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 6040,
+      "final_score": -4.94,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Airstrike on Khan Younis hospital killed six, incl. a surgeon; violates hospital protection and right to life. Militant-target claim unverified. | The strike is a concrete military act that killed medical personnel and civilians inside a hospital, a protected facility under international humanitarian law. The stated militant target is a security claim that is unverified and does not offset the documented civilian and healthcare ha",
+      "tx_hash": "WiqoTyiWScugcwqS14FxnkHS9fvQzzzPSDAzbDTqvcLjs7iN9vqwAv649ygNgrQfh8w2tQDVwy88TZ7x2XZYVN4",
+      "created_at": "2026-11-12T08:06:02.929904+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": "[{\"description\": \"Israeli military states the strike targeted a senior Hamas militant and armed-wing members, asserting a security objective (claim not independently verified)\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Airstrike on a hospital building killed at least six people, including a surgeon, and wounded about 20, per Gaza civil defence\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"International humanitarian law protection of medical facilities\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Strike on a functioning hospital further degrades healthcare access in a conflict zone, with downstream risk to patients and medical staff\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 25\", \"ICESCR Article 12\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
+    {
+      "id": 9873,
+      "event_title": "Kāpiti Coast Airport confirms it will close at end of November",
+      "event_url": "https://www.rnz.co.nz/news/business/2552965/kapiti-coast-airport-confirms-it-will-close-at-end-of-november",
+      "event_source": "RNZ News NZ",
+      "decision": "MINT",
+      "amount_crbn": 35500,
+      "final_score": -0.85,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Closure risks disrupting local services and livelihoods with uncertain environmental benefits. | The closure of Kāpiti Coast Airport presents a mixed ethical outcome. While it reduces local aviation emissions and noise pollution, it also disrupts critical services and community access, with uncertain long-term land-use implications. The net impact hinges on whether the closure ",
+      "tx_hash": "5ZyXVkfymkiU3GpKGs5Wc6uE3hs2ggMNdxMyGLNPoP21C3UvZa1wsJHmuRt6tHonP8xk4kAPMSX79Y1CNM2NSk8H",
+      "created_at": "2026-11-12T08:06:00.149806+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "New Zealand",
+      "region": "Oceania",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Closure of a regional airport reduces local noise pollution and carbon emissions from aviation, aligning with climate action and sustainable cities.\", \"affected_sdgs\": [11, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Potential for repurposing airport land for community or ecological restoration projects, supporting biodiversity and local sustainability.\", \"affected_sdgs\": [11, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Disruption to local aviation services, including potential loss of emergency medical or firefighting access, impacting health and safety.\", \"affected_sdgs\": [3, 9, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Termination of the Aero Club's lease may undermine community access to aviation education and recreational opportunities, affecting local livelihoods and cultural activities.\", \"affected_sdgs\": [4, 8, 10], \"violated_rights\": [\"UDHR Article 27\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}, {\"description\": \"Lack of clarity on future land use may lead to commercial development that prioritizes profit over community or environmental benefits, risking further ecological harm.\", \"affected_sdgs\": [11, 15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 9872,
       "event_title": "The Abiemnon Massacre: Inaction and Impunity in South Sudan",
@@ -227876,12 +227922,17 @@
         "events": 36
       },
       {
-        "region": "Oceania",
+        "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 12
+        "events": 21
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 21
+      },
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
@@ -227891,11 +227942,6 @@
         "region": "North America",
         "mint_ratio": 1.0,
         "events": 59
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 20
       },
       {
         "region": "Latin America",
@@ -227941,7 +227987,7 @@
       },
       {
         "date": "2026-11-12",
-        "net_minted": 19816830,
+        "net_minted": 19858370,
         "net_burned": 0
       }
     ],
@@ -227959,7 +228005,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 16,
-        "negative": 339,
+        "negative": 340,
         "event_ids_positive": [
           9846,
           9835,
@@ -227979,6 +228025,8 @@
           9528
         ],
         "event_ids_negative": [
+          9874,
+          9873,
           9872,
           9871,
           9870,
@@ -228316,13 +228364,12 @@
           9522,
           9521,
           9520,
-          9519,
-          9518
+          9519
         ]
       },
       "UDHR": {
         "positive": 14,
-        "negative": 262,
+        "negative": 263,
         "event_ids_positive": [
           9846,
           9829,
@@ -228340,6 +228387,8 @@
           9528
         ],
         "event_ids_negative": [
+          9874,
+          9873,
           9872,
           9870,
           9869,
@@ -228600,8 +228649,7 @@
           9524,
           9522,
           9521,
-          9520,
-          9518
+          9520
         ]
       },
       "ILO": {
@@ -228728,7 +228776,7 @@
       },
       "UNDRIP": {
         "positive": 3,
-        "negative": 57,
+        "negative": 56,
         "event_ids_positive": [
           9829,
           9784,
@@ -228790,8 +228838,7 @@
           9547,
           9546,
           9535,
-          9525,
-          9518
+          9525
         ]
       },
       "Animal": {
@@ -228847,7 +228894,7 @@
       },
       "PB": {
         "positive": 7,
-        "negative": 125,
+        "negative": 126,
         "event_ids_positive": [
           9835,
           9784,
@@ -228858,6 +228905,7 @@
           9528
         ],
         "event_ids_negative": [
+          9873,
           9869,
           9868,
           9863,
@@ -228990,11 +229038,11 @@
       "niche_pct": 55.4,
       "mainstream_pct": 44.6,
       "total_sources_used": 92,
-      "articles_processed": 355
+      "articles_processed": 356
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 355,
+      "total_events": 356,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229300,10 +229348,11 @@
       },
       {
         "name": "Defense",
-        "count": 13,
+        "count": 14,
         "burn_count": 0,
-        "mint_count": 13,
+        "mint_count": 14,
         "event_ids": [
+          9874,
           9825,
           9816,
           9814,
@@ -229340,10 +229389,11 @@
       },
       {
         "name": "Transport",
-        "count": 9,
+        "count": 10,
         "burn_count": 1,
-        "mint_count": 8,
+        "mint_count": 9,
         "event_ids": [
+          9873,
           9806,
           9781,
           9734,
@@ -229402,9 +229452,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 339,
+      "total_mint": 340,
       "direct_action": {
-        "count": 303,
+        "count": 304,
         "pct": 89.4
       },
       "editorial_alarm": {
@@ -229417,9 +229467,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7585,
+      "total_mint": 7587,
       "direct_action": {
-        "count": 6949,
+        "count": 6951,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229432,9 +229482,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 102,
-      "institutional": 253,
-      "citizen_ratio": 0.287,
+      "citizen": 101,
+      "institutional": 255,
+      "citizen_ratio": 0.284,
       "daily": [
         {
           "date": "2026-11-06",
@@ -229469,7 +229519,7 @@
         {
           "date": "2026-11-12",
           "citizen": 3,
-          "institutional": 21
+          "institutional": 23
         }
       ],
       "event_ids_citizen": [
@@ -229573,10 +229623,11 @@
         9544,
         9542,
         9526,
-        9525,
-        9518
+        9525
       ],
       "event_ids_institutional": [
+        9874,
+        9873,
         9872,
         9871,
         9870,
