@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-15T06:10:06.824138+00:00",
-  "total_events": 9903,
+  "generated_at": "2026-11-15T11:05:40.997199+00:00",
+  "total_events": 9904,
   "total_burned": 8200528095,
-  "total_minted": 12119185269,
+  "total_minted": 12119600269,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9904,
+      "event_title": "Number of international students arriving in US plunges — worrying scientists",
+      "event_url": "https://www.nature.com/articles/d41586-026-03668-x",
+      "event_source": "Nature News",
+      "decision": "MINT",
+      "amount_crbn": 415000,
+      "final_score": -2.63,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Sustained drop in Chinese and Indian student arrivals to the US weakens education access and science capacity; net negative trend. | The article documents a measurable behavioural shift: students from China and India are arriving in the US in far smaller numbers, and researchers warn this will slow US science. The main ethical cost is reduced educational access and weakened scientific collaboration, which outweighs the modest bene",
+      "tx_hash": "52jcCzS3fVY2RNP6gKNiCLBtP68nKB8W7J5sUVwHR6yHbi4udghoi1r5LpA8beyp4V89wf4KikFwDszK56cYgjm1",
+      "created_at": "2026-11-15T11:05:34.924242+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Talent that might have migrated to the US may be retained in origin countries such as China and India, potentially supporting domestic education and workforce development.\", \"affected_sdgs\": [4, 8], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Falling international enrolment and arrivals threaten US research capacity, collaboration pipelines, and access to higher education for students who would otherwise study in the US.\", \"affected_sdgs\": [4, 9, 17], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 41500
+    },
     {
       "id": 9903,
       "event_title": "The affordability election delivered billions for public transit",
@@ -228516,13 +228539,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 35,
-        "total_amount": 15687890
+        "count": 36,
+        "total_amount": 16102890
       },
       {
         "country": "France",
-        "count": 19,
-        "total_amount": 4330120
+        "count": 18,
+        "total_amount": 3852120
       },
       {
         "country": "Brazil",
@@ -228580,18 +228603,18 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.047,
-        "events": 64
+        "burn_ratio": 0.048,
+        "events": 63
       },
       {
         "region": "Latin America",
-        "burn_ratio": 0.043,
-        "events": 23
+        "burn_ratio": 0.045,
+        "events": 22
       },
       {
         "region": "North America",
         "burn_ratio": 0.026,
-        "events": 38
+        "events": 39
       }
     ],
     "top_regions_destructive": [
@@ -228608,17 +228631,17 @@
       {
         "region": "North America",
         "mint_ratio": 0.974,
-        "events": 38
+        "events": 39
       },
       {
         "region": "Latin America",
-        "mint_ratio": 0.957,
-        "events": 23
+        "mint_ratio": 0.955,
+        "events": 22
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.953,
-        "events": 64
+        "mint_ratio": 0.952,
+        "events": 63
       }
     ],
     "supply_trend_7d": [
@@ -228654,7 +228677,7 @@
       },
       {
         "date": "2026-11-15",
-        "net_minted": 8400,
+        "net_minted": 423400,
         "net_burned": 3307500
       }
     ],
@@ -228672,7 +228695,7 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 12,
-        "negative": 242,
+        "negative": 240,
         "event_ids_positive": [
           9903,
           9878,
@@ -228688,6 +228711,7 @@
           9658
         ],
         "event_ids_negative": [
+          9904,
           9902,
           9901,
           9900,
@@ -228926,15 +228950,12 @@
           9656,
           9655,
           9654,
-          9653,
-          9652,
-          9651,
-          9650
+          9653
         ]
       },
       "UDHR": {
         "positive": 10,
-        "negative": 186,
+        "negative": 184,
         "event_ids_positive": [
           9903,
           9878,
@@ -228948,6 +228969,7 @@
           9658
         ],
         "event_ids_negative": [
+          9904,
           9902,
           9901,
           9900,
@@ -229130,15 +229152,12 @@
           9656,
           9655,
           9654,
-          9653,
-          9652,
-          9651,
-          9650
+          9653
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 29,
+        "negative": 27,
         "event_ids_positive": [],
         "event_ids_negative": [
           9897,
@@ -229167,9 +229186,7 @@
           9691,
           9688,
           9677,
-          9654,
-          9652,
-          9650
+          9654
         ]
       },
       "CRC": {
@@ -229296,7 +229313,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 89,
+        "negative": 88,
         "event_ids_positive": [
           9903,
           9835,
@@ -229393,20 +229410,19 @@
           9669,
           9666,
           9661,
-          9660,
-          9652
+          9660
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.6,
-      "mainstream_pct": 28.4,
-      "total_sources_used": 88,
-      "articles_processed": 254
+      "niche_pct": 74.2,
+      "mainstream_pct": 25.8,
+      "total_sources_used": 89,
+      "articles_processed": 252
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 254,
+      "total_events": 252,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229584,9 +229600,9 @@
       },
       {
         "name": "Finance",
-        "count": 29,
+        "count": 28,
         "burn_count": 2,
-        "mint_count": 27,
+        "mint_count": 26,
         "event_ids": [
           9903,
           9887,
@@ -229615,8 +229631,7 @@
           9670,
           9669,
           9667,
-          9661,
-          9651
+          9661
         ]
       },
       {
@@ -229756,14 +229771,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 242,
+      "total_mint": 240,
       "direct_action": {
-        "count": 216,
-        "pct": 89.3
+        "count": 214,
+        "pct": 89.2
       },
       "editorial_alarm": {
         "count": 26,
-        "pct": 10.7
+        "pct": 10.8
       },
       "untyped": {
         "count": 0,
@@ -229771,9 +229786,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7614,
+      "total_mint": 7615,
       "direct_action": {
-        "count": 6977,
+        "count": 6978,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229786,9 +229801,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 69,
-      "institutional": 185,
-      "citizen_ratio": 0.272,
+      "citizen": 70,
+      "institutional": 182,
+      "citizen_ratio": 0.278,
       "daily": [
         {
           "date": "2026-11-09",
@@ -229822,11 +229837,12 @@
         },
         {
           "date": "2026-11-15",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        9904,
         9903,
         9894,
         9891,
@@ -230079,10 +230095,7 @@
         9660,
         9658,
         9655,
-        9654,
-        9652,
-        9651,
-        9650
+        9654
       ]
     }
   }
