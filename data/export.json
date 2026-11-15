@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-15T11:05:40.997199+00:00",
-  "total_events": 9904,
+  "generated_at": "2026-11-15T16:08:27.264217+00:00",
+  "total_events": 9905,
   "total_burned": 8200528095,
-  "total_minted": 12119600269,
+  "total_minted": 12119654369,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9905,
+      "event_title": "As Texas embraces carbon storage, a Black community questions the risks",
+      "event_url": "https://grist.org/accountability/as-texas-embraces-carbon-storage-a-black-community-questions-the-risks/",
+      "event_source": "Grist",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -0.05,
+      "confidence": 7,
+      "justification": "The environmental justice harms outweigh the climate benefits, resulting in a negative net impact. | While the carbon storage initiative could help lower emissions, the significant health and equity risks to a vulnerable Black community outweigh the climate benefits, leading to a net negative ethical assessment.",
+      "tx_hash": "4cHqjYFgUiAptCynJZjq1SSVmg3VGUZP8H8AUqeowUV2KmRsky6rJBjmJxqkXd45PpKR2rdrR67w3LNxqBPJv4Y",
+      "created_at": "2026-11-15T16:08:21.554922+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Implementation of carbon capture and storage projects aims to reduce CO2 emissions from Texas industrial sources.\", \"affected_sdgs\": [13, 7, 9, 12], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential health and environmental risks to a Black community near storage sites, raising environmental justice concerns.\", \"affected_sdgs\": [3, 10, 11, 13], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 25\", \"UDHR Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 541000
+    },
     {
       "id": 9904,
       "event_title": "Number of international students arriving in US plunges — worrying scientists",
@@ -228540,7 +228563,7 @@
       {
         "country": "United States",
         "count": 36,
-        "total_amount": 16102890
+        "total_amount": 16149090
       },
       {
         "country": "France",
@@ -228593,18 +228616,18 @@
     "top_regions_sustainable": [
       {
         "region": "Africa",
-        "burn_ratio": 0.333,
-        "events": 9
+        "burn_ratio": 0.25,
+        "events": 8
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.125,
-        "events": 16
+        "burn_ratio": 0.143,
+        "events": 14
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.048,
-        "events": 63
+        "burn_ratio": 0.049,
+        "events": 61
       },
       {
         "region": "Latin America",
@@ -228640,8 +228663,8 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.952,
-        "events": 63
+        "mint_ratio": 0.951,
+        "events": 61
       }
     ],
     "supply_trend_7d": [
@@ -228677,7 +228700,7 @@
       },
       {
         "date": "2026-11-15",
-        "net_minted": 423400,
+        "net_minted": 477500,
         "net_burned": 3307500
       }
     ],
@@ -228694,8 +228717,8 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 12,
-        "negative": 240,
+        "positive": 11,
+        "negative": 236,
         "event_ids_positive": [
           9903,
           9878,
@@ -228707,10 +228730,10 @@
           9734,
           9716,
           9674,
-          9664,
-          9658
+          9664
         ],
         "event_ids_negative": [
+          9905,
           9904,
           9902,
           9901,
@@ -228945,17 +228968,12 @@
           9662,
           9661,
           9660,
-          9659,
-          9657,
-          9656,
-          9655,
-          9654,
-          9653
+          9659
         ]
       },
       "UDHR": {
-        "positive": 10,
-        "negative": 184,
+        "positive": 9,
+        "negative": 180,
         "event_ids_positive": [
           9903,
           9878,
@@ -228965,10 +228983,10 @@
           9734,
           9716,
           9674,
-          9664,
-          9658
+          9664
         ],
         "event_ids_negative": [
+          9905,
           9904,
           9902,
           9901,
@@ -229147,17 +229165,12 @@
           9665,
           9662,
           9661,
-          9659,
-          9657,
-          9656,
-          9655,
-          9654,
-          9653
+          9659
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 27,
+        "negative": 26,
         "event_ids_positive": [],
         "event_ids_negative": [
           9897,
@@ -229185,19 +229198,17 @@
           9698,
           9691,
           9688,
-          9677,
-          9654
+          9677
         ]
       },
       "CRC": {
-        "positive": 5,
-        "negative": 32,
+        "positive": 4,
+        "negative": 31,
         "event_ids_positive": [
           9878,
           9846,
           9829,
-          9674,
-          9658
+          9674
         ],
         "event_ids_negative": [
           9887,
@@ -229230,8 +229241,7 @@
           9714,
           9696,
           9675,
-          9659,
-          9653
+          9659
         ]
       },
       "UNDRIP": {
@@ -229313,7 +229323,7 @@
       },
       "PB": {
         "positive": 6,
-        "negative": 88,
+        "negative": 89,
         "event_ids_positive": [
           9903,
           9835,
@@ -229323,6 +229333,7 @@
           9716
         ],
         "event_ids_negative": [
+          9905,
           9898,
           9897,
           9889,
@@ -229415,14 +229426,14 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 74.2,
-      "mainstream_pct": 25.8,
+      "niche_pct": 75.3,
+      "mainstream_pct": 24.7,
       "total_sources_used": 89,
-      "articles_processed": 252
+      "articles_processed": 247
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 252,
+      "total_events": 247,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229468,9 +229479,9 @@
       },
       {
         "name": "UN",
-        "count": 12,
+        "count": 11,
         "burn_count": 1,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           9870,
           9868,
@@ -229482,8 +229493,7 @@
           9778,
           9774,
           9715,
-          9710,
-          9655
+          9710
         ]
       },
       {
@@ -229561,9 +229571,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 31,
-        "burn_count": 2,
-        "mint_count": 29,
+        "count": 29,
+        "burn_count": 1,
+        "mint_count": 28,
         "event_ids": [
           9897,
           9896,
@@ -229593,9 +229603,7 @@
           9712,
           9710,
           9695,
-          9679,
-          9658,
-          9655
+          9679
         ]
       },
       {
@@ -229636,9 +229644,9 @@
       },
       {
         "name": "Construction",
-        "count": 15,
+        "count": 14,
         "burn_count": 0,
-        "mint_count": 15,
+        "mint_count": 14,
         "event_ids": [
           9888,
           9884,
@@ -229653,8 +229661,7 @@
           9724,
           9718,
           9713,
-          9704,
-          9655
+          9704
         ]
       },
       {
@@ -229741,14 +229748,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 12,
+      "total_burn": 11,
       "direct_action": {
-        "count": 10,
-        "pct": 83.3
+        "count": 9,
+        "pct": 81.8
       },
       "editorial_consciousness": {
         "count": 2,
-        "pct": 16.7
+        "pct": 18.2
       },
       "untyped": {
         "count": 0,
@@ -229771,14 +229778,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 240,
+      "total_mint": 236,
       "direct_action": {
-        "count": 214,
-        "pct": 89.2
+        "count": 210,
+        "pct": 89.0
       },
       "editorial_alarm": {
         "count": 26,
-        "pct": 10.8
+        "pct": 11.0
       },
       "untyped": {
         "count": 0,
@@ -229786,13 +229793,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7615,
+      "total_mint": 7616,
       "direct_action": {
         "count": 6978,
         "pct": 91.6
       },
       "editorial_alarm": {
-        "count": 540,
+        "count": 541,
         "pct": 7.1
       },
       "untyped": {
@@ -229801,9 +229808,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 70,
-      "institutional": 182,
-      "citizen_ratio": 0.278,
+      "citizen": 68,
+      "institutional": 179,
+      "citizen_ratio": 0.275,
       "daily": [
         {
           "date": "2026-11-09",
@@ -229837,11 +229844,12 @@
         },
         {
           "date": "2026-11-15",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        9905,
         9904,
         9903,
         9894,
@@ -229908,10 +229916,7 @@
         9671,
         9664,
         9663,
-        9659,
-        9657,
-        9656,
-        9653
+        9659
       ],
       "event_ids_institutional": [
         9902,
@@ -230092,10 +230097,7 @@
         9665,
         9662,
         9661,
-        9660,
-        9658,
-        9655,
-        9654
+        9660
       ]
     }
   }
