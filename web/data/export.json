@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-15T05:07:29.067818+00:00",
-  "total_events": 9902,
-  "total_burned": 8197220595,
+  "generated_at": "2026-11-15T06:10:06.824138+00:00",
+  "total_events": 9903,
+  "total_burned": 8200528095,
   "total_minted": 12119185269,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9903,
+      "event_title": "The affordability election delivered billions for public transit",
+      "event_url": "https://grist.org/transportation/the-affordability-election-delivered-billions-for-public-transit/",
+      "event_source": "Grist Solutions",
+      "decision": "BURN",
+      "amount_crbn": 3307500,
+      "final_score": 6.04,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Government funding for transit expands equitable access, cuts emissions, and supports sustainable jobs—an action that protects rights and mitigates harm. | The funding decision markedly advances sustainable transport, climate mitigation, and decent work, outweighing the fiscal and displacement concerns. While debt implications merit monitoring, the net ethical balance is stro",
+      "tx_hash": "4nFqj5tsuVT3tNJmd7ZLi84FAqP3f1X54Q6KBYPgeP4cKebgcpX6EeeGemfMGTtcFVWRu5TmFp5cW2Z6cKHfM2G6",
+      "created_at": "2026-11-15T06:10:01.013316+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Allocation of billions of dollars to public transit infrastructure and services\", \"affected_sdgs\": [9, 11, 13, 7, 8], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Large fiscal outlay may increase public debt and cause short‑term displacement during construction\", \"affected_sdgs\": [8, 10], \"violated_rights\": [\"UDHR Article 17\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": "editorial_consciousness",
+      "mint_subtype": null,
+      "amount_index": 604000
+    },
     {
       "id": 9902,
       "event_title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
@@ -228524,6 +228547,11 @@
         "total_amount": 370000
       },
       {
+        "country": "United States",
+        "count": 1,
+        "total_amount": 3307500
+      },
+      {
         "country": "Haiti",
         "count": 1,
         "total_amount": 50000
@@ -228537,11 +228565,6 @@
         "country": "India",
         "count": 1,
         "total_amount": 150000
-      },
-      {
-        "country": "Tanzania",
-        "count": 1,
-        "total_amount": 192000
       }
     ],
     "top_regions_sustainable": [
@@ -228552,8 +228575,8 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.118,
-        "events": 17
+        "burn_ratio": 0.125,
+        "events": 16
       },
       {
         "region": "Europe",
@@ -228567,16 +228590,11 @@
       },
       {
         "region": "North America",
-        "burn_ratio": 0.0,
-        "events": 37
+        "burn_ratio": 0.026,
+        "events": 38
       }
     ],
     "top_regions_destructive": [
-      {
-        "region": "North America",
-        "mint_ratio": 1.0,
-        "events": 37
-      },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
@@ -228586,6 +228604,11 @@
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 9
+      },
+      {
+        "region": "North America",
+        "mint_ratio": 0.974,
+        "events": 38
       },
       {
         "region": "Latin America",
@@ -228632,25 +228655,26 @@
       {
         "date": "2026-11-15",
         "net_minted": 8400,
-        "net_burned": 0
+        "net_burned": 3307500
       }
     ],
     "event_of_the_day": {
-      "id": 9902,
-      "event_title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
-      "decision": "MINT",
-      "amount_crbn": 8400,
-      "final_score": 3.97,
+      "id": 9903,
+      "event_title": "The affordability election delivered billions for public transit",
+      "decision": "BURN",
+      "amount_crbn": 3307500,
+      "final_score": 6.04,
       "confidence": 7,
       "country": "United States",
       "region": "North America",
-      "created_at": "2026-11-15T05:07:23.444180+00:00"
+      "created_at": "2026-11-15T06:10:01.013316+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 11,
-        "negative": 244,
+        "positive": 12,
+        "negative": 242,
         "event_ids_positive": [
+          9903,
           9878,
           9846,
           9835,
@@ -228905,15 +228929,14 @@
           9653,
           9652,
           9651,
-          9650,
-          9649,
-          9648
+          9650
         ]
       },
       "UDHR": {
-        "positive": 9,
-        "negative": 187,
+        "positive": 10,
+        "negative": 186,
         "event_ids_positive": [
+          9903,
           9878,
           9846,
           9829,
@@ -229110,8 +229133,7 @@
           9653,
           9652,
           9651,
-          9650,
-          9648
+          9650
         ]
       },
       "ILO": {
@@ -229273,9 +229295,10 @@
         ]
       },
       "PB": {
-        "positive": 5,
-        "negative": 90,
+        "positive": 6,
+        "negative": 89,
         "event_ids_positive": [
+          9903,
           9835,
           9784,
           9743,
@@ -229371,20 +229394,19 @@
           9666,
           9661,
           9660,
-          9652,
-          9649
+          9652
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.3,
-      "mainstream_pct": 28.7,
-      "total_sources_used": 87,
-      "articles_processed": 255
+      "niche_pct": 71.6,
+      "mainstream_pct": 28.4,
+      "total_sources_used": 88,
+      "articles_processed": 254
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 255,
+      "total_events": 254,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229562,10 +229584,11 @@
       },
       {
         "name": "Finance",
-        "count": 28,
-        "burn_count": 1,
+        "count": 29,
+        "burn_count": 2,
         "mint_count": 27,
         "event_ids": [
+          9903,
           9887,
           9885,
           9882,
@@ -229641,9 +229664,9 @@
       },
       {
         "name": "Defense",
-        "count": 11,
+        "count": 10,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           9899,
           9874,
@@ -229654,8 +229677,7 @@
           9723,
           9715,
           9687,
-          9660,
-          9648
+          9660
         ]
       },
       {
@@ -229677,16 +229699,16 @@
       {
         "name": "Transport",
         "count": 7,
-        "burn_count": 1,
-        "mint_count": 6,
+        "burn_count": 2,
+        "mint_count": 5,
         "event_ids": [
+          9903,
           9873,
           9806,
           9781,
           9734,
           9691,
-          9687,
-          9648
+          9687
         ]
       },
       {
@@ -229704,14 +229726,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 11,
+      "total_burn": 12,
       "direct_action": {
         "count": 10,
-        "pct": 90.9
+        "pct": 83.3
       },
       "editorial_consciousness": {
-        "count": 1,
-        "pct": 9.1
+        "count": 2,
+        "pct": 16.7
       },
       "untyped": {
         "count": 0,
@@ -229719,14 +229741,14 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2280,
+      "total_burn": 2281,
       "direct_action": {
         "count": 2033,
-        "pct": 89.2
+        "pct": 89.1
       },
       "editorial_consciousness": {
-        "count": 210,
-        "pct": 9.2
+        "count": 211,
+        "pct": 9.3
       },
       "untyped": {
         "count": 37,
@@ -229734,9 +229756,9 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 244,
+      "total_mint": 242,
       "direct_action": {
-        "count": 218,
+        "count": 216,
         "pct": 89.3
       },
       "editorial_alarm": {
@@ -229765,8 +229787,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 69,
-      "institutional": 186,
-      "citizen_ratio": 0.271,
+      "institutional": 185,
+      "citizen_ratio": 0.272,
       "daily": [
         {
           "date": "2026-11-09",
@@ -229800,11 +229822,12 @@
         },
         {
           "date": "2026-11-15",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        9903,
         9894,
         9891,
         9888,
@@ -229872,8 +229895,7 @@
         9659,
         9657,
         9656,
-        9653,
-        9649
+        9653
       ],
       "event_ids_institutional": [
         9902,
@@ -230060,8 +230082,7 @@
         9654,
         9652,
         9651,
-        9650,
-        9648
+        9650
       ]
     }
   }
