@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-14T11:08:48.243127+00:00",
-  "total_events": 9901,
+  "generated_at": "2026-11-15T05:07:29.067818+00:00",
+  "total_events": 9902,
   "total_burned": 8197220595,
-  "total_minted": 12119176869,
+  "total_minted": 12119185269,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9902,
+      "event_title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
+      "event_url": "https://www.aljazeera.com/news/2026/11/15/new-york-democratic-socialists-urge-ocasio-cortez-to-run-for-us-president?traffic_source=rss",
+      "event_source": "Al Jazeera",
+      "decision": "MINT",
+      "amount_crbn": 8400,
+      "final_score": 3.97,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] The resolution promotes political participation, protecting democratic rights under UDHR Art.21. | The resolution advances democratic engagement and climate‑social justice goals, but it also risks heightening partisan divides. Overall the net ethical balance leans modestly positive yet limited in concrete impact.",
+      "tx_hash": "2xNC74eXDLKQsFiM3P1FkrjQd5QuARCEi34RuuSULT3Kcs1YPC5Qv47WhEKbW3gnNK3HtvXKB6bwucWG9vJp7Vs6",
+      "created_at": "2026-11-15T05:07:23.444180+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"DSA convention resolution urging AOC to run promotes democratic participation and progressive policy advocacy\", \"affected_sdgs\": [5, 10, 13, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Highly partisan call may increase political polarization and social tension\", \"affected_sdgs\": [16], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 28900
+    },
     {
       "id": 9901,
       "event_title": "Washington reportedly proposed Kyiv cede Donbas in exchange for NATO membership, Zelensky says",
@@ -228470,13 +228493,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 38,
-        "total_amount": 22590330
+        "count": 35,
+        "total_amount": 15687890
       },
       {
         "country": "France",
-        "count": 20,
-        "total_amount": 4480120
+        "count": 19,
+        "total_amount": 4330120
       },
       {
         "country": "Brazil",
@@ -228529,13 +228552,13 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.111,
-        "events": 18
+        "burn_ratio": 0.118,
+        "events": 17
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.06,
-        "events": 67
+        "burn_ratio": 0.047,
+        "events": 64
       },
       {
         "region": "Latin America",
@@ -228545,24 +228568,24 @@
       {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 40
+        "events": 37
       }
     ],
     "top_regions_destructive": [
       {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 40
+        "events": 37
       },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 18
+        "events": 15
       },
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
-        "events": 10
+        "events": 9
       },
       {
         "region": "Latin America",
@@ -228571,16 +228594,11 @@
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.94,
-        "events": 67
+        "mint_ratio": 0.953,
+        "events": 64
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-08",
-        "net_minted": 23461070,
-        "net_burned": 446000
-      },
       {
         "date": "2026-11-09",
         "net_minted": 41202950,
@@ -228610,23 +228628,28 @@
         "date": "2026-11-14",
         "net_minted": 5840500,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-15",
+        "net_minted": 8400,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9900,
-      "event_title": "German spies granted sweeping new powers",
+      "id": 9902,
+      "event_title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
       "decision": "MINT",
-      "amount_crbn": 604000,
-      "final_score": -2.2,
+      "amount_crbn": 8400,
+      "final_score": 3.97,
       "confidence": 7,
-      "country": "Germany",
-      "region": "Europe",
-      "created_at": "2026-11-14T05:09:31.772222+00:00"
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-11-15T05:07:23.444180+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 12,
-        "negative": 256,
+        "positive": 11,
+        "negative": 244,
         "event_ids_positive": [
           9878,
           9846,
@@ -228638,10 +228661,10 @@
           9716,
           9674,
           9664,
-          9658,
-          9636
+          9658
         ],
         "event_ids_negative": [
+          9902,
           9901,
           9900,
           9899,
@@ -228884,25 +228907,12 @@
           9651,
           9650,
           9649,
-          9648,
-          9647,
-          9646,
-          9645,
-          9644,
-          9643,
-          9642,
-          9641,
-          9640,
-          9639,
-          9638,
-          9637,
-          9635,
-          9634
+          9648
         ]
       },
       "UDHR": {
-        "positive": 10,
-        "negative": 196,
+        "positive": 9,
+        "negative": 187,
         "event_ids_positive": [
           9878,
           9846,
@@ -228912,10 +228922,10 @@
           9716,
           9674,
           9664,
-          9658,
-          9636
+          9658
         ],
         "event_ids_negative": [
+          9902,
           9901,
           9900,
           9899,
@@ -229101,25 +229111,13 @@
           9652,
           9651,
           9650,
-          9648,
-          9647,
-          9646,
-          9644,
-          9643,
-          9642,
-          9641,
-          9638,
-          9637,
-          9635,
-          9634
+          9648
         ]
       },
       "ILO": {
-        "positive": 1,
-        "negative": 30,
-        "event_ids_positive": [
-          9636
-        ],
+        "positive": 0,
+        "negative": 29,
+        "event_ids_positive": [],
         "event_ids_negative": [
           9897,
           9881,
@@ -229149,13 +229147,12 @@
           9677,
           9654,
           9652,
-          9650,
-          9647
+          9650
         ]
       },
       "CRC": {
         "positive": 5,
-        "negative": 33,
+        "negative": 32,
         "event_ids_positive": [
           9878,
           9846,
@@ -229195,13 +229192,12 @@
           9696,
           9675,
           9659,
-          9653,
-          9637
+          9653
         ]
       },
       "UNDRIP": {
         "positive": 2,
-        "negative": 35,
+        "negative": 34,
         "event_ids_positive": [
           9829,
           9784
@@ -229240,13 +229236,12 @@
           9700,
           9699,
           9698,
-          9672,
-          9642
+          9672
         ]
       },
       "Animal": {
         "positive": 3,
-        "negative": 23,
+        "negative": 22,
         "event_ids_positive": [
           9835,
           9784,
@@ -229274,13 +229269,12 @@
           9718,
           9704,
           9698,
-          9690,
-          9640
+          9690
         ]
       },
       "PB": {
         "positive": 5,
-        "negative": 93,
+        "negative": 90,
         "event_ids_positive": [
           9835,
           9784,
@@ -229378,31 +229372,28 @@
           9661,
           9660,
           9652,
-          9649,
-          9640,
-          9639,
-          9637
+          9649
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 71.1,
-      "mainstream_pct": 28.9,
-      "total_sources_used": 90,
-      "articles_processed": 268
+      "niche_pct": 71.3,
+      "mainstream_pct": 28.7,
+      "total_sources_used": 87,
+      "articles_processed": 255
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 268,
+      "total_events": 255,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "COP",
-        "count": 32,
+        "count": 31,
         "burn_count": 1,
-        "mint_count": 31,
+        "mint_count": 30,
         "event_ids": [
           9893,
           9883,
@@ -229434,8 +229425,7 @@
           9675,
           9672,
           9666,
-          9661,
-          9637
+          9661
         ]
       },
       {
@@ -229460,9 +229450,9 @@
       },
       {
         "name": "EU",
-        "count": 11,
+        "count": 10,
         "burn_count": 0,
-        "mint_count": 11,
+        "mint_count": 10,
         "event_ids": [
           9806,
           9771,
@@ -229473,8 +229463,7 @@
           9709,
           9701,
           9692,
-          9686,
-          9639
+          9686
         ]
       },
       {
@@ -229492,15 +229481,14 @@
       },
       {
         "name": "ILO",
-        "count": 5,
-        "burn_count": 1,
+        "count": 4,
+        "burn_count": 0,
         "mint_count": 4,
         "event_ids": [
           9836,
           9791,
           9770,
-          9688,
-          9636
+          9688
         ]
       },
       {
@@ -229535,9 +229523,9 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 32,
+        "count": 31,
         "burn_count": 2,
-        "mint_count": 30,
+        "mint_count": 29,
         "event_ids": [
           9897,
           9896,
@@ -229569,15 +229557,14 @@
           9695,
           9679,
           9658,
-          9655,
-          9637
+          9655
         ]
       },
       {
         "name": "Finance",
-        "count": 29,
+        "count": 28,
         "burn_count": 1,
-        "mint_count": 28,
+        "mint_count": 27,
         "event_ids": [
           9887,
           9885,
@@ -229606,15 +229593,14 @@
           9669,
           9667,
           9661,
-          9651,
-          9642
+          9651
         ]
       },
       {
         "name": "Construction",
-        "count": 16,
+        "count": 15,
         "burn_count": 0,
-        "mint_count": 16,
+        "mint_count": 15,
         "event_ids": [
           9888,
           9884,
@@ -229630,29 +229616,7 @@
           9718,
           9713,
           9704,
-          9655,
-          9646
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 13,
-        "burn_count": 0,
-        "mint_count": 13,
-        "event_ids": [
-          9899,
-          9874,
-          9825,
-          9816,
-          9814,
-          9759,
-          9723,
-          9715,
-          9687,
-          9660,
-          9648,
-          9644,
-          9635
+          9655
         ]
       },
       {
@@ -229673,6 +229637,25 @@
           9725,
           9702,
           9690
+        ]
+      },
+      {
+        "name": "Defense",
+        "count": 11,
+        "burn_count": 0,
+        "mint_count": 11,
+        "event_ids": [
+          9899,
+          9874,
+          9825,
+          9816,
+          9814,
+          9759,
+          9723,
+          9715,
+          9687,
+          9660,
+          9648
         ]
       },
       {
@@ -229721,14 +229704,14 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 12,
+      "total_burn": 11,
       "direct_action": {
-        "count": 11,
-        "pct": 91.7
+        "count": 10,
+        "pct": 90.9
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 8.3
+        "pct": 9.1
       },
       "untyped": {
         "count": 0,
@@ -229751,14 +229734,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 256,
+      "total_mint": 244,
       "direct_action": {
-        "count": 230,
-        "pct": 89.8
+        "count": 218,
+        "pct": 89.3
       },
       "editorial_alarm": {
         "count": 26,
-        "pct": 10.2
+        "pct": 10.7
       },
       "untyped": {
         "count": 0,
@@ -229766,9 +229749,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7613,
+      "total_mint": 7614,
       "direct_action": {
-        "count": 6976,
+        "count": 6977,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229781,15 +229764,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 70,
-      "institutional": 198,
-      "citizen_ratio": 0.261,
+      "citizen": 69,
+      "institutional": 186,
+      "citizen_ratio": 0.271,
       "daily": [
-        {
-          "date": "2026-11-08",
-          "citizen": 8,
-          "institutional": 21
-        },
         {
           "date": "2026-11-09",
           "citizen": 13,
@@ -229819,6 +229797,11 @@
           "date": "2026-11-14",
           "citizen": 0,
           "institutional": 4
+        },
+        {
+          "date": "2026-11-15",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -229890,10 +229873,10 @@
         9657,
         9656,
         9653,
-        9649,
-        9634
+        9649
       ],
       "event_ids_institutional": [
+        9902,
         9901,
         9900,
         9899,
@@ -230078,20 +230061,7 @@
         9652,
         9651,
         9650,
-        9648,
-        9647,
-        9646,
-        9645,
-        9644,
-        9643,
-        9642,
-        9641,
-        9640,
-        9639,
-        9638,
-        9637,
-        9636,
-        9635
+        9648
       ]
     }
   }
