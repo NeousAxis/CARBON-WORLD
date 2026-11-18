@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-18T00:08:19.424371+00:00",
-  "total_events": 9910,
+  "generated_at": "2026-11-18T05:08:00.729331+00:00",
+  "total_events": 9911,
   "total_burned": 8201828095,
-  "total_minted": 12122512729,
+  "total_minted": 12122518049,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9911,
+      "event_title": "Gulf nations on alert after US strikes Iranian island",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/gulf-nations-alert-after-us-strikes-iranian-island",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 5320,
+      "final_score": -3.08,
+      "confidence": 6,
+      "justification": "The strike escalates conflict and violates sovereignty, outweighing limited security gains. | While the strike may improve short‑term security for Gulf allies, it breaches sovereignty, risks civilian lives and fuels regional instability, resulting in a net negative ethical outcome.",
+      "tx_hash": "55BanBGK7vrsPXxQuRCdVcrCYAyEUtZpwK67tFKvfuWYL9GMUrsBXDKNCJeq9xyJuT8thqPnYRU81MEW5YqtpVNE",
+      "created_at": "2026-11-18T05:07:56.735859+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"US strike aimed at neutralizing hostile drone launch sites, enhancing regional security for allies.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Violation of Iran's sovereignty and potential civilian casualties, escalating regional conflict.\", \"affected_sdgs\": [16, 3], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 2\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 9910,
       "event_title": "New RS governor will merge Environment and Mines and Energy secretariats",
@@ -228677,8 +228700,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 17,
-        "total_amount": 8095750
+        "count": 14,
+        "total_amount": 6955220
       },
       {
         "country": "Germany",
@@ -228691,14 +228714,14 @@
         "total_amount": 1309750
       },
       {
-        "country": "Indonesia",
-        "count": 4,
-        "total_amount": 731280
-      },
-      {
         "country": "Netherlands",
         "count": 3,
         "total_amount": 545000
+      },
+      {
+        "country": "Indonesia",
+        "count": 3,
+        "total_amount": 726500
       }
     ],
     "top_countries_burn": [
@@ -228731,35 +228754,35 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.069,
-        "events": 29
+        "burn_ratio": 0.077,
+        "events": 26
       },
       {
         "region": "North America",
-        "burn_ratio": 0.05,
-        "events": 20
+        "burn_ratio": 0.059,
+        "events": 17
       },
       {
         "region": "Asia",
         "burn_ratio": 0.0,
-        "events": 6
+        "events": 5
       },
       {
         "region": "MENA",
         "burn_ratio": 0.0,
-        "events": 7
+        "events": 6
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Asia",
         "mint_ratio": 1.0,
-        "events": 6
+        "events": 5
       },
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 6
       },
       {
         "region": "Oceania",
@@ -228768,13 +228791,13 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.95,
-        "events": 20
+        "mint_ratio": 0.941,
+        "events": 17
       },
       {
-        "region": "Europe",
-        "mint_ratio": 0.931,
-        "events": 29
+        "region": "Latin America",
+        "mint_ratio": 0.923,
+        "events": 13
       }
     ],
     "supply_trend_7d": [
@@ -228810,25 +228833,25 @@
       },
       {
         "date": "2026-11-18",
-        "net_minted": 54100,
+        "net_minted": 59420,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9908,
-      "event_title": "Identifying key biodiversity areas in Mozambique for conservation planning and policy",
-      "decision": "BURN",
-      "amount_crbn": 1300000,
-      "final_score": 6.13,
-      "confidence": 5,
-      "country": "Mozambique",
-      "region": "Africa",
-      "created_at": "2026-11-17T01:10:01.664143+00:00"
+      "id": 9911,
+      "event_title": "Gulf nations on alert after US strikes Iranian island",
+      "decision": "MINT",
+      "amount_crbn": 5320,
+      "final_score": -3.08,
+      "confidence": 6,
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-11-18T05:07:56.735859+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 6,
-        "negative": 106,
+        "negative": 96,
         "event_ids_positive": [
           9908,
           9903,
@@ -228838,6 +228861,7 @@
           9829
         ],
         "event_ids_negative": [
+          9911,
           9910,
           9909,
           9907,
@@ -228932,23 +228956,12 @@
           9813,
           9812,
           9811,
-          9810,
-          9809,
-          9808,
-          9807,
-          9806,
-          9805,
-          9804,
-          9803,
-          9802,
-          9801,
-          9800,
-          9799
+          9810
         ]
       },
       "UDHR": {
         "positive": 4,
-        "negative": 80,
+        "negative": 72,
         "event_ids_positive": [
           9903,
           9878,
@@ -228956,6 +228969,7 @@
           9829
         ],
         "event_ids_negative": [
+          9911,
           9910,
           9906,
           9905,
@@ -229026,21 +229040,12 @@
           9816,
           9814,
           9812,
-          9810,
-          9809,
-          9807,
-          9806,
-          9805,
-          9804,
-          9803,
-          9802,
-          9801,
-          9799
+          9810
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 9,
+        "negative": 8,
         "event_ids_positive": [],
         "event_ids_negative": [
           9897,
@@ -229050,8 +229055,7 @@
           9853,
           9836,
           9828,
-          9826,
-          9799
+          9826
         ]
       },
       "CRC": {
@@ -229080,7 +229084,7 @@
       },
       "UNDRIP": {
         "positive": 1,
-        "negative": 14,
+        "negative": 12,
         "event_ids_positive": [
           9829
         ],
@@ -229096,14 +229100,12 @@
           9828,
           9822,
           9820,
-          9817,
-          9804,
-          9801
+          9817
         ]
       },
       "Animal": {
         "positive": 1,
-        "negative": 12,
+        "negative": 10,
         "event_ids_positive": [
           9835
         ],
@@ -229117,20 +229119,19 @@
           9839,
           9819,
           9817,
-          9811,
-          9801,
-          9800
+          9811
         ]
       },
       "PB": {
         "positive": 3,
-        "negative": 37,
+        "negative": 33,
         "event_ids_positive": [
           9908,
           9903,
           9835
         ],
         "event_ids_negative": [
+          9911,
           9910,
           9905,
           9898,
@@ -229162,24 +229163,19 @@
           9819,
           9817,
           9815,
-          9811,
-          9808,
-          9806,
-          9801,
-          9800,
-          9799
+          9811
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 95.3,
-      "mainstream_pct": 4.7,
-      "total_sources_used": 64,
-      "articles_processed": 112
+      "niche_pct": 96.8,
+      "mainstream_pct": 3.2,
+      "total_sources_used": 62,
+      "articles_processed": 102
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 112,
+      "total_events": 102,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229266,23 +229262,14 @@
         "event_ids": [
           9836
         ]
-      },
-      {
-        "name": "EU",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9806
-        ]
       }
     ],
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 13,
+        "count": 11,
         "burn_count": 0,
-        "mint_count": 13,
+        "mint_count": 11,
         "event_ids": [
           9910,
           9897,
@@ -229294,16 +229281,14 @@
           9847,
           9837,
           9830,
-          9820,
-          9808,
-          9801
+          9820
         ]
       },
       {
         "name": "Finance",
-        "count": 11,
+        "count": 10,
         "burn_count": 1,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           9903,
           9887,
@@ -229314,8 +229299,7 @@
           9843,
           9824,
           9823,
-          9820,
-          9799
+          9820
         ]
       },
       {
@@ -229347,18 +229331,6 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 4,
-        "burn_count": 0,
-        "mint_count": 4,
-        "event_ids": [
-          9906,
-          9888,
-          9884,
-          9801
-        ]
-      },
-      {
         "name": "Mining",
         "count": 3,
         "burn_count": 0,
@@ -229370,24 +229342,34 @@
         ]
       },
       {
-        "name": "Transport",
+        "name": "Construction",
         "count": 3,
-        "burn_count": 1,
-        "mint_count": 2,
+        "burn_count": 0,
+        "mint_count": 3,
         "event_ids": [
-          9903,
-          9873,
-          9806
+          9906,
+          9888,
+          9884
         ]
       },
       {
-        "name": "Agriculture",
+        "name": "Transport",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
+        "event_ids": [
+          9903,
+          9873
+        ]
+      },
+      {
+        "name": "Forestry",
         "count": 2,
         "burn_count": 0,
         "mint_count": 2,
         "event_ids": [
-          9888,
-          9799
+          9840,
+          9815
         ]
       }
     ],
@@ -229422,14 +229404,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 106,
+      "total_mint": 96,
       "direct_action": {
-        "count": 92,
-        "pct": 86.8
+        "count": 83,
+        "pct": 86.5
       },
       "editorial_alarm": {
-        "count": 14,
-        "pct": 13.2
+        "count": 13,
+        "pct": 13.5
       },
       "untyped": {
         "count": 0,
@@ -229437,9 +229419,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7620,
+      "total_mint": 7621,
       "direct_action": {
-        "count": 6982,
+        "count": 6983,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229452,9 +229434,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 28,
-      "institutional": 84,
-      "citizen_ratio": 0.25,
+      "citizen": 26,
+      "institutional": 76,
+      "citizen_ratio": 0.255,
       "daily": [
         {
           "date": "2026-11-12",
@@ -229489,7 +229471,7 @@
         {
           "date": "2026-11-18",
           "citizen": 1,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -229518,11 +229500,10 @@
         9820,
         9815,
         9812,
-        9811,
-        9804,
-        9800
+        9811
       ],
       "event_ids_institutional": [
+        9911,
         9909,
         9907,
         9906,
@@ -229597,16 +229578,7 @@
         9816,
         9814,
         9813,
-        9810,
-        9809,
-        9808,
-        9807,
-        9806,
-        9805,
-        9803,
-        9802,
-        9801,
-        9799
+        9810
       ]
     }
   }
