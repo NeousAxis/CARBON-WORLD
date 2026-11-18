@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-17T20:17:04.858853+00:00",
-  "total_events": 9909,
+  "generated_at": "2026-11-18T00:08:19.424371+00:00",
+  "total_events": 9910,
   "total_burned": 8201828095,
-  "total_minted": 12122458629,
+  "total_minted": 12122512729,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9910,
+      "event_title": "New RS governor will merge Environment and Mines and Energy secretariats",
+      "event_url": "https://oeco.org.br/salada-verde/novo-governador-do-rs-unira-secretarias-de-meio-ambiente-com-minas-e-energia/",
+      "event_source": "O Eco (Brazil env)",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -3.0,
+      "confidence": 7,
+      "justification": "Merging environment with mining/energy risks weakening protections and harming climate and indigenous rights, outweighing any bureaucratic efficiency. | While the administrative consolidation may bring modest efficiency gains, it substantially endangers environmental protection, climate action and indigenous rights, resulting in a net negative ethical outcome.",
+      "tx_hash": "5q6iY9KVLaXixxEkHgEM1zW2ah51o9wzxn8jiVLTHf69kRvEX2L5t5HdFXajUsRjSjHtUJfs1PZDycH3Nhj6Mdts",
+      "created_at": "2026-11-18T00:08:13.711076+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Brazil",
+      "region": "Latin America",
+      "administration": "Brazil-PT",
+      "positive_aspects_json": "[{\"description\": \"Reduction of ministries streamlines administration and may lower government costs\", \"affected_sdgs\": [16, 8, 9], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Merging the environment secretariat with mining and energy weakens environmental oversight, increasing risk of pollution, habitat loss and climate impact\", \"affected_sdgs\": [13, 14, 15, 12, 7], \"violated_rights\": [\"UDHR Article 25\", \"UNDRIP Article 12\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9909,
       "event_title": "Climate strike for a livable future in Berlin today",
@@ -228654,8 +228677,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 21,
-        "total_amount": 9929150
+        "count": 17,
+        "total_amount": 8095750
       },
       {
         "country": "Germany",
@@ -228665,7 +228688,7 @@
       {
         "country": "Brazil",
         "count": 5,
-        "total_amount": 2055650
+        "total_amount": 1309750
       },
       {
         "country": "Indonesia",
@@ -228673,9 +228696,9 @@
         "total_amount": 731280
       },
       {
-        "country": "France",
-        "count": 4,
-        "total_amount": 730350
+        "country": "Netherlands",
+        "count": 3,
+        "total_amount": 545000
       }
     ],
     "top_countries_burn": [
@@ -228698,19 +228721,9 @@
         "country": "Haiti",
         "count": 1,
         "total_amount": 50000
-      },
-      {
-        "country": "Kenya",
-        "count": 1,
-        "total_amount": 146000
       }
     ],
     "top_regions_sustainable": [
-      {
-        "region": "Africa",
-        "burn_ratio": 0.667,
-        "events": 3
-      },
       {
         "region": "Latin America",
         "burn_ratio": 0.077,
@@ -228718,18 +228731,23 @@
       },
       {
         "region": "Europe",
-        "burn_ratio": 0.061,
-        "events": 33
+        "burn_ratio": 0.069,
+        "events": 29
       },
       {
         "region": "North America",
-        "burn_ratio": 0.042,
-        "events": 24
+        "burn_ratio": 0.05,
+        "events": 20
       },
       {
         "region": "Asia",
         "burn_ratio": 0.0,
         "events": 6
+      },
+      {
+        "region": "MENA",
+        "burn_ratio": 0.0,
+        "events": 7
       }
     ],
     "top_regions_destructive": [
@@ -228741,7 +228759,7 @@
       {
         "region": "MENA",
         "mint_ratio": 1.0,
-        "events": 9
+        "events": 7
       },
       {
         "region": "Oceania",
@@ -228750,21 +228768,16 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.958,
-        "events": 24
+        "mint_ratio": 0.95,
+        "events": 20
       },
       {
         "region": "Europe",
-        "mint_ratio": 0.939,
-        "events": 33
+        "mint_ratio": 0.931,
+        "events": 29
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-11",
-        "net_minted": 37083080,
-        "net_burned": 1400000
-      },
       {
         "date": "2026-11-12",
         "net_minted": 40491420,
@@ -228794,6 +228807,11 @@
         "date": "2026-11-17",
         "net_minted": 2260,
         "net_burned": 1300000
+      },
+      {
+        "date": "2026-11-18",
+        "net_minted": 54100,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -228809,18 +228827,18 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 7,
-        "negative": 119,
+        "positive": 6,
+        "negative": 106,
         "event_ids_positive": [
           9908,
           9903,
           9878,
           9846,
           9835,
-          9829,
-          9784
+          9829
         ],
         "event_ids_negative": [
+          9910,
           9909,
           9907,
           9906,
@@ -228925,34 +228943,20 @@
           9802,
           9801,
           9800,
-          9799,
-          9798,
-          9797,
-          9796,
-          9795,
-          9794,
-          9793,
-          9792,
-          9791,
-          9790,
-          9789,
-          9788,
-          9787,
-          9786,
-          9785
+          9799
         ]
       },
       "UDHR": {
-        "positive": 5,
-        "negative": 88,
+        "positive": 4,
+        "negative": 80,
         "event_ids_positive": [
           9903,
           9878,
           9846,
-          9829,
-          9784
+          9829
         ],
         "event_ids_negative": [
+          9910,
           9906,
           9905,
           9904,
@@ -229031,21 +229035,12 @@
           9803,
           9802,
           9801,
-          9799,
-          9798,
-          9795,
-          9794,
-          9793,
-          9791,
-          9790,
-          9788,
-          9787,
-          9786
+          9799
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 10,
+        "negative": 9,
         "event_ids_positive": [],
         "event_ids_negative": [
           9897,
@@ -229056,8 +229051,7 @@
           9836,
           9828,
           9826,
-          9799,
-          9791
+          9799
         ]
       },
       "CRC": {
@@ -229085,13 +229079,13 @@
         ]
       },
       "UNDRIP": {
-        "positive": 2,
-        "negative": 15,
+        "positive": 1,
+        "negative": 14,
         "event_ids_positive": [
-          9829,
-          9784
+          9829
         ],
         "event_ids_negative": [
+          9910,
           9886,
           9882,
           9880,
@@ -229104,17 +229098,14 @@
           9820,
           9817,
           9804,
-          9801,
-          9787,
-          9785
+          9801
         ]
       },
       "Animal": {
-        "positive": 2,
+        "positive": 1,
         "negative": 12,
         "event_ids_positive": [
-          9835,
-          9784
+          9835
         ],
         "event_ids_negative": [
           9898,
@@ -229132,15 +229123,15 @@
         ]
       },
       "PB": {
-        "positive": 4,
-        "negative": 41,
+        "positive": 3,
+        "negative": 37,
         "event_ids_positive": [
           9908,
           9903,
-          9835,
-          9784
+          9835
         ],
         "event_ids_negative": [
+          9910,
           9905,
           9898,
           9897,
@@ -229176,33 +229167,28 @@
           9806,
           9801,
           9800,
-          9799,
-          9797,
-          9796,
-          9789,
-          9787,
-          9785
+          9799
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 94.1,
-      "mainstream_pct": 5.9,
-      "total_sources_used": 68,
-      "articles_processed": 126
+      "niche_pct": 95.3,
+      "mainstream_pct": 4.7,
+      "total_sources_used": 64,
+      "articles_processed": 112
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 126,
+      "total_events": 112,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "COP",
-        "count": 15,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 15,
+        "mint_count": 13,
         "event_ids": [
           9907,
           9893,
@@ -229216,9 +229202,7 @@
           9843,
           9827,
           9824,
-          9820,
-          9796,
-          9787
+          9820
         ]
       },
       {
@@ -229238,24 +229222,13 @@
       },
       {
         "name": "WHO",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           9858,
           9852,
-          9845,
-          9792
-        ]
-      },
-      {
-        "name": "ILO",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9836,
-          9791
+          9845
         ]
       },
       {
@@ -229286,6 +229259,15 @@
         ]
       },
       {
+        "name": "ILO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9836
+        ]
+      },
+      {
         "name": "EU",
         "count": 1,
         "burn_count": 0,
@@ -229298,10 +229280,11 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 17,
+        "count": 13,
         "burn_count": 0,
-        "mint_count": 17,
+        "mint_count": 13,
         "event_ids": [
+          9910,
           9897,
           9896,
           9883,
@@ -229313,19 +229296,14 @@
           9830,
           9820,
           9808,
-          9801,
-          9797,
-          9796,
-          9789,
-          9787,
-          9785
+          9801
         ]
       },
       {
         "name": "Finance",
-        "count": 13,
-        "burn_count": 2,
-        "mint_count": 11,
+        "count": 11,
+        "burn_count": 1,
+        "mint_count": 10,
         "event_ids": [
           9903,
           9887,
@@ -229337,16 +229315,14 @@
           9824,
           9823,
           9820,
-          9799,
-          9789,
-          9784
+          9799
         ]
       },
       {
         "name": "Tech",
-        "count": 8,
+        "count": 7,
         "burn_count": 1,
-        "mint_count": 7,
+        "mint_count": 6,
         "event_ids": [
           9894,
           9878,
@@ -229354,21 +229330,7 @@
           9850,
           9842,
           9834,
-          9830,
-          9787
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          9906,
-          9888,
-          9884,
-          9801,
-          9785
+          9830
         ]
       },
       {
@@ -229382,6 +229344,29 @@
           9825,
           9816,
           9814
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          9906,
+          9888,
+          9884,
+          9801
+        ]
+      },
+      {
+        "name": "Mining",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          9910,
+          9826,
+          9822
         ]
       },
       {
@@ -229404,27 +229389,17 @@
           9888,
           9799
         ]
-      },
-      {
-        "name": "Forestry",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9840,
-          9815
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 7,
+      "total_burn": 6,
       "direct_action": {
-        "count": 6,
-        "pct": 85.7
+        "count": 5,
+        "pct": 83.3
       },
       "editorial_consciousness": {
         "count": 1,
-        "pct": 14.3
+        "pct": 16.7
       },
       "untyped": {
         "count": 0,
@@ -229447,14 +229422,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 119,
+      "total_mint": 106,
       "direct_action": {
-        "count": 105,
-        "pct": 88.2
+        "count": 92,
+        "pct": 86.8
       },
       "editorial_alarm": {
         "count": 14,
-        "pct": 11.8
+        "pct": 13.2
       },
       "untyped": {
         "count": 0,
@@ -229462,9 +229437,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7619,
+      "total_mint": 7620,
       "direct_action": {
-        "count": 6981,
+        "count": 6982,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229477,15 +229452,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 31,
-      "institutional": 95,
-      "citizen_ratio": 0.246,
+      "citizen": 28,
+      "institutional": 84,
+      "citizen_ratio": 0.25,
       "daily": [
-        {
-          "date": "2026-11-11",
-          "citizen": 15,
-          "institutional": 40
-        },
         {
           "date": "2026-11-12",
           "citizen": 8,
@@ -229515,9 +229485,15 @@
           "date": "2026-11-17",
           "citizen": 1,
           "institutional": 1
+        },
+        {
+          "date": "2026-11-18",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        9910,
         9908,
         9905,
         9904,
@@ -229544,11 +229520,7 @@
         9812,
         9811,
         9804,
-        9800,
-        9788,
-        9787,
-        9785,
-        9784
+        9800
       ],
       "event_ids_institutional": [
         9909,
@@ -229634,18 +229606,7 @@
         9803,
         9802,
         9801,
-        9799,
-        9798,
-        9797,
-        9796,
-        9795,
-        9794,
-        9793,
-        9792,
-        9791,
-        9790,
-        9789,
-        9786
+        9799
       ]
     }
   }
