@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-19T11:06:53.474456+00:00",
-  "total_events": 9915,
+  "generated_at": "2026-11-19T15:17:34.193095+00:00",
+  "total_events": 9916,
   "total_burned": 8201828095,
-  "total_minted": 12124610049,
+  "total_minted": 12130020049,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9916,
+      "event_title": "Fossil fuel lobbyists are trying to derail climate action once again at COP31. Can they be stopped?",
+      "event_url": "https://theconversation.com/fossil-fuel-lobbyists-are-trying-to-derail-climate-action-once-again-at-cop31-can-they-be-stopped-294668",
+      "event_source": "The Conversation Global",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.45,
+      "confidence": 7,
+      "justification": "Lobbying to derail climate action at COP31 poses significant negative impact, leading to a MINT decision. | The lobbying effort directly undermines climate mitigation, clean energy transition, responsible consumption and peace/justice, outweighing any indirect awareness benefits. It represents a clear negative ethical impact.",
+      "tx_hash": "3AQMev3nW8iMACsTuGw6C9u8Kk7gr6S2JQDUXZEgEXGV4sLibGcwUK9FR7KkGSfSSWm3trQ4Buk7mfamG7qNzcq1",
+      "created_at": "2026-11-19T15:17:31.102521+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Fossil fuel lobbyists attempt to derail climate action at COP31\", \"affected_sdgs\": [13, 7, 12, 16], \"violated_rights\": [\"UDHR Article 21\", \"UDHR Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9915,
       "event_title": "Trump Intel Pick Calls $1 Million Bribe for a Pardon a \"Complicated Legal Question\"",
@@ -228831,25 +228854,25 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.077,
-        "events": 13
+        "burn_ratio": 0.083,
+        "events": 12
       },
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 7
+        "events": 5
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 5
       },
       {
         "region": "North America",
-        "mint_ratio": 0.923,
-        "events": 13
+        "mint_ratio": 0.917,
+        "events": 12
       }
     ],
     "supply_trend_7d": [
@@ -228885,7 +228908,7 @@
       },
       {
         "date": "2026-11-19",
-        "net_minted": 1073000,
+        "net_minted": 6483000,
         "net_burned": 0
       }
     ],
@@ -228903,12 +228926,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 34,
+        "negative": 24,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9916,
           9915,
           9914,
           9913,
@@ -228931,27 +228955,17 @@
           9894,
           9893,
           9892,
-          9891,
-          9890,
-          9889,
-          9888,
-          9887,
-          9886,
-          9885,
-          9884,
-          9883,
-          9882,
-          9881,
-          9880
+          9891
         ]
       },
       "UDHR": {
         "positive": 1,
-        "negative": 28,
+        "negative": 21,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9916,
           9915,
           9914,
           9913,
@@ -228971,59 +228985,42 @@
           9894,
           9893,
           9892,
-          9891,
-          9890,
-          9888,
-          9887,
-          9886,
-          9885,
-          9882,
-          9881,
-          9880
+          9891
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 3,
+        "negative": 1,
         "event_ids_positive": [],
         "event_ids_negative": [
-          9897,
-          9881,
-          9880
+          9897
         ]
       },
       "CRC": {
         "positive": 0,
-        "negative": 2,
+        "negative": 0,
         "event_ids_positive": [],
-        "event_ids_negative": [
-          9887,
-          9880
-        ]
+        "event_ids_negative": []
       },
       "UNDRIP": {
         "positive": 0,
-        "negative": 4,
+        "negative": 1,
         "event_ids_positive": [],
         "event_ids_negative": [
-          9910,
-          9886,
-          9882,
-          9880
+          9910
         ]
       },
       "Animal": {
         "positive": 0,
-        "negative": 2,
+        "negative": 1,
         "event_ids_positive": [],
         "event_ids_negative": [
-          9898,
-          9889
+          9898
         ]
       },
       "PB": {
         "positive": 2,
-        "negative": 9,
+        "negative": 6,
         "event_ids_positive": [
           9908,
           9903
@@ -229034,36 +229031,32 @@
           9910,
           9905,
           9898,
-          9897,
-          9889,
-          9888,
-          9883
+          9897
         ]
       }
     },
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 29,
-      "articles_processed": 36
+      "total_sources_used": 22,
+      "articles_processed": 26
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 36,
+      "total_events": 26,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "COP",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
+          9916,
           9907,
-          9893,
-          9883,
-          9882
+          9893
         ]
       },
       {
@@ -229074,15 +229067,6 @@
         "event_ids": [
           9901
         ]
-      },
-      {
-        "name": "UNHCR",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9887
-        ]
       }
     ],
     "top_sectors_7d": [
@@ -229092,34 +229076,11 @@
         "burn_count": 0,
         "mint_count": 5,
         "event_ids": [
+          9916,
           9914,
           9910,
           9897,
-          9896,
-          9883
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 4,
-        "burn_count": 1,
-        "mint_count": 3,
-        "event_ids": [
-          9903,
-          9887,
-          9885,
-          9882
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          9906,
-          9888,
-          9884
+          9896
         ]
       },
       {
@@ -229152,7 +229113,16 @@
         ]
       },
       {
-        "name": "Transport",
+        "name": "Construction",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9906
+        ]
+      },
+      {
+        "name": "Finance",
         "count": 1,
         "burn_count": 1,
         "mint_count": 0,
@@ -229161,12 +229131,12 @@
         ]
       },
       {
-        "name": "Agriculture",
+        "name": "Transport",
         "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
+        "burn_count": 1,
+        "mint_count": 0,
         "event_ids": [
-          9888
+          9903
         ]
       }
     ],
@@ -229201,14 +229171,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 34,
+      "total_mint": 24,
       "direct_action": {
-        "count": 32,
-        "pct": 94.1
+        "count": 23,
+        "pct": 95.8
       },
       "editorial_alarm": {
-        "count": 2,
-        "pct": 5.9
+        "count": 1,
+        "pct": 4.2
       },
       "untyped": {
         "count": 0,
@@ -229216,9 +229186,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7625,
+      "total_mint": 7626,
       "direct_action": {
-        "count": 6987,
+        "count": 6988,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229231,9 +229201,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 9,
-      "institutional": 27,
-      "citizen_ratio": 0.25,
+      "citizen": 7,
+      "institutional": 19,
+      "citizen_ratio": 0.269,
       "daily": [
         {
           "date": "2026-11-13",
@@ -229268,7 +229238,7 @@
         {
           "date": "2026-11-19",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -229278,11 +229248,10 @@
         9904,
         9903,
         9894,
-        9891,
-        9888,
-        9883
+        9891
       ],
       "event_ids_institutional": [
+        9916,
         9915,
         9914,
         9913,
@@ -229300,16 +229269,7 @@
         9896,
         9895,
         9893,
-        9892,
-        9890,
-        9889,
-        9887,
-        9886,
-        9885,
-        9884,
-        9882,
-        9881,
-        9880
+        9892
       ]
     }
   }
