@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-18T23:12:04.577452+00:00",
-  "total_events": 9913,
+  "generated_at": "2026-11-19T02:13:06.113920+00:00",
+  "total_events": 9914,
   "total_burned": 8201828095,
-  "total_minted": 12123537049,
+  "total_minted": 12124069049,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9914,
+      "event_title": "US launched unarmed ICBM test hours before Trump's Air Force One landed in China",
+      "event_url": "https://www.scmp.com/news/china/military/article/3374979/us-launched-unarmed-icbm-test-hours-trumps-air-force-one-landed-china",
+      "event_source": "South China Morning Post",
+      "decision": "MINT",
+      "amount_crbn": 532000,
+      "final_score": -1.45,
+      "confidence": 8,
+      "justification": "The unarmed ICBM test heightens nuclear tension and risks an arms race, outweighing its safety benefits. | While the test may improve safety of the existing deterrent, it primarily heightens nuclear tension and undermines disarmament goals, resulting in a net negative ethical impact.",
+      "tx_hash": "MDbq8Hs85scQnh16w4btNJvWkkEs5FanxsSaDbm1mDDSL78ymGPAedH2b7J6PkBo71dJM65tJ3bVdVTY2HWCCYj",
+      "created_at": "2026-11-19T02:13:02.448044+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Ensures reliability of the nuclear deterrent, reducing risk of accidental launch\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Demonstrates and normalizes nuclear weapons capability, increasing geopolitical tension and arms‑race risk\", \"affected_sdgs\": [16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 9913,
       "event_title": "JUDICIAL TRIBUNAL: Judge Hartle's defence weighs dismissal bid after witnesses say no racial slur was reported",
@@ -228747,17 +228770,12 @@
       {
         "country": "United States",
         "count": 11,
-        "total_amount": 6971220
+        "total_amount": 7251220
       },
       {
         "country": "Germany",
         "count": 4,
         "total_amount": 1267260
-      },
-      {
-        "country": "Brazil",
-        "count": 2,
-        "total_amount": 354100
       },
       {
         "country": "Netherlands",
@@ -228768,6 +228786,11 @@
         "country": "Indonesia",
         "count": 2,
         "total_amount": 122500
+      },
+      {
+        "country": "Israel",
+        "count": 2,
+        "total_amount": 421040
       }
     ],
     "top_countries_burn": [
@@ -228801,7 +228824,7 @@
       {
         "region": "Latin America",
         "burn_ratio": 0.0,
-        "events": 6
+        "events": 3
       },
       {
         "region": "Asia",
@@ -228818,7 +228841,7 @@
       {
         "region": "Latin America",
         "mint_ratio": 1.0,
-        "events": 6
+        "events": 3
       },
       {
         "region": "Asia",
@@ -228842,11 +228865,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-12",
-        "net_minted": 40491420,
-        "net_burned": 220000
-      },
       {
         "date": "2026-11-13",
         "net_minted": 477300,
@@ -228876,6 +228894,11 @@
         "date": "2026-11-18",
         "net_minted": 1078420,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-19",
+        "net_minted": 532000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -228892,13 +228915,14 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 3,
-        "negative": 62,
+        "negative": 56,
         "event_ids_positive": [
           9908,
           9903,
           9878
         ],
         "event_ids_negative": [
+          9914,
           9913,
           9912,
           9911,
@@ -228953,24 +228977,18 @@
           9859,
           9858,
           9857,
-          9856,
-          9855,
-          9854,
-          9853,
-          9852,
-          9851,
-          9850,
-          9849
+          9856
         ]
       },
       "UDHR": {
         "positive": 2,
-        "negative": 47,
+        "negative": 42,
         "event_ids_positive": [
           9903,
           9878
         ],
         "event_ids_negative": [
+          9914,
           9913,
           9912,
           9911,
@@ -229011,25 +229029,18 @@
           9860,
           9859,
           9857,
-          9856,
-          9855,
-          9853,
-          9852,
-          9851,
-          9850,
-          9849
+          9856
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 5,
+        "negative": 4,
         "event_ids_positive": [],
         "event_ids_negative": [
           9897,
           9881,
           9880,
-          9869,
-          9853
+          9869
         ]
       },
       "CRC": {
@@ -229063,19 +229074,18 @@
       },
       "Animal": {
         "positive": 0,
-        "negative": 5,
+        "negative": 4,
         "event_ids_positive": [],
         "event_ids_negative": [
           9898,
           9889,
           9876,
-          9867,
-          9854
+          9867
         ]
       },
       "PB": {
         "positive": 2,
-        "negative": 19,
+        "negative": 17,
         "event_ids_positive": [
           9908,
           9903
@@ -229097,30 +229107,28 @@
           9869,
           9868,
           9863,
-          9858,
-          9854,
-          9851
+          9858
         ]
       }
     },
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 49,
-      "articles_processed": 65
+      "total_sources_used": 43,
+      "articles_processed": 59
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 65,
+      "total_events": 59,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "COP",
-        "count": 8,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 8,
+        "mint_count": 7,
         "event_ids": [
           9907,
           9893,
@@ -229128,30 +229136,18 @@
           9882,
           9875,
           9868,
-          9864,
-          9851
+          9864
         ]
       },
       {
         "name": "UN",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           9870,
           9868,
-          9857,
-          9851
-        ]
-      },
-      {
-        "name": "WHO",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9858,
-          9852
+          9857
         ]
       },
       {
@@ -229180,6 +229176,15 @@
         "event_ids": [
           9867
         ]
+      },
+      {
+        "name": "WHO",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9858
+        ]
       }
     ],
     "top_sectors_7d": [
@@ -229189,39 +229194,26 @@
         "burn_count": 0,
         "mint_count": 7,
         "event_ids": [
+          9914,
           9910,
           9897,
           9896,
           9883,
           9869,
-          9858,
-          9851
+          9858
         ]
       },
       {
         "name": "Finance",
-        "count": 6,
+        "count": 5,
         "burn_count": 1,
-        "mint_count": 5,
+        "mint_count": 4,
         "event_ids": [
           9903,
           9887,
           9885,
           9882,
-          9875,
-          9851
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 4,
-        "burn_count": 1,
-        "mint_count": 3,
-        "event_ids": [
-          9894,
-          9878,
-          9865,
-          9850
+          9875
         ]
       },
       {
@@ -229244,6 +229236,17 @@
           9906,
           9888,
           9884
+        ]
+      },
+      {
+        "name": "Tech",
+        "count": 3,
+        "burn_count": 1,
+        "mint_count": 2,
+        "event_ids": [
+          9894,
+          9878,
+          9865
         ]
       },
       {
@@ -229306,14 +229309,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 62,
+      "total_mint": 56,
       "direct_action": {
-        "count": 58,
-        "pct": 93.5
+        "count": 52,
+        "pct": 92.9
       },
       "editorial_alarm": {
         "count": 4,
-        "pct": 6.5
+        "pct": 7.1
       },
       "untyped": {
         "count": 0,
@@ -229321,9 +229324,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7623,
+      "total_mint": 7624,
       "direct_action": {
-        "count": 6985,
+        "count": 6986,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229336,15 +229339,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 13,
-      "institutional": 52,
-      "citizen_ratio": 0.2,
+      "citizen": 12,
+      "institutional": 47,
+      "citizen_ratio": 0.203,
       "daily": [
-        {
-          "date": "2026-11-12",
-          "citizen": 8,
-          "institutional": 38
-        },
         {
           "date": "2026-11-13",
           "citizen": 0,
@@ -229374,6 +229372,11 @@
           "date": "2026-11-18",
           "citizen": 1,
           "institutional": 3
+        },
+        {
+          "date": "2026-11-19",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -229388,10 +229391,10 @@
         9883,
         9875,
         9867,
-        9858,
-        9854
+        9858
       ],
       "event_ids_institutional": [
+        9914,
         9913,
         9912,
         9911,
@@ -229437,13 +229440,7 @@
         9860,
         9859,
         9857,
-        9856,
-        9855,
-        9853,
-        9852,
-        9851,
-        9850,
-        9849
+        9856
       ]
     }
   }
