@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-20T20:17:02.851636+00:00",
-  "total_events": 9923,
+  "generated_at": "2026-11-20T21:13:09.263234+00:00",
+  "total_events": 9924,
   "total_burned": 8201828095,
-  "total_minted": 12158030359,
+  "total_minted": 12158706359,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9924,
+      "event_title": "Tunisia: Authorities escalate assault on human rights with five-year prison sentence for Sihem Ben Sedrine",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/11/tunisia-authorities-escalate-assault-on-human-rights-with-five-year-prison-sentence-for-sihem-ben-sedrine/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.07,
+      "confidence": 8,
+      "justification": "The punitive sentencing harms fundamental rights and outweighs any procedural justification. | The sentencing represents a severe violation of fundamental human rights and undermines peace, justice and gender equality. While it shows state enforcement of law, the negative impact on civil liberties far outweighs any procedural legitimacy.",
+      "tx_hash": "5tYtrbRSWzRvq8Pa6pbbdM3q7bLTXw3wzNPXHTzyb863hp9PacvtRq39MjGoNX5scKW9Bhv1wkV79SnqP3BdDwoa",
+      "created_at": "2026-11-20T21:13:05.890817+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Tunisia",
+      "region": "MENA",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Five-year prison sentence for human rights defender Sihem Ben Sedrine suppresses freedom of expression and civil society participation.\", \"affected_sdgs\": [16, 5, 10], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 20\", \"UDHR Article 21\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 676000
+    },
     {
       "id": 9923,
       "event_title": "Political pressure leaves UN climate science panel without funding for 2027",
@@ -228985,6 +229008,11 @@
         "total_amount": 606260
       },
       {
+        "country": "Tunisia",
+        "count": 1,
+        "total_amount": 676000
+      },
+      {
         "country": "Indonesia",
         "count": 1,
         "total_amount": 3520
@@ -228993,11 +229021,6 @@
         "country": "Turkey",
         "count": 1,
         "total_amount": 2260
-      },
-      {
-        "country": "Russia",
-        "count": 1,
-        "total_amount": 4780
       }
     ],
     "top_countries_burn": [
@@ -229069,7 +229092,7 @@
       },
       {
         "date": "2026-11-20",
-        "net_minted": 28010310,
+        "net_minted": 28686310,
         "net_burned": 0
       }
     ],
@@ -229087,12 +229110,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 24,
+        "negative": 25,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9924,
           9923,
           9922,
           9921,
@@ -229121,11 +229145,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9924,
           9923,
           9919,
           9918,
@@ -229202,12 +229227,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 23,
-      "articles_processed": 26
+      "total_sources_used": 24,
+      "articles_processed": 27
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 26,
+      "total_events": 27,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229363,14 +229388,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 24,
+      "total_mint": 25,
       "direct_action": {
-        "count": 22,
-        "pct": 91.7
+        "count": 23,
+        "pct": 92.0
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 8.3
+        "pct": 8.0
       },
       "untyped": {
         "count": 0,
@@ -229378,9 +229403,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7633,
+      "total_mint": 7634,
       "direct_action": {
-        "count": 6994,
+        "count": 6995,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229394,8 +229419,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 18,
-      "citizen_ratio": 0.308,
+      "institutional": 19,
+      "citizen_ratio": 0.296,
       "daily": [
         {
           "date": "2026-11-14",
@@ -229430,7 +229455,7 @@
         {
           "date": "2026-11-20",
           "citizen": 3,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -229444,6 +229469,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9924,
         9923,
         9920,
         9919,
