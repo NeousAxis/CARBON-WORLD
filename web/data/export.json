@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-20T15:18:07.588344+00:00",
-  "total_events": 9921,
+  "generated_at": "2026-11-20T16:10:22.807847+00:00",
+  "total_events": 9922,
   "total_burned": 8201828095,
-  "total_minted": 12141523089,
+  "total_minted": 12141526609,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9922,
+      "event_title": "The Mentawai Bilou Voice Increasingly Rarely Heard in the Siberut Forest",
+      "event_url": "https://mongabay.co.id/2026/11/20/suara-bilou-yang-kian-jarang-terdengar-di-hutan-siberut/",
+      "event_source": "Mongabay Indonesia",
+      "decision": "MINT",
+      "amount_crbn": 3520,
+      "final_score": -0.33,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Conservation feature on Siberut shows modest gains but documents cultural and ecological decline; low-confidence net negative. | The article is a feature describing conservation work by Kalaweit and a documented decline in a Mentawai cultural and ecological marker. The positive contributions are real but modest and unquantified in the excerpt, while the reported decline points to erosion of indigenous knowledge and forest biodiver",
+      "tx_hash": "3PSX6o57kH5YYopMuBtWWhZvG7GzisRjhSWca6KozKnEseVRXV5prJzDhkJEjxoXL3CJmzXdSqpokWhYg2yp5q5F",
+      "created_at": "2026-11-20T16:10:19.837894+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Kalaweit staff conduct primate conservation work on Siberut, Mentawai, including field deployment to the northern island\", \"affected_sdgs\": [15], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}, {\"description\": \"Mongabay Indonesia documents Mentawai cultural and ecological knowledge (the bilou voice), giving visibility to local heritage\", \"affected_sdgs\": [4, 11], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UNDRIP\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Article reports the bilou voice is heard less often in Siberut forest, signalling erosion of Mentawai cultural practice and possibly of the forest soundscape and primate populations\", \"affected_sdgs\": [11, 15], \"violated_rights\": [\"UNDRIP Article 31\", \"UNDRIP Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UNDRIP\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
     {
       "id": 9921,
       "event_title": "Greenpeace Türkiye activists display banners at Hadrian's Gate reminding COP31 delegates of climate stakes",
@@ -228939,6 +228962,11 @@
         "total_amount": 606260
       },
       {
+        "country": "Indonesia",
+        "count": 1,
+        "total_amount": 3520
+      },
+      {
         "country": "Turkey",
         "count": 1,
         "total_amount": 2260
@@ -228947,11 +228975,6 @@
         "country": "Russia",
         "count": 1,
         "total_amount": 4780
-      },
-      {
-        "country": "South Africa",
-        "count": 1,
-        "total_amount": 478000
       }
     ],
     "top_countries_burn": [
@@ -229023,7 +229046,7 @@
       },
       {
         "date": "2026-11-20",
-        "net_minted": 11503040,
+        "net_minted": 11506560,
         "net_burned": 0
       }
     ],
@@ -229041,12 +229064,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 22,
+        "negative": 23,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9922,
           9921,
           9920,
           9919,
@@ -229115,28 +229139,31 @@
       },
       "UNDRIP": {
         "positive": 0,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9922,
           9910
         ]
       },
       "Animal": {
         "positive": 0,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9922,
           9898
         ]
       },
       "PB": {
         "positive": 2,
-        "negative": 6,
+        "negative": 7,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9922,
           9920,
           9912,
           9911,
@@ -229149,12 +229176,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 21,
-      "articles_processed": 24
+      "total_sources_used": 22,
+      "articles_processed": 25
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 24,
+      "total_events": 25,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229212,6 +229239,15 @@
         "event_ids": [
           9918,
           9910
+        ]
+      },
+      {
+        "name": "Forestry",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9922
         ]
       },
       {
@@ -229282,14 +229318,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 22,
+      "total_mint": 23,
       "direct_action": {
-        "count": 20,
-        "pct": 90.9
+        "count": 21,
+        "pct": 91.3
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 9.1
+        "pct": 8.7
       },
       "untyped": {
         "count": 0,
@@ -229297,9 +229333,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7631,
+      "total_mint": 7632,
       "direct_action": {
-        "count": 6992,
+        "count": 6993,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229312,9 +229348,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 7,
+      "citizen": 8,
       "institutional": 17,
-      "citizen_ratio": 0.292,
+      "citizen_ratio": 0.32,
       "daily": [
         {
           "date": "2026-11-14",
@@ -229348,11 +229384,12 @@
         },
         {
           "date": "2026-11-20",
-          "citizen": 2,
+          "citizen": 3,
           "institutional": 3
         }
       ],
       "event_ids_citizen": [
+        9922,
         9921,
         9918,
         9910,
