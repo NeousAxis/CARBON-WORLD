@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-20T04:07:40.948334+00:00",
-  "total_events": 9917,
+  "generated_at": "2026-11-20T08:11:28.393105+00:00",
+  "total_events": 9918,
   "total_burned": 8201828095,
-  "total_minted": 12130024829,
+  "total_minted": 12130700829,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9918,
+      "event_title": "As black lung disease surges, the Trump administration proposes 'deregulatory' protections for miners",
+      "event_url": "https://grist.org/health/as-black-lung-disease-surges-the-trump-administration-proposes-deregulatory-protections-for-miners/",
+      "event_source": "Grist Solutions",
+      "decision": "MINT",
+      "amount_crbn": 676000,
+      "final_score": -3.2,
+      "confidence": 8,
+      "justification": "The deregulation proposal harms miner health and violates labor rights, outweighing any economic benefit. | While the proposal may offer short‑term economic relief for the mining sector, it substantially endangers miners' health and breaches fundamental labor and human rights. The net ethical balance is clearly negative.",
+      "tx_hash": "V4V4WEHK3iJ6sdHKegkTeahxPdLeZ615bdc7tR8B3S6PBNgrkXYoVCnfG9FzLQatmhdSsZf25STENWQKrngFsP9",
+      "created_at": "2026-11-20T08:11:25.217360+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Proposed deregulation aims to lower compliance costs for mining companies, potentially preserving jobs and supporting industry growth.\", \"affected_sdgs\": [8, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Deregulation reduces occupational health protections, increasing risk of black lung disease among miners and violating the right to health and safe work conditions.\", \"affected_sdgs\": [3, 8], \"violated_rights\": [\"UDHR Article 25\", \"ILO Convention 155\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "editorial_alarm",
+      "amount_index": 676000
+    },
     {
       "id": 9917,
       "event_title": "'Humanitarian mission' for Kostiantynivka: Is it a trap?",
@@ -228839,7 +228862,7 @@
       {
         "country": "United States",
         "count": 11,
-        "total_amount": 7715020
+        "total_amount": 8337820
       },
       {
         "country": "Germany",
@@ -228931,20 +228954,20 @@
       },
       {
         "date": "2026-11-20",
-        "net_minted": 4780,
+        "net_minted": 680780,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9915,
-      "event_title": "Trump Intel Pick Calls $1 Million Bribe for a Pardon a \"Complicated Legal Question\"",
+      "id": 9918,
+      "event_title": "As black lung disease surges, the Trump administration proposes 'deregulatory' protections for miners",
       "decision": "MINT",
-      "amount_crbn": 541000,
-      "final_score": -2.75,
-      "confidence": 7,
+      "amount_crbn": 676000,
+      "final_score": -3.2,
+      "confidence": 8,
       "country": "United States",
       "region": "North America",
-      "created_at": "2026-11-19T11:06:49.406356+00:00"
+      "created_at": "2026-11-20T08:11:25.217360+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
@@ -228955,6 +228978,7 @@
           9903
         ],
         "event_ids_negative": [
+          9918,
           9917,
           9916,
           9915,
@@ -228974,8 +228998,7 @@
           9899,
           9898,
           9897,
-          9896,
-          9895
+          9896
         ]
       },
       "UDHR": {
@@ -228985,6 +229008,7 @@
           9903
         ],
         "event_ids_negative": [
+          9918,
           9917,
           9916,
           9915,
@@ -229001,15 +229025,15 @@
           9900,
           9899,
           9897,
-          9896,
-          9895
+          9896
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9918,
           9897
         ]
       },
@@ -229113,21 +229137,22 @@
         ]
       },
       {
+        "name": "Mining",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9918,
+          9910
+        ]
+      },
+      {
         "name": "Tech",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
           9915
-        ]
-      },
-      {
-        "name": "Mining",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9910
         ]
       },
       {
@@ -229191,12 +229216,12 @@
     "mint_composition_7d": {
       "total_mint": 21,
       "direct_action": {
-        "count": 20,
-        "pct": 95.2
+        "count": 19,
+        "pct": 90.5
       },
       "editorial_alarm": {
-        "count": 1,
-        "pct": 4.8
+        "count": 2,
+        "pct": 9.5
       },
       "untyped": {
         "count": 0,
@@ -229204,13 +229229,13 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7627,
+      "total_mint": 7628,
       "direct_action": {
         "count": 6989,
         "pct": 91.6
       },
       "editorial_alarm": {
-        "count": 541,
+        "count": 542,
         "pct": 7.1
       },
       "untyped": {
@@ -229219,9 +229244,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 5,
-      "institutional": 18,
-      "citizen_ratio": 0.217,
+      "citizen": 6,
+      "institutional": 17,
+      "citizen_ratio": 0.261,
       "daily": [
         {
           "date": "2026-11-14",
@@ -229255,11 +229280,12 @@
         },
         {
           "date": "2026-11-20",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        9918,
         9910,
         9908,
         9905,
@@ -229283,8 +229309,7 @@
         9899,
         9898,
         9897,
-        9896,
-        9895
+        9896
       ]
     }
   }
