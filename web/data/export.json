@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-19T15:17:34.193095+00:00",
-  "total_events": 9916,
+  "generated_at": "2026-11-20T04:07:40.948334+00:00",
+  "total_events": 9917,
   "total_burned": 8201828095,
-  "total_minted": 12130020049,
+  "total_minted": 12130024829,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9917,
+      "event_title": "'Humanitarian mission' for Kostiantynivka: Is it a trap?",
+      "event_url": "https://www.dw.com/en/humanitarian-mission-for-kostiantynivka-is-it-a-trap/a-79996772?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 4780,
+      "final_score": -2.1,
+      "confidence": 7,
+      "justification": "Risk of civilian harm outweighs uncertain humanitarian benefit. | While the evacuation proposal could spare civilians, the high risk of it being a military ploy that forces displacement and endangers lives outweighs the potential benefit, leading to a net negative assessment.",
+      "tx_hash": "65Yrei9yRDkWXe9jRcnygnNgBqBkmaWcHFKUBfF6UZh9gSHcKwTiZETjCBA6fF5VzC8aB6XRkGuPjcvKnMsKecBt",
+      "created_at": "2026-11-20T04:07:37.574464+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"Proposed evacuation could protect civilians from combat\", \"affected_sdgs\": [3, 11, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Evacuation proposal may be used as a military trap, risking forced displacement and civilian casualties\", \"affected_sdgs\": [3, 11, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 13\", \"CRC Article 3\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9916,
       "event_title": "Fossil fuel lobbyists are trying to derail climate action once again at COP31. Can they be stopped?",
@@ -228824,9 +228847,9 @@
         "total_amount": 606260
       },
       {
-        "country": "Netherlands",
-        "count": 2,
-        "total_amount": 522500
+        "country": "Russia",
+        "count": 1,
+        "total_amount": 4780
       },
       {
         "country": "South Africa",
@@ -228860,14 +228883,14 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 5
+        "events": 4
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 5
+        "events": 4
       },
       {
         "region": "North America",
@@ -228876,11 +228899,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-13",
-        "net_minted": 477300,
-        "net_burned": 0
-      },
       {
         "date": "2026-11-14",
         "net_minted": 5840500,
@@ -228910,6 +228928,11 @@
         "date": "2026-11-19",
         "net_minted": 6483000,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-20",
+        "net_minted": 4780,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -228926,12 +228949,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 24,
+        "negative": 21,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9917,
           9916,
           9915,
           9914,
@@ -228951,20 +228975,17 @@
           9898,
           9897,
           9896,
-          9895,
-          9894,
-          9893,
-          9892,
-          9891
+          9895
         ]
       },
       "UDHR": {
         "positive": 1,
-        "negative": 21,
+        "negative": 18,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9917,
           9916,
           9915,
           9914,
@@ -228981,11 +229002,7 @@
           9899,
           9897,
           9896,
-          9895,
-          9894,
-          9893,
-          9892,
-          9891
+          9895
         ]
       },
       "ILO": {
@@ -228998,9 +229015,11 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 0,
+        "negative": 1,
         "event_ids_positive": [],
-        "event_ids_negative": []
+        "event_ids_negative": [
+          9917
+        ]
       },
       "UNDRIP": {
         "positive": 0,
@@ -229038,25 +229057,24 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 22,
-      "articles_processed": 26
+      "total_sources_used": 20,
+      "articles_processed": 23
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 26,
+      "total_events": 23,
       "pct": 0.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
       {
         "name": "COP",
-        "count": 3,
+        "count": 2,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 2,
         "event_ids": [
           9916,
-          9907,
-          9893
+          9907
         ]
       },
       {
@@ -229084,23 +229102,23 @@
         ]
       },
       {
-        "name": "Tech",
-        "count": 2,
+        "name": "Defense",
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
-          9915,
-          9894
+          9917,
+          9912,
+          9899
         ]
       },
       {
-        "name": "Defense",
-        "count": 2,
+        "name": "Tech",
+        "count": 1,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 1,
         "event_ids": [
-          9912,
-          9899
+          9915
         ]
       },
       {
@@ -229171,14 +229189,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 24,
+      "total_mint": 21,
       "direct_action": {
-        "count": 23,
-        "pct": 95.8
+        "count": 20,
+        "pct": 95.2
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 4.2
+        "pct": 4.8
       },
       "untyped": {
         "count": 0,
@@ -229186,9 +229204,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7626,
+      "total_mint": 7627,
       "direct_action": {
-        "count": 6988,
+        "count": 6989,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229201,15 +229219,10 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 7,
-      "institutional": 19,
-      "citizen_ratio": 0.269,
+      "citizen": 5,
+      "institutional": 18,
+      "citizen_ratio": 0.217,
       "daily": [
-        {
-          "date": "2026-11-13",
-          "citizen": 0,
-          "institutional": 3
-        },
         {
           "date": "2026-11-14",
           "citizen": 0,
@@ -229239,6 +229252,11 @@
           "date": "2026-11-19",
           "citizen": 0,
           "institutional": 3
+        },
+        {
+          "date": "2026-11-20",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -229246,11 +229264,10 @@
         9908,
         9905,
         9904,
-        9903,
-        9894,
-        9891
+        9903
       ],
       "event_ids_institutional": [
+        9917,
         9916,
         9915,
         9914,
@@ -229267,9 +229284,7 @@
         9898,
         9897,
         9896,
-        9895,
-        9893,
-        9892
+        9895
       ]
     }
   }
