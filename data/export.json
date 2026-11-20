@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-20T14:17:03.447735+00:00",
-  "total_events": 9920,
+  "generated_at": "2026-11-20T15:18:07.588344+00:00",
+  "total_events": 9921,
   "total_burned": 8201828095,
-  "total_minted": 12141520829,
+  "total_minted": 12141523089,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9921,
+      "event_title": "Greenpeace Türkiye activists display banners at Hadrian's Gate reminding COP31 delegates of climate stakes",
+      "event_url": "https://mastodon.social/@greenpeace/117648424446149297",
+      "event_source": "Mastodon @greenpeace@mastodon.social",
+      "decision": "MINT",
+      "amount_crbn": 2260,
+      "final_score": 1.44,
+      "confidence": 7,
+      "justification": "Small local protest yields limited impact, resulting in a net negative score. | The banner demonstration increased climate awareness and supported SDG 13 and 17, but its limited scale and lack of concrete policy impact result in a modest overall effect. While positive, the action's small reach leads to a net negative quantitative score under the CARBON framework.",
+      "tx_hash": "3Yvtz1NJ3d1oc7k963pUyX3fQFmBHvCiv4RuEdare2akdmk53gVRCHqu4ti8Y77Ry6xnbmH4RGiUdKzGCpEeXYZJ",
+      "created_at": "2026-11-20T15:17:48.958079+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Turkey",
+      "region": "MENA",
+      "administration": "Turkey-AKP",
+      "positive_aspects_json": "[{\"description\": \"Greenpeace Türkiye activists displayed climate-awareness banners at Hadrian's Gate, raising public awareness of COP31 stakes.\", \"affected_sdgs\": [13, 17], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 2260
+    },
     {
       "id": 9920,
       "event_title": "Saudis make deal with Japan to replenish depleted oil stockpiles",
@@ -228916,6 +228939,11 @@
         "total_amount": 606260
       },
       {
+        "country": "Turkey",
+        "count": 1,
+        "total_amount": 2260
+      },
+      {
         "country": "Russia",
         "count": 1,
         "total_amount": 4780
@@ -228924,11 +228952,6 @@
         "country": "South Africa",
         "count": 1,
         "total_amount": 478000
-      },
-      {
-        "country": "Brazil",
-        "count": 1,
-        "total_amount": 54100
       }
     ],
     "top_countries_burn": [
@@ -229000,7 +229023,7 @@
       },
       {
         "date": "2026-11-20",
-        "net_minted": 11500780,
+        "net_minted": 11503040,
         "net_burned": 0
       }
     ],
@@ -229024,6 +229047,7 @@
           9903
         ],
         "event_ids_negative": [
+          9921,
           9920,
           9919,
           9918,
@@ -229044,13 +229068,12 @@
           9901,
           9900,
           9899,
-          9898,
-          9897
+          9898
         ]
       },
       "UDHR": {
         "positive": 1,
-        "negative": 18,
+        "negative": 17,
         "event_ids_positive": [
           9903
         ],
@@ -229071,17 +229094,15 @@
           9902,
           9901,
           9900,
-          9899,
-          9897
+          9899
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 2,
+        "negative": 1,
         "event_ids_positive": [],
         "event_ids_negative": [
-          9918,
-          9897
+          9918
         ]
       },
       "CRC": {
@@ -229110,7 +229131,7 @@
       },
       "PB": {
         "positive": 2,
-        "negative": 7,
+        "negative": 6,
         "event_ids_positive": [
           9908,
           9903
@@ -229121,8 +229142,7 @@
           9911,
           9910,
           9905,
-          9898,
-          9897
+          9898
         ]
       }
     },
@@ -229141,10 +229161,11 @@
     "top_institutions_7d": [
       {
         "name": "COP",
-        "count": 2,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 3,
         "event_ids": [
+          9921,
           9916,
           9907
         ]
@@ -229162,15 +229183,14 @@
     "top_sectors_7d": [
       {
         "name": "Energy",
-        "count": 5,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 5,
+        "mint_count": 4,
         "event_ids": [
           9920,
           9916,
           9914,
-          9910,
-          9897
+          9910
         ]
       },
       {
@@ -229277,9 +229297,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7630,
+      "total_mint": 7631,
       "direct_action": {
-        "count": 6991,
+        "count": 6992,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229292,9 +229312,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 6,
-      "institutional": 18,
-      "citizen_ratio": 0.25,
+      "citizen": 7,
+      "institutional": 17,
+      "citizen_ratio": 0.292,
       "daily": [
         {
           "date": "2026-11-14",
@@ -229328,11 +229348,12 @@
         },
         {
           "date": "2026-11-20",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 3
         }
       ],
       "event_ids_citizen": [
+        9921,
         9918,
         9910,
         9908,
@@ -229357,8 +229378,7 @@
         9901,
         9900,
         9899,
-        9898,
-        9897
+        9898
       ]
     }
   }
