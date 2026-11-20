@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-20T16:10:22.807847+00:00",
-  "total_events": 9922,
+  "generated_at": "2026-11-20T19:09:53.468707+00:00",
+  "total_events": 9923,
   "total_burned": 8201828095,
-  "total_minted": 12141526609,
+  "total_minted": 12158030359,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9923,
+      "event_title": "Political pressure leaves UN climate science panel without funding for 2027",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/11/pressao-politica-deixa-painel-de-ciencia-climatica-da-onu-sem-dinheiro-para-2027.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 16503750,
+      "final_score": -3.89,
+      "confidence": 7,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=MINT -> MINT (human chose this in 87% of 272 past reviews)] Funding denial critically harms climate science and related rights, warranting a negative token action. | The denial of IPCC funding undermines climate research, violates the right to benefit from scientific progress, and hampers multiple SDGs, resulting in a strongly negative ethical balance.",
+      "tx_hash": "YG1GnfD1MqLdJbEWUVRJpmdkbMvoKucjqjBQ4LLyNxXn2rvMDmooBJNP21MpNKHHBvkMPivhUvHHKTYSzhuTdkn",
+      "created_at": "2026-11-20T19:09:49.249807+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"UN member states failed to approve funding for the IPCC for 2027, risking paralysis of global climate science activities.\", \"affected_sdgs\": [13, 7], \"violated_rights\": [\"UDHR Article 27\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 9922,
       "event_title": "The Mentawai Bilou Voice Increasingly Rarely Heard in the Siberut Forest",
@@ -229046,30 +229069,31 @@
       },
       {
         "date": "2026-11-20",
-        "net_minted": 11506560,
+        "net_minted": 28010310,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9918,
-      "event_title": "As black lung disease surges, the Trump administration proposes 'deregulatory' protections for miners",
+      "id": 9923,
+      "event_title": "Political pressure leaves UN climate science panel without funding for 2027",
       "decision": "MINT",
-      "amount_crbn": 676000,
-      "final_score": -3.2,
-      "confidence": 8,
-      "country": "United States",
-      "region": "North America",
-      "created_at": "2026-11-20T08:11:25.217360+00:00"
+      "amount_crbn": 16503750,
+      "final_score": -3.89,
+      "confidence": 7,
+      "country": null,
+      "region": null,
+      "created_at": "2026-11-20T19:09:49.249807+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 23,
+        "negative": 24,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9923,
           9922,
           9921,
           9920,
@@ -229097,11 +229121,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9923,
           9919,
           9918,
           9917,
@@ -229157,12 +229182,13 @@
       },
       "PB": {
         "positive": 2,
-        "negative": 7,
+        "negative": 8,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9923,
           9922,
           9920,
           9912,
@@ -229176,12 +229202,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 22,
-      "articles_processed": 25
+      "total_sources_used": 23,
+      "articles_processed": 26
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 25,
+      "total_events": 26,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229195,6 +229221,24 @@
           9921,
           9916,
           9907
+        ]
+      },
+      {
+        "name": "UN",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9923
+        ]
+      },
+      {
+        "name": "IPCC",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9923
         ]
       },
       {
@@ -229232,6 +229276,16 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 2,
+        "burn_count": 1,
+        "mint_count": 1,
+        "event_ids": [
+          9923,
+          9903
+        ]
+      },
+      {
         "name": "Mining",
         "count": 2,
         "burn_count": 0,
@@ -229266,15 +229320,6 @@
         "mint_count": 1,
         "event_ids": [
           9906
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          9903
         ]
       },
       {
@@ -229318,14 +229363,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 23,
+      "total_mint": 24,
       "direct_action": {
-        "count": 21,
-        "pct": 91.3
+        "count": 22,
+        "pct": 91.7
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 8.7
+        "pct": 8.3
       },
       "untyped": {
         "count": 0,
@@ -229333,9 +229378,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7632,
+      "total_mint": 7633,
       "direct_action": {
-        "count": 6993,
+        "count": 6994,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229349,8 +229394,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 17,
-      "citizen_ratio": 0.32,
+      "institutional": 18,
+      "citizen_ratio": 0.308,
       "daily": [
         {
           "date": "2026-11-14",
@@ -229385,7 +229430,7 @@
         {
           "date": "2026-11-20",
           "citizen": 3,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -229399,6 +229444,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9923,
         9920,
         9919,
         9917,
