@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-20T10:11:00.188518+00:00",
-  "total_events": 9919,
+  "generated_at": "2026-11-20T13:12:29.840659+00:00",
+  "total_events": 9920,
   "total_burned": 8201828095,
-  "total_minted": 12135480829,
+  "total_minted": 12141520829,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9920,
+      "event_title": "Saudis make deal with Japan to replenish depleted oil stockpiles",
+      "event_url": "https://www.japantimes.co.jp/business/2026/11/20/saudi-japan-oil-deal/",
+      "event_source": "Japan Times",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.23,
+      "confidence": 7,
+      "justification": "The agreement raises emissions far more than its energy‑security benefits, warranting a negative token action. | While the deal boosts energy security and economic activity, it substantially raises emissions and hampers climate goals, resulting in a net negative ethical impact.",
+      "tx_hash": "3HbZ2mKGkfHCYvHL6zQK4eP8P7JVbZQJBreajbysvJBA6MvNmeibAgMU31cAgG2NLu3HgyyjpAMSep1NLMb8y4tZ",
+      "created_at": "2026-11-20T13:12:26.509550+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The oil supply agreement improves Japan's energy security and supports Saudi Arabia's economic growth.\", \"affected_sdgs\": [7, 8], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Increased fossil‑fuel supply accelerates greenhouse‑gas emissions, undermining climate action and responsible consumption.\", \"affected_sdgs\": [13, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9919,
       "event_title": "How tensions between DRC and Rwanda reveal divisions within La Francophonie",
@@ -228884,8 +228907,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 11,
-        "total_amount": 8337820
+        "count": 10,
+        "total_amount": 7967820
       },
       {
         "country": "Germany",
@@ -228923,8 +228946,8 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.083,
-        "events": 12
+        "burn_ratio": 0.091,
+        "events": 11
       },
       {
         "region": "Europe",
@@ -228940,8 +228963,8 @@
       },
       {
         "region": "North America",
-        "mint_ratio": 0.917,
-        "events": 12
+        "mint_ratio": 0.909,
+        "events": 11
       }
     ],
     "supply_trend_7d": [
@@ -228977,7 +229000,7 @@
       },
       {
         "date": "2026-11-20",
-        "net_minted": 5460780,
+        "net_minted": 11500780,
         "net_burned": 0
       }
     ],
@@ -229001,6 +229024,7 @@
           9903
         ],
         "event_ids_negative": [
+          9920,
           9919,
           9918,
           9917,
@@ -229021,13 +229045,12 @@
           9900,
           9899,
           9898,
-          9897,
-          9896
+          9897
         ]
       },
       "UDHR": {
         "positive": 1,
-        "negative": 19,
+        "negative": 18,
         "event_ids_positive": [
           9903
         ],
@@ -229049,8 +229072,7 @@
           9901,
           9900,
           9899,
-          9897,
-          9896
+          9897
         ]
       },
       "ILO": {
@@ -229088,12 +229110,13 @@
       },
       "PB": {
         "positive": 2,
-        "negative": 6,
+        "negative": 7,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9920,
           9912,
           9911,
           9910,
@@ -229143,11 +229166,11 @@
         "burn_count": 0,
         "mint_count": 5,
         "event_ids": [
+          9920,
           9916,
           9914,
           9910,
-          9897,
-          9896
+          9897
         ]
       },
       {
@@ -229254,9 +229277,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7629,
+      "total_mint": 7630,
       "direct_action": {
-        "count": 6990,
+        "count": 6991,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229306,7 +229329,7 @@
         {
           "date": "2026-11-20",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -229318,6 +229341,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9920,
         9919,
         9917,
         9916,
@@ -229334,8 +229358,7 @@
         9900,
         9899,
         9898,
-        9897,
-        9896
+        9897
       ]
     }
   }
