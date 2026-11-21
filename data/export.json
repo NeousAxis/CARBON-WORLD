@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-21T17:17:50.541995+00:00",
-  "total_events": 9928,
+  "generated_at": "2026-11-21T18:10:35.504848+00:00",
+  "total_events": 9929,
   "total_burned": 8201828095,
-  "total_minted": 12170986359,
+  "total_minted": 12171464359,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9929,
+      "event_title": "Presidential election: taking note of the 'impasse' of his campaign, François Ruffin withdraws his candidacy",
+      "event_url": "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature",
+      "event_source": "France 24 FR",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.47,
+      "confidence": 7,
+      "justification": "Withdrawal reduces political pluralism and undermines democratic participation. | While the withdrawal may streamline the left's electoral strategy, it chiefly harms democratic representation by narrowing voter choice and weakening pluralism, outweighing any modest efficiency gain.",
+      "tx_hash": "65QjTerg5CypSEZiCF2pFXs9nZH6vKdfAhE3W28v1roAgHvJvywLMud3CG8SAFUwXe9LHkT1hcRjrQShjz8cnob8",
+      "created_at": "2026-11-21T18:10:32.199864+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"Withdrawal prevents further campaign fragmentation and may help left‑wing voters consolidate behind remaining candidates.\", \"affected_sdgs\": [10, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Candidate withdrawal reduces political pluralism and limits voters' right to participate in a full democratic choice.\", \"affected_sdgs\": [10, 16], \"violated_rights\": [\"UDHR Article 21\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9928,
       "event_title": "EU proposes tax on Big Tech to boost budget",
@@ -229095,6 +229118,11 @@
         "total_amount": 2772820
       },
       {
+        "country": "France",
+        "count": 1,
+        "total_amount": 478000
+      },
+      {
         "country": "Tunisia",
         "count": 1,
         "total_amount": 676000
@@ -229108,11 +229136,6 @@
         "country": "Turkey",
         "count": 1,
         "total_amount": 2260
-      },
-      {
-        "country": "Russia",
-        "count": 1,
-        "total_amount": 4780
       }
     ],
     "top_countries_burn": [
@@ -229136,14 +229159,14 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 3
+        "events": 4
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 3
+        "events": 4
       },
       {
         "region": "North America",
@@ -229184,7 +229207,7 @@
       },
       {
         "date": "2026-11-21",
-        "net_minted": 12280000,
+        "net_minted": 12758000,
         "net_burned": 0
       }
     ],
@@ -229202,12 +229225,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 25,
+        "negative": 26,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9929,
           9928,
           9927,
           9926,
@@ -229237,11 +229261,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9929,
           9928,
           9926,
           9924,
@@ -229316,12 +229341,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 25,
-      "articles_processed": 27
+      "total_sources_used": 26,
+      "articles_processed": 28
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 27,
+      "total_events": 28,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229480,14 +229505,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 25,
+      "total_mint": 26,
       "direct_action": {
-        "count": 23,
-        "pct": 92.0
+        "count": 24,
+        "pct": 92.3
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 8.0
+        "pct": 7.7
       },
       "untyped": {
         "count": 0,
@@ -229495,9 +229520,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7638,
+      "total_mint": 7639,
       "direct_action": {
-        "count": 6999,
+        "count": 7000,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229511,8 +229536,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 19,
-      "citizen_ratio": 0.296,
+      "institutional": 20,
+      "citizen_ratio": 0.286,
       "daily": [
         {
           "date": "2026-11-15",
@@ -229547,7 +229572,7 @@
         {
           "date": "2026-11-21",
           "citizen": 0,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -229561,6 +229586,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9929,
         9928,
         9927,
         9926,
