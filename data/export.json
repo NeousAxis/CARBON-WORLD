@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-21T00:11:32.180944+00:00",
-  "total_events": 9925,
+  "generated_at": "2026-11-21T06:09:09.601371+00:00",
+  "total_events": 9926,
   "total_burned": 8201828095,
-  "total_minted": 12160546359,
+  "total_minted": 12166586359,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9926,
+      "event_title": "Factious climate talks enter overtime without new draft deal in sight – as it happened",
+      "event_url": "https://www.theguardian.com/world/live/2026/nov/20/cop31-climate-crisis-talks-turkey-latest-news-updates",
+      "event_source": "The Guardian Environment",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -0.96,
+      "confidence": 7,
+      "justification": "Failure to secure a draft deal outweighs awareness gains, meriting a negative (MINT) assessment. | The summit's inability to secure a draft deal represents a significant setback for global climate action, outweighing the modest positive impact of civil society awareness raising.",
+      "tx_hash": "429nRS4kdrgGKEpCW2FrLHyjiuWTfvqwaNN6Bqai7WnPq2v1KoUeyNv8WtTZ3pzoXQEYHXmrzkpbpEFo1riR8zxM",
+      "created_at": "2026-11-21T06:09:05.999371+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Civil society activists held a press conference at COP31 highlighting the summit's failure, raising awareness of climate inaction.\", \"affected_sdgs\": [13, 16, 17], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"COP31 failed to produce a new draft climate agreement, deepening divisions and delaying climate finance, sustaining fossil fuel reliance.\", \"affected_sdgs\": [13, 7, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9925,
       "event_title": "The EU and the United Kingdom turn closeness into common strength and prosperity at second bilateral summit",
@@ -229022,13 +229045,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 10,
-        "total_amount": 7967820
-      },
-      {
-        "country": "Germany",
-        "count": 2,
-        "total_amount": 606260
+        "count": 9,
+        "total_amount": 7552820
       },
       {
         "country": "Tunisia",
@@ -229044,6 +229062,11 @@
         "country": "Turkey",
         "count": 1,
         "total_amount": 2260
+      },
+      {
+        "country": "Russia",
+        "count": 1,
+        "total_amount": 4780
       }
     ],
     "top_countries_burn": [
@@ -229061,25 +229084,25 @@
     "top_regions_sustainable": [
       {
         "region": "North America",
-        "burn_ratio": 0.091,
-        "events": 11
+        "burn_ratio": 0.1,
+        "events": 10
       },
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 4
+        "events": 3
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 4
+        "events": 3
       },
       {
         "region": "North America",
-        "mint_ratio": 0.909,
-        "events": 11
+        "mint_ratio": 0.9,
+        "events": 10
       }
     ],
     "supply_trend_7d": [
@@ -229115,7 +229138,7 @@
       },
       {
         "date": "2026-11-21",
-        "net_minted": 1840000,
+        "net_minted": 7880000,
         "net_burned": 0
       }
     ],
@@ -229133,12 +229156,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 26,
+        "negative": 24,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9926,
           9925,
           9924,
           9923,
@@ -229161,19 +229185,17 @@
           9905,
           9904,
           9902,
-          9901,
-          9900,
-          9899,
-          9898
+          9901
         ]
       },
       "UDHR": {
         "positive": 1,
-        "negative": 19,
+        "negative": 18,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9926,
           9924,
           9923,
           9919,
@@ -229190,9 +229212,7 @@
           9905,
           9904,
           9902,
-          9901,
-          9900,
-          9899
+          9901
         ]
       },
       "ILO": {
@@ -229222,16 +229242,15 @@
       },
       "Animal": {
         "positive": 0,
-        "negative": 2,
+        "negative": 1,
         "event_ids_positive": [],
         "event_ids_negative": [
-          9922,
-          9898
+          9922
         ]
       },
       "PB": {
         "positive": 2,
-        "negative": 8,
+        "negative": 7,
         "event_ids_positive": [
           9908,
           9903
@@ -229243,8 +229262,7 @@
           9912,
           9911,
           9910,
-          9905,
-          9898
+          9905
         ]
       }
     },
@@ -229252,11 +229270,11 @@
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
       "total_sources_used": 25,
-      "articles_processed": 28
+      "articles_processed": 26
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 28,
+      "total_events": 26,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229323,17 +229341,6 @@
         ]
       },
       {
-        "name": "Defense",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          9917,
-          9912,
-          9899
-        ]
-      },
-      {
         "name": "Finance",
         "count": 2,
         "burn_count": 1,
@@ -229351,6 +229358,16 @@
         "event_ids": [
           9918,
           9910
+        ]
+      },
+      {
+        "name": "Defense",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9917,
+          9912
         ]
       },
       {
@@ -229421,14 +229438,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 26,
+      "total_mint": 24,
       "direct_action": {
-        "count": 24,
-        "pct": 92.3
+        "count": 22,
+        "pct": 91.7
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 7.7
+        "pct": 8.3
       },
       "untyped": {
         "count": 0,
@@ -229436,9 +229453,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7635,
+      "total_mint": 7636,
       "direct_action": {
-        "count": 6996,
+        "count": 6997,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229452,8 +229469,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 20,
-      "citizen_ratio": 0.286,
+      "institutional": 18,
+      "citizen_ratio": 0.308,
       "daily": [
         {
           "date": "2026-11-15",
@@ -229488,7 +229505,7 @@
         {
           "date": "2026-11-21",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -229502,6 +229519,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9926,
         9925,
         9924,
         9923,
@@ -229518,10 +229536,7 @@
         9907,
         9906,
         9902,
-        9901,
-        9900,
-        9899,
-        9898
+        9901
       ]
     }
   }
