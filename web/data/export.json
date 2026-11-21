@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-21T18:10:35.504848+00:00",
-  "total_events": 9929,
+  "generated_at": "2026-11-21T20:12:55.227474+00:00",
+  "total_events": 9930,
   "total_burned": 8201828095,
-  "total_minted": 12171464359,
+  "total_minted": 12177504359,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9930,
+      "event_title": "Global: States' failure to launch negotiations on an autonomous weapons treaty is a wasted opportunity",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/11/global-states-failure-to-launch-negotiations-on-an-autonomous-weapons-treaty-is-a-wasted-opportunity/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -3.02,
+      "confidence": 7,
+      "justification": "Failure to negotiate a treaty greatly increases global risk, warranting a negative (MINT) outcome. | The omission of a binding treaty represents a major setback for peace and human security, outweighing the modest benefit of keeping the issue on the agenda. The net ethical balance is strongly negative.",
+      "tx_hash": "qpcig9EtvA7Jf1jAFFXmB6VGCuPqhy4PWbMBMQsMtDp1L5Kppxk4fnLSZSREz4TBYcj2HyH5vxRzZKv91TUYfDt",
+      "created_at": "2026-11-21T20:12:51.808225+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The CCW review conference kept autonomous weapons on the agenda, preserving a platform for future dialogue.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"States failed to launch negotiations on a global autonomous weapons treaty, enabling proliferation and increasing risk to the right to life.\", \"affected_sdgs\": [3, 16], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9929,
       "event_title": "Presidential election: taking note of the 'impasse' of his campaign, François Ruffin withdraws his candidacy",
@@ -229207,30 +229230,31 @@
       },
       {
         "date": "2026-11-21",
-        "net_minted": 12758000,
+        "net_minted": 18798000,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9923,
-      "event_title": "Political pressure leaves UN climate science panel without funding for 2027",
+      "id": 9924,
+      "event_title": "Tunisia: Authorities escalate assault on human rights with five-year prison sentence for Sihem Ben Sedrine",
       "decision": "MINT",
-      "amount_crbn": 16503750,
-      "final_score": -3.89,
-      "confidence": 7,
-      "country": null,
-      "region": null,
-      "created_at": "2026-11-20T19:09:49.249807+00:00"
+      "amount_crbn": 676000,
+      "final_score": -3.07,
+      "confidence": 8,
+      "country": "Tunisia",
+      "region": "MENA",
+      "created_at": "2026-11-20T21:13:05.890817+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 26,
+        "negative": 27,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9930,
           9929,
           9928,
           9927,
@@ -229261,11 +229285,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 19,
+        "negative": 20,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9930,
           9929,
           9928,
           9926,
@@ -229342,11 +229367,11 @@
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
       "total_sources_used": 26,
-      "articles_processed": 28
+      "articles_processed": 29
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 28,
+      "total_events": 29,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229407,6 +229432,17 @@
         ]
       },
       {
+        "name": "Defense",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          9930,
+          9917,
+          9912
+        ]
+      },
+      {
         "name": "Tech",
         "count": 2,
         "burn_count": 0,
@@ -229434,16 +229470,6 @@
         "event_ids": [
           9918,
           9910
-        ]
-      },
-      {
-        "name": "Defense",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9917,
-          9912
         ]
       },
       {
@@ -229505,14 +229531,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 26,
+      "total_mint": 27,
       "direct_action": {
-        "count": 24,
-        "pct": 92.3
+        "count": 25,
+        "pct": 92.6
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 7.7
+        "pct": 7.4
       },
       "untyped": {
         "count": 0,
@@ -229520,9 +229546,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7639,
+      "total_mint": 7640,
       "direct_action": {
-        "count": 7000,
+        "count": 7001,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229536,8 +229562,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 8,
-      "institutional": 20,
-      "citizen_ratio": 0.286,
+      "institutional": 21,
+      "citizen_ratio": 0.276,
       "daily": [
         {
           "date": "2026-11-15",
@@ -229572,7 +229598,7 @@
         {
           "date": "2026-11-21",
           "citizen": 0,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -229586,6 +229612,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9930,
         9929,
         9928,
         9927,
