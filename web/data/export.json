@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-22T04:07:50.428012+00:00",
-  "total_events": 9938,
+  "generated_at": "2026-11-22T11:13:28.850806+00:00",
+  "total_events": 9940,
   "total_burned": 8201828095,
-  "total_minted": 12187165139,
+  "total_minted": 12187748139,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9940,
+      "event_title": "'One-in-2,000-year weather' to be investigated post-blackout",
+      "event_url": "https://www.abc.net.au/news/2026-11-22/eyre-peninsula-blackout-weather-to-be-investigated/107404306",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 105000,
+      "final_score": 1.52,
+      "confidence": 5,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Limited positive impact of the investigation outweighed by low overall effect and risk of delay. | The investigation is a constructive step toward better infrastructure governance, but its immediate impact is limited and risks political stall, yielding a modest net ethical benefit.",
+      "tx_hash": "2pNvoNMc8wR9qmujKb1Y9cySctn7eitJnWjWMasUc9QokGsAMkxYuX1TQh4kB7bLc6fnrjGzB27C5kQ4keyjpoSv",
+      "created_at": "2026-11-22T11:13:25.525905+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"South Australian government launches a formal investigation into the cause of the Eyre Peninsula blackout, aiming to improve grid resilience and accountability.\", \"affected_sdgs\": [7, 9, 11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The investigation could become politicised or delayed, postponing concrete remedial actions and prolonging community hardship.\", \"affected_sdgs\": [7, 9, 11], \"violated_rights\": [\"UDHR Article 19\"], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 23500
+    },
+    {
+      "id": 9939,
+      "event_title": "COP31 Bulletin Day 13: Germany rejects text moments before plenary meeting",
+      "event_url": "https://www.climatechangenews.com/2026/11/22/cop31-bulletin-day-13-new-draft-retains-electrification-goal-but-delays-adaptation-finance-and-science-decisions/",
+      "event_source": "Climate Home News",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -1.9,
+      "confidence": 6,
+      "justification": "Rejection delays crucial climate finance, outweighing limited political signaling. | While the German stance shows political agency, the immediate effect is a delay in vital adaptation finance and scientific cooperation, producing a net negative ethical outcome.",
+      "tx_hash": "39e23qQjjdr6gzkt7wsDvoDSmWvWhN92sj9AJqq84vgPUgt555StDDcoeRyE8kL9g31HTF8f9GLvokAdMhXutmNV",
+      "created_at": "2026-11-22T11:13:23.132121+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Germany",
+      "region": "Europe",
+      "administration": "Germany-CDU",
+      "positive_aspects_json": "[{\"description\": \"German minister publicly rejected the draft, signaling demand for stronger climate commitments\", \"affected_sdgs\": [13, 16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Rejection delays adoption of adaptation finance and science decisions, hindering climate resilience and research\", \"affected_sdgs\": [1, 3, 6, 13, 14, 15], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9938,
       "event_title": "Medical studies: the health portal bachelor's degree, how it works",
@@ -229321,8 +229367,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 8,
-        "total_amount": 2772820
+        "count": 6,
+        "total_amount": 2349420
+      },
+      {
+        "country": "Germany",
+        "count": 2,
+        "total_amount": 480260
       },
       {
         "country": "France",
@@ -229335,14 +229386,9 @@
         "total_amount": 482780
       },
       {
-        "country": "India",
+        "country": "Australia",
         "count": 1,
-        "total_amount": 4780
-      },
-      {
-        "country": "Tunisia",
-        "count": 1,
-        "total_amount": 676000
+        "total_amount": 105000
       }
     ],
     "top_countries_burn": [
@@ -229350,21 +229396,16 @@
         "country": "Mozambique",
         "count": 1,
         "total_amount": 1300000
-      },
-      {
-        "country": "United States",
-        "count": 1,
-        "total_amount": 3307500
       }
     ],
     "top_regions_sustainable": [
       {
-        "region": "North America",
-        "burn_ratio": 0.111,
-        "events": 9
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 7
       },
       {
-        "region": "Europe",
+        "region": "North America",
         "burn_ratio": 0.0,
         "events": 6
       }
@@ -229373,12 +229414,12 @@
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 6
+        "events": 7
       },
       {
         "region": "North America",
-        "mint_ratio": 0.889,
-        "events": 9
+        "mint_ratio": 1.0,
+        "events": 6
       }
     ],
     "supply_trend_7d": [
@@ -229414,7 +229455,7 @@
       },
       {
         "date": "2026-11-22",
-        "net_minted": 5740780,
+        "net_minted": 6323780,
         "net_burned": 0
       }
     ],
@@ -229431,13 +229472,14 @@
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 2,
+        "positive": 1,
         "negative": 31,
         "event_ids_positive": [
-          9908,
-          9903
+          9908
         ],
         "event_ids_negative": [
+          9940,
+          9939,
           9938,
           9937,
           9936,
@@ -229466,18 +229508,16 @@
           9909,
           9907,
           9906,
-          9905,
-          9904,
-          9902
+          9905
         ]
       },
       "UDHR": {
-        "positive": 1,
+        "positive": 0,
         "negative": 23,
-        "event_ids_positive": [
-          9903
-        ],
+        "event_ids_positive": [],
         "event_ids_negative": [
+          9940,
+          9939,
           9938,
           9937,
           9936,
@@ -229498,9 +229538,7 @@
           9911,
           9910,
           9906,
-          9905,
-          9904,
-          9902
+          9905
         ]
       },
       "ILO": {
@@ -229539,11 +229577,10 @@
         ]
       },
       "PB": {
-        "positive": 2,
+        "positive": 1,
         "negative": 9,
         "event_ids_positive": [
-          9908,
-          9903
+          9908
         ],
         "event_ids_negative": [
           9936,
@@ -229562,12 +229599,12 @@
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
       "total_sources_used": 32,
-      "articles_processed": 37
+      "articles_processed": 36
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 37,
-      "pct": 10.8
+      "total_events": 36,
+      "pct": 11.1
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -229588,10 +229625,11 @@
       },
       {
         "name": "COP",
-        "count": 5,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 5,
+        "mint_count": 6,
         "event_ids": [
+          9939,
           9935,
           9927,
           9921,
@@ -229657,6 +229695,26 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9940,
+          9906
+        ]
+      },
+      {
+        "name": "Finance",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9939,
+          9923
+        ]
+      },
+      {
         "name": "Forestry",
         "count": 2,
         "burn_count": 0,
@@ -229664,16 +229722,6 @@
         "event_ids": [
           9936,
           9922
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 2,
-        "burn_count": 1,
-        "mint_count": 1,
-        "event_ids": [
-          9923,
-          9903
         ]
       },
       {
@@ -229685,35 +229733,17 @@
           9918,
           9910
         ]
-      },
-      {
-        "name": "Construction",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9906
-        ]
-      },
-      {
-        "name": "Transport",
-        "count": 1,
-        "burn_count": 1,
-        "mint_count": 0,
-        "event_ids": [
-          9903
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 2,
+      "total_burn": 1,
       "direct_action": {
         "count": 1,
-        "pct": 50.0
+        "pct": 100.0
       },
       "editorial_consciousness": {
-        "count": 1,
-        "pct": 50.0
+        "count": 0,
+        "pct": 0.0
       },
       "untyped": {
         "count": 0,
@@ -229751,9 +229781,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7648,
+      "total_mint": 7650,
       "direct_action": {
-        "count": 7005,
+        "count": 7007,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229766,9 +229796,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 9,
-      "institutional": 28,
-      "citizen_ratio": 0.243,
+      "citizen": 7,
+      "institutional": 29,
+      "citizen_ratio": 0.194,
       "daily": [
         {
           "date": "2026-11-16",
@@ -229803,7 +229833,7 @@
         {
           "date": "2026-11-22",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -229813,11 +229843,11 @@
         9918,
         9910,
         9908,
-        9905,
-        9904,
-        9903
+        9905
       ],
       "event_ids_institutional": [
+        9940,
+        9939,
         9938,
         9937,
         9935,
@@ -229844,8 +229874,7 @@
         9911,
         9909,
         9907,
-        9906,
-        9902
+        9906
       ]
     }
   }
