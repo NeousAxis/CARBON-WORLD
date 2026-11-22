@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-22T11:13:28.850806+00:00",
-  "total_events": 9940,
+  "generated_at": "2026-11-22T20:11:06.088068+00:00",
+  "total_events": 9941,
   "total_burned": 8201828095,
-  "total_minted": 12187748139,
+  "total_minted": 12187753549,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9941,
+      "event_title": "A brown bear dies from a gunshot during a wild boar population control operation in Picos de Europa",
+      "event_url": "https://efeverde.com/muere-oso-pardo-disparo-control-poblacional-jabalies/",
+      "event_source": "Efeverde (Spain eco)",
+      "decision": "MINT",
+      "amount_crbn": 5410,
+      "final_score": -1.25,
+      "confidence": 7,
+      "justification": "Accidental bear death outweighs boar control benefits, leading to a negative net impact. | While the boar control aims to mitigate ecological and agricultural harm, the unintended death of a protected brown bear represents a significant wildlife loss that outweighs the intended benefits, resulting in a net negative ethical outcome.",
+      "tx_hash": "63kdk5XTcaP1ib5887B7fA2hqtV21GhabtiLoycqEdKJFhsuRhEY3DpYrn2tyJ6V9S33bNT5BHLSwMNFs26hkh4X",
+      "created_at": "2026-11-22T20:11:01.963882+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Implementation of a wild boar population control operation aimed at reducing overpopulation and associated ecological and agricultural damage.\", \"affected_sdgs\": [2, 12, 15], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Accidental killing of a protected brown bear during the boar control operation, causing loss of wildlife and undermining conservation efforts.\", \"affected_sdgs\": [15], \"violated_rights\": [\"Animal\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9940,
       "event_title": "'One-in-2,000-year weather' to be investigated post-blackout",
@@ -229367,8 +229390,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 6,
-        "total_amount": 2349420
+        "count": 5,
+        "total_amount": 2295320
       },
       {
         "country": "Germany",
@@ -229386,9 +229409,9 @@
         "total_amount": 482780
       },
       {
-        "country": "Australia",
+        "country": "Spain",
         "count": 1,
-        "total_amount": 105000
+        "total_amount": 5410
       }
     ],
     "top_countries_burn": [
@@ -229402,24 +229425,24 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 7
+        "events": 8
       },
       {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 6
+        "events": 5
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 8
       },
       {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 6
+        "events": 5
       }
     ],
     "supply_trend_7d": [
@@ -229455,7 +229478,7 @@
       },
       {
         "date": "2026-11-22",
-        "net_minted": 6323780,
+        "net_minted": 6329190,
         "net_burned": 0
       }
     ],
@@ -229478,6 +229501,7 @@
           9908
         ],
         "event_ids_negative": [
+          9941,
           9940,
           9939,
           9938,
@@ -229507,13 +229531,12 @@
           9910,
           9909,
           9907,
-          9906,
-          9905
+          9906
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 23,
+        "negative": 22,
         "event_ids_positive": [],
         "event_ids_negative": [
           9940,
@@ -229537,8 +229560,7 @@
           9912,
           9911,
           9910,
-          9906,
-          9905
+          9906
         ]
       },
       "ILO": {
@@ -229569,16 +229591,17 @@
       },
       "Animal": {
         "positive": 0,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9941,
           9936,
           9922
         ]
       },
       "PB": {
         "positive": 1,
-        "negative": 9,
+        "negative": 8,
         "event_ids_positive": [
           9908
         ],
@@ -229590,8 +229613,7 @@
           9920,
           9912,
           9911,
-          9910,
-          9905
+          9910
         ]
       }
     },
@@ -229733,6 +229755,15 @@
           9918,
           9910
         ]
+      },
+      {
+        "name": "Agriculture",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9941
+        ]
       }
     ],
     "burn_composition_7d": {
@@ -229768,12 +229799,12 @@
     "mint_composition_7d": {
       "total_mint": 35,
       "direct_action": {
-        "count": 29,
-        "pct": 82.9
+        "count": 30,
+        "pct": 85.7
       },
       "editorial_alarm": {
-        "count": 2,
-        "pct": 5.7
+        "count": 1,
+        "pct": 2.9
       },
       "untyped": {
         "count": 4,
@@ -229781,9 +229812,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7650,
+      "total_mint": 7651,
       "direct_action": {
-        "count": 7007,
+        "count": 7008,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229796,9 +229827,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 7,
-      "institutional": 29,
-      "citizen_ratio": 0.194,
+      "citizen": 6,
+      "institutional": 30,
+      "citizen_ratio": 0.167,
       "daily": [
         {
           "date": "2026-11-16",
@@ -229833,7 +229864,7 @@
         {
           "date": "2026-11-22",
           "citizen": 1,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -229842,10 +229873,10 @@
         9921,
         9918,
         9910,
-        9908,
-        9905
+        9908
       ],
       "event_ids_institutional": [
+        9941,
         9940,
         9939,
         9938,
