@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-22T01:08:25.113756+00:00",
-  "total_events": 9936,
+  "generated_at": "2026-11-22T03:07:15.983743+00:00",
+  "total_events": 9937,
   "total_burned": 8201828095,
-  "total_minted": 12186209139,
+  "total_minted": 12186687139,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9937,
+      "event_title": "Russian helicopter suspected of violating Finnish airspace",
+      "event_url": "https://www.dw.com/en/russian-helicopter-suspected-of-violating-finnish-airspace/a-80010133?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -2.8,
+      "confidence": 7,
+      "justification": "Airspace violation harms sovereignty and raises tension, outweighing modest transparency benefits. | The incursion represents a clear violation of international norms, outweighing the modest positive effect of Finland's transparent response. While Finland's reporting supports rule of law, the breach heightens security risks and undermines peace.",
+      "tx_hash": "5KU4ZBNpv5kRoczbKX9VNViTSPiK7tiJ8e248fw4aUHFWZRbbHfNL69SxhC5hugRZ1xRa3zqX92bN3DfNLzWQLmT",
+      "created_at": "2026-11-22T03:07:13.140291+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Russia",
+      "region": "Europe",
+      "administration": "Russia-United Russia",
+      "positive_aspects_json": "[{\"description\": \"Finland's Defense Ministry identified and publicly reported the airspace violation, enhancing transparency and deterrence.\", \"affected_sdgs\": [16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Russian helicopter's unauthorized entry into Finnish airspace breaches sovereignty and escalates regional tension.\", \"affected_sdgs\": [16, 17], \"violated_rights\": [\"UDHR Article 2\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9936,
       "event_title": "Forest villagers protest tourism curbs after tiger translocation",
@@ -61,7 +84,7 @@
       "final_score": 1.4,
       "confidence": 7,
       "justification": "Semantic cache reuse (cosine=1.000) from event #9933",
-      "tx_hash": null,
+      "tx_hash": "4bzMoQh3tYtd5zsGkdZgVtGJcyVa3Cb4BFTzy8KUN2N1aUqkER3Ywx3kyM757VkX7Nqi6931VaiMQx9aoibDrxQn",
       "created_at": "2026-11-21T23:02:47.903826+00:00",
       "embedding": null,
       "reused_from_event_id": 9933,
@@ -84,7 +107,7 @@
       "final_score": 1.4,
       "confidence": 7,
       "justification": "Semantic cache reuse (cosine=1.000) from event #9928",
-      "tx_hash": null,
+      "tx_hash": "56WZj3vGdEoCAcRiLEanvsuevzkhWYoNVGk6TFQ4saF3dgeRJcQKWPTEk8TUGuEHpkbmL68LrKiCPRyGusrUvh6t",
       "created_at": "2026-11-21T22:02:36.766519+00:00",
       "embedding": null,
       "reused_from_event_id": 9928,
@@ -107,7 +130,7 @@
       "final_score": 1.4,
       "confidence": 7,
       "justification": "Semantic cache reuse (cosine=1.000) from event #9928",
-      "tx_hash": null,
+      "tx_hash": "3kYsywusSbN8ymZQ4dbohjJbbfxzvZj16wgyX1UDxeRyC3bLZj3NF265Nuxmrq86gr2hodFSvAhFWBkGkCDAwKHZ",
       "created_at": "2026-11-21T22:02:36.762509+00:00",
       "embedding": null,
       "reused_from_event_id": 9928,
@@ -130,7 +153,7 @@
       "final_score": 1.4,
       "confidence": 7,
       "justification": "Semantic cache reuse (cosine=1.000) from event #9928",
-      "tx_hash": null,
+      "tx_hash": "4FbMBuz9oHohUnLbW8UHCmu2QEo4YFhANCeR7zcWaKsqXpqicw3SkNKFztqQwh9epykGewf7gketfvmf3CxCDPFF",
       "created_at": "2026-11-21T22:02:36.757860+00:00",
       "embedding": null,
       "reused_from_event_id": 9928,
@@ -229279,6 +229302,11 @@
         "total_amount": 2772820
       },
       {
+        "country": "Russia",
+        "count": 2,
+        "total_amount": 482780
+      },
+      {
         "country": "India",
         "count": 1,
         "total_amount": 4780
@@ -229292,11 +229320,6 @@
         "country": "Tunisia",
         "count": 1,
         "total_amount": 676000
-      },
-      {
-        "country": "Indonesia",
-        "count": 1,
-        "total_amount": 3520
       }
     ],
     "top_countries_burn": [
@@ -229320,14 +229343,14 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 4
+        "events": 5
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 4
+        "events": 5
       },
       {
         "region": "North America",
@@ -229363,12 +229386,12 @@
       },
       {
         "date": "2026-11-21",
-        "net_minted": 18798000,
+        "net_minted": 22718000,
         "net_burned": 0
       },
       {
         "date": "2026-11-22",
-        "net_minted": 4784780,
+        "net_minted": 5262780,
         "net_burned": 0
       }
     ],
@@ -229386,12 +229409,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 29,
+        "negative": 30,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9937,
           9936,
           9935,
           9930,
@@ -229425,11 +229449,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 21,
+        "negative": 22,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9937,
           9936,
           9930,
           9929,
@@ -229511,16 +229536,31 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 27,
-      "articles_processed": 31
+      "total_sources_used": 31,
+      "articles_processed": 36
     },
     "cache_hit_rate_7d": {
-      "hits": 0,
-      "total_events": 31,
-      "pct": 0.0
+      "hits": 4,
+      "total_events": 36,
+      "pct": 11.1
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 7,
+        "burn_count": 0,
+        "mint_count": 7,
+        "event_ids": [
+          9934,
+          9933,
+          9932,
+          9931,
+          9928,
+          9927,
+          9925
+        ]
+      },
       {
         "name": "COP",
         "count": 5,
@@ -229532,17 +229572,6 @@
           9921,
           9916,
           9907
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          9928,
-          9927,
-          9925
         ]
       },
       {
@@ -229565,6 +229594,20 @@
       }
     ],
     "top_sectors_7d": [
+      {
+        "name": "Tech",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          9934,
+          9933,
+          9932,
+          9931,
+          9928,
+          9915
+        ]
+      },
       {
         "name": "Energy",
         "count": 4,
@@ -229596,16 +229639,6 @@
         "event_ids": [
           9936,
           9922
-        ]
-      },
-      {
-        "name": "Tech",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9928,
-          9915
         ]
       },
       {
@@ -229678,24 +229711,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 29,
+      "total_mint": 34,
       "direct_action": {
-        "count": 27,
-        "pct": 93.1
+        "count": 28,
+        "pct": 82.4
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 6.9
+        "pct": 5.9
       },
       "untyped": {
-        "count": 0,
-        "pct": 0.0
+        "count": 4,
+        "pct": 11.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7642,
+      "total_mint": 7647,
       "direct_action": {
-        "count": 7003,
+        "count": 7004,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229703,14 +229736,14 @@
         "pct": 7.1
       },
       "untyped": {
-        "count": 97,
+        "count": 101,
         "pct": 1.3
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 9,
-      "institutional": 22,
-      "citizen_ratio": 0.29,
+      "institutional": 27,
+      "citizen_ratio": 0.25,
       "daily": [
         {
           "date": "2026-11-16",
@@ -229740,12 +229773,12 @@
         {
           "date": "2026-11-21",
           "citizen": 0,
-          "institutional": 6
+          "institutional": 10
         },
         {
           "date": "2026-11-22",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -229760,7 +229793,12 @@
         9903
       ],
       "event_ids_institutional": [
+        9937,
         9935,
+        9934,
+        9933,
+        9932,
+        9931,
         9930,
         9929,
         9928,
