@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-22T03:07:15.983743+00:00",
-  "total_events": 9937,
+  "generated_at": "2026-11-22T04:07:50.428012+00:00",
+  "total_events": 9938,
   "total_burned": 8201828095,
-  "total_minted": 12186687139,
+  "total_minted": 12187165139,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9938,
+      "event_title": "Medical studies: the health portal bachelor's degree, how it works",
+      "event_url": "http://www.lequotidiendumedecin.fr/jeunes-medecins/etudes-de-medecine-la-licence-portail-sante-mode-demploi",
+      "event_source": "Le Quotidien du Médecin",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -0.68,
+      "confidence": 6,
+      "justification": "The decree's negative impact on education quality outweighs potential access benefits. | While the reform could improve access to medical education, the top‑down implementation against expert advice raises serious concerns about quality and the right to proper education, leading to a net negative ethical balance.",
+      "tx_hash": "2DpJYvWaZirJNStRKuiCLEXtLMNe92aQkx7YM4JRetoBGo1ACCo7pshGhbH4zJUt7qrfQEGBM6FZNTmWPVJXaWZH",
+      "created_at": "2026-11-22T04:07:47.277484+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "France",
+      "region": "Europe",
+      "administration": "France-Renaissance",
+      "positive_aspects_json": "[{\"description\": \"The reform aims to broaden access to medical studies, potentially increasing the future health workforce.\", \"affected_sdgs\": [3, 4], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Implementation proceeds despite strong opposition from medical deans, risking reduced education quality and undermining professional expertise.\", \"affected_sdgs\": [3, 4], \"violated_rights\": [\"UDHR Article 26\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9937,
       "event_title": "Russian helicopter suspected of violating Finnish airspace",
@@ -229302,6 +229325,11 @@
         "total_amount": 2772820
       },
       {
+        "country": "France",
+        "count": 2,
+        "total_amount": 956000
+      },
+      {
         "country": "Russia",
         "count": 2,
         "total_amount": 482780
@@ -229310,11 +229338,6 @@
         "country": "India",
         "count": 1,
         "total_amount": 4780
-      },
-      {
-        "country": "France",
-        "count": 1,
-        "total_amount": 478000
       },
       {
         "country": "Tunisia",
@@ -229343,14 +229366,14 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 5
+        "events": 6
       }
     ],
     "top_regions_destructive": [
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 5
+        "events": 6
       },
       {
         "region": "North America",
@@ -229391,7 +229414,7 @@
       },
       {
         "date": "2026-11-22",
-        "net_minted": 5262780,
+        "net_minted": 5740780,
         "net_burned": 0
       }
     ],
@@ -229409,12 +229432,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 30,
+        "negative": 31,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9938,
           9937,
           9936,
           9935,
@@ -229449,11 +229473,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 22,
+        "negative": 23,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9938,
           9937,
           9936,
           9930,
@@ -229536,13 +229561,13 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 31,
-      "articles_processed": 36
+      "total_sources_used": 32,
+      "articles_processed": 37
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 36,
-      "pct": 11.1
+      "total_events": 37,
+      "pct": 10.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -229711,24 +229736,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 34,
+      "total_mint": 35,
       "direct_action": {
-        "count": 28,
-        "pct": 82.4
+        "count": 29,
+        "pct": 82.9
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 5.9
+        "pct": 5.7
       },
       "untyped": {
         "count": 4,
-        "pct": 11.8
+        "pct": 11.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7647,
+      "total_mint": 7648,
       "direct_action": {
-        "count": 7004,
+        "count": 7005,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229742,8 +229767,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 9,
-      "institutional": 27,
-      "citizen_ratio": 0.25,
+      "institutional": 28,
+      "citizen_ratio": 0.243,
       "daily": [
         {
           "date": "2026-11-16",
@@ -229778,7 +229803,7 @@
         {
           "date": "2026-11-22",
           "citizen": 1,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -229793,6 +229818,7 @@
         9903
       ],
       "event_ids_institutional": [
+        9938,
         9937,
         9935,
         9934,
