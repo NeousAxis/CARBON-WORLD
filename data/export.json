@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-22T00:09:14.004496+00:00",
-  "total_events": 9935,
+  "generated_at": "2026-11-22T01:08:25.113756+00:00",
+  "total_events": 9936,
   "total_burned": 8201828095,
-  "total_minted": 12186204359,
+  "total_minted": 12186209139,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9936,
+      "event_title": "Forest villagers protest tourism curbs after tiger translocation",
+      "event_url": "https://india.mongabay.com/2026/11/forest-villagers-protest-tourism-curbs-after-tiger-translocation/",
+      "event_source": "Mongabay India",
+      "decision": "MINT",
+      "amount_crbn": 4780,
+      "final_score": -1.9,
+      "confidence": 6,
+      "justification": "The protest endangers wildlife protection outweighing its social‑justice benefits. | While the villagers' protest raises legitimate social‑justice concerns, it directly threatens a critical wildlife conservation measure, endangering biodiversity and animal welfare. The net ethical balance therefore leans negative.",
+      "tx_hash": "4RMXxUDkchcvAEAJCGcVhEBRQPtJmVHMZ7CBmEQAY69ZS1LJ5y7iuewC6TSNniMX3VStvEgCoAdBosUy2nLLnm9u",
+      "created_at": "2026-11-22T01:08:20.579527+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "India",
+      "region": "Asia",
+      "administration": "India-BJP",
+      "positive_aspects_json": "[{\"description\": \"Villagers voice concerns over livelihood restrictions, highlighting community rights and need for equitable development\", \"affected_sdgs\": [1, 10, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Protest seeks to lift tourism curbs that protect a translocated tigress, risking increased disturbance, potential harm to the animal and local biodiversity\", \"affected_sdgs\": [13, 14, 15], \"violated_rights\": [\"Animal Rights (implicit)\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9935,
       "event_title": "Without mentioning fossil fuels, COP31 risks ending without results",
@@ -229256,6 +229279,11 @@
         "total_amount": 2772820
       },
       {
+        "country": "India",
+        "count": 1,
+        "total_amount": 4780
+      },
+      {
         "country": "France",
         "count": 1,
         "total_amount": 478000
@@ -229269,11 +229297,6 @@
         "country": "Indonesia",
         "count": 1,
         "total_amount": 3520
-      },
-      {
-        "country": "Turkey",
-        "count": 1,
-        "total_amount": 2260
       }
     ],
     "top_countries_burn": [
@@ -229345,7 +229368,7 @@
       },
       {
         "date": "2026-11-22",
-        "net_minted": 4780000,
+        "net_minted": 4784780,
         "net_burned": 0
       }
     ],
@@ -229363,12 +229386,13 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 2,
-        "negative": 28,
+        "negative": 29,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9936,
           9935,
           9930,
           9929,
@@ -229401,11 +229425,12 @@
       },
       "UDHR": {
         "positive": 1,
-        "negative": 20,
+        "negative": 21,
         "event_ids_positive": [
           9903
         ],
         "event_ids_negative": [
+          9936,
           9930,
           9929,
           9928,
@@ -229446,29 +229471,32 @@
       },
       "UNDRIP": {
         "positive": 0,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9936,
           9922,
           9910
         ]
       },
       "Animal": {
         "positive": 0,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9936,
           9922
         ]
       },
       "PB": {
         "positive": 2,
-        "negative": 8,
+        "negative": 9,
         "event_ids_positive": [
           9908,
           9903
         ],
         "event_ids_negative": [
+          9936,
           9935,
           9923,
           9922,
@@ -229483,12 +229511,12 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 26,
-      "articles_processed": 30
+      "total_sources_used": 27,
+      "articles_processed": 31
     },
     "cache_hit_rate_7d": {
       "hits": 0,
-      "total_events": 30,
+      "total_events": 31,
       "pct": 0.0
     },
     "active_partners_7d": [],
@@ -229561,6 +229589,16 @@
         ]
       },
       {
+        "name": "Forestry",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9936,
+          9922
+        ]
+      },
+      {
         "name": "Tech",
         "count": 2,
         "burn_count": 0,
@@ -229588,15 +229626,6 @@
         "event_ids": [
           9918,
           9910
-        ]
-      },
-      {
-        "name": "Forestry",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9922
         ]
       },
       {
@@ -229649,14 +229678,14 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 28,
+      "total_mint": 29,
       "direct_action": {
-        "count": 26,
-        "pct": 92.9
+        "count": 27,
+        "pct": 93.1
       },
       "editorial_alarm": {
         "count": 2,
-        "pct": 7.1
+        "pct": 6.9
       },
       "untyped": {
         "count": 0,
@@ -229664,9 +229693,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7641,
+      "total_mint": 7642,
       "direct_action": {
-        "count": 7002,
+        "count": 7003,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229679,9 +229708,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 8,
+      "citizen": 9,
       "institutional": 22,
-      "citizen_ratio": 0.267,
+      "citizen_ratio": 0.29,
       "daily": [
         {
           "date": "2026-11-16",
@@ -229715,11 +229744,12 @@
         },
         {
           "date": "2026-11-22",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        9936,
         9922,
         9921,
         9918,
