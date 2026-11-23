@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-22T22:17:03.167249+00:00",
-  "total_events": 9941,
+  "generated_at": "2026-11-23T03:06:57.196871+00:00",
+  "total_events": 9942,
   "total_burned": 8201828095,
-  "total_minted": 12187753549,
+  "total_minted": 12193073549,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9942,
+      "event_title": "Global climate talks have collapsed. Here's what just happened.",
+      "event_url": "https://www.politico.eu/article/global-climate-talks-have-collapsed-here-is-what-just-happened/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 5320000,
+      "final_score": -3.03,
+      "confidence": 6,
+      "justification": "Failure to secure a global climate deal worsens climate action prospects. | The collapse of the talks represents a major setback for climate action, undermining several SDGs and the right to an adequate standard of living. No compensating positive outcomes are evident, leading to a net negative ethical assessment.",
+      "tx_hash": "4CxRo2uhYmTDo7Wnd1k44Ngq9MPHoZ6kt4TxC9wKmkEm7s2VvZng1GCJqdYe2qi24KSbi7kDL6KeLTVTP9wZ4qzk",
+      "created_at": "2026-11-23T03:06:53.822486+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Failure of global climate negotiations to reach a deal delays collective climate mitigation efforts.\", \"affected_sdgs\": [13, 7, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 9941,
       "event_title": "A brown bear dies from a gunshot during a wild boar population control operation in Picos de Europa",
@@ -229447,11 +229470,6 @@
     ],
     "supply_trend_7d": [
       {
-        "date": "2026-11-16",
-        "net_minted": 2802000,
-        "net_burned": 0
-      },
-      {
         "date": "2026-11-17",
         "net_minted": 2260,
         "net_burned": 1300000
@@ -229480,27 +229498,33 @@
         "date": "2026-11-22",
         "net_minted": 6329190,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-23",
+        "net_minted": 5320000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9935,
-      "event_title": "Without mentioning fossil fuels, COP31 risks ending without results",
+      "id": 9942,
+      "event_title": "Global climate talks have collapsed. Here's what just happened.",
       "decision": "MINT",
-      "amount_crbn": 4780000,
-      "final_score": -3.25,
-      "confidence": 7,
+      "amount_crbn": 5320000,
+      "final_score": -3.03,
+      "confidence": 6,
       "country": null,
       "region": null,
-      "created_at": "2026-11-22T00:09:09.037648+00:00"
+      "created_at": "2026-11-23T03:06:53.822486+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 1,
-        "negative": 31,
+        "negative": 32,
         "event_ids_positive": [
           9908
         ],
         "event_ids_negative": [
+          9942,
           9941,
           9940,
           9939,
@@ -229536,9 +229560,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 22,
+        "negative": 23,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9942,
           9940,
           9939,
           9938,
@@ -229620,13 +229645,13 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 32,
-      "articles_processed": 36
+      "total_sources_used": 33,
+      "articles_processed": 37
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 36,
-      "pct": 11.1
+      "total_events": 37,
+      "pct": 10.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -229797,24 +229822,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 35,
+      "total_mint": 36,
       "direct_action": {
-        "count": 30,
-        "pct": 85.7
+        "count": 31,
+        "pct": 86.1
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.9
+        "pct": 2.8
       },
       "untyped": {
         "count": 4,
-        "pct": 11.4
+        "pct": 11.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7651,
+      "total_mint": 7652,
       "direct_action": {
-        "count": 7008,
+        "count": 7009,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229828,14 +229853,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 6,
-      "institutional": 30,
-      "citizen_ratio": 0.167,
+      "institutional": 31,
+      "citizen_ratio": 0.162,
       "daily": [
-        {
-          "date": "2026-11-16",
-          "citizen": 0,
-          "institutional": 2
-        },
         {
           "date": "2026-11-17",
           "citizen": 1,
@@ -229865,6 +229885,11 @@
           "date": "2026-11-22",
           "citizen": 1,
           "institutional": 6
+        },
+        {
+          "date": "2026-11-23",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -229876,6 +229901,7 @@
         9908
       ],
       "event_ids_institutional": [
+        9942,
         9941,
         9940,
         9939,
