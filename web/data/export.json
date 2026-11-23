@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-23T04:10:50.510165+00:00",
-  "total_events": 9943,
+  "generated_at": "2026-11-23T09:12:18.771015+00:00",
+  "total_events": 9944,
   "total_burned": 8201828095,
-  "total_minted": 12199743549,
+  "total_minted": 12200275549,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9944,
+      "event_title": "An Air Force Major Is Being Held in Solitary Confinement for Criticizing Trump on CNN",
+      "event_url": "https://theintercept.com/2026/11/21/trump-jason-watson-air-force-solitary-speech/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 532000,
+      "final_score": -2.45,
+      "confidence": 6,
+      "justification": "Severe rights violations and health harms outweigh any limited security justification, warranting a negative (MINT) rating. | The action directly violates fundamental human rights and undermines health and justice goals, outweighing any security rationale. No positive ethical outcomes are identified, leading to a strongly negative overall assessment.",
+      "tx_hash": "5ZpwMFUXGAYNVRL1n3pwf97E7A1iJ5KKHwC8znYwD1ApuhpxvtBuvtNNUCUMNCUCtgnEKXSaWbLdyL8UVSVNXQEa",
+      "created_at": "2026-11-23T09:12:13.648926+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Holding an Air Force major in solitary confinement for criticizing a political leader suppresses free expression and constitutes cruel, inhuman treatment.\", \"affected_sdgs\": [3, 10, 16], \"violated_rights\": [\"UDHR Article 19\", \"UDHR Article 5\", \"UDHR Article 9\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 9943,
       "event_title": "Climate deal collapses in chaotic end to COP31 as EU and more reject deal",
@@ -229436,8 +229459,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 5,
-        "total_amount": 2295320
+        "count": 6,
+        "total_amount": 2827320
       },
       {
         "country": "Germany",
@@ -229469,26 +229492,26 @@
     ],
     "top_regions_sustainable": [
       {
+        "region": "North America",
+        "burn_ratio": 0.0,
+        "events": 6
+      },
+      {
         "region": "Europe",
         "burn_ratio": 0.0,
         "events": 7
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.0,
-        "events": 5
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "North America",
+        "mint_ratio": 1.0,
+        "events": 6
+      },
+      {
         "region": "Europe",
         "mint_ratio": 1.0,
         "events": 7
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 1.0,
-        "events": 5
       }
     ],
     "supply_trend_7d": [
@@ -229524,7 +229547,7 @@
       },
       {
         "date": "2026-11-23",
-        "net_minted": 11990000,
+        "net_minted": 12522000,
         "net_burned": 0
       }
     ],
@@ -229542,11 +229565,12 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 1,
-        "negative": 32,
+        "negative": 33,
         "event_ids_positive": [
           9908
         ],
         "event_ids_negative": [
+          9944,
           9943,
           9942,
           9941,
@@ -229583,9 +229607,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 23,
+        "negative": 24,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9944,
           9943,
           9942,
           9940,
@@ -229670,12 +229695,12 @@
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
       "total_sources_used": 32,
-      "articles_processed": 37
+      "articles_processed": 38
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 37,
-      "pct": 10.8
+      "total_events": 38,
+      "pct": 10.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -229847,24 +229872,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 36,
+      "total_mint": 37,
       "direct_action": {
-        "count": 31,
-        "pct": 86.1
+        "count": 32,
+        "pct": 86.5
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.8
+        "pct": 2.7
       },
       "untyped": {
         "count": 4,
-        "pct": 11.1
+        "pct": 10.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7653,
+      "total_mint": 7654,
       "direct_action": {
-        "count": 7010,
+        "count": 7011,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229878,8 +229903,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 6,
-      "institutional": 31,
-      "citizen_ratio": 0.162,
+      "institutional": 32,
+      "citizen_ratio": 0.158,
       "daily": [
         {
           "date": "2026-11-17",
@@ -229914,7 +229939,7 @@
         {
           "date": "2026-11-23",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -229926,6 +229951,7 @@
         9908
       ],
       "event_ids_institutional": [
+        9944,
         9943,
         9942,
         9941,
