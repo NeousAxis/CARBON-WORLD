@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-23T03:06:57.196871+00:00",
-  "total_events": 9942,
+  "generated_at": "2026-11-23T04:10:50.510165+00:00",
+  "total_events": 9943,
   "total_burned": 8201828095,
-  "total_minted": 12193073549,
+  "total_minted": 12199743549,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9943,
+      "event_title": "Climate deal collapses in chaotic end to COP31 as EU and more reject deal",
+      "event_url": "https://www.thelocal.de/20261122/climate-deal-collapses-in-chaotic-end-to-cop31-as-eu-and-more-reject-deal",
+      "event_source": "The Local Germany (EN)",
+      "decision": "MINT",
+      "amount_crbn": 6670000,
+      "final_score": -2.08,
+      "confidence": 7,
+      "justification": "Deal collapse undermines climate action, increasing emissions and harming rights. | The failure to secure a climate agreement at COP31 represents a major setback for global emissions reductions, outweighing the modest positive signal from the EU's stance. While the rejection hints at higher future ambition, the immediate loss of binding commitments harms climate goals and fundamental rights.",
+      "tx_hash": "3WAYr9UQrDW5vk4aSKVhb9zmaCTHGgYX7SNpAB79u9ChUHBvN3zmpm7RBBC4HwkknEtacvZv79PMPSkqJDLwCLq6",
+      "created_at": "2026-11-23T04:10:47.259655+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU and other parties reject a weak deal, signalling demand for stronger climate ambition\", \"affected_sdgs\": [13, 7, 12], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Collapse of the COP31 climate deal leaves no binding emissions commitments\", \"affected_sdgs\": [13, 7, 9, 12, 15], \"violated_rights\": [\"UDHR Article 25\", \"UDHR Article 3\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 9942,
       "event_title": "Global climate talks have collapsed. Here's what just happened.",
@@ -229448,7 +229471,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 8
+        "events": 7
       },
       {
         "region": "North America",
@@ -229460,7 +229483,7 @@
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 8
+        "events": 7
       },
       {
         "region": "North America",
@@ -229501,7 +229524,7 @@
       },
       {
         "date": "2026-11-23",
-        "net_minted": 5320000,
+        "net_minted": 11990000,
         "net_burned": 0
       }
     ],
@@ -229524,6 +229547,7 @@
           9908
         ],
         "event_ids_negative": [
+          9943,
           9942,
           9941,
           9940,
@@ -229554,8 +229578,7 @@
           9911,
           9910,
           9909,
-          9907,
-          9906
+          9907
         ]
       },
       "UDHR": {
@@ -229563,6 +229586,7 @@
         "negative": 23,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9943,
           9942,
           9940,
           9939,
@@ -229584,8 +229608,7 @@
           9913,
           9912,
           9911,
-          9910,
-          9906
+          9910
         ]
       },
       "ILO": {
@@ -229626,11 +229649,12 @@
       },
       "PB": {
         "positive": 1,
-        "negative": 8,
+        "negative": 9,
         "event_ids_positive": [
           9908
         ],
         "event_ids_negative": [
+          9943,
           9936,
           9935,
           9923,
@@ -229645,7 +229669,7 @@
     "source_diversity_7d": {
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
-      "total_sources_used": 33,
+      "total_sources_used": 32,
       "articles_processed": 37
     },
     "cache_hit_rate_7d": {
@@ -229657,10 +229681,11 @@
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 7,
+        "count": 8,
         "burn_count": 0,
-        "mint_count": 7,
+        "mint_count": 8,
         "event_ids": [
+          9943,
           9934,
           9933,
           9932,
@@ -229672,10 +229697,11 @@
       },
       {
         "name": "COP",
-        "count": 6,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          9943,
           9939,
           9935,
           9927,
@@ -229742,16 +229768,6 @@
         ]
       },
       {
-        "name": "Construction",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9940,
-          9906
-        ]
-      },
-      {
         "name": "Finance",
         "count": 2,
         "burn_count": 0,
@@ -229788,6 +229804,15 @@
         "mint_count": 1,
         "event_ids": [
           9941
+        ]
+      },
+      {
+        "name": "Construction",
+        "count": 1,
+        "burn_count": 0,
+        "mint_count": 1,
+        "event_ids": [
+          9940
         ]
       }
     ],
@@ -229837,9 +229862,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7652,
+      "total_mint": 7653,
       "direct_action": {
-        "count": 7009,
+        "count": 7010,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229889,7 +229914,7 @@
         {
           "date": "2026-11-23",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -229901,6 +229926,7 @@
         9908
       ],
       "event_ids_institutional": [
+        9943,
         9942,
         9941,
         9940,
@@ -229930,8 +229956,7 @@
         9912,
         9911,
         9909,
-        9907,
-        9906
+        9907
       ]
     }
   }
