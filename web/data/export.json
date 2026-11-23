@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-23T16:17:03.521098+00:00",
-  "total_events": 9945,
+  "generated_at": "2026-11-23T17:10:34.214064+00:00",
+  "total_events": 9946,
   "total_burned": 8201828095,
-  "total_minted": 12200280959,
+  "total_minted": 12206320959,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9946,
+      "event_title": "Saudi Arabia's influence weighed on the failure of COP31",
+      "event_url": "https://redir.folha.com.br/redir/online/ambiente/rss091/*https://www1.folha.uol.com.br/ambiente/2026/11/influencia-da-arabia-saudita-pesou-no-colapso-da-cop31.shtml",
+      "event_source": "Folha Ambiente (BR)",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.6,
+      "confidence": 7,
+      "justification": "Saudi influence caused COP31 failure, hindering climate action. | The Saudi-backed obstruction of COP31 represents a substantial setback for climate cooperation, undermining multiple SDGs and the right to benefit from scientific progress. No compensating positive outcomes are evident, leading to a net negative ethical assessment.",
+      "tx_hash": "2WTUwxeJQ6wcr5sufaNhnDiNv1EnBRAxJMSrABoytosXZuyKpKwEbQBQabpip6vApF2VsxmBHcBLy1LA4CDuaTrS",
+      "created_at": "2026-11-23T17:10:29.683714+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Saudi Arabia",
+      "region": "MENA",
+      "administration": "Saudi Arabia-Royal",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Saudi Arabia's political influence contributed to the collapse of COP31, hindering global climate negotiations.\", \"affected_sdgs\": [13, 16, 17], \"violated_rights\": [\"UDHR Article 27\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9945,
       "event_title": "Losing to the Mud: Feds Drag Their Feet as an Alaskan Village Sinks",
@@ -229501,9 +229524,9 @@
         "total_amount": 482780
       },
       {
-        "country": "Spain",
+        "country": "Saudi Arabia",
         "count": 1,
-        "total_amount": 5410
+        "total_amount": 6040000
       }
     ],
     "top_countries_burn": [
@@ -229514,6 +229537,11 @@
       }
     ],
     "top_regions_sustainable": [
+      {
+        "region": "MENA",
+        "burn_ratio": 0.0,
+        "events": 3
+      },
       {
         "region": "North America",
         "burn_ratio": 0.0,
@@ -229526,6 +229554,11 @@
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 3
+      },
       {
         "region": "North America",
         "mint_ratio": 1.0,
@@ -229570,7 +229603,7 @@
       },
       {
         "date": "2026-11-23",
-        "net_minted": 12527410,
+        "net_minted": 18567410,
         "net_burned": 0
       }
     ],
@@ -229588,11 +229621,12 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 1,
-        "negative": 33,
+        "negative": 34,
         "event_ids_positive": [
           9908
         ],
         "event_ids_negative": [
+          9946,
           9945,
           9944,
           9943,
@@ -229630,9 +229664,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 25,
+        "negative": 26,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9946,
           9945,
           9944,
           9943,
@@ -229700,11 +229735,12 @@
       },
       "PB": {
         "positive": 1,
-        "negative": 9,
+        "negative": 10,
         "event_ids_positive": [
           9908
         ],
         "event_ids_negative": [
+          9946,
           9943,
           9936,
           9935,
@@ -229721,12 +229757,12 @@
       "niche_pct": 100.0,
       "mainstream_pct": 0.0,
       "total_sources_used": 31,
-      "articles_processed": 38
+      "articles_processed": 39
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 38,
-      "pct": 10.5
+      "total_events": 39,
+      "pct": 10.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -229748,10 +229784,11 @@
       },
       {
         "name": "COP",
-        "count": 6,
+        "count": 7,
         "burn_count": 0,
-        "mint_count": 6,
+        "mint_count": 7,
         "event_ids": [
+          9946,
           9943,
           9939,
           9935,
@@ -229898,24 +229935,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 37,
+      "total_mint": 38,
       "direct_action": {
-        "count": 32,
-        "pct": 86.5
+        "count": 33,
+        "pct": 86.8
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.7
+        "pct": 2.6
       },
       "untyped": {
         "count": 4,
-        "pct": 10.8
+        "pct": 10.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7655,
+      "total_mint": 7656,
       "direct_action": {
-        "count": 7012,
+        "count": 7013,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -229929,8 +229966,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 7,
-      "institutional": 31,
-      "citizen_ratio": 0.184,
+      "institutional": 32,
+      "citizen_ratio": 0.179,
       "daily": [
         {
           "date": "2026-11-17",
@@ -229965,7 +230002,7 @@
         {
           "date": "2026-11-23",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -229978,6 +230015,7 @@
         9908
       ],
       "event_ids_institutional": [
+        9946,
         9944,
         9943,
         9942,
