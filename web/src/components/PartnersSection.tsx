@@ -10,32 +10,9 @@ interface Partner {
   website?: string;
 }
 
-const PARTNERS: Partner[] = [
-  {
-    slug: "helion-watch",
-    name: "Helion Watch",
-    monogram: "HW",
-    type: "Independent Media · Mock",
-    tagline: "Placeholder organisation — replace once a real partner signs in.",
-    accent: "primary",
-  },
-  {
-    slug: "boreal-institute",
-    name: "Boreal Institute",
-    monogram: "BI",
-    type: "Climate Think Tank · Mock",
-    tagline: "Placeholder organisation — replace once a real partner signs in.",
-    accent: "success",
-  },
-  {
-    slug: "mosaic-research-lab",
-    name: "Mosaic Research Lab",
-    monogram: "MR",
-    type: "Sustainable Development · Mock",
-    tagline: "Placeholder organisation — replace once a real partner signs in.",
-    accent: "foreground",
-  },
-];
+// Real partners only. The three placeholder organisations shown until 24.11.2026 were fictitious and have
+// been removed at the owner's request: add an entry here only once a partner has actually signed.
+const PARTNERS: Partner[] = [];
 
 const ACCENT_CLASS: Record<Partner["accent"], string> = {
   primary: "text-[var(--primary)] border-[var(--primary)]",
@@ -73,6 +50,11 @@ export function PartnersSection({ partners = PARTNERS }: { partners?: Partner[] 
         </h2>
       </header>
 
+      {partners.length === 0 ? (
+        <p className="text-sm leading-snug" style={{ color: "var(--muted)" }}>
+          No partner yet. The first media, think tanks and NGOs to work with the data will be listed here.
+        </p>
+      ) : (
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {partners.map((partner) => {
           const body = (
@@ -129,6 +111,7 @@ export function PartnersSection({ partners = PARTNERS }: { partners?: Partner[] 
           );
         })}
       </div>
+      )}
 
       <footer className="mt-4 flex items-center justify-between">
         <p
