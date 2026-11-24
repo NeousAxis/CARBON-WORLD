@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-23T22:17:02.579275+00:00",
-  "total_events": 9947,
+  "generated_at": "2026-11-24T03:11:56.623076+00:00",
+  "total_events": 9948,
   "total_burned": 8201828095,
-  "total_minted": 12206924959,
+  "total_minted": 12207528959,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9948,
+      "event_title": "The Dairy Industry Is Quietly Building a More Exploitable Workforce",
+      "event_url": "https://sentientmedia.org/dairy-building-a-more-exploitable-workforce/",
+      "event_source": "Sentient Media",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -4.01,
+      "confidence": 7,
+      "justification": "Expansion of H‑2A visas with wage cuts and anti‑organizing measures harms workers' rights, outweighing any productivity gains. | The policy harms workers by lowering wages and curtailing organizing, violating fundamental labor rights and outweighing any modest food‑security benefit.",
+      "tx_hash": "2XpuL1CrC53CK6J2vui3peByz3ekrXeFdeFbbf3BVgfaBpeM8NhNDrFEufDG4ZTGSZkKBoQ7reH4JtLboruuvj97",
+      "created_at": "2026-11-24T03:11:51.440543+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Increased labor supply may help maintain dairy production, supporting food availability.\", \"affected_sdgs\": [2], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Expansion of H‑2A visas with steep wage cuts and restrictions on worker organizing undermines labor rights.\", \"affected_sdgs\": [1, 8, 10], \"violated_rights\": [\"UDHR Article 23\", \"ILO Freedom of Association\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9947,
       "event_title": "Bangladesh: Proposed changes to cyber laws risk granting authorities excessive power to police online content",
@@ -229528,8 +229551,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 7,
-        "total_amount": 2832730
+        "count": 8,
+        "total_amount": 3436730
       },
       {
         "country": "Germany",
@@ -229552,14 +229575,13 @@
         "total_amount": 604000
       }
     ],
-    "top_countries_burn": [
-      {
-        "country": "Mozambique",
-        "count": 1,
-        "total_amount": 1300000
-      }
-    ],
+    "top_countries_burn": [],
     "top_regions_sustainable": [
+      {
+        "region": "North America",
+        "burn_ratio": 0.0,
+        "events": 8
+      },
       {
         "region": "Asia",
         "burn_ratio": 0.0,
@@ -229569,11 +229591,6 @@
         "region": "MENA",
         "burn_ratio": 0.0,
         "events": 3
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.0,
-        "events": 7
       },
       {
         "region": "Europe",
@@ -229583,6 +229600,11 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "North America",
+        "mint_ratio": 1.0,
+        "events": 8
+      },
+      {
         "region": "Asia",
         "mint_ratio": 1.0,
         "events": 3
@@ -229593,22 +229615,12 @@
         "events": 3
       },
       {
-        "region": "North America",
-        "mint_ratio": 1.0,
-        "events": 7
-      },
-      {
         "region": "Europe",
         "mint_ratio": 1.0,
         "events": 7
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-17",
-        "net_minted": 2260,
-        "net_burned": 1300000
-      },
       {
         "date": "2026-11-18",
         "net_minted": 1078420,
@@ -229638,27 +229650,31 @@
         "date": "2026-11-23",
         "net_minted": 19171410,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-24",
+        "net_minted": 604000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9947,
-      "event_title": "Bangladesh: Proposed changes to cyber laws risk granting authorities excessive power to police online content",
+      "id": 9948,
+      "event_title": "The Dairy Industry Is Quietly Building a More Exploitable Workforce",
       "decision": "MINT",
       "amount_crbn": 604000,
-      "final_score": -3.63,
+      "final_score": -4.01,
       "confidence": 7,
-      "country": "Bangladesh",
-      "region": "Asia",
-      "created_at": "2026-11-23T19:11:17.229054+00:00"
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-11-24T03:11:51.440543+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 1,
-        "negative": 35,
-        "event_ids_positive": [
-          9908
-        ],
+        "positive": 0,
+        "negative": 36,
+        "event_ids_positive": [],
         "event_ids_negative": [
+          9948,
           9947,
           9946,
           9945,
@@ -229698,9 +229714,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 27,
+        "negative": 28,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9948,
           9947,
           9946,
           9945,
@@ -229732,9 +229749,10 @@
       },
       "ILO": {
         "positive": 0,
-        "negative": 1,
+        "negative": 2,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9948,
           9918
         ]
       },
@@ -229769,11 +229787,9 @@
         ]
       },
       "PB": {
-        "positive": 1,
+        "positive": 0,
         "negative": 10,
-        "event_ids_positive": [
-          9908
-        ],
+        "event_ids_positive": [],
         "event_ids_negative": [
           9946,
           9943,
@@ -229890,6 +229906,16 @@
         ]
       },
       {
+        "name": "Agriculture",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9948,
+          9941
+        ]
+      },
+      {
         "name": "Construction",
         "count": 2,
         "burn_count": 0,
@@ -229928,22 +229954,13 @@
           9918,
           9910
         ]
-      },
-      {
-        "name": "Agriculture",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9941
-        ]
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 1,
+      "total_burn": 0,
       "direct_action": {
-        "count": 1,
-        "pct": 100.0
+        "count": 0,
+        "pct": 0.0
       },
       "editorial_consciousness": {
         "count": 0,
@@ -229970,24 +229987,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 39,
+      "total_mint": 40,
       "direct_action": {
-        "count": 34,
-        "pct": 87.2
+        "count": 35,
+        "pct": 87.5
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.6
+        "pct": 2.5
       },
       "untyped": {
         "count": 4,
-        "pct": 10.3
+        "pct": 10.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7657,
+      "total_mint": 7658,
       "direct_action": {
-        "count": 7014,
+        "count": 7015,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230004,11 +230021,6 @@
       "institutional": 33,
       "citizen_ratio": 0.175,
       "daily": [
-        {
-          "date": "2026-11-17",
-          "citizen": 1,
-          "institutional": 1
-        },
         {
           "date": "2026-11-18",
           "citizen": 1,
@@ -230038,16 +230050,21 @@
           "date": "2026-11-23",
           "citizen": 1,
           "institutional": 5
+        },
+        {
+          "date": "2026-11-24",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        9948,
         9945,
         9936,
         9922,
         9921,
         9918,
-        9910,
-        9908
+        9910
       ],
       "event_ids_institutional": [
         9947,
