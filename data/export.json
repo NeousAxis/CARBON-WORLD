@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-24T11:10:40.496737+00:00",
-  "total_events": 9952,
+  "generated_at": "2026-11-24T13:10:26.854613+00:00",
+  "total_events": 9953,
   "total_burned": 8201828095,
-  "total_minted": 12215186559,
+  "total_minted": 12215536559,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9953,
+      "event_title": "UK targets Houthis with new sanctions",
+      "event_url": "https://www.al-monitor.com/originals/2026/11/uk-targets-houthis-new-sanctions",
+      "event_source": "Al-Monitor (Middle East)",
+      "decision": "MINT",
+      "amount_crbn": 350000,
+      "final_score": -0.35,
+      "confidence": 5,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Potential civilian harm outweighs punitive benefits, leading to a negative net impact. | The sanctions deliver a clear punitive signal against grave abuses, supporting justice and gender protection. However, they also threaten essential services for civilians, creating significant humanitarian concerns. The net ethical balance leans negative due to the potential for widespre",
+      "tx_hash": "3CZ3wL5RLzW3pzhRE63MrQn2TMtXQuKM382uAiYWDNmPkdtmp15iSBzimBRGJVg4jJ8pTT4eDwbSBdTkVvMh13C4",
+      "created_at": "2026-11-24T13:09:38.524179+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United Kingdom",
+      "region": "Europe",
+      "administration": "UK-Labour",
+      "positive_aspects_json": "[{\"description\": \"UK sanctions punish Houthis for torture, rape and attacks, reinforcing accountability for human rights abuses.\", \"affected_sdgs\": [16, 5, 3], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Sanctions risk worsening civilian hardship in Yemen by restricting access to goods and humanitarian aid.\", \"affected_sdgs\": [1, 2, 3, 16], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 24\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 415000
+    },
     {
       "id": 9952,
       "event_title": "COP31 ends in failure as countries split over fossil fuels, climate finance",
@@ -229647,6 +229670,11 @@
         "total_amount": 3436730
       },
       {
+        "country": "United Kingdom",
+        "count": 2,
+        "total_amount": 891000
+      },
+      {
         "country": "Germany",
         "count": 2,
         "total_amount": 480260
@@ -229660,11 +229688,6 @@
         "country": "Russia",
         "count": 2,
         "total_amount": 482780
-      },
-      {
-        "country": "Ethiopia",
-        "count": 1,
-        "total_amount": 424000
       }
     ],
     "top_countries_burn": [],
@@ -229672,7 +229695,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 8
+        "events": 9
       },
       {
         "region": "North America",
@@ -229694,7 +229717,7 @@
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 8
+        "events": 9
       },
       {
         "region": "North America",
@@ -229745,7 +229768,7 @@
       },
       {
         "date": "2026-11-24",
-        "net_minted": 8261600,
+        "net_minted": 8611600,
         "net_burned": 0
       }
     ],
@@ -229763,9 +229786,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 40,
+        "negative": 41,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9953,
           9952,
           9951,
           9950,
@@ -229810,9 +229834,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 31,
+        "negative": 32,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9953,
           9952,
           9950,
           9949,
@@ -229857,9 +229882,10 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9953,
           9945,
           9917
         ]
@@ -229911,12 +229937,12 @@
       "niche_pct": 97.0,
       "mainstream_pct": 3.0,
       "total_sources_used": 33,
-      "articles_processed": 44
+      "articles_processed": 45
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 44,
-      "pct": 9.1
+      "total_events": 45,
+      "pct": 8.9
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230092,24 +230118,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 44,
+      "total_mint": 45,
       "direct_action": {
-        "count": 39,
-        "pct": 88.6
+        "count": 40,
+        "pct": 88.9
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.3
+        "pct": 2.2
       },
       "untyped": {
         "count": 4,
-        "pct": 9.1
+        "pct": 8.9
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7662,
+      "total_mint": 7663,
       "direct_action": {
-        "count": 7019,
+        "count": 7020,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230123,8 +230149,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 7,
-      "institutional": 37,
-      "citizen_ratio": 0.159,
+      "institutional": 38,
+      "citizen_ratio": 0.156,
       "daily": [
         {
           "date": "2026-11-18",
@@ -230159,7 +230185,7 @@
         {
           "date": "2026-11-24",
           "citizen": 1,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -230172,6 +230198,7 @@
         9910
       ],
       "event_ids_institutional": [
+        9953,
         9952,
         9951,
         9950,
