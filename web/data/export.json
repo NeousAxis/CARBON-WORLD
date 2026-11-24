@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-24T14:12:08.774625+00:00",
-  "total_events": 9954,
+  "generated_at": "2026-11-24T19:58:37.581658+00:00",
+  "total_events": 9955,
   "total_burned": 8201828095,
-  "total_minted": 12220946559,
+  "total_minted": 12221550559,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9955,
+      "event_title": "Companies are getting less accurate data on extreme weather just when they need it the most",
+      "event_url": "https://theconversation.com/companies-are-getting-less-accurate-data-on-extreme-weather-just-when-they-need-it-the-most-295737",
+      "event_source": "The Conversation US",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -3.23,
+      "confidence": 7,
+      "justification": "Retiring key weather-data sites harms climate resilience and public safety, outweighing any cost savings. | The action sharply limits vital climate‑adaptation data, harming public health, infrastructure resilience and sustainable development, with no evident compensating benefit.",
+      "tx_hash": "5u13RMLYKCuoes2d9Mgejpew98puwsuRs5dyLbxpFNG4twcrWqvr8vJZREcxB3h3XbNJdrh8HyaSyKCcgqaoysre",
+      "created_at": "2026-11-24T19:58:33.740507+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Retirement of key weather-data websites reduces access to accurate extreme‑weather information for scientists, businesses and emergency responders.\", \"affected_sdgs\": [3, 9, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9954,
       "event_title": "Right-wing revolt threatens to bog down EU budget",
@@ -229689,18 +229712,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 8,
-        "total_amount": 3436730
+        "count": 9,
+        "total_amount": 4040730
       },
       {
         "country": "United Kingdom",
         "count": 2,
         "total_amount": 891000
-      },
-      {
-        "country": "Germany",
-        "count": 2,
-        "total_amount": 480260
       },
       {
         "country": "France",
@@ -229711,17 +229729,22 @@
         "country": "Russia",
         "count": 2,
         "total_amount": 482780
+      },
+      {
+        "country": "Ethiopia",
+        "count": 1,
+        "total_amount": 424000
       }
     ],
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
-        "region": "Europe",
+        "region": "North America",
         "burn_ratio": 0.0,
         "events": 9
       },
       {
-        "region": "North America",
+        "region": "Europe",
         "burn_ratio": 0.0,
         "events": 8
       },
@@ -229738,12 +229761,12 @@
     ],
     "top_regions_destructive": [
       {
-        "region": "Europe",
+        "region": "North America",
         "mint_ratio": 1.0,
         "events": 9
       },
       {
-        "region": "North America",
+        "region": "Europe",
         "mint_ratio": 1.0,
         "events": 8
       },
@@ -229791,7 +229814,7 @@
       },
       {
         "date": "2026-11-24",
-        "net_minted": 14021600,
+        "net_minted": 14625600,
         "net_burned": 0
       }
     ],
@@ -229812,6 +229835,7 @@
         "negative": 42,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9955,
           9954,
           9953,
           9952,
@@ -229852,15 +229876,15 @@
           9913,
           9912,
           9911,
-          9910,
-          9909
+          9910
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 33,
+        "negative": 34,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9955,
           9954,
           9953,
           9952,
@@ -229939,9 +229963,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9955,
           9954,
           9952,
           9951,
@@ -230064,6 +230089,17 @@
         ]
       },
       {
+        "name": "Construction",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          9955,
+          9945,
+          9940
+        ]
+      },
+      {
         "name": "Defense",
         "count": 3,
         "burn_count": 0,
@@ -230082,16 +230118,6 @@
         "event_ids": [
           9948,
           9941
-        ]
-      },
-      {
-        "name": "Construction",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9945,
-          9940
         ]
       },
       {
@@ -230161,9 +230187,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7664,
+      "total_mint": 7665,
       "direct_action": {
-        "count": 7021,
+        "count": 7022,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230213,7 +230239,7 @@
         {
           "date": "2026-11-24",
           "citizen": 1,
-          "institutional": 6
+          "institutional": 7
         }
       ],
       "event_ids_citizen": [
@@ -230226,6 +230252,7 @@
         9910
       ],
       "event_ids_institutional": [
+        9955,
         9954,
         9953,
         9952,
@@ -230263,8 +230290,7 @@
         9914,
         9913,
         9912,
-        9911,
-        9909
+        9911
       ]
     }
   }
