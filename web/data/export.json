@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-24T08:08:26.499939+00:00",
-  "total_events": 9951,
+  "generated_at": "2026-11-24T11:10:40.496737+00:00",
+  "total_events": 9952,
   "total_burned": 8201828095,
-  "total_minted": 12208516559,
+  "total_minted": 12215186559,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9952,
+      "event_title": "COP31 ends in failure as countries split over fossil fuels, climate finance",
+      "event_url": "https://arstechnica.com/science/2026/11/cop31-ends-in-failure-as-countries-split-over-fossil-fuels-climate-finance/",
+      "event_source": "Ars Technica Science",
+      "decision": "MINT",
+      "amount_crbn": 6670000,
+      "final_score": -3.14,
+      "confidence": 7,
+      "justification": "Failure to reach a COP31 consensus delays essential climate action, warranting a MINT rating. | While the conference succeeded in gathering parties and raising awareness, the lack of any binding agreement represents a major setback for climate mitigation and equity. The negative impact on global emissions pathways outweighs the modest positive of dialogue, leading to an overall adverse ethical judgment.",
+      "tx_hash": "33eggjiGiWYyaCRXsw4Xpx7LMWWaHwLa8bMGi47gbZWA12q1qRmUEH3pctVvemWj1fMeAzLyAztPua9bU5Gc6xim",
+      "created_at": "2026-11-24T11:10:36.723764+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"COP31 convened global leaders, fostering dialogue and raising climate awareness.\", \"affected_sdgs\": [13, 16, 17], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"COP31 failed to secure a consensus on fossil‑fuel phase‑out and climate finance, delaying global climate action.\", \"affected_sdgs\": [13, 1, 10, 17], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 9, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 6670000
+    },
     {
       "id": 9951,
       "event_title": "Differential population declines across migratory strategies are shifting European bird communities towards residency",
@@ -229722,7 +229745,7 @@
       },
       {
         "date": "2026-11-24",
-        "net_minted": 1591600,
+        "net_minted": 8261600,
         "net_burned": 0
       }
     ],
@@ -229740,9 +229763,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9952,
           9951,
           9950,
           9949,
@@ -229786,9 +229810,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 30,
+        "negative": 31,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9952,
           9950,
           9949,
           9948,
@@ -229863,9 +229888,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 12,
+        "negative": 13,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9952,
           9951,
           9949,
           9946,
@@ -229882,18 +229908,34 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 96.9,
-      "mainstream_pct": 3.1,
-      "total_sources_used": 32,
-      "articles_processed": 43
+      "niche_pct": 97.0,
+      "mainstream_pct": 3.0,
+      "total_sources_used": 33,
+      "articles_processed": 44
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 43,
-      "pct": 9.3
+      "total_events": 44,
+      "pct": 9.1
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "COP",
+        "count": 8,
+        "burn_count": 0,
+        "mint_count": 8,
+        "event_ids": [
+          9952,
+          9946,
+          9943,
+          9939,
+          9935,
+          9927,
+          9921,
+          9916
+        ]
+      },
       {
         "name": "EU",
         "count": 8,
@@ -229908,21 +229950,6 @@
           9928,
           9927,
           9925
-        ]
-      },
-      {
-        "name": "COP",
-        "count": 7,
-        "burn_count": 0,
-        "mint_count": 7,
-        "event_ids": [
-          9946,
-          9943,
-          9939,
-          9935,
-          9927,
-          9921,
-          9916
         ]
       },
       {
@@ -229972,6 +229999,17 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 3,
+        "burn_count": 0,
+        "mint_count": 3,
+        "event_ids": [
+          9952,
+          9939,
+          9923
+        ]
+      },
+      {
         "name": "Defense",
         "count": 3,
         "burn_count": 0,
@@ -230000,16 +230038,6 @@
         "event_ids": [
           9945,
           9940
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 2,
-        "burn_count": 0,
-        "mint_count": 2,
-        "event_ids": [
-          9939,
-          9923
         ]
       },
       {
@@ -230064,10 +230092,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 43,
+      "total_mint": 44,
       "direct_action": {
-        "count": 38,
-        "pct": 88.4
+        "count": 39,
+        "pct": 88.6
       },
       "editorial_alarm": {
         "count": 1,
@@ -230075,13 +230103,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 9.3
+        "pct": 9.1
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7661,
+      "total_mint": 7662,
       "direct_action": {
-        "count": 7018,
+        "count": 7019,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230095,8 +230123,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 7,
-      "institutional": 36,
-      "citizen_ratio": 0.163,
+      "institutional": 37,
+      "citizen_ratio": 0.159,
       "daily": [
         {
           "date": "2026-11-18",
@@ -230131,7 +230159,7 @@
         {
           "date": "2026-11-24",
           "citizen": 1,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -230144,6 +230172,7 @@
         9910
       ],
       "event_ids_institutional": [
+        9952,
         9951,
         9950,
         9949,
