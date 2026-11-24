@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-24T13:10:26.854613+00:00",
-  "total_events": 9953,
+  "generated_at": "2026-11-24T14:12:08.774625+00:00",
+  "total_events": 9954,
   "total_burned": 8201828095,
-  "total_minted": 12215536559,
+  "total_minted": 12220946559,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9954,
+      "event_title": "Right-wing revolt threatens to bog down EU budget",
+      "event_url": "https://www.politico.eu/article/right-wing-revolt-threatens-to-bog-down-eu-budget/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.1,
+      "confidence": 7,
+      "justification": "The action likely delays essential climate and social funding, producing a net negative impact. | While the revolt promotes democratic debate, its net effect is to postpone crucial climate and social spending, undermining multiple SDGs and the right to an adequate standard of living. The negative consequences outweigh the procedural benefits.",
+      "tx_hash": "5SnFogZ1bGtSaGXGPG7VnwMpescVqtxZSYfyaANq3vNMxYxveR2S8sypq3AueaxvNyk4M9ityWkMdJd7pNSyMx2C",
+      "created_at": "2026-11-24T14:12:05.149429+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"The challenge forces parliamentary scrutiny of the EU budget, strengthening democratic oversight and institutional accountability.\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Delaying the EU budget hampers timely funding for climate mitigation, social welfare, and other EU-wide programs, worsening poverty and emissions.\", \"affected_sdgs\": [1, 3, 5, 8, 10, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9953,
       "event_title": "UK targets Houthis with new sanctions",
@@ -229768,7 +229791,7 @@
       },
       {
         "date": "2026-11-24",
-        "net_minted": 8611600,
+        "net_minted": 14021600,
         "net_burned": 0
       }
     ],
@@ -229786,9 +229809,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 41,
+        "negative": 42,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9954,
           9953,
           9952,
           9951,
@@ -229834,9 +229858,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 32,
+        "negative": 33,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9954,
           9953,
           9952,
           9950,
@@ -229914,9 +229939,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 13,
+        "negative": 14,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9954,
           9952,
           9951,
           9949,
@@ -229937,15 +229963,32 @@
       "niche_pct": 97.0,
       "mainstream_pct": 3.0,
       "total_sources_used": 33,
-      "articles_processed": 45
+      "articles_processed": 46
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 45,
-      "pct": 8.9
+      "total_events": 46,
+      "pct": 8.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 9,
+        "burn_count": 0,
+        "mint_count": 9,
+        "event_ids": [
+          9954,
+          9943,
+          9934,
+          9933,
+          9932,
+          9931,
+          9928,
+          9927,
+          9925
+        ]
+      },
       {
         "name": "COP",
         "count": 8,
@@ -229960,22 +230003,6 @@
           9927,
           9921,
           9916
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 8,
-        "burn_count": 0,
-        "mint_count": 8,
-        "event_ids": [
-          9943,
-          9934,
-          9933,
-          9932,
-          9931,
-          9928,
-          9927,
-          9925
         ]
       },
       {
@@ -230013,6 +230040,18 @@
         ]
       },
       {
+        "name": "Finance",
+        "count": 4,
+        "burn_count": 0,
+        "mint_count": 4,
+        "event_ids": [
+          9954,
+          9952,
+          9939,
+          9923
+        ]
+      },
+      {
         "name": "Energy",
         "count": 4,
         "burn_count": 0,
@@ -230022,17 +230061,6 @@
           9916,
           9914,
           9910
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 3,
-        "burn_count": 0,
-        "mint_count": 3,
-        "event_ids": [
-          9952,
-          9939,
-          9923
         ]
       },
       {
@@ -230118,10 +230146,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 45,
+      "total_mint": 46,
       "direct_action": {
-        "count": 40,
-        "pct": 88.9
+        "count": 41,
+        "pct": 89.1
       },
       "editorial_alarm": {
         "count": 1,
@@ -230129,13 +230157,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 8.9
+        "pct": 8.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7663,
+      "total_mint": 7664,
       "direct_action": {
-        "count": 7020,
+        "count": 7021,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230149,8 +230177,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 7,
-      "institutional": 38,
-      "citizen_ratio": 0.156,
+      "institutional": 39,
+      "citizen_ratio": 0.152,
       "daily": [
         {
           "date": "2026-11-18",
@@ -230185,7 +230213,7 @@
         {
           "date": "2026-11-24",
           "citizen": 1,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -230198,6 +230226,7 @@
         9910
       ],
       "event_ids_institutional": [
+        9954,
         9953,
         9952,
         9951,
