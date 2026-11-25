@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-25T08:10:21.268909+00:00",
-  "total_events": 9959,
+  "generated_at": "2026-11-25T10:10:27.436233+00:00",
+  "total_events": 9960,
   "total_burned": 8201828095,
-  "total_minted": 12227715059,
+  "total_minted": 12227769159,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9960,
+      "event_title": "Cape York residents swelter through heatwaves and nightly water outages",
+      "event_url": "https://www.abc.net.au/news/2026-11-25/cape-york-residents-swelter-heatwaves-water-outages/107426388",
+      "event_source": "ABC News Australia",
+      "decision": "MINT",
+      "amount_crbn": 54100,
+      "final_score": -2.21,
+      "confidence": 7,
+      "justification": "The immediate harms to vulnerable residents outweigh the intended long‑term water security benefits. | While the water‑outage policy aims to secure future water supplies, its immediate implementation during heatwaves imposes serious health risks on vulnerable populations, outweighing the long‑term benefits. The action therefore presents a net negative ethical outcome.",
+      "tx_hash": "5m34x3jDNes7vvrM34ApUdKUJY1DG7fi7tHdzU3JoTrvsscJXZpYw8sZhiy5z761Qa2knJVBBQkPM4YSgCvbgjVm",
+      "created_at": "2026-11-25T10:10:23.715669+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Scheduled water outages to recharge reservoirs, improving long‑term water security for the region.\", \"affected_sdgs\": [6, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Last‑minute water outages during extreme heat cause severe hardship for elderly and disabled residents, threatening health and violating the right to an adequate standard of living.\", \"affected_sdgs\": [3, 6, 10], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9959,
       "event_title": "Afghanistan: Are the Taliban about to erase women's names from official documents?",
@@ -229808,6 +229831,11 @@
         "total_amount": 3494410
       },
       {
+        "country": "Australia",
+        "count": 2,
+        "total_amount": 159100
+      },
+      {
         "country": "United Kingdom",
         "count": 2,
         "total_amount": 891000
@@ -229821,11 +229849,6 @@
         "country": "Russia",
         "count": 2,
         "total_amount": 482780
-      },
-      {
-        "country": "Afghanistan",
-        "count": 1,
-        "total_amount": 47800
       }
     ],
     "top_countries_burn": [],
@@ -229906,7 +229929,7 @@
       },
       {
         "date": "2026-11-25",
-        "net_minted": 262800,
+        "net_minted": 316900,
         "net_burned": 0
       }
     ],
@@ -229924,9 +229947,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 43,
+        "negative": 44,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9960,
           9959,
           9958,
           9957,
@@ -229974,9 +229998,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 35,
+        "negative": 36,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9960,
           9959,
           9958,
           9957,
@@ -230083,12 +230108,12 @@
       "niche_pct": 97.1,
       "mainstream_pct": 2.9,
       "total_sources_used": 34,
-      "articles_processed": 47
+      "articles_processed": 48
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 47,
-      "pct": 8.5
+      "total_events": 48,
+      "pct": 8.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230227,12 +230252,12 @@
         ]
       },
       {
-        "name": "Mining",
+        "name": "Water",
         "count": 1,
         "burn_count": 0,
         "mint_count": 1,
         "event_ids": [
-          9918
+          9960
         ]
       }
     ],
@@ -230267,10 +230292,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 47,
+      "total_mint": 48,
       "direct_action": {
-        "count": 42,
-        "pct": 89.4
+        "count": 43,
+        "pct": 89.6
       },
       "editorial_alarm": {
         "count": 1,
@@ -230278,13 +230303,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 8.5
+        "pct": 8.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7669,
+      "total_mint": 7670,
       "direct_action": {
-        "count": 7026,
+        "count": 7027,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230298,8 +230323,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 9,
-      "institutional": 38,
-      "citizen_ratio": 0.191,
+      "institutional": 39,
+      "citizen_ratio": 0.188,
       "daily": [
         {
           "date": "2026-11-19",
@@ -230334,7 +230359,7 @@
         {
           "date": "2026-11-25",
           "citizen": 1,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -230349,6 +230374,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9960,
         9959,
         9955,
         9954,
