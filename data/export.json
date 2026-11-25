@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-24T23:13:00.062253+00:00",
-  "total_events": 9957,
+  "generated_at": "2026-11-25T06:10:59.050920+00:00",
+  "total_events": 9958,
   "total_burned": 8201828095,
-  "total_minted": 12227452259,
+  "total_minted": 12227667259,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9958,
+      "event_title": "Israel/OPT: Women and girls bear the crushing toll of Israel's ongoing genocide in Gaza",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/11/women-and-girls-bear-the-crushing-toll-of-israels-ongoing-genocide-in-gaza/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 215000,
+      "final_score": -4.1,
+      "confidence": 5,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Ongoing Israeli military actions cause massive gendered civilian harm, violating multiple rights and SDGs. | The reported Israeli actions inflict massive, gender‑targeted civilian harm, breaching fundamental human, child, and indigenous rights and undermining key SDGs. No mitigating positive outcomes are evident, leading to a strongly negative ethical balance.",
+      "tx_hash": "2wtYo6W2CnHZ9Ucx89HV62AZNSD65rbi5U5xArVuB75kYhQzExkYQPwacoHdh16s5SBNAsgAReKnbtXNdUqAnxgQ",
+      "created_at": "2026-11-25T06:10:55.952157+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Israel",
+      "region": "MENA",
+      "administration": "Israel-Likud",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Israeli military operations in Gaza cause widespread civilian deaths, gender‑based violence, and systematic deprivation, constituting genocide against Palestinians.\", \"affected_sdgs\": [1, 3, 5, 10, 16], \"violated_rights\": [\"UDHR Article 3\", \"UDHR Article 5\", \"UDHR Article 25\", \"CRC Article 19\", \"UNDRIP Article 7\"], \"magnitude\": 10, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\", \"UNDRIP\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 5500000
+    },
     {
       "id": 9957,
       "event_title": "Fossil Fuels in the Classroom: The coordinated pro-industry network influencing Canadian students, teachers",
@@ -229758,8 +229781,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 9,
-        "total_amount": 4040730
+        "count": 7,
+        "total_amount": 3494410
       },
       {
         "country": "United Kingdom",
@@ -229777,17 +229800,22 @@
         "total_amount": 482780
       },
       {
-        "country": "Canada",
+        "country": "Israel",
         "count": 1,
-        "total_amount": 581700
+        "total_amount": 215000
       }
     ],
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "MENA",
+        "burn_ratio": 0.0,
+        "events": 4
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 10
+        "events": 8
       },
       {
         "region": "Europe",
@@ -229796,20 +229824,20 @@
       },
       {
         "region": "Asia",
-        "burn_ratio": 0.0,
-        "events": 3
-      },
-      {
-        "region": "MENA",
         "burn_ratio": 0.0,
         "events": 3
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "MENA",
+        "mint_ratio": 1.0,
+        "events": 4
+      },
+      {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 10
+        "events": 8
       },
       {
         "region": "Europe",
@@ -229820,19 +229848,9 @@
         "region": "Asia",
         "mint_ratio": 1.0,
         "events": 3
-      },
-      {
-        "region": "MENA",
-        "mint_ratio": 1.0,
-        "events": 3
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-18",
-        "net_minted": 1078420,
-        "net_burned": 0
-      },
       {
         "date": "2026-11-19",
         "net_minted": 6483000,
@@ -229862,25 +229880,31 @@
         "date": "2026-11-24",
         "net_minted": 20527300,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-25",
+        "net_minted": 215000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9949,
-      "event_title": "'Scapegoating': green groups condemn plan to axe Environment Agency and Natural England",
+      "id": 9958,
+      "event_title": "Israel/OPT: Women and girls bear the crushing toll of Israel's ongoing genocide in Gaza",
       "decision": "MINT",
-      "amount_crbn": 541000,
-      "final_score": -4.15,
-      "confidence": 7,
-      "country": "United Kingdom",
-      "region": "Europe",
-      "created_at": "2026-11-24T04:10:13.544347+00:00"
+      "amount_crbn": 215000,
+      "final_score": -4.1,
+      "confidence": 5,
+      "country": "Israel",
+      "region": "MENA",
+      "created_at": "2026-11-25T06:10:55.952157+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 44,
+        "negative": 42,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9958,
           9957,
           9956,
           9955,
@@ -229921,17 +229945,15 @@
           9916,
           9915,
           9914,
-          9913,
-          9912,
-          9911,
-          9910
+          9913
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 36,
+        "negative": 34,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9958,
           9957,
           9956,
           9955,
@@ -229964,10 +229986,7 @@
           9916,
           9915,
           9914,
-          9913,
-          9912,
-          9911,
-          9910
+          9913
         ]
       },
       "ILO": {
@@ -229981,9 +230000,10 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 4,
+        "negative": 5,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9958,
           9957,
           9953,
           9945,
@@ -229995,10 +230015,10 @@
         "negative": 4,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9958,
           9945,
           9936,
-          9922,
-          9910
+          9922
         ]
       },
       "Animal": {
@@ -230014,7 +230034,7 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 16,
+        "negative": 13,
         "event_ids_positive": [],
         "event_ids_negative": [
           9956,
@@ -230029,23 +230049,20 @@
           9935,
           9923,
           9922,
-          9920,
-          9912,
-          9911,
-          9910
+          9920
         ]
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.1,
-      "mainstream_pct": 2.9,
-      "total_sources_used": 35,
-      "articles_processed": 48
+      "niche_pct": 97.0,
+      "mainstream_pct": 3.0,
+      "total_sources_used": 33,
+      "articles_processed": 46
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 48,
-      "pct": 8.3
+      "total_events": 46,
+      "pct": 8.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230131,15 +230148,14 @@
         ]
       },
       {
-        "name": "Energy",
-        "count": 4,
+        "name": "Defense",
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
-          9920,
-          9916,
-          9914,
-          9910
+          9958,
+          9930,
+          9917
         ]
       },
       {
@@ -230154,14 +230170,14 @@
         ]
       },
       {
-        "name": "Defense",
+        "name": "Energy",
         "count": 3,
         "burn_count": 0,
         "mint_count": 3,
         "event_ids": [
-          9930,
-          9917,
-          9912
+          9920,
+          9916,
+          9914
         ]
       },
       {
@@ -230186,12 +230202,11 @@
       },
       {
         "name": "Mining",
-        "count": 2,
+        "count": 1,
         "burn_count": 0,
-        "mint_count": 2,
+        "mint_count": 1,
         "event_ids": [
-          9918,
-          9910
+          9918
         ]
       }
     ],
@@ -230226,24 +230241,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 48,
+      "total_mint": 46,
       "direct_action": {
-        "count": 43,
-        "pct": 89.6
+        "count": 41,
+        "pct": 89.1
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.1
+        "pct": 2.2
       },
       "untyped": {
         "count": 4,
-        "pct": 8.3
+        "pct": 8.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7667,
+      "total_mint": 7668,
       "direct_action": {
-        "count": 7024,
+        "count": 7025,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230257,14 +230272,9 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 9,
-      "institutional": 39,
-      "citizen_ratio": 0.188,
+      "institutional": 37,
+      "citizen_ratio": 0.196,
       "daily": [
-        {
-          "date": "2026-11-18",
-          "citizen": 1,
-          "institutional": 3
-        },
         {
           "date": "2026-11-19",
           "citizen": 0,
@@ -230294,9 +230304,15 @@
           "date": "2026-11-24",
           "citizen": 3,
           "institutional": 7
+        },
+        {
+          "date": "2026-11-25",
+          "citizen": 1,
+          "institutional": 0
         }
       ],
       "event_ids_citizen": [
+        9958,
         9957,
         9956,
         9948,
@@ -230304,8 +230320,7 @@
         9936,
         9922,
         9921,
-        9918,
-        9910
+        9918
       ],
       "event_ids_institutional": [
         9955,
@@ -230344,9 +230359,7 @@
         9916,
         9915,
         9914,
-        9913,
-        9912,
-        9911
+        9913
       ]
     }
   }
