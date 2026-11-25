@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-25T06:10:59.050920+00:00",
-  "total_events": 9958,
+  "generated_at": "2026-11-25T08:10:21.268909+00:00",
+  "total_events": 9959,
   "total_burned": 8201828095,
-  "total_minted": 12227667259,
+  "total_minted": 12227715059,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9959,
+      "event_title": "Afghanistan: Are the Taliban about to erase women's names from official documents?",
+      "event_url": "https://www.20minutes.fr/monde/afghanistan/4265065-20261125-afghanistan-talibans-point-effacer-noms-femmes-documents-officiels?at_medium=display&at_campaign=149",
+      "event_source": "20 Minutes FR",
+      "decision": "MINT",
+      "amount_crbn": 47800,
+      "final_score": -4.3,
+      "confidence": 6,
+      "justification": "Policy erases women's legal identity, violating rights and SDGs. | The ban on women's names removes legal identity, deepening gender discrimination and violating fundamental human and children's rights, resulting in a strongly negative ethical balance.",
+      "tx_hash": "2xxPY7oEQjuDkDXuwLigXsxFWxGMYvstqiBzoK4xqZJ69Nd1Gk6S8sgCasC48r4rPy6atL2DRTt2XxVH5UKZruvL",
+      "created_at": "2026-11-25T08:10:17.019357+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Afghanistan",
+      "region": "Asia",
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"Taliban authorities in Balkh province prohibit the registration of women's names on official and medical documents, erasing their legal identity.\", \"affected_sdgs\": [5, 10, 16, 3, 4], \"violated_rights\": [\"UDHR Article 2\", \"UDHR Article 7\", \"CRC Article 7\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9958,
       "event_title": "Israel/OPT: Women and girls bear the crushing toll of Israel's ongoing genocide in Gaza",
@@ -229800,14 +229823,19 @@
         "total_amount": 482780
       },
       {
-        "country": "Israel",
+        "country": "Afghanistan",
         "count": 1,
-        "total_amount": 215000
+        "total_amount": 47800
       }
     ],
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "Asia",
+        "burn_ratio": 0.0,
+        "events": 4
+      },
+      {
         "region": "MENA",
         "burn_ratio": 0.0,
         "events": 4
@@ -229821,15 +229849,15 @@
         "region": "Europe",
         "burn_ratio": 0.0,
         "events": 8
-      },
-      {
-        "region": "Asia",
-        "burn_ratio": 0.0,
-        "events": 3
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 4
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 4
@@ -229843,11 +229871,6 @@
         "region": "Europe",
         "mint_ratio": 1.0,
         "events": 8
-      },
-      {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 3
       }
     ],
     "supply_trend_7d": [
@@ -229883,27 +229906,28 @@
       },
       {
         "date": "2026-11-25",
-        "net_minted": 215000,
+        "net_minted": 262800,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9958,
-      "event_title": "Israel/OPT: Women and girls bear the crushing toll of Israel's ongoing genocide in Gaza",
+      "id": 9959,
+      "event_title": "Afghanistan: Are the Taliban about to erase women's names from official documents?",
       "decision": "MINT",
-      "amount_crbn": 215000,
-      "final_score": -4.1,
-      "confidence": 5,
-      "country": "Israel",
-      "region": "MENA",
-      "created_at": "2026-11-25T06:10:55.952157+00:00"
+      "amount_crbn": 47800,
+      "final_score": -4.3,
+      "confidence": 6,
+      "country": "Afghanistan",
+      "region": "Asia",
+      "created_at": "2026-11-25T08:10:17.019357+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 42,
+        "negative": 43,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9959,
           9958,
           9957,
           9956,
@@ -229950,9 +229974,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 34,
+        "negative": 35,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9959,
           9958,
           9957,
           9956,
@@ -230000,9 +230025,10 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 5,
+        "negative": 6,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9959,
           9958,
           9957,
           9953,
@@ -230054,15 +230080,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.0,
-      "mainstream_pct": 3.0,
-      "total_sources_used": 33,
-      "articles_processed": 46
+      "niche_pct": 97.1,
+      "mainstream_pct": 2.9,
+      "total_sources_used": 34,
+      "articles_processed": 47
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 46,
-      "pct": 8.7
+      "total_events": 47,
+      "pct": 8.5
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230241,24 +230267,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 46,
+      "total_mint": 47,
       "direct_action": {
-        "count": 41,
-        "pct": 89.1
+        "count": 42,
+        "pct": 89.4
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.2
+        "pct": 2.1
       },
       "untyped": {
         "count": 4,
-        "pct": 8.7
+        "pct": 8.5
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7668,
+      "total_mint": 7669,
       "direct_action": {
-        "count": 7025,
+        "count": 7026,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230272,8 +230298,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 9,
-      "institutional": 37,
-      "citizen_ratio": 0.196,
+      "institutional": 38,
+      "citizen_ratio": 0.191,
       "daily": [
         {
           "date": "2026-11-19",
@@ -230308,7 +230334,7 @@
         {
           "date": "2026-11-25",
           "citizen": 1,
-          "institutional": 0
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -230323,6 +230349,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9959,
         9955,
         9954,
         9953,
