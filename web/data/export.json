@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-26T11:10:41.916991+00:00",
-  "total_events": 9965,
+  "generated_at": "2026-11-26T12:06:35.789334+00:00",
+  "total_events": 9966,
   "total_burned": 8201828095,
-  "total_minted": 12234612759,
+  "total_minted": 12240652759,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9966,
+      "event_title": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
+      "event_url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604?maca=en-rss-en-world-4025-rdf",
+      "event_source": "Deutsche Welle World",
+      "decision": "MINT",
+      "amount_crbn": 6040000,
+      "final_score": -2.75,
+      "confidence": 7,
+      "justification": "The naval attacks increase harm and destabilise global trade, outweighing limited defensive benefits. | While the attacks serve Ukraine's legitimate self‑defence, they substantially increase violence, threaten civilian lives and marine ecosystems, and undermine international trade, resulting in a net negative ethical balance.",
+      "tx_hash": "nF57qxU2dc1w72ZEWb2x3QpGhDw9j2ZixsEseBXy8cBq3wqBLqbF4pBcbffRZu1pYwidMHJS3iouRUSvqhRjPQf",
+      "created_at": "2026-11-26T12:06:32.350024+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ukraine",
+      "region": "Europe",
+      "administration": "Ukraine-Servant of the People",
+      "positive_aspects_json": "[{\"description\": \"Ukraine's naval attacks aim to defend its sovereignty and deter further Russian aggression, supporting the right to self‑defence and security.\", \"affected_sdgs\": [16], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Escalation of armed conflict at sea raises the risk of civilian casualties, disrupts global maritime trade, and can cause severe marine environmental damage if vessels are sunk.\", \"affected_sdgs\": [13, 14, 9], \"violated_rights\": [\"UDHR Article 3\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9965,
       "event_title": "Indonesia: One year after devastating Aceh floods, communities face renewed flood risk as recovery stalls",
@@ -229969,6 +229992,11 @@
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 9
+      },
+      {
         "region": "Asia",
         "burn_ratio": 0.0,
         "events": 5
@@ -229982,15 +230010,15 @@
         "region": "North America",
         "burn_ratio": 0.0,
         "events": 6
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.0,
-        "events": 8
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "Europe",
+        "mint_ratio": 1.0,
+        "events": 9
+      },
+      {
         "region": "Asia",
         "mint_ratio": 1.0,
         "events": 5
@@ -230004,11 +230032,6 @@
         "region": "North America",
         "mint_ratio": 1.0,
         "events": 6
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 1.0,
-        "events": 8
       }
     ],
     "supply_trend_7d": [
@@ -230044,7 +230067,7 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 6628600,
+        "net_minted": 12668600,
         "net_burned": 0
       }
     ],
@@ -230062,9 +230085,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 45,
+        "negative": 46,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9966,
           9965,
           9964,
           9962,
@@ -230114,9 +230138,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 37,
+        "negative": 38,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9966,
           9965,
           9964,
           9962,
@@ -230204,9 +230229,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 14,
+        "negative": 15,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9966,
           9962,
           9956,
           9955,
@@ -230228,12 +230254,12 @@
       "niche_pct": 97.1,
       "mainstream_pct": 2.9,
       "total_sources_used": 34,
-      "articles_processed": 49
+      "articles_processed": 50
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 49,
-      "pct": 8.2
+      "total_events": 50,
+      "pct": 8.0
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230414,10 +230440,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 49,
+      "total_mint": 50,
       "direct_action": {
-        "count": 44,
-        "pct": 89.8
+        "count": 45,
+        "pct": 90.0
       },
       "editorial_alarm": {
         "count": 1,
@@ -230425,13 +230451,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 8.2
+        "pct": 8.0
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7674,
+      "total_mint": 7675,
       "direct_action": {
-        "count": 7031,
+        "count": 7032,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230445,8 +230471,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 11,
-      "institutional": 38,
-      "citizen_ratio": 0.224,
+      "institutional": 39,
+      "citizen_ratio": 0.22,
       "daily": [
         {
           "date": "2026-11-20",
@@ -230481,7 +230507,7 @@
         {
           "date": "2026-11-26",
           "citizen": 2,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -230498,6 +230524,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9966,
         9965,
         9962,
         9960,
