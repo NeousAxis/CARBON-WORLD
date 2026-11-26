@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-26T12:06:35.789334+00:00",
-  "total_events": 9966,
+  "generated_at": "2026-11-26T13:09:42.172827+00:00",
+  "total_events": 9967,
   "total_burned": 8201828095,
-  "total_minted": 12240652759,
+  "total_minted": 12246062759,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9967,
+      "event_title": "EU Chinese inverter ban could cut Eastern European PV deployments by 5%, says Woodmac",
+      "event_url": "https://www.pv-tech.org/eu-chinese-inverter-ban-could-cut-eastern-european-pv-deployments-by-5-says-woodmac/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "MINT",
+      "amount_crbn": 5410000,
+      "final_score": -2.17,
+      "confidence": 7,
+      "justification": "The policy likely hampers renewable deployment and climate progress, outweighing modest industrial benefits. | While the ban may boost EU industrial autonomy and job creation, its immediate effect is a measurable slowdown of renewable energy rollout, undermining climate goals and the right to a healthy environment. The net ethical balance is negative.",
+      "tx_hash": "5puF8yCoQcvmxGis2jz5x1ii3eDhhSHKh9equzxU4KEt62XmD23kFxvFQYrH2Xm5H59XEKXG95yiNhhSThxrSquj",
+      "created_at": "2026-11-26T13:09:38.409370+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"EU ban stimulates domestic inverter manufacturing, creating jobs and reducing reliance on external supply chains.\", \"affected_sdgs\": [8, 9], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"ILO\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Restriction on Chinese inverters is projected to cut solar PV deployments in Eastern Europe by about 5%, slowing clean‑energy transition and increasing CO₂ emissions.\", \"affected_sdgs\": [7, 13, 12], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9966,
       "event_title": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
@@ -230067,7 +230090,7 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 12668600,
+        "net_minted": 18078600,
         "net_burned": 0
       }
     ],
@@ -230085,9 +230108,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9967,
           9966,
           9965,
           9964,
@@ -230138,9 +230162,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 38,
+        "negative": 39,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9967,
           9966,
           9965,
           9964,
@@ -230183,9 +230208,10 @@
       },
       "ILO": {
         "positive": 0,
-        "negative": 3,
+        "negative": 4,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9967,
           9964,
           9948,
           9918
@@ -230229,9 +230255,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 15,
+        "negative": 16,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9967,
           9966,
           9962,
           9956,
@@ -230253,16 +230280,34 @@
     "source_diversity_7d": {
       "niche_pct": 97.1,
       "mainstream_pct": 2.9,
-      "total_sources_used": 34,
-      "articles_processed": 50
+      "total_sources_used": 35,
+      "articles_processed": 51
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 50,
-      "pct": 8.0
+      "total_events": 51,
+      "pct": 7.8
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
+      {
+        "name": "EU",
+        "count": 10,
+        "burn_count": 0,
+        "mint_count": 10,
+        "event_ids": [
+          9967,
+          9954,
+          9943,
+          9934,
+          9933,
+          9932,
+          9931,
+          9928,
+          9927,
+          9925
+        ]
+      },
       {
         "name": "COP",
         "count": 10,
@@ -230279,23 +230324,6 @@
           9927,
           9921,
           9916
-        ]
-      },
-      {
-        "name": "EU",
-        "count": 9,
-        "burn_count": 0,
-        "mint_count": 9,
-        "event_ids": [
-          9954,
-          9943,
-          9934,
-          9933,
-          9932,
-          9931,
-          9928,
-          9927,
-          9925
         ]
       },
       {
@@ -230347,10 +230375,11 @@
       },
       {
         "name": "Energy",
-        "count": 3,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          9967,
           9962,
           9920,
           9916
@@ -230440,10 +230469,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 50,
+      "total_mint": 51,
       "direct_action": {
-        "count": 45,
-        "pct": 90.0
+        "count": 46,
+        "pct": 90.2
       },
       "editorial_alarm": {
         "count": 1,
@@ -230451,13 +230480,13 @@
       },
       "untyped": {
         "count": 4,
-        "pct": 8.0
+        "pct": 7.8
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7675,
+      "total_mint": 7676,
       "direct_action": {
-        "count": 7032,
+        "count": 7033,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230471,8 +230500,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 11,
-      "institutional": 39,
-      "citizen_ratio": 0.22,
+      "institutional": 40,
+      "citizen_ratio": 0.216,
       "daily": [
         {
           "date": "2026-11-20",
@@ -230507,7 +230536,7 @@
         {
           "date": "2026-11-26",
           "citizen": 2,
-          "institutional": 3
+          "institutional": 4
         }
       ],
       "event_ids_citizen": [
@@ -230524,6 +230553,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9967,
         9966,
         9965,
         9962,
