@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-26T19:10:17.887204+00:00",
-  "total_events": 9968,
+  "generated_at": "2026-11-26T22:11:54.829005+00:00",
+  "total_events": 9969,
   "total_burned": 8201828095,
-  "total_minted": 12246603759,
+  "total_minted": 12247207759,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9969,
+      "event_title": "Trump Dribbles Out Wind Approvals While Clean Energy Stalls",
+      "event_url": "https://www.nrdc.org/press-releases/trump-dribbles-out-wind-approvals-while-clean-energy-stalls",
+      "event_source": "NRDC News",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.45,
+      "confidence": 7,
+      "justification": "Blocking wind and solar approvals hampers clean energy transition, warranting a MINT. | The action directly hinders clean energy expansion, undermining climate goals and the right to a healthy environment. No compensating benefits are evident, leading to a net negative ethical assessment.",
+      "tx_hash": "4RrzwKE3DKVMtvKPH324pHHYTLVtxgAvMPmxdcRW8kqAjac6p6fU1NKv4tkmx4U3kmKPHJCmCNU117jcAMGxEUqA",
+      "created_at": "2026-11-26T22:11:50.852117+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": null,
+      "negative_aspects_json": "[{\"description\": \"The Trump administration blocked approvals for hundreds of wind and solar projects, delaying clean energy deployment.\", \"affected_sdgs\": [7, 9, 11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9968,
       "event_title": "Australia projected to completely miss 2035 emissions target without new climate policies",
@@ -230011,8 +230034,8 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 5,
-        "total_amount": 2421410
+        "count": 6,
+        "total_amount": 3025410
       },
       {
         "country": "Australia",
@@ -230038,6 +230061,11 @@
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "North America",
+        "burn_ratio": 0.0,
+        "events": 7
+      },
+      {
         "region": "Oceania",
         "burn_ratio": 0.0,
         "events": 3
@@ -230056,15 +230084,15 @@
         "region": "MENA",
         "burn_ratio": 0.0,
         "events": 5
-      },
-      {
-        "region": "North America",
-        "burn_ratio": 0.0,
-        "events": 6
       }
     ],
     "top_regions_destructive": [
       {
+        "region": "North America",
+        "mint_ratio": 1.0,
+        "events": 7
+      },
+      {
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 3
@@ -230083,11 +230111,6 @@
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 5
-      },
-      {
-        "region": "North America",
-        "mint_ratio": 1.0,
-        "events": 6
       }
     ],
     "supply_trend_7d": [
@@ -230123,7 +230146,7 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 18619600,
+        "net_minted": 19223600,
         "net_burned": 0
       }
     ],
@@ -230141,9 +230164,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 47,
+        "negative": 48,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9969,
           9968,
           9967,
           9966,
@@ -230195,9 +230219,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 38,
+        "negative": 39,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9969,
           9967,
           9966,
           9965,
@@ -230287,9 +230312,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9969,
           9968,
           9967,
           9966,
@@ -230311,15 +230337,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.1,
-      "mainstream_pct": 2.9,
-      "total_sources_used": 35,
-      "articles_processed": 51
+      "niche_pct": 97.2,
+      "mainstream_pct": 2.8,
+      "total_sources_used": 36,
+      "articles_processed": 52
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 51,
-      "pct": 7.8
+      "total_events": 52,
+      "pct": 7.7
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230407,10 +230433,11 @@
       },
       {
         "name": "Energy",
-        "count": 3,
+        "count": 4,
         "burn_count": 0,
-        "mint_count": 3,
+        "mint_count": 4,
         "event_ids": [
+          9969,
           9967,
           9962,
           9920
@@ -230500,24 +230527,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 51,
+      "total_mint": 52,
       "direct_action": {
-        "count": 46,
-        "pct": 90.2
+        "count": 47,
+        "pct": 90.4
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.0
+        "pct": 1.9
       },
       "untyped": {
         "count": 4,
-        "pct": 7.8
+        "pct": 7.7
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7677,
+      "total_mint": 7678,
       "direct_action": {
-        "count": 7034,
+        "count": 7035,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230531,8 +230558,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 11,
-      "institutional": 40,
-      "citizen_ratio": 0.216,
+      "institutional": 41,
+      "citizen_ratio": 0.212,
       "daily": [
         {
           "date": "2026-11-20",
@@ -230567,7 +230594,7 @@
         {
           "date": "2026-11-26",
           "citizen": 2,
-          "institutional": 5
+          "institutional": 6
         }
       ],
       "event_ids_citizen": [
@@ -230584,6 +230611,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9969,
         9968,
         9967,
         9966,
