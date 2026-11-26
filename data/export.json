@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-26T03:10:00.572165+00:00",
-  "total_events": 9962,
+  "generated_at": "2026-11-26T07:09:26.711006+00:00",
+  "total_events": 9964,
   "total_burned": 8201828095,
-  "total_minted": 12234287159,
+  "total_minted": 12234508759,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9964,
+      "event_title": "Practising solidarity economy: Women's collective action and community finance in Memirlosho",
+      "event_url": "https://womin.africa/practising-solidarity-economy-womens-collective-action-and-community-finance-in-memirlosho/",
+      "event_source": "WoMin Africa",
+      "decision": "MINT",
+      "amount_crbn": 6600,
+      "final_score": 1.9,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Women's finance collective protects rights, empowers gender equality and community resilience—an action that mitigates harm. | The collective empowers women, reduces poverty and advances gender equality, but its impact remains limited to a small community, resulting in a modest overall benefit.",
+      "tx_hash": "yQc25qd6oF2wXKBdShb3pXNYDwjAkibra7sxohAVgDWTMd56doKsjcfZghVTYPtMnsf8Jq7ppD2CZajvsYRJGnp",
+      "created_at": "2026-11-26T07:09:23.082553+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Tanzania",
+      "region": "Africa",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Women in Memirlosho formed a community finance collective to support livelihoods and promote solidarity economy.\", \"affected_sdgs\": [1, 5, 8, 10, 12], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"UDHR\", \"ILO\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 31600
+    },
+    {
+      "id": 9963,
+      "event_title": "Israel and the Occupied Palestinian Territory: No conditions for life: Women, girls and the gendered dimensions of Israel’s genocide against Palestinians in Gaza",
+      "event_url": "https://www.amnesty.org/en/documents/mde15/1636/2026/en/",
+      "event_source": "Amnesty International Research",
+      "decision": "MINT",
+      "amount_crbn": 215000,
+      "final_score": -4.1,
+      "confidence": 5,
+      "justification": "Semantic cache reuse (cosine=0.921) from event #9958",
+      "tx_hash": null,
+      "created_at": "2026-11-26T04:02:54.456424+00:00",
+      "embedding": null,
+      "reused_from_event_id": 9958,
+      "country": null,
+      "region": null,
+      "administration": null,
+      "positive_aspects_json": null,
+      "negative_aspects_json": null,
+      "burn_subtype": null,
+      "mint_subtype": null,
+      "amount_index": 32500
+    },
     {
       "id": 9962,
       "event_title": "Africa: COP31 Verdict - Things Fall Apart",
@@ -229975,7 +230021,7 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 6518000,
+        "net_minted": 6524600,
         "net_burned": 0
       }
     ],
@@ -229993,9 +230039,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 44,
+        "negative": 45,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9964,
           9962,
           9961,
           9960,
@@ -230044,9 +230091,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 36,
+        "negative": 37,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9964,
           9962,
           9961,
           9960,
@@ -230087,9 +230135,10 @@
       },
       "ILO": {
         "positive": 0,
-        "negative": 2,
+        "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9964,
           9948,
           9918
         ]
@@ -230152,15 +230201,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.0,
-      "mainstream_pct": 3.0,
-      "total_sources_used": 33,
-      "articles_processed": 48
+      "niche_pct": 97.1,
+      "mainstream_pct": 2.9,
+      "total_sources_used": 34,
+      "articles_processed": 49
     },
     "cache_hit_rate_7d": {
       "hits": 4,
-      "total_events": 48,
-      "pct": 8.3
+      "total_events": 49,
+      "pct": 8.2
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230220,6 +230269,20 @@
     ],
     "top_sectors_7d": [
       {
+        "name": "Finance",
+        "count": 6,
+        "burn_count": 0,
+        "mint_count": 6,
+        "event_ids": [
+          9964,
+          9956,
+          9954,
+          9952,
+          9939,
+          9923
+        ]
+      },
+      {
         "name": "Tech",
         "count": 6,
         "burn_count": 0,
@@ -230231,19 +230294,6 @@
           9931,
           9928,
           9915
-        ]
-      },
-      {
-        "name": "Finance",
-        "count": 5,
-        "burn_count": 0,
-        "mint_count": 5,
-        "event_ids": [
-          9956,
-          9954,
-          9952,
-          9939,
-          9923
         ]
       },
       {
@@ -230340,24 +230390,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 48,
+      "total_mint": 49,
       "direct_action": {
-        "count": 43,
-        "pct": 89.6
+        "count": 44,
+        "pct": 89.8
       },
       "editorial_alarm": {
         "count": 1,
-        "pct": 2.1
+        "pct": 2.0
       },
       "untyped": {
         "count": 4,
-        "pct": 8.3
+        "pct": 8.2
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7672,
+      "total_mint": 7673,
       "direct_action": {
-        "count": 7029,
+        "count": 7030,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230370,9 +230420,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 10,
+      "citizen": 11,
       "institutional": 38,
-      "citizen_ratio": 0.208,
+      "citizen_ratio": 0.224,
       "daily": [
         {
           "date": "2026-11-20",
@@ -230406,11 +230456,12 @@
         },
         {
           "date": "2026-11-26",
-          "citizen": 1,
+          "citizen": 2,
           "institutional": 1
         }
       ],
       "event_ids_citizen": [
+        9964,
         9961,
         9958,
         9957,
