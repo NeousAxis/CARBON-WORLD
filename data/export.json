@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-26T13:09:42.172827+00:00",
-  "total_events": 9967,
+  "generated_at": "2026-11-26T19:10:17.887204+00:00",
+  "total_events": 9968,
   "total_burned": 8201828095,
-  "total_minted": 12246062759,
+  "total_minted": 12246603759,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9968,
+      "event_title": "Australia projected to completely miss 2035 emissions target without new climate policies",
+      "event_url": "https://www.theguardian.com/australia-news/2026/nov/26/australia-projected-to-miss-2035-emissions-targets-climate-policies",
+      "event_source": "The Guardian Climate",
+      "decision": "MINT",
+      "amount_crbn": 541000,
+      "final_score": -2.16,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Official projections show Australia missing its 2035 emissions target by a wide margin without new policy; the transparency is credible but the shortfall is a national climate-action failure. | The article reports on official projections rather than a new policy decision. Transparency and the 2030 progress are credible positives, but the projected 2035 shortfall, without new policy, is a significant national climate-action failure",
+      "tx_hash": "264HaRdfkxfYGHjTpeUJrBPodXjY4NMUBbom5saQ6yRn6C8oGe5dU4xwzgmnkb82eoCcCwPwrCqK1JkHzfAwZ767",
+      "created_at": "2026-11-26T19:10:13.888557+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Australia",
+      "region": "Oceania",
+      "administration": "Australia-Labor",
+      "positive_aspects_json": "[{\"description\": \"Government climate department publishes transparent official projections, openly acknowledging the 2035 gap rather than obscuring it.\", \"affected_sdgs\": [13, 16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}, {\"description\": \"Projections show Australia nearly on track for its 2030 emissions reduction target, evidence of progress on existing policy.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Minister Chris Bowen publicly warns of headwinds and signals that stronger federal policy is needed, which can build pressure for action.\", \"affected_sdgs\": [13, 16], \"magnitude\": 3, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Existing policies would cut emissions only about 48% below 2005 by 2035, far short of the 62-70% target, a significant national shortfall in climate action.\", \"affected_sdgs\": [13, 7], \"violated_rights\": [], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Projected failure to meet the 2035 target delays climate protection for vulnerable populations and ecosystems, with lock-in risk for later decades.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [], \"magnitude\": 5, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 541000
+    },
     {
       "id": 9967,
       "event_title": "EU Chinese inverter ban could cut Eastern European PV deployments by 5%, says Woodmac",
@@ -229992,14 +230015,14 @@
         "total_amount": 2421410
       },
       {
+        "country": "Australia",
+        "count": 3,
+        "total_amount": 700100
+      },
+      {
         "country": "Indonesia",
         "count": 2,
         "total_amount": 107520
-      },
-      {
-        "country": "Australia",
-        "count": 2,
-        "total_amount": 159100
       },
       {
         "country": "United Kingdom",
@@ -230014,6 +230037,11 @@
     ],
     "top_countries_burn": [],
     "top_regions_sustainable": [
+      {
+        "region": "Oceania",
+        "burn_ratio": 0.0,
+        "events": 3
+      },
       {
         "region": "Europe",
         "burn_ratio": 0.0,
@@ -230036,6 +230064,11 @@
       }
     ],
     "top_regions_destructive": [
+      {
+        "region": "Oceania",
+        "mint_ratio": 1.0,
+        "events": 3
+      },
       {
         "region": "Europe",
         "mint_ratio": 1.0,
@@ -230090,7 +230123,7 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 18078600,
+        "net_minted": 18619600,
         "net_burned": 0
       }
     ],
@@ -230111,6 +230144,7 @@
         "negative": 47,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9968,
           9967,
           9966,
           9965,
@@ -230156,13 +230190,12 @@
           9920,
           9919,
           9918,
-          9917,
-          9916
+          9917
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 39,
+        "negative": 38,
         "event_ids_positive": [],
         "event_ids_negative": [
           9967,
@@ -230202,8 +230235,7 @@
           9923,
           9919,
           9918,
-          9917,
-          9916
+          9917
         ]
       },
       "ILO": {
@@ -230255,9 +230287,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 16,
+        "negative": 17,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9968,
           9967,
           9966,
           9962,
@@ -230310,9 +230343,9 @@
       },
       {
         "name": "COP",
-        "count": 10,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           9962,
           9956,
@@ -230322,8 +230355,7 @@
           9939,
           9935,
           9927,
-          9921,
-          9916
+          9921
         ]
       },
       {
@@ -230375,14 +230407,13 @@
       },
       {
         "name": "Energy",
-        "count": 4,
+        "count": 3,
         "burn_count": 0,
-        "mint_count": 4,
+        "mint_count": 3,
         "event_ids": [
           9967,
           9962,
-          9920,
-          9916
+          9920
         ]
       },
       {
@@ -230484,9 +230515,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7676,
+      "total_mint": 7677,
       "direct_action": {
-        "count": 7033,
+        "count": 7034,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230536,7 +230567,7 @@
         {
           "date": "2026-11-26",
           "citizen": 2,
-          "institutional": 4
+          "institutional": 5
         }
       ],
       "event_ids_citizen": [
@@ -230553,6 +230584,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9968,
         9967,
         9966,
         9965,
@@ -230591,8 +230623,7 @@
         9923,
         9920,
         9919,
-        9917,
-        9916
+        9917
       ]
     }
   }
