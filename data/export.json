@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-26T07:09:26.711006+00:00",
-  "total_events": 9964,
+  "generated_at": "2026-11-26T11:10:41.916991+00:00",
+  "total_events": 9965,
   "total_burned": 8201828095,
-  "total_minted": 12234508759,
+  "total_minted": 12234612759,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9965,
+      "event_title": "Indonesia: One year after devastating Aceh floods, communities face renewed flood risk as recovery stalls",
+      "event_url": "https://www.amnesty.org/en/latest/news/2026/11/indonesia-one-year-after-aceh-floods-communities-face-flood-risk-as-recovery-stalls/",
+      "event_source": "Amnesty International News",
+      "decision": "MINT",
+      "amount_crbn": 104000,
+      "final_score": -2.48,
+      "confidence": 8,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=MINT/B=NEUTRAL -> MINT (human chose this in 93% of 255 past reviews)] Government inaction leaves flood victims vulnerable, worsening harm; the institutional failure outweighs any awareness gains. | The government's inaction creates immediate harm to vulnerable communities, outweighing the positive impact of increased awareness, resulting in a net negative ethical assessment.",
+      "tx_hash": "3NEzdYynba8f6BtpYWzAHNNioEZF4Rbf4xzoiQ4vDpTRLEt5SLGN1gexaDBAbWSfEpLZukeJAqt1FDRaE4kzHCdf",
+      "created_at": "2026-11-26T11:10:38.858749+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Indonesia",
+      "region": "Asia",
+      "administration": "Indonesia-Gerindra",
+      "positive_aspects_json": "[{\"description\": \"Amnesty International published a briefing exposing the stalled recovery, raising public awareness and prompting advocacy for flood victims.\", \"affected_sdgs\": [1, 3, 11, 13], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Indonesian authorities failed to deliver promised housing and support to Aceh flood survivors, leaving them exposed to renewed flood risk.\", \"affected_sdgs\": [1, 3, 6, 11, 13], \"violated_rights\": [\"UDHR Article 25\", \"CRC Article 27\"], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9964,
       "event_title": "Practising solidarity economy: Women's collective action and community finance in Memirlosho",
@@ -229919,8 +229942,13 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 6,
-        "total_amount": 2962410
+        "count": 5,
+        "total_amount": 2421410
+      },
+      {
+        "country": "Indonesia",
+        "count": 2,
+        "total_amount": 107520
       },
       {
         "country": "Australia",
@@ -229936,29 +229964,24 @@
         "country": "France",
         "count": 2,
         "total_amount": 956000
-      },
-      {
-        "country": "Russia",
-        "count": 2,
-        "total_amount": 482780
       }
     ],
     "top_countries_burn": [],
     "top_regions_sustainable": [
+      {
+        "region": "Asia",
+        "burn_ratio": 0.0,
+        "events": 5
+      },
       {
         "region": "MENA",
         "burn_ratio": 0.0,
         "events": 5
       },
       {
-        "region": "Asia",
-        "burn_ratio": 0.0,
-        "events": 4
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 7
+        "events": 6
       },
       {
         "region": "Europe",
@@ -229968,19 +229991,19 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "Asia",
+        "mint_ratio": 1.0,
+        "events": 5
+      },
+      {
         "region": "MENA",
         "mint_ratio": 1.0,
         "events": 5
       },
       {
-        "region": "Asia",
-        "mint_ratio": 1.0,
-        "events": 4
-      },
-      {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 6
       },
       {
         "region": "Europe",
@@ -230021,20 +230044,20 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 6524600,
+        "net_minted": 6628600,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9959,
-      "event_title": "Afghanistan: Are the Taliban about to erase women's names from official documents?",
+      "id": 9961,
+      "event_title": "Houthis say hit two Saudi ports in response to coalition strikes",
       "decision": "MINT",
-      "amount_crbn": 47800,
-      "final_score": -4.3,
+      "amount_crbn": 478000,
+      "final_score": -3.62,
       "confidence": 6,
-      "country": "Afghanistan",
-      "region": "Asia",
-      "created_at": "2026-11-25T08:10:17.019357+00:00"
+      "country": "Yemen",
+      "region": "MENA",
+      "created_at": "2026-11-26T00:09:49.365729+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
@@ -230042,6 +230065,7 @@
         "negative": 45,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9965,
           9964,
           9962,
           9961,
@@ -230085,8 +230109,7 @@
           9919,
           9918,
           9917,
-          9916,
-          9915
+          9916
         ]
       },
       "UDHR": {
@@ -230094,6 +230117,7 @@
         "negative": 37,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9965,
           9964,
           9962,
           9961,
@@ -230129,8 +230153,7 @@
           9919,
           9918,
           9917,
-          9916,
-          9915
+          9916
         ]
       },
       "ILO": {
@@ -230145,9 +230168,10 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 6,
+        "negative": 7,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9965,
           9959,
           9958,
           9957,
@@ -230284,16 +230308,15 @@
       },
       {
         "name": "Tech",
-        "count": 6,
+        "count": 5,
         "burn_count": 0,
-        "mint_count": 6,
+        "mint_count": 5,
         "event_ids": [
           9934,
           9933,
           9932,
           9931,
-          9928,
-          9915
+          9928
         ]
       },
       {
@@ -230330,6 +230353,16 @@
         ]
       },
       {
+        "name": "Water",
+        "count": 2,
+        "burn_count": 0,
+        "mint_count": 2,
+        "event_ids": [
+          9965,
+          9960
+        ]
+      },
+      {
         "name": "Agriculture",
         "count": 2,
         "burn_count": 0,
@@ -230347,15 +230380,6 @@
         "event_ids": [
           9936,
           9922
-        ]
-      },
-      {
-        "name": "Water",
-        "count": 1,
-        "burn_count": 0,
-        "mint_count": 1,
-        "event_ids": [
-          9960
         ]
       }
     ],
@@ -230405,9 +230429,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7673,
+      "total_mint": 7674,
       "direct_action": {
-        "count": 7030,
+        "count": 7031,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230457,7 +230481,7 @@
         {
           "date": "2026-11-26",
           "citizen": 2,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -230474,6 +230498,7 @@
         9918
       ],
       "event_ids_institutional": [
+        9965,
         9962,
         9960,
         9959,
@@ -230510,8 +230535,7 @@
         9920,
         9919,
         9917,
-        9916,
-        9915
+        9916
       ]
     }
   }
