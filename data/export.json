@@ -1,10 +1,56 @@
 {
-  "generated_at": "2026-11-26T22:11:54.829005+00:00",
-  "total_events": 9969,
+  "generated_at": "2026-11-27T06:06:23.523235+00:00",
+  "total_events": 9971,
   "total_burned": 8201828095,
-  "total_minted": 12247207759,
+  "total_minted": 12247846959,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9971,
+      "event_title": "Spain's looming right-wing pivot on climate is already playing out in Valencia",
+      "event_url": "https://www.politico.eu/article/spain-looming-right-wing-pivot-on-climate-is-already-playing-out-in-valencia/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "event_source": "Politico EU Energy",
+      "decision": "MINT",
+      "amount_crbn": 35200,
+      "final_score": -2.9,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Regional PP-Vox climate-skeptic record in flood-hit Valencia may weaken climate and disaster resilience; evidence limited to article summary. | The article is analysis of a political record rather than a single binding act, so the evidence is limited to the description. The most concrete concern is that climate-skeptic policy in a flood-hit region could weaken disaster preparedness and adaptation. Because the details are not in th",
+      "tx_hash": "3BLvxtLCHzN5G5oRiYdfrXRfXXNju4yk6jfeLGd7SiLgokLzZn286vQ7fw7ubpdK5XvKj2g28h6dQpKehbJ6pvyU",
+      "created_at": "2026-11-27T06:06:20.308083+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Spain",
+      "region": "Europe",
+      "administration": "Spain-PSOE",
+      "positive_aspects_json": "[{\"description\": \"Politico EU's analysis scrutinises the regional PP-Vox record on climate and flood response, supporting public accountability and informed debate.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"The regional PP-Vox government's climate-skeptic approach, as described, risks weakening climate and flood-resilience policy in a region already hit by severe flooding, with possible effects on residents' safety.\", \"affected_sdgs\": [11, 13], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 35200
+    },
+    {
+      "id": 9970,
+      "event_title": "Solar under scrutiny in latest US trade tariff salvo",
+      "event_url": "https://www.pv-tech.org/solar-under-scrutiny-latest-us-trade-tariff-salvo/",
+      "event_source": "PV Tech (Solar)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.6,
+      "confidence": 7,
+      "justification": "Tariffs hinder clean energy progress more than they protect domestic jobs. | While the tariffs seek to safeguard domestic jobs, they substantially impede affordable clean energy and climate action, outweighing the modest industrial benefits. The net ethical balance is negative.",
+      "tx_hash": "62thGKkUZhUP39cu8YBU3vNwA1gHjcwCkLbekmyjkfYM2f3DTkLygRtBBk4beEcf6HfXqzPdxHsAM7UaAbLeEfBs",
+      "created_at": "2026-11-27T06:06:18.047345+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Tariff proposal aims to protect US solar manufacturing jobs and domestic industry\", \"affected_sdgs\": [8, 9], \"magnitude\": 5, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Tariffs raise costs of solar imports, hindering clean energy deployment and climate mitigation\", \"affected_sdgs\": [7, 12, 13, 17], \"violated_rights\": [], \"magnitude\": 8, \"frameworks\": [\"SDG\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9969,
       "event_title": "Trump Dribbles Out Wind Approvals While Clean Energy Stalls",
@@ -153,7 +199,7 @@
       "final_score": -4.1,
       "confidence": 5,
       "justification": "Semantic cache reuse (cosine=0.921) from event #9958",
-      "tx_hash": null,
+      "tx_hash": "2MxhuiaDp9i6iBrtKNtJEdTp3YKgXC9WXy5xK8M77as8rkFhdPnNuoJCSTskDBnE2JGLAYuFMRQSy7pFckMet76D",
       "created_at": "2026-11-26T04:02:54.456424+00:00",
       "embedding": null,
       "reused_from_event_id": 9958,
@@ -230034,13 +230080,18 @@
     "top_countries_mint": [
       {
         "country": "United States",
-        "count": 6,
-        "total_amount": 3025410
+        "count": 7,
+        "total_amount": 3629410
       },
       {
         "country": "Australia",
         "count": 3,
         "total_amount": 700100
+      },
+      {
+        "country": "Spain",
+        "count": 2,
+        "total_amount": 40610
       },
       {
         "country": "Indonesia",
@@ -230051,29 +230102,24 @@
         "country": "United Kingdom",
         "count": 2,
         "total_amount": 891000
-      },
-      {
-        "country": "France",
-        "count": 2,
-        "total_amount": 956000
       }
     ],
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 9
+      },
+      {
         "region": "North America",
         "burn_ratio": 0.0,
-        "events": 7
+        "events": 8
       },
       {
         "region": "Oceania",
         "burn_ratio": 0.0,
         "events": 3
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.0,
-        "events": 9
       },
       {
         "region": "Asia",
@@ -230088,19 +230134,19 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "Europe",
+        "mint_ratio": 1.0,
+        "events": 9
+      },
+      {
         "region": "North America",
         "mint_ratio": 1.0,
-        "events": 7
+        "events": 8
       },
       {
         "region": "Oceania",
         "mint_ratio": 1.0,
         "events": 3
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 1.0,
-        "events": 9
       },
       {
         "region": "Asia",
@@ -230114,11 +230160,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-20",
-        "net_minted": 28686310,
-        "net_burned": 0
-      },
       {
         "date": "2026-11-21",
         "net_minted": 22718000,
@@ -230146,27 +230187,34 @@
       },
       {
         "date": "2026-11-26",
-        "net_minted": 19223600,
+        "net_minted": 19438600,
+        "net_burned": 0
+      },
+      {
+        "date": "2026-11-27",
+        "net_minted": 639200,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9961,
-      "event_title": "Houthis say hit two Saudi ports in response to coalition strikes",
+      "id": 9971,
+      "event_title": "Spain's looming right-wing pivot on climate is already playing out in Valencia",
       "decision": "MINT",
-      "amount_crbn": 478000,
-      "final_score": -3.62,
-      "confidence": 6,
-      "country": "Yemen",
-      "region": "MENA",
-      "created_at": "2026-11-26T00:09:49.365729+00:00"
+      "amount_crbn": 35200,
+      "final_score": -2.9,
+      "confidence": 7,
+      "country": "Spain",
+      "region": "Europe",
+      "created_at": "2026-11-27T06:06:20.308083+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 48,
+        "negative": 49,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9971,
+          9970,
           9969,
           9968,
           9967,
@@ -230213,8 +230261,7 @@
           9921,
           9920,
           9919,
-          9918,
-          9917
+          9918
         ]
       },
       "UDHR": {
@@ -230222,6 +230269,7 @@
         "negative": 39,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9971,
           9969,
           9967,
           9966,
@@ -230259,8 +230307,7 @@
           9924,
           9923,
           9919,
-          9918,
-          9917
+          9918
         ]
       },
       "ILO": {
@@ -230276,7 +230323,7 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 7,
+        "negative": 6,
         "event_ids_positive": [],
         "event_ids_negative": [
           9965,
@@ -230284,8 +230331,7 @@
           9958,
           9957,
           9953,
-          9945,
-          9917
+          9945
         ]
       },
       "UNDRIP": {
@@ -230312,9 +230358,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 18,
+        "negative": 19,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9971,
           9969,
           9968,
           9967,
@@ -230337,15 +230384,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.2,
-      "mainstream_pct": 2.8,
-      "total_sources_used": 36,
-      "articles_processed": 52
+      "niche_pct": 97.3,
+      "mainstream_pct": 2.7,
+      "total_sources_used": 37,
+      "articles_processed": 54
     },
     "cache_hit_rate_7d": {
-      "hits": 4,
-      "total_events": 52,
-      "pct": 7.7
+      "hits": 5,
+      "total_events": 54,
+      "pct": 9.3
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230419,6 +230466,19 @@
         ]
       },
       {
+        "name": "Energy",
+        "count": 5,
+        "burn_count": 0,
+        "mint_count": 5,
+        "event_ids": [
+          9970,
+          9969,
+          9967,
+          9962,
+          9920
+        ]
+      },
+      {
         "name": "Tech",
         "count": 5,
         "burn_count": 0,
@@ -230432,26 +230492,14 @@
         ]
       },
       {
-        "name": "Energy",
-        "count": 4,
-        "burn_count": 0,
-        "mint_count": 4,
-        "event_ids": [
-          9969,
-          9967,
-          9962,
-          9920
-        ]
-      },
-      {
-        "name": "Defense",
+        "name": "Water",
         "count": 3,
         "burn_count": 0,
         "mint_count": 3,
         "event_ids": [
-          9958,
-          9930,
-          9917
+          9971,
+          9965,
+          9960
         ]
       },
       {
@@ -230466,13 +230514,13 @@
         ]
       },
       {
-        "name": "Water",
+        "name": "Defense",
         "count": 2,
         "burn_count": 0,
         "mint_count": 2,
         "event_ids": [
-          9965,
-          9960
+          9958,
+          9930
         ]
       },
       {
@@ -230527,24 +230575,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 52,
+      "total_mint": 54,
       "direct_action": {
-        "count": 47,
-        "pct": 90.4
+        "count": 48,
+        "pct": 88.9
       },
       "editorial_alarm": {
         "count": 1,
         "pct": 1.9
       },
       "untyped": {
-        "count": 4,
-        "pct": 7.7
+        "count": 5,
+        "pct": 9.3
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7678,
+      "total_mint": 7681,
       "direct_action": {
-        "count": 7035,
+        "count": 7037,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230552,20 +230600,15 @@
         "pct": 7.1
       },
       "untyped": {
-        "count": 101,
+        "count": 102,
         "pct": 1.3
       }
     },
     "citizen_vs_institutional_7d": {
       "citizen": 11,
-      "institutional": 41,
-      "citizen_ratio": 0.212,
+      "institutional": 43,
+      "citizen_ratio": 0.204,
       "daily": [
-        {
-          "date": "2026-11-20",
-          "citizen": 3,
-          "institutional": 5
-        },
         {
           "date": "2026-11-21",
           "citizen": 0,
@@ -230594,7 +230637,12 @@
         {
           "date": "2026-11-26",
           "citizen": 2,
-          "institutional": 6
+          "institutional": 7
+        },
+        {
+          "date": "2026-11-27",
+          "citizen": 0,
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -230611,11 +230659,14 @@
         9918
       ],
       "event_ids_institutional": [
+        9971,
+        9970,
         9969,
         9968,
         9967,
         9966,
         9965,
+        9963,
         9962,
         9960,
         9959,
@@ -230650,8 +230701,7 @@
         9924,
         9923,
         9920,
-        9919,
-        9917
+        9919
       ]
     }
   }
