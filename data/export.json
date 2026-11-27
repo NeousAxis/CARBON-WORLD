@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-27T06:06:23.523235+00:00",
-  "total_events": 9971,
+  "generated_at": "2026-11-27T12:06:42.706547+00:00",
+  "total_events": 9972,
   "total_burned": 8201828095,
-  "total_minted": 12247846959,
+  "total_minted": 12247900159,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9972,
+      "event_title": "The Far Right Wants to Kill Wolves Whenever and However They Please",
+      "event_url": "https://theintercept.com/2026/11/27/yellowstone-wolf-hunt-montana/",
+      "event_source": "The Intercept",
+      "decision": "MINT",
+      "amount_crbn": 53200,
+      "final_score": -3.08,
+      "confidence": 6,
+      "justification": "The proposed wolf hunt poses significant ecological harm outweighing minor civic benefits. | The action primarily harms wildlife and ecosystem health, outweighing any modest gains in political participation. Overall the proposal is ethically negative.",
+      "tx_hash": "2g3QyyzZYSjexbrUSPgVeuj94tRTD32E8hqwGmw12XNMaVcCUcgt9ZUE4DQFwMAjTe9SpxPECUX8qpLwCj9q76eA",
+      "created_at": "2026-11-27T12:06:38.846145+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "United States",
+      "region": "North America",
+      "administration": "USA-Republican",
+      "positive_aspects_json": "[{\"description\": \"Increased political mobilization of rural hunting communities raises civic engagement.\", \"affected_sdgs\": [16], \"magnitude\": 2, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Proposed wolf hunting in Yellowstone would reduce wolf populations, disrupt ecosystem balance and biodiversity.\", \"affected_sdgs\": [13, 15], \"violated_rights\": [\"Animal\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 532000
+    },
     {
       "id": 9971,
       "event_title": "Spain's looming right-wing pivot on climate is already playing out in Valencia",
@@ -230081,7 +230104,7 @@
       {
         "country": "United States",
         "count": 7,
-        "total_amount": 3629410
+        "total_amount": 3006610
       },
       {
         "country": "Australia",
@@ -230107,14 +230130,14 @@
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
-        "region": "Europe",
-        "burn_ratio": 0.0,
-        "events": 9
-      },
-      {
         "region": "North America",
         "burn_ratio": 0.0,
         "events": 8
+      },
+      {
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 9
       },
       {
         "region": "Oceania",
@@ -230134,14 +230157,14 @@
     ],
     "top_regions_destructive": [
       {
-        "region": "Europe",
-        "mint_ratio": 1.0,
-        "events": 9
-      },
-      {
         "region": "North America",
         "mint_ratio": 1.0,
         "events": 8
+      },
+      {
+        "region": "Europe",
+        "mint_ratio": 1.0,
+        "events": 9
       },
       {
         "region": "Oceania",
@@ -230192,27 +230215,28 @@
       },
       {
         "date": "2026-11-27",
-        "net_minted": 639200,
+        "net_minted": 692400,
         "net_burned": 0
       }
     ],
     "event_of_the_day": {
-      "id": 9971,
-      "event_title": "Spain's looming right-wing pivot on climate is already playing out in Valencia",
+      "id": 9972,
+      "event_title": "The Far Right Wants to Kill Wolves Whenever and However They Please",
       "decision": "MINT",
-      "amount_crbn": 35200,
-      "final_score": -2.9,
-      "confidence": 7,
-      "country": "Spain",
-      "region": "Europe",
-      "created_at": "2026-11-27T06:06:20.308083+00:00"
+      "amount_crbn": 53200,
+      "final_score": -3.08,
+      "confidence": 6,
+      "country": "United States",
+      "region": "North America",
+      "created_at": "2026-11-27T12:06:38.846145+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 49,
+        "negative": 48,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9972,
           9971,
           9970,
           9969,
@@ -230259,14 +230283,12 @@
           9923,
           9922,
           9921,
-          9920,
-          9919,
-          9918
+          9920
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 39,
+        "negative": 37,
         "event_ids_positive": [],
         "event_ids_negative": [
           9971,
@@ -230305,20 +230327,17 @@
           9928,
           9926,
           9924,
-          9923,
-          9919,
-          9918
+          9923
         ]
       },
       "ILO": {
         "positive": 0,
-        "negative": 4,
+        "negative": 3,
         "event_ids_positive": [],
         "event_ids_negative": [
           9967,
           9964,
-          9948,
-          9918
+          9948
         ]
       },
       "CRC": {
@@ -230347,9 +230366,10 @@
       },
       "Animal": {
         "positive": 0,
-        "negative": 4,
+        "negative": 5,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9972,
           9951,
           9941,
           9936,
@@ -230358,9 +230378,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 19,
+        "negative": 20,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9972,
           9971,
           9969,
           9968,
@@ -230384,15 +230405,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.3,
-      "mainstream_pct": 2.7,
-      "total_sources_used": 37,
-      "articles_processed": 54
+      "niche_pct": 97.1,
+      "mainstream_pct": 2.9,
+      "total_sources_used": 35,
+      "articles_processed": 53
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 54,
-      "pct": 9.3
+      "total_events": 53,
+      "pct": 9.4
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230575,24 +230596,24 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 54,
+      "total_mint": 53,
       "direct_action": {
         "count": 48,
-        "pct": 88.9
+        "pct": 90.6
       },
       "editorial_alarm": {
-        "count": 1,
-        "pct": 1.9
+        "count": 0,
+        "pct": 0.0
       },
       "untyped": {
         "count": 5,
-        "pct": 9.3
+        "pct": 9.4
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7681,
+      "total_mint": 7682,
       "direct_action": {
-        "count": 7037,
+        "count": 7038,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230605,9 +230626,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 11,
+      "citizen": 10,
       "institutional": 43,
-      "citizen_ratio": 0.204,
+      "citizen_ratio": 0.189,
       "daily": [
         {
           "date": "2026-11-21",
@@ -230642,7 +230663,7 @@
         {
           "date": "2026-11-27",
           "citizen": 0,
-          "institutional": 2
+          "institutional": 3
         }
       ],
       "event_ids_citizen": [
@@ -230655,10 +230676,10 @@
         9945,
         9936,
         9922,
-        9921,
-        9918
+        9921
       ],
       "event_ids_institutional": [
+        9972,
         9971,
         9970,
         9969,
@@ -230700,8 +230721,7 @@
         9925,
         9924,
         9923,
-        9920,
-        9919
+        9920
       ]
     }
   }
