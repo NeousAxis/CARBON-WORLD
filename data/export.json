@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-28T01:09:57.881002+00:00",
-  "total_events": 9976,
+  "generated_at": "2026-11-28T06:08:31.945604+00:00",
+  "total_events": 9977,
   "total_burned": 8201828095,
-  "total_minted": 12249409259,
+  "total_minted": 12249887259,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9977,
+      "event_title": "In Ireland, data centres, which consume 23% of the country's electricity, fuel fierce debates",
+      "event_url": "https://www.letemps.ch/economie/en-irlande-les-data-centers-qui-avalent-23-de-l-electricite-du-pays-nourrissent-de-vifs-debats",
+      "event_source": "Le Temps (CH)",
+      "decision": "MINT",
+      "amount_crbn": 478000,
+      "final_score": -0.62,
+      "confidence": 7,
+      "justification": "[Analyst A judged it not actionable; Analyst B's verdict applied] Renewable-investment rules are a real step, but data-centre demand at 23% of national power and rising grid strain give a slightly negative net outcome. | The renewable-investment requirement is a real, binding step toward cleaner supply, but it does not offset the scale of data-centre demand, which keeps growing and strains the grid. Community contestation signals rising concern but is not yet a concrete measurable action. Net ju",
+      "tx_hash": "4iWWeCq4FFp6BkchBerdVuAh8dMVYBNFsddMCS6Pq55qURbcYjYuDCXrNAhU77FGvuhFiCFYr4B9avsi9swyNXSX",
+      "created_at": "2026-11-28T06:08:28.822783+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Ireland",
+      "region": "Europe",
+      "administration": null,
+      "positive_aspects_json": "[{\"description\": \"Operators are required to invest in renewable energy to offset data-centre electricity demand, adding clean generation capacity.\", \"affected_sdgs\": [7, 13], \"magnitude\": 4, \"frameworks\": [\"SDG\", \"PB\"]}, {\"description\": \"Public contestation over data-centre expansion is building awareness of energy and environmental costs, a consciousness signal without a named gathering or measurable count.\", \"affected_sdgs\": [13, 16], \"magnitude\": 2, \"frameworks\": [\"SDG\", \"UDHR\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Data centres absorb about 23% of national electricity, straining the grid and raising energy costs and fossil-backup emissions.\", \"affected_sdgs\": [7, 13, 11], \"violated_rights\": [\"UDHR Article 25\"], \"magnitude\": 6, \"frameworks\": [\"SDG\", \"UDHR\", \"PB\"]}, {\"description\": \"Rapid expansion of AI and cloud infrastructure in the Greater Dublin area increases demand that can crowd out residential and industrial grid capacity.\", \"affected_sdgs\": [11, 9], \"violated_rights\": [], \"magnitude\": 3, \"frameworks\": [\"SDG\", \"PB\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 478000
+    },
     {
       "id": 9976,
       "event_title": "What should you do if you're told your Swedish permanent residency could be revoked?",
@@ -230224,7 +230247,7 @@
       {
         "region": "Europe",
         "burn_ratio": 0.0,
-        "events": 11
+        "events": 12
       },
       {
         "region": "Africa",
@@ -230251,7 +230274,7 @@
       {
         "region": "Europe",
         "mint_ratio": 1.0,
-        "events": 11
+        "events": 12
       },
       {
         "region": "Africa",
@@ -230307,7 +230330,7 @@
       },
       {
         "date": "2026-11-28",
-        "net_minted": 604000,
+        "net_minted": 1082000,
         "net_burned": 0
       }
     ],
@@ -230325,9 +230348,10 @@
     "framework_activity_7d": {
       "SDG": {
         "positive": 0,
-        "negative": 46,
+        "negative": 47,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9977,
           9976,
           9975,
           9974,
@@ -230378,9 +230402,10 @@
       },
       "UDHR": {
         "positive": 0,
-        "negative": 39,
+        "negative": 40,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9977,
           9976,
           9975,
           9974,
@@ -230469,9 +230494,10 @@
       },
       "PB": {
         "positive": 0,
-        "negative": 17,
+        "negative": 18,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9977,
           9972,
           9971,
           9969,
@@ -230493,15 +230519,15 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.0,
-      "mainstream_pct": 3.0,
-      "total_sources_used": 33,
-      "articles_processed": 51
+      "niche_pct": 97.1,
+      "mainstream_pct": 2.9,
+      "total_sources_used": 34,
+      "articles_processed": 52
     },
     "cache_hit_rate_7d": {
       "hits": 5,
-      "total_events": 51,
-      "pct": 9.8
+      "total_events": 52,
+      "pct": 9.6
     },
     "active_partners_7d": [],
     "top_institutions_7d": [
@@ -230542,15 +230568,29 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 5,
+        "count": 6,
         "burn_count": 0,
-        "mint_count": 5,
+        "mint_count": 6,
         "event_ids": [
+          9977,
           9964,
           9956,
           9954,
           9952,
           9939
+        ]
+      },
+      {
+        "name": "Energy",
+        "count": 5,
+        "burn_count": 0,
+        "mint_count": 5,
+        "event_ids": [
+          9977,
+          9970,
+          9969,
+          9967,
+          9962
         ]
       },
       {
@@ -230564,18 +230604,6 @@
           9932,
           9931,
           9928
-        ]
-      },
-      {
-        "name": "Energy",
-        "count": 4,
-        "burn_count": 0,
-        "mint_count": 4,
-        "event_ids": [
-          9970,
-          9969,
-          9967,
-          9962
         ]
       },
       {
@@ -230661,10 +230689,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 51,
+      "total_mint": 52,
       "direct_action": {
-        "count": 46,
-        "pct": 90.2
+        "count": 47,
+        "pct": 90.4
       },
       "editorial_alarm": {
         "count": 0,
@@ -230672,13 +230700,13 @@
       },
       "untyped": {
         "count": 5,
-        "pct": 9.8
+        "pct": 9.6
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7686,
+      "total_mint": 7687,
       "direct_action": {
-        "count": 7042,
+        "count": 7043,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230692,8 +230720,8 @@
     },
     "citizen_vs_institutional_7d": {
       "citizen": 10,
-      "institutional": 41,
-      "citizen_ratio": 0.196,
+      "institutional": 42,
+      "citizen_ratio": 0.192,
       "daily": [
         {
           "date": "2026-11-22",
@@ -230728,7 +230756,7 @@
         {
           "date": "2026-11-28",
           "citizen": 0,
-          "institutional": 1
+          "institutional": 2
         }
       ],
       "event_ids_citizen": [
@@ -230744,6 +230772,7 @@
         9936
       ],
       "event_ids_institutional": [
+        9977,
         9976,
         9973,
         9972,
