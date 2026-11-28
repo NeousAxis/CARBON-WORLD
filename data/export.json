@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-27T23:05:22.137507+00:00",
-  "total_events": 9975,
+  "generated_at": "2026-11-28T01:09:57.881002+00:00",
+  "total_events": 9976,
   "total_burned": 8201828095,
-  "total_minted": 12248805259,
+  "total_minted": 12249409259,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9976,
+      "event_title": "What should you do if you're told your Swedish permanent residency could be revoked?",
+      "event_url": "https://www.thelocal.se/20261127/what-should-you-do-if-youre-told-your-swedish-permanent-residency-could-be-revoked",
+      "event_source": "The Local Sweden (EN)",
+      "decision": "MINT",
+      "amount_crbn": 604000,
+      "final_score": -2.73,
+      "confidence": 7,
+      "justification": "The revocation threat harms fundamental rights and equality, outweighing any legal‑order benefits. | While the action aims to uphold immigration law, it severely threatens migrants' fundamental rights and deepens inequality, resulting in a net negative ethical impact.",
+      "tx_hash": "2TphzR7jGLXrNRM3cVnL976CTwYg8yVhM2QNquw5VUau75PAE8s1XCry31RMCCJEiZ3RZPGuHnBUHAsyqQgvDphH",
+      "created_at": "2026-11-28T01:09:50.600783+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Sweden",
+      "region": "Europe",
+      "administration": "Sweden-SD-M",
+      "positive_aspects_json": "[{\"description\": \"Enforcement of immigration law to maintain public order and legal certainty\", \"affected_sdgs\": [16], \"magnitude\": 4, \"frameworks\": [\"SDG\"]}]",
+      "negative_aspects_json": "[{\"description\": \"Potential revocation of permanent residency undermines the right to freedom of movement, family stability and increases discrimination against migrants\", \"affected_sdgs\": [10, 11, 16], \"violated_rights\": [\"UDHR Article 13\", \"UDHR Article 23\", \"CRC Article 10\"], \"magnitude\": 8, \"frameworks\": [\"SDG\", \"UDHR\", \"CRC\"]}]",
+      "burn_subtype": null,
+      "mint_subtype": "direct_action",
+      "amount_index": 604000
+    },
     {
       "id": 9975,
       "event_title": "Local Elections 2026: Mashaba's manoeuvres win the day as ANC-ActionSA claim Gauteng, leaving DA in the cold",
@@ -230199,14 +230222,14 @@
     "top_countries_burn": [],
     "top_regions_sustainable": [
       {
+        "region": "Europe",
+        "burn_ratio": 0.0,
+        "events": 11
+      },
+      {
         "region": "Africa",
         "burn_ratio": 0.0,
         "events": 3
-      },
-      {
-        "region": "Europe",
-        "burn_ratio": 0.0,
-        "events": 10
       },
       {
         "region": "North America",
@@ -230226,14 +230249,14 @@
     ],
     "top_regions_destructive": [
       {
+        "region": "Europe",
+        "mint_ratio": 1.0,
+        "events": 11
+      },
+      {
         "region": "Africa",
         "mint_ratio": 1.0,
         "events": 3
-      },
-      {
-        "region": "Europe",
-        "mint_ratio": 1.0,
-        "events": 10
       },
       {
         "region": "North America",
@@ -230252,11 +230275,6 @@
       }
     ],
     "supply_trend_7d": [
-      {
-        "date": "2026-11-21",
-        "net_minted": 22718000,
-        "net_burned": 0
-      },
       {
         "date": "2026-11-22",
         "net_minted": 6329190,
@@ -230286,6 +230304,11 @@
         "date": "2026-11-27",
         "net_minted": 1597500,
         "net_burned": 0
+      },
+      {
+        "date": "2026-11-28",
+        "net_minted": 604000,
+        "net_burned": 0
       }
     ],
     "event_of_the_day": {
@@ -230305,6 +230328,7 @@
         "negative": 46,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9976,
           9975,
           9974,
           9973,
@@ -230349,15 +230373,15 @@
           9929,
           9928,
           9927,
-          9926,
-          9925
+          9926
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 38,
+        "negative": 39,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9976,
           9975,
           9974,
           9973,
@@ -230410,9 +230434,10 @@
       },
       "CRC": {
         "positive": 0,
-        "negative": 6,
+        "negative": 7,
         "event_ids_positive": [],
         "event_ids_negative": [
+          9976,
           9965,
           9959,
           9958,
@@ -230468,9 +230493,9 @@
       }
     },
     "source_diversity_7d": {
-      "niche_pct": 97.1,
-      "mainstream_pct": 2.9,
-      "total_sources_used": 34,
+      "niche_pct": 97.0,
+      "mainstream_pct": 3.0,
+      "total_sources_used": 33,
       "articles_processed": 51
     },
     "cache_hit_rate_7d": {
@@ -230482,9 +230507,9 @@
     "top_institutions_7d": [
       {
         "name": "EU",
-        "count": 10,
+        "count": 9,
         "burn_count": 0,
-        "mint_count": 10,
+        "mint_count": 9,
         "event_ids": [
           9967,
           9954,
@@ -230494,8 +230519,7 @@
           9932,
           9931,
           9928,
-          9927,
-          9925
+          9927
         ]
       },
       {
@@ -230652,9 +230676,9 @@
       }
     },
     "mint_composition_all_time": {
-      "total_mint": 7685,
+      "total_mint": 7686,
       "direct_action": {
-        "count": 7041,
+        "count": 7042,
         "pct": 91.6
       },
       "editorial_alarm": {
@@ -230671,11 +230695,6 @@
       "institutional": 41,
       "citizen_ratio": 0.196,
       "daily": [
-        {
-          "date": "2026-11-21",
-          "citizen": 0,
-          "institutional": 10
-        },
         {
           "date": "2026-11-22",
           "citizen": 1,
@@ -230705,6 +230724,11 @@
           "date": "2026-11-27",
           "citizen": 2,
           "institutional": 4
+        },
+        {
+          "date": "2026-11-28",
+          "citizen": 0,
+          "institutional": 1
         }
       ],
       "event_ids_citizen": [
@@ -230720,6 +230744,7 @@
         9936
       ],
       "event_ids_institutional": [
+        9976,
         9973,
         9972,
         9971,
@@ -230759,8 +230784,7 @@
         9929,
         9928,
         9927,
-        9926,
-        9925
+        9926
       ]
     }
   }
