@@ -1,10 +1,33 @@
 {
-  "generated_at": "2026-11-28T06:08:31.945604+00:00",
-  "total_events": 9977,
-  "total_burned": 8201828095,
+  "generated_at": "2026-11-28T09:10:59.533577+00:00",
+  "total_events": 9978,
+  "total_burned": 8203149095,
   "total_minted": 12249887259,
   "pending_reviews": 15,
   "events": [
+    {
+      "id": 9978,
+      "event_title": "Rainforest Trust Announces $15 Million Commitment to Advance Conservation in Colombia",
+      "event_url": "https://www.rainforesttrust.org/our-impact/rainforest-news/rainforest-trust-announces-15-million-commitment-to-advance-conservation-in-colombia/",
+      "event_source": "Rainforest Trust",
+      "decision": "BURN",
+      "amount_crbn": 1321000,
+      "final_score": 6.29,
+      "confidence": 5,
+      "justification": "[Auto-resolved by learned corrector: learned-map — A=BURN/B=NEUTRAL -> BURN (human chose this in 89% of 85 past reviews)] Large conservation funding with strong alignment to SDGs warrants a BURN decision. | The funding represents a substantial boost for biodiversity and climate mitigation in Colombia, aligning with multiple SDGs and planetary boundaries. While implementation risks exist, the overall ethical balance is strongly positive.",
+      "tx_hash": "4HbyaF5VbP4jeV1qZs4zcaPq8rGkBq7RQAfuoRYhWpPkJp7WXtDVsyCrWEgyn7P2qvGWAr6RepGG6X1jsGBuJhVe",
+      "created_at": "2026-11-28T09:10:55.580457+00:00",
+      "embedding": null,
+      "reused_from_event_id": null,
+      "country": "Colombia",
+      "region": "Latin America",
+      "administration": "Colombia-Pacto Historico",
+      "positive_aspects_json": "[{\"description\": \"Rainforest Trust commits $15 million to protect and restore ecosystems in Colombia\", \"affected_sdgs\": [13, 15, 12], \"magnitude\": 7, \"frameworks\": [\"SDG\", \"Animal\", \"PB\"]}]",
+      "negative_aspects_json": null,
+      "burn_subtype": "direct_action",
+      "mint_subtype": null,
+      "amount_index": 415000
+    },
     {
       "id": 9977,
       "event_title": "In Ireland, data centres, which consume 23% of the country's electricity, fuel fierce debates",
@@ -230242,7 +230265,13 @@
         "total_amount": 956000
       }
     ],
-    "top_countries_burn": [],
+    "top_countries_burn": [
+      {
+        "country": "Colombia",
+        "count": 1,
+        "total_amount": 1321000
+      }
+    ],
     "top_regions_sustainable": [
       {
         "region": "Europe",
@@ -230331,25 +230360,27 @@
       {
         "date": "2026-11-28",
         "net_minted": 1082000,
-        "net_burned": 0
+        "net_burned": 1321000
       }
     ],
     "event_of_the_day": {
-      "id": 9974,
-      "event_title": "Georgia: Near-total impunity after two years of human rights violations in response to protests",
-      "decision": "MINT",
-      "amount_crbn": 373000,
-      "final_score": -3.55,
-      "confidence": 8,
-      "country": "Georgia",
-      "region": null,
-      "created_at": "2026-11-27T22:15:51.155272+00:00"
+      "id": 9978,
+      "event_title": "Rainforest Trust Announces $15 Million Commitment to Advance Conservation in Colombia",
+      "decision": "BURN",
+      "amount_crbn": 1321000,
+      "final_score": 6.29,
+      "confidence": 5,
+      "country": "Colombia",
+      "region": "Latin America",
+      "created_at": "2026-11-28T09:10:55.580457+00:00"
     },
     "framework_activity_7d": {
       "SDG": {
-        "positive": 0,
-        "negative": 47,
-        "event_ids_positive": [],
+        "positive": 1,
+        "negative": 46,
+        "event_ids_positive": [
+          9978
+        ],
         "event_ids_negative": [
           9977,
           9976,
@@ -230396,13 +230427,12 @@
           9930,
           9929,
           9928,
-          9927,
-          9926
+          9927
         ]
       },
       "UDHR": {
         "positive": 0,
-        "negative": 40,
+        "negative": 39,
         "event_ids_positive": [],
         "event_ids_negative": [
           9977,
@@ -230443,8 +230473,7 @@
           9936,
           9930,
           9929,
-          9928,
-          9926
+          9928
         ]
       },
       "ILO": {
@@ -230482,9 +230511,11 @@
         ]
       },
       "Animal": {
-        "positive": 0,
+        "positive": 1,
         "negative": 4,
-        "event_ids_positive": [],
+        "event_ids_positive": [
+          9978
+        ],
         "event_ids_negative": [
           9972,
           9951,
@@ -230493,9 +230524,11 @@
         ]
       },
       "PB": {
-        "positive": 0,
+        "positive": 1,
         "negative": 18,
-        "event_ids_positive": [],
+        "event_ids_positive": [
+          9978
+        ],
         "event_ids_negative": [
           9977,
           9972,
@@ -230521,7 +230554,7 @@
     "source_diversity_7d": {
       "niche_pct": 97.1,
       "mainstream_pct": 2.9,
-      "total_sources_used": 34,
+      "total_sources_used": 35,
       "articles_processed": 52
     },
     "cache_hit_rate_7d": {
@@ -230568,10 +230601,11 @@
     "top_sectors_7d": [
       {
         "name": "Finance",
-        "count": 6,
-        "burn_count": 0,
+        "count": 7,
+        "burn_count": 1,
         "mint_count": 6,
         "event_ids": [
+          9978,
           9977,
           9964,
           9956,
@@ -230659,10 +230693,10 @@
       }
     ],
     "burn_composition_7d": {
-      "total_burn": 0,
+      "total_burn": 1,
       "direct_action": {
-        "count": 0,
-        "pct": 0.0
+        "count": 1,
+        "pct": 100.0
       },
       "editorial_consciousness": {
         "count": 0,
@@ -230674,9 +230708,9 @@
       }
     },
     "burn_composition_all_time": {
-      "total_burn": 2282,
+      "total_burn": 2283,
       "direct_action": {
-        "count": 2034,
+        "count": 2035,
         "pct": 89.1
       },
       "editorial_consciousness": {
@@ -230689,10 +230723,10 @@
       }
     },
     "mint_composition_7d": {
-      "total_mint": 52,
+      "total_mint": 51,
       "direct_action": {
-        "count": 47,
-        "pct": 90.4
+        "count": 46,
+        "pct": 90.2
       },
       "editorial_alarm": {
         "count": 0,
@@ -230700,7 +230734,7 @@
       },
       "untyped": {
         "count": 5,
-        "pct": 9.6
+        "pct": 9.8
       }
     },
     "mint_composition_all_time": {
@@ -230719,9 +230753,9 @@
       }
     },
     "citizen_vs_institutional_7d": {
-      "citizen": 10,
-      "institutional": 42,
-      "citizen_ratio": 0.192,
+      "citizen": 11,
+      "institutional": 41,
+      "citizen_ratio": 0.212,
       "daily": [
         {
           "date": "2026-11-22",
@@ -230755,11 +230789,12 @@
         },
         {
           "date": "2026-11-28",
-          "citizen": 0,
+          "citizen": 1,
           "institutional": 2
         }
       ],
       "event_ids_citizen": [
+        9978,
         9975,
         9974,
         9964,
@@ -230812,8 +230847,7 @@
         9930,
         9929,
         9928,
-        9927,
-        9926
+        9927
       ]
     }
   }
